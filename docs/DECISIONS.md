@@ -98,3 +98,11 @@
 - 日期：2026-08-25
 - 決策：將 JSON 語法、對應 Schema、全域 ID、KG endpoint 與 M4 provenance 檢查集中在 `scripts/validate_data.py`，由 `.github/workflows/validate-data.yml` 於 push／pull request 執行。
 - 理由：讓每次資料變更都能在遠端環境重現驗證，降低只依賴人工檢查的風險。
+
+## D-016：M4 採課綱／KG 對照的原創內容流程
+
+- 日期：2026-08-25
+- 決策：M4 lesson／question 以官方課綱與穩定 KG ID 決定學習目標，再由本專案自行寫作；不以網路題庫、出版社題目或課文改寫成「原創」。
+- 答案要求：每題必須有可檢查的 answer.value 與 answer.explanation；選擇題需檢查唯一最佳答案與 distractors。
+- 來源要求：外部資料若只作事實查核，記錄 sourceUrl／sourceLocator；若直接收錄合法公開題，必須改標 official-open 或 licensed，不可標為 original。
+- 審核界線：content-reviewed 表示 repo 內部檢查，不代表教師或學科專家審查。
