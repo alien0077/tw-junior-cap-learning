@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alien0077/tw-junior-cap-learning/schemas/textbook-mapping-set.schema.json",
+  "title": "教科書章節對照集合",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "subject",
+    "publisher",
+    "academicYear",
+    "source",
+    "mappingMethod",
+    "volumes",
+    "status"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^mapset-(chinese|english|math|science|social)-(nani|kanghsuan|hanlin)-[a-z0-9-]+$"
+    },
+    "subject": {
+      "enum": [
+        "chinese",
+        "english",
+        "math",
+        "science",
+        "social"
+      ]
+    },
+    "publisher": {
+      "enum": [
+        "nani",
+        "kanghsuan",
+        "hanlin"
+      ]
+    },
+    "academicYear": {
+      "type": "string",
+      "pattern": "^[0-9]{3}$"
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "url",
+        "locator",
+        "verifiedAt",
+        "verifiedBy",
+        "confidence",
+        "editionNote"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "official-publisher-page",
+            "official-government-list",
+            "book-inspection",
+            "licensed-metadata"
+          ]
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "verifiedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "verifiedBy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "confidence": {
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "editionNote": {
+          "type": "string",
+          "minLength": 1
+        },
+        "additionalUrls": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    },
+    "mappingMethod": {
+      "type": "string",
+      "minLength": 1
+    },
+    "volumes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "volume",
+          "grade",
+          "semester",
+          "entries"
+        ],
+        "properties": {
+          "volume": {
+            "type": "string",
+            "pattern": "^[1-6]$"
+          },
+          "grade": {
+            "enum": [
+              "7",
+              "8",
+              "9"
+            ]
+          },
+          "semester": {
+            "enum": [
+              "上",
+              "下"
+            ]
+          },
+          "entries": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "chapterCode",
+                "chapterLabel",
+                "knowledgeIds",
+                "relation",
+                "confidence"
+              ],
+              "properties": {
+                "chapterCode": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "chapterLabel": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "knowledgeIds": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^kg-"
+                  }
+                },
+                "relation": {
+                  "enum": [
+                    "primary",
+                    "supporting",
+                    "prerequisite",
+                    "review",
+                    "not-covered"
+                  ]
+                },
+                "confidence": {
+                  "enum": [
+                    "low",
+                    "medium",
+                    "high"
+                  ]
+                },
+                "notes": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "status": {
+      "enum": [
+        "unverified",
+        "verified",
+        "deprecated"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

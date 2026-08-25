@@ -72,3 +72,19 @@
 
 - 五科各建立一份原創 lesson，主題分別為國文議論論據、英語 fact/opinion、數學因式分解、自然科比熱、社會機會成本。
 - 每份 lesson 配三題原創單選題，全部只連至本專案穩定 KG ID；`provenance.origin=original`，未引用或改寫出版社課本、習作與題庫。
+
+## M3 康軒章節級 mapping
+
+- 查核日期：2026-08-25。
+- 冊別證據：既有國家教育研究院 115 學年度教科用書清冊基線。
+- 章節證據：康軒「國中影音高手」官方公開 XML，只取冊次、章節代碼與章節名稱等最小必要中介資料：
+  - 國文：https://digitalmaster.knsh.com.tw/all/video/public/j_mandarin.xml
+  - 英文：https://digitalmaster.knsh.com.tw/all/video/public/j_english.xml
+  - 數學：https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml
+  - 自然：https://digitalmaster.knsh.com.tw/all/video/public/j_nature.xml
+  - 地理：https://digitalmaster.knsh.com.tw/all/video/public/j_geography.xml
+  - 歷史：https://digitalmaster.knsh.com.tw/all/video/public/j_history.xml
+  - 公民：https://digitalmaster.knsh.com.tw/all/video/public/j_cs.xml
+- 資料規模：五科各六冊，共 30 冊、310 個章節／單元條目；國文 82、英文 34、數學 58、自然 36、社會 100。
+- 對照方法：章名先依科目與冊次正規化，再保守連至既有細粒度 KG ID；所有端點已確認存在。出版社來源只證明章節結構，KG 對照屬本專案教學判斷，統一標為 `medium` confidence。
+- 限制：官方資源可能隨版本更新；因此資料同時保留查核日與版本說明。此批不含課文、題目或影音內容，也不代表南一、翰林已完成章節級對照。
