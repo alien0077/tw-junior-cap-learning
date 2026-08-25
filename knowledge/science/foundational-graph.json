@@ -4,10 +4,34 @@
   "nodes": [
     {"id": "kg-science-learning-focus", "subject": "science", "label": "自然科學國中學習重點", "curriculumIds": ["cur-science-natural-sciences-domain"], "gradeRange": ["7", "8", "9"], "status": "verified"},
     {"id": "kg-science-learning-performance", "subject": "science", "label": "自然科學國中學習表現", "curriculumIds": ["cur-science-learning-performance"], "gradeRange": ["7", "8", "9"], "status": "verified"},
-    {"id": "kg-science-learning-content", "subject": "science", "label": "自然科學國中學習內容", "curriculumIds": ["cur-science-learning-content"], "gradeRange": ["7", "8", "9"], "status": "verified"}
+    {"id": "kg-science-learning-content", "subject": "science", "label": "自然科學國中學習內容", "curriculumIds": ["cur-science-learning-content"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-a", "subject": "science", "label": "A：物質的組成與特性", "curriculumIds": ["cur-science-content-a"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-aa", "subject": "science", "label": "Aa：物質組成與元素週期性", "curriculumIds": ["cur-science-content-aa"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-ab", "subject": "science", "label": "Ab：物質的形態、性質及分類", "curriculumIds": ["cur-science-content-ab"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-aa-iv-1", "subject": "science", "label": "Aa-Ⅳ-1：原子模型演變", "curriculumIds": ["cur-science-content-aa-iv-1"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-aa-iv-2", "subject": "science", "label": "Aa-Ⅳ-2：相對原子與分子質量", "curriculumIds": ["cur-science-content-aa-iv-2"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-aa-iv-3", "subject": "science", "label": "Aa-Ⅳ-3：元素與化合物", "curriculumIds": ["cur-science-content-aa-iv-3"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-aa-iv-4", "subject": "science", "label": "Aa-Ⅳ-4：元素性質週期性", "curriculumIds": ["cur-science-content-aa-iv-4"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-aa-iv-5", "subject": "science", "label": "Aa-Ⅳ-5：元素與化合物符號", "curriculumIds": ["cur-science-content-aa-iv-5"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-ab-iv-1", "subject": "science", "label": "Ab-Ⅳ-1：粒子模型與三態", "curriculumIds": ["cur-science-content-ab-iv-1"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-ab-iv-2", "subject": "science", "label": "Ab-Ⅳ-2：溫度與物質狀態", "curriculumIds": ["cur-science-content-ab-iv-2"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-ab-iv-3", "subject": "science", "label": "Ab-Ⅳ-3：物理與化學性質", "curriculumIds": ["cur-science-content-ab-iv-3"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-content-ab-iv-4", "subject": "science", "label": "Ab-Ⅳ-4：純物質與混合物分類", "curriculumIds": ["cur-science-content-ab-iv-4"], "gradeRange": ["7", "8", "9"], "status": "verified"}
   ],
   "edges": [
     {"id": "kg-edge-science-learning-performance-part-of-focus", "from": "kg-science-learning-performance", "to": "kg-science-learning-focus", "relation": "partOf", "rationale": "官方課綱在國民中學教育階段學習重點下列出學習表現。", "status": "verified"},
-    {"id": "kg-edge-science-learning-content-part-of-focus", "from": "kg-science-learning-content", "to": "kg-science-learning-focus", "relation": "partOf", "rationale": "官方課綱在國民中學教育階段學習重點下列出學習內容。", "status": "verified"}
+    {"id": "kg-edge-science-learning-content-part-of-focus", "from": "kg-science-learning-content", "to": "kg-science-learning-focus", "relation": "partOf", "rationale": "官方課綱在國民中學教育階段學習重點下列出學習內容。", "status": "verified"},
+    {"id": "kg-edge-science-content-a-part-of-learning-content", "from": "kg-science-content-a", "to": "kg-science-learning-content", "relation": "partOf", "rationale": "官方國中學習內容表將主題 A 列於學習內容之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-aa-part-of-a", "from": "kg-science-content-aa", "to": "kg-science-content-a", "relation": "partOf", "rationale": "官方表格將次主題 Aa 列於主題 A 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-ab-part-of-a", "from": "kg-science-content-ab", "to": "kg-science-content-a", "relation": "partOf", "rationale": "官方表格將次主題 Ab 列於主題 A 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-aa-iv-1-part-of-aa", "from": "kg-science-content-aa-iv-1", "to": "kg-science-content-aa", "relation": "partOf", "rationale": "官方表格將 Aa-Ⅳ-1 列於次主題 Aa 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-aa-iv-2-part-of-aa", "from": "kg-science-content-aa-iv-2", "to": "kg-science-content-aa", "relation": "partOf", "rationale": "官方表格將 Aa-Ⅳ-2 列於次主題 Aa 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-aa-iv-3-part-of-aa", "from": "kg-science-content-aa-iv-3", "to": "kg-science-content-aa", "relation": "partOf", "rationale": "官方表格將 Aa-Ⅳ-3 列於次主題 Aa 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-aa-iv-4-part-of-aa", "from": "kg-science-content-aa-iv-4", "to": "kg-science-content-aa", "relation": "partOf", "rationale": "官方表格將 Aa-Ⅳ-4 列於次主題 Aa 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-aa-iv-5-part-of-aa", "from": "kg-science-content-aa-iv-5", "to": "kg-science-content-aa", "relation": "partOf", "rationale": "官方表格將 Aa-Ⅳ-5 列於次主題 Aa 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-ab-iv-1-part-of-ab", "from": "kg-science-content-ab-iv-1", "to": "kg-science-content-ab", "relation": "partOf", "rationale": "官方表格將 Ab-Ⅳ-1 列於次主題 Ab 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-ab-iv-2-part-of-ab", "from": "kg-science-content-ab-iv-2", "to": "kg-science-content-ab", "relation": "partOf", "rationale": "官方表格將 Ab-Ⅳ-2 列於次主題 Ab 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-ab-iv-3-part-of-ab", "from": "kg-science-content-ab-iv-3", "to": "kg-science-content-ab", "relation": "partOf", "rationale": "官方表格將 Ab-Ⅳ-3 列於次主題 Ab 之下。", "status": "verified"},
+    {"id": "kg-edge-science-content-ab-iv-4-part-of-ab", "from": "kg-science-content-ab-iv-4", "to": "kg-science-content-ab", "relation": "partOf", "rationale": "官方表格將 Ab-Ⅳ-4 列於次主題 Ab 之下。", "status": "verified"}
   ]
 }
