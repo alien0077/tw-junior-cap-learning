@@ -1,0 +1,13 @@
+{
+  "subject": "science",
+  "updatedAt": "2026-08-25",
+  "nodes": [
+    {"id": "kg-science-learning-focus", "subject": "science", "label": "自然科學國中學習重點", "curriculumIds": ["cur-science-natural-sciences-domain"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-learning-performance", "subject": "science", "label": "自然科學國中學習表現", "curriculumIds": ["cur-science-learning-performance"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-science-learning-content", "subject": "science", "label": "自然科學國中學習內容", "curriculumIds": ["cur-science-learning-content"], "gradeRange": ["7", "8", "9"], "status": "verified"}
+  ],
+  "edges": [
+    {"id": "kg-edge-science-learning-performance-part-of-focus", "from": "kg-science-learning-performance", "to": "kg-science-learning-focus", "relation": "partOf", "rationale": "官方課綱在國民中學教育階段學習重點下列出學習表現。", "status": "verified"},
+    {"id": "kg-edge-science-learning-content-part-of-focus", "from": "kg-science-learning-content", "to": "kg-science-learning-focus", "relation": "partOf", "rationale": "官方課綱在國民中學教育階段學習重點下列出學習內容。", "status": "verified"}
+  ]
+}

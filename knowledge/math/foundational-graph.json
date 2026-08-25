@@ -1,0 +1,13 @@
+{
+  "subject": "math",
+  "updatedAt": "2026-08-25",
+  "nodes": [
+    {"id": "kg-math-learning-focus", "subject": "math", "label": "數學學習重點", "curriculumIds": ["cur-math-domain"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-math-learning-performance", "subject": "math", "label": "數學學習表現", "curriculumIds": ["cur-math-learning-performance"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-math-learning-content", "subject": "math", "label": "數學學習內容", "curriculumIds": ["cur-math-learning-content"], "gradeRange": ["7", "8", "9"], "status": "verified"}
+  ],
+  "edges": [
+    {"id": "kg-edge-math-learning-performance-part-of-focus", "from": "kg-math-learning-performance", "to": "kg-math-learning-focus", "relation": "partOf", "rationale": "官方課綱將學習表現列於伍、學習重點之下。", "status": "verified"},
+    {"id": "kg-edge-math-learning-content-part-of-focus", "from": "kg-math-learning-content", "to": "kg-math-learning-focus", "relation": "partOf", "rationale": "官方課綱將學習內容列於伍、學習重點之下。", "status": "verified"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "subject": "chinese",
+  "updatedAt": "2026-08-25",
+  "nodes": [
+    {"id": "kg-chinese-learning-focus", "subject": "chinese", "label": "國語文學習重點", "curriculumIds": ["cur-chinese-language-arts-domain"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-chinese-learning-performance", "subject": "chinese", "label": "國語文學習表現", "curriculumIds": ["cur-chinese-learning-performance"], "gradeRange": ["7", "8", "9"], "status": "verified"},
+    {"id": "kg-chinese-learning-content", "subject": "chinese", "label": "國語文學習內容", "curriculumIds": ["cur-chinese-learning-content"], "gradeRange": ["7", "8", "9"], "status": "verified"}
+  ],
+  "edges": [
+    {"id": "kg-edge-chinese-learning-performance-part-of-focus", "from": "kg-chinese-learning-performance", "to": "kg-chinese-learning-focus", "relation": "partOf", "rationale": "官方課綱將學習表現列於伍、學習重點之下。", "status": "verified"},
+    {"id": "kg-edge-chinese-learning-content-part-of-focus", "from": "kg-chinese-learning-content", "to": "kg-chinese-learning-focus", "relation": "partOf", "rationale": "官方課綱將學習內容列於伍、學習重點之下。", "status": "verified"}
+  ]
+}

@@ -3,16 +3,17 @@
   "projectId": "tw-junior-cap-learning",
   "projectName": "臺灣國中教育會考學習系統",
   "status": "active",
-  "currentMilestone": "M1",
-  "currentMilestoneName": "Official Curriculum Index",
+  "currentMilestone": "M2",
+  "currentMilestoneName": "Knowledge Graph Bootstrap",
+  "milestoneStatus": "in_progress",
   "updatedAt": "2026-08-25",
   "sourceOfTruth": "official-12-year-basic-education-curriculum-guidelines",
   "subjects": ["chinese", "english", "math", "science", "social"],
   "publishers": ["nani", "kanghsuan", "hanlin"],
   "dataCounts": {
-    "curriculumDocuments": 5,
-    "knowledgeNodes": 0,
-    "knowledgeEdges": 0,
+    "curriculumDocuments": 15,
+    "knowledgeNodes": 15,
+    "knowledgeEdges": 10,
     "lessons": 0,
     "questions": 0,
     "textbookMappings": 0
@@ -21,12 +22,12 @@
     "jsonSyntax": "passed",
     "schemaDefinitions": "passed",
     "directoryStructure": "passed",
-    "contentData": "official-index-passed"
+    "contentData": "foundational-graph-passed"
   },
   "nextMilestone": "M2",
-  "nextAction": "依官方課綱建立受來源約束的學習表現／學習內容節點，並設計跨版本 Knowledge Graph 的第一批概念與關係。",
+  "nextAction": "依五科官方 PDF 的國中階段表格，建立細粒度且可定位的學習表現／學習內容節點與先備關係。",
   "knownRisks": [
-    "五科僅有領域層官方索引，不能宣稱已完成完整課綱拆解或會考範圍覆蓋。",
+    "M2 僅建立領域、學習表現與學習內容的圖譜骨架，不能宣稱已完成完整課綱拆解或會考範圍覆蓋。",
     "尚未收錄任何教材版本對照、教材或題庫，不能宣稱版本覆蓋或內容完成。"
   ]
 }
