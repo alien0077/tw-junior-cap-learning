@@ -35,3 +35,4 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 - M4 原創內容擴充：目前 10 份 lesson、30 題 question；新增內容均標示 `origin=original`，並連至既有 KG ID，仍不宣稱五科教材／題庫完整。
 
 - M5 MVP：`site/` 透過 `data-manifest.json` 與 GitHub raw JSON 載入 project state、lesson、question，提供五科篩選與搜尋；`netlify.toml` 已提供靜態部署設定。
+- M5 CI：新增 GitHub Actions data-validation workflow，驗證 JSON、Schema、ID uniqueness、KG endpoints 與原創內容 provenance。

@@ -92,3 +92,9 @@
 - 決策：第一版產品使用無 build command 的靜態前端；資料由 manifest 指向 repo JSON，瀏覽器執行時載入 project state、原創 lesson/question，UI 不硬編碼教材內容。
 - 理由：先驗證資料層到使用者介面的最小閉環，降低部署依賴；後續可在不改資料契約的前提下替換框架或 API。
 - 限制：目前依賴 GitHub raw main 分支、沒有登入與學習進度保存，也尚未完成自動化測試與正式部署驗收。
+
+## D-015：資料驗證改由可重複執行的 CI workflow 負責
+
+- 日期：2026-08-25
+- 決策：將 JSON 語法、對應 Schema、全域 ID、KG endpoint 與 M4 provenance 檢查集中在 `scripts/validate_data.py`，由 `.github/workflows/validate-data.yml` 於 push／pull request 執行。
+- 理由：讓每次資料變更都能在遠端環境重現驗證，降低只依賴人工檢查的風險。
