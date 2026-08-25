@@ -15,3 +15,15 @@
 4. 其他來源只能作為輔助，不能推翻官方課綱。
 
 版本 mapping 必須標示證據類型與信心等級；未核對的線索只能標為 `unverified`，不得作為學生內容或完成度依據。
+
+## M1 官方來源登錄
+
+| 科目 | 資料檔 | 官方索引定位 | 查核日期 |
+| --- | --- | --- | --- |
+| 國文 | `curriculum/chinese/official-curriculum-index.json` | 一、課程綱要第 3 項 | 2026-08-25 |
+| 英文 | `curriculum/english/official-curriculum-index.json` | 一、課程綱要第 9 項 | 2026-08-25 |
+| 數學 | `curriculum/math/official-curriculum-index.json` | 一、課程綱要第 12 項 | 2026-08-25 |
+| 社會 | `curriculum/social/official-curriculum-index.json` | 一、課程綱要第 16 項 | 2026-08-25 |
+| 自然 | `curriculum/science/official-curriculum-index.json` | 一、課程綱要第 17 項 | 2026-08-25 |
+
+本表只證明官方索引已查核，不代表完整的課綱、教材版本或考題資料均已收錄。

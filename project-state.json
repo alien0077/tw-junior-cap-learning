@@ -3,14 +3,14 @@
   "projectId": "tw-junior-cap-learning",
   "projectName": "臺灣國中教育會考學習系統",
   "status": "active",
-  "currentMilestone": "M0",
-  "currentMilestoneName": "Project Foundation",
+  "currentMilestone": "M1",
+  "currentMilestoneName": "Official Curriculum Index",
   "updatedAt": "2026-08-25",
   "sourceOfTruth": "official-12-year-basic-education-curriculum-guidelines",
   "subjects": ["chinese", "english", "math", "science", "social"],
   "publishers": ["nani", "kanghsuan", "hanlin"],
   "dataCounts": {
-    "curriculumDocuments": 0,
+    "curriculumDocuments": 5,
     "knowledgeNodes": 0,
     "knowledgeEdges": 0,
     "lessons": 0,
@@ -21,12 +21,12 @@
     "jsonSyntax": "passed",
     "schemaDefinitions": "passed",
     "directoryStructure": "passed",
-    "contentData": "not_started"
+    "contentData": "official-index-passed"
   },
-  "nextMilestone": "M1",
-  "nextAction": "建立官方課綱來源登錄與最小可驗證的課程節點索引",
+  "nextMilestone": "M2",
+  "nextAction": "依官方課綱建立受來源約束的學習表現／學習內容節點，並設計跨版本 Knowledge Graph 的第一批概念與關係。",
   "knownRisks": [
-    "尚未收錄任何教材版本對照，不能宣稱版本覆蓋。",
-    "尚未建立內容資料，不能對外宣稱教材或題庫完成。"
+    "五科僅有領域層官方索引，不能宣稱已完成完整課綱拆解或會考範圍覆蓋。",
+    "尚未收錄任何教材版本對照、教材或題庫，不能宣稱版本覆蓋或內容完成。"
   ]
 }
