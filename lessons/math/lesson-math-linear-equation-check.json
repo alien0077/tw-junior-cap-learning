@@ -31,5 +31,53 @@
     "authoringNote": "Original instructional content authored for this repository; not copied or paraphrased from publisher textbooks."
   },
   "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25"
+  "updatedAt": "2026-08-25",
+  "studyHighlights": [
+    "移項時把等式兩邊做同一個運算。",
+    "先解出未知數，再代回原式左右兩邊檢查。",
+    "把錯誤分成符號、運算或檢查漏做三類。"
+  ],
+  "studyReferences": [
+    "https://vocus.cc/article/621269b6fd89780001676097",
+    "https://www.clearnotebooks.com/zh-TW/notebooks/grade/junior-high?q=%E6%95%B8%E5%AD%B8"
+  ],
+  "interactive": {
+    "type": "guided-choice",
+    "goal": "用同一運算保持等式平衡，再代回檢查。",
+    "steps": [
+      {
+        "id": "step-1",
+        "prompt": "解 3x+2=11 的第一步",
+        "options": [
+          "兩邊減 2",
+          "只左邊減 2",
+          "兩邊乘 2"
+        ],
+        "answer": "A",
+        "feedback": "答對了！回到本單元重點再說一次。"
+      },
+      {
+        "id": "step-2",
+        "prompt": "x=3 如何檢查",
+        "options": [
+          "代回左右兩邊",
+          "只算左邊",
+          "改題目"
+        ],
+        "answer": "A",
+        "feedback": "答對了！回到本單元重點再說一次。"
+      },
+      {
+        "id": "step-3",
+        "prompt": "若左右不等，先查哪裡",
+        "options": [
+          "符號與移項",
+          "字體大小",
+          "題目顏色"
+        ],
+        "answer": "A",
+        "feedback": "答對了！回到本單元重點再說一次。"
+      }
+    ]
+  }
 }

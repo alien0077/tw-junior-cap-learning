@@ -31,5 +31,53 @@
     "authoringNote": "Original instructional content authored for this repository; not copied or paraphrased from publisher textbooks."
   },
   "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25"
+  "updatedAt": "2026-08-25",
+  "studyHighlights": [
+    "先找所有項共同可除的數字與文字，再提出最大公因式。",
+    "提出後逐項相除，括號內每一項都要檢查。",
+    "最後展開驗算；不要只靠外觀猜因式。"
+  ],
+  "studyReferences": [
+    "https://vocus.cc/article/621269b6fd89780001676097",
+    "https://www.clearnotebooks.com/zh-TW/notebooks/grade/junior-high?q=%E6%95%B8%E5%AD%B8"
+  ],
+  "interactive": {
+    "type": "guided-choice",
+    "goal": "用互動步驟找共同因數並展開驗算。",
+    "steps": [
+      {
+        "id": "step-1",
+        "prompt": "找共同因數",
+        "options": [
+          "3x",
+          "6x",
+          "9x"
+        ],
+        "answer": "A",
+        "feedback": "答對了！回到本單元重點再說一次。"
+      },
+      {
+        "id": "step-2",
+        "prompt": "提出 3x 後括號內",
+        "options": [
+          "2x+3",
+          "2x+9",
+          "6x+3"
+        ],
+        "answer": "A",
+        "feedback": "答對了！回到本單元重點再說一次。"
+      },
+      {
+        "id": "step-3",
+        "prompt": "驗算方法",
+        "options": [
+          "展開因式",
+          "改變變數",
+          "比較字數"
+        ],
+        "answer": "A",
+        "feedback": "答對了！回到本單元重點再說一次。"
+      }
+    ]
+  }
 }

@@ -113,3 +113,4 @@
 - 決策：每個 lesson 以 question.lessonId 明確關聯至少 10 題；不足時 CI 失敗。
 - 理由：單一教材單元若只有零星示例，無法支援理解、練習與錯誤診斷。
 - 答案：每題都必須有 answer.value 與 answer.explanation，不能只提供題目或答案字母。
+\n## D-018：以公開學霸筆記作重點研究，不作內容轉載\n\n- 日期：2026-08-25\n- 決策：搜尋公開學習筆記與複習策略頁，將可泛化的學習策略改寫為 lesson.studyHighlights；不複製原文或外部題庫。\n- 驗收：10 份 lesson 均有至少 3 條 highlights 與 source URL；數學／自然 4 份 lesson 各有至少 3 步互動教學。\n- 依據：docs/M4_STUDY_NOTE_HIGHLIGHTS.md。\n

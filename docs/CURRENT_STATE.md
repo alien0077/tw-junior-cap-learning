@@ -11,7 +11,7 @@
 - M3 整冊基線：建立南一、康軒、翰林六冊整冊存在性 mapping；一般冊別以國家教育研究院 115 學年度教科用書清冊為證據，翰林英語另以翰林官方書城 `i英語` 商品資料為證據並保留與審定出版者「佳音」的差異註記。
 - M3 康軒章節級 mapping：完成五科各六冊，共 30 冊、310 個官方章節／單元條目對既有 KG ID 的保守對照。
 - M3 翰林國文章節級 mapping：完成六冊、82 個官方課次對既有 KG ID 的保守對照；六冊課次均取自標示 115 年的翰林組織網域公開索引。
-- M4 資料管線基線：五科各一份原創 lesson、各三題原創 question，全部連至穩定 KG ID，且未使用出版社受保護內容。
+- M4 資料管線基線：五科各一份原創 lesson、各十題原創 question（共 100 題），全部連至穩定 KG ID；10 份 lesson 均含學霸筆記重點與來源，數學／自然 4 份含互動教學。
 
 ## 尚未完成
 
@@ -38,6 +38,7 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 - M5 CI：新增 GitHub Actions data-validation workflow，驗證 JSON、Schema、ID uniqueness、KG endpoints 與原創內容 provenance；目前尚待取得實際 workflow run 結果。
 - M5 Blocker：靜態 MVP 已推送，但尚未有公開部署 URL 與瀏覽器 smoke test。
 
-- M4 方法文件：已補上參考資料層級、原創編寫流程、答案格式、審核界線與外部資料授權規則。
+- M4 方法文件：已補上參考資料層級、原創編寫流程、答案格式、審核界線、外部資料授權規則與學霸筆記重點整合規則。
 
 - M4 題數門檻：question 以 lessonId 歸屬單元，CI 將檢查每個 lesson 至少 10 題。
+\n- M4 學霸筆記整合：docs/M4_STUDY_NOTE_HIGHLIGHTS.md；所有 lesson 已加入 highlights/references，數學與自然每單元提供互動步驟。\n

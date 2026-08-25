@@ -2,12 +2,12 @@
 
 ## 目前內容的真實來源
 
-目前 repo 的 10 份 lesson 與 30 題 question 都是本專案自行撰寫：
+目前 repo 的 10 份 lesson 與 100 題 question 都是本專案自行撰寫：
 
 - 沒有從網路題庫、補習班題庫、出版社課本、習作或教師用書複製。
 - 沒有把現有題目改幾個字後當成原創題。
 - 學習目標來自 repo 已核驗的官方課綱資料與穩定 Knowledge Graph ID；這些是「學什麼」的依據，不是可改寫的題目來源。
-- 目前沒有把網路文章或題庫當成 M4 內容來源。若未來使用外部資料，只能作為事實查核或題型研究，不能抽取原文、選項、答案或解析。
+- 網路學霸筆記只作為重點研究與學習策略查核；不得複製其文字、題目、選項或答案。整合紀錄見 docs/M4_STUDY_NOTE_HIGHLIGHTS.md。若未來使用外部資料，只能作為事實查核或題型研究，不能抽取原文、選項、答案或解析。
 
 ## 參考資料層級
 
@@ -49,3 +49,4 @@
 
 - 每個 lesson 必須有至少 10 題已連結的 question；question 以 lessonId 明確歸屬單元。
 - 每題必須保留 answer.value 與 answer.explanation；CI 會計算每個 lesson 的題數，少於 10 題即失敗。
+\n## 學霸筆記重點與互動教學\n\n每份 lesson 以 studyHighlights 標出至少三個可操作重點，並保存 studyReferences。數學與自然 lesson 必須提供至少三步 guided-choice 互動，每步包含選項、答案與回饋，讓學童先作答再回看重點。\n
