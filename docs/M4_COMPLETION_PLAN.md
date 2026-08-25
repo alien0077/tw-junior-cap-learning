@@ -42,3 +42,4 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 
 - 2026-08-25：M4-003 首批完成 3 筆國文 learning-content records（字形音義、標點效果、篇章主旨），新增 3 份 lesson 與 30 題 question。\n
 - 2026-08-25：M4-003 第二批完成 3 筆國文 learning-content records，新增 3 份 lesson 與 30 題 question。\n
+- 2026-08-25：B-008 解決；第二批 30 題已完成單元對應 QA。\n
