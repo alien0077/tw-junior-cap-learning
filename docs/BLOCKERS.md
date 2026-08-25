@@ -40,3 +40,11 @@
 - 影響：`site/` 與 `netlify.toml` 已推送，但目前沒有可核驗的公開部署 URL、瀏覽器 smoke test 或 Netlify deploy record。
 - 已完成：靜態前端、資料 manifest、五科篩選、搜尋、錯誤狀態與安全 headers。
 - 下一步：連接部署環境後，用公開 URL 驗證 JSON 載入、手機版 layout、搜尋／篩選與失敗提示；未驗收前不宣稱 M5 完成。
+
+
+## B-006：國文其餘 81 筆內容尚未完成
+
+- 狀態：進行中（2026-08-25）
+- 影響：M4-003 尚未達成國文 84 筆全覆蓋。
+- 已解決：首批 3 筆已建立 lesson 與 30 題原創 question。
+- 下一步：依 coverage matrix 繼續補完剩餘 81 筆，完成一批即更新紀錄。

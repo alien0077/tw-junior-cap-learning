@@ -121,3 +121,9 @@
 - 完成：已 materialize 1,032 份 curriculum JSON 的逐筆 coverage matrix，包含 subject、title、gradeRange、lessonId、questionCount、interactiveStatus、contentStatus。
 - 現況：僅 7 筆可直接對應既有 baseline；其餘保持 not-started，避免虛報覆蓋率。
 - 下一步：M4-003 逐筆完成國文 84 筆。
+
+## D-021：M4-003 國文首批內容完成
+
+- 日期：2026-08-25
+- 完成：新增 Ab-Ⅳ-1、Ac-Ⅳ-1、Ad-Ⅳ-1 三個國文課綱節點的原創 lesson，各 10 題，均有答案與解析。
+- 尚未完成：國文仍有 81 筆 coverage rows 未完成；本批不代表國文全科完成。
