@@ -27,8 +27,8 @@
     "lessons": 5,
     "questions": 15,
     "textbookMappings": 90,
-    "textbookMappingSets": 5,
-    "textbookChapterEntries": 310
+    "textbookMappingSets": 6,
+    "textbookChapterEntries": 392
   },
   "validation": {
     "jsonSyntax": "passed",
@@ -41,12 +41,13 @@
     "sourceLocators": "passed",
     "mappingBaseline": "three-publisher-volume-baseline-passed",
     "originalContentBaseline": "five-lessons-fifteen-questions-passed",
-    "kanghsuanChapterMapping": "five-subject-six-volume-official-source-passed"
+    "kanghsuanChapterMapping": "five-subject-six-volume-official-source-passed",
+    "hanlinChineseChapterMapping": "six-volume-official-source-passed"
   },
   "nextMilestone": "M3",
-  "nextAction": "依序取得南一、翰林官方公開目次或章節位置，完成其 60 冊章節／單元到穩定 Knowledge Graph ID 的對照；翰林英語持續區分官方書城產品體系與國教院清冊所列審定出版者佳音。",
+  "nextAction": "核驗南一 NaniBook 五科官方公開目次並完成章節級 KG mapping，再處理翰林英文、數學、自然、社會；翰林英語維持產品體系與審定出版者分離。",
   "knownRisks": [
-    "M3 已完成康軒 30 冊章節級 mapping；南一與翰林 60 冊仍未完成，不能宣稱三版本章節級對照完成。",
+    "M3 已完成康軒 30 冊與翰林國文 6 冊章節級 mapping；其餘 54 冊仍未完成，不能宣稱三版本章節級對照完成。",
     "章節來源只證明出版社章節結構；章節到 KG 的 medium-confidence 關係是本專案保守教學判斷，不是出版社或主管機關背書。",
     "國教院 115 學年度國中英語審定本清冊列出佳音、南一、康軒，而翰林官方書城另售 i英語；兩者不可混同為同一出版者事實。",
     "115 學年度下學期翰林英語商品尚未公開時，偶數冊僅能保留目前可查的 114 下期官方產品證據，不可假標 115。",

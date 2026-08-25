@@ -88,3 +88,16 @@
 - 資料規模：五科各六冊，共 30 冊、310 個章節／單元條目；國文 82、英文 34、數學 58、自然 36、社會 100。
 - 對照方法：章名先依科目與冊次正規化，再保守連至既有細粒度 KG ID；所有端點已確認存在。出版社來源只證明章節結構，KG 對照屬本專案教學判斷，統一標為 `medium` confidence。
 - 限制：官方資源可能隨版本更新；因此資料同時保留查核日與版本說明。此批不含課文、題目或影音內容，也不代表南一、翰林已完成章節級對照。
+
+## M3 翰林國文章節級 mapping
+
+- 查核日期：2026-08-25。
+- 官方章節證據：翰林組織網域的「115年翰林國文網頁版PPT」六冊索引：
+  - 1上：https://sites.google.com/hanlin.com.tw/112chwebppt/1%E4%B8%8A
+  - 1下：https://sites.google.com/hanlin.com.tw/112chwebppt/1%E4%B8%8B
+  - 2上：https://sites.google.com/hanlin.com.tw/112chwebppt/2%E4%B8%8A
+  - 2下：https://sites.google.com/hanlin.com.tw/112chwebppt/2%E4%B8%8B
+  - 3上：https://sites.google.com/hanlin.com.tw/112chwebppt/3%E4%B8%8A
+  - 3下：https://sites.google.com/hanlin.com.tw/112chwebppt/3%E4%B8%8B
+- 資料規模：六冊共 82 個課次；只擷取課次代碼與名稱，不開啟或保存課本、習作、簡報內容。
+- 對照方法：一般課文保守連至篇章主旨與閱讀理解節點；詩詞、文字結構、書法、語法、應用文、標點與資訊檢索等明確單元連至相應細粒度 KG ID。所有端點已確認存在，關係信心標為 `medium`。
