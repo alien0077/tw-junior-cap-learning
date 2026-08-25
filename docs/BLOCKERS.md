@@ -27,7 +27,16 @@
 
 ## B-003：repo 尚未配置 CI workflow
 
-- 狀態：resolved（2026-08-25）
+- 狀態：partially-resolved（2026-08-25）
 - 解法：新增 `.github/workflows/validate-data.yml`，安裝 jsonschema 後執行 `scripts/validate_data.py`。
 - 驗證範圍：JSON 語法、對應 Schema、全域 ID uniqueness、lesson/question/mapping 的 KG endpoint，以及 M4 原創 provenance。
-- 後續：若新增資料類型或 schema，需同步擴充 validator 與 workflow。
+- 尚未解開：connector 目前未回報此 push 的 workflow run／status，因此尚未能由遠端結果確認 workflow 實際執行成功。
+- 後續：確認 Actions 執行權限與首次 run；若仍無 run，改用可由 PR 觸發的驗證流程。
+
+
+## B-004：M5 MVP 尚未完成部署驗收
+
+- 狀態：open
+- 影響：`site/` 與 `netlify.toml` 已推送，但目前沒有可核驗的公開部署 URL、瀏覽器 smoke test 或 Netlify deploy record。
+- 已完成：靜態前端、資料 manifest、五科篩選、搜尋、錯誤狀態與安全 headers。
+- 下一步：連接部署環境後，用公開 URL 驗證 JSON 載入、手機版 layout、搜尋／篩選與失敗提示；未驗收前不宣稱 M5 完成。
