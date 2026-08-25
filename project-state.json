@@ -24,8 +24,8 @@
     "curriculumDocuments": 1032,
     "knowledgeNodes": 1032,
     "knowledgeEdges": 1046,
-    "lessons": 5,
-    "questions": 15,
+    "lessons": 10,
+    "questions": 30,
     "textbookMappings": 90,
     "textbookMappingSets": 6,
     "textbookChapterEntries": 392
@@ -40,10 +40,11 @@
     "relationshipEndpoints": "passed",
     "sourceLocators": "passed",
     "mappingBaseline": "three-publisher-volume-baseline-passed",
-    "originalContentBaseline": "five-lessons-fifteen-questions-passed",
+    "originalContentBaseline": "ten-lessons-thirty-questions-passed",
     "kanghsuanChapterMapping": "five-subject-six-volume-official-source-passed",
     "hanlinChineseChapterMapping": "six-volume-official-source-passed",
-    "blockerLog": "docs/BLOCKERS.md-recorded"
+    "blockerLog": "docs/BLOCKERS.md-recorded",
+    "originalContentEndpointCheck": "passed"
   },
   "nextMilestone": "M3",
   "nextAction": "核驗南一 NaniBook 五科官方公開目次並完成章節級 KG mapping，再處理翰林英文、數學、自然、社會；翰林英語維持產品體系與審定出版者分離。",
@@ -55,6 +56,7 @@
     "M4 只有少量原創 lesson/question 基線，不能宣稱五科教材或題庫完成。",
     "B-001：南一官方章節目次目前由動態／授權介面提供，30 冊尚未完成公開可核驗 mapping。",
     "B-002：翰林非國文科缺少可直接讀取的公開課次索引，24 冊尚未完成章節 mapping。",
-    "B-003：repo 沒有 CI workflow，尚未有遠端自動驗證。"
+    "B-003：repo 沒有 CI workflow，尚未有遠端自動驗證。",
+    "M4 目前擴充為十份原創 lesson 與三十題原創 question，仍是資料管線與代表性內容，不等於五科完整教材或題庫。"
   ]
 }

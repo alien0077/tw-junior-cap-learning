@@ -31,3 +31,5 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 ## Blocker 紀錄
 
 目前未完成的官方目次來源與下一步嘗試已記錄於 `docs/BLOCKERS.md`。這些 blocker 不代表資料不存在，只代表目前尚未取得可直接核驗的公開章節定位；在解開前不把冊別存在性 baseline 升級成章節 mapping。
+
+- M4 原創內容擴充：目前 10 份 lesson、30 題 question；新增內容均標示 `origin=original`，並連至既有 KG ID，仍不宣稱五科教材／題庫完整。
