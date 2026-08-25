@@ -17,7 +17,7 @@
 
 - M3：南一五科 30 冊與翰林其餘四科 24 冊仍待官方目次證據與章節級 KG 對照。
 - M3：115 學年度翰林英語審定出版者身分與翰林書城 `i英語` 產品體系需持續分開紀錄；115 下期商品資料尚未公開時，不可把 114 下期誤標為 115。
-- M4：目前有 16 份 lesson、160 題 question；每個 lesson 已配置至少 10 題，均依 docs/M4_CONTENT_METHOD.md 以課綱／KG 目標自行撰寫，含答案與解析，但仍不代表五科教材或題庫覆蓋完成。
+- M4：目前有 19 份 lesson、190 題 question；每個 lesson 已配置至少 10 題，均依 docs/M4_CONTENT_METHOD.md 以課綱／KG 目標自行撰寫，含答案與解析，但仍不代表五科教材或題庫覆蓋完成。
 - M5：已建立可直接部署的資料驅動靜態 MVP（site/）；自動測試、部署驗收與完整產品流程仍未完成。
 
 ## 工作限制
@@ -46,4 +46,4 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 ## M4 進度更新
 
 - M4-002 已完成：已建立 [data/m4-coverage-matrix.json](../data/m4-coverage-matrix.json)，逐一列出 1,032 筆 curriculum records；目前僅 7 筆有可直接對應的既有 lesson/question baseline。
-- M4-003 已開始：國文已完成 6/84 筆（新增 6 lesson、60 question），其餘 81 筆仍待補全。
+- M4-003 已開始：國文已完成 9/84 筆（新增 6 lesson、60 question），其餘 81 筆仍待補全。

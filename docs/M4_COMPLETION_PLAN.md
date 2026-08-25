@@ -19,7 +19,7 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 |---|---|---|---|
 | M4-001 | 原創內容 baseline | 10 lessons、100 questions、每單元至少 10 題 | 已完成 |
 | M4-002 | 全課綱 coverage matrix | 1,032 個節點逐一列出 subject、grade、KG、lesson、question、互動狀態 | 已完成（data/m4-coverage-matrix.json） |
-| M4-003 | 國文教材與題庫 | 所有國文節點完成 lesson 與每單元 10 題 | 進行中（6/84 筆） |
+| M4-003 | 國文教材與題庫 | 所有國文節點完成 lesson 與每單元 10 題 | 進行中（9/84 筆） |
 | M4-004 | 英文教材與題庫 | 所有英文節點完成 lesson 與每單元 10 題 | 待 M4-003 |
 | M4-005 | 數學教材、題庫、互動 | 所有數學節點完成 lesson、10 題、3 步互動 | 待 M4-004 |
 | M4-006 | 自然教材、題庫、互動 | 所有自然節點完成 lesson、10 題、3 步互動 | 待 M4-005 |
@@ -43,3 +43,4 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 - 2026-08-25：M4-003 首批完成 3 筆國文 learning-content records（字形音義、標點效果、篇章主旨），新增 3 份 lesson 與 30 題 question。\n
 - 2026-08-25：M4-003 第二批完成 3 筆國文 learning-content records，新增 3 份 lesson 與 30 題 question。\n
 - 2026-08-25：B-008 解決；第二批 30 題已完成單元對應 QA。\n
+- 2026-08-25：M4-003 第三批完成 3 筆國文 learning-content records，新增 3 份 lesson 與 30 題 question。\n
