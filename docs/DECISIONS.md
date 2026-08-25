@@ -115,8 +115,9 @@
 - 答案：每題都必須有 answer.value 與 answer.explanation，不能只提供題目或答案字母。
 \n## D-018：以公開學霸筆記作重點研究，不作內容轉載\n\n- 日期：2026-08-25\n- 決策：搜尋公開學習筆記與複習策略頁，將可泛化的學習策略改寫為 lesson.studyHighlights；不複製原文或外部題庫。\n- 驗收：10 份 lesson 均有至少 3 條 highlights 與 source URL；數學／自然 4 份 lesson 各有至少 3 步互動教學。\n- 依據：docs/M4_STUDY_NOTE_HIGHLIGHTS.md。\n
 
-## D-019：M4 改採全課綱逐階段驗收
+## D-020：Coverage matrix 先於內容擴充
 
 - 日期：2026-08-25
-- 決策：不以 10 個代表單元推論完整課綱；改以 1,032 個 KG 課綱節點建立 coverage matrix，依科目逐階段補教材、題庫與數理互動。
-- 完成條件：見 docs/M4_COMPLETION_PLAN.md；每階段完成都要同步更新狀態與紀錄。
+- 完成：已 materialize 1,032 份 curriculum JSON 的逐筆 coverage matrix，包含 subject、title、gradeRange、lessonId、questionCount、interactiveStatus、contentStatus。
+- 現況：僅 7 筆可直接對應既有 baseline；其餘保持 not-started，避免虛報覆蓋率。
+- 下一步：M4-003 逐筆完成國文 84 筆。
