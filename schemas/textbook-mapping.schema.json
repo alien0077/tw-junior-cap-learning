@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alien0077/tw-junior-cap-learning/schemas/textbook-mapping.schema.json",
+  "title": "教科書版本對照",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "subject", "knowledgeId", "publisher", "edition", "textbookLocation", "relation", "evidence", "status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^map-(chinese|english|math|science|social)-(nani|kanghsuan|hanlin)-[a-z0-9-]+$"},
+    "subject": {"enum": ["chinese", "english", "math", "science", "social"]},
+    "knowledgeId": {"type": "string", "pattern": "^kg-"},
+    "publisher": {"enum": ["nani", "kanghsuan", "hanlin"]},
+    "edition": {"type": "object", "additionalProperties": false, "required": ["academicYear", "grade", "volume"], "properties": {"academicYear": {"type": "string", "pattern": "^[0-9]{3}$"}, "grade": {"enum": ["7", "8", "9"]}, "volume": {"type": "string", "minLength": 1}, "isbn": {"type": "string"}}},
+    "textbookLocation": {"type": "object", "additionalProperties": false, "required": ["chapterLabel"], "properties": {"chapterLabel": {"type": "string", "minLength": 1}, "unitLabel": {"type": "string"}, "pageRange": {"type": "string", "pattern": "^[0-9]+(-[0-9]+)?$"}}},
+    "relation": {"enum": ["primary", "supporting", "prerequisite", "review", "not-covered"]},
+    "evidence": {"type": "object", "additionalProperties": false, "required": ["type", "locator", "verifiedAt", "verifiedBy", "confidence"], "properties": {"type": {"enum": ["publisher-catalog", "book-inspection", "licensed-metadata", "official-publisher-page"]}, "url": {"type": "string", "format": "uri"}, "locator": {"type": "string", "minLength": 1}, "verifiedAt": {"type": "string", "format": "date"}, "verifiedBy": {"type": "string", "minLength": 1}, "confidence": {"enum": ["low", "medium", "high"]}}},
+    "status": {"enum": ["unverified", "verified", "deprecated"]},
+    "notes": {"type": "string"},
+    "supersededBy": {"type": "string", "pattern": "^map-"}
+  }
+}

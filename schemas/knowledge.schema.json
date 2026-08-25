@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alien0077/tw-junior-cap-learning/schemas/knowledge.schema.json",
+  "title": "五科統一 Knowledge Graph",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["subject", "nodes", "edges", "updatedAt"],
+  "properties": {
+    "subject": {"enum": ["chinese", "english", "math", "science", "social"]},
+    "updatedAt": {"type": "string", "format": "date"},
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "subject", "label", "curriculumIds", "status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^kg-(chinese|english|math|science|social)-[a-z0-9-]+$"},
+          "subject": {"enum": ["chinese", "english", "math", "science", "social"]},
+          "label": {"type": "string", "minLength": 1},
+          "description": {"type": "string"},
+          "curriculumIds": {"type": "array", "items": {"type": "string", "pattern": "^cur-"}, "minItems": 1, "uniqueItems": true},
+          "gradeRange": {"type": "array", "items": {"enum": ["7", "8", "9"]}, "uniqueItems": true},
+          "status": {"enum": ["draft", "verified", "deprecated"]},
+          "supersededBy": {"type": "string", "pattern": "^kg-"}
+        }
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["id", "from", "to", "relation", "status"],
+        "properties": {
+          "id": {"type": "string", "pattern": "^kg-edge-[a-z0-9-]+$"},
+          "from": {"type": "string", "pattern": "^kg-"},
+          "to": {"type": "string", "pattern": "^kg-"},
+          "relation": {"enum": ["prerequisiteOf", "partOf", "relatedTo", "contrastsWith", "appliesTo"]},
+          "rationale": {"type": "string", "minLength": 1},
+          "status": {"enum": ["draft", "verified", "deprecated"]}
+        }
+      }
+    }
+  }
+}

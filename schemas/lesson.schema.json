@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alien0077/tw-junior-cap-learning/schemas/lesson.schema.json",
+  "title": "自編教材",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "subject", "title", "knowledgeIds", "content", "provenance", "reviewStatus"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^lesson-(chinese|english|math|science|social)-[a-z0-9-]+$"},
+    "subject": {"enum": ["chinese", "english", "math", "science", "social"]},
+    "title": {"type": "string", "minLength": 1},
+    "knowledgeIds": {"type": "array", "items": {"type": "string", "pattern": "^kg-"}, "minItems": 1, "uniqueItems": true},
+    "gradeRange": {"type": "array", "items": {"enum": ["7", "8", "9"]}, "minItems": 1, "uniqueItems": true},
+    "content": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["summary", "sections"],
+      "properties": {
+        "summary": {"type": "string", "minLength": 1},
+        "sections": {"type": "array", "minItems": 1, "items": {"type": "object", "additionalProperties": false, "required": ["heading", "body"], "properties": {"heading": {"type": "string", "minLength": 1}, "body": {"type": "string", "minLength": 1}}}}
+      }
+    },
+    "provenance": {"type": "object", "additionalProperties": false, "required": ["origin", "license"], "properties": {"origin": {"const": "original"}, "license": {"type": "string", "minLength": 1}, "authoringNote": {"type": "string"}}},
+    "reviewStatus": {"enum": ["draft", "content-reviewed", "published", "deprecated"]},
+    "updatedAt": {"type": "string", "format": "date"},
+    "supersededBy": {"type": "string", "pattern": "^lesson-"}
+  }
+}

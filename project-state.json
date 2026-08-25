@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "projectId": "tw-junior-cap-learning",
+  "projectName": "臺灣國中教育會考學習系統",
+  "status": "active",
+  "currentMilestone": "M0",
+  "currentMilestoneName": "Project Foundation",
+  "updatedAt": "2026-08-25",
+  "sourceOfTruth": "official-12-year-basic-education-curriculum-guidelines",
+  "subjects": ["chinese", "english", "math", "science", "social"],
+  "publishers": ["nani", "kanghsuan", "hanlin"],
+  "dataCounts": {
+    "curriculumDocuments": 0,
+    "knowledgeNodes": 0,
+    "knowledgeEdges": 0,
+    "lessons": 0,
+    "questions": 0,
+    "textbookMappings": 0
+  },
+  "validation": {
+    "jsonSyntax": "passed",
+    "schemaDefinitions": "passed",
+    "directoryStructure": "passed",
+    "contentData": "not_started"
+  },
+  "nextMilestone": "M1",
+  "nextAction": "建立官方課綱來源登錄與最小可驗證的課程節點索引",
+  "knownRisks": [
+    "尚未收錄任何教材版本對照，不能宣稱版本覆蓋。",
+    "尚未建立內容資料，不能對外宣稱教材或題庫完成。"
+  ]
+}

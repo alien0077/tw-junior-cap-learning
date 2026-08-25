@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alien0077/tw-junior-cap-learning/schemas/curriculum.schema.json",
+  "title": "官方課綱節點",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "subject", "title", "level", "source", "status"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^cur-(chinese|english|math|science|social)-[a-z0-9-]+$"},
+    "subject": {"enum": ["chinese", "english", "math", "science", "social"]},
+    "title": {"type": "string", "minLength": 1},
+    "level": {"enum": ["domain", "theme", "learning-content", "learning-performance", "topic"]},
+    "gradeRange": {"type": "array", "items": {"enum": ["7", "8", "9"]}, "uniqueItems": true, "minItems": 1},
+    "parentId": {"type": "string", "pattern": "^cur-"},
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "title", "accessedAt", "locator"],
+      "properties": {
+        "url": {"type": "string", "format": "uri"},
+        "title": {"type": "string", "minLength": 1},
+        "publishedAt": {"type": "string", "format": "date"},
+        "accessedAt": {"type": "string", "format": "date"},
+        "locator": {"type": "string", "minLength": 1}
+      }
+    },
+    "status": {"enum": ["draft", "verified", "deprecated"]},
+    "supersededBy": {"type": "string", "pattern": "^cur-"},
+    "notes": {"type": "string"}
+  }
+}

@@ -1,0 +1,22 @@
+# OS 與編輯器
+.DS_Store
+.idea/
+.vscode/
+
+# 相依套件與建置產物
+node_modules/
+dist/
+build/
+coverage/
+*.log
+
+# 環境與私密資料
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# 本機快取與暫存資料
+.cache/
+tmp/

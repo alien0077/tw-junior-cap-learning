@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/alien0077/tw-junior-cap-learning/schemas/question.schema.json",
+  "title": "題目資料",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "subject", "type", "prompt", "knowledgeIds", "answer", "provenance", "reviewStatus"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^question-(chinese|english|math|science|social)-[a-z0-9-]+$"},
+    "subject": {"enum": ["chinese", "english", "math", "science", "social"]},
+    "type": {"enum": ["single-choice", "multiple-choice", "constructed-response"]},
+    "prompt": {"type": "string", "minLength": 1},
+    "options": {"type": "array", "items": {"type": "object", "additionalProperties": false, "required": ["id", "text"], "properties": {"id": {"type": "string", "pattern": "^[A-Z]$"}, "text": {"type": "string", "minLength": 1}}}, "minItems": 2, "uniqueItems": true},
+    "knowledgeIds": {"type": "array", "items": {"type": "string", "pattern": "^kg-"}, "minItems": 1, "uniqueItems": true},
+    "difficulty": {"enum": ["easy", "medium", "hard"]},
+    "answer": {"type": "object", "additionalProperties": false, "required": ["value", "explanation"], "properties": {"value": {"type": "string", "minLength": 1}, "explanation": {"type": "string", "minLength": 1}}},
+    "provenance": {"type": "object", "additionalProperties": false, "required": ["origin", "license"], "properties": {"origin": {"enum": ["original", "official-open", "licensed"]}, "license": {"type": "string", "minLength": 1}, "sourceUrl": {"type": "string", "format": "uri"}, "sourceLocator": {"type": "string"}}},
+    "reviewStatus": {"enum": ["draft", "content-reviewed", "published", "deprecated"]},
+    "updatedAt": {"type": "string", "format": "date"},
+    "supersededBy": {"type": "string", "pattern": "^question-"}
+  },
+  "allOf": [
+    {"if": {"properties": {"type": {"const": "single-choice"}}}, "then": {"required": ["options"]}},
+    {"if": {"properties": {"type": {"const": "multiple-choice"}}}, "then": {"required": ["options"]}}
+  ]
+}
