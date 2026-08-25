@@ -44,3 +44,8 @@
 ## 未來若要使用外部參考
 
 可引用公開、可追溯且授權允許的資料來查核事實，但該筆資料必須記錄 sourceUrl 與 sourceLocator，並保留足夠表達差異。不得使用「先找題庫、再改寫」作為原創題目流程；若要收錄合法公開題，應改標 official-open 或 licensed，保留原始授權與來源，不可標成 original。
+
+## M4 題庫最低數量
+
+- 每個 lesson 必須有至少 10 題已連結的 question；question 以 lessonId 明確歸屬單元。
+- 每題必須保留 answer.value 與 answer.explanation；CI 會計算每個 lesson 的題數，少於 10 題即失敗。

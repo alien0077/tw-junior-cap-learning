@@ -65,6 +65,8 @@ def main() -> int:
 
     for path, data in parsed.items():
         if path.parts and path.parts[0] in {"lessons", "questions"}:
+            if path.parts[0] == "questions" and not data.get("lessonId"):
+                errors.append(f"{path}: missing lessonId")
             for item_id in data.get("knowledgeIds", []):
                 if item_id not in kg_ids:
                     errors.append(f"{path}: missing KG endpoint {item_id}")
@@ -77,6 +79,15 @@ def main() -> int:
                     for item_id in entry.get("knowledgeIds", []):
                         if item_id not in kg_ids:
                             errors.append(f"{path}: missing mapping KG endpoint {item_id}")
+
+    lesson_question_counts: dict[str, int] = {}
+    for path, data in parsed.items():
+        if path.parts and path.parts[0] == "questions" and isinstance(data.get("lessonId"), str):
+            lesson_question_counts[data["lessonId"]] = lesson_question_counts.get(data["lessonId"], 0) + 1
+    lesson_ids = {item_id for item_id, path in ids.items() if path.parts and path.parts[0] == "lessons"}
+    for lesson_id in lesson_ids:
+        if lesson_question_counts.get(lesson_id, 0) < 10:
+            errors.append(f"{lesson_id}: only {lesson_question_counts.get(lesson_id, 0)} questions; minimum is 10")
 
     if errors:
         print("\n".join(errors))

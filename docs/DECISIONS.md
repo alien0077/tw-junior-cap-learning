@@ -106,3 +106,10 @@
 - 答案要求：每題必須有可檢查的 answer.value 與 answer.explanation；選擇題需檢查唯一最佳答案與 distractors。
 - 來源要求：外部資料若只作事實查核，記錄 sourceUrl／sourceLocator；若直接收錄合法公開題，必須改標 official-open 或 licensed，不可標為 original。
 - 審核界線：content-reviewed 表示 repo 內部檢查，不代表教師或學科專家審查。
+
+## D-017：每個 M4 lesson 至少配置十題
+
+- 日期：2026-08-25
+- 決策：每個 lesson 以 question.lessonId 明確關聯至少 10 題；不足時 CI 失敗。
+- 理由：單一教材單元若只有零星示例，無法支援理解、練習與錯誤診斷。
+- 答案：每題都必須有 answer.value 與 answer.explanation，不能只提供題目或答案字母。
