@@ -52,10 +52,12 @@
     "questionCoverage": "ten-questions-per-lesson-passed",
     "answerExplanationCheck": "passed",
     "interactiveMathScience": "four-units-guided-choice-passed",
-    "studyHighlights": "ten-lessons-three-highlights-with-sources-passed"
+    "studyHighlights": "ten-lessons-three-highlights-with-sources-passed",
+    "m4CompletionPlan": "docs/M4_COMPLETION_PLAN.md",
+    "m4CoverageMatrix": "not-started"
   },
   "nextMilestone": "M3",
-  "nextAction": "核驗南一 NaniBook 五科官方公開目次並完成章節級 KG mapping，再處理翰林英文、數學、自然、社會；翰林英語維持產品體系與審定出版者分離。",
+  "nextAction": "M4-002：建立 1,032 個課綱／KG 節點的 coverage matrix，完成後依序補國文、英文、數學、自然、社會教材、題庫與互動教學。",
   "knownRisks": [
     "M3 已完成康軒 30 冊與翰林國文 6 冊章節級 mapping；其餘 54 冊仍未完成，不能宣稱三版本章節級對照完成。",
     "章節來源只證明出版社章節結構；章節到 KG 的 medium-confidence 關係是本專案保守教學判斷，不是出版社或主管機關背書。",
@@ -67,6 +69,7 @@
     "B-003：validator 與 workflow 已加入，但本次 push 的實際 Actions run 尚未由 connector 回報。",
     "M4 目前為十份原創 lesson、100 題原創 question 與四份數理互動教學，仍是代表性內容，不等於五科完整教材或題庫。",
     "M5 MVP 目前依賴 GitHub raw main 分支，尚未完成 CI、部署驗收、登入或學習進度功能。",
-    "B-004：M5 靜態 MVP 尚未連接部署環境，沒有公開 URL 與 smoke test 驗收。"
+    "B-004：M5 靜態 MVP 尚未連接部署環境，沒有公開 URL 與 smoke test 驗收。",
+    "M4-002：1,032 個課綱／KG 節點的 coverage matrix 尚未 materialize，M4 目前不能宣稱完整涵蓋。"
   ]
 }

@@ -42,3 +42,7 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 
 - M4 題數門檻：question 以 lessonId 歸屬單元，CI 將檢查每個 lesson 至少 10 題。
 \n- M4 學霸筆記整合：docs/M4_STUDY_NOTE_HIGHLIGHTS.md；所有 lesson 已加入 highlights/references，數學與自然每單元提供互動步驟。\n
+
+## M4 全課綱補全
+
+完整標準與逐階段進度記錄於 [docs/M4_COMPLETION_PLAN.md](M4_COMPLETION_PLAN.md)。目前 M4-001 baseline 已完成；M4-002 全課綱 coverage matrix 進行中，尚未達到完整課綱涵蓋。
