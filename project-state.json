@@ -3,31 +3,49 @@
   "projectId": "tw-junior-cap-learning",
   "projectName": "臺灣國中教育會考學習系統",
   "status": "active",
-  "currentMilestone": "M2",
-  "currentMilestoneName": "Knowledge Graph Bootstrap",
+  "currentMilestone": "M3",
+  "currentMilestoneName": "Three Publisher Mapping",
   "milestoneStatus": "in_progress",
   "updatedAt": "2026-08-25",
   "sourceOfTruth": "official-12-year-basic-education-curriculum-guidelines",
-  "subjects": ["chinese", "english", "math", "science", "social"],
-  "publishers": ["nani", "kanghsuan", "hanlin"],
+  "subjects": [
+    "chinese",
+    "english",
+    "math",
+    "science",
+    "social"
+  ],
+  "publishers": [
+    "nani",
+    "kanghsuan",
+    "hanlin"
+  ],
   "dataCounts": {
-    "curriculumDocuments": 27,
-    "knowledgeNodes": 27,
-    "knowledgeEdges": 22,
-    "lessons": 0,
-    "questions": 0,
-    "textbookMappings": 0
+    "curriculumDocuments": 1032,
+    "knowledgeNodes": 1032,
+    "knowledgeEdges": 1046,
+    "lessons": 5,
+    "questions": 15,
+    "textbookMappings": 90
   },
   "validation": {
     "jsonSyntax": "passed",
     "schemaDefinitions": "passed",
     "directoryStructure": "passed",
-    "contentData": "science-theme-a-graph-passed"
+    "contentData": "m2-five-subject-stage-iv-tables-passed",
+    "idUniqueness": "passed",
+    "curriculumParentEndpoints": "passed",
+    "relationshipEndpoints": "passed",
+    "sourceLocators": "passed",
+    "mappingBaseline": "three-publisher-volume-baseline-passed",
+    "originalContentBaseline": "five-lessons-fifteen-questions-passed"
   },
-  "nextMilestone": "M2",
-  "nextAction": "依五科官方 PDF 的國中階段表格，持續建立細粒度且可定位的學習表現／學習內容節點與僅由來源支持的關係。",
+  "nextMilestone": "M3",
+  "nextAction": "逐冊取得南一、康軒、翰林官方公開目次或章節位置，將整冊存在性 baseline mapping 細化到穩定 Knowledge Graph ID；翰林英語需持續區分官方書城產品體系與國教院清冊所列審定出版者佳音。",
   "knownRisks": [
-    "M2 僅建立領域、學習表現與學習內容的圖譜骨架，並局部拆解自然科主題 A；不能宣稱已完成自然科完整課綱拆解或會考範圍覆蓋。",
-    "尚未收錄任何教材版本對照、教材或題庫，不能宣稱版本覆蓋或內容完成。"
+    "M3 目前只完成整冊存在性 baseline，尚未完成 90 冊章節／單元到細粒度 Knowledge Graph 的完整 mapping。",
+    "國教院 115 學年度國中英語審定本清冊列出佳音、南一、康軒，而翰林官方書城另售 i英語；兩者不可混同為同一出版者事實。",
+    "115 學年度下學期翰林英語商品尚未公開時，偶數冊僅能保留目前可查的 114 下期官方產品證據，不可假標 115。",
+    "M4 只有少量原創 lesson/question 基線，不能宣稱五科教材或題庫完成。"
   ]
 }

@@ -46,3 +46,29 @@
 - 範圍：國民中學教育階段學習內容主題 A「物質的組成與特性」，含 Aa、Ab 及 Aa-Ⅳ-1～5、Ab-Ⅳ-1～4。
 - 定位：正文第 22～23 頁／PDF 第 26～27 頁；各節點保留對應官方代碼與頁碼。
 - 限制：本登錄是單一主題的表格階層拆解；不含其他自然科主題、教材版本 mapping、教材或題庫。
+
+## M2 五科第四學習階段細粒度表格登錄
+
+本批只使用教育部／國家教育研究院正式發布的課程綱要 PDF，查核日均為 2026-08-25。每個 curriculum node 另保存官方 URL、發布日期、正文／PDF 頁碼範圍及官方代碼 locator。
+
+| 科目 | 官方發布日 | 學習表現定位 | 學習內容定位 | 細粒度節點數 |
+| --- | --- | --- | --- | ---: |
+| 國語文 | 2018-01-25 | 正文 6～11／PDF 8～13 | 正文 12～18／PDF 14～20 | 81 |
+| 英語文 | 2018-04-16 | 正文 8～15／PDF 10～17 | 正文 16～20／PDF 18～22 | 134 |
+| 數學 | 2018-07-26 | 正文 7～17／PDF 10～20 | 國中逐年級表：正文 36～45／PDF 39～48 | 123 |
+| 自然科學 | 2018-11-02 | 正文 21～22／PDF 25～26 | 一般內容正文 22～30／PDF 26～34；跨科正文 30～31／PDF 34～35 | 323 |
+| 社會 | 2018-10-26 | 正文 8～12／PDF 12～16 | 歷史正文 18～20／PDF 22～24；地理正文 22～24／PDF 26～28；公民正文 27～36／PDF 31～40 | 356 |
+
+細粒度總計 1017 個 curriculum／Knowledge Graph 節點。圖譜建立 1017 條官方表格階層直接支持的 `partOf`；自然科跨科主題另依官方次主題欄建立 19 條 `relatedTo`。此處的 M2 完成只代表上述第四學習階段官方學習重點表格完成逐碼建模，不代表會考命題範圍、出版社版本 mapping、教材或題庫完成。
+
+## M3 三版本整冊存在性基線
+
+- 主要證據：國家教育研究院「115 學年度國民小學及國民中學教科用書」清冊：https://textbooks.naer.edu.tw/DownLoadFile.aspx?ASParam=TUZIRSs3NSUyNjglMjQlN2QlMWIlMDR1eSUwZWdocCU3ZWZ3JTExd20lMWN1JTBiJTBjJTFiZm4lMDAlMTIlN2V3ZnQlMDMlMWVwJTBiJTBjJTA2JTFkJTFldg%3D%3D
+- 國文、數學、自然科學、社會之南一／康軒／翰林第一至第六冊，以及英語之南一／康軒第一至第六冊，均以該清冊作為 `official-government-list` 證據。
+- 翰林英語特例：國家教育研究院 115 學年度清冊的國中英語出版者列為佳音、南一、康軒；翰林官方書城則列有 `國中課本-i英語`。因此本專案保留差異：翰林英語 mapping 的證據類型為 `official-publisher-page`，不主張其審定執照出版者為翰林。官方產品總表：https://books.hanlin.com.tw/productall
+- 本批 mapping 只建立「冊別存在性 → 各科 learning-content 根節點」的 `supporting` 關係；章節／單元級 mapping 尚待後續逐冊官方目次證據。
+
+## M4 原創 lesson / question 基線
+
+- 五科各建立一份原創 lesson，主題分別為國文議論論據、英語 fact/opinion、數學因式分解、自然科比熱、社會機會成本。
+- 每份 lesson 配三題原創單選題，全部只連至本專案穩定 KG ID；`provenance.origin=original`，未引用或改寫出版社課本、習作與題庫。
