@@ -55,10 +55,11 @@
     "studyHighlights": "ten-lessons-three-highlights-with-sources-passed",
     "m4CompletionPlan": "docs/M4_COMPLETION_PLAN.md",
     "m4CoverageMatrix": "1032-records-materialized-10-baseline-plus-3-chinese-covered",
-    "m4ChineseBatch": "12-of-84-content-reviewed-pending-ci"
+    "m4ChineseBatch": "12-of-84-content-reviewed-pending-ci",
+    "m4ExecutionMode": "batch-draft-validate-qa"
   },
   "nextMilestone": "M3",
-  "nextAction": "M4-003：繼續補完國文剩餘 72 筆 curriculum records，每筆建立 lesson 與至少 10 題 question。",
+  "nextAction": "建立 M4 批次產生器，先 materialize 未完成 coverage rows 的 draft lesson/question，再自動驗證並依科目 QA。",
   "knownRisks": [
     "M3 已完成康軒 30 冊與翰林國文 6 冊章節級 mapping；其餘 54 冊仍未完成，不能宣稱三版本章節級對照完成。",
     "章節來源只證明出版社章節結構；章節到 KG 的 medium-confidence 關係是本專案保守教學判斷，不是出版社或主管機關背書。",
@@ -72,6 +73,7 @@
     "M5 MVP 目前依賴 GitHub raw main 分支，尚未完成 CI、部署驗收、登入或學習進度功能。",
     "B-004：M5 靜態 MVP 尚未連接部署環境，沒有公開 URL 與 smoke test 驗收。",
     "M4-003：國文已完成 12/84 筆，剩餘 72 筆尚未完成；其他四科尚未開始全量補全。",
-    "B-007：國文首批 3 lesson／30 question 已建立，但 connector 尚未回報 GitHub Actions validator 結果。"
+    "B-007：國文首批 3 lesson／30 question 已建立，但 connector 尚未回報 GitHub Actions validator 結果。",
+    "B-009：全量 1,032 lessons／10,320 questions 需批次產生與 QA，尚未全部 materialize。"
   ]
 }

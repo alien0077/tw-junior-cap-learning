@@ -45,3 +45,14 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 - 2026-08-25：B-008 解決；第二批 30 題已完成單元對應 QA。\n
 - 2026-08-25：M4-003 第三批完成 3 筆國文 learning-content records，新增 3 份 lesson 與 30 題 question。\n
 - 2026-08-25：M4-003 第四批完成 3 筆國文 learning-content records，新增 3 份 lesson 與 30 題 question。\n
+## 批次執行策略（2026-08-25）
+
+為避免逐筆等待，後續改採固定批次流水線：
+
+1. 從 coverage matrix 讀取未完成節點。
+2. 依科目與 level 批次建立 lesson 與 10 題 question 草稿。
+3. 自動檢查 ID、KG endpoint、題數、答案與數理互動欄位。
+4. 將未經內容 QA 的資料標為 draft，不宣稱完成。
+5. 每一科完成 QA 後才升級 content-reviewed。
+
+目標總量：1,032 lessons、至少 10,320 questions；目前 22 lessons、220 questions。此規模無法在單一人工回合中以可靠品質一次憑空完成，必須透過批次產生與驗證逐步 materialize。
