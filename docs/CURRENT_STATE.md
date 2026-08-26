@@ -100,6 +100,7 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 - 上述 `content-reviewed` 僅代表 repo 內部 QA，不代表教師／學科專家審閱。
 
 - 2026-08-26：M4 全量結構建立完成；coverage matrix 1,032/1,032 rows 均有 lesson，最新狀態為 92 `content-reviewed`、940 `draft`；最新 validator 通過 12,571 JSON files、12,558 IDs、1,032 KG nodes。此狀態不等同 `teacher-reviewed`。
+- 上述全量結構行為歷史批次紀錄；目前狀態以本文件「目前權威快照」為準：coverage `content-reviewed` 117／`draft` 915，lesson `content-reviewed` 121／`draft` 915，question `content-reviewed` 1,210／`draft` 9,150。
 
 - M4-002 已完成：已建立 [data/m4-coverage-matrix.json](../data/m4-coverage-matrix.json)，逐一列出 1,032 筆 curriculum records；目前僅 7 筆有可直接對應的既有 lesson/question baseline。
 - M4 批次進度：1,032/1,032 筆 coverage rows 已 materialize，共 1,036 份 lesson、10,360 題 question；數學／自然互動狀態 0 筆 pending；18 筆為 repo 內部 `content-reviewed`、1,014 筆維持 `draft`。

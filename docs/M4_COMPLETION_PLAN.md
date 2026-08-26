@@ -4,6 +4,10 @@
 
 ## 完成定義
 
+### 目前權威快照（2026-08-26）
+
+歷史批次數字仍保留於下方紀錄；目前實際檔案統計為 1,036 lessons（121 `content-reviewed`、915 `draft`）與 10,360 questions（1,210 `content-reviewed`、9,150 `draft`）。此 repo 內部狀態不等同教師／學科專家審閱。
+
 M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中課綱」：
 
 1. 1,032 個 curriculum／Knowledge Graph 課綱節點都有可追溯的 lesson 對應。
