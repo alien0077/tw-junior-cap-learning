@@ -19,10 +19,12 @@ LESSON_BY_PREFIX = {
 
 for path in sorted((ROOT / "questions").glob("*/*.json")):
     data = json.loads(path.read_text(encoding="utf-8"))
+    data.get("provenance", {}).pop("authoringNote", None)
     old_id = data["id"].split("/")[-1]
     prefix = old_id.rsplit("-", 1)[0].removeprefix("question-")
     lesson_id = LESSON_BY_PREFIX.get(prefix)
     if lesson_id is None:
+        path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         continue
     data["id"] = old_id
     data["lessonId"] = lesson_id
