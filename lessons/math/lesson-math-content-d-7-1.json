@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-d-7-1",
   "subject": "math",
-  "title": "草稿：D-7-1：統計圖表",
+  "title": "D-7-1：統計圖表",
   "knowledgeIds": [
     "kg-math-content-d-7-1"
   ],
@@ -9,22 +9,26 @@
     "7"
   ],
   "content": {
-    "summary": "依課綱「D-7-1：統計圖表」建立的 M4 草稿，待學科 QA。",
+    "summary": "讀取長條圖、折線圖與圓餅圖，理解圖表標題、座標與資料意義。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「D-7-1：統計圖表」的核心概念。"
+        "heading": "學習目標",
+        "body": "讀取長條圖、折線圖與圓餅圖，理解圖表標題、座標與資料意義。 能以資料證據說明比較結果。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "先確認資料來源與變數，再讀取或計算統計量，最後比較並說明限制。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "忽略座標刻度、把平均數當成所有資料，或只看圖形高低不讀數值。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "先確認變數與刻度。",
+    "計算並比較統計量。",
+    "用資料證據解釋。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「D-7-1：統計圖表」的理解。",
+    "goal": "用三步驟理解「D-7-1：統計圖表」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先確認什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "資料來源、變數與刻度",
+          "只看圖形顏色"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先讀標題、座標與資料單位。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何分析？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "讀取或計算統計量",
+          "直接猜趨勢"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "以數值支持比較。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何表達？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "引用資料並說明限制",
+          "只下結論不舉證"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "結論要能回到資料證據。"
       }
     ]
   }
