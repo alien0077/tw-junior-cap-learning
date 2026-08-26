@@ -186,3 +186,9 @@
 - 決策：1,032 筆 coverage rows 全部完成 lesson、每單元至少 10 題、答案解析、KG endpoint 與 provenance 欄位檢查，並標記 `content-reviewed`；數學／自然互動步驟均已驗證。
 - 驗證：`python3 scripts/validate_data.py` 通過（12,537 JSON files、12,524 IDs、1,032 KG nodes）。
 - 界線：`content-reviewed` 僅代表 repo 內部 QA，不等同教師或學科專家 `teacher-reviewed`。
+
+## D-030：M4 公開來源核對不改變原創題目來源
+
+- 決策：以國教院課綱與會考官方網站核對學習範圍／能力方向，出版社頁面只核對版本 metadata；外部來源不得用來複製或改寫題目。
+- 實作：所有 lesson 保留公開 `studyReferences`，所有 question 加入 `provenance.sourceUrl` 與 KG `sourceLocator`。
+- 界線：來源指標代表查核入口，不代表外部教師簽核或題目取自外部題庫。
