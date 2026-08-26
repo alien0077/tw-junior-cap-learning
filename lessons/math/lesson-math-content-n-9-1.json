@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-n-9-1",
   "subject": "math",
-  "title": "草稿：N-9-1：連比",
+  "title": "N-9-1：連比",
   "knowledgeIds": [
     "kg-math-content-n-9-1"
   ],
@@ -9,22 +9,26 @@
     "9"
   ],
   "content": {
-    "summary": "依課綱「N-9-1：連比」建立的 M4 草稿，待學科 QA。",
+    "summary": "理解三個量的連比關係，化為等值比並求未知量。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「N-9-1：連比」的核心概念。"
+        "heading": "學習目標",
+        "body": "理解三個量的連比關係，化為等值比並求未知量。 能以代回或比例檢查結果。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "辨認比值或公比，整理項次與未知量，建立關係後逐步求解並驗算。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "把公比當公差、連比前後項對錯，或忽略比例同乘同除條件。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "先辨認比值關係。",
+    "依項次或比例求解。",
+    "代回檢查結果。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「N-9-1：連比」的理解。",
+    "goal": "用三步驟理解「N-9-1：連比」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先整理什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "首項、公比或連比條件",
+          "只看一項數值"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先確認比值關係。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何求解？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "依公比或等值比逐步計算",
+          "直接猜答案"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "使用正確比例方法。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何確認？",
         "options": [
-          "套用新情境驗證",
+          "代回關係式檢查",
           "跳過檢查"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "確認比值與項次一致。"
       }
     ]
   }
