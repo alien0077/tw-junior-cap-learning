@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-a-7-3",
   "subject": "math",
-  "title": "草稿：A-7-3：一元一次方程式的解法與應用",
+  "title": "A-7-3：一元一次方程式的解法與應用",
   "knowledgeIds": [
     "kg-math-content-a-7-3"
   ],
@@ -9,22 +9,26 @@
     "7"
   ],
   "content": {
-    "summary": "依課綱「A-7-3：一元一次方程式的解法與應用」建立的 M4 草稿，待學科 QA。",
+    "summary": "運用等量公理解一元一次方程式，並將生活情境轉成方程式。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「A-7-3：一元一次方程式的解法與應用」的核心概念。"
+        "heading": "學習目標",
+        "body": "運用等量公理解一元一次方程式，並將生活情境轉成方程式。 能以代入驗算確認答案。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "整理未知數與已知量，建立等式，依等量公理逐步化簡，再代回驗算。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "移項時忘記改變加減號，或解出數值後未代回原式檢查。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "先定義未知數。",
+    "等式兩邊做相同運算。",
+    "代回原式驗算。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「A-7-3：一元一次方程式的解法與應用」的理解。",
+    "goal": "用三步驟理解「A-7-3：一元一次方程式的解法與應用」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步應先做什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "定義未知數並整理已知量",
+          "直接猜答案"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先清楚定義未知數。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何保持等式？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "兩邊做相同運算",
+          "只改左邊"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "等式兩邊必須做相同運算。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何確認？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "代回原式驗算",
+          "省略檢查"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "代回可確認解是否正確。"
       }
     ]
   }
