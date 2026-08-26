@@ -411,3 +411,6 @@
 - 日期：2026-08-26
 - 決策：國教院英語文課綱 PDF viewer P18 直接列出 Aa-Ⅳ-1、Ab-Ⅳ-1～3、Ac-Ⅳ-1～4、Ad-Ⅳ-1；Aa、Ab、Ad evidence 升為 high，Ac 因內容跨度較大維持 medium。
 - 界線：這只核對官方項目 grouping，不等於英文 lesson／question 已完成內容審閱。
+## D-063 數學六大主題官方課綱證據（2026-08-26）
+
+以國教院數學領域課綱 PDF（PDF viewer P80–P81；附錄三 P74–P79）核對國民中學七至九年級六大主題：數與量（N）、代數（A）、空間與形狀（S）、函數（F）、坐標幾何（G）、資料與不確定性（D）。六個 teachable canonical unit 與 mapping 已更新為 `official-curriculum`、`high`；「代數與方程」仍保留為本專案教學標籤，來源定位明示官方主題為代數（A）。數學 navigation 分類節點仍不宣稱可教學內容。
