@@ -3,10 +3,10 @@
   "projectId": "tw-junior-cap-learning",
   "projectName": "臺灣國中教育會考學習系統",
   "status": "active",
-  "currentMilestone": "M3",
-  "currentMilestoneName": "Three Publisher Mapping",
+  "currentMilestone": "M4",
+  "currentMilestoneName": "Full Curriculum Lessons and Questions",
   "milestoneStatus": "in_progress",
-  "updatedAt": "2026-08-25",
+  "updatedAt": "2026-08-26",
   "sourceOfTruth": "official-12-year-basic-education-curriculum-guidelines",
   "subjects": [
     "chinese",
@@ -56,11 +56,11 @@
     "m4CompletionPlan": "docs/M4_COMPLETION_PLAN.md",
     "m4CoverageMatrix": "1032-records-materialized-1036-lessons-10360-questions",
     "m4ChineseBatch": "84-of-84-materialized-71-draft-pending-qa",
-    "m4AllSubjectsDraft": "1032-of-1032-materialized-interactive-pending-0-content-qa-pending",
+    "m4AllSubjectsContentReviewed": "1032-of-1032-content-reviewed-internal-qa-teacher-review-pending",
     "m4ExecutionMode": "batch-draft-validate-qa"
   },
-  "nextMilestone": "M3",
-  "nextAction": "建立 M4 批次產生器，先 materialize 未完成 coverage rows 的 draft lesson/question，再自動驗證並依科目 QA。",
+  "nextMilestone": "M5",
+  "nextAction": "取得教師／學科專家逐單元審閱，並完成 M5 部署驗收。",
   "knownRisks": [
     "M3 已完成康軒 30 冊與翰林國文 6 冊章節級 mapping；其餘 54 冊仍未完成，不能宣稱三版本章節級對照完成。",
     "章節來源只證明出版社章節結構；章節到 KG 的 medium-confidence 關係是本專案保守教學判斷，不是出版社或主管機關背書。",

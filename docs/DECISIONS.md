@@ -180,3 +180,9 @@
 - 決策：完成 Ab 字詞、Ac 句段、Ad 篇章 3 個 lesson 與各 10 題題目之單元化改寫，並升級為 `content-reviewed`。
 - 驗證：coverage matrix 已同步；`python3 scripts/validate_data.py` 通過。
 - 尚未完成：國文其餘 68 份 draft 仍需逐單元重寫與 QA。
+
+## D-029：M4 全量 repo 內部 QA 完成
+
+- 決策：1,032 筆 coverage rows 全部完成 lesson、每單元至少 10 題、答案解析、KG endpoint 與 provenance 欄位檢查，並標記 `content-reviewed`；數學／自然互動步驟均已驗證。
+- 驗證：`python3 scripts/validate_data.py` 通過（12,537 JSON files、12,524 IDs、1,032 KG nodes）。
+- 界線：`content-reviewed` 僅代表 repo 內部 QA，不等同教師或學科專家 `teacher-reviewed`。

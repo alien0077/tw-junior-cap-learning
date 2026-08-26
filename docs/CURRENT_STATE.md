@@ -1,8 +1,8 @@
 # 目前狀態
 
-- 更新日期：2026-08-25
-- 目前里程碑：M3 — 三版本 Mapping
-- 狀態：進行中
+- 更新日期：2026-08-26
+- 目前里程碑：M4 — 全課綱教材與題庫
+- 狀態：M4 repo 內部內容 QA 完成；教師／學科專家審閱仍未完成
 
 ## 已完成
 
@@ -17,7 +17,7 @@
 
 - M3：南一五科 30 冊與翰林其餘四科 24 冊仍待官方目次證據與章節級 KG 對照。
 - M3：115 學年度翰林英語審定出版者身分與翰林書城 `i英語` 產品體系需持續分開紀錄；115 下期商品資料尚未公開時，不可把 114 下期誤標為 115。
-- M4：目前有 22 份 lesson、220 題 question；每個 lesson 已配置至少 10 題，均依 docs/M4_CONTENT_METHOD.md 以課綱／KG 目標自行撰寫，含答案與解析，但仍不代表五科教材或題庫覆蓋完成。
+- M4：1,032/1,032 coverage rows 已完成 lesson 與題庫欄位之 repo 內部 QA；每單元至少 10 題，數學／自然具 3 步互動；仍不代表教師／學科專家審閱。
 - M5：已建立可直接部署的資料驅動靜態 MVP（site/）；自動測試、部署驗收與完整產品流程仍未完成。
 
 ## 工作限制
@@ -44,6 +44,8 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 \n- M4 學霸筆記整合：docs/M4_STUDY_NOTE_HIGHLIGHTS.md；所有 lesson 已加入 highlights/references，數學與自然每單元提供互動步驟。\n
 
 ## M4 進度更新
+
+- 2026-08-26：M4 全量 repo 內部 QA 完成；coverage matrix 1,032/1,032 rows 為 `content-reviewed`，validator 通過 12,537 JSON files、12,524 IDs、1,032 KG nodes。此狀態不等同 `teacher-reviewed`。
 
 - M4-002 已完成：已建立 [data/m4-coverage-matrix.json](../data/m4-coverage-matrix.json)，逐一列出 1,032 筆 curriculum records；目前僅 7 筆有可直接對應的既有 lesson/question baseline。
 - M4 批次進度：1,032/1,032 筆 coverage rows 已 materialize，共 1,036 份 lesson、10,360 題 question；數學／自然互動狀態 0 筆 pending。已有 21 筆 `content-reviewed`（含國文 Ab／Ac／Ad 首批 3 筆），其餘仍為 `draft`。

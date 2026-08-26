@@ -36,6 +36,8 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 
 ## 目前紀錄
 
+- 2026-08-26：M4 全量 1,032 筆 coverage rows 已完成 repo 內部內容 QA，全部標記 `content-reviewed`；每單元至少 10 題，數學／自然互動步驟驗證通過。尚未取得教師／學科專家簽核，故不得標記 `teacher-reviewed`。
+
 - 2026-08-25：M4-001 完成。現有 10 份 lesson、100 題 question；數學／自然 4 份 lesson 具互動教學。
 - 2026-08-25：M4-002 完成。已從 1,032 份 curriculum JSON 建立逐筆 coverage matrix；目前只有 7 筆可直接對應到既有 lesson／question baseline，其餘仍明確標示未開始。
 - 2026-08-25：M4-003 開始，先處理國文 84 筆 curriculum records。
