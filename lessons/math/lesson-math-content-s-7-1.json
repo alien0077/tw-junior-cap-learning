@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-s-7-1",
   "subject": "math",
-  "title": "草稿：S-7-1：簡單圖形與幾何符號",
+  "title": "S-7-1：簡單圖形與幾何符號",
   "knowledgeIds": [
     "kg-math-content-s-7-1"
   ],
@@ -9,22 +9,26 @@
     "7"
   ],
   "content": {
-    "summary": "依課綱「S-7-1：簡單圖形與幾何符號」建立的 M4 草稿，待學科 QA。",
+    "summary": "辨認點、線、角與常用幾何符號，理解圖形表示的基本約定。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「S-7-1：簡單圖形與幾何符號」的核心概念。"
+        "heading": "學習目標",
+        "body": "辨認點、線、角與常用幾何符號，理解圖形表示的基本約定。 能用符號與多視圖互相驗證。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "先辨認圖形元素與視角，再依符號或三視圖整理位置關係，最後檢查表示是否一致。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "混淆視圖方向、把線段當直線，或忽略幾何符號的約定。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "先確認圖形與視角。",
+    "依符號與視圖推理。",
+    "用多種表示互證。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「S-7-1：簡單圖形與幾何符號」的理解。",
+    "goal": "用三步驟理解「S-7-1：簡單圖形與幾何符號」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先辨認什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "圖形元素與觀察視角",
+          "只看外框"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先確認點線角或視圖方向。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何分析？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "依幾何符號或多視圖整理關係",
+          "直接猜立體形狀"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "使用約定與視圖線索。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何確認？",
         "options": [
-          "套用新情境驗證",
+          "用另一視圖或符號互證",
           "跳過檢查"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "確認各表示一致。"
       }
     ]
   }
