@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-s-8-5",
   "subject": "math",
-  "title": "草稿：S-8-5：三角形的全等性質",
+  "title": "S-8-5：三角形的全等性質",
   "knowledgeIds": [
     "kg-math-content-s-8-5"
   ],
@@ -9,22 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "依課綱「S-8-5：三角形的全等性質」建立的 M4 草稿，待學科 QA。",
+    "summary": "運用 SSS、SAS、ASA 與 RHS 判定三角形全等。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「S-8-5：三角形的全等性質」的核心概念。"
+        "heading": "學習目標",
+        "body": "運用 SSS、SAS、ASA 與 RHS 判定三角形全等。 能指出對應元素並檢查判定條件。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "先對應頂點與邊，再判斷剛體變換或三角形全等條件，最後核對條件是否充分。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "把相似誤當全等、對應順序錯置，或只憑一個角判定三角形全等。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "建立對應關係。",
+    "選用充分的全等條件。",
+    "檢查對應順序與結論。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「S-8-5：三角形的全等性質」的理解。",
+    "goal": "用三步驟理解「S-8-5：三角形的全等性質」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先做什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "標出對應頂點、邊與角",
+          "直接猜結論"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先建立正確對應。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何判斷？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "依剛體變換或充分全等條件推理",
+          "只比較一個角"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "選擇充分且適用的條件。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何確認？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "核對對應順序與所有條件",
+          "忽略未給條件"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "確認結論不超出已知條件。"
       }
     ]
   }
