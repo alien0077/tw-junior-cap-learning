@@ -89,7 +89,7 @@
     "m4CompletionPlan": "docs/M4_COMPLETION_PLAN.md",
     "m4CoverageMatrix": "1032-records-materialized-1036-lessons-10360-questions",
     "m4ChineseBatch": "84-of-84-materialized-350-draft-questions",
-    "m4AllSubjectsContentReviewed": "1032-of-1032-content-reviewed-internal-qa-teacher-review-pending",
+    "m4AllSubjectsContentReviewed": "104-of-1032-content-reviewed-928-draft-teacher-review-pending",
     "m4QuestionReviewStatus": "7710-content-reviewed-2650-draft",
     "m4DraftQuestionRefresh": "2650-draft-questions-diversified-10-task-types-still-draft",
     "m4ExecutionMode": "batch-draft-validate-qa"
@@ -105,11 +105,11 @@
     "B-001：南一官方章節目次目前由動態／授權介面提供，30 冊已有不同程度交叉 mapping，但尚未取得完整出版社正式目次。",
     "B-002：翰林非國文科 24 冊已有官方目次／學校課程計畫交叉證據，但尚未取得完整出版社正式逐冊目次與逐碼 KG 對照。",
     "B-003：validator 與 workflow 已加入，但本次 push 的實際 Actions run 尚未由 connector 回報。",
-    "M4 內容已達 1,032 coverage rows 的結構與 repo 內部 QA 門檻，仍不等於教師／學科專家審閱。",
+    "M4 已建立 1,032 coverage rows；目前 104 rows／108 lessons content-reviewed、928 rows／lessons draft，仍不等於教師／學科專家審閱。",
     "M5 MVP 目前依賴 GitHub raw main 分支，尚未完成 CI、部署驗收、登入或學習進度功能。",
     "B-004：M5 已部署至 https://alien0077.github.io/tw-junior-cap-learning/；workflow run 32935192763 成功，首頁與 manifest 已遠端驗證。",
-    "M4-003：五科 1,032/1,032 rows 已 materialize 並完成 repo 內部 QA；teacher-reviewed 仍待外部審閱。",
+    "M4-003：五科 1,032/1,032 rows 已 materialize 並完成結構驗證；928 rows／lessons 與 2,650 questions 仍為 draft，teacher-reviewed 仍待外部審閱。",
     "B-007：國文首批 3 lesson／30 question 已建立，但 connector 尚未回報 GitHub Actions validator 結果。",
-    "B-009：全量內容已 materialize 並通過 validator；後續僅限外部教師／學科專家審閱。"
+    "B-009：全量結構已 materialize 並通過 validator；draft lesson／question 仍需內容 QA，再進行外部教師／學科專家審閱。"
   ]
 }

@@ -191,6 +191,14 @@
 ## D-029：M4 全量 repo 內部 QA 完成
 
 - 決策：1,032 筆 coverage rows 全部完成 lesson、每單元至少 10 題、答案解析、KG endpoint 與 provenance 欄位檢查，並標記 `content-reviewed`；數學／自然互動步驟均已驗證。
+
+> 2026-08-26 更正：後續稽核發現 928 份 lesson 標題明確含「草稿」，原先狀態標記過寬；D-029 的 `content-reviewed` 不再適用於這 928 份，已依 D-030 降回 `draft`。
+
+## D-030：明確草稿 lesson 必須維持 draft
+
+- 日期：2026-08-26
+- 決策：lesson 標題明確以「草稿」開頭者，與其 coverage row 一律標為 `draft`；只有完成內容 QA 的項目才可使用 `content-reviewed`。
+- 理由：避免結構欄位驗證被誤讀為教材內容審查完成；全量節點仍保留 lesson 與題庫資料。
 - 驗證：`python3 scripts/validate_data.py` 通過（12,537 JSON files、12,524 IDs、1,032 KG nodes）。
 - 界線：`content-reviewed` 僅代表 repo 內部 QA，不等同教師或學科專家 `teacher-reviewed`。
 

@@ -2,7 +2,7 @@
 
 - 更新日期：2026-08-26
 - 目前里程碑：M4 — 全課綱教材與題庫
-- 狀態：M4 repo 內部內容 QA 完成；教師／學科專家審閱仍未完成
+- 狀態：M4 全量結構建立完成；部分內容 QA 與教師／學科專家審閱仍未完成
 
 ## 已完成
 
@@ -17,7 +17,7 @@
 
 - M3：南一五科已以學校公開課程計畫／教育平台補上不同程度交叉證據；仍待出版社官方目次與逐碼 KG 核驗才能升級信心。翰林數學、社會六冊已有官方 metadata，英文與自然六冊均已有官方／校方逐單元或逐章證據；仍需出版社正式目次與逐碼 KG 核驗才能升級信心。
 - M3：115 學年度翰林英語審定出版者身分與翰林書城 `i英語` 產品體系需持續分開紀錄；115 下期商品資料尚未公開時，不可把 114 下期誤標為 115。
-- M4：1,032/1,032 coverage rows 已完成 lesson 與題庫欄位之 repo 內部 QA；每單元至少 10 題，數學／自然具 3 步互動；仍不代表教師／學科專家審閱。
+- M4：1,032/1,032 coverage rows 已建立 lesson 與題庫欄位；其中 104 rows／108 lessons 為 `content-reviewed`，928 rows／928 lessons 明確維持 `draft`。每單元至少 10 題，數學／自然具 3 步互動；仍不代表教師／學科專家審閱。
 - M5：資料驅動靜態 MVP 已部署至 https://alien0077.github.io/tw-junior-cap-learning/，並完成首頁與 manifest 遠端 smoke test。
 
 ## 工作限制
@@ -76,7 +76,7 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 
 目前未完成的官方目次來源與下一步嘗試已記錄於 `docs/BLOCKERS.md`。這些 blocker 不代表資料不存在，只代表目前尚未取得可直接核驗的公開章節定位；在解開前不把冊別存在性 baseline 升級成章節 mapping。
 
-- M4 原創內容：目前 1,036 份 lesson、10,360 題 question，均標示 `origin=original` 並連至既有 KG ID；已完成 repo 內部 QA，仍不宣稱外部教師審閱完成。
+- M4 原創內容：目前 1,036 份 lesson、10,360 題 question，均標示 `origin=original` 並連至既有 KG ID；lesson 狀態為 108 `content-reviewed`、928 `draft`，仍不宣稱外部教師審閱完成。
 
 - M5 MVP：`site/` 透過 `data-manifest.json` 與 GitHub raw JSON 載入 project state、lesson、question，提供五科篩選與搜尋；`netlify.toml` 已提供靜態部署設定。
 - M5 CI：新增 GitHub Actions data-validation workflow，驗證 JSON、Schema、ID uniqueness、KG endpoints 與原創內容 provenance；目前尚待取得實際 workflow run 結果。
@@ -89,10 +89,10 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 
 ## M4 進度更新
 
-- 2026-08-26：M4 全量 repo 內部 QA 完成；coverage matrix 1,032/1,032 rows 為 `content-reviewed`，最新 validator 通過 12,567 JSON files、12,554 IDs、1,032 KG nodes。此狀態不等同 `teacher-reviewed`。
+- 2026-08-26：M4 全量結構建立完成；coverage matrix 1,032/1,032 rows 均有 lesson，狀態為 104 `content-reviewed`、928 `draft`；最新 validator 通過 12,571 JSON files、12,558 IDs、1,032 KG nodes。此狀態不等同 `teacher-reviewed`。
 
 - M4-002 已完成：已建立 [data/m4-coverage-matrix.json](../data/m4-coverage-matrix.json)，逐一列出 1,032 筆 curriculum records；目前僅 7 筆有可直接對應的既有 lesson/question baseline。
-- M4 批次進度：1,032/1,032 筆 coverage rows 已 materialize，共 1,036 份 lesson、10,360 題 question；數學／自然互動狀態 0 筆 pending；1,032 筆均為 repo 內部 `content-reviewed`。
+- M4 批次進度：1,032/1,032 筆 coverage rows 已 materialize，共 1,036 份 lesson、10,360 題 question；數學／自然互動狀態 0 筆 pending；104 筆為 repo 內部 `content-reviewed`、928 筆維持 `draft`。
 - M4 題庫審查狀態：7,710 題為 `content-reviewed`、2,650 題仍為 `draft`；此欄位與 coverage row／lesson 的內部 QA 狀態分開計算，未宣稱教師審閱完成。
 - 2026-08-26：新增南一版國文第三冊校方課程計畫逐課 mapping（10 課）；來源為卓蘭高中附設國中 113 學年度公開 PDF，保留 medium confidence。
 - 2026-08-26：新增南一版國文第二冊校方課程計畫逐課 mapping（8 課）；來源為彰化縣福興國中 110 學年度公開 PDF，保留 medium confidence。

@@ -19,11 +19,11 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 |---|---|---|---|
 | M4-001 | 原創內容 baseline | 10 lessons、100 questions、每單元至少 10 題 | 已完成 |
 | M4-002 | 全課綱 coverage matrix | 1,032 個節點逐一列出 subject、grade、KG、lesson、question、互動狀態 | 已完成（data/m4-coverage-matrix.json） |
-| M4-003 | 國文教材與題庫 | 所有國文節點完成 lesson 與每單元 10 題 | 已完成（84/84，repo 內部 QA） |
-| M4-004 | 英文教材與題庫 | 所有英文節點完成 lesson 與每單元 10 題 | 已完成（repo 內部 QA） |
-| M4-005 | 數學教材、題庫、互動 | 所有數學節點完成 lesson、10 題、3 步互動 | 已完成（repo 內部 QA） |
-| M4-006 | 自然教材、題庫、互動 | 所有自然節點完成 lesson、10 題、3 步互動 | 已完成（repo 內部 QA） |
-| M4-007 | 社會教材與題庫 | 所有社會節點完成 lesson 與每單元 10 題 | 已完成（repo 內部 QA） |
+| M4-003 | 國文教材與題庫 | 所有國文節點完成 lesson 與每單元 10 題 | 已建立（63 draft lessons，QA 未完成） |
+| M4-004 | 英文教材與題庫 | 所有英文節點完成 lesson 與每單元 10 題 | 已建立（135 draft lessons，QA 未完成） |
+| M4-005 | 數學教材、題庫、互動 | 所有數學節點完成 lesson、10 題、3 步互動 | 已建立（47 draft lessons，QA 未完成） |
+| M4-006 | 自然教材、題庫、互動 | 所有自然節點完成 lesson、10 題、3 步互動 | 已建立（324 draft lessons，QA 未完成） |
+| M4-007 | 社會教材與題庫 | 所有社會節點完成 lesson 與每單元 10 題 | 已建立（359 draft lessons，QA 未完成） |
 | M4-008 | 全量驗證與審閱 | 覆蓋率 100%、題數與答案驗證通過；教師審閱另列 | 自動驗證完成；教師／專家審閱未完成 |
 
 ## 紀錄規則
@@ -36,7 +36,7 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 
 ## 目前紀錄
 
-- 2026-08-26：M4 全量 1,032 筆 coverage rows 已完成 repo 內部內容 QA，全部標記 `content-reviewed`；每單元至少 10 題，數學／自然互動步驟驗證通過。尚未取得教師／學科專家簽核，故不得標記 `teacher-reviewed`。
+- 2026-08-26：M4 全量 1,032 筆 coverage rows 均已建立 lesson 與題庫欄位；104 筆通過 repo 內部內容 QA，928 筆明確維持 `draft`。每單元至少 10 題，數學／自然互動步驟驗證通過。尚未取得教師／學科專家簽核，故不得標記 `teacher-reviewed`。
 
 - 2026-08-25：M4-001 完成。現有 10 份 lesson、100 題 question；數學／自然 4 份 lesson 具互動教學。
 - 2026-08-25：M4-002 完成。已從 1,032 份 curriculum JSON 建立逐筆 coverage matrix；目前只有 7 筆可直接對應到既有 lesson／question baseline，其餘仍明確標示未開始。
@@ -59,11 +59,11 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 4. 將未經內容 QA 的資料標為 draft，不宣稱完成。
 5. 每一科完成 QA 後才升級 content-reviewed。
 
-目標總量：1,032 lessons、至少 10,320 questions；目前已 materialize 1,036 lessons、10,360 questions。lesson 與 coverage row 已通過 repo 內部 QA；題庫目前 7,710 題為 `content-reviewed`、2,650 題為 `draft`，仍不等同教師／學科專家審閱完成。
+目標總量：1,032 lessons、至少 10,320 questions；目前已 materialize 1,036 lessons、10,360 questions。lesson 與 coverage row 已完成結構驗證；lesson 目前 108 份為 `content-reviewed`、928 份為 `draft`，題庫目前 7,710 題為 `content-reviewed`、2,650 題為 `draft`，仍不等同教師／學科專家審閱完成。
 
 ## 目前狀態快照（2026-08-26）
 
-- 1,032/1,032 coverage rows：`content-reviewed`（repo 內部 QA）。
-- 1,036 lessons：均有 KG endpoint、provenance 與 10 題以上 question。
+- 1,032/1,032 coverage rows：均已建立；104 `content-reviewed`、928 `draft`。
+- 1,036 lessons：均有 KG endpoint、provenance 與 10 題以上 question；108 `content-reviewed`、928 `draft`。
 - 10,360 questions：7,710 `content-reviewed`、2,650 `draft`；兩種狀態刻意分開保存。
 - 數學 127/127、自然 326/326 lessons：互動步驟至少 3 步。
