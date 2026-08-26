@@ -24,6 +24,7 @@
   - 翰林官方書城與版本查詢：https://books.hanlin.com.tw/productall 、https://books.hanlin.com.tw/Version
 - 目前結果：官方頁面可確認產品、學年度與科目，但非國文科章節名稱沒有找到同等可直接讀取的公開課次索引；書城頁面只證明產品存在，不能推導章節內容。
 - 新發現（2026-08-26）：翰林官方「國中數學解題影音網」已公開 1上、1下、2上、2下、3上、3下的章節與課次索引（例如 https://mathvideo.hle.com.tw/1A/）；數學六冊已建立 `hanlin-official-2026.json` 逐章 mapping，其他非國文科仍待公開索引。
+- 新發現（2026-08-26）：翰林官方教材樣書 PDF 公開六冊社會目次（七上至九下）；已建立 `textbook-mapping/social/hanlin-official-2026.json` 共 68 筆章名 metadata。因公開目次未提供逐章課綱碼，KG 目前保守掛至地理／歷史／公民領域節點，逐章代碼仍標 medium confidence 待核驗。
 - 下一步：繼續追查各科官方教材搶先看、公開 PPT 索引與版本專頁；只在章名與冊次可逐筆回溯時建立 mapset。
 
 ## B-003：repo 尚未配置 CI workflow
