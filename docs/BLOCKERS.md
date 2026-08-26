@@ -14,6 +14,7 @@
 - 目前結果：公開搜尋可確認 115 冊別商品與官方入口；但章節／頁碼由 JavaScript 選擇器或授權後資源載入，沒有找到可直接以固定 URL 逐冊核驗的出版社正式目次頁。已改以可追溯校方／教育平台資料建立交叉 mapping，維持 medium confidence。
 - 新證據（2026-08-26）：`https://library.nani.com.tw/api/v1/books/new` 可公開回傳輔材商品 metadata；書籍查詢與附件／電子書端點仍需 POST 或登入權限，未提供可匿名逐章目次，因此不把商品說明推導成章節 mapping。
 - 下一步：繼續追查官方公開試閱、課程計畫或可直接讀取的目次資源；只在章名與冊次可逐筆回溯時建立 verified mapping。
+- 新查找（2026-08-26）：南一教材博覽會科目頁 `https://naniexpo.nani.com.tw/template/subject.php?grade=high`、`?grade=social` 可由搜尋索引確認存在，但目前直接抓取回傳 502，且索引未提供固定逐冊目次定位；暫不能作為 verified 來源。
 
 ## B-002：翰林非國文科缺少可直接核驗的公開課次索引
 
