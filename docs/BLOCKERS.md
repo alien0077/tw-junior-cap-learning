@@ -33,6 +33,7 @@
 - 新發現（2026-08-26）：仁美國中公開英語課程計畫列出南一版 7 上 Starter、Lesson 1–6 與 Reading Corner I；已建立 `textbook-mapping/english/nani-schoolplan-2026.json` 共 8 筆單元交叉證據。
 - 新發現（2026-08-26）：永豐高中國中部公開教科書改選報告逐項列出南一版社會(一下)地理、歷史、公民各 6 單元；已建立 `textbook-mapping/social/nani-schoolplan-2026.json` 共 18 筆單元交叉證據。來源為 109 學年度校方報告，非南一出版社正式目次，維持 medium confidence。
 - 新發現（2026-08-26）：卓蘭高中附設國中部公開課程計畫逐項列出南一版社會八上地理、歷史、公民各 6 單元；已建立 `textbook-mapping/social/nani-schoolplan-8-2026.json` 共 18 筆單元交叉證據。來源為 111 學年度校方課程計畫，非南一出版社正式目次，維持 medium confidence。
+- 新發現（2026-08-26）：民和國中 113 學年度九年級社會課程計畫（文件標示設計者為南一出版社）逐項列出第 5 冊 18 單元與第 6 冊 12 單元；已建立 `textbook-mapping/social/nani-schoolplan-9-2026.json` 共 30 筆單元交叉證據。仍屬校方公開文件，非 115 年出版社正式目次，維持 medium confidence。
 - 下一步：繼續追查各科官方教材搶先看、公開 PPT 索引與版本專頁；只在章名與冊次可逐筆回溯時建立 mapset。
 
 ## B-003：repo 尚未配置 CI workflow
