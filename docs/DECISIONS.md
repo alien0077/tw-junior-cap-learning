@@ -393,3 +393,9 @@
 - 日期：2026-08-26
 - 決策：國文、英文、自然、社會以現有官方 curriculum 的 `parentId` 與 `learning-content` 建立 draft canonical units、mapping 及逐題 migration manifest。
 - 界線：這是可逆候選分群；跨父節點、無唯一 KG 對應的題目標為 `not-applicable`，所有 unit 與題目維持低信心／待審核，不視為出版社章節或正式教材 mapping。
+
+## D-060：依官方 leaf semantics 修正 domain、Ab 與 Ae
+
+- 日期：2026-08-26
+- 決策：中英文領域根節點改為 `teachable=false`／`classifies`；國文 Ab 與英文 Ae 保留為分類 parent，新增具教學凝聚性的 child units；自然全球氣候跨科與社會公民 Aa 維持原 grouping。
+- 界線：child units 是依官方 leaf code 語意的本專案教學設計，source 使用官方課綱 URL 與定位但狀態維持 `mapped`；受影響題目改指 child candidate，仍須題目內容審核後才能 verified。
