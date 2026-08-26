@@ -105,3 +105,4 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 - 2026-08-26：為 1,031 份可對應 curriculum/KG 的 lesson 補入其官方課綱文件精確 URL；此為 provenance 強化，不改變任何 lesson 的 draft／content-reviewed 狀態。
 - 2026-08-26：建立 M4 三層資料架構數學試點：126 個數學課綱節點分入 7 個 draft canonical unit（6 個 teachable、1 個分類導航），mapping 全部標示 low confidence；既有 lesson/question 保持原狀。
 - 2026-08-26：建立 `migrations/math-question-migration-pilot.json`，收錄 1,270 題數學題目的可逆遷移狀態；1,220 題 pending-review、50 題分類導航來源標示 not-applicable，未刪除任何原始題目。
+- 2026-08-26：以官方 `parentId`／`learning-content` 建立國文、英文、自然、社會 draft migration：分別 12／9／49／77 個候選 units，題目 manifest 分別收錄 850／1,370／3,260／3,610 題；候選結果均待逐單元核對。

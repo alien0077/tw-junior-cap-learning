@@ -6,8 +6,8 @@
   "additionalProperties": false,
   "required": ["id", "subject", "status", "items"],
   "properties": {
-    "id": {"const": "math-question-migration-pilot"},
-    "subject": {"const": "math"},
+    "id": {"type": "string", "pattern": "^(chinese|english|math|science|social)-question-migration-pilot$"},
+    "subject": {"enum": ["chinese", "english", "math", "science", "social"]},
     "status": {"enum": ["draft", "in-progress", "completed"]},
     "items": {
       "type": "array", "minItems": 1,
@@ -15,9 +15,9 @@
         "type": "object", "additionalProperties": false,
         "required": ["questionId", "sourceLessonId", "targetUnitId", "migrationStatus"],
         "properties": {
-          "questionId": {"type": "string", "pattern": "^question-math-"},
-          "sourceLessonId": {"type": "string", "pattern": "^lesson-math-"},
-          "targetUnitId": {"type": ["string", "null"], "pattern": "^canonical-unit-math-"},
+          "questionId": {"type": "string", "pattern": "^question-(chinese|english|math|science|social)-"},
+          "sourceLessonId": {"type": "string", "pattern": "^lesson-(chinese|english|math|science|social)-"},
+          "targetUnitId": {"anyOf": [{"type": "null"}, {"type": "string", "pattern": "^canonical-unit-(chinese|english|math|science|social)-"}]},
           "migrationStatus": {"enum": ["candidate", "pending-review", "not-applicable"]},
           "notes": {"type": "string"}
         }
