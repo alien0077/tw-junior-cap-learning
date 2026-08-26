@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-n-8-5",
   "subject": "math",
-  "title": "草稿：N-8-5：等差級數求和",
+  "title": "N-8-5：等差級數求和",
   "knowledgeIds": [
     "kg-math-content-n-8-5"
   ],
@@ -9,22 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "依課綱「N-8-5：等差級數求和」建立的 M4 草稿，待學科 QA。",
+    "summary": "運用首項、末項與項數公式計算等差級數總和。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「N-8-5：等差級數求和」的核心概念。"
+        "heading": "學習目標",
+        "body": "運用首項、末項與項數公式計算等差級數總和。 能以列舉或公式驗證結果。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "找出首項與公差，建立項次關係；求和時確認首末項與項數，再代入公式。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "公差正負判斷錯誤、項數少算，或將第 n 項公式誤當求和公式。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "先找首項與公差。",
+    "確認項次與項數。",
+    "用列舉或公式驗算。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「N-8-5：等差級數求和」的理解。",
+    "goal": "用三步驟理解「N-8-5：等差級數求和」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先找什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "首項、公差與項數",
+          "只看最後一項"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先整理數列條件。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何計算？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "使用第 n 項或求和公式",
+          "直接猜結果"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "依題目要求選公式。"
       },
       {
         "id": "step-3",
         "prompt": "最後如何檢查？",
         "options": [
-          "套用新情境驗證",
+          "列舉前幾項或代回公式",
           "跳過檢查"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "確認項次與總和一致。"
       }
     ]
   }
