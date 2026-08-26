@@ -90,6 +90,15 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 
 ## M4 進度更新
 
+### 目前權威快照（2026-08-26）
+
+- coverage rows：1,032（`content-reviewed` 117、`draft` 915）。
+- lessons：1,036（`content-reviewed` 121、`draft` 915）。
+- questions：10,360（`content-reviewed` 1,210、`draft` 9,150）。
+- canonical units：數學 7、國文 16、英文 12、自然 49、社會 77；中英文 domain 為分類節點，國文 Ab／英文 Ae 已有 child candidates。
+- 最新本地 validator：12,901 JSON、12,885 IDs、1,032 KG nodes，通過。
+- 上述 `content-reviewed` 僅代表 repo 內部 QA，不代表教師／學科專家審閱。
+
 - 2026-08-26：M4 全量結構建立完成；coverage matrix 1,032/1,032 rows 均有 lesson，最新狀態為 92 `content-reviewed`、940 `draft`；最新 validator 通過 12,571 JSON files、12,558 IDs、1,032 KG nodes。此狀態不等同 `teacher-reviewed`。
 
 - M4-002 已完成：已建立 [data/m4-coverage-matrix.json](../data/m4-coverage-matrix.json)，逐一列出 1,032 筆 curriculum records；目前僅 7 筆有可直接對應的既有 lesson/question baseline。
