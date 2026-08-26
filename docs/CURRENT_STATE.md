@@ -18,7 +18,7 @@
 - M3：南一五科 30 冊與翰林其餘四科 24 冊仍待官方目次證據與章節級 KG 對照。
 - M3：115 學年度翰林英語審定出版者身分與翰林書城 `i英語` 產品體系需持續分開紀錄；115 下期商品資料尚未公開時，不可把 114 下期誤標為 115。
 - M4：1,032/1,032 coverage rows 已完成 lesson 與題庫欄位之 repo 內部 QA；每單元至少 10 題，數學／自然具 3 步互動；仍不代表教師／學科專家審閱。
-- M5：已建立可直接部署的資料驅動靜態 MVP（site/）；自動測試、部署驗收與完整產品流程仍未完成。
+- M5：資料驅動靜態 MVP 已部署至 https://alien0077.github.io/tw-junior-cap-learning/，並完成首頁與 manifest 遠端 smoke test。
 
 ## 工作限制
 
@@ -36,7 +36,7 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 
 - M5 MVP：`site/` 透過 `data-manifest.json` 與 GitHub raw JSON 載入 project state、lesson、question，提供五科篩選與搜尋；`netlify.toml` 已提供靜態部署設定。
 - M5 CI：新增 GitHub Actions data-validation workflow，驗證 JSON、Schema、ID uniqueness、KG endpoints 與原創內容 provenance；目前尚待取得實際 workflow run 結果。
-- M5 Blocker：靜態 MVP 已推送，但尚未有公開部署 URL 與瀏覽器 smoke test。
+- M5：GitHub Pages workflow run 32935192763 成功；公開 URL 與 HTTP smoke test 已驗證。
 
 - M4 方法文件：已補上參考資料層級、原創編寫流程、答案格式、審核界線、外部資料授權規則與學霸筆記重點整合規則。
 
