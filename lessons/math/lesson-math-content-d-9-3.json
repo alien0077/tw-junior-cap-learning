@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-d-9-3",
   "subject": "math",
-  "title": "草稿：D-9-3：古典機率",
+  "title": "D-9-3：古典機率",
   "knowledgeIds": [
     "kg-math-content-d-9-3"
   ],
@@ -9,22 +9,26 @@
     "9"
   ],
   "content": {
-    "summary": "依課綱「D-9-3：古典機率」建立的 M4 草稿，待學科 QA。",
+    "summary": "在等可能情況下以有利結果數除以所有可能結果數計算機率。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「D-9-3：古典機率」的核心概念。"
+        "heading": "學習目標",
+        "body": "在等可能情況下以有利結果數除以所有可能結果數計算機率。 能檢查機率是否介於 0 與 1。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "定義試驗與事件，列出樣本空間，確認等可能性，再計算並檢查結果。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "分母漏列可能結果、把有利結果與全部結果顛倒，或忽略等可能條件。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "先列出樣本空間。",
+    "確認等可能與有利結果。",
+    "檢查機率範圍。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「D-9-3：古典機率」的理解。",
+    "goal": "用三步驟理解「D-9-3：古典機率」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先定義什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "試驗、樣本空間與事件",
+          "只看一個結果"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先列出所有可能結果。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何計算？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "確認等可能後比較有利與全部結果",
+          "直接猜比例"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "古典機率需有等可能前提。"
       },
       {
         "id": "step-3",
         "prompt": "最後如何檢查？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "確認結果介於 0 與 1",
+          "忽略範圍"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "機率不會小於 0 或大於 1。"
       }
     ]
   }
