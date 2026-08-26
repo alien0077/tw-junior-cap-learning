@@ -83,6 +83,10 @@ def main() -> int:
                     errors.append(f"{path}: missing KG endpoint {item_id}")
             if data.get("provenance", {}).get("origin") != "original":
                 errors.append(f"{path}: M4 content must use provenance.origin=original")
+            if rel_parts[0] == "lessons" and data.get("subject") in {"math", "science"}:
+                steps = data.get("interactive", {}).get("steps", [])
+                if not isinstance(steps, list) or len(steps) < 3:
+                    errors.append(f"{path}: math/science lesson requires at least 3 interactive steps")
         if rel_parts and rel_parts[0] == "textbook-mapping":
             volumes = data.get("volumes", [])
             for volume in volumes:
