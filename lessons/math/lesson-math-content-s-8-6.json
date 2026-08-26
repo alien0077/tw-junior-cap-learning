@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-s-8-6",
   "subject": "math",
-  "title": "草稿：S-8-6：畢氏定理",
+  "title": "S-8-6：畢氏定理",
   "knowledgeIds": [
     "kg-math-content-s-8-6"
   ],
@@ -9,22 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "依課綱「S-8-6：畢氏定理」建立的 M4 草稿，待學科 QA。",
+    "summary": "運用畢氏定理與逆定理求直角三角形邊長並判斷直角。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「S-8-6：畢氏定理」的核心概念。"
+        "heading": "學習目標",
+        "body": "運用畢氏定理與逆定理求直角三角形邊長並判斷直角。 能列式、計算並檢查單位。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "辨認圖形與已知量，選擇定理或面積公式列式，計算後以估算與單位檢查。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "把斜邊當直角邊、平方根漏寫，或面積與周長公式混用。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "辨認適用圖形與條件。",
+    "列出正確公式。",
+    "檢查數值與單位。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「S-8-6：畢氏定理」的理解。",
+    "goal": "用三步驟理解「S-8-6：畢氏定理」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先確認什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "圖形類型、直角與已知量",
+          "直接套公式"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先確認條件與圖形。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何列式？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "選用畢氏或面積公式並代入",
+          "混用周長公式"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "依圖形選擇正確公式。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何確認？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "檢查估算、平方根與單位",
+          "忽略單位"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "用合理性與單位驗算。"
       }
     ]
   }
