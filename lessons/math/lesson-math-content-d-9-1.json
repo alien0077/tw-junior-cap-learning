@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-d-9-1",
   "subject": "math",
-  "title": "草稿：D-9-1：統計數據的分布",
+  "title": "D-9-1：統計數據的分布",
   "knowledgeIds": [
     "kg-math-content-d-9-1"
   ],
@@ -9,22 +9,26 @@
     "9"
   ],
   "content": {
-    "summary": "依課綱「D-9-1：統計數據的分布」建立的 M4 草稿，待學科 QA。",
+    "summary": "理解資料分布、集中趨勢與離散程度的比較。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「D-9-1：統計數據的分布」的核心概念。"
+        "heading": "學習目標",
+        "body": "理解資料分布、集中趨勢與離散程度的比較。 能引用資料支持解釋。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "確認資料來源，整理並選擇表示方式，計算統計量，再比較分布與限制。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "只看單一統計量或圖形外觀，忽略資料量、刻度與分布差異。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "確認資料來源與單位。",
+    "選擇適當統計量。",
+    "比較分布並說明限制。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「D-9-1：統計數據的分布」的理解。",
+    "goal": "用三步驟理解「D-9-1：統計數據的分布」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先確認什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "資料來源與變數",
+          "圖形顏色"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先確認資料與單位。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何分析？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "整理資料並計算統計量",
+          "直接猜趨勢"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "以整理後數值分析。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何解釋？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "引用數據並說明分布限制",
+          "只報單一數字"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "結論要符合資料分布。"
       }
     ]
   }
