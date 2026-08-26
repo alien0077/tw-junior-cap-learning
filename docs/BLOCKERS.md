@@ -63,3 +63,10 @@
 - 狀態：進行中（2026-08-25）
 - 影響：完整標準為 1,032 lessons／至少 10,320 questions；目前已建立 1,036 lessons／10,360 questions，但大量內容仍是 draft。
 - 處理策略：批次產生 draft、跑自動驗證，再依科目完成內容 QA；draft 不計入完成覆蓋率。
+
+## B-010：批次 draft 題幹重複，需學科 QA 重寫
+
+- 狀態：open（2026-08-26）
+- 影響：目前 1,014 份 lesson 維持 `draft`；自動盤點顯示 1,010 組題幹有重複，批次內容只能證明結構與欄位完整，不能視為可用題庫。
+- 已完成：所有題目仍具 options、answer.value、answer.explanation、lessonId、KG endpoint 與 provenance；validator 已通過。
+- 下一步：依科目逐單元重寫題幹、選項與解析，完成內容 QA 後才可升級 `content-reviewed`。
