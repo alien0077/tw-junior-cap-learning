@@ -1,0 +1,23 @@
+name: chatgpt-export-m4
+on:
+  push:
+    branches: [chatgpt-m4-source-export-20260826]
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Package M4 source data
+        run: |
+          mkdir -p /tmp/m4-export
+          cp -R curriculum knowledge lessons questions migrations data textbook-mapping docs scripts project-state.json /tmp/m4-export/
+          cd /tmp
+          zip -qr m4-export.zip m4-export
+      - uses: actions/upload-artifact@v4
+        with:
+          name: m4-export
+          path: /tmp/m4-export.zip
+          if-no-files-found: error
+          retention-days: 1
