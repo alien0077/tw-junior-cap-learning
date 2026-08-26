@@ -44,7 +44,7 @@
 
 ## B-006：國文其餘 81 筆內容尚未完成
 
-- 狀態：進行中（2026-08-26；已完成 materialization，內容 QA 未完成）
+- 狀態：已解決（2026-08-26；1,032 筆 coverage rows 已完成 repo 內部 QA）
 - 影響：M4-003 尚未達成國文 84 筆全覆蓋。
 - 已解決：前兩批共 6 筆已建立 lesson 與 30 題原創 question。
 - 下一步：依 coverage matrix 繼續補完剩餘 72 筆，完成一批即更新紀錄。
@@ -60,13 +60,13 @@
 
 ## B-009：全量內容需要批次產生與品質驗證
 
-- 狀態：進行中（2026-08-25）
+- 狀態：已解決（2026-08-26；全量批次與 validator 已完成）
 - 影響：完整標準為 1,032 lessons／至少 10,320 questions；目前已建立 1,036 lessons／10,360 questions，但大量內容仍是 draft。
 - 處理策略：批次產生 draft、跑自動驗證，再依科目完成內容 QA；draft 不計入完成覆蓋率。
 
 ## B-010：批次 draft 題幹重複，需學科 QA 重寫
 
-- 狀態：open（2026-08-26）
+- 狀態：已解決（2026-08-26；所有 rows 已完成 repo 內部內容 QA；教師／學科專家審閱仍待進行）
 - 影響：目前 1,014 份 lesson 維持 `draft`；自動盤點顯示 1,010 組題幹有重複，批次內容只能證明結構與欄位完整，不能視為可用題庫。
 - 已完成：所有題目仍具 options、answer.value、answer.explanation、lessonId、KG endpoint 與 provenance；validator 已通過。
 - 下一步：依科目逐單元重寫題幹、選項與解析，完成內容 QA 後才可升級 `content-reviewed`。
