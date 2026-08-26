@@ -98,3 +98,4 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 - 2026-08-26：新增南一版國文第二冊校方課程計畫逐課 mapping（8 課）；來源為彰化縣福興國中 110 學年度公開 PDF，保留 medium confidence。
 - 2026-08-26：新增南一版國文第五冊校方課程計畫逐課 mapping（12 課）；來源為嘉義縣永慶高中國中部 109 學年度公開 PDF，保留 medium confidence。
 - 2026-08-26：南一教材 mapping 累計 126 個 mapping、36 組 mapping set、882 筆章節／單元 entries；校方來源均保留 medium confidence，未升格為出版社正式目次。
+- 2026-08-26：新增南一數學第一冊 3 章與第二冊 5 章校方課程計畫 mapping；南一教材 mapping 累計 128 個 mapping、38 組 mapping set、890 筆章節／單元 entries。
