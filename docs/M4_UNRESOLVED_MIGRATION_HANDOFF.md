@@ -2,7 +2,7 @@
 
 這是由目前 migration manifest 與 KG 逐題交叉產生的 blocker。每筆題目都保留原始 lesson／question；請外部 ChatGPT 依課綱語意決定 target，不能因為題數門檻而強行歸類。
 
-## chinese（550 題；55 種 KG 組合）
+## chinese（540 題；54 種 KG 組合）
 
 ### 10 題｜Ab：字詞 (kg-chinese-content-ab)
 
@@ -123,21 +123,6 @@
   - `question-chinese-classical-function-words-7`；lesson=`lesson-chinese-classical-function-words`
   - `question-chinese-classical-function-words-8`；lesson=`lesson-chinese-classical-function-words`
   - `question-chinese-classical-function-words-9`；lesson=`lesson-chinese-classical-function-words`
-
-### 10 題｜Ab-Ⅳ-8：各體書法名家碑帖認識欣賞 (kg-chinese-content-ab-iv-8)
-
-- 目前判定：`blocked`（沒有唯一 teachable unit）
-- 題目：
-  - `question-chinese-calligraphy-appreciation-1`；lesson=`lesson-chinese-calligraphy-appreciation`
-  - `question-chinese-calligraphy-appreciation-10`；lesson=`lesson-chinese-calligraphy-appreciation`
-  - `question-chinese-calligraphy-appreciation-2`；lesson=`lesson-chinese-calligraphy-appreciation`
-  - `question-chinese-calligraphy-appreciation-3`；lesson=`lesson-chinese-calligraphy-appreciation`
-  - `question-chinese-calligraphy-appreciation-4`；lesson=`lesson-chinese-calligraphy-appreciation`
-  - `question-chinese-calligraphy-appreciation-5`；lesson=`lesson-chinese-calligraphy-appreciation`
-  - `question-chinese-calligraphy-appreciation-6`；lesson=`lesson-chinese-calligraphy-appreciation`
-  - `question-chinese-calligraphy-appreciation-7`；lesson=`lesson-chinese-calligraphy-appreciation`
-  - `question-chinese-calligraphy-appreciation-8`；lesson=`lesson-chinese-calligraphy-appreciation`
-  - `question-chinese-calligraphy-appreciation-9`；lesson=`lesson-chinese-calligraphy-appreciation`
 
 ### 10 題｜Ac：句段 (kg-chinese-content-ac)
 
@@ -6101,4 +6086,4 @@
 
 請對每個 KG 組合或逐題回傳：targetUnitId、decision（assign／split／classification-only／blocked）、理由、官方 curriculum code、公開 sourceUrl、sourceLocator（PDF 頁碼／章節），以及是否需要重寫題目。
 
-合計無唯一 targetUnitId：4060 題。
+合計無唯一 targetUnitId：4050 題。

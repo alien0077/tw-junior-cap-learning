@@ -15,12 +15,12 @@
 
 | 科目 | manifest 題數 | 無唯一 target 題數 |
 |---|---:|---:|
-| chinese | 850 | 550 |
+| chinese | 850 | 540 |
 | english | 1370 | 1010 |
 | math | 1270 | 50 |
 | science | 3260 | 970 |
 | social | 3610 | 1480 |
-| 合計 | — | 4060 |
+| 合計 | — | 4050 |
 
 逐題清單：`docs/M4_UNRESOLVED_MIGRATION_HANDOFF.md`。
 
