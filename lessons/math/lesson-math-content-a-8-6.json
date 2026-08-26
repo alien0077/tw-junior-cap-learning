@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-a-8-6",
   "subject": "math",
-  "title": "草稿：A-8-6：一元二次方程式的意義",
+  "title": "A-8-6：一元二次方程式的意義",
   "knowledgeIds": [
     "kg-math-content-a-8-6"
   ],
@@ -9,22 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "依課綱「A-8-6：一元二次方程式的意義」建立的 M4 草稿，待學科 QA。",
+    "summary": "理解最高次為二次的方程式，辨認係數與根的意義。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「A-8-6：一元二次方程式的意義」的核心概念。"
+        "heading": "學習目標",
+        "body": "理解最高次為二次的方程式，辨認係數與根的意義。 能代回原方程式確認根。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "整理二次方程式係數，選擇因式分解、公式或配方法，求根後逐一代回驗算。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "漏掉一個根、平方根正負號處理錯誤，或未依情境限制取捨答案。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "辨認二次項與係數。",
+    "依結構選擇解法。",
+    "每個根都要代回驗算。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「A-8-6：一元二次方程式的意義」的理解。",
+    "goal": "用三步驟理解「A-8-6：一元二次方程式的意義」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先整理什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "二次方程式的係數與條件",
+          "無關數字"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先確認標準形式與係數。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何求根？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "依結構選擇解法",
+          "直接猜根"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "可用因式分解、公式或配方法。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何確認？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "將每個根代回原式",
+          "只檢查一個根"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "每個根都需符合原方程式。"
       }
     ]
   }
