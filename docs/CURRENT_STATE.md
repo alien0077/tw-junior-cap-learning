@@ -18,6 +18,7 @@
 - M3：南一五科已以學校公開課程計畫／教育平台補上不同程度交叉證據；仍待出版社官方目次與逐碼 KG 核驗才能升級信心。翰林數學、社會六冊已有官方 metadata，英文與自然六冊均已有官方／校方逐單元或逐章證據；仍需出版社正式目次與逐碼 KG 核驗才能升級信心。
 - M3：115 學年度翰林英語審定出版者身分與翰林書城 `i英語` 產品體系需持續分開紀錄；115 下期商品資料尚未公開時，不可把 114 下期誤標為 115。
 - M4：1,032/1,032 coverage rows 已建立 lesson 與題庫欄位；其中 117 rows／121 lessons 為 `content-reviewed`，915 rows／915 lessons 明確維持 `draft`。每單元至少 10 題，數學／自然具 3 步互動；仍不代表教師／學科專家審閱。
+- 未完成項目已逐筆整理於 `docs/M4_INCOMPLETE_ITEMS.md`，可直接交給外部 ChatGPT 協助來源查找與內容核對。
 - M5：資料驅動靜態 MVP 已部署至 https://alien0077.github.io/tw-junior-cap-learning/，並完成首頁與 manifest 遠端 smoke test。
 
 ## 工作限制
