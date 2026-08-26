@@ -93,10 +93,12 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 
 - M4-002 已完成：已建立 [data/m4-coverage-matrix.json](../data/m4-coverage-matrix.json)，逐一列出 1,032 筆 curriculum records；目前僅 7 筆有可直接對應的既有 lesson/question baseline。
 - M4 批次進度：1,032/1,032 筆 coverage rows 已 materialize，共 1,036 份 lesson、10,360 題 question；數學／自然互動狀態 0 筆 pending；18 筆為 repo 內部 `content-reviewed`、1,014 筆維持 `draft`。
-- M4 題庫審查狀態：7,710 題為 `content-reviewed`、2,650 題仍為 `draft`；此欄位與 coverage row／lesson 的內部 QA 狀態分開計算，未宣稱教師審閱完成。
+- M4 題庫審查狀態：220 題為 `content-reviewed`、10,140 題仍為 `draft`；此欄位與 coverage row／lesson 的內部 QA 狀態分開計算，未宣稱教師審閱完成。
 - 2026-08-26：新增南一版國文第三冊校方課程計畫逐課 mapping（10 課）；來源為卓蘭高中附設國中 113 學年度公開 PDF，保留 medium confidence。
 - 2026-08-26：新增南一版國文第二冊校方課程計畫逐課 mapping（8 課）；來源為彰化縣福興國中 110 學年度公開 PDF，保留 medium confidence。
 - 2026-08-26：新增南一版國文第五冊校方課程計畫逐課 mapping（12 課）；來源為嘉義縣永慶高中國中部 109 學年度公開 PDF，保留 medium confidence。
 - 2026-08-26：南一教材 mapping 累計 126 個 mapping、36 組 mapping set、882 筆章節／單元 entries；校方來源均保留 medium confidence，未升格為出版社正式目次。
 - 2026-08-26：新增南一數學第一冊 3 章與第二冊 5 章校方課程計畫 mapping；南一教材 mapping 累計 128 個 mapping、38 組 mapping set、890 筆章節／單元 entries。
 - 2026-08-26：新增南一數學第三冊 5 章與第四冊 4 章校方課程計畫 mapping；南一教材 mapping 累計 130 個 mapping、40 組 mapping set、899 筆章節／單元 entries。
+
+- 2026-08-26：為 1,031 份可對應 curriculum/KG 的 lesson 補入其官方課綱文件精確 URL；此為 provenance 強化，不改變任何 lesson 的 draft／content-reviewed 狀態。
