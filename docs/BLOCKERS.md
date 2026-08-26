@@ -37,7 +37,8 @@
 
 - 狀態：partially-resolved（2026-08-26）
 - 影響：`site/` 與 `netlify.toml` 已推送，但目前沒有可核驗的公開部署 URL、瀏覽器 smoke test 或 Netlify deploy record。
-- 已完成：靜態前端、資料 manifest、五科篩選、搜尋、錯誤狀態與安全 headers；本機 smoke test 已確認首頁與 manifest 回應 200。
+- 已完成：靜態前端、資料 manifest、五科篩選、搜尋、錯誤狀態與安全 headers；本機 smoke test 已確認首頁與 manifest 回應 200；已新增 GitHub Pages workflow。
+- 遠端結果：workflow run `32935077493` 於 `configure-pages` 回報 Pages site Not Found，表示 repository 尚未啟用 GitHub Pages。
 - 下一步：連接部署環境後，用公開 URL 驗證 JSON 載入、手機版 layout、搜尋／篩選與失敗提示；未驗收前不宣稱 M5 完成。
 
 
