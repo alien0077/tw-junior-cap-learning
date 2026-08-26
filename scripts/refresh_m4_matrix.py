@@ -19,6 +19,8 @@ for row in matrix["rows"]:
     if not lesson_path.exists():
         continue
     lesson = json.loads(lesson_path.read_text(encoding="utf-8"))
+    row["contentStatus"] = lesson.get("reviewStatus", row.get("contentStatus", "draft"))
+    row["reviewStatus"] = lesson.get("reviewStatus", row.get("reviewStatus", "draft"))
     row["questionCount"] = question_counts.get(row["lessonId"], 0)
     row["interactiveStatus"] = (
         "complete" if row["subject"] in {"math", "science"} and len(lesson.get("interactive", {}).get("steps", [])) >= 3
