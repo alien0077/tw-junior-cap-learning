@@ -1,6 +1,6 @@
 # M4 全課綱補全計畫與完成紀錄
 
-更新日期：2026-08-25
+更新日期：2026-08-26
 
 ## 完成定義
 
@@ -19,11 +19,11 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 |---|---|---|---|
 | M4-001 | 原創內容 baseline | 10 lessons、100 questions、每單元至少 10 題 | 已完成 |
 | M4-002 | 全課綱 coverage matrix | 1,032 個節點逐一列出 subject、grade、KG、lesson、question、互動狀態 | 已完成（data/m4-coverage-matrix.json） |
-| M4-003 | 國文教材與題庫 | 所有國文節點完成 lesson 與每單元 10 題 | 已建立（63 draft lessons，QA 未完成） |
+| M4-003 | 國文教材與題庫 | 所有國文節點完成 lesson 與每單元 10 題 | 已建立（71 draft lessons；另 14 份 content-reviewed，QA 未完成） |
 | M4-004 | 英文教材與題庫 | 所有英文節點完成 lesson 與每單元 10 題 | 已建立（135 draft lessons，QA 未完成） |
-| M4-005 | 數學教材、題庫、互動 | 所有數學節點完成 lesson、10 題、3 步互動 | 已建立（47 draft lessons，QA 未完成） |
-| M4-006 | 自然教材、題庫、互動 | 所有自然節點完成 lesson、10 題、3 步互動 | 已建立（324 draft lessons，QA 未完成） |
-| M4-007 | 社會教材與題庫 | 所有社會節點完成 lesson 與每單元 10 題 | 已建立（359 draft lessons，QA 未完成） |
+| M4-005 | 數學教材、題庫、互動 | 所有數學節點完成 lesson、10 題、3 步互動 | 已建立（125 draft lessons；另 2 份 content-reviewed，QA 未完成） |
+| M4-006 | 自然教材、題庫、互動 | 所有自然節點完成 lesson、10 題、3 步互動 | 已建立（324 draft lessons；另 2 份 content-reviewed，QA 未完成） |
+| M4-007 | 社會教材與題庫 | 所有社會節點完成 lesson 與每單元 10 題 | 已建立（359 draft lessons；另 2 份 content-reviewed，QA 未完成） |
 | M4-008 | 全量驗證與審閱 | 覆蓋率 100%、題數與答案驗證通過；教師審閱另列 | 自動驗證完成；教師／專家審閱未完成 |
 
 ## 紀錄規則
@@ -48,7 +48,7 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 - 2026-08-25：M4-003 第三批完成 3 筆國文 learning-content records，新增 3 份 lesson 與 30 題 question。\n
 - 2026-08-25：M4-003 第四批完成 3 筆國文 learning-content records，新增 3 份 lesson 與 30 題 question。\n
 - 2026-08-26：M4-003 國文 draft 批次完成 71 筆，國文 coverage rows 達 84/84；共 93 份 lesson、930 題 question，71 筆仍待內容 QA。\n
-- 2026-08-26：M4 全量結構建立；1,032 coverage rows 對應 1,036 份 lesson 與 10,360 題 question。lesson 之狀態分流後，題庫為 1,080 題 `content-reviewed`、9,280 題維持 `draft`，不宣稱教師／學科專家審閱。\n
+- 2026-08-26：M4 全量結構建立；1,032 coverage rows 對應 1,036 份 lesson 與 10,360 題 question。狀態校正後，lesson 為 22 份 `content-reviewed`、1,014 份 `draft`；題庫為 220 題 `content-reviewed`、10,140 題 `draft`，不宣稱教師／學科專家審閱。\n
 ## 批次執行策略（2026-08-25）
 
 為避免逐筆等待，後續改採固定批次流水線：
