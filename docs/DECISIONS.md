@@ -205,6 +205,12 @@
 - 日期：2026-08-26
 - 決策：凡隸屬 `draft` lesson 的 question，一律標為 `draft`；本次校正 6,630 題，使題庫狀態成為 1,080 `content-reviewed`、9,280 `draft`。
 - 理由：題目審核狀態不能高於其所屬教材狀態，避免通用模板題被誤讀為已完成學科 QA。
+
+## D-032：以 provenance 證據校正批次教材狀態
+
+- 日期：2026-08-26
+- 決策：凡 lesson provenance 明確標示 `Batch-generated draft` 者，即使標題未含「草稿」，仍與所屬 coverage／questions 維持 `draft`；本次新增校正 86 lessons、860 questions、86 rows。
+- 理由：以可追溯欄位而非檔名或數量判定審核狀態，避免批次生成內容被誤標為已審核。
 - 驗證：`python3 scripts/validate_data.py` 通過（12,537 JSON files、12,524 IDs、1,032 KG nodes）。
 - 界線：`content-reviewed` 僅代表 repo 內部 QA，不等同教師或學科專家 `teacher-reviewed`。
 
