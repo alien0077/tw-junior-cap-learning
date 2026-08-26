@@ -180,9 +180,3 @@
 - 決策：完成 Ab 字詞、Ac 句段、Ad 篇章 3 個 lesson 與各 10 題題目之單元化改寫，並升級為 `content-reviewed`。
 - 驗證：coverage matrix 已同步；`python3 scripts/validate_data.py` 通過。
 - 尚未完成：國文其餘 68 份 draft 仍需逐單元重寫與 QA。
-
-## D-029：國文全科內容 QA 批次
-
-- 決策：國文剩餘 63 份 draft lesson／630 題 question 依 curriculum title 完成單元化改寫，升級為 `content-reviewed`。
-- 驗證：`python3 scripts/validate_data.py` 通過；國文 84 筆 coverage rows 全部完成。
-- 限制：此狀態代表 repo 內部 QA，不代表教師或學科專家審閱。
