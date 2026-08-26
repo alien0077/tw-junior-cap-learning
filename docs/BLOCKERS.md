@@ -32,6 +32,7 @@
 - 新發現（2026-08-26）：同一份忠明國中公開課程計畫明列翰林版自然 9 上／9 下章節（電流、地球環境、板塊、宇宙、電與磁、天氣等）；已建立 `textbook-mapping/science/hanlin-schoolplan-9-2026.json` 共 8 筆章節交叉證據。
 - 新發現（2026-08-26）：仁美國中公開英語課程計畫列出南一版 7 上 Starter、Lesson 1–6 與 Reading Corner I；已建立 `textbook-mapping/english/nani-schoolplan-2026.json` 共 8 筆單元交叉證據。
 - 新發現（2026-08-26）：永豐高中國中部公開教科書改選報告逐項列出南一版社會(一下)地理、歷史、公民各 6 單元；已建立 `textbook-mapping/social/nani-schoolplan-2026.json` 共 18 筆單元交叉證據。來源為 109 學年度校方報告，非南一出版社正式目次，維持 medium confidence。
+- 新發現（2026-08-26）：卓蘭高中附設國中部公開課程計畫逐項列出南一版社會八上地理、歷史、公民各 6 單元；已建立 `textbook-mapping/social/nani-schoolplan-8-2026.json` 共 18 筆單元交叉證據。來源為 111 學年度校方課程計畫，非南一出版社正式目次，維持 medium confidence。
 - 下一步：繼續追查各科官方教材搶先看、公開 PPT 索引與版本專頁；只在章名與冊次可逐筆回溯時建立 mapset。
 
 ## B-003：repo 尚未配置 CI workflow
