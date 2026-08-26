@@ -32,6 +32,7 @@ def main() -> int:
 
     for path, data in parsed.items():
         rel = path.relative_to(ROOT).as_posix()
+        parts = rel.split("/")
         schema_path = None
         if rel.startswith("curriculum/"):
             schema_path = SCHEMA_DIR / "curriculum.schema.json"
@@ -53,26 +54,28 @@ def main() -> int:
     ids: dict[str, Path] = {}
     kg_ids: set[str] = set()
     for path, data in parsed.items():
+        parts = path.relative_to(ROOT).parts
         if isinstance(data, dict) and isinstance(data.get("id"), str):
             item_id = data["id"]
             if item_id in ids:
                 errors.append(f"duplicate id {item_id}: {ids[item_id]} and {path}")
             ids[item_id] = path
-        if path.parts and path.parts[0] == "knowledge":
+        if parts and parts[0] == "knowledge":
             for node in data.get("nodes", []):
                 if isinstance(node, dict) and isinstance(node.get("id"), str):
                     kg_ids.add(node["id"])
 
     for path, data in parsed.items():
-        if path.parts and path.parts[0] in {"lessons", "questions"}:
-            if path.parts[0] == "questions" and not data.get("lessonId"):
+        rel_parts = path.relative_to(ROOT).parts
+        if rel_parts and rel_parts[0] in {"lessons", "questions"}:
+            if rel_parts[0] == "questions" and not data.get("lessonId"):
                 errors.append(f"{path}: missing lessonId")
             for item_id in data.get("knowledgeIds", []):
                 if item_id not in kg_ids:
                     errors.append(f"{path}: missing KG endpoint {item_id}")
             if data.get("provenance", {}).get("origin") != "original":
                 errors.append(f"{path}: M4 content must use provenance.origin=original")
-        if path.parts and path.parts[0] == "textbook-mapping":
+        if rel_parts and rel_parts[0] == "textbook-mapping":
             volumes = data.get("volumes", [])
             for volume in volumes:
                 for entry in volume.get("entries", []):
@@ -82,9 +85,9 @@ def main() -> int:
 
     lesson_question_counts: dict[str, int] = {}
     for path, data in parsed.items():
-        if path.parts and path.parts[0] == "questions" and isinstance(data.get("lessonId"), str):
+        if path.relative_to(ROOT).parts[0] == "questions" and isinstance(data.get("lessonId"), str):
             lesson_question_counts[data["lessonId"]] = lesson_question_counts.get(data["lessonId"], 0) + 1
-    lesson_ids = {item_id for item_id, path in ids.items() if path.parts and path.parts[0] == "lessons"}
+    lesson_ids = {item_id for item_id, path in ids.items() if path.relative_to(ROOT).parts[0] == "lessons"}
     for lesson_id in lesson_ids:
         if lesson_question_counts.get(lesson_id, 0) < 10:
             errors.append(f"{lesson_id}: only {lesson_question_counts.get(lesson_id, 0)} questions; minimum is 10")
