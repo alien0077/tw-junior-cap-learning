@@ -45,6 +45,7 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 - 2026-08-25：B-008 解決；第二批 30 題已完成單元對應 QA。\n
 - 2026-08-25：M4-003 第三批完成 3 筆國文 learning-content records，新增 3 份 lesson 與 30 題 question。\n
 - 2026-08-25：M4-003 第四批完成 3 筆國文 learning-content records，新增 3 份 lesson 與 30 題 question。\n
+- 2026-08-26：M4-003 國文 draft 批次完成 71 筆，國文 coverage rows 達 84/84；共 93 份 lesson、930 題 question，71 筆仍待內容 QA。\n
 ## 批次執行策略（2026-08-25）
 
 為避免逐筆等待，後續改採固定批次流水線：

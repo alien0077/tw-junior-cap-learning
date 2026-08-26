@@ -46,4 +46,4 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 ## M4 進度更新
 
 - M4-002 已完成：已建立 [data/m4-coverage-matrix.json](../data/m4-coverage-matrix.json)，逐一列出 1,032 筆 curriculum records；目前僅 7 筆有可直接對應的既有 lesson/question baseline。
-- M4-003 已開始：國文已完成 12/84 筆（新增 6 lesson、60 question），其餘 81 筆仍待補全。
+- M4-003 批次進度：國文 84/84 筆已 materialize（其中既有 13 筆 content-reviewed、71 筆 draft），目前共 93 份 lesson、930 題 question；draft 尚未計入內容完成率。

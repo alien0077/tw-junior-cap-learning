@@ -162,3 +162,9 @@
 - 日期：2026-08-25
 - 決策：不宣稱可在單一回合可靠產生 10,320 題正式題庫；改用 coverage matrix 驅動的批次產生、驗證與 QA。
 - 狀態：已採用；後續未完成內容統一標 draft，通過內容 QA 才升級。
+
+## D-026：M4 國文全節點先 materialize draft
+
+- 決策：國文 84 筆 coverage rows 全部建立 lesson 與每單元 10 題 question；未經學科 QA 的 71 筆維持 `draft`，不計入內容完成率。
+- 驗證：`python3 scripts/validate_data.py` 通過；本批新增 71 lessons、710 questions。
+- 尚未完成：draft 內容仍需逐單元學科 QA，不能宣稱國文教材完整。
