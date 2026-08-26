@@ -27,6 +27,7 @@
 - 新發現（2026-08-26）：翰林官方「國中數學解題影音網」已公開 1上、1下、2上、2下、3上、3下的章節與課次索引（例如 https://mathvideo.hle.com.tw/1A/）；數學六冊已建立 `hanlin-official-2026.json` 逐章 mapping，其他非國文科仍待公開索引。
 - 新發現（2026-08-26）：翰林官方教材樣書 PDF 公開六冊社會目次（七上至九下）；已建立 `textbook-mapping/social/hanlin-official-2026.json` 共 68 筆章名 metadata。因公開目次未提供逐章課綱碼，KG 目前保守掛至地理／歷史／公民領域節點，逐章代碼仍標 medium confidence 待核驗。
 - 新發現（2026-08-26）：翰林官方英文教材簡介公開七上至八下的 Starter／U1–U6 結構；已建立 `textbook-mapping/english/hanlin-official-2026.json` 共 25 筆單元 metadata。來源為 112 年改版簡介，九年級與 115 年版差異仍待新版目次。
+- 新查找（2026-08-26）：翰林公開教材簡介／教用 PDF（例如 `https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E7%B0%A1%E4%BB%8B/111%E5%9C%8B%E4%B8%AD%E7%B0%A1%E4%BB%8B%E6%9C%AC-%E7%90%86%E5%8C%96.pdf`）可看到部分章節與課綱碼，但屬舊版且含受著作權保護的教用內容；僅可作來源線索，不直接複製內容或推導 115 年正式目次，仍維持待核驗。
 - 新發現（2026-08-26）：林口國中公開課程計畫附件明列翰林版七年級自然科學（生物）第 1–5 章、19 個單元；已建立 `textbook-mapping/science/hanlin-schoolplan-2026.json`。此為校方交叉證據，非出版社正式目次，KG 維持領域層級與 medium confidence。
 - 新發現（2026-08-26）：桃園市忠明國中公開自然領域課程計畫明列南一版自然 8 上／8 下共 12 章；已建立 `textbook-mapping/science/nani-schoolplan-2026.json`。此為校方交叉證據，非南一出版社正式目次。
 - 新發現（2026-08-26）：同一份忠明國中公開課程計畫明列翰林版自然 9 上／9 下章節（電流、地球環境、板塊、宇宙、電與磁、天氣等）；已建立 `textbook-mapping/science/hanlin-schoolplan-9-2026.json` 共 8 筆章節交叉證據。
