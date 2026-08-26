@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-a-7-4",
   "subject": "math",
-  "title": "草稿：A-7-4：二元一次聯立方程式的意義",
+  "title": "A-7-4：二元一次聯立方程式的意義",
   "knowledgeIds": [
     "kg-math-content-a-7-4"
   ],
@@ -9,22 +9,26 @@
     "7"
   ],
   "content": {
-    "summary": "依課綱「A-7-4：二元一次聯立方程式的意義」建立的 M4 草稿，待學科 QA。",
+    "summary": "以兩個未知數與兩個線性等式表示同時存在的數量關係。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「A-7-4：二元一次聯立方程式的意義」的核心概念。"
+        "heading": "學習目標",
+        "body": "以兩個未知數與兩個線性等式表示同時存在的數量關係。 能代回兩式驗證解。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "定義兩個未知數，將條件寫成兩式，選擇代入或消去法求解，最後代回檢查。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "只解出一個未知數、消去時係數未同步處理，或忽略題目限制。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "兩個未知數對應兩個條件。",
+    "選擇代入或消去法。",
+    "解出後代回兩式。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「A-7-4：二元一次聯立方程式的意義」的理解。",
+    "goal": "用三步驟應用「A-7-4：二元一次聯立方程式的意義」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步要先整理什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "兩個未知數與兩個條件",
+          "只看一個數字"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先定義未知數並整理條件。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步可採用哪種方法？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "代入法或消去法",
+          "直接猜答案"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "選擇可消去一個未知數的方法。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何確認？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "代回兩個原式驗算",
+          "只檢查一式"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "兩式都成立才是聯立解。"
       }
     ]
   }
