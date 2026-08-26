@@ -89,10 +89,11 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 
 ## M4 進度更新
 
-- 2026-08-26：M4 全量 repo 內部 QA 完成；coverage matrix 1,032/1,032 rows 為 `content-reviewed`，validator 通過 12,537 JSON files、12,524 IDs、1,032 KG nodes。此狀態不等同 `teacher-reviewed`。
+- 2026-08-26：M4 全量 repo 內部 QA 完成；coverage matrix 1,032/1,032 rows 為 `content-reviewed`，最新 validator 通過 12,567 JSON files、12,554 IDs、1,032 KG nodes。此狀態不等同 `teacher-reviewed`。
 
 - M4-002 已完成：已建立 [data/m4-coverage-matrix.json](../data/m4-coverage-matrix.json)，逐一列出 1,032 筆 curriculum records；目前僅 7 筆有可直接對應的既有 lesson/question baseline。
 - M4 批次進度：1,032/1,032 筆 coverage rows 已 materialize，共 1,036 份 lesson、10,360 題 question；數學／自然互動狀態 0 筆 pending；1,032 筆均為 repo 內部 `content-reviewed`。
 - 2026-08-26：新增南一版國文第三冊校方課程計畫逐課 mapping（10 課）；來源為卓蘭高中附設國中 113 學年度公開 PDF，保留 medium confidence。
 - 2026-08-26：新增南一版國文第二冊校方課程計畫逐課 mapping（8 課）；來源為彰化縣福興國中 110 學年度公開 PDF，保留 medium confidence。
 - 2026-08-26：新增南一版國文第五冊校方課程計畫逐課 mapping（12 課）；來源為嘉義縣永慶高中國中部 109 學年度公開 PDF，保留 medium confidence。
+- 2026-08-26：南一教材 mapping 累計 126 個 mapping、36 組 mapping set、882 筆章節／單元 entries；校方來源均保留 medium confidence，未升格為出版社正式目次。
