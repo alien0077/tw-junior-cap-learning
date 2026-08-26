@@ -381,3 +381,9 @@
 - 日期：2026-08-26
 - 決策：為可對應 curriculum/KG 的 lesson 補入官方課綱文件 URL 至 `studyReferences`，以便逐單元追溯。
 - 界線：來源補強不代表內容已通過學科審閱，也不會自動變更 `reviewStatus`。
+
+## D-058：以 canonical unit 作為 M4 三層架構試點
+
+- 日期：2026-08-26
+- 決策：新增 `canonical-units/` 與 `migrations/` 資料層；數學 126 個既有課綱節點先以 ID 前綴分成 7 個 pilot unit（6 個可教學 unit 與 1 個分類導航節點）。
+- 界線：分群是低信心的 canonical-design 草案，不等同出版社章節或教師核定；既有 lesson/question 不刪除、不改升級狀態，題目透過 migration manifest 進入 pending-review。

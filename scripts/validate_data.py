@@ -48,6 +48,14 @@ def main() -> int:
                 if str(data.get("id", "")).startswith("mapset-")
                 else "textbook-mapping.schema.json"
             )
+        elif rel.startswith("canonical-units/"):
+            schema_path = SCHEMA_DIR / (
+                "curriculum-unit-mapping.schema.json"
+                if str(data.get("id", "")).startswith("unit-map-")
+                else "canonical-unit.schema.json"
+            )
+        elif rel.startswith("migrations/") and path.name == "math-question-migration-pilot.json":
+            schema_path = SCHEMA_DIR / "question-migration-manifest.schema.json"
         if schema_path and schema_path.exists():
             validate(path, schema_path, errors)
 
@@ -83,6 +91,25 @@ def main() -> int:
                         if item_id not in kg_ids:
                             errors.append(f"{path}: missing mapping KG endpoint {item_id}")
 
+    canonical_units = {
+        data.get("id"): data
+        for path, data in parsed.items()
+        if path.relative_to(ROOT).parts[0] == "canonical-units"
+        and str(data.get("id", "")).startswith("canonical-unit-")
+    }
+    curriculum_ids = {
+        data.get("id")
+        for path, data in parsed.items()
+        if path.relative_to(ROOT).parts[0] == "curriculum"
+    }
+    for path, data in parsed.items():
+        rel_parts = path.relative_to(ROOT).parts
+        if rel_parts and rel_parts[0] == "canonical-units" and str(data.get("id", "")).startswith("unit-map-"):
+            if data.get("unitId") not in canonical_units:
+                errors.append(f"{path}: missing canonical unit {data.get('unitId')}")
+            for curriculum_id in data.get("curriculumIds", []):
+                if curriculum_id not in curriculum_ids:
+                    errors.append(f"{path}: missing curriculum endpoint {curriculum_id}")
     lesson_question_counts: dict[str, int] = {}
     for path, data in parsed.items():
         if path.relative_to(ROOT).parts[0] == "questions" and isinstance(data.get("lessonId"), str):
@@ -94,6 +121,17 @@ def main() -> int:
         if path.relative_to(ROOT).parts[0] == "lessons"
         for data in [parsed[path]]
     }
+    for path, data in parsed.items():
+        rel_parts = path.relative_to(ROOT).parts
+        if rel_parts and rel_parts[0] == "migrations":
+            for item in data.get("items", []):
+                if item.get("questionId") not in ids:
+                    errors.append(f"{path}: missing question {item.get('questionId')}")
+                if item.get("sourceLessonId") not in lesson_by_id:
+                    errors.append(f"{path}: missing lesson {item.get('sourceLessonId')}")
+                target = item.get("targetUnitId")
+                if target is not None and target not in canonical_units:
+                    errors.append(f"{path}: missing target canonical unit {target}")
     for lesson_id in lesson_ids:
         if lesson_question_counts.get(lesson_id, 0) < 10:
             errors.append(f"{lesson_id}: only {lesson_question_counts.get(lesson_id, 0)} questions; minimum is 10")
