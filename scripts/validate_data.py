@@ -104,9 +104,19 @@ def main() -> int:
     }
     for path, data in parsed.items():
         rel_parts = path.relative_to(ROOT).parts
+        if rel_parts and rel_parts[0] == "canonical-units" and str(data.get("id", "")).startswith("canonical-unit-"):
+            source = data.get("source", {})
+            if not str(source.get("url", "")).startswith(("http://", "https://")):
+                errors.append(f"{path}: canonical unit missing public source URL")
+            if not str(source.get("locator", "")).strip():
+                errors.append(f"{path}: canonical unit missing source locator")
+            if data.get("teachable") is False and data.get("status") == "verified":
+                errors.append(f"{path}: classification-only unit cannot be verified as teachable")
         if rel_parts and rel_parts[0] == "canonical-units" and str(data.get("id", "")).startswith("unit-map-"):
             if data.get("unitId") not in canonical_units:
                 errors.append(f"{path}: missing canonical unit {data.get('unitId')}")
+            elif canonical_units[data.get("unitId")].get("teachable") is False and data.get("relation") != "classifies":
+                errors.append(f"{path}: non-teachable unit must use relation=classifies")
             for curriculum_id in data.get("curriculumIds", []):
                 if curriculum_id not in curriculum_ids:
                     errors.append(f"{path}: missing curriculum endpoint {curriculum_id}")
