@@ -30,6 +30,7 @@
 - 新發現（2026-08-26）：林口國中公開課程計畫附件明列翰林版七年級自然科學（生物）第 1–5 章、19 個單元；已建立 `textbook-mapping/science/hanlin-schoolplan-2026.json`。此為校方交叉證據，非出版社正式目次，KG 維持領域層級與 medium confidence。
 - 新發現（2026-08-26）：桃園市忠明國中公開自然領域課程計畫明列南一版自然 8 上／8 下共 12 章；已建立 `textbook-mapping/science/nani-schoolplan-2026.json`。此為校方交叉證據，非南一出版社正式目次。
 - 新發現（2026-08-26）：同一份忠明國中公開課程計畫明列翰林版自然 9 上／9 下章節（電流、地球環境、板塊、宇宙、電與磁、天氣等）；已建立 `textbook-mapping/science/hanlin-schoolplan-9-2026.json` 共 8 筆章節交叉證據。
+- 新發現（2026-08-26）：仁美國中公開英語課程計畫列出南一版 7 上 Starter、Lesson 1–6 與 Reading Corner I；已建立 `textbook-mapping/english/nani-schoolplan-2026.json` 共 8 筆單元交叉證據。
 - 下一步：繼續追查各科官方教材搶先看、公開 PPT 索引與版本專頁；只在章名與冊次可逐筆回溯時建立 mapset。
 
 ## B-003：repo 尚未配置 CI workflow
