@@ -88,9 +88,29 @@ def main() -> int:
         if path.relative_to(ROOT).parts[0] == "questions" and isinstance(data.get("lessonId"), str):
             lesson_question_counts[data["lessonId"]] = lesson_question_counts.get(data["lessonId"], 0) + 1
     lesson_ids = {item_id for item_id, path in ids.items() if path.relative_to(ROOT).parts[0] == "lessons"}
+    lesson_by_id = {
+        item_id: data
+        for item_id, path in ids.items()
+        if path.relative_to(ROOT).parts[0] == "lessons"
+        for data in [parsed[path]]
+    }
     for lesson_id in lesson_ids:
         if lesson_question_counts.get(lesson_id, 0) < 10:
             errors.append(f"{lesson_id}: only {lesson_question_counts.get(lesson_id, 0)} questions; minimum is 10")
+
+    # A visible draft marker must never be paired with content-reviewed status.
+    for lesson_id, lesson in lesson_by_id.items():
+        if str(lesson.get("title", "")).startswith("草稿") and lesson.get("reviewStatus") != "draft":
+            errors.append(f"{lesson_id}: draft title requires reviewStatus=draft")
+
+    matrix_path = ROOT / "data/m4-coverage-matrix.json"
+    if matrix_path in parsed and isinstance(parsed[matrix_path], dict):
+        for row in parsed[matrix_path].get("rows", []):
+            lesson_id = row.get("lessonId")
+            if lesson_id in lesson_by_id:
+                lesson_status = lesson_by_id[lesson_id].get("reviewStatus")
+                if row.get("reviewStatus") != lesson_status or row.get("contentStatus") != lesson_status:
+                    errors.append(f"coverage {lesson_id}: status must match lesson ({lesson_status})")
 
     if errors:
         print("\n".join(errors))
