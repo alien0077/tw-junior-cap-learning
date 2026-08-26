@@ -36,6 +36,7 @@
 - 新發現（2026-08-26）：民和國中 113 學年度九年級社會課程計畫（文件標示設計者為南一出版社）逐項列出第 5 冊 18 單元與第 6 冊 12 單元；已建立 `textbook-mapping/social/nani-schoolplan-9-2026.json` 共 30 筆單元交叉證據。仍屬校方公開文件，非 115 年出版社正式目次，維持 medium confidence。
 - 新發現（2026-08-26）：永慶高中 114 學年度七年級課程計畫明列南一版第一、二冊，地理、歷史、公民各 6 單元；已建立 `textbook-mapping/social/nani-schoolplan-7-2026.json` 共 36 筆單元交叉證據。來源為校方公開計畫，非出版社正式目次，維持 medium confidence。
 - 新發現（2026-08-26）：嘉義縣大吉國中 115 學年度英文課程計畫明列南一版第三至六冊 Lesson 標題；已建立 `textbook-mapping/english/nani-schoolplan-8-2026.json`（12 課）與 `textbook-mapping/english/nani-schoolplan-9-2026.json`（10 課）。來源為校方公開附件，非出版社正式目次，維持 medium confidence；部分課名依 PDF 原始擷取字串保留。
+- 新發現（2026-08-26）：嘉義縣大吉國中 115 學年度數學與自然課程計畫明列南一版數學第五、六冊 6 章，以及自然第一、二冊 10 章；已建立 `textbook-mapping/math/nani-schoolplan-9-2026.json` 與 `textbook-mapping/science/nani-schoolplan-7-2026.json`。來源為校方公開附件，非出版社正式目次，維持 medium confidence。
 - 下一步：繼續追查各科官方教材搶先看、公開 PPT 索引與版本專頁；只在章名與冊次可逐筆回溯時建立 mapset。
 
 ## B-003：repo 尚未配置 CI workflow
