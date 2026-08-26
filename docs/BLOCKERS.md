@@ -70,3 +70,4 @@
 - 影響：目前 1,014 份 lesson 維持 `draft`；自動盤點顯示 1,010 組題幹有重複，批次內容只能證明結構與欄位完整，不能視為可用題庫。
 - 已完成：所有題目仍具 options、answer.value、answer.explanation、lessonId、KG endpoint 與 provenance；validator 已通過。
 - 下一步：依科目逐單元重寫題幹、選項與解析，完成內容 QA 後才可升級 `content-reviewed`。
+- 稽核報告：`docs/M4_DRAFT_QA_REPORT.md`；目前五科 draft 題目均需優先重寫，報告不改變 reviewStatus。
