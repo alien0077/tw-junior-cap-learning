@@ -199,6 +199,12 @@
 - 日期：2026-08-26
 - 決策：lesson 標題明確以「草稿」開頭者，與其 coverage row 一律標為 `draft`；只有完成內容 QA 的項目才可使用 `content-reviewed`。
 - 理由：避免結構欄位驗證被誤讀為教材內容審查完成；全量節點仍保留 lesson 與題庫資料。
+
+## D-031：Draft lesson 下的題目不得標示 content-reviewed
+
+- 日期：2026-08-26
+- 決策：凡隸屬 `draft` lesson 的 question，一律標為 `draft`；本次校正 6,630 題，使題庫狀態成為 1,080 `content-reviewed`、9,280 `draft`。
+- 理由：題目審核狀態不能高於其所屬教材狀態，避免通用模板題被誤讀為已完成學科 QA。
 - 驗證：`python3 scripts/validate_data.py` 通過（12,537 JSON files、12,524 IDs、1,032 KG nodes）。
 - 界線：`content-reviewed` 僅代表 repo 內部 QA，不等同教師或學科專家 `teacher-reviewed`。
 
