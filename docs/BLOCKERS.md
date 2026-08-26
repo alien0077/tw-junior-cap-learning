@@ -86,3 +86,9 @@
 - 已完成：所有題目仍具 options、answer.value、answer.explanation、lessonId、KG endpoint 與 provenance；validator 已通過。
 - 下一步：依科目逐單元重寫題幹、選項與解析，完成內容 QA 後才可升級 `content-reviewed`。
 - 稽核報告：`docs/M4_DRAFT_QA_REPORT.md`；目前五科 draft 題目均需優先重寫，報告不改變 reviewStatus。
+
+## B-011：翰林英文單元來源為舊學年度校方文件
+
+- 狀態：部分解決（2026-08-26）
+- 處理：以嘉義縣忠和國中 111 學年度公開課程計畫核驗第五冊 6 單元與第六冊 4 單元，建立 `textbook-mapping/english/hanlin-schoolplan-9-2026.json`。
+- 限制：文件不是出版社正式目次且非 115 學年度；維持 medium confidence，仍需新版官方／校方資料才能升級版本核驗。
