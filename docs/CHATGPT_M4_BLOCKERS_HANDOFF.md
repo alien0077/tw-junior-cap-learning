@@ -24,6 +24,7 @@
 - 自然 49 個 unit：確認跨科主題與各次主題是否應為 teachable 或 supports。
 - 社會 77 個 unit：確認地理／歷史／公民 parent grouping 是否過細或應合併。
 - 每項請提供 officialGroupingValid、instructionalCohesionValid、gradeScopeValid、decision、sourceUrl、sourceLocator。
+- 數學 pilot 目前仍是 ID 前綴分群；愛學網官方索引可定位數學課綱資源，但本次工具無法直接擷取該大型 PDF 內容，因此數學六個主題的 officialGroupingValid 與 instructionalCohesionValid 尚未升級，請外部 ChatGPT 以可公開 PDF 頁碼／代碼補回證據。
 
 ## 3. Lesson／question 內容 QA
 
