@@ -18,6 +18,25 @@
 3. 以合法公開或自編方式重寫 lesson 與 10 題 question；不要複製受著作權保護的課文、習題或題庫。
 4. 逐題驗證 options、answer.value、answer.explanation、KG endpoint、provenance；完成後才可將狀態升為 `content-reviewed`。
 
+## 外部回填格式（請逐筆或逐組回傳）
+
+```json
+{
+  "subject": "chinese|english|math|science|social",
+  "unitId": "canonical-unit-...",
+  "questionId": "question-...",
+  "decision": "keep|split|merge|classification-only|blocked",
+  "targetUnitId": "canonical-unit-... 或 null",
+  "reason": "以課綱內容與題目語意說明判斷理由",
+  "sourceUrl": "可公開開啟的官方 URL",
+  "sourceLocator": "PDF 頁碼、章節、表格或官方代碼定位",
+  "rewrite": "必要時提供不複製受著作權內容的重寫方向",
+  "confidence": "high|medium|low"
+}
+```
+
+若找不到可公開核驗來源，請將 `decision` 設為 `blocked`，並具體說明已查過的入口與缺少的定位；不得使用另一個 ChatGPT 工作階段的內部引用代替 `sourceUrl` 或 `sourceLocator`。
+
 ## 欄位說明
 
 | 科目 | lesson ID | 課綱 title | KG IDs | draft 題數 | lesson 來源 | 模板警示 |
