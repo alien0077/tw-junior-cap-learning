@@ -27,6 +27,7 @@
 - 新發現（2026-08-26）：翰林官方「國中數學解題影音網」已公開 1上、1下、2上、2下、3上、3下的章節與課次索引（例如 https://mathvideo.hle.com.tw/1A/）；數學六冊已建立 `hanlin-official-2026.json` 逐章 mapping，其他非國文科仍待公開索引。
 - 新發現（2026-08-26）：翰林官方教材樣書 PDF 公開六冊社會目次（七上至九下）；已建立 `textbook-mapping/social/hanlin-official-2026.json` 共 68 筆章名 metadata。因公開目次未提供逐章課綱碼，KG 目前保守掛至地理／歷史／公民領域節點，逐章代碼仍標 medium confidence 待核驗。
 - 新發現（2026-08-26）：翰林官方英文教材簡介公開七上至八下的 Starter／U1–U6 結構；已建立 `textbook-mapping/english/hanlin-official-2026.json` 共 25 筆單元 metadata。來源為 112 年改版簡介，九年級與 115 年版差異仍待新版目次。
+- 新發現（2026-08-26）：林口國中公開課程計畫附件明列翰林版七年級自然科學（生物）第 1–5 章、19 個單元；已建立 `textbook-mapping/science/hanlin-schoolplan-2026.json`。此為校方交叉證據，非出版社正式目次，KG 維持領域層級與 medium confidence。
 - 下一步：繼續追查各科官方教材搶先看、公開 PPT 索引與版本專頁；只在章名與冊次可逐筆回溯時建立 mapset。
 
 ## B-003：repo 尚未配置 CI workflow
