@@ -122,3 +122,4 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 - 2026-08-26：最新 migration handoff push 的 CI run 32970991080 成功，遠端 validator 再次通過。
 - 2026-08-26：validator 新增數學／自然每 lesson 至少 3 步互動檢查；CI run 32971196186 成功。
 - 2026-08-26：目前 canonical unit 共 161 個；五科 migration manifest 合計 4,060 題尚無唯一 target unit，已列入逐題外部核驗清單。
+- 2026-08-26：以國教院官方 PDF 直接核對自然全球氣候跨科主題與社會公民 Aa grouping，更新為 official-curriculum／high evidence；未改變 lesson／question 的外部審閱狀態。

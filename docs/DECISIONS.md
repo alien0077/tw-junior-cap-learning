@@ -399,3 +399,9 @@
 - 日期：2026-08-26
 - 決策：中英文領域根節點改為 `teachable=false`／`classifies`；國文 Ab 與英文 Ae 保留為分類 parent，新增具教學凝聚性的 child units；自然全球氣候跨科與社會公民 Aa 維持原 grouping。
 - 界線：child units 是依官方 leaf code 語意的本專案教學設計，source 使用官方課綱 URL 與定位但狀態維持 `mapped`；受影響題目改指 child candidate，仍須題目內容審核後才能 verified。
+
+## D-061：官方 PDF 直接支持自然跨科與社會 Aa grouping
+
+- 日期：2026-08-26
+- 決策：國教院官方 PDF 直接列出自然「全球氣候變遷與調適」INg-Ⅳ-1～INg-Ⅳ-9（PDF viewer P34、附錄 P166-P167），以及社會 A／a「公民身分」公 Aa-Ⅳ-1～2（PDF viewer P30、附錄 P128）；兩者 evidence 更新為 `official-curriculum`／`high` confidence。
+- 界線：高信心只表示官方 grouping 與定位已核對，不代表 lesson/question 已完成教師審閱或出版社章節 mapping。
