@@ -56,4 +56,4 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 4. 將未經內容 QA 的資料標為 draft，不宣稱完成。
 5. 每一科完成 QA 後才升級 content-reviewed。
 
-目標總量：1,032 lessons、至少 10,320 questions；目前 22 lessons、220 questions。此規模無法在單一人工回合中以可靠品質一次憑空完成，必須透過批次產生與驗證逐步 materialize。
+目標總量：1,032 lessons、至少 10,320 questions；目前已 materialize 1,036 lessons、10,360 questions。除既有 18 筆 content-reviewed 外均為 draft，仍須逐科內容 QA，不能宣稱完整。
