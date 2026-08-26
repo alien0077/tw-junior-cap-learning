@@ -405,3 +405,9 @@
 - 日期：2026-08-26
 - 決策：國教院官方 PDF 直接列出自然「全球氣候變遷與調適」INg-Ⅳ-1～INg-Ⅳ-9（PDF viewer P34、附錄 P166-P167），以及社會 A／a「公民身分」公 Aa-Ⅳ-1～2（PDF viewer P30、附錄 P128）；兩者 evidence 更新為 `official-curriculum`／`high` confidence。
 - 界線：高信心只表示官方 grouping 與定位已核對，不代表 lesson/question 已完成教師審閱或出版社章節 mapping。
+
+## D-062：英文 Aa–Ad 官方內容表定位
+
+- 日期：2026-08-26
+- 決策：國教院英語文課綱 PDF viewer P18 直接列出 Aa-Ⅳ-1、Ab-Ⅳ-1～3、Ac-Ⅳ-1～4、Ad-Ⅳ-1；Aa、Ab、Ad evidence 升為 high，Ac 因內容跨度較大維持 medium。
+- 界線：這只核對官方項目 grouping，不等於英文 lesson／question 已完成內容審閱。
