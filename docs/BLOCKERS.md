@@ -27,11 +27,10 @@
 
 ## B-003：repo 尚未配置 CI workflow
 
-- 狀態：partially-resolved（2026-08-25）
+- 狀態：已解決（2026-08-26）
 - 解法：新增 `.github/workflows/validate-data.yml`，安裝 jsonschema 後執行 `scripts/validate_data.py`。
 - 驗證範圍：JSON 語法、對應 Schema、全域 ID uniqueness、lesson/question/mapping 的 KG endpoint，以及 M4 原創 provenance。
-- 尚未解開：connector 目前未回報此 push 的 workflow run／status，因此尚未能由遠端結果確認 workflow 實際執行成功。
-- 後續：確認 Actions 執行權限與首次 run；若仍無 run，改用可由 PR 觸發的驗證流程。
+- 驗證：GitHub Actions `validate-data` 已在來源核對提交上完成且成功（run 32934424972）。
 
 
 ## B-004：M5 MVP 尚未完成部署驗收
