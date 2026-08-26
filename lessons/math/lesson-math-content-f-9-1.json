@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-f-9-1",
   "subject": "math",
-  "title": "草稿：F-9-1：二次函數的意義",
+  "title": "F-9-1：二次函數的意義",
   "knowledgeIds": [
     "kg-math-content-f-9-1"
   ],
@@ -9,22 +9,26 @@
     "9"
   ],
   "content": {
-    "summary": "依課綱「F-9-1：二次函數的意義」建立的 M4 草稿，待學科 QA。",
+    "summary": "理解二次函數的輸入輸出關係與標準形式。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「F-9-1：二次函數的意義」的核心概念。"
+        "heading": "學習目標",
+        "body": "理解二次函數的輸入輸出關係與標準形式。 能以式子、表格與圖形互相驗證。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "辨認二次項與係數，整理對稱軸與頂點，再由開口方向判斷極值並檢查。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "把一次函數圖形套用到二次函數，或混淆頂點、截距與極值。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "辨認二次函數形式。",
+    "由頂點與對稱軸判讀。",
+    "用式子與圖形互證。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「F-9-1：二次函數的意義」的理解。",
+    "goal": "用三步驟理解「F-9-1：二次函數的意義」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先辨認什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "二次項、係數與形式",
+          "只看一個點"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先確認式子結構。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何讀圖？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "找對稱軸、頂點與開口",
+          "只看顏色"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "頂點與開口決定極值。"
       },
       {
         "id": "step-3",
         "prompt": "最後如何檢查？",
         "options": [
-          "套用新情境驗證",
+          "以式子、表格或圖形互證",
           "跳過檢查"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "不同表示應一致。"
       }
     ]
   }
