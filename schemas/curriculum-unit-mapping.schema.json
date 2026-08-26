@@ -9,7 +9,7 @@
     "unitId": {"type": "string", "pattern": "^canonical-unit-(chinese|english|math|science|social)-[a-z0-9-]+$"},
     "curriculumIds": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
     "relation": {"type": "string", "enum": ["covers", "supports", "classifies"]},
-    "status": {"type": "string", "enum": ["draft", "verified", "deprecated"]},
+    "status": {"type": "string", "enum": ["draft", "mapped", "verified", "deprecated"]},
     "evidence": {
       "type": "object", "additionalProperties": false,
       "required": ["type", "url", "locator", "verifiedAt", "confidence"],
