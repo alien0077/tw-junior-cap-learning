@@ -2,7 +2,7 @@
 
 這是由目前 migration manifest 與 KG 逐題交叉產生的 blocker。每筆題目都保留原始 lesson／question；請外部 ChatGPT 依課綱語意決定 target，不能因為題數門檻而強行歸類。
 
-## chinese（460 題；46 種 KG 組合）
+## chinese（550 題；55 種 KG 組合）
 
 ### 10 題｜Ab：字詞 (kg-chinese-content-ab)
 
@@ -18,6 +18,126 @@
   - `question-chinese-content-ab-7`；lesson=`lesson-chinese-content-ab`
   - `question-chinese-content-ab-8`；lesson=`lesson-chinese-content-ab`
   - `question-chinese-content-ab-9`；lesson=`lesson-chinese-content-ab`
+
+### 10 題｜Ab-Ⅳ-1：4000常用字形音義 (kg-chinese-content-ab-iv-1)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-chinese-common-character-form-sound-meaning-1`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+  - `question-chinese-common-character-form-sound-meaning-10`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+  - `question-chinese-common-character-form-sound-meaning-2`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+  - `question-chinese-common-character-form-sound-meaning-3`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+  - `question-chinese-common-character-form-sound-meaning-4`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+  - `question-chinese-common-character-form-sound-meaning-5`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+  - `question-chinese-common-character-form-sound-meaning-6`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+  - `question-chinese-common-character-form-sound-meaning-7`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+  - `question-chinese-common-character-form-sound-meaning-8`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+  - `question-chinese-common-character-form-sound-meaning-9`；lesson=`lesson-chinese-common-character-form-sound-meaning`
+
+### 10 題｜Ab-Ⅳ-2：3500常用字使用 (kg-chinese-content-ab-iv-2)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-chinese-common-phrases-usage-1`；lesson=`lesson-chinese-common-phrases-usage`
+  - `question-chinese-common-phrases-usage-10`；lesson=`lesson-chinese-common-phrases-usage`
+  - `question-chinese-common-phrases-usage-2`；lesson=`lesson-chinese-common-phrases-usage`
+  - `question-chinese-common-phrases-usage-3`；lesson=`lesson-chinese-common-phrases-usage`
+  - `question-chinese-common-phrases-usage-4`；lesson=`lesson-chinese-common-phrases-usage`
+  - `question-chinese-common-phrases-usage-5`；lesson=`lesson-chinese-common-phrases-usage`
+  - `question-chinese-common-phrases-usage-6`；lesson=`lesson-chinese-common-phrases-usage`
+  - `question-chinese-common-phrases-usage-7`；lesson=`lesson-chinese-common-phrases-usage`
+  - `question-chinese-common-phrases-usage-8`；lesson=`lesson-chinese-common-phrases-usage`
+  - `question-chinese-common-phrases-usage-9`；lesson=`lesson-chinese-common-phrases-usage`
+
+### 10 題｜Ab-Ⅳ-3：象形指事會意形聲 (kg-chinese-content-ab-iv-3)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-chinese-six-forms-character-making-1`；lesson=`lesson-chinese-six-forms-character-making`
+  - `question-chinese-six-forms-character-making-10`；lesson=`lesson-chinese-six-forms-character-making`
+  - `question-chinese-six-forms-character-making-2`；lesson=`lesson-chinese-six-forms-character-making`
+  - `question-chinese-six-forms-character-making-3`；lesson=`lesson-chinese-six-forms-character-making`
+  - `question-chinese-six-forms-character-making-4`；lesson=`lesson-chinese-six-forms-character-making`
+  - `question-chinese-six-forms-character-making-5`；lesson=`lesson-chinese-six-forms-character-making`
+  - `question-chinese-six-forms-character-making-6`；lesson=`lesson-chinese-six-forms-character-making`
+  - `question-chinese-six-forms-character-making-7`；lesson=`lesson-chinese-six-forms-character-making`
+  - `question-chinese-six-forms-character-making-8`；lesson=`lesson-chinese-six-forms-character-making`
+  - `question-chinese-six-forms-character-making-9`；lesson=`lesson-chinese-six-forms-character-making`
+
+### 10 題｜Ab-Ⅳ-4：6500常用語詞認念 (kg-chinese-content-ab-iv-4)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-chinese-common-words-recognition-1`；lesson=`lesson-chinese-common-words-recognition`
+  - `question-chinese-common-words-recognition-10`；lesson=`lesson-chinese-common-words-recognition`
+  - `question-chinese-common-words-recognition-2`；lesson=`lesson-chinese-common-words-recognition`
+  - `question-chinese-common-words-recognition-3`；lesson=`lesson-chinese-common-words-recognition`
+  - `question-chinese-common-words-recognition-4`；lesson=`lesson-chinese-common-words-recognition`
+  - `question-chinese-common-words-recognition-5`；lesson=`lesson-chinese-common-words-recognition`
+  - `question-chinese-common-words-recognition-6`；lesson=`lesson-chinese-common-words-recognition`
+  - `question-chinese-common-words-recognition-7`；lesson=`lesson-chinese-common-words-recognition`
+  - `question-chinese-common-words-recognition-8`；lesson=`lesson-chinese-common-words-recognition`
+  - `question-chinese-common-words-recognition-9`；lesson=`lesson-chinese-common-words-recognition`
+
+### 10 題｜Ab-Ⅳ-5：5000常用語詞使用 (kg-chinese-content-ab-iv-5)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-chinese-common-phrases-advanced-1`；lesson=`lesson-chinese-common-phrases-advanced`
+  - `question-chinese-common-phrases-advanced-10`；lesson=`lesson-chinese-common-phrases-advanced`
+  - `question-chinese-common-phrases-advanced-2`；lesson=`lesson-chinese-common-phrases-advanced`
+  - `question-chinese-common-phrases-advanced-3`；lesson=`lesson-chinese-common-phrases-advanced`
+  - `question-chinese-common-phrases-advanced-4`；lesson=`lesson-chinese-common-phrases-advanced`
+  - `question-chinese-common-phrases-advanced-5`；lesson=`lesson-chinese-common-phrases-advanced`
+  - `question-chinese-common-phrases-advanced-6`；lesson=`lesson-chinese-common-phrases-advanced`
+  - `question-chinese-common-phrases-advanced-7`；lesson=`lesson-chinese-common-phrases-advanced`
+  - `question-chinese-common-phrases-advanced-8`；lesson=`lesson-chinese-common-phrases-advanced`
+  - `question-chinese-common-phrases-advanced-9`；lesson=`lesson-chinese-common-phrases-advanced`
+
+### 10 題｜Ab-Ⅳ-6：常用文言詞義語詞結構 (kg-chinese-content-ab-iv-6)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-chinese-classical-word-meaning-1`；lesson=`lesson-chinese-classical-word-meaning`
+  - `question-chinese-classical-word-meaning-10`；lesson=`lesson-chinese-classical-word-meaning`
+  - `question-chinese-classical-word-meaning-2`；lesson=`lesson-chinese-classical-word-meaning`
+  - `question-chinese-classical-word-meaning-3`；lesson=`lesson-chinese-classical-word-meaning`
+  - `question-chinese-classical-word-meaning-4`；lesson=`lesson-chinese-classical-word-meaning`
+  - `question-chinese-classical-word-meaning-5`；lesson=`lesson-chinese-classical-word-meaning`
+  - `question-chinese-classical-word-meaning-6`；lesson=`lesson-chinese-classical-word-meaning`
+  - `question-chinese-classical-word-meaning-7`；lesson=`lesson-chinese-classical-word-meaning`
+  - `question-chinese-classical-word-meaning-8`；lesson=`lesson-chinese-classical-word-meaning`
+  - `question-chinese-classical-word-meaning-9`；lesson=`lesson-chinese-classical-word-meaning`
+
+### 10 題｜Ab-Ⅳ-7：文言字詞虛字古今義變 (kg-chinese-content-ab-iv-7)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-chinese-classical-function-words-1`；lesson=`lesson-chinese-classical-function-words`
+  - `question-chinese-classical-function-words-10`；lesson=`lesson-chinese-classical-function-words`
+  - `question-chinese-classical-function-words-2`；lesson=`lesson-chinese-classical-function-words`
+  - `question-chinese-classical-function-words-3`；lesson=`lesson-chinese-classical-function-words`
+  - `question-chinese-classical-function-words-4`；lesson=`lesson-chinese-classical-function-words`
+  - `question-chinese-classical-function-words-5`；lesson=`lesson-chinese-classical-function-words`
+  - `question-chinese-classical-function-words-6`；lesson=`lesson-chinese-classical-function-words`
+  - `question-chinese-classical-function-words-7`；lesson=`lesson-chinese-classical-function-words`
+  - `question-chinese-classical-function-words-8`；lesson=`lesson-chinese-classical-function-words`
+  - `question-chinese-classical-function-words-9`；lesson=`lesson-chinese-classical-function-words`
+
+### 10 題｜Ab-Ⅳ-8：各體書法名家碑帖認識欣賞 (kg-chinese-content-ab-iv-8)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-chinese-calligraphy-appreciation-1`；lesson=`lesson-chinese-calligraphy-appreciation`
+  - `question-chinese-calligraphy-appreciation-10`；lesson=`lesson-chinese-calligraphy-appreciation`
+  - `question-chinese-calligraphy-appreciation-2`；lesson=`lesson-chinese-calligraphy-appreciation`
+  - `question-chinese-calligraphy-appreciation-3`；lesson=`lesson-chinese-calligraphy-appreciation`
+  - `question-chinese-calligraphy-appreciation-4`；lesson=`lesson-chinese-calligraphy-appreciation`
+  - `question-chinese-calligraphy-appreciation-5`；lesson=`lesson-chinese-calligraphy-appreciation`
+  - `question-chinese-calligraphy-appreciation-6`；lesson=`lesson-chinese-calligraphy-appreciation`
+  - `question-chinese-calligraphy-appreciation-7`；lesson=`lesson-chinese-calligraphy-appreciation`
+  - `question-chinese-calligraphy-appreciation-8`；lesson=`lesson-chinese-calligraphy-appreciation`
+  - `question-chinese-calligraphy-appreciation-9`；lesson=`lesson-chinese-calligraphy-appreciation`
 
 ### 10 題｜Ac：句段 (kg-chinese-content-ac)
 
@@ -183,6 +303,21 @@
   - `question-chinese-content-cc-7`；lesson=`lesson-chinese-content-cc`
   - `question-chinese-content-cc-8`；lesson=`lesson-chinese-content-cc`
   - `question-chinese-content-cc-9`；lesson=`lesson-chinese-content-cc`
+
+### 10 題｜國語文學習內容 (kg-chinese-learning-content)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-chinese-learning-content-1`；lesson=`lesson-chinese-learning-content`
+  - `question-chinese-learning-content-10`；lesson=`lesson-chinese-learning-content`
+  - `question-chinese-learning-content-2`；lesson=`lesson-chinese-learning-content`
+  - `question-chinese-learning-content-3`；lesson=`lesson-chinese-learning-content`
+  - `question-chinese-learning-content-4`；lesson=`lesson-chinese-learning-content`
+  - `question-chinese-learning-content-5`；lesson=`lesson-chinese-learning-content`
+  - `question-chinese-learning-content-6`；lesson=`lesson-chinese-learning-content`
+  - `question-chinese-learning-content-7`；lesson=`lesson-chinese-learning-content`
+  - `question-chinese-learning-content-8`；lesson=`lesson-chinese-learning-content`
+  - `question-chinese-learning-content-9`；lesson=`lesson-chinese-learning-content`
 
 ### 10 題｜國語文學習重點 (kg-chinese-learning-focus)
 
@@ -694,7 +829,7 @@
   - `question-chinese-performance-6-iv-6-8`；lesson=`lesson-chinese-performance-6-iv-6`
   - `question-chinese-performance-6-iv-6-9`；lesson=`lesson-chinese-performance-6-iv-6`
 
-## english（1000 題；100 種 KG 組合）
+## english（1010 題；101 種 KG 組合）
 
 ### 10 題｜Aa：字母 (kg-english-content-aa)
 
@@ -800,6 +935,21 @@
   - `question-english-content-d-7`；lesson=`lesson-english-content-d`
   - `question-english-content-d-8`；lesson=`lesson-english-content-d`
   - `question-english-content-d-9`；lesson=`lesson-english-content-d`
+
+### 10 題｜英語文學習內容 (kg-english-learning-content)
+
+- 目前判定：`blocked`（沒有唯一 teachable unit）
+- 題目：
+  - `question-english-learning-content-1`；lesson=`lesson-english-learning-content`
+  - `question-english-learning-content-10`；lesson=`lesson-english-learning-content`
+  - `question-english-learning-content-2`；lesson=`lesson-english-learning-content`
+  - `question-english-learning-content-3`；lesson=`lesson-english-learning-content`
+  - `question-english-learning-content-4`；lesson=`lesson-english-learning-content`
+  - `question-english-learning-content-5`；lesson=`lesson-english-learning-content`
+  - `question-english-learning-content-6`；lesson=`lesson-english-learning-content`
+  - `question-english-learning-content-7`；lesson=`lesson-english-learning-content`
+  - `question-english-learning-content-8`；lesson=`lesson-english-learning-content`
+  - `question-english-learning-content-9`；lesson=`lesson-english-learning-content`
 
 ### 10 題｜英語文學習重點 (kg-english-learning-focus)
 
@@ -5951,4 +6101,4 @@
 
 請對每個 KG 組合或逐題回傳：targetUnitId、decision（assign／split／classification-only／blocked）、理由、官方 curriculum code、公開 sourceUrl、sourceLocator（PDF 頁碼／章節），以及是否需要重寫題目。
 
-合計無唯一 targetUnitId：3960 題。
+合計無唯一 targetUnitId：4060 題。
