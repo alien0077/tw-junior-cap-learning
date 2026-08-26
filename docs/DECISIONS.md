@@ -414,3 +414,6 @@
 ## D-063 數學六大主題官方課綱證據（2026-08-26）
 
 以國教院數學領域課綱 PDF（PDF viewer P80–P81；附錄三 P74–P79）核對國民中學七至九年級六大主題：數與量（N）、代數（A）、空間與形狀（S）、函數（F）、坐標幾何（G）、資料與不確定性（D）。六個 teachable canonical unit 與 mapping 已更新為 `official-curriculum`、`high`；「代數與方程」仍保留為本專案教學標籤，來源定位明示官方主題為代數（A）。數學 navigation 分類節點仍不宣稱可教學內容。
+## D-064 Ab-Ⅳ-8 書法題目遷移（2026-08-26）
+
+依 migration review action plan，10 題 `question-chinese-calligraphy-appreciation-*` 的官方 leaf 為 Ab-Ⅳ-8，且已有唯一 teachable child `canonical-unit-chinese-content-ab-calligraphy`。已將 targetUnitId 從 null/not-applicable 改為該 child，migrationStatus 保持 `pending-review`；未升級內容審核狀態。

@@ -125,3 +125,4 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 - 2026-08-26：以國教院官方 PDF 直接核對自然全球氣候跨科主題與社會公民 Aa grouping，更新為 official-curriculum／high evidence；未改變 lesson／question 的外部審閱狀態。
 - 2026-08-26：以國教院英語文課綱 PDF viewer P18 核對 Aa–Ad 項目；Aa／Ab／Ad evidence 更新為 high，Ac 維持 medium（內容跨度較大）。
 - 2026-08-26：以國教院數學領域課綱 PDF viewer P80–P81（附錄三 P74–P79）核對國中六大主題；數學六個 teachable canonical unit 與 mapping 更新為 official-curriculum／high。代數單元標題保留本專案教學標籤並在 locator 註明官方主題為代數（A）；navigation 分類節點仍為 draft。
+- 2026-08-26：依 migration review action plan 修正 Ab-Ⅳ-8 書法欣賞 10 題：改指唯一 child canonical unit，狀態維持 pending-review；未解 migration 題數由 4,060 降為 4,050，validator 通過。
