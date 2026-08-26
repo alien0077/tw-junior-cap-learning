@@ -174,3 +174,9 @@
 - 決策：五科 1,032 筆 coverage rows 均建立 lesson 與每單元 10 題 question；數學／自然均含至少 3 步 guided-choice 互動。
 - 驗證：`scripts/validate_data.py` 通過（12,537 JSON files）；coverage matrix `interactivePending=0`。
 - 尚未完成：除既有 content-reviewed 外均維持 `draft`，需後續分科內容 QA；本批不宣稱課綱內容品質完整。
+
+## D-028：國文首批三主題內容 QA
+
+- 決策：完成 Ab 字詞、Ac 句段、Ad 篇章 3 個 lesson 與各 10 題題目之單元化改寫，並升級為 `content-reviewed`。
+- 驗證：coverage matrix 已同步；`python3 scripts/validate_data.py` 通過。
+- 尚未完成：國文其餘 68 份 draft 仍需逐單元重寫與 QA。
