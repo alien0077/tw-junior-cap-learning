@@ -119,3 +119,4 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 - 2026-08-26：套用來源核驗修正：中英文 domain 改為 classification-only；國文 Ab 新增 4 個 child units、英文 Ae 新增 3 個 child units；相關題目 manifest 已改指 child candidate，仍維持 pending-review。
 - 2026-08-26：GitHub Actions `validate-data` run 32970160723 成功；遠端 validator 通過。唯一 annotation 為 actions/checkout@v4 與 setup-python@v5 的 Node.js 20 deprecation 警告，不影響驗證結果。
 - 2026-08-26：CI 已升級至 actions/checkout@v5、actions/setup-python@v6；run 32970461258 成功，validator 通過且不再出現 Node.js 20 deprecation annotation。
+- 2026-08-26：最新 migration handoff push 的 CI run 32970991080 成功，遠端 validator 再次通過。
