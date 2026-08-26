@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-n-7-8",
   "subject": "math",
-  "title": "草稿：N-7-8：科學記號",
+  "title": "N-7-8：科學記號",
   "knowledgeIds": [
     "kg-math-content-n-7-8"
   ],
@@ -9,22 +9,26 @@
     "7"
   ],
   "content": {
-    "summary": "依課綱「N-7-8：科學記號」建立的 M4 草稿，待學科 QA。",
+    "summary": "以 a×10^n 表示數值並進行大小判讀與運算。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「N-7-8：科學記號」的核心概念。"
+        "heading": "學習目標",
+        "body": "以 a×10^n 表示數值並進行大小判讀與運算。 能以展開或數值估算檢查結果。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "辨認底數與指數，選擇相應律或科學記號形式，逐步運算並檢查數值量級。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "相加指數規則誤用、10 的次方位數錯誤，或係數未調整至 1 到 10 之間。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "辨認底數與指數。",
+    "依指數律逐步化簡。",
+    "檢查位數與量級。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「N-7-8：科學記號」的理解。",
+    "goal": "用三步驟理解「N-7-8：科學記號」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先辨認什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "底數、指數與係數",
+          "只看數字長度"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先看清楚式子結構。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何運算？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "套用正確指數律或科學記號規則",
+          "任意相加指數"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "依規則處理。"
       },
       {
         "id": "step-3",
         "prompt": "最後如何檢查？",
         "options": [
-          "套用新情境驗證",
+          "展開或檢查位數量級",
           "跳過檢查"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "確認結果合理。"
       }
     ]
   }
