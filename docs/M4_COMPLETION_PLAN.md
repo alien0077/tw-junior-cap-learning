@@ -58,4 +58,11 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 4. 將未經內容 QA 的資料標為 draft，不宣稱完成。
 5. 每一科完成 QA 後才升級 content-reviewed。
 
-目標總量：1,032 lessons、至少 10,320 questions；目前已 materialize 1,036 lessons、10,360 questions。除既有 18 筆 content-reviewed 外均為 draft，仍須逐科內容 QA，不能宣稱完整。
+目標總量：1,032 lessons、至少 10,320 questions；目前已 materialize 1,036 lessons、10,360 questions。lesson 與 coverage row 已通過 repo 內部 QA；題庫目前 7,710 題為 `content-reviewed`、2,650 題為 `draft`，仍不等同教師／學科專家審閱完成。
+
+## 目前狀態快照（2026-08-26）
+
+- 1,032/1,032 coverage rows：`content-reviewed`（repo 內部 QA）。
+- 1,036 lessons：均有 KG endpoint、provenance 與 10 題以上 question。
+- 10,360 questions：7,710 `content-reviewed`、2,650 `draft`；兩種狀態刻意分開保存。
+- 數學 127/127、自然 326/326 lessons：互動步驟至少 3 步。
