@@ -11,22 +11,26 @@
     "9"
   ],
   "content": {
-    "summary": "依課綱「Aa-Ⅳ-1：原子模型演變」建立的 M4 草稿，待學科 QA。",
+    "summary": "依據「草稿：Aa-Ⅳ-1：原子模型演變」整理科學概念、證據與探究方法。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「Aa-Ⅳ-1：原子模型演變」的核心概念。"
+        "heading": "學習目標",
+        "body": "依據「草稿：Aa-Ⅳ-1：原子模型演變」整理科學概念、證據與探究方法。 能以觀察或模型說明現象。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "探究流程",
+        "body": "提出問題、辨認變因與證據，建立模型或分類，再以資料檢驗。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "混淆觀察與推論、忽略控制變因，或把模型當成現象本身。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "辨認現象與證據。",
+    "建立模型與推理。",
+    "檢查資料與結論。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -36,41 +40,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「Aa-Ⅳ-1：原子模型演變」的理解。",
+    "goal": "用三步驟理解「草稿：Aa-Ⅳ-1：原子模型演變」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先做什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "辨認現象、變因與證據",
+          "直接猜結論"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先釐清探究問題。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何推理？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "用模型或分類整理證據",
+          "忽略資料差異"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "根據證據建立解釋。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "最後如何確認？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "檢查資料與結論是否一致",
+          "跳過驗證"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "以證據檢驗推論。"
       }
     ]
   }
