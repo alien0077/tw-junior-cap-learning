@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-f-8-2",
   "subject": "math",
-  "title": "草稿：F-8-2：一次函數的圖形",
+  "title": "F-8-2：一次函數的圖形",
   "knowledgeIds": [
     "kg-math-content-f-8-2"
   ],
@@ -9,22 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "依課綱「F-8-2：一次函數的圖形」建立的 M4 草稿，待學科 QA。",
+    "summary": "以座標圖表示一次函數，從斜率與截距解讀圖形。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「F-8-2：一次函數的圖形」的核心概念。"
+        "heading": "學習目標",
+        "body": "以座標圖表示一次函數，從斜率與截距解讀圖形。 能以表格、式子與圖形互相驗證。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "辨認輸入輸出，整理變化率與初始值，建立一次函數式，再用表格或座標圖檢查。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "混淆斜率與截距、讀錯座標刻度，或把一次函數當成固定常數。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "斜率表示變化率。",
+    "截距是初始值。",
+    "表格、式子、圖形互證。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「F-8-2：一次函數的圖形」的理解。",
+    "goal": "用三步驟理解「F-8-2：一次函數的圖形」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先辨認什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "輸入、輸出與變化率",
+          "只看一個點"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先整理變數關係。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何表示？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "用 y=ax+b 或座標圖表示",
+          "直接猜圖形"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "斜率與截距決定一次函數。"
       },
       {
         "id": "step-3",
         "prompt": "最後如何檢查？",
         "options": [
-          "套用新情境驗證",
+          "用表格、式子與圖形互證",
           "跳過檢查"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "三種表示應彼此一致。"
       }
     ]
   }
