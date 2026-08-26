@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-content-n-8-3",
   "subject": "math",
-  "title": "草稿：N-8-3：認識數列",
+  "title": "N-8-3：認識數列",
   "knowledgeIds": [
     "kg-math-content-n-8-3"
   ],
@@ -9,22 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "依課綱「N-8-3：認識數列」建立的 M4 草稿，待學科 QA。",
+    "summary": "觀察數列規律，描述項次與項值的關係。",
     "sections": [
       {
-        "heading": "學習目標（草稿）",
-        "body": "能說明「N-8-3：認識數列」的核心概念。"
+        "heading": "學習目標",
+        "body": "觀察數列規律，描述項次與項值的關係。 能用估算、規律或代入檢查。"
       },
       {
-        "heading": "學習步驟（草稿）",
-        "body": "整理關鍵詞，閱讀例子，再用新情境檢查理解。"
+        "heading": "學習流程",
+        "body": "先整理數值或項次，觀察範圍與規律，建立關係，再檢查近似誤差或項值。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "把近似值當精確值、忽略誤差範圍，或只看相鄰兩項未驗證整體規律。"
       }
     ]
   },
   "studyHighlights": [
-    "先抓課綱關鍵詞。",
-    "用例子驗證理解。",
-    "回看常見錯誤。"
+    "先整理範圍與項次。",
+    "觀察規律建立關係。",
+    "檢查誤差與結果。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/"
@@ -34,41 +38,41 @@
     "license": "All rights reserved",
     "authoringNote": "Batch-generated draft; subject QA required."
   },
-  "reviewStatus": "draft",
+  "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-26",
   "interactive": {
     "type": "guided-choice",
-    "goal": "用步驟檢查「N-8-3：認識數列」的理解。",
+    "goal": "用三步驟理解「N-8-3：認識數列」。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "第一步先整理什麼？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "數值範圍或項次資料",
+          "只看最後一項"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "先收集必要資料。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "第二步如何分析？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "用逼近或規律建立關係",
+          "直接猜結果"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "依定義與規律推理。"
       },
       {
         "id": "step-3",
         "prompt": "最後如何檢查？",
         "options": [
-          "套用新情境驗證",
+          "檢查誤差、項值或代入",
           "跳過檢查"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "確認結果符合條件。"
       }
     ]
   }
