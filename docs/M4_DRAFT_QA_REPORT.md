@@ -15,3 +15,5 @@
 ## 合法題源登錄
 
 國中教育會考官方網站提供歷屆題本與參考答案入口（[歷屆試題](https://cap.rcpet.edu.tw/examination.html)）。本專案只將其作為命題範圍與題型查核來源；未取得明確授權前，不複製題文、選項或解析，現有題目仍標示 `original`／`draft`。
+
+2026-08-26：2,650 題 draft 均已在 `provenance.sourceUrl`／`sourceLocator` 登錄上述官方入口及其「非題文來源」界線。
