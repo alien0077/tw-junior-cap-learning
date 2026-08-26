@@ -19,10 +19,10 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 |---|---|---|---|
 | M4-001 | 原創內容 baseline | 10 lessons、100 questions、每單元至少 10 題 | 已完成 |
 | M4-002 | 全課綱 coverage matrix | 1,032 個節點逐一列出 subject、grade、KG、lesson、question、互動狀態 | 已完成（data/m4-coverage-matrix.json） |
-| M4-003 | 國文教材與題庫 | 所有國文節點完成 lesson 與每單元 10 題 | 已建立（71 draft lessons；另 14 份 content-reviewed，QA 未完成） |
+| M4-003 | 國文教材與題庫 | 所有國文節點完成 lesson 與每單元 10 題 | 已建立（63 draft lessons；22 份 content-reviewed，仍待外部審閱） |
 | M4-004 | 英文教材與題庫 | 所有英文節點完成 lesson 與每單元 10 題 | 已建立（135 draft lessons，QA 未完成） |
-| M4-005 | 數學教材、題庫、互動 | 所有數學節點完成 lesson、10 題、3 步互動 | 已建立（125 draft lessons；另 2 份 content-reviewed，QA 未完成） |
-| M4-006 | 自然教材、題庫、互動 | 所有自然節點完成 lesson、10 題、3 步互動 | 已建立（324 draft lessons；另 2 份 content-reviewed，QA 未完成） |
+| M4-005 | 數學教材、題庫、互動 | 所有數學節點完成 lesson、10 題、3 步互動 | 已建立（51 draft lessons；76 份 content-reviewed，仍待外部審閱） |
+| M4-006 | 自然教材、題庫、互動 | 所有自然節點完成 lesson、10 題、3 步互動 | 已建立（315 draft lessons；11 份 content-reviewed，仍待外部審閱） |
 | M4-007 | 社會教材與題庫 | 所有社會節點完成 lesson 與每單元 10 題 | 已建立（359 draft lessons；另 2 份 content-reviewed，QA 未完成） |
 | M4-008 | 全量驗證與審閱 | 覆蓋率 100%、題數與答案驗證通過；教師審閱另列 | 自動驗證完成；教師／專家審閱未完成 |
 
