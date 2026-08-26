@@ -135,13 +135,23 @@ def main() -> int:
         rel_parts = path.relative_to(ROOT).parts
         if rel_parts and rel_parts[0] == "migrations":
             for item in data.get("items", []):
-                if item.get("questionId") not in ids:
+                question_id = item.get("questionId")
+                lesson_id = item.get("sourceLessonId")
+                if question_id not in ids:
                     errors.append(f"{path}: missing question {item.get('questionId')}")
-                if item.get("sourceLessonId") not in lesson_by_id:
-                    errors.append(f"{path}: missing lesson {item.get('sourceLessonId')}")
+                if lesson_id not in lesson_by_id:
+                    errors.append(f"{path}: missing lesson {lesson_id}")
+                if question_id in ids and parsed[ids[question_id]].get("subject") != data.get("subject"):
+                    errors.append(f"{path}: question subject mismatch {question_id}")
+                if lesson_id in lesson_by_id and lesson_by_id[lesson_id].get("subject") != data.get("subject"):
+                    errors.append(f"{path}: lesson subject mismatch {lesson_id}")
                 target = item.get("targetUnitId")
                 if target is not None and target not in canonical_units:
                     errors.append(f"{path}: missing target canonical unit {target}")
+                if target is not None and target in canonical_units and canonical_units[target].get("subject") != data.get("subject"):
+                    errors.append(f"{path}: target unit subject mismatch {target}")
+                if target is not None and target in canonical_units and canonical_units[target].get("teachable") is False:
+                    errors.append(f"{path}: migration target must be teachable or null {target}")
     for lesson_id in lesson_ids:
         if lesson_question_counts.get(lesson_id, 0) < 10:
             errors.append(f"{lesson_id}: only {lesson_question_counts.get(lesson_id, 0)} questions; minimum is 10")
