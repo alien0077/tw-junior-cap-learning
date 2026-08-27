@@ -26,3 +26,7 @@ validated 12905 JSON files, 12885 IDs, 1032 KG nodes
 - GitHub Actions API 本次因網路連線錯誤無法取得最新 run；本地 validator 結果不替代遠端 CI 證據。
 
 本文件是機器稽核紀錄，不是 M4 完成宣告。
+
+## 網路比對佇列
+
+已建立 `data/m4-web-review-queue.json`，收錄目前 10,065 筆 draft lesson/question；其中 9,150 筆 question 及其 lesson 均已有 source URL 與 locator。佇列只建立逐筆檢查項目，不會自動升級 `reviewStatus`。
