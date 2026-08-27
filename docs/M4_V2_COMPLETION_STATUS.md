@@ -9,9 +9,9 @@
 
 ## 驗證結果
 
-`python3 scripts/validate_data.py` 目前失敗（exit 1）。失敗原因是 V2 lesson 的數學／自然 interactive step 出現重複 option 字串；Schema 的 `uniqueItems` 規則拒絕這些內容。這不是可以用改字尾的方式安全修正的問題，因為會改變教學選項語意。
+初次驗證發現 10 個 lesson 的 interactive step 出現完全相同的重複 option 字串。已只移除完全重複值（未改寫文字或語意），再執行 `python3 scripts/validate_data.py` 已通過：`validated 12905 JSON files, 12885 IDs, 1032 KG nodes`。
 
-因此本次不將 V2 replacement 標為 `content-reviewed`，也不刪除任何題目。所有尚未完成或無法由本地證據確認的內容仍維持 `draft`／pending。
+因此本次仍不將 V2 replacement 標為 `content-reviewed`，也不刪除任何題目。所有尚未完成或無法由本地證據確認的內容仍維持 `draft`／pending。
 
 ## 尚待處理
 
