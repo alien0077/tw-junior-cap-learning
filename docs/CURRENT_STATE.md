@@ -1,5 +1,7 @@
 # 目前狀態
 
+> 2026-08-27：ChatGPT V2 replacement 已完成輸入與 validator 稽核；因數學／自然 interactive options 重複而未通過 Schema，replacement 維持待修 draft，2,705 筆 destructive candidates 未刪除。詳見 `docs/M4_V2_COMPLETION_STATUS.md`。
+
 - 更新日期：2026-08-26
 - 目前里程碑：M4 — 全課綱教材與題庫
 - 狀態：M4 全量結構建立完成；部分內容 QA 與教師／學科專家審閱仍未完成
