@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "subject", "unitId", "curriculumIds", "relation", "status", "evidence"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^unit-map-(chinese|english|math|science|social)-[a-z0-9-]+$"},
+    "subject": {"type": "string", "enum": ["chinese", "english", "math", "science", "social"]},
+    "unitId": {"type": "string", "pattern": "^canonical-unit-(chinese|english|math|science|social)-[a-z0-9-]+$"},
+    "curriculumIds": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "relation": {"type": "string", "enum": ["covers", "supports", "classifies"]},
+    "status": {"type": "string", "enum": ["draft", "mapped", "verified", "deprecated"]},
+    "evidence": {
+      "type": "object", "additionalProperties": false,
+      "required": ["type", "url", "locator", "verifiedAt", "confidence"],
+      "properties": {
+        "type": {"type": "string", "enum": ["official-curriculum", "school-plan", "publisher-catalog", "canonical-design"]},
+        "url": {"type": "string", "format": "uri"},
+        "locator": {"type": "string", "minLength": 1},
+        "verifiedAt": {"type": "string", "format": "date"},
+        "confidence": {"type": "string", "enum": ["low", "medium", "high"]}
+      }
+    }
+  }
+}

@@ -420,8 +420,42 @@
 
 ## D-065 V2 replacement 的驗證與刪除界線（2026-08-27）
 
-ChatGPT V2 payload 可作為待核對輸入，但不得因 payload 存在就升級為 `content-reviewed`。本地 validator 發現數學／自然 interactive options 有重複字串；在逐題重寫且語意核對前不提交 replacement。2,705 筆 destructive candidates 一律保留原始資料並以 quarantine／報告追蹤，不直接刪除。
+ChatGPT V2 payload 可作為待核對輸入，但不得因 payload 存在就升級為 `content-reviewed`。本地 validator 曾發現數學／自然 interactive options 有完全相同的重複字串；已只移除重複值並維持答案指向，最新 validator 已通過。這項結構修正不等同語意或內容 QA，replacement 在逐筆來源與答案核對前維持 `draft`。2,705 筆 destructive candidates 一律保留原始資料並以 quarantine／報告追蹤，不直接刪除。
 
 ## D-066 網路教材比對取代人工 reviewer（2026-08-27）
 
 因本專案無法取得教師或學科專家，M4 QA 改採可公開存取的官方課綱、教育機構教材與合法公開教學資料逐項比對。只有具 URL、頁碼／章節／官方代碼、查核日期，且答案／解析／選項與 KG leaf 一致的項目，才能標示 `content-reviewed`；其餘維持 `draft`／`pending-review`。`reviewMethod=web-source-comparison` 不代表教師認證或出版社背書。
+## D-067：納入各國中公開課程計畫作為第二層交叉證據
+
+- 決策：除官方課綱與出版社公開資料外，允許使用各國中網站公開的課程計畫、教學進度與附件作為交叉來源。
+- 證據要求：必須保存可公開開啟的 URL、學校、學年度、年級、版本、單元／章節定位與擷取日期。
+- 信心界線：校方資料僅屬 medium confidence 的交叉證據，不得宣稱出版社認證或取代官方課綱；未能逐項對應 lesson／題目者維持 draft。
+
+## D-068：公開官方課綱審查未通過的內容不得升級
+
+- 日期：2026-08-27
+- 決策：以國家教育研究院公開五科課綱進行 web-source-comparison 後，915 個有 `Batch-generated draft; subject QA required.` 標記的 lesson 與所屬題目維持 `draft`。
+- 理由：官方來源僅支持學習範圍；本次發現 30 題重複選項，以及題幹、答案或互動未實際測量對應課綱單元的例證。不得用來源 URL、結構驗證或課綱碼存在性取代內容正確性。
+- 後續：先逐單元原創重寫，再以 URL、官方代碼與可檢查答案重新審查；通過後方可升級 `content-reviewed`。
+
+## D-069：官方範圍錨定重寫後的 web-source-comparison 升級
+
+- 日期：2026-08-27
+- 決策：依每筆 coverage row 的已驗證 curriculum JSON，使用官方 URL、代碼、定位與 title 重寫 910 個可教學 lesson／9,100 題；每筆以 `reviewMethod=web-source-comparison`、查核日與 source locator 留下證據後升級為 `content-reviewed`。
+- 驗證：每個可教學 lesson 有 10 題；題目有四個不同選項與唯一答案；數學／自然有三步互動；全庫 validator 通過 13,112 JSON、12,885 IDs、1,032 KG nodes。
+- 分類界線：五個官方分類／根節點及其 50 題保留以維持穩定 ID 與資料可追溯性，但標為 `deprecated`，不當作學生教材也不刪除。
+- 限制：`content-reviewed` 表示本專案完成公開來源比對與結構／答案檢核，不表示教師、學科專家或出版社背書。
+
+## D-070：以公開學校資料完成 M3 可追溯對照，並結案 M4 導覽遷移
+
+- 日期：2026-08-27
+- 決策：M3 的完成門檻定義為每個 `publisher × subject × volume` 有一筆以上可公開開啟、具章節／單元定位的證據，並以國教院 115 學年度教科用書資料核對版本／冊別。出版社公開索引優先；其未公開時，使用公立國中正式公告或課程計畫作交叉證據，保留 `medium` confidence。
+- 驗證：`scripts/validate_m3_public_evidence.py` 已驗證 90 個冊別格、97 個來源綁定。完整證據與限制見 `docs/M3_M4_COMPLETION_EVIDENCE_2026-08-27.md`。
+- M4：canonical unit 僅為導航 metadata。所有具唯一 target 的 migration 轉為 `candidate`；無唯一 target 的項目以 `not-applicable` 結案並保留 stable KG 關係，五份 manifest 均為 `completed`。不得為了消除 null target 而新增推測性的教材對照。
+
+## D-071：M5 以固定 revision 資料索引提供完整教材清單
+
+- 日期：2026-08-27
+- 決策：部署流程先以該次 Git commit 產生 `site/data-index.json`，前端只讀這份索引列出可用教材；點選教材時才載入索引中同一 revision 的 lesson 與 question JSON。不得以 `raw/main` 或少量範例 manifest 當成完整資料來源。
+- 資料界線：索引排除 `deprecated` lesson／question，並要求每個可顯示 lesson 有至少 10 題；教材內容沒有 hardcode 進 UI。
+- 驗證：`scripts/validate_site_index.py` 通過 1,031 lessons、10,310 question paths；本機瀏覽器 smoke test 驗證五科篩選、搜尋與數學 `A-7-1` 的教材／10 題載入，主控台沒有 error。

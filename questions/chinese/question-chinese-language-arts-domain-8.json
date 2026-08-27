@@ -2,40 +2,40 @@
   "id": "question-chinese-language-arts-domain-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "【草稿】學習「語文領域－國語文」時，哪一項最符合課綱學習方向？",
+  "prompt": "題目同時提到相近概念時，如何避免混淆「語文領域－國語文」？",
   "options": [
     {
       "id": "A",
-      "text": "理解「語文領域－國語文」並能應用"
+      "text": "只看單元名稱，不讀題幹中的條件、資料或例證。"
     },
     {
       "id": "B",
-      "text": "只記頁碼"
+      "text": "分別列出各概念需要的條件，再用題幹證據判別真正相關的概念。"
     },
     {
       "id": "C",
-      "text": "只背選項順序"
+      "text": "把與本單元無關的資訊當成唯一依據，跳過比較與驗證。"
     },
     {
       "id": "D",
-      "text": "跳過學習目標"
+      "text": "不檢查限制或證據，直接依直覺選擇看起來熟悉的敘述。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-learning-focus"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "本題檢查「語文領域－國語文」的核心理解與應用。"
+    "value": "B",
+    "explanation": "本題以官方課綱單元「語文領域－國語文」為範圍；正解要求使用題幹條件與可檢查的推理。其餘選項都略過條件、證據或驗證，不能支持可靠判斷。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-chinese-learning-focus"
+    "sourceUrl": "https://www.k12ea.gov.tw/Tw/Common/SinglePage?filter=11C2C6C1-D64E-475E-916B-D20C83896343",
+    "sourceLocator": "web-source-comparison 2026-08-27; 官方課綱索引「一、課程綱要」第 3 項; official code 語文領域－國語文"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "deprecated",
+  "updatedAt": "2026-08-27",
   "lessonId": "lesson-chinese-language-arts-domain"
 }

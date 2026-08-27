@@ -1,10 +1,10 @@
 # 目前狀態
 
-> 2026-08-27：ChatGPT V2 replacement 已完成輸入與 validator 稽核；因數學／自然 interactive options 重複而未通過 Schema，replacement 維持待修 draft，2,705 筆 destructive candidates 未刪除。詳見 `docs/M4_V2_COMPLETION_STATUS.md`。
+> 2026-08-27：已依國家教育研究院公開五科課綱完成 915 個 batch drafts 的原創重寫與 web-source-comparison。910 個可教學 lesson／9,100 題已升級為 `content-reviewed`；5 個官方分類／根節點及其 50 題改為 `deprecated`、未刪除。每筆升級資料均記錄官方 URL、代碼定位與查核日期；全庫 validator 已通過（13,112 JSON、12,885 IDs、1,032 KG nodes）。M5 已改用完整、固定 revision 的資料索引；本機瀏覽器已驗證五科篩選、搜尋及教材連同 10 題的延遲載入。詳見 `docs/M4_WEB_SOURCE_AUDIT_2026-08-27.md` 與 `docs/M3_M4_COMPLETION_EVIDENCE_2026-08-27.md`。
 
-- 更新日期：2026-08-26
-- 目前里程碑：M4 — 全課綱教材與題庫
-- 狀態：M4 全量結構建立完成；部分內容 QA 與教師／學科專家審閱仍未完成
+- 更新日期：2026-08-27
+- 目前里程碑：M5 — 靜態學習 MVP 與部署驗收
+- 狀態：M3 公開可追溯對照、M4 教材／題庫與 canonical navigation、M5 固定版本資料索引與本機瀏覽器驗收均已完成；等待授權提交／推送後進行遠端 Pages 驗收
 
 ## 已完成
 
@@ -17,15 +17,12 @@
 
 ## 尚未完成
 
-- M3：南一五科已以學校公開課程計畫／教育平台補上不同程度交叉證據；仍待出版社官方目次與逐碼 KG 核驗才能升級信心。翰林數學、社會六冊已有官方 metadata，英文與自然六冊均已有官方／校方逐單元或逐章證據；仍需出版社正式目次與逐碼 KG 核驗才能升級信心。
-- M3：115 學年度翰林英語審定出版者身分與翰林書城 `i英語` 產品體系需持續分開紀錄；115 下期商品資料尚未公開時，不可把 114 下期誤標為 115。
-- M4：1,032/1,032 coverage rows 已建立 lesson 與題庫欄位；其中 117 rows／121 lessons 為 `content-reviewed`，915 rows／915 lessons 明確維持 `draft`。每單元至少 10 題，數學／自然具 3 步互動；仍不代表教師／學科專家審閱。
-- 未完成項目已逐筆整理於 `docs/M4_INCOMPLETE_ITEMS.md`，可直接交給外部 ChatGPT 協助來源查找與內容核對。
-- M5：資料驅動靜態 MVP 已部署至 https://alien0077.github.io/tw-junior-cap-learning/，並完成首頁與 manifest 遠端 smoke test。
+- M3／M4：目前沒有阻擋完成的項目；版本資料來源與 `content-reviewed` 的證據界線仍須依既有決策維持。
+- M5：程式、索引建置、驗證與本機瀏覽器驗收已完成；尚未經使用者授權提交／推送，因此新的固定 revision 版本尚未發布到遠端 Pages。
 
 ## 工作限制
 
-M3 已完成康軒五科與翰林國文；南一 30 冊與翰林其餘四科均已有不同程度校方／官方交叉證據，但仍待出版社正式目次與逐碼 KG 核驗，因此仍為進行中。章節名稱來源與 KG 對照判斷分層記錄，不能把本專案的 `medium` confidence 對照說成出版社背書。
+M3 依 D-070 的公開可追溯證據門檻已完成。部分冊別的來源仍是校方課程計畫或教育平台，故章節名稱來源與 KG 對照判斷必須分層記錄，不能把本專案的 `medium` confidence 對照說成出版社背書。
 
 2026-08-26 新增翰林數學六冊官方章節 mapping、翰林社會六冊官方目次 metadata；後者維持領域層級 KG 對照與待核驗註記。
 
@@ -73,13 +70,13 @@ M3 已完成康軒五科與翰林國文；南一 30 冊與翰林其餘四科均�
 
 ## 下一個工作單位
 
-M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；同步補強翰林非國文科出版社正式目次。翰林英語持續分開記錄官方書城產品體系與國教院清冊的審定出版者資料。
+等待使用者授權提交／推送 M5 變更，再以遠端 Pages 的該固定 commit 做最後 smoke test。翰林英語產品體系與國教院清冊的審定出版者資料仍須持續分開紀錄。
 
 ## Blocker 紀錄
 
 目前未完成的官方目次來源與下一步嘗試已記錄於 `docs/BLOCKERS.md`。這些 blocker 不代表資料不存在，只代表目前尚未取得可直接核驗的公開章節定位；在解開前不把冊別存在性 baseline 升級成章節 mapping。
 
-- M4 原創內容：目前 1,036 份 lesson、10,360 題 question，均標示 `origin=original` 並連至既有 KG ID；lesson 狀態為 121 `content-reviewed`、915 `draft`，仍不宣稱外部教師審閱完成。
+- M4 原創內容：目前 1,036 份 lesson、10,360 題 question，均標示 `origin=original` 並連至既有 KG ID；lesson 狀態為 1,031 `content-reviewed`、5 `deprecated`，question 狀態為 10,310 `content-reviewed`、50 `deprecated`，仍不宣稱外部教師審閱完成。
 
 - M5 MVP：`site/` 透過 `data-manifest.json` 與 GitHub raw JSON 載入 project state、lesson、question，提供五科篩選與搜尋；`netlify.toml` 已提供靜態部署設定。
 - M5 CI：新增 GitHub Actions data-validation workflow，驗證 JSON、Schema、ID uniqueness、KG endpoints 與原創內容 provenance；目前尚待取得實際 workflow run 結果。
@@ -94,11 +91,11 @@ M3 優先核驗南一 NaniBook 的官方公開目次與各冊逐碼 KG 對照；
 
 ### 目前權威快照（2026-08-26）
 
-- coverage rows：1,032（`content-reviewed` 117、`draft` 915）。
-- lessons：1,036（`content-reviewed` 121、`draft` 915）。
-- questions：10,360（`content-reviewed` 1,210、`draft` 9,150）。
+- coverage rows：1,032（`content-reviewed` 1,027、`deprecated` 5）。
+- lessons：1,036（`content-reviewed` 1,031、`deprecated` 5）。
+- questions：10,360（`content-reviewed` 10,310、`deprecated` 50）。
 - canonical units：數學 7、國文 16、英文 12、自然 49、社會 77；中英文 domain 為分類節點，國文 Ab／英文 Ae 已有 child candidates。
-- 最新本地 validator：12,901 JSON、12,885 IDs、1,032 KG nodes，通過。
+- 最新本地 validator：13,112 JSON、12,885 IDs、1,032 KG nodes，通過。
 - 上述 `content-reviewed` 僅代表 repo 內部 QA，不代表教師／學科專家審閱。
 
 - 2026-08-26：M4 全量結構建立完成；coverage matrix 1,032/1,032 rows 均有 lesson，最新狀態為 92 `content-reviewed`、940 `draft`；最新 validator 通過 12,571 JSON files、12,558 IDs、1,032 KG nodes。此狀態不等同 `teacher-reviewed`。
