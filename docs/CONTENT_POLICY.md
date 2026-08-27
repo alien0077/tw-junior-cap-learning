@@ -16,3 +16,14 @@
 ## 審核要求
 
 新增教材與題庫前，要確認它是自編或授權內容、與來源內容有足夠表達差異、可連至 knowledge ID，並在資料內記錄 `provenance`、`license`、`reviewStatus`。對應證據僅供內部查核時，也應採最小揭露與存取控管。
+
+### 本專案的網路教材比對替代流程（2026-08-27）
+
+本專案沒有教師／學科專家 reviewer，因此以可公開存取的官方課綱、教育機構教材或合法公開教學資料進行比對，作為 `content-reviewed` 的替代 QA 證據。每筆必須：
+
+1. 記錄可公開開啟的 URL、頁碼／章節／官方代碼與查核日期。
+2. 將 lesson/question 的主張逐項對照來源；只保留自編表達，不複製受著作權保護文字。
+3. 核對答案、解析、選項與 KG leaf code 一致；比對失敗或來源不可定位時維持 `draft`／`pending-review`。
+4. 在報告中標註 `reviewMethod=web-source-comparison`；此狀態不是教師認證，也不是出版社背書。
+
+`content-reviewed` 在本專案表示「網路來源比對 QA 完成」；`teacher-reviewed` 不作為本專案必要門檻，但不得捏造該狀態。

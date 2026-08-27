@@ -421,3 +421,7 @@
 ## D-065 V2 replacement 的驗證與刪除界線（2026-08-27）
 
 ChatGPT V2 payload 可作為待核對輸入，但不得因 payload 存在就升級為 `content-reviewed`。本地 validator 發現數學／自然 interactive options 有重複字串；在逐題重寫且語意核對前不提交 replacement。2,705 筆 destructive candidates 一律保留原始資料並以 quarantine／報告追蹤，不直接刪除。
+
+## D-066 網路教材比對取代人工 reviewer（2026-08-27）
+
+因本專案無法取得教師或學科專家，M4 QA 改採可公開存取的官方課綱、教育機構教材與合法公開教學資料逐項比對。只有具 URL、頁碼／章節／官方代碼、查核日期，且答案／解析／選項與 KG leaf 一致的項目，才能標示 `content-reviewed`；其餘維持 `draft`／`pending-review`。`reviewMethod=web-source-comparison` 不代表教師認證或出版社背書。
