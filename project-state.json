@@ -5,7 +5,7 @@
   "status": "active",
   "currentMilestone": "M5",
   "currentMilestoneName": "Static Learning MVP and Deployment Verification",
-  "milestoneStatus": "implementation_complete_pending_publish",
+  "milestoneStatus": "completed",
   "updatedAt": "2026-08-27",
   "sourceOfTruth": "official-12-year-basic-education-curriculum-guidelines",
   "subjects": [
@@ -108,15 +108,16 @@
     "m3PublicEvidenceCoverage": "90-publisher-subject-volume-cells-97-public-source-bindings-passed",
     "m3PublicEvidenceValidator": "scripts/validate_m3_public_evidence.py",
     "m5PinnedContentIndex": "deployment-generated-index-v2-excludes-deprecated-and-pins-commit",
-    "m5BrowserQa": "local-browser-smoke-filter-search-lazy-load-ten-questions-passed"
+    "m5BrowserQa": "local-browser-smoke-filter-search-lazy-load-ten-questions-passed",
+    "m5RemoteDeployment": "github-pages-and-validate-data-success-33047828285-33047828275-fixed-commit-14fd8a81422b"
   },
   "nextMilestone": "M5",
-  "nextAction": "等待使用者授權提交／推送 M5 變更，然後以遠端 Pages 的固定 commit 重做 smoke test。",
+  "nextAction": "後續資料更新必須以新的固定 commit 重跑索引、資料驗證與公開頁面 smoke test。",
   "knownRisks": [
     "M3 的 90 個冊別格均有公開來源，但校方課程計畫屬 medium confidence 交叉證據；不得改稱出版社正式目次或出版社背書。",
     "章節來源只證明出版社章節結構；章節到 KG 的 medium-confidence 關係是本專案保守教學判斷，不是出版社或主管機關背書。",
     "國教院 115 學年度國中英語審定本清冊列出佳音、南一、康軒，而翰林官方書城另售 i英語；兩者不可混同為同一出版者事實。",
     "M4 的 1,031 份可教學 lesson／10,310 題均為公開來源比對後的 content-reviewed；這不是教師、出版社或主管機關背書。",
-    "M5 的固定 revision 索引與本機瀏覽器驗收已完成，但尚未獲授權提交／推送；遠端 Pages 仍是先前版本，不能當作本次變更的驗收證據。"
+    "M5 已由固定 commit 發佈並完成公開頁面驗收；後續發佈不可回退為 raw main 或範例 manifest。"
   ]
 }
