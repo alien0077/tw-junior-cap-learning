@@ -15,6 +15,8 @@ validated 12905 JSON files, 12885 IDs, 1032 KG nodes
 - question 狀態：1,210 `content-reviewed`、9,150 `draft`。
 - lesson/question 缺少 provenance：0 / 0。
 - 數學與自然互動步驟及 Schema 驗證通過。
+- 題目必要欄位（options、answer.value、answer.explanation、lessonId、provenance）缺漏：0 筆；`git diff --check` 無錯誤。
+- 有 3 題答案解析少於 10 字（`question-science-heat-7`、`question-math-equation-9`、`question-chinese-common-words-recognition-3`）；語意仍可讀，但列為人工內容 QA，不擅自擴寫。
 
 ## 尚不能由機器稽核證明
 
