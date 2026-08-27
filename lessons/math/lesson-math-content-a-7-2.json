@@ -34,49 +34,143 @@
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
     "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://mathvideo.hle.com.tw/1A/3-2/"
   ],
+  "authoringStandard": "full-lesson-v1",
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學 1 上公開影音教材",
+      "subject": "math",
+      "chapterLocator": "CH3 一元一次方程式，3-2 解一元一次方程式；認識方程式、等量公理與移項法則、回顧及自評分類",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1A/3-2/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "assessment-pattern"
+      ],
+      "outcome": "依公開頁的概念順序，將正文安排為先理解等號與解，再使用等量公理進行可驗證的轉換。",
+      "copyrightBoundary": "未儲存、轉錄、改寫或重製出版者影片、投影片、例題、題組、答案或逐字稿；本單元情境、數字與活動皆為自編。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "等號表示兩邊一樣多",
+        "body": "社團買三份相同材料，加上 14 元運費後共 68 元。若每份材料是 x 元，條件寫成 3x＋14＝68。等號不是叫你從左算到右，而是記錄兩邊代表同一筆金額；x 是唯一未知量且最高次方為 1，所以這是一元一次方程式。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "什麼叫做方程式的解",
+        "body": "方程式是含有未知數且帶等號的敘述；解是讓等號左右同時成立的數值。解題時把等式想成平衡的兩邊，任何一步都必須對兩邊做相同運算，才不會改變解的集合。最後一定把結果代回原式，並檢查未知數是否符合原情境的範圍。"
+      },
+      {
+        "id": "worked",
+        "phase": "worked-example",
+        "heading": "用等量公理一步一步保持平衡",
+        "body": "解 4x－7＝29 時，先在兩邊同加 7，得到 4x＝36；再在兩邊同除 4，得到 x＝9。每一步都是兩邊做相同運算，所以等號關係沒有改變。代回 4(9)－7＝29，可確認過程與答案都正確。"
+      },
+      {
+        "id": "guided",
+        "phase": "guided-practice",
+        "heading": "先找出阻擋未知數的項",
+        "body": "對 5x＋12＝47，先處理加上的 12：兩邊同減 12 得 5x＝35，再兩邊同除 5 得 x＝7。寫下「兩邊同減」和「兩邊同除」的理由，比只背移項變號可靠，因為它能處理不同結構的方程式。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "把倒推問題變成方程式",
+        "body": "義賣先付 90 元布置費，每張書籤收入 15 元，最後淨收入為 210 元。以 b 表示張數，15b－90＝210；兩邊同加 90、再同除 15，得 b＝20。代回後 300－90＝210，證明式子和情境沒有脫節。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "回顧等式與驗算",
+        "body": "回看本單元的例子，說明未知數代表什麼、每一步為何必須對等號兩邊做相同運算，以及代回原式如何排除算術錯誤。最後自己改一個數字重算，確認方法仍能成立，並把檢查步驟寫成同學可重做的提示。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「一元一次方程式的意義」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「一元一次方程式的意義」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「一元一次方程式的意義」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「一元一次方程式的意義」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+      }
+    ]
+  },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Original instructional content authored for this repository; validated by the repository's explicit math QA batch; not teacher-reviewed."
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-27",
   "interactive": {
-    "type": "guided-choice",
-    "goal": "用三步驟理解「A-7-2：一元一次方程式的意義」。",
+    "type": "algebra-expression-builder",
+    "goal": "辨認方程式、執行等量操作並代回驗證，讓每一步都保持等號兩邊平衡。",
+    "scenario": "三份相同材料加上 14 元運費共 68 元。以 x 代表每份材料的價格，依序建立、轉換並驗證方程式。",
+    "variables": [
+      {
+        "symbol": "x",
+        "meaning": "每份材料的價格（元）"
+      }
+    ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "哪一式正確表示題目的相等關係？",
         "options": [
-          "定義未知數並整理已知量",
-          "直接猜答案"
+          "3x＋14＝68",
+          "3x＋14",
+          "3＋x＝82",
+          "68x＝14"
         ],
         "answer": "A",
-        "feedback": "先清楚定義未知數。"
+        "feedback": "三份材料是 3x，固定運費是 14，合計才是 68；完整關係必須有等號。"
       },
       {
         "id": "step-2",
-        "prompt": "第二步如何保持等式？",
+        "prompt": "由 3x＋14＝68 要得到 3x＝54，應如何操作？",
         "options": [
-          "兩邊做相同運算",
-          "只改左邊"
+          "等號兩邊同時減 14",
+          "只把左邊的 14 劃掉",
+          "右邊隨意加 14",
+          "把 3 直接改成 1"
         ],
         "answer": "A",
-        "feedback": "等式兩邊必須做相同運算。"
+        "feedback": "兩邊同減 14 才保留等號關係，得到 3x＝54。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何確認？",
+        "prompt": "哪一項同時給出正確解與驗證？",
         "options": [
-          "代回原式驗算",
-          "省略檢查"
+          "x＝18，且 3(18)＋14＝68",
+          "x＝18，因為 3＋14＝18",
+          "x＝54，因為右邊是 54",
+          "x＝22，因為 68－14＝54"
         ],
         "answer": "A",
-        "feedback": "代回可確認解是否正確。"
+        "feedback": "3x＝54 後兩邊同除 3 得 x＝18；代回原式左右都等於 68。"
       }
     ]
-  }
+  },
+  "lessonScope": "learning-content"
 }

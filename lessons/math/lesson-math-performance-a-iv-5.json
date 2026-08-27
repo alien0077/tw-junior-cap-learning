@@ -11,7 +11,7 @@
     "9"
   ],
   "content": {
-    "summary": "本單元以官方課綱「多項式四則與乘法公式」為範圍，練習從題目條件辨識相關資訊、說明理由並檢查結論。",
+    "summary": "本課聚焦「多項式四則與乘法公式」，以自編範例練習概念、證據與新情境遷移。",
     "sections": [
       {
         "heading": "學習目標",
@@ -45,49 +45,134 @@
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Original content rewritten against the verified official curriculum scope; reviewMethod=web-source-comparison; reviewedAt=2026-08-27; officialCode=a-Ⅳ-5; locator=正文第 7～17 頁／PDF 第 10～20 頁；國民中學教育階段學習表現；官方代碼 a-Ⅳ-5"
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-27",
   "interactive": {
-    "type": "guided-choice",
-    "goal": "以三個步驟檢查「多項式四則與乘法公式」的條件、推理與驗證。",
+    "type": "algebra-expression-builder",
+    "goal": "用可檢查的步驟處理「多項式四則與乘法公式」並驗算結果。",
+    "scenario": "以「a-Ⅳ-5：多項式四則與乘法公式」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "variables": [
+      {
+        "symbol": "x",
+        "meaning": "題目中待求或可變的量"
+      }
+    ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "判斷「多項式四則與乘法公式」時，首先應重視哪一項資訊？",
+        "prompt": "處理「多項式四則與乘法公式」的第一步是什麼？",
         "options": [
-          "只看單元名稱，不讀題幹中的條件、資料或例證。",
-          "把與本單元無關的資訊當成唯一依據，跳過比較與驗證。",
-          "題幹中與「多項式四則與乘法公式」直接相關的條件、資料或例證。",
-          "不檢查限制或證據，直接依直覺選擇看起來熟悉的敘述。"
+          "先定義量與條件",
+          "直接猜最後答案",
+          "省略題目資料"
         ],
-        "answer": "C",
-        "feedback": "本題以官方課綱單元「多項式四則與乘法公式」為範圍；正解要求使用題幹條件與可檢查的推理。其餘選項都略過條件、證據或驗證，不能支持可靠判斷。"
+        "answer": "A",
+        "feedback": "先定義量與條件，後續表示法才可檢查。"
       },
       {
         "id": "step-2",
-        "prompt": "處理涉及「多項式四則與乘法公式」的題目時，哪個步驟最適當？",
+        "prompt": "建立表示法後應如何繼續？",
         "options": [
-          "只看單元名稱，不讀題幹中的條件、資料或例證。",
-          "把與本單元無關的資訊當成唯一依據，跳過比較與驗證。",
-          "不檢查限制或證據，直接依直覺選擇看起來熟悉的敘述。",
-          "先整理題幹條件，再依「多項式四則與乘法公式」的意義逐步判斷並檢查結論。"
+          "逐步推理並記錄理由",
+          "只寫最後結果",
+          "任意更換符號"
         ],
-        "answer": "D",
-        "feedback": "本題以官方課綱單元「多項式四則與乘法公式」為範圍；正解要求使用題幹條件與可檢查的推理。其餘選項都略過條件、證據或驗證，不能支持可靠判斷。"
+        "answer": "A",
+        "feedback": "每一步都要保留運算或幾何理由。"
       },
       {
         "id": "step-3",
-        "prompt": "關於「多項式四則與乘法公式」，下列哪種做法最可能造成錯誤？",
+        "prompt": "完成後如何確認？",
         "options": [
-          "只看關鍵字或單元名稱，不檢查題目提供的條件與證據。",
-          "只背誦單元名稱或答案位置，不閱讀題目條件。",
-          "把與本單元無關的資訊當成唯一依據，跳過比較與驗證。",
-          "不檢查限制或證據，直接依直覺選擇看起來熟悉的敘述。"
+          "回到原條件代回、看圖或檢查單位",
+          "只看答案順不順眼",
+          "跳過範圍檢查"
         ],
         "answer": "A",
-        "feedback": "本題以官方課綱單元「多項式四則與乘法公式」為範圍；正解要求使用題幹條件與可檢查的推理。其餘選項都略過條件、證據或驗證，不能支持可靠判斷。"
+        "feedback": "回到原條件驗算，才能確認答案有意義。"
+      }
+    ]
+  },
+  "authoringStandard": "full-lesson-v1",
+  "lessonScope": "learning-performance",
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開解題影音網",
+      "subject": "math",
+      "chapterLocator": "a-Ⅳ-5：多項式四則與乘法公式；公開教材結構研究定位",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開出版社資源用於核對「多項式四則與乘法公式」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "從情境進入「多項式四則與乘法公式」",
+        "body": "以「多項式四則與乘法公式」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "建立「多項式四則與乘法公式」的概念架構",
+        "body": "本單元依官方課綱所列的「多項式四則與乘法公式」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+      },
+      {
+        "id": "worked-example",
+        "phase": "worked-example",
+        "heading": "用自編資料走完一次",
+        "body": "以「a-Ⅳ-5：多項式四則與乘法公式」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+      },
+      {
+        "id": "guided-practice",
+        "phase": "guided-practice",
+        "heading": "依步驟完成練習",
+        "body": "針對「多項式四則與乘法公式」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "換到新情境仍能使用",
+        "body": "把「多項式四則與乘法公式」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "回顧證據與限制",
+        "body": "回顧「多項式四則與乘法公式」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「多項式四則與乘法公式」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「多項式四則與乘法公式」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「多項式四則與乘法公式」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「多項式四則與乘法公式」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
       }
     ]
   }

@@ -11,7 +11,7 @@
     "9"
   ],
   "content": {
-    "summary": "本單元以官方課綱「有機化合物的性質、製備及反應」為範圍，練習從題目條件辨識相關資訊、說明理由並檢查結論。",
+    "summary": "本課聚焦「有機化合物的性質、製備及反應」，以自編範例練習概念、證據與新情境遷移。",
     "sections": [
       {
         "heading": "學習目標",
@@ -45,49 +45,134 @@
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Original content rewritten against the verified official curriculum scope; reviewMethod=web-source-comparison; reviewedAt=2026-08-27; officialCode=Jf; locator=正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 J；官方代碼 Jf"
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "content-reviewed",
   "updatedAt": "2026-08-27",
   "interactive": {
-    "type": "guided-choice",
-    "goal": "以三個步驟檢查「有機化合物的性質、製備及反應」的條件、推理與驗證。",
+    "type": "scientific-investigation",
+    "goal": "以安全探究步驟理解「有機化合物的性質、製備及反應」並用證據修正解釋。",
+    "scenario": "針對「Jf：有機化合物的性質、製備及反應」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
+    "variables": [
+      {
+        "symbol": "x",
+        "meaning": "選定的觀察條件"
+      }
+    ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "判斷「有機化合物的性質、製備及反應」時，首先應重視哪一項資訊？",
+        "prompt": "先做哪一件事？",
         "options": [
-          "只看單元名稱，不讀題幹中的條件、資料或例證。",
-          "把與本單元無關的資訊當成唯一依據，跳過比較與驗證。",
-          "題幹中與「有機化合物的性質、製備及反應」直接相關的條件、資料或例證。",
-          "不檢查限制或證據，直接依直覺選擇看起來熟悉的敘述。"
+          "提出可觀察問題並列出變因",
+          "先寫預期答案",
+          "省略安全檢查"
         ],
-        "answer": "C",
-        "feedback": "本題以官方課綱單元「有機化合物的性質、製備及反應」為範圍；正解要求使用題幹條件與可檢查的推理。其餘選項都略過條件、證據或驗證，不能支持可靠判斷。"
+        "answer": "A",
+        "feedback": "問題、變因與安全限制是探究起點。"
       },
       {
         "id": "step-2",
-        "prompt": "處理涉及「有機化合物的性質、製備及反應」的題目時，哪個步驟最適當？",
+        "prompt": "如何取得可信資料？",
         "options": [
-          "只看單元名稱，不讀題幹中的條件、資料或例證。",
-          "把與本單元無關的資訊當成唯一依據，跳過比較與驗證。",
-          "不檢查限制或證據，直接依直覺選擇看起來熟悉的敘述。",
-          "先整理題幹條件，再依「有機化合物的性質、製備及反應」的意義逐步判斷並檢查結論。"
+          "固定條件、重複量測並記錄單位",
+          "只量一次且不記錄",
+          "任意改變多個因素"
         ],
-        "answer": "D",
-        "feedback": "本題以官方課綱單元「有機化合物的性質、製備及反應」為範圍；正解要求使用題幹條件與可檢查的推理。其餘選項都略過條件、證據或驗證，不能支持可靠判斷。"
+        "answer": "A",
+        "feedback": "固定與重複讓資料能比較。"
       },
       {
         "id": "step-3",
-        "prompt": "關於「有機化合物的性質、製備及反應」，下列哪種做法最可能造成錯誤？",
+        "prompt": "如何形成結論？",
         "options": [
-          "只看關鍵字或單元名稱，不檢查題目提供的條件與證據。",
-          "只背誦單元名稱或答案位置，不閱讀題目條件。",
-          "把與本單元無關的資訊當成唯一依據，跳過比較與驗證。",
-          "不檢查限制或證據，直接依直覺選擇看起來熟悉的敘述。"
+          "先描述證據，再提出有條件的解釋",
+          "把猜測當成結果",
+          "刪掉不符合預期的資料"
         ],
         "answer": "A",
-        "feedback": "本題以官方課綱單元「有機化合物的性質、製備及反應」為範圍；正解要求使用題幹條件與可檢查的推理。其餘選項都略過條件、證據或驗證，不能支持可靠判斷。"
+        "feedback": "證據與限制都要保留，才能修正模型。"
+      }
+    ]
+  },
+  "authoringStandard": "full-lesson-v1",
+  "lessonScope": "topic",
+  "publisherResearch": [
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中自然公開影音",
+      "subject": "science",
+      "chapterLocator": "Jf：有機化合物的性質、製備及反應；公開教材結構研究定位",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開出版社資源用於核對「有機化合物的性質、製備及反應」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "從情境進入「有機化合物的性質、製備及反應」",
+        "body": "先從「有機化合物的性質、製備及反應」相關的生活現象提出一個可觀察問題，寫下已知條件、可能變因與安全限制；把看到的事實和自己的解釋分開，才有可檢查的探究起點。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "建立「有機化合物的性質、製備及反應」的概念架構",
+        "body": "本單元依官方課綱所列的「有機化合物的性質、製備及反應」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+      },
+      {
+        "id": "worked-example",
+        "phase": "worked-example",
+        "heading": "用自編資料走完一次",
+        "body": "以「Jf：有機化合物的性質、製備及反應」為主題，製作只含符號與數量的自編粒子卡：O₂、H₂O、CO₂ 與 Fe。先依卡片判斷是元素或化合物、原子或分子，再用「組成粒子—排列方式—可觀察性質」三欄表說明判斷依據；答案以卡片上的資訊為限。"
+      },
+      {
+        "id": "guided-practice",
+        "phase": "guided-practice",
+        "heading": "依步驟完成練習",
+        "body": "針對「有機化合物的性質、製備及反應」先寫可觀察問題，再列自變因、應變因與控制變因；依序記錄預測、操作、數據與限制，重複量測後才下條件式結論。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "換到新情境仍能使用",
+        "body": "把「有機化合物的性質、製備及反應」的探究方法換到家庭、校園或環境資料，檢查來源、尺度、樣本與不確定性；若證據不足，保留條件式結論並提出下一個可行測試。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "回顧證據與限制",
+        "body": "回顧「有機化合物的性質、製備及反應」的問題：哪個觀察最關鍵、哪個變因仍未控制、資料能支持到什麼程度？用一句話寫出結論與限制，再提出一項安全的改進。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「有機化合物的性質、製備及反應」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「有機化合物的性質、製備及反應」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「有機化合物的性質、製備及反應」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「有機化合物的性質、製備及反應」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
       }
     ]
   }

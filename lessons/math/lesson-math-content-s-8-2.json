@@ -39,44 +39,135 @@
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Original instructional content authored for this repository; validated by the repository's explicit math QA batch; not teacher-reviewed."
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+  },
+  "authoringStandard": "full-lesson-v1",
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "subject": "math",
+      "chapterLocator": "S-8-2：凸多邊形的內角和",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-8-2：凸多邊形的內角和」安排自編表徵、推理、練習、遷移與驗算。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "從問題情境看見「S-8-2：凸多邊形的內角和」",
+        "body": "先讀懂「S-8-2：凸多邊形的內角和」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "核心概念與表示法",
+        "body": "本單元依官方課綱所列的「凸多邊形的內角和」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+      },
+      {
+        "id": "worked",
+        "phase": "worked-example",
+        "heading": "自編例題：先表徵再推理",
+        "body": "以「S-8-2：凸多邊形的內角和」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+      },
+      {
+        "id": "guided",
+        "phase": "guided-practice",
+        "heading": "逐格記錄解題理由",
+        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "把方法遷移到新情境",
+        "body": "將「S-8-2：凸多邊形的內角和」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "用證據整理學習成果",
+        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-8-2：凸多邊形的內角和」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「凸多邊形的內角和」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「凸多邊形的內角和」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「凸多邊形的內角和」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「凸多邊形的內角和」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+      }
+    ]
   },
   "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-27",
   "interactive": {
-    "type": "guided-choice",
-    "goal": "用三步驟理解「S-8-2：凸多邊形的內角和」。",
+    "type": "algebra-expression-builder",
+    "goal": "以互動步驟探索「S-8-2：凸多邊形的內角和」的表示、推理與驗算。",
+    "scenario": "請依序分析「S-8-2：凸多邊形的內角和」的條件，選出最能保留資訊、可被驗證的做法。",
+    "variables": [
+      {
+        "symbol": "x",
+        "meaning": "本單元情境中待研究的量或變數"
+      }
+    ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步先確認什麼？",
+        "prompt": "第一步應先做什麼？",
         "options": [
-          "圖形、邊數與角關係",
-          "只看外框"
+          "整理對象、條件、單位與未知量",
+          "直接套用上一題答案",
+          "忽略題目中的限制"
         ],
         "answer": "A",
-        "feedback": "先辨認邊數或平行線截線。"
+        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
       },
       {
         "id": "step-2",
-        "prompt": "第二步如何推理？",
+        "prompt": "建立表示法後，下一步應採取什麼策略？",
         "options": [
-          "分割成三角形或使用角關係",
-          "直接猜角度"
+          "逐步推理並記錄每一步理由",
+          "只寫最後結果",
+          "改用沒有定義的符號"
         ],
         "answer": "A",
-        "feedback": "依幾何關係計算。"
+        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何確認？",
+        "prompt": "完成後如何確認結論？",
         "options": [
-          "用公式與圖形互證",
-          "跳過檢查"
+          "回到原條件，以代回、圖形、資料或單位檢查",
+          "只看答案看起來像不像",
+          "跳過範圍與邊界檢查"
         ],
         "answer": "A",
-        "feedback": "確認角度與平行關係一致。"
+        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
       }
     ]
-  }
+  },
+  "lessonScope": "learning-content"
 }

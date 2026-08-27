@@ -9,19 +9,19 @@
     "7"
   ],
   "content": {
-    "summary": "理解變數、常數、係數與代數式的表示方式，能將文字情境轉成代數式並代入計算。",
+    "summary": "從可變的生活量建立代數式，進而求式值、辨認同類項並化簡；完整正文、活動與摘要見 teaching 欄位。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "能辨認代數式中的變數、常數與係數，並依運算順序完成代入。"
+        "body": "能用符號記錄情境中的可變量與固定量，求式值、化簡一次式，並檢查式子是否仍保留原情境的意義。"
       },
       {
-        "heading": "學習流程",
-        "body": "先用符號表示未知量，再整理項與係數，最後代入數值並檢查單位。"
+        "heading": "閱讀順序",
+        "body": "本單元先呈現完整教學正文與互動活動，最後才整理摘要與離堂檢核。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "把係數與指數混淆，或代入負數時漏寫括號。"
+        "heading": "核心提醒",
+        "body": "只有字母部分相同、次方也相同的項才能合併；代入負數時務必以括號保留原來的運算結構。"
       }
     ]
   },
@@ -34,49 +34,165 @@
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
     "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://mathvideo.hle.com.tw/1A/3-1/",
+    "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E5%BC%95%E8%B5%B7%E5%8B%95%E6%A9%9F&l2=7%E4%B8%8A"
   ],
+  "authoringStandard": "full-lesson-v1",
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學 1 上公開影音教材",
+      "subject": "math",
+      "chapterLocator": "CH3 一元一次方程式，3-1 式子的運算；公開頁的學習前哨站、以符號代表數、式子的值、式子的化簡、回顧與自評分類",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1A/3-1/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "assessment-pattern"
+      ],
+      "outcome": "以公開頁可見的概念由符號表徵、求式值到化簡的順序，交叉檢查本單元是否具有由具體情境走向符號與驗證的完整學習歷程。",
+      "copyrightBoundary": "未儲存、轉錄、改寫或重製該頁影片、投影片、例題、題組、答案或逐字稿；本單元的情境、數字、式子、活動與回饋均為重新自編。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學七上公開影音教材",
+      "subject": "math",
+      "chapterLocator": "七上第 3 章一元一次方程式；3-1 代數式的化簡之公開章節定位",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E5%BC%95%E8%B5%B7%E5%8B%95%E6%A9%9F&l2=7%E4%B8%8A",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "concept-progression",
+        "activity-pattern"
+      ],
+      "outcome": "以另一出版社公開七上章節結構交叉確認代數式化簡在一元一次方程式前的教學位置，並要求本單元先建立符號意義，再處理運算與遷移。",
+      "copyrightBoundary": "未擷取受著作權保護的影音內容、圖像、習題或解答；只登錄公開章節定位及其對本專案自編教學順序的研究結論。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "先把「會變」和「不會變」分開",
+        "body": "班級要替園遊會訂購飲料：每瓶成本 18 元，另外有一次性的運送費 40 元。若今天訂購的瓶數還沒決定，只能說「訂 b 瓶」，就把 b 當作可變的量。總費用不能寫成一串還沒發生的算式，而要寫成 18b＋40。這個式子保留了兩個重要訊息：瓶數改變時，18b 會跟著改變；運送費 40 不因瓶數而改變。代數符號的工作，就是把這種關係清楚且可重複地記下來。"
+      },
+      {
+        "id": "explain-symbols",
+        "phase": "explain",
+        "heading": "讀懂一個代數式的角色分工",
+        "body": "代數式把情境中的量分成可變量與固定量：字母代表可變量，係數表示每一單位的量，常數表示不隨字母改變的量。讀式子時先說出每個符號的單位，再依括號、乘除、加減的結構代入；只有字母與次方都相同的項才可合併。每一步都用代回或單位檢查，確認式子仍在描述原問題。"
+      },
+      {
+        "id": "worked-value",
+        "phase": "worked-example",
+        "heading": "把數值代入：先保留原來的結構",
+        "body": "假設最後訂了 6 瓶，就把 b 的位置完整換成 6：18b＋40＝18(6)＋40＝108＋40＝148。括號提醒我們，6 是整個 b 的替身，而不是只和 18 或 40 任意結合。再看 3p－2q，若 p＝－2、q＝5，應寫成 3(－2)－2(5)，再依序算出－6－10＝－16。最常見的錯誤是把負數直接塞進去而省略括號，讓減號和負號混在一起；每次代入前先圈出變數位置，能使運算結構保持可檢查。"
+      },
+      {
+        "id": "worked-simplify",
+        "phase": "worked-example",
+        "heading": "化簡不是把字母消掉，而是合併同類的量",
+        "body": "園遊會又多出兩筆和瓶數有關的支出：原本的飲料費是 18b，另有每瓶標籤費 2b，固定運送費仍是 40。18b＋2b＋40 可以把前兩項合成 20b＋40，因為兩項都表示「每瓶的某種費用」，字母與次方完全相同，才是同類項。相對地，20b 與 20、或 3b 與 3b² 都不是同類項，不能相加成一個更短的項。化簡的目標是讓同一個量只被清楚地計一次，而不是把看起來相像的符號硬湊在一起。"
+      },
+      {
+        "id": "guided-practice",
+        "phase": "guided-practice",
+        "heading": "用運算律整理式子，並說出每一步的理由",
+        "body": "試著整理 4x＋7＋3x－5。先把同類項放在一起：4x＋3x＋7－5；這一步只改變加法項的排列，沒有改變總和。接著合併變數項與常數項，得到 7x＋2。若式子是 2(x＋3)＋x，括號前的 2 要分配給每一項，得到 2x＋6＋x，再合併成 3x＋6。練習時不要只寫最後答案：請在每一行旁邊標示「重新排列」、「分配」或「合併同類項」。能說明理由，才表示你不是靠外觀猜規則。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "回到新情境，檢查式子是否真的在說同一件事",
+        "body": "圖書館志工要製作借書提醒卡：印刷開版費 120 元，每張卡再加 3 元。用 c 代表卡片張數，總成本可寫成 120＋3c。若準備 25 張，代入後是 120＋3(25)＝195；若有人寫成 123c，雖然也有 120 和 3，卻把固定費與每張費用錯誤地相乘，代入 c＝0 時就會得到 0 元，和仍需支付開版費的情境矛盾。最後用兩種瓶數或張數代回檢查，是辨認代數式是否忠實表達生活問題的可靠方法。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "回看自己的符號是否說得清楚",
+        "body": "寫完代數式後，逐一問自己三件事：字母代表的量和單位有沒有說清楚？每一個數是固定量、每單位的量，還是運算所得？代入一個合理數值後，結果是否符合原情境？若答案不合理，不要先懷疑計算；先回頭檢查符號是否把固定費、單位費和數量放在正確的位置。這個習慣會在後面的一元一次方程式、函數與資料分析中持續使用。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「代數符號」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「代數符號」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「代數符號」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「代數符號」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+      }
+    ]
+  },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Original instructional content authored for this repository; validated by the repository's explicit math QA batch; not teacher-reviewed."
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-27",
   "interactive": {
-    "type": "guided-choice",
-    "goal": "用步驟檢查「A-7-1：代數符號」的理解。",
+    "type": "algebra-expression-builder",
+    "goal": "將情境轉成代數式、求式值並化簡，檢查每一步是否保留原情境的量意義。",
+    "scenario": "園遊會攤位每張餐券售價 20 元，另收一次性設備費 60 元。以 x 代表餐券張數，建立總收入扣除設備費前的收款式，並完成後續計算。",
+    "variables": [
+      {
+        "symbol": "x",
+        "meaning": "售出的餐券張數"
+      }
+    ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先找出題目的核心概念？",
+        "prompt": "總收款應如何以 x 表示？",
         "options": [
-          "核心概念",
-          "無關細節"
+          "20x＋60",
+          "20＋x＋60",
+          "x＋80",
+          "20(x＋60)"
         ],
         "answer": "A",
-        "feedback": "先定位課綱關鍵詞。"
+        "feedback": "20x 表示每張 20 元、共 x 張的可變金額；60 是一次性的固定費。"
       },
       {
         "id": "step-2",
-        "prompt": "接著應採取哪種方法？",
+        "prompt": "若售出 x＝3 張，20x＋60 的值是多少？",
         "options": [
-          "依概念整理證據",
-          "只猜答案"
+          "120",
+          "83",
+          "180",
+          "23"
         ],
         "answer": "A",
-        "feedback": "以證據或計算支持判斷。"
+        "feedback": "代入後為 20(3)＋60＝60＋60＝120；括號保留了 x 被 3 整體替代的結構。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何檢查？",
+        "prompt": "整理 4x＋7＋3x－5，哪一個結果正確？",
         "options": [
-          "套用新情境驗證",
-          "跳過檢查"
+          "7x＋2",
+          "7x＋12",
+          "12x＋2",
+          "7x²＋2"
         ],
         "answer": "A",
-        "feedback": "用新情境確認能遷移應用。"
+        "feedback": "4x 和 3x 是同類項，7 和－5 也是同類項；分別合併後得到 7x＋2。"
       }
     ]
-  }
+  },
+  "lessonScope": "learning-content"
 }

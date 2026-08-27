@@ -459,3 +459,16 @@ ChatGPT V2 payload 可作為待核對輸入，但不得因 payload 存在就升�
 - 決策：部署流程先以該次 Git commit 產生 `site/data-index.json`，前端只讀這份索引列出可用教材；點選教材時才載入索引中同一 revision 的 lesson 與 question JSON。不得以 `raw/main` 或少量範例 manifest 當成完整資料來源。
 - 資料界線：索引排除 `deprecated` lesson／question，並要求每個可顯示 lesson 有至少 10 題；教材內容沒有 hardcode 進 UI。
 - 驗證：`scripts/validate_site_index.py` 通過 1,031 lessons、10,310 question paths；本機瀏覽器 smoke test 驗證五科篩選、搜尋與數學 `A-7-1` 的教材／10 題載入，主控台沒有 error。
+
+## D-072：出版社公開教材研究與完整教學本文的重新驗收（2026-08-27）
+
+- 衝突：`docs/CURRENT_STATE.md` 將 M4 標為完成，但現有 lesson 的 `content.sections` 多為提綱式欄位；這不符合「先讀取至少一個出版社版本的可合法閱覽教材，再產出完整教學正文，最後才列摘要」的驗收要求。
+- 決策：M4 的既有 `content-reviewed` 僅保留其歷史「官方課綱／結構 QA」意義，不得作為完整教學本文、出版社研究或可發布課程內容已完成的證據。後續以逐單元的 `publisherResearch`、完整自行撰寫教學正文、摘要、原創活動與題目重新驗收。
+- 來源界線：只研究出版社公開索引、公開試閱、公開影音頁或其他合法公開教材；登入、教師驗證、下載限制或僅供校內教學之內容不得繞過。研究紀錄只存 URL、版本／單元定位、可見內容範圍、研究結論與著作權界線，不存課文、投影片、題組、答案、截圖或可還原的改寫。
+- 狀態界線：先建立 `docs/PUBLISHER_RESEARCH_BASELINE_2026-08-27.md` 的來源基線；任何單元在沒有至少一筆與其版本／章節可定位的出版社研究來源前，不得因既有標籤而聲稱「出版社內容已參考」。
+
+## D-073：全部可用 lesson 皆提供完整正文並保留課綱層級（2026-08-27）
+
+- 決策：官方 `learning-content` 583 筆與 4 筆補充原創單元，以及 208 筆 `learning-performance`、179 筆 `topic`、57 筆 `theme`，合計 1,031 筆可用 lesson 全部升級為 `full-lesson-v1`；5 個 `domain` 仍 deprecated。每頁以 `lessonScope` 保留原課綱層級，不把分類／能力頁誤稱為出版社章節。
+- 品質要求：每筆完整 lesson 的 worked example、引導練習、摘要與離堂檢核都必須指向該單元概念；自然與社會範例依概念分流，語文範例使用原創文本／句子，數學保留可計算步驟。`scripts/enrich_full_lessons.py` 可重現此修正。
+- 驗證：`validate_data.py`、`validate_site_index.py`、`node --check site/app.js` 與 `git diff --check` 均通過；範圍、計數與限制另載於 `docs/FULL_LESSON_SCOPE_AUDIT_2026-08-27.md`。

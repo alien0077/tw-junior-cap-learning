@@ -36,47 +36,142 @@
     "https://www.naer.edu.tw/",
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
   ],
+  "authoringStandard": "full-lesson-v1",
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "國中數學 1B 第1章第1節（公開教學影片頁）",
+      "subject": "math",
+      "chapterLocator": "二元一次聯立方程式／1-1 二元一次方程式",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1B/1-1/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開頁面依序呈現二元一次式、化簡、方程式與自我評量；本課因此先建立變數與係數語言，再說明解是同時滿足兩式的有序數對。",
+      "copyrightBoundary": "只取公開頁面的章節與活動節點作設計參考；所有解釋、例題數字、互動選項與回饋均為本專案自編。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "兩種數量要一起描述",
+        "body": "文具店把原子筆和筆記本綁成組合包；只知道總件數時，可能有很多搭配。再加入總價條件，兩個未知數就必須同時符合兩個關係。這正是聯立方程式的用途：把兩種量放在同一個模型中一起判斷。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "二元一次方程式與解",
+        "body": "二元一次聯立方程式描述兩個未知量同時滿足的兩條線性關係。一組解不是各自解一條式子，而是同時讓兩式成立的有序數對。先為每個字母定義量與單位，再用代入或表格找出共同條件，最後把數對分別代回兩式檢核。"
+      },
+      {
+        "id": "worked",
+        "phase": "worked-example",
+        "heading": "例題：總數與總價",
+        "body": "設一支筆 x 元、一本筆記本 y 元。買 2 支筆和 1 本筆記本共 50 元，買 1 支筆和 2 本筆記本共 55 元，可列 2x＋y＝50、x＋2y＝55。先觀察兩式的係數與情境意義，再找同時滿足兩式的數對；代入（15，20）可得 50 與 55，故它是解。"
+      },
+      {
+        "id": "guided",
+        "phase": "guided-practice",
+        "heading": "從條件建立兩條方程式",
+        "body": "練習先寫變數表：x 代表第一種量，y 代表第二種量，並標註單位。逐句讀題，把『總數』、『總價』、『相差』等關係各寫成一式；不要把兩個條件硬塞進同一條式。列好後檢查每一項是否有相同單位，並測試一組候選數對是否同時成立。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "用表格與圖像理解解的意義",
+        "body": "可以列出符合第一式的幾組（x，y），再從中找也符合第二式的那一組；也可把兩式視為兩條直線，交點的座標就是聯立解。圖像幫助看見『同時成立』，代數代回則提供精確驗證。若沒有交點或有無限多交點，還要回頭解釋情境是否合理。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "說出解而不是只寫數字",
+        "body": "完成後請完整說明：x、y 各代表什麼、兩條式如何來自題目、解以何種順序書寫、代回兩式得到什麼，以及數值是否符合正數或整數限制。這種說明能避免把一式的解誤當成聯立解，也為下一課的代入與消去方法做好準備。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「二元一次聯立方程式的意義」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「二元一次聯立方程式的意義」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「二元一次聯立方程式的意義」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「二元一次聯立方程式的意義」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+      }
+    ]
+  },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Original instructional content authored for this repository; validated by the repository's explicit math QA batch; not teacher-reviewed."
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-27",
   "interactive": {
-    "type": "guided-choice",
-    "goal": "用三步驟應用「A-7-4：二元一次聯立方程式的意義」。",
+    "type": "algebra-expression-builder",
+    "goal": "建立二元一次聯立方程式，判斷一組數是否同時滿足兩式。",
+    "scenario": "文具組中 2 支筆與 1 本筆記本共 50 元，1 支筆與 2 本筆記本共 55 元。",
+    "variables": [
+      {
+        "symbol": "x",
+        "meaning": "一支筆的價格（元）"
+      },
+      {
+        "symbol": "y",
+        "meaning": "一本筆記本的價格（元）"
+      }
+    ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步要先整理什麼？",
+        "prompt": "先選出正確的兩條方程式",
         "options": [
-          "兩個未知數與兩個條件",
-          "只看一個數字"
+          "2x＋y＝50 且 x＋2y＝55",
+          "2x＋2y＝50 且 x＋y＝55",
+          "x＋y＝50 且 x－y＝55"
         ],
         "answer": "A",
-        "feedback": "先定義未知數並整理條件。"
+        "feedback": "每個購買條件各形成一條式，係數對應購買數量。"
       },
       {
         "id": "step-2",
-        "prompt": "第二步可採用哪種方法？",
+        "prompt": "哪一組數對可同時滿足兩式？",
         "options": [
-          "代入法或消去法",
-          "直接猜答案"
+          "（15，20）",
+          "（20，15）",
+          "（10，30）"
         ],
         "answer": "A",
-        "feedback": "選擇可消去一個未知數的方法。"
+        "feedback": "代入後 2×15＋20＝50，15＋2×20＝55。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何確認？",
+        "prompt": "驗證聯立解時應檢查什麼？",
         "options": [
-          "代回兩個原式驗算",
-          "只檢查一式"
+          "依序代回兩個原式且保留 x、y 順序",
+          "只代回第一式",
+          "只看兩數相加"
         ],
         "answer": "A",
-        "feedback": "兩式都成立才是聯立解。"
+        "feedback": "聯立解必須讓每一條原式都成立，且有序數對順序不能交換。"
       }
     ]
-  }
+  },
+  "lessonScope": "learning-content"
 }

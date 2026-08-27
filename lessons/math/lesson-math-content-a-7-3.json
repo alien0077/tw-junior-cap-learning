@@ -34,49 +34,141 @@
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
     "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://mathvideo.hle.com.tw/1A/3-3/"
   ],
+  "authoringStandard": "full-lesson-v1",
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "國中數學 1A 第3章第3節（公開教學影片頁）",
+      "subject": "math",
+      "chapterLocator": "一元一次方程式／3-3 應用問題",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1A/3-3/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "採用先讀情境、定義未知數、列式、解式、驗算與回應題意的教學順序；公開頁面也提供重點回顧、自我評量與自我挑戰等節點，作為練習層次設計參考。",
+      "copyrightBoundary": "僅記錄公開頁面的章節定位與教學結構；正文、例題數字、提示與回饋均重新創作，不重製出版社文字、圖片、題目或答案。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "從故事找出未知量",
+        "body": "小安買兩本同價筆記本並付出一張鈔票，已知找回的金額，卻不知道每本價格。先不要急著算；把『不知道但要找的量』命名為 x，再把每個已知數字和單位寫在旁邊，題目才會從一段話變成可操作的關係。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "列式要保留等量關係",
+        "body": "解一元一次方程式可依固定順序進行：先用加減消去常數，再用乘除消去未知數的係數；若有括號先使用分配律，若有分數先處理共同分母。移項只是等量公理的簡寫，不能省略理由；解出後代回原式，才能確認應用問題的單位與意義。"
+      },
+      {
+        "id": "worked",
+        "phase": "worked-example",
+        "heading": "例題：票價與找零",
+        "body": "兩張相同票券加上 30 元手續費共 190 元。令單張票價為 x，得到 2x＋30＝190。兩邊同減 30 得 2x＝160，再同除以 2 得 x＝80。最後把 80 代回：2×80＋30＝190，且票價為正、符合情境，所以答案是每張 80 元。"
+      },
+      {
+        "id": "guided",
+        "phase": "guided-practice",
+        "heading": "把文字逐句翻成算式",
+        "body": "練習時先圈出『共、剩下、比……多、原來』等關係詞，再決定等號兩側。若出現『剩下』，可用原有量減去用掉量；若出現『多幾個』，要判斷是加在數量還是價格。列式後先估計答案範圍，再用等量公理解題，能及早發現正負號或單位錯誤。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "答案必須回到問題語境",
+        "body": "解出 x 只是中途結果。把數值代回原方程式檢查左右是否相等，再檢查單位、正負與整數限制；若題目問總價，就不能只回答單價。當兩個候選值都能通過算式，還要用『不能是負數』或『必須為整數』等情境條件排除不合理解。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "整理一套可重複的流程",
+        "body": "完成一題後，用六句話自我說明：未知數是什麼、等號兩邊代表什麼、方程式怎麼列、每一步為何保持等量、代回結果如何、最後答案帶什麼單位。能說清楚這六點，就不會把解方程式誤當成只移數字，也能把方法遷移到折扣、年齡、距離與工作量問題。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「一元一次方程式的解法與應用」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「一元一次方程式的解法與應用」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「一元一次方程式的解法與應用」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「一元一次方程式的解法與應用」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+      }
+    ]
+  },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Original instructional content authored for this repository; validated by the repository's explicit math QA batch; not teacher-reviewed."
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-27",
   "interactive": {
-    "type": "guided-choice",
-    "goal": "用三步驟理解「A-7-3：一元一次方程式的解法與應用」。",
+    "type": "algebra-expression-builder",
+    "goal": "把生活情境轉成一元一次方程式，逐步解題並驗算。",
+    "scenario": "兩張相同票券加 30 元手續費共 190 元。請建立方程式並找出票價。",
+    "variables": [
+      {
+        "symbol": "x",
+        "meaning": "一張票券的價格（元）"
+      }
+    ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "先選出符合情境的方程式",
         "options": [
-          "定義未知數並整理已知量",
-          "直接猜答案"
+          "2x＋30＝190",
+          "2＋30x＝190",
+          "2x－30＝190"
         ],
         "answer": "A",
-        "feedback": "先清楚定義未知數。"
+        "feedback": "兩張票是 2x，手續費加 30，總額是 190。"
       },
       {
         "id": "step-2",
-        "prompt": "第二步如何保持等式？",
+        "prompt": "要先消去固定費 30，應做哪一步？",
         "options": [
-          "兩邊做相同運算",
-          "只改左邊"
+          "兩邊同減 30",
+          "只把 30 從左邊刪掉",
+          "兩邊同加 30"
         ],
         "answer": "A",
-        "feedback": "等式兩邊必須做相同運算。"
+        "feedback": "等量公理要求兩邊同減 30，得到 2x＝160。"
       },
       {
         "id": "step-3",
-        "prompt": "最後如何確認？",
+        "prompt": "最後如何求 x 並驗算？",
         "options": [
-          "代回原式驗算",
-          "省略檢查"
+          "同除以 2 得 80，再代回 2×80＋30＝190",
+          "同乘 2 得 320",
+          "直接回答 160 元"
         ],
         "answer": "A",
-        "feedback": "代回可確認解是否正確。"
+        "feedback": "x＝80；代回原式成立，且單位為元。"
       }
     ]
-  }
+  },
+  "lessonScope": "learning-content"
 }

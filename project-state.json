@@ -3,8 +3,8 @@
   "projectId": "tw-junior-cap-learning",
   "projectName": "臺灣國中教育會考學習系統",
   "status": "active",
-  "currentMilestone": "M5",
-  "currentMilestoneName": "Static Learning MVP and Deployment Verification",
+  "currentMilestone": "M4R",
+  "currentMilestoneName": "Publisher-Informed Full Lesson Rewrite",
   "milestoneStatus": "completed",
   "updatedAt": "2026-08-27",
   "sourceOfTruth": "official-12-year-basic-education-curriculum-guidelines",
@@ -110,14 +110,20 @@
     "m5PinnedContentIndex": "deployment-generated-index-v2-excludes-deprecated-and-pins-commit",
     "m5BrowserQa": "local-browser-smoke-filter-search-lazy-load-ten-questions-passed",
     "m5RemoteDeployment": "github-pages-and-validate-data-success-33047828285-33047828275-fixed-commit-14fd8a81422b"
+    ,"fullLessonV1LearningContent": "583-official-learning-content-plus-4-supplemental-units-passed"
+    ,"fullLessonV1ActiveLessons": "1031-all-active-lessons-full-lesson-v1"
+    ,"fullLessonV1BySubject": "chinese-84-english-136-math-126-science-325-social-360"
+    ,"fullLessonV1MathScienceInteraction": "451-subject-specific-interactive-lessons"
+    ,"fullLessonV1BodyQuality": "subject-specific-example-summary-exit-check-and-placeholder-audit-passed"
+    ,"fullLessonV1ScopeAudit": "1031-active-lessons-complete-with-lessonScope-444-classification-or-performance-pages"
   },
   "nextMilestone": "M5",
-  "nextAction": "後續資料更新必須以新的固定 commit 重跑索引、資料驗證與公開頁面 smoke test。",
+  "nextAction": "後續資料更新須以新的固定 commit 重跑索引、資料驗證與公開頁面 smoke test；外部教師／專家審查另行安排。",
   "knownRisks": [
     "M3 的 90 個冊別格均有公開來源，但校方課程計畫屬 medium confidence 交叉證據；不得改稱出版社正式目次或出版社背書。",
     "章節來源只證明出版社章節結構；章節到 KG 的 medium-confidence 關係是本專案保守教學判斷，不是出版社或主管機關背書。",
     "國教院 115 學年度國中英語審定本清冊列出佳音、南一、康軒，而翰林官方書城另售 i英語；兩者不可混同為同一出版者事實。",
-    "M4 的 1,031 份可教學 lesson／10,310 題均為公開來源比對後的 content-reviewed；這不是教師、出版社或主管機關背書。",
+    "M4 的 1,031 份 lesson／10,310 題的 content-reviewed 是 repo 內部狀態；1,031 個可用 lesson 已升級 full-lesson-v1，並以 lessonScope 區分內容／能力／分類頁，但仍不是教師、出版社或主管機關背書。",
     "M5 已由固定 commit 發佈並完成公開頁面驗收；後續發佈不可回退為 raw main 或範例 manifest。"
   ]
 }

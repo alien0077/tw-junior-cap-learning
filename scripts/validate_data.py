@@ -165,6 +165,40 @@ def main() -> int:
         if str(lesson.get("title", "")).startswith("草稿") and lesson.get("reviewStatus") != "draft":
             errors.append(f"{lesson_id}: draft title requires reviewStatus=draft")
 
+        # The v1 full-lesson standard is intentionally stricter than the
+        # historical outline fields. It is opt-in so legacy records remain
+        # auditable, while newly rewritten lessons cannot claim the standard
+        # without publisher research and a complete teaching progression.
+        if lesson.get("authoringStandard") == "full-lesson-v1":
+            if lesson.get("lessonScope") not in {"learning-content", "learning-performance", "topic", "theme", "domain"}:
+                errors.append(f"{lesson_id}: full-lesson-v1 requires lessonScope")
+            research = lesson.get("publisherResearch", [])
+            teaching = lesson.get("teaching", {})
+            body = teaching.get("body", [])
+            phases = {block.get("phase") for block in body if isinstance(block, dict)}
+            required_phases = {"hook", "explain", "worked-example", "guided-practice", "transfer"}
+            if not isinstance(research, list) or not research:
+                errors.append(f"{lesson_id}: full-lesson-v1 requires publisherResearch")
+            elif not any(item.get("subject") == lesson.get("subject") for item in research if isinstance(item, dict)):
+                errors.append(f"{lesson_id}: publisherResearch must match lesson subject")
+            if not required_phases.issubset(phases):
+                errors.append(
+                    f"{lesson_id}: full-lesson-v1 body must include "
+                    "hook, explain, worked-example, guided-practice, and transfer"
+                )
+            if len(teaching.get("summary", [])) < 3:
+                errors.append(f"{lesson_id}: full-lesson-v1 requires at least 3 summary points")
+            if len(teaching.get("exitCheck", [])) < 3:
+                errors.append(f"{lesson_id}: full-lesson-v1 requires at least 3 exit checks")
+            for block in body:
+                block_text = str(block.get("body", "")) if isinstance(block, dict) else ""
+                if any(marker in block_text for marker in ("請自行設計", "待補", "設計一個與", "設計一段與", "設計一組與")):
+                    errors.append(f"{lesson_id}: full-lesson-v1 teaching body contains an authoring placeholder")
+                if "本單元以本單元以" in block_text:
+                    errors.append(f"{lesson_id}: full-lesson-v1 teaching body contains duplicated scope wording")
+            if lesson.get("subject") in {"math", "science"} and lesson.get("interactive", {}).get("type") == "guided-choice":
+                errors.append(f"{lesson_id}: full-lesson-v1 math/science lesson requires a subject-specific interaction")
+
     matrix_path = ROOT / "data/m4-coverage-matrix.json"
     if matrix_path in parsed and isinstance(parsed[matrix_path], dict):
         for row in parsed[matrix_path].get("rows", []):
@@ -173,6 +207,8 @@ def main() -> int:
                 lesson_status = lesson_by_id[lesson_id].get("reviewStatus")
                 if row.get("reviewStatus") != lesson_status or row.get("contentStatus") != lesson_status:
                     errors.append(f"coverage {lesson_id}: status must match lesson ({lesson_status})")
+                if lesson_by_id[lesson_id].get("authoringStandard") == "full-lesson-v1" and lesson_by_id[lesson_id].get("lessonScope") != row.get("level"):
+                    errors.append(f"coverage {lesson_id}: lessonScope must match curriculum level {row.get('level')}")
 
     if errors:
         print("\n".join(errors))
