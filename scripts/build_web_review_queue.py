@@ -23,7 +23,7 @@ for kind, pattern in (("lesson", "lessons/*/*.json"), ("question", "questions/*/
             "subject": data.get("subject"),
             "lessonId": data.get("lessonId", data.get("id")),
             "knowledgeIds": data.get("knowledgeIds", []),
-            "sourceUrl": prov.get("sourceUrl"),
+            "sourceUrl": prov.get("sourceUrl") or ((data.get("studyReferences") or [None])[0]),
             "sourceLocator": prov.get("sourceLocator"),
             "reviewMethod": "web-source-comparison",
             "status": "pending-review",
