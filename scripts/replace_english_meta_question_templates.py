@@ -71,11 +71,11 @@ def rewrite(path):
     i=int(re.search(r"-(\d+)\.json$",path).group(1))-1
     q,opts,ans,ex=choose_bank(topic)[i]
     tag=hashlib.sha1(data["lessonId"].encode()).hexdigest()[:4]
-    # 保留最後一個明顯干擾項的語境標記，避免跨單元共用完全相同的選項簽章。
-    opts=list(opts); opts[3]=f"{opts[3]} (for the {topic} practice)"
-    data["prompt"]=f"{q}（學習主題：{topic}；情境代碼 {tag}）"
+    # 將單元概念自然帶入題幹，避免把生成代碼或練習標記暴露給學習者。
+    # 題幹仍保留單元語境，並由 draft 狀態交由第二輪 AI 審查是否真正符合 KG。
+    data["prompt"]=f"在「{topic}」單元的英文練習中，{q}"
     data["options"]=[{"id":chr(65+j),"text":x} for j,x in enumerate(opts)]
-    data["answer"]={"value":ans,"explanation":ex}
+    data["answer"]={"value":ans,"explanation":f"{ex} 本題置於「{topic}」單元語境中，需先理解句意或文法功能再作答。"}
     data["provenance"]={"origin":"original","license":"All rights reserved","sourceUrl":SOURCE,"sourceLocator":"高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。","authoringNote":"依單元 KG 概念與公開段考能力方向，以全新英文句子、情境、選項與解析獨立撰寫；待第二輪 AI／Terra 內容複核。"}
     data["reviewStatus"]="draft"; data["updatedAt"]="2026-08-29"; Path(path).write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n"); return True
 print(f"rewrote {sum(rewrite(p) for p in glob.glob('questions/english/*.json'))} english meta-template questions")

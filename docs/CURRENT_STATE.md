@@ -117,7 +117,7 @@ M3 依 D-070 的公開可追溯證據門檻已完成。部分冊別的來源仍�
 
 - 2026-08-28：續完成鹽埕國中公開英文與社會段考下載、題目／答案頁核對；英文文法 10 題、社會歷史 10 題採獨立改編寫入題庫。兩批均為 `draft`，已通過 JSON、ID、Schema、重複題與互動契約驗證，尚待 Terra 第二輪 AI 內容複核。
 
-- 2026-08-29 最新 validator 快照：12,925 JSON、12,907 IDs、1,032 KG nodes；lessons `content-reviewed` 962／`draft` 72，questions `content-reviewed` 220／`draft` 10,160。這些數字是工程狀態，不代表真人或學科專家審定。
+- 2026-08-29 最新 validator 快照：12,925 JSON、12,907 IDs、1,032 KG nodes；lessons `content-reviewed` 962／`draft` 72，questions `content-reviewed` 190／`draft` 10,190。這些數字是工程狀態，不代表真人或學科專家審定。
 
 - 2026-08-28：新增 114 年國中教育會考國文試題與答案來源索引，完成「常用語詞的正確使用」10 題獨立改編；驗證後 questions `content-reviewed` 9,299／`draft` 1,041，新增題仍待 Terra 第二輪 AI 複核。
 
@@ -360,5 +360,7 @@ M3 依 D-070 的公開可追溯證據門檻已完成。部分冊別的來源仍�
 - 2026-08-29：完成自然科 302 個單元、3,020 題探究泛用模板替換；依各單元 KG 概念重寫探究題幹、選項、答案與解析，舊「探究……哪一項做法最恰當」題幹剩餘 0 題。所有新題維持 `draft`，仍待 Terra 第二輪 AI 複核。
 - 2026-08-29：修正最後 2 組完全重複的數學題幹（正六邊形對稱軸、長方形對角線）；同步更新選項、答案與解析後，全庫完全重複題幹組數降為 0。
 - 2026-08-29：完成英文 790 題元題型替換；改為直接文法、字彙、閱讀與情境對話題，並新增 validator 的元題型拒絕規則及跨課程全庫題幹重複檢查。
-- 2026-08-29：同步 `project-state.json` 題庫快照為 1,038 份 lesson／10,380 題 question；目前題目 220 題 `content-reviewed`、10,160 題 `draft`，draft 僅表示尚待第二輪 AI／Terra 內容複核。
+- 2026-08-29：同步 `project-state.json` 題庫快照為 1,038 份 lesson／10,380 題 question；目前題目 190 題 `content-reviewed`、10,190 題 `draft`，draft 僅表示尚待第二輪 AI／Terra 內容複核。
 - 2026-08-29：網站改用全量 `data-index.json` 題目索引，避免仍載入舊 95 課／950 題 manifest；教材採分批載入，題目卡限制單次 120 張並直接顯示答案與解析。本機瀏覽器驗證 1,034 個 active lessons、10,380 題可載入。
+- 2026-08-29：將 40 題仍保留公開會考原式的國文題改為全新自編情境、選項、答案與解析；公開原式題目剩餘 0 題，來源僅作題型研究，全部維持 `draft`。
+- 2026-08-29：補齊 430 題 provenance `authoringNote`；其中 30 題因來源界線不完整降回 `draft`。目前 questions 為 190 題 `content-reviewed`、10,190 題 `draft`，仍待 Terra 第二輪 AI 複核。

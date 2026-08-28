@@ -63,6 +63,8 @@ def question_quality_flags(data: dict) -> list[str]:
         flags.append("generic mathematics scaffold")
     if prompt.startswith("學習「") and "英語情境" in prompt:
         flags.append("generic English scaffold")
+    if "情境代碼" in prompt or re.search(r"\(for the .+ practice\)", normalized_text(json.dumps(data, ensure_ascii=False))):
+        flags.append("generation marker exposed to learner")
     return flags
 
 def main() -> int:
@@ -193,6 +195,12 @@ def main() -> int:
         if area == "questions" and isinstance(data.get("lessonId"), str):
             lesson_question_counts[data["lessonId"]] = lesson_question_counts.get(data["lessonId"], 0) + 1
             lesson_id = data["lessonId"]
+            provenance = data.get("provenance", {})
+            for field in ("sourceUrl", "sourceLocator", "authoringNote"):
+                if not str(provenance.get(field, "")).strip():
+                    errors.append(f"{path}: question provenance missing {field}")
+            if data.get("reviewStatus") == "content-reviewed" and not str(provenance.get("authoringNote", "")).strip():
+                errors.append(f"{path}: content-reviewed question missing authoringNote")
             for flag in question_quality_flags(data):
                 errors.append(f"{path}: {flag}; rewrite as a direct subject question")
             signature_key = (lesson_id, question_signature(data))
