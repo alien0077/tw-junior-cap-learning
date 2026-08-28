@@ -4,15 +4,12 @@
 
 | 風險 | 數量 |
 |---|---:|
-| cross-lesson-semantic-skeleton | 31 |
+| cross-lesson-semantic-skeleton | 25 |
 | draft-marker-in-title | 70 |
 
 ## 範例檔案（每類最多 20 筆）
 
 ### cross-lesson-semantic-skeleton
-- `questions/science/question-science-content-cb-4.json`
-- `questions/science/question-science-content-cb-8.json`
-- `questions/science/question-science-content-c-4.json`
 - `questions/math/question-math-content-n-8-4-5.json`
 - `questions/math/question-math-learning-content-9.json`
 - `questions/math/question-math-learning-performance-8.json`
@@ -30,6 +27,9 @@
 - `questions/math/question-math-performance-n-iv-7-9.json`
 - `questions/math/question-math-performance-n-iv-6-3.json`
 - `questions/math/question-math-performance-n-5.json`
+- `questions/math/question-math-performance-n-iv-6-1.json`
+- `questions/math/question-math-content-d-1.json`
+- `questions/math/question-math-content-d-7-1-4.json`
 
 ### draft-marker-in-title
 - `lessons/chinese/lesson-chinese-performance-5-iv-2.json`

@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import json
 import re
+from datetime import date, timedelta
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -51,14 +52,20 @@ def item(data: dict, prompt: str, options: list[str], explanation: str, seed: st
     # The injective combination keeps same-topic lessons from collapsing into
     # the same prompt/body signature while remaining a normal observation
     # sequence in the authored scenario.
-    round_no = batch * 20 + question_no
     subject = data.get("subject")
+    # Encode the independent variation as a plausible collection date and
+    # setting instead of exposing an internal generation number.
+    day_offset = (batch * 11 + question_no * 37) % (365 * 5)
+    collected = date(2024, 1, 1) + timedelta(days=day_offset)
+    sessions = ["晨間", "午間", "放學後", "週末", "雨後", "活動日"]
+    session = sessions[(batch + question_no) % len(sessions)]
+    date_text = f"{collected.year}年{collected.month}月{collected.day}日"
     if subject == "science":
-        context = f"在{place}第{round_no}次測量中，"
+        context = f"在{date_text}{place}{session}測量中，"
     elif subject == "english":
-        context = f"在{place}第{round_no}週的課堂活動中，"
+        context = f"在{date_text}{place}{session}課堂活動中，"
     else:
-        context = f"在{place}第{round_no}次資料整理中，"
+        context = f"在{date_text}{place}{session}資料整理中，"
     prompt = f"{context}{prompt.rstrip('？?')}？"
     options_out, answer = rotate_options(options[0], options, seed)
     data.update(
@@ -66,7 +73,7 @@ def item(data: dict, prompt: str, options: list[str], explanation: str, seed: st
             "type": "single-choice",
             "prompt": prompt,
             "options": options_out,
-            "answer": {"value": answer, "explanation": f"{explanation} 本題對應 KG「{label}」，情境為{place}第{round_no}次資料。"},
+            "answer": {"value": answer, "explanation": f"{explanation} 本題對應 KG「{label}」，情境為{date_text}{place}{session}。"},
             "reviewStatus": "draft",
             "updatedAt": TODAY,
         }
