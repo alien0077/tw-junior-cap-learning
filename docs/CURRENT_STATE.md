@@ -118,3 +118,5 @@ M3 依 D-070 的公開可追溯證據門檻已完成。部分冊別的來源仍�
 - 2026-08-28：續完成鹽埕國中公開英文與社會段考下載、題目／答案頁核對；英文文法 10 題、社會歷史 10 題採獨立改編寫入題庫。兩批均為 `draft`，已通過 JSON、ID、Schema、重複題與互動契約驗證，尚待 Terra 第二輪 AI 內容複核。
 
 - 2026-08-28 最新 validator 快照：12,925 JSON、12,907 IDs、1,032 KG nodes；lessons `content-reviewed` 962／`draft` 72，questions `content-reviewed` 9,309／`draft` 1,031。這些數字是工程狀態，不代表真人或學科專家審定。
+
+- 2026-08-28：新增 114 年國中教育會考國文試題與答案來源索引，完成「常用語詞的正確使用」10 題獨立改編；驗證後 questions `content-reviewed` 9,299／`draft` 1,041，新增題仍待 Terra 第二輪 AI 複核。
