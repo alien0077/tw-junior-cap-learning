@@ -2,41 +2,41 @@
   "id": "question-chinese-language-arts-domain-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀文章時，哪項行動最能展現主動理解？",
+  "prompt": "讀一則新聞時，標題說『全校都喜歡新午餐』，正文只調查 25 位學生。讀者最應保持哪種態度？",
   "options": [
     {
       "id": "A",
-      "text": "提出問題、整理證據並檢查推論"
+      "text": "只看標題即可不讀正文"
     },
     {
       "id": "B",
-      "text": "只記住結論，不理解理由"
+      "text": "把 25 人當成全國學生"
     },
     {
       "id": "C",
-      "text": "把不同情境混為一談"
+      "text": "檢查樣本與『全校』結論是否相符"
     },
     {
       "id": "D",
-      "text": "跳過檢查步驟"
+      "text": "直接接受標題的全稱判斷"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-learning-focus"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "主動閱讀要和文本互動，透過問題、證據與推論確認理解。"
+    "value": "C",
+    "explanation": "調查對象只有 25 人，不能直接支持『全校』的概括結論，需檢查證據範圍。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-language-arts-domain-2.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究語文領域常見閱讀、表達與資料判讀題型（閱讀與判斷）；官方課綱索引：https://www.k12ea.gov.tw/Tw/Common/SinglePage?filter=11C2C6C1-D64E-475E-916B-D20C83896343。本題為獨立改編，非原題重製。",
+    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-26",
+  "updatedAt": "2026-08-28",
   "lessonId": "lesson-chinese-language-arts-domain"
 }
