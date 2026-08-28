@@ -2,23 +2,23 @@
   "id": "question-math-content-s-7-4-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「S-7-4：線對稱的性質」進行符號表示時，哪一項做法正確？",
+  "prompt": "點 R(4,1) 繞原點旋轉 180° 後坐標為何？",
   "options": [
     {
       "id": "A",
-      "text": "依定義找直角、對稱軸與對應點，再用圖形驗證"
+      "text": "(－4,1)"
     },
     {
       "id": "B",
-      "text": "只要相交就判定垂直"
+      "text": "(4,－1)"
     },
     {
       "id": "C",
-      "text": "忽略對稱軸兩側距離"
+      "text": "(－4,－1)"
     },
     {
       "id": "D",
-      "text": "不檢查對應關係"
+      "text": "(1,4)"
     }
   ],
   "knowledgeIds": [
@@ -26,16 +26,17 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「S-7-4：線對稱的性質」的符號表示需依幾何定義與距離、角度關係判斷。"
+    "value": "C",
+    "explanation": "繞原點旋轉 180° 時 (x,y)→(−x,−y)，得 (−4,−1)。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-s-7-4"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平移、旋轉與鏡射 題型與官方課綱 KG kg-math-content-s-7-4",
+    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-29",
   "lessonId": "lesson-math-content-s-7-4"
 }
