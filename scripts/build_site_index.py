@@ -30,6 +30,7 @@ def build_index(revision: str) -> dict:
     project = read_json(ROOT / "project-state.json")
     question_paths: dict[str, list[str]] = defaultdict(list)
     question_records = []
+    question_payloads: dict[str, list[dict]] = defaultdict(list)
     active_questions = 0
     for subject in SUBJECTS:
         for path in sorted((ROOT / "questions" / subject).glob("*.json")):
@@ -37,28 +38,33 @@ def build_index(revision: str) -> dict:
             if question.get("reviewStatus") == "deprecated":
                 continue
             question_paths[question["lessonId"]].append(relative(path))
-            question_records.append(
-                {
-                    key: question[key]
-                    for key in (
-                        "id", "subject", "type", "prompt", "options", "knowledgeIds",
-                        "difficulty", "answer", "reviewStatus", "updatedAt", "lessonId",
-                    )
-                    if key in question
-                }
-            )
+            question_payloads[subject].append(question)
+            question_records.append({
+                key: question[key]
+                for key in (
+                    "id", "subject", "type", "prompt", "knowledgeIds",
+                    "difficulty", "reviewStatus", "updatedAt", "lessonId",
+                )
+                if key in question
+            })
             active_questions += 1
 
     lessons = []
+    lesson_payloads: dict[str, list[dict]] = defaultdict(list)
     for subject in SUBJECTS:
         for path in sorted((ROOT / "lessons" / subject).glob("*.json")):
             lesson = read_json(path)
             if lesson.get("reviewStatus") == "deprecated":
                 continue
+            lesson_payloads[subject].append(lesson)
             lessons.append(
                 {
-                    **lesson,
                     "summary": lesson["content"]["summary"],
+                    "id": lesson["id"],
+                    "subject": lesson["subject"],
+                    "title": lesson["title"],
+                    "knowledgeIds": lesson["knowledgeIds"],
+                    "gradeRange": lesson.get("gradeRange", []),
                     "path": relative(path),
                     "questionPaths": sorted(question_paths[lesson["id"]]),
                 }
@@ -93,7 +99,7 @@ def build_index(revision: str) -> dict:
         raise ValueError(f"active lessons without 10 questions: {', '.join(missing_questions[:10])}")
 
     source_base = "../" if revision == "local" else f"https://raw.githubusercontent.com/alien0077/tw-junior-cap-learning/{revision}/"
-    return {
+    index = {
         "version": 2,
         "generatedAt": date.today().isoformat(),
         "sourceRevision": revision,
@@ -106,6 +112,14 @@ def build_index(revision: str) -> dict:
         },
         "lessons": lessons,
         "questions": sorted(question_records, key=lambda question: question["id"]),
+        "lessonDataPaths": {
+            subject: f"data-lessons-{subject}.json"
+            for subject in SUBJECTS
+        },
+        "questionDataPaths": {
+            subject: f"data-questions-{subject}.json"
+            for subject in SUBJECTS
+        },
         "mappings": mappings,
         "validation": {
             "subjects": dict(Counter(lesson["subject"] for lesson in lessons)),
@@ -114,6 +128,11 @@ def build_index(revision: str) -> dict:
             "mappingSetCount": len(mappings),
         },
     }
+    # Payloads are written as same-origin shards by main(); keeping them out of
+    # data-index.json makes the initial page request small and parallelisable.
+    index["_lessonPayloads"] = lesson_payloads
+    index["_questionPayloads"] = question_payloads
+    return index
 
 
 def main() -> int:
@@ -123,14 +142,26 @@ def main() -> int:
     parser.add_argument("--check", action="store_true", help="validate an existing index instead of writing it")
     args = parser.parse_args()
     index = build_index(args.revision)
+    lesson_payloads = index.pop("_lessonPayloads")
+    question_payloads = index.pop("_questionPayloads")
     rendered = json.dumps(index, ensure_ascii=False, indent=2) + "\n"
     if args.check:
         if not args.output.exists() or args.output.read_text(encoding="utf-8") != rendered:
             raise SystemExit("site data index is stale or missing")
+        for subject in SUBJECTS:
+            for prefix, payloads in (("lessons", lesson_payloads), ("questions", question_payloads)):
+                payload_path = args.output.parent / f"data-{prefix}-{subject}.json"
+                expected = json.dumps(payloads[subject], ensure_ascii=False, indent=2) + "\n"
+                if not payload_path.exists() or payload_path.read_text(encoding="utf-8") != expected:
+                    raise SystemExit(f"site data shard is stale or missing: {payload_path}")
         print(f"site index verified: {index['validation']}")
         return 0
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(rendered, encoding="utf-8")
+    for subject in SUBJECTS:
+        for prefix, payloads in (("lessons", lesson_payloads), ("questions", question_payloads)):
+            payload_path = args.output.parent / f"data-{prefix}-{subject}.json"
+            payload_path.write_text(json.dumps(payloads[subject], ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"site index written: {args.output} {index['validation']}")
     return 0
 

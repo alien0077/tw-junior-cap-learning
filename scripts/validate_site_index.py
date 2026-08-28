@@ -42,6 +42,28 @@ def main() -> int:
                 errors.append(f"deprecated question exposed: {question.get('id')}")
             if question.get("lessonId") != lesson_id:
                 errors.append(f"question belongs to another lesson: {question.get('id')}")
+    lesson_shards = index.get("lessonDataPaths", {})
+    question_shards = index.get("questionDataPaths", {})
+    if set(lesson_shards) != {"chinese", "english", "math", "science", "social"}:
+        errors.append("lesson data shards are incomplete")
+    if set(question_shards) != {"chinese", "english", "math", "science", "social"}:
+        errors.append("question data shards are incomplete")
+    for subject in sorted(lesson_shards):
+        path = ROOT / "site" / lesson_shards[subject]
+        if not path.exists():
+            errors.append(f"missing lesson data shard: {path}")
+        else:
+            shard = read_json(path)
+            if not isinstance(shard, list) or any(item.get("subject") != subject for item in shard):
+                errors.append(f"invalid lesson data shard: {path}")
+    for subject in sorted(question_shards):
+        path = ROOT / "site" / question_shards[subject]
+        if not path.exists():
+            errors.append(f"missing question data shard: {path}")
+        else:
+            shard = read_json(path)
+            if not isinstance(shard, list) or any(item.get("subject") != subject for item in shard):
+                errors.append(f"invalid question data shard: {path}")
     if index.get("validation", {}).get("lessonCount") != len(lessons):
         errors.append("lesson count differs from index validation block")
     if errors:
