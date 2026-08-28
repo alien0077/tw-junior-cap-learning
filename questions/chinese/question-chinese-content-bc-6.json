@@ -2,39 +2,39 @@
   "id": "question-chinese-content-bc-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "某文先說明紙本閱讀的特點，再說明電子閱讀的特點，最後比較兩者。此文主要採用何種說明方式？",
+  "prompt": "表格顯示某社區三個月份回收量為 120、150、135 公斤。若要描述趨勢，何者最精確？",
   "options": [
     {
       "id": "A",
-      "text": "分類與比較"
+      "text": "三個月完全沒有變化"
     },
     {
       "id": "B",
-      "text": "時間倒敘"
+      "text": "第三月比第一月少 15 公斤"
     },
     {
       "id": "C",
-      "text": "人物對話"
+      "text": "先增加後減少，第三月仍比第一月多 15 公斤"
     },
     {
       "id": "D",
-      "text": "虛構敘事"
+      "text": "三個月持續增加"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "文章分別介紹兩類對象，最後比較差異，屬分類與比較。"
+    "value": "C",
+    "explanation": "120→150 增加，150→135 減少；135−120=15，因此第三月仍高於第一月。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.kusjh.kh.edu.tw/upload/files/111%E4%B8%8A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E5%9C%8B%E4%B8%AD%E4%BA%8C%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
-    "sourceLocator": "說明文本分類比較；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
+    "sourceLocator": "公開國中教育會考／公立國中段考的說明文與資料判讀能力方向（趨勢與差值）；另以國語文課綱核對：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
+    "authoringNote": "Safe adaptation; removed old year labels and did not reproduce source wording, options, passage, figure, or answer. Requires second-pass AI content review."
   },
   "reviewStatus": "draft",
   "updatedAt": "2026-08-28",

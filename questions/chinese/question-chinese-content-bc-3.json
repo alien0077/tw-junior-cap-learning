@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bc-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "【112年國中教育會考】根據甲國茶葉出口表與說明，可以推論出何者？",
+  "prompt": "某報告寫『本校 80 位受訪者中有 48 位支持增設遮雨棚』。下列哪個結論沒有超出資料？",
   "options": [
     {
       "id": "A",
-      "text": "甲國生產技術在1886年後越來越差"
+      "text": "增設後一定不會再淋雨"
     },
     {
       "id": "B",
-      "text": "1900年歐洲茶葉市場總交易量較1886年少"
+      "text": "受訪者中有 60% 表示支持"
     },
     {
       "id": "C",
-      "text": "1900年甲國出口總額衰退至1886年的50%"
+      "text": "全市學生都支持增設遮雨棚"
     },
     {
       "id": "D",
-      "text": "甲國由出口國變成進口國"
+      "text": "所有家長都反對現有設計"
     }
   ],
   "knowledgeIds": [
@@ -26,14 +26,15 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "表中1886年為240萬擔、1900年為120萬擔，120是240的50%。"
+    "value": "B",
+    "explanation": "48÷80=60%，這只描述受訪樣本，不能推論全市或預測必然結果。"
   },
   "provenance": {
-    "origin": "official-open",
-    "license": "依法令舉行考試試題之公開使用；本筆保留題目來源與答案註記",
-    "sourceUrl": "https://kaonow.com/paper/cap-112-chinese/",
-    "sourceLocator": "第21題，官方答案 C"
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+    "sourceLocator": "公開國中教育會考／公立國中段考的說明文與資料判讀能力方向（樣本與比例）；另以國語文課綱核對：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
+    "authoringNote": "Safe adaptation; removed old year labels and did not reproduce source wording, options, passage, figure, or answer. Requires second-pass AI content review."
   },
   "reviewStatus": "draft",
   "updatedAt": "2026-08-28",
