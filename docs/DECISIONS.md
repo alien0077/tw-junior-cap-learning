@@ -1816,3 +1816,4 @@
 - 問題：公開 Pages 頁面原先由 `data-index.json` 載入題目，但再透過 `raw.githubusercontent.com` 逐課載入教材；raw 網域受限時，整頁會停留在「正在載入資料」。
 - 處理方式：部署索引的 lesson 項目直接保留完整教材資料；前端優先使用索引內嵌教材，只有舊索引沒有 `content` 時才退回原本的 raw fallback。
 - 驗證：本機索引包含 1,034 課、10,380 題；`validate_site_index.py`、`validate_data.py`、Python 編譯、`node --check` 與本機頁面載入均通過。公開頁面需待此次部署後重新 smoke test。
+- 公開驗證補充：以唯讀下載核對 Pages `data-index.json` 的 `sourceRevision=fe163d62a`、1,034 課、內嵌教材、新數學題存在及舊題不存在；瀏覽器端因約 21 MB 索引可能逾時，故保留該工具限制註記。
