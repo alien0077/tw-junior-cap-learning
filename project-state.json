@@ -3,10 +3,10 @@
   "projectId": "tw-junior-cap-learning",
   "projectName": "臺灣國中教育會考學習系統",
   "status": "active",
-  "currentMilestone": "M3",
-  "currentMilestoneName": "Three Publisher Mapping",
+  "currentMilestone": "M4R",
+  "currentMilestoneName": "Full Lesson and Question AI QA",
   "milestoneStatus": "in_progress",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "sourceOfTruth": "official-12-year-basic-education-curriculum-guidelines",
   "subjects": [
     "chinese",
@@ -24,8 +24,8 @@
     "curriculumDocuments": 1032,
     "knowledgeNodes": 1032,
     "knowledgeEdges": 1046,
-    "lessons": 95,
-    "questions": 950,
+    "lessons": 1038,
+    "questions": 10380,
     "textbookMappings": 90,
     "textbookMappingSets": 6,
     "textbookChapterEntries": 392
@@ -82,8 +82,8 @@
     "ciWorkflow": "validate-data-workflow-success-run-32971196186-actions-v5-v6-interactive-check",
     "dataValidator": "scripts/validate_data.py",
     "m4Method": "docs/M4_CONTENT_METHOD.md",
-    "questionCoverage": "ten-questions-per-lesson-structural-count-passed-content-qa-incomplete",
-    "answerExplanationCheck": "passed-structural-only-content-qa-incomplete",
+    "questionCoverage": "1038-lessons-10380-questions-ten-per-lesson-structural-count-passed-content-qa-incomplete",
+    "answerExplanationCheck": "10380-questions-have-answer-and-explanation-structural-check-passed-content-qa-incomplete",
     "interactiveMathScience": "455-math-science-lessons-data-driven-simulation-contracts-local-learning-history-passed-structural-only",
     "studyHighlights": "ten-lessons-three-highlights-with-sources-passed",
     "m4CompletionPlan": "docs/M4_COMPLETION_PLAN.md",
@@ -100,7 +100,7 @@
     "章節來源只證明出版社章節結構；章節到 KG 的 medium-confidence 關係是本專案保守教學判斷，不是出版社或主管機關背書。",
     "國教院 115 學年度國中英語審定本清冊列出佳音、南一、康軒，而翰林官方書城另售 i英語；兩者不可混同為同一出版者事實。",
     "115 學年度下學期翰林英語商品尚未公開時，偶數冊僅能保留目前可查的 114 下期官方產品證據，不可假標 115。",
-    "M4 目前實際 materialize 95 份 lesson／950 題 question；其中 draft 與重複題仍待來源核對、改題與內容 QA，不得視為完成。",
+    "M4 目前實際 materialize 1038 份 lesson／10380 題 question；題庫已完成元題型與完全重複題稽核，但 draft 仍待第二輪 AI／Terra 內容 QA，不得視為真人或專家審定。",
     "B-001：南一官方章節目次目前由動態／授權介面提供，30 冊尚未完成公開可核驗 mapping。",
     "B-002：翰林非國文科缺少可直接讀取的公開課次索引，24 冊尚未完成章節 mapping。",
     "B-003：validator 與 workflow 已加入，但本次 push 的實際 Actions run 尚未由 connector 回報。",
@@ -109,6 +109,6 @@
     "B-004：M5 靜態 MVP 尚未連接部署環境，沒有公開 URL 與 smoke test 驗收。",
     "M4-003：國文已完成 12/84 筆，剩餘 72 筆尚未完成；其他四科尚未開始全量補全。",
     "B-007：國文首批 3 lesson／30 question 已建立，但 connector 尚未回報 GitHub Actions validator 結果。",
-    "B-009：全量 1,032 lessons／10,320 questions 需批次產生與 QA，尚未全部 materialize。"
+    "B-009：題庫已全量 materialize；仍需依 AI-only 規則完成第二輪 Terra 內容複核後，才能升級個別題目 reviewStatus。"
   ]
 }

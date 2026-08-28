@@ -44,6 +44,27 @@ def question_signature(data: dict) -> tuple:
         normalized_text(answer.get("explanation")),
     )
 
+def question_quality_flags(data: dict) -> list[str]:
+    """Reject known meta-question scaffolds that do not assess the subject."""
+    prompt = normalized_text(data.get("prompt"))
+    flags = []
+    meta_fragments = (
+        "針對學習目標辨識", "針對理解程度說明", "針對解題步驟選擇",
+        "針對理由充分性判斷", "針對新情境遷移", "針對答案驗證",
+        "針對表徵互相檢核", "針對關鍵資訊辨識", "針對錯誤做法診斷",
+    )
+    if any(fragment in prompt for fragment in meta_fragments):
+        flags.append("meta-question scaffold")
+    if re.search(r"哪一項做法最(?:合理|適當|恰當)？", prompt):
+        flags.append("generic how-to scaffold")
+    if prompt.startswith("分析「") and "資料" in prompt:
+        flags.append("generic analysis scaffold")
+    if prompt.startswith("解答「") and "數學情境" in prompt:
+        flags.append("generic mathematics scaffold")
+    if prompt.startswith("學習「") and "英語情境" in prompt:
+        flags.append("generic English scaffold")
+    return flags
+
 def main() -> int:
     parser = argparse.ArgumentParser(description="Validate repository data and M4 review state.")
     parser.add_argument(
@@ -156,6 +177,7 @@ def main() -> int:
     question_signatures: dict[tuple[str, tuple], Path] = {}
     question_prompts: dict[tuple[str, str], Path] = {}
     question_bodies: dict[tuple, Path] = {}
+    global_question_prompts: dict[str, Path] = {}
     lessons_by_id = {
         item_id: data
         for path, data in parsed.items()
@@ -171,6 +193,8 @@ def main() -> int:
         if area == "questions" and isinstance(data.get("lessonId"), str):
             lesson_question_counts[data["lessonId"]] = lesson_question_counts.get(data["lessonId"], 0) + 1
             lesson_id = data["lessonId"]
+            for flag in question_quality_flags(data):
+                errors.append(f"{path}: {flag}; rewrite as a direct subject question")
             signature_key = (lesson_id, question_signature(data))
             previous = question_signatures.get(signature_key)
             if previous is not None:
@@ -195,6 +219,12 @@ def main() -> int:
                 errors.append(f"{path}: duplicate question prompt in {lesson_id}; same as {previous_prompt}")
             else:
                 question_prompts[prompt_key] = path
+            global_prompt = normalized_text(data.get("prompt"))
+            previous_global = global_question_prompts.get(global_prompt)
+            if previous_global is not None and previous_global != path:
+                errors.append(f"{path}: duplicate question prompt across lessons; same as {previous_global}")
+            else:
+                global_question_prompts[global_prompt] = path
             lesson = lessons_by_id.get(data["lessonId"])
             if lesson is None:
                 errors.append(f"{path}: lessonId does not exist: {data['lessonId']}")

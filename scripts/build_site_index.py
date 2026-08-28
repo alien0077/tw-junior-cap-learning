@@ -29,6 +29,7 @@ def relative(path: Path) -> str:
 def build_index(revision: str) -> dict:
     project = read_json(ROOT / "project-state.json")
     question_paths: dict[str, list[str]] = defaultdict(list)
+    question_records = []
     active_questions = 0
     for subject in SUBJECTS:
         for path in sorted((ROOT / "questions" / subject).glob("*.json")):
@@ -36,6 +37,16 @@ def build_index(revision: str) -> dict:
             if question.get("reviewStatus") == "deprecated":
                 continue
             question_paths[question["lessonId"]].append(relative(path))
+            question_records.append(
+                {
+                    key: question[key]
+                    for key in (
+                        "id", "subject", "type", "prompt", "options", "knowledgeIds",
+                        "difficulty", "answer", "reviewStatus", "updatedAt", "lessonId",
+                    )
+                    if key in question
+                }
+            )
             active_questions += 1
 
     lessons = []
@@ -98,6 +109,7 @@ def build_index(revision: str) -> dict:
             "activeQuestions": active_questions,
         },
         "lessons": lessons,
+        "questions": sorted(question_records, key=lambda question: question["id"]),
         "mappings": mappings,
         "validation": {
             "subjects": dict(Counter(lesson["subject"] for lesson in lessons)),
