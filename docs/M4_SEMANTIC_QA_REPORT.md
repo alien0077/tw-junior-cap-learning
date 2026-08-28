@@ -4,32 +4,9 @@
 
 | 風險 | 數量 |
 |---|---:|
-| cross-lesson-semantic-skeleton | 25 |
 | draft-marker-in-title | 70 |
 
 ## 範例檔案（每類最多 20 筆）
-
-### cross-lesson-semantic-skeleton
-- `questions/math/question-math-content-n-8-4-5.json`
-- `questions/math/question-math-learning-content-9.json`
-- `questions/math/question-math-learning-performance-8.json`
-- `questions/math/question-math-content-n-7-2-1.json`
-- `questions/math/question-math-content-n-7-1-3.json`
-- `questions/math/question-math-content-n-7-2-5.json`
-- `questions/math/question-math-content-n-7-2-9.json`
-- `questions/math/question-math-content-n-7-2-3.json`
-- `questions/math/question-math-content-n-7-2-2.json`
-- `questions/math/question-math-content-d-9-1-1.json`
-- `questions/math/question-math-content-d-7-2-2.json`
-- `questions/math/question-math-content-d-2.json`
-- `questions/math/question-math-content-n-8-3-7.json`
-- `questions/math/question-math-content-n-8-3-2.json`
-- `questions/math/question-math-performance-n-iv-7-9.json`
-- `questions/math/question-math-performance-n-iv-6-3.json`
-- `questions/math/question-math-performance-n-5.json`
-- `questions/math/question-math-performance-n-iv-6-1.json`
-- `questions/math/question-math-content-d-1.json`
-- `questions/math/question-math-content-d-7-1-4.json`
 
 ### draft-marker-in-title
 - `lessons/chinese/lesson-chinese-performance-5-iv-2.json`
