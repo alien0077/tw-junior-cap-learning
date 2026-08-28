@@ -1,0 +1,177 @@
+{
+  "id": "lesson-math-content-a-7-5",
+  "subject": "math",
+  "title": "A-7-5：二元一次聯立方程式的解法與應用",
+  "knowledgeIds": [
+    "kg-math-content-a-7-5"
+  ],
+  "gradeRange": [
+    "7"
+  ],
+  "content": {
+    "summary": "運用代入法或消去法解聯立方程式，並驗證情境答案。",
+    "sections": [
+      {
+        "heading": "學習目標",
+        "body": "運用代入法或消去法解聯立方程式，並驗證情境答案。 能代回兩式驗證解。"
+      },
+      {
+        "heading": "學習流程",
+        "body": "定義兩個未知數，將條件寫成兩式，選擇代入或消去法求解，最後代回檢查。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "只解出一個未知數、消去時係數未同步處理，或忽略題目限制。"
+      }
+    ]
+  },
+  "studyHighlights": [
+    "兩個未知數對應兩個條件。",
+    "選擇代入或消去法。",
+    "解出後代回兩式。"
+  ],
+  "studyReferences": [
+    "https://cap.rcpet.edu.tw/index.html",
+    "https://stv.naer.edu.tw/teaching/course_outline.jsp",
+    "https://www.naer.edu.tw/",
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+  ],
+  "authoringStandard": "full-lesson-v1",
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "國中數學 1B 第1章第2節（公開教學影片頁）",
+      "subject": "math",
+      "chapterLocator": "二元一次聯立方程式／1-2 解二元一次聯立方程式",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1B/1-2/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開頁面將聯立方程式的解之意義、代入消去法、加減消去法與自我評量分段；本課依此安排方法選擇、逐行等式操作、驗算與情境應用。",
+      "copyrightBoundary": "只使用公開頁面的節點名稱作教學設計依據；本課正文、算式、題目、選項、提示與回饋皆獨立撰寫，未複製出版社內容。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "兩條路都要到同一個答案",
+        "body": "想像兩種票券的數量與總價同時受到限制。只用一條式無法決定兩種數量，因此要選擇一種操作，把其中一個未知數消掉，讓問題變成我們熟悉的一元方程式。代入法與加減消去法是不同路徑，但都必須維持等量關係。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "代入法與加減消去法",
+        "body": "聯立方程式的消去法和代入法都在保留兩條關係：可先把其中一式整理成某個未知數，再代入另一式；或將兩式相加減消去同一未知數。選方法要看係數與分數是否容易處理，算出一個未知數後仍須回代求另一個並驗證兩式。"
+      },
+      {
+        "id": "worked",
+        "phase": "worked-example",
+        "heading": "例題：先代入再回代",
+        "body": "考慮 x＋y＝35 與 2x＋y＝50。兩式相減可消去 y，得到 x＝15；把 x＝15 代回第一式，y＝20。最後檢查第二式：2×15＋20＝50。這個例子也可先由第一式寫成 y＝35－x，再代入第二式；兩種方法會得到同一組（15，20）。"
+      },
+      {
+        "id": "guided",
+        "phase": "guided-practice",
+        "heading": "選方法前先看係數",
+        "body": "拿到聯立題先比較兩式：是否已有 x 或 y 的係數為 1？是否能透過相加或相減立刻消去？把選擇理由寫在草稿上，例如『y 係數相同，採相減』。解出第一個未知數後，務必回代任一原式求第二個；不要把消去後的中間等式直接當成完整答案。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "把解法用在真實限制中",
+        "body": "在年齡、票價、雞兔或商品組合問題中，先用文字定義 x、y，再列兩式。求得數對後檢查總數、總價與單位，並確認數值符合非負或整數限制。若題目有『至少』或『不超過』等語句，還要把聯立結果與限制逐一比較，而不是只看代數正確。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "把每一步的目的說出來",
+        "body": "回顧時不要只背代入或消去的名稱，請說明選它的原因、哪一個未知數被消掉、等式做了什麼相同運算、如何回代，以及為何答案符合題意。能說清楚操作目的，換成係數較大或情境不同的題目時仍能穩定選擇方法。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「二元一次聯立方程式的解法與應用」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「二元一次聯立方程式的解法與應用」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「二元一次聯立方程式的解法與應用」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「二元一次聯立方程式的解法與應用」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+      }
+    ]
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+  },
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-08-27",
+  "interactive": {
+    "type": "algebra-expression-builder",
+    "goal": "在代入法與加減消去法之間做選擇，完成聯立求解與驗算。",
+    "scenario": "兩種票券數量為 x、y，已知 x＋y＝35 且 2x＋y＝50。請找出兩種數量。",
+    "variables": [
+      {
+        "symbol": "x",
+        "meaning": "第一種票券數量"
+      },
+      {
+        "symbol": "y",
+        "meaning": "第二種票券數量"
+      }
+    ],
+    "steps": [
+      {
+        "id": "step-1",
+        "prompt": "這組方程式先用哪種操作最直接？",
+        "options": [
+          "兩式相減消去 y",
+          "只把第一式乘 2",
+          "先猜 x、y"
+        ],
+        "answer": "A",
+        "feedback": "兩式的 y 係數相同，相減後可直接得到 x。"
+      },
+      {
+        "id": "step-2",
+        "prompt": "相減後得到 x＝？",
+        "options": [
+          "15",
+          "20",
+          "35"
+        ],
+        "answer": "A",
+        "feedback": "(2x＋y)－(x＋y)＝50－35，所以 x＝15。"
+      },
+      {
+        "id": "step-3",
+        "prompt": "求得 x 後，如何完成並驗算？",
+        "options": [
+          "代回 x＋y＝35 得 y＝20，再檢查另一式",
+          "把 x 再乘 2 當 y",
+          "只寫 x＝15"
+        ],
+        "answer": "A",
+        "feedback": "回代得 y＝20，且 2×15＋20＝50，兩式都成立。"
+      }
+    ]
+  },
+  "lessonScope": "learning-content"
+}

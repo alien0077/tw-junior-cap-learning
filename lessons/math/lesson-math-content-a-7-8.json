@@ -1,0 +1,170 @@
+{
+  "id": "lesson-math-content-a-7-8",
+  "subject": "math",
+  "title": "A-7-8：一元一次不等式的解與應用",
+  "knowledgeIds": [
+    "kg-math-content-a-7-8"
+  ],
+  "gradeRange": [
+    "7"
+  ],
+  "content": {
+    "summary": "求出不等式解集並用數線或情境限制表示範圍。",
+    "sections": [
+      {
+        "heading": "學習目標",
+        "body": "求出不等式解集並用數線或情境限制表示範圍。 能以代入或展開結果檢查答案。"
+      },
+      {
+        "heading": "學習流程",
+        "body": "辨認結構與條件，選擇對應規則逐步運算，再以數線、代入或整理結果驗證。"
+      },
+      {
+        "heading": "常見錯誤",
+        "body": "忽略不等號方向、邊界端點，或套用公式時漏掉中間項。"
+      }
+    ]
+  },
+  "studyHighlights": [
+    "辨認式子結構。",
+    "依規則逐步運算。",
+    "代入或整理後驗證。"
+  ],
+  "studyReferences": [
+    "https://cap.rcpet.edu.tw/index.html",
+    "https://stv.naer.edu.tw/teaching/course_outline.jsp",
+    "https://www.naer.edu.tw/",
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+  ],
+  "authoringStandard": "full-lesson-v1",
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "國中數學 1B 第4章第2節（公開教學影片頁）",
+      "subject": "math",
+      "chapterLocator": "一元一次不等式／4-2 解一元一次不等式及其應用",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1B/4-2/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開頁面分成解一元一次不等式、應用問題、自我評量與自我挑戰；本課安排等式操作、負數乘除反向、數線與情境解讀。",
+      "copyrightBoundary": "只採公開章節節點作結構研究；正文、例題數值、互動選項、提示與回饋全部自編。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "不等號也能逐步整理",
+        "body": "不等式和方程式一樣可以逐步運算，但有一個關鍵差異：兩邊同乘或同除以負數時，不等號方向必須反轉。把這個規則和數線上的範圍連在一起，才能正確處理折扣、容量與最低分數等問題。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "保持大小關係的操作",
+        "body": "一元一次不等式的應用先把文字條件翻成符號，再解出可行範圍；例如容量上限、預算或最低需求都要保留單位與邊界。解出後用端點和一個範圍外數值測試，確認不等號方向、整數限制與原情境一致。"
+      },
+      {
+        "id": "worked",
+        "phase": "worked-example",
+        "heading": "例題：負數除法反向",
+        "body": "解 −2x＋6＞10。兩邊同減 6 得 −2x＞4，再同除以 −2，方向反轉為 x＜−2。選 x＝−3 代回：6＋6＝12＞10，成立；選邊界 −2 代回得到 10＞10 不成立，所以邊界是空心點。"
+      },
+      {
+        "id": "guided",
+        "phase": "guided-practice",
+        "heading": "每一步都標註運算理由",
+        "body": "先移除常數，再整理未知數係數；遇到負係數時停下來確認是否要反向。完成後選一個解集內的數與一個邊界數代回原不等式。若題目含整數、非負或上限限制，將代數解集與限制取交集後再用文字回答。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "從解集回答實際問題",
+        "body": "例如預算不超過 500 元、至少需要 8 小時或溫度低於某值，都可先建立不等式再求範圍。回答時要回到題目單位，並說明是否包含邊界；若要求最多幾件商品，還要取符合範圍的最大整數，而不是直接四捨五入。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "代數與數線雙重驗證",
+        "body": "最後檢查四件事：負數乘除是否反向、邊界是否包含、箭頭是否正確、代入測試是否符合原式。若其中一項不一致，先回到發生負數運算的那一步重算。能完成這四項，才可把答案安全地帶回生活情境。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「一元一次不等式的解與應用」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「一元一次不等式的解與應用」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「一元一次不等式的解與應用」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「一元一次不等式的解與應用」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+      }
+    ]
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+  },
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-08-27",
+  "interactive": {
+    "type": "algebra-expression-builder",
+    "scenario": "逐步解 −2x＋6＞10，注意除以負數要反轉方向。",
+    "variables": [
+      {
+        "symbol": "x",
+        "meaning": "待求的數值"
+      }
+    ],
+    "goal": "用三步驟理解「A-7-8：一元一次不等式的解與應用」。",
+    "steps": [
+      {
+        "id": "step-1",
+        "prompt": "第一步要先辨認什麼？",
+        "options": [
+          "條件與式子結構",
+          "無關數字"
+        ],
+        "answer": "A",
+        "feedback": "先確認未知量、符號與式子結構。"
+      },
+      {
+        "id": "step-2",
+        "prompt": "第二步應採用什麼？",
+        "options": [
+          "對應規則逐步運算",
+          "直接猜結果"
+        ],
+        "answer": "A",
+        "feedback": "依不等式或乘法公式規則計算。"
+      },
+      {
+        "id": "step-3",
+        "prompt": "最後如何檢查？",
+        "options": [
+          "代入、數線或展開結果驗證",
+          "跳過驗證"
+        ],
+        "answer": "A",
+        "feedback": "確認結果符合原式與情境。"
+      }
+    ]
+  },
+  "lessonScope": "learning-content"
+}

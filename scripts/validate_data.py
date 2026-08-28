@@ -63,6 +63,7 @@ def main() -> int:
 
     for path, data in parsed.items():
         rel = path.relative_to(ROOT).as_posix()
+        parts = rel.split("/")
         schema_path = None
         if rel.startswith("curriculum/"):
             schema_path = SCHEMA_DIR / "curriculum.schema.json"
@@ -78,6 +79,14 @@ def main() -> int:
                 if str(data.get("id", "")).startswith("mapset-")
                 else "textbook-mapping.schema.json"
             )
+        elif rel.startswith("canonical-units/"):
+            schema_path = SCHEMA_DIR / (
+                "curriculum-unit-mapping.schema.json"
+                if str(data.get("id", "")).startswith("unit-map-")
+                else "canonical-unit.schema.json"
+            )
+        elif rel.startswith("migrations/") and path.name == "math-question-migration-pilot.json":
+            schema_path = SCHEMA_DIR / "question-migration-manifest.schema.json"
         if schema_path and schema_path.exists():
             validate(path, schema_path, errors)
 
@@ -114,6 +123,35 @@ def main() -> int:
                         if item_id not in kg_ids:
                             errors.append(f"{path}: missing mapping KG endpoint {item_id}")
 
+    canonical_units = {
+        data.get("id"): data
+        for path, data in parsed.items()
+        if path.relative_to(ROOT).parts[0] == "canonical-units"
+        and str(data.get("id", "")).startswith("canonical-unit-")
+    }
+    curriculum_ids = {
+        data.get("id")
+        for path, data in parsed.items()
+        if path.relative_to(ROOT).parts[0] == "curriculum"
+    }
+    for path, data in parsed.items():
+        rel_parts = path.relative_to(ROOT).parts
+        if rel_parts and rel_parts[0] == "canonical-units" and str(data.get("id", "")).startswith("canonical-unit-"):
+            source = data.get("source", {})
+            if not str(source.get("url", "")).startswith(("http://", "https://")):
+                errors.append(f"{path}: canonical unit missing public source URL")
+            if not str(source.get("locator", "")).strip():
+                errors.append(f"{path}: canonical unit missing source locator")
+            if data.get("teachable") is False and data.get("status") == "verified":
+                errors.append(f"{path}: classification-only unit cannot be verified as teachable")
+        if rel_parts and rel_parts[0] == "canonical-units" and str(data.get("id", "")).startswith("unit-map-"):
+            if data.get("unitId") not in canonical_units:
+                errors.append(f"{path}: missing canonical unit {data.get('unitId')}")
+            elif canonical_units[data.get("unitId")].get("teachable") is False and data.get("relation") != "classifies":
+                errors.append(f"{path}: non-teachable unit must use relation=classifies")
+            for curriculum_id in data.get("curriculumIds", []):
+                if curriculum_id not in curriculum_ids:
+                    errors.append(f"{path}: missing curriculum endpoint {curriculum_id}")
     lesson_question_counts: dict[str, int] = {}
     question_signatures: dict[tuple[str, tuple], Path] = {}
     question_prompts: dict[tuple[str, str], Path] = {}
