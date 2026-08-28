@@ -2,40 +2,41 @@
   "id": "question-english-language-domain-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "下列哪一項最符合本單元的學習目標？",
+  "prompt": "A student reads an English notice, discusses it with a partner, and writes a short response. Which abilities are being combined?",
   "options": [
     {
       "id": "A",
-      "text": "只看單元名稱，不讀題幹中的條件、資料或例證。"
+      "text": "Only drawing."
     },
     {
       "id": "B",
-      "text": "能根據題目條件說明「語文領域－英語文」的相關關係或做出合理判斷。"
+      "text": "Only memorizing a date."
     },
     {
       "id": "C",
-      "text": "把與本單元無關的資訊當成唯一依據，跳過比較與驗證。"
+      "text": "No language ability."
     },
     {
       "id": "D",
-      "text": "不檢查限制或證據，直接依直覺選擇看起來熟悉的敘述。"
+      "text": "Reading, speaking, and writing."
     }
   ],
   "knowledgeIds": [
     "kg-english-learning-focus"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "本題以官方課綱單元「語文領域－英語文」為範圍；正解要求使用題幹條件與可檢查的推理。其餘選項都略過條件、證據或驗證，不能支持可靠判斷。"
+    "value": "D",
+    "explanation": "The student reads, discusses, and writes, so three language abilities are combined."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.k12ea.gov.tw/Tw/Common/SinglePage?filter=11C2C6C1-D64E-475E-916B-D20C83896343",
-    "sourceLocator": "web-source-comparison 2026-08-27; 官方課綱索引「一、課程綱要」第 9 項; official code 語文領域－英語文"
+    "sourceUrl": "https://cap.rcpet.edu.tw/index.html",
+    "sourceLocator": "國中教育會考官方入口與官方課綱索引；研究閱讀、聽說互動、寫作目的、資訊查核與學習反思；課綱：https://www.k12ea.gov.tw/Tw/Common/SinglePage?filter=11C2C6C1-D64E-475E-916B-D20C83896343",
+    "authoringNote": "自編英語領域整合情境與選項，未重製公開試題文字、選項或圖片；待第二輪 AI 內容複核。"
   },
-  "reviewStatus": "deprecated",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-28",
   "lessonId": "lesson-english-language-domain"
 }
