@@ -2,23 +2,23 @@
   "id": "question-math-performance-s-iv-15-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "長方體長 4、寬 3、高 2，體積為何？",
+  "prompt": "若直線 l 與平面 α 內的一條直線平行，能否直接判定 l 與平面 α 平行？",
   "options": [
     {
       "id": "A",
-      "text": "9"
+      "text": "能，因為只要與平面內任一直線平行即可"
     },
     {
       "id": "B",
-      "text": "12"
+      "text": "不能，還需確認 l 不在 α 內且與 α 內兩條相交直線平行或符合其他判定條件"
     },
     {
       "id": "C",
-      "text": "18"
+      "text": "能，因為所有直線都與某個平面平行"
     },
     {
       "id": "D",
-      "text": "24"
+      "text": "不能，因為直線不可能與平面有關"
     }
   ],
   "knowledgeIds": [
@@ -26,8 +26,8 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "體積＝長×寬×高＝4×3×2＝24。"
+    "value": "B",
+    "explanation": "直線只與平面內一條直線平行，仍可能與平面相交；不能僅憑一條平行線判定直線與平面平行。"
   },
   "provenance": {
     "origin": "original",
