@@ -4,7 +4,7 @@
 
 | 風險 | 數量 |
 |---|---:|
-| cross-lesson-identical-option-set | 73 |
+| cross-lesson-identical-option-set | 16 |
 | draft-marker-in-title | 70 |
 
 ## 範例檔案（每類最多 20 筆）
@@ -26,10 +26,6 @@
 - `questions/math/question-math-content-s-9-10-3.json`
 - `questions/math/question-math-content-s-8-10-2.json`
 - `questions/math/question-math-performance-n-iv-5-8.json`
-- `questions/english/question-english-content-ae-iv-2-9.json`
-- `questions/english/question-english-content-ae-iv-8-9.json`
-- `questions/english/question-english-content-ae-iv-5-9.json`
-- `questions/english/question-english-content-ae-iv-6-2.json`
 
 ### draft-marker-in-title
 - `lessons/chinese/lesson-chinese-performance-5-iv-2.json`

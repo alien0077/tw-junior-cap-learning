@@ -17,14 +17,6 @@ KEEP = {
     "lesson-english-content-ac-iv-2",
     "lesson-english-content-ac-iv-3",
     "lesson-english-content-ae-iv-1",
-    "lesson-english-content-ae-iv-2",
-    "lesson-english-content-ae-iv-3",
-    "lesson-english-content-ae-iv-4",
-    "lesson-english-content-ae-iv-5",
-    "lesson-english-content-ae-iv-6",
-    "lesson-english-content-ae-iv-7",
-    "lesson-english-content-ae-iv-8",
-    "lesson-english-content-ae-iv-9",
 }
 
 
