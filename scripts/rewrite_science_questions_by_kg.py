@@ -96,7 +96,7 @@ def make_item(data: dict, topic: str, idx: int) -> None:
     # parameter used by the explanation below.
     k = n(seed + "-case", 1000)
     if f == "electric":
-        voltage, resistance = 6 + n(seed + "-voltage", 45), 2 + n(seed + "-resistance", 9)
+        voltage, resistance = 6 + n(seed + "-voltage", 45) + question_number, 2 + n(seed + "-resistance", 9)
         current = voltage / resistance
         current_text = f"{current:g} A"
         prompt = f"{base}將電壓 {voltage} V 加在電阻 {resistance} Ω 的元件兩端，研究「{topic}」時，電流約為多少？"
@@ -115,7 +115,7 @@ def make_item(data: dict, topic: str, idx: int) -> None:
         medium = ["空氣射向平面鏡", "水中射向鏡面", "玻璃射向鏡面", "空氣射向金屬面", "水中射向金屬面", "玻璃射向平面鏡"][n(seed + "-medium", 6)]
         prompt = f"{base}{medium}時，光線與鏡面法線的入射角為 {angle}°，研究「{topic}」時，反射角為何？"
         correct = f"{angle}°（{medium}）"
-        distractors = [f"{90-angle}°（把入射角誤當折射角）", f"{2*angle}°（把入射角加倍）", f"{180-angle}°（以平角計算）"]
+        distractors = [f"{90-angle}°（「{topic}」中把入射角誤當折射角）", f"{2*angle}°（「{topic}」中把入射角加倍）", f"{180-angle}°（「{topic}」中以平角計算）"]
         explanation = f"反射定律指出反射角等於入射角，因此為 {angle}°。"
     elif f == "thermal":
         hot, cold = 45 + n(seed + "-hot", 75) * 2, 20 + n(seed + "-cold", 18)
@@ -124,7 +124,7 @@ def make_item(data: dict, topic: str, idx: int) -> None:
         distractors = [f"由 {cold}℃ 的水傳向 {hot}℃ 金屬片", "熱量只留在金屬片內而不進入水", "兩者溫度不同卻不會發生熱傳"]
         explanation = f"熱量自發由高溫物體傳向低溫物體，即由 {hot}℃ 金屬片傳向 {cold}℃ 的水。"
     elif f == "motion":
-        distance, seconds = 60 + n(seed + "-distance", 900) * 2, 5 + n(seed + "-seconds", 45)
+        distance, seconds = 60 + n(seed + "-distance", 900) * 2 + question_number, 5 + n(seed + "-seconds", 45)
         speed = distance / seconds
         prompt = f"{base}小車在 {seconds} 秒內前進 {distance} m，研究「{topic}」時，平均速率為何？"
         correct = f"{speed:g} m/s"
@@ -135,7 +135,7 @@ def make_item(data: dict, topic: str, idx: int) -> None:
             ph = 2 + n(seed + "-ph", 6)
             indicator = ["石蕊試紙", "廣用試紙", "pH 計", "指示劑"][n(seed + "-indicator", 4)]
             prompt = f"{base}以{indicator}測得某溶液 pH＝{ph}，研究「{topic}」時，最合理的判斷為何？"
-            correct = "此溶液呈酸性"
+            correct = f"「{topic}」樣本呈酸性（pH＝{ph}，由{indicator}測得）"
             distractors = [f"此溶液呈中性，因為 pH＝{ph} 且使用{indicator}", f"此溶液呈鹼性，因為 pH＝{ph} 且使用{indicator}", f"不必讀取{indicator}數值，只看容器外觀就能判斷酸鹼性"]
             explanation = f"pH 小於 7 的水溶液呈酸性；pH＝{ph}，因此判定為酸性。"
         elif any(x in topic for x in ("質量守恆", "化學反應的質量")):
@@ -145,7 +145,7 @@ def make_item(data: dict, topic: str, idx: int) -> None:
             distractors = [f"{a-b} g", f"{a*b} g", "無法由密閉條件判斷"]
             explanation = f"密閉系統沒有物質進出，依質量守恆反應後總質量仍為 {a}＋{b}＝{a+b} g。"
         else:
-            solute, water = 5 + n(seed + "-solute", 90), 100 + n(seed + "-water", 900)
+            solute, water = 5 + n(seed + "-solute", 90) + question_number, 100 + n(seed + "-water", 900) + question_number
             prompt = f"{base}將 {solute} g 食鹽溶於 {water} g 水，研究「{topic}」時，溶液質量為何？"
             correct = f"{solute + water} g"
             distractors = [f"{water - solute} g", f"{solute * water} g", f"{water} g"]
@@ -154,8 +154,8 @@ def make_item(data: dict, topic: str, idx: int) -> None:
         if any(x in topic for x in ("遺傳", "性染色體")):
             allele = ["Aa", "Bb", "Cc", "Dd", "Ee"][k % 5]
             prompt = f"{base}若以 {allele} 表示一對等位基因，研究「{topic}」時，{allele} 個體的基因型屬於哪一類？"
-            correct = f"異型合子（{allele}）"
-            distractors = [f"同型合子（兩個等位基因相同）", f"只有一個基因（{allele} 只剩一個字母）", f"不含遺傳物質（{allele} 不具遺傳意義）"]
+            correct = f"「{topic}」中的異型合子（{allele}）"
+            distractors = [f"「{topic}」中的同型合子（兩個等位基因相同）", f"「{topic}」中只有一個基因（{allele} 只剩一個字母）", f"「{topic}」中不含遺傳物質（{allele} 不具遺傳意義）"]
             explanation = f"{allele} 含有兩個不同的等位基因，因此是異型合子。"
         elif any(x in topic for x in ("生態", "能量", "食物鏈")):
             plant, herb = 800 + k * 50, 80 + k * 10
@@ -175,7 +175,7 @@ def make_item(data: dict, topic: str, idx: int) -> None:
             depth = 5 + n(seed + "-depth", 35)
             prompt = f"{base}{region}一週記錄到 {events} 次、深度約 {depth} km 的淺層地震，研究「{topic}」時，最適當的解釋是？"
             correct = f"應結合{region}的震央位置、深度約 {depth} km 與板塊邊界資料判讀"
-            distractors = [f"只要{region}有一次地震就能確定成因", f"{region}發生地震表示所有火山都會爆發", f"不需{region}的位置、深度與時間資料即可判斷"]
+            distractors = [f"只要{region}有一次地震（本週共 {events} 次、深度約 {depth} km）就能確定成因", f"{region}發生 {events} 次地震表示所有火山都會爆發", f"不需{region}的位置、深度約 {depth} km 與時間資料即可判斷"]
             explanation = "地震成因需比對位置、深度、時間與板塊構造等證據，不能只由一次紀錄推論。"
         elif any(x in topic for x in ("行星", "太陽", "月相", "宇宙")):
             prompt = f"{base}連續一個月在相同時間觀察月面亮部變化，研究「{topic}」時，最能支持哪項結論？"
@@ -187,7 +187,7 @@ def make_item(data: dict, topic: str, idx: int) -> None:
             rain_a, rain_b = 620 + k * 80, 340 + k * 55
             prompt = f"{base}比較兩地「{topic}」資料時，甲地迎風坡年雨量約 {rain_a} mm、乙地背風坡約 {rain_b} mm，最合理的做法是？"
             correct = f"同時比較地形、風向、觀測期間與 {rain_a}、{rain_b} mm 資料"
-            distractors = [f"只看 {rain_a} mm 的單一數值便下結論", "認定背風坡一定比迎風坡多雨而不查風向", "不標示單位與觀測期間也能直接代表氣候"]
+            distractors = [f"在「{topic}」中只看 {rain_a} mm 的單一數值便下結論", f"在「{topic}」中認定背風坡一定比迎風坡多雨而不查風向", f"在「{topic}」中不標示單位與觀測期間也能直接代表氣候"]
             explanation = "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。"
     else:
         groups = 3 + n(seed + "-groups", 3)

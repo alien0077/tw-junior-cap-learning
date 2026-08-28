@@ -4,32 +4,32 @@
 
 | 風險 | 數量 |
 |---|---:|
-| cross-lesson-identical-option-set | 196 |
+| cross-lesson-identical-option-set | 73 |
 | draft-marker-in-title | 70 |
 
 ## 範例檔案（每類最多 20 筆）
 
 ### cross-lesson-identical-option-set
-- `questions/science/question-science-content-ka-iv-3-2.json`
-- `questions/science/question-science-content-ka-iv-1-5.json`
-- `questions/science/question-science-content-ga-iv-3-4.json`
-- `questions/science/question-science-content-ga-iv-6-9.json`
-- `questions/science/question-science-content-jb-iv-3-4.json`
-- `questions/science/question-science-content-e-5.json`
-- `questions/science/question-science-content-ka-iv-5-4.json`
-- `questions/science/question-science-content-ka-iv-1-4.json`
-- `questions/science/question-science-content-ba-iv-2-4.json`
-- `questions/science/question-science-content-ka-iv-6-8.json`
-- `questions/science/question-science-content-ga-6.json`
-- `questions/science/question-science-content-ga-iv-6-8.json`
-- `questions/science/question-science-content-nb-3.json`
-- `questions/science/question-science-content-fb-6.json`
-- `questions/science/question-science-content-jd-iv-1-3.json`
-- `questions/science/question-science-content-jd-7.json`
-- `questions/science/question-science-content-jd-iv-5-4.json`
-- `questions/science/question-science-content-jd-iv-1-2.json`
-- `questions/science/question-science-content-jd-iv-1-10.json`
-- `questions/science/question-science-content-ina-iv-5-9.json`
+- `questions/math/question-math-performance-s-3.json`
+- `questions/math/question-math-content-s-8-7-10.json`
+- `questions/math/question-math-performance-s-iv-2-6.json`
+- `questions/math/question-math-content-s-8-2-4.json`
+- `questions/math/question-math-content-s-9-13-9.json`
+- `questions/math/question-math-performance-s-iv-6-8.json`
+- `questions/math/question-math-domain-4.json`
+- `questions/math/question-math-content-d-9-3-8.json`
+- `questions/math/question-math-performance-s-iv-1-8.json`
+- `questions/math/question-math-content-s-8-2-2.json`
+- `questions/math/question-math-performance-s-8.json`
+- `questions/math/question-math-content-s-8-8-5.json`
+- `questions/math/question-math-performance-s-iv-11-7.json`
+- `questions/math/question-math-content-s-9-10-3.json`
+- `questions/math/question-math-content-s-8-10-2.json`
+- `questions/math/question-math-performance-n-iv-5-8.json`
+- `questions/english/question-english-content-ae-iv-2-9.json`
+- `questions/english/question-english-content-ae-iv-8-9.json`
+- `questions/english/question-english-content-ae-iv-5-9.json`
+- `questions/english/question-english-content-ae-iv-6-2.json`
 
 ### draft-marker-in-title
 - `lessons/chinese/lesson-chinese-performance-5-iv-2.json`
