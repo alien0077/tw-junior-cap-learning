@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-4-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「S-8-4：全等圖形」進行ASA 判定時，哪一項做法正確？",
+  "prompt": "判定兩三角形全等時，『兩邊及夾角相等』對應哪種判定？",
   "options": [
     {
       "id": "A",
-      "text": "先建立對應關係，再依充分條件逐步驗證"
+      "text": "SSS"
     },
     {
       "id": "B",
-      "text": "只憑外觀或單一角度判斷"
+      "text": "SAS"
     },
     {
       "id": "C",
-      "text": "混淆相似與全等的結論"
+      "text": "ASA"
     },
     {
       "id": "D",
-      "text": "忽略對應順序與已知條件"
+      "text": "AA"
     }
   ],
   "knowledgeIds": [
@@ -26,16 +26,17 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「S-8-4：全等圖形」的ASA 判定必須依定義、對應關係與充分條件驗證。"
+    "value": "B",
+    "explanation": "兩邊及其夾角相等是 SAS 全等判定。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-s-8-4"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 全等圖形 題型與官方課綱 KG kg-math-content-s-8-4",
+    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-29",
   "lessonId": "lesson-math-content-s-8-4"
 }
