@@ -1809,3 +1809,10 @@
 - 問題：手機畫面顯示的 10 題因式分解題來自 `lesson-math-factorization-common-factor`，與另一個 `content-a-8-4` 題組共用同一 KG，造成搜尋結果出現高度重複題目；舊題雖有答案，仍不符合本專案「同課及跨課避免模板重用」的 QA 要求。
 - 處理方式：保留既有 question ID，參考官方會考與公立國中段考的代數能力方向，以全新數值、情境、選項、答案與解析改寫 10 題；不複製公開試題文字、圖表、選項或答案，並將內容狀態維持 `draft`。
 - 驗證：全量資料 validator、網站索引 validator、選項／答案對齊與 git diff check 通過；尚未完成 Terra 第二輪內容複核，不升級為 `content-reviewed`。
+
+## D-272：部署索引內嵌教材資料
+
+- 日期：2026-08-29
+- 問題：公開 Pages 頁面原先由 `data-index.json` 載入題目，但再透過 `raw.githubusercontent.com` 逐課載入教材；raw 網域受限時，整頁會停留在「正在載入資料」。
+- 處理方式：部署索引的 lesson 項目直接保留完整教材資料；前端優先使用索引內嵌教材，只有舊索引沒有 `content` 時才退回原本的 raw fallback。
+- 驗證：本機索引包含 1,034 課、10,380 題；`validate_site_index.py`、`validate_data.py`、Python 編譯、`node --check` 與本機頁面載入均通過。公開頁面需待此次部署後重新 smoke test。

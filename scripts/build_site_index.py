@@ -57,11 +57,7 @@ def build_index(revision: str) -> dict:
                 continue
             lessons.append(
                 {
-                    "id": lesson["id"],
-                    "subject": lesson["subject"],
-                    "title": lesson["title"],
-                    "knowledgeIds": lesson["knowledgeIds"],
-                    "gradeRange": lesson.get("gradeRange", []),
+                    **lesson,
                     "summary": lesson["content"]["summary"],
                     "path": relative(path),
                     "questionPaths": sorted(question_paths[lesson["id"]]),
