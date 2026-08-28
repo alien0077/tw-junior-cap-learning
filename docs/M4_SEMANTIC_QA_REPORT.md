@@ -4,7 +4,7 @@
 
 | 風險 | 數量 |
 |---|---:|
-| cross-lesson-identical-option-set | 8242 |
+| cross-lesson-identical-option-set | 4652 |
 | draft-marker-in-title | 70 |
 
 ## 範例檔案（每類最多 20 筆）
