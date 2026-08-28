@@ -2,40 +2,41 @@
   "id": "question-math-content-g-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「G：坐標幾何」進行概念辨識時，哪一項做法正確？",
+  "prompt": "點 A(2,3) 與 B(7,3) 的水平距離為何？",
   "options": [
     {
       "id": "A",
-      "text": "先確認定義與條件，再依規則完成並檢查"
+      "text": "3"
     },
     {
       "id": "B",
-      "text": "忽略條件直接猜測"
+      "text": "5"
     },
     {
       "id": "C",
-      "text": "只記結果不寫步驟"
+      "text": "7"
     },
     {
       "id": "D",
-      "text": "不驗算或列出證據"
+      "text": "10"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-g"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「G：坐標幾何」的概念辨識需依定義與條件逐步處理，並用可檢驗證據確認。"
+    "value": "B",
+    "explanation": "兩點 y 坐標相同，距離為 |7−2|=5。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-g"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 坐標幾何 題型與官方課綱 KG kg-math-content-g",
+    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-29",
   "lessonId": "lesson-math-content-g"
 }

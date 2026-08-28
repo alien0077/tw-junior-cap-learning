@@ -2,23 +2,23 @@
   "id": "question-math-content-s-7-1-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「S-7-1：簡單圖形與幾何符號」進行位置關係時，哪一項做法正確？",
+  "prompt": "線段 AB 的長度為 9 公分，則 BA 長度為何？",
   "options": [
     {
       "id": "A",
-      "text": "先確認圖形元素與視角，再依符號或視圖互相驗證"
+      "text": "－9 公分"
     },
     {
       "id": "B",
-      "text": "忽略視角任意判斷"
+      "text": "4.5 公分"
     },
     {
       "id": "C",
-      "text": "把不同幾何符號視為相同"
+      "text": "9 公分"
     },
     {
       "id": "D",
-      "text": "不檢查各視圖是否一致"
+      "text": "18 公分"
     }
   ],
   "knowledgeIds": [
@@ -26,16 +26,17 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「S-7-1：簡單圖形與幾何符號」的位置關係需依幾何約定與視圖線索推理，並以另一表示檢查。"
+    "value": "C",
+    "explanation": "同一線段反向命名不改變長度，BA=AB=9 公分。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-s-7-1"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 簡單圖形與幾何符號 題型與官方課綱 KG kg-math-content-s-7-1",
+    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-29",
   "lessonId": "lesson-math-content-s-7-1"
 }
