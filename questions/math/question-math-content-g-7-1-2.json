@@ -2,40 +2,41 @@
   "id": "question-math-content-g-7-1-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「G-7-1：平面直角坐標系」進行座標軸時，哪一項做法正確？",
+  "prompt": "點 P(4,－3) 位於哪一個象限？",
   "options": [
     {
       "id": "A",
-      "text": "先確認有序數對與座標軸，再依差值或圖形計算並驗證"
+      "text": "第一象限"
     },
     {
       "id": "B",
-      "text": "把 x、y 順序任意交換"
+      "text": "第二象限"
     },
     {
       "id": "C",
-      "text": "忽略平方與開根號步驟"
+      "text": "第三象限"
     },
     {
       "id": "D",
-      "text": "不檢查象限或結果"
+      "text": "第四象限"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-g-7-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「G-7-1：平面直角坐標系」的座標軸必須遵守座標順序與距離關係，並用圖形或計算檢查。"
+    "value": "D",
+    "explanation": "x>0 且 y<0，故 P 位於第四象限。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-g-7-1"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平面直角坐標系 題型與官方課綱 KG kg-math-content-g-7-1",
+    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-29",
   "lessonId": "lesson-math-content-g-7-1"
 }
