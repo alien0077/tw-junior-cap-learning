@@ -54,9 +54,11 @@ COMM = [
 ]
 
 def choose_bank(topic):
-    if any(k in topic for k in ["閱讀", "故事", "短文", "主旨", "人物", "事件", "書信", "段落"]): return READING
-    if any(k in topic for k in ["字彙", "詞義", "字典", "單字", "拼字", "詞語"]): return VOCAB
-    if any(k in topic for k in ["文法", "句型", "時態", "語序", "助動詞", "比較", "疑問"]): return GRAMMAR
+    if any(k in topic for k in ["閱讀", "故事", "短文", "主旨", "人物", "事件", "書信", "段落", "文章", "圖表", "標示", "廣播", "影片", "歌謠", "韻文", "短劇", "公告", "訊息"]): return READING
+    if any(k in topic for k in ["字彙", "詞義", "字典", "單字", "拼字", "詞語", "拼寫", "發音"]): return VOCAB
+    if any(k in topic for k in ["文法", "句型", "時態", "語序", "助動詞", "比較", "疑問", "書寫", "中翻英", "格式"]): return GRAMMAR
+    if any(k in topic for k in ["節慶", "文化", "風土", "世界觀", "禮儀", "欣賞"]): return COMM
+    if any(k in topic for k in ["對話", "溝通", "討論", "用語", "描述", "提問", "回答", "角色", "情境"]): return COMM
     return COMM
 
 def rewrite(path):
