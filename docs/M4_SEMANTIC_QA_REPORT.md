@@ -4,55 +4,32 @@
 
 | 風險 | 數量 |
 |---|---:|
-| cross-lesson-identical-option-set | 4542 |
-| cross-lesson-semantic-skeleton | 24 |
+| cross-lesson-identical-option-set | 264 |
 | draft-marker-in-title | 70 |
 
 ## 範例檔案（每類最多 20 筆）
 
 ### cross-lesson-identical-option-set
-- `questions/science/question-science-content-dc-iv-1-5.json`
-- `questions/science/question-science-content-jf-6.json`
-- `questions/science/question-science-content-cb-iv-1-10.json`
-- `questions/science/question-science-content-dc-iv-1-8.json`
-- `questions/science/question-science-content-jb-iv-4-7.json`
-- `questions/science/question-science-content-fa-6.json`
-- `questions/science/question-science-content-jd-iv-4-6.json`
-- `questions/science/question-science-content-je-iv-1-10.json`
-- `questions/science/question-science-content-j-3.json`
-- `questions/science/question-science-content-cb-iv-1-7.json`
-- `questions/science/question-science-content-ja-iv-4-5.json`
-- `questions/science/question-science-content-cb-8.json`
-- `questions/science/question-science-content-je-iv-1-4.json`
-- `questions/science/question-science-content-aa-iv-5-1.json`
-- `questions/science/question-science-content-jf-iv-3-2.json`
-- `questions/science/question-science-content-jf-iv-2-7.json`
-- `questions/science/question-science-content-fa-4.json`
-- `questions/science/question-science-content-da-iv-3-6.json`
-- `questions/science/question-science-content-da-iv-2-2.json`
-- `questions/science/question-science-content-ga-iv-5-2.json`
-
-### cross-lesson-semantic-skeleton
-- `questions/english/question-english-content-ab-iv-2-6.json`
-- `questions/english/question-english-content-ab-iv-3-6.json`
-- `questions/english/question-english-content-ab-iv-1-6.json`
-- `questions/english/question-english-content-ab-iv-1-3.json`
-- `questions/english/question-english-content-ab-iv-3-3.json`
-- `questions/english/question-english-content-ab-iv-2-3.json`
-- `questions/english/question-english-content-ab-iv-1-10.json`
-- `questions/english/question-english-content-ab-iv-2-10.json`
-- `questions/english/question-english-content-ab-iv-3-10.json`
-- `questions/english/question-english-content-ab-iv-3-4.json`
-- `questions/english/question-english-content-ab-iv-1-4.json`
-- `questions/english/question-english-content-ab-iv-2-4.json`
-- `questions/english/question-english-content-ab-iv-1-5.json`
-- `questions/english/question-english-content-ab-iv-3-5.json`
-- `questions/english/question-english-content-ab-iv-2-5.json`
-- `questions/english/question-english-content-ab-iv-3-8.json`
-- `questions/english/question-english-content-ab-iv-1-8.json`
-- `questions/english/question-english-content-ab-iv-2-8.json`
-- `questions/english/question-english-content-ab-iv-1-9.json`
-- `questions/english/question-english-content-ab-iv-3-9.json`
+- `questions/science/question-science-content-ka-iv-3-2.json`
+- `questions/science/question-science-content-ka-iv-1-5.json`
+- `questions/science/question-science-content-ga-iv-3-4.json`
+- `questions/science/question-science-content-ga-iv-6-9.json`
+- `questions/science/question-science-content-jb-iv-3-4.json`
+- `questions/science/question-science-content-e-5.json`
+- `questions/science/question-science-content-ka-iv-5-4.json`
+- `questions/science/question-science-content-ka-iv-1-4.json`
+- `questions/science/question-science-content-ba-iv-2-4.json`
+- `questions/science/question-science-content-ka-iv-6-8.json`
+- `questions/science/question-science-content-ga-6.json`
+- `questions/science/question-science-content-ga-iv-6-8.json`
+- `questions/science/question-science-content-nb-3.json`
+- `questions/science/question-science-content-fb-6.json`
+- `questions/science/question-science-content-jd-iv-1-3.json`
+- `questions/science/question-science-content-jd-7.json`
+- `questions/science/question-science-content-jd-iv-5-4.json`
+- `questions/science/question-science-content-jd-iv-1-2.json`
+- `questions/science/question-science-content-jd-iv-1-10.json`
+- `questions/science/question-science-content-ina-iv-5-9.json`
 
 ### draft-marker-in-title
 - `lessons/chinese/lesson-chinese-performance-5-iv-2.json`
