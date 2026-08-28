@@ -10,27 +10,12 @@ window.heartAnatomyLab = () => `
       <div class="oxygen-key"><span class="blood deoxy"></span>含氧較少 <span class="blood oxy"></span>含氧較多</div>
     </div>
 
-    <div class="heart-view-tabs" role="group" aria-label="心臟立體視圖">
-      <button class="active" data-heart-view="threeD">心臟 3D</button>
-      <button data-heart-view="cutaway">剖面 3D</button>
-    </div>
-
     <div class="heart-3d-view" data-heart-3d-view>
       <div class="heart-3d-stage" aria-label="可自由旋轉的人類心臟三維模型">
         <model-viewer data-heart-3d-object title="可自由旋轉的人類心臟三維模型" src="assets/nih-heart-surface.glb" alt="面對人體的心臟正面三維模型，畫面左側可見上、下腔靜脈" camera-controls interaction-prompt="none" camera-orbit="0deg 90deg 105%" shadow-intensity="1" exposure="1.05"></model-viewer>
         <button class="reset-3d-view" data-heart-reset-view>回到面對人體視角</button>
       </div>
       <p>起始方向：上、下腔靜脈在畫面左側；拖曳可自由旋轉 360°。<a href="https://3d.nih.gov/entries/3DPX-022787/1.01" target="_blank" rel="noopener">外觀模型：NIH 3D（Public Domain）</a></p>
-    </div>
-
-    <div class="heart-3d-view" data-heart-cutaway-view hidden>
-      <div class="heart-3d-stage heart-cutaway-3d-stage" aria-label="可自由旋轉的心臟剖面視圖">
-        <div class="free-orbit" data-heart-free-orbit tabindex="0" role="application" aria-label="可拖曳旋轉的心臟剖面動畫">
-          <img src="assets/cg-heart-cutaway-cc-by-sa.gif" alt="面對人體方向的心臟剖面動畫，左側為上、下腔靜脈與右心房" />
-        </div>
-        <button class="reset-3d-view" data-heart-reset-cutaway>回到面對人體視角</button>
-      </div>
-      <p>起始方向同樣讓上、下腔靜脈位於畫面左側；可自由拖曳檢視。<a href="https://commons.wikimedia.org/wiki/File:CG_heart_2.gif" target="_blank" rel="noopener">剖面動畫：CG heart 2（CC BY-SA 4.0）</a></p>
     </div>
 
     <figure class="heart-flow-reference" aria-labelledby="heartFlowCaption">

@@ -404,6 +404,69 @@
         }
       }
     }
+    ,
+    "simulation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "engine",
+        "mode",
+        "goal",
+        "sourceRefs"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^sim-(math|science)-[a-z0-9-]+$"
+        },
+        "engine": {
+          "enum": [
+            "math-number-line",
+            "math-algebra-balance",
+            "math-function-graph",
+            "math-geometry",
+            "math-data-lab",
+            "math-probability-lab",
+            "science-motion-lab",
+            "science-energy-lab",
+            "science-particle-lab",
+            "science-life-system",
+            "science-earth-space",
+            "concept-explorer"
+          ]
+        },
+        "mode": {
+          "enum": [
+            "model",
+            "explorer"
+          ]
+        },
+        "goal": {
+          "type": "string",
+          "minLength": 12
+        },
+        "sourceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "format": "uri"
+          }
+        },
+        "mission": {
+          "type": "string",
+          "minLength": 12
+        },
+        "model": {
+          "type": "string",
+          "enum": [
+            "general",
+            "circulation"
+          ]
+        }
+      }
+    }
   },
   "allOf": [
     {
@@ -419,7 +482,8 @@
       },
       "then": {
         "required": [
-          "interactive"
+          "interactive",
+          "simulation"
         ]
       }
     },

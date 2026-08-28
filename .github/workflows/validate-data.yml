@@ -18,5 +18,7 @@ jobs:
           python-version: "3.12"
       - name: Install validator
         run: python -m pip install --disable-pip-version-check jsonschema
+      - name: Validate math and science simulation contracts
+        run: python scripts/validate_interactive_simulations.py
       - name: Validate repository data
         run: python scripts/validate_data.py

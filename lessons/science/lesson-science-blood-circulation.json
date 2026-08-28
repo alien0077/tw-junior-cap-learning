@@ -48,9 +48,52 @@
     "type": "guided-choice",
     "goal": "用血流方向與四個腔室的功能，判讀心臟循環路徑。",
     "steps": [
-      {"id":"step-1","prompt":"全身回流的血首先進入哪裡？","options":["右心房","左心房","右心室"],"answer":"A","feedback":"答對了！全身回流先經腔靜脈進入右心房。"},
-      {"id":"step-2","prompt":"右心室把血送往哪裡？","options":["肺部","全身組織","左心房"],"answer":"A","feedback":"答對了！右心室負責把血送往肺部進行氣體交換。"},
-      {"id":"step-3","prompt":"肺部交換後的血回到哪個心房？","options":["左心房","右心房","左心室"],"answer":"A","feedback":"答對了！含氧較多的血經肺靜脈回到左心房。"}
+      {
+        "id": "step-1",
+        "prompt": "全身回流的血首先進入哪裡？",
+        "options": [
+          "右心房",
+          "左心房",
+          "右心室"
+        ],
+        "answer": "A",
+        "feedback": "答對了！全身回流先經腔靜脈進入右心房。"
+      },
+      {
+        "id": "step-2",
+        "prompt": "右心室把血送往哪裡？",
+        "options": [
+          "肺部",
+          "全身組織",
+          "左心房"
+        ],
+        "answer": "A",
+        "feedback": "答對了！右心室負責把血送往肺部進行氣體交換。"
+      },
+      {
+        "id": "step-3",
+        "prompt": "肺部交換後的血回到哪個心房？",
+        "options": [
+          "左心房",
+          "右心房",
+          "左心室"
+        ],
+        "answer": "A",
+        "feedback": "答對了！含氧較多的血經肺靜脈回到左心房。"
+      }
+    ]
+  },
+  "simulation": {
+    "id": "sim-science-db-iv-2",
+    "engine": "science-life-system",
+    "mode": "model",
+    "model": "circulation",
+    "goal": "用血流方向與四個腔室的功能，判讀心臟循環路徑。",
+    "mission": "先提出預測，再只改變一項條件，記錄可觀察的改變並用證據解釋。",
+    "sourceRefs": [
+      "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A中等學校-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "https://3d.nih.gov/entries/3DPX-022787/1.01",
+      "https://zh.wikipedia.org/zh-tw/%E5%B7%A6%E5%BF%83%E5%AE%A4"
     ]
   }
 }
