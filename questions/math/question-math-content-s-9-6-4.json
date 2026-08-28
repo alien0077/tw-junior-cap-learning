@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-6-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「S-9-6：圓的幾何性質」進行圓心角圓周角時，哪一項做法正確？",
+  "prompt": "同一圓中，某弧所對的圓心角為 80°，同弧所對的圓周角為何？",
   "options": [
     {
       "id": "A",
-      "text": "先辨認圓幾何元素，再依角度或比例性質驗證"
+      "text": "20°"
     },
     {
       "id": "B",
-      "text": "只憑圖形外觀猜測"
+      "text": "40°"
     },
     {
       "id": "C",
-      "text": "混淆弧長、弦長與圓周角"
+      "text": "80°"
     },
     {
       "id": "D",
-      "text": "忽略半徑、位置或單位"
+      "text": "160°"
     }
   ],
   "knowledgeIds": [
@@ -26,16 +26,17 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「S-9-6：圓的幾何性質」的圓心角圓周角需依圓幾何定義與條件逐步判斷。"
+    "value": "B",
+    "explanation": "同弧的圓周角等於圓心角的一半，為 40°。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-s-9-6"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 圓的幾何性質 題型與官方課綱 KG kg-math-content-s-9-6",
+    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-28",
   "lessonId": "lesson-math-content-s-9-6"
 }
