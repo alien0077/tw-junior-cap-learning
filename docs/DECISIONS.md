@@ -1817,3 +1817,10 @@
 - 處理方式：部署索引的 lesson 項目直接保留完整教材資料；前端優先使用索引內嵌教材，只有舊索引沒有 `content` 時才退回原本的 raw fallback。
 - 驗證：本機索引包含 1,034 課、10,380 題；`validate_site_index.py`、`validate_data.py`、Python 編譯、`node --check` 與本機頁面載入均通過。公開頁面需待此次部署後重新 smoke test。
 - 公開驗證補充：以唯讀下載核對 Pages `data-index.json` 的 `sourceRevision=fe163d62a`、1,034 課、內嵌教材、新數學題存在及舊題不存在；瀏覽器端因約 21 MB 索引可能逾時，故保留該工具限制註記。
+
+## D-273：公開資料改採同網域分片載入
+
+- 日期：2026-08-29
+- 問題：D-272 的完整內嵌索引雖能避開 raw 網域依賴，但約 21 MB 的單一索引仍可能造成公開頁面首次載入逾時。
+- 處理方式：保留輕量 lesson／question 索引，另外產生五個教材分片及五個題目分片；前端以同網域 `Promise.all` 載入，並保留舊索引相容路徑。
+- 驗證：本機 `validate_site_index.py`、`validate_data.py`、`node --check site/app.js`、頁面 runtime 均通過；公開 `7aeb8ddbc` 的索引回報 1,034 課、10,380 題，10 個分片端點均 HTTP 200；GitHub Actions `validate-data` run `33198152630` 與 `deploy-pages` run `33198152644` 成功。
