@@ -30,6 +30,7 @@ for p in (ROOT / "lessons").glob("*/*.json"):
 
 prompt_groups = collections.defaultdict(list)
 semantic_groups = collections.defaultdict(list)
+option_groups = collections.defaultdict(list)
 for p in (ROOT / "questions").glob("*/*.json"):
     d = json.loads(p.read_text())
     if d.get("reviewStatus") != "draft":
@@ -41,6 +42,12 @@ for p in (ROOT / "questions").glob("*/*.json"):
     skeleton = re.sub(r"\d+(?:\.\d+)?", "#", d.get("prompt", ""))
     skeleton = re.sub(r"\s+", " ", skeleton).strip()
     semantic_groups[(d.get("subject"), skeleton)].append(p)
+    # Exact option tuples reused across lessons are a stronger signal than a
+    # prompt that merely shares a broad skill.  A common answer format may be
+    # pedagogically valid, but it must be reviewed rather than hidden by a
+    # different date or KG label.
+    option_key = (d.get("subject"), tuple(o.get("text", "") for o in d.get("options", [])))
+    option_groups[option_key].append(p)
     opts = d.get("options", [])
     if len(opts) < 2:
         flag("question-fewer-than-2-options", p)
@@ -57,6 +64,11 @@ for (_, _), paths in semantic_groups.items():
     if len(lesson_ids) >= 2 and len(paths) >= 3:
         for p in paths:
             flag("cross-lesson-semantic-skeleton", p)
+for (_, _), paths in option_groups.items():
+    lesson_ids = {json.loads(p.read_text(encoding="utf-8")).get("lessonId") for p in paths}
+    if len(lesson_ids) >= 2 and len(paths) >= 2:
+        for p in paths:
+            flag("cross-lesson-identical-option-set", p)
 
 lines = ["# M4 Semantic Risk Report", "", "本報告由 deterministic scan 產生，只排序風險，不會自動升級任何 reviewStatus。", "", "| 風險 | 數量 |", "|---|---:|"]
 for k, n in sorted(risks.items()):
