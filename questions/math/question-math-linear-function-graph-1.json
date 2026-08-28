@@ -1,8 +1,41 @@
 {
-  "id":"question-math-linear-function-graph-1","subject":"math","type":"single-choice",
-  "prompt":"【107 年國中教育會考數學科第 2 題】已知坐標平面上，一次函數 y=3x+a 的圖形通過點 (0,-4)，a 為何？",
-  "options":[{"id":"A","text":"-12"},{"id":"B","text":"-4"},{"id":"C","text":"4"},{"id":"D","text":"12"}],
-  "knowledgeIds":["kg-math-content-f-8-2"],"difficulty":"easy","answer":{"value":"B","explanation":"把 (0,-4) 代入 y=3x+a，得到 -4=3×0+a，所以 a=-4。"},
-  "provenance":{"origin":"official-open","license":"依法令舉行之國中教育會考試題；依著作權法第9條第1項第5款核對","sourceUrl":"https://kaonow.com/paper/cap-107-math/","sourceLocator":"107 年國中教育會考數學科第 2 題；頁面列示官方答案 B"},
-  "reviewStatus":"draft","updatedAt":"2026-08-28","lessonId":"lesson-math-linear-function-graph"
+  "id": "question-math-linear-function-graph-1",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "一次函數 y=2x-5 的圖形通過下列哪一點？",
+  "options": [
+    {
+      "id": "A",
+      "text": "(2,0)"
+    },
+    {
+      "id": "B",
+      "text": "(0,5)"
+    },
+    {
+      "id": "C",
+      "text": "(3,1)"
+    },
+    {
+      "id": "D",
+      "text": "(4,4)"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-f-8-2"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "B",
+    "explanation": "將各點代入 y=2x-5，(3,1) 使 1=6-5 成立。"
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "114年國中教育會考數學科；第6題坐標平面代入題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；另參考高雄市立鹽埕國中公開數學段考之坐標與函數能力方向；獨立改編，非原題重製。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-28",
+  "lessonId": "lesson-math-linear-function-graph"
 }

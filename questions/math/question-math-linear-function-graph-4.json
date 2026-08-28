@@ -1,8 +1,41 @@
 {
-  "id":"question-math-linear-function-graph-4","subject":"math","type":"single-choice",
-  "prompt":"某薪資調整是一次函數：原薪資 28000 元調整後為 35600 元，原薪資 30000 元調整後為 38000 元。原薪資 36000 元調整後為多少元？",
-  "options":[{"id":"A","text":"42000"},{"id":"B","text":"45200"},{"id":"C","text":"45280"},{"id":"D","text":"46800"}],
-  "knowledgeIds":["kg-math-content-f-8-2"],"difficulty":"medium","answer":{"value":"B","explanation":"斜率=(38000-35600)/(30000-28000)=1.2；截距=35600-1.2×28000=2000。原薪資 36000 時為 1.2×36000+2000=45200。"},
-  "provenance":{"origin":"original","license":"All rights reserved","sourceUrl":"https://www.csjh.kh.edu.tw/teach/exam/107%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83/%E6%95%B8%E5%AD%B8/%E4%B8%80%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E8%A9%A6%E9%A1%8CB4.pdf","sourceLocator":"高雄市立中山國中 107 學年度下學期第三次段考數學科第 16 題；本題改用不同數據重設","authoringNote":"以公開公立國中題的一次函數情境獨立改編。"},
-  "reviewStatus":"draft","updatedAt":"2026-08-28","lessonId":"lesson-math-linear-function-graph"
+  "id": "question-math-linear-function-graph-4",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "一次函數 y=4x-9 的圖形與 x 軸交於何處？",
+  "options": [
+    {
+      "id": "A",
+      "text": "(9,0)"
+    },
+    {
+      "id": "B",
+      "text": "(0,-9)"
+    },
+    {
+      "id": "C",
+      "text": "(9/4,0)"
+    },
+    {
+      "id": "D",
+      "text": "(-9/4,0)"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-f-8-2"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "B",
+    "explanation": "與 x 軸交點的 y=0，4x-9=0，所以 x=9/4。"
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "114年國中教育會考數學科；第6題坐標軸截距題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；另參考高雄市立鹽埕國中公開數學段考之坐標與函數能力方向；獨立改編，非原題重製。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-28",
+  "lessonId": "lesson-math-linear-function-graph"
 }
