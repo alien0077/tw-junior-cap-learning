@@ -56,7 +56,7 @@ def item(data: dict, prompt: str, options: list[str], explanation: str, seed: st
     # Encode the independent variation as a plausible collection date and
     # setting instead of exposing an internal generation number.
     day_offset = (batch * 11 + question_no * 37) % (365 * 5)
-    collected = date(2024, 1, 1) + timedelta(days=day_offset)
+    collected = date(2020, 1, 1) + timedelta(days=day_offset)
     sessions = ["晨間", "午間", "放學後", "週末", "雨後", "活動日"]
     session = sessions[(batch + question_no) % len(sessions)]
     date_text = f"{collected.year}年{collected.month}月{collected.day}日"
