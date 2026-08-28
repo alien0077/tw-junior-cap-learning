@@ -6,19 +6,19 @@
   "options": [
     {
       "id": "A",
-      "text": "2 倍"
+      "text": "8 倍（長、寬、高都納入）"
     },
     {
       "id": "B",
-      "text": "4 倍"
+      "text": "2 倍（只考慮一個方向）"
     },
     {
       "id": "C",
-      "text": "6 倍"
+      "text": "4 倍（只考慮兩個方向）"
     },
     {
       "id": "D",
-      "text": "8 倍"
+      "text": "6 倍（誤將倍率相加）"
     }
   ],
   "knowledgeIds": [
@@ -26,8 +26,8 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "體積倍率為線性倍率的三次方，2³=8 倍。"
+    "value": "A",
+    "explanation": "長、寬、高均放大 2 倍，體積倍率為 2³＝8 倍。"
   },
   "provenance": {
     "origin": "original",
@@ -37,6 +37,6 @@
     "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
+  "updatedAt": "2026-08-29",
   "lessonId": "lesson-math-content-s-9-13"
 }
