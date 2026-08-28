@@ -17,7 +17,7 @@
 
 - M3：南一五科 30 冊與翰林其餘四科 24 冊仍待官方目次證據與章節級 KG 對照。
 - M3：115 學年度翰林英語審定出版者身分與翰林書城 `i英語` 產品體系需持續分開紀錄；115 下期商品資料尚未公開時，不可把 114 下期誤標為 115。
-- M4：目前有 22 份 lesson、220 題 question；每個 lesson 已配置至少 10 題，均依 docs/M4_CONTENT_METHOD.md 以課綱／KG 目標自行撰寫，含答案與解析，但仍不代表五科教材或題庫覆蓋完成。
+- M4：目前工作樹實際有 95 份 lesson、950 題 question；每個 lesson 有 10 題檔案，但其中 draft 與重複題仍待來源核對、改題與內容 QA，不代表五科教材或題庫覆蓋完成。
 - M5：已建立可直接部署的資料驅動靜態 MVP（site/）；自動測試、部署驗收與完整產品流程仍未完成。
 
 ## 工作限制
@@ -40,6 +40,8 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 
 - M4 方法文件：已補上參考資料層級、原創編寫流程、答案格式、審核界線、外部資料授權規則與學霸筆記重點整合規則。
 
+- 2026-08-28：新增 AI 判讀審查規則；本專案無真人 reviewer，`content-reviewed` 僅代表 AI 審查通過，較高判讀風險時建議升級 Terra model 做第二輪 AI 複核。
+
 - M4 題數門檻：question 以 lessonId 歸屬單元，CI 將檢查每個 lesson 至少 10 題。
 \n- M4 學霸筆記整合：docs/M4_STUDY_NOTE_HIGHLIGHTS.md；所有 lesson 已加入 highlights/references，數學與自然每單元提供互動步驟。\n
 
@@ -47,3 +49,6 @@ M3 優先核驗南一 NaniBook 的官方公開目次，再處理翰林其餘科�
 
 - M4-002 已完成：已建立 [data/m4-coverage-matrix.json](../data/m4-coverage-matrix.json)，逐一列出 1,032 筆 curriculum records；目前僅 7 筆有可直接對應的既有 lesson/question baseline。
 - M4-003 已開始：國文已完成 12/84 筆（新增 6 lesson、60 question），其餘 81 筆仍待補全。
+
+- 2026-08-28：新增自然科「動物的血液循環：心臟與血液流動」lesson 與 10 題原創題目，連至官方課綱 `Db-Ⅳ-2`；網站互動區接入 NIH 3D 心臟模型與 8 步驟動態血流導覽。
+- 2026-08-28：新增數學「F-8-2：一次函數的圖形」lesson 與 10 題 draft 題目；含 2 題歷屆會考題與 8 題依公立國中公開段考能力目標獨立改編題，均待後續學科內容 QA。

@@ -11,7 +11,7 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 3. 每份 lesson 至少有 10 題 question。
 4. 每題都有唯一答案、答案解析、KG endpoint 與 provenance。
 5. 數學與自然每份 lesson 都有至少 3 步互動教學。
-6. 自動驗證通過，且內容審閱狀態與教師／學科專家審閱狀態分開記錄。
+6. 自動驗證通過，且 AI 內容審查狀態與真人／教師／學科專家審閱狀態分開記錄；本專案目前沒有真人 reviewer。
 
 ## 執行順序與紀錄
 
@@ -29,8 +29,9 @@ M4 只有在下列條件全部通過後，才能標記為「完整涵蓋國中�
 ## 紀錄規則
 
 - `draft`：已建立但未完成內容審查。
-- `content-reviewed`：repo 內部檢查通過，不代表教師審閱。
+- `content-reviewed`：AI 判讀審查通過，不代表教師、真人或學科專家審閱；必要時建議以 Terra model 做第二輪 AI 複核。
 - `teacher-reviewed`：有明確審閱者、日期與意見。
+- 本專案無真人 reviewer，因此不得自行填寫 `teacher-reviewed`；AI 審查不得冒充真人審閱。
 - 不把代表性內容或自動生成內容宣稱為完整課綱。
 - 每次完成一個階段都要更新本文件、`docs/CURRENT_STATE.md`、`project-state.json` 與決策紀錄。
 

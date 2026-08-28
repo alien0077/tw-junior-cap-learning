@@ -1,0 +1,56 @@
+{
+  "id": "lesson-science-blood-circulation",
+  "subject": "science",
+  "title": "動物的血液循環：心臟與血液流動",
+  "knowledgeIds": [
+    "kg-science-content-db-iv-2"
+  ],
+  "gradeRange": [
+    "7",
+    "8",
+    "9"
+  ],
+  "content": {
+    "summary": "沿著一滴血走過右心、肺、左心與全身，理解心臟四個腔室、血管方向與氣體交換。",
+    "sections": [
+      {
+        "heading": "兩個循環如何接起來",
+        "body": "體循環把血液由左心室送往全身，組織交換物質後回到右心房；肺循環再把血液由右心室送到肺，交換氣體後回到左心房。"
+      },
+      {
+        "heading": "四個腔室與瓣膜",
+        "body": "心房主要接收血液，心室主要送出血液；瓣膜維持單向流動。左心室要把血送往全身，因此肌肉較厚。"
+      },
+      {
+        "heading": "血管名稱看方向",
+        "body": "動脈是離開心臟的血管，靜脈是回到心臟的血管；肺動脈與肺靜脈的含氧量是常見判讀陷阱。"
+      }
+    ]
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "authoringNote": "Original instructional content for this repository; the interactive assets retain their public or open-source attribution in site/assets/ATTRIBUTION.md."
+  },
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-08-28",
+  "studyHighlights": [
+    "先判斷血液是回到心臟還是離開心臟，再判讀血管名稱。",
+    "固定路徑：全身 → 右心 → 肺 → 左心 → 全身。",
+    "肺動脈含氧較少、肺靜脈含氧較多；動脈與靜脈不是按含氧量命名。"
+  ],
+  "studyReferences": [
+    "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A中等學校-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://3d.nih.gov/entries/3DPX-022787/1.01",
+    "https://zh.wikipedia.org/zh-tw/%E5%B7%A6%E5%BF%83%E5%AE%A4"
+  ],
+  "interactive": {
+    "type": "guided-choice",
+    "goal": "用血流方向與四個腔室的功能，判讀心臟循環路徑。",
+    "steps": [
+      {"id":"step-1","prompt":"全身回流的血首先進入哪裡？","options":["右心房","左心房","右心室"],"answer":"A","feedback":"答對了！全身回流先經腔靜脈進入右心房。"},
+      {"id":"step-2","prompt":"右心室把血送往哪裡？","options":["肺部","全身組織","左心房"],"answer":"A","feedback":"答對了！右心室負責把血送往肺部進行氣體交換。"},
+      {"id":"step-3","prompt":"肺部交換後的血回到哪個心房？","options":["左心房","右心房","左心室"],"answer":"A","feedback":"答對了！含氧較多的血經肺靜脈回到左心房。"}
+    ]
+  }
+}
