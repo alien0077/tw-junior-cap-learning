@@ -2,6 +2,7 @@
 """Deterministic semantic-risk scan; reports only, never promotes review status."""
 import collections
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -28,11 +29,18 @@ for p in (ROOT / "lessons").glob("*/*.json"):
         flag("math-science-interaction-missing", p)
 
 prompt_groups = collections.defaultdict(list)
+semantic_groups = collections.defaultdict(list)
 for p in (ROOT / "questions").glob("*/*.json"):
     d = json.loads(p.read_text())
     if d.get("reviewStatus") != "draft":
         continue
     prompt_groups[(d.get("subject"), d.get("lessonId"), d.get("prompt", ""))].append(p)
+    # This is deliberately conservative: it removes only variable data, not
+    # words.  A hit means that a reviewer must decide whether a common ability
+    # format is justified or whether the item is merely a renamed template.
+    skeleton = re.sub(r"\d+(?:\.\d+)?", "#", d.get("prompt", ""))
+    skeleton = re.sub(r"\s+", " ", skeleton).strip()
+    semantic_groups[(d.get("subject"), skeleton)].append(p)
     opts = d.get("options", [])
     if len(opts) < 2:
         flag("question-fewer-than-2-options", p)
@@ -44,6 +52,11 @@ for (_, _, _), paths in prompt_groups.items():
     if len(paths) > 1:
         for p in paths:
             flag("duplicate-prompt-within-lesson", p)
+for (_, _), paths in semantic_groups.items():
+    lesson_ids = {json.loads(p.read_text(encoding="utf-8")).get("lessonId") for p in paths}
+    if len(lesson_ids) >= 2 and len(paths) >= 3:
+        for p in paths:
+            flag("cross-lesson-semantic-skeleton", p)
 
 lines = ["# M4 Semantic Risk Report", "", "本報告由 deterministic scan 產生，只排序風險，不會自動升級任何 reviewStatus。", "", "| 風險 | 數量 |", "|---|---:|"]
 for k, n in sorted(risks.items()):
