@@ -5,7 +5,7 @@
 | 風險 | 數量 |
 |---|---:|
 | cross-lesson-identical-option-set | 4542 |
-| cross-lesson-semantic-skeleton | 48 |
+| cross-lesson-semantic-skeleton | 24 |
 | draft-marker-in-title | 70 |
 
 ## 範例檔案（每類最多 20 筆）
@@ -33,12 +33,6 @@
 - `questions/science/question-science-content-ga-iv-5-2.json`
 
 ### cross-lesson-semantic-skeleton
-- `questions/english/question-english-content-ac-iv-1-6.json`
-- `questions/english/question-english-content-ac-iv-3-6.json`
-- `questions/english/question-english-content-ac-iv-2-6.json`
-- `questions/english/question-english-content-ac-iv-2-3.json`
-- `questions/english/question-english-content-ac-iv-3-3.json`
-- `questions/english/question-english-content-ac-iv-1-3.json`
 - `questions/english/question-english-content-ab-iv-2-6.json`
 - `questions/english/question-english-content-ab-iv-3-6.json`
 - `questions/english/question-english-content-ab-iv-1-6.json`
@@ -48,11 +42,17 @@
 - `questions/english/question-english-content-ab-iv-1-10.json`
 - `questions/english/question-english-content-ab-iv-2-10.json`
 - `questions/english/question-english-content-ab-iv-3-10.json`
-- `questions/english/question-english-content-ac-iv-1-10.json`
-- `questions/english/question-english-content-ac-iv-3-10.json`
-- `questions/english/question-english-content-ac-iv-2-10.json`
 - `questions/english/question-english-content-ab-iv-3-4.json`
 - `questions/english/question-english-content-ab-iv-1-4.json`
+- `questions/english/question-english-content-ab-iv-2-4.json`
+- `questions/english/question-english-content-ab-iv-1-5.json`
+- `questions/english/question-english-content-ab-iv-3-5.json`
+- `questions/english/question-english-content-ab-iv-2-5.json`
+- `questions/english/question-english-content-ab-iv-3-8.json`
+- `questions/english/question-english-content-ab-iv-1-8.json`
+- `questions/english/question-english-content-ab-iv-2-8.json`
+- `questions/english/question-english-content-ab-iv-1-9.json`
+- `questions/english/question-english-content-ab-iv-3-9.json`
 
 ### draft-marker-in-title
 - `lessons/chinese/lesson-chinese-performance-5-iv-2.json`
