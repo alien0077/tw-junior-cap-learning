@@ -2,40 +2,41 @@
   "id": "question-math-content-a-8-2-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「A-8-2：多項式的意義」進行項與係數時，哪一項做法正確？",
+  "prompt": "多項式 7x＋3 有幾項？",
   "options": [
     {
       "id": "A",
-      "text": "先辨認項與次數，只合併同類項並逐步檢查"
+      "text": "1 項"
     },
     {
       "id": "B",
-      "text": "把所有含字母的項任意相加"
+      "text": "3 項"
     },
     {
       "id": "C",
-      "text": "減去括號時不改變各項符號"
+      "text": "7 項"
     },
     {
       "id": "D",
-      "text": "不需核對運算結果"
+      "text": "2 項"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-a-8-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「A-8-2：多項式的意義」的項與係數必須遵守同類項與分配律規則，並以代入或展開檢查。"
+    "value": "D",
+    "explanation": "以加減號分隔可看出 7x 與 3，共有 2 項。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-a-8-2"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "鹽埕國中公開數學段考；研究多項式項、係數、次數與代入能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-28",
   "lessonId": "lesson-math-content-a-8-2"
 }
