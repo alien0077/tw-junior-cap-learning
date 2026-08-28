@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-10-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「S-9-10：三角形的重心」進行已知與結論時，哪一項做法正確？",
+  "prompt": "若 D 是 BC 的中點，且 G 是三角形 ABC 的重心，則 G 位於 AD 的哪個位置？",
   "options": [
     {
       "id": "A",
-      "text": "先整理定義與條件，再逐步推理並檢查"
+      "text": "AD 的中點"
     },
     {
       "id": "B",
-      "text": "只憑外觀直接猜答案"
+      "text": "A 與 D 之間且 AG:GD=2:1"
     },
     {
       "id": "C",
-      "text": "跳過必要的證明或公式步驟"
+      "text": "D 與 A 之間且 DG:GA=2:1"
     },
     {
       "id": "D",
-      "text": "忽略合理性與單位"
+      "text": "AD 延長線外"
     }
   ],
   "knowledgeIds": [
@@ -26,16 +26,17 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「S-9-10：三角形的重心」的已知與結論須依定義、條件與可驗證步驟完成。"
+    "value": "B",
+    "explanation": "重心在中線上，且 AG:GD=2:1。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-s-9-10"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的重心 題型與官方課綱 KG kg-math-content-s-9-10",
+    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-28",
   "lessonId": "lesson-math-content-s-9-10"
 }

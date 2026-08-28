@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-12-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「S-9-12：空間中的線與平面」進行垂直平行時，哪一項做法正確？",
+  "prompt": "若一條直線垂直於平面 P，則它與 P 內任意通過垂足的直線有何關係？",
   "options": [
     {
       "id": "A",
-      "text": "先整理定義與條件，再逐步推理並檢查"
+      "text": "平行"
     },
     {
       "id": "B",
-      "text": "只憑外觀直接猜答案"
+      "text": "垂直"
     },
     {
       "id": "C",
-      "text": "跳過必要的證明或公式步驟"
+      "text": "重合"
     },
     {
       "id": "D",
-      "text": "忽略合理性與單位"
+      "text": "必歪斜"
     }
   ],
   "knowledgeIds": [
@@ -26,16 +26,17 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「S-9-12：空間中的線與平面」的垂直平行須依定義、條件與可驗證步驟完成。"
+    "value": "B",
+    "explanation": "直線垂直於平面時，與平面內通過垂足的任意直線垂直。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-s-9-12"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 空間中的線與平面 題型與官方課綱 KG kg-math-content-s-9-12",
+    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-28",
   "lessonId": "lesson-math-content-s-9-12"
 }

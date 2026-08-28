@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-11-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「S-9-11：證明的意義」進行截面判讀時，哪一項做法正確？",
+  "prompt": "用量角器量出兩角都約 60°，這能否單獨作為嚴格證明兩角相等？",
   "options": [
     {
       "id": "A",
-      "text": "先整理定義與條件，再逐步推理並檢查"
+      "text": "可以，任何量測都絕對精確"
     },
     {
       "id": "B",
-      "text": "只憑外觀直接猜答案"
+      "text": "不可以，量測只能作為線索，仍需幾何條件"
     },
     {
       "id": "C",
-      "text": "跳過必要的證明或公式步驟"
+      "text": "可以，只要圖形放大"
     },
     {
       "id": "D",
-      "text": "忽略合理性與單位"
+      "text": "不可以，角永遠不能相等"
     }
   ],
   "knowledgeIds": [
@@ -26,16 +26,17 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「S-9-11：證明的意義」的截面判讀須依定義、條件與可驗證步驟完成。"
+    "value": "B",
+    "explanation": "測量有誤差，嚴格證明仍須依據定義、定理與已知條件。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-s-9-11"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 證明的意義 題型與官方課綱 KG kg-math-content-s-9-11",
+    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-28",
   "lessonId": "lesson-math-content-s-9-11"
 }
