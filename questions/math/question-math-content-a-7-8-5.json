@@ -2,23 +2,23 @@
   "id": "question-math-content-a-7-8-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "「A-7-8：一元一次不等式的解與應用」進行展開整理時，哪一項做法正確？",
+  "prompt": "某校規定跑步時間 t 分鐘不得超過 18 分鐘，若訓練後比原時間少 3 分鐘，原時間至少需符合什麼條件才可能達標？",
   "options": [
     {
       "id": "A",
-      "text": "先辨認結構與條件，再依規則運算並驗證"
+      "text": "t＋3≤18"
     },
     {
       "id": "B",
-      "text": "忽略符號直接猜答案"
+      "text": "t－3≥18"
     },
     {
       "id": "C",
-      "text": "套公式時省略必要項目"
+      "text": "3t≤18"
     },
     {
       "id": "D",
-      "text": "不檢查邊界或展開結果"
+      "text": "t－3≤18"
     }
   ],
   "knowledgeIds": [
@@ -26,16 +26,17 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「A-7-8：一元一次不等式的解與應用」的展開整理需依式子結構與規則逐步處理，最後用代入、數線或展開結果驗證。"
+    "value": "D",
+    "explanation": "達標後時間是 t－3，不能超過 18，因此不等式為 t－3≤18。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-math-content-a-7-8"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+    "sourceLocator": "鹽埕國中公開數學段考；研究一元一次不等式解法、數線與生活情境能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-26",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-28",
   "lessonId": "lesson-math-content-a-7-8"
 }
