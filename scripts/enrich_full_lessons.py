@@ -181,6 +181,16 @@ def update_lesson(path: Path) -> bool:
     title = str(data.get("title", ""))
     c = concept(title)
     row = ROW_BY_LESSON.get(data.get("id"), {})
+    # The review state is machine-readable; do not leave a historical
+    # "草稿：" prefix in the learner-facing title after the lesson is enriched.
+    if row.get("curriculumPath"):
+        curriculum_path = ROOT / row["curriculumPath"]
+        if curriculum_path.exists():
+            curriculum = json.loads(curriculum_path.read_text(encoding="utf-8"))
+            if curriculum.get("title"):
+                title = str(curriculum["title"])
+                data["title"] = title
+                c = concept(title)
     level = row.get("level", data.get("lessonScope", "learning-content"))
     was_full = data.get("authoringStandard") == "full-lesson-v1"
     if not was_full:

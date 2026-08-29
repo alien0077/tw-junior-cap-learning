@@ -34,8 +34,89 @@
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Batch-generated draft; subject QA required."
+    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-26"
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-08-27",
+  "authoringStandard": "full-lesson-v1",
+  "lessonScope": "topic",
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "翰林 115 國文網頁版 PPT",
+      "subject": "chinese",
+      "chapterLocator": "Ac：句段；公開教材結構研究定位",
+      "sourceUrl": "https://sites.google.com/hanlin.com.tw/112chwebppt/1%E4%B8%8A",
+      "access": "public-open",
+      "reviewedAt": "2026-08-27",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開出版社資源用於核對「句段」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    }
+  ],
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "從情境進入「句段」",
+        "body": "遇到「句段」時，先讀一段自編短文或生活訊息，標出讀者、目的、關鍵詞與語氣；把文字直接說出的內容和需要推論的部分分開。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "建立「句段」的概念架構",
+        "body": "本單元依官方課綱所列的「句段」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+      },
+      {
+        "id": "worked-example",
+        "phase": "worked-example",
+        "heading": "用自編資料走完一次",
+        "body": "以「Ac：句段」為主題，閱讀一段自編短文，先畫出關鍵詞與句間關係，再以主旨、證據、語氣三欄整理理解；最後用自己的話重述，避免搬用原句。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "guided-practice",
+        "phase": "guided-practice",
+        "heading": "依步驟完成練習",
+        "body": "針對「句段」先圈關鍵詞與句間關係，再以主旨、證據、語氣三欄整理；重述或改寫後回看是否保留原資訊與溝通目的。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "換到新情境仍能使用",
+        "body": "把「句段」的閱讀或表達策略換到公告、圖表、對話與短文，比較受眾、媒介和語氣改變後需要調整的證據與結構。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "回顧證據與限制",
+        "body": "回顧「句段」：哪個詞句支持我的理解？改寫後語氣與目的是否仍清楚？用一句話說明可遷移的方法，並指出一項仍可改善之處。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+      }
+    ],
+    "summary": [
+      "先用自己的話界定「句段」的關鍵概念與適用條件。",
+      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
+      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
+      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請用自己的話說明「句段」的核心概念與一個適用條件。",
+        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+      },
+      {
+        "prompt": "在「句段」的自編例子中，哪一項資料或語句最能支持你的判斷？",
+        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+      },
+      {
+        "prompt": "若題目的條件改變，如何調整處理「句段」的方法？",
+        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+      }
+    ]
+  }
 }

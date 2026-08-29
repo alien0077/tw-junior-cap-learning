@@ -4,28 +4,6 @@
 
 | 風險 | 數量 |
 |---|---:|
-| draft-marker-in-title | 70 |
+| 未發現結構性風險 | 0 |
 
 ## 範例檔案（每類最多 20 筆）
-
-### draft-marker-in-title
-- `lessons/chinese/lesson-chinese-performance-5-iv-2.json`
-- `lessons/chinese/lesson-chinese-performance-2-iv-5.json`
-- `lessons/chinese/lesson-chinese-content-bb.json`
-- `lessons/chinese/lesson-chinese-performance-5.json`
-- `lessons/chinese/lesson-chinese-content-be-iv-3.json`
-- `lessons/chinese/lesson-chinese-content-bb-iv-4.json`
-- `lessons/chinese/lesson-chinese-content-cb-iv-1.json`
-- `lessons/chinese/lesson-chinese-learning-content.json`
-- `lessons/chinese/lesson-chinese-performance-4-iv-4.json`
-- `lessons/chinese/lesson-chinese-content-bc-iv-2.json`
-- `lessons/chinese/lesson-chinese-content-ad.json`
-- `lessons/chinese/lesson-chinese-content-bc-iv-3.json`
-- `lessons/chinese/lesson-chinese-performance-4-iv-5.json`
-- `lessons/chinese/lesson-chinese-content-ca-iv-2.json`
-- `lessons/chinese/lesson-chinese-content-bb-iv-5.json`
-- `lessons/chinese/lesson-chinese-content-be-iv-2.json`
-- `lessons/chinese/lesson-chinese-performance-4.json`
-- `lessons/chinese/lesson-chinese-content-bc.json`
-- `lessons/chinese/lesson-chinese-performance-6-iv-1.json`
-- `lessons/chinese/lesson-chinese-performance-2-iv-4.json`
