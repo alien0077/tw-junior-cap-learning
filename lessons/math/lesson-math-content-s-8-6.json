@@ -9,26 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "運用畢氏定理與逆定理求直角三角形邊長並判斷直角。",
+    "summary": "在直角三角形中，兩股平方和等於斜邊平方；這個關係能求未知邊，也能用平方和的逆定理判斷三角形是否為直角。本單元從梯架安全角度與地圖最短路徑出發，分清斜邊、兩股、平方根與單位。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "運用畢氏定理與逆定理求直角三角形邊長並判斷直角。 能列式、計算並檢查單位。"
+        "heading": "斜邊平方等於兩股平方和",
+        "body": "若直角兩側的股長為 a、b，斜邊為 c，則 a²＋b²＝c²；斜邊必是直角對面的最長邊。已知兩股可用平方根求 c，已知斜邊與一股則用 c²−a² 求另一股。"
       },
       {
-        "heading": "學習流程",
-        "body": "辨認圖形與已知量，選擇定理或面積公式列式，計算後以估算與單位檢查。"
+        "heading": "先找直角，再決定誰是斜邊",
+        "body": "先確認圖形是直角三角形，圈出直角並找其對面斜邊，再代入平方關係。算出平方根後要檢查長度為正、斜邊最大，並把平方單位還原成長度單位。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "把斜邊當直角邊、平方根漏寫，或面積與周長公式混用。"
+        "heading": "平方和不是任意三角形公式",
+        "body": "若三角形沒有直角，不能直接套畢氏定理；若做逆定理，必須把最大邊當候選斜邊。常見錯誤還包括把 a²＋b² 寫成 a＋b²、忘記開平方，或把平方公分當成公分。"
       }
     ]
   },
   "studyHighlights": [
-    "辨認適用圖形與條件。",
-    "列出正確公式。",
-    "檢查數值與單位。"
+    "圈出直角並辨認對面的斜邊。",
+    "用平方和或其逆關係列式。",
+    "開平方、估算大小並還原長度單位。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
@@ -41,7 +41,103 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上畢氏定理公開章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/m-g8a-s04；僅核對直角三角形與平方關係章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引支持由直角三角形邊長建立平方和關係。",
+          "逆定理可由最大邊平方與另外兩邊平方和判斷直角。"
+        ],
+        "representations": [
+          "以直角三角形、面積拼接、邊長平方與根式表示。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編梯架、6-8-10 與 7-24-25 案例。"
+        ],
+        "misconceptions": [
+          "把斜邊辨認錯誤，或忽略開平方與單位。"
+        ],
+        "assessmentEmphasis": [
+          "要求先找直角或最大邊，再列式並以大小與單位回查。"
+        ]
+      },
+      "licenseBoundary": "只研究公開索引，不複製或改寫南一教材、圖像、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學八上官方影音 XML",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；核對畢氏定理與幾何應用資源分類。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開資源支持以平方和求直角三角形未知邊。",
+          "生活測量情境需要先確認兩股互相垂直，再處理平方根。"
+        ],
+        "representations": [
+          "以梯架、地圖路徑、直角三角形與根式計算互相驗證。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編牆梯與公園斜向捷徑案例。"
+        ],
+        "misconceptions": [
+          "將兩股相加代替平方和，或把平方單位當長度單位。"
+        ],
+        "assessmentEmphasis": [
+          "檢查圖形條件、斜邊角色、根式與量綱。"
+        ]
+      },
+      "licenseBoundary": "只使用官方 XML 的章節與資源分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網 2A 章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/2A/；核對畢氏定理與逆定理公開章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引將畢氏定理連到直角判斷、距離與幾何推理。",
+          "由三邊反推直角時，最大邊是平方比較的候選斜邊。"
+        ],
+        "representations": [
+          "以平方關係、逆定理、圖形距離與實際測量表示。"
+        ],
+        "examplesOrEvidence": [
+          "本課加入 7-24-25 與非直角 7-24-26 的對照。"
+        ],
+        "misconceptions": [
+          "未先找最大邊就做逆定理，或把任意三角形套用平方和。"
+        ],
+        "assessmentEmphasis": [
+          "要求說出適用條件並以數值和圖形雙重驗證。"
+        ]
+      },
+      "licenseBoundary": "只研究公開章節索引，不複製翰林教材、影音、題庫、答案或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開資料都以直角三角形的邊長平方關係建立畢氏定理。",
+      "求邊、逆定理、距離應用及條件檢查是共同核心。",
+      "可取得資料主要為公開章節與資源索引，不能推稱取得出版社完整正文。"
+    ],
+    "versionDifferences": [
+      "南一索引偏向平方和與逆定理定位，康軒 XML 可核對生活應用資源，翰林索引連到距離與幾何推理；本課以梯架、地圖和反例統整。"
+    ],
+    "originalAdditions": [
+      "用梯架情境建立斜邊與兩股的角色。",
+      "以 7-24-25 和 7-24-26 對照說明逆定理。",
+      "加入單位、估算與非直角情境的錯誤診斷。"
+    ],
+    "llmSynthesisNote": "LLM 依官方課綱與 KG 界定畢氏定理及逆定理，再比較南一、康軒、翰林公開研究，以梯架、地圖最短路徑和反例重新撰寫；全文為原創，Terra 第二輪尚未執行，故維持 draft。"
+  },
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,6 +155,57 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-8-6：畢氏定理」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上畢氏定理公開章節索引",
+      "subject": "math",
+      "chapterLocator": "S-8-6 畢氏定理",
+      "sourceUrl": "https://www.junyiacademy.org/topics/m-g8a-s04",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對畢氏定理與逆定理範圍；本課以梯架、距離與反例獨立重寫。",
+      "copyrightBoundary": "只研究公開章節定位，不複製南一教材、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒八上官方數學影音 XML",
+      "subject": "math",
+      "chapterLocator": "八上畢氏定理與幾何應用",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "官方 XML 核對畢氏定理與應用資源分類；本課轉化為梯架、路徑與單位回查。",
+      "copyrightBoundary": "只研究公開 XML 分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林 2A 公開數學影音索引",
+      "subject": "math",
+      "chapterLocator": "2A 畢氏定理與逆定理",
+      "sourceUrl": "https://mathvideo.hle.com.tw/2A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對直角判斷與距離脈絡；本課正文、例題、互動與回饋均獨立撰寫。",
+      "copyrightBoundary": "只研究公開索引，不複製翰林教材、影音、題庫或答案。"
     }
   ],
   "teaching": {
@@ -66,38 +213,38 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-8-6：畢氏定理」",
-        "body": "先讀懂「S-8-6：畢氏定理」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "梯架靠牆的安全距離",
+        "body": "梯架底端離牆 6 公尺，頂端碰到牆上 8 公尺高的位置；牆、地面與梯架形成直角三角形。要算梯長，先辨認 6 和 8 是兩股，梯長是直角對面的斜邊，再使用平方關係，而不是把 6＋8 當成路徑長度。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「畢氏定理」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "平方、平方根與邊的角色",
+        "body": "直角三角形兩股平方和等於斜邊平方。a²＋b²＝c² 中 c 必須是最長邊；求未知股時移項成 b²＝c²−a²，再取正平方根。平方後的單位是平方單位，開根號後才回到公尺、厘米等長度單位。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-8-6：畢氏定理」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "從 6、8 算出 10",
+        "body": "梯架長度 c 滿足 c²＝6²＋8²＝36＋64＝100，所以 c＝10 公尺。答案大於 8，符合斜邊是最長邊；若把答案寫成 100 公尺，便是把平方量的結果誤當成長度。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "用逆定理檢查三角形",
+        "body": "三邊長為 7、24、25 時，以最大邊 25 為候選斜邊：7²＋24²＝49＋576＝625＝25²，因此它是直角三角形。若最大邊換成 26，平方和不相等，就不能判為直角；逆定理的第一步永遠是找最大邊。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-8-6：畢氏定理」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "地圖上的斜向捷徑",
+        "body": "公園東西方向 9 公尺、南北方向 12 公尺，從一角直走到對角的距離是斜邊，為 √(9²＋12²)＝15 公尺。這個方法只適用於兩段路徑互相垂直；若道路轉角不是直角，不能直接把兩段平方相加。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-8-6：畢氏定理」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "三項回查不可省",
+        "body": "完成後檢查：圖形是否真的有直角？候選斜邊是否為最大邊？平方根與單位是否正確？若使用逆定理，是否先比較最大邊平方和？把這三項寫在解題末端，能讓數值答案回到幾何條件中。"
       }
     ],
     "summary": [
@@ -121,12 +268,12 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-8-6：畢氏定理」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-8-6：畢氏定理」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "辨認直角三角形的斜邊與兩股，操作平方和及逆定理求長度或判斷直角。",
+    "scenario": "你是梯架安全檢查員，要由測量數據確認長度與直角條件。",
     "variables": [
       {
         "symbol": "x",
@@ -136,36 +283,36 @@
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "套用畢氏定理前，應先確認什麼？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "圖形是直角三角形，並找出直角對面的斜邊",
+          "先把所有邊長直接相加",
+          "只看哪條線畫得最長"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "畢氏定理只適用於直角三角形，斜邊是直角對面且必為最長邊。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "兩股長為 6、8，斜邊應如何計算？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "c²＝6²＋8²，再取正平方根得 10",
+          "c＝6＋8＝14",
+          "c²＝8²−6²"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "斜邊平方等於兩股平方和，√100＝10，且 10 大於兩股。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "用三邊 7、24、25 判斷三角形是否直角，應先做什麼？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "把最大邊 25 當候選斜邊，比較 7²＋24² 與 25²",
+          "把最小邊 7 當斜邊比較",
+          "直接看三邊能否排成一條直線"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "逆定理要先找最大邊；49＋576＝625＝25²，所以此三角形為直角三角形。"
       }
     ]
   },
@@ -175,13 +322,42 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-8-6：畢氏定理」的表示、推理與驗算。",
-    "mission": "請依序分析「S-8-6：畢氏定理」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "辨認直角三角形的斜邊與兩股，操作平方和及逆定理求長度或判斷直角。",
+    "mission": "你是梯架安全檢查員，要由測量數據確認長度與直角條件。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    ],
+    "learningDesign": {
+      "type": "geometric-construction",
+      "objective": "由直角三角形的兩股與斜邊建立畢氏關係，並用平方面積與邊長條件判斷適用性。",
+      "predictionPrompt": "直角三角形兩股為 6、8，你預測斜邊是多少？請先比較平方和。",
+      "evidencePrompt": "請標出直角位置、計算兩股平方和，再以平方根與量級檢查斜邊。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "先確認直角與三邊角色",
+          "equation": "a、b 是直角兩股；c 是直角對面的斜邊",
+          "reason": "畢氏定理只適用於直角三角形，且最大邊必是斜邊。",
+          "feedback": "不要把任意兩邊當 a、b；先找直角符號。"
+        },
+        {
+          "id": "step-2",
+          "action": "以平方和求未知斜邊長",
+          "equation": "c²＝6²＋8²＝100 → c＝10",
+          "reason": "兩股所作正方形面積和等於斜邊正方形面積。",
+          "feedback": "長度取正值；不要把 6＋8 直接當斜邊。"
+        },
+        {
+          "id": "step-3",
+          "action": "用三角不等式與代回檢查合理性",
+          "equation": "10＜6＋8；10²＝6²＋8²",
+          "reason": "斜邊需小於兩股和，且平方關係必須精確成立。",
+          "feedback": "若算出的斜邊比某一直角邊還小，先檢查平方根與邊角色。"
+        }
+      ]
+    }
   }
 }

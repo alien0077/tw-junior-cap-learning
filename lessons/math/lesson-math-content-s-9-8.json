@@ -41,7 +41,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,45 +59,53 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-9-8：三角形的外心」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
+    },
+    {"publisher":"nani","edition":"南一版九年級三角形外心公開章節定位","subject":"math","chapterLocator":"S-9-8：三角形的外心","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","assessment-pattern"],"outcome":"公開課程定位支持以兩邊中垂線交點建立外心，再依三角形類型判讀位置；本課加入地標圓形廣場與可變形三角形。","copyrightBoundary":"只採公開章節範圍，不複製南一教材文字、圖表、題目、答案或影音。"},
+    {"publisher":"kanghsuan","edition":"康軒國中數學公開教材（三角形外心定位）","subject":"math","chapterLocator":"3-2：三角形的外心、內心與重心，對應 S-9-8","sourceUrl":"https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","assessment-pattern"],"outcome":"公開索引核對中垂線、等距與外接圓的概念關係；本課用拖曳頂點和距離表獨立呈現。","copyrightBoundary":"XML 僅作定位研究，不重製康軒教材、影音、題目或解答。"}
   ],
+  "versionResearch": [
+    {"publisher":"kanghsuan","edition":"康軒國中數學公開教材（三角形外心研究）","sourceType":"public-web","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml","reviewedAt":"2026-08-30","findings":{"concepts":["三角形外心是三邊中垂線的交點，也是外接圓圓心","外心到三個頂點距離相等，位置隨三角形種類改變"],"representations":["以三邊中垂線與外接圓圖形表示外心"],"examplesOrEvidence":["由兩條中垂線交點驗證第三個頂點也在同一圓上"],"misconceptions":["把外心誤認為三條角平分線交點，混淆外心與內心的構造線"],"assessmentEmphasis":["能以中垂線和等距性質完整說明外心如何形成"]},"licenseBoundary":"只研究公開概念與教學方向，本課文字、例題、活動與答案均獨立撰寫。"},
+    {"publisher":"nani","edition":"均一國中數學公開主題頁（三角形外心操作研究）","sourceType":"public-web","sourceLocator":"https://www.junyiacademy.org/topics/n-m9a","reviewedAt":"2026-08-30","findings":{"concepts":["以中垂線交點逐步構造外心與外接圓","比較銳角、直角、鈍角三角形的外心位置"],"representations":["用可移動三角形與圓心距離觀察外心變化"],"examplesOrEvidence":["移動頂點檢查三個頂點到外心的距離仍相等"],"misconceptions":["以三角形內部位置判斷外心而忽略鈍角情形"],"assessmentEmphasis":["能透過中垂線構造與位置變化辨識外心，並檢查三個頂點的等距證據"]},"licenseBoundary":"不複製公開文字、題目、影片或答案，僅將可追溯概念轉為本課原創活動與說明。"},
+    {"publisher":"hanlin","edition":"翰林國中數學公開影音網（三角形外心章節研究）","sourceType":"public-web","sourceLocator":"https://mathvideo.hle.com.tw/1A/","reviewedAt":"2026-08-30","findings":{"concepts":["由中垂線、等距與外接圓連結外心的幾何證明","依三角形類型判斷外心在內部、斜邊中點或外部"],"representations":["圖形標記、垂直平分與圓半徑互相驗證"],"examplesOrEvidence":["用兩條中垂線定位圓心，再檢查第三個頂點"],"misconceptions":["把外心、內心與重心的構造線混用"],"assessmentEmphasis":["能完成構造、位置分類與等距推理"]},"licenseBoundary":"僅研究公開章節概念層次，本課正文、圖示、例題與答案均為原創。"}
+  ],
+  "fusionRecord":{"commonCore":["外心是三角形三邊中垂線的共同交點，也是三頂點等距的外接圓圓心","外心位置不一定在三角形內部，必須依銳角、直角或鈍角分類","中垂線的垂直與平分條件是外心性質的推理根據"],"versionDifferences":["康軒著重中垂線、等距與外接圓定義如何連結","均一著重逐步構造、移動觀察與位置變化","翰林著重分類、符號標記與幾何證明"],"originalAdditions":["設計銳角、直角、鈍角三種三角形的外心位置比較","加入外心與內心構造線的辨識反例","以三點定位圓形廣場中心遷移外心概念"],"llmSynthesisNote":"LLM 依官方課綱、KG 與三版本公開研究融合後，獨立重寫三角形外心的構造、等距性質、位置分類與應用，未複製出版社內容，並為本單元重新設計例證、反例、互動活動與位置判讀。"},
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-9-8：三角形的外心」",
-        "body": "先讀懂「S-9-8：三角形的外心」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "三個頂點能不能共同找到一個圓心？",
+        "body": "城市要在三個地標 A、B、C 外圍設計一座圓形廣場，要求三個入口都落在圓周上。圓心不一定是三點的平均位置，也不一定在三角形裡面；真正的條件是它到 A、B、C 三點等距。要找這個中心，先把三角形每一邊的中點標出，再作各邊的垂直平分線。兩條垂直平分線的交點就是外心，第三條可用來驗證。這個入口把『畫一個通過三點的圓』轉成可操作的等距問題，避免把外心只理解成圖形中央的一個猜測點。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「三角形的外心」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "中垂線交點就是等距中心",
+        "body": "線段 AB 的垂直平分線不是只有一條好看的輔助線，而是一條等距軌跡：在線上任取 P，都有 PA＝PB。作出 AB 與 AC 的垂直平分線，令交點為 O，便同時得到 OA＝OB 和 OA＝OC，因此 OB＝OC；這表示 O 也必在 BC 的垂直平分線上。以 O 為圓心、OA 為半徑畫圓，三個頂點都會落在同一圓周，這個圓就是外接圓。外心的定義來自邊的垂直平分線，內心則來自角平分線，重心來自中線；三者都可能位於三角形附近，卻不能因位置相近就混用構造線。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-9-8：三角形的外心」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "自編例題：判斷外心位置",
+        "body": "看三種形狀來判斷外心位置。若 △ABC 在 C 為直角，AB 是斜邊，斜邊中點 O 到 A、B 等距；由直角三角形的斜邊中點性質，O 也到 C 等距，所以 O 是外心，位置正好在斜邊中點。銳角三角形的外心在三角形內；鈍角三角形的兩條中垂線仍會相交，但交點移到三角形外部。這不是構造失敗，而是角度改變後等距中心的位置自然改變。判斷時先看最大角，再用 OA、OB、OC 是否相等回查，不能因『外心』兩字就假定它一定在內部。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "用中垂線構造外心",
+        "body": "作圖練習採『兩線定位、第三線驗證』。先選 AB 和 AC，量出各自中點，以中點為垂足作垂直線；兩線交點標為 O。此時不要急著宣布完成，請用圓規或計算比較 OA、OB、OC，並把 BC 的垂直平分線畫出來確認也通過 O。只作一條中垂線得到的是無限多個等距於 A、B 的點，不是唯一外心；只畫一個看似通過三頂點的圓，也未說明圓心如何來。若線不共點，先檢查中點是否真的平分邊、是否真的垂直，以及三點是否幾乎共線。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-9-8：三角形的外心」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "找三個地標共同的圓形廣場中心",
+        "body": "把三個地標連成三角形，若要規畫一個理想上等距通往三地的圓形廣場，可作兩邊的垂直平分線求中心，再以第三邊驗證。若用座標表示三點，先由幾何構造找 O，再用 OA、OB、OC 的距離相等檢查，不能把三個坐標平均當成外心。真實地圖有量測誤差，應把理想幾何中心和施工調整分開；若三點幾乎共線，兩條中垂線會幾乎平行，外接圓半徑非常大，這是模型的限制而非計算失敗。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-9-8：三角形的外心」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "以等距與位置分類收尾",
+        "body": "交卷前替外心做三項驗收：O 是否在至少兩條邊的垂直平分線上？OA、OB、OC 是否相等，因而能以其中一段作外接圓半徑？三角形的最大角是銳角、直角還是鈍角，外心位置是否符合內部、斜邊中點或外部的分類？最後和內心、重心做反向比較：內心看角平分線，重心看中線，外心看邊的垂直平分線。若只寫『外心是外接圓圓心』卻無法由圖判斷，表示定義尚未轉成可操作的證據。"
       }
     ],
     "summary": [
@@ -121,51 +129,49 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-9-8：三角形的外心」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-9-8：三角形的外心」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳三角形頂點與邊中點，讓垂直平分線、外心、三個等距半徑與外接圓即時同步，並依角型診斷外心位置。",
+    "scenario": "在地標廣場定位台先預測外心，再拖曳頂點觀察銳角、直角、鈍角三種位置與距離表，最後完成會考型構造判讀。",
     "variables": [
-      {
-        "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
-      }
+      {"symbol":"x","meaning":"頂點水平位置；拖曳後同步更新三角形、垂直平分線與外心"},
+      {"symbol":"y","meaning":"頂點垂直位置；用於即時顯示外心位置與三個半徑距離"}
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "先預測再拖曳頂點：三角形由銳角變鈍角時，外心與三個頂點的距離會如何？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "外心可能由三角形內移到外部，但 OA、OB、OC 仍相等",
+          "外心永遠在三角形內，形狀改變只會改變外接圓半徑",
+          "只要頂點移動，外心就不再是兩條中垂線交點"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "圖形與距離表會同步更新。若選 B，拖成鈍角即可反駁；若選 C，請重新作邊中點的垂直平分線。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "鎖定三角形頂點，只拖曳 AB 上的分點 D。何時 AD 的垂直線才是 AB 的中垂線？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "D 是 AB 中點且垂線與 AB 垂直，線上點到 A、B 等距",
+          "D 只要在 AB 上，任何通過 D 的線都可作中垂線",
+          "線只要通過三角形內部，不必檢查 D 是否平分 AB"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "即時標記會分別顯示等長與 90°。若缺一條件，系統不會承認中垂線。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "兩條中垂線交於 O 後，面板顯示 OA＝OB。拖曳第三個頂點 C，哪項能完成外心驗證？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "檢查 OC 是否也等於 OA，並確認第三邊中垂線通過 O",
+          "只看 O 是否在三角形內，不必量 OC",
+          "把 O 改成三個頂點坐標的任意平均值"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "外心需要三點等距與第三線回查。若選 B，鈍角案例會顯示外心在外部仍成立。"
       }
     ]
   },
@@ -175,8 +181,9 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-9-8：三角形的外心」的表示、推理與驗算。",
-    "mission": "請依序分析「S-9-8：三角形的外心」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳三角形頂點與邊中點，讓垂直平分線、外心、三個等距半徑與外接圓即時同步，並依角型診斷外心位置。",
+    "mission": "在地標廣場定位台先預測外心，再拖曳頂點觀察銳角、直角、鈍角三種位置與距離表，最後完成會考型構造判讀。",
+    "learningDesign": {"type":"geometric-construction","objective":"在地標三角形模型中單獨調整頂點或中點，讓垂直平分線、外心、等距半徑和外接圓同步呈現，並比較三種角型的位置。","predictionPrompt":"先不操作：把三角形拖成直角、再拖成鈍角，你預測外心會在哪裡？兩條中垂線交點是否仍到三頂點等距？","evidencePrompt":"每次只改一個頂點或一個邊中點，記錄中點等距、垂直角度、OA／OB／OC 與外心位置；若不一致，從中點錯置、把內心當外心或只看內外位置中找錯。","steps":[{"id":"step-1","action":"拖曳 AB 上的分點 D，讓 BD 與 DC 等長，再調整垂直線到 90°","equation":"D 為 AB 中點且 OD⊥AB → OA＝OB","reason":"垂直平分線上的點到線段兩端等距，等距條件是外心構造的起點。","feedback":"若只垂直不平分，系統標示條件不完整；若只平分不垂直，也不承認中垂線。"},{"id":"step-2","action":"固定 AB 的中垂線，只改變 AC 的中點 E，觀察兩線交點 O 與第三點距離表","equation":"OA＝OB、OA＝OC → OA＝OB＝OC","reason":"兩條中垂線交會產生同時滿足兩個等距條件的點，第三條中垂線可作獨立驗證。","feedback":"若 OC 不等於 OA，先檢查 E 是否真為 AC 中點；不要用畫面中央猜 O。"},{"id":"step-3","action":"拖曳頂點 C 使三角形依序成銳角、直角、鈍角，觀察外心相對位置與外接圓","equation":"銳角：內部；直角：斜邊中點；鈍角：外部","reason":"外心定義不變，位置會隨最大角改變；外部不代表構造失敗。","feedback":"若判鈍角無外心，系統顯示三個半徑仍相等；請把位置分類和存在性分開。"},{"id":"step-4","action":"完成會考型辨識：隱藏名稱，只給兩條垂直平分線、等距數據與圓圖，拖曳選出外心並和內心／重心區分","equation":"中垂線交點＝外心；角平分線交點＝內心；中線交點＝重心","reason":"相同的『三角形中心』名稱不能取代構造條件，線的身分決定中心的身分。","feedback":"若只依中心是否在內部選答案，鈍角案例會修正你的判斷；回到構造線和等距證據。"}]},
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",

@@ -1,193 +1,387 @@
 {
-  "id": "lesson-science-content-ec-iv-2",
-  "subject": "science",
-  "title": "Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係",
-  "knowledgeIds": [
-    "kg-science-content-ec-iv-2"
-  ],
-  "gradeRange": [
-    "7",
-    "8",
-    "9"
-  ],
-  "content": {
-    "summary": "本課聚焦「定溫定量氣體的壓力與體積關係」，以自編範例練習概念、證據與新情境遷移。",
-    "sections": [
-      {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「定溫定量氣體的壓力與體積關係」相關的關係。"
-      },
-      {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「定溫定量氣體的壓力與體積關係」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
-      },
-      {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「定溫定量氣體的壓力與體積關係」的名稱就作答；必須確認題幹證據與結論是否一致。"
-      },
-      {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「定溫定量氣體的壓力與體積關係」，並指出至少一項支持判斷的條件。"
-      }
-    ]
-  },
-  "studyHighlights": [
-    "先圈出與「定溫定量氣體的壓力與體積關係」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
-  ],
-  "studyReferences": [
-    "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "https://cap.rcpet.edu.tw/index.html",
-    "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "https://www.naer.edu.tw/"
-  ],
-  "provenance": {
-    "origin": "original",
-    "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
-  },
-  "authoringStandard": "full-lesson-v1",
-  "publisherResearch": [
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音資源",
-      "subject": "science",
-      "chapterLocator": "Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開出版社資源提供自然科學探究的單元節奏與活動節點；本課依「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」重新安排自編正文、示例、練習、遷移與檢核。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    "id": "lesson-science-content-ec-iv-2",
+    "subject": "science",
+    "title": "Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係",
+    "knowledgeIds": [
+        "kg-science-content-ec-iv-2"
+    ],
+    "gradeRange": [
+        "7",
+        "8",
+        "9"
+    ],
+    "content": {
+        "summary": "以氣密注射器固定溫度與氣體量，觀察活塞位置、氣體體積和壓力讀值的變化，從粒子碰撞模型、資料表與圖表建立波以耳定律，並判斷其適用條件。",
+        "sections": [
+            {
+                "heading": "學習目標",
+                "body": "完成本課後，你能說明氣體粒子持續運動並碰撞器壁而形成壓力；在溫度與氣體量固定時，用 pV＝常數或 p₁V₁＝p₂V₂ 描述壓力與體積的反比關係；能操作或閱讀注射器、活塞、資料表與圖表，並判斷加熱、漏氣或改變氣體量時為何不能直接套用同一關係。"
+            },
+            {
+                "heading": "關鍵概念",
+                "body": "壓力 p 是大量粒子撞擊容器壁的平均效果。固定溫度 T，粒子的平均運動狀態近似不變；固定氣體量 n，密閉容器裡的粒子數不變。把同一份氣體壓進較小體積時，粒子平均速率近似不變，但單位時間撞擊器壁的機會增加，所以 p 變大；體積加倍時，壓力減半。這是反比，不是相減，也不是只要看到活塞移動就能下結論。"
+            },
+            {
+                "heading": "實驗與圖表",
+                "body": "用氣密注射器裝入一小段空氣，固定溫度，逐步推動活塞並在每個位置讀取體積 V 與壓力 p。若資料近似為 V＝20、16、10 mL 對應 p＝60、75、120 kPa，乘積 pV 都約為 1200 kPa·mL；p 對 V 是向下彎曲的反比曲線，p 對 1／V 則較接近直線。讀圖時先確認軸、單位與控制條件，再判斷趨勢。"
+            },
+            {
+                "heading": "常見迷思",
+                "body": "壓縮氣體時，變小的是粒子可活動的空間，不是粒子本身被壓扁；若沒有漏氣，粒子數量 n 不會因活塞移動而增加。『體積變小所以壓力一定變小』把反比誤成同向；『壓力乘體積固定』也只有在 T 與 n 固定時成立。活塞摩擦很大、溫度尚未恢復或容器漏氣，都可能使資料偏離模型。"
+            },
+            {
+                "heading": "解題路徑",
+                "body": "先圈出定溫、定量、密閉或氣密等條件，再決定使用 pV＝常數。已知三個量時列 p₁V₁＝p₂V₂，統一壓力與體積單位後代入；比例題可先用『體積變成幾分之一，壓力變成幾倍』檢查方向。遇到圖表則比較乘積或 p 與 1／V 的關係，最後說明何時因溫度、氣體量或測量誤差而需要修正。"
+            }
+        ]
+    },
+    "studyHighlights": [
+        "氣體壓力來自粒子持續碰撞容器壁的平均效果；溫度固定時，粒子平均運動狀態可視為不變。",
+        "同一份氣體在定溫、密閉且氣體量固定時，pV 近似為常數，故 p 與 V 成反比。",
+        "注射器實驗要控制溫度、避免漏氣、讀取活塞位置，並以 pV 或 p 對 1／V 檢查資料。",
+        "套用 p₁V₁＝p₂V₂ 前，先確認沒有加熱、漏氣或改變氣體量，且壓力、體積單位一致。"
+    ],
+    "studyReferences": [
+        "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+        "https://tpack.nani.com.tw/nani_content?a=75&b=2",
+        "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+        "https://resource.hle.com.tw/Books/BooksResource/111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%E7%A7%912%E4%B8%8B%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99%E7%94%A8%E5%90%88%E6%AA%94%28111f623935%29.pdf"
+    ],
+    "provenance": {
+        "origin": "original",
+        "license": "All rights reserved",
+        "authoringNote": "本課依官方課綱、Knowledge Graph 與南一、康軒、翰林可取得的公開資料逐項研究後，以繁體中文針對 Ec-Ⅳ-2 獨立撰寫；未複製出版社正文、圖像、題目、答案或活動文字。"
+    },
+    "authoringStandard": "version-fused-v1",
+    "versionResearch": [
+        {
+            "publisher": "nani",
+            "edition": "南一國中自然科公開學習資源與單元索引",
+            "sourceType": "public-web",
+            "sourceLocator": "https://tpack.nani.com.tw/nani_content?a=75&b=2；公開自然科資源中氣體壓力、體積變化與生活器具的概念定位，並以課綱 Ec-Ⅳ-2 交叉核對單元邊界",
+            "reviewedAt": "2026-08-30",
+            "findings": {
+                "concepts": [
+                    "以氣體容易被壓縮的經驗銜接到粒子間距與器壁碰撞，將宏觀壓力連回微觀模型。",
+                    "強調定溫與氣體量固定後的壓力、體積反向變化，並把密閉容器和生活器具作為應用脈絡。"
+                ],
+                "representations": [
+                    "本課採注射器剖面、粒子分布前後對照、p—V 反比曲線及 p—1／V 近似直線互相轉換。"
+                ],
+                "examplesOrEvidence": [
+                    "公開資源提供氣體壓縮與壓力現象的教學線索；本課另自編 60、75、120 kPa 與 20、16、10 mL 的資料，要求計算乘積並讀圖。"
+                ],
+                "misconceptions": [
+                    "需區分粒子本身大小與粒子間距，並防止把壓縮誤解成粒子數量增加或粒子被壓扁。"
+                ],
+                "assessmentEmphasis": [
+                    "由注射器操作條件、資料表與陌生圖形判斷反比關係，不能只憑關鍵字作答。"
+                ]
+            },
+            "licenseBoundary": "僅研究南一公開頁面的概念方向、活動線索與章節定位；本課文字、圖表數據、例證、互動選項與回饋均重新設計。"
+        },
+        {
+            "publisher": "kanghsuan",
+            "edition": "康軒國中自然公開影音與互動資源",
+            "sourceType": "public-web",
+            "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然公開資源索引中的 8 下力與壓力、氣體及實驗／示範探索節點，並核對其以觀察、操作和圖表整理證據的教學型態",
+            "reviewedAt": "2026-08-30",
+            "findings": {
+                "concepts": [
+                    "公開資源以可觀察的壓力現象和實驗節點引導學生，再把現象整理成可比較的科學關係。",
+                    "操作脈絡提醒學習者同時注意控制變因、讀值與證據，而不是只背定律名稱。"
+                ],
+                "representations": [
+                    "本課吸收分段操作與即時回饋的取向，設計活塞位置、壓力讀值、pV 乘積和圖形判讀的連續任務。"
+                ],
+                "examplesOrEvidence": [
+                    "公開頁面確認自然科有實驗影片、示範探索與圖表化的數位資源類型；本課以氣密注射器自編資料進行重複量測與誤差討論。"
+                ],
+                "misconceptions": [
+                    "需防止把活塞推得更用力直接等同於氣體定律，忽略溫度、漏氣、摩擦與氣體量等控制條件。"
+                ],
+                "assessmentEmphasis": [
+                    "要求從操作條件和資料讀值建立結論，並能指出會破壞定溫定量假設的實驗問題。"
+                ]
+            },
+            "licenseBoundary": "只使用康軒公開資源的章節定位、活動形式與概念節點；不擷取影片、動畫、字幕、題目、答案或圖片。"
+        },
+        {
+            "publisher": "hanlin",
+            "edition": "翰林國中自然科公開理科祕笈與氣體章節資料",
+            "sourceType": "public-web",
+            "sourceLocator": "https://resource.hle.com.tw/Books/BooksResource/111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%E7%A7%912%E4%B8%8B%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99%E7%94%A8%E5%90%88%E6%AA%94%28111f623935%29.pdf；公開 PDF 中氣體壓力、體積、定律表徵、數據題與實驗條件的相關定位",
+            "reviewedAt": "2026-08-30",
+            "findings": {
+                "concepts": [
+                    "將氣體壓力與體積關係放在粒子模型、溫度／壓力／體積測量和氣體定律的連續理化脈絡中。",
+                    "以定量關係式和數值題檢查定溫時壓力與體積的反比，並提醒不同狀態變因不能混用同一公式。"
+                ],
+                "representations": [
+                    "本課採 pV＝常數、p₁V₁＝p₂V₂、p—V 曲線與 p—1／V 圖互相驗證，補上單位與乘積檢查。"
+                ],
+                "examplesOrEvidence": [
+                    "公開資料提供氣體章節的公式、數據與題型研究方向；本課不沿用原例，改用注射器 20／16／10 mL 與 60／75／120 kPa 的原創表格。"
+                ],
+                "misconceptions": [
+                    "必須區分波以耳定律與溫度改變造成的體積變化，並避免省略定溫條件後任意套用 pV 常數。"
+                ],
+                "assessmentEmphasis": [
+                    "混合考查公式代入、圖表趨勢、單位、控制變因和生活應用，要求答案附上可檢查的推理鏈。"
+                ]
+            },
+            "licenseBoundary": "僅以翰林公開檔案研究概念順序、表示法與評量方向；不複製其正文、圖表、練習、解析、答案或圖片。"
+        }
+    ],
+    "fusionRecord": {
+        "commonCore": [
+            "三家公開資料都把氣體壓力連回粒子運動或碰撞，並要求在明確控制條件下比較壓力與體積。",
+            "共同重視實驗觀察、數據整理與公式／圖表表徵，不能只記憶定律名稱。",
+            "共同指出氣體定律必須附帶溫度、氣體量與容器狀態等條件，生活應用要回查這些限制。"
+        ],
+        "versionDifferences": [
+            "南一較適合從可壓縮的生活直觀和粒子模型切入；康軒公開資源較凸顯實驗／示範探索與分段操作；翰林公開資料較集中於定律公式、數據題與多種圖表表示。"
+        ],
+        "originalAdditions": [
+            "以氣密注射器為貫穿裝置，要求同時記錄活塞位置、體積和壓力，避免把抽象反比變成口訣。",
+            "設計 20、16、10 mL 與 60、75、120 kPa 的原創資料，並比較 pV 乘積、p—V 曲線和 p—1／V 圖。",
+            "加入活塞摩擦、尚未恢復的溫度、漏氣與改變氣體量等邊界判斷，讓學生知道何時不能套用 p₁V₁＝p₂V₂。"
+        ],
+        "llmSynthesisNote": "我先以官方課綱 Ec-Ⅳ-2 與 KG 節點界定定溫定量氣體的壓力—體積範圍，再逐一研究南一的粒子與生活直觀、康軒的觀察操作節點、翰林的公式與圖表表徵。融合後以注射器資料探究作為原創主線，重新撰寫六階段課文、迷思診斷、引導計算、生活遷移、自我檢核、互動回饋與模擬步驟；未改名套用任何版本例題或文字。"
+    },
+    "publisherResearch": [
+        {
+            "publisher": "nani",
+            "edition": "南一國中自然科公開學習資源與單元索引",
+            "subject": "science",
+            "chapterLocator": "Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係；公開資源中的氣體壓力、體積變化、粒子模型與生活器具定位",
+            "sourceUrl": "https://tpack.nani.com.tw/nani_content?a=75&b=2",
+            "access": "public-open",
+            "reviewedAt": "2026-08-30",
+            "researchScope": [
+                "teaching-sequence",
+                "concept-progression",
+                "activity-pattern",
+                "assessment-pattern"
+            ],
+            "outcome": "採南一由可壓縮現象連到粒子模型的入口，改寫為注射器實驗與 pV 資料探究。",
+            "copyrightBoundary": "只研究公開頁面概念方向與章節定位，不複製南一正文、圖片、表格、習題、答案或活動文字。"
+        },
+        {
+            "publisher": "kanghsuan",
+            "edition": "康軒國中自然公開影音與互動資源",
+            "subject": "science",
+            "chapterLocator": "自然公開影音索引：實驗影片、示範探索與 8 下力與壓力章節的氣體／壓力相關節點；作為操作與證據形成的研究定位",
+            "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+            "access": "public-open",
+            "reviewedAt": "2026-08-30",
+            "researchScope": [
+                "teaching-sequence",
+                "concept-progression",
+                "activity-pattern",
+                "assessment-pattern"
+            ],
+            "outcome": "吸收康軒以觀察、操作、讀值和圖表整理證據的方向，設計活塞壓縮的單元專屬互動。",
+            "copyrightBoundary": "只研究公開資源的章節與活動型態，不擷取康軒影片、動畫、字幕、圖卡、題目、答案或圖片。"
+        },
+        {
+            "publisher": "hanlin",
+            "edition": "翰林國中自然科公開理科祕笈與氣體章節資料",
+            "subject": "science",
+            "chapterLocator": "公開 PDF 中氣體壓力、體積、定律公式、數據題與實驗條件的相關定位，對照 Ec-Ⅳ-2 單元範圍",
+            "sourceUrl": "https://resource.hle.com.tw/Books/BooksResource/111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%E7%A7%912%E4%B8%8B%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99%E7%94%A8%E5%90%88%E6%AA%94%28111f623935%29.pdf",
+            "access": "public-open",
+            "reviewedAt": "2026-08-30",
+            "researchScope": [
+                "teaching-sequence",
+                "concept-progression",
+                "activity-pattern",
+                "assessment-pattern"
+            ],
+            "outcome": "補入波以耳定律的公式、pV 乘積、圖表與單位檢核，並以原創注射器數據和生活案例重組課文。",
+            "copyrightBoundary": "只採用公開檔案的概念、表徵與評量方向，不複製翰林正文、圖表、習題、解析、答案或圖片。"
+        }
+    ],
+    "teaching": {
+        "body": [
+            {
+                "id": "hook",
+                "phase": "hook",
+                "heading": "活塞為什麼越推越難？先把看不見的空氣留下來",
+                "body": "拿一支沒有針頭的注射器，堵住前端後推動活塞；空氣看不見，手卻感到阻力。若放開前端，活塞又比較容易移動。要追問的不是『空氣有彈性』，而是同一份空氣被壓進較小空間時，器壁受到的壓力為何增加？本課把注射器保持氣密，在不同體積讀取壓力，讓粒子碰撞模型接受資料檢驗。"
+            },
+            {
+                "id": "explain",
+                "phase": "explain",
+                "heading": "從粒子碰撞看見壓力，從控制條件找到反比",
+                "body": "氣體粒子不停做不規則運動，撞到容器壁時交換動量；大量碰撞的平均效果就是壓力 p。固定溫度 T，粒子的平均運動狀態維持在同一範圍；固定氣體量 n，密閉容器裡粒子數不變。若體積 V 縮小，粒子平均速率近似不變，但撞擊器壁的機會增加，所以 p 增大。定溫定量時 p 與 V 成反比，可寫成 pV＝常數，或 p₁V₁＝p₂V₂。"
+            },
+            {
+                "id": "worked",
+                "phase": "worked-example",
+                "heading": "把注射器讀值變成證據：先算乘積，再看圖形",
+                "body": "某次自編實驗在溫度穩定、氣密良好的注射器中得到：V＝20 mL、p＝60 kPa；V＝16 mL、p＝75 kPa；V＝10 mL、p＝120 kPa。逐組計算 pV，三者都是 1200 kPa·mL，支持定溫定量的反比模型。V 從 20 減為 10 mL 時，p 從 60 增為 120 kPa；不能把 10 mL 的差值直接加到壓力。p—V 圖是彎曲曲線，p—1／V 圖較接近直線。"
+            },
+            {
+                "id": "guided",
+                "phase": "guided-practice",
+                "heading": "讓每一步都能被同學重做：操作、整理、判斷",
+                "body": "先確認注射器氣密，裝入同一份空氣；只改變活塞位置，每次停下等待讀值穩定，再記錄 V、p 與室溫。把資料排成表格，新增 pV 欄；若乘積大致相近，才可在誤差範圍內支持反比。練習：p₁＝90 kPa、V₁＝12 mL，壓縮到 V₂＝8 mL 且 T、n 不變，p₂＝90×12÷8＝135 kPa；用『體積變 2／3，壓力變 3／2』驗算。偏離時先查摩擦、視差、溫度或漏氣。"
+            },
+            {
+                "id": "transfer",
+                "phase": "transfer",
+                "heading": "把反比條件帶到打氣筒、呼吸與密封容器",
+                "body": "打氣筒的活塞把腔內空氣壓縮，出口閥門讓高壓空氣進入輪胎；手摸到筒身變熱，提醒我們實際操作可能改變 T，不能把每一瞬間都當成完美定溫。呼吸時胸腔體積會影響肺內壓力，但肺不是固定氣量、固定溫度的理想注射器。若包裝內氣體量減少，不能單用 pV 常數解釋，必須先判斷 n 是否改變。生活題先問：氣體有沒有進出？溫度是否固定？是不是同一份氣體？"
+            },
+            {
+                "id": "reflect",
+                "phase": "reflect",
+                "heading": "用一張條件卡收束波以耳定律",
+                "body": "完成推理鏈：粒子碰壁形成壓力；T 固定使平均運動狀態近似固定；n 固定使粒子數不變；V 變小使碰撞更頻繁；因此 p 變大且 pV 近似不變。檢查圖表是否有軸名與單位，乘積是否大致一致，實驗是否氣密、等溫且沒有改變氣體量。最後用條件句總結：『在＿＿固定時，若 V 變為＿＿，p 會＿＿，因為＿＿。』能接起條件、比例、模型和證據，才是真正理解 Ec-Ⅳ-2。"
+            }
+        ],
+        "summary": [
+            "用氣密注射器觀察活塞、體積與壓力，把粒子碰撞連到可測量讀值。",
+            "定溫定量時 pV 近似為常數，壓力與體積成反比。",
+            "以 pV 乘積、p—V 曲線和 p—1／V 圖互相核對，不把單一偏離點直接當成反例。",
+            "套用公式前檢查 T、n、氣密性、活塞摩擦、讀值單位與溫度穩定。"
+        ],
+        "exitCheck": [
+            {
+                "prompt": "為什麼同一份氣體在溫度固定時被壓縮，壓力通常會上升？請用粒子碰撞解釋。",
+                "expectedEvidence": "指出粒子平均運動狀態近似不變、粒子數固定，但體積變小使單位時間撞擊器壁的機會增加，因此壓力上升。"
+            },
+            {
+                "prompt": "某氣體 p＝80 kPa、V＝15 mL；若定溫定量壓縮到 10 mL，新的壓力是多少？請列式並檢查方向。",
+                "expectedEvidence": "能寫 80×15＝p₂×10，得到 p₂＝120 kPa，並說明體積乘 2／3 時壓力乘 3／2。"
+            },
+            {
+                "prompt": "注射器資料中 pV 不完全相同，能否立刻否定波以耳定律？還要檢查哪些條件？",
+                "expectedEvidence": "不能立刻否定；應檢查溫度是否穩定、氣體量是否固定且氣密、活塞摩擦、讀值與單位，以及偏差是否在測量誤差範圍。"
+            }
+        ]
+    },
+    "reviewStatus": "draft",
+    "updatedAt": "2026-08-30",
+    "interactive": {
+        "type": "scientific-investigation",
+        "goal": "在氣密注射器模型中固定溫度與氣體量，改變體積、讀取壓力，並用 pV 乘積和圖表證明壓力與體積的反比關係。",
+        "scenario": "你是實驗小組的資料員：先確認注射器氣密並讓溫度穩定，再移動活塞取得不同 v 與 p，最後判斷資料是否支持 p v 近似常數。",
+        "variables": [
+            {
+                "symbol": "p",
+                "meaning": "氣體壓力，單位為 kPa"
+            },
+            {
+                "symbol": "v",
+                "meaning": "氣體體積，單位為 mL"
+            },
+            {
+                "symbol": "t",
+                "meaning": "氣體溫度，用來確認是否維持定溫"
+            },
+            {
+                "symbol": "n",
+                "meaning": "氣體量，用來確認是否漏氣或有氣體進出"
+            }
+        ],
+        "steps": [
+            {
+                "id": "step-1",
+                "prompt": "開始壓縮前，要先確認哪些條件才能研究 p 與 v 的關係？",
+                "options": [
+                    "確認注射器氣密、t 穩定，且同一份氣體的 n 不變",
+                    "邊加熱邊推活塞，讓 t 和 v 同時改變",
+                    "打開前端讓氣體自由進出，再比較 p 和 v"
+                ],
+                "answer": "A",
+                "feedback": "波以耳定律需要定溫、定量；漏氣、加熱或氣體進出會使 n 或 t 改變，不能只用 p₁v₁＝p₂v₂。"
+            },
+            {
+                "id": "step-2",
+                "prompt": "在 t、n 固定時，v 從 20 mL 變成 10 mL，p 應如何變化？",
+                "options": [
+                    "p 約變成原來的 2 倍，因為 p v 近似固定",
+                    "p 約變成原來的 1／2，因為 p 和 v 同向變化",
+                    "p 不變，因為同一份氣體的粒子數沒有改變"
+                ],
+                "answer": "A",
+                "feedback": "體積縮小一半會讓碰撞更頻繁；在定溫定量條件下，壓力約加倍。粒子數固定不代表壓力固定。"
+            },
+            {
+                "id": "step-3",
+                "prompt": "三筆資料的 p v 分別為 1200、1190、1215 kPa·mL，最合理的判讀是什麼？",
+                "options": [
+                    "乘積大致接近，可在誤差範圍內支持反比模型",
+                    "只要不是完全相等，就一定證明定律錯誤",
+                    "只看最後一筆壓力，不必查看 v、單位或測量條件"
+                ],
+                "answer": "A",
+                "feedback": "實驗讀值會有摩擦、視差與穩定時間等誤差；應看乘積是否大致集中，並回查控制條件與單位。"
+            },
+            {
+                "id": "step-4",
+                "prompt": "如果壓縮過程中注射器明顯升溫，報告應如何處理？",
+                "options": [
+                    "標記 t 改變，暫停或等待恢復後再測，不能直接宣稱定溫反比",
+                    "忽略 t，因為只要 n 不變，任何溫度都可用同一 p v 常數",
+                    "把升溫造成的所有 p 增加都算成 v 變小的效果"
+                ],
+                "answer": "A",
+                "feedback": "壓力不只受體積影響；若 t 改變，就不再是單獨檢驗定溫定量的 p—v 關係。"
+            }
+        ]
+    },
+    "lessonScope": "learning-content",
+    "simulation": {
+        "id": "sim-science-ec-iv-2",
+        "engine": "science-motion-lab",
+        "mode": "model",
+        "model": "general",
+        "goal": "在氣密注射器模型中固定溫度與氣體量，改變體積、讀取壓力，並用 pV 乘積和圖表證明壓力與體積的反比關係。",
+        "mission": "你是實驗小組的資料員：先確認注射器氣密並讓溫度穩定，再移動活塞取得不同 v 與 p，最後判斷資料是否支持 p v 近似常數。",
+        "learningDesign": {
+            "type": "parameter-investigation",
+            "objective": "學生能固定 t 與 n，改變 v 並讀取 p，計算 p v 乘積，從粒子碰撞和圖表證明定溫定量氣體的壓力與體積成反比。",
+            "predictionPrompt": "若把同一份氣體的 v 從 20 mL 依序調成 16、12、10 mL，且 t、n 不變，請預測 p 的相對變化，並說明 p v 是否維持近似常數。",
+            "evidencePrompt": "提交每個 v、p、p v 的資料，標示氣密、t 穩定與 n 固定的證據，再比較 p—v 曲線和 p—1／v 圖，說明偏離可能來自哪些限制。",
+            "steps": [
+                {
+                    "id": "step-1",
+                    "action": "封閉注射器前端，將 t 調整至穩定並記錄初始 v＝20 mL、p＝60 kPa。",
+                    "equation": "確認 t 固定、n 固定、容器氣密",
+                    "reason": "只有先固定溫度與氣體量，後續 p 的變化才可主要歸因於 v；開口或漏氣會改變 n。",
+                    "feedback": "請先檢查接頭和活塞密封，並等待感測器讀值穩定；不能把加熱中的讀值當成定溫資料。"
+                },
+                {
+                    "id": "step-2",
+                    "action": "只移動活塞，把 v 依序設定為 16、12、10 mL，每次停下等待讀取 p。",
+                    "equation": "v 變小 → 碰撞頻率增加 → p 變大",
+                    "reason": "粒子平均運動狀態近似不變，但可活動空間變小，單位時間撞擊器壁的機會增加，所以壓力上升。",
+                    "feedback": "預期 v＝16、12、10 mL 時 p 約為 75、100、120 kPa；先看比例，不要把壓力當成與體積同向。"
+                },
+                {
+                    "id": "step-3",
+                    "action": "為每一筆資料計算 p v，並切換 p—v 與 p—1／v 的圖表表示。",
+                    "equation": "p v ≈ 常數；p ∝ 1／v",
+                    "reason": "反比資料在 p—v 圖上呈彎曲曲線，在 p—1／v 圖上較接近直線；兩種表示可互相檢查。",
+                    "feedback": "若初始資料的 p v 約為 1200 kPa·mL，其他點也應大致接近；請標出軸名、單位並保留測量誤差。"
+                },
+                {
+                    "id": "step-4",
+                    "action": "開啟升溫或漏氣干擾選項，重新測量並判斷哪個假設被破壞。",
+                    "equation": "t 或 n 改變 → 不能直接使用 p₁v₁＝p₂v₂",
+                    "reason": "壓力不只受體積影響；升溫會改變粒子平均運動狀態，漏氣會改變粒子數，兩者都使 p v 不再代表同一個定溫定量系統。",
+                    "feedback": "報告要寫出被改變的變數和限制；若只說曲線不漂亮而未指出 t 或 n，證據鏈仍不完整。"
+                }
+            ]
+        },
+        "sourceRefs": [
+            "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+            "https://tpack.nani.com.tw/nani_content?a=75&b=2",
+            "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+            "https://resource.hle.com.tw/Books/BooksResource/111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%E7%A7%912%E4%B8%8B%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99%E7%94%A8%E5%90%88%E6%AA%94%28111f623935%29.pdf"
+        ]
     }
-  ],
-  "teaching": {
-    "body": [
-      {
-        "id": "hook",
-        "phase": "hook",
-        "heading": "從可觀察現象提出「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」問題",
-        "body": "先找一個可觀察、可測量且與「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」相關的現象，寫下不帶答案的問題。把看到的事實和自己的解釋分開，列出可能影響結果的因素與安全注意事項；好的探究從清楚問題開始，而不是先挑一個想證明的結論。"
-      },
-      {
-        "id": "explain",
-        "phase": "explain",
-        "heading": "用模型連結現象與證據",
-        "body": "本單元依官方課綱所列的「定溫定量氣體的壓力與體積關係」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
-      },
-      {
-        "id": "worked",
-        "phase": "worked-example",
-        "heading": "自編探究：從資料推論",
-        "body": "以「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」為主題，在低風險桌面情境量測同一小車通過 1 公尺的時間：木板甲 2.0 秒、木板乙 2.5 秒，重複三次並記錄平均。把材質視為自變因、時間或速度視為應變因，列出可能干擾並以公式檢查單位。"
-      },
-      {
-        "id": "guided",
-        "phase": "guided-practice",
-        "heading": "依序完成探究紀錄",
-        "body": "針對「定溫定量氣體的壓力與體積關係」先寫可觀察問題，再列自變因、應變因與控制變因；依序記錄預測、操作、數據與限制，重複量測後才下條件式結論。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "transfer",
-        "phase": "transfer",
-        "heading": "把證據思維帶到日常判斷",
-        "body": "將「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」的探究方法移到家庭、校園或環境議題，判斷網路圖表、廣告或新聞中的科學主張。檢查資料來源、樣本、測量方式與不確定性，並比較不同解釋的預測；若無法排除替代原因，就保留條件式結論。"
-      },
-      {
-        "id": "reflect",
-        "phase": "reflect",
-        "heading": "回顧方法與限制",
-        "body": "完成後回答：我觀察到的事實是什麼、哪個變因最關鍵、資料有何限制、下一步如何改進。再用一句話總結「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」的科學概念，並確認圖表、單位、安全規範與結論彼此一致。"
-      }
-    ],
-    "summary": [
-      "先用自己的話界定「定溫定量氣體的壓力與體積關係」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
-    ],
-    "exitCheck": [
-      {
-        "prompt": "請用自己的話說明「定溫定量氣體的壓力與體積關係」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
-      },
-      {
-        "prompt": "在「定溫定量氣體的壓力與體積關係」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
-      },
-      {
-        "prompt": "若題目的條件改變，如何調整處理「定溫定量氣體的壓力與體積關係」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
-      }
-    ]
-  },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
-  "interactive": {
-    "type": "scientific-investigation",
-    "goal": "以互動步驟探索「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」的理解、證據與表達。",
-    "scenario": "請依序分析「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」的情境，選出可被查證且最能支持結論的做法。",
-    "variables": [
-      {
-        "symbol": "x",
-        "meaning": "本單元情境中待分析的關鍵因素"
-      }
-    ],
-    "steps": [
-      {
-        "id": "step-1",
-        "prompt": "第一步應先做什麼？",
-        "options": [
-          "確認情境、對象、目的與關鍵資訊",
-          "直接猜測答案",
-          "忽略來源與限制"
-        ],
-        "answer": "A",
-        "feedback": "先釐清問題與資料，後續判讀才有依據。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "形成解釋或表達後，下一步應採取什麼策略？",
-        "options": [
-          "以文本、語句、資料或觀察證據逐步支持",
-          "只寫最後結論",
-          "把猜測當成事實"
-        ],
-        "answer": "A",
-        "feedback": "把理由與證據連起來，才能讓他人檢查你的推理。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "完成後如何確認成果？",
-        "options": [
-          "回到原情境檢查意義、來源、範圍與限制",
-          "只看答案是否順眼",
-          "跳過反思與驗證"
-        ],
-        "answer": "A",
-        "feedback": "重新核對情境和限制，才能確認結論適用。"
-      }
-    ]
-  },
-  "lessonScope": "learning-content",
-  "simulation": {
-    "id": "sim-science-ec-iv-2",
-    "engine": "science-motion-lab",
-    "mode": "model",
-    "model": "general",
-    "goal": "以互動步驟探索「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」的理解、證據與表達。",
-    "mission": "請依序分析「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」的情境，選出可被查證且最能支持結論的做法。",
-    "sourceRefs": [
-      "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-      "https://cap.rcpet.edu.tw/index.html",
-      "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/"
-    ]
-  }
 }

@@ -144,8 +144,90 @@
     "authoringStandard": {
       "enum": [
         "legacy-outline",
-        "full-lesson-v1"
+        "full-lesson-v1",
+        "version-fused-v1"
       ]
+    },
+    "versionResearch": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "publisher",
+          "edition",
+          "sourceType",
+          "sourceLocator",
+          "reviewedAt",
+          "findings",
+          "licenseBoundary"
+        ],
+        "properties": {
+          "publisher": {
+            "enum": ["nani", "kanghsuan", "hanlin", "jiayin-hanlin"]
+          },
+          "edition": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sourceType": {
+            "enum": ["local-download", "public-web", "licensed-file", "public-domain"]
+          },
+          "sourceLocator": {
+            "type": "string",
+            "minLength": 10
+          },
+          "reviewedAt": {
+            "type": "string",
+            "format": "date"
+          },
+          "findings": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "concepts",
+              "representations",
+              "examplesOrEvidence",
+              "misconceptions",
+              "assessmentEmphasis"
+            ],
+            "properties": {
+              "concepts": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 15}},
+              "representations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}},
+              "examplesOrEvidence": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}},
+              "misconceptions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}},
+              "assessmentEmphasis": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}}
+            }
+          },
+          "licenseBoundary": {
+            "type": "string",
+            "minLength": 30
+          }
+        }
+      }
+    },
+    "fusionRecord": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["commonCore", "versionDifferences", "originalAdditions", "llmSynthesisNote"],
+      "properties": {
+        "commonCore": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 15}},
+        "versionDifferences": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}},
+        "originalAdditions": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 15}},
+        "llmSynthesisNote": {"type": "string", "minLength": 80}
+      }
+    },
+    "terraReview": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["model", "reviewedAt", "checks", "outcome"],
+      "properties": {
+        "model": {"const": "Terra"},
+        "reviewedAt": {"type": "string", "format": "date"},
+        "checks": {"type": "array", "minItems": 6, "uniqueItems": true, "items": {"type": "string", "minLength": 10}},
+        "outcome": {"enum": ["pass", "revise", "blocked"]}
+      }
     },
     "lessonScope": {
       "enum": [
@@ -464,6 +546,35 @@
             "general",
             "circulation"
           ]
+        },
+        "learningDesign": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["type", "objective", "predictionPrompt", "steps", "evidencePrompt"],
+          "properties": {
+            "type": {
+              "enum": ["equation-transform", "representation-match", "parameter-investigation", "data-investigation", "geometric-construction", "probability-experiment", "model-boundary"]
+            },
+            "objective": {"type": "string", "minLength": 20},
+            "predictionPrompt": {"type": "string", "minLength": 20},
+            "evidencePrompt": {"type": "string", "minLength": 20},
+            "steps": {
+              "type": "array",
+              "minItems": 3,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["id", "action", "equation", "reason", "feedback"],
+                "properties": {
+                  "id": {"type": "string", "pattern": "^step-[0-9]+$"},
+                  "action": {"type": "string", "minLength": 10},
+                  "equation": {"type": "string", "minLength": 5},
+                  "reason": {"type": "string", "minLength": 20},
+                  "feedback": {"type": "string", "minLength": 20}
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -491,7 +602,7 @@
       "if": {
         "properties": {
           "authoringStandard": {
-            "const": "full-lesson-v1"
+            "enum": ["full-lesson-v1", "version-fused-v1"]
           }
         },
         "required": [
@@ -503,6 +614,17 @@
           "publisherResearch",
           "teaching"
         ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "authoringStandard": {"const": "version-fused-v1"}
+        },
+        "required": ["authoringStandard"]
+      },
+      "then": {
+        "required": ["versionResearch", "fusionRecord"]
       }
     },
     {

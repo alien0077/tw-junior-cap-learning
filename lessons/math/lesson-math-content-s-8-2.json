@@ -9,26 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "運用三角形分割理解凸多邊形內角和公式。",
+    "summary": "凸多邊形的內角和不是死記公式，而是可以從一個頂點連出對角線，把圖形切成若干個三角形，再把每個三角形的 180° 相加得到。由此推導 n 邊形的內角和為 (n−2)×180°，並能反過來用角度資料判斷邊數或缺角。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "運用三角形分割理解凸多邊形內角和公式。 能以分割、角關係或公式驗證。"
+        "heading": "從一個頂點切開凸多邊形",
+        "body": "凸多邊形內部任取一個頂點，連到其餘不相鄰頂點，就能分成 n−2 個三角形；每個三角形內角和為 180°，因此整個圖形的內角和是 (n−2)×180°。凸性保證這些對角線留在圖形內，分割才不會穿出外部。"
       },
       {
-        "heading": "學習流程",
-        "body": "辨認圖形與角，整理三角形分割或平行線截線關係，再計算並檢查。"
+        "heading": "公式、圖形與反推",
+        "body": "先數邊數 n，再決定可分出的三角形數 n−2，最後計算內角和。若已知總和，則解 n−2＝總和÷180°；若只缺一個內角，先用總和減去其餘角度。每一步都回到圖形檢查 n 的意義。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "內角和公式代錯邊數、混淆同位角與內錯角，或把相交線誤判平行。"
+        "heading": "不要把外角或邊數代錯",
+        "body": "最常見錯誤是把 n−2 寫成 n−1、把外角總和 360° 當成內角和，或把凹多邊形也直接套用凸多邊形的分割圖。看到角度資料時，先標明它是內角還是外角，再確認圖形是否凸。"
       }
     ]
   },
   "studyHighlights": [
-    "先辨認圖形與角。",
-    "依公式或角關係推理。",
-    "用圖形與計算驗證。"
+    "從一個頂點數出 n−2 個三角形。",
+    "用 (n−2)×180° 推導或反推邊數。",
+    "區分內角、外角與凹凸，再回圖檢查。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
@@ -41,7 +41,103 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上多邊形公開章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/m-g8a-s02；僅核對凸多邊形與內角和的章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引支持由三角形分割理解多邊形內角和。",
+          "邊數與可分割三角形數的關係是公式的來源。"
+        ],
+        "representations": [
+          "以對角線分割、內角標示與總和算式互相轉換。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編六邊形地磚與八邊形缺角案例。"
+        ],
+        "misconceptions": [
+          "把三角形數 n−2 誤當邊數，或把外角總和混入。"
+        ],
+        "assessmentEmphasis": [
+          "要求畫分割線、推導總和並處理缺角或反推邊數。"
+        ]
+      },
+      "licenseBoundary": "只研究公開索引，不複製或改寫南一教材、圖像、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學八上官方影音 XML",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；核對三角形與多邊形內角資源分類。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開資源支持以三角形分割建立內角和公式。",
+          "內角、外角與凸性條件需要在解題前分清楚。"
+        ],
+        "representations": [
+          "以多邊形圖、對角線、角度表與公式互相驗證。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編正五邊形外角比較和九邊形總和反推。"
+        ],
+        "misconceptions": [
+          "把 n−1 或 360° 代替 n−2 與內角和。"
+        ],
+        "assessmentEmphasis": [
+          "檢查邊數、三角形數、角種類及最後回圖驗算。"
+        ]
+      },
+      "licenseBoundary": "只使用官方 XML 的章節與資源分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網 2A 章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/2A/；核對三角形與多邊形角度公開章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引將多邊形角度連結到三角形分割與內外角關係。",
+          "由總和反推邊數可檢查公式是否真正理解。"
+        ],
+        "representations": [
+          "以分割圖、內角和公式、缺角計算及外角繞行表示。"
+        ],
+        "examplesOrEvidence": [
+          "本課加入地磚、缺角與內外角辨誤三種原創情境。"
+        ],
+        "misconceptions": [
+          "未確認凸性就套用公式，或將缺角直接除以 180。"
+        ],
+        "assessmentEmphasis": [
+          "要求說明公式來源並辨識內角與外角的不同。"
+        ]
+      },
+      "licenseBoundary": "只研究公開章節索引，不複製翰林教材、影音、題庫、答案或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開資料都以三角形分割作為凸多邊形內角和的概念入口。",
+      "邊數、三角形數、內外角區分及缺角推理是共同核心。",
+      "可取得資料以公開章節與資源索引為主，不能推稱取得出版社完整正文。"
+    ],
+    "versionDifferences": [
+      "南一索引偏向分割與公式定位，康軒 XML 可核對多邊形角度資源節奏，翰林索引連到內外角與反推；本課以地磚、缺角及外角繞行整合。"
+    ],
+    "originalAdditions": [
+      "用六邊形地磚推導 n−2 個三角形。",
+      "以八邊形缺角和九邊形反推分辨公式中的每個量。",
+      "加入內角與外角同時出現的道路轉向辨誤。"
+    ],
+    "llmSynthesisNote": "LLM 依官方課綱與 KG 界定凸多邊形內角和，再比較南一、康軒、翰林公開研究，以分割圖、缺角與內外角辨誤重新撰寫；全文為原創，Terra 第二輪尚未執行，故維持 draft。"
+  },
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,6 +155,57 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-8-2：凸多邊形的內角和」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上多邊形公開章節索引",
+      "subject": "math",
+      "chapterLocator": "S-8-2 凸多邊形的內角和",
+      "sourceUrl": "https://www.junyiacademy.org/topics/m-g8a-s02",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對三角形分割與內角和範圍；本課以地磚和缺角案例獨立重寫。",
+      "copyrightBoundary": "只研究公開章節定位，不複製南一教材、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒八上官方數學影音 XML",
+      "subject": "math",
+      "chapterLocator": "八上三角形與多邊形的內角與外角",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "官方 XML 核對多邊形角度資源分類；本課轉化為公式推導、反推和內外角辨誤。",
+      "copyrightBoundary": "只研究公開 XML 分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林 2A 公開數學影音索引",
+      "subject": "math",
+      "chapterLocator": "2A 三角形與多邊形角度",
+      "sourceUrl": "https://mathvideo.hle.com.tw/2A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對多邊形內外角脈絡；本課正文、例題、互動與回饋均獨立撰寫。",
+      "copyrightBoundary": "只研究公開索引，不複製翰林教材、影音、題庫或答案。"
     }
   ],
   "teaching": {
@@ -66,38 +213,38 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-8-2：凸多邊形的內角和」",
-        "body": "先讀懂「S-8-2：凸多邊形的內角和」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "地板拼花的轉角總和",
+        "body": "設計一塊凸六邊形地磚時，六個內角要如何分配？不要先背答案，從其中一個頂點向其他非相鄰頂點畫對角線，會得到四個三角形；每一塊三角形提供 180°，因此六邊形內角和是 4×180°＝720°。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「凸多邊形的內角和」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "為什麼是 n−2 個三角形",
+        "body": "n 邊凸多邊形從一個頂點出發，不能連回自己，也不能連到左右相鄰頂點，剩下 n−3 條對角線；這些線把圖形切成 n−2 個三角形。因此內角和為 (n−2)×180°。這個推導比背 n−2 更能防止把邊數少算一條。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-8-2：凸多邊形的內角和」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "八邊形的總和與缺角",
+        "body": "凸八邊形內角和為 (8−2)×180°＝1080°。若七個內角依序為 130°、145°、120°、150°、135°、140°、125°，總和是 945°，第八角便是 1080°−945°＝135°。最後確認每個內角都小於 180°，且總和與六個三角形一致。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "把總和倒過來找邊數",
+        "body": "若凸多邊形內角和是 1260°，先算 1260÷180＝7，這個 7 是三角形數，不是邊數；因此 n−2＝7，n＝9，圖形是九邊形。把『除以 180 得到什麼』寫清楚，能避免直接把 7 報成七邊形。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-8-2：凸多邊形的內角和」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "分辨內角和與外角和",
+        "body": "沿多邊形外側繞一圈，每個頂點轉過的外角總和是 360°；這和內角和 (n−2)×180° 是兩個不同問題。以正五邊形為例，內角和是 540°，外角和仍是 360°。題目若寫『轉向』或『外側』，先確認它談的是哪一種角。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-8-2：凸多邊形的內角和」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "用分割圖回查公式",
+        "body": "完成題目後畫出一個頂點的分割線，數出三角形是否為 n−2 個，再確認代入的是邊數而不是角數或外角數。若題目給缺角，將求出的角加回總和；若反推邊數，確認除法結果還要加 2。"
       }
     ],
     "summary": [
@@ -121,12 +268,12 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-8-2：凸多邊形的內角和」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-8-2：凸多邊形的內角和」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳對角線分割凸多邊形，推導內角和並處理缺角與反推邊數。",
+    "scenario": "你是地磚設計師，要用分割圖和角度資料檢查多邊形的內角配置。",
     "variables": [
       {
         "symbol": "x",
@@ -136,36 +283,36 @@
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "從一個頂點分割 n 邊凸多邊形，會得到幾個三角形？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "n−2 個，因為不能連到自己與兩個相鄰頂點",
+          "n−1 個，因為每條邊都切出一個三角形",
+          "n 個，因為每個頂點各有一個三角形"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "從一個頂點連到其餘非相鄰頂點，凸 n 邊形會分成 n−2 個三角形。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "凸八邊形的內角和是多少？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "1080°，因為 (8−2)×180°",
+          "1440°，因為 8×180°",
+          "360°，因為那是所有角的總和"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "八邊形可分成六個三角形，所以內角和是 6×180°＝1080°。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "若凸多邊形內角和為 1260°，它有幾條邊？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "9 邊，因為 n−2＝1260÷180＝7",
+          "7 邊，因為 1260÷180＝7",
+          "11 邊，因為要把 2 乘回去"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "先得到三角形數 7，再由 n−2＝7 解得 n＝9。"
       }
     ]
   },
@@ -175,13 +322,42 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-8-2：凸多邊形的內角和」的表示、推理與驗算。",
-    "mission": "請依序分析「S-8-2：凸多邊形的內角和」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳對角線分割凸多邊形，推導內角和並處理缺角與反推邊數。",
+    "mission": "你是地磚設計師，要用分割圖和角度資料檢查多邊形的內角配置。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    ],
+    "learningDesign": {
+      "type": "geometric-construction",
+      "objective": "以從同一頂點連對角線的方式建構三角形，理解 n 邊形內角和公式的來源與適用條件。",
+      "predictionPrompt": "把五邊形從一個頂點切開，你預測會得到幾個三角形？請說明與邊數的關係。",
+      "evidencePrompt": "請畫出對角線、數三角形，再以三角形內角和計算總和。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "選定一個頂點並連出所有不相鄰頂點",
+          "equation": "五邊形可切成 5−2＝3 個三角形",
+          "reason": "從一個頂點不能連到自己或兩個相鄰頂點，剩餘頂點形成分割。",
+          "feedback": "不要把邊數直接當成三角形數，先畫出實際對角線。"
+        },
+        {
+          "id": "step-2",
+          "action": "把三角形內角和累加成多邊形內角和",
+          "equation": "3×180°＝540°",
+          "reason": "分割沒有重疊或遺漏內部區域，所以各三角形角度總和就是多邊形內角和。",
+          "feedback": "確認每個三角形都在多邊形內部，避免把外角算進來。"
+        },
+        {
+          "id": "step-3",
+          "action": "將圖形建構概括成一般公式",
+          "equation": "n 邊形內角和＝(n−2)×180°",
+          "reason": "三角形數量隨邊數增加一個而增加一個，公式來自結構而非死記。",
+          "feedback": "代入四邊形與六邊形測試公式，確認與熟悉結果一致。"
+        }
+      ]
+    }
   }
 }

@@ -2,186 +2,119 @@
   "id": "lesson-math-content-n-8-5",
   "subject": "math",
   "title": "N-8-5：等差級數求和",
-  "knowledgeIds": [
-    "kg-math-content-n-8-5"
-  ],
-  "gradeRange": [
-    "8"
-  ],
+  "knowledgeIds": ["kg-math-content-n-8-5"],
+  "gradeRange": ["8"],
   "content": {
-    "summary": "運用首項、末項與項數公式計算等差級數總和。",
+    "summary": "從等差數列的首項、公差與項數理解等差級數，推導首尾配對的求和公式，並把它用在階梯、座位與分期累加等情境。",
     "sections": [
-      {
-        "heading": "學習目標",
-        "body": "運用首項、末項與項數公式計算等差級數總和。 能以列舉或公式驗證結果。"
-      },
-      {
-        "heading": "學習流程",
-        "body": "找出首項與公差，建立項次關係；求和時確認首末項與項數，再代入公式。"
-      },
-      {
-        "heading": "常見錯誤",
-        "body": "公差正負判斷錯誤、項數少算，或將第 n 項公式誤當求和公式。"
-      }
+      {"heading": "學習目標", "body": "能辨認等差級數，說明首項、末項、項數與公差的角色，理解前 n 項和公式的來源，並運用公式解決有意義的生活問題。"},
+      {"heading": "學習流程", "body": "先列出數列並找出首項與公差，再確認末項和項數；接著用首尾配對或 Sₙ＝n(a₁＋aₙ)／2 求和，最後以逐項相加、估算與單位回查。"},
+      {"heading": "常見錯誤", "body": "不要把第 n 項公式 aₙ＝a₁＋(n－1)d 當成總和公式；也要留意公差的正負、項數是否包含首尾兩端，以及末項不一定是題目最後寫出的數字。"}
     ]
   },
   "studyHighlights": [
-    "先找首項與公差。",
-    "確認項次與項數。",
-    "用列舉或公式驗算。"
+    "等差級數是等差數列各項相加，先確認相鄰兩項的差固定。",
+    "首尾配對後每一對的和相同，因此總和等於項數乘以首尾平均。",
+    "項數可由末項公式反推，不能只用末項減首項而漏掉首項本身。",
+    "生活題要檢查累加對象、單位、項數與結果的量級。"
   ],
   "studyReferences": [
-    "https://cap.rcpet.edu.tw/index.html",
-    "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://www.junyiacademy.org/topics/n-m8b-c01-2",
+    "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=90%E7%A7%92%E5%AD%B8%E6%95%B8%E5%AD%B8&l2=8%E4%B8%8B",
+    "https://mathvideo.hle.com.tw/2B/1-2/"
   ],
-  "provenance": {
-    "origin": "original",
-    "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
-  },
-  "authoringStandard": "full-lesson-v1",
-  "publisherResearch": [
+  "provenance": {"origin": "original", "license": "All rights reserved", "authoringNote": "本課依官方課綱、Knowledge Graph、三版本 mapping 與可取得的公開索引獨立撰寫；未複製出版社正文、例題、練習、答案、圖片、影片或逐字稿。既有翰林 mapping 將 N-8-5 錯置到等比數列，本課依官方課綱與翰林實際 2B 1-2 索引校正研究界線，維持 draft。"},
+  "authoringStandard": "version-fused-v1",
+  "versionResearch": [
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
-      "subject": "math",
-      "chapterLocator": "N-8-5：等差級數求和",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「N-8-5：等差級數求和」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "publisher": "nani", "edition": "類南一版均一教育平台八下數列與等差級數索引", "sourceType": "public-web", "sourceLocator": "https://www.junyiacademy.org/topics/n-m8b-c01-2；八下第一章數列與等差級數／1-2 等差級數，分為等差級數的和與等差級數的應用", "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": ["公開索引把八下內容置於數列與等差級數章，1-2 等差級數分成等差級數的和及應用，與 N-8-5 的公式和生活問題相符。", "頁面另列利用首項、末項、項數求和，以及由前 n 項和反求項數、公差或第幾項的資源，顯示公式需要和數列參數互相轉換。"],
+        "representations": ["公開內容以等差數列概念、首項／末項／項數符號、梯形面積回顧及公式資源呈現；本課用首尾配對的數線與階梯層數重新推導，不宣稱採用出版社圖文。"],
+        "examplesOrEvidence": ["索引可定位等差級數求和的概念、五個例題、公式練習與應用區段，足以支持由概念、推導到情境題的學習順序，但未公開原題文字。"],
+        "misconceptions": ["公開索引沒有逐題呈現迷思選項；本課自編漏算首項、把第 n 項當總和、以及末項不在公差序列中的診斷。"],
+        "assessmentEmphasis": ["索引同時列基礎、例題、公式反求與應用資源，顯示評量會變換已知量；本課增加逐項相加和估算作為可重做的驗證。"]
+      },
+      "licenseBoundary": "只研究均一公開索引的章節、子主題與資源類型；不複製南一教材正文、例題、答案、圖片或影片，本課文字、數字與活動均為原創。"
+    },
+    {
+      "publisher": "kanghsuan", "edition": "康軒國中數學八下官方影音索引", "sourceType": "local-download", "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機快取 /private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml，8下 1-2 等差級數資源與章節索引", "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": ["官方 XML 可核對八下 1-2 等差級數的課次定位，並與 1-1 等差數列、1-3 等比數列並列，呈現先由固定差進入求和再區分其他序列。", "八下頁面與公開資源名稱支持等差級數、求和公式與應用的教學範圍；公式的實際推導和原題內容未在索引中公開。"],
+        "representations": ["XML 以課本解題、隨堂練習、概念數速充、90 秒學數學與自我評量等類別組織資源；本課將其轉為數列表、首尾配對圖與代數公式三種表徵。"],
+        "examplesOrEvidence": ["本機 XML 可定位 8下 1-2 等差級數的課本／習作資源與公式相關公開名稱，並可辨認 1-1 等差數列和 1-3 等比數列的相鄰章節，支持本課明確切開單元邊界。"],
+        "misconceptions": ["索引只提供資源標題，不足以宣稱康軒特定錯題內容；本課以公差正負、項數與第 n 項／前 n 項和混淆作為自編診斷。"],
+        "assessmentEmphasis": ["公開分類涵蓋課本解題、隨堂、概念速充與自評，支持由示範到練習和回顧的節奏；本課用逐項相加與公式雙算檢查答案。"]
+      },
+      "licenseBoundary": "只研究康軒官方 XML 的課次定位、資源分類與公開名稱；不轉寫影片、教材文字、題目、選項、答案或圖像，所有案例與回饋均獨立創作。"
+    },
+    {
+      "publisher": "hanlin", "edition": "翰林國中數學 2B 官方解題影音索引", "sourceType": "public-web", "sourceLocator": "https://mathvideo.hle.com.tw/2B/1-2/；2下 CH1 數列與級數／1-2 等差級數，公開列出等差級數的和、等差級數和的公式與自我評量", "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": ["翰林實際 2B 1-2 頁面把本課定位為等差級數，並分出等差級數的和、等差級數和的公式與自我評量，直接支持 N-8-5 的核心範圍。", "同一 2B 章節索引將 1-1 認識數列與等差數列、1-2 等差級數、1-3 等比數列分開；因此等差級數求和不可與相鄰等比數列混寫。"],
+        "representations": ["公開頁面以課次、概念群與自我評量分類資源；本課補上首尾配對、梯形面積類比、符號公式及生活累加表，但不把自編表徵歸因於翰林正文。"],
+        "examplesOrEvidence": ["官方頁面可定位 2B CH1 1-2 的三個資源群，2B 總索引也可定位 1-1、1-2、1-3 的章節順序；這是版本結構證據，不是出版社原題或答案證據。"],
+        "misconceptions": ["既有 repo mapping 曾把翰林 N-8-5 對到 1-3 等比數列，與官方課綱及實際 1-2 頁面矛盾；本課明確記錄並排除該錯置，不由錯誤 mapping 推導教材內容。"],
+        "assessmentEmphasis": ["翰林 1-2 公開列出自我評量，顯示求和公式需接受獨立檢核；本課安排公式、逐項和與數量級三重驗證，保留 draft 等待後續 AI 審查。"]
+      },
+      "licenseBoundary": "只研究翰林官方 2B 索引的課次分層與資源類型；不複製教材、影片、題目、答案或圖片，正文、例證、互動選項和 simulation 均為原創。"
     }
   ],
+  "publisherResearch": [
+    {"publisher": "nani", "edition": "類南一版均一教育平台八下數列與等差級數索引", "subject": "math", "chapterLocator": "八下第一章數列與等差級數／1-2 等差級數：等差級數的和與應用", "sourceUrl": "https://www.junyiacademy.org/topics/n-m8b-c01-2", "access": "public-open", "reviewedAt": "2026-08-30", "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"], "outcome": "公開索引核對等差級數和、公式反求與應用的順序；本課以自編首尾配對和生活資料重寫。", "copyrightBoundary": "只研究公開索引，不複製教材正文、例題、答案、圖片或影片；本課內容全部獨立創作。"},
+    {"publisher": "kanghsuan", "edition": "康軒國中數學八下官方影音索引", "subject": "math", "chapterLocator": "八下 1-2 等差級數；課本／隨堂／概念／自評公開資源", "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=90%E7%A7%92%E5%AD%B8%E6%95%B8%E5%AD%B8&l2=8%E4%B8%8B", "access": "public-open", "reviewedAt": "2026-08-30", "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"], "outcome": "公開索引核對八下 1-2 等差級數的課次與資源層次；未公開正文與原題，故不擴寫為版本事實。", "copyrightBoundary": "只研究官方公開頁面的章節定位與資源類型，不轉寫影片、教材、題目、答案或圖像。"},
+    {"publisher": "hanlin", "edition": "翰林國中數學 2B 官方解題影音索引", "subject": "math", "chapterLocator": "2下 CH1／1-2 等差級數：等差級數的和、等差級數和的公式、自我評量", "sourceUrl": "https://mathvideo.hle.com.tw/2B/1-2/", "access": "public-open", "reviewedAt": "2026-08-30", "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"], "outcome": "官方 2B 1-2 頁面核對等差級數的和、公式與自評；同時排除既有 mapping 誤指 1-3 等比數列的衝突。", "copyrightBoundary": "只研究官方公開索引，不複製出版社正文、例題、答案、影片或圖片；本課教學與互動均為原創。"}
+  ],
+  "fusionRecord": {
+    "commonCore": ["三份版本資料都把等差級數放在八下數列脈絡，核心是等差數列各項相加、求和公式及生活應用，與官方 N-8-5／NC-8-5-1 相符。", "三份索引都把等差級數與前後的等差數列、等比數列分成不同課次，學習時必須先確認固定的是差而不是比。", "公開資源都呈現概念、公式、練習或自評的層次；本課因此同時保留推導、符號化簡、逐項驗算和情境判讀。", "求和公式的意義不是背一個結果，而是項數乘以首尾平均；首項、末項、項數與公差的角色需要互相檢查。"],
+    "versionDifferences": ["南一公開頁面明列等差級數的和、公式反求與應用例題；康軒官方索引較突出八下 1-2 的資源類別與相鄰課次；翰林 2B 1-2 直接列出等差級數的和、公式與自我評量。", "既有翰林 mapping 檔把 N-8-5 錯置至 1-3 等比數列，但翰林實際 2B 索引、康軒／南一章節證據及官方課綱均指向 1-2 等差級數；本課以衝突註記避免沿用錯誤對照。", "三版本可取得內容主要是章節／資源索引，未公開可完整閱讀的出版社正文與原題；融合採用可核對的概念範圍、教學節奏與評量方向，例題全部自編。"],
+    "originalAdditions": ["以劇場階梯座位由前排到後排逐排增加的總座位數作為入口，讓項數、末項與總和都能在圖形和數列中對照。", "用首尾配對推導 4＋7＋10＋⋯＋31 的總和，明確說明為何每對和相同，並以逐項相加回查。", "設計公差為負、末項不吻合、少算一項與把第 n 項當總和四類單元專屬迷思，分別提供數值反例。", "加入『級數配對工作臺』互動：先拖曳首尾配對，再調整項數與公差，最後比較公式、列表和估算結果；simulation 專注等差級數，不沿用其他單元的固定互動流程。"],
+    "llmSynthesisNote": "LLM 依官方 curriculum/math/content-n-8-5.json、kg-math-content-n-8-5、南一／康軒／翰林 mapping 與三份可取得來源逐一整理概念邊界、版本差異、公開缺口和翰林錯置 mapping，再以自己的話獨立撰寫六段完整教學。正文、例證、迷思、互動選項與 simulation 步驟均針對等差級數求和重建，沒有複製出版社文字；因尚未完成 Terra 第二輪審查，狀態維持 draft。"
+  },
   "teaching": {
     "body": [
-      {
-        "id": "hook",
-        "phase": "hook",
-        "heading": "從問題情境看見「N-8-5：等差級數求和」",
-        "body": "先讀懂「N-8-5：等差級數求和」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
-      },
-      {
-        "id": "explain",
-        "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「等差級數求和」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
-      },
-      {
-        "id": "worked",
-        "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「N-8-5：等差級數求和」為主題，將 84 分解為 2×2×3×7，先標出每個質因數，再用乘回 84 驗算。若改成負數或分數，先寫出符號與單位，再選擇相同的分解與檢查流程。"
-      },
-      {
-        "id": "guided",
-        "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
-      },
-      {
-        "id": "transfer",
-        "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「N-8-5：等差級數求和」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
-      },
-      {
-        "id": "reflect",
-        "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「N-8-5：等差級數求和」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
-      }
+      {"id": "hook", "phase": "hook", "heading": "階梯座位的總數，為什麼不用一排一排加？", "body": "學校禮堂的座位像階梯：第一排有 4 個座位，之後每排多 3 個，最後一排有 31 個。若要估算全部座位，當然可以寫成 4＋7＋10＋⋯＋31，但長長的加法容易漏掉一排。這串數字每相鄰兩項都差 3，是等差數列；把這些項加起來，就叫等差級數。今天的問題不是只找下一項，而是找出一個能同時看見『有幾排』與『每排平均多少』的總和方法。先把首項 4、公差 3、末項 31 標在座位圖上，公式就會從結構中長出來。"},
+      {"id": "explain", "phase": "explain", "heading": "首尾配對讓平均數變成總和工具", "body": "考察 4＋7＋10＋13＋16＋19＋22＋25＋28＋31。第一項和最後一項配成 4＋31＝35，第二項和倒數第二項配成 7＋28＝35，每一對都一樣。共有 10 項，所以總和等於 10 個數的平均乘以 10；首尾平均是 (4＋31)／2，得到 S₁₀＝10(4＋31)／2＝175。一般地，等差級數前 n 項的首項為 a₁、末項為 aₙ，首尾配對後每對的平均都是 (a₁＋aₙ)／2，因此 Sₙ＝n(a₁＋aₙ)／2。這個式子要求你先知道真正的項數和末項，不能把任何最後出現的數字直接當 n。"},
+      {"id": "worked-example", "phase": "worked-example", "heading": "從末項倒推出項數，再求一串捐款總額", "body": "社團連續募款 12 天，第一天捐到 35 元，每天比前一天多 15 元。第 12 天是 a₁₂＝35＋(12－1)×15＝200 元；總額則是 S₁₂＝12(35＋200)／2＝1,410 元。若題目改成『捐到 200 元時共做了幾天』，不能把 200 代入求和公式後猜 n，而要先用 200＝35＋(n－1)×15，解出 n＝12，再求和。最後可用平均每天 (35＋200)／2＝117.5 元乘 12 天回查；平均不是整數並不代表答案錯，總額仍應是 1,410 元。"},
+      {"id": "guided-practice", "phase": "guided-practice", "heading": "四張解題卡：先辨認，才代公式", "body": "請逐張檢查。甲卡把 2＋5＋8＋⋯＋29 寫成 a₁＝2、d＝5，錯在把公差誤讀成第二項；相鄰差其實是 3。乙卡說 6＋9＋12＋15 的總和是 a₄＝15，錯在把第 4 項當成前 4 項和，正確總和是 42。丙卡把 20＋17＋14＋⋯＋2 當成公差為 3，錯在由大到小排列時 d＝－3；這串共有 7 項，且 2 確實是末項，還要確認方向與項數。丁卡對 5＋10＋15＋20 使用 S₄＝4(5＋20)／2＝50，並可用逐項相加驗證。每張卡都先寫 a₁、d、aₙ、n，再決定是求某一項還是求一串的和。"},
+      {"id": "transfer", "phase": "transfer", "heading": "把公式搬到分期存錢與圖形層數", "body": "小芸第一週存 80 元，之後每週多存 20 元，連續 9 週；這是首項 80、公差 20、項數 9 的等差級數，總存款為 9(80＋240)／2＝1,440 元。另一個情境是用積木堆成階梯，每層比上一層多 2 塊，若第一層 3 塊、共 12 層，便以 a₁＝3、d＝2、n＝12 找末項 25，再求 S₁₂＝12(3＋25)／2＝168 塊。兩題的數字與單位不同，但都先把『一項代表什麼』說清楚；若每週存款其實忽多忽少，或積木層數不是固定增加，便不能硬套等差級數公式。"},
+      {"id": "reflect", "phase": "reflect", "heading": "用三條路徑確認總和沒有算偏", "body": "完成一題後，請用三條路徑檢查。第一條是結構檢查：相鄰差是否固定，首項、末項和項數是否真的屬於同一串？第二條是公式檢查：我是在求 aₙ＝a₁＋(n－1)d，還是在求 Sₙ＝n(a₁＋aₙ)／2？第三條是數量檢查：首尾平均乘項數的結果，是否大致落在『項數乘以最小與最大之間的平均』附近，單位也是否正確？能再挑一小串逐項相加，例如 3＋6＋9＋12＝30，對照公式 4(3＋12)／2＝30，就能把符號推理和實際加法接起來。"}
     ],
-    "summary": [
-      "先用自己的話界定「等差級數求和」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
-    ],
+    "summary": ["等差級數是等差數列各項的和，先確認首項、公差、末項與項數。", "首尾配對得到相同的和，因此總和等於項數乘以首尾平均。", "第 n 項公式用來找末項或項數，前 n 項和公式才用來求總和。", "用逐項相加、平均估算、單位與情境合理性回查結果。"],
     "exitCheck": [
-      {
-        "prompt": "請用自己的話說明「等差級數求和」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
-      },
-      {
-        "prompt": "在「等差級數求和」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
-      },
-      {
-        "prompt": "若題目的條件改變，如何調整處理「等差級數求和」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
-      }
+      {"prompt": "請說明 4＋7＋10＋⋯＋31 為何是等差級數，並求它共有幾項。", "expectedEvidence": "能指出公差為 3，使用 31＝4＋(n－1)×3 得 n＝10，並說明首尾均包含。"},
+      {"prompt": "求 6＋10＋14＋18＋22 的和，請先用首尾配對說明公式，再用逐項相加核對。", "expectedEvidence": "能得到 70，並寫出 5(6＋22)／2＝70，逐項相加也得到 70。"},
+      {"prompt": "有人把首項 9、公差 4、前 8 項的和寫成 9＋(8－1)×4。你會如何指出錯誤並改正？", "expectedEvidence": "能指出那是第 8 項公式，末項為 37；前 8 項和應為 8(9＋37)／2＝184。"}
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「N-8-5：等差級數求和」的表示、推理與驗算。",
-    "scenario": "請依序分析「N-8-5：等差級數求和」的條件，選出最能保留資訊、可被驗證的做法。",
-    "variables": [
-      {
-        "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
-      }
-    ],
+    "goal": "讓學習者用首尾配對、項數與公式互相切換，理解等差級數求和並完成逐項驗算。",
+    "scenario": "你是舞台座位的配置檢查員：拖曳數列的首尾配對，確認每一項的差，再選擇能代表總和的公式。",
+    "variables": [{"symbol": "a", "meaning": "等差級數的首項"}, {"symbol": "d", "meaning": "相鄰兩項固定的公差"}, {"symbol": "n", "meaning": "包含首尾的項數"}],
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "第一步應先做什麼？",
-        "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
-        ],
-        "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
-        "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
-        ],
-        "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "完成後如何確認結論？",
-        "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
-        ],
-        "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+      {"id": "step-1", "prompt": "數列 5、9、13、17、21 的首項、公差與項數應如何記錄？", "options": ["a₁＝5、d＝4、n＝5", "a₁＝5、d＝9、n＝21", "a₁＝21、d＝4、n＝5"], "answer": "A", "feedback": "公差是相鄰兩項的差 9－5＝4，項數要數出五項；最後一項不會自動變成首項。"},
+      {"id": "step-2", "prompt": "要計算 5＋9＋13＋17＋21，哪個表示最能呈現首尾配對？", "options": ["S₅＝5(5＋21)／2", "a₅＝5＋(5－1)×4", "S₅＝5＋21"], "answer": "A", "feedback": "求和要用項數乘首尾平均；a₅ 只會得到末項 21，5＋21 只是一對的和。"},
+      {"id": "step-3", "prompt": "公式算出 S₅＝65 後，哪個方法能作為獨立驗證？", "options": ["逐項相加 5＋9＋13＋17＋21，並檢查結果與單位", "只把末項 21 當成總和", "把公差 4 再加到 65，因為每題都要加公差"], "answer": "A", "feedback": "逐項相加可以直接回到原級數核對；末項和公差都不是整串的總和。"
       }
     ]
   },
   "lessonScope": "learning-content",
   "simulation": {
-    "id": "sim-math-n-8-5",
-    "engine": "math-number-line",
-    "mode": "model",
-    "model": "general",
-    "goal": "以互動步驟探索「N-8-5：等差級數求和」的表示、推理與驗算。",
-    "mission": "請依序分析「N-8-5：等差級數求和」的條件，選出最能保留資訊、可被驗證的做法。",
-    "sourceRefs": [
-      "https://cap.rcpet.edu.tw/index.html",
-      "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/",
-      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    "id": "sim-math-n-8-5", "engine": "math-number-line", "mode": "model", "model": "general",
+    "goal": "讓學習者用首尾配對、項數與公式互相切換，理解等差級數求和並完成逐項驗算。",
+    "mission": "你是舞台座位的配置檢查員：拖曳數列的首尾配對，確認每一項的差，再選擇能代表總和的公式。",
+    "learningDesign": {
+      "type": "equation-transform", "objective": "以首尾配對推導等差級數前 n 項和，並在公差、項數或末項改變時用列表和公式互相驗證。", "predictionPrompt": "看到 4＋7＋10＋⋯＋31，你預測首尾配對後每一對會是多少？總共有幾項？", "evidencePrompt": "請記錄首項、公差、末項、項數與配對結果，再用逐項相加或首尾平均檢查公式。",
+      "steps": [
+        {"id": "step-1", "action": "在數列上標出首項、末項與固定公差，確認項數包含兩端", "equation": "4、7、10、⋯、31；d＝3，31＝4＋(n－1)×3 → n＝10", "reason": "相鄰項都增加 3，從第 1 項到第 n 項共有 n－1 次增加；因此項數不是末項減首項。", "feedback": "若算出 n＝9，代表漏掉首項或把增加次數誤當項數；先列出前幾項和最後一項。"},
+        {"id": "step-2", "action": "把第一項和最後一項、第二項和倒數第二項配成相同的和", "equation": "4＋31＝7＋28＝10＋25＝35；S₁₀＝10(4＋31)／2＝175", "reason": "等差數列首尾相加固定，因此所有項的平均是首尾平均；總和就是項數乘這個平均。", "feedback": "不要只寫 4＋31＝35 就停下來；35 是一對的和，還要依配對數或首尾平均乘上總項數。"},
+        {"id": "step-3", "action": "用逐項列表和公式同時回查總和與單位", "equation": "4＋7＋10＋13＋16＋19＋22＋25＋28＋31＝175", "reason": "逐項相加回到原級數，公式則提供快速路徑；兩者一致且單位仍是座位數，才能確認沒有少項或多項。", "feedback": "若列表和與公式不同，先檢查末項、項數及公差，再檢查是否把第 n 項誤當成前 n 項和。"}
+      ]
+    },
+    "sourceRefs": ["https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf", "https://www.junyiacademy.org/topics/n-m8b-c01-2", "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=90%E7%A7%92%E5%AD%B8%E6%95%B8%E5%AD%B8&l2=8%E4%B8%8B", "https://mathvideo.hle.com.tw/2B/1-2/"]
   }
 }

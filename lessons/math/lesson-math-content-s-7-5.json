@@ -9,163 +9,287 @@
     "7"
   ],
   "content": {
-    "summary": "辨認具有線對稱的基本圖形，找出對稱軸與對應點。",
+    "summary": "許多熟悉的圖形之所以能沿一條線摺合重疊，是因為它們具有線對稱。本單元從等腰三角形、矩形、菱形與正多邊形比較對稱軸數量，理解圖形的邊、角與頂點如何成對對應，並學會處理只有部分對稱或多條對稱軸的情況。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "辨認具有線對稱的基本圖形，找出對稱軸與對應點。 能以對應點、垂線或角度量驗證。"
+        "heading": "先用摺痕尋找軸",
+        "body": "把圖形沿候選直線摺起，若每一個部分都能與另一側完全重合，候選線才是對稱軸。不能只看左右外形；軸上的點保持不動，軸外的頂點與邊必須有對應位置。"
       },
       {
-        "heading": "學習流程",
-        "body": "先辨認幾何元素，整理對稱或角的關係，再用圖形與度量檢查。"
+        "heading": "基本圖形的對稱軸",
+        "body": "等腰三角形有一條從頂點到底邊中點的對稱軸；矩形有兩條連結對邊中點的軸，正方形除了兩條中線還有兩條對角線；一般平行四邊形通常沒有線對稱。圖形名稱相近不代表對稱性相同，要逐一檢查邊長與角的對應。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "把任意折線當對稱軸、混淆角的邊與頂點，或誤判角度種類。"
+        "heading": "軸的數量透露圖形結構",
+        "body": "正 n 邊形有 n 條對稱軸，每條軸通過中心與一個頂點，或通過兩邊中點，視 n 的奇偶而定。對稱軸數量越多，圖形的方向越不容易被辨認；旋轉後仍重合也不等於存在線對稱，必須真的能摺合。"
       }
     ]
   },
   "studyHighlights": [
-    "先確認元素與定義。",
-    "找對稱或角度關係。",
-    "用圖形與度量驗證。"
+    "對稱軸要使整個圖形逐點重合，不只看外框相似。",
+    "等腰三角形、矩形、正方形與一般平行四邊形的軸數不同。",
+    "旋轉對稱與線對稱是不同性質，需用摺合或對應點驗證。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw",
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%十分之二年%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
   ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+    "authoringNote": "本課依官方課綱、KG 與南一、康軒、翰林可取得的公開章節研究，以原創摺紙、圖形比較、軸數推理與辨誤活動重新撰寫；未複製出版社正文、圖像、例題、答案或影音。"
   },
-  "authoringStandard": "full-lesson-v1",
-  "publisherResearch": [
+  "authoringStandard": "version-fused-v1",
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "類南一版七上幾何公開章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/m-g7a-s05；僅核對線對稱與基本圖形的章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引支持以摺合與對稱軸辨認基本圖形的線對稱。",
+          "對應點、邊與角的關係可用來驗證圖形是否完整對稱。"
+        ],
+        "representations": [
+          "以摺紙、圖形標軸與對應點表示線對稱。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編四種多邊形的摺合卡與軸數記錄表。"
+        ],
+        "misconceptions": [
+          "把旋轉後重合誤認為摺合重合，或只檢查一半邊界。"
+        ],
+        "assessmentEmphasis": [
+          "要求找出全部對稱軸並說明每條軸的幾何位置。"
+        ]
+      },
+      "licenseBoundary": "只研究公開索引，不複製或改寫南一教材、圖像、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學七上官方影音 XML",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；核對線對稱與基本圖形的章節資源分類。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開資源支持由圖形操作觀察對稱軸與對應關係。",
+          "不同基本圖形的軸數、邊角對應與中心位置可互相比較。"
+        ],
+        "representations": [
+          "以剪紙、鏡像圖和幾何作圖互相轉換。"
+        ],
+        "examplesOrEvidence": [
+          "本課以自編窗格圖案與不規則四邊形，檢查外觀相似是否真的逐點對稱。"
+        ],
+        "misconceptions": [
+          "以水平或垂直方向限制對稱軸，忽略對角線也可能成軸。"
+        ],
+        "assessmentEmphasis": [
+          "檢查軸的位置、對應頂點及摺合後的完整重疊。"
+        ]
+      },
+      "licenseBoundary": "只使用官方 XML 的章節與資源分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "edition": "翰林國中數學公開影音網 1A 章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；核對線對稱與基本圖形公開章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引將線對稱與基本幾何圖形、垂直及作圖性質連接。",
+          "正方形與正多邊形可透過軸數理解較高的對稱性。"
+        ],
+        "representations": [
+          "以摺合、對應線段、對稱軸數量及圖形性質互相驗證。"
+        ],
+        "examplesOrEvidence": [
+          "本課加入軸數排行榜與旋轉對稱辨誤，區分兩種變換。"
+        ],
+        "misconceptions": [
+          "以圖形有中心就判定有線對稱，或漏算斜向對稱軸。"
+        ],
+        "assessmentEmphasis": [
+          "要求辨認全部軸，並用對應點或摺合證明而非只報數字。"
+        ]
+      },
+      "licenseBoundary": "只研究公開章節索引，不複製翰林教材、影音、題庫、答案或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開資料都以基本圖形操作與對稱軸建立線對稱理解。",
+      "對應點、邊、角、摺合與軸數是跨版本可整合的核心。",
+      "可取得資料主要為公開章節與資源索引，不能推稱取得出版社完整正文。"
+    ],
+    "versionDifferences": [
+      "南一索引偏向線對稱章節定位，康軒 XML 支持操作與基本圖形比較，翰林索引連結軸數與幾何作圖；本課以摺紙和旋轉辨誤統整。"
+    ],
+    "originalAdditions": [
+      "用等腰三角形、矩形、正方形與平行四邊形比較軸數，而不是只列結論。",
+      "加入斜向軸與不規則圖形，防止把紙面方向當成定義。",
+      "設計旋轉重合但無線對稱的反例，明確區分兩種性質。"
+    ],
+    "llmSynthesisNote": "LLM 依官方課綱與 KG 確定基本圖形線對稱的範圍，再比較南一、康軒、翰林公開研究中的操作、圖形性質與軸數脈絡，以摺紙、軸數比較和辨誤活動重新撰寫；全文為原創，Terra 第二輪尚未執行，故維持 draft。"
+  },
+  "publisherResearch": [
+    {
+      "publisher": "nani",
+      "edition": "類南一版七上幾何公開章節索引",
       "subject": "math",
-      "chapterLocator": "S-7-5：線對稱的基本圖形",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "S-7-5 線對稱的基本圖形",
+      "sourceUrl": "https://www.junyiacademy.org/topics/m-g7a-s05",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-30",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-7-5：線對稱的基本圖形」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "公開索引支持基本圖形線對稱定位；本課以摺合與軸數推理完整重寫。",
+      "copyrightBoundary": "只研究公開章節定位，不複製出版社教材、題目或答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒七上官方數學影音 XML",
+      "subject": "math",
+      "chapterLocator": "七上垂直、線對稱與三視圖",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "官方 XML 提供線對稱與基本圖形資源分類；本課轉化為圖形比較與辨誤活動。",
+      "copyrightBoundary": "不轉錄或重製康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林 1A 公開數學影音索引",
+      "subject": "math",
+      "chapterLocator": "1A 線對稱基本圖形",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對基本圖形與對稱軸脈絡；本課正文、例題、互動步驟與回饋均獨立撰寫。",
+      "copyrightBoundary": "只研究公開索引，不複製翰林教材、影音、題庫或答案。"
     }
   ],
   "teaching": {
     "body": [
       {
-        "id": "hook",
+        "id": "paper-fold",
         "phase": "hook",
-        "heading": "從問題情境看見「S-7-5：線對稱的基本圖形」",
-        "body": "先讀懂「S-7-5：線對稱的基本圖形」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "一張窗花能摺出幾條軸？",
+        "body": "設計窗花時，沿某條摺痕打開，兩側圖案若完全吻合，摺痕就是對稱軸。正方形窗格可以沿中線或對角線摺合，但換成一般長方形時，對角線通常不會讓兩側重疊。圖形的名稱只提供線索，真正答案要靠摺合與對應位置檢查。"
       },
       {
-        "id": "explain",
+        "id": "compare",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「線對稱的基本圖形」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "四種基本圖形的對稱性不一樣",
+        "body": "等腰三角形只有一條軸，穿過頂角與底邊中點；矩形有兩條，分別穿過相對邊中點；正方形有四條，還包含兩條對角線；一般平行四邊形沒有線對稱。判斷時不要把『邊互相平行』誤當作『能沿線摺合』，要逐一配對頂點、邊與角。"
       },
       {
-        "id": "worked",
+        "id": "axis-count",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-7-5：線對稱的基本圖形」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "從軸數反推圖形限制",
+        "body": "若一個四邊形有四條對稱軸，其中兩條通過相對邊中點、兩條通過對角頂點，這種高度對稱性符合正方形，而不是普通矩形。若只有一條軸，可能是等腰梯形或等腰三角形，仍需查看邊與角的配置。軸數能縮小範圍，卻不能脫離圖形條件單獨命名。"
       },
       {
-        "id": "guided",
+        "id": "fold-test",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "用對應頂點抓出假對稱",
+        "body": "給一個箭頭形多邊形和三條候選線。請在每條線兩側選一對頂點，畫連線並量兩點到軸的距離；若連線不垂直或距離不相等，候選線就淘汰。即使外框看起來平衡，也要檢查凹角和內部線段，因為一個未配對的部分就足以破壞整個對稱。"
       },
       {
-        "id": "transfer",
+        "id": "rotation",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-7-5：線對稱的基本圖形」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "旋轉後重合不代表有鏡軸",
+        "body": "用三葉風車和等邊三角形做比較：風車轉過某角度可能重合，但沿任一候選直線摺合不一定重合；等邊三角形則有三條從頂點到底邊中點的對稱軸。請分別操作『旋轉』和『摺合』兩張卡，記錄哪種變換成立，避免把旋轉對稱直接當成線對稱。"
       },
       {
-        "id": "reflect",
+        "id": "summary",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-7-5：線對稱的基本圖形」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "用摺合與配對完成最後判斷",
+        "body": "最後任選一個圖形，寫出可能的對稱軸數量，再選一條軸說明它如何通過頂點、中點或中心。接著指出一個對應點或邊，說明兩側距離、長度或角度如何相等。若只能說『左右一樣』，表示還缺少可測量的幾何證據。"
       }
     ],
     "summary": [
-      "先用自己的話界定「線對稱的基本圖形」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "對稱軸使整個圖形摺合後逐點重合，不只要求外框相像。",
+      "等腰三角形、矩形、正方形與一般平行四邊形的對稱軸數不同。",
+      "軸數可提供圖形線索，但仍需用邊、角與頂點對應確認。",
+      "旋轉對稱與線對稱不同，必須分別測試旋轉和摺合。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「線對稱的基本圖形」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "正方形為什麼有四條而一般矩形只有兩條對稱軸？",
+        "expectedEvidence": "能指出正方形的兩條中線與兩條對角線都能摺合，普通矩形的對角線通常不能。"
       },
       {
-        "prompt": "在「線對稱的基本圖形」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "如何證明一條候選線是某圖形的對稱軸？",
+        "expectedEvidence": "能以多對對應點等距、連線垂直軸或實際摺合完全重疊提出證據。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「線對稱的基本圖形」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "旋轉後重合為什麼不能直接判定有線對稱？",
+        "expectedEvidence": "能區分旋轉變換和沿直線摺合，並提供三葉風車等反例。"
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-7-5：線對稱的基本圖形」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-7-5：線對稱的基本圖形」的條件，選出最能保留資訊、可被驗證的做法。",
-    "variables": [
-      {
-        "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
-      }
-    ],
+    "type": "guided-choice",
+    "goal": "辨認基本圖形的全部對稱軸，並區分線對稱與旋轉對稱。",
+    "scenario": "你是窗花設計校對員，必須找出能真正摺合重疊的軸，排除只看起來平衡的假軸。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "檢查候選對稱軸時，哪項證據最完整？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "每對對應點等距且連線垂直軸",
+          "只看圖形左右面積相等",
+          "只看圖形有沒有中心"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "線對稱要逐點驗證等距與垂直，面積或中心都不足以保證摺合重合。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "正方形的對稱軸共有幾條？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "4 條，包括兩條中線和兩條對角線",
+          "2 條，只有水平與垂直中線",
+          "1 條，只能沿一條對角線"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "正方形的四條線都能使兩側完整重合。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "風車轉動後重合，最能說明哪件事？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "它可能具有旋轉對稱，但仍需另外檢查線對稱",
+          "它一定有一條鏡射軸",
+          "只要重合就代表所有對稱性都成立"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "旋轉重合與摺合重合是不同變換，不能由前者推出後者。"
       }
     ]
   },
@@ -175,13 +299,42 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-7-5：線對稱的基本圖形」的表示、推理與驗算。",
-    "mission": "請依序分析「S-7-5：線對稱的基本圖形」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "辨認基本圖形的全部對稱軸，並區分線對稱與旋轉對稱。",
+    "mission": "你是窗花設計校對員，必須找出能真正摺合重疊的軸，排除只看起來平衡的假軸。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/",
-      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+      "https://www.naer.edu.tw",
+      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%十分之二年%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    ],
+    "learningDesign": {
+      "type": "representation-match",
+      "objective": "把基本圖形、對稱軸數量、對應點與摺合測試連結起來。",
+      "predictionPrompt": "一個圖形旋轉後能重合，你預測沿某條線摺合也一定能重合嗎？請先提出一個需要檢查的證據。",
+      "evidencePrompt": "逐條候選軸配對頂點，量測到軸距離並執行摺合或鏡像比較。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "列出候選軸並配對圖形頂點",
+          "equation": "A↔A′，B↔B′；每一對都要能在軸兩側找到",
+          "reason": "對稱軸是整個圖形的逐點對應，不可只檢查一個外框。",
+          "feedback": "先找頂點和凹角的對應，避免被大致相似的輪廓誤導。"
+        },
+        {
+          "id": "step-2",
+          "action": "檢查對應點連線與軸的幾何關係",
+          "equation": "d(A,軸)=d(A′,軸)，AA′⊥軸",
+          "reason": "等距與垂直表示軸平分對應點連線，是摺合重合的可測量條件。",
+          "feedback": "任一對點失敗，就不能把整條線列為對稱軸。"
+        },
+        {
+          "id": "step-3",
+          "action": "比較摺合和旋轉兩種變換",
+          "equation": "摺合重合→線對稱；旋轉重合→旋轉對稱",
+          "reason": "兩種變換的動作不同，不能把一種對稱性當成另一種。",
+          "feedback": "在分類卡上分開記錄軸數與旋轉角，不要由旋轉結果猜鏡軸。"
+        }
+      ]
+    }
   }
 }

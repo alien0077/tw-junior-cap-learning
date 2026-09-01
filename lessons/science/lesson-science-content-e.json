@@ -1,193 +1,37 @@
 {
-  "id": "lesson-science-content-e",
-  "subject": "science",
-  "title": "E：物質系統",
-  "knowledgeIds": [
-    "kg-science-content-e"
+  "id":"lesson-science-content-e",
+  "title":"E：物質系統",
+  "subject":"science",
+  "gradeRange":["7","8","9"],
+  "lessonScope":"theme",
+  "knowledgeIds":["kg-science-content-e"],
+  "authoringStandard":"version-fused-v1",
+  "reviewStatus":"draft",
+  "updatedAt":"2026-09-01",
+  "content":{"summary":"物質系統要先說清楚研究範圍，再從組成、粒子、相態、物質與能量的流動解釋現象。本課以透明運動飲料、冰水袋和池塘作為三個尺度不同的案例。","sections":[{"heading":"學習目標","body":"能畫出系統邊界，區分純物質、混合物與相態，並用宏觀觀察、粒子模型和數據互相核對；面對條件改變時，能追蹤物質與能量並寫出有證據及限制的結論。"},{"heading":"學習流程","body":"先由生活物品辨認成分與狀態，再畫出系統邊界；接著將現象轉成粒子圖和量測資料，最後改變開口、密封、溫度或通風條件，檢查原來的解釋是否仍成立。"},{"heading":"常見錯誤","body":"透明不等於純物質，均勻不等於只有一種粒子；溶解、融化與蒸發也不表示物質消失。若沒有先交代邊界、觀察尺度和測量限制，就不能把推測寫成事實。"},{"heading":"自我檢核","body":"遇到新材料時，能否說出系統包含什麼、哪些物質可能跨越邊界、哪些證據支持你的模型，以及哪一項資料仍不足？"}]},
+  "teaching":{"body":[
+    {"id":"hook","phase":"hook","heading":"透明的飲料只有一種物質嗎？","body":"一杯透明運動飲料看起來均勻，卻可能含有水、糖、鹽類與色素。透明只描述肉眼看到的光學現象，不能直接回答成分。請先在紙上畫一個瓶子，決定你研究的是瓶內液體，還是連同瓶子、瓶口空氣一起研究；這個決定就是系統邊界。接著把『看起來均勻』和『含有哪些粒子』分成兩欄。科學問題的起點不是猜名稱，而是知道目前的觀察能支持什麼、不能支持什麼。"},
+    {"id":"explain","phase":"explain","heading":"系統、環境與邊界","body":"系統是我們選定的研究部分，外面是環境，兩者交界是邊界。開口燒杯可讓水蒸氣離開，密封瓶則限制物質通過，但熱仍可能穿過瓶壁。若只把杯中液體算作系統，蒸發就是水分子離開；若把密封袋內的液體、氣體和容器內壁一起納入，水分子只是從液相分散到氣相或在冷表面凝結。由此可見，同一現象的解釋會隨邊界改變。描述系統時，務必同時寫出物質交換、能量交換與觀察時間。"},
+    {"id":"representation","phase":"explain","heading":"三種表徵要彼此對得上","body":"宏觀表徵記錄顏色、分層、溫度、體積和質量；微觀表徵用粒子模型表示成分、距離與排列；符號或數據表徵則整理數值關係。以鹽水為例，宏觀上可能透明且均勻，微觀上仍有水粒子與分散的鹽粒子，數據上可由蒸發後殘留物或質量變化得到更多證據。粒子圖不是照片，而是模型，因此必須說明哪些觀察支持它、哪些部分仍是假設。三種表徵若衝突，先檢查取樣是否代表整體、單位是否一致，以及系統邊界是否偷偷改變。"},
+    {"id":"worked-example","phase":"worked-example","heading":"冰水袋中的水去了哪裡？","body":"把少量冰塊和空氣封在透明袋中，放在室溫觀察。冰逐漸變成液態水，表示粒子排列和運動狀態改變，並非水這種物質變成另一種物質。袋壁若出現水滴，可能是袋內水蒸氣在較冷處凝結；若袋子漏氣，則系統邊界已不再封閉。可記錄冰的形狀、液態水量、袋內溫度和水滴位置，再以粒子圖解釋。結論要寫成『在袋子密封且沒有液體流失的條件下，觀察到的是相態改變與重新分布』，不可只寫『水消失了』。"},
+    {"id":"guided-practice","phase":"guided-practice","heading":"製作物質系統證據地圖","body":"請選鹽水、土壤或教室空氣，完成四格證據地圖。第一格畫邊界並標示開放或封閉；第二格只寫可直接觀察或量測的現象；第三格畫粒子與相態，清楚標示模型假設；第四格寫條件式結論並列出限制。例如研究教室空氣時，開窗會使氣體跨越邊界，測得的濃度也受人數、時間和儀器位置影響。與同伴交換地圖，對方若能依圖重述你的推理，表示表徵間的連結足夠；若只能猜測，就補上單位、尺度或控制條件。"},
+    {"id":"transfer","phase":"transfer","heading":"把系統觀念帶到池塘","body":"池塘不是封閉盒子：水、溶氧、熱量、沉積物和生物都可能進出。若觀察魚群變少，不宜立刻斷定是污染，因為溫度、溶氧、食物和棲地也可能同時改變。請選一個可控制的變因，先預測會改變哪個量，再決定取樣位置、時間和重複次數。短時間單一地點的資料，只能支持那個時段與尺度的判斷，不能直接代表整座湖泊。這項遷移練習的重點，是把因果主張縮小到證據真正涵蓋的範圍。"},
+    {"id":"reflect","phase":"reflect","heading":"證據強度決定結論強度","body":"回到運動飲料：透明與均勻可以支持外觀和取樣一致，卻不足以證明是純物質。若要知道成分，還需選擇合適的分離或測量方法，並寫出方法的限制。請用三句話完成反思：第一句描述觀察，第二句說明粒子模型如何解釋，第三句指出邊界、尺度或測量的不確定性。科學解釋不是越肯定越好，而是結論的強度要與證據相稱；保留未知部分，反而使報告更可靠。"}
+  ],"summary":["先界定系統邊界、尺度及物質／能量交換條件。","用宏觀現象、微觀粒子模型與數據互相核對。","透明、均勻、溶解或看不見，都不能直接等同於純物質或物質消失。","條件改變時控制變因、追蹤流向，並寫出有證據及限制的結論。"],"exitCheck":[{"prompt":"以鹽水為例，說明它為何可能均勻卻不是純物質。","expectedEvidence":"指出含有不同種類粒子，並區分肉眼均勻與組成種類。"},{"prompt":"冰融化後，哪些改變、哪些沒有改變？","expectedEvidence":"指出相態、粒子排列或溫度改變，但水的物質種類未因融化改變，並交代熱交換條件。"},{"prompt":"液面下降為何不能單獨證明水消失？","expectedEvidence":"以蒸發與系統邊界解釋，並提出密封、稱量或收集凝結水等追蹤方法。"}]},
+  "interactive":{"type":"scientific-investigation","goal":"調整系統邊界與交換條件，觀察物質分布、相態和能量變化如何被同一模型解釋。","scenario":"在冰水袋、鹽水杯與教室空氣三個原創情境間切換，先畫邊界，再拖曳開口／密封、溫度與通風條件。","variables":[{"symbol":"b","meaning":"研究範圍：液體、容器加液體，或容器內全部物質"},{"symbol":"s","meaning":"開口或密封，控制物質是否穿越邊界"},{"symbol":"t","meaning":"外界溫度，影響相態與能量傳遞"},{"symbol":"a","meaning":"通風強度，影響蒸發與氣體移動"}],"steps":[{"id":"step-1","prompt":"判斷鹽水成分前先做什麼？","options":["畫出系統邊界並說明尺度","看到透明就判定純物質","先猜答案再選證據"],"answer":"A","feedback":"邊界與尺度決定能追蹤哪些成分，也限制觀察能支持的結論。"},{"id":"step-2","prompt":"冰水袋融化時，哪種紀錄最完整？","options":["相態、溫度、粒子排列與密封條件","只記錄冰變小","只畫物質消失箭頭"],"answer":"A","feedback":"宏觀現象、微觀模型和能量條件必須互相核對。"},{"id":"step-3","prompt":"開口杯液面下降，如何避免混淆觀察與推論？","options":["分開記錄液面、質量和蒸發模型並寫限制","把水消失當成直接觀察","刪除不合預測的資料"],"answer":"A","feedback":"先保留可重做的數據，再用模型解釋跨越邊界的可能流向。"}]},
+  "simulation":{"id":"sim-science-e","engine":"concept-explorer","mode":"explorer","model":"general","goal":"改變邊界、溫度與通風，追蹤物質和能量的進出並形成條件式結論。","mission":"選擇冰水袋、鹽水或教室空氣，拖曳邊界並切換開口／密封，觀察粒子圖、相態標記、質量和溫度曲線，完成邊界判讀、模型配對與限制說明三項任務。","sourceRefs":["https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf","https://cap.rcpet.edu.tw/index.html","https://stv.naer.edu.tw/teaching/course_outline.jsp"]},
+  "publisherResearch":[
+    {"publisher":"nani","edition":"南一國中自然公開課程資源","subject":"science","chapterLocator":"E：物質系統；組成、性質與狀態的公開定位","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"將物質分類、粒子觀點、相態變化與守恆追蹤整合成由系統邊界開始的學習路徑；案例與正文全部重新設計。","copyrightBoundary":"僅使用公開頁面可確認的課程方向；不複製或改寫課文、圖片、習作、題目、答案或教師用書內容。"},
+    {"publisher":"kanghsuan","edition":"康軒國中自然公開影音與課程資源","subject":"science","chapterLocator":"E：物質系統；粒子模型、變化與探究證據定位","sourceUrl":"https://digitalmaster.knsh.com.tw/all/video/j/nature.html","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"比較公開資源中的觀察、模型、數據與推論節點，融合為本課的三重表徵、邊界判讀和控制變因活動；未沿用原例題或文字。","copyrightBoundary":"只研究公開結構與方向，不複製影音字幕、教材文字、圖片、題目、提示或答案。"},
+    {"publisher":"hanlin","edition":"翰林國中自然公開教學資源","subject":"science","chapterLocator":"E：物質系統；物質組成、相態與生活情境定位","sourceUrl":"https://img.hle.com.tw/?p=88996","access":"public-open","reviewedAt":"2026-09-01","researchScope":["concept-progression","activity-pattern","assessment-pattern"],"outcome":"比較公開資源所呈現的物質分類、粒子表徵與生活應用方向，重新組織成運動飲料、冰水袋與池塘三個原創情境。","copyrightBoundary":"僅研究公開概念範圍與教學方向；不重製課文、插圖、習作、題目、答案或影音內容。"}
   ],
-  "gradeRange": [
-    "7",
-    "8",
-    "9"
+  "versionResearch":[
+    {"publisher":"nani","edition":"南一國中自然公開課程資源","sourceType":"public-web","sourceLocator":"https://www.nani.com.tw/；物質系統公開入口，未取得完整出版社課本頁面","reviewedAt":"2026-09-01","findings":{"concepts":["物質可由組成、性質與狀態描述，分類要依可檢查特徵。","相態變化涉及粒子排列與能量，不能把外觀改變當成物質種類改變。"],"representations":["宏觀性質、粒子示意與質量／溫度資料互相對照。","以表格整理成分、相態與可觀察證據。"],"examplesOrEvidence":["公開定位支持由生活物質進入組成與狀態判讀；本課另創運動飲料與冰水袋案例。"],"misconceptions":["透明或均勻就等於純物質，這個判斷忽略了微觀組成。","蒸發、融化或溶解代表物質消失，這個說法未追蹤系統邊界。"],"assessmentEmphasis":["能由組成、粒子模型與測量證據提出有限度判斷。"]},"licenseBoundary":"只採公開課程定位與方向；正文以本課原創敘述與案例呈現，不複製受保護教材。"},
+    {"publisher":"kanghsuan","edition":"康軒國中自然公開影音與課程資源","sourceType":"public-web","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然科物質相關公開入口，未以影音取代完整教材","reviewedAt":"2026-09-01","findings":{"concepts":["探究要區分觀察、推論和可控制條件。","粒子模型能把相態、溶解與物質流動連結到結果。"],"representations":["預測、操作、觀察、解釋的探究紀錄。","以表格和粒子圖比較開口與密封系統。"],"examplesOrEvidence":["公開資源提供探究流程方向；本課自行建立邊界實驗與蒸發追蹤任務。"],"misconceptions":["先猜答案再挑資料，會讓推理失去可檢查性。","忽略邊界而把跨界流動誤寫成消失，會錯判守恆。"],"assessmentEmphasis":["能用證據強度與限制寫條件式結論。"]},"licenseBoundary":"只研究公開教學方向與活動結構，不複製影片、教材、圖片、題目或解答。"},
+    {"publisher":"hanlin","edition":"翰林國中自然公開教學資源","sourceType":"public-web","sourceLocator":"https://img.hle.com.tw/?p=88996；物質組成與生活情境公開定位，完整章節未公開","reviewedAt":"2026-09-01","findings":{"concepts":["宏觀性質要和組成、粒子排列連結，不能只看外觀。","狀態與組成是不同維度，混合物可均勻但仍含多種成分。"],"representations":["用粒子圖區分純物質與混合物，並說明圖形只是模型。","以相態圖和溫度／質量紀錄追蹤變化。"],"examplesOrEvidence":["公開資源支持生活化物質判讀；本課以池塘和教室尺度重新設計遷移。"],"misconceptions":["把均勻透明直接當成純物質，忽略可能存在的多種成分。","把看不到的水蒸氣或溶質當作不存在，忽略了觀察尺度。"],"assessmentEmphasis":["能在不同尺度中說明成分、狀態、邊界與證據限制。"]},"licenseBoundary":"僅作公開概念與結構研究；不重製課文、圖表、習作、題目、答案或教師用內容。"}
   ],
-  "content": {
-    "summary": "本課聚焦「物質系統」，以自編範例練習概念、證據與新情境遷移。",
-    "sections": [
-      {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「物質系統」相關的關係。"
-      },
-      {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「物質系統」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
-      },
-      {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「物質系統」的名稱就作答；必須確認題幹證據與結論是否一致。"
-      },
-      {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「物質系統」，並指出至少一項支持判斷的條件。"
-      }
-    ]
-  },
-  "studyHighlights": [
-    "先圈出與「物質系統」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
-  ],
-  "studyReferences": [
-    "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "https://cap.rcpet.edu.tw/index.html",
-    "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "https://www.naer.edu.tw/"
-  ],
-  "provenance": {
-    "origin": "original",
-    "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
-  },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
-  "interactive": {
-    "type": "scientific-investigation",
-    "goal": "以安全探究步驟理解「物質系統」並用證據修正解釋。",
-    "scenario": "針對「E：物質系統」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "variables": [
-      {
-        "symbol": "x",
-        "meaning": "選定的觀察條件"
-      }
-    ],
-    "steps": [
-      {
-        "id": "step-1",
-        "prompt": "先做哪一件事？",
-        "options": [
-          "提出可觀察問題並列出變因",
-          "先寫預期答案",
-          "省略安全檢查"
-        ],
-        "answer": "A",
-        "feedback": "問題、變因與安全限制是探究起點。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "如何取得可信資料？",
-        "options": [
-          "固定條件、重複量測並記錄單位",
-          "只量一次且不記錄",
-          "任意改變多個因素"
-        ],
-        "answer": "A",
-        "feedback": "固定與重複讓資料能比較。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "如何形成結論？",
-        "options": [
-          "先描述證據，再提出有條件的解釋",
-          "把猜測當成結果",
-          "刪掉不符合預期的資料"
-        ],
-        "answer": "A",
-        "feedback": "證據與限制都要保留，才能修正模型。"
-      }
-    ]
-  },
-  "authoringStandard": "full-lesson-v1",
-  "lessonScope": "theme",
-  "publisherResearch": [
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
-      "subject": "science",
-      "chapterLocator": "E：物質系統；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開出版社資源用於核對「物質系統」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為theme節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
-  ],
-  "teaching": {
-    "body": [
-      {
-        "id": "hook",
-        "phase": "hook",
-        "heading": "從情境進入「物質系統」",
-        "body": "先從「物質系統」相關的生活現象提出一個可觀察問題，寫下已知條件、可能變因與安全限制；把看到的事實和自己的解釋分開，才有可檢查的探究起點。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "explain",
-        "phase": "explain",
-        "heading": "建立「物質系統」的概念架構",
-        "body": "本單元依官方課綱所列的「物質系統」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
-      },
-      {
-        "id": "worked-example",
-        "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「E：物質系統」為主題，建立一份自編三欄證據表：可直接觀察的現象、支持的模型、尚待查證的限制。先用表格整理資料，再用一句條件式結論回應問題，避免只背名詞。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "guided-practice",
-        "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「物質系統」先寫可觀察問題，再列自變因、應變因與控制變因；依序記錄預測、操作、數據與限制，重複量測後才下條件式結論。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "transfer",
-        "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「物質系統」的探究方法換到家庭、校園或環境資料，檢查來源、尺度、樣本與不確定性；若證據不足，保留條件式結論並提出下一個可行測試。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "reflect",
-        "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「物質系統」的問題：哪個觀察最關鍵、哪個變因仍未控制、資料能支持到什麼程度？用一句話寫出結論與限制，再提出一項安全的改進。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      }
-    ],
-    "summary": [
-      "先用自己的話界定「物質系統」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
-    ],
-    "exitCheck": [
-      {
-        "prompt": "請用自己的話說明「物質系統」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
-      },
-      {
-        "prompt": "在「物質系統」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
-      },
-      {
-        "prompt": "若題目的條件改變，如何調整處理「物質系統」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
-      }
-    ]
-  },
-  "simulation": {
-    "id": "sim-science-e",
-    "engine": "concept-explorer",
-    "mode": "explorer",
-    "model": "general",
-    "goal": "以安全探究步驟理解「物質系統」並用證據修正解釋。",
-    "mission": "針對「E：物質系統」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "sourceRefs": [
-      "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-      "https://cap.rcpet.edu.tw/index.html",
-      "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/"
-    ]
-  }
+  "fusionRecord":{"commonCore":["以物質組成與可觀察性質描述系統。","用粒子模型解釋純物質、混合物、相態與變化。","以系統邊界追蹤物質與能量，讓結論包含條件與限制。"],"versionDifferences":["南一公開方向較適合建立組成、性質與狀態的分類脈絡。","康軒公開方向較強調探究程序、觀察證據、模型與控制條件。","翰林公開方向較著重粒子表徵、生活材料與變化情境。"],"originalAdditions":["以透明運動飲料製造外觀與成分的尺度衝突。","用冰水袋串接相態、邊界、熱量交換和物質追蹤。","設計可調邊界互動，要求同步使用宏觀、微觀和數據表徵。","以池塘案例練習跨尺度因果範圍與條件式結論。"],"llmSynthesisNote":"LLM 依官方課綱、Knowledge Graph 及目前可取得的南一、康軒、翰林公開研究，比較概念順序、表徵、活動與評量重點後，以自己的話獨立撰寫本單元課文、案例、互動任務與檢核；未複製出版社原文、圖片、題目或答案。"},
+  "provenance":{"origin":"original","license":"All rights reserved","authoringNote":"Version-fused original lesson based on official curriculum and recorded public publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced."},
+  "studyHighlights":["先界定系統邊界與尺度，再判斷成分與相態。","用宏觀、微觀和數據表徵互相核對。","用開口／密封與溫度變化追蹤物質、能量及限制。"],
+  "studyReferences":["https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf","https://cap.rcpet.edu.tw/index.html","https://stv.naer.edu.tw/teaching/course_outline.jsp","https://www.nani.com.tw/","https://digitalmaster.knsh.com.tw/all/video/j/nature.html","https://img.hle.com.tw/?p=88996"]
 }

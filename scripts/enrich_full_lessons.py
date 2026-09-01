@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Strengthen full-lesson-v1 teaching bodies with subject-specific examples."""
+"""Legacy migration helper only.
+
+This script is intentionally blocked by default. Its generated prose is a
+shared scaffold and must not be used for new or reviewed lessons. New content
+must be authored per unit from version research and LLM synthesis.
+"""
 from __future__ import annotations
 
 import json
@@ -275,6 +280,18 @@ def update_lesson(path: Path) -> bool:
 
 
 def main() -> int:
+    import argparse
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--allow-legacy-template",
+        action="store_true",
+        help="explicitly allow the historical scaffold migration; never use for content authoring",
+    )
+    args = parser.parse_args()
+    if not args.allow_legacy_template:
+        print("拒絕執行：此為歷史模板遷移工具。新教材必須逐單元研究並獨立撰寫。")
+        return 2
     changed = 0
     for path in sorted((ROOT / "lessons").glob("*/*.json")):
         changed += update_lesson(path)

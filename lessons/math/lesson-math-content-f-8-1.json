@@ -9,163 +9,285 @@
     "8"
   ],
   "content": {
-    "summary": "理解一次函數 y=ax+b 的變化率、初始值與生活情境。",
+    "summary": "一次函數描述兩個量之間的固定增減關係。從計程車起跳價、手機流量費或水費帳單等情境出發，本單元把輸入與輸出整理成表格，辨認每增加一單位時的變化率，找出初始值，寫成 y＝ax＋b，並在表格、式子與座標圖之間互相核對。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "理解一次函數 y=ax+b 的變化率、初始值與生活情境。 能以表格、式子與圖形互相驗證。"
+        "body": "能辨認自變數與應變數，從兩筆以上的資料求固定變化率與初始值，建立一次函數式，並用圖形的斜率與 y 截距解釋式子的意義。"
       },
       {
         "heading": "學習流程",
-        "body": "辨認輸入輸出，整理變化率與初始值，建立一次函數式，再用表格或座標圖檢查。"
+        "body": "先交代兩個量的單位與可取範圍，再比較輸入差與輸出差；確認變化率固定後，找出輸入為零時的輸出，最後用另一筆資料或圖形回查模型。"
       },
       {
         "heading": "常見錯誤",
-        "body": "混淆斜率與截距、讀錯座標刻度，或把一次函數當成固定常數。"
+        "body": "斜率是輸出變化量除以輸入變化量，不是某一筆輸出值；截距是 x＝0 的初始值，不一定等於表格第一列。也要注意生活情境可能限制 x 不能取所有實數。"
       }
     ]
   },
   "studyHighlights": [
-    "斜率表示變化率。",
-    "截距是初始值。",
-    "表格、式子、圖形互證。"
+    "先說清楚 x、y 與單位，再談函數式。",
+    "a 是每單位輸入帶來的輸出變化，b 是起始量。",
+    "用第三筆資料、座標圖與情境合理性驗證 y＝ax＋b。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
     "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
   ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+    "authoringNote": "本課由官方課綱與南一、康軒、翰林可追溯公開資料的概念順序、表示法與迷思研究融合後，以 LLM 重新撰寫；不複製出版社文字、圖片、題目、答案或影音逐字稿。"
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "publisher": "nani",
+      "edition": "南一國中數學公開資源（一次函數概念研究）",
       "subject": "math",
-      "chapterLocator": "F-8-1：一次函數",
+      "chapterLocator": "八年級一次函數與兩量關係相關公開單元",
+      "sourceUrl": "https://www.nani.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-29",
+      "researchScope": [
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "研究公開資源對應變數、固定變化與生活模型的教學方向，轉化為本課從帳單資料建立函數式並驗證限制的原創任務。",
+      "copyrightBoundary": "只採用公開可查的概念範圍與教學方向；本課敘述、資料、例題、互動步驟與回饋全部重新設計。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（函數與函數圖形研究）",
+      "subject": "math",
+      "chapterLocator": "八年級函數與函數圖形相關章節",
+      "sourceUrl": "https://www.knsh.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-29",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "assessment-pattern"
+      ],
+      "outcome": "比較公開章節以表格、關係式與座標圖互換說明函數的安排，保留變化率與初始值的共同核心，另寫計程車費率案例。",
+      "copyrightBoundary": "不重製康軒教材的文字、版面、圖像、練習或解答；僅記錄研究結果，所有課內材料均為原創。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網（線型函數與其圖形研究）",
+      "subject": "math",
+      "chapterLocator": "F-8-1：一次函數／線型函數與其圖形",
       "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-29",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「F-8-1：一次函數」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "研究公開章節對斜率、截距、圖形與式子互證的概念分層，補入本課對負斜率、合理範圍與反例診斷的原創說明。",
+      "copyrightBoundary": "只研究公開索引與教學結構；本課正文、例證、互動選項、提示與答案均獨立撰寫。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "南一國中數學公開資源（一次函數概念研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-junyi.html；查閱一次函數相關公開內容，2026-08-29",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": [
+          "一次函數可用來描述輸入與輸出之間具有固定變化率的關係",
+          "建立模型前必須先判斷兩個量的角色、單位與實際可取範圍"
+        ],
+        "representations": [
+          "以表格中的相鄰差、關係式與座標圖的直線斜率互相對照"
+        ],
+        "examplesOrEvidence": [
+          "從固定基本費加上每單位用量費用的資料推回 y＝ax＋b"
+        ],
+        "misconceptions": [
+          "把第一筆輸出值當成變化率，或未確認差值固定就宣稱是一次函數"
+        ],
+        "assessmentEmphasis": [
+          "能根據資料說明 a 與 b 的意義，並以未使用資料檢查模型"
+        ]
+      },
+      "licenseBoundary": "僅保存公開內容的概念與表徵研究，不保存或改寫原文；本課案例、問題、解析與互動均由 LLM 原創。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（函數與函數圖形研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml；查閱函數相關章節定位，2026-08-29",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": [
+          "函數關係要能對每個輸入指定唯一輸出，且一次函數的圖形是直線",
+          "斜率描述輸出相對輸入的固定變化，截距描述輸入為零時的輸出"
+        ],
+        "representations": [
+          "用輸入輸出表、箭頭關係、代數式與直角坐標圖連結同一關係"
+        ],
+        "examplesOrEvidence": [
+          "比較兩組每公里費用不同但起跳價相同的計程車模型，觀察直線方向與交點"
+        ],
+        "misconceptions": [
+          "將 y 截距誤讀成圖形碰到 x 軸的位置，或忘記負斜率代表輸出隨輸入增加而下降"
+        ],
+        "assessmentEmphasis": [
+          "能由兩點求斜率、代入求截距，再用圖形或另一點確認"
+        ]
+      },
+      "licenseBoundary": "只記錄公開資料的教學重點與概念關係，不複製康軒文字、圖表、練習或答案；本課以全新數據和任務呈現。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網（線型函數與其圖形研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；本機快取：/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html；查閱 F-8-1 相關章節索引，2026-08-29",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": [
+          "線型函數可由式子、表格與直線圖形的對照來理解其規律",
+          "判讀圖形時要分辨斜率的方向與大小，以及直線和 y 軸的交點"
+        ],
+        "representations": [
+          "以兩點連線的垂直變化量／水平變化量，連結斜率與生活中的單位變化"
+        ],
+        "examplesOrEvidence": [
+          "用同一條直線上的不同點驗證斜率相同，再以截距解釋初始條件"
+        ],
+        "misconceptions": [
+          "只看直線高低而不看座標刻度，或將斜率與直線上任意點的 y 值混為一談"
+        ],
+        "assessmentEmphasis": [
+          "能在表格、式子與圖形間轉換，並說明生活模型的起始值與限制"
+        ]
+      },
+      "licenseBoundary": "只研究公開章節索引與概念表徵；本課的正文、資料、反例、互動選項與回饋皆重新撰寫，不重製出版社素材。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三個版本都把一次函數放在兩量關係中，要求辨識輸入、輸出與固定變化",
+      "表格、關係式與直線圖形是同一函數關係的不同表示法",
+      "斜率與截距必須連回單位、初始條件與資料證據，而不是只記符號名稱"
+    ],
+    "versionDifferences": [
+      "南一研究較突出生活模型和條件辨識，康軒著重多重表徵互換，翰林較清楚分層斜率、截距與圖形判讀"
+    ],
+    "originalAdditions": [
+      "以兩種計程車方案的收費單比較模型，讓 a 與 b 的意義先在決策中出現",
+      "加入負斜率與不可任意延伸到負輸入的反例，區分代數直線與生活範圍",
+      "互動要求學習者用兩點求斜率、找初始值、以第三點驗證並口述單位"
+    ],
+    "llmSynthesisNote": "本課由 AI LLM 讀取並比較三版本可取得資料的概念順序、表徵方式、例型與常見迷思，再以費率模型重組為原創課文。教學入口、案例數據、錯誤診斷、互動問題與 simulation 步驟皆為本單元重新設計，沒有沿用其他單元的統計或代數模板。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「F-8-1：一次函數」",
-        "body": "先讀懂「F-8-1：一次函數」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "兩張收費單，哪一家真的比較划算？",
+        "body": "甲計程車收 50 元起跳，每公里加 12 元；乙車收 80 元起跳，每公里加 8 元。短程時甲可能便宜，路程變長後乙可能反而有利。要公平比較，先把里程記為 x、總車資記為 y，再問兩件事：每多一公里增加多少錢？尚未行駛時已經要付多少？這兩個答案會成為 y＝ax＋b 中的 a 與 b，也讓一次函數從真實的選擇問題開始，而不是先背一個式子。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「一次函數」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "a 和 b 各自回答不同問題",
+        "body": "在 y＝ax＋b 中，a 是『x 增加一單位，y 改變多少』，所以單位是輸出單位／輸入單位；b 是 x＝0 時的 y，代表開始計算前就存在的固定量。若費用表出現 x＝2 時 y＝74、x＝5 時 y＝110，輸入增加 3、輸出增加 36，因此 a＝36÷3＝12；代入 74＝12×2＋b，得到 b＝50。式子 y＝12x＋50 不只產生數字，也保留了每公里費率與起跳價的意義。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「F-8-1：一次函數」為主題，令輸入 x＝1、2、3 時輸出 y＝2x＋1，整理成表格可得 3、5、7；把相鄰輸出的差與圖形斜率比較，再代回式子確認規律，說明輸入改變如何影響輸出。"
+        "heading": "從表格、式子走到圖形",
+        "body": "某水族館會員卡先收 120 元，再按入場次數每次折抵 15 元。設使用 x 次後的剩餘點數為 y，資料可寫成 y＝120−15x。x 每增加 1，y 就減少 15，所以斜率是 −15；x＝0 時仍有 120 點，這是 y 截距。取 x＝0、2、4 得到 y＝120、90、60，三個座標落在同一直線上。因為次數不能是負數，且點數不會無限扣下去，生活上還要限制 x 的範圍；代數式可以延伸，模型卻不能脫離情境亂用。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "把錯誤答案拆開診斷",
+        "body": "一張停車場告示寫著：入場費 30 元，每小時 20 元。有人寫成 y＝30x＋20，並說 30 是每小時費用。請先用 x＝0 與 x＝1 檢驗：停零小時應付 30 元，停一小時應付 50 元，因此正確式子是 y＝20x＋30。再檢查單位：20 是元／小時，30 是元。若另一人把圖形看得越往右越上升就說『所有停車時間都能收費』，還要補上按時計費上限或未滿一小時的規則，因為函數式與制度條件必須同時成立。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「F-8-1：一次函數」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "把關係式變成一張可辯護的圖",
+        "body": "請選一個班級中兩量有可能固定變化的現象，例如影印費、儲值點數或運動場圈數與累積距離。先蒐集至少三組資料，寫明 x、y、單位與起始條件；接著計算相鄰資料的變化率，判斷是否真的固定，再寫出 y＝ax＋b。畫圖後標出斜率和 y 截距，並說明哪一段是資料支持的範圍。若每次增加量不固定，不要硬套一次函數，應指出是哪個條件破壞了模型。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「F-8-1：一次函數」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "用一句話翻譯你的函數",
+        "body": "完成本課後，拿一個函數 y＝−4x＋28，分別用三種語言說明它：表格語言是 x 每增加 1 時 y 減少 4；圖形語言是向右走 1 格、向下 4 格；情境語言則要指出 28 是初始量、−4 是每單位的減少量。最後問自己：x＝0 是否有實際意義？x 能不能取負數？資料是否足以支持直線延伸？能回答這三個問題，才算真正理解一次函數，而不是只會代入計算。"
       }
     ],
     "summary": [
-      "先用自己的話界定「一次函數」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "從兩量的角色與單位開始，確認資料是否具有固定變化率。",
+      "a 表示每單位輸入造成的輸出變化，b 表示輸入為零時的初始量。",
+      "在表格、y＝ax＋b 與座標圖之間互換，並用未使用資料回查。",
+      "把代數模型放回真實範圍，不能因式子可計算就忽略情境限制。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「一次函數」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "若兩筆資料是 x＝2、y＝74 與 x＝5、y＝110，如何求出變化率？",
+        "expectedEvidence": "以輸出差 36 除以輸入差 3，得到 a＝12，並說明單位是每增加一個 x 單位時 y 增加 12。"
       },
       {
-        "prompt": "在「一次函數」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "停車入場費 30 元、每小時 20 元，請寫出費用函數並解釋兩個係數。",
+        "expectedEvidence": "寫 y＝20x＋30，指出 20 是每小時費用、30 是 x＝0 時的起始費用。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「一次函數」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼生活中的一次函數不能任意把 x 延伸到所有實數？",
+        "expectedEvidence": "能以次數、里程或時間等情境指出輸入範圍限制，並說明超出範圍後式子可能不再代表真實制度。"
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-29",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「F-8-1：一次函數」的表示、推理與驗算。",
-    "scenario": "請依序分析「F-8-1：一次函數」的條件，選出最能保留資訊、可被驗證的做法。",
-    "variables": [
-      {
-        "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
-      }
-    ],
+    "type": "guided-choice",
+    "goal": "用兩張收費單建立一次函數，讓學習者辨認變化率、初始值並以第三筆資料驗證。",
+    "scenario": "你是交通費率檢核員，要判斷一張收費表是否能由一次函數描述。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "x＝2 時 74 元、x＝5 時 110 元，先求哪個量？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "先用輸出差除以輸入差求每單位變化率 a",
+          "把 74 直接當成起始值 b，再猜另一個係數",
+          "把兩個輸出相乘，當作每單位費用"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "a 必須描述兩量的相對變化，因此要計算 (110−74)÷(5−2)，並保留單位。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "已知 a＝12，如何找出起始值 b？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "把任一組完整資料代入 y＝12x＋b 解出 b",
+          "把 a 與第一筆 x 相加",
+          "把兩筆 y 相減後直接當成 b"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "b 是 x＝0 的輸出，不一定在表格中直接出現；代入完整資料才能回推出它。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "模型寫成 y＝12x＋50 後，哪個動作最能檢查？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "用未參與建式的第三筆資料代入，並檢查 x 的實際範圍",
+          "只看直線是否畫得筆直，不核對數值",
+          "把 x 改成負數並宣稱所有結果都有效"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "第三筆資料能檢驗式子，範圍檢查則確認代數模型仍代表真實收費規則。"
       }
     ]
   },
@@ -175,13 +297,42 @@
     "engine": "math-function-graph",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「F-8-1：一次函數」的表示、推理與驗算。",
-    "mission": "請依序分析「F-8-1：一次函數」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "用兩張收費單建立一次函數，讓學習者辨認變化率、初始值並以第三筆資料驗證。",
+    "mission": "你是交通費率檢核員，要判斷一張收費表是否能由一次函數描述。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
-      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    ],
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "由兩點資料建立 y＝ax＋b，操作 a、b 觀察直線方向與起點，並用第三點及情境範圍驗證。",
+      "predictionPrompt": "甲方案起跳 50 元、每公里 12 元；乙方案起跳 80 元、每公里 8 元。你預測哪個里程兩者費用相同？先比較固定差與每公里差。",
+      "evidencePrompt": "請提交兩個方案的式子、交會點計算、至少一筆代回檢查，以及 x 的合理範圍說明。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "輸入兩方案的起始費與每單位費率，建立兩條費用直線",
+          "equation": "甲 y＝12x＋50；乙 y＝8x＋80",
+          "reason": "起始費決定 y 截距，每公里費率決定斜率；兩者角色不能互換。",
+          "feedback": "先標記 x 是里程、y 是元，再把固定量與變動量分開。"
+        },
+        {
+          "id": "step-2",
+          "action": "拖曳里程並觀察兩條線的費用差，尋找交會位置",
+          "equation": "12x＋50＝8x＋80 → x＝7.5",
+          "reason": "交會點代表相同輸入下輸出相等，不是兩條線斜率相等。",
+          "feedback": "可用代數解，也可在圖上找交會；再注意里程是否允許小數。"
+        },
+        {
+          "id": "step-3",
+          "action": "以另一個里程代回兩式，檢查圖形與生活解釋",
+          "equation": "x＝10：甲 170 元；乙 160 元",
+          "reason": "第三個輸入能確認式子和圖形一致，也能說明交會點左右哪個方案較省。",
+          "feedback": "結論要附里程、金額與方案適用範圍，不能只說哪條線比較高。"
+        }
+      ]
+    }
   }
 }

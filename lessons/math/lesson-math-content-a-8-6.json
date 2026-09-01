@@ -9,19 +9,19 @@
     "8"
   ],
   "content": {
-    "summary": "理解最高次為二次的方程式，辨認係數與根的意義。",
+    "summary": "理解一元二次方程式是讓條件成立的模型，辨認係數、根與圖形交點的意義，並區分代數式、方程式與情境可行解。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "理解最高次為二次的方程式，辨認係數與根的意義。 能代回原方程式確認根。"
+        "body": "能判斷式子是否為一元二次方程式，解釋根使等式成立的意義，並用代回與情境限制檢核每個候選值。"
       },
       {
         "heading": "學習流程",
-        "body": "整理二次方程式係數，選擇因式分解、公式或配方法，求根後逐一代回驗算。"
+        "body": "先把方程式整理成 ax²＋bx＋c＝0，再理解根代表的條件交會，最後逐一代回並檢查定義域與單位。"
       },
       {
         "heading": "常見錯誤",
-        "body": "漏掉一個根、平方根正負號處理錯誤，或未依情境限制取捨答案。"
+        "body": "不要把『含 x²』誤當成方程式，也不要只找到一個根、忘記等號右側的整理，或把數學根直接當成情境答案。"
       }
     ]
   },
@@ -41,7 +41,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,45 +59,122 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「A-8-6：一元二次方程式的意義」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（一元二次方程式概念研究）",
+      "subject": "math",
+      "chapterLocator": "公開 XML https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；八上一元二次方程式相關章節入口，僅作概念定位",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "公開資源支持由標準形式與係數辨認一元二次方程式，再連到根與代回驗證；本課以花圃、圖形交點與候選值重新組織概念。",
+      "copyrightBoundary": "只研究公開索引與概念方向，不複製教材、影音、題目、答案或圖片；本課內容均獨立創作。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中數學公開架構交叉索引",
+      "subject": "math",
+      "chapterLocator": "均一公開主題頁 https://www.junyiacademy.org/topics/n-m7a；公開可見之方程式與代數圖形前置節點，未取得南一課本全文頁碼",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": ["teaching-sequence", "concept-progression", "assessment-pattern"],
+      "outcome": "公開交叉入口支持由等式成立值理解方程式解，並以圖形或代入檢查；因資料非出版社全文，本課採保守定位，不臆測未公開題目。",
+      "copyrightBoundary": "不將平台內容冒稱南一教材，不複製頁面文字、題目、解析或影片；正文與互動均重新創作。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（單元結構研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["以最高次與未知數次數辨認一元二次方程式的形式", "區分方程式、等式與代數式，理解解是使等式成立的數值"],
+        "representations": ["用係數表與左右兩邊等值檢查呈現方程式結構"],
+        "examplesOrEvidence": ["將候選數值代回左右兩邊，觀察何時兩邊相等"],
+        "misconceptions": ["把任意含平方的式子都當成方程式，忽略等號與未知數條件"],
+        "assessmentEmphasis": ["能辨認二次方程式的係數並說明根的意義"]
+      },
+      "licenseBoundary": "只取公開來源的概念順序與教學重點；本課文字、例題、提示、互動步驟與答案均重新設計，不重製原教材。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "均一國中數學主題頁（概念與練習路徑研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-junyi.html",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["從代入與平衡觀點理解方程式解的檢驗方式", "比較不同形式的二次方程式，確認最高次與係數資訊"],
+        "representations": ["用候選值表格記錄代回結果與真假判斷"],
+        "examplesOrEvidence": ["用多個候選值測試同一方程式，區分滿足與不滿足的數值"],
+        "misconceptions": ["只找到一個成立值就停止，沒有考慮二次方程式可能有兩個根"],
+        "assessmentEmphasis": ["能用代回證據判斷候選值是否為方程式的解"]
+      },
+      "licenseBoundary": "只研究公開主題呈現的概念分段與驗證節奏；不複製均一題目、文字、影片或答案，所有任務均重新撰寫。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；本機快取：/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["以標準形式辨識一元二次方程式的二次項、一次項與常數項", "連結方程式的根、因式分解與幾何或生活情境中的未知量"],
+        "representations": ["用標準形式、因式乘積與數線位置互相對照"],
+        "examplesOrEvidence": ["將乘積等於零的條件拆成候選根，再逐一代回原方程式"],
+        "misconceptions": ["把因式等於零的結論直接套用到非零乘積，忽略前提條件"],
+        "assessmentEmphasis": ["能從方程式形式說明根與原條件的關係"]
+      },
+      "licenseBoundary": "只研究公開章節的概念分層與表徵方向；本課文字、案例、圖示與作答引導均為原創，不重製出版社素材。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": ["一元二次方程式必須同時符合未知數最高次為二與等號關係", "方程式的解是代回後使左右兩邊相等的數值", "判讀根時要保留原方程式條件並逐一驗證候選值"],
+    "versionDifferences": ["康軒較適合從係數與等值關係建立定義，先處理形式辨識", "均一較強調候選值表格與代回判斷，適合建立解的操作意義", "翰林較連結標準形式、因式乘積與情境未知量，適合銜接後續解法"],
+    "originalAdditions": ["設計真假候選值表，要求學習者同時記錄左右兩邊的代回結果", "加入『含平方不代表方程式』的反例分類，強化等號與未知數條件", "以乘積等於零的前提卡片連結根的來源，並要求回到原式完成驗算"],
+    "llmSynthesisNote": "本單元先比較三版本對形式辨識、代回驗證與根的連結方式，再由 LLM 以原創候選值任務、反例與條件卡重寫一元二次方程式的概念教學；未複製任何版本的題目、答案或敘述。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「A-8-6：一元二次方程式的意義」",
-        "body": "先讀懂「A-8-6：一元二次方程式的意義」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "什麼叫做讓條件成立？",
+        "body": "校園花圃的長寬互相牽動時，題目常不是問一次算術，而是問哪些數值能讓一個條件剛好成立。方程式 x²−5x＋6＝0 的意思，就是尋找使左邊等於零的 x；代入 x＝2 得 4−10＋6＝0，代入 x＝3 也得零，所以兩者都是解。『一元』表示只研究一個未知數，『二次』表示整理後最高次為二，『方程式』則必須有等號表達兩邊相等。三個身分缺一不可：x²−5x＋6 是多項式，不是方程式；2x＋3＝0 雖是方程式，卻是一元一次。先讀懂這三個詞，才能知道題目究竟要求找根、判斷成立值，還是只計算多項式。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「一元二次方程式的意義」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "從形式辨認它在問什麼",
+        "body": "辨認對象時先看等號與最高次。3t²−7t＋2 是二次多項式，只有寫成 3t²−7t＋2＝0 才是在尋找讓條件成立的 t。整理時通常先把方程式化為 ax²＋bx＋c＝0，確認 a 不等於零，並小心移項、括號與符號；係數 a、b、c 不只是代號，也會影響拋物線形狀與可能根的數量。若得到（t−1）（3t−2）＝0，零乘積性質說明至少一個因式為零，因此候選是 t＝1 或 t＝2／3，而不是只挑看起來整齊的整數。每個候選都要代回原方程式，因為『推導出來』與『真的使等式成立』應該用兩種證據互相核對。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「A-8-6：一元二次方程式的意義」為主題，取自編算式 (x＋4)(x＋2)。先用分配律得到 x²＋6x＋8，再代入 x＝3 檢查原式與展開式都等於 35；這個步驟示範如何保留運算理由，而不是只抄公式。"
+        "heading": "示範：根是零點，不是任意代數數字",
+        "body": "自編例題：研究 2q²＋q−6＝0。先將它分解為（2q−3）（q＋2）＝0，依零乘積性質列出 q＝3／2 或 q＝−2。代回第一根，2×（9／4）＋3／2−6＝0；代回第二根，2×4−2−6＝0，兩個候選都確實成立。接著把題目改成只問多項式 2q²＋q−6 在 q＝3／2 時的值，這時可以說多項式值為零，卻不能把 q 稱為『方程式的解』，因為題目沒有等號形成待解條件。這個差異看似是用詞，實際會影響讀圖、根的判定與應用題作答。請同時保留原式、因式式與代回算式，讓每一個根的身分都有清楚證據。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "根的數量與圖形交會",
+        "body": "把方程式的兩邊看成兩個圖形，可以建立根的幾何意義。y＝x²−4 與 y＝0 的交點在 x＝−2、2，這兩個 x 座標就是 x²−4＝0 的實數解；若改成 y＝x²＋1，拋物線在 x 軸上方，沒有實數交點，也就沒有實數根；y＝x² 則只在原點接觸 x 軸，x＝0 是重根。請先拖曳水平線的高度，預測交點數量，再用代數代回確認。要注意交點是座標（x，y），方程式的解通常只回答 x；圖形能提供根數與位置的線索，不能取代原式的符號整理與精確驗算。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「A-8-6：一元二次方程式的意義」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "兩個數學根，未必都是可行方案",
+        "body": "把根帶回情境時，先不要急著刪掉負數。某長方形長為 x＋3 公尺、寬為 x 公尺、面積 28 平方公尺，建立 x（x＋3）＝28，整理為 x²＋3x−28＝0，分解後得到 x＝4 或 x＝−7。代數驗根階段兩者都能讓方程式成立；情境判讀階段才檢查寬與長必須是正的實際長度，因此保留 x＝4，長 7、寬 4，並用 7×4＝28 回答。若忽略限制而寫 −7，算式雖可能正確，答案卻沒有幾何意義。換成溫度、時間或人數時，限制可能不同，必須重新讀單位、整數性與範圍，不能把『負根一律刪除』當成沒有條件的規則。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「A-8-6：一元二次方程式的意義」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "用四個問題完成驗收",
+        "body": "自我檢核可以沿著一元二次方程式的生命線完成：先圈出唯一未知數與最高次，確認等號存在；再寫出標準式並標記 a、b、c，檢查移項和符號；接著說明選用因式分解、配方法或公式解的理由，預測可能根數；求解時列出全部候選，不能看到負號就提前刪除；每根回代原方程式，確認左右相等；最後才依題目的長度、時間、數量或其他範圍篩選，必要時保留精確值並按要求近似。也可用圖形交點或判別式做第二條證據。若某一步失敗，記錄是形式辨認、整理、求根、驗算還是情境解讀出錯，讓修正有方向，而不是只把答案換成另一個數字。"
       }
     ],
     "summary": [
@@ -121,7 +198,7 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
+  "reviewStatus": "draft",
   "updatedAt": "2026-08-27",
   "interactive": {
     "type": "algebra-expression-builder",
@@ -177,6 +254,7 @@
     "model": "general",
     "goal": "以互動步驟探索「A-8-6：一元二次方程式的意義」的表示、推理與驗算。",
     "mission": "請依序分析「A-8-6：一元二次方程式的意義」的條件，選出最能保留資訊、可被驗證的做法。",
+    "learningDesign": {"type":"representation-match","objective":"從圖形與代數條件辨認一元二次方程式的解，理解解是使方程式成立的數值而非任意截距。","predictionPrompt":"對 x²＝9，你預測會有一個還是兩個實數解？請先用平方的對稱性說明。","evidencePrompt":"請將候選值代入方程式，並比較其在 y＝x² 與 y＝9 圖上的位置。","steps":[{"id":"step-1","action":"從最高次數辨認一元二次結構","equation":"x²−9＝0：未知數最高次為 2","reason":"方程式整理後最高次是 2，且未知數只有 x，因此屬一元二次方程式。","feedback":"未知數有一個不代表一定是一元一次，先看最高次數。"},{"id":"step-2","action":"用代入檢查平方方程式的候選值","equation":"3²＝9；(−3)²＝9","reason":"正負數平方相同，因此兩個候選值都可能使方程式成立。","feedback":"不要只試正值；平方會消除原本的正負差異。"},{"id":"step-3","action":"把代數解連到拋物線交點","equation":"y＝x² 與 y＝9 交於 (3,9)、(−3,9)","reason":"交點的 x 座標正是同時滿足兩個關係的解，圖形提供第二種驗證。","feedback":"交點座標與方程式解不要混淆：答案問的是 x 值。"}]},
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",

@@ -2,174 +2,81 @@
   "id": "lesson-math-content-g",
   "subject": "math",
   "title": "G：坐標幾何",
-  "knowledgeIds": [
-    "kg-math-content-g"
-  ],
-  "gradeRange": [
-    "7",
-    "8",
-    "9"
-  ],
+  "knowledgeIds": ["kg-math-content-g"],
+  "gradeRange": ["7", "8", "9"],
   "content": {
-    "summary": "統整座標、點線關係與距離概念。",
+    "summary": "用平面直角坐標把位置、線段與直線關係轉成可計算、可繪圖、可互相檢查的數學語言，並連結坐標、距離與斜率。",
     "sections": [
-      {
-        "heading": "學習目標",
-        "body": "統整座標、點線關係與距離概念。 能以圖形、因數或代入結果驗證。"
-      },
-      {
-        "heading": "學習流程",
-        "body": "先辨認概念與條件，再選擇表示或運算方法，逐步完成並檢查結果。"
-      },
-      {
-        "heading": "常見錯誤",
-        "body": "忽略定義條件、漏列因數，或計算後沒有回頭驗證。"
-      }
+      {"heading": "從地圖地址到幾何模型", "body": "坐標幾何的起點不是背公式，而是先說清楚『相對於哪裡、沿哪個方向、每一格多大』。原點 O=(0,0) 是共同基準，水平軸是 x 軸，垂直軸是 y 軸；點 P=(x,y) 的第一個數代表水平位移，第二個數代表垂直位移，順序不能交換。x、y 都非零時，正負號可判斷四個象限；若其中一個為零，點是在坐標軸上，不應硬分進象限。這些規則讓一張含有刻度的平面圖成為可重現的地址系統：別人只拿到數對，也能依同一原點、方向與單位找到同一位置。"},
+      {"heading": "把兩點之間的路拆成直角三角形", "body": "給定 A=(−2,1) 與 B=(4,5)，不要一看到斜線就直接套式；先比較同向坐標，水平差是 4−(−2)=6，垂直差是 5−1=4。從 A 水平走到 (4,1)，再垂直走到 B，這兩段與 AB 組成直角三角形，因此 AB²=6²+4²=52，AB=√52=2√13。若兩點同 x，水平差為零，距離就退化成 |y₂−y₁|；同 y 時則是 |x₂−x₁|。公式中的差要保留平方，因為方向正負只描述位移，長度本身不能是負數；算完也可在圖上估量，確認斜邊應比 6 和 4 各自長，卻不會長到超過 10。"},
+      {"heading": "斜率是在比較『升多少／向右多少』", "body": "直線的斜率不是線段越陡就一定越大，而是同一條不垂直於 y 軸的直線上，任取兩點計算垂直變化量除以水平變化量：m=(y₂−y₁)/(x₂−x₁)。例如 C=(−1,−2)、D=(3,4)，向右 4 單位時上升 6 單位，所以 m=6/4=3/2；若把 C、D 的次序反過來，分子分母同時變號，結果仍是 3/2。水平線的斜率為 0，因為高度沒有改變；垂直線的 x₂−x₁=0，分母不能為零，所以斜率不存在。這個分母例外很重要：不能把『不存在』寫成 0，也不能只看圖形傾斜方向猜斜率。"},
+      {"heading": "用斜率辨認平行、垂直與同一直線", "body": "兩條非垂直直線斜率相同，表示它們方向一致；若截距不同，便是平行線。若兩斜率 m₁、m₂ 滿足 m₁m₂=−1，則它們互相垂直，但前提是兩者斜率都存在。以 y=2x−3 與 y=2x+5 為例，兩式的 x 係數相同，圖形有相同上升率，卻不會相交；而 y=−(1/2)x+4 的斜率與 2 相乘為 −1，所以與斜率 2 的直線垂直。遇到一般式 Ax+By=C，不要只盯著 A 或 B 的正負；可先取兩個方便的 x 值求 y，或整理成 y=mx+b，再用兩點檢核。若一條線是 x=3，所有點的 x 都固定，應以垂直線的幾何意義處理，而不是勉強找一個有限斜率。"},
+      {"heading": "聯立方程式是兩條路徑的交會", "body": "在坐標平面上，每一個二元一次方程式描述一條直線；同時滿足兩式的有序數對，就是兩條直線的交點。考慮 y=x+1 與 y=−x+5，令兩個 y 相等可得 x+1=−x+5，於是 x=2、y=3，交點是 (2,3)。代回兩式都成立，才完成代數與幾何的雙重確認。若兩直線斜率相同而截距不同，沒有共同解；若其實是同一條線，則有無限多組共同解。這說明『解方程式』不是脫離圖形的機械運算：消去變數是在找共同位置。畫圖時的交會可先給直覺，代數計算與代回則負責精確性，兩種表徵互相支持，也能抓出把交點坐標順序寫反的錯誤。"},
+      {"heading": "把坐標工具遷移到真實配置", "body": "設計無障礙展場時，可把入口設為原點、走道方向設為坐標軸，再用點表示展品、出口與轉彎處。先用坐標讀出相對位置，再用水平差與垂直差估算兩點的直線距離；若要判斷坡道是否與基準線平行，就比較斜率，而不是只依視覺判斷。要注意模型的邊界：換了原點、方向或比例尺，同一組數字不一定代表同一個實際位置；若測量誤差或單位改變，也必須在結論中註明。最後可把配置交給同伴，只提供坐標與方程式，請對方重畫並說出距離、斜率與交會情形。能讓別人從符號還原圖形，再由圖形驗回符號，才算真正把坐標幾何用成溝通工具。"}
     ]
   },
   "studyHighlights": [
-    "先抓定義與條件。",
-    "依規則逐步處理。",
-    "用證據檢查結果。"
+    "先固定原點、方向、刻度，再讀有序數對與象限。",
+    "兩點距離由水平差、垂直差和直角三角形連起來。",
+    "斜率比較升降與水平變化，垂直線是分母為零的例外。",
+    "直線交點同時是聯立方程式的解，需用代回與圖形互證。"
   ],
   "studyReferences": [
-    "https://cap.rcpet.edu.tw/index.html",
-    "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://www.junyiacademy.org/topics/n-m7a",
+    "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+    "https://mathvideo.hle.com.tw/1A/"
   ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+    "authoringNote": "依官方課綱、G 聚合 KG 與三家出版社可取得的公開章節／索引資料，以自己的話獨立撰寫；未複製教科書文字、圖像、題目、答案或影音。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
-  "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「坐標幾何」並驗算結果。",
-    "scenario": "以「G：坐標幾何」為題，先定義未知量，再選擇表示法與檢查方式。",
-    "variables": [
-      {
-        "symbol": "x",
-        "meaning": "題目中待求或可變的量"
-      }
-    ],
-    "steps": [
-      {
-        "id": "step-1",
-        "prompt": "處理「坐標幾何」的第一步是什麼？",
-        "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
-        ],
-        "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
-        "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
-        ],
-        "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "完成後如何確認？",
-        "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
-        ],
-        "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
-      }
-    ]
-  },
-  "authoringStandard": "full-lesson-v1",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-01",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "theme",
+  "versionResearch": [
+    {"publisher": "nani", "edition": "均一教育平台類南一版數學公開架構索引", "sourceType": "public-web", "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；公開頁明示依南一版章節架構，供核對七年級坐標章節定位；未取得南一完整電子課本。", "reviewedAt": "2026-09-01", "findings": {"concepts": ["公開架構將平面直角坐標系列為七年級內容，支持由基準、坐標軸與有序數對建立位置語言。", "公開索引只能支持章節與概念範圍，不能推論南一完整教材的例題編排或全部教學活動。"], "representations": ["以方格平面、原點、水平／垂直軸及有序數對互相轉換。"], "examplesOrEvidence": ["本課另創展場配置與拖曳坐標任務，數字、路徑和問題均非來源教材內容。"], "misconceptions": ["交換數對次序、把軸上點誤判象限，或把距離的方向正負當成長度正負。"], "assessmentEmphasis": ["同時檢查讀點、兩點關係、距離與圖形解釋，而不是只背章節名詞。"]}, "licenseBoundary": "僅使用公開索引確認章節定位與概念範圍；不複製或改編南一教材文字、圖表、例題、習作、答案或影音。"},
+    {"publisher": "kanghsuan", "edition": "康軒國中數學公開影片 XML 與章節對照", "sourceType": "public-web", "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；公開數學資源索引，並以 textbook-mapping/math/kanghsuan-chapters.json 交叉定位 G-7-1；未取得完整課本。", "reviewedAt": "2026-09-01", "findings": {"concepts": ["公開對照把直角坐標平面連到 G-7-1，並可與後續兩點距離的坐標表徵銜接。", "索引資料不足以宣稱康軒正式課文的完整順序，因此融合時只採概念端點與表徵方向。"], "representations": ["以坐標平面、兩點差值、直線圖形與代數式互相核對。"], "examplesOrEvidence": ["本課用無障礙展場的入口、展品與坡道作自編幾何模型，未沿用出版社案例。"], "misconceptions": ["將垂直線的斜率不存在誤寫成零，或只憑線的外觀判斷平行與垂直。"], "assessmentEmphasis": ["要求由圖取點、由點算量，再以代回或估圖檢查結論。"]}, "licenseBoundary": "只研究公開索引和專案內章節對照；不下載、重製或改編康軒教材、圖片、題目、解答及影音內容。"},
+    {"publisher": "hanlin", "edition": "翰林國中數學公開影音章節索引", "sourceType": "public-web", "sourceLocator": "https://mathvideo.hle.com.tw/1A/；公開索引供核對七年級直角坐標平面與八年級兩點距離的章節定位；未取得完整翰林電子課本。", "reviewedAt": "2026-09-01", "findings": {"concepts": ["公開索引支持坐標軸、有序數對、兩點距離等內容在不同年級逐步展開。", "索引可確認主題相鄰概念，不能作為翰林教材文字、題目或答案的重製來源。"], "representations": ["將點、線段、直線方程式與交點視為同一坐標模型的不同表徵。"], "examplesOrEvidence": ["本課原創斜率比較與聯立交會例子，刻意用代回、圖形和拖曳操作形成三種證據。"], "misconceptions": ["把相同斜率一律說成同一直線，忽略截距；或把兩點距離的水平差、垂直差直接相加。"], "assessmentEmphasis": ["同時要求計算、圖形說明和條件例外，檢查能否把方法遷移到新配置。"]}, "licenseBoundary": "僅閱讀公開章節索引以定位概念進程；課文、圖形、數字、題目、回饋和互動皆為本課原創，不複製翰林受著作權保護內容。"}
+  ],
+  "fusionRecord": {
+    "commonCore": ["三家可取得的公開資料都把坐標平面與有序數對視為平面定位的核心語言。", "官方 G 主題可由點的位置延伸到兩點距離，再連結直線與聯立解的幾何意義。", "圖形、數對、差值與代數式需要互相轉換，並以條件和例外檢查推理。"],
+    "versionDifferences": ["南一證據是明示依南一版架構的公開索引；康軒以公開 XML 與章節 mapping 定位；翰林以公開影音索引定位，三者的細部活動順序與例題內容均無法由公開資料完整核驗。"],
+    "originalAdditions": ["以無障礙展場測量串起位置、距離、斜率與直線交會。", "設計拖曳點與直線的即時回饋，讓坐標、距離和斜率同步成為可觀察證據。", "把垂直線斜率不存在、相同斜率但不同截距等例外放進診斷任務，避免公式化記憶。"],
+    "llmSynthesisNote": "LLM 以官方 G 聚合節點及 G-7-1、G-8-1 的穩定 KG／課綱端點為範圍，再交叉閱讀南一類版、康軒公開 XML、翰林公開影音索引與專案內版本 mapping。由於三家完整電子課本未全部可取得，版本差異只在可定位證據範圍內陳述；正文採原創展場測量敘事，依基準定位、距離推導、斜率例外、直線交會與遷移應用重新組織。"
+  },
   "publisherResearch": [
-    {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
-      "subject": "math",
-      "chapterLocator": "G：坐標幾何；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開出版社資源用於核對「坐標幾何」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為theme節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
+    {"publisher": "nani", "edition": "南一版數學公開架構（類南一版索引）", "subject": "math", "chapterLocator": "七年級平面直角坐標系公開章節定位；對應 kg-math-content-g-7-1", "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a", "access": "public-open", "reviewedAt": "2026-09-01", "researchScope": ["teaching-sequence", "concept-progression", "assessment-pattern"], "outcome": "用公開章節定位核對坐標系、數對與象限的先後關係；完整教材不可取得，故不推論其全部例題。", "copyrightBoundary": "只採公開定位與概念範圍；正文、數字、活動、題目與回饋均為自編，不複製南一內容。"},
+    {"publisher": "kanghsuan", "edition": "康軒國中數學公開資源索引", "subject": "math", "chapterLocator": "2-1 直角坐標平面及坐標幾何相關公開資源；以專案 mapping 交叉對照 G 節點", "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml", "access": "public-open", "reviewedAt": "2026-09-01", "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"], "outcome": "核對坐標、兩點量與圖形表徵的公開定位，並將計算和圖形互證設為本課原創教法。", "copyrightBoundary": "不使用或重製康軒教材、影音、圖像、例題、答案；僅記錄可公開查核的索引證據。"},
+    {"publisher": "hanlin", "edition": "翰林國中數學公開影音索引", "subject": "math", "chapterLocator": "七年級直角坐標平面、八年級兩點距離之公開章節定位；對應 G 主題", "sourceUrl": "https://mathvideo.hle.com.tw/1A/", "access": "public-open", "reviewedAt": "2026-09-01", "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"], "outcome": "核對由坐標定位逐步連到距離與直線表徵的範圍；本課自行加入斜率、交會與拖曳操作。", "copyrightBoundary": "僅閱讀公開索引；不複製翰林教材、影音、圖表、題目、答案或教學文字。"}
   ],
   "teaching": {
     "body": [
-      {
-        "id": "hook",
-        "phase": "hook",
-        "heading": "從情境進入「坐標幾何」",
-        "body": "以「坐標幾何」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "explain",
-        "phase": "explain",
-        "heading": "建立「坐標幾何」的概念架構",
-        "body": "本單元依官方課綱所列的「坐標幾何」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
-      },
-      {
-        "id": "worked-example",
-        "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「G：坐標幾何」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "guided-practice",
-        "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「坐標幾何」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "transfer",
-        "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「坐標幾何」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "reflect",
-        "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「坐標幾何」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      }
+      {"id": "coordinate-address", "phase": "hook", "heading": "先讓地址能被別人重畫", "body": "想像展場工作人員只收到一張座標清單，卻沒有你手上的地圖：若你寫 P=(−3,2)，他必須知道原點、x 軸與 y 軸、正方向及刻度，才能先向左三格、再向上兩格找到 P。這裡最容易出現的錯誤是把 (−3,2) 當成 (2,−3)，或看到負號就直接說是第三象限而忘了第二個數是正的。請先在空白方格紙畫兩軸，標出 O、P、Q=(0,−4) 與 R=(5,0)，再用語句說明哪些點在象限、哪些點在軸上。當數對能讓同學不看你的原圖也重建位置，才算完成坐標地址，而不是只背一個名詞。"},
+      {"id": "distance-model", "phase": "explain", "heading": "距離公式從兩個差值長出來", "body": "兩點的直線距離可先拆成水平差與垂直差，因為這兩段互相垂直，正好形成直角三角形。以 A=(−2,1)、B=(4,5) 為例，先算 Δx=6、Δy=4，再由畢氏定理得到 AB=√(6²+4²)=2√13。這個順序比死背 d=√((x₂−x₁)²+(y₂−y₁)²) 更有保護力：交換 A、B 時兩個差同時變號，平方後距離不變；同 x 或同 y 時，三角形退化，距離分別只剩另一方向的絕對差。請把結果和圖形估量比較，斜邊必須不短於任一股，並確認長度不會因位移方向而變成負數。"},
+      {"id": "slope-limits", "phase": "worked-example", "heading": "用升降率讀一條線", "body": "在 C=(−1,−2) 與 D=(3,4) 之間，水平向右四單位、高度上升六單位，所以斜率是 6/4=3/2。請再用 D 到 C 的方向重算一次：水平差與垂直差都變成負數，商仍相同，說明斜率描述的是直線方向而非選點順序。接著比較三個邊界：y=7 是水平線，升降量為零，斜率是 0；x=3 是垂直線，水平差為零，斜率不存在；y=−2x+1 的斜率 −2，表示向右走時向下。把『不存在』誤寫成 0 會讓垂直線看起來像水平線，因此每次算斜率都先檢查分母，再解釋分子和分母各代表哪一種變化。"},
+      {"id": "line-intersection", "phase": "guided-practice", "heading": "把交點當成兩個條件的共同答案", "body": "練習 y=x+1 與 y=−x+5：先在同一坐標平面各取幾個點畫出兩條線，預測它們只會交一次；再把兩個 y 表達式相等，得到 x+1=−x+5，所以 x=2，代回得 y=3。最後把 (2,3) 代回兩式，兩邊都必須相等。若兩線斜率相同但截距不同，圖上不交、聯立無解；若兩式只是同一條線的不同寫法，則共同解不只一個。練習時不要只抄交點：請分別寫出『圖形證據』『代數步驟』『代回檢查』，並診斷把 (2,3) 寫成 (3,2) 會在哪一個檢查立刻失敗。"},
+      {"id": "drag-investigation", "phase": "transfer", "heading": "把一條可調整的線帶到新配置", "body": "將展場入口固定在 O，拖曳點 A 與 B 改變一條路徑；畫面同步顯示兩點的坐標、水平差、垂直差、距離與斜率。先預測只把 B 向右移兩格時哪些量會改變，再實際操作並記錄證據；若把 B 拖到 A 的正上方，斜率欄應轉為『不存在』，距離仍能由垂直差得到。接著把另一條基準線拖到與第一條同斜率但不同位置，觀察它們保持平行；調到斜率乘積為 −1 時，檢查是否形成直角。最後換成不同刻度的地圖，說明為何同一數對不能直接拿來比較實際公尺數。操作的重點是一次只改一項條件，讓圖形變化能對應到可追蹤的數值證據。"},
+      {"id": "model-audit", "phase": "reflect", "heading": "用四層證據交回模型", "body": "完成坐標幾何任務後，依序核對四層證據：第一層是基準，確認原點、方向、單位與數對順序；第二層是量，確認水平差、垂直差、距離和斜率的定義與例外；第三層是關係，檢查同 x、同 y、平行、垂直或交點的條件；第四層是回代與重畫，讓另一位同學只看方程式或數對也能得到同一結果。若答案不合，先問是坐標系基準換了、差值次序錯了、分母為零未處理，還是把圖形直覺當成證明。你也要標註模型限制：坐標圖是理想化表示，實際測量可能受比例、四捨五入與讀圖誤差影響。能說清楚結論成立的條件及不成立的邊界，才是完整的幾何推理。"}
     ],
-    "summary": [
-      "先用自己的話界定「坐標幾何」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
-    ],
+    "summary": ["坐標地址必須連同原點、方向與刻度一起讀，並保留數對順序。", "先取水平差與垂直差，再用直角三角形理解兩點距離。", "斜率是垂直變化除以水平變化；水平線為零，垂直線不存在斜率。", "兩直線的交點是聯立方程式的共同解，需用圖形、代數與代回互證。"],
     "exitCheck": [
-      {
-        "prompt": "請用自己的話說明「坐標幾何」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
-      },
-      {
-        "prompt": "在「坐標幾何」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
-      },
-      {
-        "prompt": "若題目的條件改變，如何調整處理「坐標幾何」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
-      }
+      {"prompt": "說明 P=(−3,2) 與 Q=(2,−3) 為何不是同一點，並判斷各自象限。", "expectedEvidence": "能指出數對順序控制水平與垂直位移，並正確判定 P 在第二象限、Q 在第四象限。"},
+      {"prompt": "A=(−2,1)、B=(4,5) 的水平差、垂直差與距離如何得到？", "expectedEvidence": "能寫出差值 6、4，利用畢氏定理得到 2√13，並說明距離取非負值。"},
+      {"prompt": "為何 y=7 的斜率是 0，而 x=3 的斜率不存在？", "expectedEvidence": "能以升降量與水平差的定義說明前者分子為零、後者分母為零，不能把兩者混為一談。"}
+    ]
+  },
+  "interactive": {
+    "type": "guided-choice",
+    "goal": "拖曳坐標點與直線，讓即時坐標、距離、斜率和交點條件互相對照。",
+    "scenario": "在展場坐標測量台拖曳 A、B 兩點及一條基準直線；每次只改變一項條件，觀察坐標、水平／垂直差、距離、斜率與平行垂直標籤即時更新。",
+    "variables": [{"symbol": "x", "meaning": "可拖曳點的水平坐標與水平差"}, {"symbol": "y", "meaning": "可拖曳點的垂直坐標與垂直差"}],
+    "steps": [
+      {"id": "step-1", "prompt": "拖曳 B 只向右兩格，預測哪些讀值會先改變？", "options": ["B 的 x、水平差、距離與可能的斜率會更新，B 的 y 不變", "只更新 B 的 y，其他讀值固定"], "answer": "A", "feedback": "水平拖曳改變 x 與水平差；距離和斜率也可能跟著重新計算，y 不應改變。"},
+      {"id": "step-2", "prompt": "把 B 拖到 A 的正上方時，斜率面板應顯示什麼？", "options": ["斜率不存在，距離仍可用垂直差求得", "斜率等於 0，距離必定是 0"], "answer": "A", "feedback": "兩點 x 相同使斜率分母為零；兩點仍可有不同 y，因此距離不必為零。"},
+      {"id": "step-3", "prompt": "拖曳第二條線使斜率相同但位置不同，應如何判讀？", "options": ["兩線平行且不相交；若斜率乘積為 −1 則改判互相垂直", "只要斜率相同就一定是同一條線"], "answer": "A", "feedback": "相同斜率還要比較位置或截距；不同位置是平行線，斜率乘積 −1 是垂直條件。"}
     ]
   },
   "simulation": {
@@ -177,13 +84,19 @@
     "engine": "concept-explorer",
     "mode": "explorer",
     "model": "general",
-    "goal": "用可檢查的步驟處理「坐標幾何」並驗算結果。",
-    "mission": "以「G：坐標幾何」為題，先定義未知量，再選擇表示法與檢查方式。",
-    "sourceRefs": [
-      "https://cap.rcpet.edu.tw/index.html",
-      "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/",
-      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    "goal": "拖曳坐標點與直線，讓即時坐標、距離、斜率和交點條件互相對照。",
+    "mission": "在展場坐標測量台拖曳 A、B 兩點及一條基準直線；每次只改變一項條件，觀察坐標、水平／垂直差、距離、斜率與平行垂直標籤即時更新。",
+    "sourceRefs": ["https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf", "https://www.junyiacademy.org/topics/n-m7a", "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml", "https://mathvideo.hle.com.tw/1A/"],
+    "learningDesign": {
+      "type": "parameter-investigation",
+      "objective": "透過一次只改變一項坐標或直線條件，建立圖形變化與距離、斜率、平行垂直判斷之間的可檢查關係。",
+      "predictionPrompt": "拖曳 B 向右兩格但保持 y 不變前，請預測 B 的坐標、水平差、距離與斜率哪些會改變，並寫出理由。",
+      "evidencePrompt": "操作後請記錄畫面上的坐標、差值、距離和斜率；用至少兩項數值證據說明預測是否成立，並指出垂直線時斜率的例外。",
+      "steps": [
+        {"id": "step-1", "action": "固定 A，拖曳 B 到指定坐標並讀取兩點位置。", "equation": "A=(x₁,y₁), B=(x₂,y₂)", "reason": "先把圖上的點轉成有序數對，才能明確知道哪個量被改動。", "feedback": "若水平拖曳卻連 y 一起改變，先檢查操作是否一次改了兩項條件。"},
+        {"id": "step-2", "action": "用水平差與垂直差計算距離，和面板即時值比較。", "equation": "d=√((x₂−x₁)²+(y₂−y₁)²)", "reason": "距離來自兩個互相垂直的差值，平方可消除位移方向對長度的影響。", "feedback": "若結果為負或短於任一股，檢查差值、平方與開根號步驟。"},
+        {"id": "step-3", "action": "拖曳第二條線，調整斜率並觀察平行、垂直與交點標籤。", "equation": "m=(y₂−y₁)/(x₂−x₁); m₁m₂=−1", "reason": "斜率比較方向；相同斜率還須比較位置，且垂直線的分母為零不能硬算。", "feedback": "看到 x 差為零時標記斜率不存在；不要把它當成水平線的 0。"}
+      ]
+    }
   }
 }

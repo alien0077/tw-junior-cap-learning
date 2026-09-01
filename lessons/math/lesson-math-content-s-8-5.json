@@ -9,26 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "運用 SSS、SAS、ASA 與 RHS 判定三角形全等。",
+    "summary": "三角形全等判定的核心，是用最少而充分的邊角資料鎖定唯一形狀與大小。本單元以測量橋架為情境，從 SSS、SAS、ASA、AAS 與 RHS 的條件配置出發，理解為何某些資料足夠、某些看似很多的資料仍不足。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "運用 SSS、SAS、ASA 與 RHS 判定三角形全等。 能指出對應元素並檢查判定條件。"
+        "heading": "從測量資料鎖定一個三角形",
+        "body": "三邊分別相等可用 SSS；兩邊及夾角相等可用 SAS；一邊及兩端角相等可用 ASA；兩角與一邊相等可用 AAS。直角三角形還可用斜邊和一股相等的 RHS。每個判定都要求資料位置與對應關係正確。"
       },
       {
-        "heading": "學習流程",
-        "body": "先對應頂點與邊，再判斷剛體變換或三角形全等條件，最後核對條件是否充分。"
+        "heading": "先畫已知，再檢查充分性",
+        "body": "先將兩三角形的對應頂點用箭頭配好，再把已知邊角標在圖上；接著問是否符合某一完整判定。若只有 AAA 或 SSA，不能直接判定全等，應找反例或指出還缺的資料。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "把相似誤當全等、對應順序錯置，或只憑一個角判定三角形全等。"
+        "heading": "夾角與直角條件不能省略",
+        "body": "SAS 的角必須夾在兩已知邊中間；RHS 的 H 是斜邊、S 是一股，不能拿任意兩邊代替。SSA 一般不足，AAA 只給相似。寫出判定名稱後，還要把對應頂點順序和每項資料逐一對照。"
       }
     ]
   },
   "studyHighlights": [
-    "建立對應關係。",
-    "選用充分的全等條件。",
-    "檢查對應順序與結論。"
+    "用箭頭配對頂點、邊與角。",
+    "辨認 SSS、SAS、ASA、AAS 與 RHS 的必要位置。",
+    "用反例排除 AAA、SSA 等不足條件。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
@@ -41,7 +41,103 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上三角形全等公開章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/m-g8a-s03；僅核對三角形全等判定章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引支持以對應邊角資料判斷三角形全等。",
+          "判定條件需充分，不能只依外觀或不足資料。"
+        ],
+        "representations": [
+          "以三角形標記、剛體移動與 SSS、SAS、ASA、AAS、RHS 符號表示。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編橋架、RHS 與 SSA 反例。"
+        ],
+        "misconceptions": [
+          "把 AAA 或 SSA 誤當全等判定，或忽略夾角位置。"
+        ],
+        "assessmentEmphasis": [
+          "要求配對頂點、辨識條件並說明充分性。"
+        ]
+      },
+      "licenseBoundary": "只研究公開索引，不複製或改寫南一教材、圖像、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學八上官方影音 XML",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；核對全等判定與三角形資源分類。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開資源支持由已知邊角選擇充分的全等判定。",
+          "直角三角形的斜邊與一股提供特殊判定情境。"
+        ],
+        "representations": [
+          "以量測、三角形記號、對應表與判定縮寫互相驗證。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編兩片橋架與斜邊 10、一股 6 的 RHS 案例。"
+        ],
+        "misconceptions": [
+          "將 R、H、S 的位置混淆，或將勾股計算代替全等判定。"
+        ],
+        "assessmentEmphasis": [
+          "檢查對應順序、夾角、直角與判定充分性。"
+        ]
+      },
+      "licenseBoundary": "只使用官方 XML 的章節與資源分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網 2A 章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/2A/；核對三角形全等與幾何判定公開定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引將三角形全等連到對應元素與幾何推理。",
+          "充分條件可推出未標示的對應邊角，但前提必須先建立。"
+        ],
+        "representations": [
+          "以翻面、對應頂點、邊角標記與反例表示全等判斷。"
+        ],
+        "examplesOrEvidence": [
+          "本課加入鋼板孔位與 SSA 不唯一配置的原創活動。"
+        ],
+        "misconceptions": [
+          "把全等符號順序任意書寫，或把相似直接升級成全等。"
+        ],
+        "assessmentEmphasis": [
+          "要求由資料寫出全等順序並延伸求未知量。"
+        ]
+      },
+      "licenseBoundary": "只研究公開章節索引，不複製翰林教材、影音、題庫、答案或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開資料都以對應邊角與剛體重合建立三角形全等。",
+      "SSS、SAS、ASA、AAS 及直角三角形特殊判定需檢查資料位置與充分性。",
+      "可取得資料主要為公開章節與資源索引，不能推稱取得出版社完整正文。"
+    ],
+    "versionDifferences": [
+      "南一索引偏向全等判定定位，康軒 XML 可核對直角三角形與資源節奏，翰林索引連到對應與推理；本課以橋架、RHS 與 SSA 反例統整。"
+    ],
+    "originalAdditions": [
+      "以橋架測量說明充分資料如何鎖定零件。",
+      "用 RHS 強調斜邊、一股與直角的特定配置。",
+      "用 SSA 兩種可能配置和對應順序活動診斷錯誤。"
+    ],
+    "llmSynthesisNote": "LLM 依官方課綱與 KG 界定三角形全等判定，再比較南一、康軒、翰林公開研究，以橋架、RHS、SSA 反例和翻面活動重新撰寫；全文為原創，Terra 第二輪尚未執行，故維持 draft。"
+  },
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,6 +155,57 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-8-5：三角形的全等性質」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上三角形全等公開章節索引",
+      "subject": "math",
+      "chapterLocator": "S-8-5 三角形的全等性質",
+      "sourceUrl": "https://www.junyiacademy.org/topics/m-g8a-s03",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對全等判定範圍；本課以橋架、充分性與反例獨立重寫。",
+      "copyrightBoundary": "只研究公開章節定位，不複製南一教材、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒八上官方數學影音 XML",
+      "subject": "math",
+      "chapterLocator": "八上三角形全等與判定",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "官方 XML 核對全等判定與直角三角形資源分類；本課轉化為 RHS 與條件檢查。",
+      "copyrightBoundary": "只研究公開 XML 分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林 2A 公開數學影音索引",
+      "subject": "math",
+      "chapterLocator": "2A 三角形全等性質",
+      "sourceUrl": "https://mathvideo.hle.com.tw/2A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對三角形全等與對應脈絡；本課正文、例題、互動與回饋均獨立撰寫。",
+      "copyrightBoundary": "只研究公開索引，不複製翰林教材、影音、題庫或答案。"
     }
   ],
   "teaching": {
@@ -66,38 +213,38 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-8-5：三角形的全等性質」",
-        "body": "先讀懂「S-8-5：三角形的全等性質」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "橋架的三根量測繩",
+        "body": "工程師要把兩片三角形橋架做成可互換零件，不能只說輪廓相似。若三根邊長都量出相同，或兩邊和夾角都固定，便可能完全鎖定形狀；先問資料是否足以讓三角形唯一，再決定使用哪個判定。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「三角形的全等性質」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "五種判定的資料配置",
+        "body": "SSS 是三邊；SAS 是兩邊及夾角；ASA 是一邊及兩端角；AAS 是兩角及非夾邊；RHS 是直角三角形的斜邊與一股。判定名稱不是縮寫遊戲，字母代表的元素和位置都要在圖上圈出來。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-8-5：三角形的全等性質」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "RHS 讓直角三角形快速對上",
+        "body": "兩個直角三角形的斜邊都為 10，一股都為 6。雖然直角已知，兩組資料仍需對應到斜邊和同一類股，才能使用 RHS 判定全等；另一股可由判定後推出相等，而不是先把勾股計算當作全等證明。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "用反例拆穿 SSA",
+        "body": "已知兩邊與一個非夾角時，將其中一邊繞著已知端點旋轉，可能得到兩個不同的三角形，這就是 SSA 的不唯一問題。請畫出兩種配置並比較，理解『看起來資料很多』不等於已經足夠判定全等。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-8-5：三角形的全等性質」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "檢查吊橋零件的對應順序",
+        "body": "將兩片三角形鋼板翻面後比較孔位，先配對三個孔點，再檢查邊角條件。若圖形可由翻面重合，朝向不同不影響全等；若只知道三角都相等，還要補一項邊長才能排除不同尺寸的相似板。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-8-5：三角形的全等性質」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "把判定寫成可審核的鏈條",
+        "body": "最後依序寫：對應頂點、已知元素、判定名稱、可推出的對應邊角。若選 SAS，圈出夾角；若選 RHS，圈出直角、斜邊與一股。再問是否其實只有 AAA 或 SSA，避免把不足條件包裝成證明。"
       }
     ],
     "summary": [
@@ -121,12 +268,12 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-8-5：三角形的全等性質」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-8-5：三角形的全等性質」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "配對三角形的邊角資料，選出 SSS、SAS、ASA、AAS 或 RHS 的充分判定。",
+    "scenario": "你是橋架檢驗員，要判斷兩片三角形零件能否直接互換。",
     "variables": [
       {
         "symbol": "x",
@@ -136,36 +283,36 @@
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "選擇三角形全等判定前，第一步應做什麼？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "配對頂點並標出已知邊角的位置",
+          "先背一個判定縮寫再套用",
+          "只比較兩個圖形的面積"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "對應順序與元素位置正確，才能判斷條件是否符合某個全等判定。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "兩邊及其夾角分別相等，應使用哪個判定？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "SAS",
+          "AAA",
+          "SSA"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "SAS 的角必須位於兩已知邊之間，位置不能任意交換。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "若兩個直角三角形的斜邊與一股分別相等，使用哪個判定？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "RHS",
+          "AAA",
+          "只憑一個直角"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "RHS 使用直角、斜邊與一股的特定資料，不能用任意兩邊替代。"
       }
     ]
   },
@@ -175,13 +322,42 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-8-5：三角形的全等性質」的表示、推理與驗算。",
-    "mission": "請依序分析「S-8-5：三角形的全等性質」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "配對三角形的邊角資料，選出 SSS、SAS、ASA、AAS 或 RHS 的充分判定。",
+    "mission": "你是橋架檢驗員，要判斷兩片三角形零件能否直接互換。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    ],
+    "learningDesign": {
+      "type": "representation-match",
+      "objective": "用對應邊角與全等判定條件建立三角形證明，並避免把相似或局部相等誤當成全等。",
+      "predictionPrompt": "兩三角形若有兩邊及其夾角相等，你預測能否唯一決定第三邊與形狀？",
+      "evidencePrompt": "請建立對應表，標示判定條件，並用重疊或量測檢查結論。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "先按頂點順序建立兩三角形對應",
+          "equation": "△ABC ↔ △DEF：AB↔DE、∠B↔∠E",
+          "reason": "對應順序決定哪些邊角相等，順序錯誤會使判定失效。",
+          "feedback": "沿著三角形周界逐一配對，不要只按圖形左右位置。"
+        },
+        {
+          "id": "step-2",
+          "action": "選擇符合條件的全等判定方法",
+          "equation": "SAS：兩邊及其夾角相等 → 全等",
+          "reason": "夾角位置是關鍵，兩邊與非夾角的資訊不能直接套用 SAS。",
+          "feedback": "先確認角是否夾在已知兩邊之間，再選判定條件。"
+        },
+        {
+          "id": "step-3",
+          "action": "由全等對應推出未知量相等",
+          "equation": "△ABC≅△DEF → AC＝DF、∠C＝∠F",
+          "reason": "全等三角形的對應邊與對應角分別相等，推論要依對應表。",
+          "feedback": "不要把非對應的邊角直接配在一起，回看頂點順序。"
+        }
+      ]
+    }
   }
 }

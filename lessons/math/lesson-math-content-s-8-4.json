@@ -9,26 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "辨認全等圖形並運用平移、旋轉與鏡射判斷對應關係。",
+    "summary": "全等圖形可以透過平移、旋轉或翻面彼此重合，表示對應邊長與對應角度都相等。本單元從裁切紙片與拼圖出發，學會建立對應頂點順序，分辨全等與相似，並用 SSS、SAS、ASA、AAS 等充分條件判斷三角形全等。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "辨認全等圖形並運用平移、旋轉與鏡射判斷對應關係。 能指出對應元素並檢查判定條件。"
+        "heading": "重合後仍是同一個尺寸",
+        "body": "平移、旋轉與鏡射都不會改變長度與角度；若一個圖形經剛體移動後能完全覆蓋另一個圖形，兩者全等。全等的重點是對應關係，不是兩圖在紙上的朝向相同。"
       },
       {
-        "heading": "學習流程",
-        "body": "先對應頂點與邊，再判斷剛體變換或三角形全等條件，最後核對條件是否充分。"
+        "heading": "先配對，再選判定條件",
+        "body": "先找相同位置的頂點並寫出對應順序，再整理已知的邊與角。三邊相等用 SSS；兩邊及夾角相等用 SAS；一邊及兩端角相等用 ASA；兩角及一邊相等用 AAS。只知道三角形三角相等只能判定相似，不能判定全等。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "把相似誤當全等、對應順序錯置，或只憑一個角判定三角形全等。"
+        "heading": "相等資料必須足以鎖定形狀",
+        "body": "一個角或一條邊相等都不足以鎖定三角形；AAA 只保證形狀相同、大小可能不同。SAS 中的角必須是兩已知邊的夾角，若角不在中間就不能套用 SAS。寫全等符號時，頂點順序也必須讓每一對對應點位置一致。"
       }
     ]
   },
   "studyHighlights": [
-    "建立對應關係。",
-    "選用充分的全等條件。",
-    "檢查對應順序與結論。"
+    "用剛體移動或頂點位置建立一一對應。",
+    "辨認 SSS、SAS、ASA、AAS 的充分條件。",
+    "分清全等與相似，並檢查符號順序。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
@@ -41,7 +41,103 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上全等圖形公開章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/m-g8a-s03；僅核對全等圖形與三角形判定章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引支持以剛體移動與對應元素理解全等。",
+          "三角形全等判定需有足以固定大小與形狀的條件。"
+        ],
+        "representations": [
+          "以平移、旋轉、鏡射、對應頂點及邊角標示表示全等。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編裁切護片、SAS 與 AAA 反例。"
+        ],
+        "misconceptions": [
+          "把相似誤當全等，或忽略 SAS 的夾角位置。"
+        ],
+        "assessmentEmphasis": [
+          "要求建立對應順序並說明判定條件為何充分。"
+        ]
+      },
+      "licenseBoundary": "只研究公開索引，不複製或改寫南一教材、圖像、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學八上官方影音 XML",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；核對全等與三角形幾何資源分類。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開資源支持以對應邊角與剛體變換判斷圖形全等。",
+          "SSS、SAS、ASA、AAS 的資料配置必須符合判定條件。"
+        ],
+        "representations": [
+          "以裁切圖形、三角形標記、全等符號與推理表互相驗證。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編兩片護板和不同大小但相似的 3-4-5、6-8-10 三角形。"
+        ],
+        "misconceptions": [
+          "只憑一個角或 AAA 判定全等，或把對應頂點順序寫反。"
+        ],
+        "assessmentEmphasis": [
+          "檢查條件充分性、夾角位置及對應順序。"
+        ]
+      },
+      "licenseBoundary": "只使用官方 XML 的章節與資源分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網 2A 章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/2A/；核對全等圖形與三角形判定公開定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引將全等連到三角形對應、幾何作圖與性質推理。",
+          "全等結論可推出對應邊角相等，但前提條件不能不足。"
+        ],
+        "representations": [
+          "以剛體移動、對應符號、邊角條件與反例表示。"
+        ],
+        "examplesOrEvidence": [
+          "本課加入測量不足的玻璃板設計，讓學習者找出缺少的資料。"
+        ],
+        "misconceptions": [
+          "以數字相等但位置不對的資料套用判定，或忽略鏡射仍可全等。"
+        ],
+        "assessmentEmphasis": [
+          "要求由條件寫出全等順序，並將結論延伸到未知量。"
+        ]
+      },
+      "licenseBoundary": "只研究公開章節索引，不複製翰林教材、影音、題庫、答案或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開資料都將全等建立在剛體變換與對應邊角關係上。",
+      "判定條件充分性、頂點順序與全等後可推出的對應量是共同核心。",
+      "可取得資料主要為公開章節與資源索引，不能推稱取得出版社完整正文。"
+    ],
+    "versionDifferences": [
+      "南一索引偏向全等與對應概念，康軒 XML 可核對判定與資源節奏，翰林索引連到幾何推理；本課以護板、SAS 和 AAA 反例統整。"
+    ],
+    "originalAdditions": [
+      "用可翻面的裁切護板說明鏡射也屬全等。",
+      "以 3-4-5 與 6-8-10 反例區分 AAA 與全等。",
+      "互動中要求圈出夾角、配對頂點及找出不足條件。"
+    ],
+    "llmSynthesisNote": "LLM 依官方課綱與 KG 界定全等圖形、對應與三角形判定，再比較南一、康軒、翰林公開研究，以裁切、測量與反例重新撰寫；全文為原創，Terra 第二輪尚未執行，故維持 draft。"
+  },
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,6 +155,57 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-8-4：全等圖形」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上全等圖形公開章節索引",
+      "subject": "math",
+      "chapterLocator": "S-8-4 全等圖形",
+      "sourceUrl": "https://www.junyiacademy.org/topics/m-g8a-s03",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對全等與判定範圍；本課以剛體移動、對應與反例獨立重寫。",
+      "copyrightBoundary": "只研究公開章節定位，不複製南一教材、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒八上官方數學影音 XML",
+      "subject": "math",
+      "chapterLocator": "八上全等與三角形判定",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "官方 XML 核對全等判定資源分類；本課轉化為護板、AAA 反例與條件檢查。",
+      "copyrightBoundary": "只研究公開 XML 分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林 2A 公開數學影音索引",
+      "subject": "math",
+      "chapterLocator": "2A 全等圖形與三角形",
+      "sourceUrl": "https://mathvideo.hle.com.tw/2A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對全等與對應脈絡；本課正文、例題、互動與回饋均獨立撰寫。",
+      "copyrightBoundary": "只研究公開索引，不複製翰林教材、影音、題庫或答案。"
     }
   ],
   "teaching": {
@@ -66,38 +213,38 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-8-4：全等圖形」",
-        "body": "先讀懂「S-8-4：全等圖形」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "兩片裁切紙板能否互換？",
+        "body": "工匠裁出兩片三角形護片，想知道它們能否不切不剪就完全重合。把其中一片平移、旋轉或翻面，若每個邊與角都對上，便是全等；若只能放大縮小後重合，則是相似而非全等。這個問題的核心是尺寸與對應，不是圖形朝向。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「全等圖形」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "把頂點順序寫成對應地圖",
+        "body": "若 △ABC 與 △DEF 全等，寫成 △ABC≅△DEF 就表示 A↔D、B↔E、C↔F；因此 AB 對應 DE，∠B 對應 ∠E。順序錯置會讓正確的長度被配到錯的邊，即使數字都相等，結論仍可能錯。先畫箭頭配對，再寫符號。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-8-4：全等圖形」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "用 SAS 鎖定兩個三角形",
+        "body": "若 △ABC 與 △DEF 中，AB＝DE＝6、BC＝EF＝4，且夾角 ∠B＝∠E＝50°，兩邊和夾角的對應位置完全相同，因此依 SAS 得 △ABC≅△DEF。若 50° 改成不在兩已知邊之間的角，就不能直接稱為 SAS；條件的位置和數值一樣重要。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "判斷 AAA 為何不夠",
+        "body": "兩個三角形若三角都分別相等，形狀會相同，但其中一個可能是另一個的兩倍大。請用邊長 3、4、5 與 6、8、10 的三角形比較：它們三角相同卻不全等。這個反例能提醒你，判定全等必須有足以固定大小的邊長資訊。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-8-4：全等圖形」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "從測量不足找出還缺什麼",
+        "body": "設計兩塊三角形玻璃時，已知兩邊和一個非夾角，可能仍有兩種不同形狀，不能急著判全等。請在圖上標出已知邊與角，問它們是否符合 SSS、SAS、ASA 或 AAS；若不符合，就說明還需要哪一項資料才能鎖定圖形。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-8-4：全等圖形」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "從條件走回對應結論",
+        "body": "最後完成一張判定表：列出對應頂點、已知邊角、所用判定與可推出的對應量。若只能寫『看起來一樣』，就回到配對箭頭；若選了 SAS，則圈出夾角。只有條件充分且順序一致，才能把全等結論延伸到未知邊或角。"
       }
     ],
     "summary": [
@@ -121,12 +268,12 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-8-4：全等圖形」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-8-4：全等圖形」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "配對三角形頂點與邊角資料，選出充分的全等判定並排除相似陷阱。",
+    "scenario": "你是玻璃護板檢驗員，要判斷兩片三角形是否能完全互換。",
     "variables": [
       {
         "symbol": "x",
@@ -136,36 +283,36 @@
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "寫出 △ABC 與 △DEF 的對應順序前，應先做什麼？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "找出相同位置的對應頂點與邊",
+          "先把字母依英文字母順序排列",
+          "只比較兩圖的面積"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "對應順序決定全等符號中每一對邊與角，不能只看字母外觀。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "兩邊及其夾角分別相等，應使用哪個判定？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "SAS",
+          "AAA",
+          "只知道一角相等即可全等"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "SAS 要求兩邊及其夾角相等；夾角位置不能換成任意角。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "三角形三角分別相等時，最穩妥的結論是什麼？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "只能確定相似，還不能確定全等",
+          "一定全等且面積相等",
+          "一定互相垂直"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "AAA 固定形狀但不固定大小；還需要足以鎖定尺寸的邊長條件。"
       }
     ]
   },
@@ -175,13 +322,42 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-8-4：全等圖形」的表示、推理與驗算。",
-    "mission": "請依序分析「S-8-4：全等圖形」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "配對三角形頂點與邊角資料，選出充分的全等判定並排除相似陷阱。",
+    "mission": "你是玻璃護板檢驗員，要判斷兩片三角形是否能完全互換。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    ],
+    "learningDesign": {
+      "type": "representation-match",
+      "objective": "用平移、旋轉、翻轉與對應點判斷全等，區分形狀大小相同與僅相似的圖形。",
+      "predictionPrompt": "兩個三角形邊長組合完全相同但方向相反，你預測它們仍可全等嗎？請先考慮剛體變換。",
+      "evidencePrompt": "請建立頂點對應表，檢查對應邊與角，並說明是否需要翻轉才能重合。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "先建立兩圖形的頂點與邊對應",
+          "equation": "△ABC ↔ △DEF：A↔D、B↔E、C↔F",
+          "reason": "對應順序決定哪些邊角能比較，不能只按圖上左右位置配對。",
+          "feedback": "沿著邊的順序讀頂點，避免把相鄰關係配錯。"
+        },
+        {
+          "id": "step-2",
+          "action": "用剛體變換想像兩圖形重合",
+          "equation": "平移、旋轉或翻轉不改變長度與角度",
+          "reason": "能以剛體變換完全重合，才是全等；放大縮小會改變長度。",
+          "feedback": "若需要拉伸或改變比例才能重合，這不是全等變換。"
+        },
+        {
+          "id": "step-3",
+          "action": "用對應量相等完成全等證據",
+          "equation": "AB＝DE、BC＝EF、∠B＝∠E 等對應量相等",
+          "reason": "全等的關鍵是所有對應邊角一致，最後要能由對應表追溯結論。",
+          "feedback": "只證明一條邊相等不足以判定一般圖形全等，請列出完整判準。"
+        }
+      ]
+    }
   }
 }

@@ -41,7 +41,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,45 +59,53 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-9-9：三角形的內心」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
+    },
+    {"publisher":"nani","edition":"南一版九年級三角形內心公開章節定位","subject":"math","chapterLocator":"S-9-9：三角形的內心","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","assessment-pattern"],"outcome":"公開定位支持以角平分線交點建立內心，再以到三邊等距和內切圓驗證；本課以花圃水池與面積模型重新設計。","copyrightBoundary":"只採公開章節範圍，不複製南一教材文字、圖表、題目、答案或影音。"},
+    {"publisher":"kanghsuan","edition":"康軒國中數學公開教材（三角形內心定位）","subject":"math","chapterLocator":"3-2：三角形的外心、內心與重心，對應 S-9-9","sourceUrl":"https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","assessment-pattern"],"outcome":"公開索引核對角平分線、垂距與內切圓的概念關係；本課以角度調整、垂距和半徑同步驗證。","copyrightBoundary":"XML 僅作定位研究，不重製康軒教材、影音、題目或解答。"}
   ],
+  "versionResearch": [
+    {"publisher":"kanghsuan","edition":"康軒國中數學公開教材（三角形內心研究）","sourceType":"public-web","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml","reviewedAt":"2026-08-30","findings":{"concepts":["三角形內心是三內角平分線的交點，也是內切圓圓心","內心到三邊的距離相等，這個距離是內切圓半徑"],"representations":["以角平分線、垂距與內切圓表示內心"],"examplesOrEvidence":["由角平分線交點向三邊作垂線比較三個距離"],"misconceptions":["把內心誤認為外心的中垂線交點，混淆角平分線與邊的中垂線兩種構造"],"assessmentEmphasis":["能以角平分與等距性質完整說明內心如何形成並與內切圓連結"]},"licenseBoundary":"只研究公開概念與教學方向，本課文字、例題、活動、提示與答案均獨立撰寫。"},
+    {"publisher":"nani","edition":"均一國中數學公開主題頁（三角形內心操作研究）","sourceType":"public-web","sourceLocator":"https://www.junyiacademy.org/topics/n-m9a","reviewedAt":"2026-08-30","findings":{"concepts":["以兩條角平分線逐步定位內心與內切圓","將內心到三邊等距轉成面積與半徑問題"],"representations":["用可移動三角形、角平分線與圓觀察內心位置"],"examplesOrEvidence":["改變三角形形狀仍檢查圓與三邊相切"],"misconceptions":["以內心是否位於三角形內部作為唯一判準"],"assessmentEmphasis":["能透過構造、垂距與內切圓驗證內心"]},"licenseBoundary":"不複製公開文字、題目、影片或答案，僅將概念轉為本課原創活動。"},
+    {"publisher":"hanlin","edition":"翰林國中數學公開影音網（三角形內心章節研究）","sourceType":"public-web","sourceLocator":"https://mathvideo.hle.com.tw/1A/","reviewedAt":"2026-08-30","findings":{"concepts":["由角平分線交點、到三邊等距與內切圓建立內心性質","用面積分割與共同高連結內心到邊的距離"],"representations":["圖形標記、角度平分、垂直距離與面積式互相驗證"],"examplesOrEvidence":["以三個小三角形面積和推出內切圓半徑，並檢查三邊相切條件"],"misconceptions":["把內切圓半徑與外接圓半徑混淆，未先辨認圓心的構造線"],"assessmentEmphasis":["能完成角平分構造、等距證明與半徑計算"]},"licenseBoundary":"僅研究公開章節的概念層次，本課正文、圖示、例題、互動與答案均為原創。"}
+  ],
+  "fusionRecord":{"commonCore":["內心是三角形角平分線的共同交點，且到三邊距離相等","內切圓與三邊相切，圓心到邊的垂距就是內切圓半徑","內心、外心的構造線與用途不同，必須依角平分或中垂線辨識"],"versionDifferences":["康軒著重角平分、等距與內切圓定義如何互相連結","均一著重逐步構造、形狀變化與操作回饋","翰林著重面積分割、垂距與半徑計算"],"originalAdditions":["設計內心與三邊垂距的移動觀察並記錄等距證據","加入內心與外心構造線混淆的反例比較，要求說明兩者判斷依據","以三角形花圃內設圓形水池遷移內心概念"],"llmSynthesisNote":"LLM 依官方課綱、KG 與三版本公開研究融合後，獨立重寫三角形內心的構造、等距性質、內切圓與應用，未複製出版社內容，並為本單元重新設計例證、反例、互動活動與位置檢核。"},
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-9-9：三角形的內心」",
-        "body": "先讀懂「S-9-9：三角形的內心」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "一個圓要同時貼住三邊，圓心該在哪裡？",
+        "body": "花圃中央要放一座圓形水池，池邊必須同時貼住三角形花圃的三條邊，才不會有一側留下難以修剪的尖角。水池圓心不能靠目測，也不是三個頂點的平均；它必須到三邊的最短距離相等。先觀察一個角：角平分線上的點到角的兩邊距離相等，所以同時落在兩條內角平分線上的點，可能成為三邊等距的中心。這個中心叫內心，接著要用第三條角平分線和垂距回查，才能把平衡的直觀變成幾何證據。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「三角形的內心」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "角平分線把等距條件集中起來",
+        "body": "角平分線上的每一點，到該角兩邊的垂直距離相等。作出三角形 A、B 兩角的內角平分線，交點記為 I；I 到 AB、AC 等距，也到 AB、BC 等距，因此三個距離相等，第三個頂角的內角平分線也會通過 I。從 I 向任一邊作垂線，垂距就是內切圓半徑；以 I 為圓心畫圓，便同時與三邊相切。內心由角平分線決定，外心由邊的垂直平分線決定，重心由中線決定，不能因三個名稱都叫三角形的心就交換構造線。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-9-9：三角形的內心」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "自編例題：由面積求內切圓半徑",
+        "body": "自編例題取一個邊長 5、12、13 公分的直角三角形，面積為 30 平方公分。設內心到三邊的共同垂距為 r，從內心向三邊作垂線後，原三角形被分成三個小三角形；三個小三角形的高都同為 r，底分別是 5、12、13。因此 30＝(5r＋12r＋13r)÷2＝15r，得到內切圓半徑 r＝2 公分。這個公式不是要背成『面積除以半周長』而已，而是來自三塊面積共享同一垂距。算完要檢查 2 小於三角形的各邊尺度，且內切圓確實能放在三角形內。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "先用角平分找中心，再驗證垂距",
+        "body": "引導作圖時先選兩個頂角，分別作內角平分線，交點標為 I；再從 I 向三邊作垂線，量三個垂距並檢查是否相等。看到『半徑』時，取 I 到邊的垂距，不要取 I 到頂點的斜線；看到『面積』時，才把三邊總長和共同高 r 放入面積和。若 I 只是看起來位於中央，或只量一條垂距，就還不能宣稱完成。若第三條角平分線沒有通過 I，回頭檢查畫的是內角還是外角，以及垂足是否落在真正的邊上。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-9-9：三角形的內心」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "在三角形花圃中安排圓形水池",
+        "body": "遷移到三角形花圃的圓形水池設計：把三條花圃邊視為直線，先作兩個內角的平分線找 I，再以 I 到任一邊的垂距決定水池半徑，第三邊用相同垂距驗證。施工圖若邊長、角度或地面位置有誤差，要分開記錄理想內心與實際放樣修正；數學模型的等距條件不等於現場量測毫無誤差。若需求改成畫圓通過三個花圃角點，任務已換成外心，必須改作中垂線，不能沿用內角平分線。若需求是三個頂點的支撐平衡，則又是重心問題，先辨識任務再選構造。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-9-9：三角形的內心」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "以三種身分檢查 I",
+        "body": "最後替 I 做三重驗收：第一，I 是否在至少兩條內角平分線上，且第三條也通過同一點；第二，I 到 AB、BC、CA 的垂直距離是否相等；第三，以這個共同距離為半徑畫圓時，圓是否分別在三個接觸點與邊相切。若計算半徑，單位應是長度；若計算三塊面積，單位應是平方長度。再用外心的中垂線與重心的中線作對照，確認你不是只記住『三角形中心』而忘了內心的角平分和內切圓條件。"
       }
     ],
     "summary": [
@@ -121,8 +129,8 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
     "goal": "以互動步驟探索「S-9-9：三角形的內心」的表示、推理與驗算。",
@@ -177,6 +185,7 @@
     "model": "general",
     "goal": "以互動步驟探索「S-9-9：三角形的內心」的表示、推理與驗算。",
     "mission": "請依序分析「S-9-9：三角形的內心」的條件，選出最能保留資訊、可被驗證的做法。",
+    "learningDesign": {"type":"geometric-construction","objective":"以角平分線交點定位內心，理解內心到三邊距離相等及內切圓的構造。","predictionPrompt":"三角形三條內角平分線是否會交於同一點？該點到三邊距離有何關係？","evidencePrompt":"請作兩條角平分線找交點，向三邊作垂線並比較三個距離。","steps":[{"id":"step-1","action":"作兩個頂角的內角平分線","equation":"∠BAI＝∠IAC；∠ABI＝∠IBC","reason":"角平分線上的點到該角兩邊距離相等，兩條線交點同時滿足兩個條件。","feedback":"要作內角平分線，不是外角平分線；先確認線段位於三角形內部。"},{"id":"step-2","action":"以垂距檢查交點到三邊等距","equation":"d(I,AB)＝d(I,BC)＝d(I,CA)","reason":"等距性質使以 I 為圓心、垂距為半徑的圓能同時貼住三邊。","feedback":"距離必須量到各邊的垂直最短距離，不能拿斜向線段當作三邊距離。"},{"id":"step-3","action":"完成內切圓構造並檢查圓周界","equation":"圓心 I；半徑＝I 到任一邊的垂距","reason":"內心必在三角形內，內切圓與三邊相切，構造能驗證定義。","feedback":"若圓穿出三角形，請檢查使用的是內角平分線與垂距。"}]},
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",

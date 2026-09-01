@@ -32,8 +32,18 @@
   }[engine] || "互動模型");
   const slider = (key, text, value, min, max, step = 1, unit = "") => `<label class="sim-control"><span>${esc(text)} <output data-sim-output="${key}">${value}${unit}</output></span><input data-sim-control="${key}" type="range" min="${min}" max="${max}" step="${step}" value="${value}" aria-label="${esc(text)}"></label>`;
   const graphPoint = (x, y) => `${180 + x * 28},${130 - y * 20}`;
+  const renderLearningDesign = (lesson, state) => {
+    const design = lesson.simulation?.learningDesign;
+    if (!design) return "";
+    const current = Math.max(0, Math.min(design.steps.length - 1, Number(state.designStep || 0)));
+    const step = design.steps[current];
+    const visualLabel = design.type === "equation-transform" ? "目前表示" : "目前探索結果";
+    return `<div class="sim-design" data-design-type="${esc(design.type)}"><p><b>先預測：</b>${esc(design.predictionPrompt)}</p><div class="sim-equation-path" aria-live="polite"><div class="sim-equation-current">${esc(step.equation)}</div><p><b>${visualLabel}：</b>${esc(step.action)}</p><p>${esc(step.reason)}</p></div><div class="sim-design-steps" role="list" aria-label="單元探索步驟">${design.steps.map((item, index) => `<button type="button" data-design-step="${index}" ${index === current ? 'aria-current="step"' : ""}>${index + 1}. ${esc(item.action)}</button>`).join("")}</div><p class="sim-design-feedback" aria-live="polite">${esc(step.feedback)}</p><p><b>用證據說明：</b>${esc(design.evidencePrompt)}</p></div>`;
+  };
   const renderModel = (lesson, state) => {
     const { engine } = lesson.simulation;
+    const designed = renderLearningDesign(lesson, state);
+    if (designed) return designed;
     if (engine === "math-number-line") {
       const n = state.n;
       return `<div class="sim-stage"><svg viewBox="0 0 360 150" role="img" aria-label="數線上目前的值是 ${n}"><line x1="24" y1="76" x2="336" y2="76" class="sim-axis"/>${[-5,-4,-3,-2,-1,0,1,2,3,4,5].map(x => `<g><line x1="${180 + x * 28}" y1="68" x2="${180 + x * 28}" y2="84" class="sim-tick"/><text x="${180 + x * 28}" y="104" text-anchor="middle">${x}</text></g>`).join("")}<circle cx="${180 + n * 28}" cy="76" r="10" class="sim-marker"/><text x="180" y="30" text-anchor="middle">位置 ${n}</text></svg></div>${slider("n", "移動位置", n, -5, 5)}`;
@@ -104,6 +114,8 @@
     if (!root) return;
     const lesson = lessons.get(root.dataset.simulationLesson); if (!lesson) return;
     if (event.target.closest("[data-sim-reset]")) { localStorage.removeItem(stateKey(lesson.simulation.id)); rerender(root); return; }
+    const designStep = event.target.closest("[data-design-step]");
+    if (designStep) { update(root, { designStep: Number(designStep.dataset.designStep) }); return; }
     const action = event.target.closest("[data-sim-action]")?.dataset.simAction; if (!action) return;
     const state = read(lesson.simulation);
     if (action === "run-trials") state.hits = Array.from({ length: state.trials }, () => Math.random() < .5).filter(Boolean).length;

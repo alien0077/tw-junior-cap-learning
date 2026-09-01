@@ -9,19 +9,19 @@
     "8"
   ],
   "content": {
-    "summary": "依共同因式、分組或乘法公式選擇適當的因式分解方法。",
+    "summary": "先從項數、係數與符號辨認多項式的結構，再選共同因式、平方差、完全平方或十字交乘，並用展開證明方法選對。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "依共同因式、分組或乘法公式選擇適當的因式分解方法。 能將分解結果重新展開驗算。"
+        "body": "能說出選擇方法的結構證據，處理需要兩階段分解的式子，並辨認看似適合其實不適合的公式。"
       },
       {
         "heading": "學習流程",
-        "body": "先找共同因式，再辨認乘法公式或分組結構，完成分解後展開確認。"
+        "body": "把候選方法當成診斷決策：先看是否能提出公因式，再看兩項平方差、三項完全平方或常數乘積，最後用回乘淘汰錯誤選擇。"
       },
       {
         "heading": "常見錯誤",
-        "body": "漏提出最大共同因式、符號錯誤，或分解後未檢查是否仍可繼續分解。"
+        "body": "不能因為看到三項就直接十字交乘，也不能因為有平方就套完全平方；負號與首項係數會改變可用的結構。"
       }
     ]
   },
@@ -36,7 +36,7 @@
     "https://www.naer.edu.tw/",
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
   ],
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -54,45 +54,122 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「A-8-5：因式分解的方法」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（因式分解方法研究）",
+      "subject": "math",
+      "chapterLocator": "公開 XML https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；八上因式分解方法相關章節入口，僅作結構定位",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "公開資源支持依共同因式、公式與二次三項式結構選擇方法；本課融合為結構掃描、方法分岔、完全分解與回乘驗證。",
+      "copyrightBoundary": "只研究公開索引與概念方向，不複製教材、影音、題目、答案或圖片；本課案例與互動均原創。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中數學公開架構交叉索引",
+      "subject": "math",
+      "chapterLocator": "均一公開主題頁 https://www.junyiacademy.org/topics/n-m7a；公開可見之代數式與因式分解前置節點，未取得南一課本全文頁碼",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": ["teaching-sequence", "concept-progression", "assessment-pattern"],
+      "outcome": "公開交叉入口支持由分配律展開反向尋找共同因式與乘積，並以展開檢查等值；因資料非出版社全文，本課採保守定位。",
+      "copyrightBoundary": "不將平台內容冒稱南一教材，不複製頁面文字、題目、解析或影片；所有正文與活動均重新創作。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（單元結構研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["依共同因式、乘法公式與分組結構選擇因式分解方法", "分解後要持續檢查是否仍有可提出的共同因式"],
+        "representations": ["用方法流程表對照多項式外形與分解策略"],
+        "examplesOrEvidence": ["先觀察最高次項與常數項，再驗證兩因式乘積是否還原原式"],
+        "misconceptions": ["只完成第一層分解便誤認為答案，未檢查完全分解"],
+        "assessmentEmphasis": ["能依結構解釋方法選擇，並以展開確認完整性"]
+      },
+      "licenseBoundary": "只取公開來源的概念順序與方法分類；本課文字、例題、提示、互動步驟與答案均重新設計，不重製原教材。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "均一國中數學主題頁（概念與練習路徑研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-junyi.html",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["用條件檢查共同因式、平方差與完全平方的適用性", "把錯誤分解展開回去，找出不符合原式的項"],
+        "representations": ["用決策節點與即時回饋比較分解方法"],
+        "examplesOrEvidence": ["比較提出負號與提出正係數兩種策略的結果"],
+        "misconceptions": ["忽略整式共同因式的正負選擇，造成最後括號符號錯誤"],
+        "assessmentEmphasis": ["能指出分解方法的必要條件與檢查證據"]
+      },
+      "licenseBoundary": "只研究公開主題呈現的策略比較與練習節奏；不複製均一題目、文字、影片或答案，所有任務均重新撰寫。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；本機快取：/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["以公式辨識、十字交乘與分組方式建立方法選擇架構", "比較不同方法的結果並整理成完全分解形式"],
+        "representations": ["用因式結構對照表連結展開與反向分解"],
+        "examplesOrEvidence": ["以乘積中兩因式的係數配對檢查中間項是否正確"],
+        "misconceptions": ["十字交乘配對正確卻忽略首項係數或最後的共同因式"],
+        "assessmentEmphasis": ["能依外形選擇方法並完整寫出可驗證的因式形式"]
+      },
+      "licenseBoundary": "只研究公開章節的概念分層與表徵方向；本課文字、案例、圖示與作答引導均為原創，不重製出版社素材。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": ["因式分解方法必須由多項式的結構與符號條件決定", "提出共同因式或套用公式後仍要檢查是否能繼續分解", "展開因式形式是確認分解正確與完整的主要證據"],
+    "versionDifferences": ["康軒較強調方法分類與完全分解的流程，適合建立檢查習慣", "均一較強調決策節點與反例回饋，適合辨別適用條件", "翰林較強調十字交乘與公式對照，適合處理二次三項式"],
+    "originalAdditions": ["設計方法決策卡，讓學習者先寫結構證據再選分解工具", "加入第一層分解與完全分解的對照，要求指出尚未完成的原因", "安排展開回查與不同方法比較，將答案正確性與方法效率分開評估"],
+    "llmSynthesisNote": "本單元先比較三版本的方法分類、條件判斷與檢查策略，再由 LLM 以原創案例、錯誤反例與決策互動重寫因式分解方法；未複製任何版本的題目、答案或敘述，也未沿用原教材題序與句型。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「A-8-5：因式分解的方法」",
-        "body": "先讀懂「A-8-5：因式分解的方法」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "分解前先做結構體檢",
+        "body": "修理一面由代數式表示的拼接牆時，第一個問題不是背哪個口訣，而是看式子的結構。4x²−36 有共同因式 4，提出後才看見平方差；x²＋10x＋25 的首尾是平方，中間項剛好等於兩倍乘積；6x²＋11x＋3 則要尋找乘積 18、和 11 的兩數。這些外形雖都能寫成乘積，進入方法卻不同。因式分解的方法應由項數、係數、次方與正負號共同決定，而且每一次改寫都要能乘回原式。今天會把『看結構、選工具、完成分解、回乘驗證』串成一條可重做的路徑，避免看到括號就誤以為已經處理完畢。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「因式分解的方法」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "方法選擇的四個分岔",
+        "body": "可以用四個分岔建立方法地圖。第一問是所有項能否提出共同因式，因為它可能包住後續的平方差或三項式；第二問是剩下的兩項是否為 A²−B²，只有相減的兩個完整平方才可用平方差；第三問是三項是否符合 A²±2AB＋B²，首尾平方還不夠，中間項的係數與符號也要吻合；第四問才處理一般二次三項式，找出乘積與和的配對，必要時用分組。以 4x²−36 為例，先提出 4 再做平方差；以 x²＋7x＋12 為例，則直接找和為 7、積為 12 的 3 與 4。每個分岔都要寫『為何符合』，最後用展開回查，方法就不會變成只靠外觀猜測。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「A-8-5：因式分解的方法」為主題，取自編算式 (x＋4)(x＋2)。先用分配律得到 x²＋6x＋8，再代入 x＝3 檢查原式與展開式都等於 35；這個步驟示範如何保留運算理由，而不是只抄公式。"
+        "heading": "示範：同一題可能要連續換方法",
+        "body": "自編例題：分解 2r³＋8r²＋8r。先逐項找共同部分，2r 是三項都含有的最大共同因式，提出後得到 2r（r²＋4r＋4）。接著檢查括號：首項 r² 是 r 的平方，末項 4 是 2 的平方，中間 4r 正好是 2×r×2，因此括號可寫成（r＋2）²，完整結果為 2r（r＋2）²。若直接把原式看成完全平方，會漏掉外面的 2r；若停在第一步，雖然等值卻尚未完全分解。最後由內到外展開，2r（r²＋4r＋4）＝2r³＋8r²＋8r，回到原式才能同時驗證共同因式與公式判斷。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "方法辯論：哪一條路最有根據？",
+        "body": "引導練習採用方法辯論。對 9q²−24q＋16，先驗證它是否為（3q−4）²，因為中間項必須是 −24q；對 5s²−45，先提出 5，再辨認 s²−9 的平方差；對 3v²＋14v＋8，計算首項與常數的乘積 24，找和為 14 的配對；對 7w²＋21w，先提出 7。每題都要留下『第一個觀察、使用的規則、因式結果、展開回查』四項證據。若有人把 5s²−45 寫成 5（s−3）²，請用展開指出多出的中間項；若有人停在 7w（w＋3）卻說不能再分，則要檢查括號是否已是最終形式。錯誤不是答案不同而已，而是能定位到方法分岔的哪一站。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「A-8-5：因式分解的方法」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "用公式選擇設計材料尺寸",
+        "body": "把方法遷移到材料尺寸模型：長方形面積 M＝x²＋12x＋36，首尾分別是 x² 和 6²，中間 12x 等於 2×x×6，所以 M＝（x＋6）²；若固定項改成 20，x²＋12x＋20 就不再符合完全平方，必須找乘積 20、和 12 的兩數，得到（x＋2）（x＋10）。再看 4x²−100，先提出 4 才能露出平方差，完整結果是 4（2x−5）（2x＋5）。這些例子顯示，係數或常數只改一點，適用方法就可能改變。請把每個因式連回長度或材料來源，但也要註明 x 的範圍，避免把代數因式不加限制地當成實際尺寸。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「A-8-5：因式分解的方法」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "寫出你的決策樹",
+        "body": "自我檢核請把一題因式分解說成一棵可走回去的決策樹：先找最大共同因式，再看提出後是否露出平方差或完全平方；若仍是三項式，檢查首尾平方、乘積與和的條件；若首項係數不為 1，確認是否需要拆中間項或分組。完成後把所有因式重新展開，檢查每個次方、係數與符號是否回到原式。請自行寫出一個看似完全平方、實際中間項不符的反例，例如 x²＋8x＋12，並說明它應改用哪種方法。最後補充若原式代表面積或長度，哪些因式可作幾何解釋、x 的允許範圍為何。能解釋選法、完整性、回乘證據與情境限制，才是真的掌握方法。"
       }
     ],
     "summary": [
@@ -121,16 +198,16 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
+  "reviewStatus": "draft",
   "updatedAt": "2026-08-27",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「A-8-5：因式分解的方法」的表示、推理與驗算。",
-    "scenario": "請依序分析「A-8-5：因式分解的方法」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳係數、次方與方法卡，立即同步多項式、因式乘積、面積模型與回乘結果，理解因式分解的方法。",
+    "scenario": "你是拼接地墊設計師：改變多項式參數後，拖曳共同因式、平方差或三項式卡，立即查看括號與乘積是否正確，再診斷漏提、誤套公式或未完全分解。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
+        "meaning": "地墊邊長或輸入值 x，可拖曳改變並同步檢查分解"
       }
     ],
     "steps": [
@@ -175,8 +252,9 @@
     "engine": "math-algebra-balance",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「A-8-5：因式分解的方法」的表示、推理與驗算。",
-    "mission": "請依序分析「A-8-5：因式分解的方法」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳係數、次方與方法卡，立即同步多項式、因式乘積、面積模型與回乘結果，理解因式分解的方法。",
+    "mission": "你是拼接地墊設計師：改變多項式參數後，拖曳共同因式、平方差或三項式卡，立即查看括號與乘積是否正確，再診斷漏提、誤套公式或未完全分解。",
+    "learningDesign": {"type":"representation-match","objective":"拖曳係數、次方與方法卡，讓多項式、因式乘積、面積分塊與回乘數值立即同步，並透過單一變因觀察、解釋方法選擇與錯誤分流。","predictionPrompt":"先拖曳 6x²＋9x 的係數，預測最大共同因式；再只把常數改變，預測仍能否沿用共同因式法或必須改看平方差、完全平方與三項式。","evidencePrompt":"提交兩組只改一個參數的結構標記、方法卡、因式結果與展開回乘；再連結一題會考型因式分解，解釋漏提公因式、誤套公式或未完全分解的錯誤分流。","steps":[{"id":"step-1","action":"拖曳係數與次方卡，從各項找最大共同因式，觀察式子、括號與面積分塊同步更新","equation":"6x²＋9x＝3x(2x＋3)","reason":"6x² 與 9x 共同含有 3x，提出後括號仍要保留每項的商；改變係數只改數值，不可跳過結構判讀。","feedback":"只提出 3 會留下 x²，錯誤分流要求比較數字、字母與次方的共同部分。"},{"id":"step-2","action":"只拖曳括號內的結構卡，判斷 4x²−100 應否從公因式轉到平方差","equation":"4x²−100＝4(x²−25)＝4(x−5)(x＋5)","reason":"先提出 4 才露出兩平方相減；方法分岔要依括號內結構，而不是看到兩項就直接配因式。","feedback":"若寫成 4(x−5)²，系統標記平方差符號錯誤；若停在第一層，標記尚未完全分解。"},{"id":"step-3","action":"拖曳三項式的配對卡，讀取乘積條件與和條件，再用回乘表驗證因式","equation":"x²＋7x＋12＝(x＋3)(x＋4)","reason":"兩常數的積須為 12、和須為 7，兩個條件同時成立才可分解；回乘能檢查中間項符號。","feedback":"若只檢查和或只看外觀，錯誤分流要求重新核對乘積與中間項。"},{"id":"step-4","action":"把會考型算式拖入共同因式、公式或分組區，改一個係數後重播並解釋方法是否仍適用","equation":"方法由共同因式、平方差、完全平方或三項式結構決定","reason":"考題常用一個係數或常數改變方法條件；重新操作能檢查你依據的是結構，不是背題目答案。","feedback":"分類錯誤時請指出缺少的結構證據，並用展開回乘而非圖形外觀修正。"}]},
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",

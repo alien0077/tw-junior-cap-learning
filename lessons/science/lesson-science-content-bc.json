@@ -47,7 +47,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
+  "reviewStatus": "draft",
   "updatedAt": "2026-08-27",
   "interactive": {
     "type": "scientific-investigation",
@@ -95,7 +95,7 @@
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "topic",
   "publisherResearch": [
     {
@@ -114,45 +114,104 @@
       ],
       "outcome": "公開出版社資源用於核對「生物體內的能量與代謝」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一國中自然科學公開教學資源（生物體內的能量與代謝）",
+      "subject": "science",
+      "chapterLocator": "Bc 聚合節點：酵素、呼吸作用與光合作用",
+      "sourceUrl": "https://www.nani.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-01",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "以酵素催化、細胞呼吸和光合作用的物質—能量箭頭串接 Bc 概念，並以對照、氣體、澱粉和速率資料形成聚合節點脈絡；完整課文未取得，故只採公開定位與方向。",
+      "copyrightBoundary": "只研究合法公開章節定位與教學方向；正文、數據、互動、題目與回饋皆獨立撰寫。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中自然科學公開教學資源（代謝與光合作用）",
+      "subject": "science",
+      "chapterLocator": "Bc 聚合節點：酵素、呼吸作用與光合作用",
+      "sourceUrl": "https://www.hle.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-01",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "整理公開資源以細胞代謝、ATP、植物產物、酵素條件和多證據判讀組織概念的方向，改寫成校園植物與酵母的系統比較。",
+      "copyrightBoundary": "僅研究公開概念與活動方向，不重製教材文字、圖像、題目或答案；本課內容與數據均為原創。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "南一國中自然科學公開教學資源（生物體內的能量與代謝）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nani.com.tw/",
+      "reviewedAt": "2026-09-01",
+      "findings": {"concepts": ["由酵素、光合作用和呼吸作用追蹤物質及能量", "以活材料對照、澱粉和氣體資料建立代謝證據"], "representations": ["反應箭頭、細胞路徑、氣體曲線和對照表"], "examplesOrEvidence": ["發芽種子、酵母和水草的可重複資料"], "misconceptions": ["把植物養分視為土壤直接搬入", "把氣泡或溫度單項當成完整能量測量"], "assessmentEmphasis": ["能依證據與控制變因提出有條件結論"]},
+      "licenseBoundary": "只研究公開方向與概念安排；本課正文、數據、活動與答案皆重新撰寫。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中自然公開影音資源（生物體內的能量與代謝）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "reviewedAt": "2026-08-27",
+      "findings": {"concepts": ["以生活材料觀察酵素、呼吸和光合作用的作用條件", "用反應物—產物與對照連結能量轉換"], "representations": ["以葉片、種子、酵母、氣泡和溫度資料呈現"], "examplesOrEvidence": ["比較遮光、發芽與氧氣供應不同的資料"], "misconceptions": ["把呼吸作用等同吸氣吐氣", "認為植物只有白天才進行代謝"], "assessmentEmphasis": ["能由多項觀察量區分直接證據與推論"]},
+      "licenseBoundary": "僅採合法公開資源的概念與活動方向；本課文字、數據、互動與答案均為原創。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中自然科學公開教學資源（代謝與能量證據）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.hle.com.tw/",
+      "reviewedAt": "2026-09-01",
+      "findings": {"concepts": ["區分酵素催化、光合作用儲能與呼吸作用釋能", "用 ATP、氣體、熱與生長資料辨認證據層次"], "representations": ["能量流向圖、活性曲線、氣體圖與系統邊界"], "examplesOrEvidence": ["由水草、酵母和運動肌肉資料比較代謝方向"], "misconceptions": ["把二氧化碳直接當成能量數值", "把光合作用和呼吸作用視為互相排斥"], "assessmentEmphasis": ["能指出替代解釋、測量限制與下一輪探究"]},
+      "licenseBoundary": "只使用可公開核對的概念與活動方向；本課為不含出版社可還原內容的原創融合。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": ["Bc 聚合概念以物質反應、能量轉換和細胞可用性串起酵素、光合作用與呼吸作用。", "氣體、澱粉、熱、產物和生長都是不同層次的代謝線索，需以對照與控制變因解讀。", "酵素受溫度與 pH 影響，光合作用受光照與二氧化碳限制，呼吸作用受氧氣與底物條件影響。"],
+    "versionDifferences": ["南一公開方向較適合作為反應式、對照和物質—能量箭頭的基礎。", "康軒公開資源較突出種子、葉片、酵母等生活材料的觀察入口。", "翰林公開資源較強調 ATP、證據層次、系統邊界和替代解釋。"],
+    "originalAdditions": ["以校園『一片葉、一粒種子、一團酵母』的任務把三個子概念放在同一證據地圖。", "設計可切換光照、氧氣、底物與溫度的聚合模擬，讓學習者比較物質流與能量流而非背單一反應式。", "加入會考式跨表格判讀，要求區分直接測量、推論、控制變因與模型限制。"],
+    "llmSynthesisNote": "本課依官方自然科學領域課綱、kg-science-content-bc 與目前可取得的南一、康軒、翰林公開資料，將 Bc 子概念獨立融合為以證據地圖和代謝系統比較為核心的原創聚合教材；未複製出版社文字、圖片、題目、答案或影音逐字稿。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
         "heading": "從情境進入「生物體內的能量與代謝」",
-        "body": "先從「生物體內的能量與代謝」相關的生活現象提出一個可觀察問題，寫下已知條件、可能變因與安全限制；把看到的事實和自己的解釋分開，才有可檢查的探究起點。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "校園裡同時有一片被陽光照亮的葉、一袋正在發芽的豆子和一杯冒泡的酵母。三者都在進行與能量有關的細胞活動，卻不代表它們交換的物質相同。先把任務拆成三個問題：葉片如何把光能放進有機物，種子如何把有機物轉成細胞可用能量，酵母在氧氣不足時會留下什麼產物；再為每題選擇氣體、澱粉、溫度或產物資料，避免一看到泡泡就把所有代謝都叫成同一件事。"
       },
       {
         "id": "explain",
         "phase": "explain",
         "heading": "建立「生物體內的能量與代謝」的概念架構",
-        "body": "本單元依官方課綱所列的「生物體內的能量與代謝」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "body": "把 Bc 看成一張流向圖：光合作用把二氧化碳和水組成有機物並釋放氧氣；呼吸作用拆解有機物，將部分化學能轉成 ATP 可用的形式並伴隨熱；酵素則在各條反應路徑中降低活化能，決定反應能否在適當速度進行。這些不是三個互不相干的名詞，葉片製造的有機物可成為種子或其他細胞的底物，而同一植物白天也可能同時光合作用和呼吸作用。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
         "heading": "用自編資料走完一次",
-        "body": "以「Bc：生物體內的能量與代謝」為主題，在低風險桌面情境量測同一小車通過 1 公尺的時間：木板甲 2.0 秒、木板乙 2.5 秒，重複三次並記錄平均。把材質視為自變因、時間或速度視為應變因，列出可能干擾並以公式檢查單位。"
+        "body": "自編資料把三種證據放在同一表格：照光水草每分鐘氣泡 16 個、黑暗水草 1 個；發芽種子密閉瓶溫度上升 2.1 ℃、煮熟種子上升 0.2 ℃；等量酵母在有氧與缺氧條件下，二氧化碳產生量分別為 8 與 11 單位。這些結果可分別支持釋氧、活細胞代謝和產氣差異，卻不能直接排列 ATP 多寡。要控制水草面積、種子質量、酵母量、糖濃度、初溫和時間，才可比較各證據的力度。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
         "heading": "依步驟完成練習",
-        "body": "針對「生物體內的能量與代謝」先寫可觀察問題，再列自變因、應變因與控制變因；依序記錄預測、操作、數據與限制，重複量測後才下條件式結論。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "引導探究採用一張『證據地圖』而不是固定問答：先選一條路徑，例如光照葉片→澱粉，或底物＋氧氣→二氧化碳與熱；接著只調一項條件，預測箭頭上哪個量會變；操作模擬並記錄即時曲線；最後把直接讀值、合理推論和仍未排除的替代原因分欄。若只看二氧化碳，答案最多是支持產氣；若再有活材料對照和溫度變化，才較能建立代謝釋能的連續證據。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
         "heading": "換到新情境仍能使用",
-        "body": "把「生物體內的能量與代謝」的探究方法換到家庭、校園或環境資料，檢查來源、尺度、樣本與不確定性；若證據不足，保留條件式結論並提出下一個可行測試。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "把證據地圖移到家庭或校園：比較窗邊和樹蔭植物的澱粉線索，或比較麵糰在不同溫度的產氣與膨脹。管理者不能只追求『氧氣更多』，還要看光、二氧化碳、水分、溫度、微生物和觀察時間；麵糰變大也可能來自氣體累積，不等同已測出所有能量。提出建議時要寫清楚系統邊界、測量指標和下一個只改單一變因的測試。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
         "heading": "回顧證據與限制",
-        "body": "回顧「生物體內的能量與代謝」的問題：哪個觀察最關鍵、哪個變因仍未控制、資料能支持到什麼程度？用一句話寫出結論與限制，再提出一項安全的改進。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "最後不以背出三條反應式作結，而要回看一張自己的能量與物質地圖：光合作用把哪兩項原料送入有機物，呼吸作用把哪種底物送往可用能量，酵素在哪裡改變反應速率？再檢查每個箭頭旁是否有證據、對照和限制。若只有氣泡或溫度資料，請誠實標出尚不能直接知道的 ATP、總有機物量或長期生長；能說出證據邊界，才是真正完成 Bc 聚合概念的自我檢核。"
       }
     ],
     "summary": [
@@ -188,6 +247,18 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "parameter-investigation",
+      "objective": "讓學習者在葉片、發芽種子與酵母三個模型間追蹤物質與能量流，固定材料量與時間，一次改變光照、氧氣、底物或溫度，從澱粉、氣體、熱與產物圖判斷代謝證據。",
+      "predictionPrompt": "請先選一條路徑並預測：只增加光照、只降低氧氣、只增加底物或只改變溫度時，澱粉、氧氣／二氧化碳、溫度和產物曲線會如何變化？請寫固定材料量、時間與一項可觀察證據。",
+      "evidencePrompt": "每次只調整一項參數，觀察澱粉指標、氣體量、溫度、產物和初始斜率；用物質—能量箭頭解釋，並分流處理把氣泡當 ATP、把植物淨氣體當單一作用、把酵素當反應物或忽略對照的錯誤。",
+      "steps": [
+        {"id": "step-1", "action": "選葉片、種子或酵母模型，固定材料量、初始狀態與時間，畫出預測的物質和能量箭頭", "equation": "光合作用：CO₂＋H₂O＋光能→有機物＋O₂；呼吸：有機物＋O₂→CO₂＋H₂O＋可用能量", "reason": "先區分儲能與釋能路徑，才能知道每個氣體或澱粉指標代表什麼。", "feedback": "若把光合作用和呼吸作用畫成同一方向，系統要求回看反應物、產物和研究時間。"},
+        {"id": "step-2", "action": "只調光照或氧氣，觀察葉片澱粉、水草氣體、種子溫度和酵母產物的即時曲線", "equation": "觀察量＝直接指標；能量推論需搭配對照", "reason": "不同模型的指標不同，氣體、澱粉和熱只能各自支持一部分代謝推論。", "feedback": "若把單一氣泡量當成完整能量，系統提示補看時間、材料對照與其他指標。"},
+        {"id": "step-3", "action": "回到基準，只改變底物或溫度，觀察初始速率、熱與產物曲線並尋找平台或替代解釋", "equation": "速率≈前段曲線斜率；酵素活性受條件限制", "reason": "底物和溫度會影響反應速率，但高溫、底物耗盡或氧氣不足都可能造成平台。", "feedback": "若只看終點或把溫度越高說成永遠越快，系統要求回到初始斜率和活性條件。"},
+        {"id": "step-4", "action": "只改變觀察時間完成會考式跨圖表判讀，寫出支持範圍、控制變因與下一個安全測試", "equation": "淨氣體變化＝光合作用與呼吸作用的合成結果", "reason": "BC 聚合資料常把不同作用放在同一時間軸，必須分清直接觀察和跨層次推論。", "feedback": "若把植物白天氣體讀值當單一光合作用，系統提示加入呼吸作用和系統邊界。"}
+      ]
+    }
   }
 }

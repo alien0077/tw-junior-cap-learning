@@ -36,24 +36,49 @@
     "https://www.naer.edu.tw/",
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
   ],
-  "authoringStandard": "full-lesson-v1",
+  "versionResearch": [
+    {"publisher":"kanghsuan","edition":"康軒國中數學七下公開教學影片索引","sourceType":"local-download","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機 math-knsh-public.xml，七下不等式解法與應用相關章節","reviewedAt":"2026-08-29","findings":{"concepts":["公開資源將不等式解法建立在方程式變形之後，顯示乘除負數時方向變更是程序核心","應用型資源支持把不等式解集回到預算、數量或時間條件中篩選"],"representations":["融合時比較逐行變形、負數除法、數線射線與情境限制"],"examplesOrEvidence":["本機 XML 可定位七下不等式解法／應用的公開章節資源，作為程序與應用型態證據"],"misconceptions":["需防止除以負數不翻轉、把嚴格不等式含入端點，以及忽略整數或正值限制"],"assessmentEmphasis":["評量重點為等價變形、不等號翻轉、解集圖形與情境合理性"]},"licenseBoundary":"只記錄公開索引的章節定位與資源類型；不複製影片、教材文字、圖片、例題數字、練習題或答案，正文與活動均由本專案重新創作。"},
+    {"publisher":"nani","edition":"南一版國中數學公開架構索引","sourceType":"local-download","sourceLocator":"https://www.junyiacademy.org/topics/n-m7a；本機 math-junyi.html，七下不等式解法與應用主題節點","reviewedAt":"2026-08-29","findings":{"concepts":["公開主題索引支持將一元一次不等式視為方程式方法的延伸，但解答由單點變成範圍","主題可銜接應用問題，要求把代數解集與實際可行條件交集化"],"representations":["融合後用 −2x＋6＞10 的逐行變形與 x＜−2 數線表示互相核對"],"examplesOrEvidence":["本機 HTML 可定位七下不等式主題與其在代數路徑中的位置，作為概念銜接證據"],"misconceptions":["本課以測試值處理負數翻轉、端點排除與情境整數條件等錯誤"],"assessmentEmphasis":["以每步運算理由、負數乘除、解集和條件篩選作為核心表現"]},"licenseBoundary":"僅使用公開主題索引的節點名稱與順序作研究證據；不重製教材、影片、題目、解析或頁面文字，所有教學敘述與例子均為原創。"},
+    {"publisher":"hanlin","edition":"翰林國中數學 1A／1B 公開解題影音索引","sourceType":"local-download","sourceLocator":"https://mathvideo.hle.com.tw/1A/；本機 hanlin-math-index.html，七下不等式解法與應用公開章節索引","reviewedAt":"2026-08-29","findings":{"concepts":["公開索引將不等式的解法與應用置於相關代數內容中，支持程序與情境判斷分開驗收","數線資源可作為符號變形後的圖形驗證，而非裝飾性插圖"],"representations":["融合後以負係數方程式、測試值、數線與條件文字形成完整的解集證據鏈"],"examplesOrEvidence":["本機 HTML 可定位公開章節索引，僅取章節與資源型態，不擷取出版社題目正文"],"misconceptions":["本課明確處理負數除法、嚴格端點、可行值與不等式方向等程序風險"],"assessmentEmphasis":["要求逐步寫出等價運算、畫解集、測試邊界並解釋情境限制"]},"licenseBoundary":"只採用翰林公開索引的章節名稱與順序；不複製出版社頁面文字、影片、題目、答案、圖片或講義，所有正文、數字與回饋均獨立撰寫。"}
+  ],
+  "fusionRecord":{"commonCore":["三版本均把不等式解法建立在等式變形能力上，但答案形式是解集範圍","共同核心包含兩邊同步運算、負數乘除翻轉、數線表示與情境限制","程序答案必須以測試值或代回檢查，並說明端點是否包含"],"versionDifferences":["康軒公開資源較適合確認解法與應用的分層；南一索引呈現由方程式到不等式應用的銜接；翰林索引提供數線與程序驗證的資源線索","公開索引不足以支持完整出版社題目內容，融合不重建未取得的例題或答案"],"originalAdditions":["以 −2x＋6＞10 設計負數除法翻轉的逐步互動，要求先預測再操作","加入 x＝−2 與 x＝−3 的邊界／內部測試，讓方向與端點可被證明","加入只改左邊、忘記翻轉與把總解集寫成單一值的錯誤回饋"],"llmSynthesisNote":"LLM 依官方課綱、kg-math-content-a-7-8 與三版本公開索引，獨立融合不等式等價變形、負數翻轉、解集表示與情境篩選。所有正文、例子、互動步驟、錯誤回饋與解析均為本專案原創，未複製出版社內容。"},
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
-      "publisher": "hanlin",
-      "edition": "國中數學 1B 第4章第2節（公開教學影片頁）",
+      "publisher": "nani",
+      "edition": "南一版國中數學七下公開章節架構（均一類南一版索引）",
       "subject": "math",
-      "chapterLocator": "一元一次不等式／4-2 解一元一次不等式及其應用",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1B/4-2/",
+      "chapterLocator": "七下第四章一元一次不等式；4-1 一元一次不等式及其解、4-2 解一元一次不等式及其應用",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開頁面分成解一元一次不等式、應用問題、自我評量與自我挑戰；本課安排等式操作、負數乘除反向、數線與情境解讀。",
-      "copyrightBoundary": "只採公開章節節點作結構研究；正文、例題數值、互動選項、提示與回饋全部自編。"
+      "reviewedAt": "2026-08-31",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "公開索引明示依南一版教科書章節架構編排，將七下第四章分為認識解與解法應用兩節；因此本課先從不等式解集及數線意義進入，再安排等價變形、負數乘除翻向、整數條件與生活限制的交集判讀。索引沒有提供可合法重製的完整課文或題庫，無法據此宣稱讀過南一教科書全文。",
+      "copyrightBoundary": "只使用公開索引的章節名稱、節次與教學路徑作研究證據；未複製南一教材、例題、練習、答案或影音內容，正文、數值、互動步驟與回饋均為本專案原創。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學七下官方公開教學影音 XML",
+      "subject": "math",
+      "chapterLocator": "官方 j_math.xml 七下第4章；4-1 認識一元一次不等式、4-2 解一元一次不等式及其應用相關公開資源",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "官方 XML 可定位七下不等式的解法與應用資源，呈現由程序練習走向情境問題的教學節奏；本課據此把每次左右兩邊同做的理由寫清楚，特別安排同除負數必須反轉、嚴格不等式的空心端點，以及把代數解集轉成最多幾件或至少幾分的整數答案。XML 是公開資源索引，不是完整電子教科書，未將未公開的出版社正文或特定題目內容當作已讀證據。",
+      "copyrightBoundary": "只採官方公開 XML 的章節、資源類型與順序作研究；不擷取影片、課本、習作、圖片、題目數字、答案或解析，所有教學文句與互動設計均獨立撰寫。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學 1B 公開解題影音網",
+      "subject": "math",
+      "chapterLocator": "1B CH4 一元一次不等式；4-1 一元一次不等式的解及圖示、4-2 解一元一次不等式及其應用",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1B/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "翰林官方頁面將 1B 第四章分出解及圖示與解法應用，且同一公開入口可見課本解題與習作解題的資源分層；本課把數線當作解集的證據而非裝飾，讓學習者先判斷端點是否包含，再用內部值與外部值驗證射線方向，最後回到預算、容量和時間等語境。公開頁面只足以支持章節與資源定位，不能冒稱取得出版社完整章文。",
+      "copyrightBoundary": "僅記錄翰林官方公開頁的章節名稱、節次與資源型態；未複製出版社文字、影片、題目、答案、圖片或講義，正文、例題、錯誤診斷、活動和回饋全為原創。"
     }
   ],
   "teaching": {
@@ -62,37 +87,37 @@
         "id": "hook",
         "phase": "hook",
         "heading": "不等號也能逐步整理",
-        "body": "不等式和方程式一樣可以逐步運算，但有一個關鍵差異：兩邊同乘或同除以負數時，不等號方向必須反轉。把這個規則和數線上的範圍連在一起，才能正確處理折扣、容量與最低分數等問題。"
+        "body": "想像你在校慶攤位前只有 180 元，飲料每杯 35 元，還要保留 10 元搭車；『最多能買幾杯』不是要猜一個數，而是要找出一整段符合條件的數。令杯數為 x，可寫成 35x＋10≤180，這個小故事正是把生活限制翻成一元一次不等式的入口。方程式通常尋找使兩邊相等的單一數值，不等式則尋找使大小關係成立的解集，因此答案必須說明範圍、端點與可能的整數限制。接著你會看到，整理式子時多數步驟像解方程式，但一旦同乘或同除負數，大小順序會反轉；數線上的空心點、實心點和箭頭，則把抽象符號變成可檢查的圖形。"
       },
       {
         "id": "explain",
         "phase": "explain",
         "heading": "保持大小關係的操作",
-        "body": "一元一次不等式的應用先把文字條件翻成符號，再解出可行範圍；例如容量上限、預算或最低需求都要保留單位與邊界。解出後用端點和一個範圍外數值測試，確認不等號方向、整數限制與原情境一致。"
+        "body": "處理一元一次不等式，可以把解題看成一條保護解集的路徑。第一步先圈出未知量與單位，分辨『不超過』是 ≤、『至少』是 ≥、『低於』是 ＜，不要只看數字。第二步讓左右兩邊接受同一個加、減、乘或除的操作；加減任何數不改變方向，乘除正數也不改變方向，乘除負數才必須翻轉。第三步把答案畫在數線：＜、＞使用空心端點，≤、≥使用實心端點，箭頭指向所有可能值。最後別急著抄答案，挑一個解集內的數、端點本身和一個解集外的數代回原式。若題目說杯數、座位數或天數，x 還要是整數且通常不能為負；這些條件要和代數解集取交集，才能回答真正的生活問題。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
         "heading": "例題：負數除法反向",
-        "body": "解 −2x＋6＞10。兩邊同減 6 得 −2x＞4，再同除以 −2，方向反轉為 x＜−2。選 x＝−3 代回：6＋6＝12＞10，成立；選邊界 −2 代回得到 10＞10 不成立，所以邊界是空心點。"
+        "body": "現在完整解一題自編例子：−2x＋6＞10。先說明每一步保留什麼。左右兩邊同減 6，得到 −2x＞4，因為同減同一個數，原本成立的大小關係不會改變；接著左右兩邊同除以 −2，左邊的係數變成 1，但除以負數會把數線上的左右方向交換，所以必須寫成 x＜−2，而不是 x＞−2。這個翻轉不是背誦格式，可以用具體數檢查：原式若選 x＝−3，左邊為 −2×(−3)＋6＝12，12＞10 成立；若選 x＝−1，左邊為 8，不成立。再檢查邊界 x＝−2，左邊等於 10，原條件要求大於 10，因此 −2 不屬於解集，數線上要畫空心點並向左畫箭頭。代數、測試值與圖示三者一致，才算完成。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
         "heading": "每一步都標註運算理由",
-        "body": "先移除常數，再整理未知數係數；遇到負係數時停下來確認是否要反向。完成後選一個解集內的數與一個邊界數代回原不等式。若題目含整數、非負或上限限制，將代數解集與限制取交集後再用文字回答。"
+        "body": "引導練習不要從『移項口訣』開始，而要在每一行旁留下動作與理由。請解 3x−5≤13：先問自己要消掉哪個常數，左右同加 5 得 3x≤18，再同除正數 3 得 x≤6，方向不變；接著在數線上把 6 畫成實心點，向左表示小於或等於。再換成 −3x−5≤13，第一步仍是同加 5，得到 −3x≤18，但第二步同除 −3 時必須改為 x≥−6。若有人寫成 x≤−6，請不要只說錯，讓他把 x＝−7 和 x＝0 代回原式比較，證據會顯示哪一側成立。若題目另加『x 是正整數』，就把 x≥−6 與正整數條件疊在一起，答案不是所有實數，而是 1、2、3……；若還有上限，就再從這個交集挑出有限個值。每次都完成式子、數線、測試三欄，能看出錯誤發生在方向、端點還是條件翻譯。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
         "heading": "從解集回答實際問題",
-        "body": "例如預算不超過 500 元、至少需要 8 小時或溫度低於某值，都可先建立不等式再求範圍。回答時要回到題目單位，並說明是否包含邊界；若要求最多幾件商品，還要取符合範圍的最大整數，而不是直接四捨五入。"
+        "body": "把方法帶到新情境時，最重要的轉換不是換數字，而是重新判讀量與限制。例：社團租借投影機，每小時 120 元，另收一次 80 元，預算最多 800 元；若租用 h 小時，120h＋80≤800，解得 h≤6。因為 h 表示時數，若規定至少租一小時，實際可行值是 1 到 6 的整數。若改成『至少要有 450 分鐘播放時間』，先把 450 分鐘與每小時的單位統一，再決定使用 ≥ 還是 ≤，不能看見『至少』就套固定方向。若單價以負數係數出現，先問那個負號是代數整理產生，還是情境本身真的代表減少；只有進行負數乘除時才翻轉不等號。遇到兩個條件，例如容量至少 20 公升且不超過 50 公升，要取交集 20≤x≤50；若是整數件數，最後回答最大或最小整數並附單位。這樣才能把符號答案翻回可執行決策，而不是停在一串 x 的不等式。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
         "heading": "代數與數線雙重驗證",
-        "body": "最後檢查四件事：負數乘除是否反向、邊界是否包含、箭頭是否正確、代入測試是否符合原式。若其中一項不一致，先回到發生負數運算的那一步重算。能完成這四項，才可把答案安全地帶回生活情境。"
+        "body": "自我檢核可以做成『四站巡查』。第一站看運算：每一行是否左右兩邊都做了同一個動作？若有同乘或同除負數，不等號是否確實翻轉？第二站看解集：原式是嚴格大於、嚴格小於，還是包含等號？嚴格關係的端點應為空心，不嚴格關係的端點才是實心。第三站看證據：從解集挑一個內部值與一個外部值，代回原不等式；若兩者都成立或都不成立，通常是方向、代入符號或算術出了問題。第四站看情境：x 的單位、正負性、整數性和題目要求的『最多』『至少』是否都被保留？例如算出 h≤6.67 小時，若 h 是整點租借，就不能寫 6.67 小時，而要說最多 6 小時。請把錯誤定位到四站中的一站，再修正並重新驗證；不要只把最後答案改成看似合理的數。當代數式、數線、測試值和文字結論彼此支持，才是真正理解一元一次不等式的解與應用。"
       }
     ],
     "summary": [
@@ -121,8 +146,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-31",
   "interactive": {
     "type": "algebra-expression-builder",
     "scenario": "逐步解 −2x＋6＞10，注意除以負數要反轉方向。",
@@ -174,6 +199,7 @@
     "model": "general",
     "goal": "用三步驟理解「A-7-8：一元一次不等式的解與應用」。",
     "mission": "逐步解 −2x＋6＞10，注意除以負數要反轉方向。",
+    "learningDesign": {"type":"equation-transform","objective":"讓學習者在每次等價變形後保留解集，特別辨認除以負數必須反轉不等號。","predictionPrompt":"解 −2x＋6＞10 時，最後若除以 −2，你預測不等號方向會如何改變？","evidencePrompt":"請在每行旁寫出所做運算，並以 x＝−3 與 x＝−2 檢查最後解集。","steps":[{"id":"step-1","action":"先消去常數並保留原不等號方向","equation":"−2x＋6−6＞10−6 → −2x＞4","reason":"左右兩邊同時減去 6，所有原本的解仍保持相同解集。","feedback":"不要只把 6 從左側刪掉，右側也必須同減 6。"},{"id":"step-2","action":"除以負數時翻轉不等號方向","equation":"−2x＞4 → x＜−2","reason":"負數乘除會反轉大小關係，這是本題關鍵而非記號細節。","feedback":"用 −3 與 −1 代回原式比較，確認哪一側才成立。"},{"id":"step-3","action":"用邊界與測試值檢查解集","equation":"x＝−2 不成立；x＝−3 成立，所以 x＜−2","reason":"嚴格大於不包含邊界，測試值可同時檢查端點和方向。","feedback":"若畫成包含 −2 的解集，請回看原式的 ＞。"}]},
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",

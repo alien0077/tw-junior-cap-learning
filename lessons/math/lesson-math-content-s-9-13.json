@@ -41,7 +41,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,45 +59,175 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-9-13：表面積與體積」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材章節索引（表面積與體積）",
+      "subject": "math",
+      "chapterLocator": "公開數學 XML j_math.xml：立體展開、表面積與體積相關概念索引",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-09-01",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引可核對逐面整理、展開圖辨識與表面積體積的教學方向；本課將其轉為開口盒、外露面與平方立方單位的獨立判斷。",
+      "copyrightBoundary": "只研究公開索引的概念定位與教學方向，未複製康軒教材文字、圖片、例題、題目、解答或影音；公開索引不等同完整電子教科書。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中數學公開章節架構交叉研究",
+      "subject": "math",
+      "chapterLocator": "均一公開主題頁 n-m9a：立體量測、展開與表面積體積相關定位",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m9a",
+      "access": "public-open",
+      "reviewedAt": "2026-09-01",
+      "researchScope": [
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開主題頁提供分割、堆疊、展開與生活量測的可追溯脈絡；本課融合為容器容量、材料估算及複合立體接合面檢查。",
+      "copyrightBoundary": "僅使用公開頁面的概念定位與高層次教學方向，未複製南一教材文字、圖像、例題、作業或答案，並保留其非完整出版社課本的來源限制。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（表面積體積研究）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "表面積是立體所有外露面的面積總和",
+          "體積描述立體占有的空間，展開圖可協助整理面數與形狀"
+        ],
+        "representations": [
+          "以立體圖、展開圖、面積單位與體積單位互換"
+        ],
+        "examplesOrEvidence": [
+          "由長方體六個面的面積相加建立表面積"
+        ],
+        "misconceptions": [
+          "把表面積和體積混用，或漏算被遮住的面"
+        ],
+        "assessmentEmphasis": [
+          "能依展開圖、外露面數量與平方或立方單位選用正確量"
+        ]
+      },
+      "licenseBoundary": "只研究公開概念與教學方向，本課文字、例題、活動與答案均獨立撰寫。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "均一國中數學公開主題頁（立體量測研究）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m9a",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "用分割、堆疊與展開理解表面積和體積的不同意義",
+          "將立體公式遷移到包裝、容器與材料估算"
+        ],
+        "representations": [
+          "以可旋轉立體、展開圖與單位格模型觀察"
+        ],
+        "examplesOrEvidence": [
+          "改變長寬高比較表面積與體積的不同增長"
+        ],
+        "misconceptions": [
+          "看到三個尺寸就直接相乘求表面積"
+        ],
+        "assessmentEmphasis": [
+          "能說明長方體與複合立體公式每一項代表的幾何量"
+        ]
+      },
+      "licenseBoundary": "不複製公開文字、題目、影片或答案，僅將概念轉為本課原創活動與說明。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網（立體表面積體積章節研究）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "以展開圖整理多面體表面積，並以底面積乘高求柱體體積",
+          "區分外露面、底面、側面與容積的計算意義"
+        ],
+        "representations": [
+          "立體圖、展開圖、分解圖與公式互相驗證"
+        ],
+        "examplesOrEvidence": [
+          "將複合立體拆成可計算的柱體或長方體"
+        ],
+        "misconceptions": [
+          "使用體積單位表示表面積，或把容積當外表面積"
+        ],
+        "assessmentEmphasis": [
+          "能完成分面、分解、計算與單位回查"
+        ]
+      },
+      "licenseBoundary": "僅研究公開章節的概念層次，本課正文、圖示、例題與答案均為原創。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "表面積處理外露邊界，體積處理立體內部空間，單位分別是平方與立方",
+      "展開圖和分解圖能把立體計算轉成平面面積或基本立體",
+      "公式必須配合立體種類、底面與高，不能只看數字套用"
+    ],
+    "versionDifferences": [
+      "康軒著重展開圖與外露面的逐面整理",
+      "均一著重模型操作、分割與生活估算",
+      "翰林著重柱體公式、複合立體與單位檢核"
+    ],
+    "originalAdditions": [
+      "設計包裝紙與容器容量的雙任務比較",
+      "加入漏算底面、平方立方單位混淆的反例",
+      "以堆疊積木分解複合立體遷移表面積與體積"
+    ],
+    "llmSynthesisNote": "LLM 依官方課綱、KG 與三版本公開研究融合後，獨立重寫表面積、體積、展開圖、分解圖與單位判讀，未複製出版社內容，並為本單元重新設計例證、反例、互動活動與外露面檢核。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-9-13：表面積與體積」",
-        "body": "先讀懂「S-9-13：表面積與體積」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "包一個盒子和裝滿一個盒子，是兩件事",
+        "body": "包裝紙要覆蓋盒子的外表面，裝水則關心盒子裡能容納多少。前者是表面積，後者是體積；同一個長方體因為問題不同，計算方式也不同。先辨認是在量邊界還是內部空間，再選擇展開、分面或底面積乘高。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「表面積與體積」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "展開圖整理表面，底面和高建立體積",
+        "body": "長方體表面積是 2(lw＋lh＋wh)，因為三種不同矩形面各出現兩個；體積是 lwh，表示底面積乘高。柱體也遵循體積＝底面積×高，但表面積要把底面與側面逐一整理。展開圖能確認哪些面存在、哪些面相鄰；若題目有開口容器，開口面就不應列入外露表面。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-9-13：表面積與體積」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "自編例題：紙盒的外表面與容量",
+        "body": "一個無蓋長方體紙盒長 12 公分、寬 8 公分、高 5 公分。製作紙盒需要的外露表面積為底面 12×8，加上四個側面 2(12×5)＋2(8×5)，共 376 平方公分；盒內容量為 12×8×5＝480 立方公分。兩個答案單位不同，也反映包裝材料與容納空間是不同問題。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "把立體拆成可數的面與層",
+        "body": "遇到表面積，先畫展開圖或列出每一種面出現幾次；遇到體積，先找底面與垂直高，必要時用單位立方體分層。複合立體可拆成兩個基本立體求體積，但表面積要扣除接合面，因為接合面不是外露表面。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-9-13：表面積與體積」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "用積木設計省材料的容器",
+        "body": "用相同體積的積木組成不同長方體，比較哪一種外露面積較小；這可連結包裝材料與容量的取捨。若兩個積木結構黏在一起，請標記被遮住的接合面，說明它從表面積中扣除的原因；若只比較體積，則要確認每個方案內部空間相同。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-9-13：表面積與體積」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "用單位和外露面做最後檢核",
+        "body": "完成後檢查答案是平方單位還是立方單位，並逐面確認是否真的外露；再用底面積乘高回查體積。若是開口盒或複合立體，重新問一次：哪些面被省略？哪些接合面不能算？能回答這些問題，公式才真正對應到圖形。"
       }
     ],
     "summary": [
@@ -121,51 +251,63 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-9-13：表面積與體積」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-9-13：表面積與體積」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳並修改長方體與圓柱的關鍵尺寸，立即同步觀察立體圖、展開面、表面積與體積數值，再用會考型情境檢查單位與合理性。",
+    "scenario": "你是展場包裝設計員：拖曳長、寬、高或圓柱半徑與高，畫面即時更新 3D 圖形、展開圖、表格與公式；先預測，再操作，最後以候選答案代回訂單條件。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
+        "symbol": "l",
+        "meaning": "長方體的長"
+      },
+      {
+        "symbol": "w",
+        "meaning": "長方體的寬"
+      },
+      {
+        "symbol": "h",
+        "meaning": "長方體的高"
+      },
+      {
+        "symbol": "r",
+        "meaning": "圓柱底面的半徑"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "拖曳 l、w、h 後，第一步要如何區分表面積與體積，並讓 3D 圖、展開圖和表格的單位同步？",
         "options": [
           "整理對象、條件、單位與未知量",
           "直接套用上一題答案",
           "忽略題目中的限制"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "先標記表面積是外殼平方單位、體積是內部立方單位；若把 l×w×h 寫成平方單位，立即分流到單位診斷。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "把長方體的 h 拉高一格，觀察六個面與內部容量；哪個操作能同步重算展開圖面積和體積，而不是只改公式文字？",
         "options": [
           "逐步推理並記錄每一步理由",
           "只寫最後結果",
           "改用沒有定義的符號"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "操作尺寸後，展開圖的兩個底面與四個側面、數值表和公式都應更新；只改一個面會分流到『漏算相對面』。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "拖曳一組候選尺寸到會考型包裝題，如何同時用展開圖、公式、數值與單位代回判斷答案？",
         "options": [
           "回到原條件，以代回、圖形、資料或單位檢查",
           "只看答案看起來像不像",
           "跳過範圍與邊界檢查"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "候選值必須讓各面面積加總、長×寬×高與題目容量限制一致；若只看一個數字，系統分流要求補上圖形和單位證據。"
       }
     ]
   },
@@ -175,13 +317,49 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-9-13：表面積與體積」的表示、推理與驗算。",
-    "mission": "請依序分析「S-9-13：表面積與體積」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳並修改長方體與圓柱的關鍵尺寸，立即同步觀察立體圖、展開面、表面積與體積數值，再用會考型情境檢查單位與合理性。",
+    "mission": "你是展場包裝設計員：拖曳長、寬、高或圓柱半徑與高，畫面即時更新 3D 圖形、展開圖、表格與公式；先預測，再操作，最後以候選答案代回訂單條件。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    ],
+    "learningDesign": {
+      "type": "parameter-investigation",
+      "objective": "讓學習者修改立體尺寸並同步觀察 3D 圖、展開面、數值表和公式，區分表面積與體積，且以單位與會考情境限制驗證。",
+      "predictionPrompt": "長方體固定 l=6、w=4，將 h 從 2 拖到 5 前，先預測表面積和體積各怎樣改變；若只把 h 乘進 lwh，哪一個量的單位會不對？",
+      "evidencePrompt": "請提交兩組尺寸的展開圖面數、表面積、體積與單位，並用候選值代回包裝條件，解釋一個漏算相對面或混淆平方／立方單位的錯誤。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "拖曳長方體的 l、w、h，讓 3D 圖、六面展開圖與數值表同時更新",
+          "equation": "V=lwh；S=2(lw+lh+wh)",
+          "reason": "體積描述內部三維容量，表面積則是六個外露面的總和；同一尺寸在兩種表示中扮演不同角色。",
+          "feedback": "若 h 改變但展開圖沒有兩個相對側面跟著改，分流到漏算相對面；若 S 顯示立方單位，分流到單位修正。"
+        },
+        {
+          "id": "step-2",
+          "action": "切換展開圖的面並拖曳圓柱半徑 r 與高 h，比較矩形側面與兩個圓底的面積",
+          "equation": "S圓柱=2πr²+2πrh；V圓柱=πr²h",
+          "reason": "圓柱的側面展開成長方形，長是圓周 2πr；兩個底面是圓，表面積與體積不能共用同一個公式。",
+          "feedback": "若把 πr²h 當表面積，系統指出它是體積；若側面只算 πrh，回看側面長度應是完整圓周 2πr。"
+        },
+        {
+          "id": "step-3",
+          "action": "把會考型包裝訂單的尺寸與容量限制改成新數值，拖入候選答案並查看即時代回結果",
+          "equation": "S與V須分別符合題目要求，且單位為cm²與cm³",
+          "reason": "應用題答案不只要算式成立，還要符合指定尺寸、容量、材料用量與問題所問的量。",
+          "feedback": "若候選值只符合體積卻不符合紙板面積，系統標示量的種類錯誤；若超過容量限制，回到尺寸滑桿檢查。"
+        },
+        {
+          "id": "step-4",
+          "action": "用展開面逐面加總，再與公式和另一組候選尺寸交叉比對，提交圖形、表格、數值與文字解釋",
+          "equation": "展開圖加總=公式表面積；lwh=體積",
+          "reason": "多重表示一致才能支持結論；改變一個參數後仍能說明哪個量按一次方、平方或三維乘積變化，才完成遷移。",
+          "feedback": "若三種結果不同，系統依差異分流：少一面、半徑當直徑、平方／立方單位或把表面積當體積，要求修正後再驗證。"
+        }
+      ]
+    }
   }
 }

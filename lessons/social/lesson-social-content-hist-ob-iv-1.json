@@ -47,7 +47,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "kanghsuan",
@@ -67,6 +67,59 @@
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中社會公開教材（世界史時間線研究）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/geography_page.html?l1=7%E4%B8%8A",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["以十五、十六世紀航海活動與跨洲交流理解歐洲海外擴張的時代背景", "區分商業利益、國家競爭、宗教傳播與技術條件等多重動機"],
+        "representations": ["用時間線、航線圖與動機—結果表分析歷史變化"],
+        "examplesOrEvidence": ["將航線、港口、商品與傳教活動放回同一時間線，檢查是否能支持因果說法"],
+        "misconceptions": ["把海外擴張只解釋成單一英雄航海故事，忽略原有社會與被接觸者的處境"],
+        "assessmentEmphasis": ["能用時空資料與多重動機說明擴張及其影響"]
+      },
+      "licenseBoundary": "只取公開來源的時間線與歷史概念架構；本課敘事、資料、比較表、解析與活動均重新設計，不複製教材。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一國中社會公開學習資源（歷史因果研究）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nani.com.tw/",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["從航海者、國家、宗教團體與當地社會的不同位置理解海外擴張", "把傳教的宗教目的與殖民治理、經濟交換或文化衝突分開分析"],
+        "representations": ["用角色觀點表、事件鏈與正反影響矩陣整理歷史證據"],
+        "examplesOrEvidence": ["比較同一航海活動對出資國、商人、傳教者與當地居民造成的不同結果"],
+        "misconceptions": ["把傳教自動等同於單純文化交流，忽略權力不對等與強制性可能性"],
+        "assessmentEmphasis": ["能以不同角色的證據比較歷史事件，不用單一立場概括"]
+      },
+      "licenseBoundary": "只研究公開資源的角色觀點與因果分析方向；不複製任何題目、文字、圖片、影音或答案，所有案例均原創。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中社會公開教材索引（海外擴張結構研究）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.hle.com.tw/",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["用航海技術、帝國競爭與全球交流連結歐洲海外擴張的條件與後果", "區分物種、商品、人口、疾病與信仰跨洲流動的歷史現象"],
+        "representations": ["用地圖、流動箭頭與長短期影響表呈現全球連結"],
+        "examplesOrEvidence": ["將一項商品或作物的跨洲流動分成出發地、轉運路徑與接收地影響"],
+        "misconceptions": ["把全球交流只說成互利往來，忽略奴役、暴力與資源不平等的歷史後果"],
+        "assessmentEmphasis": ["能整合空間流動、權力關係與長期影響完成解釋"]
+      },
+      "licenseBoundary": "只研究公開索引的全球交流與歷史結構方向；本課文字、案例、圖示與作答引導均為原創，不重製出版社內容。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": ["歐洲海外擴張由航海技術、國家競爭、經濟利益與宗教傳播等因素共同推動", "傳教與殖民、貿易及權力關係可能同時存在，必須以時空與角色證據分開分析", "海外擴張造成全球交流，也伴隨暴力、奴役、疾病與資源不平等等複雜後果"],
+    "versionDifferences": ["康軒較適合從時間線與航線圖建立事件順序及動機", "南一較強調角色觀點與傳教、殖民的區分，適合進行歷史多觀點分析", "翰林較強調跨洲流動與長期影響，適合建立全球連結視角"],
+    "originalAdditions": ["設計多角色影響矩陣，要求同一事件分別從出資者、傳教者與當地社會檢查證據", "加入傳教與殖民關係的辨誤案例，避免把宗教目的直接簡化成單一善惡結論", "以商品或作物流動圖追蹤出發地、轉運與接收地的長短期影響"],
+    "llmSynthesisNote": "本單元先比較三版本對時間線、角色觀點與全球流動的安排，再由 LLM 以原創航線資料、影響矩陣與多觀點辨誤任務重寫歐洲海外擴張教學；未複製任何版本的題目、答案或敘述。"
+  },
   "teaching": {
     "body": [
       {
@@ -127,7 +180,7 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
+  "reviewStatus": "draft",
   "updatedAt": "2026-08-27",
   "lessonScope": "learning-content"
 }

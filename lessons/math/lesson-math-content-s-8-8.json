@@ -9,26 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "運用三角形內角和、外角與邊角關係解題。",
+    "summary": "三角形的三個內角總和固定為 180°，外角等於兩個不相鄰內角的和；邊長與對角大小也互相制約。本單元以屋架與航線轉向為情境，從內角和、外角、三角不等式與大邊對大角建立完整判讀。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "運用三角形內角和、外角與邊角關係解題。 能以角度與線段性質列式驗證。"
+        "heading": "角和、外角與邊角的三條線索",
+        "body": "三角形內角和為 180°；延長一邊形成的外角，等於兩個不相鄰內角和。邊長較大者，其對角也較大；任兩邊和必大於第三邊。這些性質可以互相檢查，但每條都有不同適用問題。"
       },
       {
-        "heading": "學習流程",
-        "body": "先辨認圖形與已知性質，再套用角度、對邊對角或對角線關係，最後檢查條件。"
+        "heading": "用圖形位置決定公式",
+        "body": "先標出內角、外角、對邊與對角，再選 180°、外角定理、邊角關係或三角不等式。寫完算式後回到圖形檢查角是否合理、最長邊對面是否最大，以及三邊是否真的能圍成三角形。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "混淆內角與外角、把一般四邊形當平行四邊形，或誤用對角線性質。"
+        "heading": "外角不是相鄰內角的任意替代物",
+        "body": "外角與相鄰內角和為 180°，也等於兩個不相鄰內角和；不能把三個內角全部相加。另要注意三角形不等式是嚴格大於，邊長 3、4、7 不能形成三角形。"
       }
     ]
   },
   "studyHighlights": [
-    "辨認圖形與已知條件。",
-    "套用對應幾何性質。",
-    "檢查角度與線段關係。"
+    "標示內外角、對邊對角及三邊。",
+    "依問題選內角和、外角或邊角性質。",
+    "用 180°、大小順序與三角不等式回查。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
@@ -41,7 +41,103 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上三角形性質公開章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/m-g8a-s03；僅核對三角形內角、外角與邊角關係章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引支持三角形內角和與外角關係。",
+          "邊角大小及三角不等式提供圖形可行性與順序判斷。"
+        ],
+        "representations": [
+          "以三角形圖、延長線、角度式與邊長比較表示。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編屋架、外角 125° 與三邊可行性案例。"
+        ],
+        "misconceptions": [
+          "混淆相鄰與不相鄰外角，或把等號當成三角不等式。"
+        ],
+        "assessmentEmphasis": [
+          "要求由圖形位置選用正確性質並回查。"
+        ]
+      },
+      "licenseBoundary": "只研究公開索引，不複製或改寫南一教材、圖像、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學八上官方影音 XML",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；核對三角形與多邊形角度資源分類。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開資源支持用 180° 與外角定理處理未知角。",
+          "邊長與對角大小的順序可用來驗證答案合理性。"
+        ],
+        "representations": [
+          "以屋架、航線、延長線與角度標記互相轉換。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編屋架角度與浮標航線活動。"
+        ],
+        "misconceptions": [
+          "把三角形外角當成三內角總和，或忽略最大邊對最大角。"
+        ],
+        "assessmentEmphasis": [
+          "檢查角度關係、邊角排序與圖形存在條件。"
+        ]
+      },
+      "licenseBoundary": "只使用官方 XML 的章節與資源分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網 2A 章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/2A/；核對三角形基本性質公開章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引將三角形基本性質連到內外角與邊角關係。",
+          "由角度和邊長反推或檢查，是幾何推理的重要表徵轉換。"
+        ],
+        "representations": [
+          "以延長邊、外角、三角不等式與大小排序表示。"
+        ],
+        "examplesOrEvidence": [
+          "本課加入 5、7、11 與 4、6、10 的可行性對照。"
+        ],
+        "misconceptions": [
+          "把最大角放在最大邊旁邊，或把不相鄰角判錯。"
+        ],
+        "assessmentEmphasis": [
+          "要求說明每個角度或邊長結論的圖形證據。"
+        ]
+      },
+      "licenseBoundary": "只研究公開章節索引，不複製翰林教材、影音、題庫、答案或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開資料都以三角形內角、外角與邊角關係建立基本性質。",
+      "角度和、外角定理、三角不等式與大小順序是共同核心。",
+      "可取得資料主要為公開章節與資源索引，不能推稱取得出版社完整正文。"
+    ],
+    "versionDifferences": [
+      "南一索引偏向角與邊的性質定位，康軒 XML 可核對角度應用資源，翰林索引連到圖形推理；本課以屋架、航線和可行性反例整合。"
+    ],
+    "originalAdditions": [
+      "用屋架和外角 125° 建立內外角雙重回查。",
+      "用可形成與不可形成的三邊比較嚴格不等式。",
+      "互動中分開處理角度和、外角、邊角順序與存在條件。"
+    ],
+    "llmSynthesisNote": "LLM 依官方課綱與 KG 界定三角形內外角、邊角關係與三角不等式，再比較南一、康軒、翰林公開研究，以屋架、航線和可行性反例重新撰寫；全文為原創，Terra 第二輪尚未執行，故維持 draft。"
+  },
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,6 +155,57 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-8-8：三角形的基本性質」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上三角形性質公開章節索引",
+      "subject": "math",
+      "chapterLocator": "S-8-8 三角形的基本性質",
+      "sourceUrl": "https://www.junyiacademy.org/topics/m-g8a-s03",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對三角形角與邊性質；本課以屋架、外角和不等式獨立重寫。",
+      "copyrightBoundary": "只研究公開章節定位，不複製南一教材、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒八上官方數學影音 XML",
+      "subject": "math",
+      "chapterLocator": "八上三角形與多邊形角度",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "官方 XML 核對三角形角度與邊角資源分類；本課轉化為外角回查與航線活動。",
+      "copyrightBoundary": "只研究公開 XML 分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林 2A 公開數學影音索引",
+      "subject": "math",
+      "chapterLocator": "2A 三角形基本性質",
+      "sourceUrl": "https://mathvideo.hle.com.tw/2A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對三角形基本性質脈絡；本課正文、例題、互動與回饋均獨立撰寫。",
+      "copyrightBoundary": "只研究公開索引，不複製翰林教材、影音、題庫或答案。"
     }
   ],
   "teaching": {
@@ -66,38 +213,38 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-8-8：三角形的基本性質」",
-        "body": "先讀懂「S-8-8：三角形的基本性質」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "屋架角度能否閉合？",
+        "body": "木工把三根桿件接成三角形，量得兩個內角 48° 和 67°，第三角不是任意猜測，而由三角形內角和決定為 65°。若外框延長一根桿件，外角又會提供另一種讀法；同一個圖形有多條可互相檢查的線索。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「三角形的基本性質」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "內角、外角和邊角順序",
+        "body": "三內角和是 180°。一個外角等於兩個不相鄰內角的和，也和它相鄰的內角互補。若知道三邊長，最大邊對面的角最大；若只知道邊長，先用任兩邊和大於第三邊檢查圖形能否成立。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-8-8：三角形的基本性質」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "外角 125° 的兩種回查",
+        "body": "若頂點 C 的外角為 125°，與它相鄰的內角是 55°；另外兩個不相鄰內角若為 30° 與 95°，其和也正是 125°。這兩種計算同時成立，能檢查是否把相鄰角誤當不相鄰角。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "三角不等式的可行性檢查",
+        "body": "邊長 5、7、11 可以形成三角形，因為 5＋7＞11；邊長 4、6、10 不行，因為兩短邊和只等於最長邊，會攤成一條線。先做這個檢查，避免對不存在的三角形繼續計算角度。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-8-8：三角形的基本性質」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "航線轉向與最大邊",
+        "body": "三個浮標連成三角形，兩條航線長 8 公里與 11 公里，第三邊 14 公里是最大邊，因此對面角也最大。這只能給出大小順序，不能直接給出角度數值；若題目另給一個角，再使用內角和或外角關係。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-8-8：三角形的基本性質」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "讓角度與邊長互相作證",
+        "body": "最後整理一題的證據：角度是否加成 180°？外角是否等於兩個不相鄰內角和？最大邊是否對最大角？三邊是否滿足嚴格三角不等式？四項中任一項不合，就回到圖形確認讀錯位置或條件。"
       }
     ],
     "summary": [
@@ -121,12 +268,12 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-8-8：三角形的基本性質」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-8-8：三角形的基本性質」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "操作三角形角與邊的資料，分辨內角和、外角定理、邊角關係與三角不等式。",
+    "scenario": "你是屋架測量員，要由角度和邊長資料確認三角形是否能成立。",
     "variables": [
       {
         "symbol": "x",
@@ -136,36 +283,36 @@
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "三角形已知兩個內角 48°、67°，第三角應先用哪項性質？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "三內角和為 180°",
+          "外角和為 360°",
+          "最大邊對最大角"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "第三角是 180°−48°−67°＝65°，這裡使用的是三角形內角和。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "外角 125° 的兩個不相鄰內角為 30°、95°，最能支持哪個結論？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "30°＋95°＝125°，符合外角等於兩不相鄰內角和",
+          "30°＋95°＝180°，符合同側內角互補",
+          "125° 是三個內角的總和"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "外角由兩個不相鄰內角相加得到；相鄰內角則與它互補。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "邊長 4、6、10 能形成三角形嗎？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "不能，因為 4＋6 不大於 10",
+          "可以，因為 4＋6 等於 10",
+          "可以，因為 10 是最大邊"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "三角不等式要求兩短邊和嚴格大於第三邊，等於時只能攤成一直線。"
       }
     ]
   },
@@ -175,13 +322,42 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-8-8：三角形的基本性質」的表示、推理與驗算。",
-    "mission": "請依序分析「S-8-8：三角形的基本性質」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "操作三角形角與邊的資料，分辨內角和、外角定理、邊角關係與三角不等式。",
+    "mission": "你是屋架測量員，要由角度和邊長資料確認三角形是否能成立。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    ],
+    "learningDesign": {
+      "type": "parameter-investigation",
+      "objective": "用內角和、外角與邊角關係檢查三角形可行性，並由條件推出未知角或邊的限制。",
+      "predictionPrompt": "三角形已有兩角 50°、60°，你預測第三角是多少？它能否是鈍角？",
+      "evidencePrompt": "請先用內角和求第三角，再用最大角對最大邊檢查圖形敘述。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "以內角和建立未知角方程式",
+          "equation": "50°＋60°＋x＝180° → x＝70°",
+          "reason": "三角形三內角總和固定為 180°，可把幾何條件轉為等式。",
+          "feedback": "不要把外角 180°直接當成三內角和；先確認角的種類。"
+        },
+        {
+          "id": "step-2",
+          "action": "用角度大小判斷三角形類型",
+          "equation": "50°、60°、70° → 銳角三角形",
+          "reason": "三角形類型由最大角是否小於、等於或大於 90°決定。",
+          "feedback": "只要一角大於 90°就是鈍角；不要用邊長分類代替角度判斷。"
+        },
+        {
+          "id": "step-3",
+          "action": "用邊角對應關係檢查敘述",
+          "equation": "最大角對最大邊；相等角對相等邊",
+          "reason": "邊與對角關係提供獨立的合理性檢查，能排除不可能的圖形敘述。",
+          "feedback": "比較邊時要看它們各自對面的角，不是相鄰角。"
+        }
+      ]
+    }
   }
 }

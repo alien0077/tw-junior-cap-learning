@@ -9,163 +9,308 @@
     "8"
   ],
   "content": {
-    "summary": "以十分逼近或估算理解二次方根的近似值。",
+    "summary": "以相鄰平方數夾逼、十分逼近與誤差界線，理解非完全平方數平方根的近似值。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "以十分逼近或估算理解二次方根的近似值。 能用估算、規律或代入檢查。"
+        "body": "能判斷平方根所在區間，利用平方比較求到指定位數，並區分近似值與精確值。"
       },
       {
-        "heading": "學習流程",
-        "body": "先整理數值或項次，觀察範圍與規律，建立關係，再檢查近似誤差或項值。"
+        "heading": "核心課文",
+        "body": "若 a²＜n＜b²，就有 a＜√n＜b；把區間切成十分，再逐次以試值平方縮小上下界。"
       },
       {
         "heading": "常見錯誤",
-        "body": "把近似值當精確值、忽略誤差範圍，或只看相鄰兩項未驗證整體規律。"
+        "body": "不可把 √n 當成 n 的一半、只看個位猜根號，或把 √2≈1.41 寫成 √2=1.41。"
       }
     ]
   },
   "studyHighlights": [
-    "先整理範圍與項次。",
-    "觀察規律建立關係。",
-    "檢查誤差與結果。"
+    "先用相鄰平方數夾住根號，再決定精度。",
+    "每次試值都平方檢查，近似位數要連同誤差看。",
+    "以數線、平方比較與測量用途互相驗證。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
     "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://www.junyiacademy.org/topics/n-m8a",
+    "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+    "https://mathvideo.hle.com.tw/1A/"
   ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+    "authoringNote": "依官方課綱、KG 與三方可取得研究資料獨立撰寫；南一證據是明示依南一架構的均一索引，翰林證據是公開影音索引，均非教材全文；未複製出版社內容。"
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "publisher": "nani",
+      "edition": "均一類南一版數學八年級公開章節索引",
       "subject": "math",
-      "chapterLocator": "N-8-2：二次方根的近似值",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "八上第二章「平方根與畢氏定理」；頁面明示依南一版架構編排",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m8a",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression"
+      ],
+      "outcome": "只能確認平方根章的八上定位與章節順序，沒有可逐頁核對 N-8-2 的教材正文；本課不以索引臆測例題。",
+      "copyrightBoundary": "只採用公開章節定位，不複製或重建南一教材文字、圖片、例題、題目與答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開影片 XML",
+      "subject": "math",
+      "chapterLocator": "8上 2-1「平方根與近似值」；p61–p71 的例題、練習、自我檢核、自我評量與「十分逼近法」項目",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「N-8-2：二次方根的近似值」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "公開 metadata 支持由平方根與近似值進入例題、十分逼近、挑錯與分層練習；本課吸收夾逼到檢核的順序並另寫 √7、√13 例證。",
+      "copyrightBoundary": "只研究公開 XML 的章節、頁碼、影片分類與名稱，不重製影片、頁面、題目、答案或逐字稿。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音索引",
+      "subject": "math",
+      "chapterLocator": "8上第2章「平方根與畢氏定理」公開章節索引；本地 HTML 未直接列出 N-8-2 文字",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "assessment-pattern"
+      ],
+      "outcome": "可確認平方根章的公開影音與回顧／自評資源邊界，但沒有 N-8-2 逐課正文；本課只採用章節定位，不虛構翰林例題。",
+      "copyrightBoundary": "不把公開索引延伸為教材全文；不複製影音、講義、圖片、題目或答案。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "均一類南一版八年級數學公開章節索引（math-junyi.html）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m8a；八上第二章「平方根與畢氏定理」；明示依南一版架構，非南一教材全文。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "平方根位於八年級上學期平方根章脈絡。",
+          "公開索引支持章節邊界，不支持逐例題重建。"
+        ],
+        "representations": [
+          "本課以數線與平方值表補足索引沒有提供的近似表示。"
+        ],
+        "examplesOrEvidence": [
+          "索引明示八上第二章章名，未提供 N-8-2 逐題正文。"
+        ],
+        "misconceptions": [
+          "索引未提供迷思；本課依定義自行設計平方比較診斷。"
+        ],
+        "assessmentEmphasis": [
+          "索引未呈現題目層級評量，本課以夾逼、位數與誤差檢核。"
+        ]
+      },
+      "licenseBoundary": "只使用公開章節定位；正文與例題皆為本課原創，不重製教材文字或題目。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開影片 XML（math-knsh-public.xml）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；8上 2-1「平方根與近似值」p61–p71，含十分逼近、自我檢核與自我評量。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "單元把平方根與近似值連成連續學習任務。",
+          "十分逼近支持逐位細分平方根區間。"
+        ],
+        "representations": [
+          "例題、練習與十分逼近 metadata 支持結合平方表、數線與不等式。"
+        ],
+        "examplesOrEvidence": [
+          "XML 列出 2-1 多個頁碼例題、隨堂練習、自我評量與十分逼近法項目。"
+        ],
+        "misconceptions": [
+          "自我評量挑錯項目支持安排錯誤診斷；本課自行寫近似等式與漏檢平方兩例。"
+        ],
+        "assessmentEmphasis": [
+          "自我檢核、基礎／精熟練習與挑錯呈現由程序到理由的評量梯度。"
+        ]
+      },
+      "licenseBoundary": "只讀取公開 XML metadata，不複製影片、文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音索引（hanlin-math-index.html）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；8上第2章「平方根與畢氏定理」索引，未直接列出 N-8-2 文字。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "索引支持平方根與畢氏定理同章的課程邊界。",
+          "沒有直接 N-8-2 文字證據，故不宣稱特定翰林例題。"
+        ],
+        "representations": [
+          "公開資源類型包含回顧／自評；本課另建數線與平方表。"
+        ],
+        "examplesOrEvidence": [
+          "本地 HTML 可核對八上第2章章名，未發現可直接引用的近似值例題。"
+        ],
+        "misconceptions": [
+          "索引沒有迷思說明，錯誤診斷由數學定義自行推導。"
+        ],
+        "assessmentEmphasis": [
+          "回顧／自評資源支持本課安排誤差界線與反平方驗算。"
+        ]
+      },
+      "licenseBoundary": "只使用公開索引定位與資源類型，不複製影音、講義、題目或答案。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三方可取得資料與官方 KG 都把本課放在八年級平方根章脈絡。",
+      "康軒 metadata 明確呈現平方根、近似值、十分逼近與檢核；南一與翰林索引提供相容章節邊界。",
+      "本課共同核心是相鄰平方數夾逼、逐位平方比較與誤差檢查。"
+    ],
+    "versionDifferences": [
+      "南一是類南一版章節索引、康軒是含頁碼與活動類型的 XML、翰林是章節影音索引；南一與翰林均沒有可直接核對的 N-8-2 完整正文。"
+    ],
+    "originalAdditions": [
+      "以 √7 完整示範整數到百分位的平方夾逼。",
+      "以 √13 的 3.605＜√13＜3.606 區分四捨五入、精確等式與誤差。",
+      "以 20 平方公分正方形邊長設計測量用途與精度選擇活動。"
+    ],
+    "llmSynthesisNote": "先以官方課綱 N-8-2 與 kg-math-content-n-8-2 定界，再讀取三方可取得來源；對索引缺漏明確標示不可推測部分。正文、例題、迷思、練習、遷移與互動流程依本單元重新設計，未使用固定模板或出版社題材。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「N-8-2：二次方根的近似值」",
-        "body": "先讀懂「N-8-2：二次方根的近似值」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "一塊面積 7 的正方形地磚",
+        "body": "想像要替一塊面積正好是 7 平方公分的正方形裁出邊長。若邊長記作 x，就有 x²=7，因此正方形的邊長應寫成 √7，而不是把 7 除以 2。因為 2²=4、3²=9，且 4＜7＜9，所以正數 √7 一定落在 2 與 3 之間；這個區間也告訴我們 √7 的整數部分是 2。非完全平方數的根通常不能用有限小數精確寫完，近似值必須從平方後的證據產生，而不是只看根號內的個位數猜測。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「二次方根的近似值」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "平方比較如何產生十分逼近",
+        "body": "十分逼近的核心不是把小數硬湊出來，而是把原本的區間切成十份，再用平方判斷根在哪一小段。一般而言，對正數 a、b，若 a²＜n＜b²，就能推出 a＜√n＜b。以 √7 為例，先在 2 到 3 之間試十分位：2.6²=6.76＜7，而 2.7²=7.29＞7，所以 2.6＜√7＜2.7。接著在這一段中試百分位，2.64²=6.9696＜7、2.65²=7.0225＞7，於是 2.64＜√7＜2.65。每次都要記下兩側平方值，因為真正縮小的是有證據的上下界。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「N-8-2：二次方根的近似值」為主題，將 84 分解為 2×2×3×7，先標出每個質因數，再用乘回 84 驗算。若改成負數或分數，先寫出符號與單位，再選擇相同的分解與檢查流程。"
+        "heading": "√13 的近似位數與誤差",
+        "body": "試著估計 √13。先找整數部分：3²=9＜13＜16=4²，因此 3＜√13＜4，整數部分是 3。再細分到百分位，3.60²=12.96＜13、3.61²=13.0321＞13，得到 3.60＜√13＜3.61。若需要更細的判斷，可再算 3.605²=12.996025＜13，以及 3.606²=13.003236＞13，所以 3.605＜√13＜3.606。實際值落在這個寬度為 0.001 的區間內，故取到小數第三位可寫 √13≈3.606；若用計算機得到一串小數，也仍是近似顯示。符號 ≈ 說明接近，不能改成 √13=3.606。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "用上下界追蹤 √11",
+        "body": "現在把方法交給你追蹤 √11。由 3²=9＜11＜16=4²，先知道 3＜√11＜4；試十分位時，3.3²=10.89＜11、3.4²=11.56＞11，因此根在 3.3 與 3.4 之間。再試百分位，3.31²=10.9561＜11、3.32²=11.0224＞11，便有 3.31＜√11＜3.32，可以把 √11 取到小數第二位為 3.32。注意「兩個平方值一個小於、一個大於目標」才是有效夾逼；若兩個試值平方都小於 11 或都大於 11，不能宣布答案，必須回到尚未確定的區間重新選點。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「N-8-2：二次方根的近似值」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "測量時精度要配合用途",
+        "body": "近似值的位數要由問題用途決定。面積 20 平方公分的正方形，邊長是 √20=2√5，計算機可顯示約 4.472135…公分。若只問它能不能放入寬 4.5 公分的盒子，知道 4.47＜√20＜4.48 就足以判斷邊長小於 4.5；若要裁切材料，則應先說明需要精確到公分、毫米或更細，再按照下一位四捨五入，避免把 4.472 當成永遠精確的長度。保留 √20 這個精確式能維持原來的面積關係，寫成 4.472 是為了溝通測量結果，兩種表示各有用途。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「N-8-2：二次方根的近似值」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "把答案送回平方關係檢查",
+        "body": "完成一題後，請用反向檢核把答案送回原問題，而不是只看小數是否漂亮。第一，找出相鄰平方數，確認整數部分；第二，讓試值的平方分居目標數兩側，寫出根號的上下界；第三，依題目指定的位數看下一位，並標示近似符號與可接受的誤差範圍。例如 2.64²＜7＜2.65²，所以 2.64＜√7＜2.65；可寫 √7≈2.65，但 2.65²=7.0225≠7，故不能寫 √7=2.65。若使用計算機，也要把顯示值當作估計並用平方或區間回查。能同時說明夾逼理由、取位規則和精確／近似的差別，才是真正掌握 N-8-2。"
       }
     ],
     "summary": [
-      "先用自己的話界定「二次方根的近似值」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "先用相鄰平方數夾住平方根，再以平方值說明上下界。",
+      "逐位試值並平方比較，保存上下界證據。",
+      "四捨五入看下一位，近似符號不等於精確等號。",
+      "把精度連到測量用途，再用平方回頭驗算。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「二次方根的近似值」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼 3＜√13＜4？",
+        "expectedEvidence": "指出 3²=9＜13＜16=4²，並由平方比較得到區間。"
       },
       {
-        "prompt": "在「二次方根的近似值」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "若 3.605²＜13＜3.606²，√13 落在哪裡？",
+        "expectedEvidence": "寫出 3.605＜√13＜3.606，並說明區間寬度控制到 0.001。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「二次方根的近似值」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼 √7≈2.65 不能寫成 √7=2.65？",
+        "expectedEvidence": "指出 2.65²=7.0225 不等於 7，2.65 只是指定精度下的近似值。"
+      },
+      {
+        "prompt": "面積 20 的正方形能否放入寬 4.5 的盒子？",
+        "expectedEvidence": "以 √20≈4.47 比較 4.5，並說明所選位數足以支持判斷。"
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「N-8-2：二次方根的近似值」的表示、推理與驗算。",
-    "scenario": "請依序分析「N-8-2：二次方根的近似值」的條件，選出最能保留資訊、可被驗證的做法。",
+    "type": "guided-choice",
+    "goal": "用平方值與數線逐步夾逼 √7，理解近似位數與誤差。",
+    "scenario": "估計面積 7 的正方形邊長，每一步選擇能縮小且可驗證的試值。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
+        "meaning": "正方形邊長的非負近似值"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "√7 的整數範圍？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "比較 2²=4 與 3²=9，得 2＜√7＜3",
+          "把 7 除以 2",
+          "只看 7 的個位猜小數"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "相鄰平方數 4、9 把 7 夾住。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "要找十分位，哪組試值有效？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "比較 2.6²=6.76 與 2.7²=7.29",
+          "只比較 6² 和 7²",
+          "把 2、3 平均而不平方"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "平方值分居 7 兩側，故 2.6＜√7＜2.7。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "2.64²＜7＜2.65² 表示什麼？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "2.64＜√7＜2.65，可依精度取近似",
+          "√7=2.65",
+          "√7=7.0225"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "夾逼提供區間；2.65 仍不是精確等值。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "四捨五入到小數第二位要看什麼？",
+        "options": [
+          "看小數第三位所在的夾逼或試算結果",
+          "看到 2.6 就一律捨去",
+          "把 7 直接四捨五入"
+        ],
+        "answer": "A",
+        "feedback": "進位依下一位決定，不是直接處理根號內的數。"
       }
     ]
   },
@@ -175,13 +320,52 @@
     "engine": "math-number-line",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「N-8-2：二次方根的近似值」的表示、推理與驗算。",
-    "mission": "請依序分析「N-8-2：二次方根的近似值」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "用平方值與數線逐步夾逼 √7，理解近似位數與誤差。",
+    "mission": "估計面積 7 的正方形邊長，每一步選擇能縮小且可驗證的試值。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
-      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "https://www.junyiacademy.org/topics/n-m8a",
+      "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "https://mathvideo.hle.com.tw/1A/"
+    ],
+    "learningDesign": {
+      "type": "parameter-investigation",
+      "objective": "操作 √7 試值位數與上下界，建立平方分居目標數兩側和誤差之間的關係。",
+      "predictionPrompt": "預測 √7 會落在 2.6 與 2.7 之間哪裡；位數增加一位時區間寬度如何變化？",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "輸入 7，放置整數端點 2 與 3。",
+          "equation": "2²=4＜7＜9=3²",
+          "reason": "相鄰平方數先確定整數區間，讓後續試值有明確起點。",
+          "feedback": "端點平方須分居 7 兩側，否則就沒有形成有效夾逼。"
+        },
+        {
+          "id": "step-2",
+          "action": "切成十分，試 2.6 與 2.7。",
+          "equation": "2.6²=6.76＜7＜7.29=2.7²",
+          "reason": "平方分居兩側才能縮小區間，並保留可回查的判斷理由。",
+          "feedback": "更新為 2.6＜√7＜2.7，下一步就在這個區間內細分。"
+        },
+        {
+          "id": "step-3",
+          "action": "再切十分，試 2.64 與 2.65。",
+          "equation": "2.64²=6.9696＜7＜7.0225=2.65²",
+          "reason": "重複平方比較可控制到百分位，並把每次試算結果留下來。",
+          "feedback": "更新為 2.64＜√7＜2.65，區間寬度已縮到百分之一。"
+        },
+        {
+          "id": "step-4",
+          "action": "在數線同時標上下界與近似點。",
+          "equation": "0＜2.65-√7＜0.01",
+          "reason": "區間寬度說明近似誤差，不把近似符號誤讀成精確等號。",
+          "feedback": "若出現等號，請改用不等式與≈，因為試值平方通常不會剛好等於目標數。"
+        }
+      ],
+      "evidencePrompt": "提交上下界平方值、數線區間與一句近似符號解釋，證明 √7 近似值有可重現依據。"
+    }
   }
 }

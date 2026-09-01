@@ -9,163 +9,311 @@
     "9"
   ],
   "content": {
-    "summary": "理解三個量的連比關係，化為等值比並求未知量。",
+    "summary": "連比用共同單位同時描述三個以上量的比例關係；本課學習比值鏈的對齊、最簡整數比、總量分配與回代驗算。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "理解三個量的連比關係，化為等值比並求未知量。 能以代回或比例檢查結果。"
+        "heading": "兩個比先找共同量",
+        "body": "若甲：乙＝2：3、乙：丙＝4：5，乙在兩個比中代表同一個量，卻出現 3 份和 4 份，不能直接拼接。要先將乙調成相同份數。"
       },
       {
-        "heading": "學習流程",
-        "body": "辨認比值或公比，整理項次與未知量，建立關係後逐步求解並驗算。"
+        "heading": "把比例鏈接起來",
+        "body": "把乙調到 12 份：2：3 同乘 4 得 8：12，4：5 同乘 3 得 12：15，所以甲：乙：丙＝8：12：15。不同段落可用不同倍數，但共同量最後必須一致。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "把公比當公差、連比前後項對錯，或忽略比例同乘同除條件。"
+        "heading": "從份數求實際量",
+        "body": "8：12：15 的總份數為 35。總額 700 元時，每份為 20 元，三量為 160、240、300；再以兩個原比回代，確認比例與總和都正確。"
       }
     ]
   },
   "studyHighlights": [
-    "先辨認比值關係。",
-    "依項次或比例求解。",
-    "代回檢查結果。"
+    "連比的中間量必須先調成同一份數，不能直接拼接兩個比。",
+    "比例各項同乘同除會保留關係，但各段的調整倍數可以不同。",
+    "由總量求實際數量要先算總份數，再求每份代表的量。",
+    "用原來相鄰的兩個比、總和與單位一起回查。"
   ],
   "studyReferences": [
-    "https://cap.rcpet.edu.tw/index.html",
-    "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://www.junyiacademy.org/topics/n-m9a-c01-1",
+    "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+    "https://mathvideo.hle.com.tw/1A/"
   ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+    "authoringNote": "依官方課綱、KG、南一類公開索引、康軒官方 XML 與翰林公開索引融合撰寫；未複製出版社正文、題目、答案、圖片或影音。原內容為通用佔位教材，已重新獨立撰寫並降級為 draft。"
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "publisher": "nani",
+      "edition": "類南一版均一教育平台九年級比例公開索引",
       "subject": "math",
-      "chapterLocator": "N-9-1：連比",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "九上第一章／1-1 連比及其應用；公開索引非南一教材全文",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m9a-c01-1",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-30",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「N-9-1：連比」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "可確認九年級比例章的連比範圍與應用方向；未公開完整正文，故只採可核對的章節邊界。",
+      "copyrightBoundary": "只研究公開章節 metadata，不複製正文、圖片、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學九上官方影音 XML",
+      "subject": "math",
+      "chapterLocator": "官方 XML／9上／1-1 連比例，含課本解題、隨堂練習與自我評量分類",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "XML 支持連比例由概念、課本解題到練習與評量的學習節奏；本課將共同量對齊與分配回代重新設計。",
+      "copyrightBoundary": "只使用公開 XML 的課次與資源分類，不轉錄影片或教材。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學九年級公開影音索引",
+      "subject": "math",
+      "chapterLocator": "9上第1章／1-1 連比；公開章節、回顧與自評定位",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引確認 1-1 連比範圍與概念／檢核分層；本課不把索引推成翰林正文。",
+      "copyrightBoundary": "只研究公開索引，不複製出版社文字、例題、答案、影音或圖片。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "類南一版均一教育平台九年級比例索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m9a-c01-1；九上比例單元，非教材全文",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "連比位於九年級比例單元脈絡，與多量比例應用相連。",
+          "索引不足以確認原題與逐頁正文。"
+        ],
+        "representations": [
+          "本課自編比例鏈、共同中間份數、份數表與回代。"
+        ],
+        "examplesOrEvidence": [
+          "可核對 1-1 連比定位；8：12：15 與 700 元為自編案例。"
+        ],
+        "misconceptions": [
+          "自行設計中間量未對齊、直接拼接比與漏算總份數診斷。"
+        ],
+        "assessmentEmphasis": [
+          "由比例表示進入應用與回代檢核。"
+        ]
+      },
+      "licenseBoundary": "只使用章節 metadata 作為範圍證據，不複製任何教材內容。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學九上官方 XML",
+      "sourceType": "local-download",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機 math-knsh-public.xml／9上 1-1",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "官方 XML 將連比例置於九上比例章。",
+          "課本、隨堂與自評呈現分層節奏。"
+        ],
+        "representations": [
+          "本課以中間量對齊表連到總份數和實際量。"
+        ],
+        "examplesOrEvidence": [
+          "XML 可定位 1-1 資源類型；案例皆重新創作。"
+        ],
+        "misconceptions": [
+          "自行診斷不同倍數未對齊、比例方向顛倒與單位遺漏。"
+        ],
+        "assessmentEmphasis": [
+          "共同單位、總量分配與雙重驗算。"
+        ]
+      },
+      "licenseBoundary": "只研究 XML metadata 與資源分類，不轉錄教材文字或影音內容。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學九年級公開影音索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；9上 1-1 連比公開索引",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "索引確認 1-1 連比課程邊界。",
+          "公開頁面未提供可重製的完整正文。"
+        ],
+        "representations": [
+          "本課以三欄份數表、箭頭調整與原比回代呈現。"
+        ],
+        "examplesOrEvidence": [
+          "可核對章節定位；文字與數據均為原創。"
+        ],
+        "misconceptions": [
+          "加入項次錯接、比例方向與非整數每份的條件診斷。"
+        ],
+        "assessmentEmphasis": [
+          "安排說明理由、計算與反向檢查。"
+        ]
+      },
+      "licenseBoundary": "只使用公開索引定位與資源分類，不複製教材文字、題目或影音內容。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本資料都把連比放在九年級比例脈絡，核心是多個量的比例關係與應用。",
+      "公開資源都呈現概念、練習與檢核層次；本課以共同份數、總份數與回代具體化。",
+      "官方 KG N-9-1 聚焦連比，不混入等差或等比數列。"
+    ],
+    "versionDifferences": [
+      "南一為類南一公開索引，康軒為官方 XML，翰林為公開影音索引，證據深度不同。",
+      "三版本公開資料未提供可合法重製的完整正文與原題，故案例全部自編。"
+    ],
+    "originalAdditions": [
+      "以中間量未對齊造成的矛盾作為入口。",
+      "以 8：12：15 和 700 元串起共同份數、每份價值與實際數量。",
+      "設計比例鏈工作臺，讓學習者調整中間量並回代原比。",
+      "加入直接拼接、方向顛倒、漏算份數與非整數單位等迷思。"
+    ],
+    "llmSynthesisNote": "依官方課綱、KG、三版本公開研究與本機康軒 XML，先比較概念順序、表示法、例型與迷思，再以自己的話獨立融合撰寫；未複製出版社內容。Terra 第二輪尚未執行，故維持 draft。"
+  },
   "teaching": {
     "body": [
       {
-        "id": "hook",
+        "id": "mismatch-discovery",
         "phase": "hook",
-        "heading": "從問題情境看見「N-9-1：連比」",
-        "body": "先讀懂「N-9-1：連比」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "兩個比不能直接排在一起",
+        "body": "社團分配經費時，甲：乙＝2：3、乙：丙＝4：5。乙是同一個人，卻被寫成 3 份與 4 份；先發現這個衝突，才知道連比的第一步不是拼數字，而是統一共同量。可以把乙想成刻度尺：兩把尺的每一格大小不同，不能直接把刻度接在一起。"
       },
       {
-        "id": "explain",
+        "id": "common-unit",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「連比」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "先對齊中間量，再接成連比",
+        "body": "3 和 4 的最小公倍數是 12。第一段乘 4 成為 8：12，第二段乘 3 成為 12：15，因此甲：乙：丙＝8：12：15。不同段落可以用不同倍數，但乙最後必須是同一份數。"
       },
       {
-        "id": "worked",
+        "id": "allocation-example",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「N-9-1：連比」為主題，將 84 分解為 2×2×3×7，先標出每個質因數，再用乘回 84 驗算。若改成負數或分數，先寫出符號與單位，再選擇相同的分解與檢查流程。"
+        "heading": "從份數走回實際金額",
+        "body": "連比 8：12：15 的總份數是 35。700 元除以 35 得每份 20 元，三量依序為 160、240、300 元。回代 160：240＝2：3、240：300＝4：5，並檢查總和 700，才能排除只算對總量卻接錯比例的情況。"
       },
       {
-        "id": "guided",
+        "id": "error-cards",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "用錯誤卡找出比例斷點",
+        "body": "把 2：3 和 4：5 直接寫成 2：3：5，錯在乙未對齊；把 8：12：15 約成 2：3：15，錯在只處理前兩項；把甲：乙倒寫，則比例方向顛倒。每次修正都要回代兩個原比。"
       },
       {
-        "id": "transfer",
+        "id": "condition-transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「N-9-1：連比」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "比例方法也有條件",
+        "body": "總額若是 710 元，每份為 142／7 元，比例仍可成立；若題目要求整數元，就必須說明條件不符或改用更小單位。套用到食譜、地圖或混合物時，先確認量的順序與單位一致，不能只看三個數字。"
       },
       {
-        "id": "reflect",
+        "id": "back-check",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「N-9-1：連比」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "用三次回查整理答案",
+        "body": "先確認共同量份數一致，再確認各份數加總與每份乘回總量，最後把相鄰實際量代回原來兩個比。能同時說出調整倍數、每份意義與回代證據，才是真正掌握連比；若只算出三個數卻不能解釋乙代表幾份，仍要回到共同量重新檢查。"
       }
     ],
     "summary": [
-      "先用自己的話界定「連比」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "連比先處理共同量，再把多個比接成比例鏈。",
+      "調整中間量時要讓同一量的份數相同。",
+      "由總量求實際量要先算總份數與每份價值。",
+      "用原比回代、總量與單位檢查答案。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「連比」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "甲：乙＝2：3、乙：丙＝4：5，為何不能直接拼接？請求連比。",
+        "expectedEvidence": "指出乙未對齊，得到 8：12：15。"
       },
       {
-        "prompt": "在「連比」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "700 元按 8：12：15 分配，各量是多少？",
+        "expectedEvidence": "算出總份數 35、每份 20 元，得到 160、240、300。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「連比」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "如何驗證三量沒有接錯？",
+        "expectedEvidence": "回代兩個原比並檢查總和 700。"
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「N-9-1：連比」的表示、推理與驗算。",
-    "scenario": "請依序分析「N-9-1：連比」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "操作兩段比例的共同中間量，建立連比並用原比回代。",
+    "scenario": "先對齊乙的份數，再完成連比與總額分配，最後檢查兩段原比。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
+        "symbol": "k",
+        "meaning": "調整共同量的倍數"
+      },
+      {
+        "symbol": "t",
+        "meaning": "三量總額"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "2：3 與 4：5 的共同量先調到哪裡？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "12，因為 3 和 4 的最小公倍數是 12",
+          "3，直接保留第一段",
+          "5，把末項相加"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "同一個乙必須表示同一份數，12 才能同時對齊兩段。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "調整後的連比是哪一組？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "8：12：15",
+          "2：3：5",
+          "8：3：15"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "第一段乘 4、第二段乘 3，兩段的乙都成為 12。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "總額 700 元時每份多少？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "20 元",
+          "35 元",
+          "700 元"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "700 除以 35 份得到每份 20 元，35 只是總份數。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "最完整的驗證方式？",
+        "options": [
+          "檢查總和並回代兩個原比",
+          "只看三數是否為整數",
+          "只檢查總和"
+        ],
+        "answer": "A",
+        "feedback": "總和正確仍須確認比例方向、共同量與兩個原比。"
       }
     ]
   },
@@ -175,13 +323,42 @@
     "engine": "math-number-line",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「N-9-1：連比」的表示、推理與驗算。",
-    "mission": "請依序分析「N-9-1：連比」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "操作兩段比例的共同中間量，建立連比並用原比回代。",
+    "mission": "先對齊乙的份數，再完成連比與總額分配，最後檢查兩段原比。",
     "sourceRefs": [
-      "https://cap.rcpet.edu.tw/index.html",
-      "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/",
-      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "https://www.junyiacademy.org/topics/n-m9a-c01-1",
+      "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "https://mathvideo.hle.com.tw/1A/"
+    ],
+    "learningDesign": {
+      "type": "equation-transform",
+      "objective": "將共同量調整一致，建立連比並用總量與原比驗證。",
+      "predictionPrompt": "2：3 與 4：5 要把共同量調到幾份？",
+      "evidencePrompt": "記錄調整倍數、總份數、每份價值與回代結果。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "把乙的 3 份與 4 份對齊到 12 份",
+          "equation": "2：3×4＝8：12；4：5×3＝12：15",
+          "reason": "共同量一致後才能接成比例鏈，兩段才可正確相接。",
+          "feedback": "請找 3 與 4 的最小公倍數，再確認兩個乙相同。"
+        },
+        {
+          "id": "step-2",
+          "action": "計算總份數與每份價值",
+          "equation": "8＋12＋15＝35；700÷35＝20",
+          "reason": "總份數把抽象比例轉成實際尺度與每份金額。",
+          "feedback": "35 是總份數，不是每份金額；請再做一次除法。"
+        },
+        {
+          "id": "step-3",
+          "action": "分配三個量並回代兩個原比",
+          "equation": "160：240＝2：3；240：300＝4：5",
+          "reason": "回代可同時檢查方向、共同單位、總額與比例關係。",
+          "feedback": "總和正確仍要做兩個原比檢查，不能只看 700。"
+        }
+      ]
+    }
   }
 }

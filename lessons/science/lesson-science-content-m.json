@@ -47,8 +47,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-01",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "以安全探究步驟理解「科學、科技、社會及人文」並用證據修正解釋。",
@@ -95,8 +95,13 @@
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "theme",
+  "versionResearch": [
+    {"publisher":"nani","edition":"南一版自然公開課程資源","sourceType":"public-web","sourceLocator":"科學、科技、社會及人文主題公開課程定位；未取得完整出版社頁碼。","reviewedAt":"2026-09-01","findings":{"concepts":["科學以可檢驗證據與模型理解現象，科技把需求轉成可測試設計。","科技議題還涉及社會公平、環境責任和人文價值。"],"representations":["證據表、設計限制表和利害關係人地圖。"],"examplesOrEvidence":["校園能源、降溫與飲水監測方案。"],"misconceptions":["科學資料不能單獨決定所有價值取捨。"],"assessmentEmphasis":["區分觀察、推論、工程限制、價值選擇與責任。"]},"licenseBoundary":"僅研究公開定位與概念脈絡，不複製教材文字、圖片、題目或答案。"},
+    {"publisher":"kanghsuan","edition":"康軒版自然公開影音與課程資源","sourceType":"public-web","sourceLocator":"科學與生活、科技及社會議題公開主題定位；索引不足以替代完整教材。","reviewedAt":"2026-09-01","findings":{"concepts":["跨域探究需從問題、證據、設計、溝通與風險建立。","同一科技方案可能同時帶來效益、成本與不同族群影響。"],"representations":["方案資料、測試指標、角色觀點和決策理由。"],"examplesOrEvidence":["以校園能源或環境設備的測試結果比較效益、成本與使用者影響。"],"misconceptions":["有測量數據不代表某方案在所有條件和族群中必然最好。"],"assessmentEmphasis":["重視證據範圍、替代方案和安全倫理。"]},"licenseBoundary":"只研究公開主題與教學方向，不複製影音字幕、圖片、題目或答案。"},
+    {"publisher":"hanlin","edition":"翰林版自然公開課程資源","sourceType":"public-web","sourceLocator":"科學、科技、社會及人文公開資源及校方課程計畫定位。","reviewedAt":"2026-09-01","findings":{"concepts":["科學知識、科技應用、社會制度與人文價值會互相影響。","公共決策需揭露資料限制、風險分配、隱私與公平。"],"representations":["利害關係人圖、成本效益表、風險矩陣和公開說明。"],"examplesOrEvidence":["以校園飲水、能源與通風方案比較不同使用者的受益與負擔。"],"misconceptions":["個人經驗不等於代表性資料，科技進步也不等於人人受益。"],"assessmentEmphasis":["以資料和理由提出有條件的公共建議。"]},"licenseBoundary":"僅採公開定位與概念方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"}
+  ],
   "publisherResearch": [
     {
       "publisher": "kanghsuan",
@@ -114,45 +119,48 @@
       ],
       "outcome": "公開出版社資源用於核對「科學、科技、社會及人文」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為theme節點。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
+    },
+    {"publisher":"nani","edition":"南一版自然公開課程資源","subject":"science","chapterLocator":"科學、科技、社會及人文；公開課程章節定位","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern"],"outcome":"核對科學證據、科技設計、社會影響與人文價值的跨域脈絡，並以校園方案重組。","copyrightBoundary":"僅研究公開章節定位與概念脈絡，不複製教材文字、圖片、題目或答案。"},
+    {"publisher":"hanlin","edition":"翰林版自然公開課程資源","subject":"science","chapterLocator":"科學、科技、社會及人文；公開資源及校方課程計畫定位","sourceUrl":"https://www.ehanlin.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["concept-progression","activity-pattern","assessment-pattern"],"outcome":"比較科學資料、工程限制、公共參與與人文責任，補入公平、隱私及風險分配判讀。","copyrightBoundary":"僅採公開定位與教學方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"}
   ],
+  "fusionRecord":{"commonCore":["科學以可檢驗證據理解現象，科技把需求與限制轉成可測試設計。","科技方案進入社會後會影響不同群體，必須考量公平、風險、隱私和環境。","人文價值協助判斷取捨與責任，不能把數據誤當唯一答案。"],"versionDifferences":["南一公開資源適合核對科學與科技脈絡；康軒公開資料提供生活探究與方案測試線索；翰林公開資源較能連結公共參與和人文責任，但完整出版社頁碼不可得。"],"originalAdditions":["以校園太陽能、降溫與飲水監測串接四個面向。","設計證據—限制—受影響者—責任決策表。","加入隱私、公平、風險分配與替代方案活動。"],"llmSynthesisNote":"依官方課綱、KG 與三版本可取得的公開定位及研究紀錄，先區分科學問題、科技設計、社會程序與人文價值，再以本單元專屬校園方案和責任地圖重新撰寫；正文、活動與檢核均為原創，Terra 尚未執行故維持 draft。"},
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
         "heading": "從情境進入「科學、科技、社會及人文」",
-        "body": "先從「科學、科技、社會及人文」相關的生活現象提出一個可觀察問題，寫下已知條件、可能變因與安全限制；把看到的事實和自己的解釋分開，才有可檢查的探究起點。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "社區想在校園屋頂裝設太陽能板：有人看見晴天的發電量便說『一定划算』，有人擔心眩光、維修和屋頂承重，也有人認為經費應先改善教室通風。請先把可測量的問題、工程限制、居民感受與價值選擇分開，畫出不同角色如何受到影響。這個單元不把科學當成替所有人做決定的唯一答案，而是學會用證據描述世界、用科技設計可行方案，再在公開討論中說明取捨與責任。"
       },
       {
         "id": "explain",
         "phase": "explain",
         "heading": "建立「科學、科技、社會及人文」的概念架構",
-        "body": "本單元依官方課綱所列的「科學、科技、社會及人文」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "body": "科學主要回答『在什麼條件下會發生什麼現象』，需要可觀察資料、模型和能被檢驗的解釋；科技則把需求、材料、成本與安全限制轉成設計，並透過測試修正。當方案進入社會，還要問誰能使用、誰承擔風險、利益是否公平，以及資料是否尊重個人與環境。人文觀點讓我們看見價值、文化、歷史經驗和人的尊嚴。四者不是四個互不相干的抽屜：科學證據能縮小爭議範圍，卻不能單獨決定公共價值。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
         "heading": "用自編資料走完一次",
-        "body": "以「M：科學、科技、社會及人文」為主題，建立一份自編三欄證據表：可直接觀察的現象、支持的模型、尚待查證的限制。先用表格整理資料，再用一句條件式結論回應問題，避免只背名詞。"
+        "body": "用自編案例比較兩種校園降溫方案：方案甲增加樹蔭，三週測得午後地表平均低 3°C，但需要較多澆灌；方案乙裝設遮陽棚，降溫幅度相近，施工快卻有材料與維修成本。先檢查測量時間、測點高度、天氣和重複次數，再把結果與成本、用水、無障礙通行和學生感受放在同一張決策表。資料可以支持『在本次條件下甲乙都有降溫效果』，但不能直接推出『甲一定比乙好』；後一句還需要明確的價值權重與更多證據。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
         "heading": "依步驟完成練習",
-        "body": "針對「科學、科技、社會及人文」先寫可觀察問題，再列自變因、應變因與控制變因；依序記錄預測、操作、數據與限制，重複量測後才下條件式結論。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "請為『校園是否應裝設飲水量監測器』製作四欄卡：科學欄寫要量什麼、如何控制誤差；科技欄寫感測器、資料儲存、電力和維修；社會欄寫費用、資料由誰管理、不同家庭是否都能受益；人文欄寫隱私、信任與使用者是否被貼標籤。小組互換卡片後，找出一項看似技術問題其實包含價值判斷的地方，再提出修改方案。答案不在於選最昂貴的設備，而在於說清楚證據、限制和受影響者。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
         "heading": "換到新情境仍能使用",
-        "body": "把「科學、科技、社會及人文」的探究方法換到家庭、校園或環境資料，檢查來源、尺度、樣本與不確定性；若證據不足，保留條件式結論並提出下一個可行測試。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "把這套思考移到家庭能源、生成式工具或河川整治議題。先問主張依據的是實驗、統計、模擬還是個人經驗，再檢查樣本是否代表目標族群；接著列出技術方案可能帶來的便利、成本、偏差與環境代價。若某項資料涉及個人位置、健康或使用紀錄，要另外考慮同意、匿名和保存期限。最後用一段公開說明提出暫定建議，明確標出哪些是測量結果、哪些是推論、哪些仍需要社區討論。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
         "heading": "回顧證據與限制",
-        "body": "回顧「科學、科技、社會及人文」的問題：哪個觀察最關鍵、哪個變因仍未控制、資料能支持到什麼程度？用一句話寫出結論與限制，再提出一項安全的改進。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "回到屋頂太陽能板的提案，完成一張責任地圖：科學證據能回答哪個現象，工程測試還缺哪項性能，公共程序要讓哪些人發言，人文考量要守住哪項尊嚴或公平。再寫出一個有條件的結論與一個可執行的下一步，例如補測不同季節的發電與眩光、公開成本假設，並邀請受影響者共同檢視。真正跨域的判斷不是把所有問題變成數字，而是知道數字能說什麼、不能說什麼，以及誰要為決定負責。"
       }
     ],
     "summary": [

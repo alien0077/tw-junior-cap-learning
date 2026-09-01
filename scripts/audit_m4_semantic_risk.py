@@ -31,6 +31,7 @@ for p in (ROOT / "lessons").glob("*/*.json"):
 prompt_groups = collections.defaultdict(list)
 semantic_groups = collections.defaultdict(list)
 option_groups = collections.defaultdict(list)
+within_lesson_option_groups = collections.defaultdict(list)
 for p in (ROOT / "questions").glob("*/*.json"):
     d = json.loads(p.read_text())
     if d.get("reviewStatus") != "draft":
@@ -48,6 +49,7 @@ for p in (ROOT / "questions").glob("*/*.json"):
     # different date or KG label.
     option_key = (d.get("subject"), tuple(o.get("text", "") for o in d.get("options", [])))
     option_groups[option_key].append(p)
+    within_lesson_option_groups[(d.get("subject"), d.get("lessonId"), tuple(o.get("text", "") for o in d.get("options", [])))].append(p)
     opts = d.get("options", [])
     if len(opts) < 2:
         flag("question-fewer-than-2-options", p)
@@ -69,6 +71,10 @@ for (_, _), paths in option_groups.items():
     if len(lesson_ids) >= 2 and len(paths) >= 2:
         for p in paths:
             flag("cross-lesson-identical-option-set", p)
+for (_, _, _), paths in within_lesson_option_groups.items():
+    if len(paths) >= 2:
+        for p in paths:
+            flag("duplicate-option-set-within-lesson", p)
 
 lines = ["# M4 Semantic Risk Report", "", "本報告由 deterministic scan 產生，只排序風險，不會自動升級任何 reviewStatus。", "", "| 風險 | 數量 |", "|---|---:|"]
 for k, n in sorted(risks.items()):

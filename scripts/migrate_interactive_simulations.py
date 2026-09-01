@@ -65,7 +65,7 @@ def simulation_for(lesson: dict) -> dict:
         raise ValueError(f"{lesson['id']}: no public studyReferences for simulation")
     goal = lesson.get("interactive", {}).get("goal") or f"透過操作與觀察理解「{lesson['title']}」。"
     mission = lesson.get("interactive", {}).get("scenario") or "先提出預測，再只改變一項條件，記錄可觀察的改變並用證據解釋。"
-    return {
+    result = {
         "id": f"sim-{lesson['subject']}-{code}",
         "engine": engine,
         "mode": mode,
@@ -74,6 +74,11 @@ def simulation_for(lesson: dict) -> dict:
         "mission": mission,
         "sourceRefs": refs,
     }
+    # Preserve the lesson-authored instructional design.  The migration tool
+    # owns the engine contract only; it must never erase unit-specific pedagogy.
+    if isinstance(lesson.get("simulation", {}).get("learningDesign"), dict):
+        result["learningDesign"] = lesson["simulation"]["learningDesign"]
+    return result
 
 
 def main() -> int:

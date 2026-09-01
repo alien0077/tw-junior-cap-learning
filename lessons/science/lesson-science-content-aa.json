@@ -2,192 +2,69 @@
   "id": "lesson-science-content-aa",
   "subject": "science",
   "title": "Aa：物質組成與元素週期性",
-  "knowledgeIds": [
-    "kg-science-content-aa"
-  ],
-  "gradeRange": [
-    "7",
-    "8",
-    "9"
-  ],
+  "knowledgeIds": ["kg-science-content-aa"],
+  "gradeRange": ["7", "8", "9"],
   "content": {
-    "summary": "本課聚焦「物質組成與元素週期性」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "本課以原子模型、元素與化合物、化學符號、相對質量和週期表為一條證據鏈，練習在微觀模型、符號與資料表之間轉譯。",
     "sections": [
-      {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「物質組成與元素週期性」相關的關係。"
-      },
-      {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「物質組成與元素週期性」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
-      },
-      {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「物質組成與元素週期性」的名稱就作答；必須確認題幹證據與結論是否一致。"
-      },
-      {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「物質組成與元素週期性」，並指出至少一項支持判斷的條件。"
-      }
+      {"heading":"學習目標","body":"能由原子序、粒子組成、化學式下標與週期表位置讀出物質的微觀資訊，並以相對質量、電子數或族群規律支持自己的判斷。"},
+      {"heading":"學習流程","body":"先辨認題目提供的是觀察資料、符號規則還是模型推論，再固定其他條件逐項改變一個變因；最後用化學式、數值和週期表位置交叉檢查，而不以名稱或外觀猜答案。"},
+      {"heading":"常見錯誤","body":"元素身分由質子數也就是原子序決定，不會因電子數改變就變成另一元素；化學式的下標描述一個粒子的組成，前方係數描述粒子數量，兩者不能混寫。"},
+      {"heading":"自我檢核","body":"面對陌生化學式時，請說出元素種類、每種原子數、粒子數與可計算的相對質量；面對週期表時，再指出你的預測依據和仍須實驗確認的限制。"}
     ]
   },
   "studyHighlights": [
-    "先圈出與「物質組成與元素週期性」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "用原子序和質子數判定元素身分，再分開處理電子數與離子電荷。",
+    "讀化學式時區分元素符號、下標和係數，並以逐項加總核對式量。",
+    "把週期與族當成有條件的預測線索，不把相似性誇大成所有性質相同。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
     "https://cap.rcpet.edu.tw/index.html",
-    "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "https://www.naer.edu.tw/"
+    "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+    "https://www.hle.com.tw/"
   ],
-  "provenance": {
-    "origin": "original",
-    "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
-  },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "provenance": {"origin":"original","license":"All rights reserved","authoringNote":"本課依官方課綱、AA KG 與三家出版社可公開定位的版本證據獨立撰寫；不複製教科書文字、圖片、題目、答案或活動腳本。"},
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-01",
+  "authoringStandard": "version-fused-v1",
   "interactive": {
     "type": "scientific-investigation",
-    "goal": "以安全探究步驟理解「物質組成與元素週期性」並用證據修正解釋。",
-    "scenario": "針對「Aa：物質組成與元素週期性」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "variables": [
-      {
-        "symbol": "x",
-        "meaning": "選定的觀察條件"
-      }
-    ],
+    "goal": "在元素資料工作台中建立可檢查的微觀模型，調整一項原子或組成條件後，用符號、質量與週期表證據解釋結果。",
+    "scenario": "先預測三張無標籤材料卡的粒子模型，再逐次改變原子序、電子數或化學式比例，觀察即時更新的元素身分、式量與週期表位置，最後判斷生活標籤是否一致。",
+    "variables": [{"symbol":"x","meaning":"原子序、電子數、化學式下標或係數；每次只改變一項，其餘條件固定"}],
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "先做哪一件事？",
-        "options": [
-          "提出可觀察問題並列出變因",
-          "先寫預期答案",
-          "省略安全檢查"
-        ],
-        "answer": "A",
-        "feedback": "問題、變因與安全限制是探究起點。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "如何取得可信資料？",
-        "options": [
-          "固定條件、重複量測並記錄單位",
-          "只量一次且不記錄",
-          "任意改變多個因素"
-        ],
-        "answer": "A",
-        "feedback": "固定與重複讓資料能比較。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "如何形成結論？",
-        "options": [
-          "先描述證據，再提出有條件的解釋",
-          "把猜測當成結果",
-          "刪掉不符合預期的資料"
-        ],
-        "answer": "A",
-        "feedback": "證據與限制都要保留，才能修正模型。"
-      }
+      {"id":"step-1","prompt":"先固定哪個資料，才能判斷改變後是換了元素還是只形成離子？","options":["固定原子序並逐一改電子數","同時改質子數和電子數再猜名稱","只比較原子量大小"],"answer":"A","feedback":"元素身分看原子序，也就是質子數；電子數改變可造成離子，但不會單獨改變元素身分。"},
+      {"id":"step-2","prompt":"工作台比較 H₂O、2H₂O 和 H₂O₂ 時，應記錄哪些可直接核對的欄位？","options":["下標、係數、總原子數與相對質量","只看粒子圖畫得大不大","把係數寫成單一分子的下標"],"answer":"A","feedback":"下標改變一個粒子的組成，係數改變粒子數量；分開記錄才能避免把兩種表示層級混在一起。"},
+      {"id":"step-3","prompt":"比較同族兩元素時，哪一句是有證據邊界的結論？","options":["最外層排列相近可解釋性質相近，但不保證完全相同","同族元素所有性質必定相同","只要同族就有相同原子序"],"answer":"A","feedback":"週期表位置提供規律線索，不是所有物理量和化學行為都相同的保證；請保留推論限制。"},
+      {"id":"step-4","prompt":"若模型輸出沒有顏色、熔點或反應資料，最後應如何作答？","options":["只報告原子序、符號與位置能支持的結論，標示其餘資料不足","依原子量猜出所有性質","把週期表位置當成完整實驗結果"],"answer":"A","feedback":"模型和週期表只能支持特定範圍；資料沒有提供的性質必須保留為未定，不能用想像補上。"}
     ]
   },
-  "authoringStandard": "full-lesson-v1",
-  "lessonScope": "topic",
   "publisherResearch": [
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
-      "subject": "science",
-      "chapterLocator": "Aa：物質組成與元素週期性；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開出版社資源用於核對「物質組成與元素週期性」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
+    {"publisher":"kanghsuan","edition":"康軒國中自然公開影音","subject":"science","chapterLocator":"Aa：物質組成與元素週期性；公開教材結構研究定位","sourceUrl":"https://digitalmaster.knsh.com.tw/all/video/j/nature.html","access":"public-open","reviewedAt":"2026-08-27","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"公開出版社資源用於核對物質組成、模型表徵、符號讀法與週期表判讀的教學順序；本課不將公開索引誤稱為完整電子課本。","copyrightBoundary":"只研究公開章節定位與教學結構；不複製出版社文字、圖片、題目、答案或活動腳本。"},
+    {"publisher":"nani","edition":"南一國中自然公開課程與版本索引","subject":"science","chapterLocator":"自然科物質組成／元素與化合物相關公開章節定位；對應 Aa 聚合節點（查核 2026-09-01）","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","assessment-pattern"],"outcome":"公開定位支持由粒子組成、元素化合物、化學符號到週期表的概念銜接；未取得受保護電子課本全文，故只記錄可核對的結構與概念方向。","copyrightBoundary":"只使用公開索引作研究，不重製南一課文、圖片、例題、題目、答案或教師資源；正文與互動均為原創。"},
+    {"publisher":"hanlin","edition":"翰林國中自然公開課程計畫與章節定位","subject":"science","chapterLocator":"自然科探索物質組成相關公開課程計畫交叉定位；對應 Aa-Ⅳ-1 至 Aa-Ⅳ-5（查核 2026-09-01）","sourceUrl":"https://www.hle.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["concept-progression","activity-pattern","assessment-pattern"],"outcome":"公開課程計畫可交叉核對原子、相對質量、元素化合物、週期性和化學符號的涵蓋範圍；公開資料不足以支持逐頁教材摘錄，故不作此宣稱。","copyrightBoundary":"僅採公開課程定位作版本比較，不重製翰林課文、圖片、習題、答案或活動腳本；本課例證與操作步驟自行設計。"}
   ],
+  "versionResearch": [
+    {"publisher":"nani","edition":"南一自然 Aa 公開版概念方向","sourceType":"public-web","sourceLocator":"https://www.nani.com.tw/；Aa 聚合節點與公開自然科資源定位（查核 2026-09-01）","reviewedAt":"2026-09-01","findings":{"concepts":["以粒子觀點區分元素、化合物與物質組成","將化學符號、相對質量與週期表位置連成判讀鏈"],"representations":["用化學式下標與係數表達原子比例和粒子數量"],"examplesOrEvidence":["以常見化學式和週期表資料進行自編組成與質量核算"],"misconceptions":["化合物不是把元素名稱相加，也不保留元素的全部性質","化學式下標與前方係數代表不同的數量層級，不能互相替代"],"assessmentEmphasis":["要求從符號和表格資料說出判斷理由，而非只辨認名詞"]},"licenseBoundary":"只作公開定位與概念研究，不重製南一教材文字、圖片、例題、題目或答案；課文由本專案獨立撰寫。"},
+    {"publisher":"kanghsuan","edition":"康軒自然 Aa 公開影音方向","sourceType":"public-web","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然科 Aa 公開影音索引（查核 2026-09-01）","reviewedAt":"2026-09-01","findings":{"concepts":["以原子模型的證據修正呈現微觀結構","用週期與族的位置比較元素性質並標示預測條件"],"representations":["在模型圖、元素符號、週期表與文字解釋間轉譯"],"examplesOrEvidence":["以散射、光譜與元素位置作為自編證據判讀情境"],"misconceptions":["模型是可修正的解釋工具，不是原子的直接照片","同族有相近線索不等於所有性質完全相同"],"assessmentEmphasis":["重視證據是否支持模型及結論是否有條件"]},"licenseBoundary":"僅採合法公開索引可核對的概念與表徵方向；不引用字幕或受保護教材內容，活動與文字均為原創。"},
+    {"publisher":"hanlin","edition":"翰林自然 Aa 公開章節交叉定位","sourceType":"public-web","sourceLocator":"https://www.hle.com.tw/；Aa-Ⅳ-1 至 Aa-Ⅳ-5 公開課程計畫交叉定位（查核 2026-09-01）","reviewedAt":"2026-09-01","findings":{"concepts":["由元素、化合物和原子序建立物質組成的層次觀","以相對原子質量與化學式推導相對分子質量或式量"],"representations":["用資料表、粒子圖和逐項加總檢查化學式意義"],"examplesOrEvidence":["以 H₂O、CO₂、CaCO₃ 等自編式例連結組成比例與生活標示"],"misconceptions":["相對質量是比較值，不是單一原子的克數或樣品總重","離子的電子數改變不代表元素身分與原子序也跟著改變"],"assessmentEmphasis":["強調從陌生式子讀下標、係數、質量和原子序的跨表徵推理"]},"licenseBoundary":"以公開課程定位作版本比較，不複製翰林課文、圖片、習題、答案或活動腳本；本課例證與互動均自行設計。"}
+  ],
+  "fusionRecord": {"commonCore":["物質可用原子、分子或離子等微觀組成觀點描述","元素符號與化學式精確表達種類、比例和粒子數量","原子序與電子配置提供比較元素性質的週期性線索"],"versionDifferences":["南一的公開定位支持由組成與符號逐步進入表格判讀","康軒的公開影音方向突出模型與證據互換","翰林的公開課程定位適合交叉核對式量與跨表徵練習"],"originalAdditions":["元素資料工作台一次調整一項原子或組成參數並顯示即時變化","加入下標係數、同族相同、相對質量與離子身分的錯誤分流","用碳酸鈣與二氧化碳標籤設計符號到週期表的遷移任務"],"llmSynthesisNote":"本課以官方自然科課綱 Aa 聚合節點和 kg-science-content-aa 為範圍核心，依南一、康軒、翰林可取得的公開定位與教學表徵整合模型證據、符號規則、相對質量、週期性與生活判讀。文字、例證、迷思、練習、互動和模擬腳本均重新創作，未複製受保護內容；尚未完成 Terra 第二輪審查，因此維持 draft。"},
   "teaching": {
     "body": [
-      {
-        "id": "hook",
-        "phase": "hook",
-        "heading": "從情境進入「物質組成與元素週期性」",
-        "body": "先從「物質組成與元素週期性」相關的生活現象提出一個可觀察問題，寫下已知條件、可能變因與安全限制；把看到的事實和自己的解釋分開，才有可檢查的探究起點。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "explain",
-        "phase": "explain",
-        "heading": "建立「物質組成與元素週期性」的概念架構",
-        "body": "本單元依官方課綱所列的「物質組成與元素週期性」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
-      },
-      {
-        "id": "worked-example",
-        "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「Aa：物質組成與元素週期性」為主題，製作只含符號與數量的自編粒子卡：O₂、H₂O、CO₂ 與 Fe。先依卡片判斷是元素或化合物、原子或分子，再用「組成粒子—排列方式—可觀察性質」三欄表說明判斷依據；答案以卡片上的資訊為限。"
-      },
-      {
-        "id": "guided-practice",
-        "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「物質組成與元素週期性」先寫可觀察問題，再列自變因、應變因與控制變因；依序記錄預測、操作、數據與限制，重複量測後才下條件式結論。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "transfer",
-        "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「物質組成與元素週期性」的探究方法換到家庭、校園或環境資料，檢查來源、尺度、樣本與不確定性；若證據不足，保留條件式結論並提出下一個可行測試。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      },
-      {
-        "id": "reflect",
-        "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「物質組成與元素週期性」的問題：哪個觀察最關鍵、哪個變因仍未控制、資料能支持到什麼程度？用一句話寫出結論與限制，再提出一項安全的改進。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
-      }
+      {"id":"hook","phase":"hook","heading":"一張沒有名稱的材料卡","body":"如果實驗桌上只有三張卡片：一張寫著 H₂O，一張畫著兩個相同小球，另一張只給原子序與電子數，你能否判斷它們是不是同一種物質？外觀、氣味或名稱都不是微觀組成的充分證據；我們要把可觀察資料和模型推論分開。原子序是核內質子數，化學式則把元素種類和比例壓縮成符號。這一課會讓你從模型證據出發，先辨認元素與化合物，再讀下標、係數和相對質量，最後用週期與族的位置提出有條件的性質預測。遇到資料不完整時，也要把『目前能支持什麼』和『還不能斷定什麼』一起寫下來。"},
+      {"id":"explain","phase":"explain","heading":"元素身分由什麼保存？","body":"把原子拆成質子、中子和電子來看，真正決定元素身分的是質子數；質子數就是原子序 Z。中性原子的電子數等於質子數，若失去或得到電子，會形成帶正或帶負的離子，但 Z 沒有改變，所以仍是同一元素。模型的價值在於把看不見的結構和測量結果連起來：散射資料可支持正電與大部分質量集中於原子核，光譜資料則提示電子具有特定能階。這些圖不是原子的照片，而是能否解釋證據的工具。讀題時先圈出 Z、質子數和電子數，再判斷題目問元素、離子還是模型限制；不要因為電子層圖畫得不同，就逕自說元素已經換了。"},
+      {"id":"worked-example","phase":"worked-example","heading":"從符號還原粒子清單","body":"以自編資料卡 NaCl、O₂、3H₂O 為例，先看每個大寫開頭的元素符號，再讀右下角下標，最後才處理式子前面的係數。O₂ 是由同一元素組成、每個分子有兩個氧原子的元素；NaCl 含兩種元素，以固定比例表示化合物；3H₂O 則代表三個水分子，每個分子仍是兩個氫配一個氧。三個水分子的總原子數可算成氫六個、氧三個，但不能把 3H₂O 改寫成 H₆O₃，因為那會把多個粒子的數量誤塞進單一粒子的組成。若題目換成 CO₂ 或 CaCO₃，方法不變：列元素種類、抄下標、乘上係數，再說明你是在讀一個粒子還是多個粒子。"},
+      {"id":"guided-practice","phase":"guided-practice","heading":"把相對質量算成可檢查的式子","body":"相對原子質量是以碳—12 為比較基準的無單位數值，不是把一顆原子的重量直接用克表示。讀到 H₂O 時，先用兩個氫的相對原子質量加上一個氧；讀到 CO₂ 時則是一個碳加兩個氧。若前面有係數，係數可以讓樣品中粒子總數增加，但不會改變單一 H₂O 分子的相對分子質量；若是離子化合物，常以式量稱呼同樣依化學式逐項加總的結果。遇到同位素比例，還要依豐度做加權平均。請把計算寫成『種類×下標再相加』，並在答案旁註明題目問的是單一粒子、式量或整批樣品，這一步能抓出把係數和下標混用的錯誤。"},
+      {"id":"transfer","phase":"transfer","heading":"讓週期表成為預測地圖","body":"週期表按原子序排列，橫列是週期，直欄是族；在基礎模型中，同族元素常有相近的最外層電子排列，因此可作為比較反應傾向的線索。這個線索不是『同族完全相同』的保證，因為元素仍可能處於不同物態、化合狀態或實驗條件。請用一個資料表練習：先找兩元素的原子序與位置，寫出相似線索，再說明要測哪一項性質才能檢驗預測。原子量較大也不等於一定較活潑，電子配置、鍵結和環境都可能影響結果。週期性真正訓練的是從排列找規律、從規律提出可檢驗預測，並在證據不足時保留界線，而不是背誦一串無法轉用的名稱。"},
+      {"id":"reflect","phase":"reflect","heading":"回到生活標籤重新判讀","body":"最後比較兩張自編標籤：CaCO₃ 和 CO₂ 都含有碳與氧，卻不是同一物質。先從符號列出各自的元素與原子比例，再用相對原子質量估算式量；接著查它們所含元素的原子序與族位置，說明週期表能提供什麼線索、不能直接推出什麼性質。若再加入電子數資料，請辨認那是中性原子還是離子，不要把帶電狀態當成新元素。寫結論時採用『資料顯示……所以目前可推論……但在……條件下仍須測量』的句型，並以一個反例檢查自己是否把模型當成事實。這樣面對電池、肥料或清潔用品的化學式，才能先讀懂標示，再遵守濃度、狀態與安全警語。"}
     ],
-    "summary": [
-      "先用自己的話界定「物質組成與元素週期性」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
-    ],
-    "exitCheck": [
-      {
-        "prompt": "請用自己的話說明「物質組成與元素週期性」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
-      },
-      {
-        "prompt": "在「物質組成與元素週期性」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
-      },
-      {
-        "prompt": "若題目的條件改變，如何調整處理「物質組成與元素週期性」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
-      }
-    ]
+    "summary":["以質子數、電子數和模型證據分辨元素身分與離子狀態。","從元素符號、下標和係數重建粒子組成並計算相對質量。","用週期與族提出有條件的性質預測，再以資料和限制檢查。","把符號、模型和週期表方法遷移到陌生生活標籤。"],
+    "exitCheck":[{"prompt":"請用原子序、質子數和電子數說明元素與離子的關係。","expectedEvidence":"能指出元素身分由質子數決定，並說明電子數改變可形成離子但不改變元素。"},{"prompt":"讀 3H₂O 時，下標與係數各自代表什麼？","expectedEvidence":"能說明單一水分子的原子比例、三個粒子的數量，並避免把係數改寫成下標。"},{"prompt":"同族元素的週期性預測需要哪些限制？","expectedEvidence":"能引用族位置或電子排列線索，並補充物態、條件或實驗資料仍需確認。"}]
   },
   "simulation": {
-    "id": "sim-science-aa",
-    "engine": "concept-explorer",
-    "mode": "explorer",
-    "model": "general",
-    "goal": "以安全探究步驟理解「物質組成與元素週期性」並用證據修正解釋。",
-    "mission": "針對「Aa：物質組成與元素週期性」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "sourceRefs": [
-      "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-      "https://cap.rcpet.edu.tw/index.html",
-      "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/"
-    ]
+    "id":"sim-science-aa","engine":"concept-explorer","mode":"explorer","model":"general","goal":"在元素資料工作台中建立可檢查的微觀模型，調整一項原子或組成條件後，用符號、質量與週期表證據解釋結果。","mission":"先預測三張無標籤材料卡的粒子模型，再逐次改變原子序、電子數或化學式比例，觀察即時更新的元素身分、式量與週期表位置，最後判斷生活標籤是否一致。","sourceRefs":["https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf","https://cap.rcpet.edu.tw/index.html","https://digitalmaster.knsh.com.tw/all/video/j/nature.html","https://www.hle.com.tw/"],
+    "learningDesign":{"type":"parameter-investigation","objective":"在原子模型、化學式與週期表三種表徵間追蹤同一筆資料，固定其他條件，一次改變原子序、電子數或組成下標，從即時數值和位置變化判斷元素身分、式量與週期性。","predictionPrompt":"先選一張材料卡，預測只改變原子序、電子數或一個下標時，元素名稱、離子電荷、總原子數、相對質量與週期表位置哪幾項會改變；請寫出至少一項不變的控制條件。","evidencePrompt":"操作後比較模型圖、符號下標、質子／電子數、式量數值與週期表位置；說明哪一筆直接資料支持結論，並分流處理把電子數當原子序、把係數當下標或把同族當完全相同的錯誤。","steps":[{"id":"step-1","action":"選擇元素卡，固定中子數與化學式，先調整原子序一格，讀取質子數、元素名稱與週期表位置的即時變化。","equation":"Z＝質子數；中性原子電子數＝Z","reason":"先改原子序才能觀察元素身分如何由質子數決定，並把電子數暫時固定成中性條件。","feedback":"若只改電子數卻說元素改變，畫面標出離子狀態改變而 Z 未變，要求重做控制變因。"},{"id":"step-2","action":"回到基準，只改電子數形成離子，觀察電荷、電子層示意與元素名稱是否同步改變，再記錄不變量。","equation":"離子電荷＝質子數－電子數","reason":"同一元素可有不同電子數；用電荷計算和 Z 對照可避免把離子誤認成另一元素。","feedback":"若把電子數當原子序，系統鎖定元素名稱欄並提示回看質子數欄。"},{"id":"step-3","action":"切換到化合物卡，固定元素種類，只改一個下標；比較粒子圖、總原子數與相對質量，另用係數複製粒子作對照。","equation":"式量＝Σ（各元素相對原子質量×下標）","reason":"下標改變單一粒子的組成與式量，係數只增加粒子個數；兩者差異是化學式判讀的核心證據。","feedback":"若把 2H₂O 寫成 H₄O₂，系統顯示同總原子數不代表同表示層級，要求標註粒子數。"},{"id":"step-4","action":"以同族兩張元素卡作最後比較，輸入一項性質預測與一項限制，讀取位置和模擬資料後判斷標籤。","equation":"同族位置→相似線索；預測仍受狀態、條件與實驗資料限制","reason":"週期表能組織規律並支持預測，但不能取代對具體物質、狀態與反應條件的測量。","feedback":"若宣稱同族性質完全相同，系統要求補上反例、條件與可重做的測試。"}]}
   }
 }

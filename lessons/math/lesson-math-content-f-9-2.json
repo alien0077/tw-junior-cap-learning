@@ -9,19 +9,19 @@
     "9"
   ],
   "content": {
-    "summary": "由開口方向、頂點與對稱軸解讀二次函數圖形與極值。",
+    "summary": "二次函數的極值不是從一張曲線圖猜出來的。將式子改寫或辨認為 y=a(x-h)²+k 後，頂點 (h,k)、對稱軸 x=h 與 a 的正負便能共同說明圖形開口和最大值或最小值。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "由開口方向、頂點與對稱軸解讀二次函數圖形與極值。 能以式子、表格與圖形互相驗證。"
+        "heading": "本課的判讀任務",
+        "body": "從二次函數的式子、數值表或圖形辨識對稱軸與頂點，並以二次項係數的正負判斷頂點是最大值還是最小值；接著用對稱軸兩側等距的點做驗證。"
       },
       {
-        "heading": "學習流程",
-        "body": "辨認二次項與係數，整理對稱軸與頂點，再由開口方向判斷極值並檢查。"
+        "heading": "三個互相牽制的特徵",
+        "body": "頂點式 y=a(x-h)²+k 直接顯示頂點 (h,k) 與對稱軸 x=h。a>0 時開口向上，k 是最小值；a<0 時開口向下，k 是最大值。對稱軸左右等距的輸入必給相同的輸出，是最快的檢查方法。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "把一次函數圖形套用到二次函數，或混淆頂點、截距與極值。"
+        "heading": "別把三個座標混在一起",
+        "body": "頂點是拋物線轉向的位置，不必是 y 軸截距，也不必是 x 軸截距。尤其 y=(x-3)²-4 的頂點 x 座標是 3，不是 -3；將 x=3 代回後得到 -4，才能及時抓住括號符號的誤讀。"
       }
     ]
   },
@@ -39,133 +39,257 @@
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+    "authoringNote": "本課依官方 F-9-2、穩定 KG 與目前可取得的南一、康軒、翰林公開對照及索引研究後原創撰寫；不宣稱取得教材、題目、影音、圖片或答案的改編授權，也未複製其受著作權保護內容。"
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "edition": "翰林國中數學解題影音網公開章節索引（2026）",
       "subject": "math",
-      "chapterLocator": "F-9-2：二次函數的圖形與極值",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "九下 1-2：二次函數圖形與最大值、最小值／kg-math-content-f-9-2",
+      "sourceUrl": "https://qa-mathvideo.hle.com.tw/",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-29",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「F-9-2：二次函數的圖形與極值」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "公開章節索引直接對應二次函數圖形與最大值、最小值；本課以頂點式、對稱數值與係數比較設計原創學習路徑。",
+      "copyrightBoundary": "只研究公開索引、章節定位與概念範圍；不複製翰林影音、課文、圖像、例題、練習或答案，全部敘事與數據皆為原創。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中數學校方課程計畫公開對照（2026）",
+      "subject": "math",
+      "chapterLocator": "F-9-2：二次函數的圖形與極值／kg-math-content-f-9-2",
+      "sourceUrl": "https://www.nani.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-29",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開對照直接定位 F-9-2；本課據此由頂點、對稱軸與開口方向展開，不把校方課程計畫誤稱成出版社正文。",
+      "copyrightBoundary": "只使用公開單元定位與 KG 對照；本課例式、坐標、提問、選項與回饋皆為原創，不複製南一教材、習作或答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開影音索引與章節對照（2026）",
+      "subject": "math",
+      "chapterLocator": "九下 1-1：二次函數的圖形與最大值、最小值／同時對應 F-9-1、F-9-2",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-29",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "本機公開索引可讀到九下 1-1 的多個課本解題與隨堂練習條目；章節同時涵蓋 F-9-1、F-9-2，故本課僅取其定位並由官方代碼界定極值範圍。",
+      "copyrightBoundary": "只研究公開索引的章節、頁面型態與對照範圍；不觀看、下載、重製或改編康軒影音、教材、題目或解答。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（單元結構研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": [
+          "由二次項係數判斷拋物線開口方向與寬窄變化",
+          "從頂點式讀取對稱軸與頂點，連結圖形位置和極值"
+        ],
+        "representations": [
+          "用表格、頂點式與坐標圖互相驗證函數變化"
+        ],
+        "examplesOrEvidence": [
+          "比較對稱軸兩側等距輸入的函數值，檢查頂點與對稱性"
+        ],
+        "misconceptions": [
+          "把頂點的橫坐標或縱坐標看錯，或忽略二次項係數的正負"
+        ],
+        "assessmentEmphasis": [
+          "能由式子、圖形與數值證據說明極值判斷"
+        ]
+      },
+      "licenseBoundary": "只取公開來源的概念順序與教學重點；本課文字、例題、提示、互動步驟與答案均重新設計，不重製原教材。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中數學校方課程計畫公開對照（2026）",
+      "sourceType": "public-web",
+      "sourceLocator": "textbook-mapping/math/nani-schoolplan-2026.json；F-9-2 二次函數的圖形與極值，穩定對應 kg-math-content-f-9-2。",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": [
+          "公開課程計畫直接把二次函數的圖形與極值定位為 F-9-2，與前一節二次函數概念分開。",
+          "此定位支持由頂點、對稱軸與開口方向讀出極值，而非只停留在函數式代入。"
+        ],
+        "representations": [
+          "以課綱代碼、單元名稱與 KG 穩定 ID 交叉定位，公開來源未提供可重製的課本文字或例題。"
+        ],
+        "examplesOrEvidence": [
+          "公開對照直接支持本課用頂點式、對稱數值與圖形特徵構成原創驗證活動。"
+        ],
+        "misconceptions": [
+          "不能把括號內的 h 直接看成頂點橫坐標的相反數，必須以代入或標準頂點式核對。"
+        ],
+        "assessmentEmphasis": [
+          "應檢查學生能否由 a 的正負與頂點縱坐標共同判斷最大值或最小值。"
+        ]
+      },
+      "licenseBoundary": "只使用公開課程計畫的單元定位與對照資訊；本課所有文字、係數、坐標、任務、提示與回饋均為原創，未複製南一內容。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "textbook-mapping/math/hanlin-official-2026.json；九下 1-2 二次函數圖形與最大值、最小值，並參考本機公開索引快取 /private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html。",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": [
+          "公開對照將九下 1-2 二次函數圖形與最大值、最小值直接連至 F-9-2 的穩定 KG。",
+          "公開索引可核對章節定位，但不能據此主張已取得個別影音、例題或教材全文。"
+        ],
+        "representations": [
+          "以章節 1-2、官方課綱 F-9-2 與 KG ID 三者交叉定位，再由原創頂點式和坐標驗證補足教學。"
+        ],
+        "examplesOrEvidence": [
+          "本課自行建立固定頂點而改變 a 的兩座拱門，用以比較圖形寬窄與極值，並非轉錄影音例題。"
+        ],
+        "misconceptions": [
+          "截距、頂點與極值不是同一件事；必須將點的座標和函數最大最小值分別讀取。"
+        ],
+        "assessmentEmphasis": [
+          "以頂點、對稱軸、開口方向及左右等距代入的證據，檢核極值判斷是否成立。"
+        ]
+      },
+      "licenseBoundary": "只研究公開索引、章節定位與對照關係；本課文字、案例、圖示、坐標與作答引導均為原創，不重製翰林素材。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "二次函數圖形的開口方向與寬窄受二次項係數影響",
+      "頂點式能直接呈現對稱軸與頂點，並支援極值判讀",
+      "圖形結論要由式子、表格或多個坐標點互相驗證，不能只看單點或外觀"
+    ],
+    "versionDifferences": [
+      "南一公開資料直接用 F-9-2 定位圖形與極值；康軒的九下 1-1 同時涵蓋 F-9-1 與 F-9-2；翰林九下 1-2 直接以圖形與最大值、最小值對應本 KG。"
+    ],
+    "originalAdditions": [
+      "設計固定頂點、改變開口係數的參數實驗，分離平移與伸縮效果",
+      "加入對稱軸兩側等距輸入的數值證據，要求學習者驗證而非只讀圖",
+      "將極值、截距與單一坐標點放入辨誤任務，明確比較三者提供的不同資訊"
+    ],
+    "llmSynthesisNote": "LLM 先核對官方 F-9-2、KG 與三家公開對照；康軒公開影音索引顯示其章節同時涵蓋 F-9-1、F-9-2，南一與翰林則提供直接定位。教材因此以原創拱門設計切入，依序建立頂點式讀值、對稱點驗證、a 的正負與絕對值、極值和截距辨誤；不複製任何出版品的文字、題目、答案或影音內容。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「F-9-2：二次函數的圖形與極值」",
-        "body": "先讀懂「F-9-2：二次函數的圖形與極值」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "拱門最高處不必畫完才知道",
+        "body": "校慶布景要裁出一道拱門，設高度 y（公尺）與水平位置 x 的關係為 y=-(x-2)²+5。裁切師傅先問的不是『哪幾個點在曲線上』，而是『最高處在哪裡』。因為平方最小只能是 0，當 x=2 時，-(x-2)² 最大為 0，整個高度最大為 5；這個位置正是拋物線的頂點。二次函數的極值，往往可以從結構看出來，再用點來驗證。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「二次函數的圖形與極值」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "把頂點式當成圖形的地址",
+        "body": "在 y=a(x-h)²+k 中，頂點是 (h,k)，對稱軸是 x=h。a 決定開口：a>0 時兩側向上抬，頂點是最低點，最小值為 k；a<0 時兩側向下落，頂點是最高點，最大值為 k。以 y=2(x+1)²-3 為例，括號中的 x+1 可讀成 x-(-1)，所以頂點是 (-1,-3)，不是 (1,-3)。先代入 x=-1 得 -3，能阻止符號記憶造成的錯誤。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「F-9-2：二次函數的圖形與極值」為主題，令輸入 x＝1、2、3 時輸出 y＝2x＋1，整理成表格可得 3、5、7；把相鄰輸出的差與圖形斜率比較，再代回式子確認規律，說明輸入改變如何影響輸出。"
+        "heading": "用左右兩個點替頂點作證",
+        "body": "考慮 y=(x-4)²+1。頂點式給出頂點 (4,1)、對稱軸 x=4，且 a=1>0，所以最小值是 1。若擔心讀錯，取頂點兩側各距離 2 的 x=2 與 x=6：y=(2-4)²+1=5，y=(6-4)²+1=5。兩個同高點把對稱軸夾在中間；它們不是極值，卻是頂點判讀的證據。此例也說明 y 軸截距 y=17 與最小值 1 是不同資訊。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "把三張標籤貼到正確位置",
+        "body": "給 y=-3(x-1)²+7 貼上三張標籤：『對稱軸』貼 x=1，『頂點』貼 (1,7)，『最大值』貼 7。接著不用畫滿圖，代入 x=0 與 x=2 都得到 4，確認它們對稱於 x=1；因為 -3<0，離開頂點的平方項會讓 y 下降，所以 7 才是最大值。若有人把 1 寫成最大值，那是把頂點的橫坐標誤認成函數值；若寫最小值，則是沒讀 a 的正負。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「F-9-2：二次函數的圖形與極值」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "同一個最高點，開口可以很窄也可以很寬",
+        "body": "兩座拱門都以 (2,5) 為頂點：甲為 y=-(x-2)²+5，乙為 y=-4(x-2)²+5。它們同樣最高 5 公尺，也有相同對稱軸 x=2；但在 x=3 時甲高 4、乙高 1，乙下降得更快、圖形較窄。這說明 a 的絕對值改變的是離開頂點後的變化速度，不是頂點位置。把這個判讀用到噴水軌跡或拱橋設計時，仍要確認 x 與 y 的單位、可用範圍與模型是否合理。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「F-9-2：二次函數的圖形與極值」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "極值判讀單：先結論，再留下可回查的痕跡",
+        "body": "面對任何頂點式，先寫出 (h,k)、x=h、a 的正負，才標記極大或極小。第二行挑一對 h-d 與 h+d 代入，檢查得到相同 y；第三行把頂點與截距分別命名，不讓一個座標冒充另一個。最後問自己：若 a 的符號反轉，極值型態如何翻轉？若 |a| 變大，頂點會不會移動？能用這些問題回查，才是真的在閱讀拋物線，而不是背一張圖。"
       }
     ],
     "summary": [
-      "先用自己的話界定「二次函數的圖形與極值」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "頂點式 y=a(x-h)²+k 把頂點 (h,k) 與對稱軸 x=h 直接寫在函數結構裡。",
+      "a>0 時頂點給最小值 k；a<0 時頂點給最大值 k，判斷前不能漏看 a 的正負。",
+      "對稱軸兩側等距的輸入會有相同輸出，可用數值表替圖形的對稱性作證。",
+      "改變 |a| 會改變開口寬窄與離頂點後的變化速度；改變 h 或 k 才會移動頂點。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「二次函數的圖形與極值」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "y=-2(x+3)²+4 的頂點、對稱軸與極值各是什麼？請說出判斷理由。",
+        "expectedEvidence": "能寫頂點 (-3,4)、對稱軸 x=-3、最大值 4，並以 a=-2<0 說明開口向下。"
       },
       {
-        "prompt": "在「二次函數的圖形與極值」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "對 y=(x-4)²+1，為何 x=2 與 x=6 的函數值相同？這能支持哪個圖形特徵？",
+        "expectedEvidence": "能算出兩值皆為 5，指出兩個輸入與 x=4 等距，因此支持對稱軸 x=4 和頂點判讀。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「二次函數的圖形與極值」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "y=-(x-2)²+5 和 y=-4(x-2)²+5 的頂點與開口有何相同和不同？",
+        "expectedEvidence": "能說明頂點與對稱軸相同、皆向下；第二式 |a| 較大而較窄，離頂點相同距離時下降較快。"
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-29",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「F-9-2：二次函數的圖形與極值」的表示、推理與驗算。",
-    "scenario": "請依序分析「F-9-2：二次函數的圖形與極值」的條件，選出最能保留資訊、可被驗證的做法。",
-    "variables": [
-      {
-        "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
-      }
-    ],
+    "type": "guided-choice",
+    "goal": "從頂點式與對稱數值辨認拋物線的對稱軸、開口方向與最大值或最小值。",
+    "scenario": "你是校慶拱門的尺寸核對員；每次只能查一個關鍵證據，必須判定圖紙上的頂點與最高或最低高度。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "圖紙標示 y=-2(x+3)²+4，哪一組頂點與對稱軸正確？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "頂點 (-3,4)，對稱軸 x=-3",
+          "頂點 (3,4)，對稱軸 x=3",
+          "頂點 (-2,3)，對稱軸 x=-2"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "x+3 等於 x-(-3)，所以 h=-3；把 x=-3 代入會留下 y=4。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "同一式子的 y 值是最大還是最小？理由是什麼？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "最大值為 4，因為 a=-2，拋物線開口向下",
+          "最小值為 -2，因為 -2 是二次項係數",
+          "最小值為 4，因為頂點永遠最低"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "極值的數值是頂點的 y 座標；a 的正負決定頂點是最高還是最低。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "要驗證對稱軸 x=-3，選哪一對輸入最有效？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "x=-4 與 x=-2，因為它們離 -3 同樣 1 單位",
+          "x=0 與 x=1，因為兩者都是正數",
+          "只代 x=-3 一個值，因為頂點已足夠"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "對稱軸兩側等距的兩個輸入必有同一函數值，這是式子和圖形之間可回查的證據。"
       }
     ]
   },
@@ -175,13 +299,42 @@
     "engine": "math-function-graph",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「F-9-2：二次函數的圖形與極值」的表示、推理與驗算。",
-    "mission": "請依序分析「F-9-2：二次函數的圖形與極值」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "從頂點式與對稱數值辨認拋物線的對稱軸、開口方向與最大值或最小值。",
+    "mission": "你是校慶拱門的尺寸核對員；每次只能查一個關鍵證據，必須判定圖紙上的頂點與最高或最低高度。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    ],
+    "learningDesign": {
+      "type": "parameter-investigation",
+      "objective": "改變二次函數係數觀察開口、寬窄與頂點，並用頂點判斷最大值或最小值。",
+      "predictionPrompt": "在 y＝(x−2)²−3 中，你預測頂點在哪裡、函數有最大還是最小值？",
+      "evidencePrompt": "請由頂點式讀出平移量，代入頂點左右兩側數值，驗證對稱與極值。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "從頂點式讀取水平與垂直平移",
+          "equation": "y＝(x−2)²−3：頂點 (2,−3)",
+          "reason": "括號內的 2 影響對稱軸，外面的 −3 影響上下位置。",
+          "feedback": "x−2 對應頂點 x＝2，不是 −2；請代入 x＝2 檢查。"
+        },
+        {
+          "id": "step-2",
+          "action": "用頂點兩側對稱輸入檢查圖形",
+          "equation": "x＝1、3 時 y＝−2",
+          "reason": "距離對稱軸相同的 x 值會得到相同 y 值，提供圖形驗證。",
+          "feedback": "比較的是到 x＝2 的距離，不是 x 值本身是否相反。"
+        },
+        {
+          "id": "step-3",
+          "action": "依開口方向判斷極值與值域限制",
+          "equation": "a＝1＞0 → 最小值 −3",
+          "reason": "開口向上時頂點是最低點；若 a＜0 則頂點會是最大點。",
+          "feedback": "不要只背『頂點是最小』，先看二次項係數正負。"
+        }
+      ]
+    }
   }
 }

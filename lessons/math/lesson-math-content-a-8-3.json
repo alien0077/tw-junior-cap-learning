@@ -9,19 +9,19 @@
     "8"
   ],
   "content": {
-    "summary": "依同類項與分配律規則進行多項式的加減乘除。",
+    "summary": "先處理括號與符號，再用同類項整理加減；相乘時逐項分配並檢查次數，最後用代入驗證代數運算是否保留原值。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "依同類項與分配律規則進行多項式的加減乘除。 能用代入或展開檢查運算結果。"
+        "body": "能說明多項式加減中的變號原因，完成乘法分配，並辨認每一步可能產生的符號、次數與漏項錯誤。"
       },
       {
         "heading": "學習流程",
-        "body": "辨認項與次數，整理同類項，依分配律逐步運算，最後代入或反向檢查。"
+        "body": "加減先把括號處理清楚，乘法則建立每一項與每一項的配對表，整理同類項後再代回原式。"
       },
       {
         "heading": "常見錯誤",
-        "body": "把不同次數的項合併，或多項式減法時未將括號內各項變號。"
+        "body": "最常見的失誤是只改變括號內第一項的符號、乘法漏掉一個配對，或尚未整理就把不同次數的項硬湊在一起。"
       }
     ]
   },
@@ -36,7 +36,7 @@
     "https://www.naer.edu.tw/",
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
   ],
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -54,45 +54,122 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「A-8-3：多項式的四則運算」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（多項式運算研究）",
+      "subject": "math",
+      "chapterLocator": "公開 XML https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；八上多項式加減乘除章節入口，僅作結構定位",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "公開資源支持由同類項與去括號進入分配律乘法，再以代入檢查等值；本課融合為括號、配對、合併、驗算四站的獨立路徑。",
+      "copyrightBoundary": "只研究公開索引與概念方向，不複製教材、影音、題目、答案或圖片；本課案例與回饋均原創。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中數學公開架構交叉索引",
+      "subject": "math",
+      "chapterLocator": "均一公開主題頁 https://www.junyiacademy.org/topics/n-m7a；公開可見之代數式與多項式運算前置節點，未取得南一課本全文頁碼",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": ["teaching-sequence", "concept-progression", "assessment-pattern"],
+      "outcome": "公開交叉入口支持由代數式結構銜接同類項、括號和代入驗證；因資料非出版社全文，本課只採保守定位，不臆測未公開題目。",
+      "copyrightBoundary": "不將平台內容冒稱南一教材，不複製頁面文字、題目、解析或影片；所有正文與互動均重新創作。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（單元結構研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["以同類項定義建立多項式加減的整理依據", "以分配律逐項處理多項式乘法並保持運算順序"],
+        "representations": ["用項目標記與直式排列呈現加減運算過程"],
+        "examplesOrEvidence": ["將減去多項式視為每一項都變號後再合併"],
+        "misconceptions": ["減法只改第一項符號，未處理括號中的其餘項"],
+        "assessmentEmphasis": ["能說明每一步運算規則並以代入檢查結果"]
+      },
+      "licenseBoundary": "只取公開來源的概念順序與教學重點；本課文字、例題、提示、互動步驟與答案均重新設計，不重製原教材。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "均一國中數學主題頁（概念與練習路徑研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-junyi.html",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["用逐步拆解處理括號、符號與同類項的關係", "把多項式運算結果代入數值，檢查整理是否保持等值"],
+        "representations": ["用分步運算與錯誤回饋定位符號問題"],
+        "examplesOrEvidence": ["比較先去括號與先分類同類項的不同解題路徑"],
+        "misconceptions": ["把多項式相乘誤當成同次項係數直接相乘"],
+        "assessmentEmphasis": ["能保留中間步驟並指出錯誤發生的規則位置"]
+      },
+      "licenseBoundary": "只研究公開主題呈現的技能分段與練習邏輯；不複製均一題目、文字、影片或答案，所有任務均重新撰寫。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；本機快取：/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html",
+      "reviewedAt": "2026-08-29",
+      "findings": {
+        "concepts": ["區分加減乘除各種運算中可用的代數規則", "以標準形式與同類項整理運算結果"],
+        "representations": ["用運算流程圖連結括號、分配律與合併同類項"],
+        "examplesOrEvidence": ["檢查多項式加減前後各次方項的係數變化"],
+        "misconceptions": ["多項式除法時忽略除式限制或只處理首項"],
+        "assessmentEmphasis": ["能選擇合理的運算順序並解釋結果的等值性"]
+      },
+      "licenseBoundary": "只研究公開章節的概念分層與表徵方向；本課文字、案例、圖示與作答引導均為原創，不重製出版社素材。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": ["多項式加減以同類項定義為整理依據，不能只看係數", "多項式乘法必須依分配律逐項處理並記錄中間結果", "完成運算後要用代入或展開反向檢查原式與結果是否等值"],
+    "versionDifferences": ["康軒著重同類項與分配律的規則基礎，適合建立運算理由", "均一著重分步拆解與錯誤回饋，適合建立符號自我監控", "翰林著重運算流程與標準形式，適合統整不同運算的選擇"],
+    "originalAdditions": ["設計括號符號檢查卡，要求學習者逐項標示變號或分配的依據", "加入兩條不同但可驗算的解題路徑，讓學習者比較效率與風險", "把代入驗算放在運算結尾，要求指出它能確認什麼以及不能取代什麼"],
+    "llmSynthesisNote": "本單元先比較三版本的規則焦點、表徵與錯誤類型，再由 LLM 以原創案例、逐步理由、反例與驗算任務重新組織多項式四則運算；未複製任何版本的題目、答案或敘述，也未沿用其題目順序或教材句型。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「A-8-3：多項式的四則運算」",
-        "body": "先讀懂「A-8-3：多項式的四則運算」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "先把括號當成一整包量",
+        "body": "校園展板的外框與內框常要算剩餘面積，式子自然會出現括號。若外框面積用（x＋4）（x＋2）表示、內框面積用（x＋1）（x＋3）表示，最後要做的是兩個多項式相減，而不是只刪掉一個括號。多項式四則運算的關鍵，是先看清楚括號外的運算符號，再選擇分配律、同類項或除法的步驟。尤其 7−（2x−5）中的減號，會讓括號內每一項都變號，結果是 7−2x＋5；若只改第一項，模型就已經失真。今天會把每個中間步驟寫成可回查的記錄，讓符號、配對與數值結果彼此對得上。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「多項式的四則運算」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "加減是重組，乘法是完整配對",
+        "body": "加減法的核心是同類項重組：先處理括號，再把字母與次方相同的項配在一起；減去一個多項式時，負號必須分配給括號裡的每一項。乘法則是分配律的完整配對，a（b＋c）要產生 ab 與 ac，而（a＋b）（c＋d）會有 ac、ad、bc、bd 四個乘積，不能只乘第一項。每個乘積的係數相乘、同一變數的次方相加，全部列出後才合併同類項。除法若是除以單項式，也要逐項處理並注意除式不可為零；遇到多項式除式則不能把分子每一項任意各除一次。把『去括號—配對—合併—驗算』分開，運算順序就不會被答案外觀牽著走。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「A-8-3：多項式的四則運算」為主題，取自編算式 (x＋4)(x＋2)。先用分配律得到 x²＋6x＋8，再代入 x＝3 檢查原式與展開式都等於 35；這個步驟示範如何保留運算理由，而不是只抄公式。"
+        "heading": "示範：減法與乘法分兩種帳本",
+        "body": "自編例題分兩段處理。第一段是（2t²−t＋4）−（t²＋3t−6）：先把第二個括號逐項變號，成為 2t²−t＋4−t²−3t＋6，再按次方整理為 t²−4t＋10。第二段是（t−2）（t＋5）：四個配對是 t²、5t、−2t、−10，合併後得到 t²＋3t−10。令 t＝2，第一段原式為（8−2＋4）−（4＋6−6）＝6，整理式也是 4−8＋10＝6；第二段原式是 0×7＝0，整理式為 4＋6−10＝0。兩段都顯示括號處理與乘法配對不能省略；若少了 −3t 或漏掉 −2t，代入只是一個快速警報，真正的修正仍要回到每項的來源。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "錯誤追蹤：找出漏掉的配對",
+        "body": "現在審核一份錯解：3（x²−2x＋1）−（2x²−x−4）被寫成 3x²−2x＋3−2x²−x−4。第一個錯誤是 3 沒有分配給 −2x 與 1；第二個錯誤是第二個括號前的負號，應讓 −x 變成＋x、−4 變成＋4。正確路徑是 3x²−6x＋3−2x²＋x＋4，整理成 x²−5x＋7。請把每個原項用箭頭連到結果項，再令 x＝1 與 x＝−2 分別驗算原式和整理式；兩個值都相同，才較能排除偶然相等。若仍不一致，依『分配係數、整包變號、配對同類項』三個檢查點回看，而不是只改最後一個常數。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「A-8-3：多項式的四則運算」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "用兩種面積模型相減",
+        "body": "把方法搬到園遊會攤位的布置圖：大矩形長寬為 x＋4 與 x＋2，小矩形缺角長寬為 x−1 與 x＋3，剩餘面積要用前者減後者。先展開大矩形得 x²＋6x＋8，再展開小矩形得 x²＋2x−3，兩者相減後 x² 抵消，留下 4x＋11。令 x＝2，直接量算大矩形 6×4＝24、小矩形 1×5＝5，差是 19；代入 4x＋11 也得 19。這個模型提醒我們：不同運算可能讓二次項消失，但不能預先猜結果；每一個括號都要完整展開，並確認 x 的範圍讓長度為正。若改成求兩個區域合併面積，運算符號與最後的多項式也會跟著變。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「A-8-3：多項式的四則運算」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "最後做符號、配對、數值三查",
+        "body": "自我檢核可以做成三張收據。第一張是符號收據：括號外的加減是否作用到括號內每一項，負號有沒有遺漏；第二張是配對收據：乘法是否讓左邊每項都和右邊每項相乘，除法是否逐項遵守除式限制；第三張是等值收據：選兩個不同的數代回原式與結果式，並比較圖形或面積模型的數值。若結果不合，先標出錯在去括號、分配、次方、同類項或運算順序哪一站，再重做那一站。若兩個數值剛好相同，也不能因此宣稱式子永遠等值，仍要確認每個代數項的來源。能說明規則、留下中間式、用多重表示驗收，才是真正掌握四則運算。"
       }
     ],
     "summary": [
@@ -121,16 +198,16 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
+  "reviewStatus": "draft",
   "updatedAt": "2026-08-27",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「A-8-3：多項式的四則運算」的表示、推理與驗算。",
-    "scenario": "請依序分析「A-8-3：多項式的四則運算」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳括號、係數與乘積配對，立即同步原式、展開式、同類項表與代入值，理解多項式四則運算。",
+    "scenario": "你是展板面積稽核員：拖曳矩形長寬與運算卡，讓面積圖、代數式、配對表及數值結果即時改變，再找出漏分配、錯變號或少配對的錯誤。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
+        "meaning": "矩形尺寸或輸入值 x，可拖曳改變並同步檢查等值"
       }
     ],
     "steps": [
@@ -175,8 +252,9 @@
     "engine": "math-algebra-balance",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「A-8-3：多項式的四則運算」的表示、推理與驗算。",
-    "mission": "請依序分析「A-8-3：多項式的四則運算」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳括號、係數與乘積配對，立即同步原式、展開式、同類項表與代入值，理解多項式四則運算。",
+    "mission": "你是展板面積稽核員：拖曳矩形長寬與運算卡，讓面積圖、代數式、配對表及數值結果即時改變，再找出漏分配、錯變號或少配對的錯誤。",
+    "learningDesign": {"type":"representation-match","objective":"拖曳括號、係數與乘積配對，讓原式、展開式、面積圖、同類項表與數值結果即時同步，並以操作觀察和文字解釋定位四則運算錯誤。","predictionPrompt":"先拖曳減號到（3x²−2x）−（x²＋4x），預測第二個括號去掉後哪些符號會改變；再拖曳 x 從 1 到 2，預測原式與整理式是否仍等值。","evidencePrompt":"提交兩組只改一個參數的括號展開、配對表與代入結果；再連結一題會考型多項式運算，解釋漏分配、只改第一項或同類項配錯的錯誤分流。","steps":[{"id":"step-1","action":"拖曳括號前的減號，觀察每一項變號及原式、展開式同步更新。","equation":"（3x²−2x）−（x²＋4x）＝3x²−2x−x²−4x","reason":"減號作用於整個括號，必須逐項分配；圖形與符號表只是觀察證據，理由仍要寫出規則。","feedback":"若只改第一項，錯誤分流標記整包變號漏項；請把 −4x 也放入展開式。"},{"id":"step-2","action":"只拖曳乘法配對卡完成（2x−3）（x＋4），觀察四個乘積與面積圖同步累積。","equation":"2x²＋8x−3x−12＝2x²＋5x−12","reason":"分配律要求左邊每項和右邊每項配對，四格乘積缺一不可，完成後才可合併同類項。","feedback":"若漏掉 8x 或 −3x，系統指出未完成四格配對；不能只乘首項和末項。"},{"id":"step-3","action":"拖曳 x 從 1 改成 2，讀取原式、整理式與兩組代入表，解釋等值證據。","equation":"（2x−3）（x＋4）＝2x²＋5x−12；x＝1、2 皆相等","reason":"改變輸入值仍保持前後結果相同，能檢查展開與合併沒有改變原式，而非只靠一次巧合。","feedback":"若數值不一致，依序回查括號、配對、同類項和常數；系統會把錯誤分流到具體步驟。"},{"id":"step-4","action":"把會考型算式拖入加減、乘法或除法區，並用新數值驗證運算規則。","equation":"括號減法→逐項變號；乘法→逐項配對；除法→逐項處理且除式不可為零","reason":"不同四則運算有不同規則；分類、符號式、圖形或表格與數值結果要互相支持，才能避免套錯規則。","feedback":"若把減法當成只改第一項或把乘法當成首尾相乘，錯誤分流要求重新標記運算類型與中間證據。"}]},
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",

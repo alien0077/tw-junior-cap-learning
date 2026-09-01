@@ -9,163 +9,308 @@
     "8"
   ],
   "content": {
-    "summary": "辨認固定公差的等差數列，求第 n 項與延伸項。",
+    "summary": "從固定步距辨認等差數列，建立第 n 項公式，並用等差中項與生活模型驗證項次關係。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "辨認固定公差的等差數列，求第 n 項與延伸項。 能以列舉或公式驗證結果。"
+        "body": "能由相鄰兩項的差判斷等差數列，找出首項與公差，利用 a_n=a_1+(n-1)d 求指定項，並檢查等差中項的條件。"
       },
       {
-        "heading": "學習流程",
-        "body": "找出首項與公差，建立項次關係；求和時確認首末項與項數，再代入公式。"
+        "heading": "核心課文",
+        "body": "等差數列的特色不是看起來整齊，而是相鄰兩項相減都得到同一個數 d。第 n 項從首項走 n-1 個固定步距，因此 a_n=a_1+(n-1)d；這和把所有項相加的等差級數是不同任務。"
       },
       {
         "heading": "常見錯誤",
-        "body": "公差正負判斷錯誤、項數少算，或將第 n 項公式誤當求和公式。"
+        "body": "常見錯誤有把項數 n 當成步數、負公差少寫負號、把第 n 項公式當成求和公式，以及只檢查一組相鄰差就宣稱整列都是等差。"
       }
     ]
   },
   "studyHighlights": [
-    "先找首項與公差。",
-    "確認項次與項數。",
-    "用列舉或公式驗算。"
+    "先逐項相減確認公差固定，再辨認首項與項次。",
+    "第 n 項走的是 n-1 個公差，不是 n 個。",
+    "用代入、反推與等差中項交叉檢查，勿把數列和本課混淆。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
     "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://www.junyiacademy.org/topics/n-m8a",
+    "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+    "https://mathvideo.hle.com.tw/1A/"
   ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+    "authoringNote": "依官方課綱、KG、版本 mapping 與三方可取得研究資料獨立撰寫；南一／翰林的公開證據屬章節或影音索引，未被冒充為教材全文；未複製出版社文字、圖片、例題、題目、答案或逐字稿。"
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "publisher": "nani",
+      "edition": "南一版數學八年級章節架構公開交叉資料",
       "subject": "math",
-      "chapterLocator": "N-8-4：等差數列",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "八年級數學數列單元；以校方公開南一版課程計畫與均一類南一版章節架構作保守定位",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m8a",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression"
+      ],
+      "outcome": "可確認數列位於八年級下學期數學章節脈絡，但目前可取得的是依南一架構編排的教育平台索引與校方課程計畫，不足以逐頁核對 N-8-4 教材正文；本課只採用章節邊界與概念順序。",
+      "copyrightBoundary": "不把均一索引或校方計畫宣稱為南一教材全文；正文、例證、練習、迷思診斷與互動均為本課原創。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開影片 XML",
+      "subject": "math",
+      "chapterLocator": "8下 1-1「等差數列」；p7、p10、p11、p13–p18 的例題／隨堂練習、自我檢核、自我評量與基礎／精熟練習項目",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「N-8-4：等差數列」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "公開 metadata 呈現由數列與等差數列概念進入第 n 項、等差中項、例題與分層練習，並有自我檢核與挑錯項目；本課吸收這個由辨認到公式與診斷的節奏，另寫車站座位、溫度與存款例證。",
+      "copyrightBoundary": "只研究公開 XML 的章節、頁碼、影片分類與名稱；不重製影片、教材文字、圖片、題目、答案或逐字稿。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音索引",
+      "subject": "math",
+      "chapterLocator": "八下第1章數列脈絡；mapping 對應 1-2「等差級數」至本 KG，公開索引可確認等差數列／級數的章節化資源",
+      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "assessment-pattern"
+      ],
+      "outcome": "翰林公開索引與 repository mapping 顯示八下數列章將等差數列與等差級數分開編排；本課明確只處理固定公差與第 n 項，不提前教總和，並保留索引未提供正文的限制。",
+      "copyrightBoundary": "只採用公開影音索引與 mapping 的章節定位，不複製翰林影音、講義、例題、題目或答案。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "南一版數學八年級章節架構公開交叉資料",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m8a；八年級數學公開章節架構；另以 textbook-mapping/math/nani-schoolplan-8up-2026.json 的校方課程計畫 metadata 交叉核對，兩者均非出版社教材全文。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開章節架構支持數列是八年級數學學習脈絡的一部分。",
+          "可取得資料不足以支持南一 N-8-4 的逐頁正文，故不虛構版本細節。"
+        ],
+        "representations": [
+          "本課以項次表、差值表與位置模型補足公開索引沒有提供的數列表示。"
+        ],
+        "examplesOrEvidence": [
+          "章節索引與校方計畫提供八年級數列章節定位，但沒有可合法取得的完整 N-8-4 例題。"
+        ],
+        "misconceptions": [
+          "南一索引未提供迷思診斷；本課依公差定義原創設計項數與負公差錯誤。"
+        ],
+        "assessmentEmphasis": [
+          "索引未呈現題目層級評量；本課安排相減驗證、公式代入與中項檢核。"
+        ]
+      },
+      "licenseBoundary": "僅使用公開章節定位與 metadata；不複製或重建受保護教材內容，所有教學文字與例題均為原創。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開影片 XML（math-knsh-public.xml）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；8下 1-1「等差數列」含 p7、p10、p11、p13–p18 例題／練習、自我檢核、自我評量與基礎／精熟項目。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "等差數列以固定差值作為辨認核心，並延伸第 n 項與等差中項。",
+          "公開 XML 的活動分布支持從基本辨認逐步進入公式與應用。"
+        ],
+        "representations": [
+          "例題與隨堂練習的頁碼序列支持用項次表、差值表與公式互換表示。"
+        ],
+        "examplesOrEvidence": [
+          "XML 列出 8下 1-1 的 p7、p10、p11、p13、p14、p16、p17 例題與隨堂練習，另列 P18 自我檢核與分層練習。"
+        ],
+        "misconceptions": [
+          "自我評量挑錯項目支持安排公差正負、項次步數與第 n 項／求和混淆的診斷。"
+        ],
+        "assessmentEmphasis": [
+          "自我檢核、自我評量、基礎與精熟練習形成由辨識、計算到遷移的評量梯度。"
+        ]
+      },
+      "licenseBoundary": "只讀取公開 XML metadata，不複製影片內容、教材文字、圖片、題目、答案或逐字稿。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音索引（hanlin-math-index.html）",
+      "sourceType": "local-download",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；repository mapping 對應八下第1章數列資源，並將 1-2「等差級數」對到 kg-math-content-n-8-4；本地索引沒有可直接逐頁核對的 N-8-4 正文。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引與 mapping 支持數列、等差數列與等差級數的章節邊界。",
+          "沒有直接 N-8-4 正文，故本課不宣稱翰林特定例題或教法細節。"
+        ],
+        "representations": [
+          "可觀察的是章節／影音資源索引；本課自行建立固定步距數線、表格與公式的互換。"
+        ],
+        "examplesOrEvidence": [
+          "本地 HTML 可核對八下數列章資源與等差級數章節定位，但未提供可引用的完整單元題目。"
+        ],
+        "misconceptions": [
+          "索引沒有迷思說明；本課錯誤診斷由公差與項次定義推導。"
+        ],
+        "assessmentEmphasis": [
+          "索引顯示章節化回顧／評量資源；本課以代入、反推與中項三重檢核具體化。"
+        ]
+      },
+      "licenseBoundary": "只使用公開索引與 repository mapping 的章節 metadata，不複製影音、講義、題目或答案。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "官方課綱與 KG 將本課穩定定位為 N-8-4 等差數列，並與前一課認識數列、後續等差級數形成邊界。",
+      "三方可取得資料都支持以數列章節化方式學習；康軒 XML 進一步明示等差數列、第 n 項、等差中項與分層檢核資源。",
+      "本課共同核心是相鄰差固定、公差 d、首項 a_1、項次 n 與第 n 項公式 a_n=a_1+(n-1)d。"
+    ],
+    "versionDifferences": [
+      "南一目前可得證據偏章節架構與校方計畫、康軒是含頁碼與活動類型的公開 XML、翰林是公開影音索引與 mapping；南一與翰林均沒有可逐頁核對的 N-8-4 完整正文。"
+    ],
+    "originalAdditions": [
+      "用車站座位的固定步距引入公差，再以負公差溫度表和分段存款檢驗公式。",
+      "設計把 n 與 n-1 步混淆、負公差漏負號、只查一個差值與誤用求和公式的單元專屬診斷。",
+      "以三點等差中項與數線位置互動，讓學生用兩側平均和差值相等兩種證據互相驗證。"
+    ],
+    "llmSynthesisNote": "我先讀取官方課綱 N-8-4、KG 穩定連結、三份 repository mapping 與本地三方來源，再依各資料能支持的證據層級融合。南一與翰林缺乏可逐頁核對正文，因此只採章節邊界與可觀察 metadata；康軒的 8下 1-1 例題／練習／自評序列則支持由辨認到第 n 項與診斷的安排。所有正文、數值例證、迷思、練習、遷移與互動流程均為本單元重新撰寫，不使用固定模板。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「N-8-4：等差數列」",
-        "body": "先讀懂「N-8-4：等差數列」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "車站座位的編號，能不能不用一個個數？",
+        "body": "某月台第一排有 12 個座位，第二排有 16 個，第三排有 20 個，之後每排都多 4 個。把每排座位數寫成 12、16、20、24……，相鄰兩項都增加 4；這個固定步距就是公差。問題不是只找下一項，而是要能回答第 18 排有幾個座位，這會迫使我們把項次和步數分開。第一排是首項 12，從第一排走到第 18 排只走 17 步。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「等差數列」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "固定差值才是等差數列的身分證",
+        "body": "數列 a_1、a_2、a_3……若每一對相鄰項都滿足 a_{k+1}-a_k=d，且 d 固定，就稱為等差數列。d 可以是正數、負數或 0；例如 5、9、13 的公差是 4，30、24、18 的公差是 -6，7、7、7 的公差是 0。第 n 項不是首項加 n 個公差，而是從第 1 項走到第 n 項的 n-1 個間隔，所以 a_n=a_1+(n-1)d。先寫首項、公差、目標項次，再代入，比直接套數字更不容易錯。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「N-8-4：等差數列」為主題，將 84 分解為 2×2×3×7，先標出每個質因數，再用乘回 84 驗算。若改成負數或分數，先寫出符號與單位，再選擇相同的分解與檢查流程。"
+        "heading": "從座位模型推到第 18 項",
+        "body": "座位數列的 a_1=12、d=4。第 18 排要走 18-1=17 個固定步距，因此 a_18=12+17×4=80。用列舉驗證也得到第 2 排 16、第 3 排 20；第 18 排就是 12 加上 17 次 4。若題目問『第 1 排到第 18 排共有多少座位』，那是把各項相加的另一個等差級數問題，不能把 80 當成總數；本課先守住第 n 項與總和的概念邊界。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "先做差，再做項次表",
+        "body": "請檢查 41、35、29、23……：35-41=-6、29-35=-6、23-29=-6，因此它是公差 -6 的等差數列。第 9 項為 41+(9-1)(-6)=41-48=-7。負號不是最後才補上的裝飾，而是每一步向下走的方向。遇到只給第 4 項與公差的題目，也可反推首項：若 a_4=17、d=5，則 a_1=17-3×5=2，再代回 a_4=2+3×5 驗算。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「N-8-4：等差數列」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "把固定步距帶到溫度與存款",
+        "body": "氣象站記錄清晨五個時刻的溫度 18、16、14、12、10°C，這是公差 -2 的等差數列；第 9 個時刻是 18+8×(-2)=2°C。另一個存款活動每週比前週多存 50 元，第一週 100 元，則第 n 週單週存款為 100+(n-1)×50。請先判斷題目問的是『第幾週那一筆』還是『累計存了多少』；前者屬本課第 n 項，後者要進入等差級數，不能跨越概念邊界。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「N-8-4：等差數列」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "用兩種方法確認同一個項次",
+        "body": "學完後拿一個自己寫的數列，先逐項相減確認公差，再用公式算指定項，最後用前後一項檢查：a_{n+1}應等於 a_n+d。若三種記錄不一致，優先檢查是否把 n 寫成步數、是否漏了公差負號，或是否把總和誤當單項。等差中項也能提供快速檢查：若三項連續項為 p、q、r，則 2q=p+r；左、右差相等與中項為兩端平均是同一件事的兩種說法。"
       }
     ],
     "summary": [
-      "先用自己的話界定「等差數列」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "逐項相減確認固定公差，再記錄首項與目標項次。",
+      "第 n 項走 n-1 個間隔，公式是 a_n=a_1+(n-1)d。",
+      "負公差表示方向；等差中項可用差值或兩端平均驗證。",
+      "第 n 項不是等差級數總和，生活題先辨認問單項還是累計。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「等差數列」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "數列 14、19、24、29……的公差與第 12 項是多少？",
+        "expectedEvidence": "先算相鄰差皆為 5，再用 a_12=14+11×5=69，並能說明 11 是間隔數。"
       },
       {
-        "prompt": "在「等差數列」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "若 a_5=3 且公差 d=-4，首項 a_1 是多少？",
+        "expectedEvidence": "由 a_5=a_1+4(-4) 得 a_1=19，再代回 19-16=3 驗算。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「等差數列」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼 6、10、14、19 不能直接判為等差數列？",
+        "expectedEvidence": "指出前三個差為 4、4，但 19-14=5；必須檢查所有相鄰差固定。"
+      },
+      {
+        "prompt": "三個連續等差項為 8、x、20，x 為何？",
+        "expectedEvidence": "使用 2x=8+20 或說明兩側差相等，得到 x=14。"
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「N-8-4：等差數列」的表示、推理與驗算。",
-    "scenario": "請依序分析「N-8-4：等差數列」的條件，選出最能保留資訊、可被驗證的做法。",
+    "type": "guided-choice",
+    "goal": "以固定步距、項次與中項檢查，建立等差數列第 n 項模型。",
+    "scenario": "設計一段每排增加 4 個座位的月台座位表，操作項次與公差後找出指定排數。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
+        "meaning": "指定項次的項值"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "12、16、20、24 是否為等差數列，先檢查什麼？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "計算每一對相鄰項的差是否相同",
+          "只看第一項和最後一項",
+          "把所有項相加"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "等差數列的判準是每一對相鄰差固定；只看端點或先求和都不能完成判定。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "第 18 項從首項要走幾個公差？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "17 個，因為從第 1 項到第 18 項有 18-1 個間隔",
+          "18 個，項次就是步數",
+          "只走 1 個，因為公差固定"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "第 n 項距離首項有 n-1 個間隔，這是最常見的項次錯誤來源。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "若首項 12、公差 4，第 18 項怎麼算？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "12+17×4=80",
+          "12+18×4=84",
+          "12×17+4=208"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "代入 a_n=a_1+(n-1)d，得到 12+17×4=80。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "三個連續等差項 8、x、20 如何檢核？",
+        "options": [
+          "用 2x=8+20，得 x=14",
+          "用 x=8+20，得 x=28",
+          "用 20-8=12，直接令 x=12"
+        ],
+        "answer": "A",
+        "feedback": "中項是兩端平均；8、14、20 的左右差都是 6。"
       }
     ]
   },
@@ -175,13 +320,52 @@
     "engine": "math-number-line",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「N-8-4：等差數列」的表示、推理與驗算。",
-    "mission": "請依序分析「N-8-4：等差數列」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "以固定步距、項次與中項檢查，建立等差數列第 n 項模型。",
+    "mission": "設計一段每排增加 4 個座位的月台座位表，操作項次與公差後找出指定排數。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
-      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "https://www.junyiacademy.org/topics/n-m8a",
+      "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "https://mathvideo.hle.com.tw/1A/"
+    ],
+    "learningDesign": {
+      "type": "parameter-investigation",
+      "objective": "改變首項、公差與項次，觀察項值如何沿固定步距移動，並以公式、相鄰差與中項關係說明等差模型。",
+      "predictionPrompt": "若首項固定而公差由 4 改成 -3，預測第 6 項在數線上的方向與位置如何改變？若取三個連續項，中間項和兩端有何關係？",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "設定首項 12、公差 4，顯示前五項與數線位置。",
+          "equation": "a_n=12+(n-1)×4",
+          "reason": "公式把首項與 n-1 個固定步距連在一起，能由項次直接得到項值。",
+          "feedback": "若第 1 項顯示成 16，表示把 n 當成步數；請確認 n=1 時公式回到首項 12。"
+        },
+        {
+          "id": "step-2",
+          "action": "把目標項次拖到第 6 項，對照逐項加 4 與公式結果。",
+          "equation": "a_6=12+5×4=32",
+          "reason": "從第 1 項到第 6 項只有五個間隔，逐項列舉應與公式一致。",
+          "feedback": "若得到 36，少減了 1 個間隔；把第 1 項到第 6 項的箭頭數清楚。"
+        },
+        {
+          "id": "step-3",
+          "action": "把公差改為 -3，觀察點位往左移並重新計算第 6 項。",
+          "equation": "a_6=12+5×(-3)=-3",
+          "reason": "負公差改變的是固定移動方向，公式本身不變，但負號必須保留。",
+          "feedback": "若數線向右或答案為 27，檢查是否漏寫負公差。"
+        },
+        {
+          "id": "step-4",
+          "action": "選取連續三項 8、x、20，讓系統以差值與平均各自驗證 x。",
+          "equation": "x-8=20-x；2x=8+20；x=14",
+          "reason": "等差中項同時具有左右差相等與兩端平均兩種等價證據。",
+          "feedback": "只有 x=14 時兩側差都為 6；請勿把兩端相加當成中項。"
+        }
+      ],
+      "evidencePrompt": "提交一個首項、公差、項次的公式計算，以及相鄰差或中項平均的獨立驗證，並指出項次與步數的差異。"
+    }
   }
 }

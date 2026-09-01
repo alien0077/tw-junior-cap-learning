@@ -1,187 +1,47 @@
 {
-  "id": "lesson-math-content-n-8-6",
-  "subject": "math",
-  "title": "N-8-6：等比數列",
-  "knowledgeIds": [
-    "kg-math-content-n-8-6"
-  ],
-  "gradeRange": [
-    "8"
-  ],
-  "content": {
-    "summary": "辨認固定公比的等比數列，求項值與公比。",
-    "sections": [
-      {
-        "heading": "學習目標",
-        "body": "辨認固定公比的等比數列，求項值與公比。 能以代回或比例檢查結果。"
-      },
-      {
-        "heading": "學習流程",
-        "body": "辨認比值或公比，整理項次與未知量，建立關係後逐步求解並驗算。"
-      },
-      {
-        "heading": "常見錯誤",
-        "body": "把公比當公差、連比前後項對錯，或忽略比例同乘同除條件。"
-      }
+  "id":"lesson-math-content-n-8-6",
+  "subject":"math",
+  "title":"N-8-6：等比數列",
+  "knowledgeIds":["kg-math-content-n-8-6"],
+  "gradeRange":["8"],
+  "content":{
+    "summary":"等比數列是相鄰兩項的比固定，而不是每次加同一個數。學習者要能由相鄰商判定公比、用 a_n=a_1 r^(n-1) 求第 n 項，並以等比中項、遞推與代回互相驗證。",
+    "sections":[
+      {"heading":"學習目標","body":"能區分固定差與固定比，對相鄰前項不為 0 的數列計算公比 r；能以首項 a_1、公比 r 與項次 n 表示第 n 項 a_n=a_1 r^(n-1)，並處理負數或分數公比；遇到等比中項時，能用前後兩項的乘積關係或直接比值驗證。"},
+      {"heading":"從兩種變化讀數列","body":"把 3、6、12、24 寫成表格：相鄰差是 3、6、12，並不固定；相鄰比卻都是 2，所以公比 r=2。一般地，若相鄰商 a_(n+1)/a_n 都相同，固定商就是公比。第 n 項從首項走 n-1 次乘法，因此 a_n=a_1 r^(n-1)；n-1 正好代表乘法步數。"},
+      {"heading":"自編例題：紙張折痕的層數","body":"一張紙每折一次，重疊層數以 1、2、4、8、16 表示。相鄰商都是 2，所以第 6 項是 1×2^5=32。換成 81、27、9、3，公比是 1/3，第 5 項為 81×(1/3)^4=1；公比小於 1 仍是等比，只是逐項縮小。最後以 32÷16 和 1÷3 回查相鄰商，確認不是只憑外觀猜規律。"},
+      {"heading":"迷思診所：差、比與符號","body":"5、10、20、40 的第一個差是 5，但後面差不固定，不能把 5 當公差；固定的是比 2。-2、4、-8、16 的相鄰差也不固定，但相鄰商都是 -2，負公比會使符號交替。若 4、x、36 為連續等比三項，應由 x/4=36/x 得 x^2=144，再依題目條件判斷 x=12 或 -12。若某相鄰前項為 0，不能硬算商，必須說明判定方式的限制。"},
+      {"heading":"引導練習：由表格形成通項","body":"完成四欄卡：項次 1、2、3、4；數值 7、14、28、56；相鄰商 14/7、28/14、56/28；通項 a_n=7×2^(n-1)。先用前一項乘 2 求第 8 項，再用通項重算；兩者不一致時，檢查首項、指數 n-1 與公比，而不是只改答案。接著練習 -3、6、-12、24，把符號列入每一步驗算。"},
+      {"heading":"遷移任務：模型何時能外推","body":"水池資料為第 1 天 160、第 2 天 80、第 3 天 40、第 4 天 20 單位。相鄰比固定為 1/2 時，可暫以 a_n=160×(1/2)^(n-1) 預測第 7 天，但仍要標記外推範圍與情境限制。另一組 160、120、80、40 的差固定、比不固定，應用等差觀點，不能因為數值下降就套等比公式。"},
+      {"heading":"自我檢核：讓公式接受三次審問","body":"先用語句說明等比數列是相鄰項的比固定，公比是固定比；再說明 a_n=a_1 r^(n-1) 中 n-1 是從首項到第 n 項的乘法次數。接著由通項算相鄰兩項，檢查 a_(n+1)/a_n 是否回到 r。最後檢查 r=1 時數列不變、r=-1 時符號交替、r=0 時第二項起為 0，以及含零數列不能把相鄰商當唯一判準。"}
     ]
   },
-  "studyHighlights": [
-    "先辨認比值關係。",
-    "依項次或比例求解。",
-    "代回檢查結果。"
+  "teaching":{"body":[{"id":"hook","phase":"hook","heading":"紙張折痕留下的乘法線索","body":"想像一張紙每折一次，重疊層數依序成為 1、2、4、8。這不是每次多同樣的層數，而是每次把上一個數乘 2；本課要從資料證明固定乘法，並預測尚未出現的項。先把項次、項值與單位分開，避免只憑數值變大就猜規律。"},{"id":"explain","phase":"explain","heading":"相鄰商與乘法步數","body":"等比數列的核心是相鄰項的比固定：a_(n+1)/a_n=r。當相鄰前項不為 0 時，固定商就是公比。從第 1 項走到第 n 項要做 n-1 次乘法，所以 a_n=a_1 r^(n-1)；這個指數是步數的記錄，不是把項次直接抄進去。"},{"id":"worked-example","phase":"worked-example","heading":"把折痕資料寫成通項","body":"在 1、2、4、8、16 中，每個相鄰商都是 2，因此第 6 項是 1×2^5=32。換用 81、27、9、3 時，公比為 1/3，第 5 項是 81×(1/3)^4=1；公比小於 1 仍是等比，只是逐項縮小。"},{"id":"guided-practice","phase":"guided-practice","heading":"讓兩條解法互相抓錯","body":"對 7、14、28、56，先逐項乘公比求第 8 項，再寫 7×2^(8-1) 重算；把每次商列在旁邊，並在答案下方寫出代回檢查。若兩條路徑不同，依序查首項、r、n-1 與正負號，而不是用看似合理取代證據。再以 -3、6、-12、24 練習負公比。"},{"id":"transfer","phase":"transfer","heading":"資料能否支持等比模型","body":"水池資料 160、80、40、20 的相鄰商都是 1/2，可以在指定天數內建立模型，但外推仍要說明限制。若改成 160、120、80、40，固定的是差而不是比，應換成等差表示。遷移時先找證據，再問情境是否允許延伸，不能因為每筆數值下降就套同一公式。"},{"id":"reflect","phase":"reflect","heading":"檢查公式的邊界","body":"最後檢查：我是否能說出固定的是商而非差？能否解釋 n-1 是幾次乘法？當 r=1、r=-1、r=0 或數列含零項時，是否知道相鄰商判定的限制？請用一組自選數列寫出相鄰商、通項和代回結果，確認符號、運算與條件彼此吻合。"}],"summary":["等比數列以固定相鄰商為判準，不能把第一個差當成公比。","第 n 項公式的 n-1 代表從首項到目標項實際做的乘法次數。","負數或分數公比仍可形成等比數列，但符號和大小都要納入驗算。","外推前需同時檢查固定比證據與生活情境的適用範圍。"],"exitCheck":[{"prompt":"請判斷 5、10、20、40 是等差還是等比，並寫出證據。","expectedEvidence":"指出差不固定而相鄰商固定為 2，並說明公比。"},{"prompt":"首項 7、公比 2，請寫出第 8 項的通項與數值。","expectedEvidence":"寫出 a_8=7×2^7=896，並解釋指數 7 的來源。"},{"prompt":"為什麼 160、120、80、40 不能直接使用等比公式？","expectedEvidence":"指出相鄰差固定但相鄰商不固定，並能改用等差觀點。"}]},
+  "studyHighlights":["比較相鄰差與相鄰比，辨認固定比。","用 a_n=a_1 r^(n-1) 表示第 n 項，理解 n-1 的乘法步數。","處理負公比、分數公比與零項時先檢查條件。","用遞推、通項代回與情境限制交叉驗算。"],
+  "studyReferences":["https://cap.rcpet.edu.tw/index.html","https://stv.naer.edu.tw/teaching/course_outline.jsp","https://www.naer.edu.tw/","https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf","https://www.junyiacademy.org/topics/n-m8b-c01-2","https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml","https://mathvideo.hle.com.tw/2B/1-3/"],
+  "provenance":{"origin":"original","license":"All rights reserved","authoringNote":"本課依官方 N-8-6、KG、三版本可取得公開資料獨立撰寫；未複製出版社正文、題目、答案、圖片或影片。南一為類南一版公開索引，康軒為官方 XML，翰林為官方 2B 章節索引；Terra 尚未執行，維持 draft。"},
+  "authoringStandard":"version-fused-v1",
+  "publisherResearch":[
+    {"publisher":"nani","edition":"類南一版均一教育平台八下數列章節索引","subject":"math","chapterLocator":"https://www.junyiacademy.org/topics/n-m8b-c01-2；可定位八下數列章節，但未取得出版社完整等比正文","sourceUrl":"https://www.junyiacademy.org/topics/n-m8b-c01-2","access":"public-open","reviewedAt":"2026-08-30","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"公開索引支持數列章節邊界與由固定關係進入練習、應用的方向；未公開完整正文，故不把未見內容補寫成南一版本事實。","copyrightBoundary":"只研究公開索引與資源分類，不複製教材正文、例題、答案、圖片或影片；本課數值、解法與活動均為原創。"},
+    {"publisher":"kanghsuan","edition":"康軒國中數學八下官方影音公開 XML","subject":"math","chapterLocator":"/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml；8下 1-3 等比數列，含課本解題、隨堂、基礎／精熟練習與自我評量","sourceUrl":"https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml","access":"public-open","reviewedAt":"2026-08-30","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"XML 可核對八下 1-3 及由課本解題、練習到自評的資源節奏；索引未公開完整正文，故不推論出版社特定解題內容。","copyrightBoundary":"只研究官方 XML 的章節、資源類型與公開名稱，不轉寫影片、教材、題目、答案或圖像；正文與例證均獨立創作。"},
+    {"publisher":"hanlin","edition":"翰林國中數學 2B 官方解題影音索引","subject":"math","chapterLocator":"2下 CH1／1-3 等比數列；可定位等比數列、等比數列第 n 項、等比中項、自我檢核與自我評量","sourceUrl":"https://mathvideo.hle.com.tw/2B/1-3/","access":"public-open","reviewedAt":"2026-08-30","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"官方 2B 1-3 支持由定義到第 n 項、等比中項與自評的概念進展；repository mapping 將 1-3 錯連 N-8-5，已以官方頁面與課綱交叉核對排除。","copyrightBoundary":"只研究官方索引的課次與資源類型，不複製正文、例題、答案、影片或圖片；本課文字、互動與 simulation 均為原創。"}
   ],
-  "studyReferences": [
-    "https://cap.rcpet.edu.tw/index.html",
-    "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+  "versionResearch":[
+    {"publisher":"nani","edition":"類南一版均一教育平台八下數列章節索引","sourceType":"public-web","sourceLocator":"https://www.junyiacademy.org/topics/n-m8b-c01-2；公開索引可核對數列與等差級數邊界，未取得完整等比正文","reviewedAt":"2026-08-30","findings":{"concepts":["可取得資料把八下內容置於數列章脈絡，適合先建立固定變化的辨識，再與等差內容分界。","索引不足以逐項確認南一版等比定義、例題或推導，不能把未見內容宣稱為版本事實。"],"representations":["索引主要提供章節定位；本課自行加入相鄰差／比表格、乘法步數與通項三種表徵。"],"examplesOrEvidence":["公開章節樹支持數列範圍定位，但沒有可引用的南一等比原題；紙張與水池資料均自編。"],"misconceptions":["索引沒有逐題迷思選項；本課自行診斷固定差誤判、負公比與零項商的限制。"],"assessmentEmphasis":["可取得資料支持由概念進入練習與應用，但不足以宣稱特定評量題型；本課以代回和模型限制作自編檢核。"]},"licenseBoundary":"只使用公開索引的章節定位，不複製或還原教材正文、圖表、題目、答案或影片；課文與活動為原創。"},
+    {"publisher":"kanghsuan","edition":"康軒國中數學八下官方影音 XML","sourceType":"local-download","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機快取 math-knsh-public.xml 的 8下 1-3 等比數列條目","reviewedAt":"2026-08-30","findings":{"concepts":["XML 可直接定位八下 1-3 等比數列，並與 1-1、1-2 的等差內容分開。","課本解題、隨堂、基礎／精熟練習與自評條目支持分層節奏，但未公開完整推導文字。"],"representations":["本課將索引節奏轉為相鄰商表、遞推乘法鏈、通項與代回驗算，不把自編表徵歸因於出版社。"],"examplesOrEvidence":["本機 XML 可見 8下 1-3 課本／隨堂與自評條目，支持內容範圍，不提供可重製原題。"],"misconceptions":["索引未揭露錯誤選項；本課自編差比混淆、負公比、等比中項與零項診斷。"],"assessmentEmphasis":["公開分類呈現由示範到練習和回顧的層次；本課用遞推與通項雙算找錯。"]},"licenseBoundary":"只研究官方 XML 的課次、資源分類與公開名稱，不轉寫影片、教材、題目、答案或圖像；例證與回饋獨立創作。"},
+    {"publisher":"hanlin","edition":"翰林國中數學 2B 官方解題影音索引","sourceType":"public-web","sourceLocator":"https://mathvideo.hle.com.tw/2B/1-3/；2下 CH1／1-3 等比數列及概念、練習與自評資源","reviewedAt":"2026-08-30","findings":{"concepts":["官方 2B 1-3 直接列出等比數列、等比數列第 n 項與等比中項，支持由定義到公式與特殊關係。","1-1、1-2、1-3 分課呈現，且 repository mapping 把 1-3 錯連 N-8-5，不能照用錯誤對照。"],"representations":["索引以概念、課本／習作解題與自評分層；本課用折痕層數、負公比序列、商表和中項關係自行連接圖表與符號。"],"examplesOrEvidence":["2B 1-3 條目可核對第 n 項與等比中項定位，未取得原題，故例題數字不沿用。"],"misconceptions":["公開索引不呈現完整錯題；本課自編固定差誤判、負號遺漏、n 與 n-1 混淆及零項限制。"],"assessmentEmphasis":["索引含自我檢核與自評；本課安排相鄰商、通項代回和模型限制三重證據。"]},"licenseBoundary":"只研究官方索引的課次分層與資源類型，不複製教材、影片、題目、答案或圖片；正文與互動原創。"}
   ],
-  "provenance": {
-    "origin": "original",
-    "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
-  },
-  "authoringStandard": "full-lesson-v1",
-  "publisherResearch": [
-    {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
-      "subject": "math",
-      "chapterLocator": "N-8-6：等比數列",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「N-8-6：等比數列」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
-  ],
-  "teaching": {
-    "body": [
-      {
-        "id": "hook",
-        "phase": "hook",
-        "heading": "從問題情境看見「N-8-6：等比數列」",
-        "body": "先讀懂「N-8-6：等比數列」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
-      },
-      {
-        "id": "explain",
-        "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「等比數列」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
-      },
-      {
-        "id": "worked",
-        "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「N-8-6：等比數列」為主題，將 84 分解為 2×2×3×7，先標出每個質因數，再用乘回 84 驗算。若改成負數或分數，先寫出符號與單位，再選擇相同的分解與檢查流程。"
-      },
-      {
-        "id": "guided",
-        "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
-      },
-      {
-        "id": "transfer",
-        "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「N-8-6：等比數列」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
-      },
-      {
-        "id": "reflect",
-        "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「N-8-6：等比數列」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
-      }
-    ],
-    "summary": [
-      "先用自己的話界定「等比數列」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
-    ],
-    "exitCheck": [
-      {
-        "prompt": "請用自己的話說明「等比數列」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
-      },
-      {
-        "prompt": "在「等比數列」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
-      },
-      {
-        "prompt": "若題目的條件改變，如何調整處理「等比數列」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
-      }
-    ]
-  },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
-  "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「N-8-6：等比數列」的表示、推理與驗算。",
-    "scenario": "請依序分析「N-8-6：等比數列」的條件，選出最能保留資訊、可被驗證的做法。",
-    "variables": [
-      {
-        "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
-      }
-    ],
-    "steps": [
-      {
-        "id": "step-1",
-        "prompt": "第一步應先做什麼？",
-        "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
-        ],
-        "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
-        "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
-        ],
-        "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "完成後如何確認結論？",
-        "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
-        ],
-        "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
-      }
-    ]
-  },
-  "lessonScope": "learning-content",
-  "simulation": {
-    "id": "sim-math-n-8-6",
-    "engine": "math-number-line",
-    "mode": "model",
-    "model": "general",
-    "goal": "以互動步驟探索「N-8-6：等比數列」的表示、推理與驗算。",
-    "mission": "請依序分析「N-8-6：等比數列」的條件，選出最能保留資訊、可被驗證的做法。",
-    "sourceRefs": [
-      "https://cap.rcpet.edu.tw/index.html",
-      "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/",
-      "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
-  }
+  "fusionRecord":{"commonCore":["官方 N-8-6 與 KG 將本課定位為等比數列，須和 N-8-3 至 N-8-5 的數列與等差內容保持邊界。","三方資料都把八下數列放在概念、練習與檢核脈絡；本課融合為先辨認固定比，再由遞推建立第 n 項。","共同核心是相鄰商固定、公比 r、首項 a_1、項次 n 與 a_n=a_1r^(n-1)，並以等比中項和代回檢查。"],"versionDifferences":["南一是類南一版公開索引，康軒是官方 XML，翰林是 2B 1-3 概念與自評索引；證據深度不同，不能把索引推成完整教材正文。","翰林 repository mapping 將 1-3 錯連 kg-math-content-n-8-5，但翰林官方 2B 1-3、康軒 8下 1-3 與課綱均指向 N-8-6，本課排除錯置。"],"originalAdditions":["以紙張折痕層數引入每次乘同一數，並加入分數公比。","用相鄰差／比雙表、乘法步數與通項代回呈現 n-1 的意義。","設計固定差誤判、負公比、等比中項正負值與零項商限制四種專屬診斷。","以水池資料任務要求提出固定比證據並判斷等比模型邊界。"],"llmSynthesisNote":"本課由 LLM 核對官方 curriculum/math/content-n-8-6.json、kg-math-content-n-8-6、三份 mapping 與本機三方公開資料後獨立融合撰寫。南一只採公開索引支持的邊界，康軒採 XML 的 8下 1-3 資源層次，翰林採官方 2B 1-3 的第 n 項、等比中項與自評定位，並排除錯置 mapping。六段正文、例證、迷思、練習、遷移、互動與 simulation 均針對 N-8-6 重寫，未沿用舊正文或固定模板；Terra 尚未執行，維持 draft。"},
+  "teaching":{"body":[
+    {"id":"ratio-or-difference","phase":"hook","heading":"先辨認固定的關係","body":"把 3、6、12、24 放在表格裡，逐項相減得到 3、6、12，並不固定；逐項相除卻都得到 2。等比數列的入口不是數字看起來變大，而是相鄰兩項的比固定。先問『每次乘幾倍』，才能和前一課固定相差的等差數列分開。"},
+    {"id":"recursive-growth","phase":"explain","heading":"公比把每一步接起來","body":"若每一項都由前一項乘同一個數 r 得到，這個 r 就是公比。從首項走到第 n 項，實際只乘 n－1 次，所以 a_n＝a_1×r^(n－1)；n＝1 時不應多乘一次。把遞推表和公式並排，能看見指數正是步數。"},
+    {"id":"worked-model","phase":"worked-example","heading":"折痕與縮減都能用同一模型","body":"紙張層數 1、2、4、8、16 每次乘 2，第 6 項是 1×2^5＝32。若數列為 81、27、9、3，公比是 1/3，第 5 項為 81×(1/3)^4＝1。公比小於 1 仍是等比，只是沿著乘法鏈縮小。"},
+    {"id":"sign-and-zero","phase":"guided-practice","heading":"負號與零要先檢查條件","body":"在 －2、4、－8、16 中，相鄰商都是－2，負公比會讓符號交替；不能只看數值大小。若相鄰前項為 0，商沒有意義，不能硬套相除判準。練習時先列首項、公比和項次，再以遞推與通項各算一次。"},
+    {"id":"model-transfer","phase":"transfer","heading":"把固定比帶到資料判讀","body":"水池四天剩下 160、80、40、20 單位，相鄰比固定為 1/2，才能暫以 160×(1/2)^(n－1) 外推。若資料是 160、120、80、40，固定的是差而非比，應切換等差模型。公式能算數字，不能替情境保證無限期成立。"},
+    {"id":"reconstruct-and-check","phase":"reflect","heading":"用三種證據重建答案","body":"完成題目後，先用相鄰商確認公比，再用 a_n＝a_1r^(n－1) 計算，最後用相鄰兩項回除檢查是否回到 r。另測 r＝1、r＝－1、r＝0 的邊界，並說明零項與外推限制；能說出每一步理由，才不是只記公式。"}
+  ],"summary":["等比數列的相鄰項比固定，先與固定差的等差數列區分。","公比、首項與 n－1 次乘法共同形成第 n 項公式。","負公比、分數公比與零項都需要額外檢查條件。","遞推、通項、相鄰商與情境限制可以互相驗證。"],"exitCheck":[{"prompt":"判斷 3、6、12、24 是否為等比數列，並寫出第 5 項。","expectedEvidence":"能指出公比為 2，並用 3×2^4 得到 48。"},{"prompt":"為什麼第 n 項公式的指數是 n－1？","expectedEvidence":"能說明從第 1 項到第 n 項只有 n－1 次乘法。"},{"prompt":"說明為什麼 160、120、80、40 不能直接套等比公式。","expectedEvidence":"能指出相鄰差固定但相鄰比不固定，應改用等差觀點。"}]},
+  "reviewStatus":"draft","updatedAt":"2026-08-30",
+  "interactive":{"type":"algebra-expression-builder","goal":"從相鄰商建立公比，形成第 n 項公式，並用遞推與代回驗證等比數列。","scenario":"操作折痕層數與水池剩餘量兩組資料，先選固定比證據，再建立 a_n=a_1 r^(n-1)，最後判斷是否能外推。","variables":[{"symbol":"r","meaning":"固定公比"},{"symbol":"n","meaning":"目標項次"}],"steps":[{"id":"step-1","prompt":"面對 3、6、12、24，哪組證據能判定等比？","options":["比較 6/3、12/6、24/12，確認商都為 2","只看 6-3=3 就把 3 當公比","看到數值變大就直接判定等比"],"answer":"A","feedback":"等比的判準是相鄰商固定；單一差值或成長外觀不足以判定。"},{"id":"step-2","prompt":"首項 7、公比 2 時，第 n 項應寫成什麼？","options":["a_n=7×2^(n-1)，因為實際乘 n-1 次","a_n=7×2^n，因為項次就是乘法次數","a_n=7+2(n-1)，因為公比等於公差"],"answer":"A","feedback":"第 1 項不需乘公比，所以到第 n 項是 n-1 次；加法式是等差模型。"},{"id":"step-3","prompt":"如何確認第 6 項 224 沒有算錯？","options":["用 7×2^5 算得 224，再檢查 224/112=2","只看 224 比前一項大就算正確","把 224 和首項相加作公比檢查"],"answer":"A","feedback":"通項計算與相鄰商回查同時檢查指數步數和固定比。"},{"id":"step-4","prompt":"水池資料外推前還要檢查什麼？","options":["相鄰比固定且情境允許把比例延伸到目標天數","每項變小就一定能無限使用等比公式","把固定差資料也當同一公比模型"],"answer":"A","feedback":"等比模型需要數值證據與情境範圍；下降不等於固定比。"}]},
+  "lessonScope":"learning-content",
+  "simulation":{"id":"sim-math-n-8-6","engine":"math-number-line","mode":"model","model":"general","goal":"從相鄰商建立公比，形成第 n 項公式，並用遞推與代回驗證等比數列。","mission":"操作折痕層數與水池剩餘量兩組資料，先選固定比證據，再建立 a_n=a_1 r^(n-1)，最後判斷是否能外推。","sourceRefs":["https://cap.rcpet.edu.tw/index.html","https://stv.naer.edu.tw/teaching/course_outline.jsp","https://www.naer.edu.tw/","https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf","https://www.junyiacademy.org/topics/n-m8b-c01-2","https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml","https://mathvideo.hle.com.tw/2B/1-3/"],"learningDesign":{"type":"parameter-investigation","objective":"調整首項、公比與項次，觀察每次乘法如何改變數列，並以相鄰商和通項代回判斷模型。","predictionPrompt":"首項固定為 3、公比改成 2、1/2 或 -2 時，先預測第 4 項大小與正負，再比較逐項乘法和通項。","evidencePrompt":"指出至少兩個相鄰商、一次通項代回與一項情境限制，說明它們如何支持或拒絕等比模型。","steps":[{"id":"step-1","action":"輸入首項 3、公比 2，列前四項並標記每次乘法。","equation":"a_1=3，a_n=3×2^(n-1)","reason":"從首項到第 n 項要乘 n-1 次，遞推表能顯示指數意義。","feedback":"第四項應為 24；若少乘一次，回看項次間的乘法步數。"},{"id":"step-2","action":"把公比改成 1/2，比較第 5 項與相鄰商。","equation":"a_5=3×(1/2)^4=3/16","reason":"分數公比仍是固定乘法，數值變小不會變成固定減法。","feedback":"3/2、3/4、3/8、3/16 的相鄰商都應為 1/2。"},{"id":"step-3","action":"把公比改成 -2，觀察符號交替並驗算。","equation":"a_4=3×(-2)^3=-24","reason":"負公比同時改變大小和符號，指數奇偶會影響正負。","feedback":"逐項 3、-6、12、-24 可抓出漏寫負號的錯誤。"},{"id":"step-4","action":"輸入 160、80、40、20，決定是否可用固定比外推。","equation":"80/160=40/80=20/40=1/2","reason":"固定商是必要證據，還要標記外推天數與情境可能失效的限制。","feedback":"160、120、80、40 的商不固定，應切換固定差檢查。"}]}}
 }

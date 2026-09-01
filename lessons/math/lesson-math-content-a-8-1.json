@@ -9,19 +9,19 @@
     "8"
   ],
   "content": {
-    "summary": "運用平方差與完全平方公式展開或整理二次式。",
+    "summary": "從矩形與正方形的分割面積理解乘法公式，辨認三種結構並用分配律、公式與代入互相驗證。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "運用平方差與完全平方公式展開或整理二次式。 能以代入或展開結果檢查答案。"
+        "body": "能由圖形分割推導 (a＋b)²、(a−b)² 與 (a＋b)(a−b)，並判斷何時會出現中間項或相消。"
       },
       {
         "heading": "學習流程",
-        "body": "辨認結構與條件，選擇對應規則逐步運算，再以數線、代入或整理結果驗證。"
+        "body": "先辨認兩個括號的加減結構，再用面積、分配律或公式展開，最後代入一組數值檢查等式兩邊。"
       },
       {
         "heading": "常見錯誤",
-        "body": "忽略不等號方向、邊界端點，或套用公式時漏掉中間項。"
+        "body": "最常見錯誤是把 (a＋b)² 寫成 a²＋b²、忘記 2ab，或把平方差公式誤套在兩個加號的括號上。"
       }
     ]
   },
@@ -31,68 +31,156 @@
     "代入或整理後驗證。"
   ],
   "studyReferences": [
-    "https://cap.rcpet.edu.tw/index.html",
+    "https://www.junyiacademy.org/topics/n-m8a",
+    "https://mathvideo.hle.com.tw/2A/",
+    "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "https://www.naer.edu.tw/",
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
   ],
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "publisher": "nani",
+      "edition": "均一教育平台類南一版八上公開主題索引（章節定位研究）",
       "subject": "math",
       "chapterLocator": "A-8-1：二次式的乘法公式",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m8a",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-08-31",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「A-8-1：二次式的乘法公式」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "公開頁把八上第一章列為乘法公式與多項式，並在 1-1 標示乘法公式；它是依南一版章節架構編排的教育平台索引，不是南一出版社全文或正式電子課本。本課只採章節定位與技能路徑，未宣稱讀過南一全文。",
+      "copyrightBoundary": "只使用公開索引的章節名稱、定位與學習路徑作研究；沒有下載、複製或改寫南一教材、例題、練習、圖片、影片、解答或受保護版面，正文與活動全部自編。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材 XML 入口（章節與教學結構研究）",
+      "subject": "math",
+      "chapterLocator": "八上第一章 1-1 乘法公式；公開 XML 入口未提供可核對的完整課本文字",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "康軒公開入口可作為版本資源定位，但目前可取得範圍不足以合法核讀完整課本或教師用書；因此只記錄入口與可辨識的乘法公式教學方向，將分配律、面積表徵與交叉項檢核重新組織為原創課文。",
+      "copyrightBoundary": "不保存或重製康軒課本、習作、教師用書、影片逐字稿、圖片、題目、答案或版面；公開入口未能支持的細節一律標為限制，不以推測冒充版本全文研究。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學解題影音網 2 上（公開章節與課次定位）",
+      "subject": "math",
+      "chapterLocator": "2 上 CH1 乘法公式與多項式／1-1 乘法公式",
+      "sourceUrl": "https://mathvideo.hle.com.tw/2A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-31",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "翰林官方公開影音索引明列 CH1 的 1-1 乘法公式，並與後續多項式加減、乘除分開；本課據此維持先處理公式結構與展開理由、再銜接反向辨識的範圍，但沒有把影音或課本內容當作可複製文本。",
+      "copyrightBoundary": "只研究官方公開索引的章節定位與可見教學分段；不複製翰林文字、影片、圖片、課本例題、習作題目、答案或解題稿，所有說明、數值、錯誤診斷與互動均獨立撰寫。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開教材（單元結構研究）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；康軒公開 XML 入口，未取得可合法核讀的完整課本全文",
+      "reviewedAt": "2026-08-31",
+      "findings": {
+        "concepts": ["以分配律逐項理解多項式相乘的運算理由", "由幾何面積連結完全平方公式與平方差公式的結構"],
+        "representations": ["用面積模型呈現各個代數項的來源", "用代數式逐項配對幾何區塊並合併同類項"],
+        "examplesOrEvidence": ["先拆成長方形面積，再合併同類項"],
+        "misconceptions": ["展開時漏寫兩個中間項，因而錯失係數的來源", "把平方差公式誤記成兩項平方和，忽略交叉項抵消"],
+        "assessmentEmphasis": ["能以圖形區塊數量說明公式中每個係數的來源", "能以代入數值檢查展開結果與原乘積是否相等"]
+      },
+      "licenseBoundary": "只取公開來源的概念順序與教學重點；本課的文字、例題、提示、互動步驟與答案均重新設計，不重製原教材內容。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "均一教育平台類南一版八上主題頁（概念與練習路徑研究）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m8a；公開頁定位：八上第一章『乘法公式與多項式』的 1-1『乘法公式』；未取得出版社全文",
+      "reviewedAt": "2026-08-31",
+      "findings": {
+        "concepts": ["辨識公式結構後再選擇適當的展開策略與運算順序", "用具體數值驗證符號推導所得的恆等關係是否成立"],
+        "representations": ["用符號運算逐項展示分配律的運算過程", "用步驟化練習與即時回饋定位中間項錯誤"],
+        "examplesOrEvidence": ["比較直接分配律與公式法產生的中間項是否一致", "以不同數值測試恆等關係，觀察整理前後的值是否相等"],
+        "misconceptions": ["只背公式卻不先辨識 a、b 在題式中的實際角色", "驗算時只檢查左邊或右邊，沒有比較兩個表示式"],
+        "assessmentEmphasis": ["先判斷式子結構，再說明為何選擇該公式或分配律", "解釋每一個運算步驟的依據，而不是只填寫最後答案"]
+      },
+      "licenseBoundary": "只研究公開主題的技能分段與練習邏輯；不複製其題目、文字、影片、解答或版面，所有學習任務均重新撰寫。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網（公式表徵研究）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/2A/；公開頁定位：2 上 CH1『乘法公式與多項式』／1-1『乘法公式』；未取得出版社課本全文",
+      "reviewedAt": "2026-08-31",
+      "findings": {
+        "concepts": ["由乘法分配律建立完全平方公式與平方差公式的推導關係", "把公式用於展開與因式辨識，理解正向與反向的結構"],
+        "representations": ["用公式對照表比較不同乘積結構的結果", "用幾何圖形與代數式互換說明項目和係數"],
+        "examplesOrEvidence": ["以圖形區塊數量說明 2ab 中的係數來源", "將 (a+b)(a-b) 的交叉項配對並整理成平方差"],
+        "misconceptions": ["將 (a+b)² 錯寫成 a²+b²，忽略兩個交叉項", "平方差少寫負號或把兩個因式的加減配錯"],
+        "assessmentEmphasis": ["能辨識可用公式的外形，並指出判斷的符號證據", "能從結果反推原本的乘積結構，說明每一項如何配對"]
+      },
+      "licenseBoundary": "只研究公開章節定位及表徵方向；本課所有內容與互動活動皆為原創，不重製出版社素材或其可辨識的題目與答案。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": ["分配律是公式推導與逐項驗算時不可省略的基礎理由", "完全平方與平方差公式都要能展開、整理並用數值驗算", "公式選擇必須依乘積的結構與符號條件判斷"],
+    "versionDifferences": ["康軒較適合從面積與項目配對切入，讓係數具有幾何意義", "均一較強調步驟化練習與即時檢查，適合建立運算自我監控", "翰林較凸顯公式對照與反向辨識，適合連結展開與因式分解"],
+    "originalAdditions": ["以區塊數量解釋 2ab 的來源，避免學習者只記住符號結果", "加入正向展開與反向辨識的雙向任務，要求說明結構證據", "互動中要求直接乘法與公式法同時驗算，並比較兩種方法的錯誤位置"],
+    "llmSynthesisNote": "本單元由三份版本研究形成共同概念與差異，再以原創例題、幾何建構互動與數值驗算重新編排學習路徑；沒有沿用任何出版社例題、答案或句子，也未重建其教材編排或題目順序。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「A-8-1：二次式的乘法公式」",
-        "body": "先讀懂「A-8-1：二次式的乘法公式」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "先把代數式畫成土地",
+        "body": "想像設計一塊正方形菜圃，整條邊不是一個方便計算的數，而是由長度 a 與 b 拼成，所以邊長寫成 a＋b。沿著兩段長度的交界各畫一條線，大正方形會被分成 a×a、a×b、b×a、b×b 四塊；四塊面積相加就是 (a＋b)²＝a²＋ab＋ab＋b²＝a²＋2ab＋b²。請特別數出兩塊交叉長方形，因為 2ab 代表數量，不是裝飾符號。若把兩段改成 a 與 b 的差，圖形改成從大正方形挖去兩條長方形，角落會被重複扣掉一次，所以必須補回 b²，這正是 (a−b)² 的符號來源。先在紙上用不同顏色標記四塊，再把每塊的長與寬寫在旁邊；當圖形、乘積和總面積互相對得上，公式才不是孤立的記憶。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「二次式的乘法公式」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "三種括號，三種面積變化",
+        "body": "這一課的四個基本關係要從括號的結構判斷，而不是看見平方就背一個答案。兩個和相乘時，(a＋b)(a＋b) 會產生 a²、兩個 ab 與 b²，得到 (a＋b)²＝a²＋2ab＋b²；兩個差相乘時，兩個交叉項都是負的，最後的 b×b 卻是正的，得到 (a−b)²＝a²−2ab＋b²。若一個括號加、一個括號減，四項是 a²、−ab、＋ab、−b²，中間兩項大小相同、符號相反而抵消，才有 (a＋b)(a−b)＝a²−b²。若兩個括號分別是 a＋b 與 c＋d，四項則是 ac、ad、bc、bd，不能硬套前三式。判斷時可先問兩個問題：兩個括號是否相同，第二項的符號是否相反？前者決定交叉項是否同號，後者決定它們是否抵消；這兩個問題比死背公式名稱更能處理變形題。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「A-8-1：二次式的乘法公式」為主題，取自編算式 (x＋4)(x＋2)。先用分配律得到 x²＋6x＋8，再代入 x＝3 檢查原式與展開式都等於 35；這個步驟示範如何保留運算理由，而不是只抄公式。"
+        "heading": "示範：把兩種表示算到同一個答案",
+        "body": "現在用一個不只靠記憶的例子。先處理 (2x＋3)²，把它看成 (2x＋3)(2x＋3)：左上是 4x²，兩個交叉乘積各為 6x，右下是 9，所以整理成 4x²＋12x＋9。這裡的 12x 來自 6x＋6x，不能因為兩個括號相同就只寫一次。把 x＝−1 代回原式，(−2＋3)²＝1；代入整理式是 4−12＋9＝1，兩邊一致。接著比較 (3y＋2)(3y−2)，四項為 9y²、−6y、＋6y、−4，交叉項抵消後是 9y²−4；取 y＝2 時，原式 8×4＝32，整理式 36−4＝32。先逐項配對、再合併同類項、最後數值核對，三段理由都要留下。若改用直接套公式，仍要先把 2x 視為公式中的第一個量、把 3 視為第二個量，否則係數會被誤當成平方外的常數；寫出角色對照能讓公式真正適用於變形題。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "錯誤診所：找出消失的那一塊面積",
+        "body": "請把下面的答案當成需要診斷的計算紀錄，而不是只判斷對錯。甲寫 (y＋2)²＝y²＋4；請指出他把兩個 y×2 的長方形漏掉了，正確結果是 y²＋4y＋4。乙寫 (y−2)²＝y²−4y−4；前兩項的方向雖然合理，角落是 (−2)×(−2)，應為正 4，所以正確是 y²−4y＋4。丙寫 (y＋2)(y−2)＝y²＋4；這次兩個常數相乘是 −4，而 −2y 與＋2y 會抵消，正確為 y²−4。請用 y＝3 做一次三題的原式／整理式對照，並在每題旁寫出錯誤屬於「漏項、符號、還是括號結構誤判」。若只改答案不說明哪一個乘積沒有被記錄，下一題仍容易重犯。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「A-8-1：二次式的乘法公式」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "用公式估算邊長變動的面積",
+        "body": "把公式帶到面積規畫時，先確認每一個數字代表整條邊的增加量。原有正方形邊長是 x 公尺，若四邊外圍各加寬 0.4 公尺，新正方形的邊長增加 0.8 公尺，因此新面積應寫成 (x＋0.8)²，而不是 x²＋0.8²，也不是只在一邊加長。展開後是 x²＋1.6x＋0.64：1.6x 可看成兩條寬 0.4、長 x 的長條合計，再加上四角拼成的 0.64 平方公尺。若題目改為四周各內縮 0.4 公尺，則變成 (x−0.8)²，且必須先要求 x＞0.8，否則幾何圖形沒有正的邊長。請另選 x＝5，分別用圖形分塊與公式計算，並說明小數係數如何反映實際面積；這能把符號運算和條件判讀接在一起。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「A-8-1：二次式的乘法公式」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "從圖形、式子與數值三方核對",
+        "body": "收尾時請做一張自己的三欄檢核卡。第一欄畫或口述四個乘積區塊，標出 a²、ab、ba、b² 分別從哪兩條邊相乘；第二欄不看公式表，依分配律把括號逐項相乘，並在合併同類項時圈出交叉項；第三欄選一組含正負數的代入值，例如 a＝4、b＝−1，分別算原來的乘積與整理後的式子。接著回答三個判斷：何時中間項會變成 2ab？何時會相消？為什麼 (a＋b)(c＋d) 不能直接寫成 a²＋2ab＋b²？若結果不一致，依「括號抄寫、每項配對、符號、同類項、代入」的順序回查，並把真正修正的那一步寫出來。能用結構解釋公式，才算把公式變成可轉移的方法。"
       }
     ],
     "summary": [
@@ -121,51 +209,51 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-31",
   "interactive": {
     "type": "algebra-expression-builder",
     "goal": "以互動步驟探索「A-8-1：二次式的乘法公式」的表示、推理與驗算。",
-    "scenario": "請依序分析「A-8-1：二次式的乘法公式」的條件，選出最能保留資訊、可被驗證的做法。",
+    "scenario": "請操作四個面積區塊，先預測交叉項，再用分配律與代入檢查平方和、平方差或平方差公式。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
+        "meaning": "正方形或矩形邊長中的代數變數"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "要解釋 (a＋b)² 的中間項，第一步應觀察什麼？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "把正方形切成 a²、ab、ba、b² 四個區塊",
+          "只畫一個 a² 區塊便省略其餘面積",
+          "先把公式改成 a²＋b² 再找理由"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "四個區塊讓兩個交叉長方形可被數出來，2ab 的係數因此有面積依據。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "若比較 (a＋b)(a−b)，下一步應如何處理四項？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "逐項相乘，配對 −ab 與＋ab 後說明相消",
+          "把兩個括號都當成加號並保留 2ab",
+          "只看最後的 a²，不處理常數與符號"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "平方差不是平方和；交叉項的相反符號正是它們消失的理由。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "完成展開後，哪種驗算最能抓到漏項或符號錯誤？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "選定 a、b 的數值，同算原乘積與整理式並比較",
+          "只把整理式再抄一次，不計算數值",
+          "只檢查最高次項，忽略交叉項和常數項"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "兩邊代入同一組數值能快速暴露漏寫 2ab、常數符號錯誤，但仍要保留代數推導理由。"
       }
     ]
   },
@@ -176,11 +264,13 @@
     "mode": "model",
     "model": "general",
     "goal": "以互動步驟探索「A-8-1：二次式的乘法公式」的表示、推理與驗算。",
-    "mission": "請依序分析「A-8-1：二次式的乘法公式」的條件，選出最能保留資訊、可被驗證的做法。",
+    "mission": "請操作四個面積區塊，先預測交叉項，再用分配律與代入檢查平方和、平方差或平方差公式。",
+    "learningDesign": {"type":"geometric-construction","objective":"用面積分割看見平方和、平方差與完全平方公式的各項來源，避免只背展開結果。","predictionPrompt":"正方形邊長為 a＋b 時，你預測分割後會出現哪些面積區塊？","evidencePrompt":"請把圖形區塊面積相加，再與代數展開式逐項配對。","steps":[{"id":"step-1","action":"將大正方形依邊長分成四個區塊","equation":"(a＋b)²＝a²＋ab＋ab＋b²","reason":"正方形被兩條分割線切出兩個 ab 長方形，兩者都必須計入總面積。","feedback":"檢查兩條交界線，通常會產生兩個相同的 ab 區塊。"},{"id":"step-2","action":"把幾何面積翻譯成完全平方公式","equation":"(a＋b)²＝a²＋2ab＋b²","reason":"合併兩個 ab 才得到 2ab，係數來自圖形數量。","feedback":"若中間項寫成 ab，請回到區塊數量重新計算。"},{"id":"step-3","action":"代入數值比較公式與直接乘法","equation":"a＝3,b＝2：25＝9＋12＋4","reason":"數值驗算能確認公式保留原面積，而非只在符號上看似正確。","feedback":"直接算 (3＋2)²，再算右式，兩邊必須相等。"}]},
     "sourceRefs": [
-      "https://cap.rcpet.edu.tw/index.html",
+      "https://www.junyiacademy.org/topics/n-m8a",
+      "https://mathvideo.hle.com.tw/2A/",
+      "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
     ]
   }

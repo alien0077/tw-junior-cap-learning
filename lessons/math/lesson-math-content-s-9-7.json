@@ -41,7 +41,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,45 +59,57 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-9-7：點、直線與圓的關係」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher":"nani","edition":"南一版九年級點線圓公開章節定位","subject":"math","chapterLocator":"S-9-7：點、直線與圓的關係","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","assessment-pattern"],"outcome":"公開課程定位支持以點到圓心距離、圓心到直線最短距離判斷位置；本課以雷達範圍和道路模型重寫例證。","copyrightBoundary":"只採公開章節範圍，不複製南一教材文字、圖表、題目、答案或影音。"
+    },
+    {
+      "publisher":"kanghsuan","edition":"康軒國中數學公開教材（點、直線與圓位置定位）","subject":"math","chapterLocator":"2-1：點、直線與圓之間的位置關係，對應 S-9-7","sourceUrl":"https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","assessment-pattern"],"outcome":"公開索引核對相離、相切、相交和臨界條件；本課加入可拖曳道路、訊號點與半徑的即時模型。","copyrightBoundary":"XML 僅作定位研究，不重製康軒教材、影音、題目或解答。"
     }
   ],
+  "versionResearch": [
+    {"publisher":"kanghsuan","edition":"康軒國中數學公開教材（點線圓位置研究）","sourceType":"public-web","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml","reviewedAt":"2026-08-30","findings":{"concepts":["以點到圓心距離判斷點在圓內、圓上或圓外","以圓心到直線距離與半徑比較判斷相交、相切或相離"],"representations":["用距離、半徑與位置圖示表達三種關係"],"examplesOrEvidence":["比較圓心到直線距離與半徑以判斷交點個數"],"misconceptions":["只看直線與圓的圖形外觀而未比較圓心距離與半徑"],"assessmentEmphasis":["能依距離條件選用點圓或線圓位置判定"]},"licenseBoundary":"只研究公開概念與教學方向，本課文字、例題、活動與答案均獨立撰寫。"},
+    {"publisher":"nani","edition":"均一國中數學公開主題頁（點線圓判讀研究）","sourceType":"public-web","sourceLocator":"https://www.junyiacademy.org/topics/n-m9a","reviewedAt":"2026-08-30","findings":{"concepts":["把點圓與線圓關係轉成可計算的距離比較","用移動模型觀察相交點數隨距離改變"],"representations":["以可移動圓、直線與數線提示位置分類"],"examplesOrEvidence":["讓直線逐步靠近圓觀察相離、相切與相交的臨界狀態"],"misconceptions":["把相切誤認為相交兩點，或把圓上點誤當圓內點"],"assessmentEmphasis":["能說明臨界條件與位置分類的證據"]},"licenseBoundary":"不複製公開文字、題目、影片或答案，僅將概念轉為本課原創活動。"},
+    {"publisher":"hanlin","edition":"翰林國中數學公開影音網（點線圓章節研究）","sourceType":"public-web","sourceLocator":"https://mathvideo.hle.com.tw/1A/","reviewedAt":"2026-08-30","findings":{"concepts":["由圓心距離、半徑與垂足建立直線和圓的位置關係","以幾何元素與符號敘述互相驗證交點數"],"representations":["圖形、距離式與位置分類表相互轉換"],"examplesOrEvidence":["利用圓心到直線的垂線形成最短距離判斷是否相切"],"misconceptions":["將任意半徑當成圓心到直線的距離，或忽略最短距離"],"assessmentEmphasis":["能完整說明距離比較到位置結論的推理鏈"]},"licenseBoundary":"僅研究公開章節的概念層次，本課正文、圖示、例題與答案均為原創。"}
+  ],
+  "fusionRecord":{"commonCore":["點與圓看圓心距離，直線與圓看圓心到直線的最短距離","距離與半徑的大小關係決定位置分類與交點個數","相切是相交與相離之間的臨界情況，必須明確說出條件"],"versionDifferences":["康軒著重由圓心距離比較與位置分類建立判斷","均一著重移動模型、臨界狀態與錯誤回饋","翰林著重垂足、最短距離與符號推理"],"originalAdditions":["設計直線靠近圓的三階段位置實驗","加入相切一點與相交兩點的反例比較","以圓形跑道與雷達範圍遷移位置判讀"],"llmSynthesisNote":"LLM 依官方課綱、KG 與三版本公開研究融合後，獨立重寫點、直線與圓的位置關係、距離判斷與交點分類，未複製出版社內容，並為本單元重新設計例證、反例、互動活動與臨界條件檢核。"},
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-9-7：點、直線與圓的關係」",
-        "body": "先讀懂「S-9-7：點、直線與圓的關係」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "交點個數其實是距離的故事",
+        "body": "把雷達覆蓋範圍畫成以 O 為圓心的圓，一條道路慢慢向它靠近：道路可能完全在圓外、剛好擦過邊界一次，也可能穿進圓內再出去。這三種畫面不是靠圖形大小背名稱，而是由圓心到道路的最短距離 d 和半徑 r 比較決定：d＞r 相離、d＝r 相切、d＜r 相交。若研究的是單一訊號點 P，則改比較 OP 與 r。先分清『點到圓心』和『圓心到直線』兩種距離，才能避免把不同問題的判斷條件混用。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「點、直線與圓的關係」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "兩種距離比較要分清楚",
+        "body": "對點 P 與圓 O，OP＜r 表示 P 在圓內，OP＝r 表示 P 在圓上，OP＞r 表示 P 在圓外。對直線 ℓ，不能隨便挑直線上一點 Q 來算 OQ；必須從 O 向 ℓ 作垂線，垂足 H 所給的 OH 才是所有到直線距離中最短的一個。比較 OH 和 r：OH＞r 時沒有交點，OH＝r 時只有一個交點且是相切，OH＜r 時有兩個交點。這裡的『最短』是幾何關鍵，因為斜著連到遠處 Q 得到的距離可能很大，卻不能說明直線是否伸進圓內。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-9-7：點、直線與圓的關係」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "自編例題：圓形跑道旁的安全線",
+        "body": "自編例題：圓形跑道中心 O 到一條安全線的垂直距離是 7 公尺，跑道半徑也為 7 公尺，所以 OH＝r，安全線與跑道相切，只有一個接觸點。若安全線平行移到距離 9 公尺處，OH＞r，線與跑道相離；若移到距離 5 公尺處，OH＜r，線會穿過跑道而有兩個交點。注意三種結果都是比較同一個圓心到直線的最短距離，不能改拿線上任意點的距離來判斷。若題目改問一個標記點 P 是否落在跑道內，則要換成 OP 與 r 的比較。數字、垂足和交點個數要彼此對得上，才不是只看圖形像不像。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "用判斷表避免混淆",
+        "body": "做判斷表時把題型分成兩列。遇到點 P，先寫 OP，再比較 OP＜r、OP＝r 或 OP＞r；遇到直線 ℓ，先從 O 作垂線找垂足 H，寫 OH 與 r 的關係，再決定相離、相切或相交。若圖上沒有標數字，就尋找明確的垂直、通過圓心或相切條件；只有線條畫得近、圓看起來大，不能當成證明。完成後補上交點個數，讓『距離比較』和『位置名稱』連成完整推理。若資料不足，應保留無法判定，而不是用尺在螢幕上量一個近似值冒充精確條件。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-9-7：點、直線與圓的關係」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "從雷達範圍判讀訊號位置",
+        "body": "把雷達覆蓋區看成以 O 為圓心、半徑 r 的圓，單一訊號點可以用 OP 分成覆蓋內、邊界上和範圍外；若研究一條道路，則要量道路到 O 的最短距離 OH。道路穿過覆蓋區時有兩個交點，剛好擦過邊界時只有一個交點，完全避開時沒有交點。報告不能只寫『很接近』，而要寫出 OH＜r、OH＝r 或 OH＞r 的條件。若雷達圖的比例尺改變、圓心位置移動或道路不是直線，也要重新確認模型，不可沿用原判斷。生活資料先轉成點、圓心、直線與距離，再把數學分類翻回訊號狀態，才有可追溯的理由。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-9-7：點、直線與圓的關係」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "用臨界值檢查結論",
+        "body": "用臨界值做最後自我檢核：讓直線距離 d 從比 r 大一點逐步減少，先應該相離，到了 d＝r 的瞬間變成相切，再小於 r 才出現兩個交點；這個順序能抓出把相切寫成相交的錯誤。對單一點則用 OP＝r 檢查是否恰在圓周上。再問自己：使用的是最短距離嗎？圓心、半徑和垂足有標清楚嗎？若答案只靠圖像量測、沒有距離不等式，證據仍不完整。最後把交點個數和幾何名稱一起寫出，讓讀者能從條件重建你的結論。"
       }
     ],
     "summary": [
@@ -121,51 +133,49 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-9-7：點、直線與圓的關係」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-9-7：點、直線與圓的關係」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳訊號點與道路、調整圓半徑，讓 OP、OH、交點個數、圖形分類和不等式即時同步，並診斷最短距離錯誤。",
+    "scenario": "在雷達範圍判讀台先預測點與直線的狀態，再拖曳單一距離觀察圓內外、相切與相交同步變化，最後完成會考型臨界判讀。",
     "variables": [
-      {
-        "symbol": "x",
-        "meaning": "本單元情境中待研究的量或變數"
-      }
+      {"symbol":"x","meaning":"訊號點水平位置或道路位置參數；調整時同步更新 OP／OH 與分類"},
+      {"symbol":"y","meaning":"訊號點垂直位置或道路高度參數；調整時同步更新最短距離與交點"}
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "先預測再拖曳：將道路平行推近圓心，控制台的 OH 從 9 降到 7（r＝7）。何時會出現臨界狀態？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "OH＝7 時與圓相切一點；OH＞7 相離，OH＜7 相交兩點",
+          "OH＝7 時一定有兩個交點，因為道路已經靠近圓",
+          "只看道路上任意點到 O 的距離，不必找最短距離"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "拖曳時交點數會即時跳成 0、1、2。若選 C，系統會高亮垂足 H，提醒你不能用斜距離代替 OH。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "鎖定半徑 r＝5，只拖曳訊號點 P。當 OP 由 4 變 5 再變 6，分類和邊界標籤如何變？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "依序是圓內、圓上、圓外；OP＝r 是邊界上的臨界值",
+          "三種都在圓內，因為 P 沒有碰到直線",
+          "OP＝5 時在圓外，因為等號不能表示位置"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "數線與圓周標籤會同步更新。若選 C，請讀取 OP＝r 的等號意義；若選 B，這是把點圓問題誤當線圓問題。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "把道路調到 OH＝r，再檢查接觸點半徑與道路的夾角。哪個證據最完整？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "只有一個交點，且接觸點半徑垂直道路，符合相切",
+          "圖上看起來擦過一次即可，不必確認角度",
+          "有兩個交點也可稱切線，只要其中一點距離等於半徑"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "系統同時顯示 OH＝r、交點數 1 與 90°。若只看外觀，會進入『條件不足』分流；兩交點則不是切線。"
       }
     ]
   },
@@ -175,8 +185,9 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-9-7：點、直線與圓的關係」的表示、推理與驗算。",
-    "mission": "請依序分析「S-9-7：點、直線與圓的關係」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "拖曳訊號點與道路、調整圓半徑，讓 OP、OH、交點個數、圖形分類和不等式即時同步，並診斷最短距離錯誤。",
+    "mission": "在雷達範圍判讀台先預測點與直線的狀態，再拖曳單一距離觀察圓內外、相切與相交同步變化，最後完成會考型臨界判讀。",
+    "learningDesign": {"type":"parameter-investigation","objective":"在雷達模型中單獨調整點、道路或半徑，讓 OP、OH 與交點個數同步呈現，並用臨界不等式區分圓內外、相離、相切和相交。","predictionPrompt":"固定 r＝7，將道路的 OH 從 9 拖到 7 再到 5；你預測交點個數如何變？若訊號點 OP＝7，又應標成什麼？","evidencePrompt":"一次只改一個位置參數，記錄 OP 或 OH、半徑、交點數與垂直標記；若預測不符，從把任意斜距離當 OH、忽略等號、只看圖形或混用點圓與線圓條件中找出錯誤。","steps":[{"id":"step-1","action":"拖曳訊號點 P，固定圓心 O 與半徑 r＝5，觀察 OP、圓內外標籤和數線","equation":"OP＜5：圓內；OP＝5：圓上；OP＞5：圓外","reason":"點圓關係只需要點到圓心的距離，等號是邊界而不是模糊的接近。","feedback":"若把 OP＝5 判成圓外，系統會高亮圓周；若用道路的 OH，切換回點模式。"},{"id":"step-2","action":"鎖定圓半徑 r＝7，拖曳道路使垂足 H 的 OH 由 9→7→5，觀察交點數","equation":"OH＞r：0 點；OH＝r：1 點；OH＜r：2 點","reason":"圓心到直線的最短距離決定道路是否進入圓內，臨界值 OH＝r 正好只接觸一次。","feedback":"若取道路上任意點 Q 的 OQ，系統會顯示 Q 不是垂足；請沿法線重新讀 OH。"},{"id":"step-3","action":"拖曳接觸線的角度，固定接觸點，觀察半徑與道路是否垂直以及切線標籤","equation":"單一接觸點且 OH⊥道路 → 相切","reason":"交點數提供結果，接觸點半徑垂直道路提供幾何理由，兩者共同確認切線。","feedback":"若夾角不是 90°，即使看似碰一點也標為待判定；穿過兩點則改判相交。"},{"id":"step-4","action":"完成會考型判讀：隱藏圖形，只給 r＝7、OH＝5 與 OP＝7，拖曳選出兩種位置結論","equation":"直線與圓相交兩點；點 P 在圓上","reason":"同一題可同時包含點圓與線圓，必須分別使用 OP 與 OH，不能把一個不等式套到另一個對象。","feedback":"若把 P 寫成圓內，回看 OP＝r；若把道路寫成相切，回看 OH＜r 的兩個交點。"}]},
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",

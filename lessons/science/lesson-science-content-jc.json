@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「氧化與還原反應」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "氧化與還原不是兩個互不相干的反應，而是同一個電子轉移過程的兩面。本課從金屬置換、氧氣參與、氧化數與半反應三種線索，建立能互相核對的判讀方法，最後連到生鏽與電池。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「氧化與還原反應」相關的關係。"
+        "body": "能從氧元素變化、電子得失或氧化數升降判斷氧化與還原；能指出同一反應中的氧化劑、還原劑與電子流向；能用原子與電荷守恆檢查簡單氧化還原方程式，並把概念用於腐蝕與電池情境。"
       },
       {
         "heading": "學習流程",
-        "body": "先讀出題幹中與「氧化與還原反應」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "body": "先看反應前後關鍵元素的變化，再用氧化數或半反應追蹤電子；接著命名氧化劑與還原劑，最後檢查原子數、總電荷與反應條件是否守恆。"
       },
       {
         "heading": "常見錯誤",
-        "body": "不要只因看到「氧化與還原反應」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "body": "不要把氧化限定為一定有氧氣，也不要把氧化劑誤認成被氧化的物質。氧化劑接受電子而被還原；還原劑提供電子而被氧化。"
       },
       {
         "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「氧化與還原反應」，並指出至少一項支持判斷的條件。"
+        "body": "以鐵生鏽、金屬置換或電池任選一例，說出誰失電子、誰得電子、電子經由何處移動，以及你用哪項證據檢查判斷。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「氧化與還原反應」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "氧化是失去電子或氧化數上升；還原是得到電子或氧化數下降，兩者必然同時發生。",
+    "氧化劑接受電子而被還原；還原劑提供電子而被氧化。",
+    "氧化數是追蹤電子的記帳工具，半反應能把得失電子具體寫出來。",
+    "腐蝕與電池都是電子轉移的不同安排，判讀時要找電子來源、去向與通道。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,55 +48,63 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-01",
   "interactive": {
     "type": "scientific-investigation",
-    "goal": "以安全探究步驟理解「氧化與還原反應」並用證據修正解釋。",
-    "scenario": "針對「Jc：氧化與還原反應」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
+    "goal": "讓學習者拖動電子與氧化數標記，觀察氧化、還原、氧化劑、還原劑四個角色如何同時改變。",
+    "scenario": "以 Fe/Cu²⁺ 金屬置換為核心，另提供 CuO/C 氧得失視圖與腐蝕／電池遷移任務；僅使用安全的虛擬粒子，不操作危險藥品。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "選定的觀察條件"
+        "symbol": "m",
+        "meaning": "選擇 Fe 或 Zn 作為電子提供者"
+      },
+      {
+        "symbol": "i",
+        "meaning": "選擇 Cu²⁺ 或 H⁺ 作為電子接受者"
+      },
+      {
+        "symbol": "e",
+        "meaning": "拖曳並配對轉移的電子數"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先做哪一件事？",
+        "prompt": "把 Fe 的氧化半反應排成正確順序。",
         "options": [
-          "提出可觀察問題並列出變因",
-          "先寫預期答案",
-          "省略安全檢查"
+          "Fe → Fe²⁺ + 2e⁻",
+          "Fe + 2e⁻ → Fe²⁺",
+          "Fe²⁺ → Fe + 2e⁻"
         ],
         "answer": "A",
-        "feedback": "問題、變因與安全限制是探究起點。"
+        "feedback": "鐵失去電子後電荷上升，這是氧化半反應。"
       },
       {
         "id": "step-2",
-        "prompt": "如何取得可信資料？",
+        "prompt": "Cu²⁺ 接到電子後發生什麼？",
         "options": [
-          "固定條件、重複量測並記錄單位",
-          "只量一次且不記錄",
-          "任意改變多個因素"
+          "Cu²⁺ + 2e⁻ → Cu，被還原",
+          "Cu → Cu²⁺ + 2e⁻，被還原",
+          "Cu²⁺ 失去 2e⁻ 變 Cu"
         ],
         "answer": "A",
-        "feedback": "固定與重複讓資料能比較。"
+        "feedback": "接受電子、氧化數下降就是還原；Cu²⁺ 是氧化劑。"
       },
       {
         "id": "step-3",
-        "prompt": "如何形成結論？",
+        "prompt": "若兩個半反應各有 2 個電子，合併前要做什麼？",
         "options": [
-          "先描述證據，再提出有條件的解釋",
-          "把猜測當成結果",
-          "刪掉不符合預期的資料"
+          "讓電子數相等後相加並消去電子",
+          "刪除電子但不檢查電荷",
+          "只看顏色決定係數"
         ],
         "answer": "A",
-        "feedback": "證據與限制都要保留，才能修正模型。"
+        "feedback": "電子守恆是合併半反應與檢查氧化還原的關鍵。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "topic",
   "publisherResearch": [
     {
@@ -114,45 +123,99 @@
       ],
       "outcome": "公開出版社資源用於核對「氧化與還原反應」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中自然公開課程計畫與公開資源",
+      "subject": "science",
+      "chapterLocator": "九年級化學反應與氧化還原相關單元；公開資料僅作單元定位與能力方向",
+      "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
+      "access": "public-open",
+      "reviewedAt": "2026-09-01",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "比較由反應現象進入物質變化、守恆與生活應用的順序；本課融合為氧元素、氧化數與電子三種可互相驗證的表徵。",
+      "copyrightBoundary": "只採公開課程定位與教學方向；正文、例題、圖像、題目與答案皆為本課原創，不複製教科書或教師用書。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林版國中自然公開產品資訊與課程索引",
+      "subject": "science",
+      "chapterLocator": "九年級化學變化、氧化還原與能源應用方向；逐頁課本未公開",
+      "sourceUrl": "https://books.hanlin.com.tw/productall",
+      "access": "public-open",
+      "reviewedAt": "2026-09-01",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "比較以粒子變化、反應證據與生活科技應用相連的取向；本課另以金屬置換、腐蝕與電池重新設計推理活動。",
+      "copyrightBoundary": "只作公開產品結構與單元方向研究；不複製課文、插圖、習題、答案或教用內容。"
     }
   ],
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "南一版國中自然公開課程計畫與公開資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://stv.naer.edu.tw/teaching/course_outline.jsp；九年級化學反應與氧化還原相關定位；未取得完整出版社課本頁面",
+      "reviewedAt": "2026-09-01",
+      "findings": {"concepts": ["以反應現象、物質變化與守恆建立化學反應理解。", "氧化還原可連結氧元素變化與生活中的腐蝕、能源。"], "representations": ["宏觀現象、粒子／離子變化、方程式與守恆檢查。"], "examplesOrEvidence": ["公開課程方向支持反應證據與守恆；本課自編 Fe/Cu²⁺、CuO/C 與防鏽情境。"], "misconceptions": ["把氧化限定為一定有氧氣，或把氧化劑誤當成被氧化者。"], "assessmentEmphasis": ["由氧化數、電子得失與原子電荷守恆交叉判讀。"]},
+      "licenseBoundary": "只採公開課程定位、方向與可追溯範圍；不複製受保護教材內容，也不以公開索引宣稱取得完整出版社課本。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒版國中自然公開影音與課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；九年級化學反應相關公開資源定位；未取得完整課本頁面",
+      "reviewedAt": "2026-09-01",
+      "findings": {"concepts": ["由可觀察變化進入物質組成、反應與生活應用。", "氧化還原能用於說明金屬變化、腐蝕與能源轉換。"], "representations": ["反應式、離子式、氧化數帳本、半反應與電子路徑。"], "examplesOrEvidence": ["公開資源提供章節與活動方向；本課自編三欄判讀法與電子模型。"], "misconceptions": ["只憑顏色或氣泡判斷氧化，忽略電子與守恆。"], "assessmentEmphasis": ["說明反應物角色、電子來源與去向，並檢查方程式。"]},
+      "licenseBoundary": "只研究公開資源的 metadata、章節定位與教學方向；不複製影音、圖片、題目或答案。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林版國中自然公開產品資訊與課程索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://books.hanlin.com.tw/productall；化學變化、氧化還原與能源應用方向；逐課內容有限",
+      "reviewedAt": "2026-09-01",
+      "findings": {"concepts": ["把化學反應的微觀模型與生活科技情境相連。", "以證據、模型與守恆檢查解釋，而非只記憶名詞。"], "representations": ["氧化數、半反應、電子流、腐蝕區域與電池外電路。"], "examplesOrEvidence": ["公開產品資訊支持情境化與圖像模型方向；本課自行設計金屬置換和電池遷移活動。"], "misconceptions": ["把氧化數當成所有原子的實際電荷，或混淆氧化劑與還原劑。"], "assessmentEmphasis": ["能用兩種以上表徵互相核對，提出條件清楚的結論。"]},
+      "licenseBoundary": "只作公開產品結構與單元方向研究；不複製課文、插圖、練習、答案或教用內容。"
+    }
+  ],
+  "fusionRecord": {"commonCore": ["三家版本皆把氧化還原放在化學反應、物質變化與守恆的脈絡中理解。", "教材方向都需要學生由反應現象連到微觀粒子、方程式或生活應用。", "金屬變化、腐蝕與能源轉換可作為氧化還原的遷移情境。"], "versionDifferences": ["公開資料的入口有的偏重氧元素與現象，有的偏重粒子模型或生活科技連結；本課並列後再以電子作共同核心。", "公開資源可核對到的章節深度與活動細節不一致，完整課本頁面並未全部公開。"], "originalAdditions": ["自編 Fe/Cu²⁺ 半反應拆解與氧化劑、還原劑角色判讀。", "自編 CuO/C 氧得失與鐵鏽、防鏽、電池的概念遷移。", "自編電子帳本互動，讓電子數、氧化數與守恆檢查同步呈現。"], "llmSynthesisNote": "LLM 先依官方課綱與 kg-science-content-jc 確定氧化還原、守恆與生活應用範圍，再讀取三家可公開取得的課程計畫、公開資源或產品索引，比較現象入口、概念順序、表徵、活動與評量方向，最後用自己的話為本單元重新組織完整教學；正文未複製出版社文字、圖片、習題或答案。"},
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
         "heading": "從情境進入「氧化與還原反應」",
-        "body": "先從「氧化與還原反應」相關的生活現象提出一個可觀察問題，寫下已知條件、可能變因與安全限制；把看到的事實和自己的解釋分開，才有可檢查的探究起點。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "一根鐵釘在潮濕空氣中慢慢變色，銅片放入硫酸銅溶液卻可能看見紅色銅析出。先記錄現象，不急著把變色叫作氧化；真正要問的是：鐵是否把電子交出去？銅離子是否接收電子？把可見現象和看不見的電子分開，才有可檢驗的問題。示範只使用教師準備的低濃度材料或模擬器，並先確認護目鏡與廢液處理。"
       },
       {
         "id": "explain",
         "phase": "explain",
         "heading": "建立「氧化與還原反應」的概念架構",
-        "body": "本單元依官方課綱所列的「氧化與還原反應」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "body": "最穩定的核心定義是電子：氧化表示失去電子，還原表示得到電子。以 Fe + Cu²⁺ → Fe²⁺ + Cu 為例，鐵失去兩個電子成為 Fe²⁺，所以被氧化；Cu²⁺得到電子變成銅，所以被還原。電子不會憑空消失，故氧化與還原必須同時發生。『得到氧／失去氧』是另一個有用入口，但遇到沒有 O₂ 的反應，仍要回到電子或氧化數判斷。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
         "heading": "用自編資料走完一次",
-        "body": "以「Jc：氧化與還原反應」為主題，建立一份自編三欄證據表：可直接觀察的現象、支持的模型、尚待查證的限制。先用表格整理資料，再用一句條件式結論回應問題，避免只背名詞。"
+        "body": "用氧化數追蹤電子時，單質氧化數為 0，單原子離子等於其電荷；中性化合物的氧化數總和為 0。2Mg + O₂ → 2MgO 中，Mg 由 0 升到 +2，表示失電子、被氧化；O 由 0 降到 −2，表示得電子、被還原。Mg 是還原劑，O₂ 是氧化劑。氧化數是記帳工具，不必把它誤解成每個共價原子的實際電荷。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
         "heading": "依步驟完成練習",
-        "body": "針對「氧化與還原反應」先寫可觀察問題，再列自變因、應變因與控制變因；依序記錄預測、操作、數據與限制，重複量測後才下條件式結論。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "把 Fe + Cu²⁺ → Fe²⁺ + Cu 拆成兩筆半反應：Fe → Fe²⁺ + 2e⁻；Cu²⁺ + 2e⁻ → Cu。兩邊電子數已相等，相加後電子抵消，便得到總反應。若寫成分子式，Fe + CuSO₄ → FeSO₄ + Cu；再檢查 Fe、Cu、S、O 原子數和溶液總電荷。這個順序能把『誰變了』、『電子往哪裡走』和『式子是否守恆』分開處理。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
         "heading": "換到新情境仍能使用",
-        "body": "把「氧化與還原反應」的探究方法換到家庭、校園或環境資料，檢查來源、尺度、樣本與不確定性；若證據不足，保留條件式結論並提出下一個可行測試。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "在 2CuO + C → 2Cu + CO₂ 中，氧由氧化銅移到碳：碳得到氧而被氧化，CuO 失去氧而被還原。用氧化數檢查，C 由 0 升到 +4，Cu 由 +2 降到 0，兩種表徵相互支持。接著把視線轉到鐵鏽：鐵在一處失電子，氧在另一處接受電子，潮濕水膜協助離子移動。塗漆、保持乾燥與犧牲陽極，分別是在隔絕反應物、降低反應機會或讓另一金屬優先失電子。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
         "heading": "回顧證據與限制",
-        "body": "回顧「氧化與還原反應」的問題：哪個觀察最關鍵、哪個變因仍未控制、資料能支持到什麼程度？用一句話寫出結論與限制，再提出一項安全的改進。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "最後用三道問題自我核對：誰失去電子？誰得到電子？原子與電荷是否守恆？若答案是鐵失電子、氧或金屬離子得電子，還要說明氧化劑和還原劑的角色。面對新反應，先用氧元素或現象提出猜想，再用氧化數與半反應驗證；若兩種判讀不一致，回頭查化學式、係數和條件，而不是硬背結論。"
       }
     ],
     "summary": [
@@ -163,16 +226,20 @@
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「氧化與還原反應」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "在 Fe + Cu²⁺ → Fe²⁺ + Cu 中，誰被氧化、誰被還原？請寫出電子流向。",
+        "expectedEvidence": "能指出 Fe 失去 2e⁻、Cu²⁺ 得到 2e⁻，並說明 Fe 被氧化、Cu²⁺ 被還原。"
       },
       {
-        "prompt": "在「氧化與還原反應」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "為什麼氧化劑本身會被還原，而還原劑本身會被氧化？",
+        "expectedEvidence": "能以接受電子／提供電子說明兩個角色，而不是只背名稱。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「氧化與還原反應」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "看到一個沒有 O₂ 參與的反應時，如何判斷它是否為氧化還原反應？",
+        "expectedEvidence": "能比較關鍵元素氧化數，或寫出半反應檢查電子得失。"
+      },
+      {
+        "prompt": "請用氧化還原觀點解釋一項防鏽或電池設計。",
+        "expectedEvidence": "能指出氧化區、還原區、電子路徑或隔離／保護機制，並連回本課概念。"
       }
     ]
   },

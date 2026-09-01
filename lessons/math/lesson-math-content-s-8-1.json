@@ -9,26 +9,26 @@
     "8"
   ],
   "content": {
-    "summary": "理解角的構成、種類與度量，能比較角的大小。",
+    "summary": "角由同一頂點出發的兩條射線圍成，角的大小由兩邊張開的程度決定，而不是由邊畫得長短決定。本單元從旋轉門、量角器與相鄰角出發，建立角的命名、度量、分類與加減關係。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "理解角的構成、種類與度量，能比較角的大小。 能以對應點、垂線或角度量驗證。"
+        "heading": "頂點、兩邊與角的內部",
+        "body": "角由兩條有共同端點的射線組成，共同端點是頂點，兩條射線是角的邊；角的內部是兩邊之間掃出的區域。寫 ∠ABC 時，中間字母 B 必須是頂點。邊延長不會改變角的大小，但移動頂點或改變張開程度就會改變角。"
       },
       {
-        "heading": "學習流程",
-        "body": "先辨認幾何元素，整理對稱或角的關係，再用圖形與度量檢查。"
+        "heading": "用量角器把張開程度變成數字",
+        "body": "量角器的中心要對準頂點，基準線要貼合其中一邊，再從正確的零刻度讀另一邊。先判斷角大約是銳角、直角或鈍角，再選內外刻度，可避免把 35° 讀成 145°。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "把任意折線當對稱軸、混淆角的邊與頂點，或誤判角度種類。"
+        "heading": "把圖形外觀和角度數值分開",
+        "body": "兩個角的邊畫得長短不同，仍可能同樣大；兩個角看起來一樣寬，也可能因圖未按比例而不同。常見錯誤包括讀錯量角器刻度、把中間字母寫錯，以及把相鄰角、互補角和互餘角的條件混在一起。"
       }
     ]
   },
   "studyHighlights": [
-    "先確認元素與定義。",
-    "找對稱或角度關係。",
-    "用圖形與度量驗證。"
+    "先找共同頂點與兩條射線，再決定角的名稱。",
+    "量角時對準中心、基準線與正確零刻度。",
+    "用直角、平角及相加關係回查讀值。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
@@ -41,7 +41,103 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上幾何公開章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/m-g8a-s01；僅核對角、角度量與基本幾何章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引支持由角的構成進入角度量與角的關係。",
+          "角的大小由兩邊張開程度決定，需以頂點和兩邊辨識。"
+        ],
+        "representations": [
+          "以射線、角弧、量角器與角度數值互相轉換。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編旋轉門、量角器讀值與相鄰角活動。"
+        ],
+        "misconceptions": [
+          "把邊長當角度，或讀量角器的錯誤刻度。"
+        ],
+        "assessmentEmphasis": [
+          "要求正確命名、分類、量測並解釋角度關係。"
+        ]
+      },
+      "licenseBoundary": "只研究公開索引，不複製或改寫南一教材、圖像、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學八上官方影音 XML",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；核對角與三角形、多邊形相關章節資源分類。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開資源支持以角的命名、度量與角的加減建立幾何語言。",
+          "量角器中心、基準線與零刻度是可靠量測的程序條件。"
+        ],
+        "representations": [
+          "以量角器、直線角、互補角與相鄰角表示角度關係。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編道路轉彎和複合角拆解，檢查角是否重疊。"
+        ],
+        "misconceptions": [
+          "把相鄰角直接相加而重複計算，或把互補與互餘混淆。"
+        ],
+        "assessmentEmphasis": [
+          "檢查圖形位置、讀值刻度與相加條件是否同時成立。"
+        ]
+      },
+      "licenseBoundary": "只使用官方 XML 的章節與資源分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網 2A 章節索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/2A/；核對角與幾何關係的公開章節定位。",
+      "reviewedAt": "2026-08-30",
+      "findings": {
+        "concepts": [
+          "公開索引將角的度量與後續三角形、多邊形角度關係連結。",
+          "角名中間字母、角的區域與度量工具是互相驗證的資訊。"
+        ],
+        "representations": [
+          "以圖形、三字母命名、量角器讀值與角度式互相對讀。"
+        ],
+        "examplesOrEvidence": [
+          "本課以 35° 與 145° 讀值陷阱，以及 28°＋47° 的複合角作原創案例。"
+        ],
+        "misconceptions": [
+          "只看外觀猜銳鈍角，或不確認起始邊就讀錯量角器刻度。"
+        ],
+        "assessmentEmphasis": [
+          "要求由圖寫角名、由數值判種類，並用幾何關係回查。"
+        ]
+      },
+      "licenseBoundary": "只研究公開章節索引，不複製翰林教材、影音、題庫、答案或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開資料都將角視為由兩條共頂點射線形成，並連結角度量與後續幾何。",
+      "正確命名、量角器操作、角的分類及相加關係是共同核心。",
+      "可取得資料以公開章節與資源索引為主，不能推稱取得出版社完整正文。"
+    ],
+    "versionDifferences": [
+      "南一索引偏向角的基本構成，康軒 XML 顯示量測與角關係資源節奏，翰林索引連到三角形與多邊形；本課以旋轉門、道路轉彎和量測陷阱重新整合。"
+    ],
+    "originalAdditions": [
+      "用旋轉門說明角度與邊長的差異。",
+      "以錯誤刻度、複合角重複計算和道路轉彎診斷迷思。",
+      "互動中同時練習命名、量測、分類與加法驗證。"
+    ],
+    "llmSynthesisNote": "LLM 依官方課綱與 KG 界定角的構成、命名、度量與關係，再比較南一、康軒、翰林公開研究，以單元專屬的旋轉門、量角器與道路情境重新撰寫；全文為原創，Terra 第二輪尚未執行，故維持 draft。"
+  },
   "publisherResearch": [
     {
       "publisher": "hanlin",
@@ -59,6 +155,57 @@
       ],
       "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「S-8-1：角」安排自編表徵、推理、練習、遷移與驗算。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "類南一版八上角與角度公開章節索引",
+      "subject": "math",
+      "chapterLocator": "S-8-1 角",
+      "sourceUrl": "https://www.junyiacademy.org/topics/m-g8a-s01",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對角的構成、度量與關係範圍；本課以旋轉門與量角器重新設計。",
+      "copyrightBoundary": "只研究公開章節定位，不複製南一教材、題目、答案或影音。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學八上官方影音 XML",
+      "subject": "math",
+      "chapterLocator": "八上角與三角形、多邊形角度",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "官方 XML 核對角度量與複合角資源分類；本課以刻度陷阱與相鄰角活動重寫。",
+      "copyrightBoundary": "只研究公開 XML 分類，不轉錄康軒教材、題目、答案、圖表或影片。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開影音網 2A 章節索引",
+      "subject": "math",
+      "chapterLocator": "2A 角與角度關係",
+      "sourceUrl": "https://mathvideo.hle.com.tw/2A/",
+      "access": "public-open",
+      "reviewedAt": "2026-08-30",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "公開索引核對角與後續多邊形角度脈絡；本課命名、例題、互動與回饋均獨立撰寫。",
+      "copyrightBoundary": "只研究公開索引，不複製翰林教材、影音、題庫或答案。"
     }
   ],
   "teaching": {
@@ -66,38 +213,38 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從問題情境看見「S-8-1：角」",
-        "body": "先讀懂「S-8-1：角」要處理的對象與條件。把題目中的量、圖形、資料或變化用自己的話重述，並寫下已知與未知；這一步不是急著套公式，而是確認每個符號、單位與比較關係各自代表什麼。"
+        "heading": "旋轉門打開的幅度",
+        "body": "旋轉門的門片可以很長，但門片長度不是角度；真正要描述的是門片繞著鉸鏈轉開了多少。把鉸鏈標成 O，門片方向標成 OA、OB，便得到 ∠AOB。先找固定的頂點，再觀察兩條射線的張開程度，角的概念就不會被邊長帶走。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "核心概念與表示法",
-        "body": "本單元依官方課綱所列的「角」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "角的命名與三種常用分類",
+        "body": "∠ABC 的 B 是頂點，BA 與 BC 是兩邊。小於 90° 是銳角，等於 90° 是直角，大於 90° 且小於 180° 是鈍角，等於 180° 是平角。分類依角度數值，不依圖形在紙上的朝向；把圖旋轉後，角的種類不會改變。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "自編例題：先表徵再推理",
-        "body": "以「S-8-1：角」為主題，取座標 A(1,2)、B(5,5)，先畫圖並標出水平、垂直差，再用勾股關係計算距離為 5；最後回到圖形檢查方向與尺度，說明計算結果的幾何意義。"
+        "heading": "量角器的 35° 與 145° 陷阱",
+        "body": "將量角器中心放在 O，基準線貼合 OA，另一邊 OB 通過 35 的刻度，因此 ∠AOB＝35°，是銳角。若從另一側的零刻度讀取，會看到 145；那是外側刻度的數字，不是本題角的讀值。以直角尺或估計張開程度回查，35° 合理而 145° 不合理。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "逐格記錄解題理由",
-        "body": "練習時依序完成四格紀錄：第一格寫觀察到的條件，第二格寫採用的表示法與理由，第三格寫運算或判讀過程，第四格寫驗算證據。若答案不合理，先檢查單位、範圍、符號方向與資料是否被漏讀，再重新選擇方法。"
+        "heading": "把複合角拆成可相加的部分",
+        "body": "若射線 OB 位於 ∠AOC 內部，且 ∠AOB＝28°、∠BOC＝47°，則 ∠AOC＝28°＋47°＝75°。請先確認 OB 確實在內部，再相加；若兩個角重疊或位於外側，直接相加就會重複計算。畫弧線標記每一部分，能看出加法的幾何理由。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "把方法遷移到新情境",
-        "body": "將「S-8-1：角」的方法換到另一個生活或跨科情境，保留推理骨架但重新決定變數、尺度與限制。比較兩題哪些條件相同、哪些條件改變，並說明改變後為何要調整表示法；這能避免把某一道例題的步驟機械套用到所有問題。"
+        "heading": "從道路轉彎讀角度",
+        "body": "地圖上的道路在交叉口轉向 120°，這個數字描述方向改變的角度，不是道路長度。若設計無障礙坡道要分成兩段轉彎，必須先判斷兩段角是否不重疊，再使用和角關係。把量角方法帶到地圖，能檢查圖形未按比例時仍可依標示數值推理。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "用證據整理學習成果",
-        "body": "完成後寫下三句反思：我用什麼證據判斷、哪一步最容易出錯、若條件改變我會先改哪裡。再用一句話總結「S-8-1：角」的概念與適用範圍，並檢查答案是否帶有正確單位、圖示或資料解讀。"
+        "heading": "三個問題檢查一個角",
+        "body": "最後對任一角回答：頂點是哪一點？兩邊是哪兩條射線？角度讀值或相加關係由哪個圖形證據支持？再判斷它是銳角、直角、鈍角還是平角。若只寫出一個數字卻說不出量角器的基準線或角的邊，答案仍未完成。"
       }
     ],
     "summary": [
@@ -121,12 +268,12 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-08-30",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "以互動步驟探索「S-8-1：角」的表示、推理與驗算。",
-    "scenario": "請依序分析「S-8-1：角」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "操作頂點、射線與量角器，判斷角的名稱、種類與相加關係。",
+    "scenario": "你是道路設計測量員，要把轉彎圖上的角正確命名、量度並拆解。",
     "variables": [
       {
         "symbol": "x",
@@ -136,36 +283,36 @@
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "讀取 ∠AOB 時，哪一點必須是頂點？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "O，因為它是角名中間的字母",
+          "A，因為它在角名最前面",
+          "B，因為它在角名最後面"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "三字母角名的中間字母代表兩條射線的共同端點。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "量角器中心與基準線應如何放置？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "中心對準頂點，基準線貼合其中一邊",
+          "中心放在角的中間但不必貼邊",
+          "任意選一個零刻度開始讀"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "先對準頂點和一邊，再選與該邊相連的零刻度讀另一邊。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "若 ∠AOB＝28°、∠BOC＝47° 且 OB 在內部，∠AOC 為何？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "75°，因為兩個不重疊部分相加",
+          "19°，因為要用相減",
+          "131°，因為所有角都要補成平角"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "OB 位於大角內部且兩部分不重疊，所以 ∠AOC＝28°＋47°＝75°。"
       }
     ]
   },
@@ -175,13 +322,42 @@
     "engine": "math-geometry",
     "mode": "model",
     "model": "general",
-    "goal": "以互動步驟探索「S-8-1：角」的表示、推理與驗算。",
-    "mission": "請依序分析「S-8-1：角」的條件，選出最能保留資訊、可被驗證的做法。",
+    "goal": "操作頂點、射線與量角器，判斷角的名稱、種類與相加關係。",
+    "mission": "你是道路設計測量員，要把轉彎圖上的角正確命名、量度並拆解。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
-    ]
+    ],
+    "learningDesign": {
+      "type": "geometric-construction",
+      "objective": "從頂點、邊與旋轉方向辨認角，並用量角器基準線與中心位置準確量測。",
+      "predictionPrompt": "量測一個看似鈍角的角時，你預測量角器要讀哪一圈刻度？請先看起始邊方向。",
+      "evidencePrompt": "請標示頂點、兩邊、基準線與讀值刻度，再用補角關係檢查量測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "從兩條射線辨認頂點與角的範圍",
+          "equation": "角由共同端點的兩條射線形成",
+          "reason": "同一對射線可能形成內外兩個角，必須依題目標示的區域判斷。",
+          "feedback": "先圈出頂點，再沿兩條邊找出題目要量的扇形區域。"
+        },
+        {
+          "id": "step-2",
+          "action": "將量角器中心與基準線對齊",
+          "equation": "中心對頂點；0°線貼合其中一邊",
+          "reason": "若中心或基準線偏移，刻度讀值會系統性錯誤。",
+          "feedback": "先不急著讀數，檢查中心是否在頂點且 0°線是否沿起始邊。"
+        },
+        {
+          "id": "step-3",
+          "action": "選對刻度並用補角關係回查",
+          "equation": "若相鄰角成直線，θ＋(180°−θ)＝180°",
+          "reason": "刻度讀值要從 0°起始的一圈讀，幾何關係可提供第二次檢查。",
+          "feedback": "兩圈都可能有數字，請選從基準線開始增加的那一圈。"
+        }
+      ]
+    }
   }
 }

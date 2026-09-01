@@ -11,30 +11,30 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「水溶液中的變化」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "本單元從看似透明的水溶液出發，追蹤粒子在混合、酸鹼反應、沉澱與產氣時的變化，學會用指示劑、導電性、溫度與質量等證據判斷，而不把外觀直接當成結論。",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「水溶液中的變化」相關的關係。"
+        "body": "能區分溶質、溶劑與溶液，利用可觀察證據判斷水溶液的酸鹼性與混合後變化，並用粒子模型說明沉澱、產氣及中和現象。"
       },
       {
         "heading": "學習流程",
-        "body": "先讀出題幹中與「水溶液中的變化」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "body": "先記錄混合前的顏色、溫度、導電性與透明度，再只改變一項條件進行安全觀察；最後把現象、粒子層次的解釋和仍未知的部分分欄書寫。"
       },
       {
         "heading": "常見錯誤",
-        "body": "不要只因看到「水溶液中的變化」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "body": "透明不代表沒有溶質，顏色改變也不必然代表生成新物質；指示劑顯色只能提供酸鹼範圍的線索，不能單獨告訴我們所有粒子的種類與濃度。"
       },
       {
         "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「水溶液中的變化」，並指出至少一項支持判斷的條件。"
+        "body": "面對兩杯外觀相同的溶液，能提出至少兩種可比較的檢測，說明控制條件，並用證據區分觀察結果與推論？"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「水溶液中的變化」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "把混合前後的直接觀察與粒子模型解釋分開，避免把推論誤當成測量結果。",
+    "用指示劑、導電性、溫度、沉澱與氣泡等不同證據交叉判斷水溶液的變化。",
+    "寫結論時附上條件與限制：同樣外觀不代表組成相同，單一測試也有判讀界線。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,132 +47,137 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-01",
   "interactive": {
     "type": "scientific-investigation",
-    "goal": "以安全探究步驟理解「水溶液中的變化」並用證據修正解釋。",
-    "scenario": "針對「Jb：水溶液中的變化」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
+    "goal": "透過可調整的溶液粒子與檢測工具，區分溶解、酸鹼變化、沉澱與產氣，並以證據修正模型。",
+    "scenario": "安全虛擬實驗台提供純水、食鹽水、檸檬酸鹽水、小蘇打水與兩種自編樣品；可調整體積、濃度、滴加量與攪拌次數，不使用危險藥品。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "選定的觀察條件"
+        "symbol": "c",
+        "meaning": "溶液濃度，代表單位體積內可參與觀察的粒子數"
+      },
+      {
+        "symbol": "v",
+        "meaning": "加入體積，影響總粒子數與稀釋程度"
+      },
+      {
+        "symbol": "t",
+        "meaning": "混合後的觀察時間，用來比較沉澱沉降與氣泡消退"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先做哪一件事？",
+        "prompt": "兩杯透明樣品要先做哪一項比較，才能避免只憑外觀下結論？",
         "options": [
-          "提出可觀察問題並列出變因",
-          "先寫預期答案",
-          "省略安全檢查"
+          "固定取樣體積，選一種相同條件的檢測並記錄結果",
+          "直接把透明樣品都標成純水",
+          "先加入不同滴數指示劑再比較"
         ],
         "answer": "A",
-        "feedback": "問題、變因與安全限制是探究起點。"
+        "feedback": "先固定取樣與檢測條件，才能把外觀相同的樣品放在可比較的證據上。"
       },
       {
         "id": "step-2",
-        "prompt": "如何取得可信資料？",
+        "prompt": "想判斷混合後的乳白色固體是否為反應造成，下一步最有用的是？",
         "options": [
-          "固定條件、重複量測並記錄單位",
-          "只量一次且不記錄",
-          "任意改變多個因素"
+          "設置未混合的對照，重複混合並記錄沉澱出現時間與量",
+          "只放大照片的顏色",
+          "刪去沒有出現沉澱的那次資料"
         ],
         "answer": "A",
-        "feedback": "固定與重複讓資料能比較。"
+        "feedback": "對照、重複和時間記錄能排除容器雜質或偶然現象，讓粒子模型有可檢查的依據。"
       },
       {
         "id": "step-3",
-        "prompt": "如何形成結論？",
+        "prompt": "酸性樣品逐滴加入鹼性樣品，指示劑接近中性後仍繼續加入，應如何解釋？",
         "options": [
-          "先描述證據，再提出有條件的解釋",
-          "把猜測當成結果",
-          "刪掉不符合預期的資料"
+          "可能由酸性過量轉為鹼性過量，需追蹤剩餘粒子與加入量",
+          "酸和鹼從此完全消失，加入多少都不影響",
+          "只要顏色變淡就能知道所有成分"
         ],
         "answer": "A",
-        "feedback": "證據與限制都要保留，才能修正模型。"
+        "feedback": "中和取決於粒子數量與比例；一方過量時，繼續加入會使溶液偏向另一種酸鹼性。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "topic",
   "publisherResearch": [
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
-      "subject": "science",
-      "chapterLocator": "Jb：水溶液中的變化；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開出版社資源用於核對「水溶液中的變化」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
+    {"publisher":"nani","edition":"南一版國中自然公開課程計畫與資源索引","subject":"science","chapterLocator":"水溶液、酸鹼與反應現象的公開單元定位；未取得完整出版社頁碼。","sourceUrl":"https://www.naer.edu.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"用公開定位核對水溶液、酸鹼與物質變化的概念順序；正文與案例均重新設計。","copyrightBoundary":"只採公開定位與方向，不複製課本、習作、教師用書、圖片或答案。"},
+    {"publisher":"kanghsuan","edition":"康軒版國中自然公開影音與章節資源","subject":"science","chapterLocator":"Jb：水溶液中的變化；公開活動方向定位。","sourceUrl":"https://digitalmaster.knsh.com.tw/all/video/j/nature.html","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"用公開資源核對操作、指示劑與證據記錄方向；本課自編滴加與對照模型。","copyrightBoundary":"只研究公開結構，不複製影音字幕、圖像、題目、提示或解答。"},
+    {"publisher":"hanlin","edition":"翰林版國中自然公開產品資訊與課程資源","subject":"science","chapterLocator":"水溶液與物質變化相關公開產品方向；未取得完整逐頁內容。","sourceUrl":"https://books.hanlin.com.tw/productall","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"用公開產品資訊核對生活情境與資料判讀方向；本課自編飲料、水質與粒子模型案例。","copyrightBoundary":"只作公開結構與概念方向研究；正文、活動、題目與解析均由本課獨立創作。"}
   ],
+  "versionResearch": [
+    {"publisher":"nani","edition":"南一版國中自然公開課程計畫與資源索引","sourceType":"public-web","sourceLocator":"水溶液、酸鹼與反應現象的公開單元定位；未取得完整出版社課本頁面。","reviewedAt":"2026-09-01","findings":{"concepts":["水溶液的性質不能只靠外觀判斷，應搭配適當測試與多種證據判讀。","混合前後的現象需要配合測試與模型解釋。"],"representations":["溶液比較表、指示劑色階與粒子示意圖。"],"examplesOrEvidence":["公開定位支持水溶液與酸鹼反應方向；本課自編安全觀察資料。"],"misconceptions":["透明液體被誤認為純水；看到氣泡就直接斷定反應。"],"assessmentEmphasis":["依觀察證據判斷變化，並說明測試限制。"]},"licenseBoundary":"只採公開定位與概念方向，不複製課本、習作、教師用書、圖片或答案。"},
+    {"publisher":"kanghsuan","edition":"康軒版國中自然公開影音與章節資源","sourceType":"public-web","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/j/nature.html；水溶液中的變化相關活動方向定位。","reviewedAt":"2026-09-01","findings":{"concepts":["酸鹼與混合變化需透過操作觀察。","現象、條件和解釋必須互相對照。"],"representations":["操作流程、指示劑色階與反應前後粒子圖。"],"examplesOrEvidence":["公開資源提供活動型態線索；本課自編滴加與溫度觀察資料。"],"misconceptions":["把指示劑顏色當成酸鹼濃度的精確值。"],"assessmentEmphasis":["指出變因、對照與支持結論的觀察。"]},"licenseBoundary":"只研究公開活動方向，不複製影音字幕、圖像、題目、提示或解答。"},
+    {"publisher":"hanlin","edition":"翰林版國中自然公開產品資訊與課程資源","sourceType":"public-web","sourceLocator":"https://books.hanlin.com.tw/productall；水溶液與物質變化的公開方向定位。","reviewedAt":"2026-09-01","findings":{"concepts":["從生活材料觀察溶液性質，連結酸鹼、沉澱與產氣。","以證據範圍表達結論，注意測量和模型的差異。"],"representations":["生活情境卡、證據矩陣與微觀粒子模型。"],"examplesOrEvidence":["公開產品資訊支持情境化方向；本課自編飲料酸度、沉澱與中和案例。"],"misconceptions":["把所有混合都視為化學反應；認為沉澱後粒子消失。"],"assessmentEmphasis":["比較多種證據，提出安全且可重複的後續測試。"]},"licenseBoundary":"只作公開結構與概念方向研究；正文、案例、互動與題目均由本課獨立創作。"}
+  ],
+  "fusionRecord": {
+    "commonCore":["溶液是溶質均勻分散在溶劑中的混合物，透明或無色不能單獨決定組成。","酸鹼性、沉澱、產氣與溫度變化要以適當測試取得證據，再用粒子模型解釋。","混合後須比較控制條件，區分粒子分散、沉澱、產氣與中和等不同變化。"],
+    "versionDifferences":["南一公開定位適合整理水溶液與酸鹼反應脈絡；康軒公開資源凸顯操作與證據記錄；翰林公開產品資訊較能連接生活情境與資料判讀，但完整出版社內文均未公開可核驗。"],
+    "originalAdditions":["以外觀相同但導電性不同的自編溶液修正透明即純水的直覺。","用安全滴加模擬追蹤氣泡、溫度與剩餘粒子，避免單一現象直接等同答案。","以證據矩陣比較指示劑、沉澱、導電性與溫度，再遷移到飲料標示與水質檢測。"],
+    "llmSynthesisNote":"依官方課綱、KG 與三版本可取得的公開定位及研究紀錄，融合溶液組成、酸鹼證據、反應現象與粒子模型，再以透明溶液辨識、滴加追蹤和證據矩陣重新撰寫；正文、互動、案例與檢核均為原創。Terra 尚未執行，故維持 draft。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「水溶液中的變化」",
-        "body": "先從「水溶液中的變化」相關的生活現象提出一個可觀察問題，寫下已知條件、可能變因與安全限制；把看到的事實和自己的解釋分開，才有可檢查的探究起點。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "一杯透明液體，真的只有水嗎？",
+        "body": "把兩杯都像白開水的樣品放在桌上：一杯是純水，另一杯含有看不見的溶質。只看顏色，你無法分辨它們。先把「看起來透明」記成觀察，再提出可比較的問題：導電性是否相同？加入指示劑是否有差異？科學結論不能由外觀捷徑代替測試。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「水溶液中的變化」的概念架構",
-        "body": "本單元依官方課綱所列的「水溶液中的變化」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "從溶液的粒子開始讀懂變化",
+        "body": "溶液是溶質均勻分散在溶劑中的混合物；鹽水看似空無一物，其實水中有分散的粒子。若只是粒子分散，蒸發水分仍可能回收溶質；若粒子重新排列形成難溶固體、氣體或新物質，就要用反應的角度追蹤。判斷時先看巨觀現象，再問微觀粒子如何改變，不能把「溶解」和「消失」畫上等號。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「Jb：水溶液中的變化」為主題，建立一份自編三欄證據表：可直接觀察的現象、支持的模型、尚待查證的限制。先用表格整理資料，再用一句條件式結論回應問題，避免只背名詞。"
+        "heading": "用四格證據表追蹤一次混合",
+        "body": "想像把無色溶液甲慢慢加入無色溶液乙。第一格記錄混合前：兩者皆透明、溫度相近；第二格記錄操作：體積與滴加速度固定；第三格記錄結果：出現乳白色固體且靜置後沉降；第四格才寫解釋：溶液中的某些粒子可能結合成難溶物。「可能」很重要，因為還要用過濾、質量與對照組排除容器雜質等替代解釋。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「水溶液中的變化」先寫可觀察問題，再列自變因、應變因與控制變因；依序記錄預測、操作、數據與限制，重複量測後才下條件式結論。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "酸鹼指示劑能告訴我們什麼？",
+        "body": "指示劑遇到不同酸鹼環境會呈現不同顏色，因此它是判斷酸鹼範圍的工具，不是萬能成分分析器。取等體積的檸檬汁稀釋液、食鹽水與小蘇打水，使用同一滴數的指示劑，記錄顏色與操作條件。比較時不能只說「紅色比較強」；應說在本次指示劑和稀釋條件下，樣品顯示不同酸鹼性線索，若要比較濃度還需更合適的測量。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「水溶液中的變化」的探究方法換到家庭、校園或環境資料，檢查來源、尺度、樣本與不確定性；若證據不足，保留條件式結論並提出下一個可行測試。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "把現象連回粒子與守恆",
+        "body": "在安全模擬中讓酸性粒子與鹼性粒子逐步配對，觀察指示劑顏色接近中性、溫度略有變化。不要把中和想成酸和鹼互相消滅；要追蹤粒子重新組合後，溶液中還剩下哪些離子與分子。若酸或鹼其中一方過量，顏色不會停在中性。把這個模型遷移到胃酸中和或土壤改良時，也要先問用量、濃度與其他物質是否被控制。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「水溶液中的變化」的問題：哪個觀察最關鍵、哪個變因仍未控制、資料能支持到什麼程度？用一句話寫出結論與限制，再提出一項安全的改進。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用證據強度寫出有界線的結論",
+        "body": "回頭檢查：你判斷溶液發生變化，是依據顏色、沉澱、氣泡、導電性還是溫度？每種證據能支持的範圍不同。氣泡可能來自產氣，也可能是攪拌帶入空氣；沉澱可能是反應產物，也要排除污染。最後寫成三句：我觀察到什麼、最合理的粒子解釋是什麼、還要用哪個安全測試確認。"
       }
     ],
     "summary": [
-      "先用自己的話界定「水溶液中的變化」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "溶液外觀不能代表組成；要用適當測試把巨觀現象和粒子模型連起來。",
+      "指示劑提供酸鹼範圍線索，導電性、溫度、沉澱與產氣則各有證據界線。",
+      "混合後要比較控制條件，區分粒子分散、沉澱、產氣與中和等不同變化。",
+      "好的科學結論同時寫觀察、解釋、限制與下一個可重複的安全測試。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「水溶液中的變化」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼透明的水溶液不一定是純水？請用溶質與粒子說明。",
+        "expectedEvidence": "指出溶質可均勻分散而不改變外觀，並提出至少一項可比較的檢測。"
       },
       {
-        "prompt": "在「水溶液中的變化」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "指示劑顏色改變能支持什麼結論，又不能單獨支持什麼結論？",
+        "expectedEvidence": "能說明顏色提供酸鹼性線索，但不能單獨精確決定成分或濃度。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「水溶液中的變化」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "混合兩種無色溶液後出現沉澱，你會如何寫出有界線的結論？",
+        "expectedEvidence": "同時寫出沉澱的直接觀察、可能形成難溶物的粒子解釋、控制條件與一項後續驗證。"
       }
     ]
   },
@@ -181,8 +186,8 @@
     "engine": "concept-explorer",
     "mode": "explorer",
     "model": "general",
-    "goal": "以安全探究步驟理解「水溶液中的變化」並用證據修正解釋。",
-    "mission": "針對「Jb：水溶液中的變化」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
+    "goal": "以粒子、指示劑與證據矩陣理解水溶液中的混合、酸鹼、沉澱與產氣變化。",
+    "mission": "先預測透明樣品的檢測結果，再固定條件操作，最後用巨觀證據和微觀粒子圖共同寫出結論；不使用危險藥品或高電壓。",
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",
