@@ -56,6 +56,11 @@ def build_index(revision: str) -> dict:
             lesson = read_json(path)
             if lesson.get("reviewStatus") == "deprecated":
                 continue
+            # A lesson without its required question set is not deployable;
+            # keep it in the repository while leaving it out of the site index
+            # until its question data is complete.
+            if len(question_paths[lesson["id"]]) < 10:
+                continue
             lesson_payloads[subject].append(lesson)
             lessons.append(
                 {
@@ -84,6 +89,7 @@ def build_index(revision: str) -> dict:
                 "academicYear": mapping["academicYear"],
                 "status": mapping["status"],
                 "path": relative(path),
+                "volumes": volumes,
                 "volumeCount": len(volumes),
                 "entryCount": sum(len(volume.get("entries", [])) for volume in volumes),
                 "source": {
