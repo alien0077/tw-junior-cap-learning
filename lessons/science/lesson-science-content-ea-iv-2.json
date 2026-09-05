@@ -341,6 +341,7 @@
     "model": "general",
     "goal": "在滴水、排水與雨水集水任務間選擇適當尺度，完成量測或推估並說明精度與限制。",
     "mission": "你是校園節水小組：先估算一滴水，再用排水法量不規則石塊，最後判斷屋頂雨水是否足以裝滿水桶。每一步留下數值、單位、工具與合理性檢查。",
+    "learningDesign":{"type":"water-volume-measurement","objective":"以單位換算、排水法與估算誤差解決校園儲水量問題。","predictionPrompt":"不規則石塊放入量筒後，水位上升量是否等於石塊體積？哪些操作會造成偏差？","steps":[{"action":"用滴數與容器刻度估算一滴水的體積","equation":"volume=滴數\u00d7平均滴量"},{"action":"以排水前後水位差量測不規則物體","equation":"object-volume=final-level\u002dinitial-level"},{"action":"把屋頂面積、雨量與桶容量換成同一單位比較","equation":"harvest=area\u00d7rainfall\u00d7coefficient"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",

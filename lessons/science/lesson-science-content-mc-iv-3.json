@@ -313,6 +313,7 @@
     "model": "general",
     "goal": "透過校園雨水收集盒的材料決策，探索材料性質、加工方法、證據限制與使用後處理之間的關係。",
     "mission": "你是校園材料設計小組，請依序從收集盒的功能需求挑選測試、判斷加工風險，再提出有條件的材料方案。",
+    "learningDesign":{"type":"material-function-safety","objective":"以強度、耐候、成本與加工風險指標選擇校園收集盒材料。","predictionPrompt":"材料強度高但加工粉塵多時，如何在功能與安全間作出有證據的取捨？","steps":[{"action":"設定容量、強度、防水與使用壽命基準","equation":"function=need+constraint"},{"action":"比較材料測試數據與加工危害控制","equation":"choice=performance-risk"},{"action":"提出含替代方案與監測條件的推薦","equation":"decision=benefit-cost-safety"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://www.nani-jr.com/",

@@ -47,7 +47,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "kanghsuan",
@@ -65,45 +65,53 @@
       ],
       "outcome": "公開出版社資源提供社會資料判讀與公民素養的單元節奏與活動節點；本課依「歷 D-Ⅳ-1：地方史探究（一）」重新安排自編正文、示例、練習、遷移與檢核。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
+    },
+    {"publisher":"nani","edition":"南一版國中社會公開可取得範圍","subject":"social","chapterLocator":"歷 D-Ⅳ-1：地方史探究（一）；公開資料僅作定位","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-04","researchScope":["concept-progression","assessment-pattern"],"outcome":"由地方問題、來源評估與證據鏈建立探究流程；完整正文未公開，本文不重述出版社文字。","copyrightBoundary":"只採公開定位與教學方向；正文、史料情境、活動與檢核均為自編。"},
+    {"publisher":"hanlin","edition":"翰林國中社會公開樣書與索引","subject":"social","chapterLocator":"歷 D-Ⅳ-1：地方史探究（一）；公開資料可核對史料與探究活動方向","sourceUrl":"https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E6%A8%A3%E6%9B%B8/","access":"public-open","reviewedAt":"2026-09-04","researchScope":["concept-progression","activity-pattern","assessment-pattern"],"outcome":"以照片、口述、地圖與檔案比較地方記憶的觀點差異；不把公開索引誤寫成出版社全文。","copyrightBoundary":"不複製樣書文字、圖片、題目或答案，所有內容均重新撰寫。"}
   ],
+  "versionResearch":[
+    {"publisher":"nani","sourceLocator":"https://www.nani.com.tw/","reviewedAt":"2026-09-04","findings":{"concepts":["地方史從具體問題和時空範圍開始","來源、證據與敘事需要互相核對"],"representations":["時間線、地圖與來源表"],"examplesOrEvidence":["自編老照片與商會會議紀錄"],"misconceptions":["把口述記憶或單張照片當成完整真相"],"assessmentEmphasis":["說明來源、限制與可驗證的推論"]}},
+    {"publisher":"kanghsuan","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/j/geography_page.html?l1=7%E4%B8%8A","reviewedAt":"2026-09-04","findings":{"concepts":["由生活場景進入地方空間與歷史變遷","比較不同時期資料和不同群體經驗"],"representations":["地圖疊圖、照片與訪談摘要"],"examplesOrEvidence":["自編老街店家、交通與人口資料"],"misconceptions":["把現在的地景直接投射到過去"],"assessmentEmphasis":["標示時間、尺度、來源與缺漏"]}},
+    {"publisher":"hanlin","sourceLocator":"https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E6%A8%A3%E6%9B%B8/","reviewedAt":"2026-09-04","findings":{"concepts":["以多源資料建立地方史證據鏈","注意沒有被記錄的群體與倫理界線"],"representations":["照片、檔案、口述與空間資料對讀"],"examplesOrEvidence":["自編水井、老街與拆遷爭議案例"],"misconceptions":["將最容易取得的資料當成最可靠的資料"],"assessmentEmphasis":["提出相反證據、補查方案與受訪者保護"]}}
+  ],
+  "fusionRecord":{"commonCore":["三版本均把地方史視為問題、資料與證據推理的過程。","均強調時間、空間、來源和多種觀點的交叉核對。"],"versionDifferences":["南一適合建立探究概念與證據鏈；康軒適合從生活地景和地圖活動進入；翰林強調多源資料與探究倫理。","公開資料不完整，只融合可查證的活動方向。"],"originalAdditions":["從街角老水井建立可操作的地方史問題。","以透明地圖疊合店家、交通與人口變化。","遷移到車站更新議題，兼顧記憶、居住權與公共安全。"],"llmSynthesisNote":"依官方課綱與 kg-social-content-hist-d-iv-1，整合三版本可取得的探究線索，以老水井和老街資料重新撰寫六段原創教學；明載來源限制與訪談倫理，維持 draft。"},
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
         "heading": "從公共議題進入「歷 D-Ⅳ-1：地方史探究（一）」",
-        "body": "先找一個與「歷 D-Ⅳ-1：地方史探究（一）」相連的生活議題，辨認涉及哪些人、地方、時間與資源。把事件描述和自己的評價分開，列出需要查證的問題；社會學習不是背零散年代或名詞，而是理解人群如何在制度與環境中做選擇。"
+        "body": "從街角一座老水井開始做地方史：拍下位置、訪問使用者，再查地圖與地籍沿革。先把可觀察痕跡與居民記憶分開，讓問題從一個具體地點長出來。"
       },
       {
         "id": "explain",
         "phase": "explain",
         "heading": "用史料、地圖與制度理解關係",
-        "body": "本單元依官方課綱所列的「地方史探究（一）」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "body": "地方史探究要先界定範圍，再建立問題、來源、時間線與證據鏈。比較報紙、照片、口述與政府檔案的視角，並記下誰沒有留下記錄，避免把單一版本當成地方共同記憶。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
         "heading": "自編資料題：從證據形成解釋",
-        "body": "以「歷 D-Ⅳ-1：地方史探究（一）」為主題，讀兩段自編資料並製作「來源—時間—直接資訊—推論—限制」五欄表；先回答資料顯示什麼，再說明何種證據才能支持因果或價值判斷。"
+        "body": "比較自編的老照片與商會會議紀錄：照片顯示街道用途，紀錄卻爭論拆遷與利益。標出拍攝者、年代與缺漏，再提出兩個可由地方檔案館驗證的解釋。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
         "heading": "四步判讀社會資料",
-        "body": "針對「地方史探究（一）」先標來源、時間、尺度與直接資訊，再分開寫推論與價值判斷；比較至少兩種解釋，指出需要補查的資料與受影響群體。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "小組把一條老街的店家、交通與人口變化疊在三張透明地圖上，找出同一事件對居民、商家與政府的不同影響。每項推論都附來源、尺度與待查問題。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
         "heading": "把分析方法用於現在",
-        "body": "將「歷 D-Ⅳ-1：地方史探究（一）」的分析框架套用到當代新聞、校園規則或地方環境問題，重新確認利害關係人、權利義務與可行方案。比較不同方案的成本、受益與風險，說明你的選擇依據，並提出一個能被公共討論或資料驗證的後續問題。"
+        "body": "把地方史方法帶到今日車站周邊更新：比較保留老建築、局部改造與全面重建三案，評估記憶保存、居住權、商業收益與公共安全，提出一項可由居民共同追蹤的指標。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
         "heading": "成為負責任的資料讀者",
-        "body": "完成後回顧：我使用了哪些一手或二手資料、哪個觀點可能被忽略、結論的適用範圍在哪裡。再用一句話總結「歷 D-Ⅳ-1：地方史探究（一）」如何連結個人生活與公共制度，並檢查引用、地圖方向、時間順序與用詞是否精確。"
+        "body": "最後完成地方史研究札記：交代問題、資料選擇、時間範圍與一項相反證據，並說明哪些記憶需要回到社群再確認。檢查地圖方向、引文授權與受訪者匿名需求。"
       }
     ],
     "summary": [
@@ -127,7 +135,7 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-04",
   "lessonScope": "learning-content"
 }

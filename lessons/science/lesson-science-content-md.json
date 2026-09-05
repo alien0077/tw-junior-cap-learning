@@ -321,6 +321,7 @@
     "model": "general",
     "goal": "用災害資料卡建立風險判讀鏈，選出有證據且安全的防治行動。",
     "mission": "你是校園防災小組成員，必須把一張地形圖、雨量與震度資料、警報時間線和人口分布圖疊合，判定哪裡先避難、哪項資料仍不足；所有操作使用自編資料與模擬器，不進入危險現場。",
+    "learningDesign":{"type":"multi-hazard-school-map","objective":"整合地形、雨量、震度、警報與人口資料排列校園防災優先序。","predictionPrompt":"同時有淹水與地震警報時，如何依暴露、可達性與時間安排避難？","steps":[{"action":"疊合危害圖層、人口與避難點位置","equation":"risk=hazard\u00d7exposure"},{"action":"依預警時間、路徑與容量模擬避難順序","equation":"priority=f(time,capacity)"},{"action":"加入資料缺口與替代路線後修正計畫","equation":"plan=monitor+adjust"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

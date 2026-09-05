@@ -268,6 +268,7 @@
     "model": "general",
     "goal": "在生殖週期時間線中配對器官、配子、激素與事件，檢查因果順序。",
     "mission": "操作排卵、受精、月經與青春期調節卡片；每次連線都要說明作用對象和時間，並保留個體差異的限制。",
+    "learningDesign": {"type":"reproductive-cycle-timeline","objective":"以時間線與作用對象連結生殖器官、配子和激素調節，辨識個體差異。","predictionPrompt":"若排卵事件延後，時間線上哪些後續事件需要重新標示，哪些概念不會因此改變？","steps":[{"action":"將青春期、生殖器官與配子卡放到不同層次","equation":"level=organ\u002bcell\u002bhormone"},{"action":"依時間排序排卵、受精、月經並標記條件","equation":"event=signal+target+time"},{"action":"拖曳延後或未受精情境，檢查因果與不確定性","equation":"cycle=baseline+variation"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

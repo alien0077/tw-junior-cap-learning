@@ -310,6 +310,7 @@
     "model": "general",
     "goal": "透過旋轉坡面與岩層箭頭、調整降雨與排水條件，判讀順向坡和山崩威脅的證據鏈。",
     "mission": "你是校園邊坡巡查小組，請依剖面方向、雨量、裂縫、排水與坡腳條件，提出有範圍的風險判斷與安全行動。",
+    "learningDesign":{"type":"slope-landslide-risk","objective":"以坡度、降雨、裂縫與排水資料評估邊坡滑動風險及安全行動。","predictionPrompt":"連續降雨後裂縫擴大但尚未滑動，應先查哪些指標並採取何種安全措施？","steps":[{"action":"從剖面圖記錄坡度、坡向、裂縫與坡腳狀況","equation":"stability=f(slope,material,water)"},{"action":"疊加累積雨量、排水能力與變形速率","equation":"risk=f(rain,drainage,deformation)"},{"action":"設定警戒門檻與撤離條件，禁止進入現場驗證","equation":"action=threshold+distance"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://trans.nani.com.tw/s3/nanibooks/891c3f37-b5d3-4fa4-b80b-ce7cbf768040.pdf",

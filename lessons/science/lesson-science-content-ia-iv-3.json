@@ -320,6 +320,7 @@
     "model": "general",
     "goal": "依板塊相對方向與地質證據判斷地震、火山及造山的可能關聯。",
     "mission": "在三張板塊剖面卡之間切換，先判讀運動方向，再用海溝、中洋脊、斷層、火山與褶皺證據完成因果解釋。",
+    "learningDesign":{"type":"plate-boundary-cross-section","objective":"以板塊相對運動與地質構造證據判讀聚合、張裂及錯動邊界。","predictionPrompt":"若兩板塊相向移動且一板塊密度較大，海溝與火山帶可能出現在哪一側？","steps":[{"action":"在剖面卡標記板塊運動箭頭與相對密度","equation":"motion=direction+relative-density"},{"action":"將海溝、中洋脊、斷層與火山放到合理位置","equation":"feature=f(boundary-type)"},{"action":"改變運動方向再檢查構造預測和資料限制","equation":"prediction=evidence+model"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://digitalmaster.knsh.com.tw/ju/nature/webgame/B5.html",

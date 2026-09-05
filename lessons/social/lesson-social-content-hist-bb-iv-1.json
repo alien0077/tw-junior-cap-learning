@@ -47,7 +47,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "kanghsuan",
@@ -65,45 +65,75 @@
       ],
       "outcome": "公開出版社資源提供社會資料判讀與公民素養的單元節奏與活動節點；本課依「歷 Bb-Ⅳ-1：十六十七世紀東亞海域各方勢力」重新安排自編正文、示例、練習、遷移與檢核。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中社會公開可取得範圍",
+      "subject": "social",
+      "chapterLocator": "歷 Bb-Ⅳ-1：十六十七世紀東亞海域各方勢力；公開資料僅作單元定位",
+      "sourceUrl": "https://www.nani.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-04",
+      "researchScope": ["concept-progression", "assessment-pattern"],
+      "outcome": "以海域交流、港口網絡與多方勢力互動建立時序與因果閱讀入口；完整正文未公開，本文不重述出版社文字。",
+      "copyrightBoundary": "只採公開定位與教學方向；正文、史料情境、活動與檢核均為自編。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中社會公開樣書與索引",
+      "subject": "social",
+      "chapterLocator": "歷 Bb-Ⅳ-1：十六十七世紀東亞海域各方勢力；公開資料可核對圖表與史料閱讀方向",
+      "sourceUrl": "https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%材樣書/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-04",
+      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "以海圖、港口資料與角色觀點並置比較勢力關係；不將公開索引誤寫成出版社全文。",
+      "copyrightBoundary": "不複製樣書文字、圖片、題目或答案，所有內容均重新撰寫。"
     }
   ],
+  "versionResearch": [
+    {"publisher":"nani","sourceLocator":"https://www.nani.com.tw/","reviewedAt":"2026-09-04","findings":{"concepts":["海域交通與港口網絡連結多方勢力","貿易、軍事與地方權力互相影響"],"representations":["時序、海圖、港口資料表"],"examplesOrEvidence":["自編港口稅收與船員書信"],"misconceptions":["把海上流動者都視為單一國家代理人"],"assessmentEmphasis":["以多源資料說明勢力關係與因果限制"]}},
+    {"publisher":"kanghsuan","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/j/geography_page.html?l1=7%E4%B8%8A","reviewedAt":"2026-09-04","findings":{"concepts":["由位置與區域尺度進入海域互動","比較國家、商人與地方勢力的利益"],"representations":["海圖、航線與角色矩陣"],"examplesOrEvidence":["自編海禁與開放政策比較"],"misconceptions":["把海禁理解為海上活動完全消失"],"assessmentEmphasis":["標示時間、來源、尺度與推論"]}},
+    {"publisher":"hanlin","sourceLocator":"https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E6%A8%A3%E6%9B%B8/","reviewedAt":"2026-09-04","findings":{"concepts":["用不同角色觀點解讀東亞海域秩序","區分官方規範與地方實際運作"],"representations":["史料、貨物流向與地圖交叉判讀"],"examplesOrEvidence":["自編稅收紀錄與書信對讀"],"misconceptions":["以單一官方紀錄代表所有群體經驗"],"assessmentEmphasis":["提出證據、觀點與資料缺口"]}}
+  ],
+  "fusionRecord": {"commonCore":["三版本均以十六、十七世紀東亞海域的跨區域互動為核心。","均需結合時序、地圖與多方資料理解勢力變化。"],"versionDifferences":["南一偏重海域脈絡與概念定位；康軒適合地圖和區域尺度入口；翰林強調史料與角色比較。","公開資料不足以支持出版社全文重述，故只融合可核對方向。"],"originalAdditions":["以十七世紀海圖和港口稅收引導勢力判讀。","用海禁／開放政策與走私網絡辨識制度和地方行動的落差。","遷移至今日漁業協議，練習多方利益與資源治理。"],"llmSynthesisNote":"依官方課綱與 kg-social-content-hist-bb-iv-1，融合三版本可取得的教學線索後，以海圖、港口與角色觀點重新寫成六段原創教學；不複製出版社內容，研究限制明載，維持 draft。"},
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
         "heading": "從公共議題進入「歷 Bb-Ⅳ-1：十六十七世紀東亞海域各方勢力」",
-        "body": "先找一個與「歷 Bb-Ⅳ-1：十六十七世紀東亞海域各方勢力」相連的生活議題，辨認涉及哪些人、地方、時間與資源。把事件描述和自己的評價分開，列出需要查證的問題；社會學習不是背零散年代或名詞，而是理解人群如何在制度與環境中做選擇。"
+        "body": "從一張十七世紀海圖開始，圈出商船、港口、海盜與地方政權的活動位置。先問『誰能在海上移動、誰控制停泊』，再把勢力關係寫成箭頭，避免只背國名與年份。"
       },
       {
         "id": "explain",
         "phase": "explain",
         "heading": "用史料、地圖與制度理解關係",
-        "body": "本單元依官方課綱所列的「十六十七世紀東亞海域各方勢力」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "body": "東亞海域的勢力由貿易利益、軍事技術、朝貢制度與地方網絡交織而成。把官方文書、商人紀錄、沉船貨物與沿岸聚落分開看，才能辨認同一事件在不同角色眼中的意義。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
         "heading": "自編資料題：從證據形成解釋",
-        "body": "以「歷 Bb-Ⅳ-1：十六十七世紀東亞海域各方勢力」為主題，讀兩段自編資料並製作「來源—時間—直接資訊—推論—限制」五欄表；先回答資料顯示什麼，再說明何種證據才能支持因果或價值判斷。"
+        "body": "比較兩段自編資料：一份港口稅收紀錄與一封船員書信。先找出貨物流向、徵稅者與被排除者，再判斷海禁或開放政策如何改變不同港口的權力，並列出資料未說明的走私網絡。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
         "heading": "四步判讀社會資料",
-        "body": "針對「十六十七世紀東亞海域各方勢力」先標來源、時間、尺度與直接資訊，再分開寫推論與價值判斷；比較至少兩種解釋，指出需要補查的資料與受影響群體。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "小組用彩線連接海圖上的軍事基地、商路與補給點，提出兩種競爭解釋：是國家封鎖主導，還是地方商人網絡主導。每條線都要附時間與來源，並指出哪筆新證據會改變判斷。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
         "heading": "把分析方法用於現在",
-        "body": "將「歷 Bb-Ⅳ-1：十六十七世紀東亞海域各方勢力」的分析框架套用到當代新聞、校園規則或地方環境問題，重新確認利害關係人、權利義務與可行方案。比較不同方案的成本、受益與風險，說明你的選擇依據，並提出一個能被公共討論或資料驗證的後續問題。"
+        "body": "把海域勢力分析移到今日漁業協議：比較國家海巡、地方漁民、跨國企業與海洋保育團體的航線與利益，設計一項能兼顧生計與資源永續的共同監測指標。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
         "heading": "成為負責任的資料讀者",
-        "body": "完成後回顧：我使用了哪些一手或二手資料、哪個觀點可能被忽略、結論的適用範圍在哪裡。再用一句話總結「歷 Bb-Ⅳ-1：十六十七世紀東亞海域各方勢力」如何連結個人生活與公共制度，並檢查引用、地圖方向、時間順序與用詞是否精確。"
+        "body": "最後寫一段海域勢力摘要：指出至少兩方如何互相利用或牽制，引用一張地圖與一筆文字證據，並標出尺度、日期與未知。檢查不要把海上流動者全部歸類為單一國家代理人。"
       }
     ],
     "summary": [
@@ -127,7 +157,7 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-04",
   "lessonScope": "learning-content"
 }

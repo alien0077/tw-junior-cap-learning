@@ -278,6 +278,7 @@
     "model": "general",
     "goal": "在肺泡交換模型中調整胸腔體積與氣體濃度，追蹤空氣流動和跨膜擴散方向。",
     "mission": "模擬快跑時的一口氣；每次只改變一個參數，分別標示通氣、肺泡交換與血液運輸。",
+    "learningDesign": {"type":"respiration-gas-exchange","objective":"以體積、濃度與表面積資料區分通氣和肺泡擴散。","predictionPrompt":"快跑時若呼吸頻率增加但肺泡表面積不變，氧氣進入血液的限制可能在哪裡？","steps":[{"action":"調整胸腔體積追蹤吸氣與呼氣方向","equation":"pressure-volume=opposite"},{"action":"比較肺泡與血液的氧、二氧化碳濃度梯度","equation":"diffusion=gradient\u00d7area"},{"action":"加入運動負載後分開標示通氣、交換與運輸證據","equation":"oxygen-delivery=ventilation\u002bexchange\u002btransport"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

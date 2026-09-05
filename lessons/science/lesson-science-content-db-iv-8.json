@@ -235,6 +235,7 @@
     "model": "general",
     "goal": "在校園地圖中配置植被與測點，追蹤水流、地表熱與空氣品質的證據鏈。",
     "mission": "你是校園環境調查員：先選擇比較區，再依指標選擇測量，最後判斷結論是否超出資料。",
+    "learningDesign":{"type":"school-ecosystem-survey","objective":"以比較區、指標與取樣資料判讀校園環境中的生物互動與限制。","predictionPrompt":"若遮蔭區與水泥區的溫度不同，還需測量哪些指標才能避免把單一差異當成完整解釋？","steps":[{"action":"選定兩個區域並固定時間、面積與取樣次數","equation":"sample=area+time+replicates"},{"action":"記錄溫度、濕度、植物數量與觀察到的互動","equation":"pattern=measurements\u002bobservations"},{"action":"比較結果並寫出可能混淆因子與後續測量","equation":"claim=effect\u002buncertainty"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/",
       "https://digitalmaster.knsh.com.tw/all/video/j/nature.html"

@@ -309,6 +309,7 @@
     "model": "general",
     "goal": "依照時間、地點與多項天氣因子，辨認臺灣災變天氣並提出有證據的防災判斷。",
     "mission": "校園防災小組收到四張測站資料卡，必須判斷戶外活動面臨的天氣風險，並說明哪些資料仍需查證。",
+    "learningDesign":{"type":"weather-risk-decision","objective":"以雷達、雨量、風速與警示門檻資料評估戶外活動風險。","predictionPrompt":"雨量尚低但雷達回波增強時，活動決策應先查哪些資料？","steps":[{"action":"整理測站時間、雨量、風速與雷達回波","equation":"risk=hazard+exposure"},{"action":"套用不同活動門檻比較取消、延後或照常方案","equation":"decision=f(threshold,forecast)"},{"action":"加入預報誤差與避難距離，標示仍需查證項目","equation":"safety=benefit-risk"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/9/doc/1290/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E2%94%80%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://textbooks.naer.edu.tw/DownLoadFile.aspx?ASParam=TUZIRSs3NSUyNjglMjQlN2QlMWElMDUlMDAlN2NyYm4lMDIlN2UlMTB2bXFtJTFjJTA5cCUwYyUxYiUxZG51JTEwJTdlJTBkY3IlMDMlMTlydSUwOSUwNyUxM28lMDc%3D",

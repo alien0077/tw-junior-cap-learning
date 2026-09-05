@@ -250,6 +250,7 @@
     "model": "general",
     "goal": "在冰塊熱交換與操場乾燥兩個模型間切換，拖曳一項條件、預測箭頭方向，再以融化量或乾燥時間檢查交互作用解釋。",
     "mission": "先選擇金屬盤、木板或塑膠墊，設定表面初溫與接觸面積；完成一次只改一項條件的測試後，再開啟風扇比較水氣移除速度。系統保留每次測量與未控制條件，禁止以危險藥品或高電壓代替觀察。",
+    "learningDesign":{"type":"heat-transfer-material-test","objective":"以接觸面積、材料與風速資料比較傳導、對流和蒸發的熱傳遞。","predictionPrompt":"同樣初溫下金屬盤比木板降溫快，哪些控制與測量能支持材料差異？","steps":[{"action":"固定初溫與面積，分別更換接觸材料","equation":"heat-flow=f(material,area,deltaT)"},{"action":"記錄溫度曲線並加入風扇比較對流","equation":"rate=delta-temperature/time"},{"action":"追蹤水氣移除速度，標示未控制條件","equation":"evaporation=f(wind,humidity)"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

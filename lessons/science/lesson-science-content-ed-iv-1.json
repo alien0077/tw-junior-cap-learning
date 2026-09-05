@@ -338,6 +338,7 @@
     "model": "general",
     "goal": "依據影像形態、尺度單位與觀測視角，建立恆星、銀河系、星系和宇宙的關係。",
     "mission": "你是深空影像小組成員，要把三個遙遠光斑分類，並用證據說明它們在宇宙尺度中的位置。",
+    "learningDesign":{"type":"deep-space-scale-classifier","objective":"以角直徑、光譜與距離指標區分恆星、星系和更大尺度結構。","predictionPrompt":"三個光斑亮度相近但角大小不同時，哪些額外資料才能支持距離與尺度判斷？","steps":[{"action":"先依影像形狀與角直徑記錄可觀察特徵","equation":"observation=shape+angular-size"},{"action":"比對光譜線與亮度資料，提出分類假設","equation":"classification=f(spectrum,brightness)"},{"action":"切換尺度圖例檢查距離單位與推論限制","equation":"distance=redshift\u002bmodel"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/9/doc/1290/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E2%94%80%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://tpack.nani.com.tw/nani_content?a=75&b=2",

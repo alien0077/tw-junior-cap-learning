@@ -332,6 +332,7 @@
     "model": "general",
     "goal": "以污染濃度、水草生長指標與控制變因互動，建立由暴露條件到證據結論的推理。",
     "mission": "請分析自編水草測試資料，區分觀察、推論與限制，再判斷生物監測或處理方案的適用條件。",
+    "learningDesign":{"type":"aquatic-biomonitoring-test","objective":"以水草生長、溶氧與污染指標資料評估生物監測方案。","predictionPrompt":"水草生長變慢但溶氧也受溫度影響時，如何設計對照以判斷污染作用？","steps":[{"action":"固定光照與水溫，記錄生長、溶氧及污染指標","equation":"growth=f(light,temp,pollutant)"},{"action":"比較處理組與對照組的時間序列","equation":"effect=treatment-control"},{"action":"評估監測敏感度與適用條件，標示限制","equation":"suitability=signal+uncertainty"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/9/doc/1290/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E2%94%80%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://tpack.nani.com.tw/nani_content?a=75&b=2",

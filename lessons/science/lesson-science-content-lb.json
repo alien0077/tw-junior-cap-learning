@@ -251,6 +251,7 @@
     "model": "general",
     "goal": "在虛擬生態池中調整水草覆蓋率與環境條件，觀察溶氧、食物網和蚊幼蟲族群的連鎖變化，形成有條件的生態解釋。",
     "mission": "任務一：先預測 0%、30%、60% 覆蓋率下的變化；任務二：一次只改覆蓋率並記錄七天曲線；任務三：加入捕食者或降低光照，判斷原本結論是否仍成立，最後提出一項需要補測的變因。",
+    "learningDesign":{"type":"habitat-cover-dynamics","objective":"以棲地覆蓋率、資源與捕食壓力時間序列分析族群變化。","predictionPrompt":"覆蓋率增加會讓所有族群都上升嗎？哪些資源或天敵條件可能改變結果？","steps":[{"action":"固定初始族群並設定 0%、30%、60% 覆蓋率","equation":"habitat=cover+resources"},{"action":"逐日記錄族群、資源與捕食者數量","equation":"population=birth-death"},{"action":"加入光照或捕食變化，與基準曲線比較","equation":"effect=treatment-control"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

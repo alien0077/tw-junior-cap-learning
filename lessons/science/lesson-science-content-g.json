@@ -278,6 +278,7 @@
     "model": "general",
     "goal": "用族群比例、遺傳差異與選擇壓力的資料模型理解演化與延續，並檢查證據能支持的範圍。",
     "mission": "調整潮間帶岩石背景、捕食壓力和繁殖世代，追蹤深色與淺色螺的存活及子代比例；以同一初始族群重跑不同條件，提出有證據且保留限制的結論。",
+    "learningDesign":{"type":"natural-selection-population","objective":"以環境背景、捕食壓力與世代比例資料解釋自然選擇，而非個體主動變色。","predictionPrompt":"岩石背景變暗但其他條件固定時，兩種螺的存活比例與後代比例會如何改變？","steps":[{"action":"固定初始族群並設定背景色、捕食率與世代數","equation":"population=initial+birth-death"},{"action":"逐代記錄不同表型的存活與繁殖比例","equation":"frequency=survivors/total"},{"action":"重跑改變背景的情境，區分選擇證據與模型限制","equation":"selection=environment+variation"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

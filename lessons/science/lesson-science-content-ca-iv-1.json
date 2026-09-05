@@ -339,6 +339,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "mixture-separation-lab",
+      "objective": "依溶解度、粒徑與沸點設計可回收的分離流程。",
+      "predictionPrompt": "食鹽、細砂與水先經過哪個操作，才能避免鹽與砂一起回收？",
+      "steps": [
+        {"action":"依粒徑先過濾砂與鹽水","equation":"residue=sand"},
+        {"action":"蒸發或蒸餾鹽水並比較回收物","equation":"recovery=mass_out/mass_in"},
+        {"action":"檢查各成分純度與流程損失","equation":"loss=mass_in-mass_out"}
+      ]
+    }
   }
 }

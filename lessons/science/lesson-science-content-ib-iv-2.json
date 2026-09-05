@@ -313,6 +313,7 @@
     "model": "general",
     "goal": "用兩站氣壓、距離與海陸溫差資料預測風向，再檢查氣壓梯度模型的限制。",
     "mission": "你是校園氣象觀測員，要依同一高度的兩站氣壓與距離判斷基本風向，並用海陸風實測資料修正模型。",
+    "learningDesign":{"type":"pressure-gradient-wind","objective":"以等高氣壓差、距離與海陸風資料推論風向並檢查模型假設。","predictionPrompt":"同高度兩站氣壓差增大時，基本風向與風速可能如何改變？","steps":[{"action":"在地圖標記兩站氣壓與連線方向","equation":"gradient=delta-pressure/distance"},{"action":"沿壓力梯度繪製由高壓指向低壓的初始風向","equation":"wind\u2190pressure-gradient"},{"action":"加入海陸溫差與實測風向修正解釋","equation":"wind=gradient+local-heating"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

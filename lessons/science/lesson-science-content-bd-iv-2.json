@@ -318,6 +318,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "carbon-budget-lab",
+      "objective": "區分碳庫與通量，依一致時間尺度計算淨碳收支。",
+      "predictionPrompt": "提高森林光合作用但保留呼吸與分解時，哪個碳庫會如何變化？請先預測。",
+      "steps": [
+        {"action":"標記大氣、森林、土壤與海洋碳庫","equation":"stock_next=stock+inflow-outflow"},
+        {"action":"調整光合作用、呼吸與燃燒通量","equation":"net_flux=inflow-outflow"},
+        {"action":"切換一天與一年尺度並記錄限制","equation":"rate=amount/time"}
+      ]
+    }
   }
 }

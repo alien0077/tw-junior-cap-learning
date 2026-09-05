@@ -238,6 +238,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "organism-hierarchy-lab",
+      "objective": "依組成與功能排列多細胞生物的層次並追蹤分工。",
+      "predictionPrompt": "若組織層次的細胞停止合作，器官功能會出現什麼變化？",
+      "steps": [
+        {"action":"排列細胞、組織、器官、器官系統與個體","equation":"level_next=parts+coordination"},
+        {"action":"為每層配對功能與物質交換","equation":"function=structure+interaction"},
+        {"action":"移除一層並記錄依賴關係","equation":"impact=dependencies\u00d7missing_level"}
+      ]
+    }
   }
 }

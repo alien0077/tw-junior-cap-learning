@@ -318,6 +318,7 @@
     "model": "general",
     "goal": "沿著傷口到淋巴結，再到抗體與免疫記憶的路徑，辨認不同防禦層級及其證據。",
     "mission": "在人體防禦路徑圖中追蹤擦傷後的組織液與免疫反應，再比較第一次和再次遇到相同抗原時的反應。",
+    "learningDesign":{"type":"immune-response-pathway","objective":"以時間線、細胞角色與抗原資料區分先天防禦和具有記憶的特異性反應。","predictionPrompt":"同一抗原第二次進入時，哪些反應可能更快，哪些證據仍不足以判斷保護效果？","steps":[{"action":"依序放置皮膚屏障、發炎、吞噬與抗體反應卡","equation":"defense=barrier+innate+adaptive"},{"action":"比較首次與再次暴露的反應時間和細胞角色","equation":"response=time+cell+antigen"},{"action":"加入疫苗或免疫缺陷情境，標出模型可推論範圍","equation":"protection=evidence\u002bcontext"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/PageSyllabus?fid=177",
       "https://tpack.nani.com.tw/nani_content?a=75&b=2",

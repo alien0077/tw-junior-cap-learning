@@ -47,7 +47,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "kanghsuan",
@@ -65,45 +65,80 @@
       ],
       "outcome": "公開出版社資源提供社會資料判讀與公民素養的單元節奏與活動節點；本課依「歷 La-Ⅳ-1：中華人民共和國建立」重新安排自編正文、示例、練習、遷移與檢核。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中社會公開可取得範圍",
+      "subject": "social",
+      "chapterLocator": "本單元；公開資料僅作單元定位",
+      "sourceUrl": "https://www.nani.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-04",
+      "researchScope": ["concept-progression","assessment-pattern"],
+      "outcome": "以本單元的概念脈絡建立時序、資料判讀與證據限制；未重述未公開的出版社全文。",
+      "copyrightBoundary": "只採公開定位與教學方向；正文、史料情境、活動與檢核均為自編。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中社會公開樣書與索引",
+      "subject": "social",
+      "chapterLocator": "本單元；公開資料可核對資料閱讀方向",
+      "sourceUrl": "https://website.hle.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-04",
+      "researchScope": ["concept-progression","activity-pattern","assessment-pattern"],
+      "outcome": "以公開索引可核對的資料閱讀方向補入多觀點與對讀；不將索引誤寫成出版社全文。",
+      "copyrightBoundary": "不複製樣書文字、圖片、題目或答案，所有內容均重新撰寫。"
     }
   ],
+  "versionResearch": [
+    {"publisher":"nani","sourceLocator":"https://www.nani.com.tw/","reviewedAt":"2026-09-04","findings":{"concepts":["由內戰結束、政權建立與制度落實的時序理解國家形成"],"representations":["時間軸、地圖、資料表"],"examplesOrEvidence":["自編中華人民共和國建立史料組"],"misconceptions":["把單一來源或單一群體經驗當成完整歷史"],"assessmentEmphasis":["標示來源、時間、尺度並說明推論限制"]}},
+    {"publisher":"kanghsuan","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/j/geography_page.html?l1=7%上","reviewedAt":"2026-09-04","findings":{"concepts":["以時間軸、政治文件與地方生活資料比較中央決策和社會影響"],"representations":["位置圖、時序圖與角色比較"],"examplesOrEvidence":["自編中華人民共和國建立資料判讀"],"misconceptions":["把制度、文化或群體視為固定不變"],"assessmentEmphasis":["比較不同資料的觀點與證據力"]}},
+    {"publisher":"hanlin","sourceLocator":"https://website.hle.com.tw/market/jr/教材/教材樣書/","reviewedAt":"2026-09-04","findings":{"concepts":["以中央、地方與不同群體的尺度交叉，避免把建立日等同於所有制度立即改變"],"representations":["史料、空間圖與多觀點對讀"],"examplesOrEvidence":["自編中華人民共和國建立觀點對讀"],"misconceptions":["把後來的名稱或傳說直接當成當時事實"],"assessmentEmphasis":["提出證據、解釋因果並指出資料缺口"]}}
+  ],
+  "fusionRecord": {
+    "commonCore":["三版本均將中華人民共和國建立放在時序、資料判讀與人群互動的脈絡中，要求由證據而非關鍵字作答。"],
+    "versionDifferences":["南一公開資料提供單元定位與概念脈絡；康軒公開資源較適合圖像、尺度或活動入口；翰林公開索引較適合史料與多觀點閱讀。完整教科書內容未公開，未將索引誤寫成出版社原文。"],
+    "originalAdditions":["從一張 1949 年前後的公告與家庭路線圖切入，區分政權宣告與居民經驗。","以自編資料組進行來源、時序、觀點與限制的四欄判讀。","將本課方法遷移到地方展覽、家族記憶或新聞資料，要求學習者區分事實、推論與待查事項。"],
+    "llmSynthesisNote":"依官方十二年國教社會領域課綱與 kg-social-content-hist-la-iv-1，交叉閱讀南一、康軒、翰林目前可取得的公開定位與教學線索後，重新以本單元專屬入口、證據任務與多元觀點寫成原創六段教學；不複製出版社文字、圖片、題目或答案，研究限制已明載，維持 draft。"
+  },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
         "heading": "從公共議題進入「歷 La-Ⅳ-1：中華人民共和國建立」",
-        "body": "先找一個與「歷 La-Ⅳ-1：中華人民共和國建立」相連的生活議題，辨認涉及哪些人、地方、時間與資源。把事件描述和自己的評價分開，列出需要查證的問題；社會學習不是背零散年代或名詞，而是理解人群如何在制度與環境中做選擇。"
+        "body": "從一張 1949 年前後的城市公告與家庭遷徙路線圖開始：政權更替如何改變戶籍、工作與安全？先分開政治宣告和居民經驗，再提出可查證的建立問題。"
       },
       {
         "id": "explain",
         "phase": "explain",
         "heading": "用史料、地圖與制度理解關係",
-        "body": "本單元依官方課綱所列的「中華人民共和國建立」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "body": "中華人民共和國建立涉及內戰結束、政權組織、土地與社會政策、國際承認及地方治理；宣告成立不代表制度立即在各地一致落實。分析要區分中央文件、地方執行與不同群體的生活轉變。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
         "heading": "自編資料題：從證據形成解釋",
-        "body": "以「歷 La-Ⅳ-1：中華人民共和國建立」為主題，讀兩段自編資料並製作「來源—時間—直接資訊—推論—限制」五欄表；先回答資料顯示什麼，再說明何種證據才能支持因果或價值判斷。"
+        "body": "比較自編的成立公告與農民口述：公告描述新制度，口述記錄土地分配、家庭分離與地方秩序變動。先核對日期、作者與地點，再判斷哪些是直接證據；還需查城市、少數族群與未參與政治者。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
         "heading": "四步判讀社會資料",
-        "body": "針對「中華人民共和國建立」先標來源、時間、尺度與直接資訊，再分開寫推論與價值判斷；比較至少兩種解釋，指出需要補查的資料與受影響群體。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "小組把戰事、公告、土地、戶籍與國際承認卡排成時間線；每張卡標出決策者與受影響者，再由另一組找出把中央宣告當成全民共識的漏洞。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
         "heading": "把分析方法用於現在",
-        "body": "將「歷 La-Ⅳ-1：中華人民共和國建立」的分析框架套用到當代新聞、校園規則或地方環境問題，重新確認利害關係人、權利義務與可行方案。比較不同方案的成本、受益與風險，說明你的選擇依據，並提出一個能被公共討論或資料驗證的後續問題。"
+        "body": "把建立—執行—生活框架用於今日政權交接或土地政策新聞：比較法規、統計、地方公告與居民訪談，檢查制度承諾如何落地，並以公開資料驗證。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
         "heading": "成為負責任的資料讀者",
-        "body": "完成後回顧：我使用了哪些一手或二手資料、哪個觀點可能被忽略、結論的適用範圍在哪裡。再用一句話總結「歷 La-Ⅳ-1：中華人民共和國建立」如何連結個人生活與公共制度，並檢查引用、地圖方向、時間順序與用詞是否精確。"
+        "body": "最後核對 1949 前後的事件日期、地名與政策範圍，將『人民一致支持』改成有證據與限制的敘述。指出哪些群體沒有留下聲音，標示仍待查證之處。"
       }
     ],
     "summary": [
@@ -127,7 +162,7 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
+  "reviewStatus": "draft",
   "updatedAt": "2026-08-27",
   "lessonScope": "learning-content"
 }

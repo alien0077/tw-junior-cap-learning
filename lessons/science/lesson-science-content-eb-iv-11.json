@@ -328,6 +328,7 @@
     "model": "general",
     "goal": "操作質量、初末速度、平均力與作用時間，建立 J=FΔt=Δp 並辨識方向與平均值。",
     "mission": "你是碰撞安全測試員，請讓小車從指定速度停下，先預測動量改變，再用不同緩衝時間比較平均力。",
+    "learningDesign":{"type":"collision-impulse-safety","objective":"以動量改變、作用時間與平均力資料評估碰撞緩衝設計。","predictionPrompt":"若小車初速度相同，延長停止時間會如何影響平均力？碰撞前後哪些量需要量測？","steps":[{"action":"記錄質量與碰撞前後速度，計算動量變化","equation":"momentum=m\u00d7v"},{"action":"替換泡棉、氣囊或斜坡延長停止時間","equation":"impulse=force\u00d7time=delta-p"},{"action":"比較平均力與安全規格，指出摩擦和量測誤差","equation":"average-force=delta-p\u002ftime"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

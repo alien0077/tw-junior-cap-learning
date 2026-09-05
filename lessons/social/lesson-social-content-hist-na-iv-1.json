@@ -47,7 +47,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "kanghsuan",
@@ -65,45 +65,75 @@
       ],
       "outcome": "公開出版社資源提供社會資料判讀與公民素養的單元節奏與活動節點；本課依「歷 Na-Ⅳ-1：非洲西亞早期文化」重新安排自編正文、示例、練習、遷移與檢核。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一版國中社會公開可取得範圍",
+      "subject": "social",
+      "chapterLocator": "歷 Na-Ⅳ-1：非洲西亞早期文化；公開資料以單元定位與課綱脈絡為限",
+      "sourceUrl": "https://www.nani.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-04",
+      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "以河流環境、城市組織、文字記錄與權力關係建立本單元的概念順序，並將史料限制納入教學。",
+      "copyrightBoundary": "只採公開定位與教學方向；正文、史料情境、活動與檢核均為自編。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中社會公開樣書與索引",
+      "subject": "social",
+      "chapterLocator": "歷 Na-Ⅳ-1：非洲西亞早期文化；公開索引可核對資料閱讀方向",
+      "sourceUrl": "https://website.hle.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-04",
+      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
+      "outcome": "以物質遺跡、文字史料和多元群體對讀補足文明形成的證據邊界，避免單一路線敘事。",
+      "copyrightBoundary": "不複製樣書文字、圖片、題目或答案，所有內容均重新撰寫。"
     }
   ],
+  "versionResearch": [
+    {"publisher":"nani","sourceLocator":"https://www.nani.com.tw/","reviewedAt":"2026-09-04","findings":{"concepts":["河流環境、農業剩餘、城市與文字制度彼此連動"],"representations":["河流位置圖、早期城市時間軸、配給資料表"],"examplesOrEvidence":["自編灌溉渠、糧倉泥板與聚落遺跡資料組"],"misconceptions":["把自然環境直接當成文明唯一原因"],"assessmentEmphasis":["由多種證據建立因果，並說明推論範圍"]}},
+    {"publisher":"kanghsuan","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/j/geography_page.html?l1=7%上","reviewedAt":"2026-09-04","findings":{"concepts":["兩河、尼羅河與東地中海的環境差異造成不同的組織與交流路徑"],"representations":["位置圖、因果網絡、史料對讀"],"examplesOrEvidence":["自編糧倉記錄與神廟銘文對照"],"misconceptions":["把王權或宗教記錄當成所有人的共同經驗"],"assessmentEmphasis":["辨識來源、用途、觀點與資料缺口"]}},
+    {"publisher":"hanlin","sourceLocator":"https://website.hle.com.tw/market/jr/教材/教材樣書/","reviewedAt":"2026-09-04","findings":{"concepts":["文字、法律、宗教、貿易與治理需放在具體時空中理解"],"representations":["遺址圖、文字史料、多群體觀點表"],"examplesOrEvidence":["自編居住區、墓葬與行政記錄的交叉判讀"],"misconceptions":["以後世文明名稱或單一遺跡代表整個非洲西亞"],"assessmentEmphasis":["分開事實、推論與後世詮釋"]}}
+  ],
+  "fusionRecord": {"commonCore":["三版本均將非洲西亞早期文化放在環境、聚落、制度與資料判讀的連動脈絡中。","三版本均要求從圖像、文字或遺跡線索理解人群組織，而非只背文明名稱。"],"versionDifferences":["南一公開資料可支撐概念順序與環境脈絡；康軒公開資源偏向圖像、活動與資料對讀；翰林公開索引可補充多觀點和證據邊界。完整教科書內容未公開，未將索引誤寫成原文。"],"originalAdditions":["以灌溉渠與泥板的問題情境切入，串起水、糧食、文字與權力。","建立證據—推論—限制三層記錄，讓學生檢查單一遺跡不能代表整個文明。","把環境—制度—社會框架遷移到當代水資源治理。"],"llmSynthesisNote":"依官方十二年國教社會領域課綱與 kg-social-content-hist-na-iv-1，交叉閱讀南一、康軒、翰林目前可取得的公開定位與教學線索後，以自己的話重新設計本單元六段原創教學；不複製出版社文字、圖片、題目或答案，研究限制已明載，維持 draft。"},
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
         "heading": "從公共議題進入「歷 Na-Ⅳ-1：非洲西亞早期文化」",
-        "body": "先找一個與「歷 Na-Ⅳ-1：非洲西亞早期文化」相連的生活議題，辨認涉及哪些人、地方、時間與資源。把事件描述和自己的評價分開，列出需要查證的問題；社會學習不是背零散年代或名詞，而是理解人群如何在制度與環境中做選擇。"
+        "body": "從兩河流域的一道灌溉渠與一枚泥板開始：水、文字與糧食如何讓城市組織起來？先標出勞動者、管理者與受益地區，再提出一個能用考古證據檢驗的問題。"
       },
       {
         "id": "explain",
         "phase": "explain",
         "heading": "用史料、地圖與制度理解關係",
-        "body": "本單元依官方課綱所列的「非洲西亞早期文化」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "body": "非洲西亞早期文化包含農業與城市、文字與法律、宗教、貿易及帝國治理；尼羅河、兩河與東地中海環境不同，發展路徑也不同。分析要把物質遺跡、文字記錄與後世詮釋分開。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
         "heading": "自編資料題：從證據形成解釋",
-        "body": "以「歷 Na-Ⅳ-1：非洲西亞早期文化」為主題，對照兩段自編史料摘要與一條時間軸；先標出作者、年代、立場與直接訊息，再排列事件因果的可能鏈條，並指出哪些說法仍需其他史料交叉驗證。"
+        "body": "比較自編的糧倉泥板與神廟奉獻銘文：泥板列配給與勞動，銘文強調王權與神意。先核對年代、記錄者與用途，再判斷城市組織如何運作；還需查居住區、墓葬與非精英聲音。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
         "heading": "四步判讀社會資料",
-        "body": "針對「非洲西亞早期文化」先標來源、時間、尺度與直接資訊，再分開寫推論與價值判斷；比較至少兩種解釋，指出需要補查的資料與受影響群體。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "小組用水源、糧食、文字、祭祀與貿易卡建立城市因果網絡；每條連線標出證據與推測，交換後由另一組找出把單一遺跡推成整個文明的漏洞。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
         "heading": "把分析方法用於現在",
-        "body": "將「歷 Na-Ⅳ-1：非洲西亞早期文化」的分析框架套用到當代新聞、校園規則或地方環境問題，重新確認利害關係人、權利義務與可行方案。比較不同方案的成本、受益與風險，說明你的選擇依據，並提出一個能被公共討論或資料驗證的後續問題。"
+        "body": "把環境—制度—社會框架用於今日水資源與城市治理：比較水權、基礎設施、農民與居民資料，分析誰取得用水、誰承擔污染，並以公開監測驗證。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
         "heading": "成為負責任的資料讀者",
-        "body": "完成後回顧：我使用了哪些一手或二手資料、哪個觀點可能被忽略、結論的適用範圍在哪裡。再用一句話總結「歷 Na-Ⅳ-1：非洲西亞早期文化」如何連結個人生活與公共制度，並檢查引用、地圖方向、時間順序與用詞是否精確。"
+        "body": "最後核對遺址年代、河流位置與文字翻譯，將『文明起源』改成有範圍的證據敘述。指出奴隸、婦女與鄉村人口在資料中的缺席，標示限制。"
       }
     ],
     "summary": [
@@ -127,7 +157,7 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
+  "reviewStatus": "draft",
   "updatedAt": "2026-08-27",
   "lessonScope": "learning-content"
 }

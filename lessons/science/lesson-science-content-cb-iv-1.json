@@ -331,6 +331,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "particle-formula-lab",
+      "objective": "把化學式拆成元素種類、原子數與粒子模型。",
+      "predictionPrompt": "H2O 的下標改變時，哪個粒子數量會改變？",
+      "steps": [
+        {"action":"拖曳元素卡組成化學式","equation":"atom_count=sum(subscripts)"},
+        {"action":"切換分子與原子視圖並核對比例","equation":"ratio=particles/units"},
+        {"action":"比較不同化學式的元素種類與總數","equation":"elements=set(symbols)"}
+      ]
+    }
   }
 }

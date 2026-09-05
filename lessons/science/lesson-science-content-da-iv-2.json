@@ -273,6 +273,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "cell-organization-card-lab",
+      "objective": "以層次與分工模型解釋細胞到個體的組織。",
+      "predictionPrompt": "多細胞生物失去一種專門細胞時，哪個層次的功能會先受影響？",
+      "steps": [
+        {"action":"排列細胞、組織、器官與個體卡","equation":"organism=systems+coordination"},
+        {"action":"比較單細胞與多細胞的功能分工","equation":"specialization=division_of_labor"},
+        {"action":"移除一張細胞卡並追蹤連鎖結果","equation":"effect=dependency\u00d7loss"}
+      ]
+    }
   }
 }

@@ -254,6 +254,7 @@
     "model": "general",
     "goal": "透過雨水回收方案的可調參數，觀察科學證據、工程取捨與社會條件如何彼此影響。",
     "mission": "學生扮演校園改造小組，調整集水面積、儲水桶容量、過濾等級與維護預算；系統同步顯示可供水量、能源／成本、衛生風險與不同使用者的滿意度，不涉及飲用水實作。",
+    "learningDesign":{"type":"school-water-system-decision","objective":"以供水量、儲能、衛生風險與公平指標評估校園集水方案。","predictionPrompt":"增加儲水桶不一定增加可用水量，哪些降雨、過濾與維護條件會成為限制？","steps":[{"action":"設定集水面積、雨量、桶容量與使用需求基準","equation":"harvest=area\u00d7rainfall\u00d7coefficient"},{"action":"調整過濾等級與維護預算並追蹤能源及衛生指標","equation":"safety=f(filter,maintenance)"},{"action":"比較不同使用者效益與成本分配後修正方案","equation":"score=water-cost-risk-equity"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

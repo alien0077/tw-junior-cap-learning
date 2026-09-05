@@ -312,6 +312,7 @@
     "model": "general",
     "goal": "用觀察卡建立二分檢索表，依形態與構造證據辨識生物，並在資料不足時回報限制。",
     "mission": "你是校園池塘調查員，手上有四張沒有名稱的生物觀察卡；請選擇互斥特徵、追蹤分類路徑，最後檢查規則能否被別人重做。",
+    "learningDesign":{"type":"classification-key-builder","objective":"以可觀察且互斥的特徵建立可重做的生物分類檢索表。","predictionPrompt":"若新增一張具混合特徵的觀察卡，哪個分支需要補充才能保持分類互斥？","steps":[{"action":"從生物卡記錄形態、構造與生活環境特徵","equation":"feature=observable+repeatable"},{"action":"選兩個互斥特徵建立二分路徑","equation":"key=if/then+exclusive"},{"action":"交換卡片重做分類並檢查例外與限制","equation":"reliability=reproducibility+scope"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

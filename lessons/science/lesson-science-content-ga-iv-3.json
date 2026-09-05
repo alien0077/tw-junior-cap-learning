@@ -316,6 +316,7 @@
     "model": "general",
     "goal": "依表現型、基因型與配子證據推算 ABO 親子血型的可能關係。",
     "mission": "血型推理站收到家族卡：父親 O 型、母親 AB 型。請翻譯基因型、追蹤配子，再檢查哪些子代血型可被模型支持。",
+    "learningDesign":{"type":"blood-type-inheritance","objective":"以等位基因、配子組合與家族資料推導可支持的 ABO 血型。","predictionPrompt":"父親 O 型、母親 AB 型時，子代出現 A、B、AB 或 O 型的可能性如何？","steps":[{"action":"把表現型翻譯成可能基因型並標記顯性關係","equation":"phenotype=f(alleles)"},{"action":"分別列出雙親配子再組合子代基因型","equation":"offspring=gamete1+gamete2"},{"action":"與家族卡比對，區分模型支持與資料不足","equation":"claim=observed\u002dexpected"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/9/doc/1290/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E2%94%80%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://digitalmaster.knsh.com.tw/ju/nature/webgame/B2.html",

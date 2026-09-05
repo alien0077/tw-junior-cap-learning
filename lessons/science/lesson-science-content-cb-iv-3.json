@@ -329,6 +329,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "isomer-structure-lab",
+      "objective": "拼出同分子式的不同連接方式，並以性質資料區分模型。",
+      "predictionPrompt": "同分子式但連接方式不同時，沸點與反應性是否仍相同？",
+      "steps": [
+        {"action":"用原子卡拼出兩個同分子式模型","equation":"formula_A=formula_B"},
+        {"action":"旋轉或重接鍵結並記錄結構差異","equation":"connectivity!=geometry"},
+        {"action":"對照沸點與反應資料排除模型","equation":"evidence=property_match"}
+      ]
+    }
   }
 }

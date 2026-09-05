@@ -334,6 +334,7 @@
     "model": "general",
     "goal": "操作河口保育決策板，從生物多樣性資料辨識威脅，比較保育取捨並提出可追蹤公民行動。",
     "mission": "先核對調查範圍，再比較填平、高架步道、封閉三案，設定指標並依新證據修正決議。",
+    "learningDesign":{"type":"wetland-management-choice","objective":"以水文、生物多樣性、使用需求與成本指標比較濕地管理方案。","predictionPrompt":"高架步道兼顧通行與棲地，但維護成本較高時，如何設定一年後的檢核門檻？","steps":[{"action":"界定濕地範圍並記錄水位、物種與使用基準","equation":"baseline=hydrology+ecology+use"},{"action":"模擬填平、高架、封閉三方案的指標變化","equation":"outcome=f(strategy,season)"},{"action":"依新監測資料調整方案並標示權衡","equation":"decision=benefit-cost-impact"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7等學校-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://tpack.nani.com.tw/nani_content?a=75&b=2",

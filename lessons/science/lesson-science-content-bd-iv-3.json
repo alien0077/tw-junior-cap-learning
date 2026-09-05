@@ -318,6 +318,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "ecosystem-role-lab",
+      "objective": "追蹤生產者、消費者、分解者與非生物因子的連鎖變化。",
+      "predictionPrompt": "移除池塘中的分解者後，養分與生物量會如何變化？",
+      "steps": [
+        {"action":"標記三種生態角色與非生物因子","equation":"matter_return=decomposition"},
+        {"action":"移除或加入一個角色並記錄直接結果","equation":"population_next=population+inflow-outflow"},
+        {"action":"比較池塘、農田與堆肥模型的間接結果","equation":"effect=direct+indirect"}
+      ]
+    }
   }
 }

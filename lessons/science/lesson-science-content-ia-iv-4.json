@@ -309,6 +309,7 @@
     "model": "general",
     "goal": "用自編地圖資料判讀地震與火山的帶狀分布、空間吻合和板塊邊界模型的證據界線。",
     "mission": "你是地球科學資料小組成員，要比較紅色地震點、黑色火山符號與藍色板塊邊界線，提出可被證據支持且標示限制的區域解釋。",
+    "learningDesign":{"type":"geohazard-map-analysis","objective":"以地震、火山與板塊邊界分布圖判讀空間關聯及其推論限制。","predictionPrompt":"若地震與火山都沿板塊邊界集中，這張圖能否單獨預測下一次事件時間？","steps":[{"action":"分層顯示地震點、火山符號與板塊線並記錄分布","equation":"pattern=locations+clusters"},{"action":"以距離與方向比較空間關聯，提出機制假設","equation":"relation=f(distance,boundary)"},{"action":"加入深度與時間資料，區分相關和可預測範圍","equation":"forecast=pattern+time+depth"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

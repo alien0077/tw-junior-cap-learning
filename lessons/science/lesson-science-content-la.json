@@ -250,6 +250,7 @@
     "model": "general",
     "goal": "用花圃食物網模擬觀察資源、捕食與族群數量的連鎖變化，分辨直接和間接作用。",
     "mission": "先固定光照與水分，建立植物—蚜蟲—瓢蟲—螞蟻的初始網絡；每回合只移除一個族群或調整資源，預測下一個變化，再以時間序列檢查預測，最後標註結論能支持的範圍。",
+    "learningDesign":{"type":"food-web-removal-test","objective":"以食物網、資源與移除實驗追蹤族群變化及間接作用。","predictionPrompt":"移除瓢蟲後蚜蟲和植物數量可能如何改變？需要哪些重複或對照？","steps":[{"action":"建立植物、蚜蟲、瓢蟲與螞蟻的初始網絡","equation":"web=nodes+interactions"},{"action":"每回合移除一族群或調整資源並記錄時間序列","equation":"change=f(predation,resource)"},{"action":"與未處理網絡比較，區分直接與間接效應","equation":"effect=treatment-control"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

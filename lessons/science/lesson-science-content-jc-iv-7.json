@@ -321,6 +321,7 @@
     "model": "general",
     "goal": "操作電解水與電解硫酸銅模型，追蹤電源極性、電極反應、離子移動、電子路徑與能量轉換，並以控制變因資料判讀產物。",
     "mission": "在低電壓電解槽中切換電解質、電極材料與通電條件；每次先預測陰陽極產物與粒子方向，再用氣體體積、電極質量和顏色讀值修正模型。",
+    "learningDesign":{"type":"electrolysis-ion-flow","objective":"以電極極性、離子移動與產物資料解釋電解反應。","predictionPrompt":"改變電極極性時，陽離子與陰離子的移動方向及產物會如何改變？","steps":[{"action":"在低電壓槽標記陰極、陽極與溶液離子","equation":"ions=charge+direction"},{"action":"切換電解質並量測氣體體積、電極質量與顏色","equation":"product=f(ion,electrode)"},{"action":"以電子守恆檢查產物比例和安全限制","equation":"charge=electrons-transferred"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

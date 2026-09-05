@@ -276,6 +276,7 @@
     "model": "general",
     "goal": "操作校園資源流模型，觀察每日需求、補充／再利用、污染負荷與公平指標的聯動，最後以證據判斷方案是否能在承載力內長期維持。",
     "mission": "先固定學生人數與模擬天數，分別拖曳每日用水／用電需求、再利用比例與處理負荷；每次只改一個變項，記錄存量曲線與污染警示。接著比較省水設備、灰水再利用與源頭減量三種方案，寫出一個包含條件、取捨和待查資料的結論；不使用危險藥品或高電壓。",
+    "learningDesign":{"type":"school-resource-flow","objective":"以用水用電需求、再利用率與處理負荷評估校園資源方案。","predictionPrompt":"再利用比例提高但處理負荷超過容量時，存量與污染警示會如何變化？","steps":[{"action":"固定學生人數與天數，建立水電需求基準","equation":"demand=users\u00d7daily-use"},{"action":"逐次改變再利用率或處理負荷，記錄存量曲線","equation":"stock=inflow-outflow"},{"action":"比較設備、灰水與源頭減量方案的取捨","equation":"score=resource+cost+risk"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

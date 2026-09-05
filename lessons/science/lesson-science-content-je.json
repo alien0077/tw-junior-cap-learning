@@ -260,6 +260,7 @@
     "model": "general",
     "goal": "用 A2、B2、AB 粒子數曲線同步判讀速率因素與動態平衡。",
     "mission": "先預測升溫、催化路徑與加入 A2 的差異，再在安全模擬器中記錄前段斜率、瞬間跳變與最後平台；不使用危險藥品或高電壓。",
+    "learningDesign":{"type":"reaction-equilibrium-rate","objective":"以濃度、溫度、催化劑與時間曲線區分反應速率和化學平衡。","predictionPrompt":"升高溫度與加入催化劑都可能改變曲線，如何判斷它們影響的是速率還是平衡位置？","steps":[{"action":"固定反應物量並記錄前段斜率與平台","equation":"rate=delta-concentration/time"},{"action":"分別加入催化劑、升溫或增加 A2 比較曲線","equation":"equilibrium=forward-reverse"},{"action":"用粒子數與能量資料檢查模型及測量限制","equation":"evidence=curve+particle"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

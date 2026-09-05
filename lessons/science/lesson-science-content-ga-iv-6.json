@@ -321,6 +321,7 @@
     "model": "general",
     "goal": "用孟德爾豌豆研究的資料與模型，追蹤研究設計、分離律、比例證據與模型限制。",
     "mission": "你是修道院花園的研究紀錄員，手上有親本、F1、F2 與性狀數量卡片；請依序判斷哪些資料能支持遺傳模型，並在結論中保留條件。",
+    "learningDesign":{"type":"mendelian-cross-analysis","objective":"以親本、F1、F2 比例資料檢驗分離與獨立分配模型。","predictionPrompt":"若 F1 皆呈顯性性狀，F2 的隱性比例應如何預測？實際偏差可能來自什麼？","steps":[{"action":"從親本表現型推測基因型與配子","equation":"parent=genotype+gametes"},{"action":"建立 F1、F2 交配方格並計算預期比例","equation":"ratio=outcomes/total"},{"action":"將實測數量與預期比較，檢查樣本量與環境限制","equation":"deviation=observed\u002dexpected"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://trans.nani.com.tw/s3/nanibooks/86860358-7f78-4cc6-a2e5-af76844c3695.pdf",

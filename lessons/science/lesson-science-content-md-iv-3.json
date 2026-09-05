@@ -316,6 +316,7 @@
     "model": "general",
     "goal": "透過路徑、地形與潮位的互動調整，判讀狂風、豪雨與暴潮的複合風險。",
     "mission": "請操作自編三地颱風案例，依序辨認機制、配對證據，再決定哪項防災警戒需要優先調整。",
+    "learningDesign":{"type":"typhoon-mechanism-warning","objective":"以風雨、地形與警戒門檻資料比較颱風機制和防災優先序。","predictionPrompt":"同一颱風影響三地時，為何警戒門檻與優先行動可能不同？","steps":[{"action":"整理三地風速、雨量、坡度與人口暴露","equation":"risk=hazard\u00d7exposure\u00d7vulnerability"},{"action":"將颱風位置與地形機制連到警戒指標","equation":"warning=f(mechanism,threshold)"},{"action":"加入新資料後調整警戒並標示不確定性","equation":"decision=update+evidence"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

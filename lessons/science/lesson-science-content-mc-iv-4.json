@@ -312,6 +312,7 @@
     "model": "general",
     "goal": "透過選材審議追蹤材料特性、製造流程、用途條件與使用後限制。",
     "mission": "學校要選擇可重複使用的 500 mL 飲水容器，請依證據完成材料比較與條件式推薦。",
+    "learningDesign":{"type":"container-material-comparison","objective":"以容量、耐熱、清洗、耐用與生命週期資料比較飲水容器。","predictionPrompt":"輕量塑膠、玻璃與金屬各有優缺點，哪組測試最能支持校園使用推薦？","steps":[{"action":"固定 500 mL 容量並列出安全與功能需求","equation":"spec=capacity+use"},{"action":"量測耐熱、跌落、清洗與重複使用表現","equation":"performance=f(material,cycles)"},{"action":"整合製造、使用與回收影響後給條件式建議","equation":"recommendation=benefit-impact"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

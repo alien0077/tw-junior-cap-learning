@@ -313,6 +313,7 @@
     "model": "general",
     "goal": "用半球、氣壓中心與四站風向資料重建高低氣壓的近地面旋轉，並指出模型限制。",
     "mission": "你是氣象觀測小組，收到一張沒有標示旋轉方向的地面天氣圖；請先讀取等壓線與四站風向，再利用氣壓梯度力、科氏力與摩擦的模型完成判斷。",
+    "learningDesign":{"type":"synoptic-wind-vector","objective":"以等壓線、風向觀測與三種力的向量模型判讀天氣系統旋轉。","predictionPrompt":"若等壓線更密集但摩擦條件相同，風速與偏轉可能如何變化？","steps":[{"action":"由等壓線間距估算氣壓梯度並繪製向量","equation":"force=pressure-gradient"},{"action":"加入科氏力與摩擦調整四站風向","equation":"wind=gradient+corriolis-friction"},{"action":"比較高低壓旋轉模型與觀測資料，標記半球條件","equation":"rotation=f(hemisphere,forces)"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

@@ -311,6 +311,7 @@
     "model": "general",
     "goal": "用形成時間線、燃料檔案卡與證據權重比較化石燃料的形成、特性與能源選擇。",
     "mission": "你是社區能源資料小組，請從地層線索、燃料組成、分餾資料與排放限制提出有範圍的判斷。",
+    "learningDesign":{"type":"fossil-fuel-composition","objective":"以地層、燃料組成與分餾資料分析化石燃料來源及排放限制。","predictionPrompt":"分餾得到不同沸點組分時，如何連結分子大小、用途與燃燒排放？","steps":[{"action":"讀取地層與有機物來源線索，建立形成假設","equation":"resource=source+geology"},{"action":"比較沸點、組成與分餾產物用途","equation":"fraction=f(boiling-point)"},{"action":"加入排放係數與替代燃料，評估限制","equation":"emission=f(carbon,energy)"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/9/doc/1290/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E2%94%80%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://tpack.nani.com.tw/nani_content?a=75&b=2",

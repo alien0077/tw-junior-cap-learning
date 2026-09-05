@@ -312,6 +312,7 @@
     "model": "general",
     "goal": "沿著電流路徑判讀校園用電情境中的過載、短路、漏電與安全處置。",
     "mission": "依序檢查外觀、環境、同時負載、額定條件與保護裝置，選出有證據且不鼓勵危險操作的行動。",
+    "learningDesign":{"type":"electrical-safety-decision","objective":"以額定值、負載、環境與保護裝置資料判斷用電安全行動。","predictionPrompt":"多個設備同時使用導致總電流接近額定值時，應先採取哪些可逆且安全的措施？","steps":[{"action":"讀取設備額定電壓、功率與線路保護規格","equation":"current=power/voltage"},{"action":"疊加同時負載並檢查過熱與保護門檻","equation":"total=current1+current2"},{"action":"比較拔除、分路或請專業人員檢查等方案","equation":"safety=load+environment+protection"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://www.nani-jr.com/",

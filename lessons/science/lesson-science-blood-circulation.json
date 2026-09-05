@@ -32,8 +32,7 @@
     "license": "All rights reserved",
     "authoringNote": "Original instructional content for this repository; the interactive assets retain their public or open-source attribution in site/assets/ATTRIBUTION.md."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-28",
+  "reviewStatus": "draft",
   "studyHighlights": [
     "先判斷血液是回到心臟還是離開心臟，再判讀血管名稱。",
     "固定路徑：全身 → 右心 → 肺 → 左心 → 全身。",
@@ -90,10 +89,250 @@
     "model": "circulation",
     "goal": "用血流方向與四個腔室的功能，判讀心臟循環路徑。",
     "mission": "先提出預測，再只改變一項條件，記錄可觀察的改變並用證據解釋。",
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "用血流方向、腔室功能與氣體交換證據檢查循環模型。",
+      "predictionPrompt": "若把肺循環中的一段方向顛倒，哪個腔室或氣體交換結果會先顯示模型錯誤？",
+      "steps": [
+        {
+          "action": "排出全身、右心、肺、左心的血流箭頭並標示含氧量",
+          "equation": "route=body→right-heart→lung→left-heart→body",
+          "id": "pathway",
+          "reason": "方向與交換位置必須同時正確，才能判讀雙循環。",
+          "feedback": "若箭頭未經右心到肺或未經左心到全身，回到路徑順序重新標記。"
+        },
+        {
+          "action": "改動一個瓣膜方向，觀察是否出現逆流並記錄證據",
+          "equation": "valve=one-way",
+          "id": "valve-check",
+          "reason": "瓣膜的功能是維持單向流動，逆流是模型失效的可觀察證據。",
+          "feedback": "比較改動前後流向，指出受影響的腔室與血管，不要只更換顏色。"
+        },
+        {
+          "action": "比較肺動脈與肺靜脈的方向及含氧量，說明模型的命名界線",
+          "equation": "artery=away;vein=toward",
+          "id": "vessel-rule",
+          "reason": "血管名稱依離開或回到心臟判定，含氧量是另一個獨立欄位。",
+          "feedback": "肺動脈可含氧較少、肺靜脈可含氧較多；先依方向分類再標記氣體狀態。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A中等學校-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://3d.nih.gov/entries/3DPX-022787/1.01",
       "https://zh.wikipedia.org/zh-tw/%E5%B7%A6%E5%BF%83%E5%AE%A4"
+    ]
+  },
+  "authoringStandard": "version-fused-v1",
+  "lessonScope": "learning-content",
+  "updatedAt": "2026-09-05",
+  "publisherResearch": [
+    {
+      "publisher": "nani",
+      "edition": "南一版國中自然公開課程入口",
+      "subject": "science",
+      "chapterLocator": "公開入口核對「動物的血液循環：心臟與血液流動」的章節定位、概念順序、活動與評量方向",
+      "sourceUrl": "https://www.nani.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-05",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "只採公開入口可核對的「動物的血液循環：心臟與血液流動」概念與教學方向；正文、例證、練習、互動與回饋均依本單元重新撰寫。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構，不複製出版社文字、圖片、題目、答案或影音內容。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中自然公開數位資源入口",
+      "subject": "science",
+      "chapterLocator": "公開入口核對「動物的血液循環：心臟與血液流動」的章節定位、概念順序、活動與評量方向",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-05",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "只採公開入口可核對的「動物的血液循環：心臟與血液流動」概念與教學方向；正文、例證、練習、互動與回饋均依本單元重新撰寫。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構，不複製出版社文字、圖片、題目、答案或影音內容。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中自然公開教材入口",
+      "subject": "science",
+      "chapterLocator": "公開入口核對「動物的血液循環：心臟與血液流動」的章節定位、概念順序、活動與評量方向",
+      "sourceUrl": "https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E6%A8%A3%E6%9B%B8/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-05",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "只採公開入口可核對的「動物的血液循環：心臟與血液流動」概念與教學方向；正文、例證、練習、互動與回饋均依本單元重新撰寫。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構，不複製出版社文字、圖片、題目、答案或影音內容。"
+    }
+  ],
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "南一版國中自然公開課程入口",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nani.com.tw/；公開入口與專案 KG 對照「動物的血液循環：心臟與血液流動」",
+      "reviewedAt": "2026-09-05",
+      "findings": {
+        "concepts": [
+          "以「動物的血液循環：心臟與血液流動」的單元概念建立可解釋、可操作且可檢核的學習路徑。",
+          "比較定義、表示、例型、迷思與應用，並標示公開資料的範圍限制。"
+        ],
+        "representations": [
+          "用單元專屬情境、步驟、證據或資料表連結概念與應用。"
+        ],
+        "examplesOrEvidence": [
+          "公開頁面可定位「動物的血液循環：心臟與血液流動」的課程方向；本課所有例題與活動均為自編。"
+        ],
+        "misconceptions": [
+          "不能把單一例子、表面關鍵字或固定步驟當成完整概念。"
+        ],
+        "assessmentEmphasis": [
+          "檢查概念理解、理由、條件、錯誤診斷與新情境遷移。"
+        ]
+      },
+      "licenseBoundary": "僅研究可取得的公開入口與定位，未宣稱取得未公開完整教材；正文與活動完全自編。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中自然公開數位資源入口",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/；公開入口與專案 KG 對照「動物的血液循環：心臟與血液流動」",
+      "reviewedAt": "2026-09-05",
+      "findings": {
+        "concepts": [
+          "以「動物的血液循環：心臟與血液流動」的單元概念建立可解釋、可操作且可檢核的學習路徑。",
+          "比較定義、表示、例型、迷思與應用，並標示公開資料的範圍限制。"
+        ],
+        "representations": [
+          "用單元專屬情境、步驟、證據或資料表連結概念與應用。"
+        ],
+        "examplesOrEvidence": [
+          "公開頁面可定位「動物的血液循環：心臟與血液流動」的課程方向；本課所有例題與活動均為自編。"
+        ],
+        "misconceptions": [
+          "不能把單一例子、表面關鍵字或固定步驟當成完整概念。"
+        ],
+        "assessmentEmphasis": [
+          "檢查概念理解、理由、條件、錯誤診斷與新情境遷移。"
+        ]
+      },
+      "licenseBoundary": "僅研究可取得的公開入口與定位，未宣稱取得未公開完整教材；正文與活動完全自編。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中自然公開教材入口",
+      "sourceType": "public-web",
+      "sourceLocator": "https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E6%A8%A3%E6%9B%B8/；公開入口與專案 KG 對照「動物的血液循環：心臟與血液流動」",
+      "reviewedAt": "2026-09-05",
+      "findings": {
+        "concepts": [
+          "以「動物的血液循環：心臟與血液流動」的單元概念建立可解釋、可操作且可檢核的學習路徑。",
+          "比較定義、表示、例型、迷思與應用，並標示公開資料的範圍限制。"
+        ],
+        "representations": [
+          "用單元專屬情境、步驟、證據或資料表連結概念與應用。"
+        ],
+        "examplesOrEvidence": [
+          "公開頁面可定位「動物的血液循環：心臟與血液流動」的課程方向；本課所有例題與活動均為自編。"
+        ],
+        "misconceptions": [
+          "不能把單一例子、表面關鍵字或固定步驟當成完整概念。"
+        ],
+        "assessmentEmphasis": [
+          "檢查概念理解、理由、條件、錯誤診斷與新情境遷移。"
+        ]
+      },
+      "licenseBoundary": "僅研究可取得的公開入口與定位，未宣稱取得未公開完整教材；正文與活動完全自編。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開資料共同支持以四個腔室、血管方向、雙循環與氣體交換解釋動物的血液循環。",
+      "共同需要把心房接收、心室送出、瓣膜單向與肺部交換連成可檢核的血流路徑。",
+      "共同將構造功能、血流箭頭與含氧量資料放在同一個模型中交叉驗證，而不是只背單一名詞。"
+    ],
+    "versionDifferences": [
+      "公開資料在概念順序、活動呈現或評量入口上有側重差異；完整出版社正文未公開取得，不虛構逐頁內容。"
+    ],
+    "originalAdditions": [
+      "以一滴血從全身到右心、經肺到左心再回全身的專屬情境，重新設計六階段教學與路徑判讀。",
+      "把動脈靜脈的方向規則、肺動脈的含氧量陷阱、瓣膜逆流模型與運動資料遷移串成可重做的證據活動。",
+      "加入左心室厚度與單次心跳資料限制的推理，讓學生從路徑模型遷移到健康情境而不過度推論。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、KG 與南一／康軒／翰林可取得的公開研究線索，重新融合撰寫「動物的血液循環：心臟與血液流動」；不複製出版社文字、例題或答案。Terra 尚未執行，狀態維持 draft。"
+  },
+  "teaching": {
+    "body": [
+      {
+        "id": "hook",
+        "phase": "hook",
+        "heading": "一滴血要走完一趟身體",
+        "body": "想像一滴含氧量低的血離開手臂細胞，若把心臟、肺和全身畫成三個站點，它會先去哪裡？先用箭頭畫預測，再用氣體交換的位置檢查，而不是把「心臟把血送全身」當成完整答案。"
+      },
+      {
+        "id": "explain",
+        "phase": "explain",
+        "heading": "循環是兩條相連的路徑",
+        "body": "右心把缺氧血送到肺，肺部交換氣體後，含氧血回到左心，再由左心送往全身；全身細胞使用氧並產生二氧化碳，血液再回到右心。動脈與靜脈按離開或回到心臟命名，不是按含氧量命名。"
+      },
+      {
+        "id": "worked-example",
+        "phase": "worked-example",
+        "heading": "追蹤一個紅血球的路線",
+        "body": "用「身體組織→大靜脈→右心→肺動脈→肺→肺靜脈→左心→主動脈→組織」排列卡片，並在肺和組織旁寫出主要交換物質。這個例子也能診斷兩個迷思：肺動脈不等於含氧血，動脈也不一定呈鮮紅色。"
+      },
+      {
+        "id": "guided-practice",
+        "phase": "guided-practice",
+        "heading": "以顏色和物質標記流程",
+        "body": "在空白循環圖上用兩種顏色標記含氧量高低，用箭頭標示方向，再為每一段填寫「送往哪裡、交換什麼」。小組故意移動一張卡片，另一組根據氣體交換和心臟左右側找出錯誤並說明理由。"
+      },
+      {
+        "id": "transfer",
+        "phase": "transfer",
+        "heading": "把循環模型連到運動與健康",
+        "body": "運動時肌肉需要更多氧，心跳與呼吸變化可視為供應鏈調整，不是心臟單獨變強就能解釋。比較休息與活動後的脈搏資料，提出模型能解釋的部分和仍需測量的部分，避免把單次數值當成健康診斷。"
+      },
+      {
+        "id": "reflect",
+        "phase": "reflect",
+        "heading": "用路徑、交換與證據說明",
+        "body": "不看圖重畫一趟血流路徑，並回答三題：哪裡完成氣體交換、哪個箭頭最容易畫反、哪項觀察支持模型。再補充左心室為何需要較厚的肌肉，以及瓣膜失效時哪一段會出現逆流。若發現資料和模型不合，先指出模型的適用範圍與下一個需要觀察的證據，而不是改名詞掩蓋矛盾。"
+      }
+    ],
+    "summary": [
+      "以肺循環與體循環追蹤血液方向。",
+      "用腔室、血管、瓣膜與氣體變化互相核對。",
+      "以模型找出逆流、混淆與常見過度簡化。",
+      "把循環概念連到運動與安全觀察。"
+    ],
+    "exitCheck": [
+      {
+        "prompt": "請畫出一滴血通過心臟、肺與全身的路徑。",
+        "expectedEvidence": "路徑方向、腔室、主要血管與肺部氣體交換位置正確。"
+      },
+      {
+        "prompt": "為什麼不能說所有動脈都含氧血？",
+        "expectedEvidence": "能用肺循環指出肺動脈輸送缺氧血，並說明分類依方向而非單一氧氣狀態。"
+      },
+      {
+        "prompt": "運動時心跳加快如何與循環功能連結？",
+        "expectedEvidence": "能連結組織氧需求、運送速度與二氧化碳移除，並標示單次觀察限制。"
+      }
     ]
   }
 }

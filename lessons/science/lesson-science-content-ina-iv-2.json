@@ -311,6 +311,7 @@
     "model": "general",
     "goal": "用系統邊界和能量箭頭追蹤裝置中的轉換，區分守恆、傳出與可利用輸出。",
     "mission": "你是校園能源觀察小組，請分析低電壓電池帶動小馬達的資料，逐步判斷能量從哪裡來、轉成哪些形式，以及哪些證據仍需補測。",
+    "learningDesign":{"type":"motor-energy-accounting","objective":"以電壓、電流、轉速與溫升資料追蹤馬達能量轉換及損失。","predictionPrompt":"增加負載後轉速下降且溫升增加，輸入能量主要去哪裡？還需量測什麼？","steps":[{"action":"量測電池電壓與電流，計算輸入功率","equation":"power=voltage\u00d7current"},{"action":"改變負載記錄轉速、聲音與溫度","equation":"output=motion+sound+heat"},{"action":"比較不同負載的效率與證據不足處","equation":"efficiency=mechanical/input"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

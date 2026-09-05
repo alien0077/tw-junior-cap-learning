@@ -318,6 +318,7 @@
     "model": "general",
     "goal": "比較化學電池放電與充電的反應方向、電子／離子流向與能量轉換，並用控制資料判讀電池狀態。",
     "mission": "操作自編可充電電池模型：先接負載放電，再依指定極性接外部電源充電；每次先預測端電壓、電流與溫度，再用粒子箭頭和資料限制解釋。",
+    "learningDesign":{"type":"rechargeable-cell-cycle","objective":"以放電、充電電流與溫度資料追蹤可逆化學能轉換及安全限制。","predictionPrompt":"充電時外加電源極性反接，端電壓與溫度可能出現什麼警訊？","steps":[{"action":"記錄放電時端電壓、電流與負載功率","equation":"power=voltage\u00d7current"},{"action":"依指定極性充電並追蹤粒子方向與溫升","equation":"stored=electrical\u002dto\u002dchemical"},{"action":"比較充放電效率並標示模型與真實電池差異","equation":"efficiency=output/input"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

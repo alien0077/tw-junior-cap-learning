@@ -260,6 +260,7 @@
     "model": "general",
     "goal": "在小車模型中調整水平推力、摩擦力與質量，先預測合力和加速度，再用速度向量檢查自己的受力解釋。",
     "mission": "先把右推 8 N、左摩擦 3 N、質量 2 kg 設為基準，記下合力與加速度；接著只把質量改為 4 kg，最後讓車以向右初速開始並加入向左摩擦，觀察速度與加速度方向可以不同。模型忽略輪軸細節與空氣阻力，操作時不使用真實高速車具。",
+    "learningDesign":{"type":"force-motion-model","objective":"以受力圖、合力與質量變化解釋加速度和速度方向的差異。","predictionPrompt":"物體仍向右移動但受到向左合力時，速度與加速度各會如何變化？","steps":[{"action":"繪製水平受力圖並計算合力","equation":"net-force=sum(forces)"},{"action":"只改變質量比較加速度，保持其他條件固定","equation":"acceleration=net-force/mass"},{"action":"加入初速度與摩擦，分段判讀速度、加速度方向","equation":"v(t)=v0+a*t"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

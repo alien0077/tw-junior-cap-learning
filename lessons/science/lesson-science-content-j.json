@@ -336,6 +336,7 @@
     "mode": "model",
     "goal": "以一次只改一項條件的操作，辨識動態平衡並做出兼顧產率與安全的製程選擇。",
     "mission": "先預測條件影響，再操作反應器，讀取粒子數、速率與能量面板，最後用證據寫出決策理由。",
+    "learningDesign":{"type":"reaction-rate-energy-model","objective":"以粒子碰撞、反應速率與能量資料評估化學反應條件。","predictionPrompt":"提高溫度或增加濃度時，反應速率與能量變化是否必然同向？","steps":[{"action":"固定反應物量並調整溫度、濃度或表面積","equation":"collision=frequency+energy"},{"action":"讀取粒子數、生成物量與速率曲線","equation":"rate=delta-concentration/time"},{"action":"比較條件組並以能量面板檢查反應熱與限制","equation":"energy=products-reactants"}]},
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",

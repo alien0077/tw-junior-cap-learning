@@ -325,6 +325,7 @@
     "model": "general",
     "goal": "在磁鐵配置網格上移動羅盤、記錄北端方向並建立磁力線，分辨方向證據、線條模型與相對疏密的界線。",
     "mission": "你是磁場測繪員：先逐點放置羅盤取得方向，再比較 N／S 排列的場線形狀，最後用鐵粉圖樣檢查相對疏密，但不把畫出的線當成實體。",
+    "learningDesign":{"type":"magnetic-field-mapping","objective":"以羅盤方向、場線疏密與磁極排列建立磁場模型。","predictionPrompt":"兩個相同磁極靠近時，羅盤方向與場線疏密可能如何改變？","steps":[{"action":"在網格各點放置羅盤並記錄指針方向","equation":"field=direction+strength"},{"action":"切換 N／S 排列比較場線與疏密","equation":"pattern=f(poles,distance)"},{"action":"用鐵粉圖樣交叉檢查但標示圖示非實體","equation":"evidence=compass+iron-filings"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

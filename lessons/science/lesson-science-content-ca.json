@@ -284,6 +284,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "separation-identification-lab",
+      "objective": "依物理性質分離混合物，再用對照確認收集物成分。",
+      "predictionPrompt": "若混合物含不同粒徑與溶解度，操作順序會如何影響純度？",
+      "steps": [
+        {"action":"依粒徑、磁性或溶解度選擇第一道分離","equation":"property=measurable_difference"},
+        {"action":"收集各部分並記錄質量與外觀","equation":"recovery=mass_out/mass_in"},
+        {"action":"以已知樣品作對照鑑定純度","equation":"evidence=sample-control"}
+      ]
+    }
   }
 }

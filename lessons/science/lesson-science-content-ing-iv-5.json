@@ -312,6 +312,7 @@
     "model": "general",
     "goal": "在校園池塘案例中追蹤環境條件、藻類活動與溶氧變化，建立有證據限制的回饋解釋。",
     "mission": "你是校園生態調查小組，收到池塘不同位置與日期的水溫、營養鹽、透明度、藻類覆蓋率和溶氧紀錄；請先辨認箭頭，再判斷哪些結論仍需補測。",
+    "learningDesign":{"type":"pond-eutrophication-data","objective":"以營養鹽、藻類、透明度與溶氧時間序列分析池塘生態變化。","predictionPrompt":"營養鹽升高後藻類增加，溶氧可能如何隨日夜改變？還需哪些對照？","steps":[{"action":"對齊不同位置與日期的水溫、營養鹽和透明度資料","equation":"data=space+time+indicator"},{"action":"追蹤藻類覆蓋與溶氧日夜曲線，提出因果假設","equation":"oxygen=f(photosynthesis,respiration)"},{"action":"比較上游與下游及重複測量，標示替代解釋","equation":"effect=treatment-control"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

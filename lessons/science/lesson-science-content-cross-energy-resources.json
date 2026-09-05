@@ -287,6 +287,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "microgrid-energy-flow",
+      "objective": "用能量流、效率與功率資料評估離島微電網在不同天候下的供應方案。",
+      "predictionPrompt": "日照下降且夜間負載升高時，先增加儲能還是降低負載，哪一項更能維持供應？請預測理由。",
+      "steps": [
+        {"action": "固定負載，分別調整日照與風速並記錄輸入能量", "equation": "input=solar+wind"},
+        {"action": "計算有效輸出、運轉時間與轉換損失", "equation": "efficiency=useful/input; power=energy/time"},
+        {"action": "加入蓄電容量限制後比較方案並標示證據不足處", "equation": "available=generated+stored-demand"}
+      ]
+    }
   }
 }

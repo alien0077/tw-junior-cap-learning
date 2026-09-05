@@ -310,6 +310,7 @@
     "model": "general",
     "goal": "用校園溪流開發案比較人類需求與自然環境功能，依證據選擇可監測、可修正的發展方案。",
     "mission": "你是校園環境審議小組，必須在增加接送便利與保留溪流生態功能之間提出有條件的方案。",
+    "learningDesign":{"type":"transport-stream-tradeoff","objective":"以交通需求、棲地連通與水文資料比較校園建設方案。","predictionPrompt":"增加接送道路可能提高便利但切斷溪流棲地，如何設計兼顧方案與監測？","steps":[{"action":"整理交通流量、溪流水位與物種分布基準","equation":"baseline=access+ecology"},{"action":"模擬道路、橋梁與保留緩衝帶的影響","equation":"impact=f(design,habitat)"},{"action":"設定施工期間與一年後的檢核門檻","equation":"decision=benefit+mitigation"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://nanidigi.nani.com.tw/",

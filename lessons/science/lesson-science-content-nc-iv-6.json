@@ -314,6 +314,7 @@
     "model": "general",
     "goal": "用需求時段、能源轉換鏈與多類證據比較臺灣供電方案，形成可修正的未來展望。",
     "mission": "你是校園能源會議的資料組，需在日照、尖峰需求、儲能容量與備援條件改變時，重新判斷供電方案。",
+    "learningDesign":{"type":"school-grid-resilience","objective":"以日照、尖峰負載、儲能容量與備援資料檢驗校園供電韌性。","predictionPrompt":"連續陰天且尖峰負載增加時，儲能容量和備援功率哪項先限制供電？","steps":[{"action":"建立日照發電、負載與儲能基準曲線","equation":"net=generated-demand"},{"action":"逐一改變尖峰、容量與備援並記錄缺電量","equation":"shortfall=max(0,demand-supply)"},{"action":"比較方案並設定觸發與回饋條件","equation":"resilience=availability+response"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

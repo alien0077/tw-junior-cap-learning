@@ -250,6 +250,7 @@
     "model": "general",
     "goal": "在虛擬河谷中調整坡度、流速與粒徑，建立由地貌證據推論外營力的模型，再與內營力剖面比較。",
     "mission": "完成三輪控制變因挑戰：固定粒徑改變流速、固定流速改變坡度，最後從未知河段的剖面與沉積物資料判斷侵蝕或堆積；全程使用模擬資料並遵守不接近真實邊坡的安全原則。",
+    "learningDesign":{"type":"river-erosion-controlled-test","objective":"以粒徑、流速、坡度與剖面資料判斷河流侵蝕及沉積。","predictionPrompt":"固定粒徑時提高流速，河道哪一段更可能出現侵蝕？如何保持公平比較？","steps":[{"action":"固定粒徑改變流速並記錄搬運距離與沉積量","equation":"transport=f(flow,grain-size)"},{"action":"固定流速改變坡度，量測河床剖面變化","equation":"erosion=f(slope,velocity)"},{"action":"用未知河段資料分類侵蝕或堆積並標示混淆因子","equation":"claim=profile+sediment"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

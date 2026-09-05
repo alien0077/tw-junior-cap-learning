@@ -312,6 +312,7 @@
     "model": "general",
     "goal": "在校園地表能量收支模型中，追蹤太陽輻射的反射、吸收、轉換與跨圈層傳遞。",
     "mission": "比較樹蔭土壤、裸露柏油與水面，依序把觀察資料接到能量箭頭，再判斷結論的尺度與限制。",
+    "learningDesign":{"type":"surface-energy-budget","objective":"以反照率、蒸發與熱容量資料比較不同地表的能量收支。","predictionPrompt":"晴天中午樹蔭土壤與裸露柏油的地表溫度差異，可能由哪些能量途徑共同造成？","steps":[{"action":"量測三種地表的反射、吸收與溫度資料","equation":"energy=in-reflected-stored"},{"action":"加入遮蔭、含水量與風速條件追蹤熱交換","equation":"temperature=f(absorption,evaporation)"},{"action":"比較尺度與時間後寫出有條件結論","equation":"claim=budget+timescale"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

@@ -268,6 +268,7 @@
     "model": "general",
     "goal": "在植物運輸路徑模型中，分別追蹤水、無機鹽與有機養分的來源、組織和方向。",
     "mission": "操作根、莖、葉、木質部、韌皮部與蒸散條件；每段箭頭都要標示物質、運輸組織與可支持的實驗證據。",
+    "learningDesign":{"type":"plant-transport-flow","objective":"以物質種類、運輸組織與蒸散條件建立植物體內運輸模型。","predictionPrompt":"提高風速或降低濕度時，水分運輸箭頭和葉片失水證據會如何變化？","steps":[{"action":"將水、無機鹽與有機養分卡分配到根、莖、葉","equation":"material=source\u002dto\u002dsink"},{"action":"以木質部和韌皮部箭頭表示方向並加入蒸散條件","equation":"water-flow=f(transpiration)"},{"action":"改變風速、濕度後比對預測與資料限制","equation":"rate=gradient\u002dresistance"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

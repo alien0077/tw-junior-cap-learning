@@ -56,6 +56,7 @@
     "model": "general",
     "goal": "操作污染源輸入、降雨與水體交換條件，觀察藻量、清晨溶氧與下游濁度的相互變化，並比較不同防治位置。",
     "mission": "先預測再調整三個滑桿：污染源輸入量、降雨逕流強度與水體交換速度；讀取趨勢圖後，將源頭、過程、末端與復原方案卡放入污染鏈，最後以資料和限制寫出條件式建議。模擬數值為教學模型，不是真實水質測量。",
+    "learningDesign":{"type":"pollution-chain-recovery","objective":"以污染輸入、逕流、水體交換與復原指標評估水環境治理。","predictionPrompt":"污染源減少但大雨逕流增加時，水體濃度與恢復時間會如何變化？","steps":[{"action":"固定水體交換速度並調整污染輸入量與逕流","equation":"load=source+runoff"},{"action":"讀取濃度趨勢、沉積與恢復時間曲線","equation":"concentration=f(input,exchange)"},{"action":"比較源頭、過程、末端與復原方案並標示限制","equation":"recovery=monitor+intervention"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

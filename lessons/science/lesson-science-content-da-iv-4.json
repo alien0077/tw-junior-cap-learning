@@ -325,6 +325,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "mitosis-chromosome-lab",
+      "objective": "重演有絲分裂並檢查子細胞的染色體完整性。",
+      "predictionPrompt": "若複製後染色體未平均分離，兩個子細胞會有何差異？",
+      "steps": [
+        {"action":"複製染色體並標記姊妹染色分體","equation":"DNA_after=2\u00d7DNA_before"},
+        {"action":"模擬排列、分離與細胞質分裂","equation":"daughter_A=daughter_B"},
+        {"action":"檢查兩個子細胞的染色體數與錯誤","equation":"error=count_A-count_B"}
+      ]
+    }
   }
 }

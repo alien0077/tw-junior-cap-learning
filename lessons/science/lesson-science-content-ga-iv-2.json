@@ -314,6 +314,7 @@
     "model": "general",
     "goal": "透過配子分支與受精配對，判讀 XX、XY 組合的證據與機率界線。",
     "mission": "小組以一張 X 卵細胞卡和 X、Y 兩張精子卡模擬 20 次受精，請逐步建立性染色體推理。",
+    "learningDesign":{"type":"chromosome-inheritance-sampling","objective":"以配子染色體組合與重複試驗理解機率分布，不把單次結果當成必然。","predictionPrompt":"重複 20 次受精時，XX 與 XY 的比例是否一定各半？哪些因素會造成樣本波動？","steps":[{"action":"將 X 卵細胞與 X、Y 精子卡隨機配對並記錄結果","equation":"zygote=egg-X+sperm-X/Y"},{"action":"增加試驗次數計算 XX、XY 的相對頻率","equation":"frequency=count/sample"},{"action":"比較理論比例與樣本波動，標出機率和性別概念界線","equation":"error=observed-expected"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://digitalmaster.knsh.com.tw/j/nature/index.html",

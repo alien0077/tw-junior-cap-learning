@@ -9,19 +9,19 @@
     "8"
   ],
   "content": {
-    "summary": "用分配律的逆運算理解並執行最基本的因式分解。",
+    "summary": "從分配律的面積與代數表示出發，找出所有項的最大共同因式，逐項相除並以展開驗證共同因式分解。",
     "sections": [
       {
         "heading": "核心概念",
-        "body": "因式分解是把多項式改寫成數個因式相乘。最先檢查每一項是否有共同的數字因數或文字因數。"
+        "body": "因式分解是把多項式改寫成因式的乘積；本課先處理「提公因式」。共同因式必須同時出現在每一項，數字取最大公因數，字母則取各項共有的最低次方。例如 12a²+18a 的共同因式是 6a，而不是只看見 6。提出後，每一項都要除以 6a，才得到 6a(2a+3)。"
       },
       {
         "heading": "範例",
-        "body": "6x²+9x 的兩項都有 3x，因此可寫成 3x(2x+3)。展開 3x(2x+3) 可回到原式，用來自我檢查。"
+        "body": "以 4x²y+12xy² 為例：係數 4 與 12 的最大公因數是 4，兩項共同有 x 與 y，所以提出 4xy；逐項相除後，括號內是 x+3y，結果為 4xy(x+3y)。回乘得到 4x²y+12xy²，表示每個字母、次方與係數都保留。"
       },
       {
         "heading": "常見錯誤",
-        "body": "提出共同因數後，括號內每一項都必須完成相除。若只處理其中一項，展開後就無法回到原式。"
+        "body": "常見錯誤包括只提出數字而漏掉共同字母、把最低次方誤取成最高次方、括號內第二項忘記除以公因式，以及負號提出後沒有同步改變括號符號。最可靠的修正不是憑外觀改答案，而是把候選式展開，逐項對照原式。"
       }
     ]
   },
@@ -30,8 +30,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-05",
   "studyHighlights": [
     "先找所有項共同可除的數字與文字，再提出最大公因式。",
     "提出後逐項相除，括號內每一項都要檢查。",
@@ -90,84 +90,118 @@
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
-  "lessonScope": "theme",
+  "authoringStandard": "version-fused-v1",
+  "lessonScope": "learning-content",
   "publisherResearch": [
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "publisher": "nani",
+      "edition": "南一版國中數學公開架構索引",
       "subject": "math",
-      "chapterLocator": "因式分解：先找共同因數；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "公開入口核對「因式分解：先找共同因數」的章節定位、概念順序、活動與評量方向",
+      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-05",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「先找共同因數」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為theme節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "只採公開入口可核對的「因式分解：先找共同因數」概念與教學方向；正文、例證、練習、互動與回饋均依本單元重新撰寫。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構，不複製出版社文字、圖片、題目、答案或影音內容。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開資源入口",
+      "subject": "math",
+      "chapterLocator": "公開入口核對「因式分解：先找共同因數」的章節定位、概念順序、活動與評量方向",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html",
+      "access": "public-open",
+      "reviewedAt": "2026-09-05",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "只採公開入口可核對的「因式分解：先找共同因數」概念與教學方向；正文、例證、練習、互動與回饋均依本單元重新撰寫。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構，不複製出版社文字、圖片、題目、答案或影音內容。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開解題影音索引",
+      "subject": "math",
+      "chapterLocator": "公開入口核對「因式分解：先找共同因數」的章節定位、概念順序、活動與評量方向",
+      "sourceUrl": "https://mathvideo.hle.com.tw/",
+      "access": "public-open",
+      "reviewedAt": "2026-09-05",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "只採公開入口可核對的「因式分解：先找共同因數」概念與教學方向；正文、例證、練習、互動與回饋均依本單元重新撰寫。",
+      "copyrightBoundary": "只研究公開章節定位與教學結構，不複製出版社文字、圖片、題目、答案或影音內容。"
     }
   ],
   "teaching": {
     "body": [
       {
-        "id": "hook",
+        "id": 0,
         "phase": "hook",
-        "heading": "從情境進入「先找共同因數」",
-        "body": "以「先找共同因數」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "先看見共同的材料包",
+        "body": "設計一面長方形拼接牆，左半面用 6x 平方公分、右半面用 18 平方公分的同樣材料；總面積可寫成 6x+18。若把每一組共同的 6 平方公分看成一包，總面積就能改寫為 6(x+3)。請先回答：這個 6 是從哪裡來的？它為什麼必須同時整除兩個項？這個入口讓「提公因式」不只是把式子加上括號，而是把分散的項重新辨認成相同的乘法結構。"
       },
       {
-        "id": "explain",
+        "id": 1,
         "phase": "explain",
-        "heading": "建立「先找共同因數」的概念架構",
-        "body": "本單元依官方課綱所列的「先找共同因數」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "共同因數來自分配律的反向使用",
+        "body": "把檢查拆成三欄：係數、字母、次方。係數取所有項係數的最大公因數；每個字母只取各項共有的最低次方；若某字母有一項沒有，就不能提出它。接著逐項相除，括號裡留下的商仍須是整式。這是分配律 a(b+c)=ab+ac 的反向讀法：提出的因式乘回括號內每一項，必須逐項恢復原多項式。"
       },
       {
-        "id": "worked-example",
+        "id": 2,
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「因式分解：先找共同因數」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "分解 12a²+18a",
+        "body": "處理 12a²+18a，先列係數：12 與 18 的最大公因數是 6；再列字母：a² 與 a 共同的最低次方是 a，所以最大共同因式為 6a。逐項相除得到 12a²÷6a=2a、18a÷6a=3，故 12a²+18a=6a(2a+3)。展開右式可得 12a²+18a。若只提出 6，寫成 6(2a²+3a) 雖然等值，卻還沒把可共同提出的 a 找完整；本課的「完成」指最大共同因式已提出並經回乘檢查。"
       },
       {
-        "id": "guided-practice",
+        "id": 3,
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「先找共同因數」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用因數表避免漏項",
+        "body": "小組練習三題：6m²−15m、9p²q+6pq²、−8r³+12r²。每題先在因數表圈出係數公因數與共同字母，再把每一項的商寫在箭頭下方，最後形成「公因式(商的和)」。互換答案時只問兩件事：公因式是否同時整除所有項？乘回後是否逐項得到原式？若負號造成困惑，先把 −1 視為可提出的共同因式，再重新檢查括號內符號。"
       },
       {
-        "id": "transfer",
+        "id": 4,
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「先找共同因數」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "把因式分解帶到方程與面積",
+        "body": "把方法帶到一個有意義的模型：某矩形面積是 6x²+18x，提出 6x 得 6x(x+3)，可解讀為共同寬度 6x 與另一方向 x+3。若題目改成 6x²−18x，代數上可寫成 6x(x−3)，但若 x 是長度，還要檢查 x>3 才能讓另一邊為正。這裡的任務是改寫同一個量，不是令某個因式等於零解方程；不要把兩種目的混在一起。"
       },
       {
-        "id": "reflect",
+        "id": 5,
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「先找共同因數」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用展開證明不是靠眼熟",
+        "body": "完成前用「共同—相除—回乘」三格自檢：共同，寫出係數最大公因數與每個共有字母的最低次方；相除，逐項記錄商，確認沒有漏項或錯號；回乘，把公因式分配進括號，確認每個係數、字母次方與正負號都回到原式。再比較 6(2a²+3a) 與 6a(2a+3)：兩者展開相同，但後者把最大共同因式完整提出。能解釋這個差異，才是理解而非只會加括號。"
       }
     ],
     "summary": [
-      "先用自己的話界定「先找共同因數」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "共同因式必須同時出現在每一項；係數取最大公因數，字母取共同的最低次方。",
+      "提出共同因式後，括號內各項是逐項相除所得的商，再以分配律回乘驗算。",
+      "只提出一部分公因式可能仍等值，但未完成本課要求的最大共同因式分解。",
+      "遇到面積或長度模型時，除了代數等值，還要檢查因式的單位與正值條件。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「先找共同因數」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "將 15x²y−10xy² 提出最大共同因式，並說明係數、x、y 各自如何判斷。",
+        "expectedEvidence": "寫出 5xy(3x−2y)，並指出 5 是係數最大公因數、x 與 y 取共同最低次方。"
       },
       {
-        "prompt": "在「先找共同因數」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "有人把 12a²+18a 寫成 6a(2a+3)，如何用一個回乘檢查判斷是否正確？",
+        "expectedEvidence": "能展開 6a(2a+3) 得 12a²+18a，並說明兩個項都被恢復。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「先找共同因數」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "比較 6(2a²+3a) 與 6a(2a+3)，說明兩式的關係及為何後者更符合本課的完成標準。",
+        "expectedEvidence": "能指出兩式展開相同，但後者再提出共同的 a，已取出最大共同因式。"
       }
     ]
   },
@@ -185,5 +219,99 @@
       "https://www.clearnotebooks.com/zh-TW/notebooks/grade/junior-high?q=%E6%95%B8%E5%AD%B8",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
     ]
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "南一版國中數學公開架構索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；公開入口與專案 KG 對照「因式分解：先找共同因數」",
+      "reviewedAt": "2026-09-05",
+      "findings": {
+        "concepts": [
+          "以「因式分解：先找共同因數」的單元概念建立可解釋、可操作且可檢核的學習路徑。",
+          "比較定義、表示、例型、迷思與應用，並標示公開資料的範圍限制。"
+        ],
+        "representations": [
+          "用單元專屬情境、步驟、證據或資料表連結概念與應用。"
+        ],
+        "examplesOrEvidence": [
+          "公開頁面可定位「因式分解：先找共同因數」的課程方向；本課所有例題與活動均為自編。"
+        ],
+        "misconceptions": [
+          "不能把單一例子、表面關鍵字或固定步驟當成完整概念。"
+        ],
+        "assessmentEmphasis": [
+          "檢查概念理解、理由、條件、錯誤診斷與新情境遷移。"
+        ]
+      },
+      "licenseBoundary": "僅研究可取得的公開入口與定位，未宣稱取得未公開完整教材；正文與活動完全自編。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中數學公開資源入口",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html；公開入口與專案 KG 對照「因式分解：先找共同因數」",
+      "reviewedAt": "2026-09-05",
+      "findings": {
+        "concepts": [
+          "以「因式分解：先找共同因數」的單元概念建立可解釋、可操作且可檢核的學習路徑。",
+          "比較定義、表示、例型、迷思與應用，並標示公開資料的範圍限制。"
+        ],
+        "representations": [
+          "用單元專屬情境、步驟、證據或資料表連結概念與應用。"
+        ],
+        "examplesOrEvidence": [
+          "公開頁面可定位「因式分解：先找共同因數」的課程方向；本課所有例題與活動均為自編。"
+        ],
+        "misconceptions": [
+          "不能把單一例子、表面關鍵字或固定步驟當成完整概念。"
+        ],
+        "assessmentEmphasis": [
+          "檢查概念理解、理由、條件、錯誤診斷與新情境遷移。"
+        ]
+      },
+      "licenseBoundary": "僅研究可取得的公開入口與定位，未宣稱取得未公開完整教材；正文與活動完全自編。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學公開解題影音索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://mathvideo.hle.com.tw/；公開入口與專案 KG 對照「因式分解：先找共同因數」",
+      "reviewedAt": "2026-09-05",
+      "findings": {
+        "concepts": [
+          "以「因式分解：先找共同因數」的單元概念建立可解釋、可操作且可檢核的學習路徑。",
+          "比較定義、表示、例型、迷思與應用，並標示公開資料的範圍限制。"
+        ],
+        "representations": [
+          "用單元專屬情境、步驟、證據或資料表連結概念與應用。"
+        ],
+        "examplesOrEvidence": [
+          "公開頁面可定位「因式分解：先找共同因數」的課程方向；本課所有例題與活動均為自編。"
+        ],
+        "misconceptions": [
+          "不能把單一例子、表面關鍵字或固定步驟當成完整概念。"
+        ],
+        "assessmentEmphasis": [
+          "檢查概念理解、理由、條件、錯誤診斷與新情境遷移。"
+        ]
+      },
+      "licenseBoundary": "僅研究可取得的公開入口與定位，未宣稱取得未公開完整教材；正文與活動完全自編。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開資料共同支持「因式分解：先找共同因數」的核心概念、表徵與學習遷移。",
+      "共同需要把定義、例證、錯誤辨識與應用連成可檢核的教學路徑。"
+    ],
+    "versionDifferences": [
+      "公開資料在概念順序、活動呈現或評量入口上有側重差異；完整出版社正文未公開取得，不虛構逐頁內容。"
+    ],
+    "originalAdditions": [
+      "以「因式分解：先找共同因數」專屬情境重新設計六階段教學、迷思診斷、引導練習與遷移活動。",
+      "加入可重做的證據、理由與自我檢核要求，避免只背答案或套用模板。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、KG 與南一／康軒／翰林可取得的公開研究線索，重新融合撰寫「因式分解：先找共同因數」；不複製出版社文字、例題或答案。Terra 尚未執行，狀態維持 draft。"
   }
 }

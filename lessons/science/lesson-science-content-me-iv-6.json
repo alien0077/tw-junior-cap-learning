@@ -322,6 +322,7 @@
     "model": "general",
     "goal": "操作自編食物鏈與濃度證據，區分生物累積、生物放大及結論限制。",
     "mission": "請把湖泊生物依攝食關係連線，核對體內濃度資料與單位，再判斷哪些證據支持生物放大。",
+    "learningDesign":{"type":"biomagnification-food-web","objective":"以食物網階層、污染物濃度與單位資料判讀生物放大。","predictionPrompt":"污染物在高營養階層濃度較高時，如何排除體型與暴露時間造成的混淆？","steps":[{"action":"依攝食關係排列湖泊生物營養階層","equation":"trophic=food-web+level"},{"action":"統一濃度單位並比較各階層體內資料","equation":"concentration=amount/mass"},{"action":"加入年齡、脂肪量與暴露時間控制，檢查證據","equation":"magnification=level+exposure"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/9/doc/1290/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1%E2%94%80%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://tpack.nani.com.tw/nani_content?a=75&b=2",

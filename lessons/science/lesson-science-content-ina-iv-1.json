@@ -313,6 +313,7 @@
     "model": "general",
     "goal": "透過證據卡辨認生活情境中的能量形式，並修正能源、能量與功率的混淆。",
     "mission": "觀察一臺由電池供電的小燈：先標出系統與可觀察變化，再選擇最能支持能量形式判斷的理由。",
+    "learningDesign":{"type":"energy-conversion-chain","objective":"以電池、導線與小燈的觀察建立能量轉換與系統邊界模型。","predictionPrompt":"小燈發光且外殼變熱時，能量由哪種形式轉成哪些形式？","steps":[{"action":"標出電池、導線、小燈與周圍環境的邊界","equation":"system=input+output"},{"action":"記錄光、熱與電流等可觀察或測量訊號","equation":"energy=light+heat+motion"},{"action":"改變負載後比較輸出，指出模型未涵蓋的損失","equation":"efficiency=useful/input"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

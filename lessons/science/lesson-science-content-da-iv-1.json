@@ -298,6 +298,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "microscope-cell-lab",
+      "objective": "調整倍率、焦距與光線，建立可追溯的細胞影像報告。",
+      "predictionPrompt": "換用高倍率後，視野、亮度與可辨識結構會如何改變？",
+      "steps": [
+        {"action":"先用低倍率定位樣本並記錄視野","equation":"field_of_view ∝ 1/magnification"},
+        {"action":"逐步調焦與調光，截取清晰影像","equation":"clarity=f(focus,light)"},
+        {"action":"比較植物與動物細胞構造並標註限制","equation":"scale=observed_size/reference"}
+      ]
+    }
   }
 }

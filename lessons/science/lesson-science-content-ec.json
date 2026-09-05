@@ -249,6 +249,7 @@
     "model": "general",
     "goal": "以粒子碰撞、空氣柱重量與壓力差模型解釋氣體現象。",
     "mission": "在安全的虛擬針筒中固定氣體量，分別改變體積與溫度，完成預測、量測、pV 檢查與生活情境解釋。",
+    "learningDesign":{"type":"gas-law-piston-model","objective":"以粒子碰撞、壓力體積與溫度資料建立氣體狀態模型。","predictionPrompt":"固定溫度壓縮氣體時，粒子碰撞頻率與壓力會如何改變？","steps":[{"action":"固定氣體量與溫度，逐步推動活塞並記錄壓力","equation":"pressure\u00d7volume=constant"},{"action":"固定體積調整溫度，觀察碰撞頻率與壓力","equation":"pressure=f(temperature,volume)"},{"action":"用 pV 或壓力溫度圖檢查模型和量測誤差","equation":"state=nRT"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

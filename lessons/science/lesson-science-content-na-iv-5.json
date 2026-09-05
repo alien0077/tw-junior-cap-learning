@@ -325,6 +325,7 @@
     "model": "general",
     "goal": "追蹤廢棄物流向，根據污染路徑與承載力資料比較處理方案。",
     "mission": "你是校園環境小組，必須拆解一袋混合垃圾，判斷溪流水量改變時的環境壓力，提出有證據與限制的處理建議。",
+    "learningDesign":{"type":"waste-stream-water-pressure","objective":"以垃圾組成、流量與污染負荷資料設計環境處理建議。","predictionPrompt":"溪流水量下降時，相同污染負荷會如何影響濃度與生態壓力？","steps":[{"action":"分類混合垃圾並記錄重量、材質與可回收比例","equation":"waste=material+mass"},{"action":"改變流量計算污染負荷與稀釋效果","equation":"concentration=load/flow"},{"action":"比較減量、回收與處理方案及其限制","equation":"control=source+process"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://tpack.nani.com.tw/nani_content?a=75&b=2",

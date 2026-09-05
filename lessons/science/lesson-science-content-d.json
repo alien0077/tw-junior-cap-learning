@@ -43,6 +43,7 @@
     "model":"general",
     "goal":"讓學習者拖曳構造卡與功能卡建立跨層次的生物體模型，並以移除構造的反事實測試檢查解釋是否成立。",
     "mission":"在「校園生物醫院」中調查一株萎凋植物與一位運動後呼吸急促的學生；學習者必須從細胞、組織、器官到系統追蹤物質流動，找出構造與功能的斷點。",
+    "learningDesign":{"type":"structure-function-system-lab","objective":"以構造特徵與反事實證據解釋細胞到器官系統的分工。","predictionPrompt":"移除氣孔、肺泡或根毛其中一項構造時，物質交換與整體功能會如何改變？","steps":[{"action":"從葉片、肺泡與根毛圖卡記錄形狀、位置和排列","equation":"observation=features+location"},{"action":"連接構造、功能與跨層次物質流，提出可檢驗預測","equation":"function=f(structure,context)"},{"action":"移除一張構造卡再比較結果，標記推論限制","equation":"system-effect=baseline-offset"}]},
     "sourceRefs":["https://www.naer.edu.tw/","https://cap.rcpet.edu.tw/index.html","https://stv.naer.edu.tw/teaching/course_outline.jsp"]
   },
   "studyHighlights":["構造不是功能的同義詞；先描述特徵，再說明它如何造成結果。","用層次與分工畫出細胞到個體的連接，不以圖示大小猜測層次。","任何適應或健康解釋都要標示環境條件、證據與尚未確認的部分。"],

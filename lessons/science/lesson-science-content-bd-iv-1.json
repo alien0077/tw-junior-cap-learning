@@ -298,6 +298,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "food-web-energy-lab",
+      "objective": "用能量輸入、營養階層與分解路徑解釋食物網的淨能量變化。",
+      "predictionPrompt": "移除一種消費者後，哪個營養階層的可用能量會先改變？請先預測並說明依據。",
+      "steps": [
+        {"action":"拖曳草、昆蟲、鳥與鷹建立食物網","equation":"E_next=E_prev-loss"},
+        {"action":"移除鳥並加入分解者，觀察能量與物質兩條路徑","equation":"matter_to_decomposer != energy_return"},
+        {"action":"比較草地與海洋模型，記錄尺度與限制","equation":"net_change=inflow-outflow"}
+      ]
+    }
   }
 }

@@ -312,6 +312,7 @@
     "model": "general",
     "goal": "依序追蹤鋒面通過測站的證據，判斷形成、類型、移動與預報限制。",
     "mission": "北臺灣三個測站記錄到氣溫、風向、氣壓、雲量與降雨的不同時間轉折，請找出最能支持冷鋒通過的證據鏈。",
+    "learningDesign":{"type":"front-passage-time-series","objective":"以多站時間序列辨識冷鋒通過的氣象證據鏈與先後順序。","predictionPrompt":"冷鋒通過時，氣溫、氣壓、風向與降雨通常會出現什麼轉折順序？","steps":[{"action":"對齊三站時間軸並標記各氣象量轉折","equation":"signal=temperature+pressure+wind+rain"},{"action":"尋找跨站移動的共同時序而非單站尖峰","equation":"front=pattern+propagation"},{"action":"比較暖鋒或局地對流替代解釋並列出限制","equation":"diagnosis=evidence+alternatives"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

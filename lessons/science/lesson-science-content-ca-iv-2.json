@@ -331,6 +331,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "compound-identification-lab",
+      "objective": "以對照反應與多項證據縮小未知化合物候選。",
+      "predictionPrompt": "未知液體先做哪一項對照，才能避免把顏色誤認成成分？",
+      "steps": [
+        {"action":"建立已知物質的反應對照表","equation":"signal=observed-control"},
+        {"action":"依序加入試劑並記錄沉澱、氣體或顏色","equation":"candidate_set=intersection(results)"},
+        {"action":"用第二種反應排除替代候選","equation":"confidence=independent_signals"}
+      ]
+    }
   }
 }

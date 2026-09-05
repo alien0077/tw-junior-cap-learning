@@ -77,5 +77,5 @@
       {"prompt": "請用氣團、季風與地形三個概念解釋同一季節臺灣不同地區雨量可能不同。", "expectedEvidence": "能指出氣團水氣來源、季節盛行風及迎風抬升／背風差異，且限定地點與季節。"}
     ]
   },
-  "simulation": {"id": "sim-science-ib", "engine": "concept-explorer", "mode": "explorer", "model": "circulation", "goal": "拖曳氣壓中心與鋒面，觀察等壓線、風向、雲雨與測站時間序列的同步變化。", "mission": "完成海風站三時段預報：先鎖定高低壓與鋒面，再預測風向、氣壓、雲量和降雨，最後以新增資料檢查或修正解釋。", "sourceRefs": ["https://www.naer.edu.tw/", "https://digitalmaster.knsh.com.tw/all/video/j/nature.html", "https://books.hanlin.com.tw/productall"]}
+  "simulation": {"id": "sim-science-ib", "engine": "concept-explorer", "mode": "explorer", "model": "circulation", "goal": "拖曳氣壓中心與鋒面，觀察等壓線、風向、雲雨與測站時間序列的同步變化。", "mission": "完成海風站三時段預報：先鎖定高低壓與鋒面，再預測風向、氣壓、雲量和降雨，最後以新增資料檢查或修正解釋。", "learningDesign":{"type":"weather-system-forecast","objective":"以氣壓中心、鋒面與測站時間序列建立可修正的天氣預報。","predictionPrompt":"鋒面接近測站時，氣壓、風向、雲量與降雨可能按什麼順序轉折？","steps":[{"action":"拖曳高低壓與鋒面並讀取等壓線","equation":"gradient=pressure/distance"},{"action":"預測三時段風向、氣壓與降雨，記錄依據","equation":"forecast=f(position,time)"},{"action":"加入新測站資料後修正預報並標示不確定性","equation":"update=old+new-evidence"}]},"sourceRefs": ["https://www.naer.edu.tw/", "https://digitalmaster.knsh.com.tw/all/video/j/nature.html", "https://books.hanlin.com.tw/productall"]}
 }

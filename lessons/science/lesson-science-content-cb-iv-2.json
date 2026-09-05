@@ -312,6 +312,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "structure-property-lab",
+      "objective": "以原子排列、鍵結與電子通道解釋材料性質。",
+      "predictionPrompt": "若層間容易滑動，材料的延展性與導電性會如何改變？",
+      "steps": [
+        {"action":"調整三維排列與鍵結方向","equation":"property=f(structure)"},
+        {"action":"施加力或電場並記錄變形與電流","equation":"stress=force/area"},
+        {"action":"比較不同排列模型的性質差異","equation":"conductivity=charge/(field*time)"}
+      ]
+    }
   }
 }

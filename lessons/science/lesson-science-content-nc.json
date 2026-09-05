@@ -261,6 +261,7 @@
     "model": "general",
     "goal": "模擬能源來源、有效供電時間與需求曲線的變化，練習以相同服務量比較開發方案。",
     "mission": "完成三回合校園能源調度：先拖曳光照、風速與儲能容量，再觀察實際供電量、夜間缺口與排放估計；每回合寫出一項證據、一項限制與下一個補測問題。",
+    "learningDesign":{"type":"campus-energy-dispatch","objective":"以光照、風速、儲能與夜間負載資料調度校園能源並評估排放。","predictionPrompt":"白天再生能源過剩但夜間需求高時，如何決定充電與備援策略？","steps":[{"action":"建立光照、風速、負載與儲能基準曲線","equation":"net=generated-demand"},{"action":"拖曳一項條件並記錄供電量、缺口與排放估計","equation":"shortfall=max(0,demand-supply)"},{"action":"比較三回合調度結果，提出補測與修正","equation":"dispatch=source+storage+backup"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

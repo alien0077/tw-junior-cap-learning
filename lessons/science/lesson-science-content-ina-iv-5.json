@@ -265,6 +265,7 @@
     "model": "general",
     "goal": "透過能源路徑與供電時間線，辨認輸入、轉換損失、儲能缺口及生命週期影響。",
     "mission": "請在固定小鎮用電需求下，比較日照、儲能與燃料備援的改變，選出能同時說明供電效果、環境代價與資料限制的結論。",
+    "learningDesign":{"type":"community-energy-tradeoff","objective":"以供電穩定、排放、成本與儲能資料比較社區能源方案。","predictionPrompt":"連續陰天且尖峰負載增加時，哪種備援組合能維持供電，代價又是什麼？","steps":[{"action":"設定小鎮負載、日照與儲能容量基準","equation":"demand=base+peak"},{"action":"切換太陽能、電池與燃料備援並記錄缺電量","equation":"supply=renewable+storage+backup"},{"action":"以排放、成本與可靠度多指標評分並標示權衡","equation":"score=reliability-cost-emission"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

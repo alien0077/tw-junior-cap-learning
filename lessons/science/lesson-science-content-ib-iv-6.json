@@ -310,6 +310,7 @@
     "model": "general",
     "goal": "以臺灣冬夏風向、海面水氣與山脈迎背風面資料，建立並檢查季風造成氣候差異的因果解釋。",
     "mission": "氣象小組收到臺北、臺南與花蓮的冬夏風向及月雨量卡片；請先判斷風的來源與迎背風面，再用資料說明季節雨量差異及結論限制。",
+    "learningDesign":{"type":"monsoon-rainfall-comparison","objective":"以風向、地形與多站月雨量資料解釋季節降雨差異。","predictionPrompt":"同一季風通過山脈時，迎風與背風測站的雨量可能如何分化？","steps":[{"action":"在地圖標出季風來源、山脈與三測站位置","equation":"wind=source+topography"},{"action":"比較冬夏風向與各站月雨量分布","equation":"rain=f(moisture,lift)"},{"action":"檢查年份、測站高度與局地對流等替代因素","equation":"claim=pattern+controls"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

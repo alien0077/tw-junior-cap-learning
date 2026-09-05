@@ -1,5 +1,55 @@
 # 目前狀態
 
+> 2026-09-05（明確教學內容融合完成）：15 個明確教學內容單元已全部完成版本融合原創重寫：國文 5、英文 2、數學 3、自然 3、社會 2。15 份目標檔均已由主執行緒回讀確認為 `authoringStandard=version-fused-v1`／`reviewStatus=draft`，各具三筆 `publisherResearch`、三筆 `versionResearch`、`fusionRecord` 與六段非空 `teaching.body`；目標 JSON／Schema／契約與 `git diff --check` 通過。全庫即時 `audit_version_fusion.py --strict` 為 261 件失敗，均為非明確教學內容的歷史 `full-lesson-v1` 框架／學習表現／導覽項目；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。以下較早的 13/15、14/15 與 7 件 backlog 紀錄均為過程快照，不代表目前狀態。
+
+> 2026-09-05（明確教學內容 backlog 收尾）：已完成 15 份明確教學內容 lesson 的版本融合落地：國文 `argument-evidence-basics`、`main-idea-structure`、`punctuation-effects`、`six-forms-character-making`、`source-reliability`；英文 `context-clues`、`fact-opinion`；數學 `factorization-common-factor`、`linear-equation-check`、`linear-function-graph`；自然 `blood-circulation`、`evidence-model`、`specific-heat`；社會 `media-literacy`、`opportunity-cost`。目標檔均已設定 `version-fused-v1`／`draft`，補齊三家 `publisherResearch`、三筆 `versionResearch`、`fusionRecord` 與六段 teaching；未執行 Terra，未 commit／push。全庫即時統計為 778 份 `version-fused-v1:draft`、256 份歷史 `full-lesson-v1:content-reviewed`、4 份 deprecated；strict 另有 5 份既有數學／自然 lesson 缺獨立互動設計，均不屬本輪明確教學內容 backlog。
+
+> 即時核驗：15/15 個明確教學內容 lesson 均為 `version-fused-v1`／`draft`，各具三家 `publisherResearch`、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching。`audit_lesson_independence.py --strict` 為 0 失敗；全庫 `audit_version_fusion.py --strict` 為 261 件失敗，其中 256 件是歷史學習表現／導覽框架未遷移，另 5 件是既有數學／自然 lesson 缺獨立互動設計；均不屬本輪明確教學內容 backlog。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作十二）：再完成社會歷史 Qc-Ⅳ-3、Qc、R-Ⅳ-1、R 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 269 件失敗；原定非 performance content backlog 剩 7 件（另有 Qc-Ⅳ-3 已一併融合但不在該清單）。`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作十一）：再完成社會歷史 Qa、Qb-Ⅳ-3、Qb、Qc-Ⅳ-2 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 272 件失敗、非 performance content backlog 為 10；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作十）：再完成社會歷史 P-Ⅳ-1、P、Q、Qa-Ⅳ-1 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 276 件失敗、非 performance content backlog 為 14；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作九）：再完成社會歷史 Oa-Ⅳ-1、Oa、Ob-Ⅳ-3、Ob 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 280 件失敗、非 performance content backlog 為 18；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作八）：再完成社會歷史 Nb-Ⅳ-1、Nb-Ⅳ-3、Nb、O 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 284 件失敗、非 performance content backlog 為 22；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作七）：再完成社會歷史 M-Ⅳ-1、M、Na-Ⅳ-2、Na 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 288 件失敗、非 performance content backlog 為 26；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作六）：再完成社會歷史 Kb-Ⅳ-1、Kb-Ⅳ-2、La-Ⅳ-2、Lb 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 292 件失敗、非 performance content backlog 為 30；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作五）：再完成社會歷史 Hb-Ⅳ-2、Ic-Ⅳ-1、Ic-Ⅳ-2、J 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 296 件失敗、非 performance content backlog 為 34；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作四）：再完成社會歷史 Fa-Ⅳ-3、Fb-Ⅳ-1、Fb-Ⅳ-2、Ha-Ⅳ-1 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 300 件失敗、非 performance content backlog 為 38；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作三）：再完成社會歷史 Ea-Ⅳ-1、Eb-Ⅳ-2、Eb-Ⅳ-3、Fa-Ⅳ-2 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 304 件失敗、非 performance content backlog 為 42；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作二）：再完成社會歷史 Ca-Ⅳ-1、Ca-Ⅳ-2、Cb、D-Ⅳ-2 四份 `learning-content` lesson 的版本融合重寫；四份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 308 件失敗、非 performance content backlog 為 46；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪續作）：完成社會歷史 Ka、Kb、L、La、A、Ba、Bb-Ⅳ-2、Bb 八份 `learning-content` lesson 的版本融合重寫；八份均已由主執行緒回讀確認為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，目標 Schema、`jq`、`git diff --check` 通過。全庫 `audit_version_fusion.py --strict` 為 312 件失敗、非 performance content backlog 為 50；`audit_lesson_independence.py --strict` 為 0 失敗。Terra 未執行，未 commit／push。
+
+> 2026-09-05（本輪延遲寫回核驗二）：`hist-cb-iv-1` 在子任務終態後實際寫回，已通過主執行緒驗證：`version-fused-v1`／`draft`、南一／康軒／翰林各 3 筆研究、`fusionRecord`、六段非空 teaching，`jq`、`git diff --check` 通過；獨立性 strict 為 0 失敗。全庫版本融合 strict 由 343 降至 342。Terra 未執行。
+
+> 2026-09-05（本輪延遲寫回核驗）：`hist-ea-iv-3` 在子任務終態後實際寫回，已通過主執行緒驗證：`version-fused-v1`／`draft`、南一／康軒／翰林各 3 筆研究、`fusionRecord`、六段非空 teaching，`jq` 與 `git diff --check` 通過；獨立性 strict 為 0 失敗。全庫版本融合 strict 由 344 降至 343。Terra 未執行。
+
+> 2026-09-05（本輪續作核對）：完成社會歷史 G-Ⅳ-1、Ia-Ⅳ-2、Ib-Ⅳ-1、Lb-Ⅳ-1 四份 `learning-content` lesson 的版本融合重寫；四份均為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三家研究、三筆 `versionResearch`、`fusionRecord` 與六段非空 teaching，未執行 Terra。目標檔 `jq`、`git diff --check` 通過；全庫 `audit_version_fusion.py --strict` 實測仍有 344 件歷史失敗，`audit_lesson_independence.py --strict` 為 0 失敗。
+
+> 2026-09-04（本輪修復完成）：完成社會歷史 Qb-Ⅳ-2、Ob-Ⅳ-2、J-Ⅳ-1、Fa-Ⅳ-4 四份 `learning-content` lesson 的版本融合重寫；四份均為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三版本研究、三筆 `versionResearch`、`fusionRecord` 與六段非空且獨立 teaching。`jq`、`git diff --check` 通過；`audit_lesson_independence.py --strict` 為 0 失敗，版本融合 strict 實測為 348 件失敗。Terra 未執行，未宣稱全庫完成。
+
+> 2026-09-04（本輪續三）：完成社會歷史 Ka-Ⅳ-1、Nb-Ⅳ-2、Hb-Ⅳ-1 三份 `learning-content` lesson 的版本融合重寫；三份均為 `version-fused-v1`／`draft`，各具三家出版社研究、三筆 `versionResearch`、`fusionRecord` 與六段獨立 teaching。Oa-Ⅳ-2 及另四份重派檔案均未實際落地，未計入完成；全庫 `audit_version_fusion.py --strict` 實測為 349 件失敗。Terra 未執行，未宣稱全庫完成。
+
+> 2026-09-04（本輪補正）：完成社會歷史 Ka-Ⅳ-1、Nb-Ⅳ-2、Eb-Ⅳ-1 與 Na-Ⅳ-1 四份 `learning-content` lesson 的版本融合；四份均為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三版本研究、三筆 `versionResearch`、`fusionRecord` 與六段非空且獨立 teaching。Na 的 metadata 由主執行緒依已完成原創正文補全；未執行 Terra。`jq`、`git diff --check` 通過，版本融合 strict 由 354 降至 350，獨立性 strict 仍為 0 失敗。
+
+> 2026-09-04（中斷後核對）：`audit_version_fusion.py --strict` 實測為 354 件失敗；數字由 359 降低包含 4 個 lesson 被中斷派送降為 `full-lesson-v1`／`draft`，以及 1 個測試 lesson 被安全降級，均非完成版本融合。這 5 個 lesson 仍缺三版本研究、`versionResearch` 與 `fusionRecord`，不得計為完成；目前不執行 Terra。
+
+> 2026-09-04（本輪續二）：完成社會歷史 Ba-Ⅳ-2、La-Ⅳ-1、Cb-Ⅳ-2、Ha-Ⅳ-2 四份 `learning-content` lesson 的版本融合重寫；四份均為 `version-fused-v1`／`draft`，各具三家出版社研究、三筆 `versionResearch`、`fusionRecord` 與六段獨立 teaching。中斷同步曾造成 JSON 語法錯誤，已修復並通過 `jq` 與 `git diff --check`。全庫 `audit_version_fusion.py --strict` 實測由 365 件降至 359 件；Terra 未執行，未宣稱全庫完成。
+
+> 2026-09-04（本輪續）：完成社會歷史 Bb-Ⅳ-1、Ib-Ⅳ-2、D-Ⅳ-1 與社會地理 Cb-Ⅳ-1 四份 `learning-content` lesson 的版本融合重寫；四份均為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三版本研究、三筆 `versionResearch`、`fusionRecord` 與六段獨立 teaching。全庫 `audit_version_fusion.py --strict` 實測由 369 件降至 365 件；`audit_lesson_independence.py --strict` 為 0 失敗。禁止 Terra，未宣稱全庫完成。
+
+> 2026-09-04（本輪）：完成社會歷史 Lb-Ⅳ-2、Ia-Ⅳ-1、Qa-Ⅳ-3、G-Ⅳ-2 四份 `learning-content` lesson 的版本融合重寫；四份均為 `version-fused-v1`／`draft`，各具南一、康軒、翰林三版本研究、三筆 `versionResearch`、`fusionRecord` 與六段獨立 teaching。全庫 `audit_version_fusion.py --strict` 由 373 件降至 369 件；`audit_lesson_independence.py --strict` 為 0 失敗。禁止 Terra，未宣稱全庫完成；`validate_data.py` 仍有既存 science question／lesson ID 與題數基線錯誤。
+
 > 2026-08-30 專案內容憲法：全科每一篇、每一單元都必須由 AI LLM 讀完可取得的各版本資料後，以自己的話重新寫成完整課文，成品要像不同作者針對不同單元獨立撰寫；禁止共用模板、正文、開場、段落骨架、例題、錯誤說明、互動流程與檢核句型。`scripts/audit_lesson_independence.py --strict` 現在對全部 588 個 learning-content lesson 執行，任兩課正規化後有重複段落即失敗。目前報告為 47 組重複、2,891 個受影響引用、482 個 lesson 未通過；因此全科內容尚未完成，不能進入 Terra 第二輪或 commit／push。
 
 > 2026-08-29 內容流程更正：目前 1,033 份非 deprecated lesson 仍是歷史 `full-lesson-v1`，不代表已逐一讀完南一／康軒／翰林版本，也不代表每個單元已由 LLM 獨立融合撰寫。新規格改用 `version-fused-v1`；數理、社會與語文 lesson 必須逐單元研究、獨立撰寫，禁止批次模板。`scripts/audit_version_fusion.py --strict` 會將未遷移的 reviewed lesson 列為失敗；Terra 第二輪 AI 複核完成前維持 `draft`。目前只依先前決策將語文科列入優先回溯範圍，其他科目不因此宣稱已完成新規格。
@@ -9,6 +59,12 @@
 > 2026-08-29 最新：網站已可由公開站分片載入 1,034 課、10,380 題，舊截圖中的 `3a(2a+5)` 搜尋結果為 0，新題可直接顯示選項、答案與解析。自然科 3,240 題、社會科 3,590 題已依 KG 語意分流重命題；英文已完成 137 個 lesson、1,370 題逐課重命題。全庫結構驗證通過，嚴格稽核的跨課相同選項、跨課語意骨架與題幹重複均為 0；目前題目為 180 題 `content-reviewed`、10,200 題 `draft`，後者尚未完成 Terra 第二輪 AI 內容複核。
 
 > 2026-08-29：國文 Ac-Ⅳ-1、Ac-Ⅳ-2、Ac-Ⅳ-3 已依現有穩定 lesson ID 改寫為三份 `version-fused-v1` 草稿：分別以廣播字幕剪輯、班級公約辯論、午餐剩食資料推論為教學入口，均補上南一、康軒、翰林的可追溯研究與原創融合紀錄。官方課綱沒有 Ac-Ⅳ-4／Ac-Ⅳ-5，故未新增虛構 lesson 或題庫引用。全庫 lesson 狀態目前為 960 `content-reviewed`、73 `draft`、4 `deprecated`；嚴格獨立性 gate 仍有既有 510 份 lesson 未通過，三份本批 lesson 的去除單元名稱段落比對未發現跨課碰撞。
+
+> 2026-09-04：本輪依未完成清單重做社會地理 Bh-Ⅳ-3、Bi-Ⅳ-3、Bi-Ⅳ-4、Ca-Ⅳ-2 四份 lesson；四份均為 `version-fused-v1`、`draft`，各具三家出版社研究、三筆版本研究、六段 teaching，並通過 JSON／Schema／目標契約檢查。Bi-Ⅳ-4 的 content sections 另補至五個以上。全庫 `scripts/audit_lesson_independence.py --strict` 實測為 `strictFailures=73`、`affectedReferences=415`；仍有其他科與社會歷史單元未完成，未宣稱全科完成，亦未 commit／push。
+
+> 2026-09-04（續）：重新回讀使用者既有地理清單後，實際 17 份目標檔（非 16 份）均已達 `version-fused-v1`／`draft`，各有 3 筆 publisherResearch、3 筆 versionResearch、6 段 teaching，單檔 schema 全數通過；全庫 `audit_lesson_independence.py --strict` 實測 `strictFailures=0`、`affectedReferences=0`。全庫仍有 382 份歷史 `full-lesson-v1:content-reviewed` 未遷移至新版本融合標準，另有既有 schema 基線錯誤，故不宣稱全庫發布完成。
+
+> 2026-09-04（續二）：版本融合 backlog 依 `audit_version_fusion.py --strict` 重新統計為社會 162、英文 94、數學 46、國文 42、自然 38，共 382 份；這些項目仍需逐單元來源研究與原創正文，不能只改狀態欄位。
 
 > 2026-08-27：歷史批次曾以官方課綱比對將 910 個可教學 lesson／9,100 題標為 `content-reviewed`，但抽查發現 lesson 仍是提綱式欄位，不能證明已完成使用者要求的完整教學本文或出版社教材研究。依 D-072，M4R 已重新開啟：每一單元須有可公開定位的出版社研究、完整自編正文、摘要、原創活動與題目，並以新 validator 驗收。M5 的固定 revision 索引與既有部署驗收保留，但不表示內容完成。
 
@@ -386,3 +442,7 @@ M3 依 D-070 的公開可追溯證據門檻已完成。部分冊別的來源仍�
 - 2026-08-29：以唯讀下載確認公開 `data-index.json` 已部署 `fe163d62a`；索引含 1,034 課、內嵌教材、新數學題「長方形的面積表示」，且不含舊題 `3a(2a+5)`。公開瀏覽器工具因索引約 21 MB 仍可能逾時，但公開資料內容已核對。
 - 2026-08-29：為降低 Pages 首次載入風險，改以同網域 10 個教材／題目分片取代大型內嵌索引；最新 `7aeb8ddbc` 的索引含 1,034 課、10,380 題，10 個分片均以 HTTP 200 公開，本機頁面載入、站點索引驗證及 GitHub Actions `validate-data`／`deploy-pages` 均通過。
 - 2026-08-29：重新稽核發現社會、自然、英文仍有跨課共用題型骨架，已以 KG 分流的原創情境、數據／條件、選項與解析重寫 7,820 題（社會 3,590、自然 3,240、英文 1,350），再將剩餘 24 筆數學共用技能題改為情境／推理題；全部維持 `draft`。全量 validator 通過，semantic-risk scan 的跨課骨架風險降為 0，僅剩 70 個教材標題草稿標記，尚待 Terra 第二輪 AI 複核。
+# 2026-09-05 工作更新
+
+- 完成國文「資訊來源可靠性」明確教學內容單元 `lesson-chinese-source-reliability` 的版本融合原創重寫與研究紀錄校正：保留穩定 ID／資料結構，確認 `authoringStandard=version-fused-v1`、`reviewStatus=draft`，具備三筆 `publisherResearch`、三筆 `versionResearch`、`fusionRecord` 與六段完整 `teaching.body`。正文以校園社群訊息、原始資料追溯、證據範圍、交叉查證與媒介遷移為單元專屬脈絡；未執行 Terra、commit 或 push。
+- 本次更新後，先前盤點的 15 個明確教學內容 backlog 尚餘 14 個；其他學習表現、導覽與能力架構節點不列入本明確教學內容 backlog。

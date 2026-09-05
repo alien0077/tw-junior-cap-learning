@@ -269,6 +269,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "climate-adaptation-evidence-lab",
+      "objective": "以時間尺度與暴露—脆弱度資料區分減緩、調適及其分配影響。",
+      "predictionPrompt": "同樣的高溫情境下，增加樹冠、降低排放與發布警報，哪種指標會先改變？",
+      "steps": [
+        {"action": "切換短期天氣資料與長期氣候序列，標記可支持的趨勢", "equation": "trend=long\u002dterm pattern"},
+        {"action": "調整排放、遮蔭與排水，記錄暴露、脆弱度和受益群體", "equation": "risk=hazard\u00d7exposure\u00d7vulnerability"},
+        {"action": "比較減緩與調適成效、成本及副作用後修正方案", "equation": "score=benefit\u002dcost\u002dsideEffects"}
+      ]
+    }
   }
 }

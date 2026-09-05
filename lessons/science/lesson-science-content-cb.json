@@ -161,6 +161,16 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "structure-function-lab",
+      "objective": "從原子連接與排列預測材料性質，再用資料檢查模型。",
+      "predictionPrompt": "改變鍵結方向或排列密度後，材料的硬度與導電性如何變化？",
+      "steps": [
+        {"action":"拖曳原子與鍵結建立材料模型","equation":"structure=atoms+bonds"},
+        {"action":"施加力、熱或電場觀察性質","equation":"response=f(structure)"},
+        {"action":"比較預測與測量並修正模型","equation":"error=observed-predicted"}
+      ]
+    }
   }
 }

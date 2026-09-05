@@ -85,6 +85,7 @@
     "model": "general",
     "goal": "用波形、測量條件與聲源—路徑—受體模型判讀聲音特性並設計噪音防治。",
     "mission": "你要替校園午休噪音做一份可重測的調查：先比較自編聲波資料的振幅與頻率，再判斷回聲和噪音來源，最後選擇能被證據檢驗的防治位置。",
+    "learningDesign":{"type":"school-noise-mapping","objective":"以振幅、頻率、距離與反射資料定位校園噪音並評估防治措施。","predictionPrompt":"同一聲源在不同位置響度不同時，如何區分距離衰減與反射回聲？","steps":[{"action":"量測各點聲波振幅、頻率與時間差","equation":"sound=amplitude+frequency"},{"action":"標記牆面反射與聲源距離，建立噪音分布","equation":"level=f(distance,reflection)"},{"action":"比較吸音、隔音與調整位置的效果","equation":"control=source+path+receiver"}]},
     "sourceRefs": ["https://stv.naer.edu.tw/data/course_outline/pta_18538_240851_60502.pdf", "https://www.naer.edu.tw/PageDoc/Detail?fid=55&id=1290", "https://digitalmaster.knsh.com.tw/all/video/j/nature_page.html?l1=YouTube%推薦影音&l2=8上", "https://tpack.nani.com.tw/nani_content?a=75&b=2", "https://books.hanlin.com.tw/product/1040161"]
   }
 }

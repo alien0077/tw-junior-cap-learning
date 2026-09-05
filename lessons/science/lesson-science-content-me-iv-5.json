@@ -315,6 +315,7 @@
     "model": "general",
     "goal": "用來源—路徑—受體—證據模型判讀重金屬污染的影響。",
     "mission": "虛構的溪流與農田調查中，請逐步判斷哪些資料能支持污染路徑與防治決策。",
+    "learningDesign":{"type":"pollution-source-tracing","objective":"以濃度、流向、降雨與土地利用資料追蹤污染路徑並選擇防治措施。","predictionPrompt":"下游濃度升高但大雨同時發生時，如何分辨稀釋、沖刷或新污染源？","steps":[{"action":"沿溪流標記農田、排水口與測站位置","equation":"load=concentration\u00d7flow"},{"action":"比較上游下游及降雨前後濃度與流量","equation":"source=pattern+timing"},{"action":"評估源頭減量、緩衝帶與監測方案並標示限制","equation":"control=effectiveness+feasibility"}]},
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

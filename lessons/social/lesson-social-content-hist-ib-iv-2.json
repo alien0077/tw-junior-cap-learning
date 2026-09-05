@@ -47,7 +47,7 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "kanghsuan",
@@ -65,45 +65,53 @@
       ],
       "outcome": "公開出版社資源提供社會資料判讀與公民素養的單元節奏與活動節點；本課依「歷 Ib-Ⅳ-2：甲午後政治體制變革」重新安排自編正文、示例、練習、遷移與檢核。",
       "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    }
+    },
+    {"publisher":"nani","edition":"南一版國中社會公開可取得範圍","subject":"social","chapterLocator":"歷 Ib-Ⅳ-2：甲午後政治體制變革；公開資料僅作定位","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-04","researchScope":["concept-progression","assessment-pattern"],"outcome":"由制度變革、地方執行與居民經驗建立政治體制的多層次閱讀；完整正文未公開，本文不重述出版社文字。","copyrightBoundary":"只採公開定位與教學方向；正文、史料情境、活動與檢核均為自編。"},
+    {"publisher":"hanlin","edition":"翰林國中社會公開樣書與索引","subject":"social","chapterLocator":"歷 Ib-Ⅳ-2：甲午後政治體制變革；公開資料可核對制度與史料閱讀方向","sourceUrl":"https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E6%A8%A3%E6%9B%B8/","access":"public-open","reviewedAt":"2026-09-04","researchScope":["concept-progression","activity-pattern","assessment-pattern"],"outcome":"把制度、地方檔案和居民觀點並置比較治理落差；不把索引誤寫成出版社全文。","copyrightBoundary":"不複製樣書文字、圖片、題目或答案，所有內容均重新撰寫。"}
   ],
+  "versionResearch": [
+    {"publisher":"nani","sourceLocator":"https://www.nani.com.tw/","reviewedAt":"2026-09-04","findings":{"concepts":["甲午後制度重整改變中央與地方關係","法律、教育、戶籍與警察制度進入日常治理"],"representations":["制度時間線、機關層級與地方案例"],"examplesOrEvidence":["自編地方廳命令與村落陳情"],"misconceptions":["把制度建立等同居民立即接受"],"assessmentEmphasis":["區分制度設計、執行與居民反應"]}},
+    {"publisher":"kanghsuan","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/j/geography_page.html?l1=7%E4%B8%8A","reviewedAt":"2026-09-04","findings":{"concepts":["以時序與制度圖理解甲午後政治轉變","比較中央規範和地方運作"],"representations":["機關流程圖、法規摘要與地方資料"],"examplesOrEvidence":["自編警察管區與戶口登記資料"],"misconceptions":["把命令內容當成實際治理成果"],"assessmentEmphasis":["標示機關、日期、對象和證據界線"]}},
+    {"publisher":"hanlin","sourceLocator":"https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E6%A8%A3%E6%9B%B8/","reviewedAt":"2026-09-04","findings":{"concepts":["從多方史料觀察制度移植與地方協商","辨認制度影響的群體差異"],"representations":["公文、陳情與統計資料對讀"],"examplesOrEvidence":["自編語言、土地與差役困難案例"],"misconceptions":["只用官方文件判定改革成敗"],"assessmentEmphasis":["提出被忽略的聲音與待查證據"]}}
+  ],
+  "fusionRecord":{"commonCore":["三版本均將甲午後政治體制視為制度與社會關係的變化。","均需連結中央政策、地方執行和居民經驗。"],"versionDifferences":["南一提供制度脈絡入口；康軒適合流程與資料判讀；翰林強調多方史料及影響比較。","公開資料不完整，只融合可查證的教學取向。"],"originalAdditions":["以公文印章和機關名稱變化開課。","用命令、陳情與地方財政資料追蹤制度落地。","遷移到今日戶籍服務，檢查規範與實際可及性的落差。"],"llmSynthesisNote":"依官方課綱與 kg-social-content-hist-ib-iv-2，整合三版本可取得線索後，採制度文件與居民陳情對讀重新撰寫六段原創教學；不複製出版社內容，維持 draft。"},
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
         "heading": "從公共議題進入「歷 Ib-Ⅳ-2：甲午後政治體制變革」",
-        "body": "先找一個與「歷 Ib-Ⅳ-2：甲午後政治體制變革」相連的生活議題，辨認涉及哪些人、地方、時間與資源。把事件描述和自己的評價分開，列出需要查證的問題；社會學習不是背零散年代或名詞，而是理解人群如何在制度與環境中做選擇。"
+        "body": "從地方公文上的印章變化切入：甲午戰後，誰有權發文、徵稅與審判？先比較前後機關名稱與語言，再問制度移植如何進入學校、警察與戶籍的日常。"
       },
       {
         "id": "explain",
         "phase": "explain",
         "heading": "用史料、地圖與制度理解關係",
-        "body": "本單元依官方課綱所列的「甲午後政治體制變革」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "body": "甲午後政治體制變革包含殖民統治機關、警察與地方制度、戶籍、教育及法律秩序的重整；制度常接收舊有地方網絡，再以新法規重分配權力。分析要區分中央設計、地方執行與居民協商／抵抗。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
         "heading": "自編資料題：從證據形成解釋",
-        "body": "以「歷 Ib-Ⅳ-2：甲午後政治體制變革」為主題，讀兩段自編資料並製作「來源—時間—直接資訊—推論—限制」五欄表；先回答資料顯示什麼，再說明何種證據才能支持因果或價值判斷。"
+        "body": "比較自編的地方廳命令與村長陳情書：命令規定警察管區與戶口登記，陳情則記錄語言、土地與差役困難。先標機關、日期與對象，再追蹤規則如何落地；要判斷治理是否『有效』，還需查申訴、逃避與地方財政資料。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
         "heading": "四步判讀社會資料",
-        "body": "針對「甲午後政治體制變革」先標來源、時間、尺度與直接資訊，再分開寫推論與價值判斷；比較至少兩種解釋，指出需要補查的資料與受影響群體。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "body": "小組繪製權力流程圖，從總督府規則一路連到警察、學校、村落與家庭；再交換一張『地方慣例』卡，看流程哪裡被改寫或繞過。每個箭頭都需附一筆公文、名冊或口述證據。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
         "heading": "把分析方法用於現在",
-        "body": "將「歷 Ib-Ⅳ-2：甲午後政治體制變革」的分析框架套用到當代新聞、校園規則或地方環境問題，重新確認利害關係人、權利義務與可行方案。比較不同方案的成本、受益與風險，說明你的選擇依據，並提出一個能被公共討論或資料驗證的後續問題。"
+        "body": "把流程圖用於今日地方自治與戶籍服務：比較中央規範、窗口流程和民眾實際經驗，找出權利、語言與可及性的落差。以辦理時間、申訴紀錄與服務覆蓋率驗證改進方案。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
         "heading": "成為負責任的資料讀者",
-        "body": "完成後回顧：我使用了哪些一手或二手資料、哪個觀點可能被忽略、結論的適用範圍在哪裡。再用一句話總結「歷 Ib-Ⅳ-2：甲午後政治體制變革」如何連結個人生活與公共制度，並檢查引用、地圖方向、時間順序與用詞是否精確。"
+        "body": "最後核對制度名稱、機關層級與施行日期，避免把殖民命令等同居民共識。列出哪些人只在戶籍數字中出現、哪些地方慣例沒有文字記錄，並明確標示限制。"
       }
     ],
     "summary": [
@@ -127,7 +135,7 @@
       }
     ]
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-04",
   "lessonScope": "learning-content"
 }
