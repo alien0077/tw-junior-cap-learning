@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,8 +163,8 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "整合文字、圖表與情境資料，完成可回溯、有限定的跨域解題。",
+    "type": "chinese-manipulation-lab",
+    "goal": "操作天氣、交通與預算條件，觀察候選路線如何被硬條件淘汰，並留下資料對齊與備案。",
     "scenario": "學生要為校外教學選路線，先從說明文與圖表抽取條件，再用地圖、天氣、交通與費用資料篩選方案，最後寫出證據和備案。",
     "variables": [
       {
@@ -181,40 +181,12 @@
       }
     ],
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "面對結合說明文、表格與生活情境的跨域題，第一步應做什麼？",
-        "options": [
-          "圈出題目動詞、對象、時間、單位與限制，先確定要比較、解釋還是決策",
-          "先挑看起來數字最大的一欄",
-          "先用生活經驗猜答案，再回頭找支持句"
-        ],
-        "answer": "A",
-        "feedback": "A 先界定任務與條件，避免把資料中最醒目的數字誤當成問題答案。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "調查顯示晨讀班平均成績較高，哪個結論最謹慎？",
-        "options": [
-          "兩組成績有關聯，但還要檢查原有閱讀習慣、教師與家庭等差異，不能直接證明晨讀造成提升",
-          "晨讀一定是唯一原因，其他因素都不必考慮",
-          "因為不是實驗，所以資料完全沒有價值"
-        ],
-        "answer": "A",
-        "feedback": "A 同時使用調查資料並保留因果限制，避免把相關當成唯一原因。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "地圖、天氣、交通與費用表要用來選校外教學路線，哪套流程完整？",
-        "options": [
-          "先設定安全、時間與預算條件，淘汰不合者，再比較剩餘方案並準備天氣變化的備案",
-          "只選最便宜路線，不用看天氣與交通",
-          "只看地圖距離，其他資料和決策無關"
-        ],
-        "answer": "A",
-        "feedback": "A 將不同資料放入同一決策條件，並把不確定性轉成備案。"
-      }
-    ]
+      "先設定安全、抵達時間與預算三個硬條件。",
+      "切換晴天／大雨、正常／誤點與預算上限，觀察各路線合格狀態。",
+      "查看每條路線被淘汰的具體資料原因，不用單一最低價決策。",
+      "選定方案後再切換一個條件，建立資料改變時的備案。"
+    ],
+    "mode": "cross-domain-decision"
   },
   "versionResearch": [
     {
@@ -311,5 +283,12 @@
       "以路線選擇把閱讀證據轉成有備案的實際決策。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織跨文本閱讀、圖表地圖年表、資料轉換、因果限制與決策表達。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：跨域題先對齊，才有資格計算",
+    "memoryHook": "任務→資料→對齊→比較／計算→推論→限制",
+    "mustKnow": "文字、表格、圖、地圖、年表各有不同功能。比較前一定核對對象、時間、單位、尺度；看到同時變化只能先說相關，因果還要排除其他因素。",
+    "trap": "看到最大值就選；不同年份或單位直接混算；把相關寫成『造成』；決策只看最便宜或最短。",
+    "examMove": "把答案中的『因此、造成、最好』圈起來，問它是資料直接顯示、推論，還是價值選擇；每一步都要能指回資料。"
   }
 }
