@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 84,
-    "pendingCurriculumIds": 948,
-    "nextCurriculumId": "cur-english-content-a",
+    "reviewedCurriculumIds": 85,
+    "pendingCurriculumIds": 947,
+    "nextCurriculumId": "cur-english-content-aa-iv-1",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 84,
-    "pendingUnits": 948
+    "reviewedUnits": 85,
+    "pendingUnits": 947
   },
   "systemicFindings": [
     {
@@ -2250,10 +2250,11 @@
       "curriculumId": "cur-english-content-a",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-a.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "不適用：此節點為官方「A：語言知識 theme」索引，教學由其 learning-content 子節點承載。",
+      "questionStatus": "不適用：索引節點不另設題庫，避免與正式學習內容重複。",
+      "interactionStatus": "不適用：索引節點僅供分類／導覽，不另造無課綱依據互動。",
+      "overallStatus": "通過（索引節點）",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-aa-iv-1",
