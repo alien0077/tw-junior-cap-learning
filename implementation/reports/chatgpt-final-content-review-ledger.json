@@ -3,7 +3,7 @@
   "reviewRole": "ChatGPT final curriculum/lesson/question/interaction content review",
   "repository": "alien0077/tw-junior-cap-learning",
   "branch": "main",
-  "commit": "6723a0c2ab996103899e19c1d4daced96d6a3b83",
+  "commit": "38670aaa700ca9d7d76f565da74d225879b8500b",
   "asOf": "2026-09-29",
   "policy": {
     "noSampling": true,
@@ -73,9 +73,9 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 57,
-    "pendingCurriculumIds": 975,
-    "nextCurriculumId": "cur-chinese-performance-2-iv-1",
+    "reviewedCurriculumIds": 56,
+    "pendingCurriculumIds": 976,
+    "nextCurriculumId": "cur-chinese-performance-1",
     "currentBrowserExecution": "未能在本工具環境啟動 repo 本機學生頁；不得視為通過"
   },
   "systemicFindings": [
@@ -1907,7 +1907,7 @@
       "curriculumPath": "curriculum/chinese/performance-1-iv-3.json",
       "lessonStatus": "內容通過／來源待逐筆外網複核",
       "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
-      "interactionStatus": "不通過／已有主張—理由—證據—限制—方案資料層，但缺可拖放論證圖、條件分支與試辦指標同步視覺",
+      "interactionStatus": "不通過／資料層已改為論證圖／替代原因／試辦條件專屬，但仍缺真正控制與同步視覺",
       "overallStatus": "需修正",
       "lessonPaths": [
         "lessons/chinese/lesson-chinese-performance-1-iv-3.json"
@@ -1926,8 +1926,8 @@
       ],
       "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-performance-1-iv-3.yaml",
       "defects": [
-        "學生應能把句子拖入主張／理由／證據／限制節點、連線推論並切換反例；目前仍是 guided-choice。",
-        "GeoGebra-style gate 不通過。",
+        "interactive 已於 c32e2a9d492e76957dda5d2a49db45750d10eb78 強化為單元專屬模型。",
+        "學生端仍缺論證圖拖放／條件開關／版本比較／權限與可及性模擬，GeoGebra-style gate 不通過。",
         "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
       ],
       "evidence": [
@@ -1943,7 +1943,7 @@
       "curriculumPath": "curriculum/chinese/performance-1-iv-4.json",
       "lessonStatus": "內容通過／來源待逐筆外網複核",
       "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
-      "interactionStatus": "不通過／已有來源、版本、權限、可及性與責任資料層，但缺可直接操作的來源查證／版本比較／權限視覺",
+      "interactionStatus": "不通過／資料層已改為來源／版本／權限／可及性專屬，但仍缺真正控制與同步視覺",
       "overallStatus": "需修正",
       "lessonPaths": [
         "lessons/chinese/lesson-chinese-performance-1-iv-4.json"
@@ -1962,8 +1962,8 @@
       ],
       "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-performance-1-iv-4.yaml",
       "defects": [
-        "數位聆聽內容完整，但學生端尚不能操作來源鏈、版本差異、權限與同步／非同步參與條件。",
-        "GeoGebra-style gate 不通過。",
+        "interactive 已於 38670aaa700ca9d7d76f565da74d225879b8500b 強化為單元專屬模型。",
+        "學生端仍缺論證圖拖放／條件開關／版本比較／權限與可及性模擬，GeoGebra-style gate 不通過。",
         "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
       ],
       "evidence": [
