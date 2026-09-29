@@ -19,6 +19,11 @@ def main() -> int:
         option_ids = [str(o.get("id")) for o in options]
         option_texts = [str(o.get("text", "")).strip() for o in options]
         answer = str(data.get("answer", {}).get("value", ""))
+        solution_steps = data.get("solutionSteps", [])
+        explicit_key_mentions = [str(step) for step in solution_steps if str(step).startswith("核對正解：選項 ")]
+        solution_key_consistent = True
+        if explicit_key_mentions and data.get("type") == "single-choice":
+            solution_key_consistent = all(f"核對正解：選項 {answer} " in step for step in explicit_key_mentions)
         checks = {
             "answerPresent": bool(answer),
             "answerMapsToOption": data.get("type") != "single-choice" or answer in option_ids,
@@ -28,7 +33,8 @@ def main() -> int:
             "explanationPresent": bool(str(data.get("answer", {}).get("explanation", "")).strip()),
             "strategyPresent": bool(str(data.get("solutionStrategy", "")).strip()),
             "solutionStepsAtLeastThree": len(data.get("solutionSteps", [])) >= 3,
-            "solutionStepsNonEmpty": all(str(step).strip() for step in data.get("solutionSteps", [])),
+            "solutionStepsNonEmpty": all(str(step).strip() for step in solution_steps),
+            "solutionKeyConsistent": solution_key_consistent,
         }
         failed = [name for name, passed in checks.items() if not passed]
         if failed:
@@ -42,7 +48,7 @@ def main() -> int:
         "passed": len(rows) - len(errors),
         "failed": len(errors),
         "duplicatePromptCopies": duplicate_prompts,
-        "note": "Structural answer audit only; subject correctness, distractor quality and pedagogical review remain separate gates.",
+        "note": "Checks structural answer contracts plus explicit solution-key consistency. Subject correctness, distractor quality and pedagogical review still require per-question review.",
     }
     out = ROOT / "implementation/reports/question-answer-audit.json"
     out.write_text(json.dumps({"summary": summary, "errors": errors, "questions": rows}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
