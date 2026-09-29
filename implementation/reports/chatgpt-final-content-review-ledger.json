@@ -75,6 +75,15 @@
       "evidence": [
         "implementation/runtime/renderer-registry.js"
       ]
+    },
+    {
+      "severity": "P0",
+      "id": "QUESTION_ANSWER_KEY_DRIFT",
+      "finding": "Ab-IV-1 10 題中 7 題 answer.value 與題意/解析衝突，顯示題庫可能存在系統性答案鍵漂移；後續必須逐題核對，不可依既有 QA。",
+      "evidence": [
+        "questions/chinese/question-chinese-content-ab-iv-1-{1..10}.json"
+      ],
+      "fixedExamples": "c3f4d95bcaed5b1f5998910cecae47e4b3b7e49b"
     }
   ],
   "units": [
@@ -111,16 +120,15 @@
       "curriculumId": "cur-chinese-content-ab-iv-1",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-ab-iv-1.json",
-      "lessonStatus": "證據不足／需修正",
-      "questionStatus": "需修正",
-      "interactionStatus": "證據不足／未能實際驗證",
+      "lessonStatus": "需修正",
+      "questionStatus": "需修正（7 個答案鍵已修復；來源定位仍不足）",
+      "interactionStatus": "需修正／未能實際瀏覽器驗證",
       "overallStatus": "需修正",
       "knowledgeGraphIds": [
         "kg-chinese-content-ab-iv-1"
       ],
       "lessonPaths": [
-        "lessons/chinese/lesson-chinese-content-ab-iv-1.json",
-        "lessons/chinese/lesson-chinese-common-character-form-sound-meaning.json"
+        "lessons/chinese/lesson-chinese-content-ab-iv-1.json"
       ],
       "questionIds": [
         "question-chinese-content-ab-iv-1-1",
@@ -202,22 +210,23 @@
         }
       ],
       "defects": [
-        "primary lesson 的 versionResearch 主要是出版社公開索引；publisherResearch 是公立學校課程計畫。這些足以支持課綱／版本定位，但不足以證明已實際讀到三版教材內容並完成實質三版本融合；unit spec 自己也明示 textbook-chapter-content pending。",
-        "lesson content.sections 僅三段摘要，與 teaching.body 六段長文不一致；正式 workbench student shell 又不載入 lesson teaching.body/content.sections，因此學生可見正文無法與審查正文對齊。",
-        "questions 3–9 的 answer.value 有 7 題錯誤，且多數 solutionSteps 的『核對正解』跟著錯誤 answer value，與 explanation/題意矛盾。",
-        "examPatternRefs locator 多為 paper 級泛稱『常用字形音義與詞語』『字音、字形、詞義與語境』，未提供頁碼／題號；不足以逐題追查所稱公開試題能力方向。",
-        "TextEvidenceBlock 在目前 renderer-registry.js 未見本單元專屬文本、可操作證據或圖形資料 renderer；只可確認 generic 文字化模型。未能在本工具環境實際操作瀏覽器，不能判互動通過。"
+        "lesson 的 versionResearch 三家早期公開索引 findings 高度相同，且自述未取得教材正文；不能視為三版本實質融合。",
+        "publisherResearch 已有三份公立學校版本標示課程計畫，可支持版本/能力定位，但不足以證明讀過三版教材正文。",
+        "Q3/Q4/Q5/Q6/Q7/Q8/Q9 原 answer.value 與題意及 explanation 明顯衝突，已於 commit c3f4d95 修正。",
+        "題庫 examPatternRefs locator 多為 paper-level『常用字形音義與詞語』，未提供頁碼/題號，依本次標準仍屬來源定位不足。",
+        "GuidedChoiceBlock 原 renderer 未呈現 lesson.interactive.steps；已於 commit 6d4ac41 接線並新增逐題錯答重試，但本工具環境尚未實際操作瀏覽器。"
       ],
       "evidence": [
         "curriculum/chinese/content-ab-iv-1.json",
-        "knowledge/chinese/foundational-graph.json#kg-chinese-content-ab-iv-1",
         "lessons/chinese/lesson-chinese-content-ab-iv-1.json",
-        "lessons/chinese/lesson-chinese-common-character-form-sound-meaning.json",
-        "questions/chinese/question-chinese-content-ab-iv-1-1.json ... -10.json",
+        "questions/chinese/question-chinese-content-ab-iv-1-{1..10}.json",
         "implementation/unit-specs/chinese/cur-chinese-content-ab-iv-1.yaml",
         "implementation/runtime/renderer-registry.js",
-        "implementation/runtime/student-lesson-shell.js",
-        "NAER official curriculum: Ab-Ⅳ-1 = 4,000 個常用字的字形、字音和字義"
+        "教育部重編國語辭典修訂本：分量詞義、字詞/多音字編輯原則（2026-09-29 查核）"
+      ],
+      "fixes": [
+        "c3f4d95bcaed5b1f5998910cecae47e4b3b7e49b",
+        "6d4ac41acaf2b96e3924f4331386348dfb7422f8"
       ]
     },
     {
