@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,57 +163,14 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "依讀者、目的、情境與格式完成能被查找、理解和執行的實用文本。",
-    "scenario": "學生要完成教室通知、場地申請與成果展邀請，依序填任務卡、安排資訊、調整語氣，再用讀者執行測試修訂。",
-    "variables": [
-      {
-        "symbol": "t",
-        "meaning": "文本任務與必備資訊"
-      },
-      {
-        "symbol": "a",
-        "meaning": "讀者、格式與語氣"
-      },
-      {
-        "symbol": "u",
-        "meaning": "查找、執行與發布檢查"
-      }
-    ],
+    "type": "chinese-manipulation-lab",
+    "mode": "practical-text-editor",
+    "goal": "切換通知／申請與不同讀者，勾選必備欄位並即時檢查可查找、可執行與發布風險。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "要通知同學下週更換教室，哪項內容最不可缺少？",
-        "options": [
-          "更換日期、時間、新教室位置與遇到問題的聯絡方式",
-          "只寫『下週換教室』，細節讓同學自行詢問",
-          "先寫很長的背景故事，行動資訊可以省略"
-        ],
-        "answer": "A",
-        "feedback": "A 讓讀者能在正確時間到正確地點並知道如何處理疑問。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "寫社團場地申請時，哪種表達最符合正式文書需求？",
-        "options": [
-          "只寫『拜託借場地，很好玩』，不必交代責任",
-          "清楚列出申請對象、活動目的、日期時段、使用需求、維護責任與聯絡方式",
-          "用大量感嘆號要求對方一定核准"
-        ],
-        "answer": "B",
-        "feedback": "B 提供審核所需資訊與責任邊界，語氣正式而可執行。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "同一防災資訊給幼兒與家長閱讀，哪項原則正確？",
-        "options": [
-          "兩版完全相同，因為讀者不影響寫作",
-          "核心安全動作相同，但依年齡調整句長、步驟、圖示、判斷條件與聯絡資訊",
-          "幼兒版刪掉所有安全細節，家長版只放口號"
-        ],
-        "answer": "B",
-        "feedback": "B 保留安全核心並依讀者能力與責任調整表達層級。"
-      }
+      "選文本任務與讀者，觀察必備欄位如何改變。",
+      "逐一補日期、地點、行動、責任與聯絡方式，看完整度。",
+      "切換同學／家長／低年級，調整語氣與資訊層級但保留核心事實。",
+      "發布前切換個資、附件版本與連結狀態，修正風險。"
     ]
   },
   "versionResearch": [
@@ -311,5 +268,12 @@
       "以陌生讀者查找、重述與執行測試取代只看文句順眼。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織實用文本、通知申請報告規則、讀者分眾、資訊組織與發布檢查。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：實用文本先問「讀者下一步要做什麼」",
+    "memoryHook": "誰讀 → 要做什麼 → 必備資訊 → 最快找到 → 發布前查風險",
+    "mustKnow": "通知、申請、邀請、報告、規則沒有一個萬用模板。格式要服務任務；分眾可改句長、例子、語氣與資訊層級，但核心事實、風險與責任不能被改掉。",
+    "trap": "正式＝艱深；簡短＝可以刪時間地點；排版漂亮＝資訊完整；換讀者＝只換稱謂。",
+    "examMove": "把答案想成陌生讀者操作測試：他能否在十秒內找到何時、何地、做什麼、遇到問題找誰？"
   }
 }
