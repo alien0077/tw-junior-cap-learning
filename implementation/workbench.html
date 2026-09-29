@@ -67,7 +67,7 @@
     function renderSelected() {
       mount.replaceChildren();
       const spec = bundle.units.find(unit => unit.lessonId === select.value);
-      renderStudentLesson({ document, mount, spec });
+      renderStudentLesson({ document, mount, spec, lesson: spec.authoredLesson || null });
       status.textContent = `已載入 ${bundle.units.length} 份 unit specs；目前 ${spec.lessonId}／${spec.interactiveBlocks[0].component}；狀態仍為 ${spec.status.implementationStatus}／${spec.status.qaStatus}`;
     }
     select.addEventListener("change", renderSelected);
