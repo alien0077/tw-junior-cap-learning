@@ -21,14 +21,19 @@ def main() -> int:
             lessons_by_id[lesson_id] = lesson
     for path in files:
         spec = yaml.safe_load(path.read_text(encoding="utf-8"))["unitImplementationSpec"]
-        lesson_id = spec.get("lessonId")
+        curriculum_id = spec.get("lessonId")
+        lesson_id = curriculum_id.replace("cur-", "lesson-", 1) if isinstance(curriculum_id, str) and curriculum_id.startswith("cur-") else curriculum_id
         lesson = lessons_by_id.get(lesson_id)
         if lesson is not None:
             spec["authoredLesson"] = lesson
+        spec["authoredLessonId"] = lesson_id
+        spec["authoredLessonAttached"] = lesson is not None
         units.append(spec)
     out = ROOT / "implementation/unit-specs.bundle.json"
     out.write_text(json.dumps({"specVersion": "1.0", "units": units}, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
-    print(json.dumps({"units": len(units), "lessonsAttached": sum(1 for unit in units if "authoredLesson" in unit), "output": str(out)}, ensure_ascii=False))
+    attached = sum(1 for unit in units if unit.get("authoredLessonAttached"))
+    missing = [unit.get("lessonId") for unit in units if not unit.get("authoredLessonAttached")]
+    print(json.dumps({"units": len(units), "lessonsAttached": attached, "lessonsMissing": len(missing), "missingLessonCurriculumIds": missing, "output": str(out)}, ensure_ascii=False))
     return 0
 
 
