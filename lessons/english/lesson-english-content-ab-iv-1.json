@@ -39,8 +39,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課依官方課綱與記錄的版本研究獨立撰寫；只融合重音、語調與溝通任務的概念，不複製出版社文字、音檔、例題、答案或活動腳本。所有英文句子、對話與練習均為自編。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "versionResearch": [
@@ -253,40 +253,29 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ab-Ⅳ-1：句子發音重音語調」的形式與功能",
-    "scenario": "以「Ab-Ⅳ-1：句子發音重音語調」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "stress-intonation-console",
+    "goal": "在同一句中移動主要重音並切換句尾升／降調，觀察焦點與互動功能如何改變。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ab-Ⅳ-1：句子發音重音語調」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ab-Ⅳ-1：句子發音重音語調」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ab-Ⅳ-1：句子發音重音語調」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ab-Ⅳ-1：句子發音重音語調」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ab-Ⅳ-1：句子發音重音語調」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ab-Ⅳ-1：句子發音重音語調」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ab-Ⅳ-1：句子發音重音語調」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "在 Sam borrowed the key 中依 Who?／What? 點選 SAM 或 KEY 作主要重音。",
+      "在 I said Thursday, not Tuesday 中標出 Thursday／Tuesday 對比重音。",
+      "切換 You finished the project. 的 falling／rising，分辨陳述與確認／驚訝。",
+      "把同一句錄音前先預測聽者會回述哪個焦點，再用回述結果檢查重音是否有效。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：重音回答『哪個資訊最重要』，語調回答『這句話怎麼和聽者互動』",
+    "memoryHook": "先看問題 → 找新資訊／更正 → 移動重音 → 再看句尾升降",
+    "mustKnow": [
+      "Who? 通常把人名讀重；What? 把物件／內容讀重；更正時把對比的兩項讀清楚。",
+      "一般 yes/no 問句常見句尾上揚；中性陳述常收束下降，但真實語境可因驚訝、確認或態度改變。",
+      "不要把語調規則背成永遠固定；先判斷說話目的。"
+    ],
+    "traps": [
+      "每個問句都一定上揚。",
+      "把每個字都讀重就會更清楚。",
+      "只看標點，不聽說話者要確認、修正或對比什麼。"
+    ],
+    "examMove": "把題目改寫成隱藏問句：Who / What / Which one / Are you sure?，再決定重音與句尾。"
   }
 }
