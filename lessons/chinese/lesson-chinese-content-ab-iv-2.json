@@ -264,9 +264,9 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
+    "type": "chinese-manipulation-lab",
     "goal": "掌握常用字的正確寫法、讀法與詞語搭配，避免形近、音近字誤用。",
-    "scenario": "四張卡片代表形、音、義、搭配；請依『先辨線索、再回句核對』的順序排列。",
+    "scenario": "比較候選字的部件、詞義與搭配，將正確字放回完整句子驗證。",
     "steps": [
       {
         "id": "step-1",
@@ -301,6 +301,7 @@
         "answer": "A",
         "feedback": "詞語搭配與研究流程共同支持『整理並提出結論』。"
       }
-    ]
+    ],
+    "mode": "word-choice"
   }
 }
