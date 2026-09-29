@@ -9,7 +9,26 @@
     "noSampling": true,
     "existingReportsAreEvidenceNotPass": true,
     "uncheckedIsNotPass": true,
-    "browserRule": "Only actual current browser operation can be marked interaction pass."
+    "browserRule": "Only actual current browser operation can be marked interaction pass.",
+    "interactivePassGate": {
+      "reference": "GeoGebra-style concept visualization; user reference https://www.geogebra.org/m/FVAZsqkr",
+      "required": [
+        "單元專屬視覺模型直接呈現核心概念，不以通用文字卡或流程按鈕代替",
+        "學生可直接拖曳、調整、選取或操控模型中的關鍵變數／物件",
+        "操作後圖形、標籤、數值、方向、比例與文字回饋同步更新且圖文一致",
+        "視覺變化本身足以幫助學生看懂概念與因果／數量／結構關係",
+        "至少驗證初始、錯誤或非目標、正確／目標、重設或情境切換狀態",
+        "鍵盤、非色彩唯一提示、窄螢幕與離線 fallback 不破壞核心理解"
+      ],
+      "notSufficient": [
+        "只有按鈕",
+        "純文字選擇題",
+        "只切換文字",
+        "通用 predict/manipulate/observe/explain/verify 控制列",
+        "靜態圖片加文字",
+        "YAML 宣稱 implemented/verified 或自動測試 PASS"
+      ]
+    }
   },
   "inventory": {
     "totals": {
@@ -60,6 +79,16 @@
     "currentBrowserExecution": "未能在本工具環境啟動 repo 本機學生頁；不得視為通過"
   },
   "systemicFindings": [
+    {
+      "severity": "P0",
+      "id": "INTERACTIVE_VISUAL_GATE_RAISED",
+      "finding": "依使用者指定 GeoGebra 參考標準，既有通用流程按鈕、純文字選擇與文字 fallback 不再構成互動教學 PASS；全部 1027 implementation-scope units 必須逐單元重新驗證單元專屬視覺模型與直接操作造成的同步視覺變化。",
+      "evidence": [
+        "https://www.geogebra.org/m/FVAZsqkr",
+        "implementation/runtime/dom-renderer.js",
+        "implementation/runtime/renderer-registry.js"
+      ]
+    },
     {
       "severity": "P0",
       "id": "STUDENT_LESSON_VISIBILITY",
