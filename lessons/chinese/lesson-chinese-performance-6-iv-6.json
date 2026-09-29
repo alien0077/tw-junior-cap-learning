@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,57 +163,14 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "依媒介和讀者改編作品，同時保留證據、脈絡、可近性、來源與版本責任。",
-    "scenario": "學生要把校園樹木調查做成線上文章、簡報與短影音，依序選媒介、改編資料、補無障礙資訊、標示來源並用讀者回饋修訂。",
-    "variables": [
-      {
-        "symbol": "m",
-        "meaning": "媒介與讀者任務"
-      },
-      {
-        "symbol": "e",
-        "meaning": "證據、脈絡與可近性"
-      },
-      {
-        "symbol": "v",
-        "meaning": "版本、發布與回饋"
-      }
-    ],
+    "type": "chinese-manipulation-lab",
+    "mode": "media-editing-console",
+    "goal": "切換媒介、讀者、圖表標示、改編方式與發布風險，直接比較理解度與責任是否被破壞。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "要介紹校園樹木調查給同學，哪種媒介安排最能兼顧資料與理解？",
-        "options": [
-          "只放一張漂亮照片，不必寫調查方法",
-          "用清楚標題與摘要搭配有單位、圖例和來源的圖表，必要處補文字說明",
-          "把完整原始資料全部貼上，不做任何組織"
-        ],
-        "answer": "B",
-        "feedback": "B 讓媒介協助讀者抓重點，也保留可核對的資料條件。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "把長篇報導改成短影音腳本時，哪項做法最負責任？",
-        "options": [
-          "只保留最戲劇化的片段，來源和限制可省略",
-          "先整理主張、來源、時間與限制，再安排畫面、旁白、字幕和延伸連結，避免剪輯改變因果",
-          "加快畫面和音樂，讓觀眾沒有時間質疑"
-        ],
-        "answer": "B",
-        "feedback": "B 把媒介轉換建立在來源和脈絡上，避免效果取代證據。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "作品上線後讀者反映圖表看不懂，最好的編輯回應是什麼？",
-        "options": [
-          "責怪讀者不熟悉資料，維持原版",
-          "記錄讀者卡住的位置，檢查標題、單位、尺度、圖例與文字說明，做可回溯的小範圍修訂再測試",
-          "刪掉整張圖表，只留下自己想表達的結論"
-        ],
-        "answer": "B",
-        "feedback": "B 把回饋轉成具體編輯假設，修訂後重新驗證而不是取消證據。"
-      }
+      "選同學／研究社團與線上文章／短影音，觀察必要資訊深度。",
+      "開關標題、單位、圖例、來源、替代文字，查看圖表是否仍可理解與追溯。",
+      "切換忠實摘要／戲劇化剪輯，判斷是否改變訪談或資料原意。",
+      "設定公開位置、同意與版本紀錄，發布前排除隱私與錯版風險。"
     ]
   },
   "versionResearch": [
@@ -311,5 +268,12 @@
       "以圖表回饋和小範圍版本測試驗證發布後修訂。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織科技編輯、媒介改編、資料視覺化、無障礙、來源授權、個資與版本回饋。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：科技編輯＝讓媒介服務證據，不是讓效果蓋過證據",
+    "memoryHook": "受眾／目的 → 證據／權利 → 媒介層次 → 可近性／隱私 → 版本 → 回饋修訂",
+    "mustKnow": "換成圖表、簡報、短影音都不能改變原始意義。標題、單位、圖例、字幕、替代文字、來源、授權與版本都是內容的一部分；發布後仍要能回溯與修正。",
+    "trap": "有動畫就比較好；裁切後不用標來源；照片公開過就能標住址；上線就是完成。",
+    "examMove": "每次刪內容前問：刪掉後，讀者是否會誤判因果、時間、限制、來源或人物原意？會就不能直接刪。"
   }
 }
