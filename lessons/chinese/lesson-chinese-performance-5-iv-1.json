@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,8 +163,8 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "從句意與標點功能推導停頓、重音和語氣，並以聽者理解驗證朗讀。",
+    "type": "chinese-manipulation-lab",
+    "goal": "實際改變標點、停頓與重音，觀察句法分組和聽者理解如何同步改變。",
     "scenario": "學生要錄製一段自編校園廣播，先修正標點與語意，再做兩版朗讀，依聽者回饋選出較清楚的版本。",
     "variables": [
       {
@@ -181,40 +181,12 @@
       }
     ],
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "讀到『請準備三項物品：水壺、雨具和筆記本。』時，冒號最重要的功能是什麼？",
-        "options": [
-          "提示後文將具體列出前文概括的物品，朗讀時使總提示與清單有層次",
-          "表示前文疑問，句尾一定要升高",
-          "表示每個物品都要讀成獨立句子"
-        ],
-        "answer": "A",
-        "feedback": "A 先理解冒號的提示與列舉關係，再安排清單節奏。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "朗讀含轉折的長句時，哪種做法最能保留句意？",
-        "options": [
-          "看到每個逗號都停很久，讓句子變得戲劇化",
-          "先畫出語意單位與轉折關係，再安排短停、重音與收束，朗讀後回聽驗證",
-          "不看標點，一口氣讀完以表示流暢"
-        ],
-        "answer": "B",
-        "feedback": "B 把標點、語意和聲音連起來，流暢不等於無停頓或最快速度。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "同伴說聽不出公告中的先後關係，最有效的下一步是什麼？",
-        "options": [
-          "先提高整段音量並加快速度",
-          "只把最後一句讀得更有感情，不改文字分析",
-          "回到句意與標點，調整分句、停頓與關係重音，再錄一版比較"
-        ],
-        "answer": "C",
-        "feedback": "C 直接處理聽者無法辨認的關係，並用前後錄音比較修正是否有效。"
-      }
-    ]
+      "先讀無標點句並選擇你認為的語意分組。",
+      "切換逗號／分號／冒號／問號配置，看畫面如何重新分組意群。",
+      "調整停頓長短與重音位置，讀出兩個版本並預測聽者會理解什麼。",
+      "依『關係是否聽得出來』的回饋修正，不用音量或表演掩蓋句法問題。"
+    ],
+    "mode": "punctuation-prosody"
   },
   "versionResearch": [
     {
@@ -311,5 +283,12 @@
       "以聽者重述與錄音前後比較驗證朗讀效果。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織標點功能、語意單位、朗讀聲音與回饋修訂。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：標點不是停幾秒，而是句意地圖",
+    "memoryHook": "先分意群 → 看標點功能 → 標停連重音 → 試讀 → 用聽者理解回查",
+    "mustKnow": "逗號、分號、冒號、問號、引號都不能套固定聲音公式。先判斷句法、語意關係與說話目的，再決定停頓、重音、速度與句尾走向。",
+    "trap": "看到逗號就停一樣久；看到問號就一律升調；把『有感情』等同音量更大。",
+    "examMove": "遇到標點效果題，先說它連接／分隔哪兩個語意單位，再判斷它如何改變閱讀節奏或語氣。"
   }
 }
