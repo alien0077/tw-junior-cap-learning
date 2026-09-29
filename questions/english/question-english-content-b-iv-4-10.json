@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-4-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: **Do you want to watch the documentary?** B: **Not tonight; I have an exam tomorrow.** Why does B decline?",
+  "prompt": "A friend says, **I'd like to watch the documentary tonight, but I need to prepare for tomorrow's exam. Could we watch it on Friday instead?** What is the best description?",
   "options": [
     {
       "id": "A",
-      "text": "Because the documentary is in a museum."
+      "text": "The friend has no interest in the documentary."
     },
     {
       "id": "B",
-      "text": "Because B wants a bicycle."
+      "text": "The friend separates a desire from a prior need and proposes an alternative."
     },
     {
       "id": "C",
-      "text": "Because of the exam tomorrow."
+      "text": "The friend demands that everyone cancel Friday plans."
     },
     {
       "id": "D",
-      "text": "Because tonight is a holiday."
+      "text": "The exam and documentary are both feelings."
     }
   ],
   "knowledgeIds": [
@@ -26,8 +26,8 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "B gives the exam tomorrow as the reason for declining tonight."
+    "value": "B",
+    "explanation": "The friend still wants to watch the documentary, but exam preparation is a prior need. Suggesting Friday keeps the desire visible while offering a negotiable alternative."
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "公立學校七年級英語段考；只研究需求、意願、感受、請求與情境回應題型。",
     "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫需求意願感受題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-13",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-english-content-b-iv-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "先判斷意願回應，再從後句找拒絕的原因。",
+  "solutionStrategy": "同時保留 would like 的意願、need 的先決條件與替代方案，不能把暫時拒絕誤讀成沒有興趣。",
   "solutionSteps": [
-    "Identify the invitation watch the documentary.",
-    "Notice Not tonight as a decline.",
-    "Read the reason after the semicolon.",
-    "Choose the exam reason.",
-    "Reject details not stated in the dialogue."
+    "Identify the desire to watch the documentary.",
+    "Identify the prior need to prepare for the exam.",
+    "Notice but marks the conflict between them.",
+    "Find the proposed alternative Friday.",
+    "Choose the description that includes all three parts."
   ]
 }
