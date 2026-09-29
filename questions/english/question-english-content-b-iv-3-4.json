@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-3-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "You need to borrow a classmate's calculator. Which wording is most polite?",
+  "prompt": "You ask to borrow a classmate's calculator, but the room is noisy and your classmate points to a note saying **Using it until 2:00**. What is the best next step?",
   "options": [
     {
       "id": "A",
-      "text": "Give me that now."
+      "text": "Take the calculator immediately because pointing means yes."
     },
     {
       "id": "B",
-      "text": "Your calculator is bad."
+      "text": "Ignore the note and repeat the same request louder."
     },
     {
       "id": "C",
-      "text": "I take it without asking."
+      "text": "Point to 2:00 and ask, **Do you mean I can borrow it after two?**"
     },
     {
       "id": "D",
-      "text": "Could I borrow your calculator, please?"
+      "text": "Assume the classmate is refusing to speak to you."
     }
   ],
   "knowledgeIds": [
@@ -26,8 +26,8 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "Could I... please? makes the request respectful and gives the owner a chance to agree."
+    "value": "C",
+    "explanation": "The note and pointing provide useful context, but their exact meaning still needs confirmation. Referring to the shared text and asking a focused question combines nonverbal and verbal repair."
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "公立學校七年級英語段考；只研究語言與非語言的澄清、確認、請求、聆聽、肢體提示與語氣策略題型。",
     "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫溝通策略題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-13",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-english-content-b-iv-3",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "用疑問句與 please 表達請求，避免命令或未經同意。",
+  "solutionStrategy": "利用共同看得到的文字或手勢縮小問題，再用確認問句查清楚意思，不把指向動作直接當成同意或拒絕。",
   "solutionSteps": [
-    "Identify the goal borrow a calculator.",
-    "Look for a request form.",
-    "Check for permission and politeness.",
-    "Choose Could I borrow... please?",
-    "Reject commands and taking without asking."
+    "Observe the shared note and the pointing action.",
+    "Avoid assigning a fixed meaning to the gesture.",
+    "Refer to the visible time 2:00.",
+    "Ask a focused question about borrowing after that time.",
+    "Wait for confirmation before taking the calculator."
   ]
 }
