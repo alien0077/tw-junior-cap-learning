@@ -3,7 +3,7 @@
   "reviewRole": "ChatGPT final curriculum/lesson/question/interaction content review",
   "repository": "alien0077/tw-junior-cap-learning",
   "branch": "main",
-  "commit": "4740a7712f812467e4a31ca2560461f68ea0b474",
+  "commit": "8e49ed254027536bd5a554c7e59c3f9b41b9ed8b",
   "asOf": "2026-09-29",
   "policy": {
     "noSampling": true,
@@ -73,9 +73,9 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 36,
-    "pendingCurriculumIds": 996,
-    "nextCurriculumId": "cur-chinese-content-be-iv-1",
+    "reviewedCurriculumIds": 39,
+    "pendingCurriculumIds": 993,
+    "nextCurriculumId": "cur-chinese-content-be",
     "currentBrowserExecution": "未能在本工具環境啟動 repo 本機學生頁；不得視為通過"
   },
   "systemicFindings": [
@@ -1441,28 +1441,109 @@
       "curriculumId": "cur-chinese-content-be-iv-1",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-be-iv-1.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
+      "interactionStatus": "不通過／資料層已改為文類／讀者／資訊欄位切換專屬，但仍缺真正拖放／切換與同步預覽",
+      "overallStatus": "需修正",
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-be-iv-1.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-be-iv-1-1",
+        "question-chinese-content-be-iv-1-2",
+        "question-chinese-content-be-iv-1-3",
+        "question-chinese-content-be-iv-1-4",
+        "question-chinese-content-be-iv-1-5",
+        "question-chinese-content-be-iv-1-6",
+        "question-chinese-content-be-iv-1-7",
+        "question-chinese-content-be-iv-1-8",
+        "question-chinese-content-be-iv-1-9",
+        "question-chinese-content-be-iv-1-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-be-iv-1.yaml",
+      "defects": [
+        "原 interactive 通用模板已於 41ef1489bc83b189e332756b78f0f1f397aeed06 改為單元專屬內容。",
+        "目前仍為 guided-choice；學生端缺正文要求的文類切換、素材拖放、結構連線或同步預覽，GeoGebra-style gate 不通過。",
+        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-be-iv-1.json",
+        "lessons/chinese/lesson-chinese-content-be-iv-1.json",
+        "questions/chinese/question-chinese-content-be-iv-1-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-be-iv-1.yaml"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-be-iv-2",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-be-iv-2.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
+      "interactionStatus": "不通過／資料層已改為書信／便條／對聯格式與結構專屬，但仍缺真正拖放／切換與同步預覽",
+      "overallStatus": "需修正",
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-be-iv-2.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-be-iv-2-1",
+        "question-chinese-content-be-iv-2-2",
+        "question-chinese-content-be-iv-2-3",
+        "question-chinese-content-be-iv-2-4",
+        "question-chinese-content-be-iv-2-5",
+        "question-chinese-content-be-iv-2-6",
+        "question-chinese-content-be-iv-2-7",
+        "question-chinese-content-be-iv-2-8",
+        "question-chinese-content-be-iv-2-9",
+        "question-chinese-content-be-iv-2-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-be-iv-2.yaml",
+      "defects": [
+        "原 interactive 通用模板已於 52798d8d38e80ef25ff1ea564cafedfff9c3d54f 改為單元專屬內容。",
+        "目前仍為 guided-choice；學生端缺正文要求的文類切換、素材拖放、結構連線或同步預覽，GeoGebra-style gate 不通過。",
+        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-be-iv-2.json",
+        "lessons/chinese/lesson-chinese-content-be-iv-2.json",
+        "questions/chinese/question-chinese-content-be-iv-2-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-be-iv-2.yaml"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-be-iv-3",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-be-iv-3.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
+      "interactionStatus": "不通過／資料層已改為簡報／讀書報告／演講／劇本素材轉換專屬，但仍缺真正拖放／切換與同步預覽",
+      "overallStatus": "需修正",
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-be-iv-3.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-be-iv-3-1",
+        "question-chinese-content-be-iv-3-2",
+        "question-chinese-content-be-iv-3-3",
+        "question-chinese-content-be-iv-3-4",
+        "question-chinese-content-be-iv-3-5",
+        "question-chinese-content-be-iv-3-6",
+        "question-chinese-content-be-iv-3-7",
+        "question-chinese-content-be-iv-3-8",
+        "question-chinese-content-be-iv-3-9",
+        "question-chinese-content-be-iv-3-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-be-iv-3.yaml",
+      "defects": [
+        "原 interactive 通用模板已於 8e49ed254027536bd5a554c7e59c3f9b41b9ed8b 改為單元專屬內容。",
+        "目前仍為 guided-choice；學生端缺正文要求的文類切換、素材拖放、結構連線或同步預覽，GeoGebra-style gate 不通過。",
+        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-be-iv-3.json",
+        "lessons/chinese/lesson-chinese-content-be-iv-3.json",
+        "questions/chinese/question-chinese-content-be-iv-3-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-be-iv-3.yaml"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-be",
