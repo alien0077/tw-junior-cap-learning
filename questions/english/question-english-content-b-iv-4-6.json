@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-4-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: **Which activity do you prefer, drawing or dancing?** B: **______**",
+  "prompt": "A group must choose between rehearsing at lunch or after school. Eva says, **I prefer lunch, but I can stay after school if lunch is impossible.** What does her statement show?",
   "options": [
     {
       "id": "A",
-      "text": "I need a pencil yesterday."
+      "text": "A fixed need that cannot be changed."
     },
     {
       "id": "B",
-      "text": "It feels rainy."
+      "text": "A preference with an acceptable alternative."
     },
     {
       "id": "C",
-      "text": "I prefer drawing."
+      "text": "A feeling that the group must solve for her."
     },
     {
       "id": "D",
-      "text": "She is my aunt."
+      "text": "A command to rehearse at lunch."
     }
   ],
   "knowledgeIds": [
@@ -26,8 +26,8 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "I prefer drawing directly answers the choice question about activity preference."
+    "value": "B",
+    "explanation": "Eva states which option she likes better but also says another option is acceptable. That is a negotiable preference, not an absolute requirement."
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "公立學校七年級英語段考；只研究需求、意願、感受、請求與情境回應題型。",
     "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫需求意願感受題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-13",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-english-content-b-iv-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "由 prefer 問句找出表達偏好的句型。",
+  "solutionStrategy": "利用 prefer 與 but 後的替代方案判斷立場是否可協商。",
   "solutionSteps": [
-    "Identify the two activities.",
-    "Find a response containing prefer.",
-    "Choose one activity.",
-    "Select I prefer drawing.",
-    "Reject time, weather and relationship statements."
+    "Locate the preference word prefer.",
+    "Identify the preferred time lunch.",
+    "Read the alternative after but.",
+    "Notice Eva says the alternative can work.",
+    "Choose preference with an acceptable alternative."
   ]
 }
