@@ -3,7 +3,7 @@
   "reviewRole": "ChatGPT final curriculum/lesson/question/interaction content review",
   "repository": "alien0077/tw-junior-cap-learning",
   "branch": "main",
-  "commit": "38670aaa700ca9d7d76f565da74d225879b8500b",
+  "commit": "1680473f5d55ce45ce34eb63d7e46fc6aab8d3cb",
   "asOf": "2026-09-29",
   "policy": {
     "noSampling": true,
@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 60,
-    "pendingCurriculumIds": 972,
-    "nextCurriculumId": "cur-chinese-performance-2-iv-4",
+    "reviewedCurriculumIds": 69,
+    "pendingCurriculumIds": 963,
+    "nextCurriculumId": "cur-chinese-performance-4",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 60,
-    "pendingUnits": 972
+    "reviewedUnits": 69,
+    "pendingUnits": 963
   },
   "systemicFindings": [
     {
@@ -2011,26 +2011,20 @@
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-2-iv-4.json",
       "lessonStatus": "內容重審通過／三版本融合僅採公開課程計畫層級證據且有明確版權邊界；已補單元專屬學霸筆記",
-      "questionStatus": "10 題答案、解析、策略逐題一致；逐步解法正確但模板化程度偏高，列入後續題目專屬化改善",
+      "questionStatus": "10 題答案、解析、策略一致；20 題（兩單元合計）solutionSteps 已於 2026-09-29 全數改為題目專屬推理。",
       "interactionStatus": "實作完成／正式學生頁已由 guided-choice 升級為單元專屬操弄；browser 最終驗證交 Codex",
-      "overallStatus": "內容通過／待題解專屬化與最終 Codex browser 驗證",
-      "defects": [
-        "solutionSteps 雖正確，但同單元共用五步句型比例過高；需改成題目專屬推理，不影響目前答案正確性。",
-        "browser/a11y 最終實跑依使用者指示統一交 Codex。"
-      ]
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-chinese-performance-2-iv-5",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-2-iv-5.json",
       "lessonStatus": "內容重審通過／三版本融合僅採公開課程計畫層級證據且有明確版權邊界；已補單元專屬學霸筆記",
-      "questionStatus": "10 題答案、解析、策略逐題一致；逐步解法正確但模板化程度偏高，列入後續題目專屬化改善",
+      "questionStatus": "10 題答案、解析、策略一致；20 題（兩單元合計）solutionSteps 已於 2026-09-29 全數改為題目專屬推理。",
       "interactionStatus": "實作完成／正式學生頁已由 guided-choice 升級為單元專屬操弄；browser 最終驗證交 Codex",
-      "overallStatus": "內容通過／待題解專屬化與最終 Codex browser 驗證",
-      "defects": [
-        "solutionSteps 雖正確，但同單元共用五步句型比例過高；需改成題目專屬推理，不影響目前答案正確性。",
-        "browser/a11y 最終實跑依使用者指示統一交 Codex。"
-      ]
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-chinese-performance-2",
@@ -2046,55 +2040,73 @@
       "curriculumId": "cur-chinese-performance-4-iv-1",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-4-iv-1.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "融合教材與學霸筆記已內容重審；三版本僅採公開課程計畫層級證據，保留版權邊界。",
+      "questionStatus": "已逐題核對 10 題並修正 Q6 多音字錯誤；lesson 融合內容與學霸筆記符合課綱。solutionSteps 尚需逐題專屬化。",
+      "interactionStatus": "source-level 已補單元專屬視覺操弄與即時回饋；browser/a11y 實跑依使用者指示最後交 Codex。",
+      "overallStatus": "內容已審／待題解專屬化與最終 Codex browser 驗證",
+      "defects": [
+        "10 題 solutionSteps 仍有同單元模板句型，需逐題改成題目專屬推理。"
+      ]
     },
     {
       "curriculumId": "cur-chinese-performance-4-iv-2",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-4-iv-2.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "融合教材與學霸筆記已內容重審；三版本僅採公開課程計畫層級證據，保留版權邊界。",
+      "questionStatus": "已逐題核對 10 題答案與解析；lesson 融合內容與造字證據邊界符合課綱。solutionSteps 尚需逐題專屬化。",
+      "interactionStatus": "source-level 已補單元專屬視覺操弄與即時回饋；browser/a11y 實跑依使用者指示最後交 Codex。",
+      "overallStatus": "內容已審／待題解專屬化與最終 Codex browser 驗證",
+      "defects": [
+        "10 題 solutionSteps 仍有同單元模板句型，需逐題改成題目專屬推理。"
+      ]
     },
     {
       "curriculumId": "cur-chinese-performance-4-iv-3",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-4-iv-3.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "融合教材與學霸筆記已內容重審；三版本僅採公開課程計畫層級證據，保留版權邊界。",
+      "questionStatus": "已逐題核對 10 題並修正 Q1 雙正解、Q2 長字讀音／雙正解、Q3 便宜讀音；新增多音多義查典盤。solutionSteps 尚需逐題專屬化。",
+      "interactionStatus": "source-level 已補單元專屬視覺操弄與即時回饋；browser/a11y 實跑依使用者指示最後交 Codex。",
+      "overallStatus": "內容已審／待題解專屬化與最終 Codex browser 驗證",
+      "defects": [
+        "10 題 solutionSteps 仍有同單元模板句型，需逐題改成題目專屬推理。"
+      ]
     },
     {
       "curriculumId": "cur-chinese-performance-4-iv-4",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-4-iv-4.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "融合教材與學霸筆記已內容重審；三版本僅採公開課程計畫層級證據，保留版權邊界。",
+      "questionStatus": "已逐題核對 10 題答案與解析；新增書體證據觀察盤。solutionSteps 尚需逐題專屬化。",
+      "interactionStatus": "source-level 已補單元專屬視覺操弄與即時回饋；browser/a11y 實跑依使用者指示最後交 Codex。",
+      "overallStatus": "內容已審／待題解專屬化與最終 Codex browser 驗證",
+      "defects": [
+        "10 題 solutionSteps 仍有同單元模板句型，需逐題改成題目專屬推理。"
+      ]
     },
     {
       "curriculumId": "cur-chinese-performance-4-iv-5",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-4-iv-5.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "融合教材與學霸筆記已內容重審；三版本僅採公開課程計畫層級證據，保留版權邊界。",
+      "questionStatus": "已逐題核對 10 題答案與解析；新增行款／行氣滑桿實驗。solutionSteps 尚需逐題專屬化。",
+      "interactionStatus": "source-level 已補單元專屬視覺操弄與即時回饋；browser/a11y 實跑依使用者指示最後交 Codex。",
+      "overallStatus": "內容已審／待題解專屬化與最終 Codex browser 驗證",
+      "defects": [
+        "10 題 solutionSteps 仍有同單元模板句型，需逐題改成題目專屬推理。"
+      ]
     },
     {
       "curriculumId": "cur-chinese-performance-4-iv-6",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-4-iv-6.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "融合教材與學霸筆記已內容重審；三版本僅採公開課程計畫層級證據，保留版權邊界。",
+      "questionStatus": "已逐題核對 10 題答案與解析；新增硬筆版面修訂台。solutionSteps 尚需逐題專屬化。",
+      "interactionStatus": "source-level 已補單元專屬視覺操弄與即時回饋；browser/a11y 實跑依使用者指示最後交 Codex。",
+      "overallStatus": "內容已審／待題解專屬化與最終 Codex browser 驗證",
+      "defects": [
+        "10 題 solutionSteps 仍有同單元模板句型，需逐題改成題目專屬推理。"
+      ]
     },
     {
       "curriculumId": "cur-chinese-performance-4",
