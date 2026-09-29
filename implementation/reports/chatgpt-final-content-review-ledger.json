@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 102,
-    "pendingCurriculumIds": 930,
-    "nextCurriculumId": "cur-english-content-ae-iv-5",
+    "reviewedCurriculumIds": 103,
+    "pendingCurriculumIds": 929,
+    "nextCurriculumId": "cur-english-content-ae-iv-6",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 102,
-    "pendingUnits": 930
+    "reviewedUnits": 103,
+    "pendingUnits": 929
   },
   "systemicFindings": [
     {
@@ -2430,10 +2430,11 @@
       "curriculumId": "cur-english-content-ae-iv-5",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-ae-iv-5.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Ae-Ⅳ-5 對齊；以共享雨具同一資料跨 diary/instructions/news/opinion/dialogue 比較 purpose/structure/evidence/tone，三版本只融合公開可驗證的主題篇章、情境與多體裁閱讀方向，例文與活動自編；已補學霸筆記。",
+      "questionStatus": "10 題逐題核對；修正 Q8 A→C（recommend going early 為個人建議）與 Q9 B→D（唯一未提供為出席人數）兩個錯鍵，其餘 8 題答案、解析、策略與 steps 一致。",
+      "interactionStatus": "原 generic guided-choice 已升級 article-genre-evidence-lab 並接入正式 renderer；可切換五種體裁並觸發 18 loans→everyone、should→opened、I felt→students felt 三種資料失真，直接檢查 fact/opinion/inference 與事實保真。browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-ae-iv-6",
