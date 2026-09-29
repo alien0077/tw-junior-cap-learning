@@ -254,43 +254,34 @@
     "https://books.hanlin.com.tw/product/1020161"
   ],
   "authoringStandard": "version-fused-v1",
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-30",
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ae-Ⅳ-2：常見圖表」的形式與功能",
-    "scenario": "以「Ae-Ⅳ-2：常見圖表」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "chart-evidence-lab",
+    "goal": "操作表格／長條／折線資料，切換數值、單位與主張強度，直接判斷哪些英文句子被資料支持。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ae-Ⅳ-2：常見圖表」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ae-Ⅳ-2：常見圖表」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ae-Ⅳ-2：常見圖表」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ae-Ⅳ-2：常見圖表」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ae-Ⅳ-2：常見圖表」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ae-Ⅳ-2：常見圖表」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ae-Ⅳ-2：常見圖表」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "用 A=18、B=24、C=18 操作 most／same／six more than，逐句對回數值。",
+      "切換 line graph 20→25→25→35→30，判斷 rise/same/fall，拒絕『increased every day』。",
+      "移除 unit 或 category values，觀察哪些結論立即失去證據。",
+      "切換 showed/may/because/always，區分描述、推測、因果與過度概括。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：讀圖先守住範圍，再寫英文",
+    "memoryHook": "title → sample/time → labels → scale/unit → pattern → evidence limit",
+    "mustKnow": [
+      "table 適合查精確值；bar 比類別；line 看時間變化；pie 看整體比例。",
+      "more/less/same/most 都要有可比對的數值與範圍。",
+      "一次調查不能直接寫 always/everyone；圖表沒測原因就不能直接用 because 下因果結論。",
+      "average 不代表每個人都一樣。"
+    ],
+    "traps": [
+      "把最大值對到錯誤類別。",
+      "把差值算成總和。",
+      "漏掉 minutes/kg/percent 等單位。",
+      "圖表沒數字仍猜最高類別。"
+    ],
+    "examMove": "每寫一句就用手指回到圖表的 label + value + unit；指不到就降低主張強度或補資料。"
   }
 }
