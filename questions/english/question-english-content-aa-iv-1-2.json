@@ -2,7 +2,7 @@
   "id": "question-english-content-aa-iv-1-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Which word follows **apple** in alphabetical order?",
+  "prompt": "Which word comes immediately after **apple** when these four words are put in alphabetical order?",
   "options": [
     {
       "id": "A",
@@ -18,7 +18,7 @@
     },
     {
       "id": "D",
-      "text": "April"
+      "text": "ball"
     }
   ],
   "knowledgeIds": [
@@ -27,7 +27,7 @@
   "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "Compare letters from left to right: ap comes after an, and apron comes after apple because r comes after p at the first differing position."
+    "explanation": "Order the words letter by letter: ant comes before apple; apple comes before apron because the first difference is p versus r; banana and ball begin with b. So apron is immediately after apple."
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "公立學校七年級英語段考；只研究字母大小寫、順序、拼寫格式與基礎辨識題型。",
     "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫字母書寫題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-13",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-29",
   "lessonId": "lesson-english-content-aa-iv-1",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "逐字母比較，遇到第一個不同字母就決定順序。",
+  "solutionStrategy": "先依字母順序把四個候選排好，再找 apple 的下一個，不混入大小寫規則。",
   "solutionSteps": [
-    "Write the first letters of all choices.",
-    "Put ant before the words beginning with ap.",
-    "Compare apple and apron after ap.",
-    "Place apron after apple at the first difference.",
-    "Confirm banana and April do not come immediately after apple in this set."
+    "Compare the first letters: the a-words come before the b-words.",
+    "Within the a-words, ant comes before the ap-words.",
+    "Compare apple and apron from left to right: a-p matches, then p comes before r.",
+    "So the local order is ant → apple → apron before the b-words.",
+    "Choose apron as the word immediately after apple."
   ]
 }
