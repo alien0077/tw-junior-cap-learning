@@ -73,9 +73,9 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 54,
-    "pendingCurriculumIds": 978,
-    "nextCurriculumId": "cur-chinese-performance-1-iv-3",
+    "reviewedCurriculumIds": 55,
+    "pendingCurriculumIds": 977,
+    "nextCurriculumId": "cur-chinese-performance-1-iv-4",
     "currentBrowserExecution": "未能在本工具環境啟動 repo 本機學生頁；不得視為通過"
   },
   "systemicFindings": [
@@ -1905,10 +1905,37 @@
       "curriculumId": "cur-chinese-performance-1-iv-3",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-1-iv-3.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
+      "interactionStatus": "不通過／已有主張—理由—證據—限制—方案資料層，但缺可拖放論證圖、條件分支與試辦指標同步視覺",
+      "overallStatus": "需修正",
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-performance-1-iv-3.json"
+      ],
+      "questionIds": [
+        "question-chinese-performance-1-iv-3-1",
+        "question-chinese-performance-1-iv-3-2",
+        "question-chinese-performance-1-iv-3-3",
+        "question-chinese-performance-1-iv-3-4",
+        "question-chinese-performance-1-iv-3-5",
+        "question-chinese-performance-1-iv-3-6",
+        "question-chinese-performance-1-iv-3-7",
+        "question-chinese-performance-1-iv-3-8",
+        "question-chinese-performance-1-iv-3-9",
+        "question-chinese-performance-1-iv-3-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-performance-1-iv-3.yaml",
+      "defects": [
+        "學生應能把句子拖入主張／理由／證據／限制節點、連線推論並切換反例；目前仍是 guided-choice。",
+        "GeoGebra-style gate 不通過。",
+        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+      ],
+      "evidence": [
+        "curriculum/chinese/performance-1-iv-3.json",
+        "lessons/chinese/lesson-chinese-performance-1-iv-3.json",
+        "questions/chinese/question-chinese-performance-1-iv-3-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-performance-1-iv-3.yaml"
+      ]
     },
     {
       "curriculumId": "cur-chinese-performance-1-iv-4",
