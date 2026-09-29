@@ -39,8 +39,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課依官方課綱與記錄的版本研究獨立撰寫；校園資料、英文文章、練習、答案與回饋均為自編，不複製出版社文章或題目。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "versionResearch": [
@@ -253,40 +253,30 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ae-Ⅳ-5：不同體裁主題簡易文章」的形式與功能",
-    "scenario": "以「Ae-Ⅳ-5：不同體裁主題簡易文章」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "article-genre-evidence-lab",
+    "goal": "固定共享雨具資料，切換 diary/instructions/news/opinion/dialogue，觀察目的、結構、證據與語氣如何變化並檢查事實保真。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ae-Ⅳ-5：不同體裁主題簡易文章」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ae-Ⅳ-5：不同體裁主題簡易文章」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ae-Ⅳ-5：不同體裁主題簡易文章」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ae-Ⅳ-5：不同體裁主題簡易文章」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ae-Ⅳ-5：不同體裁主題簡易文章」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ae-Ⅳ-5：不同體裁主題簡易文章」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ae-Ⅳ-5：不同體裁主題簡易文章」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "切換五種體裁，指出 writer wants reader to... 與兩個文字線索。",
+      "固定 Tuesday/18 loans/by 5 p.m./sign name/bus stop west gate 五項資料，觀察不同體裁如何重排。",
+      "觸發 everyone/should→opened/I felt→students felt 三種失真，判斷 fact/opinion/inference。",
+      "遮住標題，用 purpose+structure+evidence 重新分類。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：體裁判斷要能解釋全文，不靠一個關鍵字",
+    "memoryHook": "purpose → structure → evidence → tone → reader action",
+    "mustKnow": [
+      "diary 常追時間與感受；instructions 用步驟讓人完成任務；news/report 先交代可核對事件與範圍；opinion 有 claim + reason/evidence；dialogue 靠輪次回應推進。",
+      "同一主題換體裁時，事實範圍不能偷換。",
+      "should/could 常標示建議；I felt 是個人感受；數字與日期不會自動讓文章變新聞。"
+    ],
+    "traps": [
+      "有問號就是對話。",
+      "有日期就是新聞。",
+      "把 18 loans 改寫成 everyone borrowed one。",
+      "把 should 開站寫成已經 opened。"
+    ],
+    "examMove": "完成 The writer wants the reader to ___，再找兩個全文線索支持；只找到一個表面特徵就不要急著命名。"
   }
 }
