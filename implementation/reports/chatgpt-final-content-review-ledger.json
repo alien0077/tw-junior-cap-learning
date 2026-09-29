@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 100,
-    "pendingCurriculumIds": 932,
-    "nextCurriculumId": "cur-english-content-ae-iv-3",
+    "reviewedCurriculumIds": 101,
+    "pendingCurriculumIds": 931,
+    "nextCurriculumId": "cur-english-content-ae-iv-4",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 100,
-    "pendingUnits": 932
+    "reviewedUnits": 101,
+    "pendingUnits": 931
   },
   "systemicFindings": [
     {
@@ -2410,10 +2410,11 @@
       "curriculumId": "cur-english-content-ae-iv-3",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-ae-iv-3.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Ae-Ⅳ-3 對齊；正文以 Audience/Event/Place/Time/Reason-Limit/Action 與 unknown 建立公共廣播的一次聆聽理解、澄清與分眾改寫；三版本只融合公開可核對的生活溝通／整段理解／輸出回饋方向，廣播稿與活動自編；已補學霸筆記。",
+      "questionStatus": "10 題逐題核對，修正 8 個 answer.value 與 explanation/steps 明確矛盾錯鍵：Q1 A→C、Q2 B→A、Q3 C→A、Q4 D→A、Q5 B→A、Q6 C→A、Q8 A→B、Q10 C→A；Q7/Q9 一致。",
+      "interactionStatus": "原 generic guided-choice 已升級 announcement-map-lab 並接入正式 renderer；可操作目的地／月台／時間、新地點／原因、until/after/between-and 與缺 room/duration 的精準澄清，未提供資訊維持 unknown。browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-ae-iv-4",
