@@ -42,8 +42,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課以官方課綱、KG 與可取得的三家出版社公開頁面作為研究依據；故事、英文例句、活動、互動步驟、答案與回饋均為自編，不複製出版社文章、題目、圖片或答案。由於出版社完整電子教材未公開，本課不宣稱已取得或重現任何完整版本課文。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "publisherResearch": [
@@ -259,54 +259,31 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "依敘事者資訊範圍、語氣與讀者需求判斷英文敘事的觀點、態度和目的。",
-    "scenario": "你是校園廣播社的編輯，要把同一件遺失物事件整理成可靠的閱讀材料。每一步都先選證據層級，再決定敘事語氣。",
+    "type": "english-manipulation-lab",
+    "mode": "viewpoint-evidence-mixer",
+    "goal": "切換 saw/heard/told/guessed、態度詞與文本目的，直接觀察哪些結論可斷言、哪些必須保留不確定。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "「I saw two boxes leave the room.」這句最穩妥的判讀是什麼？",
-        "options": [
-          "敘事者直接觀察到箱子離開房間",
-          "敘事者知道箱子裡一定有麥克風",
-          "兩位搬運者一定偷了物品"
-        ],
-        "answer": "A",
-        "feedback": "正確。saw 支持可見的移動事件，但沒有提供箱內物品或搬運者動機的直接證據。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "哪個改寫最誠實地保留敘事者的推論限制？",
-        "options": [
-          "They stole it.",
-          "They may have moved it, but I did not see what was inside.",
-          "Everyone knows they stole it."
-        ],
-        "answer": "B",
-        "feedback": "正確。may 表示可能性，後半句再次交代敘事者沒有看見箱內內容，視角前後一致。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "若文本列出時間、地點、借用紀錄並請讀者歸還物品，最可能的主要目的為何？",
-        "options": [
-          "提供資訊並促成歸還行動",
-          "只製造超自然故事的驚嚇效果",
-          "描述敘事者童年的夢境"
-        ],
-        "answer": "A",
-        "feedback": "正確。可核對細節加上明確行動邀請，支持公告或提醒目的；仍可有敘事語氣，但不能忽略主要功能。"
-      },
-      {
-        "id": "step-4",
-        "prompt": "哪個線索最能顯示敘事者的態度，而不只是事件？",
-        "options": [
-          "The bell rang at noon.",
-          "The bell gave a sharp warning.",
-          "The office opened at noon."
-        ],
-        "answer": "B",
-        "feedback": "正確。sharp warning 不只交代聲音發生，也替聲音加上威脅或警告的色彩；仍須觀察全文確認態度方向。"
-      }
+      "在 microphone 事件中切換 I saw boxes / I guessed they took it / teacher showed a sign-up sheet，標出證據層級。",
+      "把 They stole it 改成 They may have moved it, but I did not see inside，觀察可靠性如何改變。",
+      "切換 neutral / careless / fortunately / sharp warning，判斷態度是事件本身還是敘事者評價。",
+      "把同事件切換 report / diary / recruitment post，保留事實但調整細節、語氣與期待行動。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：先畫敘事者『知道的邊界』，再判態度與目的",
+    "memoryHook": "誰說 → saw/heard/told/guessed → 選字態度 → 讀者 → 目的",
+    "mustKnow": [
+      "I saw / heard 支持感官範圍；I thought / guessed 是敘事者判斷；was told 是轉述，不等於親見。",
+      "態度要由 fortunately、careless、sharp warning、but/yet 等可定位語言支持。",
+      "目的不能只看一句命令；要合併讀者、材料選擇與期待行動。",
+      "may/seems/the text does not tell us 是證據不足時的重要保留語。"
+    ],
+    "traps": [
+      "角色說『他偷了』就當成事實。",
+      "第一人稱等於知道所有人的內心。",
+      "一個負面詞就把全文判成完全負面。",
+      "把作者、敘事者、角色態度混成同一層。"
+    ],
+    "examMove": "每個結論旁標 E（evidence）或 I（inference）；I 若找不到 E 支持，就降成 may/seems 或 unknown。"
   }
 }
