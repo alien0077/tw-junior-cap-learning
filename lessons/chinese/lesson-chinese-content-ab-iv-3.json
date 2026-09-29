@@ -268,9 +268,9 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
+    "type": "chinese-manipulation-lab",
     "goal": "用造字構件與功能辨識象形、指事、會意、形聲四類，並理解分類的證據。",
-    "scenario": "請把字卡放到四個造字類別，放置後必須點選『我依據的構件』才能查看回饋。",
+    "scenario": "拆解字的構件功能，把證據分到描形、指示、意義組合、讀音線索，再判斷造字類型。",
     "steps": [
       {
         "id": "step-1",
@@ -305,6 +305,7 @@
         "answer": "A",
         "feedback": "形聲分類要提出意符與聲符的可觀察證據。"
       }
-    ]
+    ],
+    "mode": "character-structure"
   }
 }
