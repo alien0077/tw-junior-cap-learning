@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,8 +163,8 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "以圖書館與科技工具建立可重做、可查核、保護資料的研究流程。",
+    "type": "chinese-manipulation-lab",
+    "goal": "操作關鍵詞範圍、來源欄位與版本資料，觀察搜尋精準度、可追溯性與引用決策如何改變。",
     "scenario": "學生要研究校園屋頂綠化，從問題拆解與關鍵詞開始，使用目錄、資料庫和網路來源，整理筆記並處理版本差異與不同觀點。",
     "variables": [
       {
@@ -181,40 +181,12 @@
       }
     ],
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "要查找校園屋頂綠化對降溫的影響，哪組關鍵詞最有助於縮小範圍？",
-        "options": [
-          "校園 屋頂綠化 降溫 夏季 溫度測量",
-          "綠色 很好",
-          "所有環境資料"
-        ],
-        "answer": "A",
-        "feedback": "A 同時指定對象、措施、結果與時間，能讓搜尋結果更接近研究問題。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "做專題筆記時，哪項紀錄最能避免日後找不到證據？",
-        "options": [
-          "只記自己覺得重要的一句話",
-          "記錄主張摘要、作者、日期、頁碼或段落、網址／識別碼與它支持的研究問題",
-          "只截圖搜尋結果，不記來源"
-        ],
-        "answer": "B",
-        "feedback": "B 保留主張與原文定位的接點，日後能核對、引用和修正。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "網頁與下載 PDF 的統計數字不同，最適當的處理是什麼？",
-        "options": [
-          "選數字較符合自己結論的版本",
-          "比較日期、修訂說明與指標定義，記錄版本差異，必要時回查原始機構",
-          "把兩個數字平均後當成新資料"
-        ],
-        "answer": "B",
-        "feedback": "B 把版本差異當成研究資料處理，不用任意平均或挑選。"
-      }
-    ]
+      "從寬泛搜尋逐步加入校園／屋頂綠化／降溫／夏季等條件，觀察結果範圍縮小。",
+      "勾選作者機構、日期、頁碼／原始連結與研究問題接點，查看筆記可追溯度。",
+      "切換網頁舊版與 PDF 修訂版，先比較日期與定義，不挑對自己有利的數字。",
+      "最後補一種不同位置的來源，標示它能補什麼視角、不能代表什麼。"
+    ],
+    "mode": "research-workbench"
   },
   "versionResearch": [
     {
@@ -311,5 +283,12 @@
       "以移民經驗研究補足政策機關以外的多元位置並納入個資風險。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織研究問題、檢索工具、來源查核、筆記組織、多元視角、版本差異與資訊安全。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：搜尋不是找到答案，是留下可重做的路徑",
+    "memoryHook": "問題→關鍵詞→工具→來源→筆記→版本／觀點",
+    "mustKnow": "搜尋排名不是可信度；全文搜尋只負責定位，不負責理解。每筆可用資料至少保留作者／機構、日期、原始位置、版本與它支持哪個研究問題。",
+    "trap": "只存連結或截圖；挑符合結論的版本；把同一詞出現次數當主旨；蒐集很多同立場資料就說視野多元。",
+    "examMove": "研究題先問『我能不能讓別人照我的紀錄重新找到同一份證據？』不能，就先補來源與版本。"
   }
 }
