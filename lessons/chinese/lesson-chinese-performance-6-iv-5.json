@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,57 +163,14 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "從學習目標設計原創題目與解析，經試答修訂後，以符合讀者與責任的方式發布。",
-    "scenario": "學生要為同學設計校園午餐閱讀題並發布一項小研究，依序填目標卡、寫題目、試答、修訂與分眾發布。",
-    "variables": [
-      {
-        "symbol": "g",
-        "meaning": "學習目標與作答任務"
-      },
-      {
-        "symbol": "q",
-        "meaning": "題幹、選項、答案與解析"
-      },
-      {
-        "symbol": "p",
-        "meaning": "試答回饋與發布責任"
-      }
-    ],
+    "type": "chinese-manipulation-lab",
+    "mode": "question-design-studio",
+    "goal": "實際組合學習目標、題幹與選項，測試唯一答案、同儕誤解與發布版本。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "要為同學設計校園午餐閱讀題，哪種做法最能讓題目有明確學習目標？",
-        "options": [
-          "先指定要判讀圖表的趨勢或比較，再提供對象、時間、單位與可作答資料",
-          "只寫『午餐很重要』，讓同學自由猜題目重點",
-          "先設計漂亮版面，目標和材料之後再補"
-        ],
-        "answer": "A",
-        "feedback": "A 把學習目標轉成明確資料任務，作答者知道要找什麼證據。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "好的單選題選項應具備哪項特徵？",
-        "options": [
-          "正解比其他選項長很多，讓人容易猜",
-          "選項同層次、互斥，且依題幹資料只有一個最符合的答案",
-          "每個選項都加入不同題外知識，考作答者背景"
-        ],
-        "answer": "B",
-        "feedback": "B 讓答案來自材料與推理，不是從字數、語氣或題外常識猜測。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "同儕試答發現多數人誤解題意，下一步最應做什麼？",
-        "options": [
-          "責怪同學不夠認真，保留原題",
-          "檢查題幹動詞、條件、資料範圍與選項措辭，依誤解證據修訂並重新試答",
-          "把正解標粗體，其他內容不變"
-        ],
-        "answer": "B",
-        "feedback": "B 把試答當成設計資料，修正題目本身並驗證是否改善。"
-      }
+      "先選學習目標，再檢查題幹是否提供完成任務所需資料與判準。",
+      "切換選項組合，觀察是否出現兩個都能成立的答案或明顯猜題線索。",
+      "模擬同儕試答：若錯誤集中在題意歧義，修改題幹／資料／選項而非直接公布答案。",
+      "切換班級群組／校刊，保留核心證據與來源，只調整摘要、背景與回應方式。"
     ]
   },
   "versionResearch": [
@@ -311,5 +268,12 @@
       "以班級群組／校刊雙版本檢查研究發布的讀者與證據責任。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織自主創作、自訂題目、資料來源、答案解析、同儕試答、分眾發布與修訂責任。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：好題目不是難，是答案能由證據判定",
+    "memoryHook": "目標 → 材料 → 題幹 → 選項 → 解析 → 試答 → 修訂 → 發布",
+    "mustKnow": "先決定要測什麼，再設計材料與題幹。單選題要只有一個最符合證據的答案；誘答反映常見誤解，不靠長短或語氣露餡。試答出現多解或大量誤解，要修題，不是怪學生。",
+    "trap": "越難越好；公開資料就能整題照抄；錯很多代表題目有深度；換平台可以省來源。",
+    "examMove": "逐一替每個選項寫『為什麼對／錯』；若兩個選項都能合理辯護，就回頭補條件或改選項。"
   }
 }
