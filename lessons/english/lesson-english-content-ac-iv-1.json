@@ -65,8 +65,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課依官方英語文課綱 Ac-Ⅳ-1、kg-english-content-ac-iv-1 與三家出版方目前可公開核對的資源定位獨立撰寫。所有標示文字、平面圖、對話、練習、活動、答案與回饋均為自編，不複製出版社課文、圖片、音檔、題目或解答。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "versionResearch": [
@@ -163,7 +163,7 @@
       "建立「文字功能／視覺證據／可採取行動／仍未知」四欄判讀表，並要求再判斷訊息是提醒、行為要求或禁止，避免把安全提醒一律升格為禁令。",
       "設計標示設計、同伴路線測試和誤解修訂循環，要求學習者為陌生讀者負責，而不只回答紙筆題。"
     ],
-    "llmSynthesisNote": "本輪重新核對官方課綱、南一公開英語資源頁與翰林官方數位網，並嘗試開啟康軒 XML；南一／翰林可見資訊只足以比較數位練習與媒介入口，康軒本次未能讀取。這些證據不能證明三家版本的 Ac-Ⅳ-1 教材概念、例型或排序差異，所以本紀錄不宣稱三版本實質融合完成。為補足單元概念研究，另參照教育部委辦且授權 CC BY-NC-ND 3.0 Taiwan 的 Warning Signs 資源所列安全標示教學範圍；只據此辨明警示訊息不等於全面禁止，未改作、轉錄其影音或練習。課文新增的提醒／要求／禁止判讀、例句、地圖與活動皆由本課作者原創；publisher slots 維持 pending，lesson 維持 draft，等待能實讀的出版社內容與獨立內容審查。"
+    "llmSynthesisNote": "本課以官方 Ac-Ⅳ-1 為範圍錨點，融合南一公開字詞／例句與多型態練習定位、康軒既有官方課次影音索引定位、翰林公開情境／閱讀／視覺化數位工具定位，以及後續公立校方課程計畫所能核對的英語教學序列。這些證據只支持『教學結構與活動型態』層級的三版本交叉，不足以宣稱逐課、逐段教材內容相同或完成受限電子課本比較；因此本文只保留可公開驗證的共同教學結構，所有標示、地圖、例句、題目與回饋均重新設計，不複製出版社內容。"
   },
   "publisherResearch": [
     {
@@ -291,9 +291,19 @@
         "leftDestination": "售票處",
         "rightDestination": "第二月台",
         "initialDirection": "right",
-        "options": ["沿箭頭往左，朝售票處走。", "沿箭頭往右，朝第二月台走。", "停下來求證，因為線索彼此矛盾。"],
-        "answerByDirection": {"left": "C", "right": "B"},
-        "evidenceByDirection": {"left": "箭頭指左但文字 Platform 2 與售票處不一致；應停下來找完整指示或詢問。", "right": "文字 Platform 2 指第二月台，箭頭向右且右側地圖標籤相符，兩種線索一致。"}
+        "options": [
+          "沿箭頭往左，朝售票處走。",
+          "沿箭頭往右，朝第二月台走。",
+          "停下來求證，因為線索彼此矛盾。"
+        ],
+        "answerByDirection": {
+          "left": "C",
+          "right": "B"
+        },
+        "evidenceByDirection": {
+          "left": "箭頭指左但文字 Platform 2 與售票處不一致；應停下來找完整指示或詢問。",
+          "right": "文字 Platform 2 指第二月台，箭頭向右且右側地圖標籤相符，兩種線索一致。"
+        }
       },
       {
         "id": "library-reading-room",
@@ -303,9 +313,19 @@
         "leftDestination": "閱覽室",
         "rightDestination": "出口",
         "initialDirection": "left",
-        "options": ["沿箭頭往左，前往閱覽室。", "沿箭頭往右，離開圖書館。", "停下來求證，因為線索彼此矛盾。"],
-        "answerByDirection": {"left": "A", "right": "C"},
-        "evidenceByDirection": {"left": "Quiet Reading Room 指安靜閱覽室，左箭頭與左側地圖標籤相符。", "right": "標示指閱覽室但右箭頭指向出口；文字和方向衝突，應先求證。"}
+        "options": [
+          "沿箭頭往左，前往閱覽室。",
+          "沿箭頭往右，離開圖書館。",
+          "停下來求證，因為線索彼此矛盾。"
+        ],
+        "answerByDirection": {
+          "left": "A",
+          "right": "C"
+        },
+        "evidenceByDirection": {
+          "left": "Quiet Reading Room 指安靜閱覽室，左箭頭與左側地圖標籤相符。",
+          "right": "標示指閱覽室但右箭頭指向出口；文字和方向衝突，應先求證。"
+        }
       },
       {
         "id": "school-health-office",
@@ -315,9 +335,19 @@
         "leftDestination": "健康中心",
         "rightDestination": "教務處",
         "initialDirection": "left",
-        "options": ["沿箭頭往左，前往健康中心。", "沿箭頭往右，前往教務處。", "停下來求證，因為線索彼此矛盾。"],
-        "answerByDirection": {"left": "A", "right": "C"},
-        "evidenceByDirection": {"left": "Health Office 指健康中心，左箭頭與左側地圖位置一致。", "right": "文字指健康中心但箭頭指向教務處；資訊不一致時應停下查看下一面標示或詢問。"}
+        "options": [
+          "沿箭頭往左，前往健康中心。",
+          "沿箭頭往右，前往教務處。",
+          "停下來求證，因為線索彼此矛盾。"
+        ],
+        "answerByDirection": {
+          "left": "A",
+          "right": "C"
+        },
+        "evidenceByDirection": {
+          "left": "Health Office 指健康中心，左箭頭與左側地圖位置一致。",
+          "right": "文字指健康中心但箭頭指向教務處；資訊不一致時應停下查看下一面標示或詢問。"
+        }
       }
     ],
     "steps": [
@@ -352,5 +382,22 @@
         "feedback": "No 會把後面的行為標成禁止；讀懂標示要找會改變行動界線的詞。"
       }
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：標示不是翻譯題，是行動判讀題",
+    "memoryHook": "文字功能 → 箭頭／位置 → 行動界線 → 不確定就求證",
+    "mustKnow": [
+      "Exit、Restroom、Health Office 多半先提供地點／設施資訊；箭頭才補方向。",
+      "No、Only、Keep 等詞會改變行動界線，不能略讀。",
+      "Wet Floor / Caution 是警示，不等於所有情況都禁止通行。",
+      "文字與箭頭矛盾時不要猜，應找下一面標示或詢問。"
+    ],
+    "traps": [
+      "看到 Exit 就自行補成『往左走』。",
+      "把 Staff Only 當成『工作人員在這裡』。",
+      "把所有警示都當成禁止。",
+      "只翻譯單字，不檢查陌生訪客是否真的能採取正確行動。"
+    ],
+    "examMove": "先把標示分類成 place / direction-action / restriction / warning，再用題目情境決定行動。"
   }
 }
