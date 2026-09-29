@@ -3,7 +3,7 @@
   "reviewRole": "ChatGPT final curriculum/lesson/question/interaction content review",
   "repository": "alien0077/tw-junior-cap-learning",
   "branch": "main",
-  "commit": "fa1817d91b0a9581c0e8538de0d44c2fd3793a17",
+  "commit": "fb458b35f2d3b80bbe40421adf54fe8aedb53d00",
   "asOf": "2026-09-29",
   "policy": {
     "noSampling": true,
@@ -73,9 +73,9 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 26,
-    "pendingCurriculumIds": 1006,
-    "nextCurriculumId": "cur-chinese-content-bb-iv-4",
+    "reviewedCurriculumIds": 28,
+    "pendingCurriculumIds": 1004,
+    "nextCurriculumId": "cur-chinese-content-bb",
     "currentBrowserExecution": "未能在本工具環境啟動 repo 本機學生頁；不得視為通過"
   },
   "systemicFindings": [
@@ -1147,19 +1147,73 @@
       "curriculumId": "cur-chinese-content-bb-iv-4",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-bb-iv-4.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
+      "interactionStatus": "不通過／資料層已改為直接／間接抒情切換與語氣強度專屬，但仍缺直接操作與同步視覺",
+      "overallStatus": "需修正",
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-bb-iv-4.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-bb-iv-4-1",
+        "question-chinese-content-bb-iv-4-2",
+        "question-chinese-content-bb-iv-4-3",
+        "question-chinese-content-bb-iv-4-4",
+        "question-chinese-content-bb-iv-4-5",
+        "question-chinese-content-bb-iv-4-6",
+        "question-chinese-content-bb-iv-4-7",
+        "question-chinese-content-bb-iv-4-8",
+        "question-chinese-content-bb-iv-4-9",
+        "question-chinese-content-bb-iv-4-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-bb-iv-4.yaml",
+      "defects": [
+        "原 interactive 為通用模板；已於 commit 09466b0836c6d4ae27afd01581e89e04de770fae 改為單元專屬內容。",
+        "目前 authored interactive 仍只是 guided-choice，沒有正文要求的可操作文字／細節切換與同步視覺，GeoGebra-style gate 不通過。",
+        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-bb-iv-4.json",
+        "lessons/chinese/lesson-chinese-content-bb-iv-4.json",
+        "questions/chinese/question-chinese-content-bb-iv-4-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-bb-iv-4.yaml"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-bb-iv-5",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-bb-iv-5.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
+      "interactionStatus": "不通過／資料層已改為事件／景物／物件細節切換與情感推論專屬，但仍缺直接操作與同步視覺",
+      "overallStatus": "需修正",
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-bb-iv-5.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-bb-iv-5-1",
+        "question-chinese-content-bb-iv-5-2",
+        "question-chinese-content-bb-iv-5-3",
+        "question-chinese-content-bb-iv-5-4",
+        "question-chinese-content-bb-iv-5-5",
+        "question-chinese-content-bb-iv-5-6",
+        "question-chinese-content-bb-iv-5-7",
+        "question-chinese-content-bb-iv-5-8",
+        "question-chinese-content-bb-iv-5-9",
+        "question-chinese-content-bb-iv-5-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-bb-iv-5.yaml",
+      "defects": [
+        "原 interactive 為通用模板；已於 commit fb458b35f2d3b80bbe40421adf54fe8aedb53d00 改為單元專屬內容。",
+        "目前 authored interactive 仍只是 guided-choice，沒有正文要求的可操作文字／細節切換與同步視覺，GeoGebra-style gate 不通過。",
+        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-bb-iv-5.json",
+        "lessons/chinese/lesson-chinese-content-bb-iv-5.json",
+        "questions/chinese/question-chinese-content-bb-iv-5-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-bb-iv-5.yaml"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-bb",
