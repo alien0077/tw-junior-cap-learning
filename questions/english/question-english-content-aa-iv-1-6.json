@@ -2,7 +2,7 @@
   "id": "question-english-content-aa-iv-1-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Which line is written with consistent letter case for a list of classroom labels?",
+  "prompt": "A classroom map uses lowercase common nouns for every object label. Which line follows that rule consistently?",
   "options": [
     {
       "id": "A",
@@ -14,7 +14,7 @@
     },
     {
       "id": "C",
-      "text": "Desk, chair, window"
+      "text": "desk, chair, window"
     },
     {
       "id": "D",
@@ -27,7 +27,7 @@
   "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "The first choice uses the same initial-capital style for every label; the other choices mix styles without a stated reason."
+    "explanation": "desk, chair, and window are common-noun object labels here, and choice C keeps all three lowercase. The other choices introduce unexplained capitals."
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "公立學校七年級英語段考；只研究字母大小寫、順序、拼寫格式與基礎辨識題型。",
     "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫字母書寫題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-13",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-29",
   "lessonId": "lesson-english-content-aa-iv-1",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "先找整組標籤的共同格式，再檢查每個詞是否一致。",
+  "solutionStrategy": "先讀清楚題目指定的標籤規則，再逐項檢查三個普通名詞是否全都遵守。",
   "solutionSteps": [
-    "Identify that the items form one list.",
-    "Observe the first-letter pattern in each choice.",
-    "Check whether all three labels follow one style.",
-    "Reject mixed capitalization when no purpose is given.",
-    "Choose Desk, chair, window as the consistent label set."
+    "Identify the stated style rule: every classroom object label should be lowercase.",
+    "Check desk, chair, and window as common-noun labels, not sentence openings or proper names.",
+    "Choice C keeps all three words lowercase.",
+    "Reject A, B, and D because each contains at least one unexplained capital.",
+    "Choose desk, chair, window as the only line that follows the stated rule throughout."
   ]
 }
