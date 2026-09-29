@@ -40,8 +40,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課依官方課綱與記錄的版本研究獨立撰寫；不複製出版社課文、音檔、插圖、例題、答案或活動腳本。所有解碼詞、練習與回饋均為自編。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "publisherResearch": [
@@ -254,40 +254,31 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ab-Ⅳ-3：字母拼讀規則」的形式與功能",
-    "scenario": "以「Ab-Ⅳ-3：字母拼讀規則」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "phonics-decoder",
+    "goal": "拆解 onset／vowel／ending，切換 CVC、silent-e、blend、digraph 與例外，讓學生看到拼字線索如何改變暫讀音。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ab-Ⅳ-3：字母拼讀規則」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ab-Ⅳ-3：字母拼讀規則」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ab-Ⅳ-3：字母拼讀規則」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ab-Ⅳ-3：字母拼讀規則」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ab-Ⅳ-3：字母拼讀規則」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ab-Ⅳ-3：字母拼讀規則」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ab-Ⅳ-3：字母拼讀規則」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "切換 hop/hot 與 hope/home，觀察 final e 對母音線索的影響。",
+      "比較 stop 的 st 與 ship/chair/thin 的 digraph：數『聲音』而非字母。",
+      "把 flim 拆成 fl + i + m 再合音，並標記這是可查證的暫讀音。",
+      "拆 sun + set、辨 green 的 ee；遇到 have/laugh 等不透明詞改走查證路徑。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：phonics 是『先提出讀法，再查證』",
+    "memoryHook": "看結構 → 找母音核心 → 合音 → 放回語境 → 例外就查證",
+    "mustKnow": [
+      "blend 如 st：兩個子音都聽得到；digraph 如 sh/ch/th：兩字母常共同表示一個音。",
+      "CVC 常提供短母音線索；final silent e 常改變前面母音，但 have 等詞提醒你規則有例外。",
+      "ee 常見 /iː/；拼字相近不保證讀音相同。",
+      "compound word 可先拆熟悉部分，如 sun + set。"
+    ],
+    "traps": [
+      "把字母名稱當成單字讀音。",
+      "看到 silent e 就宣稱永遠長母音。",
+      "把 blend 和 digraph 混在一起。",
+      "規則不透明時仍硬猜。"
+    ],
+    "examMove": "先圈母音與字母組合；若 explanation 與選項衝突，以實際音值逐項驗證。"
   }
 }
