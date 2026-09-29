@@ -46,7 +46,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -164,55 +164,38 @@
   },
   "interactive": {
     "type": "guided-choice",
-    "goal": "拆分主張、理由與證據，檢查推論橋梁與替代解釋，再把意見改寫成可試行方案。",
-    "scenario": "從午餐剩食、放學交通到社團安排，逐步判斷資料是否支持提案並設計回饋。",
-    "variables": [
-      {
-        "symbol": "c",
-        "meaning": "主張與理由"
-      },
-      {
-        "symbol": "e",
-        "meaning": "證據與替代解釋"
-      },
-      {
-        "symbol": "p",
-        "meaning": "試行與回饋"
-      }
-    ],
+    "goal": "把口語提案拖成主張—理由—證據—假設—反例—方案鏈，切換資料與條件後觀察推論是否仍成立。",
+    "scenario": "以午休、交通安全與社團規範為材料；學生應重排論證卡、開關替代原因並設定試辦指標。真正論證圖拖放、條件開關與試辦結果視覺尚未實作。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "『應延長午休，因為很多人吃不完』的主張是什麼？",
+        "prompt": "『應延長午休，因為很多人吃不完』哪一段是主張？",
         "options": [
-          "把午休延長十分鐘",
-          "最近很多人吃不完午餐",
-          "所有剩食都由菜色造成"
+          "應延長午休",
+          "很多人吃不完"
         ],
         "answer": "A",
-        "feedback": "A 是希望聽眾接受的行動；B 是理由或觀察，不能直接當成主張。"
+        "feedback": "主張是希望聽者接受的行動；後者是支持理由或觀察。"
       },
       {
         "id": "step-2",
-        "prompt": "要判斷剩食紀錄是否支持延長午休，還應檢查什麼？",
+        "prompt": "五天剩食資料能直接證明延長午休造成改善嗎？",
         "options": [
-          "樣本、測量方式、菜色、動線與前後同時變動的因素",
-          "只看五天總量是否變大",
-          "只問提案者是否有信心"
+          "不能；還要檢查菜色、動線、樣本與同期變化",
+          "能；前後有差就等於因果"
         ],
         "answer": "A",
-        "feedback": "A 能檢查資料品質與替代原因，避免把前後差距直接當成因果。"
+        "feedback": "資料與因果之間需要推論橋梁和替代解釋檢查。"
       },
       {
         "id": "step-3",
-        "prompt": "怎樣把提案變成可共同修正的方案？",
+        "prompt": "如何讓提案可共同修正？",
         "options": [
-          "訂試行範圍、指標、負責人、風險與回饋／停止條件",
-          "用更強烈的口號要求所有人接受",
-          "只記錄支持者的意見"
+          "設定試行範圍、指標、成本、風險、回饋與停止條件",
+          "只提高口號強度"
         ],
         "answer": "A",
-        "feedback": "A 讓方案可觀察、可評估、可修正，也保留不同受影響者的意見。"
+        "feedback": "可試行方案必須允許資料回饋改變決策。"
       }
     ]
   },
