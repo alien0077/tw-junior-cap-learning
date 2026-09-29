@@ -137,7 +137,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "publisherResearch": [
@@ -255,38 +255,38 @@
   },
   "interactive": {
     "type": "guided-choice",
-    "goal": "從文本證據理解「Cb-Ⅳ-1：親屬道德儀式典章制度」的內容與結構",
-    "scenario": "以「Cb-Ⅳ-1：親屬道德儀式典章制度」為主題，學生先預測，再依 unit spec 的 TextEvidenceBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "goal": "切換親屬、儀式、制度與時代條件，辨認哪些是史料描述、文化功能、制度規則與現代價值判斷。",
+    "scenario": "以家族祭典與制度變遷為材料；學生應切換年代、參與角色與規則，觀察同一儀式如何改變。真正時間軸、角色節點、規則開關與關係圖尚未實作。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "開始「Cb-Ⅳ-1：親屬道德儀式典章制度」時，哪個做法能讓預測可被檢查？",
+        "prompt": "家訓木盒由不同世代輪流保管，可以直接證明每位家人價值觀相同嗎？",
         "options": [
-          "先提交預測，不顯示正解",
-          "先把「只找表面關鍵字，未用「Cb-Ⅳ-1：親屬道德儀式典章制度」相關文本證據完成推論」當成已證明的答案"
+          "不能；可支持傳承與記憶象徵，但不能代表每個人的態度",
+          "能；保存同一物件就代表價值完全一致"
         ],
         "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
+        "feedback": "物件能承載記憶，但不能替所有成員發言。"
       },
       {
         "id": "step-2",
-        "prompt": "在「Cb-Ⅳ-1：親屬道德儀式典章制度」的操作後，哪一項最能支持你的解釋？",
+        "prompt": "成年禮刪除不合安全規範部分、保留祝福故事共餐，文化就必然消失嗎？",
         "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「從文本證據理解「Cb-Ⅳ-1：親屬道德儀式典章制度」的內容與結構」，不指出資料位置"
+          "不必然；可區分核心功能與可調整形式",
+          "必然；形式任何改動都等於文化消失"
         ],
         "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
+        "feedback": "文化延續可以透過協商調整形式。"
       },
       {
         "id": "step-3",
-        "prompt": "要把「Cb-Ⅳ-1：親屬道德儀式典章制度」遷移到新問題，哪個要求最重要？",
+        "prompt": "判斷制度是否公平，最需要看什麼？",
         "options": [
-          "換一個情境但保留「Cb-Ⅳ-1：親屬道德儀式典章制度」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
+          "適用對象、程序、例外與不同處境者的實際結果",
+          "制度是否寫成正式文字"
         ],
         "answer": "A",
-        "feedback": "完成後回看「Cb-Ⅳ-1：親屬道德儀式典章制度」的條件、證據與限制；不要只換名詞而保留原答案。"
+        "feedback": "公平是制度運作結果，不是文字存在本身。"
       }
     ]
   }
