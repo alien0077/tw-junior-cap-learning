@@ -54,9 +54,9 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 1,
-    "pendingCurriculumIds": 1031,
-    "nextCurriculumId": "cur-chinese-content-ab-iv-1",
+    "reviewedCurriculumIds": 2,
+    "pendingCurriculumIds": 1030,
+    "nextCurriculumId": "cur-chinese-content-ab-iv-2",
     "currentBrowserExecution": "未能在本工具環境啟動 repo 本機學生頁；不得視為通過"
   },
   "systemicFindings": [
@@ -111,10 +111,114 @@
       "curriculumId": "cur-chinese-content-ab-iv-1",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-ab-iv-1.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "證據不足／需修正",
+      "questionStatus": "需修正",
+      "interactionStatus": "證據不足／未能實際驗證",
+      "overallStatus": "需修正",
+      "knowledgeGraphIds": [
+        "kg-chinese-content-ab-iv-1"
+      ],
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-ab-iv-1.json",
+        "lessons/chinese/lesson-chinese-common-character-form-sound-meaning.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-ab-iv-1-1",
+        "question-chinese-content-ab-iv-1-2",
+        "question-chinese-content-ab-iv-1-3",
+        "question-chinese-content-ab-iv-1-4",
+        "question-chinese-content-ab-iv-1-5",
+        "question-chinese-content-ab-iv-1-6",
+        "question-chinese-content-ab-iv-1-7",
+        "question-chinese-content-ab-iv-1-8",
+        "question-chinese-content-ab-iv-1-9",
+        "question-chinese-content-ab-iv-1-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-ab-iv-1.yaml",
+      "questionResults": [
+        {
+          "id": "question-chinese-content-ab-iv-1-1",
+          "status": "通過",
+          "correct": "A"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-1-2",
+          "status": "通過",
+          "correct": "B"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-1-3",
+          "status": "需修正",
+          "stored": "C",
+          "correct": "A",
+          "reason": "「各班分別說明」才是各自／逐一說明；explanation 本身也支持「分別」。"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-1-4",
+          "status": "需修正",
+          "stored": "D",
+          "correct": "A",
+          "reason": "規範詞形為「概括」；D 使用異體／非題目所稱規範字形，explanation 也指向「概括」。"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-1-5",
+          "status": "需修正",
+          "stored": "B",
+          "correct": "A",
+          "reason": "「報告的分量很重」為引申義，表示重要程度／影響力；explanation 與 A 一致。"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-1-6",
+          "status": "需修正",
+          "stored": "C",
+          "correct": "B",
+          "reason": "無語境的「樂」資訊不足，應先補詞語／上下文再查證；explanation 與 B 一致。"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-1-7",
+          "status": "需修正",
+          "stored": "D",
+          "correct": "A",
+          "reason": "「釜底抽薪」才是從根本處理；explanation 與 A 一致。"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-1-8",
+          "status": "需修正",
+          "stored": "A",
+          "correct": "B",
+          "reason": "規範詞為「如實」；explanation 與 B 一致。"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-1-9",
+          "status": "需修正",
+          "stored": "B",
+          "correct": "A",
+          "reason": "A 才正確描述「青」提供部分聲音線索、形旁與詞義方向；explanation 與 A 一致。"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-1-10",
+          "status": "通過",
+          "correct": "C"
+        }
+      ],
+      "defects": [
+        "primary lesson 的 versionResearch 主要是出版社公開索引；publisherResearch 是公立學校課程計畫。這些足以支持課綱／版本定位，但不足以證明已實際讀到三版教材內容並完成實質三版本融合；unit spec 自己也明示 textbook-chapter-content pending。",
+        "lesson content.sections 僅三段摘要，與 teaching.body 六段長文不一致；正式 workbench student shell 又不載入 lesson teaching.body/content.sections，因此學生可見正文無法與審查正文對齊。",
+        "questions 3–9 的 answer.value 有 7 題錯誤，且多數 solutionSteps 的『核對正解』跟著錯誤 answer value，與 explanation/題意矛盾。",
+        "examPatternRefs locator 多為 paper 級泛稱『常用字形音義與詞語』『字音、字形、詞義與語境』，未提供頁碼／題號；不足以逐題追查所稱公開試題能力方向。",
+        "TextEvidenceBlock 在目前 renderer-registry.js 未見本單元專屬文本、可操作證據或圖形資料 renderer；只可確認 generic 文字化模型。未能在本工具環境實際操作瀏覽器，不能判互動通過。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-ab-iv-1.json",
+        "knowledge/chinese/foundational-graph.json#kg-chinese-content-ab-iv-1",
+        "lessons/chinese/lesson-chinese-content-ab-iv-1.json",
+        "lessons/chinese/lesson-chinese-common-character-form-sound-meaning.json",
+        "questions/chinese/question-chinese-content-ab-iv-1-1.json ... -10.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-ab-iv-1.yaml",
+        "implementation/runtime/renderer-registry.js",
+        "implementation/runtime/student-lesson-shell.js",
+        "NAER official curriculum: Ab-Ⅳ-1 = 4,000 個常用字的字形、字音和字義"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-ab-iv-2",
@@ -9385,6 +9489,23 @@
       "questionStatus": "待審",
       "interactionStatus": "待審",
       "overallStatus": "待審"
+    }
+  ],
+  "majorDefects": [
+    {
+      "severity": "P0",
+      "scope": "cur-chinese-content-ab-iv-1",
+      "type": "wrong-answer-key",
+      "questionIds": [
+        "question-chinese-content-ab-iv-1-3",
+        "question-chinese-content-ab-iv-1-4",
+        "question-chinese-content-ab-iv-1-5",
+        "question-chinese-content-ab-iv-1-6",
+        "question-chinese-content-ab-iv-1-7",
+        "question-chinese-content-ab-iv-1-8",
+        "question-chinese-content-ab-iv-1-9"
+      ],
+      "summary": "Stored answer.value contradicts prompt/options and usually the question's own explanation."
     }
   ]
 }
