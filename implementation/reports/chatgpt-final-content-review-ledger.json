@@ -3,7 +3,7 @@
   "reviewRole": "ChatGPT final curriculum/lesson/question/interaction content review",
   "repository": "alien0077/tw-junior-cap-learning",
   "branch": "main",
-  "commit": "ef2b200c5983cbd00e853f31b9831a025b0a815b",
+  "commit": "0010a8a4b4d39cb86d22457166f90df49b2a3b0b",
   "asOf": "2026-09-29",
   "policy": {
     "noSampling": true,
@@ -73,9 +73,9 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 9,
-    "pendingCurriculumIds": 1023,
-    "nextCurriculumId": "cur-chinese-content-ab",
+    "reviewedCurriculumIds": 10,
+    "pendingCurriculumIds": 1022,
+    "nextCurriculumId": "cur-chinese-content-ac-iv-1",
     "currentBrowserExecution": "未能在本工具環境啟動 repo 本機學生頁；不得視為通過"
   },
   "systemicFindings": [
@@ -596,10 +596,40 @@
       "curriculumId": "cur-chinese-content-ab",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-ab.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "需修正／來源待逐筆外網複核",
+      "questionStatus": "通過（10 題逐題審查未見答案/解析矛盾）",
+      "interactionStatus": "不通過／未能實際瀏覽器驗證",
+      "overallStatus": "需修正",
+      "knowledgeGraphIds": [
+        "kg-chinese-content-ab"
+      ],
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-ab.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-ab-1",
+        "question-chinese-content-ab-2",
+        "question-chinese-content-ab-3",
+        "question-chinese-content-ab-4",
+        "question-chinese-content-ab-5",
+        "question-chinese-content-ab-6",
+        "question-chinese-content-ab-7",
+        "question-chinese-content-ab-8",
+        "question-chinese-content-ab-9",
+        "question-chinese-content-ab-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-ab.yaml",
+      "defects": [
+        "unit spec 的 TextEvidenceBlock 宣稱可改變條件並同步更新至少兩種表徵，但 authored lesson interactive 實際僅三步文字 guided-choice，沒有單元專屬可操作字詞視覺模型。",
+        "互動 scenario/feedback 大量使用通用『預測—證據—遷移』模板，沒有實際字形、音義、語境或書體物件的同步視覺變化；依 GeoGebra-style gate 不通過。",
+        "三版本資料明示多為公立校方課程計畫/公開定位，不能宣稱已讀三版教材正文。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-ab.json",
+        "lessons/chinese/lesson-chinese-content-ab.json",
+        "questions/chinese/question-chinese-content-ab-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-ab.yaml"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-ac-iv-1",
