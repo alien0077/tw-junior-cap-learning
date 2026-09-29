@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,57 +163,14 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "以題目契約、立意、材料、組織與分層修訂完成可讀且扣題的文章。",
-    "scenario": "學生要把一次失敗經驗寫成給未來自己的信，先拆題與選材，再安排段落，最後用讀者重述和多輪修訂驗證。",
-    "variables": [
-      {
-        "symbol": "p",
-        "meaning": "題目契約與立意"
-      },
-      {
-        "symbol": "m",
-        "meaning": "材料與段落組織"
-      },
-      {
-        "symbol": "r",
-        "meaning": "分層修訂與讀者回饋"
-      }
-    ],
+    "type": "chinese-manipulation-lab",
+    "mode": "writing-workbench",
+    "goal": "操作題目契約、材料、段落順序與修訂層級，觀察文章扣題度、發展性與可讀性如何改變。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "題目要求寫信給未來的自己並說明失敗帶來的改變，下筆前最重要的工作是什麼？",
-        "options": [
-          "圈出對象、文體、失敗事件、改變與寫作目的，整理成審題檢查表",
-          "先找最華麗的開頭，不用確認題目限制",
-          "把所有失敗經驗都寫進去，篇幅越長越完整"
-        ],
-        "answer": "A",
-        "feedback": "A 把題目的必要條件轉成寫作契約，能避免故事精彩卻沒有回應任務。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "以『一把傘』為題，哪種立意最能發展成完整文章？",
-        "options": [
-          "列出傘的顏色和品牌，全文只做外觀介紹",
-          "寫雨中與他人共傘的事件，從互助細節推到自己對等待或關係的重新理解",
-          "反覆寫『傘很重要』，不需要事件或反思"
-        ],
-        "answer": "B",
-        "feedback": "B 有事件、細節、變化與反思，物件能成為文章發展的線索。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "完成文章後，哪套修訂順序最能提升品質？",
-        "options": [
-          "先換成華麗詞語，再隨意刪幾句，內容是否扣題最後再說",
-          "先看扣題與立意，再查材料和段落組織，最後修詞語、錯字與格式",
-          "只請朋友說好不好看，不保留修改理由"
-        ],
-        "answer": "B",
-        "feedback": "B 先處理影響理解的內容與結構，再處理語句與格式，修訂順序可回溯。"
-      }
+      "勾選對象／文體／事件／改變，建立題目契約。",
+      "從材料卡保留能推進『失敗帶來改變』的事件，刪除只有裝飾的細節。",
+      "調整背景→衝突→修正→反思的段落順序，觀察讀者是否能追蹤變化。",
+      "切換內容／結構／語句／格式修訂，先解決高層問題再校對。"
     ]
   },
   "versionResearch": [
@@ -311,5 +268,12 @@
       "以讀者重述和分層修訂保存前後版本與修改理由。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織審題、立意、取材、組織、遣詞、修訂與讀者驗證。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：作文不是一次寫完，是五次決策",
+    "memoryHook": "審題契約 → 一句立意 → 材料有變化 → 段落有任務 → 由大到小修",
+    "mustKnow": "先圈對象、目的、文體、必要內容與限制；每個材料都要回答『它如何推進立意？』。修訂先處理離題、立意與組織，再處理詞句、錯字與格式。",
+    "trap": "故事精彩就等於扣題；形容詞越多越有文采；修訂只改錯字；換讀者只換稱謂。",
+    "examMove": "寫前用一句話說『我要讓誰理解什麼』；寫後請別人只看題目與文章，能否重述你的核心與轉折。"
   }
 }
