@@ -3,7 +3,7 @@
   "reviewRole": "ChatGPT final curriculum/lesson/question/interaction content review",
   "repository": "alien0077/tw-junior-cap-learning",
   "branch": "main",
-  "commit": "b20203b05ac573c36d579cd687782a0b32d22aba",
+  "commit": "a46da11db899d8e3fbda430007f0c8f2b74796a7",
   "asOf": "2026-09-29",
   "policy": {
     "noSampling": true,
@@ -73,9 +73,9 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 30,
-    "pendingCurriculumIds": 1002,
-    "nextCurriculumId": "cur-chinese-content-bc-iv-2",
+    "reviewedCurriculumIds": 32,
+    "pendingCurriculumIds": 1000,
+    "nextCurriculumId": "cur-chinese-content-bc",
     "currentBrowserExecution": "未能在本工具環境啟動 repo 本機學生頁；不得視為通過"
   },
   "systemicFindings": [
@@ -1269,19 +1269,75 @@
       "curriculumId": "cur-chinese-content-bc-iv-2",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-bc-iv-2.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "questionStatus": "修正後通過（10 題逐題審查；Q2/Q6 答案鍵由 B 修正為 A，現與選項、解析、策略、逐步解法一致）",
+      "interactionStatus": "不通過／資料層已改為說明方式選擇／資訊重排專屬，但仍缺真正操作與同步視覺",
+      "overallStatus": "需修正",
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-bc-iv-2.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-bc-iv-2-1",
+        "question-chinese-content-bc-iv-2-2",
+        "question-chinese-content-bc-iv-2-3",
+        "question-chinese-content-bc-iv-2-4",
+        "question-chinese-content-bc-iv-2-5",
+        "question-chinese-content-bc-iv-2-6",
+        "question-chinese-content-bc-iv-2-7",
+        "question-chinese-content-bc-iv-2-8",
+        "question-chinese-content-bc-iv-2-9",
+        "question-chinese-content-bc-iv-2-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-bc-iv-2.yaml",
+      "defects": [
+        "題庫答案鍵錯置已修正：Q2/Q6 原 answer.value=B，但正確選項與解析均為 A。",
+        "原 interactive 通用模板已於 2c82a7c2d93de08130f6196bf468ef9b0e22583d 改為單元專屬內容。",
+        "學生端仍缺正文所需的拖放／圖表控制與同步視覺，GeoGebra-style gate 不通過。",
+        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-bc-iv-2.json",
+        "lessons/chinese/lesson-chinese-content-bc-iv-2.json",
+        "questions/chinese/question-chinese-content-bc-iv-2-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-bc-iv-2.yaml"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-bc-iv-3",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-bc-iv-3.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "questionStatus": "修正後通過（10 題逐題審查；Q2/Q4/Q5/Q6/Q9 答案鍵由 B 修正為 A，現與選項、解析、策略、逐步解法一致）",
+      "interactionStatus": "不通過／資料層已改為圖表單位／分母／縱軸／篩選切換專屬，但仍缺真正操作與同步視覺",
+      "overallStatus": "需修正",
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-bc-iv-3.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-bc-iv-3-1",
+        "question-chinese-content-bc-iv-3-2",
+        "question-chinese-content-bc-iv-3-3",
+        "question-chinese-content-bc-iv-3-4",
+        "question-chinese-content-bc-iv-3-5",
+        "question-chinese-content-bc-iv-3-6",
+        "question-chinese-content-bc-iv-3-7",
+        "question-chinese-content-bc-iv-3-8",
+        "question-chinese-content-bc-iv-3-9",
+        "question-chinese-content-bc-iv-3-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-bc-iv-3.yaml",
+      "defects": [
+        "題庫答案鍵錯置已修正：Q2/Q4/Q5/Q6/Q9 原 answer.value=B，但正確選項與解析均為 A。",
+        "原 interactive 通用模板已於 a46da11db899d8e3fbda430007f0c8f2b74796a7 改為單元專屬內容。",
+        "學生端仍缺正文所需的拖放／圖表控制與同步視覺，GeoGebra-style gate 不通過。",
+        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-bc-iv-3.json",
+        "lessons/chinese/lesson-chinese-content-bc-iv-3.json",
+        "questions/chinese/question-chinese-content-bc-iv-3-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-bc-iv-3.yaml"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-bc",
