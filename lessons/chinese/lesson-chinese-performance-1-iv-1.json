@@ -46,7 +46,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -164,55 +164,38 @@
   },
   "interactive": {
     "type": "guided-choice",
-    "goal": "把聆聽內容分層、保留條件、用澄清確認並整理多方共識。",
-    "scenario": "從社團邀請、社區噪音到小組會議，逐步選擇不替人下結論的紀錄方法。",
-    "variables": [
-      {
-        "symbol": "f",
-        "meaning": "事實與感受分層"
-      },
-      {
-        "symbol": "c",
-        "meaning": "澄清問題"
-      },
-      {
-        "symbol": "m",
-        "meaning": "共識與歧異紀錄"
-      }
-    ],
+    "goal": "操作事實、感受、需求、限制、推測與共識卡片，把聆聽內容分層並讓說話者可確認或修正。",
+    "scenario": "學生應將社團邀請、社區會議與小組對話的語句拖入不同欄位，再切換說話者查看共識與歧異。真正卡片拖放、說話者切換與共識圖尚未實作。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "『我想參加，但週五要照顧家人』應如何記錄？",
+        "prompt": "『我想參加，但週五要照顧家人』如何分層？",
         "options": [
-          "保留參加意願與照顧責任兩項資訊，時間安排另列待確認",
-          "直接寫成他拒絕參加",
-          "替他決定改報另一個時段"
+          "參加是意願；照顧家人是限制；時間安排待確認",
+          "直接歸類成拒絕"
         ],
         "answer": "A",
-        "feedback": "A 同時保留明說意願與限制，不把推測或決定塞回紀錄。"
+        "feedback": "同理聆聽要保留同時存在的意願與限制。"
       },
       {
         "id": "step-2",
-        "prompt": "有人說『最近很吵』，第一個澄清問題應偏向什麼？",
+        "prompt": "『最近很吵』下一步怎麼確認？",
         "options": [
-          "詢問時段、聲音來源與希望解決的問題",
-          "問他是不是討厭鄰居",
-          "直接宣布一定是施工造成"
+          "追問時段、來源與希望解決的問題",
+          "直接判定鄰居故意製造噪音"
         ],
         "answer": "A",
-        "feedback": "A 把模糊感受轉成可確認的範圍，並保留對方修正的空間。"
+        "feedback": "把模糊感受轉成可確認資訊，不替對方補動機。"
       },
       {
         "id": "step-3",
-        "prompt": "多方會議尚未同意的方案應如何整理？",
+        "prompt": "多方會議未同意的方案應放在哪？",
         "options": [
-          "標成提案或待討論，保留提出者與不同意見",
-          "只留下主持人最後一句話",
-          "刪除與自己不同的意見"
+          "提案／待討論，並保留提出者與異議",
+          "共同結論"
         ],
         "answer": "A",
-        "feedback": "A 讓共識與歧異都可追溯，不把尚未決定的事寫成共同結論。"
+        "feedback": "共識圖必須讓未決與分歧可追溯。"
       }
     ]
   },
