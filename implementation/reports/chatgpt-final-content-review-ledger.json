@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 79,
-    "pendingCurriculumIds": 953,
-    "nextCurriculumId": "cur-chinese-performance-6-iv-3",
+    "reviewedCurriculumIds": 80,
+    "pendingCurriculumIds": 952,
+    "nextCurriculumId": "cur-chinese-performance-6-iv-4",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 79,
-    "pendingUnits": 953
+    "reviewedUnits": 80,
+    "pendingUnits": 952
   },
   "systemicFindings": [
     {
@@ -2200,10 +2200,11 @@
       "curriculumId": "cur-chinese-performance-6-iv-3",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/performance-6-iv-3.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 6-Ⅳ-3 對齊；三版本融合涵蓋仿寫、改寫、文體、視角、限制與語意保留，差異及版權界線清楚；正文自編並補學霸筆記。",
+      "questionStatus": "10 題逐題核對答案／解析，未發現錯鍵；solutionSteps 已依比喻、因果、描寫、限知視角、公告語體、縮寫、短句風格、字數、擬人與整合流程專屬化。",
+      "interactionStatus": "原 guided-choice 已升級 rewrite-transformer：可標原因／結果／因果骨架、切換公告與語序、調整字數並即時檢查回譯是否失真；browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-chinese-performance-6-iv-4",
