@@ -42,8 +42,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課依官方課綱、Knowledge Graph 與目前可取得的南一、康軒、翰林公開入口及資源說明融合撰寫。出版社完整章節正文未公開或未能合法取得；本課所有中文解說、英文例句、活動、答案與回饋均為自編，不複製教科書或出版社媒體。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "publisherResearch": [
@@ -256,40 +256,31 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ae-Ⅳ-4：簡易卡片書信電郵」的形式與功能",
-    "scenario": "以「Ae-Ⅳ-4：簡易卡片書信電郵」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "message-format-workbench",
+    "goal": "固定同一事件，切換 card/letter/email、friend/teacher/office 與 deadline/attachment，觀察必要資訊、語氣和格式如何改變。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ae-Ⅳ-4：簡易卡片書信電郵」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ae-Ⅳ-4：簡易卡片書信電郵」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ae-Ⅳ-4：簡易卡片書信電郵」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ae-Ⅳ-4：簡易卡片書信電郵」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ae-Ⅳ-4：簡易卡片書信電郵」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ae-Ⅳ-4：簡易卡片書信電郵」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ae-Ⅳ-4：簡易卡片書信電郵」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "選 friend/teacher/school office，切換 greeting/request/closing 的正式程度。",
+      "把同一失物／邀請事件切成 card、letter、email，檢查哪些欄位必須增加或可壓縮。",
+      "開關 reply deadline 與 attachment，檢查正文是否建立正確期待。",
+      "用 What/When/Where/Why/Next/By when 六問做無提示讀者驗收。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：先讓收件人知道下一步，再談文筆",
+    "memoryHook": "Who → Why → Must know → Next action → By when → Format check",
+    "mustKnow": [
+      "card 篇幅短，保留情感／核心行動；letter 可補背景、請求與完整結尾；email 要有能定位任務的 subject。",
+      "正式不等於用難字，而是關係、資訊、請求與回覆方式合適。",
+      "提到 attachment 就要真的附檔；需要決定就寫明回覆內容與期限。",
+      "同一事實可因收件人改語氣與排序，但不能改日期、地點或任務。"
+    ],
+    "traps": [
+      "subject 寫 Music 就算清楚。",
+      "所有媒介直接貼同一段文字。",
+      "有主旨就不必寫正文目的。",
+      "為了正式加入冗長難字。"
+    ],
+    "examMove": "遮住作者解說，只讓讀者回答 What/When/Where/Why me/What next/By when；答不出來就補資訊。"
   }
 }
