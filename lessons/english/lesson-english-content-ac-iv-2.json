@@ -60,8 +60,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課以官方課綱與 KG 界定 Ac-Ⅳ-2，再依目前可取得的南一、康軒、翰林公開資料做功能與教學結構融合；所有課文、例句、對話、任務、答案與回饋均為自編，不複製出版社文字、圖片、音檔、題目或活動腳本。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "versionResearch": [
@@ -275,40 +275,31 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ac-Ⅳ-2：常見教室用語」的形式與功能",
-    "scenario": "以「Ac-Ⅳ-2：常見教室用語」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "classroom-communication-console",
+    "goal": "切換說話角色、任務缺口與語氣，觀察同一課堂目的應如何改寫成可執行的英文回應。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ac-Ⅳ-2：常見教室用語」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ac-Ⅳ-2：常見教室用語」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ac-Ⅳ-2：常見教室用語」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ac-Ⅳ-2：常見教室用語」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ac-Ⅳ-2：常見教室用語」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ac-Ⅳ-2：常見教室用語」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ac-Ⅳ-2：常見教室用語」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "切換 teacher→class 與 classmate→classmate，比較 direct instruction 和 polite request。",
+      "切換 audio cut out／不知道分工，分別選 repeat instruction 或 ask which part。",
+      "操作 borrow ruler 情境，從 May I borrow...? 接到 permission + handoff。",
+      "操作 submit homework／work with a partner，檢查 action + object/person 是否完整。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：教室英文的答案是『下一步能不能做』",
+    "memoryHook": "功能 → 缺口 → 對象 → 語氣 → 重述確認",
+    "mustKnow": [
+      "instruction 要抓 action、object、order/time、condition。",
+      "May I / Can I 常是請求允許；Could you ... please? 可做禮貌請求。",
+      "沒聽清楚就要求 repeat；不知道分工要問 which part / what do I do next，而不是只說 I don't understand。",
+      "回應最好讓對方知道接受、拒絕、需要澄清或下一步。"
+    ],
+    "traps": [
+      "看到 please 就以為任何句子都合適。",
+      "只回答 Okay，卻沒確認數量／時間／對象。",
+      "把借用請求回答成無關資訊。",
+      "沒聽清楚與不知道分工使用同一種求助句。"
+    ],
+    "examMove": "先判斷 utterance function，再找能讓對話繼續且完成任務的回應。"
   }
 }
