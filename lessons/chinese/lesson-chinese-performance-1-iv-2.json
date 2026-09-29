@@ -46,7 +46,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -164,55 +164,38 @@
   },
   "interactive": {
     "type": "guided-choice",
-    "goal": "整合語句、聲情、情境與目的判讀訊息，指出表達技巧的效果與風險，再選擇可確認的回應。",
-    "scenario": "從遲到反諷、團隊提醒到校園通知，逐步比較線索與溝通目的，避免把猜測當成事實。",
-    "variables": [
-      {
-        "symbol": "l",
-        "meaning": "字面與語境"
-      },
-      {
-        "symbol": "t",
-        "meaning": "聲情與表達技巧"
-      },
-      {
-        "symbol": "r",
-        "meaning": "澄清與安全回應"
-      }
-    ],
+    "goal": "切換字面、語氣、重音、停頓、表情、關係與前後文，觀察同一句話的可能溝通效果如何改變。",
+    "scenario": "以『你可真準時』等對話為材料；學生應調整語氣與情境條件，再比較稱讚、反諷、提醒等解讀信心。真正音訊播放、重音／停頓控制與信心視覺尚未實作。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "遲到者聽到『你可真準時』，第一步應做什麼？",
+        "prompt": "遲到二十分鐘後聽到『你可真準時』，能只按字面判定稱讚嗎？",
         "options": [
-          "同時檢查字面、遲到事實、語氣、關係與前後文，保留多種解讀",
-          "只按字面當成稱讚",
-          "只看對方眉毛就判定惡意"
+          "不能；要合併遲到事實、聲情、關係與前後文",
+          "能；字面永遠決定唯一意思"
         ],
         "answer": "A",
-        "feedback": "A 把不同線索放在一起，能避免單一表情或反差直接變成確定意圖。"
+        "feedback": "聲情判讀必須整合多種線索並保留不確定性。"
       },
       {
         "id": "step-2",
-        "prompt": "要分析反問句的效果，哪項證據最重要？",
+        "prompt": "重讀『現在』主要改變什麼？",
         "options": [
-          "看前後文與後續行動，判斷它如何引導注意、表達質疑或造成壓力",
-          "只數句末標點",
-          "看到反問就固定判定為生氣"
+          "把注意力聚焦在立即行動的時間",
+          "把鼓勵改成永遠不可能成功"
         ],
         "answer": "A",
-        "feedback": "A 同時處理技巧、目的與聽者效果，不把修辭名稱當成完整分析。"
+        "feedback": "重音通常改變焦點，不必然反轉整句立場。"
       },
       {
         "id": "step-3",
-        "prompt": "無法確定對方是在開玩笑還是在提醒時，如何回應？",
+        "prompt": "不確定對方在開玩笑還是提醒時，較安全的做法？",
         "options": [
-          "用中性語句重述理解並請對方確認，涉及安全或尊嚴時改用適切管道",
-          "直接指控對方故意羞辱",
-          "裝作聽不見並替對方決定"
+          "中性重述理解並請對方確認",
+          "直接指控對方故意羞辱"
         ],
         "answer": "A",
-        "feedback": "A 保留修正空間，也會依風險與權力差距選擇較安全的溝通方式。"
+        "feedback": "讓對方可修正，比把推測當事實更符合溝通目的。"
       }
     ]
   },
