@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-4-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: **Can you help me carry this box?** B: **______**",
+  "prompt": "Jin says, **I need the tablet for captions because my interview audio is hard to hear.** Lea says, **I prefer the tablet for drawing the poster.** Which reply best starts a fair negotiation?",
   "options": [
     {
       "id": "A",
-      "text": "I prefer winter."
+      "text": "Lea likes drawing, so Jin's reason should be ignored."
     },
     {
       "id": "B",
-      "text": "It is my birthday."
+      "text": "Jin said need, so he keeps the tablet all day without discussion."
     },
     {
       "id": "C",
-      "text": "No, the movie starts at eight."
+      "text": "Let's check how long the captions take, then plan a time for Lea to draw."
     },
     {
       "id": "D",
-      "text": "Sure. It looks heavy."
+      "text": "Neither person may use the tablet."
     }
   ],
   "knowledgeIds": [
@@ -26,8 +26,8 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "Sure accepts the request and the second sentence shows awareness of the box's weight."
+    "value": "C",
+    "explanation": "The reply investigates the task constraint behind Jin's need while preserving a later option for Lea's preference. It turns competing statements into a schedule the group can test."
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "公立學校七年級英語段考；只研究需求、意願、感受、請求與情境回應題型。",
     "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫需求意願感受題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-13",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-english-content-b-iv-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "辨認 can you 的請求，再選接受並與物品情境相符的回應。",
+  "solutionStrategy": "把需求理由轉成可檢查的限制，再替偏好保留替代時間或方式。",
   "solutionSteps": [
-    "Identify the requested action carry.",
-    "Find acceptance language.",
-    "Check the comment relates to the box.",
-    "Choose Sure. It looks heavy.",
-    "Reject preferences, dates and unrelated schedules."
+    "Identify Jin's task-related need for captions.",
+    "Identify Lea's drawing preference.",
+    "Ask what constraint can be measured: how long captioning takes.",
+    "Use that information to schedule both uses if possible.",
+    "Reject automatic winners or solutions that discard both goals."
   ]
 }
