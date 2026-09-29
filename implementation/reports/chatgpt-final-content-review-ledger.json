@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 92,
-    "pendingCurriculumIds": 940,
-    "nextCurriculumId": "cur-english-content-ac-iv-2",
+    "reviewedCurriculumIds": 93,
+    "pendingCurriculumIds": 939,
+    "nextCurriculumId": "cur-english-content-ac-iv-3",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 92,
-    "pendingUnits": 940
+    "reviewedUnits": 93,
+    "pendingUnits": 939
   },
   "systemicFindings": [
     {
@@ -2330,10 +2330,11 @@
       "curriculumId": "cur-english-content-ac-iv-2",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-ac-iv-2.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Ac-Ⅳ-2 對齊；正文以指令、請求、允許、確認、求助與回報組織教室溝通，並用 action/object/order-condition/role 缺口支援實際任務，內容自編且適合國中生；三版本公開證據只採可驗證教學結構，不宣稱受限教材逐句融合；已補學霸筆記。",
+      "questionStatus": "10 題逐題核對，修正 2 個 answer.value 與 explanation/steps 明確矛盾的錯鍵：Q4 D→C（work with one classmate）、Q6 C→A（hand in homework）；其餘 8 題一致。",
+      "interactionStatus": "原 generic guided-choice 已升級 english-manipulation-lab / classroom-communication-console，學生頁可切換老師／同學角色、audio cut out／分工缺口、借用允許、partner 與 hand-in 任務並取得即時功能回饋；browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-ac-iv-3",
