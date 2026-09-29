@@ -41,7 +41,7 @@
     "authoringNote": "This version-fused lesson is independently authored from the verified official curriculum node, the Knowledge Graph node, and the publicly inspectable publisher locations recorded below. No publisher text, image, example, exercise, answer, or transcript is reproduced; publisher full text was not publicly obtainable for this target node."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "versionResearch": [
@@ -255,38 +255,38 @@
   },
   "interactive": {
     "type": "guided-choice",
-    "goal": "從文本證據理解「Ad-Ⅳ-4：非韻文古文古典小說語錄寓言」的內容與結構",
-    "scenario": "以「Ad-Ⅳ-4：非韻文古文古典小說語錄寓言」為主題，學生先預測，再依 unit spec 的 TextEvidenceBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "goal": "把古文閱讀拆成『字詞—事件因果—說話者／敘述者—主旨限制』，避免把角色話語或熟悉訓語直接當答案。",
+    "scenario": "以〈借燈辨路〉與渡河自編片段為材料，先分事實、推論與未知，再改變一個情節條件測試主旨是否仍成立；目前尚未實作可拖曳事件鏈與三欄卡。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "開始「Ad-Ⅳ-4：非韻文古文古典小說語錄寓言」時，哪個做法能讓預測可被檢查？",
+        "prompt": "〈借燈辨路〉中，哪個證據最能指出少年的判斷問題？",
         "options": [
-          "先提交預測，不顯示正解",
-          "先把「只找表面關鍵字，未用「Ad-Ⅳ-4：非韻文古文古典小說語錄寓言」相關文本證據完成推論」當成已證明的答案"
+          "牌已寫『東路近，然多泥』，少年卻只抓住『近』來決定",
+          "少年最後說了一句話，所以他的解釋一定等於作者結論"
         ],
         "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
+        "feedback": "先分開牌面資訊、少年選擇與少年事後辯解；角色發言本身不能取代事件證據。"
       },
       {
         "id": "step-2",
-        "prompt": "在「Ad-Ⅳ-4：非韻文古文古典小說語錄寓言」的操作後，哪一項最能支持你的解釋？",
+        "prompt": "若把故事改成『沒有下雨，少年順利由東路抵達』，最合理的做法是？",
         "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「從文本證據理解「Ad-Ⅳ-4：非韻文古文古典小說語錄寓言」的內容與結構」，不指出資料位置"
+          "重新檢查原主旨能否仍由新情節支持",
+          "不管結果怎麼改，都維持原本完全相同的主旨"
         ],
         "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
+        "feedback": "反事實改寫是在測試因果與主旨的證據邊界；情節條件改變後必須重新論證。"
       },
       {
         "id": "step-3",
-        "prompt": "要把「Ad-Ⅳ-4：非韻文古文古典小說語錄寓言」遷移到新問題，哪個要求最重要？",
+        "prompt": "讀到『牌只說路，未說我會遇雨』時，應先把它放在哪一層？",
         "options": [
-          "換一個情境但保留「Ad-Ⅳ-4：非韻文古文古典小說語錄寓言」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
+          "角色的辯解，再與前文牌面、天色與結果交叉檢查",
+          "作者已證明的普遍真理"
         ],
         "answer": "A",
-        "feedback": "完成後回看「Ad-Ⅳ-4：非韻文古文古典小說語錄寓言」的條件、證據與限制；不要只換名詞而保留原答案。"
+        "feedback": "先辨認說話者與語境，再判斷這句話受到哪些前文證據支持或反駁。"
       }
     ]
   }
