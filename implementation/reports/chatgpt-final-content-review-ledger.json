@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 99,
-    "pendingCurriculumIds": 933,
-    "nextCurriculumId": "cur-english-content-ae-iv-2",
+    "reviewedCurriculumIds": 100,
+    "pendingCurriculumIds": 932,
+    "nextCurriculumId": "cur-english-content-ae-iv-3",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 99,
-    "pendingUnits": 933
+    "reviewedUnits": 100,
+    "pendingUnits": 932
   },
   "systemicFindings": [
     {
@@ -2400,10 +2400,11 @@
       "curriculumId": "cur-english-content-ae-iv-2",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-ae-iv-2.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Ae-Ⅳ-2 對齊；正文以 title/sample-time/labels/scale/unit/legend 建立 table/bar/line/pie 的證據閱讀，並明確區分描述、比較、推測與因果；三版本只融合公開可驗證的閱讀／圖像組織／評量方向，數據與例句自編；已補學霸筆記。",
+      "questionStatus": "10 題逐題核對，修正 7 個 answer.value 與 explanation/steps 明確矛盾錯鍵：Q1 A→B、Q2 B→C、Q4 D→B、Q5 B→C、Q7 D→A、Q8 A→B、Q10 C→B；其餘 Q3/Q6/Q9 一致。",
+      "interactionStatus": "原 generic guided-choice 已升級 chart-evidence-lab 並接入正式 renderer；可操作 most/same/difference、折線 rise/same/fall、缺 unit／缺 value，以及 may/because/always 主張強度，直接看到證據界線。browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-ae-iv-3",
