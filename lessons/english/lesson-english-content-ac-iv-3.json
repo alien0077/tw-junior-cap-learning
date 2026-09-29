@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課依官方課綱、Knowledge Graph 與可取得的南一、康軒、翰林公開入口及其限制，針對 Ac-Ⅳ-3 重新設計。英文例句、對話、練習、活動、解析與回饋均為自編，不複製教科書、習作、音檔、影片腳本或出版社題目。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "publisherResearch": [
@@ -261,40 +261,31 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ac-Ⅳ-3：常見生活用語」的形式與功能",
-    "scenario": "以「Ac-Ⅳ-3：常見生活用語」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "daily-communication-console",
+    "goal": "切換溝通目的、對象與資訊缺口，觀察問候、請求、邀請、道歉、感謝、問路與安排如何改變合適回應。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ac-Ⅳ-3：常見生活用語」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ac-Ⅳ-3：常見生活用語」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ac-Ⅳ-3：常見生活用語」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ac-Ⅳ-3：常見生活用語」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ac-Ⅳ-3：常見生活用語」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ac-Ⅳ-3：常見生活用語」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ac-Ⅳ-3：常見生活用語」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "切換 friend／teacher／service staff，比較 Pass me...、Could you... please?、Excuse me, could you...?。",
+      "切換 price/place/time，分別用 How much / Where / What time 對準資訊缺口。",
+      "操作 invitation：Are you free...? → Would you like...? → where/when clarification。",
+      "操作 apology/thanks/directions，選能承接功能且提供下一步的回應。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：生活用語先看『要完成什麼』",
+    "memoryHook": "目的 → 對象 → 場合 → 必要資訊 → 對方下一步",
+    "mustKnow": [
+      "How much 問價格；Where 問地點；What time 問時刻；show me the way 是問路。",
+      "Would you like...? 可用於提供／邀請；接受可說 Yes, please，婉拒要讓對方知道是否有替代安排。",
+      "Excuse me 常用來引起注意；I'm sorry 可是道歉，也可引出婉拒，必須看後文。",
+      "禮貌不是只加 please；資訊不足時仍會讓任務失敗。"
+    ],
+    "traps": [
+      "只看單字，不看說話目的。",
+      "把 Okay / Maybe 當成完整安排。",
+      "對所有對象都用同一種直接命令。",
+      "文字訊息漏掉時間、地點或回覆要求。"
+    ],
+    "examMove": "先替問句貼 function 標籤，再找能回答同一資訊缺口、讓對話繼續的選項。"
   }
 }
