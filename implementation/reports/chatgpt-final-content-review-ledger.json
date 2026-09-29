@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 89,
-    "pendingCurriculumIds": 943,
-    "nextCurriculumId": "cur-english-content-ab-iv-3",
+    "reviewedCurriculumIds": 90,
+    "pendingCurriculumIds": 942,
+    "nextCurriculumId": "cur-english-content-ab",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 89,
-    "pendingUnits": 943
+    "reviewedUnits": 90,
+    "pendingUnits": 942
   },
   "systemicFindings": [
     {
@@ -2300,10 +2300,11 @@
       "curriculumId": "cur-english-content-ab-iv-3",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-ab-iv-3.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Ab-Ⅳ-3 對齊；三版本融合保留音韻→詞彙／閱讀、練習→回饋與規則例外的共同核心，且公開資料不足處明確不臆測出版社全文；正文、詞例與任務自編。已補學霸筆記。",
+      "questionStatus": "10 題逐題核對，發現並修正 5 個 answer.value 與 explanation/solutionSteps 明確矛盾的錯鍵：Q3 C→B（hot）、Q5 B→C（/tʃ/）、Q6 C→D（note）、Q9 B→A（green）、Q10 C→A（sun+set）。其餘 5 題一致。",
+      "interactionStatus": "原 generic guided-choice 已升級 english-manipulation-lab / phonics-decoder，學生頁可操作 CVC/silent-e、blend/digraph、flim 解碼、compound、ee 與例外查證路徑；browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-ab",
