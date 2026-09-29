@@ -13,12 +13,22 @@ ROOT = Path(__file__).resolve().parents[1]
 def main() -> int:
     files = sorted((ROOT / "implementation/unit-specs").glob("*/*.yaml"))
     units = []
+    lessons_by_id = {}
+    for lesson_path in sorted((ROOT / "lessons").glob("*/*.json")):
+        lesson = json.loads(lesson_path.read_text(encoding="utf-8"))
+        lesson_id = lesson.get("id")
+        if lesson_id:
+            lessons_by_id[lesson_id] = lesson
     for path in files:
         spec = yaml.safe_load(path.read_text(encoding="utf-8"))["unitImplementationSpec"]
+        lesson_id = spec.get("lessonId")
+        lesson = lessons_by_id.get(lesson_id)
+        if lesson is not None:
+            spec["authoredLesson"] = lesson
         units.append(spec)
     out = ROOT / "implementation/unit-specs.bundle.json"
     out.write_text(json.dumps({"specVersion": "1.0", "units": units}, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
-    print(json.dumps({"units": len(units), "output": str(out)}, ensure_ascii=False))
+    print(json.dumps({"units": len(units), "lessonsAttached": sum(1 for unit in units if "authoredLesson" in unit), "output": str(out)}, ensure_ascii=False))
     return 0
 
 
