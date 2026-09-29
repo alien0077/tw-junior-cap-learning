@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-3-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A classmate looks confused after your explanation. What should you do?",
+  "prompt": "During an online explanation, a classmate pauses and types, **Could you show that step again?** What is the best response?",
   "options": [
     {
       "id": "A",
-      "text": "Speak faster and louder without checking."
+      "text": "Assume the classmate is confused about everything."
     },
     {
       "id": "B",
-      "text": "Use simpler words and ask if the explanation is clear."
+      "text": "Show the step again with simpler words, then ask which part needs checking."
     },
     {
       "id": "C",
-      "text": "Turn your back."
+      "text": "Speak faster and skip the diagram."
     },
     {
       "id": "D",
-      "text": "Stop helping immediately."
+      "text": "Assume the pause means the classmate wants to leave."
     }
   ],
   "knowledgeIds": [
@@ -27,7 +27,7 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "Simpler language plus a check for understanding adapts the message and confirms whether it worked."
+    "explanation": "The typed request is confirmed evidence that one step needs support. Showing it again and asking a focused question repairs the message without guessing the classmate's feelings or overall ability."
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "公立學校七年級英語段考；只研究語言與非語言的澄清、確認、請求、聆聽、肢體提示與語氣策略題型。",
     "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫溝通策略題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-13",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-english-content-b-iv-3",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "同時調整語言難度與確認理解，不只重複原句。",
+  "solutionStrategy": "優先使用對方已明確表達的需求，再調整語言與媒介；不要從停頓推測情緒或能力。",
   "solutionSteps": [
-    "Notice the listener's confused expression.",
-    "Reduce vocabulary or sentence complexity.",
-    "Ask a checking question.",
-    "Choose the adaptive response.",
-    "Avoid equating louder speech with clearer meaning."
+    "Separate the observable pause from the confirmed typed request.",
+    "Use the request as evidence that the step should be shown again.",
+    "Combine simpler wording with the visual step.",
+    "Ask a focused checking question.",
+    "Reject answers that turn the pause into an unsupported conclusion."
   ]
 }
