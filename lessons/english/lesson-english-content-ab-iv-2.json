@@ -40,8 +40,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課依官方課綱、Knowledge Graph 與三家出版社可公開查核的資源定位獨立撰寫；不重製歌詞、課文、音檔、插圖、題目或答案。所有短句、節奏卡、韻文與互動回饋均為自編。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "versionResearch": [
@@ -254,40 +254,30 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ab-Ⅳ-2：歌謠韻文節奏音韻」的形式與功能",
-    "scenario": "以「Ab-Ⅳ-2：歌謠韻文節奏音韻」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "rhyme-rhythm-workbench",
+    "goal": "用可點拍與聲音配對分開操作 rhyme、syllable、stress/beat 與 vowel contrast。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ab-Ⅳ-2：歌謠韻文節奏音韻」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ab-Ⅳ-2：歌謠韻文節奏音韻」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ab-Ⅳ-2：歌謠韻文節奏音韻」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ab-Ⅳ-2：歌謠韻文節奏音韻」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ab-Ⅳ-2：歌謠韻文節奏音韻」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ab-Ⅳ-2：歌謠韻文節奏音韻」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ab-Ⅳ-2：歌謠韻文節奏音韻」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "點 light/night 與 light/late，比較真正押韻和只看拼字。",
+      "依 Clap / your / hands / now 的明示四拍逐格點拍，再比較不同長度口令。",
+      "切換 We PLAY in the PARK 的內容詞強拍與 all words equal，觀察可理解焦點。",
+      "切換 ship /ɪ/、sheep /iː/，先聽核心母音，再用語境驗證。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：押韻看聲音，節奏看強弱與時間",
+    "memoryHook": "音節 ≠ 重音 ≠ 節拍；先聽尾音，再看重複與變化。",
+    "mustKnow": [
+      "押韻比較行尾重讀部分的聲音，例如 light / night；拼字像不代表押韻。",
+      "內容詞通常比功能詞突出，但歌謠可以為了節奏刻意安排拍點。",
+      "重複建立預期；變化把新資訊推到前景。",
+      "ship /ɪ/ 與 sheep /iː/ 要聽母音差異，不用字母數猜。"
+    ],
+    "traps": [
+      "把字母結尾相同直接判成押韻。",
+      "把 syllable、stress、beat 當成同一件事。",
+      "每個字都同樣重讀。"
+    ],
+    "examMove": "遇到聲音題先分類：問 rhyme、syllable、initial sound、vowel 還是 stress/beat；分類後才比較。"
   }
 }
