@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 94,
-    "pendingCurriculumIds": 938,
-    "nextCurriculumId": "cur-english-content-ac-iv-4",
+    "reviewedCurriculumIds": 95,
+    "pendingCurriculumIds": 937,
+    "nextCurriculumId": "cur-english-content-ac",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 94,
-    "pendingUnits": 938
+    "reviewedUnits": 95,
+    "pendingUnits": 937
   },
   "systemicFindings": [
     {
@@ -2350,10 +2350,11 @@
       "curriculumId": "cur-english-content-ac-iv-4",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-ac-iv-4.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Ac-Ⅳ-4 對齊；正文沒有把1200字詞降成翻譯清單，而是以 context、詞性、搭配、詞形、字族／近形與一字多義建立可說明的辨詞流程；三版本只融合公開可核驗的策略與活動定位，例句與任務均自編；已補學霸筆記。",
+      "questionStatus": "10 題逐題核對，answer、explanation、solutionStrategy、solutionSteps 全部一致，未發現錯鍵。",
+      "interactionStatus": "原 generic guided-choice 已升級 english-manipulation-lab / vocabulary-clue-lab，學生可切換 open/light/leave 義項、plan 詞性、borrow/lend 方向與 quiet/quick/quite 近形干擾，直接觀察語境證據如何改變詞義；browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-ac",
