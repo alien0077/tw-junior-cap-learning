@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 98,
-    "pendingCurriculumIds": 934,
-    "nextCurriculumId": "cur-english-content-ae-iv-1",
+    "reviewedCurriculumIds": 99,
+    "pendingCurriculumIds": 933,
+    "nextCurriculumId": "cur-english-content-ae-iv-2",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 98,
-    "pendingUnits": 934
+    "reviewedUnits": 99,
+    "pendingUnits": 933
   },
   "systemicFindings": [
     {
@@ -2390,10 +2390,11 @@
       "curriculumId": "cur-english-content-ae-iv-1",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-ae-iv-1.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Ae-Ⅳ-1 對齊；以同一自編校園事件跨 rhyme/prose/play/story 建立文類線索與事實保真，三版本只融合公開可驗證的篇章理解／聲音表現／情境產出教學結構，不拼貼出版社文字；學霸筆記完整。",
+      "questionStatus": "10 題逐題核對答案、解析、策略與 solutionSteps，事件順序、原因、韻文動作、短劇回應、主旨、比喻、人物感受推論、結尾、重複結構與轉折原因均一致，未發現錯鍵。",
+      "interactionStatus": "genre-transformer 原已有專屬 UI 但缺 click handler，已補正式事件處理；現在可切換事實護照、rhyme/prose/play/story 並對『新增老師找到標籤』即時判定為無證據改情節。browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-ae-iv-2",
