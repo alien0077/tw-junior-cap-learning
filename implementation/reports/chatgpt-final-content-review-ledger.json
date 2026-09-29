@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 103,
-    "pendingCurriculumIds": 929,
-    "nextCurriculumId": "cur-english-content-ae-iv-6",
+    "reviewedCurriculumIds": 104,
+    "pendingCurriculumIds": 928,
+    "nextCurriculumId": "cur-english-content-ae-iv-7",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 103,
-    "pendingUnits": 929
+    "reviewedUnits": 104,
+    "pendingUnits": 928
   },
   "systemicFindings": [
     {
@@ -2440,10 +2440,11 @@
       "curriculumId": "cur-english-content-ae-iv-6",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-ae-iv-6.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Ae-Ⅳ-6 對齊；以原創失物故事與五格故事板教背景、人物目標、轉折、行動、結局，明示／推論界線與時間／因果線索清楚。三版本僅採公開可驗證之故事閱讀、影音／互動與評量方向，未複製受限教材；已補學霸筆記。",
+      "questionStatus": "10 題逐題核對 setting、character inference、problem、because cause、event order、action-result、ending inference、changed condition、mood 與 summary；答案、解析、策略與逐步解法一致，無錯鍵。",
+      "interactionStatus": "原 generic guided-choice 已升級 story-causality-board；正式 renderer 可遮結局、刪除關鍵事件、替換人物選擇、區分 F 明示／I 推論，直接顯示因果鏈是否仍成立；browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-ae-iv-7",
