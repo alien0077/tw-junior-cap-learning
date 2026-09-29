@@ -3,7 +3,7 @@
   "reviewRole": "ChatGPT final curriculum/lesson/question/interaction content review",
   "repository": "alien0077/tw-junior-cap-learning",
   "branch": "main",
-  "commit": "ac22b24f28045d178f981ae866f786840b123a38",
+  "commit": "78f0a2c6fed7638e32e93fc1242e4765b29acf19",
   "asOf": "2026-09-29",
   "policy": {
     "noSampling": true,
@@ -73,9 +73,9 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 2,
-    "pendingCurriculumIds": 1030,
-    "nextCurriculumId": "cur-chinese-content-ab-iv-2",
+    "reviewedCurriculumIds": 3,
+    "pendingCurriculumIds": 1029,
+    "nextCurriculumId": "cur-chinese-content-ab-iv-3",
     "currentBrowserExecution": "未能在本工具環境啟動 repo 本機學生頁；不得視為通過"
   },
   "systemicFindings": [
@@ -262,10 +262,87 @@
       "curriculumId": "cur-chinese-content-ab-iv-2",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-ab-iv-2.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "需修正（內容可用，但三版本證據仍僅公開索引／校方課程計畫層級）",
+      "questionStatus": "需修正（10 題逐題審；Q4 題幹矛盾已修）",
+      "interactionStatus": "不通過／未能實際瀏覽器驗證",
+      "overallStatus": "需修正",
+      "knowledgeGraphIds": [
+        "kg-chinese-content-ab-iv-2"
+      ],
+      "lessonPaths": [
+        "lessons/chinese/lesson-chinese-content-ab-iv-2.json"
+      ],
+      "questionIds": [
+        "question-chinese-content-ab-iv-2-1",
+        "question-chinese-content-ab-iv-2-2",
+        "question-chinese-content-ab-iv-2-3",
+        "question-chinese-content-ab-iv-2-4",
+        "question-chinese-content-ab-iv-2-5",
+        "question-chinese-content-ab-iv-2-6",
+        "question-chinese-content-ab-iv-2-7",
+        "question-chinese-content-ab-iv-2-8",
+        "question-chinese-content-ab-iv-2-9",
+        "question-chinese-content-ab-iv-2-10"
+      ],
+      "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-ab-iv-2.yaml",
+      "questionResults": [
+        {
+          "id": "question-chinese-content-ab-iv-2-1",
+          "status": "通過"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-2-2",
+          "status": "通過"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-2-3",
+          "status": "通過"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-2-4",
+          "status": "已修正",
+          "note": "原題要求讀音與意思相同，但 D 的兩詞僅讀音相同、義項不同；已改為明確比較『讀音相同但詞中意思不同』。"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-2-5",
+          "status": "通過"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-2-6",
+          "status": "通過"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-2-7",
+          "status": "通過"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-2-8",
+          "status": "通過"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-2-9",
+          "status": "通過"
+        },
+        {
+          "id": "question-chinese-content-ab-iv-2-10",
+          "status": "通過"
+        }
+      ],
+      "defects": [
+        "versionResearch 三家 findings 大量共用相同敘述，且明示未取得教材正文；只能支持能力定位，不能當成三版本實質融合。",
+        "Q4 原題幹與 answer/explanation 自相矛盾，已修正。",
+        "互動為三步純文字 guided-choice；依使用者指定 GeoGebra-style gate，沒有可直接操作的單元專屬視覺模型、同步圖形/標籤/數值變化，因此互動不通過。",
+        "本工具環境無法實際啟動 repo 學生頁；keyboard/retry/reset/narrow viewport 不得宣稱實測通過。"
+      ],
+      "evidence": [
+        "curriculum/chinese/content-ab-iv-2.json",
+        "lessons/chinese/lesson-chinese-content-ab-iv-2.json",
+        "questions/chinese/question-chinese-content-ab-iv-2-{1..10}.json",
+        "implementation/unit-specs/chinese/cur-chinese-content-ab-iv-2.yaml"
+      ],
+      "fixes": [
+        "78f0a2c6fed7638e32e93fc1242e4765b29acf19"
+      ]
     },
     {
       "curriculumId": "cur-chinese-content-ab-iv-3",
