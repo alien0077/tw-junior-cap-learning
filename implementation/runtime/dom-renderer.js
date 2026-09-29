@@ -307,7 +307,7 @@ function renderLanguageTimelineActivity({ document, mount, activity, engine, sto
  * Subject renderers may replace the visualization body, but they must keep this
  * accessible state machine and fallback path.
  */
-export function renderInteractiveBlock({ document, mount, spec, blockIndex = 0 }) {
+export function renderInteractiveBlock({ document, mount, spec, blockIndex = 0, lesson = null }) {
   const block = spec.interactiveBlocks[blockIndex];
   if (!block || !RENDERER_COMPONENTS.includes(block.component)) throw new Error("unregistered interactive block");
   const engine = new InteractiveState(block.initialState);
@@ -341,7 +341,7 @@ export function renderInteractiveBlock({ document, mount, spec, blockIndex = 0 }
   purpose.append(text(document, block.purpose));
   root.append(purpose);
 
-  root.append(renderComponentBody({ document, spec, block, engine, storage }));
+  root.append(renderComponentBody({ document, spec, block, engine, storage, lesson }));
   renderLanguageTimelineActivity({ document, mount: root, activity: block.languageTimeline, engine, storage });
   renderGuidedActivity({ document, mount: root, activity: block.guidedActivity });
 

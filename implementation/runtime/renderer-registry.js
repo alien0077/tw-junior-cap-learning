@@ -340,7 +340,7 @@ function renderGenreReadingLab({ document, mount, block, engine, storage }) {
   mount.append(section);
 }
 
-export function renderComponentBody({ document, spec, block, engine, storage }) {
+export function renderComponentBody({ document, spec, block, engine, storage, lesson = null }) {
   const metadata = RENDERER_METADATA[block.component];
   if (!metadata) throw new Error(`unregistered component: ${block.component}`);
   const model = COMPONENT_MODELS[block.component];
@@ -433,6 +433,44 @@ export function renderComponentBody({ document, spec, block, engine, storage }) 
   evidenceSection.append(evidenceList);
   body.append(evidenceSection);
 
+  if (block.component === "GuidedChoiceBlock" && lesson?.interactive?.steps?.length) {
+    const lab = document.createElement("section");
+    lab.className = "guided-choice-lab";
+    lab.setAttribute("aria-label", lesson.interactive.goal || "引導選擇");
+    const intro = document.createElement("p");
+    intro.textContent = lesson.interactive.scenario || lesson.interactive.goal || "";
+    lab.append(intro);
+    lesson.interactive.steps.forEach((step, index) => {
+      const fieldset = document.createElement("fieldset");
+      const legend = document.createElement("legend");
+      legend.textContent = `第 ${index + 1} 題：${step.prompt}`;
+      fieldset.append(legend);
+      const feedback = document.createElement("p");
+      feedback.setAttribute("role", "status");
+      feedback.setAttribute("aria-live", "polite");
+      let attempts = 0;
+      step.options.forEach((option, optionIndex) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = `${String.fromCharCode(65 + optionIndex)}. ${option}`;
+        button.addEventListener("click", () => {
+          attempts += 1;
+          const selected = String.fromCharCode(65 + optionIndex);
+          if (selected === step.answer) {
+            feedback.textContent = step.feedback;
+            for (const candidate of fieldset.querySelectorAll("button")) candidate.disabled = true;
+          } else {
+            feedback.textContent = `再試一次：${step.retryHint}`;
+            button.focus();
+          }
+        });
+        fieldset.append(button);
+      });
+      fieldset.append(feedback);
+      lab.append(fieldset);
+    });
+    body.append(lab);
+  }
   if (block.component === "DataExplorerBlock") renderDataExplorerLab({ document, mount: body, block });
   if (block.component === "GenreReadingBlock") renderGenreReadingLab({ document, mount: body, block, engine, storage });
 

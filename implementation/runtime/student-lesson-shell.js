@@ -75,7 +75,7 @@ export function renderStudentLesson({ document, mount, spec, lesson = null }) {
   const interactive = document.createElement("div");
   interactive.className = "lesson-interactive-area";
   spec.interactiveBlocks.forEach((_, blockIndex) => {
-    renderInteractiveBlock({ document, mount: interactive, spec, blockIndex });
+    renderInteractiveBlock({ document, mount: interactive, spec, blockIndex, lesson });
   });
   article.append(interactive);
   const extension = document.createElement("section");
