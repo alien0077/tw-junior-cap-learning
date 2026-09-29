@@ -46,7 +46,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -164,55 +164,38 @@
   },
   "interactive": {
     "type": "guided-choice",
-    "goal": "核對數位來源、建立可追溯紀錄、設計包容互動並守住個資界線。",
-    "scenario": "從停課截圖、共享訪談到線上會議，逐步選擇可靠且負責任的數位聆聽方法。",
-    "variables": [
-      {
-        "symbol": "s",
-        "meaning": "來源與版本"
-      },
-      {
-        "symbol": "r",
-        "meaning": "可重建紀錄"
-      },
-      {
-        "symbol": "a",
-        "meaning": "可及性與責任"
-      }
-    ],
+    "goal": "操作來源、版本、時間、權限、字幕／文字替代與回覆管道，觀察數位訊息的可信度、可追溯性與參與公平。",
+    "scenario": "以停課截圖、共享訪談與線上會議為材料；學生應切換來源與權限、比較版本、補足可及性管道。真正來源追蹤圖、版本 diff、權限開關與可及性模擬尚未實作。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "群組收到『明天停課』截圖，第一步應做什麼？",
+        "prompt": "收到『明天停課』截圖，第一步是？",
         "options": [
-          "回到官方發布者與原始網址，核對日期、地區、版本與適用範圍",
-          "看轉發人數判定可信",
-          "直接加上自己的推測再轉傳"
+          "回到官方發布者與原始網址核對日期、地區、版本",
+          "依轉發次數判斷"
         ],
         "answer": "A",
-        "feedback": "A 把截圖當成線索而非證明，能檢查來源、時間與適用範圍。"
+        "feedback": "截圖是線索，不是來源本身。"
       },
       {
         "id": "step-2",
-        "prompt": "共享訪談紀錄要讓缺席者理解，哪套欄位最完整？",
+        "prompt": "共享筆記把『可能缺水』改成『一定會缺水』，哪裡出錯？",
         "options": [
-          "說話者、時間、原話／摘要、待確認問題、版本與行動負責人",
-          "只留下最後結論和檔案名稱",
-          "只貼錄音連結不寫任何說明"
+          "改變原話的不確定程度，且混淆說法與已查證事實",
+          "只是字體不夠醒目"
         ],
         "answer": "A",
-        "feedback": "A 能重建脈絡並區分原話、整理與尚未決定的事項。"
+        "feedback": "數位整理不能改變來源語氣與證據強度。"
       },
       {
         "id": "step-3",
-        "prompt": "設計線上討論時，哪項做法最能兼顧參與？",
+        "prompt": "網路不穩成員如何公平參與？",
         "options": [
-          "提供字幕或文字替代、清楚結構、文字回覆與足夠等待時間，再限制必要資料的分享",
-          "只用顏色和聲音提示並要求所有人開鏡頭",
-          "把無法即時發言者的意見排除"
+          "提供文字摘要、非同步期限與替代提交方式",
+          "要求退出即時會議"
         ],
         "answer": "A",
-        "feedback": "A 同時處理可及性與隱私責任，不把工具限制轉成參與者的錯。"
+        "feedback": "工具限制不能直接變成參與資格限制。"
       }
     ]
   },
