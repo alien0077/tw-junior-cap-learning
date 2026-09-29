@@ -1,0 +1,37 @@
+{
+  "reportId": "social-geo-af-iv-1-hanlin-share-synthesis-d364",
+  "date": "2026-09-28",
+  "lessonId": "lesson-social-content-geo-af-iv-1",
+  "scope": "additional version-labeled Hanlin chapter research, original fusion, and interaction expansion; no A-7-2 work",
+  "sources": [
+    {
+      "url": "https://market.cloud.edu.tw/resources/web/1813329",
+      "locator": "教育部教材資源中心資源頁，標題為翰林國中一下地理課本重點填充(110)，提供者南投縣立宏仁國中教師；說明內容取自課本句子，第5章檔案315.60KB；著作權所有、僅供教育使用。",
+      "read": "版別、年版、提供者、資源性質及授權說明 metadata；未下載或解壓其 ZIP 檔。",
+      "boundary": "教師分享的課本句子填充，不是出版社發布或認證原書。"
+    },
+    {
+      "url": "https://www.scribd.com/document/974105368/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E5%9C%B0%E7%90%86%E4%B8%83%E4%B8%8B%E8%AA%B2%E6%9C%AC",
+      "locator": "第三方上傳、頁面標題自稱翰林國中地理七下課本，印刷頁47–50；可見第5章導入、5-1聚落類型、5-2交通與聚落發展文字。",
+      "read": "章節順序由生活服務與聚落形成／城鄉互依，延伸至交通歷史節點、地圖和陸水空運特性；含運量、費用、速度、地形限制等比較向度。",
+      "boundary": "Scribd頁面標示All Rights Reserved；封面、上傳者授權、精確版次與出版社認證均未核實。僅萃取概念順序和表示法，不複製正文、圖表、練習題或答案。"
+    }
+  ],
+  "fusionChanges": [
+    "更新既有原創章節：歷史路網節點的位移可改變往來路徑，但不能只由新車站出現推論地方必然繁榮，須檢查產業、行政服務、人口流向及其他同期變化。",
+    "補充運具選擇依旅程目的比較載量、速度、費用、路線限制、接駁與使用者條件；不背誦脫離情境的運具排名。",
+    "在原有三步 guided-choice 互動後新增第四步：比較不同年代節點資料、辨識時間相關不等於單一因果，並以錯答／正答回饋與鍵盤操作檢核。",
+    "只有 Hanlin-labeled direct content slot 更新為 verified；這表示已讀到版本標示內容證據，不表示來源經出版社認證、權利已確認或三版本融合完成。Nani及Kang Hsuan仍pending。"
+  ],
+  "validation": {
+    "publisherLedger": "PASS after scoped update: 290/3,081 verified, 2,791 pending, 932 blocked units",
+    "implementationSpecs": "PASS: 1,027 specs, 0 structural errors, 1,027 QA pending",
+    "data": "PASS: 14,483 JSON files, 13,113 IDs, 1,032 KG nodes; all 1,052 lessons and 10,566 questions remain draft",
+    "unitRegression": "PASS: visible-source boundary, teaching/body parity, historical-node synthesis, transport-mode comparison, four interactive choices and manifest/source status",
+    "browser": "PASS in authorized Chromium: npm test passed; browser smoke full traversal 1,027/1,027, target visible six sections/four choices/historical-causality wrong-answer retry and keyboard-correct answer; 320/375/768 widths without overflow or page errors; axe 51 runs, 0 violations, 6 incomplete",
+    "siteIndex": "PASS: 1,052 lessons, 10,566 questions, 40 mapping sets; validated revision local",
+    "strictLessonIndependence": "PASS: 614 lessons, 0 risks, 0 affected references, 0 strict failures",
+    "rightsAndContentReview": "pending; no status promotion"
+  },
+  "overallStatus": "partial progress; lesson remains draft; project goal remains active; no subtask, commit or push"
+}

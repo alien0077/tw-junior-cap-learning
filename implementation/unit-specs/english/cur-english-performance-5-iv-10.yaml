@@ -1,0 +1,137 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-10
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-10
+  title: 5-Ⅳ-10：故事短文主旨口頭或書面表達
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-10：故事短文主旨口頭或書面表達
+    curriculumIntent: 5-Ⅳ-10：故事短文主旨口頭或書面表達
+    publisherEvidence:
+      nani:
+        status: book-level-only
+        required: true
+      kanghsuan:
+        status: book-level-only
+        required: true
+      hanlin:
+        status: book-level-only
+        required: true
+    fusionRule: 僅融合目前可核對的課綱、KG、校方章節定位及出版社公開資源頁教學方向；不得將課程計畫或資源介紹寫成已逐頁閱讀的課本正文
+    currentEvidenceStatus: original-fusion-manuscript-written; nani-and-kanghsuan-public-course-plan-locator-only; hanlin-official-resource-page-read; user-chatgpt-review-pending
+  learningGoals:
+  - 從故事開頭線索、角色選擇及結尾回應形成涵蓋全文的主旨
+  - 區分單一細節、全文主旨與超出文本的寓意，並以事件支持判斷
+  - 依聽眾或讀者調整口說／短文長度，但維持與故事證據一致
+  prerequisites:
+  - 能讀懂本單元程度的簡短英文故事
+  - 能指出人物行動及事件先後
+  coreConcepts:
+  - 單一情節細節不等於涵蓋全文的主旨
+  - 角色前後選擇與結尾呼應可構成主旨證據鏈
+  - 寓意式延伸必須受文本支持，不能加入絕對化外推
+  misconceptions:
+  - 把最醒目的一個情節直接當成故事主旨
+  - 把個人認同的格言當成作者主旨
+  - 只列故事細節，未說明它們如何共同支持概括
+  contentFlow:
+  - 'predict: 比較單一情節與能解釋角色前後變化的概括，先預測哪一種更可能涵蓋全文'
+  - 'manipulate: 重新組合開頭線索、角色選擇與結尾呼應，調整主旨句的範圍及支持證據'
+  - 'observe: 對照細節、全文主旨與寓意式說法，觀察哪些事件被概括涵蓋、哪些說法超出文本'
+  - 'explain: 指出故事前後事件如何共同支持主旨，並說明為何醒目細節或個人格言不是充分證據'
+  - 'transfer: 轉為口說介紹與讀書札記短文，按新受眾調整長度但保留全文證據'
+  - 'exit-ticket: 說明證據、範圍及受眾調整'
+  visualizations:
+  - language-structure：以「5-Ⅳ-10：故事短文主旨口頭或書面表達」作為唯一主題，至少同步呈現兩種表徵
+  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-10-I01
+    component: GuidedChoiceBlock
+    purpose: 從故事事件範圍、角色轉變和結尾線索判斷主旨，排除細節及無文本支持的寓意
+    initialState:
+      showAnswer: false
+      selectedEvidence: []
+    studentActions:
+    - 閱讀原創短篇並選擇能涵蓋全文的概括
+    - 依提示比較主旨範圍與故事證據
+    - 選出支持概括的角色前後行動及結尾線索
+    visualRules:
+    - 題幹、選項、提示與解析均以文字呈現並可鍵盤操作
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-10-I01
+      trigger: 把故事中一個醒目事件直接當成全文主旨
+      prompt: 指出哪些事件共同支持你的概括，並說明為何單一細節不夠。
+      expectedEvidence: 定位角色前後選擇或結尾呼應，說明其涵蓋全文的關係
+    feedback:
+      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
+      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-10：故事短文主旨口頭或書面表達」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-10：故事短文主旨口頭或書面表達」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-10：故事短文主旨口頭或書面表達」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-10：故事短文主旨口頭或書面表達」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「5-Ⅳ-10：故事短文主旨口頭或書面表達」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字／英文短段落，將「5-Ⅳ-10：故事短文主旨口頭或書面表達」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入「5-Ⅳ-10：故事短文主旨口頭或書面表達」時不得先顯示正解；學生必須先提交對「5-Ⅳ-10：故事短文主旨口頭或書面表達」的預測，且預測會被保留供後續比較。
+  - 操作「language-structure：以「5-Ⅳ-10：故事短文主旨口頭或書面表達」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
+  - 學生觸發「只背「5-Ⅳ-10：故事短文主旨口頭或書面表達」形式，未依語境、時間或句構判斷」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成「5-Ⅳ-10：故事短文主旨口頭或書面表達」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
+  - 以新資料執行「5-Ⅳ-10：故事短文主旨口頭或書面表達」的 CAP transfer：換一個情境但保留「5-Ⅳ-10：故事短文主旨口頭或書面表達」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
+  - 外部資料失效時，學生頁仍須以本地短篇、文字選項、提示與解析完成全部四步，不得阻塞本課。
+  - Fallback：刻意阻擋 simulations.js 後，四步故事主旨 GuidedChoice 仍須鍵盤作答、錯答重試並顯示正答解析；不可依賴模擬腳本或外部資料。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 版本來源限制已在稿件及紀錄如實標註，不得把課程計畫或資源頁冒稱指定課本全文
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 本單元融合稿件紀錄存在、互動與學生頁一致；lesson 內容審查由使用者另以 ChatGPT 執行，不屬 Codex 本階段 gate
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 5-Ⅳ-10
+    role: official-curriculum-source-of-truth

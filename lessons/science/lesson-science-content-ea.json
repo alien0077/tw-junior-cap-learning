@@ -49,42 +49,67 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "拖動尺度視窗，把同一物理量換成合適單位，並用數量級檢查換算。",
     "scenario": "你是科展展板的資料編輯：把跑道、頭髮和微粒放到同一條十進位尺度帶，再替每個觀察選擇可操作的工具與單位。",
     "variables": [
-      {"symbol": "l", "meaning": "待表達的長度"},
-      {"symbol": "p", "meaning": "單位前綴的十次方"},
-      {"symbol": "s", "meaning": "量具或影像比例尺的最小可辨尺度"}
+      {
+        "symbol": "l",
+        "meaning": "待表達的長度"
+      },
+      {
+        "symbol": "p",
+        "meaning": "單位前綴的十次方"
+      },
+      {
+        "symbol": "s",
+        "meaning": "量具或影像比例尺的最小可辨尺度"
+      }
     ],
     "steps": [
       {
         "id": "step-1",
         "prompt": "展示板要比較 2.5 cm 與 25 mm，第一個判斷是什麼？",
-        "options": ["確認兩者都是長度，再換到同一單位", "只比較數字 2.5 和 25", "把 cm 與 mm 當成不同物理量"],
+        "options": [
+          "確認兩者都是長度，再換到同一單位",
+          "只比較數字 2.5 和 25",
+          "把 cm 與 mm 當成不同物理量"
+        ],
         "answer": "A",
         "feedback": "先確認量的種類，再利用 1 cm = 10 mm；兩個寫法代表同一段長度。"
       },
       {
         "id": "step-2",
         "prompt": "紙張單張厚度小於直尺一小格，哪個操作能放大可辨識的變化？",
-        "options": ["疊放 100 張量總厚度，再除以 100", "把直尺讀值多補三位小數", "用 km 表示單張厚度而不換算"],
+        "options": [
+          "疊放 100 張量總厚度，再除以 100",
+          "把直尺讀值多補三位小數",
+          "用 km 表示單張厚度而不換算"
+        ],
         "answer": "A",
         "feedback": "累積後的總量較容易量測；除回張數得到平均值，仍要說明平整度與讀值限制。"
       },
       {
         "id": "step-3",
         "prompt": "資料寫 0.000004 m，哪個表示最能幫助讀者理解尺度？",
-        "options": ["4 μm，並保留原本等值換算", "4000 mm，因為數字越大越清楚", "0.000004 km，直接改前綴不改數值"],
+        "options": [
+          "4 μm，並保留原本等值換算",
+          "4000 mm，因為數字越大越清楚",
+          "0.000004 km，直接改前綴不改數值"
+        ],
         "answer": "A",
         "feedback": "1 μm = 10^-6 m，所以 0.000004 m = 4 μm；換單位時數值與前綴必須同步。"
       },
       {
         "id": "step-4",
         "prompt": "要判斷 80 μm 濾孔能否攔下約 20 μm 粒子，還需要補哪一項？",
-        "options": ["說明形狀、流動與孔徑量測的限制", "只把 80 改成 80 cm", "只保留看起來精確的小數位"],
+        "options": [
+          "說明形狀、流動與孔徑量測的限制",
+          "只把 80 改成 80 cm",
+          "只保留看起來精確的小數位"
+        ],
         "answer": "A",
         "feedback": "尺度比較提供初步模型，實際攔截效果還要看粒子形狀、堆積與流體條件。"
       }
@@ -94,45 +119,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Ea：自然界的尺度與單位；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Ea：自然界的尺度與單位 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「自然界的尺度與單位」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Ea：自然界的尺度與單位」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Ea：自然界的尺度與單位 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Ea：自然界的尺度與單位」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一國中自然八上基本測量公開課程計畫",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "八上第1章基本測量；對應 Ea 主題的單位、尺度與工具脈絡",
-      "sourceUrl": "https://course.cyc.edu.tw/upfile/course109/sub1/14536044923438936.pdf",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Ea：自然界的尺度與單位 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "teaching-sequence", "assessment-pattern"],
-      "outcome": "以公開課程計畫核對基本測量先於後續物理概念的學習位置；正文另依 Ea-Ⅳ-1 至 Ea-Ⅳ-3 融合尺度、單位、換算與精度。",
-      "copyrightBoundary": "僅使用可公開查核的章節定位與課程方向；不重製課本、習作、教師用書、圖表、題目或答案。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然八上基本測量公開教學資源",
-      "subject": "science",
-      "chapterLocator": "八上第1章基本測量；公開資源可定位量測、估計與單位的教學範圍",
-      "sourceUrl": "https://public.ehanlin.com.tw/handout/112%E4%B8%8A%E8%A9%A6%E9%96%B1%E8%AC%9B%E7%BE%A9/%E5%9C%8B%E4%B8%AD/%E5%9C%8B%E4%B8%AD%E7%90%86%E5%8C%96%E6%9C%83%E8%80%83_%E8%AC%9B%E7%BE%A9%E8%A9%A6%E9%96%B1%E6%AA%94.pdf",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "以公開講義定位測量、估計與單位表達的連續脈絡；本課融合為尺度梯、前綴換算與任務導向的自編教學。",
-      "copyrightBoundary": "只採公開資料的概念範圍與教學定位；本文的敘事、數據、活動、題目與解析皆獨立創作。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Ea：自然界的尺度與單位」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -141,13 +176,24 @@
       "edition": "南一版國中自然八上基本測量公開課程計畫",
       "sourceType": "public-web",
       "sourceLocator": "https://course.cyc.edu.tw/upfile/course109/sub1/14536044923438936.pdf；八上第1章基本測量，章節級公開定位。",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["公開課程計畫把基本測量放在以數值描述自然現象的前段，與 Ea 的物理量、尺度和單位脈絡相接。", "資料只足以支持章節位置與學習方向，不能把未公開的課本細節當成已讀內容。"],
-        "representations": ["以基本測量的章節位置作為從物理量、單位進入工具與估算的順序參照。"],
-        "examplesOrEvidence": ["公開 PDF 可核對八上第1章基本測量的課程定位；本課另創尺度階梯與疊紙數據。"],
-        "misconceptions": ["把章節名稱當成完整教材，或把單位換算誤當成改變物理量本身。"],
-        "assessmentEmphasis": ["要求學習者依問題選擇尺度與單位，並以換算、工具能力和數量級檢查結果。"]
+        "concepts": [
+          "公開課程計畫把基本測量放在以數值描述自然現象的前段，與 Ea 的物理量、尺度和單位脈絡相接。",
+          "資料只足以支持章節位置與學習方向，不能把未公開的課本細節當成已讀內容。"
+        ],
+        "representations": [
+          "以基本測量的章節位置作為從物理量、單位進入工具與估算的順序參照。"
+        ],
+        "examplesOrEvidence": [
+          "公開 PDF 可核對八上第1章基本測量的課程定位；本課另創尺度階梯與疊紙數據。"
+        ],
+        "misconceptions": [
+          "把章節名稱當成完整教材，或把單位換算誤當成改變物理量本身。"
+        ],
+        "assessmentEmphasis": [
+          "要求學習者依問題選擇尺度與單位，並以換算、工具能力和數量級檢查結果。"
+        ]
       },
       "licenseBoundary": "僅使用公開課程計畫可查核的章節定位與課程脈絡；本文不重製課本、習作、教師用書、圖表、題目或答案。"
     },
@@ -156,13 +202,24 @@
       "edition": "康軒國中自然公開影音與基本測量資源",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；公開索引中的基本測量、質量與密度測量資源。",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["公開資源將單位與量測放在器材操作、實驗記錄和後續判讀的連續活動中。", "以工具和活動連結概念，能提醒學習者數值必須附帶尺度、單位與取得方法。"],
-        "representations": ["以器材索引、刻度讀值與實驗紀錄表作為把抽象單位接到可觀察操作的參照。"],
-        "examplesOrEvidence": ["公開索引列出基本測量及質量、密度測量的活動資源；本課重新設計跑道、紙張與微粒任務。"],
-        "misconceptions": ["看到儀器顯示數字就以為它自動具備無限精度，忽略量程、刻度與校正。"],
-        "assessmentEmphasis": ["重點放在選工具、讀尺度、保留單位與以資料說明限制，而不只是背器材名稱。"]
+        "concepts": [
+          "公開資源將單位與量測放在器材操作、實驗記錄和後續判讀的連續活動中。",
+          "以工具和活動連結概念，能提醒學習者數值必須附帶尺度、單位與取得方法。"
+        ],
+        "representations": [
+          "以器材索引、刻度讀值與實驗紀錄表作為把抽象單位接到可觀察操作的參照。"
+        ],
+        "examplesOrEvidence": [
+          "公開索引列出基本測量及質量、密度測量的活動資源；本課重新設計跑道、紙張與微粒任務。"
+        ],
+        "misconceptions": [
+          "看到儀器顯示數字就以為它自動具備無限精度，忽略量程、刻度與校正。"
+        ],
+        "assessmentEmphasis": [
+          "重點放在選工具、讀尺度、保留單位與以資料說明限制，而不只是背器材名稱。"
+        ]
       },
       "licenseBoundary": "只研究康軒公開索引的章節位置、器材與活動方向；不複製影音、圖片、題目、答案或教材文字。"
     },
@@ -171,32 +228,43 @@
       "edition": "翰林國中自然八上公開理科祕笈與測量講義資源",
       "sourceType": "public-web",
       "sourceLocator": "https://public.ehanlin.com.tw/handout/112%E4%B8%8A%E8%A9%A6%E9%96%B1%E8%AC%9B%E7%BE%A9/%E5%9C%8B%E4%B8%AD/%E5%9C%8B%E4%B8%AD%E7%90%86%E5%8C%96%E6%9C%83%E8%80%83_%E8%AC%9B%E7%BE%A9%E8%A9%A6%E9%96%B1%E6%AA%94.pdf；公開講義測量與估計定位。",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["公開資料把 SI 單位、測量與估計、工具刻度和誤差表達連成一條基礎物理學習線索。", "由資料推估時，結果的有效位數要受到工具能力與操作條件約束。"],
-        "representations": ["以直尺、量筒、天平、排水法和測量表格連結尺度、單位與可報告的精度。"],
-        "examplesOrEvidence": ["公開 PDF 可查到測量、估計與單位相關的講義範圍；本課將其融合為十進位尺度帶和疊紙估算。"],
-        "misconceptions": ["把小數位多誤認為測量較精確，或把估計值當作沒有假設與誤差的真值。"],
-        "assessmentEmphasis": ["評量能否判斷單位與數量級、選擇合適工具，並對估算結果提出限制。"]
+        "concepts": [
+          "公開資料把 SI 單位、測量與估計、工具刻度和誤差表達連成一條基礎物理學習線索。",
+          "由資料推估時，結果的有效位數要受到工具能力與操作條件約束。"
+        ],
+        "representations": [
+          "以直尺、量筒、天平、排水法和測量表格連結尺度、單位與可報告的精度。"
+        ],
+        "examplesOrEvidence": [
+          "公開 PDF 可查到測量、估計與單位相關的講義範圍；本課將其融合為十進位尺度帶和疊紙估算。"
+        ],
+        "misconceptions": [
+          "把小數位多誤認為測量較精確，或把估計值當作沒有假設與誤差的真值。"
+        ],
+        "assessmentEmphasis": [
+          "評量能否判斷單位與數量級、選擇合適工具，並對估算結果提出限制。"
+        ]
       },
       "licenseBoundary": "僅採公開資料可查核的概念範圍、工具表徵與評量方向；本文的敘事、數據、活動、題目與解析均為原創。"
     }
   ],
   "fusionRecord": {
     "commonCore": [
-      "三份版本資料與官方 Ea 主題共同支持以物理量、尺度和單位描述自然現象。",
-      "共同顯示測量必須把數值、單位、工具能力和讀值方法放在同一筆紀錄中。",
-      "共同支持先選適當工具或表示法，再以資料與限制檢查結論是否可信。"
+      "三版本公開線索共同支持先判斷現象尺度，再選單位、前綴、量具與可重現的紀錄方式。",
+    "基本／衍生量、換算、有效數字、視差、重複量測與數量級檢查是共同能力核心。",
+    "每筆測量都先保留原始單位與儀器解析度，再依題目要求換算，避免在中途四捨五入掩蓋累積誤差。"
     ],
     "versionDifferences": [
-      "南一公開證據主要提供基本測量的章節級定位；康軒較突出器材與活動索引；翰林公開講義較集中於 SI、估計、刻度與精度表達。"
+      "南一公開定位偏向尺度與物理量；康軒線索偏向單位、公式與有效數字；翰林線索偏向量具、估算、誤差與資料可信度。公開資料不足以宣稱取得完整教材內容。"
     ],
     "originalAdditions": [
-      "以科展展板的多尺度資料作為入口，讓學生先用熟悉物件建立尺度感，再進入前綴與十次方。",
-      "以疊紙厚度、濾網孔徑和影像比例尺三個自編任務，區分直接量測、累積推估與模型限制。",
-      "設計可拖曳的尺度帶互動，要求同時提交換算路徑、工具選擇、數量級與適用條件。"
+      "以尺度工作台串接操場、砂粒、雨量與微小體積案例，讓學習者在數量級、單位和量具之間來回檢查。",
+    "把忘記單位仍算完整答案、所有誤差都能靠平均消除、刻度越細就一定越準列為單元迷思診斷。",
+    "以多次量測的離散程度和已知校正偏差比較隨機誤差、系統誤差，並用數量級估算檢查答案是否符合物理情境。"
     ],
-    "llmSynthesisNote": "我先以官方課綱與 kg-science-content-ea 確認本課涵蓋基本物理量、適當尺度、單位換算與工具限制，再比較南一的基本測量章節定位、康軒的器材與活動脈絡、翰林的 SI 單位和估計表達。融合後沒有沿用任何出版社課文或題目，而是重新安排為尺度視窗、十進位前綴、疊紙估算、工具配對、跨尺度證據與尺度稽核，並以原創互動讓學生操作同一物理量的不同表示法。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校公開自然科試題／課程資料能力方向，重新組織尺度、單位、換算、測量、有效數字與誤差；10 題均已逐題核對單元符合度、唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -297,6 +365,13 @@
           "equation": "0.000004 m = 4 μm",
           "reason": "比例尺或顯微影像能把微小對象放大，但放大畫面不代表原物變大或測量無誤差。",
           "feedback": "請把影像上的長度除以放大倍率，並標記形狀與校正資料不足的限制。"
+        },
+        {
+          "id": "step-4",
+          "action": "改變量測工具的解析度與樣本數，檢查同一尺度結論是否仍可重現",
+          "equation": "usable-conclusion=scale+resolution+repeatability",
+          "reason": "單位換算只保證數值等值，不保證工具真的能分辨該尺度；用不同解析度與重複量測比較，才能把換算、估計與直接觀察分開。",
+          "feedback": "請記錄工具最小刻度、重複測量範圍與等值換算，並標示不能由單次估計推出的部分。"
         }
       ]
     }

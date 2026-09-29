@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-8-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-8／正確發音重音語調說基本句」task, what is the best way to prepare question 2?",
+  "prompt": "A headset plays the first sound in ‘gate.’ Which description distinguishes /k/ from its voiced partner /g/?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-8／正確發音重音語調說基本句."
+      "text": "/k/ is voiced and made with the lips"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-8／正確發音重音語調說基本句."
+      "text": "/k/ is voiceless and made at the back of the mouth"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-8／正確發音重音語調說基本句."
+      "text": "/k/ is a nasal sound made with the tongue tip"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-8／正確發音重音語調說基本句."
+      "text": "/k/ is the same sound as /s/ but longer"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-8"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-8／正確發音重音語調說基本句, question 2."
+    "value": "B",
+    "explanation": "/k/ 與 /g/ 都是舌根在軟顎附近形成的塞音；/k/ 是清音，/g/ 是濁音。B 正確保留發音位置及清濁差異。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-1%E4%B8%80%E5%B9%B4%E7%B4%9A%E8%A9%95%E9%87%8F%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
+    "sourceLocator": "高雄市立大社國中公開原卷 PDF page 8 (printed page 1), pronunciation listening question 2；只取聽辨／口語任務模式，不重製原卷內容。",
+    "authoringNote": "依官方英語課綱、Knowledge Graph 與公立學校公開英語試題的精確 item-level pattern-only 證據獨立創作；未複製原題、選項、音檔、圖像或答案。題目維持 draft，尚待版本研究與完整內容發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-8"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-1%E4%B8%80%E5%B9%B4%E7%B4%9A%E8%A9%95%E9%87%8F%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
+      "title": "高雄市立大社國中108學年度第一學期七年級第一次段考英語科試題",
+      "year": "108-1",
+      "subject": "english",
+      "locator": "PDF page 8 (printed page 1), pronunciation listening question 2",
+      "observedPattern": "只參考第2題的聽辨／口語任務型態與語音資訊處理方式；只參考原卷第1題聽辨/t/與/d/、第2題聽辨/k/與/g/及聽句辨圖題型；題幹、音檔、選項與答案均重新創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把成對子音放在同一發音位置比較，只改變聲帶振動這一項；這樣能避免把 /k/、/g/ 誤認成唇音或鼻音。",
+  "solutionSteps": [
+    "從 gate 的字首抽出 /g/，題目要找的是它的清音對應音 /k/。",
+    "發 /k/ 時舌根靠近軟顎、氣流短暫受阻後釋出，嘴唇不是主要阻塞位置。",
+    "/k/ 不振動聲帶；/g/ 在相同位置發音但聲帶振動，形成清濁配對。",
+    "B 同時說明清音與口腔後部位置；A 把部位和清濁都弄錯，C、D 也不符合塞音特徵。",
+    "所以選 B；可用 cap/gap 等自編最小對立詞交替朗讀，聽出只改一個聲音時字義如何變化。"
+  ]
 }

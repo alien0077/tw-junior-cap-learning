@@ -2,41 +2,84 @@
   "id": "question-math-content-s-9-8-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "等腰三角形的對稱軸上，哪一個點必在其上？",
+  "prompt": "鈍角三角形的外心位於三角形的哪個區域？",
   "options": [
     {
       "id": "A",
-      "text": "外心"
+      "text": "三角形內部"
     },
     {
       "id": "B",
-      "text": "任意圓上點"
+      "text": "最長邊的中點"
     },
     {
       "id": "C",
-      "text": "任意邊中點"
+      "text": "三角形外部"
     },
     {
       "id": "D",
-      "text": "所有頂點"
+      "text": "鈍角頂點"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-8"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "等腰三角形的外心在對稱軸上。"
+    "value": "C",
+    "explanation": "鈍角三角形的兩條垂直平分線交點會落在三角形外部，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的外心 題型與官方課綱 KG kg-math-content-s-9-8",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形外心能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的外心能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-8"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形外心、垂直平分線、外接圓、直角三角形與座標幾何",
+      "observedPattern": "公立學校公開數學試題常以垂直平分線交點、三頂點等距、外接圓半徑與座標位置考查外心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形外心、垂直平分線、外接圓、直角三角形與座標幾何",
+      "observedPattern": "公立學校公開數學試題常以垂直平分線交點、三頂點等距、外接圓半徑與座標位置考查外心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形外心、垂直平分線、外接圓、直角三角形與座標幾何",
+      "observedPattern": "公立學校公開數學試題常以垂直平分線交點、三頂點等距、外接圓半徑與座標位置考查外心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "不要把直角三角形的斜邊中點規則誤套到鈍角三角形。",
+  "solutionSteps": [
+    "確認有一角大於 90°。",
+    "判定三角形屬於鈍角型。",
+    "使用鈍角三角形外心在外部的性質。",
+    "外心不是鈍角頂點或最長邊中點。",
+    "選 C。"
+  ]
 }

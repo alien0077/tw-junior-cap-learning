@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-5-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一段文章反覆寫「門」，結尾人物終於推門走出。這個意象最可能象徵什麼？",
+  "prompt": "表格顯示甲校參與人數最多，但乙校每位學生平均閱讀時間較長；比較閱讀投入時應注意？",
   "options": [
     {
       "id": "A",
-      "text": "突破限制或作出選擇"
+      "text": "先區分總量與平均量，確認分母、樣本與比較指標"
     },
     {
       "id": "B",
-      "text": "介紹門的材質"
+      "text": "只看總人數就能判定投入最高"
     },
     {
       "id": "C",
-      "text": "交代天氣變化"
+      "text": "把兩校數字直接相加"
     },
     {
       "id": "D",
-      "text": "說明建築尺寸"
+      "text": "認定平均時間長的學校人數一定較多"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "反覆出現並在結尾完成動作，通常具有突破或轉折的象徵作用。"
+    "value": "B",
+    "explanation": "總人數與平均量回答不同問題，需確認分母與指標，不能用單一數字代表整體投入。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-2%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%95%E9%87%8F%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
-    "sourceLocator": "閱讀意象與情節功能；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究篇章骨架、段落功能、推論、圖表、跨文本、修辭與閱讀流程能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫閱讀表現題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀、主旨與證據",
+      "observedPattern": "公立學校國文評量要求掌握文章骨架、段落功能、推論程度、圖表比較、跨文本觀點、修辭效果與陌生文本解題流程；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章理解、圖表與推論",
+      "observedPattern": "公立學校國文評量要求掌握文章骨架、段落功能、推論程度、圖表比較、跨文本觀點、修辭效果與陌生文本解題流程；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先說清楚要比較的概念，再核對單位、分母與資料範圍。",
+  "solutionSteps": [
+    "讀題定位：圈出「圖表比較」與段落功能、時間線、轉折、圖表指標、修辭或跨文本線索。",
+    "整理證據：把局部資訊放回全文或兩篇文本，比較主張、限制與語氣；本題核心是「總人數與平均量回答不同問題，需確認分母與指標，不能用單一數字代表整體投入。」",
+    "核對正解：選項 B 能被明確文本證據支持，且沒有把有限推論擴大成必然。",
+    "排除誘答：檢查是否只抓一個細節、混淆總量與平均、忽略轉折，或把比喻當成字面事實。",
+    "回讀驗證：回到相關段落逐句核對，確認答案涵蓋題目要求的範圍與資訊層次。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

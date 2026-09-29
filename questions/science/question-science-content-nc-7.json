@@ -2,23 +2,23 @@
   "id": "question-science-content-nc-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月29日河川觀測站的觀察中，比較兩地「Nc：能源的開發與利用」資料時，甲地迎風坡年雨量約 12060 mm、乙地背風坡約 8205 mm，最合理的做法是？",
+  "prompt": "離島需要穩定供電，太陽能與風力輸出變動，柴油機排放較高；哪項方案比較完整？",
   "options": [
     {
       "id": "A",
-      "text": "在「Nc：能源的開發與利用」中只看 12060 mm 的單一數值便下結論"
+      "text": "只選排放最低的單一設備"
     },
     {
       "id": "B",
-      "text": "在「Nc：能源的開發與利用」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "只看裝置容量不看需求時間"
     },
     {
       "id": "C",
-      "text": "在「Nc：能源的開發與利用」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只要有備援就不評估燃料與噪音"
     },
     {
       "id": "D",
-      "text": "同時比較地形、風向、觀測期間與 12060、8205 mm 資料"
+      "text": "以再生能源、儲能、需求管理與必要備援組合，並比較排放、可靠度、成本與生態"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "D",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Nc：能源的開發與利用」。"
+    "explanation": "能源系統要同時滿足時間上的可靠供應和環境限制；組合與需求管理可能比單一技術更能回應多項條件。 正確答案為選項 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的能源轉換、功率、能量、效率、供需、發電、環境與公共決策能力方向；本題為 Nc 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nc"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-nc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源、功率、效率、資料比較與環境影響",
+      "observedPattern": "取公立學校自然科對能源轉換、資料判讀與生活應用的能力方向，另寫方案比較。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源轉換、電能、效率、圖表與科學決策",
+      "observedPattern": "取公開會考對公式、單位、供需和環境證據的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "發電、輸送、能源選擇與生態／安全限制",
+      "observedPattern": "取公立學校自然科對能源開發、供電與環境代價的能力方向，重新設計情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列不可降低的供電服務，再用逐時供需、生命週期排放、成本與生態指標比較。",
+  "solutionSteps": [
+    "圈出需求量、能源來源、功率、時間與轉換條件。",
+    "統一單位，區分功率、能量、效率、可再生性與供電可靠度。",
+    "比較逐時供需、儲能、排放、生命週期、生態、噪音與公平資料。",
+    "排除只看額定值、能源名稱或單一平均數的選項，答案為 D。",
+    "用條件式結論回查計算、限制與下一項監測：能源系統要同時滿足時間上的可靠供應和環境限制；組合與需求管理可能比單一技術更能回應多項條件。"
+  ]
 }

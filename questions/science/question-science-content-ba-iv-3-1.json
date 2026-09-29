@@ -2,41 +2,67 @@
   "id": "question-science-content-ba-iv-3-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年5月8日自然科教室的觀察中，將 185℃ 的金屬片放入 30℃ 的水中，研究「Ba-Ⅳ-3：化學反應的吸熱與放熱」時，最初的熱傳方向為何？",
+  "prompt": "木屑在空氣中燃燒後，附近溫度升高並發出光。若把燃燒反應本身視為研究對象，最合理的判斷是？",
   "options": [
     {
       "id": "A",
-      "text": "由 30℃ 的水傳向 185℃ 金屬片"
+      "text": "吸熱的物理變化"
     },
     {
       "id": "B",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "放熱的化學反應"
     },
     {
       "id": "C",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "吸熱的化學反應"
     },
     {
       "id": "D",
-      "text": "由金屬片傳向水"
+      "text": "沒有能量變化的物理變化"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ba-iv-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 185℃ 金屬片傳向 30℃ 的水。 本題對應 KG「Ba-Ⅳ-3：化學反應的吸熱與放熱」。"
+    "value": "B",
+    "explanation": "燃燒會生成新物質，同時把反應系統的部分能量以熱和光傳給周圍，因此是放熱的化學反應，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究化學反應吸熱與放熱、溫度變化、能量轉移及實驗控制變因能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的反應熱、吸放熱與能量證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化學反應、能量變化、吸熱放熱與實驗資料判讀",
+      "pattern": "取由溫度資料、能階關係與系統邊界判斷吸熱或放熱的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫度資料、能階關係與系統邊界判斷吸熱或放熱的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷是否生成新物質，再看熱量是進入還是離開反應系統。",
+  "solutionSteps": [
+    "確認燃燒會生成不同於木屑的新物質。",
+    "所以它屬於化學反應。",
+    "觀察到周圍溫度上升，表示周圍得到熱。",
+    "熱由反應系統傳出，且伴隨光能輸出。",
+    "因此選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

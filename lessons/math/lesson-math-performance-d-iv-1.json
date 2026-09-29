@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-d-iv-1",
   "subject": "math",
-  "title": "d-Ⅳ-1：統計圖表統計量與軟體",
+  "title": "d-Ⅳ-1：從資料分布到合理統計量",
   "knowledgeIds": [
     "kg-math-performance-d-iv-1"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「統計圖表統計量與軟體」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "統計不是把資料丟進計算機就結束，而是先問資料在說什麼。本課以班級通勤時間為原創資料，讓學生比較平均數、中位數與眾數受極端值影響的差異，並把表格、直方圖與盒鬚圖互相對照；最後檢查統計量是否能回答問題，以及樣本是否足以支持結論。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「統計圖表統計量與軟體」相關的關係。"
+        "heading": "先看資料的來源與單位",
+        "body": "通勤時間的數字若沒有分鐘、調查日期與對象範圍，就不能直接比較。整理前先確認每筆觀測代表誰、量的是什麼，以及遺漏值是否會改變分布。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「統計圖表統計量與軟體」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "平均數與中位數回答不同問題",
+        "body": "平均數把所有數值的總量平均分配，中位數則把排序後的中間位置當作代表。當少數人通勤特別久時，平均數會被拉動，中位數可能更能描述典型個案。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「統計圖表統計量與軟體」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "圖表要保留分布訊息",
+        "body": "直方圖適合觀察數值落在哪些區間，盒鬚圖可以比較中位數、四分位數與離群值。圖表的組距、刻度與樣本數若被省略，讀者可能誤判差距。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「統計圖表統計量與軟體」，並指出至少一項支持判斷的條件。"
+        "heading": "結論必須和資料範圍相稱",
+        "body": "一個班級的調查可以描述這個班級，不一定能代表全校；相關也不自動等於因果。寫結論時要標示對象、時間、樣本限制與仍需查證的地方。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「統計圖表統計量與軟體」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先查資料來源、單位、樣本與缺漏，再開始計算。",
+    "平均數、中位數與眾數各有用途，選統計量要回應問題。",
+    "圖表刻度、組距、四分位數與離群值都是證據，不只看柱子高低。",
+    "結論要限制在資料支持的範圍，避免把樣本描述誇大成普遍因果。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,111 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「統計圖表統計量與軟體」並驗算結果。",
-    "scenario": "以「d-Ⅳ-1：統計圖表統計量與軟體」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "操作資料與極端值，觀察統計量及圖表分布同步變化。",
+    "scenario": "調整一筆通勤時間，讓表格、平均數、中位數與盒鬚圖同步更新。",
     "variables": [
       {
+        "symbol": "n",
+        "meaning": "資料筆數"
+      },
+      {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "其中一筆通勤分鐘數"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「統計圖表統計量與軟體」的第一步是什麼？",
+        "prompt": "要先做哪件事才能比較中心量？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "確認單位並排序資料",
+          "直接看最大值",
+          "刪掉不喜歡的數字"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "單位與排序是正確計算平均數和中位數的基礎。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "把一筆資料從 18 改成 80，哪個量通常較容易被拉動？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "平均數",
+          "中位數一定相同",
+          "眾數一定增加"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "平均數使用總和，極端值會明顯改變它。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "如何避免把班級結果誇大成全校結論？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "標示樣本、時間與抽樣限制",
+          "只保留最漂亮的圖",
+          "刪除不符合期待的資料"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "結論範圍要和資料來源與代表性相稱。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "d-Ⅳ-1：統計圖表統計量與軟體；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "高雄市公立校方翰林版第六冊數學課程計畫；統計、機率與函數學習內容及評量定位。；d-Ⅳ-1：統計圖表統計量與軟體：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www1.fsm.kh.edu.tw/plan/special_112/112%E8%B3%87%E6%BA%90%E7%8F%AD%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「統計圖表統計量與軟體」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「d-Ⅳ-1：統計圖表統計量與軟體」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "淡水國中公立校方康軒版九年級數學課程計畫；統計機率、函數及圖形應用定位。；d-Ⅳ-1：統計圖表統計量與軟體：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=100&file=WVhSMFlXTm9MelkzTDNCMFlWOHhNamd6T1Y4MU56WXlNRFl3WHpjNE1USXpMbkJrWmc9PQ%3D%3D&fname=WSGGRPQK20QO41KKLOLK54TXXSMO25JGKLB0DCNKCCQLOO40QKTSST54WSLKUSSSROPOIHKK2004GDLOQONKTSMOOPB0FHMPQPMPNOTSUWZWXVWFH10YWFCSSWUX25HCA0UWIGVWKO40XSUSB040MPTXGDTWA0ZWUSOPTWFGTS45QKNOKK21HHDGB0JC24KK14WTIGYSEG14WSMLID30B514YWRKA434DCDGA0WWQOPP1000ZSIGMOIGDGJDLO",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「d-Ⅳ-1：統計圖表統計量與軟體」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "卓蘭高中附設國中公立校方南一版九年級數學課程計畫；統計、機率與二次函數章節定位。；d-Ⅳ-1：統計圖表統計量與軟體：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/378739209.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「d-Ⅳ-1：統計圖表統計量與軟體」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +160,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「統計圖表統計量與軟體」",
-        "body": "以「統計圖表統計量與軟體」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "哪個數字像班級日常",
+        "body": "展示十筆通勤分鐘數，其中一筆因轉車延誤特別大，請學生先投票平均數或中位數哪個較像多數人的經驗。先排序並圈出極端值，讓統計量的選擇從問題需求開始。 並請學生把極端值與單位寫在資料卡上，說明選統計量前需要哪些資訊。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「統計圖表統計量與軟體」的概念架構",
-        "body": "本單元依官方課綱所列的「統計圖表統計量與軟體」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "三種中心量的角色",
+        "body": "用同一組資料逐步算眾數、平均數與中位數，再讓學生改變一筆最大值觀察哪個量改變最多。每次計算旁邊寫上它回答的是常見值、平衡值還是排序中間位置。 再把每個中心量的數字和它代表的問題寫在同一欄，避免只比較大小。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「d-Ⅳ-1：統計圖表統計量與軟體」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "表格與盒鬚圖互讀",
+        "body": "將原創的兩組社團活動時間排成表格，畫出五數摘要與盒鬚圖；學生找出中位數、四分位距與可能離群值，再回到原始資料核對圖上的位置，避免把最大值誤當第三四分位數。 同時核對五數摘要與原始排序，說明四分位距不是最大值減最小值。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「統計圖表統計量與軟體」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "極端值改變了什麼",
+        "body": "把一筆 18 分鐘改成 80 分鐘，學生重新算平均數與中位數，並在圖表上標記分布改變。系統要求學生說明哪個統計量被拉動，以及這是否改變對典型通勤者的描述。 再用一句完整語句說明分布改變是否影響典型描述，不能只報新的平均數。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「統計圖表統計量與軟體」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "從班級推論到學校",
+        "body": "給兩班各自的抽樣資料，要求學生比較中心與分散程度，再判斷能否宣稱全校學生的通勤差異。學生必須提出樣本數、抽樣方式與時間範圍至少一項限制，不能只引用平均數。 最後限制推論對象與時間，並說明樣本代表性不足時結論要如何降級。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「統計圖表統計量與軟體」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "統計結論的安全邊界",
+        "body": "出口題給出一張刻度不等距的柱狀圖，學生先指出圖表可能造成的誤讀，再用一句帶有對象與時間限制的句子重寫結論。最後說明資料支持、推測與尚未證明的因果各是哪一層。 並把支持結論的資料、合理推測與尚未證明的因果分成三欄記錄。"
       }
     ],
     "summary": [
-      "先用自己的話界定「統計圖表統計量與軟體」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "先確認資料來源、單位、樣本與圖表刻度。",
+      "比較中心量對極端值的敏感度，再選能回答問題的統計量。",
+      "把原始資料、摘要與圖表互相回查，保留分布訊息。",
+      "結論必須標示適用範圍，不把樣本或相關誇大成因果。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「統計圖表統計量與軟體」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼極端值可能讓平均數改變很多？",
+        "expectedEvidence": "平均數使用每一筆數值的總和，極端值會拉動總和；並能和中位數比較。"
       },
       {
-        "prompt": "在「統計圖表統計量與軟體」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "盒鬚圖中的中位數和最大值有什麼不同？",
+        "expectedEvidence": "中位數是排序中間位置，最大值是資料中最高觀測，位置與意義不同。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「統計圖表統計量與軟體」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "一班資料能不能直接代表全校？",
+        "expectedEvidence": "不能，需檢查樣本數、抽樣方式、時間與代表性限制。"
       }
     ]
   },
@@ -188,6 +227,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『d-Ⅳ-1：從資料分布到合理統計量』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整一筆通勤時間，讓表格、平均數、中位數與盒鬚圖同步更新。』開始前，先回答：要先做哪件事才能比較中心量？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整一筆通勤時間，讓表格、平均數、中位數與盒鬚圖同步更新。』回答：如何避免把班級結果誇大成全校結論？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "要先做哪件事才能比較中心量？；操作時先預測，再依『d-Ⅳ-1：從資料分布到合理統計量』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(d-Ⅳ-1：從資料分布到合理統計量)：答案 A；選項內容：確認單位並排序資料",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。單位與排序是正確計算平均數和中位數的基礎。",
+          "feedback": "單位與排序是正確計算平均數和中位數的基礎。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "把一筆資料從 18 改成 80，哪個量通常較容易被拉動？；操作時先預測，再依『d-Ⅳ-1：從資料分布到合理統計量』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(d-Ⅳ-1：從資料分布到合理統計量)：答案 A；選項內容：平均數",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。平均數使用總和，極端值會明顯改變它。",
+          "feedback": "平均數使用總和，極端值會明顯改變它。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "如何避免把班級結果誇大成全校結論？；操作時先預測，再依『d-Ⅳ-1：從資料分布到合理統計量』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(d-Ⅳ-1：從資料分布到合理統計量)：答案 A；選項內容：標示樣本、時間與抽樣限制",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。結論範圍要和資料來源與代表性相稱。",
+          "feedback": "結論範圍要和資料來源與代表性相稱。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；統計圖表、統計量與資料分析評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "從資料整理、統計量到圖表閱讀建立統計推理",
+          "公開結構支持先辨識資料型態與分布，再選擇合適統計量與圖表說明。"
+        ],
+        "representations": [
+          "原始表格、排序、中心量與圖表互換"
+        ],
+        "examplesOrEvidence": [
+          "本課的通勤時間、盒鬚圖與抽樣資料均為原創，僅承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "只看平均數或把最大值誤當成典型值"
+        ],
+        "assessmentEmphasis": [
+          "核對資料來源、計算過程、圖表訊息與結論範圍"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；統計圖表、統計量與資料分析評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以操作與圖表表徵比較分布及統計量敏感度",
+          "公開結構支持先辨識資料型態與分布，再選擇合適統計量與圖表說明。"
+        ],
+        "representations": [
+          "直方圖、盒鬚圖與極端值的同步變化"
+        ],
+        "examplesOrEvidence": [
+          "本課的通勤時間、盒鬚圖與抽樣資料均為原創，僅承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "忽略組距、刻度或離群值對判讀的影響"
+        ],
+        "assessmentEmphasis": [
+          "操作後完整解釋分布與數值變化如何互相支持"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；統計圖表、統計量與資料分析評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "在情境資料中判斷代表性、限制與推論界線",
+          "公開結構支持先辨識資料型態與分布，再選擇合適統計量與圖表說明。"
+        ],
+        "representations": [
+          "抽樣、五數摘要與資料敘述的互相核對"
+        ],
+        "examplesOrEvidence": [
+          "本課的通勤時間、盒鬚圖與抽樣資料均為原創，僅承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "把一班資料推廣全校或把相關說成因果"
+        ],
+        "assessmentEmphasis": [
+          "評估證據強度、樣本限制與結論表達是否相稱"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持資料整理、統計量與圖表判讀的連結。",
+      "統計量的選擇要依資料分布與問題目的，而非固定使用平均數。",
+      "結論要受樣本、時間、單位與代表性限制。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯計算與圖表基礎；康軒較突顯操作與分布表徵；翰林較突顯資料情境、抽樣與推論界線。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以通勤資料與極端值操作比較中心量。",
+      "用刻度錯置與組距資訊診斷圖表誤讀。",
+      "加入從班級推論全校的代表性限制轉移題。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計統計量、圖表、分布與推論界線。正文、資料、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

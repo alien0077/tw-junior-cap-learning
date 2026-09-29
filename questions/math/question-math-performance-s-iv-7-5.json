@@ -2,23 +2,23 @@
   "id": "question-math-performance-s-iv-7-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "坐標平面上 A(1, 2)、B(7, 10)，線段 AB 的長度是多少？",
+  "prompt": "坐標平面上 A(-2,3)、B(4,11)，線段 AB 的長度是多少？",
   "options": [
     {
       "id": "A",
-      "text": "10"
+      "text": "8"
     },
     {
       "id": "B",
-      "text": "8（將題目中的 1、2、7、10 代入順序弄錯）"
+      "text": "10"
     },
     {
       "id": "C",
-      "text": "12（將題目中的 1、2、7、10 代入順序弄錯）"
+      "text": "12"
     },
     {
       "id": "D",
-      "text": "14（將題目中的 1、2、7、10 代入順序弄錯）"
+      "text": "14"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "水平差為 6、垂直差為 8，距離為 √(6²＋8²)＝√100＝10。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。"
+    "value": "B",
+    "explanation": "水平差為 6、垂直差為 8，距離=√(6²+8²)=√100=10，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考畢氏定理、坐標距離與生活情境題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供畢氏定理、根式與直角三角形應用能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的畢氏定理方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-performance-s-iv-7"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "畢氏定理、直角三角形、根式對角線、坐標距離、梯子模型與面積應用",
+      "observedPattern": "公開數學評量常以直角三角形、矩形對角線、坐標兩點距離或生活測量情境套用畢氏定理，並要求辨認斜邊與兩股；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "畢氏定理、直角三角形、根式對角線、坐標距離、梯子模型與面積應用",
+      "observedPattern": "公開數學評量常以直角三角形、矩形對角線、坐標兩點距離或生活測量情境套用畢氏定理，並要求辨認斜邊與兩股；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把兩點距離拆成水平與垂直差，形成直角三角形。",
+  "solutionSteps": [
+    "計算 x 差 4-(-2)=6。",
+    "計算 y 差 11-3=8。",
+    "套用距離公式 √(6²+8²)。",
+    "得到 √100=10。",
+    "所以選 B。"
+  ]
 }

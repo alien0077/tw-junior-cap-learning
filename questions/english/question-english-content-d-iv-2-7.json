@@ -2,23 +2,23 @@
   "id": "question-english-content-d-iv-2-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-2／比較分類排序」task, what is the best way to prepare question 7?",
+  "prompt": "A chart records weekly recycling totals: Week 1 = 16 kg, Week 2 = 24 kg, Week 3 = 11 kg, Week 4 = 20 kg. Which is greatest to least?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-2／比較分類排序."
+      "text": "Week 3, Week 1, Week 4, Week 2"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-2／比較分類排序."
+      "text": "Week 2, Week 4, Week 1, Week 3"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-2／比較分類排序."
+      "text": "Week 4, Week 2, Week 3, Week 1"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-2／比較分類排序."
+      "text": "Week 1, Week 3, Week 2, Week 4"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-2／比較分類排序, question 7."
+    "value": "B",
+    "explanation": "回收量由大到小為 24、20、16、11 公斤，依序是 Week 2、Week 4、Week 1、Week 3，因此選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87_1.pdf",
+    "sourceLocator": "PDF第5頁第33–35題：判讀五月每日分店調查表與結果意義；本題改用每週回收量排序。",
+    "authoringNote": "以英語課程知識點與公立學校公開段考所呈現的資料判讀能力為參照；題幹、數據、選項、答案、解析與解題活動均獨立撰寫，未複製試卷內容。課程版本研究與全案內容審查未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87_1.pdf",
+      "title": "高雄市立國昌國中110學年度第1學期第1次段考三年級英語科試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第5頁第33–35題：判讀五月每日分店調查表與結果意義；本題改用每週回收量排序。",
+      "observedPattern": "資料表閱讀需把數值與欄標籤配對，再判斷資料所支持的比較結果；回收數據和情境均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先確認題目要求 greatest to least（由大到小），把數值降冪排序後再換回週別。",
+  "solutionSteps": [
+    "題目指定 greatest to least，因此排序方向是由大到小。",
+    "將四週數值列出：第1週16、第2週24、第3週11、第4週20公斤。",
+    "降冪排列為 24＞20＞16＞11。",
+    "將數值對回週別：Week 2 → Week 4 → Week 1 → Week 3，選 B。",
+    "檢查最大 24 公斤排首位、最小 11 公斤排末位，確認方向無反。"
+  ]
 }

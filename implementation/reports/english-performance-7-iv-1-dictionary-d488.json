@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-7-iv-1",
+  "change": [
+    "Mapped the existing seal dictionary interaction to a justified part-of-speech prediction, alphabetic headword and POS lookup, observation of candidate meanings in sentence context, and evidence-based explanation.",
+    "Added an explicit offline dictionary fallback requirement using the original embedded seal entry card without implying a remote lookup."
+  ],
+  "browser": {
+    "status": "passed",
+    "visibleSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardWrongRetryCorrect": true,
+    "axeViolations": 0,
+    "axeIncomplete": 0,
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "blockedExternalRequests": 1,
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "1,001/1,027 pass; 26 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

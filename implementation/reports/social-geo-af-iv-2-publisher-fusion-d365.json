@@ -1,0 +1,69 @@
+{
+  "date": "2026-09-28",
+  "unit": "地 Af-Ⅳ-2：都市發展與都市化",
+  "lessonId": "lesson-social-content-geo-af-iv-2",
+  "status": "draft-source-limited-original-fusion-browser-qa-pending",
+  "userGoalAlignment": "公校試題帳本以最近驗證結果為準；推進出版社內容證據、單元原創融合、互動規格與測試，不重做已核題源工作或A-7-2。",
+  "publicExamLedger": {
+    "reusedAudit": "implementation/reports/question-exam-pattern-ledger.json",
+    "questionsRecorded": 10566,
+    "pending": 0,
+    "semanticReport": "implementation/reports/question-exam-ref-semantics.json",
+    "refsScanned": 23141,
+    "flagged": 0,
+    "changedThisTurn": false
+  },
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "url": "https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E5%9C%B0%E7%90%86/%E9%83%BD%E5%B8%82%E6%93%B4%E5%BC%B5.html",
+      "sourceLevel": "publisher-owned public learning page; no textbook edition stated",
+      "reviewedAt": "2026-09-28",
+      "readAndIntegratedConcepts": [
+        "都市範圍擴大",
+        "人口、交通與產業增加及向郊區移動的關係",
+        "相鄰都市擴張接合與都會區形成"
+      ],
+      "rightsAndEditionLimit": "僅記錄出版社自有公開教學頁內容；非特定版次或完整學生課本。未複製文字、圖像、例題；授權與版次均未聲稱核實。"
+    },
+    {
+      "publisher": "nani",
+      "sourceLevel": "chapter or publisher-entry locator only",
+      "status": "pending-direct-unit-content"
+    },
+    {
+      "publisher": "kanghsuan",
+      "sourceLevel": "publisher-entry locator only",
+      "status": "pending-direct-unit-content"
+    }
+  ],
+  "authoringChanges": [
+    "將課程頁目前實際渲染的 content.sections 與六段 teaching.body 完全對齊，避免教學稿存在但學生頁未呈現。",
+    "以原創語句區分人口比例、建成範圍、郊區移動、都會區生活圈；說明資料不能直接證明個人遷移動機或行政邊界消失。",
+    "更新單元規格中的概念、迷思、教學流程、互動元件、四步答案／回饋、轉移題、退出題與來源界線。"
+  ],
+  "publisherLedgerAfterAudit": {
+    "verified": 291,
+    "pending": 2790,
+    "blockedUnits": 932
+  },
+  "verification": {
+    "unitRegression": "PASS: npm run test:social:geo-af-iv-2",
+    "fullTestSuite": "PASS: npm test; workbench traversal 1027/1027",
+    "validateData": "PASS: 14484 JSON files, 13113 IDs, 1032 KG nodes; all lesson and question records remain draft",
+    "implementationSpecs": "PASS: validate_implementation_specs.py; 1027 specs, 0 structural/schema errors; all 1027 QA statuses remain pending",
+    "strictLessonIndependence": "PASS: 614 learning-content lessons scanned, 0 risks, 0 affected references, 0 failures",
+    "siteIndex": "PASS: rebuilt with local source; 1052 lessons, 10566 questions, 40 mappings",
+    "yamlParse": "PASS",
+    "gitDiffCheck": "PASS for scoped authored and generated files",
+    "browserUI": "PASS in authorized system-Chrome environment: HTTP 200; 6 learner-visible sections; 4 guided-choice steps; keyboard wrong-answer retry then correct answer; polite live region; 320/375/768 widths without horizontal overflow; zero page errors",
+    "specQA": "untested",
+    "independenceAudit": "not rerun; the six lesson blocks are unit-specific and parity is directly tested"
+  },
+  "scope": {
+    "a72Changed": false,
+    "questionAuditRepeated": false,
+    "subtasks": false,
+    "commitOrPush": false
+  }
+}

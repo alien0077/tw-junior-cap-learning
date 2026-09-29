@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-2-iv-5-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "辯論時對方提出反例，最合適的回應是什麼？",
+  "prompt": "正方主張全面取消紙本通知，反方哪個問題最能測試方案完整性？",
   "options": [
     {
       "id": "A",
-      "text": "立刻改變立場卻不解釋"
+      "text": "你們是不是不喜歡紙張？"
     },
     {
       "id": "B",
-      "text": "先重述反例，再說明它是否改變原主張及理由"
+      "text": "紙本看起來老派，對吧？"
     },
     {
       "id": "C",
-      "text": "假裝沒有聽見反例"
+      "text": "既然是新政策大家只能接受嗎？"
     },
     {
       "id": "D",
-      "text": "只攻擊對方的個性"
+      "text": "若家中無法穩定上網或需要紙本協助，如何取得同等資訊？"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "重述並分析反例與主張的關係，才能形成有理由的回應。"
+    "value": "D",
+    "explanation": "好的反方問題尋找方案的適用條件與未涵蓋對象，而不是把價值判斷或情緒當反駁。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究報告、評論、演說與論辯能力方向（反例處理）；另以官方語文領域課綱核對 2-Ⅳ-5（https://www.naer.edu.tw/）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究口頭報告、直接證據、受眾、反方、資料比較與公共提案。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文口語表達與證據說服 Ab-Ⅳ-5 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-2-iv-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-2-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口頭報告、資料與主旨",
+      "observedPattern": "公立學校國文評量以口頭報告主旨、直接證據、敘述順序、事實／評價、因果反駁、方案涵蓋、受眾調整、資料比較與有證據說服要求完成公共表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "論證、受眾與反方",
+      "observedPattern": "公立學校國文評量以口頭報告主旨、直接證據、敘述順序、事實／評價、因果反駁、方案涵蓋、受眾調整、資料比較與有證據說服要求完成公共表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "找出政策預設的設備與能力，再追問例外者能否獲得等價資訊。",
+  "solutionSteps": [
+    "讀題定位：圈出「方案涵蓋」與受眾、資料、指標、限制、反方或評估條件。",
+    "整理表達：先分主旨、證據、評價與方案，再依「好的反方問題尋找方案的適用條件與未涵蓋對象，而不是把價值判斷或情緒當反駁。」檢查結論強度。",
+    "核對正解：選項 D 能讓聽眾追蹤資料與推理，且沒有把有限證據誇大成必然。",
+    "排除誘答：檢查是否用音量、口號、個案、情緒或挑選數據取代可核對證據。",
+    "回讀驗證：確認主張、證據、受眾、反方、限制與行動指標彼此相連。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

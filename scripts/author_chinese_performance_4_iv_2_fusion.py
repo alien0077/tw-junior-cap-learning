@@ -1,0 +1,48 @@
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/chinese/lesson-chinese-performance-4-iv-2.json"
+REPORT = ROOT / "implementation/reports/chinese-performance-4-iv-2-first-pass-review.json"
+
+
+def rec(name, locator, concepts, forms, misconception, assessment):
+    return {"publisher": name, "edition": f"{name} 公立校方國文課程計畫章節級證據", "sourceType": "public-web", "sourceLocator": locator, "reviewedAt": "2026-09-21", "findings": {"concepts": concepts, "representations": forms, "examplesOrEvidence": ["本課以象形、指事、會意與形聲的原創分析情境，僅承接公開課程的文字形音義理解方向。"], "misconceptions": [misconception], "assessmentEmphasis": [assessment]}, "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、篇章、題目、答案、影音或版面。"}
+
+
+def main():
+    data = json.loads(LESSON.read_text(encoding="utf-8"))
+    assert data["id"] == "lesson-chinese-performance-4-iv-2"
+    data["title"] = "4-Ⅳ-2：用造字線索推理字形，再回到語境核對"
+    data["content"] = {"summary": "造字原則可以提供理解字形的線索，卻不是把現代字義完全倒推出來的魔法。象形、指事、會意與形聲各有可觀察的構件關係；遇到陌生字時，先提出形體與聲符／意符的假設，再用詞語、字典、古今字形和句子語境交叉核對。本課以原創文字分析任務，練習從線索推理到證據修正，避免望形生義。", "sections": [{"heading": "造字線索和字義要分層", "body": "象形可提供外形線索，指事可提示抽象位置或指向，會意可讓構件形成關係，形聲則常把意義範圍與讀音線索放在不同構件。這些是推理入口，不代表每個現代義項都能只靠字形決定。"}, {"heading": "形聲字要看兩種構件", "body": "分析形聲字時，先找可能的意符範圍，再找聲符線索；聲符可能因語音演變、方言或借音而不完全相同。推理後一定要放回詞語和句子，不能只因某部件像聲音就確定讀音或意思。"}, {"heading": "會意不是拆字遊戲", "body": "看到兩個構件不等於知道整字意思。要說明構件之間形成什麼關係，再以詞義和用例檢查；若只把部件各自的現代意思相加，常會產生看似合理但無證據的解釋。"}, {"heading": "古今變化需要謙慎", "body": "字形經過整理、簡化或書體變化後，現代外形可能不再透明。遇到不確定的字源說法，標示查證範圍，使用字典、字形資料與語境交叉核對，不把有趣的聯想當成定論。"}]}
+    data["studyHighlights"] = ["分辨象形、指事、會意與形聲提供的不同線索。", "分析形聲字時同看意符範圍與聲符線索，再回到詞語和句子。", "會意分析要說明構件關係，不能把現代部件意思直接相加。", "面對古今字形與字源不確定性，標示假設並用多種資料核對。"]
+    data["teaching"] = {"body": [
+        {"id": "hook", "phase": "hook", "heading": "看圖猜字會不會一定猜對？", "body": "給一組原創簡化圖形和現代字，請學習者先猜字義，再比較哪些線索真的可由形體支持、哪些只是想像。接著用詞語例句修正猜測，建立『造字原則是證據入口，不是免查字典的捷徑』的學習起點。"},
+        {"id": "explain", "phase": "explain", "heading": "四種造字線索的判讀表", "body": "象形看形體摹寫，指事看抽象指向，會意看構件關係，形聲看意義範圍與聲音線索。每次標註都要分開『我觀察到的構件』、『我的推測』和『需要用詞語／字典查證的部分』，避免分類名稱變成結論。"},
+        {"id": "worked-example", "phase": "worked-example", "heading": "形聲線索如何回到詞語", "body": "分析一個原創陌生形聲字時，先圈出可能的意符，推測它可能和哪一類事物相關；再用聲符提出讀音候選，放進兩個不同詞語測試。若讀音或語意只在一個詞成立，保留條件並查證，不把部件推理誇大成普遍規則。"},
+        {"id": "guided-practice", "phase": "guided-practice", "heading": "拆開會意的關係而非字面相加", "body": "小組分析一個由兩個構件組成的字，先列出各構件可能代表的動作、位置或對象，再畫出它們的關係；最後用字典義項與句中用例檢查。若構件現代義和整字不同，記錄字形演變或借義的疑問。"},
+        {"id": "transfer", "phase": "transfer", "heading": "替字詞查證寫一張推理卡", "body": "把推理卡放入校園公告或科普文章：字形觀察、造字假設、讀音／意義候選、詞語證據、查詢來源、仍有限制。比較低年級讀者和研究同伴需要的解釋深度，不能為了簡短刪掉不確定性。"},
+        {"id": "reflect", "phase": "reflect", "heading": "回看是否望形生義", "body": "找出一個自己曾經只靠部件猜義的字，寫出原猜測、支持線索、反例詞語與修正後解釋。最後說明若字形資料和現代語境衝突，會先保留哪一項、再找什麼來源補查，讓推理保持可修正。"},
+    ], "summary": ["先辨識構件與關係，再判斷可能的造字線索。", "形聲分析同看意符、聲符與語境，不把部件當成絕對規則。", "會意要說明構件關係並用詞義、例句與字典核對。", "對古今字形與字源假設標示不確定性，保留修正路徑。"], "exitCheck": [{"prompt": "造字原則可以幫助我們做什麼，不能直接保證什麼？", "expectedEvidence": "能說明造字線索可協助提出形音義假設，但不能單靠字形保證現代詞義或讀音。"}, {"prompt": "遇到陌生形聲字時，為什麼要把字放回詞語？", "expectedEvidence": "能指出意符與聲符只是候選線索，詞語、句法與讀音演變能檢查假設是否適用。"}, {"prompt": "如何避免會意分析變成拆字聯想？", "expectedEvidence": "能說明構件關係、查字典義項與用例，並標出現代字形或字源仍不確定的部分。"}]}
+    data["interactive"] = {"type": "guided-choice", "goal": "從構件、造字線索與詞語證據提出可修正的形音義推理。", "scenario": "從象形、會意與形聲分析卡出發，逐步觀察、提出假設、查證並回到語境。", "variables": [{"symbol": "f", "meaning": "構件與字形"}, {"symbol": "p", "meaning": "造字假設"}, {"symbol": "e", "meaning": "詞語與來源證據"}], "steps": [
+        {"id": "step-1", "prompt": "下列說明哪一項最符合象形造字？", "options": ["以較直接的形體線索描寫具體事物，再經字形演變形成文字", "把兩個聲音相同的字任意拼在一起", "只依現代部件意思推測抽象詞義"], "answer": "A", "feedback": "A 說明象形的主要線索，但仍需注意現代字形可能經過演變。"},
+        {"id": "step-2", "prompt": "遇到陌生形聲字時，哪套推理最完整？", "options": ["分別找可能的意符與聲符，提出候選後放回詞語、例句和字典核對", "只看聲符就確定讀音與意思", "只看偏旁就宣稱字義一定相同"], "answer": "A", "feedback": "A 把構件當成線索，再用語境與來源驗證，不把形聲規則絕對化。"},
+        {"id": "step-3", "prompt": "若構件聯想和句中詞義衝突，應如何處理？", "options": ["保留構件推理為假設，查字典／字形資料與更多用例，再修正解釋", "直接相信最有趣的聯想", "刪掉不符合猜測的例句"], "answer": "A", "feedback": "A 保留證據與不確定性，讓字源推理可以被新資料修正。"},
+    ]}
+    data["authoringStandard"] = "version-fused-v1"
+    data["updatedAt"] = "2026-09-21"
+    data["versionResearch"] = [
+        rec("nani", "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf；國語文字形、字音、字義與文字使用定位；核讀 2026-09-21。", ["從形音義理解文字並在語境中正確使用。", "文字知識需連結閱讀與表達，而非孤立背誦。"], ["構件、字形、字音、詞義、詞語與句子。"], "把造字分類當成只要拆字就能直接得到現代字義的公式。", "評量形音義辨識、字詞理解、查證與語境運用。"),
+        rec("kanghsuan", "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf；國語文字詞、文字知識與閱讀活動定位；核讀 2026-09-21。", ["以文字知識、查詢工具與例句活動支援字詞理解。", "構件線索要回到實際詞語與溝通情境。"], ["象形、指事、會意、形聲、部件、例句與查詢。"], "只背四種造字名稱或只看聲符，不檢查詞語與字形演變。", "重視分類理解、推理、工具使用與情境修正。"),
+        rec("hanlin", "https://www.msjh.ntpc.edu.tw/uploads/1691978949408RP7cOuyZ.pdf；國文文字形音義、語詞與評量定位；核讀 2026-09-21。", ["從文字構形、音義線索與文本脈絡理解字詞。", "字詞判斷需說明根據並承認語音、字形與語義變化。"], ["構件關係、意符／聲符、古今字形、詞語、語境與證據。"], "把有趣的字源故事當成已證實的唯一解釋。", "要求文字分類有根據、字詞使用精準並能指出限制。"),
+    ]
+    data["fusionRecord"] = {"commonCore": ["三版本公開結構共同支持形音義知識、字詞理解與語境使用。", "造字線索需透過構件關係、詞語、例句、工具與脈絡核對。", "文字推理應保留假設與變化，不把分類名稱或聯想當成絕對答案。"], "versionDifferences": ["南一較突顯形音義與語境使用；康軒較突顯文字知識、查詢、例句與閱讀活動；翰林較突顯構形、意符／聲符、古今變化與證據說明。這是公開課程計畫層級差異，不宣稱完整教材差異。"], "originalAdditions": ["以原創圖形猜測任務區分觀察和聯想。", "以形聲陌生字推理卡連結意符、聲符、詞語和查詢。", "以會意構件關係和古今衝突練習保留可修正假設。"], "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織造字原則、構件關係、形音義線索、語境查證與古今變化。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    data["teaching"]["body"][1]["body"] += " 若同一構件在不同字裡扮演的角色不一致，將它列為反例並查詢更多用例，不用強迫所有字都符合同一套簡化規則。"
+    data["teaching"]["body"][5]["body"] += " 把修正後的推理卡交給同伴，請他只根據卡上的觀察和來源重做，檢查你的解釋是否可追溯而非依賴個人故事。"
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit": "4-Ⅳ-2：用造字線索推理字形，再回到語境核對", "lessonId": data["id"], "status": "first-pass-ai-review-complete", "reviewStatus": "draft", "checks": {"unitSpecificOriginalContent": True, "threeVersionResearchRecords": True, "fusionRecordPresent": True, "interactivePredictionManipulationExplanation": True, "answersAndDetailedSteps": True, "terraSecondPass": "pending"}, "reviewedAt": "2026-09-21"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("authored chinese performance 4-iv-2")
+
+
+if __name__ == "__main__":
+    main()

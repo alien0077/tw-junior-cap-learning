@@ -2,23 +2,23 @@
   "id": "question-english-content-d-iv-3-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-3／釐清因果」task, what is the best way to prepare question 4?",
+  "prompt": "A town records more ice-cream sales and more sunburn cases in July than in cooler months. What is the best conclusion?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-3／釐清因果."
+      "text": "Hot, sunny weather may contribute to both patterns; the records alone do not show that ice cream causes sunburn."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-3／釐清因果."
+      "text": "Ice cream directly causes sunburn in every person."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-3／釐清因果."
+      "text": "Sunburn makes everyone buy ice cream."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-3／釐清因果."
+      "text": "The two records prove that weather has no effect."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-3／釐清因果, question 4."
+    "explanation": "兩項紀錄同時增加不能證明冰品造成曬傷；炎熱晴朗可能是共同因素，因此選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1738658361768DU1YxF4F.pdf",
+    "sourceLocator": "PDF第1頁第9題：聽取對話並判讀工作量、飲食與健康之間的可能關係。",
+    "authoringNote": "參照公立學校公開英文段考所呈現的時間順序、原因辨識、篇章線索或因果推論能力，題幹、情境、數據、選項、答案與解析均獨立撰寫；未複製試卷。課程版本研究與全案內容審查尚未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658361768DU1YxF4F.pdf",
+      "title": "臺北市立內湖國中113學年度第1學期八年級第2次段考英語科試題",
+      "year": "113",
+      "subject": "english",
+      "locator": "PDF第1頁第9題：聽取對話並判讀工作量、飲食與健康之間的可能關係。",
+      "observedPattern": "參照生活情境中辨識可能的因果敘述；本題以同時變動的夏季紀錄測試相關不等於因果，情境自編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "看到兩個數值一起升降時，先找共同可能因素，再檢查資料是否真的建立一方造成另一方。",
+  "solutionSteps": [
+    "資料只顯示七月冰品銷售和曬傷案例都較多，這是同時變化。",
+    "同時出現不等於前者造成後者；冰品不是造成曬傷的直接證據。",
+    "炎熱、日照較強可能同時增加外出與冰品需求，也增加曬傷機會。",
+    "資料沒有控制天氣或個人外出時間，所以只能提出共同因素的可能性；答案 A。",
+    "排除 every、everyone 等過度概括說法，也不能由這份紀錄斷定天氣毫無影響。"
+  ]
 }

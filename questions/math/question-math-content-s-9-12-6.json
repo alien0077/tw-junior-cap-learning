@@ -2,7 +2,7 @@
   "id": "question-math-content-s-9-12-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "以平面截正方體，截面可能形成哪一種圖形？",
+  "prompt": "用一個平面截正方體，若截面通過四條棱各一點且沒有通過頂點，截面最可能是什麼圖形？",
   "options": [
     {
       "id": "A",
@@ -10,15 +10,15 @@
     },
     {
       "id": "B",
-      "text": "只有圓形"
+      "text": "四邊形"
     },
     {
       "id": "C",
-      "text": "只有五邊形"
+      "text": "五邊形"
     },
     {
       "id": "D",
-      "text": "只能是直線"
+      "text": "圓形"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "平面切過正方體的三個面可形成三角形截面。"
+    "value": "B",
+    "explanation": "截面邊界依序連接四個棱上的截點，會形成四邊形，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 空間中的線與平面 題型與官方課綱 KG kg-math-content-s-9-12",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供空間線與平面能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的空間幾何能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-12"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-12",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "異面直線、線面垂直與平行、平面交線、立體截面、平行平面距離與體對角線",
+      "observedPattern": "公立學校公開數學試題常以長方體或正方體模型判讀空間中的平行、垂直、相交與異面關係，並延伸到截面和距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "異面直線、線面垂直與平行、平面交線、立體截面、平行平面距離與體對角線",
+      "observedPattern": "公立學校公開數學試題常以長方體或正方體模型判讀空間中的平行、垂直、相交與異面關係，並延伸到截面和距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "異面直線、線面垂直與平行、平面交線、立體截面、平行平面距離與體對角線",
+      "observedPattern": "公立學校公開數學試題常以長方體或正方體模型判讀空間中的平行、垂直、相交與異面關係，並延伸到截面和距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "數截面與立體表面的交線段，不把正方體原有的面數當成截面邊數。",
+  "solutionSteps": [
+    "確認平面與正方體表面相交。",
+    "題目指定通過四條棱各一點。",
+    "相鄰截點在同一正方形面上連成一段。",
+    "四段邊界圍成四邊形。",
+    "選 B。"
+  ]
 }

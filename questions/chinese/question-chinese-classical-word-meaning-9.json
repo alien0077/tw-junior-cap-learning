@@ -2,41 +2,76 @@
   "id": "question-chinese-classical-word-meaning-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "多義字推義要保留？",
+  "prompt": "若古文只寫「遂與外人間隔」，下列哪種作答最穩妥？",
   "options": [
     {
       "id": "A",
-      "text": "原句功能與語意"
+      "text": "遂永遠只能解作完成"
     },
     {
       "id": "B",
-      "text": "選項位置"
+      "text": "遂表示於是、接著；仍須依前後文確認事件先後"
     },
     {
       "id": "C",
-      "text": "字數"
+      "text": "間隔一定是兩人吵架"
     },
     {
       "id": "D",
-      "text": "標題"
+      "text": "只看現代『間隔』就能推知全部故事"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ab-iv-6"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的語境、結構與功能線索判斷；其他選項不符合題幹條件。"
+    "value": "B",
+    "explanation": "遂常表示於是或就，間隔表示隔絕；但完整因果仍需前文支持，不能任意補造衝突。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-classical-word-meaning-9.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究古今詞義、詞性、搭配與語境判讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫文言詞義題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-classical-word-meaning"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-classical-word-meaning",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古今詞義、語詞搭配與語境",
+      "observedPattern": "公立學校國文評量把古今詞義、詞性、固定搭配與文言語境放入句子判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言詞義、詞性與閱讀理解",
+      "observedPattern": "公立學校國文評量把古今詞義、詞性、固定搭配與文言語境放入句子判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "答案既要給出常見義，也要標示文本尚未提供的因果與人物資訊。",
+  "solutionSteps": [
+    "讀題定位：圈出「古義證據」與目標詞，確認題目要判斷古今義、詞性、搭配或查證流程。",
+    "建立語境證據：觀察主語、動作、前後詞與時代情境，再區分現代直覺與古文用法；本題核心是「遂常表示於是或就，間隔表示隔絕；但完整因果仍需前文支持，不能任意補造衝突。」",
+    "核對正解：選項 B「A」能放回原句並保留事件與語意。",
+    "排除誘答：檢查是否把現代義硬套、忽略詞性、只按字面猜，或補出文本沒有交代的心理與因果。",
+    "結論回查：以注釋或可靠字典查證，再把義項代回完整句子，確認前後事件與詞語結構連貫。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,41 +2,67 @@
   "id": "question-science-content-hb-iv-1-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年4月12日校園實驗室的觀察中，比較兩地「Hb-Ⅳ-1：岩性與化石記錄地球歷史」資料時，甲地迎風坡年雨量約 700 mm、乙地背風坡約 395 mm，最合理的做法是？",
+  "prompt": "生物遺骸或活動痕跡要形成化石，通常需要什麼條件？",
   "options": [
     {
       "id": "A",
-      "text": "在「Hb-Ⅳ-1：岩性與化石記錄地球歷史」中只看 700 mm 的單一數值便下結論"
+      "text": "暴露在風雨中越久越容易完整保存"
     },
     {
       "id": "B",
-      "text": "同時比較地形、風向、觀測期間與 700、395 mm 資料"
+      "text": "較快被沉積物掩埋並經保存、壓實或礦化等作用"
     },
     {
       "id": "C",
-      "text": "在「Hb-Ⅳ-1：岩性與化石記錄地球歷史」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "只有活體才能成為化石"
     },
     {
       "id": "D",
-      "text": "在「Hb-Ⅳ-1：岩性與化石記錄地球歷史」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "化石一定由火山熔岩直接製造"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-hb-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Hb-Ⅳ-1：岩性與化石記錄地球歷史」。"
+    "explanation": "快速掩埋可降低分解與破壞，之後經壓實、礦化或模鑄等地質作用，才可能留下化石記錄。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的岩性、化石、地層、年代及證據判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Hb-Ⅳ-1 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-hb-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-hb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "岩性、化石、地層與地球歷史資料判讀",
+      "pattern": "取由沉積構造、化石、地層事件和相對／絕對年代建立地球歷史推論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由沉積構造、化石、地層事件和相對／絕對年代建立地球歷史推論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用疊積律與構造關係建立地層先後，再用岩性、化石與標準化石對比，最後區分相對年代、絕對年代與資料缺口。",
+  "solutionSteps": [
+    "讀題定位：圈出「化石形成」以及地層上下、化石分布、岩性、構造或年代方法。",
+    "建立判準：快速掩埋可降低分解與破壞，之後經壓實、礦化或模鑄等地質作用，才可能留下化石記錄。",
+    "核對答案：選項 B「較快被沉積物掩埋並經保存、壓實或礦化等作用」符合地層與化石記錄地球歷史的證據邏輯。",
+    "排除誘答：分清相對與絕對年代、岩性與化石證據、原始順序與後來變形，不把單一線索過度延伸。",
+    "最後回查：確認地層是否連續、是否變形、資料是否可比及結論不確定性。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

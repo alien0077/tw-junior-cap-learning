@@ -2,41 +2,84 @@
   "id": "question-english-performance-5-iv-9-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「5-Ⅳ-9／聽簡單廣播筆記」notice for the town museum, item 1: “Keep the walkway clear.” What does it tell people?",
+  "prompt": "The school speaker says, ‘Our student art show opens in the main hall at noon. Families are welcome to visit.’ What is the announcement mainly doing?",
   "options": [
     {
       "id": "A",
-      "text": "For item 1 in the 5-Ⅳ-9／聽簡單廣播筆記 notice, People should keep the walkway clear."
+      "text": "Teaching a drawing technique"
     },
     {
       "id": "B",
-      "text": "For item 1 in the 5-Ⅳ-9／聽簡單廣播筆記 notice, People should block the walkway."
+      "text": "Announcing the show and inviting families"
     },
     {
       "id": "C",
-      "text": "For item 1 in the 5-Ⅳ-9／聽簡單廣播筆記 notice, People should sleep on the walkway."
+      "text": "Reporting a train problem"
     },
     {
       "id": "D",
-      "text": "For item 1 in the 5-Ⅳ-9／聽簡單廣播筆記 notice, People should move the walkway to the roof."
+      "text": "Explaining where lunch is served"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-5-iv-9"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 5-Ⅳ-9／聽簡單廣播筆記, question 1."
+    "value": "B",
+    "explanation": "正確答案：B。It gives the event, venue, and opening time, then directly welcomes families; the message informs listeners and invites them to attend."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://school.tc.edu.tw/open-message/064526/get-file/628aea9f04ad8678f4674dca",
+    "sourceLocator": "PDF第10頁聽力示例第12題；百貨廣播主旨、地點與結束時間; 校方公告附件英語聽力試題本PDF第5頁第19題；捷運廣播中的乘客行動指示; 校方公告附件英語聽力試題本PDF第5頁第21題；戶外比賽遇雨後的安排與條件",
+    "authoringNote": "原創英文公共公告／廣播筆記題；參考三份由公立國中校方公開之國中教育會考聽力考題／試題說明，以及宜昌國中公開段考英聽題。只改寫能力型態，不複製原題內容、選項、答案或音檔。題組維持draft，完整課程、內容及版權審查尚未完成。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-5-iv-9"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-5-iv-9",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/064526/get-file/628aea9f04ad8678f4674dca",
+      "title": "111年國中教育會考英語科試題說明（臺中市教育局校務系統公開PDF）",
+      "year": "111",
+      "subject": "english",
+      "locator": "PDF第10頁聽力示例第12題；百貨廣播主旨、地點與結束時間",
+      "observedPattern": "辨識單人公共廣播的目的及其中時間／地點線索；只取測量方式，不沿用特賣主題、句子或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://cgjh.hcc.edu.tw/p/405-1032-440270,c5348.php",
+      "title": "新竹縣立成功國中公告之113年國中教育會考英語科聽力試題本",
+      "year": "113",
+      "subject": "english",
+      "locator": "校方公告附件英語聽力試題本PDF第5頁第19題；捷運廣播中的乘客行動指示",
+      "observedPattern": "從公共交通廣播抓出面向聽眾的具體安全行動；不沿用捷運情節、英文原句或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://sljh.hcc.edu.tw/p/406-1034-491334,r1565.php?Lang=zh-tw",
+      "title": "新竹縣立勝利國中公告之114年國中教育會考英語科聽力試題本",
+      "year": "114",
+      "subject": "english",
+      "locator": "校方公告附件英語聽力試題本PDF第5頁第21題；戶外比賽遇雨後的安排與條件",
+      "observedPattern": "整合公共活動公告中的天候條件與後續安排；不沿用競賽情境、答案文字或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先用開頭判斷公告談什麼，再看結尾是否要求、邀請或提醒聽眾採取行動；主旨要涵蓋整段而非只抓一個時間。",
+  "solutionSteps": [
+    "題目問的是整段公告的主要功能，不是單獨問場地或時間。",
+    "抓住主題 art show，以及 main hall、noon 兩項活動資訊。",
+    "注意 Families are welcome to visit 是對聽眾發出的邀請。",
+    "選B，因它同時概括活動通知與邀請；其他選項把公告主題換成無關事項。",
+    "最後核對答案涵蓋前面的事件資訊和結尾的聽眾行動。"
+  ]
 }

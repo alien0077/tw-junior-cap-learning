@@ -2,41 +2,84 @@
   "id": "question-science-content-aa-iv-2-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年6月16日社區環境站的觀察中，將 44 g 食鹽溶於 712 g 水，研究「Aa-Ⅳ-2：相對原子與分子質量」時，溶液質量為何？",
+  "prompt": "一名學生把 SO₂ 的相對分子質量算成 32＋16＝48；若 S＝32、O＝16，錯誤在哪裡？",
   "options": [
     {
       "id": "A",
-      "text": "668 g"
+      "text": "忽略 O 右下角的下標 2，少算一個氧原子"
     },
     {
       "id": "B",
-      "text": "31328 g"
+      "text": "把硫的相對原子質量寫得太大"
     },
     {
       "id": "C",
-      "text": "756 g"
+      "text": "SO₂ 不含硫元素"
     },
     {
       "id": "D",
-      "text": "712 g"
+      "text": "相對分子質量不能用加法"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-aa-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：44＋712＝756 g。 本題對應 KG「Aa-Ⅳ-2：相對原子與分子質量」。"
+    "value": "A",
+    "explanation": "A。SO₂ 有 1 個 S 和 2 個 O，Mr=32+2×16=64；錯誤是漏讀 O 的下標 2。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；相對原子與分子質量計算及化學式判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題中的相對質量基準、化學式下標、分子質量、同位素與加權計算能力；本題改寫為相對質量原創情境。",
+    "authoringNote": "依官方課綱、KG 與三筆公開自然科試題的相對質量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-aa-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-aa-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取相對原子質量、化學式與相對分子質量的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "相對原子質量、化學式與相對分子質量",
+      "observedPattern": "公開自然科評量常要求理解相對質量基準、化學式下標、相對分子質量、同位素平均、加權計算與估算檢查；本題以全新化學數值情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取元素組成、同位素平均與數值計算的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "元素組成、同位素平均與數值計算",
+      "observedPattern": "公開自然科評量常要求理解相對質量基準、化學式下標、相對分子質量、同位素平均、加權計算與估算檢查；本題以全新化學數值情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取化學式下標、括號、質量貢獻與估算的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "化學式下標、括號、質量貢獻與估算",
+      "observedPattern": "公開自然科評量常要求理解相對質量基準、化學式下標、相對分子質量、同位素平均、加權計算與估算檢查；本題以全新化學數值情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "重新讀每個元素的下標，找出漏乘或漏加位置。",
+  "solutionSteps": [
+    "圈出共同基準、元素符號、下標、括號倍數與題目要求的相對量。",
+    "把化學式轉成各元素原子數，建立原子數×Ar的組成表。",
+    "逐項計算質量貢獻並加總，必要時用比值、加權平均或估算檢查。",
+    "區分相對無單位數值、實際克數、原子序、質量數與化學式組成。",
+    "回查下標、乘法、加總與結論界線，說明相同 Mr 不能推出相同性質。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-lb-iv-1-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年9月13日學校研究社的觀察中，連續觀察「Lb-Ⅳ-1：非生物因子影響生物分布與生存」6 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "水族池中水溫升高且溶氧下降後，魚群頻繁浮到水面，最合理的推論是？",
   "options": [
     {
       "id": "A",
-      "text": "連續6天研究「Lb-Ⅳ-1：非生物因子影響生物分布與生存」並觀察到個體在一段時間內生長並能重複驗證"
+      "text": "低溶氧可能限制魚的呼吸，魚靠近水面取得較多氣體交換"
     },
     {
       "id": "B",
-      "text": "研究「Lb-Ⅳ-1：非生物因子影響生物分布與生存」時只依樣本的顏色（未記錄6天的時間與條件）"
+      "text": "魚因水溫升高而不需要氧氣"
     },
     {
       "id": "C",
-      "text": "研究「Lb-Ⅳ-1：非生物因子影響生物分布與生存」時只依樣本的名稱推測，不進行觀察"
+      "text": "浮到水面表示水中氧氣一定最多"
     },
     {
       "id": "D",
-      "text": "研究「Lb-Ⅳ-1：非生物因子影響生物分布與生存」時只觀察一次外形，便排除所有其他證據"
+      "text": "只要增加餵食就能恢復溶氧"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Lb-Ⅳ-1：非生物因子影響生物分布與生存」。"
+    "explanation": "水溫升高可能降低溶氧，魚浮到水面可作為缺氧假說的線索；還要測氧氣、魚密度與其他水質，不能直接證明唯一原因。正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "公立學校公開自然科試題中的非生物因子、分布資料、控制變因與因果界線能力；本題改寫為 Lb-Ⅳ-1 原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-lb-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-lb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "鹽埕國中公開自然段考；只取生態因子、分布、資料判讀與探究設計的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "生態因子、分布、資料判讀與探究設計",
+      "observedPattern": "公開自然科評量常以溫度、光照、水分、鹽度、pH、氧氣、分布資料與控制變因檢查生態推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "內湖國中公開自然段考；只取生物與環境、圖表資料及限制條件的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "生物與環境、圖表資料及限制條件",
+      "observedPattern": "公開自然科評量常以溫度、光照、水分、鹽度、pH、氧氣、分布資料與控制變因檢查生態推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "國昌國中公開自然科試題；只取非生物因子、控制變因與因果界線的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "非生物因子、控制變因與因果界線",
+      "observedPattern": "公開自然科評量常以溫度、光照、水分、鹽度、pH、氧氣、分布資料與控制變因檢查生態推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把魚浮水面視為缺氧線索，再找溶氧與其他水質資料驗證。",
+  "solutionSteps": [
+    "讀題並圈出非生物因子、分布資料、測量時間、地點與可能控制變因。",
+    "先區分直接觀察的分布與需要模型解釋的限制因子。",
+    "檢查選項是否把溫度、光照、水分、鹽度、pH 或氧氣誤當生物因子。",
+    "排除單一測站、單次觀察或多項條件同時改變卻宣稱唯一因果的說法。",
+    "用有範圍的完整句重述答案，補上未控制因素與下一個可驗證的測量。"
+  ]
 }

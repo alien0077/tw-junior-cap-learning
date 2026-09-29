@@ -2,41 +2,84 @@
   "id": "question-math-content-n-9-1-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "下列哪一組連比與 3：4：5 相等？",
+  "prompt": "若甲：乙＝3：4，乙：丙＝5：6，甲、乙、丙總和為 118，丙是多少？",
   "options": [
     {
       "id": "A",
-      "text": "3：8：5"
+      "text": "30"
     },
     {
       "id": "B",
-      "text": "9：12：20"
+      "text": "40"
     },
     {
       "id": "C",
-      "text": "6：8：10"
+      "text": "48"
     },
     {
       "id": "D",
-      "text": "6：7：10"
+      "text": "60"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-n-9-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "C",
-    "explanation": "3：4：5 的各項同乘以 2 得 6：8：10。"
+    "explanation": "乙的 4 與 5 調成 20：第一比變 15：20，第二比變 20：24，總份數 59，每份 2，丙為 24×2＝48，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究連比整合、共同項、比例分配與生活情境能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供連比共同量、三量比例、總量分配與應用回代能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的連比方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-n-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "連比的共同量對齊、最簡整數比、總量分配與比例應用",
+      "observedPattern": "公立學校公開數學試題常要求把兩個相鄰比的共同量調成相同份數，接成三量連比，再由總量、差量或指定量回推實際數值；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "連比的共同量對齊、最簡整數比、總量分配與比例應用",
+      "observedPattern": "公立學校公開數學試題常要求把兩個相鄰比的共同量調成相同份數，接成三量連比，再由總量、差量或指定量回推實際數值；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "連比的共同量對齊、最簡整數比、總量分配與比例應用",
+      "observedPattern": "公立學校公開數學試題常要求把兩個相鄰比的共同量調成相同份數，接成三量連比，再由總量、差量或指定量回推實際數值；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "兩段比的共同項對齊後，先算總份數；若總量可整除，最後回代檢查。",
+  "solutionSteps": [
+    "找出乙的份數 4 與 5，最小公倍數為 20。",
+    "3：4 同乘 5 得 15：20；5：6 同乘 4 得 20：24。",
+    "連比總份數 15＋20＋24＝59。",
+    "每份為 118÷59＝2。",
+    "丙＝24×2＝48，選 C。"
+  ]
 }

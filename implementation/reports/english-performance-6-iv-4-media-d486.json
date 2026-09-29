@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-6-iv-4",
+  "change": [
+    "Mapped media selection, first-pass prediction, medium-specific evidence, observation/inference/unknown separation, reliable help-seeking, verification, and copyright-respecting sharing to QA flow stages.",
+    "Added explicit simulation-script fallback to the existing unit browser regression."
+  ],
+  "browser": {
+    "status": "passed",
+    "visibleSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardWrongRetryCorrect": true,
+    "axeViolations": 0,
+    "axeIncomplete": 0,
+    "blockedSimulationScript": ["http://127.0.0.1:8765/site/simulations.js"],
+    "guidedChoiceFallbackUsable": true,
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "blockedExternalRequests": 1,
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "998/1,027 pass; 29 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

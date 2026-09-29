@@ -1,0 +1,146 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-9
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-9
+  title: 3-Ⅳ-9：了解故事主要內容情節
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-9：了解故事主要內容情節
+    curriculumIntent: 3-Ⅳ-9：了解故事主要內容情節
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 以角色目標、障礙、失敗嘗試、轉折線索及結果重建故事情節弧
+  - 區分孤立細節與能解釋因果轉折的關鍵事件，並以文本證據支持摘要
+  - 將「問題—線索—選擇—結果」推理遷移到未讀過的新故事
+  prerequisites:
+  - 能從短篇敘事辨認人物、事件順序及明示結果
+  - 能用一句話指出支持推論的具體故事事件
+  coreConcepts:
+  - 故事目標與主要障礙如何形成核心衝突
+  - 失敗嘗試、環境線索和角色新選擇如何造成結果轉折
+  - 以開頭與結尾的行動差異推論人物改變，不把單一事件擴大成性格判斷
+  misconceptions:
+  - 把最戲劇化的細節當成主要情節，即使它沒有改變問題或結果
+  - 只看結局，忽略障礙、無效嘗試及促成轉折的線索
+  - 把角色「做了什麼」直接當成人物「已經改變」，沒有比較前後證據
+  contentFlow:
+  - 'hook: 預測Nia會如何處理風箏首次起飛失敗'
+  - 'activate-prerequisite: 回想故事目標、障礙與結果的差別'
+  - 'visualize: 以逐段原創故事和情節弧標籤並列呈現事件功能'
+  - 'predict: 先保存學生預測，預測不足8字時不展開故事'
+  - 'manipulate: 逐段標記支持障礙、失敗嘗試、線索、結果與改變的證據'
+  - 'observe: 顯示已選事件及情節弧五類關係，不以色彩單獨編碼'
+  - 'explain: 選出能連結操場無風、布旗線索、改換地點與風箏起飛的摘要'
+  - 'formalize: 回饋情節摘要如何保留問題、轉折、結果及人物改變'
+  - 'transfer: 在Ravi的機器人社團故事重新標記線索並說明方案造成的結果'
+  - 'exit-ticket: 比較新故事的初始方案與修正方案，以證據解釋人物調整'
+  visualizations:
+  - 事件清單與「目標→障礙→嘗試／線索→選擇→結果／改變」情節弧同步呈現
+  - 每段可用文字閱讀並操作證據標記；選取狀態以文字、按鈕標籤和aria-pressed同步表達
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-9-I01
+    component: StoryPlotLab
+    purpose: 讓學生從原創事件證據重建情節弧，檢查主要摘要並把推理遷移到全新故事
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        storyStage: prediction-before-reveal
+        evidenceMode: selectable-events
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 閱讀原創情節並以按鈕標記支持事件功能判斷的段落
+    - 以情節弧檢查障礙、無效嘗試、轉折線索、結果及人物改變是否齊全
+    - 在新故事選擇推論，並以文字說明「問題線索 → 角色選擇 → 可觀察結果」
+    visualRules:
+    - 標記或取消標記事件後，情節地圖、證據數量與可用檢核狀態同步更新
+    - 主要情節摘要解鎖前保留學生預測與證據選取，不提前呈現正解
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-9-I01
+      trigger: 把操場無風造成的失敗誤認為人物目標，或只憑風箏最後飛起來選摘要
+      prompt: 請指出哪一段同時說明原方案為何失敗，以及角色如何找到新做法。
+      expectedEvidence: 指出無風或拉線使縫線裂開的事件、布旗線索、改換地點的選擇及起飛結果之間的關係
+    feedback:
+      correct: 回指出學生標記的障礙、線索與結果如何連成因果弧，再要求在Ravi的新故事重新驗證。
+      incorrect: 提醒回看第一次失敗與布旗方向，不直接給摘要；學生重試後再指出尚缺的情節環節。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 StoryPlotLab 只吸收先預測、逐段舉證、文字回饋及可及性呈現方法；風箏故事、情節、題目與證據均為本課原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課 StoryPlotLab 只吸收先預測、逐段舉證、文字回饋及可及性呈現方法；風箏故事、情節、題目與證據均為本課原創。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課 StoryPlotLab 只吸收先預測、逐段舉證、文字回饋及可及性呈現方法；風箏故事、情節、題目與證據均為本課原創。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課 StoryPlotLab 只吸收先預測、逐段舉證、文字回饋及可及性呈現方法；風箏故事、情節、題目與證據均為本課原創。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 使用Ravi機器人社團故事的障礙、失敗回應、線索與修正結果；不可只替換Nia故事中的人名或物品
+    requiredResponse: 選出最能解釋人物改變的推論，再以至少18字連結失敗回應、文字線索、方案與結果
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: Nia從「更用力拉線」改為「觀察布旗並換地點」；哪個事件證明這項改變解決了障礙？
+    successCriteria:
+    - 說出人物目標及最初障礙
+    - 指出促成新選擇的故事線索
+    - 用可觀察結果說明人物行動或想法的改變
+  expressionExtension:
+    applicable: true
+    task: 用80～120字英文短段落重述Nia的目標、障礙、線索、選擇和結果，並說明哪個事件構成人物改變的證據
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入「3-Ⅳ-9：了解故事主要內容情節」時不得先顯示正解；學生必須先提交對「3-Ⅳ-9：了解故事主要內容情節」的預測，且預測會被保留供後續比較。
+  - 操作「language-structure：以「3-Ⅳ-9：了解故事主要內容情節」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
+  - 學生觸發「只背「3-Ⅳ-9：了解故事主要內容情節」形式，未依語境、時間或句構判斷」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成「3-Ⅳ-9：了解故事主要內容情節」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
+  - 以新資料執行「3-Ⅳ-9：了解故事主要內容情節」的 CAP transfer：換一個情境但保留「3-Ⅳ-9：了解故事主要內容情節」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
+  - 外部資料失效時，LanguageTimelineBlock 仍須以「3-Ⅳ-9：了解故事主要內容情節」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-9
+    role: official-curriculum-source-of-truth

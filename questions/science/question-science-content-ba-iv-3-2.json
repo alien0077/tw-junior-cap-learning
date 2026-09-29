@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-iv-3-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年3月12日校園實驗室的觀察中，將 189℃ 的金屬片放入 28℃ 的水中，研究「Ba-Ⅳ-3：化學反應的吸熱與放熱」時，最初的熱傳方向為何？",
+  "prompt": "某反應在隔熱容器中進行，反應後容器內溶液溫度明顯下降。若其他條件可靠，最合理的分類是？",
   "options": [
     {
       "id": "A",
-      "text": "由金屬片傳向水"
+      "text": "放熱反應，因為反應一定會產生熱"
     },
     {
       "id": "B",
-      "text": "由 28℃ 的水傳向 189℃ 金屬片"
+      "text": "吸熱反應，系統從周圍吸收能量"
     },
     {
       "id": "C",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "沒有發生反應，只是溫度計故障"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "放熱反應，因為溫度下降代表熱量增加"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 189℃ 金屬片傳向 28℃ 的水。 本題對應 KG「Ba-Ⅳ-3：化學反應的吸熱與放熱」。"
+    "value": "B",
+    "explanation": "在隔熱條件下，溶液溫度下降表示反應系統的能量降低；若熱量主要由周圍供給系統，便是吸熱反應，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究化學反應吸熱與放熱、溫度變化、能量轉移及實驗控制變因能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的反應熱、吸放熱與能量證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化學反應、能量變化、吸熱放熱與實驗資料判讀",
+      "pattern": "取由溫度資料、能階關係與系統邊界判斷吸熱或放熱的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫度資料、能階關係與系統邊界判斷吸熱或放熱的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把『溫度結果』轉成『能量方向』，並先檢查容器是否能支持這個推論。",
+  "solutionSteps": [
+    "確認容器近似隔熱，減少外界熱交換干擾。",
+    "記錄反應前後的溶液溫度。",
+    "溫度下降表示系統需要補入能量。",
+    "能量由周圍流入反應系統。",
+    "所以判定為吸熱反應，選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

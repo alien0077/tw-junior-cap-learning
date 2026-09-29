@@ -1,0 +1,168 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-7-6
+  knowledgeGraphIds:
+  - kg-math-content-a-7-6
+  title: A-7-6：二元一次聯立方程式的幾何意義
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  fusedScope:
+    officialCurriculum: A-7-6：二元一次聯立方程式的幾何意義
+    curriculumIntent: A-7-6：二元一次聯立方程式的幾何意義
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 優先比對三版本可讀教材；若出版社正文不可得，採用有清楚版次／來源限制的公開版本材料及可核對教學計畫作旁證，依課綱與KG重寫原創教材。不得把課程索引或校方計畫稱為出版社正文；各版本未讀部分維持pending。
+    currentEvidenceStatus: source-informed-original-fusion-draft; publisher-full-text-review-pending
+  learningGoals:
+  - 將 2x−y=2 與 x+y=6 轉成兩條直線，預測交點 (8/3,10/3) 並代回兩式驗證。
+  - 說明一條線上的點只滿足一條方程，交點才表示同一有序數對同時滿足兩條件。
+  - 依課綱僅處理兩條直線相交且只有一個交點的情況；從圖上讀取交點候選，按 (x,y) 次序代回兩式驗證唯一共同解。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 二元一次方程式的解對應座標平面上的點；該式的解集形成直線。
+  - 聯立解是兩直線的共同點；單線上的點不保證符合另一式，須依 x、y 軸順序代入原式。
+  - 本課限定唯一交點：兩條方程各自的解集是直線，交點是兩條解集的共同點；不在本課正式教授平行無解或重合無限解分類。
+  - y=k 是水平線、x=h 是鉛垂線；不必把所有直線改寫成斜率截距式才能理解其點集。
+  misconceptions:
+  - 將只在 x+y=6 上的 (2,4) 當成共同解，未檢查 2x−y=2；第二式實得 0≠2。另一個只通過第一式的候選點是 (3,3)：x+y=6，但 2x−y=3≠2。
+  - 把交點座標寫成 (2,4) 卻以 x=4、y=2 的順序代入，混淆橫縱軸。
+  - 只憑圖上最接近的位置判定交點，沒有把候選有序數對代回兩條原式。
+  - 將 y=k 畫成鉛垂線、將 x=h 畫成水平線，或把 (x,y) 順序交換。
+  contentFlow:
+  - 'hook: 由 2x−y=2 先挑 x=0、2，算出 (0,−2)、(2,2) 並預測線上還有哪些點。'
+  - 'activate-prerequisite: 以座標 (x,y) 代回單一方程，確認橫軸是 x、縱軸是 y。'
+  - 'predict: 學生標記 2x−y=2 與 x+y=6 的交點候選，並說明為何要用兩式驗證。'
+  - 'manipulate: 調整一條直線的常數，觀察唯一交點如何移動；切換為 y=k 與 x=h，核對分別水平與鉛垂。'
+  - 'observe: 同步更新座標圖、各線候選點表與代回檢核，將點分成只在第一線、只在第二線、同時在線上。'
+  - 'explain: 用「共同點同時滿足兩條式」說明交點意義，並用 (8/3,10/3) 驗證 x+y=6、2x−y=2。'
+  - 'formalize: 依課綱範圍建立「兩式各自成線→唯一交點同時滿足兩式」對應，不延伸其他交點數分類。'
+  - 'guided-practice: 對 2x+y=8 與 x+y=6 分別列點，找出共同候選 (2,4)，再逐式代入確認。'
+  - 'transfer: 用校園地圖 y=3 東西向步道與 x=−1 南北向步道找交點，解釋固定座標與唯一共同位置。'
+  - 'exit-ticket: 由新方程組畫出唯一交點，按序代回兩條原式，說明圖形與代數如何互證。'
+  visualizations:
+  - 雙直線坐標圖：繪出 x+y=6 與 2x−y=2，標示唯一交點候選 (8/3,10/3) 並顯示兩式代入值。
+  - 條件點表：分欄記錄候選點是否通過第一式、第二式及是否為共同解，避免只靠視覺接近判讀。
+  - 水平線 y=k、鉛垂線 x=h 與一般直線對照，再以雙式點表核驗唯一交點；不展示解數分類。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-7-6-I01
+    component: GeometryManipulationBlock
+    purpose: 操作兩條直線的條件，辨識它們的共同點如何對應同一組聯立解，並以代入而非目測確認。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        firstEquationSum: 6
+        secondEquationDifference: 2
+        candidateX: 8/3
+        candidateY: 10/3
+    studentActions:
+    - 先選預測點並勾選其可能通過的條件，提交後才顯示兩次代入結果。
+    - 以鍵盤調整第二式常數，觀察唯一交點位置變化；另可切換 y=k、x=h 特例並辨認線的方向。
+    - 標記兩條線、各自的點與交點；每個候選點可展開兩式計算。
+    - 用一句話解釋為何只通過一式不夠，以及交點如何形成共同解。
+    visualRules:
+    - 常數改變時直線、候選點表、交點座標與兩式代入結果同步更新。
+    - 預測及點選記錄在揭答後保留，可比較錯誤點只滿足哪條線。
+    - 兩線使用線型／文字標籤區別；共同解另有交點符號與座標文字，不只依顏色。
+    - 圖窗暫時未顯示交點時提示檢查座標範圍並以兩式求證，不將視窗外推成無解分類。
+    - 窄螢幕以圖表上下排列，座標值和方程式檢核仍可讀。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-7-6-I01
+      trigger: 將 (10/3,8/3) 誤認為方程組 x+y=6、2x−y=2 的交點。
+      prompt: 依 (x,y) 順序代入第二式 2x−y=2，結果是否等於2？
+      expectedEvidence: 10/3+8/3=6，但2×10/3−8/3=4≠2；正確交點 (8/3,10/3) 代回兩式皆成立。
+    feedback:
+      correct: 請學生指出第二式對應的幾何線，再另選點重複雙式驗證。
+      incorrect: 第一提示提醒先讀 x 軸、y 軸順序；第二次仍錯才顯示一次第二式代入，不直接把正確交點標出。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "借用可拖曳幾何物件以觀察關係變化的形式；本課自行設計兩條直線、條件點表、共同交點及代數驗證，不複製 PhET 模型或素材。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "參考先預測再改變一個幾何條件並觀察結果的活動節奏；線式、坐標、表格和判斷回饋均為本課獨立設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "直線、交點、座標及驗證結果均有文字標籤和鍵盤可達替代；不能只用顏色或拖曳表示共同解。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以主內容和分節標題呈現方程、圖形、點表與代回證明，提供清楚的鍵盤與助讀器閱讀順序。"
+  capTransfer:
+    questionType: 由兩條直線唯一交點說明聯立解的幾何意義
+    stemConstraint: 兩條關係為 2x+y=8 與 x+y=6；以表格各取兩個解畫線，讀取唯一交點並檢查一個只滿足單式的近鄰候選。
+    requiredResponse: 得交點 (2,4)，驗證 2×2+4=8、2+4=6；反例 (2.2,3.8) 只滿足第二式，第一式為8.2。
+    scoring: 點表與直線對應 1、交點依序代回兩式 1、用一式不成立排除近鄰候選 1
+  exitTicket:
+    prompt: 方程組 2x+y=8、x+y=6 的共同交點是什麼？請用兩次代入說明；再判斷 (2.2,3.8) 是否也為解。
+    successCriteria:
+    - 算出交點 (2,4)，並驗證 2×2+4=8、2+4=6。
+    - 算出近鄰候選第一式為8.2、第二式為6，故不符合聯立條件。
+    - 保持 (x,y) 座標順序，說明兩線交點與共同解的對應。
+  expressionExtension:
+    applicable: true
+    task: 為同學解釋為何兩條方程的交點代表共同解，並用自己選擇的點各代入一次證明或反駁。
+    constraint: 學生先寫；回饋只檢查變數順序、兩個條件及交點證據，不代寫完整答案。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始圖隱藏共同交點；學生先預測並標記候選點，提交後才顯示雙式計算。
+  - (8/3,10/3) 顯示 8/3+10/3=6、2×8/3−10/3=2；交換座標後第二式顯示4≠2並命中順序提示。
+  - 改變第二式常數後，圖線、點表及唯一交點同步更新；切換 y=k 與 x=h 後水平／鉛垂方向及標籤正確。
+  - 320px、375px、768px 及鍵盤可完成點選、條件調整、雙式驗算；交點座標有文字替代且不只靠顏色區分。
+  - CAP transfer 的 (2,4) 通過 2x+y=8 與 x+y=6；近鄰 (2.2,3.8) 的第一式為8.2，不能誤判為共同解。
+  - 無動態或圖形 fallback 時提供候選點表、水平／鉛垂方向標籤及兩式代入欄，完成相同推理流程。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-7-6
+    role: official-curriculum-source-of-truth
+  - url: https://www.junyiacademy.org/videos/spj6C1yl3GU
+    locator: 南一對齊課程頁；一般式解轉圖、y=k／x=h 特例、聯立圖形的標題與節次；未觀看影片，非南一出版社正文
+    role: public-aligned-sequence-limited-evidence
+  - url: https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E8%AA%B2%E6%9C%AC%E8%A7%A3%E9%A1%8C&l2=7%E4%B8%8B
+    locator: 康軒官方七下資源入口；只作章節／資源索引，未觀看影片
+    role: publisher-index-only-pending
+  - url: https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110
+    locator: 康軒版校方課程計畫PDF第8–11頁；動態幾何、解點連線、截距、象限及y=k／x=h教學流程；非出版社正文
+    role: school-pacing-plan-cross-check-not-publisher-text
+  - url: https://mathvideo.hle.com.tw/1B/2-2/
+    locator: 翰林官方1B/2-2資源索引標題；解點轉圖、y=k、x=h、聯立圖形與自我挑戰；未觀看影片
+    role: publisher-index-only-pending
+  - url: https://fliphtml5.com/uygal/wdfq
+    locator: 第三方上傳南一標示教材簡介本內頁p.87；整數解點作圖支架；非出版社認證，版本真實性及權利未核實，不複製例題或表達
+    role: third-party-version-labeled-sample-limited-research
+  - url: https://www.scribd.com/document/777687263/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%BA%B7%E8%BB%92%E7%89%88-%E4%B8%83%E4%B8%8B
+    locator: 第三方上傳康軒標示自學講義pp.52–65；解點、作圖、水平／鉛垂、代入判點與交點；頁面標All Rights Reserved，非出版社認證，權利待查
+    role: third-party-version-labeled-material-limited-research

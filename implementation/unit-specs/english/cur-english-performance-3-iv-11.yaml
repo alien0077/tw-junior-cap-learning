@@ -1,0 +1,148 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-11
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-11
+  title: 3-Ⅳ-11：從圖片標題書名推測
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-11：從圖片標題書名推測
+    curriculumIntent: 3-Ⅳ-11：從圖片標題書名推測
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 從標題、圖片與圖說各自摘取可見線索，提出有範圍的內容預測
+  - 保存原始預測及初始信心，讀到正文後用具體句子支持、限縮或修正預測
+  - 區分封面可推測的主題與封面無法證明的人物、結果及參與規模
+  prerequisites:
+  - 能閱讀標題、簡短圖說及可辨認的封面圖像
+  - 能用完整句說出可能主題，並使用 may、could 等語氣保留不確定性
+  coreConcepts:
+  - 標題、圖片、圖說可提供不同但互補的閱讀線索；預測須指出實際使用的線索
+  - 初始封面線索只支持暫時預測，正文能補強、縮小或推翻預測
+  - 預測吻合不等於封面已證明故事結局；推論須保留不能由現有證據確定的內容
+  misconceptions:
+  - 從一個封面物件捏造人物身分、動機或完整結局
+  - 把雲層、表情或顏色等圖像線索說成已發生的事件
+  - 讀到正文後仍守住初始猜測，不依新證據更新主題範圍或信心程度
+  contentFlow:
+  - 'hook: 只看 The Patchwork Window 封面，先猜文字可能說明哪一類修復工作'
+  - 'activate-prerequisite: 分別指出標題、圖片與圖說的可見資訊'
+  - 'visualize: 以封面卡展示原創SVG、來源標籤、圖說及可選線索'
+  - 'predict: 保存至少十字預測、引用線索及初始信心後才展開正文'
+  - 'manipulate: 標記正文中的修補方法、文章範圍與未交代資訊'
+  - 'observe: 原預測和初始信心持續可見，供對照讀後證據'
+  - 'explain: 選擇最符合正文的修正版，重新評估讀後信心'
+  - 'formalize: 區分支持／縮小的推論和文本無法證明的設計者、結局或出席人數'
+  - 'transfer: 在 A Shared Shade 新封面上重做線索選取、預測、正文核對與信心調整'
+  - 'exit-ticket: 用正文句子解釋預測如何修正，並指出仍不知道的資訊'
+  visualizations:
+  - 同一卡面並列標題、原創SVG圖片、圖說、來源類型與可見線索選擇
+  - 正文揭露後保留原預測／初始信心，並呈現正文證據清單、修正版及讀後信心
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-11-I01
+    component: TextPredictionCalibrationLab
+    purpose: 操作兩份不同原創封面，練習提出有限度預測、根據正文修正及標記不能確定的資訊
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        artifact: patchwork-window-practice
+        previewRevealed: false
+        predictionConfidence: unset
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 先寫至少十字預測，選擇初始信心並引用至少兩種封面線索
+    - 保存預測後才閱讀正文，標記必要證據並選出最合證據範圍的修正版
+    - 讀後再次評估信心，完成新封面情境遷移
+    visualRules:
+    - 正文打開前不顯示文章內容或讀後選項；原預測、線索與信心保存供比較
+    - 封面SVG須有與caption一致的文字替代，不得單憑顏色傳遞訊息
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-11-I01
+      trigger: 因 transfer 封面有座椅而斷言活動一定滿座，或讀後仍不調整信心
+      prompt: 請指出哪個正文比較條件支持地點判斷，以及作者明確沒有提供什麼結果。
+      expectedEvidence: 引用眩光／通行空間比較或推車路線測試，並指出到場家庭數在正文中未知
+    feedback:
+      correct: 回指封面線索如何被正文補強或限縮，並要求學生重評把握程度及指出未知資訊。
+      incorrect: 引導回看被忽略的標題／圖片／圖說，或正文中已明說的範圍限制；不直接代選修正版。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 TextPredictionCalibrationLab 只借用先預測、保留證據軌跡與分階段回讀的教學概念；Patchwork Window 和 Shared Shade 封面、正文皆原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課 TextPredictionCalibrationLab 只借用先預測、保留證據軌跡與分階段回讀的教學概念；Patchwork Window 和 Shared Shade 封面、正文皆原創。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課以原生radio、可操作線索按鈕、aria-live狀態與SVG替代文字呈現預測校準；資料與內容由本課獨立設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課以封面預覽、來源線索、後續正文、證據標記和信心重評形成逐階段閱讀流程；非以共用時間線或滑桿呈現。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 使用 A Shared Shade 戶外地點提案及出席人數未知的限制；不可改回題庫已有的健行、節水、種子或城市鳥封面
+    requiredResponse: 至少引用兩項封面線索、兩句正文依據，選出修正版並重新選讀後信心
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 你最初預測什麼？哪一句正文讓你限縮或修正它？讀完後還不能確定哪一件事？
+    successCriteria:
+    - 明確引用標題、圖片或圖說線索
+    - 用正文細節說明預測如何被支持或限縮
+    - 標示一項文本尚未交代、不能由封面臆測的資訊
+  expressionExtension:
+    applicable: true
+    task: 用80～120字英文閱讀札記說明一項封面預測如何由正文支持／限縮，並指出一項尚未證實的結局或讀者反應
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始只顯示封面資訊；預測長度、引用線索及初始信心達條件後才開啟正文，重載後原預測保留。
+  - 練習情境的視覺、caption與來源標籤均可由螢幕閱讀器取得替代說明；圖片不能單獨承載主題答案。
+  - 每份正文須標記所有必要證據，並完成修正版選擇和讀後信心重評，才可進入下一情境。
+  - 練習材料使用窗戶修復故事、遷移材料使用校園聚會地點提案，兩者均不得重用同課既有種子／健行／節水題幹。
+  - 切換正文證據或修正版會清除依賴的完成狀態與讀後信心；重設清除該 lesson／instance 的保存進度。
+  - 在320px、375px與768px檢查卡面SVG、圖說、證據清單、radio、按鈕和回饋，不裁切；控制目標至少44px並支持減少動態設定。
+  - 兩段正文、封面圖像與問題由 lesson 本地資料提供；外部資源失效時使用 inline SVG 和內嵌文本作離線 fallback 完成預測及遷移。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-11
+    role: official-curriculum-source-of-truth

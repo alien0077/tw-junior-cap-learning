@@ -2,23 +2,23 @@
   "id": "question-math-content-d-7-1-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "四筆資料排序後為 9、12、15、18，其中位數為何？",
+  "prompt": "若要呈現某城市一年十二個月份的平均氣溫變化趨勢，哪一種圖表最適合？",
   "options": [
     {
       "id": "A",
-      "text": "15"
+      "text": "折線圖"
     },
     {
       "id": "B",
-      "text": "54"
+      "text": "圓餅圖"
     },
     {
       "id": "C",
-      "text": "13.5"
+      "text": "只有一個數字的統計表"
     },
     {
       "id": "D",
-      "text": "12"
+      "text": "不標月份的長條圖"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "偶數筆資料的中位數是中間兩數平均：(12＋15)÷2＝13.5。"
+    "value": "A",
+    "explanation": "月份具有時間先後，且題目要看變化趨勢，折線圖能用連續線段呈現時間序列，因此選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究統計圖表讀值、刻度、比例、平均數與中位數能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供統計圖表讀值、刻度、比例、平均數、中位數與資料解讀能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的資料判讀方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-d-7-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-d-7-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "reading tables and charts, scales, percentages, mean, median, and choosing a suitable representation",
+      "observedPattern": "公立學校公開數學試題常要求由表格或圖表讀取資料、辨識刻度、計算比例或集中量，並判斷圖表敘述是否符合資料；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "reading tables and charts, scales, percentages, mean, median, and choosing a suitable representation",
+      "observedPattern": "公立學校公開數學試題常要求由表格或圖表讀取資料、辨識刻度、計算比例或集中量，並判斷圖表敘述是否符合資料；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨識資料是否有時間順序與題目是否關注趨勢，再選能清楚表達變化的圖表。",
+  "solutionSteps": [
+    "確認資料有十二個月份的時間順序。",
+    "確認任務是觀察氣溫隨月份的變化趨勢。",
+    "比較各圖表用途：圓餅圖適合比例，單一數字無法表現趨勢。",
+    "判斷折線圖能依月份連接資料點並顯示升降。",
+    "選 A，檢查圖表同時保留月份與氣溫兩個軸。"
+  ]
 }

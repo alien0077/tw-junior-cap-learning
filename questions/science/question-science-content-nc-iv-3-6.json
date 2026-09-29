@@ -2,41 +2,84 @@
   "id": "question-science-content-nc-iv-3-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年10月6日河川觀測站的觀察中，針對「Nc-Ⅳ-3：化石燃料的形成與特性」提出可檢驗的科學問題，若比較 5 組、每組取樣 14 份資料，哪一項設計最適當？",
+  "prompt": "化石燃料燃燒時，哪個結論最完整？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Nc-Ⅳ-3：化石燃料的形成與特性」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "燃燒只產生能量沒有物質變化"
     },
     {
       "id": "B",
-      "text": "研究「Nc-Ⅳ-3：化石燃料的形成與特性」時只改變光照時間，其餘條件一致，設置5組、每組取樣14份並各重複測量4次"
+      "text": "只要火焰看不見煙就沒有排放"
     },
     {
       "id": "C",
-      "text": "研究「Nc-Ⅳ-3：化石燃料的形成與特性」時只測量5組中的一組就直接下結論"
+      "text": "會釋放可用能量，也可能產生二氧化碳；不完全燃燒或含硫成分還可能造成其他污染"
     },
     {
       "id": "D",
-      "text": "研究「Nc-Ⅳ-3：化石燃料的形成與特性」時先決定結論，再挑選支持結論的14筆資料"
+      "text": "二氧化碳不是燃燒產物"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-nc-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Nc-Ⅳ-3：化石燃料的形成與特性」。"
+    "value": "C",
+    "explanation": "燃燒是化學反應，能量釋放與物質生成同時存在；排放種類受燃料組成與燃燒是否完全影響。 正確答案為選項 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的化石燃料形成、物質特性、分餾、燃燒、排放、供應與能源決策能力方向；本題為 Nc-Ⅳ-3 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nc-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-nc-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "燃料、能源轉換、燃燒、環境影響與資料判讀",
+      "observedPattern": "取公立學校自然科對燃料特性、能源使用與環境資料的能力方向，另寫地質燃料案例。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "化學反應、能源、物質特性與圖表推理",
+      "observedPattern": "取公開會考對物質性質、能量與證據限制的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "化石燃料、燃燒、排放、資源與能源決策",
+      "observedPattern": "取公立學校自然科對燃料來源、燃燒與能源選擇的能力方向，重新設計題目。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開能量、反應物、產物和燃燒條件，不能用肉眼煙霧取代排放測量。",
+  "solutionSteps": [
+    "圈出有機物來源、沉積、氧氣、壓力、溫度或燃料組成線索。",
+    "區分形成條件、物質性質、加工分離、燃燒產物與能源決策。",
+    "依資料核對沸點、單位、供應鏈、排放、安全與不能外推的範圍。",
+    "排除把化石誤作恐龍、把混合物當純物質或把低排放說成零污染的選項，答案為 C。",
+    "用地質—物質—使用—限制鏈回查結論：燃燒是化學反應，能量釋放與物質生成同時存在；排放種類受燃料組成與燃燒是否完全影響。"
+  ]
 }

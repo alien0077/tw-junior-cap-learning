@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-11-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若要證明兩線段相等，哪項策略較合理？",
+  "prompt": "若要證明兩線段 AB 與 CD 相等，下列哪種策略較合理？",
   "options": [
     {
       "id": "A",
-      "text": "只看圖形外觀"
+      "text": "只看圖上兩段畫得一樣長"
     },
     {
       "id": "B",
-      "text": "找出各自等於同一線段或使用全等對應"
+      "text": "證明它們各等於同一個長度或由全等對應得到"
     },
     {
       "id": "C",
-      "text": "直接假設相等"
+      "text": "量一次尺就當作永遠成立"
     },
     {
       "id": "D",
-      "text": "只量其中一段"
+      "text": "直接把 AB＝CD 當作已知"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "可透過共同等量、全等三角形或其他已知性質建立等長關係。"
+    "explanation": "嚴格證明可透過共同等量或全等三角形的對應邊推出 AB＝CD，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 證明的意義 題型與官方課綱 KG kg-math-content-s-9-11",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供證明與推理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的證明能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-11"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "幾何證明的已知與求證、定理條件、直接推理、反例與量測證據界線",
+      "observedPattern": "公立學校公開數學試題常要求辨認條件與結論、選用定理、建立推理鏈及判讀反例是否足以否定全稱敘述；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "幾何證明的已知與求證、定理條件、直接推理、反例與量測證據界線",
+      "observedPattern": "公立學校公開數學試題常要求辨認條件與結論、選用定理、建立推理鏈及判讀反例是否足以否定全稱敘述；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "幾何證明的已知與求證、定理條件、直接推理、反例與量測證據界線",
+      "observedPattern": "公立學校公開數學試題常要求辨認條件與結論、選用定理、建立推理鏈及判讀反例是否足以否定全稱敘述；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "尋找能連接兩線段的定理或共同量，不以外觀或量測代替推理。",
+  "solutionSteps": [
+    "確認目標是 AB＝CD。",
+    "尋找與 AB、CD 都有關的已知量或圖形。",
+    "用等量代換或全等對應建立兩者關係。",
+    "寫出理由支持每個等號。",
+    "選 B。"
+  ]
 }

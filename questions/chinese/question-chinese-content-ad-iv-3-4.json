@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-iv-3-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "近體詩閱讀時觀察「對仗」與「押韻」，主要是為了理解什麼？",
+  "prompt": "作品分上下片，句子長短不一，並依固定詞牌安排句式與押韻；最適合的體裁判斷是？",
   "options": [
     {
       "id": "A",
-      "text": "詩的形式規律與音樂感"
+      "text": "律詩"
     },
     {
       "id": "B",
-      "text": "作者的身高"
+      "text": "詞"
     },
     {
       "id": "C",
-      "text": "故事的真實日期"
+      "text": "古體詩"
     },
     {
       "id": "D",
-      "text": "景物的價格"
+      "text": "散文"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "對仗與押韻是形式特徵，能協助掌握詩歌節奏與音樂感。"
+    "value": "B",
+    "explanation": "上下片、詞牌與長短句是詞的重要形式線索；押韻也需配合詞牌規範判讀。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-2%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%95%E9%87%8F%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
-    "sourceLocator": "近體詩形式判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究韻文、古體、樂府、近體、詞曲的形式證據與閱讀效果。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫古典韻文體式題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "韻文形式與詩歌理解",
+      "observedPattern": "公立學校國文評量要求依句式、押韻、對仗、詞牌、襯字與格律證據辨識古典韻文體式；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古典詩歌體式與閱讀判讀",
+      "observedPattern": "公立學校國文評量要求依句式、押韻、對仗、詞牌、襯字與格律證據辨識古典韻文體式；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找分片與詞牌，再觀察長短句及押韻，避免把所有押韻作品都歸為詩。",
+  "solutionSteps": [
+    "上下片表示作品有分段的曲調或格式安排。",
+    "詞牌規定句式、字數與押韻，能解釋長短句的組織。",
+    "B 同時符合形式與名稱證據。",
+    "A、C 不以詞牌分片為主要特徵，D 不是韻文體式。",
+    "將每片句式排列出來，確認不是八句固定字數的律詩。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

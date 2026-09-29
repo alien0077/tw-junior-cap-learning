@@ -2,23 +2,23 @@
   "id": "question-math-performance-n-iv-4-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "某班男生與女生人數比為 5：7，全班共 36 人，男生有幾人？",
+  "prompt": "某商品原價與特價的比為 5：4，原價 750 元時特價為何？",
   "options": [
     {
       "id": "A",
-      "text": "21 人"
+      "text": "500 元"
     },
     {
       "id": "B",
-      "text": "12 人"
+      "text": "550 元"
     },
     {
       "id": "C",
-      "text": "15 人"
+      "text": "600 元"
     },
     {
       "id": "D",
-      "text": "20 人"
+      "text": "650 元"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "總份數 5＋7＝12，每份 36÷12＝3 人，男生 5×3＝15 人。"
+    "explanation": "原價 5 份對應 750 元，每份 150 元；特價 4 份為 600 元，所以選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考比、比例、正比、反比、連比、比例尺與生活情境題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "比比例正反比與連比單元實質改寫；已重新計算最簡比、比例分配、正反比、連比、比例尺、單位換算與情境答案，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供比比例與正反比能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數與量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "比與比值、比例式、正比、反比、連比、地圖比例尺與分配情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常將比例放入地圖、分配、速度或數量關係，要求約分、列比例式、辨認正反比與轉換尺度；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "比與比值、比例式、正比、反比、連比、地圖比例尺與分配情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常將比例放入地圖、分配、速度或數量關係，要求約分、列比例式、辨認正反比與轉換尺度；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "比與比值、比例式、正比、反比、連比、地圖比例尺與分配情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常將比例放入地圖、分配、速度或數量關係，要求約分、列比例式、辨認正反比與轉換尺度；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把已知量除以比的對應份數，再乘上未知項份數。",
+  "solutionSteps": [
+    "原價：特價=5：4。",
+    "原價 5 份等於 750 元。",
+    "每份價值 750÷5=150 元。",
+    "特價 4 份為 4×150=600 元。",
+    "所以選 C。"
+  ]
 }

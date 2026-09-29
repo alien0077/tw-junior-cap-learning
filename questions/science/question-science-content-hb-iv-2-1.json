@@ -2,23 +2,23 @@
   "id": "question-science-content-hb-iv-2-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年3月1日河川觀測站的觀察中，針對「Hb-Ⅳ-2：地層與地質事件的先後順序」提出可檢驗的科學問題，若比較 3 組、每組取樣 9 份資料，哪一項設計最適當？",
+  "prompt": "未受擾動沉積岩層中，下列哪項通常較老？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Hb-Ⅳ-2：地層與地質事件的先後順序」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "較下方的地層"
     },
     {
       "id": "B",
-      "text": "研究「Hb-Ⅳ-2：地層與地質事件的先後順序」時只改變溶液濃度，其餘條件一致，設置3組、每組取樣9份並各重複測量3次"
+      "text": "較上方的地層"
     },
     {
       "id": "C",
-      "text": "研究「Hb-Ⅳ-2：地層與地質事件的先後順序」時只測量3組中的一組就直接下結論"
+      "text": "所有地層同年"
     },
     {
       "id": "D",
-      "text": "研究「Hb-Ⅳ-2：地層與地質事件的先後順序」時先決定結論，再挑選支持結論的9筆資料"
+      "text": "只看岩石顏色"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Hb-Ⅳ-2：地層與地質事件的先後順序」。"
+    "value": "A",
+    "explanation": "沉積物通常先下後上堆積，在未受擾動條件下下老上新。 正確答案為選項 A：「較下方的地層」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的地層、交切、侵入、構造、定年及事件排序能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Hb-Ⅳ-2 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-hb-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-hb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "地層、侵入、斷層、褶皺與事件排序",
+      "pattern": "取由疊積、交切、侵蝕、覆蓋和定年資料排序地質事件的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由疊積、交切、侵蝕、覆蓋和定年資料排序地質事件的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認未受擾動，再使用地層疊覆律。",
+  "solutionSteps": [
+    "定位概念：圈出 Hb-Ⅳ-2 的地層關係、交切、侵蝕、侵入或變形事件。",
+    "整理證據：將被切穿、覆蓋、變形與沉積關係轉成先後限制。",
+    "套用原理：沉積物通常先下後上堆積，在未受擾動條件下下老上新。",
+    "排除干擾：檢查疊覆律適用前提與多重證據，正確選項是「較下方的地層」。",
+    "最後回查：答案「較下方的地層」符合題幹，沒有忽略地層倒轉或不整合等條件。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

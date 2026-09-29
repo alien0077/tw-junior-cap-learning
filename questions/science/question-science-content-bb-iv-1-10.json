@@ -2,23 +2,23 @@
   "id": "question-science-content-bb-iv-1-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月30日社區環境站的觀察中，將 87℃ 的金屬片放入 34℃ 的水中，研究「Bb-Ⅳ-1：熱由高溫處傳向低溫處」時，最初的熱傳方向為何？",
+  "prompt": "冰塊放在室溫桌面上會融化，最完整的說法是？",
   "options": [
     {
       "id": "A",
-      "text": "由 34℃ 的水傳向 87℃ 金屬片"
+      "text": "周圍溫度較高，熱由周圍傳入冰塊；融化期間吸收潛熱"
     },
     {
       "id": "B",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "冰塊把冷量傳給室內，自己因此融化"
     },
     {
       "id": "C",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "融化一定是放熱過程"
     },
     {
       "id": "D",
-      "text": "由金屬片傳向水"
+      "text": "冰塊融化時完全沒有能量轉移"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 87℃ 金屬片傳向 34℃ 的水。 本題對應 KG「Bb-Ⅳ-1：熱由高溫處傳向低溫處」。"
+    "value": "A",
+    "explanation": "室溫高於冰塊，熱由周圍傳入冰塊；相變需要吸收熔化潛熱，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的熱傳遞、溫差與熱平衡能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bb-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bb-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "熱傳遞方向、傳導、對流、輻射與溫度資料判讀",
+      "pattern": "取由溫差、介質與熱傳方式推論能量傳遞方向的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫差、介質與熱傳方式推論能量傳遞方向的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷熱流方向，再區分升溫所需熱量與相變潛熱。",
+  "solutionSteps": [
+    "比較室溫與冰塊溫度。",
+    "熱由高溫周圍傳向低溫冰塊。",
+    "冰塊吸收能量後晶體結構改變。",
+    "融化階段能量主要用於相變，不必全部表現為升溫。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -1,0 +1,148 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-chinese-learning-performance
+  knowledgeGraphIds:
+  - kg-chinese-learning-performance
+  title: 學習表現
+  subject: chinese
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 學習表現
+    curriculumIntent: 國語文學習表現
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 三份材料均為版本標示之公校課程計畫，只能支撐校本課程結構、任務與評量的有限比較；不可當作出版社課本章節。lesson 聚焦本總綱節點的代碼解讀與表現證據設計，publisher textbook evidence 保持 pending。
+    currentEvidenceStatus: official-curriculum-and-kg-read; three-version-labelled-public-school-plans-read-with-limits; original-umbrella-lesson-authored; publisher-textbook-chapter-evidence-pending; final-lesson-review-owned-by-user-chatgpt
+  learningGoals:
+  - 解讀國語文學習表現代碼的類別、階段與細目，並回到細目文字確認目標行動
+  - 將一項表現描述整理為動作、對象／條件、品質及可觀察證據
+  - 判斷教學任務與評量是否要求並呈現同一核心語文行動
+  - 閱讀個別化課程調整時，分清原目標、調整條件與採用的證據
+  prerequisites:
+  - 能讀懂國語文學習表現代碼及一段短課程描述
+  - 能指出一項任務要求學生完成的主要動作
+  coreConcepts:
+  - 國語文學習表現六類與代碼結構
+  - 表現動作—文本／條件—品質—證據的對齊
+  - 學習活動與評量是否真的測到目標行動
+  - 個別化支持、作答條件與目標要求的區分
+  misconceptions:
+  - 把第一碼當成完整目標，未讀後面的細目文字
+  - 把背出課綱用語或記住文本標題當成已展現所要求的能力
+  - 任務與評量只測容易計分的知識，卻未要求目標行動
+  - 把一份資源班的簡化／減量個案推廣成所有學生都適用的目標
+  contentFlow:
+  - 'predict: 從校刊整理讀者意見任務預測學生必須做出的國語文行動及可觀察成果'
+  - 'manipulate: 解析代碼類別、階段與細目，把行動拆成對象／條件、品質及證據欄位'
+  - 'observe: 比對目標、學生任務與評量產物，檢視作品是否真的呈現目標行動，並區分個案支持條件'
+  - 'explain: 引用細目文字和學生作品證據說明對齊或錯位，不把背誦術語當成能力證據'
+  - 'transfer: 將對齊檢查用於公告比較及多媒介表達的新任務，提出相符的目標、活動與評量證據'
+  - 'reflect: 檢查證據來源、目標一致性及個案資料的泛化限制'
+  visualizations:
+  - 正文用代碼分解與「目標—任務—證據」文字對照呈現；不宣稱有動態圖表或同步操作視覺化。
+  - 任務證據須以文字說明其對應目標；顏色不得是唯一線索。
+  interactiveBlocks:
+  - id: CUR-CHINESE-LEARNING-PERFORMANCE-I01
+    component: GuidedChoiceBlock
+    purpose: 讓學生辨識指標類別、挑選足以呈現表現行動的證據，並診斷目標與評量錯位
+    initialState:
+      mode: stepwise-choice
+      showAnswer: false
+      currentStep: 0
+    studentActions:
+    - 依次回答五個單選情境，選擇代碼類別或最匹配目標的作品證據；最後一題作為可見出口檢核
+    - 錯答時閱讀該步提示後重選；答對才進入下一步
+    - 完成後回看解析，說明選擇如何連到表現動作
+    visualRules:
+    - 題幹、三個選項、答案回饋與重試提示以文字呈現，不依賴色彩傳意
+    - 鍵盤可啟用每個選項，狀態不得只靠顏色表達
+    - 手機版選項與回饋須換行，不裁切題幹或可讀答案理由
+    misconceptionChecks:
+    - id: MC-CUR-CHINESE-LEARNING-PERFORMANCE-I01
+      trigger: 把代碼背誦、標題辨認或單一樣本當成目標行動的證據
+      prompt: 請指出任務產物呈現了哪個動作，以及它根據哪些可定位材料。
+      expectedEvidence: 能把目標行動連到作品中可追溯的材料與推理，不只複述代碼。
+    feedback:
+      correct: 說明該選項如何對準表現動作，並提示學生用下一情境再比對一次。
+      incorrect: 先給與目標動詞或證據來源有關的一階提示；學生重試後才顯示本題理由，不宣稱有動態變項或拖曳操作。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "僅參考可及性與漸進回饋設計；本課實作為 GuidedChoiceBlock，無預測滑桿或同步圖表。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "僅參考活動指引與逐步支援；不宣稱複製 PhET 操作模型。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "互動控制與狀態須具語意、鍵盤可用，並以文字提供回饋。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "頁面以正確標題與互動區塊提供導覽；本課以既有 GuidedChoice 呈現。"
+  capTransfer:
+    questionType: 課綱代碼解讀／任務與評量對齊／證據來源辨識
+    stemConstraint: 使用新編校園公告或讀者回饋情境；保留判斷學習表現與可觀察證據的能力，不複製公開計畫題文
+    requiredResponse: 選答後以一句話說明所選證據如何對應指標中的行動
+    scoring: 類別或目標辨識正確 1、證據與行動對應 1、說明無不當泛化 1
+  exitTicket:
+    prompt: 社區要比較兩張活動海報的目的與受眾。選出同時要求目標行動和可檢查證據的任務卡。
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字替校刊任務擬定一項學習目標、活動及相符的評量證據。
+    constraint: 三者須呈現同一個目標動詞；指出若改用不相干的記憶題會造成何種錯位。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個選項是具可辨識名稱的按鈕，以 aria-pressed 呈現目前選取狀態；正解解析與重試提示透過 polite live region 宣告
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 互動載入時五題答案不得以預選或顯示狀態洩漏；錯選需出現對應 retryHint，正解需出現該題解釋。
+  - 以鍵盤逐題操作五步 GuidedChoice 時，能完成 5-Ⅳ-2 代碼辨識、證據配對、目標／評量對齊、個案調整界線及新情境出口檢核。
+  - 在 320px、375px 與 768px 視窗檢查正文六段、五步題幹／選項／回饋完整可讀且無水平溢位。
+  - 無外部資料請求時，本課內容與五步互動仍可完整載入。
+  - fallback：外部課綱連結或模擬腳本不可用時，以本課內嵌代碼例、任務與作品資料完成五步；明示外部來源未連線，不假稱即時查核。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 正文稿件、來源界線及互動描述已登記；lesson 最終內容審查由使用者另交 ChatGPT，不屬 Codex 完成 gate
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf
+    locator: 目次：伍、學習重點／一、學習表現
+    role: official-curriculum-source-of-truth
+  - url: https://course.cyc.edu.tw/upfile/course109/sub1/14536054569425830.pdf
+    locator: 永慶國中109學年度七年級第一學期南一版計畫，PDF pp.0-1；校方課程設計，不是南一出版社課本。
+    role: public-school-version-labelled-plan-limited-teaching-evidence
+  - url: https://w3.qnm.kh.edu.tw/curriculum/111/plan/%E7%89%B9%E6%95%99%E7%8F%AD/%E8%B3%87%E6%BA%90%E7%8F%AD/%E8%B3%87%E6%BA%90%E7%8F%AD-%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB-%E5%9C%8B%E6%96%871B.pdf
+    locator: 高雄市公立資源班111學年度康軒版計畫，PDF pp.0-2；特殊教育校本設計，不是康軒出版社課本。
+    role: public-school-version-labelled-plan-limited-teaching-evidence
+  - url: https://www.curriculum.chc.edu.tw/storage/164/110/5-7-%E5%9C%8B%E8%AA%9E%E6%96%87.pdf/Go8bL8272DkbZSBkIKB7cjbselE8qpVsFtUIUjGh.pdf
+    locator: 彰化縣公立國中110學年度七年級翰林版計畫，PDF pp.0-1、4；校方課程設計，不是翰林出版社課本。
+    role: public-school-version-labelled-plan-limited-teaching-evidence

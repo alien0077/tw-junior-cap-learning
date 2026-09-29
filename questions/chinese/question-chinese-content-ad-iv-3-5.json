@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-iv-3-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "詞與曲常有曲牌或詞牌名稱，閱讀時最不宜直接據此推論什麼？",
+  "prompt": "散曲句式長短不齊，部分句子加入不影響基本文意但增加口語節奏的襯字；此線索較支持？",
   "options": [
     {
       "id": "A",
-      "text": "作者當時的心情一定歡樂"
+      "text": "詞"
     },
     {
       "id": "B",
-      "text": "作品所屬的形式類型"
+      "text": "散曲"
     },
     {
       "id": "C",
-      "text": "作品的格律可能受規範"
+      "text": "律詩"
     },
     {
       "id": "D",
-      "text": "題目提供的形式線索"
+      "text": "駢文"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "詞牌、曲牌可提供形式線索，但不能單獨決定作品情感。"
+    "value": "B",
+    "explanation": "散曲可有長短句與襯字，襯字增加口語節奏而不屬基本曲牌格局，是重要形式線索。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.kusjh.kh.edu.tw/upload/files/111%E4%B8%8A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E5%9C%8B%E4%B8%AD%E4%BA%8C%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
-    "sourceLocator": "詞曲形式與情感判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究韻文、古體、樂府、近體、詞曲的形式證據與閱讀效果。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫古典韻文體式題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "韻文形式與詩歌理解",
+      "observedPattern": "公立學校國文評量要求依句式、押韻、對仗、詞牌、襯字與格律證據辨識古典韻文體式；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古典詩歌體式與閱讀判讀",
+      "observedPattern": "公立學校國文評量要求依句式、押韻、對仗、詞牌、襯字與格律證據辨識古典韻文體式；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認襯字是否為曲牌外的口語增添，再和詞牌、律詩的固定形式比較。",
+  "solutionSteps": [
+    "找出長短句與不影響核心語意的附加字。",
+    "襯字和口語節奏是散曲常見的形式提示。",
+    "B 能解釋句式彈性與襯字功能。",
+    "A、C、D 的主要形式條件不同，不能只看有無押韻。",
+    "刪去襯字後朗讀，確認基本句意仍在但節奏改變。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

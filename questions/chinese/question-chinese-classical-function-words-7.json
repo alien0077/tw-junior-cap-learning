@@ -2,23 +2,23 @@
   "id": "question-chinese-classical-function-words-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "虛字判斷不能只看？",
+  "prompt": "「陳涉者，陽城人也」中的「者」主要有何作用？",
   "options": [
     {
       "id": "A",
-      "text": "現代常用義"
+      "text": "表示動作正在進行"
     },
     {
       "id": "B",
-      "text": "句法位置"
+      "text": "表示轉折『但是』"
     },
     {
       "id": "C",
-      "text": "前後關係"
+      "text": "代替陽城這個地名"
     },
     {
       "id": "D",
-      "text": "句意"
+      "text": "放在主語後使『陳涉』成為判斷句的主題"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的語境、結構與功能線索判斷；其他選項不符合題幹條件。"
+    "value": "D",
+    "explanation": "「者……也」構成判斷句，者把陳涉提出為說明對象，後面再交代籍貫。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-classical-function-words-7.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究文言虛字、句法、古今義與語境判讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫文言虛字題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-classical-function-words"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-classical-function-words",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言字詞、虛字與語境判讀",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言句法、古今義與閱讀理解",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看到固定格式時先辨認句型，再判斷虛字是名詞化、時間、轉折或代指。",
+  "solutionSteps": [
+    "圈出『者……也』的前後框架。",
+    "確認後半句是在說明陳涉是陽城人。",
+    "判斷者的功能是提出主題而非表示動作時態。",
+    "選擇判斷句主題功能的 A。",
+    "用『陳涉，是陽城人』改寫，確認句型功能仍保留。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

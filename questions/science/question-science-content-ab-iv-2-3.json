@@ -2,23 +2,23 @@
   "id": "question-science-content-ab-iv-2-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月20日校園實驗室的觀察中，將 71℃ 的金屬片放入 22℃ 的水中，研究「Ab-Ⅳ-2：溫度與物質狀態」時，最初的熱傳方向為何？",
+  "prompt": "下列哪項正確區分溫度與熱量？",
   "options": [
     {
       "id": "A",
-      "text": "由 22℃ 的水傳向 71℃ 金屬片"
+      "text": "溫度反映粒子平均動能；熱量是因溫差轉移的能量"
     },
     {
       "id": "B",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "溫度就是物體含有的總熱量"
     },
     {
       "id": "C",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "熱量只能由低溫物體傳向高溫物體"
     },
     {
       "id": "D",
-      "text": "由金屬片傳向水"
+      "text": "同溫度的兩物體一定含有相同熱量"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 71℃ 金屬片傳向 22℃ 的水。 本題對應 KG「Ab-Ⅳ-2：溫度與物質狀態」。"
+    "value": "A",
+    "explanation": "溫度與粒子平均動能相關；熱量是因溫差而傳遞的能量，會受質量、材質與溫度變化影響，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；粒子模型與溫度題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的溫度、熱量、相變與生活應用能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "溫度、熱量、相變與生活情境判讀",
+      "pattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把溫度視為狀態量的指標，再把熱量視為能量傳遞過程，不用日常語言互換。",
+  "solutionSteps": [
+    "辨認溫度描述粒子平均動能的程度。",
+    "辨認熱量描述因溫差而發生的能量轉移。",
+    "檢查選項是否把熱量當成物體固定擁有的物質。",
+    "排除熱由低溫到高溫及同溫必同能量的錯誤。",
+    "因此選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

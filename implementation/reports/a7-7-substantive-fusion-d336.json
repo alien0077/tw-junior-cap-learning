@@ -1,0 +1,74 @@
+{
+  "id": "D-336",
+  "date": "2026-09-27",
+  "unit": "A-7-7：一元一次不等式的意義",
+  "status": "original-source-informed-fusion-draft; publication-gates-pending",
+  "sources": [
+    {
+      "publisherLabel": "南一",
+      "url": "https://www.scribd.com/document/932850305/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E4%B8%83%E4%B8%8B",
+      "locator": "Scribd search-index excerpt, file pp.112–114; definition and word-to-symbol focus",
+      "readLimit": "Full page load failed; partial indexed OCR only",
+      "publisherAuthenticated": false,
+      "rightsVerified": false
+    },
+    {
+      "publisherLabel": "康軒",
+      "url": "https://www.scribd.com/document/777687263/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%BA%B7%E8%BB%92%E7%89%88-%E4%B8%83%E4%B8%8B",
+      "locator": "Scribd indexed/readable excerpt around file pp.96–104; candidate substitution, solution membership, number-line range; uploader brenda0980977572; All Rights Reserved",
+      "publisherAuthenticated": false,
+      "rightsVerified": false
+    },
+    {
+      "publisherLabel": "翰林",
+      "url": "https://www.scribd.com/document/853353478/B2%E5%9F%BA%E7%A4%8EB%E7%BF%B0%E6%9E%97%E7%89%88%E5%85%A81121224%E5%9D%87%E4%B8%80",
+      "locator": "Scribd search-index excerpt, file pp.103–106; single-/double-bound number lines and graph-to-symbol reading",
+      "publisherAuthenticated": false,
+      "rightsVerified": false
+    }
+  ],
+  "fusionTrace": [
+    {
+      "sourceDifference": "Nani-labeled excerpt emphasizes comparison language and defining the inequality form",
+      "originalLessonLocations": ["content.sections[0]", "content.sections[1]"],
+      "originalTeachingDecision": "Open with boundary-language contrast, then define the relation before working with a set"
+    },
+    {
+      "sourceDifference": "Kanghsuan-labeled material uses substitution of candidate values to decide whether a value satisfies the relation",
+      "originalLessonLocations": ["content.sections[2]", "content.sections[5]"],
+      "originalTeachingDecision": "Define a solution by truth of the original condition; test boundary, interior, and exterior values without teaching A-7-8 algebraic solving"
+    },
+    {
+      "sourceDifference": "Hanlin-labeled material foregrounds endpoint type, direction/range, and reading a graph back into notation",
+      "originalLessonLocations": ["content.sections[3]", "interactive", "simulation.learningDesign.steps[3]"],
+      "originalTeachingDecision": "Make the number line a bidirectional representation; use an original bounded temperature interval and separate endpoint inclusion from direction"
+    }
+  ],
+  "originalAuthorship": {
+    "visibleSections": 6,
+    "workedContext": "original continuous temperature interval 18≤T<26; no source example, wording, answer, or graphic reused",
+    "transfer": "original discrete seating constraint, explicitly distinguished from the algebraic solution set",
+    "scopeBoundary": "Definition, solution membership, solution set, and number-line representation only; inequality-solving algorithms deferred to A-7-8"
+  },
+  "runtime": {
+    "engine": "math-inequality-range",
+    "controls": ["four relation-word buttons", "boundary slider", "boundary/interior/exterior truth readout"],
+    "keyboardFocusRegression": "An initial real-browser run exposed focus loss after slider rerender; runtime now restores focus to the updated control",
+    "browserSmoke": "PASS: 1,027/1,027 workbench traversal; A-7-7 relation toggle, keyboard slider, accessible SVG label, and 320/375/768px layout passed",
+    "axe": "PASS: 27 runs; 0 violations; 0 incomplete"
+  },
+  "validation": {
+    "targetRegression": "PASS",
+    "npmTest": "PASS",
+    "dataSchema": "PASS: 14,459 JSON files; 13,111 IDs; 1,032 KG nodes",
+    "implementationSpecs": "PASS: 1,027 files; 0 errors; 1,027 pending",
+    "strictLessonIndependence": "PASS: 614 lessons; 0 risks; 0 strict failures",
+    "siteIndexAndShards": "PASS: 1,052 lessons; 10,566 questions; 40 mapping sets",
+    "gitDiffCheck": "PASS"
+  },
+  "unmetGates": [
+    "Publisher authenticity, complete chapter reading, and third-party rights remain unverified; all three publisher evidence slots remain pending",
+    "Lesson stays draft; spec qaStatus stays untested; independent content/pedagogical and rights review remain pending",
+    "This unit-scoped work does not complete the whole implementation guide; no commit or push made"
+  ]
+}

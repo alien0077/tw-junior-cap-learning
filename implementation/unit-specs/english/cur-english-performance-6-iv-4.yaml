@@ -1,0 +1,146 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-6-iv-4
+  knowledgeGraphIds:
+  - kg-english-performance-6-iv-4
+  title: 6-Ⅳ-4：接觸課外多元素材
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 6-Ⅳ-4：接觸課外多元素材
+    curriculumIntent: 嘗試教師推薦的課外英語媒材、主動選擇有興趣的素材、遇到不懂處尋求解答，並在接觸後分享；不等同於單純查字典（6-Ⅳ-5）。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依課綱與KG原創重組；版本材料只在有可讀、可定位證據時納入，校本教案不得冒稱出版社教法；未取得的出版社單元內容明列未知。
+    currentEvidenceStatus: curriculum-and-kg-grounded; hanlin-and-kanghsuan-labelled-school-example-only; nani-unverified; publisher-chapter-text-pending
+  learningGoals:
+  - 依興趣、可理解度及合法可回訪性選一項課外英文素材
+  - 依歌曲、漫畫、短片或文章媒介特性使用不同線索理解大意與細節
+  - 區分直接觀察、合理推論及仍未知的資訊
+  - 將不理解處轉成精確問題，借助可信來源／他人求解並回原材料驗證
+  - 以自己的話分享發現或疑問，標示來源且不散布受保護全文
+  prerequisites:
+  - 能理解常見英語指示、簡短句子及基本情境詞彙
+  - 能描述圖片、字幕、對白或文章中一項可見線索
+  coreConcepts:
+  - 課外英語素材接觸的興趣、自主選擇、求解與分享
+  - 媒介特定線索：漫畫格序／表情／對白、歌曲聲音／重複語、影片人物／事件／字幕、文章句間關係
+  - 大意先行、帶問題重訪與直接觀察／推論／未知的區分
+  - 精確求助、回到語境驗證及尊重著作權的分享
+  misconceptions:
+  - 以為每種媒介都要逐字翻譯，忽視畫面、格序、聲音或篇章線索
+  - 把第一次猜到的大意當成確定事實，未回看核對
+  - 以為不懂就應放棄，或反過來只貼全文交給翻譯工具
+  - 把搜尋到答案當成理解，沒有回到上下文驗證
+  - 誤以為分享必須轉傳整篇課文、歌詞、漫畫或影音
+  contentFlow:
+  - 'predict: 依興趣、難度與可合法回訪的素材，先預測人物、主題或事件大意'
+  - 'manipulate: 依漫畫／影片／歌曲／文章媒介挑問題，再回訪特定格序、字幕、聲音或句間線索'
+  - 'observe: 將直接觀察、可能推論與尚未知分欄，檢查首次大意是否被新線索支持'
+  - 'explain: 描述卡點並指出證據，選可信工具或同伴求助後回到原語境核實，不以搜尋結果取代理解'
+  - 'transfer: 以個人摘要、觀察或問題分享理解，尊重著作權且不轉傳完整受保護素材'
+  - 'reflect: 檢查媒介策略是否有效及下次要追問什麼'
+  visualizations:
+  - 以原創漫畫三格事件的格序、人物表情、對白和事件線索並列，文字等效呈現線索
+  - 顯示「直接看見／可能推論／尚未知」三欄，避免把推論視為作者明示
+  - 每個媒介練習均提供純文字替代；不依賴顏色、聲音或外部影片才可完成
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-6-IV-4-I01
+    component: GuidedChoiceBlock
+    purpose: 以本課原創媒介探索情境練習選材、線索判讀、求解及合乎界線的分享
+    initialState:
+      mode: guided-choice
+      showAnswer: false
+      selectedEvidence: []
+    studentActions:
+    - 逐題閱讀媒介情境，選擇最符合課程策略的作法
+    - 錯答先保留本題並顯示單題提示，可重新選擇
+    - 答對後顯示答案及與材料線索相連的理由
+    - 以鍵盤完成所有選項，不依賴影音或外部連線
+    visualRules:
+    - 正解揭露前不顯示答案；錯答提示不直接代答
+    - 每題回饋必須指出可核對的媒介線索或課程原則
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切題幹、選項、提示與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-6-IV-4-I01
+      trigger: 把漫畫中「可能忘帶傘」誤當成直接呈現的事實
+      prompt: 哪些線索是畫面／對白直接給出的？忘帶傘有被明說嗎？
+      expectedEvidence: 能指出濕海報／外套、人物提問或公車資訊，並承認忘帶傘仍是推論
+    feedback:
+      correct: 指出學生區分了觀察與推論，並要求將此方式用於另一種媒介。
+      incorrect: 先提醒回看對白／格序等定位線索，不直接告知答案；保留重試，答對後再解釋推論界線。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 GuidedChoice 只採用清楚分步、可重試及提供理由的互動原則；所有情境、文字、線索與答案由本課原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課 GuidedChoice 只採用清楚分步、可重試及提供理由的互動原則；所有情境、文字、線索與答案由本課原創。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "每一步和狀態回饋提供可理解名稱及鍵盤操作；不以顏色作唯一提示，也不以動態效果作答題條件。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "學生可由標題／區域結構定位正文、步驟與回饋；本單元全部學習內容可在本地完成，不仰賴外部資源載入。"
+  capTransfer:
+    questionType: 媒介線索判讀／觀察與推論區分／理解策略遷移
+    stemConstraint: 使用自編且不依賴外部版權材料的短情境；測試媒介策略、求解或分享，不複製公開來源原題
+    requiredResponse: 回答須指出媒介線索、求解步驟或授權界線
+    scoring: 理解策略適切 1、線索／理由對應 1、推論限制或來源界線表達 1
+  exitTicket:
+    prompt: 請挑一個英文媒材，寫下你要弄懂的問題、會使用的線索和遇到卡點時的求助方式。
+    successCriteria:
+    - 媒材選擇符合興趣且目前可進入
+    - 問題能指向一段文字、畫面、聲音或篇章線索
+    - 說明求助後如何回到原材料檢驗
+  expressionExtension:
+    applicable: true
+    task: 以 2–3 句英文摘要一項媒材觀察，另以中文標示一個尚未解決的問題及來源
+    constraint: 只引用自己的摘要與必要的短片語；不得貼出整段歌詞、漫畫、文章或逐字稿；學生先寫，系統只給理解線索回饋
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入課程後顯示六段本課專屬正文，標題與正文資料不可重複渲染；正文包含媒介策略、微型漫畫及求解示例。
+  - GuidedChoice 初始不揭露答案；每題錯答出現專屬提示、允許重試，答對後顯示含證據的回饋。
+  - 錯答若將推論當事實，提示必須指向格序／對白線索但不直接代答；可再次作答並得到正確解析。
+  - 在 320、375、768px 以鍵盤完成四步活動，題幹、選項、提示及回饋均可見且無水平溢位。
+  - 外網請求被封鎖時正文、互動與回答仍可完成；不得因未載入第三方媒體而阻塞學習。
+  - Fallback：刻意阻擋 simulations.js 後，本地六段教材與四步媒介判讀互動仍須鍵盤完成並可錯答重試、讀取解析。
+  - 依課綱、KG、版本定位和融合紀錄可追溯來源界線；不得把校本教案宣稱為出版社章節或出版社教法。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 自編教材、互動和自動化測試無泛用 placeholder；最終內容審查依使用者指示由 ChatGPT 執行，不列為 Codex gate
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 6-Ⅳ-4
+    role: official-curriculum-source-of-truth

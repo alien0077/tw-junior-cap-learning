@@ -47,7 +47,7 @@
       "publisher": "nani",
       "edition": "均一教育平台「類南一版」七年級公開章節架構（113）",
       "sourceType": "local-download",
-      "sourceLocator": "/private/tmp/tw-junior-version-sources-20260829/math-junyi.html；公開頁明示依南一版教科書章節架構編排，七上列出「整數運算與科學記號」與「因數分解與分數運算」。",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；/private/tmp/tw-junior-version-sources-20260829/math-junyi.html；公開頁明示依南一版教科書章節架構編排，七上列出「整數運算與科學記號」與「因數分解與分數運算」。",
       "reviewedAt": "2026-08-29",
       "findings": {
         "concepts": [
@@ -73,7 +73,7 @@
       "publisher": "kanghsuan",
       "edition": "康軒國中數學影音高手公開 XML 章節索引（115）",
       "sourceType": "local-download",
-      "sourceLocator": "/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml；textbook-mapping/math/kanghsuan-chapters.json，定位負數與數線、整數加減、整數乘除與四則、分數四則。",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml；textbook-mapping/math/kanghsuan-chapters.json，定位負數與數線、整數加減、整數乘除與四則、分數四則。",
       "reviewedAt": "2026-08-29",
       "findings": {
         "concepts": [
@@ -99,7 +99,7 @@
       "publisher": "hanlin",
       "edition": "翰林國中數學解題影音網公開章節索引（115）",
       "sourceType": "local-download",
-      "sourceLocator": "/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html；textbook-mapping/math/hanlin-official-2026.json，1A 公開索引定位正負數、正負數加減、正負數乘除與分數四則。",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html；textbook-mapping/math/hanlin-official-2026.json，1A 公開索引定位正負數、正負數加減、正負數乘除與分數四則。",
       "reviewedAt": "2026-08-29",
       "findings": {
         "concepts": [
@@ -120,6 +120,33 @@
         ]
       },
       "licenseBoundary": "本機快取僅供閱讀公開索引與章節定位；不保存、重製或改編翰林影音、教材、例題或答案，成品皆為原創。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林版國中數學七年級公開校方課程計畫交叉證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nkjh.tyc.edu.tw/sites/default/files/2021-04/%E2%97%8F6-2-3%E6%95%B8%E5%AD%B8.pdf；PDF p.1 lines 68-69",
+      "reviewedAt": "2026-09-07",
+      "findings": {
+        "concepts": [
+          "N-7-3：負數與四則混合運算 的學習範圍與課程定位",
+          "用正負表徵生活量，再進入含分數、小數的四則混合運算。",
+          "此為學校課程計畫的範圍與順序證據，不等同完整出版社章節。"
+        ],
+        "representations": [
+          "依單元的符號、圖形、數線、資料表徵或情境列式進行原創融合。"
+        ],
+        "examplesOrEvidence": [
+          "南崁國中公開課程計畫列出學習內容、目標、評量與教材資源；本 lesson 不複製其教材或題目。"
+        ],
+        "misconceptions": [
+          "公開課程計畫不能單獨證明學生已理解，也不能替代本單元的內容審查。"
+        ],
+        "assessmentEmphasis": [
+          "計畫列出的紙筆、小組討論、口頭回答與作業僅作為評量線索。"
+        ]
+      },
+      "licenseBoundary": "僅保存公立學校公開課程計畫的 URL、頁碼與概念定位；不複製出版社教材、學習單、題目、答案、圖片或版面，lesson 維持 draft。"
     }
   ],
   "fusionRecord": {
@@ -140,52 +167,55 @@
   },
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "均一教育平台「類南一版」七年級公開章節架構",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "七上第一章「整數運算與科學記號」；第二章「因數分解與分數運算」",
-      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
+      "chapterLocator": "梅山國中 109 學年度七年級第一學期數學教學計畫；翰林版第一冊，N-7-3 負數與四則混合運算及生活情境／評量欄位；同計畫的數與量範圍涵蓋 N-7-1／N-7-2；N-7-3：負數與數的四則混合運算 的概念、表徵與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://course.cyc.edu.tw/upfile/course109/sub1/14535426987992584.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
+        "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開頁明示依南一版章節架構編排，章節先涵蓋整數運算、再涵蓋分數運算；本課以帶號數判讀、運算層級與分數小數等值檢查重新安排原創教學。",
-      "copyrightBoundary": "只研究公開章節定位與概念順序；本課正文、結算情境、例題、選項、提示與回饋均獨立撰寫，不複製教材文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「N-7-3：負數與數的四則混合運算」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中數學影音高手公開 XML",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "1-1 負數與數線、1-2 整數的加減、1-3 整數的乘除與四則運算、2-3 分數的四則運算",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "chapterLocator": "金山國中 113 學年度七年級第一學期部定課程計畫；康軒版第一冊 N-7-1／N-7-2 範圍及評量欄位，並連接負數與四則運算；N-7-3：負數與數的四則混合運算 的概念、表徵與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.cshs.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=823&file=WVhSMFlXTm9MelEwTDNCMFlWOHhOamcxT0Y4ME9EYzFOamN5WHpRd01UWTRMbkJrWmc9PQ%3D%3D&fname=0054RPA0IC44VXMPED04ROGDVW30B4ICQOQK4020UT0510TSYSA4YS54WWECTTOKVWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNP10XX21JCLKSWIGQOB4SWHCUS30A110",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
+        "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開索引將帶號數、整數運算與分數運算分段定位；本課改用運算樹與取消負紀錄的結算單，檢查乘除優先及減去負數。",
-      "copyrightBoundary": "只研究公開章節索引與教學概念範圍；不下載、重製或改編康軒教材、影音、題目或答案，所有案例與回饋均為原創。"
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「N-7-3：負數與數的四則混合運算」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學解題影音網公開章節索引",
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "1-1 正數與負數、1-2 正負數的加減、1-3 正負數的乘除、2-3 分數的四則運算",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "淡水國中 114 學年度七年級第一學期部定課程計畫；南一版 N-7-1／N-7-2／N-7-3 學習內容、章節與評量欄位；N-7-3：負數與數的四則混合運算 的概念、表徵與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mekk0TDNCMFlWOHhNakU0Tmw4ek16a3pPVGs0WHpJM01qZzRMbkJrWmc9PQ%3D%3D&fname=WSGGRPQK20QO41KKLOLK54TXXSMO25JGKLB0DCNKCCQLOO40QKTSST54WSLKUSSSROPOIHKK2004GDLOQONKTSMOOPB0FHMPQPMPNOTSUWZWWXVWFH10YWFCSSWUX25HCA0UWIGVWKO40XSUSB040MPTXGDTWA0ZWUSOPTWFGTS45QKNOKK21HHDGB0JC24KK14WTIGYSEG14WSMLID30B514YWRKA434DCDGA0WWQOPP1000ZSIGMOIGDGJDLO",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
+        "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開索引將符號判讀、加減、乘除與分數四則分別定位；本課以小數估計和分數等值式雙重回查，讓答案正負與大小可被檢驗。",
-      "copyrightBoundary": "只研究公開章節定位與概念順序；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製翰林文字、圖片、題目、影音或答案。"
+      "outcome": "記錄nani公立校方或官方公開結構對「N-7-3：負數與數的四則混合運算」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -287,6 +317,17 @@
         ],
         "answer": "A",
         "feedback": "統一分母後是 (−74−20＋3)/4=−91/4；等值回查同時檢查符號與小數換分數。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "稽核另一筆結算：−6−2×(−3)＋(−4)÷2；哪個結果保留運算順序與帶號規則？",
+        "options": [
+          "先算乘除得 −6−(−6)＋(−2)=−2，再逐項相加減",
+          "由左至右先算 −6−2=−8，再乘以 −3，得到與原式相同",
+          "把所有負號消掉，因為負數相減一定變正"
+        ],
+        "answer": "A",
+        "feedback": "A 先處理乘除：2×(−3)=−6、(−4)÷2=−2，接著 −6＋6−2=−2；左至右或任意消負號都會改變原式。"
       }
     ]
   },
@@ -330,6 +371,13 @@
           "equation": "−74/4−20/4＋3/4=−91/4=−22.75",
           "reason": "−18.5、−5、0.75 都可表示為四分之一的整數倍，且估計應仍落在負二十多。",
           "feedback": "若分數回查得到正數，先檢查 −74−20＋3 的符號，而不是重新排列整個式子。"
+        },
+        {
+          "id": "step-4",
+          "action": "在新的帶號混合式中分離乘除子運算、再依加減號合併並以估算回查",
+          "equation": "−6−2×(−3)+(−4)÷2=−6−(−6)−2=−2",
+          "reason": "運算順序先做乘除，括號內的負號必須保留；最後的估算與精確計算應互相吻合，才能發現符號或順序錯誤。",
+          "feedback": "若得到 −24，請回查是否左至右先算；若得到 2，請檢查 −(−6) 與最後的 −2 是否正確。"
         }
       ]
     }

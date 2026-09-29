@@ -1,0 +1,48 @@
+{
+  "decisionId": "D-442",
+  "date": "2026-09-29",
+  "phase": "social-performance-soc-2c-iv-1-missing-fusion-manuscript",
+  "status": "pass",
+  "scope": {
+    "lessonId": "lesson-social-performance-soc-2c-iv-1",
+    "rosterBefore": "770/791",
+    "rosterAfter": "771/791 (97.47%); 20 missing",
+    "changedQuestions": false,
+    "changedOtherRosteredLessons": false
+  },
+  "curriculumAndKnowledge": {
+    "curriculumPath": "curriculum/social/performance-soc-2c-iv-1.json",
+    "curriculumCode": "社2c-Ⅳ-1",
+    "knowledgeId": "kg-social-performance-soc-2c-iv-1",
+    "officialLocator": "Social curriculum body pp.8-12 / PDF pp.12-16"
+  },
+  "publisherAndPublicEvidence": [
+    {
+      "publisher": "nani",
+      "evidence": "111 Nani history overview mirror p.23 shows Taiwan prehistory, Indigenous origins/migration story grouping, and 社2c-IV-1; mirror rights not verified. Danfeng JH 114 Nani-labelled social/history plan pp.0-1 places the indicator with early Republic political context. Neither is claimed to be full publisher textbook text."
+    },
+    {
+      "publisher": "kanghsuan",
+      "evidence": "Chuchi Senior High School-affiliated JH 114 grade-8 history plan, Kang Hsuan volume 3, PDF p.10: 社2c-IV-1 with Ming/Qing empire expansion, group culture, multicultural education, evidence gathering and project/activity assessment. School-authored plan, not textbook chapter."
+    },
+    {
+      "publisher": "hanlin",
+      "evidence": "Zhonghe JH 111 plan, Hanlin volumes 1-2; PDF p.179 (printed p.3) lists 社2c-IV-1 under civics identity/community and human-rights context; same-school history sequence pp.129-148 supplies historical group/culture context. School plan, not publisher-authored chapter."
+    }
+  ],
+  "synthesis": "Replaced generic four-section student content and six generic teaching placeholders with six original, unit-specific sections. The instructional arc asks whose community memory is recorded, distinguishes cultural origins/conditions/agency without essentializing groups, reads three explicitly fictional source summaries, builds a claim-evidence-reasoning-limitation chain, transfers to a fictional community naming debate, and writes a revisable conclusion that protects interviewee choice. Student sections and teaching.body match exactly 6/6. Added three versionResearch records and fusionRecord; lesson remains draft for user's ChatGPT review.",
+  "alignment": {
+    "contentSections": 6,
+    "teachingBody": 6,
+    "headingAndBodyParity": "6/6 exact",
+    "lessonStatus": "draft for user's ChatGPT review",
+    "interactionSpec": "Pending later implementation phase; current generic ScenarioDecisionBlock is not yet aligned to this unit's cultural-memory/source comparison work"
+  },
+  "validation": {
+    "fullData": "PASS: scripts/validate_data.py, 14552 JSON files, 13114 IDs, 1032 KG nodes",
+    "fusionInventory": "PASS: scripts/inventory_authored_fusion_drafts.py, 771/791; learning-content 583/583; learning-performance 188/208; long-form marker 601",
+    "questionSources": "Not rerun; no question files changed. Fresh D-438 audit: 10566/10566 recorded, pending 0.",
+    "diffCheck": "PASS: git diff --check"
+  },
+  "commitPush": "Not performed; overall goal remains active."
+}

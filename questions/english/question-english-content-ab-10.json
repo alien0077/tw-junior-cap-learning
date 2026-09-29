@@ -2,23 +2,23 @@
   "id": "question-english-content-ab-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「Ab／語音」task, what is the best way to prepare question 10?",
+  "prompt": "A written chat log shows only “Fine.” The audio is unavailable, and no earlier message is included. What can you responsibly conclude about the writer's tone?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about Ab／語音."
+      "text": "The writer is definitely angry because the reply is short."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about Ab／語音."
+      "text": "The writer is definitely sincere because fine is a positive word."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking Ab／語音."
+      "text": "The transcript alone does not establish the writer's tone; audio and conversational context would be needed to assess prosody and intent."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about Ab／語音."
+      "text": "The period proves the line was spoken with falling intonation."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets Ab／語音, question 10."
+    "value": "C",
+    "explanation": "The written word and period do not record pitch, stress, pause, voice quality, or the situation being answered. “Fine” could express agreement, impatience, or another stance depending on those missing cues. Without audio and context, a definite emotional interpretation would go beyond the evidence."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
-    "sourceLocator": "114 年國中教育會考英語科閱讀公開試題；研究字首、字尾、母音、子音、長短母音與押韻的語音辨識能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2790&name=112-2-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E8%81%BD%E5%8A%9B%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E9%82%B1%E6%9B%89%E8%96%87.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣立宜昌國中112學年度第2學期七年級第2次段考英語聽力試題，第二大題基本問答；僅參照聽力需依實際口語輸入作答的形式。本題刻意移除音檔及上下文，測試證據限制。",
+    "authoringNote": "依 Ab 語音單元要求辨別可觀察聲音和對態度的推測，並標註錄音、語境缺失；公校試卷只供聽力作答模式參照，原創題文、選項及答案均未取自來源。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-ab"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-ab",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2790&name=112-2-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E8%81%BD%E5%8A%9B%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E9%82%B1%E6%9B%89%E8%96%87.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中112學年度第2學期七年級第2次段考英語聽力試題與答案",
+      "year": "112-2",
+      "subject": "english",
+      "locator": "第二大題基本問答；根據所聽口語內容選出合適回應",
+      "locatorLevel": "paper",
+      "observedPattern": "聽者依音訊而不是只有書面文字完成理解；本題指出若音訊缺失，不能補造韻律線索。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期七年級第1次段考英語科試卷",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第一部分聽力測驗 B 基本問答及 C 言談理解；依聲音／對話內容作答",
+      "locatorLevel": "paper",
+      "observedPattern": "使用可取得的口語與對話資訊作答；本題有意移除聲音及對話背景，限制態度推論。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=837&file=WVhSMFlXTm9Mek15TDNCMFlWOHpOVEUxWHpZM09ETTRPREpmT1RNME9UWXVjR1Jt&fname=WW54RPOKRK4411HH50LKKPHG1430WT24KLB0XSXSTXA1LK40NKROSTB4WW54A0OKWW5400HHA404LK14MOPKTSLOOPB0QLYWXTYTXWA0SWZWCDVWSSOKXSFCUS00HH25DGA0DCZWFCMO40201434ZWMKUTGDUT21SSUSJGB0GGA401USTWLKUXJHGG04DC14MKB4JDIGKLEG35WWMLXTPOFCSSRO54SWUSDCROFCNOXW41KKWW04DHHG",
+      "title": "新北市立三多國中113學年度第1學期第2次段考七年級英語科試題",
+      "year": "113-1",
+      "subject": "english",
+      "locator": "第一部分聽力測驗第三大題言談理解：依所聽到的內容選出最合適答案",
+      "locatorLevel": "paper",
+      "observedPattern": "在可聽到的言談中依前後文理解意思；本題將缺少的音訊及前文列為明確限制，非對來源題目內容的改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "把紙面能證明的內容和紙面無法保留的聲音分開：確認文字是 Fine.，再列出聽不到的音高、重音、停頓和情境；對語氣保持多種可能，直到取得更多證據。",
+  "solutionSteps": [
+    "先記錄現有文字：聊天記錄只有 Fine. 這一個詞和句點，沒有音訊波形或聲音描述。",
+    "列出語音判讀缺少的資訊：無法聽音高起伏、重音、語速、停頓或音質，也不知道它在回應什麼。",
+    "區分拼字與語氣：fine 可按不同語調和情境表達同意、勉強接受或不耐；字面正面不保證說話者真誠，短句也不證明生氣。",
+    "檢查各選項是否超出證據：A、B 都把一種可能說成 definitely；D 把書面句點錯當成音高錄音，只有 C 正確保留限制。",
+    "因此目前只能說語氣未定；若要判讀，需要音檔與前後對話，答案為 C。"
+  ]
 }

@@ -1,0 +1,45 @@
+{
+  "decision": "D-378",
+  "date": "2026-09-28",
+  "unit": "Ac-Ⅳ-2",
+  "purpose": "Inventory existing authored fusion and repair verified learner-page/spec mismatches without duplicating or overstating work.",
+  "preservedWork": {
+    "lessonId": "lesson-chinese-content-ac-iv-2",
+    "authoredSections": 7,
+    "interactiveType": "guided-choice",
+    "interactiveSteps": 5,
+    "reviewStatus": "draft",
+    "action": "Preserved the existing unit-specific lesson and five-step interaction; aligned teaching.body and learner content, corrected evidence claims and spec rather than replacing an already authored lesson."
+  },
+  "sourceBoundaries": {
+    "nani": "Only a third-party table-of-contents locator was read; direct lesson teaching material was not available and remains pending.",
+    "kanghsuan": "Directly read one third-party teacher-created handout labeled as Kanghsuan grade 8, volume 3; it is not publisher-authenticated textbook material and reuse permission is unverified.",
+    "hanlin": "Directly read the publisher-hosted grade-8 teacher resource section on sentence patterns; this is limited teacher material, not the full student textbook.",
+    "fusionClaim": "Two scoped materials plus curriculum/KG support original synthesis. No claim of complete three-publisher fusion or full-chapter review. No source wording, examples, exercises, or answers copied."
+  },
+  "verifiedMismatchAndRepair": [
+    "Spec falsely described TextEvidenceBlock, prediction, variable manipulation, slider, synchronized representations, external fallback, and multi-stage reveal; runtime actually provides five GuidedChoice steps with three text options, retryHint on wrong answers, and feedback on correct answers.",
+    "Spec corrected to describe actual guided-choice contract, unit-specific sentence-structure goals, keyboard/responsive expectations, source limitations, and still-pending QA.",
+    "Local ignored site/data-index.json was stale and browser showed nine old/generic sections. Rebuilt the site index from the current worktree revision; browser then showed exactly the seven authored sections once."
+  ],
+  "verification": {
+    "targetRegression": "PASS: seven-section parity, five steps, answer keys and matching honest spec.",
+    "dataValidation": "PASS: 14,490 JSON files, 13,113 IDs, 1,032 KG nodes; all lessons remain draft.",
+    "implementationSpecs": "PASS: 1,027 files, 0 structural errors; 1,027 QA statuses remain pending.",
+    "publisherEvidenceLedger": "293/3,081 verified; 2,788 pending; 933 blocked after Nani correctly returned to pending.",
+    "siteIndex": "PASS: 1,052 lessons, 10,566 questions, 40 mappings; 10,526 question paths; revision bf5b39783f4d6c1a0bbb12f4f0113382c84bf862.",
+    "siteIndexValidation": "PASS after rebuild.",
+    "fullBrowserSmoke": "PASS: 1,027/1,027 lesson traversal, workbench content traversal, viewport 320/375/768, keyboard/accessibility-tree/reduced-motion contracts and existing scoped interactions.",
+    "targetBrowser": "PASS: actual site learner page displays seven authored sections once; five GuidedChoice steps; wrong-answer hint, keyboard retry, ambiguity feedback; viewport 320/375/768 without overflow; page errors 0.",
+    "testSuite": "PASS: npm test (including 1,027/1,027 workbench traversal); npm run pretest rerun with the new Ac-IV-2 regression included.",
+    "diffCheck": "PASS: git diff --check.",
+    "questionSourceLedger": "Reused D-377 verified snapshot 10,566/10,566 recorded, pending 0; no question files changed and no need to repeat the ledger audit."
+  },
+  "remainingGates": [
+    "Nani direct teaching sample and publisher/version authenticity and rights.",
+    "Full publisher-source review and per-unit substantive fusion/independence/content correctness.",
+    "Human reviewer is unavailable; this report is not a teacher or expert review. Lesson remains draft.",
+    "Remaining repository-wide substantive fusion, source review, copyright, independence, and content QA gates are not completed by this single-unit repair."
+  ],
+  "commitPush": "Not performed; broader substantive-fusion and content-review goals remain open."
+}

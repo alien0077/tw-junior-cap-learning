@@ -1,0 +1,32 @@
+"""INa-Ⅳ-4：生活中各種能源的特性及其影響第一輪原創題庫。"""
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-content-ina-iv-4.json"; REPORT=ROOT/"implementation/reports/science-content-ina-iv-4-first-pass-review.json"; QDIR=ROOT/"questions/science"; TODAY="2026-09-23"
+SOURCES=[
+ {"url":"https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf","title":"高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題","year":"114","locator":"生活能源、能量轉換、效率與環境影響判讀","pattern":"取由能源形式、使用情境、轉換效率與環境資料進行比較的能力方向。"},
+ {"url":"https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf","title":"114 年國中教育會考自然科公開試題","year":"114","locator":"能源、功率、效率與生活環境資料","pattern":"取從圖表與生活裝置判斷能源轉換、功率、效率及影響的能力方向。"},
+ {"url":"https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf","title":"新竹市立新科國中公開康軒版自然課程計畫","year":"公開課程計畫","locator":"燃料、電能、再生能源、安全與環境議題","pattern":"取比較生活能源特性、轉換路徑、安全條件及環境代價的教學與評量方向。"},
+]
+REFS=[{**s,"subject":"science","observedPattern":s["pattern"],"reuseDecision":"pattern-only","status":"recorded","locatorLevel":"paper"} for s in SOURCES]
+def q(n,prompt,opts,ans,exp,strat,steps,d="medium"):
+ return {"id":f"question-science-content-ina-iv-4-{n}","subject":"science","type":"single-choice","prompt":prompt,"options":[{"id":k,"text":v} for k,v in zip("ABCD",opts)],"knowledgeIds":["kg-science-content-ina-iv-4"],"difficulty":d,"answer":{"value":ans,"explanation":exp},"provenance":{"origin":"original","license":"All rights reserved","sourceUrl":SOURCES[0]["url"],"sourceLocator":"三筆公立學校／公開自然科試題與課程資料的生活能源、轉換效率、安全及環境影響能力方向；本題只作 pattern-only 改寫來源。","authoringNote":"依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 INa-Ⅳ-4 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"},"reviewStatus":"draft","updatedAt":TODAY,"lessonId":"lesson-science-content-ina-iv-4","examPatternRefs":REFS,"solutionStrategy":strat,"solutionSteps":steps}
+Q=[
+q(1,"瓦斯爐把燃料的化學能主要轉成熱能；若火焰加熱效率降低，哪項改變最可能造成同樣水量需要更久才沸騰？",["鍋底與火焰接觸不良，使更多熱散失到周圍","水的質量變成零","燃料的化學能不再存在","火焰顏色變漂亮"],"A","鍋底接觸或火焰位置不佳會讓輸入熱量較少被水吸收，更多能量散失，因此加熱時間變長。","沿著能源轉換鏈尋找有用輸出與散失位置。",["確認燃料化學能先轉成火焰熱能。","界定有用輸出是水吸收的熱量。","檢查鍋底接觸與散熱是否改變。","B、C、D 不會造成實際熱傳效率下降。","所以 A 最合理。"],"easy"),
+q(2,"比較電熱水壺與瓦斯爐煮沸相同質量的水，哪項測量設計較公平？",["記錄相同初溫與終溫、用水質量、燃料或電能輸入及完成時間","一個用冷水、另一個用熱水","只比較設備價格","一個加蓋、另一個完全不加蓋且不記錄"],"A","要比較效率，必須固定水的初始條件與終點，並量測實際輸入能量；否則差異可能來自控制條件。","先固定需求，再比較輸入能量與有用輸出。",["固定水質量、初溫、終溫和容器。","測量電能或燃料使用量。","比較水吸收的熱量與輸入能量。","B、C、D 無法支持公平的效率比較。","答案為 A。"],"medium"),
+q(3,"汽油車與電動車都需要能源；下列哪項說法最完整？",["電動車行駛時沒有尾氣，但發電、電池製造與回收仍需評估","電動車在所有情況下完全沒有環境影響","汽油車只會把能量轉成光","只要使用電力，電力來源就不必追蹤"],"A","電動車可減少使用端尾氣，但環境影響還與發電結構、電池材料、製造和回收有關，不能只看行駛階段。","區分使用端、上游供能與生命週期影響。",["列出車輛行駛、發電、製造與回收階段。","辨認每階段的排放和資源使用。","比較完整生命週期而非只看排氣管。","B、C、D 都把部分資訊過度推成全部結論。","所以 A 最完整。"],"hard"),
+q(4,"太陽能熱水器在晴天供熱較多、陰天較少；家庭若要提高供水穩定性，哪項搭配最合理？",["加裝保溫水箱與必要的備用熱源，並評估其耗能與成本","把集熱板移到室內完全不接收陽光","只在陰天增加用水量","宣稱天氣不會影響太陽能"],"A","保溫可減少熱散失，備用熱源可補足日照不足時的需求，但兩者也會增加成本或能源使用，需整體評估。","先找出能源供應的變動，再設計補足與降低損失的方法。",["比較晴天與陰天的集熱量。","辨認需求與供應不一致的時段。","評估保溫和備用熱源的補足效果及代價。","B、C、D 沒有處理日照變動。","答案為 A。"],"medium"),
+q(5,"水力發電利用水位差發電；若上游水庫蓄水量下降，哪項影響最直接？",["可利用的水位差或流量減少，可能使發電量降低","發電機會自動產生更多水","水的化學式會改變","電能會全部變成核能"],"A","水力發電的輸入與水位差、流量有關；蓄水量下降可能降低可利用的水能與發電量。","從裝置的能源輸入條件推論輸出變化。",["辨認水的重力位能是主要輸入。","檢查水位差和流量是否下降。","推論可轉換成機械、電能的能量減少。","B、C、D 與水力發電機制不符。","因此 A 正確。"],"easy"),
+q(6,"使用木材或生質燃料取暖時，哪項資料最需要納入環境影響評估？",["燃料來源的再生速度、採集造成的土地變化、燃燒排放與室內空氣品質","只看燃料燃燒時的火焰亮度","只問燃料是否有香味","只比較包裝重量"],"A","生質燃料不代表沒有代價，來源、土地利用、燃燒排放和使用者暴露都會影響整體評估。","把資源來源、使用端排放和健康風險放在同一系統邊界。",["列出燃料取得、運輸、燃燒和排放階段。","記錄再生速度與土地使用變化。","測量排放及室內空氣條件。","B、C、D 無法代表環境與健康影響。","答案為 A。"],"hard"),
+q(7,"電池能供應手機，但它較適合被描述為哪一項？",["儲存並釋放電能的裝置，不是能量的最終來源","會自行創造無限能量的來源","只會把熱能變成光能","與充電來源完全無關"],"A","電池透過化學反應儲存並釋放能量；充電時能量仍來自外部電源，因此電池是能量儲存與轉換裝置。","分辨能源來源、能量載體與儲能裝置。",["追蹤充電時的外部電能。","辨認電池內部的化學能儲存。","追蹤放電時化學能轉成電能。","B、C、D 分別誤解能量守恆或裝置角色。","所以 A 正確。"],"medium"),
+q(8,"核能發電的主要能源轉換路徑為何？",["核反應釋放熱能，再經蒸汽與渦輪等機械過程轉成電能","電能直接變成核能而不需設備","風的動能直接變成核反應","光能先變成水再變成電"],"A","核反應釋放的熱能使水形成蒸汽，蒸汽推動渦輪與發電機，最後輸出電能。","按照能量形式的先後順序追蹤轉換鏈。",["找出核反應是能量釋放的起點。","辨認熱能如何使蒸汽推動渦輪。","確認渦輪機械能再由發電機轉成電能。","B、C、D 的能量來源或轉換順序錯誤。","答案為 A。"],"medium"),
+q(9,"若社區要比較天然氣與煤炭供電的環境影響，哪項做法最不容易誤導？",["以相同供電量為基準，記錄開採、運輸、燃燒排放與設備效率","只比較燃料每公斤的價格","只看煙囪高度","因為天然氣是氣體，所以一定沒有排放"],"A","不同燃料的比較需在相同有用輸出下納入上游與使用端排放、運輸及效率，單看價格或物態不足。","用功能單位和完整生命週期建立可比基準。",["設定相同的供電量作為功能單位。","記錄開採、運輸、燃燒與效率。","將各階段排放換算到相同輸出。","B、C、D 都不能代表整體環境影響。","所以 A 最公平。"],"hard"),
+q(10,"下列哪項最能說明選擇生活能源時不能只看『方便』？",["方便性還要和安全、成本、供應穩定、效率、排放及資源取得條件一起比較","方便就代表效率一定最高","成本高就表示能源一定不安全","只要是再生能源便不必考慮土地與生態"],"A","能源選擇涉及多個條件；方便只是使用端的一項特性，不能取代安全、成本、供應、效率和環境資料。","用多指標比較避免單一價值主導決策。",["列出使用者需求與能源系統的評估指標。","為各能源蒐集相同基準下的資料。","比較便利性與其他收益、代價的權衡。","B、C、D 都把單一因素錯當成完整結論。","因此 A 正確。"],"medium"),
+]
+def main():
+ lesson=json.loads(LESSON.read_text(encoding="utf-8")); lesson["updatedAt"]=TODAY; lesson["reviewStatus"]="draft"
+ lesson["fusionRecord"]={"commonCore":["三版本公開線索共同支持以能源來源、轉換路徑、效率、便利性、安全與環境代價比較生活中的能源。","比較能源必須固定有用輸出、明確系統邊界，並同時考量使用端與生命週期的影響。"],"versionDifferences":["公立段考與會考公開題型提供能源轉換、效率與生活資料判讀方向；康軒公開課程線索偏向燃料、電能、再生能源、安全與環境議題。公開資料不足以宣稱取得完整教材內容。"],"originalAdditions":["以瓦斯爐、電熱水壺、汽油與電動車、太陽能熱水器、水力、生質能、電池、核能與天然氣／煤炭比較建立本單元證據鏈。","把『電池就是能源來源』、『再生能源沒有環境代價』與『方便就代表效率最高』列為迷思診斷。"],"llmSynthesisNote":"依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開自然科試題及課程資料的能力方向，重新撰寫生活能源的特性、轉換、效率、安全與環境影響。原有 10 題為泛用研究句型套題，已逐題改寫為不同能源情境的單元專屬題，均具唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案；Terra 第二輪與正式發布審查尚未完成，維持 draft。"}
+ for e in lesson.get("versionResearch",[])+lesson.get("publisherResearch",[]): e["reviewedAt"]=TODAY
+ for x in Q: (QDIR/f"question-science-content-ina-iv-4-{x['id'].rsplit('-',1)[-1]}.json").write_text(json.dumps(x,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"INa-Ⅳ-4：生活中各種能源的特性及其影響","lessonId":lesson["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checkedQuestions":10,"checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"threePublicSchoolExamPatternSources":True,"answersAndDetailedSteps":True,"interactivePredictionManipulationExplanation":True,"terraSecondPass":"pending"},"reviewedAt":TODAY,"note":"原有 10 題為泛用研究句型套題，已逐題改寫為生活能源特性與影響專屬問題；每題有唯一答案、解析與五步解法，三筆公開試題／課程資料僅作 pattern-only 來源，正式發布前仍須第二輪 AI／Terra 內容複核。"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ LESSON.write_text(json.dumps(lesson,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"); print("authored science content ina iv 4")
+if __name__=="__main__": main()

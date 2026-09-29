@@ -1,0 +1,132 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-5
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-5
+  title: 3-Ⅳ-5：理解簡易生活用語
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-5：理解簡易生活用語
+    curriculumIntent: 從口語與書面生活情境理解功能語句，依目的、關係、語氣和資訊限制形成適切回應。
+    publisherEvidence:
+      nani: {status: pending, required: true}
+      kanghsuan: {status: pending, required: true}
+      hanlin: {status: pending, required: true}
+    fusionRule: 目前僅有公立校方課程計畫的章節級結構線索；未逐版本完成教材內容比較與融合審查，不得宣稱完成融合。
+    currentEvidenceStatus: curriculum-and-kg-grounded; public-school-course-plan-recorded; publisher-full-content-research-and-fusion-review-pending
+  learningGoals:
+  - 從對話前後句辨認問候、澄清、道歉、邀請、請求或確認的溝通功能。
+  - 同時考慮說話者、對象關係、事件影響、時間與安全限制，判斷哪句回應能接上眼前任務。
+  - 資訊不足時提出澄清或確認；對已知邀請作出誠實且合宜的接受或婉拒，不虛構承諾。
+  prerequisites:
+  - 能讀懂簡短英文對話及常見生活詞語。
+  - 能從一句話中辨認說話者、對象與明確提及的時間或物件。
+  coreConcepts:
+  - 生活用語的功能由前後語境與當下溝通目的決定，不能只靠單字相似度判答案。
+  - 合宜回應需兼顧語意、人物關係、語氣及對方接下來需要採取的行動。
+  - 道歉要承認造成的影響並視情況補救；資訊有缺口時先澄清，不以猜測取代確認。
+  - 邀請可禮貌婉拒並說明已知限制，但不應編造理由或做出無法履行的承諾。
+  misconceptions:
+  - 把看到 thanks、sorry 等熟字當成充分證據，沒有確認它是否回答前一句。
+  - 聽漏關鍵物件或地點後仍猜測並直接行動。
+  - 道歉只說 sorry，忽略受影響者的狀況及可行補救。
+  - 為了語氣客氣而答應實際上與既有行程衝突的邀請。
+  - 把公告未說明的地點、期限或後果自行補成事實。
+  contentFlow:
+  - 'hook: 比較對朋友與服務人員提出同一項請求時的語氣，圈出哪些資訊不變、哪些措辭因關係而改變。'
+  - 'predict: 讀校園實驗室對話前後文，預測漏聽的器材資訊並標註為待確認，而非當成事實。'
+  - 'manipulate: 用具名線索按鈕標記漏聽器材與猜錯風險，再提交線索組合。'
+  - 'observe: 比較澄清前後的對話，確認補回哪項資訊及如何避免搬錯物品。'
+  - 'explain: 說明澄清句如何回應溝通功能、人物關係與行動限制。'
+  - 'clarify: 選擇澄清句，觀察對話如何補回缺漏資訊並避免搬錯物品。'
+  - 'repair: 在模型倒塌事件中將責任、同學受到的影響與補救行動串成回應。'
+  - 'decline: 依邀請日期和既有排練安排作誠實婉拒，辨別保留關係與假意承諾的差異。'
+  - 'transfer: 把口語對話換成志工簡訊，從公告標記改變行動的時間、地點，再寫出確認句與線索理由。'
+  - 'reflect: 自我檢查回應有沒有完成功能、符合關係、承接限制，且沒有超出文本證據。'
+  visualizations:
+  - 將每段對話／訊息本身、可標記的語境線索、候選回應與後續一句分區呈現，所有線索同時有文字，不以顏色獨立編碼。
+  - 只顯示目前對話；線索核對通過後才顯示回應選項，主情境完成後才開啟不同媒介的訊息遷移。
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-5-I01
+    component: DailyExpressionLab
+    purpose: 以三段不同溝通任務的原創校園對話練習澄清、道歉補救和婉拒，最後將線索判讀遷移到服務簡訊的時間／地點確認。
+    initialState:
+      sceneIndex: 0
+      cueIds: []
+      cueAccepted: false
+      transfer: false
+      completed: false
+    studentActions:
+    - 在當前對話標記真正影響回應的線索，缺漏或無關線索均由文字提示引導重試。
+    - 線索檢核通過後才選擇下一句；錯誤回應保留當前情境並提示回看溝通功能。
+    - 依序完成漏聽後澄清、事故後道歉補救及有行程衝突時婉拒邀請。
+    - 在不同媒介的圖書歸還簡訊中標記時間／地點、選擇確認語句，並用中文引用公告原詞解釋理由。
+    - 可用鍵盤操作線索按鈕、原生 radio 選項、文字欄位與提交／重設控制；進度按 lesson instance 保存。
+    visualRules:
+    - 情境原文、語境線索、選項與回饋均來自 lesson 資料，元件只負責操作與狀態，不將題文寫死於 UI。
+    - 每次只呈現一個對話或一個遷移訊息，避免不同場景線索混淆。
+    - 線索採具名文字按鈕及 aria-pressed；選項採 fieldset／legend 與原生 radio，狀態及提示使用 live region。
+    - 手機寬度下情境原文換行、候選句可讀且控制項至少44px；reduced motion 不影響逐步操作。
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-5-CLARIFICATION
+      trigger: 學生在漏聽器材細節的場景標記問候線索，或選擇猜測後立即搬動。
+      prompt: 請指出你漏聽的內容，以及直接猜測可能造成的結果。
+      expectedEvidence: 必須回指未聽清的器材資訊與玻璃罐可能被放錯位置的情境線索。
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-5-REPAIR
+      trigger: 學生把責任推給同學，或只道歉而不回應模型散落的實際影響。
+      prompt: 回到碰撞原因和散落零件，受影響的人現在需要什麼？
+      expectedEvidence: 碰桌者是Jay；同學的模型倒下；回應需關心並提出可行協助。
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-5-INVITATION
+      trigger: 學生在已知排練衝突時答應整個下午參加，或以無關批評拒絕邀請。
+      prompt: 哪項已知行程限制了選擇？如何誠實表達並回應邀請者？
+      expectedEvidence: Friday music rehearsal；Thank you／maybe next time 等保留關係的語句與明確婉拒。
+    feedback:
+      correct: 解釋該句完成的溝通功能及如何承接對話線索，之後展示下一句或解鎖新情境。
+      incorrect: 先指出須回看的線索類型，不直接洩漏選項；保留當前場景，讓學生重新判斷語意、關係或限制。
+  capTransfer:
+    questionType: 生活簡訊理解、功能語句判斷及證據理由短答。
+    stemConstraint: 轉換為圖書歸還志工簡訊；學生須同時處理 today 4 p.m. 關門及 after lunch 移到 west entrance，不可只靠熟悉句型猜答案。
+    requiredResponse: 選擇確認新地點與期限的問句，並以中文引用 west entrance 和 4 p.m. 說明為何需要核對。
+    scoring: 回應功能適切1分；時間及地點證據均對應1分；理由完整且不加入公告以外的事實1分。
+  exitTicket:
+    prompt: 對話缺少決定下一步的資訊時，你會先做什麼？請說出要核對的線索，以及為何不應猜測。
+    successCriteria:
+    - 指出尚未確定的具體資訊，而非只說「我不懂」。
+    - 提出澄清或確認語句。
+    - 說明該資訊如何影響下一步行動。
+  expressionExtension:
+    applicable: true
+    task: 對同學和圖書館服務人員提出同一項借用請求，各寫一句英文，並用中文指出關係改變了哪些語氣標記、目的與必須保留的資訊。
+    constraint: 兩句必須符合各自關係和情境；不得只換稱謂，亦不得替收件者虛構未提供的承諾。
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 線索為具名按鈕並公告選取狀態；選項為原生 radio；每次提交以即時狀態文字回報進度、錯誤提示和完成結果。
+    reducedMotion: 關閉動畫後仍可按順序完成全部對話與遷移。
+  testCases:
+  - 初始狀態不顯示回應選項；需先選出漏聽資訊和玻璃器材線索，錯誤線索組合會顯示指定提示並可重試。
+  - 第一情境猜錯後仍停留於 clarification 任務；改選澄清句後才顯示對話接續並解鎖道歉場景。
+  - 第二場景的責任與受影響者線索導向道歉加補救；第三場景行程衝突導向誠實婉拒，不把理由寫成無根據主張。
+  - 三段口語對話全通過後才開啟志工訊息；遷移必須標記關門時間與新地點，錯誤回覆及缺少引用原詞的理由均不可完成。
+  - 320px、375px、768px 無水平溢位；鍵盤能操作線索、radio、理由、提交與重設；重載保留進度，重設清除該 lesson instance 狀態。
+  - 全部文字、資料和回饋內嵌於 lesson；不依賴外部請求，離線仍能完成主情境與遷移。
+  - 網路不可用時，文字 fallback 仍提供完整對話、具名線索、選項、提示及遷移步驟。
+  definitionOfDone:
+  - 課綱代碼3-Ⅳ-5、KG ID、lesson ID及官方 locator 一致。
+  - 南一、康軒、翰林完整可得版本研究及比較完成；未完成前 publisher evidence 與內容保持 pending／draft。
+  - 三段不同功能的對話各自有線索、唯一最佳回應、具體錯誤提示與後續對話。
+  - 服務簡訊遷移能檢查確認功能、時間地點引用及理由界線。
+  - JSDOM 全流程、全庫回歸、瀏覽器互動、窄螢幕與鍵盤驗收通過；螢幕閱讀器另行實測，不以語意標記推定通過。
+  - 原創例句、答案與回饋經內容／版權 QA；跨課獨立性稽核通過後才評估升級審查狀態。
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-5
+    role: official-curriculum-source-of-truth

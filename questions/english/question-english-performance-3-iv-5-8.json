@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-5-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-5／理解簡易生活用語」task, what is the best way to prepare question 8?",
+  "prompt": "A sign says the main library entrance is closed because the floor is wet. A visitor asks how to get inside. What should you tell them?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "The floor is wet, so please use the side entrance and walk carefully."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "Run through the main entrance before it gets wetter."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-5／理解簡易生活用語."
+      "text": "The sign means the library is closed all day."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "You can’t enter any library when it rains."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-5"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-5／理解簡易生活用語, question 8."
+    "explanation": "正確答案 A。公告只說主要入口因地面濕滑而關閉，並沒有說整間圖書館停止服務；A 依限制提供安全替代入口。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-10-16-24-nf1.pdf",
+    "sourceLocator": "本題參照公立國中英文段考中依對話目的選擇生活回應的命題模式；逐題原卷定位見 examPatternRefs。公開查閱不代表授權重製；本題情境、文字、選項、答案與解析均重新撰寫。",
+    "authoringNote": "依本單元生活互動能力原創改寫；公開試題僅作 pattern-only 題型參考，未複製原題、選項或答案；仍待單元內容與答案 QA，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-5"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-10-16-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期八年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第1頁第20題：遇到颱風警示時選出遠離海邊較安全的回應",
+      "locatorLevel": "item",
+      "observedPattern": "參照先理解警示風險、再選安全行動的生活對話模式。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期七年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第1頁第6題：依情境選擇能回應實際需求的基本答句",
+      "locatorLevel": "item",
+      "observedPattern": "參照情境與回應功能配對，不據此推定原卷涉及圖書館。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "把警示中的限制與服務是否全面停止分開，再給出有根據的安全替代方案。",
+  "solutionSteps": [
+    "讀出標示的範圍：關閉的是主要入口，原因是地面濕滑。",
+    "不要把局部入口管制擴大解讀為整棟圖書館停業。",
+    "訪客問如何進入，因此回答需提供可行替代路線。",
+    "A 同時指出側門與小心行走，符合資訊及安全需求。",
+    "確認建議沒有叫人穿越濕地，也沒有推測標示未提供的閉館時間。"
+  ]
 }

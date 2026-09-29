@@ -1,0 +1,47 @@
+{
+  "date": "2026-09-29",
+  "lessonId": "lesson-science-content-aa-iv-1",
+  "unitSpecId": "cur-science-content-aa-iv-1",
+  "scope": "Simulation-unavailable fallback only; no content review or status promotion.",
+  "implementation": [
+    "Added a dedicated Playwright test that injects a failure for /site/simulations.js.",
+    "Registered npm run test:science:aa-iv-1:fallback-browser.",
+    "Updated the unit test case to state the real fault-injected acceptance criteria."
+  ],
+  "environmentDiagnostics": {
+    "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+    "playwright": "1.58.0",
+    "sandboxServerError": "PermissionError: [Errno 1] Operation not permitted while binding localhost",
+    "existingServerCheck": "GET http://127.0.0.1:8765/site/index.html returned HTTP 200",
+    "sandboxChromeError": "Playwright launched /Applications/Google Chrome.app/Contents/MacOS/Google Chrome; process exited SIGABRT",
+    "authorizedRun": "PASS using the same npm command and existing server URL; no dependencies installed or changed"
+  },
+  "browserAssertions": {
+    "blockedScript": "http://127.0.0.1:8765/site/simulations.js",
+    "visibleLessonSections": 6,
+    "visibleSimulationUnavailableNotice": true,
+    "textPracticeSteps": 4,
+    "keyboardWrongAnswerRetry": true,
+    "keyboardCorrectAnswerFeedback": true,
+    "responsiveWidths": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": 0
+  },
+  "validation": {
+    "unitNodeTest": "PASS",
+    "data": "PASS: 14,575 JSON / 13,114 IDs / 1,032 KG",
+    "siteIndex": "PASS: 1,052 lessons / 10,526 question paths / 40 mappings",
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "982/1,027 pass; 45 fail",
+    "npmTest": "PASS, including workbench traversal 1,027/1,027",
+    "lessonStatus": "draft; qaStatus not promoted"
+  },
+  "notClaimed": [
+    "Normal-mode scientific-model interaction was not re-evaluated by this fault-injection test.",
+    "The whole specification, interaction, and automated-QA objective is not complete.",
+    "No commit or push was made."
+  ]
+}

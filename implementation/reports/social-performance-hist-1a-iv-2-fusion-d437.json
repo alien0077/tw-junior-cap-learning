@@ -1,0 +1,64 @@
+{
+  "decisionId": "D-437",
+  "date": "2026-09-29",
+  "phase": "authored-fusion-manuscript",
+  "unit": "lesson-social-performance-hist-1a-iv-2",
+  "inventory": {
+    "before": "766/791 (96.84%); learning-content 583/583; learning-performance 183/208",
+    "after": "767/791 (96.97%); learning-content 583/583; learning-performance 184/208; 24 remain"
+  },
+  "preservation": "The lesson was absent from the authored-fusion roster. Its learner-facing sections and six teaching phases were generic placeholders, and publisherResearch mislabeled geography/civics plans as history. Only this lesson was authored and corrected; no registered fusion manuscript or question file was rewritten. Lesson remains draft for the user's ChatGPT review.",
+  "curriculumAndKnowledge": {
+    "curriculumId": "cur-social-performance-hist-1a-iv-2",
+    "knowledgeId": "kg-social-performance-hist-1a-iv-2",
+    "officialCurriculumUrl": "https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf",
+    "locator": "Social curriculum PDF pp.12-16, official indicator 歷1a-Ⅳ-2; KG identifies historical event development and important change."
+  },
+  "versionSources": [
+    {
+      "version": "Nani",
+      "url": "https://course.cyc.edu.tw/upfile/course110/sub1/14811490075240289.pdf",
+      "locator": "PDF p.0 identifies 南一版第3-4冊, 110學年度昇平國中 grade-8 history; course section locates 商周至隋唐國家社會 and lists feudal-to-commandery/county, tax/registration and selection-system changes.",
+      "evidenceType": "public-school course plan explicitly version-labeled; not publisher textbook"
+    },
+    {
+      "version": "Kang Hsuan",
+      "url": "https://course.cyc.edu.tw/upfile/course114/sub1/15939662802754662.pdf",
+      "locator": "PDF p.0 identifies 康軒版第三冊, 114學年度竹崎高中國中部 grade-8 history; PDF pp.0-2 list feudal formation, Eastern Zhou weakening and Qin centralization, with multiple assessment formats.",
+      "evidenceType": "public-school course plan explicitly version-labeled; not publisher textbook"
+    },
+    {
+      "version": "Hanlin",
+      "url": "https://course.cyc.edu.tw/upfile/course114/sub1/15937393353728683.pdf",
+      "locator": "PDF p.0 identifies 翰林版第三、四冊, 114學年度新港國中 grade-8 history; PDF p.0 onward locates Shang-Zhou through Sui-Tang state/society, dynastic sequence, East Asian interaction, and later ethnic/cultural exchanges.",
+      "evidenceType": "public-school course plan explicitly version-labeled; not publisher textbook"
+    }
+  ],
+  "crossCheckSources": [
+    {
+      "source": "Ministry of Education History Memorabilia",
+      "url": "https://history.moe.gov.tw/Memorabilia/Before",
+      "use": "Official timeline/context cross-check; not used as sole evidence for the lesson's causal claims."
+    },
+    {
+      "source": "National Palace Museum Qin culture exhibition",
+      "url": "https://www.npm.gov.tw/Exhibition-Content.aspx?l=1&sno=04007085",
+      "use": "Institutional synthesis on Qin's reforms, commandery-county administration, standardization and later institutional legacy."
+    },
+    {
+      "source": "Academia Sinica Institute of History and Philology Bulletin",
+      "url": "https://www1.ihp.sinica.edu.tw/Publications/Bulletin/124/Article/559",
+      "use": "Scholarly abstract on Zhou lineage-based enfeoffment and the debate over its dissolution; informs the distinction between structural interpretation and simple chronology."
+    }
+  ],
+  "synthesis": "Rewrote six original student-visible sections around the governance problem and institutional sequence from Western Zhou enfeoffment through Qin commanderies/counties to early Han parallel commanderies and kingdoms. Instruction explicitly separates chronology from causation, compares continuity/change, traces state capacity and local impact, and marks limits of institutional summaries. Three school plans support common long-period state/society history while differing in emphasis: Nani includes fiscal/selection institutions, Kang Hsuan organizes feudal decline to Qin centralization, and Hanlin foregrounds East Asian and cultural interaction. These are school-plan differences, not claims about publisher textbook text. Original practice cards are labeled as authored paraphrase, not historical quotations.",
+  "checks": {
+    "lessonSchema": "PASS: Draft 2020-12 schema, 0 errors",
+    "learnerVisibleParity": "PASS: 6 content.sections and 6 teaching.body entries exactly match",
+    "fusionRoster": "PASS: 767/791 (96.97%), 583/583 learning-content, 184/208 learning-performance, 24 remain",
+    "fullDataValidation": "PASS after all D-437 files were added: 14547 JSON, 13114 IDs, 1032 KG nodes; all 1052 lessons and 10566 questions structurally valid and draft",
+    "questions": "unchanged; reuse D-422 question source ledger 10566/10566 recorded, pending 0; not rerun",
+    "interactionSpecAndBrowserQA": "not run; existing generic TimelineCausalBlock spec remains for the later spec/interaction phase",
+    "commitPush": "not performed; overall objective remains active"
+  }
+}

@@ -2,23 +2,23 @@
   "id": "question-science-content-aa-iv-1-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月8日學校研究社的觀察中，將 99 g 食鹽溶於 310 g 水，研究「Aa-Ⅳ-1：原子模型演變」時，溶液質量為何？",
+  "prompt": "哪一項最能說明科學模型具有暫時性，但不是任意想像？",
   "options": [
     {
       "id": "A",
-      "text": "211 g"
+      "text": "模型只要畫得漂亮就能成立"
     },
     {
       "id": "B",
-      "text": "30690 g"
+      "text": "模型須能解釋現有證據並提出可被新實驗檢驗的預測"
     },
     {
       "id": "C",
-      "text": "310 g"
+      "text": "模型一旦提出就不能修改"
     },
     {
       "id": "D",
-      "text": "409 g"
+      "text": "所有模型都與觀察結果無關"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：99＋310＝409 g。 本題對應 KG「Aa-Ⅳ-1：原子模型演變」。"
+    "value": "B",
+    "explanation": "科學模型可因新證據修正，但必須受觀察資料約束並產生可檢驗預測，因此選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；原子模型與證據判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／教材的原子模型、粒子證據與模型修正能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均依 Aa-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-aa-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-aa-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子模型、陰極射線、金箔散射、模型修正與科學證據判讀",
+      "pattern": "取由實驗觀察推論微觀模型，並比較模型解釋力與限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗觀察推論微觀模型，並比較模型解釋力與限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.tksh.ntpc.edu.tw/uploads/1626668076188QlOI4fer.pdf",
+      "title": "新北市立泰山高中公開原子模型與科學史銜接教材",
+      "year": "公開教材",
+      "locator": "陰極射線、金箔散射、原子核與模型修正",
+      "pattern": "取由資料反推模型假設、辨識反常結果並修正模型的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由資料反推模型假設、辨識反常結果並修正模型的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.tcjh.tyc.edu.tw/image/1534212714782dPiSoOmq.pdf",
+      "title": "桃園市立自強國民中學公開自然科段考試題",
+      "year": "公開試題",
+      "locator": "粒子模型、原子結構與科學證據判讀",
+      "pattern": "取把觀察、推論、模型與適用範圍分層判讀的能力方向。",
+      "subject": "science",
+      "observedPattern": "取把觀察、推論、模型與適用範圍分層判讀的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "同時尋找『可修改』與『受證據約束』兩個條件，不可只抓到其中一個。",
+  "solutionSteps": [
+    "先判斷暫時性：模型可被新證據修正。",
+    "再判斷非任意性：模型須符合已知觀察。",
+    "補上可檢驗預測，才能接受後續實驗挑戰。",
+    "比較選項，只有 B 同時具備兩條件。",
+    "所以選 B。"
+  ]
 }

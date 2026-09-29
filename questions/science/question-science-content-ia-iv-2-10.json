@@ -2,23 +2,23 @@
   "id": "question-science-content-ia-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年1月3日社區環境站的觀察中，山區測站一週記錄到 10 次、深度約 9 km 的淺層地震，研究「Ia-Ⅳ-2：岩石圈由數個板塊組成」時，最適當的解釋是？",
+  "prompt": "要判斷某區域是否位於活躍板塊邊界，哪種結論最有證據基礎？",
   "options": [
     {
       "id": "A",
-      "text": "只要山區測站有一次地震（本週共 10 次、深度約 9 km）就能確定成因"
+      "text": "發生一次地震就能精確畫出邊界"
     },
     {
       "id": "B",
-      "text": "山區測站發生 10 次地震表示所有火山都會爆發"
+      "text": "由多年 GPS、地震、火山與地質構造資料交叉支持，而非只看單次地震"
     },
     {
       "id": "C",
-      "text": "不需山區測站的位置、深度約 9 km 與時間資料即可判斷"
+      "text": "只要沒有火山就不可能是邊界"
     },
     {
       "id": "D",
-      "text": "應結合山區測站的震央位置、深度約 9 km 與板塊邊界資料判讀"
+      "text": "只看行政區界線即可判定"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "地震成因需比對位置、深度、時間與板塊構造等證據，不能只由一次紀錄推論。 本題對應 KG「Ia-Ⅳ-2：岩石圈由數個板塊組成」。"
+    "value": "B",
+    "explanation": "B。要判斷活躍邊界，應看多年地震／火山分布、GPS 相對位移、震源深度與地形等多項互相支持的證據，並寫出模型限制。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "三筆公立學校公開自然科試題中的板塊、地震火山分布、地形、岩石年齡、GPS 與模型限制判讀能力；本題改寫為板塊構造原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ia-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-ia-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取板塊運動、地震火山與地球構造的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "板塊運動、地震火山與地球構造",
+      "observedPattern": "公開自然科評量常要求由地震火山分布、地形、岩石年齡、位移與剖面資料推論板塊運動；本題改用全新資料語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取地質資料、地形與模型判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "地質資料、地形與模型判讀",
+      "observedPattern": "公開自然科評量常要求由地震火山分布、地形、岩石年齡、位移與剖面資料推論板塊運動；本題改用全新資料語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取地震帶、海底地形與板塊邊界的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "地震帶、海底地形與板塊邊界",
+      "observedPattern": "公開自然科評量常要求由地震火山分布、地形、岩石年齡、位移與剖面資料推論板塊運動；本題改用全新資料語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "要求多項長期、空間與深度證據共同支持活躍邊界。",
+  "solutionSteps": [
+    "圈出板塊、地震火山、海溝、震源深度、岩石年齡、GPS 位移與箭頭方向。",
+    "先把地圖、剖面或時間序列中的直接資料整理出來。",
+    "用張裂、聚合、隱沒或錯動模型連結資料與相對運動。",
+    "排除把板塊等同大陸、把單一地震當邊界證明，或把模型當單一災害預報的選項。",
+    "用多項證據回查結論，並寫出觀測尺度、模型簡化與仍需補查的限制。"
+  ]
 }

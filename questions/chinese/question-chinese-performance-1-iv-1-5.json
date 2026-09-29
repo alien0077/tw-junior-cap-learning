@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-1-iv-1-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "聆聽新聞報導時，哪項筆記最可能是核心訊息？",
+  "prompt": "會議中有人擔心安全、有人在意費用、有人希望保留樹蔭、有人要求先試辦；最好的摘要是？",
   "options": [
     {
       "id": "A",
-      "text": "主播的衣服顏色"
+      "text": "大家都反對改建。"
     },
     {
       "id": "B",
-      "text": "自己對其他新聞的回憶"
+      "text": "大家提出安全、費用、環境與試辦等考量，尚未形成單一方案。"
     },
     {
       "id": "C",
-      "text": "每個停頓的秒數"
+      "text": "大家都同意先試辦，其他意見不重要。"
     },
     {
       "id": "D",
-      "text": "事件發生地點、主要變化、涉及對象與報導來源"
+      "text": "會議很混亂，所以沒有可記錄內容。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "核心筆記應保留事件的關鍵事實、對象、變化與來源，排除與內容無關的細節。"
+    "value": "B",
+    "explanation": "摘要保留共同討論主題與彼此差異，不把多元意見壓成單一贊成或反對。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究聆聽、記錄、歸納與口語理解題型（新聞聆聽）；課綱 1-Ⅳ-1：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究聆聽目的、事實／感受、澄清、摘要、保密與溝通回應。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文聆聽與溝通表現 Ab-Ⅳ-1 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-1-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-1-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "聆聽、摘要與溝通回應",
+      "observedPattern": "公立學校國文評量以聆聽目的、事實與感受、澄清追問、重述摘要、非語言線索、保密界線與多方會議紀錄要求精確回應；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口語溝通、同理與觀點整理",
+      "observedPattern": "公立學校國文評量以聆聽目的、事實與感受、澄清追問、重述摘要、非語言線索、保密界線與多方會議紀錄要求精確回應；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列出每位的關切，再找可共同命名的議題，最後明確寫出尚未決定之處。",
+  "solutionSteps": [
+    "讀題定位：圈出「多方摘要」及說話者的事件、感受、需求、限制或保密要求。",
+    "分層整理：把可核對事實、對方感受與聆聽者推測分開，再依「摘要保留共同討論主題與彼此差異，不把多元意見壓成單一贊成或反對。」設計回應。",
+    "核對正解：選項 B 能保留原意、提出適切澄清，並讓說話者有修正或拒答空間。",
+    "排除誘答：檢查是否替對方診斷、誇大、代做決定、刪除分歧或洩漏私密資訊。",
+    "回讀驗證：確認紀錄或回應既精確又尊重，且下一步能由對方確認而不是由聆聽者猜定。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

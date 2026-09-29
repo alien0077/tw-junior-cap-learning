@@ -2,41 +2,76 @@
   "id": "question-social-content-civ-bm-iv-2-8",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2025年1月5日社區資料中心的資料中，社區有 100 萬元預算處理「公 Bm-Ⅳ-2：不同人對相同誘因的反應」，居民意見不同。哪項決策方式較適當？",
+  "prompt": "同一交通補助對有車家庭幫助小，對沒有車且通勤距離遠的家庭幫助大。評估時應？",
   "options": [
     {
       "id": "A",
-      "text": "只採納聲量最大者且不公開資料"
+      "text": "比較不同家庭的原始限制、實際受益、替代選項與財源負擔，不能只看每人補助金額相同"
     },
     {
       "id": "B",
-      "text": "公開「公 Bm-Ⅳ-2：不同人對相同誘因的反應」方案、成本與受影響對象，蒐集意見後依規則決定"
+      "text": "每人金額相同就已經完全公平"
     },
     {
       "id": "C",
-      "text": "先決定結果再挑選支持數據"
+      "text": "有車家庭幫助小代表政策失敗，不能看公共目標"
     },
     {
       "id": "D",
-      "text": "排除少數受影響居民以加快決定"
+      "text": "只要平均使用量增加，就不必看誰被排除"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-civ-bm-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "公共決策應資訊公開、納入受影響者並說明規則與取捨。 本題對應 KG「公 Bm-Ⅳ-2：不同人對相同誘因的反應」。"
+    "value": "A",
+    "explanation": "形式相同不代表效果相同；公平分析要看起點差異與實際可近性。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf",
+    "sourceLocator": "國立卓蘭高中附設國中部公開社會課程計畫；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方課綱、單元 KG、三個公立學校公開來源的題型方向，獨立改寫偏好、資源、資訊、風險、規範、群體差異、預測、政策公平與證據比較；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-civ-bm-iv-2"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-civ-bm-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "校園生活與行為選擇",
+      "observedPattern": "公立學校社會科公開試題以生活政策、個體差異、制度效果與資料比較考查行為推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "政策反應與多重資料",
+      "observedPattern": "公立學校社會科公開試題以生活政策、個體差異、制度效果與資料比較考查行為推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先固定相同誘因，再逐一比較每個人的偏好、限制、資訊、規範與預期後果，最後用對照資料區分觀察到的行為、合理解釋與仍待查證的原因。",
+  "solutionSteps": [
+    "讀題定位：圈出「政策公平」以及相同的誘因、不同的行動者、條件與實際反應。",
+    "比較因素：整理偏好、資源、資訊、規範、預期風險與替代方案，區分已知與推測；本題核心是「形式相同不代表效果相同；公平分析要看起點差異與實際可近性。」",
+    "核對正解：選項 A「比較不同家庭的原始限制、實際受益、替代選項與財源負擔，不能只看每人補助金額相同」能避免把行為差異簡化成單一原因。",
+    "排除誘答：找出把相同獎勵當成相同效果、把結果等同品格、把相關當成唯一因果或忽略公平與資訊的說法。",
+    "結論回查：確認還需要哪些比較資料，並說明政策如何調整以回應不同處境。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

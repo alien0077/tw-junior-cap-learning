@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-n-iv-8",
   "subject": "math",
-  "title": "n-Ⅳ-8：等差級數和",
+  "title": "n-Ⅳ-8：用首尾配對理解等差級數和",
   "knowledgeIds": [
     "kg-math-performance-n-iv-8"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「等差級數和」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "等差級數是等差數列前幾項的總和，核心不是死背公式，而是看見首尾配對後每一對的和都相同。若首項為 a₁、末項為 aₙ、共有 n 項，總和可寫成 n(a₁+aₙ)/2；當末項或項數未知時，必須先用等差通項補齊條件。本課以階梯座位、分期存款和圖形點列的自編情境，練習配對推導、公式選擇、項數檢查與情境回代。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「等差級數和」相關的關係。"
+        "heading": "先把前後項配成對",
+        "body": "等差數列首尾相加、第二項與倒數第二項相加，所得的和相同。把正向與反向兩次相加，就能看出總和等於項數乘首尾和的一半。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「等差級數和」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "公式中的每個量都有角色",
+        "body": "Sₙ=n(a₁+aₙ)/2 需要項數、首項與末項；若題目只給首項、公差和項數，先用 aₙ=a₁+(n−1)d 求末項，再代入總和。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「等差級數和」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "奇偶項數都可用配對",
+        "body": "項數為偶數時可完全配對；項數為奇數時中間項自己配對，仍可用平均值乘項數。不要只在偶數例子中背公式。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「等差級數和」，並指出至少一項支持判斷的條件。"
+        "heading": "總和要符合情境",
+        "body": "座位數、存款金額或點的個數可能必須是整數，公差也有單位。算出總和後要檢查項數、末項、單位與是否包含第一項及最後一項。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「等差級數和」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "用首尾配對理解公式，而不是只背 Sₙ。",
+    "缺末項時先用等差通項求出，缺項數時先整理條件。",
+    "奇數項要保留中間項，仍可用平均值乘項數。",
+    "回代首項、公差、項數、末項與單位檢查總和。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「等差級數和」並驗算結果。",
-    "scenario": "以「n-Ⅳ-8：等差級數和」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "用首尾配對、項數與通項求出等差級數和並驗算。",
+    "scenario": "調整首項、公差與項數，觀察末項及首尾平均如何共同決定總和。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "symbol": "a",
+        "meaning": "等差數列的首項"
+      },
+      {
+        "symbol": "d",
+        "meaning": "相鄰項固定增加的公差"
+      },
+      {
+        "symbol": "n",
+        "meaning": "納入總和的項數"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「等差級數和」的第一步是什麼？",
+        "prompt": "等差數列求和時，哪一組量能直接形成每對共同和？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "首項與末項",
+          "首項與公差",
+          "項數與公差相乘"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "首尾配對的和相同，首項與末項決定每對的共同和。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "首項 6、公差 3、12 項時，末項如何求？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "6+(12−1)×3",
+          "6+12×3",
+          "6×3¹²"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "從第一項到第十二項走 11 步，所以使用 n−1。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "首項 6、末項 39、共 12 項的總和是什麼？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "12(6+39)/2",
+          "6+39×12",
+          "(39−6)×12"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "總和等於項數乘首尾平均，也就是 n(a₁+aₙ)/2。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "n-Ⅳ-8：等差級數和；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；n-Ⅳ-8：等差級數和：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「等差級數和」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「n-Ⅳ-8：等差級數和」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；n-Ⅳ-8：等差級數和：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「n-Ⅳ-8：等差級數和」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；n-Ⅳ-8：等差級數和：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「n-Ⅳ-8：等差級數和」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「等差級數和」",
-        "body": "以「等差級數和」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "階梯座位的總數怎麼快算？",
+        "body": "原創看台每排座位為 6、9、12、15、18，請學習者先逐項相加，再把第一排和最後一排、第二排和倒數第二排配對。比較兩種方法所需的步驟，讓學生發現每一對都是 24，總和可以由平均每排乘排數得到。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「等差級數和」的概念架構",
-        "body": "本單元依官方課綱所列的「等差級數和」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "從兩次排列推導總和",
+        "body": "把 S= a₁+a₂+…+aₙ 反向寫成 S=aₙ+aₙ₋₁+…+a₁，逐欄相加得到 2S=n(a₁+aₙ)，再除以 2。要求學生指出 n 代表項數、a₁+aₙ 是每一對的共同和，避免把最後一項誤當公差。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「n-Ⅳ-8：等差級數和」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "先求末項再求總和",
+        "body": "首項 6、公差 3、共 12 項時，先算 a₁₂=6+11×3=39，再用 S₁₂=12(6+39)/2=270。最後用平均值 (6+39)/2=22.5 乘 12 交叉驗證，並檢查 6 到 39 共走 11 次。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「等差級數和」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "辨認是否漏掉端點",
+        "body": "給出 4 到 28、每次加 4 的所有項，要求學習者先求項數，再求總和。針對把 4 到 28 當成 24/4 項或只加中間幾項的錯誤，回饋要求列出通項與端點，確認第一項和末項都被納入。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「等差級數和」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "把總和放回分期存款",
+        "body": "原創分期存款第一月存 500 元，每月多存 100 元，共 8 個月。先辨識金額形成等差數列，再求第八月金額與八個月總存款；若問題改成只計偶數月，要重新列出子數列，不能直接套原項數。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「等差級數和」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用平均值檢查公式答案",
+        "body": "請學習者修正『首項 6、末項 39、12 項的總和是 6+39×12』。先指出運算順序和平均概念錯誤，再以首尾平均 22.5 乘 12 得到 270，最後用通項逐項確認末項與項數。"
       }
     ],
     "summary": [
-      "先用自己的話界定「等差級數和」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "首尾配對後每一對和相同，總和等於項數乘首尾平均。",
+      "若缺末項，先用等差通項求出，再代入級數和。",
+      "項數、端點與是否包含中間項必須清楚，奇偶項數都可處理。",
+      "用平均值、逐項範圍、單位與回代檢查總和。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「等差級數和」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼等差級數可用首尾平均乘項數？",
+        "expectedEvidence": "首尾、次首與次末等配對的和相同，因此每項平均是 (a₁+aₙ)/2，乘 n 得總和。"
       },
       {
-        "prompt": "在「等差級數和」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "首項 6、公差 3、12 項的總和如何求？",
+        "expectedEvidence": "先求末項 39，再算 12(6+39)/2=270，並能用平均值交叉驗證。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「等差級數和」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "只計偶數月存款時，為什麼不能直接把項數換成一半？",
+        "expectedEvidence": "偶數月形成新的子數列，首項、末項與公差需重新確認，不能只改項數。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『n-Ⅳ-8：用首尾配對理解等差級數和』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整首項、公差與項數，觀察末項及首尾平均如何共同決定總和。』開始前，先回答：等差數列求和時，哪一組量能直接形成每對共同和？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整首項、公差與項數，觀察末項及首尾平均如何共同決定總和。』回答：首項 6、末項 39、共 12 項的總和是什麼？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "等差數列求和時，哪一組量能直接形成每對共同和？；操作時先預測，再依『n-Ⅳ-8：用首尾配對理解等差級數和』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-8：用首尾配對理解等差級數和)：答案 A；選項內容：首項與末項",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。首尾配對的和相同，首項與末項決定每對的共同和。",
+          "feedback": "首尾配對的和相同，首項與末項決定每對的共同和。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "首項 6、公差 3、12 項時，末項如何求？；操作時先預測，再依『n-Ⅳ-8：用首尾配對理解等差級數和』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-8：用首尾配對理解等差級數和)：答案 A；選項內容：6+(12−1)×3",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。從第一項到第十二項走 11 步，所以使用 n−1。",
+          "feedback": "從第一項到第十二項走 11 步，所以使用 n−1。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "首項 6、末項 39、共 12 項的總和是什麼？；操作時先預測，再依『n-Ⅳ-8：用首尾配對理解等差級數和』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-8：用首尾配對理解等差級數和)：答案 A；選項內容：12(6+39)/2",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。總和等於項數乘首尾平均，也就是 n(a₁+aₙ)/2。",
+          "feedback": "總和等於項數乘首尾平均，也就是 n(a₁+aₙ)/2。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；等差級數和的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以首尾配對、項數與通項理解等差級數和",
+          "公開課程結構支持以首尾配對、項數與平均值理解等差級數和。"
+        ],
+        "representations": [
+          "數列排列、首尾配對表格與總和公式互相轉換"
+        ],
+        "examplesOrEvidence": [
+          "本課的階梯座位、分期存款與圖形點列均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把末項當公差，或漏算第一項與最後一項"
+        ],
+        "assessmentEmphasis": [
+          "要求推導或解釋公式並回代項數與端點"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；等差級數和的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過操作與圖形排列看見等差總和結構",
+          "公開課程結構支持以首尾配對、項數與平均值理解等差級數和。"
+        ],
+        "representations": [
+          "階梯點列、首尾配對與平均值表徵"
+        ],
+        "examplesOrEvidence": [
+          "本課的階梯座位、分期存款與圖形點列均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "只在偶數項時配對，遇到奇數項就不會處理"
+        ],
+        "assessmentEmphasis": [
+          "重視配對歷程、指定條件與結果檢核"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；等差級數和的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "把級數和連結到存款、數量及單位限制",
+          "公開課程結構支持以首尾配對、項數與平均值理解等差級數和。"
+        ],
+        "representations": [
+          "分期金額、圖形點數、項數與單位情境"
+        ],
+        "examplesOrEvidence": [
+          "本課的階梯座位、分期存款與圖形點列均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "只套公式而不確認納入範圍、單位或子數列"
+        ],
+        "assessmentEmphasis": [
+          "評估模型、端點、項數與生活意義是否一致"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持以首尾關係、項數與等差通項求級數和。",
+      "首尾配對與平均值是公式背後的可解釋推理。",
+      "端點、項數、奇偶性、單位與情境範圍需要回代檢查。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯等差級數和與通項關係；康軒較突顯配對、排列與操作表徵；翰林較突顯存款、數量與端點限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以階梯座位的首尾配對比較逐項相加與平均值乘項數。",
+      "以首項、公差、項數先求末項，再用兩種方法驗證總和。",
+      "把奇偶項數、子數列、端點、單位與分期存款整合成互動任務。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織等差級數和、首尾配對、通項、奇偶項數與情境應用。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

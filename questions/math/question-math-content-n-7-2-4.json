@@ -2,23 +2,23 @@
   "id": "question-math-content-n-7-2-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "2³×3×5 的值是多少？",
+  "prompt": "下列哪一個是 126 的正確標準質因數分解式？",
   "options": [
     {
       "id": "A",
-      "text": "120"
+      "text": "2×3²×7"
     },
     {
       "id": "B",
-      "text": "60"
+      "text": "2²×3×7"
     },
     {
       "id": "C",
-      "text": "90"
+      "text": "2×3×7²"
     },
     {
       "id": "D",
-      "text": "150"
+      "text": "6×3×7"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "2³×3×5＝8×3×5＝120。"
+    "explanation": "126＝2×63＝2×3²×7，因此選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究因數分解、次方表示與數量計算能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供質因數分解、標準分解式、冪次與因數結構能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的質因數分解方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-n-7-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-7-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "prime factorization, standard form, exponents, reconstructing integers, and factor-count reasoning",
+      "observedPattern": "公立學校公開數學試題常要求把整數分解為質因數冪次、由標準分解式還原數值、比較冪次或判斷因數結構；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "prime factorization, standard form, exponents, reconstructing integers, and factor-count reasoning",
+      "observedPattern": "公立學校公開數學試題常要求把整數分解為質因數冪次、由標準分解式還原數值、比較冪次或判斷因數結構；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "逐一用小質數試除，再將剩餘部分繼續分解，避免把 6 當成質數。",
+  "solutionSteps": [
+    "126 可被 2 整除，得 63。",
+    "63＝3×21＝3×3×7。",
+    "整理為 2×3²×7。",
+    "確認底數 2、3、7 都是質數。",
+    "選 A，乘回 2×9×7＝126。"
+  ]
 }

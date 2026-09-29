@@ -1,0 +1,42 @@
+{
+  "decision": "D-355",
+  "unit": "Fb-Ⅳ-4：月相變化的規律",
+  "date": "2026-09-28",
+  "scopeAuthority": "NAER official curriculum: explain regular lunar phases through relative Sun-Earth-Moon positions; moonrise time and direction are explicitly out of scope.",
+  "completed": {
+    "learnerVisibleLesson": "Six original lesson sections now explain fixed illumination, changing observer-visible fraction, four anchor positions, continuous waxing/waning, and schematic-model limits. content.sections exactly matches teaching.body.",
+    "sourceToDecisionFusion": [
+      "Nani-hosted public exam-preparation PDF is classified as an exam-analysis source, not textbook content; its moonrise-time prompt is treated as an out-of-scope cross-unit boundary.",
+      "Kang Hsuan official XML is classified as a resource-title index, not textbook prose; its lunar-calendar resource is treated as extension, not core instruction.",
+      "Hanlin official public feature page is limited to its visible four-phase and relative-position locator; school curriculum plans are explicitly school-authored adoption evidence, not publisher-authored chapters.",
+      "The synthesis chooses the curriculum-bounded common concept and does not claim full access to any publisher textbook chapter."
+    ],
+    "interactive": "Rewrote four prompts and simulation objectives around fixed light direction, moon position, observer sightline, visible lit fraction, and cyclic order; removed rise-time matching.",
+    "questions": "Re-authored Q6 as a controlled-model experiment and Q9 as an inference-limit question for an unscaled diagram. Both include answer keys, explanations, strategies, and five unit-specific solution steps. A scan of the other eight items found Q8's answer key D disagreed with its final solution step B; corrected the solution step and added regression coverage.",
+    "specification": "Replaced generic objectives, concepts, misconceptions, flow, model state, student actions, feedback, transfer, exit ticket, test cases, and done criteria with lunar-phase-specific requirements; kept publisher slots pending and qaStatus untested.",
+    "regression": "Added implementation/runtime/science-fb-iv-4-substantive-fusion.test.mjs and npm run test:science:fb-iv-4."
+  },
+  "verification": {
+    "targetRegression": "PASS",
+    "npmTest": "PASS",
+    "validateData": "PASS: 14,476 JSON files; 13,112 IDs; 1,032 KG nodes; all 1,052 lessons and 10,566 questions remain draft.",
+    "implementationSpecs": "PASS structural validation: 1,027 specs, 0 errors, 1,027 pending; the unit remains qaStatus=untested.",
+    "strictLessonIndependence": "PASS: 614 learning-content lessons; 0 risks; 0 affected references; 0 strict failures.",
+    "siteIndex": "PASS: 1,052 lessons; 10,526 question paths; 40 mappings; revision local.",
+    "browserSmoke": "PASS in authorized environment: full traversal 1,027/1,027; 320/375/768 viewports, keyboard, accessibility-tree contract, reduced motion pass.",
+    "studentPage": "PASS in Python Playwright 1.58.0/Chromium: direct student page search rendered six Fb-IV-4 sections and four interaction steps; corrected geometry present; no page errors.",
+    "axe": "PASS with limits: 48 runs; 0 violations; 6 incomplete checks that axe could not determine.",
+    "legacyQuestionFirstPass": "NOT PASS: existing script requires exactly 3 examPatternRefs per question while current records contain 1 each; it checked source-ref count only, not subject correctness. Do not interpret its 0/10 as a content judgment or mark question review complete.",
+    "diffCheck": "PASS for scoped changed files."
+  },
+  "remainingGates": [
+    "Full publisher-authored chapters for Nani, Kang Hsuan, and Hanlin were not available/read; publisher ledger slots remain pending.",
+    "Question source pattern locators need item-level/public-school verification or an explicitly corrected evidence contract; do not reuse the legacy 3-ref failure as a pass.",
+    "Lesson and questions remain draft; no content-reviewed or release promotion.",
+    "This report does not claim overall project completion, commit, or push."
+  ],
+  "notRepeated": [
+    "No A-7-2 files were edited; the global browser smoke exercised its existing interaction as regression coverage only.",
+    "Public-exam source ledger was not rerun; latest verified 10,566/10,566 and pending 0 was reused."
+  ]
+}

@@ -1,0 +1,146 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-6-iv-5
+  knowledgeGraphIds:
+  - kg-english-performance-6-iv-5
+  title: 6-Ⅳ-5：主動查詢工具書或網路
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 6-Ⅳ-5：主動查詢工具書或網路
+    curriculumIntent: 主動使用查詢工具理解已接觸的英語資訊；課程手冊子項要求能利用字典／網路資源例句理解詞義與用法，並藉工具深化理解。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 對照三家可公開查閱的數位詞彙／詞條入口，僅融合可直接核實的工具呈現與共通學習目的；不可冒稱為指定冊次課文或出版社教法。
+    currentEvidenceStatus: curriculum-and-kg-grounded; three-publisher-public-digital-resource-evidence-recorded; textbook-chapter-text-not-claimed
+  learningGoals:
+  - 從已讀英文語境中提出可回答的詞義／用法問題
+  - 使用詞典或版本配套數位資源中的詞性、義項、例句等欄位縮小候選
+  - 把候選義項放回原句，以句法及情境檢驗是否真正解決理解問題
+  - 辨認教材詞卡、詞典詞條及一般網路資訊的用途與來源差異
+  prerequisites:
+  - 能理解簡短英文句子並圈出不熟悉的字詞／片語
+  - 知道基本詞性位置，如名詞前修飾語常由形容詞擔任
+  coreConcepts:
+  - 6-Ⅳ-5-1：運用查詢工具中的例句理解詞義與用法
+  - 6-Ⅳ-5-2：藉查詢工具深化已接觸英語資訊的理解
+  - 詞條欄位：拼字、詞性、義項、例句及視需要查看的音標／詞形
+  - 上下文預判、工具查詢、義項比對、回原句驗證
+  - 來源／版本數位資源的功能限制
+  misconceptions:
+  - 直接套用詞典第一個中文義項，忽略詞性及句意
+  - 只記中文，不查看例句／搭配，誤以為已懂用法
+  - 把自動翻譯或搜尋摘要當成已查證的詞條
+  - 混淆字典查義（6-Ⅳ-5）、依上下文用字典選義（7-Ⅳ-1）和搜尋新資源並分享（6-Ⅳ-6）
+  - 字典例句與原句不合時仍硬套，不回頭改問或換工具
+  contentFlow:
+  - 'predict: 從 light bag 原句預測 light 的候選義及句中詞性，不先把字典第一義當答案'
+  - 'manipulate: 查詞條並選取詞性、義項及例句，將候選義代回原句測試搭配'
+  - 'observe: 比較不同義項例句的句法位置與生活場景，觀察哪一義項能解釋 bag／carry 線索'
+  - 'explain: 用詞性、例句搭配及原句證據說明選義，並以自己的話重述而非複製條目'
+  - 'recover: 若代回不通，檢查片語或換可信工具再查，並記錄尚未解決之處'
+  - 'transfer: 將詞性—例句—原句核對路徑用於新的英語訊息，依新情境重新查證而非搬用舊答案'
+  - 'record: 留下工具、欄位、選義理由與尚未解決處'
+  visualizations:
+  - 本課自編 light 詞條摘要卡並列詞性與兩個釋義，旁列原創公告句；非照抄真實字典版面或原句
+  - 以標籤文字區分詞性、候選義項和語境證據；色彩不單獨承擔意義
+  - 所有工具資訊均以靜態本地資料呈現，外網不可用時仍能完成所有判讀
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-6-IV-5-I01
+    component: GuidedChoiceBlock
+    purpose: 練習把詞條欄位和語境線索配對，將詞義選擇代回原句驗證
+    initialState:
+      mode: guided-choice
+      showAnswer: false
+      selectedEvidence: []
+    studentActions:
+    - 逐題選擇查詢步驟、欄位或語境最吻合的策略
+    - 錯答顯示本題提示並保留重試
+    - 答對後顯示唯一最佳選擇與語境／詞條解析
+    - 可用鍵盤完成全程且不需載入外部字典
+    visualRules:
+    - 回饋須指向詞性、義項、例句或原句情境中的具體線索
+    - 不將查詢答案設為初始可見，也不以搜尋結果順序當理由
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切題幹、選項、提示及解析
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-6-IV-5-I01
+      trigger: 只選 light 的第一個中文解釋，忽略其修飾 bag 的句法和攜帶情境
+      prompt: 請指出詞條哪個欄位和原句哪個線索共同支持你的選義。
+      expectedEvidence: 指出形容詞詞性、候選義項和帶袋子的情境，並將義項代回原句
+    feedback:
+      correct: 說明詞性／義項／語境如何一致，請學生將方式遷移到新字詞。
+      incorrect: 先提示檢查修飾位置或帶回句子的語意，不直接告知義項；允許重試後才顯示完整理由。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "使用分步選擇、可重試提示與答案解析的交互概念；全部詞條摘要、原句、選項與回饋均由本課自編。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "用本課原創詞條欄位和句子做局部查詢判讀，不連接出版社會員資料或外部搜尋結果。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "選項具明確可讀標籤與鍵盤操作；錯誤提示和完成狀態以文字表達，不單靠顏色或動畫。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "正文、查詢欄位、題目和答案均本地呈現，網路中斷或第三方工具不可用時仍可學習。"
+  capTransfer:
+    questionType: 詞條欄位查詢／多義詞語境選擇／查詢步驟遷移
+    stemConstraint: 使用本課自編英文微情境，不複製出版社例句或公開考題；須需用詞條證據加語境判斷
+    requiredResponse: 說明查詢欄位、詞性／義項選擇及回原句的驗證
+    scoring: 工具欄位合適 1、語境選義正確 1、說明驗證／限制 1
+  exitTicket:
+    prompt: 請說明你遇到的查詢問題、使用工具的哪個欄位、如何把結果放回原文驗證。
+    successCriteria:
+    - 問題明確且指向字詞／用法
+    - 指出查詢工具中的欄位或例句
+    - 以語法和上下文驗證候選意思
+  expressionExtension:
+    applicable: true
+    task: 寫兩句英文，一句保留原訊息，一句用本課查得義項改述，再用中文註記詞性、例句線索與來源
+    constraint: 例句與說明自編；不抄字典條目或教材例句；學生先寫，系統提示檢查詞性／語境，不代寫完整段落
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 學生頁顯示六段單元專屬教學，content.sections 與 teaching.body headings 一致，不重複呈現正文。
+  - GuidedChoice 載入時不先揭露答案；四題錯答均有可定位提示且可重試，正答顯示對應詞條／語境解析。
+  - 在 320、375、768px 鍵盤操作四題，題幹、選項、提示和解析無溢位或遺失。
+  - 封鎖外網後頁面仍顯示完整自編詞條卡及互動，完成查詢理解流程不依賴第三方服務。
+  - Fallback：刻意阻擋 simulations.js 後，本地自編詞條及四題 GuidedChoice 仍可鍵盤完成、錯答重試並取得詞條／語境解析。
+  - 三家版本證據只描述本次公開查讀的數位詞彙資源；lesson／spec 不得宣稱已讀完指定出版社課本章節。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 無泛用占位或只替換單元名詞的正文／互動；最終教材審查由使用者ChatGPT執行，不列為Codex gate
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 6-Ⅳ-5
+    role: official-curriculum-source-of-truth

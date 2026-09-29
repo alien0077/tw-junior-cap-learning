@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-3-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-3／理解簡易英文標示」notice for the science room, item 8: “Room 204 is closed today.” What does it tell people?",
+  "prompt": "A school equipment desk displays: 'Borrow a tablet for up to 90 minutes. Return it no later than 4:30 p.m., when the library closes.' A student borrows one at 3:20 p.m. What is the latest return time?",
   "options": [
     {
       "id": "A",
-      "text": "For item 8 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 cannot be used today."
+      "text": "5:00 p.m., because 90 minutes is always allowed."
     },
     {
       "id": "B",
-      "text": "For item 8 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 opens at midnight."
+      "text": "4:30 p.m., because the closing rule comes first."
     },
     {
       "id": "C",
-      "text": "For item 8 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 is the bus stop."
+      "text": "6:20 p.m., after adding three hours."
     },
     {
       "id": "D",
-      "text": "For item 8 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 is outside the building."
+      "text": "There is no need to return the tablet."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-3／理解簡易英文標示, question 8."
+    "value": "B",
+    "explanation": "Ninety minutes after 3:20 would be 4:50, but the notice also requires return no later than 4:30. The earlier limit controls, so B is the latest permitted time."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87-%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "高雄市立國昌國中109學年度第二學期二年級第二次定期評量英文科試題卷；PDF第3頁第21題：從對話解讀告示中的消費條件。本題依題型與推理能力重新創作，不複製原題、選項、圖像或答案。",
+    "authoringNote": "原創題幹與選項；僅將公立學校公開試題作為題型與推理能力參照。答案、策略及逐步解說為本題獨立撰寫；保持draft，未執行Terra複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87-%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立國昌國中109學年度第二學期二年級第二次定期評量英文科試題卷",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "PDF第3頁第21題：從對話解讀告示中的消費條件",
+      "observedPattern": "讀者需把告示中的購買條件轉成可採取的消費決定；本題改成借用器材的時限條件。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "遇到同時存在的條件，要全部遵守；分別算出各自期限後，採用較早、較嚴格的限制。",
+  "solutionSteps": [
+    "讀出借用上限：自3:20起最多90分鐘，算到4:50 p.m.。",
+    "另讀出第二個條件：必須在4:30 p.m.閉館前歸還。",
+    "比較兩個期限，4:30比4:50早，因此它才是實際最後期限。",
+    "A只採用90分鐘而忽略閉館條件；C計算錯誤，D違反歸還規定。",
+    "答案選B；多條件公告要逐條列出，再以最先到期者安排行動。"
+  ]
 }

@@ -2,41 +2,78 @@
   "id": "question-science-content-ka-iv-3-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年6月22日自然科教室的觀察中，水中射向鏡面時，光線與鏡面法線的入射角為 60°，研究「Ka-Ⅳ-3：介質性質與聲音傳播速率」時，反射角為何？",
+  "prompt": "用回聲測量山壁距離時，若聲音往返時間為 2.0 s、空氣聲速取 340 m/s，山壁距離約為？",
   "options": [
     {
       "id": "A",
-      "text": "60°（水中射向鏡面）"
+      "text": "340 m"
     },
     {
       "id": "B",
-      "text": "30°（「Ka-Ⅳ-3：介質性質與聲音傳播速率」中把入射角誤當折射角）"
+      "text": "680 m"
     },
     {
       "id": "C",
-      "text": "120°（「Ka-Ⅳ-3：介質性質與聲音傳播速率」中把入射角加倍）"
+      "text": "170 m"
     },
     {
       "id": "D",
-      "text": "120°（「Ka-Ⅳ-3：介質性質與聲音傳播速率」中以平角計算）"
+      "text": "2 m"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ka-iv-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "反射定律指出反射角等於入射角，因此為 60°。 本題對應 KG「Ka-Ⅳ-3：介質性質與聲音傳播速率」。"
+    "explanation": "聲音走的是來回路程，總路程=340×2.0=680 m，單程山壁距離=680÷2=340 m。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的聲音傳播、介質、粒子、溫度、回聲、波速與安全能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ka-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "聲音傳播、介質、速率與回聲資料判讀",
+      "pattern": "取由聲音在不同介質傳播、時間資料與生活情境判讀波速的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由聲音在不同介質傳播、時間資料與生活情境判讀波速的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "聲音、介質、溫度、回聲與波動情境",
+      "pattern": "取從實驗圖表、波動模型與聲學生活情境推論傳播速率的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從實驗圖表、波動模型與聲學生活情境推論傳播速率的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認回聲是往返，再除以二。",
+  "solutionSteps": [
+    "寫出總路程 v×t=340×2=680 m。",
+    "確認這是聲音到山壁再回來的距離。",
+    "用 680÷2 求單程。",
+    "得到 340 m 並檢查單位。",
+    "所以 A 正確。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

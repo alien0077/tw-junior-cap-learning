@@ -2,23 +2,23 @@
   "id": "question-math-content-n-7-1-3",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "84 張貼紙要平均分裝，先將 84 作標準質因數分解，結果為何？",
+  "prompt": "下列哪一組全部都是 20 以內的質數？",
   "options": [
     {
       "id": "A",
-      "text": "2²×3×7"
+      "text": "2、3、5、11、19"
     },
     {
       "id": "B",
-      "text": "2×3²×7"
+      "text": "1、3、7、13、17"
     },
     {
       "id": "C",
-      "text": "2²×3²"
+      "text": "2、4、7、13、19"
     },
     {
       "id": "D",
-      "text": "2×42"
+      "text": "3、5、9、11、17"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "84＝2×2×3×7，因此為 2²×3×7。"
+    "explanation": "1 不是質數，4、9 不是質數；A 的 2、3、5、11、19 都恰有兩個正因數，所以選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究數與量判讀、質數、因數與標準分解式能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱數學能力與公開會考／公立國中試題的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供 100 以內質數、因數、整除與質數辨識能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的質數能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-n-7-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-7-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "prime-number definition, divisibility, listing primes, prime recognition, and the unique even prime",
+      "observedPattern": "公立學校公開數學試題常以質數定義、因數個數、整除判斷、列舉指定範圍質數與辨識唯一偶質數檢核數感；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "prime-number definition, divisibility, listing primes, prime recognition, and the unique even prime",
+      "observedPattern": "公立學校公開數學試題常以質數定義、因數個數、整除判斷、列舉指定範圍質數與辨識唯一偶質數檢核數感；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "逐一套用質數定義，特別留意 1、偶數與平方數的陷阱。",
+  "solutionSteps": [
+    "先排除含 1 的 B，因 1 只有一個正因數。",
+    "排除含 4 的 C，因 4＝2×2。",
+    "排除含 9 的 D，因 9＝3×3。",
+    "檢查 A 中 2、3、5、11、19 均不能由更小質數整除。",
+    "選 A，確認整組沒有合數。"
+  ]
 }

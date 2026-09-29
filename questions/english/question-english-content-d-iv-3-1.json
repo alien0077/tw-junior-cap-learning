@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-3-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-3／釐清因果」task, what is the best way to prepare question 1?",
+  "prompt": "The freezer door was left open overnight. In the morning, staff found the food warm and discarded it. What happened first?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-3／釐清因果."
+      "text": "The food was discarded before the door was left open."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-3／釐清因果."
+      "text": "The freezer door was left open overnight."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-3／釐清因果."
+      "text": "Staff checked the food after it had already been discarded."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-3／釐清因果."
+      "text": "The notice was written before anyone noticed the food was warm."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-3／釐清因果, question 1."
+    "value": "B",
+    "explanation": "門整夜敞開是最早事件；食物變暖與丟棄發生在隔天檢查時，因此選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87_1.pdf",
+    "sourceLocator": "PDF第2頁第23題：依文章線索排列漢堡發展事件先後；僅取時間順序重建能力。",
+    "authoringNote": "參照公立學校公開英文段考所呈現的時間順序、原因辨識、篇章線索或因果推論能力，題幹、情境、數據、選項、答案與解析均獨立撰寫；未複製試卷。課程版本研究與全案內容審查尚未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87_1.pdf",
+      "title": "高雄市立國昌國中110學年度第1學期第1次段考三年級英語科試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第2頁第23題：依文章線索排列漢堡發展事件先後；僅取時間順序重建能力。",
+      "observedPattern": "閱讀題先辨認明示年代與事件先後，再排出時間鏈；本題冷凍庫情境、事件與敘述均為新編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先找時間標記，再將原因事件和後續結果排成時間線；不要把通知敘述順序直接當作事情發生順序。",
+  "solutionSteps": [
+    "先圈出 overnight 與 In the morning，兩者標出先後時間。",
+    "夜間先發生的是冷凍庫門未關妥。",
+    "隔天早上才發現食物變暖，接著才決定丟棄。",
+    "所以最早事件是 freezer door was left open overnight，答案 B。",
+    "回看選項：A 把處置放到原因之前，其餘選項也違反文中時間線。"
+  ]
 }

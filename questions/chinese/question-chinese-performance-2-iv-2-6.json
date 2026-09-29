@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-2-iv-2-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "同學說：「這部影片很有教育意義。」若要了解他的理由，哪個問題最適合？",
+  "prompt": "有人主張「設置提醒就能讓所有人準時」；哪個追問最能測試限制？",
   "options": [
     {
       "id": "A",
-      "text": "所有影片都有教育意義嗎？"
+      "text": "你能保證所有人會準時嗎？"
     },
     {
       "id": "B",
-      "text": "你看影片花了幾分鐘？"
+      "text": "提醒很有用，不需討論例外。"
     },
     {
       "id": "C",
-      "text": "影片中的哪個情節讓你這樣判斷？"
+      "text": "若有人沒有手機或收到提醒仍不理解要求，方案要如何處理？有這類資料嗎？"
     },
     {
       "id": "D",
-      "text": "你是不是只是在跟著別人說？"
+      "text": "我找一個成功案例就夠了。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-2-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "要求指出具體情節，能讓對方說明判斷依據而非停留在評語。"
+    "explanation": "反例把所有的邊界具體化，並要求替代方案或資料，能檢查方法而非只增加信心。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究聽聞、邏輯提問與回饋能力方向（由評語追問依據）；另以官方語文領域課綱核對 2-Ⅳ-2（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究開放追問、證據回饋、例外、協商與可修正行動。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文口語表達與討論回饋 Ab-Ⅳ-2 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-2-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-2-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "討論提問、回饋與論證",
+      "observedPattern": "公立學校國文評量以開放追問、群體詞、隱含條件、證據回饋、反例、協商執行欄位、成效與代價及修正循環要求口語互動；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "公共議題、條件與多方回應",
+      "observedPattern": "公立學校國文評量以開放追問、群體詞、隱含條件、證據回饋、反例、協商執行欄位、成效與代價及修正循環要求口語互動；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "保留主張前提，再設計可能失效的情境，追問如何支援與評估。",
+  "solutionSteps": [
+    "讀題定位：圈出「反例追問」與主張、群體詞、條件、回饋、例外或執行欄位。",
+    "拆解互動：先確認對方真正說了什麼，再依「反例把所有的邊界具體化，並要求替代方案或資料，能檢查方法而非只增加信心。」設計可查證、可回應的問題。",
+    "核對正解：選項 C 能降低模糊、保留不同聲音，並把討論推向可執行與可檢查的下一步。",
+    "排除誘答：檢查是否用權威、嘲諷、盲信、單一成功案例或投票取代理由與條件分析。",
+    "回讀驗證：確認問題、回饋、行動責任與評估方式形成完整的協商循環。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

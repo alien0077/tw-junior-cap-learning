@@ -2,23 +2,23 @@
   "id": "question-english-content-d-iv-1-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-1／綜合資訊推論」task, what is the best way to prepare question 10?",
+  "prompt": "A poster says a market began a reusable-container program. A data card shows recorded trash fell from 120 bags before the program to 75 afterward. Which conclusion is supported?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-1／綜合資訊推論."
+      "text": "The program permanently eliminated all market waste."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-1／綜合資訊推論."
+      "text": "The program alone caused the whole decrease."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-1／綜合資訊推論."
+      "text": "The market recorded 45 more bags afterward."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-1／綜合資訊推論."
+      "text": "Recorded trash was 45 bags lower afterward; these two figures alone do not prove the program caused all of the change."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-1／綜合資訊推論, question 10."
+    "value": "D",
+    "explanation": "D 120減75為45袋，資料支持方案後紀錄量少45袋；前後數字本身不能證明減少全由方案造成。 Correct answer: D"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+    "sourceLocator": "PDF第3頁第34題；依文本證據限定推論範圍；僅取閱讀整合與推論能力型態，不複製原題內容。",
+    "authoringNote": "依官方英語課綱D-Ⅳ-1與KG獨立創作綜合資訊推論題，參照內湖國中公立英語段考相關題型；未複製原卷題文、選項或答案。待AI內容審查；依使用者指示不安排Terra審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-content-d-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+      "title": "臺北市立內湖國中113學年度第2學期八年級第1次段考英語科",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF第3頁第34題；依文本證據限定推論範圍",
+      "observedPattern": "僅參照公立國中英語試題的地圖定位、時間／條件整合或文本證據推論能力；本題情境、數據、選項與答案獨立創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "計算實施前後的差值，只陳述資料支持的變化，不把時間先後直接當作因果證明。",
+  "solutionSteps": [
+    "方案前記錄120袋，方案後記錄75袋。",
+    "相減得到120－75＝45袋。",
+    "資料支持方案後紀錄量少45袋。",
+    "前後比較未排除其他因素，所以不能說方案單獨造成全部變化或永久消除垃圾。",
+    "答案 D；區分觀察到的差值和需要額外證據的因果主張。"
+  ]
 }

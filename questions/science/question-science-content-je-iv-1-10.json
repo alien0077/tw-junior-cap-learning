@@ -2,41 +2,78 @@
   "id": "question-science-content-je-iv-1-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年10月3日學校研究社的觀察中，將 88 g 食鹽溶於 791 g 水，研究「Je-Ⅳ-1：化學反應速率與影響因素」時，溶液質量為何？",
+  "prompt": "若要確認某添加物是催化劑而不是單純改變反應物量，哪項資料最有力？",
   "options": [
     {
       "id": "A",
-      "text": "879 g"
+      "text": "控制反應物量與條件後，加入添加物使達到相同產量的時間縮短，且反應後添加物可回收或仍存在"
     },
     {
       "id": "B",
-      "text": "703 g"
+      "text": "加入添加物後只看泡沫變多"
     },
     {
       "id": "C",
-      "text": "69608 g"
+      "text": "讓添加物同時提供新的反應物"
     },
     {
       "id": "D",
-      "text": "791 g"
+      "text": "只測量容器顏色變化"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-je-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：88＋791＝879 g。 本題對應 KG「Je-Ⅳ-1：化學反應速率與影響因素」。"
+    "explanation": "在反應物量和條件控制下速率變快，且添加物未被消耗完，才能支持催化劑作用；泡沫或顏色不足以單獨證明。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的反應速率、碰撞、濃度、溫度、表面積、催化劑與公平實驗能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-je-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-je-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "反應速率、濃度、溫度、表面積與資料判讀",
+      "pattern": "取由反應時間、實驗條件與資料圖表判讀速率快慢及影響因素的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由反應時間、實驗條件與資料圖表判讀速率快慢及影響因素的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "碰撞、反應速率、催化劑與生活情境",
+      "pattern": "取從實驗圖表、粒子模型與生活製程推論反應速率變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從實驗圖表、粒子模型與生活製程推論反應速率變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "以控制變因、速率指標和催化劑存在性建立證據。",
+  "solutionSteps": [
+    "固定反應物質量、濃度、溫度與容器。",
+    "比較有無添加物達到相同產量所需時間。",
+    "檢查添加物反應後是否仍可辨識或回收。",
+    "排除添加物其實是新反應物的可能。",
+    "因此 A 的證據最完整。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

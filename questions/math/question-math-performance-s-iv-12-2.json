@@ -6,37 +6,80 @@
   "options": [
     {
       "id": "A",
-      "text": "0"
-    },
-    {
-      "id": "B",
       "text": "1/2"
     },
     {
-      "id": "C",
+      "id": "B",
       "text": "√2/2"
     },
     {
-      "id": "D",
+      "id": "C",
       "text": "√3/2"
+    },
+    {
+      "id": "D",
+      "text": "3/4"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-s-iv-12"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "cos 60°＝鄰邊／斜邊；在特殊直角三角形中比值為 1/2。"
+    "value": "A",
+    "explanation": "60° 的鄰邊與斜邊比為 1:2，因此 cos60°=1/2，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考直角三角形銳角邊長比、sin／cos／tan 與仰角情境題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供特殊角、三角比與測量應用能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的三角比方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-12"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-math-performance-s-iv-12",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "特殊角三角比、sin／cos／tan 定義、直角三角形邊長比、仰角測高與三角比互補關係",
+      "observedPattern": "公開數學評量常由特殊角或直角三角形的對邊、鄰邊、斜邊建立三角比，並延伸到仰角與未知邊長；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "特殊角三角比、sin／cos／tan 定義、直角三角形邊長比、仰角測高與三角比互補關係",
+      "observedPattern": "公開數學評量常由特殊角或直角三角形的對邊、鄰邊、斜邊建立三角比，並延伸到仰角與未知邊長；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "特殊角三角比、sin／cos／tan 定義、直角三角形邊長比、仰角測高與三角比互補關係",
+      "observedPattern": "公開數學評量常由特殊角或直角三角形的對邊、鄰邊、斜邊建立三角比，並延伸到仰角與未知邊長；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用 30°-60°-90° 邊比辨識 60° 的鄰邊。",
+  "solutionSteps": [
+    "cos 定義為鄰邊÷斜邊。",
+    "60° 對應的鄰邊是短股。",
+    "短股：斜邊=1:2。",
+    "所以 cos60°=1/2。",
+    "選 A。"
+  ]
 }

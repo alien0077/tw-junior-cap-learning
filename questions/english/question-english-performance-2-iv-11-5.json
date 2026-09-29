@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-11-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with the meeting time at the library?” B: “___” (「2-Ⅳ-11／簡易短劇」practice, 13:00)",
+  "prompt": "In a short play, the detective finds a torn blue ticket under a chair. Later, a matching half appears in the caretaker's coat pocket. Which object most directly helps the detective connect the two scenes?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with the meeting time at the library in the 2-Ⅳ-11／簡易短劇 practice."
+      "text": "The chair."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the library in the 2-Ⅳ-11／簡易短劇 practice."
+      "text": "The caretaker's coat by itself."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the library last year in the 2-Ⅳ-11／簡易短劇 practice."
+      "text": "The two matching ticket halves."
     },
     {
       "id": "D",
-      "text": "No, the weather at the library is sunny in the 2-Ⅳ-11／簡易短劇 practice."
+      "text": "The detective's notebook."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-11"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 2-Ⅳ-11／簡易短劇, item 5. This item targets 2-Ⅳ-11／簡易短劇, question 5."
+    "value": "C",
+    "explanation": "兩半藍色票根能直接互相拼合，形成跨場景的連結線索；椅子、外套或筆記本沒有同樣的匹配證據。 正確答案：C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.fjm.kh.edu.tw/upload/226/101_44845/113%E5%B9%B4%E5%9C%8B%E4%B8%AD%E7%B5%84%E9%96%B1%E8%AE%80%E7%B4%A0%E9%A4%8A%E8%A9%A6%E9%A1%8C%28%E7%AD%94%E6%A1%88%E5%85%AC%E5%91%8A%29.pdf",
+    "sourceLocator": "PDF第6頁第42題：辨識故事中支持關鍵推論的線索物件；本題另創票根與舞台情節。；人物、台詞、舞台指示、選項與答案均重新創作。",
+    "authoringNote": "原創簡易短劇理解題；只參照公立學校公開試題中人物動機、行動證據、事件順序、故事線索及結局判讀的能力型態，不複製來源內容。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-11"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.fjm.kh.edu.tw/upload/226/101_44845/113%E5%B9%B4%E5%9C%8B%E4%B8%AD%E7%B5%84%E9%96%B1%E8%AE%80%E7%B4%A0%E9%A4%8A%E8%A9%A6%E9%A1%8C%28%E7%AD%94%E6%A1%88%E5%85%AC%E5%91%8A%29.pdf",
+      "title": "高雄市113學年度允文允武國中組閱讀素養試題與答案（鳳甲國中校方公開）；僅參照故事理解與人物／線索／結局推論，不複製原題。",
+      "year": "113",
+      "subject": "english",
+      "locator": "PDF第6頁第42題：辨識故事中支持關鍵推論的線索物件；本題另創票根與舞台情節。",
+      "observedPattern": "從角色後續能驗證的物件線索推理，避免把醒目道具直接等同答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "道具作為情節線索：把台詞、舞台指示和事件結果連讀，先找可見證據，再判斷它支持的表演意圖或故事意義。",
+  "solutionSteps": [
+    "確認問題問的是連接兩幕的線索，不是場景中任意道具。",
+    "比較先後出現的物件，找出後來重現且能配對的部分。",
+    "判斷票根的兩半如何把椅下發現與管理員口袋連起來。",
+    "排除只提供位置或記錄功能、卻不能證明關聯的物品。",
+    "選C；道具推理要追蹤它如何帶來新資訊，而非只看它是否醒目。"
+  ]
 }

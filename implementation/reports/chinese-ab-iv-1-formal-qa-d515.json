@@ -1,0 +1,35 @@
+{
+  "decision": "verified",
+  "asOf": "2026-09-29",
+  "unit": "cur-chinese-content-ab-iv-1",
+  "lesson": "lesson-chinese-content-ab-iv-1",
+  "scope": "unit-specific specification and automated interaction QA only; no lesson or question content review, no publisher evidence promotion",
+  "evidence": {
+    "officialCurriculum": "Ab-IV-1; official curriculum PDF locator is recorded in the unit spec; KG ID kg-chinese-content-ab-iv-1",
+    "lessonMapping": "3-step GuidedChoiceBlock mapped to contextual character-form, pronunciation, and meaning reasoning; six authored teaching sections remain visible alongside three summaries",
+    "browserCommand": "npm run test:chinese:ab-iv-1:browser -- --url http://127.0.0.1:8765/site/index.html",
+    "browserRunner": "Python Playwright using system Chrome in authorized local environment",
+    "browserResult": {
+      "status": "passed",
+      "visibleSections": 9,
+      "authoredTeachingSections": 6,
+      "guidedChoiceSteps": 3,
+      "blockedSimulationScript": true,
+      "blockedExternalRequests": 1,
+      "offlineFallbackUsable": true,
+      "keyboardWrongRetryCorrect": true,
+      "axeViolations": 0,
+      "axeIncomplete": 0,
+      "responsiveWidths": [320, 375, 768],
+      "pageErrors": []
+    }
+  },
+  "statusBoundary": {
+    "designStatus": "reviewed",
+    "implementationStatus": "implemented",
+    "qaStatus": "verified",
+    "lessonReviewStatus": "unchanged",
+    "publisherEvidenceStatus": "unchanged"
+  },
+  "remaining": "Full-suite and repository-wide coverage checks are required after this unit update; this does not complete the overall guide."
+}

@@ -1,0 +1,31 @@
+"""Ic：海水的運動第一輪來源融合、題庫重寫與來源審查。"""
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-content-ic.json"; REPORT=ROOT/"implementation/reports/science-content-ic-first-pass-review.json"; QDIR=ROOT/"questions/science"; TODAY="2026-09-23"
+SOURCES=[
+ {"url":"https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf","title":"114 年國中教育會考自然科公開試題","year":"114","locator":"海水運動、波浪、海流、潮汐與海洋資料判讀","pattern":"取由風、密度、海水大尺度流動、潮汐週期與海岸資料理解海水運動的能力方向。"},
+ {"url":"https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf","title":"新竹市立新科國中公開康軒版自然課程計畫","year":"公開課程計畫","locator":"波浪、海流、潮汐與海水運動","pattern":"取風浪、海流、潮汐、潮流、海溫密度、海岸現象和海洋安全的教學及評量方向。"},
+ {"url":"https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf","title":"新北市文山區安康高中國中部公開翰林版自然簡案","year":"公開課程計畫","locator":"海水運動模型、資料與海岸風險","pattern":"取水槽模型、流向定義、漂流物、潮位序列、海嘯風險與多因素資料判讀的能力方向。"},
+]
+REFS=[{**s,"subject":"science","observedPattern":s["pattern"],"reuseDecision":"pattern-only","status":"recorded","locatorLevel":"paper"} for s in SOURCES]
+def q(n,prompt,opts,ans,exp,strat,steps,d="medium"):
+ return {"id":f"question-science-content-ic-{n}","subject":"science","type":"single-choice","prompt":prompt,"options":[{"id":k,"text":v} for k,v in zip("ABCD",opts)],"knowledgeIds":["kg-science-content-ic"],"difficulty":d,"answer":{"value":ans,"explanation":exp},"provenance":{"origin":"original","license":"All rights reserved","sourceUrl":SOURCES[0]["url"],"sourceLocator":"三筆公立學校／公開自然科試題與課程資料的海水運動、波浪、海流、潮汐及海洋資料判讀能力方向；本題只作 pattern-only 改寫來源。","authoringNote":"依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Ic 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"},"reviewStatus":"draft","updatedAt":TODAY,"lessonId":"lesson-science-content-ic","examPatternRefs":REFS,"solutionStrategy":strat,"solutionSteps":steps}
+Q=[
+q(1,"海水大尺度、持續性的水平流動，較適合稱為？",["海流","風浪","潮汐升降","海嘯波峰"],"A","海流是海水大尺度且較持續的流動；風浪主要是波動，潮汐是週期升降，海嘯是特殊長波災害。","先比較海水運動的空間尺度、持續性與主要成因。",["圈出大尺度和持續性兩個條件。","把海流與風浪、潮汐、海嘯的定義分開。","海流描述海水整體的長距離搬運。","B、C、D 分別是波動、週期升降或特殊災害波。","答案為 A。"],"easy"),
+q(2,"一般風浪的能量主要來自哪項？",["風吹過海面所傳遞的能量","地球內部岩漿","月球直接推動每個水分子前進","海底地震才是所有風浪的來源"],"A","一般風浪主要由風把能量傳給海面形成；海底地震可能造成海嘯，不是一般風浪的主要來源。","辨認能量來源與海水質點運動，不把所有海浪同一化。",["確認題目問一般風浪而非海嘯。","找出風與海面摩擦及能量傳遞。","風能使海面產生波動。","B、C、D 混淆地質、潮汐或海嘯機制。","所以 A 正確。"],"easy"),
+q(3,"比較海流與波浪時，哪項描述較合適？",["海流常涉及海水整體較長距離的流動，波浪主要表現為能量與波形傳播","兩者都表示每個水分子長距離向前移動","波浪一定由月球引力造成","海流只發生在海岸，波浪只發生在深海"],"A","海流可搬運海水與熱量，波浪主要傳遞能量和波形，水質點多在附近振動；兩者尺度與機制不同。","把物質搬運和能量傳播分開判讀。",["比較題目給的海流與波浪兩個概念。","海流可造成較大尺度的水體搬運。","波浪主要傳遞能量，質點不必隨波長距離前進。","B、C、D 都把兩者機制過度簡化。","答案為 A。"],"medium"),
+q(4,"若海水溫度或鹽度造成密度差異，最可能影響哪項海水運動？",["密度差造成的下沉與上升，以及大尺度環流","只影響海面顏色，不影響流動","使所有波浪停止","必然立即形成潮汐"],"A","溫度和鹽度會改變海水密度，密度差可造成下沉、上升和深層海流，影響大尺度循環。","沿溫鹽—密度—垂直運動—環流的因果鏈判斷。",["找出溫度或鹽度是可能的自變因。","溫鹽變化會影響海水密度。","密度差可驅動下沉上升並參與海流。","B、C、D 都否認或誤用密度機制。","因此 A 正確。"],"medium"),
+q(5,"研究某海域表層流向時，漂流浮標箭頭主要可以提供哪種線索？",["表層海水移動方向與速度的近似資料","海底所有深度的流向都完全相同","月球造成的精確潮汐年份","該地海水的全部化學組成"],"A","漂流浮標可追蹤其所在深度附近的水體移動，但不能直接代表所有深度、所有時間或所有成分。","使用觀測工具時，先確認測量對象與尺度限制。",["辨認浮標隨表層水體移動。","用位置差和時間估計方向、速率。","把結果限縮在測量深度和觀測期間。","B、C、D 都超過浮標資料能支持的範圍。","答案為 A。"],"medium"),
+q(6,"同一海域連續測得潮位週期升降，但風向每天不同。要區分潮汐與風浪，哪項資料最有幫助？",["長期潮位時間序列及日月位置，並同步記錄風浪","只看一次海面照片","只看海水顏色","只記錄某一刻的風向"],"A","潮汐有較規律的長期週期，日月位置可作為相關資料；同步記錄風浪能幫助分離短期風浪影響。","用時間尺度與多項同步觀測區分週期現象。",["先確認潮位變化的週期是否穩定。","比較日月位置與長期潮位時間序列。","同步記錄風速、風向和波高以排除風浪干擾。","B、C、D 的資料尺度或資訊不足。","所以 A 最完整。"],"medium"),
+q(7,"海底地震造成海水大範圍長波快速傳播，較適合稱為？",["海嘯","一般風浪","海陸風","潮流"],"A","海底地震可能使海水整體受到擾動並形成海嘯；一般風浪由風能量造成，潮流是潮汐引起的海水流動。","先依能量來源和波長尺度辨認海洋現象。",["圈出海底地震和大範圍長波。","把它與風浪、海陸風、潮流的成因比較。","海底地震造成的特殊長波是海嘯。","B、C、D 的成因不同。","答案為 A。"],"easy"),
+q(8,"若水槽模型要比較不同風速對表層漂流物方向的影響，哪項設計較公平？",["固定水深、容器、漂流物和觀測時間，只改變風速並重複測量","同時改變風速、水溫、水深和容器形狀","只挑選最明顯的一次結果","不記錄風向，只看漂流物最後位置"],"A","控制其他條件、只改變風速並重複測量，才較能把結果差異歸因於風速；風向也需記錄。","用控制變因和重複觀測建立可比較的模型。",["指定風速為主要自變因。","固定水深、漂流物、容器和時間，記錄風向。","設定重複試次並保留原始位置資料。","B、C、D 會混淆變因、挑資料或缺少關鍵資訊。","因此 A 最可靠。"],"medium"),
+q(9,"下列哪項最能說明海水運動可能影響沿岸生態？",["海流搬運熱量與營養鹽，可能改變水溫、食物分布和生物出現位置","只要有波浪，所有魚都會游向同一方向","海流只改變海面外觀，不影響生物","潮汐與海流完全相同，所以不必分辨"],"A","海流可搬運熱量和營養鹽，進而影響水溫、初級生產與生物分布，但實際結果仍受季節、深度與食物網影響。","從海水運動的物質與熱量搬運連到生態資料，保留多因素。",["找出海流可以搬運熱量和營養鹽。","連結水溫、食物資源與生物分布。","注意這是可能影響而非單一因果定律。","B、C、D 都過度簡化或混淆概念。","答案為 A。"],"medium"),
+q(10,"比較兩個海域的海流資料時，哪項做法最能避免把季節差異誤判成地區差異？",["在相近季節、相同深度和相似潮汐條件下重複測量，再比較流向與速度","一個海域測夏季，另一個測冬季，直接比較最大值","只比較一筆最快流速","只看地圖箭頭，不記錄測量日期和深度"],"A","控制季節、深度和潮汐等條件並重複測量，才能較公平地比較兩海域的海水運動。","先找可能的混淆變因，再建立同條件的比較。",["列出季節、深度、潮汐和風場等可能混淆因素。","在相近條件下測量並記錄日期、位置、深度。","比較多次流向與速度資料而非單一最大值。","B、C、D 都會放大偶然或尺度差異。","因此 A 最符合公平比較。"],"medium"),
+]
+def main():
+ lesson=json.loads(LESSON.read_text(encoding="utf-8")); lesson["updatedAt"]=TODAY; lesson["reviewStatus"]="draft"; lesson["fusionRecord"]={"commonCore":["三版本公開線索共同支持區分波浪、海流、潮汐與潮流，並從風、密度、引力和海水搬運理解海水運動。","波浪能量、海流物質與熱量搬運、潮汐週期、海嘯、漂流物與控制變因是共同能力核心。"],"versionDifferences":["南一公開定位偏向海水運動分類；康軒線索偏向風浪、海流、潮汐和海嘯；翰林線索偏向水槽模型、漂流物、潮位序列與海洋風險。公開資料不足以宣稱取得完整教材內容。"],"originalAdditions":["以風浪、密度環流、漂流浮標、潮位序列、海嘯、水槽模型與沿岸生態建立海水運動證據鏈。","把所有海水運動當成物質前進、海嘯等於一般風浪、一次漂流物位置代表所有深度流向列為單元迷思診斷。"],"llmSynthesisNote":"依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開試題資料的能力方向，重新組織波浪、海流、潮汐、潮流、海嘯、密度差、資料測量與模型限制；原先 9 題為小車平均速率套題，已逐題改寫並補成 10 題海水運動專屬問題，均具唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"}
+ for e in lesson.get("versionResearch",[])+lesson.get("publisherResearch",[]): e["reviewedAt"]=TODAY
+ for x in Q: (QDIR/f"question-science-content-ic-{x['id'].rsplit('-',1)[-1]}.json").write_text(json.dumps(x,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"Ic：海水的運動","lessonId":lesson["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checkedQuestions":10,"checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"threePublicSchoolExamPatternSources":True,"answersAndDetailedSteps":True,"interactivePredictionManipulationExplanation":True,"terraSecondPass":"pending"},"reviewedAt":TODAY,"note":"原先 9 題為帶日期的小車平均速率套題，已逐題改寫並補成 10 題海水運動專屬問題；每題有唯一答案、解析與五步解法，三筆公開試題／課程資料僅作 pattern-only 來源，正式發布前仍須第二輪 AI／Terra 內容複核。"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ LESSON.write_text(json.dumps(lesson,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"); print("authored science content ic")
+if __name__=="__main__": main()

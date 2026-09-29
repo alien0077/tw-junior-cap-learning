@@ -2,23 +2,23 @@
   "id": "question-chinese-classical-function-words-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "古今義變表示？",
+  "prompt": "「青，取之於藍，而青於藍」中的兩個「於」依序表示什麼？",
   "options": [
     {
       "id": "A",
-      "text": "古今意思可能不同"
+      "text": "向、在；前者表對象，後者表地點"
     },
     {
       "id": "B",
-      "text": "讀音永遠相同"
+      "text": "因為、以及；前者表原因，後者表並列"
     },
     {
       "id": "C",
-      "text": "字形一定不同"
+      "text": "被、卻；前者表被動，後者表轉折"
     },
     {
       "id": "D",
-      "text": "只在詩歌"
+      "text": "從、比；前者表來源，後者表比較"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的語境、結構與功能線索判斷；其他選項不符合題幹條件。"
+    "value": "D",
+    "explanation": "取之於藍是從藍草取得，青於藍是比藍草更青；同一字在不同結構中要分別判斷。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-classical-function-words-4.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究文言虛字、句法、古今義與語境判讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫文言虛字題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-classical-function-words"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-classical-function-words",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言字詞、虛字與語境判讀",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言句法、古今義與閱讀理解",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "遇到同字重複出現，分別看它和動詞及比較語句的搭配，不能要求兩處同義。",
+  "solutionSteps": [
+    "把第一個於和取、藍連讀。",
+    "把第二個於和青、藍連讀。",
+    "比較『從藍草取得』與『比藍草更青』哪組能解釋完整句意。",
+    "選擇 A 的來源加比較功能。",
+    "回讀全句，確認兩個於雖字同但功能由句法位置決定。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

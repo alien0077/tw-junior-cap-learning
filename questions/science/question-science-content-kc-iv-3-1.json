@@ -2,23 +2,23 @@
   "id": "question-science-content-kc-iv-3-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月23日自然科教室的觀察中，將電壓 14 V 加在電阻 3 Ω 的元件兩端，研究「Kc-Ⅳ-3：磁力線與磁場」時，電流約為多少？",
+  "prompt": "把羅盤放在磁鐵附近某一點，羅盤北端所指的方向最能表示該點磁場的哪項資訊？",
   "options": [
     {
       "id": "A",
-      "text": "42 A"
+      "text": "該處磁力線的切線方向"
     },
     {
       "id": "B",
-      "text": "0.214286 A"
+      "text": "磁鐵的重量"
     },
     {
       "id": "C",
-      "text": "17 A"
+      "text": "磁力線真實線條的數量"
     },
     {
       "id": "D",
-      "text": "4.66667 A"
+      "text": "磁場一定由羅盤產生"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "依歐姆定律 I＝V/R＝14/3＝4.66667 A。 本題對應 KG「Kc-Ⅳ-3：磁力線與磁場」。"
+    "value": "A",
+    "explanation": "羅盤磁針會沿局部磁場方向排列，因此磁針方向可作為該點磁力線切線方向的觀測線索。 正確答案為選項 A：「該處磁力線的切線方向」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題的磁場、磁力線、羅盤、磁極排列、疏密與實驗證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均以 Kc-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-kc-iv-3"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-kc-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫",
+      "year": "109-115",
+      "locator": "磁場、磁力線、指南針與鐵粉圖樣判讀",
+      "pattern": "取局部方向、磁場強弱、磁極排列與模型證據的能力方向，重新設計磁場測繪任務。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取局部方向、磁場強弱、磁極排列與模型證據的能力方向，重新設計磁場測繪任務。"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考",
+      "year": "109-115",
+      "locator": "條形磁鐵、異極／同極、磁力線與羅盤",
+      "pattern": "取由觀察工具連到磁力線模型的推理方向，未複製題幹、選項、圖表或答案。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取由觀察工具連到磁力線模型的推理方向，未複製題幹、選項、圖表或答案。"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "locator": "磁場方向、場線疏密與實驗證據",
+      "pattern": "取圖形判讀、控制距離與模型限制的能力方向，全部以本課原創文字改寫。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取圖形判讀、控制距離與模型限制的能力方向，全部以本課原創文字改寫。"
+    }
+  ],
+  "solutionStrategy": "先定位觀測點，再把羅盤方向記成箭頭，勿把箭頭當成磁鐵吐出的實體線。",
+  "solutionSteps": [
+    "圈出磁鐵 N／S、羅盤位置、觀察工具與題目要求的方向或強弱。",
+    "依本題情境套用判準：先定位觀測點，再把羅盤方向記成箭頭，勿把箭頭當成磁鐵吐出的實體線。",
+    "把局部觀察、磁力線模型與磁極排列逐層連結。",
+    "排除把場線當實體、把線數當精確力值或忽略圖例尺度的選項。",
+    "回查答案是否超出證據範圍，並寫出仍需羅盤或測量驗證的限制。"
+  ]
 }

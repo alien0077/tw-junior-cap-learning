@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bb-iv-5-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "人物在雨中替陌生人撐傘，作者未評論其善良，讀者可由何者推知？",
+  "prompt": "他每天經過老店都放慢腳步，卻從不推門；店面拆除那天，他站在圍籬外很久。事件最可能間接呈現？",
   "options": [
     {
       "id": "A",
-      "text": "人物的具體行動"
+      "text": "他一定要買下整棟店"
     },
     {
       "id": "B",
-      "text": "雨傘的品牌"
+      "text": "他從未去過這條街"
     },
     {
       "id": "C",
-      "text": "文章的字數"
+      "text": "他不喜歡任何商店"
     },
     {
       "id": "D",
-      "text": "街道的名稱"
+      "text": "對熟悉場所消失的惆悵或留戀"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bb-iv-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "替人撐傘是具體行動，可間接呈現人物的善意。"
+    "value": "D",
+    "explanation": "放慢、未推門、久站等行動指向留戀與不捨，但未證明購買或厭惡所有商店。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "事件、景物間接抒情；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究事件、景物、物件與人物反應的間接抒情及證據界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫事件景物間接抒情題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "事件、景物與情感推論",
+      "observedPattern": "公立學校國文評量要求由事件、物件、景物對照與人物反應推論間接情感；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "人物行動、場景對照與抒情效果",
+      "observedPattern": "公立學校國文評量要求由事件、物件、景物對照與人物反應推論間接情感；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把重複動作和最後反應串成情感線索，避免只憑場所名稱下結論。",
+  "solutionSteps": [
+    "整理每天放慢與不推門的反覆行為。",
+    "注意拆除日久站帶來的情緒轉折。",
+    "D 符合熟悉場所消失的間接情感。",
+    "B、C、D 與行動證據不符。",
+    "將『快步通過』換入句子，對照人物態度差異。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

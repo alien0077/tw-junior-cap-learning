@@ -2,41 +2,67 @@
   "id": "question-science-content-ba-iv-3-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年5月11日社區環境站的觀察中，將 61℃ 的金屬片放入 21℃ 的水中，研究「Ba-Ⅳ-3：化學反應的吸熱與放熱」時，最初的熱傳方向為何？",
+  "prompt": "有些燃燒反應開始前需要先用火柴加熱，開始後卻能持續燃燒。最合理的解釋是？",
   "options": [
     {
       "id": "A",
-      "text": "由 21℃ 的水傳向 61℃ 金屬片"
+      "text": "反應需要先跨過活化能障礙，點火提供啟動所需能量"
     },
     {
       "id": "B",
-      "text": "由金屬片傳向水"
+      "text": "點火會讓能量守恆定律暫時失效"
     },
     {
       "id": "C",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "只要放熱反應就永遠不需任何初始能量"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "點火把生成物變回反應物"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ba-iv-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "B",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 61℃ 金屬片傳向 21℃ 的水。 本題對應 KG「Ba-Ⅳ-3：化學反應的吸熱與放熱」。"
+    "value": "A",
+    "explanation": "反應即使整體放熱，也可能需要先達到活化能；點火提供啟動能量，反應開始後再由放出的能量維持，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究化學反應吸熱與放熱、溫度變化、能量轉移及實驗控制變因能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的反應熱、吸放熱與能量證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化學反應、能量變化、吸熱放熱與實驗資料判讀",
+      "pattern": "取由溫度資料、能階關係與系統邊界判斷吸熱或放熱的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫度資料、能階關係與系統邊界判斷吸熱或放熱的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開看『啟動門檻』與『反應總能量變化』，兩者不是同一件事。",
+  "solutionSteps": [
+    "確認燃燒開始前反應速率很低。",
+    "點火先提供局部能量。",
+    "這份能量協助反應物跨過活化能。",
+    "反應開始後，放出的能量可維持後續反應。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

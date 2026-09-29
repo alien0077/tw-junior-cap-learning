@@ -2,41 +2,67 @@
   "id": "question-science-content-fb-iv-4-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年6月27日自然科教室的觀察中，連續一個月在相同時間觀察月面亮部變化，研究「Fb-Ⅳ-4：月相變化的規律」時，最能支持哪項結論？",
+  "prompt": "用燈、球和小珠分別代表太陽、地球和月球。把小珠繞著球移動時，應觀察什麼現象來模擬月相？",
   "options": [
     {
       "id": "A",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 7 組、11 月觀察中，月亮本身每天產生不同亮度"
+      "text": "小珠的顏色自行改變"
     },
     {
       "id": "B",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 7 組、11 月觀察中，月相是由日、地、月相對位置改變造成的視覺變化"
+      "text": "從球的位置看，小珠受燈照亮部分的可見比例改變"
     },
     {
       "id": "C",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 7 組、11 月觀察中，月相完全由雲量決定"
+      "text": "小珠在球後方時，燈會自行變亮"
     },
     {
       "id": "D",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 7 組、11 月觀察中，月亮只在滿月時才存在"
+      "text": "球會把光線射回燈"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-fb-iv-4"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "月球反射太陽光，日、地、月相對位置改變會造成可規律觀察的月相。 本題對應 KG「Fb-Ⅳ-4：月相變化的規律」。"
+    "explanation": "燈代表太陽，固定照亮小珠的一半；小珠位置改變後，從地球位置看見的受光比例不同，這就是月相變化的幾何核心。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的月相、日月地模型與觀測資料能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Fb-Ⅳ-4 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fb-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-fb-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "月相、日月地運動與天文觀測資料判讀",
+      "pattern": "取由日月地相對位置、觀測時間與週期資料推論月相變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由日月地相對位置、觀測時間與週期資料推論月相變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先對應模型元件，再追蹤光線、受光面與觀察者視線三者的關係。",
+  "solutionSteps": [
+    "建立手電筒、白球、小珠分別代表太陽、地球、月球。",
+    "確認手電筒只提供光，小珠朝向光源的一半受光。",
+    "移動小珠並觀察從白球位置看見多少受光面。",
+    "排除顏色自變、燈光任意變亮與球體發光等錯誤模型。",
+    "選 B，確認模型保留月相的幾何核心。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

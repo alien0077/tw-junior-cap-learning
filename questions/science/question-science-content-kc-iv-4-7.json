@@ -2,23 +2,23 @@
   "id": "question-science-content-kc-iv-4-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月21日河川觀測站的觀察中，將電壓 38 V 加在電阻 9 Ω 的元件兩端，研究「Kc-Ⅳ-4：電流生磁場與安培右手定則」時，電流約為多少？",
+  "prompt": "螺線管電池反接，線圈匝數與電流大小近似不變；最可能發生什麼？",
   "options": [
     {
       "id": "A",
-      "text": "342 A"
+      "text": "N、S 極互換，磁場方向反轉"
     },
     {
       "id": "B",
-      "text": "4.22222 A"
+      "text": "線圈磁場完全消失"
     },
     {
       "id": "C",
-      "text": "0.236842 A"
+      "text": "匝數自動增加"
     },
     {
       "id": "D",
-      "text": "47 A"
+      "text": "只有電阻變大"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "依歐姆定律 I＝V/R＝38/9＝4.22222 A。 本題對應 KG「Kc-Ⅳ-4：電流生磁場與安培右手定則」。"
+    "value": "A",
+    "explanation": "電池反接使傳統電流方向反轉，依右手定則螺線管的磁場與 N、S 極互換。 正確答案為選項 A：「N、S 極互換，磁場方向反轉」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題的電流生磁、直導線、螺線管、右手定則、指南針與實驗控制能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均以 Kc-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-kc-iv-4"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-kc-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫",
+      "year": "109-115",
+      "locator": "電流生磁場、右手定則、電磁鐵與實驗判讀",
+      "pattern": "取電流方向、磁場方向、線圈磁極與控制變因的能力方向，重新設計校園電磁檢測情境。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取電流方向、磁場方向、線圈磁極與控制變因的能力方向，重新設計校園電磁檢測情境。"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考",
+      "year": "109-115",
+      "locator": "直導線磁場、螺線管、指南針與反接電源",
+      "pattern": "取由觀察證據連到圓形磁場與磁極方向的推理方向，未複製題幹、選項、圖表或答案。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取由觀察證據連到圓形磁場與磁極方向的推理方向，未複製題幹、選項、圖表或答案。"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "locator": "安培右手定則、磁力線、電磁鐵與實驗控制",
+      "pattern": "取方向判讀與裝置比較的能力方向，全部以本課原創文字改寫。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取方向判讀與裝置比較的能力方向，全部以本課原創文字改寫。"
+    }
+  ],
+  "solutionStrategy": "追蹤電源極性、繞線電流方向與右手拇指方向三個箭頭。",
+  "solutionSteps": [
+    "圈出傳統電流方向、導線／線圈幾何、觀察點與磁極問題。",
+    "依本題情境套用判準：追蹤電源極性、繞線電流方向與右手拇指方向三個箭頭。",
+    "用安培右手定則建立磁場圓周或螺線管拇指方向。",
+    "排除把受力規則、電子方向、磁場強弱與方向混為一談的選項。",
+    "回查答案是否符合圖示、控制條件與觀察證據，並寫出限制。"
+  ]
 }

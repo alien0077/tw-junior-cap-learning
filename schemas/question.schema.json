@@ -11,6 +11,8 @@
     "prompt",
     "knowledgeIds",
     "answer",
+    "solutionStrategy",
+    "solutionSteps",
     "provenance",
     "reviewStatus",
     "lessonId"
@@ -72,6 +74,45 @@
       "minItems": 1,
       "uniqueItems": true
     },
+    "examPatternRefs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "url",
+          "title",
+          "year",
+          "subject",
+          "locator",
+          "locatorLevel",
+          "observedPattern",
+          "reuseDecision",
+          "status"
+        ],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "title": { "type": "string", "minLength": 1 },
+          "year": { "type": "string", "minLength": 1 },
+          "subject": { "type": "string", "minLength": 1 },
+          "locator": { "type": "string", "minLength": 1 },
+          "locatorLevel": { "enum": ["item", "paper", "page"] },
+          "observedPattern": { "type": "string", "minLength": 1 },
+          "pattern": {
+            "type": "string",
+            "minLength": 1,
+            "description": "Legacy alias of observedPattern; if present, validate_data.py requires exact equality."
+          },
+          "reuseDecision": {
+            "enum": ["pattern-only", "licensed-reproduction", "do-not-use"]
+          },
+          "status": {
+            "enum": ["recorded", "pending-item-locator", "blocked"]
+          }
+        }
+      }
+    },
     "difficulty": {
       "enum": [
         "easy",
@@ -95,6 +136,18 @@
           "type": "string",
           "minLength": 1
         }
+      }
+    },
+    "solutionStrategy": {
+      "type": "string",
+      "minLength": 1
+    },
+    "solutionSteps": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string",
+        "minLength": 1
       }
     },
     "provenance": {
@@ -147,6 +200,15 @@
     "lessonId": {
       "type": "string",
       "pattern": "^lesson-(chinese|english|math|science|social)-[a-z0-9-]+$"
+    },
+    "studyReferences": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      },
+      "minItems": 1,
+      "uniqueItems": true
     }
   },
   "allOf": [

@@ -2,41 +2,67 @@
   "id": "question-science-content-db-iv-4-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年6月5日社區環境站的觀察中，針對「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」提出可檢驗的科學問題，若比較 3 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "觀察女性生殖系統圖時，若要判斷受精與著床的位置，哪項說法較合理？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "受精一定在子宮內膜完成，著床則在卵巢表面完成"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時只測量3組中的一組就直接下結論"
+      "text": "受精通常在輸卵管發生；胚胎後續移到子宮內膜著床"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "受精在膀胱完成，著床在尿道完成"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時只改變攪拌速度，其餘條件一致，設置3組、每組取樣16份並各重複測量4次"
+      "text": "受精與著床都只發生在陰道內"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-4"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」。"
+    "value": "B",
+    "explanation": "人類精卵通常在輸卵管相遇形成受精卵，胚胎再移動到子宮，著床於子宮內膜；這兩個事件的位置不同。選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的生殖系統、配子、受精、性生殖與激素調節能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生殖、遺傳與生命延續相關資料判讀",
+      "pattern": "取由生殖構造、遺傳資訊與資料推論生命延續的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生殖構造、遺傳資訊與資料推論生命延續的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "圖判讀先把『相遇形成受精卵』與『附著發育』分成兩個事件。",
+  "solutionSteps": [
+    "先辨認受精是精卵相遇的事件。",
+    "將受精位置放在輸卵管。",
+    "確認著床是胚胎附著子宮內膜的事件。",
+    "排除卵巢、膀胱、尿道與陰道的錯誤位置。",
+    "所以選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

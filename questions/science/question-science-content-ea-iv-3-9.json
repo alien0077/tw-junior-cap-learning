@@ -2,41 +2,84 @@
   "id": "question-science-content-ea-iv-3-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年11月6日社區環境站的觀察中，針對「Ea-Ⅳ-3：依工具最小刻度進行測量估計」提出可檢驗的科學問題，若比較 5 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "量筒中的水面晃動時，連續讀到 24.1、24.4、24.2 mL，最好的處理方式是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ea-Ⅳ-3：依工具最小刻度進行測量估計」時只改變水溫，其餘條件一致，設置5組、每組取樣17份並各重複測量3次"
+      "text": "等液面穩定後平視讀取，必要時重複測量並描述範圍"
     },
     {
       "id": "B",
-      "text": "研究「Ea-Ⅳ-3：依工具最小刻度進行測量估計」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "直接選最大值 24.4 mL"
     },
     {
       "id": "C",
-      "text": "研究「Ea-Ⅳ-3：依工具最小刻度進行測量估計」時只測量5組中的一組就直接下結論"
+      "text": "把所有數字改成 24.0 mL"
     },
     {
       "id": "D",
-      "text": "研究「Ea-Ⅳ-3：依工具最小刻度進行測量估計」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "把晃動視為水量增加"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ea-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ea-Ⅳ-3：依工具最小刻度進行測量估計」。"
+    "explanation": "液面晃動會增加讀值的不確定性，應先等待穩定、平視讀凹液面，若仍有差異再以重複結果描述平均或範圍。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675416611640UMJ54uWL.pdf",
+    "sourceLocator": "三筆公立學校公開自然科資料僅作最小刻度、估讀、視差與測量誤差的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ea-iv-3"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-ea-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675416611640UMJ54uWL.pdf",
+      "title": "臺北市立內湖國中111學年度上學期自然科學第一次段考",
+      "year": "111",
+      "locator": "直尺估讀、最小刻度與量筒讀值題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然題常以刻度圖、估計位、量筒液面、歸零、平視和重複量測要求判斷記錄精度；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www3.schs.ntpc.edu.tw/var/file/0/1000/attach/62/pta_6928_7943048_11362.pdf",
+      "title": "新北市立石碇高中國中部自然科題庫",
+      "year": "113",
+      "locator": "測量記錄、估計值與量筒精度題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然題常以刻度圖、估計位、量筒液面、歸零、平視和重複量測要求判斷記錄精度；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E5%85%AB%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學國中自然科補行評量題庫",
+      "year": "2026",
+      "locator": "直尺、天平、量筒與有效位數題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然題常以刻度圖、估計位、量筒液面、歸零、平視和重複量測要求判斷記錄精度；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先改善操作條件，再處理剩餘隨機差異，不能任意挑值。",
+  "solutionSteps": [
+    "讓量筒放穩並等待液面停止晃動。",
+    "以與液面同高的視線讀取。",
+    "依最小刻度記錄必要估讀位。",
+    "若仍有波動，保留平均和範圍。",
+    "所以選 A。"
+  ]
 }

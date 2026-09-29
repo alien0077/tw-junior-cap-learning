@@ -1,0 +1,149 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-8-iv-5
+  knowledgeGraphIds:
+  - kg-english-performance-8-iv-5
+  title: 8-Ⅳ-5：從在地線索理解彼此相連的世界
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 8-Ⅳ-5 能具有基本的世界觀；C-Ⅳ-4 基本的世界觀
+    curriculumIntent: 透過英文理解地方、國家與全球之間的連結，核對來源／尺度／觀點，並以符合證據範圍的方式表達與行動
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以官方課綱與可讀的出版社標示校方計畫線索比較教學取徑，再由LLM原創撰寫；計畫書不是出版社課本全文，未核實的版次不得冒稱章節級融合
+    currentEvidenceStatus: official-curriculum-and-KG-read; Hanlin-labeled school-plan and additional school-plan excerpts read; target textbook full chapters unavailable; publisher slots pending
+  learningGoals:
+  - 從地圖、短文或數據辨認地方／國家／全球尺度及資料來源
+  - 區分直接證據、角色觀點、推論與未知，限制主張範圍
+  - 用簡易英文比較多方影響並提出可查證的在地行動
+  prerequisites:
+  - 能讀取簡單英文短文、地圖標籤及表格欄位
+  - 能用 because 或 according to 引出理由／來源
+  coreConcepts:
+  - 世界議題可在地方、國家與全球尺度互相連結，但尺度不能任意互換
+  - 來源、日期、地點、樣本與量測方式限制資料能支持的主張
+  - 多方觀點與因果鏈需並列，相關性不等於因果
+  misconceptions:
+  - 一則新聞或一位居民的經驗足以代表整個國家
+  - 兩個變項同時變化就證明其中一個造成另一個
+  - 把地圖上相鄰誤當作居民一定往來或文化相同
+  - 忽略資料的時間、樣本與地理尺度限制
+  contentFlow:
+  - 'predict: 看出地圖上兩地共享的地理特徵，先預測哪些相似性尚不能證明居民經驗或文化相同'
+  - 'manipulate: 核對跨地資料的來源、日期、地點、樣本與表徵尺度，將可比欄位並排'
+  - 'observe: 對照多來源記錄不同角色的效益、地方代價和未提供證據，標出時間與樣本界線'
+  - 'explain: 用英文句框分清資料、推論與未知，將主張限於來源可支持的地區、群體與期間'
+  - 'transfer: 把尺度與證據檢查帶到校園可蒐集的問題，設計有明確觀察範圍的下一步行動'
+  visualizations:
+  - 四格 evidence board：來源／直接資訊／受影響者／尚缺資料
+  - 地方—國家—全球尺度圖，以標籤、箭頭和文字敘述連結而不以色彩單獨承載
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-8-IV-5-I01
+    component: GuidedChoiceBlock
+    purpose: 用四個不同證據尺度與跨地影響情境練習世界觀判讀、觀點統整及主張限縮
+    initialState: {showAnswer: false, selectedChoice: null, completedSteps: []}
+    studentActions:
+    - 閱讀一段原創英語情境及三個解讀選項
+    - 先選答案；答錯時讀取本課證據尺度提示並重試
+    - 正答後查看明載依據、可作推論及仍未知的部分
+    - 以鍵盤完成四步，不依賴色彩或外部網路
+    visualRules:
+    - 作答前不顯示正解；錯答可重試並保留當前步驟
+    - 回饋明確指出來源和主張的尺度界線
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕完整顯示題幹、選項與理由，不水平溢位
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-8-IV-5-I01
+      trigger: 把單一來源或局部觀察擴大為全球／全國主張
+      prompt: 請指出來源涵蓋的時間、地點與對象，並標示超出它的部分。
+      expectedEvidence: 能引用資料定位並說明哪些更大尺度結論仍需其他來源
+    feedback:
+      correct: 指出選項使用的來源範圍並提醒尚未涵蓋的對象或尺度。
+      incorrect: 提示重看來源、日期、地點或樣本，讓學生先重試再顯示理由。
+  teachingPatternRefs:
+  - refId: official-curriculum-8-iv-5
+    reuseDecision: inspiration-only
+    application: "依8-Ⅳ-5/C-Ⅳ-4設計地方—國家—全球尺度理解；正文例證與互動由本課原創。"
+  - refId: unesco-global-citizenship-education
+    reuseDecision: inspiration-only
+    application: "只參考地方／全球連結、多元觀點及倫理行動框架，不搬用UNESCO例文或題目。"
+  - refId: public-school-hanlin-plan
+    reuseDecision: inspiration-only
+    application: "參照校方計畫所列跨地閱讀、地點搜尋及預測後回文核對；計畫不是出版社課本全文。"
+  - refId: public-school-kanghsuan-labeled-plan
+    reuseDecision: inspiration-only
+    application: "只參照可讀校方計畫的生活對話與時間情境；版次標籤未獨立確認，不作課本證據。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 使用未教過的世界資料情境，檢查尺度、來源限制及多方影響；不可只替換國名
+    requiredResponse: 選答後引用一項來源證據，標出推論邊界並指出一項待查資料
+    scoring: 結論與來源相符1、尺度範圍恰當1、多方觀點／限制完整1
+  exitTicket:
+    prompt: 一筆校園觀察可以支持哪個範圍的世界議題主張？還需要查什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 說清楚觀察的地點、時間和對象
+    - 把已知與尚待查證的推論分開
+  expressionExtension:
+    applicable: true
+    task: 用3至5句英文介紹一項校園—全球連結，說明來源、受影響者與一項限制
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 四步GuidedChoice作答前不揭露正解；錯答出現本課尺度／來源提示，重試後才提供理由。
+  - 每步一題，分別檢查地圖支持範圍、資料時間與樣本、多方影響及校園觀察的外推限制。
+  - 鍵盤可完成四步；選項與狀態可讀，答案不以顏色單獨呈現。
+  - 四步互動及七段正文在320px、375px和768px均完整可讀且無水平溢位。
+  - fallback：外部地圖或模擬腳本不可用時，使用本課內嵌文字地圖資料與四格evidence board完成四步；標示離線，不宣稱即時地圖已載入。
+  - 學生頁顯示七段原創正文一次，與content.sections和teaching.body一致。
+  - 10題均保留可解析正解、繁中詳解策略、五步解題與可追溯公校試題pattern-only引用。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 四步互動能診斷超出證據範圍的結論並給予重試提示
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 無placeholder或只換名詞模板；出版社全文未取得時明示限制並將相應evidence留pending
+  - Lesson教材最後內容審查由使用者交ChatGPT處理，不作為Codex稿件盤點完成gate
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 8-Ⅳ-5
+    role: official-curriculum-source-of-truth
+  - url: https://www.unesco.org/en/global-citizenship-peace-education/need-know?hub=84606
+    locator: UNESCO全球公民教育說明：地方／全球互聯、多元觀點、批判思考與行動責任；理論補充來源
+    role: pedagogy-reference-not-curriculum-source
+  - url: https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf
+    locator: 永慶高中國中部114學年度翰林版計畫 pp.58-60、98-101；跨地閱讀／地點查找及預測修正，不是8-Ⅳ-5指定課本全文
+    role: publisher-labeled-school-plan-context
+  - url: https://course.cyc.edu.tw/upfile/course112/sub1/15342166894673419.pdf
+    locator: 大吉國中計畫PDF pp.48-52，Lesson 6 What Are You Doing?、時間／人物對話及C-Ⅳ-4線索；版次在該段未獨立核實
+    role: public-school-plan-context-publisher-label-unverified
+  - url: https://course.cyc.edu.tw/upfile/course113/sub1/15636172843290327.pdf
+    locator: 大吉國中計畫PDF pp.112-125，主題閱讀、資訊搜尋、預測修正、因果釐清；該定位出版社標籤未能確認
+    role: public-school-plan-context-publisher-label-unverified

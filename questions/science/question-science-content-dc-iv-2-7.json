@@ -2,23 +2,23 @@
   "id": "question-science-content-dc-iv-2-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年3月3日河川觀測站的觀察中，針對「Dc-Ⅳ-2：內分泌調節代謝與體內恆定」提出可檢驗的科學問題，若比較 5 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "腎上腺素能在緊張時提高可用血糖，這能說明什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Dc-Ⅳ-2：內分泌調節代謝與體內恆定」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "胰島素永遠停止作用"
     },
     {
       "id": "B",
-      "text": "研究「Dc-Ⅳ-2：內分泌調節代謝與體內恆定」時只測量5組中的一組就直接下結論"
+      "text": "升糖素只在進食後作用"
     },
     {
       "id": "C",
-      "text": "研究「Dc-Ⅳ-2：內分泌調節代謝與體內恆定」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "所有激素都只降低血糖"
     },
     {
       "id": "D",
-      "text": "研究「Dc-Ⅳ-2：內分泌調節代謝與體內恆定」時只改變距離，其餘條件一致，設置5組、每組取樣15份並各重複測量4次"
+      "text": "血糖調節可由不同情境與激素共同參與，不能把所有升高都歸給單一激素"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,48 @@
   "difficulty": "medium",
   "answer": {
     "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Dc-Ⅳ-2：內分泌調節代謝與體內恆定」。"
+    "explanation": "不同生理情境會動員不同調節，判斷需看時間、刺激與資料，不能只背一種激素。 正確答案為選項 D。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "內分泌、代謝、血糖資料與生理調節",
+      "observedPattern": "只取公立校方公開試題的曲線判讀與因果能力方向，重寫血糖情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "血糖調節、負回饋、控制條件",
+      "observedPattern": "只取公開資料題的能力模式，重新設計內分泌調節問題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作內分泌、血糖曲線、代謝、負回饋、控制條件與證據界線的能力方向；本題為 Dc-Ⅳ-2 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-dc-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-dc-iv-2",
+  "solutionStrategy": "把刺激情境、激素方向和血糖資料對齊，再檢查替代解釋。",
+  "solutionSteps": [
+    "先讀血糖曲線的時間、單位、上升下降與進食／空腹情境。",
+    "把激素、標的細胞、肝糖合成／分解與血糖方向分開標記。",
+    "依負回饋、控制條件、峰值、回復時間與替代解釋核對資料。",
+    "排除把恆定當固定、把所有變化歸給單一激素或忽略時間序列的選項，答案為 D。",
+    "將答案放回血糖調節情境並檢查證據範圍：不同生理情境會動員不同調節，判斷需看時間、刺激與資料，不能只背一種激素。"
+  ]
 }

@@ -2,41 +2,84 @@
   "id": "question-science-content-ea-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年10月19日學校研究社的觀察中，針對「Ea-Ⅳ-2：以適當尺度量測或推估物理量」提出可檢驗的科學問題，若比較 5 組、每組取樣 18 份資料，哪一項設計最適當？",
+  "prompt": "要報告校園暴雨可收集的水量，哪項資訊最不可缺？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ea-Ⅳ-2：以適當尺度量測或推估物理量」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "只拍雨景照片，不記錄時間或雨量"
     },
     {
       "id": "B",
-      "text": "研究「Ea-Ⅳ-2：以適當尺度量測或推估物理量」時只測量5組中的一組就直接下結論"
+      "text": "只寫水量數字，不必寫面積"
     },
     {
       "id": "C",
-      "text": "研究「Ea-Ⅳ-2：以適當尺度量測或推估物理量」時先決定結論，再挑選支持結論的18筆資料"
+      "text": "雨量深度、有效集水面積、單位換算與估計假設"
     },
     {
       "id": "D",
-      "text": "研究「Ea-Ⅳ-2：以適當尺度量測或推估物理量」時只改變光照時間，其餘條件一致，設置5組、每組取樣18份並各重複測量5次"
+      "text": "把估算值寫成儀器直接讀得的精確值"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ea-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ea-Ⅳ-2：以適當尺度量測或推估物理量」。"
+    "value": "C",
+    "explanation": "雨水量需由雨量深度×集水面積推估，還要說明單位、可收集比例與假設，否則讀者無法檢查結果。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www3.schs.ntpc.edu.tw/var/file/0/1000/attach/62/pta_6928_7943048_11362.pdf",
+    "sourceLocator": "三筆公立學校公開自然科資料僅作尺度、工具、累積量測、排水法與推估的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ea-iv-2"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-ea-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www3.schs.ntpc.edu.tw/var/file/0/1000/attach/62/pta_6928_7943048_11362.pdf",
+      "title": "新北市立石碇高中國中部自然科題庫",
+      "year": "113",
+      "locator": "估讀、量筒、排水法與測量工具題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然題常以一滴水累積、量筒液面差、工具精度、單位換算和平均值要求選工具與推估；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675416611640UMJ54uWL.pdf",
+      "title": "臺北市立內湖國中111學年度上學期自然科學第一次段考",
+      "year": "111",
+      "locator": "最小刻度、量筒讀值與單位題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然題常以一滴水累積、量筒液面差、工具精度、單位換算和平均值要求選工具與推估；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.jhsh.ntpc.edu.tw/var/file/0/1000/attach/77/pta_22725_1030925_35628.pdf",
+      "title": "新北市立錦和高級中學113學年度國中部自然科補考題庫",
+      "year": "113",
+      "locator": "累積量測、有效位數與排水法題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然題常以一滴水累積、量筒液面差、工具精度、單位換算和平均值要求選工具與推估；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用『資料—公式—換算—假設—限制』檢查推估報告是否可追溯。",
+  "solutionSteps": [
+    "列出已量得的雨量深度。",
+    "確認有效集水面積和可能損失。",
+    "寫公式並統一單位。",
+    "標示約值、假設和不確定性。",
+    "所以完整資訊是 A。"
+  ]
 }

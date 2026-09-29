@@ -2,23 +2,23 @@
   "id": "question-science-content-cb-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年9月23日社區環境站的觀察中，將 56 g 食鹽溶於 1000 g 水，研究「Cb：物質的結構與功能」時，溶液質量為何？",
+  "prompt": "鑽石與石墨都只由碳組成但性質不同，最合理的解釋是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "944 g"
+      "text": "碳原子的排列與彼此連結方式不同"
     },
     {
       "id": "B",
-      "text": "56000 g"
+      "text": "其中一種一定不含碳"
     },
     {
       "id": "C",
-      "text": "1000 g"
+      "text": "兩者只差外觀顏色"
     },
     {
       "id": "D",
-      "text": "1056 g"
+      "text": "只要元素相同所有性質必相同"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：56＋1000＝1056 g。 本題對應 KG「Cb：物質的結構與功能」。"
+    "value": "A",
+    "explanation": "外觀不能取代結構證據。 故選 A。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；第17題原子粒子數題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的原子分子、結構與性質能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Cb 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子分子、同素異形體、結構式與物性資料判讀",
+      "pattern": "取由粒子排列、化學式、結構差異與性質資料推論物質的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由粒子排列、化學式、結構差異與性質資料推論物質的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把元素種類固定，再比較原子排列與結構。",
+  "solutionSteps": [
+    "確認兩者都只含碳元素。",
+    "因此元素種類不是造成差異的變因。",
+    "不同排列與鍵結方式會改變硬度、導電性等宏觀性質。",
+    "外觀不能取代結構證據。",
+    "故選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

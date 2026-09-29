@@ -1,0 +1,128 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-chinese-content-ab-iv-3
+  knowledgeGraphIds:
+  - kg-chinese-content-ab-iv-3
+  title: Ab-Ⅳ-3：象形指事會意形聲
+  subject: chinese
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Ab-Ⅳ-3：象形指事會意形聲
+    curriculumIntent: Ab-Ⅳ-3：象形指事會意形聲
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 已實際核對三所公立學校公開課程計畫／教學資料的版本章節級證據；只融合三版本共同概念與可核對差異，正文、例題、題目與互動仍為本專案原創，內容與 Terra 審查未完成前不得升級發布狀態
+    currentEvidenceStatus: curriculum-and-kg-grounded; three-publisher-fusion-evidence-verified; content-and-Terra-review-pending
+  learningGoals:
+  - 以可觀察的構件線索辨認象形、指事、會意、形聲四種造字方式
+  - 說明構件如何表意、標示位置、合成意義或提示讀音，避免只背類別名稱
+  - 面對未教過的字，提出可檢驗的構件證據並說明分類的不確定性
+  prerequisites:
+  - 能辨認漢字的基本構件及其位置
+  - 能把字形中的可見線索和字義或讀音提示分開描述
+  coreConcepts:
+  - 象形：以形體描摹事物特徵；指事：以指示性符號標示抽象概念或位置。
+  - 會意：構件意義合成新義；形聲：意符提示語義範圍、聲符提示讀音線索，實際讀音仍需查證。
+  - 六書分類是解釋字形構造的分析工具，不代表現代字形每一筆都能直接還原古文字源。
+  misconceptions:
+  - 把會意與形聲都看成「兩個部件拼起來」，沒有檢查部件功能
+  - 把形聲聲符當成必然準確的現代讀音，忽略歷時音變與例外
+  - 只憑字面像不像圖畫判斷象形，沒有指出構件與所指形狀的對應
+  contentFlow:
+  - 從「休」的人、木構件切入，先說明看到的構件，再解釋兩個意義如何合成休息之義。
+  - 觀察「末」的短橫位置，將標示樹梢的構形證據與聲音線索分開，辨認指事。
+  - 以形聲字的意符／聲符分工建立可檢查的雙線索，不把聲符等同現代必然讀音。
+  - 三個 GuidedChoice 步驟分別聚焦會意、指事、形聲；每題先依構件功能判斷，再讀題目回饋。
+  - 遷移到新字時要求學生畫分構件、列出功能證據、提出分類與不確定處；字源需另查可信字典。
+  visualizations:
+  - 課文以構件—功能對照呈現四類造字法；學生頁互動為三題文字選擇題，不宣稱有動態圖表或構件拖放功能。
+  - 每個答案須能回指題目實際給出的構件或位置線索；不能只以顏色標示類別。
+  interactiveBlocks:
+  - id: CUR-CHINESE-CONTENT-AB-IV-3-I01
+    component: GuidedChoiceBlock
+    purpose: 依序用「休」的構件合義、「末」的標記位置及形聲意符／聲符分工練習以構件功能判斷造字類型。
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 讀取字形與題幹，以滑鼠或鍵盤選出最能由構件功能支持的判斷。
+    - 答錯後閱讀通用重試提示並重選；答對後核對該字的構件證據。
+    - 口頭或紙筆指出是部件合義、位置標記，或意符／聲符分工支持分類。
+    visualRules:
+    - 三題均呈現實際字形、文字題幹、三個選項與即時回饋；不模擬字源動畫或拖放。
+    - 選項以可讀文字、鍵盤焦點及 aria-pressed 顯示作答狀態。
+    - 窄螢幕不得裁切字形、題幹、選項或回饋。
+    misconceptionChecks:
+    - id: MC-CUR-CHINESE-CONTENT-AB-IV-3-I01
+      trigger: 將部件數量或外觀當作分類答案，未說明每一構件的功能。
+      prompt: 指出字中的構件及其作用，再判斷它是在合義、標示位置，或提示音義。
+      expectedEvidence: 能定位字形中的構件或標記，並說明該線索如何支持分類。
+    feedback:
+      correct: 顯示 lesson 對應的構件功能解釋。
+      incorrect: 顯示通用重試提示「再想一次：回顧上方的融合版重點。」；目前互動沒有逐題 retryHint 或二階提示。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: GuidedChoice 選項回饋以 aria-live 公告，答案狀態同時提供文字和 aria-pressed。
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: 互動採具名區域和鍵盤可聚焦按鈕；lesson 與測驗資料由本地資料載入。
+  capTransfer:
+    questionType: 新字形構件分析與造字類型理由說明。
+    stemConstraint: 使用互動未出現的新字，不只替換已教字名；提供可辨認的構件線索並要求學生查證字源。
+    requiredResponse: 描述構件、提出分類、引用功能證據，並指出若證據不足應查核的資料。
+    scoring: 構件定位 1、分類合理 1、證據與不確定性說明 1。
+  exitTicket:
+    prompt: 四類造字法各自依據什麼構件功能？用一個新字示範你的分類，並說明何處仍需字源查證。
+    successCriteria:
+    - 提到本單元核心概念
+    - 描述可定位的字形構件
+    - 說明構件功能及分類依據
+  expressionExtension:
+    applicable: true
+    task: 選一個未在互動出現的常用字，畫出構件並寫短註解，說明你如何判斷其造字方式。
+    constraint: 將可直接觀察的字形線索與歷史字源推測分開；以教育部字典或可信文字學資料核對，附查證來源。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 學生頁六段 authored teaching 與三段摘要均完整顯示，三個互動步驟題幹／答案／feedback 與 lesson JSON 一致。
+  - 三步 GuidedChoice 均能以鍵盤錯答、讀取 aria-live 通用重試提示，再選正答並讀取該題正確解釋。
+  - 阻擋 simulations.js 與外部請求後，本地 lesson 和三步互動仍可用。
+  - 在 320px、375px 與 768px 寬度無水平溢位，選項觸控高度至少 44px，axe 無 violations。
+  - 新字遷移屬課後短寫任務，不得宣稱目前瀏覽器互動會自動判定字源或歷史分類。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf
+    locator: 正文第 12～18 頁／PDF 第 14～20 頁；國民中學教育階段學習內容；官方代碼 Ab-Ⅳ-3
+    role: official-curriculum-source-of-truth

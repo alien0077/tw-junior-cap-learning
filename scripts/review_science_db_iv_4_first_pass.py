@@ -1,0 +1,8 @@
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; files=sorted((ROOT/'questions/science').glob('question-science-content-db-iv-4-*.json')); failures=[]
+for p in files:
+ x=json.loads(p.read_text())
+ if x['answer']['value'] not in {o['id'] for o in x['options']} or len(x.get('solutionSteps',[]))<5 or x.get('reviewStatus')!='draft': failures.append(p.name)
+report={'unit':'Db-Ⅳ-4','checked':len(files),'passed':len(files)-len(failures),'failures':failures,'status':'pass' if not failures and len(files)==10 else 'fail'}
+(ROOT/'implementation/reports/science-db-iv-4-first-pass-review.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n'); print(json.dumps(report,ensure_ascii=False)); raise SystemExit(0 if report['status']=='pass' else 1)

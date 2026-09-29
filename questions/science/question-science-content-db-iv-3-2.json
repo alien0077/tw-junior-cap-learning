@@ -2,41 +2,67 @@
   "id": "question-science-content-db-iv-3-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年6月1日校園實驗室的觀察中，針對「Db-Ⅳ-3：呼吸系統與外界氣體交換」提出可檢驗的科學問題，若比較 4 組、每組取樣 10 份資料，哪一項設計最適當？",
+  "prompt": "吸氣時，哪一組身體變化最符合胸腔擴大的情況？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "橫膈放鬆上升、肋骨下降，胸腔體積增加，空氣進入肺"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只改變溶液濃度，其餘條件一致，設置4組、每組取樣10份並各重複測量4次"
+      "text": "橫膈收縮下降、肋骨上升，胸腔體積增加，空氣進入肺"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只測量4組中的一組就直接下結論"
+      "text": "橫膈收縮上升、肋骨下降，胸腔體積減少，空氣進入肺"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時先決定結論，再挑選支持結論的10筆資料"
+      "text": "橫膈放鬆下降、肋骨上升，胸腔體積減少，空氣進入肺"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-3：呼吸系統與外界氣體交換」。"
+    "explanation": "吸氣時橫膈收縮而下降、肋骨上提，使胸腔體積增大、壓力降低，空氣因而流入肺部。選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的呼吸運動、肺泡與氣體交換能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "呼吸運動、肺泡氣體交換與呼吸資料判讀",
+      "pattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用『肌肉動作→胸腔體積→壓力差→氣流方向』四步連鎖判斷。",
+  "solutionSteps": [
+    "先判定吸氣需要空氣流入肺。",
+    "確認要讓空氣流入，胸腔體積必須增加。",
+    "連結胸腔擴大到橫膈下降與肋骨上升。",
+    "檢查是否同時符合壓力降低與氣流進入。",
+    "所以選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

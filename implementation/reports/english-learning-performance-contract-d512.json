@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-learning-performance",
+  "change": [
+    "Preserved the existing six-section authored lesson and five-step GuidedChoice question set; mapped this umbrella learning-performance unit's goal/task/evidence alignment to unit-specific prediction, analytic operationalization, evidence observation, calibrated explanation and transfer stages.",
+    "Recorded the offline fallback requirement explicitly: embedded lesson and practice remain operable with all off-origin requests blocked."
+  ],
+  "tests": {
+    "runtimeFusionContract": "PASS: npm run test:english:learning-performance",
+    "browser": "PASS: six lesson sections, five keyboard steps, wrong-answer retry/correct feedback, five polite live regions, axe 0 violations / 0 incomplete, reduced motion, external request blocked, 320/375/768px no overflow, zero page errors",
+    "specValidation": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "PASS: 1,027/1,027; 0 failures across all 12 contract checks",
+    "lesson": "unchanged",
+    "questions": "unchanged",
+    "jsonAndDiffCheck": "pending"
+  },
+  "notClaimed": [
+    "Structural/spec contract passing does not by itself prove every unit's runtime or content QA; full suite and end-to-end audits remain to be run.",
+    "No commit or push was made."
+  ]
+}

@@ -2,41 +2,87 @@
   "id": "question-science-content-ka-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年8月25日學校研究社的觀察中，空氣射向金屬面時，光線與鏡面法線的入射角為 60°，研究「Ka：波動、光及聲音」時，反射角為何？",
+  "prompt": "光從空氣斜射入水中，作圖時最先應完成哪個動作？",
   "options": [
     {
       "id": "A",
-      "text": "30°（「Ka：波動、光及聲音」中把入射角誤當折射角）"
+      "text": "在入射點畫出垂直界面的法線，再量入射角與折射角"
     },
     {
       "id": "B",
-      "text": "120°（「Ka：波動、光及聲音」中把入射角加倍）"
+      "text": "直接以水面作為量角基準，透明介質就不會改變光路"
     },
     {
       "id": "C",
-      "text": "60°（空氣射向金屬面）"
+      "text": "先以光的亮度判定折射角，再補上界面"
     },
     {
       "id": "D",
-      "text": "120°（「Ka：波動、光及聲音」中以平角計算）"
+      "text": "把所有折射光畫成沿法線前進，不必看入射方向"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ka"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "反射定律指出反射角等於入射角，因此為 60°。 本題對應 KG「Ka：波動、光及聲音」。"
+    "value": "A",
+    "explanation": "法線提供一致的幾何基準；光進入不同介質後可能改變速度與方向，不能以透明或亮度直接代替角度判讀。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的波形、公式、介質、聲音、回聲、光路與實驗設計能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ka",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "波動、聲音、光學圖形與資料判讀",
+      "pattern": "取公立學校自然科評量以波形量測、介質條件、光路圖和生活情境推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以波形量測、介質條件、光路圖和生活情境推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "波速頻率波長、聲音傳播、反射折射與實驗變因判讀",
+      "pattern": "取公開會考以圖表、物理量關係、路徑幾何與證據界線評估的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、物理量關係、路徑幾何與證據界線評估的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "波動量、回聲、聲音三要素、反射折射與控制變因",
+      "pattern": "取公立國中試題以公式代換、往返路徑、波形辨識、光線作圖和公平測量的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以公式代換、往返路徑、波形辨識、光線作圖和公平測量的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "作圖順序固定為界面、法線、入射線與折射線，最後才比較角度與方向。",
+  "solutionSteps": [
+    "先辨認題目談的是介質粒子的振動，還是波形整體的傳播。",
+    "圈出波長、頻率、週期、振幅與波速的定義和單位。",
+    "依圖上的刻度找同相位點或平衡位置，再建立方程式。",
+    "把數值代入前先檢查單位與題目給的介質條件。",
+    "用量綱、極端情況或圖形方向回頭檢查答案是否合理。"
+  ]
 }

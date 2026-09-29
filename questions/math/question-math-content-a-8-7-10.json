@@ -2,23 +2,23 @@
   "id": "question-math-content-a-8-7-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "方程式 x²－2x＝15 的所有解為何？",
+  "prompt": "正方形面積比原來增加 21 平方公分，邊長由 x 增加為 x＋3；若原邊長為正數，x 為何？",
   "options": [
     {
       "id": "A",
-      "text": "x＝15 或 －2"
+      "text": "2"
     },
     {
       "id": "B",
-      "text": "x＝－15 或 2"
+      "text": "3"
     },
     {
       "id": "C",
-      "text": "x＝5 或 －3"
+      "text": "4"
     },
     {
       "id": "D",
-      "text": "x＝3 或 －5"
+      "text": "5"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "整理為 x²－2x－15＝0，即 (x－5)(x＋3)＝0，所以 x＝5 或 －3。"
+    "value": "A",
+    "explanation": "(x＋3)²−x²＝21，化簡 6x＋9＝21，得 x＝2，因此選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究一元二次方程式的因式分解、公式法、整數根與情境應用能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供一元二次方程式解法、根驗證與應用題能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的二次方程式解法方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-7"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-a-8-7",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/6790e68d27693313424a67e3.pdf",
+      "title": "臺中市立至善國中 113 學年度第一學期八年級期末評量數學科試題",
+      "year": "113",
+      "subject": "math",
+      "locator": "原卷第 1 頁第 9 題：將幾何量差轉成代數方程並求值",
+      "observedPattern": "該公校原卷第 9 題呈現「將幾何量差轉成代數方程並求值」的能力模式；本題僅取能力方向，題幹、數字、選項、答案及解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064510/get-file/5e49ebb9a2bac601505f73d8",
+      "title": "臺中市立大甲國中二年級數學補考題庫（第三冊）",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "原卷第 2 頁第 27 題：由幾何情境建立關係式並檢核解",
+      "observedPattern": "該公校原卷第 27 題呈現「由幾何情境建立關係式並檢核解」的能力模式；本題僅取能力方向，題幹、數字、選項、答案及解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064519/get-file/698ae03c3cd80e32ef01bd8d",
+      "title": "臺中市立大道國民中學 114 學年度第一學期八年級數學科補行評量題庫",
+      "year": "114",
+      "subject": "math",
+      "locator": "原卷第 2 頁第 20 題：由數量情境建立方程式",
+      "observedPattern": "該公校原卷第 20 題呈現「由數量情境建立方程式」的能力模式；本題僅取能力方向，題幹、數字、選項、答案及解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先用面積差建立式子，再化簡並檢查題目選項對應。",
+  "solutionSteps": [
+    "建立 (x＋3)²−x²＝21。",
+    "展開並消去 x²，得 6x＋9＝21。",
+    "兩邊同減 9 得 6x＝12。",
+    "解得 x＝2。",
+    "選 A，代回面積差為 25−4＝21。"
+  ]
 }

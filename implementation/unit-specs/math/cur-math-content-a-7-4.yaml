@@ -1,0 +1,157 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-7-4
+  knowledgeGraphIds:
+  - kg-math-content-a-7-4
+  title: A-7-4：二元一次聯立方程式的意義
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  fusedScope:
+    officialCurriculum: A-7-4：二元一次聯立方程式的意義
+    curriculumIntent: A-7-4：二元一次聯立方程式的意義
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依官方課綱與KG，逐一比較可讀版本標示材料的概念順序、表示法與候選解判別，再以本單元資料重新設計正文與互動；逐版標明第三方分享、閱讀定位及授權限制。無法讀到的版本不得推稱共同教法；本課僅形成康軒／翰林版本標示材料主導的原創融合草稿，南一正文未讀，三家publisher evidence均維持pending、lesson維持draft。
+    currentEvidenceStatus: curriculum-and-kg-grounded; kanghsuan-labeled-third-party-study-handout-read-pages-14-16-rights-unverified; hanlin-labeled-third-party-textbook-read-pp36-37-rights-unverified; nani-course-crosswalk-only; source-to-visible-teaching-trace-recorded; publisher-evidence-pending; content-review-pending
+  learningGoals:
+  - 以園遊會飲品紀錄定義 x 為果汁杯數、y 為茶杯數，分別建立 x+y=18 與 2x+y=30。
+  - 說明單一方程式只限制候選數對的一個條件；聯立解必須讓同一有序數對同時滿足兩式。
+  - 逐式代入候選數對 (12,6)，判斷是否為共同解，並保持 x、y 順序和杯數單位一致。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 二元一次方程式的解是一組有序數對；順序固定對應先定義的 x、y，不可交換後仍沿用同一意義。
+  - 一條直線或一個方程式包含多組候選數對；聯立方程式的解是同時符合所有條件的共同解。
+  - 建模須讓每一條方程式回指題目中的獨立條件，並以原兩式分別代入驗證共同解。
+  misconceptions:
+  - 只用 x+y=18 檢查 (12,6)，便宣稱它是聯立方程組的解，忽略冰塊總數條件。
+  - 把 (12,6) 寫成 (6,12) 而沒有交換 x、y 的定義，導致兩個條件的語意顛倒。
+  - 將兩式各自不同的解拼在一起，誤認為聯立解可以由兩組數值分別通過一式構成。
+  contentFlow:
+  - 'hook: 園遊會兩張工作單分別記下總杯數 18 與冰塊數 30；只看第一張時預測可能的果汁／茶組合。'
+  - 'activate-prerequisite: 用 x、y 標籤卡檢查學生能否將數量、順序與單位一一對應。'
+  - 'predict: 提交一組候選杯數，預測它會通過「總杯數」和「冰塊數」哪幾項紀錄。'
+  - 'manipulate: 調整果汁 x 與茶 y 的數量；資料表分開顯示 x+y=18 和 2x+y=30 的通過狀態。'
+  - 'observe: 逐點檢查候選數對，找出只通過一條關係與同時通過兩條關係的差別。'
+  - 'explain: 用有序數對 (x,y) 重述答案，並逐式說明 12+6=18、2×12+6=30。'
+  - 'formalize: 定義二元一次方程式的解、聯立方程組共同解，以及每式需源自一項可追溯條件。'
+  - 'guided-practice: 以班級票種數量與總收入兩條紀錄建式，先固定變數順序，再分別代回候選數對。'
+  - 'transfer: 用紙箱與寶特瓶總件數 25、總重 46 公斤資料，建立兩條限制並檢查 (21,4) 是否同時通過。'
+  - 'exit-ticket: 辨認只通過總件數條件的候選對，指出為何仍不能稱為共同解。'
+  visualizations:
+  - 條件資料表：列出候選 (x,y)、杯數和 2x+y 冰塊數，兩個條件各自勾選且不能合併為單一分數。
+  - 座標平面：以 x+y=18 與 2x+y=30 表示兩條條件線；交點 (12,6) 同時滿足兩式，其他線上點只滿足其中一式。
+  - 有序數對標記：固定 x=果汁、y=茶，座標軸、文字與表格順序保持一致，提供非圖像文字說明。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-7-4-I01
+    component: DataExplorerBlock
+    purpose: 讓學生探索兩條獨立資料限制各自篩選哪些飲品組合，並找到同時符合杯數和冰塊紀錄的共同數對。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        juiceCups: 12
+        teaCups: 6
+        totalCups: 18
+        iceCubes: 30
+    studentActions:
+    - 先提交候選有序數對，選擇預測它會通過哪一張工作單；交卷前不顯示交點答案。
+    - 用鍵盤或觸控調整果汁杯數，茶杯數依總杯數條件聯動；切換到冰塊條件時重新檢查第二式。
+    - 點選資料表中的證據格，分別標示總杯數與冰塊數條件是否成立。
+    - 把候選數對按「通過第一式／通過第二式／共同解」分類，並說明為何共同解需通過兩次檢查。
+    visualRules:
+    - x、y 任一改變時，有序數對、兩條式的計算結果、表格與座標點同步更新。
+    - 只通過一式的候選必須明確標為「尚非共同解」，不能用顏色暗示已完成。
+    - x 始終代表果汁、y 始終代表茶；調換順序時顯示變數定義不符警示。
+    - 圖表點提供可讀的座標與兩式代入文字，顏色之外使用勾選符號及標籤。
+    - 窄螢幕以直向表格和逐式結果取代縮小座標圖，不遺失限制條件。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-7-4-I01
+      trigger: 候選數對只滿足 x+y=18，仍被標記為整組解。
+      prompt: 把這組數代入另一張冰塊紀錄會得到多少？兩張工作單都對上了嗎？
+      expectedEvidence: 必須同時檢查 x+y=18 與 2x+y=30；例如 (10,8) 通過第一式，但第二式為 28≠30，因此不是共同解。
+    feedback:
+      correct: 請學生說明兩條資料各自限制什麼，並換一組候選數對重做兩次代入。
+      incorrect: 第一提示問「目前只檢查了哪一張工作單？」；第二次仍錯才示範第二條式的代入，不直接給共同解。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只借用 PhET 資料可操作和多表徵同步回饋的形式；本課獨立設計兩張飲品工作單、候選數對和共同解交點，不沿用其模型或素材。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "參考活動中先預測、記錄證據、再驗證的流程；果汁／茶杯數、兩條限制、表格與回饋皆為本課原創。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "以鍵盤可選的資料格、文字化座標和狀態提示呈現兩條限制；不以顏色作唯一判斷訊息。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以單一主內容、清楚標題與資料表區段協助導覽；候選數對檢查可循序閱讀，不需拖曳。"
+  capTransfer:
+    questionType: 雙資料限制建模與有序數對驗證
+    stemConstraint: 回收站收集紙箱 x 件和寶特瓶 y 件，共 25 件；紙箱每件 2 公斤、寶特瓶每件 1 公斤，總重 46 公斤。判斷 (21,4) 是否為共同解，並說明 x、y 順序。
+    requiredResponse: 寫出 x+y=25、2x+y=46，將 (21,4) 依序代入兩式，分別核對件數和公斤數。
+    scoring: 兩條式各自對應正確條件 1、有序數對代入正確 1、兩項結果及單位解釋完整 1
+  exitTicket:
+    prompt: 候選 (10,8) 滿足 x+y=18，但 2x+y=30 不成立。它能否稱為這組聯立方程式的解？請用兩條紀錄說明。
+    successCriteria:
+    - 說明聯立解必須同時滿足兩條式，而不是只通過其中一式。
+    - 算出 10+8=18 且 2×10+8=28≠30。
+    - 結論指出 (10,8) 不是共同解。
+  expressionExtension:
+    applicable: true
+    task: 為一次校園活動設計兩條可核對的數量條件，定義 x、y，寫出聯立式並解釋為何單獨滿足一式還不夠。
+    constraint: 情境與數字由學生自行創作；系統只回饋變數順序、條件對應和兩式驗證，不直接代寫。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 對原始飲品資料，(12,6) 必須同時通過 12+6=18 與 2×12+6=30；(10,8) 只通過第一條並被判為非共同解。
+  - x、y 調整後表格與兩條式同步更新；切換 x/y 定義順序時，變數標籤和座標軸一致更新並保留作答紀錄。
+  - 只檢查一式時觸發「另一張工作單」提示；第二次錯誤後才出現代入第二式的局部示範。
+  - 在 320px、375px、768px 與鍵盤操作下完成預測、兩式檢查、解釋與回饋；縮窄時仍能讀取座標和單位。
+  - 回收站 transfer 的 (21,4) 分別得到 25 件與 46 公斤；交換成 (4,21) 時兩式均不成立，且不得忽略變數定義。
+  - 圖形或動態元件失效時，文字 fallback 仍以兩條條件表、候選有序數對與逐式驗算欄完成預測、共同解判定及回收物資 transfer。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-7-4
+    role: official-curriculum-source-of-truth
+  - url: https://www.scribd.com/document/777687263/國中-數學-基礎自學講義-康軒版-七下
+    locator: 康軒標示七下自學講義分享頁14–16，B2 1-2 聯立方程式意義與候選有序數對交集；第三方內容、授權與版本真實性未驗證
+    role: third-party-shared-kanghsuan-labeled-study-material-pattern-only
+  - url: https://www.scribd.com/document/853352125/翰林國中數學七下課本
+    locator: 翰林標示課本分享P36–37附近，OCR lines 598–664；雙條件情境及同一有序數對逐式檢驗；第三方掃描、授權與版本真實性未驗證
+    role: third-party-shared-hanlin-labeled-textbook-pattern-only
+  - url: https://www.junyiacademy.org/topics/n-m7b-c01
+    locator: 類南一版七下單元目錄／1-1、1-2、1-3課程分節定位；不含可核讀南一出版社課本正文
+    role: nani-aligned-course-map-structure-only

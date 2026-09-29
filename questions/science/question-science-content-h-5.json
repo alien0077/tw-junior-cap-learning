@@ -2,23 +2,23 @@
   "id": "question-science-content-h-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月31日自然科教室的觀察中，比較兩地「H：地球的歷史」資料時，甲地迎風坡年雨量約 77100 mm、乙地背風坡約 52920 mm，最合理的做法是？",
+  "prompt": "若斷層切穿三層岩石，但沒有切穿覆蓋其上的岩層，哪個事件較早？",
   "options": [
     {
       "id": "A",
-      "text": "在「H：地球的歷史」中只看 77100 mm 的單一數值便下結論"
+      "text": "覆蓋層先形成再被切穿"
     },
     {
       "id": "B",
-      "text": "同時比較地形、風向、觀測期間與 77100、52920 mm 資料"
+      "text": "被切穿的三層岩石先形成，斷層活動後發生，覆蓋層最後形成"
     },
     {
       "id": "C",
-      "text": "在「H：地球的歷史」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "三層岩石與覆蓋層同時形成"
     },
     {
       "id": "D",
-      "text": "在「H：地球的歷史」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "無法用交切關係判斷"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,42 @@
   "difficulty": "hard",
   "answer": {
     "value": "B",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「H：地球的歷史」。"
+    "explanation": "交切關係表示切穿者較年輕；斷層切穿下方三層但未切穿覆蓋層，故三層先、斷層後、覆蓋層再後。 正確答案為選項 B：「被切穿的三層岩石先形成，斷層活動後發生，覆蓋層最後形成」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的地層、化石、相對年代、定年及證據判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 H 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-h"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-h",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "地層、化石、相對年代、同位素與資料判讀",
+      "pattern": "取由疊積、截切、指準化石、半衰期和地球環境資料建立事件順序的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由疊積、截切、指準化石、半衰期和地球環境資料建立事件順序的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "按被切物、切穿物與未被切物排序。",
+  "solutionSteps": [
+    "定位概念：圈出 H 地球歷史中的地層、化石、地質事件或定年證據。",
+    "整理證據：按照層位、交切關係、化石特徵與時間尺度整理事件。",
+    "套用原理：交切關係表示切穿者較年輕；斷層切穿下方三層但未切穿覆蓋層，故三層先、斷層後、覆蓋層再後。",
+    "排除干擾：檢查相對／絕對年代、事件先後與證據界線，正確選項是「被切穿的三層岩石先形成，斷層活動後發生，覆蓋層最後形成」。",
+    "最後回查：答案「被切穿的三層岩石先形成，斷層活動後發生，覆蓋層最後形成」符合題幹，沒有把線索誇大成精確結論。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

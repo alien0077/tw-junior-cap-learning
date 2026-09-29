@@ -2,41 +2,87 @@
   "id": "question-science-content-aa-iv-1-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月18日學校研究社的觀察中，將 80 g 食鹽溶於 496 g 水，研究「Aa-Ⅳ-1：原子模型演變」時，溶液質量為何？",
+  "prompt": "用現代觀點回看道耳頓『原子不可再分』的說法，哪個評價最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "416 g"
+      "text": "在當時證據範圍內有解釋力，但後來電子、原子核等證據顯示原子仍可再分"
     },
     {
       "id": "B",
-      "text": "39680 g"
+      "text": "因為後來被修正，所以當時完全沒有科學價值"
     },
     {
       "id": "C",
-      "text": "576 g"
+      "text": "道耳頓其實已經提出電子雲模型"
     },
     {
       "id": "D",
-      "text": "496 g"
+      "text": "原子不可再分與任何化學比例資料都矛盾"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-aa-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：80＋496＝576 g。 本題對應 KG「Aa-Ⅳ-1：原子模型演變」。"
+    "value": "A",
+    "explanation": "道耳頓模型能整理當時的化合比例，後來新證據才揭示原子內部結構；評價應同時承認適用範圍與限制，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；原子模型與證據判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／教材的原子模型、粒子證據與模型修正能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均依 Aa-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-aa-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-aa-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子模型、陰極射線、金箔散射、模型修正與科學證據判讀",
+      "pattern": "取由實驗觀察推論微觀模型，並比較模型解釋力與限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗觀察推論微觀模型，並比較模型解釋力與限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.tksh.ntpc.edu.tw/uploads/1626668076188QlOI4fer.pdf",
+      "title": "新北市立泰山高中公開原子模型與科學史銜接教材",
+      "year": "公開教材",
+      "locator": "陰極射線、金箔散射、原子核與模型修正",
+      "pattern": "取由資料反推模型假設、辨識反常結果並修正模型的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由資料反推模型假設、辨識反常結果並修正模型的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.tcjh.tyc.edu.tw/image/1534212714782dPiSoOmq.pdf",
+      "title": "桃園市立自強國民中學公開自然科段考試題",
+      "year": "公開試題",
+      "locator": "粒子模型、原子結構與科學證據判讀",
+      "pattern": "取把觀察、推論、模型與適用範圍分層判讀的能力方向。",
+      "subject": "science",
+      "observedPattern": "取把觀察、推論、模型與適用範圍分層判讀的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "不要用『現在知道更多』抹去早期模型，改問它在什麼證據範圍內有效。",
+  "solutionSteps": [
+    "確認道耳頓模型曾解釋固定化合比例。",
+    "列出後來發現電子與原子核的新證據。",
+    "判斷『不可再分』是模型限制而非所有內容都錯。",
+    "比較選項是否同時承認歷史作用與現代修正。",
+    "所以選 A。"
+  ]
 }

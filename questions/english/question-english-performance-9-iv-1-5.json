@@ -2,41 +2,73 @@
   "id": "question-english-performance-9-iv-1-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「9-Ⅳ-1／依資訊推論」task, what is the best way to prepare question 5?",
+  "prompt": "A bus arrives late, and several passengers look at their watches before hurrying toward the school gate. What likely happened?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 9-Ⅳ-1／依資訊推論."
+      "text": "The bus arrived much earlier than planned"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 9-Ⅳ-1／依資訊推論."
+      "text": "The passengers are preparing for a picnic next month"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 9-Ⅳ-1／依資訊推論."
+      "text": "The delay made them worry about arriving on time"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 9-Ⅳ-1／依資訊推論."
+      "text": "The school gate has permanently closed"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-9-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 9-Ⅳ-1／依資訊推論, question 5."
+    "value": "C",
+    "explanation": "答案C。公車延誤、乘客看手錶並朝校門快走，三個線索合起來支持他們擔心時間不夠、想趕上某個到校時點；但題目沒有說明他們是否真的遲到。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "Public-school English assessment materials; this item studies inference from notices, charts, messages, context, and multiple evidence only and does not reproduce an original question, option, image, or text.",
+    "authoringNote": "Written independently from the official English curriculum KG and three public-school English assessment sources; information sets, options, explanations, and transfer tasks are original; pending second-round AI/Terra content review."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-9-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-performance-9-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅取資訊推論的因果、趨勢、隱含意圖、情緒、比較、負面證據與多來源整合能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "inference from notices, data, context, and multiple clues",
+      "observedPattern": "公開英文評量常要求從公告、表格、對話與多個線索推論未明說原因、目的、情緒、趨勢或合理結論，並區分證據與過度推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取資訊推論的因果、趨勢、隱含意圖、情緒、比較、負面證據與多來源整合能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "reading information and drawing supported inferences",
+      "observedPattern": "公開英文評量常要求從公告、表格、對話與多個線索推論未明說原因、目的、情緒、趨勢或合理結論，並區分證據與過度推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把事件、表情／動作與目標地點串成因果可能性，結論保留 likely。",
+  "solutionSteps": [
+    "讀出事件順序：公車晚到，乘客看手錶，接著加快腳步往校門走。",
+    "看錶顯示注意時間，快走往校門顯示想趕往學校；兩者支持時間壓力。",
+    "選C：延誤可能使他們擔心不能準時到校。",
+    "沒有明確上課時間或抵達結果，不能確定他們已遲到，也不能推成野餐或校門永久關閉。",
+    "推論人物情緒或目的時，至少結合一項情境事件和一項可觀察反應。"
+  ]
 }

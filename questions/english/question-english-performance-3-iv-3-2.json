@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-3-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-3／理解簡易英文標示」notice for the town museum, item 2: “Room 204 is closed today.” What does it tell people?",
+  "prompt": "A museum map says: 'Leave the lobby, pass the café, then turn right at the blue stairs.' Where is the next turn?",
   "options": [
     {
       "id": "A",
-      "text": "For item 2 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 cannot be used today."
+      "text": "At the café entrance."
     },
     {
       "id": "B",
-      "text": "For item 2 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 opens at midnight."
+      "text": "At the lobby."
     },
     {
       "id": "C",
-      "text": "For item 2 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 is the bus stop."
+      "text": "At the blue stairs."
     },
     {
       "id": "D",
-      "text": "For item 2 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 is outside the building."
+      "text": "After reaching the second floor."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-3／理解簡易英文標示, question 2."
+    "value": "C",
+    "explanation": "Pass the café means continue beyond it; 'turn right at the blue stairs' identifies the turning point. The directions do not say to go upstairs."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1753839175199ERtbxbag.pdf",
+    "sourceLocator": "臺北市立內湖國中113學年度第二學期七年級第三次段考英文試題；PDF第3頁第47–48題：把方向詞與地標組成可執行路線。本題依題型與推理能力重新創作，不複製原題、選項、圖像或答案。",
+    "authoringNote": "原創題幹與選項；僅將公立學校公開試題作為題型與推理能力參照。答案、策略及逐步解說為本題獨立撰寫；保持draft，未執行Terra複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1753839175199ERtbxbag.pdf",
+      "title": "臺北市立內湖國中113學年度第二學期七年級第三次段考英文試題",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF第3頁第47–48題：把方向詞與地標組成可執行路線",
+      "observedPattern": "試題要求依時間資訊判斷活動是否已開始，及按方向詞和地標重組移動路線；本題採全新地點、時刻與路線。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "拆解路線的先後動作，分清楚『經過某處』與『在某處轉彎』；轉向詞後的地標才是轉彎位置。",
+  "solutionSteps": [
+    "先標出起點與移動方向：離開大廳，往地圖指示路徑前進。",
+    "把 pass the café 解作經過咖啡店，不在那裡轉向。",
+    "再讀 turn right at the blue stairs；藍色樓梯才是右轉地標。",
+    "A把經過點當轉彎點，B是起點，D額外推測上樓，均無文字支持。",
+    "選C；移動時每完成一個動作，再確認下一個地標。"
+  ]
 }

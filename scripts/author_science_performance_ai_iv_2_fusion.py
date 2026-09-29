@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance ai-IV-2."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-ai-iv-2.json"; REPORT=ROOT/"implementation/reports/science-performance-ai-iv-2-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；同儕討論、合作探究、分享發現與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以聆聽、提問、分工、證據分享與共同修正享受科學合作。"],"representations":[r],"examplesOrEvidence":["本課的校園風向、種子發芽與聲音實驗交流皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-ai-iv-2" and d["reviewStatus"]=="draft"
+ d["title"]="ai-Ⅳ-2：與同儕討論並分享科學發現樂趣——讓想法彼此長大"
+ d["content"]={"summary":"科學探究的樂趣會在分享和合作中變得更深：同學的問題可能讓自己看見漏掉的變因，別人的失敗經驗可以省下重走的路，而共同完成的解釋也需要聽懂彼此的證據。討論不是票選誰的猜想最有趣，而是輪流說明觀察、提問、回應和修正。本課以風向、種子發芽和聲音實驗的原創合作任務，練習分工、聆聽、友善質疑、整合資料與共同分享發現。","sections":[{"heading":"合作先建立共同問題","body":"小組開始前要用自己的話重述要研究的現象，確認每個人理解同一個目標。若有人看到不同細節，先把差異列出來，不急著判誰對。"},{"heading":"角色讓每個人有真正任務","body":"觀察者、記錄者、器材安全員和提問者的任務可以輪換。分工不是把思考切成互不相干的工作，成員要定期交換資料和理由，才能共同負責結論。"},{"heading":"友善質疑要指向證據","body":"可以問『哪筆資料支持這個說法』『還有其他可能嗎』『怎麼測試』，不把問題變成對人的否定。被質疑時先重述對方，再指出自己會保留或修改的部分。"},{"heading":"共同發現要留下每個人的貢獻","body":"小組報告要說明誰提出什麼問題、哪些資料被整合、哪個想法經測試修正。分享成果也分享未解決之處，讓下一組能接著探究而不是只看完成品。"}]}
+ d["studyHighlights"]=["用共同問題和重述確認小組理解一致。","透過可輪換角色讓每個人參與觀察與思考。","以證據提問、回應和修正，而不是攻擊個人。","分享成果、貢獻、限制與未解問題讓探究延續。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"風向標為什麼指向不同方向？","body":"四位同學用紙帶觀察操場風向，記錄卻不一致。請每人先說自己的觀察和測量位置，再由小組畫出共同場地圖，標示差異可能來自高度、時間和障礙物。活動不先找一個人當標準答案，而是讓差異成為合作追問的起點。"},
+ {"id":"explain","phase":"explain","heading":"討論讓證據互相接上","body":"先重述共同問題，再輪流報告觀察與資料；提問者只針對方法、條件、證據和替代解釋；記錄者整理同意、分歧和待查項目；最後全組寫出暫時結論與下一步。角色可輪換，讓合作不變成一人報告、其他人旁觀。"},
+ {"id":"worked-example","phase":"worked-example","heading":"種子發芽的不同觀察","body":"一組記錄 8 顆種子中 6 顆發芽，另一組記錄 10 顆中 7 顆。先確認種子品種、溫度、濕度、觀察日和發芽定義，再討論比例是否可直接比較。有人提出容器位置不同，團隊把它列為下一輪控制條件，而不是把分歧當成誰算錯。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"聲音實驗的提問接力","body":"一位同學說紙杯電話比較清楚，第二位問線是否拉直，第三位問距離，第四位整理要固定的條件。每個問題都要連到可測試的改變或記錄；若問題重複，組員要說明它和前一問的關係，練習讓討論逐步前進。"},
+ {"id":"transfer","phase":"transfer","heading":"把合作過程分享給下一組","body":"小組用三分鐘分享現象、分工、關鍵資料、一次修正、目前限制和留給下一組的問題。聽眾先寫下自己理解的主張，再提出一個證據問題；報告者回應後共同修改海報，讓分享本身成為新的探究。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個合作迷思","body":"請修正『小組和諧就是不要提出不同意見』與『分享發現就是展示最成功的結果』。真正合作允許以尊重方式提出證據問題，也要分享分歧、失敗與未解問題，讓團隊能共同修正而不是假裝一致。"}
+ ],"summary":["以共同問題、重述和差異整理建立合作起點。","角色可輪換，成員共同負責資料、方法和結論。","友善質疑要指向證據、條件和下一個測試。","分享成果也分享貢獻、限制、分歧與未解問題。"],"exitCheck":[{"prompt":"小組觀察不一致時第一步應做什麼？","expectedEvidence":"各自說明位置、時間、方法與資料，重述共同問題，再檢查差異可能來自哪些條件。"},{"prompt":"為什麼討論要輪換角色？","expectedEvidence":"輪換讓每個人都參與觀察、記錄、安全、提問與推理，並共同承擔結論。"},{"prompt":"如何提出不傷害同學又有用的質疑？","expectedEvidence":"針對證據、方法、條件或替代解釋提問，重述對方後說明需要補測什麼，而非評論人格。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"在合作探究中聆聽、分工、以證據提問並共同修正科學發現。","scenario":"合作整理風向、發芽與聲音資料，逐步把分歧轉成可測試的下一步。","variables":[{"symbol":"q","meaning":"共同問題"},{"symbol":"e","meaning":"小組證據"},{"symbol":"r","meaning":"討論回應"}],"steps":[{"id":"step-1","prompt":"小組成員記錄不同風向時，哪種做法最有助於合作？","options":["比較位置、時間和方法，整理差異後共同設計補測","直接投票選一個人相信的方向","要求其他人刪掉不同資料"],"answer":"A","feedback":"差異是檢查條件和形成下一個問題的資料。"},{"id":"step-2","prompt":"提出友善科學質疑時應問什麼？","options":["哪筆資料支持、有哪些替代解釋、怎麼測試","你怎麼會這麼笨","只問大家是否同意"],"answer":"A","feedback":"證據導向的問題能推進推理而不攻擊個人。"},{"id":"step-3","prompt":"小組分享發現時最完整的內容是什麼？","options":["方法、資料、修正、限制、每人貢獻與未解問題","只展示最漂亮的成果照片","只由一人念出結論"],"answer":"A","feedback":"完整分享讓下一組能理解、檢查並延續探究。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以合作觀察、討論和分享建立科學學習的互動與樂趣。","共同問題、角色、資料表、提問、口頭分享與反思。","把不同意見當衝突，或只展示成功結果不說限制。","重視聆聽、證據提問、分工、合作與表達。"),rec("kanghsuan","透過小組探究、角色輪換與同儕回饋共同修正科學理解。","合作實驗、資料整合、質詢對話、海報與修訂。","一人包辦思考，或用投票取代證據與討論。","評量合作歷程、問題回應、資料使用與共同反思。"),rec("hanlin","連結校園環境、生物與聲音活動，培養尊重差異和分享科學發現。","風向、發芽、聲音、分工、來源、限制與未解問題。","為了和諧壓下分歧，或把個人資料冒充全組共識。","要求貢獻透明、證據清楚、回應尊重與延續探究。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以合作、討論與分享享受科學探究。","共同問題、角色分工、證據提問、資料整合與共同修正是共同要求。","分享成果也要說明限制、分歧、貢獻與未解問題，讓探究延續。"],"versionDifferences":["南一證據較突顯合作觀察、討論與基本分享；康軒較突顯角色、同儕回饋、質詢與修訂；翰林較突顯校園環境、生物、聲音、尊重差異與探究延續。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以不同風向資料將分歧轉成條件和補測問題。","以種子發芽比例示範先查定義、樣本與方法再討論。","以聲音實驗提問接力和三分鐘分享練習輪流聆聽與共同修正。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織共同問題、重述、分工、資料整合、友善質疑、修正、貢獻與未解問題。正文、原創合作任務、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"ai-Ⅳ-2：與同儕討論並分享科學發現樂趣","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

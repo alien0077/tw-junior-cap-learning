@@ -1,0 +1,15 @@
+{
+  "decisionId": "D-422",
+  "date": "2026-09-29",
+  "phase": "public-school-exam-source-ledger-current-state-recheck",
+  "status": "pass",
+  "evidence": {
+    "questionSourceLedger": {"command": "python3 scripts/audit_question_exam_rewrites.py", "totalQuestions": 10566, "recorded": 10566, "pending": 0},
+    "sourceSemantics": {"command": "python3 scripts/audit_question_exam_ref_semantics.py", "questionFiles": 10566, "refs": 23141, "flagged": 0, "affectedQuestionFiles": 0},
+    "sourceCatalog": {"command": "python3 scripts/audit_public_exam_source_catalog.py", "catalogEntries": 492, "questionSourceUrls": 281, "coveredUrls": 281, "missingUrls": 0},
+    "gradeCompatibility": {"command": "python3 scripts/audit_public_exam_source_unit_fit.py", "refs": 410, "compatible": 410, "potentialMismatches": 0, "unclassified": 0}
+  },
+  "scopeBoundary": "Verifies public-school exam source provenance only, not question answer or content review. User retains final ChatGPT review.",
+  "questionChanges": "None. Do not repeat these audits unless question/provenance data changes.",
+  "commitPush": "Not performed; fusion and implementation work remains ongoing."
+}

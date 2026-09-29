@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-s-iv-15",
   "subject": "math",
-  "title": "s-Ⅳ-15：空間線面垂直平行",
+  "title": "s-Ⅳ-15：用截面與方向理解空間線面關係",
   "knowledgeIds": [
     "kg-math-performance-s-iv-15"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「空間線面垂直平行」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "在立體空間裡，兩條直線可能相交、平行或成為不在同一平面的異面直線；直線與平面可能相交、平行或垂直；兩平面也可能平行或相交。判斷不能只看透視圖上有沒有碰到，而要追問是否共面、方向是否一致，以及是否有足夠的垂直證據。本課用盒狀模型、截面、置物架與建築隔間改寫公開課程能力，逐步練習讀圖、說理、辨識錯誤與檢查答案。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「空間線面垂直平行」相關的關係。"
+        "heading": "先確認你正在看三維空間",
+        "body": "透視圖會把深度壓在紙面上，圖上不相交不代表空間中平行。先標出同一個平面、同一條稜線與深度方向，再判斷是否可能共面。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「空間線面垂直平行」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "異面直線不是平行線",
+        "body": "平行直線必須共面且不相交；異面直線不在同一平面，即使看起來都朝相近方向，也不能稱為平行。兩線相交則先看交點與夾角。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「空間線面垂直平行」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "線面垂直需要兩條平面內證據",
+        "body": "若一條直線與平面內兩條相交直線都垂直，才能推出這條直線垂直於平面。只找到一個直角，通常不足以支持線面垂直。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「空間線面垂直平行」，並指出至少一項支持判斷的條件。"
+        "heading": "截面與投影是檢查工具",
+        "body": "取與平面適當的截面可把空間關係轉成平面圖，但投影會隱藏深度。完成判斷後要回到原立體圖，確認線段是否屬於同一平面與條件是否完整。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「空間線面垂直平行」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "用共面性區分相交、平行與異面直線。",
+    "線面垂直要找到平面內兩條相交且都垂直的直線。",
+    "面面平行需判斷沒有共同點並追蹤一致方向。",
+    "用截面整理證據，再回立體圖檢查深度與單位語言。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「空間線面垂直平行」並驗算結果。",
-    "scenario": "以「s-Ⅳ-15：空間線面垂直平行」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "依共面性與垂直證據判斷異面直線、線面垂直及面面平行。",
+    "scenario": "在盒狀模型中切換正面、側面與截面，逐步選出足夠的空間幾何證據。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "觀察到的空間關係"
+      },
+      {
+        "symbol": "y",
+        "meaning": "共面或垂直證據數量"
+      },
+      {
+        "symbol": "z",
+        "meaning": "最後的幾何分類"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「空間線面垂直平行」的第一步是什麼？",
+        "prompt": "兩條直線不相交，且沒有任何一個平面同時包含它們，應判為何種關係？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "異面直線",
+          "平行直線",
+          "相交直線"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "不相交且不共面就是異面；平行線必須先滿足共面。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "若 AA' 已垂直平面 ABCD 內的 AB，還缺哪項關鍵證據？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "AA' 也垂直於與 AB 相交的 AD",
+          "只要把圖放大即可",
+          "只要 AA' 不在底面即可"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "線面垂直判定需要平面內兩條相交直線都與該直線垂直。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "判斷兩平面平行時，哪個敘述最完整？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "兩平面沒有共同點，且方向保持一致",
+          "在一張投影圖看不到交線",
+          "只量到一組相等長度"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "投影可能藏住交線；要回到三維關係確認沒有共同點與一致方向。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "s-Ⅳ-15：空間線面垂直平行；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；s-Ⅳ-15：空間線面垂直平行：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「空間線面垂直平行」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「s-Ⅳ-15：空間線面垂直平行」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；s-Ⅳ-15：空間線面垂直平行：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「s-Ⅳ-15：空間線面垂直平行」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；s-Ⅳ-15：空間線面垂直平行：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「s-Ⅳ-15：空間線面垂直平行」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「空間線面垂直平行」",
-        "body": "以「空間線面垂直平行」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "教室裡的燈管、牆面與地板",
+        "body": "請想像一支直立燈管、一面牆和水平地板：燈管可能垂直地板，也可能與牆面相交。先不要急著說平行，請指出哪些線在同一面上、哪些方向需要從側面觀察，建立三維關係必須說明證據的習慣。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「空間線面垂直平行」的概念架構",
-        "body": "本單元依官方課綱所列的「空間線面垂直平行」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "把三種關係分成可檢查的問題",
+        "body": "判斷兩線先問是否相交；不相交再問是否共面，才可分成平行或異面。判斷線面則問直線是否與面相交、是否完全不碰，若要說垂直，還要找平面內兩條相交直線作為證據；兩面則看是否有共同交線或是否保持同向。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「s-Ⅳ-15：空間線面垂直平行」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "盒狀模型的垂直證明",
+        "body": "在盒狀模型 ABCD-A'B'C'D' 中，AA' 是直立稜線，AB 與 AD 是底面 ABCD 內相交的兩條邊。若模型標示 AA'⊥AB 且 AA'⊥AD，因 AB、AD 同在底面且相交，所以可推出 AA'⊥平面 ABCD。注意：只寫 AA'⊥AB 只能得到一條線的證據，不能單獨推出線面垂直。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「空間線面垂直平行」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "三張關係卡片逐張判讀",
+        "body": "第一張給兩條同一牆面內不相交的水平線，判為平行；第二張給一條地板邊線與不在同一面的天花板斜邊，先檢查共面性，避免誤稱平行；第三張給直立線和底面兩條相交邊的直角標記，要求寫出完整線面垂直理由。每張都要保留『相交、共面、方向、證據』四個詞。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「空間線面垂直平行」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "把空間證據帶到建築與截面",
+        "body": "設計電梯井時，井壁可視為平面、導軌可視為直線。從正面投影看兩條導軌不相交，仍要用側面或截面確認它們是否共面且方向一致；若要確認導軌垂直底板，需尋找底板內兩條相交方向的垂直證據，而不是只量一個角。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「空間線面垂直平行」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "修正兩個常見直覺錯誤",
+        "body": "請改寫『透視圖上沒有交點，所以兩線平行』與『一條直線和一條平面內直線垂直，所以直線垂直平面』。前者缺少共面條件，可能是異面；後者只具一條垂直證據，還要找到平面內另一條相交直線並確認也垂直。"
       }
     ],
     "summary": [
-      "先用自己的話界定「空間線面垂直平行」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "先辨認空間與共面性，再談平行或異面。",
+      "線面垂直必須使用平面內兩條相交直線的證據。",
+      "截面能整理關係，但不能取代回看原立體圖。",
+      "答案要寫出判斷條件，不只寫一個符號。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「空間線面垂直平行」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼兩條不相交直線不能直接判為平行？",
+        "expectedEvidence": "還要確認兩線共面；不共面且不相交的是異面直線。"
       },
       {
-        "prompt": "在「空間線面垂直平行」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "要證明 AA' 垂直底面 ABCD，至少需要哪些資料？",
+        "expectedEvidence": "AA' 分別垂直於底面內相交的 AB 與 AD，才能使用線面垂直判定。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「空間線面垂直平行」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "投影圖與原立體圖要如何互相檢查？",
+        "expectedEvidence": "投影先整理方向，之後回原圖確認深度、共面性、交點與所有垂直標記。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『s-Ⅳ-15：用截面與方向理解空間線面關係』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『在盒狀模型中切換正面、側面與截面，逐步選出足夠的空間幾何證據。』開始前，先回答：兩條直線不相交，且沒有任何一個平面同時包含它們，應判為何種關係？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『在盒狀模型中切換正面、側面與截面，逐步選出足夠的空間幾何證據。』回答：判斷兩平面平行時，哪個敘述最完整？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "兩條直線不相交，且沒有任何一個平面同時包含它們，應判為何種關係？；操作時先預測，再依『s-Ⅳ-15：用截面與方向理解空間線面關係』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-15：用截面與方向理解空間線面關係)：答案 A；選項內容：異面直線",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。不相交且不共面就是異面；平行線必須先滿足共面。",
+          "feedback": "不相交且不共面就是異面；平行線必須先滿足共面。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "若 AA' 已垂直平面 ABCD 內的 AB，還缺哪項關鍵證據？；操作時先預測，再依『s-Ⅳ-15：用截面與方向理解空間線面關係』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-15：用截面與方向理解空間線面關係)：答案 A；選項內容：AA' 也垂直於與 AB 相交的 AD",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。線面垂直判定需要平面內兩條相交直線都與該直線垂直。",
+          "feedback": "線面垂直判定需要平面內兩條相交直線都與該直線垂直。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "判斷兩平面平行時，哪個敘述最完整？；操作時先預測，再依『s-Ⅳ-15：用截面與方向理解空間線面關係』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-15：用截面與方向理解空間線面關係)：答案 A；選項內容：兩平面沒有共同點，且方向保持一致",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。投影可能藏住交線；要回到三維關係確認沒有共同點與一致方向。",
+          "feedback": "投影可能藏住交線；要回到三維關係確認沒有共同點與一致方向。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；空間線面關係、立體圖形表徵與評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以立體圖形中的線線、線面與面面關係建立空間方向判讀。",
+          "公開課程結構支持以立體圖形中的方向、交會與垂直條件判讀線線、線面及面面關係。"
+        ],
+        "representations": [
+          "盒狀模型、稜線、平面標記與垂直符號的互相轉換。"
+        ],
+        "examplesOrEvidence": [
+          "本課的教室、置物架與盒狀模型為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把透視圖中不相交誤當成平行，或只用一個直角宣稱線面垂直。"
+        ],
+        "assessmentEmphasis": [
+          "重視讀圖、條件列舉、關係分類與說理完整性。"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；空間線面關係、立體圖形表徵與評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過截面與投影連結平面幾何和空間幾何的表示。",
+          "公開課程結構支持以立體圖形中的方向、交會與垂直條件判讀線線、線面及面面關係。"
+        ],
+        "representations": [
+          "正面、側面、截面和立體模型之間的方向追蹤。"
+        ],
+        "examplesOrEvidence": [
+          "本課的教室、置物架與盒狀模型為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "忽略深度造成的異面關係，或把投影上的平行當作空間平行。"
+        ],
+        "assessmentEmphasis": [
+          "要求比較不同視圖、指出證據並檢查空間條件。"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf；空間線面關係、立體圖形表徵與評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以生活建築與立體模型應用線面垂直、平行及交會判斷。",
+          "公開課程結構支持以立體圖形中的方向、交會與垂直條件判讀線線、線面及面面關係。"
+        ],
+        "representations": [
+          "牆面、地板、導軌與稜線的情境化幾何語言。"
+        ],
+        "examplesOrEvidence": [
+          "本課的教室、置物架與盒狀模型為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "混用相交、平行、異面與垂直術語，未說明共面性。"
+        ],
+        "assessmentEmphasis": [
+          "評估模型、完整證明、截面選擇與答案合理性。"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持從立體模型判讀線線、線面與面面關係。",
+      "共面性、方向與垂直條件是空間幾何分類的共同證據。",
+      "截面和投影可作為表徵工具，但必須回查原立體關係。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯立體圖形與基本關係分類；康軒較突顯截面、投影與不同視圖；翰林較突顯建築生活情境與完整說理。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "用教室燈管、盒狀模型與電梯導軌串接線線、線面及面面判斷。",
+      "用 AA'、AB、AD 的雙垂直證據示範線面垂直推理。",
+      "以異面直線與投影誤判作為互動選擇題的錯誤診斷。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織共面性、異面直線、線面垂直、面面平行、截面與投影等概念。正文、盒狀模型例題、互動步驟、錯誤回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

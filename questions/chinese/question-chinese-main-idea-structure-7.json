@@ -2,23 +2,23 @@
   "id": "question-chinese-main-idea-structure-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "遇到寓言結尾的結果，應先問？",
+  "prompt": "寓言結尾寫狐狸雖得到食物，卻因急著炫耀而失去朋友；讀者先應追問什麼？",
   "options": [
     {
       "id": "A",
-      "text": "這個結果如何呼應前文行動"
+      "text": "狐狸的毛色是什麼"
     },
     {
       "id": "B",
-      "text": "作者用了幾個逗號"
+      "text": "結尾結果如何回應前面的選擇與行動"
     },
     {
       "id": "C",
-      "text": "每段有幾行"
+      "text": "作者住在哪裡"
     },
     {
       "id": "D",
-      "text": "角色名字幾個字"
+      "text": "故事共有幾個逗號"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "結果常是寓意的關鍵證據。"
+    "value": "D",
+    "explanation": "結尾的失去朋友要與狐狸急於炫耀的行動連結，才能推導出行為與後果的寓意。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-main-idea-structure-7.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究主旨、段落功能、轉折、寓意與全文證據能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫篇章主旨結構題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-main-idea-structure"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-main-idea-structure",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章主旨、段落功能與推論",
+      "observedPattern": "公立學校國文評量要求結合段落功能、轉折、反覆線索、事件結果與全文證據判斷主旨及寓意；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解、主旨與結構",
+      "observedPattern": "公立學校國文評量要求結合段落功能、轉折、反覆線索、事件結果與全文證據判斷主旨及寓意；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把結尾結果與導致結果的關鍵行動配對，再概括可遷移的道理。",
+  "solutionSteps": [
+    "讀題定位：圈出「結尾結果」與段落、轉折、反覆詞、事件結果或全文範圍線索。",
+    "整理證據：把線索放回開頭、發展與結尾，判斷它們如何共同指向主旨或寓意；本題核心是「結尾的失去朋友要與狐狸急於炫耀的行動連結，才能推導出行為與後果的寓意。」",
+    "核對正解：選項 D 能解釋全文主要材料與作者呈現的意義。",
+    "排除誘答：檢查是否只抓單一細節、忽略轉折後限制、把個人常識加進文本，或寫成空泛口號。",
+    "回讀驗證：逐段對照主旨，確認每個重要段落都能被涵蓋，且結論沒有超出文章證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

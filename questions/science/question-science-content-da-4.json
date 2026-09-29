@@ -2,23 +2,23 @@
   "id": "question-science-content-da-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年11月18日自然科教室的觀察中，連續觀察「Da：細胞的構造與功能」6 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "植物細胞通常比動物細胞多出哪組構造？",
   "options": [
     {
       "id": "A",
-      "text": "連續6天研究「Da：細胞的構造與功能」並測得樣本持續吸收氧氣並產生二氧化碳"
+      "text": "細胞核、細胞膜與粒線體"
     },
     {
       "id": "B",
-      "text": "研究「Da：細胞的構造與功能」時只依樣本的顏色（未記錄6天的時間與條件）"
+      "text": "核糖體、細胞質與細胞膜"
     },
     {
       "id": "C",
-      "text": "研究「Da：細胞的構造與功能」時只依樣本的名稱推測，不進行觀察"
+      "text": "染色體、蛋白質與水分"
     },
     {
       "id": "D",
-      "text": "研究「Da：細胞的構造與功能」時只觀察一次外形，便排除所有其他證據"
+      "text": "細胞壁、葉綠體與較明顯的液泡"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Da：細胞的構造與功能」。"
+    "value": "D",
+    "explanation": "植物細胞通常具有細胞壁、葉綠體與較大的中央液泡；動植物細胞都具有細胞膜、細胞質、細胞核等基本構造。 正確答案為選項 D：「細胞壁、葉綠體與較明顯的液泡」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的細胞構造、功能、層次與分裂能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Da 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-da"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-da",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "細胞構造、胞器、細胞分工與有絲分裂資料判讀",
+      "pattern": "取由顯微影像、構造功能、細胞層次與分裂資料推論生命現象的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由顯微影像、構造功能、細胞層次與分裂資料推論生命現象的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找植物特有或較明顯的構造，再排除兩類細胞共有的構造。",
+  "solutionSteps": [
+    "圈出胞器、細胞膜、植物／動物細胞、顯微觀察或濃度差等關鍵詞。",
+    "先建立構造—功能或細胞內外條件的對應，再判斷資料能支持的結論。",
+    "套用原理：植物細胞通常具有細胞壁、葉綠體與較大的中央液泡；動植物細胞都具有細胞膜、細胞質、細胞核等基本構造。",
+    "排除把胞器功能混淆、把染色當放大或忽略濃度與表面積限制的選項，答案為「細胞壁、葉綠體與較明顯的液泡」。",
+    "回查答案是否同時說明構造、功能與觀察證據的關係。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

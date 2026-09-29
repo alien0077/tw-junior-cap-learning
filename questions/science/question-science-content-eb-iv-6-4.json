@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-6-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年5月3日校園實驗室的觀察中，一個物體質量為 548 g、體積為 67 cm³，研究「Eb-Ⅳ-6：浮力與排開液體重量」時，其密度為何？",
+  "prompt": "一顆鐵球沉到水底並靜止。下列敘述何者正確？",
   "options": [
     {
       "id": "A",
-      "text": "615 g/cm³"
+      "text": "鐵球不受浮力，因為已下沉"
     },
     {
       "id": "B",
-      "text": "0.122263 g/cm³"
+      "text": "浮力向下且大於重力"
     },
     {
       "id": "C",
-      "text": "8.1791 g/cm³"
+      "text": "鐵球仍受向上浮力，但浮力小於重力"
     },
     {
       "id": "D",
-      "text": "36716 g/cm³"
+      "text": "鐵球的浮力一定等於重力"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-6"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "密度＝質量÷體積＝548÷67＝8.1791 g/cm³。 本題對應 KG「Eb-Ⅳ-6：浮力與排開液體重量」。"
+    "explanation": "沉入水中的物體仍受液體壓力差形成的向上浮力；沉體下沉表示物重大於浮力，接觸底部時還可能有底部支持力。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作浮力、排開液體重量、視重、浮沉與工程應用的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-6"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "浮力、排開液體重量與浮沉判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以彈簧秤、溢水杯、物體浮沉、船舶或密度比較考查浮力、排開液體重量、液中視重與平衡條件；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "浮力、液中視重與密度浮沉能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以彈簧秤、溢水杯、物體浮沉、船舶或密度比較考查浮力、排開液體重量、液中視重與平衡條件；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "阿基米德原理、船舶與浮沉能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以彈簧秤、溢水杯、物體浮沉、船舶或密度比較考查浮力、排開液體重量、液中視重與平衡條件；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷浮力是否存在，再比較浮力與重力造成的運動趨勢。",
+  "solutionSteps": [
+    "確認鐵球仍有一部分或全部與水接觸。",
+    "液體壓力差仍會產生向上浮力。",
+    "觀察它是沉體而非漂浮平衡物。",
+    "沉體條件為 F浮 小於物重。",
+    "所以選 C。"
+  ]
 }

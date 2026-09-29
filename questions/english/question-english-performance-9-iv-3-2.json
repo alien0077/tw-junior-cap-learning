@@ -2,41 +2,73 @@
   "id": "question-english-performance-9-iv-3-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「9-Ⅳ-3／上下文釐清因果」task, what is the best way to prepare question 2?",
+  "prompt": "The path was covered with fallen leaves; therefore, the workers closed it for cleaning. What is the effect?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 9-Ⅳ-3／上下文釐清因果."
+      "text": "The workers closed the path"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 9-Ⅳ-3／上下文釐清因果."
+      "text": "Leaves grew on the path after it closed"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 9-Ⅳ-3／上下文釐清因果."
+      "text": "The path caused the weather"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 9-Ⅳ-3／上下文釐清因果."
+      "text": "No action followed the leaves"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-9-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 9-Ⅳ-3／上下文釐清因果, question 2."
+    "explanation": "Therefore signals that closing the path follows from the leaves. Correct answer: A"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "Public-school English assessment materials; this item studies contextual cause, effect, sequence, condition, connectors, and cautious causal reasoning only and does not reproduce an original question, option, image, or text.",
+    "authoringNote": "Written independently from the official English curriculum KG and three public-school English assessment sources; contexts, options, explanations, and transfer tasks are original; pending second-round AI/Terra content review."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-9-iv-3"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-performance-9-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅取上下文因果、結果、順序、條件、連接詞與多句脈絡能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "context, cause, effect, sequence, condition, and connectors",
+      "observedPattern": "公開英文評量常以公告、故事、說明與生活情境測量 because、therefore、if、unless、before、after 等關係，要求由上下文釐清原因、結果與條件；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取上下文因果、結果、順序、條件、連接詞與多句脈絡能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "inferring cause and effect from connected sentences and events",
+      "observedPattern": "公開英文評量常以公告、故事、說明與生活情境測量 because、therefore、if、unless、before、after 等關係，要求由上下文釐清原因、結果與條件；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "Track connectors and event order, identify which clause supplies the reason or result, and distinguish a supported relation from an overstrong causal claim.",
+  "solutionSteps": [
+    "Read the connected sentences and identify the causal target: therefore.",
+    "Underline connectors, time markers, conditions, exceptions, actions, and results, then place events on a timeline if needed.",
+    "Match the cause, effect, condition, or sequence to the wording and choose the supported interpretation; the correct answer is A.",
+    "Explain the relationship between the sentences: Therefore signals that closing the path follows from the leaves.",
+    "Reread both clauses and check that the answer does not reverse time order or claim stronger causation than the context provides."
+  ]
 }

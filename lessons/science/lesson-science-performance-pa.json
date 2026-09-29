@@ -1,7 +1,7 @@
 {
   "id": "lesson-science-performance-pa",
   "subject": "science",
-  "title": "分析與發現（a）",
+  "title": "分析與發現（a）：讓資料顯出變化與關係",
   "knowledgeIds": [
     "kg-science-performance-pa"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「分析與發現（a）」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "分析資料不是把數字重新抄一遍，而是先確認資料品質，再依問題選擇表格、折線圖、長條圖或散布圖，計算適當的差異、平均或比例，找出趨勢、例外與關係。分析結果仍要回到原始資料、測量限制與研究條件，不能把圖表上的相關直接寫成因果。本課以溫度時間序列、降雨量與發芽率的原創資料，練習從整理到發現、從發現到可檢驗解釋。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「分析與發現（a）」相關的關係。"
+        "heading": "先整理才有資格比較",
+        "body": "資料表要有清楚欄名、單位、日期和缺失標記。若把不同單位或不同時間順序混在一起，圖表再漂亮也會導出錯誤比較。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「分析與發現（a）」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "表徵要服務問題",
+        "body": "看時間變化可用折線圖，看類別數量可用長條圖，看兩個數值是否同向可用散布圖。選圖前先問要比較什麼、誰和誰比較、是否需要保留每次讀值。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「分析與發現（a）」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "數字摘要不能取代原始資料",
+        "body": "平均值能概括一組資料，但可能遮住極端值和變異；差值、比例或斜率也都有適用條件。分析時要同時看摘要和分布，說明資料支持到哪一步。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「分析與發現（a）」，並指出至少一項支持判斷的條件。"
+        "heading": "發現要能回到證據",
+        "body": "看見兩變項一起增加只是發現關係，還要查時間順序、替代因素和測量方法。好的發現會指出資料範圍、例外和下一個需要驗證的問題。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「分析與發現（a）」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "清理欄名、單位、日期、缺失與異常資料。",
+    "依問題選表格、折線圖、長條圖或散布圖。",
+    "用平均、差值、比例或斜率時說明適用條件。",
+    "區分資料發現、關係與尚待檢驗的因果解釋。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "scientific-investigation",
-    "goal": "以安全探究步驟理解「分析與發現（a）」並用證據修正解釋。",
-    "scenario": "針對「分析與發現（a）」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
+    "type": "guided-choice",
+    "goal": "整理原始資料、選擇合適圖表並用證據寫出有範圍的發現。",
+    "scenario": "分析溫度、降雨與發芽資料，逐步辨認趨勢、變異與因果推論限制。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "選定的觀察條件"
+        "symbol": "t",
+        "meaning": "時間或測量順序"
+      },
+      {
+        "symbol": "v",
+        "meaning": "測量數值"
+      },
+      {
+        "symbol": "r",
+        "meaning": "資料中的關係"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先做哪一件事？",
+        "prompt": "要看溫度隨時間的變化，優先選哪種圖？",
         "options": [
-          "提出可觀察問題並列出變因",
-          "先寫預期答案",
-          "省略安全檢查"
+          "以時間為橫軸的折線圖",
+          "只用一個圓餅圖",
+          "不標單位的裝飾圖"
         ],
         "answer": "A",
-        "feedback": "問題、變因與安全限制是探究起點。"
+        "feedback": "折線圖保留順序，能看出趨勢與波動。"
       },
       {
         "id": "step-2",
-        "prompt": "如何取得可信資料？",
+        "prompt": "平均值高但個別讀值差異很大時，還要看什麼？",
         "options": [
-          "固定條件、重複量測並記錄單位",
-          "只量一次且不記錄",
-          "任意改變多個因素"
+          "原始資料、分布、變異與極端值",
+          "只保留平均值並刪除其他數字",
+          "只比較圖表顏色"
         ],
         "answer": "A",
-        "feedback": "固定與重複讓資料能比較。"
+        "feedback": "摘要不能代替資料分布，差異可能影響解釋。"
       },
       {
         "id": "step-3",
-        "prompt": "如何形成結論？",
+        "prompt": "降雨和發芽率同時上升時，最穩妥的發現是什麼？",
         "options": [
-          "先描述證據，再提出有條件的解釋",
-          "把猜測當成結果",
-          "刪掉不符合預期的資料"
+          "在這些資料範圍呈同向變化，因果仍需更多控制與重複",
+          "已證明降雨造成所有發芽",
+          "兩者完全沒有任何關係"
         ],
         "answer": "A",
-        "feedback": "證據與限制都要保留，才能修正模型。"
+        "feedback": "先描述資料關係，再標出因果解釋需要的證據。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "分析與發現（a）；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "林口國中公立校方翰林版自然課程計畫附件；自然探究、證據與表達活動定位。；分析與發現：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「分析與發現（a）」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「分析與發現（a）」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "康軒官方公開自然資源 XML；冊次、章節與探究活動結構定位，與公立校方課程計畫交叉核對。；分析與發現：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_nature.xml",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「分析與發現（a）」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "忠明國中公立校方南一版自然領域課程計畫；自然探究與學習表現架構定位。；分析與發現：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.zmjhs.tyc.edu.tw/uploads/neilfilefolder/14file/file/16_70_5116%E6%99%AE%E9%80%9A%E7%8F%AD%E5%90%84%E5%B9%B4%E7%B4%9A%E5%90%84%E9%A0%98%E5%9F%9F%E7%A7%91%E7%9B%AE%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「分析與發現（a）」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「分析與發現（a）」",
-        "body": "先從「分析與發現（a）」相關的生活現象提出一個可觀察問題，寫下已知條件、可能變因與安全限制；把看到的事實和自己的解釋分開，才有可檢查的探究起點。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "溫度真的一直下降嗎？",
+        "body": "一杯水每五分鐘讀到 60、56、57、52、49°C。若只看第一個和最後一個數字會說下降 11 度，但中間回升的讀值也重要。請先整理時間與單位，再畫折線圖，找出總趨勢、短暫波動和需要檢查的測量情況。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「分析與發現（a）」的概念架構",
-        "body": "本單元依官方課綱所列的「分析與發現（a）」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "資料分析四個動作",
+        "body": "先檢查資料品質，再依問題選表徵，接著計算與比較，最後用原始資料、變異、例外和條件寫出發現。分析句要包含對象、期間、量的變化和證據範圍，避免只寫『有關係』或『看起來變多』。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「分析與發現（a）」為主題，建立一份自編三欄證據表：可直接觀察的現象、支持的模型、尚待查證的限制。先用表格整理資料，再用一句條件式結論回應問題，避免只背名詞。"
+        "heading": "降雨量與發芽率的關係",
+        "body": "四週降雨量為 12、18、25、24 mm，對應發芽率為 40%、48%、63%、60%。可描述兩者在這四週大致同向，但第 4 週降雨略減、發芽率也略減並不能證明降雨造成發芽；還需考慮種子批次、溫度、土壤和澆水量，並增加重複。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「分析與發現（a）」先寫可觀察問題，再列自變因、應變因與控制變因；依序記錄預測、操作、數據與限制，重複量測後才下條件式結論。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "選對圖再說發現",
+        "body": "給出不同日期三種植物的平均高度和每次讀值。學習者先選折線圖看時間、長條圖比植物，並標上單位；再檢查平均是否遮住一株異常值。最後寫一個只描述資料的句子，再寫一個需要額外證據才能成立的因果句。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「分析與發現（a）」的探究方法換到家庭、校園或環境資料，檢查來源、尺度、樣本與不確定性；若證據不足，保留條件式結論並提出下一個可行測試。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "把分析結果交給下一組",
+        "body": "製作一頁資料摘要：原始表、圖表、計算式、主要發現、例外、限制與下一個問題。交換後請另一組只依摘要重建你的結論，若找不到資料對應或單位不清楚，就回頭修改表徵和文字。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「分析與發現（a）」的問題：哪個觀察最關鍵、哪個變因仍未控制、資料能支持到什麼程度？用一句話寫出結論與限制，再提出一項安全的改進。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "修正兩個圖表迷思",
+        "body": "請修正『曲線一起上升就證明其中一個造成另一個』與『平均值越高就代表每個樣本都高』。前者需要時間順序、控制與替代解釋，後者要回看分布、變異和極端值，不能讓摘要掩蓋資料差異。"
       }
     ],
     "summary": [
-      "先用自己的話界定「分析與發現（a）」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "先檢查資料與單位，再依問題選擇表徵。",
+      "摘要數字要和分布、變異、例外一起看。",
+      "區分共同變化、關係與因果解釋。",
+      "分析結果要附證據範圍、限制與下一個問題。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「分析與發現（a）」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼溫度時間資料適合用折線圖？",
+        "expectedEvidence": "折線圖保留時間順序，可看出下降趨勢、短暫回升與波動。"
       },
       {
-        "prompt": "在「分析與發現（a）」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "平均值可能遮住什麼資訊？",
+        "expectedEvidence": "可能遮住樣本差異、極端值、變異與分布，需回看原始讀值或其他摘要。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「分析與發現（a）」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "兩變項同向變化可以直接寫成因果嗎？",
+        "expectedEvidence": "不行，還要檢查時間順序、控制條件、替代因素、測量品質與重複資料。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『分析與發現（a）：讓資料顯出變化與關係』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『分析溫度、降雨與發芽資料，逐步辨認趨勢、變異與因果推論限制。』開始前，先回答：要看溫度隨時間的變化，優先選哪種圖？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『分析溫度、降雨與發芽資料，逐步辨認趨勢、變異與因果推論限制。』回答：降雨和發芽率同時上升時，最穩妥的發現是什麼？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "要看溫度隨時間的變化，優先選哪種圖？；操作時先預測，再依『分析與發現（a）：讓資料顯出變化與關係』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(分析與發現（a）：讓資料顯出變化與關係)：答案 A；選項內容：以時間為橫軸的折線圖",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。折線圖保留順序，能看出趨勢與波動。",
+          "feedback": "折線圖保留順序，能看出趨勢與波動。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "平均值高但個別讀值差異很大時，還要看什麼？；操作時先預測，再依『分析與發現（a）：讓資料顯出變化與關係』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(分析與發現（a）：讓資料顯出變化與關係)：答案 A；選項內容：原始資料、分布、變異與極端值",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。摘要不能代替資料分布，差異可能影響解釋。",
+          "feedback": "摘要不能代替資料分布，差異可能影響解釋。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "降雨和發芽率同時上升時，最穩妥的發現是什麼？；操作時先預測，再依『分析與發現（a）：讓資料顯出變化與關係』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(分析與發現（a）：讓資料顯出變化與關係)：答案 A；選項內容：在這些資料範圍呈同向變化，因果仍需更多控制與重複",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。先描述資料關係，再標出因果解釋需要的證據。",
+          "feedback": "先描述資料關係，再標出因果解釋需要的證據。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方自然課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；資料分析、圖表整理、數學處理與評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以整理資料、圖表、數學處理與證據解釋發現自然變化。",
+          "公開課程結構支持整理原始資料、選擇適當表徵、分析變化並以數學方式檢核解釋。"
+        ],
+        "representations": [
+          "表格、折線圖、長條圖、平均、差值、比例與限制。"
+        ],
+        "examplesOrEvidence": [
+          "本課的溫度時間序列、降雨量與發芽率資料皆為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "只看平均或圖形外觀，忽略單位、變異和原始讀值。"
+        ],
+        "assessmentEmphasis": [
+          "重視資料品質、表徵選擇、計算與證據範圍。"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方自然課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；資料分析、圖表整理、數學處理與評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過探究資料分析、圖表轉換與討論形成可檢驗發現。",
+          "公開課程結構支持整理原始資料、選擇適當表徵、分析變化並以數學方式檢核解釋。"
+        ],
+        "representations": [
+          "原始資料、不同圖表、重複測量、例外與同儕檢核。"
+        ],
+        "examplesOrEvidence": [
+          "本課的溫度時間序列、降雨量與發芽率資料皆為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把相關直接當因果，或用錯誤圖表扭曲比較。"
+        ],
+        "assessmentEmphasis": [
+          "評量分析步驟、表徵轉換、推理與反思。"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方自然課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download；資料分析、圖表整理、數學處理與評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "連結環境、氣候與生物資料，使用數學和圖表支持科學解釋。",
+          "公開課程結構支持整理原始資料、選擇適當表徵、分析變化並以數學方式檢核解釋。"
+        ],
+        "representations": [
+          "降雨、溫度、發芽、時間序列、散布與資料限制。"
+        ],
+        "examplesOrEvidence": [
+          "本課的溫度時間序列、降雨量與發芽率資料皆為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "忽略樣本、時間和替代因素，把局部趨勢推廣到所有情況。"
+        ],
+        "assessmentEmphasis": [
+          "要求數據引用、單位、範圍、例外與後續驗證。"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持整理資料、選擇表徵、分析變化並形成科學發現。",
+      "單位、原始資料、圖表、數學摘要、變異與限制是共同要求。",
+      "共同變化必須和因果解釋區分，並提出後續控制與重複。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯資料整理與基本圖表數學處理；康軒較突顯探究資料轉換、重複與討論；翰林較突顯環境、生物、氣候資料及範圍判斷。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以含回升讀值的溫度序列示範趨勢與異常。",
+      "以降雨量和發芽率資料區分同向變化與因果。",
+      "以三種植物平均和個別讀值練習圖表選擇與變異檢查。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織資料品質、單位、表徵、圖表、平均、差值、變異、趨勢、關係與因果限制。正文、原創數據、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

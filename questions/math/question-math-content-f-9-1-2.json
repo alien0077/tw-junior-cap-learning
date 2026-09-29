@@ -2,41 +2,84 @@
   "id": "question-math-content-f-9-1-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "函數 y=−2x²+5x−1 的二次項係數為何？",
+  "prompt": "若 y＝2x²，當 x＝−3 時，y 的值是多少？",
   "options": [
     {
       "id": "A",
-      "text": "－2"
+      "text": "−18"
     },
     {
       "id": "B",
-      "text": "5"
+      "text": "−6"
     },
     {
       "id": "C",
-      "text": "－1"
+      "text": "6"
     },
     {
       "id": "D",
-      "text": "2"
+      "text": "18"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-f-9-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "x² 的係數是 −2。"
+    "value": "D",
+    "explanation": "代入 x＝−3：y＝2(−3)²＝2×9＝18，所以選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 二次函數的意義 題型與官方課綱 KG kg-math-content-f-9-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供二次函數辨識、值表、代入、對稱性與差分判讀能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的二次函數方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-f-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-f-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "二次函數辨識、函數值、對稱輸入、值表、一次差與二次差",
+      "observedPattern": "公立學校公開數學試題常要求由代數式或值表辨認二次函數，代入求值，利用相反數輸入的對稱性與二階差判讀平方關係；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "二次函數辨識、函數值、對稱輸入、值表、一次差與二次差",
+      "observedPattern": "公立學校公開數學試題常要求由代數式或值表辨認二次函數，代入求值，利用相反數輸入的對稱性與二階差判讀平方關係；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "二次函數辨識、函數值、對稱輸入、值表、一次差與二次差",
+      "observedPattern": "公立學校公開數學試題常要求由代數式或值表辨認二次函數，代入求值，利用相反數輸入的對稱性與二階差判讀平方關係；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先處理括號內的負數平方，再乘以前面的係數。",
+  "solutionSteps": [
+    "將 x＝−3 代入 y＝2x²。",
+    "正確寫成 2(−3)²，而非 (−6)²。",
+    "計算 (−3)²＝9。",
+    "計算 2×9＝18。",
+    "選 D，負數平方後結果為正。"
+  ]
 }

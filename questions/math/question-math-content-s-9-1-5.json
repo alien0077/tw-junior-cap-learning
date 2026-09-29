@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-1-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "兩個相似三角形的對應邊比為 2：3，則小三角形與大三角形的面積比為何？",
+  "prompt": "要判定兩個同邊數的多邊形相似，哪一組條件必須同時成立？",
   "options": [
     {
       "id": "A",
-      "text": "2：3"
+      "text": "對應角相等，且對應邊長比都相同"
     },
     {
       "id": "B",
-      "text": "3：4"
+      "text": "只要對應角相等即可"
     },
     {
       "id": "C",
-      "text": "4：9"
+      "text": "只要一組對應邊長比相同即可"
     },
     {
       "id": "D",
-      "text": "8：27"
+      "text": "只要兩圖邊數相同即可"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,71 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "面積比等於對應邊比的平方，因此為 2²：3²=4：9。"
+    "value": "A",
+    "explanation": "多邊形相似需同時滿足對應角相等與各組對應邊使用同一倍率；單有角度、單有一組邊比或邊數相同都不足，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似形 題型與官方課綱 KG kg-math-content-s-9-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.csjh.kh.edu.tw/teach/exam/111%E4%B8%8A%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83/%E6%95%B8%E5%AD%B8%E7%A7%91/%E4%B8%89%E5%B9%B4%E7%B4%9A/111%E4%B8%8A%E4%B8%80%E6%AE%B5%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C%28B4%E5%96%AE%29.pdf",
+    "sourceLocator": "改寫參照：高雄市立中山國中111學年度第1學期第1次段考PDF第1頁第4題；重新設計為判斷多邊形相似必備條件的概念題。",
+    "authoringNote": "原創必要條件辨識題，只取公校試題測試多邊形相似充分條件的考法，不複製原選項。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.csjh.kh.edu.tw/teach/exam/111%E4%B8%8A%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83/%E6%95%B8%E5%AD%B8%E7%A7%91/%E4%B8%89%E5%B9%B4%E7%B4%9A/111%E4%B8%8A%E4%B8%80%E6%AE%B5%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C%28B4%E5%96%AE%29.pdf",
+      "title": "高雄市立中山國中111學年度第1學期第1次段考九年級數學科",
+      "year": "111",
+      "subject": "math",
+      "locator": "PDF第1頁第4題",
+      "observedPattern": "以必要且充分的對應角邊條件判讀多邊形是否相似；本題重新設計條件組合和選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把相似定義拆成角度條件與全體對應邊倍率兩部分檢核。",
+  "solutionSteps": [
+    "先核對題目問的是兩個多邊形是否相似。",
+    "依定義，對應角必須逐一相等。",
+    "再確認每一組對應邊長的比值相同，而非只比一組。",
+    "只有兩類條件都成立，才能判定相似。",
+    "選 A；其餘選項各自漏掉必要條件。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-jd-iv-2-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年3月15日自然科教室的觀察中，以石蕊試紙測得某溶液 pH＝5，研究「Jd-Ⅳ-2：酸鹼強度與 pH 值」時，最合理的判斷為何？",
+  "prompt": "甲 pH=3、乙 pH=5，若各取相同體積混合且忽略體積收縮，能否直接說混合液 pH=4？",
   "options": [
     {
       "id": "A",
-      "text": "此溶液呈中性，因為 pH＝5 且使用石蕊試紙"
+      "text": "不能直接取平均，需考慮氫離子濃度與混合後體積"
     },
     {
       "id": "B",
-      "text": "「Jd-Ⅳ-2：酸鹼強度與 pH 值」樣本呈酸性（pH＝5，由石蕊試紙測得）"
+      "text": "可以，pH 一定是兩者平均"
     },
     {
       "id": "C",
-      "text": "此溶液呈鹼性，因為 pH＝5 且使用石蕊試紙"
+      "text": "混合後一定變成 pH=7"
     },
     {
       "id": "D",
-      "text": "不必讀取石蕊試紙數值，只看容器外觀就能判斷酸鹼性"
+      "text": "只要看兩杯顏色即可算出答案"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "B",
-    "explanation": "pH 小於 7 的水溶液呈酸性；pH＝5，因此判定為酸性。 本題對應 KG「Jd-Ⅳ-2：酸鹼強度與 pH 值」。"
+    "value": "A",
+    "explanation": "混合兩種酸要考慮氫離子濃度、體積與是否反應，pH 不是普通刻度平均值，因此不能直接說是 4。正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "公立學校公開自然科試題中的 pH 比較、指示劑、校正、稀釋與控制變因能力；本題改寫為 Jd-Ⅳ-2 原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jd-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-jd-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "鹽埕國中公開自然段考；只取酸鹼、pH、溶液比較與實驗設計的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "酸鹼、pH、溶液比較與實驗設計",
+      "observedPattern": "公開自然科評量常以 pH 數值、酸鹼比較、指示劑、校正、稀釋與控制變因檢查數據推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "內湖國中公開自然段考；只取理化數據、圖表判讀與測量限制的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "理化數據、圖表判讀與測量限制",
+      "observedPattern": "公開自然科評量常以 pH 數值、酸鹼比較、指示劑、校正、稀釋與控制變因檢查數據推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "國昌國中公開自然科試題；只取酸鹼反應、控制變因與證據界線的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "酸鹼反應、控制變因與證據界線",
+      "observedPattern": "公開自然科評量常以 pH 數值、酸鹼比較、指示劑、校正、稀釋與控制變因檢查數據推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把 pH 當對數尺度，不能用兩個數字直接平均預測混合液。",
+  "solutionSteps": [
+    "讀題並圈出 pH、溫度、體積、濃度、指示劑、稀釋或校正條件。",
+    "先判斷資料直接告訴我們酸鹼方向、相對強弱，還是只提供顏色範圍線索。",
+    "若涉及 pH 差異，使用每差一格約十倍的氫離子濃度關係，不把 pH 當普通線性刻度。",
+    "檢查是否混淆酸鹼強度、濃度、腐蝕性、毒性或清潔效果，並排除未控制條件的選項。",
+    "用完整句重述答案，補上溫度、校正、重複測量或安全限制，確認推論沒有超出證據。"
+  ]
 }

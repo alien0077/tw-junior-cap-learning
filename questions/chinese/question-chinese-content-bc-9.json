@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "某圖表的縱軸以 50 為起點，兩組數值 52 與 56 的柱高差異看來很大。閱讀時最應如何處理？",
+  "prompt": "要把「我們校園很吵，大家要改善」改成給學生看的說明，哪一版最完整？",
   "options": [
     {
       "id": "A",
-      "text": "把 50 當成零計算差距"
+      "text": "校園噪音很嚴重，請大家自動改進，否則後果自負。"
     },
     {
       "id": "B",
-      "text": "認定柱高差距就是數值差距的十倍"
+      "text": "午休測量中，餐具回收區平均音量最高；請依箭頭動線回收，並在試辦期間填寫安靜度回饋，兩週後公布結果。"
     },
     {
       "id": "C",
-      "text": "忽略縱軸並猜測趨勢"
+      "text": "圖表顯示很多顏色，所以大家都知道要安靜。"
     },
     {
       "id": "D",
-      "text": "回到實際數值與刻度，避免只依視覺高度判斷"
+      "text": "只要學生不說話，所有聲音問題就會永久消失。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "縱軸不從零開始可能放大視覺差異，應以刻度和實際數值判讀。"
+    "value": "B",
+    "explanation": "改寫交代資料範圍、問題位置、具體行動、回饋方法與檢查時間，讓讀者知道為何做、怎麼做與何時看結果。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
-    "sourceLocator": "公開國中教育會考／公立國中段考的說明文與資料判讀能力方向（圖表刻度）；另以國語文課綱核對：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; removed old year labels and did not reproduce source wording, options, passage, figure, or answer. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編說明閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文、圖表與資料理解",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明方法、因果與閱讀推論",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認說明對象與讀者目的，再沿資料—組織—解釋—方案—評估的路線閱讀，最後檢查來源、條件與不確定性是否被保留。",
+  "solutionSteps": [
+    "讀題定位：圈出「文字改寫」與說明對象、讀者目的、資料、定義、分類、比較、因果或方案。",
+    "追蹤說明路線：確認作者先讓讀者看見什麼，再如何整理、解釋、比較與行動；本題核心是「改寫交代資料範圍、問題位置、具體行動、回饋方法與檢查時間，讓讀者知道為何做、怎麼做與何時看結果。」",
+    "核對正解：選項 A「午休測量中，餐具回收區平均音量最高；請依箭頭動線回收，並在試辦期間填寫安靜度回饋，兩週後公布結果。」能回扣資料、讀者需要與推理限制，沒有把視覺或口號當成證明。",
+    "排除誘答：檢查是否忽略單位／來源／樣本、混淆定義與分類、把相關當因果，或提出沒有檢查方式的方案。",
+    "結論回查：用『對象—資料—組織—解釋—行動—評估』重讀，確認文字能讓不同讀者理解且知道哪些仍待觀察。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

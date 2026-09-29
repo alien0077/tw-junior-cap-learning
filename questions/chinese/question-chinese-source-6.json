@@ -2,23 +2,23 @@
   "id": "question-chinese-source-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "兩個來源結論不同時，哪個做法較妥當？",
+  "prompt": "一份滿意度調查只訪問同一社團的 12 人，卻宣稱全校學生都支持；最應指出什麼？",
   "options": [
     {
       "id": "A",
-      "text": "比較資料、方法、時間與作者"
+      "text": "問卷一定沒有任何價值"
     },
     {
       "id": "B",
-      "text": "選擇語氣最強的"
+      "text": "結果符合直覺就能推廣"
     },
     {
       "id": "C",
-      "text": "把兩者平均"
+      "text": "樣本來源與數量不足以直接代表全校"
     },
     {
       "id": "D",
-      "text": "只看分享量"
+      "text": "受訪者越少越客觀"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "要比較證據條件而非語氣。"
+    "value": "C",
+    "explanation": "同一社團的小樣本可能有選樣偏差，不能直接推論全校；資料仍可描述受訪者的回應。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-source-6.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究來源追溯、資料衝突、事實／推論、樣本限制與媒體查核。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫資訊來源可靠性題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-source-reliability"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-source-reliability",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資訊來源、證據與查核",
+      "observedPattern": "公立學校國文評量要求查找原始來源、比較衝突資料、區分觀察與推論、檢查樣本限制、保留不確定性並避免錯誤轉傳；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀、來源衝突與限制",
+      "observedPattern": "公立學校國文評量要求查找原始來源、比較衝突資料、區分觀察與推論、檢查樣本限制、保留不確定性並避免錯誤轉傳；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分別評估資料本身能說明什麼，以及結論是否超過樣本的族群與數量範圍。",
+  "solutionSteps": [
+    "讀題定位：圈出「樣本限制」與來源、日期、樣本、測量、限定語或轉傳要求。",
+    "分層查核：區分直接資料、推論與結論強度，再依「同一社團的小樣本可能有選樣偏差，不能直接推論全校；資料仍可描述受訪者的回應。」評估證據範圍。",
+    "核對正解：選項 C 能提出可重做的查核步驟，且沒有把有限資料誇大成確定事實。",
+    "排除誘答：檢查是否只看轉發量、排版、人氣或直覺，或把無法追溯的引用當成可靠來源。",
+    "回讀驗證：重新確認來源、時間、方法與樣本是否足以支持句子的主張與語氣。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

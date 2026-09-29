@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-5-iv-2",
+  "change": [
+    "Specified the existing four-step everyday-dialogue flow as prediction, sentence/condition manipulation, response observation, grammar/pragmatic explanation, and transfer.",
+    "Added a fallback test case and npm command for its dedicated Playwright regression.",
+    "Fault-injected failure of /site/simulations.js while checking the student page."
+  ],
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/site/index.html",
+    "httpStatus": 200,
+    "simulationScriptBlocked": ["http://127.0.0.1:8765/site/simulations.js"],
+    "authoredSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardWrongRetryCorrect": true,
+    "feedbackLiveRegion": true,
+    "optionAccessibleNames": true,
+    "externalNetworkBlocked": true,
+    "reducedMotion": "emulated",
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "984/1,027 pass; 43 fail",
+    "fullNpmTest": "PASS, including workbench traversal 1,027/1,027",
+    "diffCheck": "PASS",
+    "lesson": "unchanged; remains draft",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

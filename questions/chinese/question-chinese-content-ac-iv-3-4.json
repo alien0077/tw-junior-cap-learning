@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ac-iv-3-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列哪一句使用「不但……而且……」表達遞進關係？",
+  "prompt": "『小華告訴小美她已完成報告。』要使文意可檢查，最需要修正哪項？",
   "options": [
     {
       "id": "A",
-      "text": "不但努力，而且有耐心"
+      "text": "增加報告的頁數。"
     },
     {
       "id": "B",
-      "text": "只看標題，不讀內容"
+      "text": "明確指出『她』指小華還是小美。"
     },
     {
       "id": "C",
-      "text": "只憑個人印象判斷"
+      "text": "把告訴改成詢問。"
     },
     {
       "id": "D",
-      "text": "忽略題目條件"
+      "text": "刪除所有人名。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「不但……而且……」後項程度更進一步，屬於遞進關係。"
+    "value": "B",
+    "explanation": "代詞她的指涉不明，讀者無法確定完成報告的人；需補充指涉或改寫主語。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "複句關係判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究證據、前提、結論、條件、因果與建議的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫可檢查文句推論題；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ac-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ac-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解與文句推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀與推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找代詞的可能指涉，再檢查不同指涉是否會導致不同事件理解。",
+  "solutionSteps": [
+    "列出兩種讀法：小華完成，或小美完成。",
+    "兩種讀法會改變報告完成者，造成不同事實主張。",
+    "B 直接處理造成歧義的代詞指涉。",
+    "A、C、D 沒有解決誰完成報告的核心問題。",
+    "改寫成『小華告訴小美，小華已完成報告』，確認句意唯一。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

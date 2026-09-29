@@ -1,0 +1,23 @@
+.data-explorer-lab{display:grid;gap:12px;min-width:0;margin-top:1rem;padding:clamp(12px,3vw,20px);border:1px solid #c3d3d8;border-radius:14px;background:#f5fafb;color:#17333a}
+.data-explorer-lab *{box-sizing:border-box}
+.data-explorer-lab h4{margin:.15rem 0 .5rem;line-height:1.4}
+.data-explorer-lab header p{margin:.35rem 0;color:#405961;line-height:1.6}
+.del-kicker{color:#176879;font-size:.82rem;font-weight:800}
+.del-progress{margin:0;font-weight:800}
+.del-field-label{display:grid;gap:6px;min-width:0;font-weight:700}
+.data-explorer-lab input:not([type=radio]),.data-explorer-lab textarea{width:100%;min-width:0;min-height:44px;padding:9px 11px;border:1px solid #718b91;border-radius:7px;background:#fff;color:#17333a;font:inherit}
+.data-explorer-lab input[type=range]{padding:0;accent-color:#176879}
+.del-chart{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;align-items:end;min-width:0;padding:12px;border:1px solid #c5d8dc;border-radius:9px;background:linear-gradient(to top, #e5f1f2 1px, transparent 1px);background-size:100% 25%}
+.del-unit-cell{display:grid;place-items:center;min-width:0;min-height:74px;padding:6px 3px;border:1px solid #176879;border-bottom:4px solid #176879;border-radius:6px 6px 2px 2px;background:#d9eeee;text-align:center;font-weight:800;overflow-wrap:anywhere}
+.del-controls,.del-transfer{display:grid;gap:10px;min-width:0;margin:0;padding:12px;border:1px solid #cadadd;border-radius:9px;background:#fff}
+.del-controls legend,.del-transfer legend{padding:0 5px;font-weight:800}
+.del-readout{display:block;min-height:1.5em;color:#15596a;font-size:1.1rem;font-weight:800;overflow-wrap:anywhere}
+.del-explanation{display:grid;gap:10px;min-width:0}
+.del-option{display:flex;gap:9px;align-items:flex-start;min-width:0;padding:10px;border:1px solid #dbe5e7;border-radius:8px;line-height:1.55;cursor:pointer}
+.del-option input{flex:0 0 auto;width:20px;height:20px;margin:1px 0 0;accent-color:#176879}
+.del-option span{overflow-wrap:anywhere}
+.data-explorer-lab button{min-height:44px;max-width:100%;justify-self:start;padding:9px 14px;border:1px solid #176879;border-radius:8px;background:#fff;color:#145665;font:inherit;font-weight:750;cursor:pointer;overflow-wrap:anywhere}
+.data-explorer-lab button:hover{background:#e8f5f6}
+.del-status{min-height:1.5em;margin:0;color:#15596a;font-weight:700;line-height:1.55;overflow-wrap:anywhere}
+@media(max-width:480px){.del-chart{gap:4px;padding:8px}.del-unit-cell{min-height:60px;padding:4px 1px;font-size:.8rem}.data-explorer-lab button{width:100%}}
+@media(prefers-reduced-motion:reduce){.data-explorer-lab *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

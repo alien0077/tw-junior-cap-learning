@@ -1,0 +1,38 @@
+{
+  "reportId": "a7-2-essential-fusion-resolution-d342",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-2",
+  "classification": "source-to-visible-original-fusion-strengthened; publisher-authentication-and-content-review-open",
+  "request": "Resolve A-7-2 essential fusion without repeating completed work or claiming unavailable publisher-body evidence.",
+  "newPublicEvidence": {
+    "source": "國家教育研究院教學資源資料庫所典藏之七年級『一元一次方程式』教學活動設計；設計者標示為臺北縣福和國中李進福教師",
+    "url": "https://teric.naer.edu.tw/wSite/DoDownload?fileName=1572591481033&format=pdf&xmlId=2046954",
+    "locator": "PDF p.7, activities 1-6; objectives distinguish equation/solution meaning, uniqueness, substitution checks, and later equality transformations",
+    "readEvidence": "Activity 2 addresses the meaning of a solution and unique-solution idea; activity 3 separately uses substitution to judge a candidate; later activities move to equality axioms and transposition.",
+    "sourceLimit": "A publicly archived teacher-authored instructional design, not a publisher textbook and not evidence of any Nani/Kanghsuan/Hanlin chapter body. Used only as teaching-design corroboration."
+  },
+  "fusionDecisionAndVisibleImpact": {
+    "priorWorkPreserved": "Kept the six authored lesson sections, four-step interaction, existing publisher/source ledger, and prior source-to-visible audit. Did not regenerate exam ledger or rewrite the lesson wholesale.",
+    "gapResolved": "The existing candidate-substitution section showed which tested value satisfies the equation but did not explicitly warn that checking finitely many candidates does not prove uniqueness.",
+    "originalInstructionalChange": "Added a concise learner-facing boundary: one successful substitution proves that value is a solution, not that it is the unique solution; uniqueness requires a separate reason/proof, and systematic solving remains in A-7-3.",
+    "trace": "The new public teaching-design activity distinction is recorded in studyReferences and fusionRecord.originalAdditions, tied directly to content.sections[1]. No source problem, answer, wording, or illustration was copied."
+  },
+  "status": {
+    "originalFusionDraft": "strengthened; lesson remains draft",
+    "naniPublisherChapterBody": "not fully read; only partial attributed extract and Nani-aligned course sequence available",
+    "kanghsuanPublisherChapterBody": "not read; official resource index and school plans only",
+    "hanlinPublisherAuthenticityAndReuseRights": "unverified third-party shares; rights unresolved",
+    "publisherEvidenceSlots": "pending",
+    "independentContentReview": "open",
+    "specQaStatus": "untested"
+  },
+  "verification": {
+    "targetRegression": "PASS: npm run test:math:a7-2",
+    "schemaAndDataValidation": "PASS: python3 scripts/validate_data.py; 14,465 JSON files, 13,112 IDs, 1,032 KG nodes; 1,052 lessons and 10,566 questions remain draft",
+    "diffCheck": "PASS: git diff --check",
+    "browser": "PASS: npm run test:browser -- --url http://127.0.0.1:8765/implementation/workbench.html; authorized Chromium, 1,027/1,027 traversal, A-7-2 four-stage retry/correct feedback/keyboard, 320/375/768 widths, no page errors",
+    "fullRuntimeSuite": "PASS: npm test; workbench full bundle traversal 1,027/1,027. During the run, fixed an existing undefined lesson reference in the shared simulation input handler; A-7-6 targeted regression and full suite pass.",
+    "commitPush": "not performed; broader completion goal remains active"
+  },
+  "noRepeatWork": "No full lesson rewrite, no public-exam ledger regeneration, no Playwright reinstall, no repeated full-site browser run, no subtask delegation, and no promotion of publisher or content-review gates."
+}

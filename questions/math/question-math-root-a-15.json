@@ -1,0 +1,87 @@
+{
+  "id": "question-math-root-a-15",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "不等式 4t−7≥9 用文字表示，下列哪個敘述與它等值？",
+  "options": [
+    {
+      "id": "A",
+      "text": "4t−7 不低於 9"
+    },
+    {
+      "id": "B",
+      "text": "4t−7 不逾 9"
+    },
+    {
+      "id": "C",
+      "text": "4t−7 低於 9"
+    },
+    {
+      "id": "D",
+      "text": "4t−7 超過 9"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-a",
+    "kg-math-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "A",
+    "explanation": "符號 ≥ 表示「大於或等於」，等值文字是「不低於」或「至少」。A 保留了等於的可能；B「不逾」代表小於或等於，C 表示嚴格小於，D「超過」表示嚴格大於，都與原不等式不同。"
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "sourceLocator": "國民中學教育階段學習內容；主題 A：代數",
+    "authoringNote": "依官方課綱、KG 與碧華國中公開數學原卷第1頁第3題的文字轉譯能力模式重新創作，變更變數、係數、常數與敘述，不複製原題、選項或答案；維持 draft 待 AI 內容 QA。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-root-a",
+  "solutionStrategy": "先把不等號視為精確的邊界規則：≥ 是「大於或等於」，再找含等號的自然語句；最後用一個等於邊界的數值測試是否仍成立。",
+  "solutionSteps": [
+    "辨認符號：≥ 的左側式子必須比 9 大，或剛好等於 9；「剛好等於」是判讀文字選項的關鍵邊界。",
+    "把 ≥ 展開為兩個允許情況：大於 9，或者等於 9；因此自然語言要同時包含這兩種情況。",
+    "「不低於 9」表示沒有低過 9，等價於大於或等於 9，所以 A 與原不等式一致。",
+    "用邊界值檢驗：令 4t−7=9，則「不低於 9」仍為真，確認等號沒有遺失；嚴格的「超過 9」在邊界值不成立。",
+    "排除其餘表達：「不逾」是 ≤，「低於」是 <，「超過」是 >；其中只有 A 保留「等於 9」的可能，故答案為 A。"
+  ],
+  "examPatternRefs": [
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "公立國民中學公開定期評量試題頁",
+      "year": "113-114",
+      "subject": "math",
+      "locator": "公開段考試題頁；math 根層概念應用／資料判讀題型；原創改寫",
+      "locatorLevel": "paper",
+      "observedPattern": "以短情境或資料要求學生判斷概念、語意、計算或證據鏈",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究計算、表格與情境判讀的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級數學科試題卷",
+      "year": "114-2",
+      "locator": "校方附件「114-2-3-七年級數學試題卷.pdf」第1頁第3題",
+      "subject": "math",
+      "observedPattern": "將不等式符號轉譯為精確文字，需區分嚴格大小與含等號的界線；本題改用新的變數、係數和門檻。",
+      "pattern": "將不等式符號轉譯為精確文字，需區分嚴格大小與含等號的界線；本題改用新的變數、係數和門檻。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ]
+}

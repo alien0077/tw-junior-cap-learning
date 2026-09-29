@@ -2,41 +2,84 @@
   "id": "question-science-content-nc-iv-3-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年3月11日學校研究社的觀察中，針對「Nc-Ⅳ-3：化石燃料的形成與特性」提出可檢驗的科學問題，若比較 3 組、每組取樣 10 份資料，哪一項設計最適當？",
+  "prompt": "石油和天然氣的形成資料顯示遠古微小生物沉積於缺氧細泥，深埋後產生液態與氣態烴；可支持什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Nc-Ⅳ-3：化石燃料的形成與特性」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "所有海洋都必然產油"
     },
     {
       "id": "B",
-      "text": "研究「Nc-Ⅳ-3：化石燃料的形成與特性」時只測量3組中的一組就直接下結論"
+      "text": "只要有泥就一定有天然氣"
     },
     {
       "id": "C",
-      "text": "研究「Nc-Ⅳ-3：化石燃料的形成與特性」時先決定結論，再挑選支持結論的10筆資料"
+      "text": "在特定沉積盆地與地質條件下，有機物可能長期轉化為石油或天然氣"
     },
     {
       "id": "D",
-      "text": "研究「Nc-Ⅳ-3：化石燃料的形成與特性」時只改變光照時間，其餘條件一致，設置3組、每組取樣10份並各重複測量5次"
+      "text": "石油是由恐龍直接變成"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-nc-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Nc-Ⅳ-3：化石燃料的形成與特性」。"
+    "value": "C",
+    "explanation": "資料支持有機物、沉積、低氧、深埋和地熱等條件共同形成的可能性，不能外推成所有海洋或所有泥層都產油。 正確答案為選項 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的化石燃料形成、物質特性、分餾、燃燒、排放、供應與能源決策能力方向；本題為 Nc-Ⅳ-3 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nc-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-nc-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "燃料、能源轉換、燃燒、環境影響與資料判讀",
+      "observedPattern": "取公立學校自然科對燃料特性、能源使用與環境資料的能力方向，另寫地質燃料案例。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "化學反應、能源、物質特性與圖表推理",
+      "observedPattern": "取公開會考對物質性質、能量與證據限制的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "化石燃料、燃燒、排放、資源與能源決策",
+      "observedPattern": "取公立學校自然科對燃料來源、燃燒與能源選擇的能力方向，重新設計題目。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把資料明示的條件逐一列出，再標記不能由案例外推的範圍。",
+  "solutionSteps": [
+    "圈出有機物來源、沉積、氧氣、壓力、溫度或燃料組成線索。",
+    "區分形成條件、物質性質、加工分離、燃燒產物與能源決策。",
+    "依資料核對沸點、單位、供應鏈、排放、安全與不能外推的範圍。",
+    "排除把化石誤作恐龍、把混合物當純物質或把低排放說成零污染的選項，答案為 C。",
+    "用地質—物質—使用—限制鏈回查結論：資料支持有機物、沉積、低氧、深埋和地熱等條件共同形成的可能性，不能外推成所有海洋或所有泥層都產油。"
+  ]
 }

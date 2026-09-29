@@ -2,41 +2,84 @@
   "id": "question-math-content-f-8-2-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "某計程車車資 y（元）與里程 x（公里）符合 y=25x+70，25 在此式中代表什麼？",
+  "prompt": "直線 y＝−2x＋8 在 x 增加時，圖形呈現何種方向？",
   "options": [
     {
       "id": "A",
-      "text": "起跳價"
+      "text": "由左下向右上"
     },
     {
       "id": "B",
-      "text": "每公里增加的費用"
+      "text": "由左上向右下"
     },
     {
       "id": "C",
-      "text": "總里程"
+      "text": "水平直線"
     },
     {
       "id": "D",
-      "text": "終點座標"
+      "text": "垂直直線"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-f-8-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "x 的係數 25 表示每增加 1 公里，車資增加 25 元。"
+    "explanation": "斜率 −2 為負，x 向右增加時 y 下降，所以圖形由左上向右下，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 一次函數的圖形 題型與官方課綱 KG kg-math-content-f-8-2",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供一次函數圖形、斜率、截距、平行與交會能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的一次函數圖形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-f-8-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-f-8-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "graphs of linear functions, slope, intercepts, parallel lines, intersections, and point verification",
+      "observedPattern": "公立學校公開數學試題常由一次函數圖形讀取斜率與截距、判斷點在線上、求坐標軸截距及比較平行或交會；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "graphs of linear functions, slope, intercepts, parallel lines, intersections, and point verification",
+      "observedPattern": "公立學校公開數學試題常由一次函數圖形讀取斜率與截距、判斷點在線上、求坐標軸截距及比較平行或交會；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用斜率正負判斷圖形由左至右的升降，不需要先畫出所有點。",
+  "solutionSteps": [
+    "讀取直線斜率 −2。",
+    "判斷負斜率表示 x 增加、y 減少。",
+    "在坐標平面中由左往右觀察。",
+    "因此直線從左上往右下。",
+    "選 B，取 x＝0、1 可得 y＝8、6 作局部驗證。"
+  ]
 }

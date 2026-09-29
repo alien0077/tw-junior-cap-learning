@@ -1,0 +1,172 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-8-3
+  knowledgeGraphIds:
+  - kg-math-content-a-8-3
+  title: A-8-3：多項式的四則運算
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '8'
+  fusedScope:
+    officialCurriculum: A-8-3：多項式的四則運算
+    curriculumIntent: A-8-3：多項式的四則運算
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；本單元已完成三家公開校方課程資料的加減、乘法、除法範圍、教學順序與評量方向交叉核對，正文仍維持原創
+    currentEvidenceStatus: curriculum-and-kg-grounded; three-publisher-fusion-evidence-verified; content-and-Terra-review-pending
+  learningGoals:
+  - 對加減先依次數與文字部分對齊各項，並解釋減去括號時每項符號都要改變
+  - 以分配律展開多項式乘法，逐一記錄每一項相乘而不漏配
+  - 以乘法反向驗算除法商式，指出整除與餘式的關係
+  - 代入同一個數值比較原式與運算結果，作為符號計算的獨立檢查
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 加減只合併同類項；減去一個多項式等於乘上 −1 後逐項分配
+  - 乘法依分配律形成所有項對項的乘積，再合併同類項
+  - 多項式除法的商乘回除式，加上餘式應還原被除式
+  - 數值代入可抓出錯誤，但單一代值吻合不能取代恆等推導
+  misconceptions:
+  - 減去括號時只改第一項符號，後續項符號未變
+  - 乘法只配第一個乘式或只乘同次項，漏掉交叉乘積
+  - 除法得到商後不檢查餘式，或把除式與被除式顛倒
+  - 把不同次數但係數相同的項錯誤合併
+  contentFlow:
+  - 'hook: 給出兩種括號運算答案，請學生用 x=2 先判斷哪個可能保留原值'
+  - 'predict: 展開或除法操作前先預測負號影響的項數、乘積格數或商的首項，並保留原式供核對。'
+  - 'diagnose: 以項卡標出次數、係數、正負號，確認同類項與分配律先備'
+  - 'manipulate: 學生選擇減括號、逐格相乘或首項相除路徑，逐項填寫符號／乘積／商，並可回退修正。'
+  - 'observe: 每一步同步更新合併後多項式、乘積格或「被除式＝除式×商＋餘式」紀錄，標出未配對項。'
+  - 'explain: 學生用等值變形和代入結果說明符號如何傳遞，並判斷餘式次數何時已低於除式。'
+  - 'subtract: 將減號視為乘 −1，逐項翻轉括號內符號後才合併'
+  - 'multiply: 建立左項×右項乘積格，所有格填完後依次數合併'
+  - 'divide: 用首項相除取得商的一項，乘回、相減、降次；直到餘式次數低於除式'
+  - 'verify: 同時做乘回驗算與一個數值代入，辨認兩種檢查各自能證明什麼'
+  - 'transfer: 從包材邊長式推導面積，對應每個乘積來源並檢查單位'
+  - 'exit-ticket: 修正漏負號或漏乘積的解答，寫出最短可檢驗理由'
+  visualizations:
+  - 加減項對齊表：每列呈現原項、次數、係數、運算符號及合併後係數
+  - 乘法配對格：列標與欄標為兩個多項式的項，格內即時顯示乘積與來源標籤
+  - 除法長式的每輪紀錄：目前被除式、商項、乘回項、相減結果與餘式次數
+  - 每個表徵均提供逐步文字描述；不得只用顏色表示正負或項目來源
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-8-3-I01
+    component: StepwiseReasoningBlock
+    purpose: 追蹤多項式運算中每項的來源，讓括號符號、乘積配對與除法回代皆可逐步核對
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        operation: subtract
+        dividend: '2x²+3x−6'
+        divisor: 'x+3'
+        currentStep: 0
+        showAnswer: false
+    studentActions:
+    - 選擇加減、乘法或除法工作台，先預測結果最高次與正負號
+    - 加減模式逐項翻牌，確認括號前負號是否分配到全部項
+    - 乘法模式逐格完成項對項乘積，未填完所有格不得合併
+    - 除法模式逐輪輸入商項並查看乘回與相減，不可跳過中間式
+    - 完成後用指定 x 值代入原式與結果式，並提交差異說明
+    visualRules:
+    - 每個輸入項都連結到被它產生的運算列，修改後下游步驟標示需重算
+    - 減式逐項呈現乘 −1 的結果；乘法顯示完整配對格和未完成格數
+    - 除法每輪維持「商×除式＋目前餘式」等價紀錄，餘式次數不低於除式時不得宣告完成
+    - 正解揭露前保留預測、操作歷程與錯誤位置；窄螢幕改堆疊而不裁切
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-8-3-I01
+      trigger: 由 5x²−(2x²−3x+1) 寫成 3x²−3x+1，或乘法配對格仍有空格便提交合併式
+      prompt: 請把括號前的 −1 分配到每一項，或指出配對格中尚未計入的項；再用 x=1 比較原式與答案。
+      expectedEvidence: 負號分配後每一項的符號紀錄；或完整項對項乘積清單及一致的數值驗算
+    feedback:
+      correct: 指出符號翻轉或配對清單中正確的核對點，再要求使用另一種運算檢查一個新式子。
+      incorrect: 第一層只標出漏改符號或空白配對格；第二層提示「減去＝乘 −1」或「每一項都要乘到另一括號每一項」；重試後才展示局部運算。
+    guidedActivity:
+      title: 括號減法檢查站：逐項分配負號
+      introduction: 化簡 5x²−(2x²−3x+1)。先處理括號前的負號，接著合併同類項，最後代值核對；每一步答對才會解鎖下一步。
+      stages:
+      - prompt: 第一步：把括號前的 −1 分配到括號內，寫出三項。
+        acceptedAnswers: ["-2x²+3x-1", "-2x^2+3x-1"]
+        correctFeedback: 正確。負號改變括號中每一項的符號。
+        hint: −1 需分別乘上 2x²、−3x、+1，不是只改第一項。
+      - prompt: 第二步：合併同類項後的最簡式是什麼？
+        acceptedAnswers: ["3x²+3x-1", "3x^2+3x-1"]
+        correctFeedback: 正確。二次項合併為 3x²，一次項為 3x，常數為 −1。
+        hint: 將 5x² 與 −2x² 配對；一次項只有 +3x；常數仍是 −1。
+      - prompt: 第三步：令 x=1，最簡式的值是多少？
+        acceptedAnswers: ["5"]
+        correctFeedback: 正確。原式代入也為 5，數值檢查一致。
+        hint: 代入後計算 3(1)²+3(1)−1，依次處理乘方與加減。
+      completionMessage: 完成三步。代值相同能抓出計算錯誤；完整理由仍是逐項分配與同類項合併。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "學生先預測減式或乘積的次數與符號，再逐列操作括號分配或項對項配對；錯誤可回到具體運算列重試。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "採取短回合操作與即時重算：修改任一原項後，只將受影響的後續列標為待更新，避免錯誤沿用舊結果。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "運算步驟以文字與數學語意標註，例如『把 −1 分配到三項』及『商項乘回除式』；狀態更新由 live region 宣告。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "頁面區分題目、運算模式、逐步工作區、錯誤提示和驗算結果；鍵盤可跳至目前步驟並返回前一步修正。"
+  capTransfer:
+    questionType: 包材裁切尺寸的多項式乘法與數值交叉驗算
+    stemConstraint: 一張長 (x+5) 公分、寬 (x−2) 公分的長方形包材，求面積多項式；說明中間項的來源，並以 x=3 驗算。
+    requiredResponse: 展開 x²+3x−10 平方公分；說出 x·(−2) 與 5·x 合成 3x；x=3 時原乘積 8×1=8，展開式亦為 8。
+    scoring: 展開及單位正確 1、兩個交叉乘積來源完整 1、數值驗算與理由一致 1
+  exitTicket:
+    prompt: 化簡 4x²−(x²−2x+5) 時，哪幾項改變符號？寫出結果並用 x=2 驗算。
+    successCriteria:
+    - 寫成 3x²+2x−5，三項皆正確分配括號負號
+    - 原式與結果式在 x=2 均為 11
+    - 說明常數項 5 也因乘 −1 而變成 −5
+  expressionExtension:
+    applicable: true
+    task: 為長 (t+4)、寬 (t−1) 的展示卡寫面積多項式，逐一標記四個乘積如何產生三個合併項，並用 t=2 驗算。
+    constraint: 學生須保留四格乘積和單位；回饋只標示漏乘、符號或合併錯誤，不直接代寫完整推導。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 減法題逐項改變括號內每項符號；以 5x²−(2x²−3x+1) 為例，結果為 3x²+3x−1，x=1 時原式與結果皆為 5。
+  - 乘法題的配對格完整涵蓋兩式每一項；(2x−1)(x+3) 化為 2x²+5x−3，x=2 時兩式均為 15。
+  - 除法每輪保留商項乘回與相減證據；2x²+3x−6 除以 x+3 得 2x−3、餘式 3，回代得到 2x²+3x−6。
+  - 320px、375px、768px 與鍵盤流程可完成模式切換、逐步運算、撤回修正、提交理由和驗算；數學符號有螢幕閱讀器替代文字。
+  - 包材 transfer 得 x²+3x−10 平方公分；x=3 時原乘積和展開式同為 8。
+  - 乘積格或拖曳互動失效時，文字 fallback 提供逐項符號紀錄、乘積配對清單和商／餘式欄，仍能完成括號分配、乘法、除法回代及 transfer。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-3
+    role: official-curriculum-source-of-truth

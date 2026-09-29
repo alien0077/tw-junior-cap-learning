@@ -2,23 +2,23 @@
   "id": "question-english-content-d-iv-3-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-3／釐清因果」task, what is the best way to prepare question 7?",
+  "prompt": "A student claims, 'Our class score rose once after using a study app, so the app always raises scores.' Which evidence would most strongly challenge the claim?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-3／釐清因果."
+      "text": "A similar class used the app under similar test conditions but showed no score increase."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-3／釐清因果."
+      "text": "The app icon is bright and easy to notice."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-3／釐清因果."
+      "text": "The student enjoys studying with a phone."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-3／釐清因果."
+      "text": "The class used pencils during the test."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-3／釐清因果, question 7."
+    "explanation": "相似條件下出現「使用後沒有進步」的反例，能直接反駁 always 的主張，故選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.gwjh.hc.edu.tw/uploads/1675745677488ZvKru5gb.pdf",
+    "sourceLocator": "PDF第6頁第45–50題：閱讀對話推論書店結束營業、租金、銷售及網路閱讀等多項背景因素。",
+    "authoringNote": "參照公立學校公開英文段考所呈現的時間順序、原因辨識、篇章線索或因果推論能力，題幹、情境、數據、選項、答案與解析均獨立撰寫；未複製試卷。課程版本研究與全案內容審查尚未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.gwjh.hc.edu.tw/uploads/1675745677488ZvKru5gb.pdf",
+      "title": "新竹市立光武國中111學年度第1學期第3次段考八年級英語科試題",
+      "year": "111",
+      "subject": "english",
+      "locator": "PDF第6頁第45–50題：閱讀對話推論書店結束營業、租金、銷售及網路閱讀等多項背景因素。",
+      "observedPattern": "以多句脈絡整合解釋原因與替代因素；本題公車延誤情境和所有敘述均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "檢驗 always 這類普遍主張，要找條件相近卻沒有出現預測結果的反例，而不是無關偏好。",
+  "solutionSteps": [
+    "主張包含 always，意思是每次使用都會提高分數。",
+    "一次班級分數上升只能顯示先後發生，不能保證每次皆有效。",
+    "相似班級、相似考試條件下使用 app 卻沒有進步，直接提供反例。",
+    "因此最能挑戰普遍主張的是 A。",
+    "亮色圖示、喜歡手機及使用鉛筆都不檢驗分數是否上升。"
+  ]
 }

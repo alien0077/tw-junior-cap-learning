@@ -2,41 +2,62 @@
   "id": "question-science-content-cross-atoms-to-universe-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年4月10日學校研究社的觀察中，將 51 g 食鹽溶於 702 g 水，研究「從原子到宇宙」時，溶液質量為何？",
+  "prompt": "觀星紀錄指出，某顆北天亮星在數晚的照片中幾乎維持同一方向。哪項說法最合理？",
   "options": [
     {
       "id": "A",
-      "text": "651 g"
+      "text": "北極星是恆星，北半球較容易觀察；它仍會自行發光"
     },
     {
       "id": "B",
-      "text": "35802 g"
+      "text": "北極星是行星，因反射太陽光才固定在天空"
     },
     {
       "id": "C",
-      "text": "753 g"
+      "text": "北極星只在南半球可見，且不發光"
     },
     {
       "id": "D",
-      "text": "702 g"
+      "text": "恆星看似固定表示地球完全沒有自轉"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cross-atoms-to-universe"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：51＋702＝753 g。 本題對應 KG「從原子到宇宙」。"
+    "value": "A",
+    "explanation": "北極星是恆星，會自行發光；它靠近天球北極方向，因此北半球夜空中視位置變化較小，但地球仍在自轉。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64183/106-1-3%E8%87%AA%E7%84%B6%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立大灣國中106學年度上學期第三次段考三年級自然科試題",
+      "year": "106",
+      "subject": "science",
+      "locator": "PDF page 3, question 28",
+      "observedPattern": "僅參考第28題的命題能力與推理結構；只依公開原卷指定題目研究銀河系、恆星、星空觀察與天文尺度的命題模式；不重製題幹、選項、圖表或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dwm.kh.edu.tw/upload/344/104_64183/106-1-3%E8%87%AA%E7%84%B6%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "高雄市立大灣國中公開原卷 PDF page 3, question 28；只取題型與推理能力作 pattern-only 參考，題幹、選項、答案、圖表均重新創作。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開試題的 item-level pattern-only 證據獨立改寫；沒有複製原題、選項、圖表或答案。題目維持 draft，尚待單元版本融合、內容與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-atoms-to-universe"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-science-content-cross-atoms-to-universe",
+  "solutionStrategy": "分開判斷天體分類、光源性質與觀測者所在半球；「相對位置變化小」不等於「天體不發光」或「地球不轉」。",
+  "solutionSteps": [
+    "題幹只描述連續夜晚的視方向近似不變，這是觀測位置特徵，不直接說明它是否發光。",
+    "辨認北極星屬恆星；恆星能自行發光，行星主要反射恆星光。",
+    "它位於北天極附近，所以從北半球觀察時，周圍星軌看起來繞其附近轉動。",
+    "地球自轉仍會造成星空周日運動，只是北極星附近的視位置變化較不明顯。",
+    "只有 A 同時符合分類與觀測條件；不要把「看起來近乎固定」當成「地球靜止」的證據。"
+  ]
 }

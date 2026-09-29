@@ -2,41 +2,87 @@
   "id": "question-science-content-mb-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年6月16日學校研究社的觀察中，針對「Mb：科學發展的歷史」提出可檢驗的科學問題，若比較 4 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "科學模型被修正是否代表過去所有觀察都是錯的？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Mb：科學發展的歷史」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "不一定；觀察可能仍有效，只是原模型無法涵蓋新條件或新資料"
     },
     {
       "id": "B",
-      "text": "研究「Mb：科學發展的歷史」時只改變光照時間，其餘條件一致，設置4組、每組取樣16份並各重複測量5次"
+      "text": "是，模型一改所有資料必然失效"
     },
     {
       "id": "C",
-      "text": "研究「Mb：科學發展的歷史」時只測量4組中的一組就直接下結論"
+      "text": "模型修正只由投票決定"
     },
     {
       "id": "D",
-      "text": "研究「Mb：科學發展的歷史」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "只要新模型出現就不需再測量"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-mb"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Mb：科學發展的歷史」。"
+    "value": "A",
+    "explanation": "資料、模型與適用範圍要分開；新證據常保留舊觀察，同時要求更精確或更廣的解釋。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的觀察、工具、模型、證據、科學爭論、技術與社會影響能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-mb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-mb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "科學探究、模型、證據與科學史情境",
+      "pattern": "取公立學校自然科評量以觀察、證據、模型、推論和新情境遷移的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以觀察、證據、模型、推論和新情境遷移的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "科學史、實驗資料、模型與生物技術",
+      "pattern": "取公開會考以圖表、實驗控制、證據界線和模型解釋的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、實驗控制、證據界線和模型解釋的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "科學方法、發現、技術與環境社會影響",
+      "pattern": "取公立國中試題以觀察工具、假說驗證、模型更新和科學應用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以觀察工具、假說驗證、模型更新和科學應用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先問被修正的是觀察、推論還是模型範圍，不把三者混成一件事。",
+  "solutionSteps": [
+    "先分出原始觀察、測量工具、模型、推論與社會決策。",
+    "按證據支撐的關係排序，而不是只按年代排列。",
+    "比較新資料是否支持、修正或推翻原模型。",
+    "檢查控制條件、替代解釋和當時工具的限制。",
+    "用條件式說明知識如何累積及技術帶來的效益與風險。"
+  ]
 }

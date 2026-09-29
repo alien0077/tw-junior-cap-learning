@@ -2,23 +2,23 @@
   "id": "question-science-content-md-iv-4-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年9月20日河川觀測站的觀察中，山區測站一週記錄到 4 次、深度約 15 km 的淺層地震，研究「Md-Ⅳ-4：臺灣板塊位置與地震災害」時，最適當的解釋是？",
+  "prompt": "某地震剖面顯示上盤相對上升、岩層受到水平擠壓。這個斷層最可能是？",
   "options": [
     {
       "id": "A",
-      "text": "只要山區測站有一次地震（本週共 4 次、深度約 15 km）就能確定成因"
+      "text": "逆斷層"
     },
     {
       "id": "B",
-      "text": "山區測站發生 4 次地震表示所有火山都會爆發"
+      "text": "正斷層"
     },
     {
       "id": "C",
-      "text": "應結合山區測站的震央位置、深度約 15 km 與板塊邊界資料判讀"
+      "text": "只有水平位移的走向滑移斷層"
     },
     {
       "id": "D",
-      "text": "不需山區測站的位置、深度約 15 km 與時間資料即可判斷"
+      "text": "沒有位移的節理"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "地震成因需比對位置、深度、時間與板塊構造等證據，不能只由一次紀錄推論。 本題對應 KG「Md-Ⅳ-4：臺灣板塊位置與地震災害」。"
+    "value": "A",
+    "explanation": "A。上盤相對上升且受水平擠壓，符合逆斷層的幾何與受力特徵；正斷層則通常和張力、上盤下降有關。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "三筆公立學校公開自然科試題中的臺灣板塊、斷層、震源震央、P波S波、震度、風險與防災能力；本題改寫為地震災害原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-md-iv-4"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-md-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取臺灣板塊邊界、地震與斷層判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "臺灣板塊邊界、地震與斷層判讀",
+      "observedPattern": "公開自然科評量常要求連結臺灣板塊邊界、斷層、震源震央、P波S波、震度、地質放大、風險與防災資料；本題以全新地震情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取震源震央、P波S波、震度與地質條件的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "震源震央、P波S波、震度與地質條件",
+      "observedPattern": "公開自然科評量常要求連結臺灣板塊邊界、斷層、震源震央、P波S波、震度、地質放大、風險與防災資料；本題以全新地震情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取地震風險、測站定位與防災行動的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "地震風險、測站定位與防災行動",
+      "observedPattern": "公開自然科評量常要求連結臺灣板塊邊界、斷層、震源震央、P波S波、震度、地質放大、風險與防災資料；本題以全新地震情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看上盤相對移動與水平受力，區分逆、正與走向滑移斷層。",
+  "solutionSteps": [
+    "圈出板塊位置、相對運動、斷層、震源、震央、震度與地質條件。",
+    "先由受力與上盤位移判斷斷層，再用P波S波到時差分析定位。",
+    "把地質放大、建物脆弱度、人口暴露與應變能力加入風險模型。",
+    "區分觀察到的小震、震度差異與可支持的推論，不把單一訊號當預測。",
+    "回查防災行動的時間順序、資料不確定性與研究範圍。"
+  ]
 }

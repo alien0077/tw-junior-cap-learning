@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-08",
+  "environment": {
+    "browser": "Codex In-app Browser Chromium",
+    "url": "http://127.0.0.1:8767/implementation/workbench.html",
+    "source": "current repository worktree"
+  },
+  "scope": "one real unit per registered renderer component",
+  "checks": [
+    "component rendered from selected unit bundle",
+    "predict -> manipulate -> observe -> explain -> verify completed",
+    "text fallback remained present",
+    "exported interaction state serialized successfully",
+    "the same five-stage flow completed with keyboard Enter activation"
+  ],
+  "componentCount": 16,
+  "passed": 16,
+  "keyboardFlow": {"tested": 16, "passed": 16, "failures": []},
+  "failures": [],
+  "units": [
+    {"component": "TextEvidenceBlock", "lessonId": "cur-chinese-content-a"},
+    {"component": "LanguageTimelineBlock", "lessonId": "cur-english-content-a"},
+    {"component": "AlgebraBalanceBlock", "lessonId": "cur-math-content-a-7-1"},
+    {"component": "GeometryManipulationBlock", "lessonId": "cur-math-content-a-7-6"},
+    {"component": "DataExplorerBlock", "lessonId": "cur-math-content-d-7-1"},
+    {"component": "StepwiseReasoningBlock", "lessonId": "cur-math-content-d"},
+    {"component": "FunctionRepresentationBlock", "lessonId": "cur-math-content-f-8-1"},
+    {"component": "NumberLineBlock", "lessonId": "cur-math-content-n-7-3"},
+    {"component": "ParticleModelBlock", "lessonId": "cur-science-content-a"},
+    {"component": "EvidenceLabBlock", "lessonId": "cur-science-content-aa-iv-3"},
+    {"component": "PhenomenonSimulationBlock", "lessonId": "cur-science-content-b"},
+    {"component": "SystemRelationshipBlock", "lessonId": "cur-science-content-bd-iv-2"},
+    {"component": "EarthSystemBlock", "lessonId": "cur-science-content-cross-global-climate-adaptation"},
+    {"component": "ScenarioDecisionBlock", "lessonId": "cur-social-content-civ-a"},
+    {"component": "MapDataBlock", "lessonId": "cur-social-content-geo-aa-iv-1"},
+    {"component": "TimelineCausalBlock", "lessonId": "cur-social-content-hist-a-iv-1"}
+  ],
+  "boundary": "Representative renderer smoke evidence only; it does not replace each unit's subject, numerical, pedagogical, publisher-source or screen-reader review."
+}

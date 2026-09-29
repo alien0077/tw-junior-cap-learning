@@ -1,0 +1,148 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-1
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-1
+  title: 5-Ⅳ-1：基本字彙理解使用
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-1：基本字彙理解使用
+    curriculumIntent: 5-Ⅳ-1：基本字彙理解使用
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 只記錄三家官方公開資源頁實際可核對的共同教學方向與功能差異；不可把資源介紹宣稱為指定冊次課文全文
+    currentEvidenceStatus: curriculum-and-kg-grounded; three-official-resource-pages-read; original-fusion-manuscript-written; awaiting-user-chatgpt-review
+  learningGoals:
+  - 以句中動作、受詞、搭配與前後文判斷基本字彙在當前語境中的意思
+  - 區分認得字義與能在口語／書面情境中正確使用
+  - 核對字形、讀音、搭配與讀者溝通目的，並能改寫核心訊息
+  prerequisites:
+  - 能理解本課原創校園公告中的人物、動作與時間資訊
+  - 能辨認基本句子中的主詞、動詞與受詞
+  coreConcepts:
+  - 語境線索：主詞、動詞、受詞、搭配、轉折、結果與時間
+  - 接受性字彙辨認與產出性字彙運用不是同一能力
+  - 字義選擇需與句法位置、慣用搭配和讀者任務相容
+  misconceptions:
+  - 看到熟悉拼字就套用最常背的中文意思，不檢查受詞和情境
+  - 認得字卡中文就以為能聽辨、拼寫或自行造句
+  - 句子改寫時保留字面卻漏掉行動對象、截止時間等核心訊息
+  contentFlow:
+  - 'predict: 尚未顯示回饋前，先依公告語境預測 return 的意思並選出理由'
+  - 'manipulate: 在 GuidedChoice 中切換字義／線索選項，檢查改變推論依據後選擇是否改變'
+  - 'observe: 比較錯答提示與正答解析，觀察受詞、搭配和事件如何限制多義字解讀'
+  - 'explain: 用 borrowed books、book／library 或 bag／carry 說明字義判斷所依據的語境證據'
+  - 'transfer: 把閉館公告改寫成同儕簡訊，保留提早閉館與三點前歸還兩項訊息'
+  - 'retrieve: 對疑難詞留存原句，安排間隔後在新例句中再次提取'
+  visualizations:
+  - 以完整英文句與關鍵受詞／情境線索並列，不把字義抽離語句呈現
+  - 多義字對照需以詞性／搭配或溝通情境文字標籤區分，不只依顏色
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-1-I01
+    component: GuidedChoiceBlock
+    purpose: 讓學生以校園公告判斷字義、診斷直譯迷思，並把訊息遷移到同儕簡訊
+    initialState:
+      showAnswer: false
+      selectedAnswer: null
+      feedback: empty
+    studentActions:
+    - 閱讀完整句子後選擇最符合語境的意思
+    - 答錯時收到指向受詞、搭配或行動條件的一階提示，再自行重試
+    - 答對後讀取解析，確認答案如何由語境支持
+    - 依公告改寫任務保留閉館時間與歸還書籍兩項事實
+    visualRules:
+    - 題幹以完整語境呈現；選項文字明確，不只用顏色表示正誤
+    - 回饋區使用 aria-live，錯誤時呈現重試提示，答對時呈現理由
+    - 四個步驟各自保留題幹、選項和回饋，不以外部資源作為解題必要條件
+    - 窄螢幕不得裁切題幹、控制項與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-1-I01
+      trigger: 把 return 一律解作「回來」，或把 light 一律解作「燈光」
+      prompt: 請查看動詞後面的受詞或句子描述的事件，再試一次。
+      expectedEvidence: 能指出 borrowed books／bag／turn on 等搭配線索並選擇相容字義
+    feedback:
+      correct: 指明哪個受詞、搭配或行動資訊支持該字義，並連回公告任務。
+      incorrect: 提供指向受詞、搭配或溝通目的的一階提示，不直接代答；保留重試機會。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "參考短回合、即時提示及多模態可及性；本課使用原創校園公告與自行撰寫互動題。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "參考將詞彙練習分成可重做小回合的教法；不引用外部教學活動原文。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "採語意化標籤、鍵盤可操作控制與即時回饋；不依賴色彩傳達正誤。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "採可辨識的標題與操作區域；互動內容仍由本單元原創。"
+  capTransfer:
+    questionType: 公告／短訊語境字義判斷與訊息改寫
+    stemConstraint: 情境須提供足以分辨多義字的受詞、搭配或行動目的，不以孤立翻譯考記憶
+    requiredResponse: 選答後說明上下文線索；改寫題保留對象、動作與時間資訊
+    scoring: 字義與語境相容 1、指出線索 1、改寫保留核心訊息 1
+  exitTicket:
+    prompt: 你如何確認多義字在這句話中的意思？改寫給新讀者後，哪些資訊絕不能遺失？
+    successCriteria:
+    - 指出句中受詞、搭配或事件作為字義線索
+    - 能分開說明認字義與自己使用該詞
+    - 改寫仍保留原訊息的行動和時間限制
+  expressionExtension:
+    applicable: true
+    task: 把圖書館公告改寫為不超過 25 個英文單字的同儕簡訊，並在旁標記兩項不可遺失的資訊
+    constraint: 學生先寫；回饋只指出漏掉的行動或時間，不直接代寫全文
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入課程時顯示四個原創語境題，但不先顯示答案。
+  - 四個步驟皆可鍵盤操作；作答後 aria-live 回饋須分辨答對解析與答錯提示。
+  - step 1／2 需實際檢查 return 的受詞線索；step 3 須區分重量 light 和照明 light；step 4 須保留公告的動作與時間。
+  - 在 320px、375px 與 768px 寬度，鍵盤可完成四步選擇並讀取回饋，題幹、選項與回饋不得溢位或遺失。
+  - 互動不依賴外部服務、瀏覽器插件或載入第三方題庫，離線資料仍可完成全部步驟。
+  - Fallback：刻意阻擋 simulations.js 後，四步字彙 GuidedChoice 仍可用鍵盤作答、錯答重試並取得正答解析；頁面不得出現執行錯誤。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三家官方資源頁的閱讀範圍、可核對發現與未公開教材限制均已如實記錄
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 教材正文、互動題與回饋為本課原創，無 placeholder、TODO 或只換單元名詞的句型
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 5-Ⅳ-1
+    role: official-curriculum-source-of-truth
+  - url: https://tpack.nani.com.tw/nani_content?a=273&b=2
+    locator: 南一官方英語資源頁；單字、例句與閃卡至書寫練習模式；核讀 2026-09-28
+    role: publisher-resource-design-evidence
+  - url: https://digitalmaster.knsh.com.tw/all/digitalgo/j/english/index.html
+    locator: 康軒官方 114 學年度國中英語數位特色頁；Word Bank、課文單字與拼字活動；核讀 2026-09-28
+    role: publisher-resource-design-evidence
+  - url: https://hanlindigi.hle.com.tw/widget/1/34
+    locator: 翰林官方國中英語單字冒險島資源頁；辨識／應用字彙、例句、語音及多種練習回合；核讀 2026-09-28
+    role: publisher-resource-design-evidence

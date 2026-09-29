@@ -2,41 +2,87 @@
   "id": "question-science-content-na-iv-2-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年4月29日社區環境站的觀察中，針對「Na-Ⅳ-2：生活中的節能方法」提出可檢驗的科學問題，若比較 5 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "新設備耗電較低但壽命短、常需更換；完整節能判斷應加入？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Na-Ⅳ-2：生活中的節能方法」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "製造、運輸、維修、廢棄與替換頻率的生命週期能源與成本"
     },
     {
       "id": "B",
-      "text": "研究「Na-Ⅳ-2：生活中的節能方法」時只測量5組中的一組就直接下結論"
+      "text": "只看運轉功率"
     },
     {
       "id": "C",
-      "text": "研究「Na-Ⅳ-2：生活中的節能方法」時只改變溶液濃度，其餘條件一致，設置5組、每組取樣15份並各重複測量4次"
+      "text": "只看第一次使用的讀值"
     },
     {
       "id": "D",
-      "text": "研究「Na-Ⅳ-2：生活中的節能方法」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "只看包裝上的節能標章"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-na-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Na-Ⅳ-2：生活中的節能方法」。"
+    "value": "A",
+    "explanation": "使用階段省電可能被頻繁製造與替換的負荷抵銷；需以相同服務年限比較生命週期。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的功率、電能、照明、冷氣、待機、設備生命週期、控制變因與節能決策能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-na-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-na-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "功率、電能、生活用電與節能資料",
+      "pattern": "取公立學校自然科評量以功率、使用時間、電能、控制變因和生活決策推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以功率、使用時間、電能、控制變因和生活決策推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "電能、效率、能源使用與圖表判讀",
+      "pattern": "取公開會考以公式、比例、時間、設備條件和方案效益評估的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以公式、比例、時間、設備條件和方案效益評估的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "家庭校園用電、功率、待機與節能",
+      "pattern": "取公立國中試題以電器資料、使用情境、效率、控制條件與安全的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以電器資料、使用情境、效率、控制條件與安全的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先設定比較年限，再把使用、製造、維修和廢棄全部納入。",
+  "solutionSteps": [
+    "先確認設備功率、使用時間與要維持的服務品質。",
+    "用 E=P×t 統一比較各設備的能量使用。",
+    "把待機、環境溫度、使用人數和尖峰時段列為條件。",
+    "以相同照度、舒適度或功能需求做公平比較。",
+    "檢查安全、維護、壽命與反彈效應，再提出節能結論。"
+  ]
 }

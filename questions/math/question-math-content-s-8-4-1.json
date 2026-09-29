@@ -2,41 +2,84 @@
   "id": "question-math-content-s-8-4-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "兩個圖形能完全重合，則兩圖形的關係為何？",
+  "prompt": "兩個圖形的形狀與大小完全相同，只需平移、旋轉或翻轉即可重合，這兩個圖形稱為什麼？",
   "options": [
     {
       "id": "A",
-      "text": "相似"
+      "text": "全等圖形"
     },
     {
       "id": "B",
-      "text": "全等"
+      "text": "相似圖形"
     },
     {
       "id": "C",
-      "text": "平行"
+      "text": "對稱圖形"
     },
     {
       "id": "D",
-      "text": "對稱但大小必不同"
+      "text": "平行圖形"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-8-4"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "能完全重合表示形狀與大小都相同，兩圖形全等。"
+    "value": "A",
+    "explanation": "能透過剛體移動完全重合，表示對應長度與角度都相同，稱為全等圖形，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 全等圖形 題型與官方課綱 KG kg-math-content-s-8-4",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供全等圖形與三角形判定能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的全等能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-8-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "全等圖形、剛體移動、對應頂點、SSS／SAS／ASA／AAS 判定與全等／相似辨析",
+      "observedPattern": "公開學校數學試題常以三角形對應、全等判定條件、符號順序與全等後邊角推理考查幾何證據；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "全等圖形、剛體移動、對應頂點、SSS／SAS／ASA／AAS 判定與全等／相似辨析",
+      "observedPattern": "公開學校數學試題常以三角形對應、全等判定條件、符號順序與全等後邊角推理考查幾何證據；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷是否能完全重合，再區分全等與只有形狀相同的相似。",
+  "solutionSteps": [
+    "列出允許的剛體移動：平移、旋轉、翻轉。",
+    "這些移動不改變長度與角度。",
+    "題目說移動後完全重合。",
+    "符合全等圖形定義。",
+    "選 A。"
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-f-iv-1",
   "subject": "math",
-  "title": "f-Ⅳ-1：常數與一次函數",
+  "title": "f-Ⅳ-1：一次函數把變化說成規則",
   "knowledgeIds": [
     "kg-math-performance-f-iv-1"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「常數與一次函數」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "一次函數不是看到 y=ax+b 就結束，而是描述輸入改變時輸出如何跟著改變。本課以共享單車的固定費與每分鐘費用建立 y=2x+30，讓學生在情境、表格、座標圖與式子間來回轉換，辨認斜率代表每單位變化、截距代表起始量，並檢查定義域與單位。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「常數與一次函數」相關的關係。"
+        "heading": "輸入與輸出要先命名",
+        "body": "租借分鐘數是輸入 x，總費用是輸出 y；固定費 30 元在尚未騎乘時就存在，每分鐘 2 元則描述增加一分鐘會多出的費用。變量角色不同，不能任意互換。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「常數與一次函數」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "表格顯示固定變化",
+        "body": "當 x 每增加 1，y 都增加 2，這個固定差是一次函數的斜率線索。表格不只是代數式的附屬品，可以用來檢查輸出是否符合規則。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「常數與一次函數」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "圖形的斜率與截距",
+        "body": "座標圖上的直線斜率是輸出差除以輸入差，y 軸截距是 x=0 時的輸出。讀圖時要先看軸標籤與刻度，否則同一條線可能被誤讀成不同速率。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「常數與一次函數」，並指出至少一項支持判斷的條件。"
+        "heading": "函數有合理的定義域",
+        "body": "數學上可代入任意 x 不代表情境允許任意值；租借時間不能是負數，營業時段也可能設定上限。寫答案時要同時呈現規則與可使用的輸入範圍。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「常數與一次函數」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先辨認輸入、輸出、單位與起始量。",
+    "用表格的固定差找斜率，再用 x=0 找截距。",
+    "在式子、表格與座標圖間互相核對，不只背公式。",
+    "最後檢查定義域，分清數學規則與情境可行範圍。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,111 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「常數與一次函數」並驗算結果。",
-    "scenario": "以「f-Ⅳ-1：常數與一次函數」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "在情境、表格、座標與一次函數式之間同步轉換。",
+    "scenario": "調整租借分鐘數，觀察費用、斜率與固定費的文字狀態同步更新。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "租借分鐘數"
+      },
+      {
+        "symbol": "y",
+        "meaning": "總費用（元）"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「常數與一次函數」的第一步是什麼？",
+        "prompt": "開鎖 30 元、每分鐘 2 元如何表示？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "y=2x+30",
+          "y=30x+2",
+          "y=2x−30"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "每分鐘費用乘輸入，再加上起始固定費。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "式子中的 2 如何從表格確認？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "x 每增加 1，y 固定增加 2",
+          "看 x=0 的 y",
+          "只看最大費用"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "固定差是一次函數的斜率線索。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "如何檢查規則適用範圍？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "確認時間非負且不超過營業上限",
+          "允許所有負時間",
+          "只看直線是否漂亮"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "定義域來自情境限制，不由圖形外觀決定。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "f-Ⅳ-1：常數與一次函數；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "高雄市公立校方翰林版第六冊數學課程計畫；統計、機率與函數學習內容及評量定位。；f-Ⅳ-1：常數與一次函數：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www1.fsm.kh.edu.tw/plan/special_112/112%E8%B3%87%E6%BA%90%E7%8F%AD%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「常數與一次函數」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「f-Ⅳ-1：常數與一次函數」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "淡水國中公立校方康軒版九年級數學課程計畫；統計機率、函數及圖形應用定位。；f-Ⅳ-1：常數與一次函數：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=100&file=WVhSMFlXTm9MelkzTDNCMFlWOHhNamd6T1Y4MU56WXlNRFl3WHpjNE1USXpMbkJrWmc9PQ%3D%3D&fname=WSGGRPQK20QO41KKLOLK54TXXSMO25JGKLB0DCNKCCQLOO40QKTSST54WSLKUSSSROPOIHKK2004GDLOQONKTSMOOPB0FHMPQPMPNOTSUWZWXVWFH10YWFCSSWUX25HCA0UWIGVWKO40XSUSB040MPTXGDTWA0ZWUSOPTWFGTS45QKNOKK21HHDGB0JC24KK14WTIGYSEG14WSMLID30B514YWRKA434DCDGA0WWQOPP1000ZSIGMOIGDGJDLO",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「f-Ⅳ-1：常數與一次函數」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "卓蘭高中附設國中公立校方南一版九年級數學課程計畫；統計、機率與二次函數章節定位。；f-Ⅳ-1：常數與一次函數：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/378739209.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「f-Ⅳ-1：常數與一次函數」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +160,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「常數與一次函數」",
-        "body": "以「常數與一次函數」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "固定費和每分鐘費",
+        "body": "呈現共享單車的原創收費卡：開鎖 30 元、每分鐘 2 元。學生先預測騎 0、1、5 分鐘的費用，並說明哪部分固定、哪部分會隨時間改變，建立輸入輸出的語意。 再請學生圈出固定費和每分鐘費，並把分鐘與元的單位分別寫在卡片上。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「常數與一次函數」的概念架構",
-        "body": "本單元依官方課綱所列的「常數與一次函數」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "從故事到一次函數",
+        "body": "令分鐘數為 x、費用為 y，寫成 y=2x+30；把 2 標成每分鐘增加量，把 30 標成起始費。接著生成表格與座標點，讓同一規則在三種表徵中保持一致。 同時對照表格、點列與式子的同一筆資料，指出哪一個數字是輸出而不是輸入。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「f-Ⅳ-1：常數與一次函數」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用兩點讀出斜率",
+        "body": "選取 (5,40) 與 (15,60)，計算 (60−40)/(15−5)=2，說明每分鐘費用為 2；再用 y−2x 得到截距 30。代回另一個表格點，檢查不是只靠一對點猜測。 並把三個候選式各代入第二個輸入值，避免只用截距做片面判斷。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「常數與一次函數」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "找出錯誤的截距",
+        "body": "給出同一條費用線的三個候選式，學生先代入 x=0 判斷哪個保留固定費，再用另一個點檢查斜率。若只檢查一點，回饋會要求找第二個輸入值。 再設定一個容量上限，讓學生說明定義域如何由情境而非直線外觀決定。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「常數與一次函數」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "把費用換成水箱水量",
+        "body": "水箱每分鐘進水 4 公升，起始已有 10 公升；學生建立水量函數並限制時間直到容量上限。接著說明斜率、截距與定義域各自代表什麼，不能只換符號。 最後比較兩種變量設定，寫出單位改變時式子與圖軸如何重新標記。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「常數與一次函數」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "規則的適用範圍",
+        "body": "出口題請學生用一句話解釋斜率與截距，再指出若把 x 設成總費用而非分鐘數，哪個表徵需要改寫。最後標示負時間是否可接受，以及為何。 並用「數學上可代入」和「情境上可接受」兩句話分開表達。"
       }
     ],
     "summary": [
-      "先用自己的話界定「常數與一次函數」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "先命名輸入輸出與單位，再建立規則。",
+      "表格固定差、圖形斜率與式子係數是同一變化關係。",
+      "用 x=0 看截距、用兩點差商檢查斜率。",
+      "把數學規則和情境定義域分開說明。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「常數與一次函數」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "y=2x+30 中的 2 與 30 各代表什麼？",
+        "expectedEvidence": "2 是每分鐘增加費用，30 是輸入為零時的固定費。"
       },
       {
-        "prompt": "在「常數與一次函數」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "為什麼要用兩個點檢查斜率？",
+        "expectedEvidence": "一點只能檢查輸出值，兩點的差商才能確認固定變化率。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「常數與一次函數」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "租借時間為負數時如何處理？",
+        "expectedEvidence": "數學式可能可代入，但情境定義域不允許，需標示限制。"
       }
     ]
   },
@@ -188,6 +227,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『f-Ⅳ-1：一次函數把變化說成規則』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整租借分鐘數，觀察費用、斜率與固定費的文字狀態同步更新。』開始前，先回答：開鎖 30 元、每分鐘 2 元如何表示？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整租借分鐘數，觀察費用、斜率與固定費的文字狀態同步更新。』回答：如何檢查規則適用範圍？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "開鎖 30 元、每分鐘 2 元如何表示？；操作時先預測，再依『f-Ⅳ-1：一次函數把變化說成規則』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(f-Ⅳ-1：一次函數把變化說成規則)：答案 A；選項內容：y=2x+30",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。每分鐘費用乘輸入，再加上起始固定費。",
+          "feedback": "每分鐘費用乘輸入，再加上起始固定費。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "式子中的 2 如何從表格確認？；操作時先預測，再依『f-Ⅳ-1：一次函數把變化說成規則』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(f-Ⅳ-1：一次函數把變化說成規則)：答案 A；選項內容：x 每增加 1，y 固定增加 2",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。固定差是一次函數的斜率線索。",
+          "feedback": "固定差是一次函數的斜率線索。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "如何檢查規則適用範圍？；操作時先預測，再依『f-Ⅳ-1：一次函數把變化說成規則』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(f-Ⅳ-1：一次函數把變化說成規則)：答案 A；選項內容：確認時間非負且不超過營業上限",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。定義域來自情境限制，不由圖形外觀決定。",
+          "feedback": "定義域來自情境限制，不由圖形外觀決定。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；常數、一次函數與資料表徵評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以變量關係、表格與一次式描述固定變化",
+          "公開結構支持以輸入、輸出與變化關係理解函數，而非只記一條公式。"
+        ],
+        "representations": [
+          "情境、表格、座標與函數式的互相轉換"
+        ],
+        "examplesOrEvidence": [
+          "本課的租借費、表格、座標與斜率資料均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "把截距誤當斜率或混淆輸入輸出的角色"
+        ],
+        "assessmentEmphasis": [
+          "完整檢查固定差、截距、單位與定義域是否一致"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；常數、一次函數與資料表徵評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以操作和圖形表徵理解直線變化率",
+          "公開結構支持以輸入、輸出與變化關係理解函數，而非只記一條公式。"
+        ],
+        "representations": [
+          "點列、直線、差商與文字敘述的同步呈現"
+        ],
+        "examplesOrEvidence": [
+          "本課的租借費、表格、座標與斜率資料均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "只看一個點判斷整條規則或忽略圖形刻度"
+        ],
+        "assessmentEmphasis": [
+          "操作後完整解釋斜率和圖形變化如何互相支持"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；常數、一次函數與資料表徵評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "在生活資料中判斷函數規則與適用範圍",
+          "公開結構支持以輸入、輸出與變化關係理解函數，而非只記一條公式。"
+        ],
+        "representations": [
+          "費用、時間、起始量與限制條件的情境表徵"
+        ],
+        "examplesOrEvidence": [
+          "本課的租借費、表格、座標與斜率資料均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "忽略負輸入或把公式外推到不合理範圍"
+        ],
+        "assessmentEmphasis": [
+          "評估模型選擇、單位與定義域說明是否完整"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持以輸入輸出與固定變化理解一次函數。",
+      "表格、圖形與式子應互相轉換並保持單位意義。",
+      "斜率、截距與定義域都需要回到情境解釋。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯代數與表格基礎；康軒較突顯圖形、操作與差商；翰林較突顯生活模型、單位與適用範圍。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以共享單車的固定費與每分鐘費用建立函數。",
+      "加入一點不足以驗證規則的錯誤診斷。",
+      "以水箱容量限制轉移到定義域判斷。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計一次函數的變化、表徵與限制。正文、例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

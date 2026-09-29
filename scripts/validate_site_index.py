@@ -37,6 +37,8 @@ def main() -> int:
         if len(lesson.get("questionPaths", [])) < 10:
             errors.append(f"lesson has fewer than 10 active question paths: {lesson_id}")
         for question_path in lesson.get("questionPaths", []):
+            if question_path.startswith("questions/generated/"):
+                errors.append(f"quarantined generated question exposed: {question_path}")
             question = read_json(ROOT / question_path)
             if question.get("reviewStatus") == "deprecated":
                 errors.append(f"deprecated question exposed: {question.get('id')}")

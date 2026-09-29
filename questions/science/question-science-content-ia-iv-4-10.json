@@ -2,23 +2,23 @@
   "id": "question-science-content-ia-iv-4-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年2月9日學校研究社的觀察中，沿海測站一週記錄到 9 次、深度約 28 km 的淺層地震，研究「Ia-Ⅳ-4：全球地震與火山的帶狀分布」時，最適當的解釋是？",
+  "prompt": "學校要把全球地震火山帶資料用於防災教學，哪種呈現最能避免學生誤解成『一定會在某日發生』？",
   "options": [
     {
       "id": "A",
-      "text": "只要沿海測站有一次地震（本週共 9 次、深度約 28 km）就能確定成因"
+      "text": "用一個火山圖示宣告全區同時噴發"
     },
     {
       "id": "B",
-      "text": "沿海測站發生 9 次地震表示所有火山都會爆發"
+      "text": "標示帶狀風險與資料來源，說明分布可提高風險判讀但不能預測精確時間"
     },
     {
       "id": "C",
-      "text": "不需沿海測站的位置、深度約 28 km 與時間資料即可判斷"
+      "text": "只顯示最嚴重案例而不標示比例尺"
     },
     {
       "id": "D",
-      "text": "應結合沿海測站的震央位置、深度約 28 km 與板塊邊界資料判讀"
+      "text": "把歷史地震日期當成下一次發生日期"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "地震成因需比對位置、深度、時間與板塊構造等證據，不能只由一次紀錄推論。 本題對應 KG「Ia-Ⅳ-4：全球地震與火山的帶狀分布」。"
+    "value": "B",
+    "explanation": "分布圖適合說明空間風險與板塊背景，不足以預測特定事件的精確時間；應同時呈現資料限制。 正確答案為選項 B：「標示帶狀風險與資料來源，說明分布可提高風險判讀但不能預測精確時間」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的全球地震、火山、板塊邊界、震源及地圖判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ia-Ⅳ-4 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ia-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ia-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "全球地震、火山、板塊邊界與地圖判讀",
+      "pattern": "取由地震深度、火山帶、海溝、海嶺與空間資料推論板塊邊界的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由地震深度、火山帶、海溝、海嶺與空間資料推論板塊邊界的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認圖表能回答的問題，再補上時間預測的不確定性與正確防災行動。",
+  "solutionSteps": [
+    "圈出地震、火山、海溝、板塊邊界與震源深度等空間證據。",
+    "先比較分布形狀與相對位置，再判斷張裂、聚合或錯動機制。",
+    "套用原理：分布圖適合說明空間風險與板塊背景，不足以預測特定事件的精確時間；應同時呈現資料限制。",
+    "排除把相關誤作必然、忽略資料限制或混淆地質作用的選項，答案為「標示帶狀風險與資料來源，說明分布可提高風險判讀但不能預測精確時間」。",
+    "回查結論是否符合圖表證據範圍，並說明觀測資料與精確預測的差異。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

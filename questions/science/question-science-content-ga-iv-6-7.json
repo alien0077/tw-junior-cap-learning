@@ -2,23 +2,23 @@
   "id": "question-science-content-ga-iv-6-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年9月25日河川觀測站的觀察中，若以 Dd 表示一對等位基因，研究「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」時，Dd 個體的基因型屬於哪一類？",
+  "prompt": "比較兩組豌豆雜交結果時，一組有 20 株、另一組有 2,000 株。若要檢查是否接近理論 3:1，哪項做法較科學？",
   "options": [
     {
       "id": "A",
-      "text": "「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」中的同型合子（兩個等位基因相同）"
+      "text": "只挑選最接近 3:1 的一組作為證據"
     },
     {
       "id": "B",
-      "text": "「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」中只有一個基因（Dd 只剩一個字母）"
+      "text": "因為理論是 3:1，所以每四株必須剛好三株高莖"
     },
     {
       "id": "C",
-      "text": "「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」中的異型合子（Dd）"
+      "text": "忽略樣本數，直接用外觀印象判斷"
     },
     {
       "id": "D",
-      "text": "「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」中不含遺傳物質（Dd 不具遺傳意義）"
+      "text": "記錄各組實際計數並比較比例，同時承認小樣本的隨機波動較大"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "Dd 含有兩個不同的等位基因，因此是異型合子。 本題對應 KG「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」。"
+    "value": "D",
+    "explanation": "3:1 是大量重複下的期望比例，不保證每四株恰好三株高莖；應記錄完整資料，並考慮樣本數造成的隨機差異。 正確答案為選項 D：「記錄各組實際計數並比較比例，同時承認小樣本的隨機波動較大」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的孟德爾實驗、遺傳比例、測交、樣本及控制變因能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ga-Ⅳ-6 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ga-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ga-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "孟德爾遺傳、機率、資料判讀與實驗設計",
+      "pattern": "取由遺傳資料、比例、控制變因和樣本大小檢查模型的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由遺傳資料、比例、控制變因和樣本大小檢查模型的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先區分理論期望與單次結果，再比較實際比例與樣本規模。",
+  "solutionSteps": [
+    "圈出親本基因型、配子、F1/F2、表現型比例或實驗控制條件。",
+    "先建立棋盤格、遺傳模型或證據比較所需的判準。",
+    "套用原理：3:1 是大量重複下的期望比例，不保證每四株恰好三株高莖；應記錄完整資料，並考慮樣本數造成的隨機差異。",
+    "逐項排除把期望比例當成必然、混淆基因型與表現型或倒置科學史的選項，答案為「記錄各組實際計數並比較比例，同時承認小樣本的隨機波動較大」。",
+    "回查題目要求的是機率推論、實驗設計、歷史證據還是現代術語，確認推理沒有超出資料。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

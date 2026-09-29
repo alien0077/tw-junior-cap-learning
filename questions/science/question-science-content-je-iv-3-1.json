@@ -2,23 +2,23 @@
   "id": "question-science-content-je-iv-3-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年9月29日校園實驗室的觀察中，將 101℃ 的金屬片放入 28℃ 的水中，研究「Je-Ⅳ-3：化學平衡與溫度、濃度的影響」時，最初的熱傳方向為何？",
+  "prompt": "可逆反應達到動態平衡時，哪項敘述正確？",
   "options": [
     {
       "id": "A",
-      "text": "由金屬片傳向水"
+      "text": "正反應與逆反應仍持續，兩者速率相等，因此宏觀濃度維持穩定"
     },
     {
       "id": "B",
-      "text": "由 28℃ 的水傳向 101℃ 金屬片"
+      "text": "所有粒子停止運動"
     },
     {
       "id": "C",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "反應物完全消失"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "只有正反應持續而逆反應停止"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,53 @@
   "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 101℃ 金屬片傳向 28℃ 的水。 本題對應 KG「Je-Ⅳ-3：化學平衡與溫度、濃度的影響」。"
+    "explanation": "動態平衡是微觀正逆反應仍進行但速率相等，宏觀濃度看起來穩定，不是靜止或完全反應。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的可逆反應、動態平衡、溫度／濃度、圖表與製程能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-je-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-je-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "可逆反應、平衡、溫度濃度與圖表判讀",
+      "pattern": "取由平衡資料、反應條件與圖表推論可逆反應變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由平衡資料、反應條件與圖表推論可逆反應變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "平衡位移、反應條件、工業與生活情境",
+      "pattern": "取從資料曲線、條件改變與製程情境判斷平衡位置及收率的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從資料曲線、條件改變與製程情境判斷平衡位置及收率的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分開微觀速率和宏觀濃度，再判斷平衡。",
+  "solutionSteps": [
+    "確認反應是可逆的。",
+    "列出正反應和逆反應都存在。",
+    "判斷兩方向速率相等。",
+    "推論宏觀濃度保持穩定而非粒子停止。",
+    "所以 A 正確。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

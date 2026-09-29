@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-7-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with permission to join at the art room?” B: “___” (「3-Ⅳ-7／理解對話主要內容」practice, 11:00)",
+  "prompt": "A: Could you share the recording from our science experiment? I want to compare the two sound readings.\nB: Sure. I’ll upload the audio file to our class folder after dinner.\nWhat is A asking B to provide?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with permission to join at the art room in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "A copy of the experiment recording."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the art room in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "A printed chart of the dinner menu."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the art room last year in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "A new science classroom."
     },
     {
       "id": "D",
-      "text": "No, the weather at the art room is sunny in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "A second experiment with louder sounds."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-7"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 3-Ⅳ-7／理解對話主要內容, item 3. This item targets 3-Ⅳ-7／理解對話主要內容, question 3."
+    "explanation": "正確答案 A。Could you share... 明確提出分享科學實驗錄音的請求；後句的 audio file 也確認了所指物品。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E8%8B%B1%E6%96%87_3.pdf",
+    "sourceLocator": "依公立國中英文段考中對話主旨、時間地點、請求、順序、態度、建議、指代與行動推論的公開命題模式獨立改寫；逐題原卷題號列於 examPatternRefs。",
+    "authoringNote": "本題情境、對話、選項、答案與繁中解析均依 3-Ⅳ-7 能力獨立重寫；公開試題僅作可追溯 pattern-only 參照，不複製原文或選項。完整內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-7"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E8%8B%B1%E6%96%87_3.pdf",
+      "title": "高雄市立國昌國中114學年度第1學期八年級第1次定期評量英文",
+      "year": "114-1",
+      "subject": "english",
+      "locator": "第15題：電話交談中處理找不到受話者並判斷可留下訊息的請求",
+      "locatorLevel": "item",
+      "observedPattern": "參照從對話辨認請求內容及後續處理方式。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期七年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第2頁第20題：依顧客點餐句回推服務人員提出的問題",
+      "locatorLevel": "item",
+      "observedPattern": "參照利用相鄰話輪核實對話所談的具體事項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "抓住請求動詞及其受詞，再用對方承諾的回應核實請求內容。",
+  "solutionSteps": [
+    "先找出 A 的請求句型 Could you share...，判斷 A 要求 B 提供某項資料。",
+    "沿著 share 往後讀，受詞是 the recording from our science experiment。",
+    "B 回答會上傳 audio file，與錄音檔相互印證。",
+    "A 正確概括請求；其他選項把錄音、圖表、地點或另做實驗混為一談。",
+    "用 compare the two sound readings 檢查目的：需要的是錄音，不是餐點或教室。"
+  ]
 }

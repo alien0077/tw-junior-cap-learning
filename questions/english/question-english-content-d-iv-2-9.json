@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-2-9",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-2／比較分類排序」task, what is the best way to prepare question 9?",
+  "prompt": "Three buses take 20, 35, and 25 minutes. A student must arrive within 30 minutes. Which buses meet the time condition?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-2／比較分類排序."
+      "text": "The 20-minute and 25-minute buses"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-2／比較分類排序."
+      "text": "All three buses"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-2／比較分類排序."
+      "text": "The 35-minute bus only"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-2／比較分類排序."
+      "text": "None of the buses"
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-2／比較分類排序, question 9."
+    "explanation": "20 與 25 分鐘不超過 30 分鐘，35 分鐘超過上限，因此選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E4%BA%8C%E8%8B%B1%E6%96%87%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "PDF第2頁第19–21題：依交通時刻表選出符合出發與行程條件的班次；本題改以行車時間上限篩選。",
+    "authoringNote": "以英語課程知識點與公立學校公開段考所呈現的資料判讀能力為參照；題幹、數據、選項、答案、解析與解題活動均獨立撰寫，未複製試卷內容。課程版本研究與全案內容審查未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E4%BA%8C%E8%8B%B1%E6%96%87%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立國昌國中110學年度第2學期二年級第1次段考英文試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第2頁第19–21題：依交通時刻表選出符合出發與行程條件的班次；本題改以行車時間上限篩選。",
+      "observedPattern": "交通表題須逐項比對條件後選出可行班次；本題的路線、分鐘數與門檻均為全新資料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "within 30 minutes 表示不超過 30 分鐘；逐一比較每班車的行車時間，保留小於或等於門檻者。",
+  "solutionSteps": [
+    "將條件翻成數學判準：所需時間 ≤ 30 分鐘。",
+    "第一班 20 分鐘，20≤30，符合。",
+    "第二班 35 分鐘，35>30，不符合；第三班 25 分鐘，25≤30，符合。",
+    "符合的是 20-minute 與 25-minute buses，選 A。",
+    "特別確認 within 包含剛好 30 分鐘；本題沒有剛好等於門檻的班次，兩班入選。"
+  ]
 }

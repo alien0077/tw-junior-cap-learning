@@ -2,23 +2,23 @@
   "id": "question-science-content-aa-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年6月9日校園實驗室的觀察中，將 76 g 食鹽溶於 499 g 水，研究「Aa：物質組成與元素週期性」時，溶液質量為何？",
+  "prompt": "元素的身分由哪項資料決定？",
   "options": [
     {
       "id": "A",
-      "text": "423 g"
+      "text": "原子序，也就是質子數"
     },
     {
       "id": "B",
-      "text": "37924 g"
+      "text": "中子數一定相同"
     },
     {
       "id": "C",
-      "text": "575 g"
+      "text": "電子層數一定相同"
     },
     {
       "id": "D",
-      "text": "499 g"
+      "text": "樣品的外觀顏色"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：76＋499＝575 g。 本題對應 KG「Aa：物質組成與元素週期性」。"
+    "value": "A",
+    "explanation": "元素的原子序等於質子數；中子數可因同位素不同，電子數可因離子化改變，因此不能以兩者單獨決定元素身分。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究元素符號、原子與離子、週期表及化學式判讀方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.klm.kh.edu.tw/upload/310/101_83606/114-1-3%E8%87%AA8A.pdf",
+    "sourceLocator": "高雄市立蚵寮國民中學114學年度第一學期第三次定期評量八年級自然科試題：PDF第3頁第30題（由鋰原子結構及質子數判讀元素符號）；新北市立八里國民中學110學年度第一學期八年級自然科補考題庫：PDF第3頁第40題（依元素表示法判讀原子序、質子數及質量數）；新北市立錦和高級中學113學年度第二學期國中部八年級自然科補考題庫：PDF第4頁第44題（辨認原子核與原子內基本粒子）；僅供 pattern-only 原創改寫。",
+    "authoringNote": "依三所公立學校原卷的題目能力方向獨立改寫；未複製題幹、圖示、選項或答案。答案與五步推理已逐項核對；全庫第二輪內容／版權審查仍未完成。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-aa"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-science-content-aa",
+  "examPatternRefs": [
+    {
+      "url": "https://www.klm.kh.edu.tw/upload/310/101_83606/114-1-3%E8%87%AA8A.pdf",
+      "title": "高雄市立蚵寮國民中學114學年度第一學期第三次定期評量八年級自然科試題",
+      "year": "114學年度",
+      "subject": "science",
+      "locator": "PDF第3頁第30題",
+      "locatorLevel": "item",
+      "pattern": "原卷PDF第3頁第30題考查：由鋰原子結構及質子數判讀元素符號。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "observedPattern": "原卷PDF第3頁第30題考查：由鋰原子結構及質子數判讀元素符號。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.pljhs.ntpc.edu.tw/var/file/0/1000/attach/86/pta_4170_158052_68738.pdf",
+      "title": "新北市立八里國民中學110學年度第一學期八年級自然科補考題庫",
+      "year": "110學年度",
+      "subject": "science",
+      "locator": "PDF第3頁第40題",
+      "locatorLevel": "item",
+      "pattern": "原卷PDF第3頁第40題考查：依元素表示法判讀原子序、質子數及質量數。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "observedPattern": "原卷PDF第3頁第40題考查：依元素表示法判讀原子序、質子數及質量數。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.jhsh.ntpc.edu.tw/var/file/0/1000/attach/77/pta_22725_1030925_35628.pdf",
+      "title": "新北市立錦和高級中學113學年度第二學期國中部八年級自然科補考題庫",
+      "year": "113學年度",
+      "subject": "science",
+      "locator": "PDF第4頁第44題",
+      "locatorLevel": "item",
+      "pattern": "原卷PDF第4頁第44題考查：辨認原子核與原子內基本粒子。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "observedPattern": "原卷PDF第4頁第44題考查：辨認原子核與原子內基本粒子。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "以質子數／原子序判定元素，再排除不具元素識別力的資料。",
+  "solutionSteps": [
+    "先辨認題目問的是元素身分，而非粒子的電荷或質量。",
+    "原子序定義為原子核中的質子數，因此是識別元素的依據。",
+    "中子數改變會形成同位素，元素種類仍不變。",
+    "電子數改變會形成離子，原子序也不因此改變。",
+    "所以唯一直接決定元素身分的是 A：原子序（質子數）。"
+  ]
 }

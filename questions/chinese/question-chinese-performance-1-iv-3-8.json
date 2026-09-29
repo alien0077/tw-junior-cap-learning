@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-1-iv-3-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "聆聽辯論時，如何判斷一項理由是否有效？",
+  "prompt": "增加社團時間的提案遇到清潔人員可能加班的疑慮；哪個回應最有邏輯？",
   "options": [
     {
       "id": "A",
-      "text": "檢查理由是否與主張相關，且有足夠、可信的證據支持"
+      "text": "把加班時數與清潔需求列入成本，提出試辦和調整時段方案"
     },
     {
       "id": "B",
-      "text": "只看發言者音量是否最大"
+      "text": "反方不喜歡社團，不必理會"
     },
     {
       "id": "C",
-      "text": "因為說得很快就視為有道理"
+      "text": "只重複社團很重要，不處理加班"
     },
     {
       "id": "D",
-      "text": "只計算發言次數"
+      "text": "把反方意見從紀錄刪掉"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-1-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "理由的有效性取決於與主張的關聯及證據品質，不由音量、速度或次數決定。"
+    "explanation": "反方指出的是執行成本；有邏輯的回應承認限制、補入資料並提出可檢驗的修正。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究聆聽邏輯、證據與問題解決判讀題型（理由評估）；課綱 1-Ⅳ-3：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究主張／理由、因果界線、條件、反例、方案比較與試辦修正。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文聆聽與溝通表現 Ab-Ⅳ-3 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-1-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-1-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口語論證、理由與證據",
+      "observedPattern": "公立學校國文評量以口頭提案的主張／理由、因果界線、條件分支、反例、方案比較、反方成本與試辦修正要求邏輯聆聽；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "邏輯聆聽、條件與反例",
+      "observedPattern": "公立學校國文評量以口頭提案的主張／理由、因果界線、條件分支、反例、方案比較、反方成本與試辦修正要求邏輯聆聽；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先準確重述疑慮，再估算成本，最後提出小規模試辦與評估指標。",
+  "solutionSteps": [
+    "讀題定位：圈出「回應反方成本」與主張、理由、條件、反例、方案、成本或資料範圍。",
+    "拆解邏輯：把聽到的句子改成主張—證據—限制鏈，再依「反方指出的是執行成本；有邏輯的回應承認限制、補入資料並提出可檢驗的修正。」檢查跳躍。",
+    "核對正解：選項 A 能保留原說話者的條件與未知，且提出可執行或可檢查的判斷。",
+    "排除誘答：檢查是否把一次資料推成普遍因果、忽略反方成本，或只用口號與人氣作決策。",
+    "回讀驗證：確認問題定義、證據範圍、受影響者與修正步驟彼此相連。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

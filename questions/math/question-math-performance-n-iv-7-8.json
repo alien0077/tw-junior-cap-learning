@@ -2,41 +2,84 @@
   "id": "question-math-performance-n-iv-7-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "某人每月存款依序為 100、150、200、…… 元，若每月增加固定金額，第 6 個月存款為何？",
+  "prompt": "數列以 a₁=5、aₙ₊₁=aₙ+3 定義，a₆ 為何？",
   "options": [
     {
       "id": "A",
-      "text": "450 元"
+      "text": "17"
     },
     {
       "id": "B",
-      "text": "300 元"
+      "text": "20"
     },
     {
       "id": "C",
-      "text": "350 元"
+      "text": "23"
     },
     {
       "id": "D",
-      "text": "400 元"
+      "text": "25"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-n-iv-7"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "這是首項 100、公差 50 的等差數列，第 6 項＝100＋5×50＝350 元。"
+    "value": "B",
+    "explanation": "每次增加 3，a₆=5+5×3=20，正確答案為 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考等差數列、等比數列、公差、公比、通項、等差中項、級數和與生活情境題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "數列等差等比單元實質改寫；已重新計算公差、公比、項值、等差中項、級數和與生活情境答案，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供數列、等差／等比與規律推理能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數與量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-7"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "數列規律、等差數列、等比數列、通項、遞迴、前 n 項和與生活排列情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常從連續資料辨認規律，要求用公差／公比推算項次或總和，再轉到排列與成長情境；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "數列規律、等差數列、等比數列、通項、遞迴、前 n 項和與生活排列情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常從連續資料辨認規律，要求用公差／公比推算項次或總和，再轉到排列與成長情境；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把遞迴規則展開，或辨認為首項 5、公差 3 的等差數列。",
+  "solutionSteps": [
+    "由 a₁=5 開始。",
+    "a₂=8、a₃=11。",
+    "繼續得到 a₄=14、a₅=17。",
+    "再加 3 得 a₆=20。",
+    "所以選 B。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-4-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-4／理解簡易圖表」notice for the library, item 7: “Please use the north entrance.” What does it tell people?",
+  "prompt": "A science center is open Monday–Friday from 9:00 a.m. to 5:00 p.m. and on weekends from 10:00 a.m. to 4:00 p.m. It is Sunday, 9:40 a.m. Which conclusion is supported?",
   "options": [
     {
       "id": "A",
-      "text": "For item 7 in the 3-Ⅳ-4／理解簡易圖表 notice, Visitors should enter from the north side."
+      "text": "It closed at 9:00 a.m."
     },
     {
       "id": "B",
-      "text": "For item 7 in the 3-Ⅳ-4／理解簡易圖表 notice, Visitors should climb to the roof."
+      "text": "The weekday schedule applies because it is before noon."
     },
     {
       "id": "C",
-      "text": "For item 7 in the 3-Ⅳ-4／理解簡易圖表 notice, Visitors should wait in the parking office."
+      "text": "It will stay open until 5:00 p.m. today."
     },
     {
       "id": "D",
-      "text": "For item 7 in the 3-Ⅳ-4／理解簡易圖表 notice, Visitors should leave through the river."
+      "text": "It has not opened yet; the Sunday opening time is 10:00 a.m."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,39 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-4／理解簡易圖表, question 7."
+    "value": "D",
+    "explanation": "Sunday uses the weekend row, which begins at 10:00 a.m. Since it is 9:40 a.m., the center has not opened yet. The weekday hours do not apply."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1753839175199ERtbxbag.pdf",
+    "sourceLocator": "PDF第3頁第53題：依星期及當下時刻判斷距離開放時間",
+    "authoringNote": "依公立學校公開段考的圖表／時刻表判讀能力模式獨立創作；原始情境、資料、題幹、選項、答案與解析均重新撰寫，僅作 pattern-only 參照。仍待完整內容與版權 QA。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1753839175199ERtbxbag.pdf",
+      "title": "臺北市立內湖國中113學年度第二學期七年級第三次段考英語科試題卷",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF第3頁第53題：依星期及當下時刻判斷距離開放時間",
+      "observedPattern": "先辨認平日與週末不同開放時段，再依對話中的星期及現在時間推斷可否入場；本題改寫成全新場館與時刻。",
+      "pattern": "先辨認平日與週末不同開放時段，再依對話中的星期及現在時間推斷可否入場；本題改寫成全新場館與時刻。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "別用時間先後取代星期分類；選到正確欄後，才判斷現在是未開、營業中或已關門。",
+  "solutionSteps": [
+    "先確定 today is Sunday，選用 weekends 的時段。",
+    "週末開放時間是 10:00 a.m.–4:00 p.m.。",
+    "現在 9:40 a.m. 比開門時間早 20 分鐘。",
+    "因此尚未開放；C 把平日 5:00 p.m. 套到星期日。",
+    "答案 D。先選對日別資料，再比較目前時間。"
+  ]
 }

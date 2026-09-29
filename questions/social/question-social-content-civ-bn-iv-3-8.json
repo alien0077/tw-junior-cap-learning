@@ -2,41 +2,76 @@
   "id": "question-social-content-civ-bn-iv-3-8",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2021年10月5日校園公民論壇的資料中，社區有 140 萬元預算處理「公 Bn-Ⅳ-3：自願交易對雙方的利益」，居民意見不同。哪項決策方式較適當？",
+  "prompt": "小店只有一個供應商，且急著交貨；供應商延遲可能使小店損失。分析成交條件時應？",
   "options": [
     {
       "id": "A",
-      "text": "只採納聲量最大者且不公開資料"
+      "text": "比較雙方替代方案、時間壓力、資訊與議價能力，不能只看雙方最後簽約"
     },
     {
       "id": "B",
-      "text": "先決定結果再挑選支持數據"
+      "text": "只要雙方簽約，議價能力就一定相等"
     },
     {
       "id": "C",
-      "text": "公開「公 Bn-Ⅳ-3：自願交易對雙方的利益」方案、成本與受影響對象，蒐集意見後依規則決定"
+      "text": "小店急需交貨表示成交價必然對小店有利"
     },
     {
       "id": "D",
-      "text": "排除少數受影響居民以加快決定"
+      "text": "供應商掌握商品就不需遵守任何約定"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-civ-bn-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "公共決策應資訊公開、納入受影響者並說明規則與取捨。 本題對應 KG「公 Bn-Ⅳ-3：自願交易對雙方的利益」。"
+    "value": "A",
+    "explanation": "利益分配會受到外部選項與急迫性影響，成交不代表談判條件對稱。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf",
+    "sourceLocator": "國立卓蘭高中附設國中部公開社會課程計畫；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方課綱、單元 KG、三個公立學校公開來源的題型方向，獨立改寫交易剩餘、保留價格、替代方案、資訊不對稱、交易成本、主觀價值、外部影響、議價能力、價格與利益及資料界線；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-civ-bn-iv-3"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-civ-bn-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "生活交易與選擇",
+      "observedPattern": "公立學校社會科公開試題以生活交易、價格、資訊、選擇與多重資料考查經濟推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "價格、資訊與交易公平",
+      "observedPattern": "公立學校社會科公開試題以生活交易、價格、資訊、選擇與多重資料考查經濟推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認交易雙方的需求與可接受條件，再比較成交前後的主觀價值與交易剩餘，檢查資訊、替代方案、成本、議價能力與第三人影響。",
+  "solutionSteps": [
+    "讀題定位：圈出「議價能力」以及買方、賣方、保留價格、資訊、替代方案、成本與第三人。",
+    "整理交易：比較交易前後主觀價值、價格、剩餘、交易成本、風險與公平條件；本題核心是「利益分配會受到外部選項與急迫性影響，成交不代表談判條件對稱。」",
+    "核對正解：選項 A「比較雙方替代方案、時間壓力、資訊與議價能力，不能只看雙方最後簽約」能說明雙方利益或需要查證的限制。",
+    "排除誘答：找出把成交等同公平、把價格等同利益、把雙方同意等同社會總利益或忽略資訊與外部影響的說法。",
+    "結論回查：確認答案區分個人交易利益、社會影響與資料不足，不過度外推。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

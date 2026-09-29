@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-iv-2-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "劇本在人物姓名後列出說話內容，這種格式主要有何作用？",
+  "prompt": "下列哪一組最能支持文本具有劇本特徵？",
   "options": [
     {
       "id": "A",
-      "text": "標示發言者與台詞"
+      "text": "大量內心獨白與作者旁白。"
     },
     {
       "id": "B",
-      "text": "交代作者生平"
+      "text": "角色姓名、對白，以及場景或動作提示。"
     },
     {
       "id": "C",
-      "text": "列出故事年代"
+      "text": "反覆分行和押韻。"
     },
     {
       "id": "D",
-      "text": "說明舞台造價"
+      "text": "統計數字與資料來源。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "劇本格式需讓演員與讀者清楚辨識發言者和台詞。"
+    "value": "B",
+    "explanation": "劇本主要依角色對白、角色標示、場景與動作提示供演出使用；B 的線索具體且可在文本檢查。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "新詩、現代散文、現代小說與劇本閱讀能力；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究新詩、散文、小說、劇本的形式證據、視角與表達功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫現代文學文體題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文體與篇章理解",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "現代文學形式與閱讀判讀",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找文本是否為舞台行動提供可執行資訊，再區分小說旁白、新詩節奏與說明資料。",
+  "solutionSteps": [
+    "角色姓名與對白指出誰在現場說話。",
+    "場景和動作提示提供演出時的空間與行動。",
+    "B 同時包含劇本的語言和舞台證據。",
+    "A、C、D 分別指向敘事抒情、詩歌形式或說明文本。",
+    "想像刪去場景提示後的排演困難，確認它的劇本功能。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

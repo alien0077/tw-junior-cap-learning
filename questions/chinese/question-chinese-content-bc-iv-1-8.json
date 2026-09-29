@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-iv-1-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "報告指出『受訪的 30 人中有 18 人選擇步行』，下列哪個結論不超出資料？",
+  "prompt": "問題解決段落先寫『校門口積水』，再依序列出排水孔堵塞、落葉堆積與地勢低窪，最後提出清理與改善坡度。這種組織最清楚地呈現？",
   "options": [
     {
       "id": "A",
-      "text": "這 30 位受訪者中，60% 選擇步行"
+      "text": "問題、可能原因與對應方案"
     },
     {
       "id": "B",
-      "text": "全市居民都偏好步行"
+      "text": "人物心情與回憶"
     },
     {
       "id": "C",
-      "text": "步行必定比所有交通方式安全"
+      "text": "景物由近到遠的描寫"
     },
     {
       "id": "D",
-      "text": "所有學生明年都會改走路"
+      "text": "不相關的資料堆疊"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "18÷30=60%，且結論明確限定在 30 位受訪者內。"
+    "explanation": "段落先界定問題，再列出可能原因，最後提出相應方案，形成問題解決的因果鏈。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究邏輯、客觀、理性說明能力方向（資料範圍與結論）；另以官方語文領域課綱核對 Bc-Ⅳ-1（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究觀察、定義、因果證據、外推與問題解決。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫邏輯客觀理性說明題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文資料、推論與客觀表述",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "因果證據、定義與理性說明",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "為每個句子標註問題、原因或方案，再檢查是否有對應關係。",
+  "solutionSteps": [
+    "找出校門口積水這個核心問題。",
+    "把堵塞、落葉與地勢歸為可能原因。",
+    "將清理和改善坡度連回原因。",
+    "A 能概括段落組織。",
+    "若刪掉原因清單，檢查方案是否變得缺少依據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

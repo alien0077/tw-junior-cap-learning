@@ -2,23 +2,23 @@
   "id": "question-science-content-ing-iv-5-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年1月24日校園實驗室的觀察中，連續觀察「INg-Ⅳ-5：生物活動與環境改變的相互影響」5 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "蚯蚓活動增加使土壤孔隙變多、入滲改善，哪個後續結果最合理？",
   "options": [
     {
       "id": "A",
-      "text": "連續5天研究「INg-Ⅳ-5：生物活動與環境改變的相互影響」並觀察到個體在一段時間內生長並能重複驗證"
+      "text": "蚯蚓會讓所有土地立刻變成森林"
     },
     {
       "id": "B",
-      "text": "研究「INg-Ⅳ-5：生物活動與環境改變的相互影響」時只依樣本的顏色（未記錄5天的時間與條件）"
+      "text": "土壤孔隙與植物根系完全無關"
     },
     {
       "id": "C",
-      "text": "研究「INg-Ⅳ-5：生物活動與環境改變的相互影響」時只依樣本的名稱推測，不進行觀察"
+      "text": "土壤水分與植物生長可能改善，但仍需檢查降雨、養分與其他土壤生物"
     },
     {
       "id": "D",
-      "text": "研究「INg-Ⅳ-5：生物活動與環境改變的相互影響」時只觀察一次外形，便排除所有其他證據"
+      "text": "只要蚯蚓多就能證明沒有任何污染"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,54 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「INg-Ⅳ-5：生物活動與環境改變的相互影響」。"
+    "value": "C",
+    "explanation": "土壤生物可能改變孔隙與物質循環，進而影響水分和植物；但結果仍受降雨、養分與污染等因素影響。 正確答案為選項 C：「土壤水分與植物生長可能改善，但仍需檢查降雨、養分與其他土壤生物」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的生物活動、環境改變、水質、生態回饋及調查設計能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向保留並核對單元專屬改寫；題幹、選項、答案、解析與五步解法均未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ing-iv-5"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ing-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "生物活動、環境改變、交互作用與生態資料判讀",
+      "pattern": "取由生物作用與環境指標的連續變化推論相互影響與回饋的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生物作用與環境指標的連續變化推論相互影響與回饋的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生態系、生物活動、水質與環境資料",
+      "pattern": "取從圖表、實驗與生活環境資料判斷生物—環境因果及替代解釋的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從圖表、實驗與生活環境資料判斷生物—環境因果及替代解釋的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開觀察生物活動造成的土壤變化與植物反應，並列出替代因素。",
+  "solutionSteps": [
+    "圈出先發生的生物活動、環境條件變化、後續生物反應與可能回饋。",
+    "檢查是否有對照、時間序列、多項指標與替代解釋。",
+    "套用本題原理：土壤生物可能改變孔隙與物質循環，進而影響水分和植物；但結果仍受降雨、養分與污染等因素影響。",
+    "排除只看單一外觀、把相關當唯一因果或忽略回饋的選項，答案為「土壤水分與植物生長可能改善，但仍需檢查降雨、養分與其他土壤生物」。",
+    "回查系統圖是否同時涵蓋生物、非生物、尺度與管理後續。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

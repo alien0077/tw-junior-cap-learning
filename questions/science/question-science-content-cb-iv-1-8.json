@@ -2,41 +2,67 @@
   "id": "question-science-content-cb-iv-1-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年3月4日校園實驗室的觀察中，將 78 g 食鹽溶於 338 g 水，研究「Cb-Ⅳ-1：分子與原子」時，溶液質量為何？",
+  "prompt": "粒子模型中用不同顏色表示不同原子。若一個粒子含一黑兩白三個球，且每個粒子都相同，最合理的判斷是？",
   "options": [
     {
       "id": "A",
-      "text": "260 g"
+      "text": "它一定是兩種物質隨意混合"
     },
     {
       "id": "B",
-      "text": "26364 g"
+      "text": "它是由兩種元素固定比例組成的化合物分子"
     },
     {
       "id": "C",
-      "text": "338 g"
+      "text": "它只代表一種元素的原子"
     },
     {
       "id": "D",
-      "text": "416 g"
+      "text": "顏色直接代表實際原子的外觀"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cb-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：78＋338＝416 g。 本題對應 KG「Cb-Ⅳ-1：分子與原子」。"
+    "value": "B",
+    "explanation": "不同顏色代表不同元素模型，而每個粒子都有固定的一黑兩白，表示不同元素以固定比例結合，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的原子分子、化學式與粒子模型能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Cb-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cb-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子、分子、元素、化合物、化學式與原子守恆判讀",
+      "pattern": "取由粒子模型、化學式與原子種類數量推論物質組成的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由粒子模型、化學式與原子種類數量推論物質組成的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先看單一粒子是否固定組合，再區分化合物和混合物。",
+  "solutionSteps": [
+    "顏色只當作模型符號，不當作真實外觀。",
+    "粒子含兩種顏色，表示兩種元素。",
+    "每個粒子的組成比例相同。",
+    "固定結合的不同元素可表示化合物。",
+    "所以選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

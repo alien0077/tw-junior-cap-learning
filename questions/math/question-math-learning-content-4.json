@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "6²+8²=10²，為直角三角形；面積為 6×8÷2=24。"
+    "explanation": "6²+8²=10²，為直角三角形；面積為 6×8÷2=24。正確答案為選項 A：「24」。最後把這個選項放回題幹，確認它同時符合題目條件與本單元判準。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級數學科試題卷；僅研究公開題型與能力方向，本題為獨立改編，非原題重製。另以官方數學課綱核對範圍（https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf）。",
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "114 年國中教育會考數學科公開試題；跨年級能力／資料型態參照；原創 pattern-only 改寫，待逐題內容 QA。",
     "authoringNote": "Safe adaptation from public-exam skill patterns; no source wording, options, figures, or answer reproduced. Requires second-pass AI content review."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-learning-content"
+  "updatedAt": "2026-09-07",
+  "lessonId": "lesson-math-learning-content",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題；跨年級能力與資料型態參照；本題為原創 pattern-only 改寫",
+      "year": "114",
+      "subject": "math",
+      "locator": "114 年國中教育會考數學科公開試題；跨年級數與量、代數、資料與不確定性、函數或空間與形狀能力參照；不宣稱一對一題號對應",
+      "observedPattern": "跨年級數學公開評量的資料判讀、計算、表示轉換與推理要求；只吸收能力、資料型態與解題步驟。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究計算、表格與情境判讀的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先整理已知量與要求量，選定關係式或表示法，完成計算後再檢查單位、符號與合理性；本題以「一個三角形的三邊長為 6、8、10，則此三角形的面積為多少？」為判讀對象，先圈出條件，再用選項 A 的判準回查（對應 lesson-math-learning-content）。",
+  "solutionSteps": [
+    "讀題定位：先找出本題要判斷的核心條件與限制；題幹是「一個三角形的三邊長為 6、8、10，則此三角形的面積為多少？」。",
+    "建立本題判準：先記下題幹「一個三角形的三邊長為 6、8、10，則此三角形的面積為多少？」的要求，再用答案解析指出的核心理由「6²+8²=10²，為直角三角形；面積為 6×8÷2=24。」作為逐項比對標準。",
+    "核對正確選項 A：24。依題目解析，6²+8²=10²，為直角三角形；面積為 6×8÷2=24。",
+    "逐項核算：先檢查選項是否符合題目給的數值、符號、單位與運算順序；正解 A「24」符合「6²+8²=10²，為直角三角形；面積為 6×8÷2=24。」，其餘選項至少有一項條件不符。",
+    "最後回查：把答案 A「24」放回完整題幹「一個三角形的三邊長為 6、8、10，則此三角形的面積為多少？」，確認它同時滿足題目要求與解析理由；若條件、數字、語境或資料尺度改變，必須重新建立判準，不可只沿用答案代號。"
+  ]
 }

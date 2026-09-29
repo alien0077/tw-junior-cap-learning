@@ -1,0 +1,125 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-science-content-fa-iv-4
+  knowledgeGraphIds:
+  - kg-science-content-fa-iv-4
+  title: Fa-Ⅳ-4：大氣依溫度變化分層
+  subject: science
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: Fa-Ⅳ-4：大氣依溫度變化分層
+    curriculumIntent: 依高度—溫度趨勢辨識大氣層序，並區分剖面證據與現象成因的證據界線。
+    publisherEvidence:
+      nani: {status: pending, required: true}
+      kanghsuan: {status: pending, required: true}
+      hanlin: {status: pending, required: true}
+    fusionRule: 依可取得來源交叉整理並以自己的話撰寫；未讀到的版本章節不得宣稱已比較，公開樣本不複製原文。
+    currentEvidenceStatus: original-fusion-manuscript-written; source-coverage-is-limited-and-described-in-lesson
+  learningGoals:
+  - 依高度增加時的溫度升降趨勢辨識對流層、平流層、中氣層、增溫層的順序。
+  - 說明剖面能支持的層序判斷，並指出天氣、臭氧、流星或極光的成因仍需要哪些額外證據。
+  - 比較典型示意與假設轉折位移，區分模型假設和真實觀測。
+  prerequisites:
+  - 能讀取圖表的高度與溫度軸、單位及趨勢方向。
+  - 能區分觀察到的資料與由資料提出的解釋。
+  coreConcepts:
+  - 大氣主要分層依高度方向上的溫度趨勢變化辨識，層界為近似模型。
+  - 對流層、平流層、中氣層、增溫層依序呈現降、升、降、升的概略趨勢；本互動僅量化顯示前三段示意點，增溫層只示升溫方向。
+  - 現象位置只能作相容線索，不能單獨證成完整因果。
+  misconceptions:
+  - 用最高／最低溫點而非趨勢轉折分層。
+  - 把臭氧、流星或極光的位置線索當成充分因果證明。
+  - 把教學示意值或假設位移當成真實探空觀測。
+  contentFlow:
+  - predict：先讀高度與溫度座標、資料範圍，再預測曲線趨勢及可能的近似層界；不把預測說成觀測。
+  - observe：沿剖面逐段記錄降溫、升溫、再降溫與再升溫的方向，以趨勢轉折而非最高／最低點判讀層序。
+  - explain：用趨勢與轉折解釋四層模型，並分開說明天氣、臭氧、流星、極光的位置線索能支持什麼、成因仍缺什麼證據。
+  - manipulate：切換典型示意與假設轉折位移，操作 50／85 km 至 55／90 km 的教學假設，檢視剖面如何重繪；不得當成實測或預報。
+  - observe：遇到局部異常先標記該點，再查更大範圍及重複資料，記錄哪些觀察支持或不支持原趨勢。
+  - transfer：把趨勢轉折判準用於新剖面，寫出層序結論、證據限制，以及需要補查的觀測。
+  visualizations:
+  - 單一高度—溫度 SVG 剖面，標示軸、單位、示意點、四層名稱與溫度趨勢；沒有第二個同步表徵或即時資料表。
+  - 切換典型示意／假設轉折位移時，剖面、點位與文字說明同步重繪；以 aria-label 及說明文字交代非實測與非等比例限制。
+  interactiveBlocks:
+  - id: CUR-SCIENCE-CONTENT-FA-IV-4-I01
+    component: GuidedChoiceBlock
+    purpose: 以四題單元專屬選答檢查溫度趨勢分層、現象證據界線與模型修正判斷；相鄰的大氣剖面 simulation 是獨立模型，不冒充本元件。
+    implementation: 4 題各 3 選項、單一答案及詳解；實際 student page 由 GuidedChoiceBlock renderer 呈現；大氣剖面另由 science-earth-space 專屬 simulation renderer 呈現。
+    initialState:
+      profileScenario: baseline
+      showAnswer: false
+    studentActions:
+    - 閱讀軸標與教學示意值，再以四段趨勢判讀層序。
+    - 切換典型示意剖面與假設轉折位移，觀察第二、三轉折改變時剖面如何重繪。
+    - 以模型步驟逐一校準座標、標記轉折、交叉核對現象卡、檢查新資料。
+    - 提交預測與觀察紀錄，使用文字欄解釋模型支持與限制；資料存於瀏覽器 localStorage。
+    visualRules:
+    - 所有控制使用具可見名稱的原生 button；切換後以 aria-pressed 呈現目前情境並保留焦點。
+    - SVG 有描述趨勢、層名和非實測性質的替代名稱，圖說提供同一模型的文字解釋。
+    - 增溫層不捏造量化端點，只顯示定性升溫方向；不得把線段稱作等比例真實探空曲線。
+    - 假設情境明確標示為虛構資料，禁止解讀為真實大氣變化。
+    misconceptionChecks:
+    - id: MC-CUR-SCIENCE-CONTENT-FA-IV-4-I01
+      trigger: 以極值或現象名詞取代溫度趨勢轉折作分層判準。
+      prompt: 指出剖面上支持你畫層界的趨勢區段，並說明現象卡還缺哪一種成因資料。
+      expectedEvidence: 可定位的趨勢轉折，且能指出位置線索不能單獨證明成因。
+    feedback:
+      correct: 回饋指出溫度趨勢和現象證據各支持什麼，提醒模型層界為近似值。
+      incorrect: 互動題先顯示一次本題的單元專屬提示，鼓勵重試；本產品目前沒有分層式自適應提示引擎，不宣稱具有該功能。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: 本課以原生按鈕、aria-pressed、SVG 替代名稱和即時狀態回饋呈現大氣剖面；資料與教學內容皆單元自編。
+  capTransfer:
+    questionType: 高度—溫度新資料判讀與證據界線短答
+    stemConstraint: 以不同高度剖面或單點異常作新情境；不得僅替換名詞。
+    requiredResponse: 說明趨勢判準、近似層界及不能由單一現象推出的結論。
+    scoring: 層序與轉折判讀 1、證據界線 1、模型限制 1。
+  exitTicket:
+    prompt: 若新剖面只有一個溫度點偏離原趨勢，你會先做什麼？寫出至少一項需要補查的證據。
+    successCriteria:
+    - 不以單點直接推翻整段分層模型。
+    - 提出更長範圍、重複觀測或跨資料核對之一。
+    - 區分觀測與解釋。
+  expressionExtension:
+    applicable: false
+    task: null
+    constraint: 本自然科單元無語文表達延伸模組。
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: SVG 提供 aria-label，情境按鈕提供 aria-pressed；頁面互動和錯誤狀態以文字呈現。
+    reducedMotion: 剖面切換不依賴動畫；可逐步按鈕操作。
+  testCases:
+  - 初始剖面標示典型示意而非實測；只顯示有依據的示意點，增溫層不得虛構數值點。
+  - 鍵盤啟動假設轉折位移後，SVG、圖說和 aria-pressed 同步更新，焦點仍留在相同情境按鈕。
+  - 假設情境明確說明 50／85 km 移至 55／90 km 是教學假設，不得顯示為真實觀測或預測。
+  - 顯示的四步模型依序是讀座標、標記趨勢轉折、交叉核對現象證據、以新資料檢查模型；每步有本課專屬問題、行動與回饋。
+  - 四題互動均具三個選項、唯一答案與單元專屬解說；錯答提供本題提示，可重試，答對才可前進。
+  - 學習者可記錄預測、觀察與文字解釋；重新載入後保留，重設後清除本模型紀錄。
+  - fallback：封鎖 simulations.js 後，頁面明確告知圖形模型暫不可用；六段教材及四題鍵盤文字練習仍可操作，不得顯示空白模型或宣稱模擬成功。
+  - 在 320、375、768 CSS px 下檢查無水平溢位；鍵盤與輔助文字可讀，頁面無 JavaScript error。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查。
+  - 單元正文以既有六段教學內容呈現，學生頁不得只顯示摘要或與互動不符的虛構功能。
+  - 本規格所述操作、反饋、儲存與鍵盤行為均以自動化測試核實。
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 F、次主題 Fa；代碼 Fa-Ⅳ-4。
+    role: official-curriculum-source-of-truth
+  - url: https://fliphtml5.com/zyids/giyz/
+    locator: 第三方上傳、標示南一版本之教材簡介本，檢視頁 86–87／閱讀器 25–26；版本真實性、完整度、授權未獨立驗證。
+    role: limited-version-labelled-public-sample; not-full-chapter-evidence
+  - url: https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E5%9C%B0%E7%90%83%E7%A7%91%E5%AD%B8/%E5%A4%A7%E6%B0%A3.html
+    locator: 翰林雲端大氣關鍵詞頁；僅核對公開概念摘要，非完整章節。
+    role: publisher-public-concept-summary
+  - url: https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E5%9C%B0%E7%90%83%E7%A7%91%E5%AD%B8/%E5%B0%8D%E6%B5%81%E5%B1%A4.html
+    locator: 翰林雲端對流層關鍵詞頁；僅核對公開概念摘要，非完整章節。
+    role: publisher-public-concept-summary

@@ -4,11 +4,25 @@
   const lessons = new Map();
   const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
   const clamp = (value, min, max) => Math.max(min, Math.min(max, Number(value)));
-  const stateKey = id => storagePrefix + id;
-  const defaults = engine => ({
+  const stateKey = simulation => storagePrefix + (simulation.storageId || simulation.id);
+  const defaults = (engine, model) => {
+    if (engine === "science-earth-space" && model === "fa-iv-4-atmospheric-temperature-profile") return { profileScenario: "baseline" };
+    if (engine === "concept-explorer" && model === "ecosystem-scale-boundary") return { site: "pond", scale: "individual" };
+    if (engine === "concept-explorer" && model === "ca-iv-2-solution-identification") return { sample: "X", test: "litmus", control: "unknown", testRun: false };
+    if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
+    if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
+    if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
+    if (engine === "math-geometry" && model === "s9-1-polygon-similarity-v1") return { scaleX: 1, scaleY: 1, predictionChoice: "", predictionSubmitted: false, similarityChoice: "", similarityFeedback: "", transferChoice: "", transferFeedback: "", transferSubmitted: false };
+    if (engine === "math-geometry" && model === "s9-13-prism-surface-volume") return { prismLength: 4, predictionChoice: "", predictionSubmitted: false, designStep: 0, transferChoice: "", transferSubmitted: false };
+    if (engine === "math-geometry" && model === "s9-13-prism-surface-volume-v2") return { prismLength: 3, predictionChoice: "", predictionSubmitted: false, designStep: 0, transferChoice: "", transferSubmitted: false };
+    return ({
     "math-number-line": { n: 0 },
+    "math-inequality-range": { boundary: 12, relation: "at-least" },
     "math-algebra-balance": { addend: 3, target: 11 },
+    "math-ticket-equation": {},
+    "math-expression-lab": { x: 2 },
     "math-function-graph": { m: 1, b: 0, x: 2 },
+    "math-system-graph": { sum: 6 },
     "math-geometry": { base: 6, height: 4 },
     "math-data-lab": { a: 4, b: 7, c: 10 },
     "math-probability-lab": { trials: 20, hits: 0 },
@@ -18,32 +32,83 @@
     "science-life-system": { rate: 60, demand: 50 },
     "science-earth-space": { tilt: 23.5, position: 0 },
     "concept-explorer": { evidence: 1 },
-  }[engine] || {});
-  const read = simulation => {
-    try { return { ...defaults(simulation.engine), ...JSON.parse(localStorage.getItem(stateKey(simulation.id)) || "{}") }; }
-    catch { return defaults(simulation.engine); }
+    }[engine] || {});
   };
-  const write = (simulation, state) => localStorage.setItem(stateKey(simulation.id), JSON.stringify(state));
+  const read = simulation => {
+    const initial = simulation.ticketEquation?.initialState || {};
+    try { return { ...defaults(simulation.engine, simulation.model), ...initial, ...JSON.parse(localStorage.getItem(stateKey(simulation)) || "{}") }; }
+    catch { return { ...defaults(simulation.engine, simulation.model), ...initial }; }
+  };
+  const write = (simulation, state) => localStorage.setItem(stateKey(simulation), JSON.stringify(state));
   const label = engine => ({
-    "math-number-line": "數線操作臺", "math-algebra-balance": "代數天平", "math-function-graph": "函數圖形實驗室",
+    "math-number-line": "數線操作臺", "math-inequality-range": "不等式範圍數線", "math-algebra-balance": "代數天平", "math-ticket-equation": "票券等量模型", "math-function-graph": "函數圖形實驗室",
+    "math-system-graph": "聯立直線交點探索", "math-expression-lab": "代數式同值檢核臺",
     "math-geometry": "幾何建構臺", "math-data-lab": "資料實驗室", "math-probability-lab": "機率試驗器",
     "science-motion-lab": "力與運動實驗室", "science-energy-lab": "能量實驗室", "science-particle-lab": "粒子模型實驗室",
     "science-life-system": "生命系統模型", "science-earth-space": "地球與太空模型", "concept-explorer": "概念探索工作臺",
   }[engine] || "互動模型");
   const slider = (key, text, value, min, max, step = 1, unit = "") => `<label class="sim-control"><span>${esc(text)} <output data-sim-output="${key}">${value}${unit}</output></span><input data-sim-control="${key}" type="range" min="${min}" max="${max}" step="${step}" value="${value}" aria-label="${esc(text)}"></label>`;
+  const geometryChoices = (kind, options, selected) => `<fieldset class="sim-choice-group"><legend>選擇答案</legend>${options.map(([key,label]) => `<button type="button" data-geometry-${kind}="${key}" aria-pressed="${selected===key}">${key}. ${esc(label)}</button>`).join("")}</fieldset>`;
   const graphPoint = (x, y) => `${180 + x * 28},${130 - y * 20}`;
+  const atmosphereProfile = scenario => {
+    const shifted = scenario === "shifted";
+    const firstBoundary = shifted ? 55 : 50;
+    const secondBoundary = shifted ? 90 : 85;
+    const points = [[0, 15], [11, -56], [firstBoundary, 0], [secondBoundary, -90]];
+    const x = height => 58 + height * 3.38;
+    const y = temperature => 28 + (20 - temperature) * 2.02;
+    const path = points.map(([height, temperature], index) => `${index ? "L" : "M"}${x(height).toFixed(1)},${y(temperature).toFixed(1)}`).join(" ");
+    const layers = ["對流層", "平流層", "中氣層", "增溫層"];
+    const marks = points.map(([height, temperature]) => `<circle cx="${x(height).toFixed(1)}" cy="${y(temperature).toFixed(1)}" r="4" class="sim-marker"><title>${height} km，${temperature}°C（教學示意值）</title></circle>`).join("");
+    const svg = `<svg viewBox="0 0 430 310" role="img" aria-label="${shifted ? "假設" : "典型示意"}高度溫度剖面：曲線依序下降、上升、下降，增溫層只標定性升溫方向；非實測比例圖"><defs><marker id="atmo-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L7,3 z" fill="currentColor"/></marker></defs><line x1="58" y1="28" x2="58" y2="270" class="sim-axis"/><line x1="58" y1="270" x2="396" y2="270" class="sim-axis"/><line x1="58" y1="69" x2="396" y2="69" class="sim-axis sim-grid"/><line x1="58" y1="149" x2="396" y2="149" class="sim-axis sim-grid"/><line x1="58" y1="230" x2="396" y2="230" class="sim-axis sim-grid"/><path d="${path}" class="sim-line" fill="none"/>${marks}<path d="M${x(secondBoundary).toFixed(1)},${y(-90).toFixed(1)} L${(x(secondBoundary) + 23).toFixed(1)},${(y(-90) - 28).toFixed(1)}" class="sim-line" fill="none" marker-end="url(#atmo-arrow)"/><text x="${(x(secondBoundary) + 22).toFixed(1)}" y="${(y(-90) - 31).toFixed(1)}">升溫（定性）</text><text x="4" y="20">氣溫 °C</text><text x="320" y="300">高度 km</text><text x="42" y="74">0</text><text x="32" y="154">−40</text><text x="32" y="235">−80</text><text x="55" y="290">0</text><text x="90" y="290">10</text><text x="225" y="290">50</text><text x="360" y="290">90</text><text x="73" y="45">對流層</text><text x="130" y="45">平流層</text><text x="245" y="45">中氣層</text><text x="345" y="45">增溫層</text></svg>`;
+    const stateText = shifted
+      ? `假設情境：把第二、三個轉折由 50／85 km 移到 55／90 km，觀察層界如何跟著資料移動。這是假設資料，不代表真實大氣已發生變化。`
+      : `原創教學示意：0 km／15°C、11 km／−56°C、${firstBoundary} km／0°C、${secondBoundary} km／−90°C；其上只表示升溫方向，不外推實測數值。這不是氣象站觀測資料。`;
+    return `<section class="sim-atmos-profile" aria-label="大氣高度與溫度剖面探索"><div class="sim-actions" role="group" aria-label="選擇剖面情境"><button type="button" data-atmo-scenario="baseline" aria-pressed="${!shifted}">典型示意剖面</button><button type="button" data-atmo-scenario="shifted" aria-pressed="${shifted}">假設轉折位移</button></div><figure>${svg}<figcaption>${esc(stateText)}</figcaption></figure><p class="sim-caption">使用方式：先比對趨勢轉折，再命名四層；增溫層只呈現定性箭頭。圖中直線為概念示意，不能當成等比例的真實探空曲線。</p></section>`;
+  };
   const renderLearningDesign = (lesson, state) => {
     const design = lesson.simulation?.learningDesign;
     if (!design) return "";
     const current = Math.max(0, Math.min(design.steps.length - 1, Number(state.designStep || 0)));
     const step = design.steps[current];
     const visualLabel = design.type === "equation-transform" ? "目前表示" : "目前探索結果";
-    return `<div class="sim-design" data-design-type="${esc(design.type)}"><p><b>先預測：</b>${esc(design.predictionPrompt)}</p><div class="sim-equation-path" aria-live="polite"><div class="sim-equation-current">${esc(step.equation)}</div><p><b>${visualLabel}：</b>${esc(step.action)}</p><p>${esc(step.reason)}</p></div><div class="sim-design-steps" role="list" aria-label="單元探索步驟">${design.steps.map((item, index) => `<button type="button" data-design-step="${index}" ${index === current ? 'aria-current="step"' : ""}>${index + 1}. ${esc(item.action)}</button>`).join("")}</div><p class="sim-design-feedback" aria-live="polite">${esc(step.feedback)}</p><p><b>用證據說明：</b>${esc(design.evidencePrompt)}</p></div>`;
+    const solutionSetVisual = design.type === "inequality-solution-set" ? `<figure class="sim-inequality-proof"><svg viewBox="0 0 360 120" role="img" aria-label="數線表示 x 小於負二；負二為空心端點並向左延伸；負三成立、負二不成立、負一不成立"><line x1="24" y1="54" x2="336" y2="54" class="sim-axis"/><line x1="24" y1="54" x2="192" y2="54" class="sim-line"/><path d="M34 46 L24 54 L34 62" class="sim-line" fill="none"/><circle cx="192" cy="54" r="8" fill="white" stroke="currentColor" stroke-width="3"/><circle cx="156" cy="54" r="5" class="sim-marker"/><circle cx="228" cy="54" r="5" class="sim-marker"/><text x="156" y="92" text-anchor="middle">−3 通過</text><text x="192" y="112" text-anchor="middle">−2 邊界（不含）</text><text x="252" y="92" text-anchor="middle">−1 不通過</text><text x="192" y="24" text-anchor="middle">x＜−2</text></svg><figcaption>圖形固定對應原式 −2x＋6＞10；選不同步驟可逐行檢查推理，不是只看最後答案。</figcaption></figure>` : "";
+    return `<div class="sim-design" data-design-type="${esc(design.type)}"><p><b>先預測：</b>${esc(design.predictionPrompt)}</p><div class="sim-equation-path" aria-live="polite"><div class="sim-equation-current">${esc(step.equation)}</div><p><b>${visualLabel}：</b>${esc(step.action)}</p><p>${esc(step.reason)}</p></div>${solutionSetVisual}<div class="sim-design-steps" role="group" aria-label="單元探索步驟">${design.steps.map((item, index) => `<button type="button" data-design-step="${index}" ${index === current ? 'aria-current="step"' : ""}>${index + 1}. ${esc(item.action)}</button>`).join("")}</div><p class="sim-design-feedback" aria-live="polite">${esc(step.feedback)}</p><p><b>用證據說明：</b>${esc(design.evidencePrompt)}</p></div>`;
   };
   const renderModel = (lesson, state) => {
     const { engine } = lesson.simulation;
-    const designed = renderLearningDesign(lesson, state);
-    if (designed) return designed;
+    const designed = engine === "math-geometry" && (lesson.simulation.model.startsWith("s9-13-prism-surface-volume") || lesson.simulation.model === "s9-1-polygon-similarity-v1") ? "" : renderLearningDesign(lesson, state);
+    if (engine === "math-ticket-equation") {
+      const config = lesson.simulation.ticketEquation;
+      const count = Number(state.ticketCount);
+      const fee = Number(state.oneTimeFee);
+      const total = Number(state.totalPaid);
+      const candidate = Number(state.candidatePrice);
+      const recalculated = count * candidate + fee;
+      const validCandidate = state.candidateVerified === true && recalculated === total;
+      const controls = config.controls;
+      return `${designed}<section class="sim-ticket-equation" aria-label="票券價格方程式互動"><h5>先用候選票價檢查等式</h5><p>購買 <b>${count}</b> 張${esc(config.itemLabel)}，每張候選價格 <b>${candidate} ${esc(config.currencyLabel)}</b>，另付一次性費用 <b>${fee} ${esc(config.currencyLabel)}</b>；實付總額 <b>${total} ${esc(config.currencyLabel)}</b>。</p><p class="sim-ticket-equation-formula" aria-live="polite">${count} × x + ${fee} = ${total}</p><div class="balance" aria-label="等號兩側的金額比較"><span class="balance-pan">左側 ${recalculated} ${esc(config.currencyLabel)}</span><span aria-hidden="true">＝</span><span class="balance-pan">右側 ${total} ${esc(config.currencyLabel)}</span></div><table><caption>候選單價代回原式</caption><tbody><tr><th scope="row">票數</th><td>${count} 張</td></tr><tr><th scope="row">候選票價</th><td>${candidate} ${esc(config.currencyLabel)}／張</td></tr><tr><th scope="row">票券合計＋一次性費用</th><td>${count} × ${candidate} + ${fee} = ${recalculated} ${esc(config.currencyLabel)}</td></tr><tr><th scope="row">原紀錄總額</th><td>${total} ${esc(config.currencyLabel)}</td></tr></tbody></table><div class="sim-ticket-controls">${slider("ticketCount", controls.ticketCount.label, count, controls.ticketCount.min, controls.ticketCount.max, controls.ticketCount.step, " 張")}${slider("oneTimeFee", controls.oneTimeFee.label, fee, controls.oneTimeFee.min, controls.oneTimeFee.max, controls.oneTimeFee.step, ` ${config.currencyLabel}`)}${slider("totalPaid", controls.totalPaid.label, total, controls.totalPaid.min, controls.totalPaid.max, controls.totalPaid.step, ` ${config.currencyLabel}`)}${slider("candidatePrice", controls.candidatePrice.label, candidate, controls.candidatePrice.min, controls.candidatePrice.max, controls.candidatePrice.step, ` ${config.currencyLabel}`)}</div><button type="button" class="sim-button" data-ticket-action="check">代回檢查候選票價</button><p class="sim-ticket-feedback" aria-live="polite">${esc(state.candidateFeedback || "先調整票數、固定費或候選票價，再檢查左右是否相等。")}</p>${validCandidate ? `<div class="sim-ticket-solution"><p>候選值成立：${count} × ${candidate} + ${fee} = ${total}。因此每張${esc(config.itemLabel)}的價格是 <strong>${candidate} ${esc(config.currencyLabel)}／張</strong>。</p><p>等量理由：兩側同減 ${fee} 得 ${count}x = ${total - fee}；再兩側同除 ${count} 得 x = ${candidate} ${esc(config.currencyLabel)}／張。</p></div>` : ""}</section>`;
+    }
+    const hasDedicatedRutherfordModel = engine === "science-particle-lab" && lesson.simulation.model === "rutherford-scattering";
+    const hasDedicatedPlantTransportModel = engine === "science-life-system" && lesson.simulation.model === "plant-transport";
+    const hasDedicatedPondFoodWebModel = engine === "science-life-system" && lesson.simulation.model === "pond-food-web";
+    if (designed && !hasDedicatedRutherfordModel && !hasDedicatedPlantTransportModel && !hasDedicatedPondFoodWebModel && lesson.simulation.model !== "fa-iv-4-atmospheric-temperature-profile" && lesson.simulation.model !== "ca-iv-2-solution-identification" && lesson.simulation.model !== "ecosystem-scale-boundary" && engine !== "math-system-graph" && engine !== "math-inequality-range" && engine !== "math-expression-lab") return designed;
+    if (engine === "math-expression-lab") {
+      const x = Number(state.x);
+      const original = 3 * x + 2 + 5 * x - 7;
+      const simplified = 8 * x - 5;
+      const rows = [-2, 0, 3].map(value => `<tr><th scope="row">${value}</th><td>${3 * value + 2 + 5 * value - 7}</td><td>${8 * value - 5}</td></tr>`).join("");
+      return `${designed}<div class="sim-expression-check"><h5>同值檢驗</h5><p aria-live="polite">x=${x}；原式 3x＋2＋5x−7 = <output data-expression-original>${original}</output>；整理式 8x−5 = <output data-expression-reduced>${simplified}</output>。${original === simplified ? "兩式同值。" : "兩式不同值，請檢查分組與符號。"}</p><div class="sim-table-wrap"><table><caption>固定測試值：比較原式與整理式</caption><thead><tr><th scope="col">x</th><th scope="col">原式</th><th scope="col">整理式</th></tr></thead><tbody>${rows}</tbody></table></div>${slider("x", "測試變數 x 的值", x, -5, 5)}</div>`;
+    }
+    if (engine === "math-inequality-range") {
+      const relation = ({ "at-least": ["≥", true, "向右", "至少"], greater: ["＞", false, "向右", "超過"], "at-most": ["≤", true, "向左", "至多"], less: ["＜", false, "向左", "低於"] })[state.relation] || ["≥", true, "向右", "至少"];
+      const [symbol, inclusive, direction, phrase] = relation;
+      const x = 180 + (Number(state.boundary) - 12) * 18;
+      const start = direction === "向右" ? x : 24, end = direction === "向右" ? 336 : x;
+      const tests = [Number(state.boundary) - 1, Number(state.boundary), Number(state.boundary) + 1];
+      const qualifies = value => state.relation === "at-least" ? value >= state.boundary : state.relation === "greater" ? value > state.boundary : state.relation === "at-most" ? value <= state.boundary : value < state.boundary;
+      return `<div class="sim-stage"><p>語句：x ${phrase} ${state.boundary}　｜　符號：x ${symbol} ${state.boundary}　｜　端點：${inclusive ? "包含（實心）" : "不包含（空心）"}　｜　解集方向：${direction}</p><svg viewBox="0 0 360 120" role="img" aria-label="數線表示 x ${symbol} ${state.boundary}；${inclusive ? "端點包含" : "端點不包含"}；解集向${direction === "向右" ? "右" : "左"}延伸"><line x1="24" y1="58" x2="336" y2="58" class="sim-axis"/><line x1="${start}" y1="58" x2="${end}" y2="58" class="sim-line"/><path d="${direction === "向右" ? `M326 50 L336 58 L326 66` : `M34 50 L24 58 L34 66`}" class="sim-line" fill="none"/><circle cx="${x}" cy="58" r="9" class="sim-marker" style="fill:${inclusive ? "currentColor" : "white"};stroke:currentColor"/><text x="${x}" y="94" text-anchor="middle">${state.boundary}・${inclusive ? "含" : "不含"}</text></svg><p>邊界檢查：${tests.map(value => `${value} ${qualifies(value) ? "符合" : "不符合"}`).join("；")}</p></div><fieldset class="sim-relation"><legend>選擇文字條件（可用鍵盤操作）</legend>${[["at-least","至少"],["greater","超過"],["at-most","至多"],["less","低於"]].map(([value,label]) => `<button type="button" data-inequality-relation="${value}" aria-pressed="${state.relation === value}">${label}</button>`).join("")}</fieldset>${slider("boundary", "邊界值", state.boundary, 7, 17)}${designed || ""}`;
+    }
     if (engine === "math-number-line") {
       const n = state.n;
       return `<div class="sim-stage"><svg viewBox="0 0 360 150" role="img" aria-label="數線上目前的值是 ${n}"><line x1="24" y1="76" x2="336" y2="76" class="sim-axis"/>${[-5,-4,-3,-2,-1,0,1,2,3,4,5].map(x => `<g><line x1="${180 + x * 28}" y1="68" x2="${180 + x * 28}" y2="84" class="sim-tick"/><text x="${180 + x * 28}" y="104" text-anchor="middle">${x}</text></g>`).join("")}<circle cx="${180 + n * 28}" cy="76" r="10" class="sim-marker"/><text x="180" y="30" text-anchor="middle">位置 ${n}</text></svg></div>${slider("n", "移動位置", n, -5, 5)}`;
@@ -57,7 +122,76 @@
       const start = graphPoint(-5, state.m * -5 + state.b), end = graphPoint(5, state.m * 5 + state.b), point = graphPoint(state.x, y);
       return `<div class="sim-stage"><svg viewBox="0 0 360 260" role="img" aria-label="y 等於 ${state.m}x 加 ${state.b} 的圖形，x 等於 ${state.x} 時 y 等於 ${y}"><line x1="20" y1="130" x2="340" y2="130" class="sim-axis"/><line x1="180" y1="20" x2="180" y2="240" class="sim-axis"/><line x1="${start}" x2="${end}" class="sim-line"/><circle cx="${point.split(",")[0]}" cy="${point.split(",")[1]}" r="7" class="sim-marker"/><text x="24" y="28">y = ${state.m}x ${state.b >= 0 ? "+" : "−"} ${Math.abs(state.b)}</text><text x="24" y="50">x=${state.x}，y=${y}</text></svg></div>${slider("m", "斜率 m", state.m, -5, 5)}${slider("b", "截距 b", state.b, -8, 8)}${slider("x", "觀察 x", state.x, -5, 5)}`;
     }
+    if (engine === "math-system-graph") {
+      const sum = Number(state.sum);
+      const intersectionX = (sum + 2) / 3;
+      const intersectionY = (2 * sum - 2) / 3;
+      const mapPoint = (x, y) => `${220 + x * 24},${140 - y * 12}`;
+      const firstStart = mapPoint(-4, -10), firstEnd = mapPoint(4, 6);
+      const secondStart = mapPoint(-4, sum + 4), secondEnd = mapPoint(4, sum - 4);
+      const crossing = mapPoint(intersectionX, intersectionY);
+      const xThird = sum + 2, yThird = 2 * sum - 2;
+      return `<div class="sim-stage"><svg viewBox="0 0 440 300" role="img" aria-label="直線 2x 減 y 等於 2 與 x 加 y 等於 ${sum} 的交點為（${xThird}/3，${yThird}/3）"><line x1="40" y1="140" x2="400" y2="140" class="sim-axis"/><line x1="220" y1="20" x2="220" y2="260" class="sim-axis"/><line x1="${firstStart}" x2="${firstEnd}" class="sim-line"/><line x1="${secondStart}" x2="${secondEnd}" class="sim-line sim-line-secondary"/><circle cx="${crossing.split(",")[0]}" cy="${crossing.split(",")[1]}" r="8" class="sim-marker"/><text x="24" y="22">2x − y = 2</text><text x="24" y="44">x + y = ${sum}</text><text x="230" y="62">交點（${xThird}/3，${yThird}/3）</text></svg><p>第一條直線可由（0，−2）、（2，2）連成；交點仍要代回兩條原式確認。</p></div>${slider("sum", "第二式右側常數", sum, 3, 9, 1)}${designed}`;
+    }
     if (engine === "math-geometry") {
+      if (lesson.simulation.model === "s9-1-polygon-similarity-v1") {
+        const config = lesson.simulation.similarityModel;
+        const width = config.originalWidth, height = config.originalHeight;
+        const scaleX = Number(state.scaleX), scaleY = Number(state.scaleY);
+        const scaledWidth = width * scaleX, scaledHeight = height * scaleY;
+        const unlocked = Boolean(state.predictionSubmitted);
+        const transferWidth = config.transferWidth, transferHeight = config.transferHeight, transferScale = config.transferScale;
+        const feedback = state.similarityFeedback || "先操作水平與垂直倍率，再用兩組對應邊檢查。";
+        return `<section class="sim-similarity-lab" aria-label="多邊形等比例縮放探索"><h5>預測：兩個方向都乘同一倍率，矩形仍與原圖相似嗎？</h5><p>原圖為 ${width}×${height} 公分。先提交預測；解鎖後可分別調整水平與垂直倍率。</p><div class="sim-actions" role="group" aria-label="縮放預測">${[["yes","相似，因兩方向倍率一致"],["no","不相似，尺寸改變就不相似"]].map(([value,text]) => `<button type="button" data-sim-similarity="prediction" data-value="${value}" aria-pressed="${state.predictionChoice === value}">${esc(text)}</button>`).join("")}</div><button type="button" class="sim-button" data-sim-similarity="submit-prediction">提交預測並解鎖</button><p class="sim-status" aria-live="polite">${esc(state.predictionFeedback || "尚未提交預測。")}</p>${unlocked ? `<div class="sim-similarity-controls">${slider("scaleX","水平倍率",scaleX,config.scaleMin,config.scaleMax,config.scaleStep," 倍")}${slider("scaleY","垂直倍率",scaleY,config.scaleMin,config.scaleMax,config.scaleStep," 倍")}</div><figure><svg viewBox="0 0 360 190" role="img" aria-label="原圖 ${width} 乘 ${height} 公分；縮放圖水平倍率 ${scaleX}、垂直倍率 ${scaleY}，尺寸 ${scaledWidth} 乘 ${scaledHeight} 公分"><rect x="35" y="45" width="${width*28}" height="${height*28}" class="sim-shape"/><rect x="205" y="${130-scaledHeight*20}" width="${scaledWidth*20}" height="${scaledHeight*20}" fill="none" class="sim-line"/><text x="35" y="30">原圖 ${width}×${height}</text><text x="205" y="165">縮放圖 ${scaledWidth}×${scaledHeight}</text></svg><figcaption>矩形角仍為 90°；相似與否還須檢查對應邊倍率。</figcaption></figure><table><caption>沿邊界順序核對對應邊</caption><thead><tr><th>對應邊</th><th>原圖</th><th>縮放圖</th><th>倍率</th></tr></thead><tbody><tr><th>上／下邊</th><td>${width}</td><td>${scaledWidth}</td><td>${scaleX}</td></tr><tr><th>左／右邊</th><td>${height}</td><td>${scaledHeight}</td><td>${scaleY}</td></tr><tr><th>對應角</th><td colspan="3">四角仍為 90°；角相等不足以單獨證明相似</td></tr></tbody></table><fieldset><legend>驗證目前圖形是否相似</legend>${[["yes","相似"],["no","不相似"]].map(([value,text]) => `<button type="button" data-sim-similarity="verify" data-value="${value}" aria-pressed="${state.similarityChoice === value}">${text}</button>`).join("")}<button type="button" class="sim-button" data-sim-similarity="check">檢查倍率證據</button></fieldset><p class="sim-status" aria-live="polite">${esc(feedback)}</p><label>解釋你的判斷<textarea data-sim-reflection rows="3" placeholder="指出水平、垂直倍率及對應角的證據。">${esc(state.reflection || "")}</textarea></label><h6>遷移：${transferWidth}×${transferHeight} 公分新圖按 ${transferScale} 倍等比例縮印後，是否相似？</h6><p>比較 ${transferWidth*transferScale}÷${transferWidth} 與 ${transferHeight*transferScale}÷${transferHeight}。</p>${[["yes","相似；兩方向都是同倍率"],["no","不相似；尺寸縮小就不相似"]].map(([value,text]) => `<button type="button" data-sim-similarity="transfer" data-value="${value}" aria-pressed="${state.transferChoice === value}">${text}</button>`).join("")}<button type="button" class="sim-button" data-sim-similarity="submit-transfer">檢查遷移</button><p class="sim-status" aria-live="polite">${esc(state.transferFeedback || "先比較兩組對應邊的縮圖÷原圖。")}</p>` : "<p>提交預測後才顯示可操作的雙倍率模型；課文與文字題仍可閱讀。</p>"}</section>`;
+      }
+      if (lesson.simulation.model === "s9-13-prism-surface-volume-v2") {
+        const config = lesson.simulation.prismModel;
+        const base = config.baseTriangle;
+        const transfer = config.transfer;
+        const length = clamp(state.prismLength, config.sliderMin, config.sliderMax);
+        const area = base.legA * base.legB / 2;
+        const perimeter = base.legA + base.legB + base.hypotenuse;
+        const surface = 2 * area + perimeter * length;
+        const volume = area * length;
+        const transferArea = transfer.baseTriangle.legA * transfer.baseTriangle.legB / 2;
+        const transferPerimeter = transfer.baseTriangle.legA + transfer.baseTriangle.legB + transfer.baseTriangle.hypotenuse;
+        const transferSurface = 2 * transferArea + transferPerimeter * transfer.length;
+        const unlocked = Boolean(state.predictionSubmitted);
+        const design = lesson.simulation.learningDesign;
+        const step = design.steps[Math.max(0, Math.min(design.steps.length - 1, Number(state.designStep || 0)))];
+        const offset = Math.max(20, Math.min(64, length * 5));
+        const predictionFeedback = state.predictionFeedback || "";
+        const transferFeedback = state.transferFeedback || "";
+        const legScale = 8;
+        return `<section class="sim-prism-lab" aria-label="直角三角柱表面積與體積互動"><h5>先預測：柱長由 ${config.initialLength} cm 增至 ${config.targetLength} cm</h5><p>底面兩股 ${base.legA}、${base.legB} cm，斜邊 ${base.hypotenuse} cm。提交前公式與數值保持隱藏。</p>${geometryChoices("prediction", [["A", `表面積增加 ${area * (config.targetLength-config.initialLength)} cm²，體積增加 ${perimeter * (config.targetLength-config.initialLength)} cm³`], ["B", `表面積增加 ${perimeter * (config.targetLength-config.initialLength)} cm²，體積增加 ${area * (config.targetLength-config.initialLength)} cm³`], ["C", "表面積與體積都不變"]], state.predictionChoice)}<button type="button" class="sim-button" data-geometry-action="submit-prediction">提交預測並解鎖模型</button><p class="sim-status" aria-live="polite">${esc(predictionFeedback)}</p>${unlocked ? `<div class="sim-prism-unlocked"><nav class="sim-design-steps" aria-label="單元探索步驟">${design.steps.map((item,index)=>`<button type="button" data-design-step="${index}" ${index===Number(state.designStep||0)?'aria-current="step"':''}>${index+1}. ${esc(item.action)}</button>`).join("")}</nav><p><b>目前推理步驟：</b>${esc(step.reason)}</p><p class="sim-prism-equation" aria-live="polite">${esc(step.equation)}</p><div class="sim-prism-visuals"><figure><svg viewBox="0 0 260 190" role="img" aria-label="${base.legA}-${base.legB}-${base.hypotenuse}直角三角柱示意，柱長${length}公分"><polygon points="35,155 35,${155-base.legB*legScale} ${35+base.legA*legScale},155" class="sim-shape"/><polygon points="${35+offset},${155-offset/3} ${35+offset},${155-base.legB*legScale-offset/3} ${35+base.legA*legScale+offset},${155-offset/3}" class="sim-shape sim-line-secondary"/><line x1="35" y1="155" x2="${35+offset}" y2="${155-offset/3}" class="sim-axis"/><text x="40" y="178">${base.legA}-${base.legB}-${base.hypotenuse}</text><text x="${55+offset/2}" y="72">柱長 ${length} cm</text></svg><figcaption>兩個全等三角端面沿柱長連接。</figcaption></figure><figure><div class="sim-net" aria-label="三片側面長方形的展開表徵">${[base.legA,base.legB,base.hypotenuse].map((side)=>`<span style="min-width:${Math.max(32,side*3)}px;height:52px">邊 ${side}<br>長 ${length}</span>`).join("")}</div><figcaption>三片側面寬分別等於底面三邊；總和由周長控制。</figcaption></figure></div><table><caption>端面、側面與容量分開計算</caption><thead><tr><th>量</th><th>幾何依據</th><th>結果</th></tr></thead><tbody><tr><th>兩個端面</th><td>2×${base.legA}×${base.legB}÷2</td><td>${2*area} cm²</td></tr><tr><th>三片側面</th><td>${perimeter}×${length}</td><td>${perimeter*length} cm²</td></tr><tr><th>表面積</th><td>兩端面＋三側面</td><td><output data-prism-surface-area>${surface}</output> cm²</td></tr><tr><th>體積</th><td>${area}×${length}</td><td><output data-prism-volume>${volume}</output> cm³</td></tr></tbody></table>${slider("prismLength","直角柱長度",length,config.sliderMin,config.sliderMax,1," cm")}<p class="sim-status" aria-live="polite">${esc(step.feedback)}</p><h6>遷移題：重新求新底面的面積與周長</h6><p>底面為 ${transfer.baseTriangle.legA}-${transfer.baseTriangle.legB}-${transfer.baseTriangle.hypotenuse} 直角三角形，柱長 ${transfer.length} cm。選出表面積與體積：</p>${geometryChoices("transfer", [["A",`${transferPerimeter*transfer.length} cm²、${transferArea*transfer.length} cm³`],["B",`${transferSurface} cm²、${transferArea*transfer.length} cm³`],["C",`${transferSurface} cm²、${transferSurface} cm³`]],state.transferChoice)}<button type="button" class="sim-button" data-geometry-action="submit-transfer">檢查遷移答案</button><p class="sim-status" aria-live="polite">${esc(transferFeedback)}</p></div>` : "<p>提交預測後才會解鎖可操作的展開表徵與逐面計算。</p>"}</section>`;
+      }
+      if (lesson.simulation.model === "s9-13-prism-surface-volume") {
+        const length = clamp(state.prismLength, 3, 8);
+        const surfaceArea = 12 + 12 * length;
+        const volume = 6 * length;
+        const offsetX = 105 + length * 6;
+        const offsetY = -30;
+        const design = lesson.simulation.learningDesign;
+        const currentStep = clamp(state.designStep, 0, design.steps.length - 1);
+        const step = design.steps[currentStep];
+        const predictionOptions = [
+          ["A", "表面積增加 12 cm²，體積增加 24 cm³"],
+          ["B", "表面積增加 24 cm²，體積增加 12 cm³"],
+          ["C", "表面積與體積都不變"]
+        ];
+        const predictionFeedback = state.predictionFeedback || (state.predictionSubmitted
+          ? state.predictionChoice === "B"
+            ? "預測正確。底面仍是 3-4-5 直角三角形；柱長增加 2 cm，三片側面總面積按周長 12 cm 增加 24 cm²，體積按底面積 6 cm² 增加 12 cm³。"
+            : "預測不符。先看兩個量各自乘上的固定幾何量：側面增加量由底面周長 12 cm 決定；體積增加量由底面積 6 cm² 決定。"
+          : "提交預測後才會顯示公式與數值；先比較「每增加 1 cm 柱長」會多出多少側面面積與內部容量。");
+        const transferFeedback = state.transferFeedback || (state.transferSubmitted
+          ? state.transferChoice === "B"
+            ? "核算正確：底面積 (5×12÷2)=30 cm²，底面周長 5+12+13=30 cm；兩個端面共 60 cm²，側面共 30×2=60 cm²，表面積 120 cm²，體積 30×2=60 cm³。"
+            : "再核對一次：先算直角三角形底面積與三邊周長；表面積＝兩個底面＋底面周長×柱長，體積＝底面積×柱長。"
+          : "先獨立計算，再選一組表面積與體積。這個新截面是 5-12-13 直角三角形，柱長 2 cm。");
+        const geometryChoices = (kind, options, selected) => `<div class="sim-actions" role="group" aria-label="${kind === "prediction" ? "柱長變化預測" : "遷移題答案"}">${options.map(([key, text]) => `<button type="button" data-geometry-${kind}="${key}" aria-pressed="${selected === key}">${key}. ${esc(text)}</button>`).join("")}</div>`;
+        return `${designed}<section class="sim-prism-lab" aria-label="直角三角柱表面積與體積模型"><h5>先預測：柱長由 4 cm 增至 6 cm</h5><p>底面固定為兩股 3 cm、4 cm 的直角三角形。提交前先選擇變化量；公式和計算結果會暫時隱藏。</p>${geometryChoices("prediction", predictionOptions, state.predictionChoice)}<button type="button" class="sim-button" data-geometry-action="submit-prediction">提交預測並解鎖模型</button><p class="sim-status" aria-live="polite">${esc(predictionFeedback)}</p>${state.predictionSubmitted ? `<div class="sim-prism-unlocked"><nav class="sim-design-steps" aria-label="單元探索步驟">${design.steps.map((item, index) => `<button type="button" data-design-step="${index}" ${index === currentStep ? 'aria-current="step"' : ""}>${index + 1}. ${esc(item.action)}</button>`).join("")}</nav><p><b>目前推理步驟：</b>${esc(step.reason)}</p><p class="sim-prism-equation" aria-live="polite">${esc(step.equation)}</p><div class="sim-prism-visuals"><figure><svg viewBox="0 0 360 205" role="img" aria-label="直角三角柱立體示意；前後兩個 3、4、5 直角三角底面相隔 ${length} 公分"><polygon points="42,150 42,70 112,150" class="sim-shape"/><polygon points="${42 + offsetX},${150 + offsetY} ${42 + offsetX},${70 + offsetY} ${112 + offsetX},${150 + offsetY}" class="sim-shape sim-line-secondary"/><polygon points="42,150 42,70 ${42 + offsetX},${70 + offsetY} ${42 + offsetX},${150 + offsetY}" class="sim-line"/><polygon points="42,70 112,150 ${112 + offsetX},${150 + offsetY} ${42 + offsetX},${70 + offsetY}" class="sim-dash"/><polygon points="112,150 42,150 ${42 + offsetX},${150 + offsetY} ${112 + offsetX},${150 + offsetY}" class="sim-line-secondary"/><line x1="42" y1="150" x2="${42 + offsetX}" y2="${150 + offsetY}" class="sim-axis"/><text x="52" y="185">底面 3-4-5</text><text x="${60 + offsetX / 2}" y="120">柱長 ${length} cm</text></svg><figcaption>前、後兩個三角底面；三個側面沿柱長延伸。</figcaption></figure><figure><svg viewBox="0 0 360 180" role="img" aria-label="三角柱展開圖由兩個 3、4、5 直角三角形和寬 3、4、5 公分、長 ${length} 公分的三個長方形組成"><rect x="58" y="70" width="48" height="${length * 8}" class="sim-shape"/><rect x="106" y="70" width="64" height="${length * 8}" class="sim-line"/><rect x="170" y="70" width="80" height="${length * 8}" class="sim-dash"/><polygon points="106,70 170,70 106,22" class="sim-line-secondary"/><polygon points="106,${70 + length * 8} 170,${70 + length * 8} 106,${118 + length * 8}" class="sim-line-secondary"/><text x="70" y="${84 + length * 8}">3</text><text x="132" y="${84 + length * 8}">4</text><text x="204" y="${84 + length * 8}">5</text><text x="258" y="90">長方形高＝${length} cm</text><text x="107" y="16">兩個全等三角底面</text></svg><figcaption>展開圖中的三個長方形寬依序是底面三邊 3、4、5 cm。</figcaption></figure></div><div class="sim-table-wrap"><table><caption>逐面計算與內部容量同步對照</caption><thead><tr><th scope="col">量</th><th scope="col">幾何依據</th><th scope="col">代入柱長 ${length} cm</th><th scope="col">結果</th></tr></thead><tbody><tr><th scope="row">兩個三角底面</th><td>2×(3×4÷2)</td><td>12</td><td>12 cm²</td></tr><tr><th scope="row">三個側面</th><td>(3+4+5)×柱長</td><td>12×${length}</td><td>${12 * length} cm²</td></tr><tr><th scope="row">表面積</th><td>兩底面＋側面</td><td>12+12×${length}</td><td><output data-prism-surface-area>${surfaceArea}</output> cm²</td></tr><tr><th scope="row">體積</th><td>底面積×柱長</td><td>6×${length}</td><td><output data-prism-volume>${volume}</output> cm³</td></tr></tbody></table></div>${slider("prismLength", "直角柱長度", length, 3, 8, 1, " cm")}<p class="sim-caption">調整柱長後，立體示意、展開圖、側面總和、表面積和體積同步更新。這裡只呈現課綱範圍內的直角柱體積，不外推圓錐或角錐體積。</p><p class="sim-status" aria-live="polite">${esc(step.feedback)}</p><h6>遷移題：換成不同底面</h6><p>一個直角柱的底面是兩股 5 cm、12 cm、斜邊 13 cm 的直角三角形，柱長 2 cm。哪組是「表面積、體積」？</p>${geometryChoices("transfer", [["A", "90 cm²、60 cm³"], ["B", "120 cm²、60 cm³"], ["C", "120 cm²、120 cm³"]], state.transferChoice)}<button type="button" class="sim-button" data-geometry-action="submit-transfer">檢查遷移答案</button><p class="sim-status" aria-live="polite">${esc(transferFeedback)}</p></div>` : "<p>提交一項預測後，才會解鎖可操作的展開圖與數值表。</p>"}</section>`;
+      }
       const area = state.base * state.height / 2;
       return `<div class="sim-stage"><svg viewBox="0 0 360 220" role="img" aria-label="底為 ${state.base}、高為 ${state.height} 的三角形"><polygon points="70,180 ${70 + state.base * 18},180 70,${180 - state.height * 18}" class="sim-shape"/><line x1="70" y1="${180 - state.height * 18}" x2="70" y2="180" class="sim-dash"/><text x="180" y="30" text-anchor="middle">面積 = 底 × 高 ÷ 2 = ${area}</text></svg></div>${slider("base", "底", state.base, 1, 14)}${slider("height", "高", state.height, 1, 10)}`;
     }
@@ -78,44 +212,194 @@
       return `<div class="sim-stage"><div class="sim-energy"><i style="width:${100 - state.loss}%"></i></div><p>輸入能量：${input} J；可用能量：<b>${usable}</b> J</p></div>${slider("power", "功率", state.power, 1, 30, 1, " W")}${slider("time", "時間", state.time, 1, 12, 1, " s")}${slider("loss", "損失", state.loss, 0, 80, 5, "%")}`;
     }
     if (engine === "science-particle-lab") {
+      if (lesson.simulation.model === "rutherford-scattering") {
+        const proximity = clamp(state.impactProximity, 1, 5);
+        const bend = proximity * 7;
+        const modelNote = proximity >= 4
+          ? "路徑貼近小而集中的正電區時，示意圖顯示較大的偏折；這是定性路徑，不是實驗比例。"
+          : proximity <= 2
+            ? "路徑離正電區較遠時，示意圖接近直行；真實結果仍受能量與其他條件影響。"
+            : "路徑接近程度居中，示意偏折也介於兩端；圖形不代表真實粒子比例。";
+        const nearY = 118 - bend;
+        const farY = 62 - bend * 0.12;
+        const lowerY = 142 + bend;
+        const svgLabel = `盧瑟福散射概念圖；粒子最近距離等級${proximity}，越接近正電核，示意偏折越大；路徑不按比例`;
+        return `${designed}<div class="sim-stage sim-rutherford"><svg viewBox="0 0 360 250" role="img" aria-label="${esc(svgLabel)}"><line x1="12" y1="210" x2="348" y2="210" class="sim-axis"/><circle cx="190" cy="130" r="12" class="sim-marker"/><text x="190" y="160" text-anchor="middle">集中正電區</text><path d="M20 62 Q190 ${farY} 340 62" class="sim-line sim-line-secondary" fill="none"/><path d="M20 118 Q190 ${nearY} 340 118" class="sim-line" fill="none"/><path d="M20 142 Q190 ${lowerY} 340 142" class="sim-line sim-line-secondary" fill="none"/><text x="22" y="36">入射粒子</text><text x="270" y="36">散射後方向</text></svg><p class="sim-caption">${esc(modelNote)}</p><p>觀察基準：多數粒子大致直行，少數偏轉，極少數大角度偏轉；此處只比較路徑假設，不合成或冒充原始實驗數據。</p></div>${slider("impactProximity", "粒子最近接近正電核程度（1＝遠，5＝近）", proximity, 1, 5)}<p class="sim-status" aria-live="polite">${esc(modelNote)}</p>`;
+      }
       const phase = state.temperature < 33 ? "粒子較緊密" : state.temperature < 67 ? "粒子可互相滑動" : "粒子間距較大";
       return `<div class="sim-stage"><div class="sim-particles" style="--particle-space:${state.spacing * 2}px;--particle-motion:${Math.max(.2, 1 - state.temperature / 120)}s">${Array.from({ length: 24 }, (_, i) => `<i style="--i:${i}"></i>`).join("")}</div><p>${phase}；這是用來比較變因改變的粒子模型。</p></div>${slider("temperature", "溫度條件", state.temperature, 0, 100, 1, "%")}${slider("spacing", "初始間距", state.spacing, 1, 8)}`;
     }
     if (engine === "science-life-system") {
       if (lesson.simulation.model === "circulation" && window.heartAnatomyLab) return `${window.heartAnatomyLab()}${slider("rate", "循環速率", state.rate, 40, 120, 5, " bpm")}`;
+      if (lesson.simulation.model === "pond-food-web") {
+        const level = clamp(state.disturbance, 0, 2);
+        const observations = [
+          ["未擾動示意", "水草 → 水生昆蟲 → 小魚", "藻類 → 水生昆蟲 → 小魚", "枯葉／遺體 → 分解者 → 可再利用物質 → 水草"],
+          ["局部移除部分水草", "水草路徑減少；藻類仍可作為部分水生昆蟲的食物來源", "小魚可沿未受影響的取食關係取得食物", "分解者仍處理枯葉與遺體；實際變化須觀察，模型不預測族群數"],
+          ["水草大幅減少的假設情境", "水草相關取食路徑變少", "藻類路徑仍存在，但不代表能完全替代水草功能", "分解者與營養物質路徑仍需另行觀察；不能由此模型推定池塘必然崩解"]
+        ][level];
+        return `${designed}<section class="sim-stage sim-pond-web" aria-label="池塘生物角色與取食關係模型"><h5>池塘關係圖（概念示意，不是實測食物網）</h5><p>箭頭表示「作為食物／物質來源 → 使用者」。先看每個生物角色，再調整水草擾動情境；本模型只檢查可能受影響的關係，不計算真實族群數或保證生態結果。</p><ul class="sim-pond-roles"><li>水草、藻類：生產者，提供有機物來源</li><li>水生昆蟲、小魚：消費者，沿取食關係取得能量</li><li>分解者：分解遺體與排遺，使物質回到環境</li></ul><label class="sim-control"><span>水草擾動情境 <output data-sim-output="disturbance">${level === 0 ? "未移除" : level === 1 ? "局部移除" : "大幅減少（假設）"}</output></span><input data-sim-control="disturbance" type="range" min="0" max="2" step="1" value="${level}" aria-label="水草擾動情境"></label><h6>${esc(observations[0])}</h6><ul>${observations.slice(1).map(item => `<li>${esc(item)}</li>`).join("")}</ul><p class="sim-caption">判讀提醒：模型顯示的是待檢驗的可能關係。要判斷穩定性，還需實際記錄生物數量、環境條件、觀察時間與擾動範圍；一條替代取食路徑不等於功能完全替代。</p></section>`;
+      }
+      if (lesson.simulation.model === "plant-transport") {
+        const sourceLabel = state.source === "storage" ? "儲存器官（例如塊莖）" : "成熟葉片";
+        const sinkLabels = { root: "根", shoot: "生長中的芽／嫩梢", fruit: "果實" };
+        const sinkLabel = sinkLabels[state.sink] || sinkLabels.fruit;
+        const transpirationLabel = ["較弱", "偏弱", "中等", "偏強", "較強"][clamp(state.transpiration, 1, 5) - 1];
+        const choices = (key, options, current, labelText) => `<div class="sim-actions" role="group" aria-label="${esc(labelText)}">${options.map(([value, label]) => `<button type="button" data-transport-choice="${key}" data-value="${value}" aria-pressed="${current === value}">${esc(label)}</button>`).join("")}</div>`;
+        return `${designed}<section class="sim-plant-transport" aria-label="植物維管束運輸概念模型"><h5>分開追蹤水路與有機養分路徑</h5><p>木質部：根吸收的水與無機鹽，沿根—莖—葉方向示意；蒸散條件目前設定為<strong>${transpirationLabel}</strong>。此控制只改變概念情境標籤，不計算真實運輸速率或水量。</p><p class="sim-plant-xylem" aria-live="polite">水／無機鹽　根 → 莖（木質部）→ 葉</p><h6>選擇有機養分的來源與需求位置</h6>${choices("source", [["leaf", "成熟葉片作來源"], ["storage", "儲存器官作來源"]], state.source, "有機養分來源")}${choices("sink", [["root", "根作需求端"], ["shoot", "嫩梢作需求端"], ["fruit", "果實作需求端"]], state.sink, "有機養分需求端")}<p class="sim-plant-phloem" aria-live="polite">韌皮部概念路徑：${esc(sourceLabel)} → ${esc(sinkLabel)}。方向由來源端與需求端的情境決定，不是固定向上或向下。</p><p class="sim-caption">這是路徑概念圖，不表示流量、速率或各器官實際比例；植物狀態與季節改變時，來源／需求角色也可能改變。環剝、染色與切片只能分別支持有限推論，不能單靠單一觀察證明整個機制。</p>${slider("transpiration", "蒸散條件（1＝較弱，5＝較強；非實測量）", state.transpiration, 1, 5)}</section>`;
+      }
       const balance = state.rate - state.demand;
       return `<div class="sim-stage"><div class="sim-flow"><i style="width:${Math.min(100, state.rate)}%"></i></div><p>運輸條件 ${state.rate}；需求條件 ${state.demand}；比較差：<b>${balance}</b></p><p class="sim-caption">以單一條件改變觀察系統的相對變化；實際生物系統需受更多證據限制。</p></div>${slider("rate", "運輸條件", state.rate, 0, 100)}${slider("demand", "需求條件", state.demand, 0, 100)}`;
+    }
+    if (engine === "science-earth-space" && lesson.simulation.model === "fa-iv-4-atmospheric-temperature-profile") {
+      return `${designed}${atmosphereProfile(state.profileScenario || "baseline")}`;
     }
     if (engine === "science-earth-space") {
       const daylight = (12 + Math.sin(state.position * Math.PI / 180) * Math.sin(state.tilt * Math.PI / 180) * 8).toFixed(1);
       return `<div class="sim-stage"><div class="sim-orbit"><i style="transform:rotate(${state.position}deg)"></i><b style="transform:rotate(${state.tilt}deg)"></b></div><p>模型估計日照長度：<b>${daylight}</b> 小時</p></div>${slider("tilt", "傾角", state.tilt, 0, 45, .5, "°")}${slider("position", "公轉位置", state.position, 0, 360, 15, "°")}`;
     }
+    if (engine === "concept-explorer" && lesson.simulation.model === "ecosystem-scale-boundary") {
+      const scenes = {
+        pond: { label: "校園池塘", individual: ["一隻白腹樹蛙"], population: ["同一時段、池塘東側的12隻同種青蛙"], community: ["青蛙、蜻蜓、睡蓮、藻類與其他微生物"], ecosystem: ["生物群集，以及水溫26°C、光照、水質與底泥等環境條件"], biosphere: ["全球各地的生物群集及其可居住環境；池塘樣本只是其中一小部分"] },
+        shore: { label: "潮間帶", individual: ["岩面上的一隻藤壺"], population: ["同一潮位帶、同一觀察時段的同種藤壺"], community: ["藤壺、螃蟹、藻類及其他共同生活的物種"], ecosystem: ["海岸生物群集，以及潮汐、鹽度、岩面乾濕與溫度等環境條件"], biosphere: ["全球各地的生物群集及其可居住環境；單一潮間帶樣區不能代表全部"] }
+      };
+      const scales = [
+        ["individual", "個體", "單一生物"], ["population", "族群", "同種個體＋地區＋時間"], ["community", "群集", "同地區多物種族群"], ["ecosystem", "生態系", "生物群集＋非生物環境"], ["biosphere", "生物圈", "全球生命及其可居住環境"]
+      ];
+      const site = scenes[state.site] ? state.site : "pond";
+      const scale = scales.some(([key]) => key === state.scale) ? state.scale : "individual";
+      const scene = scenes[site];
+      const selected = scales.find(([key]) => key === scale);
+      const evidence = scene[scale];
+      return `${designed}<section class="sim-stage sim-ecosystem-scale" aria-label="生態層級觀察模型"><p>先選場域，再切換觀察邊界。每次切換都要問：目前納入哪些對象與條件？</p><fieldset class="sim-eco-controls"><legend>觀察場域</legend>${[["pond", "校園池塘"], ["shore", "潮間帶"]].map(([key, text]) => `<button type="button" data-eco-site="${key}" aria-pressed="${site === key}">${text}</button>`).join("")}</fieldset><fieldset class="sim-eco-controls"><legend>觀察尺度</legend>${scales.map(([key, text]) => `<button type="button" data-eco-scale="${key}" aria-pressed="${scale === key}">${text}</button>`).join("")}</fieldset><div class="sim-eco-evidence" aria-live="polite" aria-atomic="true"><h5>${esc(scene.label)}｜${esc(selected[1])}</h5><p><b>目前證據：</b>${esc(evidence[0])}</p><p><b>判讀依據：</b>${esc(selected[2])}</p>${scale === "ecosystem" ? "<p>請同時保留生物群集與非生物環境，並說明兩者在研究範圍中的關係。</p>" : ""}${scale === "biosphere" ? "<p>外推前須比較多地點與時間的證據；本地樣區不可直接代替全球資料。</p>" : ""}</div><p class="sim-eco-note">生產者／消費者／分解者是<strong>功能</strong>分類；個體／族群／群集／生態系／生物圈是<strong>尺度</strong>層級，兩者不可混為一談。</p></section>`;
+    }
+    if (engine === "concept-explorer" && lesson.simulation.model === "ca-iv-2-solution-identification") {
+      const samples = { X: "carbonate", Y: "acid", Z: "salt" };
+      const controlResults = { unknown: "未知樣品", blank: "空白對照（水）", acid: "已知酸性對照", carbonate: "已知碳酸鹽對照" };
+      const results = {
+        litmus: {
+          carbonate: ["石蕊呈藍色，顯示此份水溶液呈鹼性。", "在本題候選範圍內，支持碳酸鈉；石蕊本身只提供酸鹼線索。"],
+          acid: ["石蕊呈紅色，顯示此份水溶液呈酸性。", "在本題候選範圍內，支持稀鹽酸；不能只憑紅色推論濃度或純度。"],
+          salt: ["石蕊沒有明顯轉紅或轉藍。", "在本題候選範圍內，支持接近中性的食鹽水；仍需確認控制條件。"]
+        },
+        carbonateCheck: {
+          carbonate: ["加入虛擬稀酸後出現氣泡；氣體通入石灰水後變混濁。", "兩個相連觀察支持生成二氧化碳，符合碳酸鹽候選；仍須有空白及已知對照。"],
+          acid: ["沒有觀察到持續產氣，石灰水維持澄清。", "此結果不支持碳酸鹽，但單一陰性結果不能直接證明樣品是稀鹽酸。"],
+          salt: ["沒有觀察到持續產氣，石灰水維持澄清。", "此結果不支持碳酸鹽；食鹽水與其他不產氣候選仍需用另一項性質區分。"]
+        }
+      };
+      const sample = state.control === "unknown" ? state.sample : state.control;
+      const kind = state.control === "acid" ? "acid" : state.control === "carbonate" ? "carbonate" : state.control === "blank" ? "blank" : samples[sample];
+      const observation = !state.testRun ? null : state.control === "blank"
+        ? ["空白對照沒有顯色或產氣變化。", "空白提供背景基準，不能用來判定未知樣品身分。"]
+        : results[state.test][kind];
+      return `${designed}<section class="sim-stage sim-chemical-id" aria-label="未知溶液化學性質鑑定模擬"><h5>虛擬微量鑑定台</h5><p>本區只模擬已知候選的反應結果，不是實驗步驟或真實化學品操作指引。候選：食鹽水、稀鹽酸、稀碳酸鈉。</p><fieldset><legend>設定樣品與檢驗</legend><label>樣品對照 <select data-chemical-control="control" aria-label="樣品對照">${Object.entries(controlResults).map(([value,text]) => `<option value="${value}" ${state.control === value ? "selected" : ""}>${text}</option>`).join("")}</select></label>${state.control === "unknown" ? `<label>未知瓶 <select data-chemical-control="sample" aria-label="未知樣品瓶">${["X","Y","Z"].map(value => `<option value="${value}" ${state.sample === value ? "selected" : ""}>${value} 瓶</option>`).join("")}</select></label>` : ""}<label>檢驗方法 <select data-chemical-control="test" aria-label="檢驗方法"><option value="litmus" ${state.test === "litmus" ? "selected" : ""}>紫色石蕊初篩</option><option value="carbonateCheck" ${state.test === "carbonateCheck" ? "selected" : ""}>虛擬加酸與二氧化碳確認</option></select></label><button type="button" data-chemical-action="run">執行虛擬檢驗</button></fieldset><div class="sim-chemical-result" aria-live="polite"><p><b>直接觀察：</b>${esc(observation?.[0] || "先預測結果，再執行虛擬檢驗。")}</p><p><b>候選判讀：</b>${esc(observation?.[1] || "保留目前候選，不以外觀猜測身分。")}</p></div><p>推理提醒：先寫觀察，再寫推論；氣泡、顏色或陰性結果都不能單獨保證唯一身分。若控制組未如預期，應先檢查試劑／背景，不讀取未知樣本結論。</p></section>`;
+    }
     const evidence = ["直接觀察", "模型或資料", "可檢查的限制"][state.evidence - 1];
     return `<div class="sim-stage"><ol class="sim-evidence"><li class="${state.evidence >= 1 ? "active" : ""}">直接觀察：寫下情境中可確認的條件</li><li class="${state.evidence >= 2 ? "active" : ""}">模型或資料：連結可重現的理由</li><li class="${state.evidence >= 3 ? "active" : ""}">限制：說明還不能推論什麼</li></ol><p>目前聚焦：<b>${evidence}</b></p></div>${slider("evidence", "推理階段", state.evidence, 1, 3)}`;
   };
-  const render = lesson => {
-    const simulation = lesson.simulation;
-    if (!simulation) return "";
-    lessons.set(lesson.id, lesson);
+  const render = (lesson, instance = "default") => {
+    if (!lesson.simulation) return "";
+    const resolvedInstance = lesson._simulationInstance || instance;
+    const instanceKey = `${lesson.id}:${resolvedInstance}`;
+    const simulation = { ...lesson.simulation, storageId: `${lesson.simulation.id}:${resolvedInstance}` };
+    const runtimeLesson = { ...lesson, simulation, _simulationInstance: resolvedInstance };
+    lessons.set(instanceKey, runtimeLesson);
     const state = read(simulation);
     const reflection = esc(state.reflection || "");
-    return `<section class="simulation" data-simulation-lesson="${esc(lesson.id)}" aria-label="${esc(label(simulation.engine))}"><header><span class="tag">${esc(label(simulation.engine))}</span><h4>${esc(simulation.goal)}</h4><p>${esc(simulation.mission || "先預測，再操作與解釋。")} </p></header><div class="simulation-body">${renderModel(lesson, state)}</div><footer class="sim-learning"><p><b>學習紀錄</b>：先預測，操作後再用證據解釋。</p><div class="sim-actions"><button type="button" data-sim-action="predicted">我已提出預測</button><button type="button" data-sim-action="observed">我已記錄觀察</button><button type="button" data-sim-reset>重設模型</button></div><label>我的解釋<textarea data-sim-reflection rows="3" placeholder="我改變了什麼？看見什麼？這如何支持我的解釋？">${reflection}</textarea></label><p class="sim-status" aria-live="polite">${state.status || "尚未記錄預測與觀察。"}</p><details class="sim-sources"><summary>模型依據與參考來源</summary><ul>${simulation.sourceRefs.map(url => `<li><a href="${esc(url)}" target="_blank" rel="noreferrer">${esc(url)}</a></li>`).join("")}</ul></details></footer></section>`;
+    const simulationLabel = simulation.model === "fa-iv-4-atmospheric-temperature-profile" ? "大氣溫度剖面模型" : label(simulation.engine);
+    return `<section class="simulation" data-simulation-lesson="${esc(instanceKey)}" aria-label="${esc(simulationLabel)}"><header><span class="tag">${esc(simulationLabel)}</span><h4>${esc(simulation.goal)}</h4><p>${esc(simulation.mission || "先預測，再操作與解釋。")} </p></header><div class="simulation-body">${renderModel(runtimeLesson, state)}</div><footer class="sim-learning"><p><b>學習紀錄</b>：先預測，操作後再用證據解釋。</p><div class="sim-actions"><button type="button" data-sim-action="predicted">我已提出預測</button><button type="button" data-sim-action="observed">我已記錄觀察</button><button type="button" data-sim-reset>重設模型</button></div><label>我的解釋<textarea data-sim-reflection rows="3" placeholder="我改變了什麼？看見什麼？這如何支持我的解釋？">${reflection}</textarea></label><p class="sim-status" aria-live="polite">${state.status || "尚未記錄預測與觀察。"}</p><details class="sim-sources"><summary>模型依據與參考來源</summary><ul>${simulation.sourceRefs.map(url => `<li><a href="${esc(url)}" target="_blank" rel="noreferrer">${esc(url)}</a></li>`).join("")}</ul></details></footer></section>`;
   };
   const rerender = root => { const lesson = lessons.get(root.dataset.simulationLesson); if (lesson) root.outerHTML = render(lesson); };
-  const update = (root, changes) => { const lesson = lessons.get(root.dataset.simulationLesson); if (!lesson) return; const next = { ...read(lesson.simulation), ...changes }; write(lesson.simulation, next); rerender(root); };
+  const update = (root, changes) => { const lesson = lessons.get(root.dataset.simulationLesson); if (!lesson) return; const instanceKey = root.dataset.simulationLesson; const parent = root.parentElement; const active = document.activeElement; const focusTarget = active?.matches("[data-sim-control]") ? ["data-sim-control", active.dataset.simControl] : active?.matches("[data-chemical-control]") ? ["data-chemical-control", active.dataset.chemicalControl] : active?.matches("[data-chemical-action]") ? ["data-chemical-action", active.dataset.chemicalAction] : active?.matches("[data-design-step]") ? ["data-design-step", active.dataset.designStep] : active?.matches("[data-atmo-scenario]") ? ["data-atmo-scenario", active.dataset.atmoScenario] : active?.matches("[data-eco-site]") ? ["data-eco-site", active.dataset.ecoSite] : active?.matches("[data-eco-scale]") ? ["data-eco-scale", active.dataset.ecoScale] : active?.matches("[data-inequality-relation]") ? ["data-inequality-relation", active.dataset.inequalityRelation] : active?.matches("[data-ticket-action]") ? ["data-ticket-action", active.dataset.ticketAction] : active?.matches("[data-transport-choice]") ? ["data-transport-choice", active.dataset.transportChoice, active.dataset.value] : active?.matches("[data-geometry-prediction]") ? ["data-geometry-prediction", active.dataset.geometryPrediction] : active?.matches("[data-geometry-transfer]") ? ["data-geometry-transfer", active.dataset.geometryTransfer] : active?.matches("[data-geometry-action]") ? ["data-geometry-action", active.dataset.geometryAction] : active?.matches("[data-sim-similarity]") ? ["data-sim-similarity", active.dataset.simSimilarity, active.dataset.value] : null; const next = { ...read(lesson.simulation), ...changes }; write(lesson.simulation, next); rerender(root); if (focusTarget && parent) parent.querySelector(`[data-simulation-lesson="${instanceKey}"] [${focusTarget[0]}="${focusTarget[1]}"]${focusTarget[2] ? `[data-value="${focusTarget[2]}"]` : ""}`)?.focus(); };
+  document.addEventListener("change", event => { const root = event.target.closest("[data-simulation-lesson]"); if (!root || !event.target.matches("[data-chemical-control]")) return; update(root, { [event.target.dataset.chemicalControl]: event.target.value, testRun: false }); });
   document.addEventListener("input", event => {
     const root = event.target.closest("[data-simulation-lesson]");
     if (!root) return;
-    if (event.target.matches("[data-sim-control]")) update(root, { [event.target.dataset.simControl]: Number(event.target.value) });
+    const lesson = lessons.get(root.dataset.simulationLesson);
+    if (!lesson) return;
+    if (event.target.matches("[data-sim-control]")) update(root, { [event.target.dataset.simControl]: Number(event.target.value), ...(lesson.simulation.engine === "math-ticket-equation" ? { candidateVerified: false, candidateFeedback: "模型條件已改變，請重新檢查候選票價。" } : {}) });
     if (event.target.matches("[data-sim-reflection]")) { const lesson = lessons.get(root.dataset.simulationLesson); if (lesson) write(lesson.simulation, { ...read(lesson.simulation), reflection: event.target.value }); }
   });
   document.addEventListener("click", event => {
     const root = event.target.closest("[data-simulation-lesson]");
     if (!root) return;
     const lesson = lessons.get(root.dataset.simulationLesson); if (!lesson) return;
-    if (event.target.closest("[data-sim-reset]")) { localStorage.removeItem(stateKey(lesson.simulation.id)); rerender(root); return; }
+    if (event.target.closest("[data-sim-reset]")) { localStorage.removeItem(stateKey(lesson.simulation)); rerender(root); return; }
+    if (event.target.closest('[data-chemical-action="run"]')) { update(root, { testRun: true }); return; }
+    const ecoSite = event.target.closest("[data-eco-site]");
+    if (ecoSite) { update(root, { site: ecoSite.dataset.ecoSite }); return; }
+    const ecoScale = event.target.closest("[data-eco-scale]");
+    if (ecoScale) { update(root, { scale: ecoScale.dataset.ecoScale }); return; }
+    const atmoScenario = event.target.closest("[data-atmo-scenario]");
+    if (atmoScenario) { update(root, { profileScenario: atmoScenario.dataset.atmoScenario }); return; }
     const designStep = event.target.closest("[data-design-step]");
     if (designStep) { update(root, { designStep: Number(designStep.dataset.designStep) }); return; }
+    const relation = event.target.closest("[data-inequality-relation]");
+    if (relation) { update(root, { relation: relation.dataset.inequalityRelation }); return; }
+    const transportChoice = event.target.closest("[data-transport-choice]");
+    if (transportChoice) { update(root, { [transportChoice.dataset.transportChoice]: transportChoice.dataset.value }); return; }
+    const geometryPrediction = event.target.closest("[data-geometry-prediction]");
+    if (geometryPrediction) { update(root, { predictionChoice: geometryPrediction.dataset.geometryPrediction }); return; }
+    const geometryTransfer = event.target.closest("[data-geometry-transfer]");
+    if (geometryTransfer) { update(root, { transferChoice: geometryTransfer.dataset.geometryTransfer }); return; }
+    const geometryAction = event.target.closest("[data-geometry-action]");
+    if (geometryAction?.dataset.geometryAction === "submit-prediction") {
+      const state = read(lesson.simulation);
+      update(root, !state.predictionChoice
+        ? { predictionFeedback: "請先選擇一項預測，再提交。" }
+        : state.predictionChoice === "B"
+          ? { predictionSubmitted: true, predictionFeedback: "" }
+          : { predictionFeedback: (() => { const triangle = lesson.simulation.prismModel?.baseTriangle; const area = triangle ? triangle.legA * triangle.legB / 2 : 6; const perimeter = triangle ? triangle.legA + triangle.legB + triangle.hypotenuse : 12; return `預測尚不正確。先比較兩個固定量：側面面積增量由底面周長${perimeter} cm決定；體積增量由底面積${area} cm²決定。回看三片展開側面後再試一次；此時完整公式與數值仍鎖定。`; })() });
+      return;
+    }
+    if (geometryAction?.dataset.geometryAction === "submit-transfer") {
+      const state = read(lesson.simulation);
+      update(root, !state.transferChoice
+        ? { transferFeedback: "請先選擇一組計算結果，再檢查。" }
+        : lesson.simulation.model === "s9-13-prism-surface-volume-v2" && state.transferChoice !== "B"
+          ? { transferSubmitted: false, transferFeedback: "還不正確。請分別重算兩個三角端面、三片側面周長乘柱長，以及一個底面積乘柱長，再試一次。" }
+          : { transferSubmitted: true, transferFeedback: "正確。兩端面與三側面合成表面積；一個底面積乘柱長才是體積。" });
+      return;
+    }
+    const similarityControl = event.target.closest("[data-sim-similarity]");
+    if (similarityControl && lesson.simulation.model === "s9-1-polygon-similarity-v1") {
+      const action = similarityControl.dataset.simSimilarity;
+      const value = similarityControl.dataset.value;
+      const state = read(lesson.simulation);
+      if (action === "prediction") update(root, { predictionChoice: value, predictionFeedback: "" });
+      if (action === "submit-prediction") update(root, state.predictionChoice
+        ? { predictionSubmitted: true, predictionFeedback: `預測已記錄：${state.predictionChoice === "yes" ? "相似" : "不相似"}。現在分別調整兩軸倍率並記錄觀察。` }
+        : { predictionFeedback: "先選擇一項預測，才能解鎖模型。" });
+      if (action === "verify") update(root, { similarityChoice: value, similarityFeedback: "" });
+      if (action === "check") {
+        const similar = Math.abs(Number(state.scaleX) - Number(state.scaleY)) < 1e-9;
+        update(root, !state.similarityChoice
+          ? { similarityFeedback: "先依兩方向倍率選擇相似或不相似。" }
+          : state.similarityChoice === (similar ? "yes" : "no")
+            ? { similarityFeedback: similar ? `判斷正確：兩方向倍率同為 ${state.scaleX}，對應角也保持 90°。` : `判斷正確：水平倍率 ${state.scaleX}、垂直倍率 ${state.scaleY} 不同；角雖相等，邊倍率不一致，故不相似。` }
+            : { similarityFeedback: `再核對兩欄：水平倍率 ${state.scaleX}、垂直倍率 ${state.scaleY}。角相等不能取代所有對應邊倍率一致。` });
+      }
+      if (action === "transfer") update(root, { transferChoice: value, transferFeedback: "" });
+      if (action === "submit-transfer") {
+        const config = lesson.simulation.similarityModel;
+        const expected = Math.abs(config.transferScale - config.transferScale) < 1e-9 ? "yes" : "no";
+        update(root, !state.transferChoice
+          ? { transferFeedback: "先選擇遷移判斷。" }
+          : state.transferChoice === expected
+            ? { transferSubmitted: true, transferFeedback: `正確：${config.transferWidth}→${config.transferWidth*config.transferScale} 與 ${config.transferHeight}→${config.transferHeight*config.transferScale} 的倍率相同。` }
+            : { transferSubmitted: false, transferFeedback: "比較兩組對應邊的縮圖÷原圖；相同倍率不會因尺寸改變而失去相似。" });
+      }
+      return;
+    }
+    const ticketAction = event.target.closest("[data-ticket-action]");
+    if (ticketAction?.dataset.ticketAction === "check" && lesson.simulation.engine === "math-ticket-equation") {
+      const state = read(lesson.simulation);
+      const count = Number(state.ticketCount), fee = Number(state.oneTimeFee), total = Number(state.totalPaid), candidate = Number(state.candidatePrice);
+      const correct = count > 0 && count * candidate + fee === total;
+      update(root, { candidateVerified: correct, candidateFeedback: correct ? `符合：${count} × ${candidate} + ${fee} = ${total}，左右相等。` : `不符合：${count} × ${candidate} + ${fee} = ${count * candidate + fee}，與總額 ${total} 不相等；請再檢查候選值。` });
+      return;
+    }
     const action = event.target.closest("[data-sim-action]")?.dataset.simAction; if (!action) return;
     const state = read(lesson.simulation);
     if (action === "run-trials") state.hits = Array.from({ length: state.trials }, () => Math.random() < .5).filter(Boolean).length;

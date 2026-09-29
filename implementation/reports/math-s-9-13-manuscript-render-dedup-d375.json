@@ -1,0 +1,28 @@
+{
+  "reportId": "math-s-9-13-manuscript-render-dedup-d375",
+  "date": "2026-09-28",
+  "lessonId": "lesson-math-content-s-9-13",
+  "finding": {
+    "before": "content.sections contained the six complete unit-specific sections, while teaching.body retained a different legacy six-section version. The student renderer merged the different headings, displaying both sets (12 sections).",
+    "resolution": "Preserved the complete content.sections prose, aligned the existing teaching.body headings and bodies to it, and retained each teaching block id and phase. The renderer now has no distinct legacy sections to append.",
+    "scope": "One lesson data file; no publisher research, question ledger, or lesson-body rewrite was repeated."
+  },
+  "verification": {
+    "lessonRegression": "PASS: teaching.body heading/body pairs equal content.sections; six full sections cover prism, pyramid, cone, surface-area/volume distinction, worked calculations, and transfer.",
+    "interactiveRegression": "PASS: prediction lock/retry, triangular-prism net and calculations, keyboard focus, transfer, reset, and draft gate.",
+    "fullAutomatedSuite": "PASS: npm test, including pretest fusion/scope checks, runtime contracts, and 1,027/1,027 workbench traversal.",
+    "browser": "PASS: npm run test:browser -- --url http://127.0.0.1:8765/implementation/workbench.html; full unit traversal 1,027/1,027; explicit S-9-13 learner-page assertion confirmed exactly six lesson sections; model interaction, keyboard, 320/375/768px, and zero page errors.",
+    "dataValidation": "PASS: validate_data.py, 14,487 JSON files, 13,113 IDs, 1,032 KG nodes; lessons and questions remain draft.",
+    "specValidation": "PASS: 1,027 specs, zero errors, 1,027 pending.",
+    "siteIndex": "PASS: rebuilt and validated, 1,052 lessons, 10,526 question paths, 40 mappings, revision local.",
+    "diffCheck": "PASS for lesson, regression, and browser-smoke changes."
+  },
+  "gates": {
+    "reviewStatus": "draft",
+    "publisherLedger": "292/3,081 verified; 2,789 pending; 932 units blocked, recomputed this run.",
+    "threePublisherFusion": "Not promoted; full publisher chapter review, provenance/rights and content review remain open.",
+    "specQa": "pending",
+    "questionExamSourceLedger": "Not rerun in this run; prior verified snapshot remains 10,566/10,566 recorded, pending 0.",
+    "commitPush": "not performed"
+  }
+}

@@ -2,23 +2,23 @@
   "id": "question-math-performance-d-iv-1-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "某班身高分組次數為 140～150 公分 2 人、150～160 公分 5 人、160～170 公分 7 人、170～180 公分 6 人，Q3 所在組別為何？",
+  "prompt": "某長條圖顯示四天借書量為 12、18、15、21 本，哪一天借書量最多？",
   "options": [
     {
       "id": "A",
-      "text": "140～150 公分"
+      "text": "第一天"
     },
     {
       "id": "B",
-      "text": "170～180 公分"
+      "text": "第二天"
     },
     {
       "id": "C",
-      "text": "150～160 公分"
+      "text": "第三天"
     },
     {
       "id": "D",
-      "text": "160～170 公分"
+      "text": "第四天"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "共有 20 人，Q3 位於第 15、16 筆附近；累積到 160～170 公分為 14 人，因此 Q3 落在 170～180 公分組。"
+    "value": "D",
+    "explanation": "四個數值中最大的是 21，對應第四天，所以選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考直方圖、盒狀圖、四分位數、次數分配與資料判讀題型；另參考 114 年國中教育會考數學科；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "統計單元實質改寫；已重新計算答案與解析，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供統計圖表、統計量與工具判讀能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的資料與不確定性方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-d-iv-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-d-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、全距、頻率資料、統計圖表、圖表誤讀與試算表函數；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求由表格、圖表或原始資料計算統計量，並辨識座標截斷、集中趨勢與軟體函數的正確解讀；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、全距、頻率資料、統計圖表、圖表誤讀與試算表函數；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求由表格、圖表或原始資料計算統計量，並辨識座標截斷、集中趨勢與軟體函數的正確解讀；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、全距、頻率資料、統計圖表、圖表誤讀與試算表函數；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求由表格、圖表或原始資料計算統計量，並辨識座標截斷、集中趨勢與軟體函數的正確解讀；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先讀取圖表標籤與數值，再比較數值而非只看柱形寬度。",
+  "solutionSteps": [
+    "列出四天數值 12、18、15、21。",
+    "比較四個數字。",
+    "最大值是 21。",
+    "21 對應第四天。",
+    "所以選 D。"
+  ]
 }

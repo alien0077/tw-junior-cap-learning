@@ -2,41 +2,67 @@
   "id": "question-science-content-ic-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年10月13日自然科教室的觀察中，小車在 10 秒內前進 1576 m，研究「Ic：海水的運動」時，平均速率為何？",
+  "prompt": "同一海域連續測得潮位週期升降，但風向每天不同。要區分潮汐與風浪，哪項資料最有幫助？",
   "options": [
     {
       "id": "A",
-      "text": "15760 m/s"
+      "text": "長期潮位時間序列及日月位置，並同步記錄風浪"
     },
     {
       "id": "B",
-      "text": "0.00634518 m/s"
+      "text": "只看一次海面照片"
     },
     {
       "id": "C",
-      "text": "1566 m/s"
+      "text": "只看海水顏色"
     },
     {
       "id": "D",
-      "text": "157.6 m/s"
+      "text": "只記錄某一刻的風向"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ic"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "平均速率＝路程÷時間＝1576÷10＝157.6 m/s。 本題對應 KG「Ic：海水的運動」。"
+    "value": "A",
+    "explanation": "潮汐有較規律的長期週期，日月位置可作為相關資料；同步記錄風浪能幫助分離短期風浪影響。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的海水運動、波浪、海流、潮汐及海洋資料判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Ic 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ic"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ic",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "海水運動、波浪、海流、潮汐與海洋資料判讀",
+      "pattern": "取由風、密度、海水大尺度流動、潮汐週期與海岸資料理解海水運動的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由風、密度、海水大尺度流動、潮汐週期與海岸資料理解海水運動的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用時間尺度與多項同步觀測區分週期現象。",
+  "solutionSteps": [
+    "先確認潮位變化的週期是否穩定。",
+    "比較日月位置與長期潮位時間序列。",
+    "同步記錄風速、風向和波高以排除風浪干擾。",
+    "B、C、D 的資料尺度或資訊不足。",
+    "所以 A 最完整。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

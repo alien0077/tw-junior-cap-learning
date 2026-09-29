@@ -1,0 +1,170 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-8-2
+  knowledgeGraphIds:
+  - kg-math-content-a-8-2
+  title: A-8-2：多項式的意義
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '8'
+  fusedScope:
+    officialCurriculum: A-8-2：多項式的意義
+    curriculumIntent: A-8-2：多項式的意義
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 僅在實際讀取三家合法可取得的出版社教材相關正文後，才比較定義、概念順序、表示法、例型、迷思及評量；公校課程計畫只作版本與課程範圍線索，不得冒稱出版社正文證據
+    currentEvidenceStatus: curriculum-and-kg-grounded; public-school-course-plan-only; publisher-textbook-content-pending; Terra-review-pending
+  learningGoals:
+  - 將 4x⁵−3x²+2x−8 切成四項，辨認有號係數、各項次數、常數項與整式最高次。
+  - 依指數辨認一次項、二次項和最高次項；解釋項數四不代表四次。
+  - 將同一多項式改寫為升冪與降冪，核對每項及其符號均保留。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 一元多項式由有限個非負整數次方的代數項組成；係數可為負數，未寫出的係數 1 仍存在。
+  - 多項式次數由最高次項決定，不等於項數；常數項不含變數且視為零次。
+  - 升冪由低次到高次、降冪由高次到低次；重新排列不改變任何項或符號。
+  misconceptions:
+  - 把 −3x² 的係數讀成 3、把指數 2 當係數，或將整個式子的次數誤讀為項數 3。
+  - 把項數誤認為整式次數，或只看最後一項判定多項式次數。
+  - 把 −x 的係數寫成 1、把負號漏掉，或認為 x 前沒有數字就沒有係數。
+  - 排列升冪／降冪時漏項、改變原項符號，或將常數項排除在項數之外。
+  contentFlow:
+  - 'hook: 看見看板上的 −2x³+5x−1，先把式子視為帶符號的項目清單，而非立即計算。'
+  - 'predict: 尚未切分項目之前，先預測項數、最高次與常數項，並把「項數」和「整式次數」分開記錄。'
+  - 'parse: 依加減號切分完整項，讓符號留在所屬項上，並計算項數。'
+  - 'manipulate: 學生逐項標記係數與指數，再拖曳或以鍵盤重排成升冪／降冪；系統保留原式符號。'
+  - 'observe: 項目表即時顯示次數、係數、項名稱及新順序，缺少某次項時仍以實際最高指數判讀。'
+  - 'explain: 學生引用原式中的有號項，說明項數不等於最高次，並解釋重排未改變多項式。'
+  - 'label: 為每項標出係數和指數，辨認一次項、二次項、最高次項及常數項。'
+  - 'compare: 分開回答「有幾項」與「最高到幾次」，以缺項例子檢查最高次判讀。'
+  - 'reorder: 將同一多項式排成升冪與降冪，逐項核對係數、指數與符號沒有改變。'
+  - 'transfer: 把同一套欄位套用到新的單變數式，先寫判讀依據再提交。'
+  - 'exit-ticket: 解釋 −x³+4x−9 的項數、係數、常數項和最高次，並給出其升冪排列。'
+  visualizations:
+  - 項目標籤表：以 4x⁵−3x²+2x−8 分欄顯示有號係數、指數、項次、常數標記及最高次項。
+  - 名詞標記視圖：在 7x⁴−5x²+x−6 上定位一次項、二次項、常數項及最高次項，附上項數與整式次數兩個欄位。
+  - 排列切換：將 −2x³+5x−1 在升冪與降冪間切換，檢查三個有號項沒有增刪或變號。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-8-2-I01
+    component: DataExplorerBlock
+    purpose: 讓學生把一元多項式拆成完整有號項，讀出項數、係數、常數項、各項次數與最高次，並正確改寫升降冪。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        termCoefficient: -3
+        variableExponent: 2
+        linearCoefficient: 2
+        constantTerm: -8
+    studentActions:
+    - 先猜整式次數和每項類別，再提交後顯示項結構表。
+    - 以鍵盤或觸控選取一個項，標示它的有號係數、指數和項次。
+    - 將每一項放入一次項、二次項、最高次項或常數項欄；一項可同時符合不同名詞欄位。
+    - 切換升冪／降冪後逐項比對，確認項、係數和符號完全保留。
+    visualRules:
+    - 項數和整式次數放在不同欄位，避免用項數替代最高次指數。
+    - 加減號隨項卡移動，不能將負項拆成正係數而丟失符號。
+    - 常數項明確標示不含變數且視為零次；一次項、二次項依指數命名。
+    - 窄螢幕改用逐列表格，不讓指數上標或負號裁切。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-8-2-I01
+      trigger: 把 4x⁵−3x²+2x−8 的整式次數回答成四，或把 −3x² 的係數回答成 3。
+      prompt: 分別數項目並比較指數；再把負號連同係數一起讀一次。這兩個答案各由哪個符號證據支持？
+      expectedEvidence: 式子有四項但最高次為五；−3x² 的有號係數為 −3，最高次項為 4x⁵。
+    feedback:
+      correct: 再要求指出常數項及升冪排列，逐項核對符號未改變。
+      incorrect: 先把有號項卡列出；若把次數答成項數，請在另一欄圈出最大指數；若漏負號，對照原式首項前的符號。
+    guidedActivity:
+      title: 多項式標記台：讀出項數、係數、常數與項次
+      introduction: 從 4x⁵−3x²+2x−8 讀出項目清單，再標記定義中的相關名詞並切換升降冪；本活動不進行多項式四則運算。
+      stages:
+      - prompt: 第一步：4x⁵−3x²+2x−8 有幾項？
+        acceptedAnswers: ["4", "四項"]
+        correctFeedback: 正確。完整項是 4x⁵、−3x²、+2x、−8。
+        hint: 每個加減號前後切開一項，但不要拆散係數和變數。
+      - prompt: 第二步：在 −x³+4x−9 中，−x³ 的係數、一次項係數、常數項依序為何？
+        acceptedAnswers: ["-1,4,-9", "−1、4、−9", "−1，4，−9"]
+        correctFeedback: 正確。x³ 前省略的係數是 1，並保留負號。
+        hint: 把 −x³ 寫成 −1x³；一次項是 4x；不含 x 的項是 −9。
+      - prompt: 第三步：7x⁴−5x²+x−6 的最高次項及整式次數為何？
+        acceptedAnswers: ["7x⁴，4", "7x^4,4", "7x⁴；4"]
+        correctFeedback: 正確。最大指數為 4，最高次項是 7x⁴。
+        hint: 比較出現的指數 4、2、1、0；不要用項數代替最高次。
+      - prompt: 第四步：把 2x⁴−3x+1 寫成升冪排列。
+        acceptedAnswers: ["1-3x+2x⁴", "1−3x+2x⁴", "1-3x+2x^4"]
+        correctFeedback: 正確。常數、一次項、四次項依低次到高次排列，符號不變。
+        hint: 先找指數 0、1、4，再按這個順序抄回原項。
+      completionMessage: 完成。你已能分辨項數、係數、常數項、項次與整式最高次，也能在升冪和降冪間重排而不改變各項。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "先讓學生預測 −2x³+5x−1 的項數與最高次，再操作標籤欄；逐項核對係數符號、指數和常數項位置。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "採用操作後立即比較的活動節奏，把原式、升冪和降冪並列，允許撤銷排序並修正漏項或變號。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "係數、變數、指數、正負號與項次均有語意名稱；排序或分組更新時以可讀狀態說明，不以色彩作唯一線索。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以標題和主要內容區分題目、項表、迷思回饋及離堂檢核，鍵盤使用者可直接跳至運算結果與理由輸入區。"
+  capTransfer:
+    questionType: 公開試題概念改寫：多項式名詞辨識與升降冪排列
+    stemConstraint: 給定一個原創一元多項式，要求指出項數、特定次項係數、常數項、最高次項與升冪／降冪表示；不得引入 A-8-3 的加減乘除或 A-8-1 的公式展開。
+    requiredResponse: 每個欄位都引用原式中的對應有號項及其指數；排列時完整保留所有項與符號。
+    scoring: 項數與整式次數分辨正確 1、係數及項名稱正確 1、升降冪排序無漏項變號 1
+  exitTicket:
+    prompt: 判斷 6x⁴−2x²+x−5 的項數、最高次項、一次項係數與常數項，並寫出升冪排列。
+    successCriteria:
+    - 指出四項、最高次項 6x⁴，整式次數為 4。
+    - 一次項為 x、係數為 1；常數項為 −5。
+    - 升冪為 −5+x−2x²+6x⁴，沒有漏項或改變符號。
+  expressionExtension:
+    applicable: true
+    task: 自選一個單變數多項式，為每個有號項標示係數、指數、項名稱及常數項狀態，並各寫一次升冪與降冪排列。
+    constraint: 不使用四則運算、面積展開或因式分解；回饋只檢查項數、名稱、係數符號與排列是否一致。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始呈現 4x⁵−3x²+2x−8，學生先數項並預測最高次，再解鎖逐項標籤。
+  - 點選 −3x² 時顯示有號係數 −3、項次 2 與二次項標籤，不把係數絕對值當答案。
+  - 把項數答成整式次數時觸發分欄提示；升冪排序漏掉 −3x² 或改變負號時拒絕提交並指出差異。
+  - 320px、375px、768px 與鍵盤可讀完項表、標記分組、提交理由並取得回饋；上標和負號均有文字替代。
+  - 以 −2x³+5x−1 作遷移，確認三項、最高次項 −2x³、一次項 5x 和常數 −1，升冪為 −1+5x−2x³。
+  - 互動表格或拖曳失效時，文字 fallback 提供逐項標籤卡、係數／次數欄和排序清單，仍可完成名詞辨認與升降冪遷移。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-2
+    role: official-curriculum-source-of-truth

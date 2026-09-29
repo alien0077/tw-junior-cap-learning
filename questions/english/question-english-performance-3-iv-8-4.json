@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-8-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-8／理解短文訊息書信主要內容」task, what is the best way to prepare question 4?",
+  "prompt": "Read the library notice.\n\nSTUDY ROOM UPDATE\nThe second-floor study room is open from 4:00 to 7:00 p.m. Monday through Thursday. On Friday, it closes at 5:00 because staff prepare the weekend book sale. Students may still return books at the box beside the main door after the room closes. Food is not allowed, but water bottles with lids are welcome.\n\nWhich statement is correct?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Students can study in the room until 7:00 every weekday."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "On Friday, the room closes earlier than it does on the other listed days."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Books cannot be returned after 5:00 on Friday."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Students may bring any food if they also bring water."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-8／理解短文訊息書信主要內容, question 4."
+    "value": "B",
+    "explanation": "星期一至四開到晚上七點，星期五因員工準備週末書展而五點關門，所以星期五較早關閉。關門後仍可從大門旁的箱子還書；食物仍禁止。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1706770089045DwNPg1SE.pdf",
+    "sourceLocator": "僅將公立學校公開英語評量的短篇閱讀理解能力作 pattern-only 參照；本文、選項、答案與解析均獨立撰寫。",
+    "authoringNote": "Original English text and item authored for KG 3-Ⅳ-8; public-school exam references inform only the skill pattern. Publisher-version fusion, rights/content review, and second-round review remain incomplete; keep draft."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1706770089045DwNPg1SE.pdf",
+      "title": "臺北市立內湖國中112學年度第1學期七年級第3次段考英文科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "112學年度第1學期",
+      "subject": "english",
+      "locator": "PDF第4頁閱讀題組（二）第51至52題：整合時間表與公告註記的不同資訊",
+      "locatorLevel": "item",
+      "observedPattern": "須先辨認時間表與附註各自提供的資訊，再組合開放時間及例外條件；本題自行撰寫公告與日期。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "公告常把一般規則與例外放在相鄰句；答題時要同時保留比較基準和例外條件。",
+  "solutionSteps": [
+    "先辨認開放時間的基準：星期一至四是 4:00–7:00 p.m.。",
+    "再找明確例外：星期五在 5:00 關閉。",
+    "比較兩個關門時間，星期五比其他列出的日子早兩小時。",
+    "檢查其他選項：每日七點、關門不能還書、可帶食物都與公告相反。",
+    "只有 B 同時符合星期五例外與平日基準。"
+  ]
 }

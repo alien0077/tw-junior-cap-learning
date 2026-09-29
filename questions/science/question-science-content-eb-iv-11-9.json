@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-11-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年4月25日學校研究社的觀察中，小車在 48 秒內前進 181 m，研究「Eb-Ⅳ-11：力、作用時間、質量與速度改變」時，平均速率為何？",
+  "prompt": "兩台車碰撞分析時，若系統只選定『其中一台車』，可直接用哪個量描述外界碰撞作用造成的結果？",
   "options": [
     {
       "id": "A",
-      "text": "3.77083 m/s"
+      "text": "該車動量的變化量，等於外力對它的總衝量"
     },
     {
       "id": "B",
-      "text": "8688 m/s"
+      "text": "兩車總動量必為零"
     },
     {
       "id": "C",
-      "text": "0.265193 m/s"
+      "text": "該車質量會因碰撞自動變零"
     },
     {
       "id": "D",
-      "text": "133 m/s"
+      "text": "只看碰撞後速度大小即可，不需初始資料"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-11"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "平均速率＝路程÷時間＝181÷48＝3.77083 m/s。 本題對應 KG「Eb-Ⅳ-11：力、作用時間、質量與速度改變」。"
+    "explanation": "A。若系統只選一台車，碰撞車對它的外力在作用時間內造成動量變化，可用衝量 J=Δp 描述；若選兩車系統，內力需另作處理。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題中的動量、衝量、力—時間圖、碰撞、煞車、接球與系統邊界能力；本題改寫為力、作用時間、質量與速度改變原創情境。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-11"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-eb-iv-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫；只取力、動量、衝量與碰撞計算的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "力、動量、衝量與碰撞計算",
+      "observedPattern": "公立學校公開自然／理化試題常以 p=mv、J=FΔt、力—時間圖、接球、煞車、碰撞與向量方向考查動量變化；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考；只取平均力、作用時間與安全設計的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "平均力、作用時間與安全設計",
+      "observedPattern": "公立學校公開自然／理化試題常以 p=mv、J=FΔt、力—時間圖、接球、煞車、碰撞與向量方向考查動量變化；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題；只取碰撞、動量變化與資料圖表的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "碰撞、動量變化與資料圖表",
+      "observedPattern": "公立學校公開自然／理化試題常以 p=mv、J=FΔt、力—時間圖、接球、煞車、碰撞與向量方向考查動量變化；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先畫系統邊界，再判斷外力衝量與內力是否互相抵消。",
+  "solutionSteps": [
+    "選定系統與正方向，寫出質量、初速、末速和作用時間。",
+    "計算初、末動量並保留向量正負。",
+    "用 Δp=p_f-p_i 或 J=FΔt 連結力與動量。",
+    "檢查圖表面積、單位與數量級。",
+    "說明接觸時間、外力、系統邊界及安全設計限制。"
+  ]
 }

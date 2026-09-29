@@ -2,41 +2,78 @@
   "id": "question-science-content-ja-iv-3-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年11月16日河川觀測站的觀察中，將 69 g 食鹽溶於 620 g 水，研究「Ja-Ⅳ-3：化學反應的可觀察現象」時，溶液質量為何？",
+  "prompt": "紫色石蕊試紙變紅，最直接支持哪項？",
   "options": [
     {
       "id": "A",
-      "text": "689 g"
+      "text": "必定生成沉澱"
     },
     {
       "id": "B",
-      "text": "551 g"
+      "text": "必定產生氧氣"
     },
     {
       "id": "C",
-      "text": "42780 g"
+      "text": "溶液呈酸性"
     },
     {
       "id": "D",
-      "text": "620 g"
+      "text": "溶液一定是純水"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ja-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：69＋620＝689 g。 本題對應 KG「Ja-Ⅳ-3：化學反應的可觀察現象」。"
+    "value": "C",
+    "explanation": "指示劑顏色提供酸鹼性線索，不足以單獨判定所有反應物與生成物。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的氣泡、沉澱、顏色、溫度、指示劑、質量、對照及實驗安全能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向保留並核對單元專屬改寫；題幹、選項、答案、解析與五步解法均未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ja-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ja-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "化學反應現象、氣體、沉澱、顏色、溫度與安全判讀",
+      "pattern": "取由可觀察現象、控制條件與證據鏈判斷化學反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由可觀察現象、控制條件與證據鏈判斷化學反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "實驗現象、指示劑、溶液、反應與資料判讀",
+      "pattern": "取從實驗觀察與資料區分化學變化、物理變化及證據限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從實驗觀察與資料區分化學變化、物理變化及證據限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先記錄現象，再檢查對照、替代解釋與證據強度。",
+  "solutionSteps": [
+    "讀題定位：抓出「酸鹼指示」的可觀察現象與實驗條件。",
+    "建立判準：指示劑顏色提供酸鹼性線索，不足以單獨判定所有反應物與生成物。",
+    "核對答案：選項 C「溶液呈酸性」符合判準。",
+    "排除誘答：區分觀察到的現象、可能機制與仍需驗證的結論。",
+    "最後回查：確認安全、對照與替代解釋都被納入，不能由單一現象過度推論。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

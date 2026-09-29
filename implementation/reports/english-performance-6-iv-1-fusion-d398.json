@@ -1,0 +1,40 @@
+{
+  "decisionId": "D-398",
+  "asOf": "2026-09-28",
+  "unit": {
+    "lessonId": "lesson-english-performance-6-iv-1",
+    "specId": "cur-english-performance-6-iv-1",
+    "knowledgeGraphId": "kg-english-performance-6-iv-1",
+    "curriculumCode": "6-Ⅳ-1",
+    "title": "積極參與課堂練習"
+  },
+  "scope": {
+    "inventoryFinding": "This unit had six generic placeholder paragraphs, no fusionRecord, and no student interaction; it was absent from the authored fusion inventory. Only this unrecorded unit was rewritten.",
+    "curriculum": {
+      "url": "https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf",
+      "locator": "PDF p.15, fourth-stage learning interest and attitude: 6-IV-1, willingly participating in classroom practice and not fearing mistakes."
+    },
+    "versionResearch": [
+      {"publisherLabel": "nani", "url": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/111-2-7-2.pdf", "locator": "Zhuolan Senior High JH department 111 grade-7 Nani plan PDF p.0 and pp.0-1; prompts/discussion, participation attitude and cooperation assessments."},
+      {"publisherLabel": "kanghsuan", "url": "https://www.cksh.hc.edu.tw/uploads/17037312176697LV5Ak9V.pdf", "locator": "Jianggong Senior High JH department 111 grade-7 Kang Hsuan plan PDF p.0 and pp.18-20; participation/cooperation goal and oral/group interaction assessment."},
+      {"publisherLabel": "hanlin", "url": "https://www.se.curriculum.chc.edu.tw/years/110/plans/315/views/4-1-1.pdf", "locator": "Dacun JH 110 grade-7 Hanlin-labelled learning-disability English plan PDF pp.30-31 and 34-35; prompts, task breakdown, cooperative activity and flexible assessment. Used only as a bounded special-education support example."}
+    ],
+    "sourceCorrections": [
+      "Removed the old Nani-labelled PDF that contained music content, the old Kang Hsuan-labelled PDF that was a Chinese-language plan, and the old Hanlin-labelled school plan where English/6-IV-1 content could not be located.",
+      "The replacement records are public-school-authored course plans labelled by each school's selected edition, not publisher-authored textbook chapters or publisher teaching methods. Publisher chapter evidence remains pending."
+    ],
+    "synthesis": "Six original learner-visible sections interpret participation as trying, locating a difficulty, using a prompt/help, and trying again; distinguish participation from extroversion/response count; provide unit-specific practice and reflection. Four-step original GuidedChoice includes unique key, retry hint and detailed feedback. Lesson remains draft for user's ChatGPT content review.",
+    "questionBank": "No question data changed."
+  },
+  "verification": {
+    "authoredFusionInventory": {"command": "python3 scripts/inventory_authored_fusion_drafts.py", "recorded": 732, "total": 791, "percent": 92.54, "learningContent": "583/583", "learningPerformance": "149/208", "longFormMarker": 562, "meaning": "Manuscript-presence inventory only."},
+    "publicExamLedger": "Not rerun this turn; last live audit D-397 was 10,566/10,566 recorded, pending 0. No questions changed since that audit.",
+    "dataValidation": "PASS: 14,509 JSON files, 13,114 IDs, 1,032 KG nodes.",
+    "implementationSpecs": "PASS: 1,027 specs, 0 errors; 10 eligible, 1,017 pending.",
+    "unitRegression": "PASS: six-section content/teaching parity; bounded three-source research; honest publisher evidence boundary; four-step GuidedChoice and answer keys B,B,A,B.",
+    "targetBrowser": {"command": "python3 scripts/test_english_performance_6_iv_1_browser.py --url http://127.0.0.1:8765/site/index.html", "status": "passed", "visibleSections": 6, "guidedChoiceSteps": 4, "keyboardWrongRetryCorrect": true, "liveRegions": 4, "axeViolations": 0, "axeIncomplete": 0, "reducedMotion": true, "responsiveWidths": [320, 375, 768], "horizontalOverflow": false, "blockedExternalRequests": 1, "pageErrors": []},
+    "npmTest": "PASS: complete npm test command including all repository unit/regression scripts and workbench traversal 1,027/1,027.",
+    "browserEnvironment": {"python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3", "playwright": "1.58.0", "chromiumRevision": "1208", "installation": "Not needed", "siteIndex": "Rebuilt with 1,052 lessons, 10,566 questions and 40 mapping sets."},
+    "commitPush": "not performed"
+  }
+}

@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-1-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "聽到『先整理資料，再比較結果，最後提出建議』，聽者應如何整理這段內容？",
+  "prompt": "老師說「這個安排也許還能再想想」，聽者不應直接記成什麼？",
   "options": [
     {
       "id": "A",
-      "text": "把資料、結果與建議當成三位人物"
+      "text": "老師可能保留意見"
     },
     {
       "id": "B",
-      "text": "依三個順序詞記錄工作流程"
+      "text": "安排尚未完全定案"
     },
     {
       "id": "C",
-      "text": "把三個步驟視為同時發生"
+      "text": "老師已正式宣布否決安排"
     },
     {
       "id": "D",
-      "text": "只記住最後的建議，不理會前面"
+      "text": "需要等待更多討論"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "『先、再、最後』明確標示步驟先後，適合用流程方式記錄。"
+    "value": "C",
+    "explanation": "也許與還能再想想表示保留與未定案，不能推成已正式否決。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究聆聽組織、聲情、語意與主旨判讀題型（順序理解）；官方語文課綱學習表現：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究聆聽目的、重點、語氣、觀點、摘要與行動紀錄能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫聆聽與溝通表現題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "聆聽、重點與語氣",
+      "observedPattern": "公立學校國文評量要求聽取重點、區分事實與推測、辨識語氣與觀點，並將口語內容轉成可行動紀錄；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口語理解、摘要與回應",
+      "observedPattern": "公立學校國文評量要求聽取重點、區分事實與推測、辨識語氣與觀點，並將口語內容轉成可行動紀錄；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "圈出模態與程度詞，判斷確定性，再把記錄寫成與原話相同的強度。",
+  "solutionSteps": [
+    "讀題定位：圈出「語氣保留」與聽者目的、說話者、語氣、理由、期限或行動線索。",
+    "分層整理：區分原話事實、合理推論、立場與未說出的假設；本題核心是「也許與還能再想想表示保留與未定案，不能推成已正式否決。」",
+    "核對正解：選項 C 保留原話的資訊範圍與確定程度，並能支持適當回應。",
+    "排除誘答：檢查是否把點頭當同意、保留當否決、個人觀點當全體結論，或急著提供對方未要求的建議。",
+    "回讀驗證：用聆聽紀錄重述一次，確認人物、主張、理由與下一步都能回到原話找到依據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

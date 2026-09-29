@@ -1,0 +1,60 @@
+{
+  "reportId": "a7-6-two-version-synthesis-d335",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-6",
+  "classification": "source-informed-original-fusion-draft; publisher-authentication-rights-and-third-publisher-review-pending",
+  "evidence": [
+    {
+      "publisherLabel": "nani",
+      "url": "https://fliphtml5.com/uygal/wdfq",
+      "locator": "Third-party uploaded publisher-introduction booklet, inner textbook page labeled p.87 / section 3-2",
+      "readInsight": "Integer-coordinate solution points are convenient for plotting; fractional coordinates can still be valid solutions.",
+      "limits": "Uploader, edition authenticity, publisher authorization, and reuse rights not independently verified; no example expression, point values, text, or layout reused."
+    },
+    {
+      "publisherLabel": "kanghsuan",
+      "url": "https://www.scribd.com/document/777687263/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%BA%B7%E8%BB%92%E7%89%88-%E4%B8%83%E4%B8%8B",
+      "locator": "Third-party shared version-labeled self-study booklet, pages 52-65",
+      "readInsight": "Progression from solution pairs and graph construction to horizontal/vertical special lines, substitution membership checks, and intersections.",
+      "limits": "Scribd labels content All Rights Reserved; uploader and edition authenticity and reuse rights not verified; no problem, answer, text, figure, or layout reused."
+    },
+    {
+      "publisherLabel": "hanlin",
+      "source": "Official resource index plus prior public school plan cross-check",
+      "readInsight": "Supports task boundaries and sectioning only; no chapter lesson text or video lesson was read in this evidence pass.",
+      "limits": "Hanlin full chapter evidence remains pending."
+    }
+  ],
+  "fusionDecisions": [
+    {
+      "sourceDifference": "Convenient integer points for plotting versus exact potentially fractional intersection coordinates.",
+      "learnerVisibleApplication": "Use (0,-2) and (2,2) as easy-to-plot points on 2x-y=2, then preserve the exact intersection (8/3,10/3) of the two equations.",
+      "diagnostic": "Reject rounding to (3,3): it satisfies x+y=6 but gives 2x-y=3, not 2.",
+      "interaction": "A-7-6 system graph maintains the exact intersection label while graphing the equation pair; visual proximity is settled by substitution into both originals."
+    },
+    {
+      "sourceDifference": "Single-equation solution/line interpretation must precede two-equation common-point interpretation.",
+      "learnerVisibleApplication": "Six original lesson sections connect point construction, horizontal/vertical lines, unique intersection, exact substitution, transfer, and self-check.",
+      "limits": "No parallel/coincident solution-count taxonomy is added to this A-7-6 lesson."
+    }
+  ],
+  "verification": {
+    "targetRegression": "PASS: original sections, exact fractional intersection, (3,3) counterexample, provenance limits, draft gates, and math-system-graph source equality",
+    "fullNpmTest": "PASS: full npm test suite, including 1,027/1,027 lesson bundle traversal",
+    "dataValidation": "PASS: 14,457 JSON files; 13,111 IDs; 1,032 KG nodes (rerun after this report is recorded)",
+    "implementationSpecValidation": "PASS: 1,027 specs; 0 errors; 1,027 pending",
+    "yamlSourceReferences": "7 references including two third-party limited-research samples",
+    "gitDiffCheck": "PASS (final rerun after report recording)",
+    "browser": "PASS: authorized Chrome at the official workbench URL; 1,027/1,027 traversal, 320/375/768 responsive, keyboard/accessibility-tree/reduced-motion checks; representative axe 24 runs, 0 violations, 0 incomplete. A-7-6 runtime engine was unchanged from its D-334 targeted real-Chromium test.",
+    "questionLedger": "Reused existing report; not rerun or rewritten"
+  },
+  "releaseGates": {
+    "lessonReviewStatus": "draft",
+    "publisherSlots": {"nani": "pending", "kanghsuan": "pending", "hanlin": "pending"},
+    "specQaStatus": "untested",
+    "thirdPartyRights": "unverified",
+    "fullTextAuthenticatedPublisherReview": "pending",
+    "contentIndependenceAndAIReview": "pending"
+  },
+  "noRepeatWork": "A-7-2, public-exam source ledger, and question rewrites were not repeated. No subtask was dispatched. No commit or push."
+}

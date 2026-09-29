@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-s-iv-2",
   "subject": "math",
-  "title": "s-Ⅳ-2：角與多邊形內外角",
+  "title": "s-Ⅳ-2：用分割與轉向理解多邊形角度",
   "knowledgeIds": [
     "kg-math-performance-s-iv-2"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「角與多邊形內外角」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "角度可以由兩條射線的共同端點定義，也可以透過分割圖形轉成較熟悉的三角形。n 邊多邊形的內角和為 (n−2)×180°，凸多邊形每個頂點的內角與外角若成線性對，和為 180°；若沿邊界同方向轉一圈，外角總和則為 360°。本課從紙風車、地磚與展場圍欄的自編情境出發，練習辨認角的種類、推導內角和、處理正多邊形與外角，並檢查圖形是否真的符合條件。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「角與多邊形內外角」相關的關係。"
+        "heading": "角由射線與端點決定",
+        "body": "先確認頂點與兩條邊，再讀取角的標記與方向。角度大小與圖形畫得大或小無關，不能用紙面長度代替角度量。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「角與多邊形內外角」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "把多邊形切成三角形",
+        "body": "從一個頂點向其餘非相鄰頂點連對角線，可把 n 邊凸多邊形分成 n−2 個三角形，因此內角和為 (n−2)×180°。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「角與多邊形內外角」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "內角與外角的兩種總和",
+        "body": "每個頂點的內角與相鄰外角形成平角；沿凸多邊形外框轉一圈，轉向量總和是 360°。要先說清楚外角的定義與方向。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「角與多邊形內外角」，並指出至少一項支持判斷的條件。"
+        "heading": "正多邊形才可平均分配",
+        "body": "正 n 邊形的各內角相等、各外角也相等，才能用總和除以 n。一般多邊形不能把內角和平均分配，除非題目給出等角條件。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「角與多邊形內外角」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先標出頂點、兩射線與角的方向。",
+    "用對角線分割三角形推導多邊形內角和。",
+    "分清每頂點的外角與繞一圈的外角總和。",
+    "只有正多邊形或等角條件才能平均分配角度。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「角與多邊形內外角」並驗算結果。",
-    "scenario": "以「s-Ⅳ-2：角與多邊形內外角」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "由三角形分割、內外角關係與正多邊形條件求角度。",
+    "scenario": "調整多邊形邊數與是否等角，觀察內角和、單角與外角總和的差異。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "symbol": "n",
+        "meaning": "多邊形的邊數"
+      },
+      {
+        "symbol": "a",
+        "meaning": "單一內角或外角"
+      },
+      {
+        "symbol": "t",
+        "meaning": "分割出的三角形數量"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「角與多邊形內外角」的第一步是什麼？",
+        "prompt": "五邊形從一個頂點分割成幾個三角形？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "3 個",
+          "5 個",
+          "2 個"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "分割數為 n−2，所以五邊形得到 3 個三角形。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "正八邊形的每個外角是多少？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "45°",
+          "360°",
+          "135°"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "凸多邊形外角總和 360°，正八邊形各外角相等，故 360÷8=45°。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "何時可以把內角和除以邊數求單角？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "有正多邊形或等角條件",
+          "任何多邊形都可以",
+          "只要圖形畫得對稱"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "平均分配需要各內角相等的條件，不能只靠外觀。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "s-Ⅳ-2：角與多邊形內外角；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；s-Ⅳ-2：角與多邊形內外角：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「角與多邊形內外角」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「s-Ⅳ-2：角與多邊形內外角」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；s-Ⅳ-2：角與多邊形內外角：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「s-Ⅳ-2：角與多邊形內外角」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；s-Ⅳ-2：角與多邊形內外角：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「s-Ⅳ-2：角與多邊形內外角」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「角與多邊形內外角」",
-        "body": "以「角與多邊形內外角」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "紙風車的尖角怎麼比較？",
+        "body": "原創紙風車由不同邊數的凸多邊形折成，請學習者先找出每個頂點的內角與外角，再比較圖形大小改變是否會改變角度。接著從一個頂點畫對角線，觀察四邊形、五邊形如何拆成三角形，讓角度總和的來源可見。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「角與多邊形內外角」的概念架構",
-        "body": "本單元依官方課綱所列的「角與多邊形內外角」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "由三角形推出內角和",
+        "body": "先把四邊形分成 2 個三角形、五邊形分成 3 個三角形，再歸納 n 邊形可分成 n−2 個三角形，得到 (n−2)×180°。每一步標出不能連到相鄰頂點的原因，避免誤數成 n 個三角形。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「s-Ⅳ-2：角與多邊形內外角」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "求正八邊形的內外角",
+        "body": "正八邊形內角和為 (8−2)×180°=1080°，因為各角相等，每個內角為 135°；相鄰外角與內角成平角，所以每個外角為 45°，八個外角總和為 360°。最後檢查兩種總和是否一致。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「角與多邊形內外角」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "判斷能否平均分角",
+        "body": "提供一般六邊形、正六邊形與一個只知道內角和的六邊形。學習者先判斷是否有等角條件，再決定能否把內角和除以 6；對錯誤的平均，要求用一個不等角反例說明，並在圖上標出哪些角可以相等、哪些角仍沒有證據，讓平均分配的條件可由圖形與文字重做。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「角與多邊形內外角」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用地磚安排轉向",
+        "body": "原創地磚邊界要求設計五邊形展區，先用內角和檢查五個轉角是否可能，再用外角 360°理解沿邊界走一圈的總轉向。若邊長改變但邊數和角條件不變，說明哪些角度結論仍成立。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「角與多邊形內外角」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "修正兩個外角混淆",
+        "body": "請修正『正八邊形每個外角是 360°』與『內角和除以邊數適用所有八邊形』。前者是把總和當單角，後者忽略正多邊形條件；用 45°、135°與不等角反例寫出完整理由。"
       }
     ],
     "summary": [
-      "先用自己的話界定「角與多邊形內外角」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "角由頂點與兩條射線決定，大小不由圖形畫面比例決定。",
+      "n 邊凸多邊形可分成 n−2 個三角形，內角和為 (n−2)×180°。",
+      "每頂點外角和內角成平角，沿凸多邊形一圈外角總和為 360°。",
+      "只有等角或正多邊形才能把總和平均分配。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「角與多邊形內外角」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼 n 邊凸多邊形的內角和是 (n−2)×180°？",
+        "expectedEvidence": "從一個頂點可分成 n−2 個三角形，每個三角形內角和 180°。"
       },
       {
-        "prompt": "在「角與多邊形內外角」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "正八邊形每個內角與外角各是多少？",
+        "expectedEvidence": "內角和 1080°，每個內角 135°；外角為 180−135=45°，八個外角合計 360°。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「角與多邊形內外角」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼一般六邊形不能直接把內角和除以 6？",
+        "expectedEvidence": "一般六邊形未必等角，除非題目另外給正六邊形或等角條件。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『s-Ⅳ-2：用分割與轉向理解多邊形角度』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整多邊形邊數與是否等角，觀察內角和、單角與外角總和的差異。』開始前，先回答：五邊形從一個頂點分割成幾個三角形？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整多邊形邊數與是否等角，觀察內角和、單角與外角總和的差異。』回答：何時可以把內角和除以邊數求單角？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "五邊形從一個頂點分割成幾個三角形？；操作時先預測，再依『s-Ⅳ-2：用分割與轉向理解多邊形角度』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-2：用分割與轉向理解多邊形角度)：答案 A；選項內容：3 個",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。分割數為 n−2，所以五邊形得到 3 個三角形。",
+          "feedback": "分割數為 n−2，所以五邊形得到 3 個三角形。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "正八邊形的每個外角是多少？；操作時先預測，再依『s-Ⅳ-2：用分割與轉向理解多邊形角度』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-2：用分割與轉向理解多邊形角度)：答案 A；選項內容：45°",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。凸多邊形外角總和 360°，正八邊形各外角相等，故 360÷8=45°。",
+          "feedback": "凸多邊形外角總和 360°，正八邊形各外角相等，故 360÷8=45°。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "何時可以把內角和除以邊數求單角？；操作時先預測，再依『s-Ⅳ-2：用分割與轉向理解多邊形角度』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-2：用分割與轉向理解多邊形角度)：答案 A；選項內容：有正多邊形或等角條件",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。平均分配需要各內角相等的條件，不能只靠外觀。",
+          "feedback": "平均分配需要各內角相等的條件，不能只靠外觀。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；角、多邊形內外角的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以角的定義、多邊形內角和與三角形分割建立推理",
+          "公開課程結構支持以角的分割、三角形和與多邊形邊數推導內外角關係。"
+        ],
+        "representations": [
+          "角標記、對角線分割與內角和公式互換"
+        ],
+        "examplesOrEvidence": [
+          "本課的紙風車、地磚與展場圍欄均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把邊數直接乘 180 或把單角平均套到一般多邊形"
+        ],
+        "assessmentEmphasis": [
+          "要求說明分割數、公式來源與等角條件"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；角、多邊形內外角的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過紙模型與操作比較內角、外角及轉向",
+          "公開課程結構支持以角的分割、三角形和與多邊形邊數推導內外角關係。"
+        ],
+        "representations": [
+          "紙風車、地磚、線段轉向與角度標記"
+        ],
+        "examplesOrEvidence": [
+          "本課的紙風車、地磚與展場圍欄均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "混淆單一外角和外角總和，或忽略方向"
+        ],
+        "assessmentEmphasis": [
+          "重視圖形操作、符號讀取與結果檢核"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf；角、多邊形內外角的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "連結正多邊形、設計邊界與繞行轉向",
+          "公開課程結構支持以角的分割、三角形和與多邊形邊數推導內外角關係。"
+        ],
+        "representations": [
+          "正多邊形、展場圍欄、單位與外角 360°"
+        ],
+        "examplesOrEvidence": [
+          "本課的紙風車、地磚與展場圍欄均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "只看圖形對稱外觀未確認等角條件"
+        ],
+        "assessmentEmphasis": [
+          "評估模型、角度總和、條件與實際設計限制"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持由三角形分割推導多邊形內角和。",
+      "內外角關係、外角總和與正多邊形等角條件是共同核心。",
+      "圖形標記、轉向、邊數與條件檢查需要互相驗證。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯角與多邊形內角和；康軒較突顯紙模型、外角與轉向操作；翰林較突顯正多邊形及設計邊界情境。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以紙風車和對角線分割讓內角和公式可觀察。",
+      "以正八邊形同時檢查單一內角、外角與總和。",
+      "把一般與正多邊形的條件差異、反例與地磚轉向整合成互動任務。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織角定義、多邊形內外角、三角形分割、正多邊形與設計情境。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

@@ -2,41 +2,84 @@
   "id": "question-math-content-s-8-11-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "等腰梯形的兩條對角線有何關係？",
+  "prompt": "下列哪個條件最能判定一個梯形是等腰梯形？",
   "options": [
     {
       "id": "A",
-      "text": "相等"
+      "text": "兩腰等長"
     },
     {
       "id": "B",
-      "text": "互相垂直"
+      "text": "兩底不平行"
     },
     {
       "id": "C",
-      "text": "一長一短"
+      "text": "只有一個角存在"
     },
     {
       "id": "D",
-      "text": "和等於高"
+      "text": "一條對角線較短"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-8-11"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "等腰梯形的對角線相等。"
+    "explanation": "兩腰等長就是等腰梯形的定義條件，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 梯形的基本性質 題型與官方課綱 KG kg-math-content-s-8-11",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供梯形基本性質與等腰梯形能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的梯形能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-8-11"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "梯形兩底、兩腰、垂直高、等腰梯形底角與對角線、面積及判定",
+      "observedPattern": "公開學校數學試題常以梯形的平行邊辨認、等腰條件、角度／對角線性質與面積計算考查圖形推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "梯形兩底、兩腰、垂直高、等腰梯形底角與對角線、面積及判定",
+      "observedPattern": "公開學校數學試題常以梯形的平行邊辨認、等腰條件、角度／對角線性質與面積計算考查圖形推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "判定題要找直接對應名稱的必要條件，不靠畫面對稱猜測。",
+  "solutionSteps": [
+    "梯形先要求有平行底。",
+    "等腰梯形再增加兩腰等長。",
+    "檢查選項 A 正好給出此條件。",
+    "其他選項不能保證等腰。",
+    "選 A。"
+  ]
 }

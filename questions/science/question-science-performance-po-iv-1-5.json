@@ -2,41 +2,73 @@
   "id": "question-science-performance-po-iv-1-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年7月26日社區環境站的觀察中，針對「po-Ⅳ-1：由多元來源進行有計畫觀察並察覺問題」提出可檢驗的科學問題，若比較 4 組、每組取樣 13 份資料，哪一項設計最適當？",
+  "prompt": "觀察兩種紙張吸水性時，為何每種紙張要用多張樣本並重複測量？",
   "options": [
     {
       "id": "A",
-      "text": "研究「po-Ⅳ-1：由多元來源進行有計畫觀察並察覺問題」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "讓結果看起來更複雜"
     },
     {
       "id": "B",
-      "text": "研究「po-Ⅳ-1：由多元來源進行有計畫觀察並察覺問題」時只測量4組中的一組就直接下結論"
+      "text": "減少偶然差異，估計同種紙張的典型表現"
     },
     {
       "id": "C",
-      "text": "研究「po-Ⅳ-1：由多元來源進行有計畫觀察並察覺問題」時先決定結論，再挑選支持結論的13筆資料"
+      "text": "保證任何測量都不會有誤差"
     },
     {
       "id": "D",
-      "text": "研究「po-Ⅳ-1：由多元來源進行有計畫觀察並察覺問題」時只改變光照時間，其餘條件一致，設置4組、每組取樣13份並各重複測量5次"
+      "text": "可以不用記錄厚度與水量"
     }
   ],
   "knowledgeIds": [
     "kg-science-performance-po-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「po-Ⅳ-1：由多元來源進行有計畫觀察並察覺問題」。"
+    "value": "B",
+    "explanation": "重複測量可降低偶然誤差並比較平均表現，但不能保證零誤差，也不能取代控制厚度、水量等條件。 正確答案：B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立國中自然科公開評量；僅研究觀察、探究設計與資料判讀能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源的能力方向獨立重寫；情境、數據設計、選項、答案與解析均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-po-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-science-performance-po-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "探究問題、資料蒐集與實驗設計能力方向",
+      "observedPattern": "公開自然科試題常以觀察現象、資料來源、變因控制、取樣與證據界線要求學生形成問題並判讀探究設計；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "多元資料判讀、問題形成與結論界線能力方向",
+      "observedPattern": "公開自然科試題常以觀察現象、資料來源、變因控制、取樣與證據界線要求學生形成問題並判讀探究設計；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把日常觀察轉成可測量的問題，再檢查資料來源、取樣、控制條件、重複測量與結論界線；不可用單一印象或未查證說法代替證據。",
+  "solutionSteps": [
+    "先讀情境並圈出本題的探究焦點：repeated observation。",
+    "區分觀察到的現象、想改變或比較的因素、要記錄的指標，以及可能需要固定的條件。",
+    "逐一檢查選項是否能蒐集可重複、可核對的證據；答案是 B。",
+    "用題幹資料回查：重複測量可降低偶然誤差並比較平均表現，但不能保證零誤差，也不能取代控制厚度、水量等條件。",
+    "最後限制結論的樣本、時間與測量條件，並指出若證據不足就要增加來源、樣本或重複觀察。"
+  ]
 }

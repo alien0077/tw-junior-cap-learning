@@ -1,0 +1,21 @@
+.short-play-lab{display:grid;gap:12px;min-width:0;margin-top:1rem;padding:clamp(12px,3vw,20px);border:1px solid #d8c8a8;border-radius:14px;background:#fffdf7;color:#352f25}
+.short-play-lab *{box-sizing:border-box}
+.short-play-lab h4,.short-play-lab h5{margin:.15rem 0 .5rem;line-height:1.45}
+.short-play-lab header p{margin:.35rem 0;color:#625943;line-height:1.6}
+.spl-kicker,.spl-label,.spl-transfer-label{color:#805c18;font-size:.86rem;font-weight:800}
+.spl-progress{margin:0;font-weight:800}
+.short-play-lab progress{width:100%;height:12px;accent-color:#8a6727}
+.spl-script,.spl-preview,.spl-question{display:grid;gap:10px;min-width:0;padding:14px;border:1px solid #ded5c3;border-radius:10px;background:#fff}
+.spl-script ol{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.spl-script li{display:grid;grid-template-columns:minmax(95px,auto) minmax(0,1fr);gap:10px;padding:10px;border-left:4px solid #b28a42;border-radius:5px;background:#faf7ef;line-height:1.6}
+.spl-script li b{color:#66502a}.spl-script li span{overflow-wrap:anywhere}
+.spl-script li[data-line-kind="direction"]{border-left-color:#648090;background:#f0f5f6}.spl-script li[data-line-kind="direction"] b{color:#365768}
+.spl-question fieldset{display:grid;gap:8px;min-width:0;margin:0;padding:12px;border:1px solid #ded5c3;border-radius:9px}
+.spl-question legend{padding:0 5px;font-weight:750}
+.spl-option{display:flex;gap:9px;align-items:flex-start;min-width:0;padding:10px;border:1px solid #e5dece;border-radius:8px;line-height:1.55;cursor:pointer}
+.spl-option input{flex:0 0 auto;width:20px;height:20px;margin:1px 0 0;accent-color:#8a6727}.spl-option span{overflow-wrap:anywhere}
+.short-play-lab button{min-height:44px;justify-self:start;padding:9px 14px;border:1px solid #785819;border-radius:8px;background:#fff;color:#614914;font:inherit;font-weight:750;cursor:pointer}
+.short-play-lab textarea{width:100%;min-height:72px;padding:10px;border:1px solid #9b8a67;border-radius:8px;font:inherit;line-height:1.55}
+.spl-status{min-height:1.5em;margin:0;color:#614914;font-weight:700;line-height:1.55}.spl-prediction{margin:0;padding:10px;border-radius:8px;background:#f7f0df;overflow-wrap:anywhere}
+@media(max-width:480px){.spl-script li{grid-template-columns:1fr;gap:3px}.spl-script,.spl-preview,.spl-question{padding:10px}.short-play-lab button{width:100%}}
+@media(prefers-reduced-motion:reduce){.short-play-lab *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

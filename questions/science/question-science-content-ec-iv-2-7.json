@@ -2,41 +2,84 @@
   "id": "question-science-content-ec-iv-2-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年6月5日社區環境站的觀察中，一個物體質量為 520 g、體積為 92 cm³，研究「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」時，其密度為何？",
+  "prompt": "下列哪一種情況不適合直接使用原本的 pV＝常數關係？",
   "options": [
     {
       "id": "A",
-      "text": "612 g/cm³"
+      "text": "同一氣密注射器、溫度固定、活塞慢慢移動"
     },
     {
       "id": "B",
-      "text": "0.176923 g/cm³"
+      "text": "同一份氣體、溫度固定、體積改變"
     },
     {
       "id": "C",
-      "text": "47840 g/cm³"
+      "text": "壓縮時容器漏氣，且氣體量不再固定"
     },
     {
       "id": "D",
-      "text": "5.65217 g/cm³"
+      "text": "同一氣體在不同體積讀取壓力"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ec-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "密度＝質量÷體積＝520÷92＝5.65217 g/cm³。 本題對應 KG「Ec-Ⅳ-2：定溫定量氣體的壓力與體積關係」。"
+    "value": "C",
+    "explanation": "C。若壓縮同時加熱，溫度 T 不固定，pV 不必維持原值；此時須先處理溫度變化，不能直接套用波以耳定律。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題中的氣密注射器、定溫定量、pV 計算、圖表與控制變因能力；本題改寫為壓力與體積原創情境。",
+    "authoringNote": "本題取公立學校公開自然／理化試題的氣體壓力、體積、圖表與實驗控制能力方向，題幹、選項、答案、解析與五步解法均以 Ec-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ec-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-ec-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫；只取氣體壓力、體積與資料判讀的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "氣體壓力、體積與資料判讀",
+      "observedPattern": "公立學校公開自然／理化試題常以氣密注射器、活塞、壓力表、資料表或生活裝置考查定溫定量下的壓力—體積反比、pV 計算、圖表轉換與控制條件；本題只取能力方向並重新設計數據、情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考；只取氣體定律、壓力體積與實驗情境的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "氣體定律、壓力體積與實驗情境",
+      "observedPattern": "公立學校公開自然／理化試題常以氣密注射器、活塞、壓力表、資料表或生活裝置考查定溫定量下的壓力—體積反比、pV 計算、圖表轉換與控制條件；本題只取能力方向並重新設計數據、情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題；只取氣密注射器、氣體壓力與體積關係的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "氣密注射器、氣體壓力與體積關係",
+      "observedPattern": "公立學校公開自然／理化試題常以氣密注射器、活塞、壓力表、資料表或生活裝置考查定溫定量下的壓力—體積反比、pV 計算、圖表轉換與控制條件；本題只取能力方向並重新設計數據、情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "辨認 T、n、漏氣與熱交換是否改變；只要控制條件破壞就暫停套用。",
+  "solutionSteps": [
+    "確認溫度固定、氣體量不變且容器氣密。",
+    "寫出 p₁V₁=p₂V₂ 或 pV=常數。",
+    "比較體積與原體積的倍數，反向推估壓力倍數。",
+    "代入數值並保留 kPa、mL 等單位。",
+    "用 p 增減方向與控制條件回查答案是否合理。"
+  ]
 }

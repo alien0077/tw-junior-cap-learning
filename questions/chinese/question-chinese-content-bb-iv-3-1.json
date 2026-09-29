@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bb-iv-3-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "文章描寫樹木經過風雨仍長出新芽，最可能寄託何種感悟？",
+  "prompt": "觀察筆記寫：『雨後第三天，牆角苔蘚面積比前一天擴大；當日溫度與濕度也較高。』下列哪項最符合記錄證據？",
   "options": [
     {
       "id": "A",
-      "text": "生命具有韌性"
+      "text": "苔蘚一定因溫度升高才生長"
     },
     {
       "id": "B",
-      "text": "物價必然上漲"
+      "text": "記錄顯示苔蘚面積與較高濕度、溫度同時出現，但尚不能確定唯一原因"
     },
     {
       "id": "C",
-      "text": "城市交通繁忙"
+      "text": "所有苔蘚都會在第三天擴大"
     },
     {
       "id": "D",
-      "text": "人物一定獲獎"
+      "text": "只要下雨就一定會長苔蘚"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "風雨後重新萌芽象徵生命的韌性與希望。"
+    "value": "B",
+    "explanation": "記錄支持兩個條件同時變化與面積增加，但沒有控制其他因素，不能直接判定唯一因果或擴大到所有苔蘚。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "物、自然與生命感悟；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究自然觀察、景物象徵、生命感悟與推論界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫物自然生命感悟題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "自然觀察、象徵與文本推論",
+      "observedPattern": "公立學校國文評量要求區分自然觀察與生命感悟、辨認象徵的證據、比較抒情與記錄任務，並限制過度推論；本題使用全新自然情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "景物描寫、生命感悟與證據",
+      "observedPattern": "公立學校國文評量要求區分自然觀察與生命感悟、辨認象徵的證據、比較抒情與記錄任務，並限制過度推論；本題使用全新自然情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把觀察到的共現和因果解釋分開，明確標示資料能支持的強度。",
+  "solutionSteps": [
+    "圈出面積、溫度與濕度三項記錄。",
+    "確認兩個條件與變化同時出現。",
+    "檢查是否有控制變因或重複實驗。",
+    "B 保留觀察結果，又不宣稱唯一原因。",
+    "提出下一次固定光照與水量的比較，才能增加因果證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

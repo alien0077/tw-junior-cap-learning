@@ -2,41 +2,78 @@
   "id": "question-science-content-je-iv-3-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年11月30日社區環境站的觀察中，將 175℃ 的金屬片放入 28℃ 的水中，研究「Je-Ⅳ-3：化學平衡與溫度、濃度的影響」時，最初的熱傳方向為何？",
+  "prompt": "若移除可逆反應中的部分生成物，系統重新達平衡時通常會？",
   "options": [
     {
       "id": "A",
-      "text": "由 28℃ 的水傳向 175℃ 金屬片"
+      "text": "往生成物方向反應以補回部分被移除的生成物"
     },
     {
       "id": "B",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "完全停止反應"
     },
     {
       "id": "C",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "只往反應物方向使生成物更少"
     },
     {
       "id": "D",
-      "text": "由金屬片傳向水"
+      "text": "一定改變平衡常數"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-je-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 175℃ 金屬片傳向 28℃ 的水。 本題對應 KG「Je-Ⅳ-3：化學平衡與溫度、濃度的影響」。"
+    "value": "A",
+    "explanation": "移除生成物使系統傾向生成更多生成物以抵消改變；常數主要由溫度決定。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的可逆反應、動態平衡、溫度／濃度、圖表與製程能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-je-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-je-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "可逆反應、平衡、溫度濃度與圖表判讀",
+      "pattern": "取由平衡資料、反應條件與圖表推論可逆反應變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由平衡資料、反應條件與圖表推論可逆反應變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "平衡位移、反應條件、工業與生活情境",
+      "pattern": "取從資料曲線、條件改變與製程情境判斷平衡位置及收率的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從資料曲線、條件改變與製程情境判斷平衡位置及收率的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "以勒沙特列原理預測濃度改變後的補償方向。",
+  "solutionSteps": [
+    "確認被移除的是生成物。",
+    "觀察系統受到的濃度改變。",
+    "判斷反應往能增加生成物的方向移動。",
+    "確認溫度不變時平衡常數不因此改變。",
+    "所以 A 正確。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

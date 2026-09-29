@@ -1,0 +1,81 @@
+{
+  "reportId": "social-geo-af-iv-1-substantive-fusion-d344",
+  "date": "2026-09-28",
+  "lessonId": "lesson-social-content-geo-af-iv-1",
+  "curriculumId": "cur-social-content-geo-af-iv-1",
+  "classification": "source-limited-original-fusion-draft-with-visible-content-and-browser-qa",
+  "request": "Continue whole-project substantive fusion after stopping repeated A-7-2 work; repair the next audited unit without subtask delegation.",
+  "identifiedGap": {
+    "dataLayer": "Six full unit-authored instructional paragraphs existed in teaching.body, but site/app.js renders learner-facing lesson prose exclusively from content.sections; the page had only one short learning-goal sentence.",
+    "specification": "The unit specification described generic map-data manipulation, sliders, synchronized representations and a generic background/evidence/result misconception, while the actual lesson implemented three guided-choice questions and no map simulation.",
+    "sourceAttribution": "Prior version notes made unsupported publisher-specific pedagogical claims, cited a mismatched Hanlin grade-level file and did not clearly distinguish a publisher teaching outline, official index and public-school curriculum plan."
+  },
+  "sourceResearchAndLimits": [
+    {
+      "source": "Hanlin official 113-down social-studies teaching integration file",
+      "url": "https://website.hle.com.tw/mgz/file/jso/%E5%9C%8B%E4%B8%AD%E7%A4%BE%E6%9C%83-113%E4%B8%8B%E6%95%99%E5%AD%B8%E7%B5%B1%E6%95%B4%E7%AB%99%28%E5%9C%B0%E7%90%86%29%E6%95%99%E7%94%A8.pdf",
+      "locator": "PDF p.17, chapter 5 architecture chart",
+      "read": "Settlement formation/types, rural-urban interdependence, transport modes, transport networks and settlement systems, and transport/settlement development.",
+      "limit": "Publisher teaching outline, not a full student textbook chapter."
+    },
+    {
+      "source": "Kanghsuan official Geography resource index",
+      "url": "https://digitalmaster.knsh.com.tw/all/video/j/geography_page.html?l1=7%E4%B8%8B&l2=%E7%AC%AC%E4%BA%94%E8%AA%B2%E3%80%80%E8%87%BA%E7%81%A3%E7%9A%84%E8%81%9A%E8%90%BD%E9%A1%9E%E5%9E%8B%E8%88%87%E4%BA%A4%E9%80%9A%E7%B6%B2%E7%B5%A1",
+      "locator": "Grade 7 down, lesson 5 title/index",
+      "read": "Verified the unit title and resource boundary only.",
+      "limit": "Videos/textbook body not read; official page states video copyright restrictions."
+    },
+    {
+      "source": "Public-school geography curriculum plan identifying Nani edition",
+      "url": "https://course.cyc.edu.tw/upfile/course109/sub1/14535426760482702.pdf",
+      "locator": "PDF pp.101-103, unit 5 schedule/objectives/evaluation",
+      "read": "The plan lists settlement formation, urbanization/metropolitan areas, transport-network relationships, classroom discussion and computer-based practice.",
+      "limit": "School curriculum plan, not Nani publisher prose or a complete textbook chapter."
+    }
+  ],
+  "originalFusion": {
+    "sourceToTeachingDecisions": [
+      {
+        "sourceInsight": "Available sources connect settlement function/interdependence with transport, but their depth differs and only the Hanlin teaching outline exposes a chapter concept sequence.",
+        "visibleSections": [0, 1, 2],
+        "originalDecision": "Start with a medical journey, distinguish center status by service and user, and have learners infer the village-town-city network from original service and flow data."
+      },
+      {
+        "sourceInsight": "A chapter-level transport/settlement relationship must explain actual interaction, not merely list transport modes.",
+        "visibleSections": [3],
+        "originalDecision": "Use new route data (8 km/52-minute transfer versus 12 km/35-minute direct service) to distinguish straight-line distance from accessibility; add schedule, walking and user needs."
+      },
+      {
+        "sourceInsight": "Public course materials support discussing place-based interaction and classroom application, but do not establish publisher-authored project evaluation or the lesson's examples.",
+        "visibleSections": [4, 5],
+        "originalDecision": "Create a fictional transfer-station tradeoff, require beneficiaries/cost-bearers and missing evidence, then close with a service-plus-flow causal explanation and scale/data limitation."
+      }
+    ],
+    "authorshipBoundary": "All settings, route numbers, village/town/city service inventory, questions, misconception feedback and interaction options are original. The lesson is a source-limited fusion draft, not verified three-publisher textbook synthesis."
+  },
+  "implementation": {
+    "learnerVisibleLesson": "Copied all six authored teaching sections into content.sections, which site/app.js actually renders; targeted regression verifies the six visible paragraphs map to the authored teaching body.",
+    "interactive": "Kept the implemented guided-choice format and three unit-specific stages (center evidence, accessibility, transport tradeoffs); corrected the spec from fictional map controls to the actual choices and feedback.",
+    "spec": "Replaced generic learning goals, concepts, misconceptions, flow, transfer, exit ticket and test cases with unit-specific requirements. Registered GuidedChoiceBlock capabilities. Publisher evidence remains pending."
+  },
+  "verification": {
+    "targetedRegression": "PASS: npm run test:social:geo-af-iv-1",
+    "fullRuntimeSuite": "PASS: npm test; workbench rendered 1,027/1,027 and the new Geo Af-IV-1 regression ran in the suite",
+    "dataValidation": "PASS: 14,466 JSON files, 13,112 IDs, 1,032 KG nodes; 1,052 lessons and 10,566 questions remain draft",
+    "specValidation": "PASS: 1,027 files, 0 errors; 1,027 QA pending",
+    "strictLessonIndependence": "PASS: 614 learning-content lessons, 0 risks, 0 strict failures",
+    "siteIndex": "PASS: rebuilt, --check passed, 1,052 lessons, 10,526 question paths, 40 mappings",
+    "browserSmoke": "PASS in authorized real Chromium: 1,027-unit traversal; target 6 visible sections, 3 choices, wrong-answer retry, keyboard correct answer, 320/375/768 widths, no page errors",
+    "axe": "PASS: 36 runs across 320/375/768, including Geo Af-IV-1; 0 violations, 0 incomplete",
+    "diffCheck": "PASS: git diff --check",
+    "humanReview": "Not performed; automation is not teacher/expert/content review or a real screen-reader review."
+  },
+  "completionBoundary": {
+    "lessonReviewStatus": "draft",
+    "publisherEvidenceSlots": "pending; no promotion",
+    "publisherTextCoverage": "Hanlin official teaching outline only; Kanghsuan index only; Nani-aligned school plan only. Full publisher chapters and version-authentication/reuse review remain open.",
+    "contentReview": "pending",
+    "commitPush": "not performed; whole-project goal remains active"
+  },
+  "noRepeatWork": "Did not regenerate the completed public-exam source ledger, rewrite A-7-2, re-research its sources, reinstall browser dependencies, delegate, commit or push."
+}

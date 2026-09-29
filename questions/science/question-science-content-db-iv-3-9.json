@@ -2,41 +2,67 @@
   "id": "question-science-content-db-iv-3-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年8月13日自然科教室的觀察中，針對「Db-Ⅳ-3：呼吸系統與外界氣體交換」提出可檢驗的科學問題，若比較 5 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "若某人吸入含氧量較低的空氣，仍能判斷肺泡氣體交換的基本方向嗎？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只改變水溫，其餘條件一致，設置5組、每組取樣17份並各重複測量3次"
+      "text": "可以；仍應依肺泡與血液兩側的氧、二氧化碳濃度差判斷，方向可能因差值改變"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "不可以；只要含氧量降低，肺泡就完全停止所有氣體交換"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只測量5組中的一組就直接下結論"
+      "text": "可以；氧氣永遠由血液流入肺泡，與濃度無關"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "不可以；肺泡只交換水蒸氣，不交換氧與二氧化碳"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-3：呼吸系統與外界氣體交換」。"
+    "explanation": "氣體交換依兩側濃度或分壓差進行；吸入空氣改變可能使交換效率或某些方向條件改變，但不能說肺泡完全不交換氣體。選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的呼吸運動、肺泡與氣體交換能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "呼吸運動、肺泡氣體交換與呼吸資料判讀",
+      "pattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "推理題不要只背固定箭頭，要把方向建立在濃度差與兩側物質上。",
+  "solutionSteps": [
+    "列出肺泡與血液各自包含的氧氣與二氧化碳。",
+    "確認擴散方向取決於兩側濃度或分壓差。",
+    "再考慮低氧空氣可能降低交換效率。",
+    "排除與濃度無關、完全停止或只交換水的說法。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-2-9",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「3-Ⅳ-2／辨識課堂字詞」practice, what does “distant” mean in question 9?",
+  "prompt": "A club schedule lists robotics at 9:00 on Tuesday and Friday, while art is listed only on Thursday. Which activity meets more often?",
   "options": [
     {
       "id": "A",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “distant” means far away."
+      "text": "Art, because Thursday comes first."
     },
     {
       "id": "B",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “distant” means a place where people wait for the art room."
+      "text": "Both meet the same number of times."
     },
     {
       "id": "C",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “distant” means a tool used to measure 18 minutes."
+      "text": "Art, because it has a shorter name."
     },
     {
       "id": "D",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “distant” means a person who teaches at the art room."
+      "text": "Robotics, because it appears on two days."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "“distant” means far away. This item targets 3-Ⅳ-2／辨識課堂字詞, question 9."
+    "value": "D",
+    "explanation": "比較課表時數出現位置：robotics 有星期二、星期五兩次，art 只有星期四一次，因此 robotics 開課較頻繁。D 是唯一使用表格次數而非無關線索的答案。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=449&cfsn=3045&fn=114-1-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E6%9B%BE%E8%A9%A0%E5%9C%92.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣立宜昌國中公開試題，PDF page 3, item 25: compare repeated entries in a weekly school schedule；只參照題型，不重製原卷。",
+    "authoringNote": "依官方英語課綱與 Knowledge Graph，參照公立學校公開試題的課堂指令、校園詞彙、時間／方位與情境推論能力獨立改寫；未複製原題題幹、選項、資料或答案。題目維持draft，尚待版本研究及完整發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=449&cfsn=3045&fn=114-1-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E6%9B%BE%E8%A9%A0%E5%9C%92.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中114學年度第一學期第二次段考七年級英語科試題卷",
+      "year": "114-1-2",
+      "subject": "english",
+      "locator": "PDF page 3, item 25: compare repeated entries in a weekly school schedule",
+      "observedPattern": "只參照第25題的校園詞彙／指令／行程或語境推論形式；公開查閱不等於可重製；只參考逐題標示的命令句、校園情境、行程資料與指令判讀形式，不複製原題文字、選項、圖片或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "比較行程表時先確定比較對象與共同單位，再數各自出現次數；不要讓星期先後或字詞長短干擾資料判讀。",
+  "solutionSteps": [
+    "先找出題目要求比較的兩項活動：robotics 和 art，而不是比較星期或課名。",
+    "在一週課表中標記 robotics 的 Tuesday、Friday 兩格，再標記 art 的 Thursday 一格。",
+    "把兩者都換成每週出現次數，分別是兩次與一次，單位一致才可比較。",
+    "D 說明 robotics 出現兩天；A、B、C 沒有依據課表的實際次數。",
+    "因此選 D；遇到表格比較題，先圈欄列與單位，再計數，不能憑星期順序猜頻率。"
+  ]
 }

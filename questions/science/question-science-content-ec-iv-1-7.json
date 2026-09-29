@@ -2,23 +2,23 @@
   "id": "question-science-content-ec-iv-1-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年9月18日河川觀測站的觀察中，一個物體質量為 250 g、體積為 67 cm³，研究「Ec-Ⅳ-1：大氣壓力由空氣重量造成」時，其密度為何？",
+  "prompt": "下列關於大氣壓力方向的說法何者較正確？",
   "options": [
     {
       "id": "A",
-      "text": "3.73134 g/cm³"
+      "text": "大氣壓力只會垂直向下"
     },
     {
       "id": "B",
-      "text": "317 g/cm³"
+      "text": "氣體可流動，因此空氣能從各方向對物體表面施加垂直作用"
     },
     {
       "id": "C",
-      "text": "0.268 g/cm³"
+      "text": "大氣壓力只在晴天存在"
     },
     {
       "id": "D",
-      "text": "16750 g/cm³"
+      "text": "大氣壓力只能作用在水平面"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "密度＝質量÷體積＝250÷67＝3.73134 g/cm³。 本題對應 KG「Ec-Ⅳ-1：大氣壓力由空氣重量造成」。"
+    "value": "B",
+    "explanation": "氣體分子從各方向碰撞表面，氣體壓力對表面局部而言沿表面法線方向；大氣壓力不只向下，也可作用於側面與其他方向。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作大氣壓力、壓力差、液柱與生活應用的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ec-iv-1"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-ec-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "大氣壓力、壓力差與氣體現象能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用吸盤、吸管、液柱、氣壓計與海拔情境考查大氣壓力來源、壓力差及單位面積概念；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "氣壓、液柱與生活壓力現象判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用吸盤、吸管、液柱、氣壓計與海拔情境考查大氣壓力來源、壓力差及單位面積概念；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "大氣壓力、吸盤吸管與氣體應用題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用吸盤、吸管、液柱、氣壓計與海拔情境考查大氣壓力來源、壓力差及單位面積概念；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分清空氣柱重量的來源與氣體壓力在表面的作用方向。",
+  "solutionSteps": [
+    "不要把重力方向直接當成所有壓力方向。",
+    "氣體分子會從不同方向運動並碰撞表面。",
+    "壓力對表面是垂直作用。",
+    "因此側面與其他朝向也可承受大氣壓力。",
+    "所以應選能描述各方向作用的敘述。"
+  ]
 }

@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-5-iv-7",
+  "change": [
+    "Mapped the authored listening-note workflow to explicit prediction, note construction, relation-cue observation, evidence explanation, and transfer stages.",
+    "Kept this unit's actual local speech-synthesis pathway and transcript fallback; no simulation interaction was invented."
+  ],
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/site/index.html",
+    "authoredSections": 6,
+    "distinctListeningTasks": 4,
+    "speechSynthesisDataPath": "mocked API; real page controls and data binding exercised",
+    "keyboardPlaybackAndAnswers": true,
+    "collapsedTranscriptAndKeyboardDisclosure": true,
+    "speechUnavailableFallback": true,
+    "ariaLive": true,
+    "externalNetworkBlocked": true,
+    "reducedMotion": "emulated",
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "989/1,027 pass; 38 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "Automated speech-synthesis mocking is not a human listening or pronunciation evaluation.",
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

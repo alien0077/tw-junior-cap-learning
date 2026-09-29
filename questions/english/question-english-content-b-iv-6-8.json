@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-6-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「B-Ⅳ-6／圖片描述」task, what is the best way to prepare question 8?",
+  "prompt": "A classroom picture has **three pencils and a ruler on the desk, but no eraser**. Which item is missing?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about B-Ⅳ-6／圖片描述."
+      "text": "An eraser"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about B-Ⅳ-6／圖片描述."
+      "text": "A pencil"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking B-Ⅳ-6／圖片描述."
+      "text": "A ruler"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about B-Ⅳ-6／圖片描述."
+      "text": "A desk"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,60 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets B-Ⅳ-6／圖片描述, question 8."
+    "explanation": "The description explicitly says there is no eraser; the other listed items are present."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度第 2 學期英文段考；研究圖片中的人物、動作、數量、位置、比較與方向描述；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+    "sourceLocator": "新北市立碧華國中114學年度第2學期七年級第3次定期評量英語科試題卷，PDF第3頁第45題以 NOT one of the three parts 辨認未列入的內容；本題改為清點桌面物品並找出明確缺少者，不沿用原文章或選項。",
+    "authoringNote": "依官方英語文領域課綱、單元 KG 與公立學校公開考題，原創改寫正反線索與物品缺漏辨認題；未複製原文、選項、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-b-iv-6"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-b-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "圖片描述、位置與實用英語",
+      "observedPattern": "公立學校英語評量要求從圖像或場景辨認位置、數量、顏色、動作、比較、缺漏、順序與整體推論；本題改為全新文字場景，未複製圖片。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級英語科試題卷",
+      "year": "114-2",
+      "subject": "english",
+      "locator": "校方附件「114-2-3-七年級英語試題卷.pdf」第3頁第45題",
+      "pattern": "原卷以 NOT one of the three parts 辨認不屬於文章列舉內容的選項；本題改為從物品清單找出明確缺少者。",
+      "observedPattern": "原卷以 NOT one of the three parts 辨認不屬於文章列舉內容的選項；本題改為從物品清單找出明確缺少者。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "圖像描述、細節與應用",
+      "observedPattern": "公立學校英語評量要求從圖像或場景辨認位置、數量、顏色、動作、比較、缺漏、順序與整體推論；本題改為全新文字場景，未複製圖片。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "遇到 no 要辨認缺漏物件，不能把已出現的物件當成答案。",
+  "solutionSteps": [
+    "先把題幹列出的物品分成已出現與未出現：三枝鉛筆、尺在桌上；橡皮擦前有 no。",
+    "核對 B、C、D：鉛筆、尺與桌子都明確出現在描述中，不能選已存在的物件。",
+    "讀取否定線索 no eraser，意思是畫面沒有橡皮擦；這正是題目詢問的缺漏物品。",
+    "選項 A An eraser 與缺漏線索相符；其他選項都和已出現資訊相衝突。",
+    "答案選 A；缺漏題先列出已確認存在的項目，再用否定詞找出唯一缺席者。"
+  ]
 }

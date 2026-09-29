@@ -1,0 +1,132 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-7
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-7
+  title: 5-Ⅳ-7：聽日常對話筆記
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-7 能聽懂日常生活對話，並能以簡單的字詞、句子記下要點。
+    curriculumIntent: 從日常對話辨認關鍵詞及溝通目的，連結人物、事件、時間、地點與物件，以個人可讀的短詞句保存要點和關係，並透過回聽或後續回述核對資訊是否足以支持行動。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 南一標示公開教材簡介本提供聽力策略流程，翰林標示校方課程計畫提供生活應用／順序整理脈絡；兩者均非指定冊次出版社課文，康軒單元材料未取得。來源限制留在lesson內，三家證據不可冒充同等級。
+    currentEvidenceStatus: official-curriculum-and-kg-verified; one-publisher-labelled-method-source; one-hanlin-labelled-school-plan; kanghsuan-unit-content-pending
+  learningGoals:
+  - 聽前依場景或問題預測需要注意的資訊類型，聽時辨認人物及溝通目的。
+  - 用短詞、符號或箭頭記錄事件、時地、否定、條件及下一步之間的關係。
+  - 以回聽、逐字稿核對或同儕回述檢驗筆記完整性，區分明說內容與推測。
+  prerequisites:
+  - 能理解國中常見日常生活詞彙與簡短問答。
+  - 能辨認 who/what/when/where 及 but/if/before/not 等高頻線索。
+  coreConcepts:
+  - 關鍵詞須依交談角色與目的解讀，避免把孤立詞彙當成完整意思。
+  - 筆記要保存時間、地點、轉折、否定和條件等決定行動的關係。
+  - 簡短筆記是否充分，以能否可靠重建要點並採取適當下一步判斷。
+  misconceptions:
+  - 以抄到的詞語數量衡量聽懂程度，忽略詞語間的先後或轉折。
+  - 將可能地點／條件選項記成確定安排，或漏寫 not、but、if、before。
+  - 把自己推測的原因或態度寫成說話者明確說出的事實。
+  contentFlow:
+  - 'predict: 從值日交接失敗的原創校園情境辨認「詞有記到、行動仍錯」，先預測任務會需要哪些人物、目的、時間與限制線索'
+  - 'manipulate: 依任務選取／重排人物、事件、時地和關係詞，將散詞清單改成可支持下一步行動的短筆記'
+  - 'observe: 比較只有名詞的筆記與帶箭頭、but／if／not／before的筆記，觀察哪一版能忠實保留行動關係'
+  - 'explain: 用借尺對話指出人物、物品、起始時間和歸還期限各自如何支持推論；回聽限制詞並排除自行添加的原因'
+  - 'transfer: 換到失物／社團安排等新情境，讓下一位讀者依筆記回述並檢查歧義'
+  visualizations:
+  - '筆記關係槽：人物／目的、事件、時地、限制、下一步；可以用個人易讀縮寫填寫。'
+  - '詞語連結標記：箭頭表先後／交接，but 對比，if 標條件，not 劃除錯誤行動。'
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-7-I01
+    component: GuidedChoiceBlock
+    purpose: 播放單元原創英文日常對話，讓學生由聽到的詞語選擇能保留人物、地點、時序、限制及下一步的短筆記。
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+      transcriptVisible: false
+    studentActions:
+    - 以可存取播放按鈕聽原創短對話，試記少量關鍵詞及關係。
+    - 從三種筆記中選出唯一忠實且足以支持後續行動的一項。
+    - 錯答後依題目提示回聽限制詞或核對詞語關係，再重選。
+    - 作答後閱讀解析；需要對照時自行展開逐字稿。
+    visualRules:
+    - 逐字稿預設收合，避免先讀字幕代替聽覺辨識；每段有清楚播放、播放狀態及 transcript disclosure。
+    - 使用內建 SpeechSynthesis 播放英文文字，不連線至外部服務；不支援或播放失敗時明確提供自讀備援，且不得宣稱自讀等於聽力作答。
+    - 播放、選項、逐字稿及回饋皆由鍵盤可達；回饋以 aria-live 宣告，不以顏色單獨表示正誤。
+    - 每題皆使用本課獨立對話與迷思；320px 窄視窗不得裁切音訊控制、選項與解析。
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-7-I01
+      trigger: 學生記得 art room、today、music room 等名詞，卻把 but、not、if 或 before 的關係抄錯。
+      prompt: 請回到音訊或逐字稿，指出哪個限制詞決定哪個地點／時間能否成立。
+      expectedEvidence: 能指出一項原話限制及對應的行動後果，例如樓梯今日關閉所以改搭辦公室旁電梯。
+    feedback:
+      correct: 說明正確筆記保留的人物、關係與行動線索，再要求學生用一句話回述下一步。
+      incorrect: 先提示本題最關鍵的 but／if／before／not 或人物方向；不直接代選，重試後顯示解析。
+  teachingPatternRefs:
+  - refId: nani-public-listening-strategy-page-9
+    reuseDecision: method-inspiration-only
+    application: '吸收聽前預測、聽中關鍵詞筆記與推論、再次聆聽核對的策略次序；本課對話、答案與說明全部原創。'
+  - refId: hanlin-labelled-school-plan-listening
+    reuseDecision: method-inspiration-only
+    application: '只參照公開分享的翰林標示校方計畫對生活應用／地點順序整理的學習焦點，不歸因為出版社教法。'
+  - refId: naer-course-manual-5-iv-7
+    reuseDecision: curriculum-boundary
+    application: '以官方5-Ⅳ-7子項規定關鍵詞、人物事件時地物、溝通目的及自編摘要作為能力邊界；故事及廣播另屬5-Ⅳ-8／5-Ⅳ-9。'
+  capTransfer:
+    questionType: 對話聽解／要點筆記／行動條件判讀
+    stemConstraint: 必須提供原創對話並要求筆記保留人物、事件、時間地點及否定／條件等關係；不得只測單字辨識。
+    requiredResponse: 選出最可靠短筆記，指出至少兩項相互關聯的原話線索及其對下一步的影響。
+    scoring: 對話目的與事件 1、人物或時空線索 1、限制關係／下一步 1。
+  exitTicket:
+    prompt: 聽完本課一段新對話後，寫下三至五個你看得懂的詞或符號，並用一句話說明下一位聽者可據此採取什麼行動。
+    successCriteria:
+    - 筆記能辨認主要人物及對話任務。
+    - 至少保留一個會改變時間、地點或行動的條件／限制。
+    - 回述不把推測冒充明說內容，且與原話方向一致。
+  expressionExtension:
+    applicable: true
+    task: '同伴以自然語速讀一段自編校園對話一次；記三至五個線索後交給另一位同學照筆記回述，最後比較哪個關係詞若省略會導致錯誤行動。'
+    constraint: '不照抄全文；只記自己回看時能解碼的詞句／符號，推論需明確標記。'
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 播放按鈕有對話編號及語言名稱；播放狀態及答題回饋以aria-live呈現；逐字稿位於可展開的語意details/summary中。
+    reducedMotion: 無自動動畫；逐步選答和語音播放不依賴動畫。
+  testCases:
+  - 載入學生頁後六段原創教學完整可見且與teaching.body逐段一致；四段對話均有語音播放與預設收合逐字稿。
+  - 使用合成語音 mock 時，播放按鈕傳入相應audioScript及en-US語言；status先顯示播放、結束後提示聽後作答。
+  - 每題答案初始不揭露；鍵盤錯答顯示該題特定一階提示，正答顯示本題詳解。
+  - 展開逐字稿後逐行文字與原創audioScript相同；不支援語音的情況有文字fallback與不冒稱聽力的提示。
+  - 在320、375、768px檢查無水平溢位，播放、答案、details/summary可用鍵盤操作且無page error。
+  - 所有對話內容自編且網路攔截後仍可使用；未載入外部音訊、分析或遠端語音服務。
+  definitionOfDone:
+  - lesson、課綱與KG ID一致；課綱定位及source boundary可追溯。
+  - 確實呈現南一標示策略線索及翰林標示課程計畫線索，且康軒無法取得之處明確pending。
+  - 音訊播放、逐字稿收合、回答、錯誤提示、答案解析與自讀fallback都有單元專項自動化測試。
+  - mobile、keyboard、縮減動態、aria-live與外網封鎖測試通過；真人螢幕閱讀器與人工聽力教學審查不在本次自動化結論內。
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://stv.naer.edu.tw/data/course_manual/A/%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E6%89%8B%E5%86%8A(%E5%AE%9A%E7%A8%BF%E7%89%88).pdf
+    locator: PDF pp.96–97 / printed pp.85–87, learning performance 5-IV-7-1 through 5-IV-7-4; distinguish adjacent 5-IV-8 story and 5-IV-9 broadcast.
+    role: official-curriculum-source-of-truth
+  - url: https://fliphtml5.com/uygal/yplp/111%E5%8D%97%E4%B8%80%E5%9C%8B%E4%B8%AD%E8%8B%B1%E8%AA%9E%E6%95%99%E6%9D%90%E7%B0%A1%E4%BB%8B%E6%9C%AC%28%E5%A3%93%E7%B8%AE%29/9/
+    locator: p.9, publicly shared Nani-labelled listening strategy overview, identity and rights unverified
+    role: version-research-method-inspiration
+  - url: https://www.scribd.com/document/852916874/%E7%BF%B0%E6%9E%97%E7%89%88-%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E-%E4%B8%8A
+    locator: publicly shared Hanlin-labelled school plan excerpt around lines 661–669; not publisher-authenticated textbook content
+    role: version-research-method-inspiration

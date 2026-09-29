@@ -2,41 +2,84 @@
   "id": "question-math-performance-n-iv-3-3",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "2⁵ 的值為何？",
+  "prompt": "計算 (2³)² 的值為何？",
   "options": [
     {
       "id": "A",
-      "text": "10"
-    },
-    {
-      "id": "B",
       "text": "16"
     },
     {
+      "id": "B",
+      "text": "32"
+    },
+    {
       "id": "C",
-      "text": "25"
+      "text": "64"
     },
     {
       "id": "D",
-      "text": "32"
+      "text": "128"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-n-iv-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "2⁵=2×2×2×2×2=32。"
+    "value": "C",
+    "explanation": "次方的次方指數相乘：(2³)²=2⁶=64，所以選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考非負整數次方、指數律、質因數分解與科學記號題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "非負整數次方指數律質因數與科學記號單元實質改寫；已重新計算次方、指數律、零次方、質因數分解、科學記號轉換與運算，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。 exact duplicate prompt replaced 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供指數律、質因數與科學記號能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數與量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "非負整數次方指數律、負次方、質因數表示、科學記號與數量級；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求使用同底數指數律、把數轉成科學記號，或在科學記號中處理 10 的次方與數量級；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "非負整數次方指數律、負次方、質因數表示、科學記號與數量級；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求使用同底數指數律、把數轉成科學記號，或在科學記號中處理 10 的次方與數量級；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "非負整數次方指數律、負次方、質因數表示、科學記號與數量級；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求使用同底數指數律、把數轉成科學記號，或在科學記號中處理 10 的次方與數量級；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "遇到括號次方先使用 (a^m)^n=a^(mn)，不要把指數相加。",
+  "solutionSteps": [
+    "辨認底數為 2。",
+    "括號內指數 3 與外層指數 2 相乘。",
+    "得到 2⁶。",
+    "計算 2⁶=64。",
+    "所以選 C。"
+  ]
 }

@@ -1,0 +1,75 @@
+{
+  "id": "question-science-root-b-19",
+  "subject": "science",
+  "type": "single-choice",
+  "prompt": "城市熱島研究發現市中心夜間較熱；若要比較不同土地覆蓋的影響，應如何設計？",
+  "options": [
+    {
+      "id": "A",
+      "text": "只選最熱的一個路口"
+    },
+    {
+      "id": "B",
+      "text": "市中心與郊區同時改變所有測量條件"
+    },
+    {
+      "id": "C",
+      "text": "在相近天氣與測量時間下比較不同地表，並控制高度、儀器與周圍環境"
+    },
+    {
+      "id": "D",
+      "text": "用白天一次資料推論全年夜間"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-science-content-b",
+    "kg-science-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "C",
+    "explanation": "熱島比較必須控制時間、天氣、儀器與位置等條件，否則差異可能來自測量設計而非土地覆蓋。 正確答案為選項 C。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "生命、地球環境、尺度與資料判讀",
+      "observedPattern": "只取公立校方公開試題的情境判讀能力，改寫成跨尺度問題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "尺度、週期、環境與模型限制",
+      "observedPattern": "只取能力模式並重新設計生命—地球—宇宙情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作生命系統、地球環境、宇宙觀測、尺度與模型限制的能力方向；本題為根層 B 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-root-b",
+  "solutionStrategy": "先固定觀測時段和儀器，再用多地點、多日資料分離地表與天氣因素。",
+  "solutionSteps": [
+    "先標記觀察對象的空間尺度、時間範圍、單位與直接可見資料。",
+    "把現象、模型假設、可量測證據和推論結論分欄，避免跨層跳躍。",
+    "檢查控制條件、週期位置、抽樣方式與可能的替代解釋。",
+    "排除把局部當全球、短期當長期、亮度當質量或把模型當事實的選項，答案為 C。",
+    "把答案放回原情境並標註適用邊界：熱島比較必須控制時間、天氣、儀器與位置等條件，否則差異可能來自測量設計而非土地覆蓋。"
+  ]
+}

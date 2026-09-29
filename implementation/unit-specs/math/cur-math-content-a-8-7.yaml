@@ -1,0 +1,182 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-8-7
+  knowledgeGraphIds:
+  - kg-math-content-a-8-7
+  title: A-8-7：一元二次方程式的解法與應用
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '8'
+  fusedScope:
+    officialCurriculum: A-8-7：一元二次方程式的解法與應用
+    curriculumIntent: A-8-7：一元二次方程式的解法與應用
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 已讀南一版標示公開講義可索引pp.139–144、康軒第三冊標示公開學生筆記p.1與翰林官方補救GO搜尋索引pp.162–178及182–186；各材料的第三方分享／官方性與讀取限制須保留，不能稱為三家出版社原書全文。依課綱與KG比較平方根入口、等值配方、公式推導與判別式分層後重新撰寫單元專屬教學；例題、互動與題目皆原創，不複製來源。內容審查未完成前維持draft。
+    currentEvidenceStatus: curriculum-and-kg-grounded; unit-specific-public-shared-materials-reviewed-with-access-limits; original-method-synthesis-authored; content-review-pending
+  learningGoals:
+  - 由應用條件建立 ax²+bx+c=0 的模型並標註未知量、係數和定義域
+  - 依式子結構選擇因式分解、配方法或公式解，說明選擇理由
+  - 以判別式預測實根數，完整求出所有根並逐一代回驗算
+  - 將代數解帶回情境，依尺寸、時間或整數限制留下可行答案
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 因式分解法利用零乘積性質，適用於容易分解的式子
+  - 配方法維持等式平衡；補入左側平方的常數必須同步加到右側
+  - 公式解的 a、b、c 取自標準式，判別式決定實根型態與數量
+  - 解方程式取得全部代數根後，才以原情境定義域做第二階段篩選
+  misconceptions:
+  - 公式代入時把標準式係數 b 的符號先改錯，或漏掉分母 2a
+  - 配方只在一側加常數，破壞原等式等值關係
+  - 因式分解後只令其中一個因式為零，漏掉另一根
+  - 判別式為負仍在實數範圍硬開根號，或判別式為零重複計算重根
+  - 求得負尺寸根後直接刪除而未保留代數解及說明情境篩選
+  contentFlow:
+  - 'model: 將長方形面積或連續整數語句轉為二次方程式，先保留單位與未知量限制'
+  - 'predict: 以圖形或判別式預測根的數量，暫不顯示精確答案'
+  - 'manipulate: 學生調整長寬差與面積，逐步選擇解法並輸入等值變形；配方時同步處理等式兩側'
+  - 'observe: 矩形圖、標準式、判別式和完整候選根表依參數同步更新，重根只列一次'
+  - 'explain: 學生指出所選方法的式子結構理由，並分別說明代數根與尺寸限制如何形成可行解'
+  - 'choose-method: 對照因式結構、是否易補平方及標準式係數，選擇一種可說明的解法'
+  - 'solve: 逐步展示因式分解、兩側同步配方或公式代入，保留全部候選根'
+  - 'verify: 將每個根代回原方程式；可用另一方法交叉核對，近似值另標精度'
+  - 'filter: 最後才依正尺寸、非負時間、整數條件等過濾，記錄排除理由'
+  - 'transfer: 解長寬差與面積的木板裁切任務，將根翻回實際尺寸驗算'
+  - 'exit-ticket: 診斷漏根、配方不平衡或係數誤讀，說出相應檢查步驟'
+  visualizations:
+  - 應用建模卡：未知量、單位、關係式、標準式及定義域逐格連結
+  - 方法選擇矩陣：式子結構、計算路徑、適用理由及易錯檢查點並列
+  - 判別式根數預測器與候選根清單，重根只列一次並可逐根代回
+  - 解集合雙欄呈現所有代數根與符合原情境的可行值，保留近似值精度標籤
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-8-7-I01
+    component: StepwiseReasoningBlock
+    purpose: 讓學生從建模、方法選擇、求全根、代回驗算到情境篩選逐步追蹤二次方程式的解題證據
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        width: 7
+        lengthDifference: 5
+        area: 84
+        selectedMethod: factorization
+        candidateRoots: []
+        contextDomain: positive-lengths
+    studentActions:
+    - 設定矩形寬度 w、長寬差 d、面積 A，先預測標準式與根的大致數量
+    - 選擇因式分解、配方法或公式解，提交一項式子結構作為方法理由
+    - 逐步輸入運算並保留等式兩側、係數與符號；配方需同步補兩側
+    - 把所有候選根逐一代回原方程式，記錄精確值或近似值及誤差位數
+    - 將根放入情境篩選欄，說明負長度、負時間或非整數為何保留／排除
+    visualRules:
+    - 改動面積或長寬差後，矩形圖、標準式、判別式和候選根表同步重算
+    - 方法選擇先於答案揭露；每步保留原式、等值變形與可撤銷歷程
+    - 公式解以括號鎖定 b 的原符號；判別式負值不輸出實根
+    - 情境條件只篩選解，不抹除不符合的代數根；近似解標明精度
+    - 窄螢幕把模型、運算步驟及根集合改為連續卡片，不裁切圖表或單位
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-8-7-I01
+      trigger: 配方法只將 2 加到方程式左側，或矩形模型求出 −12、7 後只寫 7 而未說明代數根集合
+      prompt: 比較等式兩側的每次變形；再分開寫方程式根集合和符合正寬度條件的集合，並逐根代回。
+      expectedEvidence: 配方前後兩側同加同一數的等式紀錄；或根 {−12,7}、代回皆成立而情境寬度僅 7 公尺的兩階段判斷
+    feedback:
+      correct: 指出等值變形、全部根與情境篩選均有證據，再要求換用另一解法核對一根。
+      incorrect: 第一層標示左右式不平衡或遺漏根；第二層提示同步配方、零乘積兩支或明列定義域；重試後只示範錯誤所在步驟。
+    guidedActivity:
+      title: 木板裁切任務：由面積找可行尺寸
+      introduction: 木板面積 84 平方公分，長比寬多 5 公分。設寬為 w，依序建模、分解、列出全部根，最後才依尺寸條件篩選。
+      stages:
+      - prompt: 第一步：用 w 表示面積條件，並整理成等於 0 的標準式。
+        acceptedAnswers: ["w²+5w-84=0", "w^2+5w-84=0"]
+        correctFeedback: 正確。w(w+5)=84，移項得到 w²+5w−84=0。
+        hint: 面積是寬乘長；長為 w+5。展開後把 84 移到左側。
+      - prompt: 第二步：將 w²+5w−84 分解成兩個一次因式。
+        acceptedAnswers: ["(w+12)(w-7)", "(w-7)(w+12)"]
+        correctFeedback: 正確。12 與 −7 的乘積為 −84、和為 5。
+        hint: 找兩數的乘積為 −84，且和為 +5；一正一負。
+      - prompt: 第三步：零乘積性質給出的全部代數根是什麼？
+        acceptedAnswers: ["-12,7", "7,-12", "{-12,7}", "{7,-12}"]
+        correctFeedback: 正確。兩個因式各自等於零，根為 −12 與 7。
+        hint: 分別令 w+12=0、w−7=0，不可只取正根。
+      - prompt: 第四步：寬度必須為正，實際可行的寬 w 是多少公分？
+        acceptedAnswers: ["7"]
+        correctFeedback: 正確。負根仍是代數根，但不能代表實際寬度。
+        hint: 對照正寬度條件，從 −12 與 7 中保留符合者。
+      - prompt: 第五步：木板長度是多少公分？
+        acceptedAnswers: ["12"]
+        correctFeedback: 正確。長為 w+5=12，且 7×12=84。
+        hint: 長比寬多 5；把可行寬度代入 w+5。
+      completionMessage: 完成。代數根 {−12,7} 保留完整，實際尺寸為寬 7 公分、長 12 公分；乘積驗算為 84 平方公分。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "依 PhET 探究節奏先預測根型，再改變矩形面積或長寬差觀察方程式和根表；場景資料由本課原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "各解法拆成可逐步前進／退回的活動回合，方法卡變更後保留原路徑供比較而不直接揭露答案。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "輸入框有未知量、a/b/c、判別式、候選根和情境集合的名稱；圖形操作後用狀態文字宣告交點與根的改變。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "語意區域分開建模、解法、驗根與情境判斷；鍵盤可按步驟導覽，根表另提供可線性閱讀的文字版。"
+  capTransfer:
+    questionType: 長方形木板面積模型、二次方程式求根與正尺寸篩選
+    stemConstraint: 木板面積 84 平方公分，長比寬多 5 公分。設寬 w，列式求所有代數根，再判斷實際長寬並回到原條件驗算。
+    requiredResponse: w(w+5)=84，整理 (w+12)(w−7)=0，代數根 −12、7；只保留 w=7，長 12，且 7×12=84。
+    scoring: 模型與標準式正確 1、全部根及方法合理 1、代數根與可行尺寸區分並驗算 1
+  exitTicket:
+    prompt: x²+4x+1=0 不易因式分解。說明如何配方、列出全部實根並指出最容易破壞等式的步驟。
+    successCriteria:
+    - 兩側同加 4，得到 (x+2)²=3
+    - 完整根為 −2±√3，判別式 12 大於 0 表示兩相異實根
+    - 指出不可只在左側加 4，且可逐根代回原式檢查
+  expressionExtension:
+    applicable: true
+    task: 比較 x²−x−12=0 與 x²+4x+1=0，分別選擇因式分解或配方法，說明式子結構如何影響方法選擇，並以代回驗證所有根。
+    constraint: 學生須保留完整根集合和等值步驟；回饋標示漏根、符號或等式不平衡，不代寫整段答案。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 木板 transfer 的模型、因式方程、代數根 {−12,7} 和可行情境寬度 7 公分分列，長度 12 公分，回乘面積為 84 平方公分。
+  - 對 x²+4x+1=0 配方時兩側同加 4，得到 (x+2)²=3 及兩個實根 −2±√3。
+  - 因式分解、配方法與公式解路徑均保留正確等值變形；判別式負值不宣告實數根，零值重根只計一次。
+  - 所有根都逐一代回原式；情境不合者仍留在代數集合並附排除理由，不因近似值取整而遺失精度標籤。
+  - 320px、375px、768px 與鍵盤可操作模型、方法選擇、步驟前後移、根表和情境篩選；重要數學狀態有文字替代。
+  - 外部圖形或資料失效時，文字 fallback 仍提供逐步等式、判別式、完整根集合、答案輸入與遷移作答，完成同一學習目標。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-7
+    role: official-curriculum-source-of-truth

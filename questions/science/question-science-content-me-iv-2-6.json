@@ -2,23 +2,23 @@
   "id": "question-science-content-me-iv-2-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年8月15日自然科教室的觀察中，針對「Me-Ⅳ-2：家庭廢水的影響與再利用」提出可檢驗的科學問題，若比較 3 組、每組取樣 14 份資料，哪一項設計最適當？",
+  "prompt": "比較不同清潔劑對水生植物的影響，哪項設計較公平？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Me-Ⅳ-2：家庭廢水的影響與再利用」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "同時改變植物與水量"
     },
     {
       "id": "B",
-      "text": "研究「Me-Ⅳ-2：家庭廢水的影響與再利用」時只測量3組中的一組就直接下結論"
+      "text": "固定水量、植物種類、光照與時間，只改變清潔劑濃度並設空白對照"
     },
     {
       "id": "C",
-      "text": "研究「Me-Ⅳ-2：家庭廢水的影響與再利用」時只改變光照時間，其餘條件一致，設置3組、每組取樣14份並各重複測量3次"
+      "text": "只看一株植物一次"
     },
     {
       "id": "D",
-      "text": "研究「Me-Ⅳ-2：家庭廢水的影響與再利用」時先決定結論，再挑選支持結論的14筆資料"
+      "text": "不設對照組"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Me-Ⅳ-2：家庭廢水的影響與再利用」。"
+    "value": "B",
+    "explanation": "B。只改清潔劑種類，固定濃度、體積、植物種類、光照、溫度與觀察時間，才能把生長差異合理歸因於清潔劑。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題中的水污染、廢水處理、濃度、溶氧、優養化、控制變因與安全能力；本題改寫為家庭廢水影響與再利用原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-me-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-me-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫；只取水污染、濃度與資料判讀的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "水污染、濃度與資料判讀",
+      "observedPattern": "公立學校公開自然／理化試題常以家庭排水、水質指標、溶氧、優養化、濃度計算、處理流程、控制變因與安全用途考查環境推理；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考；只取家庭廢水、處理方法與環境影響的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "家庭廢水、處理方法與環境影響",
+      "observedPattern": "公立學校公開自然／理化試題常以家庭排水、水質指標、溶氧、優養化、濃度計算、處理流程、控制變因與安全用途考查環境推理；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題；只取水質、優養化、控制變因與安全的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "水質、優養化、控制變因與安全",
+      "observedPattern": "公立學校公開自然／理化試題常以家庭排水、水質指標、溶氧、優養化、濃度計算、處理流程、控制變因與安全用途考查環境推理；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "只改一個自變因，控制植物與環境條件，設定可比較的生長指標。",
+  "solutionSteps": [
+    "確認廢水來源、污染物與預定再利用用途。",
+    "把處理方法對應到可去除的物質與剩餘風險。",
+    "核對水質資料的單位、濃度、樣本量與採樣條件。",
+    "用對照、重複測量或長期觀察檢查方案效果。",
+    "以衛生、安全、環境與用途限制寫出條件式結論。"
+  ]
 }

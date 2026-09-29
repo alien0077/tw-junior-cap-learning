@@ -2,41 +2,67 @@
   "id": "question-science-content-ca-iv-2-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年2月4日自然科教室的觀察中，將 53 g 食鹽溶於 353 g 水，研究「Ca-Ⅳ-2：以化學性質鑑定化合物」時，溶液質量為何？",
+  "prompt": "某未知溶液加入碳酸鈉後產生氣泡。這項結果最適合支持哪個假說？",
   "options": [
     {
       "id": "A",
-      "text": "300 g"
+      "text": "未知溶液一定是純水"
     },
     {
       "id": "B",
-      "text": "406 g"
+      "text": "未知溶液可能含有能與碳酸根反應放出二氧化碳的酸性物質"
     },
     {
       "id": "C",
-      "text": "18709 g"
+      "text": "所有冒泡都能直接證明是同一種酸"
     },
     {
       "id": "D",
-      "text": "353 g"
+      "text": "氣泡必定來自液體沸騰"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ca-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：53＋353＝406 g。 本題對應 KG「Ca-Ⅳ-2：以化學性質鑑定化合物」。"
+    "explanation": "酸性物質與碳酸鹽反應可能放出二氧化碳；但仍需控制溫度並以其他檢驗排除沸騰或污染，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的化合物鑑定、特徵反應與對照能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ca-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ca-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ca-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化合物鑑定、酸鹼、沉澱、氣體與實驗對照判讀",
+      "pattern": "取由特徵反應、對照組與多項證據鑑定未知物的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由特徵反應、對照組與多項證據鑑定未知物的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷反應條件，再把陽性結果視為支持假說而非唯一身分證明。",
+  "solutionSteps": [
+    "確認樣品未被加熱到沸騰。",
+    "加入碳酸鈉後觀察是否產生新氣體。",
+    "酸與碳酸根反應可形成二氧化碳。",
+    "此結果支持有酸性物質，但不能唯一指認種類。",
+    "所以選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

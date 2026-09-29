@@ -2,41 +2,78 @@
   "id": "question-science-content-jd-iv-6-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月23日校園實驗室的觀察中，將 143℃ 的金屬片放入 21℃ 的水中，研究「Jd-Ⅳ-6：酸鹼中和生成鹽、水與熱量」時，最初的熱傳方向為何？",
+  "prompt": "要用指示劑判斷酸鹼是否接近中和，選擇指示劑時最重要的是？",
   "options": [
     {
       "id": "A",
-      "text": "由 21℃ 的水傳向 143℃ 金屬片"
+      "text": "其變色範圍要落在目標反應的 pH 快速變化區間"
     },
     {
       "id": "B",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "只要顏色最鮮豔就一定適合"
     },
     {
       "id": "C",
-      "text": "由金屬片傳向水"
+      "text": "指示劑越多越能提高準確度"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "指示劑本身必須是金屬"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jd-iv-6"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 143℃ 金屬片傳向 21℃ 的水。 本題對應 KG「Jd-Ⅳ-6：酸鹼中和生成鹽、水與熱量」。"
+    "value": "A",
+    "explanation": "指示劑的變色範圍需對應中和附近 pH 變化，顏色鮮豔或用量多不是選擇標準。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的酸鹼中和、H⁺／OH⁻、鹽水、溫度、體積濃度及安全能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jd-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jd-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼中和、鹽水、溫度與實驗資料判讀",
+      "pattern": "取由酸鹼反應式、指示劑、溫度變化與資料推論中和的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由酸鹼反應式、指示劑、溫度變化與資料推論中和的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼中和、熱量、體積與生活情境",
+      "pattern": "取從圖表、體積濃度與能量資料判斷酸鹼中和結果的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從圖表、體積濃度與能量資料判斷酸鹼中和結果的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "以量測目的和指示劑變色範圍配對。",
+  "solutionSteps": [
+    "先估計中和附近的 pH 範圍。",
+    "查閱候選指示劑變色範圍。",
+    "選擇能在該區間明顯變色者。",
+    "用少量指示劑並設置重複測量。",
+    "所以 A 最適合。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

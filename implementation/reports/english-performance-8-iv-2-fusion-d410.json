@@ -1,0 +1,87 @@
+{
+  "run": "D-410",
+  "asOf": "2026-09-28",
+  "unit": {
+    "lessonId": "lesson-english-performance-8-iv-2",
+    "curriculumId": "cur-english-performance-8-iv-2",
+    "knowledgeId": "kg-english-performance-8-iv-2",
+    "reviewStatus": "draft",
+    "finalLessonReview": "Reserved for the user's ChatGPT; not performed by Codex"
+  },
+  "inventoryAndPreservation": {
+    "before": "The unit had generic learner-facing text and no fusionRecord, so it was absent from the registered fusion manuscript inventory.",
+    "action": "Authored and registered this unit-specific source-bounded fusion manuscript; did not rewrite any already registered manuscript.",
+    "after": {
+      "authoredFusionManuscripts": "744/791 (94.06%; presence-only inventory)",
+      "learningContent": "583/583",
+      "learningPerformance": "161/208",
+      "remaining": 47,
+      "longFormDraftMarkers": 574
+    }
+  },
+  "curriculumAndKnowledge": {
+    "officialIndicator": "8-Ⅳ-2 能以簡易英語介紹國外主要節慶習俗",
+    "officialCurriculumUrl": "https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
+    "kgPath": "knowledge/english/foundational-graph.json",
+    "kgCurriculumLink": "kg-english-performance-8-iv-2 -> cur-english-performance-8-iv-2"
+  },
+  "versionEvidence": {
+    "hanlin": "A Hanlin-labelled public-school teacher plan pp.1-2 covers dates, months, ordinals, festival description and information search; it is a school plan, not publisher textbook prose.",
+    "nani": "A third-party public summary labelled B3 L4 Holiday was consulted only as version-labelled teaching context; uploader, authenticity and rights are unverified.",
+    "kanghsuan": "A public school plan indicates Kang Hsuan volume context but does not locate target lesson 8-Ⅳ-2 or its textbook pages/content.",
+    "publisherChapterFusionClaim": "Not claimed. Public curriculum and labelled teaching materials informed original lesson design, while publisher textbook chapter text and comparative details remain pending/unknown.",
+    "officialFactSource": "Japan National Tourism Organization Gion Matsuri page: https://www.japan.travel/en/spot/83/; used to distinguish the July festival period from the two main procession dates and to avoid overgeneralization.",
+    "rightsBoundary": "No textbook passages or exam questions were copied; all lesson prose and practice items are original."
+  },
+  "manuscript": {
+    "visibleSections": 7,
+    "teachingBodyStages": 7,
+    "visibleBodyParity": "Exact title/body parity across all seven learner-visible sections",
+    "interactive": "Four-step GuidedChoice: source location/month, festival period versus processions, photo evidence limits, and traveler-facing missing information.",
+    "sourceToTeachingDesign": "Learners build an evidence-bounded festival description, distinguish broad duration from event dates, and constrain cultural claims to what a cited source actually supports."
+  },
+  "questions": {
+    "count": 10,
+    "allRemainDraft": true,
+    "answersAndExplanations": "Every question has a keyed correct answer and a distinct Traditional Chinese explanation.",
+    "solutionDetail": "Each question includes a distinct strategy and five detailed Traditional Chinese solution steps.",
+    "answerKeyDistribution": {"A": 1, "B": 3, "C": 3, "D": 3},
+    "publicExamPatternSourcesPerQuestion": 2,
+    "locatorLevel": "Paper-level pattern-only source locators, not item-level page/question attribution.",
+    "curriculumAndKnowledgeTrace": "Every item links the target lesson and KG and includes official curriculum studyReferences.",
+    "questionFirstPass": "PASS 10/10 structural and source-contract checks; content judgment remains subject to the user's review workflow."
+  },
+  "specAndInteraction": {
+    "specPath": "implementation/unit-specs/english/cur-english-performance-8-iv-2.yaml",
+    "component": "GuidedChoiceBlock",
+    "designStatus": "reviewed",
+    "implementationStatus": "implemented",
+    "qaStatus": "verified",
+    "globalSpecValidation": "1,027 specs; 0 errors; 20 eligible; 1,007 pending"
+  },
+  "verification": {
+    "targetNodeRegression": "PASS",
+    "targetBrowser": "PASS: seven visible sections, four GuidedChoice stages; keyboard wrong-answer hint and correct feedback; axe 0 violations/0 incomplete; 320/375/768px no overflow; 0 page errors.",
+    "fullNpmTest": "PASS; full workbench traversal 1,027/1,027 and all configured runtime/data/spec/source/answer audits succeeded.",
+    "fullBrowserSmoke": "PASS at http://127.0.0.1:8765/implementation/workbench.html; 1,027 options, full traversal 1,027, unit-spec content-source traversal 1,027; keyboard, accessibility tree and reduced-motion checks passed.",
+    "publicExamLedger": "PASS: 10,566/10,566 recorded, pending 0.",
+    "examReferenceSemantics": "PASS: 10,566 question files, 23,141 exam refs, 0 flagged refs.",
+    "answerStructureAudit": "PASS: 10,566/10,566 structurally answered; this is not a subject-matter audit.",
+    "siteIndex": "PASS: 1,052 lessons, 10,566 questions, 40 mapping sets; index/shards checked current.",
+    "dataValidation": "PASS after this report is present: 14,522 JSON files, 13,114 IDs, 1,032 KG nodes; lesson/question status remains draft.",
+    "specValidation": "PASS: 1,027 specs, 0 errors; 20 eligible, 1,007 pending.",
+    "browserRuntime": {
+      "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "playwright": "1.58.0",
+      "chromium": "revision 1208",
+      "server": "Existing local server on 127.0.0.1:8765; canonical URL returned HTTP 200 in authorized environment.",
+      "launchBoundary": "Restricted shell could not connect to loopback; authorized Playwright environment reached the server and completed the full traversal. No dependency reinstall was needed."
+    },
+    "diffCheck": "PASS after report and current-state updates"
+  },
+  "workflow": {
+    "subtasks": "None",
+    "commit": "Not performed; overall objective remains incomplete.",
+    "push": "Not performed; overall objective remains incomplete."
+  }
+}

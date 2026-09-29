@@ -2,23 +2,23 @@
   "id": "question-science-content-dc-iv-1-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年8月29日河川觀測站的觀察中，將 38 g 食鹽溶於 366 g 水，研究「Dc-Ⅳ-1：神經系統察覺環境變動並產生反應」時，溶液質量為何？",
+  "prompt": "看到警示燈後按下煞車，若要判斷是視覺訊息還是肌力造成反應差異，應如何做？",
   "options": [
     {
       "id": "A",
-      "text": "404 g"
+      "text": "同時改變燈光、煞車器和受試者"
     },
     {
       "id": "B",
-      "text": "328 g"
+      "text": "只看是否成功按下"
     },
     {
       "id": "C",
-      "text": "13908 g"
+      "text": "固定煞車裝置與指令，改變視覺刺激條件並重複測量反應時間與力量"
     },
     {
       "id": "D",
-      "text": "366 g"
+      "text": "只問受試者覺得快不快"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,49 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：38＋366＝404 g。 本題對應 KG「Dc-Ⅳ-1：神經系統察覺環境變動並產生反應」。"
+    "value": "C",
+    "explanation": "公平比較需一次改變主要刺激條件，並用可量測時間與力量記錄反應。 正確答案為選項 C。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "神經系統、刺激反應、構造功能與資料判讀",
+      "observedPattern": "只取公立校方公開試題的生物反應與流程推理方向，重新設計神經路徑題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "人體協調、反應時間、刺激與反應器官",
+      "observedPattern": "只取公開資料題的推理模式，重新設計保護性反射與意識反應。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作神經系統、刺激反應、反射、反應時間、控制變因與證據界線的能力方向；本題為 Dc-Ⅳ-1 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-dc-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-dc-iv-1",
+  "solutionStrategy": "明確區分刺激、自變因、反應時間和力量，控制裝置與受試者條件。",
+  "solutionSteps": [
+    "先標記刺激、感覺受器、感覺神經元、中樞、運動神經元與反應器官。",
+    "依訊息方向和事件時間排列路徑，分開接收、整合、傳出與作動。",
+    "檢查反射／意識反應、反應時間、損傷位置與控制條件的證據。",
+    "排除把受器當中樞、把反射當無中樞或把所有快速動作混為一談的選項，答案為 C。",
+    "將答案放回神經反應情境並檢查路徑範圍：公平比較需一次改變主要刺激條件，並用可量測時間與力量記錄反應。"
+  ]
 }

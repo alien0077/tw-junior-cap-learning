@@ -2,41 +2,76 @@
   "id": "question-chinese-content-be-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀活動公告時，若要確認「何時、何地、誰可以參加」，最應找哪些資訊？",
+  "prompt": "說明『借用錄音設備』時，哪個順序最能避免使用者誤操作？",
   "options": [
     {
       "id": "A",
-      "text": "時間、地點、參加資格"
+      "text": "先歸還設備，再確認記憶卡，最後才開機"
     },
     {
       "id": "B",
-      "text": "標題字體、插圖顏色、紙張大小"
+      "text": "先開始錄音，之後才尋找電源和操作規則"
     },
     {
       "id": "C",
-      "text": "作者年齡、文章字數、版面寬度"
+      "text": "先寫心得，再決定是否檢查設備"
     },
     {
       "id": "D",
-      "text": "讀者心情、天氣預測、商品價格"
+      "text": "先確認電量與記憶卡，再開機測試，最後依規定登記與歸還"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-be"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "這三項分別對應公告的時間、地點與參加資格欄位。"
+    "value": "D",
+    "explanation": "操作說明要按實際先後排列條件、動作和收尾；先檢查能降低中途無法使用的風險。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "應用文本公告資訊判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編應用文本內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-be"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-be",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "應用文本、溝通目的與資料判讀",
+      "observedPattern": "公立學校國文公開試題常要求依讀者、目的、語氣、格式與資料界線判讀應用文本；本題改寫為校園真實溝通任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "書信、公告、說明與語意推論",
+      "observedPattern": "公立學校國文公開試題常要求依讀者、目的、語氣、格式與資料界線判讀應用文本；本題改寫為校園真實溝通任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先定義誰要讀、要完成什麼，再保留時間地點條件與限制等必要資訊；依媒介調整順序與語氣，最後核對事實和責任界線。",
+  "solutionSteps": [
+    "讀題定位：圈出「操作順序」，確認讀者、目的、媒介及對方要完成的行動。",
+    "拆出必要資訊：分辨已確認事實、待確認事項、語氣要求與格式功能；本題核心是「操作說明要按實際先後排列條件、動作和收尾；先檢查能降低中途無法使用的風險。」",
+    "核對正解：選項 A「先確認電量與記憶卡，再開機測試，最後依規定登記與歸還」同時符合任務需要與責任界線。",
+    "排除誘答：檢查是否漏掉時間地點、使用模糊語氣、自行增加未查證承諾，或用裝飾取代可執行資訊。",
+    "回做讀者測試：假設目標讀者只讀一次，確認能找出要做什麼、何時做、去哪裡做，以及不確定時如何查詢。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-jc-iv-7-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年11月24日自然科教室的觀察中，針對「Jc-Ⅳ-7：電解實驗與電解原理」提出可檢驗的科學問題，若比較 4 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "電解實驗為何不宜直接用手觸摸電極附近的溶液或未知產物？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Jc-Ⅳ-7：電解實驗與電解原理」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "可能含有腐蝕性、刺激性或未確認的反應物與產物，需依規範防護和處理"
     },
     {
       "id": "B",
-      "text": "研究「Jc-Ⅳ-7：電解實驗與電解原理」時只測量4組中的一組就直接下結論"
+      "text": "因為所有電解質都一定是無毒氣體"
     },
     {
       "id": "C",
-      "text": "研究「Jc-Ⅳ-7：電解實驗與電解原理」時只改變水溫，其餘條件一致，設置4組、每組取樣17份並各重複測量4次"
+      "text": "觸摸能讓離子停止移動"
     },
     {
       "id": "D",
-      "text": "研究「Jc-Ⅳ-7：電解實驗與電解原理」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "安全只影響結果不影響人體"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,54 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Jc-Ⅳ-7：電解實驗與電解原理」。"
+    "value": "A",
+    "explanation": "電解可能產生酸鹼、金屬離子或氣體等危害，應使用護目鏡、手套與合規處置，不以觸摸辨識物質。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的電解質、外加電源、電極、離子、氣體產物及氧化還原能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jc-iv-7"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jc-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "電解質、電極、電流與電解資料判讀",
+      "pattern": "取由導電實驗、電極現象與物質變化推論電解原理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由導電實驗、電極現象與物質變化推論電解原理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "電解、離子、氣體產物與生活科技情境",
+      "pattern": "取由實驗圖表、氣體檢驗與粒子模型判斷電解反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗圖表、氣體檢驗與粒子模型判斷電解反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把產物判讀與化學實驗安全同時納入決策。",
+  "solutionSteps": [
+    "列出電解可能產生的未知物。",
+    "辨認腐蝕、刺激與毒性風險。",
+    "使用適當防護並避免直接接觸。",
+    "依規範收集、標示與處理產物。",
+    "所以 A 是安全且合理的判斷。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

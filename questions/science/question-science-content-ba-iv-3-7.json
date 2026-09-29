@@ -2,41 +2,67 @@
   "id": "question-science-content-ba-iv-3-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月4日校園實驗室的觀察中，將 165℃ 的金屬片放入 29℃ 的水中，研究「Ba-Ⅳ-3：化學反應的吸熱與放熱」時，最初的熱傳方向為何？",
+  "prompt": "在保麗龍杯中進行反應，溶液溫度由 22°C 升到 31°C。若把杯內反應物與溶液定義為系統，哪個能量敘述正確？",
   "options": [
     {
       "id": "A",
-      "text": "由 29℃ 的水傳向 165℃ 金屬片"
+      "text": "系統吸收外界能量後升溫，因此必定是吸熱反應"
     },
     {
       "id": "B",
-      "text": "由金屬片傳向水"
+      "text": "系統釋出部分能量給周圍，但仍可能因反應內能轉換而升溫"
     },
     {
       "id": "C",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "系統溫度上升代表能量憑空增加"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "只要容器是保麗龍，所有反應都沒有能量交換"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ba-iv-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "B",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 165℃ 金屬片傳向 29℃ 的水。 本題對應 KG「Ba-Ⅳ-3：化學反應的吸熱與放熱」。"
+    "explanation": "系統邊界與反應能量要分開判斷；反應釋出的能量可讓系統溶液升溫，保麗龍只是減少而非消除熱交換，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究化學反應吸熱與放熱、溫度變化、能量轉移及實驗控制變因能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的反應熱、吸放熱與能量證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化學反應、能量變化、吸熱放熱與實驗資料判讀",
+      "pattern": "取由溫度資料、能階關係與系統邊界判斷吸熱或放熱的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫度資料、能階關係與系統邊界判斷吸熱或放熱的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先圈定系統，再判斷溫度變化與熱量方向，避免把『系統升溫』和『吸熱反應』混為一談。",
+  "solutionSteps": [
+    "明確寫出系統包含杯內物質。",
+    "保麗龍只能降低熱散失，不能保證零交換。",
+    "反應能量轉成系統內部可測得的熱，使溫度升高。",
+    "比較反應前後能量與周圍的交換方向。",
+    "依題意選 B，而不是只看到升溫就選吸熱。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

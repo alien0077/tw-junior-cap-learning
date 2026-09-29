@@ -2,41 +2,84 @@
   "id": "question-math-content-s-7-1-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "通過兩點 A、B 的直線，通常記作什麼？",
+  "prompt": "線段 MN 和線段 NM 的關係，哪一項正確？",
   "options": [
     {
       "id": "A",
-      "text": "線段 AB"
+      "text": "一定是不同線段，因為字母順序不同"
     },
     {
       "id": "B",
-      "text": "直線 AB"
+      "text": "是同一線段，因為兩個端點相同"
     },
     {
       "id": "C",
-      "text": "射線 AB"
+      "text": "NM 是射線，MN 才是線段"
     },
     {
       "id": "D",
-      "text": "角 AB"
+      "text": "只有 M 是端點"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-7-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "兩點決定一條直線，記作直線 AB。"
+    "explanation": "線段由兩個端點決定，MN 與 NM 都連接同一對端點，所以表示同一線段，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 簡單圖形與幾何符號 題型與官方課綱 KG kg-math-content-s-7-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學資料僅供簡單圖形與幾何符號能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開數學資料的幾何語言能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-7-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-7-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "簡單圖形、點線角、線段／射線／直線辨識與幾何符號命名",
+      "observedPattern": "公開學校數學資料常以圖形元素、端點與延伸方向、字母命名及角的頂點位置考查幾何語言轉譯；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "簡單圖形、點線角、線段／射線／直線辨識與幾何符號命名",
+      "observedPattern": "公開學校數學資料常以圖形元素、端點與延伸方向、字母命名及角的頂點位置考查幾何語言轉譯；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "檢查兩個名稱是否使用同一對端點；線段的字母順序不表示方向。",
+  "solutionSteps": [
+    "找出 MN 的兩個端點 M、N。",
+    "再找出 NM 的兩個端點 N、M。",
+    "確認兩者端點集合相同。",
+    "線段沒有固定的起點方向。",
+    "選 B。"
+  ]
 }

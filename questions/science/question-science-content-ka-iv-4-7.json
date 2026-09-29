@@ -2,23 +2,23 @@
   "id": "question-science-content-ka-iv-4-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年1月1日學校研究社的觀察中，水中射向鏡面時，光線與鏡面法線的入射角為 45°，研究「Ka-Ⅳ-4：聲波反射的測量與傳播用途」時，反射角為何？",
+  "prompt": "若回波訊號受到多個牆面反射而出現數個峰值，如何較可靠地判斷距離？",
   "options": [
     {
       "id": "A",
-      "text": "45°（水中射向鏡面）"
+      "text": "只取音量最大的峰值且不看時間"
     },
     {
       "id": "B",
-      "text": "45°（「Ka-Ⅳ-4：聲波反射的測量與傳播用途」中把入射角誤當折射角）"
+      "text": "把所有峰值時間相加"
     },
     {
       "id": "C",
-      "text": "90°（「Ka-Ⅳ-4：聲波反射的測量與傳播用途」中把入射角加倍）"
+      "text": "只觀察發射器外觀"
     },
     {
       "id": "D",
-      "text": "135°（「Ka-Ⅳ-4：聲波反射的測量與傳播用途」中以平角計算）"
+      "text": "辨認各峰值的到達時間，配合聲速與反射面位置分別計算"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "反射定律指出反射角等於入射角，因此為 45°。 本題對應 KG「Ka-Ⅳ-4：聲波反射的測量與傳播用途」。"
+    "value": "D",
+    "explanation": "D。多個時間峰通常代表不同反射界面或目標距離；應用到達時間換算距離，並用重複量測、峰值穩定性與路徑判讀排除雜訊。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "三筆公立學校公開自然科試題中的聲波、回聲、速度、反射、超音波與測量條件能力；本題改寫為聲波反射原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka-iv-4"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-ka-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取聲波、回聲、速度與反射測量的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "聲波、回聲、速度與反射測量",
+      "observedPattern": "公開自然科評量常要求連結回聲延遲、聲速、路徑長度、介質、反射、訊號峰值與測量條件；本題以全新聲波反射情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取波動、介質與資料判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "波動、介質與資料判讀",
+      "observedPattern": "公開自然科評量常要求連結回聲延遲、聲速、路徑長度、介質、反射、訊號峰值與測量條件；本題以全新聲波反射情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取聲波反射、超音波與生活應用的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "聲波反射、超音波與生活應用",
+      "observedPattern": "公開自然科評量常要求連結回聲延遲、聲速、路徑長度、介質、反射、訊號峰值與測量條件；本題以全新聲波反射情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將每個穩定時間峰視為候選界面，利用重複量測和路徑資訊排除雜訊。",
+  "solutionSteps": [
+    "圈出聲速、回波時間、介質、反射路徑、訊號峰值與材料條件。",
+    "畫出發射—反射—接收的路徑，判斷題目給的是單程或往返時間。",
+    "用 d=vt/2 或總路程=vt 計算，統一秒、m/s 與 m 的單位。",
+    "分開判讀到達時間、振幅、反射界面、角度與雜訊，排除只看音量或只套空氣聲速的說法。",
+    "回查測量是否受吸音、衰減、多重反射、路徑不直、儀器解析度與聲速變動影響。"
+  ]
 }

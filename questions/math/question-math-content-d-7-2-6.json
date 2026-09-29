@@ -2,23 +2,23 @@
   "id": "question-math-content-d-7-2-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "一組資料的每個數值都加上 3，原平均數為 10，新的平均數為何？",
+  "prompt": "資料 4、5、5、6、7 加入一筆 100 後，哪個統計量受到的影響通常最大？",
   "options": [
     {
       "id": "A",
-      "text": "30"
+      "text": "平均數"
     },
     {
       "id": "B",
-      "text": "7"
+      "text": "中位數"
     },
     {
       "id": "C",
-      "text": "13"
+      "text": "眾數"
     },
     {
       "id": "D",
-      "text": "10"
+      "text": "三者完全相同"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "每筆資料都增加 3，平均數也增加 3，因此新平均數為 13。"
+    "value": "A",
+    "explanation": "加入極大的 100 會大幅增加總和，使平均數明顯上升；中位數只由中央位置決定，眾數仍是 5，因此平均數影響最大，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究平均數、中位數、眾數、全距與資料變動能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供平均數、中位數、眾數與離群值判讀能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的統計數據方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-d-7-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-d-7-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、資料排序、偶數筆資料與離群值判讀",
+      "observedPattern": "公立學校公開數學試題常要求由資料計算平均數、中位數與眾數，處理偶數筆中央平均，並比較離群值對不同統計量的影響或選擇合適指標；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、資料排序、偶數筆資料與離群值判讀",
+      "observedPattern": "公立學校公開數學試題常要求由資料計算平均數、中位數與眾數，處理偶數筆中央平均，並比較離群值對不同統計量的影響或選擇合適指標；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、資料排序、偶數筆資料與離群值判讀",
+      "observedPattern": "公立學校公開數學試題常要求由資料計算平均數、中位數與眾數，處理偶數筆中央平均，並比較離群值對不同統計量的影響或選擇合適指標；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先觀察離群值對總和、排序中央與出現次數各自的影響。",
+  "solutionSteps": [
+    "原資料平均數為 27÷5＝5.4。",
+    "加入 100 後總和變為 127，平均數為 127÷6。",
+    "平均數因 100 大幅上升。",
+    "排序後中央位置改變幅度小，眾數仍是 5。",
+    "選 A，離群值通常最敏感的是平均數。"
+  ]
 }

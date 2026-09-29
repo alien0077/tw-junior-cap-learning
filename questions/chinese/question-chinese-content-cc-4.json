@@ -2,41 +2,76 @@
   "id": "question-chinese-content-cc-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一個人面對失敗後重新檢討方法，而不是只責怪環境，最能表現哪種精神？",
+  "prompt": "思想文本問「一項傳統若造成部分人無法參與，仍算正當嗎？」這句主要在做什麼？",
   "options": [
     {
       "id": "A",
-      "text": "反省與自我修正"
+      "text": "記錄壁畫顏色與材質"
     },
     {
       "id": "B",
-      "text": "逃避責任"
+      "text": "證明所有傳統都應立即取消"
     },
     {
       "id": "C",
-      "text": "盲目固執"
+      "text": "只是敘述已確定的歷史事實"
     },
     {
       "id": "D",
-      "text": "追求外在評價"
+      "text": "提出價值問題，要求用理由檢查傳統、權利與公平的關係"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-cc"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "願意檢討並修正方法，表示具備反省與成長的態度。"
+    "value": "D",
+    "explanation": "問題把傳統與參與權、公平連結起來，要求讀者提出理由；提出問題不等於已完成唯一結論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "精神文化與價值判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究藝術形式、儀式、象徵、價值問題與保存論證。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫 CC 藝術、信仰與價值判讀題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-cc"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-cc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "藝術文本、形式與證據",
+      "observedPattern": "公立學校國文評量以藝術形式、儀式行動、象徵解讀、價值問題與文化保存要求區分觀察、推論、觀點及理由；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文化記憶、儀式與價值問題",
+      "observedPattern": "公立學校國文評量以藝術形式、儀式行動、象徵解讀、價值問題與文化保存要求區分觀察、推論、觀點及理由；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "辨認問句在追問『應不應該』，再找它要求考量的價值衝突，而非把問題當事實陳述。",
+  "solutionSteps": [
+    "讀題定位：圈出「價值設問」與畫面、儀式、人物立場、價值詞或保存條件。",
+    "分層整理：區分形式觀察、文化解釋、價值判斷與外部證據，再依「問題把傳統與參與權、公平連結起來，要求讀者提出理由；提出問題不等於已完成唯一結論。」判定。",
+    "核對正解：選項 D 能由材料支持，並清楚標示可能解釋與確定結論的差別。",
+    "排除誘答：檢查是否把象徵當唯一事實、把一方聲音當全體共識，或只用喜好取代理由。",
+    "回讀驗證：確認答案同時保留作品形式、人的經驗、實際條件與論證限制。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

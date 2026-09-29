@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ba-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀記敘文時，若事件依「起因—經過—結果」排列，讀者最應先找出哪一項？",
+  "prompt": "故事中，主角想保留祖父的舊收音機，妹妹卻想把它捐掉；兩人先爭論，後來一起修好收音機，才決定輪流保存。這些事件如何推進情節？",
   "options": [
     {
       "id": "A",
-      "text": "事件發生的原因"
+      "text": "衝突只是裝飾，修理收音機與結尾決定沒有關係"
     },
     {
       "id": "B",
-      "text": "作者最後的評語"
+      "text": "兩人一開始就已經同意輪流保存"
     },
     {
       "id": "C",
-      "text": "最華麗的描寫"
+      "text": "故事的主要變化只在收音機的品牌"
     },
     {
       "id": "D",
-      "text": "文中最長的句子"
+      "text": "從價值衝突到共同處理問題，行動使關係與決定發生變化"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ba"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "起因是事件開始的觸發點，能幫助讀者建立後續經過與結果的理解。"
+    "value": "D",
+    "explanation": "爭論建立不同立場，修理是共同處理問題的轉折，輪流保存是新的決定；事件具有因果與人物關係的推進功能。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-2%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%95%E9%87%8F%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
-    "sourceLocator": "記敘文本事件順序判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編記敘閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文、敘事結構與閱讀理解",
+      "observedPattern": "公立學校國文公開試題常以記敘文事件、人物、視角、描寫、段落銜接與文本推論考查閱讀能力；本題以自編敘事情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "人物、事件、描寫與篇章理解",
+      "observedPattern": "公立學校國文公開試題常以記敘文事件、人物、視角、描寫、段落銜接與文本推論考查閱讀能力；本題以自編敘事情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先整理事件與人物行動，再辨認視角、衝突、背景、場景與反覆線索如何共同推進記敘文本，最後以文本證據檢查推論強度。",
+  "solutionSteps": [
+    "讀題定位：圈出「衝突推進」與事件節點、人物行動、敘述窗口、反覆線索或結尾變化。",
+    "建立敘事鏈：排列事件因果，區分文本明示、由行動支持的推論與未知資料，再看細節如何服務人物或情節；本題核心是「爭論建立不同立場，修理是共同處理問題的轉折，輪流保存是新的決定；事件具有因果與人物關係的推進功能。」",
+    "核對正解：選項 A「從價值衝突到共同處理問題，行動使關係與決定發生變化」能同時解釋前後事件與具體文本線索，而非只對應單一句子。",
+    "排除誘答：檢查是否忽略主線與背景的關係、把概述當成完整證據，或把合理暗示誇大成名次、動機與未來結果。",
+    "結論回查：用開頭—衝突—行動—結果重新檢查人物是否改變、事件是否推進，以及答案是否超過文本範圍。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

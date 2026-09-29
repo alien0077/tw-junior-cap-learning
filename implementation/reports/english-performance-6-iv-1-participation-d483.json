@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-6-iv-1",
+  "change": [
+    "Mapped the existing classroom-participation scenarios to prediction, selecting effort/help/hint/peer support, observing outcomes, explaining evidence, and transfer.",
+    "Added an explicit simulation-script fallback test while preserving the authored lesson and questions."
+  ],
+  "browser": {
+    "status": "passed",
+    "visibleSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardWrongRetryCorrect": true,
+    "liveRegions": 4,
+    "axeViolations": 0,
+    "axeIncomplete": 0,
+    "reducedMotion": true,
+    "blockedSimulationScript": ["http://127.0.0.1:8765/site/simulations.js"],
+    "guidedChoiceFallbackUsable": true,
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "blockedExternalRequests": 1,
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "995/1,027 pass; 32 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

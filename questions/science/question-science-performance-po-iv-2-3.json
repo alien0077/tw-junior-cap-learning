@@ -2,41 +2,73 @@
   "id": "question-science-performance-po-iv-2-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年3月25日河川觀測站的觀察中，針對「po-Ⅳ-2：辨識可科學探究的問題並提出探究問題」提出可檢驗的科學問題，若比較 4 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "若想保留『月亮每天看起來不同』的好奇，哪個改寫最適合先做觀察？",
   "options": [
     {
       "id": "A",
-      "text": "研究「po-Ⅳ-2：辨識可科學探究的問題並提出探究問題」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "連續兩週每天晚上八點記錄月亮亮面比例與位置"
     },
     {
       "id": "B",
-      "text": "研究「po-Ⅳ-2：辨識可科學探究的問題並提出探究問題」時只改變距離，其餘條件一致，設置4組、每組取樣11份並各重複測量5次"
+      "text": "用一次照片解釋月亮形成的全部原因"
     },
     {
       "id": "C",
-      "text": "研究「po-Ⅳ-2：辨識可科學探究的問題並提出探究問題」時只測量4組中的一組就直接下結論"
+      "text": "投票決定哪個月相最美"
     },
     {
       "id": "D",
-      "text": "研究「po-Ⅳ-2：辨識可科學探究的問題並提出探究問題」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "直接宣布月亮變化一定是雲造成的"
     }
   ],
   "knowledgeIds": [
     "kg-science-performance-po-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「po-Ⅳ-2：辨識可科學探究的問題並提出探究問題」。"
+    "value": "A",
+    "explanation": "A 固定時間並記錄可觀察現象，能產生連續資料；B 範圍過大，C 是偏好，D 是未經檢驗的結論。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究問題形成、探究設計與證據判讀能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源的能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-po-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-po-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "探究問題、變因辨識與實驗設計能力方向",
+      "observedPattern": "公開自然科評量常以現象、變因、資料、方法與證據界線要求學生形成或判讀探究問題；本題以原創情境改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "資料判讀、問題形成與結論界線能力方向",
+      "observedPattern": "公開自然科評量常以現象、變因、資料、方法與證據界線要求學生形成或判讀探究問題；本題以原創情境改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨問題是事實、價值、偏好或倫理，再檢查對象、結果、範圍、比較條件、資源、方法與安全，最後限制結論界線。",
+  "solutionSteps": [
+    "讀題定位：圈出本題要求的問題類型或設計條件，核心是「moon」。",
+    "把情境拆成研究對象、可觀察結果、時間範圍、比較條件、資源與安全限制。",
+    "逐項比對是否能取得可核對資料；本題正確答案是 A。",
+    "核對理由：A 固定時間並記錄可觀察現象，能產生連續資料；B 範圍過大，C 是偏好，D 是未經檢驗的結論。",
+    "最後回查結論是否只超出樣本、時間或方法所能支持的範圍；若不可行，先縮小問題或改用觀察、模型與公開資料。"
+  ]
 }

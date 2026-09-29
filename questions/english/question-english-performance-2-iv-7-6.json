@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-7-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-7／人事時地物提問」task, what is the best way to prepare question 6?",
+  "prompt": "A: ______?\nB: By scanning the blue code in the school app twice a day.\nChoose the question that asks about the procedure.",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-7／人事時地物提問."
+      "text": "Why do you check in twice a day?"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-7／人事時地物提問."
+      "text": "When do you scan the code?"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-7／人事時地物提問."
+      "text": "How do you check in?"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-7／人事時地物提問."
+      "text": "Which app do you use to check in?"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-7"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-7／人事時地物提問, question 6."
+    "value": "C",
+    "explanation": "By scanning… 說明完成簽到的方法與步驟，故應問 How。B 只問時間，D 問應用程式是哪一個；它們都沒有詢問程序。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+    "sourceLocator": "高雄市立國昌國中公開原卷：printed page 5, sentence-response question 49。只取命題能力／資料閱讀模式，不重製原題。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開英語試題之精確 item-level pattern-only 證據獨立重寫；未複製原題、選項、圖表或答案。題目維持 draft，尚待完整版本研究與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-7"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中111學年度第一學期八年級第一次定期評量英文科試題",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "printed page 5, sentence-response question 49",
+      "observedPattern": "只參考第49題的人事時地物疑問、回答配對或資訊定位能力；只參考原卷人事問答、疑問句重建、方法提問與多選項判讀模式；不複製原題、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "當回答以 by + V-ing 或步驟描述開頭，先判斷是在講方法而非原因、時刻或工具名稱，再選 how。",
+  "solutionSteps": [
+    "注意答句開頭 By scanning，這個結構通常用來描述採取的方式或手段。",
+    "題目問 procedure，對應「怎麼做」，因此目標疑問詞是 How。",
+    "把問句還原為 How do you check in?，主詞 you 搭配 do，check 使用原形。",
+    "A 的 Why 需要原因；B 的 When 需要時間；D 的 Which 需要在選項中辨認特定應用程式。",
+    "答句補充每天兩次是頻率，但主要回應仍是掃描代碼的方法，所以選 C。"
+  ]
 }

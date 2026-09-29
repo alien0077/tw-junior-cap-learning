@@ -2,23 +2,23 @@
   "id": "question-science-content-inc-iv-5-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年9月26日校園實驗室的觀察中，將 45 g 食鹽溶於 328 g 水，研究「INc-Ⅳ-5：原子與分子是生命與物質世界的微觀尺度」時，溶液質量為何？",
+  "prompt": "寫科學解釋時，哪種表述能正確連結宏觀與微觀？",
   "options": [
     {
       "id": "A",
-      "text": "283 g"
+      "text": "只寫液面下降就等於證明分子消失"
     },
     {
       "id": "B",
-      "text": "14760 g"
+      "text": "宏觀觀察到液面下降，微觀可用分子逸出解釋"
     },
     {
       "id": "C",
-      "text": "328 g"
+      "text": "只畫分子就不必記錄觀察"
     },
     {
       "id": "D",
-      "text": "373 g"
+      "text": "宏觀與微觀必定互相矛盾"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：45＋328＝373 g。 本題對應 KG「INc-Ⅳ-5：原子與分子是生命與物質世界的微觀尺度」。"
+    "value": "B",
+    "explanation": "好的解釋先指出宏觀觀察，再用粒子排列或運動提出模型，並說明模型能解釋什麼及仍缺少什麼證據。正確答案：B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立學校公開自然科試題中的粒子模型、化學式、物質變化、質量與宏觀—微觀推理能力；本題改寫為 INc-Ⅳ-5 原創情境。",
+    "authoringNote": "依官方課綱 KG 與公立國中公開試題能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-inc-iv-5"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-inc-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "鹽埕國中公開自然段考；只取原子分子、化學式與物質微觀模型的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "原子分子、化學式與物質微觀模型",
+      "observedPattern": "公開自然科評量常以物質三態、粒子模型、化學式、質量守恆與宏觀—微觀轉換檢查模型推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "內湖國中公開自然段考；只取理化粒子圖、質量與微觀推理的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "理化粒子圖、質量與微觀推理",
+      "observedPattern": "公開自然科評量常以物質三態、粒子模型、化學式、質量守恆與宏觀—微觀轉換檢查模型推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "國昌國中公開自然科試題；只取物質變化、模型表徵與證據界線的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "物質變化、模型表徵與證據界線",
+      "observedPattern": "公開自然科評量常以物質三態、粒子模型、化學式、質量守恆與宏觀—微觀轉換檢查模型推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "依序寫宏觀證據、微觀模型、限制，確認三者沒有互相冒充。",
+  "solutionSteps": [
+    "讀題並圈出物質、粒子、化學式、排列、運動、質量或模型限制等關鍵詞。",
+    "先區分可直接觀察的宏觀結果與需要模型才能提出的微觀解釋。",
+    "用原子種類、分子組成、下標、粒子距離或運動狀態逐項檢查選項。",
+    "排除把看不見當成不存在、把原子與分子混為一談，或把示意圖當真實比例的說法。",
+    "用完整句重述答案，補上可支持模型的資料與尚不能直接測得的限制。"
+  ]
 }

@@ -1,0 +1,76 @@
+{
+  "decisionId": "D-411",
+  "date": "2026-09-28",
+  "unit": "lesson-english-performance-8-iv-3",
+  "status": "unit-authoring-and-automated-qa-pass; user-review-pending",
+  "inventory": {
+    "method": "Only update a lesson absent from authored-fusion-writing-inventory.json; do not rewrite listed units.",
+    "authoredFusionDrafts": "745/791 (94.18%)",
+    "learningContent": "583/583",
+    "learningPerformance": "162/208",
+    "remaining": 46
+  },
+  "curriculumAndVersionEvidence": {
+    "officialCurriculum": "8-Ⅳ-3: compare domestic/international customs and major festivals; linked KG kg-english-performance-8-iv-3.",
+    "hanlin": "Publisher-domain flexible-learning resource with a festival-comparison description; not a verified current textbook chapter or grade-specific sample.",
+    "kanghsuan": "Daji JHS plan, PDF pp.46-47, labels Kang Hsuan Grade 9 volumes 5-6 food-culture material; cross-grade context only, not this Grade 8 festival lesson.",
+    "nani": "Third-party page labels B3 L4 Holiday and 8-IV-3; uploader, publisher, edition, rights and locator unverified; not counted as Nan-I textbook evidence.",
+    "scope": "Current-grade publisher chapter evidence remains pending. The manuscript synthesizes only bounded public teaching clues with official curriculum/KG and independently verified public cultural facts; no claim of three-page-by-page textbook fusion."
+  },
+  "publicExamSources": [
+    {
+      "school": "Taipei Neihu Junior High School",
+      "exam": "111-1 Grade 9 second midterm English (Hanlin edition)",
+      "locator": "PDF p.3, Q44-46",
+      "reuse": "pattern-only; original reading data, stems, options, keys and explanations"
+    },
+    {
+      "school": "Kaohsiung Guochang Junior High School",
+      "exam": "113-2 Grade 7 second midterm English",
+      "locator": "PDF p.4, Q30-32",
+      "reuse": "pattern-only; original reading data, stems, options, keys and explanations"
+    }
+  ],
+  "artifacts": [
+    "lessons/english/lesson-english-performance-8-iv-3.json",
+    "questions/english/question-english-performance-8-iv-3-1.json through question-english-performance-8-iv-3-10.json",
+    "implementation/unit-specs/english/cur-english-performance-8-iv-3.yaml",
+    "implementation/unit-specs.manifest.json",
+    "implementation/runtime/english-performance-8-iv-3-fusion.test.mjs",
+    "scripts/test_english_performance_8_iv_3_browser.py"
+  ],
+  "automatedValidation": {
+    "targetNode": "PASS: seven section/title parity, source limits, four GuidedChoice steps, 10 draft questions, two pattern-only refs each, answer linkage and five solution steps.",
+    "dataSchema": "PASS: 14523 JSON files, 13114 IDs, 1032 KG nodes.",
+    "implementationSpecs": "PASS: 1027 specs, 0 errors, 21 eligible, 1006 pending.",
+    "browser": {
+      "result": "PASS",
+      "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "playwright": "1.58.0",
+      "chromium": "revision 1208",
+      "servedPage": "http://127.0.0.1:8765/site/index.html (HTTP 200)",
+      "visibleSections": 7,
+      "guidedChoiceKeyboardStages": 4,
+      "wrongRetryAndCorrectFeedback": true,
+      "axeViolations": 0,
+      "axeIncomplete": 0,
+      "responsiveWidths": [320, 375, 768],
+      "overflow": false,
+      "blockedExternalRequests": 1,
+      "pageErrors": []
+    },
+    "siteIndex": "PASS: 1052 lessons, 10566 questions, 40 mapping sets; generated with local revision and checked.",
+    "examLedger": "PASS: 10566/10566 recorded, pending 0; 23141 refs/0 semantic flags; catalog URLs 281/281; grade-compatible refs 410/410.",
+    "gitDiffCheck": "PASS",
+    "fullNpmTest": "PASS: pretest and configured runtime suite, including workbench full bundle traversal 1027/1027.",
+    "fullBrowserSmoke": "PASS: real Chromium fullTraversal 1027/1027 and unitSpecContentSourceTraversal 1027/1027; keyboard, accessibility tree, reduced motion and 320/375/768 widths.",
+    "browserA11y": "PASS: axe-core 51 runs, 0 violations, 6 incomplete."
+  },
+  "browserFailureAndResolution": "Initial browser attempt timed out locating the new lesson because the local generated data index did not yet include it. Rebuilt site index/shards, confirmed the same URL returned HTTP 200, and reran the same browser test successfully. This was stale local index data, not a missing Playwright package or browser.",
+  "reviewAndRelease": {
+    "lessonReviewStatus": "draft; user will perform ChatGPT content review",
+    "questionReviewStatus": "draft",
+    "publisherChapterEvidence": "pending",
+    "commitPush": "not performed; larger objective remains active"
+  }
+}

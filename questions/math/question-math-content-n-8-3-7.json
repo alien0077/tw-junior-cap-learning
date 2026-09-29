@@ -2,23 +2,23 @@
   "id": "question-math-content-n-8-3-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "圖形拼排數量依序為 1、4、9、16、……，若規律為平方數，第 6 項為何？",
+  "prompt": "下列哪一組數最可能形成『前一項減 2』的數列？",
   "options": [
     {
       "id": "A",
-      "text": "36"
+      "text": "15、13、11、9"
     },
     {
       "id": "B",
-      "text": "25"
+      "text": "15、17、19、21"
     },
     {
       "id": "C",
-      "text": "30"
+      "text": "2、4、8、16"
     },
     {
       "id": "D",
-      "text": "49"
+      "text": "1、3、6、10"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "第 n 項為 n²，因此第 6 項是 6²＝36。"
+    "explanation": "A 中 13−15＝−2、11−13＝−2、9−11＝−2，符合每項減 2，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究數列規律、通項、遞推、等差數列與求和能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱數學能力與公開會考／公立國中試題的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供數列項次、規律、通項、遞迴與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-n-8-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-8-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "sequence terms, position indexing, pattern recognition, recursive rules, explicit rules, and contextual sequences",
+      "observedPattern": "公立學校公開數學試題常要求讀取數列項次、找相鄰項規律、由通項求指定項、辨認遞迴關係與將生活情境編成數列；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "sequence terms, position indexing, pattern recognition, recursive rules, explicit rules, and contextual sequences",
+      "observedPattern": "公立學校公開數學試題常要求讀取數列項次、找相鄰項規律、由通項求指定項、辨認遞迴關係與將生活情境編成數列；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "逐項計算相鄰差，找出固定為 −2 的選項。",
+  "solutionSteps": [
+    "檢查 A 的相鄰差皆為 −2。",
+    "檢查 B，相鄰差為＋2。",
+    "檢查 C，是乘以 2。",
+    "檢查 D，差值逐次改變。",
+    "選 A，確認規律在每一對相鄰項都成立。"
+  ]
 }

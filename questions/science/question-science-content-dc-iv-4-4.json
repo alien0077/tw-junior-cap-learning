@@ -2,23 +2,23 @@
   "id": "question-science-content-dc-iv-4-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年9月2日自然科教室的觀察中，針對「Dc-Ⅳ-4：各系統協調維持體內恆定」提出可檢驗的科學問題，若比較 4 組、每組取樣 12 份資料，哪一項設計最適當？",
+  "prompt": "若要研究跑步強度對體溫恢復時間的影響，哪個設計最公平？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Dc-Ⅳ-4：各系統協調維持體內恆定」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "只記錄恢復最快的一次"
     },
     {
       "id": "B",
-      "text": "研究「Dc-Ⅳ-4：各系統協調維持體內恆定」時只測量4組中的一組就直接下結論"
+      "text": "高強度組在室內，低強度組在戶外，並用不同溫度計"
     },
     {
       "id": "C",
-      "text": "研究「Dc-Ⅳ-4：各系統協調維持體內恆定」時只改變水溫，其餘條件一致，設置4組、每組取樣12份並各重複測量4次"
+      "text": "固定環境溫度、運動時間、測量位置與補水方式，只改變跑步強度"
     },
     {
       "id": "D",
-      "text": "研究「Dc-Ⅳ-4：各系統協調維持體內恆定」時先決定結論，再挑選支持結論的12筆資料"
+      "text": "每組同時改變強度、時間、衣服與補水量"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Dc-Ⅳ-4：各系統協調維持體內恆定」。"
+    "explanation": "研究跑步強度時，其他會影響體溫和恢復的條件應固定，並以相同測量方法比較恢復時間。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=70&cfsn=357&fn=112-1-3-7%E8%87%AA%E7%84%B6.pdf&op=dlfile",
+    "sourceLocator": "三筆公立學校公開自然／生物資料僅作體溫、血糖、水分恆定與系統協調的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-dc-iv-4"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-dc-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=70&cfsn=357&fn=112-1-3-7%E8%87%AA%E7%84%B6.pdf&op=dlfile",
+      "title": "花蓮縣立吉安國中112學年第一學期第三次段考",
+      "year": "112",
+      "locator": "水分恆定、體溫與神經調節題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開題常以運動、喝水、血糖曲線和器官系統整合情境，要求判讀負回饋、運輸與調節方向；本題只改寫能力與推理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.chhs.tp.edu.tw/uploads/1580831222712rkC24jFq.pdf",
+      "title": "臺北市立景興國中108學年度第一學期七年級自然科第三次定期評量",
+      "year": "108",
+      "locator": "血糖調控與器官系統維持恆定題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開題常以運動、喝水、血糖曲線和器官系統整合情境，要求判讀負回饋、運輸與調節方向；本題只改寫能力與推理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/16754157419823cD7fmrr.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期七年級生物科第三次段考",
+      "year": "111",
+      "locator": "血糖曲線、內分泌與恆定題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開題常以運動、喝水、血糖曲線和器官系統整合情境，要求判讀負回饋、運輸與調節方向；本題只改寫能力與推理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先鎖定一項自變因，再逐項找出會干擾體溫的控制變項。",
+  "solutionSteps": [
+    "指定跑步強度為主要自變因。",
+    "固定環境、時間、衣服、測量位置與補水條件。",
+    "用相同時間間隔記錄體溫回復曲線。",
+    "保留重複資料，不挑最理想結果。",
+    "故選 C。"
+  ]
 }

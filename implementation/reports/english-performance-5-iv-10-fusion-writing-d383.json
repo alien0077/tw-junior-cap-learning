@@ -1,0 +1,51 @@
+{
+  "decisionId": "D-383",
+  "date": "2026-09-28",
+  "unit": "English learning-performance 5-Ⅳ-10",
+  "lessonId": "lesson-english-performance-5-iv-10",
+  "scope": "Record original fusion manuscript writing only; lesson content review is explicitly left to the user’s ChatGPT review.",
+  "inventory": {
+    "before": "719/791 authored fusion drafts recorded (90.90%)",
+    "after": "720/791 authored fusion drafts recorded (91.02%)",
+    "learningContent": "583/583",
+    "learningPerformance": "137/208",
+    "longFormDraftMarker": 550,
+    "interpretation": "Structural presence of six teaching sections and fusionRecord note; not content approval or complete publisher-text comparison."
+  },
+  "research": {
+    "officialCurriculum": {
+      "url": "https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
+      "use": "Official 5-Ⅳ-10 learning-performance locator in existing curriculum JSON."
+    },
+    "publisherPublicResource": {
+      "publisher": "hanlin",
+      "url": "https://hanlindigi.hle.com.tw/widget/2/123?subject=9",
+      "observed": "Official page identifies junior-high English reading strategy resources, topic identification and before/during/after-reading prompts.",
+      "boundary": "Public resource feature description, not a specified textbook chapter."
+    },
+    "naniKanghsuanBoundary": "Existing lesson records link public-school course-plan samples as chapter-level locators; this work did not inspect specified textbook chapter texts. No claim of full three-edition chapter-by-chapter reading is made."
+  },
+  "authoredWork": {
+    "sections": 6,
+    "interactiveSteps": 4,
+    "originalStory": "Mina and the class garden; tracks an initial perfection goal, a changed choice, and the ending’s growth image.",
+    "answerSupport": "Each interaction includes correct answer, rationale and retry hint; lesson includes modeled inference and exit checks.",
+    "learnerPageAlignment": "content.sections exactly mirrors teaching.body to prevent duplicate or contradictory rendering.",
+    "reviewStatus": "draft; user ChatGPT content review pending and outside Codex scope."
+  },
+  "automatedEvidence": {
+    "lessonJsonAndContentContract": "PASS: valid JSON; six original sections; content/teaching exact match; three versionResearch entries; four answer-and-feedback interaction steps; lesson remains draft.",
+    "lessonSchema": "PASS: audit_lesson_schema_direct.py checked all 1,056 lesson files; 0 failures.",
+    "dataValidation": "PASS: validate_data.py reports 14,497 JSON files, 13,114 IDs, and 1,032 KG nodes; all lessons/questions remain draft.",
+    "implementationSpec": "PASS: validate_implementation_specs.py, 1,027 spec files, 0 errors; 1,027 remain pending global completion gates.",
+    "siteIndex": "PASS: rebuilt from current sources; 1,052 lessons, 10,566 questions, 40 mapping sets; validator reports 10,526 question paths.",
+    "browser": "PASS: Python Playwright 1.58.0 with Chromium 1208; HTTP 200; six visible sections, four guided-choice steps, keyboard retry/correct explanations, aria-live and accessible option names, reduced motion emulated, external network blocked, 320/375/768px no overflow, zero page errors.",
+    "browserFailureClassification": "First browser run could not find the unit because generated site index was stale. Rebuilt/validated index and reran successfully; Playwright and Chromium were installed throughout."
+  },
+  "outOfScopeAndNotRepeated": {
+    "lessonContentReview": "Not performed per user instruction; reserved for user's ChatGPT review.",
+    "publicExamSourceLedger": "Not rerun. D-377 ledger was 10,566/10,566 recorded, 0 pending; no question JSON was newer than that ledger report.",
+    "existingFusionDrafts": "Not rewritten; inventory only added this newly authored missing lesson.",
+    "commitPush": "Not performed; overall requested work remains incomplete."
+  }
+}

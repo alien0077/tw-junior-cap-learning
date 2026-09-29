@@ -2,23 +2,23 @@
   "id": "question-science-content-gb-iv-1-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年4月12日河川觀測站的觀察中，連續觀察「Gb-Ⅳ-1：化石記錄與生物滅絕」2 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "博物館標示一塊化石的年代與物種名稱，哪項做法最能提高科學可信度？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Gb-Ⅳ-1：化石記錄與生物滅絕」時只依樣本的顏色（未記錄12天的時間與條件）"
+      "text": "只記錄化石最漂亮的照片"
     },
     {
       "id": "B",
-      "text": "研究「Gb-Ⅳ-1：化石記錄與生物滅絕」時只依樣本的名稱推測，不進行觀察"
+      "text": "保留產地、地層位置、測年方法、鑑定特徵與不確定度紀錄"
     },
     {
       "id": "C",
-      "text": "連續12天研究「Gb-Ⅳ-1：化石記錄與生物滅絕」並連續觀察到細胞數量增加"
+      "text": "刪除與假說不符的測年結果"
     },
     {
       "id": "D",
-      "text": "研究「Gb-Ⅳ-1：化石記錄與生物滅絕」時只觀察一次外形，便排除所有其他證據"
+      "text": "只用收藏者的直覺命名"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Gb-Ⅳ-1：化石記錄與生物滅絕」。"
+    "value": "B",
+    "explanation": "化石研究需要可追溯的產地、地層、測年、鑑定特徵與不確定度，讓他人能檢查與重複推論。 正確答案為選項 B：「保留產地、地層位置、測年方法、鑑定特徵與不確定度紀錄」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的化石、地層、演化證據及滅絕資料判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Gb-Ⅳ-1 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-gb-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-gb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化石、地層、演化證據與滅絕資料判讀",
+      "pattern": "取由地層順序、化石分布、時間尺度和資料缺口建立演化與滅絕推論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由地層順序、化石分布、時間尺度和資料缺口建立演化與滅絕推論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把來源、年代方法、鑑定依據與誤差一起列入證據鏈。",
+  "solutionSteps": [
+    "圈出地層位置、化石種類、年代、滅絕、取樣或證據限制。",
+    "先判斷資料能支持相對年代、演化關係或滅絕範圍中的哪一種結論。",
+    "套用原理：化石研究需要可追溯的產地、地層、測年、鑑定特徵與不確定度，讓他人能檢查與重複推論。",
+    "排除把相對線索說成直接祖先、忽略保存偏差或把局部資料推成全球結論的選項，答案為「保留產地、地層位置、測年方法、鑑定特徵與不確定度紀錄」。",
+    "回查是否需要多地點、多類群與連續年代資料才能提高結論強度。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

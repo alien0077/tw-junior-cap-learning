@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance pa-IV-1."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-pa-iv-1.json"; REPORT=ROOT/"implementation/reports/science-performance-pa-iv-1-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；資料歸納、圖表製作、數學整理與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持將原始資料分類、摘要、圖表化並使用適切數學方式整理和解釋。"],"representations":[r],"examplesOrEvidence":["本課的光照、降雨與心跳資料皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-pa-iv-1" and d["reviewStatus"]=="draft"
+ d["title"]="pa-Ⅳ-1：分析歸納、製作圖表與數學整理資料——讓資料說得更清楚"
+ d["content"]={"summary":"資料整理不是把所有數字塞進一張圖，而是先釐清問題、單位、類別、時間和資料品質，再選擇能凸顯關係的表格或圖表，使用平均、差值、比例、百分比或斜率摘要。光照、降雨和心跳資料都可能有變異、缺失與不同尺度；數學整理可以幫助發現，但不能把不完整資料變成確定因果。本課以原創資料任務練習從原始記錄到歸納、圖表、計算和有範圍的結論。","sections":[{"heading":"先決定要比較的量","body":"光照資料若要看時間變化，需要保留時間順序和照度單位；若要比不同地點，類別和測量條件要一致。問題不同，保留的資料和圖表就不同。"},{"heading":"分類與摘要要有規則","body":"把資料分組前先說明分類標準，計算平均前檢查樣本和缺失，使用比例前確認分母。數學結果要能回到原始資料，不能只報一個好看的數字。"},{"heading":"圖表的形式會影響閱讀","body":"折線圖適合連續時間、長條圖適合類別比較、散布圖適合兩個數值的關係。標題、軸名、單位、刻度、圖例和來源缺一，都可能讓讀者誤讀。"},{"heading":"歸納要說出證據範圍","body":"從多筆資料歸納趨勢時，要指出期間、樣本、例外和不確定性。整理後的關係可以形成下一個問題，但不能只因數字同向就跳到因果結論。"}]}
+ d["studyHighlights"]=["依問題、單位、類別、時間與資料品質整理原始資料。","分類、平均、差值、比例與百分比都要說明規則和分母。","依時間、類別或數值關係選擇圖表並完整標示。","歸納趨勢時交代樣本、例外、範圍與因果限制。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"同一組光照資料，為何兩張圖結論不同？","body":"一張圖把每日照度畫成折線，另一張把早中晚平均畫成長條。請比較兩張圖各自保留和隱藏的資訊，再查軸名、單位、刻度與樣本數。活動讓學習者看見圖表不是裝飾，整理方式會影響能提出的問題。"},
+ {"id":"explain","phase":"explain","heading":"數學整理五步驟","body":"先檢查原始資料與單位，再依問題分類或排序；選摘要量並寫出計算規則；製作完整標示的圖表；最後回到原始資料檢查是否遺漏、扭曲或過度推廣。每個數學結果都要附對象、分母、期間和限制。"},
+ {"id":"worked-example","phase":"worked-example","heading":"降雨量如何轉成比較有意義的數字","body":"三週降雨量為 12、0、24 mm，不能只說第三週是第一週兩倍而忽略第二週。可計算三週平均 12 mm、最大與最小差 24 mm，並用折線圖保留順序；結論應限定為這三週，不能直接代表全年氣候。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"心跳資料的分組與圖表","body":"記錄靜坐、慢走、快走後的心跳。學習者先確認每人測量時間與單位，再用長條圖比較活動類別，用折線圖呈現同一人的恢復時間；平均值旁保留個別範圍，避免把個人差異藏起來。"},
+ {"id":"transfer","phase":"transfer","heading":"把資料摘要交給沒有參與實驗的人","body":"製作一頁摘要，包含問題、資料來源、整理規則、原始樣本數、圖表、計算、主要發現、例外和下一個問題。請讀者只看摘要說出分母和期間，若說不出，就表示圖表或文字還不夠清楚。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個數學整理迷思","body":"請修正『平均值就是所有人的典型狀況』與『圖表看起來有趨勢就代表因果』。平均可能受極端值和分布影響，圖表只整理觀察關係；仍要檢查樣本、條件、替代解釋和下一步驗證。"}
+ ],"summary":["依問題和資料品質選擇分類、摘要與圖表。","計算平均、差值和比例時說明規則、單位與分母。","圖表需標示標題、軸、刻度、圖例、來源與樣本。","歸納趨勢要保留範圍、變異、例外與因果限制。"],"exitCheck":[{"prompt":"為什麼降雨量有時間順序時適合用折線圖？","expectedEvidence":"折線圖保留各週順序，能看出零降雨、變化與趨勢，並標示 mm 單位。"},{"prompt":"計算比例前為什麼要先確認分母？","expectedEvidence":"分母決定比例代表的整體，若分母不同，數字不能直接比較。"},{"prompt":"平均值旁為什麼仍要保留個別資料範圍？","expectedEvidence":"範圍能看見變異與極端值，避免平均遮住個別差異。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"依問題整理原始資料、選擇表徵並用數學摘要做出有範圍的歸納。","scenario":"整理光照、降雨與心跳資料，逐步選出合適圖表、計算規則和限制表達。","variables":[{"symbol":"d","meaning":"原始資料"},{"symbol":"g","meaning":"圖表表徵"},{"symbol":"m","meaning":"數學摘要"}],"steps":[{"id":"step-1","prompt":"三週降雨量要保留時間順序，優先使用哪種圖？","options":["橫軸為週次的折線圖","不標週次的圓餅圖","只寫最高值不畫圖"],"answer":"A","feedback":"折線圖保留時間順序，能看出變化和零降雨。"},{"id":"step-2","prompt":"計算一組心跳的平均前，最重要的檢查是什麼？","options":["確認樣本、單位、測量時間與是否有缺失或異常","只挑最接近的三個數字","先把不同單位相加"],"answer":"A","feedback":"摘要必須建立在一致、可追查的原始資料上。"},{"id":"step-3","prompt":"光照和植物高度同向增加時，最適當的歸納是什麼？","options":["在本次樣本和條件下呈同向關係，因果仍需控制與重複","已證明光照造成所有高度差","圖表只要好看就能確定原因"],"answer":"A","feedback":"資料整理可指出關係，但因果需要更多設計證據。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以資料分類、圖表、平均和數學整理支持科學歸納。","原始表、折線、長條、平均、差值、比例與單位。","只看最高或平均數，忽略分母、分布和時間順序。","重視計算規則、表徵、資料品質與結論。"),rec("kanghsuan","透過探究資料轉換、圖表製作與討論形成可溝通的發現。","不同圖表、樣本、重複資料、摘要和同儕檢查。","使用錯誤刻度或圖形把差異誇大，將數學結果當因果。","評量整理流程、數學處理、標示與反思。"),rec("hanlin","連結環境、健康與生活資料，運用數學工具解釋趨勢並說明限制。","光照、降雨、心跳、類別、時間、範圍與例外。","忽略單位、分母、樣本和個別差異，把局部趨勢推廣全部。","要求數據透明、圖表完整、推論適切與後續驗證。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持分類原始資料、製作圖表並以數學方式歸納。","單位、樣本、分母、圖表標示、變異與摘要規則是共同要求。","數學整理能指出關係和趨勢，但不能跳過條件而宣稱因果。"],"versionDifferences":["南一證據較突顯基本分類、圖表與數學摘要；康軒較突顯資料轉換、同儕檢查與表徵比較；翰林較突顯環境健康生活資料、分母、範圍與個別差異。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以兩種光照圖表比較資訊保留與隱藏。","以 12、0、24 mm 降雨資料示範平均、差值、順序與範圍。","以心跳資料同時使用類別長條圖與個人恢復折線圖。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織資料品質、分類、單位、圖表、平均、差值、比例、分母、變異與歸納範圍。正文、原創數據、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"pa-Ⅳ-1：分析歸納、製作圖表與數學整理資料","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

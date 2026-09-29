@@ -2,41 +2,73 @@
   "id": "question-science-performance-t-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年11月7日學校研究社的觀察中，針對「探究能力－思考智能（t）」提出可檢驗的科學問題，若比較 3 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "冷卻表格看不出差異時，哪項做法合理？",
   "options": [
     {
       "id": "A",
-      "text": "研究「探究能力－思考智能（t）」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "查時間與起始條件，再改畫時間—溫度圖或計算差值／速率"
     },
     {
       "id": "B",
-      "text": "研究「探究能力－思考智能（t）」時只測量3組中的一組就直接下結論"
+      "text": "把數字四捨五入到產生差距"
     },
     {
       "id": "C",
-      "text": "研究「探究能力－思考智能（t）」時只改變溶液濃度，其餘條件一致，設置3組、每組取樣11份並各重複測量4次"
+      "text": "只挑最極端的一列"
     },
     {
       "id": "D",
-      "text": "研究「探究能力－思考智能（t）」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "刪掉看不出差異的資料"
     }
   ],
   "knowledgeIds": [
     "kg-science-performance-t"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「探究能力－思考智能（t）」。"
+    "value": "A",
+    "explanation": "A 用表示轉換改善判讀，不加工或挑選資料。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究探究策略、問題拆解、資料轉換與遷移能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-t"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-t",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "探究策略、資料與思考能力方向",
+      "observedPattern": "公開自然科評量常以問題拆解、資料、方法、圖表、證據與遷移要求探究思考；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "資料轉換、遷移與反思能力方向",
+      "observedPattern": "公開自然科評量常以問題拆解、資料、方法、圖表、證據與遷移要求探究思考；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先拆解問題並診斷卡點，再選資料、表示和策略，設定停止條件，最後檢查原理是否能遷移。",
+  "solutionSteps": [
+    "讀題定位：圈出探究思考核心「representation」。",
+    "列出問題、證據、卡點、表示、策略、停止條件與新情境限制。",
+    "逐項比對哪個選項有明確判準和可查證行動；正確答案是 A。",
+    "核對理由：A 用表示轉換改善判讀，不加工或挑選資料。",
+    "最後說明如何監控下一步、保留原理並依新資料修正，不把忙碌或複製流程當成進展。"
+  ]
 }

@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-7-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-7／人事時地物提問」task, what is the best way to prepare question 2?",
+  "prompt": "A: ______?\nB: I placed the seed packets in the labeled drawer before lunch.\nChoose the question that asks about the action and its object.",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-7／人事時地物提問."
+      "text": "Who placed the seed packets in the drawer?"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-7／人事時地物提問."
+      "text": "Where did you place the seed packets?"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-7／人事時地物提問."
+      "text": "What did you place in the labeled drawer?"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-7／人事時地物提問."
+      "text": "When did you place the seed packets in the drawer?"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-7"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-7／人事時地物提問, question 2."
+    "value": "C",
+    "explanation": "答句同時說出動作 placed 與受詞 seed packets；題目指定要問動作及其物件，C 的 What did you place 正好索取該受詞。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+    "sourceLocator": "高雄市立國昌國中公開原卷：printed page 4, matching question 37。只取命題能力／資料閱讀模式，不重製原題。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開英語試題之精確 item-level pattern-only 證據獨立重寫；未複製原題、選項、圖表或答案。題目維持 draft，尚待完整版本研究與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-7"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中111學年度第一學期八年級第一次定期評量英文科試題",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "printed page 4, matching question 37",
+      "observedPattern": "只參考第37題的人事時地物疑問、回答配對或資訊定位能力；只參考原卷人事問答、疑問句重建、方法提問與多選項判讀模式；不複製原題、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "不要只看到答句有很多資訊就全選；依題目限定的焦點，區分動作受詞 what、人物 who、地點 where 與時間 when。",
+  "solutionSteps": [
+    "把答句切成動作 placed、物品 seed packets、地點 labeled drawer、時間 before lunch 四塊。",
+    "題目要求的是 action and its object，焦點落在「放了什麼」，不是誰放、放在哪裡或何時放。",
+    "選項 C 用 What did you place…? 詢問受詞，答句可以直接用 seed packets 回答。",
+    "B、D 雖然也能對應答句裡的真實線索，卻分別只詢問地點和時間，沒有命中指定焦點。",
+    "因此選 C；解 wh-question 時先找資訊缺口，再看該缺口在句中扮演的角色。"
+  ]
 }

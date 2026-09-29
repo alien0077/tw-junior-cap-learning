@@ -2,41 +2,84 @@
   "id": "question-math-performance-s-iv-13-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "作一個與已知角相等的角，第一步通常要做什麼？",
+  "prompt": "用尺規作一個與已知角 ∠A 相等的角時，先以 A 為圓心在原角兩邊畫弧，通常是為了記錄什麼？",
   "options": [
     {
       "id": "A",
-      "text": "先畫任意圓"
+      "text": "角的兩邊長度"
     },
     {
       "id": "B",
-      "text": "以角頂點為圓心畫弧截兩邊"
+      "text": "角的兩邊與弧的交點間距離"
     },
     {
       "id": "C",
-      "text": "直接量角器讀值"
+      "text": "三角形面積"
     },
     {
       "id": "D",
-      "text": "擦去原角"
+      "text": "圓心位置"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-s-iv-13"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "先以原角頂點畫弧，截出可搬移的兩個距離。"
+    "explanation": "同一圓弧會在原角兩邊留下兩個交點，這兩交點間的弦長用來在新角中複製，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考數學科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "以數學概念、全新數值與解析獨立撰寫；公開試題僅作題型研究。待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供尺規作圖、等距軌跡與圓幾何能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的尺規作圖方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-performance-s-iv-13"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-13",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "尺規作圖、垂直平分線、角平分線、等距軌跡、複製角、圓弧交點與圓心連線",
+      "observedPattern": "公開數學評量常要求判斷尺規作圖的操作順序與圓規保距作用，並把作圖結果連結到垂直平分線、角平分線及兩圓交點的幾何性質；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "尺規作圖、垂直平分線、角平分線、等距軌跡、複製角、圓弧交點與圓心連線",
+      "observedPattern": "公開數學評量常要求判斷尺規作圖的操作順序與圓規保距作用，並把作圖結果連結到垂直平分線、角平分線及兩圓交點的幾何性質；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "尺規作圖、垂直平分線、角平分線、等距軌跡、複製角、圓弧交點與圓心連線",
+      "observedPattern": "公開數學評量常要求判斷尺規作圖的操作順序與圓規保距作用，並把作圖結果連結到垂直平分線、角平分線及兩圓交點的幾何性質；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "理解複製角是先複製弧，再複製兩交點間的距離。",
+  "solutionSteps": [
+    "以原角頂點為圓心畫固定半徑弧。",
+    "弧與兩邊交於兩點。",
+    "固定圓規開口量取兩交點間距離。",
+    "在新角弧上截出相同弦長。",
+    "因此記錄的是兩交點間距離，選 B。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-ed-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年2月28日校園實驗室的觀察中，針對「Ed：宇宙與天體」提出可檢驗的科學問題，若比較 4 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "若觀測站位於城市附近，光害最直接會造成什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ed：宇宙與天體」時只改變距離，其餘條件一致，設置4組、每組取樣17份並各重複測量5次"
+      "text": "恆星停止發光"
     },
     {
       "id": "B",
-      "text": "研究「Ed：宇宙與天體」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "天體距離改變"
     },
     {
       "id": "C",
-      "text": "研究「Ed：宇宙與天體」時只測量4組中的一組就直接下結論"
+      "text": "背景天空變亮，較暗天體不易觀測"
     },
     {
       "id": "D",
-      "text": "研究「Ed：宇宙與天體」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "月球公轉加速"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ed：宇宙與天體」。"
+    "value": "C",
+    "explanation": "C。城市光害提高天空背景亮度、降低影像對比，使較暗天體難以觀測；它不是讓天體停止發光。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "三筆公立學校公開自然科試題中的天體視運動、受光、光譜、尺度、儀器與觀測條件能力；本題改寫為全新語料。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ed"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-ed",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取天體視運動、光譜與觀測證據的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "天體視運動、光譜與觀測證據",
+      "observedPattern": "公開自然科評量常要求把天體位置、受光、尺度、光譜或觀測條件連到可檢驗推論；本題改用全新情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取天文資料、尺度與模型判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "天文資料、尺度與模型判讀",
+      "observedPattern": "公開自然科評量常要求把天體位置、受光、尺度、光譜或觀測條件連到可檢驗推論；本題改用全新情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取星體受光、月相與證據推理的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "星體受光、月相與證據推理",
+      "observedPattern": "公開自然科評量常要求把天體位置、受光、尺度、光譜或觀測條件連到可檢驗推論；本題改用全新情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找背景亮度與影像對比的變化，再判斷光害影響。",
+  "solutionSteps": [
+    "讀題並圈出天體、視角、受光、光譜、亮度、距離、時間或儀器條件。",
+    "把直接觀測、模型推論與仍需查證的部分分開。",
+    "套用對應的日周視運動、受光幾何、光譜、尺度或觀測原理。",
+    "排除把視運動當實際公轉、把月相當食現象、把圖上大小當真實比例，或忽略校正與環境限制的選項。",
+    "用完整句重述答案，補上證據如何支持結論以及目前不能推出的範圍。"
+  ]
 }

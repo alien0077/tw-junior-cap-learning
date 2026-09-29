@@ -2,41 +2,95 @@
   "id": "question-math-content-s-9-1-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "三角形甲與乙相似，甲的三邊為 4、6、9，乙的最短邊為 10。乙與甲的對應邊比是多少？",
+  "prompt": "正六邊形甲的邊長為 3 公分，正六邊形乙的邊長為 5 公分。兩圖形的關係為何？",
   "options": [
     {
       "id": "A",
-      "text": "2：5"
+      "text": "一定全等，但不一定相似"
     },
     {
       "id": "B",
-      "text": "5：2"
+      "text": "相似，但不全等"
     },
     {
       "id": "C",
-      "text": "3：5"
+      "text": "不相似，因為邊長不同"
     },
     {
       "id": "D",
-      "text": "5：3"
+      "text": "只能判定周長相同"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "最短邊 4 對應 10，所以乙：甲=10：4=5：2。"
+    "explanation": "兩圖都是正六邊形，所以對應角相等；對應邊比固定為 3：5，因此相似。邊長不同，不能全等，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似形 題型與官方課綱 KG kg-math-content-s-9-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.csjh.kh.edu.tw/teach/exam/111%E4%B8%8A%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83/%E6%95%B8%E5%AD%B8%E7%A7%91/%E4%B8%89%E5%B9%B4%E7%B4%9A/111%E4%B8%8A%E4%B8%80%E6%AE%B5%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C%28B4%E5%96%AE%29.pdf",
+    "sourceLocator": "改寫參照：高雄市立中山國中111學年度第1學期第1次段考PDF第1頁第4題的多邊形相似敘述判讀；採正多邊形對應條件概念，另創題幹與數值。",
+    "authoringNote": "以正六邊形建立原創判斷題；只參照公校試題測試相似條件充分性的方向，不複製原卷選項或答案。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.csjh.kh.edu.tw/teach/exam/111%E4%B8%8A%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83/%E6%95%B8%E5%AD%B8%E7%A7%91/%E4%B8%89%E5%B9%B4%E7%B4%9A/111%E4%B8%8A%E4%B8%80%E6%AE%B5%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C%28B4%E5%96%AE%29.pdf",
+      "title": "高雄市立中山國中111學年度第1學期第1次段考九年級數學科",
+      "year": "111",
+      "subject": "math",
+      "locator": "PDF第1頁第4題",
+      "observedPattern": "辨認哪些角邊條件足以判斷多邊形相似；本題改以正六邊形的同倍率推理作答。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "確認兩圖都是同邊數的正多邊形，再判斷倍率是否一致及是否等大。",
+  "solutionSteps": [
+    "兩圖都是正六邊形，邊數相同且各內角相等。",
+    "正六邊形各邊等長，因此甲每邊3公分、乙每邊5公分。",
+    "每一組對應邊比都為3：5，整體倍率固定。",
+    "故兩圖相似；因邊長不同，並非全等。",
+    "選 B：相似但不全等。"
+  ]
 }

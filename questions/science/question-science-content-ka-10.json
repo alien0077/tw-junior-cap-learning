@@ -2,41 +2,87 @@
   "id": "question-science-content-ka-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年4月6日社區環境站的觀察中，空氣射向平面鏡時，光線與鏡面法線的入射角為 25°，研究「Ka：波動、光及聲音」時，反射角為何？",
+  "prompt": "要測試吸音材料是否改善教室廣播清晰度，哪個實驗設計最能支持因果判斷？",
   "options": [
     {
       "id": "A",
-      "text": "65°（「Ka：波動、光及聲音」中把入射角誤當折射角）"
+      "text": "固定喇叭音量、播放內容、測量位置與時間，只改變是否放置吸音材料並重複測量"
     },
     {
       "id": "B",
-      "text": "50°（「Ka：波動、光及聲音」中把入射角加倍）"
+      "text": "一間教室使用吸音材料，另一間同時更換喇叭與播放內容"
     },
     {
       "id": "C",
-      "text": "25°（空氣射向平面鏡）"
+      "text": "只在最安靜的一次測量後宣布材料有效"
     },
     {
       "id": "D",
-      "text": "155°（「Ka：波動、光及聲音」中以平角計算）"
+      "text": "讓使用者知道預期答案，再請他們主觀評分一次"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ka"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "反射定律指出反射角等於入射角，因此為 25°。 本題對應 KG「Ka：波動、光及聲音」。"
+    "value": "A",
+    "explanation": "公平實驗需控制可能影響結果的變因，只改變吸音材料，並以多次、相同位置的聲音資料比較，才能把差異較合理地歸因於材料。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的波形、公式、介質、聲音、回聲、光路與實驗設計能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ka",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "波動、聲音、光學圖形與資料判讀",
+      "pattern": "取公立學校自然科評量以波形量測、介質條件、光路圖和生活情境推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以波形量測、介質條件、光路圖和生活情境推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "波速頻率波長、聲音傳播、反射折射與實驗變因判讀",
+      "pattern": "取公開會考以圖表、物理量關係、路徑幾何與證據界線評估的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、物理量關係、路徑幾何與證據界線評估的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "波動量、回聲、聲音三要素、反射折射與控制變因",
+      "pattern": "取公立國中試題以公式代換、往返路徑、波形辨識、光線作圖和公平測量的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以公式代換、往返路徑、波形辨識、光線作圖和公平測量的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列出自變因、應變因與控制變因，再安排重複測量和可量化指標。",
+  "solutionSteps": [
+    "先辨認題目談的是介質粒子的振動，還是波形整體的傳播。",
+    "圈出波長、頻率、週期、振幅與波速的定義和單位。",
+    "依圖上的刻度找同相位點或平衡位置，再建立方程式。",
+    "把數值代入前先檢查單位與題目給的介質條件。",
+    "用量綱、極端情況或圖形方向回頭檢查答案是否合理。"
+  ]
 }

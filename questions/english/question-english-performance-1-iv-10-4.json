@@ -2,23 +2,23 @@
   "id": "question-english-performance-1-iv-10-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「1-Ⅳ-10／歌謠韻文節奏音韻」task, what is the best way to prepare question 4?",
+  "prompt": "Read the couplet. Which pair has the same ending sound?\n\nBy dawn, the little seedlings grow;\nAt dusk, the fireflies softly glow.",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 1-Ⅳ-10／歌謠韻文節奏音韻."
+      "text": "dawn / dusk"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 1-Ⅳ-10／歌謠韻文節奏音韻."
+      "text": "little / softly"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 1-Ⅳ-10／歌謠韻文節奏音韻."
+      "text": "seedlings / fireflies"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 1-Ⅳ-10／歌謠韻文節奏音韻."
+      "text": "grow / glow"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 1-Ⅳ-10／歌謠韻文節奏音韻, question 4."
+    "value": "D",
+    "explanation": "grow 和 glow 的拼字不同，但結尾都有相同的 /oʊ/ 音，因此構成押韻；dawn/dusk、little/softly、seedlings/fireflies 的尾音都不同。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中九年級英文段考公開題本；歌謠韻文節奏、音節、押韻與口語表現能力方向之獨立改編；非原題或歌詞重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dwm.kh.edu.tw/upload/344/104_64184/113%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%BA%8C%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%8B%B1%E6%96%87%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "高雄市立大灣國中113學年度第二學期第一次段考八年級英文試題，第3頁童謠題組，PDF第3頁第29題；只改寫題型結構與能力方向，不重製詩文、選項或答案。",
+    "authoringNote": "依公立學校公開童謠題組的命題模式獨立創作；詩句、選項、答案與解析均為全新內容，不複製原卷。題目仍為draft，待本專案AI內容QA。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1-iv-10"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-1-iv-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64184/113%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%BA%8C%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%8B%B1%E6%96%87%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立大灣國中113學年度第二學期第一次段考八年級英文試題，第3頁童謠題組；第29題",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF第3頁第29題；原卷以完整童謠呈現規律韻文；本題保留韻文情境，另以全新短句檢查聽辨押韻的能力。",
+      "locatorLevel": "item",
+      "observedPattern": "原卷以完整童謠呈現規律韻文；本題保留韻文情境，另以全新短句檢查聽辨押韻的能力。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "押韻看的是字尾的實際發音，不是字首相同或拼字看起來相近。",
+  "solutionSteps": [
+    "先辨認題目要比較的是同一行或不同詞的尾音。",
+    "逐組把兩個詞唸出來，注意最後的母音與其後子音。",
+    "grow 與 glow 都以 /oʊ/ 收尾。",
+    "其餘三組的尾音分別不同，不能只因字首或字形相似就判為押韻。",
+    "因此唯一符合條件的是D。"
+  ]
 }

@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-10-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月20日校園實驗室的觀察中，小車在 32 秒內前進 356 m，研究「Eb-Ⅳ-10：不受力物體維持原有運動狀態」時，平均速率為何？",
+  "prompt": "低摩擦滑車在資料中每 1 s 的速度都約為 2.0 m/s 向東。下列哪個結論最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "11392 m/s"
+      "text": "滑車完全沒有受到任何外力"
     },
     {
       "id": "B",
-      "text": "0.0898876 m/s"
+      "text": "滑車所受合力近似為零，但仍可能有互相抵消的外力與測量限制"
     },
     {
       "id": "C",
-      "text": "11.125 m/s"
+      "text": "滑車必受到 2 N 向東的力"
     },
     {
       "id": "D",
-      "text": "324 m/s"
+      "text": "滑車一定正在向東加速"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-10"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "平均速率＝路程÷時間＝356÷32＝11.125 m/s。 本題對應 KG「Eb-Ⅳ-10：不受力物體維持原有運動狀態」。"
+    "value": "B",
+    "explanation": "速度—時間資料近似水平表示加速度近似零、合力近似零；不能因此宣稱所有外力不存在，低摩擦與量測只提供近似。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作慣性、合力、摩擦、參考系與速度資料的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-10"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "牛頓第一運動定律、慣性與受力判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以公車起步煞車、桌面滑車、受力圖與摩擦資料考查慣性、合力為零、速度改變與參考系；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "合力、慣性、摩擦與運動狀態判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以公車起步煞車、桌面滑車、受力圖與摩擦資料考查慣性、合力為零、速度改變與參考系；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "慣性、受力平衡與生活運動能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以公車起步煞車、桌面滑車、受力圖與摩擦資料考查慣性、合力為零、速度改變與參考系；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先從資料判斷加速度，再把合力結論和單一外力存在與否分開。",
+  "solutionSteps": [
+    "查看每秒速度是否近似保持 2.0 m/s。",
+    "速度不變表示加速度近似零。",
+    "由此只能推出合力近似零。",
+    "重力、支持力或微小阻力仍可能存在並抵消。",
+    "所以選 B。"
+  ]
 }

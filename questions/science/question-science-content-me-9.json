@@ -2,41 +2,87 @@
   "id": "question-science-content-me-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月2日社區環境站的觀察中，比較兩地「Me：環境汙染與防治」資料時，甲地迎風坡年雨量約 9020 mm、乙地背風坡約 6115 mm，最合理的做法是？",
+  "prompt": "噪音防治方案要判斷是否有效，最需要補充哪項？",
   "options": [
     {
       "id": "A",
-      "text": "同時比較地形、風向、觀測期間與 9020、6115 mm 資料"
+      "text": "在相同地點與時段重複量測音量，並記錄來源、距離與受影響時間"
     },
     {
       "id": "B",
-      "text": "在「Me：環境汙染與防治」中只看 9020 mm 的單一數值便下結論"
+      "text": "只問一次是否覺得安靜"
     },
     {
       "id": "C",
-      "text": "在「Me：環境汙染與防治」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "只看隔音牆顏色"
     },
     {
       "id": "D",
-      "text": "在「Me：環境汙染與防治」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "把白天平均值套用夜間"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-me"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Me：環境汙染與防治」。"
+    "explanation": "噪音具有時間、距離和來源差異；固定測點與時段並重複量測，才能比較方案效果與暴露時間。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的污染來源、污染鏈、水質、空氣、土壤、噪音、監測與防治能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-me"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-me",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "環境污染、污染物、食物鏈與防治資料",
+      "pattern": "取公開自然科評量以環境變化、污染影響、監測指標與防治方案進行推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開自然科評量以環境變化、污染影響、監測指標與防治方案進行推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "水質、空氣、污染、資料判讀與環境決策",
+      "pattern": "取公開會考以圖表、時間序列、替代解釋和證據界線判讀污染問題的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、時間序列、替代解釋和證據界線判讀污染問題的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "環境污染、營養鹽、污染鏈、監測與防治",
+      "pattern": "取公立國中試題以來源、路徑、受影響對象、控制變因和防治措施推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以來源、路徑、受影響對象、控制變因和防治措施推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把感受轉成可重做的音量與暴露測量。",
+  "solutionSteps": [
+    "圈出污染來源、污染物、路徑、受影響對象與指標。",
+    "區分直接觀察、推論和尚未測量的部分。",
+    "依水、空氣、土壤或食物鏈建立傳遞鏈。",
+    "排除只看顏色、氣味或一次採樣的過度結論。",
+    "比較源頭、過程、末端和復原方案的效果與代價。"
+  ]
 }

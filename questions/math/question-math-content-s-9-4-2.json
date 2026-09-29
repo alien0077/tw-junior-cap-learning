@@ -2,41 +2,84 @@
   "id": "question-math-content-s-9-4-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "等腰直角三角形的一股長為 7，斜邊長為何？",
+  "prompt": "相似直角三角形中，小三角形的斜邊為 13 公分，大三角形的斜邊為 26 公分。若小三角形一股為 5 公分，對應大股為多少？",
   "options": [
     {
       "id": "A",
-      "text": "7"
+      "text": "8 公分"
     },
     {
       "id": "B",
-      "text": "14"
+      "text": "10 公分"
     },
     {
       "id": "C",
-      "text": "7√2"
+      "text": "13 公分"
     },
     {
       "id": "D",
-      "text": "49"
+      "text": "15 公分"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-4"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "等腰直角三角形斜邊等於股長乘 √2，為 7√2。"
+    "value": "B",
+    "explanation": "斜邊比小：大＝13：26＝1：2，對應股也放大 2 倍，5×2＝10 公分，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似直角三角形邊長比值的不變性 題型與官方課綱 KG kg-math-content-s-9-4",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供相似直角三角形、對應邊比例與生活測量能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的相似直角三角形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似直角三角形對應邊比、尺度放大、直角與銳角判定及生活測量",
+      "observedPattern": "公立學校公開數學試題常利用兩個直角與一個銳角判定相似，保持對應股與斜邊的比值，處理影長、梯架或尺度未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似直角三角形對應邊比、尺度放大、直角與銳角判定及生活測量",
+      "observedPattern": "公立學校公開數學試題常利用兩個直角與一個銳角判定相似，保持對應股與斜邊的比值，處理影長、梯架或尺度未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似直角三角形對應邊比、尺度放大、直角與銳角判定及生活測量",
+      "observedPattern": "公立學校公開數學試題常利用兩個直角與一個銳角判定相似，保持對應股與斜邊的比值，處理影長、梯架或尺度未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用斜邊求尺度倍率，再套用到所有對應邊。",
+  "solutionSteps": [
+    "計算斜邊放大倍率 26÷13＝2。",
+    "確認相似圖形所有對應長度同倍率。",
+    "將小股 5 乘以 2。",
+    "得到大股 10 公分。",
+    "選 B。"
+  ]
 }

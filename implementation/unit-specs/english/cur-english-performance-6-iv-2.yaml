@@ -1,0 +1,138 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-6-iv-2
+  knowledgeGraphIds:
+  - kg-english-performance-6-iv-2
+  title: 6-Ⅳ-2：預習複習整理
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 6-Ⅳ-2：預習複習整理
+    curriculumIntent: 6-Ⅳ-2：預習複習整理
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依課綱與可讀版本標示公校資料融合可核對的策略差異；未讀到的翰林資料不推定，教材內容最終審查由使用者交ChatGPT
+    currentEvidenceStatus: two-version-school-plan-strategy-synthesis-authored; hanlin-readable-unit-evidence-pending; user-chatgpt-review-separate
+  learningGoals:
+  - 預習時依標題、小標與圖片提出可由英語材料查證的問題，並將預測保留為暫定
+  - 複習時先在遮蔽答案下提取已學資訊，再回原文核對並記錄錯誤類型
+  - 依資訊關係選擇分類、比較、順序或條件例證整理方式，並以間隔重訪與新材料遷移檢驗
+  prerequisites:
+  - 能閱讀簡易英語短文或公告並找出明示細節
+  - 能區分文本直接資訊與個人預測
+  coreConcepts:
+  - 預習：以問題形成閱讀目的，將預測留待文本查證
+  - 複習：無提示提取、核對、訂正，避免熟悉感代替記憶證據
+  - 整理：按任務保留資訊之間的分類、比較、順序或條件關係
+  misconceptions:
+  - 把看過標題後的猜測當成文章已證實內容
+  - 一邊看筆記一邊覺得熟悉，便誤認為能在無提示時提取
+  - 把所有字句照抄或只做漂亮版面，卻沒有呈現它們的關係
+  - 混淆同一公告中不同對象的時間、地點或限制
+  contentFlow:
+  - 'predict: 預覽校園市集標題和圖片，先寫下需要從短文查證的問題，不把猜測當成答案'
+  - 'manipulate: 將閱讀證據分類為已答、待查或不確定，收起文本後無提示提取並保留提取空缺'
+  - 'observe: 打開文本核對提取結果，觀察錯誤屬於漏讀、混淆關係或把推測當事實'
+  - 'explain: 依錯誤證據選整理方式，說明人物、時地與限制如何關聯，而非抄全文或只美化版面'
+  - 'transfer: 安排隔日與數日後按提取表現調整複習間隔，再將方法遷移至社團公告'
+  visualizations:
+  - 四步 guided-choice：預習設問、遮稿提取、關係分類、錯誤導向間隔複習
+  - 以純文字題幹和選項承載情境；不宣稱有滑桿、時間線、同步圖表或資料模型
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-6-IV-2-I01
+    component: GuidedChoiceBlock
+    purpose: 讓學生透過新寫的英文閱讀情境辨認預習設問、主動提取、資訊整理與間隔複習
+    initialState:
+      showAnswer: false
+      selectedAnswer: null
+      feedback: empty
+    studentActions:
+    - 閱讀市集短文學習情境並選擇較有效的學習策略
+    - 答錯時先讀取針對該迷思的一階提示，再重新選答
+    - 答對後閱讀解析，將選擇連回提取、核對及資訊關係
+    - 遷移至社團公告情境，規劃適切的下一輪複習
+    visualRules:
+    - 初始畫面不直接揭露答案；選項需使用可讀文字，不以顏色單獨表示正誤
+    - 每步都有單題錯答提示與答對解析，重試後才顯示該題完整回饋
+    - 用 aria-live 回報作答結果，鍵盤可完成全部選項
+    - 窄螢幕不得裁切題幹、選項、提示及解析
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-6-IV-2-I01
+      trigger: 把猜測當證據，或把重讀／抄寫熟悉感當成無提示提取
+      prompt: 先判斷目前的想法是文本已明說、仍待查證，還是只覺得看過。
+      expectedEvidence: 能提出可由材料核對的短語，並描述先回想、後核對的順序
+    feedback:
+      correct: 指出答案如何符合本步的學習目的，並提醒把策略帶到下一份材料。
+      incorrect: 依預習、提取、分類或間隔的具體錯因給一階提示，保留重試後再讀解析。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "不借用教學內容；只採鍵盤操作與文字即時回饋的可及性原則，題目與解析全為本課原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "不借用外部互動內容；使用短回合答題、錯答提示、重試與解析來練策略辨析。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "選項具明確名稱與鍵盤操作，作答結果以文字回饋，不依賴顏色。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "保留語意清楚的標題層級和互動區塊標示，方便鍵盤及輔助科技定位。"
+  capTransfer:
+    questionType: 學習策略選擇與理由說明
+    stemConstraint: 使用新英文公告檢驗設問、提取、核對與分類是否能遷移，不重複市集答案
+    requiredResponse: 說明何時遮稿提取、何時核對，以及如何保留資訊與對象的連結
+    scoring: 策略適切 1、先提取後核對 1、整理保留關係 1
+  exitTicket:
+    prompt: 今天先用哪個問題設定閱讀目的？遮住文本後你提取到什麼？核對後發現哪一個錯因，下一次要怎樣調整？
+    successCriteria:
+    - 提出可由英文材料查證的閱讀問題
+    - 說明先合上材料提取、再開啟核對
+    - 以錯誤類型決定整理方法或重訪間隔
+  expressionExtension:
+    applicable: true
+    task: 用英文向同學簡述新公告的參加對象、截止日與下一步，並用筆記標出每個資訊對應的原文位置
+    constraint: 學生先寫；自我核對日期、對象和動作是否配對，不把預測寫成原文明示
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始不顯示四題正解；鍵盤可完成所有題目，錯答顯示與該策略錯因相關的一階提示，重試正確後顯示解析。
+  - 四題分別診斷預習猜測、被動重讀、關係整理、錯誤導向間隔複習；每題正解唯一且干擾選項可排除。
+  - 新公告遷移要求先預覽設問、合書提取、開文核對並保留資訊與對象連結。
+  - Fallback：刻意阻擋 simulations.js 後，四題本地預習／提取 GuidedChoice 仍須鍵盤完成、錯答重試並取得解析。
+  - 320px、375px、768px均無水平溢位；aria-live文字可讀，互動不依賴外部服務。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - lesson schema、學生頁正文與互動技術契約通過自動化驗收；教材最終內容審查由使用者交ChatGPT，不是本規格QA gate
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 6-Ⅳ-2
+    role: official-curriculum-source-of-truth

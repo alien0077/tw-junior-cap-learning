@@ -2,41 +2,76 @@
   "id": "question-chinese-content-c-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "文化內涵題若提供節慶、服飾與飲食資料，最適合先判斷什麼？",
+  "prompt": "同一條早市規矩，居民說是互相照應，遊客覺得不透明，攤販說明它與潮水和漁獲有關。下列判斷最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "群體如何表達共同生活經驗"
+      "text": "只有遊客的感受是真實的，其他都是藉口"
     },
     {
       "id": "B",
-      "text": "作者的數學能力"
+      "text": "攤販是當事人，所以他的說法必然代表所有人"
     },
     {
       "id": "C",
-      "text": "文章的字數多寡"
+      "text": "三種說法互相矛盾，因此文本沒有任何資訊"
     },
     {
       "id": "D",
-      "text": "每個詞語的筆畫"
+      "text": "三人從不同身分與經驗理解同一做法，應分開整理而不能選一句當唯一文化真相"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-c"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "文化材料反映群體的生活方式、價值與共同經驗。"
+    "value": "D",
+    "explanation": "文化閱讀要保留說話者位置與證據；不同觀點可能同時提供情境資訊，不必急著壓成單一標準答案。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "文化材料與群體生活判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編文化閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-c"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-c",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文化語境、閱讀理解與觀點判讀",
+      "observedPattern": "公立學校國文公開試題常以文本線索、人物觀點、情境推論與證據界線檢查文化和閱讀理解；本題改寫為地方生活與跨視角情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "敘事視角、語境與推論界線",
+      "observedPattern": "公立學校國文公開試題常以文本線索、人物觀點、情境推論與證據界線檢查文化和閱讀理解；本題改寫為地方生活與跨視角情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先從詞句和行動找文化線索，再標記說話者與四個座標；把直接證據、有限推論與未知部分分開，檢查是否把個案誤寫成群體標籤。",
+  "solutionSteps": [
+    "讀題定位：圈出「觀點差異」，找文本直接寫出的物件、語句、行動、人物身分與情境。",
+    "分開證據與推論：先寫可引用的文字，再檢查文化解釋是否超出時空、地域、身分與情境；本題核心是「文化閱讀要保留說話者位置與證據；不同觀點可能同時提供情境資訊，不必急著壓成單一標準答案。」",
+    "核對正解：選項 A「三人從不同身分與經驗理解同一做法，應分開整理而不能選一句當唯一文化真相」保留文本可支持的範圍，沒有把單一角色擴大成群體規則。",
+    "排除誘答：留意『所有、一定、天生、神祕』等標籤化語句，也不要因視角不同就直接否定其中一方。",
+    "回到文化證據地圖：標出已知、合理推測與未知部分，再檢查是否還有未呈現的聲音或可能的時間變化。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

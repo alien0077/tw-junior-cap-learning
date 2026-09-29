@@ -1,0 +1,65 @@
+{
+  "id": "question-math-root-a-10",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "在 −2 至 9 的整數中，滿足 3x+4≥16 的有幾個？",
+  "options": [
+    {
+      "id": "A",
+      "text": "4 個"
+    },
+    {
+      "id": "B",
+      "text": "5 個"
+    },
+    {
+      "id": "C",
+      "text": "6 個"
+    },
+    {
+      "id": "D",
+      "text": "7 個"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-a",
+    "kg-math-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "C",
+    "explanation": "先解不等式：3x+4≥16，兩邊同減 4 得 3x≥12，再除以正數 3 得 x≥4。限制範圍為 −2 至 9 的整數，因此符合者為 4、5、6、7、8、9，共 6 個，選項 C。端點 4 代入恰好等於 16，符合 ≥。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.zlm.kh.edu.tw/upload/243/104_21363/106-2-3%E6%95%B8%E5%AD%B8%E7%A7%91%E4%B8%83%E5%B9%B4%E7%B4%9A%28%E7%AD%94%E6%A1%88%29.pdf",
+      "title": "高雄市立中崙國民中學106學年度第2學期第3次評量七年級數學科試題卷（含答案）",
+      "year": "106-2",
+      "subject": "math",
+      "locator": "第1頁第8題；只採有限正整數範圍內計算線性不等式解數的命題模式",
+      "locatorLevel": "item",
+      "observedPattern": "先由一元一次不等式求解集合，再與有限整數範圍取交集並計數；本題改用不同整數區間、係數、常數及不等號方向，不沿用原卷答案。",
+      "pattern": "先由一元一次不等式求解集合，再與有限整數範圍取交集並計數；本題改用不同整數區間、係數、常數及不等號方向，不沿用原卷答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.zlm.kh.edu.tw/upload/243/104_21363/106-2-3%E6%95%B8%E5%AD%B8%E7%A7%91%E4%B8%83%E5%B9%B4%E7%B4%9A%28%E7%AD%94%E6%A1%88%29.pdf",
+    "sourceLocator": "高雄市立中崙國民中學106學年度第2學期第3次七年級數學評量第1頁第8題；pattern-only，未複製原題、選項或答案",
+    "authoringNote": "題型取自公立國中公開試題的有限整數解集計數能力；使用全新不等式、範圍、答案與五步詳解，維持 draft 待 AI 內容 QA。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-root-a",
+  "solutionStrategy": "先解不等式，再把解集與題目指定的整數區間取交集；確認端點是否包含，最後逐一計數並用首末項公式驗算。",
+  "solutionSteps": [
+    "先圈定題目限制的範圍：x 只能取 −2 至 9 的整數；先求不等式解集，再與這個有限範圍取交集。",
+    "兩邊同減 4，得 3x≥12。再除以正數 3，不等號方向不變，得到 x≥4。",
+    "交集中的整數是 4、5、6、7、8、9，因此候選解共有六個。",
+    "檢查邊界：x=4 時左式 3×4+4=16，等號成立所以要納入；x=3 時左式為 13，不符合，確認最小解為 4。",
+    "從最小解 4 數到最大允許值 9，個數為 9−4+1=6，選 C。加 1 是因首尾兩個端點都列入。"
+  ]
+}

@@ -1,0 +1,181 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-8-1
+  knowledgeGraphIds:
+  - kg-math-content-a-8-1
+  title: A-8-1：二次式的乘法公式
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '8'
+  fusedScope:
+    officialCurriculum: A-8-1：二次式的乘法公式
+    curriculumIntent: A-8-1：二次式的乘法公式
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 以南一標示八上自學講義與出版社教材簡介、康軒D版標示的學生公開筆記、翰林官方補救GO可讀索引及111版分享摘錄交叉研究；來源均非三家現行課本全文，須保留權威／存取限制。融合共同的分配律與三公式，並依各材料不同的面積附件、逐項配對、公式分層練習與近似數值計算支架重新設計；lesson全文原創。
+    currentEvidenceStatus: curriculum-and-kg-grounded; unit-relevant-third-party-and-publisher-resource-sample-research-recorded; official-full-text-not-fully-accessible; substantive-fusion-draft; content-review-pending
+  learningGoals:
+  - 將邊長 a+b 的正方形切成四塊，從兩個 ab 長方形推得 (a+b)²=a²+2ab+b²。
+  - 比較 (a−b)² 與 (a+b)(a−b) 的交叉項符號，說明前者相加、後者抵消的原因。
+  - 對 (2x+3)² 與 (3y+2)(3y−2) 分別用逐項分配、公式與數值代入互相驗證。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - (a＋b)²＝a²＋2ab＋b²
+  - (a−b)²＝a²−2ab＋b²
+  - (a＋b)(a−b)＝a²−b²
+  - 平方和的交叉項來自兩個相同矩形 ab，因此係數為 2；(a−b)² 的兩個交叉項均為 −ab。
+  - (a+b)(a−b) 中 −ab 與 +ab 相消，留下 a²−b²；公式中的 a、b 可以是含係數的整體代數式。
+  - 面積分割、分配律展開與數值代入是檢查公式是否保持等值的三種互補證據。
+  misconceptions:
+  - 將 (a+b)² 展開成 a²+b²，漏掉兩個 ab 交叉區。
+  - 將 (a−b)² 的常數平方寫成 −b²，忽略 (−b)(−b) 為正。
+  - 將 (a+b)(a−b) 寫成 a²+b²，沒有檢查末項符號與交叉項抵消。
+  contentFlow:
+  - 'hook: 把菜圃正方形的每邊寫成 a+b，預測切成四塊後總面積有哪些乘積。'
+  - 'activate-prerequisite: 用長乘寬重建兩個長方形面積 ab，確認交換長寬不改變面積。'
+  - 'predict: 先選 (a+b)² 是否含 2ab，提交後才揭開兩塊交叉矩形。'
+  - 'manipulate: 以鍵盤或觸控選取互動流程中的面積分割、符號比較、逐項展開與數值驗算階段；每階顯示對應的式子和證據。'
+  - 'observe: 對照 (a+b)²、(a−b)²、(a+b)(a−b) 的交叉項方向、重疊角落與抵消位置。'
+  - 'explain: 用「區塊數量／乘積符號／合併結果」解釋為何中間項是 2ab 或 0。'
+  - 'formalize: 將圖形規律連結到分配律，再處理第一量為 2x 等複合代數式的公式代入。'
+  - 'guided-practice: 展開 (2x+3)² 與 (3y+2)(3y−2)，圈出交叉項後才合併。'
+  - 'transfer: 四周各加寬 0.4 公尺，建立新邊長 x+0.8，求新面積並說明適用的正邊長限制。'
+  - 'exit-ticket: 診斷漏寫中間項的錯式，選一組 a、b 代回原乘積與展開式核對。'
+  visualizations:
+  - 面積拼圖：正方形按 a、b 分割，四塊標為 a²、ab、ba、b²，明確顯示兩個交叉長方形。
+  - 符號比較板：平方差與和差乘積並排，標示 −ab、+ab 如何相加或抵消。
+  - 三路驗算表：同一題並列面積結構、分配律展開與指定數值代入結果。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-8-1-I01
+    component: GeometryManipulationBlock
+    purpose: 讓學生依序操作原生階段按鈕，追蹤四塊面積如何生成平方公式的交叉項，再比較符號改變及數值驗算；本互動為逐階證據檢視，不宣稱可拖曳圖形。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        sideA: 4
+        sideB: 2
+        crossRectangles: 2
+    studentActions:
+    - 先預測總面積式中是否有 ab 項，提交後才顯示分割區塊。
+    - 以鍵盤或觸控選取各階段按鈕，逐步顯示面積分割、公式整理、指定數值核對及減法情形。
+    - 閱讀階段內的 action、equation、reason 和 feedback，將兩個 ab 區域連到 2ab，再比較異號項抵消。
+    - 可使用「已提出預測」「已記錄觀察」按鈕及文字解釋欄留下個別學習紀錄。
+    visualRules:
+    - 每階顯示一致的符號式與推理說明；不可宣稱存在未實作的即時幾何拖曳或變數滑桿。
+    - 平方模式必須列出兩個 ab 區塊；差平方模式須以文字解釋負交叉項與正的常數平方。
+    - 區塊以代數標籤、斜線紋理及文字描述共同辨識，不依賴顏色。
+    - 保留學生預測及階段選擇；窄螢幕可垂直閱讀所有階段按鈕、算式和理由。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-8-1-I01
+      trigger: 將 (a+b)² 展開成 a²+b²，或把 (a−b)² 的 b² 標成負值。
+      prompt: 圖中有幾個長寬分別為 a、b 的區塊？右下角是 (−b)(−b) 還是只乘一次負號？
+      expectedEvidence: 平方和有 ab、ba 兩塊所以是 +2ab；差平方的角落是 (−b)(−b)=+b²。
+    feedback:
+      correct: 讓學生切換到一加一減模式，預測交叉區如何抵消，再用另一組數值驗算。
+      incorrect: 先提示數交叉矩形或追蹤兩個負號；第二次仍錯才顯示相關區塊，不直接給整條公式。
+    guidedActivity:
+      title: 面積拼圖：兩個交叉區塊從哪裡來？
+      introduction: 設 a=3、b=2，把邊長 a+b 的正方形分成四塊。先算交叉長方形，再加總面積，最後寫出一般公式。
+      stages:
+      - prompt: 第一步：兩塊交叉長方形的總面積 2ab 是多少？
+        acceptedAnswers: ["12"]
+        correctFeedback: 正確。每塊面積是 3×2=6，兩塊合計 12。
+        hint: 先算一塊 ab，再乘以圖中的兩個交叉區塊。
+      - prompt: 第二步：四塊面積總和是多少？
+        acceptedAnswers: ["25"]
+        correctFeedback: 正確。a²+2ab+b²=9+12+4=25。
+        hint: 把 3²、兩塊 3×2，以及 2² 相加。
+      - prompt: 第三步：把面積分割寫成對所有 a、b 都成立的平方公式。
+        acceptedAnswers: ["(a+b)²=a²+2ab+b²", "(a+b)^2=a^2+2ab+b^2", "(a+b)²＝a²＋2ab＋b²"]
+        correctFeedback: 正確。兩個 ab 區塊合併成 2ab，因此不能漏掉中間項。
+        hint: 左側是整個正方形邊長的平方；右側依序列出四塊面積並合併 ab 與 ba。
+      completionMessage: 完成。這個面積拼圖也可用分配律驗證；數值檢查支持公式，但一般成立仍由區塊分割推導。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "借用 PhET 預測—操作—解釋的教學節奏，以逐階證據按鈕呈現 (a+b)² 分割、符號比較和驗算；本課不宣稱有拖曳控制，也不引用其資料或題目。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "採用可逆操作與即時回饋的活動設計：切換 (a+b)²、(a−b)²、(a+b)(a−b)，觀察交叉項如何合併或抵消。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "面積圖每一塊以文字標籤與可讀名稱呈現；操作後用 live status 宣告邊長、區塊面積及總和，答案不只靠顏色傳達。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "頁面以課題、互動、推導、驗算及回饋等語意區域組織；鍵盤焦點可循序完成切分、選公式和代值檢查。"
+  capTransfer:
+    questionType: 邊長變動面積模型與公式驗證
+    stemConstraint: 正方形菜圃原邊長 x 公尺，四周各向外加寬 0.4 公尺；寫新面積展開式並求 x=5 時的數值，說明為何邊長增加 0.8。
+    requiredResponse: 建立 (x+0.8)²=x²+1.6x+0.64；x=5 時算得 33.64 平方公尺，並以邊長 5.8 的平方驗算。
+    scoring: 邊長與單位模型正確 1、公式展開正確 1、數值驗算及幾何限制完整 1
+  exitTicket:
+    prompt: 小安寫 (y+2)²=y²+4。指出遺漏的面積區塊、補成正確展開式，並用 y=3 驗算。
+    successCriteria:
+    - 指出兩個交叉長方形各為 2y，合計 4y。
+    - 寫出 y²+4y+4。
+    - 原式 25，展開式代入也為 25。
+  expressionExtension:
+    applicable: true
+    task: 畫或描述一個由 a、b 組成的面積分割，寫出乘積展開式，解釋每項來自哪塊區域，並選數值驗算。
+    constraint: 學生先作圖和寫式；回饋只標記漏區塊、符號或單位，不代畫整張圖。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - (a+b)² 初始預測隱藏答案；操作後必須出現兩個 ab 交叉區並合為 2ab。
+  - 將一個括號改成 a−b 時，交叉項以 −ab、+ab 標示並抵消，常數角仍為 +b²。
+  - 錯寫 a²+b² 時觸發「漏兩塊」提示；差平方末項負號錯誤時提示追蹤兩個負因子。
+  - 320px、375px、768px 與鍵盤可完成預測、逐階證據檢視、平方差符號比較和驗算；所有視覺概念均有文字替代，測試不得假設有拖曳控制。
+  - 菜圃 transfer x=5 時 (5.8)² 與 25+8+0.64 都為 33.64 平方公尺。
+  - 動畫停用或拼圖元件失效時，文字 fallback 以區塊清單、代數標籤和總和表呈現四塊面積，仍可完成預測、推導、數值驗算及移轉任務。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-1
+    role: official-curriculum-source-of-truth
+  - url: https://www.scribd.com/document/827691143/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E5%85%AB%E4%B8%8A
+    locator: 八上 B3 1-1 乘法公式；搜尋索引可讀的分配律、和／差平方與平方差公式練習頁（頁次約10–15）；Scribd分享者與出版社未驗證版本／權利
+    role: third-party-shared-nani-labeled-study-material-pattern-only
+  - url: https://fliphtml5.com/uygal/wdfq
+    locator: 111南一國中數學教材簡介本第3冊；教材簡介本列出乘法公式、面積和與差的平方、平方差等附件，未取得課本正文
+    role: third-party-hosted-publisher-resource-preview
+  - url: https://www.clearnotebooks.com/zh-TW/notebooks/2564097
+    locator: Howard公開筆記第2頁；作者自標康軒D版，含1-1乘法公式、面積圖式、近似數乘法與平方公式；使用者創作，非康軒官方原書
+    role: third-party-user-authored-kanghsuan-labeled-study-note
+  - url: https://resource.hle.com.tw/Books/BooksResource/00-112%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B82%E4%B8%8A%E7%BF%B0%E6%9E%97%E8%A3%9C%E6%95%91GO-%E5%AD%B8%E7%94%A8%28112f339539%29.pdf
+    locator: 官方112版補救GO學用本搜尋索引，1-1乘法公式約pp.4–7；分配律、和的平方、差的平方、平方差分主題，PDF直開回403
+    role: publisher-hosted-search-index-excerpt
+  - url: https://www.scribd.com/document/690167202/00-111%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B82%E4%B8%8A%E7%BF%B0%E6%9E%97%E8%A3%9C%E6%95%91GO-%E5%AD%B8%E7%94%A8-111f397125
+    locator: 翰林111版補救GO學用本公開分享摘錄pp.4–7；逐主題提供分配律、完全平方與平方差公式的分層練習；第三方分享、非出版社認證
+    role: third-party-shared-hanlin-labeled-study-material-pattern-only

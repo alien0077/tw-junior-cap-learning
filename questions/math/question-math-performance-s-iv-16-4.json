@@ -2,7 +2,7 @@
   "id": "question-math-performance-s-iv-16-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "從正方體正前方看到的圖形為何？",
+  "prompt": "從正方體的正前方做正投影，看到的外框圖形為何？",
   "options": [
     {
       "id": "A",
@@ -10,33 +10,76 @@
     },
     {
       "id": "B",
-      "text": "三角形"
+      "text": "長方形但不是正方形"
     },
     {
       "id": "C",
-      "text": "圓形"
+      "text": "三角形"
     },
     {
       "id": "D",
-      "text": "梯形"
+      "text": "圓形"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-s-iv-16"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "正方體每個面都是正方形。"
+    "explanation": "正方體正面是一個正方形，沿正面方向投影的外框仍是正方形，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考數學科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "以數學概念、全新數值與解析獨立撰寫；公開試題僅作題型研究。待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供立體體積、表面積、展開圖、正投影與三視圖能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的立體幾何方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-performance-s-iv-16"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-16",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "柱體與圓柱體積、表面積、展開圖、正投影與三視圖判讀",
+      "observedPattern": "公開數學評量常要求由立體圖形的尺寸、展開圖或不同視向投影判斷表面積、體積與形狀；本題只取能力方向、資料型態與判讀層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "柱體與圓柱體積、表面積、展開圖、正投影與三視圖判讀",
+      "observedPattern": "公開數學評量常要求由立體圖形的尺寸、展開圖或不同視向投影判斷表面積、體積與形狀；本題只取能力方向、資料型態與判讀層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "柱體與圓柱體積、表面積、展開圖、正投影與三視圖判讀",
+      "observedPattern": "公開數學評量常要求由立體圖形的尺寸、展開圖或不同視向投影判斷表面積、體積與形狀；本題只取能力方向、資料型態與判讀層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "正投影先固定觀察方向，再取最靠近觀察者的外框，不把立體深度誤當成平面邊長。",
+  "solutionSteps": [
+    "指定觀察方向為正前方。",
+    "正方體朝向觀察者的面是正方形。",
+    "投影保留此面的長與寬。",
+    "兩邊相等，所以外框仍為正方形。",
+    "選 A。"
+  ]
 }

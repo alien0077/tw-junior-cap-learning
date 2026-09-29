@@ -1,0 +1,83 @@
+{
+  "decision": "D-359",
+  "date": "2026-09-28",
+  "unit": "Ba-Ⅳ-3：化學反應的吸熱與放熱",
+  "scope": "Correct source attribution, synthesize the one directly readable publisher excerpt with official curriculum/KG in original teaching, and align the specification with the existing energy-ledger interaction.",
+  "sources": [
+    {
+      "publisher": "hanlin",
+      "url": "https://resource.hle.com.tw/Books/BooksResource/02-111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%202%E4%B8%8B%E8%AA%B2%E6%9C%ACch1%28111f603318%29.pdf",
+      "locator": "Chapter 1, section 1-1, search-indexed excerpt around printed p.12; reaction energy conversion, endothermic heated decomposition, exothermic iron/air hand-warmer example.",
+      "limitation": "Official publisher PDF, but this turn could read only the indexed excerpt; not the full chapter or edition. No publisher wording, example prompt, figure, or answer was copied into the lesson."
+    },
+    {
+      "publisher": "hanlin",
+      "url": "https://resource.hle.com.tw/Books/BooksResource/111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%202%E4%B8%8B%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99%E7%94%A8%E5%90%88%E6%AA%94%28111f623935%29.pdf",
+      "locator": "Teacher study-aid PDF, Chapter 1, pp.1-2; publisher search result surfaces reaction/energy summary.",
+      "limitation": "Supplemental teacher aid, not the full textbook."
+    },
+    {
+      "publisher": "kanghsuan",
+      "url": "https://digitalmaster.knsh.com.tw/all/video/j/nature_page.html?l1=%E5%AF%A6%E9%A9%97%E5%BD%B1%E7%89%87&l2=8%E4%B8%8B",
+      "locator": "Official 8下 experiment index; lists chemical reaction/mass, acid-base neutralization, and reaction-rate activities.",
+      "limitation": "Index only; no Ba-Ⅳ-3 energy lesson text or energy-evaluation evidence exposed."
+    },
+    {
+      "publisher": "nani",
+      "url": "https://tpack.nani.com.tw/nani_content?a=75&b=2",
+      "locator": "Official resource page currently exposes 1上 CH3-2 and 2上 CH4-3 infographic examples.",
+      "limitation": "Not Ba-Ⅳ-3 evidence; Nani unit-content gate remains pending."
+    },
+    {
+      "publisher": "official-curriculum",
+      "url": "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "locator": "Ba-Ⅳ-3 official learning content."
+    }
+  ],
+  "synthesis": {
+    "publisherGrounding": "One directly readable publisher excerpt establishes the basic energy-conversion concept and example categories. No three-publisher commonality is asserted.",
+    "originalTeachingContribution": "Retains the author-created system/environment boundary, paired temperature and reaction evidence, matched control comparison, energy-flow arrows, heat-loss limitations, and original neutralization/cold-material data. Publisher examples are not used as the lesson's worked data set.",
+    "learnerVisibility": "Replaced five compressed learner-facing summaries with the six already-authored, unit-specific teaching stages plus objectives, so all full paragraphs are visible and match teaching.body exactly.",
+    "interactiveSpec": "Replaced generic ParticleModelBlock/pseudo-particle requirements with SystemRelationshipBlock, system-boundary inputs, comparison evidence, unit-specific misconception prompts and transfer cases; no runtime code changed this turn."
+  },
+  "gates": {
+    "hanlinPublisherSlot": "verified for the directly readable excerpt only",
+    "naniPublisherSlot": "pending; current official page does not cover the unit",
+    "kanghsuanPublisherSlot": "pending; official index is contextual only",
+    "lessonReviewStatus": "draft",
+    "specQaStatus": "untested pending validator and runtime QA",
+    "questionLedger": "not rerun or edited; prior authoritative count was 10,566/10,566, pending 0"
+  },
+  "modifiedPaths": [
+    "lessons/science/lesson-science-content-ba-iv-3.json",
+    "implementation/unit-specs/science/cur-science-content-ba-iv-3.yaml",
+    "implementation/unit-specs.manifest.json",
+    "implementation/runtime/science-ba-iv-3-substantive-fusion.test.mjs",
+    "scripts/browser_smoke_test.py",
+    "scripts/browser_a11y_audit.py",
+    "package.json",
+    "site/data-index.json",
+    "docs/DECISIONS.md",
+    "docs/CURRENT_STATE.md",
+    "project-state.json"
+  ],
+  "verification": {
+    "targetedRegression": "PASS",
+    "jsonParse": "PASS",
+    "simulationContractTarget": "PASS: generated contract exactly matches Ba-IV-3 simulation; 5 sourceRefs",
+    "npmTest": "PASS; workbench traversal 1,027/1,027",
+    "validateData": "PASS: 14,480 JSON, 13,113 IDs, 1,032 KG nodes; lessons 1,052 and questions 10,566 remain draft",
+    "implementationSpecs": "PASS: 1,027 specs, 0 errors; publisher evidence 287 verified / 2,794 pending; all 1,027 QA statuses remain pending",
+    "lessonIndependence": "PASS: 614 learning-content lessons, 0 risks, 0 affected references, 0 strict failures",
+    "publisherLedger": "PASS: Hanlin slot raised by one; 287 / 3,081 verified, 2,794 pending",
+    "questionLedger": "reused 10,566 / 10,566, pending 0; not rerun",
+    "siteIndex": "PASS: 1,052 lessons, 10,566 questions, 40 mapping sets",
+    "browserSmoke": "PASS in authorized Chromium: 1,027 / 1,027; Ba-IV-3 objectives + six full authored stages visible; 320/375/768px; AX status and reduced-motion checks passed",
+    "browserA11y": "PASS axe-core: 51 runs including Ba-IV-3 at 320/375/768px; 0 violations, 6 incomplete (automated only)",
+    "interactiveSimulationRepositoryAudit": "REPOSITORY-WIDE FAIL: many other lesson simulation contracts reported stale; this target matches simulation_for exactly and no unrelated contracts were changed",
+    "scopedDiffCheck": "PASS"
+  },
+  "a7_2Modified": false,
+  "subtasks": false,
+  "commitPush": "not performed"
+}

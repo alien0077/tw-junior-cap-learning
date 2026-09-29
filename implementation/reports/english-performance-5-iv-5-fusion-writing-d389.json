@@ -1,0 +1,76 @@
+{
+  "decisionId": "D-389",
+  "date": "2026-09-28",
+  "phase": "english-performance-5-iv-5-original-phonics-fusion-and-interaction-alignment",
+  "status": "pass",
+  "unit": "English learning-performance 5-Ⅳ-5",
+  "lessonId": "lesson-english-performance-5-iv-5",
+  "scope": "Replace an inventoried generic placeholder with a unit-specific original lesson, correct inaccurate publisher-evidence descriptions, align the student interaction to a testable GuidedChoice, and preserve the user's ChatGPT content-review role.",
+  "curriculumAndResearch": {
+    "officialCurriculum": {
+      "url": "https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf",
+      "locator": "PDF p.14, learning performance 5-Ⅳ-5: use phonics rules to read and spell English words; Ab-Ⅳ-3 phonics rules including proficiency and vocabulary spelling support.",
+      "use": "Sets the two-way read/spell objective; the authored lesson teaches sound segmentation, grapheme mapping, blending, spelling and exception checking."
+    },
+    "publisherAndPublicPlanSources": [
+      {
+        "publisher": "nani",
+        "url": "https://course.cyc.edu.tw/upfile/course113/sub1/15636172843290327.pdf",
+        "locator": "Daji Junior High 113 school-year grade 7 plan, PDF p.73/document P72, Nan-I books 1-2, Starter pp.1-8. Lists 5-IV-5 and Ab-IV-3, alphabet review and dictionary use.",
+        "boundary": "Public school curriculum plan identifying the adopted edition; not Nan-I chapter text or a list of publisher phonics examples."
+      },
+      {
+        "publisher": "kanghsuan",
+        "url": "https://www.chjh.tp.edu.tw/wp-content/uploads/doc/chjh22/112%E5%AD%B8%E5%B9%B4%E5%BA%A6_7%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E6%96%87.pdf",
+        "locator": "Zhongxiao Junior High 112 school-year grade 7 plan, PDF p.1 Get Ready; identifies Kang Hsuan, 5-IV-5/Ab-IV-3, oral/listening/written work and group activities.",
+        "boundary": "Plan confirms curriculum alignment and activity/assessment mix but does not disclose rule-level teaching sequence or textbook interior."
+      },
+      {
+        "publisher": "hanlin",
+        "url": "https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf",
+        "locator": "Yongqing High School junior-high department 114 school-year grade 7 plan, PDF p.27/document P26, Unit 3 pronunciation sequence: review phonics, identify KK symbols, read vowel/consonant example words, apply rules to vocabulary; listening/reading/writing assessment.",
+        "boundary": "Public school plan identifying the adopted Hanlin edition; not a complete assigned-book chapter."
+      },
+      {
+        "publisher": "hanlin publisher supplement",
+        "url": "https://books.hanlin.com.tw/product/6920131",
+        "locator": "Official product-description lines 23-33 for junior-high grade 7 extension material: letter-sound relationship, sound distinctions, rule examples and listening/speaking/reading/writing practice.",
+        "boundary": "Publisher supplement description, not the assigned textbook; no interior pages/audio obtained."
+      }
+    ],
+    "sourceCorrection": "The prior Kang Hsuan evidence URL was a public plan whose retrieved content was not the claimed English curriculum plan. It was replaced with Zhongxiao Junior High's actual 112 school-year English plan. Repeated generic claims about phoneme/syllable patterns were replaced with source-specific observations and explicit evidence limits.",
+    "fusionLimit": "Nani/Kang Hsuan/Hanlin assigned chapter texts were not obtained. This is an original curriculum-grounded synthesis informed by three public school version-identification plans and a Hanlin supplement description, not a claim of complete chapter-by-chapter textbook comparison."
+  },
+  "authoredWork": {
+    "replacedPlaceholder": true,
+    "sections": 6,
+    "interactionSteps": 5,
+    "originalExamples": ["map", "ship", "cap/cape", "shop", "ship/chip", "ship/shop", "The map leads to a hidden shed."],
+    "learningSequence": "phoneme segmentation -> grapheme/phoneme mapping including digraphs -> blending to read -> reverse encoding from sound to spelling -> contrast one changed cue -> sentence/context and dictionary verification for uncertain patterns",
+    "misconceptions": ["letter names mistaken for word sounds", "two-letter digraph counted as two phonemes", "omitted/reordered sounds or inserted schwa", "CVCe treated as exceptionless"],
+    "interactionContract": "Five offline GuidedChoice items each have a keyed answer, item-specific retry hint and explanation. Text-only; no audio playback, recording, speech recognition or pronunciation score.",
+    "lessonStatus": "draft; the user reserved lesson content review for ChatGPT. Codex did not conduct that review."
+  },
+  "automatedEvidence": {
+    "lessonSchema": "PASS: 1,056 lesson files checked, 0 failures.",
+    "dataValidation": "PASS: 14,502 JSON files, 13,114 IDs and 1,032 KG nodes; all lessons/questions remain draft.",
+    "siteIndex": "Rebuilt: 1,052 lessons, 10,566 questions and 40 mapping sets.",
+    "targetBrowser": "PASS: Python Playwright 1.58.0 / Chromium revision 1208; HTTP 200, six visible lesson sections, five choices, keyboard retry/correct-answer explanations, aria-live, accessible button names, reduced motion emulated, external network blocked, no overflow at 320/375/768, zero page errors; confirms no speech recording/recognition.",
+    "fullNpmTest": "PASS: npm test exited 0, including 1,027/1,027 workbench lesson traversal.",
+    "specValidation": "PASS: 1,027 specs, 0 structural errors; 4 eligible and 1,023 pending in the current global gate.",
+    "browserEnvironment": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3, Playwright 1.58.0, Chromium 1208. Default restricted launch failed with SIGTRAP and cleanup EPERM although dependencies/executable/server/URL existed; same test passed in the authorized browser-launch environment. No packages were reinstalled."
+  },
+  "inventory": {
+    "authoredFusionManuscripts": "725/791 = 91.66%",
+    "learningContent": "583/583",
+    "learningPerformance": "142/208",
+    "longFormMarker": 555,
+    "interpretation": "Manuscript presence/record only, not semantic review, full assigned-edition source coverage or ChatGPT review."
+  },
+  "outOfScopeAndNotRepeated": {
+    "questions": "No question records or answers modified; existing ten question files retained.",
+    "publicExamLedger": "D-385 remains 10,566/10,566 recorded and pending 0; not rerun.",
+    "existingAuthoredLessons": "No other inventoried manuscript was rewritten.",
+    "commitPush": "Not performed; overall goal remains active."
+  }
+}

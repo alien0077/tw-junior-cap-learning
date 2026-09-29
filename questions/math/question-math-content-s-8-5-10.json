@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-5-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若兩個三角形全等，其中一個面積為 24 平方公分，另一個面積為何？",
+  "prompt": "下列哪組資料足以判定兩個直角三角形全等？",
   "options": [
     {
       "id": "A",
-      "text": "12"
+      "text": "兩個銳角分別相等"
     },
     {
       "id": "B",
-      "text": "24"
+      "text": "一個銳角與一股相等"
     },
     {
       "id": "C",
-      "text": "48"
+      "text": "斜邊與一股分別相等"
     },
     {
       "id": "D",
-      "text": "需知道周長"
+      "text": "兩股成比例"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "全等圖形大小相同，面積也相等，為 24 平方公分。"
+    "value": "C",
+    "explanation": "直角三角形的斜邊與一股分別相等符合 RHS 判定，足以判定全等，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的全等性質 題型與官方課綱 KG kg-math-content-s-8-5",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形全等判定能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的三角形全等方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-8-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形全等、對應頂點／邊／角、SSS／SAS／ASA／AAS／RHS 判定與不足條件反例",
+      "observedPattern": "公開學校數學試題常以三角形配對、全等判定必要位置、直角三角形與反例辨識考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形全等、對應頂點／邊／角、SSS／SAS／ASA／AAS／RHS 判定與不足條件反例",
+      "observedPattern": "公開學校數學試題常以三角形配對、全等判定必要位置、直角三角形與反例辨識考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把直角這個共同條件列入，再找能鎖定尺度的長度資料。",
+  "solutionSteps": [
+    "兩個三角形都有直角。",
+    "檢查選項 C 提供斜邊相等。",
+    "再提供一股相等。",
+    "這是 RHS 的完整條件。",
+    "選 C。"
+  ]
 }

@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-2-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-2／比較分類排序」task, what is the best way to prepare question 1?",
+  "prompt": "A list gives four plants' heights: fern 12 cm, rose 25 cm, mint 8 cm, and lily 18 cm. Which order is shortest to tallest?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-2／比較分類排序."
+      "text": "rose, lily, fern, mint"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-2／比較分類排序."
+      "text": "fern, mint, rose, lily"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-2／比較分類排序."
+      "text": "mint, fern, lily, rose"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-2／比較分類排序."
+      "text": "lily, rose, mint, fern"
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-2／比較分類排序, question 1."
+    "value": "C",
+    "explanation": "高度由小到大是 8、12、18、25 公分，依序為 mint、fern、lily、rose，因此選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E4%BA%8C%E8%8B%B1%E6%96%87%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "PDF第4頁，第149–154行：比較級／最高級敘述；僅取依比較標準判讀的題型，不沿用原句或數據。",
+    "authoringNote": "以英語課程知識點與公立學校公開段考所呈現的資料判讀能力為參照；題幹、數據、選項、答案、解析與解題活動均獨立撰寫，未複製試卷內容。課程版本研究與全案內容審查未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E4%BA%8C%E8%8B%B1%E6%96%87%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立國昌國中110學年度第2學期二年級第1次段考英文試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第4頁，第149–154行：比較級／最高級敘述；僅取依比較標準判讀的題型，不沿用原句或數據。",
+      "observedPattern": "比較級與最高級題要求先確認比較集合及比較方向，再依標準判定高低；此題改用全新植物名稱與高度資料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先把題目中的「由矮到高」轉成數值遞增，再依每株高度逐一排列，最後核對四株是否都出現一次。",
+  "solutionSteps": [
+    "題目要求 shortest to tallest，也就是高度由小到大排列。",
+    "先將植物與高度配對：薄荷 8 公分、蕨類 12 公分、百合 18 公分、玫瑰 25 公分。",
+    "比較相鄰數值：8＜12＜18＜25。",
+    "依序換回名稱：mint → fern → lily → rose，因此選 C。",
+    "檢查選項 C 中四種植物各出現一次，且高度沒有倒置。"
+  ]
 }

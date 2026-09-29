@@ -2,23 +2,23 @@
   "id": "question-social-content-hist-ib-9",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2024年6月12日校園公民論壇的資料中，研究「Ib：政治挑戰與回應」時有三筆史料，年代分別為 1750、1700、1800 年。哪項最適合建立時間線？",
+  "prompt": "某地引進外國軍事技術後，地方工匠依材料和需求改造器械，官方規範也限制使用方式。最合理的結論是？",
   "options": [
     {
       "id": "A",
-      "text": "依 1700、1750、1800 的年代順序排列並標明史料來源，以判讀「Ib：政治挑戰與回應」時序"
+      "text": "技術交流是完整複製，地方不會改造。"
     },
     {
       "id": "B",
-      "text": "依史料篇幅長短排列"
+      "text": "官方規範存在，表示工匠沒有任何主動性。"
     },
     {
       "id": "C",
-      "text": "依人物知名度排列"
+      "text": "外來技術、地方知識與制度限制共同塑造實際結果，需分別查證三者。"
     },
     {
       "id": "D",
-      "text": "先決定結論再安排年代"
+      "text": "器械相似即可證明政治制度也完全相同。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "時間線應依可核對的年代排序，並保留史料來源以便檢驗。 本題對應 KG「Ib：政治挑戰與回應」。"
+    "value": "C",
+    "explanation": "本題聚焦「技術與制度」。技術與制度的移動會受到地方材料、工匠選擇和規範影響，不能從形式相似直接推論制度相同。 正確答案為選項 C：「外來技術、地方知識與制度限制共同塑造實際結果，需分別查證三者。」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
     "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "authoringNote": "依官方課綱、歷 Ib 知識圖譜及三所公立學校公開社會科試題的制度判讀、政治回應與多方證據能力方向獨立改寫；未複製原題文字、選項、圖片或答案，待逐題學科與 Terra 複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-hist-ib"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-social-content-hist-ib",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國民中學公開段考社會科；僅研究資料判讀、時序與因果題型，未複製原題。",
+      "year": "114",
+      "locator": "公開段考社會科 PDF；第 1 題至第 10 題型範圍：制度、時序與因果界線",
+      "observedPattern": "由制度、時間與多方材料要求學生界定證據範圍與歷史因果。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國民中學公開社會科試題入口；僅研究多資料互證題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開試題與解答入口；第 1 題至第 10 題型範圍：政治制度、衝突與多重證據",
+      "observedPattern": "比較官方文件、地方材料與角色觀點，區分直接記錄、推論與待補證主張。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國民中學公開段考試題入口；僅研究多方角色與歷史變化題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開段考試題入口；第 1 題至第 10 題型範圍：政治回應、社會變化與多方角色",
+      "observedPattern": "從材料情境分析不同群體、利益與制度變化，不以單一來源包辦結論。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用技術與制度定位危機、角色、制度和證據，再區分政策目標、實際執行與群體成本；技術與制度的移動會受到地方材料、工匠選擇和規範影響，不能從形式相似直接推論制度相同。",
+  "solutionSteps": [
+    "讀題定位：圈出材料中的時段、挑戰、角色與任務，確認本題正在檢核「技術與制度」。",
+    "建立判準：分開危機界定、政策方案、執行結果與承擔成本，並標記每個判斷的來源。",
+    "核對正解：選項 C「外來技術、地方知識與制度限制共同塑造實際結果，需分別查證三者。」符合題幹，因為技術與制度的移動會受到地方材料、工匠選擇和規範影響，不能從形式相似直接推論制度相同。",
+    "逐項排除：檢查其餘選項是否用事後結果倒推、把中央政策當成全境實況，或忽略地方與不同群體。",
+    "結論回查：重新核對年代、角色、制度層級與證據強度；加入新材料後要重新檢查，不可只沿用答案字母。"
+  ]
 }

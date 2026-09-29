@@ -1,0 +1,7 @@
+.sim-prism-visuals{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.sim-prism-visuals figure{min-width:0;margin:0;padding:10px;border:1px solid #d9e6ee;border-radius:10px;background:#fff}
+.sim-prism-visuals svg{display:block;width:100%;max-width:500px;max-height:270px;margin:auto;font-family:inherit}
+.sim-prism-visuals figcaption{color:#49616f;font-size:.88rem}
+.sim-prism-lab .sim-button,.sim-prism-lab .sim-actions button,.sim-prism-lab .sim-design-steps button{min-height:44px}
+.sim-prism-lab :focus-visible{outline:3px solid #b35c00;outline-offset:2px}
+@media(max-width:760px){.sim-prism-visuals{grid-template-columns:minmax(0,1fr)}}

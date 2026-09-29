@@ -2,23 +2,23 @@
   "id": "question-math-content-s-7-4-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "點 S(－2,4) 先對 x 軸鏡射，再向右平移 3 單位，結果為何？",
+  "prompt": "等腰三角形的頂角平分線同時通過底邊中點，且垂直底邊。這條線最可能是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "(1,－4)"
+      "text": "它的對稱軸"
     },
     {
       "id": "B",
-      "text": "(－5,4)"
+      "text": "任意一條高"
     },
     {
       "id": "C",
-      "text": "(1,4)"
+      "text": "外部切線"
     },
     {
       "id": "D",
-      "text": "(－2,7)"
+      "text": "平行於底邊的線"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "先得 (−2,−4)，再增加 x 3，結果為 (1,−4)。"
+    "explanation": "等腰三角形沿頂角與底邊中點的直線兩側重合，該線是圖形的對稱軸，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平移、旋轉與鏡射 題型與官方課綱 KG kg-math-content-s-7-4",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供線對稱與座標幾何能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的線對稱能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-7-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-7-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "線對稱、對稱軸、對應點連線、距離／角度保留與座標反射",
+      "observedPattern": "公開學校數學試題常以摺合判斷、對稱軸性質、圖形不變量與座標反射考查線對稱；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "線對稱、對稱軸、對應點連線、距離／角度保留與座標反射",
+      "observedPattern": "公開學校數學試題常以摺合判斷、對稱軸性質、圖形不變量與座標反射考查線對稱；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用摺合後是否逐點重合判斷對稱軸，而不是只看其中一種線段性質。",
+  "solutionSteps": [
+    "等腰三角形有兩腰相等。",
+    "頂角平分線通過底邊中點。",
+    "這條線也垂直平分底邊。",
+    "兩側三角形可互相重合。",
+    "選 A。"
+  ]
 }

@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-7-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with help with the task at the bus stop?” B: “___” (「3-Ⅳ-7／理解對話主要內容」practice, 13:00)",
+  "prompt": "A: I was nervous about the robotics demo, but the team explained each step clearly.\nB: Same here. Once they showed how the sensor changed the robot’s direction, the whole project made sense.\nWhat does B think about the explanation?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with help with the task at the bus stop in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "It helped B understand how the project works."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the bus stop in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "It made B decide to leave the team."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the bus stop last year in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "It proved the sensor never changes direction."
     },
     {
       "id": "D",
-      "text": "No, the weather at the bus stop is sunny in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "It was too difficult for B to follow."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-7"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 3-Ⅳ-7／理解對話主要內容, item 5. This item targets 3-Ⅳ-7／理解對話主要內容, question 5."
+    "explanation": "正確答案 A。B 說 the whole project made sense，表示看過感測器如何改變方向後，自己理解了專題運作。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+    "sourceLocator": "依公立國中英文段考中對話主旨、時間地點、請求、順序、態度、建議、指代與行動推論的公開命題模式獨立改寫；逐題原卷題號列於 examPatternRefs。",
+    "authoringNote": "本題情境、對話、選項、答案與繁中解析均依 3-Ⅳ-7 能力獨立重寫；公開試題僅作可追溯 pattern-only 參照，不複製原文或選項。完整內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-7"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+      "title": "臺北市立內湖國中113學年度第2學期八年級第1次段考英文",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "第21題：由第二位說話者的附加理由判斷其對前一主張的同意立場",
+      "locatorLevel": "item",
+      "observedPattern": "參照讀取回應語與理由來推論說話者態度。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "辨認說話者的評價線索，再把評價連回它所描述的對象。",
+  "solutionSteps": [
+    "注意 B 先說 Same here，表示回應並承接 A 對展示說明的感受。",
+    "定位評價語 made sense，判斷 B 認為內容變得清楚、可理解。",
+    "前文 once they showed 指出理解發生的原因，是團隊展示感測器如何改變方向。",
+    "A 對應這個理解結果；B、C、D 都和 made sense 的正向評價相反或無關。",
+    "把 made sense 換回白話「理解專題怎麼運作」，確認答案沒有誇大成完全掌握所有細節。"
+  ]
 }

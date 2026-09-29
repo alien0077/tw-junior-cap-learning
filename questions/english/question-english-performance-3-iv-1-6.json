@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-1-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「3-Ⅳ-1／辨識書寫體字母」practice, what does “improve” mean in question 6?",
+  "prompt": "The handwritten heading “ORCHID” is requested in all lowercase on a botanical record card. Which form preserves the letters and their order?",
   "options": [
     {
       "id": "A",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “improve” means make something better."
+      "text": "OrChid"
     },
     {
       "id": "B",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “improve” means a place where people wait for the library."
+      "text": "ORCHID"
     },
     {
       "id": "C",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “improve” means a tool used to measure 9 minutes."
+      "text": "orchdi"
     },
     {
       "id": "D",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “improve” means a person who teaches at the library."
+      "text": "orchid"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "“improve” means make something better. This item targets 3-Ⅳ-1／辨識書寫體字母, question 6."
+    "value": "D",
+    "explanation": "O-R-C-H-I-D 轉成全小寫後是 o-r-c-h-i-d。D 保留六字母順序並完成格式轉換，其餘選項有大小寫不符或字母錯置。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=359&cfsn=2121&fn=110-1-%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE-%E6%9E%97%E7%8E%89%E8%93%AE.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣立宜昌國中公開試題，PDF page 5, writing test I(a), item 3: uppercase-to-lowercase conversion；只參照題型，不重製原題字詞／圖表。",
+    "authoringNote": "依官方英語課綱與 Knowledge Graph，參照公立學校公開試題之字母辨識、大小寫轉換與排序能力獨立改寫；未複製原題題幹、選項、圖表或答案。題目維持draft，尚待版本研究與完整內容發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-1"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=359&cfsn=2121&fn=110-1-%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE-%E6%9E%97%E7%8E%89%E8%93%AE.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中110學年度第一學期七年級第一次段考英文科試題",
+      "year": "110-1-1",
+      "subject": "english",
+      "locator": "PDF page 5, writing test I(a), item 3: uppercase-to-lowercase conversion",
+      "observedPattern": "只參照第3題／對應子題的字母辨識、大小寫轉換或字典序任務形式；只參考答案卷PDF第5頁寫作測驗一（一）第1至3題的字母大小寫互換任務；改用不同英文字詞與新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "遇到連續的大寫字母時，依序確認每個字形，再逐一轉成小寫；檢查尾段 h-i-d，避免連寫造成換序。",
+  "solutionSteps": [
+    "植物資料卡指定全小寫，所以不能只把第一個字母改小寫或保留原樣。",
+    "把 ORCHID 拆為 O-R-C-H-I-D 六個位置，先確認中段是 C-H-I 而非相近的換序。",
+    "逐位轉成 o-r-c-h-i-d，且不加入空格、標點或其他字母。",
+    "D 正確保留全部字母並符合小寫格式；A 仍有大寫，B 未轉換，C 將末兩字母對調。",
+    "答案選 D；完成後將新形式與原標題逐位對照，特別複查 h、i、d 的先後。"
+  ]
 }

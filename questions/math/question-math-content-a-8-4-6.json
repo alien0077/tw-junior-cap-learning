@@ -2,41 +2,84 @@
   "id": "question-math-content-a-8-4-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "x²－25 的因式分解為何？",
+  "prompt": "因式分解 3a²＋12a＋12，結果為何？",
   "options": [
     {
       "id": "A",
-      "text": "(x－5)²"
+      "text": "3(a＋2)²"
     },
     {
       "id": "B",
-      "text": "(x＋25)(x－1)"
+      "text": "3(a＋4)²"
     },
     {
       "id": "C",
-      "text": "(x－5)(x＋5)"
+      "text": "(3a＋2)²"
     },
     {
       "id": "D",
-      "text": "(x－25)(x＋1)"
+      "text": "3(a²＋12a＋12)"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-a-8-4"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "平方差公式 a²－b²＝(a－b)(a＋b)，所以為 (x－5)(x＋5)。"
+    "value": "A",
+    "explanation": "先提出公因式 3，得 3(a²＋4a＋4)，括號內是 (a＋2)²，所以結果為 3(a＋2)²。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究因式分解、公式與驗算能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供因式分解、乘法公式逆用與代數結構能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的因式分解能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-a-8-4",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/064510/get-file/5e49ebb9a2bac601505f73d8",
+      "title": "臺中市立大甲國民中學二年級數學補考題庫（第三冊）",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "PDF 第 3 頁第 45 題：辨認平方公式結構並核對符號",
+      "observedPattern": "該公開原卷第 45 題提供「辨認平方公式結構並核對符號」的能力模式參照；本題僅借鑑概念與判斷能力，題幹、數字、選項、答案及解法皆自行改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193506/get-file/6204ac4530ab0a5e342ecfe5.pdf",
+      "title": "臺中市立北新國民中學數學科八年級補考試題",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "PDF 第 1 頁第 4 題：完全平方中間項與常數項關係",
+      "observedPattern": "該公開原卷第 4 題提供「完全平方中間項與常數項關係」的能力模式參照；本題僅借鑑概念與判斷能力，題幹、數字、選項、答案及解法皆自行改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064519/get-file/698ae03c3cd80e32ef01bd8d",
+      "title": "臺中市立大道國民中學 114 學年度第一學期八年級數學科補行評量題庫",
+      "year": "114",
+      "subject": "math",
+      "locator": "PDF 第 1 頁第 13 題：由二次式補出完全平方常數",
+      "observedPattern": "該公開原卷第 13 題提供「由二次式補出完全平方常數」的能力模式參照；本題僅借鑑概念與判斷能力，題幹、數字、選項、答案及解法皆自行改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先提出最大公因式，再辨認括號內的完全平方。",
+  "solutionSteps": [
+    "找三項共同因數 3。",
+    "提出 3 得 3(a²＋4a＋4)。",
+    "辨認 a²＋4a＋4＝(a＋2)²。",
+    "合成 3(a＋2)²。",
+    "選 A，乘回檢查三項係數。"
+  ]
 }

@@ -2,41 +2,84 @@
   "id": "question-science-content-bb-iv-2-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年6月5日社區環境站的觀察中，將 181℃ 的金屬片放入 30℃ 的水中，研究「Bb-Ⅳ-2：熱量單位的定義」時，最初的熱傳方向為何？",
+  "prompt": "若取 1 cal≈4.2 J，50 cal 約等於多少焦耳？",
   "options": [
     {
       "id": "A",
-      "text": "由金屬片傳向水"
+      "text": "12 J"
     },
     {
       "id": "B",
-      "text": "由 30℃ 的水傳向 181℃ 金屬片"
+      "text": "21 J"
     },
     {
       "id": "C",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "210 J"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "420 J"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-bb-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 181℃ 金屬片傳向 30℃ 的水。 本題對應 KG「Bb-Ⅳ-2：熱量單位的定義」。"
+    "value": "C",
+    "explanation": "C。用 1 cal≈4.2 J 換算，50×4.2=210 J；先確認題目給的是近似換算，再保留合適有效位數。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題中的熱量單位、比熱、溫差、熱傳遞與資料計算能力；本題改寫為熱量定義原創情境。",
+    "authoringNote": "依官方課綱、KG 與三筆公開自然科資料的熱量單位能力方向獨立改寫；題幹、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bb-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-bb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取熱量、比熱與能量計算的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "熱量、比熱與能量計算",
+      "observedPattern": "公開自然科評量常要求解讀熱量單位、比熱、溫差、熱傳遞與生活資料；本題以新的數值或情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取熱傳遞、單位與實驗資料判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "熱傳遞、單位與實驗資料判讀",
+      "observedPattern": "公開自然科評量常要求解讀熱量單位、比熱、溫差、熱傳遞與生活資料；本題以新的數值或情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取能量轉換、比熱與生活情境的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "能量轉換、比熱與生活情境",
+      "observedPattern": "公開自然科評量常要求解讀熱量單位、比熱、溫差、熱傳遞與生活資料；本題以新的數值或情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先寫換算比例，再做 50×4.2 並檢查單位。",
+  "solutionSteps": [
+    "圈出熱量單位、質量、比熱、初末溫與系統邊界。",
+    "選用 Q=mcΔT 或單位換算關係，先寫公式再代數值。",
+    "統一 cal、J、g、kg、℃ 等單位，確認溫差方向與正負號。",
+    "排除把熱量當溫度、把末溫當溫差，或忽略容器吸熱、散熱與相變限制的選項。",
+    "用完整句回查計算結果、單位與模型適用條件。"
+  ]
 }

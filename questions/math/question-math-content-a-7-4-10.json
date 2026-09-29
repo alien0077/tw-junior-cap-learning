@@ -2,23 +2,23 @@
   "id": "question-math-content-a-7-4-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "聯立方程式 x－y＝4、2x＋y＝11 的解為何？",
+  "prompt": "直線 2x＋y＝8 與直線 x−y＝1 的交點代表什麼？",
   "options": [
     {
       "id": "A",
-      "text": "x＝4，y＝0"
+      "text": "只滿足第一式的點"
     },
     {
       "id": "B",
-      "text": "x＝6，y＝2"
+      "text": "只滿足第二式的點"
     },
     {
       "id": "C",
-      "text": "x＝5，y＝1"
+      "text": "同時滿足兩式的有序數對"
     },
     {
       "id": "D",
-      "text": "x＝1，y＝5"
+      "text": "兩直線上所有點的集合"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "兩式相加得 3x＝15，所以 x＝5；代回得 y＝1。"
+    "explanation": "兩直線交點同時位於兩線上，因此其坐標同時滿足兩個方程式，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究聯立方程式、代入法、消去法與情境建模能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供二元一次聯立方程式能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的聯立方程式能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-7-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-a-7-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "二元一次聯立方程式的辨識、代入與消去、情境建模、整數條件與直線交點",
+      "observedPattern": "公立學校公開數學試題常以兩個未知數的條件建立方程組，透過代入或消去求解，並連結有序數對與兩直線交點；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "二元一次聯立方程式的辨識、代入與消去、情境建模、整數條件與直線交點",
+      "observedPattern": "公立學校公開數學試題常以兩個未知數的條件建立方程組，透過代入或消去求解，並連結有序數對與兩直線交點；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把幾何交點與代數聯立解連結：交點坐標就是共同解。",
+  "solutionSteps": [
+    "辨認第一條直線上的點滿足第一式。",
+    "辨認第二條直線上的點滿足第二式。",
+    "交點同時在兩條直線上。",
+    "所以其坐標同時滿足兩個方程式。",
+    "選 C。"
+  ]
 }

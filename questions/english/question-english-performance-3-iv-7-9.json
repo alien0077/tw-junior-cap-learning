@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-7-9",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with a pencil at the science room?” B: “___” (「3-Ⅳ-7／理解對話主要內容」practice, 17:00)",
+  "prompt": "A: Wednesday is impossible because I have team practice. Thursday I work until six.\nB: I’m free Friday after club.\nA: Friday at 4:30 works. I’ll reserve the study room for then.\nWhat time did they finally agree to meet?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with a pencil at the science room in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Wednesday at 4:30."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the science room in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Thursday after six."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the science room last year in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Friday at 4:30."
     },
     {
       "id": "D",
-      "text": "No, the weather at the science room is sunny in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Friday before club."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-7"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 3-Ⅳ-7／理解對話主要內容, item 9. This item targets 3-Ⅳ-7／理解對話主要內容, question 9."
+    "value": "C",
+    "explanation": "正確答案 C。前兩天都有衝突；雙方最後接受 Friday at 4:30，預約自習室的 then 回指這個時間。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-10-16-24-nf1.pdf",
+    "sourceLocator": "依公立國中英文段考中對話主旨、時間地點、請求、順序、態度、建議、指代與行動推論的公開命題模式獨立改寫；逐題原卷題號列於 examPatternRefs。",
+    "authoringNote": "本題情境、對話、選項、答案與繁中解析均依 3-Ⅳ-7 能力獨立重寫；公開試題僅作可追溯 pattern-only 參照，不複製原文或選項。完整內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-7"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-10-16-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期八年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第34至35題：整合活動日期、項目時間及團體人數條件作答",
+      "locatorLevel": "item",
+      "observedPattern": "參照將時程表細節合併成具體活動安排的資訊定位模式。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "先排除被拒絕的時段，再追蹤最後被接受並由行動確認的安排。",
+  "solutionSteps": [
+    "按對話順序列出選項：Wednesday 被 practice 排除，Thursday 要工作到六點。",
+    "B 提出 Friday after club 作為可行時段。",
+    "A 明確確認 Friday at 4:30 works，這是最後取得共識的具體時間。",
+    "I’ll reserve...for then 的 then 回指剛確認的週五四點半。",
+    "選 C，並排除只提過但被拒絕或未確認的其他時段。"
+  ]
 }

@@ -2,41 +2,84 @@
   "id": "question-math-content-f-9-2-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若二次函數 y=-(x-5)^2+1 的圖形向上平移 4 單位，頂點變為何？",
+  "prompt": "若拋物線頂點為 (2,−5)、開口向上，且形如 y＝a(x−2)²−5，則下列哪個 a 最可能符合？",
   "options": [
     {
       "id": "A",
-      "text": "(5,-3)"
+      "text": "−3"
     },
     {
       "id": "B",
-      "text": "(5,5)"
+      "text": "−1/2"
     },
     {
       "id": "C",
-      "text": "(1,5)"
+      "text": "0"
     },
     {
       "id": "D",
-      "text": "(9,5)"
+      "text": "4"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-f-9-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "向上平移只改變 y 座標，頂點 (5,1) 變為 (5,5)。"
+    "value": "D",
+    "explanation": "開口向上表示 a＞0；選項中只有 4 為正數，因此選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度第 2 學期第 1 次段考三年級數學科試題；題目頁／答案頁逐題核對後獨立改編，非原題重製。 來源題號：第 6 題改編",
-    "authoringNote": "原創題目來源界線 metadata 已補齊；內容與題型仍待第二輪 AI／Terra 複核，未據此宣稱真人或專家審定。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供二次函數頂點式、對稱軸、開口方向與極值判讀能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的二次函數圖形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-f-9-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-f-9-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先使用開口方向篩選係數，不必額外計算。",
+  "solutionSteps": [
+    "頂點式已固定為 y＝a(x−2)²−5。",
+    "開口向上要求 a＞0。",
+    "檢查 −3 與 −1/2，皆為負。",
+    "a＝0 會失去二次項，不是二次函數。",
+    "剩下 a＝4，選 D。"
+  ]
 }

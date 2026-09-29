@@ -1,0 +1,148 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-2
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-2
+  title: 5-Ⅳ-2：用字彙句型日常溝通
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-2：用字彙句型日常溝通
+    curriculumIntent: 5-Ⅳ-2：用字彙句型日常溝通
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 只記錄三家官方公開資源頁實際可核對的教學方向與功能差異；不將資源介紹宣稱為指定冊次課文全文
+    currentEvidenceStatus: curriculum-and-kg-grounded; three-official-resource-pages-read; original-fusion-manuscript-written; awaiting-user-chatgpt-review
+  learningGoals:
+  - 依本輪任務分辨請求、提供、婉轉詢問與確認安排等溝通功能
+  - 以句型骨架組成語序正確、動作與地點明確的英文句子
+  - 依對象調整語氣，並接續對方的答覆、時間或原因限制
+  prerequisites:
+  - 能辨認簡單對話中的交談對象、行動和地點
+  - 能區分常見情態問句與 Would you like…? 的基本形式
+  coreConcepts:
+  - 交際目的決定句型功能：請求、婉轉詢問、提供／邀請及確認
+  - 句型骨架中的主詞、助動詞、原形動詞、受詞和地點不可任意錯置
+  - 真實對話必須吸收對方提供的接受／婉拒、時間與原因等資訊
+  misconceptions:
+  - 把 Can you、Could you、Would you like 當成可以任意互換的句首
+  - 使用情態動詞後又加 to，或把間接問句寫成倒裝語序
+  - 只回 yes／no，不處理回答中的時間或原因限制
+  contentFlow:
+  - 'predict: 讀取園遊會人物與任務後，先判斷此輪要請求、詢問或提供物品'
+  - 'manipulate: 在互動選項中更換句型骨架、動作／物件／地點，檢查語序與交際功能是否仍相符'
+  - 'observe: 比較熟人與陌生對象的請求語氣，並讀取對方接受／婉拒及附帶條件'
+  - 'explain: 指出助動詞後動詞形式、間接問句語序與時間／原因條件如何支持回應'
+  - 'confirm: 用下一句確認時間或協商替代安排'
+  - 'transfer: 將提醒與請求遷移到走廊積水的安全情境'
+  visualizations:
+  - 每個句型與它完成的溝通功能並列，不以顏色單獨區分請求與提供
+  - 對話每輪需保留說話者、行動、地點或時間等文字線索
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-2-I01
+    component: GuidedChoiceBlock
+    purpose: 讓學生依園遊會角色選擇請求／提供句型，並根據回覆中的時間限制確認下一步
+    initialState:
+      showAnswer: false
+      selectedAnswer: null
+      feedback: empty
+    studentActions:
+    - 閱讀每輪對話並判斷說話者的溝通目的
+    - 選出語序正確且對象語氣合宜的句子
+    - 答錯時查看一階提示，重試後再讀答案解析
+    - 讀取回覆中的時間／原因條件並選擇可執行的下一句
+    visualRules:
+    - 以完整對話呈現說話者、任務和必要條件，不只呈現孤立句型名稱
+    - 選項以文字說明句意，正誤另有文字回饋與 aria-live 區域
+    - 四步皆有原創答案、說明與重試提示，不依賴外部影音或網路服務
+    - 窄螢幕不得裁切對話、選項與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-2-I01
+      trigger: 把請求句、提供句和確認限制的回應當成相同功能，或忽略助動詞後的原形動詞
+      prompt: 先指出本輪要完成的行動，再核對句型動詞位置和對方回覆的條件。
+      expectedEvidence: 能選出適合溝通目的且語序正確的句子，下一輪保留時間條件
+    feedback:
+      correct: 說明句型完成的交際功能及相關動作／時間資訊。
+      incorrect: 提醒學生辨認本輪溝通目的或檢查助動詞後動詞形式，不直接代答並保留重試。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "借鑑先聽懂句子目的再產出口語回應的安排；本課情境與句子均為原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "採可反覆練習的短回合句型辨析；不引用外部平台題目。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "採具名按鈕、鍵盤可操作和即時文字回饋，不依顏色表達正誤。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "使用清楚標題與互動區域；教學情境及逐步選答由本課重寫。"
+  capTransfer:
+    questionType: 日常對話語用判斷／句型組成／回應條件協商
+    stemConstraint: 題幹須提供說話對象、互動目的及必要限制，讓句型選擇有語用依據
+    requiredResponse: 說明句子執行請求、提供或確認的功能；接話保留時間／原因條件
+    scoring: 溝通功能正確 1、句型與語序正確 1、回應保留條件 1
+  exitTicket:
+    prompt: 這輪對話要完成什麼事？你如何依對象選句型，並接住對方提出的限制？
+    successCriteria:
+    - 區分請求、提供與確認等交際功能
+    - 句型語序和動詞形式正確
+    - 下一句處理對方提供的時間或原因
+  expressionExtension:
+    applicable: true
+    task: 自編三輪園遊會對話：提出一項請求、回應對方的時間限制、確認可執行安排
+    constraint: 學生先寫；系統只回饋溝通目的、語序和條件是否保留，不代寫整段
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 四個原創互動步驟均顯示且初始不露答案，選項以鍵盤可操作。
+  - 每題答錯顯示目的／語序／條件提示，再答對顯示逐題解析。
+  - step 1 檢查請求句與地點；step 2 檢查婉轉與間接問句語序；step 3 區分邀請／提供；step 4 檢查時間限制是否帶入回覆。
+  - 在 320px、375px、768px 寬度，以鍵盤完成四題並讀取 aria-live 回饋，無水平溢位。
+  - 阻擋外部網路請求後，學生頁本地對話和四題仍可完整使用。
+  - Fallback：刻意阻擋 simulations.js 後，四步日常對話 GuidedChoice 仍可鍵盤作答、錯答重試並取得逐題解析；不可因外部互動腳本缺載而失去本課練習。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三家官方資源頁的閱讀範圍、可核對方向及非完整課本限制已如實記錄
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 教材正文與互動為本課獨立撰寫，無 placeholder、TODO 或只替換名詞的模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 5-Ⅳ-2
+    role: official-curriculum-source-of-truth
+  - url: https://tpack.nani.com.tw/nani_content?a=286&b=2
+    locator: 南一官方資源頁，句型語意、語調節奏與口說練習；核讀 2026-09-28
+    role: publisher-resource-design-evidence
+  - url: https://digitalmaster.knsh.com.tw/all/digitalgo/j/english/index.html
+    locator: 康軒官方 114 學年度英語數位特色；文法助教與句型說明／練習；核讀 2026-09-28
+    role: publisher-resource-design-evidence
+  - url: https://hanlindigi.hle.com.tw/widget/2/214
+    locator: 翰林官方國中口說派；對話、閱讀、字彙、例句、發音題型；核讀 2026-09-28
+    role: publisher-resource-design-evidence

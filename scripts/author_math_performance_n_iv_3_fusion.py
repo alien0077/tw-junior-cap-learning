@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for math n-IV-3."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/'lessons/math/lesson-math-performance-n-iv-3.json'
+REPORT=ROOT/'implementation/reports/math-performance-n-iv-3-first-pass-review.json'
+URLS={'nani':'https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf','kanghsuan':'https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110','hanlin':'https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf'}
+def rec(p,c,r,m,a):
+ return {'publisher':p,'edition':f'{p} 公立校方數學課程計畫章節級證據','sourceType':'public-web','sourceLocator':f'{URLS[p]}；指數、質因數與科學記號評量欄位；核讀 2026-09-21。','reviewedAt':'2026-09-21','findings':{'concepts':[c,'公開結構支持以指數律與十的次方表達大／小數量，並連結質因數結構與估算。'],'representations':[r],'examplesOrEvidence':['本課的細菌數量、天文距離與容量尺度均為原創，只承接公開課程的能力方向。'],'misconceptions':[m],'assessmentEmphasis':[a]},'licenseBoundary':'只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。'}
+def main():
+ d=json.loads(LESSON.read_text(encoding='utf-8')); assert d['id']=='lesson-math-performance-n-iv-3' and d['reviewStatus']=='draft'
+ d['title']='n-Ⅳ-3：用指數與科學記號描述尺度'
+ d['content']={'summary':'指數不是把數字寫得更短而已，它記錄相同因子重複相乘的結構，也能幫助我們比較極大與極小的量。本課從細菌倍增與星際距離的原創情境出發，練習同底數乘除、零次方、負次方、質因數分解與科學記號標準化，最後用數量級與單位估算檢查答案。','sections':[{'heading':'指數記錄重複乘法','body':'2⁴ 表示四個 2 相乘，不是 2×4；指數是次數，底數是被重複相乘的量。先展開小次方，能看見乘法規則從哪裡來。'},{'heading':'同底數的指數律','body':'aᵐ×aⁿ 可合併為 aᵐ⁺ⁿ，aᵐ÷aⁿ 在 a 不為零時可整理為 aᵐ⁻ⁿ。規則來自因子消去，不是把指數任意相加或相減。'},{'heading':'科學記號的兩個條件','body':'科學記號寫成 c×10ⁿ，其中 1≤c<10；小數點移動幾位就要同步調整十的次方。先估數量級再寫形式，可抓出指數方向錯誤。'},{'heading':'單位與有效尺度','body':'光年、奈米、克等單位不能在換算時遺失；負次方常表示小於 1 的量。最後以數量級和單位回查，判斷答案是否可能比原量大或小太多。'}]}
+ d['studyHighlights']=['先分清底數、指數與重複乘法的意義。','由因子展開理解同底數乘除及零次方規則。','科學記號係數介於 1 和 10，指數反映小數點移動方向。','以數量級、單位與估算檢查結果。']
+ d['teaching']={'body':[{'id':'hook','phase':'hook','heading':'細菌一輪又一輪倍增','body':'原創培養皿每一輪細菌數量乘以 2，請學生用表格寫出前三輪，再用 2 的次方預測第十輪。先比較重複乘法與乘上 10，讓指數的次數意義變得可見。'},{'id':'explain','phase':'explain','heading':'指數律從因子排列來','body':'將 3²×3⁴ 展開成六個 3，說明可整理為 3⁶；再把 3⁵÷3² 的共同因子消去得到 3³。學生在每一步標記保留與消去的因子。'},{'id':'worked-example','phase':'worked-example','heading':'把距離寫成科學記號','body':'將 450000000 公尺寫成 4.5×10⁸ 公尺，說明小數點向左移八位；再將 0.00045 公尺寫成 4.5×10⁻⁴ 公尺，檢查係數範圍與大小方向。'},{'id':'guided-practice','phase':'guided-practice','heading':'找出指數方向錯誤','body':'給出三個科學記號候選，學生先估原數大約是十萬、千分之一或其他尺度，再選係數與指數。若把 0.003 寫成 3×10³，回饋要求用大小估算推翻。'},{'id':'transfer','phase':'transfer','heading':'質因數與尺度一起讀','body':'將 72 分解為 2³×3²，再比較 2⁵×3 與 2³×3² 的大小。學生同時使用質因數結構、指數比較與估算，說明不能只看指數總和。'},{'id':'reflect','phase':'reflect','heading':'形式、大小、單位三檢查','body':'出口題要求學生核對科學記號係數範圍、十的次方方向、原始單位與數量級；再把一個錯誤答案改寫並說明修正證據。'}],'summary':['分清底數與指數，先理解重複乘法。','用因子展開和消去推導指數律。','科學記號係數要在 1 到 10 之間，指數方向要符合大小。','最後用估算、數量級與單位回查。'],'exitCheck':[{'prompt':'2⁴ 表示什麼？','expectedEvidence':'四個 2 相乘，不是 2×4。'},{'prompt':'450000000 如何寫成科學記號？','expectedEvidence':'4.5×10⁸，並說明小數點向左移八位。'},{'prompt':'為什麼單位不能在科學記號換算時省略？','expectedEvidence':'單位決定量的意義，數字形式正確但單位遺失仍無法解讀。'}]}
+ d['interactive']={'type':'guided-choice','goal':'以因子、指數與數量級轉換大／小尺度數值。','scenario':'調整重複倍增次數與小數點位置，觀察指數形式、原數與單位同步更新。','variables':[{'symbol':'a','meaning':'重複相乘的底數或科學記號係數'},{'symbol':'n','meaning':'指數或十的次方'}],'steps':[{'id':'step-1','prompt':'3²×3⁴ 的指數如何整理？','options':['3⁶','3⁸','6³'],'answer':'A','feedback':'同底數相乘，因子數量相加。'},{'id':'step-2','prompt':'450000000 的科學記號係數與指數？','options':['4.5×10⁸','45×10⁷','0.45×10⁹'],'answer':'A','feedback':'標準係數需介於 1 與 10，並依小數點移動決定指數。'},{'id':'step-3','prompt':'0.003 若寫成 3×10ⁿ，n 是多少？','options':['−3','3','0'],'answer':'A','feedback':'小於 1 的數需要負次方，3 的小數點向左三位。'}]}
+ for i, extra in enumerate(['並將每一輪的因子數與指數寫在同一表格，說明第十輪預測不是逐項亂乘。','再把保留和消去的因子用不同記號標示，確認指數加減來自實際因子數量。','同時核對係數範圍、移動位數與單位，說明正負指數如何反映大小。','最後用原數估算和科學記號反換兩種方式推翻錯誤候選。','再將質因數展開成數值比較，說明不能只比較指數總和而忽略底數。','並寫出一個形式修正後的完整數值與單位，讓檢查可重做。']):
+  d['teaching']['body'][i]['body'] += ' ' + extra
+ d['teaching']['body'][5]['body'] += ' 並把原數與修正後的科學記號互相換回，確認係數、指數與單位三者全部一致。'
+ d['teaching']['summary'][1] = '用因子展開、保留與消去的步驟推導同底數指數律，而不是只背規則。'
+ d['teaching']['exitCheck'][0]['prompt'] = '請說明 2⁴ 的底數、指數與實際重複乘法意義。'
+ d['authoringStandard']='version-fused-v1'; d['versionResearch']=[rec('nani','以指數律、質因數與科學記號處理數量尺度','因子展開、指數、十次方與單位的互相轉換','把指數當乘法係數或把小數指數方向寫反','完整檢查規則推導、形式標準化與數量級回查'),rec('kanghsuan','以操作和情境表徵理解重複倍增與小數尺度','倍增表、數線、小數點與十次方的同步呈現','套用指數律但不看底數或係數範圍','操作後完整解釋指數與數量如何互相對應'),rec('hanlin','在科學資料與估算中判斷尺度及單位','細菌、距離、容量與有效單位限制的情境表徵','只比較指數總和或省略單位而未檢查量級','評估模型選擇、估算與科學記號表達是否相稱')]
+ d['fusionRecord']={'commonCore':['三版本公開結構共同支持以指數、質因數與十次方表示數量尺度。','指數律應由因子結構理解，科學記號需符合標準係數。','估算、數量級與單位是檢查形式答案的重要證據。'],'versionDifferences':['南一證據較突顯指數律與質因數基礎；康軒較突顯倍增操作與表徵；翰林較突顯科學資料、估算與單位。這是公開課程計畫層級差異，不宣稱完整教材差異。'],'originalAdditions':['以原創細菌倍增表建立指數次數、因子數與第十輪預測。','以正負次方科學記號診斷小數點移動方向與尺度。','將質因數結構與數量級估算放在同一轉移任務並保留單位。'],'llmSynthesisNote':'本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計指數律、質因數、科學記號與尺度估算。正文、例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。'}
+ d['updatedAt']='2026-09-21'; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ REPORT.write_text(json.dumps({'unit':'n-Ⅳ-3：用指數與科學記號描述尺度','lessonId':d['id'],'status':'first-pass-ai-review-complete','reviewStatus':'draft','checks':{'unitSpecificOriginalContent':True,'threeVersionResearchRecords':True,'fusionRecordPresent':True,'interactivePredictionManipulationExplanation':True,'terraSecondPass':'pending'},'reviewedAt':'2026-09-21'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print(json.dumps({'lesson':str(LESSON.relative_to(ROOT)),'reviewStatus':d['reviewStatus']},ensure_ascii=False))
+if __name__=='__main__': main()

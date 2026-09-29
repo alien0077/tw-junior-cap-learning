@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-5-iv-8",
+  "change": [
+    "Mapped the authored story-note workflow to prediction, event-note reorganization, relation-cue observation, evidence explanation, and transfer to new micro-stories.",
+    "Retained and retested the lesson's actual speech-synthesis and transcript fallback behavior."
+  ],
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/site/index.html",
+    "authoredSections": 6,
+    "distinctStoryTasks": 4,
+    "speechApiMock": true,
+    "keyboardRetryAndAnswer": true,
+    "transcriptDisclosure": true,
+    "speechFallback": true,
+    "networkBlocked": true,
+    "reducedMotion": "emulated",
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "990/1,027 pass; 37 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "Mocked speech synthesis and browser fallback do not establish human listening or speaking proficiency.",
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

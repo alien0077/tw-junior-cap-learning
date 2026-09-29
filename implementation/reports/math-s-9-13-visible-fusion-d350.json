@@ -1,0 +1,61 @@
+{
+  "unitId": "S-9-13",
+  "lessonId": "lesson-math-content-s-9-13",
+  "reviewedAt": "2026-09-28",
+  "status": "original-synthesis-draft",
+  "reviewStatus": "draft",
+  "change": "Replace the three generic learner-visible content summaries with six unit-specific instructional sections; source claims corrected to match what was actually accessible.",
+  "materials": [
+    {
+      "association": "curriculum",
+      "source": "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "locator": "S-9-13: right prisms, right circular cones and regular pyramids nets/surface area; right-prism volume",
+      "use": "Authoritative scope gate; exclude cone and pyramid volume claims from this lesson."
+    },
+    {
+      "association": "Nani-labeled public share; third-party, rights and edition unverified",
+      "source": "https://www.scribd.com/document/932850221/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E4%B9%9D%E4%B8%8B",
+      "locator": "Shared copy pp.58–61: pyramid structure/net/surface area and cone introduction; only concept-level reading, no copied exercise, wording, figure or answer.",
+      "use": "Ground the base-plus-side-faces explanation and cone net introduction."
+    },
+    {
+      "association": "Junyi third-party learning path labeled 類南一版",
+      "source": "https://www.junyiacademy.org/topics/n-m9b-c03-1",
+      "locator": "Public topic hierarchy: prism and prism nets, then cylinder, then pyramid and cone nets/surface area; page hierarchy only, no publisher-text claim.",
+      "use": "Compare sequencing; do not attribute platform lesson content to Nani."
+    },
+    {
+      "association": "Junyi third-party learning path labeled 類康軒版",
+      "source": "https://www.junyiacademy.org/topics/k-m9b-c03-1",
+      "locator": "Public topic hierarchy: separate foundational/general nodes for prism, cylinder, pyramid and cone nets/surface area; page hierarchy only.",
+      "use": "Compare shape-by-shape progression; not evidence of Kanghsuan textbook prose."
+    },
+    {
+      "association": "Hanlin-adopting school plan and other public school curriculum plans",
+      "source": "https://www.cp.ptc.edu.tw/storage/134538/134538_111_B-1_9A.pdf; https://www.msjh.tp.edu.tw/uploads/1722920307679XWFITqRe.pdf; https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf",
+      "locator": "Public plans map S-9-13 scope and school resources/evaluation; they are not publisher-authored chapter text.",
+      "use": "Cross-check unit bounds and preserve evidence limitations."
+    }
+  ],
+  "synthesis": [
+    "Separate boundary measurement (surface area) from interior capacity (volume) before selecting an operation.",
+    "Build a triangular right-prism surface-area calculation from two base triangles plus three side rectangles, then contrast with base-area-times-height volume.",
+    "Derive a cone lateral-area example through the invariant that the sector arc becomes the base circumference; distinguish slant height from perpendicular height.",
+    "Build a regular square-pyramid example from four congruent triangular faces plus the base and distinguish face slant height from solid height.",
+    "Add a worked misconception correction and a no-base packaging transfer task; all values, examples, prose and feedback are original."
+  ],
+  "checks": {
+    "examSourceLedger": "Previously rechecked this continuation: 10,566/10,566 recorded, pending 0; not rerun here.",
+    "targetRegression": "PASS: npm run test:math:s9-13; six visible sections, original prism/cone/pyramid calculations, misconception repair, transfer task, official scope and draft gate asserted.",
+    "wholeDataValidation": "PASS: validate_data.py; 14,472 JSON files, 13,112 IDs, 1,032 KG nodes; all 1,052 lessons and 10,566 questions remain draft.",
+    "strictLessonIndependence": "PASS: 614 learning-content lessons, 0 risks, 0 affected references, 0 strict failures.",
+    "fullNpmTest": "PASS: full npm test suite; includes workbench traversal 1,027/1,027. Browser/axe not rerun because runtime behavior was unchanged.",
+    "reportAndStateJson": "PASS: report and project-state parse as JSON.",
+    "diffCheck": "PASS for scoped files.",
+    "sourceAuthority": "No claim that all three current publisher textbooks were read; authenticity/rights of shared materials remain unverified.",
+    "lessonStatus": "draft",
+    "publisherSlots": "unchanged; this edit does not promote evidence slots",
+    "implementationSpec": "not changed; QA status remains untested",
+    "runtimeInteraction": "not changed"
+  }
+}

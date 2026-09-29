@@ -1,0 +1,136 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-4
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-4
+  title: 5-Ⅳ-4：朗讀短文短劇
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-4：朗讀短文短劇
+    curriculumIntent: 5-Ⅳ-4：朗讀短文短劇
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依官方課綱與可實際取得的版本資料自行融合撰寫；指定冊次課文不可得時只描述已讀公開資源功能，不得冒稱逐章比較，出版社章節證據保持pending
+    currentEvidenceStatus: official-curriculum-read; nani-official-public-speaking-resource-read; kanghsuan-official-public-read-aloud-tool-page-read; hanlin-official-extension-reading-product-page-read; hanlin-preview-fetch-failed; assigned-textbook-chapters-unavailable
+  learningGoals:
+  - 依短文／短劇的字詞發音、句法與語意標記自然完整的意群
+  - 依新資訊與角色意圖選擇焦點重音、合宜語調及可理解的朗讀速度
+  - 說明台詞線索如何支持聲音選擇，實際朗讀並依可觀察準則自我修正
+  prerequisites:
+  - 能辨讀國中基本英語字詞及常見標點
+  - 能讀出簡單句並辨認基本陳述句與問句
+  coreConcepts:
+  - 朗讀同時要求正確發音、適切語調及速度，讓聽者理解文本
+  - 意群停頓依句法和語意，而非按單字逐字切開或機械套用標點
+  - 重音及語調需呈現關鍵新資訊、說話者意圖與角色狀態
+  misconceptions:
+  - 把句子切成逐字停頓，或見逗號便拉長停頓，不看句法／語意
+  - 每個詞都用同樣音量，或把重音等同大聲喊叫
+  - 問號一律誇張上揚、角色推測讀成已證實，或只求快而吞掉字尾
+  contentFlow:
+  - 'predict: 讀《The Seed by the Wall》台詞與角色提示後，先預測這句應呈現的意圖和聽者需要的新資訊'
+  - 'manipulate: 在互動情境中調整意群停頓、焦點詞與候選語調，檢查讀法是否保留句法和角色意思'
+  - 'observe: 對照陳述、真問句、驚喜和推測的不同標點／舞台提示，觀察朗讀線索如何改變聽者理解'
+  - 'explain: 以句法邊界、關鍵新資訊及角色提示解釋停頓、重音與語調選擇，避免把推測說成事實'
+  - 'pace: 保持字尾可辨且連貫，不以最快速度為目標'
+  - 'transfer: 移至 whispering／surprised 舞台提示短劇並實際試讀'
+  - 'self-check: 依發音、意群、焦點、語調速度四項自評修正'
+  visualizations:
+  - 將自編角色台詞與意群斜線／焦點大寫文字對照，呈現文本線索與讀法
+  - 對話角色、標點及舞台提示以純文字表示；互動不播放出版社錄音、不收音或替讀者辨音評分
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-4-I01
+    component: GuidedChoiceBlock
+    purpose: 以四個原創短文／短劇情境練習意群、焦點重音、推測語調與舞台提示朗讀
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 閱讀原創台詞與當前朗讀任務，選擇三種文字讀法之一
+    - 使用滑鼠或鍵盤作答
+    - 答錯後依逐題提示重試；答對後查看完整理由
+    - 另自行實際朗讀一遍，按正文 exitCheck 自評（網站不錄音、不辨音、不評分）
+    visualRules:
+    - 題幹、選項、正解、重試提示和解析由 lesson JSON 提供，離線仍能完成
+    - 選項採原生文字按鈕，可鍵盤操作及由輔助科技朗讀
+    - 不用顏色、聲音播放或動畫作為唯一訊息
+    - 窄螢幕完整呈現短劇句子、選項及回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-4-I01
+      trigger: 將推測句 ‘So the rain woke it up?’ 朗讀成已確定的陳述
+      prompt: 找出 Jun 仍在確認的標點或上下文，再選擇不誇張的疑問語調。
+      expectedEvidence: 指出問號及角色推測脈絡，說明適度句尾疑問語調與確定陳述的不同
+    feedback:
+      correct: 說明句法／標點／角色意圖如何支持所選讀法，並提示讀者實際試讀自評。
+      incorrect: 指向當題可觀察的斜線、焦點詞或角色提示，先給一階線索並允許重試，再顯示解析。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-4：朗讀短文短劇」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-4：朗讀短文短劇」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 朗讀表現判讀／短劇角色語調／理由說明
+    stemConstraint: 使用不同原創短文或舞台提示，考查意群、重音、角色語調和可理解速度
+    requiredResponse: 選出合宜讀法並引用標點、句法、資訊焦點或角色提示
+    scoring: 文本線索判讀 1、聲音策略合宜 1、理由清楚 1
+  exitTicket:
+    prompt: 實際讀一行台詞，圈出焦點、標出意群，並自評發音、停頓、語調和速度；選一項再讀第二遍修正。
+    successCriteria:
+    - 意群依句法和語意完整切分
+    - 焦點重音凸顯角色／句子關鍵資訊
+    - 語調及速度使台詞清楚連貫、符合意圖
+  expressionExtension:
+    applicable: true
+    task: 挑一行未練過的英文台詞，標意群和焦點詞，讀兩遍並說出第二遍修正之處
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 原生選項按鈕有可讀名稱；錯答提示和正解解析以 aria-live 公布
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 四題 GuidedChoice 顯示相符正解、逐題重試提示及解釋；測試讀法不得混淆題目文字及答案。
+  - 鍵盤可選所有答案；答錯能重試、答對有解析且 aria-live 可讀。
+  - 320px、375px、768px 下正文、台詞、按鈕及回饋均不溢位。
+  - 封鎖外部網路後仍可閱讀完整教材與完成四個互動步驟。
+  - Fallback：刻意阻擋 simulations.js 後，四題文字朗讀判斷仍可鍵盤完成、錯答重試並讀取解析；不得要求上傳錄音、外部音檔或語音評分服務。
+  - exitCheck 指示讀者實際朗讀並依發音、意群、重音、語調／速度自評；系統不宣稱錄音或 AI 發音評分。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 六段原創教學和四步互動與實際學生頁一致；無 placeholder／TODO。教材內容審查由使用者以 ChatGPT 執行，不屬 Codex gate
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf
+    locator: PDF 第 14 頁；5-Ⅳ-4「能以正確的發音及適切的語調及速度朗讀短文及短劇」
+    role: official-curriculum-source-of-truth
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 5-Ⅳ-4
+    role: official-curriculum-source-of-truth

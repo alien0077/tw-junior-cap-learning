@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-3-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-3／理解簡易英文標示」notice for the town museum, item 5: “The talk begins at 2:30.” What does it tell people?",
+  "prompt": "At a school sports day, a sign with a green cross says 'FIRST AID — REPORT INJURIES HERE.' A runner has a bleeding knee. What should the teammate do?",
   "options": [
     {
       "id": "A",
-      "text": "For item 5 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk starts at 2:30."
+      "text": "Send the runner to the ticket booth."
     },
     {
       "id": "B",
-      "text": "For item 5 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk ends at 2:30."
+      "text": "Tell the runner to keep racing without help."
     },
     {
       "id": "C",
-      "text": "For item 5 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk is held at the bus stop."
+      "text": "Take the runner to the first-aid station and alert the staff."
     },
     {
       "id": "D",
-      "text": "For item 5 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk is cancelled every day."
+      "text": "Look for a place to buy a new uniform."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-3／理解簡易英文標示, question 5."
+    "value": "C",
+    "explanation": "The green cross and FIRST AID label identify the care point, while REPORT INJURIES HERE tells visitors what to do. C uses both the location and action cues."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1753839175199ERtbxbag.pdf",
+    "sourceLocator": "臺北市立內湖國中113學年度第二學期七年級第三次段考英文試題；PDF第2頁第32題：依受傷情境判斷照護場所。本題依題型與推理能力重新創作，不複製原題、選項、圖像或答案。",
+    "authoringNote": "原創題幹與選項；僅將公立學校公開試題作為題型與推理能力參照。答案、策略及逐步解說為本題獨立撰寫；保持draft，未執行Terra複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1753839175199ERtbxbag.pdf",
+      "title": "臺北市立內湖國中113學年度第二學期七年級第三次段考英文試題",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF第2頁第32題：依受傷情境判斷照護場所",
+      "observedPattern": "從情境中的受傷線索選擇相應的照護設施；本題改成活動現場的急救標示與求助行動。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "設施名稱回答『去哪裡』，命令句回答『怎麼做』；兩種線索都吻合時才完成判讀。",
+  "solutionSteps": [
+    "從情境抓出關鍵事件：跑者膝蓋流血，需要處理受傷。",
+    "讀標示上的 FIRST AID，辨認為急救／基本傷口協助處。",
+    "再讀 REPORT INJURIES HERE，知道應向該處工作人員通報。",
+    "C同時符合地點和行動；其他選項的票亭、繼續比賽或買衣服都不處理傷勢。",
+    "答案選C；若傷勢嚴重，交由現場成人和急救人員處理。"
+  ]
 }

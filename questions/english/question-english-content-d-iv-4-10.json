@@ -2,23 +2,23 @@
   "id": "question-english-content-d-iv-4-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-4／事實與意見」task, what is the best way to prepare question 10?",
+  "prompt": "A product page lists a lamp’s price, brightness, and battery life. A reviewer writes, “It is worth buying.” What is the best way to evaluate the review?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-4／事實與意見."
+      "text": "Treat the recommendation as a proven fact for every buyer."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-4／事實與意見."
+      "text": "Compare the listed specifications with your needs and the reviewer’s stated reasons."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-4／事實與意見."
+      "text": "Ignore all specifications because opinions never matter."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-4／事實與意見."
+      "text": "Assume a higher price always means better quality."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-4／事實與意見, question 10."
+    "value": "B",
+    "explanation": "用價格、亮度、續航等規格和個人需求對照，再檢查評論理由，才能判斷建議是否適合，因此選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1706770089045DwNPg1SE.pdf",
+    "sourceLocator": "PDF第5頁第51–52題：依票價與年齡表計算費用並判讀規則事實。",
+    "authoringNote": "參照公立國中英文定期評量中核對文章事實、作者觀點、圖表證據、預測及行動判讀的能力；情境、題幹、數據、選項、答案與解析皆獨立編寫，未複製原題。版本研究與全案內容審查未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1706770089045DwNPg1SE.pdf",
+      "title": "臺北市立內湖國中112學年度第1學期七年級第3次段考英語科（康軒版）",
+      "year": "112",
+      "subject": "english",
+      "locator": "PDF第5頁第51–52題：依票價與年齡表計算費用並判讀規則事實。",
+      "observedPattern": "參照從價格表提取規格、計算並核對文字主張的能力；本題產品與消費情境均為新編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "消費建議不是普遍事實；先核對可比較規格，再以使用者需求及作者理由判斷是否適用。",
+  "solutionSteps": [
+    "worth buying 是價值建議，適不適合取決於使用目的與個人條件。",
+    "列出可比較的資料：價格、亮度、電池續航。",
+    "將規格與自己的需求比對，也檢查評論者是否提出清楚理由。",
+    "這樣評估的是建議是否適合自己，而不是對所有人都成立；選 B。",
+    "不要把較高價格當作品質保證，也不必因為是意見就忽略其背後證據。"
+  ]
 }

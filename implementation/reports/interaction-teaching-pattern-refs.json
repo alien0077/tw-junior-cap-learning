@@ -1,0 +1,46 @@
+{
+  "updatedAt": "2026-09-08",
+  "policy": "只研究互動教學的提問順序、操作回饋、預測與證據表達方式；不複製文字、題目、圖片、程式碼或版面。所有 reuseDecision 固定為 inspiration-only。",
+  "refs": [
+    {
+      "id": "phet-ild",
+      "url": "https://phet.colorado.edu/assets/virtual-workshop/Interactive_Lecture_Demonstrations.pdf",
+      "title": "Interactive Lecture Demonstrations",
+      "authorOrInstitution": "PhET Interactive Simulations, University of Colorado Boulder",
+      "accessedAt": "2026-09-08",
+      "observedTeachingSignals": ["先讓學生個別寫下對實驗結果的預測", "再操作模擬並比較預測與觀察", "要求學生用證據說明預測為何成立或需要修正"],
+      "reuseDecision": "inspiration-only",
+      "repositoryApplication": "Workbench 的 predict→manipulate→observe→explain→verify 流程；資料、文字、圖形與題目均由各 unit 自行產生"
+    },
+    {
+      "id": "phet-activity",
+      "url": "https://phet.colorado.edu/files/guides/PhetGuideActivityDoc_v8-final_en.pdf",
+      "title": "PhET Activity Guidelines",
+      "authorOrInstitution": "PhET Interactive Simulations, University of Colorado Boulder",
+      "accessedAt": "2026-09-08",
+      "observedTeachingSignals": ["用問題引導學生觀察變項與結果", "鼓勵以資料表或圖形整理觀察", "把預測、操作與解釋串成可回查的學習證據"],
+      "reuseDecision": "inspiration-only",
+      "repositoryApplication": "各 renderer 的 visualRules、evidence prompt 與文字 fallback；沒有嵌入外部模擬或重用原活動文字"
+    },
+    {
+      "id": "w3c-aria",
+      "url": "https://www.w3.org/WAI/standards-guidelines/aria/",
+      "title": "WAI-ARIA Overview",
+      "authorOrInstitution": "W3C Web Accessibility Initiative",
+      "accessedAt": "2026-09-08",
+      "observedTeachingSignals": ["動態狀態應映射到輔助科技可理解的語意", "控制項、live region 與事件需要可程式存取", "互動元件需提供鍵盤與替代操作路徑"],
+      "reuseDecision": "inspiration-only",
+      "repositoryApplication": "Workbench 的 named controls、polite live status、keyboard operation、文字 fallback 與 state serialization QA"
+    },
+    {
+      "id": "w3c-landmarks",
+      "url": "https://www.w3.org/WAI/ARIA/apg/practices/landmark-regions/",
+      "title": "Landmark Regions",
+      "authorOrInstitution": "W3C Web Accessibility Initiative, ARIA Authoring Practices Guide",
+      "accessedAt": "2026-09-08",
+      "observedTeachingSignals": ["以有名稱的區域組織長頁面內容", "讓鍵盤與螢幕閱讀器使用者能直接跳到重要區段"],
+      "reuseDecision": "inspiration-only",
+      "repositoryApplication": "學生頁面六個教學區塊與互動區的 heading／region 結構；仍需真實 VoiceOver/NVDA session 另行驗證"
+    }
+  ]
+}

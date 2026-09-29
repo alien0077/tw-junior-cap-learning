@@ -2,41 +2,84 @@
   "id": "question-science-content-nb-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年3月19日河川觀測站的觀察中，比較兩地「Nb：氣候變遷之影響與調適」資料時，甲地迎風坡年雨量約 20460 mm、乙地背風坡約 13980 mm，最合理的做法是？",
+  "prompt": "兩社區遇到相近豪雨，甲排水良好且預警快，乙低窪且地下室有行動不便居民；乙風險較高主要因？",
   "options": [
     {
       "id": "A",
-      "text": "同時比較地形、風向、觀測期間與 20460、13980 mm 資料"
+      "text": "乙一定收到更多雨量"
     },
     {
       "id": "B",
-      "text": "在「Nb：氣候變遷之影響與調適」中只看 20460 mm 的單一數值便下結論"
+      "text": "甲因為有排水就沒有任何危害"
     },
     {
       "id": "C",
-      "text": "在「Nb：氣候變遷之影響與調適」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "乙的暴露與脆弱度條件較高，不能只看雨量"
     },
     {
       "id": "D",
-      "text": "在「Nb：氣候變遷之影響與調適」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "人口與避難資源不影響風險"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-nb"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Nb：氣候變遷之影響與調適」。"
+    "value": "C",
+    "explanation": "相近危害下，地形、排水、人口暴露、健康與資訊資源仍會改變可能損失；風險不是只由雨量決定。 正確答案為選項 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的氣候、極端天氣、熱環境、降雨、防災、調適與資料尺度能力方向；本題為 Nb 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-nb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "氣候資料、極端天氣、環境變化與防災判讀",
+      "observedPattern": "取公立學校自然科以長期資料、氣候現象與資料推理的能力方向，另寫校園案例。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "大氣、氣候、環境資料與科學證據",
+      "observedPattern": "取公開會考對圖表、尺度、因果與環境決策的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "降雨、洪水、地形、熱環境與防災方案",
+      "observedPattern": "取公立學校自然科對危害、暴露、脆弱度與防災行動的能力方向，重新設計題目。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把危害、暴露、脆弱度與防護條件分欄，再找可改變的節點。",
+  "solutionSteps": [
+    "標出資料的時間、地點、危害和受影響對象。",
+    "區分天氣事件與氣候長期訊號，再列暴露、脆弱度和防護條件。",
+    "檢查對照、測量尺度、替代解釋與方案的效果、公平和維護。",
+    "排除把單次事件當趨勢、把雨量當全部風險或忽略弱勢群體的選項，答案為 C。",
+    "以條件式結論說明調適作用、證據範圍與下一步監測：相近危害下，地形、排水、人口暴露、健康與資訊資源仍會改變可能損失；風險不是只由雨量決定。"
+  ]
 }

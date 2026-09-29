@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-6-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "圓心到一條弦的垂線，會有何幾何性質？",
+  "prompt": "四邊形 ABCD 內接於同一圓，若 ∠A＝112°，則對角 ∠C 為多少？",
   "options": [
     {
       "id": "A",
-      "text": "平分此弦"
+      "text": "68°"
     },
     {
       "id": "B",
-      "text": "平行於此弦"
+      "text": "78°"
     },
     {
       "id": "C",
-      "text": "必為切線"
+      "text": "112°"
     },
     {
       "id": "D",
-      "text": "使弦變成直徑但不平分"
+      "text": "248°"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "圓心到弦的垂線會平分弦。"
+    "explanation": "圓內接四邊形的對角互補，所以 ∠C＝180°－112°＝68°，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 圓的幾何性質 題型與官方課綱 KG kg-math-content-s-9-6",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供圓的幾何性質能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的圓幾何能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-6"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "圓心角、弦、切線、圓周角、弦心距與圓內接四邊形",
+      "observedPattern": "公立學校公開數學試題常以圓的構造、角度關係、切線與弦的性質及可計算的直角三角形情境考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "圓心角、弦、切線、圓周角、弦心距與圓內接四邊形",
+      "observedPattern": "公立學校公開數學試題常以圓的構造、角度關係、切線與弦的性質及可計算的直角三角形情境考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "圓心角、弦、切線、圓周角、弦心距與圓內接四邊形",
+      "observedPattern": "公立學校公開數學試題常以圓的構造、角度關係、切線與弦的性質及可計算的直角三角形情境考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認四邊形四個頂點都在圓上，再使用對角和為 180°。",
+  "solutionSteps": [
+    "辨認 ABCD 是圓內接四邊形。",
+    "找出 A 與 C 是對角。",
+    "列出 ∠A＋∠C＝180°。",
+    "計算 ∠C＝180°－112°＝68°。",
+    "選 A。"
+  ]
 }

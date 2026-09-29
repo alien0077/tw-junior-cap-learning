@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-2-iv-5-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "準備『校園午餐剩食』報告時，哪項資料最適合放在主張後作為證據？",
+  "prompt": "班級要向校務會議報告午休噪音，已有七天測量值與三名同學訪談；哪句最適合作為開頭主旨？",
   "options": [
     {
       "id": "A",
-      "text": "報告者覺得午餐很難吃"
+      "text": "本報告整理測量與訪談證據，說明高峰時段並提出可檢驗的改善建議。"
     },
     {
       "id": "B",
-      "text": "網路留言中一個未署名的句子"
+      "text": "午休真的太吵，大家一定同意。"
     },
     {
       "id": "C",
-      "text": "與午餐無關的天氣傳聞"
+      "text": "我們要談一件重要而且很長的事情。"
     },
     {
       "id": "D",
-      "text": "連續四週記錄的每日廚餘重量"
+      "text": "只播放測量機器畫面，觀眾自然會懂。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-2-iv-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "連續且可查核的重量紀錄能直接支持剩食量的主張。"
+    "value": "A",
+    "explanation": "主旨交代對象、資料範圍、要回答的問題與輸出方向，不能只用情緒或空泛宣告。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究報告、評論、演說與論辯能力方向（報告證據選擇）；另以官方語文領域課綱核對 2-Ⅳ-5（https://www.naer.edu.tw/）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究口頭報告、直接證據、受眾、反方、資料比較與公共提案。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文口語表達與證據說服 Ab-Ⅳ-5 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-2-iv-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-2-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口頭報告、資料與主旨",
+      "observedPattern": "公立學校國文評量以口頭報告主旨、直接證據、敘述順序、事實／評價、因果反駁、方案涵蓋、受眾調整、資料比較與有證據說服要求完成公共表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "論證、受眾與反方",
+      "observedPattern": "公立學校國文評量以口頭報告主旨、直接證據、敘述順序、事實／評價、因果反駁、方案涵蓋、受眾調整、資料比較與有證據說服要求完成公共表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先圈出資料來源與報告目的，再選能讓聽眾預期內容與結論的句子。",
+  "solutionSteps": [
+    "讀題定位：圈出「報告主旨」與受眾、資料、指標、限制、反方或評估條件。",
+    "整理表達：先分主旨、證據、評價與方案，再依「主旨交代對象、資料範圍、要回答的問題與輸出方向，不能只用情緒或空泛宣告。」檢查結論強度。",
+    "核對正解：選項 A 能讓聽眾追蹤資料與推理，且沒有把有限證據誇大成必然。",
+    "排除誘答：檢查是否用音量、口號、個案、情緒或挑選數據取代可核對證據。",
+    "回讀驗證：確認主張、證據、受眾、反方、限制與行動指標彼此相連。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -1,0 +1,153 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-7-3
+  knowledgeGraphIds:
+  - kg-math-content-a-7-3
+  title: A-7-3：一元一次方程式的解法與應用
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  fusedScope:
+    officialCurriculum: A-7-3：一元一次方程式的解法與應用
+    curriculumIntent: A-7-3：一元一次方程式的解法與應用
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依官方課綱與KG，先比較各來源能直接核讀的教學概念、解法表徵及應用順序，再以本課例證和教法原創重組；逐版標示正文／索引／校方計畫及權利限制。未讀到的版本正文不得推稱共同教法；可讀性不足時僅能標為單一版本標示材料主導的融合草稿，publisher evidence維持pending，lesson維持draft。
+    currentEvidenceStatus: curriculum-and-kg-grounded; one-hanlin-labeled-third-party-textbook-share-read-with-authenticity-and-rights-unverified; nani-and-kanghsuan-course-crosswalks-only; original-source-to-design-trace-recorded; publisher-evidence-pending; content-review-pending
+  learningGoals:
+  - 對照「四張同價票加一次手續費」的收費紀錄，定義未知數並建立 4x+20=260。
+  - 以逐步等價變形求得 x=60，說明每一步對等號兩側做了什麼，並以原方程式驗算。
+  - 面對分母不同的方程式，找最小公倍數後對等式每一項同乘，保留括號並逐行整理，再代回原式核對。
+  - 將「未知量—關係式—合法解法—代回—語境答案」流程遷移至有固定費、單位與整數限制的新資料題。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 列式時係數表達重複份數，固定費只計一次；未知數須先明確定義與附單位。
+  - 每個等式變形都要保持解集不變；兩側同減 20、同除以非零數 4 才能由 4x+20=260 得到 x=60。
+  - 清除分母必須對等式左右每一項乘同一個非零最小公倍數；乘入括號的每一項及等號另一側常數都不可遺漏。
+  - 方程式求得的數值只是候選答案；代回原式與檢查正負、整數、範圍及題目所問量，才構成完整應用解答。
+  misconceptions:
+  - 把 260 直接除以 4，將一次性 20 元手續費錯分攤到每張票。
+  - 將 4x+20=260 變成 4x=260+20，移項時未保持兩側等量。
+  - 解出 60 後只寫數字，沒有說明它是每張票價，也沒有代回總額核對。
+  - 解分數方程式時只乘分數項，漏乘右側整數；或將 3(x−2) 展成 3x−2 而漏乘常數項。
+  contentFlow:
+  - 'hook: 展覽買四張同價票另付一次 20 元手續費，總額 260 元；先估單張票價而不先解式。'
+  - 'activate-prerequisite: 用 4 個相同票價標記與固定費卡，檢查學生能否區分乘法項與一次性加數。'
+  - 'predict: 學生在 60、65、70 元中選候選票價，並預測哪一個可使四張票加手續費等於 260。'
+  - 'manipulate: 將固定費從總額兩側扣除，再平均分給四張票；操作記錄每步的逆運算與單位。'
+  - 'observe: 同步比較票數圖、4x+20=260 的等式鏈與每張票價候選表，顯示 65 元會導致總額 280 元。'
+  - 'explain: 學生說明為何先扣手續費、再除以張數，並指出 240 元是四張票合計而非單張價格。'
+  - 'formalize: 整理列式、等價變形、原式驗算與情境檢查四項證據，分辨中間值和題目答案。'
+  - 'fraction-example: 以 (x+1)/3+(x−2)/2=4 示範整式同乘6、括號展開、合併同類項、解得28/5並逐項代回。'
+  - 'guided-practice: 以校車 30n+900+60=1140 練習合併固定項、求 n=6 並檢查人數為非負整數。'
+  - 'transfer: 用步道先走 2.4 公里、再以每小時 3 公里走 t 小時、總長 10.8 公里的資料建立方程並解釋單位。'
+  - 'exit-ticket: 找出把 260/4 當票價的錯誤，指出漏掉的固定費並代回檢查。'
+  visualizations:
+  - 費用分解圖：四張票各自標示 x 元，手續費卡只出現一次，與 260 元總額建立 4x+20=260 對應。
+  - 等式解題軌跡：260−20=240 表示四張票合計，240÷4=60 才是單張票價；每行顯示左右同做運算。
+  - 代回比較表：以 x=60 和錯誤候選 x=65 計算總額，標出哪個符合 260 元紀錄。
+  - 清分母逐項表：標出兩側各項乘以6後的結果，將括號內兩項各自連線至展開式，防止右側漏乘或只乘部分。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-7-3-I01
+    component: AlgebraBalanceBlock
+    purpose: 讓學生把固定費從總額中剝離，再按相同商品份數求單價，透過代回揭露把總額直接平均分攤的錯誤。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        ticketCount: 4
+        totalPaid: 260
+        oneTimeFee: 20
+    studentActions:
+    - 先選候選單價並預測總額分配，預測送出前不顯示解法。
+    - 先從總額扣除一次性費，再把餘額平均分到四張票；操作順序不可跳過固定費扣除。
+    - 切換固定費或票數時，同步更新收費語句、方程式、票券圖與候選單價表。
+    - 用「固定費扣除後剩下的是…，除以…張，所以每張…」說明求解含義。
+    - 在最後階段切換到一條分數方程式，選擇最小公倍數並檢查左右每一項是否同乘。
+    visualRules:
+    - 固定費標示「一次」且不隨張數複製；變動票價依票數重複累加。
+    - 總額、固定費與票數任一變更後，三種表徵同步更新並保留先前預測。
+    - 錯誤候選 65 元須顯示 4×65+20=280，提示回看固定費分配而非只說答錯。
+    - 票數、金額與單價均顯示單位；鍵盤與窄螢幕上圖表可直向閱讀。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-7-3-I01
+      trigger: 把 260÷4 算成 65 元，或把手續費加到總額後才除以票數。
+      prompt: 將 65 元代回「四張票＋一次手續費」，結果是否仍是 260 元？哪一筆費用被重複分攤？
+      expectedEvidence: 4×65+20=280≠260；先扣除只收一次的 20 元，剩餘 240 元才是四張票的合計。
+    feedback:
+      correct: 肯定其以總額核對單價，要求改變固定費後預測單價如何變化並說明理由。
+      incorrect: 第一提示只問「哪筆費用只收一次？」；重試後提供扣費與平分的局部示範，仍不直接揭露單價。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只借用 PhET 對可操作模型與即時回饋的教學形式；本課獨立設計固定費扣除、四張票分攤、錯誤候選回代與單位檢核，不沿用其模擬內容。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "參考活動先預測再操作的節奏；票價、手續費、等式軌跡、錯誤診斷與學生回饋均為本課原創。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "採用具名控制項、鍵盤可操作與可讀狀態回報原則；操作票數、費用拆分與解題步驟為本課資料，並提供文字替代。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以主內容區與標題階層組織題目、等式步驟、檢核與回饋；本課自編內容可由鍵盤順序完整閱讀。"
+  capTransfer:
+    questionType: 路程表資料建模與單位短答
+    stemConstraint: 步道總長 10.8 公里，先走 2.4 公里，其餘以每小時 3 公里行走 t 小時；建立方程式求 t，並說明為何答案單位是小時而非公里。
+    requiredResponse: 定義 t、列出 2.4+3t=10.8、逐步解方程、代回總距離並檢查 t≥0。
+    scoring: 未知量和方程式正確 1、等價解法正確 1、代回與單位／範圍說明 1
+  exitTicket:
+    prompt: 有人說四張票共 260 元，所以每張 65 元。若另收 20 元手續費，指出錯誤並寫出正確單價與驗算式。
+    successCriteria:
+    - 先從 260 元扣除 20 元，得到四張票共 240 元。
+    - 將 240 除以 4 得每張 60 元。
+    - 以 4×60+20=260 驗算，並標明「元／張」。
+  expressionExtension:
+    applicable: true
+    task: 以自己的生活收據設計一個含固定費與單價的情境，寫出一次方程式，說明各項單位、解的意思與一種驗算方式。
+    constraint: 學生先寫；回饋只檢查變動項／固定項、單位與代回，不替學生生成完整情境答案。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 預測被保留；正解隱藏至學生操作「扣一次 20 元，再除以 4 張」後才顯示。
+  - 單價 60 元的回代結果為 260 元；錯誤值 65 元回代為 280 元並命中固定費診斷。
+  - 改動票數／固定費時，票券圖、費用式和候選值同步更新；不能只改畫面數字。
+  - 在 320px、375px、768px 與鍵盤操作下完成預測、逐步求解、原式驗算及分層提示。
+  - 步道遷移題得 t=2.8 小時，代回 2.4+3×2.8=10.8；不接受只寫 2.8 而無單位與條件說明。
+  - 分數方程式步驟為 2(x+1)+3(x−2)=24、5x−4=24、x=28/5；回代兩項為11/5與9/5，總和4；對右側漏乘或括號常數漏乘須給出可辨識提示。
+  - 關閉動畫或費率圖元件失效時，文字 fallback 以固定費卡、單價／數量表和等式鏈呈現求解，仍能檢查單位、答案與步道遷移。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-7-3
+    role: official-curriculum-source-of-truth

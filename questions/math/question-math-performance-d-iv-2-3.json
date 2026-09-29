@@ -2,19 +2,19 @@
   "id": "question-math-performance-d-iv-2-3",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "袋中有 3 顆紅球、2 顆藍球，不放回連取 2 顆，兩顆皆為紅球的機率為何？",
+  "prompt": "從標有 1 到 6 的卡片中不放回抽兩張，第一張為偶數且第二張為奇數的機率為何？",
   "options": [
     {
       "id": "A",
-      "text": "2/5"
+      "text": "1/5"
     },
     {
       "id": "B",
-      "text": "3/10"
+      "text": "1/4"
     },
     {
       "id": "C",
-      "text": "1/5"
+      "text": "3/10"
     },
     {
       "id": "D",
@@ -24,19 +24,62 @@
   "knowledgeIds": [
     "kg-math-performance-d-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "第一顆紅球機率為 3/5；取出紅球後剩 2 紅、4 球，第二顆紅球機率為 2/4；乘積為 3/10。"
+    "value": "C",
+    "explanation": "第一張抽到偶數的機率為 3/6；抽走偶數後剩 5 張，其中奇數仍有 3 張，所以第二階段為 3/5。沿指定路徑相乘得 3/6×3/5=3/10，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考樹狀圖、兩階段試驗、條件機率、不放回抽取與補事件題型；另參考 114 年國中教育會考數學科；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "機率單元實質改寫；已依路徑或樣本空間重新計算答案與解析，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供樹狀圖、兩階段機率、補事件與條件路徑能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的機率樹狀圖方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-d-iv-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "不放回時第二層分母與剩餘數量要更新；只計算題目指定的那條路徑。",
+  "solutionSteps": [
+    "1 到 6 有 3 張偶數與 3 張奇數。",
+    "第一張偶數機率為 3/6。",
+    "抽走偶數後剩 5 張，奇數仍有 3 張，第二張奇數機率為 3/5。",
+    "沿樹狀路徑相乘：3/6×3/5=9/30=3/10。",
+    "所以選 C，不能把第二次分母仍寫成 6。"
+  ]
 }

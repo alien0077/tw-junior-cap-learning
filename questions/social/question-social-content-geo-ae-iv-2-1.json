@@ -2,41 +2,84 @@
   "id": "question-social-content-geo-ae-iv-2-1",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2022年3月1日地方文史館的資料中，甲地年雨量約 1260 mm 且位於迎風坡，乙地約 620 mm 且位於背風坡。研究「地 Ae-Ⅳ-2：工業發展」時，哪項判讀較合理？",
+  "prompt": "比較兩個工業區的設廠條件，最完整的區位分析應包括？",
   "options": [
     {
       "id": "A",
-      "text": "雨量差異必然只由緯度造成"
+      "text": "原料、能源、水、勞動、交通、市場、土地與環境管制"
     },
     {
       "id": "B",
-      "text": "背風坡一定比迎風坡多雨"
+      "text": "只看土地價格"
     },
     {
       "id": "C",
-      "text": "單日雨量即可代表全年氣候"
+      "text": "只看距離港口的直線距離"
     },
     {
       "id": "D",
-      "text": "在「地 Ae-Ⅳ-2：工業發展」的資料中，地形與盛行風向可能共同造成兩地降雨差異"
+      "text": "只看工廠數量"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-geo-ae-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "迎風坡抬升氣流可能增加降雨，背風坡可能較乾；仍須結合長期資料判斷。 本題對應 KG「地 Ae-Ⅳ-2：工業發展」。"
+    "value": "A",
+    "explanation": "工業區位由自然資源、成本、交通、勞動、市場與制度共同影響，不能只用一項價格判斷。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立國中社會科公開試題；研究工業區位、聚集、產業鏈、環境治理與區域差異的能力方向。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開來源的題型／能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-geo-ae-iv-2"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-geo-ae-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國中三年級社會科公開段考；僅研究題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "工業、區域與資料判讀能力方向",
+      "observedPattern": "公開社會科工業資料題研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "工業區位、產業鏈與環境資料題型",
+      "observedPattern": "公開社會科工業資料題研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "人地互動、工業發展與多資料推理",
+      "observedPattern": "公開社會科工業資料題研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認工業區位與產業鏈，再比較效益、外部成本、分配與時間尺度。",
+  "solutionSteps": [
+    "讀題定位：圈出「工業區位」與題目給的產業、區域、勞動、環境或成本條件。",
+    "建立判準：工業區位由自然資源、成本、交通、勞動、市場與制度共同影響，不能只用一項價格判斷。",
+    "核對答案：選項 A「原料、能源、水、勞動、交通、市場、土地與環境管制」符合工業發展的多因素判讀。",
+    "排除誘答：檢查是否只看產值、工廠數或單次測量，忽略分配、外部成本與時間尺度。",
+    "結論回查：確認指標、分母、期間與空間範圍相配，避免把局部成果過度外推。"
+  ]
 }

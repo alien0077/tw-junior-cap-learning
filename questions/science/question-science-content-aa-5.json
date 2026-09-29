@@ -2,23 +2,23 @@
   "id": "question-science-content-aa-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年10月21日河川觀測站的觀察中，將 36 g 食鹽溶於 590 g 水，研究「Aa：物質組成與元素週期性」時，溶液質量為何？",
+  "prompt": "若元素 X 的相對原子質量為 23，X₂Y 中 Y 的相對原子質量為 16，X₂Y 的相對分子質量是多少？",
   "options": [
     {
       "id": "A",
-      "text": "554 g"
+      "text": "39"
     },
     {
       "id": "B",
-      "text": "21240 g"
+      "text": "46"
     },
     {
       "id": "C",
-      "text": "626 g"
+      "text": "62"
     },
     {
       "id": "D",
-      "text": "590 g"
+      "text": "69"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,62 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：36＋590＝626 g。 本題對應 KG「Aa：物質組成與元素週期性」。"
+    "explanation": "X₂Y含2個X與1個Y，式量為2×23＋16＝62；每個下標都要乘上相對原子質量。 正確答案：C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究元素符號、原子與離子、週期表及化學式判讀方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.chhs.tp.edu.tw/uploads/1595570220266AAUtVeTk.pdf",
+    "sourceLocator": "臺北市立景興國民中學108學年度第二學期八年級自然科第一次段考：PDF第2頁第11題（由化學式計算三氧化二鐵式量並換算物質量）；花蓮縣立美崙國民中學112學年度第二學期八年級自然科第一次段考評量試卷：PDF第4頁填充題第1題（依化學式計算水、硫酸及葡萄糖分子量）；桃園市立自強國民中學107學年度第二學期第一次段考八年級自然與生活科技試卷：試題第4題（由分子式和原子量計算葡萄糖與硫酸分子量）；僅供 pattern-only 原創改寫。",
+    "authoringNote": "依三所公立學校原卷的題目能力方向獨立改寫；未複製題幹、圖示、選項或答案。答案與五步推理已逐項核對；全庫第二輪內容／版權審查仍未完成。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-aa"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-science-content-aa",
+  "examPatternRefs": [
+    {
+      "url": "https://www.chhs.tp.edu.tw/uploads/1595570220266AAUtVeTk.pdf",
+      "title": "臺北市立景興國民中學108學年度第二學期八年級自然科第一次段考",
+      "year": "108學年度",
+      "subject": "science",
+      "locator": "PDF第2頁第11題",
+      "locatorLevel": "item",
+      "pattern": "原卷PDF第2頁第11題考查：由化學式計算三氧化二鐵式量並換算物質量。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "observedPattern": "原卷PDF第2頁第11題考查：由化學式計算三氧化二鐵式量並換算物質量。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.mljh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=240&cfsn=1060&name=112-2-8%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E7%A7%91%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E5%8D%B7.pdf&op=dlfile",
+      "title": "花蓮縣立美崙國民中學112學年度第二學期八年級自然科第一次段考評量試卷",
+      "year": "112學年度",
+      "subject": "science",
+      "locator": "PDF第4頁填充題第1題",
+      "locatorLevel": "item",
+      "pattern": "原卷PDF第4頁填充題第1題考查：依化學式計算水、硫酸及葡萄糖分子量。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "observedPattern": "原卷PDF第4頁填充題第1題考查：依化學式計算水、硫酸及葡萄糖分子量。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.tcjh.tyc.edu.tw/uploads/1556760247155p1mmNx8J.pdf",
+      "title": "桃園市立自強國民中學107學年度第二學期第一次段考八年級自然與生活科技試卷",
+      "year": "107學年度",
+      "subject": "science",
+      "locator": "試題第4題",
+      "locatorLevel": "item",
+      "pattern": "原卷試題第4題考查：由分子式和原子量計算葡萄糖與硫酸分子量。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "observedPattern": "原卷試題第4題考查：由分子式和原子量計算葡萄糖與硫酸分子量。本題僅採其能力結構，題幹、數值、選項與解析均另行撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "依式量計算規則逐項乘算，再合併各元素貢獻。",
+  "solutionSteps": [
+    "先由X₂Y辨認組成：2個X原子、1個Y原子。",
+    "計算X的總貢獻：2×23＝46。",
+    "計算Y的總貢獻：1×16＝16。",
+    "將各元素貢獻相加：46＋16＝62。",
+    "因此X₂Y的相對分子質量為62，選 C。"
+  ]
 }

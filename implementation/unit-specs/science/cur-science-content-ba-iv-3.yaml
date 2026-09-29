@@ -1,0 +1,152 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-science-content-ba-iv-3
+  knowledgeGraphIds:
+  - kg-science-content-ba-iv-3
+  title: Ba-Ⅳ-3：化學反應的吸熱與放熱
+  subject: science
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Ba-Ⅳ-3：化學反應的吸熱與放熱
+    curriculumIntent: Ba-Ⅳ-3：化學反應的吸熱與放熱
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 本單元目前只有翰林官方課本節錄直接支持能量轉換與吸放熱例型；南一頁面與康軒索引不作正文證據。先以一版可讀材料、官方課綱及 KG 原創撰寫，不得標成三版已融合。
+    currentEvidenceStatus: curriculum-and-kg-grounded; hanlin-excerpt-verified; nani-and-kanghsuan-unit-content-pending; original-single-source-synthesis-authored
+  learningGoals:
+  - 先界定反應系統與周圍，再用吸收／釋放能量的方向定義吸熱與放熱
+  - 分開判讀新物質證據與熱交換證據；不以手感、冒泡或溫度單一線索代替另一類證據
+  - 以相同初溫、物質量、容器及測量時間的反應組／對照組溫差支持結論，並指出散熱與量測限制
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 化學反應可能吸收或釋放能量；命名方向取決於先界定的反應系統
+  - 周圍溫度升降是熱交換線索，不會自動證明反應本身的溫度或新物質生成
+  - 對照差、能量箭頭、反應證據及熱散失限制必須共同支持結論
+  misconceptions:
+  - 把量到的周圍溫度上升直接說成反應系統吸熱，或未先說清測量對象
+  - 把摸起來冷、冒泡、火焰或反應快慢單獨當成吸熱／放熱的充分證據
+  - 把溫度變化當成新物質證據，或忽略初溫、物質量、容器與量測時間不一致
+  contentFlow:
+  - 'predict: 先界定反應系統、周圍與實際測溫物體，再預測中和、冷敷或氧化時的周圍溫度及能量方向'
+  - 'manipulate: 切換反應情境並比較反應組／對照組的初溫、溫差與相同量測時間，保持比較條件一致'
+  - 'observe: 分別記錄周圍溫度變化與新物質反應證據，標示量測對象、差值及可能熱散失'
+  - 'explain: 依系統吸收或釋放能量判定吸熱／放熱，並區分直接數據、反應證據、推論和替代解釋'
+  - 'formalize: 依系統吸收／釋放能量定義吸熱／放熱'
+  - 'transfer: 用陌生溫度資料檢查生活裝置的證據界線'
+  - 'exit-ticket: 說明一個能量方向、其數據依據及一項無法排除的限制'
+  visualizations:
+  - 反應系統／周圍雙欄與方向箭頭；吸熱為周圍→系統，放熱為系統→周圍
+  - 反應組／對照組的初溫、變化量與量測時間並列，標明哪些數據屬自編模型
+  - 溫度線索與新物質線索分層呈現，文字替代不得把相關性說成反應證明
+  interactiveBlocks:
+  - id: CUR-SCIENCE-CONTENT-BA-IV-3-I01
+    component: SystemRelationshipBlock
+    purpose: 操作系統邊界、對照條件與溫度資料，判斷熱流方向並區分熱交換和化學反應證據
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        scenario: neutralization
+        systemBoundary: reacting-materials
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 以鍵盤可操作控制切換情境並選定系統／周圍邊界
+    - 比較反應組與對照組的初溫、最高／最低溫與測量時點
+    - 分別標出支持熱交換推論的溫度證據與尚待確認的反應證據
+    - 先提交系統、周圍、溫度差、熱流箭頭和限制，再查看分層回饋
+    visualRules:
+    - 操作後所有相關表徵同步更新，不得只改單一數字
+    - 正解揭露前保留學生預測與操作紀錄
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-SCIENCE-CONTENT-BA-IV-3-I01
+      trigger: 學生以周圍升溫推論反應系統吸熱，或把溫度改變當成新物質證據
+      prompt: 你量到的是系統還是周圍？哪一筆對照資料支持熱流方向？它能否證明生成新物質？
+      expectedEvidence: 指出溫度量測對象、反應組與對照差、熱流方向，並承認溫度資料本身不等同新物質證據
+    feedback:
+      correct: 核對系統／周圍、同條件對照與兩類證據，接著要求遷移到未見溫度資料。
+      incorrect: 先提示「你量的是哪一側？」或「是否有對照？」；不直接給吸放熱標籤，重試後才示範箭頭判讀。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只借用先預測再操作的教學節奏；本課自編系統邊界選擇、反應組／對照組溫度資料及能量箭頭，非粒子動畫。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "僅參考活動分步呈現；以原創熱量帳本先預測、再比較對照，並明示溫度觀測不能單獨證明化學反應。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "用於鍵盤／螢幕閱讀器狀態公告；切換系統邊界、反應情境或證據時保留名稱、目前值和結果文字。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "確保熱量帳本的題目、控制項與回饋有可導覽區域；不複製外部教材內容。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「Ba-Ⅳ-3：化學反應的吸熱與放熱」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「Ba-Ⅳ-3：化學反應的吸熱與放熱」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始狀態不顯示正解；學生先選系統邊界並提交周圍溫度方向預測，操作與預測保留供比對。
+  - 切換中和／冷敷／氧化情境時，系統同步更新反應組與對照溫度資料、熱流箭頭和文字說明；展示數值標記為自編模型資料。
+  - 學生把周圍升溫說成系統吸熱時，先追問測量對象及能量箭頭；把溫度當成新物質證據時，要求指出獨立反應證據。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成系統界定、情境切換、證據比較與解釋；核心資料、控制項、回饋和焦點不得溢位或遺失。
+  - 以未見過的結晶／冷卻資料完成遷移；學生需交代測量對象、對照差、能量方向、化學反應證據與一項限制。
+  - 外部來源失效時，預載自編資料仍須完成預測、比較、解釋與遷移，不得阻塞本課。
+  - fallback：圖卡或外部資料不可用時，以本課預載的原創溫度表格與文字情境完成預測、比較、解釋、遷移；不得空白或把溫度變化冒稱新物質證據。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 B、次主題 Ba；官方代碼 Ba-Ⅳ-3
+    role: official-curriculum-source-of-truth
+  - url: https://resource.hle.com.tw/Books/BooksResource/02-111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%202%E4%B8%8B%E8%AA%B2%E6%9C%ACch1%28111f603318%29.pdf
+    locator: 翰林官方公開課本節錄，第1章1-1約印刷頁12；僅核讀能量轉換及吸／放熱例型，非完整單元
+    role: one-publisher-direct-content-evidence
+  - url: https://digitalmaster.knsh.com.tw/all/video/j/nature_page.html?l1=%E5%AF%A6%E9%A9%97%E5%BD%B1%E7%89%87&l2=8%E4%B8%8B
+    locator: 康軒8下官方影音索引；確認相關章節名稱，不作 Ba-Ⅳ-3 正文證據
+    role: publisher-context-index-only

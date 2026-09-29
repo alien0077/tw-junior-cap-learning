@@ -1,0 +1,152 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-content-ac-iv-1
+  knowledgeGraphIds:
+  - kg-english-content-ac-iv-1
+  title: Ac-Ⅳ-1：簡易英文標示
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Ac-Ⅳ-1：簡易英文標示
+    curriculumIntent: Ac-Ⅳ-1：簡易英文標示
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 在語境中辨識「Ac-Ⅳ-1：簡易英文標示」的形式與功能
+  - 以句構、時間線或語意證據修正答案
+  - 將語言規則遷移到新文本或短答
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - Ac-Ⅳ-1：簡易英文標示
+  - 表徵／證據與結論的對應
+  - 錯誤答案所反映的概念差異
+  misconceptions:
+  - 只背「Ac-Ⅳ-1：簡易英文標示」形式，未依語境、時間或句構判斷
+  - 把記憶答案當成理解證據
+  - 忽略題幹中的限制條件或單位
+  contentFlow:
+  - 'hook: 以單元真實問題引起預測'
+  - 'activate-prerequisite: 顯示先備檢核並允許補救'
+  - 'visualize: 用 language-structure 建立可觀察表徵'
+  - 'predict: 學生先提交預測且答案暫不揭露'
+  - 'manipulate: 改變一個變項或標記一段證據'
+  - 'observe: 同步更新圖、表、句構或因果鏈'
+  - 'explain: 學生用一句話說明觀察到的關係'
+  - 'formalize: 再顯示本單元正式語言與記法'
+  - 'transfer: 進入會考型新資料題'
+  - 'exit-ticket: 一題理由題加一個自我診斷'
+  visualizations:
+  - 標示卡與走廊平面圖同步呈現目的地詞、方向箭頭、所在位置及可採取行動
+  - 翻轉箭頭時同步更新標示卡與地圖箭頭；文字與方向矛盾時明確呈現「停下求證」而非猜路線
+  interactiveBlocks:
+  - id: CUR-ENGLISH-CONTENT-AC-IV-1-I01
+    component: SignageReadingLab
+    purpose: 讓學生比較標示目的地詞、箭頭方向與平面圖位置，辨認線索一致或矛盾時應採取的行動
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        scenarioIndex: 0
+        arrowDirection: right
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 寫下對訪客下一步行動的預測
+    - 翻轉方向箭頭，觀察標示卡與平面圖同步變化
+    - 選擇行動並指出目的地詞與地圖方向作為證據
+    - 以新場所題檢驗能否遷移「文字—方向—行動」判讀
+    visualRules:
+    - 翻轉箭頭後標示卡和地圖路線必須同步更新，目的地詞維持不變
+    - 正解揭露前保留學生預測；初次錯答先給線索提示
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-CONTENT-AC-IV-1-I01
+      trigger: 看到目的地詞就忽略箭頭與所在位置，或在文字和方向不一致時仍猜一條路
+      prompt: 請分別指出目的地詞、箭頭方向及地圖位置；三者是否一致？
+      expectedEvidence: 至少指出標示中的目的地詞與箭頭所指的平面圖位置；若矛盾，說明需要停下求證
+    - id: MC-CUR-ENGLISH-CONTENT-AC-IV-1-I02
+      trigger: 把任何警示語氣都判成禁止通行，或把明確的限制進入訊息弱化為普通提醒
+      prompt: 這則訊息是在提醒注意、要求一個具體動作，還是禁止進入？請圈出支持判斷的動詞或界線詞。
+      expectedEvidence: 區分 caution 類注意提醒、具體行為要求與 no/keep out/only 等限制，並依文字而非警示圖示顏色單獨決定能否通行
+    feedback:
+      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
+      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只參考互動教學與無障礙設計原則；車站／圖書館／校園標示、地圖、問題和答案皆由本課自編，透過 SignageReadingLab 呈現。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "只參考互動教學與無障礙設計原則；車站／圖書館／校園標示、地圖、問題和答案皆由本課自編，透過 SignageReadingLab 呈現。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "採用可見焦點、鍵盤等效操作與 aria-live 文字回饋原則；互動資料由本課 lesson JSON 提供，元件不硬編教材事實。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以具名互動區域、標籤關聯、radio 原生鍵盤操作及文字化方向說明支援輔助科技；實際螢幕閱讀器 QA 尚待完成。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「Ac-Ⅳ-1：簡易英文標示」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字／英文短段落，將「Ac-Ⅳ-1：簡易英文標示」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入互動時不顯示方向答案；學生須先寫下預測，送出後才可翻轉箭頭和作答。
+  - 翻轉箭頭後，標示卡和地圖路線同步改變；文字提示說明只改變箭頭，目的地詞保持不變。
+  - 文字和地圖不一致時，正確行動是停下求證；第一次答錯只顯示線索提示，重試後才展示答案與逐項證據。
+  - 面對原創的濕滑地面、設備安全與限制進入標示時，學生須分辨提醒、具體行為要求和禁止；不得把所有警示都推成封鎖，也不得忽略明確限制詞。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成預測、翻轉箭頭、選擇行動及閱讀證據回饋時，題幹、地圖、控制項與文字狀態不得溢位或遺失。
+  - 在車站情境完成後，使用圖書館及校園健康中心的新地點遷移練習；每題須將文字、箭頭與地圖位置交叉核對，並以一句話說明證據。
+  - 地圖元件或外部資源失效時，文字 fallback 以本單元 JSON 內的原創地點標示清單、方向詞句與可讀地圖描述支援預測、操作、觀察、解釋及情境遷移，不依賴外部載入。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 16～20 頁／PDF 第 18～22 頁；國民中學教育階段學習內容；官方代碼 Ac-Ⅳ-1
+    role: official-curriculum-source-of-truth

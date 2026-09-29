@@ -2,41 +2,62 @@
   "id": "question-science-content-cross-atoms-to-universe-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月31日河川觀測站的觀察中，將 89 g 食鹽溶於 886 g 水，研究「從原子到宇宙」時，溶液質量為何？",
+  "prompt": "一個中性氧原子的原子序為 8、質量數為 18。下列哪項核對結果正確？",
   "options": [
     {
       "id": "A",
-      "text": "797 g"
+      "text": "質子8、中子18、電子8"
     },
     {
       "id": "B",
-      "text": "78854 g"
+      "text": "質子18、中子8、電子18"
     },
     {
       "id": "C",
-      "text": "975 g"
+      "text": "質子8、中子10、電子10"
     },
     {
       "id": "D",
-      "text": "886 g"
+      "text": "質子8、中子10、電子8"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cross-atoms-to-universe"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：89＋886＝975 g。 本題對應 KG「從原子到宇宙」。"
+    "value": "D",
+    "explanation": "原子序等於質子數；質量數為質子與中子總數，因此中子數18−8=10。中性原子的電子數等於質子數，為8。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675416611615Uti9exJs.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第三次段考八年級理化試題卷",
+      "year": "111",
+      "subject": "science",
+      "locator": "printed page 2, question 12",
+      "observedPattern": "僅參考第12題的命題能力與推理結構；只依公開原卷指定題目研究粒子模型、化學式、原子組成與原子結構的命題模式；不重製題幹、選項、圖表或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675416611615Uti9exJs.pdf",
+    "sourceLocator": "臺北市立內湖國中公開原卷 printed page 2, question 12；只取題型與推理能力作 pattern-only 參考，題幹、選項、答案、圖表均重新創作。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開試題的 item-level pattern-only 證據獨立改寫；沒有複製原題、選項、圖表或答案。題目維持 draft，尚待單元版本融合、內容與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-atoms-to-universe"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-science-content-cross-atoms-to-universe",
+  "solutionStrategy": "先用原子序找質子，再以質量數減質子求中子，最後利用「中性」條件配平電子；不要把質量數誤當中子數。",
+  "solutionSteps": [
+    "把題目給的原子序 8 對應到質子數，原子核內有 8 個質子。",
+    "質量數計算的是質子加中子，故中子數要用 18−8，而不是直接抄 18。",
+    "相減得到 10，因此原子核內有 10 個中子。",
+    "題目說原子中性，正電質子總量與負電電子總量相抵，電子數為 8。",
+    "依序核對質子8、中子10、電子8，符合 D；若是離子，電子數才可能不同。"
+  ]
 }

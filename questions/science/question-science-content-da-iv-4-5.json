@@ -2,41 +2,67 @@
   "id": "question-science-content-da-iv-4-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年4月18日校園實驗室的觀察中，連續觀察「Da-Ⅳ-4：細胞分裂與染色體變化」5 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "正常有絲分裂完成後，兩個子細胞通常具有何種關係？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Da-Ⅳ-4：細胞分裂與染色體變化」時只依樣本的顏色（未記錄7天的時間與條件）"
+      "text": "染色體數量與遺傳資訊大致相同，能維持原組織的功能"
     },
     {
       "id": "B",
-      "text": "連續7天研究「Da-Ⅳ-4：細胞分裂與染色體變化」並測得樣本持續吸收氧氣並產生二氧化碳"
+      "text": "一個子細胞擁有全部染色體，另一個完全沒有"
     },
     {
       "id": "C",
-      "text": "研究「Da-Ⅳ-4：細胞分裂與染色體變化」時只依樣本的名稱推測，不進行觀察"
+      "text": "兩個子細胞必然屬於不同物種"
     },
     {
       "id": "D",
-      "text": "研究「Da-Ⅳ-4：細胞分裂與染色體變化」時只觀察一次外形，便排除所有其他證據"
+      "text": "兩個子細胞都不再含有 DNA"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-da-iv-4"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Da-Ⅳ-4：細胞分裂與染色體變化」。"
+    "value": "A",
+    "explanation": "A。正常有絲分裂的兩個子細胞通常具有相同或非常相近的染色體組與遺傳資訊，差異主要來自後續分化與環境。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的細胞分裂、染色體與生長修補能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Da-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-da-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-da-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "細胞分裂、染色體、DNA複製與生長修補判讀",
+      "pattern": "取由染色體模型、細胞週期與分裂結果推論遺傳資訊維持的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由染色體模型、細胞週期與分裂結果推論遺傳資訊維持的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較兩個子細胞的染色體組與遺傳資訊，而非只看大小。",
+  "solutionSteps": [
+    "標出細胞週期、DNA 複製與染色體／染色分體。",
+    "依序排列染色體凝縮、中央排列、姐妹分離與細胞質分裂。",
+    "計算分裂前後染色體條數與染色單體數。",
+    "比較兩個子細胞取得的遺傳資訊是否完整且相近。",
+    "把模型連到生長、修復與分裂失誤的限制。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

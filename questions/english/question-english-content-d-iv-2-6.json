@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-2-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-2／比較分類排序」task, what is the best way to prepare question 6?",
+  "prompt": "A club requires members to be at least 13 years old and available on Saturday. The list shows Ana, 13 and Saturday; Ben, 14 and Sunday; Cara, 12 and Saturday; Dan, 15 and Saturday. Who qualifies?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-2／比較分類排序."
+      "text": "Ana and Cara"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-2／比較分類排序."
+      "text": "Ben and Dan"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-2／比較分類排序."
+      "text": "Ana and Ben"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-2／比較分類排序."
+      "text": "Ana and Dan"
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-2／比較分類排序, question 6."
+    "value": "D",
+    "explanation": "Ana 與 Dan 同時滿足年齡至少 13 歲及週六可出席，因此選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%80%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87_1.pdf",
+    "sourceLocator": "PDF第2頁第29題：依票價表年齡區間與遊客年齡核算；本題改為兩條件名單篩選。",
+    "authoringNote": "以英語課程知識點與公立學校公開段考所呈現的資料判讀能力為參照；題幹、數據、選項、答案、解析與解題活動均獨立撰寫，未複製試卷內容。課程版本研究與全案內容審查未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%80%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87_1.pdf",
+      "title": "高雄市立國昌國中110學年度第1學期第2次段考一年級英語科試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第2頁第29題：依票價表年齡區間與遊客年齡核算；本題改為兩條件名單篩選。",
+      "observedPattern": "題組以年齡區間等明確條件對照個別對象；本題要求同時滿足年齡門檻與可出席日，人物及資料皆自編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "「至少 13 歲」和「週六有空」是 AND 條件，兩項都要符合；逐人檢查可避免只看年齡或只看日期。",
+  "solutionSteps": [
+    "先把 at least 13 轉成年齡 ≥ 13，並記下第二條件為 Saturday。",
+    "Ana：13 歲達門檻，週六可出席，符合。",
+    "Ben：14 歲達門檻，但週日有空，不符合；Cara：12 歲未達門檻。",
+    "Dan：15 歲且週六有空，也符合；因此答案是 Ana and Dan，選 D。",
+    "核對「至少」包含 13 歲本身，並確認兩位入選者同時滿足兩條件。"
+  ]
 }

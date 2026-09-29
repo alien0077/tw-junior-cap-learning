@@ -2,23 +2,23 @@
   "id": "question-science-content-md-iv-2-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年11月30日自然科教室的觀察中，針對「Md-Ⅳ-2：颱風季節與生命財產損失」提出可檢驗的科學問題，若比較 4 組、每組取樣 9 份資料，哪一項設計最適當？",
+  "prompt": "從臺灣長期月資料看颱風活動，哪個敘述最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Md-Ⅳ-2：颱風季節與生命財產損失」時只改變光照時間，其餘條件一致，設置4組、每組取樣9份並各重複測量3次"
+      "text": "夏秋較常見是長期統計傾向，不代表每年固定月份必有颱風"
     },
     {
       "id": "B",
-      "text": "研究「Md-Ⅳ-2：颱風季節與生命財產損失」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "只要進入夏季每天都會有颱風"
     },
     {
       "id": "C",
-      "text": "研究「Md-Ⅳ-2：颱風季節與生命財產損失」時只測量4組中的一組就直接下結論"
+      "text": "冬季完全不可能有任何強風雨"
     },
     {
       "id": "D",
-      "text": "研究「Md-Ⅳ-2：颱風季節與生命財產損失」時先決定結論，再挑選支持結論的9筆資料"
+      "text": "一個月份的資料就能代表所有年代"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Md-Ⅳ-2：颱風季節與生命財產損失」。"
+    "explanation": "季節性是長期資料的機率與頻率特徵，不能改寫成逐年必然預測；短期事件仍要看即時觀測與警報。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然與理化試題的颱風季節、風雨、氣象資料、災害、暴露與防災安全能力方向；本題為 Md-Ⅳ-2 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-md-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-md-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "颱風季節、氣象資料與災害判讀",
+      "observedPattern": "取颱風路徑、風雨資料與災害判讀能力方向，未複製題文。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "風雨、氣壓、暴潮與防災",
+      "observedPattern": "取風雨、氣壓、海象及防災條件整合判讀方向，另寫新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "降雨、洪水、地形與生命財產風險",
+      "observedPattern": "取降雨、地形、暴露與安全決策能力方向，未複製原題或圖表。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先區分長期平均和單次預報，再檢查選項是否把傾向誇大成必然。",
+  "solutionSteps": [
+    "圈出題目中的時間、地點、危害或損失條件。",
+    "把危害、暴露、脆弱度與防護資料分欄，避免只看單一數字。",
+    "比較選項是否符合資料的時間尺度、空間尺度與安全限制。",
+    "排除把統計傾向說成必然、把結果倒推原因或違反安全的選項，答案為 A。",
+    "用條件式句子回查結論：季節性是長期資料的機率與頻率特徵，不能改寫成逐年必然預測；短期事件仍要看即時觀測與警報。"
+  ]
 }

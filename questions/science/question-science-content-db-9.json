@@ -2,23 +2,23 @@
   "id": "question-science-content-db-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年4月23日學校研究社的觀察中，連續觀察「Db：動植物體的構造與功能」5 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "若只切斷莖內木質部而保留韌皮部，哪個運輸最先直接受影響？（Db 單元第9題：請依構造、功能與證據界線判讀。）",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db：動植物體的構造與功能」時只依樣本的顏色（未記錄11天的時間與條件）"
+      "text": "葉製造的有機養分一定完全不能向下運送（木質部環切模型）"
     },
     {
       "id": "B",
-      "text": "研究「Db：動植物體的構造與功能」時只依樣本的名稱推測，不進行觀察"
+      "text": "花粉一定無法形成（木質部環切模型）"
     },
     {
       "id": "C",
-      "text": "連續11天研究「Db：動植物體的構造與功能」並連續觀察到細胞數量增加"
+      "text": "根吸收的水與無機鹽向上運送受阻（木質部環切模型）"
     },
     {
       "id": "D",
-      "text": "研究「Db：動植物體的構造與功能」時只觀察一次外形，便排除所有其他證據"
+      "text": "所有氣孔立即全部關閉（木質部環切模型）"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Db：動植物體的構造與功能」。"
+    "explanation": "若木質部被環切而韌皮部保留，最直接受阻的是水和無機鹽向上運輸；不能把單一運輸受阻誇大成所有生命功能立即停止。正確答案：C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+    "sourceLocator": "公立學校公開自然科試題的構造功能、資料判讀與控制變因能力方向；本題改寫為 Db 單元原創情境，未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-db",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國中公開生物段考；只取細胞、組織、器官與構造功能判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "細胞、組織、器官與構造功能判讀",
+      "observedPattern": "公開自然科評量常以構造辨識、層次關係、功能推論、資料解讀與控制變因檢查生物概念；本題以不同情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國中公開自然段考；只取植物構造、運輸與探究變因的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "植物構造、運輸與探究變因",
+      "observedPattern": "公開自然科評量常以構造辨識、層次關係、功能推論、資料解讀與控制變因檢查生物概念；本題以不同情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中公開自然科試題；只取生物構造功能、觀察資料與實驗控制的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "生物構造功能、觀察資料與實驗控制",
+      "observedPattern": "公開自然科評量常以構造辨識、層次關係、功能推論、資料解讀與控制變因檢查生物概念；本題以不同情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認被切斷的組織與它負責的物質，再排除過度推論。",
+  "solutionSteps": [
+    "讀題並圈出構造、所在位置、層次、物質或環境條件。",
+    "把線索分成直接觀察、合理功能推論與尚缺資料三類。",
+    "逐一比對選項是否同時符合構造、功能、方向與尺度。",
+    "排除把單一構造誇大成整個器官或個體功能，以及混淆吸收、運輸和交換的選項。",
+    "用一句有條件的完整理由重述答案，確認結論沒有超出題目證據。"
+  ]
 }

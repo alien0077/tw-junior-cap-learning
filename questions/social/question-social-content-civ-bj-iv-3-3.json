@@ -2,41 +2,76 @@
   "id": "question-social-content-civ-bj-iv-3-3",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2022年4月3日社區資料中心的資料中，針對「公 Bj-Ⅳ-3：侵權行為概念與責任」的公共政策，若限制人民權利，哪項程序最符合權利保障？",
+  "prompt": "甲騎車撞倒乙的攤車，攤車損壞；乙隔天因未固定電線又引發另一處火災。若乙把全部損失都歸給甲，應如何判斷？",
   "options": [
     {
       "id": "A",
-      "text": "只要多數人支持就可無限期限制"
+      "text": "分別查明甲的撞擊造成哪些直接損害，以及乙後續行為是否形成新的原因，不能只因最早事件發生就全數歸責甲"
     },
     {
       "id": "B",
-      "text": "政策名稱簡短即可不必說明依據"
+      "text": "只要甲是最早出現的人，就必須負擔之後所有結果，不必分析中間事件"
     },
     {
       "id": "C",
-      "text": "只公布支持意見而不提供申訴方式"
+      "text": "只要乙也有疏忽，甲就完全不必對攤車損壞負責"
     },
     {
       "id": "D",
-      "text": "針對「公 Bj-Ⅳ-3：侵權行為概念與責任」具法律依據、目的正當且符合必要與比例原則，並提供救濟途徑"
+      "text": "火災結果比攤車損壞嚴重，所以法律一定把全部責任給甲"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-civ-bj-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "權利限制須有法律依據，並符合必要、比例及可救濟等法治要求。 本題對應 KG「公 Bj-Ⅳ-3：侵權行為概念與責任」。"
+    "value": "A",
+    "explanation": "侵權題看到多段事件，要畫出時間與原因鏈，分開判斷每一項損害與各行為的關聯，不可把所有結果一次包給第一個行為人。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf",
+    "sourceLocator": "國立卓蘭高中附設國中部公開社會課程計畫；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方課綱、單元 KG、現行法規概念與三個公立學校公開來源的題型方向，獨立改寫侵權成立要件、故意過失、因果關係、正當防衛、緊急避難、未成年人、僱用人、共同侵權、非財產損害及證據界線；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-civ-bj-iv-3"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-civ-bj-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "生活事件、法律責任與證據推理",
+      "observedPattern": "公立學校社會科公開試題常以生活事件、權利責任、法律程序與多重資料考查公民推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "侵權、權利救濟與多重資料判讀",
+      "observedPattern": "公立學校社會科公開試題常以生活事件、權利責任、法律程序與多重資料考查公民推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先建立事件時間線，逐項檢查權利侵害、損害、因果與故意過失，再處理正當防衛、緊急避難、未成年人、僱用人或共同侵權等特別條件，最後依證據分清責任種類。",
+  "solutionSteps": [
+    "讀題定位：圈出「因果關係」以及行為人、受害者、損害、時間與證據線索。",
+    "整理法律條件：分開權利侵害、損害、因果關係、故意過失、責任能力與可能的阻卻或分擔事由；本題核心是「侵權題看到多段事件，要畫出時間與原因鏈，分開判斷每一項損害與各行為的關聯，不可把所有結果一次包給第一個行為人。」",
+    "核對正解：選項 A「分別查明甲的撞擊造成哪些直接損害，以及乙後續行為是否形成新的原因，不能只因最早事件發生就全數歸責甲」完整回應題幹要求，而不是只抓一個醒目結果。",
+    "排除誘答：找出把未成年、道歉、報警、公司聲明、言論自由或結果嚴重直接當成當然免責或當然負責的選項。",
+    "結論回查：確認答案能回到題幹證據，並分清民事損害賠償、刑事責任、行政處分與校規處理的界線。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

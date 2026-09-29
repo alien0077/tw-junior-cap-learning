@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-f-iv-2",
   "subject": "math",
-  "title": "f-Ⅳ-2：二次函數圖形",
+  "title": "f-Ⅳ-2：從係數讀二次函數圖形",
   "knowledgeIds": [
     "kg-math-performance-f-iv-2"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「二次函數圖形」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "二次函數的圖形是一條有方向的拋物線；係數改變時，開口、寬窄、平移與對稱位置也會改變。本課從拋擲高度與時間的原創資料開始，讓學生在表格、式子與圖形間辨認頂點、對稱軸和開口方向，並用多個點與對稱關係檢查圖形，而不是只看最高點猜答案。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「二次函數圖形」相關的關係。"
+        "heading": "係數先告訴我們什麼",
+        "body": "在 y=ax² 中，a 的正負決定開口向上或向下，絕對值大小影響圖形張開程度。先固定其他條件比較 a，才能看見單一係數的作用。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「二次函數圖形」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "對稱軸整理左右資料",
+        "body": "拋物線左右對稱，對稱軸上的 x 值是左右對應點的中間位置。表格若出現相同輸出，先檢查輸入是否以某條直線為中心成對出現。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「二次函數圖形」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "頂點是位置資訊不是全部答案",
+        "body": "頂點同時提供極大或極小的輸出與對稱軸位置，但不一定是 x 軸交點。讀題時先分辨要找最高點、零點、y 截距還是某個輸入的輸出。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「二次函數圖形」，並指出至少一項支持判斷的條件。"
+        "heading": "圖形判讀要看尺度",
+        "body": "座標軸刻度、視窗範圍與單位會影響視覺判斷；一條看似較陡的曲線不一定代表係數較大。用式子或數值點回查圖形的判讀。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「二次函數圖形」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先固定其他條件，比較係數正負與絕對值對圖形的影響。",
+    "用對稱軸配對資料，辨認頂點與左右對應點。",
+    "分清頂點、零點、截距與一般函數值的任務。",
+    "讀圖時檢查刻度、單位與視窗，再用數值回查。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,111 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「二次函數圖形」並驗算結果。",
-    "scenario": "以「f-Ⅳ-2：二次函數圖形」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "以係數、對稱軸與數值點讀取二次函數圖形。",
+    "scenario": "調整二次式係數與平移量，觀察開口、頂點、對稱點同步更新。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "symbol": "a",
+        "meaning": "二次項係數"
+      },
+      {
+        "symbol": "h",
+        "meaning": "對稱軸的水平位置"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「二次函數圖形」的第一步是什麼？",
+        "prompt": "a<0 對圖形有何影響？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "開口向下",
+          "一定平移到右邊",
+          "一定沒有頂點"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "二次項係數的正負決定開口方向。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "y=(x−2)²+3 的對稱軸在哪裡？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "x=2",
+          "x=−2",
+          "y=3"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "括號中的平移量決定水平對稱軸位置。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "如何檢查左右對稱？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "代入對稱軸兩側等距的兩個 x 比較輸出",
+          "只看最高點",
+          "只看 y 軸截距"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "成對輸入得到相同輸出是可定位的對稱證據。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "f-Ⅳ-2：二次函數圖形；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "高雄市公立校方翰林版第六冊數學課程計畫；統計、機率與函數學習內容及評量定位。；f-Ⅳ-2：二次函數圖形：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www1.fsm.kh.edu.tw/plan/special_112/112%E8%B3%87%E6%BA%90%E7%8F%AD%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「二次函數圖形」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「f-Ⅳ-2：二次函數圖形」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "淡水國中公立校方康軒版九年級數學課程計畫；統計機率、函數及圖形應用定位。；f-Ⅳ-2：二次函數圖形：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=100&file=WVhSMFlXTm9MelkzTDNCMFlWOHhNamd6T1Y4MU56WXlNRFl3WHpjNE1USXpMbkJrWmc9PQ%3D%3D&fname=WSGGRPQK20QO41KKLOLK54TXXSMO25JGKLB0DCNKCCQLOO40QKTSST54WSLKUSSSROPOIHKK2004GDLOQONKTSMOOPB0FHMPQPMPNOTSUWZWXVWFH10YWFCSSWUX25HCA0UWIGVWKO40XSUSB040MPTXGDTWA0ZWUSOPTWFGTS45QKNOKK21HHDGB0JC24KK14WTIGYSEG14WSMLID30B514YWRKA434DCDGA0WWQOPP1000ZSIGMOIGDGJDLO",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「f-Ⅳ-2：二次函數圖形」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "卓蘭高中附設國中公立校方南一版九年級數學課程計畫；統計、機率與二次函數章節定位。；f-Ⅳ-2：二次函數圖形：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/378739209.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「f-Ⅳ-2：二次函數圖形」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +160,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「二次函數圖形」",
-        "body": "以「二次函數圖形」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "球飛過的最高點",
+        "body": "給出一組原創的時間與高度資料，請學生先找出高度最大的一筆，再猜測最高點是否正好落在表格中的時間。用對稱的前後資料讓學生預測拋物線，而不是先公布頂點公式。 並請學生將係數、表格差異與圖形特徵寫在同一張對照表，避免只用外觀猜測。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「二次函數圖形」的概念架構",
-        "body": "本單元依官方課綱所列的「二次函數圖形」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "a 的正負與圖形方向",
+        "body": "比較 y=x²、y=−x² 與 y=2x² 的少量計算值，將開口方向與寬窄標在同一張坐標圖。學生需說出哪個係數改變、哪些條件保持不變，避免把所有圖形差異歸因於一個詞。 再標記每一對對稱點的水平距離與共同輸出，讓對稱軸有可核對證據。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「f-Ⅳ-2：二次函數圖形」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用對稱找到頂點",
+        "body": "對 y=(x−2)²+3，指出對稱軸 x=2、頂點 (2,3) 且開口向上；再代入 x=1 與 x=3 得相同輸出 4，驗證左右對稱。最後說明頂點不是 x 軸截距。 並把最高點、交軸點與截距分成三欄，說明每一欄回答的問題不同。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「二次函數圖形」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "辨認題目真正要找的量",
+        "body": "給三個問題：最高高度、何時碰到地面、初始高度。學生分別選頂點、x 軸交點或 y 軸截距作為目標，再用式子與圖形各做一次確認。 最後用式子與代入值回查，不把視覺上像交點的位置直接當成精確答案。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「二次函數圖形」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "改變視窗仍要保留證據",
+        "body": "調整坐標圖的比例與顯示範圍，請學生判斷視覺上是否仍能可靠讀出頂點；若不能，改用完成平方式與代入點補足證據。這把讀圖策略轉移到不同工具視窗。 再比較同一條曲線在不同視窗的讀值，指出哪些結論需要重新計算。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「二次函數圖形」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "圖形判讀的三重檢查",
+        "body": "出口題要求學生寫出開口、對稱軸與目標量，再列一個左右對稱的點或代入值。最後指出若坐標軸刻度不等距，哪一種視覺結論需要重新計算。 並寫出至少一個數值證據，說明視覺結論與代數結果如何互相支持。"
       }
     ],
     "summary": [
-      "先用自己的話界定「二次函數圖形」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "先辨認係數改變與圖形要觀察的特徵。",
+      "用對稱軸和成對資料找頂點與核對形狀。",
+      "分清頂點、零點、截距與一般函數值。",
+      "圖形判讀要配合刻度、式子與代入證據。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「二次函數圖形」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "a<0 時拋物線開口方向如何？",
+        "expectedEvidence": "開口向下，並能用一個數值例子支持。"
       },
       {
-        "prompt": "在「二次函數圖形」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "y=(x−2)²+3 的對稱軸與頂點是什麼？",
+        "expectedEvidence": "對稱軸 x=2，頂點 (2,3)。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「二次函數圖形」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼頂點不一定是 x 軸交點？",
+        "expectedEvidence": "頂點的 y 值可能不為 0，是否交 x 軸要另看零點。"
       }
     ]
   },
@@ -188,6 +227,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『f-Ⅳ-2：從係數讀二次函數圖形』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整二次式係數與平移量，觀察開口、頂點、對稱點同步更新。』開始前，先回答：a<0 對圖形有何影響？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整二次式係數與平移量，觀察開口、頂點、對稱點同步更新。』回答：如何檢查左右對稱？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "a<0 對圖形有何影響？；操作時先預測，再依『f-Ⅳ-2：從係數讀二次函數圖形』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(f-Ⅳ-2：從係數讀二次函數圖形)：答案 A；選項內容：開口向下",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。二次項係數的正負決定開口方向。",
+          "feedback": "二次項係數的正負決定開口方向。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "y=(x−2)²+3 的對稱軸在哪裡？；操作時先預測，再依『f-Ⅳ-2：從係數讀二次函數圖形』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(f-Ⅳ-2：從係數讀二次函數圖形)：答案 A；選項內容：x=2",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。括號中的平移量決定水平對稱軸位置。",
+          "feedback": "括號中的平移量決定水平對稱軸位置。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "如何檢查左右對稱？；操作時先預測，再依『f-Ⅳ-2：從係數讀二次函數圖形』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(f-Ⅳ-2：從係數讀二次函數圖形)：答案 A；選項內容：代入對稱軸兩側等距的兩個 x 比較輸出",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。成對輸入得到相同輸出是可定位的對稱證據。",
+          "feedback": "成對輸入得到相同輸出是可定位的對稱證據。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；二次函數圖形與資料表徵評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以二次式係數與圖形特徵建立函數理解",
+          "公開結構支持以係數、表格與圖形理解二次函數的變化，而非只代入計算。"
+        ],
+        "representations": [
+          "係數、表格、坐標與拋物線的互相轉換"
+        ],
+        "examplesOrEvidence": [
+          "本課的拋物線、拋擲與面積資料均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "只看一個點便判斷開口或寬窄，忽略其他證據"
+        ],
+        "assessmentEmphasis": [
+          "完整核對係數、頂點、對稱軸與數值回查結果"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；二次函數圖形與資料表徵評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以操作和圖形表徵比較平移、對稱與變化",
+          "公開結構支持以係數、表格與圖形理解二次函數的變化，而非只代入計算。"
+        ],
+        "representations": [
+          "成對點、滑動圖形與坐標刻度的同步呈現"
+        ],
+        "examplesOrEvidence": [
+          "本課的拋物線、拋擲與面積資料均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "把頂點當成所有問題的答案或忽略圖形刻度"
+        ],
+        "assessmentEmphasis": [
+          "操作後完整解釋圖形特徵與式子如何互相對應"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；二次函數圖形與資料表徵評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "在情境資料中判斷頂點、零點與截距的用途",
+          "公開結構支持以係數、表格與圖形理解二次函數的變化，而非只代入計算。"
+        ],
+        "representations": [
+          "拋擲、時間、高度與視窗限制的情境表徵"
+        ],
+        "examplesOrEvidence": [
+          "本課的拋物線、拋擲與面積資料均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "把最高點誤當 x 軸交點或外推不合理範圍"
+        ],
+        "assessmentEmphasis": [
+          "評估目標辨識、方法選擇與證據界線是否完整"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持由式子、表格與圖形理解二次函數。",
+      "係數、對稱軸、頂點與交點是可互相檢查的圖形資訊。",
+      "情境與坐標尺度會限制圖形解讀的範圍。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯係數與代數基礎；康軒較突顯操作、平移與圖形表徵；翰林較突顯情境中的目標辨識與視窗限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以原創拋擲資料引出頂點、對稱與高度解讀。",
+      "用三種不同任務診斷頂點、零點與截距的混淆。",
+      "加入圖形視窗與刻度改變時的證據補強活動。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計二次函數圖形、對稱與目標辨識。正文、例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

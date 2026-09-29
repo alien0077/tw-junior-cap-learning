@@ -2,23 +2,23 @@
   "id": "question-science-content-gc-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月28日自然科教室的觀察中，連續觀察「Gc：生物多樣性」6 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "校園想比較兩個池塘的生物多樣性，哪種方法最能支持公平比較？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Gc：生物多樣性」時只依樣本的顏色（未記錄8天的時間與條件）"
+      "text": "一個池塘調查整天，另一個只看五分鐘"
     },
     {
       "id": "B",
-      "text": "研究「Gc：生物多樣性」時只依樣本的名稱推測，不進行觀察"
+      "text": "只挑物種最多的區域代表整個池塘"
     },
     {
       "id": "C",
-      "text": "研究「Gc：生物多樣性」時只觀察一次外形，便排除所有其他證據"
+      "text": "使用相同面積與相同時間的樣區，多次記錄物種數量與相對豐度"
     },
     {
       "id": "D",
-      "text": "連續8天研究「Gc：生物多樣性」並連續觀察到細胞數量增加"
+      "text": "只記錄最醒目的大型動物"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Gc：生物多樣性」。"
+    "value": "C",
+    "explanation": "相同取樣面積、時間與重複次數可降低取樣偏差，並應同時記錄物種數量與相對豐度。 正確答案為選項 C：「使用相同面積與相同時間的樣區，多次記錄物種數量與相對豐度」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的生物多樣性、棲地、外來種、調查及保育能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Gc 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-gc"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-gc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生物多樣性、棲地、生態系與保育資料判讀",
+      "pattern": "取由遺傳、物種、生態系多樣性與調查資料判斷保育問題的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由遺傳、物種、生態系多樣性與調查資料判斷保育問題的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先固定取樣尺度與時間，再決定要記錄的多樣性指標。",
+  "solutionSteps": [
+    "圈出遺傳、物種、生態系、族群、棲地、調查或保育決策等關鍵詞。",
+    "先判斷題目屬於哪個多樣性層次，再建立資料與結論的對應。",
+    "套用原理：相同取樣面積、時間與重複次數可降低取樣偏差，並應同時記錄物種數量與相對豐度。",
+    "排除只看單一指標、沒有對照或把可能性說成必然的選項，答案為「使用相同面積與相同時間的樣區，多次記錄物種數量與相對豐度」。",
+    "回查結論是否同時考慮樣本尺度、證據品質與長期功能。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

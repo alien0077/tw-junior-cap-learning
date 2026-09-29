@@ -1,0 +1,92 @@
+{
+  "reportId": "science-ca-iv-1-substantive-fusion-d361",
+  "date": "2026-09-28",
+  "unit": "Ca-Ⅳ-1：實驗分離混合物",
+  "result": "unit-specific original lesson and stepwise interaction implemented; lesson remains draft",
+  "scope": [
+    "Rechecked live question-source and publisher evidence ledgers before authoring.",
+    "Read official curriculum/KG and directly available Hanlin publisher workbook and teacher resource; separately inspected Nani/Kang Hsuan official indexes and a Nani-labeled secondary teacher resource.",
+    "Rewrote publisher findings to separate direct publisher content, resource index, secondary teaching clue, and school-plan chapter evidence.",
+    "Reauthored six visible lesson stages and a four-step mixture-specific interaction; kept simulation and interactive feedback focused on magnetic separation, salt dissolution, filtration/washing, recovery target, and material accounting.",
+    "Added unit-specific retry hints and a real-browser regression for student-visible content, wrong-answer recovery, keyboard steps, and responsive layouts; updated manifest and package test registration.",
+    "Fixed two underfilled source-finding lists in the immediately preceding Da-IV-1 source edit so the repository-wide data schema validator is genuinely green."
+  ],
+  "sourceEvidence": {
+    "nani": {
+      "directPublisherContent": false,
+      "record": "Official resource index confirms a 2上 experiment 2-1 interactive resource title only. A separate NTNU-library-hosted, Nani-labeled teacher slide is secondary material, not publisher-authored evidence.",
+      "status": "pending"
+    },
+    "kanghsuan": {
+      "directPublisherContent": false,
+      "record": "Official lab and web-game indexes confirm the unit and media titles; instructional content was not available in the retrieved pages.",
+      "status": "pending"
+    },
+    "hanlin": {
+      "directPublisherContent": true,
+      "record": "Publisher-hosted 8上 workbook print pp.19-21/PDF pp.23-25 and 112 teacher study-aid print p.16/PDF p.18 read for particle-size sorting, salt/sand dissolution-filtration-crystallization, filtrate/residue reasoning, and separation-method distinctions.",
+      "status": "verified"
+    },
+    "fusionBoundary": "This is a one-publisher evidence-based original synthesis, allowed by the user when broader source text is unavailable. It is not reported as completed three-publisher fusion."
+  },
+  "ledgerRecheck": {
+    "questionPatterns": "10566/10566 recorded; pending 0",
+    "publicExamCatalog": "492 catalog entries; 281/281 question-source URLs covered; 23141 question refs",
+    "publisherEvidence": "288/3081 verified; 2793 pending; 932 units blocked"
+  },
+  "versionFusionStructureAudit": {
+    "lessonCount": 1056,
+    "versionFusedStandardDraft": 944,
+    "fullLessonStandardDraft": 107,
+    "strictStructuralAuditFailures": 0,
+    "interpretation": "The standard tag and structural audit are not proof of per-unit publisher reading, substantive fusion, content review, or release completion. All 1056 lessons remain draft."
+  },
+  "changedArtifacts": [
+    "lessons/science/lesson-science-content-ca-iv-1.json",
+    "site/app.js",
+    "scripts/test_science_ca_iv_1_browser.py",
+    "implementation/unit-specs/science/cur-science-content-ca-iv-1.yaml",
+    "implementation/unit-specs.manifest.json",
+    "implementation/runtime/science-ca-iv-1-substantive-fusion.test.mjs",
+    "package.json",
+    "lessons/science/lesson-science-content-da-iv-1.json"
+  ],
+  "verification": {
+    "caIv1Regression": "passed",
+    "npmTest": "passed",
+    "lessonSchemaCaIv1": "passed",
+    "validateData": "passed: 14482 JSON, 13113 IDs, 1032 KG nodes",
+    "implementationSpecs": "passed structurally: 1027 specs, 0 errors; QA remains pending for all 1027",
+    "browserCaIv1": "passed in Chromium: 7 learner-visible sections; four keyboard-operated stages; tailored wrong-answer hint and correct-answer feedback; 320/375/768px; zero page errors",
+    "strictLessonIndependence": "passed: 614 learning-content lessons, 0 risks, 0 affected references, 0 strict failures",
+    "siteIndex": "rebuilt and validated: 1052 lessons, 10526 question paths, 40 mapping sets; revision local",
+    "publisherLedger": "passed audit: 288 verified, 2793 pending",
+    "questionLedger": "passed audit: 10566/10566 recorded, pending 0",
+    "questionCatalog": "passed: 281/281 URLs covered",
+    "archetypeRegistry": "repository-wide failed: 21 existing unassigned components; Ca-IV-1 is not among the errors",
+    "gitDiffCheck": "passed for this turn's explicit files"
+  },
+  "gates": {
+    "lessonReviewStatus": "draft",
+    "publisherEvidence": {
+      "nani": "pending",
+      "kanghsuan": "pending",
+      "hanlin": "verified"
+    },
+    "specQaStatus": "untested",
+    "fullCourseIndependenceAndContentReview": "not rerun; not claimed",
+    "humanReview": "not available",
+    "terraReview": "cancelled per user instruction",
+    "browserQa": "target Ca-IV-1 real Chromium regression passed; full browser smoke passed 1027/1027 traversal and included existing A-7-2 regression; no A-7-2 files were edited",
+    "commitPush": "not performed"
+  },
+  "nonDelegation": "No subtasks or agents were used.",
+  "sources": [
+    "https://tpack.nani.com.tw/nani_content?a=79&b=2",
+    "https://teacherlibrarian.lib.ntnu.edu.tw/vj-attachment/104junior_summer/%E7%86%92%E9%9C%9E%E5%B8%AB.pdf",
+    "https://digitalmaster.knsh.com.tw/ju/nature/lab/",
+    "https://digitalmaster.knsh.com.tw/ju/nature/webgame/B3.html",
+    "https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E6%A8%A3%E6%9B%B8/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E7%90%86%E5%8C%96%E5%85%AB%E4%B8%8A%E7%BF%92%E4%BD%9C.pdf",
+    "https://resource.hle.com.tw/Books/BooksResource/112%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B62%E4%B8%8A%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99%E7%94%A8%E5%90%88%E6%AA%94%28112f339268%29.pdf"
+  ]
+}

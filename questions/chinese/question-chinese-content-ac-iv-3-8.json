@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ac-iv-3-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "判讀「他雖然年紀小，卻很有責任感」時，哪個詞最能提示轉折？",
+  "prompt": "『雖然樣本數不多，但是結果仍可作為後續研究的線索。』這句話如何安排邏輯？",
   "options": [
     {
       "id": "A",
-      "text": "卻"
+      "text": "先承認限制，再保留有限度的用途。"
     },
     {
       "id": "B",
-      "text": "只看標題，不讀內容"
+      "text": "先下絕對結論，再否定所有資料。"
     },
     {
       "id": "C",
-      "text": "只憑個人印象判斷"
+      "text": "把樣本數和結果寫成同義詞。"
     },
     {
       "id": "D",
-      "text": "忽略題目條件"
+      "text": "用但是表示兩件事完全相同。"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "「卻」表示後句與依一般預期的結果不同，具有轉折作用。"
+    "explanation": "雖然引出樣本不足的限制，但是轉入仍可作為線索的保留判斷，形成讓步關係。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "轉折語意判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究證據、前提、結論、條件、因果與建議的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫可檢查文句推論題；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ac-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ac-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解與文句推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀與推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找連接詞兩側的命題，再說明讓步、因果、並列或轉折的邏輯方向。",
+  "solutionSteps": [
+    "雖然後面是樣本數不多，先呈現不利條件。",
+    "但是後面保留結果作為線索的用途，並非宣稱證明。",
+    "A 能說明讓步結構與有限度結論。",
+    "B、C、D 都誤解了連接詞的功能或證據強度。",
+    "改寫成『即使樣本少，仍可作為後續研究起點』，核對邏輯。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-aa-iv-2-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年10月2日校園實驗室的觀察中，將 37 g 食鹽溶於 854 g 水，研究「Aa-Ⅳ-2：相對原子與分子質量」時，溶液質量為何？",
+  "prompt": "氯原子的相對原子質量約為 35.5，氧原子約為 16；單一氯原子的質量約是單一氧原子的幾倍？",
   "options": [
     {
       "id": "A",
-      "text": "817 g"
+      "text": "0.45 倍"
     },
     {
       "id": "B",
-      "text": "31598 g"
+      "text": "1.19 倍"
     },
     {
       "id": "C",
-      "text": "891 g"
+      "text": "2.22 倍"
     },
     {
       "id": "D",
-      "text": "854 g"
+      "text": "19.5 倍"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：37＋854＝891 g。 本題對應 KG「Aa-Ⅳ-2：相對原子與分子質量」。"
+    "explanation": "C。相對質量比可用 35.5÷16≈2.22 估算；這是微觀相對值，不能直接當成兩個樣品的重量比而忽略粒子數。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；相對原子與分子質量計算及化學式判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題中的相對質量基準、化學式下標、分子質量、同位素與加權計算能力；本題改寫為相對質量原創情境。",
+    "authoringNote": "依官方課綱、KG 與三筆公開自然科試題的相對質量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-aa-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-aa-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取相對原子質量、化學式與相對分子質量的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "相對原子質量、化學式與相對分子質量",
+      "observedPattern": "公開自然科評量常要求理解相對質量基準、化學式下標、相對分子質量、同位素平均、加權計算與估算檢查；本題以全新化學數值情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取元素組成、同位素平均與數值計算的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "元素組成、同位素平均與數值計算",
+      "observedPattern": "公開自然科評量常要求理解相對質量基準、化學式下標、相對分子質量、同位素平均、加權計算與估算檢查；本題以全新化學數值情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取化學式下標、括號、質量貢獻與估算的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "化學式下標、括號、質量貢獻與估算",
+      "observedPattern": "公開自然科評量常要求理解相對質量基準、化學式下標、相對分子質量、同位素平均、加權計算與估算檢查；本題以全新化學數值情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用相對質量做比值，並說明粒子數與樣品重量的界線。",
+  "solutionSteps": [
+    "圈出共同基準、元素符號、下標、括號倍數與題目要求的相對量。",
+    "把化學式轉成各元素原子數，建立原子數×Ar的組成表。",
+    "逐項計算質量貢獻並加總，必要時用比值、加權平均或估算檢查。",
+    "區分相對無單位數值、實際克數、原子序、質量數與化學式組成。",
+    "回查下標、乘法、加總與結論界線，說明相同 Mr 不能推出相同性質。"
+  ]
 }

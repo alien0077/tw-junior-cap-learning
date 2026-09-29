@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-1-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「3-Ⅳ-1／辨識書寫體字母」practice, what does “distant” mean in question 7?",
+  "prompt": "A connected-letter strip should follow the alphabet. It shows J, K, a blank, M. Which letter belongs in the blank?",
   "options": [
     {
       "id": "A",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “distant” means far away."
+      "text": "L"
     },
     {
       "id": "B",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “distant” means a place where people wait for the science room."
+      "text": "N"
     },
     {
       "id": "C",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “distant” means a tool used to measure 13 minutes."
+      "text": "I"
     },
     {
       "id": "D",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “distant” means a person who teaches at the science room."
+      "text": "P"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "“distant” means far away. This item targets 3-Ⅳ-1／辨識書寫體字母, question 7."
+    "explanation": "英文字母序列中 K 之後、M 之前是 L。依前後字母定位可避免只看連寫字形而把缺格填成跳號的 N；左右兩側都支持同一答案，因此 L 是唯一能讓序列連續的字母。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/%E4%B8%80%E5%B9%B4%E7%B4%9A%20%20%E5%9C%8B%E6%96%87%E3%80%81%E8%8B%B1%E8%AA%9E%E3%80%81%E6%95%B8%E5%AD%B8%E3%80%81%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "高雄市立大社國中公開試題，Part I, item 1: fill alphabet sequence from the given K；只參照題型，不重製原題字詞／圖表。",
+    "authoringNote": "依官方英語課綱與 Knowledge Graph，參照公立學校公開試題之字母辨識、大小寫轉換與排序能力獨立改寫；未複製原題題幹、選項、圖表或答案。題目維持draft，尚待版本研究與完整內容發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-1"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.dam.kh.edu.tw/upload/68/101_28414/%E4%B8%80%E5%B9%B4%E7%B4%9A%20%20%E5%9C%8B%E6%96%87%E3%80%81%E8%8B%B1%E8%AA%9E%E3%80%81%E6%95%B8%E5%AD%B8%E3%80%81%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立大社國中七年級第一次評量英語科試卷",
+      "year": "undated",
+      "subject": "english",
+      "locator": "Part I, item 1: fill alphabet sequence from the given K",
+      "observedPattern": "只參照第1題／對應子題的字母辨識、大小寫轉換或字典序任務形式；只參考第一部分第1、2題字母順序填空及第二部分第2題大小寫改寫的任務形式；未複製題目字詞或表格。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "讀取連寫字母序列時，以已辨識的前後字母交叉定位缺格；不要只靠背誦其中一個字母猜答案。",
+  "solutionSteps": [
+    "先找到空格左右已確認的 J、K 與 M，這是判斷缺字的順序證據，也能確認空格的位置只有一格。",
+    "從 K 往後數一格得到 L；再從 M 往前退一格也得到 L，兩個方向各自提供一次核對。",
+    "兩個方向交叉檢查一致，表示空格只缺一個字母而不是漏掉兩格，序列前後沒有跳號。",
+    "A 的 L 同時接在 K 後並位於 M 前；B、C、D 都破壞字母連續性，不能滿足兩側線索。",
+    "因此填 L；遇到連寫筆畫不清時，前後序列能提供獨立確認，也可再對照字母表驗證。"
+  ]
 }

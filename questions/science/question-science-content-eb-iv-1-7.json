@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-1-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月4日學校研究社的觀察中，針對「Eb-Ⅳ-1：力引發物體移動或轉動」提出可檢驗的科學問題，若比較 5 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "書本放在水平桌面上靜止，不能因此說書本『沒有受到力』，因為？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Eb-Ⅳ-1：力引發物體移動或轉動」時只改變施力大小，其餘條件一致，設置5組、每組取樣15份並各重複測量5次"
+      "text": "重力與桌面支持力大小相等、方向相反，合力為零"
     },
     {
       "id": "B",
-      "text": "研究「Eb-Ⅳ-1：力引發物體移動或轉動」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "靜止物體不可能受重力"
     },
     {
       "id": "C",
-      "text": "研究「Eb-Ⅳ-1：力引發物體移動或轉動」時只測量5組中的一組就直接下結論"
+      "text": "桌面把重力消除了"
     },
     {
       "id": "D",
-      "text": "研究「Eb-Ⅳ-1：力引發物體移動或轉動」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "書本沒有質量"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Eb-Ⅳ-1：力引發物體移動或轉動」。"
+    "explanation": "書本仍受向下重力與向上支持力；兩力平衡使合力為零，不代表力不存在。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作合力、力矩、力臂與槓桿平衡的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-1"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學國中自然科補行評量題庫",
+      "year": "2026",
+      "locator": "合力、力矩、槓桿平衡與運動狀態題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常以推車、開門、槓桿、力臂與合力矩要求比較平移和轉動效果；本題只改寫能力與推理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "槓桿力臂、合力矩與合力題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常以推車、開門、槓桿、力臂與合力矩要求比較平移和轉動效果；本題只改寫能力與推理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%835-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "槓桿、簡單機械與力矩題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常以推車、開門、槓桿、力臂與合力矩要求比較平移和轉動效果；本題只改寫能力與推理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "列出物體受力圖，再判斷合力是否為零。",
+  "solutionSteps": [
+    "找出書本的重力。",
+    "找出桌面提供的支持力。",
+    "比較兩力大小與方向。",
+    "確認合力為零造成靜止。",
+    "因此選 A。"
+  ]
 }

@@ -1,0 +1,20 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-science-content-fc-iv-1",
+  "change": [
+    "Preserved the existing ecosystem-scale manuscript, local lesson-data fallback, five-scale/two-site model and four-step question interaction; mapped this unit's evidence-bound prediction, site/scale manipulation, evidence observation, scale-versus-role explanation and new-site transfer into the QA contract.",
+    "Made the existing external-data failure behavior an explicit fallback test case so the automated contract records the actual offline behavior."
+  ],
+  "tests": {
+    "runtimeInteractionContract": "PASS: npm run test:science:fc-iv-1; five scales, two sites, accessible controls and four-step guided choice match the spec",
+    "specValidation": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "1,022/1,027 passed; 5 failures remain",
+    "lesson": "unchanged",
+    "questions": "unchanged",
+    "jsonAndDiffCheck": "pending"
+  },
+  "notClaimed": [
+    "Full specification and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

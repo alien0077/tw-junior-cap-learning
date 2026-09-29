@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bd-iv-2-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "作者以兩個城市的公共自行車資料比較便利性，但甲市統計一整年、乙市只統計一週。讀者最合理的判斷是什麼？",
+  "prompt": "只知道甲、乙兩方案的總使用人次，沒有活動天數或每日人數。若要比較平均使用情形，最應補充？",
   "options": [
     {
       "id": "A",
-      "text": "只要數字較大就一定較便利"
+      "text": "各方案的觀察期間與每日或每次的分母"
     },
     {
       "id": "B",
-      "text": "兩組資料可以直接視為同一範圍"
+      "text": "方案海報的字體"
     },
     {
       "id": "C",
-      "text": "統計期間與結論完全無關"
+      "text": "作者的個人偏好"
     },
     {
       "id": "D",
-      "text": "資料期間不同，結論需要保留限制"
+      "text": "把兩個總數直接相減即可"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bd-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "統計期間不同會影響代表性，應先指出限制，不能直接把兩者當成同等條件。"
+    "value": "A",
+    "explanation": "平均使用需要期間或次數作分母，只有總人次無法判斷每日或每次的使用強度。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
-    "sourceLocator": "114年國中教育會考國文科；研究閱讀理解、論證、比較與寫作分析能力方向（資料範圍與結論限制）；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；另以官方語文領域課綱核對 Bd-Ⅳ-2（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究比較基準、比喻映射、同尺度資料與類比限制。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫比較比喻論證題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bd-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bd-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較、比喻與論證判讀",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較基準、比喻映射與證據",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認比較問題需要的分母，再檢查兩組資料是否有相同基準。",
+  "solutionSteps": [
+    "找出目前只有總使用人次。",
+    "指出缺少天數、場次或其他分母。",
+    "確認直接相減只能得到總量差，不能得到平均。",
+    "A 能補足平均比較條件。",
+    "提出用每日平均人次重新整理資料。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

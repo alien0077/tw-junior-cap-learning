@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-5-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-5／理解簡易生活用語」task, what is the best way to prepare question 1?",
+  "prompt": "A new classmate says, ‘Good morning. I’m Mia.’ Which reply both greets Mia and responds to her introduction?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "Good morning, Mia. I’m Alex."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "Good night, Mia. See you yesterday."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-5／理解簡易生活用語."
+      "text": "I’m fine, thank you."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "The morning bus is late."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-5／理解簡易生活用語, question 1."
+    "explanation": "正確答案 A。對方先問候並自我介紹，A 同時回應早安並介紹自己；C 是回答 How are you?，沒有回應名字。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87_3.pdf",
+    "sourceLocator": "本題參照公立國中英文段考中依對話目的選擇生活回應的命題模式；逐題原卷定位見 examPatternRefs。公開查閱不代表授權重製；本題情境、文字、選項、答案與解析均重新撰寫。",
+    "authoringNote": "依本單元生活互動能力原創改寫；公開試題僅作 pattern-only 題型參考，未複製原題、選項或答案；仍待單元內容與答案 QA，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-5"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87_3.pdf",
+      "title": "高雄市立國昌國中114學年度第1學期七年級第1次段考英文",
+      "year": "114-1",
+      "subject": "english",
+      "locator": "第2頁第19題：初次見面對話中，依前句完成自然的自我介紹回應",
+      "locatorLevel": "item",
+      "observedPattern": "對話回應需承接問候與初次見面的社交功能。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期七年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第1頁第6題：聽取生活陳述後選擇最合宜的基本問答回應",
+      "locatorLevel": "item",
+      "observedPattern": "由語境功能而非孤立字詞選擇回應；本題另加入姓名介紹。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "把對方話語拆成兩個功能：問候與自我介紹；回覆也要接住兩件事。",
+  "solutionSteps": [
+    "先標出 Mia 說了兩件事：Good morning 是問候，I’m Mia 是自我介紹。",
+    "回應第一部分時，使用相同時段的問候語。",
+    "再檢查是否自然提供自己的名字，讓初次見面的交換完整。",
+    "A 兩個功能都符合；C 雖像日常回答，卻是在回答健康狀況。",
+    "連讀對話確認稱呼、時段與交談目的都一致。"
+  ]
 }

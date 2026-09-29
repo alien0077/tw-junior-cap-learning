@@ -1,0 +1,75 @@
+{
+  "id": "question-science-root-b-06",
+  "subject": "science",
+  "type": "single-choice",
+  "prompt": "月球某晚看起來接近半月，若要預測一週後月相，最需要使用哪種表示？",
+  "options": [
+    {
+      "id": "A",
+      "text": "月球繞地球運動與日照幾何的週期模型"
+    },
+    {
+      "id": "B",
+      "text": "只看月球表面顏色"
+    },
+    {
+      "id": "C",
+      "text": "把月相當成月球形狀每天改變"
+    },
+    {
+      "id": "D",
+      "text": "只用當晚亮度不考慮觀察日期"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-science-content-b",
+    "kg-science-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "A",
+    "explanation": "月相是日、地、月相對位置與照明幾何造成的週期現象，預測必須納入運動與觀察時間。 正確答案為選項 A。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "生命、地球環境、尺度與資料判讀",
+      "observedPattern": "只取公立校方公開試題的情境判讀能力，改寫成跨尺度問題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "尺度、週期、環境與模型限制",
+      "observedPattern": "只取能力模式並重新設計生命—地球—宇宙情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作生命系統、地球環境、宇宙觀測、尺度與模型限制的能力方向；本題為根層 B 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-root-b",
+  "solutionStrategy": "先定義觀察者、光源與天體位置，再沿週期模型推進日期。",
+  "solutionSteps": [
+    "先標記觀察對象的空間尺度、時間範圍、單位與直接可見資料。",
+    "把現象、模型假設、可量測證據和推論結論分欄，避免跨層跳躍。",
+    "檢查控制條件、週期位置、抽樣方式與可能的替代解釋。",
+    "排除把局部當全球、短期當長期、亮度當質量或把模型當事實的選項，答案為 A。",
+    "把答案放回原情境並標註適用邊界：月相是日、地、月相對位置與照明幾何造成的週期現象，預測必須納入運動與觀察時間。"
+  ]
+}

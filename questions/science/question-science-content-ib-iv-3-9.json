@@ -2,41 +2,67 @@
   "id": "question-science-content-ib-iv-3-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年10月8日社區環境站的觀察中，比較兩地「Ib-Ⅳ-3：地球自轉與高低氣壓旋轉」資料時，甲地迎風坡年雨量約 66060 mm、乙地背風坡約 45330 mm，最合理的做法是？",
+  "prompt": "看到北半球低壓呈逆時針旋入時，哪項說法最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "在「Ib-Ⅳ-3：地球自轉與高低氣壓旋轉」中只看 66060 mm 的單一數值便下結論"
+      "text": "只要旋轉方向正確就能保證一定下大雨"
     },
     {
       "id": "B",
-      "text": "在「Ib-Ⅳ-3：地球自轉與高低氣壓旋轉」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "低壓旋轉方向可直接決定所有地區的溫度"
     },
     {
       "id": "C",
-      "text": "同時比較地形、風向、觀測期間與 66060、45330 mm 資料"
+      "text": "可支持低壓風場的判讀，但降雨與災害程度仍需配合水氣、鋒面與地形資料"
     },
     {
       "id": "D",
-      "text": "在「Ib-Ⅳ-3：地球自轉與高低氣壓旋轉」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "不必看氣壓值與時間變化"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ib-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Ib-Ⅳ-3：地球自轉與高低氣壓旋轉」。"
+    "explanation": "風場方向可協助辨認低壓系統，卻不能單獨預測降雨強度；結論要與證據範圍相稱。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的地球自轉、偏向、氣壓旋轉及天氣圖判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ib-Ⅳ-3 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ib-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ib-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "地球自轉、科氏力、氣壓系統與天氣圖",
+      "pattern": "取由地球自轉、氣壓梯度、風向旋轉與等壓線資料判讀天氣系統的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由地球自轉、氣壓梯度、風向旋轉與等壓線資料判讀天氣系統的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認半球與壓力系統，再用壓力梯度、地轉偏向及摩擦判斷風場，最後回到天氣圖的多點與時間序列證據。",
+  "solutionSteps": [
+    "讀題定位：圈出「天氣推論」以及半球、低壓／高壓、等壓線或時間序列。",
+    "建立判準：風場方向可協助辨認低壓系統，卻不能單獨預測降雨強度；結論要與證據範圍相稱。",
+    "核對答案：選項 C「可支持低壓風場的判讀，但降雨與災害程度仍需配合水氣、鋒面與地形資料」符合地轉偏向與氣壓系統判讀。",
+    "排除誘答：分清壓力梯度、偏向作用、摩擦與觀測證據，不能把單一箭頭當成完整風場。",
+    "最後回查：確認方向是相對運動或中心的位置描述，且推論沒有超出資料。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

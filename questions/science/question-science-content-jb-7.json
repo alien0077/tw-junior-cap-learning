@@ -2,41 +2,78 @@
   "id": "question-science-content-jb-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月17日自然科教室的觀察中，將 50 g 食鹽溶於 290 g 水，研究「Jb：水溶液中的變化」時，溶液質量為何？",
+  "prompt": "把一杯食鹽水分成上下兩層取樣，若攪拌充分且無沉澱，兩層的食鹽濃度應如何？",
   "options": [
     {
       "id": "A",
-      "text": "240 g"
+      "text": "理想狀況下大致相同"
     },
     {
       "id": "B",
-      "text": "340 g"
+      "text": "上層一定為零、下層一定最高"
     },
     {
       "id": "C",
-      "text": "14500 g"
+      "text": "只由杯子形狀決定"
     },
     {
       "id": "D",
-      "text": "290 g"
+      "text": "每次取樣必定完全不同"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jb"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：50＋290＝340 g。 本題對應 KG「Jb：水溶液中的變化」。"
+    "value": "A",
+    "explanation": "均勻水溶液中溶質粒子分散於各處，充分混合且無沉澱時，上下層濃度大致相同。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的水溶液、溶質溶劑、溶解、溶解度、飽和及分離能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Jb 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "水溶液、溶質溶劑、溶解、均勻混合與資料判讀",
+      "pattern": "取由粒子模型、溶解現象、質量資料與分離方法判斷水溶液的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由粒子模型、溶解現象、質量資料與分離方法判斷水溶液的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "溶液、濃度、溶解度、實驗現象與生活情境",
+      "pattern": "取從圖表、實驗與生活溶液資料判讀溶質分散、飽和、濃度及操作限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從圖表、實驗與生活溶液資料判讀溶質分散、飽和、濃度及操作限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用均勻混合模型判讀取樣位置。",
+  "solutionSteps": [
+    "確認溶液充分攪拌且沒有固體沉澱。",
+    "辨認食鹽粒子分散在整杯溶劑中。",
+    "比較不同位置取樣的預期濃度。",
+    "B、C、D 與均勻溶液模型不符。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

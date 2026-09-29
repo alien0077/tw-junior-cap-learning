@@ -2,23 +2,23 @@
   "id": "question-chinese-classical-function-words-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "翻譯虛字要保留？",
+  "prompt": "「問今是何世，乃不知有漢」中的「乃」最適合譯為哪一項？",
   "options": [
     {
       "id": "A",
-      "text": "句間邏輯"
+      "text": "於是，表示單純先後"
     },
     {
       "id": "B",
-      "text": "原字數"
+      "text": "竟然、卻，表示出乎預期的結果"
     },
     {
       "id": "C",
-      "text": "紙張大小"
+      "text": "你的，表示領屬"
     },
     {
       "id": "D",
-      "text": "標點形狀"
+      "text": "在某處，表示地點"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的語境、結構與功能線索判斷；其他選項不符合題幹條件。"
+    "value": "B",
+    "explanation": "問話者不知道漢代，結果出乎讀者預期，「乃」在此帶有竟然、卻的語氣。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-classical-function-words-5.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究文言虛字、句法、古今義與語境判讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫文言虛字題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-classical-function-words"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-classical-function-words",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言字詞、虛字與語境判讀",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言句法、古今義與閱讀理解",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先看前後事件是否形成預期落差，再區分單純承接與帶有意外語氣的副詞。",
+  "solutionSteps": [
+    "讀前句提出的問題與後句知道或不知道的結果。",
+    "確認不知道漢代與一般預期有落差。",
+    "用『竟然不知道有漢』替換測試語氣。",
+    "選擇表意外結果的 A。",
+    "排除單純先後，因為句子重點不是接著發生什麼，而是結果令人意外。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

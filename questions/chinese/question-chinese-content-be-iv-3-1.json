@@ -2,23 +2,23 @@
   "id": "question-chinese-content-be-iv-3-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "製作簡報時，每頁只保留少量關鍵詞，主要目的為何？",
+  "prompt": "向同學介紹溪流改道資料的簡報，哪種投影片安排最有助於理解？",
   "options": [
     {
       "id": "A",
-      "text": "讓聽眾掌握重點並聽取說明"
+      "text": "先說問題與地圖，再按時間呈現改道資料，最後整理影響與問題"
     },
     {
       "id": "B",
-      "text": "省略所有內容"
+      "text": "每頁放一大段文字，不標來源"
     },
     {
       "id": "C",
-      "text": "增加閱讀負擔"
+      "text": "先放結論，刪除所有數據"
     },
     {
       "id": "D",
-      "text": "取代口頭報告"
+      "text": "只放河流照片"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "簡短關鍵詞搭配口頭說明，能減少投影片文字負擔。"
+    "explanation": "A 依問題、證據時間線與影響組織，能讓同學建立空間和因果理解。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "簡報、讀書報告、演講稿與劇本等學習應用；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究簡報、讀書報告、演講稿、劇本的目的、受眾、資料與舞台功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫學習應用文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-be-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-be-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "簡報、讀書報告與學習表達",
+      "observedPattern": "公立學校國文評量要求依簡報、讀書報告、演講稿和劇本的目的、受眾、資料來源、表達順序及舞台功能判讀；本題使用全新學習情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "演講稿、劇本與受眾需求",
+      "observedPattern": "公立學校國文評量要求依簡報、讀書報告、演講稿和劇本的目的、受眾、資料來源、表達順序及舞台功能判讀；本題使用全新學習情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "按照受眾需要的背景、證據、解釋與結論安排投影片。",
+  "solutionSteps": [
+    "先找溪流改道的問題背景。",
+    "安排地圖與時間資料。",
+    "最後連到影響與待解問題。",
+    "A 最符合簡報的快速理解功能。",
+    "刪除地圖後說明受眾會缺少哪種定位資訊。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,41 +2,67 @@
   "id": "question-science-content-db-iv-3-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月14日社區環境站的觀察中，針對「Db-Ⅳ-3：呼吸系統與外界氣體交換」提出可檢驗的科學問題，若比較 5 組、每組取樣 13 份資料，哪一項設計最適當？",
+  "prompt": "下列哪項證據最能支持『呼出的氣體含有較多二氧化碳』？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "把呼出氣體通入澄清石灰水，石灰水變混濁"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只測量5組中的一組就直接下結論"
+      "text": "把呼出氣體吹向乾燥藍色氯化亞鈷試紙，試紙保持藍色"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時先決定結論，再挑選支持結論的13筆資料"
+      "text": "看到呼氣時胸腔變小，就能直接測出二氧化碳含量"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只改變施力大小，其餘條件一致，設置5組、每組取樣13份並各重複測量5次"
+      "text": "吸入空氣無色，所以呼出氣體一定沒有二氧化碳"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-3：呼吸系統與外界氣體交換」。"
+    "value": "A",
+    "explanation": "二氧化碳可使澄清石灰水產生混濁現象，這是較直接的檢測證據；氯化亞鈷試紙主要檢測水分，不能代替二氧化碳檢測。選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的呼吸運動、肺泡與氣體交換能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "呼吸運動、肺泡氣體交換與呼吸資料判讀",
+      "pattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "證據題要先確認檢測工具對應的物質，不因同樣是呼氣就混用試劑。",
+  "solutionSteps": [
+    "先辨認題目要證明的是二氧化碳。",
+    "找出能與二氧化碳產生明顯反應的石灰水。",
+    "把石灰水混濁連到二氧化碳存在。",
+    "排除只能測水分或只靠外觀推測的選項。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

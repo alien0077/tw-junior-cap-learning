@@ -1,0 +1,146 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-science-content-fb-iv-4
+  knowledgeGraphIds:
+  - kg-science-content-fb-iv-4
+  title: Fb-Ⅳ-4：月相變化的規律
+  subject: science
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Fb-Ⅳ-4：月相變化的規律
+    curriculumIntent: Fb-Ⅳ-4：月相變化的規律
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 固定太陽光方向，說明日、月、地相對位置如何改變地球所見月面亮區比例
+  - 用四個基準位置及其間連續盈虧，重建月相規律循環
+  - 區分月球受光半球與地球觀察者可見亮面，並辨認示意模型不能支持的比例推論
+  prerequisites:
+  - 能辨識光源、球體模型與觀察者位置
+  - 能比較球面受光方向與觀察視線
+  coreConcepts:
+  - 太陽照亮月球朝向太陽的一半，月球不自行發可見光
+  - 日、月、地相對位置改變，使地球觀察者看見不同的受光比例
+  - 新月、上弦、滿月、下弦是週期錨點，月相在錨點之間連續變化，循環約29.5天
+  misconceptions:
+  - 誤以為月球只在月相最亮時才受光，或把可見亮面當成整顆月球受光比例
+  - 誤把地球影子當成日常月相盈虧的成因
+  - 把示意圖畫出的天體大小、距離當成真實比例
+  contentFlow:
+  - 'predict：看四張只標位置與亮面的匿名月相卡，先預測各卡所處的月相順序，暫不揭曉名稱。'
+  - 'manipulate：固定手電筒光向與地球觀察點，只按步移動白球代表的月球，並標出朝光半球及觀察視線。'
+  - 'observe：每站分別記錄月球受光半球與地球觀察者實際看見的亮區，對照預測並找出兩者不相同之處。'
+  - 'explain：以太陽—地球—月球相對位置解釋新月、兩個半亮位置及滿月；用幾何視線而非地球影子解釋日常月相。'
+  - 'observe：沿公轉方向排列四個週期錨點，再記錄錨點之間可見亮面連續增加或減少，不把月相想成跳格變化。'
+  - 'explain：區分受光面與可見面，並說明示意圖不可用來量真實天體大小或距離。'
+  - 'transfer：評讀未標比例尺的新位置圖，說明可支持的相對位置與亮面結論，並指出不能推論的真實尺寸。'
+  - 'exit-ticket：對新位置圖寫出光向、日地月相對位置、可見亮面及盈／虧方向，逐項以視線證據支持。'
+  visualizations:
+  - earth-system-model：同步顯示固定光源方向、月球軌道位置、受光半球和觀察者可見亮面
+  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  interactiveBlocks:
+  - id: CUR-SCIENCE-CONTENT-FB-IV-4-I01
+    component: EarthSystemBlock
+    purpose: 讓學生驗證固定光源下，只改變月球軌道位置時，地球所見受光比例如何改變
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        lightDirection: fixed
+        moonPosition: sunward
+        observerPosition: earth
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 先預測新月、側方半亮、滿月與另一側半亮位置的可見比例
+    - 固定光向和觀察點，只用按鈕或鍵盤逐站移動月球
+    - 標出每站受光半球、觀察視線與可見亮面
+    - 以位置—視線—可見比例解釋月相，而非只背名稱
+    visualRules:
+    - 操作後所有相關表徵同步更新，不得只改單一數字
+    - 正解揭露前保留學生預測與操作紀錄
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-SCIENCE-CONTENT-FB-IV-4-I01
+      trigger: 學生把白球未朝向自己的暗面說成未受光，或稱月相由地球影子造成
+      prompt: 光源固定時，白球哪一半持續受光？觀察點看到的亮面是否等於球體受光總量？
+      expectedEvidence: 指出朝向光源的受光半球，並說明改變的是觀察視線相對該半球的位置
+    feedback:
+      correct: 以學生標示的光向、月球位置和視線回指可見亮面，再請他判讀一張未命名位置卡。
+      incorrect: 先請學生分色標出「受光半球」與「觀察者看見部分」；若仍混淆，再顯示單站視線示範，不直接代答整組排序。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「Fb-Ⅳ-4：月相變化的規律」的 EarthSystemBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「Fb-Ⅳ-4：月相變化的規律」的 EarthSystemBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「Fb-Ⅳ-4：月相變化的規律」的 EarthSystemBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「Fb-Ⅳ-4：月相變化的規律」的 EarthSystemBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「Fb-Ⅳ-4：月相變化的規律」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 新位置圖中太陽光從右側照來，月球在地球軌道下方且約半亮；請指出亮面判斷依據及它屬於盈或虧的哪個基準位置。
+    successCriteria:
+    - 指出月球朝向太陽的一半持續受光
+    - 以地球觀察視線解釋可見亮面比例
+    - 依月球位置與前後錨點判斷盈／虧
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「Fb-Ⅳ-4：月相變化的規律」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入本單元時先顯示匿名四位置卡，不得先顯示月相答案；預測須保留供操作後比較。
+  - 固定光向與觀察點，只移動月球後，軌道位置、受光半球示意與可見亮面文字／圖像必須同步更新。
+  - 學生混淆受光半球與可見亮面時，系統先要求標出光源和觀察視線，再給單站提示，不能直接展示答案。
+  - 在320、375、768px寬度以鍵盤操作四個月球位置時，控制項、光向圖例、亮面回饋及狀態文字不得溢位或遺失。
+  - 遷移題提供無比例尺新位置圖，學生需指出可用相對位置解釋月相，但不能由圖面推算真實天體大小或距離。
+  - 外部資料失效時，EarthSystemBlock 仍須以「Fb-Ⅳ-4：月相變化的規律」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本完整出版社章節資料已讀並核對，或 publisher slots 維持 pending 且不得升級融合完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 F、次主題 Fb；官方代碼 Fb-Ⅳ-4
+    role: official-curriculum-source-of-truth

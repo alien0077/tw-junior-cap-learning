@@ -1,0 +1,129 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-learning-performance
+  knowledgeGraphIds:
+  - kg-english-learning-performance
+  title: 學習表現
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 學習表現
+    curriculumIntent: 讀懂國中英語學習表現，將能力動詞與情境轉成可觀察行動及相稱證據；不把單一任務等同完整語言能力。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 已直接讀取三份標示出版社版本的公校計畫並據其可觀察課程設計原創融合；公校計畫不是出版社課本或教法，三家出版社章節證據仍pending，不得冒稱逐章融合。
+    currentEvidenceStatus: original-version-informed-manuscript-authored; public-school-plan-evidence-read; publisher-textbook-chapter-evidence-pending
+  learningGoals:
+  - 從表現描述中的動詞與情境辨認要完成的聽、說、讀、寫或學習策略任務。
+  - 把目標拆成任務、可觀察行動及可核對證據，說明證據足以支持與尚不能支持的結論。
+  - 為不同語言能力選取相稱評量，在全新公告情境遷移並修正錯誤線索。
+  prerequisites:
+  - 能讀懂簡短校園活動訊息與常見時間、地點表達。
+  - 能用簡單英語回答問題，並辨識訊息中的 if 條件句。
+  coreConcepts:
+  - 課綱學習表現描述能力如何在情境任務中展現；學習內容是語言知識／素材範圍，兩者不可混為一談。
+  - 能力目標需具體落為任務、可觀察行動與適切證據，且證據範圍不得超出實際作答。
+  - 聽說讀寫與學習策略需分別取證；答對一個子項不證明整體英語能力已掌握。
+  misconceptions:
+  - 把認得／背出字詞當成理解訊息或能完成溝通任務的證據。
+  - 從一次局部答對推論學生已掌握整份文本或其他語言技能。
+  - 用閱讀題評定聽力表現，或將活動參與度直接當成語言能力證據。
+  - 把 if 條件、介系詞地點或公告限制漏掉，卻自行補入原文沒有的資訊。
+  contentFlow:
+  - predict：從校園導覽卡中學生認得單字卻指錯集合地點的衝突出發，先預測現有回答能證明哪一項英語表現、還不能證明什麼。
+  - manipulate：把第四學習階段的目標動詞、任務情境、學生可觀察行動及作答證據逐欄對位；分別檢查聽、說、讀、寫及策略，不用單一技能代替其他能力。
+  - observe：在原創活動卡標出 outside 與 if 條件，再比對公告聽辨、同伴問答、時刻表閱讀和書面提醒實際留下的作品或回答。
+  - explain：用目標—行動—證據鏈解釋漏讀線索、由局部答對擴大結論、擅自添加文本資訊三種錯誤，並說明各自超出證據的界線。
+  - observe：逐步完成五題 GuidedChoice，核對每題目標、文本線索、選答、錯答提示和解析是否支持同一項能力判斷。
+  - transfer：把判準用到未在正文出現的新公告，指出地點／時間變更及原文線索，再診斷尚待另行檢查的其他語言技能。
+  visualizations:
+  - 三欄對位：目標任務｜學生可觀察行動｜能支持該行動的作品／回答證據。
+  - 四技能對照：聽力、口說互動、閱讀、寫作各列獨立任務與證據，不用顏色單獨區分。
+  interactiveBlocks:
+  - id: CUR-ENGLISH-LEARNING-PERFORMANCE-I01
+    component: GuidedChoiceBlock
+    purpose: 以五個原創情境判讀任務—行動—證據對位，辨識技能混淆、過度推論和無根據補訊息。
+    initialState: {selectedAnswer: null, feedbackVisible: false}
+    studentActions:
+    - 閱讀一項能力目標和相應活動卡／口語情境。
+    - 從三個原創任務或結論中選出最貼合目標和現有證據者。
+    - 答錯後閱讀單題retryHint，重新核對能力動詞、文本線索及證據範圍，再次選答。
+    - 作答後讀取答案解析，並在第五步的新公告情境說明可支持的證據。
+    visualRules:
+    - 初始不揭露正解；選項以原生鍵盤可操作控制呈現，作答後提供文字回饋。
+    - 錯答顯示對應提示供重試，答對顯示解析及每一干擾選項的錯因。
+    - 正誤須有文字及ARIA狀態，不只依靠顏色；320px版面不得裁切題幹或回饋。
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-LEARNING-PERFORMANCE-I01
+      trigger: 把認字當閱讀理解、局部答對擴大為全部能力，或以不相稱技能評量。
+      prompt: 先圈出目標動詞及作答中實際出現的證據；兩者是否直接對應？
+      expectedEvidence: 能指出已證明的單項能力和仍需另外驗證的項目。
+    feedback:
+      correct: 指出證據對應目標任務的方式，提醒不可把局部證據外推至其他技能。
+      incorrect: 提示學生回看目標動詞與情境線索，重試後顯示單題解析及錯誤選項為何不相符。
+  capTransfer:
+    questionType: 從原創校園公告判讀能力目標、關鍵資訊與證據範圍。
+    stemConstraint: 使用未在正文出現的地點和活動，保留公告變更／時間資訊，要求學生指出文本依據。
+    requiredResponse: 說出更新後地點和時間，並引用相符的公告線索；不得用舊活動答案或自行添加資訊。
+    scoring: 目標行動吻合1、關鍵線索正確1、結論不超出證據1。
+  exitTicket:
+    prompt: 一項表現目標需要什麼任務、行動和證據？你能用新公告說明其中一種關係嗎？
+    successCriteria:
+    - 描述目標情境與學生需完成的動作。
+    - 指出直接呈現該動作的作品或回答。
+    - 區分已支持的結論與尚未驗證的其他能力。
+  expressionExtension:
+    applicable: true
+    task: 自訂一項校園英語任務，寫下目標情境、可觀察行動、相稱證據與一個錯誤樣例。
+    constraint: 全部以原創活動設計，不挪用課本題目；證據只支持自己實際檢查的能力。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: GuidedChoice選項可辨識、鍵盤可選取，正誤及解析以文字與即時回饋傳達。
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 學生頁恰顯示六段正文，且 content.sections 與 teaching.body 標題／正文逐段一致。
+  - 五步 GuidedChoice 的目標、題幹、選項答案、錯答提示和解析符合本課各別內容；答案正確鍵序為 B、C、A、B、A。
+  - fallback：封鎖外部網路後仍可載入本課內嵌正文與五步題目，完成鍵盤錯答—提示—重試—答對流程；不得假稱取得外部公告資料。
+  - 在320px、375px、768px畫面檢查無水平溢位，互動控制可聚焦及操作。
+  - 第五步使用新公告檢查地點／時間變更遷移；資料不足時不把一項表現推論成完整語言能力。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 官方課綱、KG及版本標示校方計畫的來源類別和限制均明確記錄；出版社章節證據不得冒稱完成。
+  - 六段原創正文與學生頁一致；五步互動、解析、錯答提示及新情境遷移由自動化覆蓋。
+  - 鍵盤、mobile、screen-reader文字狀態及reduced-motion由自動化驗證。
+  - lesson維持draft供使用者ChatGPT內容審查；技術 QA 不代表教材內容審查或出版社審定。
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 目次：伍、學習重點／一、學習表現
+    role: official-curriculum-source-of-truth
+  - url: https://lkjh.chc.edu.tw/storage/074502/open_files/112%E5%AD%B8%E5%B9%B4%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB/%E5%AD%B8%E7%BF%92%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB/%E4%B8%83%E5%B9%B4%E7%B4%9A/%E8%8B%B1%E8%AA%9E.pdf
+    locator: 鹿港國中112學年七年級康軒版英語計畫 PDF p.0、pp.43–45；直接觀察學校目標、語言表現、教學活動及口說／聽力／書寫評量的對位。校方文件，非出版社教材章節。
+    role: public-school-plan-for-kanghsuan-edition-only
+  - url: https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMxTDNCMFlWOHlNalF4WHpNMU1qUTNPRGxmT0RRME1qWXVjR1Jt&fname=LOGGYSOKWW10A1IH50LKKPHGPK30WT3414JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP3435GCQP3504B0UWYWWXUW50OOA0A0YWPOXX21JCLKSWIGQOB4SWHCUS30A110
+    locator: 丹鳳高中國中部114學年度七年級南一版英語第二冊計畫 PDF pp.42–44；閱讀主旨／支持細節、推論、預複習整理和策略評量。校方文件，非出版社教材章節。
+    role: public-school-plan-for-nani-edition-only
+  - url: https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf
+    locator: 永慶高中114學年度七年級翰林版英語第一至二冊計畫 PDF p.0起；Starter Unit 的字母／問候目標、活動及多元評量。校方文件，非出版社教材章節。
+    role: public-school-plan-for-hanlin-edition-only

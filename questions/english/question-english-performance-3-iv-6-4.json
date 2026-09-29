@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-6-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For the「3-Ⅳ-6／理解基本重要句型」practice, choose the grammatically correct sentence (question 4).",
+  "prompt": "You need to ask where the meeting room is. Which is the correct direct question?",
   "options": [
     {
       "id": "A",
-      "text": "Owen has prepareed the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "Where the meeting room is?"
     },
     {
       "id": "B",
-      "text": "Owen have prepareed the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "Where does the meeting room?"
     },
     {
       "id": "C",
-      "text": "Owen prepareing has the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "Where is the meeting room?"
     },
     {
       "id": "D",
-      "text": "Owen has prepare the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "Where is the room meeting?"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,49 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A singular subject such as a person's name takes has; the past participle follows has. This item targets 3-Ⅳ-6／理解基本重要句型, question 4."
+    "value": "C",
+    "explanation": "正確答案 C。直接 wh 問句的順序是疑問詞＋be 動詞＋主詞；room 是位置所問的對象。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87_3.pdf",
+    "sourceLocator": "依公立國中公開段考逐題研究句型、語境與推理模式；各題精確原卷題號見 examPatternRefs。只作 pattern-only 命題參照，不複製原題、選項或答案。",
+    "authoringNote": "依官方課綱與本單元 KG 獨立撰寫情境、選項、答案、繁中解析及步驟；公校原卷僅作可追溯能力模式參照。單元內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-6"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87_3.pdf",
+      "title": "高雄市立國昌國中114學年度第1學期一年級第1次段考英文",
+      "year": "114-1",
+      "subject": "english",
+      "locator": "第3題：詢問 brushes 的所在位置，並從選項辨認地點答句",
+      "locatorLevel": "item",
+      "observedPattern": "參照 Where＋be 動詞＋主詞的直接問句語序。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E6%96%87%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中111學年度第1學期八年級第3次段考英文",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "第28題組：Is there a library around here? 並接續詢問如何前往",
+      "locatorLevel": "item",
+      "observedPattern": "參照以問句取得地點資訊的對話任務；本題重新設計句型與地點。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "先找疑問詞，再檢查 be 動詞是否移到主詞前；不要把間接問句語序搬進直接問句。",
+  "solutionSteps": [
+    "確定問題要找 location，因此使用疑問詞 Where。",
+    "句子的主詞是 the meeting room，be 動詞是 is。",
+    "直接問句需把 is 放在主詞前，形成 Where is the meeting room...?。",
+    "Where the meeting room is 是間接問句內部語序，不能單獨當直接問句；其他選項也缺少正確骨架。",
+    "在句尾補問號並朗讀，確認問句自然詢問房間位置。"
+  ]
 }

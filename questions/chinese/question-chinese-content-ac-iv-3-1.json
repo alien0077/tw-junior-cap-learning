@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ac-iv-3-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "「因為下雨，所以球賽延期」表達了什麼邏輯關係？",
+  "prompt": "調查發現週一某道菜的剩食量增加。下列哪個結論沒有超過資料支持範圍？",
   "options": [
     {
       "id": "A",
-      "text": "因果關係"
+      "text": "週一這道菜的剩食量在本次記錄中較高。"
     },
     {
       "id": "B",
-      "text": "只看標題，不讀內容"
+      "text": "所有學生都討厭這道菜。"
     },
     {
       "id": "C",
-      "text": "只憑個人印象判斷"
+      "text": "應立即取消這道菜。"
     },
     {
       "id": "D",
-      "text": "忽略題目條件"
+      "text": "廚師一定做錯了。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ac-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "「因為……所以……」表示原因與結果的關係。"
+    "explanation": "資料只顯示特定日期與菜色的剩食量增加，A 保留觀察範圍，沒有推成全體偏好或政策結論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "文句邏輯與意義；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究證據、前提、結論、條件、因果與建議的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫可檢查文句推論題；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ac-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ac-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解與文句推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀與推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先圈出資料的時間、對象與變項，再限制結論只說資料直接支持的內容。",
+  "solutionSteps": [
+    "盤點原資料：週一、某道菜、剩食量、增加。",
+    "A 完整保留日期和菜色範圍，只描述記錄到的變化。",
+    "B、C、D 分別擴大成全體心理、政策與責任判斷。",
+    "把每個選項和原資料逐項比對，標記新增而未測量的主張。",
+    "將 A 寫成報告句，確認讀者不會誤以為已證明原因。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

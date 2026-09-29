@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ca-iv-1-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "分析休閒活動的文章時，哪項觀點最完整？",
+  "prompt": "休閒廣場從空地變成有樹蔭、座椅和夜間照明的公共空間。哪項解讀最符合資料？",
   "options": [
     {
       "id": "A",
-      "text": "兼顧個人需求、活動特色與環境影響"
+      "text": "設施調整可能回應不同時段與年齡層的使用需求，仍需觀察實際使用情形"
     },
     {
       "id": "B",
-      "text": "只看標題，不讀內容"
+      "text": "增加座椅就能證明居民健康變好"
     },
     {
       "id": "C",
-      "text": "只憑個人印象判斷"
+      "text": "有照明表示居民只能晚上活動"
     },
     {
       "id": "D",
-      "text": "忽略題目條件"
+      "text": "廣場改造一定讓所有人滿意"
     }
   ],
   "knowledgeIds": [
@@ -27,13 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "休閒選擇除了個人喜好，也應考量活動特性與對環境的影響。"
+    "explanation": "樹蔭、座椅和照明分別提示遮陽、停留與時段使用的可能需求，但滿意度和健康效果需另有調查。"
   },
   "provenance": {
     "origin": "original",
-    "license": "All rights reserved", "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf", "sourceLocator": "休閒文化閱讀；獨立命題", "authoringNote": "獨立改編，非原題重製"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究飲食、服飾、建築、交通、名勝與休閒文化的判讀方式。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫生活文化文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ca-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ca-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文化生活與資料判讀",
+      "observedPattern": "公立學校國文評量要求從飲食、服飾、建築、交通、名勝與休閒資料判讀生活方式及文化脈絡；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "生活文化、說明與推論",
+      "observedPattern": "公立學校國文評量要求從飲食、服飾、建築、交通、名勝與休閒資料判讀生活方式及文化脈絡；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "從設施功能提出可檢驗的使用假設，不把設計直接等同結果。",
+  "solutionSteps": [
+    "分別辨認樹蔭、座椅和照明的功能。",
+    "推測可能服務的時間與使用者。",
+    "標記健康和滿意度沒有直接證據。",
+    "A 維持合理且可檢驗的解釋。",
+    "設計一次時段觀察或訪談來驗證使用情形。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

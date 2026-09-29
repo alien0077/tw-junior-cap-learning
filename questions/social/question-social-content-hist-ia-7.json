@@ -2,23 +2,23 @@
   "id": "question-social-content-hist-ia-7",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2021年11月4日地方政府公開資料的資料中，小組探究「Ia：東亞世界延續變遷」時，甲資料與乙資料出現差異。哪項做法最能支持可靠結論？",
+  "prompt": "研究者以『東方被動接受西方衝擊』解釋明治日本、清帝國與朝鮮的變化。哪項資料最能直接促使他修正這個框架？",
   "options": [
     {
       "id": "A",
-      "text": "刪除與原結論不合的資料"
+      "text": "三地都曾見到外國船艦。"
     },
     {
       "id": "B",
-      "text": "核對「Ia：東亞世界延續變遷」的來源、時間、範圍與概念定義，再說明證據限制"
+      "text": "三地都有十九世紀的年份記錄。"
     },
     {
       "id": "C",
-      "text": "只引用一筆最方便的資料"
+      "text": "三地都使用過外來商品。"
     },
     {
       "id": "D",
-      "text": "把個人感受直接寫成普遍結論"
+      "text": "各地在壓力出現前已有制度爭論、區域往來與改革選擇，且回應方向並不相同。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "社會科資料判讀需確認來源、時空範圍與定義，並區分證據和推論。 本題對應 KG「Ia：東亞世界延續變遷」。"
+    "value": "D",
+    "explanation": "本題聚焦「主動性與原有動態」。若各地原有動態與回應不同，單一的外力—被動模型便不足以解釋延續與選擇。 正確答案為選項 D：「各地在壓力出現前已有制度爭論、區域往來與改革選擇，且回應方向並不相同。」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
     "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "authoringNote": "依官方課綱、歷 Ia 知識圖譜及三所公立學校公開社會科試題的時序、區域互動與多方證據能力方向獨立改寫；未複製原題文字、選項、圖片或答案，待逐題學科與 Terra 複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-hist-ia"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-social-content-hist-ia",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國民中學公開段考社會科；僅研究時序、資料判讀與歷史推理題型，未複製原題。",
+      "year": "114",
+      "locator": "公開段考社會科 PDF；第 1 題至第 10 題型範圍：時序、資料判讀與因果界線",
+      "observedPattern": "由制度、時序與多方材料要求學生提出證據範圍相稱的歷史解釋。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國民中學公開社會科試題入口；僅研究多資料互證題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開試題與解答入口；第 1 題至第 10 題型範圍：跨區交流、制度與多重證據",
+      "observedPattern": "比較地圖、文字與角色材料，區分直接記錄、合理推論與待補證主張。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國民中學公開段考試題入口；僅研究區域互動與多方觀點題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開段考試題入口；第 1 題至第 10 題型範圍：區域互動、文化變遷與多方角色",
+      "observedPattern": "從區域材料分析不同角色、利益與變化，不以單一來源包辦結論。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用主動性與原有動態定位時間、角色、制度與證據，再區分延續、變化與尚待補證的推論；若各地原有動態與回應不同，單一的外力—被動模型便不足以解釋延續與選擇。",
+  "solutionSteps": [
+    "讀題定位：圈出題目中的時段、地區、材料與任務，確認本題正在檢核「主動性與原有動態」。",
+    "建立判準：把制度、網絡、社會群體與事件結果分層，並標記每個判斷的資料來源。",
+    "核對正解：選項 D「各地在壓力出現前已有制度爭論、區域往來與改革選擇，且回應方向並不相同。」符合題幹，因為若各地原有動態與回應不同，單一的外力—被動模型便不足以解釋延續與選擇。",
+    "逐項排除：檢查其餘選項是否把外力當成唯一原因、把政策文字當成全境實況，或把單一結果套用到所有地區。",
+    "結論回查：重新核對年代、比較面向與證據強度；若加入新材料或改變尺度，必須重新建立結論。"
+  ]
 }

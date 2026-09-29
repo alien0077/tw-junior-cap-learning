@@ -2,41 +2,67 @@
   "id": "question-science-content-bc-iv-1-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年6月21日校園實驗室的觀察中，針對「Bc-Ⅳ-1：酵素催化代謝與影響因素」提出可檢驗的科學問題，若比較 4 組、每組取樣 10 份資料，哪一項設計最適當？",
+  "prompt": "某酵素只能催化澱粉分解，不能催化脂肪分解。這項現象最能支持哪個概念？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "所有酵素都能作用於所有受質"
     },
     {
       "id": "B",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時只改變距離，其餘條件一致，設置4組、每組取樣10份並各重複測量5次"
+      "text": "酵素具有專一性"
     },
     {
       "id": "C",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時只測量4組中的一組就直接下結論"
+      "text": "酵素會把脂肪變成澱粉"
     },
     {
       "id": "D",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時先決定結論，再挑選支持結論的10筆資料"
+      "text": "酵素只能在沸水中作用"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-bc-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Bc-Ⅳ-1：酵素催化代謝與影響因素」。"
+    "explanation": "酵素活性部位的形狀與化學性質只適合部分受質，因此不同酵素有不同作用對象，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的酵素、反應速率與實驗設計能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bc-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bc-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酵素、反應速率、溫度酸鹼度與實驗設計判讀",
+      "pattern": "取由實驗資料、控制變因與反應速率推論酵素作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗資料、控制變因與反應速率推論酵素作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把『能催化哪種受質』和『作用條件』分成兩個概念判斷。",
+  "solutionSteps": [
+    "列出題目中的酵素與兩種受質。",
+    "比較實際觀察到的催化對象。",
+    "作用對象有選擇性，不是所有受質都能結合。",
+    "這種選擇性來自活性部位的互補性。",
+    "因此是酵素專一性，選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

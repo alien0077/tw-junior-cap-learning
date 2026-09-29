@@ -1,0 +1,152 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-s-9-1
+  knowledgeGraphIds:
+  - kg-math-content-s-9-1
+  title: S-9-1：相似形
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '9'
+  fusedScope:
+    officialCurriculum: S-9-1：相似形
+    curriculumIntent: S-9-1：相似形
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 沿多邊形邊界依序配對對應頂點、角與邊，不以最近位置猜配對
+  - 逐一檢查所有對應邊是否共用同一縮放倍率，並確認對應角保持不變
+  - 以校園平面圖縮印資料驗算倍率，辨識單方向拉伸與局部資料錯置
+  prerequisites:
+  - 能辨認多邊形頂點、內角與邊界行進順序
+  - 能用乘法與除法比較兩個長度的倍率
+  coreConcepts:
+  - 相似圖形對應角相等，且每一組對應邊使用同一長度倍率
+  - 符號頂點順序決定配對；比例可整題採小圖比大圖或大圖比小圖，但方向必須一致
+  - 等比例縮放時，每一組對應邊皆使用同一倍率，對應角保持不變
+  - 水平與垂直方向倍率不同代表非等比例變形；不能只憑局部邊或外觀判定
+  misconceptions:
+  - 沿多邊形邊界配對時跳過頂點或反轉行進方向，造成對應錯置
+  - 只檢查最長邊倍率，忽略其餘對應邊不一致
+  - 把兩個圖形邊數相同誤當作必然相似
+  - 只拉伸一個方向仍誤稱為等比例縮放
+  contentFlow:
+  - 'predict: 先判斷兩軸同倍率時矩形是否仍相似，提交前保留學生預測並隱藏模型數據'
+  - 'manipulate: 以鍵盤可操作的水平／垂直倍率控制項分別改變縮放；初始長方形為3×4公分'
+  - 'observe: 同步更新縮放後圖形、兩組對應邊長與各自倍率；角度保持90度'
+  - 'explain: 依多邊形邊界順序配對後，以倍率表檢查所有對應邊，辨識角相等但兩方向倍率不同仍不相似'
+  - 'verify: 選擇相似判斷並提交，依目前兩軸倍率提供錯誤提示或證據回饋'
+  - 'transfer: 對5×7公分新圖按1/2等比例縮印，檢查新尺寸與兩組對應邊倍率'
+  - 'fallback: 幾何腳本無法載入時保留六段原稿與文字選擇題，明確告知互動模型不可用'
+  - 'self-check: 以單方向拉伸反例區分外觀相似與倍率相同'
+  - 'worked-example: 將3×4公分矩形園區圖以1/2縮印，逐邊算出1.5、2、1.5、2公分，周界由14變7公分'
+  - 'guided-practice: 先標配對，再固定比例方向，最後用角與邊證據判斷'
+  - 'transfer: 校稿校園平面圖，以兩組獨立量測定位局部縮放或量測錯誤'
+  - 'self-check: 以倍率3與2.5的長方形反例判斷單方向拉伸'
+  visualizations:
+  - 專屬幾何模型並列原圖與倍率後矩形，呈現水平／垂直尺度、邊長表與角度標示
+  - 只顯示由 lesson simulation.similarityModel 驅動的數值；不得暗示矩形角相等足以單獨證明相似
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-S-9-1-I01
+    component: GeometryManipulationBlock
+    purpose: 以四個逐步選擇檢查多邊形邊界配對、角邊條件、統一倍率和失配反例
+    initialState:
+      step: step-1
+      answerVisibleAfterResponse: true
+    studentActions:
+    - 依鍵盤或點選操作回答目前步驟
+    - 錯答後讀取針對本概念的回饋，再重試同一概念
+    - 逐步完成四個問題並比較多邊形配對、縮放倍率和資料失配
+    - 在專屬模型先提交預測，再分別操作水平與垂直縮放倍率
+    - 觀察兩組對應邊比例及角度標示，以文字輸入解釋判斷
+    - 檢查目前相似判斷，並以新長方形縮印情境完成遷移
+    visualRules:
+    - 每題以文字、數學符號及明確選項承載，不依賴顏色辨義
+    - 錯答回饋後保留目前題目供重試
+    - 窄螢幕不得裁切題幹、選項及回饋
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-S-9-1-I01-MATCH
+      trigger: 多邊形配對跳過頂點或邊界行進方向不一致
+      prompt: 依兩張園區圖的邊界順序，指出哪些頂點及邊互相對應。
+      expectedEvidence: 配對順序完整保留，沒有跳點或交叉配對
+    - id: MC-CUR-MATH-CONTENT-S-9-1-I01-SCALE
+      trigger: 忽略一組對應邊倍率不一致
+      prompt: 前三邊倍率為3、末邊倍率為2.8，這組資料支持整體等比例縮放嗎？
+      expectedEvidence: 不支持；所有對應邊須共用同一倍率，應檢查末邊資料或印刷變形
+    feedback:
+      correct: 回扣題目中的頂點順序、對應倍率或反例數值，說明該證據支持的結論。
+      incorrect: 提示重讀邊界配對並逐欄比較對應倍率；保留原題讓學生重試，不引入三角形判定或面積比。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課的模型以兩個原創倍率控制項呈現矩形縮放，並保留四階文字 GuidedChoice 作為獨立練習。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課的模型以兩個原創倍率控制項呈現矩形縮放，並保留四階文字 GuidedChoice 作為獨立練習。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課四階互動及正文保留文字／符號線索，窄螢幕可讀且控制項可鍵盤操作。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課正文作為主內容區並使用語意化標題；逐題互動回饋需由輔助科技可讀取。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「S-9-1：相似形」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「S-9-1：相似形」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入單元時顯示六段完整、單元專屬正文；各段須涵蓋定義推理、逐步例題、迷思、引導練習、遷移限制與自我檢核。
+  - 互動必須有四個實際步驟，檢查多邊形邊界配對、角與邊條件、四邊統一倍率及末邊失配；錯答後可重試且回饋指向數學理由。
+  - 矩形縮印例使用倍率1/2，3×4公分對應1.5×2公分；四邊與周界14→7公分均按1/2縮放。
+  - 320px、375px、768px下能以鍵盤完成四題選擇、閱讀錯答提示並重試，無頁面錯誤或水平溢位。
+  - 外部來源不可用時，本課已保存之原創正文、選項、答案及回饋仍可完整使用；不得要求幾何滑桿或外部模型才能學習。
+  - Playwright 阻擋本地 simulations.js 時仍需顯示六段正文與四步 GuidedChoice，鍵盤作答並顯示逐題回饋；不得留下空白模擬區或 page error（fallback）。
+  - Playwright 提交預測後才顯示兩倍率滑桿；鍵盤調整至相同倍率時兩邊長比同步相同，改成不同倍率時尺寸／表格同步且顯示角相等不足以判定相似。
+  - Playwright 驗證按鈕須按現有兩倍率分類正誤並提供可重試提示；新5×7矩形的1/2縮印遷移需得2.5×3.5且兩邊倍率相同。
+  - 重載後倍率、預測、檢核答案與遷移狀態由本地 state serialization 還原；重設清空並恢復答案鎖定初始狀態。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 S-9-1
+    role: official-curriculum-source-of-truth

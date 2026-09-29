@@ -2,23 +2,23 @@
   "id": "question-english-content-c-iv-5-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「C-Ⅳ-5／基本世界觀」lesson, which action shows respect when people have different customs about shared spaces during winter?",
+  "prompt": "A table reports that Country X has 80 million people and Country Y has 20 million. What is directly supported?",
   "options": [
     {
       "id": "A",
-      "text": "In question 4, ask politely and follow the local rule about shared spaces during winter in the C-Ⅳ-5／基本世界觀 lesson."
+      "text": "Country X has four times the population density of Country Y."
     },
     {
       "id": "B",
-      "text": "In question 4, say every custom about shared spaces during winter in the C-Ⅳ-5／基本世界觀 lesson must be exactly the same as mine."
+      "text": "Country X had four times as many births that year."
     },
     {
       "id": "C",
-      "text": "In question 4, ignore the people involved in shared spaces during winter in the C-Ⅳ-5／基本世界觀 lesson."
+      "text": "The table lists four times as many people in Country X as in Country Y."
     },
     {
       "id": "D",
-      "text": "In question 4, laugh at a different way of handling shared spaces during winter in the C-Ⅳ-5／基本世界觀 lesson."
+      "text": "Country X's economy is four times larger."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "Respect means learning the local practice, asking politely, and avoiding unfair judgment. This item targets C-Ⅳ-5／基本世界觀, question 4."
+    "value": "C",
+    "explanation": "Eighty million is four times twenty million; the other claims require evidence not shown in the table. Correct answer: C"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度第 2 學期英文段考；研究地理位置、語言多樣性、地圖尺度、跨國連結、環境風險、資料來源與世界觀範圍；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E7%A4%BE%E6%9C%83_3.pdf",
+    "sourceLocator": "PDF第1頁第8題；跨科借鑑公開社會科資料／推理型態，英語題幹及選項自行撰寫。",
+    "authoringNote": "依官方英語課綱C-Ⅳ-5、Knowledge Graph及公立國中公開試題所呈現的世界資料閱讀能力獨立撰寫；不複製原題、選項、表格或答案。仍待AI內容審查；依使用者指示不安排Terra審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-c-iv-5"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-content-c-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E7%A4%BE%E6%9C%83_3.pdf",
+      "title": "公立國中社會科公開試題；本題僅參照資料判讀、全球脈絡或圖資推理能力型態。",
+      "year": "114-1",
+      "subject": "social",
+      "locator": "PDF第1頁第8題",
+      "observedPattern": "依官方人口統計表核對人口結構；僅借鑑資料表閱讀與推論界線。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "同一年人口總數可直接相除比較；總人口比例不能替代人口密度、城市規模或成長率。",
+  "solutionSteps": [
+    "1. 兩數是同一年人口總數：X 八千萬、Y 兩千萬。",
+    "2. 計算 80 ÷ 20 = 4。",
+    "3. 可說表內 X 的人數是 Y 的四倍。",
+    "4. 人口密度還要土地面積；成長率要跨年資料；城市大小未提供。",
+    "5. 答案 C；只對題目實際測量的指標做比例結論。"
+  ]
 }

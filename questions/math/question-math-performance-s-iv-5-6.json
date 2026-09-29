@@ -6,15 +6,15 @@
   "options": [
     {
       "id": "A",
-      "text": "1 條"
+      "text": "0 條"
     },
     {
       "id": "B",
-      "text": "2 條"
+      "text": "1 條"
     },
     {
       "id": "C",
-      "text": "3 條"
+      "text": "2 條"
     },
     {
       "id": "D",
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "一般矩形沿水平、垂直方向通過中心的兩條直線對摺會重合；對角線不是對稱軸，因此共有 2 條。"
+    "value": "C",
+    "explanation": "一般矩形可沿水平、垂直中線對摺重合，共 2 條；兩條對角線通常不是對稱軸，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考線對稱、對稱軸與坐標鏡射題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供軸對稱、對稱點與圖形性質能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的對稱方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "軸對稱、對稱軸、對稱點、對稱圖形與特殊圖形的對稱軸數量",
+      "observedPattern": "公開數學評量常以坐標鏡射或摺合情境判斷對稱軸與對稱點，也要求辨識等邊三角形、矩形等圖形的對稱軸數量；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "軸對稱、對稱軸、對稱點、對稱圖形與特殊圖形的對稱軸數量",
+      "observedPattern": "公開數學評量常以坐標鏡射或摺合情境判斷對稱軸與對稱點，也要求辨識等邊三角形、矩形等圖形的對稱軸數量；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "軸對稱、對稱軸、對稱點、對稱圖形與特殊圖形的對稱軸數量",
+      "observedPattern": "公開數學評量常以坐標鏡射或摺合情境判斷對稱軸與對稱點，也要求辨識等邊三角形、矩形等圖形的對稱軸數量；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "排除正方形的額外性質，只保留一般矩形必有的水平與垂直中線。",
+  "solutionSteps": [
+    "矩形左右兩半可沿垂直中線重合。",
+    "矩形上下兩半可沿水平中線重合。",
+    "因此至少有兩條對稱軸。",
+    "非正方形的對角線不能把兩半完全重合。",
+    "所以選 C。"
+  ]
 }

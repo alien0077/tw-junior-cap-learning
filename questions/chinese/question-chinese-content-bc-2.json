@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bc-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一篇文章說明校園午餐，先介紹『剩食率』的意思，再以三週紀錄說明變化。這樣安排的主要作用是什麼？",
+  "prompt": "聲音地圖先標出各區分貝，再把地點分為安靜、普通、較吵三類，最後比較午休與下課時段。這三步的功能依序最接近什麼？",
   "options": [
     {
       "id": "A",
-      "text": "避免讀者知道文章主題"
+      "text": "提出方案、描述人物、抒發情感"
     },
     {
       "id": "B",
-      "text": "只增加文章的情緒色彩"
+      "text": "呈現資料、建立分類框架、比較不同時間的差異"
     },
     {
       "id": "C",
-      "text": "先建立概念，再用資料呈現變化"
+      "text": "分類資料、證明唯一因果、刪除來源"
     },
     {
       "id": "D",
-      "text": "把紀錄變成虛構故事"
+      "text": "只是在重複同一件事，順序不影響理解"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "先定義術語可避免誤解，再用連續紀錄支持對變化的說明。"
+    "value": "B",
+    "explanation": "先讓讀者看見數值，再用共同標準整理區域，最後把時間條件放入比較；不同說明方式各自承擔功能，形成理解路線。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "公開國中教育會考／公立國中段考的說明文與資料判讀能力方向（定義與資料）；另以國語文課綱核對：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; removed old year labels and did not reproduce source wording, options, passage, figure, or answer. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編說明閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文、圖表與資料理解",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明方法、因果與閱讀推論",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認說明對象與讀者目的，再沿資料—組織—解釋—方案—評估的路線閱讀，最後檢查來源、條件與不確定性是否被保留。",
+  "solutionSteps": [
+    "讀題定位：圈出「說明路線」與說明對象、讀者目的、資料、定義、分類、比較、因果或方案。",
+    "追蹤說明路線：確認作者先讓讀者看見什麼，再如何整理、解釋、比較與行動；本題核心是「先讓讀者看見數值，再用共同標準整理區域，最後把時間條件放入比較；不同說明方式各自承擔功能，形成理解路線。」",
+    "核對正解：選項 A「呈現資料、建立分類框架、比較不同時間的差異」能回扣資料、讀者需要與推理限制，沒有把視覺或口號當成證明。",
+    "排除誘答：檢查是否忽略單位／來源／樣本、混淆定義與分類、把相關當因果，或提出沒有檢查方式的方案。",
+    "結論回查：用『對象—資料—組織—解釋—行動—評估』重讀，確認文字能讓不同讀者理解且知道哪些仍待觀察。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

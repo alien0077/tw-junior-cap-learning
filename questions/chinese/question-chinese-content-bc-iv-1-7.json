@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bc-iv-1-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列哪項最適合作為『圖書館延長開放後借閱增加』的支持證據？",
+  "prompt": "文章以一班一週的回收量增加，推論全校推行回收政策一定有效。最重要的限制是？",
   "options": [
     {
       "id": "A",
-      "text": "把借閱增加改寫成全國第一"
+      "text": "一班一週的資料可能受班級活動或偶然事件影響，不能直接代表全校長期效果"
     },
     {
       "id": "B",
-      "text": "比較延長前後相同期間的借閱紀錄"
+      "text": "回收量永遠不能測量"
     },
     {
       "id": "C",
-      "text": "館員覺得新規定很棒"
+      "text": "全校一定和該班完全相同"
     },
     {
       "id": "D",
-      "text": "一位同學說他以後可能會借書"
+      "text": "只要數字上升就不需要其他資料"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "相同期間的前後紀錄可直接檢驗變化，其他選項不是資料或超出證據範圍。"
+    "value": "A",
+    "explanation": "單一班級、短期資料可能有特殊活動與偶然波動，外推到全校長期效果需要更多班級與時間的資料。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究邏輯、客觀、理性說明能力方向（可查證證據）；另以官方語文領域課綱核對 Bc-Ⅳ-1（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究觀察、定義、因果證據、外推與問題解決。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫邏輯客觀理性說明題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文資料、推論與客觀表述",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "因果證據、定義與理性說明",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分辨樣本範圍、觀察期間和推論範圍是否一致。",
+  "solutionSteps": [
+    "標出樣本是一班、期間是一週。",
+    "比較結論卻擴大到全校長期政策。",
+    "列出班級活動與偶然事件等替代因素。",
+    "A 指出最直接的外推限制。",
+    "提出跨班、跨週期的資料收集方案。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

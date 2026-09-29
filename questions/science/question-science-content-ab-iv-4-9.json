@@ -2,23 +2,23 @@
   "id": "question-science-content-ab-iv-4-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年2月4日河川觀測站的觀察中，將 25 g 食鹽溶於 959 g 水，研究「Ab-Ⅳ-4：純物質與混合物分類」時，溶液質量為何？",
+  "prompt": "蒸餾可把溶液中的水分離出來，主要利用不同成分的哪項差異？",
   "options": [
     {
       "id": "A",
-      "text": "934 g"
+      "text": "顏色差異"
     },
     {
       "id": "B",
-      "text": "984 g"
+      "text": "磁性差異"
     },
     {
       "id": "C",
-      "text": "23975 g"
+      "text": "顆粒大小差異"
     },
     {
       "id": "D",
-      "text": "959 g"
+      "text": "沸點差異"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：25＋959＝984 g。 本題對應 KG「Ab-Ⅳ-4：純物質與混合物分類」。"
+    "value": "D",
+    "explanation": "蒸餾先使沸點較低的成分汽化，再冷凝收集，主要利用各成分沸點不同，選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；第4題物質分類比較題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的物質分類、溶液與分離能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "純物質、混合物、溶液與分離方法判讀",
+      "pattern": "取由組成固定性質、樣品成分與分離方法判讀物質分類的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由組成固定性質、樣品成分與分離方法判讀物質分類的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "按照蒸餾流程找關鍵物性：汽化與冷凝的先後由沸點決定。",
+  "solutionSteps": [
+    "確認溶液含有至少兩種成分。",
+    "加熱時比較各成分的沸點。",
+    "沸點較低者較早汽化。",
+    "蒸氣冷凝後可收集為分離物。",
+    "因此選 D。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

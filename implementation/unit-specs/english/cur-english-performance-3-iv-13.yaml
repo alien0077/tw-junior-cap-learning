@@ -1,0 +1,146 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-13
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-13
+  title: 3-Ⅳ-13：了解簡易短劇大意
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-13：了解簡易短劇大意
+    curriculumIntent: 3-Ⅳ-13：了解簡易短劇大意
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 先由標題和舞台提示預測排演問題，再以角色台詞和動作檢查預測
+  - 整合角色目標、阻礙、道具位置、舞台指示、選擇與結果，說出主要情節
+  - 在不同短劇中重新定位舞台線索，判斷問題是否被真正解決及人物如何回應
+  prerequisites:
+  - 能閱讀短篇英文對話，並辨認角色標籤與方括號舞台指示
+  - 能依事件先後說明角色做了什麼及其直接結果
+  coreConcepts:
+  - 短劇大意由角色目標、阻礙、選擇及結果構成，不等於摘錄最後一句
+  - 舞台指示補充觀眾看見的動作、注意對象及非口語反應
+  - 道具既可能建立場景，也可能成為衝突線索；其功能須由情節前後核對
+  misconceptions:
+  - 只讀對白而略過舞台指示，因而漏掉角色正在檢查或測試什麼
+  - 把所有道具當裝飾，不追蹤其位置如何製造或解除阻礙
+  - 從單句直接推主旨，不用排演結果檢查方案是否兼顧角色需求
+  contentFlow:
+  - 'hook: 只看 A Clear Path 標題與空椅、紙月亮、藍線提示，先預測排演難題'
+  - 'activate-prerequisite: 區分說出台詞的角色與描述可見動作的舞台指示'
+  - 'visualize: 以語意標籤顯示角色目標、阻礙、道具、舞台線索及結果'
+  - 'predict: 寫至少12字預測，成功保存後才揭露完整排演片段'
+  - 'manipulate: 追蹤銀色緞帶與藍色路線的相對位置，理解道具如何變成阻礙'
+  - 'observe: 連讀 Mina 蹲看膠帶、提出移椅方案及 Sam 實際通行的舞台證據'
+  - 'explain: 用角色目標、可見線索與測試結果判斷衝突是否解除'
+  - 'formalize: 比較排演前後布局，歸納主要行動與共同設計主旨'
+  - 'transfer: 在 A Softer Beginning 新劇本重新分析鼓聲遮蔽台詞及改變提示時機'
+  - 'exit-ticket: 引用新劇本中的動作或結果，解釋方案如何回應觀眾需要'
+  visualizations:
+  - 角色台詞與舞台指示以角色名／指示標籤分列，讀屏時不依賴斜體或顏色區分
+  - 衝突、道具位置、角色選擇與通行測試構成可回查的事件鏈
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-13-I01
+    component: ShortPlayLab
+    purpose: 由原創排演稿讀出目標、阻礙、舞台提示、道具功能與解決結果，再遷移至不同短劇
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        predicted: false
+        stageIndex: 0
+    studentActions:
+    - 僅看標題及舞台道具提示，寫至少12字預測後才揭露主要劇本
+    - 把對白和舞台指示分開閱讀，沿目標、阻礙、舞台線索、選擇與結果逐題判讀
+    - 答錯時保留所選項，依題目提示回讀相關動作或台詞；答對才進入下一題
+    - 主要排演理解完成後，再於全新短劇重做問題、舞台cue及結果主旨判讀
+    visualRules:
+    - 預測完成前不渲染主要短劇全文或判讀題；保存原預測以便讀後對照
+    - 角色台詞和 stage direction 具可讀標籤及序列，依事件次序呈現
+    - 每題錯誤提示指出應回讀的角色、動作或前後結果，不直接給答案
+    - 320px窄螢幕可換行呈現角色名與台詞；所有按鈕至少44px並支援reduced-motion
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-13-I01
+      trigger: 忽略 Mina 查看藍線的舞台指示，或把緞帶只當裝飾，未發現路線被擋
+      prompt: 對照緞帶落點、膠帶標線及 Sam 通行測試，指出哪一項舞台證據改變了安排。
+      expectedEvidence: 能說明膠帶標示路線、移動椅子後Sam通過且紙月亮仍可見
+    feedback:
+      correct: 回指支持當前劇情判讀的角色台詞或舞台動作，再解鎖下一個排演問題。
+      incorrect: 保留題目與選項，提示重讀相關舞台指示或結果，讓學生自行修正後重試。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 ShortPlayLab 只參考分階段提示和清楚呈現線索的互動教法；兩段劇本、角色、舞台動作與題目皆原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課 ShortPlayLab 只參考預測後揭露、答錯可重試的流程設計；不採用參考活動的題文、答案或視覺素材。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課 ShortPlayLab 使用原生表單、fieldset、legend及即時文字狀態，支援鍵盤和輔助科技辨識。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課 ShortPlayLab 以標題、角色／stage direction標籤、問題、選項及回饋區分資訊層級；劇本內容全新撰寫。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 使用新寫短劇及不同衝突，需重新辨識角色目標、舞台cue、選擇或結果；不可重用A Clear Path的答案
+    requiredResponse: 指出一處台詞／舞台指示，再說明它如何支持角色目標、衝突解決或結局主旨
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 在新短劇中，哪個舞台動作讓問題解決方式改變？請引用動作後的結果解釋。
+    successCriteria:
+    - 區分台詞與舞台指示
+    - 說出角色原先目標和阻礙
+    - 用選擇後的結果支持主旨判讀
+  expressionExtension:
+    applicable: true
+    task: 用80～120字向同學介紹一段未教過的短劇，說明角色目標、舞台線索、解決行動及結果
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始畫面僅顯示A Clear Path標題／道具提示；少於12字的預測不能揭露完整劇本。
+  - 舞台指示題答錯時停留同題並顯示專屬提示；正確作答才逐項解鎖主劇本後續判讀。
+  - 完成六個主劇本判讀後才呈現A Softer Beginning；新劇本有獨立對白與三題遷移，不得用主劇本答案代替。
+  - 主要理解及遷移的全部選擇、預測和完成狀態依lesson instance保存；重載還原完成，重設清除資料回到預測頁。
+  - 在320px、375px、768px檢查台詞換行、選項及進度可見；鍵盤可操作原生radio與按鈕。真實瀏覽器與螢幕閱讀器實測未做，不可標記通過。
+  - 兩段劇本均由 lesson JSON 供應；離線或外部來源不可用時以 lesson 內嵌劇本作為 fallback，仍可完成整個流程。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-13
+    role: official-curriculum-source-of-truth

@@ -2,41 +2,67 @@
   "id": "question-science-content-ca-iv-1-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年5月4日校園實驗室的觀察中，針對「Ca-Ⅳ-1：實驗分離混合物」提出可檢驗的科學問題，若比較 5 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "想從食鹽水中取得食鹽晶體，最主要利用食鹽與水哪項性質差異？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ca-Ⅳ-1：實驗分離混合物」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "水可蒸發，食鹽在此條件下留下並結晶"
     },
     {
       "id": "B",
-      "text": "研究「Ca-Ⅳ-1：實驗分離混合物」時只測量5組中的一組就直接下結論"
+      "text": "食鹽會被濾紙截留而水不會"
     },
     {
       "id": "C",
-      "text": "研究「Ca-Ⅳ-1：實驗分離混合物」時只改變光照時間，其餘條件一致，設置5組、每組取樣11份並各重複測量3次"
+      "text": "食鹽沸點比水低且先蒸出"
     },
     {
       "id": "D",
-      "text": "研究「Ca-Ⅳ-1：實驗分離混合物」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "食鹽會被磁鐵吸引"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ca-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ca-Ⅳ-1：實驗分離混合物」。"
+    "value": "A",
+    "explanation": "蒸發水分使溶液濃縮，食鹽析出形成晶體；這不是過濾或磁性分離，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的混合物分離、物性差異與流程設計能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ca-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ca-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ca-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "混合物分離、溶解度、沸點與色層分析判讀",
+      "pattern": "取由成分物理性質差異設計分離流程並評估回收結果的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由成分物理性質差異設計分離流程並評估回收結果的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "確認目標是留下溶質還是收集溶劑，再選擇蒸發結晶或蒸餾。",
+  "solutionSteps": [
+    "食鹽已溶於水，不能直接用過濾截留。",
+    "加熱或靜置可讓水離開溶液。",
+    "溶液濃度升高後食鹽析出。",
+    "晶體可經過濾與乾燥取得。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

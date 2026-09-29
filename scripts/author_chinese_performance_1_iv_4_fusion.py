@@ -1,0 +1,52 @@
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/chinese/lesson-chinese-performance-1-iv-4.json"
+REPORT = ROOT / "implementation/reports/chinese-performance-1-iv-4-first-pass-review.json"
+
+
+def pub(name, locator, concepts, forms, misconception, assessment):
+    return {"publisher": name, "edition": f"{name} 公立校方國文課程計畫章節級證據", "sourceType": "public-web", "sourceLocator": locator, "reviewedAt": "2026-09-21", "findings": {"concepts": concepts, "representations": forms, "examplesOrEvidence": ["本課以共享文件、停課訊息查證與線上會議三個原創數位溝通情境，僅承接公開課程的資訊判讀與互動方向。"], "misconceptions": [misconception], "assessmentEmphasis": [assessment]}, "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、篇章、題目、答案、影音或版面。"}
+
+
+def main():
+    data = json.loads(LESSON.read_text(encoding="utf-8"))
+    assert data["id"] == "lesson-chinese-performance-1-iv-4"
+    data["title"] = "1-Ⅳ-4：用數位工具聽清楚、查可靠、回得負責"
+    data["content"] = {"summary": "數位工具讓人能同步或非同步溝通，卻也讓截圖斷章、來源混淆、通知干擾、無障礙缺口與個資外流更容易發生。使用科技增進聆聽與互動，不是把紙本對話搬到螢幕，而是要先確認來源與目的，再用可追溯的紀錄、適合不同使用者的表示方式和明確的回覆規則建立共同理解。本課以共享文件、停課訊息查證與線上會議三個原創情境練習。", "sections": [{"heading": "工具是媒介，不是證據", "body": "群組裡的截圖能提供線索，不能單獨證明停課。先找發布機關、原始網址、日期與適用範圍，再把已確認和待確認內容分開，避免轉傳速度代替可信度。"}, {"heading": "數位紀錄要讓人接得回去", "body": "共享文件應標記說話者、時間、來源、待辦與版本；刪改要留下理由，連結失效要保留可查詢的關鍵資訊。完整紀錄不是把每句話堆在一起，而是讓缺席者能重建討論脈絡。"}, {"heading": "互動設計要照顧不同讀者", "body": "文字、語音、圖片與即時字幕各有優缺點。重要資訊不能只放在顏色或聲音裡；要提供替代文字、清楚標題、段落結構與足夠回應時間，讓不同需求的人都能參與。"}, {"heading": "方便也有責任界線", "body": "錄音、轉錄與標註可能包含姓名、聲音、位置或私人經驗。開始前說明目的與保存期限，取得必要同意，限制分享範圍；遇到爭議時以原始紀錄和安全管道處理，不在群組公開未核實的個人資訊。"}]}
+    data["studyHighlights"] = ["先確認數位訊息的來源、日期、範圍與原始位置。", "用版本、時間、說話者與待辦欄位建立可追溯紀錄。", "提供文字、替代文字、字幕與清楚結構，避免工具排除參與者。", "使用錄音、轉錄與共享檔案時遵守目的、同意、保存與分享界線。"]
+    data["teaching"] = {"body": [
+        {"id": "hook", "phase": "hook", "heading": "一張截圖可以決定明天不上課嗎？", "body": "群組出現一張『明天停課』截圖，先讓學習者列出想轉傳的衝動、需要查的來源和可能受影響的人。把訊息拆成發布者、日期、地區、原始連結與未知事項，體會數位便利不等於資訊已經可靠。"},
+        {"id": "explain", "phase": "explain", "heading": "數位聆聽的四道檢查門", "body": "依序檢查來源與目的、內容與版本、參與者能否理解、資料是否被適當保存。每道門都要留下可回查的線索；若只看轉發數、頭像或檔名，便仍停留在表面可信，而沒有完成聆聽與查證。"},
+        {"id": "worked-example", "phase": "worked-example", "heading": "把共享訪談變成可重建紀錄", "body": "以原創訪談為例，先記錄發言者和時間，再分開逐字內容、摘要、待確認問題與行動負責人；對刪除的私人段落標註『依同意範圍移除』。缺席者讀完後應能指出哪些是原話、哪些是整理者的歸納。"},
+        {"id": "guided-practice", "phase": "guided-practice", "heading": "設計一場包容的線上討論", "body": "小組建立議程、發言順序、文字回覆、字幕或替代文字、提問截止時間和決策紀錄。再故意加入連結失效、有人無法開麥或兩個版本衝突的情況，要求學習者選擇補救方式並說明不應把責任推給參與者。"},
+        {"id": "transfer", "phase": "transfer", "heading": "從查證延伸到個資責任", "body": "把停課查證方法移到社團活動通知：確認官方來源後，再檢查名單、照片、定位與聯絡方式是否真的需要公開。改寫一則含必要資訊但不暴露私人資料的通知，並安排失效連結、撤回與更新方式。"},
+        {"id": "reflect", "phase": "reflect", "heading": "回看工具帶來的盲點", "body": "找出本課一次只靠平台提示、顏色、轉發量或自動轉錄的判斷，寫出它漏掉的對象與證據。再補一項人工確認或替代表示，說明如何在便利、可追溯、隱私與參與公平之間作出可解釋的取捨。"},
+    ], "summary": ["先核對來源、版本、日期與適用範圍，再回應或轉傳數位訊息。", "用時間、說話者、原話、摘要、待確認與版本紀錄建立可重建的討論。", "將字幕、替代文字、清楚結構與回應時間納入互動設計。", "以目的、同意、保存期限與分享範圍管理錄音、轉錄和個資。"], "exitCheck": [
+        {"prompt": "為什麼停課截圖不能直接當成公告？", "expectedEvidence": "能指出需回到發布機關、原始網址、日期、地區與版本核對，並把線索和已確認資訊分開。"},
+        {"prompt": "共享文件如何讓缺席者重建討論？", "expectedEvidence": "能列出說話者、時間、原話／摘要、待確認問題、版本變更與行動負責人。"},
+        {"prompt": "線上討論如何避免工具排除參與者？", "expectedEvidence": "能提出字幕、替代文字、清楚標題、文字回覆、足夠等待時間與不只依賴顏色／聲音的設計。"},
+    ]}
+    data["interactive"] = {"type": "guided-choice", "goal": "核對數位來源、建立可追溯紀錄、設計包容互動並守住個資界線。", "scenario": "從停課截圖、共享訪談到線上會議，逐步選擇可靠且負責任的數位聆聽方法。", "variables": [{"symbol": "s", "meaning": "來源與版本"}, {"symbol": "r", "meaning": "可重建紀錄"}, {"symbol": "a", "meaning": "可及性與責任"}], "steps": [
+        {"id": "step-1", "prompt": "群組收到『明天停課』截圖，第一步應做什麼？", "options": ["回到官方發布者與原始網址，核對日期、地區、版本與適用範圍", "看轉發人數判定可信", "直接加上自己的推測再轉傳"], "answer": "A", "feedback": "A 把截圖當成線索而非證明，能檢查來源、時間與適用範圍。"},
+        {"id": "step-2", "prompt": "共享訪談紀錄要讓缺席者理解，哪套欄位最完整？", "options": ["說話者、時間、原話／摘要、待確認問題、版本與行動負責人", "只留下最後結論和檔案名稱", "只貼錄音連結不寫任何說明"], "answer": "A", "feedback": "A 能重建脈絡並區分原話、整理與尚未決定的事項。"},
+        {"id": "step-3", "prompt": "設計線上討論時，哪項做法最能兼顧參與？", "options": ["提供字幕或文字替代、清楚結構、文字回覆與足夠等待時間，再限制必要資料的分享", "只用顏色和聲音提示並要求所有人開鏡頭", "把無法即時發言者的意見排除"], "answer": "A", "feedback": "A 同時處理可及性與隱私責任，不把工具限制轉成參與者的錯。"},
+    ]}
+    data["authoringStandard"] = "version-fused-v1"
+    data["updatedAt"] = "2026-09-21"
+    data["versionResearch"] = [
+        pub("nani", "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf；國語文聆聽理解、資訊整理與溝通回應定位；核讀 2026-09-21。", ["理解資訊來源、目的與內容，並作適切回應。", "運用語文工具整理訊息、表達重點，並依讀者需要調整呈現方式。"], ["來源、時間、摘要、回應、版本與待確認事項。"], "把數位平台的顯示、轉發或檔名當成可靠證據。", "評量資訊理解、整理、回應與媒介運用。"),
+        pub("kanghsuan", "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf；國語文口語溝通、科技媒介與合作學習定位；核讀 2026-09-21。", ["數位媒介可支援討論、合作與多元表達，但仍需依目的選擇工具。", "互動要回應對象差異與溝通規則。"], ["共享文件、即時／非同步訊息、字幕、回饋與協作版本。"], "使用工具越多就代表溝通品質越高，忽略可及性和內容查證。", "重視合作、回饋、媒介選擇與訊息組織。"),
+        pub("hanlin", "https://www.msjh.ntpc.edu.tw/uploads/1691978949408RP7cOuyZ.pdf；國文聆聽記錄、資料歸納與評量定位；核讀 2026-09-21。", ["聆聽記錄需保留來源與脈絡，整理後仍要能核回原始訊息。", "資訊表達要考量讀者、形式、限制與理解效果。"], ["原話／摘要、版次、替代文字、證據連結、隱私與保存界線。"], "只把工具自動產生的轉錄或摘要當成完整且無誤的紀錄。", "要求資料可追溯、表示清楚、回應負責並指出限制。"),
+    ]
+    data["fusionRecord"] = {"commonCore": ["三版本公開結構共同支持聆聽理解、資訊整理、口語互動與媒介運用。", "工具選擇必須連結目的、來源、讀者、可追溯性與理解效果。", "數位溝通同時涉及可及性、隱私、同意與責任回應。"], "versionDifferences": ["南一較突顯資訊理解與語文工具；康軒較突顯科技媒介、合作與多元互動；翰林較突顯聆聽紀錄、資料脈絡、表達效果與限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"], "originalAdditions": ["以停課截圖區分平台線索與官方證據。", "以共享訪談練習原話、摘要、版次與待辦可追溯性。", "以線上會議加入字幕、文字替代、連結失效與個資責任的決策。"], "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織數位聆聽、來源查證、協作紀錄、可及性、隱私與安全回應。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    data["teaching"]["body"][1]["body"] += " 以一則已被修改過的公告做版本比對，要求學習者指出哪個詞、時間或適用範圍發生變化，並說明變更紀錄應由誰確認。"
+    data["teaching"]["body"][5]["body"] += " 若人工確認與自動結果不一致，保留兩者並說明採用依據；不要刪除異議來製造看似整齊的紀錄。"
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit": "1-Ⅳ-4：用數位工具聽清楚、查可靠、回得負責", "lessonId": data["id"], "status": "first-pass-ai-review-complete", "reviewStatus": "draft", "checks": {"unitSpecificOriginalContent": True, "threeVersionResearchRecords": True, "fusionRecordPresent": True, "interactivePredictionManipulationExplanation": True, "answersAndDetailedSteps": True, "terraSecondPass": "pending"}, "reviewedAt": "2026-09-21"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("authored chinese performance 1-iv-4")
+
+
+if __name__ == "__main__":
+    main()

@@ -2,41 +2,84 @@
   "id": "question-science-content-ec-iv-1-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月6日自然科教室的觀察中，一個物體質量為 838 g、體積為 98 cm³，研究「Ec-Ⅳ-1：大氣壓力由空氣重量造成」時，其密度為何？",
+  "prompt": "在海平面與高山各放置相同面積的水平面，通常哪裡的大氣壓力較大？",
   "options": [
     {
       "id": "A",
-      "text": "936 g/cm³"
+      "text": "高山，因為距離太陽較近"
     },
     {
       "id": "B",
-      "text": "8.55102 g/cm³"
+      "text": "兩處一定相同，因為面積相同"
     },
     {
       "id": "C",
-      "text": "0.116945 g/cm³"
+      "text": "海平面，因為上方空氣柱通常較長、重量較大"
     },
     {
       "id": "D",
-      "text": "82124 g/cm³"
+      "text": "無法比較，因為空氣沒有重量"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ec-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "密度＝質量÷體積＝838÷98＝8.55102 g/cm³。 本題對應 KG「Ec-Ⅳ-1：大氣壓力由空氣重量造成」。"
+    "value": "C",
+    "explanation": "相同面積下，海平面上方通常有較長、較重的空氣柱，因此單位面積承受的空氣重量較大，氣壓通常高於高山。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作大氣壓力、壓力差、液柱與生活應用的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ec-iv-1"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-ec-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "大氣壓力、壓力差與氣體現象能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用吸盤、吸管、液柱、氣壓計與海拔情境考查大氣壓力來源、壓力差及單位面積概念；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "氣壓、液柱與生活壓力現象判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用吸盤、吸管、液柱、氣壓計與海拔情境考查大氣壓力來源、壓力差及單位面積概念；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "大氣壓力、吸盤吸管與氣體應用題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用吸盤、吸管、液柱、氣壓計與海拔情境考查大氣壓力來源、壓力差及單位面積概念；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "固定面積後比較上方空氣柱的長度與密度，不用距離太陽等無關線索。",
+  "solutionSteps": [
+    "確認兩處的比較面積相同。",
+    "比較面積上方的空氣柱。",
+    "海平面上方通常有更多空氣。",
+    "較大的空氣柱重量分攤在同一面積上，壓力較大。",
+    "所以海平面氣壓通常較高。"
+  ]
 }

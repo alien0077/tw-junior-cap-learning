@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-2-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「3-Ⅳ-2／辨識課堂字詞」practice, what does “patient” mean in question 4?",
+  "prompt": "The teacher points to the map and says, “Follow the yellow route to the greenhouse.” What should the group do?",
   "options": [
     {
       "id": "A",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “patient” means calmly willing to wait."
+      "text": "Go along the yellow route to the greenhouse."
     },
     {
       "id": "B",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “patient” means a place where people wait for the bus stop."
+      "text": "Erase the yellow route from the map."
     },
     {
       "id": "C",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “patient” means a tool used to measure 7 minutes."
+      "text": "Wait inside the classroom."
     },
     {
       "id": "D",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “patient” means a person who teaches at the bus stop."
+      "text": "Choose a different destination."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "“patient” means calmly willing to wait. This item targets 3-Ⅳ-2／辨識課堂字詞, question 4."
+    "explanation": "Follow the yellow route 是沿著黃色路線前進到指定目的地，不是擦掉路線或改去別處。A 同時保留了路線和 greenhouse 兩項指令資訊。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=449&cfsn=3045&fn=114-1-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E6%9B%BE%E8%A9%A0%E5%9C%92.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣立宜昌國中公開試題，PDF page 2, item 18: interpret a teacher's classroom direction；只參照題型，不重製原卷。",
+    "authoringNote": "依官方英語課綱與 Knowledge Graph，參照公立學校公開試題的課堂指令、校園詞彙、時間／方位與情境推論能力獨立改寫；未複製原題題幹、選項、資料或答案。題目維持draft，尚待版本研究及完整發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=449&cfsn=3045&fn=114-1-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E6%9B%BE%E8%A9%A0%E5%9C%92.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中114學年度第一學期第二次段考七年級英語科試題卷",
+      "year": "114-1-2",
+      "subject": "english",
+      "locator": "PDF page 2, item 18: interpret a teacher's classroom direction",
+      "observedPattern": "只參照第18題的校園詞彙／指令／行程或語境推論形式；公開查閱不等於可重製；只參考逐題標示的命令句、校園情境、行程資料與指令判讀形式，不複製原題文字、選項、圖片或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "聽讀指令時分開抓動作、路徑與目的地三個槽位；若只記住 route 卻漏掉終點，仍可能走錯方向。",
+  "solutionSteps": [
+    "句子先指定動作 follow，再給出路徑 yellow route，最後給出目的地 greenhouse。",
+    "將三個資訊依序標記，避免把 follow 誤讀成追蹤、擦除或等待。",
+    "在地圖上從目前位置沿黃色線移動，直到抵達溫室，不自行更換終點。",
+    "A 完整保留路線和目的地；B、C、D 分別改變動作、停留位置或任務目標。",
+    "所以選 A；執行校園指令時，出發前重述路徑與終點可快速檢查是否聽懂。"
+  ]
 }

@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-6-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-6／人事時地物描述回答」task, what is the best way to prepare question 5?",
+  "prompt": "A student describes an object: “It is a small silver key. A red tag on it says ‘Studio 4.’” Which item matches the description?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-6／人事時地物描述回答."
+      "text": "A large silver key with a blue tag marked ‘Studio 4.’"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-6／人事時地物描述回答."
+      "text": "A small silver key with a red tag marked ‘Studio 4.’"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-6／人事時地物描述回答."
+      "text": "A small red key with a silver tag marked ‘Studio 4.’"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-6／人事時地物描述回答."
+      "text": "A small silver key with a red tag marked ‘Studio 2.’"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-6"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-6／人事時地物描述回答, question 5."
+    "value": "B",
+    "explanation": "描述包含物品種類、大小、主體顏色、標籤顏色與標籤文字。只有 B 五項都符合；其餘選項各改動了其中一個屬性。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.qzjh.kh.edu.tw/qzjh/Fileupload/File/Logo_990.pdf",
+    "sourceLocator": "高雄市立前鎮國中公開原卷 PDF page 1, listening picture-description question 1 (item set 1–5)；只採用命題能力／資料閱讀模式，不複製原卷內容。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開英語試題的 item-level pattern-only 證據獨立改寫；未複製原題、選項、圖表或音檔。題目維持 draft，尚待單元版本研究、內容與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-6"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.qzjh.kh.edu.tw/qzjh/Fileupload/File/Logo_990.pdf",
+      "title": "高雄市立前鎮國中112學年度第一學期七年級英語科段考",
+      "year": "112",
+      "subject": "english",
+      "locator": "PDF page 1, listening picture-description question 1 (item set 1–5)",
+      "observedPattern": "只參考第1題的閱讀／問答能力與資訊擷取方式；只參考原卷聽力位置描述、地圖方位題的資訊辨識方式；不複製題幹、選項、答案、圖表或音檔。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把名詞與修飾資訊分欄核對：物品、尺寸、顏色、標籤色、標籤文字；不要因大部分相同就忽略一個錯誤細節。",
+  "solutionSteps": [
+    "先確認物品種類是 key，排除不是鑰匙的圖像或物品。",
+    "第二個條件是 small；A 的鑰匙較大，因此不符。",
+    "主體是 silver，標籤則是 red；C 把這兩種顏色對調。",
+    "最後逐字核對標籤內容 Studio 4，D 把數字改成 2。",
+    "只有 B 同時符合五項視覺線索；細節題要逐欄比對，不能只看整體相似度。"
+  ]
 }

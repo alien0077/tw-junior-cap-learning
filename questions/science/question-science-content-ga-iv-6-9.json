@@ -2,23 +2,23 @@
   "id": "question-science-content-ga-iv-6-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年5月29日社區環境站的觀察中，若以 Aa 表示一對等位基因，研究「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」時，Aa 個體的基因型屬於哪一類？",
+  "prompt": "把孟德爾的研究放回十九世紀的科學史，下列敘述最恰當的是？",
   "options": [
     {
       "id": "A",
-      "text": "「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」中的同型合子（兩個等位基因相同）"
+      "text": "他已用現代 DNA 定序直接觀察每個等位基因"
     },
     {
       "id": "B",
-      "text": "「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」中的異型合子（Aa）"
+      "text": "他證明所有性狀都只由單一基因控制且不受環境影響"
     },
     {
       "id": "C",
-      "text": "「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」中只有一個基因（Aa 只剩一個字母）"
+      "text": "他以可控制的雜交與大量性狀計數建立遺傳規律模型，但當時使用的是遺傳因子的概念"
     },
     {
       "id": "D",
-      "text": "「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」中不含遺傳物質（Aa 不具遺傳意義）"
+      "text": "他的結果只靠少數個體直覺判斷，沒有記錄比例"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "Aa 含有兩個不同的等位基因，因此是異型合子。 本題對應 KG「Ga-Ⅳ-6：孟德爾遺傳研究的科學史」。"
+    "value": "C",
+    "explanation": "孟德爾以豌豆雜交和數量資料提出規律；把他的『遺傳因子』直接說成已觀察 DNA 或宣稱所有性狀都單基因，都是時代錯置或過度延伸。 正確答案為選項 C：「他以可控制的雜交與大量性狀計數建立遺傳規律模型，但當時使用的是遺傳因子的概念」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的孟德爾實驗、遺傳比例、測交、樣本及控制變因能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ga-Ⅳ-6 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ga-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ga-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "孟德爾遺傳、機率、資料判讀與實驗設計",
+      "pattern": "取由遺傳資料、比例、控制變因和樣本大小檢查模型的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由遺傳資料、比例、控制變因和樣本大小檢查模型的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨歷史研究可直接支持的證據，再避免把現代分子工具倒置到當時。",
+  "solutionSteps": [
+    "圈出親本基因型、配子、F1/F2、表現型比例或實驗控制條件。",
+    "先建立棋盤格、遺傳模型或證據比較所需的判準。",
+    "套用原理：孟德爾以豌豆雜交和數量資料提出規律；把他的『遺傳因子』直接說成已觀察 DNA 或宣稱所有性狀都單基因，都是時代錯置或過度延伸。",
+    "逐項排除把期望比例當成必然、混淆基因型與表現型或倒置科學史的選項，答案為「他以可控制的雜交與大量性狀計數建立遺傳規律模型，但當時使用的是遺傳因子的概念」。",
+    "回查題目要求的是機率推論、實驗設計、歷史證據還是現代術語，確認推理沒有超出資料。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

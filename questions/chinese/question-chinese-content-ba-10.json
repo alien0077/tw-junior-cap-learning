@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ba-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一篇記敘文反覆描寫主角手上的舊手錶，最後主角把它交給弟弟。舊手錶最可能具有何種功能？",
+  "prompt": "一篇記敘文先寫主角在老屋門口停下，回憶童年與父親修門的片段，回到現在後他沒有拆屋，而是把門修好並開放給鄰居使用。最完整的判讀是？",
   "options": [
     {
       "id": "A",
-      "text": "作為貫串情節並傳遞情感的意象"
+      "text": "回憶與現在沒有關聯，修門只是偶然插入的事件"
     },
     {
       "id": "B",
-      "text": "單純說明手錶的製造方式"
+      "text": "主角只想保存父親的工具，鄰居使用是文本沒有的幻想"
     },
     {
       "id": "C",
-      "text": "證明主角從未改變"
+      "text": "回憶補充人物與老屋的情感背景，現在的修門行動把記憶轉成對社區的選擇"
     },
     {
       "id": "D",
-      "text": "表示故事一定發生在工廠"
+      "text": "故事完全依照童年到現在的順序呈現，沒有任何時間切換"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ba"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "反覆出現且在結尾傳承，顯示舊手錶串聯情節並承載情感。"
+    "value": "C",
+    "explanation": "停在門口是現在主線，童年修門是背景回憶，回到現在後的修門與開放行動呼應並轉化記憶；其餘選項忽略時間切換、因果或明示資訊。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-2%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
-    "sourceLocator": "記敘文本意象與情節功能判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編記敘閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文、敘事結構與閱讀理解",
+      "observedPattern": "公立學校國文公開試題常以記敘文事件、人物、視角、描寫、段落銜接與文本推論考查閱讀能力；本題以自編敘事情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "人物、事件、描寫與篇章理解",
+      "observedPattern": "公立學校國文公開試題常以記敘文事件、人物、視角、描寫、段落銜接與文本推論考查閱讀能力；本題以自編敘事情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先整理事件與人物行動，再辨認視角、衝突、背景、場景與反覆線索如何共同推進記敘文本，最後以文本證據檢查推論強度。",
+  "solutionSteps": [
+    "讀題定位：圈出「整合判讀」與事件節點、人物行動、敘述窗口、反覆線索或結尾變化。",
+    "建立敘事鏈：排列事件因果，區分文本明示、由行動支持的推論與未知資料，再看細節如何服務人物或情節；本題核心是「停在門口是現在主線，童年修門是背景回憶，回到現在後的修門與開放行動呼應並轉化記憶；其餘選項忽略時間切換、因果或明示資訊。」",
+    "核對正解：選項 A「回憶補充人物與老屋的情感背景，現在的修門行動把記憶轉成對社區的選擇」能同時解釋前後事件與具體文本線索，而非只對應單一句子。",
+    "排除誘答：檢查是否忽略主線與背景的關係、把概述當成完整證據，或把合理暗示誇大成名次、動機與未來結果。",
+    "結論回查：用開頭—衝突—行動—結果重新檢查人物是否改變、事件是否推進，以及答案是否超過文本範圍。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

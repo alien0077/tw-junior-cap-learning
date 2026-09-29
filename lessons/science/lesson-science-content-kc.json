@@ -48,7 +48,7 @@
     "authoringNote": "Version-fused lesson is independently authored from the official curriculum, KG and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; all explanations, examples, interaction tasks and feedback are original."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "透過可反覆調整的低電壓電磁模型，連結電流、磁場方向、感應與能量轉換。",
@@ -100,6 +100,17 @@
         ],
         "answer": "A",
         "feedback": "有磁場不等於有感應；關鍵是磁通量是否改變，以及回路是否閉合。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "同一線圈先接電池使馬達轉動，再用外力轉動線圈並接上檢流計；哪個判讀最完整？",
+        "options": [
+          "前者是電能轉機械能，後者是機械能轉電能；兩者都要交代磁場、線圈運動或受力及閉合回路",
+          "兩者都只是把磁鐵變強，所以不必區分能量輸入與輸出",
+          "只要線圈存在就一定有連續電流，轉動方向不會影響檢流計偏轉"
+        ],
+        "answer": "A",
+        "feedback": "馬達與發電機可使用相似線圈，但能量方向不同；外力轉動造成磁通量改變時，閉合回路才會出現可觀察的感應電流，方向還會隨運動或接線改變。"
       }
     ]
   },
@@ -107,45 +118,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Kc：電磁現象；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Kc：電磁現象 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「電磁現象」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Kc：電磁現象」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Kc：電磁現象 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Kc：電磁現象」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一國中自然公開課程與數位資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Kc：電磁現象；公開入口定位電流、磁場、電磁感應與生活應用，完整電子課本未取得，查核日期 2026-09-01。",
-      "sourceUrl": "https://www.nani-jr.com/",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Kc：電磁現象 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "採用從電流造成磁效應，再轉向感應與能量轉換的概念路徑；正文、數據與互動均重新設計。",
-      "copyrightBoundary": "只研究公開主題定位與教學取向，不複製課文、圖表、題目、答案或教師用內容。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開課程資料",
-      "subject": "science",
-      "chapterLocator": "Kc：電磁現象；公開資料定位電磁作用、實驗觀察與裝置應用，完整電子課本未取得，查核日期 2026-09-01。",
-      "sourceUrl": "https://website.hle.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "吸收以裝置操作連結方向、變化量與能量轉換的取向，另以指南針、線圈與馬達建立原創跨情境推理。",
-      "copyrightBoundary": "只使用公開定位與教學方向，不複製教材文字、圖片、實驗步驟、題目、解析或答案。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Kc：電磁現象」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -154,8 +175,26 @@
       "edition": "南一國中自然公開資源",
       "sourceType": "public-web",
       "sourceLocator": "https://www.nani-jr.com/；Kc主題公開定位，未取得可逐頁閱讀的完整課本，查核 2026-09-01。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["通電導線與線圈能在周圍建立可觀察的磁效應", "磁通量發生改變是形成感應現象的重要條件"], "representations": ["本課以指南針偏轉、線圈檢流計與能量箭頭互相對照"], "examplesOrEvidence": ["公開入口提供主題方向；數據與情境皆為自編"], "misconceptions": ["看到磁鐵存在並不代表回路一定有感應電流", "電子移動方向不可直接取代傳統電流方向的判讀"], "assessmentEmphasis": ["由操作條件判斷磁場、感應與能量轉換"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "通電導線與線圈能在周圍建立可觀察的磁效應",
+          "磁通量發生改變是形成感應現象的重要條件"
+        ],
+        "representations": [
+          "本課以指南針偏轉、線圈檢流計與能量箭頭互相對照"
+        ],
+        "examplesOrEvidence": [
+          "公開入口提供主題方向；數據與情境皆為自編"
+        ],
+        "misconceptions": [
+          "看到磁鐵存在並不代表回路一定有感應電流",
+          "電子移動方向不可直接取代傳統電流方向的判讀"
+        ],
+        "assessmentEmphasis": [
+          "由操作條件判斷磁場、感應與能量轉換"
+        ]
+      },
       "licenseBoundary": "只使用公開定位與教學結構，不複製出版社課文、圖片、題目或答案。"
     },
     {
@@ -163,8 +202,26 @@
       "edition": "康軒國中自然公開影音資源",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；Kc主題與活動定位，查核 2026-09-01。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["透過可操作裝置觀察電流與磁場的電磁作用", "改變電流或相對運動會使可測結果產生有方向的變化"], "representations": ["本課設計電流反向、磁鐵移動速度與線圈匝數的可調模型"], "examplesOrEvidence": ["公開影音作為活動取向參考；所有文字、數據與任務自行撰寫"], "misconceptions": ["磁鐵停住時並不會持續使線圈產生感應電流", "馬達與發電機的能量轉換方向並不相同"], "assessmentEmphasis": ["先預測方向，再以變因控制和證據修正模型"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "透過可操作裝置觀察電流與磁場的電磁作用",
+          "改變電流或相對運動會使可測結果產生有方向的變化"
+        ],
+        "representations": [
+          "本課設計電流反向、磁鐵移動速度與線圈匝數的可調模型"
+        ],
+        "examplesOrEvidence": [
+          "公開影音作為活動取向參考；所有文字、數據與任務自行撰寫"
+        ],
+        "misconceptions": [
+          "磁鐵停住時並不會持續使線圈產生感應電流",
+          "馬達與發電機的能量轉換方向並不相同"
+        ],
+        "assessmentEmphasis": [
+          "先預測方向，再以變因控制和證據修正模型"
+        ]
+      },
       "licenseBoundary": "只研究公開影音的主題與活動取向，不重製字幕、圖片、題目、解析或答案。"
     },
     {
@@ -172,8 +229,26 @@
       "edition": "翰林國中自然公開資料",
       "sourceType": "public-web",
       "sourceLocator": "https://website.hle.com.tw/；Kc電磁現象之公開課程定位，完整電子課本未取得，查核 2026-09-01。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["電磁作用可由方向、強弱與裝置功能一起理解", "科學結論必須交代量測條件、證據範圍與模型限制"], "representations": ["以右手握拳規則、楞次定律定性圖與馬達／發電機比較表連結表徵"], "examplesOrEvidence": ["公開資料只作方向核對；本課案例與互動流程均為原創"], "misconceptions": ["不應把磁場方向直接當成導線受力方向", "看到燈泡發亮也不能忽略能量來源與回路條件"], "assessmentEmphasis": ["用模型說明方向、條件、證據與能量轉換"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "電磁作用可由方向、強弱與裝置功能一起理解",
+          "科學結論必須交代量測條件、證據範圍與模型限制"
+        ],
+        "representations": [
+          "以右手握拳規則、楞次定律定性圖與馬達／發電機比較表連結表徵"
+        ],
+        "examplesOrEvidence": [
+          "公開資料只作方向核對；本課案例與互動流程均為原創"
+        ],
+        "misconceptions": [
+          "不應把磁場方向直接當成導線受力方向",
+          "看到燈泡發亮也不能忽略能量來源與回路條件"
+        ],
+        "assessmentEmphasis": [
+          "用模型說明方向、條件、證據與能量轉換"
+        ]
+      },
       "licenseBoundary": "只使用公開主題與評量方向，不複製教材文字、圖片、實驗、題目、解析或答案。"
     }
   ],
@@ -249,9 +324,34 @@
       "objective": "區分通電產生磁場、電流在磁場中受力，以及磁通量改變造成感應電流三種機制，並說明模型成立的條件。",
       "predictionPrompt": "若把電流反向、讓磁鐵停止，或把線圈改成斷路，指南針、檢流計與燈泡各會出現什麼變化？請先畫箭頭並寫理由。",
       "steps": [
-        {"id":"step-1","action":"把低電壓電池接到直導線，拖曳指南針到導線東側並反接電池。","equation":"B ∝ I；I → −I 時 B → −B","reason":"電流方向反轉會使導線周圍環繞的磁場方向反轉，指南針的偏轉也應跟著改變。","feedback":"若你只說磁場變強或變弱，還沒有回答方向；請用右手握拳規則標示拇指與四指方向。"},
-        {"id":"step-2","action":"把磁鐵以慢速與快速分別推入閉合線圈，記錄檢流計偏轉方向與幅度。","equation":"|ε| ∝ |ΔΦ/Δt|","reason":"感應的重點不是磁鐵是否存在，而是穿過線圈的磁通量是否改變；更快的改變通常帶來較大的感應電壓。","feedback":"如果磁鐵停住後仍預測檢流計持續偏轉，請重新檢查『改變率』與回路閉合兩個條件。"},
-        {"id":"step-3","action":"切換線圈匝數並比較馬達接電與外力轉動時的輸出。","equation":"馬達：電能→機械能；發電機：機械能→電能","reason":"同類線圈在外加磁場中通電會受力轉動；反過來由外力轉動則造成感應，兩者的能量方向不同。","feedback":"裝置外形相似不代表功能相同；請在圖上補出能量輸入、磁場作用與輸出端。"}
+        {
+          "id": "step-1",
+          "action": "把低電壓電池接到直導線，拖曳指南針到導線東側並反接電池。",
+          "equation": "B ∝ I；I → −I 時 B → −B",
+          "reason": "電流方向反轉會使導線周圍環繞的磁場方向反轉，指南針的偏轉也應跟著改變。",
+          "feedback": "若你只說磁場變強或變弱，還沒有回答方向；請用右手握拳規則標示拇指與四指方向。"
+        },
+        {
+          "id": "step-2",
+          "action": "把磁鐵以慢速與快速分別推入閉合線圈，記錄檢流計偏轉方向與幅度。",
+          "equation": "|ε| ∝ |ΔΦ/Δt|",
+          "reason": "感應的重點不是磁鐵是否存在，而是穿過線圈的磁通量是否改變；更快的改變通常帶來較大的感應電壓。",
+          "feedback": "如果磁鐵停住後仍預測檢流計持續偏轉，請重新檢查『改變率』與回路閉合兩個條件。"
+        },
+        {
+          "id": "step-3",
+          "action": "切換線圈匝數並比較馬達接電與外力轉動時的輸出。",
+          "equation": "馬達：電能→機械能；發電機：機械能→電能",
+          "reason": "同類線圈在外加磁場中通電會受力轉動；反過來由外力轉動則造成感應，兩者的能量方向不同。",
+          "feedback": "裝置外形相似不代表功能相同；請在圖上補出能量輸入、磁場作用與輸出端。"
+        },
+        {
+          "id": "step-4",
+          "action": "先讓低電壓馬達帶動線圈，再切斷電池、以外力轉動線圈並接上檢流計；比較兩段箭頭。",
+          "equation": "馬達：電能→機械能；發電機：機械能→電能；ε ∝ −ΔΦ/Δt",
+          "reason": "同一類線圈可在通電時因磁場受力而輸出轉動，也可在外力改變磁通量時輸出感應電壓；判讀必須同時標明能量方向、閉合回路及感應方向。",
+          "feedback": "若只寫『線圈會動所以有電』，請補上是誰提供能量、磁通量是否改變，以及檢流計是否形成閉合回路。"
+        }
       ],
       "evidencePrompt": "哪一筆觀察能區分『有磁場』與『有感應電流』？請指出控制條件、讀值或方向證據，並寫出一項模型限制。"
     },
@@ -277,6 +377,6 @@
       "用『產生磁場—在磁場中受力—磁通量改變而感應』三欄模型，診斷把磁場、電流與受力方向混為一談的迷思。",
       "以馬達與發電機的能量箭頭收束，要求學生提出回路、相對運動與傳統電流方向的限制。"
     ],
-    "llmSynthesisNote": "本課依官方課綱、kg-science-content-kc 與 2026-09-01 可取得的南一、康軒、翰林公開定位與教學取向交叉整理；未取得可合法逐頁閱讀的完整三版本課本，故保留研究限制。正文、例證、互動模型、練習與回饋由 LLM 針對 Kc 電磁現象獨立以自己的話撰寫，未複製出版社文字、圖片、題目、解析或答案；Terra 第二輪尚未執行，維持 draft。"
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-kc、南一／康軒／翰林公開資源限制與三筆公立學校／公開自然科評量能力模式，獨立融合電流磁效應、電磁力、磁通量、感應、電磁鐵、馬達、發電機與公平實驗。原有題目已全部改為電磁現象專屬題目；所有題幹、選項、答案、互動回饋與五步解法均重新撰寫，未複製受保護內容；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

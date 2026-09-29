@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-4-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-4／事實與意見」task, what is the best way to prepare question 5?",
+  "prompt": "A poster says, “The pool is 25 meters long, so it is the perfect place for serious training.” Which part is an opinion?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-4／事實與意見."
+      "text": "25 meters long"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-4／事實與意見."
+      "text": "the pool"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-4／事實與意見."
+      "text": "the perfect place for serious training"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-4／事實與意見."
+      "text": "is"
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-4"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-4／事實與意見, question 5."
+    "value": "C",
+    "explanation": "25公尺是可測量的事實；perfect place 是依使用標準作出的評價，因此選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.gwjh.hc.edu.tw/uploads/1657779406519Z2tyBta9.pdf",
+    "sourceLocator": "PDF第4頁第52題：根據披薩介紹判斷哪項敘述不符合文章；第51–52題共同使用同一閱讀文本。",
+    "authoringNote": "參照公立國中英文定期評量中核對文章事實、作者觀點、圖表證據、預測及行動判讀的能力；情境、題幹、數據、選項、答案與解析皆獨立編寫，未複製原題。版本研究與全案內容審查未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.gwjh.hc.edu.tw/uploads/1657779406519Z2tyBta9.pdf",
+      "title": "新竹市立光武國中110學年度第2學期七年級第3次段考英文科試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第4頁第52題：根據披薩介紹判斷哪項敘述不符合文章；第51–52題共同使用同一閱讀文本。",
+      "observedPattern": "參照以文本資訊核對具評價色彩的敘述；本題游泳池文宣為全新素材。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把句子切成可量測資料與評價結論；數字長度可量測，但「完美」取決於訓練者需求及標準。",
+  "solutionSteps": [
+    "先找可直接測量的資料：泳池長25公尺。",
+    "再找由資料延伸出的評價：它是否適合認真訓練。",
+    "perfect 是絕對且帶評價的詞；只知道池長，無法證明對所有訓練者都完美。",
+    "因此意見部分是 the perfect place for serious training，選 C。",
+    "若要支持這項意見，還需明確標準，例如泳道、深度、設備和訓練目標。"
+  ]
 }

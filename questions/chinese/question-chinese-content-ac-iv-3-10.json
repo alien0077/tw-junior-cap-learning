@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ac-iv-3-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列哪個句子前後語意最連貫？",
+  "prompt": "只有一張『活動滿意度 80%』的圖表，沒有樣本數、題目內容或調查日期；可以下哪個結論？",
   "options": [
     {
       "id": "A",
-      "text": "先觀察資料，再提出結論"
+      "text": "全校所有人都滿意。"
     },
     {
       "id": "B",
-      "text": "只抄錄表面資訊"
+      "text": "在缺少樣本與題目資訊下，只能暫記為圖表呈現 80%，不能判定代表全體。"
     },
     {
       "id": "C",
-      "text": "只依直覺猜測"
+      "text": "活動一定值得永久舉辦。"
     },
     {
       "id": "D",
-      "text": "不核對任何證據"
+      "text": "80%代表每個人都給了相同分數。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「先觀察資料，再提出結論」符合研究步驟的先後邏輯，因此語意連貫。"
+    "value": "B",
+    "explanation": "缺少樣本數、抽樣方式、題目與日期，80% 的代表範圍不明；只能描述圖表數字並要求補資料。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "文句連貫與邏輯；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究證據、前提、結論、條件、因果與建議的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫可檢查文句推論題；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ac-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ac-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解與文句推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀與推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先區分圖表上看見的數字與數字能代表的母體，再檢查測量定義與時間。",
+  "solutionSteps": [
+    "記錄目前唯一可見的是圖表標示『80%』。",
+    "樣本數、題目內容與日期缺失，無法判斷誰被調查及滿意的定義。",
+    "B 保留可確認的圖表資訊並標出推論限制。",
+    "A、C、D 都把不明資料擴大成全體或價值結論。",
+    "要求補充調查方法後，再判斷 80% 是否能支持更大的主張。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

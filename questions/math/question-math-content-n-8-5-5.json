@@ -2,23 +2,23 @@
   "id": "question-math-content-n-8-5-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "前 8 個正奇數 1、3、5、…、15 的和為何？",
+  "prompt": "某階梯第一階有 6 級座位，每往後一排增加 2 個座位，共 12 排，總座位數是多少？",
   "options": [
     {
       "id": "A",
-      "text": "56"
+      "text": "192"
     },
     {
       "id": "B",
-      "text": "72"
+      "text": "204"
     },
     {
       "id": "C",
-      "text": "32"
+      "text": "216"
     },
     {
       "id": "D",
-      "text": "64"
+      "text": "228"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "這是 8 項等差數列，首尾平均為 (1＋15)÷2＝8，和為 8×8＝64。"
+    "value": "B",
+    "explanation": "末排 6＋11×2＝28，總數＝12×(6＋28)÷2＝204，所以選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究等差級數首尾平均、項數、求和公式與生活情境能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供等差級數求和、首末項、項數與情境累計能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等差級數方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-n-8-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-8-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "arithmetic-series sums, first and last terms, number of terms, sum formulas, and contextual accumulation",
+      "observedPattern": "公立學校公開數學試題常要求計算等差級數前 n 項和、由首末項與項數求總和，並把逐排增加或累計情境轉成等差級數；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "arithmetic-series sums, first and last terms, number of terms, sum formulas, and contextual accumulation",
+      "observedPattern": "公立學校公開數學試題常要求計算等差級數前 n 項和、由首末項與項數求總和，並把逐排增加或累計情境轉成等差級數；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把每排座位視為等差數列，先求末排再求總和。",
+  "solutionSteps": [
+    "設定首項 6、公差 2、項數 12。",
+    "求末項 6＋(12−1)×2＝28。",
+    "計算首末和 6＋28＝34。",
+    "總座位 12×34÷2＝204。",
+    "選 B，確認第 1 到第 12 排都被計入。"
+  ]
 }

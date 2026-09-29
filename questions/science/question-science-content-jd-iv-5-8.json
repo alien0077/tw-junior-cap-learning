@@ -2,41 +2,78 @@
   "id": "question-science-content-jd-iv-5-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年6月12日自然科教室的觀察中，以pH 計測得某溶液 pH＝2，研究「Jd-Ⅳ-5：酸、鹼、鹽的生活應用與危險性」時，最合理的判斷為何？",
+  "prompt": "接觸不明酸、鹼或鹽類粉末時，哪項操作最適當？",
   "options": [
     {
       "id": "A",
-      "text": "此溶液呈中性，因為 pH＝2 且使用pH 計"
+      "text": "先查標示與安全資料，戴防護具並避免直接聞、摸或入口"
     },
     {
       "id": "B",
-      "text": "此溶液呈鹼性，因為 pH＝2 且使用pH 計"
+      "text": "用舌頭少量試味道"
     },
     {
       "id": "C",
-      "text": "「Jd-Ⅳ-5：酸、鹼、鹽的生活應用與危險性」樣本呈酸性（pH＝2，由pH 計測得）"
+      "text": "用手指判斷是否溶解"
     },
     {
       "id": "D",
-      "text": "不必讀取pH 計數值，只看容器外觀就能判斷酸鹼性"
+      "text": "直接和另一種藥品混合觀察"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jd-iv-5"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "pH 小於 7 的水溶液呈酸性；pH＝2，因此判定為酸性。 本題對應 KG「Jd-Ⅳ-5：酸、鹼、鹽的生活應用與危險性」。"
+    "value": "A",
+    "explanation": "未知化學品可能有腐蝕、刺激或毒性，應先查資料、做好防護並由合格人員處理，不可用人體測試。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的酸、鹼、鹽生活應用、成分標示、腐蝕與安全能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jd-iv-5"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jd-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼鹽生活應用、標示、反應與安全資料",
+      "pattern": "取由生活物質性質、酸鹼鹽反應及安全資訊判斷用途與危險性的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生活物質性質、酸鹼鹽反應及安全資訊判斷用途與危險性的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼、鹽類、清潔用品、腐蝕與生活情境",
+      "pattern": "取從成分標示、資料表與生活情境推論物質用途及風險的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從成分標示、資料表與生活情境推論物質用途及風險的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "以危害辨識和標準操作取代猜測性試驗。",
+  "solutionSteps": [
+    "停止不必要的接觸。",
+    "確認容器標示或請教師長協助。",
+    "使用適當護目鏡、手套和通風。",
+    "不聞、不摸、不嘗、不任意混合。",
+    "因此 A 是安全作法。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

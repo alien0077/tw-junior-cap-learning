@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年10月25日河川觀測站的觀察中，小車在 36 秒內前進 1719 m，研究「Ba：能量的形式與轉換」時，平均速率為何？",
+  "prompt": "能量守恆定律表示什麼？",
   "options": [
     {
       "id": "A",
-      "text": "61884 m/s"
+      "text": "所有裝置效率都是 100%"
     },
     {
       "id": "B",
-      "text": "47.75 m/s"
+      "text": "熱能不能轉換"
     },
     {
       "id": "C",
-      "text": "0.0209424 m/s"
+      "text": "能量只能保持原來形式"
     },
     {
       "id": "D",
-      "text": "1683 m/s"
+      "text": "封閉系統總能量可轉換但不會憑空增加或消失"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "平均速率＝路程÷時間＝1719÷36＝47.75 m/s。 本題對應 KG「Ba：能量的形式與轉換」。"
+    "value": "D",
+    "explanation": "能量可在形式與物體間轉移，封閉系統總量守恆；實際裝置常有不可避免的耗散。 正確答案為選項 D：「封閉系統總能量可轉換但不會憑空增加或消失」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究能量形式、轉換、守恆、效率、熱能與能源分類能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的能量形式、轉換、守恆、功率與效率能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "能量轉換、功、功率、效率與資料判讀",
+      "pattern": "取由運動、電器、熱與系統邊界資料追蹤能量形式和轉換的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由運動、電器、熱與系統邊界資料追蹤能量形式和轉換的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分總能量守恆與有用能量比例。",
+  "solutionSteps": [
+    "定位概念：圈出 Ba 能量形式、轉換、守恆、效率或系統邊界。",
+    "整理證據：分開輸入、儲存、有用輸出、耗散與系統範圍。",
+    "套用原理：能量可在形式與物體間轉移，封閉系統總量守恆；實際裝置常有不可避免的耗散。",
+    "排除干擾：依能量守恆、效率公式與實驗控制檢查，正確選項是「封閉系統總能量可轉換但不會憑空增加或消失」。",
+    "最後回查：答案「封閉系統總能量可轉換但不會憑空增加或消失」符合題幹，沒有把能量轉換誤寫成消失。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

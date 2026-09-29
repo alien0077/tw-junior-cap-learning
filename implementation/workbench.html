@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Implementation Guide Interactive Workbench</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, sans-serif; }
+    body { max-width: 960px; margin: 0 auto; padding: 1rem; line-height: 1.6; }
+    #unit { display: block; width: 100%; max-width: 100%; min-width: 0; box-sizing: border-box; }
+    .interactive-block { border: 1px solid #ccd3dc; border-radius: 12px; padding: 1rem; margin: 1rem 0; }
+    .interactive-controls { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1rem 0; }
+    button, input { min-height: 44px; font: inherit; }
+    button { padding: .5rem .8rem; cursor: pointer; }
+    .interactive-status { display: block; padding: .5rem; background: #f2f6fa; }
+    .visualization-summary { overflow-wrap: anywhere; border: 1px dashed #9aa7b5; padding: .7rem; }
+    .visualization-summary ul { margin: .4rem 0 0; padding-inline-start: 1.4rem; }
+    .component-visual-body { overflow-wrap: anywhere; background: #fbfcfe; border: 1px solid #d8dee6; padding: .7rem; margin: .7rem 0; }
+    .component-visual-body dl { display: grid; grid-template-columns: minmax(7rem, 14rem) 1fr; gap: .2rem .7rem; }
+    .component-visual-body dt { font-weight: 700; }
+    .component-visual-body dd { margin: 0; }
+    .data-explorer-lab { display: grid; gap: .65rem; min-width: 0; border: 2px solid #346b75; border-radius: 12px; padding: 1rem; background: #f4fbfc; }
+    .data-explorer-lab label { display: grid; gap: .35rem; overflow-wrap: anywhere; font-weight: 650; }
+    .data-explorer-lab input { width: 100%; min-width: 0; box-sizing: border-box; }
+    .data-explorer-lab button { justify-self: start; min-width: 8rem; }
+    .data-explorer-feedback, .data-explorer-result { min-height: 1.5em; overflow-wrap: anywhere; }
+    .data-explorer-lab :focus-visible { outline: 3px solid #174ea6; outline-offset: 2px; }
+    .genre-reading-lab { display: grid; gap: .65rem; min-width: 0; border: 2px solid #346b75; border-radius: 12px; padding: 1rem; background: #f4fbfc; }
+    .genre-reading-lab label { display: grid; gap: .35rem; overflow-wrap: anywhere; font-weight: 650; }
+    .genre-reading-lab input { width: 100%; min-width: 0; box-sizing: border-box; }
+    .genre-reading-sources { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .genre-reading-sources button[aria-pressed="true"] { outline: 3px solid #174ea6; font-weight: 750; }
+    .genre-reading-observation { border-left: 4px solid #346b75; padding: .5rem .8rem; background: white; overflow-wrap: anywhere; }
+    .genre-reading-feedback { min-height: 1.5em; overflow-wrap: anywhere; }
+    .genre-reading-lab :focus-visible { outline: 3px solid #174ea6; outline-offset: 2px; }
+    .guided-activity { border: 2px solid #566b8e; border-radius: 12px; padding: 1rem; margin: 1rem 0; background: #f7f9fc; }
+    .guided-activity label { display: grid; gap: .5rem; font-weight: 650; }
+    .guided-activity input { width: 100%; box-sizing: border-box; }
+    .guided-activity-feedback { min-height: 1.5em; }
+    .guided-activity-hint { border-left: 4px solid #a65c00; padding-left: .7rem; }
+    .guided-activity button:focus-visible, .guided-activity input:focus-visible { outline: 3px solid #174ea6; outline-offset: 2px; }
+    @media (max-width: 480px) { body { padding: .65rem; } .component-visual-body dl { display: block; } .component-visual-body dd { margin-bottom: .4rem; } .data-explorer-lab { padding: .7rem; } }
+    .interactive-fallback { border-left: 4px solid #6b7280; padding-left: .7rem; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>互動契約 Workbench</h1>
+    <p>此頁驗證共用 predict → manipulate → observe → explain → verify 互動殼層、鍵盤操作、文字 fallback 與 state serialization。</p>
+    <label>選擇 unit：<select id="unit"></select></label>
+    <p id="unit-status" aria-live="polite">載入 1,027 份 unit specs…</p>
+    <div id="mount"></div>
+  </main>
+  <script type="module">
+    import { renderStudentLesson } from "./runtime/student-lesson-shell.js?v=20260908-state-persistence-hash";
+    const select = document.querySelector("#unit");
+    const mount = document.querySelector("#mount");
+    const status = document.querySelector("#unit-status");
+    const bundle = await fetch("./unit-specs.bundle.json").then(response => response.json());
+    for (const unit of bundle.units) {
+      const option = document.createElement("option");
+      option.value = unit.lessonId;
+      option.textContent = `${unit.subject} · ${unit.lessonId} · ${unit.title}`;
+      select.append(option);
+    }
+    function renderSelected() {
+      mount.replaceChildren();
+      const spec = bundle.units.find(unit => unit.lessonId === select.value);
+      renderStudentLesson({ document, mount, spec });
+      status.textContent = `已載入 ${bundle.units.length} 份 unit specs；目前 ${spec.lessonId}／${spec.interactiveBlocks[0].component}；狀態仍為 ${spec.status.implementationStatus}／${spec.status.qaStatus}`;
+    }
+    select.addEventListener("change", renderSelected);
+    select.value = "cur-math-content-a-8-1";
+    renderSelected();
+  </script>
+</body>
+</html>

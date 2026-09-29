@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-s-iv-6",
   "subject": "math",
-  "title": "s-Ⅳ-6：相似與縮放",
+  "title": "s-Ⅳ-6：用比例與角度判斷相似圖形",
   "knowledgeIds": [
     "kg-math-performance-s-iv-6"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「相似與縮放」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "相似圖形的對應角相等、對應邊成同一比例，形狀相同但大小可以不同。縮放因子 k 會讓長度乘上 k；面積則乘上 k²，不能把長度比例直接套到面積。本課以地圖、模型包裝與座標圖形的自編情境，練習建立對應、用角角或邊角邊判斷相似、求未知長度，並檢查單位與縮放後的面積意義。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「相似與縮放」相關的關係。"
+        "heading": "相似不是全等",
+        "body": "相似圖形可大小不同，但對應角相等、對應邊比例固定；全等則還要求對應長度相同。先建立對應順序，再談比例，避免把形狀相同誤當大小相同。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「相似與縮放」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "由角與邊建立對應",
+        "body": "兩組對應角相等可支持相似，或用兩組對應邊成比例且夾角相等判斷。角度數值相同但對應位置不清楚時，仍需整理頂點與邊的順序。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「相似與縮放」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "縮放因子與面積",
+        "body": "若長度縮放為 k 倍，周長也為 k 倍，但面積由兩個方向的長度共同決定，會變成 k² 倍。求面積前先確認使用的是邊長比例而非面積比例。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「相似與縮放」，並指出至少一項支持判斷的條件。"
+        "heading": "單位與模型限制",
+        "body": "地圖比例、模型尺寸與實物長度要使用一致單位；若圖形不是同形縮放，不能直接使用相似比例。最後用角度、比例、單位與估算回查。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「相似與縮放」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先找對應角與對應邊，固定順序再列比例。",
+    "相似保留角度與邊長比例，全等還要大小相同。",
+    "長度和周長乘 k，面積乘 k²。",
+    "用單位、角度、比例和情境範圍檢查。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「相似與縮放」並驗算結果。",
-    "scenario": "以「s-Ⅳ-6：相似與縮放」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "建立對應關係並用縮放因子處理長度、周長與面積。",
+    "scenario": "調整相似圖形的邊長與角度，觀察 k 與 k² 對不同量的影響。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "原圖對應長度"
+      },
+      {
+        "symbol": "y",
+        "meaning": "縮放後對應長度"
+      },
+      {
+        "symbol": "k",
+        "meaning": "長度縮放因子"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「相似與縮放」的第一步是什麼？",
+        "prompt": "相似圖形的對應邊應符合什麼關係？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "比例固定",
+          "必須完全相等",
+          "只要面積相等"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "相似保留對應角並使對應邊比例固定。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "長度放大 2.5 倍，面積應放大幾倍？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "6.25 倍",
+          "2.5 倍",
+          "5 倍"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "面積有兩個方向的長度，比例為 k²=2.5²=6.25。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "兩三角形兩角相等時，最適合先判斷什麼？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "相似，不直接判全等",
+          "一定全等",
+          "一定面積相等"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "角角可固定形狀，但仍可能有不同縮放大小。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "s-Ⅳ-6：相似與縮放；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；s-Ⅳ-6：相似與縮放：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「相似與縮放」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「s-Ⅳ-6：相似與縮放」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；s-Ⅳ-6：相似與縮放：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「s-Ⅳ-6：相似與縮放」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；s-Ⅳ-6：相似與縮放：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「s-Ⅳ-6：相似與縮放」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「相似與縮放」",
-        "body": "以「相似與縮放」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "地圖縮小後道路形狀變了嗎？",
+        "body": "原創校園地圖把矩形操場縮成一張口袋地圖，請學習者比較長寬、角度和面積。先讓學生找出哪些量乘同一個倍數，再討論地圖與實地距離如何用比例換算，建立相似圖形可改變大小但保留形狀的觀念。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「相似與縮放」的概念架構",
-        "body": "本單元依官方課綱所列的「相似與縮放」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "先對應再列比例",
+        "body": "以三角形 ABC 與 A'B'C' 示範，先用角標記配對頂點，再列 AB/A'B'=BC/B'C'=CA/C'A'。若兩組角相等，可用角角判斷相似；若已知邊角，則檢查夾角與比例，不能只挑看起來相近的邊。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「s-Ⅳ-6：相似與縮放」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "由縮放因子求未知邊與面積",
+        "body": "小模型長 6 公分、寬 4 公分，放大到長 15 公分，縮放因子為 15/6=2.5，故寬為 10 公分；原面積 24 平方公分，放大後面積是 24×2.5²=150 平方公分。最後核對長寬比例與平方單位。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「相似與縮放」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "分清長度比例與面積比例",
+        "body": "提供地圖、相似三角形與一組只角度相似但邊比不一致的資料。學習者先列對應邊比例，再判斷求的是長度、周長或面積；對把 k 直接乘到面積的錯誤，要求用兩個方向的長度說明為何應用 k²。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「相似與縮放」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "模型包裝的比例決策",
+        "body": "原創包裝模型用 1:4 比例製作，學習者先將實物長寬高換算成模型尺寸，再估算表面展開圖的面積。若只改變高度而不按同一因子改變寬度，需指出模型不再與原物相似，不能沿用單一比例。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「相似與縮放」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "修正角度相同就全等",
+        "body": "請修正『兩個三角形有兩個角相等，所以一定全等』。先指出角角只能支持相似，不能決定邊長大小；再給縮放因子 2 的反例，說明對應邊不同但比例固定，最後區分相似與全等。"
       }
     ],
     "summary": [
-      "先用自己的話界定「相似與縮放」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "相似圖形角相等、對應邊比例固定；全等還要求對應長度相同。",
+      "先建立對應順序，再用角角或邊角邊條件列比例。",
+      "長度與周長乘縮放因子 k，面積乘 k²。",
+      "用單位、比例、角度與模型條件回查。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「相似與縮放」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "相似與全等的主要差別是什麼？",
+        "expectedEvidence": "相似保留角度與固定邊比，大小可不同；全等還要求對應邊長相等。"
       },
       {
-        "prompt": "在「相似與縮放」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "長 6、寬 4 的模型放大到長 15，寬與面積如何求？",
+        "expectedEvidence": "k=2.5，寬 10；原面積 24，放大後 24×2.5²=150 平方公分。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「相似與縮放」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼角角相等通常只能判斷相似？",
+        "expectedEvidence": "角度固定形狀但不決定大小，縮放兩倍仍角相等、邊長不同，因此不能直接判全等。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『s-Ⅳ-6：用比例與角度判斷相似圖形』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整相似圖形的邊長與角度，觀察 k 與 k² 對不同量的影響。』開始前，先回答：相似圖形的對應邊應符合什麼關係？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整相似圖形的邊長與角度，觀察 k 與 k² 對不同量的影響。』回答：兩三角形兩角相等時，最適合先判斷什麼？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "相似圖形的對應邊應符合什麼關係？；操作時先預測，再依『s-Ⅳ-6：用比例與角度判斷相似圖形』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-6：用比例與角度判斷相似圖形)：答案 A；選項內容：比例固定",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。相似保留對應角並使對應邊比例固定。",
+          "feedback": "相似保留對應角並使對應邊比例固定。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "長度放大 2.5 倍，面積應放大幾倍？；操作時先預測，再依『s-Ⅳ-6：用比例與角度判斷相似圖形』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-6：用比例與角度判斷相似圖形)：答案 A；選項內容：6.25 倍",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。面積有兩個方向的長度，比例為 k²=2.5²=6.25。",
+          "feedback": "面積有兩個方向的長度，比例為 k²=2.5²=6.25。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "兩三角形兩角相等時，最適合先判斷什麼？；操作時先預測，再依『s-Ⅳ-6：用比例與角度判斷相似圖形』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-6：用比例與角度判斷相似圖形)：答案 A；選項內容：相似，不直接判全等",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。角角可固定形狀，但仍可能有不同縮放大小。",
+          "feedback": "角角可固定形狀，但仍可能有不同縮放大小。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；相似、比例與縮放的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以相似圖形的角度與邊長比例處理縮放",
+          "公開課程結構支持以對應角、邊長比例與縮放因子判斷相似關係。"
+        ],
+        "representations": [
+          "地圖、相似三角形、對應點與比例表"
+        ],
+        "examplesOrEvidence": [
+          "本課的地圖、模型包裝與座標圖形均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把相似誤認全等，或把面積比例當長度比例"
+        ],
+        "assessmentEmphasis": [
+          "要求建立對應、列比例並檢查單位與量的種類"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；相似、比例與縮放的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過模型與圖形操作理解相似和縮放因子",
+          "公開課程結構支持以對應角、邊長比例與縮放因子判斷相似關係。"
+        ],
+        "representations": [
+          "模型包裝、透明圖、角標記與 k 倍操作"
+        ],
+        "examplesOrEvidence": [
+          "本課的地圖、模型包裝與座標圖形均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "只比一條邊，或未確認角的對應順序"
+        ],
+        "assessmentEmphasis": [
+          "重視操作歷程、角邊條件與比例驗證"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf；相似、比例與縮放的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "連結地圖、模型、面積與實際尺度限制",
+          "公開課程結構支持以對應角、邊長比例與縮放因子判斷相似關係。"
+        ],
+        "representations": [
+          "比例尺、三維模型、表面面積與單位換算"
+        ],
+        "examplesOrEvidence": [
+          "本課的地圖、模型包裝與座標圖形均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "改變單一方向仍套相似公式，或忽略 k²"
+        ],
+        "assessmentEmphasis": [
+          "評估模型、量的維度、單位與實際限制"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持以對應角、邊比例與縮放因子理解相似。",
+      "角角、邊角條件與對應順序是共同判斷工具。",
+      "長度、周長、面積、單位與模型限制需分開檢查。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯相似條件與比例；康軒較突顯模型、透明圖與縮放操作；翰林較突顯比例尺、面積及實際單位限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以校園地圖縮放區分形狀保留與大小改變。",
+      "以 k=2.5 的模型同時計算長度、寬度與面積 k²。",
+      "把角角相似反例、包裝比例、單位與維度整合成互動任務。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織相似、比例、縮放因子、面積平方比例與實際模型。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

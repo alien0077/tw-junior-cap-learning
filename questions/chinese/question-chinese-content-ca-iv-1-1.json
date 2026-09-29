@@ -2,38 +2,76 @@
   "id": "question-chinese-content-ca-iv-1-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀介紹地方小吃的文章時，哪項資訊最能呈現飲食文化？",
+  "prompt": "介紹港邊魚湯時，資料說它原是船工出港前快速吃的熱食，後來改用紙碗外帶。哪項解讀最有根據？",
   "options": [
     {
       "id": "A",
-      "text": "食材、製作方式與地方生活背景"
+      "text": "飲食形式隨工作節奏、容器與消費方式改變，仍保留地方記憶"
     },
     {
       "id": "B",
-      "text": "只看標題，不讀內容"
+      "text": "只要改用紙碗就表示傳統完全消失"
     },
     {
       "id": "C",
-      "text": "只憑個人印象判斷"
+      "text": "魚湯味道一定比其他地方更好"
     },
     {
       "id": "D",
-      "text": "忽略題目條件"
+      "text": "所有港口都必然有相同魚湯"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ca-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "飲食文化不只是味道，也包含食材、技法與地方生活脈絡。"
+    "explanation": "資料同時提供工作情境與後來的容器變化，因此只能推論飲食與生活方式互相調整，不能擴大成味道或普遍性判斷。"
   },
   "provenance": {
     "origin": "original",
-    "license": "All rights reserved", "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf", "sourceLocator": "飲食文化閱讀；獨立命題", "authoringNote": "獨立改編，非原題重製"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究飲食、服飾、建築、交通、名勝與休閒文化的判讀方式。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫生活文化文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ca-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ca-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文化生活與資料判讀",
+      "observedPattern": "公立學校國文評量要求從飲食、服飾、建築、交通、名勝與休閒資料判讀生活方式及文化脈絡；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "生活文化、說明與推論",
+      "observedPattern": "公立學校國文評量要求從飲食、服飾、建築、交通、名勝與休閒資料判讀生活方式及文化脈絡；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把資料中的明示變化和未提供的價值判斷分開。",
+  "solutionSteps": [
+    "圈出船工、快速、紙碗外帶等線索。",
+    "比較早期功能與後來消費情境。",
+    "只保留能由線索支持的文化推論。",
+    "A 同時連結飲食、工作與地方記憶。",
+    "檢查是否把一地資料誤推成所有港口。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

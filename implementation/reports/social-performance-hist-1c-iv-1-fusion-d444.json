@@ -1,0 +1,59 @@
+{
+  "decisionId": "D-444",
+  "date": "2026-09-29",
+  "phase": "social-performance-hist-1c-iv-1-missing-fusion-manuscript",
+  "status": "authored-and-structurally-validated",
+  "scope": {
+    "lessonId": "lesson-social-performance-hist-1c-iv-1",
+    "rosterBefore": "771/791",
+    "rosterAfter": "772/791 (97.60%); 19 remain",
+    "changedQuestions": false,
+    "changedOtherRosteredLessons": false
+  },
+  "questionSources": {
+    "command": "python3 scripts/audit_question_exam_rewrites.py",
+    "result": "PASS; 10566/10566 recorded; pending 0",
+    "questionFilesChanged": false
+  },
+  "curriculumAndKnowledge": {
+    "curriculumPath": "curriculum/social/performance-hist-1c-iv-1.json",
+    "curriculumCode": "歷1c-Ⅳ-1",
+    "knowledgeId": "kg-social-performance-hist-1c-iv-1",
+    "officialLocator": "NAER Social Studies curriculum PDF, body pp.8-12 / PDF pp.12-16"
+  },
+  "publisherAndPublicEvidence": [
+    {
+      "publisher": "nani",
+      "evidence": "109 public curriculum-plan compilation search locator contains a Nani grade-7 volume-1 marker and historical performance 1c-IV-1 at printed pp.116-120. It combines multiple schools/subjects; their relationship is unverified and explicitly treated as low-confidence, not Nani chapter reading."
+    },
+    {
+      "publisher": "kanghsuan",
+      "evidence": "Hu-Wen Senior High JH division 114-1 public plan search result identifies Kang Hsuan as textbook and includes history performance 1c-IV-1. It describes school-level adaptation and supplementary materials, not readable publisher chapter content."
+    },
+    {
+      "publisher": "hanlin",
+      "evidence": "Xingang JH 114 history plan search result identifies Hanlin volumes 5-6 and lists history performance 1c-IV-1 in its ancient-civilization unit; it is a school curriculum crosswalk, not publisher text."
+    },
+    {
+      "publicHistorySources": "NMTH 1908 Taiwan longitudinal railway postcard records the object, issuer, and depicted 1895/1908 route comparison; Taiwan Provincial Historical Archives and National Archives Administration describe railway construction, military/administrative context, and 1908 through-service."
+    },
+    {
+      "comparativeScholarship": "NAER Journal of Textbook Research vol.8 no.1 comparative study reviews older Nani, Kang Hsuan, Hanlin textbook narratives; used only to prompt scrutiny of selection/framing, not as evidence of current edition differences."
+    }
+  ],
+  "synthesis": "Replaced four generic learner-facing sections and six generic teaching placeholders with six original sections built around a verifiable historical event and a source-provenance problem. The lesson separates event claims from causal/meaning interpretations, treats the official commemorative postcard as evidence of its issuer's framing rather than collective public opinion, compares transport integration with colonial administration/resource-control interpretations, narrows conclusions to evidence scope, and transfers the method to CAP-style image/source questions. Corrected previously misattributed publisherResearch records; added three scoped versionResearch records, original fusionRecord, direct curriculum and primary-history references. No publisher full-text coverage is claimed.",
+  "alignment": {
+    "contentSections": 6,
+    "teachingBody": 6,
+    "headingAndBodyParity": "6/6 exact",
+    "lessonStatus": "draft; final content review reserved for user's ChatGPT and is not a Codex fusion-writing gate",
+    "interactionSpec": "Pending; existing TimelineCausalBlock is generic and does not yet express source comparison and claim-evidence-reasoning-limitation moves"
+  },
+  "validation": {
+    "fullData": "PASS: scripts/validate_data.py, 14552 JSON files, 13114 IDs, 1032 KG nodes",
+    "fusionInventory": "PASS: scripts/inventory_authored_fusion_drafts.py, 772/791; learning-content 583/583; learning-performance 189/208; long-form marker 602",
+    "questionSourceLedger": "PASS: scripts/audit_question_exam_rewrites.py, 10566/10566 recorded, pending 0",
+    "humanContentReview": "Not performed by Codex; assigned to user's ChatGPT workflow"
+  },
+  "commitPush": "Not performed; overall goal remains active"
+}

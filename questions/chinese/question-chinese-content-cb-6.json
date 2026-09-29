@@ -2,41 +2,76 @@
   "id": "question-chinese-content-cb-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一個社團以共同口號、徽章與活動規範凝聚成員，這些元素主要具有何種作用？",
+  "prompt": "作者引用長者、新住民與店家的說法後，最需要注意什麼？",
   "options": [
     {
       "id": "A",
-      "text": "建立群體認同"
+      "text": "只挑最符合作者立場的一句當成共同聲音"
     },
     {
       "id": "B",
-      "text": "取消成員差異"
+      "text": "引用越多就能代表所有成員"
     },
     {
       "id": "C",
-      "text": "阻止所有交流"
+      "text": "辨認每位說話者的位置與經驗，再比較其支持或限制主張的方式"
     },
     {
       "id": "D",
-      "text": "只用來裝飾場所"
+      "text": "刪除說話者身分才算客觀"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-cb"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "共同符號與規範能讓成員辨識彼此並形成認同。"
+    "value": "C",
+    "explanation": "引用者的生活位置會影響可見經驗；多方聲音應讓讀者檢查主張範圍，而不是裝飾。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.kusjh.kh.edu.tw/upload/files/111%E4%B8%8A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E5%9C%8B%E4%B8%AD%E4%BA%8C%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
-    "sourceLocator": "社群符號與認同；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究社群文化、公共規範、多方引述、媒介與權力的閱讀判讀。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫 CB 社群文化與多方觀點題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-cb"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-cb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "社會議題文本、觀點與證據",
+      "observedPattern": "公立學校國文評量以社群記憶、公共規範、媒介轉換、多方引述與評論語氣要求區分事實、觀點、主張範圍及缺席聲音；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "多方聲音、主旨與批判閱讀",
+      "observedPattern": "公立學校國文評量以社群記憶、公共規範、媒介轉換、多方引述與評論語氣要求區分事實、觀點、主張範圍及缺席聲音；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "記錄每個說話者的身分與立場，再問其材料支持哪一部分、沒有說明哪一部分。",
+  "solutionSteps": [
+    "讀題定位：圈出「引述位置」及群體、說話者、規範、媒介、語氣或缺席者線索。",
+    "分層整理：區分文本直接資料、人物觀點與作者主張，再依「引用者的生活位置會影響可見經驗；多方聲音應讓讀者檢查主張範圍，而不是裝飾。」判定範圍。",
+    "核對正解：選項 C 能由具體語句或段落關係支持，且沒有代替未發言者下結論。",
+    "排除誘答：檢查是否把共同記憶當全體事實、把單一聲音當共識，或忽略權力與參與門檻。",
+    "回讀驗證：重新檢查答案是否同時解釋語言、制度、媒介與多方經驗的關係。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

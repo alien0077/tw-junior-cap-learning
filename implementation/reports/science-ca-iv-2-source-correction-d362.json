@@ -1,0 +1,59 @@
+{
+  "revision": "D-362 plus implementation verification addendum (2026-09-28)",
+  "date": "2026-09-28",
+  "unit": "Ca-Ⅳ-2",
+  "lessonId": "lesson-science-content-ca-iv-2",
+  "scope": "publisher-source correction, learner-visible lesson, unit-specific interaction, and verification; no A-7-2 authoring",
+  "examLedger": {
+    "recorded": 10566,
+    "total": 10566,
+    "pending": 0,
+    "action": "rechecked; no questions changed"
+  },
+  "publisherEvidence": {
+    "verified": 289,
+    "total": 3081,
+    "pending": 2792,
+    "blockedUnits": 932,
+    "nani": "pending; public resource indexes checked, no Ca-IV-2 chapter content located",
+    "kanghsuan": "pending; official 8下 video index checked, no Ca-IV-2 chapter content located",
+    "hanlin": {
+      "status": "verified",
+      "source": "https://material.hle.com.tw/wp-content/uploads/2022/04/%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6-%E7%B6%B1%E5%A5%BD%E5%9C%A8%E9%80%99%E8%A3%A1%E5%90%88%E4%BD%B5.pdf",
+      "locator": "Teacher guide explanation p.10; lesson mapping to printed textbook pp.34-35 and extension p.36; gas preparation then design a property-identification inquiry",
+      "boundary": "limited teacher-guide evidence; not a full textbook chapter review"
+    }
+  },
+  "changes": [
+    "Removed unsupported Nani/Kanghsuan claims about specific concepts, examples, representations, misconceptions and assessment emphasis; retained index-only findings and pending status.",
+    "Replaced a generic Hanlin image-index reference with the official teacher-guide PDF and precise page locator; limited claims to the visible gas-property inquiry direction.",
+    "Reframed the fusion note to distinguish the one verified publisher reference from original curriculum/prerequisite-based additions; no three-version consensus claim.",
+    "Updated Ca-IV-2 unit goals and EvidenceLab design to describe candidate solutions, indicators, gas tests, controls and alternative explanations; synchronized publisher status in YAML and unit manifest."
+  ],
+  "validation": {
+    "jsonParse": "PASS",
+    "yamlParse": "PASS",
+    "implementationSpecs": "PASS; 1,027 specs, 0 errors, 1,027 QA pending",
+    "data": "PASS; 14,483 JSON files, 13,113 IDs, 1,032 KG nodes; all lessons remain draft",
+    "publisherLedger": "PASS; 289/3,081 verified, 2,792 pending, 932 blocked units",
+    "implementationSpecValidator": "PASS; 1,027 specs, 0 errors, 1,027 QA pending",
+    "strictLessonIndependence": "PASS; 614 lessons, 0 risks, 0 affected references, 0 failures",
+    "unitRegression": "PASS; six learner-visible teaching stages, one-source provenance boundary, distinct answer/retry guidance, virtual identification interaction and blank/control results",
+    "browser": "PASS in authorized Chrome; 7 visible lesson sections, 4 quiz steps, 4 retry hints, 2 virtual evidence tests, keyboard interaction, 320/375/768px with no horizontal overflow, 0 page errors",
+    "gitDiffCheck": "PASS for scoped changed files"
+  },
+  "remaining": [
+    "Find direct Nani and Kanghsuan Ca-IV-2 materials or keep those slots pending if unavailable.",
+    "Find direct Nani and Kanghsuan Ca-IV-2 materials or keep those slots pending if unavailable.",
+    "Complete substantive content, rights, unit-specific interaction and QA review before any promotion.",
+    "Complete content/rights/review gates; lesson remains draft and spec QA remains pending.",
+    "Do not repeat the 10,566-question audit absent changes to question provenance."
+  ],
+  "release": {
+    "reviewStatus": "draft",
+    "specQaStatus": "untested",
+    "subtasks": "none",
+    "commit": "not done",
+    "push": "not done"
+  }
+}

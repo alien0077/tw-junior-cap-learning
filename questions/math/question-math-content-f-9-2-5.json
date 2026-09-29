@@ -2,23 +2,23 @@
   "id": "question-math-content-f-9-2-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 y=a(x+1)^2-6 的圖形通過 (-1,-6) 與 (1,2)，a 為何？",
+  "prompt": "若 f(x)＝(x−3)²−4，則 f(2) 與 f(4) 的關係為何？",
   "options": [
     {
       "id": "A",
-      "text": "2"
+      "text": "f(2) 比 f(4) 大 1"
     },
     {
       "id": "B",
-      "text": "1（將題目中的 1、2、-6、-1 代入順序弄錯）"
+      "text": "f(2) 比 f(4) 小 1"
     },
     {
       "id": "C",
-      "text": "4（將題目中的 1、2、-6、-1 代入順序弄錯）"
+      "text": "f(2)＝f(4)＝−3"
     },
     {
       "id": "D",
-      "text": "8（將題目中的 1、2、-6、-1 代入順序弄錯）"
+      "text": "f(2)＝f(4)＝−4"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "代入 (1,2)：2=a(2)^2-6，得 4a=8，所以 a=2。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。"
+    "value": "C",
+    "explanation": "2 與 4 都距離對稱軸 x＝3 一格，f(2)=1−4=−3、f(4)=1−4=−3，所以選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度第 2 學期第 1 次段考三年級數學科試題；題目頁／答案頁逐題核對後獨立改編，非原題重製。 來源題號：第 9 題改編",
-    "authoringNote": "原創題目來源界線 metadata 已補齊；內容與題型仍待第二輪 AI／Terra 複核，未據此宣稱真人或專家審定。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供二次函數頂點式、對稱軸、開口方向與極值判讀能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的二次函數圖形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-f-9-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-f-9-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先讀對稱軸，再比較兩個輸入到對稱軸的距離。",
+  "solutionSteps": [
+    "由 (x−3)² 讀出對稱軸 x＝3。",
+    "2 距離 3 一格，4 也距離 3 一格。",
+    "計算 f(2)＝(−1)²−4＝−3。",
+    "計算 f(4)＝1²−4＝−3。",
+    "選 C，對稱軸兩側等距點輸出相同。"
+  ]
 }

@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-1-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-1／綜合資訊推論」task, what is the best way to prepare question 1?",
+  "prompt": "The library notice says study rooms close at 5 p.m. on Friday. The bus stop is a five-minute walk away, and the bus leaves at 5:20 p.m. Which plan fits both notices?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-1／綜合資訊推論."
+      "text": "Stay in the library until 5:20 and then walk to the stop."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-1／綜合資訊推論."
+      "text": "Leave at 4 p.m. because the rooms close at 5."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-1／綜合資訊推論."
+      "text": "Finish by 5, walk to the stop, and take the 5:20 bus."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-1／綜合資訊推論."
+      "text": "The notice proves the library closes at 5 every day."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-1／綜合資訊推論, question 1."
+    "value": "C",
+    "explanation": "C 同時遵守五點閉館與五點二十分發車；步行五分鐘後可在發車前抵達。 Correct answer: C"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+    "sourceLocator": "PDF第3至4頁第39題；文本資訊先後次序判讀；僅取閱讀整合與推論能力型態，不複製原題內容。",
+    "authoringNote": "依官方英語課綱D-Ⅳ-1與KG獨立創作綜合資訊推論題，參照內湖國中公立英語段考相關題型；未複製原卷題文、選項或答案。待AI內容審查；依使用者指示不安排Terra審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-content-d-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+      "title": "臺北市立內湖國中113學年度第2學期八年級第1次段考英語科",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF第3至4頁第39題；文本資訊先後次序判讀",
+      "observedPattern": "僅參照公立國中英語試題的地圖定位、時間／條件整合或文本證據推論能力；本題情境、數據、選項與答案獨立創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "整合公告的閉館時間、班車發車時間與步行時間，先確認各限制是否同時可滿足。",
+  "solutionSteps": [
+    "公告分別提供閉館時間5:00、公車時間5:20及步行5分鐘。",
+    "若5:00離館，約5:05到站牌。",
+    "距離公車發車尚有約15分鐘，因此兩項安排能銜接。",
+    "選項若五點二十分才離館會錯過車；公告也沒有說圖書館每天都五點關門。",
+    "答案 C；合併時間資訊時，別漏掉地點移動所需時間。"
+  ]
 }

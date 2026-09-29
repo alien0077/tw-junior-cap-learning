@@ -6,37 +6,80 @@
   "options": [
     {
       "id": "A",
-      "text": "36"
-    },
-    {
-      "id": "B",
-      "text": "54"
-    },
-    {
-      "id": "C",
       "text": "24"
     },
     {
-      "id": "D",
+      "id": "B",
       "text": "30"
+    },
+    {
+      "id": "C",
+      "text": "36"
+    },
+    {
+      "id": "D",
+      "text": "72"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-n-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "12＝2²×3、18＝2×3²，取各質因數最高次方得 2²×3²＝36。"
+    "value": "C",
+    "explanation": "12=2²×3、18=2×3²，公倍數取各質因數較大次方，得 2²×3²=36，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考因數、倍數、質因數分解、最大公因數、最小公倍數、互質與週期情境題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "因數倍數質數與最大公因數最小公倍數單元實質改寫；已重新計算質因數分解、GCD、LCM、因數個數、互質、約分與週期情境，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供因數倍數與質因數能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數與量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "質因數分解、質數與合數、因數倍數、最大公因數、最小公倍數、互質與生活週期；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把數的結構、整除關係與週期或分組情境結合，要求列出質因數、找公因數或公倍數；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "質因數分解、質數與合數、因數倍數、最大公因數、最小公倍數、互質與生活週期；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把數的結構、整除關係與週期或分組情境結合，要求列出質因數、找公因數或公倍數；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "質因數分解、質數與合數、因數倍數、最大公因數、最小公倍數、互質與生活週期；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把數的結構、整除關係與週期或分組情境結合，要求列出質因數、找公因數或公倍數；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "找最小公倍數時，每種質因數都要保留兩數中的最高次方。",
+  "solutionSteps": [
+    "分解 12=2²×3。",
+    "分解 18=2×3²。",
+    "取 2 的最高次方 2²。",
+    "取 3 的最高次方 3²，乘得 36。",
+    "所以選 C。"
+  ]
 }

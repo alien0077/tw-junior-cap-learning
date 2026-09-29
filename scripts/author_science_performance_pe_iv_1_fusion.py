@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance pe-IV-1."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-pe-iv-1.json"; REPORT=ROOT/"implementation/reports/science-performance-pe-iv-1-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；變因辨識、可信度、探究規畫與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持辨明自變因、應變因與控制變因，規畫可重複且能回答問題的探究。"],"representations":[r],"examplesOrEvidence":["本課的保溫、植物生長與溶解速度探究皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-pe-iv-1" and d["reviewStatus"]=="draft"
+ d["title"]="pe-Ⅳ-1：辨明變因並規劃具可信度的探究活動——讓比較公平發生"
+ d["content"]={"summary":"可信度高的探究，關鍵不在器材昂貴或步驟繁多，而在問題、變因、測量與結論彼此對齊。比較保溫效果、植物生長或溶解速度時，要先辨明刻意改變的自變因、觀察的應變因，以及需要固定的控制變因，並安排重複、樣本、測量誤差與安全處理。本課以原創研究計畫練習從錯誤設計找出混淆因素，改寫成別人能重做、資料能比較的探究。","sections":[{"heading":"變因先用問題定義","body":"若問題是『杯材是否影響降溫』，杯材是自變因，溫度變化是應變因，水量、初溫、環境與時間要控制。變因不是背名詞，而是由研究問題決定角色。"},{"heading":"一次只讓主要因素不同","body":"同時換杯材、水量和蓋子，結果即使不同也不知道原因。可信度需要列出可能混淆因素，預先決定固定方式，並在無法固定時標示限制。"},{"heading":"重複與樣本讓偶然可見","body":"一次測量可能受到讀值、位置或個別樣本影響。安排適當重複、隨機或一致取樣，記錄每次資料而非只寫平均，才能看見變異和異常。"},{"heading":"控制不等於操縱資料","body":"控制條件是讓比較公平，不是挑掉不符合預期的結果。所有偏離、器材問題、失敗試次都要留下紀錄，最後依證據說明結論範圍。"}]}
+ d["studyHighlights"]=["由研究問題辨明自變因、應變因與控制變因。","一次只讓主要因素不同，預先處理混淆因素。","安排重複、取樣、測量誤差與每次原始資料。","保留偏離和異常，讓結論範圍與證據相稱。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"哪種杯子最能保冰？","body":"甲杯裝 100 mL 冰水放在窗邊，乙杯裝 200 mL 常溫水放在陰影處，20 分鐘後比較溫度。請找出這個設計至少三個混淆因素，再把問題改成能公平比較杯材的版本。活動先讓學習者感受『有數字』不等於『可相信的比較』。"},
+ {"id":"explain","phase":"explain","heading":"變因地圖與可信度清單","body":"把問題圈出一個自變因和一個應變因，再從水量、初始狀態、環境、時間、器材、樣本與操作者找控制方式。接著安排重複、資料表、校正和安全檢查。完成後請另一人依計畫重述，若仍不知道要固定什麼，就回頭修正。"},
+ {"id":"worked-example","phase":"worked-example","heading":"植物生長設計的混淆因素","body":"要研究肥料濃度對一週高度增加的影響，肥料濃度是自變因，高度增加是應變因；植物品種、初始高度、盆土、光照、水量與測量時間要一致。每一濃度放多株並記錄個別高度，不能只挑長得最高的一株作結論。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"溶解速度計畫審查","body":"兩組比較水溫對糖溶解時間的影響，但一組攪拌、另一組不攪拌。學習者先指出攪拌是混淆因素，再決定兩組都不攪拌或都用同樣速度，固定糖量、水量與容器，並重複計時。最後寫出若無法控制攪拌時的限制。"},
+ {"id":"transfer","phase":"transfer","heading":"用審查表檢查別人的計畫","body":"交換計畫後逐項勾選：問題可測量、主要自變因唯一、應變因有單位、控制條件可執行、樣本和重複足夠、器材安全、異常有記錄方式。不要只寫好或不好，指出一個可能混淆和一個可行修正，讓回饋能直接改進計畫。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個可信度迷思","body":"請修正『控制變因就是把所有結果改成一樣』與『重複測量只要保留平均值』。控制是讓主要比較公平，重複資料要保留變異、異常和測量過程，才能知道平均值是否代表整組。"}
+ ],"summary":["由問題定義自變因、應變因與控制變因。","一次只改主要因素，預先處理混淆因素。","以重複、樣本、校正和原始資料提升可信度。","控制不等於刪資料，異常與限制要被保留。"],"exitCheck":[{"prompt":"研究杯材對降溫的影響時，哪些條件要控制？","expectedEvidence":"水量、初溫、環境、時間、容器尺寸、測量器材與方法等要一致。"},{"prompt":"為什麼植物研究要記錄每株高度而不只記最高株？","expectedEvidence":"個別資料能看見變異和異常，避免挑選結果造成偏差，平均也較有根據。"},{"prompt":"兩組攪拌方式不同時如何修正糖溶解計畫？","expectedEvidence":"兩組都不攪拌或用一致速度，並固定糖量、水量、容器與溫度後重複計時。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"辨明變因與混淆因素，規畫公平、可重複且可追溯的探究。","scenario":"審查保溫、植物與溶解速度計畫，逐步選出能提高可信度的修正。","variables":[{"symbol":"x","meaning":"自變因"},{"symbol":"y","meaning":"應變因"},{"symbol":"z","meaning":"控制變因"}],"steps":[{"id":"step-1","prompt":"研究肥料濃度對植物高度增加的影響時，哪個是應變因？","options":["一週內的高度增加量","肥料濃度","光照與水量"],"answer":"A","feedback":"應變因是觀察結果；肥料濃度是自變因，光照和水量應控制。"},{"id":"step-2","prompt":"糖溶解計畫一組攪拌、一組不攪拌，問題在哪裡？","options":["攪拌是混淆因素，需兩組採一致方式","糖量太容易測量所以不用控制","只要最後挑較快的一組"],"answer":"A","feedback":"主要比較應是水溫，攪拌差異會混入結果。"},{"id":"step-3","prompt":"重複測量後最完整的資料處理是什麼？","options":["保留每次讀值、檢查變異與異常，再說明平均和限制","只留下符合預測的數值","只報平均不說樣本數"],"answer":"A","feedback":"原始資料和變異能讓讀者檢查平均是否合理。"}]}
+ d["teaching"]["body"][5]["body"]="請修正『控制變因就是把所有結果改成一樣』與『重複測量只要保留平均值』。控制是讓主要比較公平，重複資料要保留變異、異常和測量過程，才能知道平均值是否代表整組，也能追查哪一次操作需要改進。"
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以問題、變因和控制條件規畫能回答科學問題的探究。","變因表、流程、樣本、重複、原始資料與誤差。","一次改變多因素，或把控制理解成刪除不符結果。","重視問題對齊、測量、可信度與安全。"),rec("kanghsuan","透過實作、試驗設計和同儕審查提升探究的可信度。","對照、重複、取樣、器材校正、審查表與修正。","只報平均或最高值，忽略變異、混淆和器材限制。","評量變因辨識、方法完整、資料透明與反思。"),rec("hanlin","連結生活、環境與生物研究，強調控制、樣本、誤差和可重做。","保溫、植物、溶解速度、條件、單位與安全限制。","把無法控制的條件說成已控制，或用一次結果推廣全部。","要求可信度理由、限制、原始資料與改進。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持由問題辨明變因、控制條件並規畫可信探究。","公平比較、重複、樣本、原始資料、誤差與安全是共同要求。","可信度不是刪除異常，而是透明記錄並讓結論範圍與證據相稱。"],"versionDifferences":["南一證據較突顯問題、變因與基本控制；康軒較突顯對照、重複、取樣、校正與同儕審查；翰林較突顯生活生物環境研究、誤差、安全與可重做。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以甲乙杯水量和環境不同診斷有數字但不公平的比較。","以植物肥料濃度列出品種、初始高度、光照、水量和樣本控制。","以糖溶解攪拌差異和審查表練習發現混淆並提出修正。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織問題、變因、控制、混淆、重複、取樣、校正、誤差、原始資料與可信度。正文、原創計畫、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"pe-Ⅳ-1：辨明變因並規劃具可信度的探究活動","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

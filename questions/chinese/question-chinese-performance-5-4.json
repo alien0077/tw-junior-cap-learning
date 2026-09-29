@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-5-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀文章時，若某句以「因此」開頭，最適合先找前文的哪種資訊？",
+  "prompt": "作者寫「也許我們可以先從少用一個塑膠袋開始」，這句語氣最接近？",
   "options": [
     {
       "id": "A",
-      "text": "原因或依據"
+      "text": "強制命令"
     },
     {
       "id": "B",
-      "text": "作者姓名"
+      "text": "已證明的結論"
     },
     {
       "id": "C",
-      "text": "標題字數"
+      "text": "完全否定所有行動"
     },
     {
       "id": "D",
-      "text": "插圖顏色"
+      "text": "保留可能性的溫和倡議"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "因此引出結果，前文通常提供原因、條件或依據。"
+    "value": "D",
+    "explanation": "也許與可以保留討論空間，先從小行動開始是溫和倡議，不是強制或確定結論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "閱讀篇章連接與推論；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究篇章骨架、段落功能、推論、圖表、跨文本、修辭與閱讀流程能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫閱讀表現題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀、主旨與證據",
+      "observedPattern": "公立學校國文評量要求掌握文章骨架、段落功能、推論程度、圖表比較、跨文本觀點、修辭效果與陌生文本解題流程；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章理解、圖表與推論",
+      "observedPattern": "公立學校國文評量要求掌握文章骨架、段落功能、推論程度、圖表比較、跨文本觀點、修辭效果與陌生文本解題流程；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "圈出模態詞與人稱，再判斷建議的確定程度、強度與對讀者的要求。",
+  "solutionSteps": [
+    "讀題定位：圈出「保留語氣」與段落功能、時間線、轉折、圖表指標、修辭或跨文本線索。",
+    "整理證據：把局部資訊放回全文或兩篇文本，比較主張、限制與語氣；本題核心是「也許與可以保留討論空間，先從小行動開始是溫和倡議，不是強制或確定結論。」",
+    "核對正解：選項 D 能被明確文本證據支持，且沒有把有限推論擴大成必然。",
+    "排除誘答：檢查是否只抓一個細節、混淆總量與平均、忽略轉折，或把比喻當成字面事實。",
+    "回讀驗證：回到相關段落逐句核對，確認答案涵蓋題目要求的範圍與資訊層次。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

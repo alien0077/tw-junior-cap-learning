@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bb-iv-5-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "文章寫孩子把最後一塊餅留給祖父，最可能藉此表現什麼？",
+  "prompt": "開頭寫窗外有孩子笑聲，結尾只照亮一張收好的空桌，前後景物最主要的作用是？",
   "options": [
     {
       "id": "A",
-      "text": "體貼與親情"
+      "text": "證明窗戶已經損壞"
     },
     {
       "id": "B",
-      "text": "食物價格"
+      "text": "說明孩子一定搬到外地"
     },
     {
       "id": "C",
-      "text": "孩子的身高"
+      "text": "以聲音與空桌的變化暗示人物或生活狀態改變"
     },
     {
       "id": "D",
-      "text": "廚房的大小"
+      "text": "只是在介紹教室採光"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "讓出食物的行動比直接說明更能呈現孩子的體貼與親情。"
+    "value": "C",
+    "explanation": "笑聲與空桌形成前後對照，暗示熱鬧到空缺的生活變化；具體原因仍需上下文。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "事件、景物間接抒情；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究事件、景物、物件與人物反應的間接抒情及證據界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫事件景物間接抒情題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "事件、景物與情感推論",
+      "observedPattern": "公立學校國文評量要求由事件、物件、景物對照與人物反應推論間接情感；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "人物行動、場景對照與抒情效果",
+      "observedPattern": "公立學校國文評量要求由事件、物件、景物對照與人物反應推論間接情感；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較開頭和結尾同一景物的差異，再限制可推論的故事原因。",
+  "solutionSteps": [
+    "找出笑聲代表的熱鬧線索。",
+    "再看空桌與收好的狀態。",
+    "C 能說明景物對照與情感暗示。",
+    "B、C、D 都把暗示當成確定事件。",
+    "補一個不同結尾，觀察景物對照如何改變情緒。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,41 +2,78 @@
   "id": "question-science-content-ina-iv-5-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月27日學校研究社的觀察中，比較兩地「INa-Ⅳ-5：能源開發、利用與永續性」資料時，甲地迎風坡年雨量約 27580 mm、乙地背風坡約 18875 mm，最合理的做法是？",
+  "prompt": "某方案可降低全國平均碳排，但需要在少數鄉鎮設大型設施；永續評估還應特別詢問什麼？",
   "options": [
     {
       "id": "A",
-      "text": "在「INa-Ⅳ-5：能源開發、利用與永續性」中只看 27580 mm 的單一數值便下結論"
+      "text": "設施風險、土地使用、居民負擔與收益是否公平分配"
     },
     {
       "id": "B",
-      "text": "在「INa-Ⅳ-5：能源開發、利用與永續性」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "平均碳排下降後就不必詢問地方居民"
     },
     {
       "id": "C",
-      "text": "同時比較地形、風向、觀測期間與 27580、18875 mm 資料"
+      "text": "只要全國多數人同意即可忽略少數人的安全"
     },
     {
       "id": "D",
-      "text": "在「INa-Ⅳ-5：能源開發、利用與永續性」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只看設施建造速度"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ina-iv-5"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「INa-Ⅳ-5：能源開發、利用與永續性」。"
+    "value": "A",
+    "explanation": "永續不只看總量效益，也要檢查風險、土地與利益是否集中由特定社群承擔，這涉及程序與分配公平。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的能源開發、供需管理、環境承載及永續決策能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 INa-Ⅳ-5 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ina-iv-5"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ina-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "能源開發、資源利用、環境影響與資料判讀",
+      "pattern": "取由能源供需、資源條件與環境資料評估開發方案的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由能源供需、資源條件與環境資料評估開發方案的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "能源、環境、效率與永續生活決策",
+      "pattern": "取從圖表、系統資料與生活情境判斷永續方案及其限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從圖表、系統資料與生活情境判斷永續方案及其限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把總體效益和地方承擔的風險分開分析。",
+  "solutionSteps": [
+    "確認全國平均效益的計算範圍。",
+    "標出設施所在地的風險和土地變化。",
+    "比較不同群體承擔與獲益的比例。",
+    "B、C、D 都把總體平均或多數決當成完整正當性。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

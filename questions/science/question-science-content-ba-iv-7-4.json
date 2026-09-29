@@ -2,41 +2,67 @@
   "id": "question-science-content-ba-iv-7-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月11日校園實驗室的觀察中，針對「Ba-Ⅳ-7：力學能、動能與位能互換」提出可檢驗的科學問題，若比較 3 組、每組取樣 12 份資料，哪一項設計最適當？",
+  "prompt": "同一高度、同一零位面下，物體甲質量是乙的 2 倍，兩者均靜止。重力位能的關係為何？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ba-Ⅳ-7：力學能、動能與位能互換」時只改變溶液濃度，其餘條件一致，設置3組、每組取樣12份並各重複測量5次"
+      "text": "甲是乙的 2 倍"
     },
     {
       "id": "B",
-      "text": "研究「Ba-Ⅳ-7：力學能、動能與位能互換」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "乙是甲的 2 倍"
     },
     {
       "id": "C",
-      "text": "研究「Ba-Ⅳ-7：力學能、動能與位能互換」時只測量3組中的一組就直接下結論"
+      "text": "兩者相同"
     },
     {
       "id": "D",
-      "text": "研究「Ba-Ⅳ-7：力學能、動能與位能互換」時先決定結論，再挑選支持結論的12筆資料"
+      "text": "兩者都與質量無關"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ba-iv-7"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ba-Ⅳ-7：力學能、動能與位能互換」。"
+    "explanation": "U＝mgh，在高度與 g 相同時，重力位能與質量成正比；甲質量兩倍，位能也兩倍，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的動能、位能、力學能與摩擦能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-7 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-7"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "動能、位能、力學能、摩擦與能量資料判讀",
+      "pattern": "取由高度、速度、質量與阻力資料推論能量互換的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由高度、速度、質量與阻力資料推論能量互換的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "鎖定比較中不變的量，再看公式中剩下的比例關係。",
+  "solutionSteps": [
+    "寫出兩物體的 U甲＝m甲gh、U乙＝m乙gh。",
+    "高度與 g 相同，可約去共同因子。",
+    "題目給 m甲＝2m乙。",
+    "因此 U甲＝2U乙。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

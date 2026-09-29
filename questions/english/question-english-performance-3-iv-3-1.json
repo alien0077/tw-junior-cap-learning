@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-3-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-3／理解簡易英文標示」notice for the sports center, item 1: “The talk begins at 2:30.” What does it tell people?",
+  "prompt": "Beside a large aquarium tank, a crossed-out hand symbol appears above 'PLEASE DO NOT TAP THE GLASS.' Which visitor follows the sign?",
   "options": [
     {
       "id": "A",
-      "text": "For item 1 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk starts at 2:30."
+      "text": "A visitor watches the fish without touching the tank."
     },
     {
       "id": "B",
-      "text": "For item 1 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk ends at 2:30."
+      "text": "A visitor taps the glass softly to get a fish's attention."
     },
     {
       "id": "C",
-      "text": "For item 1 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk is held at the bus stop."
+      "text": "A visitor puts a hand inside the tank."
     },
     {
       "id": "D",
-      "text": "For item 1 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk is cancelled every day."
+      "text": "A visitor knocks harder so everyone can hear."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-3／理解簡易英文標示, question 1."
+    "explanation": "Both the crossed-out hand and the sentence forbid contact with the glass. A follows the rule; the other actions touch or strike the tank."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://w3.hkjh.kh.edu.tw/%E5%B0%8F%E6%B8%AF%E5%9C%8B%E4%B8%AD%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C/11%E4%B8%80%E5%B9%B4%E7%B4%9A%E4%B8%8A%E5%AD%B8%E6%9C%9F/3%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C/%E8%8B%B1%E8%AA%9E/110-1-3%E4%B8%80%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+    "sourceLocator": "高雄市立小港國中110學年度第一學期七年級第三次段考英文試題；PDF第2頁第16題：依圖像標記判斷場所規則。本題依題型與推理能力重新創作，不複製原題、選項、圖像或答案。",
+    "authoringNote": "原創題幹與選項；僅將公立學校公開試題作為題型與推理能力參照。答案、策略及逐步解說為本題獨立撰寫；保持draft，未執行Terra複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://w3.hkjh.kh.edu.tw/%E5%B0%8F%E6%B8%AF%E5%9C%8B%E4%B8%AD%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C/11%E4%B8%80%E5%B9%B4%E7%B4%9A%E4%B8%8A%E5%AD%B8%E6%9C%9F/3%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C/%E8%8B%B1%E8%AA%9E/110-1-3%E4%B8%80%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立小港國中110學年度第一學期七年級第三次段考英文試題",
+      "year": "110-1",
+      "subject": "english",
+      "locator": "PDF第2頁第16題：依圖像標記判斷場所規則",
+      "observedPattern": "考生需將圖像標記與一項場所限制配對；本題改寫為畫廊拍攝規定，未沿用原標誌或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把圖示代表的動作和文字指令交叉比對，再選同時遵守兩者的行為。",
+  "solutionSteps": [
+    "先看位置：標示貼在大型水族箱旁，規則對象是觀眾與魚缸。",
+    "辨認被劃掉的手勢，表示不要用手接觸。",
+    "再讀 DO NOT TAP THE GLASS，確認不能敲擊玻璃。",
+    "A只觀看而不碰觸；B、D敲玻璃，C把手伸進缸內，全部違反規則。",
+    "答案選A；公共展示物旁的禁止符號要轉成具體可做／不可做行為。"
+  ]
 }

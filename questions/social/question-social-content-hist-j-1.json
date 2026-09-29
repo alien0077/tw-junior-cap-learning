@@ -2,23 +2,23 @@
   "id": "question-social-content-hist-j-1",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2022年3月7日地方文史館的資料中，比較「J：歷史考察（三）」的當時公告與後世回憶時，若兩者說法不同，第一步應如何處理？",
+  "prompt": "小組想把主題 H、I 的知識轉成地方史考察，第一步要把『這裡的歷史如何變化？』改成可研究的問題。哪項最適當？",
   "options": [
     {
       "id": "A",
-      "text": "先確認作者、形成時間、資料目的，再比較「J：歷史考察（三）」的內容與限制"
+      "text": "在 1950 至 1990 年間，車站啟用是否改變某街區商店分布？可用哪些地圖與訪談檢驗？"
     },
     {
       "id": "B",
-      "text": "直接以年代較晚的回憶取代公告"
+      "text": "老街是不是最重要？"
     },
     {
       "id": "C",
-      "text": "只看文字較長者判定真偽"
+      "text": "所有居民都怎麼想？"
     },
     {
       "id": "D",
-      "text": "把所有後世解釋當成當時原文"
+      "text": "地方文化為什麼一直很好？"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "史料解讀須辨識作者、時代、目的與資料性質，不能只依篇幅或年代早晚判斷。 本題對應 KG「J：歷史考察（三）」。"
+    "explanation": "本題聚焦「問題設計」。問題必須限定時間、地點、關係與可取得的證據，才能讓他人重做與檢驗。 正確答案為選項 A：「在 1950 至 1990 年間，車站啟用是否改變某街區商店分布？可用哪些地圖與訪談檢驗？」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
     "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "authoringNote": "依官方課綱、歷 J 知識圖譜及三所公立學校公開社會科試題的歷史探究、資料判讀與多方證據能力方向獨立改寫；未複製原題文字、選項、圖片或答案，待逐題學科與 Terra 複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-hist-j"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-social-content-hist-j",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國民中學公開段考社會科；僅研究資料判讀、時序與歷史推理題型，未複製原題。",
+      "year": "114",
+      "locator": "公開段考社會科 PDF；第 1 題至第 10 題型範圍：資料判讀、時序與因果界線",
+      "observedPattern": "由多種材料要求學生界定問題、證據範圍與歷史結論。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國民中學公開社會科試題入口；僅研究多資料互證題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開試題與解答入口；第 1 題至第 10 題型範圍：探究、時序與多重證據",
+      "observedPattern": "比較地圖、文字與角色經驗，區分直接觀察、推論與待補證主張。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國民中學公開段考試題入口；僅研究地方探究與多方角色題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開段考試題入口；第 1 題至第 10 題型範圍：地方史、社會變遷與多方角色",
+      "observedPattern": "從地方材料分析樣本、證據與群體差異，不以單一來源包辦結論。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用問題設計界定問題、來源、樣本、倫理與結論，再區分觀察、推論和待補證據；問題必須限定時間、地點、關係與可取得的證據，才能讓他人重做與檢驗。",
+  "solutionSteps": [
+    "讀題定位：圈出研究問題、資料、參與者與任務，確認本題正在檢核「問題設計」。",
+    "建立判準：把問題範圍、資料來源、樣本限制、倫理和結論強度分層。",
+    "核對正解：選項 A「在 1950 至 1990 年間，車站啟用是否改變某街區商店分布？可用哪些地圖與訪談檢驗？」符合題幹，因為問題必須限定時間、地點、關係與可取得的證據，才能讓他人重做與檢驗。",
+    "逐項排除：檢查其餘選項是否把單一觀察放大、忽略來源與同意，或把時間順序誤當成因果。",
+    "結論回查：重新核對時間、地點、對象與證據強度；新增材料後要重新檢查，不能只沿用答案字母。"
+  ]
 }

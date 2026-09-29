@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ca-iv-1-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "從老照片與現代照片比較街區變化，可以了解什麼？",
+  "prompt": "比較兩個村落的服飾資料時，一村按工作需求記錄，另一村只記節慶照片。最妥當的比較方式是？",
   "options": [
     {
       "id": "A",
-      "text": "建築、交通與居民生活的變遷"
+      "text": "把節慶照片當成平日穿著"
     },
     {
       "id": "B",
-      "text": "只抄錄表面資訊"
+      "text": "先說明資料情境不同，再比較功能與場合，不能直接排名哪村較傳統"
     },
     {
       "id": "C",
-      "text": "只依直覺猜測"
+      "text": "只看顏色就判定文化差異"
     },
     {
       "id": "D",
-      "text": "不核對任何證據"
+      "text": "認定資料多的一村一定比較重要"
     }
   ],
   "knowledgeIds": [
@@ -26,14 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "影像比較能呈現地方空間與生活方式隨時間產生的變化。"
+    "value": "B",
+    "explanation": "兩組資料的場合不同，應先控制比較條件，再討論工作功能與節慶象徵，不能把照片或資料量當成文化價值排名。"
   },
   "provenance": {
     "origin": "original",
-    "license": "All rights reserved", "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf", "sourceLocator": "地方生活變遷；獨立命題", "authoringNote": "獨立改編，非原題重製"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究飲食、服飾、建築、交通、名勝與休閒文化的判讀方式。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫生活文化文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ca-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ca-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文化生活與資料判讀",
+      "observedPattern": "公立學校國文評量要求從飲食、服飾、建築、交通、名勝與休閒資料判讀生活方式及文化脈絡；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "生活文化、說明與推論",
+      "observedPattern": "公立學校國文評量要求從飲食、服飾、建築、交通、名勝與休閒資料判讀生活方式及文化脈絡；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較前先檢查樣本、場合和記錄方法是否相同。",
+  "solutionSteps": [
+    "標記工作日與節慶的資料差異。",
+    "分開討論實用功能與象徵意義。",
+    "避免把不同場合直接並列成高低。",
+    "B 是公平且可查證的比較。",
+    "列出需要補拍或補訪的平日資料。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,41 +2,67 @@
   "id": "question-science-content-id-iv-2-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年7月28日學校研究社的觀察中，連續一個月在相同時間觀察月面亮部變化，研究「Id-Ⅳ-2：日照角度與地表吸收太陽能」時，最能支持哪項結論？",
+  "prompt": "太陽高度角相同時，地表吸收能量仍可能不同，哪項因素最需要一併記錄？",
   "options": [
     {
       "id": "A",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 5 組、6 月觀察中，月相是由日、地、月相對位置改變造成的視覺變化"
+      "text": "地表材質與反照率"
     },
     {
       "id": "B",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 5 組、6 月觀察中，月亮本身每天產生不同亮度"
+      "text": "月球的表面坑洞"
     },
     {
       "id": "C",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 5 組、6 月觀察中，月相完全由雲量決定"
+      "text": "地球磁場顏色"
     },
     {
       "id": "D",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 5 組、6 月觀察中，月亮只在滿月時才存在"
+      "text": "觀察者姓名"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-id-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "月球反射太陽光，日、地、月相對位置改變會造成可規律觀察的月相。 本題對應 KG「Id-Ⅳ-2：日照角度與地表吸收太陽能」。"
+    "explanation": "不同地表的反照率、材質和含水狀態會影響反射與吸收，即使入射角相同也可能產生不同升溫。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的太陽高度、影長、季節、入射角及地表受熱判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Id-Ⅳ-2 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-id-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-id-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "太陽高度角、日照、影長、季節與地表受熱資料判讀",
+      "pattern": "取由太陽高度、入射角、影子、季節與地表能量資料推論日照差異的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由太陽高度、入射角、影子、季節與地表能量資料推論日照差異的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把日照幾何因素和地表性質分開控制。",
+  "solutionSteps": [
+    "確認題目已固定太陽高度角。",
+    "列出會影響吸收的地表性質。",
+    "比較反照率、材質和含水等條件。",
+    "B、C、D 無法解釋地表吸收差異。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

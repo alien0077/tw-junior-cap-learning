@@ -2,23 +2,23 @@
   "id": "question-science-content-jd-iv-5-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月29日河川觀測站的觀察中，以廣用試紙測得某溶液 pH＝4，研究「Jd-Ⅳ-5：酸、鹼、鹽的生活應用與危險性」時，最合理的判斷為何？",
+  "prompt": "食鹽是日常常見的鹽類；從粒子觀點看，固態食鹽不易導電但溶於水後可導電，原因是？",
   "options": [
     {
       "id": "A",
-      "text": "「Jd-Ⅳ-5：酸、鹼、鹽的生活應用與危險性」樣本呈酸性（pH＝4，由廣用試紙測得）"
+      "text": "水溶液中的鈉離子和氯離子能自由移動，固態離子位置受限"
     },
     {
       "id": "B",
-      "text": "此溶液呈中性，因為 pH＝4 且使用廣用試紙"
+      "text": "食鹽溶於水後產生金屬電子"
     },
     {
       "id": "C",
-      "text": "此溶液呈鹼性，因為 pH＝4 且使用廣用試紙"
+      "text": "固態食鹽沒有任何離子"
     },
     {
       "id": "D",
-      "text": "不必讀取廣用試紙數值，只看容器外觀就能判斷酸鹼性"
+      "text": "水把氯離子變成氧氣"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,53 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "pH 小於 7 的水溶液呈酸性；pH＝4，因此判定為酸性。 本題對應 KG「Jd-Ⅳ-5：酸、鹼、鹽的生活應用與危險性」。"
+    "explanation": "固態離子被晶格固定，溶於水後鈉、氯離子可移動並傳遞電荷，因此溶液導電。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的酸、鹼、鹽生活應用、成分標示、腐蝕與安全能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jd-iv-5"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jd-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼鹽生活應用、標示、反應與安全資料",
+      "pattern": "取由生活物質性質、酸鹼鹽反應及安全資訊判斷用途與危險性的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生活物質性質、酸鹼鹽反應及安全資訊判斷用途與危險性的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼、鹽類、清潔用品、腐蝕與生活情境",
+      "pattern": "取從成分標示、資料表與生活情境推論物質用途及風險的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從成分標示、資料表與生活情境推論物質用途及風險的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "從鹽類的離子結構和移動性判斷生活性質。",
+  "solutionSteps": [
+    "辨認食鹽是離子化合物。",
+    "比較固態與水溶液的粒子移動。",
+    "確認可移動離子造成導電。",
+    "排除電子生成、無離子與氧氣說法。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

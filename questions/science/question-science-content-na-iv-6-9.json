@@ -2,41 +2,76 @@
   "id": "question-science-content-na-iv-6-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年10月28日自然科教室的觀察中，比較兩地「Na-Ⅳ-6：人類發展以保護自然環境為基礎」資料時，甲地迎風坡年雨量約 73980 mm、乙地背風坡約 50775 mm，最合理的做法是？",
+  "prompt": "若乙案車位不足但保留溪流功能，哪項替代設計較能兼顧需求？",
   "options": [
     {
       "id": "A",
-      "text": "在「Na-Ⅳ-6：人類發展以保護自然環境為基礎」中只看 73980 mm 的單一數值便下結論"
+      "text": "分時接送、接駁停車與步行安全改善，並追蹤交通和水文指標"
     },
     {
       "id": "B",
-      "text": "在「Na-Ⅳ-6：人類發展以保護自然環境為基礎」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "填平整片草地以一次解決"
     },
     {
       "id": "C",
-      "text": "同時比較地形、風向、觀測期間與 73980、50775 mm 資料"
+      "text": "取消所有接送而不評估需求"
     },
     {
       "id": "D",
-      "text": "在「Na-Ⅳ-6：人類發展以保護自然環境為基礎」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只宣傳環保不改善交通"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-na-iv-6"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Na-Ⅳ-6：人類發展以保護自然環境為基礎」。"
+    "value": "A",
+    "explanation": "替代方案可降低對自然功能的壓力，同時回應交通需求；是否成功仍要由接送時間、安全、逕流和棲地資料追蹤。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與生態資料的資源使用、環境保護、永續發展、證據比較與人類活動決策能力方向；本題為 Na-Ⅳ-6 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-na-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-na-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科評量",
+      "year": "108-115",
+      "subject": "science",
+      "locator": "環境、永續、證據比較與自然科資料推理",
+      "observedPattern": "取公開自然科評量對資源、環境變化與人類活動資料判讀的能力方向，另寫方案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://market.cloud.edu.tw/resources/web/1807720",
+      "title": "教育雲國中生態與環境教學資源",
+      "year": "108-115",
+      "subject": "science",
+      "locator": "生態系服務、保育、人類活動與環境決策",
+      "observedPattern": "取公開教育資源把生態功能與行動決策連結的能力方向，重新設計溪流案例。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認需求缺口，再設計不把成本轉嫁到環境或弱勢者的替代方案，最後訂指標。",
+  "solutionSteps": [
+    "先寫出發展需求與自然環境提供的功能。",
+    "把可能影響轉成逕流、濁度、棲地、資源或公平等可觀察指標。",
+    "比較前後、對照、替代方案和資料限制，避免只看單一效益。",
+    "排除口號、單一數字、永續保證或忽略受影響者的選項，答案為 A。",
+    "用『在……條件下』完成可監測、可修正的決策句：替代方案可降低對自然功能的壓力，同時回應交通需求；是否成功仍要由接送時間、安全、逕流和棲地資料追蹤。"
+  ],
+  "studyReferences": [
+    "https://www.cp.ptc.edu.tw/storage/134523/134523_114_B-23_7A.pdf?1774770497="
+  ]
 }

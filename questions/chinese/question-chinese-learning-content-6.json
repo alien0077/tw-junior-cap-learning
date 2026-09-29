@@ -2,41 +2,76 @@
   "id": "question-chinese-learning-content-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一篇文章先提出主張，再引用調查結果，最後說明調查的樣本限制。這樣安排最能展現什麼？",
+  "prompt": "說明文定義「雨水回收是把降雨收集後再利用」，閱讀後最應追蹤哪組資訊？",
   "options": [
     {
       "id": "A",
-      "text": "刻意把限制當成文章主旨"
+      "text": "收集對象、處理方式與再利用目的"
     },
     {
       "id": "B",
-      "text": "表示所有調查結果都能推論全國"
+      "text": "文章共有幾個逗號"
     },
     {
       "id": "C",
-      "text": "提出主張時同時交代證據與結論適用範圍"
+      "text": "作者喜歡的顏色與食物"
     },
     {
       "id": "D",
-      "text": "只用資料裝飾文章而不支持主張"
+      "text": "讀者是否住在山區"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-learning-content"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "證據與限制一起呈現，可讓讀者判斷主張有多少支持、結論能推到什麼範圍。"
+    "explanation": "定義提供對象、流程與目的的核心框架，後文應追蹤這些要素如何被具體說明。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究字音字形、語詞、圖表與文本判讀題型（論證與限制）；課綱學習內容：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究直接資訊、推論、語氣、指涉、受眾與證據界線能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫學習內容辨讀題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-learning-content"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-learning-content",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "事實、推論與證據",
+      "observedPattern": "公立學校國文評量要求區分直接資訊、推論、語氣、指涉與受眾改寫，並以文本證據限制結論；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解、指涉與推論",
+      "observedPattern": "公立學校國文評量要求區分直接資訊、推論、語氣、指涉與受眾改寫，並以文本證據限制結論；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把定義拆成名詞、動作與目的，再沿著這三條線索閱讀例子與限制。",
+  "solutionSteps": [
+    "讀題定位：圈出「定義追蹤」與文本中的時間、數值、語氣、代詞、定義或受眾線索。",
+    "證據分層：區分直接寫出、合理推論、評價與尚待查證的內容；本題核心是「定義提供對象、流程與目的的核心框架，後文應追蹤這些要素如何被具體說明。」",
+    "核對正解：選項 C 的結論範圍與文本證據完全相稱。",
+    "排除誘答：檢查是否把第一印象當事實、把一個例子推廣到全部，或加入文本沒有提供的背景。",
+    "回讀驗證：回到原句逐字核對，確認答案能指出直接證據或清楚標示推論界線。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

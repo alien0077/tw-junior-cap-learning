@@ -2,23 +2,23 @@
   "id": "question-science-content-fb-iv-4-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年11月2日河川觀測站的觀察中，連續一個月在相同時間觀察月面亮部變化，研究「Fb-Ⅳ-4：月相變化的規律」時，最能支持哪項結論？",
+  "prompt": "學生用望遠鏡拍攝月球，第一張照片右側較亮，三天後第二張照片左側較亮。哪個解釋最有根據？",
   "options": [
     {
       "id": "A",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 8 組、10 月觀察中，月亮本身每天產生不同亮度"
+      "text": "太陽消失又重新出現，才造成亮面轉移"
     },
     {
       "id": "B",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 8 組、10 月觀察中，月相完全由雲量決定"
+      "text": "望遠鏡把月球的公轉方向反轉"
     },
     {
       "id": "C",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 8 組、10 月觀察中，月相是由日、地、月相對位置改變造成的視覺變化"
+      "text": "月球固體表面從右側搬到左側"
     },
     {
       "id": "D",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 8 組、10 月觀察中，月亮只在滿月時才存在"
+      "text": "月球受光半球隨公轉位置改變，因此地球看到的亮面方向改變"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "月球反射太陽光，日、地、月相對位置改變會造成可規律觀察的月相。 本題對應 KG「Fb-Ⅳ-4：月相變化的規律」。"
+    "value": "D",
+    "explanation": "太陽持續照亮月球，月球公轉改變觀察幾何，使地球看見的受光部分改變；這不是月面固體左右搬移，也不需要假設太陽熄滅。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的月相、日月地模型與觀測資料能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Fb-Ⅳ-4 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fb-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-fb-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "月相、日月地運動與天文觀測資料判讀",
+      "pattern": "取由日月地相對位置、觀測時間與週期資料推論月相變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由日月地相對位置、觀測時間與週期資料推論月相變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "使用時間差與亮面方向作幾何推論，避免把影像方向或表面外觀當成月球本體變形。",
+  "solutionSteps": [
+    "比較兩張照片真正改變的是亮面方向。",
+    "確認太陽仍是固定光源，無須假設消失。",
+    "連結月球公轉造成的觀察幾何改變。",
+    "排除望遠鏡改變軌道與月面固體左右搬移。",
+    "選 D，確認解釋同時符合光照連續性與月球公轉造成的觀察幾何改變。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

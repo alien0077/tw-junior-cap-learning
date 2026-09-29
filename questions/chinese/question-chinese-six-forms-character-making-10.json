@@ -2,41 +2,76 @@
   "id": "question-chinese-six-forms-character-making-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "理解形聲字應說明？",
+  "prompt": "研究「銅」的字形時，看到金部與同聲旁，最完整的說明應是？",
   "options": [
     {
       "id": "A",
-      "text": "意符與聲符各自功能"
+      "text": "金部可能提示金屬義，同可提供讀音線索，仍須查證現代讀音與詞義"
     },
     {
       "id": "B",
-      "text": "只背筆畫"
+      "text": "只要看到金部就能判定任何相關詞義"
     },
     {
       "id": "C",
-      "text": "只念聲旁"
+      "text": "金部決定讀ㄊㄨㄥˊ，同決定全部字義"
     },
     {
       "id": "D",
-      "text": "只看字典頁數"
+      "text": "同是象形部件所以與讀音無關"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ab-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "分辨兩部件功能才能理解形聲結構。"
+    "value": "C",
+    "explanation": "金部提供金屬類意義方向，同可能提供讀音線索，但需用字典與詞語查證，不可把線索當定論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-six-forms-character-making-10.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究象形、指事、會意、形聲與部件查證能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫六書與造字題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-six-forms-character-making"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-six-forms-character-making",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字形、造字與語境",
+      "observedPattern": "公立學校國文評量從字形部件、字義線索與語境要求辨認造字方式，並區分象形、指事、會意及形聲；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字形結構、形音義與閱讀",
+      "observedPattern": "公立學校國文評量從字形部件、字義線索與語境要求辨認造字方式，並區分象形、指事、會意及形聲；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分別標記形旁與聲旁的功能，再以規範資料和完整詞語做最後驗證。",
+  "solutionSteps": [
+    "讀題定位：圈出「形聲綜合查證」與字形部件、位置、意義或讀音線索。",
+    "拆解構形：分別說明部件可能提供的功能，再連回整字與語境；本題核心是「金部提供金屬類意義方向，同可能提供讀音線索，但需用字典與詞語查證，不可把線索當定論。」",
+    "核對正解：選項 C 同時符合造字法定義、部件功能與查證界線。",
+    "排除誘答：檢查是否把形旁當聲旁、把線索當定論，或只憑現代字形外觀硬猜字源。",
+    "回讀驗證：以字源資料、字典讀音與完整詞語重新檢查，確認形、音、義的推論都有證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

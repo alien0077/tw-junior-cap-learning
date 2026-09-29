@@ -1,0 +1,174 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-8-4
+  knowledgeGraphIds:
+  - kg-math-content-a-8-4
+  title: A-8-4：因式分解
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '8'
+  fusedScope:
+    officialCurriculum: A-8-4：因式分解
+    curriculumIntent: A-8-4 聚焦因式／倍式、二次多項式的乘積表示及候選驗證；提公因式、平方差、和積配對與十字交乘不作本課核心（D-314）。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 融合可核對之因式／倍式及乘積表示概念；南一為公開分享索引片段、康軒為學生筆記、翰林為第三方分享補救教材，均非三家官方原書完整比讀；算法範圍按D-314排除
+    currentEvidenceStatus: curriculum-and-kg-grounded; public-shared-source-limits-recorded; publisher-original-full-text-comparison-pending; content-review-pending
+  learningGoals:
+  - 說明若 A(x)B(x)=P(x)，A、B 是 P 的因式而 P 是其倍式
+  - 把二次多項式理解為乘積表示，辨認因式與倍式方向
+  - 對候選因式提出商式，透過乘回或多項式除法餘式為0驗證
+  - 說明代值不等可排除候選，但單一代值相等不能證明恆等
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 因式關係表示存在另一多項式作商，兩者乘積恆等於原式
+  - 因式與倍式描述乘法關係的相反方向，不能只憑共同字母判定
+  - 展開逐項比較或除法餘式為0可驗證因式候選
+  - 代值不等可推翻候選；代值相等本身不足以證明恆等
+  misconceptions:
+  - 把含有相同變數誤當成因式證據
+  - 把因式與倍式方向顛倒
+  - 以單一代值相等冒充恆等證明
+  - 找到括號外觀卻未提出商式、乘回或檢查餘式
+  contentFlow:
+  - 'hook: 從 (x+2)(x+5) 的列欄數連到二次多項式的乘積表示'
+  - 'predict: 從已知列數×欄數的乘積預測展開式，標示因式與倍式的方向。'
+  - 'factor-scan: 提出候選因式與商式，以乘回或除法餘式驗證'
+  - 'manipulate: 逐項展開候選因式與商式；本課不拖曳公因式、不選分解算法、不建立完全分解樹。'
+  - 'observe: 將乘積三類項與原多項式係數逐項並排，任一項不符即拒絕候選。'
+  - 'explain: 用乘法等式或除法餘式為零說明因式成立；區分反例可否定、單一代值相等不能證明。'
+  - 'product-check: 將候選因式與商式相乘並逐項比較原式'
+  - 'counterexample: 代值不等時排除候選，代值相等仍要求恆等驗證'
+  - 'transfer: 從排列情境轉回乘積等式，區分模型尺寸限制與代數因式身分'
+  - 'exit-ticket: 診斷僅憑共同字母或括號外觀判定因式的錯誤'
+  visualizations:
+  - 候選比較列：逐項顯示候選因式與商式乘積的係數，指出第一個不相等項
+  - 因式方向圖：因式A × 因式B → 倍式P，並反向閱讀候選分解
+  - 展開驗證帶：每個因式乘積對應一個乘積項，合併後與原多項式逐項比對
+  - 商與餘式欄：顯示候選除式、商式、餘式，餘式非零即拒絕
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-8-4-I01
+    component: StepwiseReasoningBlock
+    purpose: 辨認因式／倍式方向，提出商式並以乘回或餘式驗證；不教後續分解算法
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        expression: 'x²+7x+10'
+        candidateDivisor: 'x+2'
+        candidateQuotient: 'x+5'
+        productVerified: false
+        showAnswer: false
+    studentActions:
+    - 先預測乘積展開的二次項、一次項與常數項，不揭露候選答案
+    - 選定因式／倍式方向並提出候選商式
+    - 將候選因式與商式相乘，逐項比較原式係數
+    - 以除法餘式檢查候選，餘式非零時拒絕
+    - 用代值反例診斷錯誤候選，並區分反例與恆等證明
+    visualRules:
+    - 因式方向依乘積恆等式判定，不以外觀或共同字母判斷
+    - 展開後必須逐項比較，不能只比首項或常數項
+    - 代值不等可否定候選；代值相等不能單獨證明恆等
+    - 保留預測與嘗試歷程；窄螢幕以步驟卡堆疊且不丟失因式層級
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-8-4-I01
+      trigger: 宣稱 x+1 是 x²+7x+10 的因式，只因兩者都含 x
+      prompt: 若 x+1 是因式，將 x=-1 代入原式應有何結果？這能否作為否定候選的證據？
+      expectedEvidence: 原式在x=-1時等於4而非0，故x+1不是因式；並說明代值相等不能單獨證明恆等
+    feedback:
+      correct: 指出代值反例能排除 x+1，並引導以乘回或除法餘式驗證另一候選。
+      incorrect: 第一層提示因式需存在多項式商；第二層要求代入x=-1計算原式；重試後說明反例可否定而相等值仍不足以證明恆等。
+    guidedActivity:
+      title: 因式方向與乘回證據
+      introduction: 你要確認候選因式是否真的能整除多項式。先提出商式，再乘回核對；每步答對才繼續。
+      stages:
+      - prompt: 第一步：若 x+2 是 x²+7x+10 的因式，可能的商式是什麼？
+        acceptedAnswers: ["x+5", "x＋5"]
+        correctFeedback: 正確。候選商式是 x+5，接著要乘回確認。
+        hint: 尋找一個一次式，讓乘積首項為x²、常數項為10。
+      - prompt: 第二步：(x+2)(x+5) 展開後的中間項係數是多少？
+        acceptedAnswers: ["7", "+7", "7x"]
+        correctFeedback: 正確。兩個交叉乘積為5x與2x，合併係數為7。
+        hint: 分別算x乘5、2乘x，再相加。
+      - prompt: 第三步：乘積是否逐項等於 x²+7x+10？
+        acceptedAnswers: ["是", "相等", "yes"]
+        correctFeedback: 正確。乘回得到原式，因此x+2與x+5都是因式。
+        hint: 同時核對二次項、中間項與常數項。
+      - prompt: 第四步：若把候選改成 (x+3)(x+4)，它能否乘回 x²+7x+10？
+        acceptedAnswers: ["不能", "不行", "否"]
+        correctFeedback: 正確。常數項成為12而非10，完整乘積不相等。
+        hint: 不只看前兩項；也要計算括號內常數相乘。
+      completionMessage: 完成。你以商式乘回逐項判定因式關係，並能指出只核對部分係數的錯誤。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "先讓學生預測候選因式關係，再提出商式並展開核對；只借用互動教學節奏，不取用外部題目。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "每次提交因式／商式候選後提供可撤銷的局部乘積檢查，不顯示後續算法解答。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "策略、候選因子、和、積及展開結果皆具明確名稱，狀態回饋可由螢幕閱讀器讀取且不以顏色為唯一訊息。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以標題和語意區域區分原式、策略選擇、因式樹、展開核對與回饋；鍵盤可在因式樹父子節點間移動。"
+  capTransfer:
+    questionType: 以乘積模型判定因式與倍式
+    stemConstraint: 展場座位排成 x+2 排、每排 x+5 席。寫出總席數多項式，並判斷 x+2 是否為總席數多項式的因式，展示乘回驗證。
+    requiredResponse: 總席數為(x+2)(x+5)=x²+7x+10；x+2為因式，商式x+5，乘回逐項一致。
+    scoring: 正確列乘積與多項式1、因式倍式方向正確1、乘回逐項驗證1
+  exitTicket:
+    prompt: 小安說 x+1 是 x²+7x+10 的因式，因為兩式都含 x。指出此推理錯誤，並提出一個足以排除該候選的反例及一種完整驗證方式。
+    successCriteria:
+    - 指出共同字母不是因式證明
+    - 代入x=-1得原式為4，排除x+1
+    - 說明應以完整乘回或除法餘式0證明正確候選
+  expressionExtension:
+    applicable: true
+    task: 對 x²+7x+10 提出兩組候選線性因式與商式，先用代值尋找可否定的候選，再選一組用展開逐項證成。
+    constraint: 學生須區分反例否定與恆等證明；不可使用本課尚未教的分解算法作唯一理由。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 對x²+7x+10以候選x+2提出商x+5，乘回逐項成立；候選x+1以x=-1作反例應被否定。
+  - 因式與倍式方向題不可倒置；任何成功狀態都需乘回或餘式0證據。
+  - 單一代值相同不得標記恆等證明，代值不同可立即拒絕候選。
+  - 320px、375px、768px與鍵盤皆可完成候選因式／商式輸入、讀取逐項回饋；錯誤不只靠顏色表達。
+  - 座位 transfer 情境的乘積與展開式一致，模型尺寸限制不混作代數因式判定。
+  - 互動元件失效時，文字 fallback 提供因式、商式、乘回和餘式紀錄欄，仍能完成因式判定與遷移題。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-4
+    role: official-curriculum-source-of-truth

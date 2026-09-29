@@ -2,23 +2,23 @@
   "id": "question-science-content-cross-disciplinary-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年4月11日校園實驗室的觀察中，針對「自然科學跨科主題」提出可檢驗的科學問題，若比較 4 組、每組取樣 18 份資料，哪一項設計最適當？",
+  "prompt": "要把雨水花園方法遷移到另一所學校，第一個不能省略的步驟是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「自然科學跨科主題」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "直接照搬原校數值"
     },
     {
       "id": "B",
-      "text": "研究「自然科學跨科主題」時只改變溶液濃度，其餘條件一致，設置4組、每組取樣18份並各重複測量4次"
+      "text": "只複製最好的設計圖"
     },
     {
       "id": "C",
-      "text": "研究「自然科學跨科主題」時只測量4組中的一組就直接下結論"
+      "text": "重新測量場地坡度、土壤、降雨、使用需求與維護能力"
     },
     {
       "id": "D",
-      "text": "研究「自然科學跨科主題」時先決定結論，再挑選支持結論的18筆資料"
+      "text": "把不同場地視為相同系統"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,49 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「自然科學跨科主題」。"
+    "value": "C",
+    "explanation": "跨場地遷移必須重新建立系統邊界與基準資料，否則原方案條件未必成立。 正確答案為選項 C。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "環境情境、變因控制、資料判讀",
+      "observedPattern": "只取公立學校公開試題的能力模式，重寫校園雨水花園情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "水、熱、生物與工程限制",
+      "observedPattern": "只取跨概念資料推理方向，重新設計方案比較。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作環境情境、變因控制、資料判讀與跨科證據能力方向；本題為跨科主題原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-disciplinary"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cross-disciplinary",
+  "solutionStrategy": "先做場地盤點與基準線，再判斷哪些機制可移植、哪些需要改寫。",
+  "solutionSteps": [
+    "畫出降雨、地表、土壤、植物、排水與受影響區域的系統邊界。",
+    "分辨操弄變因、控制條件、直接觀測、模型輸出與價值判斷。",
+    "依時間、測點、單位與多指標資料比較，檢查替代解釋。",
+    "排除把單一指標當整體最佳、一次模擬當長期定律或忽略下游的選項，答案為 C。",
+    "把結論限制在資料真正涵蓋的條件：跨場地遷移必須重新建立系統邊界與基準資料，否則原方案條件未必成立。"
+  ]
 }

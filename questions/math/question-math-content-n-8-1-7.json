@@ -2,23 +2,23 @@
   "id": "question-math-content-n-8-1-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "√8×√2 的值為何？",
+  "prompt": "下列哪個敘述正確？",
   "options": [
     {
       "id": "A",
-      "text": "16"
+      "text": "√(−9) 是實數"
     },
     {
       "id": "B",
-      "text": "4"
+      "text": "√9＝±3"
     },
     {
       "id": "C",
-      "text": "2√2"
+      "text": "√16＝4"
     },
     {
       "id": "D",
-      "text": "√10"
+      "text": "√0＝1"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "√8×√2＝√16＝4。"
+    "value": "C",
+    "explanation": "主平方根 √16＝4；√9 是 3 而非 ±3，負數沒有實數平方根，√0＝0，因此選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究平方根定義、根式化簡、四則運算與幾何應用能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供平方根、主平方根、正負根、分數小數與幾何應用能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的平方根方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-n-8-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-8-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "square roots, principal roots, positive and negative roots, rational roots, simplification, and geometric applications",
+      "observedPattern": "公立學校公開數學試題常要求辨認平方根與主平方根、解平方方程式、計算分數或小數的根，並將根號連結到邊長與面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "square roots, principal roots, positive and negative roots, rational roots, simplification, and geometric applications",
+      "observedPattern": "公立學校公開數學試題常要求辨認平方根與主平方根、解平方方程式、計算分數或小數的根，並將根號連結到邊長與面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分清主平方根、平方方程式解與實數根號的定義，逐項檢查。",
+  "solutionSteps": [
+    "檢查 A：負數在實數範圍沒有平方根。",
+    "檢查 B：√9 是主根 3，±3 是 x²＝9 的解。",
+    "檢查 C：4²＝16，成立。",
+    "檢查 D：0²＝0，√0 不等於 1。",
+    "選 C，確認只有一項符合根號定義。"
+  ]
 }

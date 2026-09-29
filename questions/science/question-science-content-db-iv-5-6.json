@@ -2,41 +2,73 @@
   "id": "question-science-content-db-iv-5-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年1月29日自然科教室的觀察中，針對「Db-Ⅳ-5：適應構造與仿生精密儀器」提出可檢驗的科學問題，若比較 3 組、每組取樣 14 份資料，哪一項設計最適當？",
+  "prompt": "天然蓮葉塗層與人工防水材料都能讓水滴滑落，環境評估還需比較什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-5：適應構造與仿生精密儀器」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "只比較第一次滑落速度"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-5：適應構造與仿生精密儀器」時只測量3組中的一組就直接下結論"
+      "text": "只因天然就判定沒有環境代價"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-5：適應構造與仿生精密儀器」時只改變水溫，其餘條件一致，設置3組、每組取樣14份並各重複測量4次"
+      "text": "耐久度、製造材料、清潔需求、微粒釋出、成本與退役處理"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-5：適應構造與仿生精密儀器」時先決定結論，再挑選支持結論的14筆資料"
+      "text": "只看產品外觀"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
     "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-5：適應構造與仿生精密儀器」。"
+    "explanation": "功能相似不代表生命週期影響相同，材料來源、壽命、維護與退役都要納入。 正確答案為選項 C。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "生物構造、功能、變因與證據判讀",
+      "observedPattern": "只取公立校方公開試題的生物與探究能力方向，改寫為仿生情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "仿生應用、功能比較、模型限制",
+      "observedPattern": "只取公開資料題的推理模式，重新設計自然構造與工程測試。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作適應構造、功能、仿生應用、控制變因與模型限制的能力方向；本題為 Db-Ⅳ-5 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-5"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-5",
+  "solutionStrategy": "先固定功能單位，再比較製造、使用、維護、壽命和退役階段。",
+  "solutionSteps": [
+    "先指出生物構造、環境壓力、功能與工程任務的對應關係。",
+    "把自然觀察、機制假說、工程指標、控制條件和風險分開。",
+    "依尺度、材料、濕度、噪音、時間或使用者條件檢查替代解釋。",
+    "排除只看外形、單次示範、天然標籤或單一性能的選項，答案為 C。",
+    "將答案放回仿生情境並標註適用限制：功能相似不代表生命週期影響相同，材料來源、壽命、維護與退役都要納入。"
+  ]
 }

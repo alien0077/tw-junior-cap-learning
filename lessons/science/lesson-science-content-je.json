@@ -48,7 +48,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "在虛擬密閉反應槽中，以曲線斜率與平台證據區分速率改變和平衡組成改變。",
@@ -62,36 +62,47 @@
     "steps": [
       {
         "id": "step-1",
-          "prompt": "若要比較升溫對初期反應速率的影響，應先怎麼操作？",
+        "prompt": "若要比較升溫對初期反應速率的影響，應先怎麼操作？",
         "options": [
           "提出可觀察問題並列出變因",
           "先寫預期答案",
           "省略安全檢查"
         ],
         "answer": "A",
-          "feedback": "固定初始粒子數與體積、只改溫度，才能用前段曲線斜率比較有效碰撞速率。"
+        "feedback": "固定初始粒子數與體積、只改溫度，才能用前段曲線斜率比較有效碰撞速率。"
       },
       {
         "id": "step-2",
-          "prompt": "如何判定催化路徑沒有改變平衡組成？",
+        "prompt": "如何判定催化路徑沒有改變平衡組成？",
         "options": [
           "固定條件、重複量測並記錄單位",
           "只量一次且不記錄",
           "任意改變多個因素"
         ],
         "answer": "A",
-          "feedback": "比較抵達平台的時間與平台高度；前者縮短而後者相同，才符合催化劑的作用。"
+        "feedback": "比較抵達平台的時間與平台高度；前者縮短而後者相同，才符合催化劑的作用。"
       },
       {
         "id": "step-3",
-          "prompt": "加入 A2 後，哪組紀錄最能支持平衡重新調整？",
+        "prompt": "加入 A2 後，哪組紀錄最能支持平衡重新調整？",
         "options": [
           "先描述證據，再提出有條件的解釋",
           "把猜測當成結果",
           "刪掉不符合預期的資料"
         ],
         "answer": "A",
-          "feedback": "要同時保留瞬間跳變、之後的變化方向和新平台，不能只看加入當下的顏色或粒子數。"
+        "feedback": "要同時保留瞬間跳變、之後的變化方向和新平台，不能只看加入當下的顏色或粒子數。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "同一模擬槽中，升溫使曲線更陡但平台近似不變；加入 A2 後平台升高。哪個結論正確？",
+        "options": [
+          "升溫主要改變到達平台的速率，加入 A2 造成組成重新調整；兩者都要以斜率、跳變與平台分開判讀",
+          "曲線變陡就代表最後產物一定更多，所以升溫與加料作用完全相同",
+          "看到平台就表示粒子停止反應，後續資料不必再記錄"
+        ],
+        "answer": "A",
+        "feedback": "速率證據在斜率或到達平台時間，平衡組成證據在新平台；平台是正逆反應速率相等的宏觀結果，不是微觀反應停止。"
       }
     ]
   },
@@ -99,45 +110,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Je：化學反應速率與平衡；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Je：化學反應速率與平衡 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「化學反應速率與平衡」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Je：化學反應速率與平衡」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Je：化學反應速率與平衡 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Je：化學反應速率與平衡」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與單元定位",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "主題 J 化學反應；Je 反應速率、可逆反應與平衡的課程方向",
-      "sourceUrl": "https://course.cyc.edu.tw/upfile/course109/sub1/14507919853792884.pdf",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Je：化學反應速率與平衡 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "teaching-sequence", "activity-pattern"],
-      "outcome": "公開計畫支持由反應現象進入速率因素，再延伸可逆反應和平衡；本課以粒子模型與曲線判讀重新組織成原創學習路徑。",
-      "copyrightBoundary": "只採公開課程計畫的定位與方向，不複製南一課本、習作、教師用書、插圖或題目。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林版國中自然科官方公開產品與課程資訊",
-      "subject": "science",
-      "chapterLocator": "化學反應及平衡主題之單元化情境與探究方向",
-      "sourceUrl": "https://books.hanlin.com.tw/productall",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "assessment-pattern"],
-      "outcome": "公開產品資訊支持情境化探究、圖表判讀與生活應用；本課融合碰撞模型、可逆轉換和控制變因，案例與任務皆為原創。",
-      "copyrightBoundary": "只作公開產品結構研究，不複製翰林課文、圖表、圖片、習題、答案或教師用內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Je：化學反應速率與平衡」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -146,13 +167,24 @@
       "edition": "南一版國中自然科公開課程計畫與單元定位",
       "sourceType": "public-web",
       "sourceLocator": "https://course.cyc.edu.tw/upfile/course109/sub1/14507919853792884.pdf；化學反應相關單元公開定位",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["速率因素需連結可觀察反應現象與粒子碰撞模型。", "可逆反應與平衡要從反應方向和系統條件理解。"],
-        "representations": ["以現象紀錄、粒子示意與曲線斜率／平台相互對照。"],
-        "examplesOrEvidence": ["公開課程計畫提供主題方向；本課自編密閉色彩反應槽與數據。"],
-        "misconceptions": ["把反應變快當成產物一定變多，或把平衡當成反應停止。"],
-        "assessmentEmphasis": ["要求學生區分速率證據、平衡組成與控制變因。"]
+        "concepts": [
+          "速率因素需連結可觀察反應現象與粒子碰撞模型。",
+          "可逆反應與平衡要從反應方向和系統條件理解。"
+        ],
+        "representations": [
+          "以現象紀錄、粒子示意與曲線斜率／平台相互對照。"
+        ],
+        "examplesOrEvidence": [
+          "公開課程計畫提供主題方向；本課自編密閉色彩反應槽與數據。"
+        ],
+        "misconceptions": [
+          "把反應變快當成產物一定變多，或把平衡當成反應停止。"
+        ],
+        "assessmentEmphasis": [
+          "要求學生區分速率證據、平衡組成與控制變因。"
+        ]
       },
       "licenseBoundary": "只採公開課程計畫的章節定位與教學方向；完整課本、習作及教師用書未取得，本文不複製或改寫其中受保護內容。"
     },
@@ -161,13 +193,24 @@
       "edition": "康軒版國中自然科公開數位資源與課程結構",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_science.xml；化學反應單元公開結構",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["以觀察證據進入反應速率，再用條件改變說明可逆系統。", "平衡是動態的微觀交換與穩定的宏觀量並存。"],
-        "representations": ["將粒子事件紀錄、反應曲線和條件操作結果同步呈現。"],
-        "examplesOrEvidence": ["公開 XML 僅供單元結構定位；本課自建 A2、B2、AB 模擬資料。"],
-        "misconceptions": ["看到平台就認為粒子沒有運動，或認為催化劑改變平衡終點。"],
-        "assessmentEmphasis": ["從斜率、瞬間跳變和平台高度各找出對應證據。"]
+        "concepts": [
+          "以觀察證據進入反應速率，再用條件改變說明可逆系統。",
+          "平衡是動態的微觀交換與穩定的宏觀量並存。"
+        ],
+        "representations": [
+          "將粒子事件紀錄、反應曲線和條件操作結果同步呈現。"
+        ],
+        "examplesOrEvidence": [
+          "公開 XML 僅供單元結構定位；本課自建 A2、B2、AB 模擬資料。"
+        ],
+        "misconceptions": [
+          "看到平台就認為粒子沒有運動，或認為催化劑改變平衡終點。"
+        ],
+        "assessmentEmphasis": [
+          "從斜率、瞬間跳變和平台高度各找出對應證據。"
+        ]
       },
       "licenseBoundary": "只研究公開 XML 的 metadata 與方向，不複製影音字幕、圖片、題目、實驗設計或解答。"
     },
@@ -176,22 +219,45 @@
       "edition": "翰林版國中自然科官方公開產品與課程資訊",
       "sourceType": "public-web",
       "sourceLocator": "https://books.hanlin.com.tw/productall；化學反應與探究取向公開資訊",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["情境化資料可同時訓練反應條件判斷與科學解釋。", "速率和產率是不同問題，須用不同觀察量回答。"],
-        "representations": ["生活情境、粒子模型、控制變因表和平台曲線互相檢核。"],
-        "examplesOrEvidence": ["公開產品資訊只作方向參考；本課原創汽水引導、虛擬反應槽與轉移任務。"],
-        "misconceptions": ["把顏色深淺直接當作反應速率，或用單一終點推論整段反應。"],
-        "assessmentEmphasis": ["要求條件式結論、證據指向與資料限制同時出現。"]
+        "concepts": [
+          "情境化資料可同時訓練反應條件判斷與科學解釋。",
+          "速率和產率是不同問題，須用不同觀察量回答。"
+        ],
+        "representations": [
+          "生活情境、粒子模型、控制變因表和平台曲線互相檢核。"
+        ],
+        "examplesOrEvidence": [
+          "公開產品資訊只作方向參考；本課原創汽水引導、虛擬反應槽與轉移任務。"
+        ],
+        "misconceptions": [
+          "把顏色深淺直接當作反應速率，或用單一終點推論整段反應。"
+        ],
+        "assessmentEmphasis": [
+          "要求條件式結論、證據指向與資料限制同時出現。"
+        ]
       },
       "licenseBoundary": "只作公開產品結構研究，不複製課文、圖表、插圖、習題、答案或教師用內容。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["三版本方向皆將化學反應放入可觀察現象與條件改變中理解。", "速率、可逆反應與平衡需要由微觀粒子和宏觀資料互相連結。", "探究活動須保留控制變因、證據與限制，而非只背名詞。"],
-    "versionDifferences": ["公開資料的課程順序與活動呈現線索不同，本課以速率—可逆—平衡的概念橋接重新安排。", "不同公開資源對圖像、影音或情境的著重不同，本課統一改用原創粒子槽與曲線判讀。"],
-    "originalAdditions": ["自編密閉色彩反應槽，讓學生同步追蹤粒子事件、斜率與平台。", "設計把催化劑、加料與溫度分開比較的互動任務，避免混淆速率和組成。", "加入生活與製程轉移活動，要求學生為速率目標與平衡目標提出有條件設計。"],
-    "llmSynthesisNote": "本課先依官方 Je、Je-Ⅳ-1、Je-Ⅳ-2、Je-Ⅳ-3 的概念關係建立範圍，再閱讀三個版本可公開取得的課程定位、結構與探究方向，交叉比較其概念順序、表示方式、活動取向與常見迷思。正文、案例、互動選項、模擬任務與檢核皆由 LLM 以碰撞模型和動態平衡重新組織撰寫，不複製任何版本課文或題目。"
+    "commonCore": [
+      "速率描述反應進行快慢，平衡描述可逆反應在特定條件下的宏觀終態，兩者不可混為一談。",
+      "催化劑、濃度、溫度與壓力可能同時牽涉速率和位移，但作用機制與證據不同。",
+      "工業製程需整合速率、收率、能源、設備、安全與成本。"
+    ],
+    "versionDifferences": [
+      "南一公開線索支持由時間序列和生活反應進入速率與平衡。",
+      "康軒公開課程資料較突出正逆反應、曲線與控制變因。",
+      "翰林公開課程計畫補充催化劑、製程及條件取捨；公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以『初期斜率—動態平衡—平台高度—條件擾動—製程取捨』整合根單元。",
+    "用不同時間尺度和工業批次情境診斷速率等於產量、平衡等於停止等迷思。",
+    "以可逆反應的濃度—時間圖同時比較初始斜率與最後平台，設計加入反應物和改變溫度的擾動並區分速率變化、平衡位置及產率。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公開試題／課程資料能力方向，重新撰寫 Je 根單元的速率、可逆反應、平衡、催化劑、曲線及工業決策整合；未複製教材或試題文字、圖表與答案，Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -260,7 +326,42 @@
     "model": "general",
     "goal": "用 A2、B2、AB 粒子數曲線同步判讀速率因素與動態平衡。",
     "mission": "先預測升溫、催化路徑與加入 A2 的差異，再在安全模擬器中記錄前段斜率、瞬間跳變與最後平台；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"reaction-equilibrium-rate","objective":"以濃度、溫度、催化劑與時間曲線區分反應速率和化學平衡。","predictionPrompt":"升高溫度與加入催化劑都可能改變曲線，如何判斷它們影響的是速率還是平衡位置？","steps":[{"action":"固定反應物量並記錄前段斜率與平台","equation":"rate=delta-concentration/time"},{"action":"分別加入催化劑、升溫或增加 A2 比較曲線","equation":"equilibrium=forward-reverse"},{"action":"用粒子數與能量資料檢查模型及測量限制","equation":"evidence=curve+particle"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以濃度、溫度、催化劑與時間曲線區分反應速率和化學平衡。",
+      "predictionPrompt": "升高溫度與加入催化劑都可能改變曲線，如何判斷它們影響的是速率還是平衡位置？",
+      "steps": [
+        {
+          "action": "固定反應物量並記錄前段斜率與平台",
+          "equation": "rate=delta-concentration/time",
+          "id": "step-1",
+          "reason": "本步把「固定反應物量並記錄前段斜率與平台」和「rate=delta-concentration/time」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「固定反應物量並記錄前段斜率與平台」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "分別加入催化劑、升溫或增加 A2 比較曲線",
+          "equation": "equilibrium=forward-reverse",
+          "id": "step-2",
+          "reason": "本步把「分別加入催化劑、升溫或增加 A2 比較曲線」和「equilibrium=forward-reverse」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「分別加入催化劑、升溫或增加 A2 比較曲線」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "用粒子數與能量資料檢查模型及測量限制",
+          "equation": "evidence=curve+particle",
+          "id": "step-3",
+          "reason": "本步把「用粒子數與能量資料檢查模型及測量限制」和「evidence=curve+particle」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「用粒子數與能量資料檢查模型及測量限制」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "把升溫、催化路徑與加入 A2 的三條曲線疊合，分別標示前段斜率、瞬間跳變、到達平台時間與平台高度",
+          "equation": "速率證據＝斜率／到達時間；平衡證據＝平台組成；催化劑不必改變平衡位置",
+          "id": "step-4",
+          "reason": "同一張曲線同時含有時間和組成資訊；若只看變陡便宣稱產物增加，會把速率與平衡混在一起。加入物質的瞬間跳變還必須和後續重新調整分開記錄。",
+          "feedback": "請在結論旁寫出對應的曲線證據與控制條件；若平台、斜率或粒子模型其中一項缺失，就只能提出暫定解釋並標示限制。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以濃度、溫度、催化劑與時間曲線區分反應速率和化學平衡。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

@@ -2,41 +2,78 @@
   "id": "question-science-content-jf-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年6月6日校園實驗室的觀察中，將 6 g 食鹽溶於 237 g 水，研究「Jf：有機化合物的性質、製備及反應」時，溶液質量為何？",
+  "prompt": "某材料由小分子單體反應形成長鏈，受熱可軟化、冷卻後成形；要從結構預測其用途，哪項推理最完整？",
   "options": [
     {
       "id": "A",
-      "text": "231 g"
+      "text": "它可能是熱塑性聚合物，可依耐熱、強度、柔韌與化學相容性選擇用途"
     },
     {
       "id": "B",
-      "text": "1422 g"
+      "text": "只要是長鏈就一定能裝熱酸"
     },
     {
       "id": "C",
-      "text": "243 g"
+      "text": "單體越小材料一定越硬"
     },
     {
       "id": "D",
-      "text": "237 g"
+      "text": "聚合物不會燃燒也不需標示"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jf"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：6＋237＝243 g。 本題對應 KG「Jf：有機化合物的性質、製備及反應」。"
+    "value": "A",
+    "explanation": "鏈狀聚合物可在適當加熱下軟化，但用途仍須查耐熱、力學和化學相容性；長鏈不保證所有性質。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的有機結構、官能基、反應、聚合物、製備、生命週期與安全整合能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jf"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jf",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "有機化合物、結構、反應、材料與安全整合判讀",
+      "pattern": "取由有機結構、反應產物、製備資料與生活材料情境整合推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由有機結構、反應產物、製備資料與生活材料情境整合推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "碳化合物、燃燒、聚合物、生活應用與資料圖表",
+      "pattern": "取從模型、實驗資料、材料生命週期與生活情境判斷有機化學的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從模型、實驗資料、材料生命週期與生活情境判斷有機化學的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把聚合結構和實際材料性能及用途配對。",
+  "solutionSteps": [
+    "辨認單體聚合成長鏈。",
+    "判斷受熱軟化支持熱塑性。",
+    "列出用途需要的耐熱、強度和相容資料。",
+    "排除能裝所有物質、不燃燒和不需標示。",
+    "所以 A 最完整。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-math-performance-a-iv-2-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "解方程式 4x＋3＝2x＋15，x 為何？",
+  "prompt": "解方程式 x/3+2=5，x 為何？",
   "options": [
     {
       "id": "A",
-      "text": "9"
+      "text": "3"
     },
     {
       "id": "B",
-      "text": "4"
+      "text": "6"
     },
     {
       "id": "C",
-      "text": "12"
+      "text": "9"
     },
     {
       "id": "D",
-      "text": "6"
+      "text": "12"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "移項得 4x－2x＝15－3，即 2x＝12，所以 x＝6。"
+    "value": "C",
+    "explanation": "兩邊減 2 得 x/3=3，再乘以 3 得 x=9，所以選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考一元一次方程式、移項、括號、分數小數與生活情境題型；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "一元一次方程單元實質改寫；已重新解方程式並核對代回結果，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供一元一次方程式能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的方程式解題方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-a-iv-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-a-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "一元一次方程式的等量操作、括號、分數／小數係數、文字建模、無解與恆等式；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求將文字條件列式，依等量公理解未知數，並以代回或矛盾檢查答案；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "一元一次方程式的等量操作、括號、分數／小數係數、文字建模、無解與恆等式；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求將文字條件列式，依等量公理解未知數，並以代回或矛盾檢查答案；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "一元一次方程式的等量操作、括號、分數／小數係數、文字建模、無解與恆等式；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求將文字條件列式，依等量公理解未知數，並以代回或矛盾檢查答案；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先孤立分數項，最後乘上分母消除分數。",
+  "solutionSteps": [
+    "原式為 x/3+2=5。",
+    "兩邊同減 2，得 x/3=3。",
+    "兩邊同乘 3，得 x=9。",
+    "代回 9/3+2=5。",
+    "所以選 C。"
+  ]
 }

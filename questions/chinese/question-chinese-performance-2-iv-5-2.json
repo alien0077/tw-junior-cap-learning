@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-2-iv-5-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "演說開頭先描述同學每天找不到安靜自習座位，再提出『延長圖書館開放』的主張。這樣安排有何作用？",
+  "prompt": "評論「校園應增設遮雨棚」時，哪組證據最能直接支持「雨天通行受阻」？",
   "options": [
     {
       "id": "A",
-      "text": "讓聽眾無法知道演說主題"
+      "text": "作者覺得遮雨棚漂亮。"
     },
     {
       "id": "B",
-      "text": "以個人座位取代公共議題"
+      "text": "連續四週同一時段的積水深度、通行人次與受阻紀錄。"
     },
     {
       "id": "C",
-      "text": "由具體問題引出主題，吸引聽眾注意"
+      "text": "網路有人說所有學校都要有。"
     },
     {
       "id": "D",
-      "text": "先公布所有結論而不說明背景"
+      "text": "演講者用很大聲音重複主張。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "先呈現具體問題能建立情境，再自然引出後續主張。"
+    "value": "B",
+    "explanation": "好的證據和理由在同一層次且可核對，直接記錄積水與通行受阻比美觀、他人意見或音量有關。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究報告、評論、演說與論辯能力方向（演說開場組織）；另以官方語文領域課綱核對 2-Ⅳ-5（https://www.naer.edu.tw/）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究口頭報告、直接證據、受眾、反方、資料比較與公共提案。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文口語表達與證據說服 Ab-Ⅳ-5 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-2-iv-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-2-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口頭報告、資料與主旨",
+      "observedPattern": "公立學校國文評量以口頭報告主旨、直接證據、敘述順序、事實／評價、因果反駁、方案涵蓋、受眾調整、資料比較與有證據說服要求完成公共表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "論證、受眾與反方",
+      "observedPattern": "公立學校國文評量以口頭報告主旨、直接證據、敘述順序、事實／評價、因果反駁、方案涵蓋、受眾調整、資料比較與有證據說服要求完成公共表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把理由改成可觀察指標，再選有時間、地點與測量方法的資料。",
+  "solutionSteps": [
+    "讀題定位：圈出「直接證據」與受眾、資料、指標、限制、反方或評估條件。",
+    "整理表達：先分主旨、證據、評價與方案，再依「好的證據和理由在同一層次且可核對，直接記錄積水與通行受阻比美觀、他人意見或音量有關。」檢查結論強度。",
+    "核對正解：選項 B 能讓聽眾追蹤資料與推理，且沒有把有限證據誇大成必然。",
+    "排除誘答：檢查是否用音量、口號、個案、情緒或挑選數據取代可核對證據。",
+    "回讀驗證：確認主張、證據、受眾、反方、限制與行動指標彼此相連。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

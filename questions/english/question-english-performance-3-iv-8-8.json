@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-8-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-8／理解短文訊息書信主要內容」task, what is the best way to prepare question 8?",
+  "prompt": "Read the short report.\n\nA group of students started a “quiet corner” beside the school garden. During lunch, students can borrow a book, sit under the trees, or write in a journal. The group chose the spot because it is away from the basketball court. Two student volunteers tidy the area each day. The corner is open whenever the garden gate is unlocked.\n\nWhich information is NOT given?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "What students may do there"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "How many books a student may borrow"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Why the group chose the location"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Who tidies the area"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-8"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-8／理解短文訊息書信主要內容, question 8."
+    "value": "B",
+    "explanation": "報告列出可借書、休息或寫日記，說明選址遠離球場，也交代每天由兩位學生志工整理；沒有說明每位學生能借幾本書。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675417163713PBpnsLYp.pdf",
+    "sourceLocator": "僅將公立學校公開英語評量的短篇閱讀理解能力作 pattern-only 參照；本文、選項、答案與解析均獨立撰寫。",
+    "authoringNote": "Original English text and item authored for KG 3-Ⅳ-8; public-school exam references inform only the skill pattern. Publisher-version fusion, rights/content review, and second-round review remain incomplete; keep draft."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417163713PBpnsLYp.pdf",
+      "title": "臺北市立內湖國中111學年度第1學期九年級第2次段考英語科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "111學年度第1學期",
+      "subject": "english",
+      "locator": "PDF第3頁第45題：依節慶資料報告辨認未提及資訊",
+      "locatorLevel": "item",
+      "observedPattern": "以多欄短報告區分明示資訊與文本未交代的細節；須逐項回查證據，不以常識補答。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "NOT 題先把每個選項改寫成待查核命題，再逐一在全文尋找；不可把合理猜測當作文章資訊。",
+  "solutionSteps": [
+    "圈出 NOT，提醒自己要找全文沒有交代的細節。",
+    "查選項 A：borrow a book、sit、write 均出現在第二句。",
+    "查選項 C 和 D：遠離球場是選址原因，兩位學生志工負責整理。",
+    "全文只有 borrow a book，沒有設定每人可借的數量。",
+    "缺少明確證據的是 B；不能用校園常規自行補出冊數。"
+  ]
 }

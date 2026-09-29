@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bd-iv-1-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "提出主張時，哪一項最適合作為可查證的事實論據？",
+  "prompt": "段落寫：『午休試辦安靜區後，圖書館借閱量增加12%，因此所有走廊都應改成安靜區。』其中核心主張是？",
   "options": [
     {
       "id": "A",
-      "text": "理解「Bd-Ⅳ-1：事實理論為論據達說服建構批判」並能應用"
+      "text": "圖書館借閱量增加12%"
     },
     {
       "id": "B",
-      "text": "只看標題，不讀內容"
+      "text": "午休曾試辦安靜區"
     },
     {
       "id": "C",
-      "text": "只憑個人印象判斷"
+      "text": "所有走廊都應改成安靜區"
     },
     {
       "id": "D",
-      "text": "忽略題目條件"
+      "text": "借閱量是一種數據"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bd-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "本題檢查「Bd-Ⅳ-1：事實理論為論據達說服建構批判」的核心理解與應用。"
+    "value": "C",
+    "explanation": "『所有走廊都應改成安靜區』是作者希望讀者接受的政策結論，前面的數據與試辦是支持材料。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-content-bd-iv-1-1.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究事實、理論、價值主張、論據、外推與反例。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫論證與批判題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-26",
-  "lessonId": "lesson-chinese-content-bd-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bd-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "論點、事實與論據判讀",
+      "observedPattern": "公立學校國文評量要求區分事實、理論與價值主張，檢查論據與結論的連結、範圍和反例；本題使用全新校園提案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說服結構、證據與推論",
+      "observedPattern": "公立學校國文評量要求區分事實、理論與價值主張，檢查論據與結論的連結、範圍和反例；本題使用全新校園提案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先區分作者要大家採納的結論和用來支持它的事實。",
+  "solutionSteps": [
+    "圈出『因此』後的句子。",
+    "確認它是對全校走廊的政策要求。",
+    "把前兩項視為背景與論據。",
+    "C 是需要被證明的核心主張。",
+    "若刪去數據，檢查主張是否仍缺少支持。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

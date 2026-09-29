@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance ai-IV-1."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-ai-iv-1.json"; REPORT=ROOT/"implementation/reports/science-performance-ai-iv-1-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；動手實作、問題解決、成就感與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持透過安全實作、反覆嘗試、證據回饋與完成反思建立探究信心。"],"representations":[r],"examplesOrEvidence":["本課的紙橋、太陽能小車與濾水器皆為原創實作情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-ai-iv-1" and d["reviewStatus"]=="draft"
+ d["title"]="ai-Ⅳ-1：動手實作解決問題並獲得成就感——讓改版看得見"
+ d["content"]={"summary":"動手實作的成就感不是只來自一次成功，而是能把問題拆小、做出第一個版本、看懂失敗、修改方法並看見進步。紙橋承重、太陽能小車或濾水器都需要材料選擇、限制、安全和可量測目標；完成後要比較版本與記錄改變，讓『我做到了』有具體證據。本課以原創任務帶學生經歷設計、製作、測試、改版與分享，建立願意再試一次的信心。","sections":[{"heading":"把大問題變成今天能做的版本","body":"『做一台最強的車』太大，先改成在固定光源和距離下讓小車前進一公尺。清楚的第一版目標能降低開始門檻，也讓完成後知道哪個條件真的改善。"},{"heading":"雙手操作也需要思考紀錄","body":"製作前畫草圖、列材料和安全注意，製作中記錄改了哪裡，測試後寫下資料與意外。手的操作和腦中的推理互相回饋，不是只照步驟拼裝。"},{"heading":"失敗是可拆解的訊息","body":"紙橋塌下來可能和受力方向、接點、紙張折法或負載位置有關。把失敗分成可改變的因素，一次改一項再測，能讓挫折轉成下一版的線索。"},{"heading":"成就感來自可見進步","body":"比較第一版和第二版的承重、距離、清澈度或完成時間，指出哪個改動造成進步，也承認仍有的限制。具體證據比空泛稱讚更能支持持續實作。"}]}
+ d["studyHighlights"]=["把大問題拆成今天可完成、可測量的第一版目標。","在草圖、製作、測試與記錄間往返。","把失敗拆成因素，一次改變一項再測試。","用版本資料呈現進步、限制與下一步。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"一張紙能不能撐起課本？","body":"每組只有兩張紙和膠帶，要做一座跨過 20 公分的紙橋。先不競賽重量，請畫出想法、預測最容易壞的地方並訂出第一個安全測試。即使第一版只撐起一本書，也要記下做對了什麼和下一版想改什麼。"},
+ {"id":"explain","phase":"explain","heading":"實作循環的可見證據","body":"定義小目標、畫草圖、選材料、做第一版、設定公平測試、記錄結果、改一項再測。每輪只追問一個可回答的問題，並保留照片、尺寸、重量或時間。這讓成就感建立在自己看得見的進步，不依賴和別人比較。"},
+ {"id":"worked-example","phase":"worked-example","heading":"讓太陽能小車前進一公尺","body":"第一版小車在直射光下只前進 40 公分。先固定光源、地面與起點，檢查輪軸摩擦、電池板角度和車身重量；第二版只改變輪軸對齊，再測三次。若距離變成 70 公分，就能把進步連到改動，同時記錄仍未達一公尺的限制。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"濾水器的改版任務","body":"第一個濾水器流得快但水仍混濁，第二個變清卻太慢。學習者先訂兩個最低標準：在五分鐘內收集固定水量且濁度下降，再調整砂石層厚度或濾材順序，一次只改一項。所有水不可飲用，並記錄處理和清潔安全。"},
+ {"id":"transfer","phase":"transfer","heading":"做一張我的進步證據卡","body":"卡片包含第一版目標、原始結果、改動、第二版結果、仍有的問題和我學會的策略。分享時說明哪個證據支持進步，哪個地方還不能下結論。這讓同學可以借用方法，而不是只羨慕成品。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個實作迷思","body":"請修正『作品一次成功才算有能力』與『做得很快就是做得好』。可靠實作需要安全、測試、記錄和改版；速度只有在目標、品質和限制都符合時才有意義，失敗後能找原因並再試也是能力。"}
+ ],"summary":["把任務拆成可完成、可測量的第一版目標。","以草圖、材料、測試和紀錄支撐動手操作。","從失敗找出可改變因素，一次改一項再測。","用版本資料看見進步，建立再試的成就感。"],"exitCheck":[{"prompt":"紙橋第一版失敗時為什麼不能只重做完全相同的一座？","expectedEvidence":"要記錄受力、接點、折法或負載位置等可能因素，改變適當的一項並重新測試。"},{"prompt":"太陽能小車比較版本時要固定哪些條件？","expectedEvidence":"光源、地面、起點和測量時間等要一致，並重複測試才能把進步連到改動。"},{"prompt":"成就感如何用證據表示？","expectedEvidence":"比較版本的承重、距離、清澈度或時間，說明改動、進步與仍有限制。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"透過安全實作、測試、改版與證據比較建立解決問題的信心。","scenario":"完成紙橋、太陽能小車與濾水器任務，逐步把失敗轉成可改良的下一版。","variables":[{"symbol":"v","meaning":"實作版本"},{"symbol":"t","meaning":"測試結果"},{"symbol":"i","meaning":"改動因素"}],"steps":[{"id":"step-1","prompt":"開始紙橋任務前最合適的第一步是什麼？","options":["訂跨距與承重目標，畫草圖並指出安全測試方式","直接拿最多膠帶隨意黏","先和別組比較作品外觀"],"answer":"A","feedback":"目標、草圖和測試讓實作有可完成、可比較的方向。"},{"id":"step-2","prompt":"小車第一版只前進 40 公分，下一版如何改良較可靠？","options":["固定測試條件，一次只改輪軸或角度等一個因素並重複測試","同時換輪子、光源、地面和車身","只挑最遠的一次報告"],"answer":"A","feedback":"一次改一項能把版本進步和具體因素連起來。"},{"id":"step-3","prompt":"濾水器變清但流得太慢時應如何判斷？","options":["依預先的時間與清澈度標準改良材料或結構，並遵守不可飲用安全規則","只追求最清不管時間","直接飲用確認效果"],"answer":"A","feedback":"問題解決要同時檢查多重標準與安全底線。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以動手操作、問題解決和反覆嘗試建立科學學習信心。","草圖、材料、原型、測試資料、版本比較與反思卡。","把一次成功或外觀當成能力，忽略安全、方法和改良。","重視實作歷程、證據、合作與成就感。"),rec("kanghsuan","透過操作、合作、失敗分析與改版培養探究興趣和解題能力。","原型、控制條件、對照測試、照片、回饋與再設計。","同時改變太多因素，或只保留最好的結果。","評量動手、問題拆解、修正、溝通與反思。"),rec("hanlin","連結生活科技、材料、能源與環境任務，兼顧安全、品質和持續實作。","紙橋、太陽能、濾水、工具、材料、風險與成果證據。","只追求速度或效果，忽略不可飲用、器材和使用者安全。","要求說明改動、限制、影響、證據與負責任操作。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持透過安全實作、問題拆解、測試和修正建立科學信心。","第一版原型、控制條件、版本資料與失敗分析是共同要求。","成就感來自可見進步、方法學習與持續改良，不只來自一次成功。"],"versionDifferences":["南一證據較突顯動手、生活問題與基本反覆嘗試；康軒較突顯合作、失敗分析、控制與改版；翰林較突顯材料、能源、環境、安全與成果證據。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以兩張紙紙橋將第一版目標、承重測試與失敗因素具體化。","以太陽能小車示範一次改一項和版本距離證據。","以濾水器同時檢查清澈度、流速、不可飲用與安全限制。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織小目標、草圖、材料、原型、測試、改版、失敗分析、成就感與安全。正文、原創實作、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"ai-Ⅳ-1：動手實作解決問題並獲得成就感","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

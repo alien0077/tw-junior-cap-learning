@@ -2,23 +2,23 @@
   "id": "question-social-content-hist-j-10",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2022年9月9日校園公民論壇的資料中，研究「J：歷史考察（三）」時有三筆史料，年代分別為 1810、1760、1860 年。哪項最適合建立時間線？",
+  "prompt": "新資料顯示某地曾繁榮、後來衰退，近年因文化活動部分復甦。最謹慎的報告結論是？",
   "options": [
     {
       "id": "A",
-      "text": "依史料篇幅長短排列"
+      "text": "地方一直繁榮，所以不必討論衰退。"
     },
     {
       "id": "B",
-      "text": "依人物知名度排列"
+      "text": "文化活動已讓所有居民恢復相同利益。"
     },
     {
       "id": "C",
-      "text": "先決定結論再安排年代"
+      "text": "在限定時段與資料範圍內，描述不同階段的變化，並指出哪些群體和因果仍需補證。"
     },
     {
       "id": "D",
-      "text": "依 1760、1810、1860 的年代順序排列並標明史料來源，以判讀「J：歷史考察（三）」時序"
+      "text": "只用最近的活動照片代表整段歷史。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "時間線應依可核對的年代排序，並保留史料來源以便檢驗。 本題對應 KG「J：歷史考察（三）」。"
+    "value": "C",
+    "explanation": "本題聚焦「變遷結論」。地方變遷可能有多個階段和群體差異；結論應保留時間、證據與不確定性。 正確答案為選項 C：「在限定時段與資料範圍內，描述不同階段的變化，並指出哪些群體和因果仍需補證。」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
     "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "authoringNote": "依官方課綱、歷 J 知識圖譜及三所公立學校公開社會科試題的歷史探究、資料判讀與多方證據能力方向獨立改寫；未複製原題文字、選項、圖片或答案，待逐題學科與 Terra 複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-hist-j"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-social-content-hist-j",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國民中學公開段考社會科；僅研究資料判讀、時序與歷史推理題型，未複製原題。",
+      "year": "114",
+      "locator": "公開段考社會科 PDF；第 1 題至第 10 題型範圍：資料判讀、時序與因果界線",
+      "observedPattern": "由多種材料要求學生界定問題、證據範圍與歷史結論。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國民中學公開社會科試題入口；僅研究多資料互證題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開試題與解答入口；第 1 題至第 10 題型範圍：探究、時序與多重證據",
+      "observedPattern": "比較地圖、文字與角色經驗，區分直接觀察、推論與待補證主張。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國民中學公開段考試題入口；僅研究地方探究與多方角色題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開段考試題入口；第 1 題至第 10 題型範圍：地方史、社會變遷與多方角色",
+      "observedPattern": "從地方材料分析樣本、證據與群體差異，不以單一來源包辦結論。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用變遷結論界定問題、來源、樣本、倫理與結論，再區分觀察、推論和待補證據；地方變遷可能有多個階段和群體差異；結論應保留時間、證據與不確定性。",
+  "solutionSteps": [
+    "讀題定位：圈出研究問題、資料、參與者與任務，確認本題正在檢核「變遷結論」。",
+    "建立判準：把問題範圍、資料來源、樣本限制、倫理和結論強度分層。",
+    "核對正解：選項 C「在限定時段與資料範圍內，描述不同階段的變化，並指出哪些群體和因果仍需補證。」符合題幹，因為地方變遷可能有多個階段和群體差異；結論應保留時間、證據與不確定性。",
+    "逐項排除：檢查其餘選項是否把單一觀察放大、忽略來源與同意，或把時間順序誤當成因果。",
+    "結論回查：重新核對時間、地點、對象與證據強度；新增材料後要重新檢查，不能只沿用答案字母。"
+  ]
 }

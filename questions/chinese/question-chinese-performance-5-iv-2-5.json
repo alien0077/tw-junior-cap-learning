@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-5-iv-2-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "摘要段落時，哪項內容通常應優先保留？",
+  "prompt": "在一段勸說文中，『然而，這項方案仍需考慮無法上網的家庭』最可能有何功能？",
   "options": [
     {
       "id": "A",
-      "text": "主旨、關鍵理由與重要結果"
+      "text": "轉折並補入限制條件，提醒讀者不要把方案效果想得過於完整"
     },
     {
       "id": "B",
-      "text": "只注意單一細節"
+      "text": "重複前文完全相同的意思"
     },
     {
       "id": "C",
-      "text": "把無關資訊當成重點"
+      "text": "列出三個並列例子"
     },
     {
       "id": "D",
-      "text": "不考慮讀者或情境"
+      "text": "表示文章即將結束且不需再討論"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "摘要須保留能支撐主旨的訊息，而非逐句複製所有細節。"
+    "explanation": "轉折詞與後文內容共同形成段落功能；『然而』通常引入不同方向或限制，而非單純重複。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-performance-5-iv-2-5.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫主要概念、寫作目的、觀點、證據、句子功能、標題、事實觀點、段落關係、推論界線及整合閱讀；未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-26",
-  "lessonId": "lesson-chinese-performance-5-iv-2"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-chinese-performance-5-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "段落主旨、推論與篇章理解",
+      "observedPattern": "公開國文評量常以段落主旨、句子功能、觀點證據、推論範圍與標題判讀檢查閱讀理解；本題以新段落情境獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "寫作目的、觀點與語句功能",
+      "observedPattern": "公開國文評量常以段落主旨、句子功能、觀點證據、推論範圍與標題判讀檢查閱讀理解；本題以新段落情境獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找段落的重複、統整與轉折語句，再把例證、觀點和限制串成推論鏈；區分事實、評價與推測，最後用一句話回扣全文。",
+  "solutionSteps": [
+    "讀題定位：圈出「句子功能」，確認題目要找主要概念、寫作目的、觀點、證據、句子功能或推論界線。",
+    "整理段落鏈：把重複語句、例證、轉折、因果與限制連起來，避免只取一個細節；本題核心是「轉折詞與後文內容共同形成段落功能；『然而』通常引入不同方向或限制，而非單純重複。」",
+    "核對正解：選項 A「轉折並補入限制條件，提醒讀者不要把方案效果想得過於完整」能統整段落證據，且結論強度不超過原文。",
+    "排除誘答：不要只看開頭、醒目詞或個人經驗，也不要把一個例子推成全體事實。",
+    "完成回扣：用『作者以哪些材料，為何目的，提出什麼觀點』重述，再回看每項證據是否支持。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

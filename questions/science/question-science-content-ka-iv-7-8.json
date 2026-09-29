@@ -2,23 +2,23 @@
   "id": "question-science-content-ka-iv-7-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年6月23日河川觀測站的觀察中，水中射向鏡面時，光線與鏡面法線的入射角為 15°，研究「Ka-Ⅳ-7：光速與影響因素」時，反射角為何？",
+  "prompt": "某 3 m 玻璃段造成的理論時間差小於感測器的不確定度，最合適的報告是？",
   "options": [
     {
       "id": "A",
-      "text": "15°（水中射向鏡面）"
+      "text": "目前解析度不足以可靠分辨，應增加路徑或改善儀器"
     },
     {
       "id": "B",
-      "text": "75°（「Ka-Ⅳ-7：光速與影響因素」中把入射角誤當折射角）"
+      "text": "挑選最接近理論值的一次就宣稱已證明"
     },
     {
       "id": "C",
-      "text": "30°（「Ka-Ⅳ-7：光速與影響因素」中把入射角加倍）"
+      "text": "忽略不確定度，因為光速很快"
     },
     {
       "id": "D",
-      "text": "165°（「Ka-Ⅳ-7：光速與影響因素」中以平角計算）"
+      "text": "把誤差直接當成光在玻璃中停止"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,74 @@
   "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "反射定律指出反射角等於入射角，因此為 15°。 本題對應 KG「Ka-Ⅳ-7：光速與影響因素」。"
+    "explanation": "若預期差值小於儀器不確定度，資料不足以判別差異；可增加有效路徑、重複平均或使用更高解析度感測器。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的光速、介質、折射率、時間資料和探究能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka-iv-7"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ka-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "光速、透明介質、折射率與資料判讀",
+      "pattern": "取公立學校自然科評量以介質、速率、公式和數據推理光學現象的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以介質、速率、公式和數據推理光學現象的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "光學、傳播時間、介質與科學資料判讀",
+      "pattern": "取公開會考以模型、圖表和條件資訊判斷光學傳播的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以模型、圖表和條件資訊判斷光學傳播的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E7%90%86%E5%8C%96%E7%A7%91_8.pdf",
+      "title": "高雄市立國昌國中 113 學年度第一學期第二次段考二年級理化科公開試題",
+      "year": "113",
+      "locator": "PDF 第 3 頁第 25 題：比較光波與聲波，含介質速率與雷雨先見閃電後聞雷聲的判讀；僅借鑑能力方向，不採用來源中的錯誤敘述。",
+      "pattern": "以光和聲音在介質中的傳播差異檢核科學推論，並要求分辨觀察到的先後與真正原因。",
+      "subject": "science",
+      "observedPattern": "以光和聲音在介質中的傳播差異檢核科學推論，並要求分辨觀察到的先後與真正原因。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.csjh.kh.edu.tw/teach/exam/108%E4%B8%8A%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%AE%B5%E8%80%83/%E8%87%AA%E7%84%B6%E7%A7%91/%E4%BA%8C%E5%B9%B4%E7%B4%9A/108-1%E5%9C%8B%E4%BA%8C2%E6%AE%B5%E8%87%AA%E7%84%B6%28%E7%90%86%E5%8C%96%29%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立中山國中 108 學年度第一學期第二次段考二年級自然科公開試題",
+      "year": "108",
+      "locator": "PDF 第 3 頁第 25 題：光由空氣進入水中時，判讀光速、波長、頻率及折射相關變化。",
+      "pattern": "在介質改變情境下連結折射、光速與波長／頻率不變條件。",
+      "subject": "science",
+      "observedPattern": "在介質改變情境下連結折射、光速與波長／頻率不變條件。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把測量解析度納入結論，不把理論值冒充實測證據。",
+  "solutionSteps": [
+    "題目指出理論時間差小於感測器不確定度，因此量測結果無法可靠分辨兩種情況。",
+    "比較『差值大小』和『量測不確定度』：差值落在誤差範圍內，不足以支持有差異或無差異的定論。",
+    "改善方法可增加有效光路長度，讓累積時間差放大；也可改用解析度更高的感測器。",
+    "重複測量與平均有助降低隨機誤差，但不能聲稱必然消除系統誤差。",
+    "選 A：如實報告目前無法判別，並提出提升訊噪或解析度的後續方法。"
+  ]
 }

@@ -1,0 +1,130 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-8-iv-4
+  knowledgeGraphIds:
+  - kg-english-performance-8-iv-4
+  title: 8-Ⅳ-4：尊重欣賞不同文化
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: 8-Ⅳ-4 能了解、尊重不同之文化習俗；C-Ⅳ-3 文化習俗的了解及尊重
+    curriculumIntent: 從英語文本與生活交流理解文化習俗，尊重差異並以證據避免過度概括
+    publisherEvidence:
+      nani: {status: pending, required: true}
+      kanghsuan: {status: pending, required: true}
+      hanlin: {status: pending, required: true}
+    fusionRule: 以可核讀的三版標示公校計畫補充教學取徑並由LLM原創整合；未取得指定課本全文者明列限制，不虛稱逐頁比對
+    currentEvidenceStatus: three publisher-labeled public-school plan sources consulted; full target textbook chapters unavailable; original fusion manuscript authored
+  learningGoals:
+  - 區分文本明載事實、個人解釋與尚待查證的推論
+  - 比較文化例子時標示來源、情境及適用範圍，不以個人經驗概括群體
+  - 以英語提出不預設答案且尊重分享意願的問題
+  - 以來源、同意、範圍及撤回權設計包容的文化分享
+  prerequisites:
+  - 能閱讀簡易生活情境或對話並找出人物與行為
+  - 能辨認 some, one, all 等範圍詞並提出簡單英語問題
+  coreConcepts:
+  - 文化習俗需要放回說話者、家庭、地點與時間脈絡理解
+  - 證據範圍須與主張範圍相稱，個人敘述不代表整個群體
+  - 尊重包含取得同意、接受拒答及避免將文化勞動推給單一同學
+  misconceptions:
+  - 一位受訪者的經驗足以代表整個國家或族群
+  - 網路看得到的照片就代表可任意使用且能證明文化意義
+  - 好奇心或善意可以取代當事人同意與拒答權
+  - 不同習俗可以直接排成先進落後或高低優劣
+  contentFlow:
+  - 'predict: 看文化展板情境先預測哪句話把可見行為誤當成動機或全體習俗，記錄需要查證處'
+  - 'manipulate: 把個人經驗、家庭／地方資料分開，並以相同問題整理來源、對象、時間與地點'
+  - 'observe: 比較展板原句、受訪者自述與地方資料，標記哪些是直接觀察、哪些仍未知；練習詢問前徵求同意並接受拒答'
+  - 'explain: 用可追溯資料修訂展板，限制主張到來源能支持的群體和地點，不將單一同學塑造成文化代表'
+  - 'transfer: 將證據界線與同意原則帶入校園文化分享策劃，提出來源、參與選擇和自我檢核方式'
+  visualizations:
+  - 觀察／文本明載／解釋／待查證四欄 evidence boundary board
+  - 同一比較問題下的 source-scope matrix；每筆保留說話者與地點
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-8-IV-4-I01
+    component: GuidedChoiceBlock
+    purpose: 以四個原創校園情境練習證據界線、尊重提問、範圍比較及來源同意
+    initialState:
+      showAnswer: false
+      selectedChoice: null
+      completedSteps: []
+    studentActions:
+    - 閱讀短情境並選擇最有證據且尊重當事人的作法
+    - 答錯後依單元提示重新選擇
+    - 作答後閱讀答案理由並指出情境中的支持線索
+    - 可用鍵盤完成全部選項及重試操作
+    visualRules:
+    - 四步題目逐步顯示回饋；完成前不預先揭露正解
+    - 正誤狀態以文字及符號表達，不以顏色單獨承載
+    - 題幹、選項和回饋在320／375／768像素寬度可完整閱讀
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-8-IV-4-I01
+      trigger: 把一人的行為或描述擴大成整個群體規則
+      prompt: 請指出資料中的說話者和文字實際涵蓋的範圍。
+      expectedEvidence: 能指出個人／家庭／來源範圍並選擇不超出證據的表述。
+    feedback:
+      correct: 指出答案採用的文字證據，並要求說出它不能支持的更大主張。
+      incorrect: 提示學生重看主詞、範圍詞、來源或同意線索，允許重試後再顯示解析。
+  teachingPatternRefs:
+  - refId: naer-english-curriculum-8-iv-4
+    reuseDecision: inspiration-only
+    application: 依8-Ⅳ-4及C-Ⅳ-3教學，教材、案例、題目與互動均為本單元原創。
+  - refId: public-school-plans-nani-kanghsuan-hanlin
+    reuseDecision: inspiration-only
+    application: 只綜合節慶閱讀、生活情境、來源查核等公校計畫層級方法，不聲稱出版社課本逐頁融合。
+  capTransfer:
+    questionType: 文化短文／資料判讀／推論與來源範圍
+    stemConstraint: 使用全新人物與素材，要求區分文本明載、個人經驗和未被證明的群體主張
+    requiredResponse: 選答後指出支持線索並說明推論範圍
+    scoring: 文化脈絡理解1、證據與主張範圍相稱1、尊重表述與同意界線1
+  exitTicket:
+    prompt: 改寫一個把個人說成全體的文化句子，並補上來源範圍。
+    successCriteria:
+    - 保留來源明確提供的事實
+    - 用限定詞說明說話者／地點／群體範圍
+    - 不排名文化，也不代替他人表態
+  expressionExtension:
+    applicable: true
+    task: 寫三句英文文化展板說明，至少一句限定來源範圍並提出一個可拒答的禮貌問題
+    constraint: 不要求班上同學代表任何國家或群體；引用公開來源並確認照片／個人故事同意
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 選項名稱、作答狀態、重試提示與正解解析均可讀取
+    reducedMotion: 不依賴動畫即可逐步操作及接收回饋
+  testCases:
+  - 初始載入不得揭露四步答案；鍵盤使用者可逐題作答及重試。
+  - 答錯時提供指出範圍／來源／同意線索的單元提示，重新作答後才顯示解析。
+  - 正答回饋需指出文字證據且說明其不能支持的過度概括。
+  - 四步互動在320、375及768像素視窗不溢位；選項狀態具可讀名稱且不只用顏色表示。
+  - 學生頁完整呈現七段本課正文一次，內容與教學 body 同步。
+  - 10道原創題均有可解析正確答案、繁中理由、單題策略、五步詳解及可定位公校考題 pattern-only 來源。
+  - 外部來源無法載入時，課文與互動仍可使用本地資料完成。
+  - fallback：外部文化來源或模擬腳本不可用時，以本地原創情境和四欄 evidence-boundary board 完成四步，不假稱已聯絡受訪者或查證網頁。
+  definitionOfDone:
+  - 課綱ID、KG ID、標題和官方來源一致
+  - 融合稿正文及互動可見、單元專屬且無占位文字
+  - 來源未取得完整出版社章節者明示限制，publisher evidence維持pending，不冒稱逐頁融合
+  - Node／Schema／題源結構驗證通過，瀏覽器鍵盤、回饋、窄螢幕及無障礙自動化測試通過
+  - 最終lesson教材審查由使用者交ChatGPT處理，不作為Codex融合撰寫完成gate
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%B6%B1.pdf
+    locator: 英語文8-Ⅳ-4及C-Ⅳ-3文化習俗了解與尊重；官方課綱PDF
+    role: official-curriculum-source-of-truth
+  - url: https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMxTDNCMFlWOHlNalF4WHpNMU1qUTNPRGxmT0RRME1qWXVjR1Jt&fname=LOGGYSOKWW10A1IH50LKKPHGPK30WT3414JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP3435GCQP3504B0UWYWWXUW50OOA0A0YWPOXX21JCLKSWIGQOB4SWHCUS30A110
+    locator: 公校課程計畫PDF p.17，南一標示七年級Lesson 3節慶閱讀及掃讀策略；跨年級方法參照
+    role: publisher-labeled-school-plan-context
+  - url: https://www.msjh.tp.edu.tw/uploads/1722920307628qqQMRB3p.pdf
+    locator: 民生國中113資源班英語計畫PDF pp.1–2，康軒標示九年級計畫及8-Ⅳ-4目標；非出版社課本章節
+    role: publisher-labeled-school-plan-context
+  - url: https://www.dyjhs.tyc.edu.tw/modules/tad_uploader/index.php?cat_sn=124&cfsn=2165&name=5-1-1-2%E8%8B%B1%E8%AA%9E%E6%96%87.pdf&op=dlfile
+    locator: 大有國中英語計畫PDF pp.13–14，翰林標示九上Unit 6、C-Ⅳ-3及文化差異議題；非出版社課本章節
+    role: publisher-labeled-school-plan-context

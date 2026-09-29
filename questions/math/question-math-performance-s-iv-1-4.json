@@ -10,11 +10,11 @@
     },
     {
       "id": "B",
-      "text": "SAS"
+      "text": "AAS"
     },
     {
       "id": "C",
-      "text": "AAS"
+      "text": "SAS"
     },
     {
       "id": "D",
@@ -24,19 +24,62 @@
   "knowledgeIds": [
     "kg-math-performance-s-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "D",
-    "explanation": "三組對應邊分別相等是 SSS（邊邊邊）全等判定。"
+    "explanation": "三組對應邊分別相等是邊邊邊判定，縮寫為 SSS，選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考幾何形體定義、符號、全等判定與基本性質題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供幾何定義、特殊四邊形、全等、圓與多邊形能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的幾何形體方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行四邊形、矩形、菱形、三角形全等與等腰三角形、垂直平分線、角平分線、圓切線、內角和",
+      "observedPattern": "公開數學評量常要求從幾何定義或符號性質辨識平行四邊形與特殊四邊形，再運用全等、等距、角平分與多邊形內角和完成推理；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平行四邊形、矩形、菱形、三角形全等與等腰三角形、垂直平分線、角平分線、圓切線、內角和",
+      "observedPattern": "公開數學評量常要求從幾何定義或符號性質辨識平行四邊形與特殊四邊形，再運用全等、等距、角平分與多邊形內角和完成推理；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行四邊形、矩形、菱形、三角形全等與等腰三角形、垂直平分線、角平分線、圓切線、內角和",
+      "observedPattern": "公開數學評量常要求從幾何定義或符號性質辨識平行四邊形與特殊四邊形，再運用全等、等距、角平分與多邊形內角和完成推理；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "數清楚已知的是幾條邊，不要因為沒有角資料而自行補角。",
+  "solutionSteps": [
+    "確認已知資料是三組對應邊。",
+    "沒有使用角相等條件。",
+    "三邊相等的全等判定記為 SSS。",
+    "將條件與選項縮寫逐一比對。",
+    "所以選 D。"
+  ]
 }

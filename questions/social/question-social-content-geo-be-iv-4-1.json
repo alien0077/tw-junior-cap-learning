@@ -2,41 +2,84 @@
   "id": "question-social-content-geo-be-iv-4-1",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2023年9月23日地方文史館的資料中，甲地年雨量約 1140 mm 且位於迎風坡，乙地約 580 mm 且位於背風坡。研究「地 Be-Ⅳ-4：新興市場與臺灣產業關聯」時，哪項判讀較合理？",
+  "prompt": "臺灣企業將零組件、設計與組裝分散在不同國家。要分析新興市場變化的影響，最應追蹤？",
   "options": [
     {
       "id": "A",
-      "text": "雨量差異必然只由緯度造成"
+      "text": "各階段的投入、運輸節點、客戶市場與中斷風險"
     },
     {
       "id": "B",
-      "text": "背風坡一定比迎風坡多雨"
+      "text": "只看最後產品的產地標籤"
     },
     {
       "id": "C",
-      "text": "單日雨量即可代表全年氣候"
+      "text": "只看單一工廠員工數"
     },
     {
       "id": "D",
-      "text": "在「地 Be-Ⅳ-4：新興市場與臺灣產業關聯」的資料中，地形與盛行風向可能共同造成兩地降雨差異"
+      "text": "把出口增加直接視為所有地區都受益"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-geo-be-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "迎風坡抬升氣流可能增加降雨，背風坡可能較乾；仍須結合長期資料判斷。 本題對應 KG「地 Be-Ⅳ-4：新興市場與臺灣產業關聯」。"
+    "value": "A",
+    "explanation": "產業關聯沿著供應鏈與市場網絡傳遞，分析要同時看生產分工、運輸節點與需求端。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立國中社會科公開試題；研究新興市場、臺灣產業、全球供應鏈與資料界線的能力方向。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開來源的題型／能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-geo-be-iv-4"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-geo-be-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國中三年級社會科公開段考；僅研究題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "產業、區域與資料判讀能力方向",
+      "observedPattern": "公開社會科產業與貿易資料題研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "產業網絡、貿易資料與區域發展題型",
+      "observedPattern": "公開社會科產業與貿易資料題研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "全球化、人地互動與多資料推理",
+      "observedPattern": "公開社會科產業與貿易資料題研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先釐清市場、產品與供應鏈的資料範圍，再比較分母、時間、風險與產業外部影響。",
+  "solutionSteps": [
+    "讀題定位：圈出「供應鏈」與題目給的市場、產品、期間、分母或利益條件。",
+    "建立判準：產業關聯沿著供應鏈與市場網絡傳遞，分析要同時看生產分工、運輸節點與需求端。",
+    "核對答案：選項 A「各階段的投入、運輸節點、客戶市場與中斷風險」符合新興市場與臺灣產業關聯的資料判讀。",
+    "排除誘答：檢查是否把總量當比重、單一案例當全體，或忽略成本、風險與外部影響。",
+    "結論回查：確認資料範圍、產品分類與推論強度相配，不做超出證據的外推。"
+  ]
 }

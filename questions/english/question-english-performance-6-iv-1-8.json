@@ -2,41 +2,84 @@
   "id": "question-english-performance-6-iv-1-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「6-Ⅳ-1／積極參與課堂練習」task, what is the best way to prepare question 8?",
+  "prompt": "Your group must choose a topic for an English poster. Which action is most cooperative?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 6-Ⅳ-1／積極參與課堂練習."
+      "text": "Suggest one topic, listen to two ideas, and vote with reasons."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 6-Ⅳ-1／積極參與課堂練習."
+      "text": "Choose secretly and refuse all comments."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 6-Ⅳ-1／積極參與課堂練習."
+      "text": "Wait for the teacher to do the group work."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 6-Ⅳ-1／積極參與課堂練習."
+      "text": "Delete every idea except your own."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-6-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 6-Ⅳ-1／積極參與課堂練習, question 8."
+    "explanation": "答案是 A：提出想法、聽取同學並說明投票理由。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三份公立學校公開英文評量的聽辨、對話回應及對話理解題型；本站僅參考能力形式，未複製原題或選項。",
+    "authoringNote": "依官方課綱與該單元課堂參與能力，參考三份公立學校公開英文評量的聽辨、對話理解與情境回應型態，獨立撰寫題幹、選項、答案與解法；未複製來源內容，維持 draft 待後續內容／版權 QA。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-6-iv-1"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-6-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文評量",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "PDF第1頁聽力第6至15題：基本問答及言談理解",
+      "observedPattern": "辨認提問並選擇合宜回應或理解對話；只借鑑英語互動評量形式。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "page"
+    },
+    {
+      "url": "https://jweb.kl.edu.tw/userfiles/1389/document/40425_%E5%85%AB%E5%B9%B4%E7%B4%9A1%E6%AE%B5%E8%8B%B1%E6%96%87.pdf",
+      "title": "基隆市立武崙國中111學年度第2學期八年級第1次段考英文科",
+      "year": "111-2",
+      "subject": "english",
+      "locator": "PDF第2頁聽力第6至8題基本問答；後續言談理解題",
+      "observedPattern": "依聽到的生活情境選擇回應並核對語意連貫；本站另寫課堂澄清、合作與參與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%80%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E8%AA%9E.pdf",
+      "title": "高雄市立國昌國民中學110學年度第1學期七年級英文科第1次段考",
+      "year": "110-1",
+      "subject": "english",
+      "locator": "PDF第2頁第21至25題對話回應；第3頁第32至33題校園對話理解",
+      "observedPattern": "評量對話銜接與從交流內容找訊息；只借鑑回應／理解形式，不沿用原文、角色或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "page"
+    }
+  ],
+  "solutionStrategy": "將合作拆成提出、聆聽與共同決策三個可檢查行動。",
+  "solutionSteps": [
+    "小組任務的產出是共同選題，不是個人決定。",
+    "合作過程要容納不同提案並讓決策理由透明。",
+    "檢視選項是否依序做到提案、聆聽與共同選擇。",
+    "暗中決定、等老師代做或刪除別人的想法都排除成員。",
+    "答案是 A：提出想法、聽取同學並說明投票理由。"
+  ]
 }

@@ -1,0 +1,145 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-8-iv-6
+  knowledgeGraphIds:
+  - kg-english-performance-8-iv-6
+  title: 8-Ⅳ-6：國際生活基本禮儀
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 8-Ⅳ-6：國際生活基本禮儀
+    curriculumIntent: 8-Ⅳ-6：國際生活基本禮儀
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以官方課綱、已讀取的南一標示七年級公校課程計畫及可核實的公開教學案例為線索，由作者依本課情境原創重組；未查得的康軒／翰林目標章節明列 pending，不冒稱完整三版章節融合
+    currentEvidenceStatus: official-curriculum-and-KG-read; Nani-labelled Grade 7 public-school unit plan read as adjacent-grade evidence; target Grade 8 Hanlin/Kang Hsuan chapter evidence pending
+  learningGoals:
+  - 從場合、關係、明示規則與個人需求辨認合宜行動，不以國籍概括文化
+  - 使用簡短英語自我介紹、詢問成分、徵求許可、婉拒或確認訊息
+  - 遷移到飲食安全、拍攝同意、公共空間與守時，並依對方回應調整
+  prerequisites:
+  - 能使用基本問候、請求與簡單問答句型
+  - 能分辨明示規則、直接觀察與尚未確認的推測
+  coreConcepts:
+  - 8-Ⅳ-6：國際生活基本禮儀
+  - 國際生活禮儀以尊重、安全、隱私、同意及共享空間為底線
+  - 禮貌語句需讓請求清楚可答，並尊重 yes、no 或不確定的回應
+  - 文化習慣有差異；單一觀察不能代表整個國家或群體
+  misconceptions:
+  - 把一個人的做法說成某國每個人都必須遵守的規則
+  - 把公開活動誤當成拍攝或轉傳他人影像的同意
+  - 把食物成分不確定當成安全，或把拒絕飲食視為不禮貌
+  - 只說出禮貌句，卻不遵守明示場館規則或對方拒絕
+  contentFlow:
+  - 'predict: 面對拜訪用餐和不明食物成分，先預測猜測成分可能造成的健康風險並提出待問問題'
+  - 'manipulate: 用場合、關係、明示規則、個人需求四線索選擇詢問方式及安全邊界'
+  - 'observe: 比較對方回答yes、no、uncertain後可觀察到的資訊，標記仍需確認處而不推測默許'
+  - 'explain: 依健康安全、同意與公共規則解釋後續行動，分開行為觀察、文化推測和待查問題'
+  - 'transfer: 將判準分別套用到拍照隱私、車廂共享空間及遲到通知，說明不同情境不能共用單一規則'
+  visualizations:
+  - GuidedChoice逐步顯示情境、三個行動選項、重試提示與答後理由
+  - 正解揭露前不顯示答案；答錯留在當前情境，正答後才前進
+  - 可用純文字與鍵盤完成；不依賴顏色、外部資料或動畫
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-8-IV-6-I01
+    component: GuidedChoiceBlock
+    purpose: 透過四個不同禮儀情境判斷明示規則、健康安全、隱私同意及共享空間，並依回應採取合宜後續行動
+    initialState: {showAnswer: false, selectedChoice: null, completedSteps: []}
+    studentActions:
+    - 閱讀自編英文情境並選擇行動
+    - 答錯時閱讀本課特定提示並留在當前步驟重試
+    - 答對後閱讀說明，再進入下一個生活場景
+    - 以鍵盤完成四步，不需外部網路或滑鼠拖曳
+    visualRules:
+    - 作答前不顯示正解；錯答出現重試提示，正答才揭露理由
+    - 四步情境依序檢查文化推測、飲食安全、影像同意及車廂規則
+    - 顏色不可單獨傳遞對錯或狀態；以文字與語意化控制項呈現
+    - 320px窄螢幕仍完整顯示題幹、選項、提示及理由
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-8-IV-6-I01
+      trigger: 把單一可見行為擴大成一個國家／文化的普遍規則
+      prompt: 哪些是你親眼看到的？哪些仍是推測？怎麼向當事人確認？
+      expectedEvidence: 能指出觀察與推論差別，提出不施壓的確認問句
+    feedback:
+      correct: 說明此情境真正支持的判準，並提醒不要把結果外推成文化定律。
+      incorrect: 指向場域規則、個人安全／同意或他人答覆等關鍵線索，要求學生重試。
+  teachingPatternRefs:
+  - refId: official-curriculum-8-iv-6
+    reuseDecision: inspiration-only
+    application: "依8-IV-6-1與8-IV-6-2設計禮儀英語理解及情境行動；本課例句、情境、選項與互動均為原創。"
+  - refId: public-school-nani-plan
+    reuseDecision: inspiration-only
+    application: "只參照南一標示七年級計畫的餐食分享／角色扮演活動型態，不搬用其課文或題目，也不視為八年級教材章節。"
+  - refId: w3c-wai-aria
+    reuseDecision: inspiration-only
+    application: "互動答案、錯答提示與步驟完成狀態須以鍵盤可操作且可被輔助科技辨識的文字回饋呈現。"
+  capTransfer:
+    questionType: 英語情境判斷／禮貌請求／同意與規則應用
+    stemConstraint: 新情境須轉換禮儀判準（例如飲食安全、拍攝同意或公共空間），不能只替換國名、人名
+    requiredResponse: 選擇合宜行動，並以一句話指出明示規則、個人需求或同意依據
+    scoring: 行動符合情境 1、依據明確 1、未做文化概括 1
+  exitTicket:
+    prompt: 遇到陌生習慣時，如何分開觀察與推測，並用英語確認？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出至少一項直接觀察或明示規則
+    - 提出禮貌且可回答的確認問句
+    - 說明收到拒絕或不確定答覆後的安全下一步
+  expressionExtension:
+    applicable: true
+    task: 用4至6句英文寫一段拜訪或用餐對話：自我介紹、詢問一項需求，並對 yes/no/uncertain 作出合宜回應
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 四步情境作答前不揭露答案；錯答顯示該題專屬提示，重試後正答才顯示解析。
+  - 四步分別檢查家中習慣不可泛化、過敏成分須確認、拒絕拍攝須停止、列車公告須遵守。
+  - 鍵盤可完成四步，完成狀態、選項及解析有清楚文字與可辨識名稱。
+  - 學生頁實際顯示六段 teaching.body，且四步互動與目前 GuidedChoice renderer 相符。
+  - 在320px、375px與768px檢查題幹、選項、錯答提示與答後解析無水平溢位。
+  - 十題答案、繁體中文逐題解析、解題策略及五步解題明確對應各自情境，公校考題僅作pattern-only來源。
+  - fallback：外部影音或模擬不可用時，使用本課內嵌情境文字完成全部四步；明示未播放媒體，不推定對方同意或食物安全。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 已取得的一種出版社標示教學線索與官方課綱被明確區分；未取得的出版社單元證據保持 pending
+  - 四步互動能以情境線索診斷刻板印象、忽略安全／同意或無視公共規則，並給出重試提示
+  - keyboard、mobile與文字替代測試符合目前頁面實際行為
+  - lesson完整正文、互動及十題解析已對應本單元而非通用占位
+  - 最終內容審查由使用者交ChatGPT執行；不作Codex融合稿名冊 gate
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 第四學習階段 8-IV-6；以課程手冊PDF第94頁細分8-IV-6-1/2及C-IV-5（生活禮儀）
+    role: official-curriculum-source-of-truth
+  - url: https://www.naer.edu.tw/upload/1/16/doc/2017/%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E6%89%8B%E5%86%8A%EF%BC%88%E5%AE%9A%E7%A8%BF%E7%89%88%EF%BC%89.pdf
+    locator: 課程手冊PDF第94頁；8-IV-6-1／8-IV-6-2、C-IV-5 國際生活禮儀
+    role: official-curriculum-source-of-truth
+  - url: https://www.maiyajiaoan.com/wiki/17436.html
+    locator: 臺北市衛理女中113學年度七年級英語課程計畫副本；第8–9週 Lesson 3, Please Bring Your Favorite Dish；頁面列8-IV-6及角色扮演、餐食分享
+    role: Nani-labelled-adjacent-grade-public-school-plan; not publisher textbook text
+  - url: https://www.cp.ptc.edu.tw/storage/134615/134615_112_C-1_6A.pdf
+    locator: PDF pp.59–60；自我介紹與餐桌禮儀之校訂課程安排；非國中出版社課本，僅作活動形式參考
+    role: public-school-pedagogy-example

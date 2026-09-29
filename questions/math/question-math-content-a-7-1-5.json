@@ -2,23 +2,23 @@
   "id": "question-math-content-a-7-1-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "當 x＝3 時，2x＋5 的值為何？",
+  "prompt": "長方形長為 x＋4 公分、寬為 x＋1 公分，用 x 表示周長為何？",
   "options": [
     {
       "id": "A",
-      "text": "10"
+      "text": "2x＋5"
     },
     {
       "id": "B",
-      "text": "8"
+      "text": "4x＋10"
     },
     {
       "id": "C",
-      "text": "6"
+      "text": "x²＋5x＋4"
     },
     {
       "id": "D",
-      "text": "11"
+      "text": "4x＋5"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "代入 x＝3：2×3＋5＝11。"
+    "value": "B",
+    "explanation": "周長＝2[(x＋4)＋(x＋1)]＝2(2x＋5)＝4x＋10 公分，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究代數符號、代入、同類項與分配律能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供代數符號能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的代數符號能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-7-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-a-7-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "代數式中的變數、係數、常數項、同類項、代入值、分配律、方程式與情境表示",
+      "observedPattern": "公立學校公開數學試題常以符號辨識、同類項合併、分配律、代入求值及生活情境建立代數式考查符號理解；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "代數式中的變數、係數、常數項、同類項、代入值、分配律、方程式與情境表示",
+      "observedPattern": "公立學校公開數學試題常以符號辨識、同類項合併、分配律、代入求值及生活情境建立代數式考查符號理解；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把長與寬相加，再乘二；括號能避免漏乘常數。",
+  "solutionSteps": [
+    "列出周長公式 2(長＋寬)。",
+    "代入得到 2[(x＋4)＋(x＋1)]。",
+    "括號內合併為 2x＋5。",
+    "乘以 2 得 4x＋10 公分。",
+    "選 B。"
+  ]
 }

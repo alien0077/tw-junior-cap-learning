@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bc-iv-1-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "某文比較兩種讀書方法，只列出方法甲的優點，沒有說明方法乙的資料。這樣的說明主要缺少什麼？",
+  "prompt": "段落說『下雨日垃圾變多，因此雨水會製造垃圾』。最適合的修正是？",
   "options": [
     {
       "id": "A",
-      "text": "更多誇張形容詞"
+      "text": "改成雨天垃圾量與平日不同，仍需檢查人流、活動與清運等因素再討論原因"
     },
     {
       "id": "B",
-      "text": "作者的情緒宣告"
+      "text": "刪除所有雨天資料"
     },
     {
       "id": "C",
-      "text": "與主題無關的背景故事"
+      "text": "改成雨水一定是唯一原因"
     },
     {
       "id": "D",
-      "text": "對兩種方法採用一致且完整的比較資料"
+      "text": "改成垃圾量完全不會變"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "只呈現一方資料無法形成公平比較，應以一致標準補足另一方資訊。"
+    "value": "B",
+    "explanation": "B 把觀察差異和因果解釋分開，並列出需要控制或檢查的變因。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究邏輯、客觀、理性說明能力方向（比較資料完整性）；另以官方語文領域課綱核對 Bc-Ⅳ-1（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究觀察、定義、因果證據、外推與問題解決。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫邏輯客觀理性說明題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文資料、推論與客觀表述",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "因果證據、定義與理性說明",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先保留能觀察的比較，再避免由同時發生直接推出唯一因果。",
+  "solutionSteps": [
+    "將雨天與平日垃圾量視為觀察差異。",
+    "找出人流、活動與清運等替代因素。",
+    "把唯一因果改成待查證的問題。",
+    "B 最符合理性說明的保留語氣。",
+    "設計同樣人流、不同天氣的比較以檢查原因。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

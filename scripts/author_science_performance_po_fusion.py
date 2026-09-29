@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance o."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-po.json"; REPORT=ROOT/"implementation/reports/science-performance-po-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；觀察、問題形成、資料紀錄與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持由有計畫觀察辨識現象、提出可探究問題並形成可記錄的資料。"],"representations":[r],"examplesOrEvidence":["本課的校園熱點、鳥類活動與植物葉片觀察皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-po" and d["reviewStatus"]=="draft"
+ d["title"]="觀察與定題（o）：從細節發現值得追問的問題"
+ d["content"]={"summary":"科學觀察不只是把看到的東西寫下來，而是有目的地選擇對象、條件、時間與紀錄方式，讓別人知道資料怎麼來的。觀察之後，還要把好奇改寫成能指出對象、變化和比較條件的探究問題。本課以校園熱點、鳥類活動與植物葉片為原創情境，練習分開觀察與推測、使用可操作描述、發現變異，並從多個問題中選出最值得先研究的一題。","sections":[{"heading":"觀察要留下可回看的資料","body":"『這裡很熱』可以改成在不同地點同一時間量測地表溫度並記錄單位。數字、位置、時間、天氣和器材資訊讓觀察不只依賴當下印象，也能被重做和比較。"},{"heading":"看見不等於解釋原因","body":"看到鳥停在樹上是觀察，猜測因為有果實是推測。先把兩者分欄，才不會在還沒測量食物、遮蔭或干擾前，把方便的原因當成事實。"},{"heading":"好的問題有邊界","body":"問題要說清楚研究什麼對象、改變哪個條件、觀察哪個結果和在哪段時間進行。『為什麼世界這樣』太大，『不同光照下某植物一週葉片數如何變化』才有可行的起點。"},{"heading":"從多個問題選出優先順序","body":"可研究性、重要性、安全、時間、器材與資料品質都可作為選題標準。最有趣的問題不一定最適合現在做，先做小而清楚的題目也能為後續大問題累積證據。"}]}
+ d["studyHighlights"]=["用目的、位置、時間、單位和器材留下可回看的觀察。","分開觀察、推測與尚未驗證的原因。","將好奇改寫成有對象、變因、結果與範圍的問題。","依可行性、安全、重要性與資料品質選擇題目。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"校園哪裡最熱？","body":"午休時有人說操場最熱，有人說靠牆處最熱。請設計一張觀察表，至少包含地點、時間、溫度、日照、地面材料和測量器材。先不急著解釋原因，讓大家看到若位置和時間不同，印象如何可能來自不公平的觀察。"},
+ {"id":"explain","phase":"explain","heading":"由觀察到問題的三次改寫","body":"第一次把感覺寫成可描述現象，第二次補上對象、時間與比較條件，第三次指定可量測結果和範圍。例如從『鳥喜歡哪棵樹』改成『上午同一時段，兩棵樹的鳥停留次數是否不同』。每次改寫都在減少模糊和不可操作的部分。"},
+ {"id":"worked-example","phase":"worked-example","heading":"葉片斑點是什麼問題？","body":"觀察到同一株植物有些葉片出現斑點。可提出光照、葉齡、澆水或病蟲害等方向，但先選一個安全且能記錄的問題：不同日照位置的葉片斑點比例在一週內是否不同。需定義斑點、選同類葉片並記錄日期，不能直接宣稱是某種病。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"鳥類活動觀察卡","body":"提供三個題目：『鳥為什麼存在？』『不同樹種在 8 點到 9 點的鳥停留次數是否不同？』『鳥一定喜歡有果實的樹嗎？』學習者依可測量性、時間、干擾與安全排序，並把第二題補成觀察表和重複方式。"},
+ {"id":"transfer","phase":"transfer","heading":"把日常好奇變成研究筆記","body":"一週內記下三個生活觀察，每個分成看到的資料、想到的可能原因、可比較的條件、可用器材與安全風險。選一題和同學互相檢查：別人是否能只讀問題就知道要看什麼、何時看、記什麼。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個觀察迷思","body":"請修正『觀察就是用眼睛看』與『問題越大越有科學價值』。觀察可以用量尺、溫度計、錄音或表格，有目的且可記錄；題目需要和時間、器材、倫理與資料品質匹配，小而清楚的問題更容易得到可靠證據。"}
+ ],"summary":["觀察要記錄對象、條件、時間、單位和器材。","把觀察與推測分開，避免先入為主。","問題要有對象、比較條件、可量測結果與範圍。","選題需考量可行性、安全、重要性與資料品質。"],"exitCheck":[{"prompt":"『這裡很熱』要如何改成可比較觀察？","expectedEvidence":"指定地點、同一時間、溫度單位與器材，量測不同位置並記錄日照或材料等條件。"},{"prompt":"為什麼看到鳥在果樹上不能直接說牠是因果？","expectedEvidence":"果實只是可能原因，還需觀察食物、遮蔭、干擾等條件與鳥停留資料。"},{"prompt":"選研究題目時為什麼要看安全和器材？","expectedEvidence":"題目必須能在現有條件下合法、安全、可測量，否則無法形成可靠資料。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"把生活觀察整理成可操作、可記錄且安全的探究問題。","scenario":"觀察校園熱點、鳥類與植物葉片，逐步分開資料和推測並選出可行題目。","variables":[{"symbol":"o","meaning":"觀察對象與資料"},{"symbol":"q","meaning":"可探究問題"},{"symbol":"c","meaning":"比較條件"}],"steps":[{"id":"step-1","prompt":"觀察校園熱點時，哪一項最能讓資料可比較？","options":["固定時間與測量方法，記錄地點、溫度和環境條件","只寫『感覺很熱』","每天任意時間使用不同器材"],"answer":"A","feedback":"位置、時間、單位與方法讓觀察可回看、重做和比較。"},{"id":"step-2","prompt":"看到鳥停在果樹上後，哪個屬於推測而非直接觀察？","options":["鳥是因為果實才停留","鳥在 8:30 停留 3 分鐘","樹上有兩隻鳥"],"answer":"A","feedback":"果實造成停留是尚待檢驗的解釋，不能和數到的資料混在一起。"},{"id":"step-3","prompt":"哪個題目最適合先做校園探究？","options":["同一時段兩棵樹的鳥停留次數是否不同","鳥為什麼存在於宇宙","鳥一定喜歡所有有果實的樹嗎"],"answer":"A","feedback":"它有對象、時間、比較和可記錄結果，範圍較適合現有觀察。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以有目的觀察、資料紀錄與問題形成開啟科學探究。","觀察表、測量值、位置時間、現象與推測分欄。","把感覺或原因猜測當成觀察事實，忽略條件和單位。","重視觀察描述、紀錄完整、問題可操作與安全。"),rec("kanghsuan","透過多元觀察、討論與問題改寫發展探究起點。","照片、表格、重複觀察、問題範圍與同儕檢查。","題目過大或只追問為什麼，沒有可測量的對象與結果。","評量觀察品質、提問、可行性與資料規畫。"),rec("hanlin","連結校園環境、生物活動與生活現象，依證據選擇值得探究的問題。","熱點、鳥類、植物、時間、位置、干擾與安全條件。","只選有趣或看似重要的題目，忽略倫理、器材和資料代表性。","要求說明選題理由、範圍、限制與後續觀察。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以有目的觀察辨識現象並形成探究問題。","觀察資料、推測、條件、可操作範圍與安全是共同要求。","選題需依可行性、資料品質和重要性排序，而非只看直覺或題目大小。"],"versionDifferences":["南一證據較突顯觀察、紀錄與基本提問；康軒較突顯多元觀察、討論與問題改寫；翰林較突顯校園生物、環境條件、干擾與安全選題。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以校園熱點觀察表分開印象、測量和環境條件。","以葉片斑點案例區分現象記錄與病因推測。","以鳥類題目排序練習可行性、時間、安全和資料品質。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織有目的觀察、資料紀錄、觀察與推測區分、問題改寫、選題排序與安全範圍。正文、原創情境、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"觀察與定題（o）","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

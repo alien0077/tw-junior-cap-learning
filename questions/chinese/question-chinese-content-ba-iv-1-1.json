@@ -2,7 +2,7 @@
   "id": "question-chinese-content-ba-iv-1-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "故事依「早上出門、下午到達、晚上休息」排列事件，這是哪種敘述方式？",
+  "prompt": "事件實際發生順序是：甲．雨傘遺失；乙．把傘放在門邊；丙．放學後走出教室。文章依乙、丙、甲呈現，開頭先寫『我回頭才發現傘不見了』。這種安排最接近？",
   "options": [
     {
       "id": "A",
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "事件依實際發生先後排列，屬順敘。"
+    "value": "B",
+    "explanation": "文本先呈現較後發生的發現，再回到先前的放置行為，敘述順序和事件時間不一致，屬於倒敘。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "敘事時間與篇章結構；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究順敘、倒敘、插敘、補敘的判讀線索與篇章功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫敘事順序題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文時間順序與篇章理解",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章結構與敘事線索判讀",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先畫事件時間線，再把文本出場順序標上去；比較兩條線是否反轉。",
+  "solutionSteps": [
+    "依題幹排出乙、丙、甲的實際時間。",
+    "注意文章先寫甲的結果，再補出前因。",
+    "B 能說明文本從後發生的發現切入。",
+    "A 需時間與敘述一致；C、D 需有主線中插入或補充的額外段落。",
+    "用『先結果、後原因』複述，確認判斷依據是順序而非題材。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

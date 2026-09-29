@@ -1,0 +1,144 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-social-content-geo-af-iv-1
+  knowledgeGraphIds:
+  - kg-social-content-geo-af-iv-1
+  title: 地 Af-Ⅳ-1：聚落體系與交通網絡
+  subject: social
+  socialDiscipline: geography
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 地 Af-Ⅳ-1：聚落體系與交通網絡
+    curriculumIntent: 地 Af-Ⅳ-1：聚落體系與交通網絡
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 依逐版實讀深度揭露；官方索引及公校計畫不得冒稱三版課文，原創正文須標明各來源實際改變的教學取捨
+    currentEvidenceStatus: source-limited-original-synthesis-draft; hanlin-official-teaching-outline-p17-and-third-party-hanlin-labeled-pages47-50-read; upload-edition-authenticity-and-rights-unverified; kanghsuan-title-index-only; nani-school-plan-only; two-publisher-bodies-incomplete; content-review-pending
+  learningGoals:
+  - 以服務功能、服務範圍和居民往返判斷不同聚落對不同需求的中心性，不以人口排名單獨定階層。
+  - 比較直線距離與總旅行時間、班次、轉乘及步行條件，解釋交通網絡如何改變實際可達性。
+  - 評估新交通節點的服務效益、環境成本及不同群體影響，並指出尚缺資料。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 聚落體系來自服務分工與聚落間往來；中心性須標明服務種類、使用者及尺度。
+  - 交通可達性取決於路網、班次、轉乘、步行與總旅行時間，不等於直線距離。
+  - 交通建設會重分配可達機會和成本；分析要區分觀察資料、因果推論與證據缺口。
+  misconceptions:
+  - 只以人口最多或地圖圖示最大判定聚落對各種服務都是中心。
+  - 只比直線距離，忽略候車、轉乘、班次、步行環境與旅程時間。
+  - 只列交通建設便利，漏掉農地、壅塞、地方商業及弱勢使用者的成本。
+  contentFlow:
+  - 'predict：沿山麓村落到鄉鎮及區域醫院的就醫需求，先預測哪個聚落可能是特定醫療服務中心；不假定人口最多者服務所有需求。'
+  - 'manipulate：在路線比較表逐項代入運具、轉乘、班次、步行與旅程時間條件，對照8公里／52分鐘轉乘和12公里／35分鐘直達兩條路線。'
+  - 'observe：記錄村、鎮、市提供的服務種類及使用者往返流向，另列旅程時間、候車與步行條件；不可用直線距離代替可達性。'
+  - 'explain：依服務與流向證據說明甲村—乙鎮—丙市的中心地關係，再指出不同服務需求、使用者群體及資料尺度造成的限制。'
+  - 'manipulate：評估乙鎮外圍轉運站方案時，分列受益者、受影響者、農地／壅塞成本與仍待查的客流資料，不把方案效益視為單一總分。'
+  - 'transfer：將服務、流向與完整旅程條件的判讀法套用到新聚落資料，標明直接觀察、推論和待補證據。'
+  visualizations:
+  - 以表格列甲村／乙鎮／丙市服務和自編公車班次，另以文字描述往返流向，標示為練習資料。
+  - 以原創時序對照題帶學生提出「交通節點可能重排流向」假說，並要求再查產業、行政服務和人口流向，不能把共現當充分因果。
+  - 以路線比較文字並列直線距離、總時間、候車／轉乘、運具限制和適用族群，不以單一距離代替可達性。
+  - 互動目前是四題單選與即時文字回饋，第四題以文字敘述兩個年代的節點變化；不宣稱有拖曳地圖、滑桿或同步圖表。
+  interactiveBlocks:
+  - id: CUR-SOCIAL-CONTENT-GEO-AF-IV-1-I01
+    component: GuidedChoiceBlock
+    purpose: 以四題單選和文字回饋，檢核服務中心判讀、交通可達性、轉運方案成本與節點時序因果；不模擬地圖操作。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        questionIndex: 0
+        correctCount: 0
+    studentActions:
+    - 讀取三地服務及居民往返資料，選出支持乙鎮對特定服務具有中心性的證據。
+    - 比較兩條路線的直線距離、總時間與轉乘，選出可達性判斷所需條件。
+    - 比較轉運站效益與成本，選出需補查的群體、環境或客流資料。
+    - 比較不同年代路網與節點文字資料，選出可支持變化、又不把時間相關說成單因果的證據策略。
+    - 每題作答後閱讀對應概念判準的文字回饋；鍵盤以Tab、Enter或Space操作。
+    visualRules:
+    - 題幹保留完整情境與所有選項，答後回饋指出服務／流向、時間／轉乘或受益／成本的判準。
+    - 不以顏色單獨表示正誤；窄螢幕選項直向排列，題幹與回饋可讀。
+    - 不依賴外部地圖；所有推理所需資料直接出現在題目文字中。
+    misconceptionChecks:
+    - id: MC-CUR-SOCIAL-CONTENT-GEO-AF-IV-1-I01
+      trigger: 只以地圖圖示大小判中心性，或只以直線距離判路線可達性。
+      prompt: 你要判斷哪一種服務／使用者？還缺哪些居民流向、班次或總旅程時間資料？
+      expectedEvidence: 能指出服務和往返證據；或提出總時間及轉乘條件，而非只報圖示大小或直線距離。
+    feedback:
+      correct: 指出學生用到的服務／流向、時間／轉乘或成本證據，並要求說明結論適用範圍。
+      incorrect: 依題意提示回看服務與流向、完整旅程條件或受益／受損群體，不使用泛用背景／結果話術。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "目前無可操作地圖；此參考只提醒將交通可達性設為可檢驗問題，不宣稱使用PhET元件或程式。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "目前採文字選項而非圖台；保留先判讀資料再說明理由的節奏，沒有移植活動素材。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "四題選項由原生button呈現並可鍵盤聚焦，作答結果以文字回饋呈現，不只用顏色。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "教材使用標題、段落和單選活動，學習者可由主內容依序閱讀教學與回饋。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 提供新聚落的服務配置、居民流向與兩條含旅行時間／轉乘差異的路線；不可只換地名而保留原答案。
+    requiredResponse: 指出特定服務中心，以居民流向支持判斷，用時間／轉乘解釋可達性，並指出一項資料限制。
+    scoring: 中心性符合服務功能1、使用流向證據1、比較旅程條件1、說明資料限制1
+  exitTicket:
+    prompt: 乙鎮對哪種服務可作為甲村中心？引用一項居民流向證據；比較路線可達性還要看哪些條件？
+    successCriteria:
+    - 指明服務種類與使用群體，而非用人口做絕對排名
+    - 引用服務或流向資料支持聚落關係
+    - 指出旅程時間／轉乘條件與至少一項資料限制
+  expressionExtension:
+    applicable: true
+    task: 寫一段給居民看的說明，指出乙鎮在哪種服務上連結甲村、交通如何影響抵達機會，以及轉運站興建前仍需蒐集什麼資料。
+    constraint: 至少用一項服務／流向證據、一項時間／轉乘資訊及一項待查風險；系統不代寫整段答案。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 四題單選逐一對應服務中心、路線可達性、交通建設取捨與交通節點時序因果；最後一題須排除「新車站必然是聚落成長唯一原因」，回饋要求查流向及共同變因。
+  - 路線題保留8公里／52分鐘需轉乘及12公里／35分鐘直達的完整資料，不得只以直線距離判斷。
+  - 轉運站題須兼看受益／受損群體，並提出客流、環境或使用者資料至少一項待查項目。
+  - 320px、375px、768px與鍵盤操作時，四題題幹、按鈕及即時文字回饋均可讀可操作；不虛稱有地圖拖曳或滑桿。
+  - fallback：無外部地圖或網路時，題目內嵌的文字服務、流向、時間、成本與不同年代節點資料仍足以完成四階判讀，不得阻塞課程或假稱顯示即時地圖。
+  - 可見教學須加入歷史交通節點與聚落關係的證據邊界，以及按旅程任務比較運具的判準；不把來源分享頁例句或圖表搬入互動。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～24 頁／PDF 第 26～28 頁；國民中學教育階段學習內容；官方代碼 地 Af-Ⅳ-1
+    role: official-curriculum-source-of-truth

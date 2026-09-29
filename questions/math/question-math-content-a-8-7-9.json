@@ -2,41 +2,84 @@
   "id": "question-math-content-a-8-7-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "方程式 2x²＋4x＋5＝0 有幾個實數解？",
+  "prompt": "下列哪個數不是方程式 x²−x−6＝0 的解？",
   "options": [
     {
       "id": "A",
-      "text": "有一個實數解"
+      "text": "−2"
     },
     {
       "id": "B",
-      "text": "有兩個相異實數解"
+      "text": "3"
     },
     {
       "id": "C",
-      "text": "有三個實數解"
+      "text": "6"
     },
     {
       "id": "D",
-      "text": "沒有實數解"
+      "text": "−2 或 3 以外的數"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-a-8-7"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "判別式為 4²－4×2×5＝－24＜0，所以沒有實數解。"
+    "value": "C",
+    "explanation": "方程式因式分解為 (x−3)(x＋2)＝0，解為 3 與 −2；6 不在根集合中，因此不是解。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究一元二次方程式的因式分解、公式法、整數根與情境應用能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供一元二次方程式解法、根驗證與應用題能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的二次方程式解法方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-7"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-a-8-7",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/193519/get-file/65c0525c2eaf9911346762ea",
+      "title": "臺中市立漢口國民中學 112 學年度第一學期二年級數學科補考題庫",
+      "year": "112",
+      "subject": "math",
+      "locator": "原卷第 1 頁第 3 題：代入候選值判斷是否為方程式的根",
+      "observedPattern": "該公校原卷第 3 題呈現「代入候選值判斷是否為方程式的根」的能力模式；本題僅取能力方向，題幹、數字、選項、答案及解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/6790e68d27693313424a67e3.pdf",
+      "title": "臺中市立至善國中 113 學年度第一學期八年級期末評量數學科試題",
+      "year": "113",
+      "subject": "math",
+      "locator": "原卷第 1 頁第 10 題：求解一元二次方程式並辨認根",
+      "observedPattern": "該公校原卷第 10 題呈現「求解一元二次方程式並辨認根」的能力模式；本題僅取能力方向，題幹、數字、選項、答案及解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193506/get-file/6204ac4530ab0a5e342ecfe5.pdf",
+      "title": "臺中市立北新國中數學科八年級補考試題",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "原卷第 2 頁第 15 題：由因式形式判定方程式根",
+      "observedPattern": "該公校原卷第 15 題呈現「由因式形式判定方程式根」的能力模式；本題僅取能力方向，題幹、數字、選項、答案及解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先求完整根集合，再與候選值比較，避免只驗算一個因式。",
+  "solutionSteps": [
+    "分解 x²−x−6＝(x−3)(x＋2)。",
+    "得到根 x＝3 與 x＝−2。",
+    "逐一對照選項與這兩個根。",
+    "確認 6 不在根集合中。",
+    "選 C，代入 6 得 36−6−6＝24，不為 0。"
+  ]
 }

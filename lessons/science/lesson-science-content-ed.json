@@ -14,27 +14,31 @@
     "summary": "本課聚焦「宇宙與天體」，以自編範例練習概念、證據與新情境遷移。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能以太陽、地球與月球的相對位置和受光關係，說明月相的週期變化；能用模型與連續觀測資料區分月相、日食與月食，並標示模型大小、距離、軌道和觀測缺測的限制。"
+        "heading": "先分清楚『真的在動』和『看起來在動』",
+        "body": "地球自轉會讓星體呈現日周視運動，但這不代表每顆星每天繞地球一圈。判讀天文現象時，先問觀察者在哪裡、觀察多久，再區分地球自轉、天體公轉與視角造成的變化。"
       },
       {
-        "heading": "學習流程",
-        "body": "先固定光源、觀察者和軌道條件，再由月球位置預測受光面；接著用手電筒球體模型和實際日期觀測互相核對，最後把直接看到的現象、幾何推論和仍待查證的部分分開記錄。"
+        "heading": "受光幾何解釋月相與食現象",
+        "body": "太陽提供光，月球反射光；月相是從地球看到的受光面比例與方向改變。日食、月食則還需要特定的三天體排列、影子位置與觀測地點，不能把滿月直接等同月食。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要把月球當成自發光，也不要把每次滿月都說成月食；模型圖的大小和距離不是實際比例，觀測照片若沒有日期、方位、天氣和視角，也不足以單獨支持週期或食現象的結論。"
+        "heading": "光譜和亮度是帶條件的證據",
+        "body": "吸收線可提供元素成分線索，顏色可提示表面溫度相對差異，標準燭光與視亮度可用來推論距離，但都必須同時考慮吸收、校正、儀器與不確定度。"
       },
       {
-        "heading": "自我檢核",
-        "body": "能從一個新月相或食現象情境畫出三個天體的相對位置，指出哪一面受光、觀察者看見多少，並以至少兩筆觀測或天文資料說明結論及其限制。"
+        "heading": "宇宙尺度不能靠圖上大小猜",
+        "body": "行星、恆星、星系與更大尺度結構要靠單位、距離指標和資料來源比較。天文示意圖常壓縮距離與大小；圖上兩個物件較大或較近，不等於真實尺度就是如此。"
+      },
+      {
+        "heading": "結論要保留模型和觀測的邊界",
+        "body": "模型能幫助預測，連續觀測能檢查變化，資料不完整時只能做條件式結論。若照片缺少日期、方位或觀測地點，應標示缺口，不用想像補成支持自己預測的證據。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「宇宙與天體」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先把天體實際運動、觀察者的視運動與受光幾何分開。",
+    "用日期、方位、光譜、亮度、距離與儀器條件組成可查驗的天文證據。",
+    "模型只支持它呈現的尺度與關係；遇到月相、食現象或星系資料要明確寫出限制。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -48,14 +52,14 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-21",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "在日地月模型中用相對位置解釋月相，並區分月相、日食與月食。",
     "scenario": "固定手電筒為太陽、球體為月球、觀察者為地球；拖曳月球位置，先預測亮面再用視角切換檢查。",
     "variables": [
       {
-      "symbol": "x",
+        "symbol": "x",
         "meaning": "月球相對太陽與觀察者的位置"
       }
     ],
@@ -92,39 +96,153 @@
         ],
         "answer": "A",
         "feedback": "滿月只是受光面大致朝向觀察者；月食還需要月球進入地球影子，不能由月相名稱直接推出。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "若模型預測某次食現象，還要檢查哪些條件才不會過度推論？",
+        "options": [
+          "核對日期、觀測地點、軌道傾角與影子位置，並區分示意圖比例和實際天文資料",
+          "只要三個球體看起來接近一直線，就宣稱所有地點都能觀察到食",
+          "把模型中的球體大小與距離直接當成真實比例"
+        ],
+        "answer": "A",
+        "feedback": "食現象需要幾何、時間與觀測位置共同支持；示意模型能幫助推理，但不能取代可追溯的觀測資料。"
       }
     ]
   },
   "authoringStandard": "version-fused-v1",
   "versionResearch": [
-    {"publisher":"nani","edition":"南一版自然公開課程資源","sourceType":"public-web","sourceLocator":"宇宙與天體、月相與日月食公開課程定位；未取得完整出版社頁碼。","reviewedAt":"2026-09-01","findings":{"concepts":["地球、月球與太陽的相對位置和運動可解釋月相與食現象。","觀測資料需結合時間、方位、亮面與模型限制判讀。"],"representations":["日地月模型、月相圓盤、觀測紀錄與週期資料表。"],"examplesOrEvidence":["連續觀測月相並與可信天文曆資料交叉核對。"],"misconceptions":["一般月相不是每天由地球影子造成，也不是月球自己發光。"],"assessmentEmphasis":["由相對位置和證據區分月相、日食與月食。"]},"licenseBoundary":"僅研究公開定位與概念脈絡，不複製教材文字、圖片、題目或答案。"},
-    {"publisher":"kanghsuan","edition":"康軒版自然公開影音與課程資源","sourceType":"public-web","sourceLocator":"宇宙與天體公開影音主題定位；索引不足以替代完整教材。","reviewedAt":"2026-09-01","findings":{"concepts":["由光源、觀察者與天體運動建立月相模型。","模型可呈現方向與週期，但球體大小、距離和速度通常不按比例。"],"representations":["手電筒球體模型、月相名稱序列與真實觀測比較。"],"examplesOrEvidence":["四個主要月相位置和遮蔽排列可區分一般月相與食。"],"misconceptions":["滿月不等於每次都發生月食，月相也不等於天體被地球遮住。"],"assessmentEmphasis":["重視模型預測、觀察條件與資料限制。"]},"licenseBoundary":"只研究公開主題與教學方向，不複製影音字幕、圖片、題目或答案。"},
-    {"publisher":"hanlin","edition":"翰林版自然公開課程資源","sourceType":"public-web","sourceLocator":"宇宙與天體公開資源及校方課程計畫定位。","reviewedAt":"2026-09-01","findings":{"concepts":["天體可依位置、運動與受光關係理解，月相是觀測幾何造成的亮面差異。","食現象需要更精確的遮蔽排列與觀測證據。"],"representations":["日地月相對位置圖、觀測時間線和視角切換模型。"],"examplesOrEvidence":["比較從地球看與從太陽方向看的兩種視角，修正直覺誤判。"],"misconceptions":["模型圖的大小距離不是宇宙實際比例，缺測日期不能用猜測補上。"],"assessmentEmphasis":["標示觀測條件、證據來源與模型限制。"]},"licenseBoundary":"僅採公開定位與概念方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"}
+    {
+      "publisher": "nani",
+      "edition": "南一版自然公開課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nani.com.tw/；宇宙與天體、月相與日月食公開課程定位；未取得完整出版社頁碼。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "地球、月球與太陽的相對位置和運動可解釋月相與食現象。",
+          "觀測資料需結合時間、方位、亮面與模型限制判讀。"
+        ],
+        "representations": [
+          "日地月模型、月相圓盤、觀測紀錄與週期資料表。"
+        ],
+        "examplesOrEvidence": [
+          "連續觀測月相並與可信天文曆資料交叉核對。"
+        ],
+        "misconceptions": [
+          "一般月相不是每天由地球影子造成，也不是月球自己發光。"
+        ],
+        "assessmentEmphasis": [
+          "由相對位置和證據區分月相、日食與月食。"
+        ]
+      },
+      "licenseBoundary": "本紀錄只保存可追溯公開來源的章節定位、教學方向與評量能力；不複製出版社或學校教材正文、原題、選項、圖表、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒版自然公開影音與課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；宇宙與天體公開影音主題定位；索引不足以替代完整教材。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "由光源、觀察者與天體運動建立月相模型。",
+          "模型可呈現方向與週期，但球體大小、距離和速度通常不按比例。"
+        ],
+        "representations": [
+          "手電筒球體模型、月相名稱序列與真實觀測比較。"
+        ],
+        "examplesOrEvidence": [
+          "四個主要月相位置和遮蔽排列可區分一般月相與食。"
+        ],
+        "misconceptions": [
+          "滿月不等於每次都發生月食，月相也不等於天體被地球遮住。"
+        ],
+        "assessmentEmphasis": [
+          "重視模型預測、觀察條件與資料限制。"
+        ]
+      },
+      "licenseBoundary": "本紀錄只保存可追溯公開來源的章節定位、教學方向與評量能力；不複製出版社或學校教材正文、原題、選項、圖表、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林版自然公開課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.ehanlin.com.tw/；宇宙與天體公開資源及校方課程計畫定位。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "天體可依位置、運動與受光關係理解，月相是觀測幾何造成的亮面差異。",
+          "食現象需要更精確的遮蔽排列與觀測證據。"
+        ],
+        "representations": [
+          "日地月相對位置圖、觀測時間線和視角切換模型。"
+        ],
+        "examplesOrEvidence": [
+          "比較從地球看與從太陽方向看的兩種視角，修正直覺誤判。"
+        ],
+        "misconceptions": [
+          "模型圖的大小距離不是宇宙實際比例，缺測日期不能用猜測補上。"
+        ],
+        "assessmentEmphasis": [
+          "標示觀測條件、證據來源與模型限制。"
+        ]
+      },
+      "licenseBoundary": "本紀錄只保存可追溯公開來源的章節定位、教學方向與評量能力；不複製出版社或學校教材正文、原題、選項、圖表、答案、影音或版面。"
+    }
   ],
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Ed：宇宙與天體；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Ed：宇宙與天體 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「宇宙與天體」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Ed：宇宙與天體」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher":"nani","edition":"南一版自然公開課程資源","subject":"science","chapterLocator":"宇宙與天體、月相與日月食；公開課程章節定位","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern"],"outcome":"核對天體位置、運動、受光、月相與食現象的概念順序，並以日地月模型及觀測時間線重新安排教學。","copyrightBoundary":"僅研究公開章節定位與概念脈絡，不複製教材文字、圖片、題目或答案。"
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Ed：宇宙與天體 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Ed：宇宙與天體」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher":"hanlin","edition":"翰林版自然公開課程資源","subject":"science","chapterLocator":"宇宙與天體；公開資源及校方課程計畫定位","sourceUrl":"https://www.ehanlin.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["concept-progression","activity-pattern","assessment-pattern"],"outcome":"比較日地月相對位置、視角切換、週期資料和模型限制的呈現方式，補入月相與日月食的證據判讀。","copyrightBoundary":"僅採公開定位與教學方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Ed：宇宙與天體 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Ed：宇宙與天體」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -188,10 +306,20 @@
     ]
   },
   "fusionRecord": {
-    "commonCore":["地球、月球與太陽的相對位置和運動可解釋月相與食現象。","月相是觀察者看到的受光面比例變化，不是月球自行發光，也不是每天由地球影子造成。","模型與真實觀測都要標示尺度、時間、視角和證據限制。"],
-    "versionDifferences":["南一公開資料適合核對天體運動與月相食的概念鏈；康軒公開資源提供日地月模型與視角活動線索；翰林公開課程資料較能連結觀測週期和模型限制，但完整出版社頁碼不可得。"],
-    "originalAdditions":["以校園月相觀察與手電筒球體模型串接亮面、位置和週期。","設計從地球看／從太陽方向看的視角切換，診斷月相與月食混淆。","加入缺測資料標記、天文曆交叉核對與模型比例限制的科學紀錄。"],
-    "llmSynthesisNote":"依官方課綱、KG 與三版本可取得的公開定位及研究紀錄，先整理天體層次、相對運動、受光與觀測幾何，再以本單元專屬的月相模型、長期觀測和食現象比較重新撰寫；正文、活動與檢核均為原創，Terra 尚未執行故維持 draft。"
+    "commonCore": [
+      "地球、月球與太陽的相對位置和運動可解釋月相與食現象。",
+      "月相是觀察者看到的受光面比例變化，不是月球自行發光，也不是每天由地球影子造成。",
+      "模型與真實觀測都要標示尺度、時間、視角和證據限制。"
+    ],
+    "versionDifferences": [
+      "南一公開資料適合核對天體運動與月相食的概念鏈；康軒公開資源提供日地月模型與視角活動線索；翰林公開課程資料較能連結觀測週期和模型限制，但完整出版社頁碼不可得。"
+    ],
+    "originalAdditions": [
+      "以校園月相觀察與手電筒球體模型串接亮面、位置和週期。",
+      "設計從地球看／從太陽方向看的視角切換，診斷月相與月食混淆。",
+      "加入缺測資料標記、天文曆交叉核對與模型比例限制的科學紀錄。"
+    ],
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-ed、南一／康軒／翰林可取得的公開研究方向與三筆公立學校自然科試題的能力模式，以自己的話獨立融合星體視運動、受光幾何、光譜、尺度、觀測證據與模型限制；保留既有日地月互動與模擬，未複製教材或試題，Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "simulation": {
     "id": "sim-science-ed",
@@ -200,7 +328,42 @@
     "model": "general",
     "goal": "在日地月模型中用相對位置解釋月相，並區分月相、日食與月食。",
     "mission": "固定手電筒為太陽、球體為月球、觀察者為地球；拖曳月球位置，先預測亮面再用視角切換檢查。",
-    "learningDesign":{"type":"model-boundary","objective":"以光源、遮蔽與觀察視角模型解釋月相，並指出模型不能代表真實天體比例與所有食現象。","predictionPrompt":"月球繞地球移動時，若光源方向和觀察者位置固定，看到的亮面形狀如何週期改變？","evidencePrompt":"請用三個位置的模型觀察、連續日期紀錄或天文資料，說明預測如何被支持或修正。","steps":[{"id":"step-1","action":"固定光源方向、觀察者位置與月球軌道","equation":"setup=light+observer+orbit","reason":"只改變月球位置，才能把亮面差異歸因於相對幾何，而不是同時改動多個條件。","feedback":"若光源或觀察者也移動，請先重設模型，再重新記錄位置和預測。"},{"id":"step-2","action":"拖曳月球位置並從地球視角預測亮面比例","equation":"phase=f(relative-angle)","reason":"月相由受光半球與觀察者視線的交會比例決定，不能以月球是否發光解釋。","feedback":"若把月相畫成地球影子，請檢查是否真的有影子穿過月球以及三天體是否近乎成線。"},{"id":"step-3","action":"切換視角並比較模型與真實觀測資料","equation":"claim=geometry+observation","reason":"不同視角會改變看見的形狀，模型也會省略距離和軌道傾角，因此必須用資料檢查推論邊界。","feedback":"若照片缺少日期或方位，請把它標為不足證據，改用可追溯天文資料補查。"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以光源、遮蔽與觀察視角模型解釋月相，並指出模型不能代表真實天體比例與所有食現象。",
+      "predictionPrompt": "月球繞地球移動時，若光源方向和觀察者位置固定，看到的亮面形狀如何週期改變？",
+      "evidencePrompt": "請用三個位置的模型觀察、連續日期紀錄或天文資料，說明預測如何被支持或修正。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "固定光源方向、觀察者位置與月球軌道",
+          "equation": "setup=light+observer+orbit",
+          "reason": "只改變月球位置，才能把亮面差異歸因於相對幾何，而不是同時改動多個條件。",
+          "feedback": "若光源或觀察者也移動，請先重設模型，再重新記錄位置和預測。"
+        },
+        {
+          "id": "step-2",
+          "action": "拖曳月球位置並從地球視角預測亮面比例",
+          "equation": "phase=f(relative-angle)",
+          "reason": "月相由受光半球與觀察者視線的交會比例決定，不能以月球是否發光解釋。",
+          "feedback": "若把月相畫成地球影子，請檢查是否真的有影子穿過月球以及三天體是否近乎成線。"
+        },
+        {
+          "id": "step-3",
+          "action": "切換視角並比較模型與真實觀測資料",
+          "equation": "claim=geometry+observation",
+          "reason": "不同視角會改變看見的形狀，模型也會省略距離和軌道傾角，因此必須用資料檢查推論邊界。",
+          "feedback": "若照片缺少日期或方位，請把它標為不足證據，改用可追溯天文資料補查。"
+        },
+        {
+          "id": "step-4",
+          "action": "加入軌道傾角、影子截面與觀測地點，將模型預測和帶日期方位的資料配對",
+          "equation": "eclipse-claim=alignment+shadow+time+location",
+          "reason": "三維軌道、影子大小與觀測者位置會決定是否真的看得到食；把球體排成一直線只是必要線索，不是完整證明。",
+          "feedback": "請分開寫幾何模型直接支持的部分、觀測資料支持的部分，以及比例與軌道簡化造成的限制。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

@@ -11,25 +11,26 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「生物與環境的交互作用」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "本課以兩個透明水槽追蹤水草覆蓋率、光照、水溫、溶氧與蚊幼蟲的變化，讓學習者看見環境條件不是靜態背景，而會和生物活動互相回饋。重點不在背『水草好或不好』，而是讀懂日夜曲線、分辨相關與因果，並設計有對照和重複的觀察。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「生物與環境的交互作用」相關的關係。"
+        "heading": "先把水槽當成會變動的系統",
+        "body": "水草在有光時可透過光合作用增加氧氣，日夜都會呼吸；水溫、光照和水量也會影響氣體溶解與生物代謝。因此同一水槽白天和夜間的溶氧不必相同，單次讀值不能代表整天。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「生物與環境的交互作用」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "一條曲線不等於一個原因",
+        "body": "若蚊幼蟲增加與溶氧下降同時發生，這是值得追蹤的關聯，不是已完成的因果證明。水溫、食物、遮蔽、捕食者和取樣時間都可能改變族群；把這些條件列出，才有機會安排下一個比較。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「生物與環境的交互作用」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "用兩水槽拆開變因",
+        "body": "要測試水草覆蓋率，可設不同覆蓋率或梯度，固定水溫、光照、容器、水量與測量時段，保留無水草對照並重複七天。這樣得到的不是漂亮口號，而是一條能檢查日夜峰谷、延遲反應和偶然誤差的資料鏈。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「生物與環境的交互作用」，並指出至少一項支持判斷的條件。"
+        "heading": "結論要帶著條件走",
+        "body": "如果高覆蓋率水槽白天溶氧較高、夜間最低值卻較低，報告就要同時寫出兩種結果，並討論水草量與呼吸負荷。結論應限定在本次光照、水溫、覆蓋率和觀察期間，不能把七天水槽資料直接推成所有池塘的永久規則。"
       }
-    ]
+    ],
+    "studyEntry": "先畫出一日或七日時間序列，再用對照資料檢查你以為的因果是否站得住。"
   },
   "studyHighlights": [
     "用環境因子、生物互動與人為干擾三個角度畫出有方向的關係鏈。",
@@ -48,7 +49,7 @@
     "authoringNote": "Version-fused v1 is independently authored from the official curriculum, KG and three recorded public-source research entries. No publisher text, image, example, exercise, answer, or transcript is reproduced; public sources establish concept direction and locator only, while the lesson, examples, activities and interactions are original. Terra second-round AI review is pending."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "用兩個水槽比較水草覆蓋率如何牽動溶氧與蚊幼蟲族群，並分辨相關、機制與因果證據。",
@@ -96,6 +97,17 @@
         ],
         "answer": "A",
         "feedback": "結論要同時保留觀察結果、條件與尚未排除的替代解釋。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "高覆蓋率水槽的溶氧較低且幼蟲較多，想檢查是否是缺氧造成差異，下一步最適當的是什麼？",
+        "options": [
+          "固定覆蓋率與其他條件，另外操弄溶氧並重複觀察，保留時間序列",
+          "直接宣稱水草是唯一原因，不必再測量",
+          "刪除與預測不符的日期，只保留最後一天"
+        ],
+        "answer": "A",
+        "feedback": "原觀察顯示相關性，還要用控制變因與重複測量檢查缺氧是否能解釋幼蟲變化，並保留資料限制。"
       }
     ]
   },
@@ -103,40 +115,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與課程資源",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Lb：生物與環境的交互作用；生態關係、環境因子與族群變動定位",
-      "sourceUrl": "https://www.naer.edu.tw/",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Lb：生物與環境的交互作用 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "以公開課程定位核對生物與非生物環境、族群變動及生態系概念順序；正文、例證與互動均重新設計。",
-      "copyrightBoundary": "只使用公開定位與教學方向，不複製或改寫南一課文、習作、圖片、教師用書或答案。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Lb：生物與環境的交互作用」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音與課程資源",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Lb：生物與環境的交互作用；生態系、環境因子、族群及人類影響定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Lb：生物與環境的交互作用 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "以公開索引核對食物網、環境干擾與資料判讀方向；本課自編池塘資料、關係圖與模擬任務。",
-      "copyrightBoundary": "只研究公開索引、概念順序與活動方向；不複製影音字幕、圖片、題目、選項或解答。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Lb：生物與環境的交互作用」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開課程與產品資訊",
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Lb：生物與環境的交互作用；生態平衡、環境變動、保育及資料探究定位",
-      "sourceUrl": "https://books.hanlin.com.tw/productall",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Lb：生物與環境的交互作用 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "以公開產品資訊核對回饋、保育與證據探究方向；本課自編校園濕地情境及可測量判準。",
-      "copyrightBoundary": "只採公開產品資訊可確認的主題方向；不複製翰林課文、插圖、習作、題目、答案或教師資源。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Lb：生物與環境的交互作用」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -145,8 +172,26 @@
       "edition": "南一公開課程定位",
       "sourceType": "public-web",
       "sourceLocator": "https://www.naer.edu.tw/；Lb 生物與環境的交互作用相關課程脈絡",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["生物與非生物環境會彼此影響，不能只用單向刺激解釋。", "族群變動需連結資源、天敵、競爭與棲地條件，並考慮時間尺度。"], "representations": ["以因果圖、族群折線與限制因素比較呈現關係。"], "examplesOrEvidence": ["公開課程定位支持生態關係方向；本課自編校園水域資料。"], "misconceptions": ["把環境只縮減成溫度，忽略水分、光照、食物與空間。", "看到兩個變項一起變動，就把相關直接當成已證明的因果。"], "assessmentEmphasis": ["能區分觀察、推論、證據與限制，並用條件式語句下結論。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "生物與非生物環境會彼此影響，不能只用單向刺激解釋。",
+          "族群變動需連結資源、天敵、競爭與棲地條件，並考慮時間尺度。"
+        ],
+        "representations": [
+          "以因果圖、族群折線與限制因素比較呈現關係。"
+        ],
+        "examplesOrEvidence": [
+          "公開課程定位支持生態關係方向；本課自編校園水域資料。"
+        ],
+        "misconceptions": [
+          "把環境只縮減成溫度，忽略水分、光照、食物與空間。",
+          "看到兩個變項一起變動，就把相關直接當成已證明的因果。"
+        ],
+        "assessmentEmphasis": [
+          "能區分觀察、推論、證據與限制，並用條件式語句下結論。"
+        ]
+      },
       "licenseBoundary": "只採公開定位與概念脈絡，不複製或改寫受保護教材、圖表、題目或答案內容。"
     },
     {
@@ -154,8 +199,26 @@
       "edition": "康軒公開影音定位",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；Lb 生態系與環境互動索引",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["生態系是能量流動與物質循環交織的關係網。", "環境干擾可能沿食物網形成直接與間接影響。"], "representations": ["以食物網箭頭、資源表與前後族群圖呈現變化。"], "examplesOrEvidence": ["公開影音索引提供方向；本課自編池塘案例與操作任務。"], "misconceptions": ["把食物網箭頭誤讀成捕食者移動或追逐的方向。", "把短期族群增加直接等同於生態系長期健康。"], "assessmentEmphasis": ["能由多項資料追蹤機制、替代解釋與不確定性。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "生態系是能量流動與物質循環交織的關係網。",
+          "環境干擾可能沿食物網形成直接與間接影響。"
+        ],
+        "representations": [
+          "以食物網箭頭、資源表與前後族群圖呈現變化。"
+        ],
+        "examplesOrEvidence": [
+          "公開影音索引提供方向；本課自編池塘案例與操作任務。"
+        ],
+        "misconceptions": [
+          "把食物網箭頭誤讀成捕食者移動或追逐的方向。",
+          "把短期族群增加直接等同於生態系長期健康。"
+        ],
+        "assessmentEmphasis": [
+          "能由多項資料追蹤機制、替代解釋與不確定性。"
+        ]
+      },
       "licenseBoundary": "只研究公開索引與活動方向，不複製或改寫影音、題目、圖片及解答。"
     },
     {
@@ -163,8 +226,26 @@
       "edition": "翰林公開產品資訊",
       "sourceType": "public-web",
       "sourceLocator": "https://books.hanlin.com.tw/productall；Lb 生態平衡與環境探究定位",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["平衡是系統受擾動後仍可能在一定範圍內變動的動態狀態。", "保育需同時看生物需求、人類利用、空間尺度與長期資料。"], "representations": ["以回饋迴路、前後比較圖與利害關係人矩陣連結證據和決策。"], "examplesOrEvidence": ["公開產品方向支持環境探究；本課自編校園濕地決策情境。"], "misconceptions": ["把生態平衡誤解成每一種生物數量必須相等。", "用單次觀察代表長期趨勢，忽略季節與取樣差異。"], "assessmentEmphasis": ["能整合圖表、機制與不同觀點提出有條件的判斷。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "平衡是系統受擾動後仍可能在一定範圍內變動的動態狀態。",
+          "保育需同時看生物需求、人類利用、空間尺度與長期資料。"
+        ],
+        "representations": [
+          "以回饋迴路、前後比較圖與利害關係人矩陣連結證據和決策。"
+        ],
+        "examplesOrEvidence": [
+          "公開產品方向支持環境探究；本課自編校園濕地決策情境。"
+        ],
+        "misconceptions": [
+          "把生態平衡誤解成每一種生物數量必須相等。",
+          "用單次觀察代表長期趨勢，忽略季節與取樣差異。"
+        ],
+        "assessmentEmphasis": [
+          "能整合圖表、機制與不同觀點提出有條件的判斷。"
+        ]
+      },
       "licenseBoundary": "只採公開產品方向，不複製或改寫課文、圖片、習作、題目或答案。"
     }
   ],
@@ -182,7 +263,7 @@
       "加入環境因子—生物反應—回饋的有方向關係圖，並診斷箭頭方向、單一因果與短期平衡等迷思。",
       "設計可調覆蓋率與干擾條件的互動任務，要求學生提出可測量指標、控制變因與保育決策限制。"
     ],
-    "llmSynthesisNote": "依官方課綱、KG 與三版本可取得的公開定位及研究紀錄，先比較概念順序、表徵、例型、迷思與評量重點，再以校園水域和濕地決策情境重新組織為本單元原創課文；未取得的完整出版社內文不作臆測，正文、例證、互動與檢核均為原創，Terra 尚未執行故維持 draft。"
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-lb、南一／康軒／翰林公開資源限制與三筆公立學校／公開自然科評量能力模式，獨立融合水草覆蓋率、光合作用與呼吸、溶氧、溫度、光照、蚊幼蟲、時間序列、相關與因果及對照實驗。原有泛用正文與題目已改為雙水槽環境交互作用專屬教學；所有正文、題幹、選項、答案、互動回饋與五步解法均重新撰寫，未複製受保護內容；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -251,7 +332,42 @@
     "model": "general",
     "goal": "在虛擬生態池中調整水草覆蓋率與環境條件，觀察溶氧、食物網和蚊幼蟲族群的連鎖變化，形成有條件的生態解釋。",
     "mission": "任務一：先預測 0%、30%、60% 覆蓋率下的變化；任務二：一次只改覆蓋率並記錄七天曲線；任務三：加入捕食者或降低光照，判斷原本結論是否仍成立，最後提出一項需要補測的變因。",
-    "learningDesign":{"type":"habitat-cover-dynamics","objective":"以棲地覆蓋率、資源與捕食壓力時間序列分析族群變化。","predictionPrompt":"覆蓋率增加會讓所有族群都上升嗎？哪些資源或天敵條件可能改變結果？","steps":[{"action":"固定初始族群並設定 0%、30%、60% 覆蓋率","equation":"habitat=cover+resources"},{"action":"逐日記錄族群、資源與捕食者數量","equation":"population=birth-death"},{"action":"加入光照或捕食變化，與基準曲線比較","equation":"effect=treatment-control"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以棲地覆蓋率、資源與捕食壓力時間序列分析族群變化。",
+      "predictionPrompt": "覆蓋率增加會讓所有族群都上升嗎？哪些資源或天敵條件可能改變結果？",
+      "steps": [
+        {
+          "action": "固定初始族群並設定 0%、30%、60% 覆蓋率",
+          "equation": "habitat=cover+resources",
+          "id": "step-1",
+          "reason": "本步把「固定初始族群並設定 0%、30%、60% 覆蓋率」和「habitat=cover+resources」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「固定初始族群並設定 0%、30%、60% 覆蓋率」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "逐日記錄族群、資源與捕食者數量",
+          "equation": "population=birth-death",
+          "id": "step-2",
+          "reason": "本步把「逐日記錄族群、資源與捕食者數量」和「population=birth-death」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「逐日記錄族群、資源與捕食者數量」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "加入光照或捕食變化，與基準曲線比較",
+          "equation": "effect=treatment-control",
+          "id": "step-3",
+          "reason": "本步把「加入光照或捕食變化，與基準曲線比較」和「effect=treatment-control」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「加入光照或捕食變化，與基準曲線比較」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "分開操弄溶氧與覆蓋率，檢查相關結果是否支持缺氧機制",
+          "equation": "causalEvidence=controlledChange+repeatedTrend",
+          "id": "step-4",
+          "reason": "本步把「分開操弄溶氧與覆蓋率，檢查相關結果是否支持缺氧機制」和「causalEvidence=controlledChange+repeatedTrend」連結，將兩槽的相關觀察轉成可檢驗的機制假設。",
+          "feedback": "若只看到同時變化就下因果結論，請補做控制組與重複觀察，並檢查光照、水溫、資源與天敵等替代解釋。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以棲地覆蓋率、資源與捕食壓力時間序列分析族群變化。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

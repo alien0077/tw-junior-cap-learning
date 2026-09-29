@@ -10,33 +10,76 @@
     },
     {
       "id": "B",
-      "text": "同一棱的兩端"
+      "text": "同一面的對角頂點"
     },
     {
       "id": "C",
-      "text": "互為對角的兩個頂點"
+      "text": "正方體的兩個相對頂點"
     },
     {
       "id": "D",
-      "text": "面心與棱中點"
+      "text": "一個頂點與一條棱的中點"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-12"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "體對角線連接正方體中互為空間對角的兩個頂點。"
+    "explanation": "體對角線穿過正方體內部，連接兩個不在同一面的相對頂點，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 空間中的線與平面 題型與官方課綱 KG kg-math-content-s-9-12",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供空間線與平面能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的空間幾何能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-12"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-12",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "異面直線、線面垂直與平行、平面交線、立體截面、平行平面距離與體對角線",
+      "observedPattern": "公立學校公開數學試題常以長方體或正方體模型判讀空間中的平行、垂直、相交與異面關係，並延伸到截面和距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "異面直線、線面垂直與平行、平面交線、立體截面、平行平面距離與體對角線",
+      "observedPattern": "公立學校公開數學試題常以長方體或正方體模型判讀空間中的平行、垂直、相交與異面關係，並延伸到截面和距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "異面直線、線面垂直與平行、平面交線、立體截面、平行平面距離與體對角線",
+      "observedPattern": "公立學校公開數學試題常以長方體或正方體模型判讀空間中的平行、垂直、相交與異面關係，並延伸到截面和距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分面對角線與體對角線：後者跨越整個立體，不在單一表面內。",
+  "solutionSteps": [
+    "確認線段不是單一正方形面的對角線。",
+    "找出正方體中彼此最遠的兩個頂點。",
+    "這兩點不在同一個面上。",
+    "連線穿過立體內部，稱為體對角線。",
+    "選 C。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bb-iv-1-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "人物能說出自己的優點與需要改進之處，最能表現什麼？",
+  "prompt": "組員說：『昨天簡報最後一頁一直沒收到，我在截止前很慌。今天四點前可以把檔案放進共用資料夾嗎？』這段話最完整地包含哪些溝通元素？",
   "options": [
     {
       "id": "A",
-      "text": "自我覺察"
+      "text": "觀察、感受與具體請求"
     },
     {
       "id": "B",
-      "text": "逃避責任"
+      "text": "對對方人格的判決"
     },
     {
       "id": "C",
-      "text": "否定他人"
+      "text": "只有命令，沒有情境"
     },
     {
       "id": "D",
-      "text": "盲目比較"
+      "text": "只是在猜測對方動機"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "能辨認自身特質與不足，表示具備自我覺察。"
+    "explanation": "『最後一頁沒收到』是可核對的觀察，『很慌』是感受，『四點前放入資料夾』是具體請求。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "自我與人際交流感受；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究對話感受、觀察／評價、具體請求、界線與關係修復。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫自我與人際交流題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "溝通情境、人物感受與語意推論",
+      "observedPattern": "公立學校國文評量要求辨識溝通者的感受、具體觀察、請求、語氣與證據限制；本題使用全新校園情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "對話語氣、觀點與關係修復",
+      "observedPattern": "公立學校國文評量要求辨識溝通者的感受、具體觀察、請求、語氣與證據限制；本題使用全新校園情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把訊息拆成發生了什麼、我感到什麼、希望對方做什麼三層。",
+  "solutionSteps": [
+    "圈出可由紀錄核對的檔案未收到。",
+    "找出說話者明示的情緒詞『很慌』。",
+    "確認最後一句包含時間與可執行行動。",
+    "A 同時涵蓋觀察、感受和請求。",
+    "刪去其中一層再比較，確認訊息會變得較難理解或回應。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

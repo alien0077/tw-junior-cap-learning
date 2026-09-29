@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-2-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "兩三角形有一組夾角相等，且夾角兩側對應邊比皆為 2：3，應使用哪種判定？",
+  "prompt": "兩三角形有兩組對應邊比例相等，但已知的一組角不是這兩邊的夾角。僅憑這些資料能否直接用 SAS 判定相似？",
   "options": [
     {
       "id": "A",
-      "text": "AA"
+      "text": "可以，任何一角都可以"
     },
     {
       "id": "B",
-      "text": "SSS"
+      "text": "可以，因為兩邊比例相等就足夠"
     },
     {
       "id": "C",
-      "text": "SAS"
+      "text": "不能，SAS 要求夾角相等"
     },
     {
       "id": "D",
-      "text": "無法判定"
+      "text": "不能，三角形永遠不能相似"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "兩邊成比例且夾角相等，符合 SAS 相似判定。"
+    "explanation": "SAS 必須是兩邊成比例且這兩邊的夾角相等；非夾角資料不足以直接套用 SAS，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的相似性質 題型與官方課綱 KG kg-math-content-s-9-2",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形相似判定、對應與比例推理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的三角形相似方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看到 SAS 時特別圈出『夾角』，避免把任意角誤當成必要條件。",
+  "solutionSteps": [
+    "辨認已知有兩邊比例。",
+    "檢查角的位置不是兩比例邊的夾角。",
+    "回想 SAS 的 S、A、S 中 A 必須夾在兩邊之間。",
+    "因此不能直接使用 SAS 判定。",
+    "選 C。"
+  ]
 }

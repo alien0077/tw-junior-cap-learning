@@ -2,23 +2,23 @@
   "id": "question-math-performance-d-iv-2-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "某產品第一次檢驗合格機率為 0.4；第一次合格後第二次合格機率為 0.5。若第一次不合格，第二次合格機率為 0.2，兩次都合格的機率為何？",
+  "prompt": "某產品第一次檢驗合格機率為 0.7；第一次合格後第二次合格機率為 0.8。兩次都合格的機率為何？",
   "options": [
     {
       "id": "A",
-      "text": "0.20"
+      "text": "0.15"
     },
     {
       "id": "B",
-      "text": "0.50"
+      "text": "0.24"
     },
     {
       "id": "C",
-      "text": "0.28"
+      "text": "0.56"
     },
     {
       "id": "D",
-      "text": "0.40"
+      "text": "0.80"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "兩次都合格只有「第一次合格、第二次合格」這條路徑，機率為 0.4×0.5＝0.20。"
+    "value": "C",
+    "explanation": "兩次都合格只有『第一次合格→第二次合格』一條路徑，機率為 0.7×0.8=0.56，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考樹狀圖、兩階段試驗、條件機率、不放回抽取與補事件題型；另參考 114 年國中教育會考數學科；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "機率單元實質改寫；已依路徑或樣本空間重新計算答案與解析，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供樹狀圖、兩階段機率、補事件與條件路徑能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的機率樹狀圖方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-d-iv-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "題目問兩次都合格，只保留連續兩個合格分支，不要把其他分支加進來。",
+  "solutionSteps": [
+    "第一層合格機率為 0.7。",
+    "沿合格分支，第二次合格條件機率為 0.8。",
+    "兩次都合格是同一條樹狀路徑。",
+    "路徑機率為 0.7×0.8=0.56。",
+    "所以選 C，並確認沒有把第一次不合格路徑算入。"
+  ]
 }

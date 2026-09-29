@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics s-IV-12."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/"lessons/math/lesson-math-performance-s-iv-12.json"
+REPORT=ROOT/"implementation/reports/math-performance-s-iv-12-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf"}
+
+def record(p,c,r,m,a):
+    return {"publisher":p,"edition":f"{p} 公立校方數學課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；直角三角形三角比與邊長比例的概念、表徵及評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以相對銳角、對邊、鄰邊與斜邊的比例描述三角形。"],"representations":[r],"examplesOrEvidence":["本課的坡道、屋頂桁架與測高均為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+
+def main():
+    d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-math-performance-s-iv-12" and d["reviewStatus"]=="draft"
+    d["title"]="s-Ⅳ-12：用相對位置理解正弦餘弦正切"
+    d["content"]={"summary":"在直角三角形中，sin、cos、tan 不是三個孤立公式，而是相對某個銳角定義的邊長比例：sin 是對邊比斜邊、cos 是鄰邊比斜邊、tan 是對邊比鄰邊。換一個參考角，對邊和鄰邊會互換；同一三角形的比例也會因此改變。本課以坡道、屋頂桁架與測高的自編情境，練習標記相對位置、選擇三角比、用計算機估角與長度，並檢查角度範圍和單位。","sections":[{"heading":"三角比依參考角命名","body":"先圈出要研究的銳角，再標示對邊、鄰邊與斜邊。斜邊永遠對著直角；對邊與鄰邊則隨參考角改變，不能只背固定邊名。"},{"heading":"三個比例的意義","body":"sin θ=對邊/斜邊，cos θ=鄰邊/斜邊，tan θ=對邊/鄰邊。每個比例都要配合同一個 θ 與正確的邊，否則答案可能仍是數字卻沒有幾何意義。"},{"heading":"由比例求邊或角","body":"已知角與一邊時，可用三角比解未知邊；已知兩邊時，可用反三角函數估角。計算機要確認角度模式、四捨五入位數和輸入順序。"},{"heading":"合理範圍與應用","body":"銳角的 sin、cos 在 0 到 1 之間，tan 為正；坡度常用對邊/鄰邊表示。最後用圖形長短、角度大小與單位檢查結果。"}]}
+    d["studyHighlights"]=["先圈參考角，再找對邊、鄰邊與斜邊。","sin 對斜、cos 鄰斜、tan 對鄰，比例順序不可混。","反三角函數需確認計算機角度模式與精度。","用角度、邊長範圍、坡度與單位回查。"]
+    d["teaching"]={"body":[{"id":"hook","phase":"hook","heading":"坡道陡不陡如何量化？","body":"原創無障礙坡道水平長 8 公尺、上升 2 公尺，請學習者先畫出直角三角形，指出坡道與水平線的夾角，再比較對邊與鄰邊的比例。由 tan θ=2/8，說明比例能把『陡度』轉成可比較的角度。"},{"id":"explain","phase":"explain","heading":"同一三角形換角會換邊名","body":"在 3-4-5 三角形中，先以一個銳角標記對邊 3、鄰邊 4、斜邊 5，寫出 sin、cos、tan；再換到另一個銳角，觀察 3 與 4 的角色互換。要求每次重新標記，避免把對邊當作永遠固定。"},{"id":"worked-example","phase":"worked-example","heading":"由正切求桁架高度","body":"屋頂桁架與水平線夾角 30°，水平半跨 6 公尺，設高度 h。tan30°=h/6，所以 h=6tan30°≈3.46 公尺；最後檢查銳角越小高度應越小，並確認計算機使用 degree 模式。"},{"id":"guided-practice","phase":"guided-practice","heading":"選正確三角比","body":"提供三組圖：已知斜邊求對邊、已知鄰邊求斜邊、已知對邊與鄰邊求角。學習者先圈參考角，再選 sin、cos 或 tan；對把對邊和鄰邊交換的錯誤，要求用邊名和圖形方向重新解釋。"},{"id":"transfer","phase":"transfer","heading":"用三角比測量樹高","body":"原創測高任務站在距樹根 15 公尺處，量得仰角 38°，眼高 1.5 公尺。先用 tan38°求視線以上高度，再加回眼高；若地面不水平或角度誤差改變，需說明比例模型的限制與估算範圍。"},{"id":"reflect","phase":"reflect","heading":"修正只背公式的答案","body":"請修正『看到 30° 就直接用 sin』。先指出三角比選擇取決於已知與未知的邊，再以桁架圖標記對邊、鄰邊、斜邊，說明本題為 tan；最後用角度模式和數值範圍檢查。"}],"summary":["三角比依參考角定義，對邊與鄰邊會隨角改變。","sin 對斜、cos 鄰斜、tan 對鄰，先標邊再選比例。","求角要用反三角函數並確認 degree 模式。","用圖形、角度範圍、單位與情境誤差檢查。"],"exitCheck":[{"prompt":"相對一個銳角，sin、cos、tan 如何定義？","expectedEvidence":"sin=對邊/斜邊，cos=鄰邊/斜邊，tan=對邊/鄰邊，且邊名依參考角決定。"},{"prompt":"水平半跨 6、角度 30°，桁架高度如何求？","expectedEvidence":"tan30°=h/6，h=6tan30°≈3.46 公尺，並確認計算機用 degree。"},{"prompt":"為什麼換參考角後對邊與鄰邊會改變？","expectedEvidence":"對邊是參考角正對面的邊，鄰邊是相鄰但非斜邊的邊；參考角換了，位置關係也換。"}]}
+    d["interactive"]={"type":"guided-choice","goal":"依參考角標記三邊，選擇正確三角比求邊長或角度。","scenario":"切換坡道角度與已知邊，觀察 sin、cos、tan 比例及估算結果。","variables":[{"symbol":"a","meaning":"對邊長或垂直高度"},{"symbol":"b","meaning":"鄰邊長或水平距離"},{"symbol":"c","meaning":"斜邊長"}],"steps":[{"id":"step-1","prompt":"已知對邊與鄰邊、要求參考角，應優先用哪個比？","options":["tan","sin","cos"],"answer":"A","feedback":"tan θ=對邊/鄰邊，兩個已知邊正好配對。"},{"id":"step-2","prompt":"水平半跨 6、角度 30°求高度 h，應列什麼？","options":["tan30°=h/6","sin30°=h/6","cos30°=h/6"],"answer":"A","feedback":"h 是對邊、6 是鄰邊，所以使用正切。"},{"id":"step-3","prompt":"用計算機由 tan 值求角度前要確認什麼？","options":["使用反 tan 且設定 degree 模式","只按乘法鍵","把角度模式關閉"],"answer":"A","feedback":"反三角函數和角度模式會直接影響角度結果。"}]}
+    d["authoringStandard"]="version-fused-v1"
+    d["versionResearch"]=[record("nani","以直角三角形相對邊長比建立三角比概念","坡道圖、對邊鄰邊斜邊標記與比例表","背固定邊名而不依參考角重新標記","要求標記三邊、選比例並檢查範圍"),record("kanghsuan","透過模型與角度操作理解 sin cos tan 的互換","3-4-5 模型、屋頂、角度標記與計算機","混淆三角比或忘記反三角函數與角度模式","重視圖形操作、計算歷程與估算驗證"),record("hanlin","把三角比連結到坡度、測高與實際測量限制","樹高、水平距離、仰角、單位與誤差","直接套公式忽略地面、眼高或量測誤差","評估模型、工具、角度、單位與結果合理性")]
+    d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以相對銳角與三邊比例理解三角比。","sin、cos、tan 的邊名、選擇條件與反三角函數是共同核心。","坡度、測高、計算機模式與單位需互相檢查。"],"versionDifferences":["南一證據較突顯三角比定義與邊長比例；康軒較突顯 3-4-5、模型與計算工具操作；翰林較突顯坡度測高、仰角與實際誤差限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以坡道水平 8、上升 2 引出 tan 與陡度。","以 30°、水平半跨 6 求桁架高度並檢查 degree 模式。","把樹高眼高、地面條件、比例選擇與誤差整合成互動任務。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織直角三角形三角比、相對邊名、反三角函數、坡度與測高。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit":"s-Ⅳ-12：用相對位置理解正弦餘弦正切","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+
+if __name__ == "__main__": main()

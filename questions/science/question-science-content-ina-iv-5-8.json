@@ -2,41 +2,78 @@
   "id": "question-science-content-ina-iv-5-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年10月1日社區環境站的觀察中，比較兩地「INa-Ⅳ-5：能源開發、利用與永續性」資料時，甲地迎風坡年雨量約 71820 mm、乙地背風坡約 49290 mm，最合理的做法是？",
+  "prompt": "若一項節能政策讓家庭用電下降，但低收入家庭因設備成本無法參與，哪項補充措施較符合永續與公平？",
   "options": [
     {
       "id": "A",
-      "text": "在「INa-Ⅳ-5：能源開發、利用與永續性」中只看 71820 mm 的單一數值便下結論"
+      "text": "提供補助、租賃或公共服務，讓不同家庭都能取得節能設備"
     },
     {
       "id": "B",
-      "text": "在「INa-Ⅳ-5：能源開發、利用與永續性」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "只提高所有家庭的電價"
     },
     {
       "id": "C",
-      "text": "同時比較地形、風向、觀測期間與 71820、49290 mm 資料"
+      "text": "只獎勵已經買得起設備的人"
     },
     {
       "id": "D",
-      "text": "在「INa-Ⅳ-5：能源開發、利用與永續性」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "宣稱參與率不影響政策結果"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ina-iv-5"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「INa-Ⅳ-5：能源開發、利用與永續性」。"
+    "value": "A",
+    "explanation": "若成本阻礙特定群體參與，補助、租賃或公共服務可降低進入門檻，使節能效益和成本分配更公平。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的能源開發、供需管理、環境承載及永續決策能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 INa-Ⅳ-5 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ina-iv-5"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ina-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "能源開發、資源利用、環境影響與資料判讀",
+      "pattern": "取由能源供需、資源條件與環境資料評估開發方案的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由能源供需、資源條件與環境資料評估開發方案的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "能源、環境、效率與永續生活決策",
+      "pattern": "取從圖表、系統資料與生活情境判斷永續方案及其限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從圖表、系統資料與生活情境判斷永續方案及其限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "檢查政策成效是否被收入差異分配，而不是只看平均節電量。",
+  "solutionSteps": [
+    "比較不同家庭的設備成本與用電負擔。",
+    "找出無法參與的原因。",
+    "設計補助、租賃或公共服務並追蹤成效。",
+    "B、C、D 會擴大或掩蓋參與差距。",
+    "所以 A 較符合永續決策。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,41 +2,84 @@
   "id": "question-english-content-ac-iv-2-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "What does “Hand in your paper” mean?",
+  "prompt": "Student: **I'm sorry I'm late.** Which reply is most appropriate from the teacher?",
   "options": [
     {
       "id": "A",
-      "text": "give your paper to the teacher"
+      "text": "Here is a banana yesterday."
     },
     {
       "id": "B",
-      "text": "tear up the paper"
+      "text": "Write the word blue loudly."
     },
     {
       "id": "C",
-      "text": "borrow a pencil"
+      "text": "That's all right. Please sit down."
     },
     {
       "id": "D",
-      "text": "open a window"
+      "text": "No, I am a window."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-ac-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "The correct answer is: give your paper to the teacher."
+    "value": "C",
+    "explanation": "That's all right acknowledges the apology, and Please sit down gives a clear classroom next step."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-    "sourceLocator": "kg-english-content-ac-iv-2",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kusjh.kh.edu.tw/upload/files/110%E4%B8%8A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E5%9C%8B%E4%B8%AD%E4%B8%80%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "公立學校七年級英語段考；只研究課堂指令、請求、澄清、借用與回應題型。",
+    "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫常見教室用語題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-ac-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-english-content-ac-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kusjh.kh.edu.tw/upload/files/110%E4%B8%8A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E5%9C%8B%E4%B8%AD%E4%B8%80%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立鼓山高中國中部七年級公開英語段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "110-114",
+      "subject": "english",
+      "locator": "教室用語、基礎句型與問答",
+      "observedPattern": "公立學校國中英語評量要求理解課堂開始、請求澄清、借用物品、回答指令、合作與課堂結束等常見用語；本題採全新對話。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%B8%80%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E6%96%87%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中七年級公開英語段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "110-114",
+      "subject": "english",
+      "locator": "課堂指令、請求與回應",
+      "observedPattern": "公立學校國中英語評量要求理解課堂開始、請求澄清、借用物品、回答指令、合作與課堂結束等常見用語；本題採全新對話。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dam.kh.edu.tw/upload/68/101_28414/114-1%E4%B8%83%E5%B9%B4%E7%B4%9A%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E5%8D%B7%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
+      "title": "高雄市立大社國中七年級公開英語段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "110-114",
+      "subject": "english",
+      "locator": "教室互動與生活英語辨識",
+      "observedPattern": "公立學校國中英語評量要求理解課堂開始、請求澄清、借用物品、回答指令、合作與課堂結束等常見用語；本題採全新對話。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先回應道歉，再看是否提供符合課堂情境的下一步。",
+  "solutionSteps": [
+    "Identify I'm sorry as an apology.",
+    "Find an accepting response.",
+    "Check for a relevant classroom instruction.",
+    "Choose That's all right. Please sit down.",
+    "Reject unrelated objects, colors and statements."
+  ]
 }

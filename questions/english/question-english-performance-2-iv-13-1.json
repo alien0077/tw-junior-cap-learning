@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-13-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with the meeting time at the sports center?” B: “___” (「2-Ⅳ-13／依主題情境日常溝通」practice, 9:00)",
+  "prompt": "You call a clinic after school. The receptionist says, 'We have an opening at 4:20 on Thursday. Would that work for you?' Which reply confirms the appointment clearly?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with the meeting time at the sports center in the 2-Ⅳ-13／依主題情境日常溝通 practice."
+      "text": "'I have a toothache.'"
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the sports center in the 2-Ⅳ-13／依主題情境日常溝通 practice."
+      "text": "'Yes, Thursday at 4:20 works for me. Thank you.'"
     },
     {
       "id": "C",
-      "text": "I was fourteen at the sports center last year in the 2-Ⅳ-13／依主題情境日常溝通 practice."
+      "text": "'The clinic is near the station.'"
     },
     {
       "id": "D",
-      "text": "No, the weather at the sports center is sunny in the 2-Ⅳ-13／依主題情境日常溝通 practice."
+      "text": "'I usually finish school at three.'"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-13"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 2-Ⅳ-13／依主題情境日常溝通, item 1. This item targets 2-Ⅳ-13／依主題情境日常溝通, question 1."
+    "value": "B",
+    "explanation": "接待人員已提供星期與時間並詢問是否方便；B明確重述兩項預約資訊並確認，其他句子沒有回答可否赴約。 正確答案：B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87.pdf",
+    "sourceLocator": "克漏字對話第21題：診所人員提出可用時段後，詢問該安排是否合適；本題改寫日期、時間及人物。；人物、需求、台詞、選項與答案均重新創作。",
+    "authoringNote": "僅參照公立學校英文段考的日常對話功能、合宜回應、預約／邀請／購物／求助題型作pattern-only改寫，未複製原題內容。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-13"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-13",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立國昌國民中學113學年度第2學期第2次段考七年級英文科試題；只取日常溝通功能與回應方式，不複製原題。",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "克漏字對話第21題：診所人員提出可用時段後，詢問該安排是否合適；本題改寫日期、時間及人物。",
+      "observedPattern": "依單一題目的問答功能，練習複述並確認預約時段。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "電話預約時確認可用時段：先確認情境中的目的與限制，再選用能清楚表達需求、尊重對方並推動下一步的句子。",
+  "solutionSteps": [
+    "辨認對方正在確認的是可預約時段。",
+    "擷取兩個關鍵資訊：Thursday及4:20。",
+    "選擇同時重述日期與時間並明確接受的句子。",
+    "排除只說症狀、地點或平日作息而未確認的選項。",
+    "選B；電話預約要複述關鍵時段，避免只用含糊的yes。"
+  ]
 }

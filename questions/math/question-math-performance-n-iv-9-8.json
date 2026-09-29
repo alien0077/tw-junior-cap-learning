@@ -2,23 +2,23 @@
   "id": "question-math-performance-n-iv-9-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "不按計算機，先估算 49.8×2.01 的結果，哪一個最接近？",
+  "prompt": "某長度真值為 50 公分，量測值為 49.5 公分，絕對誤差占真值的比例為何？",
   "options": [
     {
       "id": "A",
-      "text": "10"
+      "text": "0.1%"
     },
     {
       "id": "B",
-      "text": "50"
+      "text": "1%"
     },
     {
       "id": "C",
-      "text": "100"
+      "text": "5%"
     },
     {
       "id": "D",
-      "text": "200"
+      "text": "10%"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "49.8 約為 50，2.01 約為 2，因此乘積約為 50×2＝100；實際值 100.098 也接近 100。"
+    "value": "B",
+    "explanation": "絕對誤差=0.5 公分，誤差比例=0.5÷50=0.01=1%，所以選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考計算機操作、估算、四捨五入、近似值與誤差判讀題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供計算機與誤差能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數與量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-9"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-9",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "計算機按鍵與結果判讀、四捨五入、截尾、絕對誤差、有效位數與量測誤差；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求讀取計算結果、依題目精度處理近似值，或由顯示位數判斷誤差界線；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "計算機按鍵與結果判讀、四捨五入、截尾、絕對誤差、有效位數與量測誤差；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求讀取計算結果、依題目精度處理近似值，或由顯示位數判斷誤差界線；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "計算機按鍵與結果判讀、四捨五入、截尾、絕對誤差、有效位數與量測誤差；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求讀取計算結果、依題目精度處理近似值，或由顯示位數判斷誤差界線；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先求絕對誤差，再除以真值並轉成百分比。",
+  "solutionSteps": [
+    "計算絕對誤差 |49.5-50|=0.5。",
+    "用 0.5 除以真值 50。",
+    "得到 0.01。",
+    "乘以 100% 得 1%。",
+    "所以選 B。"
+  ]
 }

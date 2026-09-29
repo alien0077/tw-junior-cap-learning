@@ -1,0 +1,56 @@
+{
+  "reportId": "D-392",
+  "date": "2026-09-28",
+  "unit": "english 5-IV-7",
+  "lessonId": "lesson-english-performance-5-iv-7",
+  "knowledgeId": "kg-english-performance-5-iv-7",
+  "status": "authored fusion manuscript; lesson remains draft for user's ChatGPT review",
+  "curriculumSource": {
+    "url": "https://stv.naer.edu.tw/data/course_manual/A/%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E6%89%8B%E5%86%8A(%E5%AE%9A%E7%A8%BF%E7%89%88).pdf",
+    "locator": "Course manual PDF pp.96-97 / printed pp.85-87, 5-IV-7-1 through 5-IV-7-4",
+    "scope": ["hear key words and meaning", "connect people/events/time/place/things", "identify communicative purpose", "record main points in one's own simple words"]
+  },
+  "publisherResearch": [
+    {
+      "publisherLabel": "Nani",
+      "url": "https://fliphtml5.com/uygal/yplp/111%E5%8D%97%E4%B8%80%E5%9C%8B%E4%B8%AD%E8%8B%B1%E8%AA%9E%E6%95%99%E6%9D%90%E7%B0%A1%E4%BB%8B%E6%9C%AC%28%E5%A3%93%E7%B8%AE%29/9/",
+      "locator": "public shared introduction p.9, listen strategy steps",
+      "finding": "Preview task, note key words while listening, infer/select, then listen again to check and complete notes.",
+      "evidenceLimit": "Third-party share of Nani-labelled material; uploader identity, edition authenticity and reuse authorization unverified; not a specified textbook chapter."
+    },
+    {
+      "publisherLabel": "Hanlin",
+      "url": "https://www.scribd.com/document/852916874/%E7%BF%B0%E6%9E%97%E7%89%88-%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E-%E4%B8%8A",
+      "locator": "publicly shared plan excerpt around extracted lines 661-669",
+      "finding": "Hanlin-labelled school plan connects dialog understanding to practical situations and organizing location/order information.",
+      "evidenceLimit": "School-authored plan excerpt, not publisher textbook content or publisher-authenticated pedagogy; uploader and rights unverified."
+    },
+    {
+      "publisherLabel": "Kang Hsuan",
+      "url": "https://digitalmaster.knsh.com.tw/j/english/",
+      "locator": "official junior-high English resources index",
+      "finding": "Index exposes electronic books/media/testing categories but no publicly readable target-unit lesson text was found.",
+      "evidenceLimit": "Target-unit content remains pending; no chapter claims inferred from resource categories."
+    }
+  ],
+  "synthesis": {
+    "commonCore": ["listen for keywords in context", "connect words to speaker, communicative purpose and time/place/event relations", "write concise notes that support later understanding/action"],
+    "integratedDifferences": ["Nani-labelled source explicitly stages preview-keywords-inference-replay; Hanlin-labelled school plan highlights practical application and location/order synthesis. Source types are not equivalent."],
+    "originalTeaching": ["action-sufficiency rather than word-count as note quality", "relation-bearing arrows and condition/negation/time cues", "directed replay to verify uncertainty", "peer retell test", "browser speech playback with collapsed transcript fallback"],
+    "authorshipBoundary": "All lesson exposition, four dialogue scripts, options, answers, hints, explanations and interactive prompts are original; no publisher dialogue, exam item, audio or answer reproduced."
+  },
+  "implementation": {
+    "specComponent": "GuidedChoiceBlock",
+    "interaction": "4 original short dialogues; speechSynthesis; post-listen transcript disclosure; answer feedback and retry hints",
+    "sourceBoundary": "Nani/Hanlin source slots remain pending for publisher-verified textbook content; lesson is not represented as complete official three-textbook chapter fusion.",
+    "reviewBoundary": "Manual lesson content review is reserved for the user's ChatGPT review; spec QA verified here is technical interaction QA only."
+  },
+  "checks": {
+    "lessonSchema": "pass",
+    "fullDataValidation": "pass: 14504 JSON, 13114 IDs, 1032 KG; all lessons remain draft structurally",
+    "unitSpecValidation": "pass: 1027 specs, 0 errors; baseline 5 eligible / 1022 pending before this spec QA promotion",
+    "unitBrowserPlaywright": "pass: 6 visible lesson sections; 4 speech-control/data-binding and note-choice steps; keyboard playback and answers; transcript starts collapsed and opens by keyboard; aria-live; local-only network; speech-unavailable fallback; 320/375/768px no overflow; 0 page errors",
+    "audioMockBoundary": "The browser test mocks SpeechSynthesis.speak to verify native utterance text/lang/rate and UI state; it does not measure audible output or language-teaching quality.",
+    "questionLedger": "Read-only reused: 10566/10566 recorded, pending 0; no question data modified or ledger rerun."
+  }
+}

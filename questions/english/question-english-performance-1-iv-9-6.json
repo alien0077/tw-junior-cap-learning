@@ -2,23 +2,23 @@
   "id": "question-english-performance-1-iv-9-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「1-Ⅳ-9／語調所表達的情緒態度」task, what is the best way to prepare question 6?",
+  "prompt": "The librarian says, 'I asked for the GREEN label, not the green folder.' The stress falls strongly on GREEN. Which part of the earlier request is being corrected?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 1-Ⅳ-9／語調所表達的情緒態度."
+      "text": "Who borrowed the book."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 1-Ⅳ-9／語調所表達的情緒態度."
+      "text": "The color of the requested label."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 1-Ⅳ-9／語調所表達的情緒態度."
+      "text": "The library's closing time."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 1-Ⅳ-9／語調所表達的情緒態度."
+      "text": "Where the folder was placed."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 1-Ⅳ-9／語調所表達的情緒態度, question 6."
+    "value": "B",
+    "explanation": "重音落在 GREEN，對照後面的 not the green folder，指出要更正的是標籤顏色，不是人物、時間或位置。 正確答案：B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
-    "sourceLocator": "114 年國中教育會考英語科閱讀公開試題；研究語調、重音、速度、音量、語境與情緒態度判讀；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E9%AB%98%E9%9B%84%E5%B8%82%E5%9C%8B%E6%98%8C%E5%9C%8B%E4%B8%AD%E4%BA%8C%E4%B8%8B%E8%8B%B1%E6%96%87%E8%81%BD%E5%8A%9B%E8%A7%A3%E6%9E%90%E5%8D%B7.pdf",
+    "sourceLocator": "PDF第1頁第3題：由比較語意判斷兩科成績高低；情境、對話、語調描述與選項均重新創作。",
+    "authoringNote": "每題為獨立原創語境；只將公立國中公開聽力題的細節辨識、態度推論或合適回應能力作pattern-only參照，不複製原題內容。維持draft；Terra審查依使用者指示取消。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1-iv-9"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-1-iv-9",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E9%AB%98%E9%9B%84%E5%B8%82%E5%9C%8B%E6%98%8C%E5%9C%8B%E4%B8%AD%E4%BA%8C%E4%B8%8B%E8%8B%B1%E6%96%87%E8%81%BD%E5%8A%9B%E8%A7%A3%E6%9E%90%E5%8D%B7.pdf",
+      "title": "高雄市立國昌國中110學年度第2學期八年級第一次段考英文聽力解析卷；只取聽力題型與推理能力，不複製原題、選項、答案或錄音。",
+      "year": "110-2",
+      "subject": "english",
+      "locator": "PDF第1頁第3題：由比較語意判斷兩科成績高低",
+      "observedPattern": "辨識比較焦點和相對關係；本題以重音位置指出被更正的訊息類別。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "重音標示更正焦點：先聽出關鍵詞與音高、重音、音量、語速或停頓，再結合前後對話及情境，選擇最有證據支持的態度。",
+  "solutionSteps": [
+    "找出句中前後對比的部分：GREEN label 與 green folder。",
+    "確認重讀詞 GREEN 是本句的焦點。",
+    "注意 not 後面排除的是資料夾種類，前面要的是綠色標籤。",
+    "排除沒有出現在對話裡的人、時間和放置地點。",
+    "選B；對比重音會凸顯說話者正在修正的資訊。"
+  ]
 }

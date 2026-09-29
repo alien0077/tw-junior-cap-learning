@@ -2,23 +2,23 @@
   "id": "question-chinese-punctuation-effects-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列哪一句使用分號最恰當？",
+  "prompt": "下列哪句適合用分號區隔兩個各自完整、但彼此對照的分句？",
   "options": [
     {
       "id": "A",
-      "text": "下雨了；請帶傘。"
+      "text": "雨停了；，操場仍很濕。"
     },
     {
       "id": "B",
-      "text": "我喜歡閱讀；妹妹喜歡畫畫。"
+      "text": "雨停了，操場仍很濕：社團活動因此改到教室。"
     },
     {
       "id": "C",
-      "text": "他買了；三本書。"
+      "text": "雨停了，操場仍很濕；社團活動因此改到教室。"
     },
     {
       "id": "D",
-      "text": "請記得；準時到校。"
+      "text": "雨停了？操場仍很濕；社團活動因此改到教室。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "兩個分句各自完整且並列，適合以分號分隔。"
+    "value": "C",
+    "explanation": "前後是兩個有相對完整意義的分句，分號能標示比逗號更明顯的層次；A也保留因果關係。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度第 2 學期三年級第 1 次段考國文科；第1題改編；獨立改編，非原題重製。",
-    "authoringNote": "原創題目來源界線 metadata 已補齊；內容與題型仍待第二輪 AI／Terra 複核，未據此宣稱真人或專家審定。"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究標點、句讀、語氣與段落層次能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫標點表意效果題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-punctuation-effects"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-punctuation-effects",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "標點、語氣與句讀",
+      "observedPattern": "公立學校國文評量把標點放入完整語境，要求判讀停頓、語氣、列舉、轉折與說明層次；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "標點辨識、句意與閱讀理解",
+      "observedPattern": "公立學校國文評量把標點放入完整語境，要求判讀停頓、語氣、列舉、轉折與說明層次；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先切出分句，再比較逗號、分號與冒號所需的結構層級。",
+  "solutionSteps": [
+    "讀題定位：圈出「分號層次」與句子中的停頓、語氣、列舉或補充線索。",
+    "拆解句意：先切出分句與層次，再判斷標點要呈現的關係；本題核心是「前後是兩個有相對完整意義的分句，分號能標示比逗號更明顯的層次；A也保留因果關係。」",
+    "核對正解：選項 C 能讓句界、語氣與前後邏輯同時清楚。",
+    "排除誘答：檢查是否把頓號當逗號、把分號當句號、忽略引號範圍，或只依符號外形猜答案。",
+    "回讀驗證：把句子朗讀一次，確認停頓位置與讀者理解的語氣、層次完全一致。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

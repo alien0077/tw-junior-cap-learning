@@ -2,23 +2,23 @@
   "id": "question-science-performance-tc-iv-1-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年6月8日學校研究社的觀察中，針對「tc-Ⅳ-1：對科學數據與資訊提出合理懷疑與解釋」提出可檢驗的科學問題，若比較 5 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "哪項資料最能區分兩個可能解釋？",
   "options": [
     {
       "id": "A",
-      "text": "研究「tc-Ⅳ-1：對科學數據與資訊提出合理懷疑與解釋」時只改變施力大小，其餘條件一致，設置5組、每組取樣15份並各重複測量3次"
+      "text": "兩個解釋對結果預測不同，且能在相同條件下重複測量的資料"
     },
     {
       "id": "B",
-      "text": "研究「tc-Ⅳ-1：對科學數據與資訊提出合理懷疑與解釋」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "只找支持其中一個的文章"
     },
     {
       "id": "C",
-      "text": "研究「tc-Ⅳ-1：對科學數據與資訊提出合理懷疑與解釋」時只測量5組中的一組就直接下結論"
+      "text": "詢問哪個故事比較合理"
     },
     {
       "id": "D",
-      "text": "研究「tc-Ⅳ-1：對科學數據與資訊提出合理懷疑與解釋」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "用投票決定"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,48 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「tc-Ⅳ-1：對科學數據與資訊提出合理懷疑與解釋」。"
+    "explanation": "A 資料必須能讓預測分開並可重做，才有判別力。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究數據懷疑、資訊查證與替代解釋能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-tc-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-tc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "數據懷疑、資料與解釋能力方向",
+      "observedPattern": "公開自然科評量常以資料來源、異常、測量條件、替代解釋與結論界線要求合理懷疑；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "資訊查證、風險與結論界線能力方向",
+      "observedPattern": "公開自然科評量常以資料來源、異常、測量條件、替代解釋與結論界線要求合理懷疑；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先描述資料與異常，再查來源條件、提出替代解釋，最後設計能區分解釋的重測與條件式結論。",
+  "solutionSteps": [
+    "讀題定位：圈出數據查核核心「evidence」。",
+    "先分辨直接觀察、測量條件、解釋、風險與價值語句。",
+    "逐項比對哪個選項能提出可查證的合理懷疑；正確答案是 A。",
+    "核對理由：A 資料必須能讓預測分開並可重做，才有判別力。",
+    "最後寫出仍缺少的資料、能區分解釋的下一步，以及目前結論不可超出的範圍。"
+  ]
 }

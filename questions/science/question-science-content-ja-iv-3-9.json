@@ -2,41 +2,78 @@
   "id": "question-science-content-ja-iv-3-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年5月31日自然科教室的觀察中，將 29 g 食鹽溶於 297 g 水，研究「Ja-Ⅳ-3：化學反應的可觀察現象」時，溶液質量為何？",
+  "prompt": "要提高「發生化學反應」的可信度，哪種做法最好？",
   "options": [
     {
       "id": "A",
-      "text": "268 g"
+      "text": "只記錄一次顏色"
     },
     {
       "id": "B",
-      "text": "326 g"
+      "text": "只問操作者的感覺"
     },
     {
       "id": "C",
-      "text": "8613 g"
+      "text": "同時記錄氣體、沉澱、溫度或顏色等證據並設對照"
     },
     {
       "id": "D",
-      "text": "297 g"
+      "text": "省略反應前資料"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ja-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：29＋297＝326 g。 本題對應 KG「Ja-Ⅳ-3：化學反應的可觀察現象」。"
+    "value": "C",
+    "explanation": "多項可重複證據加上對照，能降低替代解釋造成的誤判。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的氣泡、沉澱、顏色、溫度、指示劑、質量、對照及實驗安全能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向保留並核對單元專屬改寫；題幹、選項、答案、解析與五步解法均未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ja-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ja-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "化學反應現象、氣體、沉澱、顏色、溫度與安全判讀",
+      "pattern": "取由可觀察現象、控制條件與證據鏈判斷化學反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由可觀察現象、控制條件與證據鏈判斷化學反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "實驗現象、指示劑、溶液、反應與資料判讀",
+      "pattern": "取從實驗觀察與資料區分化學變化、物理變化及證據限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從實驗觀察與資料區分化學變化、物理變化及證據限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先記錄現象，再檢查對照、替代解釋與證據強度。",
+  "solutionSteps": [
+    "讀題定位：抓出「多重證據」的可觀察現象與實驗條件。",
+    "建立判準：多項可重複證據加上對照，能降低替代解釋造成的誤判。",
+    "核對答案：選項 C「同時記錄氣體、沉澱、溫度或顏色等證據並設對照」符合判準。",
+    "排除誘答：區分觀察到的現象、可能機制與仍需驗證的結論。",
+    "最後回查：確認安全、對照與替代解釋都被納入，不能由單一現象過度推論。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance c."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-tc.json"; REPORT=ROOT/"implementation/reports/science-performance-tc-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；科學批判思辨、資料品質、證據限制與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持辨識主張、查驗資料、比較解釋並以證據和限制形成判斷。"],"representations":[r],"examplesOrEvidence":["本課的能源廣告、校園健康數據與環境報告皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-tc" and d["reviewStatus"]=="draft"
+ d["title"]="批判思辨（c）：把看似科學的說法拆開檢查"
+ d["content"]={"summary":"批判思辨不是凡事反對，而是把一個說法拆成主張、證據、推理、利益關係與限制，檢查它是否真的支持結論。面對能源廣告、校園健康數據或環境報告，要分辨事實與意見、相關與因果、代表性樣本與選擇性呈現，最後提出還需要什麼資料。本課用原創資料卡和對話，練習在資訊不完整時仍能做出有根據、可修正的判斷。","sections":[{"heading":"先找出說法的骨架","body":"把句子拆成誰主張什麼、用哪筆資料、從資料跳到哪個結論。誇張的『一定、全部、零風險』通常把條件藏起來，先重寫成能被檢查的句子。"},{"heading":"看資料如何被選出來","body":"平均值、圖表刻度、樣本來源和缺失資料都會影響印象。沒有原始數據時，先標示不能確認的部分，不用漂亮圖形或單一案例取代代表性。"},{"heading":"比較替代解釋與利益","body":"同時變化不代表一方造成另一方；要問是否有第三個因素。也要查誰出資、誰受益、誰被排除，這不是直接否定資料，而是判斷是否需要更獨立的驗證。"},{"heading":"結論要和證據強度相稱","body":"證據有限時可做暫時判斷並標出不確定性，證據充分時也要保留適用範圍。批判思辨的成果不是一句『我不信』，而是一份能讓別人沿著資料重查的理由。"}]}
+ d["studyHighlights"]=["拆出主張、資料、推理、條件與結論。","檢查樣本、圖表刻度、缺失資料與代表性。","比較因果、替代解釋、利益關係與獨立驗證。","讓結論強度和證據品質相稱並標示不確定性。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"『省電 50%』到底省了什麼？","body":"看到能源產品寫著『省電 50%』，請先圈出需要追問的詞：和誰比、在什麼時間、使用多少電、是否只挑最佳案例。學習者先不決定可信或不可信，而是將廣告主張改成可量測的比較，建立批判檢查的入口。"},
+ {"id":"explain","phase":"explain","heading":"五步拆解法","body":"第一步找主張與量詞；第二步找原始資料、樣本與圖表定義；第三步檢查比較是否公平、是否把相關寫成因果；第四步找替代解釋、利益關係與缺失資料；第五步寫出有範圍、有不確定性的暫時結論與下一個查證。"},
+ {"id":"worked-example","phase":"worked-example","heading":"校園健康數據的兩種讀法","body":"某班使用新坐墊後，遲到人數下降。不能只憑前後差距說坐墊造成改善，因為也可能換了上課時間或天氣變好。先查樣本期間、其他班級、遲到定義與缺失紀錄，再把結論寫成『資料呈現關聯，尚需控制其他變因的比較』。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"環境報告的圖表檢查","body":"給一張縱軸從 95 到 100 的污染指標圖。學習者先重畫從零開始的比例，再查樣本日期、測站、缺失值與指標定義。接著比較圖形視覺差異和實際數值差異，指出截短刻度可能放大印象，但不能因此直接宣稱資料錯誤。"},
+ {"id":"transfer","phase":"transfer","heading":"寫一張查證回覆卡","body":"面對同學轉傳的健康或能源說法，寫四欄回覆：我同意的可觀察事實、尚未被證明的推論、需要補查的來源與在不確定下的安全行動。回覆目標是提升共同判斷品質，不是用另一個口號取代原口號。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個批判迷思","body":"請修正『有利益關係所以資料一定是假』與『有圖表所以結論一定可靠』。利益關係提示需要獨立查核，不是自動判假；圖表仍要檢查定義、樣本、刻度、誤差與推理是否越界，並把能確認與仍待查證的部分分開寫出。"}
+ ],"summary":["先拆主張、資料、推理與條件，再評估結論。","樣本、刻度、缺失資料和指標定義會影響判讀。","比較替代解釋與利益關係，不把提示當成自動定罪。","結論要標示範圍、不確定性與下一個查證。"],"exitCheck":[{"prompt":"為什麼『前後不同』不能直接證明因果？","expectedEvidence":"期間可能有其他變因，需比較樣本、控制條件、定義與缺失資料。"},{"prompt":"截短圖表刻度會造成什麼判讀風險？","expectedEvidence":"視覺差距可能被放大，應查完整刻度與實際數值，不直接把圖形印象當結論。"},{"prompt":"發現資料來源有利益關係時應如何處理？","expectedEvidence":"標示利益關係並尋找方法、原始資料和獨立來源查核，不自動宣判資料為假。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"拆解看似科學的資訊，檢查資料品質、替代解釋與結論範圍。","scenario":"判讀能源廣告、健康數據與環境圖表，逐步選擇可降低誤判的查證行動。","variables":[{"symbol":"c","meaning":"資訊主張"},{"symbol":"e","meaning":"證據品質"},{"symbol":"r","meaning":"結論範圍"}],"steps":[{"id":"step-1","prompt":"看到『省電 50%』時最先要查什麼？","options":["比較對象、使用條件、時間與原始測量資料","直接相信百分比越大越好","只看廣告圖片是否專業"],"answer":"A","feedback":"百分比必須知道基準、條件和測量方法，否則不能判斷意義。"},{"id":"step-2","prompt":"前後數據不同時，哪個問題能檢查因果跳躍？","options":["是否有其他同時改變的因素與合適比較組","只問結果是否符合期待","只找支持自己的單一案例"],"answer":"A","feedback":"替代解釋與比較組是因果判斷的重要檢查。"},{"id":"step-3","prompt":"證據有限時，最恰當的結論是什麼？","options":["說明目前支持的範圍、限制與下一個查證方向","使用一定、全部等絕對詞加強語氣","因為有限就完全不做任何判斷"],"answer":"A","feedback":"批判思辨要求結論和證據強度相稱，而不是過度肯定或放棄判斷。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以資料判讀、證據評估與生活科學問題培養批判思考。","圖表、原始資料、主張—證據—推理鏈與限制欄。","把圖表外觀、單一案例或權威語氣當成充分證明。","重視資料來源、代表性、推理邏輯與結論範圍。"),rec("kanghsuan","透過探究討論比較不同解釋、檢驗假設並修正結論。","前後比較、對照資料、替代解釋、同儕質疑與修正記錄。","把相關當因果，或因資料有利益關係就不查方法直接否定。","評量提問品質、證據使用、反思與論證溝通。"),rec("hanlin","連結能源、健康與環境資訊，辨識不確定性與公共決策風險。","廣告、健康數據、環境報告、刻度、樣本與獨立來源。","忽略圖表定義和截短刻度，或用另一個口號取代查證。","要求查核來源、利益、限制、替代解釋與安全行動。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持拆解主張、檢查證據並比較科學解釋。","資料來源、樣本、圖表定義、替代解釋與推理範圍是共同要求。","批判思辨的結論需與證據強度相稱，並提出可追查的下一步。"],"versionDifferences":["南一證據較突顯基本資料判讀與證據品質；康軒較突顯探究討論、替代解釋與結論修正；翰林較突顯能源健康環境資訊、利益關係與公共風險。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以能源廣告拆出基準、條件與百分比意義。","以校園健康前後數據診斷相關與因果的跳躍。","以截短環境圖表練習刻度、樣本、利益與獨立查核。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織主張、證據、資料品質、因果、替代解釋、利益關係、風險與結論範圍。正文、原創資料卡、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"批判思辨（c）","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

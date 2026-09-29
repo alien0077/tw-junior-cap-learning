@@ -1,0 +1,49 @@
+{
+  "reportId": "a7-2-visible-fusion-audit-d330",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-2",
+  "classification": "source-grounded-original-multi-source-synthesis-draft; not-three-publisher-textbook-fusion",
+  "finding": "A-7-2 already contains six substantive learner-visible sections; D-326 had recorded source-to-design reasoning, but its regression did not pin that reasoning to each rendered content.sections location. This audit adds that missing executable trace; it does not regenerate or duplicate the lesson.",
+  "sourceToVisibleTrace": [
+    {
+      "sourceEvidence": "Hanlin-labeled textbook third-party OCR, printed pp.168-169: scenario-to-equation, definition by unknown count and degree, then the meaning of a solution.",
+      "lessonLocation": "content.sections[0] and [2]",
+      "originalContribution": "Use an original badge inventory to map repeated bags, loose units, total and equality; teach structural classification separately using distinct expression examples."
+    },
+    {
+      "sourceEvidence": "Hanlin-labeled textbook third-party OCR, printed p.170 vicinity: substitute candidate values and compare the unchanged original equation's left and right values; equality-axiom solving begins in a later section.",
+      "lessonLocation": "content.sections[1] and [5], interactive.steps[2]",
+      "originalContribution": "Show new candidate values with complete arithmetic on both sides, then extend to a newly written crayon context; explicitly leave equation-solving procedures for A-7-3."
+    },
+    {
+      "sourceEvidence": "Hanlin-labeled remedial GO share, file pp.81-82, corroborates candidate substitution as a table/check scaffold before equality axioms.",
+      "lessonLocation": "content.sections[1] and the interactive candidate-check stage",
+      "originalContribution": "Convert the comparison purpose into explicit evidence fields and different correct/incorrect examples; source examples and values are not reused."
+    },
+    {
+      "sourceEvidence": "Nani-aligned Junyi course map separates equation formation/solution meaning and checking from a later equality-axiom/transposition segment; its linked teaching subpage was unavailable.",
+      "lessonLocation": "content.sections[0], [4], [5] and the A-7-2/A-7-3 scope bridge",
+      "originalContribution": "Use an original book-packing transfer and ensure the exit task tests modeling/meaning only, without solving. This is sequence corroboration, not Nani textbook-body evidence."
+    },
+    {
+      "sourceEvidence": "Kanghsuan-aligned public course tree and Jinshan school plan distinguish equation recognition/text translation from subsequent solving; not a readable Kanghsuan textbook chapter.",
+      "lessonLocation": "content.sections[2]-[4]",
+      "originalContribution": "Separate form-classification, representation-misconception cards, and peer reverse-reading into different tasks instead of combining them as one generic exercise."
+    }
+  ],
+  "limits": {
+    "hanlin": "Two third-party shares marked All Rights Reserved; publisher authenticity, uploader authority and reuse rights unverified.",
+    "nani": "Only Nani-aligned platform tree/page map read; publisher lesson body unavailable/unread.",
+    "kanghsuan": "Only official resource index, Nani/Kanghsuan-aligned crosswalks and public-school pacing plans; publisher textbook body unread.",
+    "status": "All publisher evidence slots pending; lesson draft; spec qaStatus untested; no release or publisher-slot promotion."
+  },
+  "validation": {
+    "targetedRegression": "PASS: npm run test:math:a7-2; asserts all six learner-visible sections, source-derived functions, exact original checks, curriculum boundary, rights limits, and four interactive steps.",
+    "fullRuntimeSuite": "PASS: npm test; workbench contract rendered 1,027/1,027 lessons.",
+    "dataValidation": "PASS: python3 scripts/validate_data.py; 14,452 JSON files, 13,111 IDs, 1,032 KG nodes; lessons/questions remain draft.",
+    "implementationSpecValidation": "PASS: 1,027 specs, 0 errors, 1,027 pending (same work session).",
+    "independence": "PASS: strict audit 614 lessons, 0 risks, 0 failures (same current-run evidence as D-329).",
+    "diffCheck": "PASS: git diff --check.",
+    "overall": "This is an auditable original synthesis from mixed evidence, not completed three-publisher fusion or content review."
+  }
+}

@@ -2,41 +2,84 @@
   "id": "question-math-performance-f-iv-1-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 y＝－3x＋12，則圖形與 x 軸交點的 x 坐標為何？",
+  "prompt": "直線 y=2x-8 與 y 軸交點的座標為何？",
   "options": [
     {
       "id": "A",
-      "text": "0"
+      "text": "(0,-8)"
     },
     {
       "id": "B",
-      "text": "3"
+      "text": "(-8,0)"
     },
     {
       "id": "C",
-      "text": "4"
+      "text": "(0,2)"
     },
     {
       "id": "D",
-      "text": "－4"
+      "text": "(2,0)"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-f-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "令 y＝0：－3x＋12＝0，移項得 3x＝12，所以 x＝4。"
+    "value": "A",
+    "explanation": "y 軸上的點 x=0；代入 y=2×0-8=-8，因此交點為 (0,-8)，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考常數函數、一次函數、斜率、截距、對應表與生活情境題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "常數與一次函數單元實質改寫；已重新計算代值、斜率、截距、函數式、圖形與情境答案，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供一次函數、常數函數、斜率與截距能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的一次函數方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-f-iv-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-f-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "常數函數、一次函數的函數值、斜率、截距、表格關係與生活情境建模",
+      "observedPattern": "公開數學評量常由式子、兩點、對應表或費用情境判讀一次函數的斜率與截距，並要求代值、找截距或辨識水平線；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "常數函數、一次函數的函數值、斜率、截距、表格關係與生活情境建模",
+      "observedPattern": "公開數學評量常由式子、兩點、對應表或費用情境判讀一次函數的斜率與截距，並要求代值、找截距或辨識水平線；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "常數函數、一次函數的函數值、斜率、截距、表格關係與生活情境建模",
+      "observedPattern": "公開數學評量常由式子、兩點、對應表或費用情境判讀一次函數的斜率與截距，並要求代值、找截距或辨識水平線；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "找 y 軸截距時令 x=0，並記得座標順序是 (x,y)。",
+  "solutionSteps": [
+    "確認 y 軸上的 x 座標為 0。",
+    "代入得到 y=2×0-8。",
+    "計算 y=-8。",
+    "組成座標 (0,-8)。",
+    "所以選 A，不能把 x 與 y 順序交換。"
+  ]
 }

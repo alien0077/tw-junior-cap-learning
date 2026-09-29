@@ -2,41 +2,73 @@
   "id": "question-english-performance-9-iv-1-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「9-Ⅳ-1／依資訊推論」task, what is the best way to prepare question 1?",
+  "prompt": "A notice says the playground is closed after heavy rain and asks students to use the indoor gym. What can be inferred?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 9-Ⅳ-1／依資訊推論."
+      "text": "Students are forbidden from all exercise"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 9-Ⅳ-1／依資訊推論."
+      "text": "The gym has been demolished"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 9-Ⅳ-1／依資訊推論."
+      "text": "The rain may have made the playground unsafe"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 9-Ⅳ-1／依資訊推論."
+      "text": "The notice is about a summer concert"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-9-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 9-Ⅳ-1／依資訊推論, question 1."
+    "value": "C",
+    "explanation": "答案C。大雨後操場關閉，並引導學生改到室內體育館，表示原場地在雨後可能不適合使用；但公告沒有明說積水或受傷，因此只能推測安全疑慮，不能當成已確認事故。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "Public-school English assessment materials; this item studies inference from notices, charts, messages, context, and multiple evidence only and does not reproduce an original question, option, image, or text.",
+    "authoringNote": "Written independently from the official English curriculum KG and three public-school English assessment sources; information sets, options, explanations, and transfer tasks are original; pending second-round AI/Terra content review."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-9-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-performance-9-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅取資訊推論的因果、趨勢、隱含意圖、情緒、比較、負面證據與多來源整合能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "inference from notices, data, context, and multiple clues",
+      "observedPattern": "公開英文評量常要求從公告、表格、對話與多個線索推論未明說原因、目的、情緒、趨勢或合理結論，並區分證據與過度推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取資訊推論的因果、趨勢、隱含意圖、情緒、比較、負面證據與多來源整合能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "reading information and drawing supported inferences",
+      "observedPattern": "公開英文評量常要求從公告、表格、對話與多個線索推論未明說原因、目的、情緒、趨勢或合理結論，並區分證據與過度推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把處置和替代方案合讀，推論可能原因；保留 may，不把推測升格為公告事實。",
+  "solutionSteps": [
+    "先找兩項明示資訊：大雨後操場關閉、活動改到室內體育館。",
+    "兩項資訊都指向原場地暫時不宜使用，因此可能與雨後安全或場地狀況有關。",
+    "選C：雨水可能使操場不安全；demolished、全面禁止運動及夏季音樂會都沒有線索支持。",
+    "題目沒有說操場積水、有人受傷或關閉多久，所以不可斷言具體原因。",
+    "換到其他公告時，先連結限制與替代安排，再用 may／might 表示合理但未明說的原因。"
+  ]
 }

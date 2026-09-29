@@ -2,23 +2,23 @@
   "id": "question-science-content-aa-iv-1-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月26日河川觀測站的觀察中，將 72 g 食鹽溶於 444 g 水，研究「Aa-Ⅳ-1：原子模型演變」時，溶液質量為何？",
+  "prompt": "若把原子模型歷史改成探究活動，哪個流程最符合科學推理？",
   "options": [
     {
       "id": "A",
-      "text": "516 g"
+      "text": "先背四個人名，再把所有資料改成支持最後模型"
     },
     {
       "id": "B",
-      "text": "372 g"
+      "text": "只看模型圖片，不記錄實驗結果"
     },
     {
       "id": "C",
-      "text": "31968 g"
+      "text": "先預測散射結果，再操作一個變因、比較資料並修正解釋"
     },
     {
       "id": "D",
-      "text": "444 g"
+      "text": "直接公布答案，避免學生提出不同想法"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：72＋444＝516 g。 本題對應 KG「Aa-Ⅳ-1：原子模型演變」。"
+    "value": "C",
+    "explanation": "探究應先提出可檢驗預測，控制變因觀察資料，再根據差異修正模型；C 完整保留此證據鏈，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；原子模型與證據判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／教材的原子模型、粒子證據與模型修正能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均依 Aa-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-aa-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-aa-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子模型、陰極射線、金箔散射、模型修正與科學證據判讀",
+      "pattern": "取由實驗觀察推論微觀模型，並比較模型解釋力與限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗觀察推論微觀模型，並比較模型解釋力與限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.tksh.ntpc.edu.tw/uploads/1626668076188QlOI4fer.pdf",
+      "title": "新北市立泰山高中公開原子模型與科學史銜接教材",
+      "year": "公開教材",
+      "locator": "陰極射線、金箔散射、原子核與模型修正",
+      "pattern": "取由資料反推模型假設、辨識反常結果並修正模型的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由資料反推模型假設、辨識反常結果並修正模型的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.tcjh.tyc.edu.tw/image/1534212714782dPiSoOmq.pdf",
+      "title": "桃園市立自強國民中學公開自然科段考試題",
+      "year": "公開試題",
+      "locator": "粒子模型、原子結構與科學證據判讀",
+      "pattern": "取把觀察、推論、模型與適用範圍分層判讀的能力方向。",
+      "subject": "science",
+      "observedPattern": "取把觀察、推論、模型與適用範圍分層判讀的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "辨認預測—操作—觀察—解釋的順序，並檢查是否一次只改一個變因。",
+  "solutionSteps": [
+    "先針對模型提出散射結果預測。",
+    "固定其他條件，只改變一項模型參數。",
+    "記錄粒子路徑與角度比例。",
+    "比較預測和觀察的差異。",
+    "依證據修正解釋，選 C。"
+  ]
 }

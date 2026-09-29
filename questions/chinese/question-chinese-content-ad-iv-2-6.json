@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-iv-2-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "小說以第一人稱敘述，但敘述者承認「我不知道他當時真正想什麼」，這代表什麼？",
+  "prompt": "小說以『我』描述自己看到的事件，但未必知道其他角色心中想法；此安排主要影響？",
   "options": [
     {
       "id": "A",
-      "text": "敘述視角有其限制"
+      "text": "敘述資訊受到第一人稱視角限制。"
     },
     {
       "id": "B",
-      "text": "敘述者知道所有人物內心"
+      "text": "場景一定只能在舞台上發生。"
     },
     {
       "id": "C",
-      "text": "故事沒有主要人物"
+      "text": "所有角色都必須說真話。"
     },
     {
       "id": "D",
-      "text": "作品一定不是小說"
+      "text": "作品一定沒有虛構情節。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "第一人稱只能掌握自身所知，不能直接全知他人內心。"
+    "explanation": "第一人稱敘述者通常只能提供自己看見、聽見或推測的資訊，其他角色的內心可能保持未知。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "新詩、現代散文、現代小說與劇本閱讀能力；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究新詩、散文、小說、劇本的形式證據、視角與表達功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫現代文學文體題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文體與篇章理解",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "現代文學形式與閱讀判讀",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分敘述者能直接知道的資訊與只能推測的部分，再判斷視角造成的閱讀限制。",
+  "solutionSteps": [
+    "標出敘述者是『我』，事件首先經過我的觀察。",
+    "其他角色的心情若沒有行動或對話證據，不能直接確定。",
+    "A 指出資訊範圍受到視角限制。",
+    "B、C、D 都是沒有文本支持的額外推論。",
+    "把同一場景改成全知敘述，對照新增的內心資訊。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

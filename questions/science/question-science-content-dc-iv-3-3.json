@@ -2,41 +2,73 @@
   "id": "question-science-content-dc-iv-3-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月15日河川觀測站的觀察中，連續觀察「Dc-Ⅳ-3：皮膚與淋巴系統的防禦與免疫」3 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "淋巴結在防禦路徑中較合理的描述是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Dc-Ⅳ-3：皮膚與淋巴系統的防禦與免疫」時只依樣本的顏色（未記錄5天的時間與條件）"
+      "text": "負責製造所有紅血球"
     },
     {
       "id": "B",
-      "text": "研究「Dc-Ⅳ-3：皮膚與淋巴系統的防禦與免疫」時只依樣本的名稱推測，不進行觀察"
+      "text": "把抗原變成氧氣"
     },
     {
       "id": "C",
-      "text": "連續5天研究「Dc-Ⅳ-3：皮膚與淋巴系統的防禦與免疫」並測得樣本持續吸收氧氣並產生二氧化碳"
+      "text": "直接取代皮膚屏障"
     },
     {
       "id": "D",
-      "text": "研究「Dc-Ⅳ-3：皮膚與淋巴系統的防禦與免疫」時只觀察一次外形，便排除所有其他證據"
+      "text": "淋巴流經時可讓免疫細胞接觸與處理異物，並非只是一個儲存水分的袋子"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-dc-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Dc-Ⅳ-3：皮膚與淋巴系統的防禦與免疫」。"
+    "value": "D",
+    "explanation": "淋巴結是淋巴與免疫細胞互動的重要場所，淋巴系統也協助回收組織液。 正確答案為選項 D。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "皮膚、淋巴、免疫防禦與資料判讀",
+      "observedPattern": "只取公立校方公開試題的生物防禦與證據能力方向，重寫免疫情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "淋巴系統、發炎、疫苗與證據",
+      "observedPattern": "只取公開資料題的能力模式，重新設計防禦路徑與免疫記憶。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作皮膚屏障、發炎、淋巴、抗原抗體、疫苗、免疫記憶與證據界線的能力方向；本題為 Dc-Ⅳ-3 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-dc-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-dc-iv-3",
+  "solutionStrategy": "沿組織液—淋巴管—淋巴結—免疫細胞畫出運輸與檢查路徑。",
+  "solutionSteps": [
+    "先定位病原體、皮膚／黏膜、組織、淋巴與血液中的事件位置。",
+    "依屏障、發炎、淋巴運輸、抗原辨認、抗體與記憶整理防禦層級。",
+    "核對是否具有專一性、時間順序、對照資料與症狀的替代解釋。",
+    "排除把抗原當抗體、疫苗當抗生素、症狀當確診或把發炎當專一性免疫的選項，答案為 D。",
+    "將答案放回免疫防禦情境並檢查證據範圍：淋巴結是淋巴與免疫細胞互動的重要場所，淋巴系統也協助回收組織液。"
+  ]
 }

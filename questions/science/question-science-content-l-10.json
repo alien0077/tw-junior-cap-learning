@@ -2,41 +2,87 @@
   "id": "question-science-content-l-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年10月6日河川觀測站的觀察中，連續觀察「L：生物與環境」6 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "若一場乾旱後草地植物量下降，哪個結論最符合證據界線？",
   "options": [
     {
       "id": "A",
-      "text": "連續12天研究「L：生物與環境」並在相同條件下多次觀察到新細胞形成"
+      "text": "乾旱可能是重要影響因子，但仍應檢查放牧、土壤與病蟲害等替代解釋"
     },
     {
       "id": "B",
-      "text": "研究「L：生物與環境」時只依樣本的顏色（未記錄12天的時間與條件）"
+      "text": "植物量下降就證明唯一原因是乾旱"
     },
     {
       "id": "C",
-      "text": "研究「L：生物與環境」時只依樣本的名稱推測，不進行觀察"
+      "text": "植物量下降代表生態系所有功能都同時消失"
     },
     {
       "id": "D",
-      "text": "研究「L：生物與環境」時只觀察一次外形，便排除所有其他證據"
+      "text": "只要下一場雨後恢復，就能證明沒有其他因素"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-l"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「L：生物與環境」。"
+    "explanation": "時間上的先後和合理機制支持乾旱的可能性，但仍需檢查其他因子與多次資料，不能把可能性寫成唯一原因。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的生態尺度、族群、食物網、非生物因子、能量、物質循環與控制變因能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-l"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-l",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "族群、生態系、食物網與環境因子",
+      "pattern": "取公立學校自然科評量以生態資料、因果關係、尺度與圖表判讀的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以生態資料、因果關係、尺度與圖表判讀的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生態系、能量流動、物質循環與實驗推理",
+      "pattern": "取公開會考以食物關係、時間序列、限制因子和證據界線評估的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以食物關係、時間序列、限制因子和證據界線評估的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "生物因子、非生物因子、族群變化與食物鏈",
+      "pattern": "取公立國中試題以生態尺度、捕食關係、資源限制和控制變因的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以生態尺度、捕食關係、資源限制和控制變因的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用證據強度調整語氣：先寫可能，再列需要控制或補測的因素。",
+  "solutionSteps": [
+    "先標出題目研究的個體、族群、群集或生態系尺度。",
+    "把生物因子和非生物因子分欄，並畫出直接關係。",
+    "沿食物網追蹤能量流向，另用循環觀念處理物質。",
+    "用時間序列和對照區分觀察到的相關與可支持的因果。",
+    "寫出證據支持的結論、限制與下一個可檢驗問題。"
+  ]
 }

@@ -1,0 +1,38 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-5-iv-1",
+  "change": [
+    "Specified this vocabulary lesson's prediction, answer manipulation, feedback observation, evidence explanation, and message-transfer phases in terms of its actual authored GuidedChoice.",
+    "Added a fallback test case and a package script for the existing dedicated Playwright test.",
+    "Fault-injected failure of /site/simulations.js while checking the actual student page."
+  ],
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/site/index.html",
+    "httpStatus": 200,
+    "simulationScriptBlocked": ["http://127.0.0.1:8765/site/simulations.js"],
+    "authoredSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardWrongRetryCorrect": true,
+    "feedbackLiveRegion": true,
+    "optionAccessibleNames": true,
+    "externalNetworkBlocked": true,
+    "reducedMotion": "emulated",
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "983/1,027 pass; 44 fail",
+    "lesson": "unchanged; remains draft",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

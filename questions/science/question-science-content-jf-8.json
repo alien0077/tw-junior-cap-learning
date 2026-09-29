@@ -2,23 +2,23 @@
   "id": "question-science-content-jf-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年4月10日學校研究社的觀察中，將 37 g 食鹽溶於 672 g 水，研究「Jf：有機化合物的性質、製備及反應」時，溶液質量為何？",
+  "prompt": "設計有機反應製備實驗時，哪項證據組合最能證明目標產物而非原料混合？",
   "options": [
     {
       "id": "A",
-      "text": "635 g"
+      "text": "反應式與結構分析、沸點或色譜等分離資料、產物性質及未反應對照"
     },
     {
       "id": "B",
-      "text": "24864 g"
+      "text": "只聞到新氣味"
     },
     {
       "id": "C",
-      "text": "709 g"
+      "text": "只看液體顏色"
     },
     {
       "id": "D",
-      "text": "672 g"
+      "text": "只記錄加熱時間"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,54 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：37＋672＝709 g。 本題對應 KG「Jf：有機化合物的性質、製備及反應」。"
+    "value": "A",
+    "explanation": "目標產物需由結構／組成分析、分離資料和性質與對照共同確認；氣味、顏色或時間只能作線索。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的有機結構、官能基、反應、聚合物、製備、生命週期與安全整合能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jf"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jf",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "有機化合物、結構、反應、材料與安全整合判讀",
+      "pattern": "取由有機結構、反應產物、製備資料與生活材料情境整合推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由有機結構、反應產物、製備資料與生活材料情境整合推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "碳化合物、燃燒、聚合物、生活應用與資料圖表",
+      "pattern": "取從模型、實驗資料、材料生命週期與生活情境判斷有機化學的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從模型、實驗資料、材料生命週期與生活情境判斷有機化學的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "以身份證據、分離證據、性質證據三層確認製備成功。",
+  "solutionSteps": [
+    "寫出預期反應式與結構。",
+    "用適當方法分離或分析產物。",
+    "比較產物的沸點、溶解或反應性。",
+    "加入原料和空白對照排除混合。",
+    "所以 A 最完整。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

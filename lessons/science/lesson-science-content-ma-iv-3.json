@@ -55,7 +55,7 @@
       "edition": "南一國中自然科公開教材入口",
       "sourceType": "public-web",
       "sourceLocator": "https://www.nani.com.tw/；截至 2026-08-31 未取得可直接核驗 Ma-Ⅳ-3 的公開逐頁全文、章節頁碼或完整活動單。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "公開入口只能確認南一自然科教材與數位資源的產品脈絡，不能證實本單元的細部概念順序。",
@@ -81,7 +81,7 @@
       "edition": "康軒國中自然公開資源索引",
       "sourceType": "local-download",
       "sourceLocator": "本機公開資源索引 /private/tmp/tw-junior-version-sources-20260829/science-knsh-public.xml，並對照 https://digitalmaster.knsh.com.tw/all/video/j/nature.html；截至 2026-08-31 未取得 Ma-Ⅳ-3 可逐頁核驗的完整課文。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "公開自然索引呈現以生活現象、觀察活動與資料判讀串接自然科學概念的資源取向，但索引本身不足以證明完整課文的概念順序。",
@@ -107,7 +107,7 @@
       "edition": "翰林國中自然科公開網站入口",
       "sourceType": "public-web",
       "sourceLocator": "https://www.hle.com.tw/；截至 2026-08-31 未取得可直接核驗 Ma-Ⅳ-3 的公開逐頁全文、章節頁碼或完整活動資料。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "翰林公開入口不足以確認本單元的細部概念展開、例證選擇與題型安排。",
@@ -144,54 +144,59 @@
       "設計材料性質—使用功能—生命週期影響互動卡，讓學生處理多個條件而非猜材料名稱。",
       "加入成本、便利、污染、健康與公平分配的權衡表，以及可監測、可停損、可修正的公共方案。"
     ],
-    "llmSynthesisNote": "本課先以官方課綱 Ma-Ⅳ-3、穩定 Knowledge Graph ID 與課程檔案界定範圍，再讀取目前可取得的南一公開入口、康軒本機公開自然索引與翰林公開入口。只有康軒索引提供較具體的活動節點線索，南一與翰林未取得本單元全文；融合時未補猜出版社內容。六段課文改以餐盒選材、材料性質、生命週期、社會分配與校園決策重新安排，案例、迷思診斷、互動與檢核均為本單元原創，因逐版本研究與第二輪 AI 審查尚未完成而維持 draft。"
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-ma-iv-3、南一／康軒／翰林公開資源限制與三筆公立學校／公開自然科評量能力模式，獨立融合材料性質與功能、餐盒生命週期、能源、清洗、回收、污染、成本與公平分配。10 題均重新撰寫，未複製受保護內容；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一國中自然科公開教材入口",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "公開網站自然科教材入口；未取得 Ma-Ⅳ-3 公開逐頁全文或頁碼",
-      "sourceUrl": "https://www.nani.com.tw/",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Ma-Ⅳ-3：材料對生活與社會的影響 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
-      "researchScope": [
-        "concept-progression",
-        "assessment-pattern"
-      ],
-      "outcome": "只能確認公開產品入口，無法核對南一本單元細部順序、例證與題型；因此本課只依官方課綱及可查證共同範圍原創撰寫。",
-      "copyrightBoundary": "不複製或改寫南一未公開教材、圖片、活動、習題與答案；入口資訊不被宣稱為完整版本研究。"
-    },
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開資源索引",
-      "subject": "science",
-      "chapterLocator": "公開自然科索引與本機 science-knsh-public.xml；未提供可穩定逐頁核驗 Ma-Ⅳ-3 完整課文",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
-      "access": "public-open",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
+        "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開索引提供以現象、活動與資料判讀連結自然科的研究線索，但索引不等於完整教材；本課未轉錄任何康軒內容。",
-      "copyrightBoundary": "只研究公開索引的可見定位與活動線索；不複製康軒影音、電子書、圖片、活動單、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Ma-Ⅳ-3：材料對生活與社會的影響」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然科公開網站入口",
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "翰林出版社公開教材入口；未取得 Ma-Ⅳ-3 公開逐頁全文或頁碼",
-      "sourceUrl": "https://www.hle.com.tw/",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Ma-Ⅳ-3：材料對生活與社會的影響 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
+        "teaching-sequence",
         "concept-progression",
-        "activity-pattern"
+        "activity-pattern",
+        "assessment-pattern"
       ],
-      "outcome": "公開入口不足以確認本單元細部概念、例證與活動順序；不把推測的版本內容寫入本課，改以官方課綱與原創材料案例完成草稿。",
-      "copyrightBoundary": "不重製翰林教材文字、圖表、實驗、練習與答案；未核對的版本差異明確標為研究限制。"
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Ma-Ⅳ-3：材料對生活與社會的影響」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Ma-Ⅳ-3：材料對生活與社會的影響 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Ma-Ⅳ-3：材料對生活與社會的影響」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -255,7 +260,7 @@
     ]
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "在校園餐盒選材會議中，依材料性質、生命週期資料與社會分配提出帶條件的方案。",
@@ -329,7 +334,42 @@
     "model": "general",
     "goal": "在校園餐盒選材會議中，依材料性質、生命週期資料與社會分配提出帶條件的方案。",
     "mission": "學校要在一次性薄塑膠盒、厚塑膠盒與不鏽鋼盒中選擇午餐容器；請逐步判斷功能需求、追蹤生命週期，最後設計可監測且較公平的試辦方案。",
-    "learningDesign":{"type":"lunch-container-life-cycle","objective":"以保溫、耐用、清洗與生命週期資料比較午餐容器方案。","predictionPrompt":"可重複使用容器需清洗能源，何時才可能抵銷一次性容器的製造影響？","steps":[{"action":"設定保溫、容量、耐用與衛生功能基準","equation":"function=use+durability"},{"action":"追蹤製造、運輸、使用、清洗與回收階段","equation":"impact=sum(stage)"},{"action":"比較成本、排放與使用公平並設置試辦指標","equation":"decision=benefit-cost-equity"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以保溫、耐用、清洗與生命週期資料比較午餐容器方案。",
+      "predictionPrompt": "可重複使用容器需清洗能源，何時才可能抵銷一次性容器的製造影響？",
+      "steps": [
+        {
+          "action": "設定保溫、容量、耐用與衛生功能基準",
+          "equation": "function=use+durability",
+          "id": "step-1",
+          "reason": "本步把「設定保溫、容量、耐用與衛生功能基準」和「function=use+durability」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「設定保溫、容量、耐用與衛生功能基準」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "追蹤製造、運輸、使用、清洗與回收階段",
+          "equation": "impact=sum(stage)",
+          "id": "step-2",
+          "reason": "本步把「追蹤製造、運輸、使用、清洗與回收階段」和「impact=sum(stage)」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「追蹤製造、運輸、使用、清洗與回收階段」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "比較成本、排放與使用公平並設置試辦指標",
+          "equation": "decision=benefit-cost-equity",
+          "id": "step-3",
+          "reason": "本步把「比較成本、排放與使用公平並設置試辦指標」和「decision=benefit-cost-equity」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「比較成本、排放與使用公平並設置試辦指標」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "以一個月小規模試辦比較實際使用次數、清洗用水、破損與回收率，並訪談學生、廚房人員和清潔人員後檢查停損門檻",
+          "equation": "方案可行性 = 功能達標 + 生命週期資料 + 負擔公平 + 可修正門檻",
+          "id": "step-4",
+          "reason": "材料的環境效益只有在實際使用、清洗與回收系統中才可估計；同時，新增的工時、用水與成本可能轉嫁給工作者或低收入家庭，需讓受影響者的資料進入決策。",
+          "feedback": "請分開記錄功能失敗、生命週期負荷、不同群體負擔與修正條件；若只有購買單價或宣傳標語，尚不足以支持全面更換。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以保溫、耐用、清洗與生命週期資料比較午餐容器方案。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7等%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",

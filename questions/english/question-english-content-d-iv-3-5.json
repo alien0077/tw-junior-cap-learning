@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-3-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-3／釐清因果」task, what is the best way to prepare question 5?",
+  "prompt": "A bus arrived late on a day with road construction, a traffic accident, and a long passenger stop. What is the best explanation supported by the report?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-3／釐清因果."
+      "text": "Only the passenger stop caused the delay."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-3／釐清因果."
+      "text": "Several reported events may have contributed to the delay."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-3／釐清因果."
+      "text": "The bus was early because of road construction."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-3／釐清因果."
+      "text": "The accident happened after the bus arrived on time."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-3／釐清因果, question 5."
+    "value": "B",
+    "explanation": "報告同時列出三種可能的行程阻礙，沒有證據選出唯一主因，因此答案 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.gwjh.hc.edu.tw/uploads/1675745677488ZvKru5gb.pdf",
+    "sourceLocator": "PDF第6頁第45–50題：閱讀對話推論書店結束營業、租金、銷售及網路閱讀等多項背景因素。",
+    "authoringNote": "參照公立學校公開英文段考所呈現的時間順序、原因辨識、篇章線索或因果推論能力，題幹、情境、數據、選項、答案與解析均獨立撰寫；未複製試卷。課程版本研究與全案內容審查尚未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.gwjh.hc.edu.tw/uploads/1675745677488ZvKru5gb.pdf",
+      "title": "新竹市立光武國中111學年度第1學期第3次段考八年級英語科試題",
+      "year": "111",
+      "subject": "english",
+      "locator": "PDF第6頁第45–50題：閱讀對話推論書店結束營業、租金、銷售及網路閱讀等多項背景因素。",
+      "observedPattern": "以多句脈絡整合解釋原因與替代因素；本題公車延誤情境和所有敘述均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把報告列出的因素逐一對照結果；若資料同時列出多個可能阻礙，不要擅自挑一個當唯一原因。",
+  "solutionSteps": [
+    "結果是公車晚到。",
+    "報告列出施工、事故和乘客停留較久三項可能影響行程的事件。",
+    "三項都可能增加行車或停靠時間；題目沒有資料判定哪一項影響最大。",
+    "所以最有根據的說法是多個事件可能共同促成延誤，選 B。",
+    "A 把多因素縮成唯一原因，C、D 則與晚到的已知事實矛盾。"
+  ]
 }

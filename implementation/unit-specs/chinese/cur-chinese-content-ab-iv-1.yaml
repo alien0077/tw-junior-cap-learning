@@ -1,0 +1,131 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-chinese-content-ab-iv-1
+  knowledgeGraphIds:
+  - kg-chinese-content-ab-iv-1
+  title: Ab-Ⅳ-1：4000常用字形音義
+  subject: chinese
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Ab-Ⅳ-1：4000常用字形音義
+    curriculumIntent: Ab-Ⅳ-1：4000常用字形音義
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 已核對三份標示版本的公立學校公開課程計畫，僅足以支持課綱概念、版本定位與教學／評量方向；不得宣稱已讀完三版課本正文或完成實質三版本融合。lesson、題目與互動為本專案原創，內容審查未完成前維持 draft
+    currentEvidenceStatus: curriculum-and-kg-grounded; school-plan-level-version-locators-recorded; textbook-chapter-content-and-content-review-pending
+  learningGoals:
+  - 在詞語與句子中辨識常用字的字形、讀音與詞義
+  - 遇到形近、同音、多音或多義情況時，引用詞語搭配與上下文證據判斷
+  - 說明字形部件只是線索，並以完整語境和可靠字典資料交叉確認
+  prerequisites:
+  - 能閱讀常見詞語與簡短句子
+  - 能依詞語前後文指出支持字音或字義判斷的線索
+  coreConcepts:
+  - 字形、字音、字義須在具體詞語與句子中一起辨認
+  - 部件、聲符與字典條目提供不同強度的線索，不能各自取代語境判讀
+  - 多音、多義與形近字的選擇必須能回指詞語搭配或上下文
+  misconceptions:
+  - 只看偏旁就斷定字義，忽略部件只能提供部分線索
+  - 把常見讀音套用到所有詞語，未先確認固定搭配與語境
+  - 看見字典第一個義項便停止判斷，忽略詞性、例詞與上下文
+  contentFlow:
+  - 'predict: 讀銀行／行走等新句時先預測多音字讀音，標出讓自己猶豫的字形或語境線索'
+  - 'manipulate: 比較字形部件與詞語搭配，把讀音候選放進完整詞語，區分線索與定論'
+  - 'observe: 將候選讀音、詞義放回完整句子，檢查搭配與句意是否一致並記下不合的候選'
+  - 'explain: 以字典讀音、例詞及句中證據說明判讀，指出熟悉感或部首猜測為何不足'
+  - 'transfer: 換用互動未出現的新多音字句，寫出讀音、詞義、語境依據及排除理由'
+  visualizations:
+  - 以「字形線索 → 詞語讀音／搭配 → 句中詞義」三欄對照卡呈現目前 lesson 原稿的判讀路徑；不宣稱有動態圖表或滑桿
+  - 所有字詞與答案以可選取文字呈現，選項可鍵盤操作，回饋使用文字標籤
+  interactiveBlocks:
+  - id: CUR-CHINESE-CONTENT-AB-IV-1-I01
+    component: GuidedChoiceBlock
+    purpose: 透過原稿現有的三步選擇題，讓學生依詞語搭配和完整句意辨認字音、字義並修正只靠熟悉感作答的策略
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 閱讀原稿互動中的詞語和提示
+    - 以滑鼠或鍵盤選擇最能依語境判讀的選項
+    - 閱讀即時正誤回饋與解釋，再依提示重試
+    - 口頭或紙筆指出支持選擇的詞語搭配或句意線索
+    visualRules:
+    - 選項、題幹與回饋使用可讀文字，不以顏色作唯一判斷依據
+    - 每題正誤回饋對應實際詞語與語境，不得出現題目未提供的情境細節
+    - 鍵盤可聚焦並啟用每個選項，窄螢幕不得裁切題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-CHINESE-CONTENT-AB-IV-1-I01
+      trigger: 只依熟悉讀音或字形部件選答案，未檢查詞語搭配和完整句意
+      prompt: 請圈出題目中能支持讀音或詞義的詞語，再重新判斷。
+      expectedEvidence: 能指出題幹實際出現的詞語搭配或句意線索
+    feedback:
+      correct: 說明所選答案如何符合詞語搭配或句意，並提醒其他語境仍須重新判讀。
+      incorrect: 指出應回看的詞語或句意線索，不直接代答；讓學生重新選擇後再顯示完整理由。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: 本課選擇題回饋須可被輔助科技讀取，互動內容與例詞均由本課原創。
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: 本課互動以具名區塊與可聚焦控制項呈現，文字稿可不依賴外部服務完成。
+  capTransfer:
+    questionType: 新語境中的形音義判讀與理由說明
+    stemConstraint: 使用 lesson 原稿中的新句或學生自行選取的公告／新聞短句，不重用互動題句；需包含可判讀的詞語搭配或上下文
+    requiredResponse: 寫出候選字的讀音與詞義，引用上下文線索，並說明為何不採用至少一個干擾讀法或字義
+    scoring: 字形／讀音／詞義判讀 1、上下文證據對應 1、排除理由清楚 1
+  exitTicket:
+    prompt: 今天你如何判定一個多音或多義字在新句中的讀法和意思？請指出你實際使用的線索，以及哪種情況下還需要查字典。
+    successCriteria:
+    - 明確寫出讀音或詞義判斷
+    - 引用新句中的詞語搭配或上下文
+    - 說明部件線索的限制或何時需要查證
+  expressionExtension:
+    applicable: true
+    task: 自選校園公告中的兩個容易誤讀或誤解的字，寫 80～120 字說明讀音、詞義與上下文證據
+    constraint: 字詞須來自學生找到的真實公告並標示公告位置；先自行判讀，遇到不確定讀音再查教育部字典
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 學生頁顯示 lesson 原稿 teaching.body 的六個完整段落，而非只顯示較短的 content.sections 摘要。
+  - GuidedChoiceBlock 逐題呈現 lesson JSON 的三個選擇步驟；選項能由鍵盤操作，答錯先給語境提示、重選後再呈現解釋。
+  - 互動的題幹與回饋不得引入題目未提供的角色、地點或線索；特別檢查每個提示所指詞語確實出現在同一步題幹中。
+  - 在 320px、375px 與 768px 寬度，學生頁正文、選項及回饋不得水平溢位或遭裁切。
+  - 使用互動題未出現的新句完成 transfer，學生須寫出讀音／詞義、上下文依據與排除理由；不得把「有按鈕」當作完成遷移評量。
+  - 不載入外部服務時， lesson 原稿與 GuidedChoiceBlock 仍須顯示；鍵盤操作及回饋不可依賴第三方內容。
+  - fallback：字典服務或模擬腳本不可用時，仍以本課內嵌詞語／句子完成三步；明確標示未查遠端字典，不以空白或猜測取代證據。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf
+    locator: 正文第 12～18 頁／PDF 第 14～20 頁；國民中學教育階段學習內容；官方代碼 Ab-Ⅳ-1
+    role: official-curriculum-source-of-truth

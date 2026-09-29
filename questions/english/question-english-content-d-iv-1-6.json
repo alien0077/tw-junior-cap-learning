@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-1-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-1／綜合資訊推論」task, what is the best way to prepare question 6?",
+  "prompt": "The announcement says Grade 8 is the only eligible grade. The sign-up list shows Ruby is in Grade 8 and submitted the form. What follows?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-1／綜合資訊推論."
+      "text": "Ruby meets the stated entry conditions, but this does not show she won."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-1／綜合資訊推論."
+      "text": "Ruby has already won because her name is on the list."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-1／綜合資訊推論."
+      "text": "Ruby cannot enter because only Grade 9 students are eligible."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-1／綜合資訊推論."
+      "text": "The form must be for a different event."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-1／綜合資訊推論, question 6."
+    "explanation": "A 公告與名單證明 Ruby 符合年級和已交表兩項條件，但未提供比賽結果。 Correct answer: A"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1738658361761hrnHCuVf.pdf",
+    "sourceLocator": "PDF第3至4頁第37至41題；從多則評論中整合明示資訊；僅取閱讀整合與推論能力型態，不複製原題內容。",
+    "authoringNote": "依官方英語課綱D-Ⅳ-1與KG獨立創作綜合資訊推論題，參照內湖國中公立英語段考相關題型；未複製原卷題文、選項或答案。待AI內容審查；依使用者指示不安排Terra審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-content-d-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658361761hrnHCuVf.pdf",
+      "title": "臺北市立內湖國中113學年度第1學期八年級第3次段考英語科",
+      "year": "113-1",
+      "subject": "english",
+      "locator": "PDF第3至4頁第37至41題；從多則評論中整合明示資訊",
+      "observedPattern": "僅參照公立國中英語試題的地圖定位、時間／條件整合或文本證據推論能力；本題情境、數據、選項與答案獨立創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "分開判斷報名資格、是否交表及比賽結果；證據只支持題目明列的前兩者。",
+  "solutionSteps": [
+    "公告明定只有八年級可參加。",
+    "名單顯示 Ruby 是八年級，並已提交表格。",
+    "她符合題目明列的年級與繳交條件。",
+    "名單不是成績結果，不能推成得獎；九年級資格與公告相反。",
+    "答案 A；符合資格、完成報名、得獎是不同結論。"
+  ]
 }

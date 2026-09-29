@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-5-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-5／理解簡易生活用語」task, what is the best way to prepare question 10?",
+  "prompt": "The clinic receptionist says, ‘Your appointment is at 3 p.m. The doctor will see you in Room 208 instead of Room 205.’ What should you confirm?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "So my appointment moved to 5 p.m. in Room 205?"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "So it’s still at 3 p.m., but I should go to Room 208—is that right?"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-5／理解簡易生活用語."
+      "text": "Room 208 is probably closed, so I’ll wait in 205."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "I don’t need to know the room if I know the doctor."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-5／理解簡易生活用語, question 10."
+    "value": "B",
+    "explanation": "正確答案 B。接待人員只更改診間，時間仍是三點；B 將不變資訊與更新資訊分開複述，並請對方確認。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+    "sourceLocator": "本題參照公立國中英文段考中依對話目的選擇生活回應的命題模式；逐題原卷定位見 examPatternRefs。公開查閱不代表授權重製；本題情境、文字、選項、答案與解析均重新撰寫。",
+    "authoringNote": "依本單元生活互動能力原創改寫；公開試題僅作 pattern-only 題型參考，未複製原題、選項或答案；仍待單元內容與答案 QA，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-5"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期七年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第1頁第20題：服務情境中由前句判斷顧客需要回答的具體資訊",
+      "locatorLevel": "item",
+      "observedPattern": "參照服務對話的訊息承接與資訊確認形式。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-10-16-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期八年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第2頁第29題：在服務對話中清楚提出時間安排",
+      "locatorLevel": "item",
+      "observedPattern": "參照把時間資訊明確放入回應的能力模式。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87_3.pdf",
+      "title": "高雄市立國昌國中114學年度第1學期七年級第1次段考英文",
+      "year": "114-1",
+      "subject": "english",
+      "locator": "第2頁第19題：依對話前文補全必要的人物資訊",
+      "locatorLevel": "item",
+      "observedPattern": "參照根據已知資訊完成確認，而非自行增添未提供內容。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "通知有多個欄位時，逐一標記哪些改變、哪些維持，再做封閉式確認。",
+  "solutionSteps": [
+    "把通知拆成時間與地點兩個欄位。",
+    "比較新舊資訊：時間仍為三點，診間從205改為208。",
+    "排除自行推測的變動，例如把時間改成五點。",
+    "B 同時保留原時間、更新房號，最後用問句請櫃台確認。",
+    "完成確認後只按已核實的新資訊前往，不自行沿用舊診間。"
+  ]
 }

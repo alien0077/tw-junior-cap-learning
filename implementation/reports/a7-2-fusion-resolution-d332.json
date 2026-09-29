@@ -1,0 +1,44 @@
+{
+  "reportId": "a7-2-fusion-resolution-d332",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-2",
+  "classification": "substantive-original-synthesis-draft-complete; three-publisher-full-text-review-open",
+  "finding": "The A-7-2 substantive-fusion problem is resolved at the lesson-design level: source differences are explicitly traced to visible original teaching and interaction, rather than counted as zero or mistaken for a completed three-publisher review.",
+  "resolvedWork": [
+    "Six learner-visible original lesson sections separate contextual modeling, equation criteria, candidate-value verification, misconception diagnosis, symbolic read-back, and transfer/checking.",
+    "A-7-2 uses substitution into the unchanged original equation and compares both sides to define a solution. The balance/equal-operation material in the locally readable Nani excerpt is treated as solving rationale and deferred to A-7-3, not copied into this lesson.",
+    "The Nani-aligned public course sequence separates modeling, solution meaning, and checking; the Kanghsuan official resource index separates equation, solution, equality axioms, and transposition; the Hanlin-labeled sample shows left/right candidate checking, while Hanlin's official matrix compares all three chapter structures and differing periods. These distinct evidence functions inform the scope and sequence, but are not misrepresented as equivalent full-text samples.",
+    "Four interaction stages now consistently use 4x+3=27 for model, classify, reject x=5 because 23≠27, and confirm x=6 because 27=27. The mismatched balance-engine label and unrelated 2x+5 steps were removed.",
+    "The targeted regression pins the visible sections, fusion rationale, arithmetic checks, and A-7-3 boundary. Full source-to-visible comparison and provenance limitations are recorded in a7-2-substantive-fusion-d331.json."
+  ],
+  "evidenceLimitations": [
+    "No complete, authenticated Nani or Kanghsuan textbook chapter was readable in the reviewed materials; Nani evidence includes only a short third-party publication excerpt explicitly attributed to textbook pp.183-184 plus a Nani-aligned platform sequence; Kanghsuan evidence is an official resource index and school pacing plan, not chapter prose.",
+    "The Hanlin textbook sample is a third-party share labelled All Rights Reserved; version authenticity, uploader authority, and reuse rights are unverified.",
+    "Therefore this is an original, source-informed fusion draft based on available evidence, not certification that all three publisher chapters were fully read or approved. All publisher evidence slots remain pending; lesson remains draft; spec QA remains untested; independent lesson-content review remains open."
+  ],
+  "additionalSourceVerification": {
+    "checkedOn": "2026-09-27",
+    "officialHanlinPublisherIntroduction": {
+      "url": "https://website.hle.com.tw/market/jr/行銷網站/113/教材/數學/教材簡介/113國中數學-改版搶先看.pdf",
+      "readableFinding": "The publisher-hosted textbook introduction search excerpt states that substituting a candidate value into a one-variable linear equation and checking equality of both sides identifies a solution; subsequent examples separately demonstrate equation-solving transformations. This independently supports the A-7-2/A-7-3 boundary and the existing original candidate-check lesson design.",
+      "limitation": "Official publisher-hosted introduction/excerpt, not the complete A-7-2 chapter. Direct PDF open exceeded the web reader size limit; finding is limited to the publisher-hosted indexed excerpt. No textbook wording or examples were copied."
+    },
+    "naniAlignedCourseStructure": {
+      "url": "https://www.junyiacademy.org/topics/n-m7a-c03",
+      "readableFinding": "The public course tree separates equation formation/solution meaning from equality axioms/transposition.",
+      "limitation": "Nani-aligned platform structure, not Nani publisher textbook prose."
+    },
+    "fusionImpact": "These additional checks corroborate an already implemented lesson decision; they do not establish three-publisher full-text review and do not justify reauthoring existing lesson text."
+  },
+  "verificationThisRun": {
+    "command": "npm run test:math:a7-2",
+    "result": "passed: scope boundary, equation modeling, candidate checking and simulation stages",
+    "dataValidation": "passed on 2026-09-27: 14,460 JSON files, 13,112 IDs, 1,032 KG nodes; lessons content-reviewed=0/draft=1,052; questions content-reviewed=0/draft=10,566",
+    "diffCheck": "passed: git diff --check",
+    "questionSourceLedger": "not rerun; no question or ledger data modified",
+    "browser": "not rerun; no browser/runtime feature code modified in this verification",
+    "webSourceCheck": "PASS: official Hanlin publisher-hosted indexed excerpt and Nani-aligned public course structure checked; neither is misrepresented as complete publisher chapter text",
+    "examLedger": "not rerun; no question or ledger data modified"
+  },
+  "noRepeatWork": "No lesson body, public-exam source ledger, or browser suite was repeated. Existing D-331 source-to-visible synthesis was verified; this pass added a source-caliber corroboration and reran only the targeted regression, full data validation, and diff check."
+}

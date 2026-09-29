@@ -2,23 +2,23 @@
   "id": "question-chinese-classical-word-meaning-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "對偶句常有？",
+  "prompt": "「其一犬坐於前」中的「犬」在句中具有什麼用法？",
   "options": [
     {
       "id": "A",
-      "text": "結構相近、語意對應"
+      "text": "名詞作主語，指一隻狗"
     },
     {
       "id": "B",
-      "text": "只有一字"
+      "text": "名詞作狀語，像狗一樣"
     },
     {
       "id": "C",
-      "text": "沒有節奏"
+      "text": "動詞，表示吠叫"
     },
     {
       "id": "D",
-      "text": "只在標題"
+      "text": "形容詞，表示忠誠"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的語境、結構與功能線索判斷；其他選項不符合題幹條件。"
+    "value": "B",
+    "explanation": "犬本是名詞，放在坐前修飾動作，表示像狗一樣蹲坐，是名詞作狀語。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-classical-word-meaning-5.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究古今詞義、詞性、搭配與語境判讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫文言詞義題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-classical-word-meaning"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-classical-word-meaning",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古今詞義、語詞搭配與語境",
+      "observedPattern": "公立學校國文評量把古今詞義、詞性、固定搭配與文言語境放入句子判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言詞義、詞性與閱讀理解",
+      "observedPattern": "公立學校國文評量把古今詞義、詞性、固定搭配與文言語境放入句子判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把詞放回它修飾的動作前後，檢查它是在指物、做動作還是說明動作方式。",
+  "solutionSteps": [
+    "讀題定位：圈出「詞性判斷」與目標詞，確認題目要判斷古今義、詞性、搭配或查證流程。",
+    "建立語境證據：觀察主語、動作、前後詞與時代情境，再區分現代直覺與古文用法；本題核心是「犬本是名詞，放在坐前修飾動作，表示像狗一樣蹲坐，是名詞作狀語。」",
+    "核對正解：選項 B「A」能放回原句並保留事件與語意。",
+    "排除誘答：檢查是否把現代義硬套、忽略詞性、只按字面猜，或補出文本沒有交代的心理與因果。",
+    "結論回查：以注釋或可靠字典查證，再把義項代回完整句子，確認前後事件與詞語結構連貫。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

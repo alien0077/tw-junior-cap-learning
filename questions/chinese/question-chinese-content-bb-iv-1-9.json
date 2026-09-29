@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bb-iv-1-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "若朋友的說法讓自己不舒服，最合適的表達方式為何？",
+  "prompt": "收到訊息『算了，你們都很忙』，在沒有更多上下文時，哪個讀法最穩妥？",
   "options": [
     {
       "id": "A",
-      "text": "說明自己的感受與希望對方調整之處"
+      "text": "一定代表對方完全不在意"
     },
     {
       "id": "B",
-      "text": "默默累積不滿後爆發"
+      "text": "可能帶有失望或想停止追問，但需要回問確認，不能直接判定動機"
     },
     {
       "id": "C",
-      "text": "立刻散播對方的錯誤"
+      "text": "一定是在稱讚大家有效率"
     },
     {
       "id": "D",
-      "text": "假裝自己完全沒感覺"
+      "text": "可直接當作同意取消所有安排"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bb-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "以感受和具體期待表達，比攻擊對方人格更有效。"
+    "value": "B",
+    "explanation": "『算了』和『都很忙』可能含有失望、退讓或結束話題的意思，但單句不足以確定動機與後續安排。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "自我與人際交流感受；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究對話感受、觀察／評價、具體請求、界線與關係修復。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫自我與人際交流題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "溝通情境、人物感受與語意推論",
+      "observedPattern": "公立學校國文評量要求辨識溝通者的感受、具體觀察、請求、語氣與證據限制；本題使用全新校園情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "對話語氣、觀點與關係修復",
+      "observedPattern": "公立學校國文評量要求辨識溝通者的感受、具體觀察、請求、語氣與證據限制；本題使用全新校園情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先提出合理可能性，再用澄清問題確認情緒和實際需求，不把語氣猜測當事實。",
+  "solutionSteps": [
+    "圈出『算了』可能暗示放棄或不再追問。",
+    "注意『都很忙』也可能是失望的間接表達。",
+    "確認沒有上下文就不能選定唯一動機。",
+    "B 同時保留可能性與回問需要。",
+    "設計一句『你是想改時間，還是先暫停？』來驗證解讀。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

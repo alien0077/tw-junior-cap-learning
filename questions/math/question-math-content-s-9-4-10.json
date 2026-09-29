@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-4-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "用相似直角三角形估量旗桿高度時，若人與影子的比例可知，還需要哪項關鍵條件？",
+  "prompt": "相似直角三角形小：大邊長比為 1：3。下列哪項正確？",
   "options": [
     {
       "id": "A",
-      "text": "兩者都必須在同一時間量測"
+      "text": "對應斜邊比為 1：9"
     },
     {
       "id": "B",
-      "text": "旗桿一定是紅色"
+      "text": "對應面積比為 1：3"
     },
     {
       "id": "C",
-      "text": "地面必須是圓形"
+      "text": "對應周長比為 1：3"
     },
     {
       "id": "D",
-      "text": "只需知道旗桿重量"
+      "text": "大三角形每一邊都只增加 2 公分"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "同一時間才能合理假設太陽光線方向相同，形成相似三角形。"
+    "value": "C",
+    "explanation": "相似圖形的所有長度與周長都按同一倍率 1：3；面積才是 1：9，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似直角三角形邊長比值的不變性 題型與官方課綱 KG kg-math-content-s-9-4",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供相似直角三角形、對應邊比例與生活測量能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的相似直角三角形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似直角三角形對應邊比、尺度放大、直角與銳角判定及生活測量",
+      "observedPattern": "公立學校公開數學試題常利用兩個直角與一個銳角判定相似，保持對應股與斜邊的比值，處理影長、梯架或尺度未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似直角三角形對應邊比、尺度放大、直角與銳角判定及生活測量",
+      "observedPattern": "公立學校公開數學試題常利用兩個直角與一個銳角判定相似，保持對應股與斜邊的比值，處理影長、梯架或尺度未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似直角三角形對應邊比、尺度放大、直角與銳角判定及生活測量",
+      "observedPattern": "公立學校公開數學試題常利用兩個直角與一個銳角判定相似，保持對應股與斜邊的比值，處理影長、梯架或尺度未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分清長度／周長的一次比與面積的平方比。",
+  "solutionSteps": [
+    "讀出邊長相似比 1：3。",
+    "斜邊及其他對應長度同樣是 1：3。",
+    "周長由邊長相加，所以周長比也為 1：3。",
+    "面積比應平方為 1：9。",
+    "選 C。"
+  ]
 }

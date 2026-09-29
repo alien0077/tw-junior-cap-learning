@@ -2,41 +2,84 @@
   "id": "question-math-content-f-9-2-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "二次函數 y=2(x-3)^2-5 的頂點座標為何？",
+  "prompt": "二次函數 y＝2(x−3)²−4 的頂點坐標為何？",
   "options": [
     {
       "id": "A",
-      "text": "(3,-5)"
+      "text": "(−3,−4)"
     },
     {
       "id": "B",
-      "text": "(-3,-5)"
+      "text": "(3,−4)"
     },
     {
       "id": "C",
-      "text": "(3,5)"
+      "text": "(3,4)"
     },
     {
       "id": "D",
-      "text": "(-3,5)"
+      "text": "(−3,4)"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-f-9-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "頂點式 y=a(x-h)^2+k 的頂點是 (h,k)，所以為 (3,-5)。"
+    "value": "B",
+    "explanation": "頂點式 y＝a(x−h)²＋k 的頂點是 (h,k)，本式 h＝3、k＝−4，所以頂點為 (3,−4)，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度第 2 學期第 1 次段考三年級數學科試題；題目頁／答案頁逐題核對後獨立改編，非原題重製。 來源題號：第 3 題改編",
-    "authoringNote": "原創題目來源界線 metadata 已補齊；內容與題型仍待第二輪 AI／Terra 複核，未據此宣稱真人或專家審定。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供二次函數頂點式、對稱軸、開口方向與極值判讀能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的二次函數圖形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-f-9-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-f-9-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "直接對照頂點式，特別注意括號內 x−h 的符號。",
+  "solutionSteps": [
+    "辨認形式 y＝a(x−h)²＋k。",
+    "比較 x−3，得到 h＝3。",
+    "讀出常數 k＝−4。",
+    "組合頂點 (h,k)＝(3,−4)。",
+    "選 B，代入 x＝3 可得 y＝−4。"
+  ]
 }

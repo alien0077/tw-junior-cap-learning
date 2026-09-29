@@ -1,0 +1,68 @@
+{
+  "id": "science-gc-iv-2-role-function-fusion-d358",
+  "date": "2026-09-28",
+  "unit": "Gc-Ⅳ-2",
+  "lessonId": "lesson-science-content-gc-iv-2",
+  "scope": "單元原創教學可見性、可核實版本證據界線、互動模型與自動化回歸；不代表 publisher review 或 lesson content review 完成。",
+  "sources": [
+    {
+      "kind": "official-curriculum",
+      "url": "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "verifiedFinding": "Gc-Ⅳ-2 學習內容要求理解生物在生態系中擔任不同角色、發揮不同功能並有助維持穩定；教學正文據此加強角色與功能連結。"
+    },
+    {
+      "kind": "publisher-official-study-aid-not-textbook",
+      "publisher": "hanlin",
+      "url": "https://resource.hle.com.tw/Books/BooksResource/111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B61%E4%B8%8B%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E5%AD%B8%E7%94%A8%E5%90%88%E6%AA%94%28111f614143%29.pdf",
+      "locator": "第45頁／第5章焦點一；公開學習輔助合檔",
+      "verifiedFinding": "可讀資料整理遺傳、物種、生態系多樣性，並連結食物網穩定、棲地破壞與外來生物威脅。這是翰林官方學習輔助資料，不等於完整課本。"
+    },
+    {
+      "kind": "publisher-official-index-only",
+      "publisher": "kanghsuan",
+      "url": "https://digitalmaster.knsh.com.tw/ju/nature/webgame/B2.html",
+      "verifiedFinding": "只作生物多樣性主題／互動索引定位，未取得可核讀課本文字，不能作概念正文融合證據。"
+    },
+    {
+      "kind": "public-school-course-plan-only",
+      "publisher": "nani",
+      "url": "https://course.cyc.edu.tw/course/pub/cou_down.php?fn=1622427011662883296spsgx99mvemp965fk6ttatcjwb78ke77p298ewc.pdf&q_year=115",
+      "verifiedFinding": "只作七年級章節位置線索，非南一課本正文。"
+    }
+  ],
+  "synthesis": {
+    "originalLearningArc": [
+      "以兩座校園池塘的觀察問題引入，不先把物種數當成好壞結論。",
+      "從遺傳、物種、生態系三尺度轉到生產者、消費者、分解者角色及其關係。",
+      "閱讀標示為自編的四週樣區資料，分出觀察、推論及未量測限制。",
+      "診斷三種單元迷思，再遷移至需納入潮位、棲地及踩踏資料的潮間帶調查。"
+    ],
+    "copyrightBoundary": "只記錄概念與定位；六段正文、池塘資料、模型表達均為原創，不搬錄來源題目、答案、圖表或原文。",
+    "unresolved": [
+      "南一與康軒可讀出版社正文尚未取得；兩個 publisher slots 維持 pending。",
+      "翰林目前證據限公開學習輔助資料，不足以解除三版 publisher gate。",
+      "lesson 維持 draft；內容獨立性全科 gate、內容審查及真人檢核仍未完成。"
+    ]
+  },
+  "implementation": [
+    "將既有六段 teaching.body 對齊到學生可見 content.sections，加入逐段完全一致 regression。",
+    "新增 pond-food-web 專屬模型：水草擾動滑桿同步改變條件敘述，明確提示概念示意不可當實測族群數或確定因果。",
+    "把原本相對豐度、功能冗餘、初級生產及差異中的差異等超出此課教學目的的指標改成國中可操作的角色、關係、條件與限制判讀。",
+    "規格目標、核心概念、迷思、課程流程、初始狀態、學生操作、分層回饋及可驗收測例同步改為單元專屬；修正 variableValues YAML nesting。",
+    "將 YAML 的 Hanlin source-slot 狀態同步到 unit-specs.manifest.json 對應的一個 lesson entry；沒有重建或修改其他 manifest records。"
+  ],
+  "validation": {
+    "targetTest": "PASS: node implementation/runtime/science-gc-iv-2-substantive-fusion.test.mjs",
+    "fullNpmTest": "PASS: npm test; workbench 1,027/1,027",
+    "validateData": "PASS: 14,479 JSON, 13,113 IDs, 1,032 KG nodes; all records remain draft",
+    "validateSpecs": "PASS: 1,027 files, 0 errors, 1,027 pending (no QA promotion)",
+    "publisherEvidenceLedger": "PASS: 286/3,081 verified, 2,795 pending; this unit's Hanlin official learning-aid source slot verified, Nani and Kanghsuan remain pending",
+    "specManifestSync": "PASS: target entry only; Hanlin=verified, Nani/Kanghsuan=book-level-only; the other 1,026 records unchanged",
+    "browser": "PASS: npm run test:browser full traversal 1,027/1,027; targeted authorized Chrome site test verified six visible sections, keyboard disturbance states 1 and 2, 320/375/768px no horizontal overflow, zero page errors",
+    "browserEnvironment": "Python 3.14 at /Library/Frameworks/Python.framework/Versions/3.14/bin/python3; Playwright 1.58.0; Chromium revision 1208; official URL HTTP 200; restricted launch SIGABRT/EPERM retained and same test succeeded in authorized environment; no dependency installation",
+    "siteIndex": "PASS: rebuilt revision local; 1,052 lessons, 10,566 questions, 40 mapping sets; target included",
+    "strictLessonIndependence": "PASS: 614 lessons, 0 risks, 0 affected references, 0 strict failures",
+    "siteIndexValidation": "PASS: 1,052 lessons, 10,526 question paths, revision local",
+    "diffCheck": "PASS: git diff --check"
+  }
+}

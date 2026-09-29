@@ -1,0 +1,159 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-6-iv-6
+  knowledgeGraphIds:
+  - kg-english-performance-6-iv-6
+  title: 6-Ⅳ-6：運用網路或課外資源分享
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 6-Ⅳ-6：運用網路或課外資源分享
+    curriculumIntent: 6-Ⅳ-6：運用網路或課外資源分享
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 三家可讀資料限於公開數位資源入口／導覽，另有一份明確列出6-Ⅳ-6的公校教案；只把各來源明示的資源發現、取得、選用與分享支架納入原創教學，不把公校教案歸因出版社，也不宣稱取得三家指定冊次課本章節。
+    currentEvidenceStatus: curriculum-and-kg-grounded; public-publisher-resource-portals-read; publisher-chapter-evidence-unavailable; original-fusion-authored
+  learningGoals:
+  - 將一項真實英語學習／分享需要轉成含主題、資訊類型與讀者程度的可搜尋問題
+  - 根據作者或機構、日期、原始連結、可核查依據、語言適讀性及使用權利判斷候選資源
+  - 以定位筆記整理資料、用自己的英文摘要並提供可追溯出處，向同儕說明用途及限制
+  - 回應聽者追問；發現證據缺口時回原始來源核實並修正推薦
+  prerequisites:
+  - 能以英語或中英對照描述一項想查明的主題
+  - 能辨識網頁標題、作者／機構、日期、連結與一至兩個支持主張的線索
+  coreConcepts:
+  - 搜尋需求須具體到可以用候選網頁回答，搜尋結果排序不等於品質排序
+  - 資源篩選須同時考慮來源可追溯、內容相關、證據、讀者適配與使用界線
+  - 分享包含自己的摘要、可回查來源、推薦理由與聽者回應，不等於轉貼連結或複製全文
+  misconceptions:
+  - 把排名第一或英文標題誤當成可信且適合的證據
+  - 把同一文章的多次轉貼算成數個獨立來源
+  - 逐句翻譯或整段複製，沒有用自己的話整理意思
+  - 只傳網址便稱為分享，未說明用途、讀者、來源或限制
+  - 以為找到作者就已證明內容正確，忽略仍須核查主張與日期
+  contentFlow:
+  - 'predict: 先寫下替同學查wheel cake內餡時，哪種來源線索最可能支持可靠答案及理由'
+  - 'manipulate: 把需求拆成主題、資訊類型與讀者程度，實際改寫搜尋詞並比較候選結果'
+  - 'observe: 對照候選頁的作者／機構、日期、原始網址、主張證據、適讀性與使用權，記錄可見差異'
+  - 'explain: 以原頁定位的證據說明哪個來源能回答需求、摘要如何區分事實與推論，並指出限制'
+  - 'paraphrase: 遮住原文，以自己的英文短句整理重點和用途'
+  - 'attribute: 製作含標題、作者、日期、網址與查閱日的分享卡'
+  - 'share: 說明推薦理由，接受同儕追問並對未核實處回源修正'
+  - 'transfer: 對不同英語資源重做搜尋、來源檢查與讀者適配判斷'
+  - 'exit-ticket: 提交查詢詞、來源判讀理由及含署源的原創摘要'
+  visualizations:
+  - 原創資源分享卡並列任務問題、候選來源線索、讀者程度、原頁定位與自己的英文摘要
+  - 作者／日期／主張證據／適讀性／授權界線以文字標籤呈現；不以顏色或排名代替判斷
+  - 搜尋候選A與無作者轉貼候選B的可追溯差異，以明確文字描述，不嵌入受保護頁面截圖
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-6-IV-6-I01
+    component: GuidedChoiceBlock
+    purpose: 逐步練習把需求轉成搜尋詞、篩選來源、製作署源摘要並回應同儕追問
+    initialState:
+      mode: guided-choice
+      showAnswer: false
+      selectedEvidence: []
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 每題先選一種搜尋／來源判讀／整理分享策略，錯答可讀提示後重試
+    - 答對後指出題幹中與搜尋需求、可信性或使用界線相關的具體線索
+    - 把答案理由遷移到下一步，完成從搜尋到公開分享的完整流程
+    visualRules:
+    - 作答前不顯示正解；錯答先給與本題線索相連的提示並允許重試
+    - 正解解析說明候選策略為何較佳及其他選項的問題，不只亮出答案字母
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-6-IV-6-I01
+      trigger: 把無作者截圖被大量轉貼當成多個獨立且可信來源
+      prompt: 請找原始作者或機構、原始連結與能支持主張的內容線索；轉貼之間是否真的彼此獨立？
+      expectedEvidence: 指出原始發布者／連結缺失、轉貼依賴同一內容，並提出回源或另找獨立證據的做法
+    feedback:
+      correct: 指出搜尋需求與來源證據如何匹配，並要求將判斷套用到另一類英文課外資源。
+      incorrect: 先提示檢查原始作者／連結或來源是否獨立，不直接選答案；重試後才顯示逐線索解析。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只參考分步互動教學的組織方法；本課搜尋情境、候選網頁描述、問題、答案與回饋全部原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "只參考活動步驟與自我檢核概念；不抓取外部網頁內容，也不依賴外部服務才能完成課堂互動。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "互動按鈕使用可讀名稱、鍵盤焦點與文字回饋；不以顏色或動畫單獨傳達正誤。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "課文與四步選擇題由本地資料提供，外部連結或網站暫時不可用不會阻止學習。"
+  capTransfer:
+    questionType: 英語資源搜尋／可信度與適讀性判讀／署源分享
+    stemConstraint: 使用新的學習需求與候選資源描述，要求從需求、來源可追溯性及讀者適配作理由，不只挑熱門或排名靠前頁面
+    requiredResponse: 提交合適搜尋詞、至少一項來源證據、英文原創摘要及未確認限制
+    scoring: 搜尋詞切合需求 1、來源／適讀判讀有據 1、摘要原創且來源可回查 1
+  exitTicket:
+    prompt: 你怎樣知道一項英語課外資源值得推薦？請列出一項可核查線索和一個仍須確認的限制。
+    successCriteria:
+    - 搜尋問題與讀者需要明確
+    - 引用作者／機構、日期、原始連結或內容證據之一
+    - 分清已核對資訊與仍待確認事項
+  expressionExtension:
+    applicable: true
+    task: 為同學寫兩至三句英文資源推薦，包含它回答的問題、適合的讀者及原始來源；另以一句中文說明一項未確認處
+    constraint: 摘要使用自己的組織方式而不複製原文；無法核實的資訊明確標記，不由系統代寫
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 學生頁顯示六段單元正文；各段標題與 teaching.body 一致，不重複或回退到泛用文字。
+  - GuidedChoiceBlock初始不揭答案；四題逐題錯答提示可重試，答對後顯示與該題證據相符的解析。
+  - 鍵盤可完整完成四題；在320、375、768px題幹、選項、回饋沒有水平溢位。
+  - 封鎖外部網路仍可讀完本地lesson與作答；不得要求載入遠端搜尋結果或出版社會員資料。
+  - fallback：外部搜尋／出版社資源不可連線時，明示目前離線並使用本課提供的原創候選來源卡完成四步 GuidedChoice；不得空白、卡住或假稱已連網查證。
+  - 來源判斷互動涵蓋搜尋匹配、可信度／適讀性、摘要署源、同儕追問四種決策，所有答案及提示均可在本課資料中追溯。
+  - axe自動檢查無違規；測試明確記錄自動工具未判定的項目，不將其冒稱真人無障礙審查。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三家出版社資料範圍標明為公開資源入口／導覽，指定冊次章節證據缺失時明確標記 pending
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 不存在泛用placeholder或錯配互動；出版社來源限制及校方教案歸屬清楚標示
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: PDF第37頁（頁面內標示之6-Ⅳ-6）；國民中學英語文學習表現，要求主動搜尋相關英語文資源並與師生分享
+    role: official-curriculum-source-of-truth
+  - url: https://lgt.ntpc.edu.tw/TeachPlanFile/2020/plan/101_%E6%95%99%E6%A1%88.pdf
+    locator: 新北市積穗國中公開教案，PDF pp.1-5；明列6-Ⅳ-6並呈現搜尋教育雲英文影音、整理原創投影片及Gallery Walk分享；校本教案，非出版社教法
+    role: public-school-design-reference-not-publisher-evidence
+  - url: https://nanidigi.nani.com.tw/
+    locator: 公開數位資源入口，Nani Book及教師分享／交流導覽；無本課指定冊次章節內容
+    role: publisher-public-resource-index-only
+  - url: https://digitalmaster.knsh.com.tw/all/digitalgo/j/english/index.html
+    locator: 康軒國中英語數位特色公開頁；影音／遊戲／例句／QR功能導覽，非本課指定冊次教學章節
+    role: publisher-public-resource-index-only
+  - url: https://blog.ehanlin.com.tw/learning-english
+    locator: 翰林編輯公開英語資源導覽；列出媒介、程度、用途及費用，部分連結屬第三方，不是指定冊次課本
+    role: publisher-public-resource-index-only

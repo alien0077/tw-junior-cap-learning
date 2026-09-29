@@ -9,34 +9,49 @@
     "7"
   ],
   "content": {
-    "summary": "從可變的生活量建立代數式，進而求式值、辨認同類項並化簡；完整正文、活動與摘要見 teaching 欄位。",
+    "summary": "從每份成本與固定費的差別讀出代數式，再用負數代入、同類項結構與分配律整理表達；最後以不同輸入值檢驗整理前後是否仍代表同一數量。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能用符號記錄情境中的可變量與固定量，求式值、化簡一次式，並檢查式子是否仍保留原情境的意義。"
+        "heading": "費用裡有會變的部分，也有不動的部分",
+        "body": "飲料每瓶 18 元，運送只收一次 40 元。訂 b 瓶時，總額是 18b＋40，而不是把單價、瓶數和運送費混成一個乘積。b 是瓶數，18 是每瓶費用，40 是不因瓶數改變的固定費。先替每項說出單位，代數式才不只是字母與數字的拼圖。"
       },
       {
-        "heading": "閱讀順序",
-        "body": "本單元先呈現完整教學正文與互動活動，最後才整理摘要與離堂檢核。"
+        "heading": "字母位置要保留運算關係",
+        "body": "5m 表示每組五個、共有 m 組；5＋m 卻是把固定數和組數相加。m² 是 m 乘自己，不等於 2m。代入前先把字母位置圈出，遇到負數用括號，例如 3(−2)−2(5)=−16；括號保住原式的乘法與減法關係。"
       },
       {
-        "heading": "核心提醒",
-        "body": "只有字母部分相同、次方也相同的項才能合併；代入負數時務必以括號保留原來的運算結構。"
+        "heading": "同類項依字母與次方辨認",
+        "body": "18b＋2b＋40 可整理為 20b＋40，因為前兩項的字母部分和次方相同；20b 與 20、3b 與 3b² 則不能併成一項。判斷不能只看數字相近，而要看它們表示的量是否同類。"
+      },
+      {
+        "heading": "每一步化簡都要說得出理由",
+        "body": "4x＋7＋3x−5 先重排成 4x＋3x＋7−5，再得 7x＋2；2(x＋3)＋x 則先分配成 2x＋6＋x，再合併為 3x＋6。把每一步標成重排、分配或合併，能抓出只憑外觀湊項的錯誤。"
+      },
+      {
+        "heading": "把式子帶回生活檢查",
+        "body": "圖書館卡片有一次性開版費 120 元，每張另加 3 元，c 張的成本是 120＋3c；25 張共 195 元。若錯寫為 123c，令 c=0 就預測成本為零，與仍須付開版費矛盾。用零值測固定項，再用實際數量核對，是檢查模型的兩種不同證據。"
+      },
+      {
+        "heading": "整理式不是換了另一個意思",
+        "body": "將 3x＋2＋5x−7 改寫為 8x−5 後，可選幾個輸入值分別代進原式和新式。x=−2 時兩邊都得 −21；x=0 時兩邊都得 −5。若某次結果不同，就回查正負號、字母次方與括號。這種同值檢驗讓化簡理由可被驗證，也為之後處理方程式預備語言。"
       }
     ]
   },
   "studyHighlights": [
-    "變數代表可變的量。",
-    "係數乘在變數前。",
-    "代入負數要加括號。"
+    "以量的單位讀係數、變數和常數：每單位成本乘數量，再加固定成本。",
+    "同類項由字母部分與次方決定；分組時保留正負號，不能把常數和變數項混併。",
+    "整理前後可用多個輸入值核對，但數值相同只是證據，仍須以交換、結合與分配律說明理由。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
     "https://www.naer.edu.tw/",
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "https://mathvideo.hle.com.tw/1A/3-1/",
-    "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E5%BC%95%E8%B5%B7%E5%8B%95%E6%A9%9F&l2=7%E4%B8%8A"
+    "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E5%BC%95%E8%B5%B7%E5%8B%95%E6%A9%9F&l2=7%E4%B8%8A",
+    "https://www.junyiacademy.org/new-video/3ohHLO2PpZA?parent-topic-id=k-m7a-c03-1",
+    "https://www.scribd.com/document/790615966/%E5%BA%B7%E8%BB%92%E7%89%88%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E5%85%AD%E5%8D%87%E4%B8%83%E5%85%88%E4%BF%AE%E8%AC%9B%E7%BE%A9-%E5%AD%B8%E7%94%A8",
+    "https://www.scribd.com/document/831294508/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E4%B8%83%E4%B8%8A%E8%AA%B2%E6%9C%AC",
+    "https://mathvideo.hle.com.tw/1A/3-1/"
   ],
   "versionResearch": [
     {
@@ -116,6 +131,78 @@
         ]
       },
       "licenseBoundary": "只採用翰林公開索引的章節名稱與順序；不複製出版社頁面文字、影片、題目、答案、圖片或講義，所有正文、數字與回饋均獨立撰寫。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "南一標示七上 3-1 公開課程資源序列（均一平台；非出版社正文）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.junyiacademy.org/new-video/3ohHLO2PpZA?parent-topic-id=k-m7a-c03-1；頁面標題索引列南一七上3-1多個概念資源，包含一元一次式、分配律、同類項與檢查運算；核讀 2026-09-27。未逐一觀看影片，不以索引描述冒稱教學正文。",
+      "reviewedAt": "2026-09-27",
+      "findings": {
+        "concepts": ["平台索引將式子的列寫、名詞、分配與同類項整理為可辨識的教學節點，呈現由符號辨讀進入運算的次序。", "索引包含檢查運算正確性的探索資源，支持在形式化簡後安排代入核對，但索引本身不能證明影片中的具體教法。"],
+        "representations": ["可確認此課程資源把一元一次式及其加減、乘除與同類項整理分別標示；本課另以單位情境和數值同值表作原創串接。"],
+        "examplesOrEvidence": ["頁面列有南一七上3-1頁次索引與多種觀念／解題資源標題；本研究只記資源分類，不抄錄例題或解答。"],
+        "misconceptions": ["資源標題不足以證明如何處理錯誤概念，因此常見錯誤由本課依課綱及算式結構自行推導，不歸因於南一教法。"],
+        "assessmentEmphasis": ["索引出現隨堂練習與運算檢查節點；實際評量題型與標準未從索引推定。"]
+      },
+      "licenseBoundary": "均一頁面是南一標示的公開學習資源索引，不是南一出版社課本全文；未逐片觀看，權利與出版社正文未核。本 lesson 僅採概念節點順序，不重製影片或題目。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒標示之六升七先修講義第三方公開節錄（非出版社認證）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.scribd.com/document/790615966/%E5%BA%B7%E8%BB%92%E7%89%88%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E5%85%AD%E5%8D%87%E4%B8%83%E5%85%88%E4%BF%AE%E8%AC%9B%E7%BE%A9-%E5%AD%B8%E7%94%A8；可讀節錄 pp.39–43 涉及文字符號代表數、代入求值與情境列式；p.42–43開始轉入等式／求解（作本課範圍邊界），核讀 2026-09-27。",
+      "reviewedAt": "2026-09-27",
+      "findings": {
+        "concepts": ["節錄呈現由具體數量與文字符號過渡到代入及情境列式，能補充『字母是數的代表』如何接到式值理解。", "節錄後段已開始等式及求解，故本課只取符號／式值前置支架，求解程序不併入 A-7-1。"],
+        "representations": ["可讀頁面在口語情境、文字符號與代入數值間往返；本課將其重新組織為單位辨讀、結構分類、代入與化簡等價檢查。"],
+        "examplesOrEvidence": ["第三方平台可讀節錄約 pp.39–43；僅記概念定位，不保存或複製該講義原題、用語、答案或版面。"],
+        "misconceptions": ["材料支持從具體量走向符號的教學支架；本課對 5m／5＋m、m²／2m 的對比屬原創診斷，不聲稱出自該講義。"],
+        "assessmentEmphasis": ["節錄足以確認有代入與文字轉式任務，不足以判定完整章節的評量比重或出版社正式教學設計。"]
+      },
+      "licenseBoundary": "Scribd 第三方分享，標示與康軒相關但上傳者、版次真實性及使用授權均未核；只讀有限節錄並抽取概念序列，不重製受保護表達。publisher slot 維持 pending。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國中數學七上課本第三方公開節錄（版本標示未認證）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.scribd.com/document/831294508/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E4%B8%83%E4%B8%8A%E8%AA%B2%E6%9C%AC；可讀 OCR 約 pp.151–166，涵蓋符號簡記／代入求值、一次式與同類項、分配律／括號及章末整理；核讀 2026-09-27。",
+      "reviewedAt": "2026-09-27",
+      "findings": {
+        "concepts": ["節錄把符號簡記、式值、一次式與同類項整理、括號分配分成逐步小節，後接章末統整；本課據此將符號語意、分類與運算律拆成清楚但彼此銜接的學習動作。", "章節目次顯示式子運算位於方程式學習脈絡中；本課重點落在化簡與等值檢查，不搬入方程式求解。"],
+        "representations": ["可讀節錄涵蓋文字符號、代入值、同類項式子與括號展開；本課另創作固定測值表，作為化簡結果的數值核對工具。"],
+        "examplesOrEvidence": ["第三方分享的可搜尋 OCR 定位約 pp.151–166；內容只用於概念排序與涵蓋範圍辨識，未重用其例題、數字或解答。"],
+        "misconceptions": ["節錄顯示同類項與分配律各有獨立教學位置；本課原創診斷 3x 與常數不可併、負值代入需括號及不可漏負號。"],
+        "assessmentEmphasis": ["可辨識其後接自我評量／章末回顧，但未以第三方 OCR 推斷題目難度或全章評量比例。"]
+      },
+      "licenseBoundary": "第三方 Scribd 分享且頁面標示 All Rights Reserved；上傳者、版次真實性及授權未核。限於研究概念結構，不複製課本文字、圖表、例題、習題、答案或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林版國中數學七年級公開校方課程計畫交叉證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nkjh.tyc.edu.tw/sites/default/files/2021-04/%E2%97%8F6-2-3%E6%95%B8%E5%AD%B8.pdf；PDF p.1 lines 59-60",
+      "reviewedAt": "2026-09-07",
+      "findings": {
+        "concepts": [
+          "A-7-1：代數符號 的學習範圍與課程定位",
+          "以代數符號表徵交換律、分配律、結合律，並處理一次式化簡、同類項與生活情境記錄。",
+          "此為學校課程計畫的範圍與順序證據，不等同完整出版社章節。"
+        ],
+        "representations": [
+          "依單元的符號、圖形、數線、資料表徵或情境列式進行原創融合。"
+        ],
+        "examplesOrEvidence": [
+          "南崁國中公開課程計畫列出學習內容、目標、評量與教材資源；本 lesson 不複製其教材或題目。"
+        ],
+        "misconceptions": [
+          "公開課程計畫不能單獨證明學生已理解，也不能替代本單元的內容審查。"
+        ],
+        "assessmentEmphasis": [
+          "計畫列出的紙筆、小組討論、口頭回答與作業僅作為評量線索。"
+        ]
+      },
+      "licenseBoundary": "僅保存公立學校公開課程計畫的 URL、頁碼與概念定位；不複製出版社教材、學習單、題目、答案、圖片或版面，lesson 維持 draft。"
     }
   ],
   "fusionRecord": {
@@ -125,65 +212,70 @@
       "代數式的結構是後續一元一次方程式列式與解式的前置能力"
     ],
     "versionDifferences": [
-      "康軒公開索引較強調例題與練習層次；南一公開索引提供整冊概念銜接；翰林索引以式子運算作為 CH3 的第一分段",
-      "公開資料僅能支持章節與資源型態，無法推論完整教材頁面，因此不把未取得內容寫成版本事實"
+      "南一標示的均一3-1資源索引列出一元一次式、分配律、同類項與運算檢查等節點；這能支持由符號認識進入整理、再核對的研究方向，但本輪未逐一觀看影片，不能據此描述南一影片的完整教法。",
+      "康軒標示的六升七先修講義第三方節錄先讓字母代表數、再做代入與情境列式；其可讀節錄後段轉入等式／求解，故本課只採用符號到式值的支架，並把求解留在後續單元。它不是認證的康軒課本章節。",
+      "翰林標示的七上課本第三方OCR節錄將簡記、式值、一次式／同類項與分配律分節呈現；本課因此採用『說量與符號→分類項→操作律→用多值檢驗』的重新編排，並非照搬其節序或例題。",
+      "三種材料證據強度並不對等：南一為課程資源索引、康軒為先修講義有限節錄、翰林為標示課本的第三方OCR節錄；各自上傳來源／版本真實性及權利狀態皆如實記錄，均不足以宣稱完整出版社章節審讀。"
     ],
     "originalAdditions": [
       "自編園遊會餐券情境把變動收入與一次性費用分開，讓代數式的每一項都有量的意義",
-      "新增先預測、再代入、再按同類項化簡、最後以單位回查的互動流程",
+      "將三種不同證據所支持的支架重寫為本課教學弧線：情境量與單位建立符號意義，項的字母／次方分類界定何者可併，交換與分配等運算律說明變形，最後以負值及多個測值比較原式與整理式；數值檢查作為驗證而非規則證明。",
       "加入把不同次數項、不同單位量與係數正負誤合併的錯誤診斷"
     ],
-    "llmSynthesisNote": "LLM 依官方課綱、kg-math-content-a-7-1 與三個公開版本索引可證明的概念順序，獨立融合出以情境量為入口、以代數結構為核心、以代入與單位為證據的教材。未取得的出版社正文、例題與答案不作推測；本課的文字、例子、互動步驟與回饋均重新撰寫，並保留各來源授權界線。"
+    "llmSynthesisNote": "本原創教材依官方 A-7-1 範圍與 kg-math-content-a-7-1，交叉閱讀南一標示的概念資源索引、康軒標示先修講義 pp.39–43 有限節錄、翰林標示課本 OCR 約 pp.151–166 及其官方 1A/3-1 資源索引後撰寫。不同材料所呈現的符號引入、分節順序、運算／檢核支架被轉化為本課的概念次序；正文、餐飲費用模型、圖書館成本遷移、錯誤診斷、所有算式與互動均為自編，不重製來源題目或措辭。南一影片未逐一觀看，兩份課本／講義為第三方分享且真實性與授權未核，故 publisher evidence 仍 pending，lesson 維持 draft，不代表三家完整章節已審完。"
   },
   "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學 1 上公開影音教材",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "CH3 一元一次方程式，3-1 式子的運算；公開頁的學習前哨站、以符號代表數、式子的值、式子的化簡、回顧與自評分類",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/3-1/",
+      "chapterLocator": "臺北市立民生國中 114 學年度七年級資源班數學課程計畫；公開 PDF p.1 明列翰林版七年級數學，A-7-1-1～A-7-1-3 分列運算律、一次式化簡／同類項與生活情境；核讀 2026-09-20。",
+      "sourceUrl": "https://www.msjh.tp.edu.tw/uploads/1755572578742THrRJJpw.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "assessment-pattern"
-      ],
-      "outcome": "以公開頁可見的概念由符號表徵、求式值到化簡的順序，交叉檢查本單元是否具有由具體情境走向符號與驗證的完整學習歷程。",
-      "copyrightBoundary": "未儲存、轉錄、改寫或重製該頁影片、投影片、例題、題組、答案或逐字稿；本單元的情境、數字、式子、活動與回饋均為重新自編。"
-    },
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中數學七上公開影音教材",
-      "subject": "math",
-      "chapterLocator": "七上第 3 章一元一次方程式；3-1 代數式的化簡之公開章節定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E5%BC%95%E8%B5%B7%E5%8B%95%E6%A9%9F&l2=7%E4%B8%8A",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "concept-progression",
-        "activity-pattern"
-      ],
-      "outcome": "以另一出版社公開七上章節結構交叉確認代數式化簡在一元一次方程式前的教學位置，並要求本單元先建立符號意義，再處理運算與遷移。",
-      "copyrightBoundary": "未擷取受著作權保護的影音內容、圖像、習題或解答；只登錄公開章節定位及其對本專案自編教學順序的研究結論。"
-    },
-    {
-      "publisher": "nani",
-      "edition": "南一版國中數學公開架構索引",
-      "subject": "math",
-      "chapterLocator": "https://www.junyiacademy.org/topics/n-m7a；公開主題索引可核對七上代數式與一元一次方程式的前置順序，本地 mapping 以此作保守對照。",
-      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
-      "access": "public-open",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開主題索引支持先理解變數與代數式，再銜接一元一次方程式；本課將這個可確認的順序轉成固定量、變動量、代入、同類項與分配律的原創課文，未把索引誤當完整教材正文。",
-      "copyrightBoundary": "只研究均一平台公開的南一版架構索引與資源類型；不複製或改寫教材文字、影片、圖像、題目、答案或講義，所有情境、數字、互動和回饋均由本課獨立撰寫。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「A-7-1：代數符號」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "新北市立金山國中 113 學年度七年級第一學期部定課程計畫；公開 PDF 第 16 頁附近的 A-7-1／3-1 代數式的化簡欄位明列康軒版第一冊課本與紙筆、作業評量；核讀 2026-09-20。",
+      "sourceUrl": "https://www.cshs.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=823&file=WVhSMFlXTm9MelEwTDNCMFlWOHhOamcxT0Y4ME9EYzFOamN5WHpRd01UWTRMbkJrWmc9PQ%3D%3D&fname=0054RPA0IC44VXMPED04ROGDVW30B4ICQOQK4020UT0510TSYSA4YS54WWECTTOKVWPOXT154404A0WSST14MOICB0RKMP1444VXXWA0SWMKGHFGUSCCYWFC0040DDKKB0LKUWLOVWTWWSB0403541GDQPMLA0B4ZSFGOOLK30DGRKPO2125HC04MOIGTW14JDRLOPEGFHMOUTXT30FCUW30JGLLUSDC0150RKKKXX0150HGWTHGDCTW25LKFGB0UW10GGFDA0VSKPNO1145",
+      "access": "public-open",
+      "reviewedAt": "2026-09-20",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「A-7-1：代數符號」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "新北市立淡水國中 114 學年度七年級第一學期部定課程計畫；公開 PDF 的 A-7-1 欄位明列南一版教科書，並以符號表徵交換律、分配律、結合律、化簡同類項與生活情境列式；核讀 2026-09-20。",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Mekk0TDNCMFlWOHhNakU0Tmw4ek16a3pPVGs0WHpJM01qZzRMbkJrWmc9PQ%3D%3D&fname=WSGGRPQK20QO41KKLOLK54TXXSMO25JGKLB0DCNKCCQLOO40QKTSST54WSLKUSSSROPOIHKK2004GDLOQONKTSMOOPB0FHMPQPMPNOTSUWZWWXVWFH10YWFCSSWUX25HCA0UWIGVWKO40XSUSB040MPTXGDTWA0ZWUSOPTWFGTS45QKNOKK21HHDGB0JC24KK14WTIGYSEG14WSMLID30B514YWRKA434DCDGA0WWQOPP1000ZSIGMOIGDGJDLO",
+      "access": "public-open",
+      "reviewedAt": "2026-09-20",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「A-7-1：代數符號」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -258,102 +350,124 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-27",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "拖曳改變餐券張數並立即重算，讓情境、代數式、數值表與收入圖同步變化，再化簡並診斷錯誤模型。",
-    "scenario": "園遊會攤位每張餐券售價 20 元，另收一次性設備費 60 元。拖曳 x 改變張數，畫面同步顯示餐券圖示、20x＋60、數值表與總收款，最後比較正確模型和錯誤模型。",
+    "goal": "操作同一變數的測試值比較整理前後表達式，並以項的結構說明兩式為何同值。",
+    "scenario": "比較 3x＋2＋5x−7 與 8x−5。滑動 x 後即時查看兩邊輸出，並以 x=−2、0、3 的文字表格交叉驗證。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "售出的餐券張數"
+        "meaning": "用來測試等價性的輸入值，可包含負數"
       },
       {
         "symbol": "y",
-        "meaning": "包含固定費的總收款"
+        "meaning": "原式或整理式計算出的數值"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "拖曳 x 從 0 到 6，觀察餐券數、總收款與圖表高度；哪個式子同時符合每多一張增加 20 元且 x＝0 仍有 60 元？",
+        "prompt": "在 3x＋2＋5x−7 中，哪些項能合併？選出按字母部分與次方分類正確的整理式。",
         "options": [
-          "20x＋60",
-          "20＋x＋60",
-          "x＋80",
-          "20(x＋60)"
+          "8x−5；3x與5x一組，2與−7一組",
+          "10x−7；把2併入x項",
+          "8x＋9；忽略−7的負號",
+          "3x²＋5x−5；把同類項相乘"
         ],
         "answer": "A",
-        "feedback": "選 A 後拖曳 x 驗證：數值表每增加一張固定增加 20，x＝0 時仍顯示 60；若選 20(x＋60)，立即標示單位與固定費被乘上的錯誤。"
+        "feedback": "A 正確。3x與5x同有一次的x，係數相加為8；常數2−7為−5。不同字母部分或次方不能相併。"
       },
       {
         "id": "step-2",
-        "prompt": "把滑桿停在 x＝3，畫面同步出現 3 張餐券與代入式 20(3)＋60；總收款是多少？若先不看答案，你的預測和表格一致嗎？",
+        "prompt": "將 x=−2 代入原式 3x＋2＋5x−7 與整理式 8x−5；哪一組計算完整保留負數？",
         "options": [
-          "120",
-          "83",
-          "180",
-          "23"
+          "原式 3(−2)+2+5(−2)−7=−21；整理式 8(−2)−5=−21",
+          "原式 3×2+2+5×2−7=11；整理式 8×2−5=11",
+          "原式 −6+2−10−7=−19；整理式 −16+5=−11",
+          "原式 −6+2−10−7=−21；整理式 −16−5=−11"
         ],
         "answer": "A",
-        "feedback": "A 為 120 元。若選 180，系統會把錯誤拆解標成 20×(3＋60) 或把固定費重複乘上張數，請回到情境圖與數值表重做。"
+        "feedback": "A 正確，兩種表示各得−21。負數替換字母時用括號，分別先完成乘法再加減；不可把−2改成2，也不能把末項−5改成+5。"
       },
       {
         "id": "step-3",
-        "prompt": "拖曳同類項標籤，把 4x、3x、7、－5 分組；哪個化簡結果在 x＝2 時仍與原式數值相同？",
+        "prompt": "滑桿測值與固定表格在 x=−2、0、3 都顯示原式和整理式相同。這項觀察最合理支持哪個結論？",
         "options": [
-          "7x＋2",
-          "7x＋12",
-          "12x＋2",
-          "7x²＋2"
+          "這些測值支持同值，但仍需用同類項定義與運算律說明一般化簡",
+          "只要兩個式子在一個數值相同，就能證明對所有數都相同",
+          "兩式只能在 x=−2、0、3 使用，其他值不能代入",
+          "代入檢查可以取代對係數、常數項與次方的分析"
         ],
         "answer": "A",
-        "feedback": "A 為 7x＋2；系統會以 x＝2 的原式與化簡式雙欄回算 16，並指出把 4x 與 7 合併會破壞變數項和常數項的意義。"
+        "feedback": "A 正確。多個測值能抓出算術或符號錯誤，但有限次代入不構成恆等式證明；一般化簡仍要依同類項及交換、結合律。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "把方法用到 2(x＋3)＋x：先寫出分配律後的中間式，再整理為最簡式。",
+        "options": [
+          "2x＋6＋x，整理為3x＋6",
+          "2x＋3＋x，整理為3x＋3",
+          "2x＋6＋x，整理為3x＋8",
+          "2x＋3x＋6，整理為5x＋6"
+        ],
+        "answer": "A",
+        "feedback": "A 正確。分配律讓2同乘括號內的x與3，得到2x＋6；再加外部x並合併同類項，得到3x＋6。"
       }
     ]
   },
   "lessonScope": "learning-content",
   "simulation": {
     "id": "sim-math-a-7-1",
-    "engine": "math-algebra-balance",
+    "engine": "math-expression-lab",
     "mode": "model",
     "model": "general",
-    "goal": "拖曳改變餐券張數並立即重算，讓情境、代數式、數值表與收入圖同步變化，再化簡並診斷錯誤模型。",
-    "mission": "園遊會攤位每張餐券售價 20 元，另收一次性設備費 60 元。拖曳 x 改變張數，畫面同步顯示餐券圖示、20x＋60、數值表與總收款，最後比較正確模型和錯誤模型。",
+    "goal": "改變同一測試值，比較原式與整理式的數值輸出，並以項的結構解釋同類項整理。",
+    "mission": "在 3x＋2＋5x−7 與 8x−5 間移動 x；先預測兩式是否相同，再用滑桿與固定測值表檢視證據。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/",
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://mathvideo.hle.com.tw/1A/3-1/",
-      "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E5%BC%95%E8%B5%B7%E5%8B%95%E6%A9%9F&l2=7%E4%B8%8A"
+      "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E5%BC%95%E8%B5%B7%E5%8B%95%E6%A9%9F&l2=7%E4%B8%8A",
+      "https://www.junyiacademy.org/new-video/3ohHLO2PpZA?parent-topic-id=k-m7a-c03-1",
+      "https://www.scribd.com/document/790615966/%E5%BA%B7%E8%BB%92%E7%89%88%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E5%85%AD%E5%8D%87%E4%B8%83%E5%85%88%E4%BF%AE%E8%AC%9B%E7%BE%A9-%E5%AD%B8%E7%94%A8",
+      "https://www.scribd.com/document/831294508/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E4%B8%83%E4%B8%8A%E8%AA%B2%E6%9C%AC"
     ],
     "learningDesign": {
-      "type": "representation-match",
-      "objective": "讓學習者拖曳變數並即時觀察情境圖、代數式、數值表與圖形表示同步更新，再以代回和單位判斷模型。",
-      "predictionPrompt": "拖曳 x 由 0 變成 1、3、6 前，先預測哪一項會固定存在、每次增加多少，以及總收款圖會如何上升。",
-      "evidencePrompt": "請提交兩個滑桿位置的餐券數、代入算式、總收款與圖表讀值，並指出一個錯誤模型為何在 x＝0 或單位檢查時失敗。",
+      "type": "algebra-expression-investigation",
+      "objective": "透過輸入值檢驗同類項整理的等價性，並把輸出差異追溯到係數、常數或符號分類錯誤。",
+      "predictionPrompt": "先預測 3x＋2＋5x−7 與 8x−5 在 x=−2 的輸出是否相同，並指出你判為同類的項及理由。",
+      "evidencePrompt": "操作滑桿並閱讀 x=−2、0、3 的文字表，比較兩式輸出；解釋測值能查出何種錯誤，以及為何一般化簡仍須依運算律論證。",
       "steps": [
         {
           "id": "step-1",
-          "action": "拖曳 x 並同步觀察餐券圖示、式子與數值表，分開變動收入和固定費",
-          "equation": "y=20x+60",
-          "reason": "x 代表張數，20x 隨滑桿改變；60 在 x=0 時仍存在，三種表示應同步反映同一模型。",
-          "feedback": "若圖示增加但總額沒有增加 20，檢查是否把 20 寫成加法；若 x=0 顯示 0，檢查是否漏掉固定費。"
+          "action": "依字母部分及次方分類，再預測可合併的項",
+          "equation": "3x＋2＋5x−7 → 8x−5",
+          "reason": "3x與5x同有一次的x；2與−7皆為常數。變數項不可和常數項合併。",
+          "feedback": "若把3x和2合併，回看各項的字母部分與所代表量，不以係數外觀猜測。"
         },
         {
           "id": "step-2",
-          "action": "把滑桿停在 x=3，讀取代入算式、表格與總收款圖的同一筆資料",
-          "equation": "y=20(3)+60=120",
-          "reason": "代入不是改寫情境，而是指定一個可檢驗的數量；括號保留替換位置，數值和圖形高度應一致。",
-          "feedback": "若得到 180，系統分流到『固定費被乘上 x』；若得到 83，分流到『把 20、3、60 直接相加』，回到每項單位重組。"
+          "action": "以 x=−2 代入兩種表示，逐項保留括號並核對",
+          "equation": "原式 3(−2)+2+5(−2)−7=−21；整理式 8(−2)−5=−21",
+          "reason": "括號明確表示負數取代整個變數；兩條運算路徑都得−21。",
+          "feedback": "若把−2看成2，先用括號圈出替代值，依序完成乘法後再做加減。"
         },
         {
           "id": "step-3",
-          "action": "拖曳同類項標籤分組，觀察原式與化簡式在多個 x 值的輸出是否重合",
-          "equation": "4x+7+3x-5=7x+2",
-          "reason": "同類項有相同字母和次方，合併後必須在每個測試值保持相同結果；這把抽象規則連到數值證據。",
-          "feedback": "把 4x 和 7 放一起會在 x=2 產生錯誤，系統標示『變數項與常數項不可合併』，要求重新分組並回看雙欄結果。"
+          "action": "改變滑桿值並用固定表格交叉檢驗",
+          "equation": "x=−2、0、3 時兩式依序同得 −21、−5、19",
+          "reason": "多個測值可抓出計算或符號錯誤，但有限測值不是對所有 x 的證明。",
+          "feedback": "若兩側不同，逐項檢查係數、常數與負號；若一致，仍需用同類項規則說明。"
+        },
+        {
+          "id": "step-4",
+          "action": "把方法遷移到含括號的新式，先展開後整理並驗算",
+          "equation": "2(x+3)+x → 2x+6+x → 3x+6；x=−1 時兩式皆為3",
+          "reason": "分配律提供展開依據，同類項規則支持後續整理；代值則檢查過程是否有算錯。",
+          "feedback": "若漏掉 2×3，將係數分別乘到括號中的兩項，再合併外部 x。"
         }
       ]
     }

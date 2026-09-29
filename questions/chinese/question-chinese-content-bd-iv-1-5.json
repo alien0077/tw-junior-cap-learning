@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bd-iv-1-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀或表達涉及「Bd-Ⅳ-1：事實理論為論據達說服建構批判」的材料時，針對檢查結論，哪一項最恰當？",
+  "prompt": "『校園餐具借用後垃圾量下降，所以制度必然適合所有學校。』哪項批判最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "根據題目提供的條件與「Bd-Ⅳ-1：事實理論為論據達說服建構批判」的核心概念，列出理由後再檢查結論。"
+      "text": "垃圾量下降可支持一項效果，但不能單獨證明適合所有學校，還要比較成本與條件"
     },
     {
       "id": "B",
-      "text": "只看熟悉的關鍵字或答案位置，不閱讀題目條件。"
+      "text": "只要下降就能推論所有學校"
     },
     {
       "id": "C",
-      "text": "把與本單元無關的資訊當成唯一依據，跳過比較。"
+      "text": "制度必然完全無效"
     },
     {
       "id": "D",
-      "text": "不檢查限制、證據或資料，就直接依直覺作答。"
+      "text": "學校不需要考慮垃圾量"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "本題聚焦「Bd-Ⅳ-1：事實理論為論據達說服建構批判」；正解要求使用題目條件、相關證據與可檢查的推理，其餘選項都省略了必要的判斷步驟。"
+    "explanation": "有限觀察可以支持可能效果，卻不足以推到所有學校；不同資源、規模與流程需另行比較。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
-    "sourceLocator": "114學年度下學期第一次段考三年級各科試題公告；僅作公開題型與能力方向研究，本題為單元化獨立改編，非原題重製。",
-    "authoringNote": "Duplicate/template replacement; requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究事實、理論、價值主張、論據、外推與反例。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫論證與批判題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bd-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bd-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "論點、事實與論據判讀",
+      "observedPattern": "公立學校國文評量要求區分事實、理論與價值主張，檢查論據與結論的連結、範圍和反例；本題使用全新校園提案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說服結構、證據與推論",
+      "observedPattern": "公立學校國文評量要求區分事實、理論與價值主張，檢查論據與結論的連結、範圍和反例；本題使用全新校園提案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把觀察效果、政策適用範圍和必要條件分開檢查。",
+  "solutionSteps": [
+    "保留垃圾量下降的局部證據。",
+    "指出所有學校是更大的外推範圍。",
+    "列出成本與執行條件等未查因素。",
+    "A 既承認證據也限制結論。",
+    "提出不同規模學校的試辦比較。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

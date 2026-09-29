@@ -2,41 +2,76 @@
   "id": "question-social-content-civ-bl-iv-4-6",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2025年1月7日校園公民論壇的資料中，甲地年雨量約 1140 mm 且位於迎風坡，乙地約 580 mm 且位於背風坡。研究「公 Bl-Ⅳ-4：價格影響資源分配」時，哪項判讀較合理？",
+  "prompt": "政府補助偏鄉交通票價，想降低居民的通勤負擔。評估政策時不能只看平均票價，還要看？",
   "options": [
     {
       "id": "A",
-      "text": "在「公 Bl-Ⅳ-4：價格影響資源分配」的資料中，地形與盛行風向可能共同造成兩地降雨差異"
+      "text": "補助是否增加實際使用、改善可近性、由誰受益、財源負擔與是否造成其他資源排擠"
     },
     {
       "id": "B",
-      "text": "雨量差異必然只由緯度造成"
+      "text": "只要票價下降，就表示所有交通問題都已解決"
     },
     {
       "id": "C",
-      "text": "背風坡一定比迎風坡多雨"
+      "text": "補助一定使所有人使用量相同增加，不必看路線與班次"
     },
     {
       "id": "D",
-      "text": "單日雨量即可代表全年氣候"
+      "text": "政策只影響乘客，不會影響業者供給或政府預算"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-civ-bl-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "迎風坡抬升氣流可能增加降雨，背風坡可能較乾；仍須結合長期資料判斷。 本題對應 KG「公 Bl-Ⅳ-4：價格影響資源分配」。"
+    "explanation": "補助改變價格與誘因，但政策評估要同時查使用、供給、財源、分配與替代效果。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf",
+    "sourceLocator": "國立卓蘭高中附設國中部公開社會課程計畫；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方課綱、單元 KG、三個公立學校公開來源的題型方向，獨立改寫價格訊號、供需反應、購買能力、價格管制、補助、數量資料、配給、外部影響與公平界線；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-civ-bl-iv-4"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-civ-bl-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "生活市場與公共規範",
+      "observedPattern": "公立學校社會科公開試題以生活價格、供需、公共政策與資料表格考查資源分配推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "供需資料與分配判讀",
+      "observedPattern": "公立學校社會科公開試題以生活價格、供需、公共政策與資料表格考查資源分配推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先讀價格與數量資料，再分別分析需求、供給、購買能力與制度規則，最後檢查資源流向、外部影響與不同群體的公平結果。",
+  "solutionSteps": [
+    "讀題定位：圈出「補助效果」以及價格、數量、需求者、供給者、收入、規則與受影響者。",
+    "拆分機制：分開價格訊號、誘因、購買能力、供給反應與公平問題；本題核心是「補助改變價格與誘因，但政策評估要同時查使用、供給、財源、分配與替代效果。」",
+    "核對正解：選項 A「補助是否增加實際使用、改善可近性、由誰受益、財源負擔與是否造成其他資源排擠」能用題幹資料說明資源如何流動。",
+    "排除誘答：找出把價格當成唯一因素、把買不起當成沒有需求、把低價等同公平或把關聯直接當成唯一因果的說法。",
+    "結論回查：確認答案有標示資料限制、不同群體影響、公共介入與外部成本，不過度推論。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

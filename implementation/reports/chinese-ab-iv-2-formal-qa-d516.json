@@ -1,0 +1,41 @@
+{
+  "decision": "verified",
+  "asOf": "2026-09-29",
+  "unit": "cur-chinese-content-ab-iv-2",
+  "lesson": "lesson-chinese-content-ab-iv-2",
+  "scope": "unit-specific spec correction and automated engineering/browser QA only; no lesson/question content review or publisher evidence promotion",
+  "sourceMapping": {
+    "officialCurriculum": "Ab-IV-2 locator recorded in unit spec; knowledgeGraphIds agree with lesson knowledgeIds",
+    "publisherEvidenceLedger": "Nani, Kang Hsuan, Hanlin slots individually verified in current publisher-evidence-ledger.json; source descriptions are school course plans/public teaching data, not a claim of full textbook chapter access",
+    "unitQuestions": 10,
+    "questionKnowledgeMapping": "all 10 sampled unit questions map to the lesson KG IDs"
+  },
+  "specCorrection": "Replaced inaccurate generic TextEvidenceBlock/sliders/prediction/synchronized chart contract with the actual three-step GuidedChoice lesson: shape-neighbor characters, notice/obligation tone, and research-word collocation. Clarified actual generic wrong-answer retry message and that transfer/short response is not auto-scored by the current interaction.",
+  "browserCommand": "npm run test:chinese:ab-iv-2:browser",
+  "browserRunner": "Python Playwright using system Chrome in authorized local environment",
+  "browserResult": {
+    "status": "passed",
+    "visibleSections": 9,
+    "authoredTeachingSections": 6,
+    "guidedChoiceSteps": 3,
+    "blockedSimulationScript": true,
+    "blockedExternalRequests": 1,
+    "unitQuestionsMapped": 10,
+    "kgAndPublisherMapping": true,
+    "offlineFallbackUsable": true,
+    "keyboardWrongRetryCorrect": true,
+    "axeViolations": 0,
+    "axeIncompleteAcrossViewports": 1,
+    "minimumOptionHeightPx": 44,
+    "responsiveWidths": [320, 375, 768],
+    "pageErrors": []
+  },
+  "statusBoundary": {
+    "designStatus": "reviewed",
+    "implementationStatus": "implemented",
+    "qaStatus": "verified",
+    "lessonReviewStatus": "unchanged",
+    "publisherEvidenceStatus": "unchanged"
+  },
+  "remaining": "Repository-wide coverage and test suite remain to be rerun; overall guide is incomplete."
+}

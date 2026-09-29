@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-7-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "半徑 5 的圓中，一條弦到圓心的距離為 3，弦長為何？",
+  "prompt": "半徑 5 公分的圓中，一條弦到圓心的距離為 3 公分。這條弦長為多少？",
   "options": [
     {
       "id": "A",
-      "text": "6"
+      "text": "6 公分"
     },
     {
       "id": "B",
-      "text": "8"
+      "text": "8 公分"
     },
     {
       "id": "C",
-      "text": "10"
+      "text": "10 公分"
     },
     {
       "id": "D",
-      "text": "16"
+      "text": "16 公分"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "半弦長=√(5²−3²)=4，所以弦長=8。"
+    "explanation": "圓心到弦的垂線平分弦，半弦為 √(5²－3²)＝4 公分，因此弦長為 8 公分，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 點、直線與圓的關係 題型與官方課綱 KG kg-math-content-s-9-7",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供點、直線與圓的關係能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的圓幾何能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-7"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "點與圓位置、直線與圓交點、切線、弦、弦心距與切線長",
+      "observedPattern": "公立學校公開數學試題常用圓心距離與半徑比較點或直線位置，並以切線、弦及直角三角形計算長度；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "點與圓位置、直線與圓交點、切線、弦、弦心距與切線長",
+      "observedPattern": "公立學校公開數學試題常用圓心距離與半徑比較點或直線位置，並以切線、弦及直角三角形計算長度；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "點與圓位置、直線與圓交點、切線、弦、弦心距與切線長",
+      "observedPattern": "公立學校公開數學試題常用圓心距離與半徑比較點或直線位置，並以切線、弦及直角三角形計算長度；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先求半弦，再乘二；不可把直角三角形中的半弦直接當整條弦。",
+  "solutionSteps": [
+    "半徑作為直角三角形斜邊 5。",
+    "圓心到弦距離為一直角邊 3。",
+    "求半弦＝√(25－9)＝4。",
+    "整條弦＝2×4＝8 公分。",
+    "選 B。"
+  ]
 }

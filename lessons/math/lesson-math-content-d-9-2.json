@@ -13,15 +13,19 @@
     "sections": [
       {
         "heading": "本課要解決的問題",
-        "body": "面對一個遊戲、抽樣或觀察紀錄時，能說出什麼算一次隨機試驗、每次可能出現哪些結果、自己關心的是哪一個事件；也能把『這次結果』與『長期可能程度』分開敘述。"
+        "body": "先把話說完整：一次投擲瓶蓋、從袋中抽一枚棋子、或連續做兩次選擇，各自才算一個事先約定好的隨機試驗。試驗開始前要列出可能結果；試驗後實際出現的那一項叫結果；把一個或幾個結果圈成要追蹤的目標，才叫事件。若把『這次抽到白棋』和『抽到白棋的可能程度』混為一談，或沒有說明一次試驗包含幾個步驟，後面的次數和判斷就會失去共同基準。"
       },
       {
         "heading": "判讀資料的基本界線",
-        "body": "用事件發生次數除以試驗總次數得到相對頻率。它是資料給出的估計值，會隨試驗增加而變動；一次十次的紀錄可提出疑問，卻不足以單獨證明器材公平或不公平。"
+        "body": "事件發生次數除以試驗總次數，得到這批資料的相對頻率。例如自編的抽棋實驗中，30 次有 7 次白棋，白棋相對頻率是 7/30；這是在回報已觀察的 30 次，不是替下一次抽取下命令。更多、條件一致的重複紀錄通常能讓估計較有參考性，但小樣本的偏高或偏低不能單獨證明器材公平或作弊。還要分清「可能結果有幾種」與「每種結果機會一樣大」：若袋中白棋、黑棋數量不同，顏色兩種不代表兩色機會各半；結果分類的個數不能直接代替機率。"
       },
       {
-        "heading": "本課與古典機率的分工",
-        "body": "D-9-2 聚焦隨機現象、事件與相對頻率的意義；若要在所有基本結果等可能時，以有利結果比上全部結果求精確值，須另外檢查等可能條件，這是 D-9-3 古典機率要進一步處理的判準。"
+        "heading": "兩次選擇，為何要把順序畫出來？",
+        "body": "校內創客攤位要連續抽兩張有放回的圖卡，每次都可能抽到星形 S 或圓形 C。第一層先分出第一次 S、第一次 C；從每一枝再各畫第二層 S、C。沿著樹枝走到末端，完整結果是 SS、SC、CS、CC，共四條路徑。SC 和 CS 雖然都含一張星形、一張圓形，卻代表先後相反的兩次結果，因此若題目問「第一次是星形」只能圈 SS、SC，不能只把圖卡種類列出來。樹狀圖的工作是按步驟列全可能性，不是裝飾，也不能漏枝或把不同順序的路徑合併。"
+      },
+      {
+        "heading": "樹枝數量不會自動告訴你公平不公平",
+        "body": "沿用剛才的兩次抽卡情境，若每次真的都從各一張 S、C 的袋中放回再抽，才有根據說四條完整路徑機會相等；若抽取裝置偏斜、圖卡數量不同，或抽後沒有放回，下一層分枝所代表的機會就可能改變。先問清楚規則與每一步的條件，再用樹狀圖列結果、用重複試驗看資料。D-9-2 要你理解機率如何描述不確定性，並以最多兩層樹狀圖整理可能結果；「在對稱／等可能條件下用有利結果數比全部結果數求古典機率」是 D-9-3 的進一步判斷，不能因圖上四條枝看起來整齊，就跳過等可能的證據。"
       }
     ]
   },
@@ -29,6 +33,7 @@
     "結果是一次試驗所出現的情形；事件是我們指定要關注的一類結果。",
     "相對頻率＝事件出現次數÷試驗總次數，描述的是已蒐集資料而非保證。",
     "相對頻率接近某值是長期趨勢的線索，不能推出下一次必定或不可能發生。",
+    "兩層樹狀圖用每一步的枝條列出完整、有順序的路徑；路徑列全不等於各路徑等可能。",
     "判斷公平性要比較足量、可重做的紀錄，並保留器材與操作條件的限制。"
   ],
   "studyReferences": [
@@ -48,8 +53,8 @@
       "publisher": "nani",
       "edition": "南一版國中數學校方課程計畫公開對照（2026）",
       "sourceType": "public-web",
-      "sourceLocator": "textbook-mapping/math/nani-schoolplan-2026.json；D-9-2 認識機率，穩定對應 kg-math-content-d-9-2。",
-      "reviewedAt": "2026-08-29",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；D-9-2 認識機率；桃園市永豐高中國中部數學領域課程計畫；南一版國中數學9上／9下教材段落與 S/F/D 課綱代碼",
+      "reviewedAt": "2026-09-07",
       "findings": {
         "concepts": [
           "公開課程計畫把認識機率獨立標為 D-9-2，並在後續另列古典機率。",
@@ -74,8 +79,8 @@
       "publisher": "kanghsuan",
       "edition": "康軒國中數學公開章節對照資料",
       "sourceType": "public-web",
-      "sourceLocator": "textbook-mapping/math/kanghsuan-chapters.json；九年級章節 2-2 機率，primary 對應 kg-math-content-d-9-2。",
-      "reviewedAt": "2026-08-29",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；2-2 機率；康軒國中影音高手官方 XML；冊次、章節代碼與章節名稱欄位",
+      "reviewedAt": "2026-09-07",
       "findings": {
         "concepts": [
           "公開章節資料以『機率』對應 D-9-2，確認本課應聚焦不確定事件的可能程度。",
@@ -100,8 +105,8 @@
       "publisher": "hanlin",
       "edition": "翰林國中數學解題影音網公開章節索引（2026）",
       "sourceType": "local-download",
-      "sourceLocator": "/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html 與 textbook-mapping/math/hanlin-official-2026.json；2-2 機率對應 kg-math-content-d-9-2。",
-      "reviewedAt": "2026-08-29",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；2-2 機率；翰林國中數學解題影音網 1A–3B 六冊公開章節與課次索引",
+      "reviewedAt": "2026-09-07",
       "findings": {
         "concepts": [
           "公開影音網對照把 2-2 標為機率，並以高信度映射至 D-9-2 的穩定 KG。",
@@ -142,54 +147,54 @@
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學解題影音網公開章節索引（2026）",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "2-2：機率／kg-math-content-d-9-2",
-      "sourceUrl": "https://qa-mathvideo.hle.com.tw/",
+      "chapterLocator": "高雄市公立校方翰林版第六冊數學課程計畫；F-9-1 二次函數與 D-9-1／D-9-2／D-9-3 統計與機率學習內容及評量定位；D-9-2：認識機率 的概念、表徵與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www1.fsm.kh.edu.tw/plan/special_112/112%E8%B3%87%E6%BA%90%E7%8F%AD%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開影音網索引與專案內對照資料確認 2-2 機率的 KG 定位；本課以自編硬幣與轉盤實驗建立資料證據，不引用或改寫影音內容。",
-      "copyrightBoundary": "只研究公開索引與章節定位；不複製翰林影音、課文、圖片、例題、練習或解答，所有教學敘事與數據均重新創作。"
-    },
-    {
-      "publisher": "nani",
-      "edition": "南一版國中數學校方課程計畫公開對照（2026）",
-      "subject": "math",
-      "chapterLocator": "D-9-2：認識機率／kg-math-content-d-9-2",
-      "sourceUrl": "https://www.nani.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-08-29",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開課程計畫將認識機率與後續古典機率分列；本課因此先處理隨機試驗、事件與相對頻率，不混入等可能計數規則。",
-      "copyrightBoundary": "只研究公開課程計畫中的單元定位與對照；本課文字、紀錄表、轉盤情境、提問、選項與回饋均為原創，不複製南一教材、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「D-9-2：認識機率」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中數學公開章節對照資料",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "九年級 2-2：機率／kg-math-content-d-9-2",
-      "sourceUrl": "https://www.knsh.com.tw/",
+      "chapterLocator": "淡水國中 114 學年度九年級第二學期康軒版數學課程計畫；D-9-2／D-9-3 機率、樹狀圖與古典機率情境；D-9-2：認識機率 的概念、表徵與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=100&file=WVhSMFlXTm9MelkzTDNCMFlWOHhNamd6T1Y4MU56WXlNRFl3WHpjNE1USXpMbkJrWmc9PQ%3D%3D&fname=WSGGRPQK20QO41KKLOLK54TXXSMO25JGKLB0DCNKCCQLOO40QKTSST54WSLKUSSSROPOIHKK2004GDLOQONKTSMOOPB0FHMPQPMPNOTSUWZWWXVWFH10YWFCSSWUX25HCA0UWIGVWKO40XSUSB040MPTXGDTWA0ZWUSOPTWFGTS45QKNOKK21HHDGB0JC24KK14WTIGYSEG14WSMLID30B514YWRKA434DCDGA0WWQOPP1000ZSIGMOIGDGJDLO",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開章節對照確認『機率』與本 KG 的連結；本課改以累積資料的判讀活動呈現，避免把章節名稱誤作可複製的教材內容。",
-      "copyrightBoundary": "僅使用公開章節名稱與 KG 對照資訊；不下載、重製或改編康軒受著作權保護的課文、圖像、習作、試題或解答。"
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「D-9-2：認識機率」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "卓蘭高中附設國中／公立校方南一版九年級數學課程計畫；D-9-1 統計數據分布及 F-9-1 二次函數章節定位；D-9-2：認識機率 的概念、表徵與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/378739209.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-20",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「D-9-2：認識機率」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -291,6 +296,17 @@
         ],
         "answer": "A",
         "feedback": "較多紀錄使判讀較穩定，但公平性的結論仍依賴試驗條件可重做且紀錄可信。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "四個等面積轉盤區域中只有一區是紅色；200 次實驗出現紅色 48 次，哪個比較最嚴謹？",
+        "options": [
+          "理論機率為 1/4，實驗相對頻率為 48/200＝0.24；兩者接近但不能宣稱每 4 次必有 1 次紅色",
+          "因為實驗是 0.24，所以理論機率已改成 0.24 且下一次一定是藍色",
+          "理論機率為 1/4，所以 200 次一定要剛好出現 50 次紅色，48 次代表試驗無效"
+        ],
+        "answer": "A",
+        "feedback": "A 分開說明等面積產生的理論值與本批資料的相對頻率；隨機試驗可有波動，接近不等於逐次固定。"
       }
     ]
   },
@@ -334,6 +350,13 @@
           "equation": "試驗次數增加時，相對頻率通常較穩定於 1/2 附近",
           "reason": "隨機結果仍會波動，穩定趨勢不等於每次都剛好一半。",
           "feedback": "請把『接近』與『等於』分開說，避免過度解讀短期結果。"
+        },
+        {
+          "id": "step-4",
+          "action": "把等面積轉盤的理論機率與 200 次實驗相對頻率並列，寫出有界線的比較結論",
+          "equation": "P(紅)=1/4；相對頻率=48/200=0.24；差異=0.01",
+          "reason": "理論機率來自模型的等可能條件，實驗頻率來自這一批結果；兩者可比較趨勢，但不能把隨機波動改寫成必然順序。",
+          "feedback": "若把 48 次改成必須 50 次，請區分理論期望與實際觀察；若說下一次必藍，請回看獨立試驗的不確定性。"
         }
       ]
     }

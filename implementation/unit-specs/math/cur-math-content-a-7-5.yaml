@@ -1,0 +1,148 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-7-5
+  knowledgeGraphIds:
+  - kg-math-content-a-7-5
+  title: A-7-5：二元一次聯立方程式的解法與應用
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  fusedScope:
+    officialCurriculum: A-7-5：二元一次聯立方程式的解法與應用
+    curriculumIntent: A-7-5：二元一次聯立方程式的解法與應用
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依官方課綱與KG限定範圍，將已讀康軒／翰林版本標示第三方分享中的教學支架重組為本課原創正文；南一僅有類南一版索引且正文未讀。不得稱三版本完成融合；三家publisher slots維持pending，內容審查完成前lesson維持draft。
+    currentEvidenceStatus: curriculum-and-kg-grounded; two-version-labeled-third-party-material-read; nani-publisher-body-unread; original-fusion-draft; rights-and-authenticity-unverified; publisher-evidence-pending
+  learningGoals:
+  - 從票券張數總計 35、加權記帳點數 50 建立 x+y=35 與 2x+y=50，定義 x、y 及單位。
+  - 依係數選擇消去或代入，示範整條等式同步運算，求得 (x,y)=(15,20)。
+  - 將共同解代回兩個原式，並回到票券情境確認非負整數、變數順序與完整答案。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 消去法可利用相同係數相減，或先將係數調成相反數；加減時左右兩側須整行同步運算。
+  - 代入法先由一式表示一個未知數，再代入另一式；每步等價變形都應保留括號與負號。
+  - 求得第一個未知數後須回代求第二個，再將有序數對代回兩式；方案選擇以運算量和錯誤風險為據。
+  misconceptions:
+  - 消去時只把兩式左側相減，忘記右側常數也要做相同運算。
+  - 把兩式相加或相減後只解出 x，就把單一未知數的中間結果當成完整有序數對。
+  - 得到 x、y 後交換位置或只驗一條式，因而未檢查共同解及情境件數限制。
+  contentFlow:
+  - 'hook: 票券工作單記錄普通票 x 張、學生票 y 張共 35 張，另有加權點數 2x+y=50；預測先看哪個係數特徵。'
+  - 'activate-prerequisite: 以等式兩側整行操作小題複習一次方程式解法，並先檢查有序數對代入。'
+  - 'predict: 學生預測相減或代入何者較省步驟，並提交 x、y 的預估值，解答先隱藏。'
+  - 'manipulate: 將 x+y=35 從 2x+y=50 整行相減，展示左右兩側同時運算得到 x=15；再回代求 y。'
+  - 'observe: 顯示每一步的兩條原式、運算對齊、消去項及中間結果，避免只呈現最終答案。'
+  - 'explain: 學生說明消去 y 的係數為何可相減、兩式右側如何同步相減，以及為何還要回代求 y。'
+  - 'formalize: 對照消去法與代入法的適用線索，要求每行維持等價並標示有序數對意義。'
+  - 'guided-practice: 以貼紙包 x 大包、y 小包的總包數與總點數練習選法、完整求解和雙式驗算。'
+  - 'transfer: 以兩種物資包總數 40、總點數 100 建立 x+y=40、3x+2y=100，決定可消去何項後求解。'
+  - 'exit-ticket: 找出把 2x+y=50 與 x+y=35 相減後仍寫成 2x=50 的漏算，補齊右側運算並回代。'
+  visualizations:
+  - 兩式並排運算帶：係數、變數項與常數欄對齊，整列標示「第一式×−1，再與第二式相加」或「整式相減」。
+  - 消去決策視圖：比較兩式係數相同、相反或可倍乘三種結構，顯示何者能最少引入分數並保留等價性。
+  - 有序數對驗算卡：(15,20) 依序代入 x+y=35 及 2x+y=50，顯示數量條件與點數條件各自成立。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-7-5-I01
+    component: AlgebraBalanceBlock
+    purpose: 讓學生對齊兩條方程式，選擇能消去一個未知數的整行運算，再回代並對兩式逐一驗算。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        regularTickets: 15
+        studentTickets: 20
+        ticketCountTotal: 35
+        weightedPoints: 50
+    studentActions:
+    - 先選擇消去 y 或代入，並預測哪一步最少；提交策略後才揭露運算帶。
+    - 以鍵盤逐列選取兩式，將一式乘以 −1 後與另一式相加；每個乘數或加減都同步作用於等式整列。
+    - 求出 x 後選一條原式回代求 y，再把有序數對送入兩個檢核欄。
+    - 以短句說明選法依據、消去項以及兩條原式如何支持最終答案。
+    visualRules:
+    - 兩式做整行運算時，左右常數與每個變數項同步改寫；禁止只改左式。
+    - 先保留學生方法選擇和係數觀察，再顯示示範步驟；切換消去／代入不清空作答理由。
+    - (15,20) 與 (20,15) 必須依 x=普通票、y=學生票的定義分別檢查，不用顏色代替變數名稱。
+    - 相減後的 x=15 是中間結果，介面不得在 y 求出及雙式驗算前標成完成。
+    - 窄螢幕改為逐行等式閱讀，保持每行左右項和變形操作可見。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-7-5-I01
+      trigger: 把兩式左側相減得 x，右側仍抄成 50；或求出 x=15 後停止作答。
+      prompt: 兩條完整等式相減時，右側 50 和 35 做了什麼？得到 x 後，題目還要求哪個量？
+      expectedEvidence: 50−35=15，且 x=15 後需回代 15+y=35 得 y=20；完整解為 (15,20)。
+    feedback:
+      correct: 請學生解釋係數結構為何適合相減，並以另一組數據自行選擇消去或代入。
+      incorrect: 第一提示將兩式右側框起來，追問它們是否也要相減；若已得到 x，提示回到變數定義及另一條原式求 y。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "借用等式兩側操作能即時呈現等量保持的模型形式；本課原創兩式對齊、消去選擇、票券資料與雙式驗算。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "參考先寫預測、逐步操作、核對證據的教學節奏；係數判斷、整行相加及錯誤路徑皆由本課獨立撰寫。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "控制項需有可辨識名稱、鍵盤操作與結果宣告；每個變形明示整列等式，不以顏色單獨標記消去項。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以有序標題與主內容區安排選法、運算帶、回代驗算和分層回饋；鍵盤可逐步到達，不要求拖曳。"
+  capTransfer:
+    questionType: 物資包資料建模、消去策略與共同解驗算
+    stemConstraint: 兩種物資包共 40 包，甲包 3 點、乙包 2 點，總點數 100。令 x、y 為兩類包數，解聯立式並說明哪個整行運算可先消去 y。
+    requiredResponse: 列 x+y=40、3x+2y=100；將第一式乘以 −2 後與第二式相加，求 x=20，再回代得 y=20，最後代入兩式驗算。
+    scoring: 兩條式及消去運算正確 1、完整求出兩未知數 1、雙式驗算和非負整數語境解釋 1
+  exitTicket:
+    prompt: 把 2x+y=50 與 x+y=35 相減，草稿寫成 2x=50。指出少做了什麼，完成求解並說明為何 x=15 還不是完整答案。
+    successCriteria:
+    - 對整條等式相減，得到 x=15。
+    - 回代求出 y=20，並依序寫成 (15,20)。
+    - 驗算 15+20=35 且 2×15+20=50。
+  expressionExtension:
+    applicable: true
+    task: 畫出自己選擇消去法或代入法的判斷流程，配一組自創聯立方程式，說明整行等價運算與雙式驗算。
+    constraint: 先由學生完成；系統只回饋策略依據、等式兩側同步與解的完整性，不生成整份答案。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 未選擇方法前不顯示結果；選消去 y 後需以 −1 乘第一式並整行相加，逐列得到 x=15。
+  - 求出 x 後須回代得 y=20；只有 (15,20) 同時通過兩條原式才顯示完成。
+  - 忘記右側常數運算時命中「整行」迷思提示；把 x 當完整答案時提示回代，不直接揭露 y。
+  - 320px、375px、768px 與鍵盤均可查看完整兩式、操作列、回饋及代回結果；無動畫亦有文字運算帶。
+  - 物資包 transfer 用第一式乘 −2 後相加可得 x=20，再求 y=20；兩式代回分別為 40 與 100。
+  - 外部資料或消去動畫失效時，文字 fallback 保留兩條原方程、整行運算對齊與回代表，仍可完成方法選擇、求解、雙式驗算及物資情境檢查。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-7-5
+    role: official-curriculum-source-of-truth

@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ba-iv-1-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "插敘內容若與主線人物完全無關，最可能造成什麼問題？",
+  "prompt": "一篇文章主線是『修復校鐘』；作者在修復進行到一半時，插入祖父年輕時打造鐘面的往事，之後回到修復現場。若要判斷插入段落功能，最應先問？",
   "options": [
     {
       "id": "A",
-      "text": "打斷情節並降低篇章連貫性"
+      "text": "往事如何補充校鐘與人物的關係"
     },
     {
       "id": "B",
-      "text": "使主題更加集中"
+      "text": "往事中每個人物的身高"
     },
     {
       "id": "C",
-      "text": "自動形成完整結論"
+      "text": "文章共有多少個逗號"
     },
     {
       "id": "D",
-      "text": "增加證據可信度"
+      "text": "校鐘最後一定能否修好"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ba-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "插敘應與主線有關，無關內容會打斷閱讀。"
+    "explanation": "插入祖父打造鐘面的往事，最直接是補充校鐘的歷史與人物情感關係；不能用無關細節或未揭示結果判斷。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "敘事時間與篇章結構；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究順敘、倒敘、插敘、補敘的判讀線索與篇章功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫敘事順序題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文時間順序與篇章理解",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章結構與敘事線索判讀",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把插入段落連回主線物件、人物與情感，找它填補的理解缺口。",
+  "solutionSteps": [
+    "先標記修復校鐘是現在進行的主線。",
+    "再找祖父往事與校鐘來源或情感的連結。",
+    "A 對應插入段落的篇章功能。",
+    "B、C、D 沒有說明這段往事如何服務主線。",
+    "用一句話完成『沒有這段，讀者不會知道……』，檢查是否得到鐘與祖父的關係。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

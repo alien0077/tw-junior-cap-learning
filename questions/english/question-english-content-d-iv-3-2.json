@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-3-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-3／釐清因果」task, what is the best way to prepare question 2?",
+  "prompt": "A heavy rain blocked the road to a farm, so the delivery truck arrived late. What caused the delay?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-3／釐清因果."
+      "text": "The truck arriving late"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-3／釐清因果."
+      "text": "The farm receiving the vegetables"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-3／釐清因果."
+      "text": "The driver reading a notice"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-3／釐清因果."
+      "text": "The heavy rain blocking the road"
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-3／釐清因果, question 2."
+    "value": "D",
+    "explanation": "大雨封路是 so 前的原因，卡車晚到是 so 後的結果，因此答案 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675415417654MTSxFV3o.pdf",
+    "sourceLocator": "PDF第2頁第26題：根據上下文選擇「說明遲到原因」的適切動詞，並以塞車作可能原因線索。",
+    "authoringNote": "參照公立學校公開英文段考所呈現的時間順序、原因辨識、篇章線索或因果推論能力，題幹、情境、數據、選項、答案與解析均獨立撰寫；未複製試卷。課程版本研究與全案內容審查尚未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675415417654MTSxFV3o.pdf",
+      "title": "臺北市立內湖國中111學年度第1學期七年級第2次段考英語科試題",
+      "year": "111",
+      "subject": "english",
+      "locator": "PDF第2頁第26題：根據上下文選擇「說明遲到原因」的適切動詞，並以塞車作可能原因線索。",
+      "observedPattern": "從because／why線索辨認原因與結果；本題事件、人物及因果關係另行編寫，未複製原文。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先分清問句中的 cause（原因）與結果，再沿著 so 尋找 so 前面的事件。",
+  "solutionSteps": [
+    "問句問 what caused the delay，要求找造成延誤的前因。",
+    "句中 so 表示結果連接詞；so 後是卡車晚到。",
+    "沿因果方向往前找，so 前寫的是大雨封路。",
+    "因此延誤原因是 heavy rain blocking the road，選 D。",
+    "檢查其餘選項：晚到是結果，收到蔬菜與讀通知都沒有造成封路。"
+  ]
 }

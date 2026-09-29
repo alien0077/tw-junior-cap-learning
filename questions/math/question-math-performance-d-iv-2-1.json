@@ -2,7 +2,7 @@
   "id": "question-math-performance-d-iv-2-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "公平硬幣連續投擲兩次，恰好出現一次正面的機率為何？",
+  "prompt": "公平硬幣連續投擲兩次，恰好一次出現反面的機率為何？",
   "options": [
     {
       "id": "A",
@@ -10,15 +10,15 @@
     },
     {
       "id": "B",
-      "text": "3/4"
-    },
-    {
-      "id": "C",
       "text": "1/3"
     },
     {
-      "id": "D",
+      "id": "C",
       "text": "1/2"
+    },
+    {
+      "id": "D",
+      "text": "3/4"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "四條等可能路徑 HH、HT、TH、TT 中，恰有一次正面的 HT、TH 共 2 條，所以機率為 2/4＝1/2。"
+    "value": "C",
+    "explanation": "樹狀圖的四條等可能路徑為正正、正反、反正、反反；恰好一次反面包含正反與反正，共 2 條，因此機率為 2/4=1/2，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考樹狀圖、兩階段試驗、條件機率、不放回抽取與補事件題型；另參考 114 年國中教育會考數學科；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "機率單元實質改寫；已依路徑或樣本空間重新計算答案與解析，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供樹狀圖、兩階段機率、補事件與條件路徑能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的機率樹狀圖方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-d-iv-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列完整有序路徑，再數符合『恰好一次』的路徑，避免把正反與反正合併成一條。",
+  "solutionSteps": [
+    "第一次與第二次各有正、反兩種分支。",
+    "列出正正、正反、反正、反反四條完整路徑。",
+    "圈出恰好一次反面的正反與反正。",
+    "計算有利路徑 2 除以總路徑 4，得 1/2。",
+    "所以選 C，並確認不是把『至少一次』誤當成『恰好一次』。"
+  ]
 }

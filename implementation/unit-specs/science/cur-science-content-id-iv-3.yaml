@@ -1,0 +1,146 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-science-content-id-iv-3
+  knowledgeGraphIds:
+  - kg-science-content-id-iv-3
+  title: Id-Ⅳ-3：地軸傾斜與四季形成
+  subject: science
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Id-Ⅳ-3：地軸傾斜與四季形成
+    curriculumIntent: Id-Ⅳ-3：地軸傾斜與四季形成
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 以可觀察證據說明「Id-Ⅳ-3：地軸傾斜與四季形成」的核心現象
+  - 控制變因並解讀模型或資料
+  - 用證據推理回答陌生情境題
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - Id-Ⅳ-3：地軸傾斜與四季形成
+  - 表徵／證據與結論的對應
+  - 錯誤答案所反映的概念差異
+  misconceptions:
+  - 把「Id-Ⅳ-3：地軸傾斜與四季形成」的相關變化誤認為因果，或忽略控制變因
+  - 把記憶答案當成理解證據
+  - 忽略題幹中的限制條件或單位
+  contentFlow:
+  - 'hook: 以單元真實問題引起預測'
+  - 'activate-prerequisite: 顯示先備檢核並允許補救'
+  - 'visualize: 用 evidence-lab 建立可觀察表徵'
+  - 'predict: 學生先提交預測且答案暫不揭露'
+  - 'manipulate: 改變一個變項或標記一段證據'
+  - 'observe: 同步更新圖、表、句構或因果鏈'
+  - 'explain: 學生用一句話說明觀察到的關係'
+  - 'formalize: 再顯示本單元正式語言與記法'
+  - 'transfer: 進入會考型新資料題'
+  - 'exit-ticket: 一題理由題加一個自我診斷'
+  visualizations:
+  - evidence-lab：以「Id-Ⅳ-3：地軸傾斜與四季形成」作為唯一主題，至少同步呈現兩種表徵
+  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  interactiveBlocks:
+  - id: CUR-SCIENCE-CONTENT-ID-IV-3-I01
+    component: EvidenceLabBlock
+    purpose: 讓學生操作並看見「Id-Ⅳ-3：地軸傾斜與四季形成」中最容易被背誦取代的關係
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        primary: 1
+        secondary: 1
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
+    - 標記支持結論的圖形、資料、詞語或事件
+    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    visualRules:
+    - 操作後所有相關表徵同步更新，不得只改單一數字
+    - 正解揭露前保留學生預測與操作紀錄
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-SCIENCE-CONTENT-ID-IV-3-I01
+      trigger: 把「Id-Ⅳ-3：地軸傾斜與四季形成」的相關變化誤認為因果，或忽略控制變因
+      prompt: 請指出哪一個證據支持你的判斷。
+      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+    feedback:
+      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
+      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「Id-Ⅳ-3：地軸傾斜與四季形成」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「Id-Ⅳ-3：地軸傾斜與四季形成」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「Id-Ⅳ-3：地軸傾斜與四季形成」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「Id-Ⅳ-3：地軸傾斜與四季形成」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「Id-Ⅳ-3：地軸傾斜與四季形成」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「Id-Ⅳ-3：地軸傾斜與四季形成」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入「Id-Ⅳ-3：地軸傾斜與四季形成」時不得先顯示正解；學生必須先提交對「Id-Ⅳ-3：地軸傾斜與四季形成」的預測，且預測會被保留供後續比較。
+  - 操作「evidence-lab：以「Id-Ⅳ-3：地軸傾斜與四季形成」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
+  - 學生觸發「把「Id-Ⅳ-3：地軸傾斜與四季形成」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Id-Ⅳ-3：地軸傾斜與四季形成」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
+  - 以新資料執行「Id-Ⅳ-3：地軸傾斜與四季形成」的 CAP transfer：換一個情境但保留「Id-Ⅳ-3：地軸傾斜與四季形成」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
+  - 外部資料失效時，EvidenceLabBlock 仍須以「Id-Ⅳ-3：地軸傾斜與四季形成」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 I、次主題 Id；官方代碼 Id-Ⅳ-3
+    role: official-curriculum-source-of-truth

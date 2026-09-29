@@ -2,41 +2,67 @@
   "id": "question-science-content-bc-iv-1-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年8月23日校園實驗室的觀察中，針對「Bc-Ⅳ-1：酵素催化代謝與影響因素」提出可檢驗的科學問題，若比較 4 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "以唾液澱粉酶研究溫度影響時，37°C 組比 5°C 組產生較多還原糖。下列結論何者最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時只改變施力大小，其餘條件一致，設置4組、每組取樣11份並各重複測量3次"
+      "text": "在這組條件與觀察時間內，37°C 的反應速率較快"
     },
     {
       "id": "B",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "37°C 組的酵素質量一定較多"
     },
     {
       "id": "C",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時只測量4組中的一組就直接下結論"
+      "text": "只要溫度更高，反應速率永遠更快"
     },
     {
       "id": "D",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "還原糖越多就代表酵素被消耗越多"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-bc-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Bc-Ⅳ-1：酵素催化代謝與影響因素」。"
+    "explanation": "相同材料與時間的比較中，產物形成量較多表示該段時間的平均反應速率較快；但不能推論高溫永遠更好，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的酵素、反應速率與實驗設計能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bc-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bc-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酵素、反應速率、溫度酸鹼度與實驗設計判讀",
+      "pattern": "取由實驗資料、控制變因與反應速率推論酵素作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗資料、控制變因與反應速率推論酵素作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "只從受控實驗的資料範圍下結論，避免把局部結果外推成永遠成立。",
+  "solutionSteps": [
+    "確認兩組只把溫度當主要自變因。",
+    "比較相同時間內還原糖的生成量。",
+    "37°C 組生成較多，代表平均速率較快。",
+    "資料沒有證明更高溫度一定持續增加速率。",
+    "所以在本實驗範圍內選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

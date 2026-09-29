@@ -2,41 +2,76 @@
   "id": "question-chinese-content-c-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "某項傳統工藝改用環保材料，但仍保留原有圖樣與製作儀式。判斷時最適合說它是什麼？",
+  "prompt": "要寫一段尊重差異又不武斷的回應，哪句最合適？",
   "options": [
     {
       "id": "A",
-      "text": "形式改變但文化意義仍可能延續"
+      "text": "這就是那個地方的人天生熱情，大家都一定同意"
     },
     {
       "id": "B",
-      "text": "只要材料改變就不再是傳統"
+      "text": "文本呈現這個社區以食物交換和問候維繫鄰里關係；至於是否所有居民都如此，仍需更多身分與情境材料"
     },
     {
       "id": "C",
-      "text": "儀式存在就代表完全沒有改變"
+      "text": "我覺得很特別，所以不用引用文字證據"
     },
     {
       "id": "D",
-      "text": "工藝與文化意義一定互相排斥"
+      "text": "陌生做法都只能用『傳統』兩字解釋"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-c"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "材料與形式可調整，但圖樣與儀式仍可能延續原有文化意義。"
+    "value": "B",
+    "explanation": "好的文化回應同時指出文本證據、提出有限解釋，並標示尚不能確定的範圍，避免天性化與神祕化。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.kusjh.kh.edu.tw/upload/files/111%E4%B8%8A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E5%9C%8B%E4%B8%AD%E4%BA%8C%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
-    "sourceLocator": "文化傳承與變遷判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編文化閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-c"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-c",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文化語境、閱讀理解與觀點判讀",
+      "observedPattern": "公立學校國文公開試題常以文本線索、人物觀點、情境推論與證據界線檢查文化和閱讀理解；本題改寫為地方生活與跨視角情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "敘事視角、語境與推論界線",
+      "observedPattern": "公立學校國文公開試題常以文本線索、人物觀點、情境推論與證據界線檢查文化和閱讀理解；本題改寫為地方生活與跨視角情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先從詞句和行動找文化線索，再標記說話者與四個座標；把直接證據、有限推論與未知部分分開，檢查是否把個案誤寫成群體標籤。",
+  "solutionSteps": [
+    "讀題定位：圈出「證據改寫」，找文本直接寫出的物件、語句、行動、人物身分與情境。",
+    "分開證據與推論：先寫可引用的文字，再檢查文化解釋是否超出時空、地域、身分與情境；本題核心是「好的文化回應同時指出文本證據、提出有限解釋，並標示尚不能確定的範圍，避免天性化與神祕化。」",
+    "核對正解：選項 A「文本呈現這個社區以食物交換和問候維繫鄰里關係；至於是否所有居民都如此，仍需更多身分與情境材料」保留文本可支持的範圍，沒有把單一角色擴大成群體規則。",
+    "排除誘答：留意『所有、一定、天生、神祕』等標籤化語句，也不要因視角不同就直接否定其中一方。",
+    "回到文化證據地圖：標出已知、合理推測與未知部分，再檢查是否還有未呈現的聲音或可能的時間變化。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

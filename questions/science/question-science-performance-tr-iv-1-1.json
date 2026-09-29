@@ -2,41 +2,85 @@
   "id": "question-science-performance-tr-iv-1-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月10日河川觀測站的觀察中，針對「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」提出可檢驗的科學問題，若比較 5 組、每組取樣 9 份資料，哪一項設計最適當？",
+  "prompt": "鞋底拉力不同時，第一步應如何連結知識？",
   "options": [
     {
       "id": "A",
-      "text": "研究「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "先描述拉力差，再檢查重量、角度、表面與摩擦概念"
     },
     {
       "id": "B",
-      "text": "研究「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」時只測量5組中的一組就直接下結論"
+      "text": "直接說粗糙一定造成差異"
     },
     {
       "id": "C",
-      "text": "研究「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」時只改變施力大小，其餘條件一致，設置5組、每組取樣9份並各重複測量5次"
+      "text": "只看鞋底外觀顏色"
     },
     {
       "id": "D",
-      "text": "研究「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」時先決定結論，再挑選支持結論的9筆資料"
+      "text": "把差異平均掉"
     }
   ],
   "knowledgeIds": [
     "kg-science-performance-tr-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」。"
+    "value": "A",
+    "explanation": "先確認拉力差只是觀察，再檢查重量、角度與接觸面是否相同，並用摩擦概念解釋可能機制。A 同時要求連結概念和核對條件，因此選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究知識連結、現象、數據與推論能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-tr-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-tr-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "知識、現象與數據推論能力方向",
+      "observedPattern": "公開自然科評量常以知識、現象、數據、機制、變因與證據界線要求推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量八年級理化科試題卷",
+      "year": "114-2",
+      "subject": "science",
+      "locator": "校方附件「114-2-3-八年級理化試題卷.pdf」第5頁第33題",
+      "pattern": "原卷以固定木塊與砝碼、改變接觸面來比較摩擦力；本題改以鞋底拉力差異引導先連結摩擦概念並檢查其他條件。",
+      "observedPattern": "原卷以固定木塊與砝碼、改變接觸面來比較摩擦力；本題改以鞋底拉力差異引導先連結摩擦概念並檢查其他條件。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "替代解釋、資料判讀與結論界線能力方向",
+      "observedPattern": "公開自然科評量常以知識、現象、數據、機制、變因與證據界線要求推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把拉力差當作觀察，再用摩擦機制列出重量、接觸面和拉動角度等可能影響，避免未控制就斷言鞋底材質造成差異。",
+  "solutionSteps": [
+    "先讀出資料真正告訴我們什麼：不同鞋底測得的拉力有差異；這是觀察結果，還不是材質造成差異的證明。",
+    "連結摩擦概念：拉動物體所需的力會受接觸面摩擦影響，但承載重量會改變正向力，拉動角度與方式也會改變測值。",
+    "列出需要核對的條件：比較前確認重量、接觸表面、鞋底接觸狀態與拉動角度／速度一致，否則可能有其他解釋。",
+    "逐項排除選項：A 先描述差異並檢查條件和摩擦概念；B 未控制就怪粗糙度，C 顏色不能代表摩擦力，D 平均會抹掉待解釋的差異。",
+    "回到題目所問的『第一步』：先把資料差異連到相關知識，同時檢查可能混淆條件，因此 A 最能支持後續推論。"
+  ]
 }

@@ -1,0 +1,44 @@
+{
+  "decision": "D-432",
+  "asOf": "2026-09-29",
+  "lessonId": "lesson-social-performance-geo-1b-iv-2",
+  "status": "authored-fusion-draft-recorded",
+  "inventoryBefore": "761/791",
+  "inventoryAfter": "762/791 (96.33%); 29 remain",
+  "preexistingManuscriptCheck": {
+    "visibleSectionsBefore": 4,
+    "teachingBodySectionsBefore": 6,
+    "versionResearchBefore": null,
+    "fusionRecordBefore": null,
+    "finding": "既有學生頁是四段泛用占位，teaching.body雖有六段但套用通用句型，且缺少versionResearch/fusionRecord；不屬已登記融合稿。僅修正本單元，未重寫名冊中已登記的 lesson。"
+  },
+  "evidence": {
+    "officialCurriculum": "官方社會領域課綱地1b-Ⅳ-2『歸納自然與人文環境互動的結果』與Knowledge Graph kg-social-performance-geo-1b-iv-2；另對讀地Ca-Ⅳ-3聚落地名及環境／族群文化、地Ca-Ⅳ-4地名與產業商品探究脈絡。",
+    "versionSources": [
+      "南一：苗栗縣立建國國中南一版課程計畫PDF pp.48–50，列聚落地名與位置／自然環境、族群文化及地名／產業／商品行銷，並明列地1b-IV-2；是校方課程計畫，不是出版社原書。",
+      "康軒：國立臺灣歷史博物館公開《地名X地景X族群記憶》教案，PDF p.1標示113年康軒第一版及九年級地名單元，pp.4–8提供稱呼視角、加蚋仔名稱沿革、命名權力及傳統地名復振材料；是博物館教案，不是康軒課文。",
+      "翰林：新北市溪崑國中114學年度翰林版九年級下學期社會第六冊課程計畫搜尋索引摘要可見臺灣聚落地名、地Ca-Ⅳ-3/4及地1b-IV-2；PDF本次fetch逾時，僅列索引證據、不稱已讀正文。"
+    ],
+    "copyrightBoundary": "從公開材料抽取概念範圍與分析角度，重新設計案例推理，不複製原文、題目、圖表、活動或學習單。自編三筆地名示例明確標示為假想資料。"
+  },
+  "authoredContent": {
+    "studentVisibleSections": 6,
+    "teachingBodySections": 6,
+    "studentAndTeachingTextParity": "PASS exact heading/body parity",
+    "focus": "以地名作為自然地景、地方生活、族群記憶、制度變動與產業命名交會的可研究結果；沿年代與命名者歸納互動，並區分證據、推論和宣傳主張。",
+    "fictionalDataLabelled": true,
+    "reviewStatus": "draft; lesson content review reserved for user's ChatGPT; not performed by Codex"
+  },
+  "verification": {
+    "targetJson": "PASS",
+    "targetLessonContract": "PASS: six original student-visible sections exactly mirrored to teaching.body; three publisherResearch/versionResearch records with evidence limits; fusionRecord; draft",
+    "dataValidation": "PASS: 14542 JSON, 13114 IDs, 1032 KG nodes; structural validation only",
+    "fusionInventory": "PASS: 762/791 recorded (96.33%); learning-content 583/583; learning-performance 179/208; 29 remain",
+    "gitDiffCheck": "PASS: lesson, report, CURRENT_STATE, project-state, and generated fusion inventory report"
+  },
+  "notCompleted": [
+    "29 learning-unit fusion manuscripts remain unrecorded and require per-unit inventory before authoring.",
+    "Interactive specification and browser/runtime QA are reserved for the later specification/interaction phase.",
+    "No lesson content review by Codex; user plans ChatGPT review. No commit or push."
+  ]
+}

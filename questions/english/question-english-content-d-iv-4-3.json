@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-4-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-4／事實與意見」task, what is the best way to prepare question 3?",
+  "prompt": "A review claims, “This backpack is durable.” Which evidence would best support the claim?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-4／事實與意見."
+      "text": "It comes in a bright color."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-4／事實與意見."
+      "text": "It remained intact after a repeated load-and-use test."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-4／事實與意見."
+      "text": "The reviewer likes its logo."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-4／事實與意見."
+      "text": "The bag is displayed on a store shelf."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-4／事實與意見, question 3."
+    "value": "B",
+    "explanation": "反覆負重及使用後仍完整，是直接檢驗耐用性的證據，因此答案 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E-%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "PDF第4頁（試卷第5頁）第35題：根據文章內容選出有文本支持的真實敘述。",
+    "authoringNote": "參照公立國中英文定期評量中核對文章事實、作者觀點、圖表證據、預測及行動判讀的能力；情境、題幹、數據、選項、答案與解析皆獨立編寫，未複製原題。版本研究與全案內容審查未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E-%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立國昌國中109學年度第1學期二年級第2次段考英語科試題",
+      "year": "109",
+      "subject": "english",
+      "locator": "PDF第4頁（試卷第5頁）第35題：根據文章內容選出有文本支持的真實敘述。",
+      "observedPattern": "依公開閱讀題「which statement is TRUE」先找句子證據再驗證主張；本題背包與測試資料為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "主張耐用屬於可測試的品質判斷；優先找直接檢驗使用磨損的證據，而非外觀、喜好或販售地點。",
+  "solutionSteps": [
+    "先把主張拆開：durable 指經過使用後仍能維持功能、不易損壞。",
+    "尋找能實際檢查承重與反覆使用後狀態的證據。",
+    "反覆負重使用後仍完整，與耐用性直接相關。",
+    "所以最能支持主張的是 repeated load-and-use test，選 B。",
+    "亮色、喜歡標誌和放在貨架上都沒有測到耐用程度。"
+  ]
 }

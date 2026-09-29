@@ -2,23 +2,23 @@
   "id": "question-math-performance-s-iv-6-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "小正方形邊長為 4 公分，大正方形邊長為 10 公分，兩者的面積比（小：大）為何？",
+  "prompt": "小正方形邊長為 3 公分，大正方形邊長為 8 公分，兩者的面積比（小：大）為何？",
   "options": [
     {
       "id": "A",
-      "text": "2：5"
+      "text": "3:8"
     },
     {
       "id": "B",
-      "text": "4：10"
+      "text": "6:16"
     },
     {
       "id": "C",
-      "text": "4：25"
+      "text": "9:64"
     },
     {
       "id": "D",
-      "text": "16：100"
+      "text": "27:512"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "面積分別為 4²＝16 與 10²＝100，約成最簡比為 16：100＝4：25。"
+    "explanation": "正方形面積是邊長平方，小：大面積比=3²:8²=9:64，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考相似、縮放、比例尺、面積／體積倍率與生活情境題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供相似、比例、倍率與測量應用能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的相似形方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-6"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似圖形、相似三角形判定、邊長周長面積體積倍率、影子測高與比例尺",
+      "observedPattern": "公開數學評量常以對應邊比例處理長度與周長，進一步轉換面積或體積倍率，也會使用同時測量的影長比例與地圖比例尺；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似圖形、相似三角形判定、邊長周長面積體積倍率、影子測高與比例尺",
+      "observedPattern": "公開數學評量常以對應邊比例處理長度與周長，進一步轉換面積或體積倍率，也會使用同時測量的影長比例與地圖比例尺；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似圖形、相似三角形判定、邊長周長面積體積倍率、影子測高與比例尺",
+      "observedPattern": "公開數學評量常以對應邊比例處理長度與周長，進一步轉換面積或體積倍率，也會使用同時測量的影長比例與地圖比例尺；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "面積比要將邊長比平方，不可直接使用 3:8。",
+  "solutionSteps": [
+    "小正方形面積為 3²=9。",
+    "大正方形面積為 8²=64。",
+    "依題目順序寫小：大=9:64。",
+    "確認比例已最簡。",
+    "所以選 C。"
+  ]
 }

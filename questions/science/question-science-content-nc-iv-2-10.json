@@ -2,23 +2,23 @@
   "id": "question-science-content-nc-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年4月4日自然科教室的觀察中，比較兩地「Nc-Ⅳ-2：能源開發的風險評估與決策」資料時，甲地迎風坡年雨量約 48940 mm、乙地背風坡約 33560 mm，最合理的做法是？",
+  "prompt": "哪句最適合作為潮口能源方案的結論？",
   "options": [
     {
       "id": "A",
-      "text": "在「Nc-Ⅳ-2：能源開發的風險評估與決策」中只看 48940 mm 的單一數值便下結論"
+      "text": "只要能發電就應永久建設"
     },
     {
       "id": "B",
-      "text": "在「Nc-Ⅳ-2：能源開發的風險評估與決策」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "只要有生態疑慮就所有能源都不能用"
     },
     {
       "id": "C",
-      "text": "同時比較地形、風向、觀測期間與 48940、33560 mm 資料"
+      "text": "在供電缺口、施工濁度、候鳥活動與維護成本均未超過事前門檻，且監測資料公開的條件下，先以小規模試辦並保留停工選項"
     },
     {
       "id": "D",
-      "text": "在「Nc-Ⅳ-2：能源開發的風險評估與決策」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "28% 比 19% 大所以不需其他資料"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Nc-Ⅳ-2：能源開發的風險評估與決策」。"
+    "explanation": "成熟的能源決策承認不確定性，以服務效益和環境社會門檻共同決定，並讓新資料能觸發暫停或調整。 正確答案為選項 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的能源開發、效益、風險、生命週期、生態與公共決策能力方向；本題為 Nc-Ⅳ-2 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nc-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-nc-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源方案、資料判讀、環境影響與生活決策",
+      "observedPattern": "取公立學校自然科對能源開發、資料證據與風險判讀的能力方向，另寫能源審議情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源、效率、供需、圖表與科學推理",
+      "observedPattern": "取公開會考對能源資料、多條件比較與限制表達的能力方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "發電、環境代價、事故風險與公共決策",
+      "observedPattern": "取公立學校自然科對能源效益、風險與社會環境資料的能力方向，重新設計題目。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把效益、風險、門檻、監測者和修正權責放在同一句條件式結論中。",
+  "solutionSteps": [
+    "界定能源需求、地點、期間、受影響者與系統邊界。",
+    "把效益、危害、暴露、脆弱度、機率、後果和價值選擇分開。",
+    "核對基線、季節、樣本、生命週期、成本、供電時段與安全門檻。",
+    "排除只看發電量、把可能說成必然或忽略少數群體的選項，答案為 C。",
+    "用可監測、可修正的條件式決策回查結論：成熟的能源決策承認不確定性，以服務效益和環境社會門檻共同決定，並讓新資料能觸發暫停或調整。"
+  ]
 }

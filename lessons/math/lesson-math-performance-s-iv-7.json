@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-s-iv-7",
   "subject": "math",
-  "title": "s-Ⅳ-7：畢氏定理",
+  "title": "s-Ⅳ-7：用直角三角形的平方關係求距離",
   "knowledgeIds": [
     "kg-math-performance-s-iv-7"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「畢氏定理」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "畢氏定理只適用於直角三角形：兩股平方和等於斜邊平方。關鍵不只是代入 a²+b²=c²，而是先確認直角位置、找出斜邊，再依未知量整理方程。逆定理可用三邊平方比較判斷是否為直角三角形。本課以梯子、河道測距和座標路徑的自編情境，練習平方和、根式答案、估值與逆定理，並檢查單位和圖形模型。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「畢氏定理」相關的關係。"
+        "heading": "先找直角與斜邊",
+        "body": "斜邊是直角的對邊，也是三邊中最長的一邊。若未確認圖形是直角三角形，不能直接套畢氏定理；先把直角標記和三邊角色寫清楚。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「畢氏定理」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "平方和的關係",
+        "body": "兩股長 a、b 和斜邊 c 滿足 a²+b²=c²。求股長時要整理成 c²−a²，再取正的平方根，因為長度不能為負。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「畢氏定理」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "逆定理與反例",
+        "body": "若三邊中最大邊 c 滿足 a²+b²=c²，可判斷對最大邊的對角為直角；若不相等，可能是銳角或鈍角，不能說所有三角形都適用。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「畢氏定理」，並指出至少一項支持判斷的條件。"
+        "heading": "把距離放回模型",
+        "body": "座標水平與垂直差可形成直角三角形，梯子長度與離牆距離也要符合圖形條件。最後用估值、最長邊、單位與原情境檢查答案。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「畢氏定理」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先確認直角三角形並找出最長的斜邊。",
+    "依未知量整理平方方程，長度取正平方根。",
+    "用三邊平方和等式或不等式理解逆定理。",
+    "以圖形、單位、估值與情境限制回查。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「畢氏定理」並驗算結果。",
-    "scenario": "以「s-Ⅳ-7：畢氏定理」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "確認直角與斜邊後，用平方和、平方差或逆定理求距離。",
+    "scenario": "調整兩股或三邊資料，觀察平方比較、根式結果與圖形條件。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "symbol": "a",
+        "meaning": "第一股長或水平差"
+      },
+      {
+        "symbol": "b",
+        "meaning": "第二股長或垂直差"
+      },
+      {
+        "symbol": "c",
+        "meaning": "斜邊或待檢查的最大邊"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「畢氏定理」的第一步是什麼？",
+        "prompt": "直角三角形中斜邊是哪一邊？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "直角的對邊且是最長邊",
+          "直角旁邊任一邊",
+          "最短的邊"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "斜邊對著直角，並且是三邊中最長的一邊。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "兩股 6、8 的斜邊如何求？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "√(6²+8²)=10",
+          "6+8=14",
+          "√(8²−6²)"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "斜邊平方等於兩股平方和。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "三邊 6、8、10 能否用逆定理判斷直角？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "可以，6²+8²=10²",
+          "不可以，因為沒有角度數字",
+          "可以，因為三邊都不同"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "最大邊 10 的平方等於其餘兩邊平方和，可判斷為直角三角形。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "s-Ⅳ-7：畢氏定理；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；s-Ⅳ-7：畢氏定理：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「畢氏定理」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「s-Ⅳ-7：畢氏定理」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；s-Ⅳ-7：畢氏定理：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「s-Ⅳ-7：畢氏定理」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；s-Ⅳ-7：畢氏定理：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「s-Ⅳ-7：畢氏定理」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「畢氏定理」",
-        "body": "以「畢氏定理」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "梯子靠牆的高度怎麼量？",
+        "body": "原創安全檢查任務給梯長 5 公尺、梯腳離牆 3 公尺，請學習者先畫出牆、地面與梯子形成的直角三角形，再預測牆上高度小於 5。接著用平方和求高，讓斜邊角色和答案範圍先被圖形限制。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「畢氏定理」的概念架構",
-        "body": "本單元依官方課綱所列的「畢氏定理」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "從平方和判斷三邊角色",
+        "body": "在圖上標出直角，說明直角對邊才是斜邊；以 3、4、5 展開 3²+4²=5²。再比較 4、5、6 的平方，示範不符合等式便不能宣稱直角，讓定理與逆定理的使用條件清楚。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「s-Ⅳ-7：畢氏定理」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "求座標路徑的直線距離",
+        "body": "兩點水平差 6、垂直差 8，先畫出直角三角形，再算距離 d²=6²+8²=100，所以 d=10。最後檢查距離大於每一個直角分量、單位相同，並說明若水平與垂直差換成不同單位要先換算。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「畢氏定理」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "辨認能否套用定理",
+        "body": "提供三組資料：有直角標記的 5、12、13；未標直角但三邊 6、8、10；以及任意三邊 4、5、6。學習者先找最大邊平方，再決定可用定理、逆定理或不能判斷，並寫出平方比較。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「畢氏定理」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用河道模型估算寬度",
+        "body": "原創測距任務從河岸兩點建立垂直基線，測得斜向距離 13 公尺與沿岸差 5 公尺，求垂直河寬。先確認量測線形成直角，再以 13²−5² 得 144，取正根 12 公尺，最後討論量測誤差會如何影響估算。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「畢氏定理」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "修正把最長邊當股長",
+        "body": "請修正『三邊 6、8、10 中 10 是一股，所以用 10²+8² 求另一邊』。先指出 10 是直角對邊斜邊，再用 6²+8²=10² 驗證；若未知的是股長，應改寫成斜邊平方減已知股平方。"
       }
     ],
     "summary": [
-      "先用自己的話界定「畢氏定理」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "畢氏定理只適用直角三角形，斜邊是直角對邊且最長。",
+      "求斜邊用兩股平方和，求股長用平方差並取正根。",
+      "逆定理用最大邊平方與其餘兩邊平方和比較。",
+      "以圖形、估值、單位與模型條件檢查距離答案。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「畢氏定理」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼 10 是 6、8、10 三角形的斜邊？",
+        "expectedEvidence": "10 是最大邊，且對著直角；6²+8²=10² 可驗證直角關係。"
       },
       {
-        "prompt": "在「畢氏定理」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "水平差 6、垂直差 8 的距離如何求？",
+        "expectedEvidence": "形成直角三角形，d²=6²+8²=100，所以 d=10，並檢查單位一致。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「畢氏定理」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "畢氏定理為什麼不能任意用在所有三角形？",
+        "expectedEvidence": "它的前提是直角三角形；非直角三角形不符合相同平方和關係。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『s-Ⅳ-7：用直角三角形的平方關係求距離』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整兩股或三邊資料，觀察平方比較、根式結果與圖形條件。』開始前，先回答：直角三角形中斜邊是哪一邊？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整兩股或三邊資料，觀察平方比較、根式結果與圖形條件。』回答：三邊 6、8、10 能否用逆定理判斷直角？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "直角三角形中斜邊是哪一邊？；操作時先預測，再依『s-Ⅳ-7：用直角三角形的平方關係求距離』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-7：用直角三角形的平方關係求距離)：答案 A；選項內容：直角的對邊且是最長邊",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。斜邊對著直角，並且是三邊中最長的一邊。",
+          "feedback": "斜邊對著直角，並且是三邊中最長的一邊。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "兩股 6、8 的斜邊如何求？；操作時先預測，再依『s-Ⅳ-7：用直角三角形的平方關係求距離』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-7：用直角三角形的平方關係求距離)：答案 A；選項內容：√(6²+8²)=10",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。斜邊平方等於兩股平方和。",
+          "feedback": "斜邊平方等於兩股平方和。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "三邊 6、8、10 能否用逆定理判斷直角？；操作時先預測，再依『s-Ⅳ-7：用直角三角形的平方關係求距離』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-7：用直角三角形的平方關係求距離)：答案 A；選項內容：可以，6²+8²=10²",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。最大邊 10 的平方等於其餘兩邊平方和，可判斷為直角三角形。",
+          "feedback": "最大邊 10 的平方等於其餘兩邊平方和，可判斷為直角三角形。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；畢氏定理、直角三角形與距離的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以直角三角形平方和與距離問題建立畢氏定理",
+          "公開課程結構支持以直角三角形、平方和與距離模型解決幾何及生活問題。"
+        ],
+        "representations": [
+          "梯子、座標距離、直角標記與平方表"
+        ],
+        "examplesOrEvidence": [
+          "本課的梯子、河道測距與座標路徑均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把最長邊當直角邊，或未確認直角就代公式"
+        ],
+        "assessmentEmphasis": [
+          "要求標示斜邊、整理方程並回代檢查"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；畢氏定理、直角三角形與距離的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過拼圖與操作理解平方面積關係",
+          "公開課程結構支持以直角三角形、平方和與距離模型解決幾何及生活問題。"
+        ],
+        "representations": [
+          "紙片拼合、3-4-5 模型、圖形與平方比較"
+        ],
+        "examplesOrEvidence": [
+          "本課的梯子、河道測距與座標路徑均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "只背 a²+b²=c² 不會依未知量變形"
+        ],
+        "assessmentEmphasis": [
+          "重視模型操作、逆定理與平方驗證"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf；畢氏定理、直角三角形與距離的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "把畢氏定理連結到測距、座標與實際量測限制",
+          "公開課程結構支持以直角三角形、平方和與距離模型解決幾何及生活問題。"
+        ],
+        "representations": [
+          "河道與道路測距、單位換算、根式估算與誤差範圍"
+        ],
+        "examplesOrEvidence": [
+          "本課的梯子、河道測距與座標路徑均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "忽略單位或把非直角距離直接套用"
+        ],
+        "assessmentEmphasis": [
+          "評估圖形模型、根式、估值與應用合理性"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持在直角三角形中以平方和求距離。",
+      "斜邊辨識、平方差、逆定理與圖形模型是共同核心。",
+      "估值、單位、量測與反例需用來檢查定理前提。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯畢氏定理與直角三角形；康軒較突顯拼圖、平方面積與逆定理操作；翰林較突顯測距、座標、單位與誤差限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以梯子靠牆先由圖形限制斜邊與高度範圍。",
+      "以 6、8、10 座標距離與 13、5、12 河道測距示範平方差。",
+      "把非直角反例、單位、量測誤差與逆定理整合成互動任務。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織畢氏定理、直角三角形、逆定理、座標距離與實際測距。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

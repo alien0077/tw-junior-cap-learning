@@ -2,23 +2,23 @@
   "id": "question-science-content-kc-iv-8-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年9月24日自然科教室的觀察中，將電壓 60 V 加在電阻 9 Ω 的元件兩端，研究「Kc-Ⅳ-8：電阻發熱與能量逸散」時，電流約為多少？",
+  "prompt": "低電壓模擬電熱站要避免能量逸散與危險，哪項設計最完整？",
   "options": [
     {
       "id": "A",
-      "text": "540 A"
+      "text": "使用額定範圍內的電源，限制總負載、保持通風並監測接點溫度"
     },
     {
       "id": "B",
-      "text": "6.66667 A"
+      "text": "把所有導線纏在一起以提高溫度"
     },
     {
       "id": "C",
-      "text": "0.15 A"
+      "text": "移除保護元件並提高電壓"
     },
     {
       "id": "D",
-      "text": "69 A"
+      "text": "只看裝置是否亮起"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "依歐姆定律 I＝V/R＝60/9＝6.66667 A。 本題對應 KG「Kc-Ⅳ-8：電阻發熱與能量逸散」。"
+    "value": "A",
+    "explanation": "安全設計要同時控制電壓、電流、總負載、散熱與接點狀態，不能以『能運轉』代替額定與熱安全判斷。 正確答案為選項 A：「使用額定範圍內的電源，限制總負載、保持通風並監測接點溫度」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題的電阻發熱、功率、能量、額定值、焦耳熱與用電安全能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均以 Kc-Ⅳ-8 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-kc-iv-8"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-kc-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫",
+      "year": "109-115",
+      "locator": "電阻發熱、功率、能量、額定值與用電安全",
+      "pattern": "取功率—能量—時間、焦耳熱與安全判讀能力方向，重新設計低電壓電熱實驗。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取功率—能量—時間、焦耳熱與安全判讀能力方向，重新設計低電壓電熱實驗。"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考",
+      "year": "109-115",
+      "locator": "電功率、電熱器、負載與電路安全",
+      "pattern": "取公式條件、額定資料、散熱與過載的推理方向，未複製題幹、選項、圖表或答案。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取公式條件、額定資料、散熱與過載的推理方向，未複製題幹、選項、圖表或答案。"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "locator": "焦耳熱、電器功率、使用時間與能源逸散",
+      "pattern": "取數值計算、裝置比較與安全限制的能力方向，全部以本課原創文字改寫。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取數值計算、裝置比較與安全限制的能力方向，全部以本課原創文字改寫。"
+    }
+  ],
+  "solutionStrategy": "先確認額定值和負載，再檢查散熱、接點與保護措施，最後用溫度資料回饋。",
+  "solutionSteps": [
+    "圈出 V、I、R、P、E、Q、t、額定值與散熱條件。",
+    "依本題情境套用判準：先確認額定值和負載，再檢查散熱、接點與保護措施，最後用溫度資料回饋。",
+    "選擇符合固定條件的公式，統一單位並計算或比較。",
+    "排除混用固定電壓／電流、忽略時間、過載或把正常加熱當安全的選項。",
+    "回查答案與額定值、能量去向及安全限制是否一致。"
+  ]
 }

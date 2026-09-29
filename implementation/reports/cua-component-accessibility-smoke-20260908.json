@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "date": "2026-09-08",
+  "environment": "real Chromium via CUA, current worktree workbench on port 8767",
+  "scope": "one real unit for each registered renderer component",
+  "componentCount": 16,
+  "passed": 16,
+  "failures": [],
+  "assertions": {
+    "buttonCount": 6,
+    "buttonNames": [
+      "提交預測",
+      "操作一步",
+      "記錄觀察",
+      "提交解釋",
+      "檢核並顯示局部回饋",
+      "匯出操作紀錄"
+    ],
+    "textboxCount": 1,
+    "liveRegionCount": 2,
+    "emptyAccessibleButtonNames": 0
+  },
+  "units": [
+    {"component": "TextEvidenceBlock", "unitId": "cur-chinese-content-a", "pass": true},
+    {"component": "LanguageTimelineBlock", "unitId": "cur-english-content-a", "pass": true},
+    {"component": "AlgebraBalanceBlock", "unitId": "cur-math-content-a-7-1", "pass": true},
+    {"component": "GeometryManipulationBlock", "unitId": "cur-math-content-a-7-6", "pass": true},
+    {"component": "DataExplorerBlock", "unitId": "cur-math-content-d-7-1", "pass": true},
+    {"component": "StepwiseReasoningBlock", "unitId": "cur-math-content-d", "pass": true},
+    {"component": "FunctionRepresentationBlock", "unitId": "cur-math-content-f-8-1", "pass": true},
+    {"component": "NumberLineBlock", "unitId": "cur-math-content-n-7-3", "pass": true},
+    {"component": "ParticleModelBlock", "unitId": "cur-science-content-a", "pass": true},
+    {"component": "EvidenceLabBlock", "unitId": "cur-science-content-aa-iv-3", "pass": true},
+    {"component": "PhenomenonSimulationBlock", "unitId": "cur-science-content-b", "pass": true},
+    {"component": "SystemRelationshipBlock", "unitId": "cur-science-content-bd-iv-2", "pass": true},
+    {"component": "EarthSystemBlock", "unitId": "cur-science-content-cross-global-climate-adaptation", "pass": true},
+    {"component": "ScenarioDecisionBlock", "unitId": "cur-social-content-civ-a", "pass": true},
+    {"component": "MapDataBlock", "unitId": "cur-social-content-geo-aa-iv-1", "pass": true},
+    {"component": "TimelineCausalBlock", "unitId": "cur-social-content-hist-a-iv-1", "pass": true}
+  ],
+  "boundary": "AX tree and Chromium keyboard/control semantics only; does not claim VoiceOver, NVDA, TalkBack, braille, speech output, focus announcement or full WCAG conformance."
+}

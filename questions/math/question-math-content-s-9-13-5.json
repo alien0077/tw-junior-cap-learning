@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-13-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "一個長方體各邊同時放大為原來 2 倍，體積變為原來的幾倍？",
+  "prompt": "三角柱的底面三角形面積為 12 平方公分，柱高為 7 公分，體積是多少？",
   "options": [
     {
       "id": "A",
-      "text": "8 倍（長、寬、高都納入）"
+      "text": "19 立方公分"
     },
     {
       "id": "B",
-      "text": "2 倍（只考慮一個方向）"
+      "text": "42 立方公分"
     },
     {
       "id": "C",
-      "text": "4 倍（只考慮兩個方向）"
+      "text": "84 立方公分"
     },
     {
       "id": "D",
-      "text": "6 倍（誤將倍率相加）"
+      "text": "168 立方公分"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "長、寬、高均放大 2 倍，體積倍率為 2³＝8 倍。"
+    "value": "C",
+    "explanation": "柱體體積=底面積×柱高=12×7=84 立方公分，正確選項為 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 表面積與體積 題型與官方課綱 KG kg-math-content-s-9-13",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供表面積、體積與單位能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的立體量測方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-9-13"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-13",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "立體表面積、體積、長方體／正方體、柱體、單位換算與公式適用條件",
+      "observedPattern": "公開學校數學試題常以立體展開、表面積與體積公式、容量單位及複合條件考查空間量測；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "立體表面積、體積、長方體／正方體、柱體、單位換算與公式適用條件",
+      "observedPattern": "公開學校數學試題常以立體展開、表面積與體積公式、容量單位及複合條件考查空間量測；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "立體表面積、體積、長方體／正方體、柱體、單位換算與公式適用條件",
+      "observedPattern": "公開學校數學試題常以立體展開、表面積與體積公式、容量單位及複合條件考查空間量測；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "柱體的底面積已給定，不要再次把三角形除以二。",
+  "solutionSteps": [
+    "底面積已是 12 平方公分。",
+    "柱高為 7 公分。",
+    "柱體體積=底面積×柱高。",
+    "12×7=84 立方公分。",
+    "把 84 對照選項，選 C。"
+  ]
 }

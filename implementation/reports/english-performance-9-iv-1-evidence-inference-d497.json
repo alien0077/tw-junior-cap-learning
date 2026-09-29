@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-9-iv-1",
+  "change": [
+    "Mapped the existing conditional-announcement, transit timetable, behavior clue, and library notice tasks to prediction, evidence/claim decomposition, observation of supporting/contradicting/unknown clues, and calibrated explanation.",
+    "Added offline embedded-material fallback and fault-injected simulations.js in the browser regression."
+  ],
+  "browser": {
+    "status": "passed",
+    "visibleSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardWrongRetryAndCorrectFeedback": true,
+    "blockedSimulationScript": ["http://127.0.0.1:8765/site/simulations.js"],
+    "localGuidedChoiceFallbackUsable": true,
+    "axeViolations": 0,
+    "axeIncomplete": 0,
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "blockedExternalRequests": 1,
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "1,010/1,027 pass; 17 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

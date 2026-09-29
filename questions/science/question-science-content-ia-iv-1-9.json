@@ -2,23 +2,23 @@
   "id": "question-science-content-ia-iv-1-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年11月4日學校研究社的觀察中，針對「Ia-Ⅳ-1：內外營力改變地貌」提出可檢驗的科學問題，若比較 4 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "地震後河道堵塞形成堰塞湖，這反映哪種地球作用連鎖？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ia-Ⅳ-1：內外營力改變地貌」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "只有月相造成湖泊"
     },
     {
       "id": "B",
-      "text": "研究「Ia-Ⅳ-1：內外營力改變地貌」時只測量4組中的一組就直接下結論"
+      "text": "水蒸氣直接變成山脈"
     },
     {
       "id": "C",
-      "text": "研究「Ia-Ⅳ-1：內外營力改變地貌」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "內營力造成崩塌，外營力與地形共同改變水流"
     },
     {
       "id": "D",
-      "text": "研究「Ia-Ⅳ-1：內外營力改變地貌」時只改變光照時間，其餘條件一致，設置4組、每組取樣17份並各重複測量3次"
+      "text": "潮汐使所有河道上升"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ia-Ⅳ-1：內外營力改變地貌」。"
+    "value": "C",
+    "explanation": "地震是內營力事件，可誘發崩塌；崩塌物阻塞河道後又改變水流與沉積，形成連鎖作用。 正確答案為選項 C：「內營力造成崩塌，外營力與地形共同改變水流」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的風化、侵蝕、搬運、沉積、板塊及地貌判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ia-Ⅳ-1 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ia-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ia-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "風化、侵蝕、搬運、沉積、板塊與地貌資料判讀",
+      "pattern": "取由地表作用、地質營力、地形證據與控制變因解釋地貌變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由地表作用、地質營力、地形證據與控制變因解釋地貌變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "依事件先後排列內營力、崩塌與水文結果。",
+  "solutionSteps": [
+    "圈出地貌、作用、介質與事件順序等關鍵詞。",
+    "判斷物質是否風化、搬運、侵蝕或沉積，以及作用力來源。",
+    "套用原理：地震是內營力事件，可誘發崩塌；崩塌物阻塞河道後又改變水流與沉積，形成連鎖作用。",
+    "排除與作用位置或證據不符的選項，保留「內營力造成崩塌，外營力與地形共同改變水流」。",
+    "回查答案「內營力造成崩塌，外營力與地形共同改變水流」是否同時符合作用機制與地貌證據。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

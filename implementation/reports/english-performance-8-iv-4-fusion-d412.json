@@ -1,0 +1,72 @@
+{
+  "decisionId": "D-412",
+  "date": "2026-09-28",
+  "unit": "lesson-english-performance-8-iv-4",
+  "status": "authored-and-automated-qa-pass; user-chatgpt-review-pending; publisher-textbook-evidence-pending",
+  "inventory": {
+    "method": "Authored-fusion inventory checked before authoring; only absent unit was written.",
+    "authoredFusionDrafts": "746/791 (94.31%)",
+    "learningContent": "583/583",
+    "learningPerformance": "163/208",
+    "remaining": 45,
+    "meaning": "Manuscript presence only; not content review, source completeness, or publication approval."
+  },
+  "curriculumAndVersionEvidence": {
+    "officialCurriculum": "English 8-Ⅳ-4 and C-Ⅳ-3: understand and respect different cultural customs; KG kg-english-performance-8-iv-4.",
+    "nani": "Daya JHS public course plan PDF p.17 labels Nan-I Grade 7 Lesson 3 festival reading and scanning; cross-grade plan context, not the target textbook chapter.",
+    "kanghsuan": "Minsheng JHS resource-class plan PDF pp.1-2 labels Kang Hsuan Grade 9 and 8-Ⅳ-4; not target-grade publisher chapter.",
+    "hanlin": "Dayou JHS plan PDF pp.13-14 labels Hanlin Grade 9 Unit 6 and C-Ⅳ-3; not target-grade publisher chapter.",
+    "scope": "Read the accessible public-school plan excerpts and used them only as bounded pedagogy context. Full target publisher textbook chapters were unavailable; publisher evidence remains pending and the manuscript does not claim page-by-page three-textbook fusion."
+  },
+  "publicExamSources": [
+    {
+      "school": "Taipei Neihu Junior High School",
+      "exam": "111-1 Grade 9 second exam English",
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417163713PBpnsLYp.pdf",
+      "locator": "PDF p.3, Q44-46",
+      "reuse": "pattern-only; original wording, options, reading context, answers and explanations"
+    },
+    {
+      "school": "Kaohsiung Guochang Junior High School",
+      "exam": "113-2 Grade 7 second exam English",
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87.pdf",
+      "locator": "PDF p.5, Q30-32",
+      "reuse": "pattern-only; original wording, options, reading context, answers and explanations"
+    }
+  ],
+  "artifacts": [
+    "lessons/english/lesson-english-performance-8-iv-4.json",
+    "questions/english/question-english-performance-8-iv-4-1.json through question-english-performance-8-iv-4-10.json",
+    "implementation/unit-specs/english/cur-english-performance-8-iv-4.yaml",
+    "implementation/unit-specs.manifest.json",
+    "implementation/runtime/english-performance-8-iv-4-fusion.test.mjs",
+    "scripts/author_english_performance_8_iv_4.py",
+    "scripts/test_english_performance_8_iv_4_browser.py"
+  ],
+  "automatedValidation": {
+    "targetNode": "PASS: seven original teaching sections mirrored in student lesson body; source limits, four-step GuidedChoice, ten answered draft questions, two item-located pattern-only refs, unique strategies and five solution steps each.",
+    "dataSchema": "PASS: 14523 JSON files, 13114 IDs, 1032 KG nodes; all lessons and questions remain draft.",
+    "implementationSpecs": "PASS: 1027 specs, 0 errors, 21 eligible, 1006 pending; target QA verified.",
+    "questionSourceAudits": "PASS: 10566 questions, 23141 refs, 0 semantic flags; catalog 492 entries/281 URLs/23141 refs with 281/281 covered; 410 grade-fit refs, 0 potential mismatches.",
+    "browser": {
+      "result": "PASS in authorized environment; sandbox attempt failed with Chromium SIGTRAP/EPERM and was not misclassified as missing dependency.",
+      "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "playwright": "1.58.0",
+      "chromium": "revision 1208",
+      "servedPage": "http://127.0.0.1:8765/site/index.html",
+      "visibleSections": 7,
+      "guidedChoiceSteps": 4,
+      "keyboardWrongRetryAndCorrectFeedback": true,
+      "axeViolations": 0,
+      "axeIncomplete": 0,
+      "responsiveWidths": [320, 375, 768],
+      "overflow": false,
+      "blockedExternalRequests": 1,
+      "pageErrors": []
+    },
+    "fullNpmTest": "PASS; workbench traversal 1027/1027 lessons rendered; D412 regression included.",
+    "siteIndex": "PASS build: 1052 lessons, 10566 questions, 40 mapping sets.",
+    "humanReview": "Not performed by Codex. User will submit lesson for ChatGPT content review; this is not a manuscript-inventory gate."
+  },
+  "commitPush": "not performed; overall objective remains in progress"
+}

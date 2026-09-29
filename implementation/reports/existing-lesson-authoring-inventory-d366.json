@@ -1,0 +1,50 @@
+{
+  "reportId": "existing-lesson-authoring-inventory-d366",
+  "createdAt": "2026-09-28",
+  "method": "Read-only recursive inventory of lessons/**/*.json; counted existing teaching.body blocks, fusionRecord fields, versionResearch, publisherResearch, interactive type, and reviewStatus. Presence is structural evidence only; it is not a judgment that a source was fully read or that the lesson is substantively fused, correct, visible, or QA-approved.",
+  "totals": {
+    "lessonFiles": 1056,
+    "teachingBodyPresent": 1052,
+    "contentSectionsPresent": 1056,
+    "existingTeachingBodyParagraphs": 6363,
+    "fullFusionRecordFieldsPresent": 944,
+    "withoutFullFusionRecordFields": 112,
+    "medianTeachingBodyCharacters": 1013,
+    "contentReviewed": 0,
+    "draft": 1052,
+    "deprecated": 4
+  },
+  "bySubject": {
+    "chinese": {"lessons": 98, "teachingBody": 98, "fusionRecord": 91, "versionResearch": 91, "publisherResearch": 98, "bodyParagraphs": 588},
+    "english": {"lessons": 139, "teachingBody": 138, "fusionRecord": 95, "versionResearch": 95, "publisherResearch": 139, "bodyParagraphs": 829},
+    "math": {"lessons": 129, "teachingBody": 128, "fusionRecord": 121, "versionResearch": 121, "publisherResearch": 128, "bodyParagraphs": 772},
+    "science": {"lessons": 329, "teachingBody": 328, "fusionRecord": 327, "versionResearch": 327, "publisherResearch": 328, "bodyParagraphs": 1977},
+    "social": {"lessons": 361, "teachingBody": 360, "fusionRecord": 310, "versionResearch": 310, "publisherResearch": 360, "bodyParagraphs": 2197}
+  },
+  "publisherResearchEntryCountDistribution": {"0": 3, "3": 1049, "4": 3, "5": 1},
+  "interactiveTypeCounts": {
+    "guided-choice": 591,
+    "none": 100,
+    "algebra-expression-builder": 64,
+    "scientific-investigation": 284,
+    "inequality-range-investigation": 1,
+    "language-signage-lab": 2,
+    "story-elements-lab": 1,
+    "text-prediction-lab": 1,
+    "reading-strategy-lab": 5,
+    "short-play-comprehension-lab": 1,
+    "genre-reading-lab": 1,
+    "data-explorer-lab": 1,
+    "daily-expression-lab": 1,
+    "dialogue-comprehension-lab": 1,
+    "message-reading-lab": 1,
+    "story-plot-lab": 1
+  },
+  "interpretation": [
+    "Existing authoring is substantial: 1,052 lessons already have teaching.body content and those bodies total 6,363 paragraphs; do not rewrite merely because a separate content.sections field is shorter.",
+    "The 944 records with commonCore, versionDifferences, and originalAdditions are structured fusion traces, not independently verified substantive fusion completions.",
+    "All 1,052 active lessons are still draft; reviewStatus=content-reviewed count is zero. Source reading, originality, accuracy, visibility, answer quality, and rights gates remain independently auditable.",
+    "At inventory time, 1,037 lessons had at least one teaching.body paragraph not textually mirrored in content.sections. The learner renderer now prefers teaching.body when present, falling back to content.sections, so existing authored paragraphs are surfaced without bulk rewriting lesson JSON."
+  ],
+  "nextStepPolicy": "Before unit-level editing, inspect existing lesson body, source trace, interaction, spec, and browser visibility. Reuse authored content; classify gaps as missing content, missing evidence, inaccurate provenance, display mismatch, or failed QA. Rewrite only when content is substantively deficient or source evidence requires correction."
+}

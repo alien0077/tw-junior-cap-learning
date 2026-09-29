@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-6-iv-2",
+  "change": [
+    "Mapped the existing preview/retrieval/review lesson to prediction, information classification and retrieval, error observation, evidence explanation, and transfer.",
+    "Added explicit simulations.js fallback coverage in the existing unit browser test."
+  ],
+  "browser": {
+    "status": "passed",
+    "visibleSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardWrongRetryCorrect": true,
+    "axeViolations": 0,
+    "axeIncomplete": 0,
+    "reducedMotion": true,
+    "blockedExternalRequests": 1,
+    "blockedSimulationScript": ["http://127.0.0.1:8765/site/simulations.js"],
+    "guidedChoiceFallbackUsable": true,
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "996/1,027 pass; 31 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

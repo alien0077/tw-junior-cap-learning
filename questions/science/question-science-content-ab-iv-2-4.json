@@ -2,23 +2,23 @@
   "id": "question-science-content-ab-iv-2-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年9月7日校園實驗室的觀察中，將 51℃ 的金屬片放入 25℃ 的水中，研究「Ab-Ⅳ-2：溫度與物質狀態」時，最初的熱傳方向為何？",
+  "prompt": "冰在標準大氣壓下熔化時，吸收的熱主要用於什麼？",
   "options": [
     {
       "id": "A",
-      "text": "由 25℃ 的水傳向 51℃ 金屬片"
+      "text": "讓冰的粒子種類改變"
     },
     {
       "id": "B",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "使冰的溫度無限制升高"
     },
     {
       "id": "C",
-      "text": "由金屬片傳向水"
+      "text": "讓氧原子轉成氫原子"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "削弱原有排列限制，使粒子能以液態方式重新排列"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 51℃ 金屬片傳向 25℃ 的水。 本題對應 KG「Ab-Ⅳ-2：溫度與物質狀態」。"
+    "value": "D",
+    "explanation": "熔化平台期吸收的熱主要用於改變粒子間的排列與作用狀態，使固態轉為液態，而不是立刻提高平均動能，選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；蒸發吸熱題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的溫度、熱量、相變與生活應用能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "溫度、熱量、相變與生活情境判讀",
+      "pattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看到相變平台先判斷潛熱用途，再區分溫度變化與粒子排列改變。",
+  "solutionSteps": [
+    "確認冰正在熔化而非單純升溫。",
+    "相變期間溫度暫時保持在熔點附近。",
+    "吸收的熱用來改變粒子排列與相互作用。",
+    "粒子種類與化學身分不變。",
+    "所以選 D。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

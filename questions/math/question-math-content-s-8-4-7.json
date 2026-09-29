@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-4-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若兩個正方形邊長分別為 6 與 6 公分，且方向不同，兩正方形可判定為何？",
+  "prompt": "若 △ABC ≅ △DEF，且 AB=7 公分，則哪個長度一定等於 7 公分？",
   "options": [
     {
       "id": "A",
-      "text": "全等"
+      "text": "DE"
     },
     {
       "id": "B",
-      "text": "一定不相似"
+      "text": "EF"
     },
     {
       "id": "C",
-      "text": "面積不同"
+      "text": "DF"
     },
     {
       "id": "D",
-      "text": "無法比較任何性質"
+      "text": "只有 BC"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "正方形邊長相同即形狀與大小相同，方向不同仍可全等。"
+    "explanation": "由頂點順序 A↔D、B↔E，所以邊 AB 對應 DE，長度相等為 7 公分，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 全等圖形 題型與官方課綱 KG kg-math-content-s-8-4",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供全等圖形與三角形判定能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的全等能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-8-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "全等圖形、剛體移動、對應頂點、SSS／SAS／ASA／AAS 判定與全等／相似辨析",
+      "observedPattern": "公開學校數學試題常以三角形對應、全等判定條件、符號順序與全等後邊角推理考查幾何證據；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "全等圖形、剛體移動、對應頂點、SSS／SAS／ASA／AAS 判定與全等／相似辨析",
+      "observedPattern": "公開學校數學試題常以三角形對應、全等判定條件、符號順序與全等後邊角推理考查幾何證據；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先配對端點，再把對應邊的長度相等寫出來。",
+  "solutionSteps": [
+    "由全等順序得到 A 對 D。",
+    "由全等順序得到 B 對 E。",
+    "因此 AB 對應 DE。",
+    "全等圖形對應邊等長。",
+    "選 A。"
+  ]
 }

@@ -2,41 +2,76 @@
   "id": "question-chinese-classical-function-words-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "翻譯完成後要？",
+  "prompt": "遇到陌生的文言虛字，哪個流程最可靠？",
   "options": [
     {
       "id": "A",
-      "text": "回扣原文檢查邏輯"
+      "text": "先按現代漢語最常見意思翻譯，其他線索一律忽略"
     },
     {
       "id": "B",
-      "text": "只比字形"
+      "text": "只看字形筆畫，從部件直接猜功能"
     },
     {
       "id": "C",
-      "text": "只算字數"
+      "text": "先看前後詞語與句型，再提出候選功能，放回整句翻譯，最後以注釋或字典查證"
     },
     {
       "id": "D",
-      "text": "刪主語"
+      "text": "先選最短的選項，再回頭修改原文意思"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ab-iv-7"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的語境、結構與功能線索判斷；其他選項不符合題幹條件。"
+    "value": "C",
+    "explanation": "可靠流程要把句法、語境、整句翻譯與工具查證串起來，才能處理同字多義與古今差異。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-classical-function-words-10.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究文言虛字、句法、古今義與語境判讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫文言虛字題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-classical-function-words"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-classical-function-words",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言字詞、虛字與語境判讀",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言句法、古今義與閱讀理解",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先建立語境證據，再用工具驗證，而不是先決定答案代號或套用現代義。",
+  "solutionSteps": [
+    "先圈虛字前後的詞語與句型位置。",
+    "列出可能的承接、代指、處所或語氣功能。",
+    "把候選功能放回整句翻譯比較通順與邏輯。",
+    "選擇包含查證與回讀的 A。",
+    "最後用課本文言注釋或可靠字典核對，若仍有歧義要保留證據界線。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

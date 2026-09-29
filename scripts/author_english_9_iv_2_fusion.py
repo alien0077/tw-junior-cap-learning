@@ -1,0 +1,179 @@
+#!/usr/bin/env python3
+"""Author the inventoried-missing English 9-IV-2 lesson and item-specific solutions."""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON_PATH = ROOT / "lessons/english/lesson-english-performance-9-iv-2.json"
+
+SECTIONS = [
+    ("三張社團卡，不能用同一把尺排隊", "社團博覽會的公告同時列出活動地點、開始時間和參加費。小組若只把三張卡照費用由低到高排列，卻忘了同學只能在午休參加，就可能把正確數字排成錯誤決策。9-Ⅳ-2不只是把數字排整齊，而是先讀懂任務要比較、分類還是排序，再決定哪些欄位有用、判準是什麼，以及資訊能否支持最後的選擇。"),
+    ("先說明判準，再動手整理", "面對兩至三項訊息，先把任務改寫成一句可檢查的問題：要比較哪個特徵、用什麼規則分組，或依哪個方向排先後？比較是並列同一尺度上的差異；分類是依共同屬性放進類別；排序則要明確說出由小到大、早到晚或先符合優先條件。若題目含多個限制，先圈出必須同時滿足的條件，不能拿某一欄的最大或最小值直接代替整個判斷。"),
+    ("範例：旅行方案要先過門檻才比價格", "以下是本課自編資料：A車票 180 元、08:10 抵達；B車票 150 元、08:25 抵達；C車票 210 元、07:55 抵達。若任務是「選擇最便宜且 08:00 前抵達的方案」，先用抵達時間篩選：只有 C 符合 08:00 前。接著才比較符合者的價格，因此選 C。B 雖最便宜，卻沒過時間門檻；這說明多條件題應先篩選可行項，再在可行集合中最佳化，而不是把價格與時間混成一個模糊印象。"),
+    ("分類不能偷換類別規則", "另一張自編清單列出蘋果、胡蘿蔔、米、香蕉。若按食物類別分組，蘋果與香蕉都屬水果；胡蘿蔔是蔬菜，米是穀物。分類依據必須對所有項目一致，且一個項目是否可同時屬兩類，要看題目採用的分類系統。例如「室內／室外活動」按活動地點分類，游泳若在室內泳池舉行，就歸室內；若只看活動名稱裡的水或球，便把主題誤當成判準。遇到邊界案例，回到題目定義，不憑直覺補規則。"),
+    ("排序前先處理同值與單位", "由快到慢排競賽成績時，時間數值愈小代表速度愈快；由高到低排測驗分數時，數值方向則相反。先讀清楚量的意義、單位和排序方向，再逐項比較。若兩人同為 14 分鐘，正確整理應保留並列，不能為了做出唯一名次而擅自拆開；若資料單位不同，也要先換到共同尺度。排序不是機械地把數字排好看，而是忠實保存原資料的關係。"),
+    ("把方法帶進真實閱讀與自我檢查", "會考型圖表、交通時刻、產品標示或活動方案常把資訊分散在文字與表格。作答後用三問驗證：每個候選項都依同一判準比較了嗎？多條件是否先篩選、再排序？同值、單位或例外有沒有被保留？最後用簡短英文交代規則，例如 ‘I filtered the buses that arrive before 8:00, then compared their fares.’ 這句話同時讓讀者看見條件順序與比較依據；若無法說清判準，通常表示自己仍在猜而非整理資訊。"),
+]
+
+INTERACTIVE = {
+    "type": "guided-choice",
+    "goal": "對全新旅行規劃資料依序執行分類、篩選、比較與排序，保留題目條件與同值資訊。",
+    "scenario": "你是班級旅行規劃小組的資料整理員。每一步都先辨認任務及判準，再選出符合資料的整理方式；答錯會得到一個可重試的方向提示。",
+    "completionMessage": "完成了：比較前先定尺度，分類時固定規則，排序時保留方向、單位與同值。",
+    "steps": [
+        {"id":"step-1","prompt":"三個活動分別在圖書館、操場與教室舉行。若要按『室內／室外』整理，應採用哪個判準？","text":"分類先問項目的共同屬性；不要拿費用或活動名稱代替地點。","options":["活動舉行地點是否在建築物內","活動費用由低到高","活動名稱的英文字母順序"],"answer":"A","feedback":"以場地是否在室內作為同一條件，才能一致地分組。","retryHint":"回看題目要求的兩個類別，找出能直接區分室內與室外的資訊。"},
+        {"id":"step-2","prompt":"公車票價與抵達時間列為：P 120元／7:50、Q 90元／8:10、R 110元／7:45。任務是找出『8:00前抵達者中最便宜』，第一步做什麼？","text":"多條件任務先辨認門檻條件，再在合格資料內比較價格。","options":["先挑最便宜的 Q，再忽略抵達時間","先保留抵達早於8:00的 P、R，再比較兩者票價","將三個票價與時間相加後由小到大排"],"answer":"B","feedback":"P與R先通過時間門檻，兩者再比價；R為110元，比P的120元便宜。","retryHint":"先圈出『8:00前』這道門檻，暫時排除不符合的項目。"},
+        {"id":"step-3","prompt":"三本書的頁數是 95、120、120。要由薄到厚呈現，哪一種整理保留了全部資料關係？","text":"排序要標明方向；同值應並列而非自行編造先後。","options":["120、120、95，因為厚的放前面","95、120、120，兩本120頁的書並列","95、120、121，為了讓名次不重複而加一頁"],"answer":"B","feedback":"由薄到厚是頁數遞增，兩本120頁的書同值並列，不可改動原始數據。","retryHint":"再確認由薄到厚代表數值遞增，並檢查有沒有保留兩筆120。"},
+        {"id":"step-4","prompt":"野餐點資料有距離、費用與遮雨設施。需求是『費用低於100元的地點中，選最近者』。哪個流程正確？","text":"把限制拆成先篩選、後比較，最後核對單位與全部候選地點。","options":["先篩掉費用100元以上者，再比較剩餘地點的距離","先選全表最近地點，不再查看費用","只按地點名稱排序，因為三欄資料無法比較"],"answer":"A","feedback":"先用費用門檻定出合格集合，再在其中找最短距離；遮雨欄與本題判準無關。","retryHint":"把題目中的『低於100元』和『最近』標成第一、第二個操作。"}
+    ]
+}
+
+QUESTION_SOLUTIONS = [
+    ("先判定排序軸：步行分鐘數；再確認方向是由短到長。", ["題目要求把步行時間由最短排到最長，排序軸是分鐘數。", "把方向寫成遞增，並確認四個值的單位都是分鐘。", "由小到大排列為8、10、12、15，因此選項A符合。", "B是反向；C、D都沒有依遞增規則排列所有數值。", "逐一核對原始四筆數字各出現一次，沒有漏值或重複。"]),
+    ("把『最高分先出現』轉成數值遞減，先找最大值。", ["任務是由高到低排名，所以分數大的排在前面。", "比較91、84、76、68，最大值為91。", "最高分先出現，對應選項A的91。", "68是最低分，76與84也都小於91，不能排第一。", "核對四個分數都以同一百分制記錄，沒有把低到高誤讀成高到低。"]),
+    ("依食物類別分類，判斷每一項的類別，不按字面或顏色猜。", ["題目要找只含水果的組合，分類依據是食物類別。", "蘋果與香蕉屬水果；胡蘿蔔是蔬菜，米是穀物。", "只有蘋果和香蕉都符合水果類，因此答案A。", "B、C、D各含蔬菜或穀物，不能稱為全是水果。", "回頭逐項檢查所選組合，每個項目都落在同一類別。"]),
+    ("讀出分類名稱背後的共同屬性，再辨識所依據的功能。", ["題目把公車、火車放在大眾運輸，把腳踏車放在個人運輸。", "能區分兩組的共同特徵是交通工具的使用方式／服務對象。", "因此選項A最能概括這個分類規則。", "顏色、道路長度和單一票價都無法解釋兩組如何形成。", "確認分類規則能同時說明公車、火車與腳踏車，而非只適用其中一項。"]),
+    ("用同一個頁數尺度做差，並檢查題目問的是誰較多。", ["Book A有120頁，Book B有95頁，兩者都用頁數比較。", "計算差距：120－95＝25頁。", "A頁數較多25頁，所以選項A正確。", "B把大小關係顛倒；C否認差異；D與表格明列頁數矛盾。", "用加回驗算：95＋25＝120，方向與差值一致。"]),
+    ("這是雙條件篩選：先比抵達時間是否過門檻，再比合格車次價格。", ["目標是找最便宜且8:00前到達的公車。", "要同時讀票價欄與抵達時間欄，因為兩者分別對應成本與資格。", "所以必須比較票價和抵達時間，答案A。", "車身顏色、司機姓名、座椅布料或生日都不判定這兩項條件。", "最後確認先篩選時間合格者，再比較其票價，沒有只挑全表最低價。"]),
+    ("按實際舉行地點分類，案例明示泳池在室內。", ["分類標準是活動發生在室內或室外，不是活動名稱或所用元素。", "題目指出游泳在室內泳池舉行，地點符合室內類。", "因此應放入 indoor activities，答案A。", "B與已知地點相反；C不應自動雙重歸類；D把水誤當場地。", "檢查分類所用標準是位置，而且沒有加入題目未提供的戶外場地。"]),
+    ("競賽時間愈短代表愈快；先比數字並保留並列。", ["Mia與Lee各用14分鐘，Sam用16分鐘。", "比較時間：14小於16，所以Mia與Lee同為較快的一組。", "兩人時間相同，故正確敘述是他們並列較快，答案A。", "Sam不是更快；三人都有紀錄；Mia和Lee同值，並非三人各異。", "核對單位相同、同值未被拆開，也沒有把時間較長誤當速度較快。"]),
+    ("先套用嚴格費用門檻，再只對合格公園比距離。", ["需求同時包含費用低於5美元與距離最近。", "第一步排除費用等於或高於5美元的公園；『低於』不含5。", "第二步在剩下地點中比較距離，選距離最短者，符合選項A。", "先選最遠、只按字母排序或加總費用都沒有解決題目的雙條件目標。", "最後逐一確認合格費用與最小距離，避免把5美元誤算為小於5。"]),
+    ("這是先篩選保育狀態、再依體長排序的兩階段資料整理。", ["讀者要找瀕危動物，且希望由短到長排列。", "先用endangered status留下瀕危物種，再比較這些動物的body length。", "符合要求的流程是先篩狀態後排體長，答案A。", "忽略瀕危狀態或體長會漏掉一項需求；先挑最大個體可能選到非瀕危物種。", "確認最後清單的每項都瀕危，且體長方向是遞增。"]),
+]
+
+
+def main() -> None:
+    lesson = json.loads(LESSON_PATH.read_text(encoding="utf-8"))
+    section_rows = [{"heading": h, "body": b} for h, b in SECTIONS]
+    lesson["content"] = {
+        "summary": "從真實任務拆出比較判準、分類規則與排序方向；練習先篩選再排名，並忠實保留同值、單位和限制。",
+        "studyEntry": "拿到兩三張活動或旅行資訊卡時，你怎麼在有時間與費用限制下選出合適方案？",
+        "sections": section_rows,
+    }
+    lesson["studyHighlights"] = [
+        "先把問題改寫成判準：比較什麼、怎麼分組、按哪個方向排序。",
+        "多條件選擇先篩出合格項，再在合格集合內比價、距離或時間。",
+        "分類採用同一個屬性；排序保留單位、方向與同值，不自行補造資料。",
+        "用一句英文說出你採用的規則，讓別人能重做並檢查。",
+    ]
+    lesson["studyReferences"] = [
+        "https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf",
+        "https://www.cp.ptc.edu.tw/storage/134324/134324_112_B-1_9A.pdf",
+        "https://www.cp.ptc.edu.tw/storage/131307/131307_113_B-20_9A.pdf?1774769473=",
+        "https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf",
+        "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+        "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+        "https://material.hle.com.tw/wp-content/uploads/2021/01/%E5%9C%8B%E4%B8%AD%E8%8B%B1%E8%AA%9E-%E9%96%B1%E6%B8%AC%E8%B6%8A%E6%9C%89%E8%B6%A3%E5%90%88%E4%BD%B5.pdf",
+        "https://teacher.oneclass.com.tw/jteacher/",
+    ]
+    lesson["updatedAt"] = "2026-09-29"
+    lesson["authoringStandard"] = "version-fused-v1"
+    lesson["versionResearch"] = [
+        {
+            "publisher": "nani", "edition": "南一國中英語公開教師資源入口；指定單元內容未能直接讀取",
+            "sourceType": "public-web", "sourceLocator": "南一OneClass公開入口列出國中英語教師備課資源；本次未能以免登入方式定位南一9-Ⅳ-2指定課次的教材內容，因此不以入口資訊推論版本教學。",
+            "reviewedAt": "2026-09-29",
+            "findings": {
+                "concepts": ["南一公開入口提供國中英語教師備課資源，但本課指定版本章節尚未讀取。", "入口資訊本身不足以確立9-Ⅳ-2在南一版本中的順序、表徵或教學法。"],
+                "representations": ["目前未直接取得可定位到本課的南一表格、閱讀材料或互動表示。"],
+                "examplesOrEvidence": ["本次只直接查閱南一公開資源入口；沒有取得南一9-Ⅳ-2本課例題。"],
+                "misconceptions": ["把教材入口存在誤當成已實際閱讀指定教材。"],
+                "assessmentEmphasis": ["在未取得本課材料前，不推斷南一版本的活動或評量安排。"]
+            },
+            "licenseBoundary": "只記錄公開教師資源入口；沒有取得南一本課正文，故不聲稱完成南一教材章節比對，也不擷取或轉載受限資源。"
+        },
+        {
+            "publisher": "kanghsuan", "edition": "康軒公開數位資源入口；本課9-Ⅳ-2指定版本內容未取得",
+            "sourceType": "public-web", "sourceLocator": "康軒官方英語數位資源入口可確認其公開資源類型，但無免登入且可定位至9-Ⅳ-2的教材全文；本次未把入口頁當成課文證據。",
+            "reviewedAt": "2026-09-29",
+            "findings": {
+                "concepts": ["官方課綱要求在有限的二至三項訊息中進行有依據的比較、分類或排序。", "本次公開搜尋未找到足以確認康軒特定年級課次、示例與答案的材料。"],
+                "representations": ["康軒公開入口提供教材數位資源的入口資訊，沒有可讀的本課表格或活動內容。"],
+                "examplesOrEvidence": ["康軒官方資源入口可核實平台存在；不構成9-Ⅳ-2本課教學內容證據。"],
+                "misconceptions": ["僅見品牌／平台入口便推定已讀取出版社本課內容。"],
+                "assessmentEmphasis": ["因本課出版社章節未開放閱讀，不能推論該版本的評量安排或章節排序。"]
+            },
+            "licenseBoundary": "只記錄公開入口頁與搜尋結果的可見範圍，不下載、重製或推測會員教材；本課康軒章節比較明列未完成。"
+        },
+        {
+            "publisher": "hanlin", "edition": "翰林國中英語閱讀測驗命題原則與示例（出版社公開補充資源；非9-Ⅳ-2指定冊次課文）",
+            "sourceType": "public-web", "sourceLocator": "翰林公開PDF第17頁標示D-Ⅳ-2，說明閱讀前／中／後策略及由基本到深度思考的題型設計；示例是出版社引用的二上閱讀練習，不是本單元九年級教材，僅採教學設計原則。",
+            "reviewedAt": "2026-09-29",
+            "findings": {
+                "concepts": ["出版社公開材料將D-Ⅳ-2放在英語閱讀與訊息整理脈絡中，不是脫離文本的純數字排序。", "示例說明可由基本理解逐步提升到較深層思考，並使用閱讀前、中、後策略；不能據此推論九年級本課頁面。"],
+                "representations": ["出版社示例使用生活情境短文搭配選擇題，並要求學生回到文本核對細節。"],
+                "examplesOrEvidence": ["翰林公開PDF第17頁示例把生活文本、問題、選項、答案與解析並列，並標註D-Ⅳ-2；本文僅抽取回文核對和循序加深的設計原則。"],
+                "misconceptions": ["題目用近似人物或物件干擾時，學生可能憑熟悉字詞選答案，未逐項比對對象與屬性。"],
+                "assessmentEmphasis": ["以文本證據定位與干擾項辨析呈現理解層次；新課自編任務改用兩至三項可比較資料，不複製出版社示例。"]
+            },
+            "licenseBoundary": "僅概述翰林公開補充資料中的課綱代碼、閱讀策略與題型設計原則；不複製第17頁原文、題幹、選項或解析，也不把二上示例說成九年級本課全文。"
+        }
+    ]
+    lesson["publisherResearch"] = [
+        {"publisher":"nani","edition":"南一國中英語教師／數位資源公開入口；本課教材內容未能直接讀取","subject":"english","chapterLocator":"公開入口列有國中英語備課與數位資源，但沒有可匿名定位至9-Ⅳ-2的南一課文／活動頁；僅確認查找入口，出版社章節證據pending。","sourceUrl":"https://teacher.oneclass.com.tw/jteacher/","access":"public-open","reviewedAt":"2026-09-29","researchScope":["unit-curriculum-placement"],"outcome":"入口可用來確認南一存在國中英語備課資源；本輪未讀到本課教材正文、概念順序或評量題型，故不宣稱南一版本融合已完成。","copyrightBoundary":"不登入或擷取未授權內容；只保留公開入口定位，不重製南一教材。"},
+        {"publisher":"kanghsuan","edition":"康軒國中英語官方教學資源入口；本課教材內容未能直接讀取","subject":"english","chapterLocator":"官方入口列出國中英語教學資源，但未公開可精確對應9-Ⅳ-2的免登入教材頁或九年級指定課次；出版社章節證據pending。","sourceUrl":"https://teach.knsh.com.tw/j/index.html","access":"public-open","reviewedAt":"2026-09-29","researchScope":["unit-curriculum-placement"],"outcome":"確認官方入口及英語資源分類；未讀到本課課文、例題、解題方法或出版社評量，沒有推論版本教學差異。","copyrightBoundary":"只記公開資源入口與其可見資訊，不下載、複製或猜測需登入的教材內容。"},
+        {"publisher":"hanlin","edition":"翰林公開閱讀教學補充PDF；二上閱讀示例映射D-Ⅳ-2，非九年級本課","subject":"english","chapterLocator":"翰林《國中英語閱讀測驗命題原則、範例試題分享》PDF第17頁；標示D-Ⅳ-2並說明生活情境閱讀、閱讀前中後策略與題目由基本到深度思考。","sourceUrl":"https://material.hle.com.tw/wp-content/uploads/2021/01/%E5%9C%8B%E4%B8%AD%E8%8B%B1%E8%AA%9E-%E9%96%B1%E6%B8%AC%E8%B6%8A%E6%9C%89%E8%B6%A3%E5%90%88%E4%BD%B5.pdf","access":"public-open","reviewedAt":"2026-09-29","researchScope":["teaching-sequence","assessment-pattern"],"outcome":"直接閱讀並定位翰林公開補充資源第17頁；支持把多項訊息比較放入生活化英文閱讀、要求回到文本核對並逐步提升思考層次。非本課九年級教科書章節，不能證成翰林9-Ⅳ-2指定教材已完成研究。","copyrightBoundary":"只用自述方式記錄課綱代碼和教學設計原則，不搬用原短文、題幹、選項、答案、圖片或解析。"}
+    ]
+    lesson["fusionRecord"] = {
+        "commonCore": [
+            "官方9-Ⅳ-2與D-Ⅳ-2將目標限定在二至三項訊息的比較、歸類與排序方法；學生必須說清楚資料尺度與整理規則。",
+            "公開校方計畫把能力放進課堂任務、資料整理和旅行規劃等情境；這些線索支持情境化教學，不等於三家出版社課本文本。",
+            "題目有多重限制時，先篩選符合門檻的項目，再於可行集合內比較；分類規則一致，排序方向與同值須忠實呈現。"
+        ],
+        "versionDifferences": [
+            "已直接閱讀翰林公開補充資料中映射D-Ⅳ-2的生活情境閱讀示例與閱讀前中後策略，可借鑑回文核對及循序增加思考層次；但它不是9-Ⅳ-2九年級課本章節。南一、康軒指定版本課次全文未能公開讀取，三版本差異仍不可判定。"
+        ],
+        "originalAdditions": [
+            "以社團博覽會和旅行方案自編數值資料，示範比較、分類、排序與多條件先篩選後排名的差異。",
+            "加入判準明示、嚴格門檻（低於不含等於）、同值並列、單位統一與無關欄位排除，讓資訊整理步驟可重做。",
+            "加入簡短英文句型說明篩選順序與比較依據，將表格判讀轉成可檢查的語言輸出。"
+        ],
+        "llmSynthesisNote": "先核對官方英語課綱9-Ⅳ-2／D-Ⅳ-2，再查閱公開校方課程計畫、出版社入口及已登錄公校試題來源；另直接閱讀翰林公開閱讀教學PDF第17頁，該頁將D-Ⅳ-2放入生活情境文本題，呈現閱讀前中後策略及由基本到深度思考的設計。這能支持閱讀策略和回文核對，但不是九年級本課課文；南一、康軒指定課次全文未能公開讀取，故不謊稱三版章節融合。正文以自己的例子與教學理論重新組織判準、資料尺度、分類一致性、先篩後排、同值處理與英文理由表達；所有文字、表格數值、互動題與解析均為原創。教材最終內容審查由使用者交ChatGPT，Codex不設此審查gate。"
+    }
+    lesson["interactive"] = INTERACTIVE
+    lesson["teaching"] = {
+        "body": [{"id": pid, "phase": phase, "heading": heading, "body": body} for pid, phase, heading, body in zip(
+            ["hook", "explain", "worked-example", "guided-practice", "transfer", "reflect"],
+            ["hook", "explain", "worked-example", "guided-practice", "transfer", "reflect"],
+            [row[0] for row in SECTIONS], [row[1] for row in SECTIONS]
+        )],
+        "summary": lesson["studyHighlights"],
+        "exitCheck": [
+            {"prompt": "票價與抵達時間同時出現時，若任務有『8:00前且最便宜』兩條件，為什麼要先篩時間？", "expectedEvidence": "指出先排除不符合到達時間者，再比較合格者票價；不能直接選全表最低價。"},
+            {"prompt": "排序資料中兩項數值相同，你應如何呈現？", "expectedEvidence": "保留同值並列，說明排序方向與單位，不擅自改值或拆名次。"},
+            {"prompt": "請用英文句子說明你如何從候選方案整理出答案。", "expectedEvidence": "句子明示先篩選哪一項條件，再依哪個欄位比較或排序。"}
+        ]
+    }
+    LESSON_PATH.write_text(json.dumps(lesson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    answer_positions = ["B", "C", "D", "A", "B", "C", "D", "A", "B", "C"]
+    for index, (strategy, steps) in enumerate(QUESTION_SOLUTIONS, start=1):
+        path = ROOT / f"questions/english/question-english-performance-9-iv-2-{index}.json"
+        question = json.loads(path.read_text(encoding="utf-8"))
+        correct = next(option for option in question["options"] if option["id"] == question["answer"]["value"])
+        distractors = [option for option in question["options"] if option is not correct]
+        position = ord(answer_positions[index - 1]) - ord("A")
+        ordered = distractors[:]
+        ordered.insert(position, correct)
+        for option_index, option in enumerate(ordered):
+            option["id"] = chr(ord("A") + option_index)
+        question["options"] = ordered
+        new_answer = answer_positions[index - 1]
+        steps = [step.replace("選項A", f"選項{new_answer}").replace("答案A", f"答案{new_answer}") for step in steps]
+        question["answer"] = {"value": new_answer, "explanation": f"正確答案是{new_answer}。{steps[2]}{steps[3]}"}
+        question["solutionStrategy"] = strategy
+        question["solutionSteps"] = steps
+        question["studyReferences"] = [
+            "https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf",
+            "https://material.hle.com.tw/wp-content/uploads/2021/01/%E5%9C%8B%E4%B8%AD%E8%8B%B1%E8%AA%9E-%E9%96%B1%E6%B8%AC%E8%B6%8A%E6%9C%89%E8%B6%A3%E5%90%88%E4%BD%B5.pdf",
+        ]
+        question["updatedAt"] = "2026-09-29"
+        question["provenance"]["authoringNote"] = "依官方9-Ⅳ-2／D-Ⅳ-2及所列公校英語段考的資料整理能力方向獨立撰寫；題幹、數值、選項與解說皆重新創作，來源僅作題型靈感，不複製原題。內容最終審查由使用者交ChatGPT。"
+        path.write_text(json.dumps(question, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("Authored English 9-IV-2 evidence-bounded fusion lesson and 10 Chinese worked solutions.")
+
+
+if __name__ == "__main__":
+    main()

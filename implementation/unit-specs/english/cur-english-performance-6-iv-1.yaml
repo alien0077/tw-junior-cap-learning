@@ -1,0 +1,147 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-6-iv-1
+  knowledgeGraphIds:
+  - kg-english-performance-6-iv-1
+  title: 6-Ⅳ-1：積極參與課堂練習
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 6-Ⅳ-1：積極參與課堂練習
+    curriculumIntent: 願意參與課堂中各類英語練習，不畏犯錯；觀察可見的嘗試、求助、使用回饋與再試行動，不把外向、發言量或一次答對當成唯一指標。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依官方課綱與 KG 統整三份版本標示公校計畫可見的參與／合作評量與有限支持差異；三份都是學校文件，不是出版社章節或出版社教法。出版商課本證據維持 pending。
+    currentEvidenceStatus: original-version-informed-manuscript-authored; public-school-plan-evidence-read; publisher-textbook-chapter-evidence-pending
+  learningGoals:
+  - 說明參與練習不等於搶答、外向或一次答對，並提出自己可採取的開始方式
+  - 答錯或卡住時定位困難，選擇提示／求助、再試並描述收到的可用回饋
+  - 將「嘗試—定位—使用回饋—再試」循環帶到新的個人或合作任務
+  prerequisites:
+  - 能理解簡短英語字卡／課堂指示或同伴的練習邀請
+  - 能描述自己目前理解或不確定的部分
+  coreConcepts:
+  - 學習表現 6-Ⅳ-1 描述參與課堂練習的興趣與面對錯誤的態度，不是特定語法知識
+  - 參與證據應是與學習目標相連的嘗試、提問、核對、修正或合作行動
+  - 形成性回饋須指向可執行的下一步，避免人格標籤或替學生代答
+  misconceptions:
+  - 只有搶答或高發言量才算參與
+  - 答錯一次就代表自己沒有英語能力或不適合參加
+  - 提示／較多時間等同降低目標，或由同伴代答也算自己的練習
+  contentFlow:
+  - 'predict: 從不確定的英語練習情境預測能讓自己繼續參與的下一步，而非把參與等同搶答'
+  - 'manipulate: 在四個原創情境中選用自我嘗試、求助、提示或同伴合作，保留本人實際練習的行動'
+  - 'observe: 比較錯誤定位、可操作回饋及代答的結果，觀察哪些選擇能讓學生重新試做並呈現學習證據'
+  - 'explain: 指出情境中哪個卡點線索支持所選策略，並說明安靜、需提示或一次答錯不能推出無能力'
+  - 'transfer: 把參與循環帶入新小組任務，記錄提示後再試的可觀察進展'
+  - 'exit-ticket: 寫出下一輪策略和可觀察的進展線索'
+  visualizations:
+  - 正文以文字箭頭呈現「先嘗試→找到卡點→使用提示或求助→修正再試」流程；屬靜態文字表徵，不宣稱有額外圖表互動元件。
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-6-IV-1-I01
+    component: GuidedChoiceBlock
+    purpose: 讓學生在四個不同練習情境中，選擇可支持嘗試、求助、接收具體回饋及再試的行動。
+    initialState:
+      selectedOption: none
+      feedback: empty
+      stepVisibility: all
+    studentActions:
+    - 閱讀不同的英語課堂練習情境
+    - 選擇能讓學習者本人繼續參與、而非退出或由人代答的行動
+    - 答錯後閱讀 retryHint，重新選答
+    - 說明具體回饋如何形成下一個練習步驟
+    visualRules:
+    - 每一情境的題幹、選項、回饋與進度均以文字呈現
+    - 鍵盤可聚焦及啟用每個答案選項
+    - 選答狀態以 aria-pressed 與文字回饋呈現，不依賴顏色
+    - 窄螢幕不得裁切題幹、選項或回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-6-IV-1-I01
+      trigger: 把安靜學生直接判為未參與，或認為只有第一次答對才有參與
+      prompt: 請找出學生已採取的學習行動，以及下一步仍可由學生本人完成的部分。
+      expectedEvidence: 指出至少一項嘗試、書寫、提問、核對、使用提示或修正行動
+    feedback:
+      correct: 說明該行動如何讓學生繼續投入練習，並邀請其帶到下一個新情境。
+      incorrect: 提示先看學生本人是否做了與學習相關的行動；不可用發言量或人格標籤代替觀察，再讓學生重試。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: 本課採用一題一情境的 GuidedChoice，不複製其活動或內容；資料、情境、選項與回饋由本課原創。
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: 本課採用一題一情境的 GuidedChoice，不複製其活動或內容；資料、情境、選項與回饋由本課原創。
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: GuidedChoice 選項保留鍵盤操作與具文字的狀態回饋。
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: 頁面保留原生標題階層及每步獨立文字回饋。
+  capTransfer:
+    questionType: 練習策略選擇／形成性回饋辨識／學習歷程短答
+    stemConstraint: 原創英語練習情境須測試學生能否繼續嘗試、適切求助或使用回饋，不能把外向或答對當成參與的代理指標。
+    requiredResponse: 選出具體行動，並說明該行動如何讓學生本人繼續練習。
+    scoring: 行動符合目標 1、說明能接續練習 1、避免人格／發言量偏誤 1
+  exitTicket:
+    prompt: 下一輪英語練習你會先做什麼？若卡住，你會用哪個提示或求助方式再試？
+    successCriteria:
+    - 說出一項自己可完成的練習行動
+    - 說出一項具體提示／求助方式
+    - 說明一個可觀察的進展線索
+  expressionExtension:
+    applicable: true
+    task: 用 2～3 句英文向同伴描述自己遇到的練習卡點、使用的求助／回饋及再試結果。
+    constraint: 學生先寫或先口述；只提示可補上的具體學習行動，不代寫完整反思。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 四個互動情境需涵蓋持續嘗試、多元參與證據、可操作回饋及新任務遷移；每題有唯一答案、retryHint 及解釋。
+  - 不得將安靜、需要提示或一次答錯直接判成未參與／無能力；學生本人須保留可執行的下一步。
+  - 在 320px、375px 與 768px 寬度，鍵盤可完成全部選答並讀到每步回饋，且頁面不溢位。
+  - 觸控目標至少 44px；選取狀態有 aria-pressed 與文字 feedback；不依賴顏色。
+  - 四個 transfer 情境提供新活動脈絡，仍檢查參與與使用回饋的相同學習循環。
+  - Fallback：刻意阻擋 simulations.js 後，四個參與情境的本地文字互動仍可鍵盤完成、錯答重試並收到可操作回饋。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 官方英語課綱 PDF p.15，第四學習階段「學習興趣與態度」列 6-Ⅳ-1「樂於參與課堂中各類練習活動，不畏犯錯」。
+    role: official-curriculum-source-of-truth
+  - url: https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/111-2-7-2.pdf
+    locator: 卓蘭高中附設國中111學年度七年級南一版英語計畫 PDF p.0、pp.0-1；Lesson 1 的提問討論、參與態度與合作能力評量。
+    role: nani-labelled-public-school-plan-bounded-evidence
+  - url: https://www.cksh.hc.edu.tw/uploads/17037312176697LV5Ak9V.pdf
+    locator: 建功高中國中部111學年度七年級康軒版英語計畫 PDF p.0、pp.18-20；課程目標的參與／友善合作及口語／小組互動評量。
+    role: kanghsuan-labelled-public-school-plan-bounded-evidence
+  - url: https://www.se.curriculum.chc.edu.tw/years/110/plans/315/views/4-1-1.pdf
+    locator: 大村國中110學年度七年級學習障礙英文翰林版調整計畫 PDF pp.30-31、34-35；提示、任務分解、合作活動和彈性評量，僅作特教支持參考。
+    role: hanlin-labelled-special-education-school-plan-limited-evidence

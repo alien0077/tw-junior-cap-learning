@@ -2,41 +2,84 @@
   "id": "question-math-performance-d-iv-1-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若試算表將 10 筆成績放在 B2 到 B11，要計算其中位數，哪個公式最適當？",
+  "prompt": "若資料 10、12、14、16 的每一筆都加 5，新的平均數為何？",
   "options": [
     {
       "id": "A",
-      "text": "=AVERAGE(B2:B11)"
+      "text": "13"
     },
     {
       "id": "B",
-      "text": "=MAX(B2:B11)-MIN(B2:B11)"
+      "text": "15"
     },
     {
       "id": "C",
-      "text": "=COUNT(B2:B11)"
+      "text": "17"
     },
     {
       "id": "D",
-      "text": "=MEDIAN(B2:B11)"
+      "text": "18"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-d-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
     "value": "D",
-    "explanation": "MEDIAN 函數用來求中位數；AVERAGE 求平均數，MAX－MIN 求全距，COUNT 計算資料筆數。"
+    "explanation": "原平均數=(10+12+14+16)÷4=13；每筆加 5，平均也加 5，新的平均為 18，所以選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考直方圖、盒狀圖、四分位數、次數分配與資料判讀題型；另參考 114 年國中教育會考數學科；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "統計單元實質改寫；已重新計算答案與解析，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供統計圖表、統計量與工具判讀能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的資料與不確定性方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-d-iv-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-d-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、全距、頻率資料、統計圖表、圖表誤讀與試算表函數；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求由表格、圖表或原始資料計算統計量，並辨識座標截斷、集中趨勢與軟體函數的正確解讀；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、全距、頻率資料、統計圖表、圖表誤讀與試算表函數；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求由表格、圖表或原始資料計算統計量，並辨識座標截斷、集中趨勢與軟體函數的正確解讀；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、全距、頻率資料、統計圖表、圖表誤讀與試算表函數；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求由表格、圖表或原始資料計算統計量，並辨識座標截斷、集中趨勢與軟體函數的正確解讀；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先求原平均，再利用所有資料同加常數時平均也同加常數。",
+  "solutionSteps": [
+    "原總和為 52，原平均為 13。",
+    "每一筆都增加 5。",
+    "平均數也增加 5。",
+    "新平均=13+5=18。",
+    "所以選 D。"
+  ]
 }

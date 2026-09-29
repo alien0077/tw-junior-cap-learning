@@ -2,41 +2,99 @@
   "id": "question-science-content-ka-iv-7-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月27日學校研究社的觀察中，空氣射向平面鏡時，光線與鏡面法線的入射角為 20°，研究「Ka-Ⅳ-7：光速與影響因素」時，反射角為何？",
+  "prompt": "光在折射率 n=1.4 的水樣中走過 7 m，真空光速取 3.0×10^8 m/s；理想模型下通過這段水的時間約為？",
   "options": [
     {
       "id": "A",
-      "text": "20°（空氣射向平面鏡）"
+      "text": "3.3×10^-8 s"
     },
     {
       "id": "B",
-      "text": "70°（「Ka-Ⅳ-7：光速與影響因素」中把入射角誤當折射角）"
+      "text": "1.0×10^-8 s"
     },
     {
       "id": "C",
-      "text": "40°（「Ka-Ⅳ-7：光速與影響因素」中把入射角加倍）"
+      "text": "4.2×10^-8 s"
     },
     {
       "id": "D",
-      "text": "160°（「Ka-Ⅳ-7：光速與影響因素」中以平角計算）"
+      "text": "2.1×10^-7 s"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ka-iv-7"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "反射定律指出反射角等於入射角，因此為 20°。 本題對應 KG「Ka-Ⅳ-7：光速與影響因素」。"
+    "explanation": "水中速率 v=c/n≈2.14×10^8 m/s，因此 t=d/v≈7/(2.14×10^8)=3.3×10^-8 s。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的光速、介質、折射率、時間資料和探究能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka-iv-7"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ka-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "光速、透明介質、折射率與資料判讀",
+      "pattern": "取公立學校自然科評量以介質、速率、公式和數據推理光學現象的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以介質、速率、公式和數據推理光學現象的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "光學、傳播時間、介質與科學資料判讀",
+      "pattern": "取公開會考以模型、圖表和條件資訊判斷光學傳播的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以模型、圖表和條件資訊判斷光學傳播的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E7%90%86%E5%8C%96%E7%A7%91_8.pdf",
+      "title": "高雄市立國昌國中 113 學年度第一學期第二次段考二年級理化科公開試題",
+      "year": "113",
+      "locator": "PDF 第 3 頁第 25 題：比較光波與聲波，含介質速率與雷雨先見閃電後聞雷聲的判讀；僅借鑑能力方向，不採用來源中的錯誤敘述。",
+      "pattern": "以光和聲音在介質中的傳播差異檢核科學推論，並要求分辨觀察到的先後與真正原因。",
+      "subject": "science",
+      "observedPattern": "以光和聲音在介質中的傳播差異檢核科學推論，並要求分辨觀察到的先後與真正原因。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.csjh.kh.edu.tw/teach/exam/108%E4%B8%8A%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%AE%B5%E8%80%83/%E8%87%AA%E7%84%B6%E7%A7%91/%E4%BA%8C%E5%B9%B4%E7%B4%9A/108-1%E5%9C%8B%E4%BA%8C2%E6%AE%B5%E8%87%AA%E7%84%B6%28%E7%90%86%E5%8C%96%29%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立中山國中 108 學年度第一學期第二次段考二年級自然科公開試題",
+      "year": "108",
+      "locator": "PDF 第 3 頁第 25 題：光由空氣進入水中時，判讀光速、波長、頻率及折射相關變化。",
+      "pattern": "在介質改變情境下連結折射、光速與波長／頻率不變條件。",
+      "subject": "science",
+      "observedPattern": "在介質改變情境下連結折射、光速與波長／頻率不變條件。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先由折射率算介質中的速率，再用 t=d/v。",
+  "solutionSteps": [
+    "先讀出水樣折射率 n=1.4、路徑 d=7 m，以及真空光速 c=3.0×10^8 m/s。",
+    "先求水中的速率：v=c/n=(3.0×10^8)/1.4≈2.14×10^8 m/s。",
+    "再用傳播時間關係 t=d/v，得到 t≈7/(2.14×10^8) 秒。",
+    "計算約為 3.3×10^-8 s；檢查量級，數公尺以約 10^8 m/s 傳播，時間應落在 10^-8 秒量級。",
+    "選 A。這是理想模型值，使用題給折射率與單一路徑長度計算。"
+  ]
 }

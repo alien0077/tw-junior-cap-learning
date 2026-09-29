@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-2-iv-5-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "報告介紹校園節電方案，先說明現況，再比較兩種方案的成本與效果，最後提出選擇。這種結構的優點是什麼？",
+  "prompt": "同一份校園安全調查要向校長與低年級學生說明，哪項調整最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "讓問題、比較依據與結論彼此連貫"
+      "text": "保留相同證據與結論，分別調整術語、例子、說明速度與可追問細節。"
     },
     {
       "id": "B",
-      "text": "只呈現方案名稱而不提供依據"
+      "text": "對所有受眾使用相同術語與長度才公平。"
     },
     {
       "id": "C",
-      "text": "把結論藏起來避免檢查"
+      "text": "對校長只講情緒、對學生只念數字。"
     },
     {
       "id": "D",
-      "text": "用情緒取代成本與效果"
+      "text": "為討喜而改變調查結果。"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "先交代問題，再以共同面向比較，最後提出結論，推理鏈完整。"
+    "explanation": "受眾調整改變呈現和理解支架，不改變資料本身；可信表達維持證據與結論一致。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究報告、評論、演說與論辯能力方向（報告推理結構）；另以官方語文領域課綱核對 2-Ⅳ-5（https://www.naer.edu.tw/）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究口頭報告、直接證據、受眾、反方、資料比較與公共提案。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文口語表達與證據說服 Ab-Ⅳ-5 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-2-iv-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-2-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口頭報告、資料與主旨",
+      "observedPattern": "公立學校國文評量以口頭報告主旨、直接證據、敘述順序、事實／評價、因果反駁、方案涵蓋、受眾調整、資料比較與有證據說服要求完成公共表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "論證、受眾與反方",
+      "observedPattern": "公立學校國文評量以口頭報告主旨、直接證據、敘述順序、事實／評價、因果反駁、方案涵蓋、受眾調整、資料比較與有證據說服要求完成公共表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷兩種受眾的先備知識與需要，再調整例子與節奏而不改寫結果。",
+  "solutionSteps": [
+    "讀題定位：圈出「受眾調整」與受眾、資料、指標、限制、反方或評估條件。",
+    "整理表達：先分主旨、證據、評價與方案，再依「受眾調整改變呈現和理解支架，不改變資料本身；可信表達維持證據與結論一致。」檢查結論強度。",
+    "核對正解：選項 A 能讓聽眾追蹤資料與推理，且沒有把有限證據誇大成必然。",
+    "排除誘答：檢查是否用音量、口號、個案、情緒或挑選數據取代可核對證據。",
+    "回讀驗證：確認主張、證據、受眾、反方、限制與行動指標彼此相連。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

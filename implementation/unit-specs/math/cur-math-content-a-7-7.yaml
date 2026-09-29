@@ -1,0 +1,156 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-7-7
+  knowledgeGraphIds:
+  - kg-math-content-a-7-7
+  title: A-7-7：一元一次不等式的意義
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  fusedScope:
+    officialCurriculum: A-7-7：一元一次不等式的意義
+    curriculumIntent: A-7-7：一元一次不等式的意義
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 南一／康軒／翰林標示第三方材料僅供有限概念研究且權威與授權未核實；把可見差異落到語詞定義、候選值代入判解、數線集合／逆讀，重組為本課原創課文與互動；完整版本研究及內容審查仍 pending
+    currentEvidenceStatus: third-party-version-labeled-excerpts-read; visible-original-synthesis-traceable; publisher-authentication-rights-and-full-chapter-review-pending
+  learningGoals:
+  - 將展場讀值 18°C 以上且低於 26°C 表示成 18≤T<26，說明雙端點何以一實一空。
+  - 從一元一次不等式辨認解集是一整段數值範圍，並以數線和端點測試值相互驗證。
+  - 區分代數解集與情境限制，例如時數可連續而座位數只能取非負整數，並說明兩者交集。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 不等式表示大小關係；其解通常是一個集合或區間，不等同於方程式的單一解。
+  - ＜、＞端點不包含，≤、≥端點包含；數線以空心／實心端點和箭頭方向表示邊界與解集。
+  - 文字詞語如至少、至多、超過、低於決定關係符號；測試端點及鄰近值可檢查翻譯與方向。
+  misconceptions:
+  - 將「至少 12」寫成 x>12，錯把包含邊界的條件排除 12 歲。
+  - 把空心／實心端點搞對卻畫錯箭頭方向，或將一整段解集只列出幾個整數。
+  - 把情境額外的整數限制誤認成不等式本身的解集，例如把 x≥1 直接說成只有正整數。
+  contentFlow:
+  - 'hook: 溫度規則「至少 18」與「高於 18」只差邊界能否納入，先判 18 是否成立。'
+  - 'activate-prerequisite: 將候選讀值放回比較語句，辨別一個數何時成為不等式的解。'
+  - 'predict: 將至少、超過、至多、低於四種關係配到符號，預測端點是否包含及方向。'
+  - 'manipulate: 切換關係詞及界線，讓原創數線模型同步呈現端點、方向與測值結果。'
+  - 'observe: 以邊界、線段內與範圍外數代入，核實解集而不做代數求解。'
+  - 'explain: 說明 18≤T<26 的雙端點，以及連續讀值和整數座位限制不同。'
+  - 'formalize: 建立語詞—關係符號—數線端點—解集四種表示的相互對照。'
+  - 'guided-practice: 用濕度 40≤H<65 練習邊界代入與數線反讀。'
+  - 'transfer: 以座位數 S≥18 說明整數性是情境附加條件，不是符號本身提供。'
+  - 'exit-ticket: 以 18、20、26 檢查雙端點範圍是否正確轉成符號與線段。'
+  visualizations:
+  - 語意—符號配對板：展示至少／至多／超過／低於與 ≥／≤／＞／＜的對應，明列邊界含不含。
+  - 雙端點數線：表示 18≤T<26，18 為實心、26 為空心，區間線段和候選測試值同步呈現。
+  - 情境限制核對：把 S≥18 與座位數為整數分開呈現，區分代數範圍與可實行值。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-7-7-I01
+    component: NumberLineBlock
+    purpose: 讓學生切換不等號並觀察端點是否包含及箭頭方向，再用邊界值驗證文字條件。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        lowerTemperature: 18
+        upperTemperatureExclusive: 26
+        selectedReading: 18
+    studentActions:
+    - 先判斷 18、20、26 哪些符合，再提交後顯示數線和代入結果。
+    - 以鍵盤或觸控切換 ≥、＞、≤、＜，觀察端點與左右方向變化。
+    - 在語句中標記「至少」「高於」「至多」「低於」，連結到符號、端點和測試值。
+    - 用短句說明邊界是否納入，並指出情境是否另有整數限制。
+    visualRules:
+    - 符號改變時語句提示、端點樣式、箭頭方向與符合值表同步更新。
+    - 端點本身可作為測試值；嚴格不等式不得將界線標為通過。
+    - 實心／空心配合「含端點／不含端點」文字標籤，解集方向以箭頭和符號雙重表示。
+    - 情境整數限制獨立顯示，不覆寫原來的實數解集。
+    - 320px 窄螢幕數線可橫向鍵盤步進或改讀文字區間，不裁切端點與敘述。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-7-7-I01
+      trigger: 將 18≤T<26 畫成 18 空心或 26 實心，或誤把有限線段畫成單向射線。
+      prompt: 18°C 是否符合「至少 18」？26°C 是否符合「低於 26」？用兩個邊界決定端點型態。
+      expectedEvidence: 18 符合下限所以實心；26 不符合嚴格上限所以空心；可行讀值是兩端之間的線段。
+    feedback:
+      correct: 要求換用「至多 26」和「低於 26」說明端點差異，並用 26 直接驗證。
+      incorrect: 第一提示讓學生代入邊界數字；重試後提供端點含／不含的語意提示，仍不直接替學生畫完整數線。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只借用可操作表示和即時回饋形式；本課原創語詞配對、端點狀態、範圍交集與測試值，不採用 PhET 的特定模型或素材。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "參考先預測再操作並用資料驗證的活動流程；至少／未滿年齡情境、數線和錯誤路徑皆為本課獨立撰寫。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "端點提供可讀的含／不含名稱，控制項可用鍵盤變更符號，並將解集方向以文字和箭頭共同呈現。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以標題、主內容與有序區段導覽語意配對、數線、測試值及限制交集，不需拖曳即可完成任務。"
+  capTransfer:
+    questionType: 座位數與整數情境限制
+    stemConstraint: 活動至少保留18席，另有上限24席；以座位數S寫出不等式範圍，說明S為整數是情境限制，並測試17、18、20、24、25。
+    requiredResponse: 寫18≤S≤24；18、20、24符合而17、25不符合；S取整數來自座位意義，不是符號自帶。
+    scoring: 正確雙界不等式 1、端點及範圍測試 1、整數情境界線 1
+  exitTicket:
+    prompt: 溫控規則為18≤T<26。若學生把18畫空心、26畫實心，請用兩個端點和一個內部值指出修正理由。
+    successCriteria:
+    - 寫出18≤T<26，說明下界含入、上界排除。
+    - 數線畫18實心、26空心，中間連成線段。
+    - 代入18與20成立、26不成立，作為邊界及內部證據。
+  expressionExtension:
+    applicable: true
+    task: 自選一個「至少／至多」的校園規則，寫出不等式、數線和一個邊界測試，解釋端點如何決定可行集合。
+    constraint: 先由學生撰寫；回饋只檢查語詞、符號、端點和方向一致性，不代寫答案。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 不等號、端點和箭頭初始隱藏答案；提交端點預測後才顯示實／空點及可行區間。
+  - 對 18≤T<26，18 實心、26 空心，20 通過、26 不通過；切換關係時語句和數線同步改變。
+  - 將至少誤畫為嚴格大於時，端點測試提示命中；第二次錯誤後才顯示部分圖示示範。
+  - 320px、375px、768px 及鍵盤均可選端點、讀標籤、改符號與取測試值；無動畫仍有文字區間表示。
+  - 座位遷移活動分清18≤S≤24與S為整數的情境界線，端點值與越界值都有測試結果。
+  - 文字 fallback 顯示關係式、端點包含狀態、箭頭方向及邊界測試，不依賴拖曳或顏色。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-7-7
+    role: official-curriculum-source-of-truth
+  - url: https://www.scribd.com/document/932850305/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E4%B8%83%E4%B8%8B
+    locator: 第三方版本標示材料；文件頁112–114搜尋索引節錄；全文不可讀，權威與授權待核實；查核2026-09-27
+    role: limited-version-labeled-teaching-evidence
+  - url: https://www.scribd.com/document/777687263/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%BA%B7%E8%BB%92%E7%89%88-%E4%B8%83%E4%B8%8B
+    locator: 第三方版本標示材料；文件頁96–104附近；Scribd顯示All Rights Reserved；查核2026-09-27
+    role: limited-version-labeled-teaching-evidence
+  - url: https://www.scribd.com/document/853353478/B2%E5%9F%BA%E7%A4%8EB%E7%BF%B0%E6%9E%97%E7%89%88%E5%85%A81121224%E5%9D%87%E4%B8%80
+    locator: 第三方版本標示材料；文件頁103–106索引節錄；權威與授權待核實；查核2026-09-27
+    role: limited-version-labeled-teaching-evidence

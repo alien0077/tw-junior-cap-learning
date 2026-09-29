@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-2-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-2／比較分類排序」task, what is the best way to prepare question 3?",
+  "prompt": "Which drink is the best value if the choices are 300 mL for $30, 500 mL for $45, and 700 mL for $70?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-2／比較分類排序."
+      "text": "700 mL for $70"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-2／比較分類排序."
+      "text": "500 mL for $45"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-2／比較分類排序."
+      "text": "300 mL for $30"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-2／比較分類排序."
+      "text": "They all have the same price per mL"
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-2／比較分類排序, question 3."
+    "value": "B",
+    "explanation": "每 100 mL 分別為 $10、$9、$10；第二款單價最低，因此選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%80%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87_1.pdf",
+    "sourceLocator": "PDF第2頁第29題：讀取遊樂場票價表並依不同年齡組合計費；本題改用單位價格比較。",
+    "authoringNote": "以英語課程知識點與公立學校公開段考所呈現的資料判讀能力為參照；題幹、數據、選項、答案、解析與解題活動均獨立撰寫，未複製試卷內容。課程版本研究與全案內容審查未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%80%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E6%96%87_1.pdf",
+      "title": "高雄市立國昌國中110學年度第1學期第2次段考一年級英語科試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第2頁第29題：讀取遊樂場票價表並依不同年齡組合計費；本題改用單位價格比較。",
+      "observedPattern": "票價表閱讀要求將題目條件對應到表格後計算總價；此題以每單位容量價格作全新比較，不沿用票價或資料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "不同容量不能只比總價；先換算成每 100 mL 的單價，選單位價格最低的一款。",
+  "solutionSteps": [
+    "題目比較的是 best value，需比較每單位容量的成本，而非包裝總價。",
+    "第一款：$30 ÷ 300 mL × 100 = 每 100 mL $10。",
+    "第二款：$45 ÷ 500 mL × 100 = 每 100 mL $9。第三款：$70 ÷ 700 mL × 100 = 每 100 mL $10。",
+    "最低單價是 $9，因此選 500 mL for $45，也就是 B。",
+    "回算確認 $9／100 mL 乘 5 份為 $45，沒有把容量較大誤認為必然較划算。"
+  ]
 }

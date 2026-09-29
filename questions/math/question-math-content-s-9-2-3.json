@@ -2,7 +2,7 @@
   "id": "question-math-content-s-9-2-3",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "兩三角形三組對應邊比皆為 5：7，可用哪一種判定說明相似？",
+  "prompt": "三角形甲三邊為 3、4、5，三角形乙三邊為 6、8、10。依哪個判定可證明兩三角形相似？",
   "options": [
     {
       "id": "A",
@@ -10,33 +10,76 @@
     },
     {
       "id": "B",
-      "text": "SSS"
-    },
-    {
-      "id": "C",
       "text": "SAS"
     },
     {
+      "id": "C",
+      "text": "SSS"
+    },
+    {
       "id": "D",
-      "text": "只靠一角相等"
+      "text": "只因為都有直角"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "三組對應邊成比例，使用 SSS 相似判定。"
+    "value": "C",
+    "explanation": "對應三邊比例 3：6＝4：8＝5：10＝1：2，三邊成比例，符合 SSS 相似判定，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的相似性質 題型與官方課綱 KG kg-math-content-s-9-2",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形相似判定、對應與比例推理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的三角形相似方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把三邊依大小配對，確認三個比例完全一致。",
+  "solutionSteps": [
+    "配對 3↔6、4↔8、5↔10。",
+    "檢查 3：6＝1：2。",
+    "檢查 4：8 與 5：10 也都是 1：2。",
+    "三組對應邊成比例，符合 SSS。",
+    "選 C。"
+  ]
 }

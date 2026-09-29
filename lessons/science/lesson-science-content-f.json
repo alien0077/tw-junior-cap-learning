@@ -48,7 +48,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "操作流域中的降雨、植被、坡度與污染輸入，追蹤四個地球圈層的物質交換並修正環境因果解釋。",
@@ -104,6 +104,17 @@
         ],
         "answer": "A",
         "feedback": "環境結論要連回資料、機制、時間與空間範圍；保留限制才能知道模型還需要什麼證據。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "相同降雨下，移除植被後逕流與河川濁度增加、下游生物指標下降。哪個結論最符合系統證據？",
+        "options": [
+          "植被改變可能影響土壤穩定、逕流與沉積物，進而影響水圈與生物圈；仍需控制坡度、測點、雨強與其他污染來源",
+          "一次暴雨已證明所有下游生物都由植被單一因素造成，因此不必做對照或長期觀察",
+          "濁度增加只代表大氣圈改變，與土壤、河川、植被和生物沒有物質交換"
+        ],
+        "answer": "A",
+        "feedback": "四圈層透過水、沉積物與能量互相連結；相關資料可支持機制假說，但不能跳過尺度、時間與替代因子控制。"
       }
     ]
   },
@@ -111,45 +122,55 @@
   "lessonScope": "theme",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "F：地球環境；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；F：地球環境 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「地球環境」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為theme節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「F：地球環境」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；F：地球環境 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「F：地球環境」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與地球科學教材定位",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "九年級自然地球科學相關章節；公開校方課程計畫定位全球氣候、地球環境與環境變遷",
-      "sourceUrl": "https://www.dyjhs.tyc.edu.tw/modules/tad_uploader/index.php?cat_sn=124&cfsn=2169&name=5-1-1-6%25E8%2587%25AA%25E7%2584%25B6%25E7%25A7%2591%25E5%25AD%25B8.pdf&op=dlfile",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；F：地球環境 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "研究公開課程計畫所能確認的地球環境、環境變遷與科學探究方向，並將上位主題改寫為四圈層互動、物質路徑與尺度判讀；公開計畫不是完整課本，未據此捏造逐頁內容。",
-      "copyrightBoundary": "只使用公開課程計畫的章節定位與教學方向；本課的說明、例證、流域資料、互動步驟與回饋均為原創，不複製課本、習作、教師用書、圖片或答案。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林版國中自然公開課程計畫與公開教案資源",
-      "subject": "science",
-      "chapterLocator": "翰林自然九年級公開課程計畫的地球環境章節及公開教案平台；以章節與探究方向交叉定位",
-      "sourceUrl": "https://lessonplan.hle.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "將可公開核對的地球環境、環境系統與探究活動方向融合為圈層、路徑、證據與限制的學習線索，並自行加入流域模型、控制變因和方案評估。",
-      "copyrightBoundary": "公開平台與校方課程計畫只作定位和方向研究；本課不複製翰林課文、插圖、活動單、題目、答案或教師用語，正文與活動均為自編。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「F：地球環境」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -157,9 +178,26 @@
       "publisher": "nani",
       "edition": "南一版地球科學公開課程計畫交叉資料",
       "sourceType": "public-web",
-      "sourceLocator": "公開校方課程計畫標示南一版自然九年級教材，定位全球氣候與環境變遷；未取得完整出版社課本頁面。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["環境議題需連結自然系統與人類活動，而非只列出現象。", "地球環境主題可由觀察、證據與因果關係組織。"], "representations": ["以地球圈層、物質路徑與環境變因整理概念。"], "examplesOrEvidence": ["公開計畫支持環境變遷與探究方向；本課另創流域降雨和植被資料。"], "misconceptions": ["把課程計畫標題當成完整教材，或把單次環境變化直接當成唯一因果。"], "assessmentEmphasis": ["要求學生說明證據、機制、尺度與結論限制。"]},
+      "sourceLocator": "https://www.dyjhs.tyc.edu.tw/modules/tad_uploader/index.php?cat_sn=124&cfsn=2169&name=5-1-1-6%25E8%2587%25AA%25E7%2584%25B6%25E7%25A7%2591%25E5%25AD%25B8.pdf&op=dlfile；公開校方課程計畫標示南一版自然九年級教材，定位全球氣候與環境變遷；未取得完整出版社課本頁面。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "環境議題需連結自然系統與人類活動，而非只列出現象。",
+          "地球環境主題可由觀察、證據與因果關係組織。"
+        ],
+        "representations": [
+          "以地球圈層、物質路徑與環境變因整理概念。"
+        ],
+        "examplesOrEvidence": [
+          "公開計畫支持環境變遷與探究方向；本課另創流域降雨和植被資料。"
+        ],
+        "misconceptions": [
+          "把課程計畫標題當成完整教材，或把單次環境變化直接當成唯一因果。"
+        ],
+        "assessmentEmphasis": [
+          "要求學生說明證據、機制、尺度與結論限制。"
+        ]
+      },
       "licenseBoundary": "只採用公開課程計畫可確認的章節定位與教學方向；完整課本、習作和教師用書未公開，正文不複製或改寫受保護內容。"
     },
     {
@@ -167,8 +205,25 @@
       "edition": "康軒國中自然公開影音主題結構",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然科公開影音頁面的地球環境相關主題定位與活動形式。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["由生活現象進入自然概念，再以圖像或操作活動檢查理解。", "環境現象需要同時考慮物質流動、條件改變與生物回應。"], "representations": ["以圈層圖、流程箭頭和可調變因模型呈現跨領域關係。"], "examplesOrEvidence": ["公開頁面可核對主題與影音活動形式；本課自行設計虛擬流域與泥沙影響鏈。"], "misconceptions": ["把動畫或示意圖當成真實比例，也把所有箭頭誤讀成同一種因果。"], "assessmentEmphasis": ["從操作前預測、操作後資料到限制說明形成完整推理。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "由生活現象進入自然概念，再以圖像或操作活動檢查理解。",
+          "環境現象需要同時考慮物質流動、條件改變與生物回應。"
+        ],
+        "representations": [
+          "以圈層圖、流程箭頭和可調變因模型呈現跨領域關係。"
+        ],
+        "examplesOrEvidence": [
+          "公開頁面可核對主題與影音活動形式；本課自行設計虛擬流域與泥沙影響鏈。"
+        ],
+        "misconceptions": [
+          "把動畫或示意圖當成真實比例，也把所有箭頭誤讀成同一種因果。"
+        ],
+        "assessmentEmphasis": [
+          "從操作前預測、操作後資料到限制說明形成完整推理。"
+        ]
+      },
       "licenseBoundary": "只閱讀公開頁面的主題與結構資訊，不複製影音字幕、畫面、題目、選項、提示或解答；本課的模型和文字均為獨立創作。"
     },
     {
@@ -176,16 +231,43 @@
       "edition": "翰林版自然公開教案平台與校方課程計畫交叉定位",
       "sourceType": "public-web",
       "sourceLocator": "https://lessonplan.hle.com.tw/；另以公開校方課程計畫定位地球環境章節；完整出版社教材頁面未取得。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["地球環境的學習可結合真實地方、資料判讀與環境責任。", "探究活動應讓學生提出問題、比較條件並說明證據範圍。"], "representations": ["用地方流域剖面、環境連鎖圖與指標表連接觀察和地球系統。"], "examplesOrEvidence": ["公開教案平台提供活動導向的研究入口；本課另創校園排水、透水鋪面與植被比較任務。"], "misconceptions": ["把一個地點的改善宣稱成整個地區都改善，或忽略尺度與季節。"], "assessmentEmphasis": ["要求主張同時交代觀測地點、時間、指標、控制條件與限制。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "地球環境的學習可結合真實地方、資料判讀與環境責任。",
+          "探究活動應讓學生提出問題、比較條件並說明證據範圍。"
+        ],
+        "representations": [
+          "用地方流域剖面、環境連鎖圖與指標表連接觀察和地球系統。"
+        ],
+        "examplesOrEvidence": [
+          "公開教案平台提供活動導向的研究入口；本課另創校園排水、透水鋪面與植被比較任務。"
+        ],
+        "misconceptions": [
+          "把一個地點的改善宣稱成整個地區都改善，或忽略尺度與季節。"
+        ],
+        "assessmentEmphasis": [
+          "要求主張同時交代觀測地點、時間、指標、控制條件與限制。"
+        ]
+      },
       "licenseBoundary": "只採公開平台與校方課程計畫的定位、方向與活動形式；不複製課文、插圖、教案文字、習題、答案或教師用語。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["四個地球圈層透過水、氣體、沉積物、元素與能量交換而形成整體環境。", "環境現象必須用可觀察證據、作用機制與適用尺度共同解釋。", "人類活動會改變地表條件，也會受到天氣、水文、生態與地質條件限制。"],
-    "versionDifferences": ["南一公開課程計畫較能定位環境變遷與地球科學議題，康軒公開資源較明顯呈現現象引入與活動結構，翰林公開平台較容易觀察地方情境與探究導向；三者完整教材頁面均未在本研究中取得。"],
-    "originalAdditions": ["以一場降雨和一條流域作為貫穿案例，讓四圈層的概念有可追蹤的物質路徑。", "設計可調降雨、植被、坡度與污染輸入的地球系統互動模型，要求學生比較控制條件。", "加入尺度、相關與因果、模型限制及環境方案副作用的判讀，讓學習從名詞辨識延伸到證據式決策。"],
-    "llmSynthesisNote": "本課由 LLM 依官方自然科課綱 F 主題及其 Fa、Fb、Fc 子節點整理共同概念，再比對目前可取得的南一、康軒、翰林公開定位與活動方向；在不複製出版社受保護內容的前提下，以圈層、物質路徑、可測證據與尺度限制重新安排一篇單元專屬課文。正文、例證、互動模型、引導問題與自我檢核均針對 F 上位整合節點重新設計，尚未進行 Terra 第二輪 AI 審查，因此維持 draft。"
+    "commonCore": [
+      "三版本公開線索共同支持以岩石圈、水圈、大氣圈與生物圈的互動理解地球環境。",
+    "流域物質流、污染因果、生物累積、資源循環與永續決策資料判讀是共同能力核心。",
+    "從上游排放到下游生物體的證據鏈要同時記錄採樣位置、時間及污染物濃度，避免把空間相關直接當成唯一因果。"
+    ],
+    "versionDifferences": [
+      "南一公開定位偏向地球圈層與環境現象；康軒線索偏向生態、污染與資源；翰林線索偏向流域資料、證據因果與決策限制。公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以一場降雨在流域中的路徑工作台串接圈層、污染源、洪峰與生物反應，標註物質與能量跨界移動。",
+    "把單一因素必然造成複雜環境結果、回收等於沒有成本、一次水樣就能證明污染來源列為單元迷思診斷。",
+    "以流域多站點水質與生物累積資料比較治理前後變化，指出替代污染源、基準值與資源回收副作用仍需查證。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校公開自然科試題／課程資料能力方向，重新組織地球圈層、流域、污染、生態、資源循環與永續決策；10 題均已逐題核對單元符合度、唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -254,7 +336,42 @@
     "model": "general",
     "goal": "以安全探究步驟理解「地球環境」並用證據修正解釋。",
     "mission": "針對「F：地球環境」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"earth-environment-systems","objective":"以物質循環、能量流與人類活動資料分析地球環境系統。","predictionPrompt":"若改變土地覆蓋，水循環、地表溫度與生物棲地會如何連動？","steps":[{"action":"繪製水、碳與能量在大氣、地表和生物間的流向","equation":"cycle=reservoirs+transfers"},{"action":"調整土地覆蓋與降雨，記錄逕流、溫度和棲地指標","equation":"impact=f(cover,rainfall)"},{"action":"比較方案並標示時間尺度、資料來源與不確定性","equation":"claim=trend+limitations"}]},
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "讓學習者以水、碳與能量的儲庫／通量模型，控制降雨與土地覆蓋資料，分析逕流、地表溫度、棲地與人類活動的連動，並標示時間尺度和證據限制。",
+      "predictionPrompt": "請先預測：把透水地表改成道路或屋頂時，在相同降雨下逕流、地表溫度、碳儲存與棲地指標如何變化？請寫出至少兩項控制條件。",
+      "steps": [
+        {
+          "action": "在系統圖標出水、碳與能量的主要儲庫、輸入、輸出與轉移方向",
+          "equation": "系統收支＝儲庫變化＋輸入－輸出",
+          "id": "step-1",
+          "reason": "環境變化不是單一物質從一處移到另一處的清單；先標出儲庫與通量，才能判斷土地變化會改變哪個收支環節。",
+          "feedback": "若把循環畫成單向流程，請補上蒸發、降水、分解、光合作用或逕流的回流箭頭，並標記尚未量測的通量。"
+        },
+        {
+          "action": "固定降雨量與坡度，一次改變透水地表、植被覆蓋或硬鋪面，記錄逕流量、地表溫度、土壤水分與棲地指標",
+          "equation": "結果差異＝土地覆蓋效應＋降雨／坡度等控制條件",
+          "id": "step-2",
+          "reason": "同一場雨在不同覆蓋下可能產生不同逕流、熱與棲地結果；一次只改一個主要因子，才能把觀察差異連到土地覆蓋。",
+          "feedback": "若同時改變降雨與覆蓋，請回到相同降雨基準；若只記錄逕流，請補上溫度、土壤水分與棲地的可能連動。"
+        },
+        {
+          "action": "比較綠地、透水鋪面、雨水滯留與硬鋪面方案，標出短期事件資料、長期趨勢、來源與不確定性",
+          "equation": "環境結論＝資料趨勢＋空間／時間尺度＋限制",
+          "id": "step-3",
+          "reason": "一次暴雨或單一測點不能代表整季氣候或整個流域；方案評估需同時看防洪、補注、降溫、生物棲地、成本與維護。",
+          "feedback": "若用單次降雨就宣布方案長期有效，請補上多季節資料、對照地點、極端事件與維護限制。"
+        },
+        {
+          "action": "提出人類活動與環境系統的條件式結論，並指定下一輪需要補測的儲庫或通量",
+          "equation": "支持關係≠唯一因果；下一步＝補測關鍵收支項",
+          "id": "step-4",
+          "reason": "環境系統存在時間延遲、空間外溢與多重因子；指出未知項能把模型從漂亮圖示轉成可重做的探究設計。",
+          "feedback": "若結論只寫『人類活動造成所有變化』，請縮小範圍、列出替代因子，並指定一項能區分它們的測量。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以物質循環、能量流與人類活動資料分析地球環境系統。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

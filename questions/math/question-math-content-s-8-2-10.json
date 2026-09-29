@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-2-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若凸多邊形邊數增加 1，內角和增加多少？",
+  "prompt": "下列哪項是使用 (n−2)×180° 計算內角和時必須注意的條件？",
   "options": [
     {
       "id": "A",
-      "text": "180°"
+      "text": "只要有 n 個點就一定可用"
     },
     {
       "id": "B",
-      "text": "90°（將題目中的 1 代入順序弄錯）"
+      "text": "圖形應是凸 n 邊形，且 n≥3"
     },
     {
       "id": "C",
-      "text": "270°（將題目中的 1 代入順序弄錯）"
+      "text": "圖形必須是正多邊形"
     },
     {
       "id": "D",
-      "text": "360°（將題目中的 1 代入順序弄錯）"
+      "text": "每個內角都必須相等"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "內角和公式每增加一邊，增加一個三角形，故增加 180°。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。"
+    "value": "B",
+    "explanation": "公式以從一個頂點分成 n−2 個三角形為基礎，適用於凸 n 邊形，且多邊形至少有 3 邊，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 凸多邊形的內角和 題型與官方課綱 KG kg-math-content-s-8-2",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供凸多邊形內角和能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的多邊形能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-8-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "凸多邊形內角和、三角形分割、邊數反推、正多邊形內角與內外角辨識",
+      "observedPattern": "公開學校數學試題常以多邊形三角形分割、內角和公式、反推邊數與正多邊形角度考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "凸多邊形內角和、三角形分割、邊數反推、正多邊形內角與內外角辨識",
+      "observedPattern": "公開學校數學試題常以多邊形三角形分割、內角和公式、反推邊數與正多邊形角度考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先檢查公式的幾何前提，再進行代數計算。",
+  "solutionSteps": [
+    "公式的推導依賴三角形分割。",
+    "凸多邊形可由一個頂點不重疊分割。",
+    "多邊形至少有 3 邊。",
+    "不要求正多邊形或各角相等。",
+    "選 B。"
+  ]
 }

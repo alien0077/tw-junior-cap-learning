@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for math d-IV-2."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/'lessons/math/lesson-math-performance-d-iv-2.json'
+REPORT=ROOT/'implementation/reports/math-performance-d-iv-2-first-pass-review.json'
+URLS={'nani':'https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf','kanghsuan':'https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110','hanlin':'https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf'}
+def rec(p,c,r,m,a):
+ return {'publisher':p,'edition':f'{p} 公立校方數學課程計畫章節級證據','sourceType':'public-web','sourceLocator':f'{URLS[p]}；機率、樹狀圖與資料推論評量欄位；核讀 2026-09-21。','reviewedAt':'2026-09-21','findings':{'concepts':[c,'公開結構支持把樣本空間、事件與條件機率分開，並用計數或樹狀圖說明結果。'],'representations':[r],'examplesOrEvidence':['本課的抽球、抽卡與兩階段選擇情境均為原創，只研究公開課程的能力方向。'],'misconceptions':[m],'assessmentEmphasis':[a]},'licenseBoundary':'只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。'}
+def main():
+ d=json.loads(LESSON.read_text(encoding='utf-8')); assert d['id']=='lesson-math-performance-d-iv-2' and d['reviewStatus']=='draft'
+ d['title']='d-Ⅳ-2：用樹狀圖追蹤機率路徑'
+ d['content']={'summary':'機率題最容易錯在漏掉路徑或把前一次結果當成下一次仍相同。本課從不放回抽球與兩階段密碼選擇建立樣本空間，讓學生用樹狀圖列出每條路徑、沿路相乘並把符合事件的路徑相加；同時比較有放回、無放回與條件資訊出現時，分母為何會改變。','sections':[{'heading':'先完整列出可能路徑','body':'兩次抽取不是只看顏色總數，而是先列第一步與第二步所有可能。樹狀圖的每個終點代表一條完整結果，漏掉一個終點就會改變樣本空間。'},{'heading':'沿路相乘、同事件相加','body':'一條連續路徑同時發生時，將各段機率相乘；若多條不同路徑都符合事件，則把路徑機率相加。這兩種運算對應不同的語意，不能只看算式外觀。'},{'heading':'有放回與無放回不同','body':'有放回時第二次的母體恢復，條件機率可能和第一次相同；無放回時母體數量與顏色比例改變，第二段分支必須重新計算。先畫分支再決定分母。'},{'heading':'條件資訊會縮小世界','body':'知道第一球是紅色後，樣本空間已經不是原來全部結果；條件機率要在新的條件範圍內計算。獨立性也不能只因兩事件看起來不同就宣稱，必須比較條件機率。'}]}
+ d['studyHighlights']=['先定義試驗、樣本空間與事件，再畫完整樹狀圖。','同一路徑相乘，不同符合路徑相加。','分辨有放回與無放回，第二段分支的分母會隨條件改變。','得到條件資訊後重建可行世界，檢查是否真的獨立。']
+ d['teaching']={'body':[{'id':'hook','phase':'hook','heading':'兩次抽球到底有幾種結果','body':'袋中有紅、藍球，先請學生估計連抽兩次得到一紅一藍的機率，再要求畫出第一球與第二球的分支。比較只列顏色組合與列出抽取順序的差異，讓漏路徑問題被看見。'},{'id':'explain','phase':'explain','heading':'樹狀圖的三種標記','body':'在每條分支標示條件機率、在終點寫完整結果、在事件符合的終點打記號。示範一條路徑相乘、兩條路徑相加，並用總和檢查所有終點是否形成完整樣本空間。'},{'id':'worked-example','phase':'worked-example','heading':'無放回的第二段分母','body':'盒中有 2 紅 3 藍，無放回抽兩次；第一球紅、第二球藍的機率為 2/5×3/4。若要求一紅一藍，還要加上先藍後紅的路徑，並說明為何兩條分支的分母都不同於有放回。'},{'id':'guided-practice','phase':'guided-practice','heading':'條件出現後重新計算','body':'改成知道第一球已是紅球，學生只在剩下的球中判斷第二球顏色；系統要求先圈出新的條件樣本空間，再選分母。若學生沿用 5 作分母，回饋指出錯誤在條件世界而非乘法。'},{'id':'transfer','phase':'transfer','heading':'兩階段密碼選擇','body':'密碼第一碼選顏色、第二碼選圖形，部分選項受規則限制。學生畫樹狀圖計算指定事件，並判斷兩次選擇是否獨立；若第二碼選項會隨第一碼改變，就必須保留條件機率。'},{'id':'reflect','phase':'reflect','heading':'機率運算的語意檢查','body':'出口題請學生在自己的算式上標記每個乘號代表同一路徑、每個加號代表不同路徑，並寫出一次分母改變的原因。最後用條件機率比較是否能宣稱獨立，不接受只寫「看起來互不影響」。'}],'summary':['先畫完整樣本空間與事件路徑，再開始計算。','連續發生沿路相乘，多條符合路徑再相加。','有放回與無放回會改變第二段分支與分母。','條件資訊縮小樣本空間，獨立性必須用條件機率檢查。'],'exitCheck':[{'prompt':'為什麼一紅一藍要考慮兩條順序？','expectedEvidence':'先紅後藍與先藍後紅是不同完整路徑，兩者都符合事件。'},{'prompt':'無放回第二次為什麼不能仍用原來的分母？','expectedEvidence':'第一次取走球後母體數量改變，第二段條件機率的分母要更新。'},{'prompt':'如何判斷兩事件是否獨立？','expectedEvidence':'比較條件機率與原機率是否相同，不能只靠直覺。'}]}
+ d['interactive']={'type':'guided-choice','goal':'以樹狀圖追蹤路徑、條件與事件機率。','scenario':'切換有放回／無放回，觀察分支、分母與指定事件機率同步改變。','variables':[{'symbol':'p','meaning':'目前分支的條件機率'},{'symbol':'n','meaning':'尚未抽取的球數'}],'steps':[{'id':'step-1','prompt':'計算一紅一藍要先做什麼？','options':['列出先紅後藍與先藍後紅兩條路徑','只看紅球數量','直接把兩色相加'],'answer':'A','feedback':'事件包含兩種抽取順序，必須先完整列出。'},{'id':'step-2','prompt':'同一路徑的兩段機率如何合併？','options':['相乘','相加','取較大值'],'answer':'A','feedback':'連續條件同時發生，沿路使用乘法。'},{'id':'step-3','prompt':'知道第一球是紅球後，第二段分母怎麼決定？','options':['依剩餘球數重新計算','永遠使用原來總數','不需要分母'],'answer':'A','feedback':'條件資訊改變可行世界，無放回時母體也同步減少。'}]}
+ d['teaching']['body'][0]['body'] += ' 並要求學生把每個終點寫成有順序的完整結果，說明為何同色不同順序不能直接合併。'
+ d['teaching']['body'][1]['body'] += ' 最後讓學生用所有終點機率相加為 1 的方式檢查樹狀圖是否漏掉分支。'
+ d['teaching']['body'][3]['body'] += ' 再比較有放回與無放回的第二段分母，讓學生指出條件世界改變的具體位置。'
+ d['teaching']['body'][4]['body'] += ' 完成後以條件機率和原機率比較，說明獨立性要靠計算證據而非情境名稱判斷。'
+ d['versionResearch']=[rec('nani','由樣本空間、事件與基本機率建立計數路徑','結果表、樹狀圖與分支機率的互相轉換','只列顏色不列順序，導致漏掉事件路徑','完整核對樣本空間、路徑運算與事件判斷的理由'),rec('kanghsuan','以操作或樹狀圖呈現多階段試驗與條件變化','有放回、無放回與分支標記的同步變化','第二次仍沿用第一次分母，忽略條件改變','操作後完整解釋分母與條件機率如何改變'),rec('hanlin','在情境資料中比較條件機率與獨立性','抽取、選擇、條件資訊與事件敘述的互換','把不同事件直覺當成獨立，或忽略條件世界','評估路徑計算、條件判斷與推論界線是否有證據')]
+ d['fusionRecord']={'commonCore':['三版本公開結構共同支持以樣本空間與事件理解機率。','多階段試驗可用樹狀圖列出路徑，沿路相乘、跨路徑相加。','放回狀態、條件資訊與獨立性會影響分支及分母。'],'versionDifferences':['南一證據較突顯樣本空間與計數；康軒較突顯操作及樹狀圖；翰林較突顯情境條件與獨立性判斷。這是公開課程計畫層級差異，不宣稱完整教材差異。'],'originalAdditions':['以無放回抽球活動具體診斷第二段分母更新與剩餘母體。','將條件資訊轉成重新縮小樣本空間的操作並要求標記分支。','以兩階段密碼情境轉移到獨立性判斷與條件機率比較。'],'llmSynthesisNote':'本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計機率路徑、樹狀圖、條件與獨立性。正文、例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。'}
+ d['updatedAt']='2026-09-21'; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ REPORT.write_text(json.dumps({'unit':'d-Ⅳ-2：用樹狀圖追蹤機率路徑','lessonId':d['id'],'status':'first-pass-ai-review-complete','reviewStatus':'draft','checks':{'unitSpecificOriginalContent':True,'threeVersionResearchRecords':True,'fusionRecordPresent':True,'interactivePredictionManipulationExplanation':True,'terraSecondPass':'pending'},'reviewedAt':'2026-09-21'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print(json.dumps({'lesson':str(LESSON.relative_to(ROOT)),'reviewStatus':d['reviewStatus']},ensure_ascii=False))
+if __name__=='__main__': main()

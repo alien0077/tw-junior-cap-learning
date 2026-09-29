@@ -2,41 +2,76 @@
   "id": "question-chinese-classical-word-meaning-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "詞性會影響？",
+  "prompt": "「雙兔傍地走」中的「走」在古文中最接近哪個意思？",
   "options": [
     {
       "id": "A",
-      "text": "句中功能與解釋"
+      "text": "散步"
     },
     {
       "id": "B",
-      "text": "字體"
+      "text": "奔跑"
     },
     {
       "id": "C",
-      "text": "頁碼"
+      "text": "離開某地"
     },
     {
       "id": "D",
-      "text": "作者年齡"
+      "text": "行走去買東西"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ab-iv-6"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的語境、結構與功能線索判斷；其他選項不符合題幹條件。"
+    "value": "B",
+    "explanation": "此句描寫兔子快速奔跑，古義的走不等同現代語常說的慢步行走。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-classical-word-meaning-2.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究古今詞義、詞性、搭配與語境判讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫文言詞義題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-classical-word-meaning"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-classical-word-meaning",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古今詞義、語詞搭配與語境",
+      "observedPattern": "公立學校國文評量把古今詞義、詞性、固定搭配與文言語境放入句子判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言詞義、詞性與閱讀理解",
+      "observedPattern": "公立學校國文評量把古今詞義、詞性、固定搭配與文言語境放入句子判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "遇到古今義變先列現代直覺，再用主語、動作速度與篇章畫面校正。",
+  "solutionSteps": [
+    "讀題定位：圈出「走的古義」與目標詞，確認題目要判斷古今義、詞性、搭配或查證流程。",
+    "建立語境證據：觀察主語、動作、前後詞與時代情境，再區分現代直覺與古文用法；本題核心是「此句描寫兔子快速奔跑，古義的走不等同現代語常說的慢步行走。」",
+    "核對正解：選項 B「A」能放回原句並保留事件與語意。",
+    "排除誘答：檢查是否把現代義硬套、忽略詞性、只按字面猜，或補出文本沒有交代的心理與因果。",
+    "結論回查：以注釋或可靠字典查證，再把義項代回完整句子，確認前後事件與詞語結構連貫。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

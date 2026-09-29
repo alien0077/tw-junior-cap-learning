@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-7-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-7／人事時地物提問」task, what is the best way to prepare question 5?",
+  "prompt": "A: ______?\nB: Because the lift stopped between floors, we used the stairs.\nChoose the question that asks for the cause of our choice.",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-7／人事時地物提問."
+      "text": "Where did you use the stairs?"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-7／人事時地物提問."
+      "text": "When did the lift stop?"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-7／人事時地物提問."
+      "text": "How did you reach the lobby?"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-7／人事時地物提問."
+      "text": "Why did you use the stairs?"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-7"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-7／人事時地物提問, question 5."
+    "value": "D",
+    "explanation": "答句的 Because 子句提供改走樓梯的原因；因此問句應以 Why 詢問因果。C 雖問到抵達方式，但不是要求解釋選擇的原因。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.tcjh.tyc.edu.tw/uploads/1548635646492gsGMmT1l.pdf",
+    "sourceLocator": "桃園市立自強國中公開原卷：printed page 1, grammar-choice question 2。只取命題能力／資料閱讀模式，不重製原題。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開英語試題之精確 item-level pattern-only 證據獨立重寫；未複製原題、選項、圖表或答案。題目維持 draft，尚待完整版本研究與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-7"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.tcjh.tyc.edu.tw/uploads/1548635646492gsGMmT1l.pdf",
+      "title": "桃園市立自強國中107學年度第一學期八年級第一次段考英語科試題",
+      "year": "107-1",
+      "subject": "english",
+      "locator": "printed page 1, grammar-choice question 2",
+      "observedPattern": "只參考第2題的人事時地物疑問、回答配對或資訊定位能力；只參考原卷疑問詞辨識與閱讀問答模式；不複製原題、選項、語料或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先辨認 because 引出的因果，再看題目問的是「為何如此決定」還是「實際怎麼做」；why 與 how 不可只憑同一段答案混選。",
+  "solutionSteps": [
+    "句中 because the lift stopped between floors 是理由，後半句 used the stairs 是採取的行動。",
+    "題目明確問 cause of our choice，資訊缺口是做出選擇的原因，因此要用 Why。",
+    "Why did you use…? 是過去式疑問句：did 已標示過去，主要動詞 use 回到原形。",
+    "C 的 How did you reach…? 會詢問到達方法；答句雖提到樓梯，但不直接回答方法細節。",
+    "D 直接追問改走樓梯的原因，且可由 Because 子句作答，所以選 D。"
+  ]
 }

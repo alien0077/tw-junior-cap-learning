@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-13-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年4月7日校園實驗室的觀察中，針對「Eb-Ⅳ-13：作用力與反作用力」提出可檢驗的科學問題，若比較 5 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "研究兩台小車作為一個整體時，車與車之間的碰撞力應如何處理？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Eb-Ⅳ-13：作用力與反作用力」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "把碰撞力列為整體的兩個外力"
     },
     {
       "id": "B",
-      "text": "研究「Eb-Ⅳ-13：作用力與反作用力」時只測量5組中的一組就直接下結論"
+      "text": "車間力屬於系統內力，理想上成對抵消；仍要檢查軌道等外力"
     },
     {
       "id": "C",
-      "text": "研究「Eb-Ⅳ-13：作用力與反作用力」時只改變光照時間，其餘條件一致，設置5組、每組取樣15份並各重複測量4次"
+      "text": "只保留較重車受到的碰撞力"
     },
     {
       "id": "D",
-      "text": "研究「Eb-Ⅳ-13：作用力與反作用力」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "因內力抵消，所以整體一定不受任何外力"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-13"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Eb-Ⅳ-13：作用力與反作用力」。"
+    "value": "B",
+    "explanation": "以兩車為系統時，車間碰撞力是系統內力，成對相加為零；但軌道摩擦、外界推力等仍可能是整體外力，不能一概說完全不受力。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作作用力與反作用力、碰撞、受力圖與系統判讀的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-13"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-13",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "作用力與反作用力、碰撞與力學判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用碰撞、推牆、氣球、划船與受力圖情境考查第三運動定律、力的作用對象與系統邊界；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "牛頓運動定律、碰撞與受力圖判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用碰撞、推牆、氣球、划船與受力圖情境考查第三運動定律、力的作用對象與系統邊界；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "作用反作用、力與運動生活情境題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用碰撞、推牆、氣球、划船與受力圖情境考查第三運動定律、力的作用對象與系統邊界；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先畫出系統邊界，再分類內力與外力。",
+  "solutionSteps": [
+    "把兩台車一起圈成研究系統。",
+    "車對車的碰撞力雙方都在系統內。",
+    "這對內力大小相等、方向相反，可在整體合力中抵消。",
+    "軌道或外界對車的力仍在系統外，必須另列。",
+    "所以正確描述是內力抵消但外力仍需檢查。"
+  ]
 }

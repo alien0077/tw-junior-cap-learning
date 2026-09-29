@@ -2,41 +2,76 @@
   "id": "question-chinese-classical-function-words-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "之可能作？",
+  "prompt": "「願以十五城請易璧」中的「以」，依語境最接近哪個意思？",
   "options": [
     {
       "id": "A",
-      "text": "代指或連接"
+      "text": "因為，表示原因"
     },
     {
       "id": "B",
-      "text": "一定是主語"
+      "text": "在，表示地點"
     },
     {
       "id": "C",
-      "text": "一定表時間"
+      "text": "用、拿，表示以十五座城作為交換條件"
     },
     {
       "id": "D",
-      "text": "一定表否定"
+      "text": "以及，連接兩個名詞"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ab-iv-7"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的語境、結構與功能線索判斷；其他選項不符合題幹條件。"
+    "value": "C",
+    "explanation": "句中是提出用十五城交換璧的條件，「以」可理解為用、拿；判斷要依動作與交換情境。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-classical-function-words-3.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究文言虛字、句法、古今義與語境判讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫文言虛字題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-classical-function-words"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-classical-function-words",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言字詞、虛字與語境判讀",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文言句法、古今義與閱讀理解",
+      "observedPattern": "公立學校國文評量要求把文言虛字放回句法、前後文與古今義語境，判斷承接、轉折、代指、處所、時間或語氣功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "同一虛字可能有多種現代翻法，要先找它帶出的名詞與整句動作。",
+  "solutionSteps": [
+    "圈出「以」後面的十五城。",
+    "觀察後文請求交換璧的動作。",
+    "將「以」代入『拿十五城來交換』測試通順度。",
+    "選擇表示工具或條件的 A。",
+    "排除原因、地點與並列解釋，因為句中沒有相應關係。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-chinese-content-c-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "某社區把傳統圖紋融入現代公共藝術，並在說明牌標示來源。這種做法最能說明什麼？（單元練習：content-c）",
+  "prompt": "短文寫『漁港攤販先問今日潮水，再決定把哪一籃魚放到前面』。目前最穩妥的文化解讀是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "文化可在尊重脈絡下創新轉化"
+      "text": "這項買賣行動把海象、工作經驗與交易順序連在一起"
     },
     {
       "id": "B",
-      "text": "傳統一改變就失去價值"
+      "text": "所有沿海居民都一定用同一種買魚規則"
     },
     {
       "id": "C",
-      "text": "所有圖紋都沒有來源"
+      "text": "攤販故意製造神祕感，所以不必理解背景"
     },
     {
       "id": "D",
-      "text": "現代藝術不能使用傳統元素（本題資料組：content-c）"
+      "text": "只要看到潮水，就能確定文章發生在古代"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "保留來源並轉化使用，顯示文化可在尊重脈絡下創新。"
+    "explanation": "文本直接呈現潮水影響交易順序，能支持生活需求與工作經驗的連結；不能由一段文字擴大成所有居民或特定年代。"
   },
   "provenance": {
     "origin": "original",
-    "license": "依法令舉行考試試題之公開使用；本筆保留題目來源與答案註記",
-    "sourceUrl": "https://kaonow.com/paper/cap-111-chinese/",
-    "sourceLocator": "114／112／111 年國中教育會考國文科公開題型研究；僅作能力方向參考，非原題重製。",
-    "authoringNote": "依公開會考能力方向獨立重寫；未複製原試題文字、選項、文章、圖片或答案。待第二輪 AI／Terra 內容複核。"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編文化閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-chinese-content-c"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-c",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文化語境、閱讀理解與觀點判讀",
+      "observedPattern": "公立學校國文公開試題常以文本線索、人物觀點、情境推論與證據界線檢查文化和閱讀理解；本題改寫為地方生活與跨視角情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "敘事視角、語境與推論界線",
+      "observedPattern": "公立學校國文公開試題常以文本線索、人物觀點、情境推論與證據界線檢查文化和閱讀理解；本題改寫為地方生活與跨視角情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先從詞句和行動找文化線索，再標記說話者與四個座標；把直接證據、有限推論與未知部分分開，檢查是否把個案誤寫成群體標籤。",
+  "solutionSteps": [
+    "讀題定位：圈出「文化線索」，找文本直接寫出的物件、語句、行動、人物身分與情境。",
+    "分開證據與推論：先寫可引用的文字，再檢查文化解釋是否超出時空、地域、身分與情境；本題核心是「文本直接呈現潮水影響交易順序，能支持生活需求與工作經驗的連結；不能由一段文字擴大成所有居民或特定年代。」",
+    "核對正解：選項 A「這項買賣行動把海象、工作經驗與交易順序連在一起」保留文本可支持的範圍，沒有把單一角色擴大成群體規則。",
+    "排除誘答：留意『所有、一定、天生、神祕』等標籤化語句，也不要因視角不同就直接否定其中一方。",
+    "回到文化證據地圖：標出已知、合理推測與未知部分，再檢查是否還有未呈現的聲音或可能的時間變化。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

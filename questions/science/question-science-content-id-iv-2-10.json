@@ -2,23 +2,23 @@
   "id": "question-science-content-id-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年6月17日社區環境站的觀察中，連續一個月在相同時間觀察月面亮部變化，研究「Id-Ⅳ-2：日照角度與地表吸收太陽能」時，最能支持哪項結論？",
+  "prompt": "比較城市熱島效應與太陽高度角對地表溫度的影響時，哪項設計最能避免混淆？",
   "options": [
     {
       "id": "A",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 10 組、4 月觀察中，月亮本身每天產生不同亮度"
+      "text": "選擇相近日期與時間、相同材質測點，記錄影長、雲量、風和地表溫度並重複測量"
     },
     {
       "id": "B",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 10 組、4 月觀察中，月相是由日、地、月相對位置改變造成的視覺變化"
+      "text": "只比較兩城市某一天的最高溫"
     },
     {
       "id": "C",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 10 組、4 月觀察中，月相完全由雲量決定"
+      "text": "一城市測柏油路，另一城市測草地且不記錄日照"
     },
     {
       "id": "D",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 10 組、4 月觀察中，月亮只在滿月時才存在"
+      "text": "看到市區較熱就直接歸因於太陽高度"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "月球反射太陽光，日、地、月相對位置改變會造成可規律觀察的月相。 本題對應 KG「Id-Ⅳ-2：日照角度與地表吸收太陽能」。"
+    "value": "A",
+    "explanation": "同時記錄日照幾何和城市表面、雲量、風等條件，才能把熱島與太陽高度的作用分開比較。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的太陽高度、影長、季節、入射角及地表受熱判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Id-Ⅳ-2 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-id-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-id-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "太陽高度角、日照、影長、季節與地表受熱資料判讀",
+      "pattern": "取由太陽高度、入射角、影子、季節與地表能量資料推論日照差異的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由太陽高度、入射角、影子、季節與地表能量資料推論日照差異的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列出日照、地表和大氣條件，再設計分層比較。",
+  "solutionSteps": [
+    "辨認太陽高度、地表材質與城市結構都是可能因素。",
+    "固定或記錄日期、時間、測點材質、雲量和風。",
+    "用影長與溫度的重複資料分辨日照幾何和熱島效應。",
+    "B、C、D 缺乏時間、控制或多項證據。",
+    "因此 A 最能支持因果判讀。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

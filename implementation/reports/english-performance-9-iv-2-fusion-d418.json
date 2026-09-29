@@ -1,0 +1,58 @@
+{
+  "decisionId": "D-418",
+  "date": "2026-09-29",
+  "unit": "lesson-english-performance-9-iv-2",
+  "scope": "Inventory-confirmed missing English 9-IV-2 fusion manuscript; existing authored manuscripts were preserved.",
+  "manuscriptInventory": {
+    "authoredFusionDrafts": 750,
+    "learningUnitSpecs": 791,
+    "percent": 94.82,
+    "learningContent": "583/583",
+    "learningPerformance": "167/208",
+    "remaining": 41
+  },
+  "curriculumAndPublisherEvidence": {
+    "officialCurriculum": "9-IV-2: compare, classify, and order two to three pieces of information; D-IV-2 describes these methods.",
+    "hanlin": "Directly read public PDF p.17, which maps D-IV-2 to contextualized English reading and describes pre/during/post reading with progression from basic to deeper thinking. This is supplementary methodology, not the target grade-nine textbook chapter; only method was paraphrased.",
+    "nani": "Official public resource portal checked; target chapter not accessible in this pass, remains pending.",
+    "kanghsuan": "Official public resource portal checked; target chapter not accessible in this pass, remains pending.",
+    "schoolPlans": "Public school plans include travel-planning/information-organization contexts, but their publisher attribution was not assumed.",
+    "limits": "No claim of three-publisher chapter comparison. Original lesson synthesizes the official objective, the directly read Hanlin methodological pattern, and original examples; publisher-specific target chapters remain pending."
+  },
+  "lesson": {
+    "sections": 6,
+    "visibleTeachingParity": true,
+    "fusionRecord": true,
+    "reviewStatus": "draft; final content review remains with user via ChatGPT",
+    "interactive": "Four-step GuidedChoice: classification criterion, filter-before-price comparison, ascending order with ties preserved, and strict-cost filter-before-distance ranking."
+  },
+  "questions": {
+    "count": 10,
+    "originalStemsPreserved": true,
+    "correctAnswerPositions": ["B", "C", "D", "A", "B", "C", "D", "A", "B", "C"],
+    "solutions": "Each item has a Chinese correct-answer explanation, a distinct strategy, and five item-specific worked steps.",
+    "sourceBoundary": "Existing public-school exam refs remain paper-level pattern-only; no original question or option reproduced.",
+    "reviewStatus": "draft"
+  },
+  "implementationSpec": {
+    "component": "GuidedChoiceBlock",
+    "designStatus": "reviewed",
+    "implementationStatus": "implemented",
+    "qaStatus": "verified",
+    "userContentReviewIsGate": false
+  },
+  "verification": {
+    "node": "PASS: npm run test:english:9-iv-2",
+    "playwright": "PASS: authorized local Chrome runner; 6 visible sections, 4 steps, keyboard incorrect retry and correct feedback, axe 0 violations and 0 incomplete, 320/375/768px no overflow, 0 page errors; one external request blocked by design.",
+    "browserEnvironment": "Python 3.14 Playwright 1.58.0; Playwright Chromium revision 1208 executable exists. Sandbox curl was blocked; authorized curl returned HTTP 200 and the browser test completed. No packages installed.",
+    "dataValidation": "PASS: 14,527 JSON files, 13,114 IDs, 1,032 KG nodes.",
+    "implementationSpecs": "PASS: 1,027 specs, 0 errors, 24 eligible, 1,003 pending.",
+    "siteIndex": "PASS: 1,052 lessons, 10,566 questions, 40 mapping sets; validator reported 10,526 question paths.",
+    "fusionInventory": "PASS: 750/791 authored-draft registry entries; no unmatched spec-derived lesson IDs.",
+    "diffCheck": "PASS.",
+    "fullRepoNpmTest": "Not rerun in this unit turn.",
+    "fullSiteBrowserSmoke": "Not rerun in this unit turn.",
+    "questionSourceAudits": "No question source refs changed; previous fresh audit remains 10,566/10,566 recorded with pending 0; not rerun after content-only solution edits.",
+    "commitPush": "Not performed; overall objective remains incomplete."
+  }
+}

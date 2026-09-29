@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance a-analysis."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-pa.json"; REPORT=ROOT/"implementation/reports/science-performance-pa-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；資料分析、圖表整理、數學處理與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持整理原始資料、選擇適當表徵、分析變化並以數學方式檢核解釋。"],"representations":[r],"examplesOrEvidence":["本課的溫度時間序列、降雨量與發芽率資料皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-pa" and d["reviewStatus"]=="draft"
+ d["title"]="分析與發現（a）：讓資料顯出變化與關係"
+ d["content"]={"summary":"分析資料不是把數字重新抄一遍，而是先確認資料品質，再依問題選擇表格、折線圖、長條圖或散布圖，計算適當的差異、平均或比例，找出趨勢、例外與關係。分析結果仍要回到原始資料、測量限制與研究條件，不能把圖表上的相關直接寫成因果。本課以溫度時間序列、降雨量與發芽率的原創資料，練習從整理到發現、從發現到可檢驗解釋。","sections":[{"heading":"先整理才有資格比較","body":"資料表要有清楚欄名、單位、日期和缺失標記。若把不同單位或不同時間順序混在一起，圖表再漂亮也會導出錯誤比較。"},{"heading":"表徵要服務問題","body":"看時間變化可用折線圖，看類別數量可用長條圖，看兩個數值是否同向可用散布圖。選圖前先問要比較什麼、誰和誰比較、是否需要保留每次讀值。"},{"heading":"數字摘要不能取代原始資料","body":"平均值能概括一組資料，但可能遮住極端值和變異；差值、比例或斜率也都有適用條件。分析時要同時看摘要和分布，說明資料支持到哪一步。"},{"heading":"發現要能回到證據","body":"看見兩變項一起增加只是發現關係，還要查時間順序、替代因素和測量方法。好的發現會指出資料範圍、例外和下一個需要驗證的問題。"}]}
+ d["studyHighlights"]=["清理欄名、單位、日期、缺失與異常資料。","依問題選表格、折線圖、長條圖或散布圖。","用平均、差值、比例或斜率時說明適用條件。","區分資料發現、關係與尚待檢驗的因果解釋。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"溫度真的一直下降嗎？","body":"一杯水每五分鐘讀到 60、56、57、52、49°C。若只看第一個和最後一個數字會說下降 11 度，但中間回升的讀值也重要。請先整理時間與單位，再畫折線圖，找出總趨勢、短暫波動和需要檢查的測量情況。"},
+ {"id":"explain","phase":"explain","heading":"資料分析四個動作","body":"先檢查資料品質，再依問題選表徵，接著計算與比較，最後用原始資料、變異、例外和條件寫出發現。分析句要包含對象、期間、量的變化和證據範圍，避免只寫『有關係』或『看起來變多』。"},
+ {"id":"worked-example","phase":"worked-example","heading":"降雨量與發芽率的關係","body":"四週降雨量為 12、18、25、24 mm，對應發芽率為 40%、48%、63%、60%。可描述兩者在這四週大致同向，但第 4 週降雨略減、發芽率也略減並不能證明降雨造成發芽；還需考慮種子批次、溫度、土壤和澆水量，並增加重複。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"選對圖再說發現","body":"給出不同日期三種植物的平均高度和每次讀值。學習者先選折線圖看時間、長條圖比植物，並標上單位；再檢查平均是否遮住一株異常值。最後寫一個只描述資料的句子，再寫一個需要額外證據才能成立的因果句。"},
+ {"id":"transfer","phase":"transfer","heading":"把分析結果交給下一組","body":"製作一頁資料摘要：原始表、圖表、計算式、主要發現、例外、限制與下一個問題。交換後請另一組只依摘要重建你的結論，若找不到資料對應或單位不清楚，就回頭修改表徵和文字。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個圖表迷思","body":"請修正『曲線一起上升就證明其中一個造成另一個』與『平均值越高就代表每個樣本都高』。前者需要時間順序、控制與替代解釋，後者要回看分布、變異和極端值，不能讓摘要掩蓋資料差異。"}
+ ],"summary":["先檢查資料與單位，再依問題選擇表徵。","摘要數字要和分布、變異、例外一起看。","區分共同變化、關係與因果解釋。","分析結果要附證據範圍、限制與下一個問題。"],"exitCheck":[{"prompt":"為什麼溫度時間資料適合用折線圖？","expectedEvidence":"折線圖保留時間順序，可看出下降趨勢、短暫回升與波動。"},{"prompt":"平均值可能遮住什麼資訊？","expectedEvidence":"可能遮住樣本差異、極端值、變異與分布，需回看原始讀值或其他摘要。"},{"prompt":"兩變項同向變化可以直接寫成因果嗎？","expectedEvidence":"不行，還要檢查時間順序、控制條件、替代因素、測量品質與重複資料。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"整理原始資料、選擇合適圖表並用證據寫出有範圍的發現。","scenario":"分析溫度、降雨與發芽資料，逐步辨認趨勢、變異與因果推論限制。","variables":[{"symbol":"t","meaning":"時間或測量順序"},{"symbol":"v","meaning":"測量數值"},{"symbol":"r","meaning":"資料中的關係"}],"steps":[{"id":"step-1","prompt":"要看溫度隨時間的變化，優先選哪種圖？","options":["以時間為橫軸的折線圖","只用一個圓餅圖","不標單位的裝飾圖"],"answer":"A","feedback":"折線圖保留順序，能看出趨勢與波動。"},{"id":"step-2","prompt":"平均值高但個別讀值差異很大時，還要看什麼？","options":["原始資料、分布、變異與極端值","只保留平均值並刪除其他數字","只比較圖表顏色"],"answer":"A","feedback":"摘要不能代替資料分布，差異可能影響解釋。"},{"id":"step-3","prompt":"降雨和發芽率同時上升時，最穩妥的發現是什麼？","options":["在這些資料範圍呈同向變化，因果仍需更多控制與重複","已證明降雨造成所有發芽","兩者完全沒有任何關係"],"answer":"A","feedback":"先描述資料關係，再標出因果解釋需要的證據。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以整理資料、圖表、數學處理與證據解釋發現自然變化。","表格、折線圖、長條圖、平均、差值、比例與限制。","只看平均或圖形外觀，忽略單位、變異和原始讀值。","重視資料品質、表徵選擇、計算與證據範圍。"),rec("kanghsuan","透過探究資料分析、圖表轉換與討論形成可檢驗發現。","原始資料、不同圖表、重複測量、例外與同儕檢核。","把相關直接當因果，或用錯誤圖表扭曲比較。","評量分析步驟、表徵轉換、推理與反思。"),rec("hanlin","連結環境、氣候與生物資料，使用數學和圖表支持科學解釋。","降雨、溫度、發芽、時間序列、散布與資料限制。","忽略樣本、時間和替代因素，把局部趨勢推廣到所有情況。","要求數據引用、單位、範圍、例外與後續驗證。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持整理資料、選擇表徵、分析變化並形成科學發現。","單位、原始資料、圖表、數學摘要、變異與限制是共同要求。","共同變化必須和因果解釋區分，並提出後續控制與重複。"],"versionDifferences":["南一證據較突顯資料整理與基本圖表數學處理；康軒較突顯探究資料轉換、重複與討論；翰林較突顯環境、生物、氣候資料及範圍判斷。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以含回升讀值的溫度序列示範趨勢與異常。","以降雨量和發芽率資料區分同向變化與因果。","以三種植物平均和個別讀值練習圖表選擇與變異檢查。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織資料品質、單位、表徵、圖表、平均、差值、變異、趨勢、關係與因果限制。正文、原創數據、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"分析與發現（a）","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

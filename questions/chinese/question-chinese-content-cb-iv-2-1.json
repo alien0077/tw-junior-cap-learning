@@ -2,23 +2,23 @@
   "id": "question-chinese-content-cb-iv-2-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "個人與家庭之間常透過哪種方式維持情感連結？",
+  "prompt": "地方報導寫『我們村民都希望保留老樹』，但資料只訪問三位店家。最穩妥的判讀是？",
   "options": [
     {
       "id": "A",
-      "text": "共同生活、照顧與分享記憶"
+      "text": "三位店家表達了部分意見，不能直接代表全村，還需補充不同居民的觀點"
     },
     {
       "id": "B",
-      "text": "完全不溝通"
+      "text": "店家是地方居民，所以必然代表全村"
     },
     {
       "id": "C",
-      "text": "只比較財物"
+      "text": "使用『都』就能讓意見變成統計事實"
     },
     {
       "id": "D",
-      "text": "只依地理距離"
+      "text": "只要老樹有歷史，就不必再問居民"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "家庭關係由生活互動、照顧與共同記憶建立。"
+    "explanation": "三位店家可以提供經驗，但身分與人數有限，不能支持全村的全稱主張；需補充不同位置、年齡和使用者的意見。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "個人、家庭、鄉里、國族與社群關係；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究個人、家庭、地方、國族與社群關係的判讀方式。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫群體關係與公共參與文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-cb-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-cb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "群體關係、觀點與證據",
+      "observedPattern": "公立學校國文評量要求辨識個人與家庭、鄉里、國族、社群之間的關係，檢查群體代詞、代表性、認同與公共行動的證據界線；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "家庭、地方與國族認同",
+      "observedPattern": "公立學校國文評量要求辨識個人與家庭、鄉里、國族、社群之間的關係，檢查群體代詞、代表性、認同與公共行動的證據界線；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先對照代詞範圍與資料樣本，再判斷群體主張是否過度。",
+  "solutionSteps": [
+    "圈出『我們』和『都』的範圍。",
+    "確認受訪者只有三位店家。",
+    "列出未被納入的居民類型。",
+    "A 將意見保留在可支持的範圍。",
+    "把句子改成『三位受訪店家認為』並說明後續調查。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

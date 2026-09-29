@@ -1,0 +1,43 @@
+{
+  "decision": "D-431",
+  "asOf": "2026-09-29",
+  "lessonId": "lesson-social-performance-geo-1b-iv-1",
+  "status": "authored-fusion-draft-recorded",
+  "inventoryBefore": "760/791",
+  "inventoryAfter": "761/791 (96.21%); 30 remain",
+  "preexistingManuscriptCheck": {
+    "visibleSectionsBefore": 4,
+    "teachingBodySectionsBefore": 6,
+    "versionResearchBefore": null,
+    "fusionRecordBefore": null,
+    "finding": "舊學生頁和teaching.body為帶入單元名稱的泛用占位，且沒有本課versionResearch/fusionRecord；不是可計入的既有融合稿，故僅修補此單元。"
+  },
+  "evidence": {
+    "officialCurriculum": "官方社會領域課綱地1b-Ⅳ-1『解析自然環境與人文景觀的相互關係』及Knowledge Graph kg-social-performance-geo-1b-iv-1。",
+    "versionSources": [
+      "南一：111國中地理教師教材簡介本公開FlipHTML5鏡像，定位氣候—生活／產業／聚落與新竹季風曬製產物例型；鏡像權利未核實，僅抽象教學脈絡，不複製表達。",
+      "康軒：國立臺灣歷史博物館公開教案明標113康軒七年級臺灣水文及地1b-IV-1，PDF pp.1–2討論嘉南大圳、流域／水利治理、農業及永續；是版本標示博物館教案，不是康軒出版社原書。",
+      "翰林：新北市溪崑國中114學年度翰林版七年級第一冊課程計畫PDF p.17定位離島地形／人文景觀及高山蔬菜開發；是公校課程計畫，不是翰林出版社原書。"
+    ],
+    "copyrightBoundary": "只比較可讀來源的概念與教學結構，以自己的順序和語句原創；不重製教材文字、題目、圖表、答案或活動。各來源性質及權利限制逐筆記錄。"
+  },
+  "authoredContent": {
+    "studentVisibleSections": 6,
+    "teachingBodySections": 6,
+    "studentAndTeachingTextParity": "PASS exact heading/body parity",
+    "focus": "由自然條件經人類技術／制度選擇解釋景觀，對讀氣候生活、流域工程、地形開發三種案例入口，並檢驗替代因素、反例、尺度、雙向回饋及證據限制。",
+    "reviewStatus": "draft; lesson content review reserved for user's ChatGPT; not performed by Codex"
+  },
+  "verification": {
+    "targetJson": "PASS",
+    "targetLessonContract": "PASS: six unit-specific visible sections mirrored exactly to teaching.body; three versionResearch/publisherResearch records; fusionRecord; draft",
+    "dataValidation": "PASS: 14540 JSON, 13114 IDs, 1032 KG nodes; structural validation only",
+    "fusionInventory": "PASS: 761/791 recorded (96.21%); learning-content 583/583; learning-performance 178/208; 30 remain",
+    "gitDiffCheck": "PASS: lesson, report, CURRENT_STATE, project-state, and generated fusion inventory report"
+  },
+  "notCompleted": [
+    "30 learning-unit fusion manuscripts remain unrecorded and require per-unit inventory before authoring.",
+    "Interactive specification and browser/runtime QA are reserved for the later specification/interaction phase.",
+    "No lesson content review by Codex; user plans ChatGPT review. No commit or push."
+  ]
+}

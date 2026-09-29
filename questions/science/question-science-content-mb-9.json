@@ -2,41 +2,87 @@
   "id": "question-science-content-mb-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月7日校園實驗室的觀察中，針對「Mb：科學發展的歷史」提出可檢驗的科學問題，若比較 5 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "評估一項科學史主張時，為什麼要注意當時的儀器與社會條件？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Mb：科學發展的歷史」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "工具會限制可取得的資料，社會制度也會影響誰能研究、誰能受益與結果如何被採用"
     },
     {
       "id": "B",
-      "text": "研究「Mb：科學發展的歷史」時只改變距離，其餘條件一致，設置5組、每組取樣17份並各重複測量3次"
+      "text": "儀器和社會與科學完全無關"
     },
     {
       "id": "C",
-      "text": "研究「Mb：科學發展的歷史」時只測量5組中的一組就直接下結論"
+      "text": "只要年代正確就能解釋一切"
     },
     {
       "id": "D",
-      "text": "研究「Mb：科學發展的歷史」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "社會條件會直接決定自然定律"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-mb"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Mb：科學發展的歷史」。"
+    "value": "A",
+    "explanation": "儀器影響證據範圍，資源、制度和需求影響研究與應用路徑，但自然現象仍需用可檢驗資料說明。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的觀察、工具、模型、證據、科學爭論、技術與社會影響能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-mb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-mb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "科學探究、模型、證據與科學史情境",
+      "pattern": "取公立學校自然科評量以觀察、證據、模型、推論和新情境遷移的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以觀察、證據、模型、推論和新情境遷移的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "科學史、實驗資料、模型與生物技術",
+      "pattern": "取公開會考以圖表、實驗控制、證據界線和模型解釋的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、實驗控制、證據界線和模型解釋的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "科學方法、發現、技術與環境社會影響",
+      "pattern": "取公立國中試題以觀察工具、假說驗證、模型更新和科學應用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以觀察工具、假說驗證、模型更新和科學應用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把自然證據限制和研究／應用的社會條件分成兩欄比較。",
+  "solutionSteps": [
+    "先分出原始觀察、測量工具、模型、推論與社會決策。",
+    "按證據支撐的關係排序，而不是只按年代排列。",
+    "比較新資料是否支持、修正或推翻原模型。",
+    "檢查控制條件、替代解釋和當時工具的限制。",
+    "用條件式說明知識如何累積及技術帶來的效益與風險。"
+  ]
 }

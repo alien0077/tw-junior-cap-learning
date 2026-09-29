@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-8-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-8／理解短文訊息書信主要內容」task, what is the best way to prepare question 7?",
+  "prompt": "Read the invitation.\n\nDear neighbors,\nOur community garden will open its new herb corner on May 18. Please meet at the east gate at 9:30 a.m. Volunteers will show visitors how to label the plants, and children can take home one small herb pot after the tour. The event will move to the covered court if it rains. Please bring a reusable bag if you plan to take a pot home.\n—Green Lane Garden Group\n\nWhere should visitors go if it rains?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "The east gate at 9:30 p.m."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "The new herb corner on May 19"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "The covered court"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "The garden office after the tour"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-8"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-8／理解短文訊息書信主要內容, question 7."
+    "value": "C",
+    "explanation": "邀請函直接交代下雨時活動改到 covered court（有遮棚的球場）。東門是原定集合地點；遇雨時要用條件句中的替代地點。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "僅將公立學校公開英語評量的短篇閱讀理解能力作 pattern-only 參照；本文、選項、答案與解析均獨立撰寫。",
+    "authoringNote": "Original English text and item authored for KG 3-Ⅳ-8; public-school exam references inform only the skill pattern. Publisher-version fusion, rights/content review, and second-round review remain incomplete; keep draft."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中114學年度第2學期九年級第1次段考英文科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "114學年度第2學期",
+      "subject": "english",
+      "locator": "PDF第3頁閱讀題組第45至47題：辨識消防安全訊息的對象、行動呼籲與目的",
+      "locatorLevel": "item",
+      "observedPattern": "以生活安全文字檢查讀者是否能辨認訊息對象及應採取的行動；僅吸收目的／行動判讀能力，不沿用原情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2231_9842586_19803.pdf",
+      "title": "新北市立三多國中112學年度第1學期七年級第2次段考英語科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "112學年度第1學期",
+      "subject": "english",
+      "locator": "PDF第3頁第36題：由海報整體訊息判斷溝通目的與對象",
+      "locatorLevel": "item",
+      "observedPattern": "海報閱讀將受眾與活動目的放在同一視覺文本中判讀；本題轉為全新文字通知與行動資訊。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "看到 if 條件句時，把「平常安排」與「條件成立後的替代安排」分開記。",
+  "solutionSteps": [
+    "先確認題目問的是雨天去處，不是原定集合點或日期。",
+    "在邀請函找天氣條件：The event will move ... if it rains。",
+    "擷取 move to 後面的地點 covered court。",
+    "比對選項並排除把時間、日期寫錯或自行增加的辦公室地點。",
+    "雨天方案唯一是 covered court，因此選 C。"
+  ]
 }

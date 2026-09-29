@@ -1,0 +1,36 @@
+{
+  "decision": "D-453",
+  "asOf": "2026-09-29",
+  "unit": "lesson-social-performance-soc-2b-iv-3",
+  "inventory": {
+    "authoredFusionDraftsRecorded": 781,
+    "eligibleUnits": 791,
+    "percent": 98.74,
+    "learningContent": "583/583",
+    "learningPerformance": "198/208",
+    "remaining": 10,
+    "longFormDraftMarkerCount": 611,
+    "countChangeThisEntry": 0
+  },
+  "work": "Preserved the already-authored six-section manuscript, which the fresh inventory already counted. Reconciled source metadata only: replaced an unrelated, unverified supplemental URL with the Forestry Bureau's biodiversity reference, and aligned the Hanlin publisherResearch URL with the exact adopted-school PDF URL already present in studyReferences. No lesson prose, questions, or unrelated authored lessons were rewritten.",
+  "sourceLimits": [
+    "Nani: public school course plan identifies the adopted edition and South American rainforest curriculum placement; it is not Nani textbook text.",
+    "Kang Hsuan: only indexed/search-visible course-plan summary was readable in the prior research; direct PDF reading failed, so no unobserved textbook sequence or method is claimed.",
+    "Hanlin: directly readable adopted-school course plan, not publisher-authored textbook text.",
+    "Official curriculum and KG are listed as the curriculum alignment basis; Forestry Bureau biodiversity reference supplements the biodiversity concept."
+  ],
+  "validation": {
+    "jsonParse": "PASS",
+    "lessonSchema": "PASS: direct whole-lesson audit checked 1,056 lessons with 0 failures",
+    "studentTeachingParity": "PASS: content.sections and teaching.body exact heading/body parity 6/6; all six learner-facing sections exceed 100 characters",
+    "wholeDataValidation": "PASS: validate_data.py; 14,561 JSON, 13,114 IDs, 1,032 KG nodes; draft records structurally validated only",
+    "sourceUrlParity": "PASS: Hanlin publisherResearch source URL matches studyReferences",
+    "diffCheck": "PASS for the target lesson before this report/state update",
+    "lessonStatus": "draft"
+  },
+  "notAddressed": {
+    "questionLedger": "No question files changed; last recorded full source-ledger audit remains the prior 10,566/10,566 result and was not rerun here.",
+    "specInteractionAutomatedQA": "Not addressed in this entry",
+    "commitPush": "Not performed"
+  }
+}

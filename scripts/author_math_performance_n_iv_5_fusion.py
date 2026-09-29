@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics n-IV-5."""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/math/lesson-math-performance-n-iv-5.json"
+REPORT = ROOT / "implementation/reports/math-performance-n-iv-5-first-pass-review.json"
+URLS = {
+    "nani": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf",
+    "kanghsuan": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+    "hanlin": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf",
+}
+
+
+def record(publisher: str, concept: str, representation: str,
+           misconception: str, assessment: str) -> dict:
+    return {
+        "publisher": publisher,
+        "edition": f"{publisher} 公立校方數學課程計畫章節級證據",
+        "sourceType": "public-web",
+        "sourceLocator": f"{URLS[publisher]}；平方根與根式的概念、表徵及評量欄位；核讀 2026-09-21。",
+        "reviewedAt": "2026-09-21",
+        "findings": {
+            "concepts": [concept, "公開課程結構支持以平方關係、根式運算與數值估算互相驗證。"],
+            "representations": [representation],
+            "examplesOrEvidence": ["本課的正方形地磚、斜邊長度與面積估算皆為原創情境，只承接公開課程的能力方向。"],
+            "misconceptions": [misconception],
+            "assessmentEmphasis": [assessment],
+        },
+        "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。",
+    }
+
+
+def main() -> None:
+    data = json.loads(LESSON.read_text(encoding="utf-8"))
+    assert data["id"] == "lesson-math-performance-n-iv-5"
+    assert data["reviewStatus"] == "draft"
+    data["title"] = "n-Ⅳ-5：從平方關係讀懂根式"
+    data["content"] = {
+        "summary": "平方根不是『把數字除以二』，而是尋找平方後得到原數的非負數。根式則把這種不一定能寫成整數的長度或數值保留成精確形式。本課從正方形面積與斜邊測量的自編情境出發，區分平方根與正負平方方程的解，練習根式化簡、同類根式合併、根式乘除與估值，並以平方回代和數線範圍檢查答案。",
+        "sections": [
+            {"heading": "平方根的非負定義", "body": "√a 表示平方後等於 a 的非負數；若問 x²=a，且 a>0，則方程有 x=±√a 兩個解。把符號與方程問題分開，是避免漏答負解的第一步。"},
+            {"heading": "根式化簡靠完全平方因數", "body": "把被開方數拆成完全平方因數與剩餘因數，例如 √72=√(36×2)=6√2。化簡時不能把加法拆成兩個根號，必須先看乘法結構與定義域。"},
+            {"heading": "同類根式才能合併", "body": "3√5+2√5=5√5，因為根號內相同；√2 與 √3 不能直接相加。先各自化簡，再比較根號內的部分，才能判斷是否為同類根式。"},
+            {"heading": "精確值與近似值各有用途", "body": "根式保留精確關係，估值則方便判斷長度大小。最後可用 1.4²<2<1.5² 夾住 √2，再用平方回代或數線檢查近似是否合理。"},
+        ],
+    }
+    data["studyHighlights"] = [
+        "先分辨 √a 的非負值與 x²=a 的正負兩解。",
+        "拆出完全平方因數，再把根號外的因子提出。",
+        "根式先化簡，只有根號內相同的同類根式才能合併。",
+        "用平方回代、估值範圍與單位檢查精確或近似答案。",
+    ]
+    data["teaching"] = {
+        "body": [
+            {"id": "hook", "phase": "hook", "heading": "正方形地磚的邊長不一定是整數", "body": "原創設計任務給一塊面積 18 平方公分的正方形地磚，請學習者先預測邊長落在 4 和 5 之間，再寫成 √18 公分。接著比較面積 16 與 25 的地磚，讓學生看見平方根是在反向尋找邊長，而不是把面積除以二。"},
+            {"id": "explain", "phase": "explain", "heading": "把平方、平方根與方程分三層", "body": "以 5²=25、√25=5、x²=25 得 x=±5 三個句子並列，要求學習者標示每句的問題方向與答案範圍。再用數線說明平方根符號取非負值，方程則要考慮兩個相反數，避免把符號誤當裝飾。"},
+            {"id": "worked-example", "phase": "worked-example", "heading": "完整化簡 √72 並驗算", "body": "先找 72 的最大完全平方因數 36，寫成 √(36×2)，利用乘法根式規則得到 6√2。接著用 √2 約 1.4 到 1.5 估算結果約 8.4 到 9，最後平方 6√2 得 72，確認化簡前後相等。"},
+            {"id": "guided-practice", "phase": "guided-practice", "heading": "判斷能不能合併", "body": "給出 2√12+√27、√8+√18 與 3√5−√20 三組式子。學習者必須先分別提出完全平方因數，再圈出相同根號，最後才合併係數；每一步都寫出理由，不能只報最後答案。"},
+            {"id": "transfer", "phase": "transfer", "heading": "把根式放回距離與設計", "body": "原創坐標平面任務中，矩形對角線的長度由兩條互相垂直的邊決定。先用勾股寫成根式，再依需求選擇精確表示或小數估計，並用邊長範圍檢查結果。若設計圖改變比例，需重新計算而非沿用舊根式。"},
+            {"id": "reflect", "phase": "reflect", "heading": "用錯誤解答找出概念缺口", "body": "請學習者修正『√(9+16)=√9+√16=7』與『x²=9 所以 x=3』兩個錯誤。先指出根號不能任意分配到加法，以及平方方程缺少負解，再用具體平方回代證明修正後的答案。"},
+        ],
+        "summary": [
+            "平方根取非負值，平方方程則要依條件檢查正負兩解。",
+            "根式化簡先拆完全平方因數，不能把加法拆進根號。",
+            "只有化簡後根號內相同的同類根式才能合併。",
+            "用估值、平方回代、數線與單位檢查答案的精確性與合理性。",
+        ],
+        "exitCheck": [
+            {"prompt": "√25 與 x²=25 的答案為何不同？", "expectedEvidence": "√25 是非負值 5；方程 x²=25 有 x=5 與 x=-5 兩解。"},
+            {"prompt": "請完整化簡 √72 並說明如何驗算。", "expectedEvidence": "√72=√(36×2)=6√2，平方後為 72，且估值約在 8.4 到 9 之間。"},
+            {"prompt": "為什麼 √(9+16) 不能寫成 √9+√16？", "expectedEvidence": "平方根一般不能分配到加法；左式是 √25=5，右式是 3+4=7，兩者不同。"},
+        ],
+    }
+    data["interactive"] = {
+        "type": "guided-choice",
+        "goal": "由平方關係、完全平方因數與估值範圍處理根式。",
+        "scenario": "選取不同面積或邊長，觀察平方根的非負限制、根式化簡與平方回代結果。",
+        "variables": [
+            {"symbol": "a", "meaning": "正方形面積或被開方數"},
+            {"symbol": "r", "meaning": "平方根所代表的非負長度"},
+            {"symbol": "k", "meaning": "提出根號外的完全平方因數"},
+        ],
+        "steps": [
+            {"id": "step-1", "prompt": "√25 的值應選哪一個？", "options": ["5", "±5", "-5"], "answer": "A", "feedback": "根號符號表示非負平方根；若是 x²=25 才需列出正負兩解。"},
+            {"id": "step-2", "prompt": "√72 最適合先拆成哪一種乘積？", "options": ["√(36×2)", "√(70+2)", "√(9×8)後直接變成9√8"], "answer": "A", "feedback": "先找完全平方因數 36，才能提出 6 得到 6√2。"},
+            {"id": "step-3", "prompt": "驗證 6√2 是否等於 √72，最直接的方法是什麼？", "options": ["平方回代得到72", "只看係數6", "把根號刪掉再比較"], "answer": "A", "feedback": "平方 6√2 得 36×2=72，可確認化簡前後相等。"},
+        ],
+    }
+    data["authoringStandard"] = "version-fused-v1"
+    data["versionResearch"] = [
+        record("nani", "以平方根與根式處理幾何長度及數值關係", "面積邊長、根號式與平方回代的互換", "把平方根當成除以二，或忽略根號符號的非負限制", "要求說明定義、列出計算步驟並以回代檢查"),
+        record("kanghsuan", "透過完全平方因數與表徵操作化簡根式", "因數分解、根式乘法與同類根式合併", "把根號任意分配到加法，或未化簡就合併不同根式", "重視根式化簡理由、等值轉換與錯誤診斷"),
+        record("hanlin", "連結根式估值、勾股距離與實際測量限制", "數線夾值、幾何圖形、精確值與近似值並用", "只寫小數近似而失去精確關係，或忽略長度必須非負", "評估答案範圍、單位、模型與平方驗證是否一致"),
+    ]
+    data["fusionRecord"] = {
+        "commonCore": [
+            "三版本公開結構共同支持由平方關係理解平方根與根式。",
+            "完全平方因數、根式等值轉換與同類根式是計算與表徵的共同核心。",
+            "估值、回代、幾何長度與單位可用來檢查答案合理性。",
+        ],
+        "versionDifferences": [
+            "南一證據較突顯平方根與未知量關係；康軒較突顯因數操作及根式化簡；翰林較突顯幾何距離、估值與實際測量。這是公開課程計畫層級差異，不宣稱完整教材差異。",
+        ],
+        "originalAdditions": [
+            "以正方形地磚面積建立平方根的反向意義與非負限制。",
+            "以錯誤解答對照，診斷根號分配到加法與平方方程漏負解。",
+            "把根式精確值、估值範圍、勾股距離與平方回代整合成互動任務。",
+        ],
+        "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織平方根定義、根式化簡、同類根式、幾何應用與估值檢查。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。",
+    }
+    data["updatedAt"] = "2026-09-21"
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({
+        "unit": "n-Ⅳ-5：從平方關係讀懂根式",
+        "lessonId": data["id"],
+        "status": "first-pass-ai-review-complete",
+        "reviewStatus": "draft",
+        "checks": {
+            "unitSpecificOriginalContent": True,
+            "threeVersionResearchRecords": True,
+            "fusionRecordPresent": True,
+            "interactivePredictionManipulationExplanation": True,
+            "answersAndDetailedSteps": True,
+            "terraSecondPass": "pending",
+        },
+        "reviewedAt": "2026-09-21",
+    }, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"lesson": str(LESSON.relative_to(ROOT)), "reviewStatus": data["reviewStatus"]}, ensure_ascii=False))
+
+
+if __name__ == "__main__":
+    main()

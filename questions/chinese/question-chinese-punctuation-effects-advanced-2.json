@@ -2,41 +2,76 @@
   "id": "question-chinese-punctuation-effects-advanced-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "驚嘆號常加強？",
+  "prompt": "「警報突然響起，請所有人立刻離開實驗室＿＿」在緊急公告中使用驚嘆號，最需注意什麼？",
   "options": [
     {
       "id": "A",
-      "text": "強烈語氣"
+      "text": "可加強急迫語氣，但不能取代清楚的行動指示"
     },
     {
       "id": "B",
-      "text": "平行結構"
+      "text": "一定能讓所有人理解集合地點"
     },
     {
       "id": "C",
-      "text": "詞語定義"
+      "text": "會自動證明警報是真實的"
     },
     {
       "id": "D",
-      "text": "時間順序"
+      "text": "可用來表示列舉項目"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ac-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的觀察線索與語文功能判斷；其他選項不符合題幹條件。"
+    "value": "B",
+    "explanation": "驚嘆號能加強急迫或強烈語氣，但公告仍需明確說明行動與地點，符號不能代替資訊。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-punctuation-effects-advanced-2.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究進階標點、語氣變化、分句層次與修訂驗證能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫進階標點題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-punctuation-effects-advanced"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-punctuation-effects-advanced",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "標點、語氣與句讀",
+      "observedPattern": "公立學校國文評量要求依上下文、語氣與分句關係安排標點，並判斷標點改動造成的語意變化；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "標點辨析、語氣與閱讀",
+      "observedPattern": "公立學校國文評量要求依上下文、語氣與分句關係安排標點，並判斷標點改動造成的語意變化；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先說明語氣效果，再檢查內容是否提供可執行的指示與證據。",
+  "solutionSteps": [
+    "讀題定位：圈出「驚嘆號語境」與標點前後的分句、語氣、層次或例外條件。",
+    "比較語意：先把標點拿掉或改成另一符號，觀察預期回應與論述關係；本題核心是「驚嘆號能加強急迫或強烈語氣，但公告仍需明確說明行動與地點，符號不能代替資訊。」",
+    "核對正解：選項 B 能具體說明標點造成的語氣、句界或篇章層次。",
+    "排除誘答：檢查是否只按符號外形、混淆列舉與說明，或把語氣效果誤當成內容證據。",
+    "回讀驗證：朗讀並用白話重述句子，確認標點安排讓讀者能正確掌握意思與下一步行動。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -1,0 +1,144 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-7-8
+  knowledgeGraphIds:
+  - kg-math-content-a-7-8
+  title: A-7-8：一元一次不等式的解與應用
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  fusedScope:
+    officialCurriculum: A-7-8：一元一次不等式的解與應用
+    curriculumIntent: A-7-8：一元一次不等式的解與應用
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以可讀材料各自支持的教學功能重組成原創課文；標示材料不是完整出版社正文且授權未核實時，來源槽仍pending，不能宣稱三版本官方全文審查完成
+    currentEvidenceStatus: limited-public-materials-read; source-to-visible-original-synthesis-draft; authenticated-publisher-chapter-review-pending
+  learningGoals:
+  - 解 −2x+6>10，逐步說明為何除以 −2 後不等號必須反向為 x<−2。
+  - 以 −3、−2、−1 分別測試解集內、端點和解集外數值，並在數線上表示開端點與向左射線。
+  - 將預算「每小時 120 元、另收 80 元、總額不超過 800 元」列成不等式，解出最多可租時數並套用整數限制。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 對不等式兩側同加或同減同一數不改變方向；同乘或同除負數會反轉大小次序。
+  - 化簡後的解集可由數線端點和方向表示，並用區間內值、端點、區間外值代回原式驗證。
+  - 應用題須把代數解集與非負、整數、單位和預算等可行限制取交集，回答題目真正詢問的量。
+  misconceptions:
+  - 除以 −2 仍保留 ＞，寫成 x>−2，忘記負數縮放會反轉數線次序。
+  - 只背「負數要翻號」卻沒有對兩側同步除以負數，導致運算式和方向互相矛盾。
+  - 得到 h≤6.67 後照抄小數時數，忽略整點租借的限制而沒有取最大可行整數 6。
+  contentFlow:
+  - 'predict: 先將−3、−2、−1代回−2x+6>10，預測哪些值使原句成立並把解視為整個數值集合。'
+  - 'manipulate: 對不等式兩側同步減6、再同步除以−2，記錄負倍數如何使方向翻轉，得到x<−2。'
+  - 'observe: 在數線以−2為空心端點向左，並逐一核對內點−3、端點−2、外點−1的原式結果。'
+  - 'explain: 用負倍數鏡射反序說明翻號理由，區分嚴格端點與可行解集，不只背「負數翻號」。'
+  - 'transfer: 將不等式解集與至少一小時、整點限制取交集，解讀120h+80≤800租借案例並判斷6與7小時。'
+  - '出口任務：解−3(2x−1)≥9並與整數條件−4≤x取交集，定位第一個錯誤步驟。'
+  visualizations:
+  - 步驟切換互動：逐列呈現 −2x+6>10、−2x>4、x<−2 及情境交集；按步驟鍵盤操作時保留焦點。
+  - 解集證據數線：以 −2 為空心端點向左，標出 −3通過、−2不含、−1不通過並提供非色彩文字狀態。
+  - 應用檢核文字視圖：顯示 120h+80≤800 的解 h≤6、整數與下限交集以及6小時可行／7小時超額。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-7-8-I01
+    component: NumberLineBlock
+    purpose: 操作不等式兩側的同一運算，特別比較除以正負數時解集方向如何改變，再以測試值驗證。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        coefficient: -2
+        constant: 6
+        boundary: -2
+        comparisonValue: 10
+    studentActions:
+    - 先預測除以 −2 是否改變方向，再選擇 −3、−2、−1 中哪些符合原式。
+    - 逐步執行同減 6、同除 −2；介面保留原不等式和每步運算理由。
+    - 在數線標記解集端點與三個測試值，展開其代回原式的左右計算。
+    - 對照將係數改成 +2 的版本，觀察除以正數不翻轉方向。
+    visualRules:
+    - 每次運算同步改寫兩側並維持運算軌跡、解集符號、數線端點和方向一致。
+    - 只有當步驟除數為負時才翻轉不等號；系統保留學生預測與改錯紀錄。
+    - −2 為嚴格不等式邊界須空心；−3、−1 分別展示一個內值和外值的原式判斷。
+    - 顏色搭配「解集內／端點／解集外」文字與符號，且鍵盤可逐步移動端點。
+    - 窄螢幕用直向列式和文字區間呈現，不裁切負號或不等號。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-7-8-I01
+      trigger: 從 −2x>4 得到 x>−2，沒有反轉不等號。
+      prompt: 將 −3 和 −1 代回原式 −2x+6>10，哪個成立？你的解集方向能包含它嗎？
+      expectedEvidence: x=−3 時左側 12>10 成立；x=−1 時左側 8>10 不成立；因此解集向左且 x<−2。
+    feedback:
+      correct: 要求用另一個負係數不等式預測方向，並比較正係數版本的數線。
+      incorrect: 第一提示請學生比較 −3 與 −1 在數線的位置及原式真值；重試後只示範除以負數造成次序顛倒，不直接代完新題。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只借用可調整數學狀態並查看即時結果的互動形式；本課獨立設計負數除法翻號、三個測試值與預算模型。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "參考預測—操作—證據檢查節奏；本課用負係數與預算時數說明翻號及情境限制，內容、數值與回饋均原創。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "每步操作有名稱、鍵盤替代及朗讀結果；端點、箭頭、翻轉理由均有文字標籤，不以顏色獨立傳訊。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以標題階層依序安排原式、等價步驟、數線測試、預算應用和回饋，讓助讀器按推理順序朗讀。"
+  capTransfer:
+    questionType: 租借預算建模、不等式求解與整點可行值
+    stemConstraint: 投影機每小時 120 元，另收一次 80 元，預算不超過 800 元；租借時數 h 為整數且至少 1 小時。建立不等式，求最多可租幾小時並驗算邊界。
+    requiredResponse: 列 120h+80≤800，解得 h≤6；結合 h 為正整數，說明 h=6 通過、h=7 超出預算。
+    scoring: 費用模型及不等號方向 1、解集運算 1、整數限制及邊界驗證 1
+  exitTicket:
+    prompt: 解 −2x+6>10 時，有人寫 x>−2。用兩個測試值指出錯誤，並寫出正確數線方向。
+    successCriteria:
+    - 知道除以負數後應反向，正確解為 x<−2。
+    - 以 −3 符合、−1 不符合原式支持方向。
+    - 在 −2 畫空心端點並向左延伸。
+  expressionExtension:
+    applicable: true
+    task: 為一項租借服務自訂費率和預算，寫出不等式、解集數線與兩個邊界測試，說明連續解及可行整數的差異。
+    constraint: 學生先寫；系統只指出費用模型、翻號理由或情境取值限制，不替學生完成解答。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 未提交方向預測前不顯示解集；除以 −2 後必須將不等號由 ＞ 翻為 ＜，並同步更新數線向左。
+  - x=−3 代回成立，x=−2 得等號不符合嚴格條件，x=−1 不成立；端點與測試值須一致。
+  - 未翻號時命中負係數診斷，先要求比較兩個測試值，第二次錯誤後才展示局部反例。
+  - 320px、375px、768px 和鍵盤均可檢視完整負數步驟、端點及回饋；減少動態模式以靜態列式替代。
+  - 預算遷移得 h≤6，正整數可行最大值 6；h=7 總額 920 元，超出 800 元。
+  - 文字 fallback 保留原式、每步運算、翻號理由、解集與整數限制，不依賴動畫或色彩。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-7-8
+    role: official-curriculum-source-of-truth

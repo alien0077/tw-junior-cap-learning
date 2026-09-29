@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-iv-3-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "表格記錄三次測量值為 12、18、15。若問題是『哪次最高』，答案應如何找？",
+  "prompt": "一張照片只拍到操場角落的三個回收箱，沒有拍到全校環境。文字說明哪項最合適？",
   "options": [
     {
       "id": "A",
-      "text": "只看表格最左邊的欄名"
+      "text": "照片呈現操場一角可見的三個回收箱，不能據此判定全校配置"
     },
     {
       "id": "B",
-      "text": "因為第三次最後出現所以一定最高"
+      "text": "照片證明全校都有三個回收箱"
     },
     {
       "id": "C",
-      "text": "比較同一欄的數值，找出 18 所在的那次"
+      "text": "照片證明回收制度一定成功"
     },
     {
       "id": "D",
-      "text": "把三個數值相加後當成次數"
+      "text": "照片中的箱子都是同一容量"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "題目問最高值時，需比較同一指標的數值；三者中 18 最大。"
+    "value": "B",
+    "explanation": "照片範圍只涵蓋操場一角，能支持可見物件，不足以外推全校配置、成效或容量。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究圖表與資料整合判讀題型（表格比較）；課綱 Bc-Ⅳ-3：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究標題、單位、比例、趨勢、圖片範圍、來源與工具輔助。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫數據圖表圖片工具題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "表格、圖表與資料判讀",
+      "observedPattern": "公立學校國文評量要求確認圖表標題、單位、比例、趨勢、來源與圖片文字替代，並區分資料可支持的結論；本題使用全新數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "數據比較、比例與圖表證據",
+      "observedPattern": "公立學校國文評量要求確認圖表標題、單位、比例、趨勢、來源與圖片文字替代，並區分資料可支持的結論；本題使用全新數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先界定影像取景範圍，再把可見資訊和外推結論分開。",
+  "solutionSteps": [
+    "指出照片只拍到操場角落。",
+    "列出能直接看見的三個箱子。",
+    "檢查全校、成效和容量是否有證據。",
+    "B 最符合圖片證據界線。",
+    "若要支持全校配置，提出需要補拍哪些區域。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

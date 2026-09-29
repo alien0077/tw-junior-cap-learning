@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-iv-4-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀古代語錄或寓言後，若要判斷作者態度，最完整的做法是什麼？",
+  "prompt": "只知道文本標題『智者之言』，沒有正文；下列哪個結論最穩妥？",
   "options": [
     {
       "id": "A",
-      "text": "結合事件、人物言語與結尾評語"
+      "text": "一定是語錄，而且主張內容已知。"
     },
     {
       "id": "B",
-      "text": "只看第一個人名"
+      "text": "可能暗示與智慧或言論有關，但沒有正文不能確定文體與寓意。"
     },
     {
       "id": "C",
-      "text": "只依故事長短判斷"
+      "text": "一定是寓言，因為智者會講故事。"
     },
     {
       "id": "D",
-      "text": "只找最生動的景物"
+      "text": "可以直接判定作者贊成所有智者的說法。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "事件、對話與結尾評語共同提供態度與寓意線索。"
+    "value": "B",
+    "explanation": "標題只能提供方向線索，缺少正文時不能確定是語錄、寓言或其他文體，也不能判定具體主張。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "古文與寓言整合判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究非韻文古文、古典小說、語錄、寓言的形式證據、古今義與寓意界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫古典非韻文與寓意題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-4"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古文、語錄與寓意理解",
+      "observedPattern": "公立學校國文評量要求從對話、敘事、人物行動、古今詞義與結尾教訓判讀非韻文體式與寓意；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古典文本與人物判讀",
+      "observedPattern": "公立學校國文評量要求從對話、敘事、人物行動、古今詞義與結尾教訓判讀非韻文體式與寓意；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把標題當作待驗證線索，分開寫出目前可推測和需要正文支持的部分。",
+  "solutionSteps": [
+    "記錄標題提供智慧、言論的可能方向。",
+    "正文缺少句式、角色、事件與結尾，文體證據不足。",
+    "B 保留可能性，沒有把標題擴成結論。",
+    "A、C、D 都把名稱或想像當成正文證據。",
+    "要求補充正文，再依直接說理或故事寄託判斷文體。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

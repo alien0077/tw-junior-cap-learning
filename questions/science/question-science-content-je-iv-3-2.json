@@ -2,41 +2,78 @@
   "id": "question-science-content-je-iv-3-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年7月14日自然科教室的觀察中，將 187℃ 的金屬片放入 33℃ 的水中，研究「Je-Ⅳ-3：化學平衡與溫度、濃度的影響」時，最初的熱傳方向為何？",
+  "prompt": "平衡反應中加入反應物，短時間內正反應速率先增加，主要原因是？",
   "options": [
     {
       "id": "A",
-      "text": "由金屬片傳向水"
+      "text": "反應物粒子數增加，使正向有效碰撞機會增加"
     },
     {
       "id": "B",
-      "text": "由 33℃ 的水傳向 187℃ 金屬片"
+      "text": "逆反應一定完全停止"
     },
     {
       "id": "C",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "溫度必定自動升高"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "平衡常數一定立刻改變"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-je-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 187℃ 金屬片傳向 33℃ 的水。 本題對應 KG「Je-Ⅳ-3：化學平衡與溫度、濃度的影響」。"
+    "explanation": "加入反應物提高其濃度，使正向碰撞頻率增加；溫度不變時平衡常數不因單純加料而改變。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的可逆反應、動態平衡、溫度／濃度、圖表與製程能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-je-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-je-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "可逆反應、平衡、溫度濃度與圖表判讀",
+      "pattern": "取由平衡資料、反應條件與圖表推論可逆反應變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由平衡資料、反應條件與圖表推論可逆反應變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "平衡位移、反應條件、工業與生活情境",
+      "pattern": "取從資料曲線、條件改變與製程情境判斷平衡位置及收率的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從資料曲線、條件改變與製程情境判斷平衡位置及收率的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分瞬間速率變化、平衡位置和常數。",
+  "solutionSteps": [
+    "辨認被加入的是反應物。",
+    "判斷其濃度瞬間增加。",
+    "連結正向碰撞與速率增加。",
+    "檢查溫度是否改變，排除平衡常數改變。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

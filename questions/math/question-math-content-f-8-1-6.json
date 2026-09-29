@@ -2,23 +2,23 @@
   "id": "question-math-content-f-8-1-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若兩條一次函數圖形斜率相等、截距也相等，兩圖形的關係為何？",
+  "prompt": "水箱注水量 y（公升）與時間 x（分鐘）符合 y＝6x＋10。下列何者表示每分鐘增加的水量？",
   "options": [
     {
       "id": "A",
-      "text": "平行不重合"
+      "text": "6 公升"
     },
     {
       "id": "B",
-      "text": "重合"
+      "text": "10 公升"
     },
     {
       "id": "C",
-      "text": "互相垂直"
+      "text": "16 公升"
     },
     {
       "id": "D",
-      "text": "只交於一點"
+      "text": "x 公升"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "斜率與截距都相同，代表是同一條直線，圖形重合。"
+    "value": "A",
+    "explanation": "一次函數 y＝6x＋10 的 x 係數 6 是變化率，表示每分鐘增加 6 公升；10 是初始量，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 一次函數 題型與官方課綱 KG kg-math-content-f-8-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供一次函數規則、表格、變化率、交會與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的一次函數能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-f-8-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-f-8-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "linear-function rules, rate of change, tables, function values, equations, and contextual interpretation",
+      "observedPattern": "公立學校公開數學試題常由表格、情境或兩點關係建立一次函數，要求讀取斜率、截距、函數值、交會條件與變化率；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "linear-function rules, rate of change, tables, function values, equations, and contextual interpretation",
+      "observedPattern": "公立學校公開數學試題常由表格、情境或兩點關係建立一次函數，要求讀取斜率、截距、函數值、交會條件與變化率；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分斜率代表每單位輸入的變化量，截距代表 x＝0 時的初始值。",
+  "solutionSteps": [
+    "找出規則中的 x 係數 6。",
+    "把 x 增加 1，y 的增加量為 6×1＝6。",
+    "辨認常數 10 是起始水量，不是每分鐘增加量。",
+    "附上單位，得到每分鐘 6 公升。",
+    "選 A，檢查 y(1)−y(0)＝16−10＝6。"
+  ]
 }

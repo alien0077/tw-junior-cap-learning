@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-4-9",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-4／事實與意見」task, what is the best way to prepare question 9?",
+  "prompt": "A report says the park received 120 visitors on Saturday. Which sentence is a recommendation?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-4／事實與意見."
+      "text": "The park received 120 visitors."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-4／事實與意見."
+      "text": "The report records Saturday’s visitor total."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-4／事實與意見."
+      "text": "The park should add another water station."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-4／事實與意見."
+      "text": "Saturday was the busiest recorded day."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-4／事實與意見, question 9."
+    "value": "C",
+    "explanation": "should add 明確提出未來改善行動，其餘句子是在描述或整理紀錄，因此選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1706770089045DwNPg1SE.pdf",
+    "sourceLocator": "PDF第4頁第49–50題：根據走失公告判斷真實資訊，並選出符合公告指示的行動。",
+    "authoringNote": "參照公立國中英文定期評量中核對文章事實、作者觀點、圖表證據、預測及行動判讀的能力；情境、題幹、數據、選項、答案與解析皆獨立編寫，未複製原題。版本研究與全案內容審查未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1706770089045DwNPg1SE.pdf",
+      "title": "臺北市立內湖國中112學年度第1學期七年級第3次段考英語科（康軒版）",
+      "year": "112",
+      "subject": "english",
+      "locator": "PDF第4頁第49–50題：根據走失公告判斷真實資訊，並選出符合公告指示的行動。",
+      "observedPattern": "參照從公告事實推出適當行動的題型；本題公園人流及補水建議為自編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "建議通常指出應採取的未來行動，常見 should；報告數字則描述已發生或已記錄的事。",
+  "solutionSteps": [
+    "先區分句子功能：報告陳述訪客數，建議提出接下來要做什麼。",
+    "received 120 visitors 與 records total 都描述紀錄。",
+    "should add 指向應採取的改善行動。",
+    "所以建議句是 The park should add another water station，選 C。",
+    "「週六最繁忙」還需要其他日期數據；但它仍不是行動建議。"
+  ]
 }

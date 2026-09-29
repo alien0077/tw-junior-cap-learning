@@ -2,41 +2,67 @@
   "id": "question-science-content-cb-iv-3-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月17日社區環境站的觀察中，將 72 g 食鹽溶於 409 g 水，研究「Cb-Ⅳ-3：原子排列與同分子式的不同物質」時，溶液質量為何？",
+  "prompt": "若甲、乙的分子式相同，甲的沸點明顯較高，哪一種解釋最符合本單元的推理方式？",
   "options": [
     {
       "id": "A",
-      "text": "337 g"
+      "text": "沸點高低與原子排列和分子間作用完全無關"
     },
     {
       "id": "B",
-      "text": "29448 g"
+      "text": "只要沸點不同，就能確定兩者含有不同元素"
     },
     {
       "id": "C",
-      "text": "409 g"
+      "text": "可能因結構造成分子間作用不同，但還要以結構與其他資料交叉檢查"
     },
     {
       "id": "D",
-      "text": "481 g"
+      "text": "分子式相同時，沸點差異一定是測量錯誤"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cb-iv-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：72＋409＝481 g。 本題對應 KG「Cb-Ⅳ-3：原子排列與同分子式的不同物質」。"
+    "value": "C",
+    "explanation": "相同組成仍可能有不同結構與分子間作用，沸點差異可作為線索，但不能單靠一項資料直接完成鑑定。選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的分子式、結構式與同分異構物能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Cb-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cb-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cb-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "分子式、結構式、同分異構物與物性資料判讀",
+      "pattern": "取由分子式、原子連接方式與物性資料推論物質差異的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由分子式、原子連接方式與物性資料推論物質差異的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把觀察、合理模型與尚需驗證的限制分開寫。",
+  "solutionSteps": [
+    "記錄已知的共同分子式。",
+    "把沸點差異當作觀察結果而非結論。",
+    "提出結構或分子間作用不同的假設。",
+    "尋找結構式、溶解性或其他重複資料交叉檢查。",
+    "所以選 C。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

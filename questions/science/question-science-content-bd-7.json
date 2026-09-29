@@ -2,23 +2,23 @@
   "id": "question-science-content-bd-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年5月28日社區環境站的觀察中，小車在 31 秒內前進 955 m，研究「Bd：生態系中能量的流動與轉換」時，平均速率為何？",
+  "prompt": "若草地大量減少，草→蝗蟲→青蛙食物鏈最可能先出現什麼變化？",
   "options": [
     {
       "id": "A",
-      "text": "29605 m/s"
+      "text": "蝗蟲一定增加且青蛙不變"
     },
     {
       "id": "B",
-      "text": "0.0324607 m/s"
+      "text": "草減少會讓所有能量增加"
     },
     {
       "id": "C",
-      "text": "30.8065 m/s"
+      "text": "青蛙會立刻變成生產者"
     },
     {
       "id": "D",
-      "text": "924 m/s"
+      "text": "蝗蟲食物減少，數量可能下降，青蛙也可能因食物減少受影響"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "平均速率＝路程÷時間＝955÷31＝30.8065 m/s。 本題對應 KG「Bd：生態系中能量的流動與轉換」。"
+    "value": "D",
+    "explanation": "生產者減少會降低初級消費者的食物與能量來源，後續影響要看替代食物、捕食與時間尺度。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的食物鏈、能量流動、碳循環與生態系能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bd 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bd"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bd",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "食物鏈、能量塔、碳循環與生態資料判讀",
+      "pattern": "取由生產者、消費者、能量流動與物質循環資料推論生態系的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生產者、消費者、能量流動與物質循環資料推論生態系的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認營養階層與取食方向，再追蹤能量取得、代謝散失與物質循環，最後用生物量資料檢查推論限制。",
+  "solutionSteps": [
+    "讀題定位：圈出「擾動判讀」以及生產者、消費者、分解者、食物網、生物量或能量。",
+    "建立判準：生產者減少會降低初級消費者的食物與能量來源，後續影響要看替代食物、捕食與時間尺度。",
+    "核對答案：選項 D「蝗蟲食物減少，數量可能下降，青蛙也可能因食物減少受影響」符合生態系能量流動與轉換原理。",
+    "排除誘答：分清物質循環與能量流動、能量與生物量、食物關係與能量方向，不把熱散失當成循環。",
+    "最後回查：確認營養階層、時間尺度、取樣條件與推論限制都和題幹一致。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

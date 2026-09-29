@@ -2,23 +2,23 @@
   "id": "question-science-content-aa-iv-1-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年11月13日河川觀測站的觀察中，將 77 g 食鹽溶於 641 g 水，研究「Aa-Ⅳ-1：原子模型演變」時，溶液質量為何？",
+  "prompt": "某模型能解釋電子存在，卻無法預測少數 α 粒子的大角度偏折；科學家最合理的做法是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "564 g"
+      "text": "刪除所有偏折資料"
     },
     {
       "id": "B",
-      "text": "49357 g"
+      "text": "直接宣布模型永遠正確"
     },
     {
       "id": "C",
-      "text": "641 g"
+      "text": "保留可用部分，修改或增加能解釋反常結果的假設"
     },
     {
       "id": "D",
-      "text": "718 g"
+      "text": "只改變實驗名稱，不檢查模型"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：77＋641＝718 g。 本題對應 KG「Aa-Ⅳ-1：原子模型演變」。"
+    "value": "C",
+    "explanation": "科學模型要接受新證據檢驗；合理做法是保留仍能解釋的部分，增加原子核等假設以解釋大角度偏折，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；原子模型與證據判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／教材的原子模型、粒子證據與模型修正能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均依 Aa-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-aa-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-aa-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子模型、陰極射線、金箔散射、模型修正與科學證據判讀",
+      "pattern": "取由實驗觀察推論微觀模型，並比較模型解釋力與限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗觀察推論微觀模型，並比較模型解釋力與限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.tksh.ntpc.edu.tw/uploads/1626668076188QlOI4fer.pdf",
+      "title": "新北市立泰山高中公開原子模型與科學史銜接教材",
+      "year": "公開教材",
+      "locator": "陰極射線、金箔散射、原子核與模型修正",
+      "pattern": "取由資料反推模型假設、辨識反常結果並修正模型的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由資料反推模型假設、辨識反常結果並修正模型的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.tcjh.tyc.edu.tw/image/1534212714782dPiSoOmq.pdf",
+      "title": "桃園市立自強國民中學公開自然科段考試題",
+      "year": "公開試題",
+      "locator": "粒子模型、原子結構與科學證據判讀",
+      "pattern": "取把觀察、推論、模型與適用範圍分層判讀的能力方向。",
+      "subject": "science",
+      "observedPattern": "取把觀察、推論、模型與適用範圍分層判讀的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把『模型失配』當作修正線索，而不是把不合資料的結果刪掉。",
+  "solutionSteps": [
+    "指出模型已能解釋電子存在。",
+    "找出它無法說明的大角度偏折。",
+    "保留前一模型仍有效的部分。",
+    "新增能產生強排斥的集中正電假設。",
+    "因此選 C。"
+  ]
 }

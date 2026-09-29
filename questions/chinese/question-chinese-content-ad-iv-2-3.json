@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ad-iv-2-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "小說中人物的對話與行動互相矛盾，讀者最適合如何判斷人物？",
+  "prompt": "文本安排一名角色面臨選擇，透過事件發展與衝突逐步改變，並以敘述者補充背景。這些線索較支持？",
   "options": [
     {
       "id": "A",
-      "text": "比較言語與行動後推論內心"
+      "text": "新詩"
     },
     {
       "id": "B",
-      "text": "只相信第一句對話"
+      "text": "現代散文"
     },
     {
       "id": "C",
-      "text": "只看人物姓名"
+      "text": "現代小說"
     },
     {
       "id": "D",
-      "text": "忽略情節發展"
+      "text": "公告"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "言語和行動的落差可能揭示人物的複雜心理，需綜合判讀。"
+    "value": "C",
+    "explanation": "角色、事件、衝突與敘述者共同構成小說常見的敘事組織；背景補充也顯示敘事視角介入。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "新詩、現代散文、現代小說與劇本閱讀能力；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究新詩、散文、小說、劇本的形式證據、視角與表達功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫現代文學文體題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文體與篇章理解",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "現代文學形式與閱讀判讀",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找人物、事件、衝突與敘述者，再判斷文本是否以情節變化推動閱讀。",
+  "solutionSteps": [
+    "角色面臨選擇表示有行動者與問題。",
+    "事件和衝突逐步改變形成情節發展，敘述者補充背景。",
+    "C 能統整這些小說敘事線索。",
+    "A 偏向分行意象，B 可抒情但不必有連續衝突，D 不具此敘事結構。",
+    "以『角色—衝突—選擇—改變』整理事件鏈，確認 C。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

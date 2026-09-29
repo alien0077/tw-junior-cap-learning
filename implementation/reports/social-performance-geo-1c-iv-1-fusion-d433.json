@@ -1,0 +1,44 @@
+{
+  "decision": "D-433",
+  "asOf": "2026-09-29",
+  "lessonId": "lesson-social-performance-geo-1c-iv-1",
+  "status": "authored-fusion-draft-recorded",
+  "inventoryBefore": "762/791",
+  "inventoryAfter": "763/791 (96.46%); 28 remain",
+  "preexistingManuscriptCheck": {
+    "visibleSectionsBefore": 4,
+    "teachingBodySectionsBefore": 6,
+    "versionResearchBefore": null,
+    "fusionRecordBefore": null,
+    "finding": "原學生頁為四段泛用占位，teaching.body雖有六段但仍是泛化判斷流程；缺versionResearch與fusionRecord，不在已登錄融合稿名冊。只改此單元，未重寫已登錄稿件。"
+  },
+  "evidence": {
+    "officialCurriculum": "官方社會領域課綱地1c-Ⅳ-1『利用地理基本概念與技能，檢視生活中面對的選擇與決策』，curriculum/social/performance-geo-1c-iv-1.json；KG kg-social-performance-geo-1c-iv-1。",
+    "versionSources": [
+      "南一：忠和國中109學年度計畫PDF pp.79–81明列南一版第一冊及地圖／座標系統、地圖要素、紙本與電子地圖、比例尺估距、相對與絕對位置、經緯度；屬公校版本標示課程計畫，不是南一出版社原書。",
+      "康軒：翰林雲端學院公開課程頁以康軒篩選，列第一單元第1課位置、地圖與座標系統及位置／絕對位置對生活影響兩焦點；屬公開課程焦點索引，不是康軒完整課本正文。",
+      "翰林：公開國一上課程頁列第1章認識位置與地圖、經緯線網格及讀圖；翰林113上試閱講義印刷頁9（PDF p.2）說明相對位置基準／方位／距離與絕對位置橫縱座標，並標示翰林與康軒課次。"
+    ],
+    "copyrightBoundary": "以來源支持概念定位與教學表徵，原創決策情境及虛構示意數據；不複製來源正文、題目、答案、圖片或版面。來源層級和讀取範圍明確區分，未宣稱已取得三版完整課本。"
+  },
+  "authoredContent": {
+    "studentVisibleSections": 6,
+    "teachingBodySections": 6,
+    "studentAndTeachingTextParity": "PASS exact heading/body parity",
+    "focus": "以校外活動集合點選擇串聯需求限制、相對／絕對位置、比例尺換算、路網可達性、公平比較、地圖資料限制與條件變更遷移。",
+    "fictionalDataLabelled": true,
+    "reviewStatus": "draft; final lesson content review is reserved for user's ChatGPT; not performed by Codex"
+  },
+  "verification": {
+    "targetJson": "PASS",
+    "targetLessonContract": "PASS: six student-visible sections exactly mirror teaching.body; three publisherResearch and three versionResearch records with evidence limits; fusionRecord; draft",
+    "dataValidation": "PASS: 14543 JSON, 13114 IDs, 1032 KG nodes; structural validation only",
+    "fusionInventory": "PASS: 763/791 recorded (96.46%); learning-content 583/583; learning-performance 180/208; 28 remain",
+    "gitDiffCheck": "PASS: git diff --check"
+  },
+  "notCompleted": [
+    "28 learning-unit fusion manuscripts remain unrecorded and must be inventoried individually before authoring.",
+    "Interactive specification and browser/runtime QA are reserved for the later specification/interaction phase.",
+    "No Codex lesson content review, commit, or push was performed."
+  ]
+}

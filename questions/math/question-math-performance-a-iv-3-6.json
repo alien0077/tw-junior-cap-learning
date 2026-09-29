@@ -2,41 +2,84 @@
   "id": "question-math-performance-a-iv-3-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 x 為整數且－2＜x≤3，下列何者可能是 x 的最大值？",
+  "prompt": "若 x 為整數且 -2<x≤3，符合條件的 x 共有幾個？",
   "options": [
     {
       "id": "A",
-      "text": "4"
+      "text": "4 個"
     },
     {
       "id": "B",
-      "text": "－2"
+      "text": "5 個"
     },
     {
       "id": "C",
-      "text": "3"
+      "text": "6 個"
     },
     {
       "id": "D",
-      "text": "2"
+      "text": "7 個"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-a-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "條件包含 x≤3，且 3 符合－2＜3，因此最大整數值為 3。"
+    "value": "B",
+    "explanation": "整數解為 -1、0、1、2、3，共 5 個，因此正確答案為 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考一元一次不等式、負數除法、數線邊界與預算／變化情境題型；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "一元一次不等式單元實質改寫；已重新解不等式並核對邊界與整數限制，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供一元一次不等式能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的不等式解題方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-a-iv-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-a-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "一元一次不等式的等量操作、負數反向、數線端點、雙重限制與生活情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求將條件轉成不等式，注意乘除負數時方向改變，並把解集轉成數線或整數情境；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "一元一次不等式的等量操作、負數反向、數線端點、雙重限制與生活情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求將條件轉成不等式，注意乘除負數時方向改變，並把解集轉成數線或整數情境；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "一元一次不等式的等量操作、負數反向、數線端點、雙重限制與生活情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求將條件轉成不等式，注意乘除負數時方向改變，並把解集轉成數線或整數情境；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列出嚴格大於 -2 的第一個整數，再列到包含 3 的端點。",
+  "solutionSteps": [
+    "下界 -2 不包含，所以從 -1 開始。",
+    "依序列出 -1、0、1、2、3。",
+    "上界 3 有等號，因此 3 要保留。",
+    "逐一計數得到 5 個。",
+    "所以選 B。"
+  ]
 }

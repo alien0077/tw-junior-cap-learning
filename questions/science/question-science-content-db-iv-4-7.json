@@ -2,41 +2,67 @@
   "id": "question-science-content-db-iv-4-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月5日校園實驗室的觀察中，針對「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」提出可檢驗的科學問題，若比較 5 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "為何有性生殖的子代通常不會與任一親代完全相同？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時只改變水溫，其餘條件一致，設置5組、每組取樣15份並各重複測量3次"
+      "text": "子代的遺傳物質來自兩個配子，配子組合與基因排列可造成差異"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "受精會把親代所有染色體刪除，只留下環境造成的性狀"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時只測量5組中的一組就直接下結論"
+      "text": "有性生殖完全不涉及遺傳物質，所以差異只靠外觀"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "每個子代都必然具有比親代多一套染色體"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-4"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」。"
+    "explanation": "有性生殖由兩個配子結合，配子各自帶有一套遺傳物質，組合後可能產生不同的遺傳排列，因此子代常與親代或彼此有差異。選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的生殖系統、配子、受精、性生殖與激素調節能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生殖、遺傳與生命延續相關資料判讀",
+      "pattern": "取由生殖構造、遺傳資訊與資料推論生命延續的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生殖構造、遺傳資訊與資料推論生命延續的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找差異來源是兩個配子的組合，再排除染色體刪除、無遺傳物質與套數永久增加。",
+  "solutionSteps": [
+    "確認有性生殖包含配子結合。",
+    "將兩個來源的遺傳物質放入同一受精卵。",
+    "說明不同配子組合可造成子代差異。",
+    "排除遺傳物質消失與染色體套數永久增加。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

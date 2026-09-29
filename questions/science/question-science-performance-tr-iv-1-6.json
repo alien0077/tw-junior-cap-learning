@@ -2,41 +2,73 @@
   "id": "question-science-performance-tr-iv-1-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年2月27日學校研究社的觀察中，針對「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」提出可檢驗的科學問題，若比較 5 組、每組取樣 14 份資料，哪一項設計最適當？",
+  "prompt": "同一概念換到不同材料時，推論應注意什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "檢查材料、尺度、溫度與測量條件是否仍符合原本適用範圍"
     },
     {
       "id": "B",
-      "text": "研究「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」時只測量5組中的一組就直接下結論"
+      "text": "概念永遠不需調整"
     },
     {
       "id": "C",
-      "text": "研究「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」時只改變距離，其餘條件一致，設置5組、每組取樣14份並各重複測量4次"
+      "text": "只要名稱相同就能直接外推"
     },
     {
       "id": "D",
-      "text": "研究「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」時先決定結論，再挑選支持結論的14筆資料"
+      "text": "把新資料刪掉"
     }
   ],
   "knowledgeIds": [
     "kg-science-performance-tr-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「tr-Ⅳ-1：連結知識、自然現象與實驗數據進行推論」。"
+    "value": "A",
+    "explanation": "A 讓推論尊重概念的條件和尺度限制。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究知識連結、現象、數據與推論能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-tr-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-tr-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "知識、現象與數據推論能力方向",
+      "observedPattern": "公開自然科評量常以知識、現象、數據、機制、變因與證據界線要求推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "替代解釋、資料判讀與結論界線能力方向",
+      "observedPattern": "公開自然科評量常以知識、現象、數據、機制、變因與證據界線要求推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先描述資料，再連結概念和機制，檢查控制條件、替代解釋、尺度與條件式結論。",
+  "solutionSteps": [
+    "讀題定位：圈出推論核心「scale」。",
+    "分辨直接觀察、既有知識、機制、控制條件、替代解釋與結論範圍。",
+    "逐項比對哪個選項能由資料和知識共同支持；正確答案是 A。",
+    "核對理由：A 讓推論尊重概念的條件和尺度限制。",
+    "最後回查是否把相關當因果、把局部結果外推，並寫出能區分解釋的下一步。"
+  ]
 }

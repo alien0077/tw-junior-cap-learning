@@ -2,41 +2,27 @@
   "id": "question-english-performance-1-iv-6-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read the「1-Ⅳ-6／故事短劇主要內容」text for day 8: “Owen and two classmates visited a small museum. They recorded the result and shared it after lunch.” What is the main idea?",
+  "prompt": "After the final scene, a small paper boat is still floating in the basin. The two actors look at each other, then bow together instead of grabbing it as a prize. What is the best inference about the ending?",
   "options": [
-    {
-      "id": "A",
-      "text": "On day 8, the students completed an activity and reported what they learned in the 1-Ⅳ-6／故事短劇主要內容 task."
-    },
-    {
-      "id": "B",
-      "text": "On day 8, the students stayed home and recorded nothing for the 1-Ⅳ-6／故事短劇主要內容 task."
-    },
-    {
-      "id": "C",
-      "text": "On day 8, the students cancelled lunch before visiting the library."
-    },
-    {
-      "id": "D",
-      "text": "On day 8, the students bought a new bus for the 1-Ⅳ-6／故事短劇主要內容 task."
-    }
+    { "id": "A", "text": "The paper boat belongs to the audience." },
+    { "id": "B", "text": "The actors forgot that the show had ended." },
+    { "id": "C", "text": "The actors value finishing the performance together more than claiming the prop." },
+    { "id": "D", "text": "The actors plan to restart the play from the beginning." }
   ],
-  "knowledgeIds": [
-    "kg-english-performance-1-iv-6"
-  ],
+  "knowledgeIds": ["kg-english-performance-1-iv-6"],
   "difficulty": "medium",
-  "answer": {
-    "value": "A",
-    "explanation": "The main idea includes the students' activity, record, and sharing of results. This item targets 1-Ⅳ-6／故事短劇主要內容, question 8."
-  },
-  "provenance": {
-    "origin": "original",
-    "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
-    "sourceLocator": "114 年國中教育會考英語科閱讀公開試題；研究短劇的角色、事件、轉折、問題解決、價值與結局判讀；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
-  },
+  "answer": { "value": "C", "explanation": "Rather than compete for the remaining prop, the actors bow as a pair. The ending suggests shared accomplishment; ownership and plans to restart are not stated." },
+  "provenance": { "origin": "original", "license": "All rights reserved", "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E8%8B%B1%E6%96%87_4.pdf", "sourceLocator": "PDF第3頁第28題：整合角色的善意行動與後續結果，判讀行動如何影響故事結局。本題以共同謝幕另創情節。", "authoringNote": "道具、角色、故事、選項與解析均原創；僅參考公校閱讀題依行動證據推斷故事結果的能力。維持draft。" },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1-iv-6"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-1-iv-6",
+  "examPatternRefs": [{ "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E8%8B%B1%E6%96%87_4.pdf", "title": "高雄市立國昌國中114學年度第1學期第2次八年級英文段考", "year": "114-1", "subject": "english", "locator": "PDF第3頁第28題：由善意行動推理角色生活及故事後續結果；本題改以共同謝幕作為結局線索。", "locatorLevel": "item", "observedPattern": "將人物採取的行動與後續結果相連，選出文本支持的情節影響，不額外添加未出現的事件。", "reuseDecision": "pattern-only", "status": "recorded" }],
+  "solutionStrategy": "結局推論要從最後的可見行動回扣全劇關係，並把推論限制在文本能支持的範圍。",
+  "solutionSteps": [
+    "確認最後一幕發生的事：紙船仍在水盆裡，演員互看後一起鞠躬。",
+    "注意他們沒有伸手搶船，也沒有各自離場。",
+    "把共同鞠躬和放下道具連起來，較合理的訊息是共同完成演出比拿走道具重要。",
+    "選 C；船的所有權、忘記結束或重演計畫都沒有線索。",
+    "保留推論界線：只能說結尾呈現合作，不推斷他們是親友或道具歸誰。"
+  ]
 }

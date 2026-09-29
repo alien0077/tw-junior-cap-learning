@@ -2,41 +2,73 @@
   "id": "question-science-performance-ah-iv-2-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年2月3日校園實驗室的觀察中，針對「ah-Ⅳ-2：應用科學知識與探究方法做決定」提出可檢驗的科學問題，若比較 4 組、每組取樣 10 份資料，哪一項設計最適當？",
+  "prompt": "比較飲水設備時，哪組指標較完整？",
   "options": [
     {
       "id": "A",
-      "text": "研究「ah-Ⅳ-2：應用科學知識與探究方法做決定」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "水質、維護頻率、濾芯成本、使用率與停機風險"
     },
     {
       "id": "B",
-      "text": "研究「ah-Ⅳ-2：應用科學知識與探究方法做決定」時只測量4組中的一組就直接下結論"
+      "text": "只看外觀顏色"
     },
     {
       "id": "C",
-      "text": "研究「ah-Ⅳ-2：應用科學知識與探究方法做決定」時先決定結論，再挑選支持結論的10筆資料"
+      "text": "只問一位使用者喜不喜歡"
     },
     {
       "id": "D",
-      "text": "研究「ah-Ⅳ-2：應用科學知識與探究方法做決定」時只改變攪拌速度，其餘條件一致，設置4組、每組取樣10份並各重複測量4次"
+      "text": "只比較購買價格"
     }
   ],
   "knowledgeIds": [
     "kg-science-performance-ah-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「ah-Ⅳ-2：應用科學知識與探究方法做決定」。"
+    "value": "A",
+    "explanation": "A 同時涵蓋安全、維護、成本、使用和風險，能支持較完整方案比較。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究科學應用、方案比較、風險與責任決策能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-ah-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-ah-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "科學應用、資料與決策能力方向",
+      "observedPattern": "公開自然科評量常以資料、方案、環境、風險與證據界線要求應用科學做決定；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "環境議題、證據與責任決策能力方向",
+      "observedPattern": "公開自然科評量常以資料、方案、環境、風險與證據界線要求應用科學做決定；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先界定目標和限制，再比較證據、指標、風險、可逆性、公平與受影響者，最後設計試行和監測。",
+  "solutionSteps": [
+    "讀題定位：圈出決策核心「indicator」。",
+    "列出目標、限制、證據指標、受影響者、風險、不確定性與可逆性。",
+    "逐項比對方案是否有可檢查的理由；正確答案是 A。",
+    "核對理由：A 同時涵蓋安全、維護、成本、使用和風險，能支持較完整方案比較。",
+    "最後回查哪些部分可由數據支持、哪些需要公平與責任討論，並寫出監測或修正行動。"
+  ]
 }

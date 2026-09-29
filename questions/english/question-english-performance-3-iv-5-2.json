@@ -2,41 +2,84 @@
   "id": "question-english-performance-3-iv-5-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-5／理解簡易生活用語」task, what is the best way to prepare question 2?",
+  "prompt": "Your classmate lends you an umbrella during a sudden shower and says, ‘Here you are.’ What is the most natural reply?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "You should take it back now."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "I’m sorry you are wet."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-5／理解簡易生活用語."
+      "text": "Thanks—that’s very kind of you."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "Would you like me to borrow it?"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-5"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-5／理解簡易生活用語, question 2."
+    "value": "C",
+    "explanation": "正確答案 C。對方正在幫忙把傘借給你，先表達感謝最切合情境；D 把借出與借入的角色弄反。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-10-16-24-nf1.pdf",
+    "sourceLocator": "本題參照公立國中英文段考中依對話目的選擇生活回應的命題模式；逐題原卷定位見 examPatternRefs。公開查閱不代表授權重製；本題情境、文字、選項、答案與解析均重新撰寫。",
+    "authoringNote": "依本單元生活互動能力原創改寫；公開試題僅作 pattern-only 題型參考，未複製原題、選項或答案；仍待單元內容與答案 QA，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-5"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-10-16-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期八年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第2頁第23題：對方表達感謝後，選出符合社交情境的回應",
+      "locatorLevel": "item",
+      "observedPattern": "參照道謝／回應的語用配對，不沿用原題措辭。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87_3.pdf",
+      "title": "高雄市立國昌國中114學年度第1學期七年級第1次段考英文",
+      "year": "114-1",
+      "subject": "english",
+      "locator": "第2頁第24題：聽完人物介紹後選擇自然的對話收束回應",
+      "locatorLevel": "item",
+      "observedPattern": "參照生活對話中依前文選擇回應的題型。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中114學年度第2學期九年級第1次段考英文",
+      "year": "114-2",
+      "subject": "english",
+      "locator": "第2頁第11題：服務對話中顧客提出問題後，服務人員道歉並提出補救",
+      "locatorLevel": "item",
+      "observedPattern": "參照承接他人行動、維持禮貌互動的對話功能。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "先辨認對方做了什麼，再選擇能回應這項善意的話。",
+  "solutionSteps": [
+    "確認 Here you are 是把物品交給對方，不是提出新邀請。",
+    "從前後情境判斷：同學主動借傘，目的是幫你避雨。",
+    "回應應承認幫助並表達謝意，不必要求對方立刻收回。",
+    "C 感謝同學的好意；D 則把借傘方向說反。",
+    "把 C 接在同學的話後朗讀，確認人際角色及語氣合理。"
+  ]
 }

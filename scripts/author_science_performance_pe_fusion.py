@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance e."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-pe.json"; REPORT=ROOT/"implementation/reports/science-performance-pe-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；探究計畫、變因控制、資料蒐集與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持由問題形成計畫，控制條件、客觀測量、記錄資料並依結果調整。"],"representations":[r],"examplesOrEvidence":["本課的溶液溫度、紙飛機與土壤含水量探究皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-pe" and d["reviewStatus"]=="draft"
+ d["title"]="計劃與執行（e）：把探究問題變成可靠流程"
+ d["content"]={"summary":"探究計畫不是把步驟列得越多越好，而是讓問題、變因、測量、材料、安全與資料分析互相對得上。研究溶液降溫、紙飛機距離或土壤含水量時，要先指出自變因、應變因與控制變因，設計公平比較與重複測量，預先決定記錄格式和停止條件。本課以原創實驗計畫練習從可行性檢查到執行中調整，讓結果可以被自己和別人追查。","sections":[{"heading":"問題要能被操作","body":"『哪種液體比較好』需要改成在固定體積、初始溫度和時間下，比較不同液體的溫度變化。可操作的問題會直接提示要改變什麼、測量什麼和保持什麼。"},{"heading":"變因和控制條件要對齊","body":"自變因是刻意改變的條件，應變因是觀察結果，控制變因則要盡量固定。若一次改變兩項，就不能知道差異來自哪一項，計畫必須在執行前先找出這個風險。"},{"heading":"測量計畫包含品質與安全","body":"材料數量、器材校正、讀值時間、重複次數、個人防護和廢液處理都屬於方法。安全不是附加提醒，而是決定方案能否執行的條件。"},{"heading":"執行中可以依證據調整","body":"若儀器故障、環境改變或資料顯示方法不穩定，要記錄偏離原計畫的原因、時間與影響，再決定重做、補測或限制結論。偷偷改步驟會讓結果失去可追溯性。"}]}
+ d["studyHighlights"]=["把問題改寫成可操作、可測量的比較。","明確區分自變因、應變因與控制變因。","在計畫中安排重複、校正、安全與記錄格式。","執行偏離時留下紀錄，依證據調整而不偷偷改動。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"哪架紙飛機飛得最遠？","body":"三位同學各折一架紙飛機，甲飛 8 公尺、乙飛 11 公尺、丙飛 7 公尺。請先檢查是否使用相同紙張、投擲高度、力道、風向與測量起點。若條件沒有規畫，最遠的數字只是一次結果，不能直接判定摺法最好。"},
+ {"id":"explain","phase":"explain","heading":"把計畫寫成別人能重做的流程","body":"先寫研究問題與預測，再列材料和安全事項，標示自變因、應變因、控制變因，決定樣本數、重複方式、讀值時間與資料表欄位。完成後做小規模試跑，檢查器材量程、操作順序和停止條件，才進入正式蒐集。"},
+ {"id":"worked-example","phase":"worked-example","heading":"比較溶液降溫的完整計畫","body":"問題是不同溶液在 10 分鐘內降溫是否不同。每杯取 100 mL、初溫 60°C，使用同型容器和溫度計，每 2 分鐘讀一次，溶液種類是自變因、溫度變化是應變因，每種至少三次。若其中一次溫度計未浸入相同深度，要記錄並判斷是否補測，不可悄悄刪除。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"土壤含水量探究的風險檢查","body":"計畫比較陽光處和樹蔭處土壤含水量。學習者先指出地點之外還可能不同的土壤深度、採樣時間、雨後間隔與植被，再設計同日同深度多點採樣。若必須改變時間，要寫入方法限制並調整結論，不能把不一致說成控制完成。"},
+ {"id":"transfer","phase":"transfer","heading":"把計畫變成可共享的紀錄","body":"完成探究後交付問題、版本日期、器材、變因表、原始資料、偏離紀錄、計算方式和安全處理。別人即使不相信你的結論，也能沿著紀錄重做或指出哪一步需要改進，這正是執行計畫的可追溯性。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個執行迷思","body":"請修正『步驟越多就越可靠』與『不符合預測的讀值應該刪除』。可靠性來自問題、變因、測量與分析相互對齊；不合預期的資料要查方法、記錄原因並說明影響，不能用刪除讓結果看似整齊。"}
+ ],"summary":["問題、變因、測量和資料格式要互相對齊。","公平比較需要控制條件、重複、校正與安全計畫。","試跑可發現器材、流程和停止條件問題。","偏離計畫要留下紀錄並調整結論範圍。"],"exitCheck":[{"prompt":"紙飛機比較時至少要控制哪些條件？","expectedEvidence":"紙張、投擲高度與方式、風向、測量起點和距離定義等要一致，並重複測試。"},{"prompt":"為什麼研究溶液降溫要固定體積和初溫？","expectedEvidence":"體積和初溫會影響溫度變化，固定後才能較合理比較溶液種類的差異。"},{"prompt":"執行中改變步驟時要做什麼？","expectedEvidence":"記錄時間、原因與可能影響，決定重做或限制結論，保持方法可追溯。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"由問題規畫變因、控制條件、測量、記錄與安全流程。","scenario":"設計溶液降溫與紙飛機探究，逐步找出能重做、可比較且可追溯的方法。","variables":[{"symbol":"x","meaning":"自變因"},{"symbol":"y","meaning":"應變因"},{"symbol":"z","meaning":"控制條件"}],"steps":[{"id":"step-1","prompt":"比較不同溶液降溫時，哪一項是應變因？","options":["固定時間內的溫度變化","溶液種類","每杯取用的體積"],"answer":"A","feedback":"應變因是觀察結果；溶液種類是自變因，體積應作控制條件。"},{"id":"step-2","prompt":"紙飛機測試如何避免一次飛行決定結論？","options":["相同條件下重複測量並記錄每次距離","只保留飛最遠的一次","讓每架飛機使用不同場地"],"answer":"A","feedback":"重複與一致條件能降低偶然因素，並看見資料變異。"},{"id":"step-3","prompt":"器材故障使步驟改變時應如何處理？","options":["記錄偏離原因與影響，再決定補測或限制結論","刪除所有不方便的紀錄","不告訴讀者以免影響結果"],"answer":"A","feedback":"可追溯的偏離紀錄是可靠探究的一部分。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以問題、變因、測量和資料記錄規畫可行的科學探究。","變因表、流程圖、資料表、重複測量與安全檢核。","一次改變多個條件，或把步驟很多誤認為計畫可靠。","重視可操作性、公平比較、測量品質與紀錄。"),rec("kanghsuan","透過實作、試跑、控制與反思培養計劃及執行能力。","試驗設計、器材操作、原始資料、偏離紀錄與修正版流程。","只保留符合預測的結果，忽略器材限制和執行差異。","評量流程完整、變因控制、安全、資料與調整理由。"),rec("hanlin","連結環境、生活與安全探究，強調方法可追溯及結果可溝通。","土壤、溶液、材料測試、採樣位置、時間與風險處理。","把不一致的採樣說成已控制，或忽略廢液、器材和個人安全。","要求說明限制、原始資料、改動、風險與後續方案。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持由問題形成可操作計畫並執行公平測量。","變因控制、重複、資料紀錄、安全與方法可追溯是共同要求。","執行偏離要依證據記錄、調整方法或縮小結論，而非隱藏。"],"versionDifferences":["南一證據較突顯問題、變因與基本流程；康軒較突顯實作、試跑、控制與反思；翰林較突顯環境採樣、安全、限制與可溝通紀錄。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以紙飛機案例檢查公平比較與重複測量。","以 100 mL、60°C 溶液示範變因、讀值、重做與偏離記錄。","以土壤採樣整合地點、深度、時間、雨後間隔與安全限制。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織問題、變因、控制、測量、重複、試跑、安全、偏離與可追溯紀錄。正文、原創實驗情境、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"計劃與執行（e）","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

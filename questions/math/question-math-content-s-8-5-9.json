@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-5-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "下列哪項資料不足以單獨判定兩三角形全等？",
+  "prompt": "若 △ABC ≅ △DEF，且 ∠B=72°、EF=8 公分，則下列哪項一定正確？",
   "options": [
     {
       "id": "A",
-      "text": "三組對應邊相等"
+      "text": "∠E=72° 且 BC=8 公分"
     },
     {
       "id": "B",
-      "text": "兩邊及夾角相等"
+      "text": "∠D=72° 且 AB=8 公分"
     },
     {
       "id": "C",
-      "text": "兩角及一邊相等"
+      "text": "∠F=72° 且 AC=8 公分"
     },
     {
       "id": "D",
-      "text": "只有一組對應邊相等"
+      "text": "∠E=108° 且 BC=16 公分"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "只有一組對應邊相等，無法確定三角形形狀與大小。"
+    "value": "A",
+    "explanation": "順序 A↔D、B↔E、C↔F，所以 ∠B=∠E=72°，邊 BC 對應 EF，BC=8 公分，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的全等性質 題型與官方課綱 KG kg-math-content-s-8-5",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形全等判定能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的三角形全等方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-8-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形全等、對應頂點／邊／角、SSS／SAS／ASA／AAS／RHS 判定與不足條件反例",
+      "observedPattern": "公開學校數學試題常以三角形配對、全等判定必要位置、直角三角形與反例辨識考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形全等、對應頂點／邊／角、SSS／SAS／ASA／AAS／RHS 判定與不足條件反例",
+      "observedPattern": "公開學校數學試題常以三角形配對、全等判定必要位置、直角三角形與反例辨識考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "同時使用頂點順序配對角與邊，再逐項核對。",
+  "solutionSteps": [
+    "由順序得到 B 對 E。",
+    "因此 ∠E=∠B=72°。",
+    "由順序得到 BC 對 EF。",
+    "所以 BC=EF=8 公分。",
+    "選 A。"
+  ]
 }

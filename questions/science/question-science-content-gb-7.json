@@ -2,23 +2,23 @@
   "id": "question-science-content-gb-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年4月7日自然科教室的觀察中，連續觀察「Gb：演化」6 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "某族群的有利表徵比例上升，但族群總數下降。哪個結論最謹慎？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Gb：演化」時只依樣本的顏色（未記錄9天的時間與條件）"
+      "text": "有利表徵比例增加就代表族群一定繁盛"
     },
     {
       "id": "B",
-      "text": "研究「Gb：演化」時只依樣本的名稱推測，不進行觀察"
+      "text": "比例上升可能反映選擇差異，但總數下降表示仍有其他限制因素"
     },
     {
       "id": "C",
-      "text": "連續9天研究「Gb：演化」並連續觀察到細胞數量增加"
+      "text": "總數下降可證明沒有演化"
     },
     {
       "id": "D",
-      "text": "研究「Gb：演化」時只觀察一次外形，便排除所有其他證據"
+      "text": "只要表徵有利，所有個體都會存活"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Gb：演化」。"
+    "value": "B",
+    "explanation": "表徵比例和總數是不同指標；比例可能上升，同時棲地、資源或災害使總數下降。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的演化、自然選擇、族群資料與證據判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Gb 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-gb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-gb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "演化、自然選擇、族群資料與證據判讀",
+      "pattern": "取由變異、環境壓力、族群比例、隔離與比較構造建立演化推論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由變異、環境壓力、族群比例、隔離與比較構造建立演化推論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開讀比例、總量與因果證據。",
+  "solutionSteps": [
+    "先辨認題幹同時給出比例和總數兩項資料。",
+    "比例上升可支持族群中相對繁殖成功不同。",
+    "總數下降提醒還有資源、棲地或災害等因素。",
+    "A、C、D 將單一指標誇大成完整結論。",
+    "答案為 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,41 +2,67 @@
   "id": "question-science-content-ca-iv-2-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年11月23日社區環境站的觀察中，將 55 g 食鹽溶於 168 g 水，研究「Ca-Ⅳ-2：以化學性質鑑定化合物」時，溶液質量為何？",
+  "prompt": "下列哪一項較屬於化學性質，而不是只描述外觀的物理性質？",
   "options": [
     {
       "id": "A",
-      "text": "113 g"
+      "text": "能與酸反應產生氣體"
     },
     {
       "id": "B",
-      "text": "223 g"
+      "text": "溶液呈無色"
     },
     {
       "id": "C",
-      "text": "9240 g"
+      "text": "固體呈白色"
     },
     {
       "id": "D",
-      "text": "168 g"
+      "text": "樣品顆粒大小"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ca-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：55＋168＝223 g。 本題對應 KG「Ca-Ⅳ-2：以化學性質鑑定化合物」。"
+    "value": "A",
+    "explanation": "能與另一物質反應並產生新物質或氣體，描述的是反應能力，屬化學性質；其餘主要是外觀或物理特徵，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的化合物鑑定、特徵反應與對照能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ca-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ca-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ca-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化合物鑑定、酸鹼、沉澱、氣體與實驗對照判讀",
+      "pattern": "取由特徵反應、對照組與多項證據鑑定未知物的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由特徵反應、對照組與多項證據鑑定未知物的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看到『能否反應』和『是否生成新物質』就檢查化學性質。",
+  "solutionSteps": [
+    "逐項辨認是否需要發生反應才能觀察。",
+    "顏色與顆粒大小可直接觀察，不必生成新物質。",
+    "與酸反應產氣涉及新物質形成。",
+    "因此它描述反應能力。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-fc-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年6月26日學校研究社的觀察中，連續觀察「Fc：生物圈的組成」3 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "某池塘連續一週測得水溫、溶氧、藻類量與小魚數量。若只看到藻類量上升，哪一項做法最能避免把相關誤判成唯一因果？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Fc：生物圈的組成」時只依樣本的顏色（未記錄12天的時間與條件）"
+      "text": "只用最後一天的藻類照片，直接判定營養鹽是唯一原因"
     },
     {
       "id": "B",
-      "text": "連續12天研究「Fc：生物圈的組成」並記錄到樣本穩定進行物質交換"
+      "text": "增加不同時間與位置的測量，並比較未受擾動的對照區及其他非生物條件"
     },
     {
       "id": "C",
-      "text": "研究「Fc：生物圈的組成」時只依樣本的名稱推測，不進行觀察"
+      "text": "因為藻類是生產者，所以排除水溫、溶氧與捕食者的影響"
     },
     {
       "id": "D",
-      "text": "研究「Fc：生物圈的組成」時只觀察一次外形，便排除所有其他證據"
+      "text": "把所有測量值平均後，不再保留原始時間與測點資料"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,42 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Fc：生物圈的組成」。"
+    "explanation": "藻類量的變化可能同時受到營養鹽、光照、水溫、溶氧、取食與採樣尺度影響；增加時間與空間重複、保留多項指標並設置對照，才能檢查替代解釋。正確答案為 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的生態系、生物圈、資料判讀及探究能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Fc 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fc"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-fc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生態系、生物圈、食物網、能量與資料判讀",
+      "pattern": "取由生態資料辨認生物／非生物因素、能量流動、物質循環與證據限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生態資料辨認生物／非生物因素、能量流動、物質循環與證據限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認題目要求的是因果證據還是單一相關，再檢查是否有重複測量、對照、多項指標與替代解釋。",
+  "solutionSteps": [
+    "圈出藻類量、水溫、溶氧、營養鹽、小魚、時間與測點，確認題目同時涉及生物和非生物因素。",
+    "判斷只看到藻類上升只能支持現象，不能直接證明營養鹽是唯一原因。",
+    "用科學探究原則檢查設計：增加不同時間與位置的重複測量，保留原始資料並設置未受擾動對照。",
+    "比較選項：A、C、D 都刪除或忽略替代解釋；B 同時保留多指標、尺度與對照，因此最能檢驗因果推論。",
+    "回查結論範圍：即使 B 的資料支持營養鹽可能有影響，仍須寫明觀察期間、測點與尚未排除的因素，答案為 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

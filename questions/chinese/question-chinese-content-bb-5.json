@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bb-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一段散文先寫夕陽西下，再寫作者想起遠方親友，景物在文中主要有何作用？",
+  "prompt": "將「我有些捨不得」改成「我痛不欲生」，若文本只寫平靜收拾房間，最需要注意什麼？",
   "options": [
     {
       "id": "A",
-      "text": "交代人物職業"
+      "text": "強度越高就一定越有文學性"
     },
     {
       "id": "B",
-      "text": "引發並寄託思念情感"
+      "text": "情感強度可能超過事件證據，改寫後需補充相稱的情境或改用較有分寸的詞"
     },
     {
       "id": "C",
-      "text": "說明夕陽形成原因"
+      "text": "兩個詞語的情感方向完全相反"
     },
     {
       "id": "D",
-      "text": "證明故事發生在夏季"
+      "text": "只要使用成語，就不必檢查上下文"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bb"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "夕陽景象觸發對遠方親友的聯想，具有寄託情感的作用。"
+    "explanation": "「痛不欲生」遠比「有些捨不得」強烈，若行動與場景仍平靜，讀者會感到不相稱；抒情詞需和文本證據的分貝一致。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-2%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%95%E9%87%8F%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
-    "sourceLocator": "抒情文本借景抒情判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編抒情閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "抒情、修辭與閱讀理解",
+      "observedPattern": "公立學校國文公開試題常以抒情方式、人物觀點、事件景物、語氣與文本推論檢查閱讀理解；本題整合直接與間接抒情重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "情感表達、語氣與文本觀點",
+      "observedPattern": "公立學校國文公開試題常以抒情方式、人物觀點、事件景物、語氣與文本推論檢查閱讀理解；本題整合直接與間接抒情重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認說話者與情感對象，再判斷感受是直接說出或由事件、景物、物件間接浮現；最後以多條證據交叉核對語氣與推論界線。",
+  "solutionSteps": [
+    "讀題定位：圈出「語氣與分寸」與說話者、情感對象、事件、景物、物件及前後轉折。",
+    "建立情感證據鏈：分辨明示感受與間接線索，檢查語氣強度、情感路徑和篇章位置是否相互支持；本題核心是「「痛不欲生」遠比「有些捨不得」強烈，若行動與場景仍平靜，讀者會感到不相稱；抒情詞需和文本證據的分貝一致。」",
+    "核對正解：選項 A「情感強度可能超過事件證據，改寫後需補充相稱的情境或改用較有分寸的詞」能整合文本多條線索，且不把推論誇大成作者或人物未說出的事實。",
+    "排除誘答：檢查是否只抓情緒詞、把景物固定象徵、把角色聲音當作者立場，或用過強語氣超過事件證據。",
+    "結論回查：以『誰對誰、由何事／何物、用哪種路徑表達、能推到哪裡』重讀全文，明確保留未知範圍。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

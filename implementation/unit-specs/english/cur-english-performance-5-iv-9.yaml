@@ -1,0 +1,132 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-9
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-9
+  title: 5-Ⅳ-9：聽簡單廣播筆記
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-9：聽簡單廣播筆記
+    curriculumIntent: 聽懂簡易廣播，並以簡單字詞或句子記下要點。
+    publisherEvidence:
+      nani: {status: pending, required: true}
+      kanghsuan: {status: pending, required: true}
+      hanlin: {status: pending, required: true}
+    fusionRule: 官方課綱界定能力；只能把實際可讀版本材料所支持的內容記為版本研究，校本課程僅作一般教學靈感；出版社章節尚未取得者維持pending。
+    currentEvidenceStatus: original-manuscript-authored; public-school-broadcast-lesson-read; three-publisher-target-chapter-texts-pending
+  learningGoals:
+  - 聽簡易公共廣播並辨認公告目的、主旨及受眾。
+  - 以短詞或短句留下不誤導聽眾的時間、地點、變更、否定或條件資訊。
+  - 以第二遍定向聆聽及交接測試，檢查筆記是否支持正確行動。
+  prerequisites:
+  - 能辨識常見校園、活動、天氣及交通英語詞彙。
+  - 能聽懂基本時間、地點、否定、條件及簡單因果表達。
+  coreConcepts:
+  - 筆記的價值在於保存公告目的及足以指引聽眾的要點，不在於抄錄字數。
+  - 第一遍建構主旨，第二遍依任務確認時地、數字、否定、更正與條件。
+  - 原安排、異動與下一步須正確連結；可能性不能改寫成確定事實。
+  misconceptions:
+  - 只記熟悉名詞，漏掉 not、instead、until、if 等改變行動的關係詞。
+  - 把公告一部分的取消擴大成所有活動都取消，或把 still 確認未變的安排記成延後。
+  - 把 may／if 的條件方案當成已確定的新安排。
+  - 將出現的時間和地點任意配對，沒有確認它修飾哪個事件或聽眾。
+  contentFlow:
+  - 'predict: 從校園臨時公告「記下地點卻仍可能走錯」辨認風險，先預測聽眾採取正確行動所需線索'
+  - 'manipulate: 依目的—核心訊息—聽眾行動重整短筆記，將原安排、異動與下一步以關係箭頭連接'
+  - 'observe: 比較第一遍主旨與第二遍的變更、否定、條件、數字，觀察 still／instead／may 等詞如何改變公告狀態'
+  - 'explain: 以廣播明說內容核對行動、時間和地點配對，並說明為何條件方案不可記成確定安排'
+  - 'transfer: 以同伴交接、遮稿重述及新公告選答檢查筆記是否足以支持正確行動'
+  visualizations:
+  - 資訊關係文字圖：公告目的 → 核心訊息／異動 → 聽眾行動；每則訊息依實際內容取用節點，不硬填空欄。
+  - 狀態標記：原訂、已變更、照常、條件未定分別用詞標示，不能只靠顏色區分。
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-9-I01
+    component: GuidedChoiceBlock
+    purpose: 播放本課原創公共廣播，讓學生選出忠實保留公告、變更和行動資訊的精簡筆記。
+    initialState: {selectedAnswer: null, feedbackVisible: false, transcriptVisible: false}
+    studentActions:
+    - 以鍵盤操作播放按鈕聽一段原創廣播，先自己記短詞，不先展開逐字稿。
+    - 從三項筆記選出未漏掉行動關係、也未添加音訊沒有說明的唯一最佳記錄。
+    - 錯答後依本題提示重新聽辨否定、條件、時間或地點關係，再次選答。
+    - 作答後閱讀答案解析，必要時才展開對應逐字稿核對。
+    visualRules:
+    - 逐字稿預設收合；SpeechSynthesis僅在瀏覽器本機提供播放，不呼叫外部語音服務。
+    - 無語音能力時顯示自讀備援，但標明自讀不能驗證聽力理解。
+    - 播放、作答、逐字稿展開皆可鍵盤操作；答題回饋與播放狀態需可被輔助科技讀取。
+    - 正誤不可只靠顏色；320px窄螢幕不得裁切選項、題幹或回饋。
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-9-I01
+      trigger: 學生只記下門口、時間、活動等名詞，卻把取消／替代／條件關係弄錯。
+      prompt: 回到 not、instead、after、if 或 may 所在句，確認它改變的是哪個活動、時段或行動。
+      expectedEvidence: 能指出關係詞連接的兩項資訊，並說明忽略後會如何誤導聽眾。
+    feedback:
+      correct: 指出正確筆記保存的公告目的、變更與行動關係，並提醒資訊不必逐字抄寫。
+      incorrect: 先以單題線索提示學生重聽關係詞，不直接代選；重答後揭露對應解析。
+  capTransfer:
+    questionType: 聽公共廣播後判讀公告主旨、異動資訊及聽眾下一步。
+    stemConstraint: 使用全新原創校園／交通／天氣公告；每題至少含一項時間、地點、否定、條件或更正關係，錯誤項分別測試漏記、錯配或過度推論。
+    requiredResponse: 選出精簡筆記，並指出決定行動的原音訊線索。
+    scoring: 公告理解1；重要關係保存1；筆記未添加未支持資訊1。
+  exitTicket:
+    prompt: 為什麼「may move indoors if it rains」不能記成「活動改在室內」？第二遍要再確認什麼？
+    successCriteria:
+    - 說明may與if代表未定和條件。
+    - 指出要保留條件或等待最新消息。
+    - 能區分原訂場地與可能替代場地。
+  expressionExtension:
+    applicable: true
+    task: 聽完一段原創公共廣播後，用3–6個短詞及箭頭留下公告目的、異動和聽眾行動，再口頭交接給同伴。
+    constraint: 不照抄逐字稿；同伴必須能據筆記採取正確行動，遇到未確定訊息需明確保留條件。
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 播放按鈕含廣播序號及語言名稱；選項、提示、解析與語音狀態具可讀標籤；逐字稿以原生details/summary收合。
+    reducedMotion: 不使用自動動畫；關閉動態後仍能播放、選答、重試並展開逐字稿。
+  testCases:
+  - 學生頁顯示六段原創正文一次，並與lesson teaching.body逐段一致。
+  - 四段廣播各使用對應原創audioScript，逐字稿文字與播放文字一致，初始逐字稿均收合。
+  - 以鍵盤逐題錯答可見專屬提示，改選正解顯示對應答案解析。
+  - 模擬SpeechSynthesis播放成功時驗證語言和音訊資料；停用語音時顯示誠實fallback。
+  - 在320、375、768px無水平溢位；封鎖外網仍可載入正文及完成互動。
+  - 人工教材內容審查由使用者另以ChatGPT進行；自動化通過不代表真人或出版社審定。
+  definitionOfDone:
+  - 課綱ID、KG ID、lesson ID、標題及官方來源定位一致。
+  - 正文、四個互動廣播、答案、提示及解析皆為本課原創，無模板placeholder。
+  - 來源限制與版本材料狀態如實記錄；未取得的出版社內容不得標為已讀或完成。
+  - 學生頁、鍵盤操作、錯答重試、解析、逐字稿、語音fallback及響應式自動化測試通過。
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf
+    locator: >-
+      Official English curriculum statement 5-Ⅳ-9: listen to a simple broadcast
+      and note key points with simple words/sentences; adjacent 5-Ⅳ-7 dialogue
+      and 5-Ⅳ-8 story distinguish genres.
+    role: official-curriculum-source-of-truth
+  - url: https://course.cyc.edu.tw/upfile/course114/sub1/15914468342525476.pdf
+    locator: >-
+      Public-school self-designed flexible-course plan; search-visible weeks 3–4
+      volcano-news listening: play twice, check comprehension with yes/no and
+      5W1H, reveal transcript afterward for listen/read verification, produce
+      simple summary. Not a publisher textbook or direct version comparison.
+    role: public-school-teaching-reference-only
+  - url: https://www.dfsh.ntpc.edu.tw/p/406-1000-7802%2Cr187.php
+    locator: >-
+      Da-Feng JH 114-1 English course-plan listing identifies a Nani grade-7
+      plan download; target 5-Ⅳ-9 teaching content not verified.
+    role: publisher-labelled-school-plan-locator-only
+  - url: https://www.knsh.com.tw/_KNSH/Plan
+    locator: >-
+      Official Kang Hsuan plan search entry; target-unit material not retrieved.
+    role: official-publisher-search-entry-pending
+  - url: https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf
+    locator: >-
+      Yunqing HS 114 grade-7 English plan labels Hanlin books 1–2 at PDF p.0;
+      no target broadcast-note teaching sequence located.
+    role: publisher-labelled-school-plan-locator-only

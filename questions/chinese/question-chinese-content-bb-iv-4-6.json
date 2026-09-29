@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bb-iv-4-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "抒情文字使用第一人稱「我」，最常見的效果為何？",
+  "prompt": "句子『我終於可以放心了，謝謝你替我保留這盞燈』，直接抒情之外還包含什麼？",
   "options": [
     {
       "id": "A",
-      "text": "直接呈現個人感受"
+      "text": "對協助者的感謝及放心的原因"
     },
     {
       "id": "B",
-      "text": "提供客觀統計"
+      "text": "對燈具材質的科學說明"
     },
     {
       "id": "C",
-      "text": "隱藏所有情緒"
+      "text": "對所有人行為的批判"
     },
     {
       "id": "D",
-      "text": "說明器物構造"
+      "text": "沒有任何事件背景"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bb-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "第一人稱便於直接表現作者或敘述者的感受。"
+    "explanation": "『放心』與『謝謝』直接表達感受和感謝，保留燈的行動則交代安心感的具體原因。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "直接抒情與情感判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究直接抒情、語氣強度、敘事／抒情差異與證據界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫直接抒情題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-4"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "直接抒情、語氣與文本判讀",
+      "observedPattern": "公立學校國文評量要求辨認直接說出感受的語句、語氣強度、敘事與抒情差異及文本證據界線；本題使用全新人物與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "抒情句、語意與感受證據",
+      "observedPattern": "公立學校國文評量要求辨認直接說出感受的語句、語氣強度、敘事與抒情差異及文本證據界線；本題使用全新人物與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找明示情緒，再問後半的行動或對象如何支撐這份情感。",
+  "solutionSteps": [
+    "圈出放心與謝謝兩個情感表達。",
+    "確認『替我保留這盞燈』是感謝對象與事件。",
+    "A 同時涵蓋情感和原因。",
+    "B、C、D 都沒有對應文本的抒情與事件線索。",
+    "移除保留燈的片語，檢查感謝的具體性如何降低。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-english-performance-2-iv-3-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A student cannot hear the teacher. Which classroom sentence is most appropriate?",
+  "prompt": "You forgot your pencil before a quiz. Which classroom sentence should you use?",
   "options": [
     {
       "id": "A",
-      "text": "Could you speak more loudly, please?"
+      "text": "Could I borrow a pencil, please?"
     },
     {
       "id": "B",
-      "text": "Please louder the classroom."
+      "text": "Could I close the school?"
     },
     {
       "id": "C",
-      "text": "I am hear you yesterday."
+      "text": "I will erase your lunch."
     },
     {
       "id": "D",
-      "text": "You speak loudly me now?"
+      "text": "Why is the pencil a teacher?"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "“Could you speak more loudly, please?” is a polite and grammatically correct classroom request when a student cannot hear."
+    "explanation": "The student needs a pencil temporarily, so a polite request to borrow one fits the situation."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三份公開英文試題僅供能力方向研究；未複製原題、選項、文章或答案。",
+    "authoringNote": "依官方課綱 KG 與公開英文試題的教室溝通能力方向獨立編寫；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-3"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-performance-2-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考三年級英文科試題",
+      "year": "114",
+      "locator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考三年級英文科試題；僅取課堂指令、同儕互動與教室語用能力方向。",
+      "observedPattern": "參照公開英文試題的教室情境、功能語句與行動判讀層次；題幹、選項與答案全部重新編寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
+      "title": "114 年國中教育會考英文科公開試題",
+      "year": "114",
+      "locator": "114 年國中教育會考英文科公開試題；僅取課堂指令、同儕互動與教室語用能力方向。",
+      "observedPattern": "參照公開英文試題的教室情境、功能語句與行動判讀層次；題幹、選項與答案全部重新編寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://cap.rcpet.edu.tw/index.html",
+      "title": "國中教育會考官方英文科試題與說明入口",
+      "year": "官方入口",
+      "locator": "國中教育會考官方英文科試題與說明入口；僅取課堂指令、同儕互動與教室語用能力方向。",
+      "observedPattern": "參照公開英文試題的教室情境、功能語句與行動判讀層次；題幹、選項與答案全部重新編寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "Identify the missing classroom object and choose a permission request that names the needed action.",
+  "solutionSteps": [
+    "Notice the quiz requires a pencil.",
+    "Identify the needed action: use someone else's pencil temporarily.",
+    "Match that need with borrow.",
+    "Check Could I and please for polite permission.",
+    "Choose A because it solves the immediate classroom problem respectfully."
+  ]
 }

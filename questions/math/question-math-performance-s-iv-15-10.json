@@ -2,23 +2,23 @@
   "id": "question-math-performance-s-iv-15-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "一條直線若與平面內一條直線平行，能否直接判定它與平面平行？",
+  "prompt": "一條空間直線 l 只與平面 α 內的一條直線 m 平行，關於 l 與 α 的位置，下列何者正確？",
   "options": [
     {
       "id": "A",
-      "text": "一定可以"
+      "text": "必定在 α 內"
     },
     {
       "id": "B",
-      "text": "一定垂直"
+      "text": "必定垂直 α"
     },
     {
       "id": "C",
-      "text": "不一定，還需其他條件"
+      "text": "資料不足，可能在 α 內或與 α 平行"
     },
     {
       "id": "D",
-      "text": "一定重合"
+      "text": "必定與 α 相交於一點"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "僅有一條平行線不足以判定直線與平面平行。"
+    "explanation": "線 l 與平面內的 m 平行並不足夠；l 可能就是 α 內的另一條平行線，也可能在 α 外與 α 平行，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考數學科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "以數學概念、全新數值與解析獨立撰寫；公開試題僅作題型研究。待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供空間線面位置關係、立體幾何與判理能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的空間幾何方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-performance-s-iv-15"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-15",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "空間中直線與平面的位置關係、平行、垂直、相交平面與立體圖形",
+      "observedPattern": "公開數學評量常以立體圖形或幾何敘述判斷線面平行、線面垂直、兩平面交線與空間距離；本題只取能力方向、敘述型態與判理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "空間中直線與平面的位置關係、平行、垂直、相交平面與立體圖形",
+      "observedPattern": "公開數學評量常以立體圖形或幾何敘述判斷線面平行、線面垂直、兩平面交線與空間距離；本題只取能力方向、敘述型態與判理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "空間中直線與平面的位置關係、平行、垂直、相交平面與立體圖形",
+      "observedPattern": "公開數學評量常以立體圖形或幾何敘述判斷線面平行、線面垂直、兩平面交線與空間距離；本題只取能力方向、敘述型態與判理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用兩個合法模型反例檢查結論：同平面平行與平面外平行都符合已知條件。",
+  "solutionSteps": [
+    "先保留已知 l∥m 且 m⊂α。",
+    "模型一：令 l 也在 α 內，條件成立。",
+    "模型二：令 l 在 α 外且與 α 平行，條件仍成立。",
+    "兩個模型結果不同，表示條件無法唯一決定。",
+    "所以選 C。"
+  ]
 }

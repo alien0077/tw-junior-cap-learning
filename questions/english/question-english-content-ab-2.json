@@ -2,23 +2,23 @@
   "id": "question-english-content-ab-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「Ab／語音」task, what is the best way to prepare question 2?",
+  "prompt": "Your classmate sees your model on Wednesday, although it is not due until Friday. She looks surprised and says, with her voice rising at the end, “You finished the model already?” What is the most likely function of the rising intonation in this context?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about Ab／語音."
+      "text": "She is surprised and is checking whether you really finished it early."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about Ab／語音."
+      "text": "She is instructing you to begin the model on Friday."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking Ab／語音."
+      "text": "She is certain that you have not finished the model."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about Ab／語音."
+      "text": "She is changing the due date from Friday to Wednesday."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets Ab／語音, question 2."
+    "explanation": "The due date is Friday, but the model is already finished on Wednesday. The speaker's surprised reaction and rising pitch make the question a request to confirm the unexpected early completion; they do not issue an instruction, assert the opposite, or change the deadline."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
-    "sourceLocator": "114 年國中教育會考英語科閱讀公開試題；研究字首、字尾、母音、子音、長短母音與押韻的語音辨識能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+    "sourceLocator": "臺北市立內湖國中109學年度第2學期七年級第1次段考英語科試卷，第一部分聽力測驗 B 基本問答、C 言談理解；僅參照聽取口語後判讀合宜回應／言談意思的形式。本題語境、句子及升調判讀均為原創。",
+    "authoringNote": "依 Ab 語音單元的語調—語境關係原創；答案由週三已完成、週五才到期及說話者驚訝並以升調確認三條線索共同決定。公校來源僅提供聽力作答形式參照，未宣稱原卷考查本題語調，亦未複製題文、選項、音檔或答案。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-ab"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-ab",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期七年級第1次段考英語科試卷",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第一部分聽力測驗 B 基本問答第4至6題、C 言談理解第7至10題；只參照聽力輸入後選擇合宜回應或理解對話的題型",
+      "locatorLevel": "paper",
+      "observedPattern": "以聽到的英語對話或問題為材料，依語意選出適切回應／理解；本題改寫為語境加升調線索辨認說話者確認意圖，不沿用原卷內容。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2790&name=112-2-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E8%81%BD%E5%8A%9B%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E9%82%B1%E6%9B%89%E8%96%87.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中112學年度第2學期七年級第2次段考英語聽力試題與答案",
+      "year": "112-2",
+      "subject": "english",
+      "locator": "第二大題基本問答；聽取口語內容後選擇最合適回應",
+      "locatorLevel": "paper",
+      "observedPattern": "根據口語輸入判斷語意並選出合適回應；本題新編升調確認功能與驚訝語境，不複用原卷題目或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-1%E4%B8%80%E5%B9%B4%E7%B4%9A%E8%A9%95%E9%87%8F%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
+      "title": "高雄市立大社國中108學年度第1學期七年級第1次段考英語科試題與解答",
+      "year": "108-1",
+      "subject": "english",
+      "locator": "第一大題發音題：根據聽到的發音選出對應字母；僅作聽辨後選擇答案的作答形式參照",
+      "locatorLevel": "paper",
+      "observedPattern": "聽取聲音線索後在選項中辨識對應資訊；本題另外以句尾升調和對話語境判讀確認意圖，並非改寫其音素題內容。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "先把句子中的聲音線索和對話情境分開記下，再找兩者相合的語用功能：升調讓疑問保持開放，週五期限與週三已完成的落差則說明說話者為何驚訝並想確認。",
+  "solutionSteps": [
+    "抓時間線：今天是週三，模型的期限是週五；所以「已經完成」比說話者預期早。",
+    "辨認說話反應：題目明示同學看起來驚訝，這是解讀語氣的重要語境證據，不是單看問號。",
+    "辨認聲音線索：句尾 already 的音高上升，使句子聽起來像等待確認的疑問，而非平直陳述或命令。",
+    "合併語境與語調：她對提早完成感到意外，因此用升調確認「你真的已經做完了嗎？」；這對應選項 A。",
+    "排除干擾：B 把疑問誤當成開始工作的指令；C 與「已完成」及確認語氣相反；D 沒有任何更改期限的資訊。故答案是 A。"
+  ]
 }

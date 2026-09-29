@@ -1,0 +1,166 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-s-9-13
+  knowledgeGraphIds:
+  - kg-math-content-s-9-13
+  title: S-9-13：表面積與體積
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '9'
+  fusedScope:
+    officialCurriculum: S-9-13：表面積與體積
+    curriculumIntent: S-9-13：表面積與體積
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: verified僅表示該來源材料已直接閱讀且有定位，不代表出版社版本真實性、完整章節或授權核實；只融合可核對概念並以自編推導重組，禁止挪用原文、例題或圖片；康軒仍pending，三版本完整融合與內容審查未完成
+    currentEvidenceStatus: curriculum-and-kg-grounded; original source-informed synthesis already exists and was preserved; Nani-labeled third-party pages 52-63 and Hanlin official concept summaries directly read on 2026-09-28; Nani edition/uploader/rights unverified, Hanlin pages are scoped concept summaries, Kanghsuan evidence is school-plan/index level only and remains pending; full chapter review, provenance/rights, and content review remain pending
+  learningGoals:
+  - 區分直角柱外露面面積與內部容量，以平方／立方單位表示
+  - 由正角錐展開圖辨認底面與各側面三角形，使用側面斜高逐面求表面積
+  - 由直圓錐展開圖連結扇形弧長與底圓周長，使用母線作扇形半徑求表面積
+  - 操作柱長時，能由兩個三角底面、三個側面展開圖及數值表說明表面積與體積如何改變
+  - 將底面由 8-15-17 改為 7-24-25 直角三角形，重新計算直角柱表面積與體積並說明依據
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - S-9-13：表面積與體積
+  - 表徵／證據與結論的對應
+  - 錯誤答案所反映的概念差異
+  misconceptions:
+  - 把底面積乘柱長當成表面積，漏算兩個底面或三片側面
+  - 用底面周長推體積，或用底面積推側面總面積
+  - 把平方公分與立方公分混用，或將錐體體積公式越界帶入本課
+  contentFlow:
+  - 'hook: 從外殼材料與內部容量這兩種不同任務辨認所求量'
+  - 'teach-prism: 以兩個底面與逐片長方形側面建立表面積清單，另以底面積乘柱長建立直角柱體積'
+  - 'teach-pyramid: 延續逐面列帳，將底面與側面三角形分開，辨認側面斜高不等於立體垂直高'
+  - 'teach-cone: 從平面多邊形面轉到扇形展開，以扇形弧長等於底圓周長推導圓錐側面積'
+  - 'predict: 選擇增量預測並提交，提交前隱藏公式與數值'
+  - 'visualize: 呈現 8-15-17 直角三角柱立體示意與兩底三側展開表徵'
+  - 'manipulate: 以鍵盤可操作的柱長滑桿改變單一變項'
+  - 'observe: 同步更新立體連接邊、展開圖長方形、表面積表與體積表'
+  - 'explain: 區分底面周長乘柱長與底面積乘柱長所代表的量'
+  - 'transfer: 改用 7-24-25 直角三角形底面重新計算'
+  - 'exit-ticket: 說明平方／立方單位並指出展開圖證據'
+  visualizations:
+  - math-geometry 專屬模型：以 8-15-17 直角三角柱同步呈現立體連接、三側表徵、逐面表格及體積
+  - 預測答案提交前不揭露正式公式、解題數值或正誤回饋
+  - 柱長滑桿每次變更都同步更新示意、三片側面尺寸、表面積、體積與文字狀態
+  - 以文字標籤與表格補足圖形資訊，顏色不單獨承擔意義
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-S-9-13-I01
+    component: StepwiseReasoningBlock
+    purpose: 讓學生操作並看見「S-9-13：表面積與體積」中最容易被背誦取代的關係
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        prismLength: 3
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 以鍵盤或滑鼠調整柱長滑桿，操作單一條件
+    - 對照前後兩個底面、三個側面、表面積與體積數值
+    - 以短句說明柱長變化如何分別影響外殼面積與內部容量
+    - 以 7-24-25 直角三角形底面完成新資料遷移題
+    visualRules:
+    - 操作後所有相關表徵同步更新，不得只改單一數字
+    - 正解揭露前保留學生預測與操作紀錄
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-S-9-13-I01
+      trigger: 把底面積乘柱長當成表面積，或把底面周長乘柱長當成體積
+      prompt: 請在展開圖或表格指出兩個底面、三個側面，以及各自對應平方／立方單位的證據。
+      expectedEvidence: 兩個三角底面、三個長方形側面、底面周長、底面積及正確單位
+    feedback:
+      correct: 指出學生用展開圖或數值表支撐的步驟，要求以新底面重算一次。
+      incorrect: 先辨認錯在底面、側面、所求量或單位；先提示回看展開圖，再讓學生重試，最後才顯示局部算式。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「S-9-13：表面積與體積」的 StepwiseReasoningBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「S-9-13：表面積與體積」的 StepwiseReasoningBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「S-9-13：表面積與體積」的 StepwiseReasoningBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「S-9-13：表面積與體積」的 StepwiseReasoningBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 新底面資料下的直角柱表面積與體積
+    stemConstraint: 底面改為 7-24-25 直角三角形、柱長 2 cm；須重新由底面積與周長建模，不可複製示範題數值
+    requiredResponse: 寫出兩個底面、三個側面、體積乘式及平方／立方單位
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 柱長每增加 1 cm，表面積與體積各增加多少？請指出展開圖和底面中的依據。
+    successCriteria:
+    - 說出底面周長控制側面面積增量、底面積控制容量增量
+    - 正確使用 cm² 與 cm³
+    - 指出一項展開圖或計算表證據
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「S-9-13：表面積與體積」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始畫面只呈現柱長3 cm增至5 cm的預測選項；未選答案不能提交，選答案但未提交仍不得顯示公式、數值表、滑桿或正誤解析；選B提交後才顯示解鎖內容，並保留所選預測。
+  - 解鎖後須同時顯示8-15-17直角三角柱立體圖、兩個三角端面與三個側面的展開表徵、逐面計算表；初值L=3時表面積240 cm²、體積180 cm³，鍵盤將L調至5時，三片側面、S=320 cm²、V=300 cm³及文字狀態同步更新。
+  - 預測A提交後回饋須指出周長40 cm控制側面面積增量、底面積60 cm²控制體積增量，提示學生回看展開表徵；不得把誤答判為正確，也不得混用cm²與cm³。
+  - 正角錐例須從展開面逐片加總底面與側面，辨認側面斜高與立體垂直高不同；直圓錐例須由扇形弧長等於底圓周長推導，不可只呈現無來源的套用公式。
+  - 以鍵盤操作預測、提交、四步導覽、柱長滑桿、遷移選項與重設時，焦點須留在對應控制項；320px、375px與768px下題幹、控制項、逐面表格及回饋不得被截切或形成頁面水平溢位。
+  - 遷移題以新7-24-25直角三角形、柱長2 cm重新計算；選B並提交後顯示兩個底面共168 cm²、三側總面積112 cm²、表面積280 cm²與體積168 cm³的推導，錯答則提示分開重算面積與周長。
+  - 重設須清除預測、解鎖、滑桿及遷移狀態並回到答案隱藏畫面；不依賴外部網路即可完成預測、操作、觀察、解釋及新底面遷移。
+  - 若幾何模擬腳本無法載入，學生頁仍須保留六段完整教學正文與 GuidedChoice 題目；不得顯示空白卡片或 JavaScript 錯誤，並能以鍵盤完成文字題與逐題回饋。此為本課的降級 fallback，不代表模擬操作仍可使用。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 S-9-13
+    role: official-curriculum-source-of-truth
+  - url: https://www.scribd.com/document/932850221/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E4%B9%9D%E4%B8%8B
+    locator: 分享件 pp.52-63；第三方上傳且版次／授權未核，只作概念研究，不複製題文圖像
+    role: third-party-publisher-labeled-concept-evidence-pending-authenticity
+  - url: https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E6%95%B8%E5%AD%B8/%E8%A7%92%E6%9F%B1.html
+    locator: 翰林官方角柱概念頁；核對角柱面構成、表面積為各面和、體積為底面積乘柱高
+    role: publisher-official-concept-summary-not-full-chapter
+  - url: https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E6%95%B8%E5%AD%B8/%E5%9C%93%E9%8C%90.html
+    locator: 翰林官方圓錐概念頁；核對圓底面與展開扇形側面
+    role: publisher-official-concept-summary-not-full-chapter
+  - url: https://mathvideo.hle.com.tw/3B/W3-2/
+    locator: 翰林官方九下章節影音索引3-2角錐與圓錐；未播放影片
+    role: publisher-official-index-only
+  - url: https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E9%99%84%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%BD%B1%E7%89%87&l2=9%E4%B8%8B
+    locator: 康軒官方九下數學影音目錄第3章；只核讀章名，未播放影片
+    role: publisher-official-index-only

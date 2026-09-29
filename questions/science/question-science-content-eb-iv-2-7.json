@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-2-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年10月23日自然科教室的觀察中，一個物體質量為 517 g、體積為 32 cm³，研究「Eb-Ⅳ-2：力矩與槓桿」時，其密度為何？",
+  "prompt": "為什麼門把通常遠離鉸鏈，而不是裝在鉸鏈旁？",
   "options": [
     {
       "id": "A",
-      "text": "549 g/cm³"
+      "text": "遠處力臂大，用較小力即可產生所需力矩"
     },
     {
       "id": "B",
-      "text": "0.0618956 g/cm³"
+      "text": "遠處會增加門的重量"
     },
     {
       "id": "C",
-      "text": "16.1562 g/cm³"
+      "text": "鉸鏈旁沒有任何摩擦力"
     },
     {
       "id": "D",
-      "text": "16544 g/cm³"
+      "text": "門把位置不影響轉動"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "密度＝質量÷體積＝517÷32＝16.1562 g/cm³。 本題對應 KG「Eb-Ⅳ-2：力矩與槓桿」。"
+    "value": "A",
+    "explanation": "相同需求下，增加力臂可提高力矩，因此可用較小施力轉動門；這是力學效果，不是門把增加力本身。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作力臂、力矩、槓桿平衡與工具分類的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-2"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "槓桿力臂、力矩與平衡題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%835-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "拔釘器、槓桿與簡單機械題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.mcjhs.tp.edu.tw/?q=zh-hant%2Fdownload%2Ffile%2Ffid%2F9952",
+      "title": "臺北市立明德國中自然與生活科技科九上補考題庫",
+      "year": "113",
+      "locator": "扳手施力方向、力矩與簡單機械題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把生活設計翻成力矩相等的關係，觀察力臂如何改變所需力。",
+  "solutionSteps": [
+    "確認門的轉軸是鉸鏈。",
+    "用 τ＝Fr 比較力臂。",
+    "需求力矩固定時，r 增大可使 F 減小。",
+    "排除重量和無摩擦等無關說法。",
+    "因此答案是 A。"
+  ]
 }

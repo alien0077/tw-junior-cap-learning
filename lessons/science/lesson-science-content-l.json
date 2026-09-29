@@ -48,50 +48,69 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
-    "goal": "以安全探究步驟理解「生物與環境」並用證據修正解釋。",
-    "scenario": "針對「L：生物與環境」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
+    "goal": "在校園池塘模型中辨認生態尺度、食物網與非生物限制，透過改變一項條件觀察族群和溶氧的連鎖變化。",
+    "scenario": "你是校園生態調查小組：先選定個體、族群、群集或生態系尺度，再調整光照、營養鹽、捕食壓力或水溫一項變因，觀察藻類、溶氧、蝌蚪與魚類的時間序列，最後用對照資料寫出有條件的結論。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "選定的觀察條件"
+        "symbol": "n",
+        "meaning": "營養鹽輸入量"
+      },
+      {
+        "symbol": "t",
+        "meaning": "水溫"
+      },
+      {
+        "symbol": "p",
+        "meaning": "捕食壓力"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "先做哪一件事？",
+        "prompt": "要比較營養鹽對池塘族群的影響，第一步應先固定或列出什麼？",
         "options": [
-          "提出可觀察問題並列出變因",
-          "先寫預期答案",
-          "省略安全檢查"
+          "取樣時間、樣區、光照、水溫、營養鹽量與觀察指標",
+          "先宣布藻類增加就是好現象",
+          "只挑結果最符合預期的一天"
         ],
         "answer": "A",
-        "feedback": "問題、變因與安全限制是探究起點。"
+        "feedback": "先界定系統邊界、變因與指標，才能把不同池塘或不同方案公平比較。"
       },
       {
         "id": "step-2",
-        "prompt": "如何取得可信資料？",
+        "prompt": "營養鹽提高後藻類增加，但溶氧下降，應如何記錄？",
         "options": [
-          "固定條件、重複量測並記錄單位",
-          "只量一次且不記錄",
-          "任意改變多個因素"
+          "同時保留藻量與溶氧時間序列，再檢查其他環境條件",
+          "只保留藻量增加，因為增加一定代表環境變好",
+          "刪掉溶氧資料以免結論矛盾"
         ],
         "answer": "A",
-        "feedback": "固定與重複讓資料能比較。"
+        "feedback": "生態系是多層次互動；同一變因可能帶來不同指標的正負效果。"
       },
       {
         "id": "step-3",
-        "prompt": "如何形成結論？",
+        "prompt": "池塘魚類減少，要判斷是否由藻類造成，哪個比較最有力？",
         "options": [
-          "先描述證據，再提出有條件的解釋",
-          "把猜測當成結果",
-          "刪掉不符合預期的資料"
+          "設置無營養鹽或低藻量對照，固定水溫與光照並重複追蹤",
+          "只觀察魚類一次並直接下唯一結論",
+          "把所有其他池塘資料刪除"
         ],
         "answer": "A",
-        "feedback": "證據與限制都要保留，才能修正模型。"
+        "feedback": "對照和重複資料有助於排除水溫、疾病或棲地差異等替代解釋。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "模擬結果中藻類、溶氧、魚類一起變化，報告結尾應怎麼寫？",
+        "options": [
+          "指出資料支持的關係、可能機制與尚需驗證的限制",
+          "只寫一句口號，不交代資料",
+          "把相關直接寫成唯一因果"
+        ],
+        "answer": "A",
+        "feedback": "良好的生態結論必須同時呈現證據、解釋和證據邊界。"
       }
     ]
   },
@@ -99,40 +118,55 @@
   "lessonScope": "theme",
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一國中自然公開課程資源",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "生物與環境：生態系組成、能量流動、物質循環與人類影響之公開單元定位",
-      "sourceUrl": "https://www.nani.com.tw/",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；L：生物與環境 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "整理南一公開可查的單元架構，採由生物與環境互動進入生態系，再連到食物網、循環與人類干擾的概念順序；活動取其探究方向而非文字內容。",
-      "copyrightBoundary": "僅作公開資源的單元定位與教學脈絡研究；正文、圖示、情境、題目與解答皆由本專案重新設計，不重製南一教材。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄hanlin公立校方或官方公開結構對「L：生物與環境」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "生物與環境：族群、群集、生態系及食物鏈／食物網的公開教學定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；L：生物與環境 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "比較康軒公開資源偏重的層級辨識與關係圖閱讀，融合為本課的尺度切換、箭頭方向判讀及資料推論任務，並補上系統邊界與證據限制。",
-      "copyrightBoundary": "只引用公開頁面作研究與來源追蹤，不抄錄影音旁白、版面、插圖、例題或答案；本課案例與互動流程均為原創。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「L：生物與環境」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開課程資源",
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "生物與環境：環境因子、族群變動、生態平衡與保育議題之公開單元定位",
-      "sourceUrl": "https://www.hanlin.com.tw/",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；L：生物與環境 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "以翰林公開課程索引核對環境因子與保育情境的連結，並將其轉成可調變因的校園池塘模擬；不以單一指標宣稱生態平衡或因果成立。",
-      "copyrightBoundary": "公開索引只用於研究範圍與概念定位；不複製翰林課文、圖表、活動單或測驗，所有敘述與操作指引由 LLM 重新融合撰寫。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「L：生物與環境」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -141,13 +175,24 @@
       "edition": "南一國中自然公開課程資源",
       "sourceType": "public-web",
       "sourceLocator": "https://www.nani.com.tw/；自然科生物與環境公開單元索引，查核 2026-09-01",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["將生物與非生物因子放在同一個相互作用的生態系脈絡中理解。", "以能量流動與物質循環區分兩種在生態系中的傳遞方式。"],
-        "representations": ["適合以食物網、循環箭頭與環境因子表格並列，避免只記名詞。"],
-        "examplesOrEvidence": ["可用校園水域或農田的生物清單與環境紀錄建立系統邊界。"],
-        "misconceptions": ["能量沿食物鏈傳遞不等於能量回到生產者形成循環。"],
-        "assessmentEmphasis": ["由資料判斷生態系成分與關係，並說明結論的證據範圍。"]
+        "concepts": [
+          "將生物與非生物因子放在同一個相互作用的生態系脈絡中理解。",
+          "以能量流動與物質循環區分兩種在生態系中的傳遞方式。"
+        ],
+        "representations": [
+          "適合以食物網、循環箭頭與環境因子表格並列，避免只記名詞。"
+        ],
+        "examplesOrEvidence": [
+          "可用校園水域或農田的生物清單與環境紀錄建立系統邊界。"
+        ],
+        "misconceptions": [
+          "能量沿食物鏈傳遞不等於能量回到生產者形成循環。"
+        ],
+        "assessmentEmphasis": [
+          "由資料判斷生態系成分與關係，並說明結論的證據範圍。"
+        ]
       },
       "licenseBoundary": "只使用可取得的公開索引與教學脈絡作為研究紀錄，不重現出版社課文、圖片、活動單、題目或答案；本課內容為原創融合。"
     },
@@ -156,13 +201,24 @@
       "edition": "康軒國中自然公開影音",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然科公開影音分類頁，查核 2026-09-01",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["生態組織層級要依研究對象與範圍區分個體、族群、群集和生態系。", "食物鏈的多條交會形成食物網，關係圖可用來推論族群變動。"],
-        "representations": ["層級圖與帶方向箭頭的食物網能協助學生從局部關係切換到系統尺度。"],
-        "examplesOrEvidence": ["從一個物種增減後其他物種的觀察紀錄，檢查箭頭方向與推論是否一致。"],
-        "misconceptions": ["同一地區出現的所有生物不必然構成研究中的群集，還要符合時間與空間範圍。"],
-        "assessmentEmphasis": ["常要求讀圖辨認層級、食性關係與改變一個族群後的連鎖影響。"]
+        "concepts": [
+          "生態組織層級要依研究對象與範圍區分個體、族群、群集和生態系。",
+          "食物鏈的多條交會形成食物網，關係圖可用來推論族群變動。"
+        ],
+        "representations": [
+          "層級圖與帶方向箭頭的食物網能協助學生從局部關係切換到系統尺度。"
+        ],
+        "examplesOrEvidence": [
+          "從一個物種增減後其他物種的觀察紀錄，檢查箭頭方向與推論是否一致。"
+        ],
+        "misconceptions": [
+          "同一地區出現的所有生物不必然構成研究中的群集，還要符合時間與空間範圍。"
+        ],
+        "assessmentEmphasis": [
+          "常要求讀圖辨認層級、食性關係與改變一個族群後的連鎖影響。"
+        ]
       },
       "licenseBoundary": "公開影音頁僅作課程結構與概念表徵研究，不摘錄旁白或畫面；本課另建自編池塘案例、判讀問題與回饋。"
     },
@@ -171,22 +227,43 @@
       "edition": "翰林國中自然公開課程資源",
       "sourceType": "public-web",
       "sourceLocator": "https://www.hanlin.com.tw/；自然科生物與環境公開課程索引，查核 2026-09-01",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["環境因子會限制族群數量，保育判斷須同時看生物關係與棲地條件。", "人類活動造成的改變應透過可觀察指標與時間尺度評估，而非只用好或壞概括。"],
-        "representations": ["以時間序列資料、因果箭頭和變因表呈現環境變動，比單張靜態插圖更適合推理。"],
-        "examplesOrEvidence": ["可將水溫、遮蔭、藻類量與水生動物觀察紀錄配對，檢查可能的限制因子。"],
-        "misconceptions": ["族群數量上升不必然代表生態系健康，可能只是短期資源增加或天敵減少。"],
-        "assessmentEmphasis": ["重視從新情境資料提出有條件的保育建議，並指出仍需補測的資料。"]
+        "concepts": [
+          "環境因子會限制族群數量，保育判斷須同時看生物關係與棲地條件。",
+          "人類活動造成的改變應透過可觀察指標與時間尺度評估，而非只用好或壞概括。"
+        ],
+        "representations": [
+          "以時間序列資料、因果箭頭和變因表呈現環境變動，比單張靜態插圖更適合推理。"
+        ],
+        "examplesOrEvidence": [
+          "可將水溫、遮蔭、藻類量與水生動物觀察紀錄配對，檢查可能的限制因子。"
+        ],
+        "misconceptions": [
+          "族群數量上升不必然代表生態系健康，可能只是短期資源增加或天敵減少。"
+        ],
+        "assessmentEmphasis": [
+          "重視從新情境資料提出有條件的保育建議，並指出仍需補測的資料。"
+        ]
       },
       "licenseBoundary": "僅依公開索引記錄概念範圍與活動方向，未複製翰林受保護內容；所有說明、資料組合、互動操作和答案由本課獨立撰寫。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["三版本皆以生物與環境的交互作用為主軸，需掌握生態系的組成與邊界。", "三版本共同要求讀懂食物鏈或食物網，並以關係推論族群變化。", "三版本都把環境因子與人類活動放進資料判讀或保育情境，而不是只背定義。"],
-    "versionDifferences": ["南一的脈絡較適合由能量與物質的系統觀進入，康軒較突出層級與關係圖判讀，翰林較強調環境變動及保育決策；本課依學習困難將三者交織，不照任何單一版本順序。"],
-    "originalAdditions": ["以校園池塘作為可調整邊界的系統模型，讓學生同時觀察遮蔭、水溫與物種關係。", "加入能量流動不循環、物質可循環的雙箭頭辨誤任務，明確拆開兩個容易混淆的概念。", "每一項推論都要求標示證據、時間尺度與未控制變因，並把保育建議改寫成可測試的行動。"],
-    "llmSynthesisNote": "LLM 先依官方課綱與 kg-science-content-l 確認生態系、族群互動、能量與物質及人類影響的共同概念，再逐一比對三家公開資源所呈現的概念順序、圖表表徵、活動方向、迷思與評量焦點。最後以校園池塘的資料探究重組教學入口，重新撰寫正文、互動步驟與模擬任務；沒有複製任何版本的句子、例題、圖像或答案。"
+    "commonCore": [
+      "三版本皆以生物與環境的交互作用為主軸，需掌握生態系的組成與邊界。",
+      "三版本共同要求讀懂食物鏈或食物網，並以關係推論族群變化。",
+      "三版本都把環境因子與人類活動放進資料判讀或保育情境，而不是只背定義。"
+    ],
+    "versionDifferences": [
+      "南一的脈絡較適合由能量與物質的系統觀進入，康軒較突出層級與關係圖判讀，翰林較強調環境變動及保育決策；本課依學習困難將三者交織，不照任何單一版本順序。"
+    ],
+    "originalAdditions": [
+      "以校園池塘作為可調整邊界的系統模型，讓學生同時觀察遮蔭、水溫與物種關係。",
+      "加入能量流動不循環、物質可循環的雙箭頭辨誤任務，明確拆開兩個容易混淆的概念。",
+      "每一項推論都要求標示證據、時間尺度與未控制變因，並把保育建議改寫成可測試的行動。"
+    ],
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-l、南一／康軒／翰林公開資源限制與三筆公立學校／公開自然科評量能力模式，獨立融合個體／族群／群集／生態系尺度、非生物因子、食物網、能量流動、物質循環、承載與生態實驗。原有通用問題已改為生物與環境專屬題目，互動也改為校園池塘資料探究；所有題幹、選項、答案、回饋與五步解法均重新撰寫，未複製受保護內容；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -255,7 +332,42 @@
     "model": "general",
     "goal": "以安全探究步驟理解「生物與環境」並用證據修正解釋。",
     "mission": "針對「L：生物與環境」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"ecosystem-interaction-model","objective":"以能量流、物質循環與族群互動分析生物與環境的相互作用。","predictionPrompt":"若水分減少，生產者、消費者與分解者的關係會如何連動？","steps":[{"action":"配置生物與非生物因子並畫出互動箭頭","equation":"ecosystem=biotic+abiotic"},{"action":"調整光照、水分或資源追蹤族群與能量變化","equation":"population=f(resources,predation)"},{"action":"比較不同尺度與時間序列，標出推論限制","equation":"claim=pattern+timescale"}]},
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以能量流、物質循環與族群互動分析生物與環境的相互作用。",
+      "predictionPrompt": "若水分減少，生產者、消費者與分解者的關係會如何連動？",
+      "evidencePrompt": "請以生物與非生物因子、資源變化、族群資料、能量流及時間尺度，說明生物與環境互動的證據與限制。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "配置生物與非生物因子並畫出互動箭頭",
+          "equation": "ecosystem=biotic+abiotic",
+          "reason": "問題、變因與安全限制是探究起點，生物與非生物因子要放在同一系統脈絡。",
+          "feedback": "若只列生物名稱，請補上水分、光照或其他非生物條件與互動箭頭。"
+        },
+        {
+          "id": "step-2",
+          "action": "調整光照、水分或資源追蹤族群與能量變化",
+          "equation": "population=f(resources,predation)",
+          "reason": "固定與重複讓資料能比較，才能把族群變化連回資源或捕食條件。",
+          "feedback": "請保留重複量測與控制條件，不要由一次族群變化直接宣稱因果。"
+        },
+        {
+          "id": "step-3",
+          "action": "比較不同尺度與時間序列，標出推論限制",
+          "equation": "claim=pattern+timescale",
+          "reason": "證據與限制都要保留，尺度與時間序列不相符時必須修正模型。",
+          "feedback": "請標出局部觀察、時間範圍與未測量因素，讓結論能被後續資料修正。"
+        },
+        {
+          "id": "step-4",
+          "action": "以營養鹽輸入、藻量、溶氧與魚類反應建立生態系因果檢核",
+          "equation": "ecosystem﻿response＝input＋abiotic→population",
+          "reason": "生態系反應要同時觀察資源輸入、非生物條件與多層次族群，並以無輸入或低輸入對照排除替代解釋。",
+          "feedback": "若藻量增加但溶氧下降，保留兩種資料並追蹤時間序列；不得只用單一指標宣稱生態改善或惡化。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

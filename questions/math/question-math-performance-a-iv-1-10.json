@@ -2,41 +2,84 @@
   "id": "question-math-performance-a-iv-1-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 m、n 為整數，哪一個式子一定是偶數？",
+  "prompt": "若 x+y=10 且 x-y=4，則 x 等於多少？",
   "options": [
     {
       "id": "A",
-      "text": "m＋n＋1"
+      "text": "3"
     },
     {
       "id": "B",
-      "text": "m²＋n"
+      "text": "5"
     },
     {
       "id": "C",
-      "text": "2m＋2n"
+      "text": "6"
     },
     {
       "id": "D",
-      "text": "2m＋2n＋1"
+      "text": "7"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-a-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "2m＋2n＝2(m＋n)，可提出因數 2，因此一定是偶數。"
+    "value": "D",
+    "explanation": "兩式相加得 2x=14，所以 x=7；正確答案為 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考代數表示、符號運算、連續整數與推理證明題型；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "符號文字表達與推理單元實質改寫；已重新推導答案與解析，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供符號表達、代數推理與證明的能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的能力方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-a-iv-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-a-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "符號表示、代數運算、奇偶性、代數推理與簡短證明的公開試題能力方向；僅作題型研究定位。",
+      "observedPattern": "公開數學評量常要求把文字條件轉成符號、執行基本運算，再用反例或代數關係判斷命題；本題只採能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "符號表示、代數運算、奇偶性、代數推理與簡短證明的公開試題能力方向；僅作題型研究定位。",
+      "observedPattern": "公開數學評量常要求把文字條件轉成符號、執行基本運算，再用反例或代數關係判斷命題；本題只採能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "符號表示、代數運算、奇偶性、代數推理與簡短證明的公開試題能力方向；僅作題型研究定位。",
+      "observedPattern": "公開數學評量常要求把文字條件轉成符號、執行基本運算，再用反例或代數關係判斷命題；本題只採能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "利用加法消去 y，再除以 x 的係數，最後代回原條件檢查。",
+  "solutionSteps": [
+    "列出 x+y=10。",
+    "列出 x-y=4。",
+    "兩式相加，y 與 -y 抵消，得到 2x=14。",
+    "兩邊除以 2，得到 x=7。",
+    "代回 7+y=10 可得 y=3，條件一致，所以選 D。"
+  ]
 }

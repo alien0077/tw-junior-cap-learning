@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics s-IV-7."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/"lessons/math/lesson-math-performance-s-iv-7.json"
+REPORT=ROOT/"implementation/reports/math-performance-s-iv-7-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf"}
+
+def record(p,c,r,m,a):
+    return {"publisher":p,"edition":f"{p} 公立校方數學課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；畢氏定理、直角三角形與距離的概念、表徵及評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以直角三角形、平方和與距離模型解決幾何及生活問題。"],"representations":[r],"examplesOrEvidence":["本課的梯子、河道測距與座標路徑均為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+
+def main():
+    d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-math-performance-s-iv-7" and d["reviewStatus"]=="draft"
+    d["title"]="s-Ⅳ-7：用直角三角形的平方關係求距離"
+    d["content"]={"summary":"畢氏定理只適用於直角三角形：兩股平方和等於斜邊平方。關鍵不只是代入 a²+b²=c²，而是先確認直角位置、找出斜邊，再依未知量整理方程。逆定理可用三邊平方比較判斷是否為直角三角形。本課以梯子、河道測距和座標路徑的自編情境，練習平方和、根式答案、估值與逆定理，並檢查單位和圖形模型。","sections":[{"heading":"先找直角與斜邊","body":"斜邊是直角的對邊，也是三邊中最長的一邊。若未確認圖形是直角三角形，不能直接套畢氏定理；先把直角標記和三邊角色寫清楚。"},{"heading":"平方和的關係","body":"兩股長 a、b 和斜邊 c 滿足 a²+b²=c²。求股長時要整理成 c²−a²，再取正的平方根，因為長度不能為負。"},{"heading":"逆定理與反例","body":"若三邊中最大邊 c 滿足 a²+b²=c²，可判斷對最大邊的對角為直角；若不相等，可能是銳角或鈍角，不能說所有三角形都適用。"},{"heading":"把距離放回模型","body":"座標水平與垂直差可形成直角三角形，梯子長度與離牆距離也要符合圖形條件。最後用估值、最長邊、單位與原情境檢查答案。"}]}
+    d["studyHighlights"]=["先確認直角三角形並找出最長的斜邊。","依未知量整理平方方程，長度取正平方根。","用三邊平方和等式或不等式理解逆定理。","以圖形、單位、估值與情境限制回查。"]
+    d["teaching"]={"body":[{"id":"hook","phase":"hook","heading":"梯子靠牆的高度怎麼量？","body":"原創安全檢查任務給梯長 5 公尺、梯腳離牆 3 公尺，請學習者先畫出牆、地面與梯子形成的直角三角形，再預測牆上高度小於 5。接著用平方和求高，讓斜邊角色和答案範圍先被圖形限制。"},{"id":"explain","phase":"explain","heading":"從平方和判斷三邊角色","body":"在圖上標出直角，說明直角對邊才是斜邊；以 3、4、5 展開 3²+4²=5²。再比較 4、5、6 的平方，示範不符合等式便不能宣稱直角，讓定理與逆定理的使用條件清楚。"},{"id":"worked-example","phase":"worked-example","heading":"求座標路徑的直線距離","body":"兩點水平差 6、垂直差 8，先畫出直角三角形，再算距離 d²=6²+8²=100，所以 d=10。最後檢查距離大於每一個直角分量、單位相同，並說明若水平與垂直差換成不同單位要先換算。"},{"id":"guided-practice","phase":"guided-practice","heading":"辨認能否套用定理","body":"提供三組資料：有直角標記的 5、12、13；未標直角但三邊 6、8、10；以及任意三邊 4、5、6。學習者先找最大邊平方，再決定可用定理、逆定理或不能判斷，並寫出平方比較。"},{"id":"transfer","phase":"transfer","heading":"用河道模型估算寬度","body":"原創測距任務從河岸兩點建立垂直基線，測得斜向距離 13 公尺與沿岸差 5 公尺，求垂直河寬。先確認量測線形成直角，再以 13²−5² 得 144，取正根 12 公尺，最後討論量測誤差會如何影響估算。"},{"id":"reflect","phase":"reflect","heading":"修正把最長邊當股長","body":"請修正『三邊 6、8、10 中 10 是一股，所以用 10²+8² 求另一邊』。先指出 10 是直角對邊斜邊，再用 6²+8²=10² 驗證；若未知的是股長，應改寫成斜邊平方減已知股平方。"}],"summary":["畢氏定理只適用直角三角形，斜邊是直角對邊且最長。","求斜邊用兩股平方和，求股長用平方差並取正根。","逆定理用最大邊平方與其餘兩邊平方和比較。","以圖形、估值、單位與模型條件檢查距離答案。"],"exitCheck":[{"prompt":"為什麼 10 是 6、8、10 三角形的斜邊？","expectedEvidence":"10 是最大邊，且對著直角；6²+8²=10² 可驗證直角關係。"},{"prompt":"水平差 6、垂直差 8 的距離如何求？","expectedEvidence":"形成直角三角形，d²=6²+8²=100，所以 d=10，並檢查單位一致。"},{"prompt":"畢氏定理為什麼不能任意用在所有三角形？","expectedEvidence":"它的前提是直角三角形；非直角三角形不符合相同平方和關係。"}]}
+    d["interactive"]={"type":"guided-choice","goal":"確認直角與斜邊後，用平方和、平方差或逆定理求距離。","scenario":"調整兩股或三邊資料，觀察平方比較、根式結果與圖形條件。","variables":[{"symbol":"a","meaning":"第一股長或水平差"},{"symbol":"b","meaning":"第二股長或垂直差"},{"symbol":"c","meaning":"斜邊或待檢查的最大邊"}],"steps":[{"id":"step-1","prompt":"直角三角形中斜邊是哪一邊？","options":["直角的對邊且是最長邊","直角旁邊任一邊","最短的邊"],"answer":"A","feedback":"斜邊對著直角，並且是三邊中最長的一邊。"},{"id":"step-2","prompt":"兩股 6、8 的斜邊如何求？","options":["√(6²+8²)=10","6+8=14","√(8²−6²)"],"answer":"A","feedback":"斜邊平方等於兩股平方和。"},{"id":"step-3","prompt":"三邊 6、8、10 能否用逆定理判斷直角？","options":["可以，6²+8²=10²","不可以，因為沒有角度數字","可以，因為三邊都不同"],"answer":"A","feedback":"最大邊 10 的平方等於其餘兩邊平方和，可判斷為直角三角形。"}]}
+    d["authoringStandard"]="version-fused-v1"
+    d["versionResearch"]=[record("nani","以直角三角形平方和與距離問題建立畢氏定理","梯子、座標距離、直角標記與平方表","把最長邊當直角邊，或未確認直角就代公式","要求標示斜邊、整理方程並回代檢查"),record("kanghsuan","透過拼圖與操作理解平方面積關係","紙片拼合、3-4-5 模型、圖形與平方比較","只背 a²+b²=c² 不會依未知量變形","重視模型操作、逆定理與平方驗證"),record("hanlin","把畢氏定理連結到測距、座標與實際量測限制","河道與道路測距、單位換算、根式估算與誤差範圍","忽略單位或把非直角距離直接套用","評估圖形模型、根式、估值與應用合理性")]
+    d["fusionRecord"]={"commonCore":["三版本公開結構共同支持在直角三角形中以平方和求距離。","斜邊辨識、平方差、逆定理與圖形模型是共同核心。","估值、單位、量測與反例需用來檢查定理前提。"],"versionDifferences":["南一證據較突顯畢氏定理與直角三角形；康軒較突顯拼圖、平方面積與逆定理操作；翰林較突顯測距、座標、單位與誤差限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以梯子靠牆先由圖形限制斜邊與高度範圍。","以 6、8、10 座標距離與 13、5、12 河道測距示範平方差。","把非直角反例、單位、量測誤差與逆定理整合成互動任務。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織畢氏定理、直角三角形、逆定理、座標距離與實際測距。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit":"s-Ⅳ-7：用直角三角形的平方關係求距離","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+
+if __name__ == "__main__": main()

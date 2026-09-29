@@ -2,41 +2,76 @@
   "id": "question-chinese-learning-content-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "若文章只提供『受訪的三十位學生』資料，結論卻寫成『所有學生都如此』，最需要指出哪項問題？",
+  "prompt": "紀錄寫「今天回收三袋紙類」，學生說「這代表大家很有公德心」；兩句差異是？",
   "options": [
     {
       "id": "A",
-      "text": "文章一定沒有任何數據"
+      "text": "兩句都是直接測量數據"
     },
     {
       "id": "B",
-      "text": "只要有數字就能代表所有人"
+      "text": "前句是可核對的記錄，後句是延伸評價或推論"
     },
     {
       "id": "C",
-      "text": "結論越肯定就越符合證據"
+      "text": "前句一定錯，後句一定對"
     },
     {
       "id": "D",
-      "text": "樣本數與涵蓋範圍不足，不能直接推論所有學生"
+      "text": "後句完全不需要其他證據"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-learning-content"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "樣本數與母群範圍不一致，屬於超出證據的過度推論。"
+    "value": "B",
+    "explanation": "三袋紙類是可查核的行為與數量；公德心是由此延伸的評價，需更多行為與脈絡支持。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究字音字形、語詞、圖表與文本判讀題型（資料推論）；課綱學習內容：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究直接資訊、推論、語氣、指涉、受眾與證據界線能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫學習內容辨讀題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-learning-content"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-learning-content",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "事實、推論與證據",
+      "observedPattern": "公立學校國文評量要求區分直接資訊、推論、語氣、指涉與受眾改寫，並以文本證據限制結論；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解、指涉與推論",
+      "observedPattern": "公立學校國文評量要求區分直接資訊、推論、語氣、指涉與受眾改寫，並以文本證據限制結論；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把句子分成可觀察資料與評價，再問評價是否有足夠代表性與其他證據。",
+  "solutionSteps": [
+    "讀題定位：圈出「事實與評價」與文本中的時間、數值、語氣、代詞、定義或受眾線索。",
+    "證據分層：區分直接寫出、合理推論、評價與尚待查證的內容；本題核心是「三袋紙類是可查核的行為與數量；公德心是由此延伸的評價，需更多行為與脈絡支持。」",
+    "核對正解：選項 B 的結論範圍與文本證據完全相稱。",
+    "排除誘答：檢查是否把第一印象當事實、把一個例子推廣到全部，或加入文本沒有提供的背景。",
+    "回讀驗證：回到原句逐字核對，確認答案能指出直接證據或清楚標示推論界線。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

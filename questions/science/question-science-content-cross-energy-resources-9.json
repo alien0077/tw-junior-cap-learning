@@ -2,41 +2,73 @@
   "id": "question-science-content-cross-energy-resources-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年5月17日校園實驗室的觀察中，小車在 10 秒內前進 685 m，研究「能量與能源」時，平均速率為何？",
+  "prompt": "學校想降低電費又維持照明服務，哪個方案最可檢驗？",
   "options": [
     {
       "id": "A",
-      "text": "68.5 m/s"
+      "text": "只把燈關掉不量照度"
     },
     {
       "id": "B",
-      "text": "6850 m/s"
+      "text": "先量測時段、照度與用電，換高效率燈並比較相同服務下的功率與壽命"
     },
     {
       "id": "C",
-      "text": "0.0145985 m/s"
+      "text": "只挑最省電的一天"
     },
     {
       "id": "D",
-      "text": "675 m/s"
+      "text": "把照明品質視為不重要"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cross-energy-resources"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "平均速率＝路程÷時間＝685÷10＝68.5 m/s。 本題對應 KG「能量與能源」。"
+    "value": "B",
+    "explanation": "節能必須在功能服務相近的條件下比較，否則省電可能只是降低服務品質。 正確答案為選項 B。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "能量轉換、功率、效率與生活裝置",
+      "observedPattern": "只取公立校方公開試題的計算與資料判讀能力方向，重新設計能源題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "能量守恆、效率、裝置限制",
+      "observedPattern": "只取公開資料題的能力模式，改寫為微電網與能源決策情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作能量轉換、功率、效率、守恆、環境與能源決策的能力方向；本題為能量與能源單元原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-energy-resources"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cross-energy-resources",
+  "solutionStrategy": "先定義功能單位，再固定照度與使用時間，最後比較功率、壽命與總成本。",
+  "solutionSteps": [
+    "先標出輸入能源、轉換裝置、有用輸出、散失、時間與系統邊界。",
+    "依能量守恆、功率=能量/時間或效率=輸出/輸入建立關係式。",
+    "核對單位、負載、日照、儲能與比較服務，檢查是否有重複計算。",
+    "排除把可再生當隨時穩定、輸出當效率或單一指標當總結的選項，答案為 B。",
+    "把答案放回能源情境並檢查限制：節能必須在功能服務相近的條件下比較，否則省電可能只是降低服務品質。"
+  ]
 }

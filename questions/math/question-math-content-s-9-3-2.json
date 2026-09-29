@@ -2,41 +2,84 @@
   "id": "question-math-content-s-9-3-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "兩條截線被三條平行線截出，第一條截線的兩段長為 3、5，第二條截線的第一段為 6，第二段為何？",
+  "prompt": "三條平行線截兩條截線，第一條截線的相鄰兩段為 5 公分、7 公分，第二條截線對應第一段為 10 公分，對應第二段為多少？",
   "options": [
     {
       "id": "A",
-      "text": "10"
+      "text": "12 公分"
     },
     {
       "id": "B",
-      "text": "8（將題目中的 3、5、6 代入順序弄錯）"
+      "text": "14 公分"
     },
     {
       "id": "C",
-      "text": "12（將題目中的 3、5、6 代入順序弄錯）"
+      "text": "15 公分"
     },
     {
       "id": "D",
-      "text": "15（將題目中的 3、5、6 代入順序弄錯）"
+      "text": "17 公分"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "對應線段成比例，3/5=6/x，得 x=10。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。"
+    "value": "B",
+    "explanation": "5：7＝10：x，交叉相乘 5x＝70，所以 x＝14 公分，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平行線截比例線段 題型與官方課綱 KG kg-math-content-s-9-3",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供平行線截線比例、分點、相似形與逆判定能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的平行線截比例方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-9-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行線截線比例、分點比例、中點連線與平行逆判定",
+      "observedPattern": "公立學校公開數學試題常要求配對同方向截線分段，利用平行線造成的相似形求未知長度，或由兩截線的相同比例反推平行；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平行線截線比例、分點比例、中點連線與平行逆判定",
+      "observedPattern": "公立學校公開數學試題常要求配對同方向截線分段，利用平行線造成的相似形求未知長度，或由兩截線的相同比例反推平行；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行線截線比例、分點比例、中點連線與平行逆判定",
+      "observedPattern": "公立學校公開數學試題常要求配對同方向截線分段，利用平行線造成的相似形求未知長度，或由兩截線的相同比例反推平行；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用同方向的對應分段建立比例，不能把 5 與第二截線的第二段混配。",
+  "solutionSteps": [
+    "辨認第一截線分段 5、7。",
+    "辨認第二截線對應第一段為 10。",
+    "列式 5：7＝10：x。",
+    "計算 x＝10×7÷5＝14。",
+    "選 B。"
+  ]
 }

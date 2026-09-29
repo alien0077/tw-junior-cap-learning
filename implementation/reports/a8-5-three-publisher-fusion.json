@@ -1,0 +1,72 @@
+{
+  "reportId": "a8-5-three-publisher-fusion-d315",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-8-5",
+  "curriculumId": "cur-math-content-a-8-5",
+  "knowledgeGraphId": "kg-math-content-a-8-5",
+  "status": "draft",
+  "sources": [
+    {
+      "publisher": "nani",
+      "url": "https://www.scribd.com/document/827691143/國中-數學-基礎自學講義-南一版-八上",
+      "material": "Third-party public share identifying a Nani Grade 8 first-semester self-study handout, 175 pages.",
+      "reviewedEvidence": "Search-indexed pages 91-93 cover common monomial/binomial factors, distributive factoring and sign normalization; pp.96-98 cover difference of squares including extracting a factor first; pp.99-100 cover sum/difference square patterns and checking the middle coefficient. Indexed pp.118-121 transition into solving quadratic equations, treated as A-8-6 and excluded here.",
+      "limits": "Shared page is marked All Rights Reserved and is not an official publisher-hosted copy. Used the public indexed lesson excerpts as allowed by the user; no wording, exercise, answer, image or layout reproduced."
+    },
+    {
+      "publisher": "kanghsuan",
+      "url": "https://www.clearnotebooks.com/zh-TW/notebooks/2684782",
+      "material": "Public student notes by Manto Teacher, identified as Kanghsuan Grade 8 Volume 3, published 2025-10-31.",
+      "reviewedEvidence": "The chapter index distinguishes 3-1 common-factor factoring, 3-2 multiplication formulas and 3-3 cross multiplication. Indexed pages 1-8 show divisibility/remainder interpretation, common binomial extraction, sign reversal, exponent rules and repeated extraction; pages 9-12 show cross multiplication, including a leading coefficient other than one and its cross-term sum.",
+      "limits": "Student-authored notes, not publisher-authenticated textbook text. Used only as a public version-labeled learning-source; original lesson language and examples are new."
+    },
+    {
+      "publisher": "hanlin",
+      "url": "https://resource.hle.com.tw/Books/BooksResource/00-112國中數學2上翰林補救GO-學用(112f339539).pdf",
+      "companionTextbookUrl": "https://resource.hle.com.tw/Books/BooksResource/03-112國中數學2上課本-L03(112f222535).pdf",
+      "material": "Publisher-hosted 112-version Grade 8 textbook and remedial GO learner workbook search-index excerpts.",
+      "reviewedEvidence": "The indexed workbook separates section 3-1 (factor/multiple, monomial/common/sign-changing common factors, difference of squares and perfect-square identity; pp.119-126 locators) from 3-2 cross multiplication (leading coefficient one/non-one and mixed identities; pp.131-138). The textbook index identifies chapter 3 and its 3-2 self-assessment.",
+      "limits": "Direct PDF open returned HTTP 403 in this browsing environment. Findings are restricted to readable search-indexed text and page locators; no claim is made that unindexed pages were downloaded or fully read."
+    },
+    {
+      "publisher": "official-curriculum",
+      "url": "https://stv.naer.edu.tw/data/course_manual/A/%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E6%89%8B%E5%86%8A%28%E5%AE%9A%E7%A8%BF%E7%89%88%29.pdf",
+      "companionVideoUrl": "https://stv.naer.edu.tw/watch/327590",
+      "reviewedEvidence": "The NAER math curriculum handbook defines A-8-5 as common-factor extraction, multiplication identities and cross multiplication. Its public teaching transcript derives the cross term as the sum of two diagonal products and checks head, tail and middle terms; this is scope/method evidence, not publisher evidence."
+    }
+  ],
+  "synthesis": {
+    "sharedCore": [
+      "Scan coefficients, variable powers and shared binomials before selecting an identity.",
+      "Normalize opposite-sign common binomials and re-evaluate the remaining expression after every extraction.",
+      "Check complete-square middle terms and cross-multiplication head, tail and diagonal sum; verify the entire product."
+    ],
+    "differences": [
+      "Nani-labeled handout makes sign reversal/repeated extraction and then square identities visible as successive moves; equation solving occurs in later pages and was excluded.",
+      "Kanghsuan-labeled notes connect divisibility and remainders to common factors, then show exponent/repeated factoring and cross-product representation.",
+      "Hanlin's official resource indexing separates 3-1 common-factor/identity work from 3-2 cross multiplication and grades the latter from monic to non-monic quadratics."
+    ],
+    "originalLessonDesign": "Rewrote the lesson around a tile-wall repair inspection: coefficient-variable-binomial scan, sign normalization, reclassification after each extraction, complete-square tests and a fully worked non-monic cross-multiplication example. Added a counterexample where head/tail products match but the cross sum has the wrong sign."
+  },
+  "changes": [
+    "Replaced prior misattributed publisher research (school plans, Junyi and a stale video index) with three unit-specific publicly readable shared-source records and explicit authority/access limits.",
+    "Reworked the complete lesson, study highlights, original examples, error diagnosis, transfer and self-check around A-8-5 methods; explicitly excluded A-8-6 equation solving.",
+    "Replaced vague interaction distractors with mathematically checkable common-factor, identity and non-monic cross-product cases; synchronized simulation rationale and feedback.",
+    "Updated A-8-5 spec evidence prose; retained publisher evidence statuses as verified for this unit's shared-content review and kept spec qaStatus=untested and lesson reviewStatus=draft."
+  ],
+  "validation": {
+    "lessonSchema": "PASS: Draft 2020-12 validation, 0 errors",
+    "specSchema": "PASS: Draft 2020-12 validation, 0 errors",
+    "fullData": "PASS: 14,441 JSON files, 13,111 IDs, 1,032 KG nodes; 1,052 lessons and 10,566 questions remain draft",
+    "implementationSpecs": "PASS: 1,027 specs, 0 errors; completion 0 eligible / 1,027 pending",
+    "fusionStructureAudit": "PASS: 1,056 lessons, 0 structural failures; not semantic fusion QA",
+    "strictLessonIndependence": "PASS: 614 learning-content lessons, 0 risks, 0 strict failures",
+    "npmTest": "PASS: all runtime contracts; responsive 320/375/768; workbench traversal 1,027/1,027; golden reference 3/3"
+  },
+  "notCompleted": [
+    "No full authenticated original textbook chapter was read for all three publishers; source completeness limitations remain.",
+    "No human expert review and no Terra; formal content QA is not complete and reviewStatus remains draft.",
+    "No browser visual or screen-reader run in this turn; npm test covers automated contracts only.",
+    "No commit/push; the overall goal's fusion/spec/test stages are still in progress."
+  ]
+}

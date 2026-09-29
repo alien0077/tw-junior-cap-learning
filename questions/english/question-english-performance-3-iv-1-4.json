@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-1-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「3-Ⅳ-1／辨識書寫體字母」practice, what does “delicious” mean in question 4?",
+  "prompt": "A navigation slip shows the connected capitals “COMPASS.” The searchable archive uses lowercase. Which entry is an exact case conversion?",
   "options": [
     {
       "id": "A",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “delicious” means pleasant to taste."
+      "text": "compas"
     },
     {
       "id": "B",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “delicious” means a place where people wait for the bus stop."
+      "text": "compass"
     },
     {
       "id": "C",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “delicious” means a tool used to measure 13 minutes."
+      "text": "Compass"
     },
     {
       "id": "D",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “delicious” means a person who teaches at the bus stop."
+      "text": "compsas"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "“delicious” means pleasant to taste. This item targets 3-Ⅳ-1／辨識書寫體字母, question 4."
+    "value": "B",
+    "explanation": "逐字對應 C-O-M-P-A-S-S 的小寫是 c-o-m-p-a-s-s。B 只轉換大小寫；其他選項漏掉一個 s、保留大寫或調換字母。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=359&cfsn=2121&fn=110-1-%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE-%E6%9E%97%E7%8E%89%E8%93%AE.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣立宜昌國中公開試題，PDF page 5, writing test I(a), item 1: MARKER case conversion；只參照題型，不重製原題字詞／圖表。",
+    "authoringNote": "依官方英語課綱與 Knowledge Graph，參照公立學校公開試題之字母辨識、大小寫轉換與排序能力獨立改寫；未複製原題題幹、選項、圖表或答案。題目維持draft，尚待版本研究與完整內容發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-1"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=359&cfsn=2121&fn=110-1-%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE-%E6%9E%97%E7%8E%89%E8%93%AE.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中110學年度第一學期七年級第一次段考英文科試題",
+      "year": "110-1-1",
+      "subject": "english",
+      "locator": "PDF page 5, writing test I(a), item 1: MARKER case conversion",
+      "observedPattern": "只參照第1題／對應子題的字母辨識、大小寫轉換或字典序任務形式；只參考答案卷PDF第5頁寫作測驗一（一）第1至3題的字母大小寫互換任務；改用不同英文字詞與新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "辨認連寫字時採用「先分字母、再核順序、最後轉大小寫」；不要用相似外形替換原字母。",
+  "solutionSteps": [
+    "路線卡上的 COMPASS 有七個字母，任務是轉成小寫後輸入索引。",
+    "依序拆讀 C、O、M、P、A、S、S，並特別檢查字尾有相連的兩個 s。",
+    "按位置轉寫成 c-o-m-p-a-s-s，大小寫改變不會改變詞義或字母排列。",
+    "B 是完整小寫 compass；A 漏掉一個 s，C 首字母仍大寫，D 將字母換了位置。",
+    "選 B；輸入前從左至右逐格比對，確認成對的 s 都在末尾而沒有漏寫。"
+  ]
 }

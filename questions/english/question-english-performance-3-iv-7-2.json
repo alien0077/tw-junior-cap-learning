@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-7-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with help with the task at the town museum?” B: “___” (「3-Ⅳ-7／理解對話主要內容」practice, 10:00)",
+  "prompt": "Mia: The printmaking workshop starts later than we first thought.\nRay: The new note says 3:40 p.m. in Art Room 204. Let’s meet by the stairs at 3:30.\nWhen and where will they attend the workshop?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with help with the task at the town museum in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "At 3:30 p.m. by the stairs."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the town museum in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "At 4:30 p.m. in Art Room 204."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the town museum last year in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "At 3:40 p.m. by the stairs."
     },
     {
       "id": "D",
-      "text": "No, the weather at the town museum is sunny in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "At 3:40 p.m. in Art Room 204."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-7"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 3-Ⅳ-7／理解對話主要內容, item 2. This item targets 3-Ⅳ-7／理解對話主要內容, question 2."
+    "value": "D",
+    "explanation": "正確答案 D。3:30 是兩人約好碰面的時間與地點；工作坊本身則在 3:40、Art Room 204 舉行，題目問的是參加活動的資訊。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+    "sourceLocator": "依公立國中英文段考中對話主旨、時間地點、請求、順序、態度、建議、指代與行動推論的公開命題模式獨立改寫；逐題原卷題號列於 examPatternRefs。",
+    "authoringNote": "本題情境、對話、選項、答案與繁中解析均依 3-Ⅳ-7 能力獨立重寫；公開試題僅作可追溯 pattern-only 參照，不複製原文或選項。完整內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-7"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期七年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第1頁第7題：聽取對話後從選項辨認頻率／時間細節",
+      "locatorLevel": "item",
+      "observedPattern": "參照根據口語線索擷取時間資訊的聽力題型。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87_3.pdf",
+      "title": "高雄市立國昌國中114學年度第1學期一年級第1次段考英文",
+      "year": "114-1",
+      "subject": "english",
+      "locator": "第3題：由 Where 問句與對話選項辨認物品位置",
+      "locatorLevel": "item",
+      "observedPattern": "參照把位置問句對應到地點資訊的細節定位方式。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "分清「碰面安排」和「活動安排」，再各自擷取題目要求的時間、地點欄位。",
+  "solutionSteps": [
+    "圈出問句中的 When and where，確認需要活動時間和活動地點。",
+    "Ray 先報告工作坊的新資訊：3:40 p.m.、Art Room 204。",
+    "下一句 Let’s meet 指的是參加者彼此碰面的安排，不是工作坊舉辦地點。",
+    "把兩個資訊來源分開後，選 D；A 和 C 把碰面地點當成活動地點。",
+    "逐欄核對 3:40 與 Art Room 204 都取自新公告，而非兩人提早碰面的句子。"
+  ]
 }

@@ -1,0 +1,36 @@
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+
+const lesson = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-english-performance-5-iv-8.json", import.meta.url), "utf8"));
+const spec = readFileSync(new URL("../unit-specs/english/cur-english-performance-5-iv-8.yaml", import.meta.url), "utf8");
+
+assert.equal(lesson.id, "lesson-english-performance-5-iv-8");
+assert.equal(lesson.reviewStatus, "draft", "lesson content review is reserved for user's ChatGPT review");
+assert.equal(lesson.authoringStandard, "version-fused-v1");
+assert.deepEqual(lesson.knowledgeIds, ["kg-english-performance-5-iv-8"]);
+assert.equal(lesson.content.sections.length, 6);
+assert.equal(lesson.teaching.body.length, 6);
+const visible = new Map(lesson.content.sections.map(({ heading, body }) => [heading, body]));
+for (const section of lesson.teaching.body) assert.equal(visible.get(section.heading), section.body);
+assert.ok(lesson.teaching.body.every(section => section.body.length >= 120));
+assert.match(lesson.content.sections[1].body, /第一遍/);
+assert.match(lesson.content.sections[4].body, /但是|因為|於是/);
+assert.match(lesson.content.sections[5].body, /只給同伴看你的筆記/);
+assert.equal(lesson.versionResearch.length, 3);
+assert.match(lesson.versionResearch.find(item => item.publisher === "kanghsuan").sourceLocator, /未取得/);
+assert.match(lesson.versionResearch.find(item => item.publisher === "nani").sourceLocator, /pp?\.6.?7/);
+assert.match(lesson.versionResearch.find(item => item.publisher === "nani").sourceLocator, /未定位5-Ⅳ-8專屬教法/);
+assert.ok(lesson.fusionRecord.commonCore.length >= 3);
+assert.ok(lesson.fusionRecord.originalAdditions.length >= 4);
+assert.match(lesson.fusionRecord.llmSynthesisNote, /不宣稱三版/);
+assert.equal(lesson.interactive.type, "guided-choice");
+assert.equal(lesson.interactive.steps.length, 4);
+assert.deepEqual(lesson.interactive.steps.map(step => step.answer), ["A", "B", "C", "B"]);
+assert.equal(new Set(lesson.interactive.steps.map(step => step.audioScript)).size, 4);
+assert.ok(lesson.interactive.steps.every(step => step.audioLanguage === "en-US" && step.options.length === 3 && step.retryHint.length >= 20 && step.feedback.length >= 30));
+assert.match(spec, /component: GuidedChoiceBlock/);
+assert.match(spec, /qaStatus: verified/);
+assert.match(spec, /Nani.*school|nani-school-plan-read|nani-school-plan-locator-read/s);
+assert.match(spec, /康軒.*pending|kanghsuan-unit-material-pending/s);
+assert.match(spec, /在320、375、768px/);
+console.log("English 5-IV-8 authored lesson, source boundaries, visible manuscript and guided-story contract pass");

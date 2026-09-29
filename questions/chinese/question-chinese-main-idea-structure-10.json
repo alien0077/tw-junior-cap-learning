@@ -2,41 +2,76 @@
   "id": "question-chinese-main-idea-structure-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "最可靠的寓意答案應具備？",
+  "prompt": "最可靠的寓意答案通常應具備哪項特徵？",
   "options": [
     {
       "id": "A",
-      "text": "文本證據與合理推論"
+      "text": "只重述一個角色名字"
     },
     {
       "id": "B",
-      "text": "最長字數"
+      "text": "能以全文事件與結果支持，且不超出文本證據"
     },
     {
       "id": "C",
-      "text": "最華麗詞藻"
+      "text": "只使用『做人要好』等空泛口號"
     },
     {
       "id": "D",
-      "text": "與文章無關的名言"
+      "text": "一定要猜作者的人生經歷"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "可回扣證據且推論合理才是可靠寓意。"
+    "value": "C",
+    "explanation": "寓意需由全文事件與結果支持，並控制在文本能證明的範圍，不能用空泛口號或外加作者私生活。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-main-idea-structure-10.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究主旨、段落功能、轉折、寓意與全文證據能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫篇章主旨結構題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-main-idea-structure"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-main-idea-structure",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章主旨、段落功能與推論",
+      "observedPattern": "公立學校國文評量要求結合段落功能、轉折、反覆線索、事件結果與全文證據判斷主旨及寓意；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解、主旨與結構",
+      "observedPattern": "公立學校國文評量要求結合段落功能、轉折、反覆線索、事件結果與全文證據判斷主旨及寓意；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列文本證據，再把道理寫成能解釋事件且不過度延伸的一句話。",
+  "solutionSteps": [
+    "讀題定位：圈出「寓意範圍」與段落、轉折、反覆詞、事件結果或全文範圍線索。",
+    "整理證據：把線索放回開頭、發展與結尾，判斷它們如何共同指向主旨或寓意；本題核心是「寓意需由全文事件與結果支持，並控制在文本能證明的範圍，不能用空泛口號或外加作者私生活。」",
+    "核對正解：選項 C 能解釋全文主要材料與作者呈現的意義。",
+    "排除誘答：檢查是否只抓單一細節、忽略轉折後限制、把個人常識加進文本，或寫成空泛口號。",
+    "回讀驗證：逐段對照主旨，確認每個重要段落都能被涵蓋，且結論沒有超出文章證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

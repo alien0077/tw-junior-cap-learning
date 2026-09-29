@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-3-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-3／釐清因果」task, what is the best way to prepare question 8?",
+  "prompt": "A school added shade cloth in May. Playground temperatures were lower in June, but June also had more cloudy days. What should the report conclude?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-3／釐清因果."
+      "text": "The cloth alone definitely caused the entire temperature drop."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-3／釐清因果."
+      "text": "Cloudy days prove the cloth could not have mattered."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-3／釐清因果."
+      "text": "Temperatures fell after installation, but cloudier weather may also have contributed."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-3／釐清因果."
+      "text": "The temperature did not change after installation."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-3／釐清因果, question 8."
+    "value": "C",
+    "explanation": "溫度下降發生在安裝後，但多雲也可能造成影響，故應採 C 的審慎結論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1738658361768DU1YxF4F.pdf",
+    "sourceLocator": "PDF第1頁第9題：聽取對話並判讀工作量、飲食與健康之間的可能關係。",
+    "authoringNote": "參照公立學校公開英文段考所呈現的時間順序、原因辨識、篇章線索或因果推論能力，題幹、情境、數據、選項、答案與解析均獨立撰寫；未複製試卷。課程版本研究與全案內容審查尚未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658361768DU1YxF4F.pdf",
+      "title": "臺北市立內湖國中113學年度第1學期八年級第2次段考英語科試題",
+      "year": "113",
+      "subject": "english",
+      "locator": "PDF第1頁第9題：聽取對話並判讀工作量、飲食與健康之間的可能關係。",
+      "observedPattern": "參照生活情境中辨識可能的因果敘述；本題以同時變動的夏季紀錄測試相關不等於因果，情境自編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "報告要同時呈現前後觀察與可能混淆因素；除非控制天候等條件，不能把全部變化歸給單一措施。",
+  "solutionSteps": [
+    "可確認的觀察是遮陽網安裝後，六月操場溫度較低。",
+    "同一時期六月多雲天數也增加，這是另一項可能影響氣溫的因素。",
+    "沒有控制天候或比較相同條件下的操場，無法分離各因素貢獻。",
+    "所以應保留時間關聯並說明雲量可能有影響，選 C。",
+    "排除 definitely、alone 等超出資料的說法，也不能說溫度未變。"
+  ]
 }

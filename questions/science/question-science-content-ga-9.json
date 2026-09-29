@@ -2,41 +2,67 @@
   "id": "question-science-content-ga-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年1月8日校園實驗室的觀察中，若以 Aa 表示一對等位基因，研究「Ga：生殖與遺傳」時，Aa 個體的基因型屬於哪一類？",
+  "prompt": "某批種子由有性生殖產生，子代葉形出現多種差異。若要判斷差異來源，哪種資料組合最有幫助？",
   "options": [
     {
       "id": "A",
-      "text": "「Ga：生殖與遺傳」中的異型合子（Aa）"
+      "text": "只記錄一株植物的葉片顏色"
     },
     {
       "id": "B",
-      "text": "「Ga：生殖與遺傳」中的同型合子（兩個等位基因相同）"
+      "text": "只問親代是否高大，不記錄環境"
     },
     {
       "id": "C",
-      "text": "「Ga：生殖與遺傳」中只有一個基因（Aa 只剩一個字母）"
+      "text": "同時記錄親代遺傳型、子代性狀、光照水分與重複批次"
     },
     {
       "id": "D",
-      "text": "「Ga：生殖與遺傳」中不含遺傳物質（Aa 不具遺傳意義）"
+      "text": "看到差異就直接判定發生有利突變"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ga"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "Aa 含有兩個不同的等位基因，因此是異型合子。 本題對應 KG「Ga：生殖與遺傳」。"
+    "value": "C",
+    "explanation": "要分辨遺傳組合與環境效應，需同時記錄親代與子代資料、環境條件及重複批次；單一觀察不能證明突變或其效益。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的生殖、遺傳、資料判讀及模型限制能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料的能力方向獨立改寫；題幹、選項、答案、解析與五步解法均針對 Ga 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ga"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ga",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生殖、遺傳、配子、遺傳比例與資料判讀",
+      "pattern": "取由繁殖過程、遺傳資料、比例與環境條件建立條件式推論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由繁殖過程、遺傳資料、比例與環境條件建立條件式推論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列出可能原因，再設計能比較遺傳資料和環境資料的多項證據。",
+  "solutionSteps": [
+    "列出遺傳重組、突變和環境差異等可能原因。",
+    "確認只記葉片或只問親代都無法排除替代解釋。",
+    "收集親代遺傳型、子代性狀、光照水分和重複批次。",
+    "D 把觀察直接升級為因果結論，A、B 證據不足。",
+    "因此 C 最能支持後續判斷。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

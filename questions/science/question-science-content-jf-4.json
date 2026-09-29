@@ -2,41 +2,78 @@
   "id": "question-science-content-jf-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年8月18日學校研究社的觀察中，將 22 g 食鹽溶於 799 g 水，研究「Jf：有機化合物的性質、製備及反應」時，溶液質量為何？",
+  "prompt": "油脂經鹼性水解可製成肥皂；若成品泡沫少，不能直接判定皂化失敗，還應檢查？",
   "options": [
     {
       "id": "A",
-      "text": "821 g"
+      "text": "脂肪酸鹽含量、硬水離子、鹼濃度、反應時間及乳化測試等資料"
     },
     {
       "id": "B",
-      "text": "777 g"
+      "text": "只看成品顏色"
     },
     {
       "id": "C",
-      "text": "17578 g"
+      "text": "只增加香精掩蓋結果"
     },
     {
       "id": "D",
-      "text": "799 g"
+      "text": "只量容器重量"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jf"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：22＋799＝821 g。 本題對應 KG「Jf：有機化合物的性質、製備及反應」。"
+    "explanation": "泡沫受脂肪酸鹽含量、硬水、濃度與測試條件影響，需分析組成並設乳化對照，不能用泡沫單一指標判定。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的有機結構、官能基、反應、聚合物、製備、生命週期與安全整合能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jf"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jf",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "有機化合物、結構、反應、材料與安全整合判讀",
+      "pattern": "取由有機結構、反應產物、製備資料與生活材料情境整合推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由有機結構、反應產物、製備資料與生活材料情境整合推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "碳化合物、燃燒、聚合物、生活應用與資料圖表",
+      "pattern": "取從模型、實驗資料、材料生命週期與生活情境判斷有機化學的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從模型、實驗資料、材料生命週期與生活情境判斷有機化學的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將製備反應、產物功能和測量干擾分開。",
+  "solutionSteps": [
+    "確認皂化反應是否完成及鹼用量。",
+    "分析脂肪酸鹽含量。",
+    "控制水質和乳化測試條件。",
+    "比較硬水、清水與未皂化油脂對照。",
+    "所以 A 最完整。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

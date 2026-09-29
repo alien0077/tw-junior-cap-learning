@@ -2,23 +2,23 @@
   "id": "question-social-content-hist-ia-9",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2022年8月15日區域地圖展的資料中，小組探究「Ia：東亞世界延續變遷」時，甲資料與乙資料出現差異。哪項做法最能支持可靠結論？",
+  "prompt": "某改革方案同時引進外來軍事技術與本地官僚制度調整，但地方文件顯示執行速度不一。最穩妥的結論是？",
   "options": [
     {
       "id": "A",
-      "text": "刪除與原結論不合的資料"
+      "text": "改革方案的提出就等於全國已完成改革。"
     },
     {
       "id": "B",
-      "text": "只引用一筆最方便的資料"
+      "text": "地方執行差異可忽略，因為中央政策才是真實歷史。"
     },
     {
       "id": "C",
-      "text": "核對「Ia：東亞世界延續變遷」的來源、時間、範圍與概念定義，再說明證據限制"
+      "text": "改革是外來技術的直接複製，地方不會改造。"
     },
     {
       "id": "D",
-      "text": "把個人感受直接寫成普遍結論"
+      "text": "方案、制度落地與地方反應是不同階段，需用不同資料判斷各階段的實際效果。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "社會科資料判讀需確認來源、時空範圍與定義，並區分證據和推論。 本題對應 KG「Ia：東亞世界延續變遷」。"
+    "value": "D",
+    "explanation": "本題聚焦「政策與落地」。政策文本、制度執行與地方經驗可能有落差；結論要明確指出所依據的階段和證據。 正確答案為選項 D：「方案、制度落地與地方反應是不同階段，需用不同資料判斷各階段的實際效果。」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
     "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "authoringNote": "依官方課綱、歷 Ia 知識圖譜及三所公立學校公開社會科試題的時序、區域互動與多方證據能力方向獨立改寫；未複製原題文字、選項、圖片或答案，待逐題學科與 Terra 複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-hist-ia"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-social-content-hist-ia",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國民中學公開段考社會科；僅研究時序、資料判讀與歷史推理題型，未複製原題。",
+      "year": "114",
+      "locator": "公開段考社會科 PDF；第 1 題至第 10 題型範圍：時序、資料判讀與因果界線",
+      "observedPattern": "由制度、時序與多方材料要求學生提出證據範圍相稱的歷史解釋。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國民中學公開社會科試題入口；僅研究多資料互證題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開試題與解答入口；第 1 題至第 10 題型範圍：跨區交流、制度與多重證據",
+      "observedPattern": "比較地圖、文字與角色材料，區分直接記錄、合理推論與待補證主張。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國民中學公開段考試題入口；僅研究區域互動與多方觀點題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開段考試題入口；第 1 題至第 10 題型範圍：區域互動、文化變遷與多方角色",
+      "observedPattern": "從區域材料分析不同角色、利益與變化，不以單一來源包辦結論。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用政策與落地定位時間、角色、制度與證據，再區分延續、變化與尚待補證的推論；政策文本、制度執行與地方經驗可能有落差；結論要明確指出所依據的階段和證據。",
+  "solutionSteps": [
+    "讀題定位：圈出題目中的時段、地區、材料與任務，確認本題正在檢核「政策與落地」。",
+    "建立判準：把制度、網絡、社會群體與事件結果分層，並標記每個判斷的資料來源。",
+    "核對正解：選項 D「方案、制度落地與地方反應是不同階段，需用不同資料判斷各階段的實際效果。」符合題幹，因為政策文本、制度執行與地方經驗可能有落差；結論要明確指出所依據的階段和證據。",
+    "逐項排除：檢查其餘選項是否把外力當成唯一原因、把政策文字當成全境實況，或把單一結果套用到所有地區。",
+    "結論回查：重新核對年代、比較面向與證據強度；若加入新材料或改變尺度，必須重新建立結論。"
+  ]
 }

@@ -48,7 +48,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "透過校園雨水花園模擬，整合水文、熱環境、生態與工程限制，練習以證據修正跨科解釋。",
@@ -104,6 +104,17 @@
         ],
         "answer": "A",
         "feedback": "好的跨科結論同時交代證據、適用條件和尚未回答的問題，不能把一次模擬擴張成普遍定律。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "若第一場大雨效果良好，但三個月後植物存活下降，如何改進決策？",
+        "options": [
+          "延長觀察並同時追蹤逕流、溫度、植物存活、維護工時與成本，再比較方案取捨",
+          "只保留第一場大雨的漂亮結果，忽略後續資料",
+          "因植物變少就否定所有透水與雨水花園設計"
+        ],
+        "answer": "A",
+        "feedback": "跨科方案需要時間序列與多指標權衡；短期效果不能取代長期可維護性。"
       }
     ]
   },
@@ -115,7 +126,7 @@
       "edition": "南一國中自然公開課程與數位資源",
       "sourceType": "public-web",
       "sourceLocator": "https://www.nani-jr.com/；以自然科跨科與環境議題公開入口核對主題定位，未宣稱取得完整電子課本，查核 2026-09-01。",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "公開入口可支持自然科以生活環境問題串接觀察、資料與解釋，但不足以推論未公開頁面的完整編排。",
@@ -141,7 +152,7 @@
       "edition": "康軒國中自然跨科主題公開數位資源",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；核對跨科主題的影音／活動入口與探究取向，查核 2026-09-01。",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "公開資源呈現以觀察、提問和活動引導自然概念的方向，支持本課先讓學員操作場地條件再整理因果。",
@@ -167,7 +178,7 @@
       "edition": "翰林國中自然跨科與探究公開資源",
       "sourceType": "public-web",
       "sourceLocator": "https://website.hle.com.tw/；以翰林公開自然科課程／評量入口核對資料判讀與探究定位，完整章節頁面未公開，查核 2026-09-01。",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "公開定位支持以生活情境、資料判讀和科學推論連結不同自然領域；本課把問題具體化為校園地表改造。",
@@ -203,49 +214,59 @@
       "設計水泥地與植被區的自編數據，要求先預測、再固定變因重測，並區分觀測值、模型輸出與價值選擇。",
       "加入可拖曳樹冠、透水鋪面、土壤厚度與排水孔的互動，以及從雨水管理遷移到家庭能源方案的條件式決策。"
     ],
-    "llmSynthesisNote": "LLM 依官方自然科課綱、kg-science-content-cross-disciplinary 與 2026-09-01 可取得的南一、康軒、翰林公開教學定位交叉整理後，重新安排本單元的概念入口、證據鏈、資料限制、互動任務與能源遷移。正文、案例數據、迷思診斷、練習、互動回饋和模擬任務均針對跨科系統獨立撰寫，未複製出版社文字、圖片、題目、答案或影音逐字稿；尚未進行 Terra 第二輪 AI 審查，因此維持 draft。"
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-cross-disciplinary、南一／康軒／翰林公開版本研究限制及三筆公立國中公開自然科題型能力模式，獨立融合降雨、逕流、入滲、熱環境、生物棲地、工程限制、維護成本與公共決策。題目與互動均重新設計，未複製受保護內容；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "自然科學跨科主題；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；自然科學跨科主題 概念、探究與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「自然科學跨科主題」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為theme節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「自然科學跨科主題」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；自然科學跨科主題 概念、探究與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-20",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「自然科學跨科主題」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一國中自然公開課程與數位資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "自然科跨科與環境議題公開入口；未取得可合法逐頁讀取的完整電子課本，查核 2026-09-01。",
-      "sourceUrl": "https://www.nani-jr.com/",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；自然科學跨科主題 概念、探究與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "assessment-pattern"],
-      "outcome": "核對生活環境問題、觀察資料與解釋之間的教學定位；正文改以校園雨水花園獨立設計，不宣稱未公開頁面的內容。",
-      "copyrightBoundary": "僅研究公開入口與主題定位，不複製南一教材文字、圖片、題目、答案或影音。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然跨科與探究公開資源",
-      "subject": "science",
-      "chapterLocator": "自然科跨科、探究與資料判讀公開資源入口；完整章節頁面未公開，查核 2026-09-01。",
-      "sourceUrl": "https://website.hle.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "核對以生活情境、資料判讀與科學推論串接概念的方向；本課另寫系統圖、資料表與方案比較。",
-      "copyrightBoundary": "僅研究公開課程與探究定位，不複製翰林教材、評量題目、解析或圖片。"
+      "reviewedAt": "2026-09-20",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「自然科學跨科主題」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -320,7 +341,42 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
-    ,"learningDesign":{"type":"rain-garden-cross-lab","objective":"以水文、熱環境與生態資料比較校園雨水花園方案。","predictionPrompt":"增加透水鋪面與樹冠後，逕流、地表溫度與植物存活會如何同時改變？","steps":[{"action":"固定降雨、坡度與測量時間比較水泥地和植被區","equation":"runoff=rain-infiltration"},{"action":"調整土壤厚度、樹冠與排水孔並記錄熱與生態結果","equation":"temperature=f(shade,water)"},{"action":"以維護成本和多科證據修正方案","equation":"score=water+heat+ecology-cost"}]}
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以水文、熱環境與生態資料比較校園雨水花園方案。",
+      "predictionPrompt": "增加透水鋪面與樹冠後，逕流、地表溫度與植物存活會如何同時改變？",
+      "evidencePrompt": "請以降雨、坡度、入滲、地表溫度、樹冠、植物存活與維護成本資料，說明跨科方案的證據與限制。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "固定降雨、坡度與測量時間比較水泥地和植被區",
+          "equation": "runoff=rain-infiltration",
+          "reason": "先固定比較條件，才能把逕流或入滲差異合理連到鋪面與植被設計。",
+          "feedback": "若同時改變降雨、坡度與測量時間，請重新固定條件讓預測可由資料支持或推翻。"
+        },
+        {
+          "id": "step-2",
+          "action": "調整土壤厚度、樹冠與排水孔並記錄熱與生態結果",
+          "equation": "temperature=f(shade,water)",
+          "reason": "溫度、植物存活與水文結果需要保留測點、時間、風與遮蔭等可比條件。",
+          "feedback": "溫差是觀測結果，不等於單一因果證明；請補上測點與環境限制。"
+        },
+        {
+          "id": "step-3",
+          "action": "以維護成本和多科證據修正方案",
+          "equation": "score=water+heat+ecology-cost",
+          "reason": "跨科結論需同時交代水文、熱、生態與成本證據，並保留尚未回答的問題。",
+          "feedback": "不要把一次模擬擴張成普遍定律，請寫出證據、適用條件與待查問題。"
+        },
+        {
+          "id": "step-4",
+          "action": "以長期時間序列與多指標權衡檢查方案是否可持續",
+          "equation": "decision=water+heat+ecology-maintenance-cost",
+          "reason": "同一方案可能短期改善逕流與熱環境，卻因植物存活、排水堵塞或維護成本在長期失效；決策要明確寫出權重與取捨。",
+          "feedback": "若只報一個總分，請補上各指標的時間範圍、測量方法與至少一項未解決的風險。"
+        }
+      ]
+    }
   }
 }

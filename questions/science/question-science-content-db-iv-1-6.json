@@ -2,23 +2,23 @@
   "id": "question-science-content-db-iv-1-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年1月23日學校研究社的觀察中，針對「Db-Ⅳ-1：攝食、消化與吸收取得養分」提出可檢驗的科學問題，若比較 4 組、每組取樣 14 份資料，哪一項設計最適當？",
+  "prompt": "下列哪一個例子主要屬於『機械性消化』，而不是化學性消化？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-1：攝食、消化與吸收取得養分」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "脂肪酶催化脂質分解成脂肪酸與甘油等產物"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-1：攝食、消化與吸收取得養分」時只測量4組中的一組就直接下結論"
+      "text": "澱粉酶把澱粉分解成較小的醣類"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-1：攝食、消化與吸收取得養分」時只改變攪拌速度，其餘條件一致，設置4組、每組取樣14份並各重複測量3次"
+      "text": "蛋白酶把蛋白質切成胺基酸或短鏈片段"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-1：攝食、消化與吸收取得養分」時先決定結論，再挑選支持結論的14筆資料"
+      "text": "牙齒把食物咬碎，讓食物顆粒變小但分子種類未因此改變"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-1：攝食、消化與吸收取得養分」。"
+    "value": "D",
+    "explanation": "D。牙齒把食物咬碎，主要改變顆粒大小與接觸面，沒有因此改變分子種類，屬於機械性消化。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題中的攝食、消化、養分吸收、運輸與證據判讀能力；本題改寫為消化與吸收原創情境。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開生物科資料的能力方向獨立改寫；題幹、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-db-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取攝食、消化、養分吸收與運輸的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "攝食、消化、養分吸收與運輸",
+      "observedPattern": "公開自然科評量常要求追蹤攝食、機械與化學消化、小腸吸收、膽汁、血液與淋巴運輸；本題以全新消化與養分路徑情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取消化道、小腸構造與三大養分路徑的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "消化道、小腸構造與三大養分路徑",
+      "observedPattern": "公開自然科評量常要求追蹤攝食、機械與化學消化、小腸吸收、膽汁、血液與淋巴運輸；本題以全新消化與養分路徑情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取機械與化學消化、膽汁、血液與淋巴的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "機械與化學消化、膽汁、血液與淋巴",
+      "observedPattern": "公開自然科評量常要求追蹤攝食、機械與化學消化、小腸吸收、膽汁、血液與淋巴運輸；本題以全新消化與養分路徑情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看分子種類是否改變；只改顆粒大小的是機械性消化。",
+  "solutionSteps": [
+    "圈出食物種類、消化部位、分子變化、吸收位置與血液／淋巴方向。",
+    "分開機械性消化、化學性消化、吸收與細胞利用，不把顆粒變小當成跨腸壁。",
+    "沿口腔—胃—小腸與絨毛內血管／乳糜管畫出路徑，標記三大養分的消化產物。",
+    "檢查膽汁、酵素、皺褶絨毛與運輸系統各自的功能，排除器官和物質混淆。",
+    "回查模型是否有直接吸收證據、替代解釋與條件限制，避免由食物外觀推論細胞利用。"
+  ]
 }

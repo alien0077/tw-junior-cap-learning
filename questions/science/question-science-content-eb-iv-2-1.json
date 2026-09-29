@@ -2,23 +2,23 @@
   "id": "question-science-content-eb-iv-2-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年4月1日社區環境站的觀察中，一個物體質量為 417 g、體積為 38 cm³，研究「Eb-Ⅳ-2：力矩與槓桿」時，其密度為何？",
+  "prompt": "同樣用 30 N 的力推門，甲在距鉸鏈 0.20 m 處，乙在 0.80 m 處且皆垂直門面，誰產生的力矩較大？",
   "options": [
     {
       "id": "A",
-      "text": "455 g/cm³"
+      "text": "甲，因為較靠近鉸鏈"
     },
     {
       "id": "B",
-      "text": "10.9737 g/cm³"
+      "text": "乙，因為力臂較長"
     },
     {
       "id": "C",
-      "text": "0.0911271 g/cm³"
+      "text": "兩者相等，因為施力相同"
     },
     {
       "id": "D",
-      "text": "15846 g/cm³"
+      "text": "無法判斷，力矩沒有方向"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "密度＝質量÷體積＝417÷38＝10.9737 g/cm³。 本題對應 KG「Eb-Ⅳ-2：力矩與槓桿」。"
+    "explanation": "力矩＝力×力臂；兩力相同時，乙的 0.80 m 力臂較長，力矩較大。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作力臂、力矩、槓桿平衡與工具分類的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-2"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "槓桿力臂、力矩與平衡題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%835-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "拔釘器、槓桿與簡單機械題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.mcjhs.tp.edu.tw/?q=zh-hant%2Fdownload%2Ffile%2Ffid%2F9952",
+      "title": "臺北市立明德國中自然與生活科技科九上補考題庫",
+      "year": "113",
+      "locator": "扳手施力方向、力矩與簡單機械題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "固定力的大小與方向，只比較支點到作用線的垂直距離。",
+  "solutionSteps": [
+    "確認鉸鏈是支點。",
+    "確認兩次施力大小和方向相同。",
+    "比較 0.20 m 與 0.80 m 力臂。",
+    "用力矩公式判斷遠處力矩較大。",
+    "所以選 B。"
+  ]
 }

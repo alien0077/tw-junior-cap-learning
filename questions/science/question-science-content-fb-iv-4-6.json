@@ -2,41 +2,67 @@
   "id": "question-science-content-fb-iv-4-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年11月2日自然科教室的觀察中，連續一個月在相同時間觀察月面亮部變化，研究「Fb-Ⅳ-4：月相變化的規律」時，最能支持哪項結論？",
+  "prompt": "小組用手電筒、白球和觀察點做月相模型，想檢查『改變月球位置會改變地球看到的亮面』。哪一種操作最能隔離這項關係？",
   "options": [
     {
       "id": "A",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 6 組、4 月觀察中，月相是由日、地、月相對位置改變造成的視覺變化"
+      "text": "固定手電筒和觀察點，只沿圓周移動白球並逐站記錄可見亮面"
     },
     {
       "id": "B",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 6 組、4 月觀察中，月亮本身每天產生不同亮度"
-    },
-    {
-      "id": "C",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 6 組、4 月觀察中，月相完全由雲量決定"
+      "text": "移動白球時也同步移動手電筒，讓光線一直從同一側照射觀察點"
     },
     {
       "id": "D",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 6 組、4 月觀察中，月亮只在滿月時才存在"
+      "text": "每換一站就改變手電筒亮度，再比較球面明暗"
+    },
+    {
+      "id": "C",
+      "text": "固定白球位置，只讓觀察者繞著桌面走動，並把結果當成月球公轉"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-fb-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "月球反射太陽光，日、地、月相對位置改變會造成可規律觀察的月相。 本題對應 KG「Fb-Ⅳ-4：月相變化的規律」。"
+    "explanation": "只改變月球模型的位置並固定光源與觀察點，才能把可見亮面差異連到日月地相對位置；同時改變光源或觀察位置會混入其他變因。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的月相、日月地模型與觀測資料能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Fb-Ⅳ-4 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fb-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-fb-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "月相、日月地運動與天文觀測資料判讀",
+      "pattern": "取由日月地相對位置、觀測時間與週期資料推論月相變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由日月地相對位置、觀測時間與週期資料推論月相變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用控制變因檢查模型：固定光向和觀察點，只改月球位置，再記錄可見亮面。",
+  "solutionSteps": [
+    "先確認要測的結果是地球觀察者看見的月面亮暗比例。",
+    "列出可能干擾的因素：光源方向、觀察點和月球位置。",
+    "固定光源方向與觀察點，只移動代表月球的白球。",
+    "每到一站都從觀察點檢查亮面，而不是比較燈光強弱。",
+    "選 A，因為一次只改變月球位置，才能檢查位置與月相的關係。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

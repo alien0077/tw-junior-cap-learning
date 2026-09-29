@@ -1,0 +1,77 @@
+{
+  "id": "question-chinese-content-ab-iv-4-10",
+  "subject": "chinese",
+  "type": "single-choice",
+  "prompt": "若題目只給一個多音字，沒有詞語、句子或注音資料，最妥當的判斷是什麼？",
+  "options": [
+    {
+      "id": "A",
+      "text": "直接選最常見的讀音並當成唯一答案。"
+    },
+    {
+      "id": "B",
+      "text": "只依部首就能判定所有讀法。"
+    },
+    {
+      "id": "C",
+      "text": "先標記語境不足，要求補充詞語或查可靠字典。"
+    },
+    {
+      "id": "D",
+      "text": "同一字在所有詞中都只能讀一種音。"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-chinese-content-ab-iv-4"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "C",
+    "explanation": "多音字必須放回完整詞語或語境判讀，單獨一字不足以唯一決定讀音；應補證或查證。"
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究多音字、詞語讀音與語境判讀的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫多音字題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ab-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字音與多音字辨識",
+      "observedPattern": "公立學校國文評量常以多音字置於詞語或句子中，要求依語境判讀；本題使用新詞語與新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "多音字與語境判讀",
+      "observedPattern": "公立學校國文評量常以多音字置於詞語或句子中，要求依語境判讀；本題使用新詞語與新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把『資料不足』當成判讀結果的一部分，先提出候選，再要求可追溯的語境證據。",
+  "solutionSteps": [
+    "確認題目只有單字，缺少能限制義項和讀音的材料。",
+    "列出可能讀音但不把最熟悉者直接升格為答案。",
+    "C 清楚指出要補足語境或使用可靠工具。",
+    "A、B、D 都忽略多音字的條件差異，屬於過度推論。",
+    "指定下一步要查的詞語、句子或字典項目，讓判斷可被重做。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
+}

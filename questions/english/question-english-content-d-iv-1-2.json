@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-1-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-1／綜合資訊推論」task, what is the best way to prepare question 2?",
+  "prompt": "Mia prefers quiet activities. The club guide describes painting as quiet; a table lists painting in Room 1 and basketball outdoors, both at 2 p.m. Which activity best fits her preference and the schedule?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-1／綜合資訊推論."
+      "text": "Painting in Room 1 at 2 p.m."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-1／綜合資訊推論."
+      "text": "Basketball outdoors at 2 p.m."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-1／綜合資訊推論."
+      "text": "Painting at 3 p.m., although the table lists no 3 p.m. session."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-1／綜合資訊推論."
+      "text": "Both activities are described as quiet."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-1／綜合資訊推論, question 2."
+    "explanation": "A 段落說繪畫屬安靜活動，表格列明它在下午兩點的第一教室舉行，符合偏好與時間。 Correct answer: A"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+    "sourceLocator": "PDF第3頁第34題；根據段落線索推論適合選項；僅取閱讀整合與推論能力型態，不複製原題內容。",
+    "authoringNote": "依官方英語課綱D-Ⅳ-1與KG獨立創作綜合資訊推論題，參照內湖國中公立英語段考相關題型；未複製原卷題文、選項或答案。待AI內容審查；依使用者指示不安排Terra審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-content-d-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+      "title": "臺北市立內湖國中113學年度第2學期八年級第1次段考英語科",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF第3頁第34題；根據段落線索推論適合選項",
+      "observedPattern": "僅參照公立國中英語試題的地圖定位、時間／條件整合或文本證據推論能力；本題情境、數據、選項與答案獨立創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把學生偏好、活動描述與表格中的時段地點交叉核對，不能用未提供的假設補空。",
+  "solutionSteps": [
+    "段落給出 Mia 喜歡安靜活動，club guide 說 painting 是安靜活動。",
+    "表格列 painting 在2:00、Room 1；basketball 也在2:00但在戶外。",
+    "因此 painting 同時符合活動性質與已列時段地點。",
+    "不能推斷籃球安靜，也不能自行加出表格沒有的3:00場次。",
+    "答案 A；把偏好文字和表格資訊逐項配對。"
+  ]
 }

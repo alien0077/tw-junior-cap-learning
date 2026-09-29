@@ -2,23 +2,23 @@
   "id": "question-social-content-civ-bi-iv-3-7",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2021年5月3日地方政府公開資料的資料中，針對「公 Bi-Ⅳ-3：警察檢察官法官功能權限」的公共政策，若限制人民權利，哪項程序最符合權利保障？",
+  "prompt": "被害人需要避免與被告直接接觸並了解案件進度。司法機關可以如何兼顧？",
   "options": [
     {
       "id": "A",
-      "text": "只要多數人支持就可無限期限制"
+      "text": "提供安全措施、程序資訊與適當陳述機會，同時維持被告公平審判與辯護權"
     },
     {
       "id": "B",
-      "text": "政策名稱簡短即可不必說明依據"
+      "text": "只要保護被害人，就可不告知被告指控內容或取消辯護程序"
     },
     {
       "id": "C",
-      "text": "只公布支持意見而不提供申訴方式"
+      "text": "被害人想要重刑就能直接決定法院判決"
     },
     {
       "id": "D",
-      "text": "針對「公 Bi-Ⅳ-3：警察檢察官法官功能權限」具法律依據、目的正當且符合必要與比例原則，並提供救濟途徑"
+      "text": "為了公平，司法機關應完全不讓被害人知道任何案件進度"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "權利限制須有法律依據，並符合必要、比例及可救濟等法治要求。 本題對應 KG「公 Bi-Ⅳ-3：警察檢察官法官功能權限」。"
+    "value": "A",
+    "explanation": "刑事程序要同時看被害人安全與被告公平審判，不能用一方權利完全消滅另一方。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf",
+    "sourceLocator": "國立卓蘭高中附設國中部公開社會課程計畫；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫警察偵查、檢察官功能、法官審判、權力分工、無罪推定、證據能力、被害人保護、司法獨立、程序期限及多重資料；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-civ-bi-iv-3"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-civ-bi-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "司法機關、證據與人權推理",
+      "observedPattern": "公立學校社會科公開試題常以刑事程序、機關分工、證據與多重資料考查公民推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "刑事程序、權限與多重資料",
+      "observedPattern": "公立學校社會科公開試題常以刑事程序、機關分工、證據與多重資料考查公民推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認每個司法機關的功能，再依時間線檢查證據、程序、辯護與救濟，最後分開起訴主張、媒體報導與法院確定判決。",
+  "solutionSteps": [
+    "讀題定位：圈出「被害人保護」與警察、檢察官、法官、證據、辯護或被害人線索。",
+    "整理證據：分開偵查、追訴、審判、程序權利、證據取得與資料限制；本題核心是「刑事程序要同時看被害人安全與被告公平審判，不能用一方權利完全消滅另一方。」。",
+    "核對正解：選項 A「提供安全措施、程序資訊與適當陳述機會，同時維持被告公平審判與辯護權」能回應題幹的刑事程序與權限判讀。",
+    "排除誘答：檢查是否把報案、懷疑、起訴、新聞標題或單一口供直接當成有罪判決。",
+    "結論回查：確認答案同時顧及機關分工、無罪推定、證據程序、辯護、被害人與司法獨立。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

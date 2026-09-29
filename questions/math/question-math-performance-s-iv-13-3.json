@@ -2,7 +2,7 @@
   "id": "question-math-performance-s-iv-13-3",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "作已知線段的垂直平分線，交點連線與原線段的夾角為何？",
+  "prompt": "用尺規作出線段 AB 的垂直平分線後，兩個圓弧交點的連線與 AB 的夾角為何？",
   "options": [
     {
       "id": "A",
@@ -10,7 +10,7 @@
     },
     {
       "id": "B",
-      "text": "45°"
+      "text": "60°"
     },
     {
       "id": "C",
@@ -27,16 +27,59 @@
   "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "垂直平分線與原線段互相垂直，夾角為 90°。"
+    "explanation": "兩交點都到 A、B 等距，連線是 AB 的垂直平分線，因此與 AB 垂直，夾角為 90°，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考數學科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "以數學概念、全新數值與解析獨立撰寫；公開試題僅作題型研究。待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供尺規作圖、等距軌跡與圓幾何能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的尺規作圖方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-performance-s-iv-13"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-13",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "尺規作圖、垂直平分線、角平分線、等距軌跡、複製角、圓弧交點與圓心連線",
+      "observedPattern": "公開數學評量常要求判斷尺規作圖的操作順序與圓規保距作用，並把作圖結果連結到垂直平分線、角平分線及兩圓交點的幾何性質；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "尺規作圖、垂直平分線、角平分線、等距軌跡、複製角、圓弧交點與圓心連線",
+      "observedPattern": "公開數學評量常要求判斷尺規作圖的操作順序與圓規保距作用，並把作圖結果連結到垂直平分線、角平分線及兩圓交點的幾何性質；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "尺規作圖、垂直平分線、角平分線、等距軌跡、複製角、圓弧交點與圓心連線",
+      "observedPattern": "公開數學評量常要求判斷尺規作圖的操作順序與圓規保距作用，並把作圖結果連結到垂直平分線、角平分線及兩圓交點的幾何性質；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用等距判斷作圖線是垂直平分線，再讀取垂直角。",
+  "solutionSteps": [
+    "兩個圓弧交點分別到 A、B 等距。",
+    "連接兩交點形成等距點軌跡。",
+    "等距點軌跡是 AB 的垂直平分線。",
+    "垂直平分線與 AB 互相垂直。",
+    "所以夾角為 90°，選 C。"
+  ]
 }

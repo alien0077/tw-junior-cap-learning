@@ -2,41 +2,87 @@
   "id": "question-science-content-md-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年1月18日河川觀測站的觀察中，針對「Md：天然災害與防治」提出可檢驗的科學問題，若比較 3 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "若兩社區遭遇相同豪雨，但甲區排水好、建物耐震且人口少，乙區排水差且位於坡腳；比較風險時應如何？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Md：天然災害與防治」時只改變水溫，其餘條件一致，設置3組、每組取樣15份並各重複測量4次"
+      "text": "乙區可能較高，因暴露與脆弱度不同，不能只比較降雨強度"
     },
     {
       "id": "B",
-      "text": "研究「Md：天然災害與防治」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "兩區風險必相同，因雨量相同"
     },
     {
       "id": "C",
-      "text": "研究「Md：天然災害與防治」時只測量3組中的一組就直接下結論"
+      "text": "甲區一定零風險"
     },
     {
       "id": "D",
-      "text": "研究「Md：天然災害與防治」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "只看人口即可決定全部風險"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-md"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Md：天然災害與防治」。"
+    "explanation": "相同致災因子下，排水、坡腳地形、建物與人口等暴露及脆弱度會使風險不同；不能只看雨量。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的地震、颱風、豪雨、地形、風險資料與防治能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-md"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-md",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "地震、氣象、災害資料與防治判讀",
+      "pattern": "取公開自然科評量以自然作用、時間空間資料、災害影響與安全行動推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開自然科評量以自然作用、時間空間資料、災害影響與安全行動推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "地震、雨量、地形、風險與資料判讀",
+      "pattern": "取公開會考以圖表、測量尺度、因果限制和生活防災情境判讀的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、測量尺度、因果限制和生活防災情境判讀的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "天然災害、地震、豪雨、地形與防災措施",
+      "pattern": "取公立國中試題以成因、影響、監測資料和防治行動進行安全推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以成因、影響、監測資料和防治行動進行安全推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "固定自然作用後比較暴露、脆弱度和防護能力。",
+  "solutionSteps": [
+    "圈出災害類型、測量位置、時間與暴露對象。",
+    "分開自然作用、脆弱度和防護條件。",
+    "用雨量、震度、地形或警報資料推論風險。",
+    "排除把名稱、單一照片或平均值當完整證據。",
+    "選擇安全、可執行且有觸發條件的行動。"
+  ]
 }

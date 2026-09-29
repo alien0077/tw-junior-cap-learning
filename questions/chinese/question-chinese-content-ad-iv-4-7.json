@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-iv-4-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一則故事描述人物因只聽片面消息而做出錯誤決定，結尾才發現真相。最適合歸納的寓意為何？",
+  "prompt": "某古文人物聽見警告卻沒有查證，選擇立刻行動，結果造成損失；若要概括文本教訓，最重要的證據是？",
   "options": [
     {
       "id": "A",
-      "text": "判斷事情前應查明資訊"
+      "text": "人物的衣著描寫。"
     },
     {
       "id": "B",
-      "text": "消息越快越可靠"
+      "text": "警告、未查證、行動與損失之間的因果鏈。"
     },
     {
       "id": "C",
-      "text": "只要自信就不會犯錯"
+      "text": "文章的標題長度。"
     },
     {
       "id": "D",
-      "text": "所有傳聞都是真實"
+      "text": "故事發生的季節。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "故事以錯誤決定提醒讀者先查證資訊再下判斷。"
+    "value": "B",
+    "explanation": "人物忽略查證後行動並造成損失，這條事件因果鏈直接支持對查證與審慎行動的教訓。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "寓言情節與寓意判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究非韻文古文、古典小說、語錄、寓言的形式證據、古今義與寓意界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫古典非韻文與寓意題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-4"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古文、語錄與寓意理解",
+      "observedPattern": "公立學校國文評量要求從對話、敘事、人物行動、古今詞義與結尾教訓判讀非韻文體式與寓意；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古典文本與人物判讀",
+      "observedPattern": "公立學校國文評量要求從對話、敘事、人物行動、古今詞義與結尾教訓判讀非韻文體式與寓意；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把教訓連回具體事件，不用與結果無關的外貌、標題或背景取代因果證據。",
+  "solutionSteps": [
+    "排列警告、未查證、立刻行動與損失四個節點。",
+    "確認損失是由人物的決策鏈呈現，而不是由季節或外貌造成。",
+    "B 指出能支持教訓的核心證據。",
+    "A、C、D 都沒有連到人物行動與結果。",
+    "將事件改寫成『先查證再行動』，核對教訓是否由原故事推出。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-math-performance-a-iv-4-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "2 枝相同原子筆與 3 本相同筆記本共 96 元；1 枝原子筆與 1 本筆記本共 37 元。1 枝原子筆多少元？",
+  "prompt": "聯立方程式 x+2y=8、2x-y=1 的解為何？",
   "options": [
     {
       "id": "A",
-      "text": "22 元"
+      "text": "(1,4)"
     },
     {
       "id": "B",
-      "text": "18 元"
+      "text": "(2,3)"
     },
     {
       "id": "C",
-      "text": "12 元"
+      "text": "(3,2)"
     },
     {
       "id": "D",
-      "text": "15 元"
+      "text": "(4,1)"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "設筆價 x、筆記本 y，2x＋3y＝96、x＋y＝37；由 x＝37－y 代入得 y＝22，故 x＝15。"
+    "value": "B",
+    "explanation": "第一式乘 2 得 2x+4y=16，減去第二式得 5y=15，所以 y=3、x=2，正確答案為 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考代入法、消去法、交點、票券價格與數量情境題型；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "二元一次聯立單元實質改寫；已重新解聯立方程式並核對代回結果，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供二元一次聯立方程式能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的聯立方程式解題方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-a-iv-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-a-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "二元一次聯立方程式的代入／消去、文字情境建模、唯一解、無解、無限多解與圖形交點；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把兩個未知量放入總量、價格、幾何或圖形交點情境，要求列出兩個條件並檢查共同解；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "二元一次聯立方程式的代入／消去、文字情境建模、唯一解、無解、無限多解與圖形交點；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把兩個未知量放入總量、價格、幾何或圖形交點情境，要求列出兩個條件並檢查共同解；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "二元一次聯立方程式的代入／消去、文字情境建模、唯一解、無解、無限多解與圖形交點；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把兩個未知量放入總量、價格、幾何或圖形交點情境，要求列出兩個條件並檢查共同解；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將一式乘倍數製造相同的 x 係數，再相減消元。",
+  "solutionSteps": [
+    "把 x+2y=8 乘以 2，得 2x+4y=16。",
+    "用新式減去 2x-y=1，得到 5y=15。",
+    "求得 y=3。",
+    "代回 x+2(3)=8，得到 x=2。",
+    "所以選 B。"
+  ]
 }

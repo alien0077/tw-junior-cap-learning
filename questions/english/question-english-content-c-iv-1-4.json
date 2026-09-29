@@ -2,23 +2,23 @@
   "id": "question-english-content-c-iv-1-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「C-Ⅳ-1／國內外節慶」lesson, which action shows respect when people have different customs about gift giving during winter?",
+  "prompt": "The festival schedule lists a 10:00 a.m. craft session, a noon meal, and a dance performance at 2:00 p.m. A visitor arrives at 1:30 p.m. Which listed activity can the visitor still attend?",
   "options": [
     {
       "id": "A",
-      "text": "In question 4, ask politely and follow the local rule about gift giving during winter in the C-Ⅳ-1／國內外節慶 lesson."
+      "text": "The craft session, which has already ended."
     },
     {
       "id": "B",
-      "text": "In question 4, say every custom about gift giving during winter in the C-Ⅳ-1／國內外節慶 lesson must be exactly the same as mine."
+      "text": "The noon meal, which has already ended."
     },
     {
       "id": "C",
-      "text": "In question 4, ignore the people involved in gift giving during winter in the C-Ⅳ-1／國內外節慶 lesson."
+      "text": "The dance performance at 2:00 p.m."
     },
     {
       "id": "D",
-      "text": "In question 4, laugh at a different way of handling gift giving during winter in the C-Ⅳ-1／國內外節慶 lesson."
+      "text": "A fireworks show at midnight."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "Respect means learning the local practice, asking politely, and avoiding unfair judgment. This item targets C-Ⅳ-1／國內外節慶, question 4."
+    "value": "C",
+    "explanation": "訪客 1:30 抵達時，前兩項已過；表上下一項是 2:00 的舞蹈表演，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度第 2 學期英文段考；研究國內外節慶的時間、活動、意義、歷史脈絡與文化比較；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E8%8B%B1%E6%96%87.pdf",
+    "sourceLocator": "PDF第5至6頁第29至33題；原住民族節慶短文、日期資料表與跨欄資訊整合",
+    "authoringNote": "由官方課綱概念與多份公立學校英語段考的節慶閱讀命題型態啟發，題幹、情境、選項、答案與解析均獨立撰寫；來源僅作 pattern-only 參照，不重製原卷內容。內容與授權審查未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-c-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-content-c-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立國昌國民中學113學年度第2學期八年級第1次段考英語科試題",
+      "year": "113",
+      "subject": "english",
+      "locator": "PDF第5至6頁第29至33題；原住民族節慶短文、日期資料表與跨欄資訊整合",
+      "observedPattern": "參照以節慶短文與日期表讀取習俗、目的、日期區間並整合表格資料的能力；新題不重用原試題素材。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "用抵達時間和活動開始時間排序，排除已結束及表中沒有的活動。",
+  "solutionSteps": [
+    "先把抵達時間記為下午 1:30。",
+    "比較三項行程：手作 10:00、午餐 12:00、舞蹈 2:00。",
+    "10:00 和 12:00 都早於抵達時間，不能再參加。",
+    "2:00 晚於抵達時間，且確實列在節目表中。",
+    "答案是 C。不能因為某活動常見於節慶，就自行補入未列出的煙火。"
+  ]
 }

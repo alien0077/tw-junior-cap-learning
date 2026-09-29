@@ -2,23 +2,23 @@
   "id": "question-chinese-content-cb-iv-1-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀傳統制度與現代生活的比較文章時，哪項結論較為周延？",
+  "prompt": "閱讀『制度能讓所有人公平』這句話時，哪項追問最有助於判斷它是否成立？",
   "options": [
     {
       "id": "A",
-      "text": "理解歷史功能，也檢視今日平等與權利的需求"
+      "text": "公平兩字是否聽起來正面"
     },
     {
       "id": "B",
-      "text": "只注意單一細節"
+      "text": "只要制度寫成文字就一定公平"
     },
     {
       "id": "C",
-      "text": "把無關資訊當成重點"
+      "text": "制度的對象、程序、例外與實際結果如何，是否讓不同處境的人都能使用權利"
     },
     {
       "id": "D",
-      "text": "不考慮讀者或情境"
+      "text": "只問制定者是否喜歡這項制度"
     }
   ],
   "knowledgeIds": [
@@ -26,14 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "周延的比較同時說明傳統制度的歷史功能與現代價值的差異。"
+    "value": "C",
+    "explanation": "公平不能只靠正面詞語或書面存在判定，必須看適用對象、程序、例外與不同處境者的實際結果。"
   },
   "provenance": {
     "origin": "original",
-    "license": "All rights reserved", "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf", "sourceLocator": "傳統制度與現代價值；獨立命題", "authoringNote": "獨立改編，非原題重製"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究親屬、倫理、儀式、制度角色與史料範圍。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫親屬倫理與制度文化文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-cb-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-cb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "親屬、規範與文本判讀",
+      "observedPattern": "公立學校國文評量要求判讀親屬關係、倫理選擇、儀式功能、制度規範、角色責任與證據界線；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "倫理情境、角色與因果",
+      "observedPattern": "公立學校國文評量要求判讀親屬關係、倫理選擇、儀式功能、制度規範、角色責任與證據界線；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把抽象倫理判斷拆成制度設計和實際效果的可檢查問題。",
+  "solutionSteps": [
+    "圈出『所有人』和『公平』的範圍。",
+    "確認制度對象與申請程序。",
+    "檢查例外和不同處境者的結果。",
+    "C 能把價值主張轉成檢核架構。",
+    "提出一個需要蒐集的實際使用資料。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

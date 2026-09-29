@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bb-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "博物館同時展示器物與製作工具，並說明使用者的生活情境。這樣安排有何好處？（單元練習：content-bb）",
+  "prompt": "短文：「我對弟弟說別怕，掛掉電話後卻一直看著門口。」下列解讀最完整？",
   "options": [
     {
       "id": "A",
-      "text": "幫助觀眾理解器物與生活的關聯"
+      "text": "說話者完全不擔心弟弟，門口只是背景"
     },
     {
       "id": "B",
-      "text": "只增加展品數量"
+      "text": "說話者對弟弟表達安慰，同時由反覆看門口的行動顯示自己也在等待或不安"
     },
     {
       "id": "C",
-      "text": "避免觀眾提出問題"
+      "text": "說話者一定知道弟弟已經安全到家"
     },
     {
       "id": "D",
-      "text": "證明所有器物用途相同（本題資料組：content-bb）"
+      "text": "『別怕』必然是作者對讀者下達的命令"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "工具與情境能補足器物的文化意義。"
+    "value": "B",
+    "explanation": "對弟弟的語言是直接安慰，掛電話後看門口則是間接線索；兩條線並置呈現說話者一面安撫、一面不安，不能補造結果。"
   },
   "provenance": {
     "origin": "original",
-    "license": "依法令舉行考試試題之公開使用；本筆保留題目來源與答案註記",
-    "sourceUrl": "https://kaonow.com/paper/cap-111-chinese/",
-    "sourceLocator": "114／112／111 年國中教育會考國文科公開題型研究；僅作能力方向參考，非原題重製。",
-    "authoringNote": "依公開會考能力方向獨立重寫；未複製原試題文字、選項、文章、圖片或答案。待第二輪 AI／Terra 內容複核。"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編抒情閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-chinese-content-bb"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "抒情、修辭與閱讀理解",
+      "observedPattern": "公立學校國文公開試題常以抒情方式、人物觀點、事件景物、語氣與文本推論檢查閱讀理解；本題整合直接與間接抒情重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "情感表達、語氣與文本觀點",
+      "observedPattern": "公立學校國文公開試題常以抒情方式、人物觀點、事件景物、語氣與文本推論檢查閱讀理解；本題整合直接與間接抒情重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認說話者與情感對象，再判斷感受是直接說出或由事件、景物、物件間接浮現；最後以多條證據交叉核對語氣與推論界線。",
+  "solutionSteps": [
+    "讀題定位：圈出「說話者與對象」與說話者、情感對象、事件、景物、物件及前後轉折。",
+    "建立情感證據鏈：分辨明示感受與間接線索，檢查語氣強度、情感路徑和篇章位置是否相互支持；本題核心是「對弟弟的語言是直接安慰，掛電話後看門口則是間接線索；兩條線並置呈現說話者一面安撫、一面不安，不能補造結果。」",
+    "核對正解：選項 A「說話者對弟弟表達安慰，同時由反覆看門口的行動顯示自己也在等待或不安」能整合文本多條線索，且不把推論誇大成作者或人物未說出的事實。",
+    "排除誘答：檢查是否只抓情緒詞、把景物固定象徵、把角色聲音當作者立場，或用過強語氣超過事件證據。",
+    "結論回查：以『誰對誰、由何事／何物、用哪種路徑表達、能推到哪裡』重讀全文，明確保留未知範圍。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

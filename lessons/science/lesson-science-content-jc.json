@@ -49,7 +49,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "讓學習者拖動電子與氧化數標記，觀察氧化、還原、氧化劑、還原劑四個角色如何同時改變。",
@@ -101,6 +101,17 @@
         ],
         "answer": "A",
         "feedback": "電子守恆是合併半反應與檢查氧化還原的關鍵。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "Fe 與 Cu²⁺ 反應後，若要確認誰是還原劑、誰是氧化劑，應如何整理？",
+        "options": [
+          "Fe 失電子被氧化，是還原劑；Cu²⁺ 得電子被還原，是氧化劑，再用半反應和電荷守恆核對",
+          "Fe 得電子所以是氧化劑，Cu²⁺ 失電子所以是還原劑",
+          "只看溶液顏色，不必判斷電子轉移"
+        ],
+        "answer": "A",
+        "feedback": "還原劑提供電子、自己被氧化；氧化劑接受電子、自己被還原。角色要由半反應與守恆證據支持。"
       }
     ]
   },
@@ -108,45 +119,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Jc：氧化與還原反應；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Jc：氧化與還原反應 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「氧化與還原反應」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Jc：氧化與還原反應」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Jc：氧化與還原反應 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Jc：氧化與還原反應」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與公開資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "九年級化學反應與氧化還原相關單元；公開資料僅作單元定位與能力方向",
-      "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Jc：氧化與還原反應 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "比較由反應現象進入物質變化、守恆與生活應用的順序；本課融合為氧元素、氧化數與電子三種可互相驗證的表徵。",
-      "copyrightBoundary": "只採公開課程定位與教學方向；正文、例題、圖像、題目與答案皆為本課原創，不複製教科書或教師用書。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林版國中自然公開產品資訊與課程索引",
-      "subject": "science",
-      "chapterLocator": "九年級化學變化、氧化還原與能源應用方向；逐頁課本未公開",
-      "sourceUrl": "https://books.hanlin.com.tw/productall",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "比較以粒子變化、反應證據與生活科技應用相連的取向；本課另以金屬置換、腐蝕與電池重新設計推理活動。",
-      "copyrightBoundary": "只作公開產品結構與單元方向研究；不複製課文、插圖、習題、答案或教用內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Jc：氧化與還原反應」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -155,8 +176,25 @@
       "edition": "南一版國中自然公開課程計畫與公開資源",
       "sourceType": "public-web",
       "sourceLocator": "https://stv.naer.edu.tw/teaching/course_outline.jsp；九年級化學反應與氧化還原相關定位；未取得完整出版社課本頁面",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["以反應現象、物質變化與守恆建立化學反應理解。", "氧化還原可連結氧元素變化與生活中的腐蝕、能源。"], "representations": ["宏觀現象、粒子／離子變化、方程式與守恆檢查。"], "examplesOrEvidence": ["公開課程方向支持反應證據與守恆；本課自編 Fe/Cu²⁺、CuO/C 與防鏽情境。"], "misconceptions": ["把氧化限定為一定有氧氣，或把氧化劑誤當成被氧化者。"], "assessmentEmphasis": ["由氧化數、電子得失與原子電荷守恆交叉判讀。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "以反應現象、物質變化與守恆建立化學反應理解。",
+          "氧化還原可連結氧元素變化與生活中的腐蝕、能源。"
+        ],
+        "representations": [
+          "宏觀現象、粒子／離子變化、方程式與守恆檢查。"
+        ],
+        "examplesOrEvidence": [
+          "公開課程方向支持反應證據與守恆；本課自編 Fe/Cu²⁺、CuO/C 與防鏽情境。"
+        ],
+        "misconceptions": [
+          "把氧化限定為一定有氧氣，或把氧化劑誤當成被氧化者。"
+        ],
+        "assessmentEmphasis": [
+          "由氧化數、電子得失與原子電荷守恆交叉判讀。"
+        ]
+      },
       "licenseBoundary": "只採公開課程定位、方向與可追溯範圍；不複製受保護教材內容，也不以公開索引宣稱取得完整出版社課本。"
     },
     {
@@ -164,8 +202,25 @@
       "edition": "康軒版國中自然公開影音與課程資源",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；九年級化學反應相關公開資源定位；未取得完整課本頁面",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["由可觀察變化進入物質組成、反應與生活應用。", "氧化還原能用於說明金屬變化、腐蝕與能源轉換。"], "representations": ["反應式、離子式、氧化數帳本、半反應與電子路徑。"], "examplesOrEvidence": ["公開資源提供章節與活動方向；本課自編三欄判讀法與電子模型。"], "misconceptions": ["只憑顏色或氣泡判斷氧化，忽略電子與守恆。"], "assessmentEmphasis": ["說明反應物角色、電子來源與去向，並檢查方程式。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "由可觀察變化進入物質組成、反應與生活應用。",
+          "氧化還原能用於說明金屬變化、腐蝕與能源轉換。"
+        ],
+        "representations": [
+          "反應式、離子式、氧化數帳本、半反應與電子路徑。"
+        ],
+        "examplesOrEvidence": [
+          "公開資源提供章節與活動方向；本課自編三欄判讀法與電子模型。"
+        ],
+        "misconceptions": [
+          "只憑顏色或氣泡判斷氧化，忽略電子與守恆。"
+        ],
+        "assessmentEmphasis": [
+          "說明反應物角色、電子來源與去向，並檢查方程式。"
+        ]
+      },
       "licenseBoundary": "只研究公開資源的 metadata、章節定位與教學方向；不複製影音、圖片、題目或答案。"
     },
     {
@@ -173,12 +228,44 @@
       "edition": "翰林版國中自然公開產品資訊與課程索引",
       "sourceType": "public-web",
       "sourceLocator": "https://books.hanlin.com.tw/productall；化學變化、氧化還原與能源應用方向；逐課內容有限",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["把化學反應的微觀模型與生活科技情境相連。", "以證據、模型與守恆檢查解釋，而非只記憶名詞。"], "representations": ["氧化數、半反應、電子流、腐蝕區域與電池外電路。"], "examplesOrEvidence": ["公開產品資訊支持情境化與圖像模型方向；本課自行設計金屬置換和電池遷移活動。"], "misconceptions": ["把氧化數當成所有原子的實際電荷，或混淆氧化劑與還原劑。"], "assessmentEmphasis": ["能用兩種以上表徵互相核對，提出條件清楚的結論。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "把化學反應的微觀模型與生活科技情境相連。",
+          "以證據、模型與守恆檢查解釋，而非只記憶名詞。"
+        ],
+        "representations": [
+          "氧化數、半反應、電子流、腐蝕區域與電池外電路。"
+        ],
+        "examplesOrEvidence": [
+          "公開產品資訊支持情境化與圖像模型方向；本課自行設計金屬置換和電池遷移活動。"
+        ],
+        "misconceptions": [
+          "把氧化數當成所有原子的實際電荷，或混淆氧化劑與還原劑。"
+        ],
+        "assessmentEmphasis": [
+          "能用兩種以上表徵互相核對，提出條件清楚的結論。"
+        ]
+      },
       "licenseBoundary": "只作公開產品結構與單元方向研究；不複製課文、插圖、練習、答案或教用內容。"
     }
   ],
-  "fusionRecord": {"commonCore": ["三家版本皆把氧化還原放在化學反應、物質變化與守恆的脈絡中理解。", "教材方向都需要學生由反應現象連到微觀粒子、方程式或生活應用。", "金屬變化、腐蝕與能源轉換可作為氧化還原的遷移情境。"], "versionDifferences": ["公開資料的入口有的偏重氧元素與現象，有的偏重粒子模型或生活科技連結；本課並列後再以電子作共同核心。", "公開資源可核對到的章節深度與活動細節不一致，完整課本頁面並未全部公開。"], "originalAdditions": ["自編 Fe/Cu²⁺ 半反應拆解與氧化劑、還原劑角色判讀。", "自編 CuO/C 氧得失與鐵鏽、防鏽、電池的概念遷移。", "自編電子帳本互動，讓電子數、氧化數與守恆檢查同步呈現。"], "llmSynthesisNote": "LLM 先依官方課綱與 kg-science-content-jc 確定氧化還原、守恆與生活應用範圍，再讀取三家可公開取得的課程計畫、公開資源或產品索引，比較現象入口、概念順序、表徵、活動與評量方向，最後用自己的話為本單元重新組織完整教學；正文未複製出版社文字、圖片、習題或答案。"},
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開線索共同支持以得氧／失氧、電子轉移與氧化數升降描述氧化還原，並辨認氧化劑、還原劑及同一反應中的互補關係。",
+      "燃燒、生鏽、金屬置換、漂白與防鏽需用反應證據、控制條件和電子／氧化數模型相互檢驗。",
+      "公開版本線索可用來確認單元主題與常見情境，不能證明未取得頁面的例題編排；本課將氧元素轉移、電子得失和氧化數變化作為互相校對的表徵，並要求判定氧化劑接受電子、還原劑提供電子，避免只憑反應名稱分類。"
+    ],
+    "versionDifferences": [
+      "公立段考與會考公開題型提供得氧失氧、燃燒、生鏽、金屬置換與防鏽方向；康軒公開課程線索偏向電子模型、金屬活性、實驗證據與生活應用。公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以氧化銅還原、鋅銅置換、鐵鏽、金屬活性、氧化數、漂白與油漆防鏽建立根單元證據鏈。",
+      "把『看到顏色改變就一定是氧化還原』、『還原劑會被還原』與『防鏽等於消除電子』列為迷思診斷。",
+      "新增反應前後粒子圖與氧化數表雙重檢核：以氧化銅和鋅的反應追蹤銅離子得電子，以鐵生鏽比較氧與水條件，再讓學生判斷漂白及防鏽案例的證據是否足以支持氧化還原解釋，不由外觀變色直接跳到結論。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開自然科試題及課程資料的能力方向，重新撰寫得氧失氧、電子轉移、氧化數、氧化劑／還原劑、燃燒、生鏽、置換與防鏽。原有 10 題為泛用研究句型套題，已逐題改寫為氧化還原根單元專屬題，均具唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
+  },
   "teaching": {
     "body": [
       {
@@ -250,7 +337,42 @@
     "model": "general",
     "goal": "以安全探究步驟理解「氧化與還原反應」並用證據修正解釋。",
     "mission": "針對「Jc：氧化與還原反應」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"redox-electron-transfer","objective":"以氧化數、電子轉移與顏色或電流訊號辨識氧化還原反應。","predictionPrompt":"若一物質失去電子，另一物質必然發生什麼變化？如何用資料確認？","steps":[{"action":"標記反應物氧化數與可能電子去向","equation":"oxidation=loss-electrons"},{"action":"量測顏色、電流或質量變化並找對照","equation":"redox=electron-transfer"},{"action":"配平半反應並檢查電子與原子守恆","equation":"charge-before=charge-after"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以氧化數、電子轉移與顏色或電流訊號辨識氧化還原反應。",
+      "predictionPrompt": "若一物質失去電子，另一物質必然發生什麼變化？如何用資料確認？",
+      "steps": [
+        {
+          "action": "標記反應物氧化數與可能電子去向",
+          "equation": "oxidation=loss-electrons",
+          "id": "step-1",
+          "reason": "本步把「標記反應物氧化數與可能電子去向」和「oxidation=loss-electrons」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「標記反應物氧化數與可能電子去向」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "量測顏色、電流或質量變化並找對照",
+          "equation": "redox=electron-transfer",
+          "id": "step-2",
+          "reason": "本步把「量測顏色、電流或質量變化並找對照」和「redox=electron-transfer」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「量測顏色、電流或質量變化並找對照」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "配平半反應並檢查電子與原子守恆",
+          "equation": "charge-before=charge-after",
+          "id": "step-3",
+          "reason": "本步把「配平半反應並檢查電子與原子守恆」和「charge-before=charge-after」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「配平半反應並檢查電子與原子守恆」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "把氧化數、電子轉移者與顏色或電流訊號對照，標記氧化劑和還原劑角色",
+          "equation": "roles=electronDonor+electronAcceptor+conservation",
+          "id": "step-4",
+          "reason": "本步把「把氧化數、電子轉移者與顏色或電流訊號對照，標記氧化劑和還原劑角色」和「roles=electronDonor+electronAcceptor+conservation」連結，將符號模型與可觀察資料交叉核對，避免只用顏色猜角色。",
+          "feedback": "若角色判斷只依顏色或單一質量變化，請補回半反應、電子數和對照；觀察訊號是支持證據，不等於取代守恆檢查。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以氧化數、電子轉移與顏色或電流訊號辨識氧化還原反應。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

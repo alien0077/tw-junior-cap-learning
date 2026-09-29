@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-5-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with directions at the town museum?” B: “___” (「B-Ⅳ-5／人事時地物描述問答」practice, 9:00)",
+  "prompt": "At the science fair, **Mina displayed a model volcano beside the blue poster.** Who displayed the model volcano?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with directions at the town museum in the B-Ⅳ-5／人事時地物描述問答 practice."
+      "text": "Mina"
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the town museum in the B-Ⅳ-5／人事時地物描述問答 practice."
+      "text": "The science fair"
     },
     {
       "id": "C",
-      "text": "I was fourteen at the town museum last year in the B-Ⅳ-5／人事時地物描述問答 practice."
+      "text": "The blue poster"
     },
     {
       "id": "D",
-      "text": "No, the weather at the town museum is sunny in the B-Ⅳ-5／人事時地物描述問答 practice."
+      "text": "The model volcano"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,60 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about B-Ⅳ-5／人事時地物描述問答, item 1. This item targets B-Ⅳ-5／人事時地物描述問答, question 1."
+    "explanation": "The question asks who, so the answer must be the person doing the displaying: Mina."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度第 2 學期英文段考；研究 who、where、when、what、how、why 與 whose 問答；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立學校國中英語段考；只研究人物、物件、時間、地點、原因、方式與整合描述題型。",
+    "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫人事時地物描述問答題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-b-iv-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-english-content-b-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "who、what、when、where、why、how 情境題型",
+      "observedPattern": "公立學校英語評量以 who、what、when、where、why、how 擷取人物、物件、時間、地點、原因與方式，並要求將多項線索整合成完整描述；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級英語科試題卷",
+      "year": "114-2",
+      "subject": "english",
+      "locator": "校方附件「114-2-3-七年級英語試題卷.pdf」第3頁第46題",
+      "pattern": "原卷以 Who can join? 要求從文章條件辨認符合的人物；本題改為從單句主詞找出執行展示的人物。",
+      "observedPattern": "原卷以 Who can join? 要求從文章條件辨認符合的人物；本題改為從單句主詞找出執行展示的人物。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "英文資訊問句、描述與情境應用",
+      "observedPattern": "公立學校英語評量以 who、what、when、where、why、how 擷取人物、物件、時間、地點、原因與方式，並要求將多項線索整合成完整描述；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先圈出動作者，再把 who 限定為人物，不被物件或地點干擾。",
+  "solutionSteps": [
+    "Read the action displayed.",
+    "Ask who performed that action.",
+    "Locate Mina as the subject.",
+    "Choose Mina from the options.",
+    "Check that the answer is a person, not the poster or volcano."
+  ]
 }

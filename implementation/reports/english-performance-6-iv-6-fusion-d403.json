@@ -1,0 +1,42 @@
+{
+  "asOf": "2026-09-28",
+  "unit": "lesson-english-performance-6-iv-6",
+  "scope": "Complete one missing authored fusion manuscript by reconciling existing original lesson content, learner-visible teaching, accurate source boundaries, and the unit interaction contract; preserve prior registered manuscripts and all question data.",
+  "beforeAndAfter": {
+    "before": "The content.sections manuscript and four-step GuidedChoice already existed, but teaching.body still contained generic filler and the spec described an unrelated LanguageTimelineBlock; the unit was absent from the authored-fusion registry.",
+    "after": "Six original learner sections and teaching.body now match exactly; four answer/retry GuidedChoice steps remain aligned; spec now describes the actual component, tasks, misconceptions, transfer, accessibility and source limitations."
+  },
+  "curriculumAndFusionBasis": {
+    "officialIndicator": "6-Ⅳ-6: 主動從網路或其他課外材料搜尋相關英語文資源，並與教師及同學分享",
+    "knowledgeGraphId": "kg-english-performance-6-iv-6",
+    "officialLocator": "NAER English curriculum PDF, page 37 (printed indicator 6-Ⅳ-6).",
+    "nani": "Read Nani's public digital-resource entry and teacher resource-sharing/about pages. These show platform, ebook and teacher-resource entry points, not the assigned textbook chapter or student lesson for 6-Ⅳ-6.",
+    "kanghsuan": "Read Kang Hsuan's public junior-high English digital features and common classroom delivery descriptions, including media/game/QR and response features. These are public product features, not the assigned chapter pedagogy.",
+    "hanlin": "Read Hanlin editor's public English-resource guide and public vocabulary entry point. The guide organizes third-party resources by media, level, use and cost; it is not the assigned textbook chapter.",
+    "publicSchoolReference": "Read the public Hsui-Sui Junior High School two-session lesson plan, PDF pp.1-5, which explicitly cites 6-Ⅳ-6 and connects English resource search, original presentation, upload and Gallery Walk. This is school-authored, not publisher evidence.",
+    "claimBoundary": "The unit has curriculum/KG grounding and documented public publisher-associated resource portals; assigned chapter-level materials from the three publishers were not obtained. The lesson records the actual evidence boundary and does not claim a three-textbook chapter fusion."
+  },
+  "workCompleted": [
+    "Reconciled the six student-facing content sections with teaching.body, removing the generic filler that could have made the rendered learner page contradict the written manuscript.",
+    "Reworked unit specification from the nonexistent/mismatched LanguageTimelineBlock to GuidedChoiceBlock and a concrete search-screen-extract-paraphrase-attribute-share sequence.",
+    "Added unit-specific learning goals, prior knowledge, misconceptions, mobile/accessibility/fallback cases, transfer rubric and test cases; explicitly distinguishes public resource-index evidence from unavailable textbook chapters.",
+    "Added Node contract and Python Playwright regressions, registered npm scripts, and included the Node test in pretest.",
+    "Rebuilt and checked the learner site index so browser verification used current lesson data.",
+    "No question files were modified; no previously registered fusion manuscripts were rewritten; no content review was performed on behalf of the user's ChatGPT review."
+  ],
+  "verification": {
+    "targetRegression": "PASS: npm run test:english:6-iv-6.",
+    "fullNpmTest": "PASS: npm test; includes D-403 target contract and full workbench traversal 1,027/1,027.",
+    "browser": "PASS: actual page displayed six matching lesson sections and four GuidedChoice steps; keyboard wrong-answer feedback/retry and correct explanations passed; axe 0 violations/0 incomplete; widths 320/375/768 had no horizontal overflow; one external request was blocked; zero page errors.",
+    "playwrightRuntime": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3; Playwright 1.58.0; interpreter Chromium path resolved; browser runner succeeded in authorized environment. Sandboxed loopback connection was denied, while authorized curl confirmed 127.0.0.1:8765/site/index.html returned HTTP 200.",
+    "siteIndex": "PASS: rebuilt and checked; 1,052 lessons, 10,566 questions, 40 mapping sets.",
+    "dataValidation": "PASS before adding this report: 14,514 JSON files, 13,114 IDs, 1,032 KG nodes; all lessons/questions remain draft.",
+    "finalDataValidation": "PASS after adding this report: 14,515 JSON files, 13,114 IDs, 1,032 KG nodes.",
+    "implementationSpecs": "PASS: 1,027 specs, 0 errors, 15 eligible, 1,012 pending.",
+    "publicExamLedger": "Reused D-402 current read-only audit: 10,566/10,566 recorded, pending 0; 23,141 refs and all 281/281 question-source URLs covered by the catalog. No question records changed.",
+    "authoredFusionInventory": "737/791 = 93.17%; learning-content 583/583, learning-performance 154/208; 54 units remain unregistered. Registry is manuscript-presence only, not content review.",
+    "diffCheck": "PASS for the D-403 lesson, spec, tests, package configuration and generated site index."
+  },
+  "subtasks": "none",
+  "commitPush": "not performed; overall objective remains incomplete"
+}

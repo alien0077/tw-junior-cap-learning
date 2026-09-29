@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bb-iv-1-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "小組分工有人未完成任務，最合適的溝通方式為何？",
+  "prompt": "同一句『你現在方便聽我說一下嗎？』由剛認識的同學、親近好友和正在爭執的對方說出，感受可能不同。最合理的解釋是？",
   "options": [
     {
       "id": "A",
-      "text": "描述影響並共同討論補救方法"
+      "text": "字面完全相同，所以感受必然相同"
     },
     {
       "id": "B",
-      "text": "在全班面前羞辱對方"
+      "text": "語意只能由字典決定"
     },
     {
       "id": "C",
-      "text": "直接退出小組"
+      "text": "關係、先前事件與語氣會影響訊息的理解"
     },
     {
       "id": "D",
-      "text": "假裝問題不存在"
+      "text": "只要有問號就代表對方生氣"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bb-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "聚焦事實影響並討論補救，比指責更能解決問題。"
+    "value": "C",
+    "explanation": "相同字句放進不同關係、事件與語氣中，可能產生邀請、關心或防備等不同感受；理解不能脫離語境。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "自我與人際交流感受；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究對話感受、觀察／評價、具體請求、界線與關係修復。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫自我與人際交流題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "溝通情境、人物感受與語意推論",
+      "observedPattern": "公立學校國文評量要求辨識溝通者的感受、具體觀察、請求、語氣與證據限制；本題使用全新校園情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "對話語氣、觀點與關係修復",
+      "observedPattern": "公立學校國文評量要求辨識溝通者的感受、具體觀察、請求、語氣與證據限制；本題使用全新校園情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把固定字面和變動語境分開，比較說話者關係、前後事件與語氣。",
+  "solutionSteps": [
+    "確認三個情境使用相同文字。",
+    "列出關係與衝突狀態是變動條件。",
+    "C 能解釋為何感受不必相同。",
+    "A、B、D 都忽略語境或把符號直接等同情緒。",
+    "將同一句改成文字訊息與當面低聲說，觀察理解線索增加。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

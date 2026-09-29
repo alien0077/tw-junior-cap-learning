@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-12-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "作角平分線時，兩條以角兩邊交點為圓心的圓弧必須使用相同半徑，原因為何？",
+  "prompt": "為什麼只找到一個圓弧交點時，還不能完成垂直平分線？",
   "options": [
     {
       "id": "A",
-      "text": "使交點到兩邊等距"
+      "text": "一個點不能唯一決定直線"
     },
     {
       "id": "B",
-      "text": "使角度變成直角"
+      "text": "一個點一定不等距"
     },
     {
       "id": "C",
-      "text": "保證兩弧不相交"
+      "text": "交點必須在線段 AB 上"
     },
     {
       "id": "D",
-      "text": "使頂點移動"
+      "text": "圓弧不能用圓規畫"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "相同半徑配合兩個等距截點，才能找出同時到兩截點等距的角平分線點。"
+    "explanation": "單一點只能提供一個位置，無法唯一決定通過它的目標直線；需要第二個交點，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 尺規作圖與幾何推理 題型與官方課綱 KG kg-math-content-s-8-12",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供尺規作圖與幾何推理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的尺規作圖方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-8-12"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-12",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "尺規作圖、線段複製、角平分線、垂直平分線、等距點與作圖失敗診斷",
+      "observedPattern": "公開學校數學試題常以作圖步驟、圓規等距性、交點條件及幾何理由考查尺規作圖與推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "尺規作圖、線段複製、角平分線、垂直平分線、等距點與作圖失敗診斷",
+      "observedPattern": "公開學校數學試題常以作圖步驟、圓規等距性、交點條件及幾何理由考查尺規作圖與推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分『有一個等距點』與『確定整條等距點軌跡』。",
+  "solutionSteps": [
+    "一個交點 P 確實可滿足 PA=PB。",
+    "但通過 P 可畫出許多直線。",
+    "因此無法唯一確定垂直平分線。",
+    "需要另一個交點 Q 來決定 PQ。",
+    "選 A。"
+  ]
 }

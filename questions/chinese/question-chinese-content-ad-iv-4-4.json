@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-iv-4-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀寓言時，若動物的行為其實在影射人類社會，這種寫法主要有何作用？",
+  "prompt": "文章以第三人稱記錄某人任官、處理事件與後來的評語，並標出事件先後；閱讀時應特別注意？",
   "options": [
     {
       "id": "A",
-      "text": "藉故事委婉呈現道理"
+      "text": "事件順序、人物行動與後人評價如何互相支持。"
     },
     {
       "id": "B",
-      "text": "證明動物真的會說話"
+      "text": "只統計文章的字數。"
     },
     {
       "id": "C",
-      "text": "只為介紹動物習性"
+      "text": "把後來評語當成事件本身。"
     },
     {
       "id": "D",
-      "text": "避免故事產生寓意"
+      "text": "只看人物的官職，不看行動。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "寓言以虛構故事承載道理，能用間接方式引發思考。"
+    "explanation": "第三人稱記事與事件先後要求讀者對照人物行動、結果及後來評語，才能理解記錄與評價的關係。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "寓言寓意判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究非韻文古文、古典小說、語錄、寓言的形式證據、古今義與寓意界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫古典非韻文與寓意題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-4"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古文、語錄與寓意理解",
+      "observedPattern": "公立學校國文評量要求從對話、敘事、人物行動、古今詞義與結尾教訓判讀非韻文體式與寓意；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "古典文本與人物判讀",
+      "observedPattern": "公立學校國文評量要求從對話、敘事、人物行動、古今詞義與結尾教訓判讀非韻文體式與寓意；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開事件層和評論層，再以時間順序檢查評論是否回應前面的行動。",
+  "solutionSteps": [
+    "先標出任官與處理事件的時間線。",
+    "再圈出後來的評語，確認它是在評價哪些行動或結果。",
+    "A 能把敘事證據和評論層次連起來。",
+    "B、C、D 都刪去重要的時間、行動或評論關係。",
+    "用兩欄整理『發生什麼』與『如何評價』，避免混在一起。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

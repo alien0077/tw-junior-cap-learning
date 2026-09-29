@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-1-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "聽到『所以我們改在室內舉行』，前文最可能包含哪項內容？",
+  "prompt": "聽到校方、學生與家長對手機管理的不同說法，整理時最妥當的是？",
   "options": [
     {
       "id": "A",
-      "text": "室內活動已經結束很久"
+      "text": "把三方觀點與各自理由分欄記錄，不先混成同一立場"
     },
     {
       "id": "B",
-      "text": "參加者都不喜歡室內場所"
+      "text": "只保留校方說法"
     },
     {
       "id": "C",
-      "text": "沒有任何活動安排"
+      "text": "選按讚最多的說法"
     },
     {
       "id": "D",
-      "text": "原定戶外活動受到下雨等因素影響"
+      "text": "刪除互相矛盾的內容"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "『所以』引出結果，前文應是導致改在室內舉行的原因或條件，例如天候不佳。"
+    "value": "B",
+    "explanation": "不同角色可能有不同需求與理由，分開記錄才能保留觀點差異並進一步比較。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究聆聽組織、聲情、語意與主旨判讀題型（因果推論）；官方語文課綱學習表現：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究聆聽目的、重點、語氣、觀點、摘要與行動紀錄能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫聆聽與溝通表現題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "聆聽、重點與語氣",
+      "observedPattern": "公立學校國文評量要求聽取重點、區分事實與推測、辨識語氣與觀點，並將口語內容轉成可行動紀錄；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口語理解、摘要與回應",
+      "observedPattern": "公立學校國文評量要求聽取重點、區分事實與推測、辨識語氣與觀點，並將口語內容轉成可行動紀錄；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先標示說話者與主張，再記理由、證據與未解問題，不以多數或權威直接取代整理。",
+  "solutionSteps": [
+    "讀題定位：圈出「多方觀點」與聽者目的、說話者、語氣、理由、期限或行動線索。",
+    "分層整理：區分原話事實、合理推論、立場與未說出的假設；本題核心是「不同角色可能有不同需求與理由，分開記錄才能保留觀點差異並進一步比較。」",
+    "核對正解：選項 B 保留原話的資訊範圍與確定程度，並能支持適當回應。",
+    "排除誘答：檢查是否把點頭當同意、保留當否決、個人觀點當全體結論，或急著提供對方未要求的建議。",
+    "回讀驗證：用聆聽紀錄重述一次，確認人物、主張、理由與下一步都能回到原話找到依據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

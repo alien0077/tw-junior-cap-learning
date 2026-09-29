@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ac-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列哪一項沒有錯別字？（單元練習：content-ac）",
+  "prompt": "「＿＿雨勢在下午變小，戶外課程仍改到室內。」最適合填入哪個連接詞？",
   "options": [
     {
       "id": "A",
-      "text": "他仔細檢查報告的格式。"
+      "text": "因此"
     },
     {
       "id": "B",
-      "text": "我們要克服艱苦的困難。"
+      "text": "只要"
     },
     {
       "id": "C",
-      "text": "她帶著愉快的心情心情出發。"
+      "text": "雖然"
     },
     {
       "id": "D",
-      "text": "公告請同學踴越報名。（本題資料組：content-ac）"
+      "text": "不但"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A 項用字與語意均正確；其餘有重複或字形錯誤。"
+    "value": "C",
+    "explanation": "前半句是有利條件，後半句卻出現不同安排，形成讓步轉折，用「雖然」才能與後面的「仍」相互配合。"
   },
   "provenance": {
     "origin": "original",
-    "license": "依法令舉行考試試題之公開使用；本筆保留題目來源與答案註記",
-    "sourceUrl": "https://kaonow.com/paper/cap-111-chinese/",
-    "sourceLocator": "114／112／111 年國中教育會考國文科公開題型研究；僅作能力方向參考，非原題重製。",
-    "authoringNote": "依公開會考能力方向獨立重寫；未複製原試題文字、選項、文章、圖片或答案。待第二輪 AI／Terra 內容複核。"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編句段內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-chinese-content-ac"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ac",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "句型、標點與語意判讀",
+      "observedPattern": "公立學校國文公開試題常以標點、句型、連接詞、語意銜接與短文理解檢查句段組織能力；本題改以校園編修情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "句子組織、連接詞與閱讀理解",
+      "observedPattern": "公立學校國文公開試題常以標點、句型、連接詞、語意銜接與短文理解檢查句段組織能力；本題改以校園編修情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認句段功能，再用標點、連接詞、指代與因果／條件關係畫出語意鏈，最後檢查改寫或推論是否超出原文證據。",
+  "solutionSteps": [
+    "讀題定位：圈出「連接詞」與句段中的關鍵詞，先確認題目要判斷語氣、句型功能、邏輯關係、指代或推論範圍。",
+    "畫出關係：標記主語、述語、標點、連接詞與前後句功能，檢查它們是否支持同一個意思；本題核心是「前半句是有利條件，後半句卻出現不同安排，形成讓步轉折，用「雖然」才能與後面的「仍」相互配合。」",
+    "核對正解：選項 A「雖然」能完整符合題目要求，且前後語意可以連續解釋。",
+    "排除誘答：逐項檢查標點是否造成錯誤語氣、連接詞是否換了邏輯、代詞是否無所指，或選項是否超出原文證據。",
+    "結論回查：把答案放回完整句段朗讀，確認讀者能知道資訊、關係與行動；若文本未提供資料，明確說出不能推出的部分。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

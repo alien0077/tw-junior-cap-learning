@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-3-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-3／理解簡易英文標示」notice for the sports center, item 7: “Keep the walkway clear.” What does it tell people?",
+  "prompt": "A field-trip notice says the shuttle leaves at 8:40 a.m. Students must check in ten minutes earlier. At what time should a student arrive?",
   "options": [
     {
       "id": "A",
-      "text": "For item 7 in the 3-Ⅳ-3／理解簡易英文標示 notice, People should keep the walkway clear."
+      "text": "8:50 a.m."
     },
     {
       "id": "B",
-      "text": "For item 7 in the 3-Ⅳ-3／理解簡易英文標示 notice, People should block the walkway."
+      "text": "9:40 a.m."
     },
     {
       "id": "C",
-      "text": "For item 7 in the 3-Ⅳ-3／理解簡易英文標示 notice, People should sleep on the walkway."
+      "text": "8:40 p.m."
     },
     {
       "id": "D",
-      "text": "For item 7 in the 3-Ⅳ-3／理解簡易英文標示 notice, People should move the walkway to the roof."
+      "text": "8:30 a.m."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-3／理解簡易英文標示, question 7."
+    "value": "D",
+    "explanation": "Ten minutes earlier than 8:40 a.m. is 8:30 a.m. The notice gives a check-in time, not a later arrival time."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1753839175199ERtbxbag.pdf",
+    "sourceLocator": "臺北市立內湖國中113學年度第二學期七年級第三次段考英文試題；PDF第3頁第46題：以活動起始時間和當下時刻判斷行動。本題依題型與推理能力重新創作，不複製原題、選項、圖像或答案。",
+    "authoringNote": "原創題幹與選項；僅將公立學校公開試題作為題型與推理能力參照。答案、策略及逐步解說為本題獨立撰寫；保持draft，未執行Terra複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1753839175199ERtbxbag.pdf",
+      "title": "臺北市立內湖國中113學年度第二學期七年級第三次段考英文試題",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF第3頁第46題：以活動起始時間和當下時刻判斷行動",
+      "observedPattern": "試題要求依時間資訊判斷活動是否已開始，及按方向詞和地標重組移動路線；本題採全新地點、時刻與路線。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先分清公告中的基準事件與提前／延後量，再在同一上午時間軸上加減分鐘。",
+  "solutionSteps": [
+    "圈出接駁車發車時間8:40 a.m.。",
+    "理解 check in ten minutes earlier 是報到要比發車早10分鐘。",
+    "從8:40往前倒數10分鐘，得到8:30。",
+    "A反而晚10分鐘，B晚一小時，C把上午誤成晚上。",
+    "答案選D；到場後仍需依現場公告確認集合地點。"
+  ]
 }

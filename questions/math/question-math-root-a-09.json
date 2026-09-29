@@ -1,0 +1,76 @@
+{
+  "id": "question-math-root-a-09",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "某公園導覽圖採用 1:50,000 的比例尺。實際步道長 1.8 公里，在圖上應量得多少公分？",
+  "options": [
+    {
+      "id": "A",
+      "text": "0.36 公分"
+    },
+    {
+      "id": "B",
+      "text": "3.6 公分"
+    },
+    {
+      "id": "C",
+      "text": "36 公分"
+    },
+    {
+      "id": "D",
+      "text": "360 公分"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-a",
+    "kg-math-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "B",
+    "explanation": "比例尺1:50,000表示圖上1公分代表實際50,000公分，也就是500公尺。1.8公里等於1,800公尺，因此圖上長度為1,800÷500=3.6公分。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究計算、表格與情境判讀的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級數學科試題卷",
+      "year": "114-2",
+      "locator": "校方附件「114-2-3-七年級數學試題卷.pdf」第2頁第9題",
+      "subject": "math",
+      "observedPattern": "原卷第9題以地圖比例尺將實際距離換算為圖面長度；本題改用新比例尺及步道距離自編。",
+      "pattern": "原卷第9題以地圖比例尺將實際距離換算為圖面長度；本題改用新比例尺及步道距離自編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+    "sourceLocator": "校方附件「114-2-3-七年級數學試題卷.pdf」第2頁第9題；只參照比例尺單位換算技能，不複製原題。",
+    "authoringNote": "以不同地圖情境與距離自編題幹與選項，詳解公里、公尺及比例尺單位換算；題目維持 draft 待 AI 內容 QA。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-root-a",
+  "solutionStrategy": "先將實際距離轉成與比例尺相同的單位，再除以比例尺分母，並用另一種長度單位回算。",
+  "solutionSteps": [
+    "統一長度單位：1.8公里=1,800公尺=180,000公分；實際長度與圖上長度計算時要使用相同單位。",
+    "比例尺1:50,000表示地圖上1公分代表實際50,000公分，也就是500公尺；因此把1,800公尺除以500即可得到圖上公分數。",
+    "計算1,800÷500=3.6，圖上長度為3.6公分。",
+    "用公分再算一次：180,000÷50,000=3.6，與前一步一致。",
+    "檢查尺度：3.6公分可代表1.8公里；36或360公分都不符合縮尺地圖的量級，答案為B。"
+  ]
+}

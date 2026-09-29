@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-iv-3-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "文字說明寫『今年借閱人次增加』，圖表卻顯示只有暑假月份增加。整合兩者時，最恰當的做法是什麼？",
+  "prompt": "閱讀互動圖表時，工具列可切換『人數』與『百分比』。切換前最重要的做法是？",
   "options": [
     {
       "id": "A",
-      "text": "只保留文字而刪除圖表"
+      "text": "確認目前指標、篩選條件與圖例，避免把百分比當人數"
     },
     {
       "id": "B",
-      "text": "把局部資料概括成全年必然增加"
+      "text": "只按動畫最快的按鈕"
     },
     {
       "id": "C",
-      "text": "限定結論的時間範圍，改寫成『暑假月份增加』"
+      "text": "關閉所有標籤"
     },
     {
       "id": "D",
-      "text": "把圖表中沒有的月份也說成增加"
+      "text": "假設兩種顯示一定相同"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "圖表只支持暑假月份的變化，文字結論應配合資料範圍，避免過度推論。"
+    "value": "A",
+    "explanation": "工具切換可能改變指標與篩選範圍，先確認單位、圖例和條件才能正確解讀。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究圖表與資料整合判讀題型（文字與圖表整合）；課綱 Bc-Ⅳ-3：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究標題、單位、比例、趨勢、圖片範圍、來源與工具輔助。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫數據圖表圖片工具題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "表格、圖表與資料判讀",
+      "observedPattern": "公立學校國文評量要求確認圖表標題、單位、比例、趨勢、來源與圖片文字替代，並區分資料可支持的結論；本題使用全新數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "數據比較、比例與圖表證據",
+      "observedPattern": "公立學校國文評量要求確認圖表標題、單位、比例、趨勢、來源與圖片文字替代，並區分資料可支持的結論；本題使用全新數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把工具操作視為資料閱讀的一部分，操作後重新核對指標與範圍。",
+  "solutionSteps": [
+    "找出人數與百分比是不同指標。",
+    "檢查圖例、篩選條件與目前顯示模式。",
+    "注意分母會影響百分比。",
+    "A 能避免工具切換造成的誤讀。",
+    "切換後重新讀標題、單位和篩選條件。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,41 +2,87 @@
   "id": "question-science-content-ka-iv-6-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年4月17日河川觀測站的觀察中，空氣射向平面鏡時，光線與鏡面法線的入射角為 15°，研究「Ka-Ⅳ-6：針孔成像、影子與光的直進」時，反射角為何？",
+  "prompt": "若針孔太小，影像輪廓較清楚但整體很暗；若針孔稍大，影像較亮卻模糊。哪個結論最適當？",
   "options": [
     {
       "id": "A",
-      "text": "75°（「Ka-Ⅳ-6：針孔成像、影子與光的直進」中把入射角誤當折射角）"
+      "text": "孔徑同時影響光線方向限制與進光量，清晰度和亮度要分開記錄"
     },
     {
       "id": "B",
-      "text": "15°（空氣射向平面鏡）"
+      "text": "影像越亮代表一定越大"
     },
     {
       "id": "C",
-      "text": "30°（「Ka-Ⅳ-6：針孔成像、影子與光的直進」中把入射角加倍）"
+      "text": "模糊表示光線改走曲線"
     },
     {
       "id": "D",
-      "text": "165°（「Ka-Ⅳ-6：針孔成像、影子與光的直進」中以平角計算）"
+      "text": "孔徑只改變光速，不影響觀察"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ka-iv-6"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "反射定律指出反射角等於入射角，因此為 15°。 本題對應 KG「Ka-Ⅳ-6：針孔成像、影子與光的直進」。"
+    "value": "A",
+    "explanation": "小孔限制通過方向，通常有利於輪廓清楚但減少光量；大孔增加進光量卻讓同一物點形成較寬重疊。亮度和尺寸不是同一量。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.chhs.tp.edu.tw/uploads/1580833724641KNP89ykg.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題的光直進、影子、針孔成像、日食投影與控制變因能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ka-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.chhs.tp.edu.tw/uploads/1580833724641KNP89ykg.pdf",
+      "title": "臺北市立景興國民中學八年級理化科公開定期評量",
+      "year": "108",
+      "locator": "光直進、針孔成像、影子、日食與實驗控制變因",
+      "pattern": "取公立學校評量以光路、影子與針孔投影進行圖形判讀和實驗推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校評量以光路、影子與針孔投影進行圖形判讀和實驗推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "光的直進、針孔成像、影子、日食與操作條件",
+      "pattern": "取從光源—物體—屏幕關係推論影子與成像方向、大小和觀察條件的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從光源—物體—屏幕關係推論影子與成像方向、大小和觀察條件的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.sjjh.tyc.edu.tw/113-1-8%E8%A3%9C%E8%80%83%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "桃園市立山腳國民中學八年級自然科公開補考題庫",
+      "year": "113",
+      "locator": "光直進、影子邊界、針孔成像與變因控制",
+      "pattern": "取公開自然科題庫要求用光線模型、幾何關係與公平實驗判讀現象的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開自然科題庫要求用光線模型、幾何關係與公平實驗判讀現象的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "建立觀察表，把亮度、清晰度、大小與方向分欄。",
+  "solutionSteps": [
+    "固定物體與屏幕，只比較孔徑。",
+    "同時觀察像的亮度、輪廓清晰度與位置。",
+    "說明孔徑變小可限制光線方向，但也減少進光量。",
+    "不把更亮直接當成像更大，也不把模糊當成光線彎曲。",
+    "用多次觀察和清晰度標準支持結論。"
+  ]
 }

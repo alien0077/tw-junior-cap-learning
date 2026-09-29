@@ -45,20 +45,154 @@
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "versionResearch": [
-    {"publisher":"nani","edition":"南一國中國文公開課程頁與115學年度冊別清冊","sourceType":"public-web","sourceLocator":"公開課程頁的八年級國語產品入口；textbook-mapping/chinese/nani-v4.json 只確認115學年度第4冊存在，未提供 Bb-Ⅳ-1 逐課全文或頁碼。","reviewedAt":"2026-08-31","findings":{"concepts":["公開入口可確認南一有國中國文分年級課程產品，但不能由產品頁推回本課完整教材內容。","本課依官方 Bb-Ⅳ-1 將範圍收在自我感受、人際理解與交流表達，不把出版社章名當作 KG 概念。"],"representations":["可取得資料是課程入口與整冊存在性 mapping，沒有可合法下載的本課課文、插圖或練習版面。"],"examplesOrEvidence":["因此採用自編社團值日訊息與面談紀錄，讓事件、感受、解讀和請求能在同一文本中被比對。"],"misconceptions":["不能因公開課程入口存在，就宣稱已讀取南一本課全文或知道其原例題與答案。"],"assessmentEmphasis":["評量聚焦學生能否從人際文字找出證據、語氣與請求，並指出動機判斷仍需確認。"]},"licenseBoundary":"南一公開頁與政府冊別清冊只作產品存在、公開定位和課程範圍研究；不下載、重製、改寫或發布受保護課文、習題、教案、圖片與答案。"},
-    {"publisher":"kanghsuan","edition":"康軒國中國文公開影音索引與115學年度冊別清冊","sourceType":"public-web","sourceLocator":"digitalmaster.knsh.com.tw/all/video/public/j_mandarin.xml 公開索引可作國文資源定位；textbook-mapping/chinese/kanghsuan-v4.json 只確認第4冊整冊存在，未定位 Bb-Ⅳ-1 逐課教材。","reviewedAt":"2026-08-31","findings":{"concepts":["公開索引呈現語文學習資源的章節與影音入口，支持從語境、表達和理解活動銜接人際文本閱讀。","本課保留官方 Bb-Ⅳ-1 的情感交流邊界，另外用對話中的回應選擇呈現理解如何影響關係。"],"representations":["索引不是教材全文，無法核對本單元的完整概念順序、原文、題目或出版社活動細節。"],"examplesOrEvidence":["本稿另創作一則群組訊息、一次面對面澄清與一張回應卡，供學生觀察同一衝突在不同媒介的語氣差異。"],"misconceptions":["看見反問、驚嘆號或簡短句便直接判定對方惡意，忽略稱呼、前後文和交談目的。"],"assessmentEmphasis":["要求學生說明哪個解讀有文本依據，哪個只是猜測，並把指責改成可回答的請求。"]},"licenseBoundary":"康軒公開索引與整冊 mapping 僅用於定位與範圍交叉研究；不擷取、重製、散布或近似改寫其影音、字幕、教材、題目、答案和圖像。"},
-    {"publisher":"hanlin","edition":"翰林國文115網頁版PPT公開索引與冊別 mapping","sourceType":"public-web","sourceLocator":"sites.google.com/hanlin.com.tw/112chwebppt/1上 公開入口；textbook-mapping/chinese/hanlin-v4.json 僅確認第4冊整冊存在，公開頁未提供 Bb-Ⅳ-1 可核驗全文。","reviewedAt":"2026-08-31","findings":{"concepts":["翰林公開入口可研究教材資源的組織方式，但本細碼沒有足以核對原課文的公開頁面。","融合時採用共同的語文能力方向，特別強調讀者要從語句與關係脈絡理解情緒，而非只替人物貼標籤。"],"representations":["公開PPT入口和整冊資料只能支持資源定位，不能當成已取得投影片、課文、題組或教師版內容。"],"examplesOrEvidence":["原創範例讓學生比較「你都不在乎」與具體事件句，接著用三格回應卡重組事實、感受和請求。"],"misconceptions":["把感受詞當成作者唯一目的，或把說話者的一次受傷直接推成對方固定的人格與動機。"],"assessmentEmphasis":["以語境線索、可核對事件、合理保留和回應品質作為判讀與表達的證據。"]},"licenseBoundary":"翰林公開索引與冊別資料只用於章節資源定位和概念限制研究；不複製、重建、發布或改作其PPT、教材、練習、答案、圖片與版面。"}
+    {
+      "publisher": "nani",
+      "edition": "南一國中國文公開課程頁與115學年度冊別清冊",
+      "sourceType": "public-web",
+      "sourceLocator": "https://tutor.oneclass.com.tw/product/%E5%85%AB%E5%B9%B4%E7%B4%9A%E5%9C%8B%E8%AA%9E/；公開課程頁的八年級國語產品入口；textbook-mapping/chinese/nani-v4.json 只確認115學年度第4冊存在，未提供 Bb-Ⅳ-1 逐課全文或頁碼。",
+      "reviewedAt": "2026-08-31",
+      "findings": {
+        "concepts": [
+          "公開入口可確認南一有國中國文分年級課程產品，但不能由產品頁推回本課完整教材內容。",
+          "本課依官方 Bb-Ⅳ-1 將範圍收在自我感受、人際理解與交流表達，不把出版社章名當作 KG 概念。"
+        ],
+        "representations": [
+          "可取得資料是課程入口與整冊存在性 mapping，沒有可合法下載的本課課文、插圖或練習版面。"
+        ],
+        "examplesOrEvidence": [
+          "因此採用自編社團值日訊息與面談紀錄，讓事件、感受、解讀和請求能在同一文本中被比對。"
+        ],
+        "misconceptions": [
+          "不能因公開課程入口存在，就宣稱已讀取南一本課全文或知道其原例題與答案。"
+        ],
+        "assessmentEmphasis": [
+          "評量聚焦學生能否從人際文字找出證據、語氣與請求，並指出動機判斷仍需確認。"
+        ]
+      },
+      "licenseBoundary": "南一公開頁與政府冊別清冊只作產品存在、公開定位和課程範圍研究；不下載、重製、改寫或發布受保護課文、習題、教案、圖片與答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中國文公開影音索引與115學年度冊別清冊",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_mandarin.xml；digitalmaster.knsh.com.tw/all/video/public/j_mandarin.xml 公開索引可作國文資源定位；textbook-mapping/chinese/kanghsuan-v4.json 只確認第4冊整冊存在，未定位 Bb-Ⅳ-1 逐課教材。",
+      "reviewedAt": "2026-08-31",
+      "findings": {
+        "concepts": [
+          "公開索引呈現語文學習資源的章節與影音入口，支持從語境、表達和理解活動銜接人際文本閱讀。",
+          "本課保留官方 Bb-Ⅳ-1 的情感交流邊界，另外用對話中的回應選擇呈現理解如何影響關係。"
+        ],
+        "representations": [
+          "索引不是教材全文，無法核對本單元的完整概念順序、原文、題目或出版社活動細節。"
+        ],
+        "examplesOrEvidence": [
+          "本稿另創作一則群組訊息、一次面對面澄清與一張回應卡，供學生觀察同一衝突在不同媒介的語氣差異。"
+        ],
+        "misconceptions": [
+          "看見反問、驚嘆號或簡短句便直接判定對方惡意，忽略稱呼、前後文和交談目的。"
+        ],
+        "assessmentEmphasis": [
+          "要求學生說明哪個解讀有文本依據，哪個只是猜測，並把指責改成可回答的請求。"
+        ]
+      },
+      "licenseBoundary": "康軒公開索引與整冊 mapping 僅用於定位與範圍交叉研究；不擷取、重製、散布或近似改寫其影音、字幕、教材、題目、答案和圖像。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林國文115網頁版PPT公開索引與冊別 mapping",
+      "sourceType": "public-web",
+      "sourceLocator": "https://sites.google.com/hanlin.com.tw/112chwebppt/1%E4%B8%8A；sites.google.com/hanlin.com.tw/112chwebppt/1上 公開入口；textbook-mapping/chinese/hanlin-v4.json 僅確認第4冊整冊存在，公開頁未提供 Bb-Ⅳ-1 可核驗全文。",
+      "reviewedAt": "2026-08-31",
+      "findings": {
+        "concepts": [
+          "翰林公開入口可研究教材資源的組織方式，但本細碼沒有足以核對原課文的公開頁面。",
+          "融合時採用共同的語文能力方向，特別強調讀者要從語句與關係脈絡理解情緒，而非只替人物貼標籤。"
+        ],
+        "representations": [
+          "公開PPT入口和整冊資料只能支持資源定位，不能當成已取得投影片、課文、題組或教師版內容。"
+        ],
+        "examplesOrEvidence": [
+          "原創範例讓學生比較「你都不在乎」與具體事件句，接著用三格回應卡重組事實、感受和請求。"
+        ],
+        "misconceptions": [
+          "把感受詞當成作者唯一目的，或把說話者的一次受傷直接推成對方固定的人格與動機。"
+        ],
+        "assessmentEmphasis": [
+          "以語境線索、可核對事件、合理保留和回應品質作為判讀與表達的證據。"
+        ]
+      },
+      "licenseBoundary": "翰林公開索引與冊別資料只用於章節資源定位和概念限制研究；不複製、重建、發布或改作其PPT、教材、練習、答案、圖片與版面。"
+    }
   ],
   "fusionRecord": {
-    "commonCore":["三家公開資料都只能支持國中國文教材資源的版本與課程定位，不能取代官方 Bb-Ⅳ-1 課綱或假裝提供本課全文。","融合後把自我感受、人際理解和交流表達放在同一閱讀任務中，要求讀者同時處理事件、語氣、關係與請求。","三家公開研究均不足以核對原題，因此本課的例證、活動和檢核一律採自編材料，並以證據界線作為共同教學核心。"],
-    "versionDifferences":["南一公開課程頁較能定位年級產品能力入口；康軒可取得影音索引；翰林可取得網頁版PPT入口，三者公開層級和可核驗粒度不同。","現有 mapping 多是整冊存在性或保守課程架構，沒有任何一家提供本細碼可公開核對的完整章節，因此不推定三版本的實際篇章順序或例題差異。"],
-    "originalAdditions":["以社團值日群組訊息作為入口，讓學生先感受語氣，再回頭標示事件、感受、解讀和請求。","設計「證據／猜測／可問」三欄回應卡，將人際閱讀從替角色下結論改成提出可澄清的問題。","加入面對面、群組訊息與正式求助信的轉換任務，要求學生依媒介和對象保留界線並調整說法。"],
-    "llmSynthesisNote":"本課由 LLM 先核對官方課綱 Bb-Ⅳ-1、kg-chinese-content-bb-iv-1，以及本地保存的南一、康軒、翰林公開定位與整冊 mapping，再依各來源可證明的範圍融合。出版社本課全文與原題不可公開取得，所以不作版本內容重建；正文改以獨立設計的社團衝突、語氣辨讀、回應卡和跨媒介遷移組成，六階段的概念順序、例證、迷思、活動與檢核均為本單元專屬。"
+    "commonCore": [
+      "三家公開資料都只能支持國中國文教材資源的版本與課程定位，不能取代官方 Bb-Ⅳ-1 課綱或假裝提供本課全文。",
+      "融合後把自我感受、人際理解和交流表達放在同一閱讀任務中，要求讀者同時處理事件、語氣、關係與請求。",
+      "三家公開研究均不足以核對原題，因此本課的例證、活動和檢核一律採自編材料，並以證據界線作為共同教學核心。"
+    ],
+    "versionDifferences": [
+      "南一公開課程頁較能定位年級產品能力入口；康軒可取得影音索引；翰林可取得網頁版PPT入口，三者公開層級和可核驗粒度不同。",
+      "現有 mapping 多是整冊存在性或保守課程架構，沒有任何一家提供本細碼可公開核對的完整章節，因此不推定三版本的實際篇章順序或例題差異。"
+    ],
+    "originalAdditions": [
+      "以社團值日群組訊息作為入口，讓學生先感受語氣，再回頭標示事件、感受、解讀和請求。",
+      "設計「證據／猜測／可問」三欄回應卡，將人際閱讀從替角色下結論改成提出可澄清的問題。",
+      "加入面對面、群組訊息與正式求助信的轉換任務，要求學生依媒介和對象保留界線並調整說法。"
+    ],
+    "llmSynthesisNote": "本課由 LLM 先核對官方課綱 Bb-Ⅳ-1、kg-chinese-content-bb-iv-1，以及本地保存的南一、康軒、翰林公開定位與整冊 mapping，再依各來源可證明的範圍融合。出版社本課全文與原題不可公開取得，所以不作版本內容重建；正文改以獨立設計的社團衝突、語氣辨讀、回應卡和跨媒介遷移組成，六階段的概念順序、例證、迷思、活動與檢核均為本單元專屬。"
   },
   "publisherResearch": [
-    {"publisher":"nani","edition":"南一國中國文公開課程頁","subject":"chinese","chapterLocator":"八年級國語公開產品入口；目前未見 Bb-Ⅳ-1 可核驗逐課頁碼或全文。","sourceUrl":"https://tutor.oneclass.com.tw/product/%E5%85%AB%E5%B9%B4%E7%B4%9A%E5%9C%8B%E8%AA%9E/","access":"public-open","reviewedAt":"2026-08-31","researchScope":["concept-progression","activity-pattern","assessment-pattern"],"outcome":"確認南一公開頁可作年級課程定位，但不足以證明本細碼的原教材順序；正文改採官方課綱與原創人際文本。","copyrightBoundary":"只研究公開入口與能力定位；不複製、改寫或發布南一教材、題庫、教案、影音、圖片或答案。"},
-    {"publisher":"kanghsuan","edition":"康軒國中國文公開影音索引","subject":"chinese","chapterLocator":"公開 XML 資源索引；未見 Bb-Ⅳ-1 可直接核驗的完整課文或題組頁碼。","sourceUrl":"https://digitalmaster.knsh.com.tw/all/video/public/j_mandarin.xml","access":"public-open","reviewedAt":"2026-08-31","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"以公開索引研究語文資源的銜接與活動定位，並明確保留本課逐篇教材不可取得的限制。","copyrightBoundary":"只使用公開索引作研究定位；不擷取、重製或散布康軒影音、字幕、教材、題目、答案與圖片。"},
-    {"publisher":"hanlin","edition":"翰林國文115網頁版 PPT 公開入口","subject":"chinese","chapterLocator":"1上公開入口及其網頁版資源索引；未提供 Bb-Ⅳ-1 可核驗的完整課文、投影片或練習內容。","sourceUrl":"https://sites.google.com/hanlin.com.tw/112chwebppt/1%E4%B8%8A","access":"public-open","reviewedAt":"2026-08-31","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"確認翰林公開資源入口與教材組織定位；本課不聲稱已讀取或重建翰林本單元教材。","copyrightBoundary":"只研究公開索引和章節定位；不複製、改作或發布翰林 PPT、教材、題目、答案、圖片與版面。"}
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（chinese）",
+      "subject": "chinese",
+      "chapterLocator": "高雄市公立國中翰林版課程計畫；以現代散文、人物與家庭／社群文本處理自我及人際感受，透過學習單、口語表達和主題寫作完成遷移；核讀 2026-09-20。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/113plan/5/c2.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "回讀高雄市立民族國中公立翰林版國文課程計畫，核對 Bb-Ⅳ-1 自我感受、人際理解、生活經驗分享與文本反思／表達評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，Terra 與最終 QA 尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（chinese）",
+      "subject": "chinese",
+      "chapterLocator": "臺南市公立國中康軒版八年級課程計畫；把自我、人際、生活與價值思辨放入現代文本及議題學習，採實作、口頭、自評、習作和紙筆評量；核讀 2026-09-20。",
+      "sourceUrl": "https://course.tn.edu.tw/course/114J%E9%87%91%E5%9F%8E%E5%9C%8B%E4%B8%ADC5-1%E9%A0%98%E5%9F%9F%E5%AD%B8%E7%BF%92%E8%AA%B2%E7%A8%8B%28%E8%AA%BF%E6%95%B4%29%E8%A8%88%E7%95%AB%E6%99%AE%E9%80%9A%E7%8F%AD%E5%85%AB%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%870718155545.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "回讀臺南市公立康軒版國文八年級課程計畫，核對 Bb-Ⅳ-1 自我、人際、生活與價值思辨的文本學習、口語／寫作表達與多元評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，Terra 與最終 QA 尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（chinese）",
+      "subject": "chinese",
+      "chapterLocator": "桃園市公立國中課程計畫；以小詩、現代散文和文言文本連結自我感受、人際交流、生活經驗與自我反思，安排口語、習作與自我檢核；核讀 2026-09-20。",
+      "sourceUrl": "https://www.chjh.tyc.edu.tw/uploads/neilfilefolder/9file/file/124_1_5111%E5%9C%8B%E8%AA%9E%E6%96%87.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "回讀桃園市公立翰林版國文課程資料，核對 Bb-Ⅳ-1 自我感受、人際交流、生活經驗、自我反思與口語／習作評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，Terra 與最終 QA 尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    }
   ],
   "teaching": {
     "body": [
@@ -117,6 +251,43 @@
       {
         "prompt": "同樣是表達「我想先聽完再回答」，面對面與傳訊息時各要注意什麼？",
         "expectedEvidence": "能說明面對面可依聲調與停頓傳達請求，訊息缺少聲音線索，應補充原因或語氣，並能依對象調整正式程度。"
+      }
+    ]
+  },
+  "interactive": {
+    "type": "guided-choice",
+    "goal": "從文本證據理解「Bb-Ⅳ-1：自我與人際交流感受」的內容與結構",
+    "scenario": "以「Bb-Ⅳ-1：自我與人際交流感受」為主題，學生先預測，再依 unit spec 的 TextEvidenceBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "steps": [
+      {
+        "id": "step-1",
+        "prompt": "開始「Bb-Ⅳ-1：自我與人際交流感受」時，哪個做法能讓預測可被檢查？",
+        "options": [
+          "先提交預測，不顯示正解",
+          "先把「只找表面關鍵字，未用「Bb-Ⅳ-1：自我與人際交流感受」相關文本證據完成推論」當成已證明的答案"
+        ],
+        "answer": "A",
+        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
+      },
+      {
+        "id": "step-2",
+        "prompt": "在「Bb-Ⅳ-1：自我與人際交流感受」的操作後，哪一項最能支持你的解釋？",
+        "options": [
+          "至少一個可定位的視覺、文字、數據或時間證據",
+          "只重複「從文本證據理解「Bb-Ⅳ-1：自我與人際交流感受」的內容與結構」，不指出資料位置"
+        ],
+        "answer": "A",
+        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
+      },
+      {
+        "id": "step-3",
+        "prompt": "要把「Bb-Ⅳ-1：自我與人際交流感受」遷移到新問題，哪個要求最重要？",
+        "options": [
+          "換一個情境但保留「Bb-Ⅳ-1：自我與人際交流感受」的核心關係；不可只換名詞",
+          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
+        ],
+        "answer": "A",
+        "feedback": "完成後回看「Bb-Ⅳ-1：自我與人際交流感受」的條件、證據與限制；不要只換名詞而保留原答案。"
       }
     ]
   }

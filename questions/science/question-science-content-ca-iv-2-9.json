@@ -2,41 +2,67 @@
   "id": "question-science-content-ca-iv-2-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年3月23日社區環境站的觀察中，將 33 g 食鹽溶於 698 g 水，研究「Ca-Ⅳ-2：以化學性質鑑定化合物」時，溶液質量為何？",
+  "prompt": "未知固體與稀酸反應產生氣體，若要判斷氣體種類，哪個後續做法較合理？",
   "options": [
     {
       "id": "A",
-      "text": "665 g"
+      "text": "收集少量氣體並用適當性質測試，再與已知氣體對照"
     },
     {
       "id": "B",
-      "text": "23034 g"
+      "text": "依氣泡大小直接命名氣體"
     },
     {
       "id": "C",
-      "text": "731 g"
+      "text": "把所有氣體都當成氧氣"
     },
     {
       "id": "D",
-      "text": "698 g"
+      "text": "不需考慮安全就靠近聞氣味"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ca-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：33＋698＝731 g。 本題對應 KG「Ca-Ⅳ-2：以化學性質鑑定化合物」。"
+    "value": "A",
+    "explanation": "產氣現象只能顯示有氣體生成；應依安全規範收集並使用特徵測試和對照確認，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的化合物鑑定、特徵反應與對照能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ca-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ca-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ca-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化合物鑑定、酸鹼、沉澱、氣體與實驗對照判讀",
+      "pattern": "取由特徵反應、對照組與多項證據鑑定未知物的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由特徵反應、對照組與多項證據鑑定未知物的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把生成現象和氣體身分鑑定分成兩個步驟。",
+  "solutionSteps": [
+    "確認反應是否可安全產氣。",
+    "用適當裝置收集少量氣體。",
+    "選擇與候選氣體性質相符的測試。",
+    "和已知氣體或空白結果比較。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-english-performance-9-iv-1-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「9-Ⅳ-1／依資訊推論」task, what is the best way to prepare question 10?",
+  "prompt": "A school report shows less litter after more recycling bins were added, while a student survey says signs helped students find the bins. What is a supported inference?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 9-Ⅳ-1／依資訊推論."
+      "text": "The survey and report describe unrelated sports events"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 9-Ⅳ-1／依資訊推論."
+      "text": "The report proves signs alone caused every change"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 9-Ⅳ-1／依資訊推論."
+      "text": "Recycling bins increased litter everywhere"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 9-Ⅳ-1／依資訊推論."
+      "text": "More accessible bins and clear signs may have contributed to less litter"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,49 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 9-Ⅳ-1／依資訊推論, question 10."
+    "value": "D",
+    "explanation": "答案D。校務報告指出增加回收桶後垃圾減少，問卷另提到標示幫助學生找到桶位；兩種資訊共同支持較容易找到並使用回收桶可能有助減少垃圾，但資料不能證明標示是唯一原因。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "Public-school English assessment materials; this item studies inference from notices, charts, messages, context, and multiple evidence only and does not reproduce an original question, option, image, or text.",
+    "authoringNote": "Written independently from the official English curriculum KG and three public-school English assessment sources; information sets, options, explanations, and transfer tasks are original; pending second-round AI/Terra content review."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-9-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-performance-9-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅取資訊推論的因果、趨勢、隱含意圖、情緒、比較、負面證據與多來源整合能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "inference from notices, data, context, and multiple clues",
+      "observedPattern": "公開英文評量常要求從公告、表格、對話與多個線索推論未明說原因、目的、情緒、趨勢或合理結論，並區分證據與過度推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取資訊推論的因果、趨勢、隱含意圖、情緒、比較、負面證據與多來源整合能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "reading information and drawing supported inferences",
+      "observedPattern": "公開英文評量常要求從公告、表格、對話與多個線索推論未明說原因、目的、情緒、趨勢或合理結論，並區分證據與過度推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "綜合報告的前後變化與問卷回饋，指出可能貢獻因素，避免把同時出現說成唯一因果。",
+  "solutionSteps": [
+    "第一來源描述：增加回收桶後，校園垃圾量較少。",
+    "第二來源補充：學生表示標示幫助他們找到回收桶。",
+    "選D：較方便取得的回收桶及清楚標示可能共同促成垃圾減少。",
+    "題目沒有排除清潔制度、學生人數等其他因素，因此不能說標示單獨造成所有變化。",
+    "整合多來源時，先找相互補充的線索，再用may have contributed等措辭保留因果限制。"
+  ]
 }

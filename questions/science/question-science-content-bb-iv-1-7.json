@@ -2,23 +2,23 @@
   "id": "question-science-content-bb-iv-1-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年10月20日學校研究社的觀察中，將 129℃ 的金屬片放入 29℃ 的水中，研究「Bb-Ⅳ-1：熱由高溫處傳向低溫處」時，最初的熱傳方向為何？",
+  "prompt": "冷氣機常安裝在房間較高處，主要利用哪項現象幫助冷空氣分布？",
   "options": [
     {
       "id": "A",
-      "text": "由 29℃ 的水傳向 129℃ 金屬片"
+      "text": "冷空氣密度較大會下沉，暖空氣上升形成對流"
     },
     {
       "id": "B",
-      "text": "由金屬片傳向水"
+      "text": "冷空氣密度較小會上升"
     },
     {
       "id": "C",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "熱只會由低處傳到高處"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "冷氣靠輻射直接穿過牆壁"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 129℃ 金屬片傳向 29℃ 的水。 本題對應 KG「Bb-Ⅳ-1：熱由高溫處傳向低溫處」。"
+    "value": "A",
+    "explanation": "冷空氣通常較密而下沉，暖空氣上升，形成室內對流循環；高處出風有助於混合，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的熱傳遞、溫差與熱平衡能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bb-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bb-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "熱傳遞方向、傳導、對流、輻射與溫度資料判讀",
+      "pattern": "取由溫差、介質與熱傳方式推論能量傳遞方向的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫差、介質與熱傳方式推論能量傳遞方向的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷溫度與密度的關係，再追蹤流體移動方向。",
+  "solutionSteps": [
+    "冷氣降低周圍空氣溫度。",
+    "同壓下較冷空氣密度通常較大。",
+    "冷空氣下沉，暖空氣上升。",
+    "空氣循環使室內溫度逐漸均勻。",
+    "因此選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

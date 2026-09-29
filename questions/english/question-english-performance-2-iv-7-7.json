@@ -2,23 +2,23 @@
   "id": "question-english-performance-2-iv-7-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-7／人事時地物提問」task, what is the best way to prepare question 7?",
+  "prompt": "Two shuttle routes serve the campus: the orange route stops at the west gate, and the teal route stops at the sports hall. You need to identify one route from these choices.\nWhich question asks you to select the route?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-7／人事時地物提問."
+      "text": "Which route stops at the sports hall?"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-7／人事時地物提問."
+      "text": "How many routes stop at the sports hall?"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-7／人事時地物提問."
+      "text": "Why does the shuttle stop at the sports hall?"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-7／人事時地物提問."
+      "text": "Where is the sports hall?"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-7／人事時地物提問, question 7."
+    "explanation": "題目要在已知的兩條路線中辨認其中一條，應用 Which + 名詞。A 要求選出路線；B 問數量，C 問原因，D 問場所。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+    "sourceLocator": "高雄市立國昌國中公開原卷：printed page 4, reading-comprehension question 35。只取命題能力／資料閱讀模式，不重製原題。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開英語試題之精確 item-level pattern-only 證據獨立重寫；未複製原題、選項、圖表或答案。題目維持 draft，尚待完整版本研究與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-7"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中111學年度第一學期八年級第一次定期評量英文科試題",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "printed page 4, reading-comprehension question 35",
+      "observedPattern": "只參考第35題的人事時地物疑問、回答配對或資訊定位能力；只參考原卷人事問答、疑問句重建、方法提問與多選項判讀模式；不複製原題、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "看到有限集合（兩條路線、數個時段或候選人）而要選出其中一項，用 Which；若問數量才用 How many。",
+  "solutionSteps": [
+    "先列出可選集合：orange route 與 teal route，題目不是開放式詢問任意資訊。",
+    "任務是 identify one route，必須從有限候選項中挑出符合條件的一條。",
+    "Which 後接名詞 route，構成 Which route…?，可直接要求辨認候選路線。",
+    "B 會問符合條件的路線有幾條；C 追問停靠原因；D 只問 sports hall 的位置。",
+    "只有 A 同時保留選擇功能與sports hall條件，因此答案為 A。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-bd-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年9月29日校園實驗室的觀察中，小車在 36 秒內前進 1768 m，研究「Bd：生態系中能量的流動與轉換」時，平均速率為何？",
+  "prompt": "下列哪項最符合生態系能量流動的判讀？",
   "options": [
     {
       "id": "A",
-      "text": "49.1111 m/s"
+      "text": "能量會由高階消費者完整回到生產者"
     },
     {
       "id": "B",
-      "text": "63648 m/s"
+      "text": "由生產者取得能量，沿食物鏈或食物網傳遞並逐級散失，物質循環但能量不完整循環"
     },
     {
       "id": "C",
-      "text": "0.020362 m/s"
+      "text": "只要食物網複雜就沒有能量損失"
     },
     {
       "id": "D",
-      "text": "1732 m/s"
+      "text": "分解者會把熱能變回全部化學能"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "平均速率＝路程÷時間＝1768÷36＝49.1111 m/s。 本題對應 KG「Bd：生態系中能量的流動與轉換」。"
+    "value": "B",
+    "explanation": "生態系能量遵循輸入、傳遞與散失的方向，物質循環和能量流動不可混為一談；結論需有營養階層與代謝證據。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立國中段考自然科；研究生產者、食物鏈與食物網、能量傳遞、分解者、生物量與生態資料判讀的能力方向。",
+    "authoringNote": "依官方課綱 KG 與公立國中公開試題能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bd"
+  "updatedAt": "2026-09-08",
+  "lessonId": "lesson-science-content-bd",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "公立國中段考自然科；僅研究題型與能力方向，未複製原題。",
+      "year": "114",
+      "subject": "science",
+      "locator": "生態系中能量的流動與轉換",
+      "observedPattern": "能力方向研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認營養階層與取食方向，再追蹤能量取得、代謝散失與物質循環，最後用生物量資料檢查推論限制。",
+  "solutionSteps": [
+    "讀題定位：圈出「證據界線」以及生產者、消費者、分解者、食物網、生物量或能量。",
+    "建立判準：生態系能量遵循輸入、傳遞與散失的方向，物質循環和能量流動不可混為一談；結論需有營養階層與代謝證據。",
+    "核對答案：選項 B「由生產者取得能量，沿食物鏈或食物網傳遞並逐級散失，物質循環但能量不完整循環」符合生態系能量流動與轉換原理。",
+    "排除誘答：分清物質循環與能量流動、能量與生物量、食物關係與能量方向，不把熱散失當成循環。",
+    "最後回查：確認營養階層、時間尺度、取樣條件與推論限制都和題幹一致。"
+  ]
 }

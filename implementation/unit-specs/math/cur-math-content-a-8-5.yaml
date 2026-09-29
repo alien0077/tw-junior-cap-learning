@@ -1,0 +1,174 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-8-5
+  knowledgeGraphIds:
+  - kg-math-content-a-8-5
+  title: A-8-5：因式分解的方法
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '8'
+  fusedScope:
+    officialCurriculum: A-8-5：因式分解的方法
+    curriculumIntent: A-8-5：因式分解的方法
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 已核對南一標示自學講義的公開分享索引頁91-100、康軒第三冊標示學生筆記的共同因式／十字交乘片段與章節索引、翰林官方資源站112版課本及補救GO索引；各來源權威與可見範圍須依lesson.versionResearch限定。正文與互動原創，三版官方原書完整比讀及內容審查仍pending
+    currentEvidenceStatus: curriculum-and-kg-grounded; unit-specific-public-shared-materials-reviewed; publisher-original-complete-chapter-comparison-pending; content-review-pending
+  learningGoals:
+  - 先逐項檢查最大公因式，再辨認提出後露出的平方差或完全平方結構
+  - 以首項係數、常數乘積與一次項係數和，判斷三項式適用的因式分解方法
+  - 比較兩種方法的中間式，說明方法選擇依據而非只報答案
+  - 以展開回乘檢查等值，並以因式樹判定是否已完全分解
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 先提最大公因式可降低後續因式分解係數並顯露內部結構
+  - 平方差、完全平方與一般二次三項式有不同的係數條件
+  - 十字交乘的交叉乘積之和必須對上中間項係數
+  - 一次分解完成不等於完全分解；需檢查所有因式是否仍可分
+  misconceptions:
+  - 看到三項就直接十字交乘，沒有先提出共同因式
+  - 只看首末項是平方便套完全平方，忽略中間項是否為兩倍乘積
+  - 十字交乘的交叉項相加不等於原中間係數仍接受候選式
+  - 因式樹停在可再分解的平方差或完全平方括號
+  contentFlow:
+  - 'hook: 給出 6x²−24，預測應先用哪種方法並指出可觀察的結構'
+  - 'predict: 因式分解前先判斷是否有公因式，再預測提出後會露出平方差、完全平方或一般三項式。'
+  - 'common-factor: 逐項找數字與變數共同因子，提出後重新讀取括號內形式'
+  - 'manipulate: 學生操作因式樹，提出公因式後選擇結構分支，輸入候選因式並逐層繼續分解。'
+  - 'observe: 每個分支同步更新因數配對、中項交叉和與展開係數表，標示尚未完全分解的葉節點。'
+  - 'explain: 學生指出分支選擇所依據的平方差／完全平方／交叉和證據，並說明如何確認最終因式乘回原式。'
+  - 'structure-branch: 依兩項平方差、三項完全平方或一般三項式分流'
+  - 'cross-check: 對一般三項式列首末項因數配對，計算交叉和是否等於中間項'
+  - 'compare: 將先提公因式與直接套公式的路徑並列，定位哪一步讓結構顯現'
+  - 'factor-tree: 對每個新括號重跑公因式與公式檢查，直到葉節點不能再分'
+  - 'verify: 展開原候選式，比較各次項係數及符號；以代值作補充而非唯一證明'
+  - 'transfer: 由拼接地墊面積式反推尺寸因式，說出可行長度條件'
+  - 'exit-ticket: 修正漏提公因式或錯套公式的解答並說明結構依據'
+  visualizations:
+  - 方法分流板：各列顯示項數、共同因子、平方結構與可選方法及排除理由
+  - 十字交乘配對表：列出首項、常數的因數組合和交叉乘積總和，與中間項係數對照
+  - 因式樹保留提出公因式後的新式子，逐層標記尚可使用的方法
+  - 回乘驗證帶逐項顯示展開來源和同次項係數比較
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-8-5-I01
+    component: StepwiseReasoningBlock
+    purpose: 依多項式結構把方法選擇轉成可追溯分流，並以回乘檢查每個候選因式
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        expression: '6x²−24'
+        commonFactor: 1
+        selectedMethod: undecided
+        crossProductSum: null
+        factorTreeDepth: 0
+    studentActions:
+    - 先提交第一個方法選擇及理由，答案先隱藏
+    - 在各項下標出可提出的係數因子和共同變數次方
+    - 選擇平方差、完全平方或十字交乘，填入判斷所需的係數關係
+    - 逐層展開因式樹，每層可撤回並改用另一方法
+    - 展開最終因式並比較原式係數，說明為何已完全分解
+    visualRules:
+    - 提出候選公因式後，逐項顯示整除結果；任一項不整除即不接受
+    - 完全平方分流需同時驗證首末項開方及中間項兩倍乘積
+    - 十字交乘需驗證交叉和與中間係數完全相符，不能只比積
+    - 因式樹仍有可拆節點時不得顯示「完全分解」完成狀態
+    - 預測及錯誤路徑保留；文字標籤和窄螢幕步驟卡完整呈現結構
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-8-5-I01
+      trigger: 對 6x²−24 直接用十字交乘，或將 x²+6x+9 說成平方差
+      prompt: 先提出共同因式，再檢查兩項是否平方差；若是三項完全平方，計算中間項是否等於首末平方根的兩倍乘積。
+      expectedEvidence: 6x²−24=6(x²−4)=6(x−2)(x+2) 的方法鏈；或 x²+6x+9 的中間項 6x=2·x·3
+    feedback:
+      correct: 標出共同因式與公式條件都被檢查的證據，再給一題首項係數不為 1 的三項式比較方法。
+      incorrect: 第一層詢問是否每項都含候選因子；第二層要求列出平方根或十字交叉和；重試後只展示出錯分流的局部步驟。
+    guidedActivity:
+      title: 地墊裁切單：把 6x²−24 完全分解
+      introduction: 先找兩項共有的最大因式，再看括號內是否形成平方差。每步輸入後才會解鎖下一步；答錯可看提示並重試。
+      stages:
+      - prompt: 第一步：6x² 與 −24 的最大公因式是什麼？
+        acceptedAnswers: ["6"]
+        correctFeedback: 正確。先提出 6，原式改寫為 6(x²−4)。
+        hint: 同時檢查係數 6、24 的最大公因數，以及兩項是否共有變數 x。
+      - prompt: 第二步：提出 6 後，括號內的式子是什麼？
+        acceptedAnswers: [x²−4, x^2-4]
+        correctFeedback: 正確。x²−4 是 x²−2²，可使用平方差。
+        hint: 將 6x² 和 −24 分別除以 6，記得常數項仍為負。
+      - prompt: 第三步：寫出完整因式分解式。
+        acceptedAnswers: [6(x−2)(x+2), 6(x+2)(x−2), 6(x-2)(x+2), 6(x+2)(x-2)]
+        correctFeedback: 完成。提出公因式後再用平方差，得到 6(x−2)(x+2)。
+        hint: 平方差 u²−v²=(u−v)(u+v)，此處 u=x、v=2。
+      completionMessage: 你已完成「先提公因式、再辨平方差」兩段分解。可將兩因式展開，檢查是否還原 6x²−24。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "先預測因式分解策略，再以逐項共同因子檢查、平方條件或交叉和作為操作證據；不複製外部資料或題目。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "方法卡可切換且保留原嘗試，局部回饋只針對共同因子、公式條件或交叉和，支援重試比較。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "為方法名稱、係數關係、因式層級和錯誤原因提供文字語意；即時狀態宣布目前檢查的是和、積或公因式。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "頁面以標題區分原式、分流理由、因式樹和回乘檢查；鍵盤可在父因式與子因式間導覽。"
+  capTransfer:
+    questionType: 拼接地墊面積多項式的策略分流與完全分解
+    stemConstraint: 某地墊面積式為 8x²−18 平方公尺；請先找共同因式，再判斷括號內是否可用平方差，最後展開檢查。
+    requiredResponse: 8x²−18=2(4x²−9)=2(2x−3)(2x+3)，說明先提出 2 才顯露平方差，並回乘還原。
+    scoring: 公因式選擇正確 1、平方差方法與完全分解正確 1、回乘及結構理由完整 1
+  exitTicket:
+    prompt: 判斷 9y²−12y+4 是否為完全平方，寫出因式並指出哪個係數關係支持你的判斷。
+    successCriteria:
+    - 寫成 (3y−2)²
+    - 指出中間項 −12y 等於 −2·3y·2
+    - 展開後三個係數均與原式相同
+  expressionExtension:
+    applicable: true
+    task: 比較 4x²−25 與 4x²+12x+9，分別說明為何使用平方差或完全平方，並以展開證明兩個因式結果。
+    constraint: 學生須列出結構條件，不只寫公式名稱；回饋只標示未符合的係數關係。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 8x²−18 必須先提 2 再辨認 4x²−9 的平方差，得到 2(2x−3)(2x+3)。
+  - 對 9y²−12y+4，只有在首末項平方根和中間項兩倍乘積三者吻合時才接受完全平方分流。
+  - 十字交乘候選需同時乘回首項與常數項，交叉和須等於中間項係數；只符合乘積不可通過。
+  - 320px、375px、768px 和鍵盤均可完成分流、方法切換、因式樹編輯及展開檢查；樹節點及回饋具文字名稱。
+  - transfer 兩式都能完全分解且展開回原式；理由明確指出平方差與完全平方的結構差異。
+  - 因式樹或互動分支失效時，文字 fallback 提供逐層因式清單、候選配對與係數比對，仍可完成完全分解及同一遷移任務。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-5
+    role: official-curriculum-source-of-truth

@@ -1,0 +1,43 @@
+{
+  "asOf": "2026-09-28",
+  "unit": "lesson-english-performance-6-iv-5",
+  "scope": "Register one missing authored fusion manuscript, repair the unit's incorrect generic learner content/specification, and preserve all prior registered manuscripts and question records.",
+  "priorManuscript": {
+    "before": "Four generic learner sections and six generic teaching filler sections; no fusionRecord or interaction; the unit was absent from the authored-fusion inventory.",
+    "after": "Six unit-specific student-visible sections mirrored by teaching.body, three publisher-resource research records with explicit limits, an original fusionRecord, and four answer/retry GuidedChoice steps; lesson remains draft for the user's ChatGPT review."
+  },
+  "curriculumBasis": {
+    "officialIndicator": "6-Ⅳ-5: 主動查詢工具書或網路",
+    "knowledgeGraphId": "kg-english-performance-6-iv-5",
+    "officialManual": "Official curriculum manual pp.101-102 distinguishes using dictionary/web example sentences to understand vocabulary use and using query tools to deepen understanding of encountered English information; adjacent 7-Ⅳ-1 adds contextual dictionary-meaning selection and is not conflated with this indicator.",
+    "authoredTeaching": "Narrow the question from context; form a part-of-speech/context hypothesis; inspect dictionary entry fields; compare examples with the original sentence; distinguish dictionaries, publisher learning resources, and general web search; restate and record the verified meaning. The light bag examples are original."
+  },
+  "publisherEvidenceBoundary": {
+    "nani": "Public Nani learning-set introduction lists vocabulary, example sentences, flashcard, matching, quiz, and writing modes; actual learning sets require login and were not read.",
+    "kanghsuan": "Public English resource pages show course vocabulary, example sentences, polysemy, Flashcard, and Word Bank entry points; these establish public resource features, not this indicator's textbook chapter or prescribed pedagogy.",
+    "hanlin": "A public Hanlin dictionary entry exposes pronunciation, part of speech, senses, and examples; a public preview identifies supplemental vocabulary material. Neither is claimed as the target textbook chapter.",
+    "claim": "Three public publisher-associated digital resource formats were read and compared at the scope stated above. No claim of reading or fusing the three publishers' assigned textbook chapters; lesson source limits are recorded and publisher chapter evidence remains pending."
+  },
+  "implementation": [
+    "Replaced generic lesson prose with six original sections and aligned the learner-visible content headings with teaching.body to avoid duplicate rendering.",
+    "Added a source-qualified three-publisher research record and fusionRecord distinguishing common query/verification principles, observed resource-format differences, and original pedagogical additions.",
+    "Replaced the mismatched generic interaction specification with this unit's GuidedChoiceBlock, question-tool vocabulary, misconceptions, test cases, and truthful review boundary.",
+    "Added a dedicated Node contract test and real Python Playwright browser regression; registered npm scripts and included the Node test in pretest.",
+    "Rebuilt the learner site's data index and lesson shards after browser QA exposed stale shard content; verified the new authored lesson is what the learner page renders.",
+    "No lesson-content review, question edits, or rewrites of already registered manuscripts were performed."
+  ],
+  "verification": {
+    "targetRegression": "PASS: npm run test:english:6-iv-5",
+    "siteIndex": "PASS: rebuilt and checked; 1,052 lessons, 10,566 questions, 40 mapping sets.",
+    "dataValidation": "PASS: 14,513 JSON files, 13,114 IDs, 1,032 KG nodes; lessons/questions remain draft under the separate release-status workflow.",
+    "finalDataValidation": "PASS after this report was added: 14,514 JSON files, 13,114 IDs, 1,032 KG nodes.",
+    "implementationSpecs": "PASS: 1,027 specs, 0 errors, 14 eligible, 1,013 pending.",
+    "fullNpmTest": "PASS: npm test, including D-402 regression; workbench traversal rendered 1,027/1,027 lessons.",
+    "browser": "PASS: six visible original sections, no duplicate headings; four GuidedChoice steps; keyboard wrong-answer hint and correct feedback; axe 0 violations/0 incomplete; widths 320/375/768 with no overflow; one external request blocked; zero page errors.",
+    "playwrightRuntime": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3; Playwright 1.58.0; Chromium executable resolved for this interpreter; authorized local Chrome launch succeeded.",
+    "publicExamLedger": "PASS, read-only: 10,566/10,566 question records have traceable public-exam source patterns; pending 0. Catalog audit: 492 entries, 23,141 refs, all 281 question-source URLs covered. No questions changed.",
+    "authoredFusionInventory": "736/791 = 93.05%; learning-content 583/583, learning-performance 153/208; 55 units remain unregistered. Presence-only manuscript registry; no content review gate."
+  },
+  "subtasks": "none",
+  "commitPush": "not performed; overall objective remains incomplete"
+}

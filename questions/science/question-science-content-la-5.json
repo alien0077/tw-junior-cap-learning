@@ -2,23 +2,23 @@
   "id": "question-science-content-la-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年1月28日自然科教室的觀察中，連續觀察「La：生物間的交互作用」3 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "隔離螞蟻的花圃框中，蚜蟲先增加，兩週後瓢蟲也減少；最恰當的解釋是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「La：生物間的交互作用」時只依樣本的顏色（未記錄7天的時間與條件）"
+      "text": "螞蟻可能同時影響蚜蟲與瓢蟲，但仍須排除植物量、天氣和其他天敵因素"
     },
     {
       "id": "B",
-      "text": "連續7天研究「La：生物間的交互作用」並記錄到樣本穩定進行物質交換"
+      "text": "蚜蟲增加必然直接殺死所有瓢蟲"
     },
     {
       "id": "C",
-      "text": "研究「La：生物間的交互作用」時只依樣本的名稱推測，不進行觀察"
+      "text": "瓢蟲減少證明螞蟻是瓢蟲唯一食物"
     },
     {
       "id": "D",
-      "text": "研究「La：生物間的交互作用」時只觀察一次外形，便排除所有其他證據"
+      "text": "只要有時間先後就已完成唯一因果證明"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "B",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「La：生物間的交互作用」。"
+    "value": "A",
+    "explanation": "時間序列提示螞蟻移除可能透過蚜蟲或天敵網絡造成連鎖效果，但還需要控制和對照排除其他原因。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的捕食、競爭、寄生、互利、間接作用、族群資料與控制變因能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-la"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-la",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "生物間交互作用、食物網與資料判讀",
+      "pattern": "取公立學校自然科評量以關係辨識、族群變化和證據推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以關係辨識、族群變化和證據推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "捕食、競爭、共生與生態資料",
+      "pattern": "取公開會考以圖表、時間序列、直接與間接作用及實驗設計的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、時間序列、直接與間接作用及實驗設計的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "食物關係、資源競爭與族群實驗",
+      "pattern": "取公立國中試題以互動方向、資源限制、對照與重複量測的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以互動方向、資源限制、對照與重複量測的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把先後順序當作線索，不把它直接升格為唯一因果。",
+  "solutionSteps": [
+    "先找出兩個生物和它們共享或交換的資源。",
+    "記錄誰受益、誰受損，以及關係是直接還是透過第三者發生。",
+    "沿時間序列比較兩族群，而不是只看同時出現。",
+    "用對照、隔離或資源改變檢查替代解釋。",
+    "用關係類型、方向、證據與限制寫出條件式結論。"
+  ]
 }

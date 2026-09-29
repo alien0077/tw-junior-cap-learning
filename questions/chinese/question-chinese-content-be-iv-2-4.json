@@ -2,41 +2,76 @@
   "id": "question-chinese-content-be-iv-2-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "對聯上下聯的字數與結構通常應如何？",
+  "prompt": "正式書信中，哪組順序最能幫助收件者辨識關係與內容？",
   "options": [
     {
       "id": "A",
-      "text": "相對整齊並講究對偶"
+      "text": "先署名，再隨意補內容"
     },
     {
       "id": "B",
-      "text": "字數完全隨意"
+      "text": "只寫正文不標對象"
     },
     {
       "id": "C",
-      "text": "只能使用英文"
+      "text": "把日期放在每句中間"
     },
     {
       "id": "D",
-      "text": "上下聯內容必須相同"
+      "text": "稱謂、問候或開頭、正文、結尾敬語與署名日期"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-be-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "對聯重視字數、結構與詞性相對。"
+    "value": "D",
+    "explanation": "正式書信需要由稱謂建立對象，再進入正文，最後以結尾、署名和日期完成格式。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "書信、便條、對聯與人際溝通；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究書信、便條、對聯的目的、對象、格式、語氣與必要資訊。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫人際溝通文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-be-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-be-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "書信、便條與應用語境",
+      "observedPattern": "公立學校國文評量要求依溝通對象、目的、格式、語氣和必要資訊判斷書信便條，並辨識對聯的結構線索；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "對象、格式、語氣與資訊完整",
+      "observedPattern": "公立學校國文評量要求依溝通對象、目的、格式、語氣和必要資訊判斷書信便條，並辨識對聯的結構線索；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "依收件者閱讀與書信格式檢查資訊順序。",
+  "solutionSteps": [
+    "先找稱謂與對象。",
+    "確認正文承擔主要訊息。",
+    "檢查結尾、署名與日期是否完成溝通。",
+    "D 的順序最完整。",
+    "指出缺少署名可能造成哪種回覆困難。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

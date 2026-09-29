@@ -2,41 +2,78 @@
   "id": "question-science-content-ja-iv-4-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年10月15日自然科教室的觀察中，將 22 g 食鹽溶於 826 g 水，研究「Ja-Ⅳ-4：化學反應的表示法」時，溶液質量為何？",
+  "prompt": "化學式 CO₂ 中的下標 2 表示什麼？",
   "options": [
     {
       "id": "A",
-      "text": "804 g"
+      "text": "反應需要兩個分子"
     },
     {
       "id": "B",
-      "text": "18172 g"
+      "text": "碳原子有兩個質子"
     },
     {
       "id": "C",
-      "text": "826 g"
+      "text": "一個二氧化碳分子含兩個氧原子"
     },
     {
       "id": "D",
-      "text": "848 g"
+      "text": "反應速率為 2"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ja-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：22＋826＝848 g。 本題對應 KG「Ja-Ⅳ-4：化學反應的表示法」。"
+    "value": "C",
+    "explanation": "下標表示單一粒子內的原子數，不能與方程式前的係數混淆。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的化學式、方程式、係數、下標、狀態符號、反應條件及粒子模型能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向保留並核對單元專屬改寫；題幹、選項、答案、解析與五步解法均未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ja-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ja-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "化學方程式、係數、下標、狀態符號與反應條件",
+      "pattern": "取由符號表示、粒子數量、狀態和反應條件解讀化學反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由符號表示、粒子數量、狀態和反應條件解讀化學反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化學式、方程式、配平與粒子資料",
+      "pattern": "取從化學式與方程式判讀元素比例、守恆、狀態與反應資訊的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從化學式與方程式判讀元素比例、守恆、狀態與反應資訊的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨化學方程式各符號的功能，再逐元素核對表示是否正確。",
+  "solutionSteps": [
+    "讀題定位：抓出「下標意義」涉及的箭頭、係數、下標、狀態或條件。",
+    "建立判準：下標表示單一粒子內的原子數，不能與方程式前的係數混淆。",
+    "核對答案：選項 C「一個二氧化碳分子含兩個氧原子」符合判準。",
+    "排除誘答：分清係數、下標、狀態符號與反應條件的功能。",
+    "最後回查：逐元素或逐符號核對，確認沒有改動物質本身的化學式。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

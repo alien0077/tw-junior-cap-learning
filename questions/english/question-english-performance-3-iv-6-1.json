@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-6-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For the「3-Ⅳ-6／理解基本重要句型」practice, choose the grammatically correct sentence (question 1).",
+  "prompt": "The school shuttle ___ at 7:20 every weekday, so students should be at the stop before then.",
   "options": [
     {
       "id": "A",
-      "text": "Ivy has prepareed the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "arrived"
     },
     {
       "id": "B",
-      "text": "Ivy have prepareed the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "arrives"
     },
     {
       "id": "C",
-      "text": "Ivy prepareing has the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "is arriving"
     },
     {
       "id": "D",
-      "text": "Ivy has prepare the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "arrive"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-6"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A singular subject such as a person's name takes has; the past participle follows has. This item targets 3-Ⅳ-6／理解基本重要句型, question 1."
+    "value": "B",
+    "explanation": "正確答案 B。every weekday 表示固定班次，主詞 the school shuttle 是單數，現在簡單式動詞要加 -s。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C-1%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87-%E8%A9%A6%E9%A1%8C%E5%8D%B7.pdf",
+    "sourceLocator": "依公立國中公開段考逐題研究句型、語境與推理模式；各題精確原卷題號見 examPatternRefs。只作 pattern-only 命題參照，不複製原題、選項或答案。",
+    "authoringNote": "依官方課綱與本單元 KG 獨立撰寫情境、選項、答案、繁中解析及步驟；公校原卷僅作可追溯能力模式參照。單元內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-6"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C-1%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87-%E8%A9%A6%E9%A1%8C%E5%8D%B7.pdf",
+      "title": "高雄市立國昌國中108學年度第2學期一年級第3次段考英文",
+      "year": "108-2",
+      "subject": "english",
+      "locator": "第16題：以 sometimes 表示反覆發生的天氣情形，判斷第三人稱單數現在式",
+      "locatorLevel": "item",
+      "observedPattern": "參照頻率線索搭配現在簡單式的命題模式；本題改寫為校車時刻表。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E8%8B%B1%E8%AA%9E%E5%8D%B7.pdf",
+      "title": "高雄市立國昌國中110學年度第2學期一年級第3次段考英文",
+      "year": "110-2",
+      "subject": "english",
+      "locator": "第18題：以 every two weeks 描述固定清潔頻率並判斷動詞形式",
+      "locatorLevel": "item",
+      "observedPattern": "參照週期性習慣與動詞形式的對應；題幹及情境均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "先把固定時刻表辨認為規律，再讓單數主詞與現在式動詞一致。",
+  "solutionSteps": [
+    "圈出 every weekday，判定句子描述反覆發生的固定班次。",
+    "確認主詞是單數的 the school shuttle，不是複數的學生。",
+    "固定安排通常用現在簡單式；因此排除只表示一次過去的 arrived。",
+    "現在簡單式遇到第三人稱單數 shuttle，動詞加 -s，得到 arrives。",
+    "把句子放回公告情境朗讀，確認它是在說一般班表，不是此刻正在進站。"
+  ]
 }

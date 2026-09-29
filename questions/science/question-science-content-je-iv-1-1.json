@@ -2,23 +2,23 @@
   "id": "question-science-content-je-iv-1-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年2月4日校園實驗室的觀察中，將 45 g 食鹽溶於 694 g 水，研究「Je-Ⅳ-1：化學反應速率與影響因素」時，溶液質量為何？",
+  "prompt": "將相同質量的碳酸鈣由大顆粒改成粉末，加入相同濃度與體積的酸，通常反應會較快，主要原因是？",
   "options": [
     {
       "id": "A",
-      "text": "649 g"
+      "text": "粉末總表面積較大，酸與碳酸鈣接觸及有效碰撞機會增加"
     },
     {
       "id": "B",
-      "text": "739 g"
+      "text": "粉末的元素種類變多"
     },
     {
       "id": "C",
-      "text": "31230 g"
+      "text": "粉末使生成物質量必定增加"
     },
     {
       "id": "D",
-      "text": "694 g"
+      "text": "粉末會讓酸失去所有離子"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,54 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：45＋694＝739 g。 本題對應 KG「Je-Ⅳ-1：化學反應速率與影響因素」。"
+    "value": "A",
+    "explanation": "在其他條件相同時，粉末有較大總表面積，增加接觸和有效碰撞，因而縮短產氣所需時間；不代表改變元素或總產量。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的反應速率、碰撞、濃度、溫度、表面積、催化劑與公平實驗能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-je-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-je-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "反應速率、濃度、溫度、表面積與資料判讀",
+      "pattern": "取由反應時間、實驗條件與資料圖表判讀速率快慢及影響因素的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由反應時間、實驗條件與資料圖表判讀速率快慢及影響因素的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "碰撞、反應速率、催化劑與生活情境",
+      "pattern": "取從實驗圖表、粒子模型與生活製程推論反應速率變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從實驗圖表、粒子模型與生活製程推論反應速率變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把表面積改變連到粒子接觸，而非產物總量。",
+  "solutionSteps": [
+    "固定碳酸鈣質量與酸條件。",
+    "比較顆粒和粉末的暴露表面積。",
+    "用碰撞機會解釋產氣速率。",
+    "排除成分變多、產量必增與離子消失。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

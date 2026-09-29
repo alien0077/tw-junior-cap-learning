@@ -2,41 +2,76 @@
   "id": "question-chinese-sentence-patterns-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "敘事句主要交代？",
+  "prompt": "「傍晚，志工把遺失物送到警衛室，並在簿子上留下聯絡方式。」這句主要完成什麼功能？",
   "options": [
     {
       "id": "A",
-      "text": "人物、事件或變化"
+      "text": "交代人物、時間與事件發展"
     },
     {
       "id": "B",
-      "text": "字體顏色"
+      "text": "判定某物的定義"
     },
     {
       "id": "C",
-      "text": "作者年齡"
+      "text": "表達作者贊成或反對"
     },
     {
       "id": "D",
-      "text": "標題格式"
+      "text": "要求讀者立刻行動"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ac-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "依本單元的觀察線索與語文功能判斷；其他選項不符合題幹條件。"
+    "explanation": "句子交代傍晚、志工、送遺失物與留下方式，是按事件提供資訊的敘事。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-sentence-patterns-1.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究句型、事件、判斷、立場與推測能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫句型辨識題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-sentence-patterns"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-sentence-patterns",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "句型、語意與語氣",
+      "observedPattern": "公立學校國文評量把句型放進生活與閱讀語境，要求辨認事件、判斷、立場、推測及請求功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "句子功能、推論與表達",
+      "observedPattern": "公立學校國文評量把句型放進生活與閱讀語境，要求辨認事件、判斷、立場、推測及請求功能；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找時間、人物、動作與事件順序，再判斷句子是在敘述發生了什麼。",
+  "solutionSteps": [
+    "讀題定位：圈出「敘事句」及時間、人物、動作、判定詞、模態詞或立場詞。",
+    "切分句意：依連接詞與語氣把句子拆成資訊單位，判斷事件、判斷、推測或立場；本題核心是「句子交代傍晚、志工、送遺失物與留下方式，是按事件提供資訊的敘事。」",
+    "核對正解：選項 A 能對應句子的主要功能與語意強度。",
+    "排除誘答：檢查是否只看一個字、把評價當事件、把推測當確定，或忽略句中的限制。",
+    "回讀驗證：用白話重述句子，確認人物做了什麼、說話者判斷什麼以及立場強弱都沒有遺漏。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

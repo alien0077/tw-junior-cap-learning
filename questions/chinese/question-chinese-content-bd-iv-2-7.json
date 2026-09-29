@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bd-iv-2-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一段文章先提出「老建築值得保存」，接著列出建築年代、結構特色與居民訪談，最後回扣保存理由。這種安排主要形成什麼效果？",
+  "prompt": "比較兩種遮陽方案：甲降溫3度但成本高，乙降溫2度但維護低。最合理的結論是？",
   "options": [
     {
       "id": "A",
-      "text": "刻意避免提出任何結論"
+      "text": "甲在降溫幅度較高，乙在成本或維護面向可能較有利，需依目標決定"
     },
     {
       "id": "B",
-      "text": "以多種證據逐步支持核心主張"
+      "text": "甲在所有方面都比較好"
     },
     {
       "id": "C",
-      "text": "用無關故事取代論證"
+      "text": "乙降溫較少所以一定不能用"
     },
     {
       "id": "D",
-      "text": "只靠作者身分要求讀者相信"
+      "text": "只要降溫就不必看維護"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bd-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "年代、結構與訪談從不同面向支持同一主張，讓論證較完整。"
+    "value": "A",
+    "explanation": "資料顯示兩方案各有優勢，應依校方目標、預算和維護能力選擇，不能把單一指標擴成全面排名。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
-    "sourceLocator": "114年國中教育會考國文科；研究閱讀理解、論證、比較與寫作分析能力方向（多重證據支持主張）；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；另以官方語文領域課綱核對 Bd-Ⅳ-2（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究比較基準、比喻映射、同尺度資料與類比限制。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫比較比喻論證題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bd-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bd-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較、比喻與論證判讀",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較基準、比喻映射與證據",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分別保留各面向結果，再把選擇連回明示的決策目標。",
+  "solutionSteps": [
+    "列出降溫和成本／維護兩個面向。",
+    "比較甲乙各自優勢。",
+    "確認沒有整體資料支持全面排名。",
+    "A 最符合多面向比較。",
+    "若目標改為短期降溫，說明結論可能如何調整。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

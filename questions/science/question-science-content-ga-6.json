@@ -2,41 +2,67 @@
   "id": "question-science-content-ga-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年5月30日學校研究社的觀察中，若以 Bb 表示一對等位基因，研究「Ga：生殖與遺傳」時，Bb 個體的基因型屬於哪一類？",
+  "prompt": "同一品種的植物在光照充足與遮陰環境中，葉片大小不同，但 DNA 序列沒有改變。這項觀察最適合支持哪個結論？",
   "options": [
     {
       "id": "A",
-      "text": "「Ga：生殖與遺傳」中的同型合子（兩個等位基因相同）"
+      "text": "所有環境差異都會改變 DNA"
     },
     {
       "id": "B",
-      "text": "「Ga：生殖與遺傳」中只有一個基因（Bb 只剩一個字母）"
+      "text": "性狀表現可能同時受遺傳型與環境影響"
     },
     {
       "id": "C",
-      "text": "「Ga：生殖與遺傳」中不含遺傳物質（Bb 不具遺傳意義）"
+      "text": "DNA 沒改變就不可能有性狀差異"
     },
     {
       "id": "D",
-      "text": "「Ga：生殖與遺傳」中的異型合子（Bb）"
+      "text": "看到差異即可證明發生了可遺傳突變"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ga"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "Bb 含有兩個不同的等位基因，因此是異型合子。 本題對應 KG「Ga：生殖與遺傳」。"
+    "value": "B",
+    "explanation": "光照改變時葉片大小改變而 DNA 未變，支持環境會影響表現型；這不能直接證明 DNA 突變或可遺傳改變。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的生殖、遺傳、資料判讀及模型限制能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料的能力方向獨立改寫；題幹、選項、答案、解析與五步解法均針對 Ga 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ga"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ga",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生殖、遺傳、配子、遺傳比例與資料判讀",
+      "pattern": "取由繁殖過程、遺傳資料、比例與環境條件建立條件式推論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由繁殖過程、遺傳資料、比例與環境條件建立條件式推論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把遺傳物質改變、表現型改變與環境條件分開。",
+  "solutionSteps": [
+    "比較兩組的控制條件，只把光照視為主要差異。",
+    "注意 DNA 序列未改變，但葉片大小仍不同。",
+    "因此環境可影響性狀表現，性狀不是只由 DNA 單獨決定。",
+    "A、D 過度延伸，C 否認環境效應。",
+    "結論應保留在『本條件下環境影響表現型』，答案為 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

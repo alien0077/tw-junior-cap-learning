@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-6-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「B-Ⅳ-6／圖片描述」task, what is the best way to prepare question 2?",
+  "prompt": "The school garden has **five sunflowers, two benches, and one fountain**. How many benches are shown?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about B-Ⅳ-6／圖片描述."
+      "text": "Five"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about B-Ⅳ-6／圖片描述."
+      "text": "Two"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking B-Ⅳ-6／圖片描述."
+      "text": "One"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about B-Ⅳ-6／圖片描述."
+      "text": "Seven"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,61 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets B-Ⅳ-6／圖片描述, question 2."
+    "value": "B",
+    "explanation": "The sentence assigns two benches, five sunflowers, and one fountain. Since the question asks only for benches, the matching count is two (B); the other numbers belong to different objects."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度第 2 學期英文段考；研究圖片中的人物、動作、數量、位置、比較與方向描述；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立學校國中英語段考；只研究圖像描述、位置、數量、顏色、動作、比較、缺漏、順序與整體推論題型。",
+    "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫圖片描述題；未複製原文、選項、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-b-iv-6"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-english-content-b-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "圖片描述、位置與實用英語",
+      "observedPattern": "公立學校英語評量要求從圖像或場景辨認位置、數量、顏色、動作、比較、缺漏、順序與整體推論；本題改為全新文字場景，未複製圖片。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中111學年度第一學期八年級第一次定期評量英文科試題",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "校方附件「二年級英語科.pdf」第35題（選擇題）",
+      "pattern": "原卷第35題依表格資訊回答 How many people...，先鎖定詢問名詞再提取對應數量；本題改為從原創校園場景句中擷取 benches 的數量，避免混淆其他物件的數字。",
+      "observedPattern": "原卷第35題依表格資訊回答 How many people...，先鎖定詢問名詞再提取對應數量；本題改為從原創校園場景句中擷取 benches 的數量，避免混淆其他物件的數字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "圖像描述、細節與應用",
+      "observedPattern": "公立學校英語評量要求從圖像或場景辨認位置、數量、顏色、動作、比較、缺漏、順序與整體推論；本題改為全新文字場景，未複製圖片。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "數量題要先鎖定名詞，再避免把不同物件的數字相加或交換。",
+  "solutionSteps": [
+    "先讀問題 How many benches are shown?，圈出核心名詞 benches，確認只求長椅數量。",
+    "回到句子逐組配對名詞與數字：five 對 sunflowers，two 對 benches，one 對 fountain。",
+    "排除其他數字：five 是向日葵的數量，one 是噴泉的數量，都不能回答 benches。",
+    "找到 benches 對應 two，選 B。題目問英文數量，將 two 對應選項 Two。",
+    "回讀檢查：There are two benches. 與場景敘述一致；不需要把不同物件的數量相加。"
+  ]
 }

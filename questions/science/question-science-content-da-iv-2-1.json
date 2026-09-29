@@ -2,23 +2,23 @@
   "id": "question-science-content-da-iv-2-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年9月10日學校研究社的觀察中，連續觀察「Da-Ⅳ-2：細胞是生物體的基本單位」2 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "說『細胞是生物體的基本單位』，最適合的意思是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "連續3天研究「Da-Ⅳ-2：細胞是生物體的基本單位」並記錄到樣本穩定進行物質交換"
+      "text": "細胞能進行維持生命所需的基本活動，生物體的功能可由細胞或細胞合作完成"
     },
     {
       "id": "B",
-      "text": "研究「Da-Ⅳ-2：細胞是生物體的基本單位」時只依樣本的顏色（未記錄3天的時間與條件）"
+      "text": "所有生物都只由一個細胞組成"
     },
     {
       "id": "C",
-      "text": "研究「Da-Ⅳ-2：細胞是生物體的基本單位」時只依樣本的名稱推測，不進行觀察"
+      "text": "每個細胞都能獨立完成多細胞生物的全部功能"
     },
     {
       "id": "D",
-      "text": "研究「Da-Ⅳ-2：細胞是生物體的基本單位」時只觀察一次外形，便排除所有其他證據"
+      "text": "細胞只是一種放大觀察用的圖形"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,42 @@
   "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Da-Ⅳ-2：細胞是生物體的基本單位」。"
+    "explanation": "A。細胞是能執行生命活動、維持內部條件並傳遞遺傳資訊的基本結構與功能單位；『基本』不等於所有生物都只有一個細胞。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的細胞層次、分工與生物案例能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Da-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-da-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-da-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "細胞基本單位、單細胞多細胞、層次與分工判讀",
+      "pattern": "取由生物案例、細胞層次與功能分工推論生命組織的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生物案例、細胞層次與功能分工推論生命組織的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用能否獨立執行生命活動界定細胞，再區分單細胞與多細胞。",
+  "solutionSteps": [
+    "圈出案例的細胞數、構造、功能、組成層次與是否能獨立維持生命活動。",
+    "先判斷單細胞或多細胞，再分辨細胞、組織、器官與器官系統。",
+    "把不同細胞或組織的專門工作接成合作路徑，說明功能如何完成。",
+    "排除把組織當單一細胞、把器官當放大細胞或把病毒直接當細胞生物的說法。",
+    "回查每個層次的證據與名稱，並說明結論適用的生物與功能範圍。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

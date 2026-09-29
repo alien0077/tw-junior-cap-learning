@@ -1,0 +1,27 @@
+{
+  "decisionId": "D-467",
+  "date": "2026-09-29",
+  "unit": "cur-math-content-s-9-13",
+  "change": "Defined a truthful degraded state when the geometry simulation script cannot load: authored lesson prose and text GuidedChoice remain available, while the unavailable geometry model is not represented as usable.",
+  "automatedTests": {
+    "nodeVisibleLesson": "PASS",
+    "nodeGeometryInteraction": "PASS",
+    "playwrightFallback": {
+      "status": "PASS",
+      "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "playwright": "1.58.0",
+      "browser": "Chromium revision 1208",
+      "faultInjection": "Blocked /site/simulations.js",
+      "observed": "Six lesson sections remain visible; GuidedChoice text interaction accepts keyboard answer and displays feedback; no page errors."
+    },
+    "sandboxAttempt": "PermissionError: Operation not permitted while binding localhost server; same test passed in authorized local-browser environment. No dependency was reinstalled."
+  },
+  "currentProjectGates": {
+    "questionSourceLedger": "10,566/10,566 recorded; pending 0",
+    "authoredFusionManuscriptInventory": "791/791 (100%; manuscript-presence inventory)",
+    "qaContract": "980/1,027 passed; 47 failed",
+    "specValidation": "1,027 files; 0 structural errors; 24 eligible; 1,003 pending",
+    "statusPromotion": "None; unit-level implementation QA remains unverified overall.",
+    "commitPush": "Not performed"
+  }
+}

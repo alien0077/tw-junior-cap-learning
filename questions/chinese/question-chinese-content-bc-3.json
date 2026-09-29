@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bc-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "某報告寫『本校 80 位受訪者中有 48 位支持增設遮雨棚』。下列哪個結論沒有超出資料？",
+  "prompt": "聲音地圖用顏色深淺標示音量，文字說明補上測量日期、單位與測量次數。若只看顏色不讀文字，最可能漏掉什麼？",
   "options": [
     {
       "id": "A",
-      "text": "增設後一定不會再淋雨"
+      "text": "校園地圖一定是由學生繪製"
     },
     {
       "id": "B",
-      "text": "受訪者中有 60% 表示支持"
+      "text": "顏色越深就必然代表噪音造成傷害"
     },
     {
       "id": "C",
-      "text": "全市學生都支持增設遮雨棚"
+      "text": "數值如何定義、資料何時取得，以及結果是否來自多次測量"
     },
     {
       "id": "D",
-      "text": "所有家長都反對現有設計"
+      "text": "所有區域的測量條件一定完全相同"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "48÷80=60%，這只描述受訪樣本，不能推論全市或預測必然結果。"
+    "value": "C",
+    "explanation": "顏色提供視覺比較，文字補足單位、日期與次數；圖像焦點不能取代資料說明，也不能直接推出健康傷害。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "公開國中教育會考／公立國中段考的說明文與資料判讀能力方向（樣本與比例）；另以國語文課綱核對：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; removed old year labels and did not reproduce source wording, options, passage, figure, or answer. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編說明閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文、圖表與資料理解",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明方法、因果與閱讀推論",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認說明對象與讀者目的，再沿資料—組織—解釋—方案—評估的路線閱讀，最後檢查來源、條件與不確定性是否被保留。",
+  "solutionSteps": [
+    "讀題定位：圈出「圖像與文字」與說明對象、讀者目的、資料、定義、分類、比較、因果或方案。",
+    "追蹤說明路線：確認作者先讓讀者看見什麼，再如何整理、解釋、比較與行動；本題核心是「顏色提供視覺比較，文字補足單位、日期與次數；圖像焦點不能取代資料說明，也不能直接推出健康傷害。」",
+    "核對正解：選項 A「數值如何定義、資料何時取得，以及結果是否來自多次測量」能回扣資料、讀者需要與推理限制，沒有把視覺或口號當成證明。",
+    "排除誘答：檢查是否忽略單位／來源／樣本、混淆定義與分類、把相關當因果，或提出沒有檢查方式的方案。",
+    "結論回查：用『對象—資料—組織—解釋—行動—評估』重讀，確認文字能讓不同讀者理解且知道哪些仍待觀察。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

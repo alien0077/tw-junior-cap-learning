@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-2-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年6月5日學校研究社的觀察中，一個物體質量為 450 g、體積為 23 cm³，研究「Eb-Ⅳ-2：力矩與槓桿」時，其密度為何？",
+  "prompt": "槓桿上的抗力點位於支點和施力點之間，這是哪一類槓桿？",
   "options": [
     {
       "id": "A",
-      "text": "473 g/cm³"
+      "text": "第三類"
     },
     {
       "id": "B",
-      "text": "19.5652 g/cm³"
+      "text": "第二類"
     },
     {
       "id": "C",
-      "text": "0.0511111 g/cm³"
+      "text": "第一類"
     },
     {
       "id": "D",
-      "text": "10350 g/cm³"
+      "text": "沒有分類"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "密度＝質量÷體積＝450÷23＝19.5652 g/cm³。 本題對應 KG「Eb-Ⅳ-2：力矩與槓桿」。"
+    "value": "C",
+    "explanation": "支點—抗力點—施力點的順序表示抗力點在中間，屬第二類槓桿，例如開瓶器。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作力臂、力矩、槓桿平衡與工具分類的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-2"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "槓桿力臂、力矩與平衡題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%835-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "拔釘器、槓桿與簡單機械題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.mcjhs.tp.edu.tw/?q=zh-hant%2Fdownload%2Ffile%2Ffid%2F9952",
+      "title": "臺北市立明德國中自然與生活科技科九上補考題庫",
+      "year": "113",
+      "locator": "扳手施力方向、力矩與簡單機械題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用三個位置的相對順序分類，不看工具外形。",
+  "solutionSteps": [
+    "列出支點、抗力點和施力點。",
+    "找出抗力點位於中間。",
+    "對照三類槓桿定義。",
+    "確認分類不由工具名稱或外觀決定。",
+    "所以答案是 B。"
+  ]
 }

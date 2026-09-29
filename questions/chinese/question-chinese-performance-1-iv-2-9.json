@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-1-iv-2-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "人物回答『這件事嘛……我再想想』，語氣和停頓最可能暗示什麼？",
+  "prompt": "討論中有人提出不同意見；哪句回應最能尊重對方又保留自己的立場？",
   "options": [
     {
       "id": "A",
-      "text": "已經明確答應且沒有疑慮"
+      "text": "你完全不懂，不用再說。"
     },
     {
       "id": "B",
-      "text": "正在宣布確定的時間表"
+      "text": "我理解你重視執行速度；我仍擔心安全資料不足，能否先做一週觀察？"
     },
     {
       "id": "C",
-      "text": "完全沒有回應問題"
+      "text": "既然不同意，就代表你不在乎大家。"
     },
     {
       "id": "D",
-      "text": "尚未決定或有所猶豫"
+      "text": "好啦你說什麼都對，我不想討論。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "拖長語氣與停頓常透露猶豫，但仍應結合前後對話確認人物真正立場。"
+    "value": "B",
+    "explanation": "回應先重述對方關注，再提出自身理由與可行提議，不把不同意見攻擊成品格問題。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究聲情、聆聽與口語表達判讀題型（停頓與態度）；課綱 1-Ⅳ-2：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究聲情、重音、停頓、受眾調整、同理、反諷與異議處理。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文聆聽與溝通表現 Ab-Ⅳ-2 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-1-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-1-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口語語氣、修辭與受眾",
+      "observedPattern": "公立學校國文評量以聲情、重音、停頓、修辭、受眾調整、同理回應、反諷與異議處理要求學生判讀表達效果；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "演講表達、反問與同理",
+      "observedPattern": "公立學校國文評量以聲情、重音、停頓、修辭、受眾調整、同理回應、反諷與異議處理要求學生判讀表達效果；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認對方重視的價值，再用我訊息說明疑慮，最後提出能共同檢驗的下一步。",
+  "solutionSteps": [
+    "讀題定位：圈出「尊重異議」與說話者、聽眾、重音、停頓、修辭或回應線索。",
+    "拆解效果：先分字面內容、聲情效果與溝通目的，再依「回應先重述對方關注，再提出自身理由與可行提議，不把不同意見攻擊成品格問題。」判斷。",
+    "核對正解：選項 B 能符合情境與受眾需求，並沒有把可能效果誇大成必然事實。",
+    "排除誘答：檢查是否只看單字、用責罵取代說明、用華麗技巧取代資料，或把異議變成人身攻擊。",
+    "回讀驗證：把答案放回完整對話，確認語氣、內容、證據與下一步彼此一致。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

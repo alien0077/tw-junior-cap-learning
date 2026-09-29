@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-5-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "直角三角形兩股分別為 6、8，另一個直角三角形斜邊為 10 且一股為 6，依何條件可判定全等？",
+  "prompt": "兩個三角形的三個角分別相等，為什麼不能只靠這項資料判定全等？",
   "options": [
     {
       "id": "A",
-      "text": "AA"
+      "text": "AAA 只保證形狀相同，大小未固定"
     },
     {
       "id": "B",
-      "text": "HL（斜邊直角邊）"
+      "text": "角度不能用來比較三角形"
     },
     {
       "id": "C",
-      "text": "只有一角相等"
+      "text": "三角形沒有三個角"
     },
     {
       "id": "D",
-      "text": "面積相等"
+      "text": "AAA 一定會使邊長不等"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "兩直角三角形斜邊及一股相等，符合 HL 判定。"
+    "value": "A",
+    "explanation": "AAA 可判定相似，但同形狀可以有不同大小，故不能直接判定全等，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的全等性質 題型與官方課綱 KG kg-math-content-s-8-5",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形全等判定能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的三角形全等方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-8-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形全等、對應頂點／邊／角、SSS／SAS／ASA／AAS／RHS 判定與不足條件反例",
+      "observedPattern": "公開學校數學試題常以三角形配對、全等判定必要位置、直角三角形與反例辨識考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形全等、對應頂點／邊／角、SSS／SAS／ASA／AAS／RHS 判定與不足條件反例",
+      "observedPattern": "公開學校數學試題常以三角形配對、全等判定必要位置、直角三角形與反例辨識考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "檢查資料是否包含至少一個尺度長度，分清相似與全等。",
+  "solutionSteps": [
+    "三角相等代表形狀角度一致。",
+    "但沒有給出任何實際邊長。",
+    "可將其中一圖等比例放大。",
+    "放大後角仍相等但不全等。",
+    "選 A。"
+  ]
 }

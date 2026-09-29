@@ -2,41 +2,76 @@
   "id": "question-chinese-content-be-iv-1-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "個人簡報若每頁放太多文字，最可能造成什麼？",
+  "prompt": "要向校方提案延長圖書館開放時間，哪項資料最能回應可行性？",
   "options": [
     {
       "id": "A",
-      "text": "聽眾難以同時閱讀與聆聽"
+      "text": "使用人次時段、值班人力、電費與安全管理方案"
     },
     {
       "id": "B",
-      "text": "內容自動更可靠"
+      "text": "只寫大家都想要"
     },
     {
       "id": "C",
-      "text": "報告時間自動縮短"
+      "text": "只放圖書館照片"
     },
     {
       "id": "D",
-      "text": "重點自動被突顯"
+      "text": "宣稱延長後一定沒問題"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-be-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "文字過多會增加閱讀負擔，妨礙聽取口頭說明。"
+    "explanation": "使用需求與人力、成本、安全資料共同構成可行性評估，不能只靠願望或保證。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "自傳、簡報、新聞稿與生活應用；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究自傳、簡報、新聞稿、提案與公告的目的、對象和資訊完整度。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫生活應用文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-be-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-be-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "自傳、簡報與生活應用文本",
+      "observedPattern": "公立學校國文評量要求依自傳、簡報、新聞稿與提案的目的、對象、資訊完整度和可執行性選擇表達；本題使用全新生活情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "新聞稿、提案與對象需求",
+      "observedPattern": "公立學校國文評量要求依自傳、簡報、新聞稿與提案的目的、對象、資訊完整度和可執行性選擇表達；本題使用全新生活情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把提案主張拆成需求、資源、風險和管理方案。",
+  "solutionSteps": [
+    "確認哪些時段有使用需求。",
+    "列出值班、人力、電費與安全條件。",
+    "檢查是否提出管理方案。",
+    "A 能回應決策者的可行性問題。",
+    "若缺少電費，指出需要哪種紀錄或估算。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

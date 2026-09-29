@@ -2,41 +2,67 @@
   "id": "question-science-content-ic-iv-1-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年1月29日校園實驗室的觀察中，水中射向金屬面時，光線與鏡面法線的入射角為 40°，研究「Ic-Ⅳ-1：波浪、海流與潮汐」時，反射角為何？",
+  "prompt": "月球引力造成海面週期性升降，這種現象稱為什麼？",
   "options": [
     {
       "id": "A",
-      "text": "50°（「Ic-Ⅳ-1：波浪、海流與潮汐」中把入射角誤當折射角）"
+      "text": "潮汐"
     },
     {
       "id": "B",
-      "text": "40°（水中射向金屬面）"
+      "text": "波浪"
     },
     {
       "id": "C",
-      "text": "80°（「Ic-Ⅳ-1：波浪、海流與潮汐」中把入射角加倍）"
+      "text": "海流"
     },
     {
       "id": "D",
-      "text": "140°（「Ic-Ⅳ-1：波浪、海流與潮汐」中以平角計算）"
+      "text": "海嘯"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ic-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "反射定律指出反射角等於入射角，因此為 40°。 本題對應 KG「Ic-Ⅳ-1：波浪、海流與潮汐」。"
+    "value": "A",
+    "explanation": "潮汐是海面較規律的週期升降，主要受月球引力影響，也會受到太陽與海岸地形等因素調整。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的波浪、海流、潮汐、月球引力、潮差及海洋判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ic-Ⅳ-1 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ic-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ic-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "波浪、海流、潮汐、月球引力與海岸資料判讀",
+      "pattern": "取由風能、海水大尺度流動、日月位置、潮汐週期與海洋資料推論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由風能、海水大尺度流動、日月位置、潮汐週期與海洋資料推論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先按成因、時間尺度與海水運動方向區分現象，再用水位與流速時間序列判讀週期、潮差與突發事件。",
+  "solutionSteps": [
+    "讀題定位：圈出「潮汐定義」以及月球、風、週期、水位、流速或突發海水位移。",
+    "建立判準：潮汐是海面較規律的週期升降，主要受月球引力影響，也會受到太陽與海岸地形等因素調整。",
+    "核對答案：選項 A「潮汐」符合波浪、海流、潮汐與海嘯的區分。",
+    "排除誘答：分清海面升降、海水定向流動、波形擾動與海底突發事件，不把所有起伏都叫潮汐。",
+    "最後回查：確認時間尺度、觀測基準、成因與資料類型都與題幹一致。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

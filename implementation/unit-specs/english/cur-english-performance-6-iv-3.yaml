@@ -1,0 +1,138 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-6-iv-3
+  knowledgeGraphIds:
+  - kg-english-performance-6-iv-3
+  title: 6-Ⅳ-3：參與提升英語活動
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 6-Ⅳ-3：參與提升英語活動
+    curriculumIntent: 6-Ⅳ-3：參與提升英語活動
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依官方課綱與可核實版本材料原創撰寫；未定位到的出版社單元內容記為未知，不推論版本差異
+    currentEvidenceStatus: curriculum-grounded-original-synthesis; publisher-unit-evidence-unverified; user-chatgpt-review-separate
+  learningGoals:
+  - 依興趣選擇一項能練習英語聽說讀寫的微任務，並設定單一、可觀察的語言目標
+  - 以作品、表現痕跡或聽者回述檢查活動是否對準目標，並將具體回饋轉成下一次修正
+  - 把一項策略遷移到另一種英語活動，同時依新活動的受眾與目的調整表達
+  prerequisites:
+  - 能使用熟悉的基本英文詞句表達簡單資訊
+  - 能辨識自己在朗讀、歌唱、短講、段落寫作或角色活動中想練習的項目
+  coreConcepts:
+  - 參與是學習活動的投入過程，出席紀錄不等於英語能力提升
+  - 一輪練習包含目標、實作、可觀察證據、具體回饋及再次嘗試
+  - 活動遷移要保留可用策略，但依新受眾與目的重新組織語言
+  misconceptions:
+  - 把報名或到場當作已經提升英語能力
+  - 以「我很努力」或籠統稱讚代替作品證據與可行的下一步
+  - 將一種活動的稿件原樣搬到另一種活動，不考慮受眾、媒介和溝通目的
+  contentFlow:
+  - 'predict: 從想參與的英語活動挑十分鐘微任務，預測聽者如何判斷本輪語言目標達成'
+  - 'manipulate: 留下短講、朗讀或文字初稿，選定可觀察標準並依回饋只修改一個語言選擇'
+  - 'observe: 比較修訂前後稿及聽者回述，觀察哪個可定位線索改善理解、哪些限制仍存在'
+  - 'explain: 以作品和聽者理解證據說明修訂理由，區分具體下一步與出席／籠統稱讚'
+  - 'transfer: 將一項策略用到不同活動，依新受眾與目的重新組織表達'
+  - 'reflection: 記錄作品證據、限制及下次可執行的練習'
+  visualizations:
+  - 以「目標—初稿—聽者回述—修訂」四格文字卡呈現一輪活動，不使用無關的時間軸或數值滑桿
+  - 原稿與修訂稿並列，標記唯一改動的語句及聽者回應，並提供純文字替代
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-6-IV-3-I01
+    component: GuidedChoiceBlock
+    purpose: 讓學生判斷活動目標、作品證據、具體回饋與遷移調整之間的關係
+    initialState:
+      activeStep: 0
+      selectedAnswer: null
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 以按鈕或鍵盤選擇最能對準微任務目標的行動
+    - 閱讀情境回饋，指出作品或聽者反應中可定位的證據
+    - 將所選策略調整到新的英語活動情境
+    visualRules:
+    - 每題作答後顯示對應答案理由與可重試提示
+    - 將活動目標、作品證據、回饋及遷移情境以文字呈現，不依顏色傳意
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-6-IV-3-I01
+      trigger: 把出席活動直接當成英語能力提升證據
+      prompt: 請指出你實際練習的語言行為，以及作品或聽者反應留下什麼線索。
+      expectedEvidence: 一項可定位的作品改動、朗讀表現或聽者回述，並說明它與目標的關聯
+    feedback:
+      correct: 說明所選行動如何連到語言目標，並要求學生把策略調整到新活動。
+      incorrect: 提醒學生回看目標、作品證據或受眾回應，再提供一次選擇機會；不以人格評語取代教學回饋。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只參考互動教學的可操作、即時回饋原則；本課 GuidedChoice 情境、英文作品與回饋均為原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "只參考互動活動設計原則；不複製外部活動文字或媒體。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "採用可由鍵盤操作並提供即時狀態回饋的可及性原則。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "採用語意化區域及清楚標題層級；互動內容失效時正文仍可閱讀。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 將「初稿—具體回饋—修訂」策略遷移到不同類型英語活動，情境和待練能力均須改變
+    requiredResponse: 選出可行策略並指出作品或聽者回應的依據
+    scoring: 目標對準 1、證據對應 1、遷移調整 1
+  exitTicket:
+    prompt: 你選了什麼活動、留下哪項練習證據、下一輪準備改什麼？
+    successCriteria:
+    - 說明一項英語活動與明確語言目標
+    - 指出作品或聽者反應中的一項證據
+    - 提出具體且能再次執行的修正
+  expressionExtension:
+    applicable: true
+    task: 用英文寫 4 句活動介紹，保留初稿與修訂稿，標示一項根據聽者回饋所做的修改
+    constraint: 學生自行完成兩稿；系統只引導指出目標與修改位置，不代寫句子
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - GuidedChoice 四題都以活動選擇、可觀察目標、具體回饋或策略遷移為核心，且每題有唯一答案、解釋與重試提示。
+  - 學生選錯時，回饋引導回看目標、作品或聽者回述，不以出席紀錄或籠統稱讚當作進步證據。
+  - 以不同活動進行遷移，要求學生同時保留可用語言策略並調整受眾／目的。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成全部選答；焦點、回饋及正文不得遺失或溢位。
+  - 外部網路不可用時，lesson 正文和四步互動仍由本地資料載入，不依賴第三方服務。
+  - Fallback：刻意阻擋 simulations.js 後，四步目標—作品—回饋—修訂 GuidedChoice 仍可鍵盤完成並顯示重試與解析。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 六段正文及學生頁內容針對 6-Ⅳ-3 獨立撰寫，沒有無關 LanguageTimeline 或固定套句
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 6-Ⅳ-3
+    role: official-curriculum-source-of-truth

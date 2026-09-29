@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-science-content-fc-iv-1",
+  "scope": "One pending unit only; no lesson or question authoring changes.",
+  "checks": {
+    "unitDesignAgainstCurriculumAndKG": "PASS: scale-boundary learning intent and source limits match the official Fc-IV-1 node and current lesson model.",
+    "runtimeContract": "PASS: five ecological scales, two sites, local evidence updates, aria-live/pressed state and keyboard focus restoration.",
+    "studentPage": "PASS: six authored sections and four guided-choice steps verified against lesson data.",
+    "keyboardRetryAndCorrectFeedback": "PASS: all four steps accepted keyboard wrong/retry/correct flow using each authored retry hint and answer.",
+    "offlineFallback": "PASS: off-origin request blocked while local lesson model remained interactive.",
+    "responsive": "PASS: 320/375/768px with no horizontal overflow.",
+    "axe": "PASS: 3 viewport scans; 0 violations and 0 incomplete.",
+    "pageErrors": 0,
+    "specSchema": "PASS: all 1,027 specs / 0 errors.",
+    "qaContract": "PASS: all 1,027 units / all 12 contract checks.",
+    "formalCoverage": "25/1,027 completed; pending reduced 1,003 to 1,002."
+  },
+  "state": {
+    "designStatus": "reviewed",
+    "implementationStatus": "implemented",
+    "qaStatus": "verified",
+    "lessonReviewStatus": "draft; user retains ChatGPT content review",
+    "publisherEvidence": "pending where source materials are not verified; no publisher status promoted"
+  },
+  "overallGoal": "incomplete",
+  "commitPush": "not performed"
+}

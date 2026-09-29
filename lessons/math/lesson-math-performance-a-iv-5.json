@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-a-iv-5",
   "subject": "math",
-  "title": "a-Ⅳ-5：多項式四則與乘法公式",
+  "title": "a-Ⅳ-5：多項式運算與乘法公式的來回檢查",
   "knowledgeIds": [
     "kg-math-performance-a-iv-5"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「多項式四則與乘法公式」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "多項式的加減乘除不是把符號排隊，而是先辨識同類項、分配律與結構。本課以矩形面積拆分建立 (a+b)² 與 (a+b)(a−b)，再把展開式反向整理成因式，讓學生用圖形、符號與數值代入互相驗算，並診斷漏寫中間項、符號錯誤與把不同類項硬合併的迷思。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「多項式四則與乘法公式」相關的關係。"
+        "heading": "先分清同類項",
+        "body": "3x 與 5x 都含相同的 x 次方，可以合成 8x；3x 與 5x² 不是同類項，不能只因都有 x 就相加。整理多項式前先標記每一項的字母部分與次方。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「多項式四則與乘法公式」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "分配律是乘法的路徑",
+        "body": "(x+2)(x+5) 要把第一個括號的每一項都乘到第二個括號，再合併同類項，得到 x²+7x+10。漏乘一項會讓結果看似簡潔卻失去原式。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「多項式四則與乘法公式」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "公式來自面積與差平方",
+        "body": "(a+b)² 可看成邊長 a+b 的正方形拆成 a²、ab、ab、b² 四塊，所以中間有 2ab；(a+b)(a−b) 則可視為差平方 a²−b²。圖形是理解係數來源的證據。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「多項式四則與乘法公式」，並指出至少一項支持判斷的條件。"
+        "heading": "展開與因式分解互相回查",
+        "body": "x²+6x+9 可反向看成 (x+3)²；完成因式分解後再展開一次，若回不到原式，就要檢查符號、常數與中間項。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「多項式四則與乘法公式」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先標記每一項的字母與次方，再判斷是否同類項。",
+    "乘法使用分配律，逐項相乘並保留正負號。",
+    "用面積拆分理解乘法公式，不把 2ab 漏成 ab。",
+    "展開與因式分解要互相代回，確認形式改變但值不變。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,111 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「多項式四則與乘法公式」並驗算結果。",
-    "scenario": "以「a-Ⅳ-5：多項式四則與乘法公式」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "goal": "以面積格與符號步驟理解多項式展開、公式與因式分解。",
+    "scenario": "調整 a、b 的數值，觀察四塊面積、展開式與乘法結果同步變化。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "symbol": "a",
+        "meaning": "正方形邊長的第一部分"
+      },
+      {
+        "symbol": "b",
+        "meaning": "正方形邊長的第二部分"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「多項式四則與乘法公式」的第一步是什麼？",
+        "prompt": "(a+b)² 的面積拆分包含哪些項？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "a²、ab、ab、b²",
+          "a²、b²",
+          "a²、2a、2b、b²"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "兩個交叉長方形各是 ab，因此合起來是 2ab。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "x²+6x+9 可整理成哪個平方？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "(x+3)²",
+          "(x+6)²",
+          "(x−3)²"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "常數 9 的平方根是 3，中間項 2×x×3=6x。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "完成因式分解後如何回查？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "重新展開並逐項比對",
+          "只看括號長相",
+          "刪掉中間項"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "反向展開能檢查每個係數與正負號。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "a-Ⅳ-5：多項式四則與乘法公式；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "屏東縣公立學校翰林版數學課程計畫；代數概念、解題表徵與情境評量欄位。；a-Ⅳ-5：多項式四則與乘法公式：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「多項式四則與乘法公式」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「a-Ⅳ-5：多項式四則與乘法公式」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "新北市立大豐國民中學公立校方康軒版數學課程計畫；代數表徵、操作活動與多元評量欄位。；a-Ⅳ-5：多項式四則與乘法公式：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「a-Ⅳ-5：多項式四則與乘法公式」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "桃園市立永豐高中國中部公立校方七年級數學課程計畫；南一版代數章節與評量欄位。；a-Ⅳ-5：多項式四則與乘法公式：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「a-Ⅳ-5：多項式四則與乘法公式」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +160,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「多項式四則與乘法公式」",
-        "body": "以「多項式四則與乘法公式」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "一塊被切開的地毯",
+        "body": "把邊長 a+b 的正方形畫成四塊，請學生先預測總面積中為何會出現兩塊 ab。讓圖形中的兩個長方形成為 2ab 的來源，避免公式只停留在口訣。 並請學生把兩個 ab 長方形的位置標記出來，說明係數不是背來的。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「多項式四則與乘法公式」的概念架構",
-        "body": "本單元依官方課綱所列的「多項式四則與乘法公式」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "同類項與分配律",
+        "body": "以 (x+2)(x+5) 的四格面積表逐格填入 x²、5x、2x、10，再把 5x 與 2x 合成 7x。每一格都標記來自哪兩項，讓漏乘能被定位。 再把每一格對應到兩個括號中的來源項，讓漏乘可以被定位與修正。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「a-Ⅳ-5：多項式四則與乘法公式」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "兩個公式的結構差異",
+        "body": "先用面積得到 (a+b)²=a²+2ab+b²，再用相同方法比較 (a+b)(a−b)=a²−b²。代入 a=5、b=2 做數值回算，確認左右兩種寫法相等。 同時計算左右兩邊的數值，檢查公式的每一項都保留了面積。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「多項式四則與乘法公式」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "從展開走回因式",
+        "body": "處理 x²−10x+25，學生先找平方項與常數的平方根，再確認中間項是 2×x×(−5)，所以可寫成 (x−5)²。完成後反向展開，不接受只看外觀的答案。 完成後逐項展開並和原式比較，說明為何外觀相似不足以判定正確。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「多項式四則與乘法公式」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用差平方估算面積",
+        "body": "一個矩形邊長為 (30+1) 與 (30−1)，學生可以直接用差平方算出面積，也可展開後計算；比較兩條路徑在心算與檢查上的優勢，說明公式適用的結構。 最後用另一組 a、b 值重算，判斷這個結構是否仍然成立。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「多項式四則與乘法公式」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "找出錯誤的那一項",
+        "body": "出口題提供一個漏掉 2ab 的展開式，學生要用面積圖、代入小數值與反向整理三種證據指出錯誤位置；最後寫出下一次要檢查的順序，而不是只改答案。 並把三種證據的檢查順序寫成自己的核對清單，避免只更正結論。"
       }
     ],
     "summary": [
-      "先用自己的話界定「多項式四則與乘法公式」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "辨認同類項與分配律是整理多項式的起點。",
+      "用面積拆分說明公式中的每個項與係數來源。",
+      "展開與因式分解是可互相回查的兩個方向。",
+      "代入簡單數值與反向運算能抓出符號及漏項錯誤。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「多項式四則與乘法公式」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼 3x 與 5x² 不能合併？",
+        "expectedEvidence": "字母次方不同，不是同類項。"
       },
       {
-        "prompt": "在「多項式四則與乘法公式」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "(a+b)² 中的 2ab 從哪裡來？",
+        "expectedEvidence": "面積拆分有兩個 ab 長方形，或由分配律得到 ab+ab。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「多項式四則與乘法公式」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "因式分解後如何確認正確？",
+        "expectedEvidence": "重新展開並與原多項式逐項比較。"
       }
     ]
   },
@@ -188,6 +227,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『a-Ⅳ-5：多項式運算與乘法公式的來回檢查』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整 a、b 的數值，觀察四塊面積、展開式與乘法結果同步變化。』開始前，先回答：(a+b)² 的面積拆分包含哪些項？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整 a、b 的數值，觀察四塊面積、展開式與乘法結果同步變化。』回答：完成因式分解後如何回查？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "(a+b)² 的面積拆分包含哪些項？；操作時先預測，再依『a-Ⅳ-5：多項式運算與乘法公式的來回檢查』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(a-Ⅳ-5：多項式運算與乘法公式的來回檢查)：答案 A；選項內容：a²、ab、ab、b²",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。兩個交叉長方形各是 ab，因此合起來是 2ab。",
+          "feedback": "兩個交叉長方形各是 ab，因此合起來是 2ab。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "x²+6x+9 可整理成哪個平方？；操作時先預測，再依『a-Ⅳ-5：多項式運算與乘法公式的來回檢查』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(a-Ⅳ-5：多項式運算與乘法公式的來回檢查)：答案 A；選項內容：(x+3)²",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。常數 9 的平方根是 3，中間項 2×x×3=6x。",
+          "feedback": "常數 9 的平方根是 3，中間項 2×x×3=6x。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "完成因式分解後如何回查？；操作時先預測，再依『a-Ⅳ-5：多項式運算與乘法公式的來回檢查』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(a-Ⅳ-5：多項式運算與乘法公式的來回檢查)：答案 A；選項內容：重新展開並逐項比對",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。反向展開能檢查每個係數與正負號。",
+          "feedback": "反向展開能檢查每個係數與正負號。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；多項式運算、乘法公式與代數表徵評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以同類項、分配律與乘法公式建立多項式運算順序",
+          "公開結構支持把多項式視為可分解、可重組的代數物件，運算結果要能回到原式檢查。"
+        ],
+        "representations": [
+          "符號式、面積拆分與數值代入互證"
+        ],
+        "examplesOrEvidence": [
+          "本課的面積模型、符號式與反向因式分解例子均為原創，只研究公開能力方向。"
+        ],
+        "misconceptions": [
+          "把所有含相同字母的項都當成同類項"
+        ],
+        "assessmentEmphasis": [
+          "逐項完成運算、辨識公式並回查結果是否與原式一致"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；多項式運算、乘法公式與代數表徵評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以操作或圖形表徵說明公式項與係數來源",
+          "公開結構支持把多項式視為可分解、可重組的代數物件，運算結果要能回到原式檢查。"
+        ],
+        "representations": [
+          "四格面積、代數式與展開結果同步"
+        ],
+        "examplesOrEvidence": [
+          "本課的面積模型、符號式與反向因式分解例子均為原創，只研究公開能力方向。"
+        ],
+        "misconceptions": [
+          "漏乘一項或把 2ab 寫成 ab"
+        ],
+        "assessmentEmphasis": [
+          "要求操作證據與符號結果互相對照並說出係數來源"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；多項式運算、乘法公式與代數表徵評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "在代數整理與因式分解間往返檢查",
+          "公開結構支持把多項式視為可分解、可重組的代數物件，運算結果要能回到原式檢查。"
+        ],
+        "representations": [
+          "結構辨識、反向展開與情境估算的互換"
+        ],
+        "examplesOrEvidence": [
+          "本課的面積模型、符號式與反向因式分解例子均為原創，只研究公開能力方向。"
+        ],
+        "misconceptions": [
+          "只套公式不看正負號或不做反向驗證"
+        ],
+        "assessmentEmphasis": [
+          "評估結構選擇、錯誤診斷與形式等值的完整性"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持同類項、分配律與乘法公式的連貫學習。",
+      "公式需能以表徵或運算理由解釋，而非只記結果。",
+      "展開與因式分解要以代回或反向運算驗證。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯運算順序與公式結構；康軒較突顯圖形或操作表徵；翰林較突顯形式轉換、估算與錯誤分析。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以四格面積呈現 2ab 的來源。",
+      "設計漏項與符號錯誤診斷，要求三種證據定位。",
+      "用差平方情境比較公式與直接展開的效率。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計多項式運算與乘法公式路徑。正文、例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

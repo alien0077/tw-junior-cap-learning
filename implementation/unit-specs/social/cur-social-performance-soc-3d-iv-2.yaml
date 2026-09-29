@@ -1,0 +1,142 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-social-performance-soc-3d-iv-2
+  knowledgeGraphIds:
+  - kg-social-performance-soc-3d-iv-2
+  title: 社3d-Ⅳ-2：文化保存環境改善社會正義方案
+  subject: social
+  socialDiscipline: social
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 社3d-Ⅳ-2：文化保存環境改善社會正義方案
+    curriculumIntent: 社3d-Ⅳ-2：文化保存環境改善社會正義方案
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以課綱與KG界定概念；來源若為採用校計畫，僅引用其教學活動／評量線索，不冒稱出版社課本差異；融合稿由獨立名冊登錄，使用者ChatGPT負責最終教材審查
+    currentEvidenceStatus: curriculum-and-kg-grounded; school-adoption-plan-teaching-evidence-recorded; publisher-textbook-page-evidence-pending
+  learningGoals:
+  - 區分文化延續的核心價值與可調整的活動形式，避免把保存等同凍結現況
+  - 讓不同受影響者以可及且合乎同意的方式參與界定問題，呈現需求差異
+  - 以共同判準比較方案，安排安全可撤回的試辦，並依有限證據說明影響與未知
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 社3d-Ⅳ-2：文化保存環境改善社會正義方案
+  - 表徵／證據與結論的對應
+  - 錯誤答案所反映的概念差異
+  misconceptions:
+  - 把文化保存誤解為空間和活動必須維持原狀
+  - 由一位發言者推論整個群體意見一致，或把沉默視為同意
+  - 只用活動人數／主辦者滿意度宣稱公平改善，忽略可及性、負擔分配和證據限制
+  contentFlow:
+  - 'hook: 以虛構聚落的說古夜衝突引出保存與生活需求的張力'
+  - 'predict: 先選擇對文化保存的界定，不預先顯示後續答案'
+  - 'manipulate: 透過替代方案選項改變學生採用的決策假設，逐題比較取捨'
+  - 'observe: 逐題讀取受影響者參與、方案判準、試辦安全及結果紀錄'
+  - 'explain: 依每題回饋連結文化詮釋權、可及性、負擔和證據限制'
+  - 'transfer: 將共同判準移到新公共文化活動，檢查不可直接套用的地方條件'
+  - 'exit-ticket: 用一次試辦可支持的證據說明一項改善與一項未知'
+  visualizations:
+  - 文字方案比較：以判準列和甲／乙／丙方案欄對照文化詮釋權、通行可及性、安寧、人力及維護責任；窄螢幕改為逐案敘述
+  - 每個判斷提供完整文字替代與可聚焦選項，不用顏色單獨表示正誤
+  interactiveBlocks:
+  - id: CUR-SOCIAL-PERFORMANCE-SOC-3D-IV-2-I01
+    component: GuidedChoiceBlock
+    purpose: 以六個單元專屬決策情境檢查文化保存、參與公平、方案比較、可逆試辦、證據界線及校園老樹遷移；本互動是選擇與即時回饋，不宣稱有未實作的變項滑桿或動態圖表
+    initialState:
+      showAnswer: false
+      currentStep: 0
+      selectedOption: null
+      completedSteps: []
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 逐題選擇最能兼顧當事人權利、可及性與可行性的方案
+    - 讀取錯誤選項的一階提示後重試，不因初答錯誤揭露答案
+    - 以文字說明選擇依據，並區分一次試辦觀察和普遍結論
+    visualRules:
+    - 每題題幹、選項、錯答提示及正答回饋均以文字提供
+    - 選項可用滑鼠、觸控與鍵盤操作；回饋以即時狀態文字呈現
+    - 不製造互動資料未實際蒐集的居民意見或測量數字
+    - 窄螢幕不得裁切題幹、選項與回饋
+    misconceptionChecks:
+    - id: MC-CUR-SOCIAL-PERFORMANCE-SOC-3D-IV-2-I01
+      trigger: 認為文化保存必須維持原場地／原活動形式，或以單次人數代表所有人公平受益
+      prompt: 你要延續的是哪個文化價值？目前哪一筆觀察能支持這項說法，又有哪些受影響者或結果尚未掌握？
+      expectedEvidence: 指出文化價值、至少一個可定位的需求／試辦紀錄，並說明單次觀察無法代表整體的限制
+    feedback:
+      correct: 指出回應中涉及的文化價值、受影響者或實際紀錄，再提醒學生將同一判準帶到不同公共文化活動重新檢查。
+      incorrect: 先提示「保存內容不等於固定形式」或「單次資料不等於全體共識」，不直接代答；保留重試機會。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: 本課GuidedChoice參照預測後作答、錯答提示、鍵盤可及與文字回饋的教學流程；所有聚落資料、題目、選項及答案均原創。
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: 本課GuidedChoice參照短任務分段、預測與證據說明的活動編排；不複用其教材內容。
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: 本課互動控制採可辨識按鈕、清楚名稱、鍵盤焦點及狀態回饋，不以色彩單獨傳遞答案。
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: 本課學生頁使用標題階層、可讀段落和獨立互動區塊，方便鍵盤及輔助科技定位。
+  capTransfer:
+    questionType: 公共方案比較／證據範圍判斷／理由短答
+    stemConstraint: 改以校園老樹故事保存活動為新情境；仍須比較文化詮釋權、可及性和周邊使用影響，不得只替換地名
+    requiredResponse: 提出一個可行方案、引用至少一項已知需求或紀錄，並說明一個仍需查證的限制
+    scoring: 文化價值辨識 1、受影響者與判準對應 1、證據及限制說明 1
+  exitTicket:
+    prompt: 若聚落決定把說古夜改到廣場，提出一項要追蹤的公平指標、一筆可蒐集的證據，以及一次試辦尚不能證明的事。
+    successCriteria:
+    - 說明文化保存不必等於固定場地或形式
+    - 指出受影響者及方案可能改變的生活結果
+    - 使用一項可蒐集證據並界定結論限制
+  expressionExtension:
+    applicable: true
+    task: 用80～120字為校園老樹故事活動寫一段提案摘要，交代欲延續的文化價值、受影響者、可行安排和一項尚未證實的假設。
+    constraint: 學生先寫；同儕依文化價值、可及參與、可查證依據三項回饋，不代寫完整答案。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入互動時顯示五道榕橋聚落方案題及一道校園老樹遷移題；逐題核對情境與lesson概念相符，不能出現泛用課程代碼填充。
+  - 每一題先以鍵盤送出錯誤選項，必須顯示對應的一階retryHint且不揭露答案；再選正解後顯示與本題概念直接相關的feedback。
+  - 六題正解序列應為A、B、C、B、A、C；每題選項數至少3，答案索引與選項含義需一致，所有內容為原創虛構資料。
+  - 在320px、375px與768px寬度，所有五題題幹、選項與aria-live回饋均可見、不造成水平溢位；每個選項可透過Tab聚焦及Enter啟用。
+  - 以校園老樹故事保存活動作新情境遷移，學生須提出可行方案、引用一項需求或紀錄，並指出一次試辦尚不能證明的事；不可只替換地名。
+  - 外部網路請求封鎖後仍以本機資料 shard 作為fallback載入單元教材與五步GuidedChoice，不得因遠端來源失效而無法互動。
+  - 禁止將學校採用版本課程計畫冒稱出版社課本全文；三家出版社章節級直接教材證據不足時，頁面與融合紀錄須保留此限制。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 課綱與KG定位可回查；學校課程計畫與出版社原書證據不得混稱
+  - 五道榕橋情境GuidedChoice題、正解、錯答提示及回饋與lesson概念逐項對應
+  - keyboard、320／375／768px、aria-live錯答重試與成功回饋均通過自動化測試
+  - 校園老樹遷移題、exit ticket及提案表達延伸均可由學生理解並完成
+  - 無虛構測量數據、泛用代碼句、TODO或只換單元名稱的互動模板
+  - 使用者保留的ChatGPT教材內容審查不屬Codex QA gate；lesson發布狀態維持draft直至該流程完成
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 8～12 頁／PDF 第 12～16 頁；國民中學教育階段學習表現；官方代碼 社3d-Ⅳ-2
+    role: official-curriculum-source-of-truth

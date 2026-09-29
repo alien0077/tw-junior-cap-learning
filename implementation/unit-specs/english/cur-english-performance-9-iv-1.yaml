@@ -1,0 +1,155 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-9-iv-1
+  knowledgeGraphIds:
+  - kg-english-performance-9-iv-1
+  title: 9-Ⅳ-1：依資訊推論
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 9-Ⅳ-1：依資訊推論
+    curriculumIntent: 9-Ⅳ-1：依資訊推論
+    publisherEvidence:
+      nani:
+        status: pending
+        required: false
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: book-level-only
+        required: true
+    fusionRule: 優先比對版本內容；若只有校方公開課程計畫或教案，僅萃取已查證的教學順序與評量支架，不推稱為課本章節。正文依官方9-Ⅳ-1、D-Ⅳ-1及可追溯教學證據原創融合。
+    currentEvidenceStatus: official-curriculum-verified; hanlin-grade9-plan-located; kanghsuan-lesson-plan-located; nani-adjacent-grade-plan-only; no-claim-of-three-textbook-chapter-comparison
+  learningGoals:
+  - 從短文、公告或圖表分辨明示事實、相關線索與合理推論
+  - 引用至少兩項證據支持結論，並指出一項文本尚未提供的資訊
+  - 依證據強度使用 may／probably 或條件範圍，避免把推測說成確定事實
+  - 以句構、時間線或語意證據修正答案
+  - 將語言規則遷移到新文本或短答
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 區分文本明示事實、線索間關係與讀者推論
+  - 綜合至少兩項相關資訊，找出解釋力高且額外假設少的結論
+  - 讓結論強度與證據一致，清楚標出條件、範圍及未知部分
+  misconceptions:
+  - 把標題／圖片預測當成文本已證實的結論
+  - 只抓單一字詞或數字，忽略其他相互限制的線索
+  - 把可能說成一定，或把局部時間／地點擴大成普遍主張
+  - 用題目沒提供的動機、背景或常識填補證據缺口
+  contentFlow:
+  - 'predict: 先讀條件公告，提出可修正的暫時推論並圈出可能限制結論的條件詞'
+  - 'manipulate: 把公告明示事實、線索關係與可能結論分欄，再檢查哪些條件組合支持候選說法'
+  - 'observe: 比較班車時刻、人物行為及圖書館通知的多條線索，標記支持、矛盾與資料未提供處'
+  - 'explain: 用至少兩項可定位線索支持有限結論，排除額外假設，並說明為何不能把「可能」升級成「一定」'
+  - 'transfer: 將推理方式分別用於故事、標籤、圖表，依資料類型更換讀法'
+  - 'exit-ticket: 寫出推論、兩項依據及一項目前未知的資訊'
+  visualizations:
+  - 三欄證據表以文字標題分出「文本明說／線索如何相連／推論與限制」
+  - 對推論句標記證據詞和保留不確定性的may、probably、if等語詞
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-9-IV-1-I01
+    component: GuidedChoiceBlock
+    purpose: 從原創英文公告、時刻表及故事整合多項線索，選出不超出證據的最佳推論
+    initialState:
+      currentStep: 0
+      answersRevealed: false
+      attemptedSteps: []
+    studentActions:
+    - 閱讀每個原創情境，先圈條件詞、時間或相互關聯的線索
+    - 使用鍵盤或觸控選擇最受支持的推論，作答前不顯示答案
+    - 答錯先提示回查線索，不直接揭露正解；允許再次作答
+    - 選答後說明依據，指出結論不能跨越的資訊界線
+    visualRules:
+    - 正解在作答後才顯示；錯答先給可操作的一階線索提示
+    - 答案解析明確指出支持結論的文字線索與不支持的外加假設
+    - 關鍵界線以「條件／時間／範圍」文字標籤呈現，不只靠顏色
+    - 窄螢幕及鍵盤操作不得裁切題幹、選項、提示或解析
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-9-IV-1-I01
+      trigger: 把if條件公告推成活動一定改場地，或把週六休館擴大成整週停業
+      prompt: 請圈出公告的條件或時間範圍，並找出結論多加了哪一件原文沒有說的事。
+      expectedEvidence: 指出if rains或Saturday等具體線索，並說明哪些主張仍未知
+    feedback:
+      correct: 說明兩項線索如何支持結論，接著要求指出尚未確定的資訊。
+      incorrect: 提醒回查條件詞、時間或第二項線索；先給重試機會，再呈現逐步解析。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課以原創短文本和選擇題實作多線索推論，不借用外部教材內容；元件依工作台既有鍵盤與回饋契約。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "預測只作為可修正的閱讀起點，互動要求學生回到自編文字核對，而不是把猜想當正解。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "答案狀態及錯答提示以語意化回饋呈現，需能被螢幕閱讀與鍵盤操作。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "題目、選項與結果採頁面既有語意區塊，不依賴滑鼠或顏色才能完成推論。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「9-Ⅳ-1：依資訊推論」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 從一則新公告寫出一項最合理推論、兩個支持線索，以及一項目前無法確定的資訊。
+    successCriteria:
+    - 結論沒有超出公告的時間、地點或條件範圍
+    - 至少引用兩項彼此相關的文字線索
+    - 明確標示仍未知而非用常識補成事實
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字／英文短段落，將「9-Ⅳ-1：依資訊推論」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始畫面不顯示四步正解；學生提交選項後才收到對應回饋。
+  - 故意選擇過度確定選項時，先提供條件詞或範圍提示並可重答，之後才讀到解析。
+  - 四步答案分別符合條件公告、班車時刻、人物行為線索及圖書館開放資訊，解析引用可定位證據。
+  - 在320px、375px及768px寬度，以鍵盤完成四步選擇、錯答重試及正解回饋，題幹、控制項和狀態均可見。
+  - 轉移題使用未在教學示範出現的新材料，要求寫結論、兩項線索和一項未知資訊。
+  - fallback：外部資源或模擬腳本不可用時，使用內嵌公告、時刻表及圖書館通知文字完成推理；不得顯示空白或假稱已查閱外部資訊。
+  - 網路來源離線時課文和互動仍完全由本地JSON材料運作，不阻塞學習。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 逐項記錄可核實版本來源、定位與未能取得的章節，不得冒充三版逐章融合
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 本稿保持原創並遵守來源界線；最終教材內容審查由使用者交ChatGPT，不由Codex設 gate
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 9-Ⅳ-1
+    role: official-curriculum-source-of-truth
+  - url: https://course.cyc.edu.tw/upfile/course111/sub1/15079524223428859.pdf
+    locator: PDF pp.94–96；永慶高中附設國中部九年級英語計畫標示翰林第6冊並列9-IV-1，未定位獨立課本章節
+    role: hanlin-grade9-course-plan-only
+  - url: https://openclass.kl.edu.tw/plan/file/3504/%E6%95%99%E6%A1%88.pdf
+    locator: PDF pp.1–2；康軒第五冊習作九年級Lesson 6公開教案，9-IV-1融入閱讀預測、證據問答與圖示整理
+    role: kanghsuan-public-lesson-plan-pattern-only
+  - url: https://www.yfms.tyc.edu.tw/uploads/1754960559483MMwIifky.pdf
+    locator: PDF pp.3、14；南一版七年級計畫的合理猜測與多訊息整理目標，僅作相鄰年級先備參照
+    role: nani-adjacent-grade-plan-only
+  - url: https://market.cloud.edu.tw/resources/video/1849112
+    locator: 教育部委辦國中英語寓言資源：以故事要素整理線索並用練習檢查推論；CC BY-NC-ND 3.0，僅讀取教學理念，不重製影音或其表達
+    role: public-teaching-pattern-only

@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ac-iv-3-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "「即使遇到困難，他仍然沒有放棄」中的「即使」表示何種語氣？",
+  "prompt": "『所有參加調查的學生都同意方案』，但資料只抽查兩個班；最合理的修正是？",
   "options": [
     {
       "id": "A",
-      "text": "讓步關係"
+      "text": "所有學生都一定同意。"
     },
     {
       "id": "B",
-      "text": "只注意單一細節"
+      "text": "兩個班的學生都同意，因此全校同意。"
     },
     {
       "id": "C",
-      "text": "把無關資訊當成重點"
+      "text": "在受訪的兩個班中，多數或全部受訪者同意。"
     },
     {
       "id": "D",
-      "text": "不考慮讀者或情境"
+      "text": "調查結果完全無效。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ac-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「即使」引出讓步條件，表示即便有困難，後面的結果仍成立。"
+    "value": "C",
+    "explanation": "資料只涵蓋兩個班，應把結論限縮到實際受訪者，不能直接推廣到所有學生。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "關聯詞語意；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究證據、前提、結論、條件、因果與建議的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫可檢查文句推論題；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ac-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ac-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解與文句推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀與推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "讓主張的範圍和樣本範圍一致，再處理『全部』或『多數』等比例詞。",
+  "solutionSteps": [
+    "先比較『所有學生』和『兩個班』的範圍，兩者不相等。",
+    "確認資料是否顯示受訪者全數同意，若沒有也不能改成多數。",
+    "C 以受訪的兩個班為範圍，並保留受訪資料的比例條件。",
+    "A、B 擴大推論，D 則把有限資料誤判為完全無效。",
+    "將修正版標明調查對象，讓讀者能重做範圍檢查。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

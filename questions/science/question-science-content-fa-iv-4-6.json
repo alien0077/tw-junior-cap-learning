@@ -2,41 +2,84 @@
   "id": "question-science-content-fa-iv-4-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月30日社區環境站的觀察中，將 59℃ 的金屬片放入 23℃ 的水中，研究「Fa-Ⅳ-4：大氣依溫度變化分層」時，最初的熱傳方向為何？",
+  "prompt": "若高度—溫度圖中某段曲線由『隨高度下降』轉為『隨高度上升』，層界較適合畫在哪裡？",
   "options": [
     {
       "id": "A",
-      "text": "由 23℃ 的水傳向 59℃ 金屬片"
+      "text": "曲線趨勢轉折附近"
     },
     {
       "id": "B",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "圖的正中央，不論曲線如何"
     },
     {
       "id": "C",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "最低溫點以外任意位置"
     },
     {
       "id": "D",
-      "text": "由金屬片傳向水"
+      "text": "每隔固定 10 公里畫一次"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-fa-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 59℃ 金屬片傳向 23℃ 的水。 本題對應 KG「Fa-Ⅳ-4：大氣依溫度變化分層」。"
+    "value": "A",
+    "explanation": "層界是模型中的近似位置，應放在溫度隨高度變化方向發生轉折的附近，而非固定等距。正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立學校公開自然科試題中的圖表趨勢、地球科學現象、證據界線與模型判讀能力；本題改寫為 Fa-Ⅳ-4 原創情境。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fa-iv-4"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-fa-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "鹽埕國中公開自然段考；只取大氣分層、溫度趨勢與地球科學資料判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "大氣分層、溫度趨勢與地球科學資料判讀",
+      "observedPattern": "公開自然科評量常以圖表趨勢、地球科學現象、成因證據與模型限制檢查學生是否能從資料推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "內湖國中公開自然段考；只取地球科學圖表、現象位置與成因證據的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "地球科學圖表、現象位置與成因證據",
+      "observedPattern": "公開自然科評量常以圖表趨勢、地球科學現象、成因證據與模型限制檢查學生是否能從資料推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "國昌國中公開自然科試題；只取剖面資料、模型限制與控制變因的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "剖面資料、模型限制與控制變因",
+      "observedPattern": "公開自然科評量常以圖表趨勢、地球科學現象、成因證據與模型限制檢查學生是否能從資料推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "找曲線趨勢改變的位置，不以圖中央或固定距離切分。",
+  "solutionSteps": [
+    "讀題並圈出高度、溫度、趨勢、現象、成因或模型限制等關鍵詞。",
+    "先確認選項談的是直接觀察、合理推論，還是需要額外資料的主張。",
+    "把每個選項放回對流層、平流層、中氣層或增溫層的剖面位置檢查。",
+    "排除把層界當硬牆、把單一現象當唯一特徵，或混淆溫度與粒子密度的說法。",
+    "用完整因果句重述答案，確認結論符合曲線與課內證據且沒有過度延伸。"
+  ]
 }

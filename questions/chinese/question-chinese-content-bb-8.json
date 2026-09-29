@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bb-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列何者最能表現「觸景生情」？",
+  "prompt": "文本寫「她把畢業冊翻到最後一頁，沒有寫下名字，只在角落畫了一個小圓點」。下列哪個推論最穩妥？",
   "options": [
     {
       "id": "A",
-      "text": "看見畢業照，想起同學相處的日子"
+      "text": "她可能在用含蓄方式留下情緒或記號，但不能確定她的具體心情與原因"
     },
     {
       "id": "B",
-      "text": "查字典確認生字讀音"
+      "text": "她一定不想再見任何同學"
     },
     {
       "id": "C",
-      "text": "依食譜計算烹調時間"
+      "text": "小圓點一定代表她已經決定搬家"
     },
     {
       "id": "D",
-      "text": "按照地圖尋找公車站"
+      "text": "沒有寫名字表示她完全不在乎這段關係"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bb"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "由眼前的畢業照聯想到過去相處，是景物引發情感與回憶。"
+    "explanation": "翻到最後頁與留下記號是間接線索，可支持含蓄留痕的推測；文本未說明拒絕、搬家或不在乎，不能武斷下結論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-2%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%95%E9%87%8F%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
-    "sourceLocator": "抒情文本情景交融判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編抒情閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "抒情、修辭與閱讀理解",
+      "observedPattern": "公立學校國文公開試題常以抒情方式、人物觀點、事件景物、語氣與文本推論檢查閱讀理解；本題整合直接與間接抒情重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "情感表達、語氣與文本觀點",
+      "observedPattern": "公立學校國文公開試題常以抒情方式、人物觀點、事件景物、語氣與文本推論檢查閱讀理解；本題整合直接與間接抒情重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認說話者與情感對象，再判斷感受是直接說出或由事件、景物、物件間接浮現；最後以多條證據交叉核對語氣與推論界線。",
+  "solutionSteps": [
+    "讀題定位：圈出「讀者推論」與說話者、情感對象、事件、景物、物件及前後轉折。",
+    "建立情感證據鏈：分辨明示感受與間接線索，檢查語氣強度、情感路徑和篇章位置是否相互支持；本題核心是「翻到最後頁與留下記號是間接線索，可支持含蓄留痕的推測；文本未說明拒絕、搬家或不在乎，不能武斷下結論。」",
+    "核對正解：選項 A「她可能在用含蓄方式留下情緒或記號，但不能確定她的具體心情與原因」能整合文本多條線索，且不把推論誇大成作者或人物未說出的事實。",
+    "排除誘答：檢查是否只抓情緒詞、把景物固定象徵、把角色聲音當作者立場，或用過強語氣超過事件證據。",
+    "結論回查：以『誰對誰、由何事／何物、用哪種路徑表達、能推到哪裡』重讀全文，明確保留未知範圍。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

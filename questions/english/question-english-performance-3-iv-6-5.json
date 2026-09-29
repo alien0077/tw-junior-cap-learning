@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-6-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For the「3-Ⅳ-6／理解基本重要句型」practice, choose the grammatically correct sentence (question 5).",
+  "prompt": "The east hallway is 40 meters long; the north hallway is 65 meters long. Which sentence states the same comparison?",
   "options": [
     {
       "id": "A",
-      "text": "Sara has cleaned the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "The east hallway is longer than the north hallway."
     },
     {
       "id": "B",
-      "text": "Sara have cleaned the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "The north hallway is longer than the east hallway."
     },
     {
       "id": "C",
-      "text": "Sara cleaning has the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "The two hallways are the same length."
     },
     {
       "id": "D",
-      "text": "Sara has clean the 3-Ⅳ-6／理解基本重要句型 task."
+      "text": "The east hallway is the longest of the two hallways."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-6"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A singular subject such as a person's name takes has; the past participle follows has. This item targets 3-Ⅳ-6／理解基本重要句型, question 5."
+    "value": "B",
+    "explanation": "正確答案 B。65 大於 40，因此北側走廊比東側長；原句『東側較短』可反向表達為『北側較長』。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+    "sourceLocator": "依公立國中公開段考逐題研究句型、語境與推理模式；各題精確原卷題號見 examPatternRefs。只作 pattern-only 命題參照，不複製原題、選項或答案。",
+    "authoringNote": "依官方課綱與本單元 KG 獨立撰寫情境、選項、答案、繁中解析及步驟；公校原卷僅作可追溯能力模式參照。單元內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-6"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1753840039444z3K5m38Y.pdf",
+      "title": "臺北市立內湖國中113學年度第2學期八年級第1次段考英文",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "第22題：比較新錄音機與舊錄音機的 fashionable 程度",
+      "locatorLevel": "item",
+      "observedPattern": "參照比較級與 than 後比較對象的句型；本題改為校園距離。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1659511832873JPCBQBvo.pdf",
+      "title": "臺北市立內湖國中110學年度第2學期八年級第2次段考英文",
+      "year": "110-2",
+      "subject": "english",
+      "locator": "第17題：以 slower than 比較姊姊與弟弟跑步速度",
+      "locatorLevel": "item",
+      "observedPattern": "參照形容詞比較級及比較方向的判讀。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "先把兩個數量放在同一尺度比較，再檢查比較級方向與 than 後的對象。",
+  "solutionSteps": [
+    "記下東側 40 公尺、北側 65 公尺，避免被 east／north 名稱干擾。",
+    "比較 65 和 40，判斷北側較長、東側較短。",
+    "比較級句型需用 longer than，並把較長者放在主詞位置。",
+    "B 正確反向改述；A 倒置長短，C 抹去差異，D 的最高級不適用於兩者比較。",
+    "用數字回查：65 > 40，與 B 所說的北側較長一致。"
+  ]
 }

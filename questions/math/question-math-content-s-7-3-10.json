@@ -2,23 +2,23 @@
   "id": "question-math-content-s-7-3-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "兩條直線都垂直於同一直線，且位於同一平面，則兩條直線彼此為何？",
+  "prompt": "小明說：『只要一條線段通過 AB 的中點，就一定是 AB 的垂直平分線。』哪個修正最正確？",
   "options": [
     {
       "id": "A",
-      "text": "垂直"
+      "text": "正確，通過中點就足夠"
     },
     {
       "id": "B",
-      "text": "平行或重合"
+      "text": "錯誤，還必須與 AB 垂直"
     },
     {
       "id": "C",
-      "text": "必相交"
+      "text": "錯誤，還必須與 AB 平行"
     },
     {
       "id": "D",
-      "text": "歪斜"
+      "text": "正確，因為所有中點線都垂直"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "同平面內垂直於同一直線的兩線平行或重合。"
+    "explanation": "垂直平分線同時需要通過中點與垂直 AB；只通過中點仍可能斜交，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 垂直 題型與官方課綱 KG kg-math-content-s-7-3",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供垂直與距離能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的垂直能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-7-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-7-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "垂直、直角、點到直線距離、垂直平分線與等距性質",
+      "observedPattern": "公開學校數學試題常以直角判定、最短距離、垂直平分線與幾何性質考查垂直概念；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "垂直、直角、點到直線距離、垂直平分線與等距性質",
+      "observedPattern": "公開學校數學試題常以直角判定、最短距離、垂直平分線與幾何性質考查垂直概念；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "逐項核對定義中的必要條件，避免只抓到『平分』而漏掉『垂直』。",
+  "solutionSteps": [
+    "記下小明提供的條件：通過中點。",
+    "回想垂直平分線還要求與 AB 垂直。",
+    "通過中點的斜線不一定垂直 AB。",
+    "因此原說法少了一個必要條件。",
+    "選 B。"
+  ]
 }

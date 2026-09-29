@@ -2,23 +2,23 @@
   "id": "question-science-content-bc-iv-1-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月6日河川觀測站的觀察中，針對「Bc-Ⅳ-1：酵素催化代謝與影響因素」提出可檢驗的科學問題，若比較 4 組、每組取樣 13 份資料，哪一項設計最適當？",
+  "prompt": "某酵素在 40°C 活性最高；加熱到 90°C 後幾乎沒有活性，冷卻回 40°C 也未恢復。最可能的原因是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "高溫使酵素蛋白質構形改變而變性"
     },
     {
       "id": "B",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時只測量4組中的一組就直接下結論"
+      "text": "高溫讓所有受質自動消失"
     },
     {
       "id": "C",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時先決定結論，再挑選支持結論的13筆資料"
+      "text": "冷卻會把酵素轉成脂肪"
     },
     {
       "id": "D",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時只改變距離，其餘條件一致，設置4組、每組取樣13份並各重複測量5次"
+      "text": "酵素只要離開細胞就必定蒸發"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Bc-Ⅳ-1：酵素催化代謝與影響因素」。"
+    "value": "A",
+    "explanation": "90°C 可能破壞酵素維持構形的作用力，使活性部位形狀改變；降溫不一定能恢復，稱為變性，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的酵素、反應速率與實驗設計能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bc-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bc-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酵素、反應速率、溫度酸鹼度與實驗設計判讀",
+      "pattern": "取由實驗資料、控制變因與反應速率推論酵素作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗資料、控制變因與反應速率推論酵素作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "利用『高溫後不可逆』的線索，區分暫時速率下降與結構變性。",
+  "solutionSteps": [
+    "先找出最佳溫度與高溫處理結果。",
+    "高溫後冷卻仍無活性，表示不只是粒子運動變慢。",
+    "酵素的蛋白質構形可能被破壞。",
+    "活性部位改變後，受質不易正確結合。",
+    "因此最合理是變性，選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

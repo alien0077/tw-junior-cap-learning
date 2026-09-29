@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-7-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年4月18日校園實驗室的觀察中，針對「Eb-Ⅳ-7：簡單機械的功能」提出可檢驗的科學問題，若比較 5 組、每組取樣 14 份資料，哪一項設計最適當？",
+  "prompt": "一個 12 齒的主動齒輪帶動 36 齒的從動齒輪。忽略損失時，從動齒輪的轉速與主動齒輪相比如何？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Eb-Ⅳ-7：簡單機械的功能」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "快 3 倍"
     },
     {
       "id": "B",
-      "text": "研究「Eb-Ⅳ-7：簡單機械的功能」時只測量5組中的一組就直接下結論"
+      "text": "慢為 1/3"
     },
     {
       "id": "C",
-      "text": "研究「Eb-Ⅳ-7：簡單機械的功能」時先決定結論，再挑選支持結論的14筆資料"
+      "text": "相同，因齒輪互相咬合"
     },
     {
       "id": "D",
-      "text": "研究「Eb-Ⅳ-7：簡單機械的功能」時只改變溶液濃度，其餘條件一致，設置5組、每組取樣14份並各重複測量3次"
+      "text": "慢為 1/12"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-7"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Eb-Ⅳ-7：簡單機械的功能」。"
+    "value": "B",
+    "explanation": "齒輪嚙合時轉速與齒數成反比；從動齒輪齒數是主動輪 3 倍，所以轉速為主動輪的 1/3，並且轉向相反。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作簡單機械、機械利益、滑輪、斜面、齒輪與功的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-7"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "簡單機械、槓桿、滑輪與功的收支能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以槓桿、滑輪、斜面、輪軸與搬運情境考查機械利益、力臂、方向、功與路徑交換；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "槓桿、滑輪、力矩與機械功能判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以槓桿、滑輪、斜面、輪軸與搬運情境考查機械利益、力臂、方向、功與路徑交換；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "斜面、槓桿、滑輪與簡單機械能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以槓桿、滑輪、斜面、輪軸與搬運情境考查機械利益、力臂、方向、功與路徑交換；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先比較齒數比例，再判斷轉速反比，不把齒數大誤判成轉得快。",
+  "solutionSteps": [
+    "找出主動輪齒數 12。",
+    "找出從動輪齒數 36，為 12 的 3 倍。",
+    "齒輪邊緣線速度相容，所以角速度反比。",
+    "從動輪轉速為主動輪的 1/3。",
+    "所以選 B。"
+  ]
 }

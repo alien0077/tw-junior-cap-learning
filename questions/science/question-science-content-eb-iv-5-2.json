@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-5-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年5月27日自然科教室的觀察中，一個物體質量為 763 g、體積為 90 cm³，研究「Eb-Ⅳ-5：壓力與帕斯卡原理」時，其密度為何？",
+  "prompt": "承接上一題，若箱子改用面積 0.60 m² 的另一面平放，重量不變，對地面的平均壓力如何變化？",
   "options": [
     {
       "id": "A",
-      "text": "8.47778 g/cm³"
+      "text": "變成原來的 2 倍"
     },
     {
       "id": "B",
-      "text": "853 g/cm³"
+      "text": "變成原來的 1/2"
     },
     {
       "id": "C",
-      "text": "0.117955 g/cm³"
+      "text": "保持不變，因為重量不變"
     },
     {
       "id": "D",
-      "text": "68670 g/cm³"
+      "text": "變成原來的 1/4"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-5"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "密度＝質量÷體積＝763÷90＝8.47778 g/cm³。 本題對應 KG「Eb-Ⅳ-5：壓力與帕斯卡原理」。"
+    "value": "B",
+    "explanation": "B。重量不變而接觸面積由 0.30 m² 增為 0.60 m²，p=F/A 變為原來的 1/2，因此平均壓力減半。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題中的壓力、液體深度、帕斯卡原理、活塞力位移與安全限制能力；本題改寫為壓力與液壓原創情境。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-5"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-eb-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取壓力、受力面積、液體深度與壓力差的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "壓力、受力面積、液體深度與壓力差",
+      "observedPattern": "公開自然科評量常要求連結 p=F/A、受力面積、液體深度、壓力方向、帕斯卡原理、活塞位移與裝置限制；本題以全新壓力與液壓情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取帕斯卡原理、液壓裝置與資料判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "帕斯卡原理、液壓裝置與資料判讀",
+      "observedPattern": "公開自然科評量常要求連結 p=F/A、受力面積、液體深度、壓力方向、帕斯卡原理、活塞位移與裝置限制；本題以全新壓力與液壓情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取液體壓力、活塞力、位移與安全限制的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "液體壓力、活塞力、位移與安全限制",
+      "observedPattern": "公開自然科評量常要求連結 p=F/A、受力面積、液體深度、壓力方向、帕斯卡原理、活塞位移與裝置限制；本題以全新壓力與液壓情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "固定力後只比較面積，判斷壓力與面積成反比。",
+  "solutionSteps": [
+    "圈出接觸面、垂直力、面積、液體深度、兩活塞面積與位移。",
+    "壓力題使用 p=F/A，液體題先比較同深度或深度差，液壓題使用壓力相等。",
+    "統一 N、m²、cm² 與位移單位，逐步代入並保留計算關係。",
+    "用體積守恆與能量觀點檢查力變大是否伴隨位移變小，排除壓力只向下或無條件製造能量的說法。",
+    "回查液體、氣泡、摩擦、漏液、孔高與安全條件，說明理想模型的適用限制。"
+  ]
 }

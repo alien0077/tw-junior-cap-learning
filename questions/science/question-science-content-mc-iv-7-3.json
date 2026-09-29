@@ -2,23 +2,23 @@
   "id": "question-science-content-mc-iv-7-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年10月25日自然科教室的觀察中，針對「Mc-Ⅳ-7：電器標示與電費計算」提出可檢驗的科學問題，若比較 3 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "若用電量 6 kWh、每 kWh 電價 5 元，電費約為？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Mc-Ⅳ-7：電器標示與電費計算」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "11 元"
     },
     {
       "id": "B",
-      "text": "研究「Mc-Ⅳ-7：電器標示與電費計算」時只測量3組中的一組就直接下結論"
+      "text": "30 元"
     },
     {
       "id": "C",
-      "text": "研究「Mc-Ⅳ-7：電器標示與電費計算」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "60 元"
     },
     {
       "id": "D",
-      "text": "研究「Mc-Ⅳ-7：電器標示與電費計算」時只改變光照時間，其餘條件一致，設置3組、每組取樣11份並各重複測量4次"
+      "text": "300 元"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Mc-Ⅳ-7：電器標示與電費計算」。"
+    "value": "B",
+    "explanation": "費用=用電量×單價=6×5=30 元；kWh 是用電量單位，元才是費用。 正確答案為選項 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的電器標示、功率、使用時間、用電量、電費與節能方案能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-mc-iv-7"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-mc-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "電功率、用電量、能源與資料計算",
+      "pattern": "取公開自然科評量以功率、時間、單位、能源使用和生活資料進行計算的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開自然科評量以功率、時間、單位、能源使用和生活資料進行計算的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "能源、電器、功率與資料判讀",
+      "pattern": "取公開會考以圖表、條件、單位和生活科技情境判讀能源效益的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、條件、單位和生活科技情境判讀能源效益的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "電器標示、功率、時間、電費與節能判讀",
+      "pattern": "取公立國中試題以標示讀取、單位換算、用電量和方案比較推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以標示讀取、單位換算、用電量和方案比較推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨題目要用電量還是電費，再乘單價。",
+  "solutionSteps": [
+    "圈出功率、使用時間、電價與要求量。",
+    "把 W 換成 kW。",
+    "用用電量=kW×h 計算。",
+    "再乘電價且檢查 kWh 與元的單位。",
+    "回查待機、實際使用率和估算條件。"
+  ]
 }

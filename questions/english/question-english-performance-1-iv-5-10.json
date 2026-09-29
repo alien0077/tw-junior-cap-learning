@@ -2,23 +2,23 @@
   "id": "question-english-performance-1-iv-5-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「1-Ⅳ-5／簡易歌謠韻文主要內容」task, what is the best way to prepare question 10?",
+  "prompt": "Verse: ‘Before the snow, we tied the gate; / At sunrise, fresh prints crossed the yard. / A bowl was empty by the shed; / At noon, we found a paw-shaped card.’ Which summary best fits the verse?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 1-Ⅳ-5／簡易歌謠韻文主要內容."
+      "text": "The family notices signs that an animal visited during the night."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 1-Ⅳ-5／簡易歌謠韻文主要內容."
+      "text": "The family builds a shed before the first snowfall."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 1-Ⅳ-5／簡易歌謠韻文主要內容."
+      "text": "A storm destroys the gate and carries the bowl away."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 1-Ⅳ-5／簡易歌謠韻文主要內容."
+      "text": "The family trains a dog to write its name at noon."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 1-Ⅳ-5／簡易歌謠韻文主要內容, question 10."
+    "explanation": "雪前關門、日出後院子有新腳印、碗空了，接著找到爪印形卡片；這些細節共同支持有動物夜間來訪。詩未證明暴風雪或訓練狗寫字。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
-    "sourceLocator": "114 年國中教育會考英語科閱讀公開試題；研究簡易韻文的情境、意象、主旨、訊息與價值判讀；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E6%AD%A3%E7%A2%BA%E7%89%88110-2%E5%9C%8B%E4%B8%80%E8%8B%B1%E8%AA%9E%E8%80%83%E5%8D%B7110-2%E8%8B%B1%E8%AA%9E%E4%B8%80%E6%AE%B5.pdf",
+    "sourceLocator": "PDF第4頁第35題；國昌國中110學年度第2學期七年級英文第4頁第35題要求選出與整首詩意義相符的敘述；本題改成由多個夜訪痕跡選擇整體摘要。",
+    "authoringNote": "題幹、韻文、選項、答案與解說均為原創；僅改寫公立國中試題所呈現的韻文理解能力與題型，未重製來源文字或圖像。AI內容審查未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1-iv-5"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-1-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E6%AD%A3%E7%A2%BA%E7%89%88110-2%E5%9C%8B%E4%B8%80%E8%8B%B1%E8%AA%9E%E8%80%83%E5%8D%B7110-2%E8%8B%B1%E8%AA%9E%E4%B8%80%E6%AE%B5.pdf",
+      "title": "高雄市立國昌國中110學年度第2學期七年級英文定期評量，第4頁第35題",
+      "year": "110-2",
+      "subject": "english",
+      "locator": "PDF第4頁第35題；國昌國中110學年度第2學期七年級英文第4頁第35題要求選出與整首詩意義相符的敘述；本題改成由多個夜訪痕跡選擇整體摘要。",
+      "locatorLevel": "item",
+      "observedPattern": "國昌國中110學年度第2學期七年級英文第4頁第35題要求選出與整首詩意義相符的敘述；本題改成由多個夜訪痕跡選擇整體摘要。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "摘要要收攏多個互相支持的細節；先列證據，再找不增加未提事件的概括句。",
+  "solutionSteps": [
+    "依時間標記排出事件：雪前、日出、之後、正午。",
+    "圈出三個線索：新腳印、空碗、爪印形卡片。",
+    "判斷這些線索共同指向動物曾來過，而非單一物件的故事。",
+    "檢查選項是否新增暴風雪、失竊或訓練等詩中未說的事件。",
+    "只有A概括多項線索且不超出文本，答案為A。"
+  ]
 }

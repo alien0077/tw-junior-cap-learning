@@ -2,23 +2,23 @@
   "id": "question-science-content-eb-iv-6-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年1月16日自然科教室的觀察中，一個物體質量為 838 g、體積為 64 cm³，研究「Eb-Ⅳ-6：浮力與排開液體重量」時，其密度為何？",
+  "prompt": "金屬塊在空氣中的重量為 3.0 N，完全浸入水中且未接觸容器底部時，彈簧秤讀值為 2.4 N。金屬塊所受浮力為何？",
   "options": [
     {
       "id": "A",
-      "text": "902 g/cm³"
+      "text": "0.6 N"
     },
     {
       "id": "B",
-      "text": "13.0938 g/cm³"
+      "text": "2.4 N"
     },
     {
       "id": "C",
-      "text": "0.0763723 g/cm³"
+      "text": "3.0 N"
     },
     {
       "id": "D",
-      "text": "53632 g/cm³"
+      "text": "5.4 N"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "密度＝質量÷體積＝838÷64＝13.0938 g/cm³。 本題對應 KG「Eb-Ⅳ-6：浮力與排開液體重量」。"
+    "value": "A",
+    "explanation": "浮力等於空氣中重量減去液中視重：3.0−2.4＝0.6 N。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作浮力、排開液體重量、視重、浮沉與工程應用的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-6"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "浮力、排開液體重量與浮沉判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以彈簧秤、溢水杯、物體浮沉、船舶或密度比較考查浮力、排開液體重量、液中視重與平衡條件；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "浮力、液中視重與密度浮沉能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以彈簧秤、溢水杯、物體浮沉、船舶或密度比較考查浮力、排開液體重量、液中視重與平衡條件；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "阿基米德原理、船舶與浮沉能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以彈簧秤、溢水杯、物體浮沉、船舶或密度比較考查浮力、排開液體重量、液中視重與平衡條件；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "使用『空氣重−液中視重』先求重量差，再把差值解讀為浮力。",
+  "solutionSteps": [
+    "記下空氣中重量 3.0 N。",
+    "記下完全浸入水中的視重 2.4 N。",
+    "計算重量差 3.0−2.4。",
+    "得到浮力 0.6 N，方向向上。",
+    "所以選 A。"
+  ]
 }

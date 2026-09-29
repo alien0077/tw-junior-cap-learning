@@ -2,41 +2,87 @@
   "id": "question-science-content-ka-iv-6-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年5月14日校園實驗室的觀察中，水中射向鏡面時，光線與鏡面法線的入射角為 30°，研究「Ka-Ⅳ-6：針孔成像、影子與光的直進」時，反射角為何？",
+  "prompt": "物高 8 cm、物距 40 cm、屏距 30 cm 的針孔成像，像高約為多少，且方向如何？",
   "options": [
     {
       "id": "A",
-      "text": "60°（「Ka-Ⅳ-6：針孔成像、影子與光的直進」中把入射角誤當折射角）"
+      "text": "6 cm，倒立"
     },
     {
       "id": "B",
-      "text": "30°（水中射向鏡面）"
+      "text": "6 cm，正立"
     },
     {
       "id": "C",
-      "text": "60°（「Ka-Ⅳ-6：針孔成像、影子與光的直進」中把入射角加倍）"
+      "text": "10.7 cm，倒立"
     },
     {
       "id": "D",
-      "text": "150°（「Ka-Ⅳ-6：針孔成像、影子與光的直進」中以平角計算）"
+      "text": "10.7 cm，正立"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ka-iv-6"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "B",
-    "explanation": "反射定律指出反射角等於入射角，因此為 30°。 本題對應 KG「Ka-Ⅳ-6：針孔成像、影子與光的直進」。"
+    "value": "A",
+    "explanation": "像高≈8×30÷40=6 cm；光線在針孔處交叉，所以方向為倒立，且屏幕可接到光線，是實像。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.chhs.tp.edu.tw/uploads/1580833724641KNP89ykg.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題的光直進、影子、針孔成像、日食投影與控制變因能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ka-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.chhs.tp.edu.tw/uploads/1580833724641KNP89ykg.pdf",
+      "title": "臺北市立景興國民中學八年級理化科公開定期評量",
+      "year": "108",
+      "locator": "光直進、針孔成像、影子、日食與實驗控制變因",
+      "pattern": "取公立學校評量以光路、影子與針孔投影進行圖形判讀和實驗推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校評量以光路、影子與針孔投影進行圖形判讀和實驗推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "光的直進、針孔成像、影子、日食與操作條件",
+      "pattern": "取從光源—物體—屏幕關係推論影子與成像方向、大小和觀察條件的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從光源—物體—屏幕關係推論影子與成像方向、大小和觀察條件的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.sjjh.tyc.edu.tw/113-1-8%E8%A3%9C%E8%80%83%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "桃園市立山腳國民中學八年級自然科公開補考題庫",
+      "year": "113",
+      "locator": "光直進、影子邊界、針孔成像與變因控制",
+      "pattern": "取公開自然科題庫要求用光線模型、幾何關係與公平實驗判讀現象的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開自然科題庫要求用光線模型、幾何關係與公平實驗判讀現象的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先算大小，再用光線交叉判方向，勿以正負號取代幾何圖。",
+  "solutionSteps": [
+    "辨認物距、屏距、物高與像高的已知量。",
+    "先判定影像是否是針孔實像而非鏡面虛像。",
+    "代入像高／物高≈屏距／物距並保留方向判斷。",
+    "檢查題目是否改變孔徑或只提供近似條件。",
+    "用數值、方向、可投影性三者做最後核對。"
+  ]
 }

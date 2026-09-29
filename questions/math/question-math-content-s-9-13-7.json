@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-13-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "計算地板鋪設面積時，哪個單位最合適？",
+  "prompt": "水箱內部長 50 公分、寬 40 公分、高 30 公分，最多可裝多少公升？",
   "options": [
     {
       "id": "A",
-      "text": "平方公尺"
+      "text": "6 公升"
     },
     {
       "id": "B",
-      "text": "立方公尺"
+      "text": "60 公升"
     },
     {
       "id": "C",
-      "text": "公克"
+      "text": "600 公升"
     },
     {
       "id": "D",
-      "text": "公升"
+      "text": "60,000 公升"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "地板面積是二維量，適合使用平方公尺。"
+    "value": "B",
+    "explanation": "體積=50×40×30=60,000 立方公分；1 公升=1,000 立方公分，所以為 60 公升，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 表面積與體積 題型與官方課綱 KG kg-math-content-s-9-13",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供表面積、體積與單位能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的立體量測方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-13"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-13",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "立體表面積、體積、長方體／正方體、柱體、單位換算與公式適用條件",
+      "observedPattern": "公開學校數學試題常以立體展開、表面積與體積公式、容量單位及複合條件考查空間量測；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "立體表面積、體積、長方體／正方體、柱體、單位換算與公式適用條件",
+      "observedPattern": "公開學校數學試題常以立體展開、表面積與體積公式、容量單位及複合條件考查空間量測；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "立體表面積、體積、長方體／正方體、柱體、單位換算與公式適用條件",
+      "observedPattern": "公開學校數學試題常以立體展開、表面積與體積公式、容量單位及複合條件考查空間量測；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用同一單位求體積，再把立方公分換成公升。",
+  "solutionSteps": [
+    "計算水箱體積 50×40×30=60,000 cm³。",
+    "使用 1 L=1,000 cm³。",
+    "用 60,000÷1,000。",
+    "得到 60 公升。",
+    "選 B。"
+  ]
 }

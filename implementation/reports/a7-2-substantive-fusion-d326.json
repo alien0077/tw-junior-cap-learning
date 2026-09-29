@@ -1,0 +1,81 @@
+{
+  "reportId": "a7-2-substantive-fusion-d326",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-2",
+  "curriculumId": "cur-math-content-a-7-2",
+  "knowledgeGraphId": "kg-math-content-a-7-2",
+  "status": "original-synthesis-strengthened-with-source-mapped-decisions",
+  "fusionClassification": "substantive-cross-source-original-synthesis-draft; publisher textbook coverage incomplete",
+  "sourceComparison": [
+    {
+      "sourceFamily": "Hanlin-labeled textbook sample",
+      "locator": "Third-party Scribd OCR, textbook pp.168-170 (section 3-2), plus pp.170-177 for transition to equality axioms; 111 remedial GO file pp.81-82 as corroborating scaffold",
+      "read": "Definitions, transition from verbal relation to equation, solution defined by substitution making both sides equal, candidate-check table with left/right values, and following topic boundary to equality-axiom solving.",
+      "fusionDecision": "Preserve the meaning-making sequence, but split modeling, classification, and solution verification into separate learner tasks; create new contexts and evidence table rather than reuse examples or layout.",
+      "limits": "Third-party copies; authenticity, uploader authority, and reuse permission unverified. Not counted as publisher-authenticated source coverage."
+    },
+    {
+      "sourceFamily": "Nani-aligned public learning platform",
+      "locator": "https://www.junyiacademy.org/topics/n-m7a-c03-2, especially items 1-19 and 2nd-topic boundary at lines 11-48; linked teaching subpage retrieval returned Cache miss",
+      "read": "Course tree separates equation formation/meaning, examples and solution checking (mapped to textbook pages 182-185) from a subsequent equality-axiom/transposition section.",
+      "fusionDecision": "Use only the visible course segmentation/page mapping to cross-check A-7-2 versus A-7-3 and ensure the lesson does not teach solving in this unit.",
+      "limits": "Explicitly labeled '類南一版'; not Nani-publisher text. Linked page body was not retrieved."
+    },
+    {
+      "sourceFamily": "Kanghsuan-aligned public learning platform and school plan",
+      "locator": "https://www.junyiacademy.org/topics/k-m7a-c03-2 (items 1-21 and section boundary at lines 19-58); Jinshan Junior High 113 school curriculum plan, A-7-2/A-7-3 weeks",
+      "read": "Course tree distinguishes equation formation and checking candidate solutions from equality-property instruction; the school plan separately lists recognizing unknown/equation terminology and translating text, then equality-property/transposition solution objectives in the following allocation.",
+      "fusionDecision": "Make the modeling/recognition/verification goal visible before any solving; separate local correctness feedback by representation, form, and candidate-substitution error.",
+      "limits": "The platform is labeled '類康軒版' and the plan is a school document citing textbook edition, not a readable Kanghsuan textbook body."
+    },
+    {
+      "sourceFamily": "Publisher-labeled public school curriculum plans",
+      "locator": "Nan-kang / Jinshan / Tamsui Junior High lesson plans already recorded in versionResearch and publisherResearch",
+      "read": "Version labels, unit pacing, curriculum outcomes, and assessment forms such as oral response, peer discussion, operations, and written assessment.",
+      "fusionDecision": "Design one original peer task where a classmate reconstructs a story from the symbolic equation; use public assessment modes as broad corroboration, not as publisher pedagogy claims.",
+      "limits": "Curriculum plans are not textbook chapter text and are not used to state publisher-authored misconceptions or examples."
+    }
+  ],
+  "synthesisTrace": [
+    {
+      "sourceInsight": "Source ordering separates expression of a relationship and deciding whether a value satisfies it from later equation-solving procedures.",
+      "lessonLocation": "content.summary; content.sections; teaching.body[0..5]; interactive.steps[0..3]; exit check",
+      "originalDecision": "Teach define quantities and units -> form and read back equation -> classify by equality/unknown count/degree -> substitute a supplied candidate and compare both original sides -> transfer and self-check. No solving algorithm in A-7-2."
+    },
+    {
+      "sourceInsight": "A two-side value comparison makes 'solution' an evidence-based property of the original equation rather than an answer label.",
+      "lessonLocation": "teaching.body[1], interactive candidate-check step, unit spec candidate table",
+      "originalDecision": "Require original equation, supplied candidate, computed left value, unchanged right value, and equality verdict; pair a true and false candidate and require a verbal justification."
+    },
+    {
+      "sourceInsight": "The version-aligned public course structures place equation formation/meaning and solution verification before equality axioms/transposition.",
+      "lessonLocation": "scope notes, section sequence, misconception feedback, interaction fallback, A-7-3 bridge",
+      "originalDecision": "Reserve all equation transformations for A-7-3; this lesson's distinct contexts (badge inventory, receipts, books, seed packaging) each teach a different part of the model rather than repeating a fixed template."
+    }
+  ],
+  "completedInThisChange": [
+    "Added direct page-located research record for the Hanlin-labeled textbook share pp.168-170 and corrected source/authenticity/license limitations.",
+    "Rewrote fusionRecord to distinguish source convergence, version-specific evidence, original pedagogical decisions, and unverified publisher-body gaps.",
+    "Added regression assertions that require the page-located material, source distinction, original mapping, and draft-state gate to remain explicit."
+  ],
+  "gates": {
+    "unitSpecificOriginalTeaching": "present; six independently written lesson sections and four original interaction stages remain in place",
+    "sourceToDesignTrace": "recorded at source, lesson-location, and original-decision granularity",
+    "naniPublisherTextbookBody": "not read; public platform crosswalk only",
+    "kanghsuanPublisherTextbookBody": "not read; public platform crosswalk and school plan only",
+    "hanlinPublisherAuthenticityAndReuseRights": "unverified third-party shares",
+    "publisherEvidenceSlots": "unchanged/pending",
+    "lessonReviewStatus": "draft",
+    "humanContentReview": "pending (per user plan for ChatGPT review)",
+    "commitPush": "not performed"
+  },
+  "validation": {
+    "targetedRuntimeTest": "PASS: npm run test:math:a7-2",
+    "fullRuntimeSuite": "PASS: npm test; workbench contract traversed 1,027/1,027 lessons",
+    "dataValidation": "PASS: python3 scripts/validate_data.py; 14,448 JSON, 13,111 IDs, 1,032 KG nodes; all lessons/questions remain draft",
+    "implementationSpecValidation": "PASS structurally: python3 scripts/validate_implementation_specs.py; 1,027 files, 0 errors, 1,027 pending; A-7-2 status specified/implemented/untested",
+    "strictLessonIndependence": "PASS: scripts/audit_lesson_independence.py --strict; 614 inspected, 0 risks, 0 strict failures",
+    "jsonAndDiff": "PASS: project state, lesson, and report JSON parsed; git diff --check",
+    "browserAndA11y": "not rerun; no runtime implementation changed; prior D-325 result is historical only"
+  }
+}

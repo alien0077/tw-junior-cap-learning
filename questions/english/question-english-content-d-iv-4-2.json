@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-4-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-4／事實與意見」task, what is the best way to prepare question 2?",
+  "prompt": "Which word most clearly signals an opinion in the sentence: 'This is the best way to save energy?'",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-4／事實與意見."
+      "text": "way"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-4／事實與意見."
+      "text": "save"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-4／事實與意見."
+      "text": "energy"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-4／事實與意見."
+      "text": "best"
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-4"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-4／事實與意見, question 2."
+    "value": "D",
+    "explanation": "best 是主觀優劣評價詞，其餘字只是描述方法或主題，因此答案 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E-%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "PDF第4頁（試卷第5頁）第33題：辨認“The writer thinks”所引出的作者觀點，並與第35題文本事實判讀對照。",
+    "authoringNote": "參照公立國中英文定期評量中核對文章事實、作者觀點、圖表證據、預測及行動判讀的能力；情境、題幹、數據、選項、答案與解析皆獨立編寫，未複製原題。版本研究與全案內容審查未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E-%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立國昌國中109學年度第1學期二年級第2次段考英語科試題",
+      "year": "109",
+      "subject": "english",
+      "locator": "PDF第4頁（試卷第5頁）第33題：辨認“The writer thinks”所引出的作者觀點，並與第35題文本事實判讀對照。",
+      "observedPattern": "公開試題以writer thinks引出立場判讀；本題換成節能建議，並自編答案與誘答。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "判斷意見詞時找帶有好壞、優劣或個人評價的字；不要把描述行動的名詞和動詞誤認成評價。",
+  "solutionSteps": [
+    "句子主張某方法是節能方式，但題目問哪個字帶有意見。",
+    "way 表示方法，save 表示節省，energy 表示能源，都是內容詞。",
+    "best 把方法評為所有方法中的最佳，需依評價標準判斷，並非單靠這句話驗證。",
+    "所以最明顯的意見訊號是 best，答案 D。",
+    "若要把主張變得可檢驗，需說明比較對象、節能量測方式及評比條件。"
+  ]
 }

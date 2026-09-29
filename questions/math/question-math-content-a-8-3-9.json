@@ -2,23 +2,23 @@
   "id": "question-math-content-a-8-3-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "化簡 4p－(2p－7)，結果為何？",
+  "prompt": "若 x＞2，長方形長為 2x＋1、寬為 x−2，則其周長的多項式為何？",
   "options": [
     {
       "id": "A",
-      "text": "2p－7"
+      "text": "6x−2"
     },
     {
       "id": "B",
-      "text": "6p＋7"
+      "text": "6x＋2"
     },
     {
       "id": "C",
-      "text": "6p－7"
+      "text": "2x²−x−2"
     },
     {
       "id": "D",
-      "text": "2p＋7"
+      "text": "4x²＋2x−4"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,71 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "去括號後為 4p－2p＋7，合併得 2p＋7。"
+    "value": "A",
+    "explanation": "周長＝2[(2x＋1)＋(x−2)]＝2(3x−1)＝6x−2。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究多項式四則運算、代入與驗算能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+    "sourceLocator": "四份校方公開試卷的題型定位見 examPatternRefs；只作 pattern-only 研究，不複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與四份公立學校公開數學試題的相關能力方向獨立改寫；本題題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-a-8-3",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期七年級數學科第一次定期評量",
+      "year": "112",
+      "subject": "math",
+      "locator": "PDF 第2頁計算題1(甲)：括號分配與多項式整理",
+      "observedPattern": "pattern-only：僅參考原卷單題的「括號分配與多項式整理」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期八年級第一次定期評量數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "選擇題第9題：兩多項式相加並依係數條件求值",
+      "observedPattern": "pattern-only：僅參考原卷單題的「兩多項式相加並依係數條件求值」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064519/get-file/698ae03c3cd80e32ef01bd8d",
+      "title": "臺中市立大道國民中學 114 學年度第一學期八年級數學科補行評量題庫",
+      "year": "114",
+      "subject": "math",
+      "locator": "選擇題第28題：兩多項式相加並合併同類項",
+      "observedPattern": "pattern-only：僅參考原卷單題的「兩多項式相加並合併同類項」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064502/get-file/60175cf169c72a5f0f4269bf",
+      "title": "臺中市立豐東國民中學八年級數學科考試卷（原卷未標學年度）",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "選擇題第16題：長方形尺寸代數化後以乘法式表示面積",
+      "observedPattern": "pattern-only：僅參考原卷單題的「長方形尺寸代數化後以乘法式表示面積」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先合併長寬得到半周長，再乘 2，避免把周長誤算成面積。",
+  "solutionSteps": [
+    "寫出周長公式 2(長＋寬)。",
+    "代入得到 2[(2x＋1)＋(x−2)]。",
+    "括號內合併為 3x−1。",
+    "乘以 2 得 6x−2。",
+    "選 A，確認結果是一次多項式。"
+  ]
 }

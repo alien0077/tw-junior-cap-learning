@@ -1,0 +1,157 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-science-content-ca-iv-1
+  knowledgeGraphIds:
+  - kg-science-content-ca-iv-1
+  title: Ca-Ⅳ-1：實驗分離混合物
+  subject: science
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Ca-Ⅳ-1：實驗分離混合物
+    curriculumIntent: Ca-Ⅳ-1：實驗分離混合物
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 以翰林官方習作及教用資料作為本單元直接出版社內容證據；南一／康軒僅有索引或次級線索，維持 pending，不可描述為三版共同結論
+    currentEvidenceStatus: curriculum-and-kg-grounded; hanlin-direct-content-read; nani-kanghsuan-content-pending; unit-fusion-authored; global-review-pending
+  learningGoals:
+  - 依序利用磁性、溶解度與粒徑，設計鐵屑、食鹽及細砂的分離流程
+  - 預測各步驟濾渣、濾液、洗液與回收物的成分，並解釋為何乾鹽砂不可直接靠過濾分開
+  - 依回收目標區分蒸發結晶與蒸餾的物質去向；以質量、殘留及再檢驗證據說明回收率與純度限制
+  - 說明簡易濾紙色層分析與漏斗過濾利用的物性差異不同
+  prerequisites:
+  - 能區分混合物成分，辨認物質的磁性、溶解性與顆粒大小
+  - 能依操作順序記錄材料、觀察及回收結果
+  coreConcepts:
+  - 分離流程必須由目標成分和可利用的物性差異決定
+  - 溶解度使鹽進入液相；過濾再按顆粒大小截留未溶砂
+  - 蒸發結晶與蒸餾的回收物不同；蒸餾在本課僅作目標導向延伸
+  - 濾渣、濾液、洗液、晶體和器材殘留構成物料去向證據
+  - 紙層析依不同吸附／移動差異分離色素，不等同漏斗過濾
+  misconceptions:
+  - 以為乾食鹽和乾細砂可直接用濾紙彼此分開
+  - 以為濾液只有水，或以為溶解已等同完成分離
+  - 以為洗下來的鹽水可以丟棄而不影響回收量
+  - 以白色外觀直接判定鹽晶純，或把蒸發散失的水算作已回收
+  - 把色層分析說成只依顆粒大小的普通過濾
+  contentFlow:
+  - 'predict: 從混合採樣罐辨認欲回收成分及物性差異，先預測分離順序和可能物料去向'
+  - 'manipulate: 依序磁選鐵屑、溶解食鹽、過濾細砂並洗滌殘渣；依回收目標選結晶或蒸餾'
+  - 'observe: 逐項盤點磁鐵殘留、濾渣、濾液、洗液、晶體與冷凝水，核對質量差及可能損失'
+  - 'explain: 以磁性、溶解度、顆粒大小與揮發差異說明各步依據，辨別結晶／蒸餾產物和證據限制'
+  - 'transfer: 以紙層析分離墨水色素，引用固定相／溶劑造成移動差異的證據，說明其不同於漏斗過濾'
+  visualizations:
+  - 以操作序列和物質流向表同步呈現每一成分的分流位置
+  - 用標籤明示磁鐵、濾渣、濾液、洗液、晶體與冷凝水，不以顏色單獨傳意
+  - 各階段顯示利用的物性、目標回收物與可能殘留；未操作蒸餾時不得假裝有實測冷凝水
+  interactiveBlocks:
+  - id: CUR-SCIENCE-CONTENT-CA-IV-1-I01
+    component: EvidenceLabBlock
+    purpose: 讓學生逐站追蹤鐵屑—鹽—砂的分離去向，並以回收目標判斷何時結晶、何時才需要蒸餾
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        processStep: 0
+        recoveryTarget: salt-only
+    studentActions:
+    - 先預測磁選及溶解過濾後各容器中的成分
+    - 逐步操作磁選、加水攪拌、過濾／洗滌與回收選擇
+    - 切換「只回收鹽／鹽和水都回收」，比較蒸發與蒸餾的去向差異
+    - 以物料流向和回收質量說明可能損失、污染及未能確認的純度
+    visualRules:
+    - 操作後所有相關表徵同步更新，不得只改單一數字
+    - 正解揭露前保留學生預測與操作紀錄
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CA-IV-1-DRY-FILTER
+      trigger: 學生選擇直接過濾乾燥食鹽與細砂
+      prompt: 兩種乾燥顆粒都比濾紙孔隙大時，各自會留在哪裡？過濾能否讓它們分流？
+      expectedEvidence: 指出兩者都留在濾紙，並提出先用水溶解食鹽再過濾的替代流程
+    - id: MC-CA-IV-1-FILTRATE
+      trigger: 學生把濾液判為只有水或把洗液丟棄
+      prompt: 食鹽在溶解後去了哪個容器？洗砂時流出的鹽水要如何處理？
+      expectedEvidence: 說明濾液／洗液含水與溶解食鹽，應併回以保留目標物
+    - id: MC-CA-IV-1-EVAPORATION
+      trigger: 學生把蒸發皿殘留當成已回收的水，或只憑白色判純
+      prompt: 蒸氣去了哪裡？白色外觀足以證明單一成分嗎？
+      expectedEvidence: 區分蒸發的鹽殘留與散失水，並指出外觀不足以證明純度
+    feedback:
+      correct: 具體指出物性、物質去向與回收目標彼此吻合之處，再要求在紙層析色素任務中遷移。
+      incorrect: 對應乾過濾、濾液成分或蒸發去向給不同提示；先要求追蹤一種物質，不直接揭露整條流程。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「Ca-Ⅳ-1：實驗分離混合物」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「Ca-Ⅳ-1：實驗分離混合物」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「Ca-Ⅳ-1：實驗分離混合物」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「Ca-Ⅳ-1：實驗分離混合物」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 分離流程資料判讀與理由短答
+    stemConstraint: 用有色墨水與濾紙的新情境，判斷色層分析和漏斗過濾的差異，不重用食鹽砂例題
+    requiredResponse: 說明色帶分開與溶劑前緣、紙上吸附／移動差異的關係，並指出本模型無法代替實驗量測
+    scoring: 方法依據正確 1、證據對應 1、限制說明 1
+  exitTicket:
+    prompt: 若洗砂液被倒掉，哪一種回收物會減少？用流程中的物質去向說明原因。
+    successCriteria:
+    - 指出洗液仍含溶解食鹽
+    - 說明丟棄洗液使鹽未進入回收步驟
+    - 以濾液／洗液去向或質量差支持判斷
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「Ca-Ⅳ-1：實驗分離混合物」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始頁顯示採樣罐三成分與任務，不提前列出完整流程答案；操作步驟可由鍵盤逐步前進及返回。
+  - 磁選後標示鐵屑與鹽砂殘料；加水過濾後標示細砂濾渣、鹽水濾液及洗液去向。
+  - 觸發直接乾過濾時回饋指出兩種固體同留濾紙；觸發丟棄洗液時回饋指出鹽的回收損失。
+  - 「只取鹽／還要取水」選擇必須更新產物去向與回饋，不能把蒸發散失水標為回收物。
+  - 轉移至獨立色層情境，要求學生指出固定相／溶劑造成不同移動的證據及模型限制。
+  - 320px、375px、768px 下以鍵盤完成流程，題幹、階段按鈕、物質去向及回饋均不溢位。
+  - 無外部資料時，所有文字、流程與回饋由本地 lesson data 完成，不依賴遠端服務。
+  - fallback：外部資料或流程圖失效時，使用本地原創混合物資料及文字物料流表完成分離判斷；不得把未回收成分標成已回收。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 翰林官方直接內容證據定位到版次／頁碼；南一、康軒證據不足處明確保持 pending
+  - 學生可操作單元專屬分離流程，並追蹤磁選、濾渣、濾液、洗液和回收物
+  - 乾過濾、濾液成分、洗液損失及蒸發回收目標均有不同診斷回饋
+  - 紙層析遷移、exit ticket 與模型邊界可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 C、次主題 Ca；官方代碼 Ca-Ⅳ-1
+    role: official-curriculum-source-of-truth

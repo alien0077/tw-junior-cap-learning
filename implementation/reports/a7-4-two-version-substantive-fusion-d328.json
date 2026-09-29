@@ -1,0 +1,70 @@
+{
+  "reportId": "a7-4-two-version-substantive-fusion-d328",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-4",
+  "curriculumId": "cur-math-content-a-7-4",
+  "knowledgeGraphId": "kg-math-content-a-7-4",
+  "status": "two-version-labeled-material-led-original-fusion-draft",
+  "fusionClassification": "two-version-labeled-public-shares-read; publisher-authenticity-and-rights-unverified; nani-body-unread",
+  "sourceComparison": [
+    {
+      "sourceFamily": "Kanghsuan-labeled seventh-grade second-semester self-study handout",
+      "locator": "https://www.scribd.com/document/777687263/國中-數學-基礎自學講義-康軒版-七下; shared document pp.14-16, section B2 1-2; visible OCR lines 471-549",
+      "read": "The visible unit starts with the meaning of a simultaneous system, represents the two equations together, then builds candidate-value sets for each equation and asks learners to identify the same ordered pair appearing in both; only afterward does the document move into solving methods.",
+      "fusionDecision": "Recast separate candidate sets as two independently labeled condition checks, then have learners test one fixed ordered pair against both. Keep equation-solving procedures outside A-7-4.",
+      "limits": "Scribd marks All Rights Reserved. Uploader identity, edition authenticity, upload authority, and reuse rights are unverified; this is not publisher-authenticated material."
+    },
+    {
+      "sourceFamily": "Hanlin-labeled seventh-grade second-semester textbook scan/OCR",
+      "locator": "https://www.scribd.com/document/853352125/翰林國中數學七下課本; section 1-2, printed textbook pp.36-37 vicinity, visible OCR lines 598-664",
+      "read": "The visible explanation defines two contextual conditions (coin count and total value), asks whether one ordered pair is a common solution, substitutes the same pair into each original equation, and compares alternative pairs that fail one or both equations.",
+      "fusionDecision": "Use its same-pair/two-equation verification logic to sharpen the lesson's meaning of common solution; replace the source's object context with original festival drink records, new quantities, and a separate contextual transfer.",
+      "limits": "Scribd marks All Rights Reserved. Scanner/uploader authority, edition authenticity, and reproduction permission are unverified; not a publisher-certified textbook."
+    },
+    {
+      "sourceFamily": "Nani-aligned course map and public school edition-labeled plan",
+      "locator": "Junyi Nani-aligned unit map plus Yongfeng and Tamsui public school course plans previously recorded in lesson.versionResearch/publisherResearch",
+      "read": "Supports unit location, scope, and sequence only; no readable Nani chapter body was obtained.",
+      "fusionDecision": "Use official A-7-4 curriculum/KG for shared concept claims and mark Nani body unread rather than inventing publisher pedagogy.",
+      "limits": "Third-party course map and public school documents are not Nani textbook chapter prose."
+    }
+  ],
+  "synthesisTrace": [
+    {
+      "sourceInsight": "Kanghsuan-labeled handout compares candidate solution sets by identifying the same ordered pair in both.",
+      "lessonLocation": "content.sections[1]-[2], interactive.steps[1]-[3], simulation learningDesign.evidencePrompt",
+      "originalDecision": "Teach the intersection idea through two labeled tests and a fixed variable-order label; a candidate is only provisional until both tests pass."
+    },
+    {
+      "sourceInsight": "Hanlin-labeled textbook uses one concrete situation to produce two equations, then substitutes the same candidate into both and contrasts failures.",
+      "lessonLocation": "content.sections[2]-[3], interactive.steps[2]-[4], teaching guided practice and transfer",
+      "originalDecision": "Use an original beverage-count/ice-use scenario and independently authored candidate checks; explain a one-equation pass / second-equation fail as a counterexample, then translate the valid ordered pair back to quantities."
+    },
+    {
+      "sourceInsight": "Available Nani evidence is structural rather than readable lesson content.",
+      "lessonLocation": "versionResearch, publisherResearch, fusedScope.currentEvidenceStatus, and scope bridge to A-7-5",
+      "originalDecision": "Attribute no teaching move to Nani; retain pending publisher status and keep A-7-4 focused on system meaning rather than solving algorithms."
+    }
+  ],
+  "gates": {
+    "unitSpecificOriginalVisibleTeaching": "four substantive learner-visible sections explain ordered pairs, two-condition intersection, authored worked example, and diagnostic counterexamples",
+    "sourceToDesignTrace": "source, locator, reading, limitation, visible destination, and original design decision recorded for each evidence family",
+    "kanghsuanPublisherBody": "not authenticated; third-party version-labeled handout read",
+    "hanlinPublisherBody": "not authenticated; third-party version-labeled scan/OCR read",
+    "naniPublisherBody": "not read; course map/school plan only",
+    "publisherEvidenceSlots": "all pending; no promotion",
+    "lessonReviewStatus": "draft",
+    "specQaStatus": "untested",
+    "contentReview": "pending",
+    "commitPush": "not performed"
+  },
+  "validation": {
+    "jsonParsingAndSchema": "PASS: lesson/report/project-state JSON parsed; unit spec YAML parsed; validate_data passed 14,449 JSON, 13,111 IDs, 1,032 KG nodes",
+    "targetedRegression": "PASS: node implementation/runtime/math-a-7-4-substantive-fusion.test.mjs",
+    "fullRuntimeSuite": "PASS: npm test; workbench rendered 1,027/1,027 lessons",
+    "dataAndSpecValidation": "PASS: validate_implementation_specs.py reported 1,027 specs, 0 errors, 1,027 pending",
+    "strictLessonIndependence": "PASS: 614 lessons, 0 risks, 0 strict failures",
+    "diffCheck": "PASS: git diff --check",
+    "browser": "not run in this change; no JavaScript/runtime behavior changed"
+  }
+}

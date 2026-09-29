@@ -3,9 +3,7 @@
   "subject": "science",
   "title": "物質的反應、平衡及製造",
   "knowledgeIds": [
-    "kg-science-chemical-reaction",
-    "kg-science-dynamic-equilibrium",
-    "kg-science-industrial-process"
+    "kg-science-content-j"
   ],
   "gradeRange": [
     "9"
@@ -56,7 +54,7 @@
     "authoringNote": "本單元由 LLM 依 J 單元概念脈絡獨立撰寫，重新設計教學入口、例證、活動與檢核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "theme",
   "interactive": {
@@ -114,57 +112,71 @@
         ],
         "answer": "B",
         "feedback": "一次控制一個變因才能支持因果判斷。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "工業反應器提高溫度後速率變快，但生成物比例下降，如何提出決策？",
+        "options": [
+          "分開比較速率、平衡產率、能耗與安全，找出符合產品需求的操作範圍，不把速率變快等同產率變高",
+          "只因速率變快就把溫度升到最高，忽略平衡、設備和能耗限制",
+          "因產率下降就否定所有升溫操作，不必比較是否能縮短反應時間或改善分離"
+        ],
+        "answer": "A",
+        "feedback": "製程條件要同時考慮速率、平衡、能量與安全；科學資料支持的是有條件的取捨，不是單一指標排名。"
       }
     ]
   },
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "國中自然科公開課程資源",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "化學反應與生活應用相關章節",
-      "sourceUrl": "https://course.cyc.edu.tw/upfile/course109/sub1/14507919853792884.pdf",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；J：物質的反應、平衡及製造 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
-        "concept-progression",
-        "activity-pattern"
-      ],
-      "outcome": "採用由觀察現象連到粒子模型，再回到生活用途的學習脈絡。",
-      "copyrightBoundary": "僅取概念方向與名詞，正文與例證均由本單元重新撰寫，未重製教材內容。"
-    },
-    {
-      "publisher": "kanghsuan",
-      "edition": "國中自然數位教材公開索引",
-      "subject": "science",
-      "chapterLocator": "化學反應、反應速率與平衡單元",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": [
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "融合以可觀察變化引導預測，再以條件控制檢驗平衡觀念。",
-      "copyrightBoundary": "只作版本概念研究，未複製影片腳本、圖片、題目或教材文字，正文全部原創。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「物質的反應、平衡及製造」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "國中自然科教材公開產品資訊",
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "物質反應與化學工業相關單元",
-      "sourceUrl": "https://books.hanlin.com.tw/productall",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；J：物質的反應、平衡及製造 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
-        "concept-progression",
         "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "補入從實驗室反應到工業製程的條件取捨、回收與環境責任。",
-      "copyrightBoundary": "公開資訊只作版本定位與概念比對，未重製受保護內容，正文全部重新組織撰寫。"
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「物質的反應、平衡及製造」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；J：物質的反應、平衡及製造 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「物質的反應、平衡及製造」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -172,8 +184,8 @@
       "publisher": "nani",
       "edition": "公開課程資源",
       "sourceType": "public-web",
-      "sourceLocator": "化學反應與生活應用相關章節",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://course.cyc.edu.tw/upfile/course109/sub1/14507919853792884.pdf；化學反應與生活應用相關章節",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "化學反應可由可觀察現象辨識並提出解釋",
@@ -198,8 +210,8 @@
       "publisher": "kanghsuan",
       "edition": "數位自然教材公開索引",
       "sourceType": "public-web",
-      "sourceLocator": "化學反應、反應速率與平衡單元",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；化學反應、反應速率與平衡單元",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "正逆反應可同時進行並以速率關係形成穩定狀態",
@@ -225,8 +237,8 @@
       "publisher": "hanlin",
       "edition": "教材公開產品資訊",
       "sourceType": "public-web",
-      "sourceLocator": "物質反應與化學工業相關單元",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://books.hanlin.com.tw/productall；物質反應與化學工業相關單元",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "反應前後原子種類與數量遵守守恆關係",
@@ -253,22 +265,21 @@
   ],
   "fusionRecord": {
     "commonCore": [
-      "化學反應的證據與微觀粒子模型是共同核心",
-      "反應式表達必須符合反應前後的原子守恆",
-      "可逆反應中正逆反應速率相等形成動態平衡",
-      "化學反應能連結生活現象與工業製程應用"
+      "三版本公開資料共同支持以化學反應證據、粒子重新排列與原子守恆理解物質變化。",
+      "可逆反應的動態平衡必須同時看微觀正逆反應與宏觀濃度，不能誤解為反應停止。",
+      "速率、平衡位置、產率與工業製程條件彼此相關但不是同一概念。"
     ],
     "versionDifferences": [
-      "南一較適合作為由現象觀察連結生活應用的學習入口",
-      "康軒較強調先預測再觀察並以控制變因理解平衡變化",
-      "翰林較能補充反應式表徵工業流程及條件取捨視角"
+      "南一公開線索較適合作為由現象與生活物質進入反應證據的入口。",
+      "康軒公開線索較突出反應式、控制變因與資料判讀，能支撐條件比較。",
+      "翰林公開課程線索補充可逆反應、平衡及工業製造的微觀與製程連結；公開資料不足以宣稱取得完整教材內容。"
     ],
     "originalAdditions": [
-      "以宏觀微觀與系統尺度串連整個單元的理解框架",
-      "把元素原子數當成帳本逐項核對的配平策略",
-      "以工業流程連結速率、平衡、安全與環境的遷移活動"
+      "以『證據—粒子—守恆—條件—製程』五層框架串連根單元。",
+    "把動態平衡與速率、收率和能源取捨放在同一個工業決策情境中比較。",
+    "以可逆製程的濃度—時間曲線及溫度、壓力擾動比較到達平衡速度與平衡組成，要求用粒子模型說明產率和能源成本的取捨。"
     ],
-    "llmSynthesisNote": "本單元依官方課綱、KG 與三版本可取得的公開資料完成比對與融合，保留共同核心，並將不同呈現方式轉化為本單元專屬的證據推理、粒子模型與製程決策教學；正文不是任一版本的改寫或拼接。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開自然科試題及課程資料能力方向，重新撰寫反應證據、原子守恆、反應速率、動態平衡與工業製造。原有 10 題為食鹽質量與日期的泛化套題，已逐題改寫為 J 根單元專屬題，均具唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -336,7 +347,42 @@
     "mode": "model",
     "goal": "以一次只改一項條件的操作，辨識動態平衡並做出兼顧產率與安全的製程選擇。",
     "mission": "先預測條件影響，再操作反應器，讀取粒子數、速率與能量面板，最後用證據寫出決策理由。",
-    "learningDesign":{"type":"reaction-rate-energy-model","objective":"以粒子碰撞、反應速率與能量資料評估化學反應條件。","predictionPrompt":"提高溫度或增加濃度時，反應速率與能量變化是否必然同向？","steps":[{"action":"固定反應物量並調整溫度、濃度或表面積","equation":"collision=frequency+energy"},{"action":"讀取粒子數、生成物量與速率曲線","equation":"rate=delta-concentration/time"},{"action":"比較條件組並以能量面板檢查反應熱與限制","equation":"energy=products-reactants"}]},
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以粒子碰撞、反應速率與能量資料評估化學反應條件。",
+      "predictionPrompt": "提高溫度或增加濃度時，反應速率與能量變化是否必然同向？",
+      "evidencePrompt": "請以反應物量、溫度、濃度、表面積、粒子碰撞、生成物量、速率曲線與反應熱，說明化學反應條件判讀的證據和限制。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "固定反應物量並調整溫度、濃度或表面積",
+          "equation": "collision=frequency+energy",
+          "reason": "固定反應物量後一次改變主要條件，才能比較碰撞頻率或有效碰撞的影響。",
+          "feedback": "請記錄溫度、濃度與表面積，並確認每次比較只有一項主要變因改變。"
+        },
+        {
+          "id": "step-2",
+          "action": "讀取粒子數、生成物量與速率曲線",
+          "equation": "rate=delta-concentration/time",
+          "reason": "生成物量與速率曲線提供反應進程資料，不能只由最後產量推定速率。",
+          "feedback": "請用相同時間間隔讀取曲線，並分開比較初始速率、總產量與粒子數。"
+        },
+        {
+          "id": "step-3",
+          "action": "比較條件組並以能量面板檢查反應熱與限制",
+          "equation": "energy=products-reactants",
+          "reason": "反應速率和反應熱回答不同問題，需把能量面板與條件組分開解釋。",
+          "feedback": "請分別寫出速率差異與能量差異，並標出模型未呈現的熱損失或測量限制。"
+        },
+        {
+          "id": "step-4",
+          "action": "在速率、平衡產率、能耗與安全門檻之間切換權重，找出不同產品需求下的可接受操作區間",
+          "equation": "decision=rate×yield×safety×energy",
+          "reason": "同一反應條件可能提高有效碰撞卻降低平衡產率或增加能耗；把指標分開並設定門檻，才能避免以單一曲線代表整個製程。",
+          "feedback": "請保留一個會改變推薦的權重或情境，並指出設備耐受、熱損失、分離效率等尚未由模型驗證的限制。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",

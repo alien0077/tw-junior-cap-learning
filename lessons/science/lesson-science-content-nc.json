@@ -49,7 +49,7 @@
     "authoringNote": "本課依官方課綱、KG 與目前可取得的三版本公開定位融合後，針對能源轉換、供電條件、環境代價與公共決策獨立重寫；未重製出版社課文、圖片、例題、答案或影音逐字稿。Terra 第二輪尚未執行，故維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "操作能源鏈與供電資料，分辨功率、發電量、效率和環境代價，再提出有條件的開發判斷。",
@@ -93,6 +93,17 @@
         ],
         "answer": "A",
         "feedback": "能源決策不能只挑有利數字；未知條件要轉成下一個可檢驗問題。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "夜間照明需求固定，但光電和風機輸出隨時間變動；比較方案時最重要的補充是什麼？",
+        "options": [
+          "用逐時供需、儲能與備援資料計算缺口，並把排放、生態與噪音限制列入條件式判斷",
+          "只比較全年總發電量，忽略供電時段與需求尖峰",
+          "只因屬再生能源就宣稱不需環境或安全評估"
+        ],
+        "answer": "A",
+        "feedback": "能源方案要同時處理時間配合、供電可靠度和環境代價；總量或能源名稱不能取代逐時與生命週期證據。"
       }
     ]
   },
@@ -100,52 +111,74 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Nc：能源的開發與利用；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Nc：能源的開發與利用 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「能源的開發與利用」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Nc：能源的開發與利用」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Nc：能源的開發與利用 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Nc：能源的開發與利用」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一版國中自然公開課程與課綱定位",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "能源的開發與利用；官方課綱與公開課程資源可取得範圍",
-      "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Nc：能源的開發與利用 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "核對能源轉換、效率、環境影響與以證據比較方案的學習方向；完整正文與資料卡均為本課自編。",
-      "copyrightBoundary": "僅使用公開定位與課程方向，不複製南一課文、圖表、題目、答案或教師用語。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林版國中自然公開產品與課程資訊",
-      "subject": "science",
-      "chapterLocator": "能源、環境與永續；公開產品索引定位",
-      "sourceUrl": "https://books.hanlin.com.tw/productall",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "核對能源議題的科技應用、尺度、環境代價與多準則判讀方向；例證、迷思診斷和互動流程均重新設計。",
-      "copyrightBoundary": "僅研究公開產品結構與教學方向，不重製翰林課文、圖片、練習、答案或教師用內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Nc：能源的開發與利用」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["能源涉及來源、轉換、輸送與使用的系統鏈", "功率、時間、效率與實際供電量必須分開判讀", "能源方案要以證據同時檢查可靠度、環境影響與社會條件"],
-    "versionDifferences": ["南一公開定位提供能源轉換與生活應用的概念脈絡", "康軒公開資源較適合核對探究活動與供電條件的資料判讀", "翰林公開產品資訊凸顯能源、環境與永續的多尺度決策"],
-    "originalAdditions": ["以校園夜間照明需求比較光電、柴油機與風機", "加入額定功率與實際發電量、再生與低碳的迷思分流", "設計社區離岸風機決策卡，要求提出補測與有條件結論"],
-    "llmSynthesisNote": "LLM 依官方自然科課綱、KG 與南一、康軒、翰林目前可取得的公開資料完成概念、表徵、例型、迷思與評量方向融合，再以本單元專屬的能源鏈、資料比較與公共決策脈絡獨立撰寫；未複製任何出版社內容。Terra 尚未執行，維持 draft。"
+    "commonCore": [
+      "能源涉及來源、轉換、輸送與使用的系統鏈",
+      "功率、時間、效率與實際供電量必須分開判讀",
+      "能源方案要以證據同時檢查可靠度、環境影響與社會條件"
+    ],
+    "versionDifferences": [
+      "南一公開定位提供能源轉換與生活應用的概念脈絡",
+      "康軒公開資源較適合核對探究活動與供電條件的資料判讀",
+      "翰林公開產品資訊凸顯能源、環境與永續的多尺度決策"
+    ],
+    "originalAdditions": [
+      "以校園夜間照明需求比較光電、柴油機與風機",
+      "加入額定功率與實際發電量、再生與低碳的迷思分流",
+      "設計社區離岸風機決策卡，要求提出補測與有條件結論"
+    ],
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-nc、南一／康軒／翰林可取得的公開版本研究限制與三筆公立學校／公開自然與理化題型能力模式，獨立融合能源來源、功率、能量、效率、再生／非再生、逐時供需、儲能、排放、生態、噪音、可靠度與公共決策。題目與互動均重新設計，未複製受保護內容；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "versionResearch": [
     {
@@ -153,13 +186,24 @@
       "edition": "南一版國中自然公開課程計畫與公開資源",
       "sourceType": "public-web",
       "sourceLocator": "https://www.naer.edu.tw/；自然科能源與環境議題課程定位，未取得完整課本頁面",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["能源使用涉及轉換、效率與環境影響。", "能源選擇需放回生活與環境脈絡比較。"],
-        "representations": ["用能源鏈與比較表連結來源、轉換裝置、輸出與影響。"],
-        "examplesOrEvidence": ["本課自編校園用電與離岸風機資料卡，避免複製教材案例。"],
-        "misconceptions": ["把能量消失誤認為能源被用光，或把再生誤認為毫無代價。"],
-        "assessmentEmphasis": ["要求學生以相同服務量及資料證據比較方案。"]
+        "concepts": [
+          "能源使用涉及轉換、效率與環境影響。",
+          "能源選擇需放回生活與環境脈絡比較。"
+        ],
+        "representations": [
+          "用能源鏈與比較表連結來源、轉換裝置、輸出與影響。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編校園用電與離岸風機資料卡，避免複製教材案例。"
+        ],
+        "misconceptions": [
+          "把能量消失誤認為能源被用光，或把再生誤認為毫無代價。"
+        ],
+        "assessmentEmphasis": [
+          "要求學生以相同服務量及資料證據比較方案。"
+        ]
       },
       "licenseBoundary": "只使用公開課程定位與課綱方向；不複製或改寫南一課本、習作、教師用書、圖片、題目或答案。"
     },
@@ -168,13 +212,24 @@
       "edition": "康軒版國中自然公開影音與課程資源",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；能源單元公開結構定位",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["發電是能量轉換過程，供電穩定性與能源來源特性相關。", "開發方案同時有科學與社會決策面向。"],
-        "representations": ["以流程圖、功率—時間關係與利弊矩陣呈現轉換和取捨。"],
-        "examplesOrEvidence": ["本課另創晴天、陰天與尖峰用電三組情境，讓學生檢驗證據。"],
-        "misconceptions": ["以額定功率直接推定全天發電量，忽略日照、風速與需求變化。"],
-        "assessmentEmphasis": ["由資料解釋能源方案的條件與限制，而非背誦優缺點。"]
+        "concepts": [
+          "發電是能量轉換過程，供電穩定性與能源來源特性相關。",
+          "開發方案同時有科學與社會決策面向。"
+        ],
+        "representations": [
+          "以流程圖、功率—時間關係與利弊矩陣呈現轉換和取捨。"
+        ],
+        "examplesOrEvidence": [
+          "本課另創晴天、陰天與尖峰用電三組情境，讓學生檢驗證據。"
+        ],
+        "misconceptions": [
+          "以額定功率直接推定全天發電量，忽略日照、風速與需求變化。"
+        ],
+        "assessmentEmphasis": [
+          "由資料解釋能源方案的條件與限制，而非背誦優缺點。"
+        ]
       },
       "licenseBoundary": "只研究公開 metadata、章節方向與活動形式；不複製影音字幕、圖片、題目、提示或解答。"
     },
@@ -183,13 +238,24 @@
       "edition": "翰林版國中自然官方公開產品與課程資訊",
       "sourceType": "public-web",
       "sourceLocator": "https://books.hanlin.com.tw/productall；能源、環境與永續學習方向定位",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["能源議題可連結科技應用、環境代價與永續選擇。", "同一方案在不同地點與尺度可能有不同結果。"],
-        "representations": ["用區域地圖、生命週期提問與多準則決策表組織證據。"],
-        "examplesOrEvidence": ["本課自編屋頂光電與儲能配置資料，區分觀察、推論與價值判斷。"],
-        "misconceptions": ["把單一指標最大化當作唯一最佳方案，忽略土地、廢棄物與居民需求。"],
-        "assessmentEmphasis": ["能指出判斷的尺度、證據範圍與尚待查證的資料。"]
+        "concepts": [
+          "能源議題可連結科技應用、環境代價與永續選擇。",
+          "同一方案在不同地點與尺度可能有不同結果。"
+        ],
+        "representations": [
+          "用區域地圖、生命週期提問與多準則決策表組織證據。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編屋頂光電與儲能配置資料，區分觀察、推論與價值判斷。"
+        ],
+        "misconceptions": [
+          "把單一指標最大化當作唯一最佳方案，忽略土地、廢棄物與居民需求。"
+        ],
+        "assessmentEmphasis": [
+          "能指出判斷的尺度、證據範圍與尚待查證的資料。"
+        ]
       },
       "licenseBoundary": "只作公開產品結構與教學方向研究；本文不複製課文、插圖、練習、答案或教師用內容。"
     }
@@ -261,7 +327,42 @@
     "model": "general",
     "goal": "模擬能源來源、有效供電時間與需求曲線的變化，練習以相同服務量比較開發方案。",
     "mission": "完成三回合校園能源調度：先拖曳光照、風速與儲能容量，再觀察實際供電量、夜間缺口與排放估計；每回合寫出一項證據、一項限制與下一個補測問題。",
-    "learningDesign":{"type":"campus-energy-dispatch","objective":"以光照、風速、儲能與夜間負載資料調度校園能源並評估排放。","predictionPrompt":"白天再生能源過剩但夜間需求高時，如何決定充電與備援策略？","steps":[{"action":"建立光照、風速、負載與儲能基準曲線","equation":"net=generated-demand"},{"action":"拖曳一項條件並記錄供電量、缺口與排放估計","equation":"shortfall=max(0,demand-supply)"},{"action":"比較三回合調度結果，提出補測與修正","equation":"dispatch=source+storage+backup"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以光照、風速、儲能與夜間負載資料調度校園能源並評估排放。",
+      "predictionPrompt": "白天再生能源過剩但夜間需求高時，如何決定充電與備援策略？",
+      "steps": [
+        {
+          "action": "建立光照、風速、負載與儲能基準曲線",
+          "equation": "net=generated-demand",
+          "id": "step-1",
+          "reason": "本步把「建立光照、風速、負載與儲能基準曲線」和「net=generated-demand」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「建立光照、風速、負載與儲能基準曲線」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "拖曳一項條件並記錄供電量、缺口與排放估計",
+          "equation": "shortfall=max(0,demand-supply)",
+          "id": "step-2",
+          "reason": "本步把「拖曳一項條件並記錄供電量、缺口與排放估計」和「shortfall=max(0,demand-supply)」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「拖曳一項條件並記錄供電量、缺口與排放估計」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "比較三回合調度結果，提出補測與修正",
+          "equation": "dispatch=source+storage+backup",
+          "id": "step-3",
+          "reason": "本步把「比較三回合調度結果，提出補測與修正」和「dispatch=source+storage+backup」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「比較三回合調度結果，提出補測與修正」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "在夜間尖峰與低風低日照情境下重排光電、風機、儲能與柴油備援，標示環境補測",
+          "equation": "decision=hourlySupply+storage+backup+externalities",
+          "id": "step-4",
+          "reason": "本步把「在夜間尖峰與低風低日照情境下重排光電、風機、儲能與柴油備援，標示環境補測」和「decision=hourlySupply+storage+backup+externalities」連結，將可靠度和生態、噪音及排放未知條件一起納入方案邊界。",
+          "feedback": "若只以發電量排序，請回看缺口時段、儲能容量和備援觸發條件，並把鳥類、噪音或施工資料缺口列為下一個查證任務。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以光照、風速、儲能與夜間負載資料調度校園能源並評估排放。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

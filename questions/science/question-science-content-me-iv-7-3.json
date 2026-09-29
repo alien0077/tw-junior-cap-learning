@@ -2,41 +2,84 @@
   "id": "question-science-content-me-iv-7-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年4月10日自然科教室的觀察中，水中射向鏡面時，光線與鏡面法線的入射角為 15°，研究「Me-Ⅳ-7：聲音特性研究與噪音防治」時，反射角為何？",
+  "prompt": "鋼琴和長笛演奏相同基頻仍有不同音色，最適合用哪項解釋？",
   "options": [
     {
       "id": "A",
-      "text": "75°（「Me-Ⅳ-7：聲音特性研究與噪音防治」中把入射角誤當折射角）"
+      "text": "音色只由音量決定"
     },
     {
       "id": "B",
-      "text": "15°（水中射向鏡面）"
+      "text": "相同頻率代表波形完全相同"
     },
     {
       "id": "C",
-      "text": "30°（「Me-Ⅳ-7：聲音特性研究與噪音防治」中把入射角加倍）"
+      "text": "音色等於分貝數"
     },
     {
       "id": "D",
-      "text": "165°（「Me-Ⅳ-7：聲音特性研究與噪音防治」中以平角計算）"
+      "text": "音色與波形細節或泛音組成有關，不只看基頻"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-me-iv-7"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "反射定律指出反射角等於入射角，因此為 15°。 本題對應 KG「Me-Ⅳ-7：聲音特性研究與噪音防治」。"
+    "value": "D",
+    "explanation": "相同基頻不代表整個波形和泛音組成相同；波形細節改變會使聽感的音色不同。 正確答案為選項 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的音調、響度、音色、波形、聲速、反射、噪音測量與防治能力方向；本題為 Me-Ⅳ-7 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-me-iv-7"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-me-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "聲音特性、波形、響度與噪音資料",
+      "observedPattern": "取公開自然科題型對音調、響度、音色與測量判讀的能力方向，另寫聲音情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "波動、聲音、資料與實驗控制",
+      "observedPattern": "取公開會考對波動概念、控制條件和圖表證據的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "聲音傳播、反射與生活應用",
+      "observedPattern": "取公立學校自然科對聲音傳播、反射與生活防護的能力方向，重新設計選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先固定基頻，再比較波形形狀或頻譜成分，避免把音色、音調與響度混為一談。",
+  "solutionSteps": [
+    "找出聲源、介質、受體及題目要求的物理量。",
+    "將頻率、振幅、波形、聲速、聲級與測量條件分開標記。",
+    "用公式或控制變因逐步檢查資料，並寫出單位與假設。",
+    "排除把相對波形當校準分貝、把音調當音量或忽略安全測量的選項，答案為 D。",
+    "回查結論是否可重測並保留限制：相同基頻不代表整個波形和泛音組成相同；波形細節改變會使聽感的音色不同。"
+  ]
 }

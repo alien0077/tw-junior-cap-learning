@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-n-iv-3",
   "subject": "math",
-  "title": "n-Ⅳ-3：非負整數次方指數律質因數與科學記號",
+  "title": "n-Ⅳ-3：用指數與科學記號描述尺度",
   "knowledgeIds": [
     "kg-math-performance-n-iv-3"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「非負整數次方指數律質因數與科學記號」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "指數不是把數字寫得更短而已，它記錄相同因子重複相乘的結構，也能幫助我們比較極大與極小的量。本課從細菌倍增與星際距離的原創情境出發，練習同底數乘除、零次方、負次方、質因數分解與科學記號標準化，最後用數量級與單位估算檢查答案。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「非負整數次方指數律質因數與科學記號」相關的關係。"
+        "heading": "指數記錄重複乘法",
+        "body": "2⁴ 表示四個 2 相乘，不是 2×4；指數是次數，底數是被重複相乘的量。先展開小次方，能看見乘法規則從哪裡來。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「非負整數次方指數律質因數與科學記號」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "同底數的指數律",
+        "body": "aᵐ×aⁿ 可合併為 aᵐ⁺ⁿ，aᵐ÷aⁿ 在 a 不為零時可整理為 aᵐ⁻ⁿ。規則來自因子消去，不是把指數任意相加或相減。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「非負整數次方指數律質因數與科學記號」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "科學記號的兩個條件",
+        "body": "科學記號寫成 c×10ⁿ，其中 1≤c<10；小數點移動幾位就要同步調整十的次方。先估數量級再寫形式，可抓出指數方向錯誤。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「非負整數次方指數律質因數與科學記號」，並指出至少一項支持判斷的條件。"
+        "heading": "單位與有效尺度",
+        "body": "光年、奈米、克等單位不能在換算時遺失；負次方常表示小於 1 的量。最後以數量級和單位回查，判斷答案是否可能比原量大或小太多。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「非負整數次方指數律質因數與科學記號」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先分清底數、指數與重複乘法的意義。",
+    "由因子展開理解同底數乘除及零次方規則。",
+    "科學記號係數介於 1 和 10，指數反映小數點移動方向。",
+    "以數量級、單位與估算檢查結果。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,111 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「非負整數次方指數律質因數與科學記號」並驗算結果。",
-    "scenario": "以「n-Ⅳ-3：非負整數次方指數律質因數與科學記號」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "以因子、指數與數量級轉換大／小尺度數值。",
+    "scenario": "調整重複倍增次數與小數點位置，觀察指數形式、原數與單位同步更新。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "symbol": "a",
+        "meaning": "重複相乘的底數或科學記號係數"
+      },
+      {
+        "symbol": "n",
+        "meaning": "指數或十的次方"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「非負整數次方指數律質因數與科學記號」的第一步是什麼？",
+        "prompt": "3²×3⁴ 的指數如何整理？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "3⁶",
+          "3⁸",
+          "6³"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "同底數相乘，因子數量相加。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "450000000 的科學記號係數與指數？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "4.5×10⁸",
+          "45×10⁷",
+          "0.45×10⁹"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "標準係數需介於 1 與 10，並依小數點移動決定指數。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "0.003 若寫成 3×10ⁿ，n 是多少？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "−3",
+          "3",
+          "0"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "小於 1 的數需要負次方，3 的小數點向左三位。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "n-Ⅳ-3：非負整數次方指數律質因數與科學記號；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；n-Ⅳ-3：非負整數次方指數律質因數與科學記號：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「非負整數次方指數律質因數與科學記號」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「n-Ⅳ-3：非負整數次方指數律質因數與科學記號」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；n-Ⅳ-3：非負整數次方指數律質因數與科學記號：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「n-Ⅳ-3：非負整數次方指數律質因數與科學記號」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；n-Ⅳ-3：非負整數次方指數律質因數與科學記號：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「n-Ⅳ-3：非負整數次方指數律質因數與科學記號」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +160,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「非負整數次方指數律質因數與科學記號」",
-        "body": "以「非負整數次方指數律質因數與科學記號」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "細菌一輪又一輪倍增",
+        "body": "原創培養皿每一輪細菌數量乘以 2，請學生用表格寫出前三輪，再用 2 的次方預測第十輪。先比較重複乘法與乘上 10，讓指數的次數意義變得可見。 並將每一輪的因子數與指數寫在同一表格，說明第十輪預測不是逐項亂乘。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「非負整數次方指數律質因數與科學記號」的概念架構",
-        "body": "本單元依官方課綱所列的「非負整數次方指數律質因數與科學記號」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "指數律從因子排列來",
+        "body": "將 3²×3⁴ 展開成六個 3，說明可整理為 3⁶；再把 3⁵÷3² 的共同因子消去得到 3³。學生在每一步標記保留與消去的因子。 再把保留和消去的因子用不同記號標示，確認指數加減來自實際因子數量。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「n-Ⅳ-3：非負整數次方指數律質因數與科學記號」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "把距離寫成科學記號",
+        "body": "將 450000000 公尺寫成 4.5×10⁸ 公尺，說明小數點向左移八位；再將 0.00045 公尺寫成 4.5×10⁻⁴ 公尺，檢查係數範圍與大小方向。 同時核對係數範圍、移動位數與單位，說明正負指數如何反映大小。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「非負整數次方指數律質因數與科學記號」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "找出指數方向錯誤",
+        "body": "給出三個科學記號候選，學生先估原數大約是十萬、千分之一或其他尺度，再選係數與指數。若把 0.003 寫成 3×10³，回饋要求用大小估算推翻。 最後用原數估算和科學記號反換兩種方式推翻錯誤候選。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「非負整數次方指數律質因數與科學記號」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "質因數與尺度一起讀",
+        "body": "將 72 分解為 2³×3²，再比較 2⁵×3 與 2³×3² 的大小。學生同時使用質因數結構、指數比較與估算，說明不能只看指數總和。 再將質因數展開成數值比較，說明不能只比較指數總和而忽略底數。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「非負整數次方指數律質因數與科學記號」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "形式、大小、單位三檢查",
+        "body": "出口題要求學生核對科學記號係數範圍、十的次方方向、原始單位與數量級；再把一個錯誤答案改寫並說明修正證據。 並寫出一個形式修正後的完整數值與單位，讓檢查可重做。 並把原數與修正後的科學記號互相換回，確認係數、指數與單位三者全部一致。"
       }
     ],
     "summary": [
-      "先用自己的話界定「非負整數次方指數律質因數與科學記號」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "分清底數與指數，先理解重複乘法。",
+      "用因子展開、保留與消去的步驟推導同底數指數律，而不是只背規則。",
+      "科學記號係數要在 1 到 10 之間，指數方向要符合大小。",
+      "最後用估算、數量級與單位回查。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「非負整數次方指數律質因數與科學記號」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "請說明 2⁴ 的底數、指數與實際重複乘法意義。",
+        "expectedEvidence": "四個 2 相乘，不是 2×4。"
       },
       {
-        "prompt": "在「非負整數次方指數律質因數與科學記號」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "450000000 如何寫成科學記號？",
+        "expectedEvidence": "4.5×10⁸，並說明小數點向左移八位。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「非負整數次方指數律質因數與科學記號」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼單位不能在科學記號換算時省略？",
+        "expectedEvidence": "單位決定量的意義，數字形式正確但單位遺失仍無法解讀。"
       }
     ]
   },
@@ -188,6 +227,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『n-Ⅳ-3：用指數與科學記號描述尺度』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整重複倍增次數與小數點位置，觀察指數形式、原數與單位同步更新。』開始前，先回答：3²×3⁴ 的指數如何整理？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整重複倍增次數與小數點位置，觀察指數形式、原數與單位同步更新。』回答：0.003 若寫成 3×10ⁿ，n 是多少？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "3²×3⁴ 的指數如何整理？；操作時先預測，再依『n-Ⅳ-3：用指數與科學記號描述尺度』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-3：用指數與科學記號描述尺度)：答案 A；選項內容：3⁶",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。同底數相乘，因子數量相加。",
+          "feedback": "同底數相乘，因子數量相加。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "450000000 的科學記號係數與指數？；操作時先預測，再依『n-Ⅳ-3：用指數與科學記號描述尺度』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-3：用指數與科學記號描述尺度)：答案 A；選項內容：4.5×10⁸",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。標準係數需介於 1 與 10，並依小數點移動決定指數。",
+          "feedback": "標準係數需介於 1 與 10，並依小數點移動決定指數。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "0.003 若寫成 3×10ⁿ，n 是多少？；操作時先預測，再依『n-Ⅳ-3：用指數與科學記號描述尺度』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-3：用指數與科學記號描述尺度)：答案 A；選項內容：−3",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。小於 1 的數需要負次方，3 的小數點向左三位。",
+          "feedback": "小於 1 的數需要負次方，3 的小數點向左三位。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；指數、質因數與科學記號評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以指數律、質因數與科學記號處理數量尺度",
+          "公開結構支持以指數律與十的次方表達大／小數量，並連結質因數結構與估算。"
+        ],
+        "representations": [
+          "因子展開、指數、十次方與單位的互相轉換"
+        ],
+        "examplesOrEvidence": [
+          "本課的細菌數量、天文距離與容量尺度均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "把指數當乘法係數或把小數指數方向寫反"
+        ],
+        "assessmentEmphasis": [
+          "完整檢查規則推導、形式標準化與數量級回查"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；指數、質因數與科學記號評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以操作和情境表徵理解重複倍增與小數尺度",
+          "公開結構支持以指數律與十的次方表達大／小數量，並連結質因數結構與估算。"
+        ],
+        "representations": [
+          "倍增表、數線、小數點與十次方的同步呈現"
+        ],
+        "examplesOrEvidence": [
+          "本課的細菌數量、天文距離與容量尺度均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "套用指數律但不看底數或係數範圍"
+        ],
+        "assessmentEmphasis": [
+          "操作後完整解釋指數與數量如何互相對應"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；指數、質因數與科學記號評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "在科學資料與估算中判斷尺度及單位",
+          "公開結構支持以指數律與十的次方表達大／小數量，並連結質因數結構與估算。"
+        ],
+        "representations": [
+          "細菌、距離、容量與有效單位限制的情境表徵"
+        ],
+        "examplesOrEvidence": [
+          "本課的細菌數量、天文距離與容量尺度均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "只比較指數總和或省略單位而未檢查量級"
+        ],
+        "assessmentEmphasis": [
+          "評估模型選擇、估算與科學記號表達是否相稱"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持以指數、質因數與十次方表示數量尺度。",
+      "指數律應由因子結構理解，科學記號需符合標準係數。",
+      "估算、數量級與單位是檢查形式答案的重要證據。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯指數律與質因數基礎；康軒較突顯倍增操作與表徵；翰林較突顯科學資料、估算與單位。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以原創細菌倍增表建立指數次數、因子數與第十輪預測。",
+      "以正負次方科學記號診斷小數點移動方向與尺度。",
+      "將質因數結構與數量級估算放在同一轉移任務並保留單位。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計指數律、質因數、科學記號與尺度估算。正文、例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

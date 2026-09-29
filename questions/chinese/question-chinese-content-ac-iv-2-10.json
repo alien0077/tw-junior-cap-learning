@@ -1,0 +1,77 @@
+{
+  "id": "question-chinese-content-ac-iv-2-10",
+  "subject": "chinese",
+  "type": "single-choice",
+  "prompt": "只有一句『這是最好的方法』，沒有上下文與說話者資料；可以確定它是客觀事實嗎？",
+  "options": [
+    {
+      "id": "A",
+      "text": "可以，最好的就是事實。"
+    },
+    {
+      "id": "B",
+      "text": "不可以，只能知道這是帶有最高評價的判斷，還需證據與語境。"
+    },
+    {
+      "id": "C",
+      "text": "可以，因為使用了是。"
+    },
+    {
+      "id": "D",
+      "text": "不可以，因為所有句子都不是事實。"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-chinese-content-ac-iv-2"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "B",
+    "explanation": "最好的包含比較與評價，沒有標準、證據和說話者資訊時，不能直接當作客觀事實。"
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究敘事、存在、判斷、表態、因果與證據界線的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫句型功能題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ac-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "句型與語意判讀",
+      "observedPattern": "公立學校國文評量要求從句法、時態、存在、判斷、因果與說話者立場辨識句型功能；本題使用全新語句。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "敘事、判斷與表態",
+      "observedPattern": "公立學校國文評量要求從句法、時態、存在、判斷、因果與說話者立場辨識句型功能；本題使用全新語句。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分句法形式與內容證據：是字能連接判斷，但不會自動保證判斷為真。",
+  "solutionSteps": [
+    "圈出『最好的』，它暗示比較標準和評價，不是單純可觀察事件。",
+    "句子沒有說明比較對象、標準或證據。",
+    "B 正確保留目前能確認的語意與需要補證的部分。",
+    "A、C 把句法形式誤當真實保證，D 又把所有句子一概否定。",
+    "要求補充評估標準與資料，再判斷是否能支持『最好』。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
+}

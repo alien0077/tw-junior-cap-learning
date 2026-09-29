@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance c-communication."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-pc.json"; REPORT=ROOT/"implementation/reports/science-performance-pc-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；科學溝通、討論、資料表達與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以證據、圖表、口語與文字清楚溝通科學發現，並回應不同觀點。"],"representations":[r],"examplesOrEvidence":["本課的微塑膠、校園能源與植物實驗發表皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-pc" and d["reviewStatus"]=="draft"
+ d["title"]="討論與傳達（c）：讓科學證據被看懂、被追問"
+ d["content"]={"summary":"科學傳達不只是把結論念出來，而是讓聽者或讀者知道問題、方法、資料、限制和結論如何連在一起。討論時要先準確重述對方的主張，再指出支持或不支持的證據，提出具體問題，而不是用音量或專業詞彙取勝。本課以微塑膠資料、校園能源提案與植物實驗發表為原創情境，練習選擇圖表、說明不確定性、引用來源、回應質疑與依對象改寫訊息。","sections":[{"heading":"先決定對方需要知道什麼","body":"給同學的短講、給校方的提案和給研究小組的紀錄，重點與語言不同。所有版本都不能省略證據範圍，但可調整術語、圖表、背景和行動建議。"},{"heading":"證據、解釋與意見要分層","body":"資料數字是證據，說明數字代表什麼是解釋，『因此應該怎樣做』可能涉及價值選擇。把三層分開，聽者才知道哪些可由測量檢查、哪些需要討論。"},{"heading":"圖表是論證的一部分","body":"圖表標題、座標、單位、樣本、日期與來源不能缺。選擇會放大或隱藏差異的圖形時，要說明理由，避免用視覺效果替代資料。"},{"heading":"討論要讓證據前進","body":"回應質疑可先確認對方指出的資料，再說明自己的理由與限制，最後提出能區分兩種看法的補充資料。承認不確定不是輸掉討論，而是讓合作更有效率。"}]}
+ d["studyHighlights"]=["依對象調整術語與表徵，但保留證據範圍。","分開資料、解釋、價值判斷與行動建議。","圖表要有標題、單位、樣本、日期與來源。","重述質疑、回應證據、承認限制並提出下一步。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"同一份結果，三種讀者","body":"植物實驗顯示甲光照下平均長高 4 公分、乙光照下 6 公分。請分別對同學、校長和研究同伴說明這個結果。三種說法都要保留樣本和限制，但對校長可強調資源方案，對研究同伴則要交代原始讀值和重複次數。"},
+ {"id":"explain","phase":"explain","heading":"科學傳達的六格結構","body":"依序交代問題、方法、主要資料、圖表或例證、限制與結論／建議。每格都問『讀者如何檢查』：資料有來源，圖表有單位，推論有範圍，建議和價值判斷分開。這比堆疊術語更能建立信任。"},
+ {"id":"worked-example","phase":"worked-example","heading":"微塑膠資料如何避免誇大","body":"調查在三個地點各採五個樣本，某地平均顆粒數較高。傳達時要說樣本數、採樣日期、顆粒定義與方法限制，寫成『本次採樣該地平均較高』，不能直接宣稱整條河或所有時間都被同樣污染。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"能源提案的質詢演練","body":"一組提案裝設太陽能板，另一組提出陰天和維護成本疑問。提案組先重述問題，再指出目前資料能回答與不能回答的部分，最後提出補測日照、用電時段和回收年限的方法。評分重點是證據回應，不是誰講得更快。"},
+ {"id":"transfer","phase":"transfer","heading":"把研究海報改成一分鐘口頭報告","body":"保留研究問題、最關鍵一張圖、限制和一句有範圍的結論，刪除不影響判斷的細節；若有人追問，再回到附錄原始資料。這個轉換要求先判斷讀者任務，而不是把海報逐字朗讀，還要用口語解釋圖表中的單位和樣本。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個傳達迷思","body":"請修正『把結論講得很肯定就更有說服力』與『承認限制會讓研究失敗』。過度肯定會超過證據，清楚限制反而讓讀者知道結論能用在哪裡，也方便下一次補測、同儕檢查和共同修正，讓溝通更可信。"}
+ ],"summary":["依讀者任務調整表達，但保留方法、證據與限制。","分開資料、解釋、價值判斷與建議。","圖表要讓讀者追查單位、樣本、日期與來源。","討論先重述質疑，再用證據回應並提出下一步。"],"exitCheck":[{"prompt":"為什麼同一份結果要依不同讀者改寫？","expectedEvidence":"讀者需要的背景、術語與行動不同，但所有版本都需保留證據範圍和限制。"},{"prompt":"微塑膠調查為什麼不能直接代表整條河？","expectedEvidence":"樣本地點、數量、日期、顆粒定義和方法有限，只能支持本次採樣範圍。"},{"prompt":"面對提案質疑時第一步應做什麼？","expectedEvidence":"先準確重述對方問題，再指出現有資料能否回答、限制和需要補測的證據。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"用適合讀者的表徵清楚傳達科學問題、證據、限制與有範圍的結論。","scenario":"把植物實驗、微塑膠調查與能源提案改寫成海報、口頭報告和質詢回應。","variables":[{"symbol":"a","meaning":"傳達對象"},{"symbol":"e","meaning":"證據資料"},{"symbol":"l","meaning":"限制範圍"}],"steps":[{"id":"step-1","prompt":"科學圖表至少應標示哪些資訊？","options":["標題、座標／單位、樣本、日期與來源","只用鮮豔顏色和大字標題","只寫最後結論不放資料"],"answer":"A","feedback":"完整標示讓讀者能讀懂並追查圖表的資料範圍。"},{"id":"step-2","prompt":"面對能源提案的反對意見，哪種回應最有效？","options":["重述疑問，指出現有證據與缺口，再提出補測方法","用更大聲的語氣重複原結論","把所有質疑都說成不懂科學"],"answer":"A","feedback":"回應證據與提出下一步能讓討論真正前進。"},{"id":"step-3","prompt":"微塑膠樣本只來自三個地點時，結論應如何說？","options":["限定為本次地點與日期的結果，並說明不能推廣的限制","宣稱整條河全年都相同","因樣本少就完全不報告"],"answer":"A","feedback":"有限資料仍可溝通，但結論必須和證據範圍相稱。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以口語、文字、圖表和討論清楚表達科學資料與解釋。","研究紀錄、資料圖表、海報、口頭報告與來源限制。","把術語和肯定語氣當成證據，省略單位、樣本或限制。","重視內容正確、表徵清楚、證據引用與回應問題。"),rec("kanghsuan","透過合作探究、發表與同儕質疑修正科學傳達。","實驗發表、質詢對話、圖表轉換、回饋與修訂稿。","只朗讀結果或把不同意見當成攻擊而不檢查資料。","評量溝通結構、證據使用、聆聽與修正。"),rec("hanlin","連結環境、能源與健康議題，依受眾傳達不確定性和負責任建議。","微塑膠、能源提案、研究海報、來源、風險與行動。","把有限樣本推廣到全部，或用單一圖表煽動而不說方法。","要求對象適切、來源透明、限制清楚與公共溝通責任。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持用口語、文字與圖表傳達科學問題、資料與解釋。","證據、來源、單位、樣本、限制和回應質疑是共同要求。","科學傳達需依受眾調整形式，但結論必須和資料範圍相稱。"],"versionDifferences":["南一證據較突顯基本資料表達與證據引用；康軒較突顯合作發表、質詢、回饋與修訂；翰林較突顯環境能源健康議題和公共溝通責任。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以同一植物結果改寫給同學、校長和研究同伴的版本。","以微塑膠樣本練習資料範圍、方法限制與避免誇大。","以能源提案質詢和海報轉口頭報告練習證據回應與受眾設計。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織受眾、問題、方法、資料、圖表、限制、結論、質詢與科學公共溝通。正文、原創情境、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"討論與傳達（c）","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

@@ -2,23 +2,23 @@
   "id": "question-chinese-common-words-recognition-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "遇到不熟詞語先找？",
+  "prompt": "「參差不齊」中的「差」讀音與意思為何？",
   "options": [
     {
       "id": "A",
-      "text": "前後文線索"
+      "text": "ㄔㄚ，表示差別"
     },
     {
       "id": "B",
-      "text": "字體粗細"
+      "text": "ㄔㄞ，表示差遣"
     },
     {
       "id": "C",
-      "text": "頁碼"
+      "text": "ㄔㄞˋ，表示出差"
     },
     {
       "id": "D",
-      "text": "作者年齡"
+      "text": "ㄘ，表示長短、高低不一致"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "上下文可提供詞義線索。"
+    "value": "D",
+    "explanation": "參差不齊的差讀ㄘ，形容不整齊，和差別、差遣、出差的讀法與義項不同。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-common-words-recognition-4.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究多音字、形音義與語境認讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫常用詞語認讀題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-common-words-recognition"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-common-words-recognition",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字音、認讀與語境",
+      "observedPattern": "公立學校國文評量常把多音字、形近字、詞義與完整語境結合，要求以詞語而非孤立字形判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "多音字、形音義與閱讀理解",
+      "observedPattern": "公立學校國文評量常把多音字、形近字、詞義與完整語境結合，要求以詞語而非孤立字形判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "多音字要保留完整詞語，不能把單字最常見讀法直接套上去。",
+  "solutionSteps": [
+    "讀題定位：圈出「參差的差」與完整詞語，先判斷題目問讀音、詞義、形音辨析或閱讀功能。",
+    "找語境證據：觀察搭配、對偶、詞性與前後句，區分古今義或多音字；本題核心是「參差不齊的差讀ㄘ，形容不整齊，和差別、差遣、出差的讀法與義項不同。」",
+    "核對正解：選項 D「A」能同時符合詞語慣用讀音與句中語意。",
+    "排除誘答：檢查是否只看孤立字、把最常見音硬套、混淆形近字，或忽略本義與引申義的語境差異。",
+    "回讀驗證：以字典注音、完整詞語與原句重新朗讀，確認聲音、詞義和段落理解互相一致。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

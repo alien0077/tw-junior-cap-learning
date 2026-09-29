@@ -2,15 +2,15 @@
   "id": "question-math-performance-d-iv-2-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "公平骰子連續擲兩次，至少有一次擲出 6 的機率為何？",
+  "prompt": "擲兩顆公平骰子一次，至少有一顆出現 5 點的機率為何？",
   "options": [
     {
       "id": "A",
-      "text": "10/36"
+      "text": "1/12"
     },
     {
       "id": "B",
-      "text": "25/36"
+      "text": "5/18"
     },
     {
       "id": "C",
@@ -18,25 +18,68 @@
     },
     {
       "id": "D",
-      "text": "1/6"
+      "text": "1/3"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-d-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
     "value": "C",
-    "explanation": "先算補事件：兩次都不是 6 的機率為 5/6×5/6＝25/36；所以至少一次 6 為 1－25/36＝11/36。"
+    "explanation": "全部有序結果有 6×6=36 種；補事件是兩顆都不是 5，有 5×5=25 種。因此至少一顆 5 有 36-25=11 種，機率為 11/36，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考樹狀圖、兩階段試驗、條件機率、不放回抽取與補事件題型；另參考 114 年國中教育會考數學科；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "機率單元實質改寫；已依路徑或樣本空間重新計算答案與解析，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供樹狀圖、兩階段機率、補事件與條件路徑能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的機率樹狀圖方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-d-iv-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "樹狀圖、兩階段隨機試驗、獨立與不放回抽取、補事件、條件機率與全機率",
+      "observedPattern": "公立學校與公開會考數學試題常把兩階段結果拆成樹狀路徑，要求逐路徑相乘、同一事件的路徑相加，或以補事件簡化至少一次的計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "『至少一顆』先算『一顆都沒有』，用補事件避免兩顆同時為 5 的重複計數。",
+  "solutionSteps": [
+    "兩顆骰子的完整有序樣本數為 6×6=36。",
+    "補事件『沒有 5』：每顆各有 5 種，共 25 種。",
+    "至少一顆 5 的結果數為 36-25=11。",
+    "計算機率 11/36。",
+    "所以選 C，並確認把兩顆同為 5 的情況包含在至少一顆中。"
+  ]
 }

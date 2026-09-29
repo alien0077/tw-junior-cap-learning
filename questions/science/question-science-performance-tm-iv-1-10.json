@@ -2,23 +2,23 @@
   "id": "question-science-performance-tm-iv-1-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月24日社區環境站的觀察中，針對「tm-Ⅳ-1：理解、評估並應用自然界模型」提出可檢驗的科學問題，若比較 3 組、每組取樣 18 份資料，哪一項設計最適當？",
+  "prompt": "模型不符合資料時，哪項做法最科學？",
   "options": [
     {
       "id": "A",
-      "text": "研究「tm-Ⅳ-1：理解、評估並應用自然界模型」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "保留原始資料，查方法與假設，提出修正版並說明新的適用範圍"
     },
     {
       "id": "B",
-      "text": "研究「tm-Ⅳ-1：理解、評估並應用自然界模型」時只改變水溫，其餘條件一致，設置3組、每組取樣18份並各重複測量5次"
+      "text": "修改資料使模型成立"
     },
     {
       "id": "C",
-      "text": "研究「tm-Ⅳ-1：理解、評估並應用自然界模型」時只測量3組中的一組就直接下結論"
+      "text": "直接換成最新模型不比較"
     },
     {
       "id": "D",
-      "text": "研究「tm-Ⅳ-1：理解、評估並應用自然界模型」時先決定結論，再挑選支持結論的18筆資料"
+      "text": "宣布自然現象無法理解"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,49 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「tm-Ⅳ-1：理解、評估並應用自然界模型」。"
+    "value": "A",
+    "explanation": "A 讓模型修正可追溯、可檢驗並保留仍有效的部分。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究模型、尺度、假設、預測與限制能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-tm-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-tm-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "模型、資料與預測能力方向",
+      "observedPattern": "公開自然科評量常以模型、尺度、假設、預測、資料與限制要求推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "模型評估、證據與限制能力方向",
+      "observedPattern": "公開自然科評量常以模型、尺度、假設、預測、資料與限制要求推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認模型目的與尺度，再檢查假設、預測、資料、限制與修正範圍。",
+  "solutionSteps": [
+    "讀題定位：圈出模型判讀核心「revision」。",
+    "列出模型目的、尺度、假設、變數、預測、資料與適用範圍。",
+    "逐項比對哪個選項不超出模型能力；正確答案是 A。",
+    "核對理由：A 讓模型修正可追溯、可檢驗並保留仍有效的部分。",
+    "最後檢查是否把模型當自然本身，並寫出可用資料驗證或修正的下一步。"
+  ]
 }

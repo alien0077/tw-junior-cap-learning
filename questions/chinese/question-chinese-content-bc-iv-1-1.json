@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-iv-1-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "校刊要說明一週午餐剩食量，哪種寫法最客觀？",
+  "prompt": "更換省水水龍頭後，某校三個月用水量下降；校方因此認為全校都應立即更換。最需要補查哪一層？",
   "options": [
     {
       "id": "A",
-      "text": "大家都覺得剩食非常嚴重"
+      "text": "是否有其他用水量變化因素，以及結果能否推及全校"
     },
     {
       "id": "B",
-      "text": "午餐一定是全校最浪費的地方"
+      "text": "水龍頭的顏色是否一致"
     },
     {
       "id": "C",
-      "text": "我相信這個問題無法改善"
+      "text": "校長是否喜歡新設備"
     },
     {
       "id": "D",
-      "text": "記錄每日重量並註明統計期間"
+      "text": "三個月是否比兩個月好看"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "提供可查核的數據與期間，比使用無法驗證的感受或絕對判斷更客觀。"
+    "value": "A",
+    "explanation": "單一學校、短期前後比較不能排除用水人數、天氣或活動等因素，也不能直接推及全校。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究邏輯、客觀、理性說明能力方向（客觀資料與範圍）；另以官方語文領域課綱核對 Bc-Ⅳ-1（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究觀察、定義、因果證據、外推與問題解決。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫邏輯客觀理性說明題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文資料、推論與客觀表述",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "因果證據、定義與理性說明",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "拆開觀察結果、可能原因與推廣結論，逐層檢查證據範圍。",
+  "solutionSteps": [
+    "記錄已知：更換後三個月用水下降。",
+    "列出可能的其他變因與是否有對照。",
+    "檢查是否有足夠樣本支持全校推廣。",
+    "A 指出因果與外推兩個缺口。",
+    "提出未更換區域或多校重複比較以補強證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

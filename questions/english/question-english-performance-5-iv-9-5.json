@@ -2,41 +2,84 @@
   "id": "question-english-performance-5-iv-9-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「5-Ⅳ-9／聽簡單廣播筆記」notice for the bus stop, item 5: “The talk begins at 2:30.” What does it tell people?",
+  "prompt": "The morning report says, ‘Skies will stay clear until 3 p.m.; showers are expected after that.’ What should listeners be ready for later in the day?",
   "options": [
     {
       "id": "A",
-      "text": "For item 5 in the 5-Ⅳ-9／聽簡單廣播筆記 notice, The talk starts at 2:30."
+      "text": "Snow before breakfast"
     },
     {
       "id": "B",
-      "text": "For item 5 in the 5-Ⅳ-9／聽簡單廣播筆記 notice, The talk ends at 2:30."
+      "text": "Rain after 3 p.m."
     },
     {
       "id": "C",
-      "text": "For item 5 in the 5-Ⅳ-9／聽簡單廣播筆記 notice, The talk is held at the bus stop."
+      "text": "Sunshine all night"
     },
     {
       "id": "D",
-      "text": "For item 5 in the 5-Ⅳ-9／聽簡單廣播筆記 notice, The talk is cancelled every day."
+      "text": "A storm exactly at noon"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-5-iv-9"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 5-Ⅳ-9／聽簡單廣播筆記, question 5."
+    "value": "B",
+    "explanation": "正確答案：B。The forecast marks a change point: clear weather lasts until 3 p.m., and showers are expected afterward."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://sljh.hcc.edu.tw/p/406-1034-491334,r1565.php?Lang=zh-tw",
+    "sourceLocator": "校方公告附件英語聽力試題本PDF第5頁第21題；戶外比賽遇雨後的安排與條件; PDF第10頁聽力示例第12題；百貨廣播主旨、地點與結束時間; 校方公告附件英語聽力試題本PDF第5頁第19題；捷運廣播中的乘客行動指示",
+    "authoringNote": "原創英文公共公告／廣播筆記題；參考三份由公立國中校方公開之國中教育會考聽力考題／試題說明，以及宜昌國中公開段考英聽題。只改寫能力型態，不複製原題內容、選項、答案或音檔。題組維持draft，完整課程、內容及版權審查尚未完成。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-5-iv-9"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-5-iv-9",
+  "examPatternRefs": [
+    {
+      "url": "https://sljh.hcc.edu.tw/p/406-1034-491334,r1565.php?Lang=zh-tw",
+      "title": "新竹縣立勝利國中公告之114年國中教育會考英語科聽力試題本",
+      "year": "114",
+      "subject": "english",
+      "locator": "校方公告附件英語聽力試題本PDF第5頁第21題；戶外比賽遇雨後的安排與條件",
+      "observedPattern": "整合公共活動公告中的天候條件與後續安排；不沿用競賽情境、答案文字或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064526/get-file/628aea9f04ad8678f4674dca",
+      "title": "111年國中教育會考英語科試題說明（臺中市教育局校務系統公開PDF）",
+      "year": "111",
+      "subject": "english",
+      "locator": "PDF第10頁聽力示例第12題；百貨廣播主旨、地點與結束時間",
+      "observedPattern": "辨識單人公共廣播的目的及其中時間／地點線索；只取測量方式，不沿用特賣主題、句子或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://cgjh.hcc.edu.tw/p/405-1032-440270,c5348.php",
+      "title": "新竹縣立成功國中公告之113年國中教育會考英語科聽力試題本",
+      "year": "113",
+      "subject": "english",
+      "locator": "校方公告附件英語聽力試題本PDF第5頁第19題；捷運廣播中的乘客行動指示",
+      "observedPattern": "從公共交通廣播抓出面向聽眾的具體安全行動；不沿用捷運情節、英文原句或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "天氣播報要記「現在狀況＋轉變時間＋之後狀況」；別只聽到 clear 就忽略後面的時間轉折。",
+  "solutionSteps": [
+    "把 until 和 after 視為關鍵時間界線。",
+    "整理成前後兩段：三點前晴朗，三點後有陣雨。",
+    "題目問 later，故答案應取後半段而非目前天氣。",
+    "選B；A、C、D把天氣種類或發生時間改掉了。",
+    "再次核對 showers 的時間在 3 p.m. 之後，而非正好中午。"
+  ]
 }

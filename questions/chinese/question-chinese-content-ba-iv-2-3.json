@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ba-iv-2-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "人物說話前先「低頭捏緊衣角」，這個動作最可能暗示什麼？",
+  "prompt": "句子『他說沒關係，聲音卻比平常低了半拍』，描寫的重點是？",
   "options": [
     {
       "id": "A",
-      "text": "緊張或不安"
+      "text": "對話內容與語音細節形成落差"
     },
     {
       "id": "B",
-      "text": "十分飢餓"
+      "text": "證明他完全沒有情緒"
     },
     {
       "id": "C",
-      "text": "正在計算距離"
+      "text": "說明他正在唱歌"
     },
     {
       "id": "D",
-      "text": "已經熟睡"
+      "text": "交代房間的大小"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "捏緊衣角是外在動作，可呈現人物的緊張或不安。"
+    "explanation": "『沒關係』是語意內容，『聲音較低』是語音細節，兩者的落差暗示表面話語未必等同內在感受。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "描寫作用與效果；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究人物、景物、語句節奏、對照與證據界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫描寫作用題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文描寫與文本推論",
+      "observedPattern": "公立學校國文評量要求由感官細節、人物動作、語句節奏、景物對照與敘述焦點推論效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "景物、人物動作與語氣效果",
+      "observedPattern": "公立學校國文評量要求由感官細節、人物動作、語句節奏、景物對照與敘述焦點推論效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把人物說了什麼和怎麼說分開，再判斷兩種線索是否互相呼應或衝突。",
+  "solutionSteps": [
+    "先讀出『沒關係』所呈現的表面態度。",
+    "再比較聲音變低這個非文字線索。",
+    "A 能指出語意與語氣的對照。",
+    "B、C、D 都與描寫細節不符。",
+    "刪去聲音細節後，檢查人物情緒的不確定性是否增加。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

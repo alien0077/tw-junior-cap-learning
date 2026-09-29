@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-a-iv-6",
   "subject": "math",
-  "title": "a-Ⅳ-6：一元二次方程",
+  "title": "a-Ⅳ-6：二次方程的根與圖形交會",
   "knowledgeIds": [
     "kg-math-performance-a-iv-6"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「一元二次方程」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "二次方程的解不是公式輸出的兩個數字，而是讓多項式等於零的輸入值。本課從矩形面積與拋物線穿越 x 軸的情境開始，讓學生比較因式分解、配方法與公式的適用條件，並以代回、根的個數與情境範圍檢查結果，避免漏掉負根、誤用平方根或把頂點當成解。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「一元二次方程」相關的關係。"
+        "heading": "根是讓式子歸零的值",
+        "body": "若 x²−5x+6=0，根是代入後使左邊等於 0 的 x。先把方程整理為標準形式，再理解解是輸入值而非圖上的任意高度。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「一元二次方程」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "因式分解揭示兩個可能",
+        "body": "x²−5x+6=(x−2)(x−3)，乘積為零表示 x−2=0 或 x−3=0，因此根為 2、3。每個根都要代回原方程確認，不能只看括號。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「一元二次方程」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "判斷根的個數與圖形",
+        "body": "拋物線與 x 軸交兩次、相切一次或不相交，分別對應兩個、重根或沒有實數根。圖形提供解的數量線索，但精確值仍需代數求出。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「一元二次方程」，並指出至少一項支持判斷的條件。"
+        "heading": "情境會篩選數學解",
+        "body": "面積、長度或時間通常要求非負；代數上成立的負根，放回原情境可能必須排除。排除時要寫出限制與理由，不可只說答案不合理。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「一元二次方程」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先把方程整理成等於零，明確根的定義。",
+    "能因式分解時用零乘積理解每個可能根。",
+    "用圖形交點判斷根的數量，但不把頂點或高度當成根。",
+    "每個根都代回原式，並檢查長度、時間等情境限制。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,111 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「一元二次方程」並驗算結果。",
-    "scenario": "以「a-Ⅳ-6：一元二次方程」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "goal": "以因式、圖形與代回檢查理解二次方程的根。",
+    "scenario": "調整二次式係數，觀察拋物線與 x 軸交點數量及候選根同步改變。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "symbol": "a",
+        "meaning": "二次項係數"
+      },
+      {
+        "symbol": "d",
+        "meaning": "判斷實根數量的判別式"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「一元二次方程」的第一步是什麼？",
+        "prompt": "x²−5x+6=0 可分解成什麼？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "(x−2)(x−3)=0",
+          "(x+2)(x+3)=0",
+          "(x−5)(x+6)=0"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "兩數乘積 6、和為 −5，因此是 −2 與 −3 的相反號括號。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "如何由乘積為零找根？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "令 x−2=0 或 x−3=0",
+          "兩括號相加",
+          "只取較大的括號"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "零乘積表示至少一個因子為零。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "得到根後最重要的檢查是什麼？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "代回原式並檢查情境限制",
+          "只看圖形高度",
+          "把負根自動刪除"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "先確認代數正確，再依長度或時間等限制判斷可行性。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "a-Ⅳ-6：一元二次方程；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "屏東縣公立學校翰林版數學課程計畫；代數概念、解題表徵與情境評量欄位。；a-Ⅳ-6：一元二次方程：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「一元二次方程」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「a-Ⅳ-6：一元二次方程」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "新北市立大豐國民中學公立校方康軒版數學課程計畫；代數表徵、操作活動與多元評量欄位。；a-Ⅳ-6：一元二次方程：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「a-Ⅳ-6：一元二次方程」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "桃園市立永豐高中國中部公立校方七年級數學課程計畫；南一版代數章節與評量欄位。；a-Ⅳ-6：一元二次方程：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「a-Ⅳ-6：一元二次方程」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +160,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「一元二次方程」",
-        "body": "以「一元二次方程」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "兩個可能的長度",
+        "body": "一個長方形面積為 6，兩邊相差 1；請學生列出可能的邊長並預測是否有兩組。把問題轉成 x(x+1)=6，讓二次方程從面積關係出現，而不是先丟公式。 再讓學生標出長度必須為正的限制，說明這個限制如何篩選代數候選根。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「一元二次方程」的概念架構",
-        "body": "本單元依官方課綱所列的「一元二次方程」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "把方程整理為零",
+        "body": "由 x(x+1)=6 得 x²+x−6=0，再因式分解為 (x+3)(x−2)=0。先解出 −3 與 2，再回到長度限制排除 −3，明確區分代數根與情境可行解。 並將兩個括號分別對應到兩個可能的 x 值，避免只記住答案。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「a-Ⅳ-6：一元二次方程」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "因式分解與代回",
+        "body": "對 x²−5x+6=0，找兩個乘積為 6、和為 −5 的數 −2、−3，得到 (x−2)(x−3)=0。分別代回原式，確認 2 與 3 都是根，並在數線標示兩個輸入值。 完成後將兩個根逐一代回原方程，將根的位置和數線標記互相對照。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「一元二次方程」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "讀取圖形的交點",
+        "body": "給三條原創拋物線資料：一條穿越兩次、一條剛好相切、一條在 x 軸上方。學生先判斷實數根個數，再選擇可用的代數方法，最後用一個計算值核對圖形預測。 要求學生把圖形交點數量、代數方法與一個計算值寫在同一張檢查表。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「一元二次方程」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "比較不同方法的適用性",
+        "body": "對無法立即因式分解的 2x²+3x−2=0，學生可用公式求根，並把判別式 25 解釋成有兩個實根；再比較若判別式為 0 或負數，圖形與解的數量如何改變。 再用判別式正、零、負三種情形畫出預測，並說明實根數量的限制。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「一元二次方程」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "代數根與情境解的界線",
+        "body": "出口題給出一個含負根的面積模型，學生要列出兩個代數根、指出哪個違反長度限制，並寫出代回與圖形檢查的順序；最後說明為何保留或排除每個根。 最後區分「代數上是根」與「情境中可採用的解」，每個排除都要附條件。"
       }
     ],
     "summary": [
-      "先用自己的話界定「一元二次方程」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "根是使整理後的多項式等於零的輸入值。",
+      "因式分解用零乘積找候選根，不能省略代回。",
+      "圖形交點能預測實根數量，但精確值仍要計算。",
+      "情境限制會從代數根中篩選可行解，理由必須明寫。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「一元二次方程」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "為什麼先要把方程整理成等於零？",
+        "expectedEvidence": "根的定義是使多項式值為零，整理後才能使用因式分解或公式。"
       },
       {
-        "prompt": "在「一元二次方程」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "(x−2)(x−3)=0 的根有哪些？",
+        "expectedEvidence": "由零乘積得到 x=2 或 x=3，並能代回確認。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「一元二次方程」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "面積題出現負根時如何處理？",
+        "expectedEvidence": "保留它作為代數候選，再依長度非負的情境限制排除並說明原因。"
       }
     ]
   },
@@ -188,6 +227,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『a-Ⅳ-6：二次方程的根與圖形交會』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整二次式係數，觀察拋物線與 x 軸交點數量及候選根同步改變。』開始前，先回答：x²−5x+6=0 可分解成什麼？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整二次式係數，觀察拋物線與 x 軸交點數量及候選根同步改變。』回答：得到根後最重要的檢查是什麼？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "x²−5x+6=0 可分解成什麼？；操作時先預測，再依『a-Ⅳ-6：二次方程的根與圖形交會』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(a-Ⅳ-6：二次方程的根與圖形交會)：答案 A；選項內容：(x−2)(x−3)=0",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。兩數乘積 6、和為 −5，因此是 −2 與 −3 的相反號括號。",
+          "feedback": "兩數乘積 6、和為 −5，因此是 −2 與 −3 的相反號括號。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "如何由乘積為零找根？；操作時先預測，再依『a-Ⅳ-6：二次方程的根與圖形交會』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(a-Ⅳ-6：二次方程的根與圖形交會)：答案 A；選項內容：令 x−2=0 或 x−3=0",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。零乘積表示至少一個因子為零。",
+          "feedback": "零乘積表示至少一個因子為零。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "得到根後最重要的檢查是什麼？；操作時先預測，再依『a-Ⅳ-6：二次方程的根與圖形交會』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(a-Ⅳ-6：二次方程的根與圖形交會)：答案 A；選項內容：代回原式並檢查情境限制",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。先確認代數正確，再依長度或時間等限制判斷可行性。",
+          "feedback": "先確認代數正確，再依長度或時間等限制判斷可行性。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；一元二次方程、根與圖形評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以二次式、因式分解與方程求根建立代數路徑",
+          "公開結構支持以因式分解、公式或圖形理解二次方程的解，並檢查解是否符合題目限制。"
+        ],
+        "representations": [
+          "面積模型、因式、代回與數線標根"
+        ],
+        "examplesOrEvidence": [
+          "本課的拋物線、面積與數值例子均為原創，只研究公開能力方向。"
+        ],
+        "misconceptions": [
+          "把頂點或係數誤當成方程的根，忽略代入後應為零"
+        ],
+        "assessmentEmphasis": [
+          "完整檢查整理、求根、代回與情境篩選的順序"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；一元二次方程、根與圖形評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以圖形與操作表徵呈現拋物線交軸及根的數量",
+          "公開結構支持以因式分解、公式或圖形理解二次方程的解，並檢查解是否符合題目限制。"
+        ],
+        "representations": [
+          "拋物線、x 軸交點與代數式同步"
+        ],
+        "examplesOrEvidence": [
+          "本課的拋物線、面積與數值例子均為原創，只研究公開能力方向。"
+        ],
+        "misconceptions": [
+          "看到圖形高度就把頂點當根，或忽略重根的意義"
+        ],
+        "assessmentEmphasis": [
+          "要求圖形預測與代數精算互相驗證並說明根的數量"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；一元二次方程、根與圖形評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "比較不同解法並處理實根數量與情境限制",
+          "公開結構支持以因式分解、公式或圖形理解二次方程的解，並檢查解是否符合題目限制。"
+        ],
+        "representations": [
+          "因式分解、公式、判別式與生活範圍"
+        ],
+        "examplesOrEvidence": [
+          "本課的拋物線、面積與數值例子均為原創，只研究公開能力方向。"
+        ],
+        "misconceptions": [
+          "負根一律刪除或不檢查判別式條件"
+        ],
+        "assessmentEmphasis": [
+          "評估方法選擇、根的個數與可行解理由是否完整"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持二次方程的整理、求根與代回驗證。",
+      "圖形或模型可幫助理解根的數量，但不能取代精確推理。",
+      "情境限制與代數候選根必須分開判斷並說明。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯代數求根與式子結構；康軒較突顯圖形表徵與交點；翰林較突顯方法比較、判別式與情境可行性。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以面積模型引出負根與可行解的區分。",
+      "以三種拋物線圖形診斷根的數量與頂點迷思。",
+      "把判別式、公式與生活限制放進同一個轉移任務。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計二次方程的根、圖形、方法選擇與情境篩選。正文、例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

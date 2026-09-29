@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bd-iv-2-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "短文：「把閱讀地圖畫成一條路，讀者便能看見作者如何從問題走向結論。」這句主要運用哪種論證方式？",
+  "prompt": "甲方案每週容納120人，乙方案較安靜，提案便說乙整體較好。比較前最需要補上？",
   "options": [
     {
       "id": "A",
-      "text": "數據論證"
+      "text": "整體好的評估標準與相同的比較面向"
     },
     {
       "id": "B",
-      "text": "因果論證"
+      "text": "乙方案的宣傳標語"
     },
     {
       "id": "C",
-      "text": "引用論證"
+      "text": "作者喜歡哪一方案"
     },
     {
       "id": "D",
-      "text": "比喻論證"
+      "text": "兩方案的顏色"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bd-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "以地圖與道路的相似關係說明文章結構，屬於比喻論證。"
+    "value": "A",
+    "explanation": "容納量和安靜是不同面向，若要判定整體較好，需先說明權重、目標與共同比較標準。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
-    "sourceLocator": "114年國中教育會考國文科；研究閱讀理解、論證、比較與寫作分析能力方向（比喻論證辨識）；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；另以官方語文領域課綱核對 Bd-Ⅳ-2（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究比較基準、比喻映射、同尺度資料與類比限制。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫比較比喻論證題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bd-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bd-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較、比喻與論證判讀",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較基準、比喻映射與證據",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列出比較項目與尺度，再檢查整體評價是否有明確標準。",
+  "solutionSteps": [
+    "辨認甲提供容納量、乙提供安靜程度。",
+    "確認兩者不是同一指標。",
+    "追問整體好的標準與權重。",
+    "A 能補足比較基準。",
+    "若增加成本與安全，說明為何需要多面向比較。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

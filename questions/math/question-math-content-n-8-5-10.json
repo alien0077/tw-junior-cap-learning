@@ -2,41 +2,84 @@
   "id": "question-math-content-n-8-5-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "等差級數前 n 項和的正確公式為何？",
+  "prompt": "一個等差級數共有 20 項，首項 2、末項 40，總和是多少？",
   "options": [
     {
       "id": "A",
-      "text": "Sₙ＝n(a₁＋aₙ)"
+      "text": "400"
     },
     {
       "id": "B",
-      "text": "Sₙ＝(a₁＋aₙ)÷2"
+      "text": "420"
     },
     {
       "id": "C",
-      "text": "Sₙ＝n(a₁＋aₙ)÷2"
+      "text": "440"
     },
     {
       "id": "D",
-      "text": "Sₙ＝a₁＋(n－1)d"
+      "text": "800"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-n-8-5"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "等差級數的和等於項數乘以首尾平均，因此 Sₙ＝n(a₁＋aₙ)÷2。"
+    "value": "B",
+    "explanation": "總和＝20×(2＋40)÷2＝20×21＝420，所以選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究等差級數首尾平均、項數、求和公式與生活情境能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供等差級數求和、首末項、項數與情境累計能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等差級數方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-n-8-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-8-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "arithmetic-series sums, first and last terms, number of terms, sum formulas, and contextual accumulation",
+      "observedPattern": "公立學校公開數學試題常要求計算等差級數前 n 項和、由首末項與項數求總和，並把逐排增加或累計情境轉成等差級數；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "arithmetic-series sums, first and last terms, number of terms, sum formulas, and contextual accumulation",
+      "observedPattern": "公立學校公開數學試題常要求計算等差級數前 n 項和、由首末項與項數求總和，並把逐排增加或累計情境轉成等差級數；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "直接用項數乘以首末項平均，避免逐項列出 20 項。",
+  "solutionSteps": [
+    "確認項數 20、首項 2、末項 40。",
+    "計算首末和 42。",
+    "首末平均為 21。",
+    "總和 20×21＝420。",
+    "選 B，檢查平均值介於 2 與 40 之間。"
+  ]
 }

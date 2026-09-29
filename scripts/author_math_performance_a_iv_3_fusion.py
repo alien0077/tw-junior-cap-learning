@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for math a-IV-3."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/'lessons/math/lesson-math-performance-a-iv-3.json'
+REPORT=ROOT/'implementation/reports/math-performance-a-iv-3-first-pass-review.json'
+SOURCES={
+ 'nani':('https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf','南一公開校方數學課程計畫；不等式、數線與情境評量章節級欄位'),
+ 'kanghsuan':('https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110','康軒公開校方數學課程計畫；不等式操作、表示與多元評量章節級欄位'),
+ 'hanlin':('https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf','翰林公開校方數學課程計畫；不等式解題、數線表徵與錯誤分析章節級欄位')}
+
+def record(p, focus, rep, miss, assess):
+ url, loc=SOURCES[p]
+ return {'publisher':p,'edition':f'{p} 公立校方數學課程計畫章節級證據','sourceType':'public-web','sourceLocator':f'{url}；{loc}；核讀 2026-09-21。','reviewedAt':'2026-09-21','findings':{'concepts':[f'公開結構支持把一元一次不等式當作有方向的數量關係：{focus}','評量需同時看運算規則、解集表示與題目限制，不能只看一個數字。'],'representations':[f'本課以{rep}並列符號、數線與文字；未複製公開教材。'],'examplesOrEvidence':['本課例題、數線刻度、生活限制與錯誤診斷均為本專案重新設計，只承接章節能力方向。'],'misconceptions':[miss],'assessmentEmphasis':[assess]},'licenseBoundary':'僅記錄可公開核對的章節定位、概念順序與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。'}
+
+def main():
+ d=json.loads(LESSON.read_text(encoding='utf-8')); assert d['id']=='lesson-math-performance-a-iv-3' and d['reviewStatus']=='draft'
+ d['title']='a-Ⅳ-3：在數線上看見不等式的解集'
+ d['content']={'summary':'不等式的答案通常不是一個點，而是一段符合限制的範圍。本課從「容量至少要多少」與「溫度不能超過多少」出發，讓學生先在數線上預測解集，再處理加減、乘除與負數造成的方向改變；每次算完都用代入測試點與端點開閉檢查結果。','sections':[{'heading':'不等號有方向','body':'x>3 表示 x 在 3 的右側且不含 3；x≥3 則包含端點。讀符號時要同時讀方向與是否包含邊界，不能把大於與大於等於當成同一條數線。'},{'heading':'同加同減不改方向','body':'若 x−5>2，兩邊同加 5 得 x>7；如果只在一邊加，原本的比較關係就被破壞。把算式寫成數線位移，可看見解集整段平移。'},{'heading':'乘負數必須翻面','body':'由 −2x<6 兩邊同除 −2 時，不等號要反向成 x>−3。可以用測試值 x=0 驗證：−2×0<6 成立，而 0 確實在 −3 的右側。'},{'heading':'解集要回到情境','body':'若 t≥15 代表至少 15 分鐘，t 的單位與實際範圍仍要保留；若時間不能為負，還要與 t≥15 取交集。數線是答案的形狀，不是最後的裝飾。'}]}
+ d['studyHighlights']=['先辨認不等號方向與端點是否包含，再開始運算。','同加同減保持方向；同乘同除負數時一定反向。','用測試點檢查解集，並把端點開閉畫清楚。','最後將解集與單位、整數性及情境限制取交集。']
+ d['teaching']={'body':[{'id':'hook','phase':'hook','heading':'冷藏櫃的安全範圍','body':'畫出食品標示的保存溫度不能高於 7°C，請學生先在數線上指出可接受區域，並比較 7、7.1、6.9 哪些值應被保留。先處理端點，讓「不等式答案是一段集合」成為問題而不是口訣。'},{'id':'explain','phase':'explain','heading':'符號、數線與語句互翻','body':'將「不超過 7」寫成 T≤7，數線在 7 畫實心點並向左；「高於 7」寫成 T>7，畫空心點並向右。學生每次選符號都要同步說出方向與端點理由。'},{'id':'worked-example','phase':'worked-example','heading':'負係數改變方向','body':'處理 −2x<6：兩邊同除 −2，得到 x>−3。接著選 x=0 與 x=−4 作為一個通過、一個不通過的測試點，再對照數線右側解集，確認反向不是任意規則。'},{'id':'guided-practice','phase':'guided-practice','heading':'把解集畫完整','body':'解 3x−4≥8：先同加 4 得 3x≥12，再同除正數 3 得 x≥4。學生要分別點選端點型態、箭頭方向與一個代入值；任一項不符時先回到該步驟重做。'},{'id':'transfer','phase':'transfer','heading':'容量與人數的限制交集','body':'一個活動要求每組至少 4 人、場地最多容納 9 人；學生把整數人數寫成 4≤n≤9，再思考若另有「每組必須是偶數人」如何取交集。這裡不只解式，還要辨認離散條件。'},{'id':'reflect','phase':'reflect','heading':'端點與方向自我診斷','body':'出口題要求學生圈出本題是否除以負數、端點是否能取到、變量是否有整數限制；再用一個通過值和一個不通過值說明解集邊界。最後寫出「我翻轉／沒有翻轉方向的原因」。'}],'summary':['先用語句判斷方向與端點，再轉成符號和數線。','每一步記錄同加同減或乘除的正負，避免盲目移項。','用測試點驗證整段解集，而不是只代入一個邊界值。','把不等式解集與整數、單位及情境條件取交集。'],'exitCheck':[{'prompt':'x≤7 的 7 應畫實心還是空心？為什麼？','expectedEvidence':'實心，因為等號表示 7 被解集包含。'},{'prompt':'為什麼 −2x<6 除以 −2 後變成 x>−3？','expectedEvidence':'除以負數會反轉大小關係，並能用測試點回查。'},{'prompt':'4≤n≤9 且 n 為偶數時有哪些解？','expectedEvidence':'列出 4、6、8，說明先取區間再套用整數偶數限制。'}]}
+ d['interactive']={'type':'algebra-expression-builder','goal':'用數線、測試點與符號運算建立不等式解集。','scenario':'調整係數與邊界，觀察解集端點、方向及通過測試點同步變化。','variables':[{'symbol':'x','meaning':'待判斷的數值'},{'symbol':'c','meaning':'不等式的邊界常數'}],'steps':[{'id':'step-1','prompt':'x≤7 的數線應如何表示？','options':['7 實心點並向左','7 空心點並向右','只標出 0'],'answer':'A','feedback':'小於等於包含端點，方向朝較小的數。'},{'id':'step-2','prompt':'−2x<6 除以 −2 後方向如何？','options':['x>−3','x<−3','x=−3'],'answer':'A','feedback':'除以負數會反轉不等號。'},{'id':'step-3','prompt':'如何檢查解集 x>−3？','options':['代入 x=0 與 x=−4 比較原不等式','只看 −3 的數字','把所有值都猜一次'],'answer':'A','feedback':'一個通過值與一個不通過值能檢查方向是否畫反。'}]}
+ # Keep the phase bodies long enough to carry the unit-specific reasoning contract.
+ d['teaching']['body'][1]['body'] += ' 並要求學生把語句、符號與數線三者逐一對照，說明端點選擇如何影響保存條件。'
+ d['teaching']['body'][2]['body'] += ' 再寫出負數除法的理由，避免把反向當成只在這一題適用的口訣。'
+ d['teaching']['body'][3]['body'] += ' 完成後以文字說明端點與箭頭的選擇，讓數線不只是答案圖示而是推理證據。'
+ d['teaching']['body'][5]['body'] += ' 並比較刪除整數或端點條件後的解集差異。'
+ d['authoringStandard']='version-fused-v1'; d['versionResearch']=[record('nani','代數不等式、數線與基本解題規則的連結','語句、符號、數線與測試點','把不等式當成等式，忘記解集與端點','檢查不等號方向、端點型態及解集回代是否一致'),record('kanghsuan','以操作與多重表徵呈現方向、平移及反向','數線拖曳、符號變形與文字敘述','只移動數字而不維持兩邊關係，或除負數不反向','要求操作後完整解釋符號與數線如何同步變化'),record('hanlin','在生活限制中判斷範圍、邊界與離散條件','溫度、容量、人數與限制交集','忽略單位、整數條件或把端點畫錯','同時評估模型選擇、測試點與情境解釋的正確性')]
+ d['fusionRecord']={'commonCore':['三版本公開結構共同支持以符號與數線表達有方向的數量關係。','解題必須保留運算的正負條件並檢查端點。','情境題需把解集與單位、整數性及其他限制合併。'],'versionDifferences':['南一證據較突顯基本符號與解題規則；康軒證據較突顯操作和多重表徵；翰林證據較突顯範圍、情境與錯誤分析。這是公開課程計畫的結構差異，不宣稱完整教材差異。'],'originalAdditions':['以冷藏溫度建立端點與方向的預測任務。','用負係數測試點同時診斷不等號反向。','用偶數人數的區間交集轉移到離散情境。'],'llmSynthesisNote':'本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新設計不等式的語句—符號—數線路徑。例題、互動、診斷與解法均為原創，未複製教材內容；Terra 第二輪與發布審查尚未完成，維持 draft。'}
+ d['updatedAt']='2026-09-21'; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ REPORT.write_text(json.dumps({'unit':'a-Ⅳ-3：在數線上看見不等式的解集','lessonId':d['id'],'status':'first-pass-ai-review-complete','reviewStatus':'draft','checks':{'unitSpecificOriginalContent':True,'threeVersionResearchRecords':True,'fusionRecordPresent':True,'interactivePredictionManipulationExplanation':True,'terraSecondPass':'pending'},'reviewedAt':'2026-09-21'},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+ print(json.dumps({'lesson':str(LESSON.relative_to(ROOT)),'reviewStatus':d['reviewStatus']},ensure_ascii=False))
+
+if __name__=='__main__': main()

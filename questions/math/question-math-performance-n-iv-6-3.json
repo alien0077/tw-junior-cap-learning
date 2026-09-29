@@ -2,23 +2,23 @@
   "id": "question-math-performance-n-iv-6-3",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "正方形面積為 80 平方公分時，邊長 √80 介於哪兩個連續整數之間？",
+  "prompt": "若以十分位估計 √30，最適合的近似值為何？",
   "options": [
     {
       "id": "A",
-      "text": "8 與 9"
+      "text": "5.3"
     },
     {
       "id": "B",
-      "text": "7 與 8"
+      "text": "5.4"
     },
     {
       "id": "C",
-      "text": "9 與 10"
+      "text": "5.5"
     },
     {
       "id": "D",
-      "text": "10 與 11"
+      "text": "5.6"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "因為 8²＝64＜80＜81＝9²，所以 √80 介於 8 與 9。"
+    "value": "C",
+    "explanation": "5.4²=29.16、5.5²=30.25，√30≈5.477，四捨五入到十分位為 5.5，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考平方根夾逼、估值、四捨五入、平方數比較與正方形邊長題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "依官方課綱數學能力與公開會考／公立國中試題的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供十分逼近與平方根估算能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數與量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-performance-n-iv-6"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "十分逼近、平方根估算、連續整數夾逼、計算機估值、四捨五入與生活面積情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求用相鄰平方夾住根式，再依指定位數估算或檢查計算機結果；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "十分逼近、平方根估算、連續整數夾逼、計算機估值、四捨五入與生活面積情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求用相鄰平方夾住根式，再依指定位數估算或檢查計算機結果；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "十分逼近、平方根估算、連續整數夾逼、計算機估值、四捨五入與生活面積情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求用相鄰平方夾住根式，再依指定位數估算或檢查計算機結果；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用相鄰十分位夾逼，再依下一位數四捨五入。",
+  "solutionSteps": [
+    "比較 5.4²=29.16 與 5.5²=30.25。",
+    "可知 √30 介於 5.4 與 5.5。",
+    "計算值約為 5.477。",
+    "百分位是 7，十分位要進位。",
+    "所以近似為 5.5，選 C。"
+  ]
 }

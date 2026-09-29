@@ -1,0 +1,63 @@
+{
+  "decisionId": "D-413",
+  "date": "2026-09-29",
+  "unit": "lesson-english-performance-8-iv-5",
+  "status": "authored-and-automated-qa-pass; user-chatgpt-review-pending; publisher-textbook-evidence-pending",
+  "inventory": {
+    "method": "Authored-fusion inventory checked before authoring; this unit was absent, so only this unit was added.",
+    "authoredFusionDrafts": "747/791 (94.44%)",
+    "learningContent": "583/583",
+    "learningPerformance": "164/208",
+    "remaining": 44,
+    "meaning": "Manuscript presence only; not publisher-source completeness, ChatGPT content review, or publication approval."
+  },
+  "curriculumAndVersionEvidence": {
+    "officialCurriculum": "English 8-Ⅳ-5 / C-Ⅳ-4 and KG kg-english-performance-8-iv-5; lesson and spec preserve direct references and locators.",
+    "nani": "Public-school plan excerpt with a Nan-I label provides cross-grade festival reading, preview and scanning context; not the target textbook chapter.",
+    "kanghsuan": "Public-school plan excerpt mentions the target competency with cross-grade life/dialogue context; publisher label at the cited locator is not independently verified.",
+    "hanlin": "Hanlin-labeled public-school plan excerpt provides cross-place reading, location search and prediction/checking pedagogy; not the target chapter.",
+    "scope": "Three public-school plan excerpts informed the original seven-section lesson, but full target textbook chapters were unavailable. No page-by-page textbook fusion is claimed; publisher evidence remains pending."
+  },
+  "publicExamSources": {
+    "questionCount": 10,
+    "referencesPerQuestion": 2,
+    "reuse": "pattern-only; independent prompts, options, answers and explanations",
+    "locatorLimit": "References are paper-level thematic locators, not exact page/question locators; this limitation is retained rather than overstated.",
+    "solutions": "All ten answers include Chinese explanations, distinct unit-specific strategies and five item-specific reasoning steps."
+  },
+  "artifacts": [
+    "lessons/english/lesson-english-performance-8-iv-5.json",
+    "questions/english/question-english-performance-8-iv-5-1.json through question-english-performance-8-iv-5-10.json",
+    "implementation/unit-specs/english/cur-english-performance-8-iv-5.yaml",
+    "implementation/unit-specs.manifest.json",
+    "implementation/runtime/english-performance-8-iv-5-fusion.test.mjs",
+    "scripts/test_english_performance_8_iv_5_browser.py",
+    "scripts/repair_english_performance_8_iv_5_question_solutions.py"
+  ],
+  "automatedValidation": {
+    "targetNode": "PASS: seven original teaching sections mirrored in student body; three bounded version-plan research records; four-step GuidedChoice; ten draft questions with answers, Chinese explanations, distinct strategies, five unique detailed steps and two paper-level pattern-only references each.",
+    "dataSchema": "PASS: 14525 JSON files, 13114 IDs, 1032 KG nodes; all lessons and questions remain draft.",
+    "implementationSpecs": "PASS: 1027 specs, 0 errors, 22 eligible, 1005 pending; D413 QA verified.",
+    "browser": {
+      "result": "PASS in authorized local environment.",
+      "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "playwright": "1.58.0",
+      "chromium": "revision 1208",
+      "servedPage": "http://127.0.0.1:8765/site/index.html",
+      "visibleSections": 7,
+      "guidedChoiceSteps": 4,
+      "keyboardWrongRetryAndCorrectFeedback": true,
+      "axeViolations": 0,
+      "axeIncomplete": 0,
+      "responsiveWidths": [320, 375, 768],
+      "overflow": false,
+      "blockedExternalRequests": 1,
+      "pageErrors": []
+    },
+    "siteIndex": "PASS build/check: 1052 lessons, 10526 question paths, 40 mappings.",
+    "questionSourceAudits": "Existing current audit evidence retained because this change modified no source references: 10566 questions, 23141 refs, 0 semantic flags; source catalog 281/281 URLs covered; grade-fit 410/410 with 0 mismatches.",
+    "fullNpmTest": "PASS: npm test exited 0; D413 regression is included in pretest and test, and the workbench contract traversed 1027/1027 lessons.",
+    "humanReview": "Not performed by Codex. User will submit lesson for ChatGPT content review; this is not a manuscript-inventory gate."
+  },
+  "commitPush": "not performed; overall objective remains in progress"
+}

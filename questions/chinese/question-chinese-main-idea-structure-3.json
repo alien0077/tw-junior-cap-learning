@@ -2,41 +2,76 @@
   "id": "question-chinese-main-idea-structure-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "文章出現「但是、然而」通常提示？",
+  "prompt": "文章先列出新措施的便利，接著用『然而』指出弱勢使用者仍有困難；讀者應如何理解？",
   "options": [
     {
       "id": "A",
-      "text": "轉折"
+      "text": "後半仍只是重複前半"
     },
     {
       "id": "B",
-      "text": "列舉結束"
+      "text": "轉折後通常出現需要調整或重新衡量的重點"
     },
     {
       "id": "C",
-      "text": "時間日期"
+      "text": "全文一定改成反對新措施"
     },
     {
       "id": "D",
-      "text": "人物姓名"
+      "text": "然而只表示時間順序"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "這些詞常引出語意轉折。"
+    "value": "C",
+    "explanation": "然而標示觀點轉向，後半對前半的樂觀說法加上限制，是理解作者完整立場的重要線索。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-main-idea-structure-3.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究主旨、段落功能、轉折、寓意與全文證據能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫篇章主旨結構題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-main-idea-structure"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-main-idea-structure",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章主旨、段落功能與推論",
+      "observedPattern": "公立學校國文評量要求結合段落功能、轉折、反覆線索、事件結果與全文證據判斷主旨及寓意；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解、主旨與結構",
+      "observedPattern": "公立學校國文評量要求結合段落功能、轉折、反覆線索、事件結果與全文證據判斷主旨及寓意；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "圈出轉折詞，比較前後主張的差異與後半是否修正前半。",
+  "solutionSteps": [
+    "讀題定位：圈出「轉折線索」與段落、轉折、反覆詞、事件結果或全文範圍線索。",
+    "整理證據：把線索放回開頭、發展與結尾，判斷它們如何共同指向主旨或寓意；本題核心是「然而標示觀點轉向，後半對前半的樂觀說法加上限制，是理解作者完整立場的重要線索。」",
+    "核對正解：選項 C 能解釋全文主要材料與作者呈現的意義。",
+    "排除誘答：檢查是否只抓單一細節、忽略轉折後限制、把個人常識加進文本，或寫成空泛口號。",
+    "回讀驗證：逐段對照主旨，確認每個重要段落都能被涵蓋，且結論沒有超出文章證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

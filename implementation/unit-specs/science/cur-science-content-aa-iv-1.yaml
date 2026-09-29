@@ -1,0 +1,145 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-science-content-aa-iv-1
+  knowledgeGraphIds:
+  - kg-science-content-aa-iv-1
+  title: Aa-Ⅳ-1：原子模型演變
+  subject: science
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Aa-Ⅳ-1：原子模型演變
+    curriculumIntent: Aa-Ⅳ-1：原子模型演變
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 說明原子模型是依證據建立、可用來解釋與預測，但不等於原子照片的簡化表徵
+  - 依陰極射線偏轉與金箔散射的觀察，分清直接觀察、模型推論及推論限制
+  - 比較舊模型預測與新證據的落差，說明模型修正保留了什麼、增加了什麼
+  prerequisites:
+  - 能讀懂簡單的粒子路徑圖和「多數／少數／極少數」等定性資料描述
+  - 能區分實驗觀察到的結果與根據結果提出的不可直接觀察推論
+  coreConcepts:
+  - 原子模型需能提出可檢驗的解釋或預測，並受證據與適用範圍限制
+  - 陰極射線偏轉支持原子內有帶負電電子；金箔少數大角度偏轉支持小而集中的正電區
+  - 模型圖的顏色、尺寸和路徑是表徵慣例，不可直接當成原子實際外觀
+  misconceptions:
+  - 把道耳頓「不可分」的歷史假設當成今天仍成立的原子事實
+  - 把多數粒子直行解讀成原子內均勻充滿正電，忽略極少數大角度偏折的證據
+  - 把模型插圖當成原子照片，或把新模型出現解讀成舊模型在任何範圍都毫無用途
+  contentFlow:
+  - 'hook: 原子無法直接觀察，提出「如何由路徑推論結構」問題'
+  - 'model-literacy: 區分模型表徵、實驗觀察與不可直接看到的原子結構'
+  - 'predict: 先預測粒子遠離或接近集中正電區時的路徑，不揭露回饋'
+  - 'manipulate: 只調整最近接近距離等級，保留其他假設不變'
+  - 'observe: 同步更新定性粒子路徑，說明未呈現真實實驗比例'
+  - 'evidence-link: 對照多數直行、少數偏折、極少數大角度偏折的公開觀察描述'
+  - 'explain: 寫出舊模型預測落差與核式模型推論，區分證據和結論'
+  - 'transfer: 以原子圖中的顏色／電子路徑判讀模型限制'
+  - 'exit-ticket: 說明一項觀察、一項推論及一項模型限制'
+  visualizations:
+  - 盧瑟福定性散射路徑圖，標記入射方向、集中正電區與最近通過距離
+  - 附文字觀察基準「多數直行、少數偏折、極少數大角度偏折」；禁止生成或暗示真實比例
+  - 每次變更均同步更新最近距離讀值、路徑及螢幕閱讀器可讀的文字摘要
+  interactiveBlocks:
+  - id: CUR-SCIENCE-CONTENT-AA-IV-1-I01
+    component: ParticleModelBlock
+    purpose: 讓學生先預測入射粒子接近正電核的距離如何影響定性偏折，再對照散射觀察與核式模型推論
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        impactProximity: 3
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 以鍵盤可操作的距離滑桿改變入射粒子與正電核的最近通過距離等級
+    - 標記支持結論的圖形、資料、詞語或事件
+    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    visualRules:
+    - 操作距離後定性路徑、當前值與替代文字同步更新；不得顯示虛構的散射率
+    - 正解揭露前保留學生預測與操作紀錄
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-SCIENCE-CONTENT-AA-IV-1-I01
+      trigger: 把模型插圖當成原子照片，或把定性示意路徑當成真實散射率
+      prompt: 請分別指出圖中可觀察的表徵、由它支持的推論，以及圖形沒有提供的實驗數據。
+      expectedEvidence: 明確指出入射方向、正電核位置或路徑改變，並說明示意圖不含真實粒子比例
+    feedback:
+      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
+      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「Aa-Ⅳ-1：原子模型演變」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「Aa-Ⅳ-1：原子模型演變」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「Aa-Ⅳ-1：原子模型演變」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「Aa-Ⅳ-1：原子模型演變」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「Aa-Ⅳ-1：原子模型演變」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 金箔散射中「多數直行、極少數大角度偏折」分別支持什麼推論？這項定性模擬不能證明什麼？
+    successCriteria:
+    - 說明原子大部分空間及正電集中的核式推論
+    - 指出觀察結果不是原子照片，模型圖是表徵
+    - 說出本互動不提供真實散射率或完整原子結構
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「Aa-Ⅳ-1：原子模型演變」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入本課時先要求預測最近通過距離變近會如何改變路徑；未預測前不顯示正解說明。
+  - 調整距離滑桿後，最近距離值、定性路徑和 aria-label 同步更新，且文案持續標示圖形不按實驗比例。
+  - 以鍵盤操作滑桿能完成遠／近比較；更新後焦點保留，320／375／768px 不裁切圖、標籤或回饋。
+  - 當學習者把模型圖當照片或把示意當成測量值時，命中對應診斷並要求分開寫觀察、推論與限制。
+  - transfer 使用光譜線：學生說明這是可觀察證據，能支持能階差異推論，但不是電子繞行路徑的直接照片。
+  - Fallback test：阻擋 simulations.js 後仍能看見六段教材、模型不可操作的明確提示及四題鍵盤文字練習；答錯可重試、答對有單元回饋，頁面無錯誤且窄螢幕不溢位。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22 頁／PDF 第 26 頁；主題 A、次主題 Aa；官方代碼 Aa-Ⅳ-1
+    role: official-curriculum-source-of-truth

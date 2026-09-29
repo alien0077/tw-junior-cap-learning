@@ -1,0 +1,162 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-science-content-fc-iv-1
+  knowledgeGraphIds:
+  - kg-science-content-fc-iv-1
+  title: Fc-Ⅳ-1：生物圈的生態系與組成層次
+  subject: science
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Fc-Ⅳ-1：生物圈的生態系與組成層次
+    curriculumIntent: Fc-Ⅳ-1：生物圈的生態系與組成層次
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 以可觀察證據說明「Fc-Ⅳ-1：生物圈的生態系與組成層次」的核心現象
+  - 控制變因並解讀模型或資料
+  - 用證據推理回答陌生情境題
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - Fc-Ⅳ-1：生物圈的生態系與組成層次
+  - 表徵／證據與結論的對應
+  - 錯誤答案所反映的概念差異
+  misconceptions:
+  - 把「Fc-Ⅳ-1：生物圈的生態系與組成層次」的相關變化誤認為因果，或忽略控制變因
+  - 把記憶答案當成理解證據
+  - 忽略題幹中的限制條件或單位
+  contentFlow:
+  - 'predict：看到池塘和潮間帶兩種樣區時，先預測個體、族群、群集、生態系與生物圈各自需要哪些範圍證據。'
+  - 'manipulate：用場域按鈕在池塘／潮間帶間切換，再逐一操作五種觀察尺度，讓同一地點的證據邊界隨選擇改變。'
+  - 'observe：每次切換後記錄出現的生物、同種個體範圍、共存物種，以及生態系需包含的非生物環境資訊。'
+  - 'explain：依個體到生物圈的包含關係說明尺度判斷，另將生產者／消費者等功能角色和空間層級分開分類。'
+  - 'observe：完成四步 guided-choice，根據每題的場域、物種數、時空範圍及環境條件核對錯答提示與正答解釋。'
+  - 'explain：指出池塘或潮間帶的局部樣本能支持哪些生態系主張，及為何不能單憑它外推整個生物圈。'
+  - 'transfer：改看陌生場域時，先標明觀察與取樣邊界，再選擇相符尺度並提出仍需補取的證據。'
+  - 'exit-ticket：用個體到生物圈的層級語言說明判斷依據，並指出局部觀察推及全球前的證據缺口。'
+  visualizations:
+  - 以可及的按鈕切換池塘／潮間帶及五種尺度，更新文字化證據摘要；不宣稱存在拖曳鏡頭、滑桿或同步圖表
+  - 每一尺度均顯示層級名稱、判斷條件及場域證據；生態系特別呈現生物群集與非生物環境，生物圈特別標示局部資料限制
+  interactiveBlocks:
+  - id: CUR-SCIENCE-CONTENT-FC-IV-1-I01
+    component: SystemRelationshipBlock
+    purpose: 切換觀察場域與尺度，直接比較層級判斷需要的生物名單、同種範圍及非生物環境證據
+    initialState:
+      site: pond
+      scale: individual
+    studentActions:
+    - 以鍵盤或指標選擇池塘或潮間帶
+    - 以鍵盤或指標切換個體、族群、群集、生態系與生物圈
+    - 比較選取尺度所呈現的生物、時空範圍及非生物證據
+    - 使用四步 guided-choice 檢核尺度判讀並讀取重試提示與解釋
+    visualRules:
+    - 場域或尺度按鈕變更後，更新文字證據、標題及 aria-pressed 狀態
+    - 當前結果以 aria-live 區域宣讀；重繪後焦點留在原操作按鈕
+    - 所有選項以文字標示，不以顏色單獨表意；觸控目標至少 44px
+    - 窄螢幕不得裁切按鈕、核心證據、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-SCIENCE-CONTENT-FC-IV-1-I01
+      trigger: 把局部池塘或潮間帶資料直接當成生物圈證據，或將生態角色當成尺度層級
+      prompt: 指出資料涵蓋的場域／時間，並說明還缺少哪類範圍或環境證據。
+      expectedEvidence: 說明局部取樣邊界及生物圈的全球尺度；或清楚區分功能分類與層級分類。
+    feedback:
+      correct: 具體指出其使用的時空範圍、生物組成或非生物環境證據。
+      incorrect: 先提示檢查場域範圍、物種數或環境條件，讓學生重選後再讀解析；不宣稱不存在的動態因果診斷器。
+  - id: CUR-SCIENCE-CONTENT-FC-IV-1-I02
+    component: GuidedChoiceBlock
+    purpose: 以四個選擇題逐步檢核族群條件、生態系組成、生物圈外推界線及分層取樣限制
+    sourceData: lessons/science/lesson-science-content-fc-iv-1.json interactive.steps
+    initialState:
+      step: 0
+      completed: false
+    visualRules:
+    - 每題選項、提交狀態、重試提示與正解解釋均以文字呈現，不依賴顏色。
+    - 回答錯誤時保留目前步驟並顯示專屬 retryHint；答對才可進入下一步。
+    - 進度與回饋使用可及文字狀態，鍵盤可操作所有選項與提交控制。
+    studentActions:
+    - 逐步作答四個單元專屬問題
+    - 答錯時讀取該步重試提示後重新判讀
+    - 答對時讀取概念解釋並進入後續情境
+    misconceptionChecks:
+    - id: MC-CUR-SCIENCE-CONTENT-FC-IV-1-I02
+      trigger: 將「同種個體數量多」誤判為群集或生態系，或以局部樣區直接代表生物圈
+      prompt: 指出題目給定的種類、時空範圍，以及是否納入非生物環境。
+      expectedEvidence: 依同種／多種、生物群集／非生物環境及局部／全球邊界選出層級。
+    feedback:
+      correct: 呈現該步生態層級、環境證據或取樣邊界的解釋。
+      incorrect: 優先呈現 lesson JSON retryHint；未提供提示時使用通用回看提示。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「Fc-Ⅳ-1：生物圈的生態系與組成層次」的 SystemRelationshipBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「Fc-Ⅳ-1：生物圈的生態系與組成層次」的 SystemRelationshipBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「Fc-Ⅳ-1：生物圈的生態系與組成層次」的 SystemRelationshipBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「Fc-Ⅳ-1：生物圈的生態系與組成層次」的 SystemRelationshipBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「Fc-Ⅳ-1：生物圈的生態系與組成層次」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「Fc-Ⅳ-1：生物圈的生態系與組成層次」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始模型選取池塘／個體；鍵盤選取潮間帶與生態系後，場域標籤、證據摘要及 aria-pressed 狀態均更新，焦點仍留在操作按鈕。
+  - 切換五種尺度時，各自顯示符合 lesson 概念的證據；族群需含同種／地區／時間，生態系需含生物群集與非生物環境，生物圈需標示全球範圍及局部樣本限制。
+  - 以鍵盤作答 lesson JSON 四步 GuidedChoiceBlock；每步答錯顯示該步 retryHint，答對顯示該步 feedback，不可把尺度概念、功能角色或全球外推混為一談。
+  - 在 320px、375px 與 768px 寬度操作所有場域／尺度按鈕並完成四步選擇題；文字證據、控制項與回饋不溢位或遺失，控制項可鍵盤操作且有清晰焦點。
+  - fallback：外部資料不可用時，池塘／潮間帶資料、尺度切換、guided-choice 與解釋仍由本地 lesson JSON 運作，不得阻塞本課或假稱已連上外部資料。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 F、次主題 Fc；官方代碼 Fc-Ⅳ-1
+    role: official-curriculum-source-of-truth

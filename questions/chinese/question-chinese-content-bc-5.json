@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bc-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "文章比較紙本與電子閱讀，若想讓比較公平，哪種寫法最適當？",
+  "prompt": "聲音地圖顯示圖書館午休平均 45 分貝、操場下課平均 70 分貝。若比較兩地，哪項仍需確認？",
   "options": [
     {
       "id": "A",
-      "text": "只列紙本優點，電子閱讀只寫缺點"
+      "text": "只要數字不同，就可確定操場全天都比較吵"
     },
     {
       "id": "B",
-      "text": "只比較兩者的名稱長短"
+      "text": "測量時間、設備與取樣次數是否相近，並確認分貝數值的比較基準"
     },
     {
       "id": "C",
-      "text": "先判定一方較好，再刪除相反資料"
+      "text": "圖書館一定比操場更適合所有人休息"
     },
     {
       "id": "D",
-      "text": "用相同面向比較，例如攜帶、查找與保存，再分別說明差異"
+      "text": "分貝數字不需要單位或測量條件"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "以相同面向呈現雙方資料，才能降低偏重並看出真正差異。"
+    "value": "B",
+    "explanation": "數字比較要先確定測量條件與單位相稱；午休與下課的差異不能直接擴大成全天環境或所有人的偏好。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
-    "sourceLocator": "公開國中教育會考／公立國中段考的說明文與資料判讀能力方向（比較說明）；另以國語文課綱核對：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; removed old year labels and did not reproduce source wording, options, passage, figure, or answer. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編說明閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文、圖表與資料理解",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明方法、因果與閱讀推論",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認說明對象與讀者目的，再沿資料—組織—解釋—方案—評估的路線閱讀，最後檢查來源、條件與不確定性是否被保留。",
+  "solutionSteps": [
+    "讀題定位：圈出「比較條件」與說明對象、讀者目的、資料、定義、分類、比較、因果或方案。",
+    "追蹤說明路線：確認作者先讓讀者看見什麼，再如何整理、解釋、比較與行動；本題核心是「數字比較要先確定測量條件與單位相稱；午休與下課的差異不能直接擴大成全天環境或所有人的偏好。」",
+    "核對正解：選項 A「測量時間、設備與取樣次數是否相近，並確認分貝數值的比較基準」能回扣資料、讀者需要與推理限制，沒有把視覺或口號當成證明。",
+    "排除誘答：檢查是否忽略單位／來源／樣本、混淆定義與分類、把相關當因果，或提出沒有檢查方式的方案。",
+    "結論回查：用『對象—資料—組織—解釋—行動—評估』重讀，確認文字能讓不同讀者理解且知道哪些仍待觀察。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

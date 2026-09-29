@@ -2,23 +2,23 @@
   "id": "question-science-content-kb-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月8日社區環境站的觀察中，針對「Kb：萬有引力」提出可檢驗的科學問題，若比較 5 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "若同時增加一物質量並拉遠兩物距離，但沒有給改變幅度，應如何判斷？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Kb：萬有引力」時只改變施力大小，其餘條件一致，設置5組、每組取樣16份並各重複測量5次"
+      "text": "必定變強"
     },
     {
       "id": "B",
-      "text": "研究「Kb：萬有引力」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "必定變弱"
     },
     {
       "id": "C",
-      "text": "研究「Kb：萬有引力」時只測量5組中的一組就直接下結論"
+      "text": "兩因素方向相反，資料不足以直接排序"
     },
     {
       "id": "D",
-      "text": "研究「Kb：萬有引力」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "必定變成零"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Kb：萬有引力」。"
+    "value": "C",
+    "explanation": "質量增加使力增強、距離變遠使力減弱；沒有幅度或完整數值時不能假造哪個效果較大。 正確答案為選項 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的萬有引力、質量、距離、地球—月球、軌道與模型限制能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-kb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-kb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "萬有引力、質量、距離、重量與天體資料",
+      "pattern": "取公立學校自然科評量以力、質量、距離、地表重力與天體情境推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以力、質量、距離、地表重力與天體情境推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "力學、天體運動、資料判讀與模型限制",
+      "pattern": "取公開會考以條件比較、圖表和模型證據判斷力學現象的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以條件比較、圖表和模型證據判斷力學現象的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "萬有引力、質量、距離、地球與月球",
+      "pattern": "取公立國中試題以受力方向、平方反比、天體情境與變因控制進行推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以受力方向、平方反比、天體情境與變因控制進行推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列出兩因素方向，再判斷證據是否足夠。",
+  "solutionSteps": [
+    "圈出兩物質量、中心距離、速度與要求量。",
+    "判斷是定性比較還是可套公式的計算。",
+    "使用 F=Gm₁m₂/r² 或受力圖。",
+    "排除把重量、接觸力和軌道速度混成萬有引力。",
+    "檢查方向、比例、單位與模型限制。"
+  ]
 }

@@ -2,41 +2,84 @@
   "id": "question-math-content-s-7-1-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "幾何中的點通常用什麼表示？",
+  "prompt": "幾何圖形中，若只想標示一個位置，最適合用哪一種記號？",
   "options": [
     {
       "id": "A",
-      "text": "大寫英文字母"
+      "text": "一個大寫英文字母，例如 P"
     },
     {
       "id": "B",
-      "text": "小寫希臘字母只限角"
+      "text": "兩個箭頭，例如 ↔"
     },
     {
       "id": "C",
-      "text": "一個方程式"
+      "text": "一段括號，例如 [PQ]"
     },
     {
       "id": "D",
-      "text": "一段數值"
+      "text": "三個連續角符號"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-7-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "幾何中的點通常以大寫英文字母命名，例如點 A。"
+    "explanation": "幾何中的點代表一個位置，通常以一個大寫英文字母標示，例如 P，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 簡單圖形與幾何符號 題型與官方課綱 KG kg-math-content-s-7-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學資料僅供簡單圖形與幾何符號能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開數學資料的幾何語言能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-7-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-7-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "簡單圖形、點線角、線段／射線／直線辨識與幾何符號命名",
+      "observedPattern": "公開學校數學資料常以圖形元素、端點與延伸方向、字母命名及角的頂點位置考查幾何語言轉譯；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "簡單圖形、點線角、線段／射線／直線辨識與幾何符號命名",
+      "observedPattern": "公開學校數學資料常以圖形元素、端點與延伸方向、字母命名及角的頂點位置考查幾何語言轉譯；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷題目描述的是位置還是延伸中的圖形，再選相應的符號。",
+  "solutionSteps": [
+    "辨認題目只要求標示一個位置。",
+    "一個位置對應一個點。",
+    "點通常用一個大寫英文字母命名。",
+    "P 符合點的命名方式。",
+    "選 A。"
+  ]
 }

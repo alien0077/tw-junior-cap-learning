@@ -2,23 +2,23 @@
   "id": "question-math-performance-g-iv-1-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "矩形四頂點為 (0,0)、(5,0)、(5,3)、(0,3)，其面積為何？",
+  "prompt": "矩形四頂點為 (-1,2)、(6,2)、(6,5)、(-1,5)，其面積為何？",
   "options": [
     {
       "id": "A",
-      "text": "30 平方單位"
+      "text": "18"
     },
     {
       "id": "B",
-      "text": "8 平方單位"
+      "text": "21"
     },
     {
       "id": "C",
-      "text": "15 平方單位"
+      "text": "24"
     },
     {
       "id": "D",
-      "text": "16 平方單位"
+      "text": "28"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "矩形的長為 5、寬為 3，面積＝5×3＝15 平方單位。"
+    "value": "B",
+    "explanation": "水平長為 6-(-1)=7，垂直寬為 5-2=3，面積=7×3=21，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考直角坐標點、象限、坐標軸、距離、中點、對稱與坐標情境題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "直角坐標點與距離單元實質改寫；已重新計算象限、坐標軸、水平／垂直距離、兩點距離、中點、對稱與幾何情境答案，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供直角坐標、距離、中點、鏡射與坐標圖形能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的直角坐標方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-g-iv-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-g-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "直角坐標象限、坐標軸、水平與垂直距離、兩點距離、中點、鏡射與矩形面積",
+      "observedPattern": "公開數學評量常把點的座標符號、距離公式、中點、對稱與坐標圖形面積結合，要求先辨認幾何方向再計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "直角坐標象限、坐標軸、水平與垂直距離、兩點距離、中點、鏡射與矩形面積",
+      "observedPattern": "公開數學評量常把點的座標符號、距離公式、中點、對稱與坐標圖形面積結合，要求先辨認幾何方向再計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "直角坐標象限、坐標軸、水平與垂直距離、兩點距離、中點、鏡射與矩形面積",
+      "observedPattern": "公開數學評量常把點的座標符號、距離公式、中點、對稱與坐標圖形面積結合，要求先辨認幾何方向再計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先由同一水平線與垂直線的坐標差找長寬，再相乘。",
+  "solutionSteps": [
+    "計算水平邊長 6-(-1)=7。",
+    "計算垂直邊長 5-2=3。",
+    "套用矩形面積長×寬。",
+    "得到 7×3=21。",
+    "所以選 B。"
+  ]
 }

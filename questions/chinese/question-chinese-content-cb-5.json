@@ -2,41 +2,76 @@
   "id": "question-chinese-content-cb-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "社區居民每年共同舉辦祭典，並由長者教導年輕人儀式意義。此活動最主要的功能為何？",
+  "prompt": "評論文寫「我們真的只能把節慶辦成打卡背景嗎？」這個設問主要造成什麼效果？",
   "options": [
     {
       "id": "A",
-      "text": "傳遞群體價值與文化記憶"
+      "text": "客觀公布參與人數，不含作者立場"
     },
     {
       "id": "B",
-      "text": "只為增加商品價格"
+      "text": "提出批判方向，引導讀者懷疑只重視觀光影像的做法"
     },
     {
       "id": "C",
-      "text": "使每個家庭完全相同"
+      "text": "證明所有人都反對觀光"
     },
     {
       "id": "D",
-      "text": "取代所有日常活動"
+      "text": "把問題改成無法回答的事實"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-cb"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "儀式與教導使價值和記憶在世代間傳遞。"
+    "value": "B",
+    "explanation": "設問帶有立場與引導功能，提出檢討方向，但不能直接證明所有人都同意作者。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/108-1-2%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%95%E9%87%8F%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
-    "sourceLocator": "社群文化傳承；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究社群文化、公共規範、多方引述、媒介與權力的閱讀判讀。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫 CB 社群文化與多方觀點題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-cb"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-cb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "社會議題文本、觀點與證據",
+      "observedPattern": "公立學校國文評量以社群記憶、公共規範、媒介轉換、多方引述與評論語氣要求區分事實、觀點、主張範圍及缺席聲音；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "多方聲音、主旨與批判閱讀",
+      "observedPattern": "公立學校國文評量以社群記憶、公共規範、媒介轉換、多方引述與評論語氣要求區分事實、觀點、主張範圍及缺席聲音；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先看問句後是否緊接批判或主張，再分辨修辭引導和統計事實。",
+  "solutionSteps": [
+    "讀題定位：圈出「設問語氣」及群體、說話者、規範、媒介、語氣或缺席者線索。",
+    "分層整理：區分文本直接資料、人物觀點與作者主張，再依「設問帶有立場與引導功能，提出檢討方向，但不能直接證明所有人都同意作者。」判定範圍。",
+    "核對正解：選項 B 能由具體語句或段落關係支持，且沒有代替未發言者下結論。",
+    "排除誘答：檢查是否把共同記憶當全體事實、把單一聲音當共識，或忽略權力與參與門檻。",
+    "回讀驗證：重新檢查答案是否同時解釋語言、制度、媒介與多方經驗的關係。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

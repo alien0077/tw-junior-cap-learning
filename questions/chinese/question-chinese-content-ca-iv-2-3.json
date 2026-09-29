@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ca-iv-2-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "面對新科技產品，評估其價值時最完整的做法為何？",
+  "prompt": "感應燈在無人時段調暗，平均開啟時間縮短。哪項結論最符合證據強度？",
   "options": [
     {
       "id": "A",
-      "text": "比較功能、成本、環境與長期影響"
+      "text": "調暗一定讓所有人看不清楚"
     },
     {
       "id": "B",
-      "text": "只看價格最低者"
+      "text": "平均時間縮短表示每個人都少用同樣分鐘"
     },
     {
       "id": "C",
-      "text": "只看外觀最華麗者"
+      "text": "這些資料支持照明控制可能降低使用時間，但不能單獨證明全年總用電一定下降"
     },
     {
       "id": "D",
-      "text": "只相信宣傳文字"
+      "text": "因此學校可以取消所有照明"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "科技選擇不只看功能，也需考量成本與環境後果。"
+    "value": "C",
+    "explanation": "平均開啟時間是使用指標，能支持可能減少使用時間；全年用電還受功率、時段與其他設備影響，不能過度外推。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "科技文明演進與生存環境文化；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究科技文明、環境適應、利弊衡量及證據強度。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫科技與環境文化文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ca-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ca-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "科技說明與資料推論",
+      "observedPattern": "公立學校國文評量要求從科技使用、文明演進與環境資料判讀因果、限制、利弊及文化選擇；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "科技變遷、說明與因果界線",
+      "observedPattern": "公立學校國文評量要求從科技使用、文明演進與環境資料判讀因果、限制、利弊及文化選擇；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分觀察到的指標、合理推論與尚未測量的結果。",
+  "solutionSteps": [
+    "確認資料直接測量的是開啟時間。",
+    "列出功率與全年時段等替代因素。",
+    "把『一定下降』降為『可能降低』。",
+    "C 保留平均值與全年結果的差距。",
+    "提出需要補測的總用電資料。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

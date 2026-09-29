@@ -1,0 +1,128 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-8
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-8
+  title: 5-Ⅳ-8：聽簡單故事筆記
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-8：聽簡單故事筆記
+    curriculumIntent: 5-Ⅳ-8：聽簡單故事筆記
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以官方課綱和KG作事實底線；只採納可讀版本材料所能支持的共同概念與差異，未讀到的出版社內容明確pending，不冒稱三版正文比較
+    currentEvidenceStatus: original-manuscript-authored; nani-school-plan-locator-read; hanlin-school-plan-context-only; kanghsuan-unit-material-pending
+  learningGoals:
+  - 聽簡易故事後，以簡單字詞或句子記下足以回答聽力任務的要點
+  - 保留人物目標、關鍵障礙、行動、事件順序、轉折與結果的必要關係
+  - 分辨故事明說內容與自己的推測，並以筆記讓未聽者重建主線
+  prerequisites:
+  - 能理解常見校園與生活英文詞彙及簡單過去式敘事
+  - 能辨識 then、but、because、so 等常見時間／轉折／因果線索
+  coreConcepts:
+  - 聽力理解與簡潔記錄是同一任務的兩部分：先建立故事主線，再按題目取捨細節
+  - 關係詞及事件先後能改變角色行動與故事結局的解讀
+  - 有效筆記需讓另一位讀者不靠臆測重建關鍵情節
+  misconceptions:
+  - 以抄下多少名詞衡量聽懂程度，漏掉人物關係或事件順序
+  - 把計畫或可能性記成已完成事實，或漏掉 but／because／so 的情節作用
+  - 將空盒、遲到等線索自行補成未被故事說明的原因
+  contentFlow:
+  - 'predict: 遇到四個散詞無法安全交接故事時，先預測問題需要人物／目標、障礙、行動或結果中的哪些線索'
+  - 'manipulate: 以 Nora 送卡故事重排事件短筆記，使用箭頭及 but／because／so 調整先後、轉折、原因與結果關係'
+  - 'observe: 比較只有名詞的清單與保留故事關係的筆記，觀察新聽者能否據此重建同一情節'
+  - 'explain: 回聽並指出明說的事件／關係詞證據，區分故事明示事實與由單一線索作出的推測'
+  - 'transfer: 以四段陌生微故事作選答遷移，讓另一位讀者只看短筆記重述並修補歧義'
+  visualizations:
+  - 事件路徑筆記：以「人物／目標 → 障礙 → 行動 → 結果」展示精簡文字如何保留故事骨架；不同故事不強制填滿每個欄位
+  - 關係詞標記：箭頭表示先後，but 表轉折，because 表原因，so 表結果；保留可讀文字，不靠顏色傳意
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-8-I01
+    component: GuidedChoiceBlock
+    purpose: 播放原創英語故事，讓學生選擇保留角色目標、情節轉折及結局的精簡筆記。
+    initialState: {selectedAnswer: null, feedbackVisible: false, transcriptVisible: false}
+    studentActions:
+    - 使用鍵盤可操作的播放按鈕聽原創故事，先以自己的方式短記線索
+    - 從三種候選筆記選出唯一忠實、足以重建情節且沒有臆測的一項
+    - 錯答時讀取單題提示，回想關係詞及被遺漏的事件，再次作答
+    - 作答後閱讀逐題解析；需要核對時才展開收合逐字稿
+    visualRules:
+    - 逐字稿預設收合；SpeechSynthesis 本機播放，不呼叫外部語音服務
+    - 播放失敗或瀏覽器無語音時明確提示可自讀，但不得冒稱為聽力測驗
+    - 播放、選項及逐字稿皆可鍵盤操作；播放狀態與答題回饋由 aria-live 呈現
+    - 正誤不得只用顏色區分；320px 窄螢幕不可裁切題幹、按鈕或回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-8-I01
+      trigger: 只記人物、地點等名詞，漏掉轉折、行動順序或結果，造成故事重建錯誤
+      prompt: 找出 so／but／because 後的事件，確認筆記有沒有把計畫誤寫成結果。
+      expectedEvidence: 指出關係詞連接的兩個故事事件，並解釋漏記後會造成的錯誤理解。
+    feedback:
+      correct: 說明筆記如何保留角色、轉折與結果，再要求學生指出哪個詞保存了事件關係。
+      incorrect: 優先提醒 so／but／because 或人物行動方向，不直接代選；重選後顯示本題解析。
+  capTransfer:
+    questionType: 聽故事後選出精簡重點筆記並辨認故事情節中的因果、轉折及結果
+    stemConstraint: 每題用未見過的原創故事，改變人物與任務；正確筆記需忠實保存必要主線，錯誤項分別測試漏關係、倒置事件及添加臆測
+    requiredResponse: 選答後能以故事線索說明人物目標、情節變化及結果的對應
+    scoring: 筆記忠實度 1、事件關係完整 1、未添加原文未支持的資訊 1
+  exitTicket:
+    prompt: 一段故事要縮寫成短筆記時，哪些關係不能丟？請說明一個漏掉 but／because／so 會導致的誤解。
+    successCriteria:
+    - 提到本單元核心概念
+    - 提到人物行動或目標與故事結果的關係
+    - 指出一個順序、轉折或因果詞如何改變理解
+  expressionExtension:
+    applicable: true
+    task: 聽一段自編故事後，用 3–6 個短語和箭頭寫筆記，再用兩句簡單英文向同伴重述目標、轉折及結局。
+    constraint: 不照抄逐字稿；筆記須保留關係詞意義，推論另加標記，系統不代寫完整摘要。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 播放控制有故事編號與語言名稱；播放狀態、答案回饋由aria-live呈現；逐字稿使用原生details/summary
+    reducedMotion: 本互動無自動動畫；停用動態後仍可聽、選答、展開逐字稿
+  testCases:
+  - 學生頁只顯示六段本課正文一次，且與lesson teaching.body段落一致；互動四段故事均以各自原創音訊文本作答。
+  - 初始答案不揭露；鍵盤錯答得到該題專屬提示、重答正確後顯示對應的情節關係解析。
+  - 逐字稿預設收合、可鍵盤展開；其內容逐字符合相應audioScript，不支援語音時明確聲明自讀不等同聽力測驗。
+  - 在320、375、768px測試播放器、選項、答案回饋與逐字稿按鍵，無水平溢位及page error。
+  - 阻斷外部網路後故事、播放介面fallback、題目、提示與答案解析仍可操作。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 已讀材料與課綱、KG、原創教學的關係可追溯；無法取得的出版社章節維持pending
+  - 四段互動故事測試簡潔筆記、人物行動、情節順序／因果及避免臆測
+  - 錯答提示、作答解析、鍵盤、aria-live、逐字稿 disclosure、語音fallback與響應式測試通過
+  - 人工教材內容審查由使用者另以ChatGPT進行；自動化通過不代表人工或出版社審定
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf
+    locator: PDF p.14; official curriculum statement 5-Ⅳ-8 and adjacent 5-Ⅳ-7/5-Ⅳ-9 distinctions.
+    role: official-curriculum-source-of-truth
+  - url: https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMxTDNCMFlWOHlNalF4WHpNMU1qUTNPRGxmT0RRMEpXUmZUMFZUTlRJd01EVTJNRFkwTlRrMk1UZzROakV6TXpnME5XTmpSMlZsWWpKNlBTSWZOVGtpTG5abGNtZ2xNU0k9&fname=LOGGYSOKWW10A1IH50LKKPHGPK30WT3414JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP3435GCQP3504B0UWYWWXUW50OOA0A0YWPOXX21JCLKSWIGQOB4SWHCUS30A110
+    locator: 大豐國中南一標示七年級英語計畫，PDF pp.6–7提供相鄰5-Ⅳ-7與聽力／故事閱讀脈絡；未定位5-Ⅳ-8專屬教法，非出版社教材正文。
+    role: publisher-labelled-school-plan-locator-only
+  - url: https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf
+    locator: Public plan marked Hanlin edition, PDF p.0 and pp.47–49; grade/course context only, not direct 5-Ⅳ-8 instructional evidence.
+    role: publisher-labelled-school-plan-locator-only
+  - url: https://www.knsh.com.tw/_KNSH/Plan
+    locator: Official Kang Hsuan course-plan portal; no readable unit-specific material retrieved in this research pass.
+    role: official-publisher-search-entry-pending

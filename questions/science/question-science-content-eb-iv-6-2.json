@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-6-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年3月11日學校研究社的觀察中，一個物體質量為 249 g、體積為 32 cm³，研究「Eb-Ⅳ-6：浮力與排開液體重量」時，其密度為何？",
+  "prompt": "一物體排開水的體積為 0.002 m³，取水的密度 1000 kg/m³、g＝10 N/kg。物體所受浮力大小為何？",
   "options": [
     {
       "id": "A",
-      "text": "281 g/cm³"
+      "text": "2 N"
     },
     {
       "id": "B",
-      "text": "0.128514 g/cm³"
+      "text": "10 N"
     },
     {
       "id": "C",
-      "text": "7.78125 g/cm³"
+      "text": "20 N"
     },
     {
       "id": "D",
-      "text": "7968 g/cm³"
+      "text": "20000 N"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-6"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "密度＝質量÷體積＝249÷32＝7.78125 g/cm³。 本題對應 KG「Eb-Ⅳ-6：浮力與排開液體重量」。"
+    "explanation": "阿基米德原理 F浮＝ρ液gV排＝1000×10×0.002＝20 N。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作浮力、排開液體重量、視重、浮沉與工程應用的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-6"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "浮力、排開液體重量與浮沉判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以彈簧秤、溢水杯、物體浮沉、船舶或密度比較考查浮力、排開液體重量、液中視重與平衡條件；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "浮力、液中視重與密度浮沉能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以彈簧秤、溢水杯、物體浮沉、船舶或密度比較考查浮力、排開液體重量、液中視重與平衡條件；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "阿基米德原理、船舶與浮沉能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以彈簧秤、溢水杯、物體浮沉、船舶或密度比較考查浮力、排開液體重量、液中視重與平衡條件；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "辨認題目給的是排液體積，直接代入浮力公式並保留 SI 單位。",
+  "solutionSteps": [
+    "列出水的密度 1000 kg/m³。",
+    "列出 g＝10 N/kg 與 V排＝0.002 m³。",
+    "寫出 F浮＝ρgV排。",
+    "計算 1000×10×0.002＝20。",
+    "所以選 C。"
+  ]
 }

@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-iv-3-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "校園用水圖表標示『每月用水量（公噸）』。閱讀數值前，最先應確認什麼？",
+  "prompt": "表格標題為『某校一週通學方式人數』，欄位列出公車80、自行車20、步行40。閱讀時最先確認哪項？",
   "options": [
     {
       "id": "A",
-      "text": "圖表紙張的顏色"
+      "text": "標題、時間範圍與人數單位"
     },
     {
       "id": "B",
-      "text": "作者的座號"
+      "text": "作者喜歡哪種交通工具"
     },
     {
       "id": "C",
-      "text": "標題是否押韻"
+      "text": "數字是否看起來漂亮"
     },
     {
       "id": "D",
-      "text": "縱軸與單位的意義"
+      "text": "表格顏色是否一致"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "先確認量的名稱、單位與刻度，才能正確解讀數值。"
+    "value": "A",
+    "explanation": "先確認標題、範圍和單位，才能知道數字代表什麼，不會把人數誤讀成比例或每日資料。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究圖表與資料整合判讀題型（圖表標題與單位）；課綱 Bc-Ⅳ-3：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究標題、單位、比例、趨勢、圖片範圍、來源與工具輔助。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫數據圖表圖片工具題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "表格、圖表與資料判讀",
+      "observedPattern": "公立學校國文評量要求確認圖表標題、單位、比例、趨勢、來源與圖片文字替代，並區分資料可支持的結論；本題使用全新數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "數據比較、比例與圖表證據",
+      "observedPattern": "公立學校國文評量要求確認圖表標題、單位、比例、趨勢、來源與圖片文字替代，並區分資料可支持的結論；本題使用全新數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先讀標題與欄位，再讀數字；把資料的測量對象、時間和單位固定下來。",
+  "solutionSteps": [
+    "圈出某校、一週與人數。",
+    "確認公車等欄位是通學方式。",
+    "檢查數字不是百分比。",
+    "A 提供正確解讀的基礎。",
+    "若標題改成比例，說明同樣數字需要如何重新理解。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

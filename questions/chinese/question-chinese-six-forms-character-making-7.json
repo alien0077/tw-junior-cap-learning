@@ -2,23 +2,23 @@
   "id": "question-chinese-six-forms-character-making-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "辨識造字法不能只看？",
+  "prompt": "要辨識一個字的造字法，為什麼不能只看現代字形外觀？",
   "options": [
     {
       "id": "A",
-      "text": "單一部件外觀"
+      "text": "現代字形可能經過演變、簡化或部件變形"
     },
     {
       "id": "B",
-      "text": "部件功能"
+      "text": "所有字都沒有固定部件"
     },
     {
       "id": "C",
-      "text": "字義線索"
+      "text": "只要看筆畫數就能知道字義"
     },
     {
       "id": "D",
-      "text": "詞語語境"
+      "text": "字形永遠不能提供任何線索"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "單一外觀不足以判斷造字法。"
+    "value": "D",
+    "explanation": "字形歷經演變與簡化，現代外觀可能掩蓋早期構形；需結合字源、部件與字義資料。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-six-forms-character-making-7.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究象形、指事、會意、形聲與部件查證能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫六書與造字題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-six-forms-character-making"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-six-forms-character-making",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字形、造字與語境",
+      "observedPattern": "公立學校國文評量從字形部件、字義線索與語境要求辨認造字方式，並區分象形、指事、會意及形聲；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字形結構、形音義與閱讀",
+      "observedPattern": "公立學校國文評量從字形部件、字義線索與語境要求辨認造字方式，並區分象形、指事、會意及形聲；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先承認字形的線索價值，再檢查演變與資料來源，避免只憑像不像下結論。",
+  "solutionSteps": [
+    "讀題定位：圈出「不能只看字形」與字形部件、位置、意義或讀音線索。",
+    "拆解構形：分別說明部件可能提供的功能，再連回整字與語境；本題核心是「字形歷經演變與簡化，現代外觀可能掩蓋早期構形；需結合字源、部件與字義資料。」",
+    "核對正解：選項 D 同時符合造字法定義、部件功能與查證界線。",
+    "排除誘答：檢查是否把形旁當聲旁、把線索當定論，或只憑現代字形外觀硬猜字源。",
+    "回讀驗證：以字源資料、字典讀音與完整詞語重新檢查，確認形、音、義的推論都有證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

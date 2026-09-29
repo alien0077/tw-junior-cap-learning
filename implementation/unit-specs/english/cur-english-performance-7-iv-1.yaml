@@ -1,0 +1,138 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-7-iv-1
+  knowledgeGraphIds:
+  - kg-english-performance-7-iv-1
+  title: 7-Ⅳ-1：字典依上下文查意義
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 7-Ⅳ-1：字典依上下文查意義
+    curriculumIntent: 7-Ⅳ-1：字典依上下文查意義
+    publisherEvidence:
+      nani: {status: pending, required: true}
+      kanghsuan: {status: pending, required: true}
+      hanlin: {status: pending, required: true}
+    fusionRule: 依課綱與KG確立查義技能；校方計畫只作版本使用／資源脈絡，不冒稱出版社章節教法；逐家記錄未取得的課本細節，教材以原創材料補足技能教學
+    currentEvidenceStatus: official-curriculum-and-kg-grounded; publisher-chapter-content-not-publicly-verified; original-unit-specific-fusion-authored
+  learningGoals:
+  - 依字母順序定位字頭，讀懂n.與v.等詞性標記及詞條中的候選義項
+  - 先辨認目標字在句中的詞性，再以主詞、動詞、受詞、搭配與前後文選義
+  - 把候選意思代回完整句子，解釋排除其他義項的證據並保留不確定處
+  prerequisites:
+  - 能辨認基本英文句子中的主詞、動詞及受詞位置
+  - 知道紙本字典按字母序排列，並能使用簡單英漢詞典
+  coreConcepts:
+  - 7-Ⅳ-1：字典依上下文查意義
+  - 同形詞可有多個詞性或義項；詞性限制候選義，語境再作取捨
+  - 詞典釋義是候選資料，須以整句語法和語意回驗
+  misconceptions:
+  - 不辨詞性，看到熟悉字就取最常見中文義
+  - 把字典第一個釋義當成所有語境的唯一答案
+  - 只憑water等單一關鍵字猜，不檢查句法或搭配
+  - 選完釋義不代回整句，也不擴讀前後文處理歧義
+  contentFlow:
+  - 'predict: 先讀海洋保育告示中的seal句子，預測此處是名詞或動詞並圈出支持初猜的句內線索'
+  - 'manipulate: 依字母順序定位seal詞頭，再按n.與v.詞性標記分組整理候選義項'
+  - 'observe: 比較名詞與動詞義代回句子後，主詞、謂語、受詞和搭配是否吻合，標記不合處'
+  - 'explain: 引用告示中的具體句法與語意線索，說明所選義項並排除只取第一義的解讀'
+  - 'transfer: 將方法轉到envelope和jar的新句，重新辨詞性及義項'
+  - 'record: 提交詞頭、詞性、初猜、證據、淘汰理由與不確定處'
+  visualizations:
+  - 原創seal詞條卡將拼字、詞性及候選義項分欄，避免混讀
+  - 英文例句與各義項並列，逐項提供可以定位的句法／語意線索
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-7-IV-1-I01
+    component: GuidedChoiceBlock
+    purpose: 按字母定位詞頭、辨詞性、以語境選義並用句子驗證
+    initialState:
+      mode: guided-choice
+      showAnswer: false
+      selectedEvidence: []
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 依字母序比較字頭並選擇正確排列
+    - 以句法線索判斷seal在句中的詞性
+    - 將候選義代回原句，指出支持和排除線索；錯誤後讀提示再試
+    visualRules:
+    - 初始不揭露答案；每題錯答提供與該題線索相關的重試提示
+    - 答對後才顯示正解及各候選義為何成立／不成立的解析
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-7-IV-1-I01
+      trigger: 忽略詞性或只取字典第一義，沒有把義項放回整句檢查
+      prompt: 先圈限定詞、謂語或受詞，再說明哪一個候選義能與句子各部分搭配。
+      expectedEvidence: 能指出句法位置及至少一項上下文線索，並排除不合的義項
+    feedback:
+      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
+      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "互動選項、提示及答案狀態可用鍵盤操作並以文字回報；題目和例句皆為本課原創。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "學生頁以本地lesson內容呈現正文及互動，遠端字典不可用時仍可用內嵌原創詞條卡完成學習。"
+  capTransfer:
+    questionType: 詞典查義／詞性辨識／上下文選義
+    stemConstraint: 使用未在例文出現的新句與多義目標字，需以句法及至少一項上下文線索判斷
+    requiredResponse: 記錄詞性、候選義、支持證據、排除理由及代回句子的結果
+    scoring: 詞性判斷正確 1、義項與上下文相符 1、理由有可定位證據 1
+  exitTicket:
+    prompt: 在新句中如何決定多義詞的詞性與意思？請指出一條句法線索及一條語意線索。
+    successCriteria:
+    - 區分詞性與詞典義項
+    - 用句法位置及上下文支持選義
+    - 代回整句確認語意通順
+  expressionExtension:
+    applicable: true
+    task: 為一個多義英文詞製作查義卡，列出句子、詞性、兩個候選義、支持線索和排除理由
+    constraint: 例句由學生自行選取；無法唯一判義時標記語境不足，不虛構確定答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 頁面顯示六段自編字典教學，content.sections與teaching.body標題、順序及正文一致。
+  - GuidedChoice初始不揭答案；四題覆蓋字母序、詞性、名詞多義及動詞查義，錯答有可操作提示、答對有逐項理由。
+  - 鍵盤可逐題作答；錯答後可重試，四題皆正確後有完成狀態。
+  - 320px、375px與768px視窗中題幹、選項和回饋不水平溢位。
+  - axe自動掃描沒有違規；不將自動掃描冒稱真人螢幕閱讀器審查。
+  - 封鎖外部網路後仍能閱讀本地正文、原創詞條卡並完成全部題目。
+  - fallback：遠端字典不可用時，顯示離線狀態並以本課內嵌seal詞條卡完成詞性、義項及上下文判讀；不得空白或假稱已查詢遠端字典。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 南一、康軒、翰林的實際來源定位、版本／冊次及可支持範圍均明確記錄；缺少出版社章節時不得冒稱已核讀
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 無泛用placeholder、錯配互動或只換單元名詞的教學正文
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.ctjhs.ntpc.edu.tw/uploads/1559373095295C5VYIkiS.pdf
+    locator: 課程綱要教師手冊印刷頁91–92／PDF頁102；定義依字母序查詞、辨識詞性縮寫與多義歧義，再依上下文選義
+    role: official-curriculum-source-of-truth
+  - url: https://www.yfms.tyc.edu.tw/uploads/1661134274040DrXahXahPtf.pdf
+    locator: 永豐國中公開課程計畫PDF pp.3–4；南一版七上與字典資源清單，屬校方版本／資源紀錄，非出版社章節
+    role: public-school-version-context
+  - url: https://www.tyjh.tyc.edu.tw/uploads/1597977439248ovOnpAiw.pdf
+    locator: 桃園國中公開課程計畫PDF pp.3–6；翰林版七上、7-Ⅳ-1及字典資源，未包含出版社章節教法
+    role: public-school-version-context
+  - url: https://www.msjh.tp.edu.tw/uploads/1722920307628qqQMRB3p.pdf
+    locator: 明生國中課程計畫PDF pp.1–2、95–103；康軒九年級B5 Lesson 4同字詞義閱讀脈絡，非7-Ⅳ-1七上字典課文
+    role: adjacent-publisher-version-context

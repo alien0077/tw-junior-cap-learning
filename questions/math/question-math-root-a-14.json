@@ -1,0 +1,87 @@
+{
+  "id": "question-math-root-a-14",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "若變數 x、y 滿足 5y−10=2x+6，且 x≠−3，下列哪個比例式必定成立？",
+  "options": [
+    {
+      "id": "A",
+      "text": "(y−2):(x+3)=2:5"
+    },
+    {
+      "id": "B",
+      "text": "y:x=2:5"
+    },
+    {
+      "id": "C",
+      "text": "(y+2):(x+3)=2:5"
+    },
+    {
+      "id": "D",
+      "text": "(y−2):(x−3)=2:5"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-a",
+    "kg-math-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "A",
+    "explanation": "原式整理為 5y−10=2x+6，亦即 5(y−2)=2(x+3)。由 x≠−3 可知 x+3 不為零，因此 (y−2)/(x+3)=2/5，選項 A 必定成立。不能忽略常數位移，直接判斷 y 與 x 成正比。"
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "sourceLocator": "國民中學教育階段學習內容；主題 A：代數",
+    "authoringNote": "依官方課綱、KG 與碧華國中公開數學原卷第2頁第14題的概念模式重新創作；採不同等式係數、常數、選項及答案，不複製原題、選項或答案。維持 draft 待 AI 內容 QA。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-root-a",
+  "solutionStrategy": "先把等式整理成兩個括號乘常數的形式，再辨認哪一對括號滿足固定倍數；最後檢查比例式分母是否可能為零。",
+  "solutionSteps": [
+    "將等式重寫為便於辨認的形式：5y−10=2x+6。左側提出 5 得 5(y−2)，右側提出 2 得 2(x+3)，因此 5(y−2)=2(x+3)。",
+    "兩側同除以 5，得到 y−2=(2/5)(x+3)；這指出位移後的 y−2 與 x+3 保持固定倍數 2/5。",
+    "把固定倍數寫成比：(y−2):(x+3)=2:5，所以 A 必定成立。",
+    "使用題目給的 x≠−3，保證 x+3 非零，比例式有定義。若 x=−3，原式會給 y=2，兩項同為零，不能把 0:0 寫成 2:5。",
+    "檢查干擾項：由原式可得 y=(2/5)x+16/5，含截距，因此 y:x 不固定；變更 y 或 x 的位移量也破壞固定倍數。只有 A 對所有允許的 x 成立。"
+  ],
+  "examPatternRefs": [
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級數學科試題卷",
+      "year": "114-2",
+      "subject": "math",
+      "locator": "校方附件「114-2-3-七年級數學試題卷.pdf」第2頁第14題",
+      "locatorLevel": "item",
+      "observedPattern": "由兩變數的一次關係重新整理，判讀經位移後的變數組合是否成正比；本題以新係數與新組合測試固定倍數關係。",
+      "pattern": "由兩變數的一次關係重新整理，判讀經位移後的變數組合是否成正比；本題以新係數與新組合測試固定倍數關係。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究計算、表格與情境判讀的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ]
+}

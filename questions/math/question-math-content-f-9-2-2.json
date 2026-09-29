@@ -2,23 +2,23 @@
   "id": "question-math-content-f-9-2-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "函數 y=-(x+2)^2+7 的圖形具有哪一項性質？",
+  "prompt": "二次函數 y＝−(x＋2)²＋5 的對稱軸與最大值分別為何？",
   "options": [
     {
       "id": "A",
-      "text": "開口向上且有最小值"
+      "text": "x＝2，最大值 5"
     },
     {
       "id": "B",
-      "text": "開口向下且有最大值"
+      "text": "x＝−2，最大值 5"
     },
     {
       "id": "C",
-      "text": "對稱軸為 x=2"
+      "text": "x＝−2，最小值 5"
     },
     {
       "id": "D",
-      "text": "頂點為 (2,7)"
+      "text": "x＝5，最大值 −2"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "二次項係數為負，圖形開口向下；頂點為 (-2,7)，因此有最大值 7。"
+    "explanation": "x＋2＝x−(−2)，所以對稱軸 x＝−2；二次項係數為負，開口向下，頂點 y 值 5 是最大值，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度第 2 學期第 1 次段考三年級數學科試題；題目頁／答案頁逐題核對後獨立改編，非原題重製。 來源題號：第 3 題改編",
-    "authoringNote": "原創題目來源界線 metadata 已補齊；內容與題型仍待第二輪 AI／Terra 複核，未據此宣稱真人或專家審定。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供二次函數頂點式、對稱軸、開口方向與極值判讀能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的二次函數圖形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-f-9-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-f-9-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "頂點式、頂點與對稱軸、開口方向、最大值／最小值與對稱點判讀",
+      "observedPattern": "公立學校公開數學試題常要求從頂點式讀出頂點與對稱軸，利用二次項係數正負判斷極值，並以代入或左右對稱點驗證圖形；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把括號改寫成 x−h，再用 a 的正負判定極值種類。",
+  "solutionSteps": [
+    "將 x＋2 看成 x−(−2)，得到 h＝−2。",
+    "對稱軸為 x＝−2。",
+    "確認二次項係數 a＝−1＜0。",
+    "開口向下，頂點 y＝5 是最大值。",
+    "選 B。"
+  ]
 }

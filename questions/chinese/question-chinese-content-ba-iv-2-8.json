@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ba-iv-2-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "段落以「也許、似乎、彷彿」等詞語描述人物猜測，表示敘述者的態度為何？",
+  "prompt": "只看到句子『她把一枚舊鈕扣放進盒底』，沒有上下文。哪個說法最符合證據界線？",
   "options": [
     {
       "id": "A",
-      "text": "保留不確定性"
+      "text": "可確定她正在整理祖母遺物"
     },
     {
       "id": "B",
-      "text": "提出精確數據"
+      "text": "可確定她與某人決裂"
     },
     {
       "id": "C",
-      "text": "完全否定事件"
+      "text": "只能確定她放置了鈕扣，其他情感與背景仍需上下文"
     },
     {
       "id": "D",
-      "text": "保證內容絕對正確"
+      "text": "可確定鈕扣具有神祕力量"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ba-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "這些詞語表示推測，避免把未確定內容說成事實。"
+    "value": "C",
+    "explanation": "句子只交代一個放置動作與物件位置，情感、人物關係和物件來源都沒有明示，不能任意補寫。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "描寫作用與效果；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究人物、景物、語句節奏、對照與證據界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫描寫作用題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文描寫與文本推論",
+      "observedPattern": "公立學校國文評量要求由感官細節、人物動作、語句節奏、景物對照與敘述焦點推論效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "景物、人物動作與語氣效果",
+      "observedPattern": "公立學校國文評量要求由感官細節、人物動作、語句節奏、景物對照與敘述焦點推論效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開客觀動作和讀者聯想到的故事，先寫能直接證明的內容。",
+  "solutionSteps": [
+    "記錄句子明確呈現的動作與位置。",
+    "列出祖母、決裂與神祕力量等都未出現的資訊。",
+    "C 正確保留推論限制。",
+    "A、B、D 都把聯想誤當成文本事實。",
+    "要求補一個能證明背景的前後句，再檢查判斷是否可升級。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

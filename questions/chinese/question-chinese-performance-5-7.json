@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-5-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "若文章只說「甲校三位學生喜歡戶外活動」，卻結論說「全國學生都喜歡戶外活動」，哪項判斷最合理？",
+  "prompt": "「風把整座田野翻成一頁頁綠色的書」的比喻主要帶來什麼效果？",
   "options": [
     {
       "id": "A",
-      "text": "證據範圍不足以支持結論範圍"
+      "text": "提供精確的風速數據"
     },
     {
       "id": "B",
-      "text": "結論一定正確"
+      "text": "把田野景象寫成可閱讀的畫面，突顯風與景物的動態感"
     },
     {
       "id": "C",
-      "text": "三位學生代表全國"
+      "text": "只說明作者不喜歡田野"
     },
     {
       "id": "D",
-      "text": "只要有數字就沒有問題"
+      "text": "證明田野真的有紙張"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "少數個案不能直接代表全國，需注意推論是否超出證據範圍。"
+    "value": "D",
+    "explanation": "把田野比作書頁，讓風翻動景色的畫面具體可感，帶出動態與想像，不是實測資料。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "閱讀證據範圍與推論；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究篇章骨架、段落功能、推論、圖表、跨文本、修辭與閱讀流程能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫閱讀表現題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀、主旨與證據",
+      "observedPattern": "公立學校國文評量要求掌握文章骨架、段落功能、推論程度、圖表比較、跨文本觀點、修辭效果與陌生文本解題流程；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章理解、圖表與推論",
+      "observedPattern": "公立學校國文評量要求掌握文章骨架、段落功能、推論程度、圖表比較、跨文本觀點、修辭效果與陌生文本解題流程；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先指出本體與喻體，再說明兩者共享的視覺、動態或情感特徵。",
+  "solutionSteps": [
+    "讀題定位：圈出「比喻效果」與段落功能、時間線、轉折、圖表指標、修辭或跨文本線索。",
+    "整理證據：把局部資訊放回全文或兩篇文本，比較主張、限制與語氣；本題核心是「把田野比作書頁，讓風翻動景色的畫面具體可感，帶出動態與想像，不是實測資料。」",
+    "核對正解：選項 D 能被明確文本證據支持，且沒有把有限推論擴大成必然。",
+    "排除誘答：檢查是否只抓一個細節、混淆總量與平均、忽略轉折，或把比喻當成字面事實。",
+    "回讀驗證：回到相關段落逐句核對，確認答案涵蓋題目要求的範圍與資訊層次。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

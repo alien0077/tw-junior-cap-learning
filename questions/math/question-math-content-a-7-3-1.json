@@ -2,41 +2,84 @@
   "id": "question-math-content-a-7-3-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "小芸原有一些貼紙，送出 9 張後剩 24 張。她原有幾張？",
+  "prompt": "解方程式 4x＋7＝31，x 為何？",
   "options": [
     {
       "id": "A",
-      "text": "15"
+      "text": "4"
     },
     {
       "id": "B",
-      "text": "27"
+      "text": "6"
     },
     {
       "id": "C",
-      "text": "216"
+      "text": "8"
     },
     {
       "id": "D",
-      "text": "33"
+      "text": "14"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-a-7-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "設原有 x 張，x－9＝24，所以 x＝33。"
+    "value": "B",
+    "explanation": "兩邊同減 7 得 4x＝24，再除以 4 得 x＝6，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究一元一次方程式列式、求解與應用能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供一元一次方程式解法與應用能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的方程式解法能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-7-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-math-content-a-7-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "一元一次方程式的移項、括號、分數與小數係數、未知數兩側及生活應用",
+      "observedPattern": "公立學校公開數學試題常以多步解方程、分配律、分數／小數係數和周長、費用情境考查等量推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "一元一次方程式的移項、括號、分數與小數係數、未知數兩側及生活應用",
+      "observedPattern": "公立學校公開數學試題常以多步解方程、分配律、分數／小數係數和周長、費用情境考查等量推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先移除常數，再除以未知數係數，最後代回驗算。",
+  "solutionSteps": [
+    "原式為 4x＋7＝31。",
+    "兩邊同減 7 得 4x＝24。",
+    "兩邊同除以 4。",
+    "得到 x＝6。",
+    "代回 4×6＋7＝31，選 B。"
+  ]
 }

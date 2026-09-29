@@ -2,23 +2,23 @@
   "id": "question-chinese-argument-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "哪一項最可能是把感受誤當證據？",
+  "prompt": "下列哪項最可能把個人感受誤當成足以支持普遍結論的證據？",
   "options": [
     {
       "id": "A",
-      "text": "我覺得這方法有效，所以所有人都適用"
+      "text": "研究記錄兩組結果並交代樣本數。"
     },
     {
       "id": "B",
-      "text": "研究記錄兩組結果"
+      "text": "觀察者說明測量方法。"
     },
     {
       "id": "C",
-      "text": "資料列出樣本數"
+      "text": "我覺得這方法有效，所以所有人都適用。"
     },
     {
       "id": "D",
-      "text": "觀察者說明測量方法"
+      "text": "資料列出調查日期與回收方式。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "個人感受不能直接推出普遍結論。"
+    "value": "C",
+    "explanation": "把『我感到精神較好』直接推成每個人都會如此，是把個人感受當成普遍證據，樣本與結論範圍不相稱。正確答案：C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-argument-10.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三筆公立學校公開國文試題中的主張、論據、樣本、反論、結論範圍與可檢驗性能力；本題改寫為全新語料。",
+    "authoringNote": "依官方課綱與單元 KG 獨立命題，使用原創語料與選項，未複製公校原題；題庫首輪AI內容校核已於2026-09-27更新，公開試題各筆來源仍須逐題確認定位與改寫界線，完成前維持draft；不進行Terra複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-argument-evidence-basics"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-27",
+  "lessonId": "lesson-chinese-argument-evidence-basics",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；只取議論文主張、論據與推論的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "議論文主張、論據與推論",
+      "observedPattern": "公立學校國文評量常要求辨識主張、理由與證據，並檢查樣本、關聯、反論、結論範圍及可檢驗性；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；只取證據品質、反論與結論範圍的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "證據品質、反論與結論範圍",
+      "observedPattern": "公立學校國文評量常要求辨識主張、理由與證據，並檢查樣本、關聯、反論、結論範圍及可檢驗性；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "辨識第一人稱感受，並檢查它是否被錯誤推廣到全體。",
+  "solutionSteps": [
+    "找出含第一人稱感受的選項，注意它是否直接跳到全體結論。",
+    "C 從『我覺得有效』跳成『所有人都適用』，中間沒有群體資料或檢驗方法。",
+    "A、B、D提供比較結果、測量方式或調查程序等可核對線索。",
+    "因此最符合把個人感受當普遍證據的是 C。",
+    "修正時應把結論限縮到個人經驗，或蒐集能代表目標群體的資料。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

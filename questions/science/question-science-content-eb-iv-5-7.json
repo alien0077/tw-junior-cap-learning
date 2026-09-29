@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-5-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月13日河川觀測站的觀察中，一個物體質量為 147 g、體積為 54 cm³，研究「Eb-Ⅳ-5：壓力與帕斯卡原理」時，其密度為何？",
+  "prompt": "液壓裝置中，大活塞面積是小活塞的 6 倍。若小活塞向下移動 12 cm，理想情況下大活塞的移動距離約為何？",
   "options": [
     {
       "id": "A",
-      "text": "201 g/cm³"
+      "text": "72 cm"
     },
     {
       "id": "B",
-      "text": "0.367347 g/cm³"
+      "text": "12 cm"
     },
     {
       "id": "C",
-      "text": "2.72222 g/cm³"
+      "text": "6 cm"
     },
     {
       "id": "D",
-      "text": "7938 g/cm³"
+      "text": "2 cm"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-5"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "密度＝質量÷體積＝147÷54＝2.72222 g/cm³。 本題對應 KG「Eb-Ⅳ-5：壓力與帕斯卡原理」。"
+    "value": "D",
+    "explanation": "D。液體近似不可壓縮，體積守恆 A1d1=A2d2；大活塞面積是 6 倍，因此位移約 12/6=2 cm。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題中的壓力、液體深度、帕斯卡原理、活塞力位移與安全限制能力；本題改寫為壓力與液壓原創情境。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-5"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-eb-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取壓力、受力面積、液體深度與壓力差的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "壓力、受力面積、液體深度與壓力差",
+      "observedPattern": "公開自然科評量常要求連結 p=F/A、受力面積、液體深度、壓力方向、帕斯卡原理、活塞位移與裝置限制；本題以全新壓力與液壓情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取帕斯卡原理、液壓裝置與資料判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "帕斯卡原理、液壓裝置與資料判讀",
+      "observedPattern": "公開自然科評量常要求連結 p=F/A、受力面積、液體深度、壓力方向、帕斯卡原理、活塞位移與裝置限制；本題以全新壓力與液壓情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取液體壓力、活塞力、位移與安全限制的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "液體壓力、活塞力、位移與安全限制",
+      "observedPattern": "公開自然科評量常要求連結 p=F/A、受力面積、液體深度、壓力方向、帕斯卡原理、活塞位移與裝置限制；本題以全新壓力與液壓情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用 A1d1=A2d2 連結面積比與位移比，不把力比當位移比。",
+  "solutionSteps": [
+    "圈出接觸面、垂直力、面積、液體深度、兩活塞面積與位移。",
+    "壓力題使用 p=F/A，液體題先比較同深度或深度差，液壓題使用壓力相等。",
+    "統一 N、m²、cm² 與位移單位，逐步代入並保留計算關係。",
+    "用體積守恆與能量觀點檢查力變大是否伴隨位移變小，排除壓力只向下或無條件製造能量的說法。",
+    "回查液體、氣泡、摩擦、漏液、孔高與安全條件，說明理想模型的適用限制。"
+  ]
 }

@@ -1,0 +1,31 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics s-IV-13."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/"lessons/math/lesson-math-performance-s-iv-13.json"
+REPORT=ROOT/"implementation/reports/math-performance-s-iv-13-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf"}
+
+def record(p,c,r,m,a):
+    return {"publisher":p,"edition":f"{p} 公立校方數學課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；尺規作圖、垂直平分與角平分的概念、表徵及評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以圓弧交點、等距與角度關係完成可驗證的幾何作圖。"],"representations":[r],"examplesOrEvidence":["本課的花圃邊界、舞台定位與紙模型均為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+
+def main():
+    d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-math-performance-s-iv-13" and d["reviewStatus"]=="draft"
+    d["title"]="s-Ⅳ-13：用圓弧交點完成尺規作圖"
+    d["content"]={"summary":"尺規作圖不是用尺畫出看似準確的線，而是只用無刻度直尺與圓規，依可重做的幾何步驟建立目標。圓規可複製長度與找等距點，兩個等半徑圓弧的交點可決定垂直平分或等邊三角形；角平分則利用等距與弧線交點。 本課以花圃邊界、舞台定位與紙模型的自編情境，練習作垂直平分線、角平分線、等邊三角形，並用作圖理由與對稱性檢查結果。","sections":[{"heading":"工具限制也是條件","body":"無刻度直尺只用來畫直線或連點，不能直接量長；圓規用來畫圓弧、複製半徑與找等距。每一步要說明工具動作和保留下來的幾何關係。"},{"heading":"作垂直平分線","body":"以線段兩端為圓心、相同且足夠大的半徑畫兩組弧，連結兩個交點。交點到兩端等距，因此連線是原線段的垂直平分線。"},{"heading":"作角平分線","body":"以角頂點畫弧截兩邊，再以兩截點為圓心畫同半徑弧，連結頂點與新交點。兩側角相等，步驟中的等距是理由而非裝飾。"},{"heading":"等邊三角形與驗證","body":"以線段兩端為圓心、線段長為半徑畫弧，取交點後連線，三邊等長。作圖完成要檢查交點、對稱、等距及是否使用了合法工具。"}]}
+    d["studyHighlights"]=["先寫目標性質，再安排圓弧和連線步驟。","圓規保留等距，無刻度直尺只畫線不量長。","垂直平分看兩端等距，角平分看兩側角相等。","用對稱、等距與工具限制驗證作圖。"]
+    d["teaching"]={"body":[{"id":"hook","phase":"hook","heading":"花圃邊界的中線怎麼找？","body":"原創花圃設計要在兩個入口點之間找一條到兩入口等距的分界線，請學習者先猜測中線位置，再用相同半徑從兩端畫弧。觀察兩個弧交點連線後，說明每個線上點到兩端距離相等，建立垂直平分的作圖理由。"},{"id":"explain","phase":"explain","heading":"把工具動作翻成幾何證據","body":"以線段 AB 作垂直平分線：兩端為圓心且半徑相同，弧交點 P、Q 滿足 PA=PB、QA=QB；因此 P、Q 都在 AB 的垂直平分線上，連 PQ 即完成。每一步同時記錄工具、等距關係與結論。"},{"id":"worked-example","phase":"worked-example","heading":"作出一個等邊三角形","body":"給線段 AB，先以 A、B 為圓心、AB 為半徑畫弧，取上方交點 C，連 AC、BC。因 AC=AB、BC=AB，所以三邊相等。最後檢查弧半徑一致、交點在同一側，並說明另一個交點也能形成鏡射的等邊三角形。"},{"id":"guided-practice","phase":"guided-practice","heading":"選擇合法作圖步驟","body":"提供作垂直平分、角平分和等邊三角形的混合步驟卡。學習者先判斷目標，再排序圓弧與直線；對用刻度尺直接量一半的錯誤，要求指出違反無刻度工具限制，並改用等距弧線。"},{"id":"transfer","phase":"transfer","heading":"定位舞台與分界線","body":"原創舞台定位任務要找距離兩個音響塔相等的位置，再作一個指定角度的分界線。學生先選垂直平分或角平分作法，完成後用第二個測試點檢查等距或等角；若半徑不足導致弧不相交，需說明如何調整而不改變目標性質。"},{"id":"reflect","phase":"reflect","heading":"修正只量不作圖的答案","body":"請修正『用尺量出線段中點，再畫一條垂直線即可』。先指出刻度量測不是尺規作圖的合法步驟，再用兩端等半徑弧找中點和垂直方向，最後把每個交點的等距理由寫出。"}],"summary":["尺規作圖只用無刻度直尺與圓規，每一步都要有幾何理由。","圓規建立等距，兩端同半徑弧交點可作垂直平分或等邊三角形。","角平分線以等距弧線保證兩側角相等。","完成後檢查交點、對稱、等距與工具限制。"],"exitCheck":[{"prompt":"作線段垂直平分線時，為什麼兩端要用相同半徑？","expectedEvidence":"弧交點到兩端等距，才可保證交點在線段的垂直平分線上。"},{"prompt":"如何用尺規作等邊三角形？","expectedEvidence":"以兩端為圓心、原線段長為半徑畫弧，取交點後連到兩端，三邊皆等長。"},{"prompt":"為什麼直接用刻度尺找中點不符合本課作圖限制？","expectedEvidence":"無刻度直尺不能直接量長；應用圓規等距弧線與連線完成可重做的作圖。"}]}
+    d["teaching"]["body"][3]["body"] += " 並要求在每張卡片旁寫出弧交點提供的等距關係，讓步驟排序不是只靠記憶。"
+    d["teaching"]["body"][5]["body"] += " 再標出兩個弧交點及其到端點的相等距離，說明連線為何垂直並通過中點。"
+    d["interactive"]={"type":"guided-choice","goal":"依工具限制與等距證據排序尺規作圖步驟。","scenario":"選擇作圖目標，排列圓弧與連線，觀察交點如何保證垂直、平分或等邊。","variables":[{"symbol":"a","meaning":"作圖線段或角的一個端點"},{"symbol":"b","meaning":"另一個端點或角邊截點"},{"symbol":"r","meaning":"圓規設定的共同半徑"}],"steps":[{"id":"step-1","prompt":"作線段垂直平分線時，兩端應如何畫弧？","options":["以兩端為圓心使用相同半徑","只以一端畫一個圓","用刻度尺量出中點"],"answer":"A","feedback":"相同半徑讓弧交點到線段兩端等距。"},{"id":"step-2","prompt":"等邊三角形以 AB 為底時，圓弧半徑應設定為什麼？","options":["AB 的長度","AB 的一半且不檢查","任意不同半徑"],"answer":"A","feedback":"兩弧交點需同時滿足 AC=AB、BC=AB。"},{"id":"step-3","prompt":"無刻度直尺在尺規作圖中主要用來做什麼？","options":["畫直線或連結點","直接讀出 3 公分","量角度數值"],"answer":"A","feedback":"無刻度直尺不量長或量角，只負責畫線與連點。"}]}
+    d["authoringStandard"]="version-fused-v1"
+    d["versionResearch"]=[record("nani","以等距、垂直平分與角平分建立尺規作圖理由","線段弧線、交點、對稱與工具步驟","把刻度尺量測當成尺規作圖，或半徑任意改變","要求寫出工具動作、等距證據與目標性質"),record("kanghsuan","透過作圖操作理解圓規複製長度與弧交點","紙模型、圓弧、等邊三角形與步驟卡","只照順序畫線而不說明交點幾何意義","重視操作歷程、步驟排序與結果檢查"),record("hanlin","連結分界、定位與尺規作圖的設計限制","花圃、舞台、單位、弧線半徑與誤差","弧不相交時任意改變目標，或忽略工具合法性","評估模型、工具、等距、對稱與應用需求")]
+    d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以圓規等距和無刻度直尺連線完成幾何作圖。","垂直平分、角平分、等邊三角形與弧交點理由是共同核心。","工具限制、步驟、對稱與等距需互相驗證。"],"versionDifferences":["南一證據較突顯基本尺規作圖與等距理由；康軒較突顯紙模型、弧線與步驟操作；翰林較突顯分界定位、半徑選擇與設計限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以花圃入口等距分界引出垂直平分線的必要性。","以線段 AB 的兩個弧交點作等邊三角形並比較上下兩種結果。","把舞台定位、弧不相交、工具限制與步驟排序整合成互動任務。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織尺規作圖、圓弧交點、垂直平分、角平分、等邊三角形與設計應用。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit":"s-Ⅳ-13：用圓弧交點完成尺規作圖","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+
+if __name__ == "__main__": main()

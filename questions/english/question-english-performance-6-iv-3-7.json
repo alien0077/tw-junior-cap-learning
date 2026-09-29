@@ -2,23 +2,23 @@
   "id": "question-english-performance-6-iv-3-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「6-Ⅳ-3／參與提升英語活動」task, what is the best way to prepare question 7?",
+  "prompt": "An English game station gives points for asking and answering five questions politely. Which plan follows the rules?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 6-Ⅳ-3／參與提升英語活動."
+      "text": "Ask one question five times without listening."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 6-Ⅳ-3／參與提升英語活動."
+      "text": "Take points without speaking English."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 6-Ⅳ-3／參與提升英語活動."
+      "text": "Ask five questions, answer each one, and use polite phrases."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 6-Ⅳ-3／參與提升英語活動."
+      "text": "Answer before reading the questions."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 6-Ⅳ-3／參與提升英語活動, question 7."
+    "value": "C",
+    "explanation": "答案 C：問五題並回答每題，互動時使用禮貌語句。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "參考三份公立學校英文評量中的活動對話理解及情境回應題型；不取用原題文字、角色或答案。",
+    "authoringNote": "依官方課綱與本單元參與英語活動的能力獨立創作題幹、選項、答案與詳解；公校試題僅作題型研究，題目保持 draft 待後續內容與版權 QA。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-6-iv-3"
+  "updatedAt": "2026-09-27",
+  "lessonId": "lesson-english-performance-6-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學114學年度第2學期第1次段考三年級英文科",
+      "year": "114-2",
+      "subject": "english",
+      "locator": "PDF第1頁聽力第6至15題：基本問答與言談理解",
+      "observedPattern": "聽辨活動對話、抓取目的及依聽到的條件作答；只參考英語活動理解型態，題幹與情境獨立創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "page"
+    },
+    {
+      "url": "https://jweb.kl.edu.tw/userfiles/1389/document/40425_%E5%85%AB%E5%B9%B4%E7%B4%9A1%E6%AE%B5%E8%8B%B1%E6%96%87.pdf",
+      "title": "基隆市立武崙國中111學年度第2學期八年級第1次段考英文科",
+      "year": "111-2",
+      "subject": "english",
+      "locator": "聽力測驗（二）基本問答第6至8題及言談理解部分",
+      "observedPattern": "公開試題使用情境對話檢查訊息理解與適切反應；本題另寫活動規則、完成證據與回饋情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%80%E5%B9%B4%E7%B4%9A-%E8%8B%B1%E8%AA%9E.pdf",
+      "title": "高雄市立國昌國民中學110學年度第1學期七年級英文科第1次段考",
+      "year": "110-1",
+      "subject": "english",
+      "locator": "PDF第2頁第21至25題對話回應；第3頁第32至33題校園對話理解",
+      "observedPattern": "對話回應／校園交談題型可研究角色互動與訊息銜接；不使用原題文、角色或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "page"
+    }
+  ],
+  "solutionStrategy": "用公告中的數量、雙向互動與語用限制逐項核對計畫。",
+  "solutionSteps": [
+    "把得分規則轉成可勾選的三項：五個問題、逐一回答、禮貌用語。",
+    "判斷計畫是否讓兩位參與者都有提問與回答回合。",
+    "對照 polite phrases，確認用語符合活動社交規範。",
+    "只問一題、拿分不說英語或沒讀題都漏掉規則。",
+    "答案 C：問五題並回答每題，互動時使用禮貌語句。"
+  ]
 }

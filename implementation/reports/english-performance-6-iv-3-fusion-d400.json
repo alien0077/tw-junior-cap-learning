@@ -1,0 +1,38 @@
+{
+  "asOf": "2026-09-28",
+  "unit": "lesson-english-performance-6-iv-3",
+  "scope": "repair the unregistered generic lesson and incorrect source claims; leave all other manuscripts and question records unchanged",
+  "priorManuscript": {
+    "before": "six generic filler sections, no learner-facing interaction, full-lesson-v1 label, and three broad/unverified publisher-source claims",
+    "after": "six unit-specific authored sections, six corresponding learner-visible section headings, four-step guided-choice activity, explicit source limits, fusionRecord, versionResearch; lesson remains draft"
+  },
+  "curriculumBasis": {
+    "officialIndicator": "6-Ⅳ-3: 樂於參與有助提升英語能力的活動",
+    "publicExampleScope": "Official curriculum manual lists English camp, singing, reading aloud, speeches, paragraph writing, and readers theatre as examples; this lesson independently designs a small-goal / artifact / feedback / retry / transfer learning loop."
+  },
+  "publisherEvidenceBoundary": {
+    "hanlin": "School plan cover identifies Hanlin English volumes 1-2; this review did not locate a 6-IV-3-specific instructional sequence, so not treated as lesson-method evidence.",
+    "kanghsuan": "Linked county platform PDF's relevant subject/version and unit locator were not verified; retained as an unconfirmed search lead, not evidence.",
+    "nani": "Linked county platform PDF's relevant subject/version and unit locator were not verified; retained as an unconfirmed search lead, not evidence.",
+    "claim": "No claim of three-publisher chapter comparison or publisher-authored activity method."
+  },
+  "implementation": [
+    "Changed authoring standard from full-lesson-v1 to version-fused-v1 and retained draft status.",
+    "Replaced unrelated LanguageTimelineBlock spec with the page's actual GuidedChoiceBlock; updated goals, misconceptions, flow, transfer, accessibility and tests.",
+    "Added targeted Node regression and Playwright test; registered both package commands and added Node regression to pretest.",
+    "Aligned content.sections headings with teaching.body headings after browser testing revealed duplicate student-page content."
+  ],
+  "verification": {
+    "targetRegression": "PASS: npm run test:english:6-iv-3",
+    "fullNpmTest": "PASS; includes new D-400 regression in pretest and full workbench traversal 1,027/1,027",
+    "lessonSchema": "PASS: 1,056 checked, 0 failed",
+    "dataValidation": "PASS: 14,511 JSON, 13,114 IDs, 1,032 KG; all lesson/question statuses draft",
+    "implementationSpecs": "PASS: 1,027 specs, 0 errors, 12 eligible, 1,015 pending",
+    "siteIndex": "PASS: 1,052 lessons, 10,526 question paths, 40 mapping sets",
+    "browser": "PASS: six visible sections, four guided choices, keyboard wrong retry/correct response, axe 0 violations/0 incomplete, 320/375/768 widths without overflow, one external request blocked, 0 page errors",
+    "publicExamLedger": "Reused D-399 live verification: 10,566/10,566 recorded, pending 0; semantics 23,141 refs/0 flagged. This unit changed no question data."
+  },
+  "manuscriptInventory": "734/791 (92.79%; presence only; 57 remain; learning-content 583/583; learning-performance 151/208)",
+  "subtasks": "none",
+  "commitPush": "not performed; full objective remains incomplete"
+}

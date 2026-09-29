@@ -2,7 +2,7 @@
   "id": "question-math-performance-s-iv-8-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "在 30°−60°−90° 三角形中，若最短邊（對 30°）長 5 公分，斜邊長是多少？",
+  "prompt": "45°-45°-90° 三角形的斜邊長為 10√2 公分，則每一股長多少？",
   "options": [
     {
       "id": "A",
@@ -10,15 +10,15 @@
     },
     {
       "id": "B",
-      "text": "5√3 公分"
-    },
-    {
-      "id": "C",
       "text": "10 公分"
     },
     {
+      "id": "C",
+      "text": "10√2 公分"
+    },
+    {
       "id": "D",
-      "text": "15 公分"
+      "text": "20 公分"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "30°−60°−90° 三角形中，斜邊是最短邊的 2 倍，所以為 2×5＝10 公分。"
+    "value": "B",
+    "explanation": "45°-45°-90° 三角形的斜邊=股長×√2，因此股長=(10√2)÷√2=10 公分，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考特殊三角形、特殊四邊形與正多邊形題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供特殊三角形、幾何形體與面積角度能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的幾何綜合方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-8"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "特殊直角三角形、正方形對角線、正多邊形角度、菱形與箏形面積、等腰梯形與正三角形",
+      "observedPattern": "公開數學評量常把特殊三角形比例、特殊四邊形對角線面積、等腰梯形角性質與正多邊形角度放在綜合判讀中；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "特殊直角三角形、正方形對角線、正多邊形角度、菱形與箏形面積、等腰梯形與正三角形",
+      "observedPattern": "公開數學評量常把特殊三角形比例、特殊四邊形對角線面積、等腰梯形角性質與正多邊形角度放在綜合判讀中；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "使用等腰直角三角形斜邊與股的固定倍率，除去 √2。",
+  "solutionSteps": [
+    "設每股長為 x。",
+    "斜邊關係為 x√2=10√2。",
+    "兩邊同除以 √2。",
+    "得到 x=10 公分。",
+    "所以選 B。"
+  ]
 }

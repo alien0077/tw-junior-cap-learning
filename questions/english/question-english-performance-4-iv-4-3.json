@@ -2,23 +2,23 @@
   "id": "question-english-performance-4-iv-4-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「4-Ⅳ-4／填簡單表格」notice for the town museum, item 3: “Room 204 is closed today.” What does it tell people?",
+  "prompt": "A club form says: Applicant—Evan; Club—Chess; Meeting—Friday; Room—204. Where will Evan meet the club?",
   "options": [
     {
       "id": "A",
-      "text": "For item 3 in the 4-Ⅳ-4／填簡單表格 notice, Room 204 cannot be used today."
+      "text": "Chess"
     },
     {
       "id": "B",
-      "text": "For item 3 in the 4-Ⅳ-4／填簡單表格 notice, Room 204 opens at midnight."
+      "text": "Evan"
     },
     {
       "id": "C",
-      "text": "For item 3 in the 4-Ⅳ-4／填簡單表格 notice, Room 204 is the bus stop."
+      "text": "Friday"
     },
     {
       "id": "D",
-      "text": "For item 3 in the 4-Ⅳ-4／填簡單表格 notice, Room 204 is outside the building."
+      "text": "Room 204"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 4-Ⅳ-4／填簡單表格, question 3."
+    "value": "D",
+    "explanation": "The question asks for the meeting place. Room 204 is the location; Friday gives the day, Chess names the club, and Evan is the applicant."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.chhs.tp.edu.tw/uploads/1612148562952u1jdsAwR.pdf",
+    "sourceLocator": "PDF第2頁第31至32題：依社團對話與報名表資訊判斷加入方式、截止日及活動安排。",
+    "authoringNote": "依官方課綱知識節點及公立國中公開英文表格／表單題的資料定位能力方向自行創作；未複製原卷內容。仍待完整內容與授權界線複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-4-iv-4"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-4-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.chhs.tp.edu.tw/uploads/1657612547412Wif0qWRZ.pdf",
+      "title": "臺北市立景興國中110學年度第2學期七年級第2次定期評量英文科試題",
+      "year": "110-2",
+      "locator": "PDF第2頁第31至33題：閱讀兩份原創回饋表，按欄位擷取偏好、同行者與營業資訊。",
+      "observedPattern": "題目先指定表單欄位，再要求從對應列／欄或附註找出資料；本題採全新人物、數值與表格。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.csjh.kh.edu.tw/teach/exam/107%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83/%E8%8B%B1%E6%96%87/%E4%B8%80%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立中山國中107學年度第2學期第3次段考一年級英文科試題",
+      "year": "107-2",
+      "locator": "PDF第6頁第45至48題：閱讀雜誌訂閱表與訂戶欄位，判讀期數、價格、年齡、職業、電話及選項。",
+      "observedPattern": "將勾選項目、欄位資料與表格旁的說明合併核對；本題改用不同表單用途與數值。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.chhs.tp.edu.tw/uploads/1612148562952u1jdsAwR.pdf",
+      "title": "臺北市立景興國中109學年度第1學期八年級第2次定期評量英文科試題",
+      "year": "109-1",
+      "locator": "PDF第2頁第31至32題：依社團對話與報名表資訊判斷加入方式、截止日及活動安排。",
+      "observedPattern": "表格閱讀需分清表內明列事實與對話指示，並依問題要求核對欄位或期限；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把 where 對應到地點欄，再把 day、club 和 person 等近似線索排除。",
+  "solutionSteps": [
+    "辨認疑問詞 where：要找地點。",
+    "查看表單的 Meeting 與 Room 欄，確認哪欄回答地點。",
+    "Room 欄填的是 204。",
+    "Friday 是日期／星期，Chess 是社團，Evan 是姓名。",
+    "選 D，保留 Room 204 的完整地點資訊。"
+  ]
 }

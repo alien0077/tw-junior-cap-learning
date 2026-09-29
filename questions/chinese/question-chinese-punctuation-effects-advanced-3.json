@@ -2,41 +2,76 @@
   "id": "question-chinese-punctuation-effects-advanced-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "冒號後常引出？",
+  "prompt": "「研究結論只有一項：樣本數不足，不能推論全校。」冒號後的內容主要是？",
   "options": [
     {
       "id": "A",
-      "text": "說明、列舉或引文"
+      "text": "新的問句"
     },
     {
       "id": "B",
-      "text": "完全無關內容"
+      "text": "對前面『一項』的具體說明"
     },
     {
       "id": "C",
-      "text": "另一頁碼"
+      "text": "三個並列物品"
     },
     {
       "id": "D",
-      "text": "作者簡介"
+      "text": "作者姓名註記"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ac-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "依本單元的觀察線索與語文功能判斷；其他選項不符合題幹條件。"
+    "value": "C",
+    "explanation": "冒號把總說『只有一項』與具體結論連接，後句是前句的內容說明。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-punctuation-effects-advanced-3.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究進階標點、語氣變化、分句層次與修訂驗證能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫進階標點題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-punctuation-effects-advanced"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-punctuation-effects-advanced",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "標點、語氣與句讀",
+      "observedPattern": "公立學校國文評量要求依上下文、語氣與分句關係安排標點，並判斷標點改動造成的語意變化；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "標點辨析、語氣與閱讀",
+      "observedPattern": "公立學校國文評量要求依上下文、語氣與分句關係安排標點，並判斷標點改動造成的語意變化；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看冒號前是否有總說或提示語，再確認後面是解釋、列舉或引用。",
+  "solutionSteps": [
+    "讀題定位：圈出「冒號層次」與標點前後的分句、語氣、層次或例外條件。",
+    "比較語意：先把標點拿掉或改成另一符號，觀察預期回應與論述關係；本題核心是「冒號把總說『只有一項』與具體結論連接，後句是前句的內容說明。」",
+    "核對正解：選項 C 能具體說明標點造成的語氣、句界或篇章層次。",
+    "排除誘答：檢查是否只按符號外形、混淆列舉與說明，或把語氣效果誤當成內容證據。",
+    "回讀驗證：朗讀並用白話重述句子，確認標點安排讓讀者能正確掌握意思與下一步行動。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

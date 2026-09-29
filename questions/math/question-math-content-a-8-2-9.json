@@ -2,23 +2,23 @@
   "id": "question-math-content-a-8-2-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "將 5x²－7 寫成含有 x 項係數為 0 的形式，應為何？",
+  "prompt": "將多項式 3x⁴−2x+6 改寫成升冪排列，哪個選項正確？",
   "options": [
     {
       "id": "A",
-      "text": "5x²＋7x"
+      "text": "6−2x+3x⁴"
     },
     {
       "id": "B",
-      "text": "5x－7"
+      "text": "3x⁴−2x+6"
     },
     {
       "id": "C",
-      "text": "0x²＋5x－7"
+      "text": "6+2x−3x⁴"
     },
     {
       "id": "D",
-      "text": "5x²＋0x－7"
+      "text": "−2x+6+3x⁴"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "缺少的 x 項可寫成 0x，故為 5x²＋0x－7。"
+    "value": "A",
+    "explanation": "升冪依指數由小到大排列：常數項指數為0、−2x為一次項、3x⁴為四次項，因此為 6−2x+3x⁴。B 是降冪；C 改了符號；D 沒有按次數遞增排列。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究多項式項、係數、次數與代入能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://cdn.store-assets.com/s/1339278/f/12631614.pdf",
+    "sourceLocator": "新北市立崇林國中110學年度第一學期八年級數學科第一次定期評量試卷，填充題第3題：將多項式按升冪排列；臺中市立北新國中數學科八年級補考試題，第28題：判斷多項式是否為升冪排列；基隆市立中山高中109學年度第一學期國中部二年級第一次段考數學科試題卷，第8題：判斷多項式項次排列方向",
+    "authoringNote": "本題僅改寫公立學校公開考卷所呈現的升冪排序概念任務；題幹、式子、選項、答案與逐步解法均為原創。publisher textbook fusion、Terra及最終發布QA尚未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-a-8-2",
+  "examPatternRefs": [
+    {
+      "url": "https://cdn.store-assets.com/s/1339278/f/12631614.pdf",
+      "title": "新北市立崇林國中110學年度第一學期八年級數學科第一次定期評量試卷",
+      "year": "110",
+      "subject": "math",
+      "locator": "填充題第3題：將多項式按升冪排列",
+      "observedPattern": "僅參考校方公開試題的能力面向與作答任務；題幹、數值、選項、答案與解法均為本專案原創，不重製來源文字、數據、選項、圖像或解析。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193506/get-file/6204ac4530ab0a5e342ecfe5.pdf",
+      "title": "臺中市立北新國中數學科八年級補考試題",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "第28題：判斷多項式是否為升冪排列",
+      "observedPattern": "僅參考校方公開試題的能力面向與作答任務；題幹、數值、選項、答案與解法均為本專案原創，不重製來源文字、數據、選項、圖像或解析。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://csjh.kl.edu.tw/books/file/65/109-1-%E5%9C%8B%E4%BA%8C%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E6%95%B8%E5%AD%B8%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "基隆市立中山高中109學年度第一學期國中部二年級第一次段考數學科試題卷",
+      "year": "109",
+      "subject": "math",
+      "locator": "第8題：判斷多項式項次排列方向",
+      "observedPattern": "僅參考校方公開試題的能力面向與作答任務；題幹、數值、選項、答案與解法均為本專案原創，不重製來源文字、數據、選項、圖像或解析。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先為每項標出指數（常數為0），再按由小到大排列；最後逐項檢查符號、係數和原項完整保留。",
+  "solutionSteps": [
+    "拆出三項：3x⁴、−2x、+6，保留各自符號。",
+    "標記指數：3x⁴ 為4次，−2x 為1次，+6 為0次。",
+    "升冪由小到大，因此順序是常數、一次項、四次項。",
+    "抄回原係數和正負號，得到 6−2x+3x⁴。",
+    "核對三項均出現且符號未變，選 A。"
+  ]
 }

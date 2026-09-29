@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-iv-1-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀一份主張『植物放音樂會長得更快』的文章時，哪種做法最理性？",
+  "prompt": "下列哪句最適合放在客觀說明段落的開頭？",
   "options": [
     {
       "id": "A",
-      "text": "只因標題有趣就接受結論"
+      "text": "本校上月調查三個年級的午餐剩食量，結果顯示七年級平均每人每日剩食較高"
     },
     {
       "id": "B",
-      "text": "只看作者是否有名"
+      "text": "我們的校園真的糟透了"
     },
     {
       "id": "C",
-      "text": "把一次觀察當成適用所有植物"
+      "text": "大家都知道剩食很可怕"
     },
     {
       "id": "D",
-      "text": "檢查實驗組、對照組、測量期間與數據"
+      "text": "我覺得這件事令人難過"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "檢查研究設計與資料，才能判斷主張是否有足夠證據。"
+    "value": "B",
+    "explanation": "B 交代調查範圍、時間、對象與初步結果，能讓後續說明有清楚資料起點。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究邏輯、客觀、理性說明能力方向（理性判讀研究主張）；另以官方語文領域課綱核對 Bc-Ⅳ-1（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究觀察、定義、因果證據、外推與問題解決。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫邏輯客觀理性說明題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文資料、推論與客觀表述",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "因果證據、定義與理性說明",
+      "observedPattern": "公立學校國文評量要求區分觀察與推論、定義範圍、因果證據與可檢查的理性主張；本題使用全新校園與公共議題情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "檢查開頭是否先交代資料來源、範圍和可核對結果，而非先下情緒判斷。",
+  "solutionSteps": [
+    "找出 B 的時間、年級與測量對象。",
+    "確認『平均每人每日』提供比較單位。",
+    "注意結果是有限範圍，不是全校所有人的絕對結論。",
+    "B 最適合引導客觀說明。",
+    "補上調查方法或樣本數，進一步提高可檢查性。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

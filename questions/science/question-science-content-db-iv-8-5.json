@@ -2,41 +2,84 @@
   "id": "question-science-content-db-iv-8-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年4月8日河川觀測站的觀察中，連續觀察「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」2 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "下列哪項最能區分相關與因果？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」時只依樣本的顏色（未記錄7天的時間與條件）"
+      "text": "看到有樹區較涼後，還要控制地表材質、日照、風速並重複比較"
     },
     {
       "id": "B",
-      "text": "連續7天研究「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」並記錄到樣本穩定進行物質交換"
+      "text": "只要兩者一起變化就確定因果"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」時只依樣本的名稱推測，不進行觀察"
+      "text": "只看一張校園照片"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」時只觀察一次外形，便排除所有其他證據"
+      "text": "把所有未測量因素當成不存在"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-8"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」。"
+    "value": "A",
+    "explanation": "A 描述以配對測點控制材質、日照和風速並重複量測，讓樹蔭成為主要比較差異。B 把共變誤當因果，C 缺少量測，D 則把未控制因素當成不存在。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1660183128914WHF2n4Sp.pdf",
+      "title": "臺北市立內湖國中110學年度第二學期七年級第三次生物段考",
+      "year": "110-2",
+      "subject": "science",
+      "locator": "紙本第4頁／PDF第4頁，第39題",
+      "locatorLevel": "item",
+      "observedPattern": "用等面積植物盆、相同土壤與給水量測試覆蓋度對出流水混濁的影響；改寫為辨別相關與因果。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "植物、環境變因、資料判讀與控制條件",
+      "observedPattern": "只取公立校方公開試題的環境探究能力方向，重寫植物分布情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "植物分布、測量設計、環境限制",
+      "observedPattern": "只取公開資料題的能力模式，重新設計校園測量。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1660183128914WHF2n4Sp.pdf",
+    "sourceLocator": "臺北市立內湖國中110-2七年級生物，第4頁第39題；只借用題型與能力結構。",
+    "authoringNote": "題幹、選項、答案、解析與教學步驟均依 Db-Ⅳ-8 獨立原創；只參考公立學校公開試題的實驗比較、機制解釋或環境評估能力，不重製原卷內容。本紀錄是首輪 AI 檢查，完整教材、三版本融合、版權及發布審查仍待完成。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-8"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-8",
+  "solutionStrategy": "因果判斷看比較設計，不看兩項指標是否一起變化；找出操弄的覆蓋度、固定條件、結果量測和重複次數。",
+  "solutionSteps": [
+    "先把『有樹較涼』標成觀察到的相關，而非已證實的因果。",
+    "列出共同影響樹蔭和溫度的因素，例如地面材質、建築遮蔽、測量時段與風。",
+    "選擇條件相近的成對地點，明確把遮蔭狀態當作比較因素。",
+    "用同一校正過的儀器反覆量測，記錄每次差值和天氣而不是只留平均值。",
+    "A 提供控制和重複比較；即使如此，結論也只支持這些場址與觀測條件。"
+  ]
 }

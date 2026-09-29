@@ -2,41 +2,84 @@
   "id": "question-math-performance-n-iv-2-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "計算 (－2)³ 的值為何？",
+  "prompt": "清晨氣溫為 -4°C，夜間比清晨低 7°C，夜間氣溫為何？",
   "options": [
     {
       "id": "A",
-      "text": "－8"
+      "text": "-11°C"
     },
     {
       "id": "B",
-      "text": "－6"
+      "text": "-3°C"
     },
     {
       "id": "C",
-      "text": "6"
+      "text": "3°C"
     },
     {
       "id": "D",
-      "text": "8"
+      "text": "11°C"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-n-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "(－2)³＝(－2)×(－2)×(－2)＝4×(－2)＝－8。"
+    "explanation": "夜間比 -4°C 再低 7°C，計算 -4-7=-11°C，正確答案為 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考負數數線、整數四則、絕對值、排序與溫度情境題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "負數數線與四則運算單元實質改寫；已重新計算整數加減乘除、絕對值、數線比較、排序與溫度情境，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供負數與四則運算能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數線與負數方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "負數數線方向、絕對值、正負數四則、運算順序、分數與生活溫度情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把負數放入數線、溫度、收支或混合運算情境，要求判斷方向、符號與運算順序；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "負數數線方向、絕對值、正負數四則、運算順序、分數與生活溫度情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把負數放入數線、溫度、收支或混合運算情境，要求判斷方向、符號與運算順序；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "負數數線方向、絕對值、正負數四則、運算順序、分數與生活溫度情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把負數放入數線、溫度、收支或混合運算情境，要求判斷方向、符號與運算順序；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "『降低』代表在數線向左移，應以減法表示。",
+  "solutionSteps": [
+    "起始溫度是 -4°C。",
+    "降低 7°C 表示減去 7。",
+    "列式 -4-7。",
+    "計算得到 -11。",
+    "所以選 A。"
+  ]
 }

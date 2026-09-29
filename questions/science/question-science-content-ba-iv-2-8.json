@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-iv-2-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月16日學校研究社的觀察中，水中射向鏡面時，光線與鏡面法線的入射角為 50°，研究「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」時，反射角為何？",
+  "prompt": "種子萌發時周圍溫度略升高，可能支持哪項解釋？",
   "options": [
     {
       "id": "A",
-      "text": "40°（「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中把入射角誤當折射角）"
+      "text": "種子呼吸作用釋放的部分能量以熱形式散出"
     },
     {
       "id": "B",
-      "text": "50°（水中射向鏡面）"
+      "text": "種子利用熱能製造光合作用的光"
     },
     {
       "id": "C",
-      "text": "100°（「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中把入射角加倍）"
+      "text": "所有化學能都消失成零"
     },
     {
       "id": "D",
-      "text": "130°（「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中以平角計算）"
+      "text": "種子停止分解儲存的有機物"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "反射定律指出反射角等於入射角，因此為 50°。 本題對應 KG「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」。"
+    "value": "A",
+    "explanation": "萌發需要大量呼吸作用分解儲存養分，釋放的部分能量以熱散出，可能使溫度略升高，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究光合作用原料與產物、葉綠體、實驗證據、呼吸作用及能量轉換能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的光合作用、呼吸作用與能量證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "光合作用、呼吸作用、能量轉換與實驗資料判讀",
+      "pattern": "取由反應物、產物、光照條件與能量路徑推論生命作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由反應物、產物、光照條件與能量路徑推論生命作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把溫度變化連回能量去向，並檢查萌發時的生理活動是否增加。",
+  "solutionSteps": [
+    "確認種子萌發需能量進行生長。",
+    "萌發初期尚未主要依靠葉片光合作用。",
+    "種子分解儲存的有機物進行呼吸作用。",
+    "部分釋放能量以熱形式出現。",
+    "因此選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -1,0 +1,74 @@
+{
+  "reportId": "a7-1-three-source-substantive-fusion-d339",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-1",
+  "classification": "source-informed-original-fusion-draft-and-runtime-qa-passed; full-publisher-review-open",
+  "sourceReadings": [
+    {
+      "publisherLabel": "Nani",
+      "source": "https://www.junyiacademy.org/new-video/3ohHLO2PpZA?parent-topic-id=k-m7a-c03-1",
+      "materialType": "public course-resource index, not Nani textbook prose",
+      "locator": "七上3-1 resource titles for one-variable expressions, distributive property, like terms, and checking operations",
+      "readFinding": "The index exposes a sequence of distinct concept/resource nodes from expression terminology and operations through like-term simplification and checking. Individual videos were not all watched; no claim is made about their full instructional language or examples.",
+      "fusionEffect": "The original lesson separates symbol/quantity interpretation, structural classification, operation-law justification, and numerical checking rather than claiming the index itself teaches that exact sequence.",
+      "rightsAndAuthenticity": "Platform-aligned Nani labeling; not publisher-authenticated textbook content. No video, exercise, wording, or answer reproduced."
+    },
+    {
+      "publisherLabel": "Kanghsuan",
+      "source": "https://www.scribd.com/document/790615966/%E5%BA%B7%E8%BB%92%E7%89%88%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E5%85%AD%E5%8D%87%E4%B8%83%E5%85%88%E4%BF%AE%E8%AC%9B%E7%BE%A9-%E5%AD%B8%E7%94%A8",
+      "materialType": "third-party shared, Kanghsuan-labeled transition handout excerpt",
+      "locator": "Readable excerpt around pp.39-43: letters as number placeholders, substitution/evaluation, context-to-expression; equality/solving begins in the later boundary pages.",
+      "readFinding": "The readable portion supports a concrete-to-symbol and symbol-to-value bridge; it does not establish the publisher's full chapter treatment of like terms or simplification.",
+      "fusionEffect": "The lesson begins with units and variable/fixed quantities, then uses bracketed negative substitution and keeps equation solving outside A-7-1.",
+      "rightsAndAuthenticity": "Third-party Scribd upload, uploader authority, exact edition, and reuse rights unverified; no original tasks, wording, answers, or layout copied."
+    },
+    {
+      "publisherLabel": "Hanlin",
+      "source": "https://www.scribd.com/document/831294508/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E4%B8%83%E4%B8%8A%E8%AA%B2%E6%9C%AC",
+      "materialType": "third-party OCR/share labeled as Hanlin Grade 7 textbook",
+      "locator": "Searchable excerpt approx. pp.151-166: symbol shorthand and substitution, one-variable expressions/like terms, distributive property/parentheses, and summary.",
+      "readFinding": "The excerpt makes expression notation, evaluation, like-term simplification, and distribution distinct sub-concepts before later equation-solving content; a separate official Hanlin 1A/3-1 index corroborates chapter/resource location only.",
+      "fusionEffect": "The visible original teaching is designed as quantity/units -> notation distinctions -> like-term criterion -> operation-law steps -> multi-input equivalence checking; its original library-cost transfer and examples are not taken from the source.",
+      "rightsAndAuthenticity": "Third-party share marked All Rights Reserved; authenticity, uploader authority, and permission unverified. No source exercise, answer, wording, figure, or page design copied."
+    }
+  ],
+  "sourceToVisibleSynthesis": [
+    {
+      "evidence": "Nani-aligned resource index separates expression, distributive, like-term, and operation-check resources.",
+      "originalLessonDecision": "Students first interpret variable/coefficients/constants with units; later justify rearrangement, distribution, and like-term combination.",
+      "visibleLocations": ["content.sections[0]", "content.sections[2]", "content.sections[3]", "teaching.body[1]", "teaching.body[4]"]
+    },
+    {
+      "evidence": "Kanghsuan-labeled transition excerpt moves from letter-as-number to substitution and contextual expressions, then reaches equality/solving at the boundary.",
+      "originalLessonDecision": "Use bracketed negative-value substitution and context-to-expression modeling; reserve solving equations for later scope.",
+      "visibleLocations": ["content.sections[1]", "content.sections[4]", "teaching.body[2]", "teaching.body[5]"]
+    },
+    {
+      "evidence": "Hanlin-labeled excerpt separates notation/value, like terms, distribution/parentheses, and chapter synthesis.",
+      "originalLessonDecision": "Make structural classification precede law-based simplification, then use several values as error-detection evidence without treating finite trials as proof.",
+      "visibleLocations": ["content.sections[2]", "content.sections[3]", "content.sections[5]", "simulation.learningDesign.steps"]
+    }
+  ],
+  "runtimeChange": {
+    "before": "Lesson claimed ticket icons, draggable like-term tags, synchronized graph, and other outputs not implemented by its math-algebra-balance renderer.",
+    "after": "Dedicated math-expression-lab with an x slider, live original/reduced expression outputs for 3x+2+5x-7 and 8x-5, a non-interactive text table at x=-2,0,3, four lesson-specific investigation steps, and keyboard focus restoration.",
+    "arithmetic": "At x=-2 both expressions yield -21; at 0 both yield -5; at 3 both yield 19. The UI and lesson explicitly say finite checks detect errors but do not replace an operation-law justification."
+  },
+  "verification": {
+    "targetedRegression": "PASS: npm run test:math:a7-1; checks source tiers/rights, six visible original lesson sections, fusion decisions, outputs, static table, schema engine type, accessible slider, and focus retention.",
+    "fullNpmTest": "PASS: npm test; full workbench bundle traversal 1,027/1,027.",
+    "dataValidation": "PASS after report creation: scripts/validate_data.py; 14,462 JSON, 13,112 IDs, 1,032 KG nodes; lesson content-reviewed 0/1,052 and draft 1,052; questions remain draft.",
+    "implementationSpecs": "PASS: 1,027 specs, 0 errors; qaStatus pending 1,027.",
+    "strictIndependence": "PASS: 614 learning lessons, 0 risks, 0 affected references, 0 strict failures.",
+    "browserSmoke": "PASS in authorized local Chrome: full traversal 1,027/1,027; A-7-1 live outputs -21/-21 at x=-2, keyboard slider focus retained, no page errors, and no overflow at 320/375/768px.",
+    "browserA11y": "PASS: axe-core 33 runs across 320/375/768px, 0 violations, 0 incomplete; includes A-7-1.",
+    "browserEnvironment": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3; Playwright 1.58.0; Chromium revision 1208 executable exists; project server PID 32868 serves the official workbench path with HTTP 200.",
+    "examSourceLedger": "Not rerun or changed; no question or source-ledger data modified.",
+    "commitPush": "Not done; the overall multi-unit goal remains in progress."
+  },
+  "gatesStillOpen": [
+    "The three readable materials are not equivalent publisher chapter bodies; Nani evidence is a resource index, and the other two are third-party shares with unverified authenticity and rights.",
+    "Full publisher chapter research, rights/version authentication, and lesson content review remain open; do not mark any publisher slot verified from these records.",
+    "Lesson reviewStatus remains draft; implementation spec qaStatus remains untested even though this turn's automated engineering tests passed."
+  ]
+}

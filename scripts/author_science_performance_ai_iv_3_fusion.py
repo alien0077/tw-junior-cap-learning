@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance ai-IV-3."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-ai-iv-3.json"; REPORT=ROOT/"implementation/reports/science-performance-ai-iv-3-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；科學解釋、概念應用、探究方法與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持使用科學概念和探究方法解釋現象、檢查預測並在證據支持下建立學習信心。"],"representations":[r],"examplesOrEvidence":["本課的冰融化、影子與氣球壓力皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-ai-iv-3" and d["reviewStatus"]=="draft"
+ d["title"]="ai-Ⅳ-3：以科學知識與探索方法解釋現象並建立信心——從猜想走到證據"
+ d["content"]={"summary":"建立科學信心不是要求每次都答對，而是能用學過的概念提出合理猜想，選擇適合的方法檢查，從資料知道解釋哪裡有力、哪裡需要修改。冰塊融化、影子長短和氣球壓力都能讓抽象概念回到可觀察現象。本課以原創任務練習預測—測試—解釋—修正的循環，讓『我可以理解和查證』取代『我只是猜對了』。","sections":[{"heading":"先用已有知識提出可說明的猜想","body":"冰塊在金屬和木頭上融化速度不同，可以從熱傳導提出猜想；影子長短可以連到光源、物體和位置。猜想不必完美，但要說明哪個概念讓你這樣想，才有機會被測試。"},{"heading":"預測要能和現象比對","body":"把猜想改寫成如果—那麼句子，指定會觀察什麼、何時觀察和如何比較。模糊的『應該比較快』要補上時間、溫度、距離或壓力等可記錄量。"},{"heading":"結果不合也能增加理解","body":"若氣球沒有如預期變大，檢查容器密封、材料、溫度、測量和模型假設。修正不是把原本想法藏起來，而是指出哪些條件讓概念需要更精確。"},{"heading":"信心來自可轉用的方法","body":"完成一項任務後，說出使用的概念、證據和下一次會怎麼做，才能把信心帶到新情境。理解方法比記住單一答案更能支持面對陌生現象。"}]}
+ d["studyHighlights"]=["用科學概念提出有理由的猜想。","把猜想改成可比較、可記錄的預測。","結果不合時檢查方法、條件與模型假設。","用概念、證據和修正理由建立可轉用的信心。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"冰塊放哪裡融得快？","body":"一塊冰分別放在金屬盤和木板上，請先預測哪一塊較快融化並寫出理由。不要只寫金屬『比較冷』，要連到熱傳導、接觸和環境條件。接著設計同時開始、相同大小冰塊和定時觀察的方法，讓猜想有機會遇到資料。"},
+ {"id":"explain","phase":"explain","heading":"信心循環四步驟","body":"先喚回概念，再寫如果—那麼預測，接著用安全方法觀察與記錄，最後比較結果、說明支持或限制並修正。每一步都可以得到部分成功：問題變清楚、測量更穩定或能指出模型缺口，信心不必等到完美答案才出現。"},
+ {"id":"worked-example","phase":"worked-example","heading":"影子長短的解釋與修正","body":"同一根棒在早上和中午影長不同，可先用太陽位置和光線方向預測中午較短。測量時固定棒高、地面和時間紀錄；若雲層使讀值異常，要標記天氣，不把一次例外當成概念錯誤，也不能用概念直接取代實際測量。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"氣球壓力的陌生情境","body":"把氣球套在瓶口，將瓶子放入溫水或冷水。小組先說明溫度與氣體體積的關係，再預測氣球變化，固定水量和等待時間；若變化很小，檢查瓶口密封、溫差和觀察方法。最後寫出概念能解釋的部分與仍需查證的部分。"},
+ {"id":"transfer","phase":"transfer","heading":"把一次成功轉成新任務策略","body":"完成冰塊任務後，面對保溫杯問題，先列出可轉用的策略：定義量、固定條件、提出預測、重複測量、檢查例外。再指出新任務多了哪些變因。這種轉換讓信心來自方法，而不是誤以為所有現象都能套同一個答案。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個信心迷思","body":"請修正『做對一次就代表我完全懂了』與『結果錯了就代表我不適合科學』。真正的理解包含理由、證據、限制和修正；錯誤結果能指出方法或模型需要改進，若能說明下一步，就已經在累積科學能力。"}
+ ],"summary":["用概念提出有理由的猜想和預測。","以安全測試、紀錄和比較檢查解釋。","結果不合時檢查條件、方法與模型假設。","把方法、證據和修正策略轉用到新現象。"],"exitCheck":[{"prompt":"冰塊融化猜想如何連到科學概念？","expectedEvidence":"以熱傳導、接觸和環境條件說明預期差異，並設計相同大小、同時開始的比較。"},{"prompt":"影子實驗遇到雲層時如何處理？","expectedEvidence":"記錄天氣與異常，檢查是否影響測量，不直接刪除或把一次異常當成概念全錯。"},{"prompt":"科學信心如何轉用到陌生問題？","expectedEvidence":"帶著定義量、控制條件、預測、測試、證據和修正的流程，而非只套用舊答案。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"以科學概念提出預測，透過探索證據檢查並修正解釋，建立可轉用的信心。","scenario":"探索冰塊、影子與氣球現象，逐步把猜想連到方法、資料和下一步。","variables":[{"symbol":"h","meaning":"科學猜想"},{"symbol":"e","meaning":"觀察證據"},{"symbol":"u","meaning":"仍待查證的限制"}],"steps":[{"id":"step-1","prompt":"預測金屬盤上的冰塊較快融化時，還要補什麼？","options":["用熱傳導等概念說明理由並規畫相同條件的比較","只寫金屬看起來比較冷","只憑一次看見的結果下結論"],"answer":"A","feedback":"理由、條件和比較讓猜想能被檢驗，而非只是直覺。"},{"id":"step-2","prompt":"影子測量出現異常讀值時，哪個處理最科學？","options":["記錄天氣與方法，檢查影響後再決定補測或修正解釋","刪掉不符合預測的讀值","宣布光影概念完全錯誤"],"answer":"A","feedback":"異常可揭示測量限制或模型條件，需要追查而非隱藏。"},{"id":"step-3","prompt":"如何把一次成功的實驗信心帶到新問題？","options":["轉用定義量、控制、預測、測試、證據和修正的流程","假設所有現象都使用同一答案","只記住最後的數字"],"answer":"A","feedback":"可轉用的方法比單一結果更能支撐面對陌生情境。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以科學概念和探究方法解釋現象，從證據建立學習信心。","概念預測、如果—那麼、實驗紀錄、比較與修正。","把猜對當成理解，或因一次錯誤就否定自己的科學能力。","重視理由、方法、證據、反思與概念轉用。"),rec("kanghsuan","透過動手探索、討論與修正將抽象概念連結可觀察現象。","冰塊、影子、氣球、模型、資料、同儕回饋與再測試。","只套公式不查條件，或把異常資料刪除。","評量預測品質、探究方法、解釋與信心成長。"),rec("hanlin","連結生活物理現象與科學探究，培養依證據解釋和面對陌生問題的能力。","熱傳導、光影、氣體、測量限制與新情境遷移。","把一次概念應用推廣到所有情境，忽略材料、環境和測量差異。","要求概念正確、證據透明、限制清楚與策略轉用。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以科學概念和探究方法解釋可觀察現象。","預測、測試、證據、修正與概念轉用是共同的信心形成途徑。","錯誤或異常結果能提供方法和模型改進資訊，不應被隱藏。"],"versionDifferences":["南一證據較突顯概念解釋與基本探究信心；康軒較突顯動手探索、討論、修正與模型；翰林較突顯生活物理、限制和陌生情境遷移。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以金屬盤與木板冰塊融化連結熱傳導、猜想與公平比較。","以影子雲層異常示範概念、測量、資料與修正。","以氣球溫水／冷水任務和方法轉用建立面對陌生問題的信心。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織科學概念、猜想、預測、測試、證據、異常、修正、轉用與信心。正文、原創情境、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"ai-Ⅳ-3：以科學知識與探索方法解釋現象並建立信心","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

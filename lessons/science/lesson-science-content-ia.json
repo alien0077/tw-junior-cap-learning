@@ -48,7 +48,7 @@
     "authoringNote": "Version-fused lesson v1 is independently authored from the official curriculum and recorded public publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; Terra second-round AI review remains pending, so this lesson stays draft."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "透過可拖曳的坡度、流速與沉積物模型，觀察外營力如何改變地表，並與內營力造成的地形剖面比較。",
@@ -100,6 +100,17 @@
         ],
         "answer": "A",
         "feedback": "把觀察、推論和仍未知的條件分開，模型才可以被檢驗或修正。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "要判斷河谷地形是內營力與外營力共同作用的結果，還需比較什麼？",
+        "options": [
+          "比較不同時間的河床剖面、沉積物粒徑與隆起／斷層位置，分開短期搬運和長期地殼變形",
+          "只看今日河道形狀，就直接決定所有地形的唯一成因",
+          "把坡度變化全部歸因於水流，不必檢查地殼構造"
+        ],
+        "answer": "A",
+        "feedback": "地表形貌可能同時受內營力與外營力影響；時間序列與多種剖面證據能避免單一機制過度解釋。"
       }
     ]
   },
@@ -107,45 +118,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Ia：地表與地殼的變動；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Ia：地表與地殼的變動 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「地表與地殼的變動」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Ia：地表與地殼的變動」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Ia：地表與地殼的變動 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Ia：地表與地殼的變動」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一版國中自然公開課程資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "地表與地殼的變動；公開章節定位與教學方向",
-      "sourceUrl": "https://www.nani.com.tw/",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Ia：地表與地殼的變動 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "核對內營力、外營力與地貌變化的概念鏈，並將風化、侵蝕、搬運、堆積分成可由地形證據判讀的作用。",
-      "copyrightBoundary": "只研究公開定位與概念方向；正文、活動、題目與答案均由本課獨立撰寫。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林版國中自然公開課程資源",
-      "subject": "science",
-      "chapterLocator": "地表作用、地質事件與防災；公開資源及課程計畫定位",
-      "sourceUrl": "https://www.ehanlin.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "比較地形剖面、作用示意與生活防災的連接方式，補入證據強度、時間尺度與安全判讀。",
-      "copyrightBoundary": "僅採公開定位與教學方向，不複製教材文字、圖片、題目、答案或影音字幕。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Ia：地表與地殼的變動」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -153,35 +174,99 @@
       "publisher": "nani",
       "edition": "南一版國中自然公開課程資源",
       "sourceType": "public-web",
-      "sourceLocator": "地表與地殼變動、板塊構造、地震與火山之公開章節定位；完整教材頁面未公開",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts":["以板塊運動連結地震、火山與地形變化","區分震源、震央、規模與震度"],"representations":["板塊剖面、地震分布圖與地質事件流程"],"examplesOrEvidence":["以震源深度及地形分布判讀構造環境"],"misconceptions":["把震度當作地震能量","把地表變化視為短時間內突然完成"],"assessmentEmphasis":["依圖表證據判斷板塊邊界與地震特徵"]},
-      "licenseBoundary": "僅研究公開定位與概念方向，不複製教材文字、圖片、題目或答案。"
+      "sourceLocator": "https://www.nani.com.tw/；地表與地殼的變動公開章節定位",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "內營力與外營力共同造成地貌變化",
+          "流水等外營力包含風化、侵蝕、搬運與堆積"
+        ],
+        "representations": [
+          "以地形剖面與作用流程連結地貌和成因"
+        ],
+        "examplesOrEvidence": [
+          "比較河流不同河段的坡度、流速與沉積物粒徑"
+        ],
+        "misconceptions": [
+          "把風化直接等同侵蝕，忽略岩石仍在原地破碎，尚未被介質帶走",
+          "以單一地表裂縫斷定地震，忽略還需震動紀錄、地質位置與其他證據"
+        ],
+        "assessmentEmphasis": [
+          "根據地形證據判斷作用，並說出推論限制"
+        ]
+      },
+      "licenseBoundary": "僅研究公開內容與教學方向，不複製教材文字、圖片、題目或答案。"
     },
     {
       "publisher": "kanghsuan",
       "edition": "康軒版國中自然公開影音與課程資源",
       "sourceType": "public-web",
-      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；地球內部、板塊與地質作用主題定位",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts":["以地球內部結構與板塊邊界說明地震、火山和造山","從觀察資料建立地質模型"],"representations":["地震帶與火山帶地圖、板塊邊界剖面、事件時間尺度"],"examplesOrEvidence":["比較張裂、聚合與錯動邊界的地形及地震特徵"],"misconceptions":["把板塊運動想成快速滑動","只用火山或山脈單一線索判斷邊界"],"assessmentEmphasis":["重視證據、模型和資料限制的對應"]},
-      "licenseBoundary": "只採公開主題與教學方向，正文、活動、題目、答案及回饋均獨立撰寫。"
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/j/nature/index.html；地表作用與地貌主題定位",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "流水是改變地表的重要外營力，會隨坡度、流量、流速與材料條件改變作用結果",
+          "地表形貌需連結作用、材料與位置理解"
+        ],
+        "representations": [
+          "以圖解地形、上中下游比較與活動觀察建立概念"
+        ],
+        "examplesOrEvidence": [
+          "觀察坡度與流速改變後的侵蝕、搬運、堆積差異"
+        ],
+        "misconceptions": [
+          "以為河流只會侵蝕不會堆積，忽略流速降低或河道變寬時的沉積作用",
+          "把山脈成因歸給單一作用，忽略內外營力在長時間尺度上的交互影響"
+        ],
+        "assessmentEmphasis": [
+          "由現象提出證據支持的作用解釋，並指出觀察範圍、資料尺度與證據本身的限制"
+        ]
+      },
+      "licenseBoundary": "只研究公開主題與教學方向，不複製影音字幕、圖片、題目或答案。"
     },
     {
       "publisher": "hanlin",
       "edition": "翰林版國中自然公開課程資源",
       "sourceType": "public-web",
-      "sourceLocator": "https://www.ehanlin.com.tw/；地震、火山與板塊構造之公開章節／課程計畫定位",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts":["由地質現象追溯內部作用與板塊運動","以臺灣地震情境連結規模、震度及防災判讀"],"representations":["地質剖面、震源深度散布與新聞資料表"],"examplesOrEvidence":["以地震深度和海溝、火山弧的相對位置支持隱沒模型"],"misconceptions":["震央就是震度最大處","所有山脈或地震都屬同一成因"],"assessmentEmphasis":["整合地圖、剖面與文字資料並說明推論界線"]},
-      "licenseBoundary": "僅採公開定位與教學方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"
+      "sourceLocator": "https://www.ehanlin.com.tw/；地表變動與防災公開定位",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "地質事件與地表作用具有不同時間尺度",
+          "自然環境判讀應連結人類活動與防災"
+        ],
+        "representations": [
+          "使用地形圖、剖面圖和生活情境資料交叉判讀"
+        ],
+        "examplesOrEvidence": [
+          "比較坡地降雨、風化與落石風險的證據範圍"
+        ],
+        "misconceptions": [
+          "把風險警示當成必然預測，混淆機率、預警用途與確定性結論的差別",
+          "忽略資料來源與尺度限制，直接把局部觀察推成普遍結論而未檢查適用範圍"
+        ],
+        "assessmentEmphasis": [
+          "區分原因、觸發條件、證據與安全決策"
+        ]
+      },
+      "licenseBoundary": "僅採公開定位與概念方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["板塊運動造成張裂、聚合與錯動等構造環境，能解釋部分地震、火山與地形。","地震資料需區分震源、震央、規模與震度，並配合空間分布判讀。","地質模型必須由多項證據支持，也要明確標示時間尺度與資料限制。"],
-    "versionDifferences": ["南一公開定位較適合核對地質概念與地震基本量的順序；康軒公開資源提供板塊剖面和模型探究的呈現線索；翰林公開課程資源較能連結臺灣地震新聞與防災判讀，但三者完整頁碼均未公開。"],
-    "originalAdditions": ["以震源深度剖面、海溝與火山弧的相對位置建立隱沒判讀任務。","加入規模與震度的新聞資料辨讀，避免單一關鍵字作答。","以現象—模型—限制表格收束推論，讓模型可被新證據修正。"],
-    "llmSynthesisNote": "依官方課綱、KG 與南一、康軒、翰林可取得的公開定位及研究紀錄，重新組織地質作用、板塊邊界、地震資料與臺灣情境；正文、示例、活動、互動與檢核均為本單元獨立撰寫。Terra 第二輪尚未執行，故維持 draft。"
+    "commonCore": [
+      "三版本公開線索共同支持以內外營力、地殼構造、地震火山和地貌證據理解地表與地殼變動。",
+      "風化侵蝕、板塊、褶皺斷層、場址效應、災害連鎖與控制變因是共同能力核心。",
+      "公開版本線索不足以還原各版完整地質單元；本課依地表可觀察的風化、侵蝕、搬運與沉積，連到地下板塊作用造成的褶皺、斷層、地震和火山，再以地貌剖面、震波或沉積序列判讀形成機制，並區分慢速地質變化與突發災害及其場址風險。"
+    ],
+    "versionDifferences": [
+      "南一公開定位偏向地表地殼變動；康軒線索偏向板塊、斷層、地震火山和防災；翰林線索偏向內外營力比較、地形資料與災害因果。公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以原地風化、河流沉積、斷層、褶皺、隱沒、火山灰、場址效應、坡面實驗、堰塞湖和海岸時間序列建立單元專屬證據鏈。",
+      "把風化等於搬運、地震只影響地下、火山訊號等於確切預言、地貌由單一營力造成列為單元迷思診斷。",
+      "本課以坡面顆粒、河流沉積、斷層截切、褶皺層序、隱沒火山灰和海岸變化等不同尺度資料建立證據牆；學生需配對營力與可見痕跡、指出場址沉積層如何放大震動，再用坡面降雨控制實驗討論堰塞湖風險，避免把單一訊號當成精確預測。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開試題資料的能力方向，重新組織內外營力、風化侵蝕、板塊、地震火山、場址效應、地貌與控制變因；原先 9 題已逐題改寫並補成 10 題，均具唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -250,75 +335,47 @@
     "model": "general",
     "goal": "在虛擬河谷中調整坡度、流速與粒徑，建立由地貌證據推論外營力的模型，再與內營力剖面比較。",
     "mission": "完成三輪控制變因挑戰：固定粒徑改變流速、固定流速改變坡度，最後從未知河段的剖面與沉積物資料判斷侵蝕或堆積；全程使用模擬資料並遵守不接近真實邊坡的安全原則。",
-    "learningDesign":{"type":"river-erosion-controlled-test","objective":"以粒徑、流速、坡度與剖面資料判斷河流侵蝕及沉積。","predictionPrompt":"固定粒徑時提高流速，河道哪一段更可能出現侵蝕？如何保持公平比較？","steps":[{"action":"固定粒徑改變流速並記錄搬運距離與沉積量","equation":"transport=f(flow,grain-size)"},{"action":"固定流速改變坡度，量測河床剖面變化","equation":"erosion=f(slope,velocity)"},{"action":"用未知河段資料分類侵蝕或堆積並標示混淆因子","equation":"claim=profile+sediment"}]},
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以粒徑、流速、坡度與剖面資料判斷河流侵蝕及沉積。",
+      "predictionPrompt": "固定粒徑時提高流速，河道哪一段更可能出現侵蝕？如何保持公平比較？",
+      "evidencePrompt": "請以粒徑、流速、坡度、搬運距離、沉積量、河床剖面與未知河段資料，說明河流侵蝕與沉積判讀的證據及混淆因素。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "固定粒徑改變流速並記錄搬運距離與沉積量",
+          "equation": "transport=f(flow,grain-size)",
+          "reason": "固定粒徑、只改流速，才能比較水流條件對搬運距離與沉積量的影響。",
+          "feedback": "請記錄粒徑、流速、搬運距離與沉積量，並確認其他河道條件相同。"
+        },
+        {
+          "id": "step-2",
+          "action": "固定流速改變坡度，量測河床剖面變化",
+          "equation": "erosion=f(slope,velocity)",
+          "reason": "固定流速後改變坡度，可把剖面變化與坡度條件連結，而非混合兩個主要變因。",
+          "feedback": "請保留固定流速的對照，並用測量前後河床剖面指出侵蝕或堆積位置。"
+        },
+        {
+          "id": "step-3",
+          "action": "用未知河段資料分類侵蝕或堆積並標示混淆因子",
+          "equation": "claim=profile+sediment",
+          "reason": "未知河段判讀要同時使用剖面與沉積資料，並列出流量、植被或粒徑等混淆因素。",
+          "feedback": "請先提出分類依據，再標出哪些資料仍不足以排除其他侵蝕或堆積解釋。"
+        },
+        {
+          "id": "step-4",
+          "action": "重複量測不同日期的河床剖面與粒徑，並將流量、植被、坡度與構造位置對齊",
+          "equation": "landform-change=internal-process+surface-process+timescale",
+          "reason": "單次剖面只能呈現某一時間點；把短期水流搬運與長期隆起、斷層或侵蝕序列對照，才能判斷多機制與尺度。",
+          "feedback": "請分開直接量測、內營力推論、外營力推論與尚未排除的時間／空間限制。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
     ]
-  },
-  "versionResearch": [
-    {
-      "publisher": "nani",
-      "edition": "南一版國中自然公開課程資源",
-      "sourceType": "public-web",
-      "sourceLocator": "https://www.nani.com.tw/；地表與地殼的變動公開章節定位",
-      "reviewedAt": "2026-09-01",
-      "findings": {
-        "concepts": ["內營力與外營力共同造成地貌變化", "流水等外營力包含風化、侵蝕、搬運與堆積"],
-        "representations": ["以地形剖面與作用流程連結地貌和成因"],
-        "examplesOrEvidence": ["比較河流不同河段的坡度、流速與沉積物粒徑"],
-        "misconceptions": ["把風化直接等同侵蝕，忽略岩石仍在原地破碎，尚未被介質帶走", "以單一地表裂縫斷定地震，忽略還需震動紀錄、地質位置與其他證據"],
-        "assessmentEmphasis": ["根據地形證據判斷作用，並說出推論限制"]
-      },
-      "licenseBoundary": "僅研究公開內容與教學方向，不複製教材文字、圖片、題目或答案。"
-    },
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒版國中自然公開影音與課程資源",
-      "sourceType": "public-web",
-      "sourceLocator": "https://digitalmaster.knsh.com.tw/j/nature/index.html；地表作用與地貌主題定位",
-      "reviewedAt": "2026-09-01",
-      "findings": {
-        "concepts": ["流水是改變地表的重要外營力，會隨坡度、流量、流速與材料條件改變作用結果", "地表形貌需連結作用、材料與位置理解"],
-        "representations": ["以圖解地形、上中下游比較與活動觀察建立概念"],
-        "examplesOrEvidence": ["觀察坡度與流速改變後的侵蝕、搬運、堆積差異"],
-        "misconceptions": ["以為河流只會侵蝕不會堆積，忽略流速降低或河道變寬時的沉積作用", "把山脈成因歸給單一作用，忽略內外營力在長時間尺度上的交互影響"],
-        "assessmentEmphasis": ["由現象提出證據支持的作用解釋，並指出觀察範圍、資料尺度與證據本身的限制"]
-      },
-      "licenseBoundary": "只研究公開主題與教學方向，不複製影音字幕、圖片、題目或答案。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林版國中自然公開課程資源",
-      "sourceType": "public-web",
-      "sourceLocator": "https://www.ehanlin.com.tw/；地表變動與防災公開定位",
-      "reviewedAt": "2026-09-01",
-      "findings": {
-        "concepts": ["地質事件與地表作用具有不同時間尺度", "自然環境判讀應連結人類活動與防災"],
-        "representations": ["使用地形圖、剖面圖和生活情境資料交叉判讀"],
-        "examplesOrEvidence": ["比較坡地降雨、風化與落石風險的證據範圍"],
-        "misconceptions": ["把風險警示當成必然預測，混淆機率、預警用途與確定性結論的差別", "忽略資料來源與尺度限制，直接把局部觀察推成普遍結論而未檢查適用範圍"],
-        "assessmentEmphasis": ["區分原因、觸發條件、證據與安全決策"]
-      },
-      "licenseBoundary": "僅採公開定位與概念方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"
-    }
-  ],
-  "fusionRecord": {
-    "commonCore": [
-      "內營力與外營力共同塑造地表，地貌是作用累積的結果。",
-      "風化、侵蝕、搬運與堆積需依材料是否移動、能量與位置區分。",
-      "地質判讀要以多項證據支持，並保留時間尺度與安全限制。"
-    ],
-    "versionDifferences": [
-      "南一公開定位較適合核對作用分類與河流地形概念鏈；康軒提供地形圖解與活動觀察線索；翰林較強調生活防災與證據界線，完整出版社頁碼未公開可得。"
-    ],
-    "originalAdditions": [
-      "以山坡與河流材料旅程作為單元敘事入口。",
-      "設計可拖曳坡度、流速、粒徑的地形過程互動模型。",
-      "加入落石情境，分辨長期原因、短期觸發與安全行動。"
-    ],
-    "llmSynthesisNote": "依官方課綱、KG 與南一、康軒、翰林可取得的公開定位及研究紀錄，先比較作用分類、地形表徵、活動節點與防災判讀，再用本單元專屬的河流剖面、等高線證據鏈與互動模型重新撰寫；正文與活動為原創，Terra 尚未執行故維持 draft。"
   }
 }

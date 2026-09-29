@@ -2,41 +2,76 @@
   "id": "question-chinese-content-be-iv-1-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "發布生活應用文本前，哪項檢查最重要？",
+  "prompt": "自傳只寫『我參加過很多活動』，若要提高可信度，最應補上？",
   "options": [
     {
       "id": "A",
-      "text": "對象、目的、內容、來源與格式"
+      "text": "更多形容詞"
     },
     {
       "id": "B",
-      "text": "只檢查背景顏色"
+      "text": "活動名稱、時間、擔任角色與完成的任務"
     },
     {
       "id": "C",
-      "text": "只檢查檔案大小"
+      "text": "一句『請相信我』"
     },
     {
       "id": "D",
-      "text": "只檢查標題長度"
+      "text": "與活動無關的家庭故事"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-be-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "應用文本需符合溝通目的、對象與資訊規範。"
+    "value": "B",
+    "explanation": "名稱、時間、角色與任務能讓讀者核對經驗內容與個人貢獻，較能支持自傳敘述。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "自傳、簡報、新聞稿與生活應用；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究自傳、簡報、新聞稿、提案與公告的目的、對象和資訊完整度。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫生活應用文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-be-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-be-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "自傳、簡報與生活應用文本",
+      "observedPattern": "公立學校國文評量要求依自傳、簡報、新聞稿與提案的目的、對象、資訊完整度和可執行性選擇表達；本題使用全新生活情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "新聞稿、提案與對象需求",
+      "observedPattern": "公立學校國文評量要求依自傳、簡報、新聞稿與提案的目的、對象、資訊完整度和可執行性選擇表達；本題使用全新生活情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將模糊數量改成可定位的經驗與角色資訊。",
+  "solutionSteps": [
+    "找出很多活動缺少哪些欄位。",
+    "補上名稱與時間定位經驗。",
+    "用角色和任務呈現實際貢獻。",
+    "B 能提高資訊可信度。",
+    "若有成果，補充可查證的結果而非只寫很成功。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-3-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年6月12日社區環境站的觀察中，一個物體質量為 805 g、體積為 97 cm³，研究「Eb-Ⅳ-3：平衡物體的合力與合力矩」時，其密度為何？",
+  "prompt": "某物體在水平面上受到向右 25 N 的拉力與向左 25 N 的摩擦力，且沒有其他水平力。若同時已知所有力的作用線通過同一中心點，哪個結論最合理？",
   "options": [
     {
       "id": "A",
-      "text": "8.29897 g/cm³"
+      "text": "合力為零，且這兩力對該中心點的合力矩為零"
     },
     {
       "id": "B",
-      "text": "902 g/cm³"
+      "text": "合力向右 50 N，合力矩向右"
     },
     {
       "id": "C",
-      "text": "0.120497 g/cm³"
+      "text": "合力向左 25 N，合力矩一定不為零"
     },
     {
       "id": "D",
-      "text": "78085 g/cm³"
+      "text": "只要有摩擦力，合力就不可能為零"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "密度＝質量÷體積＝805÷97＝8.29897 g/cm³。 本題對應 KG「Eb-Ⅳ-3：平衡物體的合力與合力矩」。"
+    "explanation": "水平兩力大小相等、方向相反，所以合力為零；兩作用線又通過同一中心點，對該點力臂為零，這兩力的力矩也為零。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作合力、合力矩、受力圖與平衡能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "本題取公立學校公開自然／理化試題的受力圖、力矩、平衡與生活結構判讀能力方向，題幹、選項、答案、解析與五步解法均以 Eb-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-3"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-eb-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "受力圖、平衡與力矩能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化試題常以吊掛物、槓桿、翹翹板與受力圖考查合力、力矩方向、支點及平衡條件；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "槓桿、力矩及平衡判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化試題常以吊掛物、槓桿、翹翹板與受力圖考查合力、力矩方向、支點及平衡條件；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%835-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "槓桿與靜力平衡能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化試題常以吊掛物、槓桿、翹翹板與受力圖考查合力、力矩方向、支點及平衡條件；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷向量和，再使用題目明示的共同作用線資訊判斷力矩。",
+  "solutionSteps": [
+    "比較拉力與摩擦力大小，兩者皆為 25 N。",
+    "因方向相反，水平合力 25−25＝0。",
+    "確認兩力作用線都通過指定中心點。",
+    "各力對該點的垂直力臂為零，所以力矩為零。",
+    "因此選 A。"
+  ]
 }

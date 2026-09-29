@@ -1,0 +1,140 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-8-iv-1
+  knowledgeGraphIds:
+  - kg-english-performance-8-iv-1
+  title: 8-Ⅳ-1：介紹國內節慶
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 8-Ⅳ-1 能以簡易英語介紹國內主要節慶習俗；NAER英語課綱正文pp.8–15／PDF pp.10–17
+    curriculumIntent: 產出讓特定讀者理解的簡易英語節慶介紹，涵蓋可查證的節名／時間／活動，並以地點或群體範圍詞避免把地方實踐說成全民通例。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以官方課綱、KG與可取得的版本資料原創撰寫；出版社正文未取得者維持未知，校方計畫不得冒充出版社教材證據。
+    currentEvidenceStatus: original-fusion-manuscript-authored; Nan-I-labelled-school-plan-locatable; Kang-Hsuan-and-Hanlin-target-text-unavailable; lesson-review-reserved-for-user-ChatGPT
+  learningGoals:
+  - 依初訪者或活動參與者的需求，選出節名、時間、活動、地點等相關資訊
+  - 用來源支持文化事實，區分節日資訊與地方限定活動，修正過度概括的說法
+  - 以簡易英語寫一至三句介紹，讓讀者能理解並追溯資訊
+  prerequisites:
+  - 能辨認簡單英文句中的節名、時間、地點與活動資訊
+  - 能使用基本現在式及常見時間／地點片語表達簡短事實
+  coreConcepts:
+  - 受眾與目的決定介紹中應保留的節慶資訊
+  - 來源證據支持到何種地點、群體與普遍程度
+  - 英語介紹的可理解性、事實正確性與範圍精確度
+  misconceptions:
+  - 把單一地區的節慶活動說成全臺每個人都會做
+  - 為了讓介紹完整而自行添加未查證的起源、意義或普遍性
+  - 只羅列節慶詞彙，未回應讀者真正想知道的時間、地點或活動
+  contentFlow:
+  - 'predict: 先猜交換生會把平溪地方活動理解成全臺習俗的風險，記下需要來源確認的主張'
+  - 'manipulate: 依初訪者或活動參與者的問題挑選節名、日期、地點與活動資訊，刪去無關材料'
+  - 'observe: 對照來源小卡逐項核對日期與平溪活動，標記證據只支持地方範圍而非全臺普遍性'
+  - 'explain: 用簡易英文引述可追溯來源並選擇精確範圍用語，說明為何不能寫成所有臺灣人都如此'
+  - 'guided-practice: 區分有來源日期、有限範圍活動與絕對化主張'
+  - 'transfer: 為新讀者或新節慶重選資料並改寫'
+  - 'exit-ticket: 檢查事實、受眾、範圍與追溯性'
+  visualizations:
+  - 對照卡以「來源事實／讀者用途／範圍用語」三欄呈現，讓局部習俗不被誤讀為普遍習俗
+  - 英文例句與來源事實逐項對應；文字標籤承載意義，不以顏色單獨區分
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-8-IV-1-I01
+    component: GuidedChoiceBlock
+    purpose: 逐步判讀日期、活動地點、來源範圍與受眾，練習用簡易英語精確介紹國內節慶
+    initialState:
+      currentStep: 0
+      answersRevealed: false
+      attemptedSteps: []
+    studentActions:
+    - 閱讀節慶日期或地點資訊，選出直接符合來源的句子
+    - 以鍵盤或觸控選擇英文介紹，提交後才取得回饋
+    - 答錯時先收到一階範圍／證據提示，可重試後再看解析
+    - 由普遍事實遷移到地方限定活動，最後調整給訪客看的小卡
+    visualRules:
+    - 每題先作答才顯示正解與原因，不以答案位置提示
+    - 錯答先顯示可重試提示，正解解析在再次作答後提供
+    - 節名、地點和some等限定詞以文字明示，不用顏色承載關鍵意義
+    - 窄螢幕不得裁切題幹、選項、提示、解析或完成訊息
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-8-IV-1-I01
+      trigger: 把平溪天燈活動擴大成全臺每個人元宵節都放天燈
+      prompt: 來源實際限定哪個地點？句子中哪個字把部分活動說成所有人都做？
+      expectedEvidence: 指出Pingxi和every/all的語意差異，並能改用地點詞或some收窄主張
+    feedback:
+      correct: 指出學生使用的節慶事實與範圍詞，並要求用新活動資訊再寫一次。
+      incorrect: 先提示回看來源中的地點及句子量詞；允許重試，之後才呈現逐句解析。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課不採用互動模擬；guided-choice以清楚焦點順序、鍵盤可操作選項及答案回饋呈現原創節慶資料。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課不採用互動模擬；guided-choice以分步題幹、鍵盤可操作選項及答案回饋呈現原創節慶資料。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "guided-choice將錯答提示和正答解說作為具名status資訊，讓輔助科技能讀出回饋。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "頁面沿用工作台既有語意區塊；本課互動需保留可鍵盤到達的題目、選項與回饋。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 使用新節慶資料或新受眾，不得只替換節名；須保留來源證據範圍與簡易英語介紹任務
+    requiredResponse: 選擇合宜資訊，指出日期／活動／地點線索並說明範圍用語
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 給初次來臺的同學寫節慶小卡時，哪一句超出來源能支持的地點範圍？請改寫並指出依據。
+    successCriteria:
+    - 句子包含來源可支持的節名、時間或活動事實
+    - 對地方活動使用地點詞或some等範圍限定
+    - 指出原來源或資料卡作為改寫依據
+  expressionExtension:
+    applicable: true
+    task: 寫三句英文節慶介紹，包含一項可查事實、一項活動及必要的地點／群體範圍詞
+    constraint: 學生自行選擇來源並寫作；不得把無來源起源、意義或普遍性寫成事實
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 學生載入節慶小卡時先看到題目與資料，不會在首次作答前顯示正解。
+  - 逐題用鍵盤選答案；答錯顯示本題專屬範圍／證據提示，可重試後讀到解析。
+  - 第2題能識別把Pingxi地方活動泛化成所有臺灣人的迷思，並以地點詞修正。
+  - 320px、375px與768px畫面皆可讀完整七段教材及四步互動，無橫向溢位。
+  - 最後一題遷移到新讀者小卡，要求同時考量簡易英語、來源及活動範圍；所有內容不依賴外部網路即能完成。
+  - fallback：外部節慶資料／互動腳本不可用時，使用本課內嵌的平溪來源小卡與範圍標籤完成四題，不空白、不假稱已連網查證。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 8-Ⅳ-1
+    role: official-curriculum-source-of-truth

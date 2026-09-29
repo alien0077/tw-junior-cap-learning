@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-8-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若三角形兩邊長為 6、9，第三邊不可能是哪一個？",
+  "prompt": "在同一三角形中，若邊 AB 大於邊 AC，則哪個角較大？",
   "options": [
     {
       "id": "A",
-      "text": "4"
+      "text": "∠A 大於 ∠B"
     },
     {
       "id": "B",
-      "text": "6"
+      "text": "∠C 大於 ∠B"
     },
     {
       "id": "C",
-      "text": "12"
+      "text": "∠B 大於 ∠C"
     },
     {
       "id": "D",
-      "text": "16"
+      "text": "無法比較"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "第三邊需滿足 3<x<15，16 不可能。"
+    "value": "B",
+    "explanation": "大邊對大角；AB 的對角是 ∠C，AC 的對角是 ∠B，AB>AC 所以 ∠C>∠B，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的基本性質 題型與官方課綱 KG kg-math-content-s-8-8",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形基本性質能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的三角形性質方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-8-8"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形內角和、外角、等腰／等邊三角形、邊角大小關係與三角不等式",
+      "observedPattern": "公開學校數學試題常以角度計算、外角關係、等腰條件、對邊對角與三角不等式考查三角形基本性質；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形內角和、外角、等腰／等邊三角形、邊角大小關係與三角不等式",
+      "observedPattern": "公開學校數學試題常以角度計算、外角關係、等腰條件、對邊對角與三角不等式考查三角形基本性質；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找每條邊的對角，再套用大邊對大角。",
+  "solutionSteps": [
+    "找 AB 的對角為 ∠C。",
+    "找 AC 的對角為 ∠B。",
+    "已知 AB>AC。",
+    "所以 ∠C>∠B。",
+    "選 B。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-c-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年8月20日學校研究社的觀察中，將 46 g 食鹽溶於 110 g 水，研究「C：物質的結構與功能」時，溶液質量為何？",
+  "prompt": "化學課比較以單個氦原子存在的氦、氧氣 O₂ 與水 H₂O；哪項歸類同時符合粒子數與元素種類？",
   "options": [
     {
       "id": "A",
-      "text": "156 g"
+      "text": "氦可由單個 He 原子表示；O₂ 分子含兩個氧原子，H₂O 分子含氫、氧兩種元素的原子"
     },
     {
       "id": "B",
-      "text": "64 g"
+      "text": "分子一定沒有質量"
     },
     {
       "id": "C",
-      "text": "5060 g"
+      "text": "原子一定由兩種元素組成"
     },
     {
       "id": "D",
-      "text": "110 g"
+      "text": "兩者只靠顏色區分"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,43 @@
   "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：46＋110＝156 g。 本題對應 KG「C：物質的結構與功能」。"
+    "explanation": "依 IUPAC《Gold Book》對 molecule 的定義，分子由多於一個原子組成；O₂ 含兩個氧原子，H₂O 含兩個氫原子與一個氧原子。氦在一般條件下以單原子粒子表示。答案 A 同時正確讀出下標與元素符號。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的粒子模型、物質結構與性質能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 C 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-c"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-c",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "粒子模型、物質組成、結構與性質資料判讀",
+      "pattern": "取由微觀結構、物性／化性與實驗證據推論物質功能的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由微觀結構、物性／化性與實驗證據推論物質功能的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用粒子組成和表示層級，而不是外觀名稱判斷。",
+  "solutionSteps": [
+    "先逐一讀符號：He 只有一個元素符號且沒有下標，O₂ 的下標 2 表示兩個氧原子，H₂O 表示兩個氫原子和一個氧原子。",
+    "氦在一般條件下由單個氦原子表示；不能因為它是氣體就自動稱為雙原子分子。",
+    "O₂ 與 H₂O 都含多於一個原子，符合分子粒子數的判準；O₂ 只有氧元素，H₂O 則含氫、氧兩種元素。",
+    "排除只看物態、顏色或原子質量的判斷；辨識須依化學式中的元素符號與下標。",
+    "選 A，因為它同時正確說明 He、O₂、H₂O 的粒子組成與元素種類。"
+  ],
+  "studyReferences": [
+    "https://goldbook.iupac.org/terms/view/M04002",
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -1,0 +1,139 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-7-iv-5
+  knowledgeGraphIds:
+  - kg-english-performance-7-iv-5
+  title: 7-Ⅳ-5：學習計畫與自我監控
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: 7-Ⅳ-5：能訂定英文學習計畫，檢視自我學習過程，並隨時改進。
+    curriculumIntent: 學習者依個人表現設定目標，安排可行練習，保留自我檢核證據，並依錯誤模式調整下一輪；計畫須服務實際英文任務，不把格式完成當作學習成效。
+    publisherEvidence:
+      nani: {status: pending, required: true}
+      kanghsuan: {status: pending, required: true}
+      hanlin: {status: pending, required: true}
+    fusionRule: 校方課程計畫只支持課綱與課程定位，不能替代南一、康軒、翰林逐單元教材研究；三版本全文研究及融合完成前 lesson、題目維持 draft。
+    currentEvidenceStatus: official-curriculum-grounded; public-school-exam-patterns-recorded; publisher-full-text-research-and-fusion-pending
+  learningGoals:
+  - 從學習紀錄區分穩定表現、反覆錯誤及尚不足以支持的結論。
+  - 把模糊願望轉成有學習對象、可觀察成果與回顧期限的目標。
+  - 在有限時間內配置練習、錯因診斷與新材料回測，並檢查行程可行性。
+  - 依新的表現資料改變下一輪策略，將計畫—檢查—調整遷移到不同英文任務。
+  prerequisites:
+  - 能讀取短英文校園情境中的日期、時間、地點與常見活動資訊。
+  - 能從簡單答題紀錄中辨認答對數、錯誤類型及任務條件。
+  coreConcepts:
+  - 學習目標必須指向特定英文能力及可檢查的表現，不是籠統願望或不切實際的承諾。
+  - 計畫包含可用時段、任務內容、練習順序與新材料檢核；總時數不得超過實際資源。
+  - 自我監控同時記錄任務條件、結果與錯因；證據強度限制結論範圍。
+  - 改進要以錯誤模式為依據，改變下一輪任務並重新測量，不能只增加時數或重複熟悉題。
+  misconceptions:
+  - 目標只有「英文變好」或「每天努力」，沒有期限、範圍或可檢查成果。
+  - 把排滿時間表、重播舊錄音或抄寫次數當成學會的證據。
+  - 只比較總分，忽略題數、材料難度、是否重複及具體錯誤類型。
+  - 遇到一題錯誤便推論整個策略無效，或不看錯因只把練習時數加倍。
+  - 將舊任務的時間表原封不動搬到新任務，沒有重訂目標及回測證據。
+  contentFlow:
+  - 'hook: 讀若晴兩次校園廣播紀錄，對照穩定的地點題和反覆失誤的時間題。'
+  - 'predict: 先根據兩次校園廣播紀錄預測最值得優先處理的學習缺口，並標為待驗證。'
+  - 'manipulate: 調整若晴每週三個時段的練習、錯因診斷與新材料回測配置。'
+  - 'observe: 比較兩週紀錄中的題數、素材新舊、答對數與錯因，觀察證據變化。'
+  - 'explain: 說明紀錄支持哪些主張、哪些仍未知，以及調整策略如何對應錯因。'
+  - 'set-goal: 把模糊的英文進步願望改寫為有期限、範圍與回測標準的小目標。'
+  - 'plan: 依每週三個30分鐘時段安排新材料練習、錯因診斷及獨立回測。'
+  - 'monitor: 比較第一、二週的新錄音表現，同時標記樣本與錯因差異。'
+  - 'adjust: 針對相近數字混淆設計成對辨音，再用不同廣播驗證。'
+  - 'transfer: 改讀社團招募公告，重新設定期限／地點目標並記錄新錯誤模式。'
+  - 'reflect: 說明本輪證據的限制，以及下一次會根據什麼結果改計畫。'
+  visualizations:
+  - 兩次答題紀錄以可讀文字表格顯示題型、答對數、素材是否新及錯因，讓分數和條件一同被檢視。
+  - 週計畫用三個30分鐘時段表示，讓練習、診斷、回測的時間配置可被加總。
+  - 每階只顯示一份資料與一個決策；進度、錯誤提示及完成狀態都以文字提供，不以顏色單獨傳意。
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-7-IV-5-I01
+    component: ReadingStrategyLab
+    purpose: 使用本課原創聽力紀錄與時間安排資料，逐步建立並檢查若晴的目標、行程、證據及策略修正；此處沿用通用逐階答題／重試 runtime，學科內容及六個判斷情境均為本課專屬。
+    initialState:
+      taskIndex: 0
+      correctAnswers: []
+      showAnswer: false
+    studentActions:
+    - 讀取一份本階原創紀錄、目標條件或可用時間資料。
+    - 選出符合證據、期限及資源條件的計畫或調整方式。
+    - 答錯時留在本階，保留選項並依指向錯因的提示重讀；答對才解鎖下一決策。
+    - 完成六階後可回顧全循環並重設，讓每個 lesson instance 獨立保存進度。
+    visualRules:
+    - 初始狀態不得揭露答案；同一畫面只呈現當階需要的資料、問題及選項。
+    - 題型分數須連同題數、是否新材料及錯因呈現，避免只顯示總分。
+    - 使用語意化 radio、fieldset、legend、button、progress 與 aria-live 狀態；鍵盤可完成所有選擇與重試。
+    - 時間配置與說明在窄螢幕自然折行，320／375／768 CSS px 不得水平溢位；無動畫也能完成。
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-7-IV-5-I01
+      trigger: 只看總分，忽略時間題錯因；或將重播已熟悉材料視為獨立回測。
+      prompt: 請對照題型、素材是否新、答對數及錯因欄，指出哪一項資料支持你的下一步。
+      expectedEvidence: 能引用至少一項重複錯誤或任務條件，提出對應策略，並選擇新材料做後續檢查。
+    feedback:
+      correct: 指出本階使用的紀錄及它支持的決策，再讓下一階更換計畫、時間或材料條件。
+      incorrect: 先指出目標、可行時間、紀錄解讀或策略對應哪一層不符；保留選項並給本階專屬回讀提示，不直接代答。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: accessibility-pattern-only
+    application: 使用原生表單語意、明確標籤及 aria-live 狀態；不沿用外部教材文字、題目或視覺素材。
+  capTransfer:
+    questionType: 學習紀錄與時間表資料判讀、目標選擇、錯因調整及理由說明
+    stemConstraint: 新任務換成閱讀社團公告，保留計畫—檢查—調整推理，但改用期限、地點及條件資訊；不複用六階聽力文本。
+    requiredResponse: 選出可行計畫並引用一項錯誤／時間證據，說明下一次要如何回測。
+    scoring: 目標與任務相符1分、時間／證據使用正確1分、調整能回應錯因並提出回測1分。
+  exitTicket:
+    prompt: 若答對數提高但素材長度也變了，你能下什麼結論？下一次需要記錄哪些條件？
+    successCriteria:
+    - 不把一次答對數提升當成所有英文能力都進步的證明。
+    - 提到素材是否新、題數／難度或任務條件以及具體錯因。
+    - 提出一項依錯因設計且可用新材料檢查的下一步。
+  expressionExtension:
+    applicable: true
+    task: 用英文寫下下週的一個聽力小目標及檢核方式，再用繁中說明此檢核如何對應本週錯因。
+    constraint: 學生先自行表達；回饋只標記目標、證據或錯因連結缺漏，不代寫完整計畫。
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每階有任務進度、純文字資料、fieldset 說明及 aria-live 回饋；完成與重設狀態可朗讀。
+    reducedMotion: 本互動不依賴動畫；啟用減少動態偏好時流程及狀態不變。
+  testCases:
+  - 初始載入只顯示若晴第一份原創紀錄，六階答案均不在畫面揭露。
+  - 六階分別檢核錯誤診斷、可測目標、可行時間安排、不同條件下的進度解讀、錯因調整及公告任務遷移。
+  - 空白作答不得前進；答錯須保留選項、停在本階並顯示本階回讀提示；正解才解鎖下一階。
+  - 完成訊息反映六階計畫—監控—調整循環；同一 lesson instance 可還原進度並可重設。
+  - 320／375／768 寬度無互動區水平溢位；所有操作可只用鍵盤完成，aria-live 狀態可讀。
+  - 本課所有文本及資料內嵌，斷網時仍可完成六階；不依賴遠端試題、圖片或音檔。
+  - 網路不可用或互動初始化失敗時，文字 fallback 仍能呈現六階資料、作答、提示及回顧。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題及官方定位一致；教材與題目維持 draft。
+  - 三版本逐單元全文研究／差異融合完成前 publisher slots 保持 pending，不得聲稱版本融合完成。
+  - 六階互動、錯答提示、進度保存／重設及新情境遷移皆由本課資料驅動並通過 DOM／資料驗證。
+  - 320／375／768、鍵盤、文字 fallback 及 reduced-motion 自動化契約通過；螢幕閱讀器真人實測另外記錄。
+  - 本課教材與題目保持draft；最終教材內容審查由使用者交ChatGPT執行，不列入融合稿登錄或互動技術驗收gate。
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E6%96%87%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第8至15頁／PDF第10至17頁；國民中學教育階段學習表現；官方代碼7-Ⅳ-5。
+    role: official-curriculum-source-of-truth
+  - url: https://course.cyc.edu.tw/upfile/course113/sub1/15636172843290327.pdf
+    locator: 校方計畫PDF第89-90頁：第14週Reading Corner I；列7-Ⅳ-5計畫／檢視改進目標、課本pp.79-80 Read and Choose及手寫評量；不是教材全文。
+    role: public-school-unit-placement-only-publisher-full-text-pending
+  - url: https://course.cyc.edu.tw/upfile/course109/sub1/14538421861699668.pdf
+    locator: 校方特教資源班計畫PDF第12頁：康軒三年級英語調整目標含7-Ⅳ-5；差異化旁證，非一般班單元或出版社正文。
+    role: adapted-learning-objective-only-publisher-full-text-pending
+  - url: https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf
+    locator: 校方英語計畫PDF第1頁確認翰林七年級第1-2冊；全文未找到7-Ⅳ-5，不作本單元教學證據。
+    role: publisher-version-in-use-only-publisher-full-text-pending
+  - url: https://market.cloud.edu.tw/resources/video/1846964
+    locator: 教育部委辦國中英語資源頁列7-Ⅳ-5及D-Ⅳ-3；授權CC BY-NC-ND 3.0 TW，本課只作能力定位、不改作影音或範例。
+    role: curriculum-aligned-resource-license-and-scope-record

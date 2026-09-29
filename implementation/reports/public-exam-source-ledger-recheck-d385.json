@@ -1,0 +1,38 @@
+{
+  "decisionId": "D-385",
+  "date": "2026-09-28",
+  "phase": "public-school-exam-source-ledger-current-state-recheck",
+  "status": "pass",
+  "evidence": {
+    "questionSourceLedger": {
+      "command": "python3 scripts/audit_question_exam_rewrites.py",
+      "totalQuestions": 10566,
+      "recorded": 10566,
+      "pending": 0
+    },
+    "sourceSemantics": {
+      "command": "python3 scripts/audit_question_exam_ref_semantics.py",
+      "questionFiles": 10566,
+      "refs": 23141,
+      "flagged": 0,
+      "affectedQuestionFiles": 0
+    },
+    "sourceCatalog": {
+      "command": "python3 scripts/audit_public_exam_source_catalog.py",
+      "catalogEntries": 492,
+      "questionSourceUrls": 281,
+      "coveredUrls": 281,
+      "missingUrls": 0
+    },
+    "gradeCompatibility": {
+      "command": "python3 scripts/audit_public_exam_source_unit_fit.py",
+      "refs": 410,
+      "compatible": 410,
+      "potentialMismatches": 0,
+      "unclassified": 0
+    }
+  },
+  "scopeBoundary": "This verifies the public-exam source ledger and provenance linkage only. It is not question-answer, copyright, or content review, which remains outside Codex scope per user instruction.",
+  "changeSinceD377": "No current pending items or new semantic/catalog/grade-fit failures; source-ledger work is not repeated.",
+  "commitPush": "Not performed; remaining fusion and implementation work is ongoing."
+}

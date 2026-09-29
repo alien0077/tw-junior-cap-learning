@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-1-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "三角形甲三邊為 5、12、13，三角形乙三邊為 10、24、26。兩三角形的關係為何？",
+  "prompt": "兩個相似多邊形的小圖：大圖邊長倍率為 5：8。小圖一條邊長 10 公分，對應的大圖邊長是多少？",
   "options": [
     {
       "id": "A",
-      "text": "不相似，因為周長不同"
+      "text": "12.5 公分"
     },
     {
       "id": "B",
-      "text": "相似，比例為 1：2"
+      "text": "13 公分"
     },
     {
       "id": "C",
-      "text": "全等，因為都是直角三角形"
+      "text": "16 公分"
     },
     {
       "id": "D",
-      "text": "無法判斷任何關係"
+      "text": "18 公分"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,71 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "三組對應邊皆為 1：2，故依 SSS 判定相似。"
+    "value": "C",
+    "explanation": "已知小：大＝5：8，對應邊也遵守同一倍率，因此 10：x＝5：8，x＝10×8÷5＝16 公分，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似形 題型與官方課綱 KG kg-math-content-s-9-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=68&cfsn=347&fn=112-1-1-9%E6%95%B8%E5%AD%B8.pdf&op=dlfile",
+    "sourceLocator": "改寫參照：花蓮縣立吉安國中112學年度第1學期第1次段考PDF第1頁第3題的多邊形對應邊比例求值；此題的倍率與數字均重新設計。",
+    "authoringNote": "原創未知對應邊題，只參照公開公校題目所測的同倍率比例推理，不重製其題幹或數據。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=68&cfsn=347&fn=112-1-1-9%E6%95%B8%E5%AD%B8.pdf&op=dlfile",
+      "title": "花蓮縣立吉安國中112學年度第1學期第1次段考九年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "PDF第1頁第3題",
+      "observedPattern": "以已知的多邊形對應邊長比建立共同倍率並求未知邊；本題不採三角形或高的應用。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把已知的小圖：大圖倍率套用到任一對應邊，不需要三角形高。",
+  "solutionSteps": [
+    "讀出對應長度倍率小：大＝5：8。",
+    "未知對應邊與已知小圖邊長使用相同比例。",
+    "列式10：x＝5：8。",
+    "計算x＝10×8÷5＝16公分。",
+    "選 C，且16大於10符合放大方向。"
+  ]
 }

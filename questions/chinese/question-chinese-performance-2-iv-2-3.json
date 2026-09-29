@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-2-iv-2-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "朋友說明旅行計畫後，你不確定集合時間。哪個回應最恰當？",
+  "prompt": "同學說「延後集合一定會讓大家更輕鬆」；哪個回應能澄清隱含條件？",
   "options": [
     {
       "id": "A",
-      "text": "我直接猜一個時間就好。"
+      "text": "你錯了，延後只會更糟。"
     },
     {
       "id": "B",
-      "text": "我確認一下，我們是星期六上午八點在車站集合嗎？"
+      "text": "大家更輕鬆，不必再查條件。"
     },
     {
       "id": "C",
-      "text": "你講得太差了，重說一遍。"
+      "text": "若延後集合，交通和工作人員時間是否能配合？你根據什麼判斷大家更輕鬆？"
     },
     {
       "id": "D",
-      "text": "反正到時候再看著辦。"
+      "text": "我也覺得輕鬆，這就算證明。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-2-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "重述已理解的內容並提出確認問題，可避免因誤聽造成錯誤。"
+    "value": "C",
+    "explanation": "一定背後有交通、工作、時間與受影響者等假設；回應要把未說出的條件拉出來。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究聽聞、邏輯提問與回饋能力方向（重述與確認）；另以官方語文領域課綱核對 2-Ⅳ-2（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究開放追問、證據回饋、例外、協商與可修正行動。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文口語表達與討論回饋 Ab-Ⅳ-2 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-2-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-2-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "討論提問、回饋與論證",
+      "observedPattern": "公立學校國文評量以開放追問、群體詞、隱含條件、證據回饋、反例、協商執行欄位、成效與代價及修正循環要求口語互動；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "公共議題、條件與多方回應",
+      "observedPattern": "公立學校國文評量以開放追問、群體詞、隱含條件、證據回饋、反例、協商執行欄位、成效與代價及修正循環要求口語互動；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "圈出絕對詞，再逐一追問對象、資源、例外與支持判斷的資料。",
+  "solutionSteps": [
+    "讀題定位：圈出「隱含條件」與主張、群體詞、條件、回饋、例外或執行欄位。",
+    "拆解互動：先確認對方真正說了什麼，再依「一定背後有交通、工作、時間與受影響者等假設；回應要把未說出的條件拉出來。」設計可查證、可回應的問題。",
+    "核對正解：選項 C 能降低模糊、保留不同聲音，並把討論推向可執行與可檢查的下一步。",
+    "排除誘答：檢查是否用權威、嘲諷、盲信、單一成功案例或投票取代理由與條件分析。",
+    "回讀驗證：確認問題、回饋、行動責任與評估方式形成完整的協商循環。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -1,0 +1,37 @@
+{
+  "decision": "D-357",
+  "date": "2026-09-28",
+  "unit": "Ac-Ⅳ-2",
+  "scope": "Expose the existing original six-stage lesson in the learner-facing content sections; preserve draft/review gates.",
+  "before": {
+    "learnerVisibleSections": 2,
+    "authoredTeachingStages": 6,
+    "reviewStatus": "draft"
+  },
+  "after": {
+    "learnerVisibleSections": 7,
+    "authoredTeachingStages": 6,
+    "allSixStagesVisible": true,
+    "reviewStatus": "draft"
+  },
+  "checks": {
+    "targetRegression": "pass",
+    "npmTest": "pass; workbench traversal 1027/1027",
+    "validateData": "pass; 14477 JSON, 13112 IDs, 1032 KG nodes",
+    "siteIndex": "pass; 1052 lessons, 10526 question paths, 40 mapping sets",
+    "browserPlaywright": "pass in authorized environment; full traversal 1027/1027, Ac-IV-2 six authored stages visibly rendered, 320/375/768 widths, no page errors",
+    "browserRuntime": "Python Playwright 1.58.0; bundled Chromium 1208 path exists",
+    "diffCheck": "pass"
+  },
+  "fusionBoundary": "This exposes previously authored original content; it does not complete three-publisher textbook review. Publisher evidence slots remain pending, reviewStatus remains draft, and implementation-spec QA is not promoted.",
+  "publicExamLedger": "Read-only current scan: 10566/10566 unit questions recorded, pending 0; no ledger rewrite performed.",
+  "publisherLedger": "Current spec scan: 285/3081 publisher slots verified, 2796 pending; 932/1027 units have at least one pending slot.",
+  "files": [
+    "lessons/english/lesson-english-content-ac-iv-2.json",
+    "implementation/runtime/english-ac-iv-2-visible-fusion.test.mjs",
+    "scripts/browser_smoke_test.py",
+    "package.json"
+  ],
+  "commitPush": "not performed",
+  "subtasks": "none"
+}

@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-iv-2-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "短文：「校園樹木有三種主要用途：遮蔭、降低風速、提供鳥類棲息地。」這段主要採用哪種說明方式？",
+  "prompt": "若要說明校園午餐剩食，哪句最適合作為段落開頭？",
   "options": [
     {
       "id": "A",
-      "text": "因果"
+      "text": "本校上月記錄三個年級午餐剩食量，七年級平均每人每日較高。"
     },
     {
       "id": "B",
-      "text": "比較"
+      "text": "剩食問題真的很糟。"
     },
     {
       "id": "C",
-      "text": "定義"
+      "text": "大家都知道要珍惜食物。"
     },
     {
       "id": "D",
-      "text": "列舉"
+      "text": "我最討厭看到便當被倒掉。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "逐項列出樹木的三種用途，屬於列舉。"
+    "value": "A",
+    "explanation": "A 交代時間、對象與可比較結果，能作為客觀說明的資料起點。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究說明方法與閱讀理解能力方向（列舉辨識）；另以官方語文領域課綱核對 Bc-Ⅳ-2（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究描述、列舉、因果、問題解決、比較、分類與定義。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫說明文組織題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文組織、定義與推論",
+      "observedPattern": "公立學校國文評量要求辨認說明文的描述、列舉、因果、比較、分類、定義與問題解決組織；本題使用全新公共與校園議題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "列舉、因果與問題解決",
+      "observedPattern": "公立學校國文評量要求辨認說明文的描述、列舉、因果、比較、分類、定義與問題解決組織；本題使用全新公共與校園議題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找範圍、時間、對象與結果，再排除情緒或口號。",
+  "solutionSteps": [
+    "圈出上月與三個年級。",
+    "確認平均每人每日提供比較單位。",
+    "檢查句子先描述資料而非先下評價。",
+    "A 最能開啟後續說明。",
+    "補上樣本數或測量方法以提高可檢查性。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -49,7 +49,7 @@
     "authoringNote": "本課以官方課綱 C、Ca、Cb 節點與南一、康軒、翰林可公開定位的版本資料為研究依據，重新組織為原創教學；未複製或改寫出版社課文、插圖、習題、答案或教師用書。公開資料不足以確認完整出版社頁面時，僅採章節定位與教學方向。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "操作粒子模型，從組成與排列推理物質性質，再以可觀察證據檢查模型。",
@@ -93,6 +93,17 @@
         ],
         "answer": "A",
         "feedback": "蒸發利用揮發性差異分離成分；要判斷化學反應，仍須尋找新的化學性質證據。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "若粒子模型能預測導電，卻無法解釋蒸發後可回收食鹽，下一步最合理的是什麼？",
+        "options": [
+          "保留已支持的導電假設，補測組成與物理分離證據，指出模型尚未涵蓋的部分再修正",
+          "刪除蒸發資料，因為模型已能解釋一項性質就代表完整",
+          "把所有材料都改畫成相同粒子，讓結果看起來一致"
+        ],
+        "answer": "A",
+        "feedback": "模型需逐項對照證據；保留支持部分、標示限制並提出可檢驗修正，比刪除反例更可靠。"
       }
     ]
   },
@@ -100,40 +111,55 @@
   "lessonScope": "theme",
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與官方課綱對照資料",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "主題 C 物質的結構與功能；Ca 物質的分離與鑑定、Cb 原子與分子相關單元定位",
-      "sourceUrl": "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "chapterLocator": "新北市光復高中翰林版七年級自然課程計畫附件；C 物質結構、性質功能與表徵評量；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "teaching-sequence", "activity-pattern", "assessment-pattern"],
-      "outcome": "公開定位支持由物質分類、分離鑑定銜接原子分子與結構性質關係；本課將兩條概念線整合成證據驅動的原創學習路徑。",
-      "copyrightBoundary": "只採公開課程定位、課綱概念與教學方向；未取得的課本、習作及教師用書內容不複製、不改寫。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄hanlin公立校方或官方公開結構對「C：物質的結構與功能」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音與課程資源",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "自然科主題 C 物質的結構與功能；混合物處理、粒子模型與元素化合物概念的公開資源定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市三民高中康軒版七年級自然課程計畫附件；C 物質結構、性質、分類與實驗評量；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "公開資源呈現由可見現象進入微觀模型、再回到實驗判讀的方向；本課另創無標籤材料卡、粒子模型和模型失效任務。",
-      "copyrightBoundary": "只研究公開資源的單元定位與活動類型；正文、材料卡、選項、回饋與互動規則均為本課原創。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「C：物質的結構與功能」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然教材公開產品資訊與校方課程計畫交叉資料",
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "主題 C 物質的結構與功能；由物質性質、原子分子模型連結應用的單元方向；完整出版社頁面未公開",
-      "sourceUrl": "https://books.hanlin.com.tw/productall",
+      "chapterLocator": "臺南市歸仁國中南一版七年級自然課程計畫；C 物質組成、粒子模型、性質與功能；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "teaching-sequence", "activity-pattern", "assessment-pattern"],
-      "outcome": "公開產品資訊可支持情境化、圖像化與生活應用的方向；本課以導電材料、食鹽水與分離任務建立自己的證據鏈，不把產品簡介當作全文。",
-      "copyrightBoundary": "只採公開產品結構與可追溯單元方向；不複製課文、插圖、練習、答案、影音字幕或教師用內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「C：物質的結構與功能」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -141,9 +167,27 @@
       "publisher": "nani",
       "edition": "南一版國中自然公開定位資料",
       "sourceType": "public-web",
-      "sourceLocator": "官方課綱自然科學領域 PDF，正文第 22～30 頁／PDF 第 26～34 頁；主題 C、Ca、Cb 節點",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts":["物質可由組成、性質與結構加以描述。","混合物的分離與物質鑑定應以可觀察性質支持。","原子與分子模型用來連結微觀組成與宏觀功能。"],"representations":["分離流程、性質比較表、粒子示意圖與化學式互相轉譯。"],"examplesOrEvidence":["本課以砂與鐵屑、食鹽水、銅線及糖水設計全新材料卡與對照操作。"],"misconceptions":["均勻外觀不等於單一物質；溶解不等於消失；模型圖不是真實粒子的比例照片。"],"assessmentEmphasis":["由資料選擇方法，說明結論的證據與限制，再將結構性質關係遷移到新材料。"]},
+      "sourceLocator": "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf；官方課綱自然科學領域 PDF，正文第 22～30 頁／PDF 第 26～34 頁；主題 C、Ca、Cb 節點",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "物質可由組成、性質與結構加以描述。",
+          "混合物的分離與物質鑑定應以可觀察性質支持。",
+          "原子與分子模型用來連結微觀組成與宏觀功能。"
+        ],
+        "representations": [
+          "分離流程、性質比較表、粒子示意圖與化學式互相轉譯。"
+        ],
+        "examplesOrEvidence": [
+          "本課以砂與鐵屑、食鹽水、銅線及糖水設計全新材料卡與對照操作。"
+        ],
+        "misconceptions": [
+          "均勻外觀不等於單一物質；溶解不等於消失；模型圖不是真實粒子的比例照片。"
+        ],
+        "assessmentEmphasis": [
+          "由資料選擇方法，說明結論的證據與限制，再將結構性質關係遷移到新材料。"
+        ]
+      },
       "licenseBoundary": "只使用公開課綱的概念與定位；不複製或改寫任何未公開的出版社課文、習題、圖片或教師用書。"
     },
     {
@@ -151,8 +195,25 @@
       "edition": "康軒版國中自然公開影音資源",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然科公開資源的單元與活動方向定位",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts":["由現象提出問題，再用粒子模型與性質資料解釋。","操作與圖像表徵應互相檢查，而非只背分類名稱。"],"representations":["物質分類樹、粒子排列圖、性質矩陣與實驗證據卡。"],"examplesOrEvidence":["本課自編材料卡、模型調整器與模型失效任務，不採用公開影音的字幕或題目。"],"misconceptions":["只看到變色就斷定化學反應；把原子、分子、元素和化合物當同義詞。"],"assessmentEmphasis":["要求學習者以觀察結果支持分類與模型，並指出尚不能由資料推出的結論。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "由現象提出問題，再用粒子模型與性質資料解釋。",
+          "操作與圖像表徵應互相檢查，而非只背分類名稱。"
+        ],
+        "representations": [
+          "物質分類樹、粒子排列圖、性質矩陣與實驗證據卡。"
+        ],
+        "examplesOrEvidence": [
+          "本課自編材料卡、模型調整器與模型失效任務，不採用公開影音的字幕或題目。"
+        ],
+        "misconceptions": [
+          "只看到變色就斷定化學反應；把原子、分子、元素和化合物當同義詞。"
+        ],
+        "assessmentEmphasis": [
+          "要求學習者以觀察結果支持分類與模型，並指出尚不能由資料推出的結論。"
+        ]
+      },
       "licenseBoundary": "僅研究公開資源的章節定位與教學方向；不複製影音文字、圖片、題目、答案或解說。"
     },
     {
@@ -160,26 +221,43 @@
       "edition": "翰林版國中自然公開產品與課程計畫定位資料",
       "sourceType": "public-web",
       "sourceLocator": "https://books.hanlin.com.tw/productall；自然科單元化、圖像化與生活應用方向定位；未取得完整出版社頁面",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts":["生活材料的功能可追問其組成與結構，而不是只記用途。","圖像模型應回到測量或操作證據檢核。"],"representations":["功能—性質—結構三欄表、組成比例圖和虛擬粒子模型。"],"examplesOrEvidence":["本課用銅線導電、食鹽水分離與糖水辨識建立不同於版本教材的整合練習。"],"misconceptions":["用途相同就代表成分相同；分離出成分就代表發生化學反應；模型畫得像就等於證明。"],"assessmentEmphasis":["比較不同材料的證據強度，能說出模型的適用範圍與下一個安全檢驗。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "生活材料的功能可追問其組成與結構，而不是只記用途。",
+          "圖像模型應回到測量或操作證據檢核。"
+        ],
+        "representations": [
+          "功能—性質—結構三欄表、組成比例圖和虛擬粒子模型。"
+        ],
+        "examplesOrEvidence": [
+          "本課用銅線導電、食鹽水分離與糖水辨識建立不同於版本教材的整合練習。"
+        ],
+        "misconceptions": [
+          "用途相同就代表成分相同；分離出成分就代表發生化學反應；模型畫得像就等於證明。"
+        ],
+        "assessmentEmphasis": [
+          "比較不同材料的證據強度，能說出模型的適用範圍與下一個安全檢驗。"
+        ]
+      },
       "licenseBoundary": "只採公開產品與課程定位的可追溯資訊；不複製或改寫受保護課文、圖片、習題、解答及教師用內容。"
     }
   ],
   "fusionRecord": {
     "commonCore": [
-      "三版本公開資料都把物質的可觀察性質與組成、結構的解釋連結起來。",
-      "三版本共同支持以分離、鑑定、粒子模型和生活應用建立證據鏈。",
-      "官方課綱 C 主題可由 Ca 的物質處理銜接 Cb 的原子、分子與排列概念。"
+      "三版本公開線索共同支持從組成與粒子排列推理物質性質，再用分離、導電、溶解與反應資料檢查模型。",
+    "原子、分子、元素、化合物、物性／化性與證據限制是共同能力核心。",
+    "從粒子組成解釋宏觀性質時，先判斷物質是元素、分子化合物或混合物，再選擇導電、溶解或反應證據支持分類。"
     ],
     "versionDifferences": [
-      "南一公開定位較能確認由物質分類與分離鑑定通往粒子模型的概念序列；康軒公開資源較強調由現象操作進入圖像模型；翰林公開資訊較突出情境化、圖像化與功能應用。"
+      "南一公開定位偏向物質組成與分離鑑定；康軒線索偏向原子分子、元素化合物與性質；翰林線索偏向結構排列、模型與探究證據。公開資料不足以宣稱取得完整教材內容。"
     ],
     "originalAdditions": [
-      "以無標籤材料卡把食鹽水、糖水、砂與鐵屑及銅線放在同一條證據任務中。",
-      "以「組成—排列—性質—功能」四格模型要求學習者同時提出預測與限制。",
-      "設計保留失敗模型的互動修正，讓學習者區分溶解、物理分離與化學反應。"
+      "以粒子模型工作台串接組成、排列、導電、溶解、熔點與反應資料，讓學習者往返微觀與宏觀層次。",
+    "把溶液導電直接等同原粉末是金屬、化合物都能過濾、單一性質足以決定結構列為單元迷思診斷。",
+    "比較固體、熔融態和水溶液的導電結果並配合化學反應觀察，要求說明每項測試的適用條件及不能單獨推出的微觀結構。"
     ],
-    "llmSynthesisNote": "我依官方課綱與三版本可取得公開資料，將原本分散的物質分類、分離鑑定及原子分子模型重新編排成一篇以證據推理為主軸的完整課文；所有例子、段落、問題、回饋與互動任務均針對 C 主題獨立設計，未複製出版社受保護內容。完整出版社課本未公開，因此本課維持 draft，待後續 AI 第二輪審查。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校公開自然科試題／課程資料能力方向，重新組織物質組成、粒子模型、結構與功能；已移除原先與單元無關的溶液質量批次題，10 題題幹、選項、答案、解析與五步解法均為原創，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -258,10 +336,34 @@
       "objective": "比較元素、分子、化合物與混合物的粒子模型，並用性質測試判斷模型能否支持材料功能。",
       "predictionPrompt": "在操作前預測：若只改變粒子排列而不改變粒子種類，哪些性質可能改變？若加入第二種粒子，哪些分離或導電證據會出現？",
       "steps": [
-        {"id":"step-1","action":"選擇一種材料並放入對應粒子卡","equation":"組成 = 粒子種類 + 數量比例","reason":"先把材料的組成與外觀名稱分開，才能比較元素、化合物與混合物。","feedback":"若模型只寫材料名稱，請補上粒子種類和比例；比例固定與否是分類的重要證據。"},
-        {"id":"step-2","action":"拖曳粒子改變排列但保留組成","equation":"性質預測 = f(排列、作用力、可移動粒子)","reason":"同樣的粒子可能因排列與彼此作用不同而有不同硬度、導電或熔化表現。","feedback":"不要把顏色當作結構；請指出哪一個排列特徵能對應到測試結果。"},
-        {"id":"step-3","action":"執行分離、導電與加熱三項虛擬測試","equation":"證據 → 支持或削弱模型","reason":"不同測試回答不同問題，單一結果不能同時證明組成、結構與反應。","feedback":"將每項結果寫入證據表，標示直接觀察、推論與尚未知的部分。"},
-        {"id":"step-4","action":"保留原模型並修正一個微觀假設","equation":"新模型 = 原模型 + 可檢驗修正","reason":"保留失敗模型和原始資料，才能看出修正究竟改善了哪一項預測。","feedback":"若修正後仍與結果不符，提出下一個控制變因或測試，不要刪除反例。"}
+        {
+          "id": "step-1",
+          "action": "選擇一種材料並放入對應粒子卡",
+          "equation": "組成 = 粒子種類 + 數量比例",
+          "reason": "先把材料的組成與外觀名稱分開，才能比較元素、化合物與混合物。",
+          "feedback": "若模型只寫材料名稱，請補上粒子種類和比例；比例固定與否是分類的重要證據。"
+        },
+        {
+          "id": "step-2",
+          "action": "拖曳粒子改變排列但保留組成",
+          "equation": "性質預測 = f(排列、作用力、可移動粒子)",
+          "reason": "同樣的粒子可能因排列與彼此作用不同而有不同硬度、導電或熔化表現。",
+          "feedback": "不要把顏色當作結構；請指出哪一個排列特徵能對應到測試結果。"
+        },
+        {
+          "id": "step-3",
+          "action": "執行分離、導電與加熱三項虛擬測試",
+          "equation": "證據 → 支持或削弱模型",
+          "reason": "不同測試回答不同問題，單一結果不能同時證明組成、結構與反應。",
+          "feedback": "將每項結果寫入證據表，標示直接觀察、推論與尚未知的部分。"
+        },
+        {
+          "id": "step-4",
+          "action": "保留原模型並修正一個微觀假設",
+          "equation": "新模型 = 原模型 + 可檢驗修正",
+          "reason": "保留失敗模型和原始資料，才能看出修正究竟改善了哪一項預測。",
+          "feedback": "若修正後仍與結果不符，提出下一個控制變因或測試，不要刪除反例。"
+        }
       ],
       "evidencePrompt": "請提交一份四欄紀錄：材料分類、粒子模型、測試證據、模型限制；並用一句條件式結論說明你如何由結構推論功能。"
     }

@@ -2,41 +2,76 @@
   "id": "question-chinese-six-forms-character-making-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "指事字常表示？",
+  "prompt": "「上」的字形用短線標示基準線上方，這種造字思路最接近？",
   "options": [
     {
       "id": "A",
-      "text": "抽象概念或位置"
+      "text": "象形"
     },
     {
       "id": "B",
-      "text": "人物姓名"
+      "text": "指事"
     },
     {
       "id": "C",
-      "text": "文章段落"
+      "text": "會意"
     },
     {
       "id": "D",
-      "text": "外來語"
+      "text": "形聲"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ab-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "指事以符號或位置提示抽象概念。"
+    "value": "B",
+    "explanation": "指事用抽象符號或位置標記表示難以直接描繪的概念，上方位置正是此類線索。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-six-forms-character-making-2.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究象形、指事、會意、形聲與部件查證能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫六書與造字題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-six-forms-character-making"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-six-forms-character-making",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字形、造字與語境",
+      "observedPattern": "公立學校國文評量從字形部件、字義線索與語境要求辨認造字方式，並區分象形、指事、會意及形聲；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字形結構、形音義與閱讀",
+      "observedPattern": "公立學校國文評量從字形部件、字義線索與語境要求辨認造字方式，並區分象形、指事、會意及形聲；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "找『位置、標記、指示』等抽象提示，不要因字形簡單就誤判為象形。",
+  "solutionSteps": [
+    "讀題定位：圈出「指事線索」與字形部件、位置、意義或讀音線索。",
+    "拆解構形：分別說明部件可能提供的功能，再連回整字與語境；本題核心是「指事用抽象符號或位置標記表示難以直接描繪的概念，上方位置正是此類線索。」",
+    "核對正解：選項 B 同時符合造字法定義、部件功能與查證界線。",
+    "排除誘答：檢查是否把形旁當聲旁、把線索當定論，或只憑現代字形外觀硬猜字源。",
+    "回讀驗證：以字源資料、字典讀音與完整詞語重新檢查，確認形、音、義的推論都有證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

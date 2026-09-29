@@ -1,0 +1,27 @@
+{
+  "runDate": "2026-09-07",
+  "tool": "Chromium via CUA Playwright and accessibility tree",
+  "url": "http://127.0.0.1:8765/implementation/workbench.html",
+  "unitId": "cur-social-content-civ-cd-iv-3",
+  "unitTitle": "公 Cd-Ⅳ-3：立法保障公平勞動參與",
+  "renderer": "ScenarioDecisionBlock",
+  "steps": [
+    {"name": "predict", "control": "提交預測", "observed": true},
+    {"name": "manipulate", "control": "操作一步", "observed": true},
+    {"name": "observe", "control": "記錄觀察", "observed": true},
+    {"name": "explain", "control": "提交解釋", "observed": true},
+    {"name": "verify", "control": "檢核並顯示局部回饋", "observed": true}
+  ],
+  "input": {
+    "label": "用一句話說明觀察到的關係",
+    "value": "改變勞動參與的制度條件後，證據顯示可參與的機會與結果也會改變。"
+  },
+  "assertions": {
+    "unitSpecificTextPresent": true,
+    "namedControlsPresent": true,
+    "keyboardAndTextFallbackExposed": true,
+    "verifyGatedUntilObserve": true,
+    "finalStatus": "狀態：已檢核；先提供分層提示，不直接代答"
+  },
+  "scope": "此報告證明一個社會科 lesson 的真實瀏覽器互動流程與局部回饋；不宣稱 1,027 個 spec 的每個互動已完成內容正確性、視覺化審查、螢幕閱讀器實機 QA 或發布核准。"
+}

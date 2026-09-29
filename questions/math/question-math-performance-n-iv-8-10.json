@@ -2,15 +2,11 @@
   "id": "question-math-performance-n-iv-8-10",
   "subject": "math",
   "type": "single-choice",
-  "lessonId": "lesson-math-performance-n-iv-8",
-  "knowledgeIds": [
-    "kg-math-performance-n-iv-8"
-  ],
-  "prompt": "一個等差級數首項為 12、公差為 −2，前 9 項的和是多少？",
+  "prompt": "兩個等差級數都從 2 開始並以 2 為公差，第一個取前 10 項，第二個取前 8 項；兩者和相差多少？",
   "options": [
     {
       "id": "A",
-      "text": "30"
+      "text": "38"
     },
     {
       "id": "B",
@@ -18,25 +14,72 @@
     },
     {
       "id": "C",
-      "text": "42"
+      "text": "40"
     },
     {
       "id": "D",
-      "text": "48"
+      "text": "44"
     }
   ],
-  "answer": {
-    "value": "B",
-    "explanation": "第 9 項為 12＋8×(−2)＝−4，前 9 項和為 (12＋(−4))×9÷2＝36。"
-  },
+  "knowledgeIds": [
+    "kg-math-performance-n-iv-8"
+  ],
   "difficulty": "medium",
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
+  "answer": {
+    "value": "A",
+    "explanation": "前 10 項末項 20，和=10(2+20)/2=110；前 8 項末項 16，和=8(2+16)/2=72；差為 38，選 A。"
+  },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度第二學期第一次段考數學科；參考等差級數求和、首尾平均、項數與生活情境題型",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
-  }
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供等差級數和能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數列方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "等差級數前 n 項和、首末項、項數反推、負公差、Sigma 表示與排列情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把等差級數和放入座位、階梯或分段數量，要求由首末項、項數與公差轉換並驗算總量；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "等差級數前 n 項和、首末項、項數反推、負公差、Sigma 表示與排列情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把等差級數和放入座位、階梯或分段數量，要求由首末項、項數與公差轉換並驗算總量；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分別求兩個前 n 項和，再相減比較。",
+  "solutionSteps": [
+    "前 10 項末項=2+9×2=20，和=110。",
+    "前 8 項末項=2+7×2=16，和=72。",
+    "兩和相減 110-72=38。",
+    "將 38 對照選項 A。",
+    "所以選 A。"
+  ]
 }

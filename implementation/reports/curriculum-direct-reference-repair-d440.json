@@ -1,0 +1,27 @@
+{
+  "decisionId": "D-440",
+  "date": "2026-09-29",
+  "phase": "direct-curriculum-reference-completeness-for-existing-authored-lessons",
+  "status": "pass",
+  "scope": {
+    "authoredLessonRosterBefore": "769/791",
+    "missingDirectOfficialCurriculumReferences": [
+      "lesson-social-content-hist-oa-iv-2",
+      "lesson-english-performance-6-iv-5",
+      "lesson-english-performance-7-iv-1"
+    ],
+    "change": "Added each exact curriculum source URL from its linked curriculum JSON to lesson.studyReferences; no manuscript, publisher research, question, or roster count changed."
+  },
+  "sourceVerification": {
+    "curriculumRecords": [
+      "curriculum/social/content-hist-oa-iv-2.json",
+      "curriculum/english/performance-6-iv-5.json",
+      "curriculum/english/performance-7-iv-1.json"
+    ],
+    "officialSource": "National Academy for Educational Research curriculum PDFs; social curriculum PDF and English curriculum PDF both resolved during this turn. Exact standard codes and locators are held in the curriculum records.",
+    "publisherEvidenceCaveat": "Direct curriculum URL coverage is distinct from completeness/authenticity of publisher-version evidence; school plans, publisher portals, and publisher-authored textbook chapters are not interchangeable."
+  },
+  "questionSourceLedger": "Not rerun; no question files or provenance changed. Latest fresh ledger D-438 reports 10566/10566 recorded and pending 0.",
+  "validation": "PASS: scripts/validate_data.py validated 14550 JSON files, 13114 IDs, 1032 KG nodes; roster audit confirms 769/769 authored lessons have an official NAER curriculum URL and all three repaired lesson URLs exactly match their curriculum source.url. git diff --check PASS.",
+  "commitPush": "Not performed; overall goal remains active."
+}

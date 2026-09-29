@@ -2,23 +2,23 @@
   "id": "question-science-content-ma-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年2月7日學校研究社的觀察中，針對「Ma：科學、技術及社會的互動關係」提出可檢驗的科學問題，若比較 4 組、每組取樣 13 份資料，哪一項設計最適當？",
+  "prompt": "模型預測雨水系統每月可供水 500 L，但實測只有 350 L；最適合的下一步是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ma：科學、技術及社會的互動關係」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "檢查降雨、集水效率、漏水、蒸發與使用量等假設，再以新資料修正模型"
     },
     {
       "id": "B",
-      "text": "研究「Ma：科學、技術及社會的互動關係」時只測量4組中的一組就直接下結論"
+      "text": "直接把 500 L 當成真實結果"
     },
     {
       "id": "C",
-      "text": "研究「Ma：科學、技術及社會的互動關係」時只改變溶液濃度，其餘條件一致，設置4組、每組取樣13份並各重複測量4次"
+      "text": "因模型不準就放棄所有測量"
     },
     {
       "id": "D",
-      "text": "研究「Ma：科學、技術及社會的互動關係」時先決定結論，再挑選支持結論的13筆資料"
+      "text": "只挑 350 L 以外的資料"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ma：科學、技術及社會的互動關係」。"
+    "value": "A",
+    "explanation": "模型是有條件的預測；實測差異可用來檢查假設與損失路徑，不能直接把任一數值當成永久真值。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的科學證據、技術設計、系統限制、成本風險與社會決策能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ma"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ma",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "科學證據、技術應用與環境決策",
+      "pattern": "取公立學校自然科評量以資料證據、方案限制、環境影響和生活決策推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以資料證據、方案限制、環境影響和生活決策推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "科學與生活科技、風險與資料判讀",
+      "pattern": "取公開會考以圖表、控制變因、證據界線和方案取捨評估的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、控制變因、證據界線和方案取捨評估的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "技術方案、能源、成本與社會影響",
+      "pattern": "取公立國中試題以科學解釋、工程設計、成本風險和多條件決策的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以科學解釋、工程設計、成本風險和多條件決策的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把預測與觀察並列，逐項尋找輸入、轉換與損耗的差異。",
+  "solutionSteps": [
+    "先把敘述分成科學主張、技術設計和社會選擇。",
+    "列出方案的輸入、輸出、限制、成本與受影響者。",
+    "檢查資料是觀察、模型預測還是價值判斷。",
+    "比較替代方案並找出風險由誰承擔、利益由誰取得。",
+    "用條件式結論說明目前能決定什麼與還需補什麼證據。"
+  ]
 }

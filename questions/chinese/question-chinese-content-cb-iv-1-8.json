@@ -2,23 +2,23 @@
   "id": "question-chinese-content-cb-iv-1-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "傳統孝道文章若要深入閱讀，除了找出主旨還應注意什麼？",
+  "prompt": "一份家譜只記錄男性直系長輩，卻用它宣稱『這就是完整家族史』。閱讀時應先指出什麼？",
   "options": [
     {
       "id": "A",
-      "text": "作者所處時代與文中對責任、權利的看法"
+      "text": "記錄範圍排除了其他親屬與女性經驗，不能直接代表完整家族史"
     },
     {
       "id": "B",
-      "text": "只記住結論，不理解理由"
+      "text": "只要年代久遠就必然完整"
     },
     {
       "id": "C",
-      "text": "把不同情境混為一談"
+      "text": "家譜中的名字一定比口述可靠"
     },
     {
       "id": "D",
-      "text": "跳過檢查步驟"
+      "text": "刪掉部分人物能讓歷史更客觀"
     }
   ],
   "knowledgeIds": [
@@ -27,13 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "把主旨放回時代背景，並檢視責任與權利，能避免只接受表面教訓。"
+    "explanation": "家譜的選取方式決定能看見哪些關係，若只記男性直系，就不能宣稱涵蓋完整家族經驗，應補查其他來源。"
   },
   "provenance": {
     "origin": "original",
-    "license": "All rights reserved", "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf", "sourceLocator": "孝道文本與時代脈絡；獨立命題", "authoringNote": "獨立改編，非原題重製"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究親屬、倫理、儀式、制度角色與史料範圍。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫親屬倫理與制度文化文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-cb-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-cb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "親屬、規範與文本判讀",
+      "observedPattern": "公立學校國文評量要求判讀親屬關係、倫理選擇、儀式功能、制度規範、角色責任與證據界線；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "倫理情境、角色與因果",
+      "observedPattern": "公立學校國文評量要求判讀親屬關係、倫理選擇、儀式功能、制度規範、角色責任與證據界線；本題採全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先檢查史料的記錄者、範圍與被排除者，再判斷結論大小。",
+  "solutionSteps": [
+    "辨認家譜的記錄對象。",
+    "列出沒有出現的親屬與經驗。",
+    "把『完整』視為需要證據的主張。",
+    "A 指出史料選擇造成的限制。",
+    "提出口述、照片或其他文件作交叉查證。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

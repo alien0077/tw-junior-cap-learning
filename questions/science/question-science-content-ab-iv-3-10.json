@@ -2,23 +2,23 @@
   "id": "question-science-content-ab-iv-3-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年11月6日社區環境站的觀察中，針對「Ab-Ⅳ-3：物理與化學性質」提出可檢驗的科學問題，若比較 3 組、每組取樣 18 份資料，哪一項設計最適當？",
+  "prompt": "觀察到物質顏色改變時，哪項說法最嚴謹？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "顏色改變可能是化學變化線索，但仍需檢查是否生成新物質"
     },
     {
       "id": "B",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時只改變攪拌速度，其餘條件一致，設置3組、每組取樣18份並各重複測量3次"
+      "text": "只要顏色改變就一定是化學變化"
     },
     {
       "id": "C",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時只測量3組中的一組就直接下結論"
+      "text": "顏色改變一定只是物理變化"
     },
     {
       "id": "D",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時先決定結論，再挑選支持結論的18筆資料"
+      "text": "顏色與物質種類沒有任何關係"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ab-Ⅳ-3：物理與化學性質」。"
+    "value": "A",
+    "explanation": "顏色改變可能伴隨新物質生成，也可能只是混合、光照或狀態造成；必須搭配其他證據判斷，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；物理與化學性質判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的物質性質、變化與證據判讀能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "物理／化學性質、物理／化學變化與證據判讀",
+      "pattern": "取由可觀察證據、組成與新性質區分物理及化學變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由可觀察證據、組成與新性質區分物理及化學變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把觀察結果與結論分層，避免由單一表象過度推論。",
+  "solutionSteps": [
+    "先記錄顏色改變這個觀察。",
+    "提出可能原因，包括反應、混合或外界條件。",
+    "檢查是否有新物質、氣體、沉澱或性質改變。",
+    "只有證據支持新物質時才能判定化學變化。",
+    "因此選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

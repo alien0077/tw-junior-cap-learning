@@ -2,23 +2,23 @@
   "id": "question-science-content-jc-iv-6-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年11月2日河川觀測站的觀察中，針對「Jc-Ⅳ-6：化學電池的放電與充電」提出可檢驗的科學問題，若比較 4 組、每組取樣 12 份資料，哪一項設計最適當？",
+  "prompt": "一次電池使用一段時間後電壓逐漸降低，最合理的解釋是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "反應物逐漸消耗或內部條件改變，使推動電子流動的能力下降"
     },
     {
       "id": "B",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時只改變光照時間，其餘條件一致，設置4組、每組取樣12份並各重複測量4次"
+      "text": "電池內的電子全部消失在空氣中"
     },
     {
       "id": "C",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時只測量4組中的一組就直接下結論"
+      "text": "電池的質量一定變成零"
     },
     {
       "id": "D",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時先決定結論，再挑選支持結論的12筆資料"
+      "text": "電壓降低表示燈泡變成電池"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,54 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Jc-Ⅳ-6：化學電池的放電與充電」。"
+    "value": "A",
+    "explanation": "放電消耗反應物並改變電極與電解質狀態，電池提供電能的能力可能下降；電子不會憑空消失。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的化學電池、電極、電解質、放電／充電與氧化還原能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jc-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jc-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "化學電池、電流、電極與資料判讀",
+      "pattern": "取由電池構造、電流現象與反應資料推論能量轉換及電極作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由電池構造、電流現象與反應資料推論能量轉換及電極作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "電池、電解質、電能與生活科技情境",
+      "pattern": "取從電路、電池資料與生活裝置判斷化學能與電能轉換的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從電路、電池資料與生活裝置判斷化學能與電能轉換的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把電壓資料和電池內化學反應的消耗連結。",
+  "solutionSteps": [
+    "記錄放電前後電壓與時間。",
+    "辨認電池內反應物是否逐漸消耗。",
+    "判斷可用化學能和電位差是否下降。",
+    "排除電子消失、質量歸零及角色顛倒。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

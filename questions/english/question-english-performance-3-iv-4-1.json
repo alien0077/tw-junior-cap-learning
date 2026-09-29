@@ -2,41 +2,63 @@
   "id": "question-english-performance-3-iv-4-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-4／理解簡易圖表」notice for the sports center, item 1: “Room 204 is closed today.” What does it tell people?",
+  "prompt": "A youth center chart lists: Robotics—Tue 4:00–5:30, Lab A; Choir—Wed 4:00–5:00, Music Room; Garden Team—Sat 9:00–11:00, Courtyard. Mia is free Wednesday after 4:00 and wants to sing. Which activity fits both clues?",
   "options": [
     {
       "id": "A",
-      "text": "For item 1 in the 3-Ⅳ-4／理解簡易圖表 notice, Room 204 cannot be used today."
+      "text": "Robotics in Lab A"
     },
     {
       "id": "B",
-      "text": "For item 1 in the 3-Ⅳ-4／理解簡易圖表 notice, Room 204 opens at midnight."
+      "text": "Garden Team in the Courtyard"
     },
     {
       "id": "C",
-      "text": "For item 1 in the 3-Ⅳ-4／理解簡易圖表 notice, Room 204 is the bus stop."
+      "text": "Choir in the Music Room"
     },
     {
       "id": "D",
-      "text": "For item 1 in the 3-Ⅳ-4／理解簡易圖表 notice, Room 204 is outside the building."
+      "text": "Any activity on Tuesday"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-4／理解簡易圖表, question 1."
+    "value": "C",
+    "explanation": "The chart gives Choir on Wednesday from 4:00 to 5:00 in the Music Room. That matches both Mia’s available day and her interest in singing; the other rows fail at least one condition."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=837&file=WVhSMFlXTm9Mekk0TDNCMFlWOHpORFUyWHpFd01EazJNalZmT1RNek56Z3VjR1Jt&fname=WW54RPOKRK4411HHHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54KLOKZTPOEH00A40405JG34MOTSRLSTB0WSHCGGRLDCTSROB0WXSWUSGGCDFCPK44JD25DGA0XWZWXSJCDCWS50B0CCNKVX51UTOOLKUSFCSWIGOOYSUSROXWQP104410VWYWOO14CGNPIGRO14KKUTXT04B5DCMKNKB0WSDCKLQKYWLKCD01WW04NKMOB03035HCKLB0QL14LPZTQP21UWTSVTKLSS54PKSW",
+    "sourceLocator": "PDF第4頁第43題：依社團成員興趣推定最可能參加的活動",
+    "authoringNote": "依公立學校公開段考的圖表／時刻表判讀能力模式獨立創作；原始情境、資料、題幹、選項、答案與解析均重新撰寫，僅作 pattern-only 參照。仍待完整內容與版權 QA。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=837&file=WVhSMFlXTm9Mekk0TDNCMFlWOHpORFUyWHpFd01EazJNalZmT1RNek56Z3VjR1Jt&fname=WW54RPOKRK4411HHHCLKRKZWQOTWWT14QO3435HGTX25LK40FCNKA054WW54KLOKZTPOEH00A40405JG34MOTSRLSTB0WSHCGGRLDCTSROB0WXSWUSGGCDFCPK44JD25DGA0XWZWXSJCDCWS50B0CCNKVX51UTOOLKUSFCSWIGOOYSUSROXWQP104410VWYWOO14CGNPIGRO14KKUTXT04B5DCMKNKB0WSDCKLQKYWLKCD01WW04NKMOB03035HCKLB0QL14LPZTQP21UWTSVTKLSS54PKSW",
+      "title": "新北市立三多國中113學年度第一學期八年級第一次段考英語科試題卷",
+      "year": "113-1",
+      "subject": "english",
+      "locator": "PDF第4頁第43題：依社團成員興趣推定最可能參加的活動",
+      "observedPattern": "題目把個人偏好／空閒時段和多列社團時地表對照，要求找出可行選項或由固定例行活動推知當下活動；本題改用全新資料。",
+      "pattern": "題目把個人偏好／空閒時段和多列社團時地表對照，要求找出可行選項或由固定例行活動推知當下活動；本題改用全新資料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把人物條件拆成「哪天有空」和「想做什麼」兩欄，逐列同時核對，不能只命中其中一項。",
+  "solutionSteps": [
+    "先圈出兩個條件：Mia 星期三四點後有空，而且想唱歌。",
+    "在表中找星期三的列，不先用活動名稱猜答案。",
+    "該列是 Choir，時間 4:00–5:00，地點為 Music Room。",
+    "合唱同時符合星期和興趣；機器人是星期二，園藝是星期六，皆不合。",
+    "因此選 C。讀表格的人物配對題要用所有限制交集，不可只看偏好。"
+  ]
 }

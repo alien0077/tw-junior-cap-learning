@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-3-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月8日校園實驗室的觀察中，一個物體質量為 380 g、體積為 95 cm³，研究「Eb-Ⅳ-3：平衡物體的合力與合力矩」時，其密度為何？",
+  "prompt": "一張靜止的懸臂招牌只提供『招牌重量向下、牆面支撐力向上、纜線拉力斜向上』三項資訊，卻未提供各力大小、作用位置或幾何尺寸。下列哪個結論可以直接確定？",
   "options": [
     {
       "id": "A",
-      "text": "4 g/cm³"
+      "text": "支撐力一定等於重量"
     },
     {
       "id": "B",
-      "text": "475 g/cm³"
+      "text": "所有力矩一定都等於零"
     },
     {
       "id": "C",
-      "text": "0.25 g/cm³"
+      "text": "一定能算出纜線張力的數值"
     },
     {
       "id": "D",
-      "text": "36100 g/cm³"
+      "text": "只知道招牌靜止就能知道每個力的大小"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "密度＝質量÷體積＝380÷95＝4 g/cm³。 本題對應 KG「Eb-Ⅳ-3：平衡物體的合力與合力矩」。"
+    "value": "B",
+    "explanation": "題目明示招牌靜止，表示平衡時合力與合力矩均為零；但未給數值與幾何資料，不能直接求出個別力大小。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作合力、合力矩、受力圖與平衡能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "本題取公立學校公開自然／理化試題的受力圖、力矩、平衡與生活結構判讀能力方向，題幹、選項、答案、解析與五步解法均以 Eb-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-3"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-eb-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "受力圖、平衡與力矩能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化試題常以吊掛物、槓桿、翹翹板與受力圖考查合力、力矩方向、支點及平衡條件；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "槓桿、力矩及平衡判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化試題常以吊掛物、槓桿、翹翹板與受力圖考查合力、力矩方向、支點及平衡條件；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%835-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "槓桿與靜力平衡能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化試題常以吊掛物、槓桿、翹翹板與受力圖考查合力、力矩方向、支點及平衡條件；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨靜止可推出的平衡條件，再檢查是否有足夠方程式與數據求個別未知量。",
+  "solutionSteps": [
+    "將靜止解讀為平移與轉動皆無加速度。",
+    "因此合力為零且合力矩為零。",
+    "檢查題目是否給各力大小與力臂，發現沒有。",
+    "所以只能確定平衡條件，不能求個別力數值。",
+    "在選項中只有 B 可直接確定，故選 B。"
+  ]
 }

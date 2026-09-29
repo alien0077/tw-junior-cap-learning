@@ -2,23 +2,23 @@
   "id": "question-science-content-ia-iv-3-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年12月27日河川觀測站的觀察中，小車在 11 秒內前進 1813 m，研究「Ia-Ⅳ-3：板塊運動與地震、火山及造山」時，平均速率為何？",
+  "prompt": "某火山附近出現小型地震增加、地表微幅隆起與氣體成分改變。若要評估是否可能有岩漿上升，下一步最合適的是？",
   "options": [
     {
       "id": "A",
-      "text": "19943 m/s"
+      "text": "只看到一次地震就宣布一定會大噴發"
     },
     {
       "id": "B",
-      "text": "0.00606729 m/s"
+      "text": "只測量當天氣溫便否定所有地質證據"
     },
     {
       "id": "C",
-      "text": "164.818 m/s"
+      "text": "刪除與預測不同的資料"
     },
     {
       "id": "D",
-      "text": "1802 m/s"
+      "text": "整合地震、地殼變形與氣體資料，持續監測並比較時間序列"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "平均速率＝路程÷時間＝1813÷11＝164.818 m/s。 本題對應 KG「Ia-Ⅳ-3：板塊運動與地震、火山及造山」。"
+    "value": "D",
+    "explanation": "D。應整合地震序列、GPS或雷達位移、火山氣體、地熱與地震波資料，並持續監測，不由單一訊號宣告即將噴發。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "三筆公立學校公開自然科試題中的板塊張裂、聚合、錯動、海溝、火山、地震、造山與模型限制能力；本題改寫為板塊運動原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ia-iv-3"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-ia-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取板塊張裂、聚合、錯動與地質結果的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "板塊張裂、聚合、錯動與地質結果",
+      "observedPattern": "公開自然科評量常要求由板塊相對運動判讀張裂、聚合、錯動、海溝、火山、地震、造山與模型限制；本題以全新板塊構造情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取海溝、火山、地震、造山與地質剖面的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "海溝、火山、地震、造山與地質剖面",
+      "observedPattern": "公開自然科評量常要求由板塊相對運動判讀張裂、聚合、錯動、海溝、火山、地震、造山與模型限制；本題以全新板塊構造情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取臺灣板塊、監測資料與模型限制的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "臺灣板塊、監測資料與模型限制",
+      "observedPattern": "公開自然科評量常要求由板塊相對運動判讀張裂、聚合、錯動、海溝、火山、地震、造山與模型限制；本題以全新板塊構造情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "整合多項監測資料，明確區分風險評估和確定預測。",
+  "solutionSteps": [
+    "圈出板塊相對方向、板塊性質、受力、地形與地震／火山證據。",
+    "依張裂、聚合或錯動建立邊界模型，標示海溝、中洋脊、斷層、褶皺與岩漿。",
+    "用地質剖面、震源分布、GPS或火山監測資料支持推論。",
+    "分開直接觀察、模型解釋與尚待查證的預測，避免把單一現象配成固定口號。",
+    "回查模型尺度、資料年代、不確定性與防災方案的可執行條件。"
+  ]
 }

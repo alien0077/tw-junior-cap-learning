@@ -1,0 +1,66 @@
+{
+  "reportId": "D-394",
+  "date": "2026-09-28",
+  "unit": "english 5-IV-9",
+  "lessonId": "lesson-english-performance-5-iv-9",
+  "knowledgeId": "kg-english-performance-5-iv-9",
+  "scope": "Replace a generic placeholder with original broadcast-note teaching and a working guided-choice interaction; preserve other existing fusion manuscripts and all questions.",
+  "status": "authored-manuscript-recorded; publisher-chapter-material-pending; user-ChatGPT-content-review-not-performed",
+  "curriculumSource": {
+    "url": "https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf",
+    "locator": "English curriculum outcome 5-Ⅳ-9: listen to a simple broadcast and record key points using simple words or sentences; distinguish adjacent outcomes for dialogue 5-Ⅳ-7 and story 5-Ⅳ-8.",
+    "role": "official-source-of-truth"
+  },
+  "publicTeachingReference": {
+    "url": "https://course.cyc.edu.tw/upfile/course114/sub1/15914468342525476.pdf",
+    "locator": "Public-school self-designed flexible course; weeks 3–4 volcano-news activity uses two playbacks, yes/no and 5W1H checks, reveals the transcript after listening for listen/read verification, then asks for a brief summary.",
+    "boundary": "School-authored flexible-course example, not publisher textbook evidence; only the general listen-again/check-afterward teaching sequence informed this original lesson."
+  },
+  "publisherEvidence": {
+    "nani": "The Da-Feng JH official listing labels a grade-7 English course plan as Nani; target 5-Ⅳ-9 chapter teaching was not verified.",
+    "kanghsuan": "Official plan portal checked; no readable target-unit lesson material retrieved.",
+    "hanlin": "Yunqing HS grade-7 course plan identifies Hanlin books 1–2; target broadcast-note sequence not located.",
+    "decision": "All three publisher-specific target-unit evidence slots remain pending. No claim of reading or fusing three complete publisher chapters."
+  },
+  "implementation": {
+    "visibleTeachingSections": 6,
+    "bodyContentParity": true,
+    "originalBroadcastSteps": 4,
+    "uniqueScripts": 4,
+    "keySkills": ["announcement purpose", "main message and audience action", "time/place/number details", "negation and replacement", "conditional or uncertain changes", "listen-again verification", "handoff test"]
+  },
+  "validation": {
+    "unitNodeRegression": "pass",
+    "dataSchema": {"status": "pass", "jsonFiles": 14507, "ids": 13114, "knowledgeGraphNodes": 1032},
+    "implementationSpecs": {"status": "pass", "specFiles": 1027, "errors": 0, "eligible": 8, "pending": 1019},
+    "siteIndex": {"status": "pass", "lessons": 1052, "questionPaths": 10526, "revision": "local"},
+    "browser": {
+      "status": "pass",
+      "runner": "scripts/test_english_performance_5_iv_9_browser.py",
+      "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "playwright": "1.58.0",
+      "chromium": "revision 1208",
+      "checks": ["6 visible sections", "4 unique broadcast scripts", "keyboard playback", "wrong-answer hint and correct-answer rationale", "collapsed transcript and keyboard disclosure", "speech-unavailable fallback", "external requests blocked", "320/375/768 widths with no overflow", "0 page errors"],
+      "limitation": "SpeechSynthesis was mocked; audible pronunciation, voice quality, and human listening experience were not evaluated."
+    },
+    "fullNpmTest": "pass",
+    "strictLessonIndependence": {"status": "pass", "lessons": 614, "riskCount": 0, "strictFailures": 0},
+    "diffCheck": "pass"
+  },
+  "authoredManuscriptInventory": {
+    "recorded": 729,
+    "total": 791,
+    "percent": 92.16,
+    "learningContent": "583/583",
+    "learningPerformance": "146/208",
+    "meaning": "Structural manuscript inventory only; it is not publisher-source completion or content review."
+  },
+  "questionSourceLedger": {
+    "lastVerified": "D-385",
+    "recorded": 10566,
+    "total": 10566,
+    "pending": 0,
+    "thisTurn": "Read-only revalidated with scripts/audit_question_exam_rewrites.py before lesson authoring; no questions changed and no question review rerun."
+  },
+  "commitPush": "Not performed; larger objective remains active."
+}

@@ -49,7 +49,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "操作虛擬樣品，依磁性、溶解度、粒徑與沸點選擇分離方法，並用對照證據鑑定產物。",
@@ -101,6 +101,17 @@
         ],
         "answer": "A",
         "feedback": "外觀只能提供線索；鑑定需要可重現的對照，還要說明晶體夾帶母液或其他可溶物的可能性。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "要報告分離結果的純度與完整性，還要補哪些資料？",
+        "options": [
+          "記錄各部分回收質量、空白／已知樣品對照與可能交叉污染，再比較總回收率",
+          "只看最後晶體顏色，因為顏色相同就代表純度相同",
+          "把遺失的材料省略，讓回收率看起來接近百分之百"
+        ],
+        "answer": "A",
+        "feedback": "回收率和對照能檢查操作損失與鑑定可靠性；透明或白色外觀不能取代成分證據。"
       }
     ]
   },
@@ -108,45 +119,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Ca：物質的分離與鑑定；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版七年級自然課程計畫附件；Ca 分離、鑑定、證據鏈與探究評量；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「物質的分離與鑑定」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Ca：物質的分離與鑑定」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版七年級自然課程計畫附件；Ca 分離操作、物質鑑定、安全與評量；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Ca：物質的分離與鑑定」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與教學資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Ca：物質的分離與鑑定；以混合物分離、物質特徵與實驗證據定位",
-      "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
+      "chapterLocator": "臺南市歸仁國中南一版七年級自然課程計畫；Ca 混合物分離、純度、物理／化學鑑定與評量；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "研究公開課程定位可確認本單元由混合物處理、性質差異與證據判定串接；完整課本未公開，正文改以自編砂鹽鐵粉水樣品重建推理流程。",
-      "copyrightBoundary": "只使用公開定位與課程方向，不複製課文、插圖、實驗單、題目、答案或教師用書內容。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林版國中自然公開課程計畫與產品索引",
-      "subject": "science",
-      "chapterLocator": "Ca：物質的分離與鑑定；分離方法、物質性質與實驗判讀定位",
-      "sourceUrl": "https://books.hanlin.com.tw/productall",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "assessment-pattern"],
-      "outcome": "公開索引支持以操作與資料判讀連結分離和鑑定；本課自行設計方法選擇表、純度追蹤與交叉驗證活動。",
-      "copyrightBoundary": "只研究公開產品結構與章節定位，不複製課文、圖片、活動、練習或答案。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Ca：物質的分離與鑑定」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -155,13 +176,24 @@
       "edition": "南一版公開課程計畫交叉研究",
       "sourceType": "public-web",
       "sourceLocator": "https://stv.naer.edu.tw/teaching/course_outline.jsp；Ca 單元公開課程定位；未取得完整出版社課本頁面",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["混合物可依成分物理性質差異分離。", "鑑定需要可觀察且可比較的證據。"],
-        "representations": ["流程圖、性質表、實驗紀錄與結論限制。"],
-        "examplesOrEvidence": ["公開課程方向支持分離與鑑定的連續學習；本課另創砂、鹽、鐵粉、水案例。"],
-        "misconceptions": ["以單一外觀認定純度，或認為分離一次就能得到純物質。"],
-        "assessmentEmphasis": ["依條件選方法並說明證據如何支持身分判斷。"]
+        "concepts": [
+          "混合物可依成分物理性質差異分離。",
+          "鑑定需要可觀察且可比較的證據。"
+        ],
+        "representations": [
+          "流程圖、性質表、實驗紀錄與結論限制。"
+        ],
+        "examplesOrEvidence": [
+          "公開課程方向支持分離與鑑定的連續學習；本課另創砂、鹽、鐵粉、水案例。"
+        ],
+        "misconceptions": [
+          "以單一外觀認定純度，或認為分離一次就能得到純物質。"
+        ],
+        "assessmentEmphasis": [
+          "依條件選方法並說明證據如何支持身分判斷。"
+        ]
       },
       "licenseBoundary": "僅使用公開定位與方向；本課正文、案例、流程、互動與題目均為本課原創，不複製任何受保護教材內容。"
     },
@@ -170,13 +202,24 @@
       "edition": "康軒版國中自然公開影音與章節索引",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然科公開章節結構與活動方向",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["分離方法必須對應粒徑、溶解度、沸點或磁性等差異。", "資料紀錄是判定分離是否有效的依據。"],
-        "representations": ["器材操作、性質比較表、收集物標記與流程箭頭。"],
-        "examplesOrEvidence": ["公開資源呈現探究式活動方向；本課自編微量安全模擬實驗與純度檢核。"],
-        "misconceptions": ["把蒸發、過濾與蒸餾當成同一種操作，或忽略溶液中的溶質。"],
-        "assessmentEmphasis": ["能說出方法所利用的性質及其限制。"]
+        "concepts": [
+          "分離方法必須對應粒徑、溶解度、沸點或磁性等差異。",
+          "資料紀錄是判定分離是否有效的依據。"
+        ],
+        "representations": [
+          "器材操作、性質比較表、收集物標記與流程箭頭。"
+        ],
+        "examplesOrEvidence": [
+          "公開資源呈現探究式活動方向；本課自編微量安全模擬實驗與純度檢核。"
+        ],
+        "misconceptions": [
+          "把蒸發、過濾與蒸餾當成同一種操作，或忽略溶液中的溶質。"
+        ],
+        "assessmentEmphasis": [
+          "能說出方法所利用的性質及其限制。"
+        ]
       },
       "licenseBoundary": "只採公開章節與活動方向，不複製影音文字、圖片、題目、答案或實驗講義。"
     },
@@ -185,13 +228,24 @@
       "edition": "翰林版國中自然公開產品索引與課程資料",
       "sourceType": "public-web",
       "sourceLocator": "https://books.hanlin.com.tw/productall；自然科單元化產品與物質探究定位；版本頁面未提供完整課文",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["物質性質可作為分離與鑑定的共同語言。", "未知物判定要保留對照組與不確定性。"],
-        "representations": ["未知樣品卡、對照結果、證據階梯與條件式結論。"],
-        "examplesOrEvidence": ["公開產品資訊支持情境化與資料判讀；本課另創四成分樣品與層析辨識任務。"],
-        "misconceptions": ["把符合一項性質就當成唯一答案，或把測試結果外推到未測成分。"],
-        "assessmentEmphasis": ["結合流程、對照與限制寫出可重做的判斷。"]
+        "concepts": [
+          "物質性質可作為分離與鑑定的共同語言。",
+          "未知物判定要保留對照組與不確定性。"
+        ],
+        "representations": [
+          "未知樣品卡、對照結果、證據階梯與條件式結論。"
+        ],
+        "examplesOrEvidence": [
+          "公開產品資訊支持情境化與資料判讀；本課另創四成分樣品與層析辨識任務。"
+        ],
+        "misconceptions": [
+          "把符合一項性質就當成唯一答案，或把測試結果外推到未測成分。"
+        ],
+        "assessmentEmphasis": [
+          "結合流程、對照與限制寫出可重做的判斷。"
+        ]
       },
       "licenseBoundary": "只研究公開產品結構與方向；本課所有正文、示例、互動與檢核均獨立撰寫。"
     }
@@ -258,19 +312,19 @@
   },
   "fusionRecord": {
     "commonCore": [
-      "混合物可利用成分間的物理性質差異分離，方法選擇必須回應具體條件。",
-      "分離與鑑定是不同任務：前者追蹤成分去向，後者需要對照與可重現的性質證據。",
-      "任何結論都要交代操作限制、可能混入的成分與證據能支持的範圍。"
+      "三版本公開線索共同支持依磁性、粒徑、溶解度、沸點與層析移動差異分離混合物，再以物理／化學特徵鑑定。",
+    "分離流程、對照組、沉澱／氣體證據、純度與結論限制是共同能力核心。",
+    "把混合物成分差異轉成可操作的分離順序，再以回收率、純度和鑑定反應三種不同指標檢查流程是否達成目的。"
     ],
     "versionDifferences": [
-      "三版本公開資料共同指向物性差異、實驗操作與資料判讀；公開資源的章節順序與活動呈現詳度不同，完整出版社內文未取得，因此不臆測頁面細節。"
+      "南一公開定位偏向物性分離與純度；康軒線索偏向過濾、結晶、蒸餾、層析與鑑定；翰林線索偏向對照實驗、特徵反應與證據邊界。公開資料不足以宣稱取得完整教材內容。"
     ],
     "originalAdditions": [
-      "以砂、食鹽、鐵粉與水建立可追蹤的多步驟流程，要求學生標記每一收集物的成分去向。",
-      "把過濾、蒸發、蒸餾與層析放入方法—物性—限制三欄比較，修正把器材名稱當作答案的迷思。",
-      "設計白色晶體的證據階梯與模擬操作，明確區分分離現象、鑑定線索與尚未排除的雜質。"
+      "以虛擬樣品工作台串接分離順序、產物純度與未知物檢驗，要求學習者明確區分拆分和命名兩階段。",
+    "把溶解等於分離完成、白色等於純品、冒泡直接等於唯一氣體列為單元迷思診斷。",
+    "讓學生依溶解度、粒徑和沸點設計分段回收方案，再以空白對照與已知樣本確認沉澱或氣體證據的專一性。"
     ],
-    "llmSynthesisNote": "依官方課綱、KG 與南一、康軒、翰林可取得的公開定位與研究紀錄，先交叉整理分離方法、物性差異、鑑定證據與版本呈現取向，再以本單元專屬的混合物流程、純度追蹤和安全互動重新撰寫；正文與活動均為原創，Terra 尚未執行，故維持 draft。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校公開自然科試題／課程資料能力方向，重新組織混合物分離、純度與物理／化學鑑定；已移除原先與單元無關的溶液質量批次題，10 題題幹、選項、答案、解析與五步解法均為原創，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "simulation": {
     "id": "sim-science-ca",
@@ -286,14 +340,40 @@
       "https://www.naer.edu.tw/"
     ],
     "learningDesign": {
-      "type": "separation-identification-lab",
+      "type": "model-boundary",
       "objective": "依物理性質分離混合物，再用對照確認收集物成分。",
       "predictionPrompt": "若混合物含不同粒徑與溶解度，操作順序會如何影響純度？",
       "steps": [
-        {"action":"依粒徑、磁性或溶解度選擇第一道分離","equation":"property=measurable_difference"},
-        {"action":"收集各部分並記錄質量與外觀","equation":"recovery=mass_out/mass_in"},
-        {"action":"以已知樣品作對照鑑定純度","equation":"evidence=sample-control"}
-      ]
+        {
+          "action": "依粒徑、磁性或溶解度選擇第一道分離",
+          "equation": "property=measurable_difference",
+          "id": "step-1",
+          "reason": "本步把「依粒徑、磁性或溶解度選擇第一道分離」和「property=measurable_difference」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「依粒徑、磁性或溶解度選擇第一道分離」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "收集各部分並記錄質量與外觀",
+          "equation": "recovery=mass_out/mass_in",
+          "id": "step-2",
+          "reason": "本步把「收集各部分並記錄質量與外觀」和「recovery=mass_out/mass_in」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「收集各部分並記錄質量與外觀」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "以已知樣品作對照鑑定純度",
+          "equation": "evidence=sample-control",
+          "id": "step-3",
+          "reason": "本步把「以已知樣品作對照鑑定純度」和「evidence=sample-control」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「以已知樣品作對照鑑定純度」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "id": "step-4",
+          "action": "核對回收率、空白／陽性對照與交叉污染風險",
+          "equation": "回收率＝各收集物總質量／起始質量；純度需對照證據",
+          "reason": "分離所得不只要有外觀，還要知道多少材料遺失、器材是否污染，以及性質測試是否真的能區分目標成分。",
+          "feedback": "若只宣稱『分離完成』，請補質量帳、空白對照與一項可能混入的來源，再限制鑑定結論。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「依物理性質分離混合物，再用對照確認收集物成分。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
     }
   }
 }

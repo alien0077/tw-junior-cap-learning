@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ba-iv-1-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "判斷倒敘時，最重要的線索是什麼？",
+  "prompt": "文本先寫小隊在雨中找到出口，接著補寫他們三小時前如何決定分組，最後又寫離開洞穴。若只問『分組決定』在時間線上的位置，答案是？",
   "options": [
     {
       "id": "A",
-      "text": "事件時間先後被重新安排"
+      "text": "找到出口之後"
     },
     {
       "id": "B",
-      "text": "文章一定沒有對話"
+      "text": "離開洞穴之後"
     },
     {
       "id": "C",
-      "text": "人物一定是動物"
+      "text": "找到出口之前"
     },
     {
       "id": "D",
-      "text": "每段字數完全相同"
+      "text": "無法由文本判斷"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ba-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "倒敘的關鍵在敘述順序與事件實際時間順序不同。"
+    "value": "C",
+    "explanation": "『三小時前』明確表示分組決定早於找到出口，雖然作者把它放在找到出口之後才說明。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "敘事時間與篇章結構；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究順敘、倒敘、插敘、補敘的判讀線索與篇章功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫敘事順序題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文時間順序與篇章理解",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章結構與敘事線索判讀",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開事件發生時間與作者敘述時間，優先依明示時間詞重建事件線。",
+  "solutionSteps": [
+    "抓住『三小時前』這個明確時間線索。",
+    "把分組決定放回找到出口之前。",
+    "C 是事件實際先後，不是段落出場位置。",
+    "A、B 把文本出場順序誤當事件時間；D 忽略了時間詞。",
+    "將三個事件畫成時間軸，再另畫文本順序以確認兩者不同。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

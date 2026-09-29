@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ca-iv-1-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "文章比較步行、騎車與搭車的交通方式時，哪項標準較合理？",
+  "prompt": "古厝把窗戶做得較小、屋簷較深，介紹文字又提到夏季日照強。下列哪項推論最合理？",
   "options": [
     {
       "id": "A",
-      "text": "移動距離、時間、成本與環境影響"
+      "text": "只要窗小就能證明屋主不歡迎客人"
     },
     {
       "id": "B",
-      "text": "只看標題，不讀內容"
+      "text": "屋簷深代表這棟房子一定很老"
     },
     {
       "id": "C",
-      "text": "只憑個人印象判斷"
+      "text": "所有傳統建築的窗戶都一樣"
     },
     {
       "id": "D",
-      "text": "忽略題目條件"
+      "text": "建築形式可能兼顧遮陽與居住需求，但仍要查材料和氣候資料才能完整說明"
     }
   ],
   "knowledgeIds": [
@@ -26,14 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "共同且具體的標準能讓不同交通方式被公平比較。"
+    "value": "D",
+    "explanation": "窗戶與屋簷可提出遮陽的合理假設，但單一特徵不能證明年齡、態度或普遍規則，仍需其他資料。"
   },
   "provenance": {
     "origin": "original",
-    "license": "All rights reserved", "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf", "sourceLocator": "交通文化與比較；獨立命題", "authoringNote": "獨立改編，非原題重製"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究飲食、服飾、建築、交通、名勝與休閒文化的判讀方式。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫生活文化文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ca-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ca-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文化生活與資料判讀",
+      "observedPattern": "公立學校國文評量要求從飲食、服飾、建築、交通、名勝與休閒資料判讀生活方式及文化脈絡；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "生活文化、說明與推論",
+      "observedPattern": "公立學校國文評量要求從飲食、服飾、建築、交通、名勝與休閒資料判讀生活方式及文化脈絡；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用多個建築線索提出功能解釋，並標示仍需查證的部分。",
+  "solutionSteps": [
+    "整理窗戶、屋簷和日照三項線索。",
+    "提出遮陽與居住舒適的暫時解釋。",
+    "區分合理假設和已證實結論。",
+    "D 保留證據限制。",
+    "列出還要查的材料、年代或氣候資料。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-mc-iv-6-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年11月5日河川觀測站的觀察中，針對「Mc-Ⅳ-6：用電安全」提出可檢驗的科學問題，若比較 3 組、每組取樣 9 份資料，哪一項設計最適當？",
+  "prompt": "同一插座同時接多個高功率電器，插頭與延長線變熱；最可能先懷疑哪種危險？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Mc-Ⅳ-6：用電安全」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "過載造成電流過大與導線發熱"
     },
     {
       "id": "B",
-      "text": "研究「Mc-Ⅳ-6：用電安全」時只改變溶液濃度，其餘條件一致，設置3組、每組取樣9份並各重複測量3次"
+      "text": "光線折射"
     },
     {
       "id": "C",
-      "text": "研究「Mc-Ⅳ-6：用電安全」時只測量3組中的一組就直接下結論"
+      "text": "電池化學能增加"
     },
     {
       "id": "D",
-      "text": "研究「Mc-Ⅳ-6：用電安全」時先決定結論，再挑選支持結論的9筆資料"
+      "text": "接地一定過強"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Mc-Ⅳ-6：用電安全」。"
+    "value": "A",
+    "explanation": "多個高功率負載共用路徑可能使總電流超過導線或插座額定，導致發熱；應停止使用並由合格人員檢查。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的過載、短路、漏電、接地、保險絲、斷路器、額定值、潮濕與用電安全能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-mc-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-mc-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "電路、用電安全、功率與保護裝置",
+      "pattern": "取公立學校自然科評量以電路條件、故障判讀、額定值和安全程序推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以電路條件、故障判讀、額定值和安全程序推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "電流、電阻、功率、短路與生活安全",
+      "pattern": "取公開會考以公式、圖表、情境、因果和風險界線評估的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以公式、圖表、情境、因果和風險界線評估的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "家庭電路、保險絲、接地、漏電與安全",
+      "pattern": "取公立國中試題以電流路徑、保護機制、額定條件和事故處置的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以電流路徑、保護機制、額定條件和事故處置的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先估計同一路徑的總負載，再與額定條件比較，不以外觀正常就繼續使用。",
+  "solutionSteps": [
+    "先切斷電源並辨識外觀、環境與負載的危險訊號。",
+    "區分過載、短路、漏電、接觸不良和設備破損。",
+    "檢查電壓、功率、電流、導線與保護裝置的額定條件。",
+    "判斷保險絲、斷路器、接地或漏電保護能處理哪種風險。",
+    "選擇不拆修、不碰觸、不在潮濕環境操作並通知合格人員的安全行動。"
+  ]
 }

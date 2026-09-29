@@ -2,23 +2,23 @@
   "id": "question-math-performance-s-iv-6-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "地圖比例尺為 1：50,000，地圖上兩地相距 3 公分，實際距離約為多少公里？",
+  "prompt": "地圖比例尺為 1：25,000，地圖上兩地相距 4 公分，實際距離約為多少公里？",
   "options": [
     {
       "id": "A",
-      "text": "0.15 公里"
+      "text": "0.1 公里"
     },
     {
       "id": "B",
-      "text": "1.5 公里"
+      "text": "0.5 公里"
     },
     {
       "id": "C",
-      "text": "15 公里"
+      "text": "1 公里"
     },
     {
       "id": "D",
-      "text": "150 公里"
+      "text": "10 公里"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "實際長度為 3×50,000＝150,000 公分；換算為公里是 1.5 公里。"
+    "value": "C",
+    "explanation": "實際長=4×25,000=100,000 公分；100,000 公分=1,000 公尺=1 公里，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考相似、縮放、比例尺、面積／體積倍率與生活情境題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供相似、比例、倍率與測量應用能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的相似形方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-6"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似圖形、相似三角形判定、邊長周長面積體積倍率、影子測高與比例尺",
+      "observedPattern": "公開數學評量常以對應邊比例處理長度與周長，進一步轉換面積或體積倍率，也會使用同時測量的影長比例與地圖比例尺；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似圖形、相似三角形判定、邊長周長面積體積倍率、影子測高與比例尺",
+      "observedPattern": "公開數學評量常以對應邊比例處理長度與周長，進一步轉換面積或體積倍率，也會使用同時測量的影長比例與地圖比例尺；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似圖形、相似三角形判定、邊長周長面積體積倍率、影子測高與比例尺",
+      "observedPattern": "公開數學評量常以對應邊比例處理長度與周長，進一步轉換面積或體積倍率，也會使用同時測量的影長比例與地圖比例尺；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先按比例尺換算公分，再把公分轉成公里，單位不可跳過。",
+  "solutionSteps": [
+    "地圖 1 公分代表實際 25,000 公分。",
+    "4 公分代表 100,000 公分。",
+    "100,000 公分=1,000 公尺。",
+    "1,000 公尺=1 公里。",
+    "所以選 C。"
+  ]
 }

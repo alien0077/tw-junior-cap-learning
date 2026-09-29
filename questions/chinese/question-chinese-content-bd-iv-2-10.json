@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bd-iv-2-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "若文章主張「閱讀能拓展視野」，下列哪種寫法最能完成較可靠的論證？",
+  "prompt": "有人把校園合作比作『接力賽』，若要使比喻成為有效論證，還需要？",
   "options": [
     {
       "id": "A",
-      "text": "用一個人的感想推論所有人都相同"
+      "text": "說明接棒與分工如何對應合作流程，並補上實際分工資料"
     },
     {
       "id": "B",
-      "text": "只寫華麗比喻而不說明相似點"
+      "text": "宣稱只要有人跑得快團隊就一定成功"
     },
     {
       "id": "C",
-      "text": "先界定拓展視野，再提供閱讀前後的具體表現作比較"
+      "text": "證明所有團隊都必須採用相同分工"
     },
     {
       "id": "D",
-      "text": "只重複『閱讀很重要』而不提供理由"
+      "text": "只描述接力棒的顏色"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bd-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "先界定概念，再以可比較的具體表現提供證據，主張與理由的關係較清楚。"
+    "value": "A",
+    "explanation": "接力賽可照亮交接與分工，但有效論證仍要說明本體如何對應並提供實際資料，不能只靠比喻保證成功。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
-    "sourceLocator": "114年國中教育會考國文科；研究閱讀理解、論證、比較與寫作分析能力方向（完整論證設計）；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；另以官方語文領域課綱核對 Bd-Ⅳ-2（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究比較基準、比喻映射、同尺度資料與類比限制。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫比較比喻論證題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bd-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bd-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較、比喻與論證判讀",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較基準、比喻映射與證據",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找出喻體和本體共享的關係，再補上可查證的實際對應與限制。",
+  "solutionSteps": [
+    "圈出接棒與分工可能共享的交接關係。",
+    "確認還需要合作流程與分工資料。",
+    "排除速度保證、全稱規則與外觀細節。",
+    "A 能把比喻轉成可檢查的論證。",
+    "舉出交接失敗的反例，檢查比喻是否需要補充條件。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

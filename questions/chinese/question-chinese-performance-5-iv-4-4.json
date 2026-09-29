@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-5-iv-4-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "面對實驗說明與結果表格，哪項推論較合理？",
+  "prompt": "調查發現參加晨讀的班級平均成績較高，哪個結論最謹慎？",
   "options": [
     {
       "id": "A",
-      "text": "根據控制變因與表格數據判斷，不超出結果範圍"
+      "text": "晨讀參與與較高平均成績有關，但還需檢查先備能力、時間與其他因素才能推論因果"
     },
     {
       "id": "B",
-      "text": "只看標題，不讀內容"
+      "text": "晨讀一定直接造成每位學生進步"
     },
     {
       "id": "C",
-      "text": "只憑個人印象判斷"
+      "text": "成績高的班級一定沒有其他學習活動"
     },
     {
       "id": "D",
-      "text": "忽略題目條件"
+      "text": "調查只要有平均數就證明唯一原因"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "科學閱讀要同時看實驗條件和數據，推論不能超出證據支持的範圍。"
+    "explanation": "閱讀資料要區分相關與因果；平均數提供線索，不能自動排除背景條件與選擇偏差。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-performance-5-iv-4-4.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫圖文整合、資料可信度、跨域詞義、因果、問題拆解、時間線、模型限制、多資料決策、證據轉述及整合解題；未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-26",
-  "lessonId": "lesson-chinese-performance-5-iv-4"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-chinese-performance-5-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "圖表、資料與跨文本閱讀",
+      "observedPattern": "公開國文評量常以圖表、跨文本、資料來源、因果推論與生活情境檢查整合解題；本題改寫為跨域資料閱讀任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀、推理與問題解決",
+      "observedPattern": "公開國文評量常以圖表、跨文本、資料來源、因果推論與生活情境檢查整合解題；本題改寫為跨域資料閱讀任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先界定問題，再分別讀文字、表格或模型；對齊變項、單位、時間與來源後提出推論，檢查因果、限制和替代解釋，最後回扣題目。",
+  "solutionSteps": [
+    "讀題定位：圈出「因果推論」，確認題目要整合圖文、跨文本、概念、因果、時間、模型、決策或證據轉述。",
+    "拆解資料：分開閱讀文字、表格、圖例與情境，對齊變項、單位、時間和限制；本題核心是「閱讀資料要區分相關與因果；平均數提供線索，不能自動排除背景條件與選擇偏差。」",
+    "核對正解：選項 A「晨讀參與與較高平均成績有關，但還需檢查先備能力、時間與其他因素才能推論因果」能由多份資料共同支持，並保留推論強度與條件。",
+    "排除誘答：不要只看單一數字、標題、最短路線或生活直覺，也不要把相關變成必然因果。",
+    "完成推理回查：依問題→資料→對齊→計算或比較→推論→限制與替代解釋重做，確認答案可追溯。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

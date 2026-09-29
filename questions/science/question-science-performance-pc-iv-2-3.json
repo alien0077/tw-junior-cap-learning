@@ -2,41 +2,73 @@
   "id": "question-science-performance-pc-iv-2-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年10月5日校園實驗室的觀察中，針對「pc-Ⅳ-2：以多種形式完整表達探究過程與成果」提出可檢驗的科學問題，若比較 3 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "哪項最能把結論和資料連接起來？",
   "options": [
     {
       "id": "A",
-      "text": "研究「pc-Ⅳ-2：以多種形式完整表達探究過程與成果」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "主張後指出對應數據、比較方法、推理與限制"
     },
     {
       "id": "B",
-      "text": "研究「pc-Ⅳ-2：以多種形式完整表達探究過程與成果」時只測量3組中的一組就直接下結論"
+      "text": "只說結果支持我"
     },
     {
       "id": "C",
-      "text": "研究「pc-Ⅳ-2：以多種形式完整表達探究過程與成果」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "把標題寫得更肯定"
     },
     {
       "id": "D",
-      "text": "研究「pc-Ⅳ-2：以多種形式完整表達探究過程與成果」時只改變距離，其餘條件一致，設置3組、每組取樣11份並各重複測量5次"
+      "text": "只列一串數字不解釋"
     }
   ],
   "knowledgeIds": [
     "kg-science-performance-pc-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「pc-Ⅳ-2：以多種形式完整表達探究過程與成果」。"
+    "value": "A",
+    "explanation": "A 形成主張—證據—推理—限制的完整鏈結。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究多形式表達、圖表、證據與責任溝通能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-pc-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-pc-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "探究表達、圖表與證據能力方向",
+      "observedPattern": "公開自然科評量常以資料整理、圖表、證據、結論、受眾與限制要求表達探究成果；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "科學論證、限制與責任表達能力方向",
+      "observedPattern": "公開自然科評量常以資料整理、圖表、證據、結論、受眾與限制要求表達探究成果；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認受眾和目的，再檢查形式是否保留問題、資料、單位、來源、限制、推理與可及性。",
+  "solutionSteps": [
+    "讀題定位：圈出科學表達核心「claim-evidence」。",
+    "列出受眾、目的、問題、資料、形式、來源、限制與可及性要求。",
+    "逐項比對哪個選項讓讀者能理解並查證；正確答案是 A。",
+    "核對理由：A 形成主張—證據—推理—限制的完整鏈結。",
+    "最後檢查形式是否掩蓋變異、刪除限制或讓讀者無法追查，必要時提出修正。"
+  ]
 }

@@ -2,41 +2,84 @@
   "id": "question-math-content-d-8-1-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "某類別有 8 筆資料，全部資料共 20 筆，該類別的相對次數為何？",
+  "prompt": "某次抽樣共調查 50 人，其中 18 人選擇方案甲。方案甲的相對次數為何？",
   "options": [
     {
       "id": "A",
-      "text": "60%"
+      "text": "18%"
     },
     {
       "id": "B",
-      "text": "80%"
+      "text": "32%"
     },
     {
       "id": "C",
-      "text": "40%"
+      "text": "36%"
     },
     {
       "id": "D",
-      "text": "20%"
+      "text": "50%"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-d-8-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "相對次數為 8÷20＝0.4＝40%。"
+    "explanation": "相對次數＝18÷50＝0.36＝36%，所以選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究次數分配、相對次數、累積次數與統計量能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供次數、相對次數、累積次數、加權平均數與資料處理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的資料處理方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-d-8-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-d-8-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "frequency tables, relative and cumulative frequencies, weighted means, medians, and data comparison",
+      "observedPattern": "公立學校公開數學試題常把原始資料整理成次數、相對次數或累積次數表，再要求加權平均、中位數、資料比較與表格補值；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "frequency tables, relative and cumulative frequencies, weighted means, medians, and data comparison",
+      "observedPattern": "公立學校公開數學試題常把原始資料整理成次數、相對次數或累積次數表，再要求加權平均、中位數、資料比較與表格補值；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "相對次數的分母是全體樣本數，先除法再換成百分率。",
+  "solutionSteps": [
+    "確認方案甲次數為 18 人。",
+    "確認全體人數為 50 人。",
+    "計算 18÷50＝0.36。",
+    "將 0.36 轉成 36%。",
+    "選 C，檢查各類相對次數應以同一個全體 50 為分母。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-6-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "圓的切線與弦所夾的角，等於哪一種角？",
+  "prompt": "同一圓中，圓周角 ∠ACB 與 ∠ADB 都對著同一段弧 AB。若 ∠ACB＝38°，則 ∠ADB 為何？",
   "options": [
     {
       "id": "A",
-      "text": "同弦所對的圓周角"
+      "text": "19°"
     },
     {
       "id": "B",
-      "text": "任意圓心角"
+      "text": "38°"
     },
     {
       "id": "C",
-      "text": "相鄰弦的弧度"
+      "text": "76°"
     },
     {
       "id": "D",
-      "text": "圓周長的數值"
+      "text": "142°"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "切線弦角定理指出，切線與弦夾角等於弦所對的圓周角。"
+    "value": "B",
+    "explanation": "同弧所對的圓周角相等，因此 ∠ADB＝∠ACB＝38°，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 圓的幾何性質 題型與官方課綱 KG kg-math-content-s-9-6",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供圓的幾何性質能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的圓幾何能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-6"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "圓心角、弦、切線、圓周角、弦心距與圓內接四邊形",
+      "observedPattern": "公立學校公開數學試題常以圓的構造、角度關係、切線與弦的性質及可計算的直角三角形情境考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "圓心角、弦、切線、圓周角、弦心距與圓內接四邊形",
+      "observedPattern": "公立學校公開數學試題常以圓的構造、角度關係、切線與弦的性質及可計算的直角三角形情境考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "圓心角、弦、切線、圓周角、弦心距與圓內接四邊形",
+      "observedPattern": "公立學校公開數學試題常以圓的構造、角度關係、切線與弦的性質及可計算的直角三角形情境考查幾何推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認兩角的端點相同且對應同一弧，再使用同弧所對圓周角相等。",
+  "solutionSteps": [
+    "讀出兩角都以 A、B 為端點。",
+    "確認 C、D 位於同一圓周。",
+    "判定兩角對同一段弧 AB。",
+    "套用同弧圓周角相等。",
+    "選 B。"
+  ]
 }

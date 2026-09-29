@@ -2,41 +2,84 @@
   "id": "question-english-performance-1-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「語言能力（聽）」task, what is the best way to prepare question 1?",
+  "prompt": "Listen to the exchange: 'The movie starts at 6:40.' 'Then let's meet outside the theater at 6:20.' When will they meet?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 語言能力（聽）."
+      "text": "6:20"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 語言能力（聽）."
+      "text": "6:40"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 語言能力（聽）."
+      "text": "7:00"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 語言能力（聽）."
+      "text": "5:40"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 語言能力（聽）, question 1."
+    "explanation": "The second speaker directly says they will meet at 6:20; 6:40 is the movie start time, not the meeting time."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
-    "sourceLocator": "114 年國中教育會考英語科閱讀公開試題；研究聽力中的地點、細節、時間、選擇、情緒、順序、原因與主旨判讀；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E6%96%87%E8%AA%9E%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+    "sourceLocator": "三份公開英文試題僅供能力方向研究；未複製原題、選項、文章或答案。",
+    "authoringNote": "依官方課綱 KG 與公開英文試題的英文聽力理解能力方向獨立編寫；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-performance-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考三年級英文科試題",
+      "year": "114",
+      "locator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考三年級英文科試題；僅取聽力對話、關鍵線索與整體理解能力方向。",
+      "observedPattern": "參照公開英文試題的對話訊息、語音理解後的時間／目的／推論判讀層次；題幹、選項與答案全部重新編寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
+      "title": "114 年國中教育會考英文科公開試題",
+      "year": "114",
+      "locator": "114 年國中教育會考英文科公開試題；僅取聽力對話、關鍵線索與整體理解能力方向。",
+      "observedPattern": "參照公開英文試題的對話訊息、語音理解後的時間／目的／推論判讀層次；題幹、選項與答案全部重新編寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://cap.rcpet.edu.tw/index.html",
+      "title": "國中教育會考官方英文科試題與說明入口",
+      "year": "官方入口",
+      "locator": "國中教育會考官方英文科試題與說明入口；僅取聽力對話、關鍵線索與整體理解能力方向。",
+      "observedPattern": "參照公開英文試題的對話訊息、語音理解後的時間／目的／推論判讀層次；題幹、選項與答案全部重新編寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "Separate the event time from the earlier meeting time and match the question to the correct one.",
+  "solutionSteps": [
+    "Identify the event: the movie starts at 6:40.",
+    "Listen for the proposed meeting time.",
+    "Notice outside the theater at 6:20.",
+    "Distinguish meeting from movie-start time.",
+    "Choose A because it answers when they meet."
+  ]
 }

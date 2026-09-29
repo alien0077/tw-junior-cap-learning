@@ -2,23 +2,23 @@
   "id": "question-science-content-fa-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年1月26日社區環境站的觀察中，將 84 g 食鹽溶於 931 g 水，研究「Fa：組成地球的物質」時，溶液質量為何？",
+  "prompt": "某海域深度增加時溫度降低、鹽度增加且密度增加，最合理的判讀是？",
   "options": [
     {
       "id": "A",
-      "text": "847 g"
+      "text": "溫度與鹽度共同影響海水密度，資料可能反映不同水團"
     },
     {
       "id": "B",
-      "text": "78204 g"
+      "text": "只要溫度降低就能確定洋流方向"
     },
     {
       "id": "C",
-      "text": "931 g"
+      "text": "鹽度與密度沒有關係"
     },
     {
       "id": "D",
-      "text": "1015 g"
+      "text": "深度資料一定是測量錯誤"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：84＋931＝1015 g。 本題對應 KG「Fa：組成地球的物質」。"
+    "value": "A",
+    "explanation": "要判斷洋流仍需流速、方向與更多測站資料。 答案為 A。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的地球物質、岩石、大氣、海水與圈層能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Fa 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fa"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-fa",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "地球圈層、岩石、大氣、海水與環境資料判讀",
+      "pattern": "取由地球物質分類、圈層互動、岩石循環與海氣資料推論地球系統的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由地球物質分類、圈層互動、岩石循環與海氣資料推論地球系統的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "綜合多項資料提出水團假說，不把單一曲線當成唯一因果。",
+  "solutionSteps": [
+    "低溫通常使水密度增加。",
+    "較高鹽度也可使密度增加。",
+    "兩項資料共同支持密度隨深度增加。",
+    "要判斷洋流仍需流速、方向與更多測站資料。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

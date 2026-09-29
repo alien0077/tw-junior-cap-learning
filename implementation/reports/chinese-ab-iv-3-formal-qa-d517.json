@@ -1,0 +1,41 @@
+{
+  "decision": "verified",
+  "asOf": "2026-09-29",
+  "unit": "cur-chinese-content-ab-iv-3",
+  "lesson": "lesson-chinese-content-ab-iv-3",
+  "scope": "unit-specific spec correction and automated engineering/browser QA; no lesson/question content review or publisher evidence promotion",
+  "sourceMapping": {
+    "officialCurriculum": "Ab-IV-3 locator recorded in unit spec; lesson and spec KG IDs agree",
+    "publisherEvidence": "three publisherResearch entries exist; no claim of full textbook chapter access",
+    "unitQuestions": 10,
+    "questionKnowledgeMapping": "all 10 unit questions map to the lesson KG IDs"
+  },
+  "specCorrection": "Replaced unsupported generic TextEvidenceBlock/sliders/prediction/chart interactions with actual three-step GuidedChoice: huiyi component meaning, zhishi marker position, and xingsheng semantic/phonetic component roles. Explicitly records that modern pronunciation is not guaranteed by the phonetic component and distinguishes observable structure from historical etymology.",
+  "browserCommand": "npm run test:chinese:ab-iv-3:browser",
+  "browserRunner": "Python Playwright with system Chrome in authorized local environment",
+  "browserResult": {
+    "status": "passed",
+    "visibleSections": 9,
+    "authoredTeachingSections": 6,
+    "guidedChoiceSteps": 3,
+    "unitQuestionsMapped": 10,
+    "kgAndThreePublisherRecords": true,
+    "simulationFailureFallback": true,
+    "blockedExternalRequests": 1,
+    "offlineFallbackUsable": true,
+    "keyboardWrongRetryCorrect": true,
+    "axeViolations": 0,
+    "axeIncompleteAcrossViewports": 0,
+    "minimumOptionHeightPx": 44,
+    "responsiveWidths": [320, 375, 768],
+    "pageErrors": []
+  },
+  "statusBoundary": {
+    "designStatus": "reviewed",
+    "implementationStatus": "implemented",
+    "qaStatus": "verified",
+    "lessonReviewStatus": "unchanged",
+    "publisherEvidenceStatus": "unchanged"
+  },
+  "overall": "This does not complete the 1,027-unit engineering coverage objective."
+}

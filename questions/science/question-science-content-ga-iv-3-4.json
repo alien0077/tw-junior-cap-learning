@@ -2,23 +2,23 @@
   "id": "question-science-content-ga-iv-3-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月22日河川觀測站的觀察中，若以 Aa 表示一對等位基因，研究「Ga-Ⅳ-3：ABO 血型遺傳」時，Aa 個體的基因型屬於哪一類？",
+  "prompt": "若一對父母都是 A 型，子女卻是 O 型，對雙親基因型最合理的推論是？",
   "options": [
     {
       "id": "A",
-      "text": "「Ga-Ⅳ-3：ABO 血型遺傳」中的同型合子（兩個等位基因相同）"
+      "text": "雙親都必須帶有 i，即 Iᴬi × Iᴬi"
     },
     {
       "id": "B",
-      "text": "「Ga-Ⅳ-3：ABO 血型遺傳」中的異型合子（Aa）"
+      "text": "至少一方一定是 IᴬIᴬ"
     },
     {
       "id": "C",
-      "text": "「Ga-Ⅳ-3：ABO 血型遺傳」中只有一個基因（Aa 只剩一個字母）"
+      "text": "其中一方必定是 AB 型"
     },
     {
       "id": "D",
-      "text": "「Ga-Ⅳ-3：ABO 血型遺傳」中不含遺傳物質（Aa 不具遺傳意義）"
+      "text": "O 型子女不可能由 A 型雙親產生"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "Aa 含有兩個不同的等位基因，因此是異型合子。 本題對應 KG「Ga-Ⅳ-3：ABO 血型遺傳」。"
+    "value": "A",
+    "explanation": "O 型子女基因型必為 ii，因此雙親各自都要提供 i；A 型雙親可為 Iᴬi，兩者配對才可能產生 ii。 正確答案為選項 A：「雙親都必須帶有 i，即 Iᴬi × Iᴬi」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的 ABO 血型、遺傳圖表、機率及家族資料判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ga-Ⅳ-3 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ga-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ga-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "遺傳圖表、等位基因、機率與證據判讀",
+      "pattern": "取由家族資料與遺傳規則推論性狀可能性、檢查條件與避免過度結論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由家族資料與遺傳規則推論性狀可能性、檢查條件與避免過度結論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "從子代表現型反推必需的基因，再檢查雙親是否各能提供該基因。",
+  "solutionSteps": [
+    "先把題目中的血型轉換成可能的基因型。",
+    "列出雙親各自可提供的配子，不把表現型直接當成唯一基因型。",
+    "套用原理：O 型子女基因型必為 ii，因此雙親各自都要提供 i；A 型雙親可為 Iᴬi，兩者配對才可能產生 ii。",
+    "排除混淆顯性、共顯性、複等位基因或忽略機率的選項，答案為「雙親都必須帶有 i，即 Iᴬi × Iᴬi」。",
+    "回查棋盤格、親子推論與醫療情境是否沒有超出遺傳模型的適用範圍。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

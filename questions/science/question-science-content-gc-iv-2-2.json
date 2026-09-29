@@ -2,23 +2,23 @@
   "id": "question-science-content-gc-iv-2-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年11月18日校園實驗室的觀察中，某食物鏈中植物可利用能量 38750 單位，草食動物取得 7670 單位，研究「Gc-Ⅳ-2：生物多樣性與生態系穩定」時，最合理的結論為何？",
+  "prompt": "某森林中有多種樹木、昆蟲、鳥類與分解者。相較於只有一種樹木的人工林，較高的物種多樣性可能帶來什麼？",
   "options": [
     {
       "id": "A",
-      "text": "能量由 38750 單位傳到「Gc-Ⅳ-2：生物多樣性與生態系穩定」的下一階層後必定增加"
+      "text": "一定完全不會受到乾旱影響"
     },
     {
       "id": "B",
-      "text": "「Gc-Ⅳ-2：生物多樣性與生態系穩定」中的所有能量都在生物間百分之百循環而不散失"
+      "text": "食物網與功能較多元，某一物種減少時系統可能仍保留部分功能"
     },
     {
       "id": "C",
-      "text": "研究「Gc-Ⅳ-2：生物多樣性與生態系穩定」時，高階消費者不需要由食物取得能量"
+      "text": "所有物種數量必定完全相等"
     },
     {
       "id": "D",
-      "text": "能量沿「Gc-Ⅳ-2：生物多樣性與生態系穩定」營養階層傳遞時通常逐級減少"
+      "text": "只會讓生態系中的能量消失"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "由 38750 單位降至 7670 單位可見能量傳遞並非百分之百有效，通常逐級減少。 本題對應 KG「Gc-Ⅳ-2：生物多樣性與生態系穩定」。"
+    "value": "B",
+    "explanation": "多種生物擔任不同角色，可形成較多交互作用與功能備援，但多樣性不是對所有干擾的絕對保證。 正確答案為選項 B：「食物網與功能較多元，某一物種減少時系統可能仍保留部分功能」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的生物多樣性、生態系穩定、外來種、調查及保育決策能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Gc-Ⅳ-2 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-gc-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-gc-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生物多樣性、生態系功能、資料判讀與保育",
+      "pattern": "取由物種／遺傳／生態系多樣性、交互作用與多指標資料判斷穩定性和保育的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由物種／遺傳／生態系多樣性、交互作用與多指標資料判斷穩定性和保育的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找出多樣性如何增加角色與食物網，再保留環境壓力下的不確定性。",
+  "solutionSteps": [
+    "圈出生物多樣性層次、生態角色、食物網、外來種與保育措施。",
+    "先辨認題目要求的是描述、機制、證據或管理決策。",
+    "套用原理：多種生物擔任不同角色，可形成較多交互作用與功能備援，但多樣性不是對所有干擾的絕對保證。",
+    "排除把多樣性或穩定性說成絕對保證的選項，答案為「食物網與功能較多元，某一物種減少時系統可能仍保留部分功能」。",
+    "回查是否同時考慮生物互動、環境條件、時間尺度與資料限制。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

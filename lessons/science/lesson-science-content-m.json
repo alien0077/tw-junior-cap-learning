@@ -32,9 +32,9 @@
     ]
   },
   "studyHighlights": [
-    "先圈出與「科學、科技、社會及人文」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先區分可量測的科學證據、工程限制、社會程序與人文價值。",
+    "比較方案時同時檢查資料品質、風險、成本、隱私與誰被影響。",
+    "結論只寫證據能支持的範圍，把公平與權利留在可公開協商的決策部分。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -48,7 +48,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-21",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "以安全探究步驟理解「科學、科技、社會及人文」並用證據修正解釋。",
@@ -92,38 +92,171 @@
         ],
         "answer": "A",
         "feedback": "證據與限制都要保留，才能修正模型。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "某校考慮導入智慧監測設備，初步資料顯示效率提高但少數學生受到隱私與費用影響；下一步最合理的是什麼？",
+        "options": [
+          "分開比較效益、成本、隱私與不同群體的影響，邀請受影響者檢視資料，再設定監測與停損條件",
+          "只因平均效率提高就直接全面採用，不必公開資料或詢問受影響群體",
+          "因為存在隱私疑慮就刪除所有支持效率的資料，改用直覺決定方案"
+        ],
+        "answer": "A",
+        "feedback": "科技決策不能用單一平均值掩蓋分配影響；保留支持與反對證據、納入利害關係人並設回饋條件，才能形成可修正的暫定方案。"
       }
     ]
   },
   "authoringStandard": "version-fused-v1",
   "lessonScope": "theme",
   "versionResearch": [
-    {"publisher":"nani","edition":"南一版自然公開課程資源","sourceType":"public-web","sourceLocator":"科學、科技、社會及人文主題公開課程定位；未取得完整出版社頁碼。","reviewedAt":"2026-09-01","findings":{"concepts":["科學以可檢驗證據與模型理解現象，科技把需求轉成可測試設計。","科技議題還涉及社會公平、環境責任和人文價值。"],"representations":["證據表、設計限制表和利害關係人地圖。"],"examplesOrEvidence":["校園能源、降溫與飲水監測方案。"],"misconceptions":["科學資料不能單獨決定所有價值取捨。"],"assessmentEmphasis":["區分觀察、推論、工程限制、價值選擇與責任。"]},"licenseBoundary":"僅研究公開定位與概念脈絡，不複製教材文字、圖片、題目或答案。"},
-    {"publisher":"kanghsuan","edition":"康軒版自然公開影音與課程資源","sourceType":"public-web","sourceLocator":"科學與生活、科技及社會議題公開主題定位；索引不足以替代完整教材。","reviewedAt":"2026-09-01","findings":{"concepts":["跨域探究需從問題、證據、設計、溝通與風險建立。","同一科技方案可能同時帶來效益、成本與不同族群影響。"],"representations":["方案資料、測試指標、角色觀點和決策理由。"],"examplesOrEvidence":["以校園能源或環境設備的測試結果比較效益、成本與使用者影響。"],"misconceptions":["有測量數據不代表某方案在所有條件和族群中必然最好。"],"assessmentEmphasis":["重視證據範圍、替代方案和安全倫理。"]},"licenseBoundary":"只研究公開主題與教學方向，不複製影音字幕、圖片、題目或答案。"},
-    {"publisher":"hanlin","edition":"翰林版自然公開課程資源","sourceType":"public-web","sourceLocator":"科學、科技、社會及人文公開資源及校方課程計畫定位。","reviewedAt":"2026-09-01","findings":{"concepts":["科學知識、科技應用、社會制度與人文價值會互相影響。","公共決策需揭露資料限制、風險分配、隱私與公平。"],"representations":["利害關係人圖、成本效益表、風險矩陣和公開說明。"],"examplesOrEvidence":["以校園飲水、能源與通風方案比較不同使用者的受益與負擔。"],"misconceptions":["個人經驗不等於代表性資料，科技進步也不等於人人受益。"],"assessmentEmphasis":["以資料和理由提出有條件的公共建議。"]},"licenseBoundary":"僅採公開定位與概念方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"}
+    {
+      "publisher": "nani",
+      "edition": "南一版自然公開課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nani.com.tw/；科學、科技、社會及人文主題公開課程定位；未取得完整出版社頁碼。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "科學以可檢驗證據與模型理解現象，科技把需求轉成可測試設計。",
+          "科技議題還涉及社會公平、環境責任和人文價值。"
+        ],
+        "representations": [
+          "證據表、設計限制表和利害關係人地圖。"
+        ],
+        "examplesOrEvidence": [
+          "校園能源、降溫與飲水監測方案。"
+        ],
+        "misconceptions": [
+          "科學資料不能單獨決定所有價值取捨。"
+        ],
+        "assessmentEmphasis": [
+          "區分觀察、推論、工程限制、價值選擇與責任。"
+        ]
+      },
+      "licenseBoundary": "本紀錄只保存可追溯公開來源的章節定位、教學方向與評量能力；不複製出版社或學校教材正文、原題、選項、圖表、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒版自然公開影音與課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；科學與生活、科技及社會議題公開主題定位；索引不足以替代完整教材。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "跨域探究需從問題、證據、設計、溝通與風險建立。",
+          "同一科技方案可能同時帶來效益、成本與不同族群影響。"
+        ],
+        "representations": [
+          "方案資料、測試指標、角色觀點和決策理由。"
+        ],
+        "examplesOrEvidence": [
+          "以校園能源或環境設備的測試結果比較效益、成本與使用者影響。"
+        ],
+        "misconceptions": [
+          "有測量數據不代表某方案在所有條件和族群中必然最好。"
+        ],
+        "assessmentEmphasis": [
+          "重視證據範圍、替代方案和安全倫理。"
+        ]
+      },
+      "licenseBoundary": "本紀錄只保存可追溯公開來源的章節定位、教學方向與評量能力；不複製出版社或學校教材正文、原題、選項、圖表、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林版自然公開課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.ehanlin.com.tw/；科學、科技、社會及人文公開資源及校方課程計畫定位。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "科學知識、科技應用、社會制度與人文價值會互相影響。",
+          "公共決策需揭露資料限制、風險分配、隱私與公平。"
+        ],
+        "representations": [
+          "利害關係人圖、成本效益表、風險矩陣和公開說明。"
+        ],
+        "examplesOrEvidence": [
+          "以校園飲水、能源與通風方案比較不同使用者的受益與負擔。"
+        ],
+        "misconceptions": [
+          "個人經驗不等於代表性資料，科技進步也不等於人人受益。"
+        ],
+        "assessmentEmphasis": [
+          "以資料和理由提出有條件的公共建議。"
+        ]
+      },
+      "licenseBoundary": "本紀錄只保存可追溯公開來源的章節定位、教學方向與評量能力；不複製出版社或學校教材正文、原題、選項、圖表、答案、影音或版面。"
+    }
   ],
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "M：科學、科技、社會及人文；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；M：科學、科技、社會及人文 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「科學、科技、社會及人文」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為theme節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「M：科學、科技、社會及人文」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
-    {"publisher":"nani","edition":"南一版自然公開課程資源","subject":"science","chapterLocator":"科學、科技、社會及人文；公開課程章節定位","sourceUrl":"https://www.nani.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern"],"outcome":"核對科學證據、科技設計、社會影響與人文價值的跨域脈絡，並以校園方案重組。","copyrightBoundary":"僅研究公開章節定位與概念脈絡，不複製教材文字、圖片、題目或答案。"},
-    {"publisher":"hanlin","edition":"翰林版自然公開課程資源","subject":"science","chapterLocator":"科學、科技、社會及人文；公開資源及校方課程計畫定位","sourceUrl":"https://www.ehanlin.com.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["concept-progression","activity-pattern","assessment-pattern"],"outcome":"比較科學資料、工程限制、公共參與與人文責任，補入公平、隱私及風險分配判讀。","copyrightBoundary":"僅採公開定位與教學方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"}
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；M：科學、科技、社會及人文 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「M：科學、科技、社會及人文」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；M：科學、科技、社會及人文 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「M：科學、科技、社會及人文」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    }
   ],
-  "fusionRecord":{"commonCore":["科學以可檢驗證據理解現象，科技把需求與限制轉成可測試設計。","科技方案進入社會後會影響不同群體，必須考量公平、風險、隱私和環境。","人文價值協助判斷取捨與責任，不能把數據誤當唯一答案。"],"versionDifferences":["南一公開資源適合核對科學與科技脈絡；康軒公開資料提供生活探究與方案測試線索；翰林公開資源較能連結公共參與和人文責任，但完整出版社頁碼不可得。"],"originalAdditions":["以校園太陽能、降溫與飲水監測串接四個面向。","設計證據—限制—受影響者—責任決策表。","加入隱私、公平、風險分配與替代方案活動。"],"llmSynthesisNote":"依官方課綱、KG 與三版本可取得的公開定位及研究紀錄，先區分科學問題、科技設計、社會程序與人文價值，再以本單元專屬校園方案和責任地圖重新撰寫；正文、活動與檢核均為原創，Terra 尚未執行故維持 draft。"},
+  "fusionRecord": {
+    "commonCore": [
+      "科學以可檢驗證據理解現象，科技把需求與限制轉成可測試設計。",
+      "科技方案進入社會後會影響不同群體，必須考量公平、風險、隱私和環境。",
+      "人文價值協助判斷取捨與責任，不能把數據誤當唯一答案。"
+    ],
+    "versionDifferences": [
+      "南一公開資源適合核對科學與科技脈絡；康軒公開資料提供生活探究與方案測試線索；翰林公開資源較能連結公共參與和人文責任，但完整出版社頁碼不可得。"
+    ],
+    "originalAdditions": [
+      "以校園太陽能、降溫與飲水監測串接四個面向。",
+      "設計證據—限制—受影響者—責任決策表。",
+      "加入隱私、公平、風險分配與替代方案活動。"
+    ],
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-m、南一／康軒／翰林可取得的公開研究方向與三筆公立學校自然科試題能力模式，以自己的話獨立重寫科學證據、科技限制、社會程序與人文責任的交會；題目與互動均使用校園環境和公共決策原創情境，未複製教材或試題，Terra 第二輪與正式發布審查尚未完成，維持 draft。"
+  },
   "teaching": {
     "body": [
       {
@@ -191,7 +324,42 @@
     "model": "general",
     "goal": "以安全探究步驟理解「科學、科技、社會及人文」並用證據修正解釋。",
     "mission": "針對「M：科學、科技、社會及人文」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"model-boundary","objective":"以證據、利害關係人與不確定性比較科技決策，並標出模型適用邊界。","predictionPrompt":"同一科技方案對不同群體的利益和風險不同時，哪些資料與程序才能支持暫定決策？","evidencePrompt":"請指出模型使用的證據、未涵蓋的條件，以及哪項新資料會使方案需要修正。","steps":[{"id":"step-1","action":"列出方案功能、受影響群體與可量測指標","equation":"decision=benefit+cost+equity","reason":"先把科學測量、工程功能、社會影響與公平判準分開，避免用一個總分掩蓋不同問題。","feedback":"若只列發電量或降溫幅度，請補上使用者、成本、風險和資料權限，才形成可檢查的方案描述。"},{"id":"step-2","action":"比較支持與反對證據及其來源可靠度","equation":"evidence=quality+relevance","reason":"同一數據只有在測量條件、樣本範圍和目標問題相符時，才足以支持有限度的推論。","feedback":"若資料只來自單次測量或單一群體，請標出限制，並提出另一種來源或重複測試來交叉檢查。"},{"id":"step-3","action":"設定監測、回饋與停損條件後修正方案","equation":"policy=monitor+adjust","reason":"公共科技方案會在真實環境遇到新風險，預先設定回饋與停損條件，才能讓決策對證據負責。","feedback":"若方案出現眩光、隱私或不公平使用結果，應保留異常資料、邀請受影響者回應，再調整或暫停方案。"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以證據、利害關係人與不確定性比較科技決策，並標出模型適用邊界。",
+      "predictionPrompt": "同一科技方案對不同群體的利益和風險不同時，哪些資料與程序才能支持暫定決策？",
+      "evidencePrompt": "請指出模型使用的證據、未涵蓋的條件，以及哪項新資料會使方案需要修正。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "列出方案功能、受影響群體與可量測指標",
+          "equation": "decision=benefit+cost+equity",
+          "reason": "先把科學測量、工程功能、社會影響與公平判準分開，避免用一個總分掩蓋不同問題。",
+          "feedback": "若只列發電量或降溫幅度，請補上使用者、成本、風險和資料權限，才形成可檢查的方案描述。"
+        },
+        {
+          "id": "step-2",
+          "action": "比較支持與反對證據及其來源可靠度",
+          "equation": "evidence=quality+relevance",
+          "reason": "同一數據只有在測量條件、樣本範圍和目標問題相符時，才足以支持有限度的推論。",
+          "feedback": "若資料只來自單次測量或單一群體，請標出限制，並提出另一種來源或重複測試來交叉檢查。"
+        },
+        {
+          "id": "step-3",
+          "action": "設定監測、回饋與停損條件後修正方案",
+          "equation": "policy=monitor+adjust",
+          "reason": "公共科技方案會在真實環境遇到新風險，預先設定回饋與停損條件，才能讓決策對證據負責。",
+          "feedback": "若方案出現眩光、隱私或不公平使用結果，應保留異常資料、邀請受影響者回應，再調整或暫停方案。"
+        },
+        {
+          "id": "step-4",
+          "action": "以效率、成本、隱私與群體影響四欄表提出可修正的暫定決策。",
+          "equation": "暫定決策＝證據比較＋利害關係人回應＋停損條件",
+          "reason": "科學資料、工程功能和社會人文判準回答的是不同問題；把它們分欄才能看見平均效益掩蓋的分配差異。",
+          "feedback": "若只有效率平均值，補上受影響群體、資料權限、成本和替代方案；若風險超過預設門檻，必須保留停用或改版選項。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

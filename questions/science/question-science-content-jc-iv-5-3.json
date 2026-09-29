@@ -2,41 +2,84 @@
   "id": "question-science-content-jc-iv-5-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年2月26日社區環境站的觀察中，針對「Jc-Ⅳ-5：鋅銅電池與電池原理」提出可檢驗的科學問題，若比較 5 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "鋅銅原電池接通外電路時，電子通常由哪裡流向哪裡？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Jc-Ⅳ-5：鋅銅電池與電池原理」時只改變溶液濃度，其餘條件一致，設置5組、每組取樣11份並各重複測量4次"
+      "text": "由銅電極流向鋅電極"
     },
     {
       "id": "B",
-      "text": "研究「Jc-Ⅳ-5：鋅銅電池與電池原理」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "由電解質直接流入塑膠線"
     },
     {
       "id": "C",
-      "text": "研究「Jc-Ⅳ-5：鋅銅電池與電池原理」時只測量5組中的一組就直接下結論"
+      "text": "由鋅電極經外電路流向銅電極"
     },
     {
       "id": "D",
-      "text": "研究「Jc-Ⅳ-5：鋅銅電池與電池原理」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "電子不會移動"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jc-iv-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Jc-Ⅳ-5：鋅銅電池與電池原理」。"
+    "value": "C",
+    "explanation": "電子由發生氧化的鋅電極經外電路流向銅電極；溶液與鹽橋主要傳遞離子，不是電子外電路。正確答案：C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立學校公開自然科試題中的氧化還原、電池電壓、電子／離子流、控制變因與安全能力；本題改寫為 Jc-Ⅳ-5 原創情境。",
+    "authoringNote": "依官方課綱 KG 與公立國中公開試題能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jc-iv-5"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-jc-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "鹽埕國中公開自然段考；只取電池、氧化還原、電路與實驗判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "電池、氧化還原、電路與實驗判讀",
+      "observedPattern": "公開自然科評量常以氧化還原、電池電壓、電路、材料、離子與控制變因檢查化學能轉換推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "內湖國中公開自然段考；只取理化反應、電壓資料與裝置條件的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "理化反應、電壓資料與裝置條件",
+      "observedPattern": "公開自然科評量常以氧化還原、電池電壓、電路、材料、離子與控制變因檢查化學能轉換推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "國昌國中公開自然科試題；只取電子流、離子作用與控制變因的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "電子流、離子作用與控制變因",
+      "observedPattern": "公開自然科評量常以氧化還原、電池電壓、電路、材料、離子與控制變因檢查化學能轉換推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開電子流、離子流與傳統電流方向，依外電路箭頭判讀。",
+  "solutionSteps": [
+    "讀題並圈出電極、半反應、電子、離子、電解質、鹽橋、電壓或安全條件。",
+    "先判定鋅側氧化與銅側還原，再畫出外電路電子方向。",
+    "把電子通道、離子通道、電流方向和正負極標記分開，避免用同一箭頭代替。",
+    "檢查選項是否混淆材料名稱、反應位置、離子平衡或測量條件。",
+    "用完整句重述答案，補上控制變因、內阻或安全限制，確認推論符合裝置證據。"
+  ]
 }

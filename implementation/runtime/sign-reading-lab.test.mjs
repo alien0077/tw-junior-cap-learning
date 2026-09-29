@@ -1,0 +1,110 @@
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import { JSDOM } from "jsdom";
+
+const item = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-english-content-ac-iv-1.json", import.meta.url), "utf8"));
+assert.equal(item.reviewStatus, "draft", "source and independent content gates remain open");
+const visibleSections = item.content.sections.map(({ heading }) => heading);
+for (const section of item.teaching.body) {
+  assert.ok(visibleSections.includes(section.heading), `student-visible lesson must include authored teaching section: ${section.heading}`);
+  const visible = item.content.sections.find(({ heading }) => heading === section.heading);
+  assert.equal(visible.body, section.body, `student-visible body must preserve authored section: ${section.heading}`);
+}
+assert.equal(item.teaching.body.length, 6);
+const warningFunctionSection = item.content.sections.find(({ heading }) => heading === "短語裡藏著四種不同工作");
+assert.match(warningFunctionSection.body, /提醒注意、要求一個動作、禁止進入，是三種不同的語用力道/);
+assert.match(warningFunctionSection.body, /不要因為標示帶有警示語氣，就自行推成全面封鎖/);
+assert.equal(item.versionResearch.find(({ publisher }) => publisher === "kanghsuan").reviewedAt, "2026-09-28");
+assert.match(item.fusionRecord.llmSynthesisNote, /不宣稱三版本實質融合完成/);
+assert.equal(item.reviewStatus, "draft", "publisher-text and independent content gates remain pending");
+const signageLesson = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-english-performance-3-iv-3.json", import.meta.url), "utf8"));
+const source = readFileSync(new URL("../../site/sign-reading-lab.js", import.meta.url), "utf8");
+const stylesheet = readFileSync(new URL("../../site/sign-reading-lab.css", import.meta.url), "utf8");
+const dom = new JSDOM("<main id=mount></main>", { url: "https://courseware.test/", runScripts: "outside-only" });
+dom.window.eval(source);
+const mount = dom.window.document.querySelector("#mount");
+mount.innerHTML = dom.window.SignReadingLab.render(item);
+
+assert.match(mount.textContent, /先寫下你的預測/);
+assert.doesNotMatch(mount.textContent, /答案：/);
+assert.equal(mount.querySelectorAll('input[type="radio"]').length, 3);
+assert.equal(mount.querySelector('[data-sign-action="flip"]').disabled, true);
+
+const prediction = mount.querySelector("[data-sign-reflection]");
+prediction.value = "我猜會往右，但要再看地圖。";
+prediction.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
+mount.querySelector('[data-sign-action="predict"]').click();
+assert.match(mount.textContent, /預測已保留/);
+assert.equal(dom.window.document.activeElement.dataset.signAction, "flip");
+assert.match(mount.querySelector(".sign-card").textContent, /Platform 2 →/);
+const secondMount = dom.window.document.createElement("main");
+secondMount.innerHTML = dom.window.SignReadingLab.render(item, "catalog-copy");
+dom.window.document.body.append(secondMount);
+assert.doesNotMatch(secondMount.textContent, /預測已保留/);
+assert.notEqual(mount.querySelector('input[type="radio"]').name, secondMount.querySelector('input[type="radio"]').name);
+
+mount.querySelector('[data-sign-action="flip"]').click();
+assert.match(mount.querySelector(".sign-card").textContent, /Platform 2 ←/);
+assert.equal(dom.window.document.activeElement.matches("[data-sign-answer]"), true);
+assert.match(mount.querySelector(".sign-map").getAttribute("aria-label"), /箭頭指向左/);
+
+const wrong = mount.querySelector('input[value="A"]');
+wrong.checked = true;
+wrong.dispatchEvent(new dom.window.Event("change", { bubbles: true }));
+mount.querySelector('[data-sign-action="check"]').click();
+assert.doesNotMatch(mount.textContent, /答案：C/);
+assert.match(mount.textContent, /先找出標示中的目的地詞/);
+
+const correct = mount.querySelector('input[value="C"]');
+correct.checked = true;
+correct.dispatchEvent(new dom.window.Event("change", { bubbles: true }));
+mount.querySelector('[data-sign-action="check"]').click();
+assert.match(mount.textContent, /答案：C/);
+assert.match(mount.textContent, /應停下來找完整指示或詢問/);
+
+mount.querySelector('[data-sign-case="1"]').click();
+assert.match(mount.textContent, /圖書館走廊/);
+assert.match(mount.textContent, /先寫下你的預測/);
+
+const signageMount = dom.window.document.createElement("main");
+signageMount.innerHTML = dom.window.SignReadingLab.render(signageLesson, "performance-3-iv-3");
+dom.window.document.body.append(signageMount);
+assert.equal(signageMount.querySelectorAll("[data-sign-case]").length, 3);
+assert.match(signageMount.textContent, /車站轉乘走廊/);
+assert.equal(signageMount.querySelector("nav").getAttribute("aria-label"), "練習情境");
+assert.equal(signageMount.querySelector("fieldset legend").textContent, "第三步｜選擇行動，並用文字和位置作證");
+assert.match(signageMount.querySelector(".sign-map").getAttribute("aria-label"), /Exit A.*Platform 2/);
+assert.match(signageMount.querySelector(".sign-live").getAttribute("aria-live"), /polite/);
+assert.match(stylesheet, /\.signage-lab button\s*\{[^}]*min-height:\s*44px/);
+assert.match(stylesheet, /\.sign-choice\s*\{[^}]*min-height:\s*44px/);
+assert.match(stylesheet, /@media\(max-width:600px\)\{\.sign-evidence-grid\{grid-template-columns:1fr\}/);
+assert.doesNotMatch(signageMount.textContent, /答案：/);
+const signagePrediction = signageMount.querySelector("[data-sign-reflection]");
+signagePrediction.value = "文字和左側出口一致";
+signagePrediction.dispatchEvent(new dom.window.Event("input", { bubbles: true }));
+signageMount.querySelector('[data-sign-action="predict"]').click();
+assert.match(signageMount.textContent, /預測已保留/);
+assert.equal(dom.window.document.activeElement.dataset.signAction, "flip");
+assert.equal(signageMount.querySelector('[data-sign-action="flip"]').disabled, false);
+signageMount.querySelector('[data-sign-action="flip"]').click();
+assert.match(signageMount.querySelector(".sign-card").textContent, /EXIT →/);
+assert.equal(dom.window.document.activeElement.matches("[data-sign-answer]"), true);
+assert.match(signageMount.querySelector(".sign-map").getAttribute("aria-label"), /箭頭指向右/);
+const mismatchChoice = signageMount.querySelector('input[value="A"]');
+mismatchChoice.checked = true;
+mismatchChoice.dispatchEvent(new dom.window.Event("change", { bubbles: true }));
+signageMount.querySelector('[data-sign-action="check"]').click();
+assert.match(signageMount.textContent, /先找出標示中的目的地詞/);
+assert.equal(dom.window.document.activeElement.matches(".sign-hint"), true);
+const verifyChoice = signageMount.querySelector('input[value="C"]');
+verifyChoice.checked = true;
+verifyChoice.dispatchEvent(new dom.window.Event("change", { bubbles: true }));
+signageMount.querySelector('[data-sign-action="check"]').click();
+assert.match(signageMount.textContent, /答案：C/);
+assert.equal(dom.window.document.activeElement.matches(".sign-evidence"), true);
+assert.match(signageMount.textContent, /線索不一致，先停下核對/);
+signageMount.querySelector('[data-sign-case="1"]').click();
+assert.match(signageMount.textContent, /社區診所入口/);
+assert.match(signageMount.textContent, /目前不顯示正解/);
+assert.equal(dom.window.document.activeElement.matches("[data-sign-reflection]"), true);
+console.log("signage prediction, manipulation, evidence, retry, and transfer: ok");

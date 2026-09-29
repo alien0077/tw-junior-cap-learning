@@ -2,41 +2,78 @@
   "id": "question-science-content-jd-iv-1-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年9月22日社區環境站的觀察中，以石蕊試紙測得某溶液 pH＝5，研究「Jd-Ⅳ-1：氧化物酸鹼性與酸對物質的反應」時，最合理的判斷為何？",
+  "prompt": "稀鹽酸加入碳酸鈣粉末後產生氣泡，將氣體通入澄清石灰水變混濁，氣體是？",
   "options": [
     {
       "id": "A",
-      "text": "此溶液呈中性，因為 pH＝5 且使用石蕊試紙"
+      "text": "二氧化碳，因為碳酸鹽與酸反應可產生二氧化碳"
     },
     {
       "id": "B",
-      "text": "此溶液呈鹼性，因為 pH＝5 且使用石蕊試紙"
+      "text": "氫氣，因為所有氣泡都是氫氣"
     },
     {
       "id": "C",
-      "text": "不必讀取石蕊試紙數值，只看容器外觀就能判斷酸鹼性"
+      "text": "氧氣，因為石灰水會吸收氧氣"
     },
     {
       "id": "D",
-      "text": "「Jd-Ⅳ-1：氧化物酸鹼性與酸對物質的反應」樣本呈酸性（pH＝5，由石蕊試紙測得）"
+      "text": "水蒸氣，因為反應一定沸騰"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jd-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "pH 小於 7 的水溶液呈酸性；pH＝5，因此判定為酸性。 本題對應 KG「Jd-Ⅳ-1：氧化物酸鹼性與酸對物質的反應」。"
+    "value": "A",
+    "explanation": "碳酸鈣與酸反應生成二氧化碳，二氧化碳使澄清石灰水變混濁，是常用的支持證據。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的氧化物酸鹼性、酸反應、指示劑、氣體證據及安全能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jd-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jd-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "氧化物酸鹼性、酸與金屬／碳酸鹽反應、氣體判讀",
+      "pattern": "取由指示劑、反應現象與生成物資料判斷氧化物及酸反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由指示劑、反應現象與生成物資料判斷氧化物及酸反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼、氧化物、氣體檢驗與生活情境",
+      "pattern": "取從實驗圖表、酸鹼資料與氣體證據推論物質反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從實驗圖表、酸鹼資料與氣體證據推論物質反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把反應物類別與特定氣體檢驗配對。",
+  "solutionSteps": [
+    "辨認碳酸鹽與酸的組合。",
+    "預測可能生成二氧化碳。",
+    "用澄清石灰水檢驗氣體。",
+    "排除把所有氣泡當氫氣或氧氣的錯誤。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

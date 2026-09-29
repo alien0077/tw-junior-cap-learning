@@ -2,41 +2,63 @@
   "id": "question-english-performance-2-iv-10-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-10／描述圖片」task, what is the best way to prepare question 6?",
+  "prompt": "Image description: A picnic blanket has a white thermos, a purple lunch box, and a striped towel. A child is reaching for the thermos. Which item is purple?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-10／描述圖片."
+      "text": "The lunch box."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-10／描述圖片."
+      "text": "The towel."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-10／描述圖片."
+      "text": "The thermos."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-10／描述圖片."
+      "text": "The blanket."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-10"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-10／描述圖片, question 6."
+    "explanation": "描述把purple直接修飾lunch box；其他物品分別是white或striped，沒有線索說毯子是紫色。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=66&cfsn=309&fn=112-1-1-7%E8%8B%B1%E8%AA%9E.pdf&op=dlfile",
+    "sourceLocator": "PDF第1頁第一大題第1題：依聽到的句子辨認人物與物件構成的圖像；本題人物、場景、文字與選項均重新創作。",
+    "authoringNote": "僅取公立學校公開英語試題的圖像辨識、方位／動作／場景推論或連續圖敘述能力型態作pattern-only參考；未重製原卷題幹、選項、圖片或答案。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-10"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=66&cfsn=309&fn=112-1-1-7%E8%8B%B1%E8%AA%9E.pdf&op=dlfile",
+      "title": "花蓮縣立吉安國民中學112學年度第1學期第1次段考七年級英語科試題；只參照圖像辨識／描述能力，不複製原卷內容。",
+      "year": "112-1",
+      "locator": "PDF第1頁第一大題第1題：依聽到的句子辨認人物與物件構成的圖像",
+      "pattern": "將聽到的名詞及人物關係配對到圖像；本題改成社區植物工作坊的數量盤點。",
+      "subject": "english",
+      "observedPattern": "將聽到的名詞及人物關係配對到圖像；本題改成社區植物工作坊的數量盤點。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "顏色與物件配對：先鎖定問題要找的人物、物件、關係或時間，再逐項用圖像描述核對證據；不補入畫面未提供的資訊。",
+  "solutionSteps": [
+    "先找出問題的顏色詞purple。",
+    "回到圖像描述，查看哪一個名詞緊接purple。",
+    "確認同句中thermos是white、towel是striped，避免混淆。",
+    "不替未描述顏色的blanket自行補資料。",
+    "選A；顏色題要保留形容詞與物件的配對，不可只記顏色。"
+  ]
 }

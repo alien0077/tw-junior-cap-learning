@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-2-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「3-Ⅳ-2／辨識課堂字詞」practice, what does “improve” mean in question 7?",
+  "prompt": "Mika arrives at the classroom before everyone else and unlocks the door. Which word describes Mika in the arrival order?",
   "options": [
     {
       "id": "A",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “improve” means make something better."
+      "text": "The first."
     },
     {
       "id": "B",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “improve” means a place where people wait for the town museum."
+      "text": "The last."
     },
     {
       "id": "C",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “improve” means a tool used to measure 10 minutes."
+      "text": "The next-to-last."
     },
     {
       "id": "D",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “improve” means a person who teaches at the town museum."
+      "text": "The one in the middle."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "“improve” means make something better. This item targets 3-Ⅳ-2／辨識課堂字詞, question 7."
+    "explanation": "Before everyone else 表示 Mika 最早到，因此在到達順序中是 the first。A 對應最前的位置；last 與 middle 都和「比所有人早」不符。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2829&name=112-2-%E7%AC%AC3%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%96%B1%E8%AE%80%E9%A1%8C%E7%9B%AE-%E7%8E%8B%E7%90%87%E8%90%B1.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣立宜昌國中公開試題，PDF page 4, item 27: use ordinal vocabulary to identify the earliest person；只參照題型，不重製原卷。",
+    "authoringNote": "依官方英語課綱與 Knowledge Graph，參照公立學校公開試題的課堂指令、校園詞彙、時間／方位與情境推論能力獨立改寫；未複製原題題幹、選項、資料或答案。題目維持draft，尚待版本研究及完整發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2829&name=112-2-%E7%AC%AC3%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%96%B1%E8%AE%80%E9%A1%8C%E7%9B%AE-%E7%8E%8B%E7%90%87%E8%90%B1.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中112學年度第二學期第三次段考七年級英語科試題卷",
+      "year": "112-2-3",
+      "subject": "english",
+      "locator": "PDF page 4, item 27: use ordinal vocabulary to identify the earliest person",
+      "observedPattern": "只參照第27題的校園詞彙／指令／行程或語境推論形式；公開查閱不等於可重製；只參考逐題標示的順序、頻率、校園工作與情境詞義判讀方式，不複製原題文字、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先把事件按時間排隊，再將序數字詞對應到隊列位置；first 和 last 描述位置，不是人數或頻率。",
+  "solutionSteps": [
+    "題目給出關鍵線索 before everyone else，意思是 Mika 的抵達時間早於所有同學。",
+    "把全班依抵達時間排成一列，並依實際先後比較，Mika 位在隊伍最前端。",
+    "最前端的位置用序數 the first 表達，與人數多少無關。",
+    "A 指第一位；B 是最後一位，C 是倒數第二，D 是中間位置，皆和線索矛盾。",
+    "所以選 A；判斷序數時先建立順序，再找位置名稱，不要把 first 誤當成「唯一」。"
+  ]
 }

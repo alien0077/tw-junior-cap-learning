@@ -2,23 +2,23 @@
   "id": "question-science-content-md-iv-3-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年2月23日學校研究社的觀察中，針對「Md-Ⅳ-3：颱風的狂風、豪雨與暴潮災害」提出可檢驗的科學問題，若比較 3 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "防洪工程要避免把風險轉移到下游，應如何評估？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Md-Ⅳ-3：颱風的狂風、豪雨與暴潮災害」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "以不同雨量情境模擬上下游水位、流量與淹水範圍"
     },
     {
       "id": "B",
-      "text": "研究「Md-Ⅳ-3：颱風的狂風、豪雨與暴潮災害」時只測量3組中的一組就直接下結論"
+      "text": "只量上游一個水位"
     },
     {
       "id": "C",
-      "text": "研究「Md-Ⅳ-3：颱風的狂風、豪雨與暴潮災害」時只改變施力大小，其餘條件一致，設置3組、每組取樣16份並各重複測量5次"
+      "text": "只看工程外觀"
     },
     {
       "id": "D",
-      "text": "研究「Md-Ⅳ-3：颱風的狂風、豪雨與暴潮災害」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "假設下游永遠沒有居民"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Md-Ⅳ-3：颱風的狂風、豪雨與暴潮災害」。"
+    "value": "A",
+    "explanation": "A。要比較上游蓄洪、排水速度、下游水位與不同降雨情境，檢查工程是否只是把尖峰流量或淹水時間移給下游。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題中的颱風、風雨、氣壓、暴潮、降雨、地形、災害圖與防災能力；本題改寫為颱風狂風豪雨與暴潮災害原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-md-iv-3"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-md-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫；只取颱風、氣象資料與災害判讀的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "颱風、氣象資料與災害判讀",
+      "observedPattern": "公立學校公開自然／理化試題常以颱風路徑、氣壓風場、降雨、潮位、地形、災害地圖與防災資料考查機制鏈及風險判讀；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考；只取風雨、氣壓、暴潮與防災的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "風雨、氣壓、暴潮與防災",
+      "observedPattern": "公立學校公開自然／理化試題常以颱風路徑、氣壓風場、降雨、潮位、地形、災害地圖與防災資料考查機制鏈及風險判讀；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題；只取降雨、洪水、地形與風險資料的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "降雨、洪水、地形與風險資料",
+      "observedPattern": "公立學校公開自然／理化試題常以颱風路徑、氣壓風場、降雨、潮位、地形、災害地圖與防災資料考查機制鏈及風險判讀；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "沿上游—工程—下游追蹤流量與水位，檢查風險是否轉移。",
+  "solutionSteps": [
+    "標出颱風中心、風雨圈、海岸、河川、山區與測站位置。",
+    "分別追蹤風、雨、海水位三條機制與時間變化。",
+    "核對路徑、地形、潮位、排水與暴露人口等條件。",
+    "用多站資料、預測與實測比較檢查因果方向。",
+    "提出符合官方警報與避難資源的條件式防災結論。"
+  ]
 }

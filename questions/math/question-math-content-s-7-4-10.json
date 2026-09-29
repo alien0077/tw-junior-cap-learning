@@ -2,23 +2,23 @@
   "id": "question-math-content-s-7-4-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若圖形經平移後與原圖形完全重合，平移前後兩圖形的關係為何？",
+  "prompt": "一般平行四邊形繞某中心旋轉 180° 能重合，是否因此一定具有線對稱？",
   "options": [
     {
       "id": "A",
-      "text": "全等"
+      "text": "一定有，旋轉和翻折完全相同"
     },
     {
       "id": "B",
-      "text": "只有面積相等"
+      "text": "不一定，旋轉對稱不等於線對稱"
     },
     {
       "id": "C",
-      "text": "一定相似但不全等"
+      "text": "一定有，對稱軸就是對角線"
     },
     {
       "id": "D",
-      "text": "必互相垂直"
+      "text": "沒有任何對稱性"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "平移保留形狀與大小，前後圖形全等。"
+    "value": "B",
+    "explanation": "一般平行四邊形具有 180° 旋轉對稱，但對角線通常不能使兩側翻折重合，所以不一定有線對稱，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平移、旋轉與鏡射 題型與官方課綱 KG kg-math-content-s-7-4",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供線對稱與座標幾何能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的線對稱能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-7-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-7-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "線對稱、對稱軸、對應點連線、距離／角度保留與座標反射",
+      "observedPattern": "公開學校數學試題常以摺合判斷、對稱軸性質、圖形不變量與座標反射考查線對稱；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "線對稱、對稱軸、對應點連線、距離／角度保留與座標反射",
+      "observedPattern": "公開學校數學試題常以摺合判斷、對稱軸性質、圖形不變量與座標反射考查線對稱；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨旋轉對稱和線對稱的操作，再用翻折重合檢查對稱軸。",
+  "solutionSteps": [
+    "題目先給出旋轉 180° 重合。",
+    "這只能證明旋轉對稱。",
+    "線對稱必須找到一條翻折後重合的直線。",
+    "一般平行四邊形通常沒有這樣的軸。",
+    "選 B。"
+  ]
 }

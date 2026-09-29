@@ -2,23 +2,23 @@
   "id": "question-science-content-db-iv-1-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年1月26日校園實驗室的觀察中，針對「Db-Ⅳ-1：攝食、消化與吸收取得養分」提出可檢驗的科學問題，若比較 5 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "比較水溶性與脂溶性養分的吸收路徑，下列哪項最合理？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-1：攝食、消化與吸收取得養分」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "所有養分都只能經由氣管進入肺泡，再送到血液"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-1：攝食、消化與吸收取得養分」時只改變施力大小，其餘條件一致，設置5組、每組取樣16份並各重複測量4次"
+      "text": "水溶性小分子多進入小腸絨毛的微血管；部分脂質消化產物先進入乳糜管，再匯入淋巴系統"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-1：攝食、消化與吸收取得養分」時只測量5組中的一組就直接下結論"
+      "text": "脂質消化產物一定全部先進入腎小管，水溶性養分才進入小腸"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-1：攝食、消化與吸收取得養分」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "只要食物到達胃，所有養分便已分流到血液與淋巴"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "hard",
   "answer": {
     "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-1：攝食、消化與吸收取得養分」。"
+    "explanation": "B。水溶性小分子多進入絨毛微血管；部分脂質消化產物先進乳糜管和淋巴，再匯入血液，不能把所有養分視為同一路徑。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題中的攝食、消化、養分吸收、運輸與證據判讀能力；本題改寫為消化與吸收原創情境。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開生物科資料的能力方向獨立改寫；題幹、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-db-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取攝食、消化、養分吸收與運輸的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "攝食、消化、養分吸收與運輸",
+      "observedPattern": "公開自然科評量常要求追蹤攝食、機械與化學消化、小腸吸收、膽汁、血液與淋巴運輸；本題以全新消化與養分路徑情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取消化道、小腸構造與三大養分路徑的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "消化道、小腸構造與三大養分路徑",
+      "observedPattern": "公開自然科評量常要求追蹤攝食、機械與化學消化、小腸吸收、膽汁、血液與淋巴運輸；本題以全新消化與養分路徑情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取機械與化學消化、膽汁、血液與淋巴的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "機械與化學消化、膽汁、血液與淋巴",
+      "observedPattern": "公開自然科評量常要求追蹤攝食、機械與化學消化、小腸吸收、膽汁、血液與淋巴運輸；本題以全新消化與養分路徑情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先按水溶性或脂溶性判斷絨毛內血管與乳糜管路徑。",
+  "solutionSteps": [
+    "圈出食物種類、消化部位、分子變化、吸收位置與血液／淋巴方向。",
+    "分開機械性消化、化學性消化、吸收與細胞利用，不把顆粒變小當成跨腸壁。",
+    "沿口腔—胃—小腸與絨毛內血管／乳糜管畫出路徑，標記三大養分的消化產物。",
+    "檢查膽汁、酵素、皺褶絨毛與運輸系統各自的功能，排除器官和物質混淆。",
+    "回查模型是否有直接吸收證據、替代解釋與條件限制，避免由食物外觀推論細胞利用。"
+  ]
 }

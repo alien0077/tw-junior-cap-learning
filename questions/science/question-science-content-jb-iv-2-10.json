@@ -2,23 +2,23 @@
   "id": "question-science-content-jb-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年1月17日校園實驗室的觀察中，針對「Jb-Ⅳ-2：電解質解離與導電」提出可檢驗的科學問題，若比較 4 組、每組取樣 18 份資料，哪一項設計最適當？",
+  "prompt": "導電度較高是否必然代表溶液濃度較高？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Jb-Ⅳ-2：電解質解離與導電」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "一定代表濃度最高"
     },
     {
       "id": "B",
-      "text": "研究「Jb-Ⅳ-2：電解質解離與導電」時只測量4組中的一組就直接下結論"
+      "text": "不一定，還需考慮電解質種類、解離程度、溫度與儀器條件"
     },
     {
       "id": "C",
-      "text": "研究「Jb-Ⅳ-2：電解質解離與導電」時先決定結論，再挑選支持結論的18筆資料"
+      "text": "一定代表溶液沒有離子"
     },
     {
       "id": "D",
-      "text": "研究「Jb-Ⅳ-2：電解質解離與導電」時只改變溶液濃度，其餘條件一致，設置4組、每組取樣18份並各重複測量5次"
+      "text": "導電度與任何條件都無關"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Jb-Ⅳ-2：電解質解離與導電」。"
+    "value": "B",
+    "explanation": "B。導電度是離子種類、數量、移動性、濃度、溫度與儀器條件共同結果；較高導電度不能單獨證明濃度較高。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題中的電解質解離、離子比例、導電、強弱電解質、稀釋、混合與測量控制能力；本題改寫為電解質原創情境。",
+    "authoringNote": "依官方課綱 KG 與公立國中公開試題能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jb-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-jb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取電解質解離、離子與水溶液導電的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "電解質解離、離子與水溶液導電",
+      "observedPattern": "公開自然科評量常要求連結電解質解離、離子比例、導電、強弱電解質、稀釋、混合與測量控制；本題以全新水溶液情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取強弱電解質、濃度、導電度與控制變因的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "強弱電解質、濃度、導電度與控制變因",
+      "observedPattern": "公開自然科評量常要求連結電解質解離、離子比例、導電、強弱電解質、稀釋、混合與測量控制；本題以全新水溶液情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取離子數量、稀釋、混合溶液與測量限制的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "離子數量、稀釋、混合溶液與測量限制",
+      "observedPattern": "公開自然科評量常要求連結電解質解離、離子比例、導電、強弱電解質、稀釋、混合與測量控制；本題以全新水溶液情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把導電度視為多項因素結果，不由單一數值過度推論濃度。",
+  "solutionSteps": [
+    "圈出化學式、離子種類、解離比例、電荷、濃度、體積與溫度。",
+    "寫出解離式並檢查原子數與正負電荷守恆。",
+    "把可移動離子數量與移動性連到導電預測，稀釋時區分總量和單位體積。",
+    "混合時檢查沉澱、中和、離子反應與總體積，不用單一導電讀值判定濃度。",
+    "回查電極、電壓、溫度、時間與儀器條件，說明結果的限制。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-3-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "在 △ABC 中 DE∥BC，AD=6、DB=4、EC=5，則 AE 為何？",
+  "prompt": "一根 1.6 公尺標尺影長 2 公尺，同時一棵樹影長 7.5 公尺。若陽光方向相同，樹高約多少公尺？",
   "options": [
     {
       "id": "A",
-      "text": "6"
+      "text": "4 公尺"
     },
     {
       "id": "B",
-      "text": "7.5"
+      "text": "5 公尺"
     },
     {
       "id": "C",
-      "text": "8"
+      "text": "6 公尺"
     },
     {
       "id": "D",
-      "text": "9"
+      "text": "7.5 公尺"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "AD/DB=AE/EC，所以 6/4=AE/5，AE=7.5。"
+    "value": "C",
+    "explanation": "由相似三角形，高：影長比例相同，樹高：7.5＝1.6：2，樹高＝7.5×1.6÷2＝6 公尺，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平行線截比例線段 題型與官方課綱 KG kg-math-content-s-9-3",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供平行線截線比例、分點、相似形與逆判定能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的平行線截比例方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行線截線比例、分點比例、中點連線與平行逆判定",
+      "observedPattern": "公立學校公開數學試題常要求配對同方向截線分段，利用平行線造成的相似形求未知長度，或由兩截線的相同比例反推平行；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平行線截線比例、分點比例、中點連線與平行逆判定",
+      "observedPattern": "公立學校公開數學試題常要求配對同方向截線分段，利用平行線造成的相似形求未知長度，或由兩截線的相同比例反推平行；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行線截線比例、分點比例、中點連線與平行逆判定",
+      "observedPattern": "公立學校公開數學試題常要求配對同方向截線分段，利用平行線造成的相似形求未知長度，或由兩截線的相同比例反推平行；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將兩個直角三角形的高度與影長同向配對，再解比例。",
+  "solutionSteps": [
+    "列出標尺高：影長＝1.6：2。",
+    "列出樹高 H：7.5＝1.6：2。",
+    "交叉相乘 2H＝12。",
+    "解得 H＝6 公尺。",
+    "選 C，比例回代正確。"
+  ]
 }

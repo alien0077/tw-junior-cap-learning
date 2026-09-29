@@ -1,0 +1,97 @@
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/chinese/lesson-chinese-performance-1-iv-2.json"
+REPORT = ROOT / "implementation/reports/chinese-performance-1-iv-2-first-pass-review.json"
+
+
+def record(publisher, locator, concepts, representations, misconception, assessment):
+    return {
+        "publisher": publisher,
+        "edition": f"{publisher} 公立校方國文課程計畫章節級證據",
+        "sourceType": "public-web",
+        "sourceLocator": locator,
+        "reviewedAt": "2026-09-21",
+        "findings": {
+            "concepts": concepts,
+            "representations": representations,
+            "examplesOrEvidence": ["本課以反諷提醒、校隊協調與公共說明三個原創情境練習聲情與表達技巧，只承接公開課程的能力方向。"],
+            "misconceptions": [misconception],
+            "assessmentEmphasis": [assessment],
+        },
+        "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、篇章、題目、答案、影音或版面。",
+    }
+
+
+def main():
+    data = json.loads(LESSON.read_text(encoding="utf-8"))
+    assert data["id"] == "lesson-chinese-performance-1-iv-2"
+    data["title"] = "1-Ⅳ-2：從語氣與情境讀出真正的溝通訊息"
+    data["content"] = {
+        "summary": "同一句話的字面意思，可能和說話者真正要完成的溝通任務不同。判讀聲情不能只靠聲音高低或某個表情，而要把語句、前後文、說話者與聽眾關係、場合、語速和非語言線索放在一起，再用保留餘地的方式回應。本課以反諷提醒、校隊協調與公共說明三個原創情境，練習辨認表達技巧、處理不確定性並修正誤解。",
+        "sections": [
+            {"heading": "字面與意圖要分兩層", "body": "同學在遲到後聽到『你可真準時啊』，字面是稱讚，時間事實與語境卻形成反差。先記錄原句，再列出可能的提醒、諷刺或玩笑，最後找前後文證據，不要只因一句話就斷定對方在攻擊。"},
+            {"heading": "聲情是多項線索的組合", "body": "音量、停頓、速度、重音、表情和身體方向都能提供線索，但沒有一項單獨保證意義。正式說明和朋友玩笑可能使用相似語氣，真正判讀要回到目的、關係、場合與對方後續行動。"},
+            {"heading": "表達技巧要看效果與代價", "body": "反問、譬喻、對比、委婉與幽默都可能讓訊息更有力量，也可能造成誤解。分析時指出技巧如何引導注意、哪些聽眾可能不明白，以及什麼情況應改用直接而尊重的說法。"},
+            {"heading": "回應先確認再行動", "body": "當聲情判讀不確定，可以回應『我不確定你是在提醒還是開玩笑，可以再說明嗎？』；涉及公共安全、權力差距或個人尊嚴時，優先保留可核對的事實並選擇安全的溝通管道。"},
+        ],
+    }
+    data["studyHighlights"] = [
+        "把字面內容、語境、聲音線索、關係與溝通目的放在同一張判讀表。",
+        "不把單一表情或音量當成確定答案，保留多種解讀並找可核對證據。",
+        "說明反問、反諷、譬喻、對比或委婉等技巧如何改變效果與風險。",
+        "不確定時先澄清；遇到安全、尊嚴或權力差距，選擇適切而可追溯的回應。",
+    ]
+    data["teaching"] = {
+        "body": [
+            {"id": "hook", "phase": "hook", "heading": "『你可真準時』到底是什麼意思？", "body": "把一段同學遲到二十分鐘後的對話分成原句、時間事實、說話者關係和後續反應四張卡。先讓學習者提出兩種可能解讀，再圈出哪些線索支持每種解讀，避免看到反差就直接把玩笑升級成惡意。"},
+            {"id": "explain", "phase": "explain", "heading": "聲情判讀的五個鏡頭", "body": "依序檢查字面、語氣（重音與停頓）、非語言線索、情境與目的、聽者影響。每個鏡頭只提供一部分證據；若線索互相矛盾，就標記不確定並設計澄清問句，而不是挑一項自己最熟悉的線索。"},
+            {"id": "worked-example", "phase": "worked-example", "heading": "反問如何改變壓力感", "body": "原創句子『難道我們要把所有資料都刪掉嗎？』可能是要求重新檢查，也可能只是情緒指責。先看前一句是否指出資料問題，再看後續是否提出替代做法；若只有語氣沒有方法，回應應聚焦可核對資料，不替對方補上意圖。"},
+            {"id": "guided-practice", "phase": "guided-practice", "heading": "同一提醒換兩種場合", "body": "把『請把音量調小』放進朋友排練與圖書館公告兩個情境，比較稱呼、語速、理由與回應對象如何改變。學習者要指出保留的核心需求、需要調整的表達技巧，以及可能被誤解的一句話。"},
+            {"id": "transfer", "phase": "transfer", "heading": "公共說明的語氣風險", "body": "閱讀一段校園停水通知，找出哪些詞是確定事實、哪些是預測、哪些是安撫語。改寫一版讓家長、學生與行動不便者都能理解的說明，保留時間、替代方案和查詢管道，不用模糊的樂觀語氣掩蓋未知。"},
+            {"id": "reflect", "phase": "reflect", "heading": "檢查是否把意圖當事實", "body": "回看本課的一次判讀，寫下『我觀察到的線索』與『我推測的意圖』兩句不同的文字，再補一個能讓對方修正的問題。最後說明若對象權力較大或情境涉及安全，自己會如何改變回應管道與措辭。"},
+        ],
+        "summary": [
+            "先分開字面、聲情、非語言線索、情境與溝通目的。",
+            "以多項線索交叉判讀，對矛盾證據保留不確定性。",
+            "分析表達技巧帶來的清楚、感染力與誤解風險，而非只命名修辭。",
+            "回應以確認和安全為前提，依對象、場合與權力關係調整說法。",
+        ],
+        "exitCheck": [
+            {"prompt": "為什麼『你可真準時』不能只按字面判定為稱讚？", "expectedEvidence": "能連結遲到事實、語氣反差、關係與後續反應，並保留提醒、反諷或玩笑的不同可能。"},
+            {"prompt": "判讀反問句時，哪些證據比單看問號更有用？", "expectedEvidence": "能指出前後文、重音停頓、場合、說話目的與後續行動，並說明如何處理互相矛盾的線索。"},
+            {"prompt": "如果不確定對方是在開玩笑還是在提醒，應如何回應？", "expectedEvidence": "能提出中性澄清，重述自己的理解，避免直接指控意圖；若涉及安全或尊嚴，能選擇適切管道。"},
+        ],
+    }
+    data["interactive"] = {
+        "type": "guided-choice",
+        "goal": "整合語句、聲情、情境與目的判讀訊息，指出表達技巧的效果與風險，再選擇可確認的回應。",
+        "scenario": "從遲到反諷、團隊提醒到校園通知，逐步比較線索與溝通目的，避免把猜測當成事實。",
+        "variables": [{"symbol": "l", "meaning": "字面與語境"}, {"symbol": "t", "meaning": "聲情與表達技巧"}, {"symbol": "r", "meaning": "澄清與安全回應"}],
+        "steps": [
+            {"id": "step-1", "prompt": "遲到者聽到『你可真準時』，第一步應做什麼？", "options": ["同時檢查字面、遲到事實、語氣、關係與前後文，保留多種解讀", "只按字面當成稱讚", "只看對方眉毛就判定惡意"], "answer": "A", "feedback": "A 把不同線索放在一起，能避免單一表情或反差直接變成確定意圖。"},
+            {"id": "step-2", "prompt": "要分析反問句的效果，哪項證據最重要？", "options": ["看前後文與後續行動，判斷它如何引導注意、表達質疑或造成壓力", "只數句末標點", "看到反問就固定判定為生氣"], "answer": "A", "feedback": "A 同時處理技巧、目的與聽者效果，不把修辭名稱當成完整分析。"},
+            {"id": "step-3", "prompt": "無法確定對方是在開玩笑還是在提醒時，如何回應？", "options": ["用中性語句重述理解並請對方確認，涉及安全或尊嚴時改用適切管道", "直接指控對方故意羞辱", "裝作聽不見並替對方決定"], "answer": "A", "feedback": "A 保留修正空間，也會依風險與權力差距選擇較安全的溝通方式。"},
+        ],
+    }
+    data["authoringStandard"] = "version-fused-v1"
+    data["updatedAt"] = "2026-09-21"
+    data["versionResearch"] = [
+        record("nani", "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf；國語文領域聆聽理解、語氣與情境回應定位；核讀 2026-09-21。", ["聆聽理解需連結語意、情境與說話目的。", "回應要依對象與場合調整，不能只重複字面。"], ["語句、聲情、情境、目的與回應。"], "把聲音高低或單一表情當成固定情緒答案。", "評量語意理解、情境判讀與適切口語回應。"),
+        record("kanghsuan", "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf；國語文口語溝通、表達技巧與互動學習定位；核讀 2026-09-21。", ["口語互動需依關係、目的與場合選用提問、重述與回應。", "表達技巧應連結溝通效果與聽者理解，而不只辨認名稱。"], ["重音、停頓、反問、譬喻、對比、澄清與回饋。"], "只要使用修辭就一定更清楚，忽略聽眾與情境可能造成的壓力。", "重視表達效果、聽者回饋、互動修正與合作溝通。"),
+        record("hanlin", "https://www.msjh.ntpc.edu.tw/uploads/1691978949408RP7cOuyZ.pdf；國文聆聽記錄、聲情判讀與文本評量定位；核讀 2026-09-21。", ["聲情判讀需把語音線索與文本訊息、前後文及溝通任務整合。", "評量應要求以證據解釋理解，不把推測寫成作者或說話者的確定意圖。"], ["字面、聲音、非語言、場合、來源與影響。"], "只記錄最後的情緒判斷，刪除條件、來源與不確定性。", "要求指出線索、說明技巧效果、處理歧義並提出有根據的回應。"),
+    ]
+    data["fusionRecord"] = {
+        "commonCore": ["三版本公開結構共同支持聆聽理解、情境判讀、口語互動與適切回應。", "語句、聲情、非語言線索、前後文、目的與聽者影響需互相核對。", "判讀必須保留證據和不確定性，回應要讓對方確認或修正。"],
+        "versionDifferences": ["南一較突顯聆聽語意、目的與情境回應；康軒較突顯口語互動、表達技巧與聽者回饋；翰林較突顯聲情判讀、前後文與證據說明。這是公開課程計畫層級差異，不宣稱完整教材差異。"],
+        "originalAdditions": ["以反差稱讚拆開字面與可能意圖。", "以反問句比較技巧效果與壓力風險。", "以校園通知練習把確定事實、預測、安撫語與安全回應分層。"],
+        "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織聲情、多重線索、表達技巧、歧義處理與安全回應。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。",
+    }
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit": "1-Ⅳ-2：從語氣與情境讀出真正的溝通訊息", "lessonId": data["id"], "status": "first-pass-ai-review-complete", "reviewStatus": "draft", "checks": {"unitSpecificOriginalContent": True, "threeVersionResearchRecords": True, "fusionRecordPresent": True, "interactivePredictionManipulationExplanation": True, "answersAndDetailedSteps": True, "terraSecondPass": "pending"}, "reviewedAt": "2026-09-21"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("authored chinese performance 1-iv-2")
+
+
+if __name__ == "__main__":
+    main()

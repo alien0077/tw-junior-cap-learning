@@ -2,23 +2,23 @@
   "id": "question-chinese-language-arts-domain-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "詩句寫『落日貼近山脊，歸鳥收起喧聲』。若要分析其寫作效果，最應注意什麼？",
+  "prompt": "「落日貼近山脊，歸鳥收起喧聲」若分析寫作效果，最應注意？",
   "options": [
     {
       "id": "A",
-      "text": "景物與聲音共同營造的氣氛"
+      "text": "只計算每句字數"
     },
     {
       "id": "B",
-      "text": "詩句中每個字的筆畫數"
+      "text": "光線位置與聲音變化共同營造傍晚安靜氛圍"
     },
     {
       "id": "C",
-      "text": "作者座號與紙張大小"
+      "text": "證明山脊真的會移動"
     },
     {
       "id": "D",
-      "text": "把景物全部改成議論"
+      "text": "判斷作者的數學成績"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "落日、山脊與收起喧聲的意象共同形成安靜的畫面與氣氛。"
+    "value": "D",
+    "explanation": "貼近與收起把視覺、聲音變化連結，營造由喧鬧轉安靜的傍晚畫面。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究語文領域常見閱讀、表達與資料判讀題型（文學欣賞）；官方課綱索引：https://www.k12ea.gov.tw/Tw/Common/SinglePage?filter=11C2C6C1-D64E-475E-916B-D20C83896343。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究公告、新聞、詩文、討論、查證、受眾、表格與修訂的整合語文能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫語文領域總論題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-language-arts-domain"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-language-arts-domain",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "語文理解、表達與查證",
+      "observedPattern": "公立學校國文評量結合公告、新聞、詩文、討論、資料查證、受眾調整、表格閱讀與作文修訂，要求在語境中整合理解與表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "新聞、詩文與口語溝通",
+      "observedPattern": "公立學校國文評量結合公告、新聞、詩文、討論、資料查證、受眾調整、表格閱讀與作文修訂，要求在語境中整合理解與表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨意象與動詞，再說明它們如何共同形成畫面、節奏或情感。",
+  "solutionSteps": [
+    "讀題定位：圈出「詩句效果」與對象、目的、證據、語氣、媒介或修訂線索。",
+    "整合語文功能：把理解、表達、查證與受眾需求放回完整情境；本題核心是「貼近與收起把視覺、聲音變化連結，營造由喧鬧轉安靜的傍晚畫面。」",
+    "核對正解：選項 D 能同時符合文本證據、溝通目的與表達分寸。",
+    "排除誘答：檢查是否把標題當事實、把個人感覺當證據、忽略受眾，或只修字詞不處理篇章。",
+    "回讀驗證：從讀者或聽眾角度重述，確認資訊可理解、主張可查核、行動可執行。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

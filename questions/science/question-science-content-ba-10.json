@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年6月30日學校研究社的觀察中，小車在 33 秒內前進 614 m，研究「Ba：能量的形式與轉換」時，平均速率為何？",
+  "prompt": "抽水蓄能在離峰時用電把水送到高處，尖峰時放水發電；此系統主要完成什麼？",
   "options": [
     {
       "id": "A",
-      "text": "20262 m/s"
+      "text": "能量完全不需輸入"
     },
     {
       "id": "B",
-      "text": "18.6061 m/s"
+      "text": "電能與重力位能、動能及電能之間的轉換"
     },
     {
       "id": "C",
-      "text": "0.0537459 m/s"
+      "text": "水變成燃料"
     },
     {
       "id": "D",
-      "text": "581 m/s"
+      "text": "只產生聲音"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,42 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "平均速率＝路程÷時間＝614÷33＝18.6061 m/s。 本題對應 KG「Ba：能量的形式與轉換」。"
+    "explanation": "離峰電能先轉為高處水的重力位能，放水時轉成動能，再由發電機轉為電能，過程有損耗。 正確答案為選項 B：「電能與重力位能、動能及電能之間的轉換」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究能量形式、轉換、守恆、效率、熱能與能源分類能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的能量形式、轉換、守恆、功率與效率能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "能量轉換、功、功率、效率與資料判讀",
+      "pattern": "取由運動、電器、熱與系統邊界資料追蹤能量形式和轉換的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由運動、電器、熱與系統邊界資料追蹤能量形式和轉換的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "依充電、儲存、放電三階段排列能量流。",
+  "solutionSteps": [
+    "定位概念：圈出 Ba 能量形式、轉換、守恆、效率或系統邊界。",
+    "整理證據：分開輸入、儲存、有用輸出、耗散與系統範圍。",
+    "套用原理：離峰電能先轉為高處水的重力位能，放水時轉成動能，再由發電機轉為電能，過程有損耗。",
+    "排除干擾：依能量守恆、效率公式與實驗控制檢查，正確選項是「電能與重力位能、動能及電能之間的轉換」。",
+    "最後回查：答案「電能與重力位能、動能及電能之間的轉換」符合題幹，沒有把能量轉換誤寫成消失。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

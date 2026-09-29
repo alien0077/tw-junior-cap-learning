@@ -2,23 +2,23 @@
   "id": "question-social-content-geo-ad-iv-1-7",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2023年1月13日社區資料中心的資料中，甲區人口 14 萬、面積 340 km²；乙區人口 12 萬、面積 170 km²。研究「地 Ad-Ⅳ-1：人口成長與分布」時，哪項正確？",
+  "prompt": "都市人口密度高、鄉村人口密度低，但鄉村高齡化較快。政策配置應？",
   "options": [
     {
       "id": "A",
-      "text": "乙區人口密度較高（依「地 Ad-Ⅳ-1：人口成長與分布」資料計算）"
+      "text": "同時比較人口數、年齡結構、距離、服務可達性與照護需求"
     },
     {
       "id": "B",
-      "text": "兩區人口密度相同"
+      "text": "只按人口總數平均配置"
     },
     {
       "id": "C",
-      "text": "只看人口總數即可判斷密度"
+      "text": "人口少的鄉村就不需公共服務"
     },
     {
       "id": "D",
-      "text": "面積越大人口密度必然越高"
+      "text": "都市密度高就代表所有服務都充足"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "人口密度須以人口除以面積比較；甲約 412 人/km²、乙約 706 人/km²。 本題對應 KG「地 Ad-Ⅳ-1：人口成長與分布」。"
+    "explanation": "公平配置不能只看總人數，還要考慮結構、距離與不同地區的服務成本。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+    "sourceLocator": "高雄市立鹽埕國中三年級社會科公開段考；本題只研究公開試題能力結構與資料型態。",
+    "authoringNote": "依官方課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫人口成長與分布情境；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-geo-ad-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-geo-ad-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國中三年級社會科公開段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "人口成長、密度與分布資料",
+      "observedPattern": "公立學校社會科公開試題常見的人口成長、密度、遷移與分布資料判讀能力，經本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "人口、遷移與聚落判讀",
+      "observedPattern": "公立學校社會科公開試題常見的人口成長、密度、遷移與分布資料判讀能力，經本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "人口分布、產業與政策推理",
+      "observedPattern": "公立學校社會科公開試題常見的人口成長、密度、遷移與分布資料判讀能力，經本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨人口總量、成長率、密度與組成，再追蹤出生死亡、遷移、產業交通與公共服務，最後檢查分母和尺度。",
+  "solutionSteps": [
+    "讀題定位：圈出「都市與鄉村」的人口數、出生死亡、遷移、分母、時間與空間範圍。",
+    "整理證據：分開總量、比例、自然增加、社會增加與分布原因；核心理由是「公平配置不能只看總人數，還要考慮結構、距離與不同地區的服務成本。」。",
+    "核對正解：選項 A「同時比較人口數、年齡結構、距離、服務可達性與照護需求」符合人口資料的計算與解釋要求。",
+    "排除誘答：檢查是否只看總人口、單一密度、單一都市或比例變化，並找出被忽略的分母與群體。",
+    "結論回查：確認行政邊界、期間、人口基數與指標定義一致；資料改變時重新計算。"
+  ]
 }

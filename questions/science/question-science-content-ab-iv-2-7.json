@@ -2,41 +2,67 @@
   "id": "question-science-content-ab-iv-2-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年2月12日河川觀測站的觀察中，將 143℃ 的金屬片放入 26℃ 的水中，研究「Ab-Ⅳ-2：溫度與物質狀態」時，最初的熱傳方向為何？",
+  "prompt": "冷飲杯外壁出現水珠，水珠主要來自哪裡？",
   "options": [
     {
       "id": "A",
-      "text": "由 26℃ 的水傳向 143℃ 金屬片"
+      "text": "杯內飲料穿過杯壁滲出"
     },
     {
       "id": "B",
-      "text": "由金屬片傳向水"
+      "text": "杯子本身燃燒產生水"
     },
     {
       "id": "C",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "空氣中的氧氣與杯壁反應生成水"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "空氣中的水蒸氣遇冷凝結成液態水"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ab-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 143℃ 金屬片傳向 26℃ 的水。 本題對應 KG「Ab-Ⅳ-2：溫度與物質狀態」。"
+    "value": "D",
+    "explanation": "冷杯使接觸杯壁的水蒸氣降溫，氣態水凝結成液滴；水珠主要來自空氣，不是飲料滲出，選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；溫度—時間圖表判讀題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的溫度、熱量、相變與生活應用能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "溫度、熱量、相變與生活情境判讀",
+      "pattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "追蹤水珠的來源與相變方向：氣體遇冷轉成液體。",
+  "solutionSteps": [
+    "確認杯外沒有液體來源可直接穿過杯壁。",
+    "找出周圍空氣中的水蒸氣。",
+    "水蒸氣遇冷放熱、粒子運動變慢。",
+    "粒子聚集形成液態水珠。",
+    "所以選 D。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

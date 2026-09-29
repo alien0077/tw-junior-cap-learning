@@ -2,23 +2,23 @@
   "id": "question-science-content-kc-iv-7-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月29日河川觀測站的觀察中，將電壓 36 V 加在電阻 2 Ω 的元件兩端，研究「Kc-Ⅳ-7：電流、電壓與電阻的關係」時，電流約為多少？",
+  "prompt": "定值電阻測得（V,I）為（1.0 V,0.010 A）、（2.0 V,0.020 A）、（3.0 V,0.030 A），哪項最合理？",
   "options": [
     {
       "id": "A",
-      "text": "72 A"
+      "text": "V/I 約 100 Ω，資料近似符合歐姆定律"
     },
     {
       "id": "B",
-      "text": "0.0555556 A"
+      "text": "V/I 逐列為 0.01 Ω"
     },
     {
       "id": "C",
-      "text": "18 A"
+      "text": "電流與電壓無關"
     },
     {
       "id": "D",
-      "text": "38 A"
+      "text": "只能由顏色判斷電阻"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "依歐姆定律 I＝V/R＝36/2＝18 A。 本題對應 KG「Kc-Ⅳ-7：電流、電壓與電阻的關係」。"
+    "value": "A",
+    "explanation": "各列 V/I 分別約為 100 Ω，且 I 隨 V 成正比，支持定值電阻模型。 正確答案為選項 A：「V/I 約 100 Ω，資料近似符合歐姆定律」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題的歐姆定律、電表接線、V—I 資料、控制變因與安全能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均以 Kc-Ⅳ-7 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-kc-iv-7"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-kc-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫",
+      "year": "109-115",
+      "locator": "歐姆定律、電表接線、V-I 資料與電路實驗",
+      "pattern": "取電流、電壓、電阻的量測與資料判讀能力方向，重新設計電路測量站情境。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取電流、電壓、電阻的量測與資料判讀能力方向，重新設計電路測量站情境。"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考",
+      "year": "109-115",
+      "locator": "電路、定值電阻、串並聯電表與模型限制",
+      "pattern": "取公式應用、接線理由、圖表與控制變因的推理方向，未複製題幹、選項、圖表或答案。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取公式應用、接線理由、圖表與控制變因的推理方向，未複製題幹、選項、圖表或答案。"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "locator": "電流電壓關係、電阻、燈絲與安全操作",
+      "pattern": "取數值計算與實驗限制的能力方向，全部以本課原創文字改寫。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取數值計算與實驗限制的能力方向，全部以本課原創文字改寫。"
+    }
+  ],
+  "solutionStrategy": "逐列算 V/I，再檢查比值是否穩定及原點附近的比例關係。",
+  "solutionSteps": [
+    "圈出 V、I、R、儀表接線、元件狀態與控制條件。",
+    "依本題情境套用判準：逐列算 V/I，再檢查比值是否穩定及原點附近的比例關係。",
+    "選擇正確公式或接線理由，統一單位並計算或比較。",
+    "排除顛倒分母、混淆串並聯、忽略升溫或造成短路的選項。",
+    "回算答案並說明定值模型、測量精度或安全限制。"
+  ]
 }

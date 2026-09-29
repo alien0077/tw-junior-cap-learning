@@ -2,41 +2,67 @@
   "id": "question-science-content-db-iv-2-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年7月16日學校研究社的觀察中，將 69 g 食鹽溶於 723 g 水，研究「Db-Ⅳ-2：循環系統的物質運輸與交換」時，溶液質量為何？",
+  "prompt": "下列哪條路徑最能表示含氧量較高的血液由肺回到心臟，再送往全身？",
   "options": [
     {
       "id": "A",
-      "text": "792 g"
+      "text": "肺靜脈→左心房→左心室→主動脈"
     },
     {
       "id": "B",
-      "text": "654 g"
+      "text": "肺動脈→右心房→右心室→主動脈"
     },
     {
       "id": "C",
-      "text": "49887 g"
+      "text": "上腔靜脈→左心房→右心室→肺靜脈"
     },
     {
       "id": "D",
-      "text": "723 g"
+      "text": "主動脈→右心房→右心室→肺動脈"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：69＋723＝792 g。 本題對應 KG「Db-Ⅳ-2：循環系統的物質運輸與交換」。"
+    "explanation": "肺部氧合後的血液經肺靜脈回到左心房，再進入左心室，最後由主動脈送往全身；判斷時要用流向而非單看動脈或靜脈名稱。選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的循環系統、物質運輸與微血管交換能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "循環系統、心臟血管、物質運輸與微血管交換判讀",
+      "pattern": "取由運輸路徑、血管功能與組織交換資料推論循環系統的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由運輸路徑、血管功能與組織交換資料推論循環系統的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "循環路徑題先標示來源與目的地，再依腔室順序和血管連接核對。",
+  "solutionSteps": [
+    "先定位含氧血的來源是肺。",
+    "確認肺回心臟使用肺靜脈。",
+    "依序通過左心房與左心室。",
+    "確認離開左心室的血管是主動脈。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

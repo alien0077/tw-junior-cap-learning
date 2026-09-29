@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-5-iv-3-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "兩篇文章都談閱讀習慣：甲文使用調查數據，乙文只描述作者個人經驗。若要比較可信度，第一步應做什麼？",
+  "prompt": "作者選擇書信形式，讓主角直接寫給多年未見的朋友；這種形式最可能帶來什麼？",
   "options": [
     {
       "id": "A",
-      "text": "直接判定篇幅較長者一定正確"
+      "text": "建立直接對話感，也能自然呈現收信人缺席時的回憶與未寄出的情緒"
     },
     {
       "id": "B",
-      "text": "只比較標題是否押韻"
+      "text": "使文本一定沒有時間順序"
     },
     {
       "id": "C",
-      "text": "因為主題相同就視為證據相同"
+      "text": "讓作者不能表達任何觀點"
     },
     {
       "id": "D",
-      "text": "確認兩篇文章的證據類型與適用範圍"
+      "text": "表示所有內容都是真實公文"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-5-iv-3"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "數據與個人經驗的證據性質不同，先辨認證據類型及可支持的範圍，才能公平比較。"
+    "value": "A",
+    "explanation": "文體形式會提供特定的說話位置與情感距離；書信不等於公文，也不會自動取消敘事。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究文本判讀與字音字形以外的閱讀題型（證據比較）；課綱 5-Ⅳ-3：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫敘事視角、順序、意象、描寫、對比、語言、文體、結尾、形式內容及整合賞析；未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-5-iv-3"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-chinese-performance-5-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章內容、形式與修辭效果",
+      "observedPattern": "公開國文評量常以敘事視角、文體、篇章結構、修辭語句與寫作效果檢查文本理解；本題以原創段落情境改寫內容形式分析。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文體、表達方式與語句功能",
+      "observedPattern": "公開國文評量常以敘事視角、文體、篇章結構、修辭語句與寫作效果檢查文本理解；本題以原創段落情境改寫內容形式分析。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先概括文本內容與目的，再辨認視角、順序、文體、描寫、意象和句式等形式；用具體段落證明形式如何造成閱讀效果，最後回扣全文。",
+  "solutionSteps": [
+    "讀題定位：圈出「形式與內容」，確認題目要分析內容、視角、順序、描寫、意象、語言、文體或結尾效果。",
+    "連結形式與內容：先找文本的具體安排，再問它如何影響資訊、節奏、人物、情緒或讀者理解；本題核心是「文體形式會提供特定的說話位置與情感距離；書信不等於公文，也不會自動取消敘事。」",
+    "核對正解：選項 A「建立直接對話感，也能自然呈現收信人缺席時的回憶與未寄出的情緒」以形式證據支持效果，且沒有超出文本範圍。",
+    "排除誘答：不要只摘形容詞、只看一個字、把作者生平當證據，或把可能效果說成唯一必然意義。",
+    "完成賞析回查：依內容目的→形式選擇→段落證據→閱讀效果→全文回扣重述，確認推論可查證。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

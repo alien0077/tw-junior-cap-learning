@@ -1,0 +1,65 @@
+{
+  "id": "question-math-root-a-07",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "調製果汁時，濃縮液與水的體積比為 3:8。若加入 1.6 公升的水，應加入多少公升濃縮液？",
+  "options": [
+    {
+      "id": "A",
+      "text": "0.4 公升"
+    },
+    {
+      "id": "B",
+      "text": "0.5 公升"
+    },
+    {
+      "id": "C",
+      "text": "0.6 公升"
+    },
+    {
+      "id": "D",
+      "text": "0.8 公升"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-a",
+    "kg-math-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "C",
+    "explanation": "濃縮液與水的比例固定為3:8，所以水量從0.8公升放大到1.6公升是乘2，濃縮液也要從0.3公升乘2，得到0.6公升。等價地，x/1.6=3/8，解得x=0.6。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級數學科試題卷",
+      "year": "114-2",
+      "subject": "math",
+      "locator": "校方附件「114-2-3-七年級數學試題卷.pdf」第1頁第7題",
+      "locatorLevel": "item",
+      "observedPattern": "原卷第7題提供水與糖的固定比例並按水量求糖量；本題改用濃縮液、水量及全新數值自編比例推算。",
+      "pattern": "原卷第7題提供水與糖的固定比例並按水量求糖量；本題改用濃縮液、水量及全新數值自編比例推算。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+    "sourceLocator": "校方附件「114-2-3-七年級數學試題卷.pdf」第1頁第7題；僅參照固定比例下的量值推算技能，不複製原題。",
+    "authoringNote": "以飲品調配新情境與不同數值改寫公開比例題，逐步核對單位與等值比；題目維持 draft 待 AI 內容 QA。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-root-a",
+  "solutionStrategy": "先讓兩種液體使用相同體積單位，再辨認固定比的對應項；可用等值比求未知量，並用倍數檢查合理性。",
+  "solutionSteps": [
+    "把兩個用量放在相同單位下：水為1.6公升，濃縮液為未知數 x 公升；題給濃縮液:水=3:8，因此列 x:1.6=3:8。",
+    "改寫成分數等式 x/1.6=3/8，交叉相乘得 8x=4.8。這裡對應順序不能顛倒：x 對 3，1.6 對 8。",
+    "兩邊同除以8，得 x=0.6 公升；也可注意 1.6 是 0.8 的兩倍，因此濃縮液也應是原先0.3公升的兩倍。",
+    "檢查單位與總量：兩種液體都是公升，加入0.6公升濃縮液與1.6公升水，比例為0.6:1.6。",
+    "約分0.6:1.6（同乘10）為6:16，再同除2得3:8，符合配方比例；選項 C。"
+  ]
+}

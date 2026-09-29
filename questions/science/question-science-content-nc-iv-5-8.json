@@ -2,23 +2,23 @@
   "id": "question-science-content-nc-iv-5-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月18日學校研究社的觀察中，比較兩地「Nc-Ⅳ-5：新興能源科技」資料時，甲地迎風坡年雨量約 10380 mm、乙地背風坡約 7050 mm，最合理的做法是？",
+  "prompt": "若太陽能無人機很輕但陰天續航不足，電池車續航較穩定但需充電，較完整的方案是？",
   "options": [
     {
       "id": "A",
-      "text": "在「Nc-Ⅳ-5：新興能源科技」中只看 10380 mm 的單一數值便下結論"
+      "text": "只因無人機輕就永久選它"
     },
     {
       "id": "B",
-      "text": "在「Nc-Ⅳ-5：新興能源科技」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "依任務時段、載重、天候、充電來源和備援需求設主方案與備援，不以單一綠色標籤決定"
     },
     {
       "id": "C",
-      "text": "在「Nc-Ⅳ-5：新興能源科技」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只因電池車穩定就忽略充電來源"
     },
     {
       "id": "D",
-      "text": "同時比較地形、風向、觀測期間與 10380、7050 mm 資料"
+      "text": "把陰天資料排除"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Nc-Ⅳ-5：新興能源科技」。"
+    "value": "B",
+    "explanation": "科技選擇要對齊任務與條件；不同裝置可在不同情境互補，仍需比較生命週期、安全和維護。 正確答案為選項 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的油電混合、電池、太陽能、能源轉換、效率、儲能、生命週期與科技決策能力方向；本題為 Nc-Ⅳ-5 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nc-iv-5"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-nc-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源轉換、效率、功率、生活科技與資料判讀",
+      "observedPattern": "取公立學校自然科對能量轉換、效率與科技應用的能力方向，另寫裝置案例。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能量、電力、效率、波動與實驗證據",
+      "observedPattern": "取公開會考對能量資料、單位、效率與限制表達的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源科技、燃料、供應與環境安全",
+      "observedPattern": "取公立學校自然科對科技系統、能源利用與環境限制的能力方向，重新設計題目。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "列出任務限制和各方案缺口，再安排主備援與可重測指標。",
+  "solutionSteps": [
+    "畫出能源來源、轉換器、儲存／控制、輸出和損耗。",
+    "確認有用輸出、輸入分母、功率、時間、效率和任務需求。",
+    "固定路況、天候、載重、初始狀態與生命週期範圍，檢查替代解釋。",
+    "排除把新興等同完美、把操作階段等同全生命週期或忽略儲能的選項，答案為 B。",
+    "用條件式能量帳本回查科技判斷：科技選擇要對齊任務與條件；不同裝置可在不同情境互補，仍需比較生命週期、安全和維護。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-chinese-argument-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "作者承認反方理由後再回應，這段文字最可能具有什麼功能？",
+  "prompt": "作者先承認「增加設備需要經費」，接著說明可分期改善並提出預算資料；這段最可能有何功能？",
   "options": [
     {
       "id": "A",
-      "text": "處理反論並強化主張"
+      "text": "處理反論並用新資料強化主張"
     },
     {
       "id": "B",
-      "text": "改變文章字體"
+      "text": "承認成本後撤回原本主張"
     },
     {
       "id": "C",
-      "text": "提供頁碼"
+      "text": "只重複主張，沒有回應經費疑慮"
     },
     {
       "id": "D",
-      "text": "刪除證據"
+      "text": "轉入與成本無關的新話題"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "回應反方是議論結構的一部分。"
+    "explanation": "先承認經費問題，再提出分期與預算資料，是處理反方疑慮並補足可行性理由。正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-argument-8.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三筆公立學校公開國文試題中的主張、論據、樣本、反論、結論範圍與可檢驗性能力；本題改寫為全新語料。",
+    "authoringNote": "依官方課綱與單元 KG 獨立命題，使用原創語料與選項，未複製公校原題；題庫首輪AI內容校核已於2026-09-27更新，公開試題各筆來源仍須逐題確認定位與改寫界線，完成前維持draft；不進行Terra複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-argument-evidence-basics"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-27",
+  "lessonId": "lesson-chinese-argument-evidence-basics",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；只取議論文主張、論據與推論的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "議論文主張、論據與推論",
+      "observedPattern": "公立學校國文評量常要求辨識主張、理由與證據，並檢查樣本、關聯、反論、結論範圍及可檢驗性；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；只取證據品質、反論與結論範圍的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "證據品質、反論與結論範圍",
+      "observedPattern": "公立學校國文評量常要求辨識主張、理由與證據，並檢查樣本、關聯、反論、結論範圍及可檢驗性；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看作者是否回應成本、例外或反方疑慮，並提出可行方案。",
+  "solutionSteps": [
+    "辨認『需要經費』是讀者可能提出的反對理由，而非原主張已被撤回。",
+    "作者先承認成本，再提出分期方案與預算資料，表示正在回應可行性疑慮。",
+    "判斷這是在承認限制的同時，以方案和證據修補論證。",
+    "選 A；其餘選項不能解釋成本回應與預算資料的功能。",
+    "還要檢查預算資料是否真能支持分期可行，不能只因提出數字就視為有力。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

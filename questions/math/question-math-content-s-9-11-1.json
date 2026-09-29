@@ -2,41 +2,84 @@
   "id": "question-math-content-s-9-11-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "幾何證明中的『已知』是指什麼？",
+  "prompt": "幾何證明中的『已知』主要代表什麼？",
   "options": [
     {
       "id": "A",
-      "text": "題目提供或可直接使用的條件"
+      "text": "題目已給定且可作為推理起點的條件"
     },
     {
       "id": "B",
-      "text": "最後想得到的結論"
+      "text": "最後要證明的結論"
     },
     {
       "id": "C",
-      "text": "任意猜測的數值"
+      "text": "畫圖時任意假設的性質"
     },
     {
       "id": "D",
-      "text": "圖形畫得漂亮的部分"
+      "text": "量角器測出的近似值"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-11"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "已知是題目明確給出的條件，推理須以此為起點。"
+    "explanation": "已知是題目明確提供的條件，證明必須從這些條件出發，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 證明的意義 題型與官方課綱 KG kg-math-content-s-9-11",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供證明與推理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的證明能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-11"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "幾何證明的已知與求證、定理條件、直接推理、反例與量測證據界線",
+      "observedPattern": "公立學校公開數學試題常要求辨認條件與結論、選用定理、建立推理鏈及判讀反例是否足以否定全稱敘述；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "幾何證明的已知與求證、定理條件、直接推理、反例與量測證據界線",
+      "observedPattern": "公立學校公開數學試題常要求辨認條件與結論、選用定理、建立推理鏈及判讀反例是否足以否定全稱敘述；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "幾何證明的已知與求證、定理條件、直接推理、反例與量測證據界線",
+      "observedPattern": "公立學校公開數學試題常要求辨認條件與結論、選用定理、建立推理鏈及判讀反例是否足以否定全稱敘述；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分清推理起點與目標，不能把求證內容當成已知偷用。",
+  "solutionSteps": [
+    "找出題幹明確給出的資訊。",
+    "把這些資訊列為推理起點。",
+    "區分它們與最後要求的結論。",
+    "不增加題目沒有給的額外條件。",
+    "選 A。"
+  ]
 }

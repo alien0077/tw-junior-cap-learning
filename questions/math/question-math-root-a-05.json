@@ -1,0 +1,87 @@
+{
+  "id": "question-math-root-a-05",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "若 (2x+1):(x+5)=3:2，且 x≠−5，則 x 等於多少？",
+  "options": [
+    {
+      "id": "A",
+      "text": "7"
+    },
+    {
+      "id": "B",
+      "text": "13"
+    },
+    {
+      "id": "C",
+      "text": "17"
+    },
+    {
+      "id": "D",
+      "text": "26"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-a",
+    "kg-math-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "B",
+    "explanation": "比例 a:b=c:d 可改寫成 ad=bc，所以 2(2x+1)=3(x+5)。展開得 4x+2=3x+15，移項後 x=13。代回時，(2×13+1):(13+5)=27:18=3:2，符合原比例；且 13 不會使分母為零。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級數學科試題卷",
+      "year": "114-2",
+      "subject": "math",
+      "locator": "校方附件「114-2-3-七年級數學試題卷.pdf」第1頁第2題",
+      "locatorLevel": "item",
+      "observedPattern": "將兩個一次式組成的比設為指定整數比，再以交叉相乘轉成一次方程求未知數；本題另用不同係數與常數自編。",
+      "pattern": "將兩個一次式組成的比設為指定整數比，再以交叉相乘轉成一次方程求未知數；本題另用不同係數與常數自編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究計算、表格與情境判讀的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+    "sourceLocator": "公立學校公開段考頁；math科題型結構，非原題重製",
+    "authoringNote": "依公開公立學校試題的能力與資料型態改寫；題幹、選項、答案與解析均為自編，維持 draft 待 AI 內容 QA。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-root-a",
+  "solutionStrategy": "先把比式寫成分數相等，再交叉相乘；整理成一次方程後求解，最後同時檢查原比例與分母限制。",
+  "solutionSteps": [
+    "將比例寫成等值分數：(2x+1)/(x+5)=3/2；題目已排除 x=−5，分母可用。",
+    "交叉相乘：2(2x+1)=3(x+5)，得到 4x+2=3x+15。",
+    "整理方程：兩邊同減 3x，再同減 2，得 x=13。每一步都對等式兩側做相同運算。",
+    "回代左邊：2×13+1=27，13+5=18，因此左側的比為 27:18；同除以 9 得 3:2，與題目相同。",
+    "限制檢查：x=13≠−5，原比式有定義；一次方程只有此解，所以答案唯一，選 B。"
+  ]
+}

@@ -2,41 +2,67 @@
   "id": "question-science-content-db-iv-3-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年5月22日校園實驗室的觀察中，針對「Db-Ⅳ-3：呼吸系統與外界氣體交換」提出可檢驗的科學問題，若比較 3 組、每組取樣 18 份資料，哪一項設計最適當？",
+  "prompt": "要用實驗模型比較不同呼吸狀態的氣體交換，哪項設計最能保留可判讀證據？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只改變施力大小，其餘條件一致，設置3組、每組取樣18份並各重複測量5次"
+      "text": "不同組使用不同試劑與不同體積，最後只比較顏色深淺"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "只讓受試者描述感覺，不記錄氣體或時間"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只測量3組中的一組就直接下結論"
+      "text": "固定測量時間與氣體體積，分別收集吸入與呼出氣體，再用相同檢測方法比較氧氣、二氧化碳或水分指標"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時先決定結論，再挑選支持結論的18筆資料"
+      "text": "看到胸腔起伏就直接宣布所有氣體濃度相同"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-3：呼吸系統與外界氣體交換」。"
+    "value": "C",
+    "explanation": "要比較呼吸狀態，需控制收集量、時間與檢測方法，並將吸入與呼出氣體的可觀察指標並列；只靠感覺或未控制的顏色無法支持結論。選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的呼吸運動、肺泡與氣體交換能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "呼吸運動、肺泡氣體交換與呼吸資料判讀",
+      "pattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "探究題採『控制條件—同一測量—比較資料—限制結論』順序。",
+  "solutionSteps": [
+    "先指定要比較的呼吸狀態與氣體樣本。",
+    "固定收集時間、體積與檢測方法。",
+    "記錄吸入與呼出樣本的可觀察變化。",
+    "用成對資料比較，不把胸腔外觀直接當成濃度測量。",
+    "所以選 C。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,41 +2,78 @@
   "id": "question-science-content-ina-iv-3-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年3月27日學校研究社的觀察中，比較兩地「INa-Ⅳ-3：科學發現、新能源與社會影響」資料時，甲地迎風坡年雨量約 27580 mm、乙地背風坡約 18875 mm，最合理的做法是？",
+  "prompt": "某社區評估設置太陽光電，哪項資料最能先回答『發電量是否足以支應需求』？",
   "options": [
     {
       "id": "A",
-      "text": "在「INa-Ⅳ-3：科學發現、新能源與社會影響」中只看 27580 mm 的單一數值便下結論"
+      "text": "全年逐月日照量、面板面積、轉換效率與社區用電曲線"
     },
     {
       "id": "B",
-      "text": "在「INa-Ⅳ-3：科學發現、新能源與社會影響」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "只看某天中午的天空顏色"
     },
     {
       "id": "C",
-      "text": "同時比較地形、風向、觀測期間與 27580、18875 mm 資料"
+      "text": "只比較設備外觀顏色"
     },
     {
       "id": "D",
-      "text": "在「INa-Ⅳ-3：科學發現、新能源與社會影響」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只引用廠商的廣告口號"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ina-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「INa-Ⅳ-3：科學發現、新能源與社會影響」。"
+    "value": "A",
+    "explanation": "發電量受日照時間、面積、效率與需求時間分布共同影響，全年資料比單一時刻或宣傳語句更能檢驗供需。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的科學證據、新能源、環境影響及社會決策能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 INa-Ⅳ-3 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ina-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ina-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "能源轉換、環境影響與資料判讀",
+      "pattern": "取由能源系統資料、控制變因與環境後果進行證據推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由能源系統資料、控制變因與環境後果進行證據推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "能源、環境、科學證據與生活決策",
+      "pattern": "取從圖表、實驗與生活情境判斷科學主張及其限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從圖表、實驗與生活情境判斷科學主張及其限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把主張拆成可量測的輸入、轉換與需求資料。",
+  "solutionSteps": [
+    "界定需求是全年供電而非單日峰值。",
+    "蒐集日照、面積、效率及用電的同時間尺度資料。",
+    "比較發電曲線與用電曲線是否重疊。",
+    "B、C、D 無法估算供需。",
+    "因此 A 最能支持判斷。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

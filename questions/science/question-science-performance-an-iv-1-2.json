@@ -2,41 +2,73 @@
   "id": "question-science-performance-an-iv-1-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年10月5日河川觀測站的觀察中，針對「an-Ⅳ-1：科學觀察、測量與方法受共同標準規範」提出可檢驗的科學問題，若比較 3 組、每組取樣 10 份資料，哪一項設計最適當？",
+  "prompt": "下列哪項最能避免冷卻測量的數字失去意義？",
   "options": [
     {
       "id": "A",
-      "text": "研究「an-Ⅳ-1：科學觀察、測量與方法受共同標準規範」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "記錄溫度時同時寫攝氏度、讀值時間與器材型號"
     },
     {
       "id": "B",
-      "text": "研究「an-Ⅳ-1：科學觀察、測量與方法受共同標準規範」時只測量3組中的一組就直接下結論"
+      "text": "只寫 32，不寫單位"
     },
     {
       "id": "C",
-      "text": "研究「an-Ⅳ-1：科學觀察、測量與方法受共同標準規範」時只改變水溫，其餘條件一致，設置3組、每組取樣10份並各重複測量3次"
+      "text": "把不同單位的數字直接平均"
     },
     {
       "id": "D",
-      "text": "研究「an-Ⅳ-1：科學觀察、測量與方法受共同標準規範」時先決定結論，再挑選支持結論的10筆資料"
+      "text": "把小數位增加到十位"
     }
   ],
   "knowledgeIds": [
     "kg-science-performance-an-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「an-Ⅳ-1：科學觀察、測量與方法受共同標準規範」。"
+    "value": "A",
+    "explanation": "A 保留單位、時間和器材資訊；無單位或任意增加小數都不能提高測量意義。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究測量、方法與證據能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-an-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-an-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "測量、變因與證據能力方向",
+      "observedPattern": "公開自然科評量常要求以觀察、測量、方法、資料與誤差界線判讀探究設計；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "實驗設計、誤差與結論界線能力方向",
+      "observedPattern": "公開自然科評量常要求以觀察、測量、方法、資料與誤差界線判讀探究設計；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把模糊觀察轉成共同定義，再檢查單位、器材、程序、重複、異常、安全與結論範圍。",
+  "solutionSteps": [
+    "讀題定位：圈出本題的測量核心「unit」。",
+    "列出對象、操作型定義、單位、器材、時間、控制條件與安全限制。",
+    "逐項比對程序是否能產生可重複資料；正確答案是 A。",
+    "核對理由：A 保留單位、時間和器材資訊；無單位或任意增加小數都不能提高測量意義。",
+    "最後檢查結論是否受器材解析度、異常、重複次數與樣本範圍限制。"
+  ]
 }

@@ -1,0 +1,71 @@
+{
+  "reportId": "a7-2-core-fusion-resolution-d340",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-2",
+  "classification": "source-informed-original-fusion-draft-strengthened; full-publisher-authentication-open",
+  "finding": "A-7-2's core pedagogical fusion is now explicitly operationalized: understanding and checking whether a proposed value satisfies an equation is separated from the procedure for efficiently finding an unknown value. The lesson uses substitution into the unchanged equation and comparison of both sides, while equality-preserving transformations remain in A-7-3.",
+  "newEvidence": [
+    {
+      "source": "Nani-aligned Junyi public 3-2 course sequence",
+      "url": "https://www.junyiacademy.org/topics/n-m7a-c03-2",
+      "read": "Read the page's actual item sequence: contextual and text-to-equation modeling, equation/solution meaning, candidate checking, then a separate equality-axiom/transposition group.",
+      "limit": "The page labels itself Nani-aligned; it is platform organization, not publisher textbook prose."
+    },
+    {
+      "source": "Nani textbook extract in public mathematics education journal",
+      "url": "https://math.ntnu.edu.tw/~kailin/mysite/data/%E6%95%B8%E5%AD%B8%E9%96%B1%E5%88%8A2_%E9%80%8F%E9%81%8E%E9%96%B1%E8%AE%80%E5%AD%B8%E7%BF%92%E6%95%B8%E5%AD%B8.pdf",
+      "locator": "PDF page 3, explicitly identified by the journal as extracted from Nani textbook pp.183-184",
+      "read": "A balance/weight representation motivates applying the same operation to both equal quantities; this supports keeping transformation rationale distinct from candidate substitution checking.",
+      "limit": "Partial excerpt, third-party publication, not the complete Nani chapter; reproduction authorization is not asserted."
+    },
+    {
+      "source": "Hanlin-labeled public textbook OCR",
+      "url": "https://www.scribd.com/document/831294508/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E4%B8%83%E4%B8%8A%E8%AA%B2%E6%9C%AC",
+      "locator": "OCR textbook pages 168-170; later pages 170-177 separately show equality axioms and transposition",
+      "read": "Read equation formation and formal criteria, the definition of a solution by equal left/right values, and a candidate-comparison table before the later transformation section.",
+      "limit": "Third-party share labelled All Rights Reserved; uploader, edition authenticity and reuse rights unverified."
+    },
+    {
+      "source": "Public school-hosted 112 grade-7 3-2 post-observation teaching notes",
+      "url": "https://www.openclass.chc.edu.tw/storage/137/112/%E8%A7%80%E8%AA%B2%E5%BE%8C%E8%B3%87%E6%96%99%E6%95%B4%E7%90%86.pdf/pGVNlSTPTc8tm9PJIUL1coBqupfND7VR5PQuYLV1.pdf",
+      "read": "Read the visible progression from contextual expression/equation formation and formal definition to candidate substitution and left/right comparison; the notes explicitly distinguish trial checking from the later equality-axiom method because trialing values can be inefficient.",
+      "limit": "The document does not identify a publisher; its source page marks All Rights Reserved. Used as generic pedagogical corroboration only, not as Nani or Kanghsuan evidence."
+    },
+    {
+      "source": "Kanghsuan official resource index and edition-labelled school plan",
+      "url": "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E6%A6%82%E5%BF%B5%E6%95%B8%E9%80%9F%E5%85%85&l2=7%E4%B8%8A",
+      "read": "Rechecked official resource headings for equation, solution, equality axioms and transposition; the existing Jinshan school plan separates equation/word translation from the later equality/transposition week.",
+      "limit": "The official page exposed only its video/resource index in this read; video body and a publisher-attributable chapter excerpt remain unread. The school plan is not publisher-authored textbook prose."
+    }
+  ],
+  "fusionDecisionAndVisibleImpact": [
+    "The explanation now explicitly contrasts two questions: whether a proposed number satisfies an equation versus how to efficiently find an unknown solution. Substitution proves the former; trial-and-error alone is not presented as a general solving method.",
+    "Existing six original learner-visible sections retain their unit-specific sequence: contextual quantity model, formal one-variable/first-degree/equality criteria, candidate checking, misconception diagnosis, symbol-to-story read-back, and transfer/exit check.",
+    "The four-step interaction remains coherent with 4x+3=27: form the relation, classify it, reject x=5 by 23≠27, and confirm x=6 by 27=27. No balance-scale or transposition operation is falsely claimed by the runtime.",
+    "New public references are present in lesson.studyReferences and simulation.sourceRefs; the interaction regression now asserts the distinction between candidate verification and finding an unknown solution."
+  ],
+  "status": {
+    "substantiveOriginalLessonDesign": "implemented and target-regression verified; remains draft",
+    "publisherCoverage": {
+      "nani": "partial textbook extract and Nani-aligned course sequence; full chapter/authenticity/rights open",
+      "kanghsuan": "official resource index and school plan only; publisher chapter body still open",
+      "hanlin": "readable labeled chapter OCR; authenticity and rights still open"
+    },
+    "independentContentReview": "open",
+    "implementationSpec": "structural validation passed; qaStatus remains untested/pending",
+    "publicExamLedger": "not rerun or modified"
+  },
+  "verificationThisRun": {
+    "targetRegression": "PASS: npm run test:math:a7-2",
+    "fullTests": "PASS: npm test; workbench full bundle traversed 1,027/1,027 lessons",
+    "dataValidation": "PASS: 14,462 JSON files, 13,112 IDs, 1,032 KG nodes; all 1,052 lessons and 10,566 questions remain draft",
+    "implementationSpecs": "PASS structurally: 1,027 spec files, 0 errors, 1,027 pending",
+    "strictIndependence": "PASS: 614 lessons, 0 risks, 0 strict failures",
+    "diffAndJson": "PASS: git diff --check; lesson JSON parses",
+    "browserEnvironment": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3; Playwright 1.58.0; Chromium revision 1208 executable exists; formal workbench URL HTTP 200. Restricted launch reproduced SIGABRT/EPERM after process launch/kill; no reinstall performed.",
+    "authorizedBrowserSmoke": "PASS: npm run test:browser -- --url http://127.0.0.1:8765/implementation/workbench.html; 1,027/1,027 traversal; A-7-2 four stages, retry/correct feedback, keyboard and 320/375/768 widths; no page errors.",
+    "axe": "Not rerun; no runtime code or markup was changed. Prior reports are historical only, not claimed as this-run axe evidence.",
+    "commitPush": "not performed; broader requested goal remains active"
+  },
+  "noRepeatWork": "Did not rewrite the existing six-section lesson wholesale, regenerate the completed public-exam ledger, repeat A-7-1/A-7-8 fusion, reinstall Playwright/Chromium, dispatch subtasks, or claim complete three-publisher review."
+}

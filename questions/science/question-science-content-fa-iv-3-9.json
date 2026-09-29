@@ -2,41 +2,84 @@
   "id": "question-science-content-fa-iv-3-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年1月7日學校研究社的觀察中，針對「Fa-Ⅳ-3：大氣主要成分與變動氣體」提出可檢驗的科學問題，若比較 3 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "讀取大氣組成比例表時，哪一項資料最需要先確認？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Fa-Ⅳ-3：大氣主要成分與變動氣體」時只改變施力大小，其餘條件一致，設置3組、每組取樣17份並各重複測量4次"
+      "text": "測量對象、單位、時間與地點"
     },
     {
       "id": "B",
-      "text": "研究「Fa-Ⅳ-3：大氣主要成分與變動氣體」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "表格字體顏色"
     },
     {
       "id": "C",
-      "text": "研究「Fa-Ⅳ-3：大氣主要成分與變動氣體」時只測量3組中的一組就直接下結論"
+      "text": "讀者喜歡的氣體名稱"
     },
     {
       "id": "D",
-      "text": "研究「Fa-Ⅳ-3：大氣主要成分與變動氣體」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "圖表是否放在第一頁"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-fa-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Fa-Ⅳ-3：大氣主要成分與變動氣體」。"
+    "explanation": "比例表的意義取決於物質名稱、單位、測量時間與測站位置；水氣和污染物特別容易受這些條件影響。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作大氣組成比例、變動氣體、污染物與時間尺度判讀的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fa-iv-3"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-fa-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "大氣組成、溫室氣體與空氣品質能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以大氣組成比例、燃燒與呼吸、溫室氣體、PM2.5、AQI 與時間序列考查固定／變動氣體和資料尺度；本題只取能力方向並重新設計情境、資料與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "氣體成分、污染物與環境資料判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以大氣組成比例、燃燒與呼吸、溫室氣體、PM2.5、AQI 與時間序列考查固定／變動氣體和資料尺度；本題只取能力方向並重新設計情境、資料與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "大氣主要成分、二氧化碳與空氣品質題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以大氣組成比例、燃燒與呼吸、溫室氣體、PM2.5、AQI 與時間序列考查固定／變動氣體和資料尺度；本題只取能力方向並重新設計情境、資料與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認資料定義與條件，再比較數值大小。",
+  "solutionSteps": [
+    "先讀表格的物質名稱。",
+    "確認比例或濃度的單位。",
+    "查看測量時間與測站位置。",
+    "判斷變動氣體是否受情境影響。",
+    "再用相同條件比較數值與趨勢。"
+  ]
 }

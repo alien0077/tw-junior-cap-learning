@@ -1,0 +1,32 @@
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/chinese/lesson-chinese-performance-5-iv-1.json"
+REPORT = ROOT / "implementation/reports/chinese-performance-5-iv-1-first-pass-review.json"
+
+
+def rec(name, locator, concepts, forms, misconception, assessment):
+    return {"publisher": name, "edition": f"{name} 公立校方國文課程計畫章節級證據", "sourceType": "public-web", "sourceLocator": locator, "reviewedAt": "2026-09-21", "findings": {"concepts": concepts, "representations": forms, "examplesOrEvidence": ["本課以原創短文、對話與標點改寫卡，承接公開課程的朗讀、句段理解與文本表現方向。"], "misconceptions": [misconception], "assessmentEmphasis": [assessment]}, "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、篇章、題目、答案、影音或版面。"}
+
+
+def main():
+    data = json.loads(LESSON.read_text(encoding="utf-8")); assert data["id"] == "lesson-chinese-performance-5-iv-1"
+    data["title"] = "5-Ⅳ-1：讓標點、停頓與語氣共同完成有感朗讀"
+    data["content"] = {"summary": "標點不是停頓符號的清單，而是作者安排句子關係、讀者理解路徑與聲音節奏的線索。本課以自編句子、對話和說明段落為材料，先辨認句意與標點功能，再把逗號、句號、分號、冒號、引號、問號等轉成可控制的停頓、重音、速度與語氣。朗讀前要理解文字，朗讀中要驗證聲音是否保留關係，朗讀後則以錄音或同伴回饋修正，而不是只追求表情誇張。", "sections": [{"heading": "先用句意決定標點功能", "body": "同一個符號在不同句子中可能分隔、列舉、提示、引用或表達疑問。先找主語、動作、轉折與前後因果，再問符號把哪兩個語意單位分開；若只看到逗號就停一下，可能把條件、主句或列舉關係切斷。"}, {"heading": "停頓長短要服從語意", "body": "逗號通常提供短暫換氣或分隔，句號讓一個意思收束，分號提示兩個有關聯但相對完整的分句，冒號則把後文變成說明、列舉或結果的焦點。這些是起點，不是機械秒數；長句還要依修飾範圍與朗讀者的呼吸調整。"}, {"heading": "標點也在安排聲音方向", "body": "問號不等於每次都要提高音量，可能是疑問、反問或帶著關心的確認；引號可能提示引用、特定詞義或語氣距離。朗讀時用重音、速度與句尾走向呈現功能，再回到句意檢查是否過度表演。"}, {"heading": "用錄音與回饋修正理解", "body": "朗讀一段文字後，回聽自己在哪裡停得太早、把哪個詞讀成重點、是否讓列舉和轉折混在一起。請同伴只回答『哪裡聽不出關係』及『哪個聲音線索幫助理解』，再改一次。流暢是理解穩定後的結果，不是把速度推到最快。"}]}
+    data["studyHighlights"] = ["先分析句意關係，再判斷標點的功能。", "把符號轉成符合語意的停頓、速度與重音。", "區分疑問、反問、引用與語氣距離，避免公式化朗讀。", "以錄音和具體回饋檢查流暢度與理解是否一致。"]
+    data["teaching"] = {"body": [{"id": "hook", "phase": "hook", "heading": "同一句話，標點一改，讀者聽見什麼？", "body": "提供兩個完全自編版本的短句，例如把『雨停了我們才出發』分成不同語意關係，先不告訴學習者標準答案，請他用斜線標出自然停頓並說明前後關係。再請同學朗讀兩版，觀察聲音如何改變理解，讓標點從視覺符號變成意義與聲音的共同線索。"}, {"id": "explain", "phase": "explain", "heading": "標點到聲音的四步轉換", "body": "第一步找出句內語意單位；第二步說明標點在分隔、列舉、提示、引用或提問中的功能；第三步決定停頓長短、重音與句尾走向；第四步朗讀並回聽，檢查聲音是否保留原本的關係。每一步都留下文字理由，避免只說『這裡要有感情』。"}, {"id": "worked-example", "phase": "worked-example", "heading": "從一個冒號讀出列舉的焦點", "body": "以自編公告『請準備三項物品：水壺、雨具和筆記本。』示範先辨認冒號前的總提示，再讓列舉項目形成清楚節奏，句號收束整個要求。比較逐項平讀與把總提示、列舉、收束分開的版本，說明哪種聲音更能幫助聽者建立清單。"}, {"id": "guided-practice", "phase": "guided-practice", "heading": "用標點改寫卡測試停頓", "body": "每組抽取一張含轉折、對話或條件關係的自編句子卡，先寫出語意骨架，再提出標點與朗讀記號。朗讀後請聽者指出哪個關係最清楚、哪裡被切斷；若符號與聲音互相矛盾，優先回到句意修改，而不是用更大的音量掩蓋問題。"}, {"id": "transfer", "phase": "transfer", "heading": "把朗讀策略換到不同文本", "body": "比較說明文、對話、演講稿與提醒公告：都要流暢，但重點可能分別是因果、角色立場、呼籲或行動步驟。先標出文本任務，再調整速度、重音與停頓；朗讀後用聽者能否重述關係來驗證，而非只用『像不像播音員』評分。"}, {"id": "reflect", "phase": "reflect", "heading": "檢查我是否把感情演過頭", "body": "回聽錄音，把每處停頓和重音分成有句意證據、由語境推論、純粹習慣三類。撤掉沒有功能支持的拖長、升調或誇張表情，補寫它如何幫助聽者理解；若仍不確定，請同伴指出可再測試的版本。"}], "summary": ["從語意單位與句間關係理解標點功能。", "將標點轉換為符合意義的停頓、重音、速度與句尾走向。", "用文本任務和聽者重述檢驗朗讀是否真正流暢有感。", "以錄音回饋修正公式化或過度表演的聲音。"], "exitCheck": [{"prompt": "為什麼不能看到逗號就固定停相同時間？", "expectedEvidence": "能說明停頓要配合語意單位、修飾範圍、呼吸與上下文，並提出標點功能不同的例子。"}, {"prompt": "如何把問號讀出疑問或反問的差異？", "expectedEvidence": "能先判斷句意與說話情境，再調整重音、句尾走向與速度，而非只提高音量。"}, {"prompt": "如何用證據判斷朗讀是否流暢有感？", "expectedEvidence": "能以聽者重述關係、錄音中的停頓與重音、同伴具體回饋作為修正依據。"}]}
+    data["interactive"] = {"type": "guided-choice", "goal": "從句意與標點功能推導停頓、重音和語氣，並以聽者理解驗證朗讀。", "scenario": "學生要錄製一段自編校園廣播，先修正標點與語意，再做兩版朗讀，依聽者回饋選出較清楚的版本。", "variables": [{"symbol": "p", "meaning": "標點與語意關係"}, {"symbol": "v", "meaning": "停頓、速度與重音"}, {"symbol": "h", "meaning": "聽者理解回饋"}], "steps": [{"id": "step-1", "prompt": "讀到『請準備三項物品：水壺、雨具和筆記本。』時，冒號最重要的功能是什麼？", "options": ["提示後文將具體列出前文概括的物品，朗讀時使總提示與清單有層次", "表示前文疑問，句尾一定要升高", "表示每個物品都要讀成獨立句子"], "answer": "A", "feedback": "A 先理解冒號的提示與列舉關係，再安排清單節奏。"}, {"id": "step-2", "prompt": "朗讀含轉折的長句時，哪種做法最能保留句意？", "options": ["看到每個逗號都停很久，讓句子變得戲劇化", "先畫出語意單位與轉折關係，再安排短停、重音與收束，朗讀後回聽驗證", "不看標點，一口氣讀完以表示流暢"], "answer": "B", "feedback": "B 把標點、語意和聲音連起來，流暢不等於無停頓或最快速度。"}, {"id": "step-3", "prompt": "同伴說聽不出公告中的先後關係，最有效的下一步是什麼？", "options": ["先提高整段音量並加快速度", "只把最後一句讀得更有感情，不改文字分析", "回到句意與標點，調整分句、停頓與關係重音，再錄一版比較"], "answer": "C", "feedback": "C 直接處理聽者無法辨認的關係，並用前後錄音比較修正是否有效。"}]}
+    data["authoringStandard"] = "version-fused-v1"; data["updatedAt"] = "2026-09-21"
+    data["versionResearch"] = [rec("nani", "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf；國語文朗讀、標點與句段理解定位；核讀 2026-09-21。", ["由標點與句段關係支援流暢朗讀。", "以語意理解帶動聲音表現與表達。"], ["標點、停頓、朗讀、對話與句段重述。"], "把標點當成固定秒數或只追求聲音表情。", "重視句意、朗讀流暢與有感表達。"), rec("kanghsuan", "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf；國語文閱讀流暢、句段概念與文本形式定位；核讀 2026-09-21。", ["透過閱讀、討論與朗讀比較句段效果。", "依文本形式與語氣修正停頓、重音及速度。"], ["說明文、對話、標點改寫卡、錄音與同儕回饋。"], "只模仿播音腔，沒有檢查聽者是否理解關係。", "要求聲音選擇有語意理由並能依回饋修正。"), rec("hanlin", "https://www.msjh.ntpc.edu.tw/uploads/1691978949408RP7cOuyZ.pdf；國文朗讀、句段理解與文本評量定位；核讀 2026-09-21。", ["以標點與文本形式理解句段表現。", "朗讀需兼顧流暢、語氣與內容理解。"], ["標點功能、停頓、問句、引號、列舉、錄音檢核。"], "把問號、引號或逗號套用單一聲音公式。", "評量標點判讀、朗讀清楚度、語氣適切與理解證據。")]
+    data["fusionRecord"] = {"commonCore": ["三版本公開結構共同支持標點理解、句段閱讀、朗讀實作與文本表現。", "聲音表現需從語意、文本形式與讀者理解逐步推導。", "流暢有感應由錄音、回饋與能否重述關係來檢驗。"], "versionDifferences": ["南一較突顯標點、朗讀與句段表達；康軒較突顯閱讀、文本形式、討論與回饋；翰林較突顯標點功能、句段理解與朗讀評量。這是公立校方課程計畫層級差異，不宣稱完整出版社教材差異。"], "originalAdditions": ["以同句異標點的聽讀比較建立意義入口。", "以標點到聲音四步卡拆解停頓、重音與速度。", "以聽者重述與錄音前後比較驗證朗讀效果。"], "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織標點功能、語意單位、朗讀聲音與回饋修訂。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    data["teaching"]["body"][1]["body"] += " 對每一處停頓都寫出它保留的語意關係，並把聲音記號與實際錄音分開檢查，避免紙面分析看似完整但朗讀仍讓聽者迷路。"
+    data["teaching"]["body"][4]["body"] += " 同一標點在不同文本任務中不必使用同一強度；先說明聽者需要完成什麼，再決定哪些詞要突出、哪些空間要收束。"
+    data["teaching"]["body"][5]["body"] += " 若同伴只說『很有感情』或『不好聽』，追問具體停頓、重音與句意位置，把模糊評語轉成下一次可測試的修改。"
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit": "5-Ⅳ-1：讓標點、停頓與語氣共同完成有感朗讀", "lessonId": data["id"], "status": "first-pass-ai-review-complete", "reviewStatus": "draft", "checks": {"unitSpecificOriginalContent": True, "threeVersionResearchRecords": True, "fusionRecordPresent": True, "interactivePredictionManipulationExplanation": True, "answersAndDetailedSteps": True, "terraSecondPass": "pending"}, "reviewedAt": "2026-09-21"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("authored chinese performance 5-iv-1")
+
+
+if __name__ == "__main__":
+    main()

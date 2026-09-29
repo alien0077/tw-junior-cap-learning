@@ -2,23 +2,23 @@
   "id": "question-english-performance-2-iv-12-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with the meeting time at the sports center?” B: “___” (「2-Ⅳ-12／引導式討論」practice, 11:00)",
+  "prompt": "A classmate says, 'Most students want the art room open at lunch.' Which follow-up would best help the group check that claim?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with the meeting time at the sports center in the 2-Ⅳ-12／引導式討論 practice."
+      "text": "'How many students did you ask, and which grades were included?'"
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the sports center in the 2-Ⅳ-12／引導式討論 practice."
+      "text": "'You are wrong, so we should stop discussing this.'"
     },
     {
       "id": "C",
-      "text": "I was fourteen at the sports center last year in the 2-Ⅳ-12／引導式討論 practice."
+      "text": "'Can we choose the room color now?'"
     },
     {
       "id": "D",
-      "text": "No, the weather at the sports center is sunny in the 2-Ⅳ-12／引導式討論 practice."
+      "text": "'Everyone knows what students think already.'"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 2-Ⅳ-12／引導式討論, item 3. This item targets 2-Ⅳ-12／引導式討論, question 3."
+    "explanation": "詢問受訪人數和年級能檢查「most students」的樣本範圍；其他選項不是人身否定、偏離主題，就是把未查證的概括當事實。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度第 2 學期第 1 次段考英文科；第6至10題基本問答與對話題型改編；獨立改編，非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dwm.kh.edu.tw/upload/344/104_64184/106-2-3%E8%8B%B1%E6%96%87%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "第40題：對他人關於選角的意見作適切回應；本題把互動焦點改為追問主張的資料基礎。；本題會議、立場、理由、選項與答案皆重新創作。",
+    "authoringNote": "原創引導式討論情境；僅參照公立學校英文段考中辨認意見、理由、合宜回應及整合對話的能力型態，不複製原題或選項。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-12"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-12",
+  "examPatternRefs": [
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64184/106-2-3%E8%8B%B1%E6%96%87%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立大灣國民中學106學年度第2學期第3次段考八年級英文科試題；僅參照對話／意見交流推理能力，不複製原題。",
+      "year": "106-2",
+      "subject": "english",
+      "locator": "第40題：對他人關於選角的意見作適切回應；本題把互動焦點改為追問主張的資料基礎。",
+      "observedPattern": "參照對話題的回應選擇形式，練習用有目的的問題延伸交流。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "追問證據而非否定發言者：先分清討論者的主張、理由與回應功能，再以對話證據判斷最能促進理解或共同決策的說法。",
+  "solutionSteps": [
+    "找出需要核實的詞：most students。",
+    "思考什麼資訊能檢查這個比例主張是否有代表性。",
+    "比較各選項是否詢問樣本數和涵蓋年級。",
+    "排除攻擊發言者、離題及未經調查就說everyone knows的說法。",
+    "選A；以中性追問檢查證據，比直接否定或附和更能推進討論。"
+  ]
 }

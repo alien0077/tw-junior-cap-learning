@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics s-IV-14."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/"lessons/math/lesson-math-performance-s-iv-14.json"
+REPORT=ROOT/"implementation/reports/math-performance-s-iv-14-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf"}
+
+def record(p,c,r,m,a):
+    return {"publisher":p,"edition":f"{p} 公立校方數學課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；圓、弧長、扇形與圓面積的概念、表徵及評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以半徑、圓心角、比例與單位處理圓周、弧長、扇形面積與圓面積。"],"representations":[r],"examplesOrEvidence":["本課的噴水池、轉盤與圓形花圃均為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+
+def main():
+    d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-math-performance-s-iv-14" and d["reviewStatus"]=="draft"
+    d["title"]="s-Ⅳ-14：用半徑與圓心角處理弧長面積"
+    d["content"]={"summary":"圓的計算從半徑和圓心角開始。圓周長是 2πr，圓面積是 πr²；弧長是圓周依圓心角占整周比例取出的部分，扇形面積同樣依角度比例取整圓面積。半徑、直徑、弧長、弦長與扇形面積代表不同量，不能只看到 π 就套同一公式。本課以噴水池、轉盤與圓形花圃的自編情境，練習分辨公式、角度比例、單位與近似值，並檢查半徑是否平方。","sections":[{"heading":"半徑與直徑先分清","body":"半徑從圓心到圓周，直徑通過圓心且等於兩個半徑。所有圓的圓周與直徑比為 π；公式使用半徑時不能把直徑直接代入面積。"},{"heading":"弧長是圓周的一部分","body":"圓心角 θ 的弧長為 θ/360×2πr，因為它占整圓的角度比例。角度若用弧度或度數，公式與單位要保持一致。"},{"heading":"扇形面積也按角度比例","body":"扇形面積為 θ/360×πr²；弧長是長度，扇形面積是平方單位。比較兩者時要檢查 π、半徑次方與量的單位。"},{"heading":"估算與情境回查","body":"π 可依題意取 3.14 或保留符號，最後說明近似值。噴水範圍、花圃邊界或轉盤角度都有實際方向與範圍，答案要回到圖形檢查。"}]}
+    d["studyHighlights"]=["先分辨半徑、直徑、弧長、弦長與扇形面積。","弧長和扇形面積都用圓心角占 360° 的比例。","面積公式含 r²，答案使用平方單位。","以角度、半徑、π 取值與單位檢查。"]
+    d["teaching"]={"body":[{"id":"hook","phase":"hook","heading":"噴水池開啟一部分要算多少水？","body":"原創圓形噴水池半徑 6 公尺，只開啟 120° 的扇形區域。請學習者先畫圓心角、估計該區域約為整圓的三分之一，再分別求弧邊長與地面面積。比較兩個答案的單位，建立弧長和扇形面積是不同量。"},{"id":"explain","phase":"explain","heading":"由整圓比例推出兩個公式","body":"先寫整圓周長 2πr，120° 區域占 120/360；弧長就是 120/360×2πr。再寫整圓面積 πr²，同樣乘角度比例得到扇形面積。每一步標出比例、半徑次方與單位，避免把兩公式混用。"},{"id":"worked-example","phase":"worked-example","heading":"計算半徑 6 的 120 度扇形","body":"弧長=(120/360)×2π×6=4π 公尺；扇形面積=(120/360)×π×6²=12π 平方公尺。若取 π≈3.14，約為 12.56 公尺與 37.68 平方公尺，最後檢查面積約為整圓 113.04 的三分之一。"},{"id":"guided-practice","phase":"guided-practice","heading":"選弧長還是面積公式","body":"提供轉盤半徑 10、公園扇形 90°與三個待求量：弧邊長、扇形地面面積、整圓周長。學習者先圈量的種類，再選公式與角度比例；對漏平方的答案，要求比較單位並估算大小。"},{"id":"transfer","phase":"transfer","heading":"把公式用到圓形花圃邊界","body":"原創花圃由半圓與 90° 扇形組成，要求計算外圍邊界和種植面積。學習者先拆分圖形、標半徑與直徑，再分別相加弧長或面積；若只求外圍邊界，不能把直徑內部線段算進去。"},{"id":"reflect","phase":"reflect","heading":"修正把弧長當扇形面積","body":"請修正『半徑 6、120° 的扇形弧長是 12π 平方公尺』。先指出弧長應為 4π 公尺、沒有平方單位；扇形面積才是 12π 平方公尺，最後用整圓比例檢查兩者。"}],"summary":["半徑與直徑不同，面積公式使用半徑平方。","弧長與扇形面積都先取圓心角占整周比例。","弧長用長度單位，面積用平方單位，不能混淆。","拆圖、估算、π 取值與邊界範圍需回查。"],"exitCheck":[{"prompt":"半徑 6、120° 的扇形弧長與面積各是多少？","expectedEvidence":"弧長=4π 公尺；扇形面積=12π 平方公尺，分別使用 2πr 與 πr² 再乘 1/3。"},{"prompt":"為什麼扇形面積要用 r²？","expectedEvidence":"整圓面積是 πr²，扇形只是依圓心角比例取整圓面積。"},{"prompt":"半圓加扇形求花圃邊界時要注意什麼？","expectedEvidence":"只加外圍弧線與必要直線，標清半徑／直徑，不把內部分界線當外圍。"}]}
+    d["interactive"]={"type":"guided-choice","goal":"依量的種類與圓心角比例選擇圓周、弧長或扇形面積公式。","scenario":"調整半徑與圓心角，觀察弧長、面積、單位與整圓比例。","variables":[{"symbol":"r","meaning":"圓的半徑"},{"symbol":"a","meaning":"圓心角度數"},{"symbol":"x","meaning":"待求的弧長或扇形面積"}],"steps":[{"id":"step-1","prompt":"半徑 6、120° 的扇形弧長應用哪個式子？","options":["(120/360)×2π×6","(120/360)×π×6²","2π×6²"],"answer":"A","feedback":"弧長是圓周的角度比例，使用 2πr。"},{"id":"step-2","prompt":"同一扇形的面積公式是哪個？","options":["(120/360)×π×6²","(120/360)×2π×6","π×6"],"answer":"A","feedback":"面積來自整圓 πr²，再乘角度比例。"},{"id":"step-3","prompt":"弧長答案應使用什麼單位？","options":["公尺等長度單位","平方公尺","沒有單位"],"answer":"A","feedback":"弧長是一維長度，扇形面積才使用平方單位。"}]}
+    d["authoringStandard"]="version-fused-v1"
+    d["versionResearch"]=[record("nani","以圓周、弧長、扇形與圓面積建立角度比例","噴水池、半徑直徑、圓心角與公式表","把直徑代入面積或混淆弧長與面積","要求分辨量、列角度比例並寫單位"),record("kanghsuan","透過轉盤與圖形分割理解圓的比例性質","轉盤扇形、弧線長度、整圓比例與面積比較","只看到 π 就套同一公式，忽略半徑平方","重視圖形操作、公式選擇與估算驗證"),record("hanlin","連結圓形花圃、邊界與扇形面積應用","花圃外圍、半圓、單位與拆圖限制","把內部分界線算進周長或忽略近似值","評估模型、邊界、單位、π 取值與合理性")]
+    d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以半徑、圓心角比例處理圓周、弧長與面積。","弧長用圓周比例、扇形面積用整圓面積比例是共同核心。","拆圖、單位、π 取值與實際邊界需要互相檢查。"],"versionDifferences":["南一證據較突顯圓的基本公式與弧長面積；康軒較突顯轉盤、扇形分割與公式操作；翰林較突顯花圃邊界、拆圖與實際近似限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以半徑 6、120° 噴水池同時計算弧長與面積。","以 4π 公尺與 12π 平方公尺反例診斷量與單位混用。","把半圓、扇形、花圃外圍與內部分界整合成互動任務。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織圓周、弧長、扇形面積、半徑直徑、圓心角與拆圖應用。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit":"s-Ⅳ-14：用半徑與圓心角處理弧長面積","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+
+if __name__ == "__main__": main()

@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bb-iv-1-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "朋友提出不同意見，哪種做法最有助於交流？",
+  "prompt": "下列哪句最清楚表達感受，又不把對方定義成某種人？",
   "options": [
     {
       "id": "A",
-      "text": "說明自己的理由，也理解對方依據"
+      "text": "你很沒良心，害我難過。"
     },
     {
       "id": "B",
-      "text": "只提高音量壓過對方"
+      "text": "你每次都故意讓我丟臉。"
     },
     {
       "id": "C",
-      "text": "直接認定對方錯誤"
+      "text": "當我的提案被當場跳過時，我覺得失落，想知道下次能否先讓我說完。"
     },
     {
       "id": "D",
-      "text": "完全不說理由"
+      "text": "你根本不配當組員。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "交流需要表達理由並理解彼此依據。"
+    "value": "C",
+    "explanation": "C 指出具體情境、使用自己的感受，並提出可討論的需求，沒有把情緒變成對方固定人格。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "自我與人際交流感受；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究對話感受、觀察／評價、具體請求、界線與關係修復。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫自我與人際交流題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "溝通情境、人物感受與語意推論",
+      "observedPattern": "公立學校國文評量要求辨識溝通者的感受、具體觀察、請求、語氣與證據限制；本題使用全新校園情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "對話語氣、觀點與關係修復",
+      "observedPattern": "公立學校國文評量要求辨識溝通者的感受、具體觀察、請求、語氣與證據限制；本題使用全新校園情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "檢查句子是否含有事件、我感受與可協商需求，再辨認人格標籤。",
+  "solutionSteps": [
+    "找出 C 的具體事件『提案被跳過』。",
+    "確認『我覺得失落』是說話者自己的感受。",
+    "確認後半提出下次說完的協商需求。",
+    "A、B、D 都以沒良心、故意或不配等詞標籤對方。",
+    "把 C 的事件時間換掉，仍能保留同樣的溝通結構。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

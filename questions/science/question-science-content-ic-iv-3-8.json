@@ -2,23 +2,23 @@
   "id": "question-science-content-ic-iv-3-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年2月13日校園實驗室的觀察中，針對「Ic-Ⅳ-3：臺灣附近海流的季節變化」提出可檢驗的科學問題，若比較 3 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "海流把漂浮物帶向某方向，最能用來推估哪項？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ic-Ⅳ-3：臺灣附近海流的季節變化」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "該表層海水在觀測期間的移動方向"
     },
     {
       "id": "B",
-      "text": "研究「Ic-Ⅳ-3：臺灣附近海流的季節變化」時只測量3組中的一組就直接下結論"
+      "text": "地球內部溫度"
     },
     {
       "id": "C",
-      "text": "研究「Ic-Ⅳ-3：臺灣附近海流的季節變化」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "月球表面組成"
     },
     {
       "id": "D",
-      "text": "研究「Ic-Ⅳ-3：臺灣附近海流的季節變化」時只改變距離，其餘條件一致，設置3組、每組取樣16份並各重複測量4次"
+      "text": "海底岩石年齡必定相同"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ic-Ⅳ-3：臺灣附近海流的季節變化」。"
+    "value": "A",
+    "explanation": "漂浮物可作為表層海水運動的間接示蹤，但仍需考慮風、波浪與漂浮物形狀。 正確答案為選項 A：「該表層海水在觀測期間的移動方向」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的臺灣海流、季風、黑潮、季節資料及海洋安全判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ic-Ⅳ-3 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ic-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ic-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "臺灣附近海流、季風、海溫與海洋資料判讀",
+      "pattern": "取由季風、海流方向速度、海溫、漂流物和季節時間序列建立區域海洋推論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由季風、海流方向速度、海溫、漂流物和季節時間序列建立區域海洋推論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先說明示蹤物代表的範圍，再檢查干擾因素。",
+  "solutionSteps": [
+    "圈出季節、流向、流速、風場、深度或測站等關鍵詞。",
+    "判斷海流資料的時間、空間與可能干擾因素。",
+    "套用原理：漂浮物可作為表層海水運動的間接示蹤，但仍需考慮風、波浪與漂浮物形狀。",
+    "排除缺少控制條件或過度推論的選項，保留「該表層海水在觀測期間的移動方向」。",
+    "回查答案「該表層海水在觀測期間的移動方向」是否符合海流觀測與季節比較的證據。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

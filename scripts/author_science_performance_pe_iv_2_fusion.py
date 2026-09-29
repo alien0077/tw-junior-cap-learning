@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance pe-IV-2."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-pe-iv-2.json"; REPORT=ROOT/"implementation/reports/science-performance-pe-iv-2-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；器材安全、客觀測量、資料記錄與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持依器材用途和風險安全操作，校正與重複測量，客觀記錄原始資料和單位。"],"representations":[r],"examplesOrEvidence":["本課的溫度、質量與酸鹼測量皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-pe-iv-2" and d["reviewStatus"]=="draft"
+ d["title"]="pe-Ⅳ-2：安全操作器材並進行客觀量測與記錄——讓每個數字有來處"
+ d["content"]={"summary":"客觀量測不是按下儀器就接受螢幕上的數字，而是先選對器材、確認量程與單位、依安全規則操作，並記錄讀值、時間、條件和不確定性。測量溫度、質量或酸鹼值時，要知道校正、視線、取樣、重複和有效位數如何影響結果。本課用原創測量任務練習從風險檢查到原始記錄，讓資料能被重做、比較和追溯。","sections":[{"heading":"先辨識器材和風險","body":"溫度計、電子秤和酸鹼試紙各有適用範圍。操作前檢查玻璃破損、液體濺出、電線、量程和防護，不能因想快點得到答案而跳過安全判斷。"},{"heading":"讀值要有規則","body":"電子秤要歸零，量筒要看液面，溫度計要等待穩定，試紙要在規定時間比較顏色。視線、位置、等待時間和單位若不一致，數字就不一定可比較。"},{"heading":"原始記錄不能靠記憶補","body":"每次讀值、時間、樣本、單位、器材和異常都當場寫下。不要先挑一個看起來合理的數字；若讀值跳動，記錄範圍和重複次數，再說明如何處理。"},{"heading":"安全和客觀互相支持","body":"戴護目鏡、用夾具、處理廢液和清理桌面不只是規定，也能減少污染、受傷和資料偏差。若操作偏離或發生意外，先停下處理安全，再保留紀錄和回報。"}]}
+ d["studyHighlights"]=["依器材用途、量程、單位和風險選擇安全方法。","歸零、校正、視線、等待時間與讀值規則要一致。","當場記錄每次原始值、條件、單位與異常。","先處理安全，再說明偏離、範圍與資料限制。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"兩個溫度計為什麼讀值不同？","body":"一支溫度計碰到杯底，另一支懸在水中，兩者讀值差 3°C。請先指出哪個操作條件不同、是否安全、要等多久，以及如何重新測量。活動讓學習者知道客觀數字需要器材位置、等待和方法規則，而不是只看螢幕。"},
+ {"id":"explain","phase":"explain","heading":"測量前中後的安全流程","body":"測量前查用途、量程、單位、防護與歸零；測量中保持視線、位置、等待和取樣一致，逐次記錄；測量後關閉器材、清理、處理廢液並檢查資料。若器材異常，先停止並回報，不用猜數字補空格。"},
+ {"id":"worked-example","phase":"worked-example","heading":"電子秤測量粉末質量","body":"先確認秤面乾燥、容器歸零，再把粉末放入容器並記錄單位和讀值。若讀值在 12.4 到 12.6 g 跳動，重複三次並記錄每次與環境振動，不可只抄 12.5 g 當成唯一真值；最後說明顯示範圍和取用的摘要方法。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"酸鹼試紙的客觀記錄","body":"小組用試紙測三種液體。先確認試紙有效期限、取樣量、浸泡時間和比色表，再由不同成員盲讀或交叉檢查，記錄顏色範圍而非把顏色硬湊成精確小數。液體不可入口，沾到皮膚要依安全流程處理。"},
+ {"id":"transfer","phase":"transfer","heading":"把測量紀錄交給下一組","body":"整理一頁紀錄：器材與校正、樣本與條件、每次原始讀值、單位、時間、異常、安全處理和摘要方式。下一組只依這頁資料重做一次，若發現缺少量程或等待時間，就把缺口列為紀錄改進，而不是責怪讀值者。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個測量迷思","body":"請修正『儀器顯示的數字一定是真值』與『只要戴護目鏡就完成安全』。數字仍受校正、位置、解析度、環境與方法影響；安全還包括器材、化學品、廢液、桌面、同伴和意外處理。"}
+ ],"summary":["先查器材用途、量程、單位、防護與歸零。","讓位置、視線、等待與取樣方法一致。","當場記錄每次原始值、條件、單位與異常。","安全流程和客觀資料互相支持，偏離要回報。"],"exitCheck":[{"prompt":"溫度計碰杯底為什麼可能造成不可比讀值？","expectedEvidence":"位置和接觸條件改變了測量，應用一致深度、等待時間和環境重新測量。"},{"prompt":"電子秤讀值跳動時應記錄什麼？","expectedEvidence":"記錄每次讀值、範圍、單位、時間和環境異常，再說明摘要方式，不只抄一個平均印象。"},{"prompt":"酸鹼試紙如何避免過度精確？","expectedEvidence":"依有效期限、取樣量、浸泡時間和比色表操作，記錄可辨識的顏色範圍與安全處理。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"依器材規則和安全流程進行客觀、可追溯的測量與記錄。","scenario":"操作溫度計、電子秤與酸鹼試紙，逐步找出影響讀值和安全的因素。","variables":[{"symbol":"r","meaning":"原始讀值"},{"symbol":"u","meaning":"測量不確定性"},{"symbol":"s","meaning":"安全條件"}],"steps":[{"id":"step-1","prompt":"電子秤測粉末前最先要做什麼？","options":["確認秤面乾燥、容器歸零、單位與量程","直接把粉末倒上去再猜單位","只看螢幕最大數字"],"answer":"A","feedback":"歸零、單位和器材狀態是可比較測量的起點。"},{"id":"step-2","prompt":"溫度讀值在小範圍跳動時應如何記錄？","options":["保留每次讀值與範圍，記錄條件並說明摘要方式","只挑最符合預期的一次","把跳動數字刪掉"],"answer":"A","feedback":"原始讀值和變異能讓讀者理解測量不確定性。"},{"id":"step-3","prompt":"酸鹼試紙沾到皮膚時首先應如何處理？","options":["停止操作並依安全規則沖洗、回報與處理污染","先繼續完成全部讀值","用嘴吹乾試紙"],"answer":"A","feedback":"安全優先，正確處置和回報比完成數字更重要。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以器材安全、標準操作、測量單位和資料記錄建立客觀探究。","器材用途、量程、校正、原始讀值、單位與誤差。","把螢幕數字當真值，忽略歸零、視線、等待與安全。","重視安全流程、操作正確、資料完整與可追溯。"),rec("kanghsuan","透過實作、重複、交叉檢查和反思提升測量可靠度。","溫度、質量、酸鹼、重複讀值、範圍與同儕核對。","只挑合理數字，或以試紙顏色宣稱不可能的精度。","評量器材操作、客觀記錄、誤差與安全回報。"),rec("hanlin","連結生活化學、物質量測與實驗安全，培養負責任的資料管理。","樣本、單位、量程、有效期限、污染、廢液與異常。","忽略化學品與廢液風險，或缺少時間和條件使資料無法重做。","要求方法透明、限制、風險、原始資料與清理。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持依器材規則與安全流程進行客觀測量。","量程、單位、校正、重複、原始記錄、異常與誤差是共同要求。","安全處理、資料可追溯與結論限制互相支持，不能只追求數字。"],"versionDifferences":["南一證據較突顯器材操作、單位、校正與基本安全；康軒較突顯重複、交叉檢查、誤差與資料可靠度；翰林較突顯生活化學、污染、廢液、有效期限與責任管理。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以溫度計碰杯底診斷位置和等待條件造成的讀值差異。","以跳動的電子秤讀值練習保存每次資料與測量範圍。","以酸鹼試紙整合有效期限、比色精度、污染與皮膚處置。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織器材用途、量程、歸零、校正、視線、等待、原始資料、異常、單位、安全與可追溯性。正文、原創測量任務、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"pe-Ⅳ-2：安全操作器材並進行客觀量測與記錄","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

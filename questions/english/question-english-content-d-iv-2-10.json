@@ -2,23 +2,23 @@
   "id": "question-english-content-d-iv-2-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-2／比較分類排序」task, what is the best way to prepare question 10?",
+  "prompt": "A workshop table lists: A, Monday, $40, 20 seats; B, Tuesday, $30, 12 seats; C, Monday, $35, 18 seats. You need Monday, a price below $40, and at least 18 seats. Which workshop fits?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-2／比較分類排序."
+      "text": "Workshop A"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-2／比較分類排序."
+      "text": "Workshop B"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-2／比較分類排序."
+      "text": "Both B and C"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-2／比較分類排序."
+      "text": "Workshop C"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-2／比較分類排序, question 10."
+    "value": "D",
+    "explanation": "只有 Workshop C 同時符合星期一、低於 $40、至少 18 個名額，因此選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1660183128201jpNsop8i.pdf",
+    "sourceLocator": "PDF第1頁第19–21題：整合課程表欄列資訊檢核多項條件；本題改為日期、價格與名額三條件篩選。",
+    "authoringNote": "以英語課程知識點與公立學校公開段考所呈現的資料判讀能力為參照；題幹、數據、選項、答案、解析與解題活動均獨立撰寫，未複製試卷內容。課程版本研究與全案內容審查未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1660183128201jpNsop8i.pdf",
+      "title": "臺北市立內湖國中110學年度第2學期七年級第1次段考英語科試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第1頁第19–21題：整合課程表欄列資訊檢核多項條件；本題改為日期、價格與名額三條件篩選。",
+      "observedPattern": "需回看表格不同欄位並交叉檢查多個限制；本題工作坊、價格與名額均為原創資料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "三項條件必須同時成立；用逐列淘汰法，遇到任一條不符即可排除，不以單一優點判定。",
+  "solutionSteps": [
+    "整理限制：星期一、價格嚴格低於 $40、名額至少 18 位。",
+    "A 在星期一且有20位，但 $40 不符合 below $40（不能等於）。",
+    "B 價格符合，但星期二且只有12位，違反兩項條件。",
+    "C 為星期一、$35、18位，三條皆符合，故選 Workshop C（D）。",
+    "最後核對 at least 18 包含18；C剛好達標，而 A 的價格不符合嚴格小於。"
+  ]
 }

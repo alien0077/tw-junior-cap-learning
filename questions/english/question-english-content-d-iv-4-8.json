@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-4-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-4／事實與意見」task, what is the best way to prepare question 8?",
+  "prompt": "A survey table records 32 students choosing apples and 18 choosing bananas. Which statement is a fact supported by the table?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-4／事實與意見."
+      "text": "More students chose apples than bananas."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-4／事實與意見."
+      "text": "Apples are the most delicious fruit."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-4／事實與意見."
+      "text": "Bananas are a poor choice."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-4／事實與意見."
+      "text": "Everyone should choose apples tomorrow."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-4"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-4／事實與意見, question 8."
+    "explanation": "表格顯示32人選蘋果、18人選香蕉，能直接支持「蘋果選擇人數較多」，答案 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C-2%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87-%E8%A9%A6%E9%A1%8C_2.pdf",
+    "sourceLocator": "PDF第5頁第37–38題：閱讀YouTube使用者年齡與性別偏好兩張圖表，區分作者觀點與圖表可支持的敘述。",
+    "authoringNote": "參照公立國中英文定期評量中核對文章事實、作者觀點、圖表證據、預測及行動判讀的能力；情境、題幹、數據、選項、答案與解析皆獨立編寫，未複製原題。版本研究與全案內容審查未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C-2%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87-%E8%A9%A6%E9%A1%8C_2.pdf",
+      "title": "高雄市立國昌國中108學年度第2學期第3次段考二年級英語科試題",
+      "year": "108",
+      "subject": "english",
+      "locator": "PDF第5頁第37–38題：閱讀YouTube使用者年齡與性別偏好兩張圖表，區分作者觀點與圖表可支持的敘述。",
+      "observedPattern": "參照交叉閱讀短文與圖表、分開事實敘述及作者觀點的題型；本題午餐調查數據為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "表格只支持與其欄位和數值直接相符的描述；美味評價與應然建議需要其他標準。",
+  "solutionSteps": [
+    "先讀清楚表格量的是選擇人數：蘋果32人、香蕉18人。",
+    "比較同一單位的數量，32 大於 18。",
+    "因此可從表格直接推出較多人選蘋果。",
+    "這是 A；美味或選擇好壞屬意見，明天應選什麼屬建議。",
+    "確認結論沒有擴大成「所有人」或「最受歡迎水果」以外的主張。"
+  ]
 }

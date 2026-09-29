@@ -6,37 +6,80 @@
   "options": [
     {
       "id": "A",
-      "text": "25.12"
+      "text": "25.12 平方公分"
     },
     {
       "id": "B",
-      "text": "50.24"
+      "text": "50.24 平方公分"
     },
     {
       "id": "C",
-      "text": "100.48"
+      "text": "100.48 平方公分"
     },
     {
       "id": "D",
-      "text": "200.96"
+      "text": "200.96 平方公分"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-s-iv-14"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "扇形占全圓四分之一，面積為 3.14×64÷4＝50.24。"
+    "explanation": "90° 是整圓的四分之一，所以扇形面積為 1/4×3.14×8²＝1/4×200.96＝50.24 平方公分，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考數學科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "以數學概念、全新數值與解析獨立撰寫；公開試題僅作題型研究。待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供圓周長、圓面積、弧長、扇形與弦的能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的圓幾何方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-performance-s-iv-14"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-14",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "圓周長、圓面積、弧長、扇形面積、弦與直徑及半徑倍率",
+      "observedPattern": "公開數學評量常把圓的基本量、圓心角比例、弧長與面積倍率放在計算或圖形判讀情境中；本題只取能力方向、資料型態與推理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "圓周長、圓面積、弧長、扇形面積、弦與直徑及半徑倍率",
+      "observedPattern": "公開數學評量常把圓的基本量、圓心角比例、弧長與面積倍率放在計算或圖形判讀情境中；本題只取能力方向、資料型態與推理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "圓周長、圓面積、弧長、扇形面積、弦與直徑及半徑倍率",
+      "observedPattern": "公開數學評量常把圓的基本量、圓心角比例、弧長與面積倍率放在計算或圖形判讀情境中；本題只取能力方向、資料型態與推理層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把圓心角換成占整圓的比例，再乘完整圓面積。",
+  "solutionSteps": [
+    "計算角度比例 90/360＝1/4。",
+    "完整圓面積為 3.14×8²＝200.96。",
+    "扇形面積是 200.96 的四分之一。",
+    "得到 50.24 平方公分。",
+    "確認面積小於整圓且選 B。"
+  ]
 }

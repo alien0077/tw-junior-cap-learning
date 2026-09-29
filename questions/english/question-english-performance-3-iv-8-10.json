@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-8-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-8／理解短文訊息書信主要內容」task, what is the best way to prepare question 10?",
+  "prompt": "Read the email.\n\nDear Coach Rivera,\nI can attend the Saturday practice, but I will arrive about fifteen minutes late because my piano lesson ends at 9:00. I have already read the new passing-drill instructions you sent. Could you ask a teammate to save me a copy of the team map? I will join the warm-up as soon as I get there.\nThanks,\nNoah\n\nWhat is Noah asking the coach to do?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Move the piano lesson to another day"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Send the passing-drill instructions for the first time"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Ask a teammate to keep a team map for him"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Let him skip all Saturday practice"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-8／理解短文訊息書信主要內容, question 10."
+    "value": "C",
+    "explanation": "Noah 已經讀過傳球練習說明；他具體請教練請隊友替他留一份隊伍地圖。他只會遲到約十五分鐘，並說到場後加入暖身，沒有要求缺席。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%B8%89%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+    "sourceLocator": "僅將公立學校公開英語評量的短篇閱讀理解能力作 pattern-only 參照；本文、選項、答案與解析均獨立撰寫。",
+    "authoringNote": "Original English text and item authored for KG 3-Ⅳ-8; public-school exam references inform only the skill pattern. Publisher-version fusion, rights/content review, and second-round review remain incomplete; keep draft."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%B8%89%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中112學年度第1學期三年級第1次段考英文科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "112學年度第1學期",
+      "subject": "english",
+      "locator": "閱讀題組第19至21題：由父女往返信件理解寫信者感受、原因與溝通意圖",
+      "locatorLevel": "item",
+      "observedPattern": "往返信件依稱呼、第一人稱內容與回信反應呈現人物關係及寫信動機；本題另創角色、事件和完整文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "書信行動題要區分已完成事項、原因說明與真正的請求句，尤其留意 Could you...?。",
+  "solutionSteps": [
+    "找情態問句 Could you ask ...，它標出 Noah 對教練的請求。",
+    "讀完整請求內容：請隊友替他留一份 team map。",
+    "把前文已讀過的 drill instructions 標成已完成，避免誤選重寄。",
+    "遲到原因是鋼琴課；他仍會參加練習並加入暖身。",
+    "只有 C 忠實描述請求對象與物件，不增添改課或缺席。"
+  ]
 }

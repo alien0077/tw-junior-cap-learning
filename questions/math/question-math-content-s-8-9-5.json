@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-9-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "平行四邊形底 9 公分、高 4 公分，面積為何？",
+  "prompt": "平行四邊形 ABCD 的對角線 AC、BD 交於 O，哪個關係必定成立？",
   "options": [
     {
       "id": "A",
-      "text": "13"
+      "text": "AO=OC 且 BO=OD"
     },
     {
       "id": "B",
-      "text": "18"
+      "text": "AO=BO 且 OC=OD"
     },
     {
       "id": "C",
-      "text": "36"
+      "text": "AC 垂直 BD"
     },
     {
       "id": "D",
-      "text": "72"
+      "text": "AC=BD"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "面積=底×高=9×4=36 平方公分。"
+    "value": "A",
+    "explanation": "平行四邊形的對角線互相平分，所以 AO=OC、BO=OD，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平行四邊形的基本性質 題型與官方課綱 KG kg-math-content-s-8-9",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供平行四邊形基本性質與判定能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的平行四邊形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-8-9"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-9",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行四邊形對邊、對角、鄰角、對角線與平行四邊形判定",
+      "observedPattern": "公開學校數學試題常以平行四邊形的邊角關係、對角線交點及反向判定考查圖形性質；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平行四邊形對邊、對角、鄰角、對角線與平行四邊形判定",
+      "observedPattern": "公開學校數學試題常以平行四邊形的邊角關係、對角線交點及反向判定考查圖形性質；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "找到對角線交點後，使用『互相平分』而非誤用矩形或菱形特性。",
+  "solutionSteps": [
+    "辨認 AC、BD 是兩條對角線。",
+    "O 是它們的交點。",
+    "平行四邊形對角線互相平分。",
+    "因此 AO=OC、BO=OD。",
+    "選 A。"
+  ]
 }

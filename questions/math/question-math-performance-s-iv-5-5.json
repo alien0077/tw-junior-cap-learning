@@ -2,7 +2,7 @@
   "id": "question-math-performance-s-iv-5-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "等邊三角形有幾條對稱軸？",
+  "prompt": "等邊三角形共有幾條對稱軸？",
   "options": [
     {
       "id": "A",
@@ -24,19 +24,62 @@
   "knowledgeIds": [
     "kg-math-performance-s-iv-5"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "等邊三角形從每個頂點向對邊中點的直線都是對稱軸，共有 3 條。"
+    "explanation": "等邊三角形從每個頂點到對邊中點的線都能把圖形對摺重合，共 3 條，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考線對稱、對稱軸與坐標鏡射題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供軸對稱、對稱點與圖形性質能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的對稱方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "軸對稱、對稱軸、對稱點、對稱圖形與特殊圖形的對稱軸數量",
+      "observedPattern": "公開數學評量常以坐標鏡射或摺合情境判斷對稱軸與對稱點，也要求辨識等邊三角形、矩形等圖形的對稱軸數量；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "軸對稱、對稱軸、對稱點、對稱圖形與特殊圖形的對稱軸數量",
+      "observedPattern": "公開數學評量常以坐標鏡射或摺合情境判斷對稱軸與對稱點，也要求辨識等邊三角形、矩形等圖形的對稱軸數量；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "軸對稱、對稱軸、對稱點、對稱圖形與特殊圖形的對稱軸數量",
+      "observedPattern": "公開數學評量常以坐標鏡射或摺合情境判斷對稱軸與對稱點，也要求辨識等邊三角形、矩形等圖形的對稱軸數量；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "以三個頂點對稱地檢查，而不是只找一條中線。",
+  "solutionSteps": [
+    "等邊三角形三個頂點地位相同。",
+    "每個頂點都可連到對邊中點形成對稱軸。",
+    "因此每個頂點貢獻一條。",
+    "總數為 3 條。",
+    "所以選 C。"
+  ]
 }

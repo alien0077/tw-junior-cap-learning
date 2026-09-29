@@ -1,0 +1,151 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-science-content-ca-iv-2
+  knowledgeGraphIds:
+  - kg-science-content-ca-iv-2
+  title: Ca-Ⅳ-2：以化學性質鑑定化合物
+  subject: science
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Ca-Ⅳ-2：以化學性質鑑定化合物
+    curriculumIntent: 以可檢驗的化學性質鑑定候選化合物；本課用未知溶液及其產氣反應示範如何由特徵反應、對照與交叉檢驗逐步縮小候選。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 目前僅翰林官方教師用手冊有可定位的本單元探究證據；南一與康軒直接內容未取得，故不宣稱三版共識。以課綱、KG及翰林氣體性質鑑定方向重組原創課文，其餘延伸明確標示為先備概念補充。
+    currentEvidenceStatus: curriculum-and-kg-grounded; hanlin-teacher-guide-verified; nani-and-knsh-direct-unit-evidence-pending; original-synthesis-draft
+  learningGoals:
+  - 為食鹽水、稀鹽酸與稀碳酸鈉等候選溶液預測石蕊及產氣檢驗結果，區分觀察與推論
+  - 以空白與已知對照固定樣品量、試劑量及觀察條件，辨別假陽性
+  - 用不同原理的反應證據檢查替代解釋，寫出支持、排除與待驗候選
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - Ca-Ⅳ-2：以化學性質鑑定化合物
+  - 表徵／證據與結論的對應
+  - 錯誤答案所反映的概念差異
+  misconceptions:
+  - 看到氣泡便認定特定氣體，未排除沸騰或其他產氣來源
+  - 把單一檢驗結果當作唯一身分證明，忽略其他物質可能產生相似現象
+  - 把直接觀察（變濁、復燃、熄滅）誤寫成未經檢驗的物質名稱
+  contentFlow:
+  - 'hook: 以單元真實問題引起預測'
+  - 'activate-prerequisite: 顯示先備檢核並允許補救'
+  - 'visualize: 呈現食鹽水／酸／碳酸鹽候選與石蕊、產氣檢驗的觀察矩陣'
+  - 'predict: 學生先提交預測且答案暫不揭露'
+  - 'manipulate: 選擇虛擬檢驗並先做空白與已知對照'
+  - 'observe: 記錄反應現象並縮小候選集合'
+  - 'explain: 以觀察、推論與替代解釋寫出有條件結論'
+  - 'formalize: 再顯示本單元正式語言與記法'
+  - 'transfer: 進入會考型新資料題'
+  - 'exit-ticket: 一題理由題加一個自我診斷'
+  visualizations:
+  - 反應證據矩陣：同步呈現檢驗方法、直接觀察及候選判讀，不以單一訊號當作身分證明
+  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  interactiveBlocks:
+  - id: CUR-SCIENCE-CONTENT-CA-IV-2-I01
+    component: EvidenceLabBlock
+    purpose: 讓學生對未知溶液候選選擇虛擬檢驗，從預測、觀察、對照與替代解釋形成可檢查的判斷
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        candidateSolution: unknown
+        selectedTest: none
+        controlRun: false
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 選擇指示劑或產氣檢驗並先提交結果預測
+    - 執行空白與已知對照，再讀取未知樣本觀察
+    - 標記支持或反駁候選的現象，並選擇下一項交叉檢驗
+    - 以短句說明「檢驗條件 → 直接觀察 → 候選推論 → 尚存限制」
+    visualRules:
+    - 操作後所有相關表徵同步更新，不得只改單一數字
+    - 正解揭露前保留學生預測與操作紀錄
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-SCIENCE-CONTENT-CA-IV-2-I01
+      trigger: 僅憑氣泡或木條現象就斷定未知氣體名稱
+      prompt: 這項現象是否只可能由你的候選氣體造成？請指出對照或第二項檢驗。
+      expectedEvidence: 指出一項直接觀察、一項對照及可排除替代解釋的交叉檢驗
+    feedback:
+      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
+      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「Ca-Ⅳ-2：以化學性質鑑定化合物」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「Ca-Ⅳ-2：以化學性質鑑定化合物」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「Ca-Ⅳ-2：以化學性質鑑定化合物」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「Ca-Ⅳ-2：以化學性質鑑定化合物」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「Ca-Ⅳ-2：以化學性質鑑定化合物」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「Ca-Ⅳ-2：以化學性質鑑定化合物」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入「Ca-Ⅳ-2：以化學性質鑑定化合物」時不得先顯示正解；學生必須先提交對「Ca-Ⅳ-2：以化學性質鑑定化合物」的預測，且預測會被保留供後續比較。
+  - 操作「evidence-lab：以「Ca-Ⅳ-2：以化學性質鑑定化合物」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
+  - 學生觸發「把「Ca-Ⅳ-2：以化學性質鑑定化合物」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Ca-Ⅳ-2：以化學性質鑑定化合物」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
+  - 以新資料執行「Ca-Ⅳ-2：以化學性質鑑定化合物」的 CAP transfer：換一個情境但保留「Ca-Ⅳ-2：以化學性質鑑定化合物」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
+  - 外部資料失效時，EvidenceLabBlock 仍須以「Ca-Ⅳ-2：以化學性質鑑定化合物」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 C、次主題 Ca；官方代碼 Ca-Ⅳ-2
+    role: official-curriculum-source-of-truth
+  - url: https://material.hle.com.tw/wp-content/uploads/2022/04/%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6-%E7%B6%B1%E5%A5%BD%E5%9C%A8%E9%80%99%E8%A3%A1%E5%90%88%E4%BD%B5.pdf
+    locator: 翰林教師用《綱好在這裡合併》說明頁10及課本印刷頁34–35；氣體製備之後設計性質檢驗的探究方向；有限單版 evidence，不代表全章已取得
+    role: publisher-teacher-guide-evidence

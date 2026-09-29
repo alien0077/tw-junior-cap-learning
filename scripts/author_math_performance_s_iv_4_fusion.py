@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics s-IV-4."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/"lessons/math/lesson-math-performance-s-iv-4.json"
+REPORT=ROOT/"implementation/reports/math-performance-s-iv-4-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf"}
+
+def record(p,c,r,m,a):
+    return {"publisher":p,"edition":f"{p} 公立校方數學課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；全等、平移、旋轉與鏡射的概念、表徵及評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以距離、角度、對應點與剛體變換描述全等關係。"],"representations":[r],"examplesOrEvidence":["本課的圖樣設計、座標貼紙與紙剪影均為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+
+def main():
+    d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-math-performance-s-iv-4" and d["reviewStatus"]=="draft"
+    d["title"]="s-Ⅳ-4：用剛體變換辨認全等圖形"
+    d["content"]={"summary":"全等圖形的形狀與大小相同，對應邊等長、對應角相等；平移、旋轉與鏡射都是不改變距離的剛體變換。平移改變位置、旋轉改變方向、鏡射會產生左右反向，但三者都保留長度與角度。本課以圖樣設計、座標貼紙和紙剪影的自編情境，練習追蹤對應點、描述變換規則、辨識方向反轉，並用距離與角度檢查兩圖是否全等。","sections":[{"heading":"全等看對應關係","body":"比較兩圖時先建立對應點與對應邊，再檢查長度和角度。圖形畫在不同位置不代表不全等，名稱或顏色也不是判斷依據。"},{"heading":"三種剛體變換","body":"平移沿固定方向移動，旋轉繞中心轉過固定角度，鏡射對某條直線對稱。變換規則必須說明方向、距離、中心、角度或鏡射軸。"},{"heading":"方向可能改變","body":"平移與旋轉保留圖形方向的對應順序，鏡射會使左右方向反轉。辨認字母、箭頭或頂點順序時，要區分位置改變與鏡射造成的反向。"},{"heading":"用座標與量測驗證","body":"在座標圖上記錄點的前後位置，或量測對應邊與角。只看圖形外觀不足以證明變換正確，應以距離、角度、對應點與變換參數回查。"}]}
+    d["studyHighlights"]=["先標出對應點、對應邊與對應角。","平移看方向距離，旋轉看中心角度，鏡射看鏡射軸與方向反轉。","剛體變換保留距離與角度，但鏡射會反轉方向。","用座標、量測與變換規則檢查全等。"]
+    d["teaching"]={"body":[{"id":"hook","phase":"hook","heading":"圖樣搬家後還是同一個形狀嗎？","body":"原創展板圖樣把一個箭頭圖形向右平移、繞中心旋轉，再對鏡射線翻面。請學習者先追蹤三個頂點，記錄每次位置、方向和距離的變化，再判斷哪些圖形全等。重點是從對應資料說明理由，而不是只看圖案是否相似。"},{"id":"explain","phase":"explain","heading":"用參數描述變換","body":"以座標點 A(1,2)、B(4,2)、C(1,4) 示範平移向量、旋轉中心與鏡射軸的意義。平移每個點加同一向量；旋轉保留到中心的距離；鏡射點到軸兩側距離相等。每種變換都把原點和新點配對記錄。"},{"id":"worked-example","phase":"worked-example","heading":"辨認鏡射後的對應點","body":"把三角形對 y 軸鏡射，A(2,1) 變成 A'(-2,1)，B(4,1) 變成 B'(-4,1)。先比較到鏡射軸的水平距離，再核對垂直座標不變；最後算 AB 與 A'B' 長度相同，確認全等與方向反轉。"},{"id":"guided-practice","phase":"guided-practice","heading":"選變換而非猜圖形","body":"提供三組前後座標：所有點加 (3,-1)、繞原點轉 90°、對 x 軸翻面。學習者先找出共同規則，再選平移、旋轉或鏡射；若只比較一個點，回饋要求檢查至少三個對應點與一條邊。"},{"id":"transfer","phase":"transfer","heading":"把全等用在紙剪影與排版","body":"原創剪紙任務要求把同一個星形放進四個版面，分別用平移、旋轉和鏡射排列。學習者要說明哪些變換可以保留孔洞距離與角度，哪些方向會反轉；若縮放圖形，需指出那不再是剛體變換，不能直接稱為全等。"},{"id":"reflect","phase":"reflect","heading":"修正全等與相似的混淆","body":"請修正『圖形放大兩倍後仍全等，因為形狀相同』。先指出放大改變對應邊長，再用一條邊與一個角的量測反駁；最後說明平移、旋轉、鏡射保留大小，而縮放通常只保留形狀。"}],"summary":["全等要建立對應關係並確認長度與角度保留。","平移、旋轉、鏡射的參數不同，但都是不改變距離的剛體變換。","鏡射會反轉方向，不能把方向改變誤認成大小改變。","用座標、距離、角度與變換規則檢查全等，不靠外觀猜測。"],"exitCheck":[{"prompt":"平移、旋轉、鏡射各要描述哪些參數？","expectedEvidence":"平移要方向與距離，旋轉要中心與角度，鏡射要鏡射軸及兩側等距關係。"},{"prompt":"點 A(2,1) 對 y 軸鏡射後為何？","expectedEvidence":"A'=(-2,1)，水平座標變號、垂直座標不變，且到 y 軸距離相等。"},{"prompt":"為什麼放大兩倍通常不算全等？","expectedEvidence":"放大改變對應邊長，雖可能形狀相同但大小不同；全等要求距離與角度都保留。"}]}
+    d["interactive"]={"type":"guided-choice","goal":"追蹤對應點並用平移、旋轉、鏡射規則驗證全等。","scenario":"切換三種剛體變換，觀察座標、距離、角度與方向如何改變。","variables":[{"symbol":"x","meaning":"原圖點的水平座標"},{"symbol":"y","meaning":"原圖點的垂直座標"},{"symbol":"a","meaning":"旋轉角度或平移參數"}],"steps":[{"id":"step-1","prompt":"所有點都加上同一個向量，代表哪一種變換？","options":["平移","鏡射","縮放"],"answer":"A","feedback":"平移讓每個對應點使用相同方向與距離。"},{"id":"step-2","prompt":"點 (2,1) 對 y 軸鏡射後是哪個點？","options":["(-2,1)","(2,-1)","(-2,-1)"],"answer":"A","feedback":"對 y 軸鏡射時水平座標變號，垂直座標保持不變。"},{"id":"step-3","prompt":"哪一項最能驗證兩圖經剛體變換後全等？","options":["多組對應距離與角度相等","只看顏色相同","只看一個頂點位置"],"answer":"A","feedback":"全等需要由對應長度、角度與變換規則共同支持。"}]}
+    d["authoringStandard"]="version-fused-v1"
+    d["teaching"]["body"][5]["body"] += " 並把放大前後的對應邊長寫成數值，說明距離不再相等時不能用全等符號。"
+    d["versionResearch"]=[record("nani","以全等關係與平移旋轉鏡射描述圖形變化","對應點、座標、距離、角度與變換前後標記互相對照","只看位置不同就判定不全等，或把縮放當平移","要求描述平移方向、旋轉中心或鏡射軸，並檢查多組對應量"),record("kanghsuan","透過紙模型與實際操作理解平移旋轉鏡射等剛體變換","剪紙、透明片、座標點與方向追蹤","混淆旋轉中心、鏡射軸與平移方向","重視操作步驟、對應點、距離保留與方向反轉"),record("hanlin","連結圖樣排版、座標與全等／相似的應用限制","設計圖、鏡射字樣、單位與距離量測","把相似或放大圖形誤稱全等，忽略大小條件","評估模型、座標、量測與變換規則是否一致")]
+    d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以對應點、長度與角度理解全等。","平移、旋轉、鏡射的參數與不變量是共同表徵核心。","座標、紙模型、量測與方向檢查需互相驗證。"],"versionDifferences":["南一證據較突顯全等與基本變換；康軒較突顯剪紙、透明片及操作追蹤；翰林較突顯圖樣排版、座標與全等／相似界線。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以箭頭展板連續示範平移、旋轉與鏡射的差異。","以對 y 軸鏡射的座標和距離驗證方向反轉仍全等。","把紙剪影、座標、縮放反例與排版需求整合成互動任務。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織全等、平移、旋轉、鏡射、座標與相似界線。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit":"s-Ⅳ-4：用剛體變換辨認全等圖形","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+
+if __name__ == "__main__": main()

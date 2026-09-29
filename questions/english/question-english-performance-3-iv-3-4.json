@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-3-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-3／理解簡易英文標示」notice for the town museum, item 4: “Room 204 is closed today.” What does it tell people?",
+  "prompt": "A notice beside a school garden reads 'WASPS NEAR THE FLOWERS — KEEP BACK.' What is the safest choice?",
   "options": [
     {
       "id": "A",
-      "text": "For item 4 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 cannot be used today."
+      "text": "Touch the flowers to see whether wasps are nearby."
     },
     {
       "id": "B",
-      "text": "For item 4 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 opens at midnight."
+      "text": "Shake the plants so the insects will leave."
     },
     {
       "id": "C",
-      "text": "For item 4 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 is the bus stop."
+      "text": "Stand closer and take a flash photo."
     },
     {
       "id": "D",
-      "text": "For item 4 in the 3-Ⅳ-3／理解簡易英文標示 notice, Room 204 is outside the building."
+      "text": "Stay away from the marked area and tell an adult if someone is at risk."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-3／理解簡易英文標示, question 4."
+    "value": "D",
+    "explanation": "The warning identifies wasps and explicitly asks people to keep back. D follows both the hazard information and the requested distance; the other actions approach or disturb the insects."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=359&cfsn=2135&name=110-2%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%838%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E6%AE%B5%E8%80%83%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E6%9E%97%E9%9D%9C%E6%85%88.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣立宜昌國中110學年度第二學期八年級第一次段考英文科試題與聽力稿；聽力稿PDF第11頁第3題：由警告標示選擇安全行動。本題依題型與推理能力重新創作，不複製原題、選項、圖像或答案。",
+    "authoringNote": "原創題幹與選項；僅將公立學校公開試題作為題型與推理能力參照。答案、策略及逐步解說為本題獨立撰寫；保持draft，未執行Terra複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=359&cfsn=2135&name=110-2%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%838%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E6%AE%B5%E8%80%83%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E6%9E%97%E9%9D%9C%E6%85%88.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中110學年度第二學期八年級第一次段考英文科試題與聽力稿",
+      "year": "110-2",
+      "subject": "english",
+      "locator": "聽力稿PDF第11頁第3題：由警告標示選擇安全行動",
+      "observedPattern": "從簡短警告標示擷取危險來源並選擇安全反應；本題改寫成校園器材區警示與避讓行動。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把警告中的危險來源與要求動作連起來；安全題不能只翻譯名詞，還要落實距離或避讓指令。",
+  "solutionSteps": [
+    "先找警告對象：flowers 附近有 wasps。",
+    "再讀命令 keep back，意思是保持距離，不要進入標示區。",
+    "把危險和命令合併，選擇不靠近並在有人遇險時通知大人。",
+    "A、B會碰觸或驚擾蜂群，C更靠近危險源，都違反警告。",
+    "答案選D；不要自行驅趕蜂群，讓成人或校方處理。"
+  ]
 }

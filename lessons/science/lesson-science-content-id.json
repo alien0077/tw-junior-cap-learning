@@ -48,7 +48,7 @@
     "authoringNote": "Version-fused lesson draft independently synthesized from the official curriculum, Knowledge Graph and recorded public publisher research. No publisher text, image, example, exercise, answer or transcript is reproduced; all explanations, examples and interactions are newly written."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "以安全探究步驟理解「晝夜與季節」並用證據修正解釋。",
@@ -92,6 +92,17 @@
         ],
         "answer": "A",
         "feedback": "證據與限制都要保留，才能修正模型。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "同時看到白晝長短與季節溫度變化時，哪種整理最能區分兩個模型？",
+        "options": [
+          "先用自轉解釋一天內的晝夜，再用地軸傾角與公轉位置解釋季節日照，並把海陸熱延遲列為氣溫的額外條件",
+          "只要某天很熱，就把它當作地球離太陽最近的證明，無須看晝長或半球",
+          "把晝夜週期和季節週期視為同一件事，因為兩者都會改變光照"
+        ],
+        "answer": "A",
+        "feedback": "自轉主要控制日內晝夜交替；地軸傾角與公轉改變季節性入射角和晝長，氣溫則還受熱容量與大氣條件影響。"
       }
     ]
   },
@@ -99,40 +110,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一版國中自然公開課程定位與課綱資源",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Id：晝夜與季節；地球自轉、公轉、地軸傾斜與日照變化定位",
-      "sourceUrl": "https://stv.naer.edu.tw/teaching/course_outline.jsp",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Id：晝夜與季節 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "assessment-pattern"],
-      "outcome": "以自轉造成晝夜、公轉與地軸傾斜造成季節差異的因果鏈安排教學；本文自行設計城市與地球儀觀察。",
-      "copyrightBoundary": "只研究公開課程定位與課綱方向，不複製或改寫課文、圖片、習作、題目、答案及教師用書。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Id：晝夜與季節」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音與單元結構資源",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "公開自然資源中晝夜、四季與地球運動相關單元定位；逐頁教材未公開",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Id：晝夜與季節 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "吸收由模型觀察連到資料判讀的方向，重新設計可拖曳地球、固定光源與日照曲線的互動任務。",
-      "copyrightBoundary": "只研究公開資源的定位與教學方向，不複製影音字幕、畫面、插圖、練習、答案或教材文字。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Id：晝夜與季節」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開產品與學校課程計畫定位",
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "公開索引可定位地球運動、季節與日照現象脈絡；未取得完整出版社課本頁面",
-      "sourceUrl": "https://www.hle.com.tw/",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Id：晝夜與季節 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern"],
-      "outcome": "保留由生活觀察進入地球模型、再用不同緯度比較的脈絡；例子、表格與互動皆重新創作。",
-      "copyrightBoundary": "只採公開定位與概念方向，不複製課文、圖表、活動、題目、答案或教用內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Id：晝夜與季節」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -208,7 +234,42 @@
     "model": "general",
     "goal": "以安全探究步驟理解「晝夜與季節」並用證據修正解釋。",
     "mission": "針對「Id：晝夜與季節」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"day-night-season-system","objective":"整合自轉、公轉與地軸傾角模型，區分晝夜週期和季節日照。","predictionPrompt":"只停止地球自轉而保留公轉與地軸傾角時，晝夜和季節模型各會發生什麼？","steps":[{"action":"旋轉地球模型標記晝夜分界與週期","equation":"day-night=rotation"},{"action":"沿軌道移動並記錄兩半球日照角度","equation":"season=orbit+tilt"},{"action":"切換觀察視角，檢查比例、方向與結論限制","equation":"model=geometry+observer"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "整合自轉、公轉與地軸傾角模型，區分晝夜週期和季節日照。",
+      "predictionPrompt": "只停止地球自轉而保留公轉與地軸傾角時，晝夜和季節模型各會發生什麼？",
+      "steps": [
+        {
+          "action": "旋轉地球模型標記晝夜分界與週期",
+          "equation": "day-night=rotation",
+          "id": "step-1",
+          "reason": "本步把「旋轉地球模型標記晝夜分界與週期」和「day-night=rotation」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「旋轉地球模型標記晝夜分界與週期」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "沿軌道移動並記錄兩半球日照角度",
+          "equation": "season=orbit+tilt",
+          "id": "step-2",
+          "reason": "本步把「沿軌道移動並記錄兩半球日照角度」和「season=orbit+tilt」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「沿軌道移動並記錄兩半球日照角度」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "切換觀察視角，檢查比例、方向與結論限制",
+          "equation": "model=geometry+observer",
+          "id": "step-3",
+          "reason": "本步把「切換觀察視角，檢查比例、方向與結論限制」和「model=geometry+observer」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「切換觀察視角，檢查比例、方向與結論限制」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "把同一測站的日出日落、影長與季節氣溫分成日內與年內時間軸",
+          "equation": "evidence=rotation+tilt-orbit+thermal-context",
+          "id": "step-4",
+          "reason": "同一資料表可能同時含有日內晝夜訊號與年內季節訊號；分層時間尺度並記下觀測地點，才能避免把自轉、地軸傾角與氣溫延遲混成單一原因。",
+          "feedback": "請先標出日內週期與年內週期，再核對半球、緯度、季節與熱環境條件，並保留不能由幾何模型直接判定的部分。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「整合自轉、公轉與地軸傾角模型，區分晝夜週期和季節日照。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",
@@ -221,14 +282,27 @@
       "publisher": "nani",
       "edition": "南一版國中自然版本研究",
       "sourceType": "public-web",
-      "sourceLocator": "官方課綱自然科地球與太空相關內容；南一公開課程定位中的晝夜、季節與地球運動脈絡",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://stv.naer.edu.tw/teaching/course_outline.jsp；官方課綱自然科地球與太空相關內容；南一公開課程定位中的晝夜、季節與地球運動脈絡",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["地球自轉造成觀察地點的晝夜交替", "地軸傾斜與公轉共同造成兩半球季節變化"],
-        "representations": ["地球與太陽的球面模型呈現受光區與背光區", "不同日期的日照長度、影長與太陽高度資料表"],
-        "examplesOrEvidence": ["本課自編臺北與墨爾本同日資料及地球儀觀察"],
-        "misconceptions": ["把季節變化只歸因於日地距離遠近", "將地球自轉與公轉的週期和效果混淆"],
-        "assessmentEmphasis": ["用運動條件、照射角與白晝長度組成可檢查的因果說明"]
+        "concepts": [
+          "地球自轉造成觀察地點的晝夜交替",
+          "地軸傾斜與公轉共同造成兩半球季節變化"
+        ],
+        "representations": [
+          "地球與太陽的球面模型呈現受光區與背光區",
+          "不同日期的日照長度、影長與太陽高度資料表"
+        ],
+        "examplesOrEvidence": [
+          "本課自編臺北與墨爾本同日資料及地球儀觀察"
+        ],
+        "misconceptions": [
+          "把季節變化只歸因於日地距離遠近",
+          "將地球自轉與公轉的週期和效果混淆"
+        ],
+        "assessmentEmphasis": [
+          "用運動條件、照射角與白晝長度組成可檢查的因果說明"
+        ]
       },
       "licenseBoundary": "僅作公開定位與課綱研究，不複製任何受保護教材文字、圖表、活動、題目或答案。"
     },
@@ -236,14 +310,27 @@
       "publisher": "kanghsuan",
       "edition": "康軒版國中自然版本研究",
       "sourceType": "public-web",
-      "sourceLocator": "康軒自然公開影音資源中地球運動、晝夜與四季單元定位；逐頁教材未公開",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；康軒自然公開影音資源中地球運動、晝夜與四季單元定位；逐頁教材未公開",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["以模型觀察明暗交界位置與日照差異", "由可見現象回推地球運動的科學模型"],
-        "representations": ["固定光源與傾斜地球儀的互動模型", "日照路徑圖、緯度比較與季節資料"],
-        "examplesOrEvidence": ["本課自編可拖曳地球位置、比較兩半球日照的互動任務"],
-        "misconceptions": ["看到太陽東升西落就認為太陽繞地球運動", "把亮度、溫度和距離直接畫上等號"],
-        "assessmentEmphasis": ["先預測模型結果，再用日照資料說明與修正理由"]
+        "concepts": [
+          "以模型觀察明暗交界位置與日照差異",
+          "由可見現象回推地球運動的科學模型"
+        ],
+        "representations": [
+          "固定光源與傾斜地球儀的互動模型",
+          "日照路徑圖、緯度比較與季節資料"
+        ],
+        "examplesOrEvidence": [
+          "本課自編可拖曳地球位置、比較兩半球日照的互動任務"
+        ],
+        "misconceptions": [
+          "看到太陽東升西落就認為太陽繞地球運動",
+          "把亮度、溫度和距離直接畫上等號"
+        ],
+        "assessmentEmphasis": [
+          "先預測模型結果，再用日照資料說明與修正理由"
+        ]
       },
       "licenseBoundary": "只研究公開資源的概念順序與活動方向，不複製影音字幕、畫面、插圖或教材文字。"
     },
@@ -251,32 +338,45 @@
       "publisher": "hanlin",
       "edition": "翰林版國中自然版本研究",
       "sourceType": "public-web",
-      "sourceLocator": "翰林公開產品與學校課程計畫之地球運動、季節與日照現象定位",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://www.hle.com.tw/；翰林公開產品與學校課程計畫之地球運動、季節與日照現象定位",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["季節差異可由半球、日期與地軸方向共同理解", "生活中的影子與白晝長度是模型的觀察證據"],
-        "representations": ["以正午影長與太陽高度比較日照條件", "四季位置圖及南北半球日照對照表"],
-        "examplesOrEvidence": ["本課自編校園遮陽設計與極圈日照情境"],
-        "misconceptions": ["把北半球夏季當成全地球同時夏季", "把極晝誤解成太陽停止自轉或公轉"],
-        "assessmentEmphasis": ["能在新緯度與新日期情境中遷移模型並標出限制"]
+        "concepts": [
+          "季節差異可由半球、日期與地軸方向共同理解",
+          "生活中的影子與白晝長度是模型的觀察證據"
+        ],
+        "representations": [
+          "以正午影長與太陽高度比較日照條件",
+          "四季位置圖及南北半球日照對照表"
+        ],
+        "examplesOrEvidence": [
+          "本課自編校園遮陽設計與極圈日照情境"
+        ],
+        "misconceptions": [
+          "把北半球夏季當成全地球同時夏季",
+          "把極晝誤解成太陽停止自轉或公轉"
+        ],
+        "assessmentEmphasis": [
+          "能在新緯度與新日期情境中遷移模型並標出限制"
+        ]
       },
       "licenseBoundary": "只採公開定位與概念研究，不複製課文、圖表、活動、題目、答案或教師用內容。"
     }
   ],
   "fusionRecord": {
     "commonCore": [
-      "地球自轉讓觀察地點交替進入受光與背光區，形成晝夜",
-      "地軸傾斜與地球公轉改變兩半球的太陽高度與白晝長度",
-      "模型必須以地點、日期、照射角和日照資料相互檢驗"
+      "三版本公開線索共同支持以地球自轉解釋晝夜，以地軸傾斜與公轉解釋季節、太陽高度與白晝長度。",
+      "觀測必須把時間尺度、兩半球、緯度、影長、日照時間與模型的固定參考相互檢驗。",
+      "公開版本線索僅支持地球運動與日照季節主題，不足以代表完整教材內容；本課先以地球自轉軸向及自轉方向解釋晨昏交替，再固定觀察地點追蹤一年中太陽高度和白晝長度，藉南北半球相反季節排除單以日地距離解釋季節的假說。"
     ],
     "versionDifferences": [
-      "南一公開定位適合建立自轉、公轉與地軸傾斜的因果鏈；康軒公開資源偏向模型操作與觀察修正；翰林公開定位較易連結影長、緯度與生活應用。"
+      "南一公開定位偏向自轉、公轉與因果鏈；康軒公開線索偏向地球儀、光源與操作模型；翰林公開定位較易連結緯度、影長、南北半球與極圈日照。公開資料不足以宣稱取得完整教材內容。"
     ],
     "originalAdditions": [
-      "臺北與墨爾本同日白晝和影長的自編比較資料",
-      "以固定光源、傾斜地球儀和兩個緯度貼紙進行的單變因互動任務",
-      "把極圈日照與校園遮陽設計連到模型遷移的原創活動"
+      "以一天／一年兩種時間尺度、南北半球對照、影長時間序列、固定光源模型與極圈資料建立本單元證據鏈。",
+      "把『季節是由日地距離單獨造成』、『夏天太陽離地球一定較近』及『模型光源跟著地球移動』列為單元迷思診斷。",
+      "本課以二十四小時自轉序列和一年影長表作兩條時間軸，先分辨自轉造成的晝夜，再比較地軸傾斜下各緯度的照射角與白晝時間；用固定光源、地球儀和南北半球資料互相核對，將模型中可觀察的現象與真實尺度、軌道距離變化的限制分開。"
     ],
-    "llmSynthesisNote": "LLM 依官方課綱、Knowledge Graph 與南一、康軒、翰林可取得的公開定位，融合晝夜成因、季節因果、日照表徵、南北半球差異與模型限制；正文、例證、互動流程與活動皆為本單元獨立重寫，不複製受保護內容。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開試題資料的能力方向，重新組織自轉晝夜、公轉、地軸傾斜、太陽高度、白晝長度、南北半球、緯度與極圈日照；原有 9 題為研究設計變數套題，已逐題改寫並補成 10 題單元專屬問題，均具唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-2-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 △ABC∼△DEF，且 AB:DE=3:4、BC=9，則對應邊 EF 為何？",
+  "prompt": "兩三角形各有兩邊長 4、6 公分與 6、9 公分，且這兩邊的夾角相等。可用哪個判定證明相似？",
   "options": [
     {
       "id": "A",
-      "text": "12"
+      "text": "AA"
     },
     {
       "id": "B",
-      "text": "10（將題目中的 3、4、9 代入順序弄錯）"
+      "text": "SAS"
     },
     {
       "id": "C",
-      "text": "14（將題目中的 3、4、9 代入順序弄錯）"
+      "text": "SSS"
     },
     {
       "id": "D",
-      "text": "16（將題目中的 3、4、9 代入順序弄錯）"
+      "text": "無法判定"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "9/EF=3/4，故 EF=12。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。"
+    "value": "B",
+    "explanation": "4：6＝6：9＝2：3，且比例邊的夾角相等，符合 SAS 相似判定，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的相似性質 題型與官方課綱 KG kg-math-content-s-9-2",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形相似判定、對應與比例推理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的三角形相似方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-9-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "SAS 必須同時檢查兩邊成比例與夾角是這兩邊的夾角。",
+  "solutionSteps": [
+    "計算第一組邊比 4：6＝2：3。",
+    "計算第二組邊比 6：9＝2：3。",
+    "確認兩比例邊的夾角相等。",
+    "兩邊成比例且夾角相等，符合 SAS。",
+    "選 B。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-cross-atoms-to-universe-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年6月5日河川觀測站的觀察中，將 76 g 食鹽溶於 190 g 水，研究「從原子到宇宙」時，溶液質量為何？",
+  "prompt": "標本瓶標籤寫著「3O₂」；若另一標籤寫「2O₃」，兩瓶所代表的氧原子總數相同嗎？",
   "options": [
     {
       "id": "A",
-      "text": "266 g"
+      "text": "不相同，3O₂有3個氧原子，2O₃有2個"
     },
     {
       "id": "B",
-      "text": "114 g"
+      "text": "不相同，前者有6個，後者有3個"
     },
     {
       "id": "C",
-      "text": "14440 g"
+      "text": "相同，但兩者都只有2個氧原子"
     },
     {
       "id": "D",
-      "text": "190 g"
+      "text": "相同，兩者各代表6個氧原子"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：76＋190＝266 g。 本題對應 KG「從原子到宇宙」。"
+    "value": "D",
+    "explanation": "化學式前的係數數分子，右下標數每個分子中的原子；3O₂是3×2=6個氧原子，2O₃是2×3=6個，因此總原子數相同。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675416611615Uti9exJs.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第三次段考八年級理化試題卷",
+      "year": "111",
+      "subject": "science",
+      "locator": "printed page 2, question 8",
+      "observedPattern": "僅參考第8題的命題能力與推理結構；只依公開原卷指定題目研究粒子模型、化學式、原子組成與原子結構的命題模式；不重製題幹、選項、圖表或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675416611615Uti9exJs.pdf",
+    "sourceLocator": "臺北市立內湖國中公開原卷 printed page 2, question 8；只取題型與推理能力作 pattern-only 參考，題幹、選項、答案、圖表均重新創作。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開試題的 item-level pattern-only 證據獨立改寫；沒有複製原題、選項、圖表或答案。題目維持 draft，尚待單元版本融合、內容與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-atoms-to-universe"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-science-content-cross-atoms-to-universe",
+  "solutionStrategy": "先把係數與下標分開讀，再用「分子數×每分子原子數」計算；不要把兩個位置上的數字直接相加。",
+  "solutionSteps": [
+    "先圈出 O₂ 前面的係數 3，這表示有三個 O₂ 分子。",
+    "再看 O 的右下標 2，確認每個氧分子各含兩個氧原子。",
+    "把第一種標示換成乘法：3 個分子 × 每個 2 原子 = 6 個原子。",
+    "另一標示有 2 個 O₃ 分子，每個含 3 原子，所以也是 2×3=6。",
+    "兩邊都得到六個氧原子，選 D；分子種類與個數仍然不同，不能說兩瓶的物質相同。"
+  ]
 }

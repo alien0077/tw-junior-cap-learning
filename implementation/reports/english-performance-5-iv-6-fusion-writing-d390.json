@@ -1,0 +1,60 @@
+{
+  "decisionId": "D-390",
+  "date": "2026-09-28",
+  "phase": "english-performance-5-iv-6-original-retelling-fusion-and-interaction-alignment",
+  "status": "pass",
+  "unit": "English learning-performance 5-Ⅳ-6",
+  "lessonId": "lesson-english-performance-5-iv-6",
+  "scope": "Replace an unrecorded generic placeholder with an original curriculum-grounded retelling lesson, correct evidence and interactive-spec mismatches, and validate learner-visible behavior while preserving the user's ChatGPT review role.",
+  "curriculumAndResearch": {
+    "officialCurriculum": {
+      "url": "https://www.dyjhs.tyc.edu.tw/modules/tad_uploader/index.php?cat_sn=172&cfsn=2918&name=5-1-1-2%E8%8B%B1%E8%AA%9E%E6%96%87.pdf&op=dlfile",
+      "locator": "PDF p.57, learning performance 5-Ⅳ-6; associated 2-Ⅳ-6, Ad-Ⅳ-1 and B-Ⅳ-5",
+      "meaning": "Retell a short conversation heard. Supports person/action/time/place descriptions and relevant grammar/content; school plan is curriculum mapping, not publisher textbook text."
+    },
+    "teachingReferences": [
+      {
+        "url": "https://helloet.cet-taiwan.com/?p=24148",
+        "locator": "Post-task Summarize/Retell; article by an English education resource-center advisor and experienced junior-high teacher",
+        "use": "Supports a scaffold from listening and chunking toward short retell, with practice time before speaking; not publisher-specific material."
+      },
+      {
+        "url": "https://www.britishcouncil.org.tw/blog/How-to-use-English-reported-speech",
+        "locator": "Pronoun perspective, tense backshift and unchanged time-reference examples",
+        "use": "Supports the language distinction between reported perspective and mechanical tense/time-word conversion."
+      }
+    ],
+    "publisherLimit": "No readable assigned 5-Ⅳ-6 chapter pages from Nani, Kang Hsuan, or Hanlin were obtained. All three publisherResearch/versionResearch records explicitly say unavailable/pending. This report does not claim a publisher three-edition chapter comparison."
+  },
+  "authoredWork": {
+    "replacedUnrecordedPlaceholder": true,
+    "visibleSections": 6,
+    "interactionSteps": 3,
+    "learningSequence": "identify speaker/addressee and speech act -> preserve proposition and negation/condition -> shift pronoun/time reference only when viewpoint changes -> check information fidelity and separate quote from inference",
+    "misconceptions": [
+      "mechanically swapping I/you without resolving speaker roles",
+      "turning questions into assertions or dropping negation, may, if, only, time or quantity",
+      "adding inferred reasons or emotions as if explicitly spoken"
+    ],
+    "interactionContract": "Three original offline GuidedChoice items test viewpoint, question function and modal/conditional fidelity. Each has a keyed answer, item-specific retry hint and explanation. No audio recording, speech recognition or oral scoring is claimed.",
+    "lessonStatus": "draft; lesson content review is reserved for the user's ChatGPT review."
+  },
+  "automatedEvidence": {
+    "targetNodeRegression": "PASS: learner-visible six-section parity, provenance boundaries, three answer/hint/explanation steps, and draft status.",
+    "targetBrowser": "PASS: Python Playwright 1.58.0 / Chromium revision 1208; HTTP 200, 6 visible sections, 3 choices, keyboard retry/correct-answer explanations, aria-live, accessible names, reduced motion, external network blocked, no overflow at 320/375/768, zero page errors.",
+    "lessonSchema": "PASS: 1,056 lesson files checked, 0 failures.",
+    "dataValidation": "PASS: 14,503 JSON files, 13,114 IDs and 1,032 KG nodes; all lessons/questions remain draft.",
+    "inventory": "PASS: 726/791 manuscript records, 91.78%; learning-content 583/583, learning-performance 143/208, long-form marker 556. Presence only.",
+    "publicExamLedger": "Read-only current report confirms 10,566/10,566 recorded and pending 0; not rerun; no question data modified.",
+    "fullNpmTest": "PASS: npm test exited 0, including 1,027/1,027 workbench lesson traversal and project runtime contracts.",
+    "specValidation": "PASS: all 1,027 implementation specs, 0 structural errors; global gate is 5 eligible / 1,022 pending because most units are still incomplete.",
+    "fullWorkbenchBrowser": "PASS: 1,027 options traversed, 1,027 unit specs and source records traversed; viewport, keyboard, accessibility tree, reduced-motion and representative unit interactions passed.",
+    "fullAxeAudit": "PASS with follow-up items: 51 runs, 0 violations, 6 incomplete checks. Incomplete is not zero and may require human/manual interpretation."
+  },
+  "outOfScopeAndNotRepeated": {
+    "publisherFusion": "All three assigned-edition source slots remain pending; no full chapter comparison claimed.",
+    "questions": "All ten existing question files retained; no question source ledger or answer rewritten.",
+    "existingFusionDrafts": "No inventory-listed authored lesson was rewritten.",
+    "commitPush": "Not performed; overall objective remains active."
+  }
+}

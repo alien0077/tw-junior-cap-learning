@@ -2,23 +2,23 @@
   "id": "question-math-content-n-7-1-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若質數 p 是 30 的因數，下列哪一個數可能是 p？",
+  "prompt": "下列關於質數的敘述何者正確？",
   "options": [
     {
       "id": "A",
-      "text": "4"
+      "text": "1 是最小的質數"
     },
     {
       "id": "B",
-      "text": "6"
+      "text": "所有奇數都是質數"
     },
     {
       "id": "C",
-      "text": "10"
+      "text": "2 是唯一的偶質數"
     },
     {
       "id": "D",
-      "text": "2"
+      "text": "質數一定大於 10"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "30 的質因數為 2、3、5；四個選項中只有 2 是質數。"
+    "value": "C",
+    "explanation": "2 的正因數只有 1、2，是質數；其他偶數都可被 2 整除，因此 2 是唯一偶質數，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究數與量判讀、質數、因數與標準分解式能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供 100 以內質數、因數、整除與質數辨識能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的質數能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-n-7-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-7-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "prime-number definition, divisibility, listing primes, prime recognition, and the unique even prime",
+      "observedPattern": "公立學校公開數學試題常以質數定義、因數個數、整除判斷、列舉指定範圍質數與辨識唯一偶質數檢核數感；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "prime-number definition, divisibility, listing primes, prime recognition, and the unique even prime",
+      "observedPattern": "公立學校公開數學試題常以質數定義、因數個數、整除判斷、列舉指定範圍質數與辨識唯一偶質數檢核數感；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "逐項用定義與反例檢查敘述，不把奇數與質數混為一談。",
+  "solutionSteps": [
+    "確認 1 只有一個正因數，不是質數。",
+    "找奇數反例 9＝3×3，否定 B。",
+    "檢查 2 的正因數只有 1、2。",
+    "任何大於 2 的偶數都有因數 2，故不是質數。",
+    "選 C，D 也可由 2、3、5、7 等反例否定。"
+  ]
 }

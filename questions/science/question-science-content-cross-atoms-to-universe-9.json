@@ -2,41 +2,62 @@
   "id": "question-science-content-cross-atoms-to-universe-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年10月19日校園實驗室的觀察中，將 38 g 食鹽溶於 307 g 水，研究「從原子到宇宙」時，溶液質量為何？",
+  "prompt": "天文觀察社整理四句筆記，哪一句需要修正？",
   "options": [
     {
       "id": "A",
-      "text": "269 g"
+      "text": "恆星主要由氫、氦等物質構成"
     },
     {
       "id": "B",
-      "text": "11666 g"
+      "text": "行星的衛星可繞行星運行，而行星也隨行星系繞恆星運行"
     },
     {
       "id": "C",
-      "text": "307 g"
+      "text": "冥王星目前分類為矮行星"
     },
     {
       "id": "D",
-      "text": "345 g"
+      "text": "同一季節星座在夜空中改變位置，主要是地球每日自轉造成"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cross-atoms-to-universe"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
     "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：38＋307＝345 g。 本題對應 KG「從原子到宇宙」。"
+    "explanation": "同一時刻每夜星空位置改變與地球自轉有關；但不同季節夜間可見星座改變，主要是地球繞太陽公轉，夜晚朝向宇宙的方向隨季節改變。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64183/106-1-3%E8%87%AA%E7%84%B6%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立大灣國中106學年度上學期第三次段考三年級自然科試題",
+      "year": "106",
+      "subject": "science",
+      "locator": "PDF page 3, question 33",
+      "observedPattern": "僅參考第33題的命題能力與推理結構；只依公開原卷指定題目研究銀河系、恆星、星空觀察與天文尺度的命題模式；不重製題幹、選項、圖表或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dwm.kh.edu.tw/upload/344/104_64183/106-1-3%E8%87%AA%E7%84%B6%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "高雄市立大灣國中公開原卷 PDF page 3, question 33；只取題型與推理能力作 pattern-only 參考，題幹、選項、答案、圖表均重新創作。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開試題的 item-level pattern-only 證據獨立改寫；沒有複製原題、選項、圖表或答案。題目維持 draft，尚待單元版本融合、內容與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-atoms-to-universe"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-science-content-cross-atoms-to-universe",
+  "solutionStrategy": "抓住題目中的時間尺度：一天內的東升西落對應自轉；相隔數月的季節星空差異要檢查公轉。",
+  "solutionSteps": [
+    "先為現象標上時間尺度：題目問的是季節之間的星座差異，不是單一晚上的移動。",
+    "地球自轉約一天一圈，能解釋星體在一夜之中東升西落的視運動。",
+    "地球同時繞太陽公轉；經過數月後，夜晚面向宇宙的方向改變。",
+    "A、B、C 是天體組成、軌道層級與分類的敘述；D 把季節差異歸因於每日自轉。",
+    "所以應修正 D：季節星空差異主要來自公轉造成的夜間觀測方向變化。"
+  ]
 }

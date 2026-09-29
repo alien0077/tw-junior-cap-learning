@@ -2,41 +2,84 @@
   "id": "question-math-content-s-7-5-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "正六邊形有幾條對稱軸？",
+  "prompt": "等邊三角形有幾條線對稱軸？",
   "options": [
     {
       "id": "A",
-      "text": "6"
+      "text": "1 條"
     },
     {
       "id": "B",
-      "text": "3（依本題條件計算時選錯公式）"
+      "text": "2 條"
     },
     {
       "id": "C",
-      "text": "4（依本題條件計算時選錯公式）"
+      "text": "3 條"
     },
     {
       "id": "D",
-      "text": "5（依本題條件計算時選錯公式）"
+      "text": "6 條"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-7-5"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "正六邊形有 3 條連接相對頂點的對稱軸，以及 3 條連接相對邊中點的對稱軸，共 6 條。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。"
+    "value": "C",
+    "explanation": "每一個頂點到對邊中點的線都能交換另外兩個頂點，等邊三角形共有 3 條對稱軸，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 線對稱的基本圖形 題型與官方課綱 KG kg-math-content-s-7-5",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供線對稱基本圖形能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的線對稱基本圖形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-7-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-7-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "線對稱基本圖形、對稱軸數量、摺合重合與旋轉對稱辨識",
+      "observedPattern": "公開學校數學試題常以基本圖形的對稱軸數、摺合判斷及旋轉／線對稱區分考查圖形性質；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "線對稱基本圖形、對稱軸數量、摺合重合與旋轉對稱辨識",
+      "observedPattern": "公開學校數學試題常以基本圖形的對稱軸數、摺合判斷及旋轉／線對稱區分考查圖形性質；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "利用三個頂點地位完全相同的特性，從每個頂點各找一條中線。",
+  "solutionSteps": [
+    "等邊三角形有 3 個同等地位的頂點。",
+    "從一個頂點連到底邊中點可作對稱軸。",
+    "換到第二個頂點也有一條。",
+    "第三個頂點再有一條。",
+    "共 3 條，選 C。"
+  ]
 }

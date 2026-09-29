@@ -1,0 +1,179 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-16
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-16
+  title: 3-Ⅳ-16：閱讀不同體裁主題簡易文章
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-16：閱讀不同體裁主題簡易文章
+    curriculumIntent: 閱讀熟悉主題的簡易多體裁文本，從體裁慣例、篇章安排及文字或資料證據理解其溝通目的與重點。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 由稱呼、標題、欄列、台詞與指示語等線索判斷文本體裁及其溝通目的
+  - 依讀者任務在說明段落、日期表與行動公告間選取直接證據
+  - 限制圖表或廣告能支持的結論，不把相關性或宣傳語當成因果證明
+  prerequisites:
+  - 能讀懂短篇英文句子、常見標題與基本表格欄位
+  - 能從一段英文中圈出支持答案的詞句或數值
+  coreConcepts:
+  - 3-Ⅳ-16：閱讀不同體裁主題簡易文章
+  - 文本慣例提示體裁，但必須由內容證據確認
+  - Genre → purpose → structure → evidence：體裁決定優先閱讀問題，不直接替代答案
+  - 混合網頁各區塊分別回答原因、時間或行動；單一資料區不能代答其他問題
+  misconceptions:
+  - 只憑 first、Dear 或驚嘆號等單一詞猜體裁，忽略段落功能與收件對象
+  - 把圖表數值直接當成變化原因，或把廣告的 best 宣稱視為已證實事實
+  - 讀混合網頁時只看一個區塊，將日期、理由和操作規則互相代替
+  contentFlow:
+  - '從回收網頁的三項讀者任務選一項：查原因、安排時間或依規則交付，先說明會看哪裡及理由。'
+  - '回想標題、段落、表格欄位及祈使句等線索；若詞彙不熟，先用句中已知資訊定位任務，不靠單一關鍵字猜體裁。'
+  - '把同一網頁拆成原因說明、收運日期表、交付公告，逐區呈現原文、功能、可回答問題及推論界線。'
+  - 'predict：提交預測後才解鎖文本區塊；保留原答，讓後續證據可以支持或修正判斷。'
+  - 'manipulate：依任務切換說明、日期表或公告；每次切換都同步呈現該區原句、閱讀功能、適合回答的問題與不能推出的結論。'
+  - 'observe：比較三區的資訊種類：原因不是日期，日期不是操作規則；指出哪一段或哪個欄位直接支持當前答案。'
+  - 'explain：以完整短句連結讀者問題和原文證據，避免只報體裁名稱或抄出沒有解釋的片語。'
+  - '整理閱讀路徑：先辨認任務，再選資訊區，最後核對證據是否足以回答；體裁標籤只提供閱讀方向。'
+  - 'transfer：改讀一個主題不同的新網頁，回答新的 why 問題並指出支持理由的句子，不沿用上一題的區塊答案。'
+  - '離開前各用一項文字證據說明：日期表能回答什麼、又不能回答什麼；自評是否把不同區塊的功能混在一起。'
+  visualizations:
+  - 文本區塊地圖：每次切換同步更新原文片段、體裁功能、適用問題與推論限制
+  - 鍵盤與螢幕閱讀器可取得目前區塊、證據文字及即時回饋；不以顏色單獨標示選取狀態
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-16-I01
+    component: GenreReadingBlock
+    purpose: 依讀者提出的 when、why 或 how 任務選擇說明、日期表或行動公告，並用區塊內的明確文字證據說明答案及推論界線。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        selectedGenreBlock: null
+        prediction: "尚未提交"
+    studentActions:
+    - 提交「查收運日期應先看日期表」的預測；錯誤時先讀提示再重試，系統不會因錯答揭露正解。
+    - 以鍵盤或點選切換說明段落、日期表及行動公告，讀取同步更新的原文與問題。
+    - 從所選區塊取出直接證據，解釋它如何符合 when 任務及其推論限制。
+    - 在水污染回收新情境判斷 why 問題應查說明段落，並檢查遷移答案。
+    visualRules:
+    - 每次切換區塊時，原文、體裁功能、可回答問題與推論限制必須一起更新。
+    - 預測在來源選擇前保留；錯答只提示辨識 when 與資訊排列方式，不直接揭露答案。
+    - 目前區塊以按鈕名稱及 aria-pressed 狀態標示，選取不能只靠顏色區分。
+    - 320px、375px 與 768px 版面均須保留完整原句、任務、回饋及鍵盤可操作控制項。
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-16-I01
+      trigger: 面對「何時交付電池」卻選行動公告，因公告看起來最像正式通知。
+      prompt: 圈出問題中的 when，再找出哪一個區塊以日期和時段回答它。
+      expectedEvidence: 日期表中的 first and third Wednesday 與 3:30–5:00 p.m.；公告的密封指示不能回答日期。
+    feedback:
+      correct: 指出 when 與日期表欄位的對應，再以水污染回收頁的 why 任務檢查學生是否能改選原因說明。
+      incorrect: 先提示圈出 when／why／how，再比較問題需要的資訊種類；讓學生重選區塊，不直接替他選出答案。
+    genreReadingLab:
+      title: "同一個回收網頁，三種區塊各回答什麼？"
+      context: "社區網頁同時刊出回收原因、每月收運日與交付方式。先想：要替電池回收安排日期，應先查哪一區？預測不會直接替你揭曉答案。"
+      predictionPrompt: "預測要知道收運日期時，先查哪個區塊？輸入「日期表」後提交："
+      predictionAnswers: ["日期表", "行事曆", "calendar"]
+      predictionHint: "題目問 when；找能按日期排列資料的區塊，不要只因公告有行動指示就選公告。"
+      sources:
+      - id: explanation
+        label: 說明段落
+        excerpt: "Batteries should be collected separately because some materials can harm soil and water if they enter ordinary trash."
+        function: "說明文提供分類的原因與背景。"
+        question: "Why should batteries be separated from ordinary trash?"
+        limit: "這段解釋原因，沒有列出本月收運日期。"
+      - id: calendar
+        label: 日期表
+        excerpt: "Library desk: first and third Wednesday, 3:30–5:00 p.m."
+        function: "表格／行事曆把日期與時段對齊，供讀者快速查找。"
+        question: "When can residents bring used batteries?"
+        limit: "日期表只提供時間，不會說明分類的環境原因或包裝要求。"
+      - id: notice
+        label: 行動公告
+        excerpt: "Place used batteries in a sealed container and give them to the library desk staff. Do not leave them outside."
+        function: "公告提供可執行的交付規則與限制。"
+        question: "How should residents hand in the batteries?"
+        limit: "公告說明如何交付，不能單獨回答下一次收運日期。"
+      explanationPrompt: "說明你選的區塊如何符合讀者任務，並指出片段證據："
+      minimumExplanationLength: 12
+      transfer:
+        prompt: "遷移題：新網頁有「回收的水污染原因」、一張收運日期表和「密封後交給櫃檯」的公告。若要知道為何不可丟進一般垃圾，應查哪一區？輸入區塊名稱："
+        answers: ["說明段落", "說明", "explanation"]
+        hint: "分辨 why（原因）和 when（日期）；不要沿用上一題的答案。"
+        completionMessage: "完成：你依問題切換了區塊，並區分說明、日期資料與行動規則。"
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "採用先預測再逐步取得資料的教學節奏；本課改以讀者任務選區塊，並保留學生初答供證據比較。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "借用活動式探究的先判斷、再操作、最後解釋次序；學生操作文本區塊，追蹤回答原因、時間或規則所需的證據。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "三個來源控制項具備可讀名稱及選取狀態，讓鍵盤與輔助科技使用者辨認目前檢視的資訊區。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "將混合網頁依說明、日期與行動公告分成具名區塊；切換時更新即時文字，不要求學生只靠版面位置尋找資訊。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 更換回收物與風險主題；保留「先辨讀者問題、再配對文本區塊、最後引用直接證據」的閱讀關係，不可沿用上一題答案。
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 日期表能直接回答哪一種讀者問題？請各舉一項它能提供及不能提供的資訊，並引用一個區塊線索。
+    successCriteria:
+    - 提到本單元核心概念
+    - 區分時間、原因與操作規則三種資訊任務
+    - 引用具體日期／時段或文本句子支持說明
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 個英文單字寫一段給新志工的閱讀指引，說明遇到日期、原因及交付方式問題時應找哪種資訊區塊，並用本課一項原文證據示範。
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初次載入不顯示選中來源；錯誤預測不解鎖文本，正確提交後保留輸入並開放三個來源按鈕。
+  - 每次切換來源後，須同步更換英文原文、體裁功能、可回答問題及閱讀限制；ARIA 選取狀態與畫面選擇一致。
+  - 行動公告作為錯誤猜測時提供 when 與 how 的辨析提示，不揭露日期表答案；遷移題錯答時提示區分 why 和 when，正答後明確完成。
+  - 在 320px、375px 與 768px 寬度以鍵盤完成預測、來源切換、證據解釋及遷移；題幹、原文、回饋不得溢位，焦點不可遺失。
+  - 完成狀態寫入單元專屬儲存鍵，重新載入後應恢復預測、選取證據、解釋及遷移完成狀態，外層狀態與互動面板須一致。
+  - 不依賴外部圖片或網路請求；本課原創文本與題目內嵌資料即為離線 fallback，三區均可完成閱讀判斷。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-16
+    role: official-curriculum-source-of-truth

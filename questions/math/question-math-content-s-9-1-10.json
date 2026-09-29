@@ -2,41 +2,95 @@
   "id": "question-math-content-s-9-1-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "相似三角形有一組對應邊 6 與 9，另一組對應邊為 8 與 x，則 x 為何？",
+  "prompt": "兩個相似矩形的小圖：大圖長度倍率為 2：3。小圖周界為 40 公分，大圖周界是多少？",
   "options": [
     {
       "id": "A",
-      "text": "12"
+      "text": "60 公分"
     },
     {
       "id": "B",
-      "text": "10（將題目中的 6、9、8 代入順序弄錯）"
+      "text": "80 公分"
     },
     {
       "id": "C",
-      "text": "14（將題目中的 6、9、8 代入順序弄錯）"
+      "text": "90 公分"
     },
     {
       "id": "D",
-      "text": "16（將題目中的 6、9、8 代入順序弄錯）"
+      "text": "120 公分"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "6/9=8/x，交叉相乘得 6x=72，所以 x=12。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。"
+    "explanation": "周界是長度總和，會跟著每一邊使用同一倍率。因此大圖周界＝40×3÷2＝60公分，選 A；不需要面積平方比。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似形 題型與官方課綱 KG kg-math-content-s-9-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=374&cfsn=2175&op=dlfile",
+    "sourceLocator": "改寫參照：花蓮縣立宜昌國中111學年度第1學期第1次段考PDF第2頁第13題的長方形相似與對應長度倍率；本題改測周界作為長度量的縮放。",
+    "authoringNote": "原創周界倍率題，只參照公校公開考題的長方形相似、對應邊倍率模式；未套用面積平方定理或複製原卷。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=374&cfsn=2175&op=dlfile",
+      "title": "花蓮縣立宜昌國中111學年度第1學期第1次段考九年級數學科",
+      "year": "111",
+      "subject": "math",
+      "locator": "PDF第2頁第13題",
+      "observedPattern": "以相似長方形的對應邊比例建立長度倍率；本題轉成周界這項長度量的縮放推理。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "周界由邊長相加而成，使用長度倍率一次縮放，不平方。",
+  "solutionSteps": [
+    "讀出小圖：大圖長度倍率為2：3。",
+    "周界是各邊長相加，與邊長同倍率變化。",
+    "列式40：P＝2：3。",
+    "計算P＝40×3÷2＝60公分。",
+    "選 A，單位是公分，且不使用面積平方比。"
+  ]
 }

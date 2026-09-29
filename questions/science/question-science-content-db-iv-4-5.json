@@ -2,41 +2,67 @@
   "id": "question-science-content-db-iv-4-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年10月29日學校研究社的觀察中，針對「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」提出可檢驗的科學問題，若比較 4 組、每組取樣 13 份資料，哪一項設計最適當？",
+  "prompt": "若卵子未受精，月經週期後段常見的變化為何？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "相關激素支持下降，子宮內膜剝落而出血，形成月經"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時只測量4組中的一組就直接下結論"
+      "text": "受精卵立刻在輸卵管增厚成胎兒"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時只改變光照時間，其餘條件一致，設置4組、每組取樣13份並各重複測量4次"
+      "text": "黃體會永久增加激素，使子宮內膜不再變化"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」時先決定結論，再挑選支持結論的13筆資料"
+      "text": "卵巢停止所有激素分泌，人體立即停止生長"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-4"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-4：生殖系統、配子、性生殖與激素」。"
+    "value": "A",
+    "explanation": "未受精時，支持子宮內膜的相關激素濃度下降，內膜剝落形成月經；這不是受精卵發育，也不表示所有生長活動停止。選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的生殖系統、配子、受精、性生殖與激素調節能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生殖、遺傳與生命延續相關資料判讀",
+      "pattern": "取由生殖構造、遺傳資訊與資料推論生命延續的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生殖構造、遺傳資訊與資料推論生命延續的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "週期資料題先判定是否受精，再追蹤激素支持與子宮內膜的因果鏈。",
+  "solutionSteps": [
+    "辨認題目條件是卵子未受精。",
+    "確認沒有持續發育的受精卵與胚胎訊號。",
+    "連結黃體等相關激素支持下降。",
+    "推論子宮內膜剝落並形成月經，排除永久增厚。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

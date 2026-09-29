@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ba-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "某社區把傳統圖紋融入現代公共藝術，並在說明牌標示來源。這種做法最能說明什麼？（單元練習：content-ba）",
+  "prompt": "一篇文章寫學生準備校慶展覽：先列出多次失敗的模型，接著詳寫他在最後一天發現支架問題，結尾只用一句交代展覽順利開幕。作者詳寫最後一次修正，最可能是為了凸顯什麼？",
   "options": [
     {
       "id": "A",
-      "text": "文化可在尊重脈絡下創新轉化"
+      "text": "人物面對關鍵困難時的判斷與成長"
     },
     {
       "id": "B",
-      "text": "傳統一改變就失去價值"
+      "text": "展覽場地的建築尺寸"
     },
     {
       "id": "C",
-      "text": "所有圖紋都沒有來源"
+      "text": "所有模型失敗的精確統計"
     },
     {
       "id": "D",
-      "text": "現代藝術不能使用傳統元素（本題資料組：content-ba）"
+      "text": "校慶活動的完整流程表"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "保留來源並轉化使用，顯示文化可在尊重脈絡下創新。"
+    "explanation": "篇幅集中在最後一次修正，代表它是人物選擇與轉變的關鍵節點；開幕只略寫，顯示結果不是全文唯一焦點。"
   },
   "provenance": {
     "origin": "original",
-    "license": "依法令舉行考試試題之公開使用；本筆保留題目來源與答案註記",
-    "sourceUrl": "https://kaonow.com/paper/cap-111-chinese/",
-    "sourceLocator": "114／112／111 年國中教育會考國文科公開題型研究；僅作能力方向參考，非原題重製。",
-    "authoringNote": "依公開會考能力方向獨立重寫；未複製原試題文字、選項、文章、圖片或答案。待第二輪 AI／Terra 內容複核。"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編記敘閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-chinese-content-ba"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文、敘事結構與閱讀理解",
+      "observedPattern": "公立學校國文公開試題常以記敘文事件、人物、視角、描寫、段落銜接與文本推論考查閱讀能力；本題以自編敘事情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "人物、事件、描寫與篇章理解",
+      "observedPattern": "公立學校國文公開試題常以記敘文事件、人物、視角、描寫、段落銜接與文本推論考查閱讀能力；本題以自編敘事情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先整理事件與人物行動，再辨認視角、衝突、背景、場景與反覆線索如何共同推進記敘文本，最後以文本證據檢查推論強度。",
+  "solutionSteps": [
+    "讀題定位：圈出「事件選材」與事件節點、人物行動、敘述窗口、反覆線索或結尾變化。",
+    "建立敘事鏈：排列事件因果，區分文本明示、由行動支持的推論與未知資料，再看細節如何服務人物或情節；本題核心是「篇幅集中在最後一次修正，代表它是人物選擇與轉變的關鍵節點；開幕只略寫，顯示結果不是全文唯一焦點。」",
+    "核對正解：選項 A「人物面對關鍵困難時的判斷與成長」能同時解釋前後事件與具體文本線索，而非只對應單一句子。",
+    "排除誘答：檢查是否忽略主線與背景的關係、把概述當成完整證據，或把合理暗示誇大成名次、動機與未來結果。",
+    "結論回查：用開頭—衝突—行動—結果重新檢查人物是否改變、事件是否推進，以及答案是否超過文本範圍。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

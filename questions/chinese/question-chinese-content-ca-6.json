@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ca-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "博物館把古老農具與使用說明並列展示，主要是為了讓觀眾理解什麼？",
+  "prompt": "感應燈減少無人時段耗電，卻需要更換感應器；完整分析應加入哪個面向？",
   "options": [
     {
       "id": "A",
-      "text": "器物與當時生活方式的關係"
+      "text": "只看設備上市年份"
     },
     {
       "id": "B",
-      "text": "農具的售價高低"
+      "text": "刪去維修問題才能證明進步"
     },
     {
       "id": "C",
-      "text": "博物館建築的高度"
+      "text": "把節電效益與材料、維修勞動及廢棄物一起比較"
     },
     {
       "id": "D",
-      "text": "展品的顏色排名"
+      "text": "只問外觀是否符合潮流"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ca"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "器物必須放回使用情境，才能理解其與生活方式的關聯。"
+    "value": "C",
+    "explanation": "科技功能應放回生命週期看，節電效益和維修材料、勞動及淘汰成本需要一起衡量。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.kusjh.kh.edu.tw/upload/files/111%E4%B8%8A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E5%9C%8B%E4%B8%AD%E4%BA%8C%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
-    "sourceLocator": "物質文化與生活脈絡；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究生活議題說明、物件證據、跨段整合與限制性推論。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫 CA 物質文化與生活系統題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ca"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ca",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文證據與生活議題",
+      "observedPattern": "公立學校國文評量以生活物件、說明材料與社會議題要求區分直接證據、合理推論、主旨範圍及多段資訊整合；本題採全新情境與語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文本主旨、材料與推論",
+      "observedPattern": "公立學校國文評量以生活物件、說明材料與社會議題要求區分直接證據、合理推論、主旨範圍及多段資訊整合；本題採全新情境與語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先承認技術帶來的效益，再追問製造、維修、替換與廢棄階段的代價。",
+  "solutionSteps": [
+    "讀題定位：圈出「技術生命週期」與材料、使用者、時間、空間或成本的關鍵線索。",
+    "分層整理：先分直接描述、合理推論與價值評價，再依「科技功能應放回生命週期看，節電效益和維修材料、勞動及淘汰成本需要一起衡量。」確認答案範圍。",
+    "核對正解：選項 C 能由一項或多項文本證據支持，且沒有把局部經驗擴大成絕對結論。",
+    "排除誘答：檢查是否只看物件外觀、忽略生產與使用脈絡，或加入文本沒有提供的心理與道德判斷。",
+    "回讀驗證：把答案放回全文，確認它同時解釋材料、生活系統與限制條件。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

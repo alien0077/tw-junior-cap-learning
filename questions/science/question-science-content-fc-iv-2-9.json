@@ -2,41 +2,67 @@
   "id": "question-science-content-fc-iv-2-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年11月18日河川觀測站的觀察中，將 14 g 食鹽溶於 671 g 水，研究「Fc-Ⅳ-2：細胞及其分子組成的微觀層次」時，溶液質量為何？",
+  "prompt": "細胞膜的脂質與蛋白質排列會影響物質運輸，這表示？",
   "options": [
     {
       "id": "A",
-      "text": "657 g"
+      "text": "細胞功能與分子無關"
     },
     {
       "id": "B",
-      "text": "9394 g"
+      "text": "所有分子排列都完全隨機且沒有影響"
     },
     {
       "id": "C",
-      "text": "671 g"
+      "text": "微觀結構與分子性質會造成可觀察的細胞功能"
     },
     {
       "id": "D",
-      "text": "685 g"
+      "text": "只有細胞大小決定運輸"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-fc-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：14＋671＝685 g。 本題對應 KG「Fc-Ⅳ-2：細胞及其分子組成的微觀層次」。"
+    "value": "C",
+    "explanation": "結構、分子性質與功能相互關聯；膜的組成和排列會影響通透與運輸。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的細胞構造、生物分子與微觀證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Fc-Ⅳ-2 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fc-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-fc-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "細胞、DNA、蛋白質、脂質與微觀資料判讀",
+      "pattern": "取由細胞構造、分子組成與功能證據推論生物微觀層次的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由細胞構造、分子組成與功能證據推論生物微觀層次的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先定位細胞內的分子與結構層級，再以結構功能關係和證據限制判斷。",
+  "solutionSteps": [
+    "讀題定位：抓出「分子互動」涉及的細胞結構、分子或尺度證據。",
+    "建立判準：結構、分子性質與功能相互關聯；膜的組成和排列會影響通透與運輸。",
+    "核對答案：選項 C「微觀結構與分子性質會造成可觀察的細胞功能」符合判準。",
+    "排除誘答：分清細胞、細胞器、分子與原子層級，並區分影像線索與功能證據。",
+    "最後回查：確認答案同時符合微觀組成、結構功能與實驗證據界線。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

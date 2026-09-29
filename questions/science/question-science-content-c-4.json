@@ -2,23 +2,23 @@
   "id": "question-science-content-c-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年10月25日河川觀測站的觀察中，將 78 g 食鹽溶於 134 g 水，研究「C：物質的結構與功能」時，溶液質量為何？",
+  "prompt": "化合物與混合物的主要差異，哪項最正確？",
   "options": [
     {
       "id": "A",
-      "text": "56 g"
+      "text": "化合物有固定組成且成分以化學方式結合，混合物比例可變且可用物理方法分離"
     },
     {
       "id": "B",
-      "text": "10452 g"
+      "text": "混合物一定只有一種元素"
     },
     {
       "id": "C",
-      "text": "134 g"
+      "text": "化合物一定能用過濾分開"
     },
     {
       "id": "D",
-      "text": "212 g"
+      "text": "兩者都只含單一原子"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：78＋134＝212 g。 本題對應 KG「C：物質的結構與功能」。"
+    "value": "A",
+    "explanation": "所以不能把過濾套用到所有化合物。 選 A。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的粒子模型、物質結構與性質能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 C 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-c"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-c",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "粒子模型、物質組成、結構與性質資料判讀",
+      "pattern": "取由微觀結構、物性／化性與實驗證據推論物質功能的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由微觀結構、物性／化性與實驗證據推論物質功能的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較固定比例、結合方式與分離方法三項證據。",
+  "solutionSteps": [
+    "先檢查組成比例是否固定。",
+    "化合物成分間有化學結合，比例固定。",
+    "混合物的成分保留原性質，比例可變並可能物理分離。",
+    "所以不能把過濾套用到所有化合物。",
+    "選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

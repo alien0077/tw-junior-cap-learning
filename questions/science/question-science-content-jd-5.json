@@ -2,23 +2,23 @@
   "id": "question-science-content-jd-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年11月9日社區環境站的觀察中，以廣用試紙測得某溶液 pH＝7，研究「Jd：酸鹼反應」時，最合理的判斷為何？",
+  "prompt": "兩種酸的 pH 相同，但其中一種溶液濃度較高；下列哪項不能僅由 pH 相同直接推論？",
   "options": [
     {
       "id": "A",
-      "text": "「Jd：酸鹼反應」樣本呈酸性（pH＝7，由廣用試紙測得）"
+      "text": "兩者在測量條件下 H⁺ 表現出的酸鹼程度相近，但化學成分、總量與反應容量可能不同"
     },
     {
       "id": "B",
-      "text": "此溶液呈中性，因為 pH＝7 且使用廣用試紙"
+      "text": "兩者一定含有相同酸分子"
     },
     {
       "id": "C",
-      "text": "此溶液呈鹼性，因為 pH＝7 且使用廣用試紙"
+      "text": "兩者酸性方向相同"
     },
     {
       "id": "D",
-      "text": "不必讀取廣用試紙數值，只看容器外觀就能判斷酸鹼性"
+      "text": "仍需成分和體積資料比較可中和的鹼量"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,54 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "pH 小於 7 的水溶液呈酸性；pH＝7，因此判定為酸性。 本題對應 KG「Jd：酸鹼反應」。"
+    "value": "B",
+    "explanation": "pH 主要反映當下 H⁺ 活度／濃度相關的酸鹼程度，不足以確定酸的種類、總量或可中和容量。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的酸鹼分類、離子模型、pH、反應、生活應用與安全整合能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jd"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jd",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼反應、離子、指示劑、生活資料判讀",
+      "pattern": "取由酸鹼性質、反應證據與粒子資料整合推論酸鹼反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由酸鹼性質、反應證據與粒子資料整合推論酸鹼反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼、pH、反應與生活環境情境",
+      "pattern": "取從圖表、pH、材料反應與生活環境情境進行酸鹼推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從圖表、pH、材料反應與生活環境情境進行酸鹼推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分酸鹼強弱的測量值與溶液成分、總量。",
+  "solutionSteps": [
+    "確認兩者 pH 相同只支持酸鹼程度相近。",
+    "檢查是否提供成分和體積。",
+    "判斷不能由 pH 指定相同酸分子。",
+    "再用滴定或濃度資料比較反應容量。",
+    "所以 B 是不能直接推論的敘述。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

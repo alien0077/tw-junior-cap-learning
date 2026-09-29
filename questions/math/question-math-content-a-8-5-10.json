@@ -2,23 +2,23 @@
   "id": "question-math-content-a-8-5-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "因式分解 5t²＋15t＋10，結果為何？",
+  "prompt": "某同學說 2x²＋5x＋2＝(2x＋1)(x＋2)。用乘法回驗後，應如何判斷？",
   "options": [
     {
       "id": "A",
-      "text": "(5t＋1)(t＋10)"
+      "text": "正確；展開後首項、一次項與常數項都相同"
     },
     {
       "id": "B",
-      "text": "5(t－1)(t－2)"
+      "text": "錯誤，正確因式為 (2x＋2)(x＋1)"
     },
     {
       "id": "C",
-      "text": "5(t＋1)(t＋2)"
+      "text": "錯誤，正確因式為 (2x＋1)(x＋2) 以外的形式"
     },
     {
       "id": "D",
-      "text": "5(t＋3)(t＋2)"
+      "text": "無法用展開判斷"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "先提出 5 得 5(t²＋3t＋2)，再分解為 5(t＋1)(t＋2)。"
+    "value": "A",
+    "explanation": "(2x＋1)(x＋2) 展開為 2x²＋4x＋x＋2＝2x²＋5x＋2，因此同學的分解正確。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究因式分解方法、公因式、分組、乘法公式與驗算能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供因式分解方法與結果驗證能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的因式分解方法方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-a-8-5",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/064510/get-file/5e49ebb9a2bac601505f73d8",
+      "title": "臺中市立大甲國民中學二年級數學補考題庫（第三冊）",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "PDF 第 2 頁第 26 題：因式乘積與二次三項式展開核對",
+      "observedPattern": "校方公開原卷第 26 題提供「因式乘積與二次三項式展開核對」的技能模式參照；本題僅借鑑能力方向，題幹、數值、選項、答案與解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193506/get-file/6204ac4530ab0a5e342ecfe5.pdf",
+      "title": "臺中市立北新國民中學數學科八年級補考試題",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "PDF 第 1 頁第 7 題：從乘積形式核對三項式係數",
+      "observedPattern": "校方公開原卷第 7 題提供「從乘積形式核對三項式係數」的技能模式參照；本題僅借鑑能力方向，題幹、數值、選項、答案與解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064519/get-file/698ae03c3cd80e32ef01bd8d",
+      "title": "臺中市立大道國民中學 114 學年度第一學期八年級數學科補行評量題庫",
+      "year": "114",
+      "subject": "math",
+      "locator": "PDF 第 1 頁第 3 題：以交叉乘積核對中間項",
+      "observedPattern": "校方公開原卷第 3 題提供「以交叉乘積核對中間項」的技能模式參照；本題僅借鑑能力方向，題幹、數值、選項、答案與解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把候選因式逐項展開，三個係數都相符才可確認。",
+  "solutionSteps": [
+    "計算 2x×x 得 2x²。",
+    "計算交叉項 2x×2 與 1×x 得 4x＋x。",
+    "計算常數 1×2 得 2。",
+    "合併為 2x²＋5x＋2。",
+    "選 A，完整回驗而非只看首末項。"
+  ]
 }

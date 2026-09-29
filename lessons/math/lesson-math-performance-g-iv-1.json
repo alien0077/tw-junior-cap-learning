@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-g-iv-1",
   "subject": "math",
-  "title": "g-Ⅳ-1：直角坐標點與距離",
+  "title": "g-Ⅳ-1：用直角坐標定位點與距離",
   "knowledgeIds": [
     "kg-math-performance-g-iv-1"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「直角坐標點與距離」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "坐標平面把位置翻譯成有方向的數字，但讀點之前要先確認 x 軸、y 軸、象限與比例。本課以校園地圖格線為原創入口，讓學生在點位、水平／垂直位移與兩點距離之間轉換，並用平方距離與勾股關係驗證結果，避免把坐標順序顛倒或把距離當成位移分量。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「直角坐標點與距離」相關的關係。"
+        "heading": "先讀軸與順序",
+        "body": "點 (3,−2) 的第一個數是水平位置，第二個數是垂直位置；負號代表位於軸的另一側。標示點前先看原點、刻度與軸名，不能只看數字大小。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「直角坐標點與距離」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "水平與垂直位移",
+        "body": "若兩點 y 相同，距離是 x 坐標差的絕對值；若 x 相同，距離是 y 坐標差。這兩種特殊情況能先用格線直接檢查，再進入一般距離公式。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「直角坐標點與距離」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "距離公式來自直角三角形",
+        "body": "兩點的水平差與垂直差形成直角三角形，距離平方等於兩個分量平方和。平方會消除正負方向，但最後的距離仍取非負值。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「直角坐標點與距離」，並指出至少一項支持判斷的條件。"
+        "heading": "坐標模型要保留尺度",
+        "body": "地圖每格可能代表 10 公尺，坐標距離算出的是格數，還要依比例換成實際距離；若軸向比例不同，不能直接把格數當真實長度。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「直角坐標點與距離」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先確認原點、軸向、刻度與坐標順序。",
+    "先判斷是否為水平或垂直特殊情況，再使用距離公式。",
+    "把水平差、垂直差與實際距離分開標記。",
+    "用平方距離、圖上格線與單位換算互相檢查。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,111 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「直角坐標點與距離」並驗算結果。",
-    "scenario": "以「g-Ⅳ-1：直角坐標點與距離」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "在坐標、格線、位移與距離公式間同步驗證點位。",
+    "scenario": "拖曳地圖上的點，觀察坐標、水平／垂直差與距離同步更新。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "水平坐標或水平差"
+      },
+      {
+        "symbol": "y",
+        "meaning": "垂直坐標或垂直差"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「直角坐標點與距離」的第一步是什麼？",
+        "prompt": "點 (−2,3) 要先沿哪個方向定位？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "先水平到 −2，再垂直到 3",
+          "先垂直到 −2，再水平到 3",
+          "只看第二個數"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "坐標順序是 (x,y)，先讀水平再讀垂直。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "水平差 4、垂直差 3 時距離是多少？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "5",
+          "7",
+          "1"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "用直角三角形 √(4²+3²)=5。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "每格代表 10 公尺時，公式算出的 5 代表什麼？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "5 格，實際距離為 50 公尺",
+          "50 格",
+          "5 公尺"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "先確認公式結果的格數，再套用地圖比例。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "g-Ⅳ-1：直角坐標點與距離；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "高雄市公立校方翰林版第六冊數學課程計畫；統計、機率與函數學習內容及評量定位。；g-Ⅳ-1：直角坐標點與距離：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www1.fsm.kh.edu.tw/plan/special_112/112%E8%B3%87%E6%BA%90%E7%8F%AD%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「直角坐標點與距離」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「g-Ⅳ-1：直角坐標點與距離」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "淡水國中公立校方康軒版九年級數學課程計畫；統計機率、函數及圖形應用定位。；g-Ⅳ-1：直角坐標點與距離：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=100&file=WVhSMFlXTm9MelkzTDNCMFlWOHhNamd6T1Y4MU56WXlNRFl3WHpjNE1USXpMbkJrWmc9PQ%3D%3D&fname=WSGGRPQK20QO41KKLOLK54TXXSMO25JGKLB0DCNKCCQLOO40QKTSST54WSLKUSSSROPOIHKK2004GDLOQONKTSMOOPB0FHMPQPMPNOTSUWZWXVWFH10YWFCSSWUX25HCA0UWIGVWKO40XSUSB040MPTXGDTWA0ZWUSOPTWFGTS45QKNOKK21HHDGB0JC24KK14WTIGYSEG14WSMLID30B514YWRKA434DCDGA0WWQOPP1000ZSIGMOIGDGJDLO",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「g-Ⅳ-1：直角坐標點與距離」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "卓蘭高中附設國中公立校方南一版九年級數學課程計畫；統計、機率與二次函數章節定位。；g-Ⅳ-1：直角坐標點與距離：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/378739209.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「g-Ⅳ-1：直角坐標點與距離」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +160,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「直角坐標點與距離」",
-        "body": "以「直角坐標點與距離」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "校園地圖上的兩個集合點",
+        "body": "給出帶有原點與比例的原創校園格線圖，請學生先預測集合點 A、B 位於哪個象限，以及走最短直線距離是否等於水平差加垂直差。先處理方向和尺度，再談公式。 並請學生把象限、比例與兩個坐標寫在圖例旁，說明最短距離的方向假設。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「直角坐標點與距離」的概念架構",
-        "body": "本單元依官方課綱所列的「直角坐標點與距離」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "坐標是有順序的地址",
+        "body": "示範點 (−2,3) 與 (3,−2) 的位置不同，要求學生先沿 x 軸再沿 y 軸定位。用同一格線標上坐標、象限與單位，讓負號成為方向證據。 再讓學生交換兩個數字重新定位，說出哪個軸向和負號造成位置改變。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「g-Ⅳ-1：直角坐標點與距離」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "從直角三角形求距離",
+        "body": "對 A(1,2)、B(5,5)，水平差 4、垂直差 3，因此距離為 √(4²+3²)=5。先在圖上畫出 3-4-5 直角三角形，再代入公式，最後確認距離單位。 同時計算平方距離與圖上直角邊，確認根號結果和單位一致。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「直角坐標點與距離」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "抓出坐標順序錯誤",
+        "body": "提供三個候選點與一張地圖，學生先選出符合「向右 4、向下 2」的坐標，再以水平與垂直差回查。若把 (x,y) 寫反，回饋要求重新沿軸移動而非只改負號。 最後要求學生畫出正確路徑並標示水平、垂直分量，讓錯誤可定位。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「直角坐標點與距離」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "從格數換成公尺",
+        "body": "地圖每格代表 10 公尺，兩個點的坐標距離為 7 格；學生計算實際距離並說明若 x 軸每格 10、公尺而 y 軸每格 20，為何要先換算兩個分量再套模型。 再分別換算兩軸的實際長度，說明不能把不同尺度的格數直接相加。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「直角坐標點與距離」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "距離答案的四項檢查",
+        "body": "出口題要求學生圈出坐標順序、象限方向、平方根非負性與單位比例；再指出一個看似合理但尺度錯誤的答案，寫出哪一項證據能推翻它。 並將錯誤答案與原點、刻度及比例逐項比對，寫出最先發現的矛盾。"
       }
     ],
     "summary": [
-      "先用自己的話界定「直角坐標點與距離」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "先讀坐標軸、原點、刻度與順序。",
+      "把水平與垂直差視為直角三角形兩股。",
+      "距離取非負並依比例換算實際單位。",
+      "用圖、公式、位移與尺度四種證據回查。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「直角坐標點與距離」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "(−2,3) 與 (3,−2) 為什麼不是同一點？",
+        "expectedEvidence": "坐標順序不同，水平與垂直位置互換後位置改變。"
       },
       {
-        "prompt": "在「直角坐標點與距離」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "兩點水平差 4、垂直差 3，距離如何求？",
+        "expectedEvidence": "用勾股關係 √(4²+3²)=5，並說明單位。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「直角坐標點與距離」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "格數和公尺何時不能直接畫等號？",
+        "expectedEvidence": "地圖有比例或兩軸尺度不同時，必須先換算實際長度。"
       }
     ]
   },
@@ -188,6 +227,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『g-Ⅳ-1：用直角坐標定位點與距離』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『拖曳地圖上的點，觀察坐標、水平／垂直差與距離同步更新。』開始前，先回答：點 (−2,3) 要先沿哪個方向定位？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『拖曳地圖上的點，觀察坐標、水平／垂直差與距離同步更新。』回答：每格代表 10 公尺時，公式算出的 5 代表什麼？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "點 (−2,3) 要先沿哪個方向定位？；操作時先預測，再依『g-Ⅳ-1：用直角坐標定位點與距離』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(g-Ⅳ-1：用直角坐標定位點與距離)：答案 A；選項內容：先水平到 −2，再垂直到 3",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。坐標順序是 (x,y)，先讀水平再讀垂直。",
+          "feedback": "坐標順序是 (x,y)，先讀水平再讀垂直。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "水平差 4、垂直差 3 時距離是多少？；操作時先預測，再依『g-Ⅳ-1：用直角坐標定位點與距離』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(g-Ⅳ-1：用直角坐標定位點與距離)：答案 A；選項內容：5",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。用直角三角形 √(4²+3²)=5。",
+          "feedback": "用直角三角形 √(4²+3²)=5。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "每格代表 10 公尺時，公式算出的 5 代表什麼？；操作時先預測，再依『g-Ⅳ-1：用直角坐標定位點與距離』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(g-Ⅳ-1：用直角坐標定位點與距離)：答案 A；選項內容：5 格，實際距離為 50 公尺",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。先確認公式結果的格數，再套用地圖比例。",
+          "feedback": "先確認公式結果的格數，再套用地圖比例。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；直角坐標、點位與距離評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以坐標軸、點位與距離建立平面位置表徵",
+          "公開結構支持以坐標位置、軸向與距離公式建立平面幾何的可驗證表示。"
+        ],
+        "representations": [
+          "格線、坐標、位移與距離公式的互相轉換"
+        ],
+        "examplesOrEvidence": [
+          "本課的地圖格線、座標點與距離情境均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "顛倒 x、y 或忽略負號所代表的方向"
+        ],
+        "assessmentEmphasis": [
+          "完整核對點位、距離、比例與單位回查結果"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；直角坐標、點位與距離評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以操作和圖形表徵理解水平垂直差與勾股",
+          "公開結構支持以坐標位置、軸向與距離公式建立平面幾何的可驗證表示。"
+        ],
+        "representations": [
+          "拖曳點、直角三角形與坐標的同步變化"
+        ],
+        "examplesOrEvidence": [
+          "本課的地圖格線、座標點與距離情境均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "把水平差加垂直差誤當成直線距離"
+        ],
+        "assessmentEmphasis": [
+          "操作後解釋圖形與公式如何互相支持"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；直角坐標、點位與距離評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "在地圖情境中處理尺度與實際距離",
+          "公開結構支持以坐標位置、軸向與距離公式建立平面幾何的可驗證表示。"
+        ],
+        "representations": [
+          "格數、比例、象限與路徑限制的情境表徵"
+        ],
+        "examplesOrEvidence": [
+          "本課的地圖格線、座標點與距離情境均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "把格數直接當公尺或忽略兩軸比例差異"
+        ],
+        "assessmentEmphasis": [
+          "評估模型選擇、尺度換算與證據表達是否完整"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持以直角坐標表示平面位置。",
+      "水平與垂直差可形成直角三角形並導向距離公式。",
+      "坐標尺度、單位與方向是解讀答案的必要條件。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯坐標與距離基礎；康軒較突顯操作、圖形與勾股表徵；翰林較突顯地圖尺度、單位與情境限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以校園地圖格線引出坐標順序與象限。",
+      "設計坐標顛倒、格數誤當公尺的診斷。",
+      "加入兩軸比例不同時的分量換算活動。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計直角坐標、距離與尺度判讀。正文、例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

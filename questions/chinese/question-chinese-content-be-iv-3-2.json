@@ -2,23 +2,23 @@
   "id": "question-chinese-content-be-iv-3-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "讀書報告的開頭最適合先交代什麼？",
+  "prompt": "只有研究題目與一張未標日期的圖表，沒有原始數據或受眾資訊。最妥當的做法是？",
   "options": [
     {
       "id": "A",
-      "text": "書名、作者與報告重點"
+      "text": "直接宣稱趨勢已證實"
     },
     {
       "id": "B",
-      "text": "所有細節心得"
+      "text": "標明資料限制，先確認日期、來源與受眾，再決定能提出的結論"
     },
     {
       "id": "C",
-      "text": "與書無關的新聞"
+      "text": "編造圖表日期"
     },
     {
       "id": "D",
-      "text": "結論以外的資料"
+      "text": "把圖表放大就能解決所有問題"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "開頭交代基本書訊與報告方向，能建立閱讀脈絡。"
+    "value": "B",
+    "explanation": "缺少日期、來源與受眾會影響解讀與呈現，應先補查並明示限制，不能把未知資料寫成確定結論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "簡報、讀書報告、演講稿與劇本等學習應用；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究簡報、讀書報告、演講稿、劇本的目的、受眾、資料與舞台功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫學習應用文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-be-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-be-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "簡報、讀書報告與學習表達",
+      "observedPattern": "公立學校國文評量要求依簡報、讀書報告、演講稿和劇本的目的、受眾、資料來源、表達順序及舞台功能判讀；本題使用全新學習情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "演講稿、劇本與受眾需求",
+      "observedPattern": "公立學校國文評量要求依簡報、讀書報告、演講稿和劇本的目的、受眾、資料來源、表達順序及舞台功能判讀；本題使用全新學習情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先盤點資料缺口，再依受眾決定呈現方式與結論強度。",
+  "solutionSteps": [
+    "列出缺少日期、原始數據與來源。",
+    "確認受眾資訊會影響解釋深度。",
+    "選擇保留限制的寫法。",
+    "B 最符合研究誠實與溝通需求。",
+    "提出向資料提供者追問的欄位清單。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

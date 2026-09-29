@@ -2,41 +2,67 @@
   "id": "question-science-content-fb-iv-4-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年7月13日河川觀測站的觀察中，連續一個月在相同時間觀察月面亮部變化，研究「Fb-Ⅳ-4：月相變化的規律」時，最能支持哪項結論？",
+  "prompt": "某張月相示意圖把太陽放左、地球放中央、滿月放右。學生據此聲稱『圖上月球到地球的距離較長，所以滿月比新月小』。哪項評語最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 9 組、11 月觀察中，月亮本身每天產生不同亮度"
+      "text": "可以直接比較圖上的距離與大小，因為示意圖按比例繪製"
     },
     {
       "id": "B",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 9 組、11 月觀察中，月相是由日、地、月相對位置改變造成的視覺變化"
+      "text": "示意圖通常不按真實比例；它支持相對位置與受光面判讀，不支持用圖面尺寸推算真實大小或距離"
     },
     {
       "id": "C",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 9 組、11 月觀察中，月相完全由雲量決定"
+      "text": "既然月球繞地球公轉，圖上的大小和距離就能直接換算成實際值"
     },
     {
       "id": "D",
-      "text": "在「Fb-Ⅳ-4：月相變化的規律」第 9 組、11 月觀察中，月亮只在滿月時才存在"
+      "text": "只要標出滿月名稱，就足以證明圖面按比例"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-fb-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
     "value": "B",
-    "explanation": "月球反射太陽光，日、地、月相對位置改變會造成可規律觀察的月相。 本題對應 KG「Fb-Ⅳ-4：月相變化的規律」。"
+    "explanation": "月相位置圖是幫助理解光向、相對位置和可見亮面的模型，常刻意放大天體並簡化軌道；未標示比例就不能從圖面長度推真實大小或距離。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的月相、日月地模型與觀測資料能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Fb-Ⅳ-4 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fb-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-fb-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "月相、日月地運動與天文觀測資料判讀",
+      "pattern": "取由日月地相對位置、觀測時間與週期資料推論月相變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由日月地相對位置、觀測時間與週期資料推論月相變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認示意圖能回答的問題，再檢查它是否提供比例尺；沒有比例尺就不把圖面尺寸當測量資料。",
+  "solutionSteps": [
+    "找出學生推論依據：圖上畫出的月球大小與地月距離。",
+    "檢查題目有沒有比例尺或按比例繪製的說明。",
+    "沒有比例資訊時，只能讀相對位置和光照關係。",
+    "排除把概念示意圖誤當實測比例圖的選項。",
+    "選 B，因為它說明模型可用範圍與不能推論的資訊。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

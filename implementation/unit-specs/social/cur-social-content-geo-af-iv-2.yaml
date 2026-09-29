@@ -1,0 +1,146 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-social-content-geo-af-iv-2
+  knowledgeGraphIds:
+  - kg-social-content-geo-af-iv-2
+  title: 地 Af-Ⅳ-2：都市發展與都市化
+  subject: social
+  socialDiscipline: geography
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 地 Af-Ⅳ-2：都市發展與都市化
+    curriculumIntent: 地 Af-Ⅳ-2：都市發展與都市化
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 翰林公開教學頁已有直接內容閱讀與原創概念融合；南一、康軒目前只有章節或入口定位，不能宣稱三版融合完成；課文維持 draft 直到其餘研究與內容審查完成
+    currentEvidenceStatus: official-curriculum-and-kg-grounded; hanlin-public-learning-content-read-and-synthesized; nani-and-kanghsuan-unit-text-pending; draft
+  learningGoals:
+  - 分辨都市人口比例增加、建成區擴大與都會區形成是相關但不同的觀察
+  - 以人口、土地利用與通勤資料判讀核心—郊區變化，並區分直接證據、推論與尚待查證的遷移原因
+  - 評估都市交通或開發方案時，指出不同里別與群體可能承受的利益、成本及所需補充資料
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 都市化（人口比例／人口活動集中）、都市擴張（建成範圍外推）與都會區接合不可互相替代
+  - 核心與郊區間的人口、土地、產業及通勤流動
+  - 都市平均值、行政區界、生活圈尺度與群體分配效果的差異
+  misconceptions:
+  - 把都市人口比例上升解讀成所有人搬入市中心
+  - 把建成區、農地或通勤改變當成居民偏好、房價或道路因果的直接證明
+  - 把都會區生活圈當成行政邊界消失，或以全市平均代表所有里別與群體
+  contentFlow:
+  - 'predict：從一班連起核心與外圍的公車出發，先預測哪些都市變化可由人口比例、建成區及通勤資料觀察，哪些居民動機尚不可知。'
+  - 'manipulate：在河港案例逐項切換人口比例、建成區、夜間人口及通勤指標，按量／位／流／代價四格重新整理資料，不把不同分母混作同一數值。'
+  - 'observe：記錄都市人口比例、建成區外擴、核心夜間人口與外圍通勤各自的時間、單位及地理範圍，標明皆為自編假設資料。'
+  - 'explain：用四步 guided-choice 分辨都市化比例、實際外擴與生活品質；說明共變資料不足以證明道路因果、遷移動機或政策效果。'
+  - 'observe：比較核心／外圍及不同群體的交通可及性，列出全市平均掩蓋的里別、收入、年齡與無障礙差異。'
+  - 'explain：把方案的模型輸出與仍待實地檢查的票價公平、無障礙、服務可及性及農地損失分開陳述。'
+  - 'transfer：將量／位／流／代價判讀遷移到新公車或道路方案，提出可驗證指標、證據限制與需補收資料。'
+  - 'exit-ticket：寫出資料直接支持的現象、不可逕推的原因，以及最能補足推論的一項證據。'
+  visualizations:
+  - 自編河港資料同時以人口比例、建成區、核心夜間人口、外圍通勤流呈現；文字須標明皆為教學用假設資料，不冒充官方統計
+  - simulation 的概念探索工作臺以模型條件觀察人口、建成區、通勤與農地變項；模型輸出不得冒稱真實因果或真實地理統計
+  - 每項指標標示單位、時間與範圍，並以文字標籤說明核心／外圍而非只靠色彩
+  interactiveBlocks:
+  - id: CUR-SOCIAL-CONTENT-GEO-AF-IV-2-I01
+    component: GuidedChoiceBlock
+    purpose: 以四個遞進選擇，分辨都市人口比例、建成區外擴、空間公平與模型證據邊界
+    initialState:
+      mode: stepwise-evidence-check
+      showAnswer: false
+      completedSteps: []
+    studentActions:
+    - 逐步回答都市人口比例上升能直接支持的結論
+    - 依建成區、農地與通勤資料選出不越界的空間推論
+    - 選擇適合檢查交通方案受益分布的尺度與群體
+    - 區分模型已提供的輸出與仍須真實調查的公平、無障礙及環境資料
+    visualRules:
+    - 每一步提供四個文字選項，回饋解釋證據可以支持與不能支持的推論
+    - 正解回饋只在學生作答後顯示；錯誤答案提供證據邊界提示，不直接宣稱其因果推論成立
+    - 每項比例明示分母；人口、面積、通勤與公平指標不得混為同一量尺
+    - 窄螢幕題幹、選項與回饋可換行，不得裁切或以顏色作唯一辨識
+    misconceptionChecks:
+    - id: MC-CUR-SOCIAL-CONTENT-GEO-AF-IV-2-I01
+      trigger: 由都市人口比例提高直接斷言所有人口移入市中心，或由道路與建成區同時增加斷言道路造成外擴
+      prompt: 目前哪一項資料是直接觀察？它沒有量到哪個人的移動動機或因果？
+      expectedEvidence: 指出人口比例、建成區、通勤流各自測量的對象，並說明遷移原因或政策效果需要額外資料
+    feedback:
+      correct: 肯定其區分現象與因果，並要求用核心／外圍或不同群體的新資料再檢驗。
+      incorrect: 提醒都市人口比例不提供城內位置、建成區不揭露個人動機；先補看指標範圍再重選。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課不嵌入或仿製 PhET 模型；只參照先預測再觀察的探究節奏，都市化資料、模型變項與教學文字均由本課自編。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課不引用其活動題目；只參照學生先操作／判讀、再用證據解釋的教學原則，所有都市案例均另行創作。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "以鍵盤可操作的原生按鈕、清楚標籤與即時文字回饋呈現四步選擇題；目前待實際無障礙測試，不以規格文字冒稱通過。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以標準標題和活動區塊標記課文與互動；鍵盤及輔助科技相容性仍須本課實測。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 使用不同城鎮的都市人口比例、建成區或通勤資料，必須讓學生分辨都市化程度與都市空間外擴，不可把兩項指標混同
+    requiredResponse: 先陳述資料直接支持的現象，再提出一項合理但需驗證的解釋，並列出所缺資料
+    scoring: 指標與尺度判讀 1、直接證據與推論區分 1、缺漏資料或受影響群體 1
+  exitTicket:
+    prompt: 都市人口比例上升、建成區外擴、相鄰都市接合分別能支持什麼？選其中一項，寫出目前資料不能證明的原因。
+    successCriteria:
+    - 分清人口比例、都市面積或生活圈尺度
+    - 引用一項具時間、分母或範圍的證據
+    - 說明至少一項不能直接推論的因果或動機
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字／英文短段落，將「地 Af-Ⅳ-2：都市發展與都市化」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入課程時四個步驟先顯示題幹和選項，不出現答案字母；每題只有在作答後顯示與證據限制相符的回饋。
+  - 第一步選「人口比例提高」時回饋不得推論所有居民搬入市中心，也不得從比例直接推出房價或壅塞原因。
+  - 第二步使用外圍建成區、農地與通勤變化時，回饋須區分空間擴張／往返增加和未證實的偏好、道路因果或服務品質。
+  - 第三步以核心、外圍與群體比較公共運輸可及性，不得以全市平均取代不同里別、收入、年齡或無障礙需求。
+  - 第四步明確區分模型內已給定的面積／通勤輸出與模型無法得知的票價公平、無障礙、服務可及性及農地損失。
+  - 在 320px、375px 與 768px 寬度，以鍵盤逐題作答時，題幹、四個按鈕與 aria-live 回饋不得裁切；fallback：封鎖外部來源後仍以內嵌自編題目完成全部四步，不得假稱查得外部即時數據。
+  - 以新城鎮資料執行 transfer：同時檢查指標尺度、證據與推論區分、所缺資料三項評分準則。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 翰林公開教學頁已有具日期的直接閱讀紀錄；南一與康軒若仍只有目錄／課程計畫，須明確維持 pending
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～24 頁／PDF 第 26～28 頁；國民中學教育階段學習內容；官方代碼 地 Af-Ⅳ-2
+    role: official-curriculum-source-of-truth
+  - url: https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E5%9C%B0%E7%90%86/%E9%83%BD%E5%B8%82%E6%93%B4%E5%BC%B5.html
+    locator: 翰林雲端學院「國中地理－都市擴張」公開關鍵字頁；閱覽日期 2026-09-28；出版社網站資源，未標特定課本版次
+    role: directly-read-publisher-public-learning-content; not-full-textbook-edition

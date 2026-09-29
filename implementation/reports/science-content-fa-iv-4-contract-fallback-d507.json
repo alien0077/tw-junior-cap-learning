@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-science-content-fa-iv-4",
+  "change": [
+    "Preserved the existing lesson manuscript, atmospheric profile interaction and questions; made each unit-specific prediction/observation/explanation/manipulation/transfer step explicit in the spec.",
+    "Corrected the keyboardAlternative contract to boolean true and added an explicit simulations.js failure fallback test case.",
+    "Extended the focused Playwright test to block simulations.js and verify the six lesson sections and four keyboard-answerable text questions remain available with a truthful fallback notice."
+  ],
+  "browserEnvironment": {
+    "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+    "playwright": "1.58.0",
+    "chromiumExecutable": "/Users/alien/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+    "sandboxObservation": "Port 8765 had a listening Python server, but sandbox curl to localhost returned connection refused; this was network isolation, not a missing package or browser.",
+    "authorizedBrowserResult": "PASS"
+  },
+  "tests": {
+    "unitRuntimeContract": "PASS: npm run test:science:fa-iv-4",
+    "specValidation": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "1,020/1,027 passed; 7 failures remain",
+    "playwright": "PASS: six authored sections, four keyboard-answerable steps, scenario switch and focus retention, simulation-script failure fallback, 320/375/768px without overflow, zero page errors",
+    "lesson": "unchanged",
+    "questions": "unchanged",
+    "jsonAndDiffCheck": "pending"
+  },
+  "notClaimed": [
+    "The full specification and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

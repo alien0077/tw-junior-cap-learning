@@ -1,0 +1,28 @@
+{
+  "reportId": "a7-2-interaction-semantic-consistency-d343",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-2",
+  "classification": "targeted-interaction-semantic-consistency-repair",
+  "request": "Resolve the remaining A-7-2 mismatch without repeating its completed source research or rewriting the lesson.",
+  "finding": {
+    "interactiveScenario": "four bags of badges, x badges per bag, 3 loose badges, 27 badges total; 4x+3=27",
+    "staleLessonVariables": ["x as unit price", "a as material quantity", "b as shipping fee"],
+    "staleSpecInitialState": ["weight on left", "total weight on right"],
+    "impact": "The same interaction described badge counts while its variable definitions and initial-state keys described unrelated price/weight contexts, undermining the concept's quantitative meaning."
+  },
+  "repair": {
+    "lesson": "Aligned x, coefficient 4, constant 3 and right-side total 27 with their badge-count meanings.",
+    "spec": "Renamed initial-state fields to looseBadges and totalBadges; corrected the test case to state all four quantities explicitly; repaired malformed testCases and definitionOfDone YAML list indentation discovered during parsing.",
+    "regression": "A-7-2 targeted runtime test now deep-compares all four learner-facing variable meanings against the badge scenario."
+  },
+  "verification": {
+    "targetRegression": "PASS: npm run test:math:a7-2",
+    "specYamlParse": "PASS: PyYAML parsed spec; six testCases and seven definitionOfDone entries",
+    "specValidator": "PASS: 1,027 files, 0 errors; 1,027 pending",
+    "jsonParse": "PASS: lesson and project-state JSON parsed before status update",
+    "gitDiffCheck": "PASS",
+    "browser": "Not rerun: only interaction data, specification text, regression assertions, and status documentation changed; no runtime rendering code changed.",
+    "contentAndPublisherGates": "Unchanged: lesson draft; all three publisher slots pending; independent content review open; spec QA untested."
+  },
+  "noRepeatWork": "Did not repeat publisher research, rewrite the six authored lesson sections, rerun the completed public-exam source ledger, reinstall Playwright, delegate work, or commit/push."
+}

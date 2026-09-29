@@ -2,41 +2,84 @@
   "id": "question-social-content-hist-hb-5",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2023年7月7日區域地圖展的資料中，甲區人口 13 萬、面積 320 km²；乙區人口 11 萬、面積 160 km²。研究「Hb：區域內外互動交流」時，哪項正確？",
+  "prompt": "某地出土外來風格的器物，後來的地方器物卻加入本地紋樣與用途。這組證據最適合支持哪種說法？",
   "options": [
     {
       "id": "A",
-      "text": "乙區人口密度較高（依「Hb：區域內外互動交流」資料計算）"
+      "text": "外來風格一出現，就能證明原有文化已被取代。"
     },
     {
       "id": "B",
-      "text": "兩區人口密度相同"
+      "text": "交流可能引入新的形式，但地方社群也可能選擇、改造並賦予它新的用途。"
     },
     {
       "id": "C",
-      "text": "只看人口總數即可判斷密度"
+      "text": "只要紋樣相似，就能確定工匠、年代與運輸路線完全相同。"
     },
     {
       "id": "D",
-      "text": "面積越大人口密度必然越高"
+      "text": "本地紋樣出現表示外來器物從未真正進入地方社會。"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-hist-hb"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "人口密度須以人口除以面積比較；甲約 406 人/km²、乙約 688 人/km²。 本題對應 KG「Hb：區域內外互動交流」。"
+    "value": "B",
+    "explanation": "器物前後差異支持接觸後的選擇與再詮釋可能，但不能把形式相似或差異誇大成完全取代或完全沒有交流。 本題以「Hb：區域內外互動交流」為脈絡，正確答案是選項 B：「交流可能引入新的形式，但地方社群也可能選擇、改造並賦予它新的用途。」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
     "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "authoringNote": "依官方課綱、Hb 單元知識圖譜及三所公立學校公開社會科試題所呈現的資料判讀、跨區交流與多方證據能力方向獨立改寫；未複製原題文字、選項、圖片或答案，待逐題學科與 Terra 複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-hist-hb"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-social-content-hist-hb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國民中學公開段考社會科；僅研究資料判讀與歷史推理題型，未複製原題。",
+      "year": "114",
+      "locator": "公開段考社會科 PDF；第 1 題至第 10 題型範圍：資料判讀、時空尺度與因果界線",
+      "observedPattern": "以材料、圖表或時序線索要求學生界定證據範圍，再判斷最能由資料支持的歷史解釋。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國民中學公開社會科試題入口；僅研究多資料互證與歷史推理題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開試題與解答入口；第 1 題至第 10 題型範圍：跨區交流、制度與多重證據判讀",
+      "observedPattern": "把地圖、制度記錄和角色觀點放在同一材料組，要求區分直接觀察、合理推論與尚待補證的說法。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國民中學公開段考試題入口；僅研究區域互動與多方觀點題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開段考試題入口；第 1 題至第 10 題型範圍：區域互動、文化變遷與多方角色判讀",
+      "observedPattern": "以區域往來的材料情境測量角色、利益與文化變化的連結，避免只用單一人物或單一地點下結論。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較外來形式與本地改造的具體線索，使用「可能」「支持」等證據語氣，避免把物件直接等同整個文化。",
+  "solutionSteps": [
+    "讀題定位：圈出本題的關鍵材料與任務，先不要因熟悉的地名或時代名稱直接選答案；本題要判斷的是「某地出土外來風格的器物，後來的地方器物卻加入本地紋樣與用途。這組證據最適合支持哪種說法？」中的證據範圍。",
+    "建立判準：用「比較外來形式與本地改造的具體線索，使用「可能」「支持」等證據語氣，避免把物件直接等同整個文化。」把路徑、角色、制度、資料尺度與可支持的結論分開。",
+    "核對正解：選項 B「交流可能引入新的形式，但地方社群也可能選擇、改造並賦予它新的用途。」符合題幹要求，因為器物前後差異支持接觸後的選擇與再詮釋可能，但不能把形式相似或差異誇大成完全取代或完全沒有交流。",
+    "逐項排除：檢查其餘選項是否把可能路徑當成確定事實、把單一資料放大、忽略形成背景，或把交流誤寫成單向且平等的影響。",
+    "結論回查：把選項放回完整材料，確認時間、地點、角色與證據強度一致；若新增資料或改變尺度，必須重新判斷，不能只沿用答案字母。"
+  ]
 }

@@ -1,0 +1,142 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-3
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-3
+  title: 5-Ⅳ-3：常見問答回應
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-3：常見問答回應
+    curriculumIntent: 5-Ⅳ-3：常見問答回應
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 聽懂日常對話中的詢問、請求、提供、致謝、道歉及提醒等話語功能
+  - 整合前後句中的否定、時間、數量、人稱與已完成等線索，選出符合情境的回應
+  - 說明回應所依據的具體詞句，並將判讀方法遷移至電話留言等新情境
+  prerequisites:
+  - 能理解國中常見日常英語字詞與簡單問句
+  - 能辨認基本否定句及常見人稱代名詞
+  coreConcepts:
+  - 適當回應須先辨識說話者正在詢問、請求、提供、致謝或提醒
+  - 前後文中的否定、完成狀態、時間與數量可能改變原先直覺答覆
+  - 可指出語言線索且符合真實情境的回應，才算接續了對話
+  misconceptions:
+  - 看見 help、key 等關鍵字便套固定答句，沒有整合後續資訊
+  - 把 Could you…? 一律當作詢問能力，而忽略常見請求功能
+  - 漏聽 not、only、already 等否定或限制詞，導致人稱、數量或需求判讀錯誤
+  contentFlow:
+  - 'predict: 社團海報已完成時先預測對方是否仍需要協助，暫不只憑help關鍵字作答'
+  - 'manipulate: 在互動選項間切換候選回應，逐一核對說話功能、人稱、否定及數量限制'
+  - 'observe: 比較加入not、already或only等上下文後，合宜回應如何改變'
+  - 'explain: 指出改變判斷的具體語句線索，說明為何其他答句不承接原對話'
+  - 'identify-function: 分辨詢問、請求、提供、致謝、道歉與提醒'
+  - 'locate-clues: 找出否定、時間、數量、人稱和前後句線索'
+  - 'work-example: 逐輪分析海報協助對話並組成連貫接話'
+  - 'guided-choice: 四題逐步練習功能、限制、致謝回應與電話請求'
+  - 'transfer: 將理解方法移至有時限的電話留言'
+  - 'exit-ticket: 指出改變答案的具體線索並說明回應理由'
+  visualizations:
+  - 原創短對話以文字呈現說話者、話語功能及前後文限制；不虛稱音調或音檔分析
+  - GuidedChoice 每題提供三個可鍵盤選取的自然語句、逐題重試提示與作答後解析
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-3-I01
+    component: GuidedChoiceBlock
+    purpose: 透過原創對話判斷功能與上下文限制，選擇能承接對話的合宜回答
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 閱讀每題原創日常對話與三個回答選項
+    - 使用滑鼠或鍵盤選答
+    - 答錯後閱讀該題提示並重試；答對後檢視答案解析
+    - 完成後以 exit ticket 說明線索如何支持回答
+    visualRules:
+    - 題幹、選項、答案、重試提示和回饋由 lesson JSON 提供，外部網路不是必要依賴
+    - 選項使用有可存取名稱的原生按鈕，答錯與答對回饋可被輔助科技讀取
+    - 不使用只有顏色或動畫才能理解的訊息
+    - 窄螢幕不得裁切對話、選項或回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-3-I01
+      trigger: 看見熟悉的關鍵字就選固定答句，漏掉後續已完成／數量等限制
+      prompt: 請指出哪個前後句線索改變了原先的直覺回答。
+      expectedEvidence: 引用 already、only、否定或具體時間數量等詞句，說明它如何改變對話需求
+    feedback:
+      correct: 說明話語功能與前後文線索如何支持此回答，並讀出完整對話檢查連貫性。
+      incorrect: 提醒回聽／重讀關鍵詞及其前後句，允許重試後再顯示本題解析。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-3：常見問答回應」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-3：常見問答回應」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-3：常見問答回應」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-3：常見問答回應」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 日常對話聽辨／語境回應／理由短答
+    stemConstraint: 以電話留言或社團協作等新對話檢驗功能、限制線索及合宜接話
+    requiredResponse: 選擇回應並指出支撐它的詞句或前後文
+    scoring: 話語功能判斷 1、上下文線索 1、回應連貫合宜 1
+  exitTicket:
+    prompt: 哪個前後文線索讓你改變了第一個直覺答案？請引用線索並解釋它如何影響回應。
+    successCriteria:
+    - 正確辨認話語功能
+    - 指出至少一項具體上下文線索
+    - 回應符合情境且能承接對話
+  expressionExtension:
+    applicable: true
+    task: 寫兩輪原創日常對話，並用一句話指出其中改變回答的上下文線索
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個選項可朗讀；正誤回饋與重試提示由 aria-live 呈現
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 四題互動各顯示正確選項、相符的解析與錯答重試提示，不得題目與回饋錯位。
+  - 鍵盤可操作所有選項；錯答後可重試，答對後呈現可讀解析及 aria-live 狀態。
+  - 在 320px、375px 與 768px 寬度，六段正文、對話題幹、選項及回饋不溢位。
+  - 封鎖外部網路後仍可閱讀教材並完成所有 GuidedChoice 步驟。
+  - Fallback：刻意阻擋 simulations.js 後，四題常見問答 GuidedChoice 仍可鍵盤作答、錯答重試並取得逐題解析；模擬腳本不可成為理解對話的必要條件。
+  - 以電話轉達情境作遷移，能辨認請求、時限並提出理由充分的回應。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 六段原創教學、四步互動、答案回饋與學生頁規格彼此一致；無 placeholder 或 TODO（內容審查由使用者以 ChatGPT 執行，不作 Codex gate）
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 5-Ⅳ-3
+    role: official-curriculum-source-of-truth

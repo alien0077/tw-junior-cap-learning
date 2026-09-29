@@ -14,11 +14,11 @@
     },
     {
       "id": "C",
-      "text": "只有周長相等"
+      "text": "一組對應角相等"
     },
     {
       "id": "D",
-      "text": "一個角相等"
+      "text": "兩三角形周長相等"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "AA 判定只需兩組對應角相等即可判定相似，其餘條件都不足。"
+    "explanation": "兩組對應角相等可用 AA 判定三角形相似，不需先知道三邊長，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考三角形相似判定、比例、平行線截比與生活情境題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供三角形相似、比例與測量應用能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的三角形相似方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-10"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "AA／SAS／SSS 相似判定、相似比例、平行線截線比例、周長面積倍率與影子測高",
+      "observedPattern": "公開數學評量常從角度或對應邊比例判斷三角形相似，並將相似比例延伸到平行線截線、周長、面積與實物測量；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "AA／SAS／SSS 相似判定、相似比例、平行線截線比例、周長面積倍率與影子測高",
+      "observedPattern": "公開數學評量常從角度或對應邊比例判斷三角形相似，並將相似比例延伸到平行線截線、周長、面積與實物測量；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "AA／SAS／SSS 相似判定、相似比例、平行線截線比例、周長面積倍率與影子測高",
+      "observedPattern": "公開數學評量常從角度或對應邊比例判斷三角形相似，並將相似比例延伸到平行線截線、周長、面積與實物測量；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "檢查條件是否足以固定三角形形狀，單一邊或角都不足。",
+  "solutionSteps": [
+    "一組邊或一組角不能決定完整形狀。",
+    "兩組角相等會連帶使第三角相等。",
+    "這符合 AA 相似判定。",
+    "因此不需知道三邊長。",
+    "所以選 B。"
+  ]
 }

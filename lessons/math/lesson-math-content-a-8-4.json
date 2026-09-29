@@ -9,167 +9,194 @@
     "8"
   ],
   "content": {
-    "summary": "把多項式反向拆成因式乘積，先找最大公因式，再辨認可用的結構並檢查是否還能繼續分解。",
+    "summary": "理解因式與倍式的方向，將二次多項式讀成乘積並以乘回或整除檢驗候選因式；分解算法留待後續單元。",
+    "studyEntry": "想像把座位排成長方形：已知橫列與直行相乘得到總數，現在反過來問，哪兩個多項式相乘能還原這個總數？",
     "sections": [
       {
         "heading": "學習目標",
-        "body": "能從各項共同結構找出因式，完成分解後展開驗證，並判斷答案是否已達完全分解。"
+        "body": "能說明若 A(x)B(x)=P(x)，A、B 是 P 的因式；能檢查候選因式是否存在多項式商，並用乘回確認恆等關係。"
       },
       {
         "heading": "學習流程",
-        "body": "先檢查係數與字母的最大公因式，再依剩餘多項式選擇公式、分組或二次三項式方法，最後反向展開。"
+        "body": "從乘積情境建立因式語意，提出候選因式與商式，再展開或做整除檢查；本課不教授公因式提取、公式分解或十字交乘算法。"
       },
       {
         "heading": "常見錯誤",
-        "body": "不要只提出第一眼看到的因式，也不要把負號遺留在某一項；分解後每個括號仍要檢查能否再拆。"
+        "body": "共享變數或熟悉括號外形不代表因式成立；單一代值可作反例否定候選，但代值相同不能取代完整乘回或除法餘式檢查。"
       }
     ]
   },
   "studyHighlights": [
-    "先找共同因式。",
-    "辨認平方差或完全平方。",
-    "展開驗算分解結果。"
+    "因式是乘積的乘數，倍式是乘積結果。",
+    "候選因式必須配有商式，且乘回等於原多項式。",
+    "反例能排除候選；確認恆等需完整展開或檢查除法餘式。"
   ],
   "studyReferences": [
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
     "https://www.naer.edu.tw/",
-    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf"
+    "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "https://www.scribd.com/document/827691143/國中-數學-基礎自學講義-南一版-八上",
+    "https://www.clearnotebooks.com/zh-TW/notebooks/2684782",
+    "https://resource.hle.com.tw/Books/BooksResource/00-111%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B82%E4%B8%8A%E7%BF%B0%E6%9E%97%E8%A3%9C%E6%95%91GO-%E5%AD%B8%E7%94%A8%28111f397125%29.pdf",
+    "https://www.scribd.com/document/690167202/00-111國中數學2上翰林補救GO-學用-111f397125"
   ],
   "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "A-8-4：因式分解",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "Public course plan identifies Hanlin Book 3 and places the factorization chapter after multiplication and polynomial operations; A-8-4 scope is cross-checked against the official curriculum code",
+      "sourceUrl": "https://fsjh.chc.edu.tw/open_files_download/%262%2699%26100%26113%26115",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開數學影音網提供章節概念、例題、回顧與自評的教學節奏；本課依「A-8-4：因式分解」安排自編表徵、推理、練習、遷移與驗算。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "已核對翰林公立校方公開課程計畫對「A-8-4：因式分解」的章節定位與因式／二次多項式範圍；正文、例題、題目、答案與互動仍為本專案獨立撰寫。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中數學公開教材（因式分解結構研究）",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "公開 XML https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；八上因式分解相關章節入口，僅作結構定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "chapterLocator": "PDF p.2 / extracted lines 74-82; A-8-4 explicitly separates the meaning of a factor and factorization of a quadratic polynomial from A-8-5's three methods",
+      "sourceUrl": "https://www.msjh.tp.edu.tw/uploads/1722920307663FExPXxBD.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "公開資源支持先提出共同因式，再辨認平方差與三項式結構；本課融合為外形辨識、逐層分解與回乘驗證的獨立教學路徑。",
-      "copyrightBoundary": "只研究公開索引與概念方向，不複製教材、影音、題目、答案或圖片；正文、案例與互動均重新創作。"
+      "reviewedAt": "2026-09-20",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "已核對康軒公立校方公開課程計畫對「A-8-4：因式分解」與 A-8-5 方法範圍的分界；正文、例題、題目、答案與互動仍為本專案獨立撰寫。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一版國中數學公開架構交叉索引",
+      "edition": "nani 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "均一公開主題頁 https://www.junyiacademy.org/topics/n-m7a；公開可見之代數式與因式分解前置節點，未取得南一課本全文頁碼",
-      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
+      "chapterLocator": "PDF p.5-6 / extracted lines 409-449, 464-498; A-8-4 defines factor and factorization of a quadratic polynomial, then 3-1 records common-factor and multiplication-formula factorization",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/var/file/0/1000/attach/94/pta_8387_3334951_15515.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
-      "researchScope": ["teaching-sequence", "concept-progression", "assessment-pattern"],
-      "outcome": "公開交叉入口支持由分配律展開反向回到乘積、以代入或展開檢查等值；因資料非出版社全文，本課只採保守定位，不臆測未公開題目。",
-      "copyrightBoundary": "不將平台內容冒稱南一教材，不複製頁面文字、題目、解析或影片；所有正文與互動均原創。"
+      "reviewedAt": "2026-09-20",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "已核對南一公立校方公開課程計畫對「A-8-4：因式的意義、倍式與二次多項式因式分解」的章節定位與後續方法銜接；正文、例題、題目、答案與互動仍為本專案獨立撰寫。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中數學公開教材（單元結構研究）",
-      "sourceType": "local-download",
-      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml",
-      "reviewedAt": "2026-08-29",
+      "publisher": "nani",
+      "edition": "南一版八上數學自學講義公開分享頁（章節3因式分解）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.scribd.com/document/827691143/國中-數學-基礎自學講義-南一版-八上；公開搜尋索引可定位內頁87「因式與倍式的意義」、88「因式分解的意義」及89後續練習。可讀索引呈現整數因數類比、多項式乘積 A=B×C 的因式／倍式方向，並把由乘法表示轉成乘積形式列為因式分解；平台無法直接開啟，故不宣稱核讀完整頁面。",
+      "reviewedAt": "2026-09-27",
       "findings": {
-        "concepts": ["理解因式分解是把多項式改寫成乘積形式的逆向過程", "先找各項共同因式，再判斷是否能繼續分解"],
-        "representations": ["以面積矩形與代數乘積互相轉換，對照邊長與各項面積"],
-        "examplesOrEvidence": ["由矩形總面積反推兩個邊長因式並檢查展開結果"],
-        "misconceptions": ["只提出一個共同因式就停止，沒有確認是否完全分解"],
-        "assessmentEmphasis": ["能說明分解前後兩個表示式為何保持等值"]
+        "concepts": ["頁87的章節定位由整數因數類比轉到非零多項式 A=B×C，明確呈現乘數是因式、乘積是倍式的方向", "頁88把多項式乘法的結果反向改寫為一次式乘積，作為二次式因式分解的意義，而非要求本課先記分解技巧"],
+        "representations": ["以整除語句與乘法等式並列，讓學生在因式、倍式及商式之間讀出關係"],
+        "examplesOrEvidence": ["索引可見頁87-88的主題標題與數的因數／多項式乘積轉換；本課不摘錄其例題、填空或練習"],
+        "misconceptions": ["可能只從整數因數類比判方向，忽略多項式命題需有完整多項式商及等式"],
+        "assessmentEmphasis": ["先標示乘法等式中因式與倍式，再以展開或除法驗證反向表示"]
       },
-      "licenseBoundary": "只取公開來源的概念順序與教學重點；本課文字、例題、提示、互動步驟與答案均重新設計，不重製原教材。"
+      "licenseBoundary": "第三方分享材料非南一官方授權證明；僅抽取概念範圍與教學方向，完全不複製其文字、題目、答案或版面。"
     },
     {
-      "publisher": "nani",
-      "edition": "均一國中數學主題頁（概念與練習路徑研究）",
-      "sourceType": "local-download",
-      "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；本機快取：/private/tmp/tw-junior-version-sources-20260829/math-junyi.html",
-      "reviewedAt": "2026-08-29",
+      "publisher": "kanghsuan",
+      "edition": "康軒八上數學第三冊學生公開筆記（因式與倍式）",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.clearnotebooks.com/zh-TW/notebooks/2684782；114年八上、作者標示康軒第三冊，索引可讀筆記第1-2頁：先以整數整除作類比，再寫多項式除法商式與因式／倍式方向；OCR 有上標、括號及符號失真，僅採無歧義的定義關係。學生自製筆記、非出版社原書，頁面直接開啟遇 cache miss。",
+      "reviewedAt": "2026-09-27",
       "findings": {
-        "concepts": ["以共同因式、乘法公式與分組策略辨認可分解結構", "用展開或代入回查分解結果是否正確"],
-        "representations": ["用逐步提示比較不同分解策略的適用條件"],
-        "examplesOrEvidence": ["比較先提出係數與先提出字母因式的結果"],
-        "misconceptions": ["看到四項就機械分組，卻沒有檢查兩組括號是否一致"],
-        "assessmentEmphasis": ["能指出選擇共同因式或公式的結構證據"]
+        "concepts": ["筆記把整數整除的零餘數直覺接到多項式除法，再以商式表達被除式是除式與商的乘積", "因式／倍式只是同一乘積關係的相反讀法；此學生筆記提供康軒版本脈絡，不證明是康軒官方教法"],
+        "representations": ["整除除法、商式與 A=B×C 乘積等式互相改寫，並標出除式／被除式／商式角色"],
+        "examplesOrEvidence": ["第1-2頁索引有二次式除以一次式及商式的OCR片段；因符號品質不穩，本課不沿用該題或其答案"],
+        "misconceptions": ["OCR 易把上標、括號或除式讀錯；不清晰算式不得拿來核答案或作來源例題"],
+        "assessmentEmphasis": ["用乘積方向及商式辨別因式／倍式，並以完整乘回確認而非只看共享變數"]
       },
-      "licenseBoundary": "只研究公開主題呈現的技能分段與練習邏輯；不複製均一題目、文字、影片或答案，所有任務均重新撰寫。"
+      "licenseBoundary": "學生公開筆記不是出版社官方版本的完整證據；僅作康軒相關學習脈絡的輔助參照，不複製筆記內容。"
     },
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開影音網（章節結構研究）",
-      "sourceType": "local-download",
-      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；本機快取：/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html",
-      "reviewedAt": "2026-08-29",
+      "edition": "翰林版八上數學補救GO學用本（公開分享，111學年度版本）",
+      "sourceType": "public-web",
+      "sourceLocator": "翰林官方資源站公開PDF：https://resource.hle.com.tw/Books/BooksResource/00-111%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B82%E4%B8%8A%E7%BF%B0%E6%9E%97%E8%A3%9C%E6%95%91GO-%E5%AD%B8%E7%94%A8%28111f397125%29.pdf，搜尋索引可見第3章主題1「判別因式與倍式」並定位課本P116隨堂、P117例1；另以第三方分享目錄 https://www.scribd.com/document/690167202/00-111國中數學2上翰林補救GO-學用-111f397125 交叉確認3-1後續才列提公因式、平方差／完全平方，3-2再列十字交乘。官方PDF本輪無法直接擷取頁面，第三方檔標示All Rights Reserved，僅用可見目錄，不取其題目或正文。",
+      "reviewedAt": "2026-09-27",
       "findings": {
-        "concepts": ["由乘法公式與共同因式連結多項式的因式分解方法", "能辨認完全平方、平方差與分組形式的結構"],
-        "representations": ["用公式辨識表與反向展開檢查結果"],
-        "examplesOrEvidence": ["將乘積形式展開後與原多項式逐項對照"],
-        "misconceptions": ["套用平方差時忽略兩項必須都是平方且中間是減號"],
-        "assessmentEmphasis": ["能從多項式外形選擇方法並完成完全分解"]
+        "concepts": ["翰林官方PDF搜尋索引將因式／倍式判別設為補救主題1，對應課本P116隨堂、P117例1；把提單項公因式等列為主題2，提供補救教學分段次序證據", "第三方目錄將平方差、完全平方與十字交乘放在後續主題，與官方課綱 A-8-4／A-8-5 的概念和方法界線一致"],
+        "representations": ["索引以概念名稱及課本隨堂／例題頁定位步驟，但不是可讀教材正文，不能推斷其圖解或逐題教學法"],
+        "examplesOrEvidence": ["官方索引的P116-P117定位及第三方目錄的3-1／3-2次序支持先判別因式再學算法；未讀取並不重建所列例題"],
+        "misconceptions": ["把目錄先後誤當成已讀正文，或把後續算法題型提前塞入本課因式意義"],
+        "assessmentEmphasis": ["來源目錄定位因式／倍式判別為先備概念；本課另要求留下商式與乘回證據，不冒稱來源原題"]
       },
-      "licenseBoundary": "只研究公開章節的概念分層與表徵方向；本課文字、案例、圖示與作答引導均為原創，不重製出版社素材。"
+      "licenseBoundary": "第三方上傳頁標示 All Rights Reserved，非官方授權；只參照其目錄結構與頁碼定位，不摘錄練習、正文、答案或圖像。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["因式分解是將多項式改寫成乘積形式的逆向運算", "共同因式與乘法公式是判斷分解方法的主要依據", "分解完成後必須以展開或代入檢查分解前後的等值性"],
-    "versionDifferences": ["康軒較適合以面積模型建立逆向觀念，讓因式具有幾何意義", "均一較強調策略提示與條件比較，適合處理多種外形", "翰林較集中於公式辨識與反向展開，適合建立方法索引"],
-    "originalAdditions": ["設計矩形面積反推活動，讓學習者先預測因式再用展開驗證", "加入共同因式提出後的完全分解檢查，避免停在未完成的形式", "將外形辨識、策略選擇與證據回查分成三個互動決策點"],
-    "llmSynthesisNote": "本單元先比較三版本的幾何表徵、策略提示與公式辨識，再由 LLM 以原創案例、反例與矩形面積互動重寫因式分解路徑；未複製任何版本的題目、答案或敘述，也未沿用其教材題序。"
+    "commonCore": [
+      "因式是能與另一多項式相乘而得到指定多項式的多項式；倍式方向相反",
+      "因式分解的意義是將多項式改寫為因式乘積，而非本課教授每一種分解算法",
+      "展開候選乘積並逐項核對，是確認因式關係與等值性的直接證據"
+    ],
+    "versionDifferences": [
+      "南一公開分享講義索引把乘積／反向分解與因式分解意義放在本節入口；因平台限制，本次只核對可見索引，不聲稱讀到完整內文",
+      "康軒相關學生筆記以整除、因式與倍式關係作概念入口；它是學生整理，不等同康軒官方教材",
+      "翰林公開補救教材目錄將因式與倍式辨認列於3-1開端，再把提公因式、公式及十字交乘列為後續主題，清楚支持概念與算法分層"
+    ],
+    "originalAdditions": [
+      "用整數整除的熟悉語意作短暫橋接，隨即指出多項式因式必須由多項式乘積或整除關係證成",
+      "以候選式—商式—乘回三欄檢查，分辨只是看起來像括號與真正成立的因式關係",
+      "刻意把提公因式、平方差、和積配對與十字交乘留給後續方法課，避免本課範圍膨脹"
+    ],
+    "llmSynthesisNote": "依官方 A-8-4 課綱範圍與三份公開可取得材料的可核對部分，融合乘積反向表示、因式／倍式方向及候選因式驗證；重新設計郵票矩形與多項式商的教學入口、例證、迷思診斷與互動。南一與康軒材料僅能核對公開分享索引／學生筆記，翰林為第三方分享的補救教材，均非授權或官方完整原書，因此只作概念範圍與編排的有限佐證，不宣稱完成出版社原版全本比讀，lesson 維持 draft。"
   },
   "teaching": {
     "body": [
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "把展開的路倒著走",
-        "body": "操場地墊的面積常先以展開式記錄，設計師卻希望看出可重複的長與寬，這正是因式分解的入口。展開把乘積拆成多個項，因式分解則從多個項找回共同來源。面對 12x³−18x²，先看係數 12、18 的最大公因數是 6，再看兩項都有 x²，於是提出 6x² 得到 6x²（2x−3）。這不是把式子變短而已；括號中的 2x−3 必須乘回去，才能確認係數、字母、次方與正負號都沒有遺失。先問『每一項共有什麼』，再問『括號內是否還能拆』，比背一個固定口訣更能應付不同形式。"
+        "heading": "郵票排成矩形：括號代表什麼？",
+        "body": "設計一張長方形郵票牆，橫向排成 x+2 欄、縱向排成 x+5 列。總格數可先寫成乘積 (x+2)(x+5)，也可逐區相加成 x²+7x+10。這兩種寫法描述同一個數量，但括號不是裝飾：每個因式都代表一個乘數，兩者相乘必須回到原式。從 x²+7x+10 看出乘積形式，稱為因式分解；本課先學「因式關係如何成立、如何驗證」，不先背某種拆法。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "共同因式只是第一道門",
-        "body": "因式分解不是只有一種外形，應先辨認最外層結構再選策略。若每一項都有共同因式，先提出它；例如 8u²−32＝8（u²−4），但括號裡仍是平方差，還要繼續成為 8（u−2）（u＋2）。若首項係數為 1 的三項式 x²＋7x＋12，則尋找乘積為 12、和為 7 的兩數，得到（x＋3）（x＋4）。也要留意 a²−b²＝（a−b）（a＋b）的符號結構，以及完全平方三項式中中間項必須是兩倍乘積。每完成一層，都檢查係數、字母、次方與正負號是否保留，並確認括號內還有沒有可辨認的下一步。"
+        "heading": "因式是乘積裡的角色，不是外觀",
+        "body": "若 A(x)×B(x)=P(x)，就說 A(x)、B(x) 是 P(x) 的因式，而 P(x) 是它們的倍式。例如 (x+2)(x+5)=x²+7x+10，所以 x+2 與 x+5 都是 x²+7x+10 的因式。反過來，看到一個候選括號不能只憑外觀判定；必須找到另一個多項式相乘能還原原式，或用多項式除法得到餘式 0。整數的「12 可被 3 整除」有助於理解方向，但多項式因式關係要檢查整個式子，不是只挑出一個係數。"
       },
       {
         "id": "worked",
         "phase": "worked-example",
-        "heading": "示範：先提出，再看括號內的下一步",
-        "body": "自編例題：完整分解 3y³−12y。兩項共同含有 3y，先提出得到 3y（y²−4）；此時不能因為已經出現乘法就停止，因為括號內仍是平方差。利用 y²−4＝（y−2）（y＋2），最後得到 3y（y−2）（y＋2）。接著由內到外回乘：（y−2）（y＋2）＝y²−4，再乘 3y 得 3y³−12y，原式恢復表示分解正確。若只寫 3y（y²−4），它仍是正確的因式分解，但尚未完全分解；考題若要求最簡或完全分解，這一步差異會影響得分。"
+        "heading": "示範：候選因式要通過乘回檢查",
+        "body": "檢查 x+2 是否為 P(x)=x²+7x+10 的因式。先設 P(x)=(x+2)Q(x)，試 Q(x)=x+5，再逐項相乘：(x+2)(x+5)=x²+5x+2x+10=x²+7x+10，三項係數完全相同，所以 x+2、x+5 都是因式。接著診斷一個容易漏看的錯誤：若猜 x+3 與 x+4 配對，乘回是 (x+3)(x+4)=x²+7x+12；雖然首項與中間項正確，常數 12 不等於原式的 10，因此不是這個多項式的因式分解。這說明只核對部分係數不夠。最後用候選 x+1 示範反例：若它是因式，代 x=−1 時乘積必為0；原式卻得 1−7+10=4，足以排除。確認候選時要提出商式並完整乘回，不能以單一相等代值取代恆等證明。"
       },
       {
         "id": "guided",
         "phase": "guided-practice",
-        "heading": "因式診斷：每一步都要留下來源",
-        "body": "引導練習請把錯誤拆成可以追蹤的證據。判斷三式：① 10z²＋15z＝5z（2z＋3），先確認 5z 是否為最大共同因式；② a²−25＝（a−5）²，展開右式會出現 −10a，與原式不同，表示把平方差誤看成平方；③ 2b²−8＝2（b−2）（b＋2），再乘回可確認正確。接著挑一式拖曳公因式卡，記錄『提出什麼、括號留下什麼、是否還能套公式、回乘是否恢復』四項資料。若停在 2（b²−4），請說明它雖等值卻不是完全分解；若提出負因式，則也要檢查括號符號是否同步改變。答案不只要圈對錯，更要能指出錯在共同因式、公式辨識或回乘驗證哪一站。"
+        "heading": "找出反例：係數相同，不保證是因式",
+        "body": "某同學宣稱 x+1 是 x²+7x+10 的因式，理由是兩式都含有 x。這個理由不成立：因式不是「共享符號」，而是能整除並留下多項式商的乘數。若真是因式，應存在 Q(x) 使 (x+1)Q(x)=x²+7x+10。用 x=−1 檢查：右側為 1−7+10=4，不是 0，因此不可能有 x+1 這個因式（若 x+1 是因式，代 x=−1 必使整個乘積為 0）。另一種驗證是實際做除法並檢查餘式。這個測試只用來否定候選；通過一次代值不能單獨證明兩多項式恆等，仍須完整乘回或除法餘式為 0。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "用排列方式理解乘積",
-        "body": "把因式分解遷移到攤位布幕：某長方形面積的代數式是 6x²＋18x。兩項都含有 6x，因此可改寫為 6x（x＋3）；若 x 表示一個正的尺寸，兩個因式可以連回兩個方向的長度或共同材料單位。令 x＝4，原式為 6×16＋18×4＝168，乘積式為 24×7＝168，兩種表示互相驗證。若後來面積改成 6x²−18x，提出 6x 後括號是 x−3，必須重新檢查 x 的範圍，因為 x 小於 3 時某個幾何長度可能不再合理。因式分解的代數等值永遠成立，但把因式解釋成長度、成本或數量時，還要補上單位與正值限制。"
+        "heading": "把因式視角帶到面積與資料表",
+        "body": "美術教室要排 x+1 排、每排 x+4 張色紙，總張數既可看成 (x+1)(x+4)，也能逐區算成 x²+5x+4。下次看到一個二次多項式，可把它讀成「可能的長×寬」或「兩個多項式的乘積候選」，再用展開核對；情境若把因式解讀為長度，還須檢查長度是否為正，但代數上的因式身分由恆等式決定，不由圖形可不可行決定。這個區分能避免把模型條件誤當成代數真假。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "把完全分解說給別人聽",
-        "body": "自我檢核時，請像驗收一件拆裝完成的作品。第一問：是否先找出所有項的最大共同因式，沒有漏掉數字或變數？第二問：提出後的括號是否仍有平方差、完全平方或三項式結構，是否已達完全分解？第三問：若有負號，符號是否在回乘後全部恢復？第四問：用展開或代入至少一個非特殊值檢查前後等值；若情境涉及面積或長度，再確認因式的單位與正值範圍。請自行設計一個『看似已分解、其實還能再拆』的例子，例如先提出共同因式後留下平方差，並把遺漏的最後一步標出。能說出策略選擇、保留的結構、回乘證據與限制，才表示你理解因式分解是在逆向讀取乘法結構，而不是只把式子改成有括號的樣子。"
+        "heading": "用三個問題說明你的判定",
+        "body": "離開本課前，拿任一候選因式回答：一、我主張哪個多項式是誰的因式？二、另一個因式或商式是什麼？三、完整乘回後是否逐項等於原多項式？若只用某個代入值測試，記得它通常只能排除錯誤候選，不能取代恆等驗證。也請說清楚課程邊界：本課能判讀因式乘積與二次式的分解意義；選擇公因式、平方差、和積配對等演算法，留到後續方法課學習。"
       }
     ],
     "summary": [
@@ -180,69 +207,91 @@
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「因式分解」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "若 (x+2)(x+5)=x²+7x+10，請指出哪兩個式子是因式、哪個是倍式。",
+        "expectedEvidence": "x+2 與 x+5 是因式，x²+7x+10 是倍式。"
       },
       {
-        "prompt": "在「因式分解」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "候選 x+1 能否作為 x²+7x+10 的因式？用 x=−1 檢查。",
+        "expectedEvidence": "原式代入−1得4而不是0，足以否定 x+1 為因式。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「因式分解」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "若候選因式代入某一個值時恰好相等，是否已證明它正確？接著要做什麼？",
+        "expectedEvidence": "否；需提出商式並完整乘回，或做多項式除法確認餘式為0。"
       }
     ]
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
+    "authoringNote": "Original lesson authored from official curriculum scope and limited public-shared-source evidence recorded in versionResearch; source authority and completeness are explicitly limited. No publisher prose, image, exercise, answer, or layout is reproduced. Lesson remains draft pending complete publisher comparison and content review."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-27",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "拖曳共同因式、公式卡與括號，立即同步多項式、乘積、面積分塊與回乘結果，理解因式分解。",
-    "scenario": "你是地墊拼接設計師：拖曳係數與次方卡，讓矩形分塊、展開式與因式乘積即時更新，再判斷是否完全分解並診斷符號或漏步驟。",
+    "goal": "建立候選因式與商式的乘積關係，逐項展開判定是否等於原多項式；本活動不教後續因式分解算法。",
+    "scenario": "你是展場排版檢核員：把候選的橫列數與直行數配成乘積，展開成總格數，再比較候選因式是否真的能還原原多項式。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "地墊邊長或輸入值 x，可拖曳改變並同步驗證等值"
+        "meaning": "代表排數／欄數的代數變數；代值只用作反例診斷，恆等關係仍須展開核對"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "若 A(x)×B(x)=P(x)，A(x) 和 B(x) 與 P(x) 的關係是什麼？",
         "options": [
-          "整理對象、條件、單位與未知量",
-          "直接套用上一題答案",
-          "忽略題目中的限制"
+          "A(x)、B(x) 是 P(x) 的因式，P(x) 是它們的倍式",
+          "P(x) 一定是 A(x) 的因式",
+          "只有常數才能是因式"
         ],
         "answer": "A",
-        "feedback": "先把條件與未知量寫清楚，後續表示與驗算才有依據。"
+        "feedback": "乘積方向要分清：兩個乘數是因式，乘積是它們的倍式。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後，下一步應採取什麼策略？",
+        "prompt": "要確認候選括號真是因式，最可靠的檢查是什麼？",
         "options": [
-          "逐步推理並記錄每一步理由",
-          "只寫最後結果",
-          "改用沒有定義的符號"
+          "找出商式並乘回，逐項確認等於原多項式",
+          "只看兩式是否有相同字母",
+          "只看括號是否整齊"
         ],
         "answer": "A",
-        "feedback": "逐步記錄能讓推理可檢查，也容易定位錯誤。"
+        "feedback": "因式關係要求存在多項式商且乘回等於原式；共享字母不構成證明。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認結論？",
+        "prompt": "代入一個值發現候選等式不相等，可以得到什麼結論？",
         "options": [
-          "回到原條件，以代回、圖形、資料或單位檢查",
-          "只看答案看起來像不像",
-          "跳過範圍與邊界檢查"
+          "這個候選恆等式不成立，可排除該候選",
+          "因式候選必定正確",
+          "已證明所有其他候選都正確"
         ],
         "answer": "A",
-        "feedback": "用原條件和可重現證據核對，才能確認答案適用。"
+        "feedback": "一個反例足以否定恆等式；但單一代值相等通常不能證明恆等，應完整展開或除法驗餘式。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "候選 x+1 是 x²+7x+10 的因式嗎？代入 x=−1 可如何判斷？",
+        "options": [
+          "不是；原式代入 −1 得 4，若 x+1 是因式則乘積在 −1 應為 0",
+          "是；因為原式有 x，所以任何含 x 的一次式都是因式",
+          "無法排除；任選一值不等仍可稱恆等"
+        ],
+        "answer": "A",
+        "feedback": "代值不等已構成反例，故 x+1 不是因式。若代值相等，仍要用完整展開或除法確認。"
+      },
+      {
+        "id": "step-5",
+        "prompt": "有人把 x²+7x+10 配成 (x+3)(x+4)，只核對首項和中間項就說正確。哪個係數揭露錯誤？",
+        "options": [
+          "常數項是 12，不是 10，乘積不等於原式",
+          "中間項是 6x，不是 7x",
+          "二次項是 7x²，不是 x²"
+        ],
+        "answer": "A",
+        "feedback": "交叉乘積 4x+3x=7x 沒錯，但 3×4=12；完整相等要逐項核對，任一係數不符就不是該式的因式分解。"
       }
     ]
   },
@@ -252,8 +301,8 @@
     "engine": "math-algebra-balance",
     "mode": "model",
     "model": "general",
-    "goal": "拖曳共同因式、公式卡與括號，立即同步多項式、乘積、面積分塊與回乘結果，理解因式分解。",
-    "mission": "你是地墊拼接設計師：拖曳係數與次方卡，讓矩形分塊、展開式與因式乘積即時更新，再判斷是否完全分解並診斷符號或漏步驟。",
+    "goal": "建立候選因式與商式的乘積關係，逐項展開判定是否等於原多項式；本活動不教授後續因式分解算法。",
+    "mission": "你是展場排版檢核員：提出候選橫列數與直行數，將其相乘還原總格數，再判定該候選因式是否成立。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
@@ -262,14 +311,45 @@
     ],
     "learningDesign": {
       "type": "representation-match",
-      "objective": "拖曳共同因式、公式卡與常數配對，讓矩形分塊、展開式、因式乘積與回乘數值立即同步，並透過單一變因觀察、解釋完全分解與錯誤分流。",
-      "predictionPrompt": "先拖曳面積模型（x＋4）（x＋2），預測四塊面積如何合併；再只改中間係數，預測 x²＋6x＋8 能否仍分解成兩個整係數因式。",
-      "evidencePrompt": "提交兩組只改一個參數的面積分塊、因式卡、展開式與回乘數值；再連結一題會考型因式分解，解釋共同因式漏提、平方差誤判或只看外觀的錯誤分流。",
+      "objective": "對指定多項式提出因式與商式，展開乘積逐項比較；以反例否定錯誤候選，並說明代值相等不構成恆等證明。",
+      "predictionPrompt": "已知座位排成 (x＋2) 排、每排 (x＋5) 席，預測總數多項式；再判斷 x＋1 能否作為 x²＋7x＋10 的因式。",
+      "evidencePrompt": "提交因式候選、商式與乘回展開；錯誤候選以反例排除，正確候選需完整乘積恆等證據。",
       "steps": [
-        {"id":"step-1","action":"拖曳長寬參數 x、4、2，把面積模型分成四塊，觀察圖形、表格與展開式同步更新","equation":"(x＋4)(x＋2)＝x²＋2x＋4x＋8","reason":"長為 x＋4、寬為 x＋2 的矩形可分成四塊，每一塊都代表面積的一部分；改變 x 會改變數值但不改變分配結構。","feedback":"若少掉交叉項，錯誤分流指出面積分塊未完成；請逐格檢查 x×x、x×2、4×x、4×2。"},
-        {"id":"step-2","action":"只拖曳同類項卡，把 2x 與 4x 合併，觀察係數表與標準式即時改變","equation":"x²＋2x＋4x＋8＝x²＋6x＋8","reason":"2x 與 4x 的字母和次方相同，才能合併；乘積變多項式是展開，多項式改寫成乘積才是因式分解。","feedback":"若把 x² 與 x 合併，系統標記次方不同；請把二次項、一次項與常數分開。"},
-        {"id":"step-3","action":"拖曳常數配對卡反向分解，固定 x 後用回乘鍵觀察因式與多項式同步對照","equation":"x²＋6x＋8＝(x＋2)(x＋4)；重新展開仍得 x²＋6x＋8","reason":"兩常數的和須為 6、積須為 8；同時符合兩個條件才是合理配對，回乘能檢查符號與常數沒有錯。","feedback":"若只看加總或只寫出因式不回乘，錯誤分流會要求重新檢查乘積條件；不能以外觀判定分解正確。"},
-        {"id":"step-4","action":"把會考型因式分解式拖入共同因式、平方差或三項式區，並以新 x 值驗證分類","equation":"4x²−36＝4(x²−9)＝4(x−3)(x＋3)","reason":"先提出共同因式後仍要查看括號內結構；會考題常檢查是否完全分解，而不是只做到第一層。","feedback":"若停在 4(x²−9)，系統標記尚可繼續的平方差；若寫成 4(x−3)²，則分流指出平方差符號錯誤。"}
+        {
+          "id": "step-1",
+          "action": "輸入座位列數 x＋2 與每列席數 x＋5，先讀取乘積模型",
+          "equation": "(x＋2)(x＋5)",
+          "reason": "兩個因式分別表示相乘的兩個數量，乘積表示總席數。",
+          "feedback": "不要先選算法；先確認題目中的兩個乘數及其乘積代表什麼。"
+        },
+        {
+          "id": "step-2",
+          "action": "逐項展開乘積並合併中間項，輸入總數的多項式形式",
+          "equation": "(x＋2)(x＋5)＝x²＋7x＋10",
+          "reason": "分配律得到 x²、5x、2x、10；兩個一次項合併為7x。",
+          "feedback": "分別核對二次項、中間項與常數，漏掉任一乘積項便不等價。"
+        },
+        {
+          "id": "step-3",
+          "action": "提出候選因式 x＋2 與商式 x＋5，執行乘回逐項核對",
+          "equation": "(x＋2)(x＋5)＝x²＋7x＋10",
+          "reason": "乘回完整還原原式，證明候選因式及商式成立。",
+          "feedback": "若展開不等，候選即不成立；不能只依括號外觀或共同字母判斷。"
+        },
+        {
+          "id": "step-4",
+          "action": "測試錯誤候選 x＋1：代入 x=-1，將原式值與因式乘積必為零的條件比較",
+          "equation": "(-1)²＋7(-1)＋10＝4≠0",
+          "reason": "一個反例足以否定 x＋1 是因式；反之代值相等仍需完整乘回或除法餘式驗證。",
+          "feedback": "代值不等就排除；若代值相等，不可直接判正確，請返回商式和恆等乘積檢查。"
+        },
+        {
+          "id": "step-5",
+          "action": "檢查錯誤候選 (x＋3)(x＋4)，逐項比對常數項",
+          "equation": "(x＋3)(x＋4)＝x²＋7x＋12≠x²＋7x＋10",
+          "reason": "交叉項雖同為7x，常數項12與原式10不符，故候選配對失敗。",
+          "feedback": "乘回檢查須核對每一項；首項和中間項吻合仍不足以證明是因式分解。"
+        }
       ]
     }
   }

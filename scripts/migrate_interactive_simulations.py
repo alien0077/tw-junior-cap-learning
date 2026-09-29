@@ -36,6 +36,12 @@ def code_for(lesson: dict) -> str:
 
 
 def engine_for(lesson: dict, code: str) -> tuple[str, str, str]:
+    if lesson["subject"] == "math" and code == "s-9-13":
+        return "math-geometry", "model", "s9-13-prism-surface-volume"
+    if lesson["subject"] == "math" and code == "a-7-6":
+        return "math-system-graph", "model", "general"
+    if lesson["subject"] == "math" and code == "a-7-7":
+        return "math-inequality-range", "model", "general"
     # Some supplemental lessons have a thematic lessonScope while still pointing
     # at a teachable leaf KG code.  The code, not the display scope, decides
     # whether a concrete model is appropriate.

@@ -1,0 +1,147 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-11
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-11
+  title: 5-Ⅳ-11：閱讀填寫簡單表格資料
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-11：閱讀填寫簡單表格資料
+    curriculumIntent: 5-Ⅳ-11：閱讀填寫簡單表格資料
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以官方課綱手冊細分的讀懂欄位、理解表單目的及依指示填答為核心；出版社證據限於可直接核讀的官方公開資源，不把工具介紹或校方課程計畫冒稱課本全文
+    currentEvidenceStatus: original-fusion-manuscript-written; hanlin-reading-strategy-resource-read; knsh-reading-tool-description-read; nani-resource-catalogue-only; user-chatgpt-review-pending
+  learningGoals:
+  - 解讀常見表格欄名、主要詞句及表格／資料的用途和所需回應
+  - 回到公告或短文定位對應欄位的答案，分清同列相近資訊及條件限制
+  - 依要求填入正確字詞或簡單完整句子，並逐格核查來源和格式
+  prerequisites:
+  - 能讀懂國中階段常見英語詞句及簡短公告
+  - 能辨認日期、時間、地點、姓名等常用資訊
+  coreConcepts:
+  - 欄名／表單目的決定該格所需資訊與回應形式
+  - 表格資料須對回原文或資料來源，避免跨欄跨列錯配
+  - 字詞格與句子格要求不同的英文作答格式
+  misconceptions:
+  - 把活動整場開放時間填成所選子活動的開始時間
+  - 把公告提到的任何數字／詞語直接抄進表格，不先讀欄位標籤
+  - 欄位要求簡單完整句子，卻只填片語；或自行猜填來源未提供的個資
+  contentFlow:
+  - 'predict: 從公告資訊與報名表目的，先預測表格各欄需要何種資料，而非抄錄所有數字'
+  - 'manipulate: 依欄名將公告來源逐項配對到資料欄，並按欄位要求切換字詞或完整簡句格式'
+  - 'observe: 比較整場開放時間與個別工作坊時間等相似資料，觀察表單標籤如何限定答案'
+  - 'explain: 指出公告中的來源定位和欄位標籤如何共同支持填答，並說明為何不能猜填未提供個資'
+  - 'transfer: 將欄位—來源—格式方法遷移至志工登記表，依新表目的重新判斷而非照搬答案'
+  - 'exit-ticket: 逐格查核來源、欄位和填答格式'
+  visualizations:
+  - 以純文字公告和表單重現非連續文本；對應高亮資料位置、欄位標籤及填答格式
+  - 不使用顏色作為唯一的欄位對照或正誤資訊
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-11-I01
+    component: GuidedChoiceBlock
+    purpose: 從公告將正確活動、時間、攜帶物及個人回應填入相符欄位
+    initialState:
+      showAnswer: false
+      selectedEvidence: []
+    studentActions:
+    - 讀欄位標籤並選擇表單期待的資料類型
+    - 回公告定位答案，分辨整場時段與單項工作坊時間
+    - 依欄位要求選填字詞、時間或完整個人理由句
+    - 透過錯答提示重試，再讀答案解析及來源定位理由
+    visualRules:
+    - 每一題均同時呈現欄位要求、可定位的公告資料與答案解析
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-11-I01
+      trigger: 把活動整場開放時間當作所選工作坊開始時間
+      prompt: 先指出表單問的是整場時段還是該工作坊開始時間，再回公告定位。
+      expectedEvidence: 分清3:20–4:10整場時段與3:25單場工作坊時間
+    feedback:
+      correct: 說明答案在公告中的位置，並指出它如何符合欄位要求。
+      incorrect: 提醒先看欄名與時間單位，再找同一活動列的資訊；重試後顯示解析。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 GuidedChoice 的鍵盤操作、明確標籤與回饋區依可及性原則設計；公告、表格、題目皆為原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "學生頁使用標題、題目區與即時回饋提供清楚結構；教材資料留於 JSON 資料層，不硬編碼 UI。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-11：閱讀填寫簡單表格資料」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-11：閱讀填寫簡單表格資料」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 非連續文本資訊定位、欄位配對及依格式填答
+    stemConstraint: 提供原創短公告和表格，至少一題區分相近時間或不同資料類型
+    requiredResponse: 選欄位答案並指出來源位置及格式符合點
+    scoring: 欄位理解 1、來源定位 1、填答格式正確 1
+  exitTicket:
+    prompt: 完成表格後，怎樣證明答案進了正確欄位且符合原文和作答格式？
+    successCriteria:
+    - 說明欄位標籤需要哪類資料
+    - 指出公告或短文的來源位置
+    - 核對時間、欄位及完整句格式
+  expressionExtension:
+    applicable: true
+    task: 依表格最後一欄指示，用一至兩句英文提供個人偏好或理由
+    constraint: 理由須由學生自行表達，並符合欄位指定的字數及句子形式
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始載入不洩漏答案；四題均提供答案、來源定位、解析及錯答提示。
+  - 所選工作坊與時間須從同一筆公告資訊配對，不可把整場時段填入分場時間欄。
+  - 誤選整場時段時命中本課迷思提示，學生辨認欄名後可重試，再取得完整解析。
+  - 320px、375px、768px 題幹、選項及回饋不溢位，鍵盤可完成所有步驟。
+  - 圖書館志工新情境要求填寫不同資料表，且不得猜填來源未提供的個資。
+  - 外部網路失效時，本地公告、表單及四步練習仍可完成，不阻塞 lesson。
+  - Fallback：刻意阻擋 simulations.js 後，本地公告和四步表格判讀仍可鍵盤完成、錯答重試並讀取解析；不依賴外部服務。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 版本來源限制已如實註記；不得把目錄、工具介紹或課程計畫冒稱指定課本正文
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 融合稿件紀錄及學生頁互動一致；lesson 內容審查由使用者另以 ChatGPT 執行，不屬 Codex gate
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/2075/%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E6%89%8B%E5%86%8A.pdf
+    locator: 英語文課程手冊 PDF 第 99 頁；5-Ⅳ-11-1 至 5-Ⅳ-11-3 子能力：理解表格詞句、理解用途與所需回應／欄位、依要求填字詞或簡單正確句子
+    role: official-curriculum-source-of-truth
+  - url: https://hanlindigi.hle.com.tw/widget/2/123?subject=9
+    locator: 官方翰林國中英語閱讀神策略資源頁；辨識主題及課前／中／後提問，非指定本課課本正文
+    role: publisher-public-resource-method-reference
+  - url: https://aiteach.knsh.com.tw/enreading/
+    locator: 官方康軒 AI 英語閱讀設定頁；年級／冊次／體裁／篇幅參數，工具介紹非本課教材內容
+    role: publisher-public-resource-method-reference
+  - url: https://tpack.nani.com.tw/nani_list?b=2&page=3
+    locator: 南一官方國中資源目錄列出英語閱讀／AI 出題資源；僅目錄資訊，無指定課次正文可核讀
+    role: publisher-public-resource-catalogue-locator

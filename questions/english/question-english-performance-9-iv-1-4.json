@@ -2,23 +2,23 @@
   "id": "question-english-performance-9-iv-1-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「9-Ⅳ-1／依資訊推論」task, what is the best way to prepare question 4?",
+  "prompt": "A message says, 'The report is due tomorrow. Could you send me your section tonight so I can combine the pages?' What does the writer want?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 9-Ⅳ-1／依資訊推論."
+      "text": "The writer wants the section tonight to assemble the report"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 9-Ⅳ-1／依資訊推論."
+      "text": "The writer wants to cancel the report"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 9-Ⅳ-1／依資訊推論."
+      "text": "The writer wants a new school subject"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 9-Ⅳ-1／依資訊推論."
+      "text": "The writer wants the recipient to delete every page"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,48 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 9-Ⅳ-1／依資訊推論, question 4."
+    "explanation": "答案A。作者先指出報告明天截止，再請對方今晚傳來負責部分，並說明要合併頁面；截止時間與工作目的共同顯示作者想今晚收到內容以完成整份報告。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "Public-school English assessment materials; this item studies inference from notices, charts, messages, context, and multiple evidence only and does not reproduce an original question, option, image, or text.",
+    "authoringNote": "Written independently from the official English curriculum KG and three public-school English assessment sources; information sets, options, explanations, and transfer tasks are original; pending second-round AI/Terra content review."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-9-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-performance-9-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅取資訊推論的因果、趨勢、隱含意圖、情緒、比較、負面證據與多來源整合能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "inference from notices, data, context, and multiple clues",
+      "observedPattern": "公開英文評量常要求從公告、表格、對話與多個線索推論未明說原因、目的、情緒、趨勢或合理結論，並區分證據與過度推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取資訊推論的因果、趨勢、隱含意圖、情緒、比較、負面證據與多來源整合能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "reading information and drawing supported inferences",
+      "observedPattern": "公開英文評量常要求從公告、表格、對話與多個線索推論未明說原因、目的、情緒、趨勢或合理結論，並區分證據與過度推論；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "讀出請求句中的時間要求，再用作者明說的目的核對，不只抓send一字。",
+  "solutionSteps": [
+    "定位請求：Could you send me your section tonight? 對方被要求今晚傳送負責的段落。",
+    "找目的子句：so I can combine the pages，作者要把各部分合併。",
+    "選A：作者想今晚拿到該段以便組成報告。",
+    "其他選項的取消、換科目或刪除頁面都與明示目的相反或無關。",
+    "處理訊息意圖題時，把請求、期限和because／so等目的線索連起來。"
+  ]
 }

@@ -1,0 +1,75 @@
+{
+  "reportId": "a7-3-substantive-fusion-d327",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-3",
+  "curriculumId": "cur-math-content-a-7-3",
+  "knowledgeGraphId": "kg-math-content-a-7-3",
+  "status": "source-mapped-original-fusion-draft",
+  "fusionClassification": "one-hanlin-labeled-third-party-textbook-share-led-original-synthesis; publisher-body-coverage-incomplete",
+  "sourceComparison": [
+    {
+      "sourceFamily": "Hanlin-labeled textbook scan/OCR shared on Scribd",
+      "locator": "https://www.scribd.com/document/831294508/翰林國中數學七上課本; section 3-2 textbook pp.170-183; equality-axiom/transposition side-by-side pp.176-177; parentheses/fraction equations pp.178-180; application sequence pp.184-188",
+      "read": "The visible pages compare equality-preserving operations with transposition shorthand, proceed through equations with unknowns on both sides and parentheses/fractions, and present application solving as define an unknown, form an equation, solve, then answer in context. The scan also cautions that a numerical result may fail contextual constraints.",
+      "fusionDecision": "Use the contrast in methods to teach why shorthand preserves equality; connect clearing denominators to every term and parenthesized expression; close applications with substitution and contextual admissibility. All lesson examples, values, wording, and feedback are newly authored.",
+      "limits": "Third-party scan/OCR, not publisher-authenticated. Scribd identifies All Rights Reserved; uploader identity, edition authenticity, upload authority, and reuse rights are unverified. This is one version-labeled readable source, not verified Hanlin publisher coverage."
+    },
+    {
+      "sourceFamily": "Nani-aligned public course crosswalk",
+      "locator": "https://www.junyiacademy.org/topics/n-m7a-c03-2; visible topic/page mapping for 3-2, textbook pp.182-185",
+      "read": "The platform labels the material Nani-aligned and lists equation formation/meaning, solution checking, and a later equality-property/transposition topic; linked teaching body was not retrieved in this pass.",
+      "fusionDecision": "Use only as a course-sequence/page cross-check; do not attribute textbook explanations, examples, or pedagogy to Nani.",
+      "limits": "Third-party course map, not Nani publisher text; body not read."
+    },
+    {
+      "sourceFamily": "Kanghsuan-aligned course map, official resource index, and public school curriculum plan",
+      "locator": "https://www.junyiacademy.org/topics/k-m7a-c03-2; Kanghsuan public teaching-video index CH3-3; Nan-kang Junior High public curriculum plan p.1",
+      "read": "These materials provide chapter/topic labels, sequence cues, or school pacing and outcomes, but not readable Kanghsuan textbook chapter prose for this lesson.",
+      "fusionDecision": "Use only to check unit boundaries and broad learning sequence; do not present school pacing or video-index metadata as publisher-authored teaching content.",
+      "limits": "No Kanghsuan textbook body was read; school plan and indexes are not substitutes for publisher chapter evidence."
+    }
+  ],
+  "synthesisTrace": [
+    {
+      "sourceInsight": "The readable share explicitly juxtaposes equality-preserving operations and transposition shorthand.",
+      "lessonLocation": "content.sections[1] and teaching.body",
+      "originalDecision": "Use a new equation with new coefficients to align the two solution paths line by line, showing that transposition abbreviates applying the same operation to both sides; then contrast an equation with unknowns on both sides."
+    },
+    {
+      "sourceInsight": "The source advances to parentheses and fraction equations after basic transformations.",
+      "lessonLocation": "content.sections[2], misconceptions, and guided practice",
+      "originalDecision": "Teach multiplying every term on both sides by a common denominator, distributing through every parenthesis term, simplifying, and substituting the result into the original equation. The example and coefficients are original."
+    },
+    {
+      "sourceInsight": "The readable application pages organize work from unknown definition and equation formation through solution and contextual response, including checking whether a result fits the situation.",
+      "lessonLocation": "content.sections[0] and [2], application activity, and self-check",
+      "originalDecision": "Build an original fixed-fee model, distinguish per-item from one-time quantities, verify by substitution, and interpret units and integer/domain constraints before answering."
+    },
+    {
+      "sourceInsight": "Nani-/Kanghsuan-aligned maps and school plans are structural corroboration but not readable publisher chapter bodies.",
+      "lessonLocation": "versionResearch, publisherResearch, and fusedScope evidence status",
+      "originalDecision": "Limit claims to course sequence cross-checks; keep all publisher evidence slots pending and the lesson draft."
+    }
+  ],
+  "gates": {
+    "originalVisibleLessonSections": "rewritten with unit-specific explanations, worked steps, and contextual checks",
+    "sourceToDesignTrace": "recorded at source, lesson-location, and original-decision granularity",
+    "naniPublisherTextbookBody": "not read",
+    "kanghsuanPublisherTextbookBody": "not read",
+    "hanlinPublisherAuthenticityAndReuseRights": "unverified third-party share",
+    "publisherEvidenceSlots": "pending",
+    "lessonReviewStatus": "draft",
+    "implementationSpecQaStatus": "untested; structural validation pending",
+    "contentReview": "pending",
+    "commitPush": "not performed"
+  },
+  "validation": {
+    "jsonParsing": "PASS: lesson, report, and project-state JSON parse; unit spec YAML parsed and evidence assertions passed",
+    "targetedRegression": "PASS: npm test includes math-a-7-3-substantive-fusion.test.mjs, asserting all three visible sections, source page locators, trace completeness, and draft/pending gates",
+    "fullRuntimeSuite": "PASS: npm test; workbench full bundle traversal rendered 1,027/1,027 lessons",
+    "dataAndSpecValidation": "PASS: validate_data.py validated 14,448 JSON files, 13,111 IDs, 1,032 KG nodes; validate_implementation_specs.py reported 1,027 specs, 0 errors, 1,027 pending",
+    "strictLessonIndependence": "PASS: 614 lessons inspected, 0 risks, 0 strict failures",
+    "diffCheck": "PASS: git diff --check",
+    "browserAndAccessibility": "not rerun; no runtime code changed"
+  }
+}

@@ -1,0 +1,33 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics s-IV-2."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/math/lesson-math-performance-s-iv-2.json"
+REPORT = ROOT / "implementation/reports/math-performance-s-iv-2-first-pass-review.json"
+URLS = {
+    "nani": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf",
+    "kanghsuan": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+    "hanlin": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+}
+
+def record(p, c, r, m, a):
+    return {"publisher":p,"edition":f"{p} 公立校方數學課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；角、多邊形內外角的概念、表徵及評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以角的分割、三角形和與多邊形邊數推導內外角關係。"],"representations":[r],"examplesOrEvidence":["本課的紙風車、地磚與展場圍欄均為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+
+def main():
+    d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-math-performance-s-iv-2" and d["reviewStatus"]=="draft"
+    d["title"]="s-Ⅳ-2：用分割與轉向理解多邊形角度"
+    d["content"]={"summary":"角度可以由兩條射線的共同端點定義，也可以透過分割圖形轉成較熟悉的三角形。n 邊多邊形的內角和為 (n−2)×180°，凸多邊形每個頂點的內角與外角若成線性對，和為 180°；若沿邊界同方向轉一圈，外角總和則為 360°。本課從紙風車、地磚與展場圍欄的自編情境出發，練習辨認角的種類、推導內角和、處理正多邊形與外角，並檢查圖形是否真的符合條件。","sections":[{"heading":"角由射線與端點決定","body":"先確認頂點與兩條邊，再讀取角的標記與方向。角度大小與圖形畫得大或小無關，不能用紙面長度代替角度量。"},{"heading":"把多邊形切成三角形","body":"從一個頂點向其餘非相鄰頂點連對角線，可把 n 邊凸多邊形分成 n−2 個三角形，因此內角和為 (n−2)×180°。"},{"heading":"內角與外角的兩種總和","body":"每個頂點的內角與相鄰外角形成平角；沿凸多邊形外框轉一圈，轉向量總和是 360°。要先說清楚外角的定義與方向。"},{"heading":"正多邊形才可平均分配","body":"正 n 邊形的各內角相等、各外角也相等，才能用總和除以 n。一般多邊形不能把內角和平均分配，除非題目給出等角條件。"}]}
+    d["studyHighlights"]=["先標出頂點、兩射線與角的方向。","用對角線分割三角形推導多邊形內角和。","分清每頂點的外角與繞一圈的外角總和。","只有正多邊形或等角條件才能平均分配角度。"]
+    d["teaching"]={"body":[{"id":"hook","phase":"hook","heading":"紙風車的尖角怎麼比較？","body":"原創紙風車由不同邊數的凸多邊形折成，請學習者先找出每個頂點的內角與外角，再比較圖形大小改變是否會改變角度。接著從一個頂點畫對角線，觀察四邊形、五邊形如何拆成三角形，讓角度總和的來源可見。"},{"id":"explain","phase":"explain","heading":"由三角形推出內角和","body":"先把四邊形分成 2 個三角形、五邊形分成 3 個三角形，再歸納 n 邊形可分成 n−2 個三角形，得到 (n−2)×180°。每一步標出不能連到相鄰頂點的原因，避免誤數成 n 個三角形。"},{"id":"worked-example","phase":"worked-example","heading":"求正八邊形的內外角","body":"正八邊形內角和為 (8−2)×180°=1080°，因為各角相等，每個內角為 135°；相鄰外角與內角成平角，所以每個外角為 45°，八個外角總和為 360°。最後檢查兩種總和是否一致。"},{"id":"guided-practice","phase":"guided-practice","heading":"判斷能否平均分角","body":"提供一般六邊形、正六邊形與一個只知道內角和的六邊形。學習者先判斷是否有等角條件，再決定能否把內角和除以 6；對錯誤的平均，要求用一個不等角反例說明，並在圖上標出哪些角可以相等、哪些角仍沒有證據，讓平均分配的條件可由圖形與文字重做。"},{"id":"transfer","phase":"transfer","heading":"用地磚安排轉向","body":"原創地磚邊界要求設計五邊形展區，先用內角和檢查五個轉角是否可能，再用外角 360°理解沿邊界走一圈的總轉向。若邊長改變但邊數和角條件不變，說明哪些角度結論仍成立。"},{"id":"reflect","phase":"reflect","heading":"修正兩個外角混淆","body":"請修正『正八邊形每個外角是 360°』與『內角和除以邊數適用所有八邊形』。前者是把總和當單角，後者忽略正多邊形條件；用 45°、135°與不等角反例寫出完整理由。"}],"summary":["角由頂點與兩條射線決定，大小不由圖形畫面比例決定。","n 邊凸多邊形可分成 n−2 個三角形，內角和為 (n−2)×180°。","每頂點外角和內角成平角，沿凸多邊形一圈外角總和為 360°。","只有等角或正多邊形才能把總和平均分配。"],"exitCheck":[{"prompt":"為什麼 n 邊凸多邊形的內角和是 (n−2)×180°？","expectedEvidence":"從一個頂點可分成 n−2 個三角形，每個三角形內角和 180°。"},{"prompt":"正八邊形每個內角與外角各是多少？","expectedEvidence":"內角和 1080°，每個內角 135°；外角為 180−135=45°，八個外角合計 360°。"},{"prompt":"為什麼一般六邊形不能直接把內角和除以 6？","expectedEvidence":"一般六邊形未必等角，除非題目另外給正六邊形或等角條件。"}]}
+    d["interactive"]={"type":"guided-choice","goal":"由三角形分割、內外角關係與正多邊形條件求角度。","scenario":"調整多邊形邊數與是否等角，觀察內角和、單角與外角總和的差異。","variables":[{"symbol":"n","meaning":"多邊形的邊數"},{"symbol":"a","meaning":"單一內角或外角"},{"symbol":"t","meaning":"分割出的三角形數量"}],"steps":[{"id":"step-1","prompt":"五邊形從一個頂點分割成幾個三角形？","options":["3 個","5 個","2 個"],"answer":"A","feedback":"分割數為 n−2，所以五邊形得到 3 個三角形。"},{"id":"step-2","prompt":"正八邊形的每個外角是多少？","options":["45°","360°","135°"],"answer":"A","feedback":"凸多邊形外角總和 360°，正八邊形各外角相等，故 360÷8=45°。"},{"id":"step-3","prompt":"何時可以把內角和除以邊數求單角？","options":["有正多邊形或等角條件","任何多邊形都可以","只要圖形畫得對稱"],"answer":"A","feedback":"平均分配需要各內角相等的條件，不能只靠外觀。"}]}
+    d["authoringStandard"]="version-fused-v1"
+    d["versionResearch"]=[record("nani","以角的定義、多邊形內角和與三角形分割建立推理","角標記、對角線分割與內角和公式互換","把邊數直接乘 180 或把單角平均套到一般多邊形","要求說明分割數、公式來源與等角條件"),record("kanghsuan","透過紙模型與操作比較內角、外角及轉向","紙風車、地磚、線段轉向與角度標記","混淆單一外角和外角總和，或忽略方向","重視圖形操作、符號讀取與結果檢核"),record("hanlin","連結正多邊形、設計邊界與繞行轉向","正多邊形、展場圍欄、單位與外角 360°","只看圖形對稱外觀未確認等角條件","評估模型、角度總和、條件與實際設計限制")]
+    d["fusionRecord"]={"commonCore":["三版本公開結構共同支持由三角形分割推導多邊形內角和。","內外角關係、外角總和與正多邊形等角條件是共同核心。","圖形標記、轉向、邊數與條件檢查需要互相驗證。"],"versionDifferences":["南一證據較突顯角與多邊形內角和；康軒較突顯紙模型、外角與轉向操作；翰林較突顯正多邊形及設計邊界情境。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以紙風車和對角線分割讓內角和公式可觀察。","以正八邊形同時檢查單一內角、外角與總和。","把一般與正多邊形的條件差異、反例與地磚轉向整合成互動任務。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織角定義、多邊形內外角、三角形分割、正多邊形與設計情境。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit":"s-Ⅳ-2：用分割與轉向理解多邊形角度","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+
+if __name__ == "__main__": main()

@@ -14,7 +14,7 @@
     "summary": "本課聚焦「地球的歷史」，以自編範例練習概念、證據與新情境遷移。",
     "sections": [
       {
-      "heading": "學習目標",
+        "heading": "學習目標",
         "body": "能用地層、化石、切割關係與不整合面重建地質事件先後，並分辨觀察、推論與證據限制。"
       },
       {
@@ -48,7 +48,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "操作地層剖面中的疊覆、切割、化石對比與不整合證據，重建地質事件先後並標示推論限制。",
@@ -92,6 +92,17 @@
         ],
         "answer": "A",
         "feedback": "古環境是由多項線索支持的推論，時間與空間範圍及資料缺口都要保留。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "若剖面中出現侵蝕面與缺失層，時間線要如何修正？",
+        "options": [
+          "標出不整合代表沉積中斷或侵蝕，並用上下層、化石與測年資料說明缺口範圍",
+          "把缺失層補成與上下岩層同樣厚度，直接當成連續沉積",
+          "只依目前地表高度把缺失層排在最晚"
+        ],
+        "answer": "A",
+        "feedback": "不整合是地質歷史中的缺口，不是可以任意補齊的空白；結論要保留未觀察到的時間。"
       }
     ]
   },
@@ -99,45 +110,55 @@
   "lessonScope": "theme",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "H：地球的歷史；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；H：地球的歷史 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「地球的歷史」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為theme節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「H：地球的歷史」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；H：地球的歷史 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「H：地球的歷史」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與公開資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "地球的歷史；地層、化石、地質事件與地質年代方向定位",
-      "sourceUrl": "https://course.cyc.edu.tw/upfile/course109/sub1/14507919853792884.pdf",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；H：地球的歷史 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%95%8B%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "公開課程計畫支持以地層、化石與地質年代理解地球演變；本課補入相對年代、古環境推論與不整合面的證據限制。",
-      "copyrightBoundary": "只採公開課程計畫的單元定位與教學方向；未取得完整課本、習作或教師用書，本文不複製或改寫其受保護內容。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開產品資訊與課程索引",
-      "subject": "science",
-      "chapterLocator": "地球歷史與地質作用相關單元；公開產品結構定位",
-      "sourceUrl": "https://books.hanlin.com.tw/productall",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "公開索引支持以地層剖面、化石與時間尺度整合觀察與推理；本課自創可操作的地層證據工作台。",
-      "copyrightBoundary": "只研究公開產品結構與單元方向；不複製課文、插圖、習作、題目、答案或教師用內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「H：地球的歷史」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -146,8 +167,25 @@
       "edition": "南一版國中自然公開課程計畫與公開資源",
       "sourceType": "public-web",
       "sourceLocator": "https://course.cyc.edu.tw/upfile/course109/sub1/14507919853792884.pdf；地球的歷史單元定位",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["以地層、化石與地質年代證據重建地球演變及地質事件先後，並說明證據的適用範圍", "相對年代先建立事件順序，再以更多資料討論時間尺度與不確定性"], "representations": ["用地層剖面、化石分布與事件時間線表示先後關係"], "examplesOrEvidence": ["公開課程計畫可定位單元方向；本課以自編露頭資料補足證據判讀"], "misconceptions": ["把課程索引當成完整教材，或把相對年代誤當成精確年數"], "assessmentEmphasis": ["由疊覆、切割與化石證據判斷地質事件，而非只看關鍵字"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "以地層、化石與地質年代證據重建地球演變及地質事件先後，並說明證據的適用範圍",
+          "相對年代先建立事件順序，再以更多資料討論時間尺度與不確定性"
+        ],
+        "representations": [
+          "用地層剖面、化石分布與事件時間線表示先後關係"
+        ],
+        "examplesOrEvidence": [
+          "公開課程計畫可定位單元方向；本課以自編露頭資料補足證據判讀"
+        ],
+        "misconceptions": [
+          "把課程索引當成完整教材，或把相對年代誤當成精確年數"
+        ],
+        "assessmentEmphasis": [
+          "由疊覆、切割與化石證據判斷地質事件，而非只看關鍵字"
+        ]
+      },
       "licenseBoundary": "只記錄公開定位與概念方向；不複製受保護教材文字、圖片、習題或解答。"
     },
     {
@@ -155,8 +193,25 @@
       "edition": "康軒國中自然公開影音與章節資源",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；地球歷史相關公開章節",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["用地層、化石與地質事件串接地球歷史的證據重建方法與推理限制，避免跳過事件關係", "剖面圖把空間關係轉成可檢驗的事件順序，而不是直接顯示年代數值"], "representations": ["以剖面圖、化石對比、火山灰層與事件時間線呈現推理"], "examplesOrEvidence": ["公開影音頁可核對章節與表徵方向；本課另設甲乙露頭案例"], "misconceptions": ["只按目前高度排序而忽略地層變形、斷層位移與缺層"], "assessmentEmphasis": ["說明每個排序判斷所依據的切割、覆蓋或化石證據"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "用地層、化石與地質事件串接地球歷史的證據重建方法與推理限制，避免跳過事件關係",
+          "剖面圖把空間關係轉成可檢驗的事件順序，而不是直接顯示年代數值"
+        ],
+        "representations": [
+          "以剖面圖、化石對比、火山灰層與事件時間線呈現推理"
+        ],
+        "examplesOrEvidence": [
+          "公開影音頁可核對章節與表徵方向；本課另設甲乙露頭案例"
+        ],
+        "misconceptions": [
+          "只按目前高度排序而忽略地層變形、斷層位移與缺層"
+        ],
+        "assessmentEmphasis": [
+          "說明每個排序判斷所依據的切割、覆蓋或化石證據"
+        ]
+      },
       "licenseBoundary": "只採公開資料可查證的課程結構與學習方向；不複製影音內容、教材圖片、題目或答案。"
     },
     {
@@ -164,16 +219,43 @@
       "edition": "翰林國中自然公開產品資訊與課程索引",
       "sourceType": "public-web",
       "sourceLocator": "https://books.hanlin.com.tw/productall；自然科地質與探究結構定位",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["由岩層與化石證據推論地球環境變遷，並保留推論範圍與資料限制，避免將案例擴大", "古環境模型必須同時說明支持線索、時間範圍與仍待查證的部分"], "representations": ["以地層剖面、化石對比表與古環境證據矩陣整理資料"], "examplesOrEvidence": ["公開產品資訊支持單元化探究呈現方向；本課加入可操作的證據工作台"], "misconceptions": ["把一種化石推成整個地區永久環境，忽略時間與空間限制"], "assessmentEmphasis": ["區分直接觀察、合理推論、相對年代與資料缺口"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "由岩層與化石證據推論地球環境變遷，並保留推論範圍與資料限制，避免將案例擴大",
+          "古環境模型必須同時說明支持線索、時間範圍與仍待查證的部分"
+        ],
+        "representations": [
+          "以地層剖面、化石對比表與古環境證據矩陣整理資料"
+        ],
+        "examplesOrEvidence": [
+          "公開產品資訊支持單元化探究呈現方向；本課加入可操作的證據工作台"
+        ],
+        "misconceptions": [
+          "把一種化石推成整個地區永久環境，忽略時間與空間限制"
+        ],
+        "assessmentEmphasis": [
+          "區分直接觀察、合理推論、相對年代與資料缺口"
+        ]
+      },
       "licenseBoundary": "僅研究公開資源的概念範圍與呈現方向；不複製課文、圖表、練習、答案或教師用內容。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["地層與化石是重建地球歷史的重要證據", "地質事件可由疊覆與切割關係判斷先後", "古環境推論必須明確受證據範圍與資料限制約束"],
-    "versionDifferences": ["南一公開資料適合作為地質年代與地層證據的概念入口", "康軒公開資源較適合以剖面圖與事件順序呈現", "翰林公開索引支持把地質資料放入探究與模型修正情境"],
-    "originalAdditions": ["兩處露頭的火山灰層與標準化石對比案例", "可拖曳並可重新排序的地層剖面證據工作台", "將觀察、推論與限制分欄的古環境判讀任務"],
-    "llmSynthesisNote": "LLM 依官方課綱、Knowledge Graph 與目前可取得的三版本公開資料，比較地層證據、化石對比、地質事件、表徵方式、迷思與評量重點後，使用本單元專屬的露頭案例與互動模型重新撰寫；未複製出版社原文、圖片、題目或答案。"
+    "commonCore": [
+      "三版本公開線索共同支持由地層、化石、地質事件與定年資料重建地球歷史。",
+      "疊積律、截切關係、指準化石、褶皺斷層、半衰期、冰芯證據與資料限制是共同能力核心。",
+      "公開資料僅支援地球歷史重建的課程定位；本課把相對年代的地層上下與截切關係、化石生物序列及絕對年代的放射性定年分開，再以冰芯氣泡和沉積記錄補上氣候時間序列，要求先確認每種證據的時間解析度與適用範圍，避免單一露頭代表整段地球史。"
+    ],
+    "versionDifferences": [
+      "南一公開定位偏向地層與相對年代；康軒線索偏向地質事件、化石與地球環境變遷；翰林線索偏向指準化石、放射性定年、冰芯及單一露頭的證據界線。公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以地層剖面、斷層截切、指準化石、半衰期和冰芯氣泡資料組合不同時間尺度的證據。",
+      "把下層永遠比上層老、化石缺失等於沒有生物、單一露頭能給出確切年份列為單元迷思診斷。",
+      "本課讓學生把地層剖面中的斷層、指準化石層和侵蝕面排列成相對事件圖，再用半衰期資料計算一個假想樣本的年代範圍，最後讀冰芯氣泡中氣體與同位素序列；學生須區分局部事件先後、放射性樣本年齡及全球氣候代理記錄。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開試題資料的能力方向，重新組織地層、化石、相對年代、地質事件、同位素、環境證據與限制；10 題均逐題核對單元符合度、唯一答案、正確解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -242,7 +324,42 @@
     "model": "general",
     "goal": "以安全探究步驟理解「地球的歷史」並用證據修正解釋。",
     "mission": "針對「H：地球的歷史」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"earth-history-timeline","objective":"以地層、化石與地質事件資料建立具證據限制的地球歷史時間線。","predictionPrompt":"若兩個地層含有相同指標化石，哪些相對年代結論可以支持？","steps":[{"action":"依地層順序與岩性建立相對時間線","equation":"relative-age=superposition"},{"action":"比對化石分布和地質事件標記","equation":"correlation=fossil+layer"},{"action":"加入絕對年代資料並註明測年方法與誤差","equation":"age=measurement+uncertainty"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以地層、化石與地質事件資料建立具證據限制的地球歷史時間線。",
+      "predictionPrompt": "若兩個地層含有相同指標化石，哪些相對年代結論可以支持？",
+      "steps": [
+        {
+          "action": "依地層順序與岩性建立相對時間線",
+          "equation": "relative-age=superposition",
+          "id": "step-1",
+          "reason": "本步把「依地層順序與岩性建立相對時間線」和「relative-age=superposition」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「依地層順序與岩性建立相對時間線」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "比對化石分布和地質事件標記",
+          "equation": "correlation=fossil+layer",
+          "id": "step-2",
+          "reason": "本步把「比對化石分布和地質事件標記」和「correlation=fossil+layer」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「比對化石分布和地質事件標記」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "加入絕對年代資料並註明測年方法與誤差",
+          "equation": "age=measurement+uncertainty",
+          "id": "step-3",
+          "reason": "本步把「加入絕對年代資料並註明測年方法與誤差」和「age=measurement+uncertainty」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「加入絕對年代資料並註明測年方法與誤差」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "id": "step-4",
+          "action": "在不整合面標出沉積中斷或侵蝕缺口，再以跨露頭化石與測年誤差檢查時間線",
+          "equation": "timeline=superposition+events+unconformity+uncertainty",
+          "reason": "地層剖面不一定連續；不整合代表部分歷史未保存，跨露頭對比與測年資料只能縮小缺口範圍，不能把未知時段假裝成完整順序。",
+          "feedback": "請分開直接觀察、相對先後、絕對年代估計與不整合造成的未知區間。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以地層、化石與地質事件資料建立具證據限制的地球歷史時間線。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

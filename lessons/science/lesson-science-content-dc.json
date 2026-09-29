@@ -49,7 +49,7 @@
     "authoringNote": "本課依官方課綱、KG 與三家版本可取得的公開定位及研究紀錄，由 LLM 針對 Dc 單元獨立融合撰寫；未複製出版社正文、圖表、題目、答案或影片逐字稿。完整版本研究與第二輪 Terra AI 複核尚未完成，因此維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "以安全探究步驟理解「生物體內的恆定性與調節」並用證據修正解釋。",
@@ -101,6 +101,17 @@
         ],
         "answer": "A",
         "feedback": "兩者可協調同一生理反應；比較時要同時看傳遞途徑、速度與持續時間。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "如何判斷一次回復曲線是否真的代表調節正常？",
+        "options": [
+          "比較刺激前後、恢復速度與不同強度／個體的重複資料，並標示模擬條件",
+          "只要曲線最後下降，就能診斷每個人的調節功能正常",
+          "把一次活動後的數值直接當成所有情境的固定標準"
+        ],
+        "answer": "A",
+        "feedback": "恆定性要看基準、時間序列、刺激強度與重複資料；模擬曲線不能取代個人醫療判斷。"
       }
     ]
   },
@@ -108,45 +119,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Dc：生物體內的恆定性與調節；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版七年級自然課程計畫附件；Dc 恆定性、神經／激素調節、資料判讀與健康評量脈絡；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「生物體內的恆定性與調節」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Dc：生物體內的恆定性與調節」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版七年級生物課程計畫附件；Dc 恆定性、體溫調節、內分泌／神經與活動評量；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Dc：生物體內的恆定性與調節」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一版國中自然公開課程與教學資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "生物體內的恆定性、神經調節與內分泌調節；公開課程資源交叉定位，未取得出版社完整頁碼。",
-      "sourceUrl": "https://www.nani.com.tw/",
+      "chapterLocator": "臺南市歸仁國中南一版七年級自然課程計畫；Dc 生物體恆定性、體溫／血糖、神經與激素調節及評量；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "核對由內在環境穩定延伸至體溫、血糖與調節系統的概念順序；本課將這些脈絡改寫成資料曲線與回饋迴路，不沿用原教材表述。",
-      "copyrightBoundary": "僅採公開索引可確認的章節範圍與教學方向，不複製南一課文、圖表、練習、解答或教師用語。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林版國中自然公開課程資源與校方交叉資料",
-      "subject": "science",
-      "chapterLocator": "生物體的恆定性與調節；公開資源及校方課程計畫交叉定位，非出版社完整目次。",
-      "sourceUrl": "https://www.ehanlin.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "核對體溫調節、血糖調節以及神經和激素協同的共同概念，並吸收資料判讀取向；本課另建負回饋連線互動與限制辨識。",
-      "copyrightBoundary": "只使用公開定位與概念範圍作研究，不擷取翰林教材內文、插圖、題目、答案或影音逐字內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Dc：生物體內的恆定性與調節」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -154,14 +175,25 @@
       "publisher": "nani",
       "edition": "南一版自然公開課程與教學資源",
       "sourceType": "public-web",
-      "sourceLocator": "生物體內的恆定性、體溫與血糖調節之公開課程定位；目前未取得出版社完整頁碼或全文。",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile#Dc；恆定性、體溫與血糖調節",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["恆定性是生物藉由調節維持內在環境相對穩定的動態狀態。", "體溫與血糖可作為內在環境變數，偏離後由調節機制降低偏差。"],
-        "representations": ["以體溫或血糖的時間變化圖，配合調節器官與訊號的流程關係呈現。"],
-        "examplesOrEvidence": ["運動後散熱反應與進食後血糖回落，可用連續時間資料支持負回饋的方向。"],
-        "misconceptions": ["恆定性不等於數值永遠固定；一次測量也不能證明完整的調節迴路。"],
-        "assessmentEmphasis": ["由變化曲線判讀偏離方向，並說明感受器、控制中心與效應器的角色。"]
+        "concepts": [
+          "恆定性是生物藉由調節維持內在環境相對穩定的動態狀態。",
+          "體溫與血糖可作為內在環境變數，偏離後由調節機制降低偏差。"
+        ],
+        "representations": [
+          "以體溫或血糖的時間變化圖，配合調節器官與訊號的流程關係呈現。"
+        ],
+        "examplesOrEvidence": [
+          "運動後散熱反應與進食後血糖回落，可用連續時間資料支持負回饋的方向。"
+        ],
+        "misconceptions": [
+          "恆定性不等於數值永遠固定；一次測量也不能證明完整的調節迴路。"
+        ],
+        "assessmentEmphasis": [
+          "由變化曲線判讀偏離方向，並說明感受器、控制中心與效應器的角色。"
+        ]
       },
       "licenseBoundary": "只使用可公開核對的概念定位與教學脈絡，不複製南一教材的文字、圖表、題目、答案或版面。"
     },
@@ -169,14 +201,25 @@
       "publisher": "kanghsuan",
       "edition": "康軒國中自然公開影音與資源索引",
       "sourceType": "public-web",
-      "sourceLocator": "康軒自然公開影音索引中與恆定性、體溫調節及內分泌相關的主題定位；索引不足以替代完整教材。",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php#attachment-44；恆定性、體溫調節與內分泌課程計畫",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["負回饋會使調節結果抵銷原先的偏離，讓內在條件回到可運作的範圍。", "神經調節與激素調節的傳遞途徑、反應速度及持續時間不同，但能共同維持生理平衡。"],
-        "representations": ["以感受器、控制中心、效應器的箭頭圖，搭配體溫變化與散熱反應的因果順序。"],
-        "examplesOrEvidence": ["冷熱環境造成的血管收縮、擴張與顫抖，可作為由觀察反推調節方向的例型。"],
-        "misconceptions": ["流汗是散熱反應之一，不能單憑流汗量判定體溫已恢復或所有人反應相同。"],
-        "assessmentEmphasis": ["重視從情境和資料辨認回饋方向，避免只靠看到關鍵名詞猜答案。"]
+        "concepts": [
+          "負回饋會使調節結果抵銷原先的偏離，讓內在條件回到可運作的範圍。",
+          "神經調節與激素調節的傳遞途徑、反應速度及持續時間不同，但能共同維持生理平衡。"
+        ],
+        "representations": [
+          "以感受器、控制中心、效應器的箭頭圖，搭配體溫變化與散熱反應的因果順序。"
+        ],
+        "examplesOrEvidence": [
+          "冷熱環境造成的血管收縮、擴張與顫抖，可作為由觀察反推調節方向的例型。"
+        ],
+        "misconceptions": [
+          "流汗是散熱反應之一，不能單憑流汗量判定體溫已恢復或所有人反應相同。"
+        ],
+        "assessmentEmphasis": [
+          "重視從情境和資料辨認回饋方向，避免只靠看到關鍵名詞猜答案。"
+        ]
       },
       "licenseBoundary": "只採公開索引所能核對的主題與教學取向，未擷取影片字幕、畫面、練習、解答或受保護教材內容。"
     },
@@ -184,23 +227,44 @@
       "publisher": "hanlin",
       "edition": "翰林版自然公開課程資源與校方交叉資料",
       "sourceType": "public-web",
-      "sourceLocator": "恆定性、神經調節與激素調節的公開資源定位；校方課程計畫作章節交叉證據，非出版社正式完整目次。",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php#attachment-38；恆定性、神經與激素調節簡案定位",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["血糖調節可用胰島素與升糖素的相反作用說明負回饋，並需放回進食與活動條件理解。", "內分泌腺分泌的激素經體液運送，作用對象與時間尺度不同於神經訊息。"],
-        "representations": ["使用血糖時間序列、激素作用箭頭與神經／激素比較表，連結機制和可觀察結果。"],
-        "examplesOrEvidence": ["餐後血糖先升高、再受調節回落的自編資料，可讓學生檢查訊號方向而非死背器官名稱。"],
-        "misconceptions": ["胰島素不是把血糖直接消除；資料回到範圍也不能據此作個人疾病診斷。"],
-        "assessmentEmphasis": ["以跨表徵資料題檢查調節鏈的完整性、因果條件與模型限制。"]
+        "concepts": [
+          "血糖調節可用胰島素與升糖素的相反作用說明負回饋，並需放回進食與活動條件理解。",
+          "內分泌腺分泌的激素經體液運送，作用對象與時間尺度不同於神經訊息。"
+        ],
+        "representations": [
+          "使用血糖時間序列、激素作用箭頭與神經／激素比較表，連結機制和可觀察結果。"
+        ],
+        "examplesOrEvidence": [
+          "餐後血糖先升高、再受調節回落的自編資料，可讓學生檢查訊號方向而非死背器官名稱。"
+        ],
+        "misconceptions": [
+          "胰島素不是把血糖直接消除；資料回到範圍也不能據此作個人疾病診斷。"
+        ],
+        "assessmentEmphasis": [
+          "以跨表徵資料題檢查調節鏈的完整性、因果條件與模型限制。"
+        ]
       },
       "licenseBoundary": "僅用公開資源和校方文件作研究定位，不複製翰林課本、圖表、題目、答案或教師說明。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["恆定性是內在環境在可運作範圍內的動態穩定，而非完全沒有變化。", "負回饋需由感受變化、發出指令到執行修正的完整鏈條解釋。", "體溫與血糖案例能把抽象的調節概念連到時間資料與身體反應。"],
-    "versionDifferences": ["南一公開定位較適合核對恆定性到體溫、血糖的概念連續；康軒公開影音索引提供回饋流程與觀察活動線索；翰林公開資源及校方交叉資料較突出神經與激素的比較，但三者均未提供可直接取代完整教材的公開全文。"],
-    "originalAdditions": ["以運動後體溫和餐後血糖兩條時間曲線建立可切換的負回饋判讀任務。", "用可拖曳的感受器、控制中心、效應器連線，讓學生先預測訊號方向再觀察模型結果。", "加入神經與激素的速度／持續時間比較，以及不能由模擬器推得醫療診斷的證據界線。"],
-    "llmSynthesisNote": "LLM 依官方課綱、kg-science-content-dc 與南一、康軒、翰林目前可取得的公開定位及研究紀錄，先交叉比對概念順序、表徵、例型、迷思和評量焦點，再以本單元獨有的體溫／血糖時間序列、負回饋圖解與互動任務重新撰寫。未取得的出版社完整內文不作臆測，也不複製受保護內容；Terra 第二輪尚未執行，故維持 draft。"
+    "commonCore": [
+      "三版本公開線索共同支持以受器、神經、激素與效應器建立刺激—反應—負回饋模型。",
+    "體溫、血糖、水分、免疫與系統合作資料判讀是共同能力核心。",
+    "將刺激、感受器、控制中心、效應器和回饋結果按時間排列，才能判斷調節反應是否使內在條件回到可運作範圍。"
+    ],
+    "versionDifferences": [
+      "南一公開定位偏向刺激反應與體內平衡；康軒線索偏向神經、內分泌、免疫與實例；翰林線索偏向負回饋、系統合作與曲線探究。公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以體溫、血糖與水分三條控制曲線串接受器、控制中心、效應器、回饋方向與恢復時間。",
+    "把反射等於沒有大腦參與、恆定等於數值完全不變、一次觀察就能證明唯一原因列為單元迷思診斷。",
+    "以運動前後體溫、心跳與出汗時間序列比較多個調節器官的作用，並區分短暫波動、回饋調整和需就醫的異常訊號。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校公開自然科試題／課程資料能力方向，重新組織神經調節、內分泌、免疫、體溫／血糖／水分恆定與負回饋；10 題均已逐題核對單元符合度、唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -294,6 +358,13 @@
           "equation": "證據結論 = 趨勢 + 條件 + 限制",
           "reason": "一條曲線能支持在設定條件下的模型趨勢，不能直接推論真實個人的疾病或所有生物都相同。",
           "feedback": "好的解釋要同時指出回復趨勢與模型限制；不要只寫『答案正確』而不說明哪段資料支持它。"
+        },
+        {
+          "id": "step-4",
+          "action": "重跑不同刺激強度與延遲條件，將回復時間、超越量與個體差異分開記錄",
+          "equation": "調節表現=回復方向+回復時間+超越量+條件",
+          "reason": "同樣回到適宜範圍，可能有不同的延遲、振盪或超越量；只有改變一項條件並重複比較，才能把負回饋方向與調節效率分開。",
+          "feedback": "請用至少兩個時間點和一個條件差異支持結論，並說明本模擬沒有涵蓋的個體與醫療因素。"
         }
       ],
       "evidencePrompt": "請引用曲線的兩個時間點，說明變數如何偏離、哪個反應抵銷偏離，以及哪些真實因素未被本模擬器納入。"

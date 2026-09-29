@@ -2,41 +2,73 @@
   "id": "question-science-content-cross-global-climate-adaptation-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年8月5日校園實驗室的觀察中，比較兩地「全球氣候變遷與調適」資料時，甲地迎風坡年雨量約 59260 mm、乙地背風坡約 40655 mm，最合理的做法是？",
+  "prompt": "更換節能設備以減少用電和排放，主要屬於哪類策略？",
   "options": [
     {
       "id": "A",
-      "text": "在「全球氣候變遷與調適」中只看 59260 mm 的單一數值便下結論"
+      "text": "調適，因為所有節能都只降低暴露"
     },
     {
       "id": "B",
-      "text": "在「全球氣候變遷與調適」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "一定同時解決洪水風險"
     },
     {
       "id": "C",
-      "text": "同時比較地形、風向、觀測期間與 59260、40655 mm 資料"
+      "text": "減緩，因為它作用於排放成因；仍要檢查製造與使用條件"
     },
     {
       "id": "D",
-      "text": "在「全球氣候變遷與調適」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只看設備標籤即可判斷生命週期"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cross-global-climate-adaptation"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "C",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「全球氣候變遷與調適」。"
+    "explanation": "節能通常透過降低能源需求減少排放，屬減緩；完整評估仍需看設備壽命、來源和反彈效應。 正確答案為選項 C。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "氣候資料、環境變因、證據判讀",
+      "observedPattern": "只取公立校方公開試題的資料比較與推理能力方向，重寫氣候情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "氣候風險、變因控制、方案比較",
+      "observedPattern": "只取公開資料題的能力模式，改寫為減緩與調適決策。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作天氣／氣候尺度、風險、變因控制、方案比較與證據界線的能力方向；本題為氣候變遷與調適單元原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-global-climate-adaptation"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cross-global-climate-adaptation",
+  "solutionStrategy": "沿成因—排放—氣候影響鏈判斷作用位置，再補生命週期限制。",
+  "solutionSteps": [
+    "先標記資料的時間、空間、基準與不確定性，分開天氣觀測和氣候統計。",
+    "沿排放—能量收支—衝擊—暴露／脆弱度—回應鏈整理因果位置。",
+    "判斷措施是減緩還是調適，並檢查受益者、成本、容量與資料邊界。",
+    "排除把單日當長期、局部當全球、綠色標籤當證據或忽略公平的選項，答案為 C。",
+    "將答案放回氣候資料情境並限定適用條件：節能通常透過降低能源需求減少排放，屬減緩；完整評估仍需看設備壽命、來源和反彈效應。"
+  ]
 }

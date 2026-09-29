@@ -2,23 +2,23 @@
   "id": "question-science-content-db-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月21日校園實驗室的觀察中，連續觀察「Db：動植物體的構造與功能」4 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "運動後呼吸與心跳都加快，哪個解釋最能呈現器官系統的合作？（Db 單元第7題：請依構造、功能與證據界線判讀。）",
   "options": [
     {
       "id": "A",
-      "text": "連續9天研究「Db：動植物體的構造與功能」並測得樣本持續吸收氧氣並產生二氧化碳"
+      "text": "肌肉需求增加，呼吸與循環協同供應並移除代謝物（運動前後資料）"
     },
     {
       "id": "B",
-      "text": "研究「Db：動植物體的構造與功能」時只依樣本的顏色（未記錄9天的時間與條件）"
+      "text": "肺泡停止交換，心臟使血液停住（運動前後資料）"
     },
     {
       "id": "C",
-      "text": "研究「Db：動植物體的構造與功能」時只依樣本的名稱推測，不進行觀察"
+      "text": "變化只由外界聲音造成（運動前後資料）"
     },
     {
       "id": "D",
-      "text": "研究「Db：動植物體的構造與功能」時只觀察一次外形，便排除所有其他證據"
+      "text": "運動會讓所有細胞停止工作（運動前後資料）"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Db：動植物體的構造與功能」。"
+    "value": "D",
+    "explanation": "運動時肌肉需求增加，呼吸與循環系統需要協調供應氧氣、養分並移除二氧化碳；這是器官系統合作的證據。正確答案：D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+    "sourceLocator": "公立學校公開自然科試題的構造功能、資料判讀與控制變因能力方向；本題改寫為 Db 單元原創情境，未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-db",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國中公開生物段考；只取細胞、組織、器官與構造功能判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "細胞、組織、器官與構造功能判讀",
+      "observedPattern": "公開自然科評量常以構造辨識、層次關係、功能推論、資料解讀與控制變因檢查生物概念；本題以不同情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國中公開自然段考；只取植物構造、運輸與探究變因的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "植物構造、運輸與探究變因",
+      "observedPattern": "公開自然科評量常以構造辨識、層次關係、功能推論、資料解讀與控制變因檢查生物概念；本題以不同情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中公開自然科試題；只取生物構造功能、觀察資料與實驗控制的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "生物構造功能、觀察資料與實驗控制",
+      "observedPattern": "公開自然科評量常以構造辨識、層次關係、功能推論、資料解讀與控制變因檢查生物概念；本題以不同情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較運動前後的資料，再用肌肉需求與兩個器官系統的合作解釋變化。",
+  "solutionSteps": [
+    "讀題並圈出構造、所在位置、層次、物質或環境條件。",
+    "把線索分成直接觀察、合理功能推論與尚缺資料三類。",
+    "逐一比對選項是否同時符合構造、功能、方向與尺度。",
+    "排除把單一構造誇大成整個器官或個體功能，以及混淆吸收、運輸和交換的選項。",
+    "用一句有條件的完整理由重述答案，確認結論沒有超出題目證據。"
+  ]
 }

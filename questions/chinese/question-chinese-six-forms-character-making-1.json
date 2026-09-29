@@ -2,41 +2,76 @@
   "id": "question-chinese-six-forms-character-making-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "象形字的主要線索是？",
+  "prompt": "下列哪項最能說明「山」作為早期字形時的造字線索？",
   "options": [
     {
       "id": "A",
-      "text": "模擬具體形狀"
+      "text": "以圖畫山峰外形來表示實物"
     },
     {
       "id": "B",
-      "text": "只表示聲音"
+      "text": "用聲旁表示讀音"
     },
     {
       "id": "C",
-      "text": "由句子組成"
+      "text": "把兩個抽象概念相加"
     },
     {
       "id": "D",
-      "text": "沒有意義"
+      "text": "在字形上加指示符號"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ab-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "象形字以具體事物形狀為線索。"
+    "explanation": "象形以描繪事物外形為主要線索，山的早期字形可看出山峰的形狀。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-six-forms-character-making-1.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究象形、指事、會意、形聲與部件查證能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫六書與造字題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-six-forms-character-making"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-six-forms-character-making",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字形、造字與語境",
+      "observedPattern": "公立學校國文評量從字形部件、字義線索與語境要求辨認造字方式，並區分象形、指事、會意及形聲；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字形結構、形音義與閱讀",
+      "observedPattern": "公立學校國文評量從字形部件、字義線索與語境要求辨認造字方式，並區分象形、指事、會意及形聲；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先問字形是否直接模擬可見事物，再排除聲音、組合概念或指示位置的線索。",
+  "solutionSteps": [
+    "讀題定位：圈出「象形線索」與字形部件、位置、意義或讀音線索。",
+    "拆解構形：分別說明部件可能提供的功能，再連回整字與語境；本題核心是「象形以描繪事物外形為主要線索，山的早期字形可看出山峰的形狀。」",
+    "核對正解：選項 A 同時符合造字法定義、部件功能與查證界線。",
+    "排除誘答：檢查是否把形旁當聲旁、把線索當定論，或只憑現代字形外觀硬猜字源。",
+    "回讀驗證：以字源資料、字典讀音與完整詞語重新檢查，確認形、音、義的推論都有證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

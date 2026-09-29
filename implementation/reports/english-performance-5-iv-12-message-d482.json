@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-5-iv-12",
+  "change": [
+    "Mapped the existing invitation/card lesson to prediction, extracting activity/request/suggestion, interpreting optionality and deadlines, explaining evidence-based personal response, and genre transfer.",
+    "Added explicit fallback requirements and fault-injected simulation-script blocking to the existing browser test."
+  ],
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/site/index.html",
+    "authoredSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardRetryAndAnswer": true,
+    "feedbackLiveRegion": true,
+    "accessibleOptions": true,
+    "simulationScriptBlocked": ["http://127.0.0.1:8765/site/simulations.js"],
+    "guidedChoiceFallbackUsable": true,
+    "externalNetworkBlocked": true,
+    "reducedMotion": "emulated",
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "994/1,027 pass; 33 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

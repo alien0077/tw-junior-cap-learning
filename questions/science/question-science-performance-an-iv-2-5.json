@@ -2,41 +2,73 @@
   "id": "question-science-performance-an-iv-2-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月9日學校研究社的觀察中，針對「an-Ⅳ-2：科學知識的確定性與持久性會隨背景變化」提出可檢驗的科學問題，若比較 3 組、每組取樣 13 份資料，哪一項設計最適當？",
+  "prompt": "下列哪句最能表達有條件的科學結論？",
   "options": [
     {
       "id": "A",
-      "text": "研究「an-Ⅳ-2：科學知識的確定性與持久性會隨背景變化」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "在本次樣本與測量條件下，資料支持 X；仍需更多時段檢查 Y"
     },
     {
       "id": "B",
-      "text": "研究「an-Ⅳ-2：科學知識的確定性與持久性會隨背景變化」時只測量3組中的一組就直接下結論"
+      "text": "X 永遠在任何地方成立"
     },
     {
       "id": "C",
-      "text": "研究「an-Ⅳ-2：科學知識的確定性與持久性會隨背景變化」時只改變光照時間，其餘條件一致，設置3組、每組取樣13份並各重複測量5次"
+      "text": "目前不知道所以任何說法都一樣"
     },
     {
       "id": "D",
-      "text": "研究「an-Ⅳ-2：科學知識的確定性與持久性會隨背景變化」時先決定結論，再挑選支持結論的13筆資料"
+      "text": "X 看起來合理，不必交代證據"
     }
   ],
   "knowledgeIds": [
     "kg-science-performance-an-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「an-Ⅳ-2：科學知識的確定性與持久性會隨背景變化」。"
+    "value": "A",
+    "explanation": "A 清楚寫出證據、樣本與未知，既不誇大也不把未知等同任意意見。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究證據、模型、預測與修正能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-an-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-an-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "證據、模型與推理能力方向",
+      "observedPattern": "公開自然科評量常以證據、模型、資料比較、預測與結論界線要求推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "探究解釋、證據強度與結論界線能力方向",
+      "observedPattern": "公開自然科評量常以證據、模型、資料比較、預測與結論界線要求推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨觀察、模型、解釋與預測，再檢查證據強度、假設、適用條件、新資料與結論界線。",
+  "solutionSteps": [
+    "讀題定位：圈出本題的科學知識判讀核心「provisional」。",
+    "列出證據來源、方法品質、模型假設、適用條件與結論範圍。",
+    "逐項比對哪個選項符合證據與模型判準；正確答案是 A。",
+    "核對理由：A 清楚寫出證據、樣本與未知，既不誇大也不把未知等同任意意見。",
+    "最後回查是否把可修正誤當任意意見，或把一次資料過度推廣；必要時寫出下一個可檢驗觀察。"
+  ]
 }

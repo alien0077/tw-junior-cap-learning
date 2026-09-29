@@ -2,23 +2,23 @@
   "id": "question-chinese-argument-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "把「有人喜歡早起」改成可檢驗主張，哪個較適合？",
+  "prompt": "要把「有人喜歡早起」改成較可檢驗的主張，哪項最適合？",
   "options": [
     {
       "id": "A",
-      "text": "問卷顯示受訪者中有多少人偏好早起"
+      "text": "大家一定喜歡早起。"
     },
     {
       "id": "B",
-      "text": "大家都一定喜歡早起"
+      "text": "某年級在兩週調查的有效樣本中，62%受訪學生表示偏好早起。"
     },
     {
       "id": "C",
-      "text": "早起很棒"
+      "text": "早起很棒。"
     },
     {
       "id": "D",
-      "text": "我覺得早起漂亮"
+      "text": "我覺得早起很漂亮。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "量化與明確對象使主張可檢驗。"
+    "value": "B",
+    "explanation": "B 把『有人』具體化為某年級的有效受訪樣本，並交代調查期間及可量化比例；仍只能描述該樣本，不能直接推論所有年級或全體學生。正確答案：B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-argument-9.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三筆公立學校公開國文試題中的主張、論據、樣本、反論、結論範圍與可檢驗性能力；本題改寫為全新語料。",
+    "authoringNote": "依官方課綱與單元 KG 獨立命題，使用原創語料與選項，未複製公校原題；題庫首輪AI內容校核已於2026-09-27更新，公開試題各筆來源仍須逐題確認定位與改寫界線，完成前維持draft；不進行Terra複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-argument-evidence-basics"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-27",
+  "lessonId": "lesson-chinese-argument-evidence-basics",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；只取議論文主張、論據與推論的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "議論文主張、論據與推論",
+      "observedPattern": "公立學校國文評量常要求辨識主張、理由與證據，並檢查樣本、關聯、反論、結論範圍及可檢驗性；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；只取證據品質、反論與結論範圍的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "證據品質、反論與結論範圍",
+      "observedPattern": "公立學校國文評量常要求辨識主張、理由與證據，並檢查樣本、關聯、反論、結論範圍及可檢驗性；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "檢查主張是否有對象、時間、數量與可觀察指標。",
+  "solutionSteps": [
+    "將模糊的『有人』改成可界定的調查對象與有效樣本。",
+    "為偏好早起設定可觀察的指標，並交代調查時間及比例。",
+    "選 B 的量化陳述；它可以透過調查資料核對，不只是好惡形容。",
+    "留意62%描述的是該年級該次有效樣本，抽樣代表性仍未提供。",
+    "把可檢驗與可普遍化分開：前者已具體，後者仍需抽樣證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

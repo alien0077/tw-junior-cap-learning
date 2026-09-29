@@ -2,41 +2,84 @@
   "id": "question-math-content-s-7-3-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "直線 y=3x+1 與哪條直線垂直？",
+  "prompt": "線段 AB 長 10 公分，若直線 m 通過 AB 的中點且垂直 AB，則 m 與 AB 的交點距離 A、B 各是多少？",
   "options": [
     {
       "id": "A",
-      "text": "y=3x−4"
+      "text": "A 為 5 公分，B 為 5 公分"
     },
     {
       "id": "B",
-      "text": "y=−1/3x+2"
+      "text": "A 為 10 公分，B 為 0 公分"
     },
     {
       "id": "C",
-      "text": "y=1/3x+2"
+      "text": "A 為 0 公分，B 為 10 公分"
     },
     {
       "id": "D",
-      "text": "y=−3x+2"
+      "text": "無法判定，因為 m 不一定通過中點"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-7-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "垂直線斜率為 3 的負倒數 −1/3。"
+    "value": "A",
+    "explanation": "m 通過 AB 的中點，長度 10 被分成兩段相等，每段 5 公分，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 垂直 題型與官方課綱 KG kg-math-content-s-7-3",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供垂直與距離能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的垂直能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-7-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-7-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "垂直、直角、點到直線距離、垂直平分線與等距性質",
+      "observedPattern": "公開學校數學試題常以直角判定、最短距離、垂直平分線與幾何性質考查垂直概念；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "垂直、直角、點到直線距離、垂直平分線與等距性質",
+      "observedPattern": "公開學校數學試題常以直角判定、最短距離、垂直平分線與幾何性質考查垂直概念；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看到垂直且通過中點，先使用中點把全長平分。",
+  "solutionSteps": [
+    "AB 全長是 10 公分。",
+    "m 通過 AB 的中點。",
+    "中點把 AB 分成兩段等長。",
+    "10 ÷ 2 = 5。",
+    "選 A。"
+  ]
 }

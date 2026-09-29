@@ -1,0 +1,69 @@
+{
+  "decision": "D-345",
+  "date": "2026-09-28",
+  "unit": "S-9-1：相似形",
+  "status": "visible-content-and-spec-corrected; substantive-fusion-and-scope-review-not-complete",
+  "preservedPriorWork": {
+    "rewroteTeachingBody": false,
+    "rewroteInteractiveSteps": false,
+    "existingTeachingSections": 6,
+    "existingInteractiveSteps": 4,
+    "change": "exposed the already-authored six-section lesson in the content.sections field consumed by the workbench"
+  },
+  "changes": [
+    "Synced the visible lesson sections to the existing authored teaching.body instead of leaving only three short outline paragraphs.",
+    "Corrected the statement of sufficient similarity criteria so it is explicitly about triangles.",
+    "Corrected publisher/source labels to describe public-school course plans as chapter-level evidence, not publisher textbook prose; removed the implication that a Junyi course-tree is itself Nani publisher evidence.",
+    "Replaced the unit spec's nonexistent geometry slider/manipulation claims with the actual four-stage guided-choice/StepwiseReasoning interaction and unit-specific checks.",
+    "Added an automated regression and target browser/a11y coverage for visible sections, the 6.8 m calculation, wrong-answer retry, keyboard use, and 320/375/768 px layouts."
+  ],
+  "scopeAndSourceLimits": {
+    "officialCurriculumBoundary": "Official S-9-1 covers plane-figure scaling and polygon similarity; triangle similarity tests and indirect measurement/application include S-9-2 territory.",
+    "currentLessonScopeReview": "pending; do not call this unit fusion complete until S-9-1/S-9-2 scope is resolved without losing previously authored material",
+    "publisherEvidence": {
+      "nani": "public school plan explicitly identifies Nani materials; chapter/curriculum-plan level only",
+      "kanghsuan": "public school plan explicitly identifies Kanghsuan materials; chapter/curriculum-plan level only",
+      "hanlin": "public school plan / official index chapter-level evidence only",
+      "fullPublisherChapterRead": false,
+      "publisherEvidenceSlots": "pending"
+    },
+    "rightsAndReview": "No textbook prose, figures, questions, answers, or videos reproduced. Rights verification and independent content review remain open; lesson remains draft."
+  },
+  "verification": {
+    "unitRegression": "PASS: npm run test:math:s9-1",
+    "fullNodeSuite": "PASS: npm test; 1,027/1,027 workbench traversal included",
+    "dataValidation": "PASS: 14,467 JSON files, 13,112 IDs, 1,032 KG nodes; all lessons/questions remain draft",
+    "implementationSpecs": "PASS: 1,027 files, 0 errors, 1,027 pending QA",
+    "strictLessonIndependence": "PASS: 614 lessons, 0 risks, 0 strict failures",
+    "siteIndex": "PASS: 1,052 lessons, 10,566 questions, 40 mapping sets; rebuild, validation, and --check",
+    "playwright": "PASS: real Chromium, full traversal 1,027/1,027; S-9-1 six visible sections, four stages, wrong-answer retry, keyboard correct answer, 320/375/768 widths, no page errors",
+    "axe": "PASS: 39 runs across 13 representative units and 320/375/768 widths; 0 violations, 0 incomplete",
+    "diffCheck": "PASS"
+  },
+  "projectGoalAudit": {
+    "publicExamQuestionSourceLedger": {
+      "status": "PASS",
+      "recorded": 10566,
+      "total": 10566,
+      "pending": 0,
+      "sourceCatalogEntries": 489,
+      "questionSourceUrls": 278,
+      "catalogCoveredUrls": 278,
+      "examPatternRefs": 23131,
+      "flaggedRefs": 0,
+      "audits": [
+        "scripts/audit_question_exam_rewrites.py",
+        "scripts/audit_public_exam_source_catalog.py",
+        "scripts/audit_question_exam_ref_semantics.py"
+      ]
+    },
+    "publisherFusionLedger": {
+      "verifiedSlots": 285,
+      "totalSlots": 3081,
+      "pendingSlots": 2796,
+      "blockedUnits": 932,
+      "meaning": "chapter/source records do not equal substantive publisher fusion"
+    },
+    "commitPush": "not performed; overall objective remains incomplete"
+  }
+}

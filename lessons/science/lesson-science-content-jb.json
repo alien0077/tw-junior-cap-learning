@@ -48,7 +48,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "透過可調整的溶液粒子與檢測工具，區分溶解、酸鹼變化、沉澱與產氣，並以證據修正模型。",
@@ -100,26 +100,170 @@
         ],
         "answer": "A",
         "feedback": "中和取決於粒子數量與比例；一方過量時，繼續加入會使溶液偏向另一種酸鹼性。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "透明樣品混合後有氣泡，但導電度和 pH 變化不明顯；如何避免過度解釋？",
+        "options": [
+          "固定溫度與體積，設置未混合對照並檢查溶解氣體、攪拌與反應產氣等可能原因",
+          "只因看到氣泡就認定一定有新物質生成",
+          "把 pH 沒變解讀成任何反應都沒有發生"
+        ],
+        "answer": "A",
+        "feedback": "單一氣泡現象不能區分物理逸氣與反應產氣；需用對照和其他量測把觀察、模型及限制分開。"
       }
     ]
   },
   "authoringStandard": "version-fused-v1",
   "lessonScope": "topic",
   "publisherResearch": [
-    {"publisher":"nani","edition":"南一版國中自然公開課程計畫與資源索引","subject":"science","chapterLocator":"水溶液、酸鹼與反應現象的公開單元定位；未取得完整出版社頁碼。","sourceUrl":"https://www.naer.edu.tw/","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"用公開定位核對水溶液、酸鹼與物質變化的概念順序；正文與案例均重新設計。","copyrightBoundary":"只採公開定位與方向，不複製課本、習作、教師用書、圖片或答案。"},
-    {"publisher":"kanghsuan","edition":"康軒版國中自然公開影音與章節資源","subject":"science","chapterLocator":"Jb：水溶液中的變化；公開活動方向定位。","sourceUrl":"https://digitalmaster.knsh.com.tw/all/video/j/nature.html","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"用公開資源核對操作、指示劑與證據記錄方向；本課自編滴加與對照模型。","copyrightBoundary":"只研究公開結構，不複製影音字幕、圖像、題目、提示或解答。"},
-    {"publisher":"hanlin","edition":"翰林版國中自然公開產品資訊與課程資源","subject":"science","chapterLocator":"水溶液與物質變化相關公開產品方向；未取得完整逐頁內容。","sourceUrl":"https://books.hanlin.com.tw/productall","access":"public-open","reviewedAt":"2026-09-01","researchScope":["teaching-sequence","concept-progression","activity-pattern","assessment-pattern"],"outcome":"用公開產品資訊核對生活情境與資料判讀方向；本課自編飲料、水質與粒子模型案例。","copyrightBoundary":"只作公開結構與概念方向研究；正文、活動、題目與解析均由本課獨立創作。"}
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Jb：水溶液中的變化 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Jb：水溶液中的變化」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Jb：水溶液中的變化 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Jb：水溶液中的變化」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Jb：水溶液中的變化 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Jb：水溶液中的變化」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    }
   ],
   "versionResearch": [
-    {"publisher":"nani","edition":"南一版國中自然公開課程計畫與資源索引","sourceType":"public-web","sourceLocator":"水溶液、酸鹼與反應現象的公開單元定位；未取得完整出版社課本頁面。","reviewedAt":"2026-09-01","findings":{"concepts":["水溶液的性質不能只靠外觀判斷，應搭配適當測試與多種證據判讀。","混合前後的現象需要配合測試與模型解釋。"],"representations":["溶液比較表、指示劑色階與粒子示意圖。"],"examplesOrEvidence":["公開定位支持水溶液與酸鹼反應方向；本課自編安全觀察資料。"],"misconceptions":["透明液體被誤認為純水；看到氣泡就直接斷定反應。"],"assessmentEmphasis":["依觀察證據判斷變化，並說明測試限制。"]},"licenseBoundary":"只採公開定位與概念方向，不複製課本、習作、教師用書、圖片或答案。"},
-    {"publisher":"kanghsuan","edition":"康軒版國中自然公開影音與章節資源","sourceType":"public-web","sourceLocator":"https://digitalmaster.knsh.com.tw/all/video/j/nature.html；水溶液中的變化相關活動方向定位。","reviewedAt":"2026-09-01","findings":{"concepts":["酸鹼與混合變化需透過操作觀察。","現象、條件和解釋必須互相對照。"],"representations":["操作流程、指示劑色階與反應前後粒子圖。"],"examplesOrEvidence":["公開資源提供活動型態線索；本課自編滴加與溫度觀察資料。"],"misconceptions":["把指示劑顏色當成酸鹼濃度的精確值。"],"assessmentEmphasis":["指出變因、對照與支持結論的觀察。"]},"licenseBoundary":"只研究公開活動方向，不複製影音字幕、圖像、題目、提示或解答。"},
-    {"publisher":"hanlin","edition":"翰林版國中自然公開產品資訊與課程資源","sourceType":"public-web","sourceLocator":"https://books.hanlin.com.tw/productall；水溶液與物質變化的公開方向定位。","reviewedAt":"2026-09-01","findings":{"concepts":["從生活材料觀察溶液性質，連結酸鹼、沉澱與產氣。","以證據範圍表達結論，注意測量和模型的差異。"],"representations":["生活情境卡、證據矩陣與微觀粒子模型。"],"examplesOrEvidence":["公開產品資訊支持情境化方向；本課自編飲料酸度、沉澱與中和案例。"],"misconceptions":["把所有混合都視為化學反應；認為沉澱後粒子消失。"],"assessmentEmphasis":["比較多種證據，提出安全且可重複的後續測試。"]},"licenseBoundary":"只作公開結構與概念方向研究；正文、案例、互動與題目均由本課獨立創作。"}
+    {
+      "publisher": "nani",
+      "edition": "南一版國中自然公開課程計畫與資源索引",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.naer.edu.tw/；水溶液、酸鹼與反應現象的公開單元定位；未取得完整出版社課本頁面。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "水溶液的性質不能只靠外觀判斷，應搭配適當測試與多種證據判讀。",
+          "混合前後的現象需要配合測試與模型解釋。"
+        ],
+        "representations": [
+          "溶液比較表、指示劑色階與粒子示意圖。"
+        ],
+        "examplesOrEvidence": [
+          "公開定位支持水溶液與酸鹼反應方向；本課自編安全觀察資料。"
+        ],
+        "misconceptions": [
+          "透明液體被誤認為純水；看到氣泡就直接斷定反應。"
+        ],
+        "assessmentEmphasis": [
+          "依觀察證據判斷變化，並說明測試限制。"
+        ]
+      },
+      "licenseBoundary": "只採公開定位與概念方向，不複製課本、習作、教師用書、圖片或答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒版國中自然公開影音與章節資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；水溶液中的變化相關活動方向定位。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "酸鹼與混合變化需透過操作觀察。",
+          "現象、條件和解釋必須互相對照。"
+        ],
+        "representations": [
+          "操作流程、指示劑色階與反應前後粒子圖。"
+        ],
+        "examplesOrEvidence": [
+          "公開資源提供活動型態線索；本課自編滴加與溫度觀察資料。"
+        ],
+        "misconceptions": [
+          "把指示劑顏色當成酸鹼濃度的精確值。"
+        ],
+        "assessmentEmphasis": [
+          "指出變因、對照與支持結論的觀察。"
+        ]
+      },
+      "licenseBoundary": "只研究公開活動方向，不複製影音字幕、圖像、題目、提示或解答。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林版國中自然公開產品資訊與課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://books.hanlin.com.tw/productall；水溶液與物質變化的公開方向定位。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "從生活材料觀察溶液性質，連結酸鹼、沉澱與產氣。",
+          "以證據範圍表達結論，注意測量和模型的差異。"
+        ],
+        "representations": [
+          "生活情境卡、證據矩陣與微觀粒子模型。"
+        ],
+        "examplesOrEvidence": [
+          "公開產品資訊支持情境化方向；本課自編飲料酸度、沉澱與中和案例。"
+        ],
+        "misconceptions": [
+          "把所有混合都視為化學反應；認為沉澱後粒子消失。"
+        ],
+        "assessmentEmphasis": [
+          "比較多種證據，提出安全且可重複的後續測試。"
+        ]
+      },
+      "licenseBoundary": "只作公開結構與概念方向研究；正文、案例、互動與題目均由本課獨立創作。"
+    }
   ],
   "fusionRecord": {
-    "commonCore":["溶液是溶質均勻分散在溶劑中的混合物，透明或無色不能單獨決定組成。","酸鹼性、沉澱、產氣與溫度變化要以適當測試取得證據，再用粒子模型解釋。","混合後須比較控制條件，區分粒子分散、沉澱、產氣與中和等不同變化。"],
-    "versionDifferences":["南一公開定位適合整理水溶液與酸鹼反應脈絡；康軒公開資源凸顯操作與證據記錄；翰林公開產品資訊較能連接生活情境與資料判讀，但完整出版社內文均未公開可核驗。"],
-    "originalAdditions":["以外觀相同但導電性不同的自編溶液修正透明即純水的直覺。","用安全滴加模擬追蹤氣泡、溫度與剩餘粒子，避免單一現象直接等同答案。","以證據矩陣比較指示劑、沉澱、導電性與溫度，再遷移到飲料標示與水質檢測。"],
-    "llmSynthesisNote":"依官方課綱、KG 與三版本可取得的公開定位及研究紀錄，融合溶液組成、酸鹼證據、反應現象與粒子模型，再以透明溶液辨識、滴加追蹤和證據矩陣重新撰寫；正文、互動、案例與檢核均為原創。Terra 尚未執行，故維持 draft。"
+    "commonCore": [
+      "三版本公開線索共同支持以溶質、溶劑、均勻分散、溶解度、飽和與分離方法描述水溶液中的變化。",
+      "水溶液判讀需連結粒子模型、溫度、水量、濃度、溶解／析出與可逆分離，並用控制變因設計實驗。",
+      "可取得的出版社公開線索不足以替代完整版本教材，因此本課以溶質粒子均勻分散但未消失的模型，連結飽和前後的溶解與析出，再以過濾、蒸發和結晶分辨溶液與懸浮混合物；比較溶解度時固定溶劑種類和用量，避免把速率、總量與溶解度混為一談。"
+    ],
+    "versionDifferences": [
+      "公立段考與會考公開題型提供溶液、溶解、溶解度、濃度與分離資料方向；康軒公開課程線索偏向均勻混合、飽和、溫度影響、粒子模型與實驗設計。公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以食鹽水、糖水、泥沙、結晶、過濾、蒸發與水溫比較建立根單元水溶液證據鏈。",
+      "把『溶質消失就是消失』、『所有混合物都是水溶液』與『加熱一定能溶解無限量溶質』列為迷思診斷。",
+      "本課新增食鹽、糖與泥沙的三種比較，以及冷卻飽和溶液析晶的操作紀錄；學生須用溶質質量守恆說明蒸發後晶體來源，以濾紙殘留辨認未溶固體，最後設計只改變溫度或水量其中一項的溶解度測試。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開自然科試題及課程資料的能力方向，重新撰寫溶質溶劑、溶解、均勻性、溶解度、飽和、濃度、分離與控制變因。原有 10 題為日期與食鹽質量變換的重複計算套題，已逐題改寫為水溶液根單元專屬題，均具唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -188,7 +332,42 @@
     "model": "general",
     "goal": "以粒子、指示劑與證據矩陣理解水溶液中的混合、酸鹼、沉澱與產氣變化。",
     "mission": "先預測透明樣品的檢測結果，再固定條件操作，最後用巨觀證據和微觀粒子圖共同寫出結論；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"solution-particle-investigation","objective":"以導電度、酸鹼指示與粒子模型判讀溶液組成及反應。","predictionPrompt":"兩杯都透明但導電度不同時，粒子模型應如何解釋？","steps":[{"action":"固定體積與溫度，量測導電度、pH 與外觀","equation":"measurement=conductivity+pH"},{"action":"用粒子卡表示離子、分子與溶劑分布","equation":"solution=ions+molecules"},{"action":"混合樣品觀察沉澱、氣體或中和並寫出限制","equation":"reaction=ions-rearranged"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以導電度、酸鹼指示與粒子模型判讀溶液組成及反應。",
+      "predictionPrompt": "兩杯都透明但導電度不同時，粒子模型應如何解釋？",
+      "steps": [
+        {
+          "action": "固定體積與溫度，量測導電度、pH 與外觀",
+          "equation": "measurement=conductivity+pH",
+          "id": "step-1",
+          "reason": "本步把「固定體積與溫度，量測導電度、pH 與外觀」和「measurement=conductivity+pH」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「固定體積與溫度，量測導電度、pH 與外觀」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "用粒子卡表示離子、分子與溶劑分布",
+          "equation": "solution=ions+molecules",
+          "id": "step-2",
+          "reason": "本步把「用粒子卡表示離子、分子與溶劑分布」和「solution=ions+molecules」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「用粒子卡表示離子、分子與溶劑分布」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "混合樣品觀察沉澱、氣體或中和並寫出限制",
+          "equation": "reaction=ions-rearranged",
+          "id": "step-3",
+          "reason": "本步把「混合樣品觀察沉澱、氣體或中和並寫出限制」和「reaction=ions-rearranged」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「混合樣品觀察沉澱、氣體或中和並寫出限制」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "對氣泡、pH 與導電度結果加入未混合對照，區分物理逸氣、離子重排與中和證據",
+          "equation": "claim=signal-control-particleModel",
+          "id": "step-4",
+          "reason": "本步把「對氣泡、pH 與導電度結果加入未混合對照，區分物理逸氣、離子重排與中和證據」和「claim=signal-control-particleModel」連結，將可觀察現象和粒子模型放在可比較的控制條件下檢查。",
+          "feedback": "若對照也有氣泡，請降低反應產氣的確定度並檢查溫度、攪拌和溶解氣體；pH 不變也不能單獨排除其他粒子變化。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以導電度、酸鹼指示與粒子模型判讀溶液組成及反應。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

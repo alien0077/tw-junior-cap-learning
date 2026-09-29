@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-4-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-4／事實與意見」task, what is the best way to prepare question 1?",
+  "prompt": "Which statement can be checked directly using a school calendar?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-4／事實與意見."
+      "text": "The science fair begins on May 12."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-4／事實與意見."
+      "text": "The science fair is the most exciting event."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-4／事實與意見."
+      "text": "Everyone will love the fair."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-4／事實與意見."
+      "text": "The fair deserves an award."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-4／事實與意見, question 1."
+    "explanation": "校園日曆可核對科展是否排在5月12日，不能證明活動最好玩或人人喜歡，因此選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675415417313RWpH2HNA.pdf",
+    "sourceLocator": "PDF第4頁第49題：依四月行程表判讀活動安排；僅借鑑從表格核對可查證資訊的題型。",
+    "authoringNote": "參照公立國中英文定期評量中核對文章事實、作者觀點、圖表證據、預測及行動判讀的能力；情境、題幹、數據、選項、答案與解析皆獨立編寫，未複製原題。版本研究與全案內容審查未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675415417313RWpH2HNA.pdf",
+      "title": "臺北市立內湖國中111學年度第1學期七年級第3次段考英語科試卷",
+      "year": "111",
+      "subject": "english",
+      "locator": "PDF第4頁第49題：依四月行程表判讀活動安排；僅借鑑從表格核對可查證資訊的題型。",
+      "observedPattern": "以行程表中明確列出的日期／活動核對陳述；本題校園活動日期與選項均為新編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "直接查證要找可由日曆核對的日期或事件；喜好與價值判斷不能只靠日曆證明。",
+  "solutionSteps": [
+    "確認資料來源限定為 school calendar（日曆）。",
+    "日曆能記錄活動名稱和日期，不能記錄每個人的喜好或活動價值。",
+    "逐項比對：May 12 是可核對的日期陳述；其餘含最精彩、人人喜歡、值得得獎等評價或預測。",
+    "因此可直接查證的是 The science fair begins on May 12，選 A。",
+    "最後確認題目問的是「calendar可核對」，不是哪句聽起來最可能。"
+  ]
 }

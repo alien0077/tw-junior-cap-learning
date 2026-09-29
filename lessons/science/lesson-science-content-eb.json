@@ -48,7 +48,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-27",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "拖曳水平受力箭頭與質量，觀察合力方向、加速度及速度變化，辨認合力為零時的兩種運動狀態。",
@@ -100,6 +100,17 @@
         ],
         "answer": "A",
         "feedback": "運動方向描述速度，速度改變的方向描述加速度；兩者不可混為一談。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "要比較不同煞車設計的安全性，哪組資料最完整？",
+        "options": [
+          "記錄動量改變、接觸時間、平均力與峰值力，再說明感測器解析度與模型限制",
+          "只比較最後是否停下，不必記錄停止前的力與時間",
+          "只選平均力較小的設計，直接宣稱峰值力也一定較小"
+        ],
+        "answer": "A",
+        "feedback": "碰撞或煞車的安全判讀要分開平均力、峰值力、作用時間與動量改變，不能用單一終點取代整段資料。"
       }
     ]
   },
@@ -107,45 +118,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Eb：力與運動；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Eb：力與運動 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「力與運動」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Eb：力與運動」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Eb：力與運動 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Eb：力與運動」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一國中自然公開資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "公開自然科主題入口：力、運動與牛頓運動定律；完整電子課本頁面未取得，查核日期 2026-09-01。",
-      "sourceUrl": "https://www.nani-jr.com/",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Eb：力與運動 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "teaching-sequence", "assessment-pattern"],
-      "outcome": "採納以受力、運動狀態與定律連結的概念方向；例題數據、說明與互動均為本課自編。",
-      "copyrightBoundary": "只使用公開主題定位，不複製課文、圖表、題目、答案或教師用書內容。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開課程資料",
-      "subject": "science",
-      "chapterLocator": "公開資料可核對國中自然力與運動、牛頓定律主題；完整逐頁教材未取得，查核日期 2026-09-01。",
-      "sourceUrl": "https://website.hle.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "融合受力圖、定性推理與 F=ma 的評量取向，改以小車受力實驗和速度／加速度辨析自行撰寫。",
-      "copyrightBoundary": "僅研究公開定位，不重製教材文字、圖片、題目、解析或答案。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Eb：力與運動」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -154,8 +175,25 @@
       "edition": "南一國中自然力與運動公開資源",
       "sourceType": "public-web",
       "sourceLocator": "https://www.nani-jr.com/；力與運動、牛頓定律主題入口，查核日期 2026-09-01。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["力以大小與方向描述，方向會影響合力判斷。", "合力與運動狀態變化相連，質量也會影響加速度。"], "representations": ["受力圖與公式並用，讓箭頭方向能對照計算結果。"], "examplesOrEvidence": ["公開入口提供主題定位，本課小車數據與計算例題均為自編。"], "misconceptions": ["合力為零不等於沒有力，仍可能維持等速度直線運動。"], "assessmentEmphasis": ["由受力圖與條件判斷結果，再以單位檢查數值是否合理。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "力以大小與方向描述，方向會影響合力判斷。",
+          "合力與運動狀態變化相連，質量也會影響加速度。"
+        ],
+        "representations": [
+          "受力圖與公式並用，讓箭頭方向能對照計算結果。"
+        ],
+        "examplesOrEvidence": [
+          "公開入口提供主題定位，本課小車數據與計算例題均為自編。"
+        ],
+        "misconceptions": [
+          "合力為零不等於沒有力，仍可能維持等速度直線運動。"
+        ],
+        "assessmentEmphasis": [
+          "由受力圖與條件判斷結果，再以單位檢查數值是否合理。"
+        ]
+      },
       "licenseBoundary": "只研究公開定位與概念方向，未複製任何受保護的課文、圖表、題目或答案。"
     },
     {
@@ -163,8 +201,25 @@
       "edition": "康軒國中自然力與運動公開數位資源",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然科公開資源，查核日期 2026-09-01。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["由生活運動現象進入受力分析，先辨識物體與作用方向。", "牛頓定律需配合方向與單位，不能只代入力的數字。"], "representations": ["操作觀察、箭頭與數據互相驗證，並保留模型的限制條件。"], "examplesOrEvidence": ["本課以自編水平小車與煞車案例說明速度和加速度可不同向。"], "misconceptions": ["速度方向不是加速度方向，向前移動的車也可能向後加速。"], "assessmentEmphasis": ["先預測合力與運動，再以 F=ma 和操作結果檢驗。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "由生活運動現象進入受力分析，先辨識物體與作用方向。",
+          "牛頓定律需配合方向與單位，不能只代入力的數字。"
+        ],
+        "representations": [
+          "操作觀察、箭頭與數據互相驗證，並保留模型的限制條件。"
+        ],
+        "examplesOrEvidence": [
+          "本課以自編水平小車與煞車案例說明速度和加速度可不同向。"
+        ],
+        "misconceptions": [
+          "速度方向不是加速度方向，向前移動的車也可能向後加速。"
+        ],
+        "assessmentEmphasis": [
+          "先預測合力與運動，再以 F=ma 和操作結果檢驗。"
+        ]
+      },
       "licenseBoundary": "只閱讀公開索引與活動定位，不複製康軒影音、文字、圖片、題目或答案內容。"
     },
     {
@@ -172,8 +227,25 @@
       "edition": "翰林國中自然力與運動公開資料",
       "sourceType": "public-web",
       "sourceLocator": "https://website.hle.com.tw/；力與運動及牛頓定律主題定位，查核日期 2026-09-01。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["質量會影響相同合力造成的加速度，質量加倍時加速度會減半。", "慣性須以運動狀態解釋，合力為零也可能是等速度運動。"], "representations": ["受力圖、F=ma 與情境題並置，搭配可調質量的自編互動模型。"], "examplesOrEvidence": ["本課另設三車比較與可調質量互動，數據和回饋皆由本課重新設計。"], "misconceptions": ["物體持續運動不代表仍有同方向推力，必須再檢查摩擦與合力。"], "assessmentEmphasis": ["判斷合力、方向與模型限制，並用計算和文字同時說明。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "質量會影響相同合力造成的加速度，質量加倍時加速度會減半。",
+          "慣性須以運動狀態解釋，合力為零也可能是等速度運動。"
+        ],
+        "representations": [
+          "受力圖、F=ma 與情境題並置，搭配可調質量的自編互動模型。"
+        ],
+        "examplesOrEvidence": [
+          "本課另設三車比較與可調質量互動，數據和回饋皆由本課重新設計。"
+        ],
+        "misconceptions": [
+          "物體持續運動不代表仍有同方向推力，必須再檢查摩擦與合力。"
+        ],
+        "assessmentEmphasis": [
+          "判斷合力、方向與模型限制，並用計算和文字同時說明。"
+        ]
+      },
       "licenseBoundary": "只使用公開主題定位，不重製翰林教材內文、圖表、題目、解析或答案。"
     }
   ],
@@ -239,19 +311,19 @@
   },
   "fusionRecord": {
     "commonCore": [
-      "三版本與官方課綱共同指向力的大小方向、合力、運動狀態與牛頓定律，並要求學生能由生活情境建立受力圖、辨認作用方向。",
-      "受力圖與數學關係必須回到可觀察情境，檢查單位、方向與質量條件，不能只背公式而忽略速度和加速度的差異。",
-      "力與運動的判讀都需要把觀察、模型和限制分開，才能避免把物體持續運動誤解成仍有同方向推力。"
+      "三版本公開線索共同支持由受力圖、合力、慣性與加速度連結力和運動變化。",
+    "牛頓定律、F＝ma、摩擦、控制變因與運動資料判讀是共同能力核心。",
+    "把運動圖表的速度變化與物體所受合力對照，需同時列出接觸力、重力及方向，不能只憑單一施力者推斷加速度。"
     ],
     "versionDifferences": [
-      "南一公開資料較適合主題與概念定位；康軒公開資源呈現生活觀察和操作取向；翰林公開資料可核對圖表與情境評量方向。公開範圍不同，未宣稱讀取完整課本。"
+      "南一公開定位偏向力與運動現象；康軒線索偏向受力圖、慣性、摩擦與定律；翰林線索偏向質量—力—加速度資料與探究設計。公開資料不足以宣稱取得完整教材內容。"
     ],
     "originalAdditions": [
-      "以小車箭頭合力實驗連結 F=ma。",
-      "專門拆解速度與加速度方向混淆。",
-      "將合力為零的靜止與等速度兩種狀態放在同一互動中比較。"
+      "以推車、煞車與受力卡工作台建立方向、合力、加速度和系統邊界的可操作證據鏈。",
+    "把合力零等於沒有受力、慣性是力、速度變化只看單一力列為單元迷思診斷。",
+    "分析推車由粗糙地面進入光滑軌道的速度紀錄，分辨合力改變、摩擦減少及速度仍持續的情形，並說明模型忽略了哪些外力。"
     ],
-    "llmSynthesisNote": "本課依官方課綱、kg-science-content-eb 與 2026-09-01 可取得的三版本公開資料定位，融合後由 LLM 以自己的話逐單元獨立撰寫；未複製出版社文字、圖片、題目、解析或答案。Terra 第二輪尚未執行，故維持 draft。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校公開自然科試題／課程資料能力方向，重新組織受力、運動、慣性、加速度、F＝ma與實驗資料；已移除原先只重複平均速率且未涵蓋課程核心的批次題，10 題題幹、選項、答案、解析與五步解法均為原創，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "simulation": {
     "id": "sim-science-eb",
@@ -260,7 +332,42 @@
     "model": "general",
     "goal": "在小車模型中調整水平推力、摩擦力與質量，先預測合力和加速度，再用速度向量檢查自己的受力解釋。",
     "mission": "先把右推 8 N、左摩擦 3 N、質量 2 kg 設為基準，記下合力與加速度；接著只把質量改為 4 kg，最後讓車以向右初速開始並加入向左摩擦，觀察速度與加速度方向可以不同。模型忽略輪軸細節與空氣阻力，操作時不使用真實高速車具。",
-    "learningDesign":{"type":"force-motion-model","objective":"以受力圖、合力與質量變化解釋加速度和速度方向的差異。","predictionPrompt":"物體仍向右移動但受到向左合力時，速度與加速度各會如何變化？","steps":[{"action":"繪製水平受力圖並計算合力","equation":"net-force=sum(forces)"},{"action":"只改變質量比較加速度，保持其他條件固定","equation":"acceleration=net-force/mass"},{"action":"加入初速度與摩擦，分段判讀速度、加速度方向","equation":"v(t)=v0+a*t"}]},
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以受力圖、合力與質量變化解釋加速度和速度方向的差異。",
+      "predictionPrompt": "物體仍向右移動但受到向左合力時，速度與加速度各會如何變化？",
+      "evidencePrompt": "請以受力圖、合力、質量、加速度、初速度、摩擦、速度方向與時間分段資料，說明力與運動模型的證據及限制。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "繪製水平受力圖並計算合力",
+          "equation": "net-force=sum(forces)",
+          "reason": "受力圖把方向和大小放在同一基準，合力才是判讀加速度的依據。",
+          "feedback": "請先標出每個力的方向與大小，再計算合力，不要把速度方向當成合力方向。"
+        },
+        {
+          "id": "step-2",
+          "action": "只改變質量比較加速度，保持其他條件固定",
+          "equation": "acceleration=net-force/mass",
+          "reason": "固定合力、只改變質量，才能觀察質量對加速度的影響。",
+          "feedback": "請保留相同合力與初始條件，只改一個質量，並比較加速度資料。"
+        },
+        {
+          "id": "step-3",
+          "action": "加入初速度與摩擦，分段判讀速度、加速度方向",
+          "equation": "v(t)=v0+a*t",
+          "reason": "速度可與加速度方向不同，加入初速度與摩擦後要按時間分段判讀。",
+          "feedback": "請分開寫速度方向、加速度方向與摩擦作用，並標出何時可能停止或反向。"
+        },
+        {
+          "id": "step-4",
+          "action": "將碰撞或煞車拆成力—時間曲線，分別比較衝量、峰值力與接觸時間",
+          "equation": "impulse=force×time=change-in-momentum",
+          "reason": "相同動量改變可以由不同力與作用時間完成；只看平均力或速度終值，無法判斷碰撞中的峰值與安全差異。",
+          "feedback": "請同時標出動量改變、作用時間、平均／峰值力與量測限制，避免把單一力值當成完整碰撞證據。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

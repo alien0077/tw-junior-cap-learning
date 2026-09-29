@@ -2,41 +2,76 @@
   "id": "question-social-content-civ-bp-iv-2-2",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2021年12月13日區域地圖展的資料中，社區有 100 萬元預算處理「公 Bp-Ⅳ-2：儲值卡與貨幣差異」，居民意見不同。哪項決策方式較適當？",
+  "prompt": "卡片餘額以新臺幣顯示，早餐標價也以新臺幣表示。這主要說明？",
   "options": [
     {
       "id": "A",
-      "text": "公開「公 Bp-Ⅳ-2：儲值卡與貨幣差異」方案、成本與受影響對象，蒐集意見後依規則決定"
+      "text": "儲值卡餘額借用貨幣的計價尺度表示，但不代表卡片本身具備貨幣的全部功能"
     },
     {
       "id": "B",
-      "text": "只採納聲量最大者且不公開資料"
+      "text": "卡片本身就是任何地方都接受的法定貨幣"
     },
     {
       "id": "C",
-      "text": "先決定結果再挑選支持數據"
+      "text": "以新臺幣顯示即可保證餘額永遠不會遺失"
     },
     {
       "id": "D",
-      "text": "排除少數受影響居民以加快決定"
+      "text": "只要有價格標示，就不需要任何發行與兌付規則"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-civ-bp-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "公共決策應資訊公開、納入受影響者並說明規則與取捨。 本題對應 KG「公 Bp-Ⅳ-2：儲值卡與貨幣差異」。"
+    "explanation": "顯示單位是比較價值的尺度；它不能單獨證明該支付工具的接受範圍、兌付與風險。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf",
+    "sourceLocator": "公立學校公開社會課程與試題入口；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫儲值卡與貨幣的接受範圍、計價、兌付、保存、遺失、退款、數位紀錄與資料界線；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-civ-bp-iv-2"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-civ-bp-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "交易工具與資料判讀",
+      "observedPattern": "公立學校社會科公開試題以生活支付、價格、制度與資料判讀考查概念應用；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "價格、貨幣與生活情境",
+      "observedPattern": "公立學校社會科公開試題以生活支付、價格、制度與資料判讀考查概念應用；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把儲值卡當作支付工具分析，再逐項對照貨幣的接受範圍、計價、價值保存與制度信任；最後只根據題幹資料下結論。",
+  "solutionSteps": [
+    "讀題定位：圈出「價值尺度」以及卡片、現金、餘額、接受範圍、發行者、退款或風險等關鍵資料。",
+    "建立比較表：分開檢查交換媒介、計價單位、價值保存、兌付規則與責任分配；本題核心是「顯示單位是比較價值的尺度；它不能單獨證明該支付工具的接受範圍、兌付與風險。」",
+    "核對正解：選項 A「儲值卡餘額借用貨幣的計價尺度表示，但不代表卡片本身具備貨幣的全部功能」與題幹提供的制度和資料範圍一致。",
+    "排除誘答：找出只因餘額用貨幣單位顯示，就把儲值卡誤認為通用貨幣，或忽略期限、接受範圍與退款規則的說法。",
+    "結論回查：確認答案沒有超出題幹證據，並清楚區分支付工具的便利性與貨幣的完整功能。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

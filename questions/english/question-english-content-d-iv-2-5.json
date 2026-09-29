@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-2-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-2／比較分類排序」task, what is the best way to prepare question 5?",
+  "prompt": "The library rules say: books A and B may be borrowed for 14 days, book C for 7 days, and reference book D cannot leave the library. Which books share the 14-day rule?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-2／比較分類排序."
+      "text": "A and B"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-2／比較分類排序."
+      "text": "A and C"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-2／比較分類排序."
+      "text": "B and D"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-2／比較分類排序."
+      "text": "C and D"
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-2／比較分類排序, question 5."
+    "explanation": "只有 A、B 的借期同為 14 天，因此選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E4%BA%8C%E8%8B%B1%E6%96%87%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "PDF第3頁第25–26題：由公告擷取活動日期與內容細節；本題改以規則文字建立借閱期限分類。",
+    "authoringNote": "以英語課程知識點與公立學校公開段考所呈現的資料判讀能力為參照；題幹、數據、選項、答案、解析與解題活動均獨立撰寫，未複製試卷內容。課程版本研究與全案內容審查未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E4%BA%8C%E8%8B%B1%E6%96%87%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立國昌國中110學年度第2學期二年級第1次段考英文試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第3頁第25–26題：由公告擷取活動日期與內容細節；本題改以規則文字建立借閱期限分類。",
+      "observedPattern": "公告細節題須精確對應條件與對象，不能由相鄰資訊推測；本題期限、書籍代號及選項均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把每本書的借期逐一配對，只挑與「14 days」完全相同的項目；不可將不能外借視為另一種期限。",
+  "solutionSteps": [
+    "目標條件是借閱期限恰為 14 天。",
+    "從規則列出 A＝14 天、B＝14 天、C＝7 天、D＝不可外借。",
+    "保留符合 14 天的 A、B，排除 C 與 D。",
+    "符合的組合是 A and B，選 A。",
+    "逐一對照原規則，確認沒有把 7 天或館內閱覽誤列入 14 天類別。"
+  ]
 }

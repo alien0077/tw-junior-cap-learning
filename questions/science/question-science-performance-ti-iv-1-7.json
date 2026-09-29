@@ -2,23 +2,23 @@
   "id": "question-science-performance-ti-iv-1-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年3月9日校園實驗室的觀察中，針對「ti-Ⅳ-1：改變觀察或實驗方法的結果想像與創新」提出可檢驗的科學問題，若比較 5 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "使用重物測試新紙橋時，哪項最合適？",
   "options": [
     {
       "id": "A",
-      "text": "研究「ti-Ⅳ-1：改變觀察或實驗方法的結果想像與創新」時只改變光照時間，其餘條件一致，設置5組、每組取樣15份並各重複測量4次"
+      "text": "逐步加重、保持安全距離、設定停止條件並記錄失效"
     },
     {
       "id": "B",
-      "text": "研究「ti-Ⅳ-1：改變觀察或實驗方法的結果想像與創新」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "一次堆到最高節省時間"
     },
     {
       "id": "C",
-      "text": "研究「ti-Ⅳ-1：改變觀察或實驗方法的結果想像與創新」時只測量5組中的一組就直接下結論"
+      "text": "為了創新取消護具"
     },
     {
       "id": "D",
-      "text": "研究「ti-Ⅳ-1：改變觀察或實驗方法的結果想像與創新」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "橋塌後繼續操作"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,48 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「ti-Ⅳ-1：改變觀察或實驗方法的結果想像與創新」。"
+    "explanation": "A 同時保留可測試程序和安全底線。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三個公立國中公開自然科評量；僅研究方法改變、預測、控制、創新與安全能力方向，不重製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開自然科評量來源能力方向獨立重寫；情境、選項、答案、解析與五步解題均為原創；待第二輪 AI/Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-performance-ti-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-performance-ti-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "方法改變、預測與探究能力方向",
+      "observedPattern": "公開自然科評量常以方法改變、預測、控制、創新、安全與資料修正要求設計推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "資料比較、安全與方法修正能力方向",
+      "observedPattern": "公開自然科評量常以方法改變、預測、控制、創新、安全與資料修正要求設計推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先寫方法改變和預測，再檢查控制、安全、公平比較與失敗後的修正。",
+  "solutionSteps": [
+    "讀題定位：圈出方法創新核心「safety」。",
+    "列出改變條件、預測理由、控制變因、測量指標、安全與比較範圍。",
+    "逐項比對哪個方案能接受公平測試；正確答案是 A。",
+    "核對理由：A 同時保留可測試程序和安全底線。",
+    "最後說明若結果不符預測，如何保留資料、修正假設並設計下一輪可區分的測試。"
+  ]
 }

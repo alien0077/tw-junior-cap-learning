@@ -24,19 +24,62 @@
   "knowledgeIds": [
     "kg-math-performance-s-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "凸多邊形外角和為 360°；正六邊形各外角相等，所以每角為 360°÷6＝60°。"
+    "explanation": "任一凸多邊形外角和為 360°；正六邊形各外角相等，所以每角=360°÷6=60°，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考角、平行線與多邊形內外角計算及推理題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供角關係、多邊形與平行線截線角能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的角與多邊形方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "鄰補角、對頂角、三角形外角、四邊形內角和、正多邊形內外角與平行線截線角",
+      "observedPattern": "公開數學評量常把角的互補與對頂關係、三角形外角定理、多邊形內角和及正多邊形外角總和結合，要求先辨識幾何關係再計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "鄰補角、對頂角、三角形外角、四邊形內角和、正多邊形內外角與平行線截線角",
+      "observedPattern": "公開數學評量常把角的互補與對頂關係、三角形外角定理、多邊形內角和及正多邊形外角總和結合，要求先辨識幾何關係再計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "鄰補角、對頂角、三角形外角、四邊形內角和、正多邊形內外角與平行線截線角",
+      "observedPattern": "公開數學評量常把角的互補與對頂關係、三角形外角定理、多邊形內角和及正多邊形外角總和結合，要求先辨識幾何關係再計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "正多邊形外角直接用 360° 除以邊數。",
+  "solutionSteps": [
+    "確認正六邊形有 6 個相等外角。",
+    "所有外角總和為 360°。",
+    "計算 360°÷6。",
+    "得到每個外角 60°。",
+    "所以選 B。"
+  ]
 }

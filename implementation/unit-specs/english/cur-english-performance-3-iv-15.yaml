@@ -1,0 +1,117 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-15
+  knowledgeGraphIds: [kg-english-performance-3-iv-15]
+  title: 3-Ⅳ-15：從敘事觀點、語氣與目的辨識作者立場
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: '3-Ⅳ-15：能分析及判斷文章內容，了解作者寫作的目的'
+    curriculumIntent: 分辨敘事者的知識界線、作者態度與語氣、文本對受眾的目的，並以相關證據限制主張範圍。
+    publisherEvidence:
+      nani: {status: pending, required: true}
+      kanghsuan: {status: pending, required: true}
+      hanlin: {status: pending, required: true}
+    fusionRule: 公校課程計畫定位不等同教材全文；完成三版本實際可取得內容研究和差異比較後才能宣稱融合。
+    currentEvidenceStatus: curriculum-and-kg-grounded; public-school-plan-locators-recorded; publisher-full-text-fusion-pending
+  learningGoals:
+  - 由第一人稱可觀察事件和未知心理推斷敘事者的知識範圍。
+  - 區分評價詞所表達的態度與可查核的時間、數量等事實。
+  - 從文本結構、語氣和讀者下一步推論寫作目的。
+  - 評估證據與主張的相關性及樣本限制，不把局部經驗擴大為普遍結論。
+  prerequisites:
+  - 能從原創短文找出說話者、事件和評價詞。
+  - 能分辨直接觀察、推測和作者明說的不確定範圍。
+  coreConcepts:
+  - 敘事觀點限制文本可確知的資訊，不等於人稱代名詞的辨識。
+  - 態度和語氣需由具體選字、轉折或結尾支持，不能代替事實證據。
+  - 寫作目的連結文本結構、受眾和希望讀者採取的下一步。
+  - 證據需與主張相關且範圍足夠；小樣本只能支持有限結論。
+  misconceptions:
+  - 第一人稱敘事者被誤認為知道角色內心或場外事件。
+  - 把 wonderfully／unfortunately 等評價語當成客觀測量。
+  - 把招募、說服或報告混為一談，只看主題名詞不看讀者行動。
+  - 以少數熟人訪談推論整個年級或全校都持同一態度。
+  contentFlow:
+  - 'hook: 比較同一敘事者的親見動作與明說未知計畫，先預測哪些推論越界。'
+  - 'predict: 閱讀節錄後先選敘事者可知、態度、目的或證據範圍的判斷。'
+  - 'manipulate: 逐階切換文本類型和分析焦點，標記可觀察事件、評價詞、行動呼籲或樣本數。'
+  - 'observe: 核對線索是否直接支持所選判斷，並察看作者自己保留的限制。'
+  - 'explain: 說明文本線索如何連到敘事觀點、語氣、目的或有限主張。'
+  - 'transfer: 在新生歡迎海報中整合接納語氣和行動目的，再用 exit ticket 自我檢核。'
+  visualizations:
+  - 以換行保留短文本句界；不需要外部圖表或顏色才能理解證據。
+  - 以文字進度、原生選項與即時回饋顯示目前分析焦點。
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-15-I01
+    component: TextEvidenceBlock
+    purpose: 在六種原創校園／公共文本中，逐階分析觀點、態度、目的、證據和適當推論範圍。
+    initialState: {taskIndex: 0, answers: [], showAnswer: false}
+    studentActions:
+    - 閱讀本階完整原創節錄並回答單一分析問題。
+    - 依問題標記觀點限制、評價詞、讀者行動、比較結果或樣本限制。
+    - 錯答時依文本內具體詞句回讀並重試；答對才開啟下一個分析焦點。
+    - 完成後可重設重做，並將分析策略遷移到不同讀者的歡迎海報。
+    visualRules:
+    - 每階只顯示當前一段文本，不先揭露答案；所有文字以可換行純文字呈現。
+    - 錯誤與正確狀態皆有文字，不以顏色作唯一訊號。
+    - 使用標記清楚的原生 radio／fieldset／legend／button 及 aria-live status。
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-15-I01
+      trigger: 將作者未親見的心理、評價語或小樣本陳述誤當成普遍事實。
+      prompt: 請回到原句指出可觀察／可查核的線索，並說明它能支持到哪個範圍。
+      expectedEvidence: 引用正確節錄線索，分清事實與態度，並保留樣本或敘事知識界線。
+    feedback:
+      correct: 指出支持判斷的詞句及證據邊界，並在新文本中改變分析角度。
+      incorrect: 提供對應的 I do not know、評價副詞、行動動詞或樣本限制回讀提示，不直接說出答案。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: accessibility-pattern-only
+    application: 使用原生選擇控制和狀態播報；文本、問題和回饋均為本課獨立創作。
+  - refId: w3c-reflow
+    reuseDecision: accessibility-pattern-only
+    application: 長短句在窄畫面自然換行，回饋與選項不需水平捲動。
+  capTransfer:
+    questionType: 短文主張、態度、寫作目的與證據界線判讀
+    stemConstraint: 使用新作者、新受眾和新情境；測試線索—判斷—限制，不重用本課原文或公校原題。
+    requiredResponse: 選答並說明一項文本線索及該線索不能證明的事。
+    scoring: 判斷正確 1、證據相關 1、結論範圍適切 1。
+  exitTicket:
+    prompt: 作者說「我訪問了三位同社團朋友，大家都喜歡」，這能否代表全校？還要看哪項資訊？
+    successCriteria:
+    - 指出三位朋友僅代表受訪樣本。
+    - 不把主觀喜歡當全校客觀結果。
+    - 說明需更廣且具代表性的資料才能擴大結論。
+  expressionExtension:
+    applicable: true
+    task: 為校刊寫兩句歡迎新生的英文文案，再以繁中註明一處語氣線索及一項希望讀者採取的行動。
+    constraint: 學生先寫；提示只指出讀者、語氣或行動目的缺漏，不代寫完整文案。
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 原生單選、題組標籤、文本閱讀順序和 aria-live 回饋可讀；進度及完成狀態有文字。
+    reducedMotion: 無必要動畫；減少動態偏好下仍可完成各階。
+  testCases:
+  - 初始只顯示第一人稱文本，答案與後續分析階段未揭露。
+  - 錯答不前進、保留選項並顯示對應文本線索提示；正答才解鎖下一階。
+  - 六階確實涵蓋敘事知識限制、評價語氣、招募目的、相關比較證據、樣本限制及受眾遷移。
+  - 課程重載恢復 lesson instance 進度，重設可回到第一階；完成訊息說明本課分析成果。
+  - 320／375／768 寬度控制項可鍵盤操作，文本與回饋無水平溢位。
+  - 外部網路失效時，lesson 內嵌原創文本仍可完成全部互動作為離線 fallback。
+  definitionOfDone:
+  - 課綱代碼、KG ID、教材標題及官方來源定位一致。
+  - 三版本全文研究／差異融合完成前保持 pending，不將校方課程計畫誤稱為出版社教材證據。
+  - 六階互動、文本專屬迷思提示及新受眾遷移均通過自動契約測試。
+  - 真實瀏覽器、鍵盤、螢幕閱讀器、內容與版權 QA 完成並留證前不升級 QA 狀態。
+  - 全科獨立性與發布 gate 通過前，lesson 和題目維持 draft。
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-15
+    role: official-curriculum-source-of-truth

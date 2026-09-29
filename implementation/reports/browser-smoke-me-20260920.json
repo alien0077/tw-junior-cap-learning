@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-09-20",
+  "status": "partial",
+  "scope": "implementation/workbench.html",
+  "browserSmoke": "not-run-to-page",
+  "failure": {
+    "stage": "Playwright Chromium launch",
+    "error": "Chrome for Testing and /Applications/Google Chrome.app both terminated with SIGABRT before page navigation",
+    "environmentEvidence": "Browser executable installation completed; failure persisted with both Playwright-managed and system Chrome executables."
+  },
+  "contractEvidence": {
+    "command": "npm test",
+    "status": "passed",
+    "results": [
+      "interactive engine contract: ok",
+      "DOM renderer contract: ok",
+      "student lesson shell contract: ok",
+      "responsive and accessibility contract: 320/375/768 ok",
+      "workbench full bundle traversal: 1027/1027 lessons rendered",
+      "golden reference formula runtime: 3/3 identities verified",
+      "composition attempt contract: ok"
+    ]
+  },
+  "interpretation": "資料契約與 Node runtime 已驗證；不得把本報告解讀為真實 Chromium、螢幕閱讀器或內容教學 QA 完成。",
+  "subtasks": "none"
+}

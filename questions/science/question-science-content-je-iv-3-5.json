@@ -2,23 +2,23 @@
   "id": "question-science-content-je-iv-3-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年4月17日校園實驗室的觀察中，將 107℃ 的金屬片放入 36℃ 的水中，研究「Je-Ⅳ-3：化學平衡與溫度、濃度的影響」時，最初的熱傳方向為何？",
+  "prompt": "下列哪項最能區分『反應速率變快』和『平衡產物比例增加』？",
   "options": [
     {
       "id": "A",
-      "text": "由金屬片傳向水"
+      "text": "分別觀察達平衡所需時間與平衡後各物質比例，不能用單一瞬間濃度代替兩者"
     },
     {
       "id": "B",
-      "text": "由 36℃ 的水傳向 107℃ 金屬片"
+      "text": "只測量反應剛開始的溫度"
     },
     {
       "id": "C",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "只看氣泡是否變大"
     },
     {
       "id": "D",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "反應越快就必定有更多平衡產物"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,53 @@
   "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 107℃ 金屬片傳向 36℃ 的水。 本題對應 KG「Je-Ⅳ-3：化學平衡與溫度、濃度的影響」。"
+    "explanation": "速率需由時間或曲線斜率判斷，平衡位置需由最後組成比例判斷；催化劑可加快達平衡但不必改變比例。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的可逆反應、動態平衡、溫度／濃度、圖表與製程能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-je-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-je-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "可逆反應、平衡、溫度濃度與圖表判讀",
+      "pattern": "取由平衡資料、反應條件與圖表推論可逆反應變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由平衡資料、反應條件與圖表推論可逆反應變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "平衡位移、反應條件、工業與生活情境",
+      "pattern": "取從資料曲線、條件改變與製程情境判斷平衡位置及收率的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從資料曲線、條件改變與製程情境判斷平衡位置及收率的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用不同時間尺度和指標辨識兩個概念。",
+  "solutionSteps": [
+    "設定速率指標，例如達固定量所需時間。",
+    "設定平衡位置指標，例如最後濃度比例。",
+    "分別記錄兩種資料。",
+    "排除把速率快直接等同產量高。",
+    "所以 A 正確。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

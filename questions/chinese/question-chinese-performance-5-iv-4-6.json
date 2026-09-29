@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-5-iv-4-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀食譜的文字與步驟圖時，哪項做法最能確保操作正確？",
+  "prompt": "歷史文章與年表對某次遷徙的年份記載不同，哪種方法最可靠？",
   "options": [
     {
       "id": "A",
-      "text": "核對材料數量、步驟順序與圖示"
+      "text": "先對照年表事件、文章敘述與來源註記，確認是不同階段、紀年方式或資料誤差"
     },
     {
       "id": "B",
-      "text": "只記住結論，不理解理由"
+      "text": "直接選較早出現的年份"
     },
     {
       "id": "C",
-      "text": "把不同情境混為一談"
+      "text": "把兩個年份平均成一個新年份"
     },
     {
       "id": "D",
-      "text": "跳過檢查步驟"
+      "text": "只相信篇幅較長的資料"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "操作文本同時提供材料、順序與視覺線索，三者需互相核對。"
+    "explanation": "跨域時間判讀要先對齊事件定義、階段與紀年方式；衝突資料需要查來源，不可用直覺平均。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-performance-5-iv-4-6.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫圖文整合、資料可信度、跨域詞義、因果、問題拆解、時間線、模型限制、多資料決策、證據轉述及整合解題；未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-26",
-  "lessonId": "lesson-chinese-performance-5-iv-4"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-chinese-performance-5-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "圖表、資料與跨文本閱讀",
+      "observedPattern": "公開國文評量常以圖表、跨文本、資料來源、因果推論與生活情境檢查整合解題；本題改寫為跨域資料閱讀任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀、推理與問題解決",
+      "observedPattern": "公開國文評量常以圖表、跨文本、資料來源、因果推論與生活情境檢查整合解題；本題改寫為跨域資料閱讀任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先界定問題，再分別讀文字、表格或模型；對齊變項、單位、時間與來源後提出推論，檢查因果、限制和替代解釋，最後回扣題目。",
+  "solutionSteps": [
+    "讀題定位：圈出「時間線整合」，確認題目要整合圖文、跨文本、概念、因果、時間、模型、決策或證據轉述。",
+    "拆解資料：分開閱讀文字、表格、圖例與情境，對齊變項、單位、時間和限制；本題核心是「跨域時間判讀要先對齊事件定義、階段與紀年方式；衝突資料需要查來源，不可用直覺平均。」",
+    "核對正解：選項 A「先對照年表事件、文章敘述與來源註記，確認是不同階段、紀年方式或資料誤差」能由多份資料共同支持，並保留推論強度與條件。",
+    "排除誘答：不要只看單一數字、標題、最短路線或生活直覺，也不要把相關變成必然因果。",
+    "完成推理回查：依問題→資料→對齊→計算或比較→推論→限制與替代解釋重做，確認答案可追溯。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

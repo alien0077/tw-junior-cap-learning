@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "校刊介紹校園老樹，先說明樹齡與位置，再列出樹醫檢查結果。若要判斷文章是否有充分根據，最應查看什麼？",
+  "prompt": "同一份校園聲音調查，要給校長決定隔音工程，也要給學生了解午休安靜區。最合理的說明策略是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "標題是否使用最大的字"
+      "text": "保留共同資料，但分別強調工程成本／效果與學生可採取的使用方式"
     },
     {
       "id": "B",
-      "text": "文章是否每句都押韻"
+      "text": "對兩種讀者都只寫同一句『噪音很嚴重』"
     },
     {
       "id": "C",
-      "text": "作者是否只使用第一人稱"
+      "text": "給學生看成本明細，給校長看沒有來源的感受"
     },
     {
       "id": "D",
-      "text": "資料來源、觀察方法與數值是否交代清楚"
+      "text": "因為資料相同，所以說明目的與寫法一定不能不同"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "說明性文章的可信度要看資料來源、方法與數值，而非版面或押韻。"
+    "value": "A",
+    "explanation": "說明文本要依讀者目的調整選材與解釋；同一資料可支持不同任務，但不能改變原始數值或省略必要限制。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "公開國中教育會考／公立國中段考的說明文與資料判讀能力方向（證據與方法）；另以國語文課綱核對：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; removed old year labels and did not reproduce source wording, options, passage, figure, or answer. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編說明閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明文、圖表與資料理解",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說明方法、因果與閱讀推論",
+      "observedPattern": "公立學校國文公開試題常以說明對象、組織方式、圖表資料、比較、因果、問題解決與讀者理解檢查說明文本能力；本題以校園聲音地圖情境整合改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認說明對象與讀者目的，再沿資料—組織—解釋—方案—評估的路線閱讀，最後檢查來源、條件與不確定性是否被保留。",
+  "solutionSteps": [
+    "讀題定位：圈出「讀者與目的」與說明對象、讀者目的、資料、定義、分類、比較、因果或方案。",
+    "追蹤說明路線：確認作者先讓讀者看見什麼，再如何整理、解釋、比較與行動；本題核心是「說明文本要依讀者目的調整選材與解釋；同一資料可支持不同任務，但不能改變原始數值或省略必要限制。」",
+    "核對正解：選項 A「保留共同資料，但分別強調工程成本／效果與學生可採取的使用方式」能回扣資料、讀者需要與推理限制，沒有把視覺或口號當成證明。",
+    "排除誘答：檢查是否忽略單位／來源／樣本、混淆定義與分類、把相關當因果，或提出沒有檢查方式的方案。",
+    "結論回查：用『對象—資料—組織—解釋—行動—評估』重讀，確認文字能讓不同讀者理解且知道哪些仍待觀察。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

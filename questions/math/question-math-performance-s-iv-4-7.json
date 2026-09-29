@@ -2,23 +2,23 @@
   "id": "question-math-performance-s-iv-4-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "三角形 ABC 平移後得到 A′B′C′。若 AB＝7 公分，則 A′B′ 為多少？",
+  "prompt": "平移、旋轉與鏡射都屬於平面上的剛性變換，下列哪一項一定保持不變？",
   "options": [
     {
       "id": "A",
-      "text": "3.5 公分"
+      "text": "圖形所在象限"
     },
     {
       "id": "B",
-      "text": "7 公分"
+      "text": "對應線段長度"
     },
     {
       "id": "C",
-      "text": "14 公分"
+      "text": "每個點的坐標"
     },
     {
       "id": "D",
-      "text": "無法判定"
+      "text": "圖形與原點的距離"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "平移是剛性變換，會保留對應邊長，因此 A′B′＝AB＝7 公分。"
+    "explanation": "剛性變換保持距離與角度，因此對應線段長度不變；位置與坐標可能改變，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考全等、平移、旋轉與鏡射的坐標變換及性質題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供全等、平移、旋轉、鏡射與剛性變換能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的剛性變換方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平移、軸對稱、中心對稱、旋轉、剛性變換、長度角度面積保持與全等",
+      "observedPattern": "公開數學評量常要求依變換方向更新坐標，或判斷平移、旋轉、鏡射對長度角度與面積的影響，最後連結剛性變換與全等；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平移、軸對稱、中心對稱、旋轉、剛性變換、長度角度面積保持與全等",
+      "observedPattern": "公開數學評量常要求依變換方向更新坐標，或判斷平移、旋轉、鏡射對長度角度與面積的影響，最後連結剛性變換與全等；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平移、軸對稱、中心對稱、旋轉、剛性變換、長度角度面積保持與全等",
+      "observedPattern": "公開數學評量常要求依變換方向更新坐標，或判斷平移、旋轉、鏡射對長度角度與面積的影響，最後連結剛性變換與全等；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分形狀量與位置量：剛性變換保留前者，不保留後者。",
+  "solutionSteps": [
+    "列出剛性變換可能改變位置。",
+    "因此象限、點坐標及到原點距離不一定固定。",
+    "剛性變換保留任兩點間距離。",
+    "所以對應線段長度保持不變。",
+    "選 B。"
+  ]
 }

@@ -1,0 +1,138 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-social-content-geo-af-iv-3
+  knowledgeGraphIds:
+  - kg-social-content-geo-af-iv-3
+  title: 地 Af-Ⅳ-3：區域發展空間差異
+  subject: social
+  socialDiscipline: geography
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 地 Af-Ⅳ-3：區域發展空間差異
+    curriculumIntent: 地 Af-Ⅳ-3：區域發展空間差異
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 以已讀的出版社自有翰林頁面及明確標示的公校版本課程結構作概念交叉參照；南一、康軒仍只有索引／課程定位，不得宣稱三版課文級融合已完成
+    currentEvidenceStatus: curriculum-and-kg-grounded; hanlin-publisher-topic-page-read; nani-and-kanghsuan-textbook-evidence-pending; fusion-review-pending
+  learningGoals:
+  - 以資料、時空或制度證據解釋「地 Af-Ⅳ-3：區域發展空間差異」
+  - 比較至少兩個因素並說明因果或空間關係
+  - 把概念遷移到新的會考型資料情境
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 地 Af-Ⅳ-3：區域發展空間差異
+  - 表徵／證據與結論的對應
+  - 錯誤答案所反映的概念差異
+  misconceptions:
+  - 把「地 Af-Ⅳ-3：區域發展空間差異」的背景、證據與結果混為同一層次
+  - 把記憶答案當成理解證據
+  - 忽略題幹中的限制條件或單位
+  contentFlow:
+  - 'predict：針對區域發展差異，先預測不同地區的資源、人口與服務資料會呈現何種空間分布；先不把差異直接當成原因。'
+  - 'manipulate：作答前先校準各組比較資料的年份、分母、單位及區域尺度；遇到不可比欄位就標記，不拿數字差當成實際發展幅度。'
+  - 'observe：讀取教材中的原創區域比較資料，逐筆標出集中、外流或服務落差的可見資料及其空間位置。'
+  - 'explain：以四步 guided-choice 檢查比較口徑、聚集效應、人口—服務負向回饋與公平方案；每題說明空間機制及尚缺的因果證據。'
+  - 'observe：對照政策方案的受益群體、服務可近性和區域尺度，分開記錄資料呈現的差距與尚未驗證的影響。'
+  - 'transfer：將證據判讀用於偏遠醫療可近性的新政策情境，提出可比較指標、資料來源及不宜外推的範圍。'
+  - 'exit-ticket：用四句分別寫出觀察、可支持的推論、證據限制及需要再查的資料。'
+  visualizations:
+  - lesson-body：顯示完整七段原創教學正文，不以六段摘要取代
+  - guided-choice：每題均有單元專屬情境、唯一最佳答案、概念解釋及錯誤選項提示
+  interactiveBlocks:
+  - id: CUR-SOCIAL-CONTENT-GEO-AF-IV-3-I01
+    component: GuidedChoiceBlock
+    purpose: 以四個遞進的區域地理情境練習指標口徑、聚集效應、負向回饋及公共服務方案評估
+    initialState:
+      currentStep: 0
+      selectedAnswers: []
+      showAnswer: false
+    studentActions:
+    - 以鍵盤或觸控選答四個單元專屬情境
+    - 先看分層提示，再以新題重試錯誤概念
+    - 使用資料口徑、因果限制與政策指標說明判斷
+    visualRules:
+    - 選項以文字與原生按鈕表達，不以顏色作為唯一判斷線索
+    - 作答回饋使用 aria-live polite 並保留可見文字
+    - 窄螢幕不得裁切核心題幹、選項與回饋
+    misconceptionChecks:
+    - id: MC-CUR-SOCIAL-CONTENT-GEO-AF-IV-3-I01
+      trigger: 以不同年份、分母或單位直接比較區域數值，或將同時變化當成已證明因果
+      prompt: 請指出哪一個證據支持你的判斷。
+      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+    feedback:
+      correct: 顯示該題專屬原理、證據限制或方案評估理由。
+      incorrect: 顯示該題專屬一階提示；學生可改選，不能把錯誤選項直接當作診斷標籤。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課不宣稱採用 PhET 模擬；只借鑑先思考、操作後解釋的教學順序，實際實作為本課自編 guided-choice。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課以原創區域情境讓學生選答並讀取回饋；沒有外連活動依賴，資料與問題均自行撰寫。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "互動選項以原生 button 呈現，使用 aria-live 回饋；鍵盤操作不依賴拖曳或顏色辨識。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "教材由既有 lesson details landmark 呈現；此引用只描述結構與可及性方法，非內容來源。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「地 Af-Ⅳ-3：區域發展空間差異」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字／英文短段落，將「地 Af-Ⅳ-3：區域發展空間差異」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 學生頁載入時完整顯示七段 `teaching.body` 正文，且不以摘要段落覆蓋或漏掉正文。
+  - 每題選錯顯示對應的一階提示；選對顯示本題原理、限制或下一步，不先把正解寫入題幹。
+  - 四題須分別檢查可比口徑、聚集效應、因果推論界線與公共服務公平方案，答案鍵及選項數一致。
+  - 在 320px、375px 與 768px 寬度，以鍵盤操作全部四題；題幹、控制項、回饋不得溢位或失去焦點。
+  - 以新資料執行「地 Af-Ⅳ-3：區域發展空間差異」的 CAP transfer：換一個情境但保留「地 Af-Ⅳ-3：區域發展空間差異」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
+  - fallback：本互動不依賴外部資料；封鎖來源連線時，lesson 內建正文及四題仍可完成練習，不得聲稱已取得即時外部證據。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～24 頁／PDF 第 26～28 頁；國民中學教育階段學習內容；官方代碼 地 Af-Ⅳ-3
+    role: official-curriculum-source-of-truth

@@ -2,41 +2,76 @@
   "id": "question-social-content-civ-bb-iv-1-3",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2024年2月4日校園公民論壇的資料中，社區有 100 萬元預算處理「公 Bb-Ⅳ-1：家庭外的團體參與」，居民意見不同。哪項決策方式較適當？",
+  "prompt": "社區會議只有五位長者出席，卻宣布『全體居民都支持拆除遊樂場』。最適切的質疑是？",
   "options": [
     {
       "id": "A",
-      "text": "只採納聲量最大者且不公開資料"
+      "text": "檢查出席者組成、未出席者意見與授權程序，不能把一次少數出席直接等同全體共識"
     },
     {
       "id": "B",
-      "text": "先決定結果再挑選支持數據"
+      "text": "只要會議有正式紀錄，就一定代表每一位居民"
     },
     {
       "id": "C",
-      "text": "排除少數受影響居民以加快決定"
+      "text": "長者居住較久，所以必然可以代表所有年齡層"
     },
     {
       "id": "D",
-      "text": "公開「公 Bb-Ⅳ-1：家庭外的團體參與」方案、成本與受影響對象，蒐集意見後依規則決定"
+      "text": "沒有出席的人既然沉默，就可視為同意拆除"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-civ-bb-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "公共決策應資訊公開、納入受影響者並說明規則與取捨。 本題對應 KG「公 Bb-Ⅳ-1：家庭外的團體參與」。"
+    "value": "A",
+    "explanation": "團體參與需要檢查誰能發言、誰被排除與代表如何授權，不能只看會議形式。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf",
+    "sourceLocator": "國立卓蘭高中附設國中部公開社會課程計畫；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫團體功能、自願參與、代表性、利益表達、志工責任、參與障礙、團體內民主、社區合作、資訊查證與公共影響；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-civ-bb-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-civ-bb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "社會團體、利益表達與公共推理",
+      "observedPattern": "公立學校社會科公開試題常以團體、公共議題、利益表達與多重資料考查公民參與推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "社區參與、組織資料與多方觀點",
+      "observedPattern": "公立學校社會科公開試題常以團體、公共議題、利益表達與多重資料考查公民參與推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認團體的目標、成員與公共影響，再檢查代表性、參與門檻、資料可靠性與程序，最後評估行動是否可負責與可監督。",
+  "solutionSteps": [
+    "讀題定位：圈出「代表性」與團體、成員、公共議題、程序或資料線索。",
+    "整理證據：分開團體目標、代表性、參與障礙、公共影響與責任；本題核心是「團體參與需要檢查誰能發言、誰被排除與代表如何授權，不能只看會議形式。」。",
+    "核對正解：選項 A「檢查出席者組成、未出席者意見與授權程序，不能把一次少數出席直接等同全體共識」能回應題幹的團體參與與公共推理。",
+    "排除誘答：檢查是否把會員人數、出席、善意、轉發量或單一團體主張直接當成全體共識。",
+    "結論回查：確認答案同時顧及自願參與、資訊、包容、程序、代表性與可檢討責任。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

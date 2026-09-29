@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance i."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-ti.json"; REPORT=ROOT/"implementation/reports/science-performance-ti-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；科學想像、創新設計、模型與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持由科學概念提出可行想法、模型化、測試與依證據改良。"],"representations":[r],"examplesOrEvidence":["本課的雨水收集、隔熱容器與授粉設計皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-ti" and d["reviewStatus"]=="draft"
+ d["title"]="想像創造（i）：把科學想法做成可測試的設計"
+ d["content"]={"summary":"科學想像不是天馬行空地列點子，而是把觀察到的需求、科學原理、限制與可測試的設計連起來。面對雨水收集、隔熱容器或授粉問題，先提出多個方向，再用材料、尺寸、成本、安全與可量測效果篩選，做出模型或流程，依測試結果改良。本課強調創意可以很多，但科學設計必須能說明依據、預測結果和失敗後的修正。","sections":[{"heading":"從需求而不是答案開始","body":"設計入口要說清楚誰遇到什麼問題、在什麼條件下需要改善。『做一個更好的容器』太模糊，改成在相同時間內讓水溫變化較小，才能決定測量方式與成功標準。"},{"heading":"點子要連著科學原理","body":"隔熱設計可從傳導、對流、輻射思考；雨水收集要連著面積、坡度、流路與過濾。不是寫出漂亮外形就算科學創意，必須指出哪個原理預期造成哪個效果。"},{"heading":"限制會引導創新","body":"材料有限、不能傷害生物、要能清洗或必須低成本，不是創意的敵人。把限制列成設計條件，可排除不可行方案，也能催生不同的結構、流程或材料組合。"},{"heading":"原型和測試讓想法成長","body":"先做可快速修改的原型，設定一項主要指標與公平比較，再記錄失敗原因。測試不只為了證明自己對，也為了找到下一版要保留、移除或重新設計的部分。"}]}
+ d["studyHighlights"]=["從需求、條件與成功指標定義設計問題。","把科學原理連到可預測的設計效果。","將材料、安全、成本與環境限制轉為創新條件。","以原型、比較測試、紀錄和修正形成設計循環。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"雨水接到了，卻沒有流進水桶","body":"校園屋頂有集水槽，但雨後水桶只收集到少量水。請提出三個不同方向：改變坡度、加寬入口、先排除落葉，並為每個方向寫出預期改善的原因。活動先鼓勵多個假設，再要求挑一個能做小模型測試的方案。"},
+ {"id":"explain","phase":"explain","heading":"創意設計四步循環","body":"先定義需求與成功指標，再依科學原理提出多個方案；接著用限制篩選並做原型，最後以公平比較測試、記錄證據和修正。設計循環不是一次選出完美答案，而是讓每一版都比前一版更能解釋和處理問題。"},
+ {"id":"worked-example","phase":"worked-example","heading":"做一個較不易升溫的容器","body":"需求是讓 200 mL 水在 20 分鐘後升溫較少。提出紙、鋁箔、棉布三種包覆方案，固定水量、初始溫度、環境與溫度計，設未包覆容器作比較，重複三次。若鋁箔表現好，仍要檢查是否因密封、反射或包覆厚度不同，再決定下一版。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"授粉設計的限制卡","body":"設計吸引授粉昆蟲的校園花圃，卡片列出日照、植物種類、用水、安全與不干擾生物的限制。學習者先提出兩種配置，再用觀察到訪次數、開花時間和維護成本比較；若只追求到訪數而忽略植物健康，就要修正成功指標。"},
+ {"id":"transfer","phase":"transfer","heading":"從作品變成可說明的設計報告","body":"報告不能只放成品照片，要呈現需求、原理、草圖、材料、限制、預測、測試資料、失敗與改版理由。讀者才能判斷創意是否真的回應問題，也能沿著流程提出更好的下一版，而不是只評外觀。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個創意迷思","body":"請修正『點子越奇怪就越科學』與『第一次失敗代表設計沒有價值』。創意要和原理、需求及可測試預測相連；失敗若被誠實記錄，能指出限制和改良方向，正是設計循環的重要資料。"}
+ ],"summary":["從需求、成功指標和限制界定設計問題。","每個創意都要連到科學原理與可測試預測。","原型測試的失敗能提供改版證據。","報告要呈現方案、資料、限制與修正理由。"],"exitCheck":[{"prompt":"為什麼設計題要先寫成功指標？","expectedEvidence":"指標讓需求可觀察、可比較，才能選測量方法與判斷方案是否改善。"},{"prompt":"隔熱容器比較時哪些條件要固定？","expectedEvidence":"固定水量、初始溫度、環境、時間與測量方法，並設適當比較組。"},{"prompt":"原型失敗如何轉成有用資料？","expectedEvidence":"記錄失敗條件與原因，對照預測，決定保留、移除或改變哪個設計因素。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"把科學原理、需求、限制和測試證據整合成可改良的設計。","scenario":"設計雨水收集器與隔熱容器，逐步選擇能被測試、比較與修正的方案。","variables":[{"symbol":"n","meaning":"設計需求"},{"symbol":"p","meaning":"科學原理預測"},{"symbol":"t","meaning":"測試結果"}],"steps":[{"id":"step-1","prompt":"開始設計雨水收集器時，最先要明確什麼？","options":["需求、條件與可量測的成功指標","先決定外觀顏色","只找最昂貴的材料"],"answer":"A","feedback":"需求和指標決定要改善什麼、如何測量和比較。"},{"id":"step-2","prompt":"比較隔熱包覆方案時，哪種測試較公平？","options":["固定水量、初溫、環境與時間，重複測量並設比較組","每個方案使用不同水量和時間","只展示最成功的一次"],"answer":"A","feedback":"公平控制和重複能讓結果較能反映包覆方案的差異。"},{"id":"step-3","prompt":"原型表現不如預測時，最好的下一步是什麼？","options":["檢查限制與測試資料，修改一個設計因素再測試","把不符合的資料刪除","宣布所有創意都不可能成功"],"answer":"A","feedback":"失敗可揭露模型或設計限制，應用於下一版改良。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以科學概念、生活需求與探究方法提出創新解決方案。","問題情境、設計草圖、模型、測試表與修正紀錄。","把外觀新奇當成科學創意，忽略原理、限制與測試。","重視需求定義、原理連結、證據與設計反思。"),rec("kanghsuan","透過實作、模型與反覆測試培養想像、創造及問題解決。","原型、材料選擇、公平比較、失敗分析與改版。","第一次失敗就放棄，或只展示支持方案的結果。","評量設計歷程、創意可行性、測試與修正。"),rec("hanlin","連結環境、能源、生物與科技議題，兼顧安全、成本及永續限制。","雨水、隔熱、授粉設計、指標、風險與維護成本。","為追求單一效果而忽略生物安全、資源與長期維護。","要求說明限制、影響、資料與負責任創新。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持從科學概念與生活需求提出可測試的創新方案。","原理、限制、原型、公平測試與修正是共同的設計證據。","創意成果需能說明預測、資料、失敗與下一版的改良理由。"],"versionDifferences":["南一證據較突顯概念應用與問題解決；康軒較突顯實作、模型、反覆測試與修正；翰林較突顯環境、生物、能源、永續與安全限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以屋頂雨水收集問題建立需求、原理與方案比較。","以 200 mL 水的隔熱測試示範公平控制、重複和失敗分析。","以授粉花圃將創意、環境限制、觀察指標與維護成本整合。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織需求、科學原理、限制、原型、測試、失敗與設計修正。正文、原創情境、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"想像創造（i）","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

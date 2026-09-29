@@ -2,23 +2,23 @@
   "id": "question-english-performance-1-iv-7-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「1-Ⅳ-7／簡短說明敘述情境主旨」task, what is the best way to prepare question 6?",
+  "prompt": "The school library recorded the number of graphic novels borrowed in one week. Grade 7: 18; Grade 8: 26; Grade 9: 21. The librarian plans to order more books for the grade with the highest borrowing number.\n\nWhich grade should receive the largest new order based on the record?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 1-Ⅳ-7／簡短說明敘述情境主旨."
+      "text": "Grade 7, because 18 is the smallest number"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 1-Ⅳ-7／簡短說明敘述情境主旨."
+      "text": "Grade 9, because it is the oldest grade"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 1-Ⅳ-7／簡短說明敘述情境主旨."
+      "text": "All grades equally; the numbers are identical"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 1-Ⅳ-7／簡短說明敘述情境主旨."
+      "text": "Grade 8, because 26 is the largest number"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 1-Ⅳ-7／簡短說明敘述情境主旨, question 6."
+    "value": "D",
+    "explanation": "三個數值依序為 18、26、21；26 最大，且規則說要為借閱最多的年級多訂書。 正確答案：D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
-    "sourceLocator": "114 年國中教育會考英語科閱讀公開試題；研究簡短說明與敘述情境的主旨、因果、目的、步驟與資訊關係判讀；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=432&cfsn=2875&fn=113-1-%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%839%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E9%82%B1%E6%9B%89%E8%96%87.pdf&op=dlfile",
+    "sourceLocator": "PDF第4頁第37題（比較圖表資訊）；僅改寫閱讀能力模式，不複製原題內容。",
+    "authoringNote": "題幹、短文、選項、解析與遷移內容均為原創；以公立學校公開英文原卷的指定閱讀題型作 pattern-only 參照。內容維持 draft；Terra 審查已依使用者指示取消。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1-iv-7"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-1-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=432&cfsn=2875&fn=113-1-%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%839%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E9%82%B1%E6%9B%89%E8%96%87.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中113學年度第一學期九年級第一次段考英文試題與答案；僅參考閱讀題型，不複製原文、人物、數據、選項或答案。",
+      "year": "113-1",
+      "subject": "english",
+      "locator": "PDF第4頁第37題（比較圖表資訊）",
+      "observedPattern": "跨類別比較圖表中不同區段的數值；本題自行提供全新圖書館借閱表與比較目標。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "圖表比較：先把題目要求轉成明確閱讀任務，再圈出支持答案的原文線索，逐一排除與文本矛盾或超出文本的說法。",
+  "solutionSteps": [
+    "把題目要求轉成比較目標：找借閱數最高的年級。",
+    "逐一對照資料：七年級 18、八年級 26、九年級 21。",
+    "先比較 26 與 18，再比較 26 與 21，確認 26 最大。",
+    "依館員規則，最高借閱量對應最多新書訂購。",
+    "答案選 D；圖表題先讀比較條件，再找最大／最小值，不要被年級年齡帶偏。"
+  ]
 }

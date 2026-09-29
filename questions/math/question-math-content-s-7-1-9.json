@@ -2,23 +2,23 @@
   "id": "question-math-content-s-7-1-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "三點 A、B、C 不共線時，能形成哪一種基本圖形？",
+  "prompt": "學生把『一端點並向右延伸』的圖形命名為線段 XY。哪個回饋最適當？",
   "options": [
     {
       "id": "A",
-      "text": "三角形"
+      "text": "正確，因為線段一定向右"
     },
     {
       "id": "B",
-      "text": "一條直線"
+      "text": "錯誤，應先確認它是射線，線段必須有兩個端點"
     },
     {
       "id": "C",
-      "text": "一個點"
+      "text": "正確，因為畫得越長越接近線段"
     },
     {
       "id": "D",
-      "text": "兩條平行線"
+      "text": "錯誤，所有圖形都只能用一個字母"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "三個不共線點互相連結可形成三角形。"
+    "value": "B",
+    "explanation": "一端點加一個方向代表射線，不是線段；線段必須有兩個端點，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 簡單圖形與幾何符號 題型與官方課綱 KG kg-math-content-s-7-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學資料僅供簡單圖形與幾何符號能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開數學資料的幾何語言能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-7-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-7-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "簡單圖形、點線角、線段／射線／直線辨識與幾何符號命名",
+      "observedPattern": "公開學校數學資料常以圖形元素、端點與延伸方向、字母命名及角的頂點位置考查幾何語言轉譯；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "簡單圖形、點線角、線段／射線／直線辨識與幾何符號命名",
+      "observedPattern": "公開學校數學資料常以圖形元素、端點與延伸方向、字母命名及角的頂點位置考查幾何語言轉譯；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "遇到圖形命名錯誤，先用定義核對端點數量，再檢查延伸方向。",
+  "solutionSteps": [
+    "記錄題目給出的端點數量為一個。",
+    "記錄圖形向一方延伸。",
+    "一端點一方向符合射線。",
+    "線段需要兩個端點，原命名不合定義。",
+    "選 B。"
+  ]
 }

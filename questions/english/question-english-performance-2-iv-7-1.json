@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-7-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-7／人事時地物提問」task, what is the best way to prepare question 1?",
+  "prompt": "A: Someone packed the clay models after the art fair.\nB: Mr. Hsu did.\nWhich question should A ask to learn the person's identity?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-7／人事時地物提問."
+      "text": "What did Mr. Hsu pack after the art fair?"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-7／人事時地物提問."
+      "text": "Who packed the clay models after the art fair?"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-7／人事時地物提問."
+      "text": "When did Mr. Hsu pack the clay models?"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-7／人事時地物提問."
+      "text": "Where did Mr. Hsu pack the clay models?"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-7"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-7／人事時地物提問, question 1."
+    "value": "B",
+    "explanation": "回應只用 did 代替前句的動作，沒有重複主詞；因此要問「誰」做了打包動作。B 的 who 對應人，clay models 則保留已知受詞。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+    "sourceLocator": "高雄市立國昌國中公開原卷：printed page 4, matching question 36。只取命題能力／資料閱讀模式，不重製原題。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開英語試題之精確 item-level pattern-only 證據獨立重寫；未複製原題、選項、圖表或答案。題目維持 draft，尚待完整版本研究與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-7"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中111學年度第一學期八年級第一次定期評量英文科試題",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "printed page 4, matching question 36",
+      "observedPattern": "只參考第36題的人事時地物疑問、回答配對或資訊定位能力；只參考原卷人事問答、疑問句重建、方法提問與多選項判讀模式；不複製原題、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先確認答句省略了哪個已知動作，再判斷空缺是人、物、時間還是地點；主詞位置的未知人物用 who。",
+  "solutionSteps": [
+    "先把對話中的已知部分標出：黏土模型被打包，時間是藝術市集結束後。",
+    "回應 Mr. Hsu did 以 did 代替 packed the clay models，真正新增資訊是執行動作的人。",
+    "要詢問動作主詞的人物，疑問詞應放在句首用 Who，而不是詢問物品的 What。",
+    "B 的問句保留 packed 與 clay models，只把未知的人物改成 Who，與回答一一對應。",
+    "核對其餘選項：A 問物品、C 問時間、D 問地點，都不是回答提供的新資訊，因此選 B。"
+  ]
 }

@@ -2,15 +2,15 @@
   "id": "question-chinese-argument-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列哪一項最適合作為「每天規律運動有助於維持健康」的事實性論據？",
+  "prompt": "要檢驗「固定運動與健康指標可能有關」這項主張，哪項最適合作為可查驗的事實性論據？",
   "options": [
     {
       "id": "A",
-      "text": "我覺得運動的人看起來比較有精神。"
+      "text": "一項記錄固定族群運動頻率與健康指標的長期研究。"
     },
     {
       "id": "B",
-      "text": "一項針對固定族群的長期研究記錄運動頻率與健康指標的關聯。"
+      "text": "我覺得運動的人看起來比較有精神。"
     },
     {
       "id": "C",
@@ -24,19 +24,65 @@
   "knowledgeIds": [
     "kg-chinese-content-bd-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的研究資料能直接支持健康效果；其餘選項不是可驗證證據或與主張關聯不足。"
+    "value": "A",
+    "explanation": "A 同時記錄運動頻率與健康指標，且有研究對象和方法，能檢驗兩者是否呈現關聯；僅憑觀察性資料仍不能直接證明運動造成健康改善。B 是個人印象，C 未交代來源，D 與健康指標無關。正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-argument-1.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceUrl": "https://www.fhjh.ntpc.edu.tw/var/file/0/1000/img/154/789122026.pdf",
+    "sourceLocator": "新北市立福和國中112學年度九年級上學期第三次段考國文第15題（試卷第5頁）：辨識作者論點與立論證據；本題改寫為全新語料。",
+    "authoringNote": "依官方課綱與單元 KG 獨立命題，使用原創語料與選項，未複製公校原題；題庫首輪AI內容校核已於2026-09-27更新，公開試題各筆來源仍須逐題確認定位與改寫界線，完成前維持draft；不進行Terra複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-argument-evidence-basics"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-27",
+  "lessonId": "lesson-chinese-argument-evidence-basics",
+  "examPatternRefs": [
+    {
+      "url": "https://www.fhjh.ntpc.edu.tw/var/file/0/1000/img/154/789122026.pdf",
+      "title": "新北市立福和國中112學年度九年級上學期第三次段考國文試題分析；僅參考論點與證據區辨題型，不複製原題。",
+      "year": "112-1",
+      "subject": "chinese",
+      "locator": "試卷分析第5頁第15題：辨認作者論點而非立論證據",
+      "observedPattern": "題目提供多項文獻／學者資料，要求分辨作者主觀推論與支持材料；本題只借用論點—論據辨析能力，另造語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；只取證據品質、反論與結論範圍的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "試卷第3頁第31題：依文本辨認塑膠廢棄物進入海洋的主要原因",
+      "observedPattern": "依據文本因果線索辨認主要原因；本題僅借用依資料支持或限制因果主張的閱讀推理方式，運動與健康情境及選項皆為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E5%9C%8B%E6%96%87%E7%A7%91_8.pdf",
+      "title": "高雄市立國昌國中112學年度第2學期第3次段考二年級國文試題；僅參考論點、論據／反面論點辨識題型。",
+      "year": "112-2",
+      "subject": "chinese",
+      "locator": "第2頁第11題：判讀文章是否提出論點並以言例／事例作論據",
+      "observedPattern": "辨認論點及其言例／事例論據的文本分析模式；本題只借用主張與支持材料的區分，不複製原卷文本、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先找能被查驗的對象、方法和結果，再判斷資料是否真的支援主張。",
+  "solutionSteps": [
+    "先把待檢驗關係限定為運動頻率與健康指標是否相關，不把『有助』直接當成已證實因果。",
+    "逐項找出哪個選項同時提供運動紀錄和健康觀察指標。",
+    "檢查該資料是否交代研究對象與可查驗的方法；只有態度、傳聞或服飾資訊不足以回答。",
+    "選出能直接觀察兩項變數的研究資料，即 A。",
+    "說明觀察到關聯仍不能單獨證明運動造成健康改變。"
+  ],
+  "studyReferences": [
+    "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E5%9C%8B%E6%96%87%E7%A7%91_8.pdf"
+  ]
 }

@@ -2,41 +2,73 @@
   "id": "question-english-performance-4-iv-8-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「4-Ⅳ-8／提示寫簡短段落」task, what is the best way to prepare question 6?",
+  "prompt": "A paragraph argues that the new student garden helps classmates learn to care for living things. Which detail most directly supports that idea?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 4-Ⅳ-8／提示寫簡短段落."
+      "text": "The garden fence was painted green during the holiday."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 4-Ⅳ-8／提示寫簡短段落."
+      "text": "Teams record how changing the amount of sunlight affects the seedlings and adjust their watering notes."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 4-Ⅳ-8／提示寫簡短段落."
+      "text": "The science classroom has twenty-four chairs."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 4-Ⅳ-8／提示寫簡短段落."
+      "text": "Some students prefer drawing flowers to planting them."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-4-iv-8"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 4-Ⅳ-8／提示寫簡短段落, question 6."
+    "value": "B",
+    "explanation": "B gives observable actions—tracking sunlight effects and adapting care—that demonstrate learning and responsibility toward living plants. A is decoration, C is unrelated room information, and D is a preference rather than evidence of care."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://web.tdvs.ntct.edu.tw/mediafile/1040/news/294/2025-11/2025112610306_0.pdf",
+    "sourceLocator": "南投縣第四屆縣長盃國中英文閱讀測驗暨引導式寫作比賽測驗（官方公開試卷）；PDF印刷頁第3頁，第三部分引導式寫作第1題；評分含內容與組織，任務要求交代事件、行動、感受及學習所得。",
+    "authoringNote": "依官方課綱能力及公開試題的段落組織／引導寫作型態獨立命題；只借鑑 pattern，不重製任何原卷文字、選項、圖表或答案。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-4-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-4-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://web.tdvs.ntct.edu.tw/mediafile/1040/news/294/2025-11/2025112610306_0.pdf",
+      "title": "南投縣第四屆縣長盃國中英文閱讀測驗暨引導式寫作比賽測驗（官方公開試卷）",
+      "year": "114",
+      "subject": "english",
+      "locator": "PDF印刷頁第3頁，第三部分引導式寫作第1題；評分含內容與組織，任務要求交代事件、行動、感受及學習所得。",
+      "observedPattern": "引導寫作以多個明確內容要求與組織評分檢驗讀者能否扣題、安排支持內容並形成完整段落。本題只改寫其命題型態以練習「evidence detail relevance」，題幹、選項、情境與答案均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.tdvs.ntct.edu.tw/mediafile/1040/news/294/2023-12/2023121175637_1.pdf",
+      "title": "南投縣第二屆縣長盃國中學生英文閱讀測驗暨引導式寫作比賽測驗試題",
+      "year": "112",
+      "subject": "english",
+      "locator": "PDF印刷頁第7頁，第二部分引導式寫作第1題；100字以上說明型短文，評分明列內容與組織。",
+      "observedPattern": "說明型提示要求學生先表達可發展的中心主張，再用相關理由組織成段落。本題只改寫其命題型態以練習「evidence detail relevance」，題幹、選項、情境與答案均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "支持細節要能讓讀者看見主張如何發生。檢查句子是否含有可觀察的行動或結果，而非只和主題共享一個名詞。",
+  "solutionSteps": [
+    "把主張分成兩部分：學生有學習，而且學會照顧植物；細節必須同時連到其中至少一項。",
+    "A描述圍欄顏色，只有外觀資訊，沒有學習或照顧行為。",
+    "C的椅子數量與花園經驗無關；D只比較興趣，沒有說明學生實際如何照料植物。",
+    "B呈現持續觀察幼苗、記錄光照變化並調整澆水，能直接顯示照護及依證據學習。",
+    "若要把B擴成段落，可再寫一個觀察結果，但不得把尚未量測的效果說成已證實。"
+  ]
 }

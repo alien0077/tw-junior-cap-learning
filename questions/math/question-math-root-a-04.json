@@ -1,0 +1,87 @@
+{
+  "id": "question-math-root-a-04",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "一盒彩色筆原價 48 元，結帳時打七五折。折扣後應付多少元？",
+  "options": [
+    {
+      "id": "A",
+      "text": "12 元"
+    },
+    {
+      "id": "B",
+      "text": "24 元"
+    },
+    {
+      "id": "C",
+      "text": "36 元"
+    },
+    {
+      "id": "D",
+      "text": "42 元"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-a",
+    "kg-math-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "C",
+    "explanation": "七五折表示付原價的 75%，不是減去 75%。因此應付 48×0.75=36 元；也可先求折掉 25%：48×0.25=12 元，再算 48−12=36 元。選項 C 正確。12 元是折掉的金額，24 元相當於打五折，42 元則只少了 6 元，均非題意。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "公立國民中學公開定期評量試題頁",
+      "year": "113-114",
+      "subject": "math",
+      "locator": "各科段考公開試題頁；math資料判讀／概念應用題型；自編改寫第4題",
+      "locatorLevel": "paper",
+      "observedPattern": "以生活資料或短情境要求學生選出能支持結論的判讀流程",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級數學科試題卷",
+      "year": "114-2",
+      "locator": "校方附件「114-2-3-七年級數學試題卷.pdf」第3頁第16題",
+      "pattern": "原卷以不同購買數量門檻比較折扣後的總價；本題改為單件價格折扣後計算售價。",
+      "subject": "math",
+      "observedPattern": "原卷以不同購買數量門檻比較折扣後的總價；本題改為單件價格折扣後計算售價。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "公立學校公開段考頁；math科題型結構，非原題重製",
+    "authoringNote": "依公開公立學校試題的能力與資料型態改寫；題幹、選項、答案與解析均為自編，維持 draft 待 AI 內容 QA。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-root-a",
+  "solutionStrategy": "先辨認折數表示「付原價的幾成」，再用原價乘付款比例；最後以「原價－折價」交叉驗算，避免把折數誤當折掉的比例。",
+  "solutionSteps": [
+    "先把「七五折」翻成付款比例：標價的 7.5 成，也就是 75/100。",
+    "直接算法：48×75/100=48×0.75=36，所以折後支付 36 元。",
+    "用另一條路驗算：折掉的是 100%−75%=25%；48×0.25=12 元，48−12=36 元。兩種算法結果一致。",
+    "檢查常見混淆：12 元是折價，不是應付金額；題目問的是折後價，因此不能選 12 元。",
+    "量級回查：七五折比原價便宜，但仍高於半價；36 元小於 48 元且大於 24 元，符合情境。答案為 C。"
+  ]
+}

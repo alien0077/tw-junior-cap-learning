@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-8-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "外接圓的圓心到三角形三個頂點的距離有何關係？",
+  "prompt": "等腰三角形 ABC 中，AB＝AC。外心必位於哪條線上？",
   "options": [
     {
       "id": "A",
-      "text": "三段皆相等"
+      "text": "底邊 BC 的垂直平分線（亦為對稱軸）"
     },
     {
       "id": "B",
-      "text": "只有兩段相等"
+      "text": "底邊 BC 上任意位置"
     },
     {
       "id": "C",
-      "text": "皆為 0"
+      "text": "邊 AB 的延長線"
     },
     {
       "id": "D",
-      "text": "依頂點位置不同必不相等"
+      "text": "只會在頂點 A"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "外心定義就是到三頂點等距的點，三段皆為外接圓半徑。"
+    "explanation": "等腰三角形的對稱軸是底邊 BC 的垂直平分線；外心位於兩邊對稱位置的共同垂直平分線上，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的外心 題型與官方課綱 KG kg-math-content-s-9-8",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形外心能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的外心能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-8"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形外心、垂直平分線、外接圓、直角三角形與座標幾何",
+      "observedPattern": "公立學校公開數學試題常以垂直平分線交點、三頂點等距、外接圓半徑與座標位置考查外心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形外心、垂直平分線、外接圓、直角三角形與座標幾何",
+      "observedPattern": "公立學校公開數學試題常以垂直平分線交點、三頂點等距、外接圓半徑與座標位置考查外心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形外心、垂直平分線、外接圓、直角三角形與座標幾何",
+      "observedPattern": "公立學校公開數學試題常以垂直平分線交點、三頂點等距、外接圓半徑與座標位置考查外心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用等腰條件找對稱軸，再判斷外心必在對稱軸上。",
+  "solutionSteps": [
+    "由 AB＝AC 確認三角形具對稱性。",
+    "找出底邊 BC 的垂直平分線。",
+    "這條線也是等腰三角形的對稱軸。",
+    "外心在對稱軸上以維持到 B、C 等距。",
+    "選 A。"
+  ]
 }

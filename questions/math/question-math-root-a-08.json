@@ -1,0 +1,87 @@
+{
+  "id": "question-math-root-a-08",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "下列關係中，有幾個是正比？（甲）同款商品的單價固定，購買數量與總價；（乙）圓周長與直徑；（丙）面積固定的長方形，其長與寬；（丁）固定路程下，速度與所需時間。",
+  "options": [
+    {
+      "id": "A",
+      "text": "0 個"
+    },
+    {
+      "id": "B",
+      "text": "1 個"
+    },
+    {
+      "id": "C",
+      "text": "2 個"
+    },
+    {
+      "id": "D",
+      "text": "3 個"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-a",
+    "kg-math-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "C",
+    "explanation": "甲是總價=固定單價×數量，乙是圓周長=π×直徑，兩者符合 y=kx。丙的長×寬固定、丁的速度×時間固定，分別是乘積固定的反比關係；所以正比共有2個。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級數學科試題卷",
+      "year": "114-2",
+      "subject": "math",
+      "locator": "校方附件「114-2-3-七年級數學試題卷.pdf」第2頁第8題",
+      "locatorLevel": "item",
+      "observedPattern": "原卷第8題比較多組量之間是否成正比；本題以四個不同敘述辨認 y=kx 與乘積固定的關係。",
+      "pattern": "原卷第8題比較多組量之間是否成正比；本題以四個不同敘述辨認 y=kx 與乘積固定的關係。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究計算、表格與情境判讀的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+    "sourceLocator": "校方附件「114-2-3-七年級數學試題卷.pdf」第2頁第8題；只參照正比辨識能力，不沿用原卷敘述。",
+    "authoringNote": "自編四種關係情境，逐一檢查能否表示成 y=kx，並區分乘積固定的反比；維持 draft 待 AI 內容 QA。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-root-a",
+  "solutionStrategy": "為各敘述寫出代數式，驗證是否存在固定常數 k 使 y=kx；不能把同向變化直接當成正比。",
+  "solutionSteps": [
+    "甲設數量為 n、總價為 T，固定單價 p 時 T=pn，比例常數 p 固定，故甲為正比。",
+    "乙以直徑 d 表示圓周長 C，可寫 C=πd；π為固定常數，因此乙也是正比。",
+    "丙面積 A 固定時，長 l 與寬 w 滿足 lw=A；固定的是乘積，不是比值，故不是正比。",
+    "丁固定路程 s 時，速度 v 與時間 t 滿足 vt=s，也是乘積固定，速度增加會使時間減少，並非正比。",
+    "只有甲、乙能寫成 y=kx，合計2個，選 C。用關係式判斷可避免把「同時變動」誤當作「正比」。"
+  ]
+}

@@ -2,41 +2,67 @@
   "id": "question-science-content-ca-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年1月8日校園實驗室的觀察中，將 26 g 食鹽溶於 292 g 水，研究「Ca-Ⅳ-2：以化學性質鑑定化合物」時，溶液質量為何？",
+  "prompt": "某未知物的檢驗結果為：與指示劑呈酸性、與碳酸鹽產氣、空白組無反應。最恰當的結論是？",
   "options": [
     {
       "id": "A",
-      "text": "266 g"
+      "text": "它一定是純水"
     },
     {
       "id": "B",
-      "text": "318 g"
+      "text": "已百分之百證明它是某一種酸"
     },
     {
       "id": "C",
-      "text": "7592 g"
+      "text": "證據支持它含有酸性且能與碳酸鹽反應的物質，但不能只靠這些結果指定唯一化合物"
     },
     {
       "id": "D",
-      "text": "292 g"
+      "text": "空白組無反應表示試劑失效"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ca-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：26＋292＝318 g。 本題對應 KG「Ca-Ⅳ-2：以化學性質鑑定化合物」。"
+    "value": "C",
+    "explanation": "三項結果支持酸性反應假說並排除部分污染可能，但不同酸性物質也可能有相同結果，不能指定唯一身分，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的化合物鑑定、特徵反應與對照能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ca-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ca-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ca-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化合物鑑定、酸鹼、沉澱、氣體與實驗對照判讀",
+      "pattern": "取由特徵反應、對照組與多項證據鑑定未知物的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由特徵反應、對照組與多項證據鑑定未知物的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用證據清單寫出支持、排除與仍未知的部分，而不是只寫一個名稱。",
+  "solutionSteps": [
+    "整理指示劑、產氣與空白對照結果。",
+    "判斷樣品具有酸性且能和碳酸鹽反應。",
+    "確認空白組無反應提高結果可信度。",
+    "列出仍可能符合的多個候選物。",
+    "所以結論選 C。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

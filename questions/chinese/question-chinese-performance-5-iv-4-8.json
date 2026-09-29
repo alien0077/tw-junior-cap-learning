@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-5-iv-4-8",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "讀表格回答問題時，若選項與文字敘述衝突，應如何處理？",
+  "prompt": "要選擇校外教學路線，資料包含地圖、天氣預報、交通時刻與費用表，哪項決策流程完整？",
   "options": [
     {
       "id": "A",
-      "text": "回到原始資料，確認欄位、單位與題目條件"
+      "text": "先列安全與學習目標，再對齊各資料的時間與單位，設定權衡條件並保留備案"
     },
     {
       "id": "B",
-      "text": "只看標題，不讀內容"
+      "text": "只選地圖上最短的路線"
     },
     {
       "id": "C",
-      "text": "只憑個人印象判斷"
+      "text": "只看費用最低，不理會天氣和交通"
     },
     {
       "id": "D",
-      "text": "忽略題目條件"
+      "text": "把四份資料各自閱讀，不比較彼此關係"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "衝突時要檢查資料欄位、單位與條件，不能直接猜測哪一方正確。"
+    "explanation": "多資料決策要先定目標與限制，再整合不同格式、時間和單位，最後說明取捨與備案。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-performance-5-iv-4-8.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫圖文整合、資料可信度、跨域詞義、因果、問題拆解、時間線、模型限制、多資料決策、證據轉述及整合解題；未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-26",
-  "lessonId": "lesson-chinese-performance-5-iv-4"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-chinese-performance-5-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "圖表、資料與跨文本閱讀",
+      "observedPattern": "公開國文評量常以圖表、跨文本、資料來源、因果推論與生活情境檢查整合解題；本題改寫為跨域資料閱讀任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀、推理與問題解決",
+      "observedPattern": "公開國文評量常以圖表、跨文本、資料來源、因果推論與生活情境檢查整合解題；本題改寫為跨域資料閱讀任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先界定問題，再分別讀文字、表格或模型；對齊變項、單位、時間與來源後提出推論，檢查因果、限制和替代解釋，最後回扣題目。",
+  "solutionSteps": [
+    "讀題定位：圈出「多資料決策」，確認題目要整合圖文、跨文本、概念、因果、時間、模型、決策或證據轉述。",
+    "拆解資料：分開閱讀文字、表格、圖例與情境，對齊變項、單位、時間和限制；本題核心是「多資料決策要先定目標與限制，再整合不同格式、時間和單位，最後說明取捨與備案。」",
+    "核對正解：選項 A「先列安全與學習目標，再對齊各資料的時間與單位，設定權衡條件並保留備案」能由多份資料共同支持，並保留推論強度與條件。",
+    "排除誘答：不要只看單一數字、標題、最短路線或生活直覺，也不要把相關變成必然因果。",
+    "完成推理回查：依問題→資料→對齊→計算或比較→推論→限制與替代解釋重做，確認答案可追溯。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

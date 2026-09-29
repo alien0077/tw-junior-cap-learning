@@ -2,23 +2,23 @@
   "id": "question-science-content-ga-iv-2-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年2月11日社區環境站的觀察中，針對「Ga-Ⅳ-2：性染色體與人類性別」提出可檢驗的科學問題，若比較 5 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "若只考慮 X、Y 配子且機率相等，單一胎次得到 XX 或 XY 的機率約為？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ga-Ⅳ-2：性染色體與人類性別」時只改變施力大小，其餘條件一致，設置5組、每組取樣11份並各重複測量4次"
+      "text": "XX 必定 100%"
     },
     {
       "id": "B",
-      "text": "研究「Ga-Ⅳ-2：性染色體與人類性別」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "XY 必定 100%"
     },
     {
       "id": "C",
-      "text": "研究「Ga-Ⅳ-2：性染色體與人類性別」時只測量5組中的一組就直接下結論"
+      "text": "各 50%，但不是每個家庭一定一半一半"
     },
     {
       "id": "D",
-      "text": "研究「Ga-Ⅳ-2：性染色體與人類性別」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "兩者都 0%"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ga-Ⅳ-2：性染色體與人類性別」。"
+    "value": "C",
+    "explanation": "在簡化模型中，精子帶 X、Y 機率各半，單次結果約各 50%；多胎比例才可能逐漸接近期望。 正確答案為選項 C：「各 50%，但不是每個家庭一定一半一半」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的性染色體、性聯遺傳、家族資料及機率判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ga-Ⅳ-2 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ga-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ga-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "性染色體、性聯遺傳、遺傳圖表與機率判讀",
+      "pattern": "取由染色體、配子、家族資料和機率模型推論遺傳結果的能力方向；不把簡化模型當成所有人的身分結論。",
+      "subject": "science",
+      "observedPattern": "取由染色體、配子、家族資料和機率模型推論遺傳結果的能力方向；不把簡化模型當成所有人的身分結論。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分單次機率與多次統計比例。",
+  "solutionSteps": [
+    "定位概念：圈出 Ga-Ⅳ-2 的性染色體、配子、性聯遺傳或統計機率。",
+    "整理證據：先列親代染色體與配子，再區分單次結果、樣本比例與性狀表現。",
+    "套用原理：在簡化模型中，精子帶 X、Y 機率各半，單次結果約各 50%；多胎比例才可能逐漸接近期望。",
+    "排除干擾：檢查遺傳模型、機率與概念界線，正確選項是「各 50%，但不是每個家庭一定一半一半」。",
+    "最後回查：答案「各 50%，但不是每個家庭一定一半一半」符合題幹，沒有把簡化模型誇大成所有個體必然情況。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

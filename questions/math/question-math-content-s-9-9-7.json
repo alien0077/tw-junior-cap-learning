@@ -2,7 +2,7 @@
   "id": "question-math-content-s-9-9-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若一點到三角形三邊的距離皆相等，這一點最可能是三角形的哪個中心？",
+  "prompt": "若一點 I 到三角形三邊的距離都相等，且 I 位於三角形內部，I 最可能是哪個中心？",
   "options": [
     {
       "id": "A",
@@ -24,19 +24,62 @@
   "knowledgeIds": [
     "kg-math-content-s-9-9"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "到三邊等距的點是內心。"
+    "explanation": "到三邊距離相等且位於三角形內部的點是內心，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的內心 題型與官方課綱 KG kg-math-content-s-9-9",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形內心能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的內心能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-9"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-9",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "內角平分線、內心三邊等距、內切圓、面積與半周長及角平分線定理",
+      "observedPattern": "公立學校公開數學試題常以角平分線交點、到三邊等距、內切圓半徑與面積關係，以及角平分線分邊比例考查內心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "內角平分線、內心三邊等距、內切圓、面積與半周長及角平分線定理",
+      "observedPattern": "公立學校公開數學試題常以角平分線交點、到三邊等距、內切圓半徑與面積關係，以及角平分線分邊比例考查內心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "內角平分線、內心三邊等距、內切圓、面積與半周長及角平分線定理",
+      "observedPattern": "公立學校公開數學試題常以角平分線交點、到三邊等距、內切圓半徑與面積關係，以及角平分線分邊比例考查內心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用『到三邊等距』這個辨識線索，不要以位置單獨猜中心名稱。",
+  "solutionSteps": [
+    "讀出 I 到三邊等距。",
+    "把等距條件連結到角平分線。",
+    "三個角平分線的交點是內心。",
+    "內心位於三角形內部。",
+    "選 C。"
+  ]
 }

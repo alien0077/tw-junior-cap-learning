@@ -2,23 +2,23 @@
   "id": "question-science-content-jc-iv-7-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年11月23日社區環境站的觀察中，針對「Jc-Ⅳ-7：電解實驗與電解原理」提出可檢驗的科學問題，若比較 3 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "要研究電解質濃度對電流大小的影響，哪項設計最公平？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Jc-Ⅳ-7：電解實驗與電解原理」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "固定電極材質、間距、電源與溫度，只改變濃度並重複量測電流"
     },
     {
       "id": "B",
-      "text": "研究「Jc-Ⅳ-7：電解實驗與電解原理」時只測量3組中的一組就直接下結論"
+      "text": "同時改變濃度、電極和電壓"
     },
     {
       "id": "C",
-      "text": "研究「Jc-Ⅳ-7：電解實驗與電解原理」時只改變攪拌速度，其餘條件一致，設置3組、每組取樣15份並各重複測量4次"
+      "text": "每組用不同大小容器且只量一次"
     },
     {
       "id": "D",
-      "text": "研究「Jc-Ⅳ-7：電解實驗與電解原理」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "只看氣泡顏色不測電流"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,54 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Jc-Ⅳ-7：電解實驗與電解原理」。"
+    "value": "A",
+    "explanation": "控制電極、距離、電源和溫度，只改濃度並重複測量，才能建立濃度與電流的可比較關係。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的電解質、外加電源、電極、離子、氣體產物及氧化還原能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jc-iv-7"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jc-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "電解質、電極、電流與電解資料判讀",
+      "pattern": "取由導電實驗、電極現象與物質變化推論電解原理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由導電實驗、電極現象與物質變化推論電解原理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "電解、離子、氣體產物與生活科技情境",
+      "pattern": "取由實驗圖表、氣體檢驗與粒子模型判斷電解反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗圖表、氣體檢驗與粒子模型判斷電解反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "使用單一自變因與量化依變因建立公平實驗。",
+  "solutionSteps": [
+    "列出會影響電流的裝置條件。",
+    "固定電極、間距、電源和溫度。",
+    "分組調整電解質濃度。",
+    "重複讀取電流並比較平均值。",
+    "因此 A 是公平設計。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,41 +2,76 @@
   "id": "question-chinese-content-cb-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "新居民加入地方節慶，帶來新的音樂，但仍遵守原有核心儀式。這種情況最適合如何理解？",
+  "prompt": "社區規定「活動場十點後保持安靜」，但新住戶不知道；分析社群文化還應問什麼？",
   "options": [
     {
       "id": "A",
-      "text": "社群文化可交流並持續變化"
+      "text": "規定存在就代表所有人自願同意"
     },
     {
       "id": "B",
-      "text": "原有文化已完全消失"
+      "text": "新住戶不知道表示他不尊重社群"
     },
     {
       "id": "C",
-      "text": "新元素必然破壞群體認同"
+      "text": "規則越老就一定越公平"
     },
     {
       "id": "D",
-      "text": "文化只能由出生地決定"
+      "text": "規則由誰制定、通知誰、誰受益或受限制，以及違反時如何處理"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-cb"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "新元素與原有儀式並存，顯示文化可在交流中變化。"
+    "value": "D",
+    "explanation": "規範不只描述秩序，也分配權利與限制；須查制定、傳遞、適用及處理方式。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "社群文化交流與變遷；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究社群文化、公共規範、多方引述、媒介與權力的閱讀判讀。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫 CB 社群文化與多方觀點題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-cb"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-cb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "社會議題文本、觀點與證據",
+      "observedPattern": "公立學校國文評量以社群記憶、公共規範、媒介轉換、多方引述與評論語氣要求區分事實、觀點、主張範圍及缺席聲音；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "多方聲音、主旨與批判閱讀",
+      "observedPattern": "公立學校國文評量以社群記憶、公共規範、媒介轉換、多方引述與評論語氣要求區分事實、觀點、主張範圍及缺席聲音；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把規則拆成來源、通知、受益者、受限制者與執行後果五項證據。",
+  "solutionSteps": [
+    "讀題定位：圈出「規範與權力」及群體、說話者、規範、媒介、語氣或缺席者線索。",
+    "分層整理：區分文本直接資料、人物觀點與作者主張，再依「規範不只描述秩序，也分配權利與限制；須查制定、傳遞、適用及處理方式。」判定範圍。",
+    "核對正解：選項 D 能由具體語句或段落關係支持，且沒有代替未發言者下結論。",
+    "排除誘答：檢查是否把共同記憶當全體事實、把單一聲音當共識，或忽略權力與參與門檻。",
+    "回讀驗證：重新檢查答案是否同時解釋語言、制度、媒介與多方經驗的關係。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -1,0 +1,75 @@
+{
+  "reportId": "D-393",
+  "date": "2026-09-28",
+  "unit": "english 5-IV-8",
+  "lessonId": "lesson-english-performance-5-iv-8",
+  "knowledgeId": "kg-english-performance-5-iv-8",
+  "status": "original fusion manuscript recorded; lesson remains draft for user's ChatGPT review",
+  "curriculumSource": {
+    "url": "https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf",
+    "locator": "Official curriculum PDF p.14, 5-Ⅳ-8: listen to a simple story and record key points using simple words/sentences.",
+    "scope": ["listening comprehension", "concise note-taking", "story key points"]
+  },
+  "additionalTeachingReference": {
+    "url": "https://stv.naer.edu.tw/data/course_manual/A/%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E6%89%8B%E5%86%8A(%E5%AE%9A%E7%A8%BF%E7%89%88).pdf",
+    "locator": "PDF pp.125–126, higher-stage 5-V-8-1 to 5-V-8-4 describes story roles, setting, gist and brief graphic-organizer/key-point notes.",
+    "boundary": "Higher-stage teaching inspiration only; not misrepresented as 5-Ⅳ-8 statutory detail or publisher textbook evidence."
+  },
+  "publisherResearch": [
+    {
+      "publisherLabel": "Nani-labelled school plan",
+      "url": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMxTDNCMFlWOHlNalF4WHpNMU1qUTNPRGxmT0RRMEpXUmZUMFZUTlRJd01EVTJNRFkwTlRrMk1UZzROakV6TXpnME5XTmpSMlZsWWpKNlBTSWZOVGtpTG5abGNtZ2xNU0k9&fname=LOGGYSOKWW10A1IH50LKKPHGPK30WT3414JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP3435GCQP3504B0UWYWWXUW50OOA0A0YWPOXX21JCLKSWIGQOB4SWHCUS30A110",
+      "locator": "Da-Feng JH school plan marked Nani, PDF pp.6–7 show adjacent 5-Ⅳ-7 and listening/story-reading context; no target-specific 5-Ⅳ-8 method was located.",
+      "finding": "Provides limited neighboring grade-level listening/story-reading context only; it does not document the target unit's teaching sequence.",
+      "evidenceLimit": "School-authored plan, not publisher-authenticated textbook or full lesson text; not direct 5-Ⅳ-8 evidence."
+    },
+    {
+      "publisherLabel": "Hanlin-labelled school plan",
+      "url": "https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf",
+      "locator": "PDF p.0 identifies Hanlin edition; pp.47–49 provide grade/course context, but no dedicated 5-Ⅳ-8 teaching sequence was retrieved.",
+      "finding": "Used only as edition and grade-level curriculum locator, not as evidence of publisher-specific story-note pedagogy.",
+      "evidenceLimit": "School-authored plan; not publisher-authenticated lesson text."
+    },
+    {
+      "publisherLabel": "Kang Hsuan",
+      "url": "https://www.knsh.com.tw/_KNSH/Plan",
+      "locator": "Official publisher course-plan portal; no readable target-unit material retrieved.",
+      "finding": "No lesson-specific claims made; the publisher unit evidence remains pending.",
+      "evidenceLimit": "An earlier listed PDF was rechecked and found to be a Chinese-language plan, not English evidence; that attribution was withdrawn."
+    }
+  ],
+  "synthesis": {
+    "commonCore": [
+      "Hear a simple story and note key points in simple words or sentences.",
+      "Preserve the relationships among a character's goal, obstacle, action, event order and outcome.",
+      "Select details to fit the listening task and do not present inference as explicitly stated fact."
+    ],
+    "integratedDifferences": [
+      "The Nani-labelled school plan directly lists 5-Ⅳ-8 and a short-story unit; the Hanlin-labelled plan offers grade/version context but no target-specific teaching sequence; Kang Hsuan unit materials were not obtained. These evidence types are not equivalent to three publisher chapter readings."
+    ],
+    "originalTeaching": [
+      "Six original sections teach task-directed listening, event-path notes, transitions/causality, fact-versus-inference, targeted replay, and peer retell as a sufficiency check.",
+      "Four original listening scripts and answer choices test plot sequence, cause, outcome, and avoiding invented motives.",
+      "The local web SpeechSynthesis path has collapsed transcript disclosure and explicit non-audio fallback."
+    ],
+    "authorshipBoundary": "All exposition, short stories, options, answers, hints and explanations are independently written; no textbook prose, illustrations, exercises, answers or audio were copied."
+  },
+  "implementation": {
+    "specComponent": "GuidedChoiceBlock",
+    "specStatus": "reviewed/implemented/verified",
+    "reviewBoundary": "Automated validation verifies implementation behavior only. The user will conduct the lesson-content review with ChatGPT; this is not teacher or publisher approval.",
+    "publisherSlots": {"nani": "pending", "kanghsuan": "pending", "hanlin": "pending"}
+  },
+  "checks": {
+    "unitNodeRegression": "PASS: original manuscript, 6 sections, source caveats, 4 unique stories, answers A/B/C/B and interaction contract.",
+    "studentContentParity": "PASS: 6/6 content.sections exactly match teaching.body.",
+    "fullDataValidation": "PASS: 14,505 JSON files, 13,114 IDs, 1,032 KG nodes; lessons/questions remain draft.",
+    "fullSpecValidation": "PASS: 1,027 specs, 0 structural errors; status counts reviewed/implemented/verified 7, specified/implemented/verified 1, specified/implemented/untested 1,019; completion remains a separate gate.",
+    "fullNpmTest": "PASS: npm test including pretest and workbench 1,027/1,027 traversal.",
+    "browserEnvironment": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3, Playwright 1.58.0, Chromium revision 1208 executable present; local site/index.html returned HTTP 200.",
+    "unitBrowserPlaywright": "PASS: 6 visible sections, 4 audio data paths, keyboard wrong-answer retry/correct answer, collapsed transcript and keyboard disclosure, speech-unavailable fallback, network blocked, no overflow at 320/375/768px, 0 page errors.",
+    "audioMockBoundary": "SpeechSynthesis.speak was mocked to verify utterance data binding and UI behavior; this does not measure audible playback or language-teaching quality.",
+    "authoredFusionInventory": "728/791 = 92.04%; learning-content 583/583; learning-performance 145/208; manuscript presence only.",
+    "questionLedger": "Read-only reused: 10,566/10,566 recorded, pending 0 per D-385; no questions changed and no ledger rerun."
+  }
+}

@@ -2,23 +2,23 @@
   "id": "question-english-performance-2-iv-3-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "You need to borrow an eraser from a classmate. Which sentence is best?",
+  "prompt": "The teacher wants students to discuss in groups of two. Which instruction is correct?",
   "options": [
     {
       "id": "A",
-      "text": "May I borrow your eraser for a moment?"
+      "text": "Work in pairs."
     },
     {
       "id": "B",
-      "text": "I borrow your eraser yesterday?"
+      "text": "Please work in silence alone."
     },
     {
       "id": "C",
-      "text": "Give me eraser because borrow."
+      "text": "Turn off your partners."
     },
     {
       "id": "D",
-      "text": "Your eraser may I borrowing?"
+      "text": "Leave the lesson unfinished."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "“May I borrow your eraser for a moment?” is a polite, grammatical request for permission to use a classmate’s eraser."
+    "explanation": "A pair contains two people, so Work in pairs gives the requested grouping instruction."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三份公開英文試題僅供能力方向研究；未複製原題、選項、文章或答案。",
+    "authoringNote": "依官方課綱 KG 與公開英文試題的教室溝通能力方向獨立編寫；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-3"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-performance-2-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考三年級英文科試題",
+      "year": "114",
+      "locator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考三年級英文科試題；僅取課堂指令、同儕互動與教室語用能力方向。",
+      "observedPattern": "參照公開英文試題的教室情境、功能語句與行動判讀層次；題幹、選項與答案全部重新編寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
+      "title": "114 年國中教育會考英文科公開試題",
+      "year": "114",
+      "locator": "114 年國中教育會考英文科公開試題；僅取課堂指令、同儕互動與教室語用能力方向。",
+      "observedPattern": "參照公開英文試題的教室情境、功能語句與行動判讀層次；題幹、選項與答案全部重新編寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://cap.rcpet.edu.tw/index.html",
+      "title": "國中教育會考官方英文科試題與說明入口",
+      "year": "官方入口",
+      "locator": "國中教育會考官方英文科試題與說明入口；僅取課堂指令、同儕互動與教室語用能力方向。",
+      "observedPattern": "參照公開英文試題的教室情境、功能語句與行動判讀層次；題幹、選項與答案全部重新編寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "subject": "english",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "Use the required group size to select the standard classroom command.",
+  "solutionSteps": [
+    "Read the group-size condition: two students.",
+    "Recall that a pair means two people.",
+    "Match the condition with Work in pairs.",
+    "Reject alone and the commands that do not describe grouping.",
+    "Choose A and restate it as work two by two."
+  ]
 }

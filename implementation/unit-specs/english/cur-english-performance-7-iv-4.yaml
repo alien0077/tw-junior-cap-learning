@@ -1,0 +1,149 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-7-iv-4
+  knowledgeGraphIds:
+  - kg-english-performance-7-iv-4
+  title: 7-Ⅳ-4：把討論技巧轉移學習
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 7-Ⅳ-4 能對教師或同學討論的內容觸類旁通、舉一反三
+    curriculumIntent: 從同伴討論抽出可遷移的理由原則，檢查新情境條件並依新證據調整主張
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以官方課綱與KG為課程事實依據；逐版只記可讀可定位材料，出版社正文未取得時標未知，不把校本計畫或第三方教案冒稱版本內容
+    currentEvidenceStatus: official-curriculum-and-KG-grounded; publisher-chapter-text-unavailable; public-school-and-teaching-method-reference-recorded
+  learningGoals:
+  - 從教師或同學的討論分辨結論、支撐理由與可遷移原則
+  - 比較新舊情境共同條件、關鍵差異及新限制
+  - 引用新情境證據調整方案，並以英語承接同伴觀點
+  prerequisites:
+  - 能理解簡短校園生活英語討論及理由連接語
+  - 能指出同伴的一項具體想法或條件
+  coreConcepts:
+  - 討論結論通常依賴理由；遷移的是成立條件與推理，不是原方案字面形式
+  - 新情境需比對共同條件、差異、限制及新證據
+  - 有效延伸要明確引用同伴觀點，再用新資訊調整主張
+  misconceptions:
+  - 把同伴原結論原封不動套到不同場地
+  - 只因新舊情境都在校園就認定可直接類比
+  - 只說I agree，未引用對方理由或增加新證據
+  - 新資料推翻原問題診斷後仍護住舊方案
+  contentFlow:
+  - 'predict: 讀同伴對圖書館分區的理由，先預測其中哪個條件可能移用到午餐時段'
+  - 'manipulate: 將同伴的主張、支持理由與成立條件拆開，再對照午餐場地、人流和時間限制'
+  - 'observe: 讀取新場地的人流與使用時段資料，標記哪些證據支持原原則、哪些迫使方案改變'
+  - 'explain: 引用同伴原意及新資料，說明保留或修正方案的理由，避免只說“I agree”'
+  - 'transfer: 將原則帶到社團博覽會攤位配置'
+  - 'reflect: 用條件、差異、新證據檢查遷移品質'
+  visualizations:
+  - 四欄討論紀錄：同伴原意、支撐理由、新情境限制、我的延伸
+  - 以校園場地／人流文字資料呈現新舊條件；不靠顏色單獨表示立場或差異
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-7-IV-4-I01
+    component: GuidedChoiceBlock
+    purpose: 從討論意見拆出可遷移原則，比對新限制並用新證據重建主張
+    initialState:
+      mode: guided-choice
+      showAnswer: false
+      selectedEvidence: []
+    studentActions:
+    - 閱讀同伴的原創討論觀點及支撐理由
+    - 選出可遷移的推理原則，而非原結論
+    - 錯答時依提示重試並檢查新情境限制
+    - 選擇可引用新證據並修正主張的延伸方式
+    visualRules:
+    - 先選答案再揭露解析；錯答提示須指出推理斷點
+    - 新舊情境和理由以文字明確呈現，不只靠顏色標記
+    - 窄螢幕題幹、選項與回饋均可讀
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-7-IV-4-I01
+      trigger: 把原來的圖書館分區方案逐字搬到新場地，未比較人流、時間或空間限制
+      prompt: 原方案背後哪一個理由仍成立？新場地有什麼條件會改變做法？
+      expectedEvidence: 說出需求差異原則，並指出新情境一項限制或新資料
+    feedback:
+      correct: 指出答案承接同伴觀點的位置及依據新資料調整的部分。
+      incorrect: 先分開原結論與支撐理由，再比較新情境限制，保留重試。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只參考按步驟呈現任務與回饋；本課討論情境、論點、證據和互動皆原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "只參考提供立場及說理支架的教學方向；本課議題及活動另行原創。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "只遵守鍵盤可操作、焦點可見和文字回饋；不取用討論內容。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "只遵循語意區域與閱讀順序；互動不呼叫外部資料。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「7-Ⅳ-4：把討論技巧轉移學習」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字／英文短段落，將「7-Ⅳ-4：把討論技巧轉移學習」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 互動載入時不顯示答案；四題須分辨原結論、可遷移理由及新情境限制。
+  - 錯答後顯示策略提示，保留當前題目供學生再次判斷；正答顯示具體推理解析。
+  - 至少一題需用新證據修正原方案，不能只選出抽象原則。
+  - 320px、375px與768px寬度均能以鍵盤選答並閱讀回饋，無水平溢位。
+  - 網路不可用時互動依lesson內嵌資料完整操作。
+  - fallback：視覺化或模擬腳本不可用時，以本課內嵌的文字場地／人流卡與四欄討論紀錄完成比較；不得依賴外網或假稱動態圖已載入。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 六段學生稿依本單元討論遷移概念獨立撰寫，含例證、迷思、練習、遷移及自我檢核
+  - 專項Node、完整自動化套件與真實瀏覽器互動／鍵盤／窄螢幕測試通過
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 7-Ⅳ-4
+    role: official-curriculum-source-of-truth
+  - url: https://www.fhehs.tp.edu.tw/wp-content/uploads/doc/fh210/%E8%B3%87%E6%BA%90%E7%8F%AD-%E8%8B%B1%E6%96%87-%E4%B8%83%E5%B9%B4%E7%B4%9A-1%E7%B5%84.pdf
+    locator: PDF p.1列7-Ⅳ-4；芳和實驗中學七年級資源班英語校本計畫，並列課堂活動與簡易對話學年目標，不是出版社教材
+    role: public-school-curriculum-cross-reference
+  - url: https://www.lkjh.tp.edu.tw/wp-content/uploads/doc/lkjh212/%E4%B9%9D%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf
+    locator: 搜尋結果確認瑠公國中九年級計畫列7-Ⅳ-4及引導式討論、口語評量；只能作跨年級校本目標線索，非本課版本正文
+    role: public-school-curriculum-cross-reference
+  - url: https://cavesconnect.cavesbooks.com.tw/cet-perspective-speaking-strategy-%E8%BE%AF%E6%89%8D%E5%A6%82%E4%BD%95%E7%84%A1%E7%A4%99-%E8%AE%93%E6%96%B0%E6%89%8B%E8%A8%80%E4%B9%8B%E6%9C%89%E7%89%A9/
+    locator: 公開初階英語討論教學文章，列四角立場、先整理理由、交換意見及回看觀點的活動原理；版權所有，僅抽象參考，不重製其題材、句型及範例
+    role: third-party-teaching-method-reference

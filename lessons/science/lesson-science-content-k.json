@@ -48,9 +48,9 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
-      "type": "scientific-investigation",
+    "type": "scientific-investigation",
     "goal": "讓學生拖曳系統中的作用者與條件，觀察能量、力或物質傳遞如何改變結果，並把模型和證據分開。",
     "scenario": "虛擬校園實驗室提供冰塊、金屬盤、木板、風扇與光源。學生每次只改變一個條件，先預測融化量或乾燥時間，再操作、記錄並檢查交互作用箭頭。",
     "variables": [
@@ -100,6 +100,17 @@
         ],
         "answer": "A",
         "feedback": "重複且控制條件能檢查風帶走水氣的解釋；不符合預測的資料也應保留，作為修正模型的線索。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "金屬盤讓冰塊融化較快，但盤面初溫也比木板高，如何判讀？",
+        "options": [
+          "重新固定盤面初溫與接觸面積，只比較材料，並保留原結果作為混合變因的線索",
+          "直接把融化較快全部歸因於金屬導熱，無須重做控制實驗",
+          "刪除初溫不同的資料，因為它不能提醒我們模型需要修正"
+        ],
+        "answer": "A",
+        "feedback": "交互作用的解釋要區分材料與初始條件；控制變因後重做，才能提高因果判讀的可信度。"
       }
     ]
   },
@@ -107,45 +118,55 @@
   "lessonScope": "theme",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "K：自然界的現象與交互作用；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；K：自然界的現象與交互作用 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「自然界的現象與交互作用」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為theme節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「K：自然界的現象與交互作用」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；K：自然界的現象與交互作用 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「K：自然界的現象與交互作用」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一國中自然公開課程與數位資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "K：自然界的現象與交互作用；公開入口可定位物理、化學與生物現象的共同探究主題，完整電子課本未取得，查核日期 2026-09-01。",
-      "sourceUrl": "https://www.nani-jr.com/",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；K：自然界的現象與交互作用 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "採用由可觀察現象追問作用者、條件與結果的方向；本課改以冰塊、植物與校園乾燥三個自編情境統整，未宣稱取得出版社全文。",
-      "copyrightBoundary": "僅研究公開主題定位，不複製課文、圖表、題目、答案或影音；本文與互動模型均為原創。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開課程資料",
-      "subject": "science",
-      "chapterLocator": "K：自然界的現象與交互作用；公開資料用於核對跨主題探究與資料判讀方向，完整電子課本未取得，查核日期 2026-09-01。",
-      "sourceUrl": "https://website.hle.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "吸收以模型、觀察量與條件式結論連結自然現象的方向，另自行設計能量箭頭與控制變因互動，不重製版面或題目。",
-      "copyrightBoundary": "僅使用公開定位與教學取向，不複製教材內文、圖片、題目、解析或答案。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「K：自然界的現象與交互作用」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -154,8 +175,25 @@
       "edition": "南一國中自然公開資源",
       "sourceType": "public-web",
       "sourceLocator": "https://www.nani-jr.com/；K主題公開定位，完整逐頁內容未取得，查核 2026-09-01。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["以觀察現象追問物體或系統間的作用關係", "需連結成立條件、觀察結果與可檢查證據"], "representations": ["本課原創使用交互作用箭頭、控制變因表與證據三欄表"], "examplesOrEvidence": ["公開入口提供主題定位；冰塊、植物與操場案例皆為自編"], "misconceptions": ["先後發生不等於因果，單一結果也不能排除替代因素"], "assessmentEmphasis": ["從資料指出作用者、變因、結果與限制"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "以觀察現象追問物體或系統間的作用關係",
+          "需連結成立條件、觀察結果與可檢查證據"
+        ],
+        "representations": [
+          "本課原創使用交互作用箭頭、控制變因表與證據三欄表"
+        ],
+        "examplesOrEvidence": [
+          "公開入口提供主題定位；冰塊、植物與操場案例皆為自編"
+        ],
+        "misconceptions": [
+          "先後發生不等於因果，單一結果也不能排除替代因素"
+        ],
+        "assessmentEmphasis": [
+          "從資料指出作用者、變因、結果與限制"
+        ]
+      },
       "licenseBoundary": "只使用公開定位與教學結構，未複製出版社的課文、圖表、題目或答案內容。"
     },
     {
@@ -163,8 +201,25 @@
       "edition": "康軒國中自然公開影音資源",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然科公開活動與主題定位，完整頁面受限，查核 2026-09-01。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["以可操作活動觀察自然變化並辨識交互作用", "模型需回到測量結果修正，且結論要標明成立條件"], "representations": ["本課設計材料、風速與接觸面積可調的模擬器"], "examplesOrEvidence": ["公開影音作為活動取向參考；所有數值和場景均自行編寫"], "misconceptions": ["材料不是能量的憑空來源，變化方向受初始條件影響"], "assessmentEmphasis": ["先預測再操作，解釋時標出控制條件"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "以可操作活動觀察自然變化並辨識交互作用",
+          "模型需回到測量結果修正，且結論要標明成立條件"
+        ],
+        "representations": [
+          "本課設計材料、風速與接觸面積可調的模擬器"
+        ],
+        "examplesOrEvidence": [
+          "公開影音作為活動取向參考；所有數值和場景均自行編寫"
+        ],
+        "misconceptions": [
+          "材料不是能量的憑空來源，變化方向受初始條件影響"
+        ],
+        "assessmentEmphasis": [
+          "先預測再操作，解釋時標出控制條件"
+        ]
+      },
       "licenseBoundary": "只研究公開資源的教學取向與主題定位，不重製影音、文字、圖片、題目或解析。"
     },
     {
@@ -172,16 +227,45 @@
       "edition": "翰林國中自然公開資料",
       "sourceType": "public-web",
       "sourceLocator": "https://website.hle.com.tw/；自然科跨單元探究與評量定位，完整電子課本未取得，查核 2026-09-01。",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts": ["以系統觀點連結力、能量、物質與生物現象", "證據強度取決於控制條件與測量設計"], "representations": ["以冰塊融化量、能量箭頭與校園乾燥時間三種表徵互相對照"], "examplesOrEvidence": ["公開資料只作主題定位；本課資料完全自編"], "misconceptions": ["觀察到關聯不等於已證明唯一原因，環境條件不可省略"], "assessmentEmphasis": ["要求提出替代解釋、改進比較組並說明限制"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "以系統觀點連結力、能量、物質與生物現象",
+          "證據強度取決於控制條件與測量設計"
+        ],
+        "representations": [
+          "以冰塊融化量、能量箭頭與校園乾燥時間三種表徵互相對照"
+        ],
+        "examplesOrEvidence": [
+          "公開資料只作主題定位；本課資料完全自編"
+        ],
+        "misconceptions": [
+          "觀察到關聯不等於已證明唯一原因，環境條件不可省略"
+        ],
+        "assessmentEmphasis": [
+          "要求提出替代解釋、改進比較組並說明限制"
+        ]
+      },
       "licenseBoundary": "只使用公開主題與評量方向，不複製教材文字、圖片、題目、答案或解析。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["三版本公開資料與官方課綱共同指向以現象、交互作用、證據和模型建立科學解釋", "自然系統中的力、能量、物質與生物活動可用作用者—機制—結果—條件鏈整理", "解釋必須把可觀察資料、推論機制與尚未控制的條件分開，才能接受重複檢驗"],
-    "versionDifferences": ["南一公開入口適合確認主題範圍，康軒公開資源呈現活動取向，翰林公開資料偏向跨主題探究與評量定位；公開程度不同，不能冒稱完整課本融合。", "本課不沿用任一版本篇章或題例，改以冰塊熱交換作主線，再轉入植物光反應與校園乾燥，讓同一推理工具跨現象遷移。"],
-    "originalAdditions": ["建立可調表面初溫、接觸面積與風速的交互作用模擬。", "用能量箭頭、證據—模型—限制三欄表和替代解釋，處理『摸起來冷就是溫度低』『金屬製造熱量』『有關聯就是唯一原因』等迷思。", "設計先預測、只改一項條件、重複測量、回到限制的單元專屬互動流程。"],
-    "llmSynthesisNote": "本課依官方課綱、kg-science-content-k 與 2026-09-01 可取得的南一、康軒、翰林公開資料交叉整理；公開來源未提供可合法逐頁讀取的完整三版本課本，故如實保留研究限制。正文、案例、互動任務與回饋由 LLM 以自己的話針對 K 單元獨立撰寫，未複製出版社文字、圖片、題目或答案。Terra 第二輪尚未執行，維持 draft。"
+    "commonCore": [
+      "自然現象可由物質、能量、力、尺度和系統邊界的交互作用描述。",
+      "模型、守恆、時間序列、對照與不確定性是跨領域自然探究的共同工具。",
+      "複雜自然系統常由多因素交互形成，需避免單一因果與過度宣稱。"
+    ],
+    "versionDifferences": [
+      "南一公開線索支持由日常現象、能量與環境觀察進入自然系統。",
+      "康軒公開課程資料較突出模型、測量、資料和控制變因。",
+      "翰林公開課程計畫補充尺度、交互作用、環境與公共溝通連結；公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以系統邊界—交互作用—守恆—證據—不確定性五層框架統整根單元。",
+    "加入海陸風、月相、食物網、雨滴、地震定位、熱平衡和環境溝通的跨現象遷移。",
+    "每個跨科案例要求先界定系統與可測量量，再列出支持機制的證據和替代解釋；若尺度或時間資料不相稱，不把類比當成因果證明。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公開試題／課程資料能力方向，重新撰寫 K 根單元自然界現象、系統交互、能量、物質、模型、證據與安全的整合題；未複製教材或試題文字、圖表與答案，Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -250,7 +334,42 @@
     "model": "general",
     "goal": "在冰塊熱交換與操場乾燥兩個模型間切換，拖曳一項條件、預測箭頭方向，再以融化量或乾燥時間檢查交互作用解釋。",
     "mission": "先選擇金屬盤、木板或塑膠墊，設定表面初溫與接觸面積；完成一次只改一項條件的測試後，再開啟風扇比較水氣移除速度。系統保留每次測量與未控制條件，禁止以危險藥品或高電壓代替觀察。",
-    "learningDesign":{"type":"heat-transfer-material-test","objective":"以接觸面積、材料與風速資料比較傳導、對流和蒸發的熱傳遞。","predictionPrompt":"同樣初溫下金屬盤比木板降溫快，哪些控制與測量能支持材料差異？","steps":[{"action":"固定初溫與面積，分別更換接觸材料","equation":"heat-flow=f(material,area,deltaT)"},{"action":"記錄溫度曲線並加入風扇比較對流","equation":"rate=delta-temperature/time"},{"action":"追蹤水氣移除速度，標示未控制條件","equation":"evaporation=f(wind,humidity)"}]},
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以接觸面積、材料與風速資料比較傳導、對流和蒸發的熱傳遞。",
+      "predictionPrompt": "同樣初溫下金屬盤比木板降溫快，哪些控制與測量能支持材料差異？",
+      "evidencePrompt": "請以初溫、接觸面積、材料、溫度曲線、風速、對流、蒸發、濕度與未控制條件，說明熱傳遞比較的證據和限制。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "固定初溫與面積，分別更換接觸材料",
+          "equation": "heat-flow=f(material,area,deltaT)",
+          "reason": "固定初溫與面積後更換材料，才能把降溫差異和材料條件連結。",
+          "feedback": "請記錄初溫、面積與材料，並保持接觸方式一致再比較溫度變化。"
+        },
+        {
+          "id": "step-2",
+          "action": "記錄溫度曲線並加入風扇比較對流",
+          "equation": "rate=delta-temperature/time",
+          "reason": "完整溫度曲線能比較速率，加入風扇則可檢查對流是否改變熱交換。",
+          "feedback": "請用相同時間間隔記錄曲線，並把有風與無風條件分開。"
+        },
+        {
+          "id": "step-3",
+          "action": "追蹤水氣移除速度，標示未控制條件",
+          "equation": "evaporation=f(wind,humidity)",
+          "reason": "蒸發受風速與濕度共同影響，需標出未控制條件才能限定結論。",
+          "feedback": "請記錄水氣移除速度、風速與濕度，並列出溫度或容器形狀等未控制因素。"
+        },
+        {
+          "id": "step-4",
+          "action": "重新固定盤面初溫、接觸面積與冰塊條件，檢查材料差異是否在重複測試中仍存在",
+          "equation": "difference=material effect only when controls fixed",
+          "reason": "原始結果同時混有材料與初溫差異；控制後重做才能把交互作用模型和因果主張分開。",
+          "feedback": "請保留原始與控制後資料，若結果改變，說明初溫是重要替代解釋而非刪除資料。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

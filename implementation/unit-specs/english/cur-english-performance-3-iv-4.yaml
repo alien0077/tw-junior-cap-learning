@@ -1,0 +1,190 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-4
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-4
+  title: 3-Ⅳ-4：理解簡易圖表
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-4：理解簡易圖表
+    curriculumIntent: 3-Ⅳ-4：理解簡易圖表
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 先以標題、欄名、軸線、單位和刻度確認圖表描述的對象
+  - 依題目限定的日期、類別與數量比較資料，辨識最高、最低、相等和變化
+  - 用英文陳述資料直接支持的結論，並避免添加圖表未提供的原因
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 圖表身份由標題、欄列／座標軸、單位和刻度共同決定
+  - 讀值與比較必須保留資料類別、時間範圍和計量單位
+  - 趨勢描述不等於原因解釋；結論不能超出圖表證據
+  misconceptions:
+  - 只背「3-Ⅳ-4：理解簡易圖表」形式，未依語境、時間或句構判斷
+  - 把記憶答案當成理解證據
+  - 忽略題幹中的限制條件或單位
+  contentFlow:
+  - 'hook: 同一根長條在每格5人與每格10人時分別代表多少？先預測，不公布答案。'
+  - 'activate-prerequisite: 區分圖表標題、類別欄、單位、刻度和資料值。'
+  - 'visualize: 並列相同圖形標記與刻度不同的文字化長條資料。'
+  - 'predict: 提交第一個讀值和所依據的刻度線。'
+  - 'manipulate: 翻轉每格單位標籤，由學生重新讀取同一高度。'
+  - 'observe: 比較預測與新讀值，說明格線數不變但總量改變。'
+  - 'explain: 用英文句子包含類別、數量和單位，並指出圖例證據。'
+  - 'formalize: 依 title → category/axis → unit/scale → compare 的次序讀圖。'
+  - 'transfer: 將同一檢核法用於全新活動時刻表與折線資料。'
+  - 'exit-ticket: 描述一段有界線的趨勢，並指出單靠圖表不能證明的原因。'
+  visualizations:
+  - 每格單位以文字標示，並與刻度線、讀值和資料表同步呈現
+  - 日期／類別、數量和單位需可用文字直接讀取，不以顏色單獨區分
+  - 趨勢圖附明確時間範圍；呈現值變化但不暗示未提供的因果
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-4-I01
+    component: DataExplorerBlock
+    purpose: 操作圖表刻度標籤，觀察同一視覺高度在不同單位下代表不同數量，並以資料證據修正預測
+    dataExplorerLab:
+      title: 同高不同量：刻度翻轉實驗
+      context: 自編校園借閱圖有四個等距刻度；先依每格5本預測總數，提交後才可把每格改成10本並觀察讀值同步變化。
+      intervals: 4
+      unitLabel: 本
+      initialUnit: 5
+      changedUnit: 10
+      expectedInitialValue: 20
+      predictionPrompt: 四格、每格5本，總共幾本？請先輸入預測。
+      predictionHint: 提示：不是只數格子；將格數乘上每格代表的本數，再重試。
+      predictionAccepted: 預測記錄完成；答案已核對。現在可切換每格單位，觀察相同柱高的讀值。
+      manipulationPrompt: 操作每格單位（鍵盤可用方向鍵）；觀察四格代表的總量
+      explanationPrompt: 請說明讀值改變的原因；答案需包含「刻度」和「單位」
+      acceptedExplanationTerms: [刻度, 單位]
+      explanationAccepted: 說明通過：柱高維持四格，總量變動是因為每格刻度單位改變。
+      explanationHint: 請比較兩次的每格標籤與格數；至少提到刻度和單位。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        intervals: 4
+        valuePerInterval: 5
+    studentActions:
+    - 先提交依據每格5單位得到的預測，之後才顯示改變刻度的任務
+    - 將每格單位標籤由5切換成10，保留相同的四格高度
+    - 比較改動前後讀值並說明變化來自刻度，不是柱高
+    - 在時刻表和折線圖中圈出支持英文結論的資料列或時間範圍
+    - 以包含類別、數量／趨勢及單位／期間的短句解釋結論界線
+    visualRules:
+    - 單位切換時保留四格柱高，更新文字讀值：4×5=20，4×10=40
+    - 提交預測之前不顯示換算結果；錯誤時先提示檢查每格單位，再允許重試
+    - 顏色不可單獨承擔類別意義，數值、單位和日期都需有文字標記
+    - 趨勢結論須保留圖表實際涵蓋的月份或日期，不能自行補原因
+    - 窄螢幕不得裁切欄名、刻度、題幹、操作欄或回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-4-I01
+      trigger: 將四格直接讀成4人，忽略每格所代表的單位，或把趨勢當成已證明的原因
+      prompt: 每一格代表多少？圖表哪一個標記支持這個讀值？
+      expectedEvidence: 指出刻度標籤和格數；趨勢題另指出起訖日期和值的方向
+    feedback:
+      correct: 連結每格單位、格數和總量，然後請學生在另一張圖表重新讀值。
+      incorrect: 先提示回看圖例的每格單位；重試仍錯才示範格數乘單位，不能只報答案。
+    guidedActivity:
+      title: 刻度翻轉台：同一根柱子，讀值為何改變？
+      introduction: 先預測再檢查。整段活動使用虛構的校園資料；每題答錯先顯示線索，學生修正後才前進。
+      stages:
+      - prompt: "長條停在第4格，每格代表5本。先輸入總本數，只填數字。"
+        acceptedAnswers: ['20']
+        correctFeedback: 正確；4格各5本，總數是20本。
+        hint: 先確認一格的數量，再把相同數量累加4次。
+      - prompt: "現在只把圖例改成每格10本，柱高仍是4格。新的讀值是多少？"
+        acceptedAnswers: ['40']
+        correctFeedback: 刻度改變而格數不變，總量因此成為40本。
+        hint: 柱高代表4個間隔；改用10本乘4格，不要沿用舊答案。
+      - prompt: "比較20和40：改變的是柱高還是每格代表的本數？請輸入『刻度』或『柱高』。"
+        acceptedAnswers: [刻度, 每格單位]
+        correctFeedback: 對，圖形高度相同，改變的是刻度單位。
+        hint: 兩次都是四格；比較圖例上的每格數值。
+      - prompt: "折線記錄週一12人、週二18人、週三15人。哪一天最多？請輸入英文星期。"
+        acceptedAnswers: [Tuesday]
+        correctFeedback: Tuesday 的18人高於12和15；答案保留了人數單位。
+        hint: 將三個值逐一比較，找最大數，不要看日期先後猜測。
+      - prompt: "活動表寫著『值在週一至週三上升』，但沒記錄原因。可以說新規則造成上升嗎？輸入『不能』或『no』。"
+        acceptedAnswers: [不能, 'no']
+        correctFeedback: 完成：你用範圍內的資料描述變化，沒有把未測量的原因寫成事實。
+        hint: 圖表顯示時間與數值；若沒有規則變更或比較資料，就不能判定因果。
+      completionMessage: 你已經用刻度重讀、數值比較和因果界線完成圖表判讀。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 DataExplorerBlock 只參考預測、操作、證據表達與無障礙呈現教法；圖表數據、標記、題目與回饋均由本課自編。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "只借鑑讓學生先預測再操作、觀察和說明的活動節奏，不複製 PhET 模擬內容或素材。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "依 W3C 原生鍵盤與可辨識標籤原則，讓刻度滑桿可用鍵盤操作、即時讀值以 live output 呈現。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "用具名 section、label、fieldset/legend、status 與 output 將圖表預測、操作和回饋分區呈現。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「3-Ⅳ-4：理解簡易圖表」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字／英文短段落，將「3-Ⅳ-4：理解簡易圖表」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入「3-Ⅳ-4：理解簡易圖表」時不得先顯示正解；學生必須先提交預測，且預測會保留供後續比較。
+  - 操作每格單位後，圖表讀值由四格×5本同步更新為四格×10本，並以可讀文字說明改變的是刻度單位而非柱高。
+  - 錯答時命中本單元刻度／單位迷思檢核，提示學生指出刻度證據；先提供提示並允許重試，不直接揭露答案。
+  - 在320px、375px與768px寬度，以鍵盤完成預測、操作、觀察與解釋；核心題幹、滑桿、回饋與狀態不得溢位或遺失。
+  - 以新的時刻表或趨勢資料執行遷移題，回答需指出資料範圍、數量／單位與可支持的推論界線。
+  - 外部資源失效時，DataExplorerBlock仍以內建資料與文字fallback完成預測、操作、觀察、解釋與遷移，不阻塞本課。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-4
+    role: official-curriculum-source-of-truth

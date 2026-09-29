@@ -2,23 +2,23 @@
   "id": "question-math-content-a-8-3-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 f(x)＝3x²－x＋1，則 f(2) 為何？",
+  "prompt": "若 x＝2，則多項式 (x²＋3x−1)−2(x−1) 的值為何？",
   "options": [
     {
       "id": "A",
-      "text": "13"
+      "text": "5"
     },
     {
       "id": "B",
-      "text": "7"
+      "text": "6"
     },
     {
       "id": "C",
-      "text": "11"
+      "text": "7"
     },
     {
       "id": "D",
-      "text": "9"
+      "text": "12"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "代入 x＝2：3×2²－2＋1＝12－2＋1＝11。"
+    "explanation": "先代入或化簡：4＋6−1−2(1)＝9−2＝7，因此答案為 7。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究多項式四則運算、代入與驗算能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+    "sourceLocator": "四份校方公開試卷的題型定位見 examPatternRefs；只作 pattern-only 研究，不複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與四份公立學校公開數學試題的相關能力方向獨立改寫；本題題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-math-content-a-8-3",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/064519/get-file/65c1df1090ff2c381053ac91",
+      "title": "臺中市立大道國中數學科八年級補行評量題庫（原卷未載學年度）",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "選擇題第7題：代入指定 x 值求兩一次式乘積",
+      "observedPattern": "pattern-only：僅參考原卷單題的「代入指定 x 值求兩一次式乘積」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期八年級第一次定期評量數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "選擇題第10題：多項式化為 ax²+bx+c 後求 a+b+c（等同代入 x=1）",
+      "observedPattern": "pattern-only：僅參考原卷單題的「多項式化為 ax²+bx+c 後求 a+b+c（等同代入 x=1）」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064502/get-file/60175cf169c72a5f0f4269bf",
+      "title": "臺中市立豐東國民中學八年級數學科考試卷（原卷未標學年度）",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "選擇題第23題：利用已知 x²+3x 關係代入化簡多項式值",
+      "observedPattern": "pattern-only：僅參考原卷單題的「利用已知 x²+3x 關係代入化簡多項式值」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "可先處理括號與運算順序，再代入數值做最後核對。",
+  "solutionSteps": [
+    "把 x＝2 代入原式。",
+    "計算 x²＋3x−1＝4＋6−1＝9。",
+    "計算 2(x−1)＝2(1)＝2。",
+    "用 9−2 得 7。",
+    "選 C，確認代入與減法順序一致。"
+  ]
 }

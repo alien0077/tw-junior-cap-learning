@@ -2,23 +2,23 @@
   "id": "question-english-performance-5-iv-11-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「5-Ⅳ-11／閱讀填寫簡單表格資料」notice for the sports center, item 4: “Bring one reusable bottle.” What does it tell people?",
+  "prompt": "A menu table groups tomato soup and salad under Lunch, and fruit and milk under Snack. Which category contains milk?",
   "options": [
     {
       "id": "A",
-      "text": "For item 4 in the 5-Ⅳ-11／閱讀填寫簡單表格資料 notice, A reusable bottle is required."
+      "text": "Breakfast"
     },
     {
       "id": "B",
-      "text": "For item 4 in the 5-Ⅳ-11／閱讀填寫簡單表格資料 notice, A new desk is required."
+      "text": "Lunch"
     },
     {
       "id": "C",
-      "text": "For item 4 in the 5-Ⅳ-11／閱讀填寫簡單表格資料 notice, Food is required for entry."
+      "text": "Dessert only"
     },
     {
       "id": "D",
-      "text": "For item 4 in the 5-Ⅳ-11／閱讀填寫簡單表格資料 notice, Visitors must bring a ticket for the roof."
+      "text": "Snack"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 5-Ⅳ-11／閱讀填寫簡單表格資料, question 4."
+    "value": "D",
+    "explanation": "答案 D：milk 被放在 Snack 分類。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1660183128201jpNsop8i.pdf",
+    "sourceLocator": "內湖、國昌、至善三所公立國中英語段考的表格／表單閱讀題；逐題頁碼、題號及 pattern-only 界線列於 examPatternRefs。",
+    "authoringNote": "依官方課綱與 KG-english-performance-5-iv-11，參照三所公立學校公開英語評量的資料定位與跨欄判讀能力方向獨立撰寫；人物、情境、數值、選項與解析均為原創，仍待完整內容及版權 gate。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-5-iv-11"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-5-iv-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1660183128201jpNsop8i.pdf",
+      "title": "臺北市立內湖國中110學年度第2學期七年級英語科第一次段考",
+      "year": "110-2",
+      "subject": "english",
+      "locator": "PDF第2頁第19至21題",
+      "locatorLevel": "page",
+      "observedPattern": "只參照公開公校英文評量中以行程表、時段表、表單／資料表作答的資訊定位、跨欄配對、比較、條件篩選與順序判讀；站內題幹與數據獨立撰寫，未複製原卷。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E4%BA%8C%E8%8B%B1%E6%96%87%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立國昌國中110學年度第2學期二年級第一次段考英文科試題",
+      "year": "110-2",
+      "subject": "english",
+      "locator": "PDF第3頁第19至21題",
+      "locatorLevel": "page",
+      "observedPattern": "只參照公開公校英文評量中以行程表、時段表、表單／資料表作答的資訊定位、跨欄配對、比較、條件篩選與順序判讀；站內題幹與數據獨立撰寫，未複製原卷。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/61f258cbaea6987a0f46560a.pdf",
+      "title": "臺中市立至善國中110學年度第1學期七年級第一次定期評量英語科試題卷",
+      "year": "110-1",
+      "subject": "english",
+      "locator": "PDF第6頁第38至40題",
+      "locatorLevel": "page",
+      "observedPattern": "只參照公開公校英文評量中以行程表、時段表、表單／資料表作答的資訊定位、跨欄配對、比較、條件篩選與順序判讀；站內題幹與數據獨立撰寫，未複製原卷。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "分類表題要先找到目標項目 milk，再追溯它所在的分類標頭；不要依個人飲食常識猜類別。",
+  "solutionSteps": [
+    "先定位目標項目 milk，而不是從 soup 或 salad 開始搜尋。",
+    "表中 Lunch 包含 tomato soup 和 salad；Snack 包含 fruit 和 milk。",
+    "沿著 milk 所在分組回看標題，得到 Snack。",
+    "Lunch、Breakfast 與 Dessert only 都不是題目列出的 milk 所屬分類。",
+    "答案 D：milk 被放在 Snack 分類。"
+  ]
 }

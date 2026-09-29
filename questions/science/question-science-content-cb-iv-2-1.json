@@ -2,41 +2,67 @@
   "id": "question-science-content-cb-iv-2-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年10月31日校園實驗室的觀察中，將 71 g 食鹽溶於 920 g 水，研究「Cb-Ⅳ-2：原子排列與元素特性」時，溶液質量為何？",
+  "prompt": "鑽石與石墨都只由碳元素組成，但硬度與導電性明顯不同。最合理的解釋是？",
   "options": [
     {
       "id": "A",
-      "text": "991 g"
+      "text": "碳原子的排列方式與彼此作用不同"
     },
     {
       "id": "B",
-      "text": "849 g"
+      "text": "鑽石含有另一種未被發現的元素"
     },
     {
       "id": "C",
-      "text": "65320 g"
+      "text": "石墨的碳原子比較輕"
     },
     {
       "id": "D",
-      "text": "920 g"
+      "text": "兩者其實是不同元素的化合物"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cb-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：71＋920＝991 g。 本題對應 KG「Cb-Ⅳ-2：原子排列與元素特性」。"
+    "explanation": "元素種類相同不保證原子排列和作用方式相同；結構差異會造成巨觀性質差異。選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的原子排列、同素異形體與材料性質能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Cb-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cb-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子排列、同素異形體、金屬性質與微觀模型判讀",
+      "pattern": "取由微觀排列與電子／結構線索推論材料宏觀性質的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由微觀排列與電子／結構線索推論材料宏觀性質的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認組成元素，再把性質差異連回粒子排列與作用。",
+  "solutionSteps": [
+    "找出兩種材料共同的元素組成。",
+    "比較題目指出的硬度與導電性差異。",
+    "判斷只改變元素種類是否能解釋差異。",
+    "改用原子排列與彼此作用方式說明結構—性質關係。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

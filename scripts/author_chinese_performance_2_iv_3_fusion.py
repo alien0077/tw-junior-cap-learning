@@ -1,0 +1,48 @@
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/chinese/lesson-chinese-performance-2-iv-3.json"
+REPORT = ROOT / "implementation/reports/chinese-performance-2-iv-3-first-pass-review.json"
+
+
+def rec(name, locator, concepts, forms, misconception, assessment):
+    return {"publisher": name, "edition": f"{name} 公立校方國文課程計畫章節級證據", "sourceType": "public-web", "sourceLocator": locator, "reviewedAt": "2026-09-21", "findings": {"concepts": concepts, "representations": forms, "examplesOrEvidence": ["本課以午休操場、校園手機規範與社區空間三個原創公共議題，僅承接公開課程的表達、論辯與觀點回應方向。"], "misconceptions": [misconception], "assessmentEmphasis": [assessment]}, "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、篇章、題目、答案、影音或版面。"}
+
+
+def main():
+    data = json.loads(LESSON.read_text(encoding="utf-8"))
+    assert data["id"] == "lesson-chinese-performance-2-iv-3"
+    data["title"] = "2-Ⅳ-3：讓主張有邊界，讓論辯有證據"
+    data["content"] = {"summary": "有條理的論辯不是把聲音變大，也不是把對方的立場說得更極端，而是清楚界定主張、理由、證據、反方可能的限制與可接受的結論範圍。本課以午休操場、校園手機規範與社區空間三個原創公共議題，練習提出可討論主張、安排證據、回應反駁、區分事實與價值，最後在資訊不足時保留條件化結論。", "sections": [{"heading": "主張要能被討論", "body": "『操場應開放』太寬，需補上對象、時段、規則與要解決的問題，例如『平日下午放學前開放部分區域，並以人數與安全事件評估』。主張越有邊界，聽者越能知道要用什麼證據回應。"}, {"heading": "理由不是證據的替身", "body": "『大家都喜歡』是未說明來源的理由，投票、觀察或調查才可能提供可核對材料。證據仍要問樣本、日期、方法與限制，不因數字出現就自動代表所有人。"}, {"heading": "反駁先找對方真正的版本", "body": "回應反方前先公平重述，不把『有限開放』改說成『完全不管安全』。接著指出同意的部分、分歧的證據或價值，再提出修正方案，論辯才不會變成稻草人攻擊。"}, {"heading": "結論要和證據強度相稱", "body": "資料只支持某時段或某群體時，結論也要限制在那個範圍。公共決策往往同時涉及公平、便利、安全與成本，不能用單一指標假裝所有價值已被解決。"}]}
+    data["studyHighlights"] = ["把主張寫成對象、範圍、時段、條件與可觀察目標。", "分開理由、證據與價值判斷，核對來源、樣本、方法與限制。", "公平重述反方，指出同意與分歧，再提出能回應限制的修正。", "讓結論範圍與證據強度相稱，公開仍未解決的價值取捨。"]
+    data["teaching"] = {"body": [
+        {"id": "hook", "phase": "hook", "heading": "午休開放操場，要先說清楚哪件事？", "body": "將『午休應開放操場』改寫三次：全校、部分年級、部分時段；每次列出想解決的問題與可能風險。比較不同邊界如何改變資料需求，讓學習者看見主張不是口號，而是可被檢查的提案。"},
+        {"id": "explain", "phase": "explain", "heading": "論辯五格：主張、理由、證據、反方、範圍", "body": "先寫主張，再問理由；接著指出可核對證據與證據限制，再公平整理反方最強疑慮，最後把結論縮到資料真正支持的範圍。若某格空白，應標記為待查而不是用更肯定的語氣補上。"},
+        {"id": "worked-example", "phase": "worked-example", "heading": "從『手機都該禁用』走向可辯論方案", "body": "先把絕對主張改成『上課期間手機收存，遇到學習或緊急需求依程序申請』，再分別列便利、專注、緊急聯絡與執行公平的證據。結論不是誰贏，而是哪些條件使規範合理、何時需要重新檢討。"},
+        {"id": "guided-practice", "phase": "guided-practice", "heading": "公平回應一個反方疑慮", "body": "反方說開放操場會增加碰撞。先重述這個安全疑慮，再問事故資料、場地分區與人數上限，最後提出小範圍試行和停止條件。學習者不能把反方改寫成『反對所有運動』，也不能只用個人經驗反擊。"},
+        {"id": "transfer", "phase": "transfer", "heading": "在社區空間中處理價值衝突", "body": "居民想要安靜、青少年需要活動、管理者要控制成本。把可測量資料和價值偏好分欄，提出至少兩個方案及其代價，再寫出哪些部分可用試行驗證、哪些必須透過協商而非單靠數據決定。"},
+        {"id": "reflect", "phase": "reflect", "heading": "檢查自己是否只是在辯贏", "body": "回看一段發言，圈出誇大對手、把個案當普遍、把價值說成事實或忽略證據限制的地方。改寫成有邊界的主張與條件化結論，並寫出哪一項新資料或對方理由會使你修正。"},
+    ], "summary": ["把主張限定在對象、時段、條件與可觀察目標。", "用來源、樣本、方法與限制檢查理由和證據。", "公平重述反方，回應其最強疑慮而非攻擊簡化版本。", "分開事實、價值與執行取捨，讓結論不超出證據。"], "exitCheck": [{"prompt": "如何把『午休應開放操場』改成可討論主張？", "expectedEvidence": "能補上對象、時段、區域、規則、目標與評估指標，讓資料和反方疑慮有對應位置。"}, {"prompt": "為什麼『大家都喜歡』不一定是充分證據？", "expectedEvidence": "能指出來源、樣本、題目、時間與代表性仍未知，並提出更可核對的調查或觀察。"}, {"prompt": "如何回應反方而不製造稻草人？", "expectedEvidence": "能公平重述對方最強疑慮，指出同意／分歧，再用條件、資料或試行方案回應。"}]}
+    data["interactive"] = {"type": "guided-choice", "goal": "界定可討論主張、安排證據、回應反方並建立與證據相稱的條件化結論。", "scenario": "從操場、手機規範到社區空間，逐步把立場轉成有邊界的論辯。", "variables": [{"symbol": "c", "meaning": "主張邊界"}, {"symbol": "e", "meaning": "證據與限制"}, {"symbol": "r", "meaning": "反方與回應"}], "steps": [
+        {"id": "step-1", "prompt": "辯論午休是否開放操場時，哪句最適合作為可討論主張？", "options": ["平日下午放學前開放部分區域，設人數與安全規則並以資料檢討", "操場當然應該永遠開放", "反對開放的人都不重視學生"], "answer": "A", "feedback": "A 有對象、時段、範圍、規則與檢討條件，能被資料與反方具體回應。"},
+        {"id": "step-2", "prompt": "要支持校園手機規範，哪種證據整理較完整？", "options": ["同時比較專注、緊急聯絡、使用需求、執行公平與不同時段資料，並標示限制", "只引用一位同學的經驗", "只說多數人應該會同意"], "answer": "A", "feedback": "A 把多面向資料與限制放在一起，不把單一經驗或同意度當成全部論證。"},
+        {"id": "step-3", "prompt": "回應『開放操場會增加碰撞』時，哪套方式最有條理？", "options": ["先公平重述安全疑慮，再查事故與人數資料，提出分區試行及停止條件", "說對方只是害怕改變", "直接保證絕不會發生事故"], "answer": "A", "feedback": "A 回應反方真正的風險，並用可測試的條件取代攻擊或過度保證。"},
+    ]}
+    data["authoringStandard"] = "version-fused-v1"
+    data["updatedAt"] = "2026-09-21"
+    data["versionResearch"] = [
+        rec("nani", "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf；國語文口語表達、意見陳述與溝通回應定位；核讀 2026-09-21。", ["依目的、對象與情境清楚表達意見和理由。", "口語溝通需能聆聽、回應並調整表達。"], ["主張、理由、例證、回應、結論與語氣。"], "把立場強度當成論證強度，或把反對者人格化。", "評量表達明確、理由組織、溝通適切與回應異議。"),
+        rec("kanghsuan", "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf；國語文討論、辯論與合作溝通定位；核讀 2026-09-21。", ["討論和辯論需提出理由、聆聽不同觀點並依回饋修正。", "合作溝通要兼顧證據、態度與可行方案。"], ["正反主張、證據鏈、反駁、讓步、方案與取捨。"], "把論辯當成消滅對手，只挑弱反例或誤解對方。", "重視邏輯組織、觀點回應、公平表達與修正。"),
+        rec("hanlin", "https://www.msjh.ntpc.edu.tw/uploads/1691978949408RP7cOuyZ.pdf；國文表達組織、論證與評量定位；核讀 2026-09-21。", ["表達內容需有脈絡、觀點與證據，並掌握結論範圍。", "論辯要分辨事實、推論、價值與限制。"], ["主張、資料、因果、反例、條件、價值與結論強度。"], "用個案或情緒詞直接推出普遍結論，忽略證據涵蓋範圍。", "要求證據連結、反駁完整、結論有條件並能指出未解取捨。"),
+    ]
+    data["fusionRecord"] = {"commonCore": ["三版本公開結構共同支持明確表達、理由組織、觀點回應與有條理討論。", "論辯需要主張邊界、證據限制、公平理解反方與可修正結論。", "事實、推論、價值與執行條件必須分開說明。"], "versionDifferences": ["南一較突顯口語表達與情境回應；康軒較突顯討論、辯論、合作與修正；翰林較突顯證據、推論、反例、限制與結論強度。這是公開課程計畫層級差異，不宣稱完整教材差異。"], "originalAdditions": ["以操場開放將寬泛立場改成有時段與安全條件的主張。", "以手機規範比較專注、便利、緊急與公平的多重證據。", "以社區空間分開可測量資料與價值取捨，設計試行與協商。"], "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織主張邊界、證據、反方、公平重述、條件化結論與價值取捨。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    data["teaching"]["body"][1]["body"] += " 把每一格都改寫成聽眾可以追問的句子，並用不同顏色標示資料、推論與價值判斷；顏色只是輔助，文字本身仍要清楚。"
+    data["teaching"]["body"][5]["body"] += " 將同伴提出的最強反方理由放進修改稿，檢查自己的主張是否仍站得住，若不能就縮小範圍而不是提高音量。"
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit": "2-Ⅳ-3：讓主張有邊界，讓論辯有證據", "lessonId": data["id"], "status": "first-pass-ai-review-complete", "reviewStatus": "draft", "checks": {"unitSpecificOriginalContent": True, "threeVersionResearchRecords": True, "fusionRecordPresent": True, "interactivePredictionManipulationExplanation": True, "answersAndDetailedSteps": True, "terraSecondPass": "pending"}, "reviewedAt": "2026-09-21"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("authored chinese performance 2-iv-3")
+
+
+if __name__ == "__main__":
+    main()

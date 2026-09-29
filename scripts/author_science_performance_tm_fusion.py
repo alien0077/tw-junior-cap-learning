@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance m."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-tm.json"; REPORT=ROOT/"implementation/reports/science-performance-tm-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；科學模型、表徵轉換、預測與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持用模型表達不可直接看見的機制，並以資料檢驗、修正或比較模型。"],"representations":[r],"examplesOrEvidence":["本課的水循環、食物網與溫室效應模型皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-tm" and d["reviewStatus"]=="draft"
+ d["title"]="建立模型（m）：用表徵說清楚看不見的機制"
+ d["content"]={"summary":"模型是把複雜或不可直接觀察的系統，用圖、物件、流程、數學關係或電腦模擬表達出來，讓人能描述機制、提出預測並比較證據。模型不是現實的縮小複製，必須標示尺度、假設和省略的因素。本課以水循環、食物網與溫室效應的原創模型，練習從資料選擇重要關係、由模型預測可觀察結果，再依反例修正。","sections":[{"heading":"模型要回答一個問題","body":"先問模型要解釋什麼：水如何移動、能量如何傳遞或溫度為何改變。問題決定要保留哪些元件和箭頭，不能把所有資訊堆在同一張圖上。"},{"heading":"符號與箭頭都要有意義","body":"圖中的圓點、大小、顏色和箭頭可能代表物質、能量、數量或方向。畫完要附圖例，確認讀者不會把能量流向、物質循環或因果順序混成同一件事。"},{"heading":"模型能產生可檢查預測","body":"模型若說蒸發增加，應能預測在較高溫或風速條件下觀察到哪些變化。預測不合時先找哪個假設或尺度需要修正，而不是只改圖讓它看起來符合結果。"},{"heading":"模型的有效性有範圍","body":"一個簡化模型可能適合課堂尺度，卻不適合直接推到全球或長時間。比較模型時看它能解釋哪些資料、在哪些條件失效，以及增加細節是否真的改善預測。"}]}
+ d["studyHighlights"]=["從問題決定模型元件、關係與尺度。","為符號、箭頭、數值與假設提供圖例。","由模型提出可觀察、可比較的預測。","用反例、資料與適用範圍修正模型。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"一滴水去了哪裡？","body":"校園水窪在晴天消失，請畫出水可能經過的路徑。有人只畫蒸發，有人加入雲、降雨、土壤與排水。先比較各圖保留和省略的部分，再問哪張模型能預測下一場雨後水會出現在哪裡，讓模型從畫圖變成解釋工具。"},
+ {"id":"explain","phase":"explain","heading":"模型建構的五個檢查點","body":"明確問題、選取元件、定義表示法、畫出關係與提出預測。每一步都要標記假設與尺度，並保留能被資料檢驗的部分。模型的簡潔是為了突出關係，不是把重要條件偷偷刪掉；完成後還要請他人依圖例重述模型，檢查表徵是否真的清楚。"},
+ {"id":"worked-example","phase":"worked-example","heading":"用食物網模型追蹤能量與數量","body":"在草、毛毛蟲、鳥的食物網中，箭頭先用圖例說明是能量流向還是捕食關係。若假設鳥增加，模型可預測毛毛蟲可能下降、草受啃食壓力減少；但還要標出疾病、其他捕食者與季節等未納入因素，不能把一條箭頭當成唯一因果。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"比較兩個溫室效應模型","body":"一個模型只畫大氣層與地表，另一個加入雲量、反射與不同波段。學習者先問兩者要回答的尺度，再用一筆溫度資料檢查預測；若增加細節沒有改善指定資料的解釋，就不能只因圖更複雜便判定較好。"},
+ {"id":"transfer","phase":"transfer","heading":"把圖模型轉成流程與文字","body":"請將水循環圖改寫成六步流程，再由流程寫回圖例和箭頭。轉換時檢查每個物質庫與移動是否保留、時間順序是否改變、哪些假設只在特定季節成立。不同表徵若描述同一模型，應能互相核對。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個模型迷思","body":"請修正『模型越像真的越好』與『模型預測錯一次就毫無價值』。模型的價值在於對指定問題和範圍的解釋與預測；錯誤結果應促使檢查資料、假設和尺度，並讓模型更精確地標示限制。"}
+ ],"summary":["模型由問題、元件、關係、尺度和假設組成。","符號與箭頭要有圖例並能轉換成其他表徵。","模型應提出可觀察預測並接受資料檢驗。","比較模型要看解釋力、失效條件與必要細節。"],"exitCheck":[{"prompt":"為什麼模型需要標示尺度和假設？","expectedEvidence":"同一模型只在特定空間、時間或條件有效，尺度和假設決定能否合理推廣。"},{"prompt":"食物網箭頭為什麼一定要有圖例？","expectedEvidence":"箭頭可能表示能量流、捕食或因果方向，圖例使關係與推理不被誤讀。"},{"prompt":"模型預測不合資料時可以如何處理？","expectedEvidence":"檢查資料、假設、尺度與省略因素，依證據修正模型或縮小適用範圍。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"由問題建立模型，標示假設與關係，並用預測和資料修正。","scenario":"操作水循環、食物網與溫室效應模型，逐步找出可檢驗的關係和模型限制。","variables":[{"symbol":"s","meaning":"模型尺度"},{"symbol":"a","meaning":"模型假設"},{"symbol":"p","meaning":"可檢驗預測"}],"steps":[{"id":"step-1","prompt":"建立模型前最先要決定什麼？","options":["要解釋的問題與適用尺度","先把所有資料全部放進圖中","只模仿最像真的外觀"],"answer":"A","feedback":"問題和尺度決定哪些元件、關係與細節值得保留。"},{"id":"step-2","prompt":"食物網箭頭沒有圖例時，最可能出現什麼問題？","options":["讀者不知道箭頭代表能量、捕食或因果方向","模型一定更客觀","箭頭數量越多就越準確"],"answer":"A","feedback":"表徵需要定義，否則同一條箭頭可能被賦予不同意義。"},{"id":"step-3","prompt":"模型預測與資料不合時，哪個行動最合理？","options":["檢查假設和尺度，依證據修正或縮小模型範圍","只改顏色讓圖看起來一致","刪除不合的資料"],"answer":"A","feedback":"模型要接受資料檢驗，不能用外觀或選擇性資料遮掩限制。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以模型表徵自然系統、物質變化與科學概念關係。","概念圖、流程圖、系統元件、箭頭、尺度與預測。","把模型當現實本身，或只追求外觀像而忽略假設。","重視關係表達、預測、資料檢驗與限制。"),rec("kanghsuan","透過操作、模擬和討論建構、比較及修正模型。","實物模型、流程、模擬、資料對照與版本修正。","模型預測一次失敗就全盤放棄，或增加細節便誤判為更好。","評量建模歷程、表徵轉換、證據與修正理由。"),rec("hanlin","連結環境、能量與生命系統，理解模型尺度和適用範圍。","水循環、食物網、溫室效應、資料、圖例與情境尺度。","混淆物質循環與能量流，忽略尺度和未納入的因素。","要求說明模型用途、限制、預測和負責任解釋。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持用模型表達機制、提出預測並接受證據檢驗。","元件、關係、圖例、尺度、假設與適用範圍是共同的建模要求。","模型比較和修正需根據資料，而非外觀複雜或權威說法。"],"versionDifferences":["南一證據較突顯概念關係與基本模型表徵；康軒較突顯操作、模擬、比較與修正；翰林較突顯環境、能量、生命系統和尺度限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以校園水窪建立問題、元件、路徑與預測。","以食物網圖例區分能量流、捕食與因果方向。","以兩種溫室效應模型和水循環表徵轉換練習尺度與修正。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織模型問題、元件、關係、圖例、尺度、假設、預測與資料修正。正文、原創情境、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"建立模型（m）","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

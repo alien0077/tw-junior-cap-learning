@@ -2,41 +2,76 @@
   "id": "question-social-content-civ-ba-iv-3-3",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2022年4月4日校園公民論壇的資料中，針對「公 Ba-Ⅳ-3：親屬關係與親子權利義務」的公共政策，若限制人民權利，哪項程序最符合權利保障？",
+  "prompt": "資料卡甲：2018 年父母結婚；乙：2020 年女兒出生；丙：2024 年父親與母親離婚。哪一項最能避免把時間先後誤當成法律效果？",
   "options": [
     {
       "id": "A",
-      "text": "針對「公 Ba-Ⅳ-3：親屬關係與親子權利義務」具法律依據、目的正當且符合必要與比例原則，並提供救濟途徑"
+      "text": "先依日期排列事件，再逐張查找每個事件需要的法律規範與身分資料"
     },
     {
       "id": "B",
-      "text": "只要多數人支持就可無限期限制"
+      "text": "離婚發生在最後，所以女兒在離婚後就不再是父母的子女"
     },
     {
       "id": "C",
-      "text": "政策名稱簡短即可不必說明依據"
+      "text": "結婚日期最早，所以所有後續家庭成員都自動成為血親"
     },
     {
       "id": "D",
-      "text": "只公布支持意見而不提供申訴方式"
+      "text": "只要時間線完整，就不用再確認當事人身分與法律程序"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-civ-ba-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "權利限制須有法律依據，並符合必要、比例及可救濟等法治要求。 本題對應 KG「公 Ba-Ⅳ-3：親屬關係與親子權利義務」。"
+    "explanation": "時間線說明事件何時發生；是否形成、變更或延續法律關係，仍要依規範與身分資料判斷。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf",
+    "sourceLocator": "國立卓蘭高中附設國中部公開社會課程計畫；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫親屬分類、收養程序、事件時間線、親職責任、照顧安排、資料推論、姻親、子女最佳利益、權利義務與跨尺度判讀；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-civ-ba-iv-3"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-civ-ba-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "親屬、家庭責任與法律資料的公民推理",
+      "observedPattern": "公立學校社會科公開試題常以家庭關係、法律資料、事件時間線與多方觀點考查公民推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "家庭事件時間線、權利義務與多方觀點資料題",
+      "observedPattern": "公立學校社會科公開試題常以家庭關係、法律資料、事件時間線與多方觀點考查公民推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先畫出親屬與事件時間線，再用法律程序、照顧事實和子女最佳利益檢查權利義務，最後交叉比較家庭成員與制度資料。",
+  "solutionSteps": [
+    "讀題定位：圈出「事件時間線」及出生、婚姻、收養、照顧、意見或規範等線索。",
+    "整理證據：把關係事實、法律程序、時間與角色需求分欄；本題核心是「時間線說明事件何時發生；是否形成、變更或延續法律關係，仍要依規範與身分資料判斷。」。",
+    "核對正解：選項 A「先依日期排列事件，再逐張查找每個事件需要的法律規範與身分資料」能同時回應題幹資料與親屬、親子權利義務的判讀要求。",
+    "排除誘答：檢查是否把稱呼、同住、收入或成人命令直接當成法律結論，或把單一資料擴大解讀。",
+    "結論回查：確認答案同時顧及關係形成、子女最佳利益、表意、照顧責任與資料限制。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

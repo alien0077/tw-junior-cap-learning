@@ -2,23 +2,23 @@
   "id": "question-english-content-d-iv-1-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-1／綜合資訊推論」task, what is the best way to prepare question 7?",
+  "prompt": "A train arrives at 9:45. The tour desk requires check-in by 10:00 and is a ten-minute walk from the station. Which plan works?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-1／綜合資訊推論."
+      "text": "Take a train arriving at 10:05."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-1／綜合資訊推論."
+      "text": "Wait at the station until 10:00, then walk."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-1／綜合資訊推論."
+      "text": "Assume the walk takes no time and leave the station at 9:58."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-1／綜合資訊推論."
+      "text": "Take the 9:45 arrival and walk directly to reach the desk around 9:55."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-1／綜合資訊推論, question 7."
+    "value": "D",
+    "explanation": "D 9:45抵達後步行十分鐘，約9:55到櫃台，早於10:00截止。 Correct answer: D"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1738658361761hrnHCuVf.pdf",
+    "sourceLocator": "PDF第2頁第27題；閱讀路線指示並依位置線索作答；僅取閱讀整合與推論能力型態，不複製原題內容。",
+    "authoringNote": "依官方英語課綱D-Ⅳ-1與KG獨立創作綜合資訊推論題，參照內湖國中公立英語段考相關題型；未複製原卷題文、選項或答案。待AI內容審查；依使用者指示不安排Terra審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-content-d-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658361761hrnHCuVf.pdf",
+      "title": "臺北市立內湖國中113學年度第1學期八年級第3次段考英語科",
+      "year": "113-1",
+      "subject": "english",
+      "locator": "PDF第2頁第27題；閱讀路線指示並依位置線索作答",
+      "observedPattern": "僅參照公立國中英語試題的地圖定位、時間／條件整合或文本證據推論能力；本題情境、數據、選項與答案獨立創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "依序加上列車到站和步行時間，再與報到期限比較。",
+  "solutionSteps": [
+    "列車在9:45抵達車站。",
+    "從車站走到tour desk需10分鐘。",
+    "直接前往約9:55抵達，早於10:00報到截止。",
+    "10:05才到站必定太遲；等到10:00才走也會逾時；不可忽略步行時間。",
+    "答案 D；把路程時間加進交通表後再比截止時間。"
+  ]
 }

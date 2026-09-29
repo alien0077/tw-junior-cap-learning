@@ -2,41 +2,78 @@
   "id": "question-science-content-j-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年11月28日河川觀測站的觀察中，將 55 g 食鹽溶於 765 g 水，研究「J：物質的反應、平衡及製造」時，溶液質量為何？",
+  "prompt": "某反應升高溫度後，平衡混合物中生成物比例增加；由此可推論較合理的是？",
   "options": [
     {
       "id": "A",
-      "text": "710 g"
+      "text": "升溫有利於吸熱方向，不能只用『升溫一定加快所有反應』代替平衡判斷"
     },
     {
       "id": "B",
-      "text": "820 g"
+      "text": "升溫必定使所有生成物比例減少"
     },
     {
       "id": "C",
-      "text": "42075 g"
+      "text": "溫度只影響顏色，不影響平衡"
     },
     {
       "id": "D",
-      "text": "765 g"
+      "text": "只要反應變快，平衡組成就一定不變"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-j"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：55＋765＝820 g。 本題對應 KG「J：物質的反應、平衡及製造」。"
+    "value": "A",
+    "explanation": "升溫可能改變平衡位置，方向取決於正、逆反應的熱效應；速率變快與平衡組成改變是不同概念。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的反應證據、粒子模型、守恆、條件控制、平衡與製程能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 J 根單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-j"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-j",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "化學反應、反應式、質量與實驗資料判讀",
+      "pattern": "取由反應現象、反應式與資料證據判斷物質變化及守恆關係的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由反應現象、反應式與資料證據判斷物質變化及守恆關係的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "反應條件、圖表資料、粒子模型與生活／製程情境",
+      "pattern": "取從粒子圖、實驗資料與生活情境推論反應條件、反應速率及結果的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從粒子圖、實驗資料與生活情境推論反應條件、反應速率及結果的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先讀資料判斷平衡位移，再區分速率和組成。",
+  "solutionSteps": [
+    "比較升溫前後生成物比例。",
+    "判斷平衡往生成物方向移動。",
+    "用勒沙特列原理推論該方向吸熱。",
+    "排除把速率、顏色或固定規則當成平衡位置。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

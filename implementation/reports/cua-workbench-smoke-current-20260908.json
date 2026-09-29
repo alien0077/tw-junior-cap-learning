@@ -1,0 +1,56 @@
+{
+  "date": "2026-09-08",
+  "url": "http://127.0.0.1:8766/implementation/workbench.html",
+  "unitId": "cur-math-content-a-8-1",
+  "unitTitle": "A-8-1：二次式的乘法公式",
+  "component": "AlgebraBalanceBlock",
+  "observedImplementationStatus": "implemented",
+  "observedQaStatus": "untested",
+  "path": [
+    "submit prediction",
+    "manipulate one step",
+    "record observation",
+    "fill named explanation field",
+    "submit explanation",
+    "verify and show layered feedback",
+    "serialize operation record"
+  ],
+  "observedStates": [
+    "已提交預測；正解仍隱藏",
+    "已操作第 1 步；請記錄觀察",
+    "已記錄觀察；請用一句話解釋證據",
+    "已提交解釋；可以進行檢核",
+    "已檢核；先提供分層提示，不直接代答",
+    "操作紀錄已序列化，可恢復測試"
+  ],
+  "accessibilityEvidence": {
+    "namedExplanationField": true,
+    "keyboardAndSemanticControls": true,
+    "textFallbackVisible": true,
+    "ariaLiveStateObserved": true
+  },
+  "additionalRepresentativeRuns": [
+    {
+      "unitId": "cur-science-content-bc-iv-3",
+      "component": "EvidenceModelBlock",
+      "interactionCompleted": true,
+      "observedStatus": "implemented／untested",
+      "explanation": "光合作用需要光照與二氧化碳，觀察到條件改變會影響產物形成。"
+    },
+    {
+      "unitId": "cur-english-content-a",
+      "component": "LanguageTimelineBlock",
+      "interactionCompleted": true,
+      "observedStatus": "implemented／untested",
+      "explanation": "句型與語境線索一起決定表達的意思。"
+    },
+    {
+      "unitId": "cur-social-content-hist-qc-iv-2",
+      "component": "TimelineCausalBlock",
+      "interactionCompleted": true,
+      "observedStatus": "implemented／untested",
+      "explanation": "史料中的時間、立場與證據彼此呼應，才能支持因果判斷。"
+    }
+  ],
+  "boundary": "這是目前工作樹的真實 Chromium／AX smoke，不等同全庫逐課內容、學科、圖形數值、出版社融合或 VoiceOver/NVDA QA。"
+}

@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "若文章以「問題—原因—解決方法」三段安排內容，第二段的主要功能為何？",
+  "prompt": "段落寫：「校園新增遮雨棚後，雨天遲到的人變少；但校方也提醒，出門時間與交通狀況仍會影響到校時間。」下列哪個結論最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "提出主題"
+      "text": "新增遮雨棚必然讓所有學生準時到校"
     },
     {
       "id": "B",
-      "text": "分析問題成因"
+      "text": "遮雨棚可能有助於減少部分遲到，但不是唯一原因"
     },
     {
       "id": "C",
-      "text": "重述解決方案"
+      "text": "交通狀況與到校時間沒有任何關係"
     },
     {
       "id": "D",
-      "text": "抒發結尾感想"
+      "text": "遲到人數變少完全是因為學生改搭同一班車"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "第二段位於原因位置，功能是分析問題如何形成。"
+    "explanation": "前句提供相關變化，後句明確提醒還有其他因素；用「可能有助於」可保留證據強度，不把相關現象誇大為唯一因果。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.kusjh.kh.edu.tw/upload/files/111%E4%B8%8A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E5%9C%8B%E4%B8%AD%E4%BA%8C%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
-    "sourceLocator": "篇章組織與段落功能判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編篇章閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解、主旨與篇章線索",
+      "observedPattern": "公立學校國文公開試題常以段落主旨、結構線索、敘述視角、文體與文本證據檢查閱讀理解；本題以自編短文本重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "段落大意、推論與文體判讀",
+      "observedPattern": "公立學校國文公開試題常以段落主旨、結構線索、敘述視角、文體與文本證據檢查閱讀理解；本題以自編短文本重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先掌握篇章的材料路線，再以段落功能、敘述聲音、反覆意象與結尾回指建立證據鏈，最後區分文本明示、合理推論與未知資料。",
+  "solutionSteps": [
+    "讀題定位：圈出「因果界線」與文本中的重複意象、轉折、段落位置、敘述聲音或證據限制。",
+    "建立證據鏈：把明示內容、可由線索推出的推論與尚未提供的資料分開，再檢查各句如何共同支持答案；本題核心是「前句提供相關變化，後句明確提醒還有其他因素；用「可能有助於」可保留證據強度，不把相關現象誇大為唯一因果。」",
+    "核對正解：選項 A「遮雨棚可能有助於減少部分遲到，但不是唯一原因」能解釋全文或題目指定的篇章功能，不只對應單一字句。",
+    "排除誘答：檢查是否只抄一個細節、把想像當成文本事實、忽略前後轉折，或套用不合文體的閱讀方法。",
+    "結論回查：用開頭—中段—結尾或線索—推論—界線再次驗證，確認答案沒有超過文章實際提供的證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

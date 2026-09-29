@@ -1,0 +1,177 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-12
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-12
+  title: 3-Ⅳ-12：熟悉閱讀技巧
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-12：熟悉閱讀技巧
+    curriculumIntent: 3-Ⅳ-12：熟悉閱讀技巧
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 先說明閱讀任務，再選略讀、尋讀、上下文推詞或回讀證據
+  - 將公告中的日期、時間、條件與行動連成可核對的證據鏈
+  - 在新公告中切換策略，並說清楚答案依據及文本未能證明的部分
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 閱讀目的決定策略：略讀掌握全貌，尋讀定位指定資訊
+  - 條件詞與相鄰句提供推論邊界；結論必須回指明確文本證據
+  - 主旨統整多項支持細節，不能被單一關鍵字或例子取代
+  misconceptions:
+  - 把略讀與尋讀當成固定讀法，沒有因題目由主旨改成時間而切換
+  - 看見一個相同關鍵字便停止查找，沒有核對它對應的活動或條件
+  - 把公告的常見安排當成文本事實，忽略「如遇雷雨」等條件限制
+  contentFlow:
+  - 'hook: 先看「海岸清潔日」標題，猜公告主題；區分標題能支持的預測與尚未知的集合細節'
+  - 'activate-prerequisite: 辨認日期時間、地點、條件詞與行動語句等公告欄位'
+  - 'visualize: 將任務、閱讀策略與可引用文本片語並列成可回查的證據卡'
+  - 'predict: 先輸入對主題或適用策略的預測，正解保持隱藏'
+  - 'manipulate: 將問題由「公告主題」改成「集合時間」，觀察策略切換至尋讀並定位時間格式'
+  - 'observe: 比較「週六 8:30」時間欄與「如遇雷雨」條件欄，辨認資訊各自回答的問題'
+  - 'explain: 用條件詞、公告原句與結論組成可核實的理由'
+  - 'formalize: 歸納略讀抓篇章輪廓、尋讀找指定欄位、推論回到條件句核對'
+  - 'transfer: 將判讀流程遷移到校園植樹日新公告，另找指定物資地點'
+  - 'exit-ticket: 用新問題說明策略選擇及能支持答案的原文'
+  visualizations:
+  - 公告原文與閱讀任務對照：主旨任務標出標題／首句；時間任務標出日期時間；條件推論標出「如遇雷雨」與對應行動
+  - 策略卡保留「任務 → 方法 → 原文證據 → 可下結論」四欄文字，不以顏色作唯一標示
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-12-I01
+    component: TextEvidenceBlock
+    purpose: 透過一則原創海岸清潔公告，練習依主旨、時間與條件問題切換略讀／尋讀，並將答案連回原句
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        primary: 1
+        secondary: 1
+    studentActions:
+    - 先閱讀原創公告並輸入對主題的預測，提交前不顯示回饋答案
+    - 把閱讀任務由找主題切換為找集合時間，說出策略為何改變
+    - 在公告中定位活動時間、雨天條件與備用地點
+    - 用「若出現何種條件 → 原文寫了什麼 → 因此可回答什麼」說明推論
+    - 在新校園公告中尋讀指定地點，完成跨情境遷移
+    visualRules:
+    - 原創公告全文以純文字呈現，任務問題與可定位的條件／時間片語同時可讀
+    - 階段答案送出前保留當前問題，不提前顯示下一階段的證據答案
+    - 定位證據以底線／標籤及文字說明雙重呈現，不以顏色單獨傳遞
+    - 窄螢幕不得裁切公告原文、作答欄、提示或進度回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-12-I01
+      trigger: 題目從詢問公告主題改成詢問集合時間，學生仍逐句慢讀或只憑標題猜時間
+      prompt: 先圈出問題要找的欄位，再指出公告中對應的時間格式。
+      expectedEvidence: 學生能指出週六 8:30，並說明此題要求指定細節而非全文主旨
+    feedback:
+      correct: 回指學生輸入的公告片語，確認策略與問題欄位相符，再要求用新情境重做。
+      incorrect: 先提示學生重新讀題目要找的欄位，再給日期／時間／條件標籤供定位；允許重試，不直接代填答案。
+    guidedActivity:
+      title: 海岸清潔日公告：換一個問題，就換一種讀法
+      introduction: |-
+        原創公告：海岸清潔日｜週六 8:30 北堤入口集合。志工請戴手套；如遇雷雨，活動改至社區教室。主辦單位提供夾子與垃圾袋。先依題目選讀法，再逐步找證據；輸入不符時可看提示重試。
+      stages:
+      - prompt: 先只知道標題「海岸清潔日」，若要迅速掌握公告主題，應先用哪種讀法？輸入中文策略名稱。
+        acceptedAnswers: [略讀, skimming]
+        correctFeedback: 略讀標題與篇章線索可先建立主題預測；它還不能告訴你集合時間或雨天安排。
+        hint: 這一步要掌握大意，不是尋找某個數字；先看標題和公告整體結構。
+      - prompt: 現在問題改成「集合時間是什麼？」閱讀目的變了，應切換成哪種策略？
+        acceptedAnswers: [尋讀, 掃讀, scanning]
+        correctFeedback: 問題指定一項細節，改用尋讀定位時間格式，比逐句精讀有效。
+        hint: 找已知欄位，不需要概括全文；想想哪種讀法會掃視數字與時間標示。
+      - prompt: 根據公告，海岸清潔日幾點集合？請輸入公告中的時間片語。
+        acceptedAnswers: [週六 8:30, 週六8:30, 星期六 8:30, 星期六8:30]
+        correctFeedback: 你定位到集合時間；不要把「週六」與其他活動日期或備案條件混淆。
+        hint: 回到「集合」附近找星期與時刻，答案要同時保留兩項資訊。
+      - prompt: 哪個條件會讓活動改到社區教室？請輸入公告裡的條件詞。
+        acceptedAnswers: [如遇雷雨, 雷雨]
+        correctFeedback: 「如遇雷雨」是條件；只有條件成立時，後面的備案才適用。
+        hint: 找表示假設或條件的短語，再讀它後面緊接的行動。
+      - prompt: 用「若……，公告寫……，所以……」完成理由，說明何時改到社區教室。
+        acceptedAnswers: [若遇雷雨，公告寫活動改至社區教室，所以雨天備案地點是社區教室。, 如遇雷雨，公告寫活動改至社區教室，所以雨天備案地點是社區教室。]
+        correctFeedback: 條件、原文行動與結論都對上了；你的回答保留了文本限定，沒有把備案說成固定地點。
+        hint: 答案需同時包含雷雨條件和「改至社區教室」這項直接證據，不能只寫常識推測。
+      - prompt: 遷移到新公告：「校園植樹日｜週三 10:00 操場集合；手套放在自然教室外的藍色箱子。」若同伴只問手套在哪裡，請輸入地點。
+        acceptedAnswers: [自然教室外的藍色箱子, 自然教室外]
+        correctFeedback: 你把尋讀遷移到新情境，依問題欄位定位物資地點，並回到原句核對。
+        hint: 先圈出問題中的「手套在哪裡」，再找同一句裡與手套相連的地點片語。
+      completionMessage: 完成：同一公告可因閱讀目的切換方法；每個答案都回到對應原句，條件推論也沒有超出文本。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 TextEvidenceBlock 只參考先預測、再逐段定位原文證據及提供可及性回饋的教學模式；海岸公告、地點、時間、選項與回饋均為本課原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課 TextEvidenceBlock 只參考互動步驟與重試提示的設計方式；閱讀材料及所有判讀資料均獨立創作。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課 TextEvidenceBlock 參照語意化區域、鍵盤可操作與即時文字回饋的可及性作法；內容與答案不取自參照來源。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課 TextEvidenceBlock 以標題、公告文字、作答區與回饋區的語意分組支援輔助科技；材料全為本課原創。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 提供新的公告或校園說明，改變閱讀任務及表面情境；學生須重新判斷主旨、細節或條件，不可沿用舊答案
+    requiredResponse: 先指出閱讀目的與策略，再引用一個可定位的原文片語，說明它支持的答案範圍
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 若題目從「公告主要在說什麼」改成「雨天改去哪裡」，你要改用哪種讀法？哪個條件片語支持答案？
+    successCriteria:
+    - 依主旨或細節任務選擇略讀或尋讀
+    - 指出公告中的條件詞與對應行動
+    - 引用支持結論的原文片語且不超出其範圍
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字說明你如何從一則新公告依目的切換略讀／尋讀，並舉出一處條件或時間證據及其能支持的結論
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入海岸清潔公告互動時，公告可見但階段答案不預先揭露；第一步先提交主題閱讀策略，再依序解鎖時間、條件、理由與新公告遷移。
+  - 閱讀目的從主旨改為集合時間時，提示與作答欄需同步要求策略轉換；錯答時保留題目並顯示欄位線索，不提前代答。
+  - 條件題必須能區分「如遇雷雨」與其後的改址行動，並在理由題要求條件、原文和結論三者相連。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成六階互動時，公告、輸入欄、提示、進度與回饋都可見且可操作。
+  - 遷移題使用植樹日新公告與不同問題欄位；學生須定位手套地點，不能照抄海岸清潔公告答案。
+  - 外部資料失效時，TextEvidenceBlock 仍以內嵌公告及純文字 fallback 完成預測、策略切換、證據定位、解釋與遷移，不阻塞本課。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-12
+    role: official-curriculum-source-of-truth

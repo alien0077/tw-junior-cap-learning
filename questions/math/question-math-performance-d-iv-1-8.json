@@ -2,23 +2,23 @@
   "id": "question-math-performance-d-iv-1-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "甲、乙兩班人數相同，盒狀圖顯示甲班中位數 72 分、乙班中位數 68 分。下列何者必定正確？",
+  "prompt": "某長條圖的縱軸從 80 開始，三組數值為 88、90、92。解讀時最可靠的做法為何？",
   "options": [
     {
       "id": "A",
-      "text": "甲班成績的中位數高於乙班"
+      "text": "直接以柱高比例判斷差距"
     },
     {
       "id": "B",
-      "text": "甲班超過 80 分的人一定比較多"
+      "text": "忽略縱軸刻度只看顏色"
     },
     {
       "id": "C",
-      "text": "甲班平均數一定高於乙班"
+      "text": "依座標標示讀取實際數值"
     },
     {
       "id": "D",
-      "text": "甲班最高分一定高於乙班"
+      "text": "把最短柱當成 0"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "中位數已明確給出 72＞68；僅憑中位數不能必然推出平均數、最高分或超過某分數的人數。"
+    "value": "C",
+    "explanation": "截斷縱軸會放大視覺差異，應依刻度讀取 88、90、92 等實際數值，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考直方圖、盒狀圖、四分位數、次數分配與資料判讀題型；另參考 114 年國中教育會考數學科；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "統計單元實質改寫；已重新計算答案與解析，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供統計圖表、統計量與工具判讀能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的資料與不確定性方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-d-iv-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-d-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、全距、頻率資料、統計圖表、圖表誤讀與試算表函數；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求由表格、圖表或原始資料計算統計量，並辨識座標截斷、集中趨勢與軟體函數的正確解讀；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、全距、頻率資料、統計圖表、圖表誤讀與試算表函數；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求由表格、圖表或原始資料計算統計量，並辨識座標截斷、集中趨勢與軟體函數的正確解讀；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平均數、中位數、眾數、全距、頻率資料、統計圖表、圖表誤讀與試算表函數；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求由表格、圖表或原始資料計算統計量，並辨識座標截斷、集中趨勢與軟體函數的正確解讀；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先檢查縱軸起點與刻度，再以標示數值做比較。",
+  "solutionSteps": [
+    "觀察縱軸不是從 0 開始。",
+    "柱高差距可能被視覺放大。",
+    "讀取各柱對應的刻度數值。",
+    "以 88、90、92 的實際差距比較。",
+    "所以選 C。"
+  ]
 }

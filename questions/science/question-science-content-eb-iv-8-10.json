@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-8-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年4月11日校園實驗室的觀察中，小車在 13 秒內前進 1452 m，研究「Eb-Ⅳ-8：以距離、時間與方向描述運動」時，平均速率為何？",
+  "prompt": "某跑者全程平均速率為 6 m/s。下列哪個結論一定可以由此資料直接推出？",
   "options": [
     {
       "id": "A",
-      "text": "111.692 m/s"
+      "text": "跑者每一秒都恰好前進 6 m"
     },
     {
       "id": "B",
-      "text": "18876 m/s"
+      "text": "跑者全程沒有停下或折返"
     },
     {
       "id": "C",
-      "text": "0.00895317 m/s"
+      "text": "總路程除以總經過時間等於 6 m/s"
     },
     {
       "id": "D",
-      "text": "1439 m/s"
+      "text": "跑者的平均速度一定也是 6 m/s 向東"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-8"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "平均速率＝路程÷時間＝1452÷13＝111.692 m/s。 本題對應 KG「Eb-Ⅳ-8：以距離、時間與方向描述運動」。"
+    "value": "C",
+    "explanation": "C。完整判讀要先定參考點與正方向，再由位置差求位移、由路徑求路程，最後分別計算平均速率與平均速度。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題中的距離、時間、路程、位移、平均速率、平均速度、圖表與單位換算能力；本題改寫為運動描述原創情境。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-8"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-eb-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取距離、時間、路程、位移與平均速率的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "距離、時間、路程、位移與平均速率",
+      "observedPattern": "公開自然科評量常要求計算路程、位移、平均速率、平均速度、位置時間斜率與單位換算；本題以全新運動資料情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取位置時間圖、方向、平均速度與單位換算的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "位置時間圖、方向、平均速度與單位換算",
+      "observedPattern": "公開自然科評量常要求計算路程、位移、平均速率、平均速度、位置時間斜率與單位換算；本題以全新運動資料情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取折返運動、斜率與資料判讀的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "折返運動、斜率與資料判讀",
+      "observedPattern": "公開自然科評量常要求計算路程、位移、平均速率、平均速度、位置時間斜率與單位換算；本題以全新運動資料情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "依參考點—路徑—位移—速率／速度順序整理資料。",
+  "solutionSteps": [
+    "圈出參考點、正方向、每段位置、時間、路徑與折返點。",
+    "把各段路徑長度相加求路程，用終點減起點求位移並保留正負。",
+    "統一 m、s、km/h 等單位，再用總路程／總時間求平均速率。",
+    "若求平均速度，使用位移／總時間並附方向；由位置—時間斜率判斷分段運動。",
+    "回查水平段、折返、單位與資料刻度，避免把位置直接當速度或把路程當位移。"
+  ]
 }

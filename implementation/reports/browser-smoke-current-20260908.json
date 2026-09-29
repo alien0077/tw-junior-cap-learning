@@ -1,0 +1,29 @@
+{
+  "status": "partial",
+  "checkedAt": "2026-09-08",
+  "scope": "current worktree interaction workbench",
+  "playwright": {
+    "status": "blocked",
+    "url": "http://127.0.0.1:8765/workbench.html",
+    "error": "Playwright Chromium launch aborted with TargetClosedError; browser process exited with SIGABRT and reported kill EPERM before page assertions ran.",
+    "assertionsRun": 0
+  },
+  "cuaObservation": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/implementation/workbench.html",
+    "lessonSpecCountObserved": 1027,
+    "selectedLessonObserved": "cur-math-content-a-8-1",
+    "semanticEvidenceObserved": [
+      "seven student lesson sections were exposed",
+      "AlgebraBalanceBlock exposed unit-specific formula model and text fallback",
+      "five interaction buttons plus export control were exposed",
+      "named explanation field was exposed",
+      "predict -> manipulate -> observe -> explain -> verify completed in the real browser",
+      "layered feedback was exposed without directly revealing an answer",
+      "serialized state was written to the URL hash and restored after same-URL reload",
+      "lesson state displayed implemented/untested"
+    ],
+    "boundary": "This is a representative current-worktree interaction regression, not a 1,027-unit pedagogical approval or VoiceOver/NVDA session."
+  },
+  "releaseBoundary": "Keep content and assistive-technology QA pending; Playwright launch remains blocked by the local SIGABRT environment failure."
+}

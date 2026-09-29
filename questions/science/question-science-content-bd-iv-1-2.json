@@ -2,41 +2,67 @@
   "id": "question-science-content-bd-iv-1-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年6月20日自然科教室的觀察中，連續一個月在相同時間觀察月面亮部變化，研究「Bd-Ⅳ-1：太陽能經食物鏈流轉」時，最能支持哪項結論？",
+  "prompt": "在同一食物鏈中，最接近太陽能最初轉換位置的生物通常是？",
   "options": [
     {
       "id": "A",
-      "text": "在「Bd-Ⅳ-1：太陽能經食物鏈流轉」第 2 組、6 月觀察中，月亮本身每天產生不同亮度"
+      "text": "最高階捕食者"
     },
     {
       "id": "B",
-      "text": "在「Bd-Ⅳ-1：太陽能經食物鏈流轉」第 2 組、6 月觀察中，月相完全由雲量決定"
+      "text": "生產者"
     },
     {
       "id": "C",
-      "text": "在「Bd-Ⅳ-1：太陽能經食物鏈流轉」第 2 組、6 月觀察中，月亮只在滿月時才存在"
+      "text": "分解者"
     },
     {
       "id": "D",
-      "text": "在「Bd-Ⅳ-1：太陽能經食物鏈流轉」第 2 組、6 月觀察中，月相是由日、地、月相對位置改變造成的視覺變化"
+      "text": "所有消費者都相同"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-bd-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "月球反射太陽光，日、地、月相對位置改變會造成可規律觀察的月相。 本題對應 KG「Bd-Ⅳ-1：太陽能經食物鏈流轉」。"
+    "value": "B",
+    "explanation": "植物或藻類等生產者利用光合作用把光能轉成化學能，是能量進入食物鏈的主要入口，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的食物鏈、能量塔與生態系證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bd-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bd-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bd-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "食物鏈、能量塔、營養階層與生態系資料判讀",
+      "pattern": "取由食物鏈箭頭、營養階層與能量損失推論能量流動的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由食物鏈箭頭、營養階層與能量損失推論能量流動的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "沿食物鏈從能量來源往後找第一個能自行製造有機物的營養階層。",
+  "solutionSteps": [
+    "生態系能量主要來自太陽。",
+    "生產者能利用光能合成有機物。",
+    "草食和肉食動物需透過攝食取得能量。",
+    "因此最初轉換位置是生產者。",
+    "所以選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

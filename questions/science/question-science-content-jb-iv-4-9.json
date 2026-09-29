@@ -2,41 +2,78 @@
   "id": "question-science-content-jb-iv-4-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年8月1日學校研究社的觀察中，將 103 g 食鹽溶於 423 g 水，研究「Jb-Ⅳ-4：溶液濃度、重量百分濃度與 ppm」時，溶液質量為何？",
+  "prompt": "下列哪項濃度表示最適合描述極低量水中污染物？",
   "options": [
     {
       "id": "A",
-      "text": "320 g"
+      "text": "重量百分濃度 50%"
     },
     {
       "id": "B",
-      "text": "43569 g"
+      "text": "溶液總質量 8 g"
     },
     {
       "id": "C",
-      "text": "526 g"
+      "text": "ppm 8"
     },
     {
       "id": "D",
-      "text": "423 g"
+      "text": "溶質顏色 8 種"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jb-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：103＋423＝526 g。 本題對應 KG「Jb-Ⅳ-4：溶液濃度、重量百分濃度與 ppm」。"
+    "explanation": "ppm 表示每一百萬份中的比例，適合表達極低濃度；百分比不一定最清楚。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的重量百分濃度、溶質守恆、稀釋、ppm、單位及水樣判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向保留並核對單元專屬改寫；題幹、選項、答案、解析與五步解法均未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jb-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jb-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "重量百分濃度、稀釋、ppm 與水樣資料計算",
+      "pattern": "取由溶質、溶液總量、稀釋及極低濃度資料進行濃度計算的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溶質、溶液總量、稀釋及極低濃度資料進行濃度計算的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "溶液濃度、污染物、單位與圖表資料",
+      "pattern": "取從生活水樣、質量比例、單位換算及 ppm 情境判讀濃度的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從生活水樣、質量比例、單位換算及 ppm 情境判讀濃度的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認溶質與溶液總量，再選用百分濃度或 ppm 公式並檢查單位。",
+  "solutionSteps": [
+    "讀題定位：抓出「單位判讀」的溶質、溶液總質量、體積與濃度單位。",
+    "建立公式：ppm 表示每一百萬份中的比例，適合表達極低濃度；百分比不一定最清楚。",
+    "核對答案：選項 C「ppm 8」符合計算與單位。",
+    "排除誘答：確認分母是溶液總量而非水量，並把百分比、mg/L 與 ppm 單位換清楚。",
+    "最後回查：將結果代回濃度公式，檢查數值範圍與單位是否合理。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

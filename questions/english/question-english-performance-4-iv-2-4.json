@@ -2,41 +2,84 @@
   "id": "question-english-performance-4-iv-2-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「4-Ⅳ-2／依圖示圖表寫句子」notice for the sports center, item 4: “The bus leaves after lunch” What does it tell people?",
+  "prompt": "A map icon places the library north of the park and the café east of the library. Which sentence is correct?",
   "options": [
     {
       "id": "A",
-      "text": "For item 4 in the 4-Ⅳ-2／依圖示圖表寫句子 notice, The bus leaves after lunch."
+      "text": "The café is east of the library."
     },
     {
       "id": "B",
-      "text": "For item 4 in the 4-Ⅳ-2／依圖示圖表寫句子 notice, The bus leaves before breakfast."
+      "text": "The park is east of the café."
     },
     {
       "id": "C",
-      "text": "For item 4 in the 4-Ⅳ-2／依圖示圖表寫句子 notice, The bus is a classroom."
+      "text": "The library is south of the park."
     },
     {
       "id": "D",
-      "text": "For item 4 in the 4-Ⅳ-2／依圖示圖表寫句子 notice, The bus never has a departure time."
+      "text": "The café is inside the park."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-4-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 4-Ⅳ-2／依圖示圖表寫句子, question 4."
+    "explanation": "已知café在library東側，因此「The café is east of the library」保留了物件、參照物與方向。其他說法不是把方位顛倒，就是換成題目未提供的park位置，或把east誤成inside。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87_1.pdf",
+    "sourceLocator": "PDF第3頁第44–46題；依城市路線圖與火車時刻表整合地點、停靠站及時間選出符合條件的班次；第4頁第48題由路線文字辨識地圖；PDF第3頁第26–27題；整合West Town–South End地圖與火車時刻表，按人物位置、目的地及抵達時間判斷班次；PDF第2頁第24題座位表；PDF第3頁第28–30題依房間圖片判讀物品與相對位置",
+    "authoringNote": "依可追溯公立學校英文試題之資料型態與推理能力方向重新設計；只借鑑作答技能，不複製原題、選項、圖表或答案。內容仍待完整內容與授權審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-4-iv-2"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-4-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87_1.pdf",
+      "title": "高雄市立國昌國中107學年度第1學期第3次段考二年級英文科試題",
+      "year": "107-1",
+      "locator": "PDF第3頁第44–46題；依城市路線圖與火車時刻表整合地點、停靠站及時間選出符合條件的班次；第4頁第48題由路線文字辨識地圖",
+      "observedPattern": "地圖、方向與時刻表題要求把文字條件逐一對應圖上位置／班次，不能只讀單一線索。",
+      "subject": "english",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.mtjh.tp.edu.tw/wp-content/uploads/doc/basicexam/95%E5%B9%B4%E7%AC%AC%E4%B8%80%E6%AC%A1%E5%9F%BA%E6%B8%AC%E8%8B%B1%E6%96%87%E8%A7%A3%E7%AD%94.pdf",
+      "title": "臺北市立明湖國中網站公開之95年第一次國中基本學力測驗英文解答卷",
+      "year": "95",
+      "locator": "PDF第3頁第26–27題；整合West Town–South End地圖與火車時刻表，按人物位置、目的地及抵達時間判斷班次",
+      "observedPattern": "雙表徵題須先分清地點與時間兩類線索，再逐站追蹤路線以排除不合條件的選項。",
+      "subject": "english",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C-1%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87-%E9%A1%8C%E7%9B%AE%2B%E7%AD%94%E6%A1%88%E5%8D%B7-%E5%88%97%E5%8D%B0%E7%AC%A6%E5%90%88.pdf",
+      "title": "高雄市立國昌國中108學年度第1學期第2次段考一年級英文科試題",
+      "year": "108-1",
+      "locator": "PDF第2頁第24題座位表；PDF第3頁第28–30題依房間圖片判讀物品與相對位置",
+      "observedPattern": "位置圖題要求辨認物件、參照物及between／next to等相對關係，判斷選項是否忠實對應圖像。",
+      "subject": "english",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "讀方位句時固定參照物：先問「誰在誰的哪一側」，再核對主詞和介系詞有沒有倒轉。",
+  "solutionSteps": [
+    "先圈出參照物the library，再圈出要定位的the café。",
+    "辨認方位詞east，並注意句型是X is east of Y。",
+    "把已知關係回填：the café is east of the library。",
+    "檢查其他選項有無反轉主客體或增加圖上不存在的關係。",
+    "選出The café is east of the library，兩個位置角色均未顛倒。"
+  ]
 }

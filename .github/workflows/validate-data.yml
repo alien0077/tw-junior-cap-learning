@@ -16,9 +16,43 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
       - name: Install validator
         run: python -m pip install --disable-pip-version-check jsonschema
       - name: Validate math and science simulation contracts
         run: python scripts/validate_interactive_simulations.py
       - name: Validate repository data
         run: python scripts/validate_data.py
+      - name: Validate implementation-guide contracts
+        run: python scripts/validate_implementation_specs.py
+      - name: Audit lesson independence
+        run: python scripts/audit_lesson_independence.py --strict
+      - name: Validate implementation coverage
+        run: python scripts/validate_implementation_coverage.py
+      - name: Validate implementation checklist report
+        run: python scripts/validate_implementation_checklist.py
+      - name: Validate subject component coverage
+        run: python scripts/validate_subject_component_coverage.py
+      - name: Validate interaction archetype registry
+        run: python scripts/validate_archetype_registry.py
+      - name: Validate implementation QA contract coverage
+        run: python scripts/validate_implementation_qa_contract.py
+      - name: Audit testcase specificity (report pending content QA)
+        run: python scripts/audit_testcase_specificity.py
+      - name: Validate composition module registry
+        run: python scripts/validate_composition_modules.py
+      - name: Validate generated guide questions
+        run: python scripts/validate_generated_questions.py
+      - name: Validate implementation golden reference
+        run: python scripts/validate_implementation_golden.py
+      - name: Validate local site index
+        run: |
+          python scripts/build_site_index.py --revision local
+          python scripts/validate_site_index.py
+      - name: Validate implementation question coverage
+        run: python scripts/audit_guide_question_coverage.py
+      - name: Test implementation runtime
+        run: npm ci && npm test

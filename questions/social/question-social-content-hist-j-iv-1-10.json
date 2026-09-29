@@ -2,23 +2,23 @@
   "id": "question-social-content-hist-j-iv-1-10",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2024年6月12日區域地圖展的資料中，比較「歷 J-Ⅳ-1：從主題 H、I 選題深入探究或踏查展演」的當時公告與後世回憶時，若兩者說法不同，第一步應如何處理？",
+  "prompt": "新資料顯示老街曾繁榮、衰退，近年又因文化活動部分復甦。報告結論應？",
   "options": [
     {
       "id": "A",
-      "text": "直接以年代較晚的回憶取代公告"
+      "text": "選擇最繁榮的時期代表老街的全部歷史"
     },
     {
       "id": "B",
-      "text": "先確認作者、形成時間、資料目的，再比較「歷 J-Ⅳ-1：從主題 H、I 選題深入探究或踏查展演」的內容與限制"
+      "text": "只要文化活動成功就能說老街已完全恢復"
     },
     {
       "id": "C",
-      "text": "只看文字較長者判定真偽"
+      "text": "修正為分期且有條件的結論，指出不同時期的機制與仍未解決的證據問題"
     },
     {
       "id": "D",
-      "text": "把所有後世解釋當成當時原文"
+      "text": "新資料與原結論不同，所以刪除原有全部資料"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "史料解讀須辨識作者、時代、目的與資料性質，不能只依篇幅或年代早晚判斷。 本題對應 KG「歷 J-Ⅳ-1：從主題 H、I 選題深入探究或踏查展演」。"
+    "value": "C",
+    "explanation": "本題聚焦「變遷結論與不確定性」。繁榮、衰退和復甦可能同時存在於不同時段或群體，結論要限定證據範圍。 正確答案為選項 C：「修正為分期且有條件的結論，指出不同時期的機制與仍未解決的證據問題」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+    "sourceLocator": "高雄市立鹽埕國中三年級社會科公開段考；本題只研究公開試題能力結構與資料型態。",
+    "authoringNote": "依官方課綱、歷 J-Ⅳ-1 知識圖譜及三所公立學校公開社會科試題的地方探究、資料判讀與多方證據能力方向獨立改寫；未複製原題文字、選項、圖片或答案，待逐題學科與 Terra 複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-hist-j-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-social-content-hist-j-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國民中學公開段考社會科；僅研究地方資料、探究與證據判讀題型，未複製原題。",
+      "year": "114",
+      "locator": "公開段考社會科 PDF；第 1 題至第 10 題型範圍：資料判讀、時序與因果界線",
+      "observedPattern": "由地圖、文字與生活材料要求學生界定證據、樣本與歷史結論範圍。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國民中學公開社會科試題入口；僅研究多資料互證題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開試題與解答入口；第 1 題至第 10 題型範圍：地方資料、時序與多重證據",
+      "observedPattern": "比較地圖、記錄與角色經驗，區分直接觀察、推論與待補證主張。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國民中學公開段考試題入口；僅研究地方探究與多方觀點題型，未複製原題。",
+      "year": "113-114",
+      "locator": "公開段考試題入口；第 1 題至第 10 題型範圍：地方史、社會變遷與多方角色",
+      "observedPattern": "從地方材料分析樣本、證據與群體差異，不以單一來源包辦結論。",
+      "subject": "social",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先定位變遷結論與不確定性的問題範圍、資料來源、樣本與倫理，再區分觀察、推論和仍待查證的主張；繁榮、衰退和復甦可能同時存在於不同時段或群體，結論要限定證據範圍。",
+  "solutionSteps": [
+    "讀題定位：圈出研究問題、地點、資料和參與者，確認本題正在檢核「變遷結論與不確定性」。",
+    "建立判準：把問題範圍、來源可靠性、樣本限制、倫理與結論強度分層。",
+    "核對正解：選項 C「修正為分期且有條件的結論，指出不同時期的機制與仍未解決的證據問題」符合題幹，因為繁榮、衰退和復甦可能同時存在於不同時段或群體，結論要限定證據範圍。",
+    "逐項排除：檢查其餘選項是否把單一觀察擴大、忽略來源與樣本，或未取得同意便使用私人資料。",
+    "結論回查：重新核對時間、地點、對象與證據強度；新增資料後要重新檢查，不能只沿用答案字母。"
+  ]
 }

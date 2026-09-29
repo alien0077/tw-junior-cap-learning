@@ -1,0 +1,69 @@
+{
+  "reportId": "math-d-8-1-scope-correction-and-source-fusion-d322",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-d-8-1",
+  "curriculumId": "cur-math-content-d-8-1",
+  "knowledgeGraphId": "kg-math-content-d-8-1",
+  "status": "draft",
+  "sources": [
+    {
+      "publisher": "nani-labeled-shared-material",
+      "url": "https://www.scribd.com/document/827691143/國中-數學-基礎自學講義-南一版-八上",
+      "material": "Third-party share titled Nani Grade 8 first-semester self-study handout; indexed pages 167-172",
+      "reviewedEvidence": "Search-index text locates relative-frequency tables, cumulative relative-frequency tables and cumulative-frequency graph topics; it supports concept scope and sequence only.",
+      "limits": "Uploader/version not publisher-authenticated. Only indexed text and page locators were used; no exercise, numbers, worked solution, prose or graph was reused."
+    },
+    {
+      "publisher": "kanghsuan-unverified-note",
+      "url": "https://www.clearnotebooks.com/zh-TW/notebooks/2536895",
+      "material": "Public Clearnote title: Grade 8 first-semester Chapter 5 statistics notes",
+      "reviewedEvidence": "Page title and author metadata are visible; no publisher/version is stated and note-page body is not readable in the available browser extraction.",
+      "limits": "Not counted as Kanghsuan evidence. A public school course plan confirms curriculum locator only, not publisher-specific teaching content."
+    },
+    {
+      "publisher": "education-ministry-learning-support-material",
+      "url": "https://www.scribd.com/document/910959154/DC-8-1-1-B2-O-n-%C3%86-B-U-i-%C3%86-B-O-n-U-i-%C3%86-F-O-n-U-i-%C3%86-e-u-I-C-2",
+      "material": "MOE K-12 Education Administration 2022 Grade 8 learning-support material, DC-8-1-1/2, publicly shared on Scribd; readable pages 1-10",
+      "reviewedEvidence": "Concept sequence includes cumulative counts, relative counts, cumulative relative counts, upper-bound interpretation, differences between adjacent cumulative groups, and cumulative-relative-frequency graphs.",
+      "limits": "This is not a publisher edition. The page states copyright owned by the education administration and All Rights Reserved, and was uploaded by a third party; used only to study concepts, with no example data, exercise, answer, diagram or prose copied."
+    },
+    {
+      "publisher": "hanlin-official-index",
+      "url": "https://resource.hle.com.tw/Books/BooksResource/00-111%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B82%E4%B8%8A%E7%BF%B0%E6%9E%97%E8%A3%9C%E6%95%91GO-%E5%AD%B8%E7%94%A8(111f397125).pdf",
+      "material": "Hanlin official resource-host search index for 111 Grade 8 remediation resource",
+      "reviewedEvidence": "Search-index result locates topic as cumulative relative-frequency table/line graph and textbook pages 116-117.",
+      "limits": "PDF body could not be opened during this pass. Do not claim page-level content was read or use it to support specific teaching sequence."
+    },
+    {
+      "publisher": "official-curriculum",
+      "url": "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "material": "Official 12-year curriculum mathematics domain, D-8-1 and KG source of truth",
+      "reviewedEvidence": "Lesson scope constrained to grouped relative frequency, cumulative frequency/relative frequency and the cumulative relative-frequency line graph."
+    }
+  ],
+  "synthesis": {
+    "commonConcepts": [
+      "A group's frequency divided by the full group total yields its relative frequency.",
+      "Cumulative relative frequency answers the share below a specified upper class boundary.",
+      "Subtracting adjacent cumulative values recovers the relative frequency of the interval between those boundaries."
+    ],
+    "originalLessonDesign": "Rebuilt the unit around an independently devised 20-student walking-time dataset, four hand-computable groups, a two-cohort denominator counterexample, and a read-forward/read-back graph audit. All numbers, wording and tasks are original.",
+    "fusionGate": "NOT COMPLETE: source material supports curriculum-grounded synthesis, but readable evidence attributable to all three publishers is insufficient (Kanghsuan unverified/unread; Hanlin official body unavailable). Do not count this unit toward 3,081-slot publisher-evidence completion or mark content-reviewed."
+  },
+  "validation": {
+    "lessonSchema": "PASS: direct audit checked 1,056 lesson files, 0 failed",
+    "data": "PASS: 14,444 JSON files, 13,111 IDs, 1,032 KG nodes",
+    "implementationSpec": "PASS structure: 1,027 specs, 0 errors; all 1,027 remain pending",
+    "qaContract": "PASS contract: 1,027/1,027 (not runtime/content QA)",
+    "questionAnswerAudit": "PASS structure: 10,566/10,566 (not subject-content correctness)",
+    "examSourceLedger": "PASS: 10,566/10,566 recorded, pending 0",
+    "publisherLedger": "Current audit: 285/3,081 verified, 2,796 pending, 932 blocked",
+    "browserSmoke": "PASS: full 1,027-unit traversal; D-8-1 four stages wrong-answer retry, correct feedback, Enter keyboard, 320/375/768 widths; no overflow",
+    "axe": "PASS: 21 representative-unit/viewport runs including D-8-1, 0 violations, 0 incomplete",
+    "strictLessonIndependence": "PASS: 614 inspected, 0 risks, 0 strict failures",
+    "siteIndex": "PASS after rebuilt bundle: 1,052 lessons, 10,566 questions, 40 mapping sets; validate and --check passed",
+    "npmTest": "PASS: full npm test including D-8-1 JSDOM regression",
+    "diffCheck": "PASS for targeted files before final status/report updates; rerun after updates"
+  },
+  "reviewBoundary": "Lesson and its questions remain draft. Lesson content review is paused for ChatGPT review by user direction; AI-engineering validations do not substitute for that review. No commit or push in this pass."
+}

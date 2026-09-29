@@ -2,41 +2,87 @@
   "id": "question-science-content-ma-iv-4-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年2月4日學校研究社的觀察中，比較兩地「Ma-Ⅳ-4：發電與新能源科技的社會環境影響」資料時，甲地迎風坡年雨量約 10220 mm、乙地背風坡約 6940 mm，最合理的做法是？",
+  "prompt": "要比較風力與太陽能對離島學校的適用性，哪個實驗／資料設計較公平？",
   "options": [
     {
       "id": "A",
-      "text": "同時比較地形、風向、觀測期間與 10220、6940 mm 資料"
+      "text": "固定同一需求與時間範圍，記錄多月風速、日照、實際輸出與停電缺口"
     },
     {
       "id": "B",
-      "text": "在「Ma-Ⅳ-4：發電與新能源科技的社會環境影響」中只看 10220 mm 的單一數值便下結論"
+      "text": "只比較一天的額定功率"
     },
     {
       "id": "C",
-      "text": "在「Ma-Ⅳ-4：發電與新能源科技的社會環境影響」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "一方案看夏天、一方案看冬天且不校正"
     },
     {
       "id": "D",
-      "text": "在「Ma-Ⅳ-4：發電與新能源科技的社會環境影響」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只問哪個名稱較環保"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ma-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Ma-Ⅳ-4：發電與新能源科技的社會環境影響」。"
+    "explanation": "同一服務需求與長期、對應的天候和輸出資料，才能比較間歇性與季節差異，避免單日偏差。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的能源轉換、供電、效率、儲能、排放、生態、成本與方案比較能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ma-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ma-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "能源轉換、發電、排放與資料判讀",
+      "pattern": "取公立學校自然科評量以能量鏈、能源限制、環境影響與方案比較推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以能量鏈、能源限制、環境影響與方案比較推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "電力、能源、效率、天候與環境資料",
+      "pattern": "取公開會考以圖表、比例、條件、替代方案和證據界線評估的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、比例、條件、替代方案和證據界線評估的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "再生能源、電池、電力供應與生活應用",
+      "pattern": "取公立國中試題以發電來源、供需、效率、控制變因和環境風險的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以發電來源、供需、效率、控制變因和環境風險的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "固定需求和時間尺度，再同步記錄資源條件、輸出與缺口。",
+  "solutionSteps": [
+    "先列出需求、發電來源、轉換設備、輸送與儲能。",
+    "區分額定功率、實際輸出、供電時間與備援容量。",
+    "把天候、排放、土地、生態、成本和維護放進比較表。",
+    "用相同服務量和同一時間範圍公平比較方案。",
+    "以穩定度、環境邊界與停損條件寫出可修正結論。"
+  ]
 }

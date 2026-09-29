@@ -2,41 +2,84 @@
   "id": "question-math-content-s-9-3-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 DE∥BC，且 AD:AB=4:7，則 DE:BC 為何？",
+  "prompt": "下列哪項最能說明平行線截比例線段時，比例式沒有配錯？",
   "options": [
     {
       "id": "A",
-      "text": "4：7"
+      "text": "把一條截線的分段和另一條截線的整段相比"
     },
     {
       "id": "B",
-      "text": "7：4"
+      "text": "同一方向的近段比近段、遠段比遠段，且兩比相等"
     },
     {
       "id": "C",
-      "text": "4：3"
+      "text": "只要四個線段長度都不同就成立"
     },
     {
       "id": "D",
-      "text": "3：4"
+      "text": "只要圖形看起來對稱就成立"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "相似三角形對應邊比相同，DE:BC=AD:AB=4:7。"
+    "value": "B",
+    "explanation": "正確比例必須配對同方向、同位置的分段，且兩組比相等，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平行線截比例線段 題型與官方課綱 KG kg-math-content-s-9-3",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供平行線截線比例、分點、相似形與逆判定能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的平行線截比例方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行線截線比例、分點比例、中點連線與平行逆判定",
+      "observedPattern": "公立學校公開數學試題常要求配對同方向截線分段，利用平行線造成的相似形求未知長度，或由兩截線的相同比例反推平行；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平行線截線比例、分點比例、中點連線與平行逆判定",
+      "observedPattern": "公立學校公開數學試題常要求配對同方向截線分段，利用平行線造成的相似形求未知長度，或由兩截線的相同比例反推平行；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行線截線比例、分點比例、中點連線與平行逆判定",
+      "observedPattern": "公立學校公開數學試題常要求配對同方向截線分段，利用平行線造成的相似形求未知長度，或由兩截線的相同比例反推平行；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "建立比例前先標示同一組平行線間的對應區段。",
+  "solutionSteps": [
+    "辨認兩條截線上的近段與遠段。",
+    "將近段與近段配對、遠段與遠段配對。",
+    "保持比例兩側方向一致。",
+    "確認兩組比相等後才能套用結論。",
+    "選 B。"
+  ]
 }

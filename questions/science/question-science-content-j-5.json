@@ -2,41 +2,78 @@
   "id": "question-science-content-j-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年7月22日學校研究社的觀察中，將 81 g 食鹽溶於 425 g 水，研究「J：物質的反應、平衡及製造」時，溶液質量為何？",
+  "prompt": "可逆反應達到動態平衡時，哪項描述正確？",
   "options": [
     {
       "id": "A",
-      "text": "344 g"
+      "text": "正反應與逆反應仍持續，但在相同條件下速率相等，宏觀濃度維持穩定"
     },
     {
       "id": "B",
-      "text": "34425 g"
+      "text": "所有粒子停止運動"
     },
     {
       "id": "C",
-      "text": "425 g"
+      "text": "反應物完全變成生成物"
     },
     {
       "id": "D",
-      "text": "506 g"
+      "text": "只剩逆反應而沒有正反應"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-j"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：81＋425＝506 g。 本題對應 KG「J：物質的反應、平衡及製造」。"
+    "value": "A",
+    "explanation": "動態平衡不是靜止；微觀反應仍在進行，只是正、逆反應速率相等，使可測量的濃度等宏觀量維持穩定。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的反應證據、粒子模型、守恆、條件控制、平衡與製程能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 J 根單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-j"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-j",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "化學反應、反應式、質量與實驗資料判讀",
+      "pattern": "取由反應現象、反應式與資料證據判斷物質變化及守恆關係的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由反應現象、反應式與資料證據判斷物質變化及守恆關係的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "反應條件、圖表資料、粒子模型與生活／製程情境",
+      "pattern": "取從粒子圖、實驗資料與生活情境推論反應條件、反應速率及結果的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從粒子圖、實驗資料與生活情境推論反應條件、反應速率及結果的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把微觀持續變化與宏觀穩定分成兩層判斷。",
+  "solutionSteps": [
+    "先辨認題目是否為可逆反應。",
+    "檢查正反應與逆反應是否仍存在。",
+    "確認兩方向速率相等而非都等於零。",
+    "B、C、D 分別把平衡誤解成停止、完全反應或單向反應。",
+    "所以 A 最完整。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

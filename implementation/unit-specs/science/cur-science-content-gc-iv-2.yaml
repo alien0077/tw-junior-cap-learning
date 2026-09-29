@@ -1,0 +1,144 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-science-content-gc-iv-2
+  knowledgeGraphIds:
+  - kg-science-content-gc-iv-2
+  title: Gc-Ⅳ-2：生物多樣性與生態系穩定
+  subject: science
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Gc-Ⅳ-2：生物多樣性與生態系穩定
+    curriculumIntent: Gc-Ⅳ-2：生物多樣性與生態系穩定
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 可取得版本不足時允許以已核讀的一版作為版本參照，並以課綱與 KG 為主軸原創補足；不可把索引或章節 metadata 冒稱教材內容，也不得宣稱三版融合。
+    currentEvidenceStatus: curriculum-and-kg-grounded; hanlin-official-study-aid-content-verified; nani-and-kanghsuan-text-pending; original-single-source-synthesis-authored
+  learningGoals:
+  - 區分遺傳、物種與生態系多樣性，並以池塘生物的生產、取食、分解等角色說明它們如何參與生態系功能
+  - 從自編池塘調查比較物種數、角色／取食關係及一次局部擾動後的觀察，分清資料、推論和未測量條件
+  - 將「多樣性高所以一定穩定」改寫成附有時間、擾動與功能範圍的證據式判斷，並遷移到潮間帶調查設計
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 多樣性有遺傳、物種、生態系三個尺度；三者不能用單一「物種數」互相替代
+  - 生產者、消費者、分解者各自參與能量傳遞或物質循環；生物間與生物—環境關係共同影響系統功能
+  - 穩定性判斷須指定觀察時間、空間、擾動和功能指標；物種數增加本身不足以證明穩定
+  misconceptions:
+  - 把種類數較多直接等同於生態系較穩定，忽略相對數量、物種角色、取食關係與棲地條件
+  - 把一次局部擾動後的短期觀察推成所有季節、所有擾動下都成立的因果結論
+  - 看到外來種增加「種類」便判定多樣性／穩定性提升，忽略它可能壓低原生生物或改變原有關係
+  contentFlow:
+  - 'predict：對照池塘生物名錄與漂浮植物覆蓋，先預測局部移除水草後哪條取食或棲地關係可能改變，並指出依據的角色。'
+  - 'manipulate：用控制項切換未移除、局部移除及大幅減少水草三種情境；這是概念模型，不代表已操弄真實池塘。'
+  - 'observe：同步查看兩個自編池塘樣區的物種數、角色連線和擾動後魚類活動紀錄，區分模型箭頭與實際調查資料。'
+  - 'explain：各寫一項直接觀察、一項受樣區與時間限制的推論，以及一個尚未測量的替代條件。'
+  - 'observe：辨認生產者、消費者、分解者與取食方向，追蹤水草／藻類到水生昆蟲、小魚及分解者回到環境的物質路徑。'
+  - 'explain：連結遺傳、物種、生態系三層多樣性及生產／取食／分解功能；角色多元可能提供替代路徑，但物種數本身不保證穩定。'
+  - 'transfer：將調查方法搬到潮間帶，另外記錄棲地面積、潮位、踩踏干擾及重複觀察，避免把池塘模型當成新場域實測。'
+  - 'exit-ticket：用觀察時間、擾動類型、功能指標與資料界線組成條件式結論，避免單次樣本外推所有生態系。'
+  visualizations:
+  - system-model：以「Gc-Ⅳ-2：生物多樣性與生態系穩定」作為唯一主題，至少同步呈現兩種表徵
+  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  interactiveBlocks:
+  - id: CUR-SCIENCE-CONTENT-GC-IV-2-I01
+    component: SystemRelationshipBlock
+    purpose: 操作池塘水草擾動情境，追蹤生產者、消費者、分解者之間哪些取食或物質關係可能改變，並明辨概念模型和實地證據
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        pond: 1
+        disturbance: 0
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 以鍵盤或滑桿切換未移除、局部移除、大幅減少三種水草擾動情境
+    - 觀察水草／藻類到水生昆蟲、小魚的示意取食路徑，以及枯葉／遺體經分解者回到環境的物質路徑
+    - 以短句指出可能受影響的連線、需要在池塘實測的項目與不能由模型推出的結論
+    visualRules:
+    - 操作後所有相關表徵同步更新，不得只改單一數字
+    - 正解揭露前保留學生預測與操作紀錄
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-SCIENCE-CONTENT-GC-IV-2-I01
+      trigger: 學生宣稱「物種數較多必然穩定」或把示意連線當成擾動造成族群變化的實測因果證據
+      prompt: 指出目前看到的是模型連線還是池塘觀察資料；要判斷擾動效果，還需要記錄哪個生物或環境條件？
+      expectedEvidence: 至少指出一條可能受擾動影響的角色關係，並舉出一項需實地觀察的生物／棲地資料與模型限制
+    feedback:
+      correct: 肯定其區分模型與實測的依據，再請學生把觀察計畫遷移到潮間帶。
+      incorrect: 若把示意關係當作族群實測因果，先提示補記調查時間、棲地或生物數量；重答後再顯示局部例子，不直接替學生下結論。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「Gc-Ⅳ-2：生物多樣性與生態系穩定」的 SystemRelationshipBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「Gc-Ⅳ-2：生物多樣性與生態系穩定」的 SystemRelationshipBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「Gc-Ⅳ-2：生物多樣性與生態系穩定」的 SystemRelationshipBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「Gc-Ⅳ-2：生物多樣性與生態系穩定」的 SystemRelationshipBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「Gc-Ⅳ-2：生物多樣性與生態系穩定」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: false
+    task: 用 80～120 字／英文短段落，將「Gc-Ⅳ-2：生物多樣性與生態系穩定」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始狀態須為水草擾動等級0，且須先讓學生提交「哪些關係可能改變」的預測；預測前不得顯示結論性回饋。
+  - 將滑桿由0調至1或2時，標籤與關係敘述同步更新；level 2 必須明示「假設情境」且不得輸出真實族群數值。
+  - 迷思測試以「物種多就一定穩定」和「模型箭頭等於實測因果」為錯誤輸入，驗收回饋要求指出待測資料，不得直接宣告池塘會崩解或已恢復。
+  - 在320px、375px與768px寬度，以鍵盤逐級調整水草擾動並讀取即時說明；控制項可聚焦、名稱與目前值可讀，頁面不得橫向溢位。
+  - 遷移題改用潮間帶：學生至少提出一項生物指標、一項棲地／環境條件及重複觀察安排，答案需說明池塘模型不能直接代替潮間帶測量。
+  - fallback：封鎖外部網路請求時，本地載入的角色卡、三種擾動情境、限制提示與學生文字解釋仍可操作；不依賴外部圖片或服務，也不得假稱取得即時池塘資料。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 G、次主題 Gc；官方代碼 Gc-Ⅳ-2
+    role: official-curriculum-source-of-truth

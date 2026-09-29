@@ -2,23 +2,23 @@
   "id": "question-english-performance-1-iv-11-9",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「1-Ⅳ-11／公共場所廣播」notice for the science room, item 9: “Bring one reusable bottle.” What does it tell people?",
+  "prompt": "School-theater announcement: ‘A short bell at 1:10 is only a test. If you hear the continuous alarm, teachers should lead classes through the west exit and take attendance in the courtyard.’ What should teachers do after the continuous alarm?",
   "options": [
     {
       "id": "A",
-      "text": "For item 9 in the 1-Ⅳ-11／公共場所廣播 notice, A reusable bottle is required."
+      "text": "Lead classes through the west exit and take attendance in the courtyard."
     },
     {
       "id": "B",
-      "text": "For item 9 in the 1-Ⅳ-11／公共場所廣播 notice, A new desk is required."
+      "text": "Ignore every alarm and remain in the theater."
     },
     {
       "id": "C",
-      "text": "For item 9 in the 1-Ⅳ-11／公共場所廣播 notice, Food is required for entry."
+      "text": "Use the east exit and meet at the library."
     },
     {
       "id": "D",
-      "text": "For item 9 in the 1-Ⅳ-11／公共場所廣播 notice, Visitors must bring a ticket for the roof."
+      "text": "Dismiss students before checking attendance."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 1-Ⅳ-11／公共場所廣播, question 9."
+    "explanation": "廣播區分短鈴測試與持續警報；只有聽到 continuous alarm 時，老師才帶班走西側出口並在中庭點名。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中九年級英文段考公開題本；公共場所廣播理解與資訊擷取能力方向之獨立改編；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2792&fn=112-2-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%838%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E8%81%BD%E5%8A%9B%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E5%BE%90%E7%BE%8E%E9%9B%B2.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣宜昌國中112學年度第二學期第二次段考八年級英語科聽力試題卷，PDF第6頁附聽力測驗稿第24題；僅改寫多人廣播、角色指令及行動理解題型，不重製原廣播稿或選項。",
+    "authoringNote": "參照公立國中英文聽力試題中的多人廣播、多角色指示及指定聽者行動題型，十題情境、廣播內容、選項、答案與解析均為本專案原創，未複製原卷；待本專案AI內容QA，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1-iv-11"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-1-iv-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2792&fn=112-2-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%838%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E8%81%BD%E5%8A%9B%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E5%BE%90%E7%BE%8E%E9%9B%B2.pdf&op=dlfile",
+      "title": "花蓮縣宜昌國中112學年度第二學期第二次段考八年級英語科聽力試題卷，PDF第6頁附聽力測驗稿第24題；公開多人廣播指示與行動理解",
+      "year": "112-2",
+      "subject": "english",
+      "locator": "PDF第6頁附聽力稿第24題；原卷第24題先說明不同群體在集合廣播中的行動與先後；本題改為條件式安全廣播，檢查觸發條件與完整行動鏈。",
+      "locatorLevel": "item",
+      "observedPattern": "原卷第24題先說明不同群體在集合廣播中的行動與先後；本題改為條件式安全廣播，檢查觸發條件與完整行動鏈。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "先分辨條件觸發的警報類型，再把該條件下的出口、目的地與後續工作連在一起。",
+  "solutionSteps": [
+    "先辨認 short bell 是測試，不是撤離條件。",
+    "找到 If you hear the continuous alarm，確定本題情況已觸發。",
+    "擷取 through the west exit 作為路線。",
+    "再擷取 take attendance in the courtyard 作為到達後任務。",
+    "完整行動與A相符。"
+  ]
 }

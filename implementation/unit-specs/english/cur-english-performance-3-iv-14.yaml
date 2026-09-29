@@ -1,0 +1,118 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-14
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-14
+  title: 3-Ⅳ-14：用略讀、尋讀與結構線索快速抓住重點
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: '3-Ⅳ-14：能快速閱讀了解文章重點，並有效應用於廣泛閱讀中'
+    curriculumIntent: 依閱讀目的選擇略讀、尋讀、格式定位與回讀確認；摘要須保留行動—目的關係，細節答案須符合條件與對象。
+    publisherEvidence:
+      nani: {status: pending, required: true}
+      kanghsuan: {status: pending, required: true}
+      hanlin: {status: pending, required: true}
+    fusionRule: 只融合三版本可核對的概念順序、文本類型、閱讀策略與評量差異；校方公開課程計畫只能支持課程定位，不等於出版社教材全文研究。
+    currentEvidenceStatus: curriculum-and-kg-grounded; public-school-course-plan-locators-recorded; publisher-full-text-fusion-pending
+  learningGoals:
+  - 先辨認任務是抓主旨、找特定細節或形成摘要，再選閱讀路徑。
+  - 以標題層級、重複詞、日期／時間格式、條件句等文本線索定位答案。
+  - 回讀完整句核對對象、條件和行動—目的關係，避免只憑找到的關鍵字作答。
+  prerequisites:
+  - 能理解本課原創英文短文中的常用校園、環境與交通詞彙；遇到不熟詞時可先用標題和上下文定位任務。
+  - 能辨認標題、小標題、時間格式及 if 條件句的基本資訊功能。
+  coreConcepts:
+  - 閱讀目的決定先看結構或搜尋特定格式，而不是每題都逐字翻譯。
+  - 快速定位只產生候選證據；回讀上下文才能確認條件、對象與答案範圍。
+  - 有效摘要把核心行動與目的連起來，排除不支撐主旨的零散細節。
+  misconceptions:
+  - 把略讀等同只讀第一句，因而漏掉標題層級或轉折。
+  - 找到相同數字／關鍵字便停止，忽略路線、場次、對象或 if 條件。
+  - 把重複詞當作完整摘要，未說明行動與目的的關係。
+  contentFlow:
+  - 'hook: 比較同一活動頁的主題題和截止時間題，預測兩者需要的閱讀路徑。'
+  - 'predict: 讀到任務後先選主旨預覽、重複詞優先或格式掃描，再提交候選答案。'
+  - 'manipulate: 每階切換閱讀目的或文本形式，從預覽標題改用重複片語、路線欄及條件詞定位。'
+  - 'observe: 檢查所選線索是否落在指定對象、完整時刻表列或 if 條件結果。'
+  - 'explain: 以回讀完整句說明線索如何支持答案；摘要需連結行動與目的。'
+  - 'transfer: 用新公告整合期限、資格和行動目的，並在 exit ticket 反思何時需細讀。'
+  visualizations:
+  - 每階原創文本以保留換行的純文字區呈現，不靠顏色區分標題或正誤。
+  - 任務進度與作答狀態以可讀文字及原生 progress／radio 控制呈現。
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-14-I01
+    component: TextEvidenceBlock
+    purpose: 透過不同閱讀目的和原創短文本，讓學生練習略讀、優先排序、尋讀和回讀確認，並把策略遷移到摘要。
+    initialState:
+      taskIndex: 0
+      correctAnswers: []
+      showAnswer: false
+    studentActions:
+    - 讀取當階短文本及單一閱讀任務。
+    - 選擇最有效的閱讀路徑或有文本支持的答案。
+    - 答錯時依專屬回讀提示留在本階；答對才解鎖下一項任務。
+    - 完成六階後可重設並重新練習。
+    visualRules:
+    - 每次只呈現目前文本、問題和選項；文章以純文字換行呈現，窄螢幕可自然折行。
+    - 正解不在初始畫面揭露；回饋以文字呈現，不單靠顏色。
+    - 原生 radio、fieldset、legend、button 與 aria-live status 支援鍵盤及輔助科技。
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-14-I01
+      trigger: 找到一個相似詞或數字便作答，沒有確認完整句中的條件、路線或對象。
+      prompt: 你定位到的詞屬於哪一個路線／條件／對象？請回讀整行再選一次。
+      expectedEvidence: 能指出與任務一致的完整句或條件，並排除相似但不符合對象的資訊。
+    feedback:
+      correct: 回饋指出本階的任務線索及為何需回讀；再讓下一階改變文本形式或閱讀目的。
+      incorrect: 以該文本的標題、重複片語、路線欄或條件詞提供具體回讀位置，不直接揭露正解。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: accessibility-pattern-only
+    application: 使用原生表單語意、明確標籤及狀態訊息；不沿用外部教學內容或視覺素材。
+  - refId: w3c-reflow
+    reuseDecision: accessibility-pattern-only
+    application: 原創短文與選項在窄視窗重排，不要求橫向捲動才能讀取任務。
+  capTransfer:
+    questionType: 公告／時刻表／說明文的主旨、特定資訊與條件判讀
+    stemConstraint: 新文本須同時具備相近干擾資訊與可定位證據，不沿用本課六段文字或原卷題幹。
+    requiredResponse: 選答並指出定位線索及回讀確認的條件／對象；摘要題另指出行動和目的。
+    scoring: 策略與答案相符 1、證據定位正確 1、條件或行動—目的解釋完整 1。
+  exitTicket:
+    prompt: 面對「文章主題是什麼」和「某班列車幾點出發」兩種問題，你會各先看哪裡？找到資訊後如何避免套錯？
+    successCriteria:
+    - 主題任務先看標題或結構；特定資訊任務按格式掃讀。
+    - 回讀完整句或資料列，確認指定條件與對象。
+    - 摘要能保留核心行動和目的，而非只列時間或物品。
+  expressionExtension:
+    applicable: true
+    task: 用英文 2–3 句寫出校園花園活動的主要行動和目的，再用繁中標明支持兩部分的文本線索。
+    constraint: 學生先自行表達；回饋指出證據缺漏或摘要範圍，不代寫答案。
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每階提供任務進度、文本、fieldset 標籤與 aria-live 回饋；完成狀態可讀取。原生 radio 與按鈕支援 Tab、方向鍵及 Enter／Space。
+    reducedMotion: 無必要動畫；啟用減少動態偏好時流程不變。
+  testCases:
+  - 初始畫面只呈現第一階原創樹木短文，不顯示任何正解。
+  - 六階逐一呈現；未作答或答錯不得前進，錯誤選項保留且出現本階回讀提示。
+  - 正確依序涵蓋主旨預覽、重複行動、路線時間、天候條件、資格／期限、行動—目的摘要。
+  - 完成訊息反映六階，lesson instance 狀態可還原並可重設。
+  - 320／375／768 寬度不得有互動區水平溢位；表單可鍵盤操作、狀態可讀。
+  - 外部網路或嵌入資源不可用時，lesson 內附的純文字短文仍能完整完成六階互動，作為離線 fallback。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 一致。
+  - 三版本全文研究及差異融合完成前明確保持 pending，不得宣稱版本融合完成。
+  - 六階互動、逐題回讀診斷、transfer 與 exit ticket 可由 lesson 資料驅動執行。
+  - 自動 DOM、資料 Schema、窄螢幕與鍵盤契約測試通過；真實輔助科技驗收另行記錄。
+  - 內容／授權 QA 通過且全科獨立性 gate 通過前，lesson 與題目均維持 draft。
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-14
+    role: official-curriculum-source-of-truth

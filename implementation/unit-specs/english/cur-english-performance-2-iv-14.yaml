@@ -1,0 +1,215 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-2-iv-14
+  knowledgeGraphIds:
+  - kg-english-performance-2-iv-14
+  title: 2-Ⅳ-14：介紹國內外風土民情
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 2-Ⅳ-14：介紹國內外風土民情
+    curriculumIntent: 2-Ⅳ-14：介紹國內外風土民情
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 從節慶行程、訪談摘錄、場館告示辨認地點、場合、參與者與文化實踐
+  - 用可追溯證據比較兩地的相同面向，同時保留差異
+  - 把「每個人都如此」等過度概括改寫成有來源、有場合、有範圍的英文介紹
+  - 資訊不足時提出中性而尊重的確認問題，不以刻板印象補空白
+  prerequisites:
+  - 能從英文短句找出人物、地點、時間與主要動作
+  - 能區分資料明說的內容和讀者自行推測的內容
+  coreConcepts:
+  - Place／Occasion／People／Practice：文化描述要交代發生地點、場合、參與者與實際做法
+  - Evidence／Boundary：每個文化主張都要回指來源，結論範圍不能超過證據
+  - Comparison scale：跨文化比較使用相同面向，但不把差異排列成高低
+  misconceptions:
+  - 把單一訪談或一場活動擴張成整個國家、所有家庭的固定習俗
+  - 把菜單上同時出現的食物直接說成某節慶的歷史起源
+  - 用自己的熟悉程度替不同文化作先進／落後、正常／奇怪的價值排序
+  - 遇到資料空缺時猜測參與者動機或普遍做法，而不是標示未知並確認
+  contentFlow:
+  - 'hook: 比較 "Everyone does this" 和 "Some residents do this at one festival" 哪句能由來源支持'
+  - 'activate-prerequisite: 從文化卡找出時間、地點、參與者與原句'
+  - 'visualize: 將來源、文化主張、範圍詞和推論分欄呈現'
+  - 'predict: 預測句中哪個焦點詞最能修正過度概括'
+  - 'manipulate: 把對比重音移到 some、practice 或 occasion'
+  - 'observe: 比較重音改變後聽者注意到的是參與範圍、做法或場合'
+  - 'explain: 引用來源句，說明為何 some 限定了主張而不抹去文化差異'
+  - 'formalize: 練習 According to the card...、Some visitors...、At this event... 等有來源界線的表達'
+  - 'transfer: 將範圍與證據策略移至博物館告示等不同文化情境'
+  - 'exit-ticket: 寫一則可查證的介紹句，並標註它不能代表的範圍'
+  visualizations:
+  - 來源卡以英文原句與來源種類呈現；旁欄標記 Place、Occasion、People、Practice、Evidence、Boundary
+  - 對比重音以文字粗體和 aria-label 同步標出焦點詞；不使用顏色作唯一提示
+  - 初始預測、操作焦點、證據說明與新情境遷移分階段解鎖，正解不在預測前揭露
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-2-IV-14-I01
+    component: LanguageTimelineBlock
+    purpose: 操作英文句子的對比焦點，觀察來源範圍詞如何避免把一項文化實例說成全民規則
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        primary: 1
+        secondary: 1
+    studentActions:
+    - 閱讀 harvest walk 活動卡後，先預測哪個詞能限制文化主張的參與者範圍
+    - 提交預測後，以鍵盤或按鈕輪流將對比焦點移到 Some、residents 或 festival
+    - 比較焦點改變後的文字提示，確認哪一項最直接回應「不是所有人都如此」的迷思
+    - 用活動卡的措辭解釋答案，再在博物館規則的新句中找出地點界線
+    visualRules:
+    - 每次點選只改變句子的焦點標記，原句和來源卡保持不變，讓學生能比較注意焦點而非誤以為事實改寫
+    - 正解揭露前保留學生預測；錯誤焦點仍顯示對應解讀，並提示回查活動卡
+    - 焦點同時以粗體、按鈕文字及 aria-pressed 表示，不以顏色單獨承載意義
+    - 來源原句、焦點控制、證據說明與遷移輸入在窄螢幕垂直排列，不裁切或依賴外部圖片
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-2-IV-14-I01
+      trigger: 將 harvest walk 卡片中的 some residents 改寫成 everyone in the country
+      prompt: 活動卡實際記錄的是哪些人、在哪一場活動做了什麼？請指出原句中的範圍詞。
+      expectedEvidence: 指出卡片只記錄某場 harvest walk 的 some residents，不能推出全國每個人都做同一件事
+    feedback:
+      correct: 回指 some residents 及 harvest walk 兩個限制線索，請學生在博物館新告示中再次標記範圍。
+      incorrect: 指出推論擴張發生在 people 或 occasion 哪一欄；先提示回讀 some 與活動名稱，不直接提供改寫句，重試後再顯示局部示範。
+    languageTimeline:
+      title: 焦點實驗室：讓文化主張停在證據範圍內
+      context: 活動卡只記錄「At the neighborhood harvest walk, some residents fold paper leaves together each September.」草稿卻寫成「Everyone in the country makes paper leaves every year.」先預測哪個詞最能把參與範圍拉回活動卡的證據。
+      sentence:
+      - Some
+      - residents
+      - fold
+      - paper
+      - leaves
+      - at
+      - the
+      - harvest
+      - walk.
+      prompt: 預測要承受對比重音的字，再操作不同詞，觀察聽者會注意到什麼。
+      choices:
+      - word: Some
+        contrast: 強調 Some，聽者會注意「部分居民」而非所有人。
+        evidence: 活動卡明寫 some residents，沒有說全國每個人都參加。
+      - word: paper
+        contrast: 強調 paper，聽者會注意裝飾材料。
+        evidence: 活動卡寫 paper leaves，但材料無法證明參與者範圍。
+      - word: harvest
+        contrast: 強調 harvest，聽者會注意活動場合。
+        evidence: harvest walk 能定位活動，卻不能把 some residents 推成 everyone。
+      correctWord: Some
+      transfer:
+        prompt: 新資料寫著「At this museum, visitors speak softly in the archive room.」哪個字最直接把提醒限制在特定場館，而不是所有地方？
+        acceptedWord: this
+        evidenceHint: this 把主張綁定這一間博物館；仍應依該館告示確認規則，不推成每個場館都相同。
+    guidedActivity:
+      title: 六欄文化卡：把過度概括改成可追溯介紹
+      introduction: 依序使用同一張虛構活動卡的不同欄位完成改寫，再把方法遷移到另一種公共文化空間。每一步答錯會先給線索，可修正重試。
+      stages:
+      - prompt: 活動卡寫著「At the neighborhood harvest walk, some residents fold paper leaves together each September.」哪個英文片語明確限定參與者？
+        acceptedAnswers:
+        - some residents
+        - some of the residents
+        correctFeedback: 對；some 把範圍限於卡片記錄的部分居民。
+        hint: 找量詞，不要把 some 換成 everyone。
+      - prompt: 這些居民是在什麼場合折紙葉？請輸入活動名稱。
+        acceptedAnswers:
+        - the neighborhood harvest walk
+        - neighborhood harvest walk
+        - harvest walk
+        correctFeedback: 對；活動名稱界定 occasion，不能把單一活動擴成全年習慣。
+        hint: 回讀 At the ... 開頭的場合詞組。
+      - prompt: 來源能支持「所有國家的人每年都折紙葉」嗎？輸入能支持或不能支持。
+        acceptedAnswers:
+        - 不能支持
+        - 不能
+        - 'no'
+        correctFeedback: 正確；卡片只有一個社區活動的有限紀錄。
+        hint: 比較來源的 some residents 與主張的 everyone in the country。
+      - prompt: 用英文寫出有範圍的短句；須包含 some residents 和 harvest walk。
+        acceptedAnswers:
+        - Some residents fold paper leaves at the harvest walk.
+        - At the harvest walk, some residents fold paper leaves.
+        correctFeedback: 這句同時保留活動、參與者範圍和來源所述實踐。
+        hint: 保留 some；把 everyone in the country 刪掉，不要增加來源沒有的普遍規則。
+      - prompt: 遷移卡只記錄「At this museum, visitors speak softly in the archive room.」哪個英文詞把提醒限定在特定場館？
+        acceptedAnswers:
+        - this
+        - this museum
+        correctFeedback: 完成；你把範圍策略遷移到新的場館資料，沒有把一館規則推成普遍文化。
+        hint: 尋找直接指向這一處而非所有地方的限定詞。
+      completionMessage: 六欄已完成：你保留了來源與場合、修正了人群範圍，並在新場館資料中再次標記界線。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課「2-Ⅳ-14：介紹國內外風土民情」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課「2-Ⅳ-14：介紹國內外風土民情」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「2-Ⅳ-14：介紹國內外風土民情」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「2-Ⅳ-14：介紹國內外風土民情」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 公告／訪談資料判讀與有界線的英文短答
+    stemConstraint: 由節慶活動卡遷移到博物館告示，辨認同一個來源範圍規則在不同場合如何使用
+    requiredResponse: 改寫一個未過度概括的英文文化介紹句，並指出支持它的原句及不能推出的範圍
+    scoring: 參與者／場合範圍正確 1、英文主張可回指證據 1、明確限制推論 1
+  exitTicket:
+    prompt: 請為一張只記錄單一社區活動的卡片寫一句英文介紹，並補充這張卡不能代表哪些人或場合。
+    successCriteria:
+    - 保留 some、in this event 或 according to the card 等可核對範圍
+    - 明確提及卡片的活動或來源內容
+    - 不把一位受訪者、一戶家庭或單場活動擴張成普遍習俗
+  expressionExtension:
+    applicable: true
+    task: 為交換生撰寫80～120字英文文化指南，使用兩種不同來源介紹一項活動及一項場館規則，指出一項相似點和一項差異。
+    constraint: 每個文化主張須標出來源與場合；以some／in this event限定樣本；資訊不足處寫成待確認問題，不把系統提示拼成整段代答。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初次載入 harvest walk 活動卡時正解不得先揭露；學生先提交任一預測後才解鎖 Some、paper、harvest 的焦點操作，且預測須在狀態中保留。
+  - 將焦點移至 Some 時，句中該詞須以粗體及文字替代同步標出，回饋須指出 some residents 只支持部分居民參與；移至 paper 時應指出材料線索不能證明人群範圍。
+  - 輸入 everyone in the country 等過度概括後，系統須顯示回查 some 的一階提示，保留原進度讓學生修正，不直接代寫。
+  - guidedActivity 的五步須逐步驗收參與者、場合、證據邊界、有範圍英文句及博物館遷移；錯誤答案顯示對應提示，完成後明確顯示5/5。
+  - 在320px、375px與768px寬度以鍵盤操作預測、焦點按鈕、解釋、transfer及五步文字輸入；焦點可見、aria-label／aria-live狀態存在，核心內容不得水平溢位。
+  - 即使localStorage或分享網址狀態不可用，學生仍須能完成預測、證據比較、解釋、遷移及五步 fallback 活動；停用動態效果不改變資訊或步驟。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 2-Ⅳ-14
+    role: official-curriculum-source-of-truth

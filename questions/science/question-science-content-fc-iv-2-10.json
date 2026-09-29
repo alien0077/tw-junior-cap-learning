@@ -2,23 +2,23 @@
   "id": "question-science-content-fc-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月17日社區環境站的觀察中，將 22 g 食鹽溶於 625 g 水，研究「Fc-Ⅳ-2：細胞及其分子組成的微觀層次」時，溶液質量為何？",
+  "prompt": "若某細胞缺少一種蛋白質而出現功能異常，最嚴謹的表述？",
   "options": [
     {
       "id": "A",
-      "text": "647 g"
+      "text": "可直接證明所有蛋白質都負責同一功能"
     },
     {
       "id": "B",
-      "text": "603 g"
+      "text": "結果支持該蛋白質可能參與功能，仍需控制實驗確認因果"
     },
     {
       "id": "C",
-      "text": "13750 g"
+      "text": "表示 DNA 一定完全消失"
     },
     {
       "id": "D",
-      "text": "625 g"
+      "text": "表示細胞不含任何其他分子"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：22＋625＝647 g。 本題對應 KG「Fc-Ⅳ-2：細胞及其分子組成的微觀層次」。"
+    "value": "B",
+    "explanation": "缺少與功能異常的關聯是線索，需補上對照、恢復或抑制等實驗才能強化因果結論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立國中段考自然科；研究細胞分子組成、微觀尺度與結構功能的能力方向。",
+    "authoringNote": "依官方課綱 KG 與公立國中公開試題能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fc-iv-2"
+  "updatedAt": "2026-09-08",
+  "lessonId": "lesson-science-content-fc-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "公立國中段考自然科；僅研究題型與能力方向，未複製原題。",
+      "year": "114",
+      "subject": "science",
+      "locator": "細胞分子組成、微觀尺度與結構功能",
+      "observedPattern": "能力方向研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先定位細胞內的分子與結構層級，再以結構功能關係和證據限制判斷。",
+  "solutionSteps": [
+    "讀題定位：抓出「證據界線」涉及的細胞結構、分子或尺度證據。",
+    "建立判準：缺少與功能異常的關聯是線索，需補上對照、恢復或抑制等實驗才能強化因果結論。",
+    "核對答案：選項 B「結果支持該蛋白質可能參與功能，仍需控制實驗確認因果」符合判準。",
+    "排除誘答：分清細胞、細胞器、分子與原子層級，並區分影像線索與功能證據。",
+    "最後回查：確認答案同時符合微觀組成、結構功能與實驗證據界線。"
+  ]
 }

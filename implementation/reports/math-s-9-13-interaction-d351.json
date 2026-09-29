@@ -1,0 +1,37 @@
+{
+  "unitId": "S-9-13",
+  "lessonId": "lesson-math-content-s-9-13",
+  "reviewedAt": "2026-09-28",
+  "status": "interaction-and-browser-QA-passed; axe-contrast-incomplete",
+  "reviewStatus": "draft",
+  "change": "Replace the mismatched generic triangle-area renderer with a dedicated right-triangular-prism surface-area/volume learning model.",
+  "interactionContract": {
+    "initialPrediction": "3-4-5 right-triangle base; prism length 4 cm to 6 cm; answer/formula remains locked until correct submission.",
+    "incorrectAttempt": "First wrong answer receives a conceptual hint (perimeter controls side-area increase; base area controls volume increase); worked model stays locked for retry.",
+    "unlockedModel": "Solid prism, two triangular end faces and three rectangular net faces, per-face table, accessible length slider, linked surface area and volume, four reasoning steps.",
+    "initialValues": {"lengthCm": 4, "surfaceAreaCm2": 60, "volumeCm3": 24},
+    "changedValues": {"lengthCm": 6, "surfaceAreaCm2": 84, "volumeCm3": 36},
+    "transfer": {"baseTriangle": "5-12-13", "lengthCm": 2, "surfaceAreaCm2": 120, "volumeCm3": 60},
+    "reset": "Clears choices and returns to locked prediction state.",
+    "keyboard": "Choice, submit, step navigation, and slider updates preserve focus."
+  },
+  "regressions": {
+    "targetNodeJSDOM": "PASS: prediction gate, no answer leak on initial/wrong attempt, hint and correct retry, net/solid/table, arithmetic, focus retention, transfer, reset, draft state.",
+    "fullNpmTest": "PASS after final interaction changes: includes workbench traversal of 1,027/1,027 units.",
+    "browserSmoke": "PASS: real system Chrome; workbench traversal 1,027/1,027; S-9-13 prediction retry, linked values, transfer, keyboard and reset; 320/375/768px; no page errors.",
+    "axe": "PASS with 0 violations in 48 runs (15 representative units at 320/375/768 plus unlocked S-9-13 student runtime at all three widths); 3 incomplete color-contrast checks remain because axe cannot determine colors over gradients/SVG overlap. Not reported as a clean automated contrast gate.",
+    "siteIndex": "PASS: build and validation report 1,052 lessons, 10,526 question paths, revision local.",
+    "wholeData": "PASS after final additions: validate_data.py reports 14,473 JSON files, 13,112 IDs, 1,032 KG nodes; all 1,052 lessons and 10,566 questions remain draft.",
+    "specValidation": "PASS: 1,027 specs, 0 errors; 1,027 pending overall completion gate.",
+    "strictLessonIndependence": "PASS: 614 learning-content lessons, 0 risks, 0 affected references, 0 strict failures."
+  },
+  "sourcesAndGates": {
+    "curriculumScope": "S-9-13 covers right-prism volume; this interaction does not teach cone or pyramid volume.",
+    "publisherEvidence": "Publisher slots remain pending; accessible public material is uneven and some version/rights authenticity is unverified. This is not a claim of complete three-publisher chapter review.",
+    "lessonStatus": "draft",
+    "specQaStatus": "untested overall; automated behavior passed, but contrast incomplete and design/content review gates remain open",
+    "examSourceLedger": "Last verified 10,566/10,566 recorded, pending 0; not rerun in this change.",
+    "commitPush": "Not done; overall objective remains incomplete.",
+    "subtasks": "None."
+  }
+}

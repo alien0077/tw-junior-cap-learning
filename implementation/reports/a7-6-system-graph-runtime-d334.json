@@ -1,0 +1,26 @@
+{
+  "reportId": "a7-6-system-graph-runtime-d334",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-6",
+  "change": {
+    "priorIssue": "The generic math-geometry renderer displayed triangle area, unrelated to the A-7-6 two-line intersection objective.",
+    "engine": "math-system-graph",
+    "behavior": "Renders 2x-y=2 and x+y=c, labels both lines, provides an accessible exact intersection, and lets the learner change c with a keyboard-operable slider.",
+    "sharedAccessibilityFix": "Simulation learning-step buttons are exposed as a labeled group rather than an invalid list containing buttons."
+  },
+  "verification": {
+    "targetedNodeDom": "PASS: two lines, non-color line distinction, exact intersection, slider update, four pedagogical steps",
+    "migrationContract": "PASS: A-7-6 lesson simulation exactly matches simulation_for()",
+    "fullNpmTest": "PASS",
+    "fullBrowserSmoke": "PASS: 1,027/1,027 units; responsive, keyboard, accessibility tree, reduced motion; A-7-2/A-8-4/A-8-7 interaction checks also passed",
+    "fullAxe": "PASS: 24 representative runs; 0 violations; 0 incomplete",
+    "a76Chromium": "PASS: exact graph, intersection accessible name, keyboard-adjustable equation constant, 320/375/768px without overflow, no page errors",
+    "a76Axe": "PASS: 0 violations; 0 incomplete"
+  },
+  "contentGates": {
+    "lessonReviewStatus": "draft",
+    "specQaStatus": "untested",
+    "publisherEvidence": {"nani": "pending", "kanghsuan": "pending", "hanlin": "pending"},
+    "humanReview": "not performed"
+  }
+}

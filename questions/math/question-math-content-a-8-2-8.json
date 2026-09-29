@@ -2,23 +2,23 @@
   "id": "question-math-content-a-8-2-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "化簡 4p＋2－p，結果為何？",
+  "prompt": "下列哪一個不是 x 的多項式？",
   "options": [
     {
       "id": "A",
-      "text": "3p＋2"
+      "text": "3x²−1"
     },
     {
       "id": "B",
-      "text": "3p－2"
+      "text": "x⁴＋2x"
     },
     {
       "id": "C",
-      "text": "5p＋2"
+      "text": "7−5x³"
     },
     {
       "id": "D",
-      "text": "4p＋1"
+      "text": "1/x＋2"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "合併同類項 4p－p 得 3p，常數 2 保留。"
+    "value": "D",
+    "explanation": "1/x 可寫成 x⁻¹，含負次方，不符合多項式次方須為非負整數，選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究多項式項、係數、次數與代入能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+    "sourceLocator": "臺中市至善國中114學年度第一學期八年級第一次定期評量數學科試題卷，第6題：辨認含分母變數、絕對值等式子是否為x的多項式；臺中市立光正國中八上數學補行評量，第10題：辨認x的多項式與非多項式式子；臺中市立大甲國中二年級數學補考題庫，八年級補考題庫第41題：辨認含分母變數、絕對值或方程式的x多項式",
+    "authoringNote": "依官方課綱／KG 的多項式概念，並以多所公立國中公開試題中所列題號的能力面向作 pattern-only 參照；本題題幹、數值、選項、正確答案說明與逐步解法為原創，未重製來源題目。來源與答案已作第一輪 AI 檢查，尚待版本融合、Terra 及完整發布 QA，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-a-8-2",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市至善國中114學年度第一學期八年級第一次定期評量數學科試題卷",
+      "year": "114",
+      "subject": "math",
+      "locator": "第6題：辨認含分母變數、絕對值等式子是否為x的多項式",
+      "observedPattern": "僅參考校方公開試題的能力面向與作答任務；題幹、數值、選項、答案與解法均為本專案原創，不重製來源文字、數據、選項、圖像或解析。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064544/get-file/697accd01b1faf22070745d7",
+      "title": "臺中市立光正國中八上數學補行評量",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "第10題：辨認x的多項式與非多項式式子",
+      "observedPattern": "僅參考校方公開試題的能力面向與作答任務；題幹、數值、選項、答案與解法均為本專案原創，不重製來源文字、數據、選項、圖像或解析。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064510/get-file/5e49ebb9a2bac601505f73d8",
+      "title": "臺中市立大甲國中二年級數學補考題庫",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "八年級補考題庫第41題：辨認含分母變數、絕對值或方程式的x多項式",
+      "observedPattern": "僅參考校方公開試題的能力面向與作答任務；題幹、數值、選項、答案與解法均為本專案原創，不重製來源文字、數據、選項、圖像或解析。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "檢查變數的次方是否為 0 或正整數，分母中的變數會造成負次方。",
+  "solutionSteps": [
+    "觀察各選項中的 x 次方。",
+    "A、B、C 的次方皆為非負整數。",
+    "D 的 1/x 等於 x⁻¹。",
+    "負次方不能作為多項式項次。",
+    "選 D。"
+  ]
 }

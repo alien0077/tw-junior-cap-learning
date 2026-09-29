@@ -1,0 +1,74 @@
+{
+  "reportId": "a7-8-three-source-substantive-fusion-d338",
+  "date": "2026-09-27",
+  "unitId": "A-7-8",
+  "lessonId": "lesson-math-content-a-7-8",
+  "result": "original-source-informed-fusion-draft; publisher-chapter-review-pending",
+  "sourceToTeachingTrace": [
+    {
+      "publisherLabel": "nani",
+      "evidenceTier": "third-party shared excerpt plus publisher-labeled alignment tree; not authenticated publisher chapter",
+      "locator": "Scribd public OCR excerpt, approximately PDF p.113; https://www.scribd.com/document/932850305/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E4%B8%83%E4%B8%8B; alignment tree https://www.junyiacademy.org/topics/n-m7b-c04-1",
+      "observedTeachingMove": "The limited excerpt exposes inequality wording/symbol recognition and expression-structure classification; the aligned course tree separates solution/graphing from later operations/application.",
+      "originalDesignDecision": "Open the lesson with candidate-value probes in the original inequality −2x＋6＞10, define a solution by substitution, then expand to a complete solution set before performing transformations.",
+      "visibleLocations": ["content.sections[0]", "content.sections[2]", "content.sections[3]", "simulation.learningDesign.steps[0:3]"],
+      "rightsAndLimits": "Uploader, edition authenticity and reuse rights are unverified; only a limited searchable OCR excerpt was readable. No wording, exercise, number set, answer, or figure was reproduced."
+    },
+    {
+      "publisherLabel": "kanghsuan",
+      "evidenceTier": "school-shared publisher-labeled curriculum plan plus official resource index; not authenticated publisher chapter",
+      "locator": "Scribd OCR lines 358–400, https://www.scribd.com/document/909099540/%E5%BA%B7%E8%BB%92%E7%89%88-%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F; publisher video index https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "observedTeachingMove": "The school plan orders number-line translation reasoning for addition/subtraction before numerical examples of order reversal under negative multiplication/division, followed by solving and contextual checking. The XML is an index and does not prove video content.",
+      "originalDesignDecision": "Explain reversal as reflection of number-line order (−1＜2 becomes 3＞−6 after multiplying by −3), then distinguish equality-preserving transformations from contextual intersection with integer/domain restrictions.",
+      "visibleLocations": ["content.sections[1]", "content.sections[2]", "content.sections[4]", "content.sections[5]", "simulation.learningDesign.steps[1:4]"],
+      "rightsAndLimits": "The shared plan's uploader, publisher authenticity and reuse rights are unverified; no textbook language, examples, exercises, answers, or figures were copied."
+    },
+    {
+      "publisherLabel": "hanlin",
+      "evidenceTier": "publisher's official public resource index; chapter media/body not reviewed",
+      "locator": "https://mathvideo.hle.com.tw/1B/4-2/; unit 4-2 resource classifications for solving, applications, self-assessment and self-challenge",
+      "observedTeachingMove": "The official index separates solving, application and self-check resources and exposes an addition/subtraction then multiplication/division resource sequence; it does not provide the chapter's complete explanation.",
+      "originalDesignDecision": "Make the visible lesson culminate in a worked context and an exit task: solve, test the strict/inclusive endpoint, intersect with integer bounds, and verify retained candidates in the original inequality.",
+      "visibleLocations": ["content.sections[3]", "content.sections[4]", "content.sections[5]", "studyHighlights", "simulation.learningDesign.steps[2:4]"],
+      "rightsAndLimits": "Official index only; full chapter/video lesson was not reviewed and no media, question, answer, or figure was copied."
+    }
+  ],
+  "originalStudentFacingSequence": [
+    "Define a solution and solution set by testing values around the boundary.",
+    "Derive order reversal under a negative factor from number-line reflection rather than a memorized sign rule.",
+    "Show each equivalent transformation in −2x＋6＞10 and identify exactly where division by −2 reverses the relation.",
+    "Check an open endpoint against the original inequality and reconcile algebra, number line and test values.",
+    "Solve 120h＋80≤800, then intersect the real solution with positive whole-hour constraints; verify 6 and 7 hours.",
+    "Transfer to −3(2x−1)≥9 and intersect x≤−1 with integer bounds −4≤x; verify endpoint and excluded neighbor."
+  ],
+  "interaction": {
+    "engine": "concept-explorer",
+    "learningDesignType": "inequality-solution-set",
+    "steps": 4,
+    "proofGraphic": "Accessible SVG number line for x＜−2 with open endpoint and labeled −3/−2/−1 probes.",
+    "keyboard": "Step-four activation by Enter retains focus after rerender.",
+    "viewportWidths": [320, 375, 768]
+  },
+  "verification": {
+    "targetRuntimeTest": "PASS: npm run test:math:a7-8",
+    "schemaAndData": "PASS: validate_data.py; 14,460 JSON, 13,112 IDs, 1,032 KG nodes; all lessons/questions remain draft",
+    "strictLessonIndependence": "PASS: 614 lesson files, 0 risks, 0 affected references, 0 strict failures",
+    "implementationSpecs": "PASS structurally: 1,027 files, 0 errors; qaStatus remains untested/pending",
+    "fullBrowserSmoke": "PASS in authorized system Chrome: 1,027/1,027 traversal; A-7-8 four steps, accessible SVG, keyboard focus and 320/375/768 widths passed",
+    "browserEnvironment": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3; Playwright 1.58.0; Chromium revision 1208; formal workbench URL returned HTTP 200",
+    "axe": "PASS: axe-core 30 runs including A-7-8 at 320/375/768; 0 violations, 0 incomplete"
+  },
+  "releaseGates": {
+    "lessonReviewStatus": "draft",
+    "publisherSlots": "all three remain pending; shared/official index materials do not establish full publisher chapter review",
+    "thirdPartyAuthenticityAndRights": "unverified",
+    "independentHumanOrTeacherReview": "not performed; project has no human reviewer",
+    "contentReview": "not approved by this structural/runtime report",
+    "specQaStatus": "untested"
+  },
+  "nonActions": [
+    "Did not rerun or rewrite the already-passing public-exam question source ledger.",
+    "Did not rewrite A-7-2 or A-7-7, whose unit-specific substantive-fusion work was already recorded.",
+    "Did not promote lesson/spec status, commit, push, or delegate work."
+  ]
+}

@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-3-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-3／理解簡易英文標示」notice for the bus stop, item 6: “The talk begins at 2:30.” What does it tell people?",
+  "prompt": "A school notice says: 'For the class art display, use the labeled paper-recycling bin; plastic wrappers go in the general-waste bin.' Which student follows the notice?",
   "options": [
     {
       "id": "A",
-      "text": "For item 6 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk starts at 2:30."
+      "text": "Mina puts a clean paper worksheet in the labeled bin."
     },
     {
       "id": "B",
-      "text": "For item 6 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk ends at 2:30."
+      "text": "Leo puts a plastic wrapper in the paper bin."
     },
     {
       "id": "C",
-      "text": "For item 6 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk is held at the bus stop."
+      "text": "Annie mixes a paper cup with food scraps in the labeled bin."
     },
     {
       "id": "D",
-      "text": "For item 6 in the 3-Ⅳ-3／理解簡易英文標示 notice, The talk is cancelled every day."
+      "text": "Ben ignores the labels because all bins are the same."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-3／理解簡易英文標示, question 6."
+    "explanation": "The notice classifies clean paper separately from plastic wrappers and other waste. A places a paper worksheet in the matching bin; the other choices mix materials or ignore the sorting rule."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675415417654MTSxFV3o.pdf",
+    "sourceLocator": "臺北市立內湖國中111學年度第一學期七年級第二次段考英文試題卷；PDF第3頁第35題：依活動規則辨認違規行為。本題依題型與推理能力重新創作，不複製原題、選項、圖像或答案。",
+    "authoringNote": "原創題幹與選項；僅將公立學校公開試題作為題型與推理能力參照。答案、策略及逐步解說為本題獨立撰寫；保持draft，未執行Terra複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675415417654MTSxFV3o.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期七年級第二次段考英文試題卷",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "PDF第3頁第35題：依活動規則辨認違規行為",
+      "observedPattern": "題目需從規則文字辨認違規行為，或把表格營業時段與當下星期、時間交叉核對；本題使用新場館和新數值。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先找分類標籤，再逐項比對物品材質與限制條件；注意題目是否限定乾淨、可回收或特定容器。",
+  "solutionSteps": [
+    "讀出兩條分類規則：紙類進標示的紙回收桶，塑膠包裝進一般垃圾桶。",
+    "逐一確認物品材質；worksheet 是紙，且題幹沒有說它沾污。",
+    "Mina把紙張投入紙類桶，符合標示。",
+    "Leo放錯材質，Annie把混合廢棄物放進去，Ben則完全不看分類標籤。",
+    "答案選A；實際分類時若物品沾有食物或材質複合，先查詢校方規則。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-7-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with help with the task at the bus stop?” B: “___” (「3-Ⅳ-7／理解對話主要內容」practice, 15:00)",
+  "prompt": "A: I found a voice recorder inside a cracked plastic case.\nB: The case is damaged, so please place it on the repair desk. Don’t leave it in the equipment cabinet.\nWhat does the first ‘it’ in B’s reply refer to?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with help with the task at the bus stop in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "The voice recorder."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the bus stop in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "The repair desk."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the bus stop last year in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "The equipment cabinet."
     },
     {
       "id": "D",
-      "text": "No, the weather at the bus stop is sunny in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "The plastic case."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,49 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 3-Ⅳ-7／理解對話主要內容, item 7. This item targets 3-Ⅳ-7／理解對話主要內容, question 7."
+    "value": "D",
+    "explanation": "正確答案 D。緊接在第一個 it 前的主題是 cracked plastic case，且 damaged 正是要送修的理由，所以請放到維修桌的是外殼。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C-1%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87-%E8%A9%A6%E9%A1%8C%2B%E7%AD%94%E6%A1%88%E5%8D%B7_1.pdf",
+    "sourceLocator": "依公立國中英文段考中對話主旨、時間地點、請求、順序、態度、建議、指代與行動推論的公開命題模式獨立改寫；逐題原卷題號列於 examPatternRefs。",
+    "authoringNote": "本題情境、對話、選項、答案與繁中解析均依 3-Ⅳ-7 能力獨立重寫；公開試題僅作可追溯 pattern-only 參照，不複製原文或選項。完整內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-7"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C-1%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87-%E8%A9%A6%E9%A1%8C%2B%E7%AD%94%E6%A1%88%E5%8D%B7_1.pdf",
+      "title": "高雄市立國昌國中108學年度第2學期一年級第2次定期評量英文",
+      "year": "108-2",
+      "subject": "english",
+      "locator": "第36題：依前文人物與物件內容判斷 it 的指涉",
+      "locatorLevel": "item",
+      "observedPattern": "直接參照以先行詞及上下文線索解析代名詞指涉。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%B8%89%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E8%AA%9E%E7%A7%91_5.pdf",
+      "title": "高雄市立國昌國中112學年度第2學期三年級第2次段考英文",
+      "year": "112-2",
+      "subject": "english",
+      "locator": "第35題：回看前段交通系統說明，判斷代名詞 It 指稱何者",
+      "locatorLevel": "item",
+      "observedPattern": "參照先行詞與語意一致性並用的指代判讀。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "追蹤代名詞時同時檢查最近的名詞、語意特徵與後續動作，不只靠距離猜。",
+  "solutionSteps": [
+    "標記第一個 it 的位置：B 說 The case is damaged, so please place it...。",
+    "向前找候選名詞：voice recorder 與 plastic case 都是單數。",
+    "利用 damaged 判斷哪個物件需要修理，線索指向外殼。",
+    "後續 place it on the repair desk 也符合送修外殼；錄音機本身沒有被說明損壞。",
+    "回代成 please place the plastic case on the repair desk，確認句意連貫且沒有和第二個 it 混淆。"
+  ]
 }

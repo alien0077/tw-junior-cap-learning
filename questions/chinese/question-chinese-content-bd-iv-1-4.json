@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bd-iv-1-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀或表達涉及「Bd-Ⅳ-1：事實理論為論據達說服建構批判」的材料時，針對判斷證據，哪一項最恰當？",
+  "prompt": "主張『試辦安靜區能提升所有學生專注力』，但證據只有一班一週的自評問卷。最主要的問題是？",
   "options": [
     {
       "id": "A",
-      "text": "只看熟悉的關鍵字或答案位置，不閱讀題目條件。"
+      "text": "證據樣本與時間太小，且自評未必能代表所有學生的專注力"
     },
     {
       "id": "B",
-      "text": "把與本單元無關的資訊當成唯一依據，跳過比較。"
+      "text": "問卷一定不能使用"
     },
     {
       "id": "C",
-      "text": "不檢查限制、證據或資料，就直接依直覺作答。"
+      "text": "所有學生一定不專心"
     },
     {
       "id": "D",
-      "text": "根據題目提供的條件與「Bd-Ⅳ-1：事實理論為論據達說服建構批判」的核心概念，列出理由後再檢查結論。"
+      "text": "安靜區和專注力完全無關"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bd-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "本題聚焦「Bd-Ⅳ-1：事實理論為論據達說服建構批判」；正解要求使用題目條件、相關證據與可檢查的推理，其餘選項都省略了必要的判斷步驟。"
+    "value": "A",
+    "explanation": "一班一週自評不能直接外推到所有學生，也可能受主觀感受與其他因素影響。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
-    "sourceLocator": "114學年度下學期第一次段考三年級各科試題公告；僅作公開題型與能力方向研究，本題為單元化獨立改編，非原題重製。",
-    "authoringNote": "Duplicate/template replacement; requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究事實、理論、價值主張、論據、外推與反例。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫論證與批判題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bd-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bd-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "論點、事實與論據判讀",
+      "observedPattern": "公立學校國文評量要求區分事實、理論與價值主張，檢查論據與結論的連結、範圍和反例；本題使用全新校園提案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "說服結構、證據與推論",
+      "observedPattern": "公立學校國文評量要求區分事實、理論與價值主張，檢查論據與結論的連結、範圍和反例；本題使用全新校園提案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較證據的樣本、時間、測量方式和主張範圍。",
+  "solutionSteps": [
+    "標出一班、一週與自評。",
+    "再看結論擴大到所有學生。",
+    "指出測量可能受主觀感受影響。",
+    "A 能完整指出外推與測量限制。",
+    "提出多班、多週和行為指標的補充方案。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

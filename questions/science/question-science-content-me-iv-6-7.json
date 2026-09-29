@@ -2,23 +2,23 @@
   "id": "question-science-content-me-iv-6-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年6月29日社區環境站的觀察中，連續觀察「Me-Ⅳ-6：污染物與生物放大」5 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "要驗證營養階層濃度是否上升，哪項設計最有力？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Me-Ⅳ-6：污染物與生物放大」時只依樣本的顏色（未記錄9天的時間與條件）"
+      "text": "只測一次最高階一尾生物"
     },
     {
       "id": "B",
-      "text": "連續9天研究「Me-Ⅳ-6：污染物與生物放大」並記錄到樣本穩定進行物質交換"
+      "text": "只選最高數值的樣本"
     },
     {
       "id": "C",
-      "text": "研究「Me-Ⅳ-6：污染物與生物放大」時只依樣本的名稱推測，不進行觀察"
+      "text": "把不同污染物混在同一張表"
     },
     {
       "id": "D",
-      "text": "研究「Me-Ⅳ-6：污染物與生物放大」時只觀察一次外形，便排除所有其他證據"
+      "text": "在同水域相近時間測各營養階層，統一組織與單位並增加樣本和重複"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Me-Ⅳ-6：污染物與生物放大」。"
+    "value": "D",
+    "explanation": "相同空間、時間、分析基準與足夠樣本可減少替代解釋，讓階層趨勢較能被檢查；單一極端值不代表族群。 正確答案為選項 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E7%90%86%E5%8C%96%E7%A7%91_2.pdf",
+    "sourceLocator": "三筆公立學校／公開生態自然科資料的食物鏈、污染物傳遞、生物累積、生物放大、資料單位與環境決策能力方向；本題為 Me-Ⅳ-6 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-me-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-me-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E7%90%86%E5%8C%96%E7%A7%91_2.pdf",
+      "title": "高雄市立國昌國民中學公開理化科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "食物鏈、污染物傳遞、生物累積與環境決策",
+      "observedPattern": "取公立學校公開題型對食物鏈、污染物和證據判讀的能力方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "環境因子、生態調查、食物關係與資料推論",
+      "observedPattern": "取公立國中自然科對食物關係、污染與資料限制的能力方向，另寫湖泊案例。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://market.cloud.edu.tw/resources/web/1807720",
+      "title": "教育雲國中生態與環境教學資源",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "生態系、食物鏈、污染物與保育應用",
+      "observedPattern": "取公開教學資源對生態關係、環境觀察和行動方案的能力方向，未重製內容。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先畫食物網和取樣表，再統一基準、設定樣本與重複，最後比較平均與變異及其限制。",
+  "solutionSteps": [
+    "畫出食物關係並標示環境濃度或體內濃度。",
+    "核對物種、營養階層、組織、單位、時間與污染物特性。",
+    "分辨生物累積、營養階層放大、相關與健康風險的不同問題。",
+    "排除把檢出直接等同危害、忽略混淆變因或過度外推的選項，答案為 D。",
+    "把結論寫成有證據範圍的句子並列出補測資料：相同空間、時間、分析基準與足夠樣本可減少替代解釋，讓階層趨勢較能被檢查；單一極端值不代表族群。"
+  ]
 }

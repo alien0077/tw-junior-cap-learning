@@ -2,41 +2,84 @@
   "id": "question-math-performance-n-iv-4-3",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 y 與 x 成正比，且 x＝3 時 y＝12，則 x＝7 時 y 為何？",
+  "prompt": "若 x/18=4/6，則 x 為何？",
   "options": [
     {
       "id": "A",
-      "text": "28"
+      "text": "6"
     },
     {
       "id": "B",
-      "text": "36"
+      "text": "9"
     },
     {
       "id": "C",
-      "text": "21"
+      "text": "12"
     },
     {
       "id": "D",
-      "text": "24"
+      "text": "15"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-n-iv-4"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "正比係數 k＝12/3＝4，所以 x＝7 時 y＝4×7＝28。"
+    "value": "C",
+    "explanation": "4/6=2/3，所以 x=18×2/3=12，正確答案為 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考比、比例、正比、反比、連比、比例尺與生活情境題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "比比例正反比與連比單元實質改寫；已重新計算最簡比、比例分配、正反比、連比、比例尺、單位換算與情境答案，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供比比例與正反比能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數與量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "比與比值、比例式、正比、反比、連比、地圖比例尺與分配情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常將比例放入地圖、分配、速度或數量關係，要求約分、列比例式、辨認正反比與轉換尺度；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "比與比值、比例式、正比、反比、連比、地圖比例尺與分配情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常將比例放入地圖、分配、速度或數量關係，要求約分、列比例式、辨認正反比與轉換尺度；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "比與比值、比例式、正比、反比、連比、地圖比例尺與分配情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常將比例放入地圖、分配、速度或數量關係，要求約分、列比例式、辨認正反比與轉換尺度；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先約分比例，再用交叉或乘法求未知量。",
+  "solutionSteps": [
+    "將 4/6 約成 2/3。",
+    "得到 x/18=2/3。",
+    "兩邊乘以 18。",
+    "計算 x=18×2/3=12。",
+    "所以選 C。"
+  ]
 }

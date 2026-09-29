@@ -53,8 +53,8 @@
       "publisher": "nani",
       "edition": "南一國中自然公開可取得資料（電化學相關線索）",
       "sourceType": "local-download",
-      "sourceLocator": "/private/tmp/tw-junior-version-sources-20260830/nani-science-fb-pdftotext.txt 第 58 行；未取得 Jc-Ⅳ-6 國中章節全文。",
-      "reviewedAt": "2026-08-31",
+      "sourceLocator": "https://www.nani.com.tw/；/private/tmp/tw-junior-version-sources-20260830/nani-science-fb-pdftotext.txt 第 58 行；未取得 Jc-Ⅳ-6 國中章節全文。",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "可取得線索把電池放在氧化還原與化學能轉換的脈絡，提示反應方向是理解電池的入口。",
@@ -79,8 +79,8 @@
       "publisher": "kanghsuan",
       "edition": "康軒國中自然公開影音索引",
       "sourceType": "local-download",
-      "sourceLocator": "/private/tmp/tw-junior-version-sources-20260829/science-knsh-public.xml；9 下第 1 章「電的應用」列有「實驗 1‧3 製作鋅銅電池」與「1‧3 濾紙電池」，但未提供 Jc-Ⅳ-6 章節全文。",
-      "reviewedAt": "2026-08-31",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；/private/tmp/tw-junior-version-sources-20260829/science-knsh-public.xml；9 下第 1 章「電的應用」列有「實驗 1‧3 製作鋅銅電池」與「1‧3 濾紙電池」，但未提供 Jc-Ⅳ-6 章節全文。",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "公開 XML 可核對以電池製作與觀察作為自然科活動入口，能連到電極、電解質與化學能轉電能。",
@@ -106,7 +106,7 @@
       "edition": "翰林國中自然公開資料查核紀錄",
       "sourceType": "public-web",
       "sourceLocator": "https://www.hanlin.com.tw/；截至 2026-08-31 本機未取得可核對 Jc-Ⅳ-6 的章節／頁碼內容。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "本次查核沒有足夠翰林 Jc-Ⅳ-6 正文可供逐段融合，不能把網站概述外推為版本教學細節。",
@@ -130,68 +130,73 @@
   ],
   "fusionRecord": {
     "commonCore": [
-      "化學電池以氧化還原反應為核心，放電時把反應釋放的化學能轉成外電路可用的電能。",
-      "電子主要沿外電路移動，離子在電解質與電池內部維持電荷平衡，電極與電解質缺一不可。",
-      "充電不是單純把電子塞回去，而是外加電源輸入能量，使可逆系統的反應方向改變並恢復部分反應物。"
+      "化學電池以氧化還原反應把化學能轉成電能，外電路傳遞電子，電解質傳遞離子。",
+      "放電與充電的能量方向和反應方向相反，但充電不一定完全恢復且可能有損耗。",
+      "電壓、容量、速率與安全是不同的電池評估指標。"
     ],
     "versionDifferences": [
-      "南一目前只有電化學相關公開文字線索；康軒可核對公開影音索引中的鋅銅電池與濾紙電池活動；翰林本次未取得 Jc-Ⅳ-6 可核對正文，因此不能誇大三家完整章節差異。"
+      "南一公開線索支持由電池現象與電路進入化學能轉電能。",
+      "康軒公開課程資料較突出電極、電解質與氧化還原操作。",
+      "翰林公開課程計畫補充放電／充電、電解與生活科技連結；公開資料不足以宣稱取得完整教材內容。"
     ],
     "originalAdditions": [
-      "以同一電池先接負載放電、再接指定外電源充電的雙向時間線，讓學習者比較能量、電子與離子方向。",
-      "設計開路／閉路、不同負載、充電電壓與溫度的控制資料，要求先預測再以曲線和限制修正結論。",
-      "加入一次電池可否充電、充電器極性、過度充電升溫與容量衰減的生活遷移判斷，並明確標示安全邊界。"
+      "以電子外電路、離子內電解質和能量箭頭拆解電池機制。",
+    "把可充電電池的電壓／容量區分、異常膨脹安全處置納入單元專屬遷移。",
+    "比較放電與充電時電極反應方向、外電路電流和端電壓變化，並用容量測試而非單次電壓判斷剩餘電量；膨脹電池停止使用並依規定回收。"
     ],
-    "llmSynthesisNote": "本課依官方課綱與 KG 確認的 Jc-Ⅳ-6 主題，讀取目前可取得的南一公開文字線索、康軒公開影音 XML 索引與翰林公開查核結果後，以可取得範圍為界獨立融合；三家本單元完整教材並未全部取得，故研究限制、原創推導與未完成的 AI 內容複核均明確保留，未啟動 Terra，lesson 維持 draft。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公開試題／課程資料能力方向，重新撰寫化學電池放電、充電、電極、電解質、資料判讀與安全；未複製教材或試題文字、圖表與答案，Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一國中自然公開可取得資料（電化學相關線索）",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "本機快取 /private/tmp/tw-junior-version-sources-20260830/nani-science-fb-pdftotext.txt 第 58 行；未取得 Jc-Ⅳ-6 國中章節全文。",
-      "sourceUrl": "https://www.nani.com.tw/",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Jc-Ⅳ-6：化學電池的放電與充電 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
-      "researchScope": [
-        "concept-progression",
-        "assessment-pattern"
-      ],
-      "outcome": "可取得文字線索支持電化學、電池能量轉換與充放電判讀的研究方向，但不足以核對南一本單元完整順序；本課不把線索擴寫成出版社正文，改以課綱概念與自編資料補足。",
-      "copyrightBoundary": "僅研究公開文字線索與概念定位，不複製南一正文、圖表、題目、答案或解析；本課所有課文、案例、互動與回饋均獨立撰寫。"
-    },
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音資源",
-      "subject": "science",
-      "chapterLocator": "公開自然影音索引；可定位 9 下第 1 章「電的應用」的製作鋅銅電池與濾紙電池資源，但未取得 Jc-Ⅳ-6 章節全文。",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
-      "access": "public-open",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "索引可核對以電池製作與觀察活動連結電的應用，但不足以宣稱完整充放電概念順序；本課自行建立放電／充電反向能量模型與曲線判讀。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Jc-Ⅳ-6：化學電池的放電與充電」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開資料查核紀錄",
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "翰林公開網站查核至 2026-08-31；本機未取得可核對 Jc-Ⅳ-6 的章節／頁碼內容。",
-      "sourceUrl": "https://www.hanlin.com.tw/",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Jc-Ⅳ-6：化學電池的放電與充電 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
+        "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "本次沒有足夠翰林 Jc-Ⅳ-6 正文可逐段融合，不能把其他單元或網站概述冒充本課版本資料；因此只採官方課綱確認的充放電主題，並明確保留來源不足與 draft 限制。",
-      "copyrightBoundary": "僅記錄公開查核結果與取得限制，不複製翰林教材文字、圖像、題目或答案；本課正文、例證、互動選項與資料皆自行撰寫。"
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Jc-Ⅳ-6：化學電池的放電與充電」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Jc-Ⅳ-6：化學電池的放電與充電 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Jc-Ⅳ-6：化學電池的放電與充電」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -255,7 +260,7 @@
     ]
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "比較化學電池放電與充電的反應方向、電子／離子流向與能量轉換，並用控制資料判讀電池狀態。",
@@ -307,6 +312,17 @@
         ],
         "answer": "A",
         "feedback": "資料支持有條件的結論；電壓、容量與壽命是不同量，需控制變因和重複循環才能比較。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "若充電時極性接反且溫度快速上升，應如何處理模型與實驗判讀？",
+        "options": [
+          "立即停止虛擬充電、記錄極性與溫度警訊，不能把端電壓變化當成正常容量恢復",
+          "提高充電電壓讓反應更快，因為溫度上升代表效率更高",
+          "只要最後端電壓變高，就可忽略極性與安全條件"
+        ],
+        "answer": "A",
+        "feedback": "極性與溫升是充電安全和反應方向的重要條件；先停機並保留警訊，才能避免把異常狀態誤判為成功充電。"
       }
     ]
   },
@@ -318,7 +334,42 @@
     "model": "general",
     "goal": "比較化學電池放電與充電的反應方向、電子／離子流向與能量轉換，並用控制資料判讀電池狀態。",
     "mission": "操作自編可充電電池模型：先接負載放電，再依指定極性接外部電源充電；每次先預測端電壓、電流與溫度，再用粒子箭頭和資料限制解釋。",
-    "learningDesign":{"type":"rechargeable-cell-cycle","objective":"以放電、充電電流與溫度資料追蹤可逆化學能轉換及安全限制。","predictionPrompt":"充電時外加電源極性反接，端電壓與溫度可能出現什麼警訊？","steps":[{"action":"記錄放電時端電壓、電流與負載功率","equation":"power=voltage\u00d7current"},{"action":"依指定極性充電並追蹤粒子方向與溫升","equation":"stored=electrical\u002dto\u002dchemical"},{"action":"比較充放電效率並標示模型與真實電池差異","equation":"efficiency=output/input"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以放電、充電電流與溫度資料追蹤可逆化學能轉換及安全限制。",
+      "predictionPrompt": "充電時外加電源極性反接，端電壓與溫度可能出現什麼警訊？",
+      "steps": [
+        {
+          "action": "記錄放電時端電壓、電流與負載功率",
+          "equation": "power=voltage×current",
+          "id": "step-1",
+          "reason": "本步把「記錄放電時端電壓、電流與負載功率」和「power=voltage×current」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「記錄放電時端電壓、電流與負載功率」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "依指定極性充電並追蹤粒子方向與溫升",
+          "equation": "stored=electrical-to-chemical",
+          "id": "step-2",
+          "reason": "本步把「依指定極性充電並追蹤粒子方向與溫升」和「stored=electrical-to-chemical」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「依指定極性充電並追蹤粒子方向與溫升」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "比較充放電效率並標示模型與真實電池差異",
+          "equation": "efficiency=output/input",
+          "id": "step-3",
+          "reason": "本步把「比較充放電效率並標示模型與真實電池差異」和「efficiency=output/input」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「比較充放電效率並標示模型與真實電池差異」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "切換正確與反接充電情境，依端電壓、電流、溫升和放電容量設定安全停損",
+          "equation": "safeCharge=polarity+temperature+capacity+limit",
+          "id": "step-4",
+          "reason": "本步把「切換正確與反接充電情境，依端電壓、電流、溫升和放電容量設定安全停損」和「safeCharge=polarity+temperature+capacity+limit」連結，將反應方向、可用容量與安全警訊分開判讀。",
+          "feedback": "若只比較充電後電壓，請補上極性、溫度與固定負載放電時間；任何安全門檻超標都應停止並保留資料，而不是提高電壓硬做。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以放電、充電電流與溫度資料追蹤可逆化學能轉換及安全限制。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

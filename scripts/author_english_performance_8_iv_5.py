@@ -1,0 +1,62 @@
+#!/usr/bin/env python3
+"""Author the missing English 8-IV-5 manuscript without rewriting registered units."""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON_ID = "lesson-english-performance-8-iv-5"
+LESSON_PATH = ROOT / "lessons/english/lesson-english-performance-8-iv-5.json"
+CURRICULUM_URL = "https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf"
+HANLIN_PLAN = "https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf"
+KANGHSUAN_PLAN = "https://course.cyc.edu.tw/upfile/course112/sub1/15342166894673419.pdf"
+NANI_CONTEXT = "https://course.cyc.edu.tw/upfile/course113/sub1/15636172843290327.pdf"
+UNESCO_GCED = "https://www.unesco.org/en/global-citizenship-peace-education/need-know?hub=84606"
+
+SECTIONS = [
+    ("世界觀不是背國名，而是看見連結", "8-Ⅳ-5「能具有基本的世界觀」不是要求你背出更多國旗或把國家排高低。課綱把它放在文化理解領域，並在C-Ⅳ-4標示「基本的世界觀」；讀一則英文資料時，真正要練的是把地點、人物、資源、制度或環境放進同一張關係圖，分清楚來源說了什麼、誰受到影響、還有哪些地方不知道。UNESCO談全球公民教育時，也把地方、國家與全球的互相連結、不同觀點和負責任行動並列。這堂課因此從「連結與證據」開始，不從抽象的好人宣言開始。"),
+    ("先定位尺度：一張地圖能說到哪裡", "看地圖先找圖例、方向、比例尺與標示時間，再指出它直接呈現的空間關係。兩座城隔著同一條河，地圖可以支持「它們共享一項地理特徵」；若沒有交通流量或訪談，不能接著宣稱居民往來頻繁、文化相同或彼此隔絕。把結論分成三層：圖上直接看得到的、需要第二份資料才可推論的、目前不能知道的。這不是把答案說小，而是讓主張的大小配得上證據。地圖比例尺一變，細節和可回答的問題也會跟著變。"),
+    ("不同時間與不同人的資料，不要混成一種聲音", "同一個全球議題可能同時出現在統計圖、新聞、地方居民訪談與政府公告裡；它們的時間、對象和目的未必相同。先記下每份資料的作者或機構、日期、地點、衡量對象，再找能共同比較的欄位。數字上升不自動說明原因，某位居民的經驗也不能代表所有居民。若兩份資料看起來矛盾，先檢查它們是否談同一地區、同一時段與同一尺度；很多「矛盾」其實是問題不同。英文閱讀時可用 *The chart shows…*、*One resident reports…* 和 *The source does not tell us…* 分開事實、個人觀點與未知。"),
+    ("把零散資訊接成系統，再檢查因果", "以一件日常用品為例，設計地可能在一處、原料來自另一處、組裝又在第三處；這個情境讓我們看見分工與跨地連結，但不代表每件商品都走同一條路。若要談影響，就把可能的鏈條逐段列出：原料與製程、運輸、購買使用、回收或廢棄。每一箭頭都要問「哪份資料支持這個因果？」不能只因兩件事同時出現就說前者造成後者。把地圖上的路線、表格中的數值和文本中的說明互相核對，能避免只靠一個吸睛數字建構整個世界。"),
+    ("示範：比較一個工程的好處與代價", "假設一篇自編短文記錄某地新建能源設施：它提供電力，但地方居民表示河岸通行方式改變。只讀第一句會把故事縮成「新工程一定有益」；只讀第二句又可能把它縮成「工程只有傷害」。先標出兩項明載結果，再追問：資料涵蓋哪些家庭？觀察期間多久？有沒有其他能源、健康或生計資料？目前證據支持「同一項改變帶來不同影響」，還不足以計算整體利弊。若英文題問最合理結論，選同時保留已知效益、地方代價和資訊限制的選項，而不是替作者補上沒有提供的數據。"),
+    ("練習：用四格把證據與立場拆開", "讀題後畫四格：來源與日期、直接資訊、受影響的人／地點、還缺的證據。再試著用一句英文寫 *The report states…*，下一句用 *This may affect…* 表示推論，最後以 *We need more information about…* 指出限制。逐一檢查：有沒有把一個人說成所有人？有沒有把相關性當因果？有沒有用單一城市推論整個國家？有沒有忽略資料沒有涵蓋的群體？錯誤選項常把語氣說得很肯定，卻跨過來源的時間、地點或樣本邊界。圈出越界詞，再回原文找不到支持的地方。"),
+    ("遷移：從校園問題提出可查證的小行動", "選一個與校園生活相連、又牽涉更大系統的問題，例如午餐剩食或用品回收。先界定要問的範圍，蒐集一週可重複記錄的資料，再查一份可靠的外部來源；不把班級數字說成全臺或全球現況。比較不同角色的需求後，提出一項可實施、可回頭檢查的行動，並說明它可能改善什麼、不能單靠它解決什麼。世界觀不是替每個全球問題立刻找到單一答案，而是能把在地觀察接上更大的脈絡，公平地聽見不同位置的人，並對自己的主張負責。"),
+]
+
+INTERACTIVE = [
+    {"id": "step-1", "prompt": "A map places City A and City B on opposite sides of one river. What is directly supported?", "text": "先分辨地圖上的空間標示與你想像的生活關係。", "options": ["The cities share a geographic feature.", "Residents have the same culture.", "People cross the river every day."], "answer": "A", "retryHint": "回到地圖上可直接看到的標示；它沒有記錄居民習慣或交通頻率。", "feedback": "選A。河流位置是地圖直接呈現的；文化與往來頻率需要其他來源。"},
+    {"id": "step-2", "prompt": "A chart covers one town in 2024; one interview describes a family's experience in 2025. What is the fairest comparison?", "text": "比較前先核對資料的地點、時間與代表範圍。", "options": ["The two sources describe different scopes and dates, so compare cautiously.", "The interview proves the chart is false.", "The chart represents every family in the country."], "answer": "A", "retryHint": "哪個選項保留了兩份資料的時間和對象差異？", "feedback": "選A。單一訪談不能推翻不同時段的全鎮統計，也不能把統計擴大成每個家庭。"},
+    {"id": "step-3", "prompt": "A new energy project supplies electricity, while local residents report changed river access. Which conclusion fits both statements?", "text": "保留同一事件的多面影響，不替資料補出未提供的總評。", "options": ["The project has a benefit and a reported local cost; more evidence is needed for an overall judgment.", "Everyone benefits equally.", "The project has no value."], "answer": "A", "retryHint": "找出能同時保留電力效益、地方回報與尚缺整體評估的說法。", "feedback": "選A。兩項陳述支持多面影響，但不足以證明所有人受益或工程毫無價值。"},
+    {"id": "step-4", "prompt": "Your class measures leftover lunches for one week. What can you responsibly report?", "text": "讓主張範圍符合樣本，並提出下一步查證。", "options": ["Our class recorded this amount during this week; we need more groups and dates to generalize.", "This proves all schools waste the same amount.", "The result explains why global hunger happens."], "answer": "A", "retryHint": "資料只來自哪個班、哪一週？哪個結論沒有超出這個範圍？", "feedback": "選A。班級一週的測量能描述該次觀察，不能代表所有學校或證明全球飢餓的成因。"},
+]
+
+RESEARCH = [
+    {"publisher": "hanlin", "edition": "永慶高中國中部114學年度七年級翰林版第1-2冊校方計畫；跨年級世界主題教學線索", "sourceType": "public-web", "sourceLocator": "公開校方課程計畫PDF pp.58-60及pp.98-101：世界地標／旅遊文本、地點搜尋、來源查詢、預測後回文確認與時間線整理；不是本單元指定課本全文。", "reviewedAt": "2026-09-29", "findings": {"concepts": ["將英語閱讀放進具體的跨地區場所與生活情境，而不是只列國名。", "先形成預測，再用閱讀細節修正；不同資料可用時間線或比較表整理。"], "representations": ["課程計畫可讀到場所、課次及教學活動線索，無法確認課本實際全文或單元頁序。"], "examplesOrEvidence": ["校方計畫把印度旅遊、交通、景點和飲品連到臺灣經驗，並要求搜尋資料再以英文分享。"], "misconceptions": ["一個旅遊文本或單一景點不能代表整個國家的所有生活。"], "assessmentEmphasis": ["預測需回到文本核對，跨地比較要保留來源與地點。"]}, "licenseBoundary": "僅使用公開校方課程計畫中可讀的教學取徑與定位；不重製翰林課文、題目、圖片、音檔或版面，且不冒稱指定課本全文已取得。"},
+    {"publisher": "kanghsuan", "edition": "大吉國中公開英語教學計畫所列Lesson 6 What Are You Doing?；版本標示與指定課本版本未能在該定位獨立核實", "sourceType": "public-web", "sourceLocator": "公校課程計畫PDF pp.48-52：現在進行式描述、What time/What day及英-J-C3/C-Ⅳ-4基本世界觀並列；可見教學以情境引題、對話／閱讀與口說練習，非出版社完整章節。", "reviewedAt": "2026-09-29", "findings": {"concepts": ["透過日常時間、人物活動與簡短對話讓抽象的世界觀連到生活交流。", "描述正在發生的事需依人物、時間及動作線索組合語言。"], "representations": ["課程計畫列出課次與目標，但此份可讀定位不能證明出版社版次或課本全文。"], "examplesOrEvidence": ["What Are You Doing?與時間／星期問答作為生活對話脈絡；本稿只採用以具體事件承載抽象議題的教法。"], "misconceptions": ["把單一人物或一次活動擴大成整個地方／國家的固定樣貌。"], "assessmentEmphasis": ["口語描述與閱讀理解並用，檢查學生是否依情境線索而非背誦作答。"]}, "licenseBoundary": "只摘錄校方計畫中可核讀的課次與教學策略；版本標籤未獨立核實，故不計為出版社指定章節證據，也不複製課本內容。"},
+    {"publisher": "nani", "edition": "大吉國中113學年度英語課程計畫彙編中的世界／環境學習線索；出版社標籤未由目前可讀節錄核實", "sourceType": "public-web", "sourceLocator": "公開計畫PDF pp.112-125：可讀到不同主題的閱讀預測、資訊搜尋、因果釐清與C-Ⅳ-4基本世界觀；單元與出版商對應尚不能由該節錄確認。", "reviewedAt": "2026-09-29", "findings": {"concepts": ["將背景知識、資料搜尋與文本閱讀連用，讓學生從主題材料取得新知。", "區分可見資訊與因果推論，並用不同來源擴充原本理解。"], "representations": ["公開PDF節錄顯示頁碼、教學活動和課綱代碼，卻未在該定位確認出版社版次。"], "examplesOrEvidence": ["計畫描述以圖片預測、閱讀後修正預測、比較資訊並連結生活情境的步驟。"], "misconceptions": ["把一次預測當成事實，不回文或不核對外部資訊。"], "assessmentEmphasis": ["以文本理解、資料查找、比較及因果推理作為學習活動。"]}, "licenseBoundary": "這是校方課程計畫而非教材正文；因版本標籤無法核實，只作校方教學線索，不計出版社章節已讀，也不複製其題例或教材。"},
+]
+
+FUSION = {"commonCore": ["以世界觀理解地方、國家與全球尺度之間的互相連結，不能只累積國名或地標。", "閱讀時須分辨直接證據、不同角色的觀點及尚未查證的推論。", "英語表達應標出來源、時間、地點和樣本範圍，避免以偏概全。"], "versionDifferences": ["目前讀到的是出版社標示的校方教學計畫片段：翰林線索偏跨地旅遊閱讀與預測修正；康軒標示仍待獨立核實的課程線索偏時間／人物生活對話；另一份校方計畫提供主題搜尋、因果推理方法。這些不是三家指定課本逐頁比對，出版社證據不完整且如實保留pending。"], "originalAdditions": ["用地圖尺度、日期、樣本與來源辨析可支持的主張，補上證據限制。", "以跨地產品鏈及能源設施的多方影響示範因果鏈和角色觀點，不冒稱真實個案數據。", "把全球議題遷移為校園可測量的小型資料蒐集與可回頭檢查的行動。"], "llmSynthesisNote": "以官方英語課綱8-Ⅳ-5/C-Ⅳ-4和KG為主軸，實讀可取得的出版社標示公校課程計畫節錄，分辨跨地閱讀、日常對話和主題搜尋等不同教學入口，再以來源尺度、系統關聯、觀點與倫理行動重寫成七段原創課文。現有校案不是三家指定課本全文，康軒／南一版次標籤亦未能在所引節錄完全核實；故不聲稱逐頁融合，publisher evidence維持pending。教材與題目維持draft，交由使用者ChatGPT審查。"}
+
+def main() -> None:
+    lesson = json.loads(LESSON_PATH.read_text(encoding="utf-8"))
+    lesson["title"] = "8-Ⅳ-5：從在地線索理解彼此相連的世界"
+    lesson["content"] = {"summary": "運用地圖、文本、數據與不同角色觀點理解地方—國家—全球的連結，並讓結論範圍符合證據。", "sections": [{"heading": h, "body": b} for h, b in SECTIONS]}
+    lesson["studyReferences"] = [CURRICULUM_URL, HANLIN_PLAN, KANGHSUAN_PLAN, NANI_CONTEXT, UNESCO_GCED]
+    lesson["studyHighlights"] = ["世界觀重在地方、國家與全球的互相依存，而非國名與地標背誦。", "先核來源、時間、地點和樣本，再區分證據、觀點與推論。", "行動從在地可測量的問題開始，說明可能影響與解決界線。"]
+    lesson["versionResearch"] = RESEARCH
+    lesson["fusionRecord"] = FUSION
+    phases = ["hook", "explain", "explain", "worked-example", "worked-example", "guided-practice", "transfer"]
+    lesson["teaching"] = {"body": [{"id": f"section-{i+1}", "phase": phase, "heading": heading, "body": body} for i, ((heading, body), phase) in enumerate(zip(SECTIONS, phases))], "summary": ["以來源、尺度和樣本檢查一個全球主張能說到哪裡。", "連結不同地區與角色，但不把可能關係當成已證明的因果。", "用簡易英文指出資料、觀點和未知，再提出可檢驗的在地行動。"], "exitCheck": [{"prompt": "地圖標示兩座城市隔著河流，能直接支持什麼？", "expectedEvidence": "指出共同地理特徵；說明文化相同或往來頻率尚需其他資料。"}, {"prompt": "兩份資料的年份、樣本與地點不同，如何比較？", "expectedEvidence": "標示來源條件、找共同欄位並限制結論範圍。"}, {"prompt": "如何把校園資料連到更大的議題而不過度概括？", "expectedEvidence": "報告明確標出班級／時間範圍，提出補充資料與可檢查的行動。"}]}
+    lesson["interactive"] = {"type": "guided-choice", "goal": "依據地圖、來源尺度與多方影響辨認可支持的世界觀主張，並將結論限制在現有證據內。", "steps": INTERACTIVE}
+    lesson["authoringStandard"] = "version-fused-v1"
+    lesson["lessonScope"] = "learning-performance"
+    lesson["reviewStatus"] = "draft"
+    lesson["updatedAt"] = "2026-09-29"
+    lesson["publisherResearch"] = [{"publisher": row["publisher"], "edition": row["edition"], "subject": "english", "chapterLocator": row["sourceLocator"], "sourceUrl": {"hanlin": HANLIN_PLAN, "kanghsuan": KANGHSUAN_PLAN, "nani": NANI_CONTEXT}[row["publisher"]], "access": "public-open", "reviewedAt": row["reviewedAt"], "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"], "outcome": row["edition"] + "；校方計畫層級方法作為原創融合參照，非指定出版社章節全文；相應publisher evidence維持pending。", "copyrightBoundary": row["licenseBoundary"]} for row in RESEARCH]
+    LESSON_PATH.write_text(json.dumps(lesson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"Authored {LESSON_ID}: {len(SECTIONS)} unit-specific sections, {len(INTERACTIVE)} guided-choice steps; preserved existing 10 questions.")
+
+if __name__ == "__main__":
+    main()

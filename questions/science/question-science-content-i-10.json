@@ -2,23 +2,23 @@
   "id": "question-science-content-i-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年2月15日河川觀測站的觀察中，比較兩地「I：變動的地球」資料時，甲地迎風坡年雨量約 1820 mm、乙地背風坡約 1165 mm，最合理的做法是？",
+  "prompt": "某地區同時有淺層地震、火山帶與年輕褶皺山脈。若要提出板塊運動的初步解釋，哪項做法最適當？",
   "options": [
     {
       "id": "A",
-      "text": "在「I：變動的地球」中只看 1820 mm 的單一數值便下結論"
+      "text": "把三種現象分別視為互不相關，不需比較空間分布"
     },
     {
       "id": "B",
-      "text": "在「I：變動的地球」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "先比較三種現象的空間與時間分布，再與板塊邊界類型及其他地質資料交叉檢查"
     },
     {
       "id": "C",
-      "text": "在「I：變動的地球」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只要有火山就能確定是張裂型板塊邊界"
     },
     {
       "id": "D",
-      "text": "同時比較地形、風向、觀測期間與 1820、1165 mm 資料"
+      "text": "由一次地震的震度直接推導板塊全年移動距離"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「I：變動的地球」。"
+    "value": "B",
+    "explanation": "地震、火山與山脈的共同空間分布可提供板塊活動線索，但仍要比較資料、判斷邊界型態並用其他地質證據交叉驗證，不能由單一現象或一次事件直接下定論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的地震、火山、板塊、場址及資料判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 I 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-i"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-i",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "地震、火山、板塊運動與資料判讀",
+      "pattern": "取由震波、震央、震度、火山與地質構造資料推論地球變動的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由震波、震央、震度、火山與地質構造資料推論地球變動的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先整合地震、火山與地形的空間證據，再檢查板塊模型及仍需補充的資料。",
+  "solutionSteps": [
+    "列出三種現象及其位置、時間與尺度，確認題目要求的是板塊運動的初步解釋。",
+    "比較它們是否沿同一帶分布，以及是否與已知板塊邊界類型相符。",
+    "把空間關聯視為線索，再加入地震深度、岩性、GPS 或地質構造等資料交叉檢查。",
+    "排除 A 的分割證據、C 的單一現象過度判斷，以及 D 把一次震度當成長期位移。",
+    "因此 B 最符合資料判讀與證據界線。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

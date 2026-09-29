@@ -1,0 +1,159 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-7-1
+  knowledgeGraphIds:
+  - kg-math-content-a-7-1
+  title: A-7-1：代數符號
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  fusedScope:
+    officialCurriculum: A-7-1：代數符號
+    curriculumIntent: A-7-1：代數符號
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: source-informed-original-fusion-draft; publisher-full-chapter-review-and-rights-pending
+  learningGoals:
+  - 從飲品每瓶成本及一次性運送費建立 18b+40，解釋變數、係數和常數各自代表的量與單位。
+  - 以字母部分和次方辨認同類項，整理 3x+2+5x−7 為 8x−5，並說明數值測試不能取代運算律理由。
+  - 在 x=−2、0、3 比較原式與整理式；負數代入保留括號，再把同值檢驗遷移到含括號的新式。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 變數、係數與常數項分別代表可變量、每單位量與固定量；項的單位與量的意義必須一致。
+  - 同類項須有相同字母部分與相同次數；3x 與 5x 可合併，x 與常數 7 不可合併。
+  - 化簡前後的代數式在允許的變數值下表示同一數量關係，可用代入數值檢查等價性。
+  misconceptions:
+  - 把 4x+30 誤讀成 34x，將每張票的費用與一次性場地費當成同類項。
+  - 把 3x+2+5x−7 化成 8x+9，將常數項相加時忽略負號。
+  - 代入 x=−2 時把 8x−5 算成 8×2−5，丟失負數符號或括號。
+  contentFlow:
+  - 'hook: 飲料每瓶18元另收一次運送費40元；尚未決定瓶數時，先辨認哪些量會隨b改變。'
+  - 'activate-prerequisite: 以5m與5+m、m²與2m的語義對比，確認符號位置和次方閱讀。'
+  - 'predict: 比較3x+2+5x−7的候選整理式，先說明字母部分、次方與常數的分組準則。'
+  - 'manipulate: 調整同一個x滑桿，並列顯示原式與8x−5兩個數值輸出；提供x=−2、0、3固定測值表。'
+  - 'observe: 逐式代入x=−2，保留括號並核對兩條運算路徑是否同為−21。'
+  - 'explain: 用同類項條件說明3x與5x可併、常數2與−7另併，數值相等不是唯一理由。'
+  - 'formalize: 以交換、結合律重排，再用分配律處理括號；每一步標記所用性質。'
+  - 'guided-practice: 整理2(x+3)+x，寫出中間式2x+6+x，再得到3x+6並代入新值檢查。'
+  - 'transfer: 將圖書館開版費與每張印製成本組成120+3c，並用c=0檢查錯誤模型123c。'
+  - 'exit-ticket: 從錯誤解答找出被合併的非同類項，寫出修正式並代入檢核。'
+  visualizations:
+  - 同值輸出檢驗：滑桿x即時顯示3x+2+5x−7及8x−5的計算值；旁列x=−2、0、3的文字表格供無滑桿比較。
+  - 結構分類導讀：步驟面板說明字母部分、次方、係數和常數如何分類；不提供文件未實作的拖曳標籤。
+  - 負數代入：逐項顯示3(−2)+2+5(−2)−7與8(−2)−5都為−21，說明括號保留替換值。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-7-1-I01
+    component: EquivalentExpressionCheckBlock
+    purpose: 讓學生調整單一測試變數，比較原式與整理式輸出；再依同類項結構與運算律解釋結果，而不把有限測值誤當一般證明。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        x: -2
+    studentActions:
+    - 先按字母部分與次方分類3x、5x、2、−7，再選出整理式並說明常數分組。
+    - 以鍵盤調整x滑桿−5至5；每次變更後兩個輸出更新，焦點留在原控制項。
+    - 比較x=−2、0、3文字表格，逐項檢查原式和整理式的數值。
+    - 用括號代入負數，說明係數乘上整個負值後如何計算。
+    - 遷移至2(x+3)+x，依分配律展開、合併，再選新的x值作檢核。
+    visualRules:
+    - 滑桿輸入x改變時，原式值與整理式值同時更新並以文字宣告；兩式應始終相等。
+    - 靜態測值表需明列x、原式值、整理式值，作為無互動替代路徑。
+    - 每一個結論皆用符號與文字表達，不只靠顏色；負數代入使用括號。
+    - 提示明確指出多個測值是核對證據，不代替同類項及運算律的一般說明。
+    - 320px 窄螢幕可垂直閱讀表格與算式，焦點順序先情境、再操作、再結果與回饋。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-7-1-I01
+      trigger: 把3x與常數2合併，或把2−7寫成9。
+      prompt: 先比較字母部分與次方，再以x=−2核對你寫下的原式和整理式。
+      expectedEvidence: 3x與5x合併、常數2與−7合併，得8x−5；原式與整理式代入−2皆為−21。
+    feedback:
+      correct: 追問哪些項有相同字母部分與次方，再請學生以另一個輸入值重新比較兩式。
+      incorrect: 先提示將變數項和常數項分開，保留減號後重新合併；第二次仍錯才呈現一行推導，不直接把規則簡化成記憶答案。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只借用可操作模型與即時回饋的呈現方式；本課自編票券張數、單價與一次性場地費資料，並由代入驗證式子意義。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "參考預測—操作—解釋的活動節奏；同類項分組、負數代入及錯誤回饋均依本課概念獨立設計。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "票數控制項具名稱、鍵盤調整及文字化結果；項目類別除顏色外亦以符號與明文標記。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以主內容區與章節標題引導票券建模、同類項、代入檢查與回饋，維持鍵盤可讀順序。"
+  capTransfer:
+    questionType: 雙方案費用表判讀與代數建模
+    stemConstraint: 單車甲每小時 18 元、不收解鎖費；乙每小時 12 元、另收一次 24 元。依租借時數 h 建式，找出費用相同的時數，並比較 h=1 與 h=5 的方案；不得只代入答案。
+    requiredResponse: 寫出甲乙兩式、列出相等關係求交點，並用兩個指定時數代入驗算；說明 h 為何不能是負值。
+    scoring: 兩式結構正確 1、交點或比較計算正確 1、代入驗證並說明定義域 1
+  exitTicket:
+    prompt: 有人把 2x+5−3x+1 化成 5x+6。指出兩處錯誤，寫出正確化簡式，並用 x=2 驗證原式與新式相等。
+    successCriteria:
+    - 分辨 2x 與 −3x 是同類項，常數 5 與 1 另行合併，答案為 −x+6。
+    - 指出 x=2 時原式與化簡式都等於 4。
+    - 解釋不能把 x 項係數與常數直接相加。
+  expressionExtension:
+    applicable: true
+    task: 為班級園遊會設計一個收費式，包含每份餐點的變動費與一次性攤位費，寫 3–4 句解釋變數、係數、常數項及如何用一筆實際數量檢查式子。
+    constraint: 學生先自行撰寫；回饋只標出量綱或項目對應不清處，不替學生改寫全文。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始畫面顯示原式、整理式、預測問題與x滑桿；固定測值表可不操作滑桿閱讀。
+  - 將x從−2改為0時，3x+2+5x−7與8x−5的兩個輸出同步更新，分別為−5；再改為3時皆為19。
+  - 選擇把3x與常數合併的錯誤答案時，回饋引導按字母部分及次方重新分類，不能以顏色作唯一提示。
+  - 同類項整理將3x和5x合併、2和−7合併；x=−2時原式及8x−5均為−21，且括號清楚保留負值。
+  - 雙方案 transfer 在 h=2 時費用相同（36 元）；h=1 與 h=5 的比較、建式與非負定義域說明均計分。
+  - 320px、375px、768px 及鍵盤操作下，學生可操作x滑桿、讀數值表、切換教學步驟並完成逐式驗算；無頁面溢位、焦點遺失或僅靠顏色傳意。
+  - 關閉動態操作後，文字表格fallback仍提供x=−2、0、3的原式及整理式資料與遷移任務。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-7-1
+    role: official-curriculum-source-of-truth
+  - url: https://www.junyiacademy.org/new-video/3ohHLO2PpZA?parent-topic-id=k-m7a-c03-1
+    locator: 南一標示七上3-1資源索引；概念標題定位，未逐一觀看影片，不作出版社正文證據
+    role: version-labeled-public-resource-index; not-publisher-chapter-text
+  - url: https://www.scribd.com/document/790615966/%E5%BA%B7%E8%BB%92%E7%89%88%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E5%85%AD%E5%8D%87%E4%B8%83%E5%85%88%E4%BF%AE%E8%AC%9B%E7%BE%A9-%E5%AD%B8%E7%94%A8
+    locator: 康軒標示先修講義第三方分享pp.39–43有限節錄；上傳者、版次與授權未核
+    role: third-party-version-labeled-excerpt; limited-research-only
+  - url: https://www.scribd.com/document/831294508/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E4%B8%83%E4%B8%8A%E8%AA%B2%E6%9C%AC
+    locator: 翰林標示課本第三方OCR約pp.151–166；All Rights Reserved；真實性及授權未核
+    role: third-party-version-labeled-excerpt; limited-research-only
+  - url: https://mathvideo.hle.com.tw/1A/3-1/
+    locator: 翰林官方1A/3-1資源索引，僅作章節定位與資源分類旁證
+    role: official-publisher-index; not-chapter-text

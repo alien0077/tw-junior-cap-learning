@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-iv-2-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "現代散文先描寫老街景物，再寫作者童年回憶，最可能採用哪種寫法？",
+  "prompt": "某文本只有角色說話，沒有作者長篇敘述，但每段前有『燈光轉暗』『眾人退場』；這些提示的功能是？",
   "options": [
     {
       "id": "A",
-      "text": "借景引發回憶與情感"
+      "text": "補充舞台上的光線、動作與場面轉換。"
     },
     {
       "id": "B",
-      "text": "以數據證明景物"
+      "text": "證明故事一定是真實新聞。"
     },
     {
       "id": "C",
-      "text": "以對話取代所有描寫"
+      "text": "代替所有角色對白。"
     },
     {
       "id": "D",
-      "text": "只介紹地理位置"
+      "text": "說明作者的出生地。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "眼前景物觸發童年回憶，形成由景入情的寫法。"
+    "explanation": "燈光轉暗與退場是供演出者和觀眾理解場面變化的舞台提示，補足沒有長篇旁白的資訊。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "新詩、現代散文、現代小說與劇本閱讀能力；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究新詩、散文、小說、劇本的形式證據、視角與表達功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫現代文學文體題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文體與篇章理解",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "現代文學形式與閱讀判讀",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把文字分成角色語言和演出指示兩層，再說明舞台提示如何傳達空間與行動。",
+  "solutionSteps": [
+    "先找出兩個提示都不是角色說出的內容，而是演出指令。",
+    "燈光與退場改變觀眾看見的場面和角色位置。",
+    "A 能解釋提示在劇本中的實際功能。",
+    "B、C、D 都與舞台排演或場面轉換無關。",
+    "想像刪掉提示後場景如何銜接，確認它提供必要資訊。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

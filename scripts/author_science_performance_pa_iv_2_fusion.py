@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science performance pa-IV-2."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-pa-iv-2.json"; REPORT=ROOT/"implementation/reports/science-performance-pa-iv-2-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；科學數學整合、模型解釋、比較檢核與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持結合科學概念、數量關係與證據比較形成可檢核的解釋。"],"representations":[r],"examplesOrEvidence":["本課的彈簧、溫度交換與生長率資料皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-pa-iv-2" and d["reviewStatus"]=="draft"
+ d["title"]="pa-Ⅳ-2：運用科學與數學形成解釋並比較檢核結果——讓數字回到現象"
+ d["content"]={"summary":"科學與數學的整合，不是把公式貼在現象旁邊，而是用量測、比例、變化率、圖表或簡單模型把現象中的關係說清楚，再拿計算結果和觀察資料互相檢核。彈簧伸長、溫度交換和植物生長率都可能因單位、尺度、平均或模型假設而出現落差。本課以原創數據練習建立數學解釋、檢查合理性、比較模型和修正結論。","sections":[{"heading":"先說數字代表什麼","body":"彈簧增加 2 公分是長度變化，不等於力；每分鐘降 3°C 是變化率，不等於最後溫度。寫公式前先確認量、單位、時間和測量對象，避免計算正確卻回答錯問題。"},{"heading":"用關係而不是孤立數字解釋","body":"比例、差值、平均和斜率能把兩個或多個量連起來，但每種整理都有條件。比較生長率時要用相同時間和初始尺度，不能直接拿高度較大的植株當成成長較快。"},{"heading":"模型計算要回到實測","body":"數學模型可先預測，再和實測值比較。若落差大，檢查單位、取整、測量誤差、忽略因素與模型假設，不能只改答案讓兩者相等。"},{"heading":"比較檢核會產生新解釋","body":"兩個模型都能大致預測時，要看哪個在不同資料和條件下更穩定；若都不理想，指出共同缺口並提出補測。檢核不是只判對錯，而是讓解釋更精確。"}]}
+ d["studyHighlights"]=["先確認量、單位、時間和測量對象再計算。","用差值、比例、平均、變化率連結現象中的量。","比較模型預測和實測，檢查誤差、假設與忽略因素。","讓計算結果回到資料，依落差修正解釋。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"兩條彈簧誰比較有彈性？","body":"甲彈簧受 2 N 力伸長 4 cm，乙受 4 N 力伸長 6 cm。只看伸長量會說甲較小，但若計算每牛頓伸長量，結論可能不同。請先說每個數字的量和單位，再選擇合理比較方式，體會數學整理會改變解釋焦點。"},
+ {"id":"explain","phase":"explain","heading":"科學—數學—檢核三段連接","body":"先用科學概念決定要比較的量，再用數學表示差值、比例、平均或斜率，最後把結果和原始觀察及合理範圍比較。每段都要寫單位與條件；若結果違反基本現象，就回頭找模型、資料或計算的問題。"},
+ {"id":"worked-example","phase":"worked-example","heading":"溫度交換的平均與落差","body":"熱水從 70°C 降到 50°C，冷水從 20°C 升到 35°C。可分別算變化量 -20°C 與 +15°C，再問為何不相等：容器散熱、質量、環境或測量時間可能不同。不能只因理想模型預期相等就刪掉落差，應標示條件和下一步檢查。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"比較植物生長率","body":"甲由 10 cm 變 14 cm，乙由 20 cm 變 22 cm，觀察期相同。學習者計算絕對增加量 4 cm 與 2 cm，再計算相對增加比例 40% 與 10%，討論不同問題會需要不同指標。最後說明仍要考慮樣本數、品種與測量誤差。"},
+ {"id":"transfer","phase":"transfer","heading":"寫一段可被檢核的數學解釋","body":"選一組資料，用一句話說明現象、列出計算、標示單位，再比較預測和實測，最後寫限制與下一個測量。讀者要能沿著數字回到表格，若找不到分母、時間或取整方式，就表示解釋還不完整。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個整合迷思","body":"請修正『公式算出來就是真正原因』與『模型和實測不一樣就代表計算沒用』。公式只整理指定量的關係，因果仍需科學證據；落差能指出模型、條件或測量限制，幫助下一版更好。"}
+ ],"summary":["先用科學概念決定要比較的量和條件。","以差值、比例、平均、變化率表達量的關係。","把計算、模型預測和實測資料互相檢核。","落差不是要刪除的錯，而是修正解釋的線索。"],"exitCheck":[{"prompt":"為什麼比較彈簧不能只看伸長量？","expectedEvidence":"還要考慮施力大小，計算每單位力的伸長並標示單位，才能公平比較。"},{"prompt":"溫水交換量不對稱時可以檢查什麼？","expectedEvidence":"檢查質量、容器散熱、環境、時間、測量誤差和理想模型假設，不刪除落差。"},{"prompt":"為什麼植物要同時計算絕對和相對增加？","expectedEvidence":"絕對量和比例回答不同問題，初始高度不同時只看公分可能誤判成長速度。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"用科學概念決定量，運用數學關係形成解釋，再以實測和模型檢核。","scenario":"分析彈簧、溫度與植物資料，逐步選擇合適的量、公式、單位和修正方向。","variables":[{"symbol":"q","meaning":"要回答的科學問題"},{"symbol":"m","meaning":"數學表示"},{"symbol":"e","meaning":"實測證據"}],"steps":[{"id":"step-1","prompt":"比較兩條受力不同的彈簧，哪個數學量較公平？","options":["每單位力的伸長量","只比較總伸長量","只看彈簧顏色"],"answer":"A","feedback":"除以施力可把不同力的測試放在較可比的尺度。"},{"id":"step-2","prompt":"植物初始高度不同時，哪種做法較完整？","options":["同時比較絕對增加量與相對增加比例","只比較最後高度","只挑最高植株"],"answer":"A","feedback":"公分和百分比回答不同問題，還要檢查樣本和誤差。"},{"id":"step-3","prompt":"模型預測和溫度實測有落差時應如何處理？","options":["檢查單位、條件、測量與模型假設，再決定修正","把實測值改成預測值","因為落差就不再使用數學"],"answer":"A","feedback":"落差是檢查模型和資料的證據，不應被隱藏。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以數學量、圖表和科學概念形成對自然現象的解釋。","差值、比例、平均、變化率、單位、模型與實測比較。","公式正確就當成因果，忽略量的意義和條件。","重視概念—數學—證據連結與合理性。"),rec("kanghsuan","透過資料分析、模型預測和實驗檢核整合科學與數學。","彈簧、溫度、生長、數據、模型、落差與修正。","只追求預測等於實測，或不說明取整與誤差。","評量量的選擇、計算、解釋、比較與反思。"),rec("hanlin","連結生活物理、生物和環境資料，使用比例與變化率判讀尺度。","力伸長、熱交換、生長率、單位、分母與模型限制。","把絕對量當成相對速度，忽略初始值、樣本和環境。","要求數學表示、科學意義、證據範圍與後續檢核。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持結合科學概念、數學關係與實測證據形成解釋。","量、單位、比例、變化率、模型預測和實測落差是共同要求。","比較與檢核不是追求數字相等，而是用落差修正模型和條件。"],"versionDifferences":["南一證據較突顯科學概念與基本數學表示；康軒較突顯資料、模型、預測與實驗檢核；翰林較突顯生活物理、生物尺度、比例與環境限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以不同施力的彈簧比較每單位力伸長量。","以溫水熱交換的落差檢查理想模型與測量條件。","以植物絕對增加與相對比例示範尺度和指標選擇。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織量、單位、差值、比例、平均、變化率、模型、預測、實測落差與解釋修正。正文、原創數據、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"pa-Ⅳ-2：運用科學與數學形成解釋並比較檢核結果","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

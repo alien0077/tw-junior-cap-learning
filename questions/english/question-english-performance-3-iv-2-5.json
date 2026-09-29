@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-2-5",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「3-Ⅳ-2／辨識課堂字詞」practice, what does “repair” mean in question 5?",
+  "prompt": "The class monitor checks the equipment list after cleanup to make sure every item is back. What does checks mean here?",
   "options": [
     {
       "id": "A",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “repair” means fix something damaged."
+      "text": "Buys new equipment."
     },
     {
       "id": "B",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “repair” means a place where people wait for the science room."
+      "text": "Carries everything home."
     },
     {
       "id": "C",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “repair” means a tool used to measure 7 minutes."
+      "text": "Hides the list."
     },
     {
       "id": "D",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “repair” means a person who teaches at the science room."
+      "text": "Looks over the list to confirm the items."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "“repair” means fix something damaged. This item targets 3-Ⅳ-2／辨識課堂字詞, question 5."
+    "value": "D",
+    "explanation": "後面的目的語 make sure every item is back 說明 monitor 要查看清單、確認物品是否歸位。D 符合 checks 在此處的意思，其他選項都不是核對。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2829&name=112-2-%E7%AC%AC3%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%96%B1%E8%AE%80%E9%A1%8C%E7%9B%AE-%E7%8E%8B%E7%90%87%E8%90%B1.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣立宜昌國中公開試題，PDF page 4, item 31: infer the meaning of a school-duty verb from the surrounding dialogue；只參照題型，不重製原卷。",
+    "authoringNote": "依官方英語課綱與 Knowledge Graph，參照公立學校公開試題的課堂指令、校園詞彙、時間／方位與情境推論能力獨立改寫；未複製原題題幹、選項、資料或答案。題目維持draft，尚待版本研究及完整發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2829&name=112-2-%E7%AC%AC3%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%96%B1%E8%AE%80%E9%A1%8C%E7%9B%AE-%E7%8E%8B%E7%90%87%E8%90%B1.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中112學年度第二學期第三次段考七年級英語科試題卷",
+      "year": "112-2-3",
+      "subject": "english",
+      "locator": "PDF page 4, item 31: infer the meaning of a school-duty verb from the surrounding dialogue",
+      "observedPattern": "只參照第31題的校園詞彙／指令／行程或語境推論形式；公開查閱不等於可重製；只參考逐題標示的順序、頻率、校園工作與情境詞義判讀方式，不複製原題文字、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "碰到多義動詞時，不急著套第一個中文意思；先讀它後面的物件，再找句中說明目的的線索來縮小解釋。",
+  "solutionSteps": [
+    "定位主詞 class monitor 和動作 checks，接著確認 checks 的受詞是 equipment list。",
+    "再讀目的片語 make sure，知道這個動作是為了確認物品是否全部放回。",
+    "把工作流程想成整理後逐項對照清單，而不是購買、搬回家或藏起清單。",
+    "D 表示查看清單並確認物品；A、B、C 都和核對工作的目的相矛盾。",
+    "所以選 D；遇到 check、watch 等多義字，應用受詞和目的判定當下語意。"
+  ]
 }

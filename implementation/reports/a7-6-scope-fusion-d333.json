@@ -1,0 +1,46 @@
+{
+  "reportId": "a7-6-scope-fusion-d333",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-6",
+  "classification": "source-informed-original-fusion-draft; publisher-full-text-review-pending",
+  "teachingSequence": [
+    {
+      "sources": ["Nani-aligned public course page", "Kanghsuan-aligned public school pacing plan", "Hanlin official resource index"],
+      "sourceInsight": "Visible evidence separates general equation graphs, y=k/x=h special cases, simultaneous-graph meaning, and exploration/self-check tasks; evidence types and depth differ by source.",
+      "learnerVisibleLocation": "lesson.content.sections[0..5], teaching.body[0..5]",
+      "originalDecision": "Write a unit-specific sequence from substitution-generated points to line interpretation, fixed-coordinate special lines, unique intersection, exact two-equation verification, and a new transfer example."
+    },
+    {
+      "sources": ["Official curriculum A-7-6 locator", "public school pacing plan cross-check"],
+      "sourceInsight": "Keep this objective on the geometric meaning of a unique intersection rather than expanding into neighboring solution-count taxonomy or solving algorithms.",
+      "learnerVisibleLocation": "lesson.content.summary; lesson.content.sections[1,5]; teaching.summary; teaching.exitCheck; interactive.steps[0..3]",
+      "originalDecision": "Teach exact candidate verification and coordinate order; keep parallel/coincident solution-count classification outside this lesson objective."
+    },
+    {
+      "sources": ["Original arithmetic checks"],
+      "sourceInsight": "A visual near-intersection can pass one equation but fail the other; counterexamples must match the exact equation system.",
+      "learnerVisibleLocation": "lesson.content.sections[3]; interactive.steps[1]; unit spec misconceptions",
+      "originalDecision": "Use (2.2,3.8) for 2x+y=8 and x+y=6, and corrected (2,4)/(3,3) checks for x+y=6 and 2x-y=2."
+    }
+  ],
+  "sourceLimitations": [
+    "Nani material is an aligned public course page; its videos were not viewed and it is not publisher textbook prose.",
+    "Kanghsuan official page was read as a resource index; videos were not viewed. The school pacing plan is not publisher chapter text.",
+    "Hanlin official page was read at title/index level only; no full publisher chapter text was read.",
+    "No complete authenticated publisher chapter comparison or rights review is claimed; all three publisher evidence slots remain pending."
+  ],
+  "gates": {
+    "lessonReviewStatus": "draft",
+    "publisherEvidence": {"nani": "pending", "kanghsuan": "pending", "hanlin": "pending"},
+    "specQaStatus": "untested",
+    "unitRegression": "PASS",
+    "fullSpecValidation": "PASS: 1,027 files, 0 errors; 1,027 remain pending",
+    "yamlParse": "PASS: 5 source references",
+    "simulationEngine": "math-system-graph: two labeled/differentiated lines, accessible exact intersection, adjustable second-equation constant",
+    "dataValidation": "PASS: 14,454 JSON files, 13,111 IDs, 1,032 KG nodes",
+    "examLedger": "Reused current report: 10,566/10,566 recorded; 0 pending",
+    "examSourceSemantics": "Reused current report: 23,131 refs scanned; 0 flagged"
+  },
+  "noRepeatWork": "Did not rerun or edit the public-exam ledger; no question ledger was regenerated.",
+  "commitPush": "not performed"
+}

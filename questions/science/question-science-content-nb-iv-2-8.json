@@ -2,23 +2,23 @@
   "id": "question-science-content-nb-iv-2-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年2月14日校園實驗室的觀察中，比較兩地「Nb-Ⅳ-2：氣候變遷的全球衝擊」資料時，甲地迎風坡年雨量約 76300 mm、乙地背風坡約 52370 mm，最合理的做法是？",
+  "prompt": "比較兩國氣候災害死亡率時，甲國老年人口較多、乙國病例定義較寬；哪項做法必要？",
   "options": [
     {
       "id": "A",
-      "text": "在「Nb-Ⅳ-2：氣候變遷的全球衝擊」中只看 76300 mm 的單一數值便下結論"
+      "text": "直接比較原始死亡人數"
     },
     {
       "id": "B",
-      "text": "在「Nb-Ⅳ-2：氣候變遷的全球衝擊」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "先統一病例定義、校正人口結構與暴露人口，再比較同尺度率值"
     },
     {
       "id": "C",
-      "text": "在「Nb-Ⅳ-2：氣候變遷的全球衝擊」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "刪除較高數值"
     },
     {
       "id": "D",
-      "text": "同時比較地形、風向、觀測期間與 76300、52370 mm 資料"
+      "text": "以國土面積取代人口"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Nb-Ⅳ-2：氣候變遷的全球衝擊」。"
+    "value": "B",
+    "explanation": "統計定義與人口結構不同會改變表面差異；先校正分母、期間與定義才有可比風險估計。 正確答案為選項 B：「先統一病例定義、校正人口結構與暴露人口，再比較同尺度率值」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題的全球環境變化、資料判讀、災害與調適能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題只取公立學校公開試題的能力方向與資料判讀層次，題幹、選項、答案、解析與步驟均以 Nb-Ⅳ-2 重新撰寫，未複製原題、圖表或答案。 待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nb-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-nb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫",
+      "year": "109-115",
+      "locator": "全球環境變化、圖表趨勢、災害與生態系統的資料判讀",
+      "pattern": "取長期資料、跨地區比較、因果鏈與環境風險判讀的能力方向；本課重新設計情境、數據語境與選項。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取長期資料、跨地區比較、因果鏈與環境風險判讀的能力方向；本課重新設計情境、數據語境與選項。"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考",
+      "year": "109-115",
+      "locator": "氣候變化、海岸、生態、公共衛生與資料尺度",
+      "pattern": "取由現象連到機制、暴露與脆弱度的推理方向；不複製題幹、選項、圖表或答案。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取由現象連到機制、暴露與脆弱度的推理方向；不複製題幹、選項、圖表或答案。"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "locator": "全球暖化、極端事件、沿海衝擊與調適策略",
+      "pattern": "取資料證據、尺度、替代因素與策略副作用的判讀方向；全部以本課原創情境改寫。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取資料證據、尺度、替代因素與策略副作用的判讀方向；全部以本課原創情境改寫。"
+    }
+  ],
+  "solutionStrategy": "確認分子分母與定義，再做年齡標準化或同尺度比較，說明漏報等限制。",
+  "solutionSteps": [
+    "圈出現象、時間尺度、地點與受影響系統。",
+    "把危害、暴露、脆弱度、應變能力與替代因素分欄。",
+    "依資料連結機制，避免把相關性直接寫成唯一因果。",
+    "檢查選項是否超出資料尺度、忽略對照或誇大措施效果。",
+    "回查題幹核對答案、限制與下一項證據。"
+  ]
 }

@@ -1,0 +1,75 @@
+{
+  "id": "question-science-root-a-17",
+  "subject": "science",
+  "type": "single-choice",
+  "prompt": "某模型能解釋加熱曲線，但無法解釋密閉容器質量不變；如何處理最科學？",
+  "options": [
+    {
+      "id": "A",
+      "text": "指出模型適用範圍，補充粒子與守恆表示，再用新資料檢驗"
+    },
+    {
+      "id": "B",
+      "text": "只保留模型成功的圖表"
+    },
+    {
+      "id": "C",
+      "text": "把質量資料視為無關而刪除"
+    },
+    {
+      "id": "D",
+      "text": "改成『模型永遠正確』"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-science-content-a",
+    "kg-science-learning-content"
+  ],
+  "difficulty": "hard",
+  "answer": {
+    "value": "A",
+    "explanation": "模型不是口號；遇到反例要標示限制、修正表示並用獨立資料重新檢驗。 正確答案為選項 A。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "物質與能量模型、變因控制、證據判讀",
+      "observedPattern": "只取公立校方公開試題的能力方向，重新寫成根層模型題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "物質性質、能量轉換、測量與推論",
+      "observedPattern": "只取公開題型的推理要求，改寫為跨概念模型題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作物質／能量模型、力與運動、變因控制、測量與證據判讀的能力方向；本題為根層 A 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-root-a",
+  "solutionStrategy": "把模型預測與觀察逐項對照，找出矛盾所在，提出可被新實驗否證的修正版。",
+  "solutionSteps": [
+    "圈出題目要解釋的現象、輸入條件、可量測結果與系統邊界。",
+    "把物質、力、能量、變因或證據分別標記，先建立對應模型。",
+    "依公式、能量流向、控制變因或資料趨勢逐步核對，不用關鍵字猜答案。",
+    "排除把觀察當結論、把一次結果當規律、忽略守恆或省略條件的選項，答案為 A。",
+    "把答案放回新情境並檢查適用限制：模型不是口號；遇到反例要標示限制、修正表示並用獨立資料重新檢驗。"
+  ]
+}

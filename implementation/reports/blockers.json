@@ -1,0 +1,235 @@
+{
+  "checkedAt": "2026-09-20",
+  "sourceBoundary": "Only repository evidence is recorded; no publisher or pedagogical result is inferred.",
+  "blockers": [
+    {
+      "id": "publisher-chapter-evidence",
+      "scope": "P3/P9",
+      "status": "pending-real-source",
+      "evidence": [
+        "scripts/audit_publisher_evidence_ledger.py",
+        "implementation/reports/publisher-evidence-ledger.json",
+        "implementation/reports/coverage.json",
+        "implementation/reports/guide-checklist.json",
+        "implementation/reports/publisher-chapter-evidence-samples.json",
+        "scripts/audit_version_research_readiness.py",
+        "implementation/reports/version-research-readiness.json",
+        "scripts/enrich_math_chapter_evidence.py",
+        "implementation/reports/math-chapter-evidence-enrichment.json",
+        "scripts/add_missing_mapped_publisher_records.py",
+        "implementation/reports/mapped-publisher-record-additions.json"
+      ],
+      "reason": "The refreshed per-unit ledger covers 1,027 specs and 3,081 publisher slots: all remain book-level-only. Root, legacy science-J and the eleven Chinese content-child endpoints now resolve, so missing lesson endpoints are 0. URL-plus-chapter-locator records are Nani 862, Kang Hsuan 865 and Hanlin 847; 768/1,027 unit specs have all three locator records. All 1,027 unit specs now have chapter-level sample records; the report also retains 26 historical endpoint records (recent additions: Ia/Ia-IV-1/2/3/4, Ib/Ib-IV-1/2/3/4/5/6, Id/Id-IV-2/3, INa/INa-IV-1/2/3/4/5, INc/INc-IV-1/2/3/4/5/6, INg/INg-IV-1/2/3/4/5/6/7/8/9, science-j, Jc/Jc-IV-5/6/7, La-IV-1; A-8-1 through A-8-7, A-7-4, Aa/Aa-IV-1/2/3/4/5, Ab/Ab-IV-1/2/3/4, Ba/Ba-IV-1/2/3/4/5/6/7, Bb/Bb-IV-1/2/3/4/5, Bc/Bc-IV-1/2/3/4, Bd/Bd-IV-1/2/3, C, Ca/Ca-IV-1/2, Cb/Cb-IV-1/2/3, D/D-8-1, Da/Da-IV-1/2/3/4, Db/Db-IV-1/2/3/4/5/6/7/8, Dc/Dc-IV-1/2/3/4/5, E, Ea/Ea-IV-1/2/3, Eb/Eb-IV-1/2/3/4/5/6/7/8/9/10/11/12/13, Ec/Ec-IV-1/2, Ed/Ed-IV-1/2, F/Fb/Fb-IV-1/2/3/4, Fa/Fa-IV-1/2/3/5, Fc/Fc-IV-1/2, F-9-2, G/Ga/Ga-IV-1/2/3/4/5/6, Gb/Gb-IV-1, Gc/Gc-IV-1/2/3/4, H, Hb/Hb-IV-1/2, I, Ic/Ic-IV-1/2/3/4, J, Ja/Ja-IV-1/2/3/4, Jb/Jb-IV-1/2/3/4, Je/Je-IV-1/2/3, Jf/Jf-IV-1/2/3/4, Jc/Jc-IV-1/2/3/4, Ka/Ka-IV-1/2/3/4/5/6/7/8/9/10/11, Mc/Mc-IV-1/2/3, Jd/Jd-IV-1/2/3/4/5/6, K, Kb/Kb-IV-1/2, Kc/Kc-IV-1/2/3/4/5/6/7/8, L, La, Lb/Lb-IV-1/2/3, M, Ma/Ma-IV-1/2/3, N, Na/Na-IV-1/2/3/4, Nc/Nc-IV-1/2/3/4/5, learning-content, Me-IV-3, N-7-6, N-8-1/2/3/4/5/6, S-7-2, S-8-6/7/8/9/10/11/12, S-9-1/2/3/4/5/6/7/8/9/10/11/12/13, Geo AB and Ab-IV-1/2/4, plus cross-atoms-to-universe, cross-disciplinary, cross-energy-resources and cross-global-climate-adaptation, science Id-IV-1 and blood-circulation, Ma/Ma-IV-4/5 and Mb/Mb-IV-1/2), but they remain pending fusion review and do not change the global status. A 2026-09-20 science Me-IV-2 follow-up found a public school plan with the Me-IV-2 concept and water-reuse activities, but it does not identify a publisher; a Hanlin candidate identifies the 7-down textbook but does not provide a sufficient Me-IV-2 chapter locator. It therefore remains blocked. All 1,027 unit specs remain blocked until applicable evidence is source-reviewed and fused.",
+      "unblockWhen": "Each applicable unit has a traceable URL or controlled local source, locator, accessedAt and license, then the fused scope is reviewed."
+    },
+    {
+      "id": "unit-content-and-pedagogical-review",
+      "scope": "P4/P5/P6/P7/P9",
+      "status": "pending-content-review",
+      "evidence": [
+        "implementation/reports/implementation-validation.json",
+        "implementation/reports/qa-contract.json",
+        "scripts/audit_direct_math_answers.py",
+        "implementation/reports/direct-math-answer-audit.json",
+        "scripts/audit_direct_science_answers.py",
+        "implementation/reports/direct-science-answer-audit.json",
+        "scripts/repair_fused_math_science_learning_design.py",
+        "implementation/reports/fused-learning-design-repair.json",
+        "scripts/downgrade_legacy_noncontent_lessons.py",
+        "implementation/reports/legacy-noncontent-downgrade.json"
+      ],
+      "reason": "Static spec and interaction contracts pass, and the five previously missing version-fused math/science learningDesign objects are now independently authored and verified. The 256 historical non-learning-content full-lesson frames lacked versionResearch/fusionRecord and were correctly downgraded from content-reviewed to draft under the project constitution; version-fusion strict now passes with failureCount=0. Unit-specific content, formulas/facts, misconception quality, copyright boundary and transfer teaching remain unreviewed for the full 1,027-unit release gate.",
+      "unblockWhen": "Every unit completes source-aware authoring and content, formula/fact, copyright and pedagogical review; status can then move to reviewed/implemented/verified only with evidence."
+    },
+    {
+      "id": "unit-specific-testcase-design",
+      "scope": "P7/P9",
+      "status": "resolved-contract-specificity",
+      "evidence": [
+        "scripts/rewrite_unit_testcases.py",
+        "scripts/audit_testcase_specificity.py",
+        "implementation/reports/testcase-specificity.json",
+        "scripts/validate_implementation_specs.py",
+        "scripts/validate_implementation_qa_contract.py",
+        "implementation/reports/qa-contract.json"
+      ],
+      "reason": "All 1,027 unit specs now have distinct five-case signatures derived from their title, concept, representation, misconception, responsive interaction and CAP transfer fields. Specificity audit reports 1,027 unique signatures and QA contract reports 1,027/1,027 passed. This resolves structural test-case reuse but does not promote content or pedagogical QA.",
+      "unblockWhen": "No further structural action; independently review each unit's test assertions against its actual content and runtime behavior before release."
+    },
+    {
+      "id": "subject-specific-visualization-bodies",
+      "scope": "P2/P5",
+      "status": "data-wired-pedagogical-review-pending",
+      "evidence": [
+        "implementation/runtime/renderer-registry.js",
+        "scripts/audit_unit_visualization_bodies.py",
+        "implementation/reports/unit-visualization-bodies.json",
+        "implementation/reports/guide-checklist.json",
+        "implementation/reports/interaction-teaching-pattern-refs.json",
+        "scripts/attach_teaching_pattern_refs.py",
+        "implementation/reports/teaching-pattern-ref-attachment.json",
+        "implementation/reports/cua-component-smoke-20260908.json"
+      ],
+      "reason": "The renderer now exposes each unit's component-specific core concept, visualizations, studentActions, visualRules, misconception checks, feedback and CAP transfer in an accessible text/data body; the audit reports 1,027/1,027 units with renderer data. Subject-specific graphic geometry, numeric datasets and pedagogical review remain pending.",
+      "unblockWhen": "Each component receives subject-reviewed graphic/data behavior and each unit's rendered evidence is checked against its concept, misconception and transfer task."
+    },
+    {
+      "id": "assistive-technology-runtime",
+      "scope": "P2/P7/P8",
+      "status": "pending-screen-reader",
+      "evidence": [
+        "scripts/browser_smoke_test.py",
+        "implementation/runtime/responsive-a11y.test.mjs",
+        "real Chromium result: 320/375/768, 1027/1027 traversal, flow and keyboard passed",
+        "implementation/reports/cua-workbench-smoke-20260907.json",
+        "implementation/reports/interaction-teaching-pattern-refs.json"
+      ],
+      "reason": "Real Chromium runtime coverage now passes for viewport overflow, full lesson traversal, five-stage interaction and keyboard focus. A real browser AX tree run also confirmed named controls, polite live status, five-stage state updates and text fallback; an actual VoiceOver/NVDA session and pedagogical interpretation review remain unavailable.",
+      "unblockWhen": "Run the same required interaction paths with an actual assistive technology and review announcements/state changes against the unit content."
+    },
+    {
+      "id": "repository-baseline-validator",
+      "scope": "CI/release",
+      "status": "resolved",
+      "evidence": [
+        "scripts/validate_data.py",
+        "/private/tmp/tw_validate_20260907_final.log",
+        "scripts/repair_legacy_learning_design.py",
+        "scripts/repair_version_research_metadata.py",
+        "scripts/repair_legacy_schema_enums.py",
+        "scripts/repair_short_lesson_fields.py"
+      ],
+      "reason": "The full repository validator exits 0 after the English question rewrite queue was completed. No schema weakening was used; duplicate prompt diagnostics are zero.",
+      "unblockWhen": "No further action; rerun validate_data.py after any lesson or question schema change."
+    },
+    {
+      "id": "root-question-endpoints",
+      "scope": "question deployment",
+      "status": "resolved-structural-endpoint",
+      "evidence": [
+        "lessons/chinese/lesson-chinese-content-root-a.json",
+        "lessons/chinese/lesson-chinese-content-root-b.json",
+        "lessons/english/lesson-english-content-root-a.json",
+        "lessons/english/lesson-english-content-root-b.json",
+        "lessons/math/lesson-math-content-root-a.json",
+        "lessons/science/lesson-science-content-root-a.json",
+        "lessons/science/lesson-science-content-root-b.json",
+        "scripts/validate_site_index.py",
+        "implementation/reports/generated-question-validation.json"
+      ],
+      "reason": "Seven root draft lesson endpoints now exist; the 21 prior root questions plus 49 root practice questions are in canonical subject folders, every root lesson has at least ten questions, and the quarantine is empty.",
+      "unblockWhen": "No further structural endpoint action. Root questions remain draft until subject correctness, source, copyright and AI content review pass."
+    },
+    {
+      "id": "unit-question-public-exam-rewrite",
+      "scope": "question authoring/release",
+      "status": "pending-content-and-answer-qa",
+      "evidence": [
+        "scripts/audit_question_exam_rewrites.py",
+        "implementation/reports/question-exam-pattern-ledger.json",
+        "scripts/normalize_exam_pattern_locator_levels.py",
+        "implementation/reports/question-exam-locator-levels.json",
+        "implementation/reports/public-exam-source-catalog.json",
+        "scripts/audit_public_exam_source_catalog.py",
+        "implementation/reports/public-exam-source-catalog-audit.json",
+        "implementation/reports/public-exam-source-page-audit-20260908.json",
+        "scripts/audit_public_exam_source_unit_fit.py",
+        "implementation/reports/public-exam-source-unit-fit-queue-20260908.json",
+        "scripts/remap_math_public_exam_refs_by_grade.py",
+        "implementation/reports/math-public-exam-ref-remap-20260908.json",
+        "scripts/remap_math_unclassified_refs_to_cap.py",
+        "implementation/reports/math-unclassified-ref-remap-20260908.json",
+        "implementation/reports/math-unclassified-ref-remap-20260908.json",
+        "scripts/audit_question_answers.py",
+        "implementation/reports/question-answer-audit.json",
+        "scripts/audit_m4_semantic_risk.py",
+        "docs/M4_SEMANTIC_QA_REPORT.md",
+        "scripts/repair_duplicate_question_reasoning.py",
+        "implementation/reports/duplicate-question-reasoning-repair.json",
+        "scripts/repair_missing_answer_references.py",
+        "implementation/reports/missing-answer-reference-repair.json",
+        "scripts/repair_duplicate_question_steps.py",
+        "implementation/reports/duplicate-question-steps-repair.json",
+        "scripts/repair_science_clear_unit_mismatches.py",
+        "scripts/deduplicate_science_repaired_variants.py",
+        "scripts/repair_science_within_lesson_option_variants.py",
+        "scripts/repair_math_science_duplicate_option_sets.py",
+        "scripts/audit_math_semantic_numeric_patterns.py",
+        "implementation/reports/math-semantic-numeric-pattern-audit.json",
+        "scripts/audit_math_direct_arithmetic.py",
+        "implementation/reports/math-direct-arithmetic-audit.json",
+        "scripts/audit_math_linear_numeric.py",
+        "implementation/reports/math-linear-numeric-audit.json",
+        "scripts/audit_math_quadratic_numeric.py",
+        "implementation/reports/math-quadratic-numeric-audit.json",
+        "implementation/reports/science-within-lesson-option-variants.json",
+        "implementation/reports/math-science-duplicate-option-repair-20260907.json",
+        "implementation/reports/cua-component-accessibility-smoke-20260908.json",
+        "schemas/question.schema.json"
+      ],
+      "reason": "All 10,560 canonical questions now carry a recorded public-exam pattern source; the latest catalog audit covers 206 distinct question source URLs in a 274-entry catalog, with no missing catalog URLs. Paper-level evidence is valid for pattern-only rewriting, and no one-to-one reproduction is claimed. A clear science unit-fit pass rewrote 320 questions that were visibly mismatched (reflection, density, speed and rain archetypes), then 310 science questions and 2 math questions were given distinct within-lesson option variants; the latest semantic-risk scan reports 0 categories/0 flags, and the 10,560-question structural answer audit passes. The eleven Chinese child lessons now each have ten original questions (110 total), with answers, explanations and five steps. Duplicate solution strategies and answer explanations were then repaired per question, and all 10,560 reasoning fields are now unique with explicit answer-id and option-text references. Two math answer errors were corrected after exact inspection: `question-math-equation-6` C→B and `question-math-linear-function-graph-3` D→A, with complete explanations and regression checks. The expanded exact-pattern math audit covers 301 unambiguous prompts with 0 mismatches; pure-numeric arithmetic covers 13/13; linear equation/function checks cover 19/19; integer-coefficient quadratic checks cover 15/15; and the conservative numeric-family audit now covers 16 families, 28/28 pass. The current source unit-fit audit has 410 remaining pattern references: 90 learning-content refs and 320 learning-performance refs; 0 potential grade mismatches remain. The 300 unclassified refs are all learning-performance nodes, while the 90 explicit grade-9 learning-content refs remain tied to the grade-9 source. This is not treated as full answer correctness or silently promoted. Skipped questions remain explicitly unreviewed by these deterministic gates. All questions are draft after content-field changes. Subject answer correctness beyond conservative numeric gates, distractor quality, copyright boundaries and full AI content QA still need release review.",
+      "unblockWhen": "Complete per-question answer correctness, distractor quality, unit fit, source/版权 review, duplicate review and AI content QA; retain draft until all gates pass."
+    },
+    {
+      "id": "question-unit-fit-triage",
+      "scope": "question authoring/content QA",
+      "status": "resolved-obvious-mismatch-triage",
+      "evidence": [
+        "scripts/audit_question_unit_fit.py",
+        "implementation/reports/question-unit-fit.json",
+        "scripts/repair_science_unit_fit_batch1.py",
+        "scripts/repair_science_unit_fit_batch2.py",
+        "scripts/audit_question_answers.py",
+        "scripts/audit_question_template_reuse.py"
+      ],
+      "reason": "保守單元適配稽核曾找出 260 題自然科題型與單元核心明確衝突；已完成 260/260 題重寫，最新 mismatchCount=0，答案與題面重用稽核仍通過。這只解除明確錯配，不等同 10,401 題的學科正確性、誘答品質或教學法審查。",
+      "unblockWhen": "無進一步結構性錯配；仍須依 unit-question-public-exam-rewrite 完成逐題內容、來源、版權與答案 QA。"
+    },
+    {
+      "id": "composition-module-content",
+      "scope": "P6/P9 composition domain",
+      "status": "content-reviewed-draft",
+      "evidence": [
+        "implementation/composition/composition-contract.json",
+        "implementation/composition/module-registry.json",
+        "implementation/composition/module-content.json",
+        "scripts/validate_composition_modules.py",
+        "scripts/review_composition_modules.py",
+        "scripts/mark_composition_reviewed.py",
+        "implementation/reports/composition-modules.json",
+        "implementation/reports/composition-content-review.json"
+      ],
+      "reason": "All 13 required writing modules have independently written source-aware prompts, diagnostics, first-order hints and transfer tasks. The second-round AI review passes all 13 modules, including observable diagnostics, non-answering hints, changed transfer contexts, independent prompt/diagnostic pairs, source boundary and student-draft-first checks. They remain draft because this does not replace full unit integration, publisher fusion, or a human review.",
+      "unblockWhen": "Integrate and runtime-review all 13 modules against student-draft-first behavior and curriculum/source boundaries; retain draft until the remaining release gates pass."
+    },
+    {
+      "id": "social-question-unit-fit-triage",
+      "scope": "question authoring/content QA",
+      "status": "resolved-obvious-mismatch-triage",
+      "evidence": [
+        "scripts/audit_social_unit_fit.py",
+        "implementation/reports/social-question-unit-fit.json",
+        "scripts/repair_social_map-context.py",
+        "scripts/repair_social_learning-performance.py",
+        "scripts/audit_question_answers.py",
+        "scripts/audit_question_template_reuse.py"
+      ],
+      "reason": "社會科保守稽核先發現 418 題題幹誤用『區域地圖展』；已修正 749 題共同錯誤情境，並重寫同一廣泛學習表現單元的 10 題預算錯配題，使其改為 10 種不同的資料推理任務。最新單元適配 mismatchCount=0，答案 10,401/10,401，題面重用 0 組。這只解除可由靜態規則辨識的明顯錯配，不等同逐題學科答案、誘答、版權或教學法通過。",
+      "unblockWhen": "逐題完成社會科單元適配、答案、誘答、來源／版權與教學法複核；在此以前維持 draft。"
+    },
+    {
+      "id": "question-template-reuse",
+      "scope": "question authoring/release",
+      "status": "resolved",
+      "evidence": [
+        "scripts/audit_question_template_reuse.py",
+        "scripts/rewrite_english_template_questions.py",
+        "implementation/reports/question-template-reuse.json",
+        "scripts/clean_question_surface_templates.py",
+        "implementation/reports/question-answer-audit.json"
+      ],
+      "reason": "The rewrite queue completed 1,145 affected English question files across the normalized and exact-prompt audits. The latest normalized template audit reports zero duplicate groups, zero affected questions and zero extra copies; the exact-prompt answer audit also reports zero duplicate prompts.",
+      "unblockWhen": "No further action for template reuse; retain the questions as draft until subject correctness, copyright, distractor and AI content review is complete."
+    }
+  ]
+}

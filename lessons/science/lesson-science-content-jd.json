@@ -49,7 +49,7 @@
     "authoringNote": "Version-fused original lesson independently authored from the official curriculum, Knowledge Graph and recorded public publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "以安全探究步驟理解「酸鹼反應」並用證據修正解釋。",
@@ -93,6 +93,17 @@
         ],
         "answer": "A",
         "feedback": "中和的核心是 H⁺ 與 OH⁻ 的反應；旁觀離子通常仍存在，不能把『酸鹼性降低』誤寫成所有物質消失。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "同一高麗菜汁指示劑在不同酸鹼溶液中出現相近顏色；要避免把顏色誤當成完整成分證明，還要做什麼？",
+        "options": [
+          "記錄指示劑種類、滴數、體積與 pH，並用已知濃度和粒子比例交叉檢查；未知成分與安全性仍需另測",
+          "只要顏色相同就判定溶液濃度和離子種類完全相同",
+          "把所有溶液混合到顏色中性，便宣布沒有任何溶質"
+        ],
+        "answer": "A",
+        "feedback": "指示劑顏色只提供某個變色範圍的酸鹼線索；pH、濃度、體積與粒子資料才能補足判讀，且中性不等於無溶質或可飲用。"
       }
     ]
   },
@@ -100,45 +111,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與公開資源",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Jd：酸鹼反應；公開單元定位與探究方向",
-      "sourceUrl": "https://course.cyc.edu.tw/upfile/course109/sub1/14507919853792884.pdf",
+      "chapterLocator": "新北市文山區安康高中國中部翰林版八上自然簡案；酸鹼反應整體課程、探究與評量脈絡，涵蓋 Jd-Ⅳ-1 至 Jd-Ⅳ-6；核讀 2026-09-20。",
+      "sourceUrl": "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "用於比對酸鹼性判斷、指示劑觀察與中和概念的課程順序；正文另以粒子模型與自編資料卡重建理解路徑。",
-      "copyrightBoundary": "只採公開課程計畫的定位與方向，不複製課文、實驗步驟、圖片、習題或解答。"
-    },
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
-      "subject": "science",
-      "chapterLocator": "Jd：酸鹼反應；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「酸鹼反應」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Jd：酸鹼反應」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開課程與教材產品資訊",
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Jd：酸鹼反應；公開單元化資源定位",
-      "sourceUrl": "https://www.hle.com.tw/",
+      "chapterLocator": "新竹市新科國中康軒版自然理化課程計畫；酸鹼反應整體課程、探究與評量定位，涵蓋 Jd-Ⅳ-1 至 Jd-Ⅳ-6；核讀 2026-09-20。",
+      "sourceUrl": "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "用於比對生活情境、實驗觀察與概念整理的連接方式；本課自行設計安全的 pH／指示劑互動與錯誤診斷。",
-      "copyrightBoundary": "只研究公開索引與產品方向，不複製課文、插圖、實驗、題目、答案或教師用內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Jd：酸鹼反應」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市丹鳳高中國中部南一版自然課程計畫；酸鹼反應整體課程、探究與評量定位，涵蓋 Jd-Ⅳ-1 至 Jd-Ⅳ-6；核讀 2026-09-20。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEyTDNCMFlWOHlNVEJmT1RVeE5Ua3dOVjg0TWprNU9DNXdaR1k9&fname=WW54RPOKRK44TXHH44VW30WTRKSWWSICDGJC3510LPIDWWB5FCFCA0PO34OK50RKMKPOCCML44VWA4LOYWB4MO25QOB0B1LKNPYTA4PKUWMKPOB4USKK45FCRKPOSSYXDGA0NOXTRKHCDC20USB004NPVXGDUTOOLKUS45TWGGLKCDUSNOCCUXYXDGFGMOSXQOB4542520ROWSWS01A110VSA0B0ZSPO2054FGB0WW40CD21IG04KPLOWW30WTB1US34YS35LPJDA0QPKPNO1145",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Jd：酸鹼反應」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -204,55 +225,103 @@
   "versionResearch": [
     {
       "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與公開資源",
+      "edition": "南一版國中八年級自然科學公立學校課程計畫",
       "sourceType": "public-web",
-      "sourceLocator": "https://course.cyc.edu.tw/upfile/course109/sub1/14507919853792884.pdf；Jd 酸鹼反應單元定位",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MelEyTDNCMFlWOHlNVEJmT1RVeE5Ua3dOVjg0TWprNU9DNXdaR1k9&fname=WW54RPOKRK44TXHH44VW30WTRKSWWSICDGJC3510LPIDWWB5FCFCA0PO34OK50RKMKPOCCML44VWA4LOYWB4MO25QOB0B1LKNPYTA4PKUWMKPOB4USKK45FCRKPOSSYXDGA0NOXTRKHCDC20USB004NPVXGDUTOOLKUS45TWGGLKCDUSNOCCUXYXDGFGMOSXQOB4542520ROWSWS01A110VSA0B0ZSPO2054FGB0WW40CD21IG04KPLOWW30WTB1US34YS35LPJDA0QPKPNO1145；酸鹼反應整體 Jd 對照定位與 Jd-Ⅳ-1 至 Jd-Ⅳ-6 章節界線；核讀 2026-09-20。",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["酸鹼性可由指示劑與 pH 等證據判斷", "酸與鹼反應需連結中和及物質變化"],
-        "representations": ["以顏色、pH 數線、粒子示意與文字方程式互相轉換"],
-        "examplesOrEvidence": ["公開課程計畫提供單元方向；本課另自編三杯 pH 資料與粒子圖"],
-        "misconceptions": ["把指示劑顏色直接當成溶質種類或身分的證明", "把中和誤解為酸鹼溶液中的所有粒子都消失"],
-        "assessmentEmphasis": ["由多項證據判斷酸鹼性並說明中和的條件與限制"]
+        "concepts": [
+          "酸鹼性可由指示劑與 pH 等證據判斷",
+          "酸與鹼反應需連結中和及物質變化"
+        ],
+        "representations": [
+          "以顏色、pH 數線、粒子示意與文字方程式互相轉換"
+        ],
+        "examplesOrEvidence": [
+          "公開課程計畫提供單元方向；本課另自編三杯 pH 資料與粒子圖"
+        ],
+        "misconceptions": [
+          "把指示劑顏色直接當成溶質種類或身分的證明",
+          "把中和誤解為酸鹼溶液中的所有粒子都消失"
+        ],
+        "assessmentEmphasis": [
+          "由多項證據判斷酸鹼性並說明中和的條件與限制"
+        ]
       },
       "licenseBoundary": "只採公開定位與概念方向；不複製受保護教材文字、圖片、實驗、習題或解答。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "edition": "康軒版國中八年級自然科學公立學校課程計畫",
       "sourceType": "public-web",
-      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；Jd 酸鹼反應公開資源定位",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf；酸鹼反應整體 Jd 對照定位與 Jd-Ⅳ-1 至 Jd-Ⅳ-6 章節界線；核讀 2026-09-20。",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["以生活材料引出酸鹼性，再以指示劑與中和活動建立概念", "觀察結果需回到可比較的數值或模型"],
-        "representations": ["透過顏色變化、pH 讀值與反應粒子圖呈現同一現象"],
-        "examplesOrEvidence": ["公開影音核對活動順序與表徵方向；本課自編高麗菜汁互動台"],
-        "misconceptions": ["以為指示劑顏色相同便代表溶液濃度或成分相同", "以為任意酸鹼混合後都必定得到 pH 7 的溶液"],
-        "assessmentEmphasis": ["能從控制變因、讀值與粒子變化共同說明反應"]
+        "concepts": [
+          "以生活材料引出酸鹼性，再以指示劑與中和活動建立概念",
+          "觀察結果需回到可比較的數值或模型"
+        ],
+        "representations": [
+          "透過顏色變化、pH 讀值與反應粒子圖呈現同一現象"
+        ],
+        "examplesOrEvidence": [
+          "公開影音核對活動順序與表徵方向；本課自編高麗菜汁互動台"
+        ],
+        "misconceptions": [
+          "以為指示劑顏色相同便代表溶液濃度或成分相同",
+          "以為任意酸鹼混合後都必定得到 pH 7 的溶液"
+        ],
+        "assessmentEmphasis": [
+          "能從控制變因、讀值與粒子變化共同說明反應"
+        ]
       },
       "licenseBoundary": "只研究公開章節定位與教學結構；本課正文、例題、選項、提示與回饋均獨立撰寫。"
     },
     {
       "publisher": "hanlin",
-      "edition": "翰林國中自然公開課程與教材產品資訊",
+      "edition": "翰林版國中八年級自然科學公立學校簡案",
       "sourceType": "public-web",
-      "sourceLocator": "https://www.hle.com.tw/；Jd 酸鹼反應單元化資源定位",
-      "reviewedAt": "2026-09-01",
+      "sourceLocator": "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf；酸鹼反應整體 Jd 對照定位與 Jd-Ⅳ-1 至 Jd-Ⅳ-6 章節界線；核讀 2026-09-20。",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["將酸鹼概念放入生活與實驗情境，要求從觀察進入解釋", "中和判讀須同時關注反應比例、測量資料與證據適用範圍"],
-        "representations": ["以生活情境、實驗表格、pH 尺度與微觀粒子模型連貫呈現"],
-        "examplesOrEvidence": ["公開產品資訊支持情境化與探究導向；本課加入制酸與土壤資料判讀"],
-        "misconceptions": ["把『中和』當作酸鹼性與所有溶質同時歸零的錯誤想法", "忽略不同指示劑有不同變色範圍而過度解讀顏色"],
-        "assessmentEmphasis": ["區分觀察、推論與限制，能把模型遷移到新資料"]
+        "concepts": [
+          "將酸鹼概念放入生活與實驗情境，要求從觀察進入解釋",
+          "中和判讀須同時關注反應比例、測量資料與證據適用範圍"
+        ],
+        "representations": [
+          "以生活情境、實驗表格、pH 尺度與微觀粒子模型連貫呈現"
+        ],
+        "examplesOrEvidence": [
+          "公開產品資訊支持情境化與探究導向；本課加入制酸與土壤資料判讀"
+        ],
+        "misconceptions": [
+          "把『中和』當作酸鹼性與所有溶質同時歸零的錯誤想法",
+          "忽略不同指示劑有不同變色範圍而過度解讀顏色"
+        ],
+        "assessmentEmphasis": [
+          "區分觀察、推論與限制，能把模型遷移到新資料"
+        ]
       },
       "licenseBoundary": "只使用公開索引、產品方向與概念定位；不複製課文、插圖、實驗、題目、答案或教師用內容。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["酸鹼性可用指示劑與 pH 等證據判斷", "H⁺ 與 OH⁻ 的反應是中和的粒子核心", "中和結果受濃度、體積與比例及測量範圍限制"],
-    "versionDifferences": ["南一公開資料提供酸鹼概念與中和的課程定位", "康軒公開資源強調顏色觀察、數值表徵與活動串連", "翰林公開資訊提供生活情境、探究與模型遷移的組織方向"],
-    "originalAdditions": ["用高麗菜汁、pH 與粒子圖同步操作的安全互動台", "將『顏色變化不等於恰好中和』設為核心迷思診斷", "以新聞式產品宣稱資料卡練習證據、推論與限制分層"],
-    "llmSynthesisNote": "LLM 依官方課綱、Knowledge Graph 與目前可取得的南一、康軒、翰林公開資料，比較酸鹼判斷的概念順序、表示法、活動與迷思後，以自己的話獨立撰寫本單元；未複製出版社課文、圖片、實驗、題目、答案或影音文字。"
+    "commonCore": [
+      "酸鹼反應要把宏觀 pH／指示劑、微觀 H⁺／OH⁻ 和反應產物放在同一證據鏈。",
+      "稀釋、中和、氧化物反應、碳酸鹽反應及導電度各提供不同層次的酸鹼證據。",
+      "生活用途和危險性必須由成分、濃度、反應容量、標示與安全資料共同判斷。"
+    ],
+    "versionDifferences": [
+      "南一公開線索較適合由生活酸鹼材料及反應現象進入整合概念。",
+      "康軒公開課程資料較突出離子、指示劑、測量與控制變因。",
+      "翰林公開課程計畫補充酸鹼反應、環境材料、用途與安全的連結；公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以『粒子—現象—量測—反應容量—安全』五層框架統整根單元。",
+    "把酸雨、導電度、稀釋、未知氧化物及生活產品中和能力作為跨概念遷移活動。",
+    "以不同酸鹼樣本的 pH、導電度和滴定資料交叉判斷酸鹼性與可中和量，標示稀釋改變濃度但不等於移除溶質的證據邊界。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公開試題／課程資料能力方向，重新撰寫 Jd 根單元酸鹼反應整合題；未複製教材或試題文字、圖表與答案，Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "simulation": {
     "id": "sim-science-jd",
@@ -261,7 +330,42 @@
     "model": "general",
     "goal": "以安全探究步驟理解「酸鹼反應」並用證據修正解釋。",
     "mission": "針對「Jd：酸鹼反應」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"acid-base-neutralization","objective":"以 pH、指示劑與粒子模型判讀酸鹼中和及濃度影響。","predictionPrompt":"酸與鹼混合後 pH 接近中性是否必然代表完全反應？還需知道什麼？","steps":[{"action":"量測混合前後 pH 並標記酸、鹼離子","equation":"pH=-log[H+]"},{"action":"逐步加入體積與濃度已知的溶液觀察中和點","equation":"H+ + OH-=H2O"},{"action":"比較指示劑顏色與滴定曲線，指出溫度和濃度限制","equation":"equivalence=stoichiometry"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以 pH、指示劑與粒子模型判讀酸鹼中和及濃度影響。",
+      "predictionPrompt": "酸與鹼混合後 pH 接近中性是否必然代表完全反應？還需知道什麼？",
+      "steps": [
+        {
+          "action": "量測混合前後 pH 並標記酸、鹼離子",
+          "equation": "pH=-log[H+]",
+          "id": "step-1",
+          "reason": "本步把「量測混合前後 pH 並標記酸、鹼離子」和「pH=-log[H+]」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「量測混合前後 pH 並標記酸、鹼離子」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "逐步加入體積與濃度已知的溶液觀察中和點",
+          "equation": "H+ + OH-=H2O",
+          "id": "step-2",
+          "reason": "本步把「逐步加入體積與濃度已知的溶液觀察中和點」和「H+ + OH-=H2O」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「逐步加入體積與濃度已知的溶液觀察中和點」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "比較指示劑顏色與滴定曲線，指出溫度和濃度限制",
+          "equation": "equivalence=stoichiometry",
+          "id": "step-3",
+          "reason": "本步把「比較指示劑顏色與滴定曲線，指出溫度和濃度限制」和「equivalence=stoichiometry」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「比較指示劑顏色與滴定曲線，指出溫度和濃度限制」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "以相近顏色但不同濃度的樣品重跑 pH 與粒子比較，標示指示劑變色範圍、未知成分和安全處置限制",
+          "equation": "顏色線索 ≠ 完整身分；結論 = pH + 濃度／體積 + 粒子模型 + 安全界線",
+          "id": "step-4",
+          "reason": "指示劑只在特定範圍提供顏色訊號，相近顏色可能來自不同濃度或成分；加入定量 pH、物質量和控制條件，才能判斷中和程度而不把顏色當成安全證明。",
+          "feedback": "請記錄指示劑種類、滴數、體積、pH、濃度與粒子資料；若未知成分或安全性未測，就保留不確定性並禁止品嘗或任意混合。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以 pH、指示劑與粒子模型判讀酸鹼中和及濃度影響。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

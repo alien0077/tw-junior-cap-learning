@@ -2,41 +2,76 @@
   "id": "question-chinese-language-arts-domain-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "讀一則新聞時，標題說『全校都喜歡新午餐』，正文只調查 25 位學生。讀者最應保持哪種態度？",
+  "prompt": "新聞標題說「全校都喜歡新午餐」，正文只調查 25 位學生；讀者應保持？",
   "options": [
     {
       "id": "A",
-      "text": "只看標題即可不讀正文"
+      "text": "立刻相信標題"
     },
     {
       "id": "B",
-      "text": "把 25 人當成全國學生"
+      "text": "只要 25 人就能代表所有人"
     },
     {
       "id": "C",
-      "text": "檢查樣本與『全校』結論是否相符"
+      "text": "要求查看樣本、調查方法與結論範圍，不把標題當全校事實"
     },
     {
       "id": "D",
-      "text": "直接接受標題的全稱判斷"
+      "text": "因為數字少就認定午餐難吃"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-learning-focus"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "調查對象只有 25 人，不能直接支持『全校』的概括結論，需檢查證據範圍。"
+    "value": "B",
+    "explanation": "樣本與全校的範圍不一致，讀者需查方法與限制，不能直接接受全稱標題。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究語文領域常見閱讀、表達與資料判讀題型（閱讀與判斷）；官方課綱索引：https://www.k12ea.gov.tw/Tw/Common/SinglePage?filter=11C2C6C1-D64E-475E-916B-D20C83896343。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究公告、新聞、詩文、討論、查證、受眾、表格與修訂的整合語文能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫語文領域總論題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-language-arts-domain"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-language-arts-domain",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "語文理解、表達與查證",
+      "observedPattern": "公立學校國文評量結合公告、新聞、詩文、討論、資料查證、受眾調整、表格閱讀與作文修訂，要求在語境中整合理解與表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "新聞、詩文與口語溝通",
+      "observedPattern": "公立學校國文評量結合公告、新聞、詩文、討論、資料查證、受眾調整、表格閱讀與作文修訂，要求在語境中整合理解與表達；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較主張範圍與資料範圍，再追問樣本代表性、問卷設計與原始結果。",
+  "solutionSteps": [
+    "讀題定位：圈出「新聞證據」與對象、目的、證據、語氣、媒介或修訂線索。",
+    "整合語文功能：把理解、表達、查證與受眾需求放回完整情境；本題核心是「樣本與全校的範圍不一致，讀者需查方法與限制，不能直接接受全稱標題。」",
+    "核對正解：選項 B 能同時符合文本證據、溝通目的與表達分寸。",
+    "排除誘答：檢查是否把標題當事實、把個人感覺當證據、忽略受眾，或只修字詞不處理篇章。",
+    "回讀驗證：從讀者或聽眾角度重述，確認資訊可理解、主張可查核、行動可執行。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

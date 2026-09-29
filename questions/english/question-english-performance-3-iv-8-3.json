@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-8-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-8／理解短文訊息書信主要內容」task, what is the best way to prepare question 3?",
+  "prompt": "Read the email.\n\nSubject: Science Fair Team\nOur team has been accepted for the school science fair. Please choose one of the two setup times in the shared form before 6 p.m. Wednesday. The room number will be sent after the teacher confirms our choice. You do not need to bring the model on Wednesday; bring it on Friday morning. If you cannot open the form, tell me your preferred time in a reply.\n—Evan\n\nWhat should a team member do by Wednesday evening?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Bring the model to the classroom"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Wait for the room number before choosing a time"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Select a setup time or reply with a preference if the form does not work"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Ask the teacher to send the room number again"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-8"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-8／理解短文訊息書信主要內容, question 3."
+    "value": "C",
+    "explanation": "期限前要完成的是在表單選一個布置時段；若表單不能開啟，就回信告知偏好的時段。模型要到星期五早上才帶來，教室號碼則要等老師確認時段後才會寄出。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "僅將公立學校公開英語評量的短篇閱讀理解能力作 pattern-only 參照；本文、選項、答案與解析均獨立撰寫。",
+    "authoringNote": "Original English text and item authored for KG 3-Ⅳ-8; public-school exam references inform only the skill pattern. Publisher-version fusion, rights/content review, and second-round review remain incomplete; keep draft."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中114學年度第2學期九年級第1次段考英文科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "114學年度第2學期",
+      "subject": "english",
+      "locator": "PDF第3頁閱讀題組第45至47題：辨識消防安全訊息的對象、行動呼籲與目的",
+      "locatorLevel": "item",
+      "observedPattern": "以生活安全文字檢查讀者是否能辨認訊息對象及應採取的行動；僅吸收目的／行動判讀能力，不沿用原情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1706770089045DwNPg1SE.pdf",
+      "title": "臺北市立內湖國中112學年度第1學期七年級第3次段考英文科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "112學年度第1學期",
+      "subject": "english",
+      "locator": "PDF第4頁閱讀題組（二）第51至52題：整合時間表與公告註記的不同資訊",
+      "locatorLevel": "item",
+      "observedPattern": "須先辨認時間表與附註各自提供的資訊，再組合開放時間及例外條件；本題自行撰寫公告與日期。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "遇到多個日期時，先把每個日期連到它負責的動作，再處理條件句提供的替代方案。",
+  "solutionSteps": [
+    "圈出 before 6 p.m. Wednesday，這是題目指定的期限。",
+    "找期限前的動作：choose one of the two setup times in the form。",
+    "讀 If 子句；表單無法開啟時，替代作法是回信說偏好時段。",
+    "把 Friday morning 的帶模型和事後寄教室號碼排除，兩者都不是星期三前的任務。",
+    "完整回答須涵蓋一般作法及表單故障的備案，因此選 C。"
+  ]
 }

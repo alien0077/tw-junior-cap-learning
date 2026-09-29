@@ -2,41 +2,76 @@
   "id": "question-chinese-performance-1-iv-3-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "聽到『教室午後很熱，因此我們調整窗簾與座位』，兩部分的關係是什麼？",
+  "prompt": "同學說「應把午休延長十分鐘，因為最近很多人吃不完午餐」；這段話的主張是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "前後兩句完全沒有關聯"
+      "text": "午休應延長十分鐘"
     },
     {
       "id": "B",
-      "text": "後者是前者的時間地點"
+      "text": "最近很多人吃不完午餐"
     },
     {
       "id": "C",
-      "text": "前者是後者的反面例子"
+      "text": "午餐發生在午休"
     },
     {
       "id": "D",
-      "text": "前者說明原因或情況，後者提出因應做法"
+      "text": "同學正在說話"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-performance-1-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "教室很熱是情況，調整窗簾與座位是因應做法；『因此』連接前因與後果或對策。"
+    "value": "A",
+    "explanation": "希望聽者接受的行動方案是主張；吃不完午餐是支持它的現象與理由。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究聆聽邏輯、證據與問題解決判讀題型（因果與對策）；課綱 1-Ⅳ-3：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究主張／理由、因果界線、條件、反例、方案比較與試辦修正。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文聆聽與溝通表現 Ab-Ⅳ-3 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-1-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-1-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口語論證、理由與證據",
+      "observedPattern": "公立學校國文評量以口頭提案的主張／理由、因果界線、條件分支、反例、方案比較、反方成本與試辦修正要求邏輯聆聽；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "邏輯聆聽、條件與反例",
+      "observedPattern": "公立學校國文評量以口頭提案的主張／理由、因果界線、條件分支、反例、方案比較、反方成本與試辦修正要求邏輯聆聽；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找帶有應該、需要或行動要求的句子，再把因為後面的內容標成理由。",
+  "solutionSteps": [
+    "讀題定位：圈出「主張與理由」與主張、理由、條件、反例、方案、成本或資料範圍。",
+    "拆解邏輯：把聽到的句子改成主張—證據—限制鏈，再依「希望聽者接受的行動方案是主張；吃不完午餐是支持它的現象與理由。」檢查跳躍。",
+    "核對正解：選項 A 能保留原說話者的條件與未知，且提出可執行或可檢查的判斷。",
+    "排除誘答：檢查是否把一次資料推成普遍因果、忽略反方成本，或只用口號與人氣作決策。",
+    "回讀驗證：確認問題定義、證據範圍、受影響者與修正步驟彼此相連。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

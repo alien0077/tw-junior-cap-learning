@@ -2,41 +2,84 @@
   "id": "question-math-performance-n-iv-9-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "計算機算得某數值為 6.247，題目要求答案精確到小數第一位，應如何處理？",
+  "prompt": "計算機顯示圓周率約為 3.1415926，若周長答案要求小數點後兩位，應使用哪個近似值？",
   "options": [
     {
       "id": "A",
-      "text": "直接寫 6.247，保留所有畫面位數"
+      "text": "3.14"
     },
     {
       "id": "B",
-      "text": "捨去成 6.2，不必看下一位"
+      "text": "3.15"
     },
     {
       "id": "C",
-      "text": "四捨五入成 6.2，因為小數第二位是 4"
+      "text": "3.141"
     },
     {
       "id": "D",
-      "text": "進位成 7.0，因為有小數"
+      "text": "3.142"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-n-iv-9"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "保留小數第一位要觀察小數第二位；6.247 的小數第二位是 4，小於 5，所以四捨五入後為 6.2。"
+    "value": "A",
+    "explanation": "保留小數點後兩位要看第三位 1，小於 5，因此 π≈3.14，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考計算機操作、估算、四捨五入、近似值與誤差判讀題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供計算機與誤差能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數與量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-9"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-9",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "計算機按鍵與結果判讀、四捨五入、截尾、絕對誤差、有效位數與量測誤差；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求讀取計算結果、依題目精度處理近似值，或由顯示位數判斷誤差界線；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "計算機按鍵與結果判讀、四捨五入、截尾、絕對誤差、有效位數與量測誤差；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求讀取計算結果、依題目精度處理近似值，或由顯示位數判斷誤差界線；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "計算機按鍵與結果判讀、四捨五入、截尾、絕對誤差、有效位數與量測誤差；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求讀取計算結果、依題目精度處理近似值，或由顯示位數判斷誤差界線；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先依題目精度截取候選位數，再用下一位判斷是否進位。",
+  "solutionSteps": [
+    "目標是保留百分位。",
+    "π 的前兩位小數為 14。",
+    "觀察第三位小數是 1。",
+    "1<5，不進位。",
+    "得到 3.14，選 A。"
+  ]
 }

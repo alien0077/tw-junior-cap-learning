@@ -2,23 +2,23 @@
   "id": "question-science-content-f-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年11月29日校園實驗室的觀察中，比較兩地「F：地球環境」資料時，甲地迎風坡年雨量約 63900 mm、乙地背風坡約 43845 mm，最合理的做法是？",
+  "prompt": "湖泊優養化時，藻類大量繁殖後水中溶氧下降，最合理的因果鏈是？",
   "options": [
     {
       "id": "A",
-      "text": "在「F：地球環境」中只看 63900 mm 的單一數值便下結論"
+      "text": "營養鹽增加→藻類增生→分解作用耗氧→水生生物缺氧"
     },
     {
       "id": "B",
-      "text": "同時比較地形、風向、觀測期間與 63900、43845 mm 資料"
+      "text": "氧氣增加→魚類全部死亡→藻類消失"
     },
     {
       "id": "C",
-      "text": "在「F：地球環境」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "陽光減少直接生成營養鹽"
     },
     {
       "id": "D",
-      "text": "在「F：地球環境」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "水溫與藻類完全無關"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「F：地球環境」。"
+    "value": "A",
+    "explanation": "氮磷等營養鹽增加會促進藻類生長，死亡有機物被分解時消耗溶氧，造成缺氧。 正確答案為選項 A：「營養鹽增加→藻類增生→分解作用耗氧→水生生物缺氧」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的地球圈層、污染、生態與永續能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 F 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-f"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-f",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "地球環境、污染、生態與環境資料判讀",
+      "pattern": "取由圈層互動、污染因果、資源利用與資料證據推論環境變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由圈層互動、污染因果、資源利用與資料證據推論環境變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "依營養鹽、藻類、有機物分解與溶氧的順序判斷。",
+  "solutionSteps": [
+    "定位概念：圈出 F 地球環境中的物質循環、生態系、污染、資源或環境決策。",
+    "整理證據：分開來源、流向、族群關係、測量指標與時間尺度。",
+    "套用原理：氮磷等營養鹽增加會促進藻類生長，死亡有機物被分解時消耗溶氧，造成缺氧。",
+    "排除干擾：檢查因果鏈、對照條件與環境證據，正確選項是「營養鹽增加→藻類增生→分解作用耗氧→水生生物缺氧」。",
+    "最後回查：答案「營養鹽增加→藻類增生→分解作用耗氧→水生生物缺氧」符合題幹，沒有把單一觀察擴張成無條件結論。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

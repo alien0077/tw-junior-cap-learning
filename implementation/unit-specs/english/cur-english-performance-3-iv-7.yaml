@@ -1,0 +1,147 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-7
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-7
+  title: 3-Ⅳ-7：理解對話主要內容
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-7：理解對話主要內容
+    curriculumIntent: 3-Ⅳ-7：理解對話主要內容
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 從多輪對話整合人物、問題、回應及後續行動，寫出不過窄的主旨
+  - 區分主旨、時間地點細節、順序、說話者立場、代名詞指涉與可支持的推論
+  - 以原句證據說明答案，並將證據鏈遷移至不同校園情境
+  prerequisites:
+  - 能辨認短對話中的說話者與基本事件
+  - 能引用一句文字線索支持簡短回答
+  coreConcepts:
+  - 對話主旨必須涵蓋關鍵問題與對應回應，不能由單一名詞代表
+  - 時間、地點與參與者細節必須連回題目所問的活動或行動
+  - 代名詞、順序及推論均須回到前後話輪核對
+  misconceptions:
+  - 把最醒目的地點或最後一句誤當成整段對話主旨
+  - 混淆彼此碰面時間與活動實際開始時間
+  - 只憑代名詞最近的名詞猜指涉，忽略語意與後續動作
+  - 把建議當成已執行，或把合理猜測寫成對話明示事實
+  contentFlow:
+  - 'hook: 對照「只記得博物館」與「錯過公車後安排接送」兩種摘要，預測何者涵蓋整段'
+  - 'activate-prerequisite: 先辨認每一輪的說話者與事件'
+  - 'visualize: 將原創對話逐句列出，並以問題—回應—下一步事件鏈並排呈現'
+  - 'predict: 學生先輸入主旨猜測，答案與證據選項暫不揭露'
+  - 'manipulate: 點選對話句子作證，至少組合一項問題線索和一項處理安排'
+  - 'observe: 證據標記同步顯示說話者、句子及其在事件鏈的功能'
+  - 'explain: 選出涵蓋問題與處理方式的主旨並說明排除單一細節的理由'
+  - 'formalize: 歸納主旨需覆蓋核心事件、細節題按欄位定位、推論不得超出話語證據'
+  - 'transfer: 在投影設備故障新對話中選擇替代方案、標記證據並寫出推理'
+  - 'exit-ticket: 說明主旨如何連接問題和回應，並指出一個對話未能確定的資訊'
+  visualizations:
+  - 對話逐句清單同步顯示說話者標籤、證據選取狀態與事件功能文字
+  - 主旨摘要與原句證據並列，讓問題、回應和下一步可逐項核對
+  - 所有狀態均以文字與標籤呈現，不依賴顏色或動畫辨識
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-7-I01
+    component: DialogueComprehensionLab
+    purpose: 讓學生先預測對話主旨，再標記問題／回應原句，檢查整合答案並遷移至設備故障新情境
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      prediction: ''
+      transferCompleted: false
+    studentActions:
+    - 先以文字提交主旨預測，系統保存原答且不先顯示正解
+    - 逐句選取能說明問題與後續安排的對話證據
+    - 選擇主旨選項並依提示修正證據不足或過度聚焦單一細節的判斷
+    - 在新對話選擇處理方案、再次標記原句並以至少15字解釋推理
+    visualRules:
+    - 選取證據後同步更新該句的文字狀態與aria-pressed，不移除完整對話
+    - 主旨解鎖前保留預測、證據與錯答次數；重載可還原目前進度
+    - 錯答先提示回看問題／回應線索，第二次仍錯時再增加排除策略，不提前顯示答案
+    - 320、375及768像素版面皆不得裁切題幹、對話行、選項或回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-7-I01
+      trigger: 學生只選出museum等醒目字詞而未同時辨認錯過公車與接送安排
+      prompt: 哪一句呈現遇到的問題？哪一句說明接下來如何處理？
+      expectedEvidence: 能選取missed bus和母親約定接送的對話句，並說明兩者如何構成事件主旨
+    feedback:
+      correct: 確認問題句和處理安排句共同支持主旨，再要求以投影故障對話驗證同一策略。
+      incorrect: 第一次提示回找問題和後續回應；再次錯誤時提示排除只重複單一地點、人物或未出現行動的選項，不直接代答。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 DialogueComprehensionLab 僅採用先預測、再標記證據及逐步回饋的教學方法；原創對話、題目與選項均由本課撰寫。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課互動以逐句對話證據建立事件鏈，不複製任何示範教材內容；錯答後保留重試並提供單元專屬提示。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "互動控制項使用原生按鈕、radio、label、fieldset、狀態文字與aria-live，鍵盤可操作並支援低動態偏好。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "對話與證據功能均提供可讀文字及標籤；窄螢幕改為單欄，不以顏色作唯一線索。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 使用設備故障和簡報轉移的新對話，不沿用公車情境；要求由多輪提議與分工判斷共同方案
+    requiredResponse: 選擇替代方案、標出支持方案的發言，並以至少15字解釋證據與結論的對應
+    scoring: 方案正確1、證據相關1、理由說明完整1
+  exitTicket:
+    prompt: 哪兩輪話語合起來才能概括對話主旨？若拿掉處理安排那一句，摘要會遺漏什麼？
+    successCriteria:
+    - 說明主旨同時包含核心問題與回應
+    - 引用至少一句對話原文作證
+    - 指出資料不足時不能推定的細節
+  expressionExtension:
+    applicable: true
+    task: 用80至120字英文整理一段社團排程對話：摘要雙方衝突、最後共識及仍待確認的資訊
+    constraint: 學生先寫並標記支持共識的發言；系統只提示遺漏的事件或證據，不代寫完整摘要
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 對話行以說話者與原句呈現；證據按鈕回報選取狀態；階段更新與錯誤提示使用aria-live
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始狀態不顯示正解；提交空白預測不得解鎖證據階段；有效預測、證據選取與進度重載後仍保留。
+  - 必須選出錯過公車與接送安排兩句才解鎖主旨題；只選一個醒目地點或人物時顯示針對性提示並保留重試。
+  - 錯誤主旨選項不揭露答案，第一次提示核心事件，第二次提示排除過窄或添加資訊的選項。
+  - 遷移題須同時選對設備方案、標記相應提議／分工原句，並輸入至少15字推理才完成。
+  - 以320、375、768像素 viewport 檢查對話句、證據按鈕、選項和回饋無水平溢位；只用鍵盤完成全流程。
+  - 驗證label、fieldset／legend、aria-pressed、aria-live與prefers-reduced-motion；無外部資料時 lesson 內嵌對話仍可作為離線 fallback 完成互動。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 對話事件鏈的主旨及逐句證據可在 DialogueComprehensionLab 中實際操作
+  - 「醒目細節即主旨」迷思能被誘發、診斷並以兩階提示處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-7
+    role: official-curriculum-source-of-truth

@@ -50,7 +50,7 @@
       "publisher": "nani",
       "edition": "均一教育平台類南一版七下數學章節索引",
       "sourceType": "local-download",
-      "sourceLocator": "受控快取 math-junyi.html；公開索引列「第五章 統計圖表與資料分析」及「5-1 統計圖表與平均數、中位數、眾數」，明示依南一版章節架構編排。",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；受控快取 math-junyi.html；公開索引列「第五章 統計圖表與資料分析」及「5-1 統計圖表與平均數、中位數、眾數」，明示依南一版章節架構編排。",
       "reviewedAt": "2026-08-29",
       "findings": {
         "concepts": [
@@ -76,7 +76,7 @@
       "publisher": "kanghsuan",
       "edition": "康軒國中數學公開影音索引與章節對照",
       "sourceType": "local-download",
-      "sourceLocator": "受控快取 math-knsh-public.xml；textbook-mapping/math/kanghsuan-chapters.json，七下 5-1「統計圖表與資料分析」對應 D-7-1、D-7-2。",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；受控快取 math-knsh-public.xml；textbook-mapping/math/kanghsuan-chapters.json，七下 5-1「統計圖表與資料分析」對應 D-7-1、D-7-2。",
       "reviewedAt": "2026-08-29",
       "findings": {
         "concepts": [
@@ -102,7 +102,7 @@
       "publisher": "hanlin",
       "edition": "翰林國中數學公開解題影音網七下索引",
       "sourceType": "local-download",
-      "sourceLocator": "受控快取 hanlin-math-index.html；textbook-mapping/math/hanlin-official-2026.json，七下第 5 章「統計圖表與統計數據」為官方公開章節定位。",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1B/；受控快取 hanlin-math-index.html；textbook-mapping/math/hanlin-official-2026.json，七下第 5 章「統計圖表與統計數據」為官方公開章節定位。",
       "reviewedAt": "2026-08-29",
       "findings": {
         "concepts": [
@@ -123,6 +123,33 @@
         ]
       },
       "licenseBoundary": "受控快取與公開索引只作章節定位和概念研究；不複製、散布、改作或重建翰林教材、影片、題目、答案、圖表或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林版國中數學七年級公開校方課程計畫交叉證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nkjh.tyc.edu.tw/sites/default/files/2021-04/%E2%97%8F6-2-3%E6%95%B8%E5%AD%B8.pdf；PDF p.6 lines 286-287",
+      "reviewedAt": "2026-09-07",
+      "findings": {
+        "concepts": [
+          "D-7-2：統計數據 的學習範圍與課程定位",
+          "比較平均數、中位數與眾數，並以計算機的統計功能支援較長資料。",
+          "此為學校課程計畫的範圍與順序證據，不等同完整出版社章節。"
+        ],
+        "representations": [
+          "依單元的符號、圖形、數線、資料表徵或情境列式進行原創融合。"
+        ],
+        "examplesOrEvidence": [
+          "南崁國中公開課程計畫列出學習內容、目標、評量與教材資源；本 lesson 不複製其教材或題目。"
+        ],
+        "misconceptions": [
+          "公開課程計畫不能單獨證明學生已理解，也不能替代本單元的內容審查。"
+        ],
+        "assessmentEmphasis": [
+          "計畫列出的紙筆、小組討論、口頭回答與作業僅作為評量線索。"
+        ]
+      },
+      "licenseBoundary": "僅保存公立學校公開課程計畫的 URL、頁碼與概念定位；不複製出版社教材、學習單、題目、答案、圖片或版面，lesson 維持 draft。"
     }
   ],
   "fusionRecord": {
@@ -143,53 +170,55 @@
   },
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "均一教育平台類南一版七下數學公開索引",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "第五章「統計圖表與資料分析」；5-1「統計圖表與平均數、中位數、眾數」。",
-      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
+      "chapterLocator": "公立校方翰林版七年級數學課程計畫；坐標、統計圖表、資料整理與平均數／中位數／眾數的章節及評量定位；D-7-2：統計數據 的概念、表徵與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.syajh.tp.edu.tw/uploadfiles/annex/20250920073141_1.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "assessment-pattern"
-      ],
-      "outcome": "確認三種中心量在七下統計章節的公開細項定位，改寫為由問題目的選擇指標活動。",
-      "copyrightBoundary": "只研究公開索引與能力定位；不複製、下載重製、改寫或發布南一或均一教材、題庫、影片與其內容。"
-    },
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中數學公開影音索引",
-      "subject": "math",
-      "chapterLocator": "七下 5-1「統計圖表與資料分析」，既有 mapping 對應 D-7-1、D-7-2。",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
-      "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "研究公開例題／隨堂練習 metadata 的節奏，另以自編資料卡加入離群值的重算與理由檢查。",
-      "copyrightBoundary": "只讀取公開索引與既有 mapping；不重製康軒影音、教材、例題、練習、答案、圖表或圖片。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「D-7-2：統計數據」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網七下索引",
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "七下第 5 章「統計圖表與統計數據」；官方公開章節定位。",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1B/",
+      "chapterLocator": "大豐國中公立校方康軒版七年級數學課程計畫；G-7-1 坐標與 D-7-1／D-7-2 統計圖表、資料分析與評量欄位；D-7-2：統計數據 的概念、表徵與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
+        "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "確認資料圖表到統計數據的概念連接，轉為以排序、計算和選擇理由組成的原創互動。",
-      "copyrightBoundary": "只研究公開章節索引；不複製、散布、改作或重建翰林教材、影片、題目、答案、圖表或版面。"
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「D-7-2：統計數據」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "淡水國中 114 學年度七年級第二學期部定課程計畫；南一版 G-7-1、D-7-1、D-7-2 章節與評量欄位；D-7-2：統計數據 的概念、表徵與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=119&file=WVhSMFlXTm9MelkzTDNCMFlWOHhNamcwTlY4M05UZzNOREF3WHpjNE1qQXhMbkJrWmc9PQ%3D%3D&fname=WSGGRPQK20QO41KKLOLK54TXXSMO25JGKLB0NO24CCA1XW40YSYWEGB40054ROEGDGKKDH00DG04ICHCIGNKTS34OPB035MKQP35NOTSUWZWCDUWFH10YWFCRKPOSSYX24XWJG34XSPKSSICDGB040WSHDNPMLOOPOUSUSKLOOA4LKPKVWKK2110TSEG35YWIGB4LKXSQOJCTWICZTA1LKQPSWYWKORK00SSPKROKK04POPO",
+      "access": "public-open",
+      "reviewedAt": "2026-09-20",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「D-7-2：統計數據」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -291,6 +320,17 @@
         ],
         "answer": "A",
         "feedback": "平均數是總量平分的代表值，不是每一筆實際觀測值；是否排除資料要有另外的蒐集或錯誤證據。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "把最後一筆 43 分鐘改成 12 分鐘後，哪個比較最完整？",
+        "options": [
+          "平均數由約 14.3 降為約 9.9；中位數仍是 10，眾數仍是 9 與 10，顯示平均數較受離群值影響",
+          "三種統計量都必須變成 12，因為最後一筆改變會重寫整份資料",
+          "中位數一定改變而平均數不變，因為平均數只看排序後的中間位置"
+        ],
+        "answer": "A",
+        "feedback": "改值後總和由 100 變 69，平均數變為 69÷7≈9.9；排序中間位置與最高次數未變，所以中位數和眾數維持。"
       }
     ]
   },
@@ -337,6 +377,13 @@
           "equation": "合計負擔→平均數；典型位置→中位數；常見值→眾數",
           "reason": "統計量不是排名賽；適合與否取決於提問要保留總量、位置或頻率的哪一種資訊。",
           "feedback": "若說中位數較能描述典型等待，請同時說明 43 為何仍不能隨意刪除，以及資料範圍只有七筆。"
+        },
+        {
+          "id": "step-4",
+          "action": "替換離群卡後重新計算平均數，並保持中位數與眾數的排序／次數證據",
+          "equation": "43→12：總和 69；平均數 69÷7≈9.9；中位數 10；眾數 9、10",
+          "reason": "同一筆資料的改變對三種統計量影響不同；比較前後結果能說明平均數的敏感性，而非只背指標名稱。",
+          "feedback": "若把中位數當平均數重算，請回到排序位置；若把 43 直接刪除，請說明改值必須有資料品質或測量證據。"
         }
       ]
     }

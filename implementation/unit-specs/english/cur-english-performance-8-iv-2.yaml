@@ -1,0 +1,154 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-8-iv-2
+  knowledgeGraphIds:
+  - kg-english-performance-8-iv-2
+  title: 8-Ⅳ-2：介紹國外節慶
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 8-Ⅳ-2：介紹國外節慶
+    curriculumIntent: 8-Ⅳ-2：介紹國外節慶
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以可追溯課綱、Knowledge Graph與公開教學材料作為有限依據，逐課原創融合撰寫；出版社課本正文未取得部分明列未知，不宣稱逐頁版本比較
+    currentEvidenceStatus: curriculum-and-kg-grounded; school-and-third-party-materials-recorded; authored-fusion-manuscript-recorded; publisher-textbook-chapters-pending; user-chatgpt-content-review-reserved
+  learningGoals:
+  - 能用簡易英語介紹一項國外節慶的名稱、地點、時間與一項可查證活動
+  - 能分清整個節慶期間、單場活動日期及來源沒有交代的資訊
+  - 能依不同讀者選擇介紹內容，並避免把局部習俗擴大成所有人共同做法
+  prerequisites:
+  - 能讀懂月份、日期及簡易地點／活動英文句
+  - 能從短資料卡擷取明示事實，並把未知資訊留待查證
+  coreConcepts:
+  - 國外節慶介紹須組織名稱、時間、地點、活動等讀者需要資訊
+  - 整體節慶期間與其中一場主要活動的日期不是同一範圍
+  - 文化主張的語句範圍不可超過來源證據，未知不能以刻板印象填補
+  misconceptions:
+  - 把一張活動照片當作所有居民都參與或代表整個國家的證據
+  - 把兩場主要活動的日期誤當成整個節慶只持續兩天
+  - 用 all、every、always 概括來源只描述的地區、群體或單一場次
+  contentFlow:
+  - 'predict: 先讀旅行者對祇園祭時程的提問，預測整月節期與主要巡行日期可能被混為一談之處'
+  - 'manipulate: 把邀請卡資訊分成festival period、procession dates、地點與活動，按不同讀者需求重組'
+  - 'observe: 對照來源確認整體節期與7月17／24日巡行的層級，並標示照片無法證明的參與範圍'
+  - 'explain: 用來源可支持的時間及地點寫簡易英文，指出未知並修正all/every等超出證據的表述'
+  - 'audience-transfer: 依低年級學生或旅行者重新排序必要資訊'
+  - 'scope-check: 診斷all/every過度概括，必要時縮小或補證據'
+  - 'exit-ticket: 用來源可追溯的事實回答日期、地點、活動與未知'
+  visualizations:
+  - 事實／來源解釋／尚未知三欄表；每則事實附可回查來源標籤
+  - 以「festival period」與「main procession dates」並列表，避免混淆整體時長和子活動日期
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-8-IV-2-I01
+    component: GuidedChoiceBlock
+    purpose: 讓學生依來源判斷節慶日期、地點、活動層級及資料缺口，並為不同讀者選擇有證據的簡易英語介紹
+    initialState:
+      currentStep: 0
+      answersRevealed: false
+      attemptedSteps: []
+    studentActions:
+    - 先閱讀來源事實與情境，再以鍵盤或觸控選擇最受支持的英語句子
+    - 答錯時根據日期、地點或範圍詞提示重新作答；正確後閱讀逐步解析
+    - 在最後一步為旅行者找出資料缺口，不能用猜測補成事實
+    visualRules:
+    - 每一步提交答案後才顯示該步回饋，錯答提示不得直接洩漏答案
+    - 節期與子活動日期並列時以文字標籤說明各自範圍
+    - 不以顏色單獨承擔正誤、來源或文化範圍意義
+    - 窄螢幕不得裁切題幹、選項、錯誤提示或正答解析
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-8-IV-2-I01
+      trigger: 把兩個主要巡行日說成整個祭典只舉行兩天，或把單一照片推成全體居民都參與
+      prompt: 請指出原始資料描述的是整段祭典、其中一場活動，還是照片可見的內容。
+      expectedEvidence: 能區分一個月節期、兩場主要巡行以及照片未能證實的地點和參與範圍
+    feedback:
+      correct: 指出學生使用的來源詞與時間／地點範圍，並要求用新節慶情境再套用一次。
+      incorrect: 先提示回看來源主詞、日期修飾對象及all/every等量詞；允許重試後再顯示解析。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課不採用時間軸元件；以逐步鍵盤可操作的GuidedChoice練習來源核對、範圍判讀及受眾改寫。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課不採用PhET模擬；保留逐題提交、明確選項與可重試回饋，教材資料完全由本課原創整理。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "錯答提示與正答解析需使用可讀狀態資訊，鍵盤焦點順序要能完成四步。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "工作台語意區塊須讓學生按順序到達題幹、選項與回饋；不把資訊藏在非文字視覺中。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 使用新國外節慶資料或新受眾，要求從來源區分事實、活動範圍與未知；不得只換節名
+    requiredResponse: 用簡易英語介紹至少兩項有依據事實，並指出一項不能由目前來源推出的主張
+    scoring: 資訊準確 1、範圍符合來源 1、符合讀者需要且表達清楚 1
+  exitTicket:
+    prompt: 哪一句節慶介紹超出資料範圍？請改寫一句並指出來源支持的時間、地點或活動證據。
+    successCriteria:
+    - 至少兩項簡易英語事實與來源一致
+    - 分清節慶期間與單場活動日期
+    - 對未知或全稱主張標記需補查，不自行猜測
+  expressionExtension:
+    applicable: true
+    task: 為指定讀者寫三句英文節慶介紹，含節名／時間、地點／活動與一個來源限制
+    constraint: 先由學生選來源並起草；未核實背景不得加成事實，系統只提供一階修訂提示
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初次載入不顯示四題答案；用鍵盤提交錯答後先看到本步提示，重試正答後才看到來源範圍解析。
+  - 第2步必須區分祇園祭一個月節期與7月17／24兩場主要巡行，不得把兩日當全祭典時長。
+  - 第3步必須誘發「一張花車照片證明所有人參與」的過度概括，提示學生分開可見物與未知背景。
+  - 第4步為旅行者辨識城市、確切日期及官方參觀條件三項資料缺口；不得以想像補答。
+  - 320px、375px、768px均可鍵盤完成四題，完整讀到錯答提示、正答解析與完成狀態，無橫向溢位。
+  - CAP transfer 改用未在本課範例出現的新節慶資料，要求保留來源範圍並按讀者重排資訊。
+  - 屏蔽外部網路後 lesson 正文、互動選項和解析仍可完成；課堂不依賴外部載入。
+  - fallback：外部節慶頁面或模擬腳本不可用時，以本課內嵌祇園祭事實卡和未知欄完成四步；顯示離線狀態，不假稱即時查證。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 版本材料逐筆記錄來源身分、可讀定位與限制；未取得的出版社課本章節保持 pending
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 自動 QA只確認lesson與互動實際一致；教材內容審查由使用者交ChatGPT，未在本次標為已審
+  - 不得有 placeholder、TODO、模板填充或將校方教案錯稱出版社課本
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 8-Ⅳ-2
+    role: official-curriculum-source-of-truth
+  - url: https://englishcenter.kl.edu.tw/docs/file/220/1.%E5%9C%8B%E4%B8%AD%E5%B0%8F%E8%8B%B1%E8%AA%9E%E6%96%87%E6%A0%B8%E5%BF%83%E7%B4%A0%E9%A4%8A%E5%B0%8E%E5%90%91%E5%85%A8%E8%8B%B1%E8%AA%9E%E5%84%AA%E8%89%AF%E6%95%99%E6%A1%88%E5%BE%B5%E9%81%B8-%E5%BC%B5%E9%99%B3%E5%B9%B3-%E5%BC%B5%E9%99%B3%E5%B9%B3.pdf
+    locator: 公校翰林標示教師教案 pp.1–2；日期／月份／序數／節慶描述與資料搜尋活動；非出版社課本
+    role: version-labelled-teacher-plan-context-only
+  - url: https://www.scribd.com/document/966228867/7G-Lesson-Plan
+    locator: 公開頁可讀摘要標示B3 L4 Holiday；第三方分享、上傳者／版本真實性／授權未核
+    role: third-party-version-label-unverified
+  - url: https://course.cyc.edu.tw/upfile/course111/sub1/15077778597731553.pdf
+    locator: 大吉國中111學年度八年級英語計畫p.64起；採用康軒第3、4冊，未定位8-Ⅳ-2學生課本頁
+    role: publisher-use-context-not-textbook-evidence
+  - url: https://www.japan.travel/en/spot/83/
+    locator: Japan National Tourism Organization Gion Matsuri page; one-month July period and main processions on July 17/24
+    role: cultural-fact-source

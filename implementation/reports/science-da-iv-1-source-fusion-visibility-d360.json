@@ -1,0 +1,45 @@
+{
+  "unit": "Da-Ⅳ-1：細胞形態與基本構造觀察",
+  "lessonId": "lesson-science-content-da-iv-1",
+  "date": "2026-09-28",
+  "status": "partial-source-informed-synthesis-and-visibility-fix",
+  "scope": {
+    "learnerVisibleSections": "學習目標 + existing six independently-authored teaching stages",
+    "sourceResearch": [
+      {
+        "publisher": "南一",
+        "material": "111 國中生物教材簡介本, third-party public flipbook",
+        "locator": "printed p.31 cell morphology/function examples and adjacent observation flow",
+        "read": "visible page text on cell examples, transparent ruler, microscope operation, and observation records"
+      },
+      {
+        "publisher": "康軒",
+        "material": "official experiment-note card index",
+        "locator": "1上, 1-2 細胞: 動、植物細胞的觀察",
+        "read": "index title and unit location only; activity card details unavailable"
+      },
+      {
+        "publisher": "翰林",
+        "material": "official experiment index plus publisher-labeled public workbook excerpt",
+        "locator": "official 1上2-2 cell-observation video listing; workbook p.14 search excerpt shows unstained/stained onion epidermis and magnification recording",
+        "read": "index metadata and excerpt only; video transcript/full chapter not reviewed"
+      }
+    ],
+    "fusionDecision": "Expose existing original lesson stages that connect sample localization, instrument conditions, observation records, sample comparison, and evidence limits. The source materials differ in depth and medium; they are not represented as complete three-publisher chapter review. No protected wording, image, exercise, or answer was copied."
+  },
+  "changes": [
+    "Replaced four short learner-facing summaries with the objective and all six existing full teaching stages; kept exact teaching.body parity rather than rewriting or duplicating a lesson template.",
+    "Corrected versionResearch provenance and scope: Nan-I page sample, Kang Hsuan official index-only evidence, and Hanlin official index plus a limited publisher-labeled workbook excerpt.",
+    "Added a regression test and npm script to verify section/body parity, evidence qualification, microscope task alignment, and fail-closed draft status."
+  ],
+  "verification": {
+    "targetTest": "PASS: npm run test:science:da-iv-1",
+    "dataValidation": "PASS: 14,480 JSON files, 13,113 IDs, 1,032 KG nodes",
+    "diffCheck": "PASS for lesson, regression test, and package.json"
+  },
+  "notComplete": [
+    "No publisher slot promoted: Nani/Kang Hsuan/Hanlin evidence remains insufficient for verified full-chapter review; manifest counts unchanged.",
+    "Full publisher chapter review, rights/provenance verification, independent content review, full interaction QA, and Terra second pass remain open.",
+    "Lesson remains draft; no release status inferred from structural/runtime test."
+  ]
+}

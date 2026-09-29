@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-chinese-content-ab-iv-1",
+  "change": [
+    "Mapped the existing polyphonic-character lesson to prediction, comparison of shape/word collocation, observation of candidate readings in complete sentences, evidence-based explanation, and a new-sentence transfer task.",
+    "Added an explicit local dictionary/material fallback, a dedicated Python Playwright command, and simulations.js fault injection."
+  ],
+  "browser": {
+    "status": "passed",
+    "visibleRenderedSections": 9,
+    "authoredTeachingSectionsVerified": 6,
+    "guidedChoiceSteps": 3,
+    "blockedSimulationScript": ["http://127.0.0.1:8765/site/simulations.js"],
+    "blockedExternalRequests": 1,
+    "offlineFallbackUsable": true,
+    "keyboardWrongRetryCorrect": true,
+    "axeViolations": 0,
+    "axeIncomplete": 0,
+    "responsiveWidths": [320, 375, 768],
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "1,012/1,027 pass; 15 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged",
+    "jsonAndDiffCheck": "PASS"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

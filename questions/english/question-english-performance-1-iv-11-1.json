@@ -2,23 +2,23 @@
   "id": "question-english-performance-1-iv-11-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「1-Ⅳ-11／公共場所廣播」notice for the bus stop, item 1: “The bus leaves after lunch” What does it tell people?",
+  "prompt": "School announcement: ‘Science-club leaders, collect your group badges at the side table after the planetarium talk. Teachers, make sure every student is with the group before the bus leaves.’ What should the teachers do before departure?",
   "options": [
     {
       "id": "A",
-      "text": "For item 1 in the 1-Ⅳ-11／公共場所廣播 notice, The bus leaves after lunch."
+      "text": "Check that all students are present."
     },
     {
       "id": "B",
-      "text": "For item 1 in the 1-Ⅳ-11／公共場所廣播 notice, The bus leaves before breakfast."
+      "text": "Collect the science-club badges."
     },
     {
       "id": "C",
-      "text": "For item 1 in the 1-Ⅳ-11／公共場所廣播 notice, The bus is a classroom."
+      "text": "Return to the planetarium for another talk."
     },
     {
       "id": "D",
-      "text": "For item 1 in the 1-Ⅳ-11／公共場所廣播 notice, The bus never has a departure time."
+      "text": "Leave before the students finish the visit."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 1-Ⅳ-11／公共場所廣播, question 1."
+    "explanation": "廣播把工作分給不同對象：社團領隊去側桌拿徽章，老師則要在巴士離開前確認學生都到齊。題目問老師的工作，所以選A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中九年級英文段考公開題本；公共場所廣播理解與資訊擷取能力方向之獨立改編；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2792&fn=112-2-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%838%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E8%81%BD%E5%8A%9B%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E5%BE%90%E7%BE%8E%E9%9B%B2.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣宜昌國中112學年度第二學期第二次段考八年級英語科聽力試題卷，PDF第6頁附聽力測驗稿第24題；僅改寫多人廣播、角色指令及行動理解題型，不重製原廣播稿或選項。",
+    "authoringNote": "參照公立國中英文聽力試題中的多人廣播、多角色指示及指定聽者行動題型，十題情境、廣播內容、選項、答案與解析均為本專案原創，未複製原卷；待本專案AI內容QA，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1-iv-11"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-1-iv-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=417&cfsn=2792&fn=112-2-%E7%AC%AC2%E6%AC%A1%E6%AE%B5%E8%80%838%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E8%81%BD%E5%8A%9B%E9%A1%8C%E7%9B%AE%E8%88%87%E7%AD%94%E6%A1%88-%E5%BE%90%E7%BE%8E%E9%9B%B2.pdf&op=dlfile",
+      "title": "花蓮縣宜昌國中112學年度第二學期第二次段考八年級英語科聽力試題卷，PDF第6頁附聽力測驗稿第24題；公開多人廣播指示與行動理解",
+      "year": "112-2",
+      "subject": "english",
+      "locator": "PDF第6頁附聽力稿第24題；原卷第24題先向全體宣布多項露營移動安排，再單獨指定Teachers要執行的工作；本題改寫成校外教學並測角色辨識。",
+      "locatorLevel": "item",
+      "observedPattern": "原卷第24題先向全體宣布多項露營移動安排，再單獨指定Teachers要執行的工作；本題改寫成校外教學並測角色辨識。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "先鎖定題目詢問的角色，再把廣播中各角色的指令分開，不要把別人的任務套過來。",
+  "solutionSteps": [
+    "先圈出題目關鍵角色 teachers，確認不是問社團領隊。",
+    "在廣播中找到直接稱呼 Teachers 的句子。",
+    "抽取動作 make sure every student is with the group。",
+    "確認時點是 before the bus leaves，而不是講座結束或領取徽章。",
+    "因此老師應確認全員到齊，選A。"
+  ]
 }

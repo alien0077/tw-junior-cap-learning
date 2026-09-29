@@ -2,41 +2,67 @@
   "id": "question-science-content-cb-iv-1-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年8月1日校園實驗室的觀察中，將 44 g 食鹽溶於 495 g 水，研究「Cb-Ⅳ-1：分子與原子」時，溶液質量為何？",
+  "prompt": "若化學反應前有 2 個 H₂ 分子和 1 個 O₂ 分子，反應後原子重新排列，總共有多少個氫原子？",
   "options": [
     {
       "id": "A",
-      "text": "451 g"
+      "text": "8 個"
     },
     {
       "id": "B",
-      "text": "21780 g"
+      "text": "2 個"
     },
     {
       "id": "C",
-      "text": "539 g"
+      "text": "1 個"
     },
     {
       "id": "D",
-      "text": "495 g"
+      "text": "4 個"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cb-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：44＋495＝539 g。 本題對應 KG「Cb-Ⅳ-1：分子與原子」。"
+    "value": "D",
+    "explanation": "每個 H₂ 有 2 個氫原子，2 個分子共有 2×2＝4 個；反應只重新排列原子，選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的原子分子、化學式與粒子模型能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Cb-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cb-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子、分子、元素、化合物、化學式與原子守恆判讀",
+      "pattern": "取由粒子模型、化學式與原子種類數量推論物質組成的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由粒子模型、化學式與原子種類數量推論物質組成的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "只追蹤題目指定元素，將係數乘上下標，不必先猜產物。",
+  "solutionSteps": [
+    "找出氫分子數為 2。",
+    "每個 H₂ 含 2 個氫原子。",
+    "氫原子總數為 2×2。",
+    "化學反應不會憑空產生或消滅氫原子。",
+    "所以選 D。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

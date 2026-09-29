@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ad-iv-2-10",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "閱讀小說結尾時，發現作者沒有明說人物未來，只留下「他回頭看了一眼」；最適合如何理解？",
+  "prompt": "只看到作品名稱與作者姓名，沒有正文或形式資訊；可以確定作品一定是小說嗎？",
   "options": [
     {
       "id": "A",
-      "text": "保留想像空間並形成餘韻"
+      "text": "可以，作者姓名已足以判定文體。"
     },
     {
       "id": "B",
-      "text": "表示作者忘記寫完"
+      "text": "不可以，只能說資料不足，需正文或形式證據才能判斷。"
     },
     {
       "id": "C",
-      "text": "代表人物從未存在"
+      "text": "可以，所有作品名稱都代表小說。"
     },
     {
       "id": "D",
-      "text": "說明故事改成新聞"
+      "text": "不可以，因為任何作品都不能判斷文體。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ad-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "未明說的結尾可讓讀者推想人物未來，並留下餘韻。"
+    "value": "B",
+    "explanation": "名稱與作者只能提供識別線索，沒有正文、分行、角色、對白或場景等形式證據時，不能確定文體。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "新詩、現代散文、現代小說與劇本閱讀能力；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究新詩、散文、小說、劇本的形式證據、視角與表達功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫現代文學文體題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ad-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ad-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文體與篇章理解",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "現代文學形式與閱讀判讀",
+      "observedPattern": "公立學校國文評量要求依分行、敘事、角色、對話、場景與舞台提示辨識文體及閱讀效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分作品識別資料和文體證據，先列出已知與缺少的資訊再下結論。",
+  "solutionSteps": [
+    "確認現有資料只有名稱與作者，沒有可觀察的形式。",
+    "小說、散文、詩與劇本都可能有相似的名稱或作者資訊。",
+    "B 保留資料不足的界線，並指出需要補充的證據。",
+    "A、C 過度推論，D 又把可判斷性完全否定。",
+    "要求提供正文或作品體例，再依形式重新判斷。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

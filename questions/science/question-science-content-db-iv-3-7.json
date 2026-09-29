@@ -2,23 +2,23 @@
   "id": "question-science-content-db-iv-3-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年5月26日自然科教室的觀察中，針對「Db-Ⅳ-3：呼吸系統與外界氣體交換」提出可檢驗的科學問題，若比較 3 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "跑步時呼吸頻率與深度增加，最合理的生理解釋為何？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "肌肉需氧與產生二氧化碳增加，身體加強通氣以配合氣體交換與排出"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只測量3組中的一組就直接下結論"
+      "text": "跑步使細胞停止呼吸作用，因此需要把氧氣留在肺內"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時只改變溶液濃度，其餘條件一致，設置3組、每組取樣15份並各重複測量5次"
+      "text": "呼吸變快是為了在肺泡製造更多葡萄糖"
     },
     {
       "id": "D",
-      "text": "研究「Db-Ⅳ-3：呼吸系統與外界氣體交換」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "只要呼吸變快，就代表血液不再運輸二氧化碳"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Db-Ⅳ-3：呼吸系統與外界氣體交換」。"
+    "value": "A",
+    "explanation": "運動時細胞代謝需求提高，需取得更多氧並排出較多二氧化碳；增加通氣可提高肺泡與外界的氣體交換，不代表肺泡製造葡萄糖。選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的呼吸運動、肺泡與氣體交換能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "呼吸運動、肺泡氣體交換與呼吸資料判讀",
+      "pattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由胸腔體積壓力、肺泡結構與氣體濃度推論呼吸系統的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "情境題先找活動量改變的細胞需求，再把需求連到呼吸運動的調整。",
+  "solutionSteps": [
+    "辨認跑步會提高肌肉細胞代謝。",
+    "列出代謝增加造成的氧需求與二氧化碳產生。",
+    "連結呼吸頻率與深度增加到通氣加強。",
+    "排除停止呼吸、肺泡製糖與停止運輸等敘述。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-chinese-common-phrases-advanced-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "「這項技術仍在測試階段，距離普遍使用還一蹴可幾。」若要修正語意，應如何改寫？",
+  "prompt": "只照著十年前的校園地圖尋找現在的無障礙入口，最可能出現什麼問題？",
   "options": [
     {
       "id": "A",
-      "text": "改為『已經一蹴可幾』，表示完全不可能"
+      "text": "一定能立刻找到入口"
     },
     {
       "id": "B",
-      "text": "改為『一蹴可幾地失敗』，表示很快失敗"
+      "text": "資料與現況可能不符，不能只靠舊圖判斷"
     },
     {
       "id": "C",
-      "text": "不用修改，原句表示很難達成"
+      "text": "會把所有入口都變成出口"
     },
     {
       "id": "D",
-      "text": "改為『還不是一蹴可幾』，表示不容易很快達成"
+      "text": "能保證地圖沒有任何錯誤"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "一蹴可幾指一下子就可以成功，原句否定詞缺漏；改為還不是一蹴可幾才符合距離普及仍遠。"
+    "value": "B",
+    "explanation": "按圖索驥若忽略資料時效與現場查證，可能因地圖過時而找錯；成語的限制正在於不能機械套用線索。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
-    "sourceLocator": "114年國中教育會考國文科；第13題詞語修訂題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "原創題目來源界線 metadata 已補齊；內容與題型仍待第二輪 AI／Terra 複核，未據此宣稱真人或專家審定。"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究成語辨析、褒貶、限制與語意修正能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫進階常用語詞題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-common-phrases-advanced"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-common-phrases-advanced",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "成語語境、詞義與搭配",
+      "observedPattern": "公立學校國文評量把成語放入完整情境，要求判讀本義、引申義、褒貶、搭配與語意修正；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "成語辨析、語體與閱讀理解",
+      "observedPattern": "公立學校國文評量把成語放入完整情境，要求判讀本義、引申義、褒貶、搭配與語意修正；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先肯定線索的用途，再檢查資料時間、現場變化與交叉查證的必要性。",
+  "solutionSteps": [
+    "讀題定位：圈出「按圖索驥的限制」及人物、事件、程度、時間或語氣線索。",
+    "建立語境證據：把成語的本義、引申義、褒貶與使用對象逐一對照；本題核心是「按圖索驥若忽略資料時效與現場查證，可能因地圖過時而找錯；成語的限制正在於不能機械套用線索。」",
+    "核對正解：選項 B 能同時符合詞義、搭配與整句語意。",
+    "排除誘答：檢查是否只按單字字面、誤解褒貶、混淆成語功能，或忽略句中的否定與限制。",
+    "回讀驗證：用白話重述整句，再確認成語的方向、程度與事件條件沒有被改變。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

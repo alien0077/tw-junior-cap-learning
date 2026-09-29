@@ -2,23 +2,23 @@
   "id": "question-english-performance-9-iv-2-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「9-Ⅳ-2／比較分類排序資訊」task, what is the best way to prepare question 10?",
+  "prompt": "A report has animal names, habitats, body lengths, and endangered status. Which organization best supports a reader who wants endangered animals from shortest to longest?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 9-Ⅳ-2／比較分類排序資訊."
+      "text": "Sort all animals by name and ignore status and length"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 9-Ⅳ-2／比較分類排序資訊."
+      "text": "Group by habitat only and remove body lengths"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 9-Ⅳ-2／比較分類排序資訊."
+      "text": "Filter by endangered status, then sort the matching animals by body length"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 9-Ⅳ-2／比較分類排序資訊."
+      "text": "Choose the largest animal before checking whether it is endangered"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,53 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 9-Ⅳ-2／比較分類排序資訊, question 10."
+    "value": "C",
+    "explanation": "正確答案是C。符合要求的流程是先篩狀態後排體長，答案C。忽略瀕危狀態或體長會漏掉一項需求；先挑最大個體可能選到非瀕危物種。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "Public-school English assessment materials; this item studies comparison, classification, sorting, ranking, filtering, ties, and table organization only and does not reproduce an original question, option, image, or table.",
+    "authoringNote": "依官方9-Ⅳ-2／D-Ⅳ-2及所列公校英語段考的資料整理能力方向獨立撰寫；題幹、數值、選項與解說皆重新創作，來源僅作題型靈感，不複製原題。內容最終審查由使用者交ChatGPT。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-9-iv-2"
+  "updatedAt": "2026-09-29",
+  "lessonId": "lesson-english-performance-9-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅取比較、分類、排序、條件篩選、表格數值與資料組織能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "comparison, classification, ranking, tables, and practical information",
+      "observedPattern": "公開英文評量常以時刻表、數字、圖表與生活資料要求依條件比較、分類、由高低排序、處理同值並整合多欄證據；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅取比較、分類、排序、條件篩選、表格數值與資料組織能力方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "reading charts and organizing information by evidence",
+      "observedPattern": "公開英文評量常以時刻表、數字、圖表與生活資料要求依條件比較、分類、由高低排序、處理同值並整合多欄證據；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "這是先篩選保育狀態、再依體長排序的兩階段資料整理。",
+  "solutionSteps": [
+    "讀者要找瀕危動物，且希望由短到長排列。",
+    "先用endangered status留下瀕危物種，再比較這些動物的body length。",
+    "符合要求的流程是先篩狀態後排體長，答案C。",
+    "忽略瀕危狀態或體長會漏掉一項需求；先挑最大個體可能選到非瀕危物種。",
+    "確認最後清單的每項都瀕危，且體長方向是遞增。"
+  ],
+  "studyReferences": [
+    "https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf",
+    "https://material.hle.com.tw/wp-content/uploads/2021/01/%E5%9C%8B%E4%B8%AD%E8%8B%B1%E8%AA%9E-%E9%96%B1%E6%B8%AC%E8%B6%8A%E6%9C%89%E8%B6%A3%E5%90%88%E4%BD%B5.pdf"
+  ]
 }

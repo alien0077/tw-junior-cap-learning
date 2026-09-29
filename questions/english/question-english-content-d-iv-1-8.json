@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-1-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-1／綜合資訊推論」task, what is the best way to prepare question 8?",
+  "prompt": "A survey shows 18 students want more shade and 4 want more benches. The yard map says trees may be planted only along the north fence. Which recommendation uses both sources?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-1／綜合資訊推論."
+      "text": "Build benches across the south yard because the survey mentions seating."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-1／綜合資訊推論."
+      "text": "Plant shade trees along the north fence first, then review whether benches are still needed."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-1／綜合資訊推論."
+      "text": "Plant trees anywhere because the map is only a picture."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-1／綜合資訊推論."
+      "text": "Remove existing trees and ignore the survey."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-1／綜合資訊推論, question 8."
+    "value": "B",
+    "explanation": "B 回應人數較多的遮蔭需求，也遵守地圖標示的唯一可植樹範圍。 Correct answer: B"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1738658361761hrnHCuVf.pdf",
+    "sourceLocator": "PDF第3頁第29至31題；從地圖和文字位置條件推論；僅取閱讀整合與推論能力型態，不複製原題內容。",
+    "authoringNote": "依官方英語課綱D-Ⅳ-1與KG獨立創作綜合資訊推論題，參照內湖國中公立英語段考相關題型；未複製原卷題文、選項或答案。待AI內容審查；依使用者指示不安排Terra審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-english-content-d-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658361761hrnHCuVf.pdf",
+      "title": "臺北市立內湖國中113學年度第1學期八年級第3次段考英語科",
+      "year": "113-1",
+      "subject": "english",
+      "locator": "PDF第3頁第29至31題；從地圖和文字位置條件推論",
+      "observedPattern": "僅參照公立國中英語試題的地圖定位、時間／條件整合或文本證據推論能力；本題情境、數據、選項與答案獨立創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先看調查的多數需求，再檢查地圖的可行位置，提出同時回應兩者的方案。",
+  "solutionSteps": [
+    "18人希望增加遮蔭，4人希望增加長椅。",
+    "地圖限制新樹只能種在北側圍籬。",
+    "先在北側種遮蔭樹可回應較多人需求並符合場地限制。",
+    "不能在南側種樹，也不能忽略調查或把資料地圖當裝飾。",
+    "答案 B；方案必須同時符合需求證據與空間條件。"
+  ]
 }

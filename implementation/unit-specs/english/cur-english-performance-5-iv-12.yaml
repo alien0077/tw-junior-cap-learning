@@ -1,0 +1,133 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-12
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-12
+  title: 5-Ⅳ-12：理解簡易書信卡片並回應
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-12：理解簡易書信卡片並回應
+    curriculumIntent: 5-Ⅳ-12：理解簡易書信卡片並回應
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依課綱與實際可讀資源自編融合教學；未取得指定冊次全文的出版社維持pending，不得冒稱逐章核讀
+    currentEvidenceStatus: official-curriculum-handbook-read; nani-public-resource-pages-read; knsh-public-tool-page-read; hanlin-reading-strategy-page-read; specified-textbook-chapters-unavailable
+  learningGoals:
+  - 從簡易書信、簡訊、留言、賀卡或邀請卡辨識寄件者、收件者、主要語句與交際目的
+  - 從原文定位時間、地點、回覆期限及作者期待的行動，區分明示資訊與收件者自身決定
+  - 依人物關係與場合以口語或書面短句真實、合宜地回覆，並檢查回覆是否回答核心問題
+  prerequisites:
+  - 能理解常見日常英語詞句及簡單問句
+  - 能以簡單完整句表達接受、婉拒、致謝或祝賀
+  coreConcepts:
+  - 功能短訊同時包含資訊、交際目的與對收件者的期待行動
+  - 文本明示的活動資訊不等於收件者的個人立場或承諾
+  - 回覆需對應核心目的、關係語氣及可由本人確認的真實資訊
+  misconceptions:
+  - 把活動時間或地點抄成對邀請的回答
+  - 把 ‘if you can’ 等選擇性建議誤當出席條件
+  - 看懂問句卻替收件者作決定，或捏造拒絕理由
+  - 只翻譯字面而漏掉訊息目的、回覆期限或人際語氣
+  contentFlow:
+  - 'predict: 收到野餐邀請後先預測寄件者真正詢問及收件者需要採取的回覆行動'
+  - 'manipulate: 從原創卡片抽取寄件者、目的、活動資訊、回覆要求與可選建議，再依本人立場選擇接受或婉拒'
+  - 'observe: 對照問句、禮貌用語、if you can 與回覆期限，觀察活動資訊和承諾要求不能混為一談'
+  - 'explain: 以卡片原句說明回應選擇及期限線索，並指出替收件者編造立場或理由為何無據'
+  - 'transfer: 把策略遷移到圖書館通知與生日賀卡，依新文類目的調整短答'
+  - 'audit: 逐項核對文本證據、真實性、語氣和期限'
+  - 'exit-ticket: 以新文類解釋應採取的行動及其線索'
+  visualizations:
+  - 原創野餐邀請訊息全文及資訊／要求／建議文字標記
+  - 逐句回應證據與四步選擇互動，不宣稱存在時間線、滑桿或同步圖表
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-12-I01
+    component: GuidedChoiceBlock
+    purpose: 以四題單選判讀野餐邀請的核心問題、可選建議、接受回覆與真實婉拒
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 閱讀 lesson JSON 中原創邀請訊息及目前問題
+    - 使用滑鼠或鍵盤選擇三個文字選項之一
+    - 答錯時依個別 retryHint 重試；答對後閱讀解釋
+    - 完成後以 lesson exitCheck 撰寫一則接受或婉拒回覆
+    visualRules:
+    - 題幹、三選項、答案、個別提示與回饋由 lesson JSON 提供；不宣稱互動式時間線或變項操作
+    - 原生文字按鈕可鍵盤操作；錯答回饋需可讀且不只依顏色呈現
+    - 窄螢幕需完整顯示訊息題幹、選項和回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-12-I01
+      trigger: 把活動日期或可選物品當成是否接受邀請的答案
+      prompt: 找出寄件者直接詢問收件者的句子；再用自己的真實立場回答。
+      expectedEvidence: 指出 Can you come? 是邀請問題，並區分日期／地點資訊與收件者決定
+    feedback:
+      correct: 說明所選答覆如何對應訊息目的，並提醒查核語氣與真實立場。
+      incorrect: 提示回到問句與本人情境，區分活動資訊與自己的決定；允許重試後才顯示解釋。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "互動選項使用可朗讀的原生按鈕與 aria-live 回饋，鍵盤可操作。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以既有 lesson details 內容區呈現訊息、教學正文與互動步驟；不依賴外部服務。"
+  capTransfer:
+    questionType: 功能文本目的判讀／對應回覆／理由短答
+    stemConstraint: 保留訊息閱讀到口語或書面短回應的能力，另換通知或賀卡情境
+    requiredResponse: 指出作者目的與一項原文線索，並寫出符合收件者真實立場的短答
+    scoring: 目的與行動正確 1、證據對應 1、回覆真實且語氣合宜 1
+  exitTicket:
+    prompt: 對圖書館提早關門通知，收件者應做什麼？請指出訊息中的行動要求；再說明賀卡為何不能用同一種方式回覆。
+    successCriteria:
+    - 區分通知的行動要求和賀卡的祝福目的
+    - 引用或轉述一項訊息線索
+    - 回覆不加入文本未提供的事實
+  expressionExtension:
+    applicable: true
+    task: 為一則邀請卡撰寫兩至三句接受或婉拒短答，並簡述哪句原文使你這樣回覆
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個答題按鈕名稱清楚；正誤及重試提示可由 aria-live 朗讀
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 4 題 GuidedChoice 的正解、逐題 retryHint／feedback 顯示正確；題幹與原創邀請情境相符。
+  - 鍵盤可選答；錯答後可重試，正確後出現解釋且 aria-live 可朗讀。
+  - 在 320px、375px、768px 寬度正文、題幹、選項與回饋不溢位。
+  - 以圖書館通知及賀卡題作遷移，辨認目的、行動要求並形成簡短回應。
+  - 封鎖外部網路後，本課文本、互動與答案仍可用。
+  - Fallback：刻意阻擋 simulations.js 後，四步書信理解與回覆 GuidedChoice 仍可鍵盤完成、錯答重試並閱讀解析；所有文本和答案由本地資料提供。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 原創六段教學、四步互動、答案回饋與學生頁規格彼此一致；無 placeholder 或 TODO
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 5-Ⅳ-12
+    role: official-curriculum-source-of-truth

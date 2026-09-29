@@ -135,9 +135,13 @@ def main() -> int:
             for item_id in data.get("knowledgeIds", []):
                 if item_id not in kg_ids:
                     errors.append(f"{path}: missing KG endpoint {item_id}")
-            origin = data.get("provenance", {}).get("origin")
-            if origin not in {"original", "official-open", "licensed"}:
-                errors.append(f"{path}: unsupported question provenance.origin={origin!r}")
+            if area == "questions":
+                origin = data.get("provenance", {}).get("origin")
+                if origin not in {"original", "official-open", "licensed"}:
+                    errors.append(f"{path}: unsupported question provenance.origin={origin!r}")
+                for index, ref in enumerate(data.get("examPatternRefs", [])):
+                    if "pattern" in ref and ref.get("pattern") != ref.get("observedPattern"):
+                        errors.append(f"{path}: examPatternRefs.{index}.pattern must match observedPattern")
         if area == "textbook-mapping":
             volumes = data.get("volumes", [])
             for volume in volumes:

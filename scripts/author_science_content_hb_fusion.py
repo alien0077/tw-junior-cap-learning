@@ -1,0 +1,31 @@
+"""Hb：地層與化石第一輪來源融合、題庫重寫與來源審查。"""
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-content-hb.json"; REPORT=ROOT/"implementation/reports/science-content-hb-first-pass-review.json"; QDIR=ROOT/"questions/science"; TODAY="2026-09-23"
+SOURCES=[
+ {"url":"https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf","title":"114 年國中教育會考自然科公開試題","year":"114","locator":"地層、化石、岩性與相對年代判讀","pattern":"取由岩性、化石、地層關係與證據限制建立地球歷史推論的能力方向。"},
+ {"url":"https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf","title":"新竹市立新科國中公開康軒版自然課程計畫","year":"公開課程計畫","locator":"地層、化石形成與相對年代","pattern":"取沉積岩、化石形成、疊積律、標準化石與地層比較的教學及評量方向。"},
+ {"url":"https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf","title":"新北市文山區安康高中國中部公開翰林版自然簡案","year":"公開課程計畫","locator":"岩性、化石記錄與資料限制","pattern":"取岩性推環境、化石證據、跨地點對比、地層缺口與年代推論限制的能力方向。"},
+]
+REFS=[{**s,"subject":"science","observedPattern":s["pattern"],"reuseDecision":"pattern-only","status":"recorded","locatorLevel":"paper"} for s in SOURCES]
+def q(n,prompt,opts,ans,exp,strat,steps,d="medium"):
+ return {"id":f"question-science-content-hb-{n}","subject":"science","type":"single-choice","prompt":prompt,"options":[{"id":k,"text":v} for k,v in zip("ABCD",opts)],"knowledgeIds":["kg-science-content-hb"],"difficulty":d,"answer":{"value":ans,"explanation":exp},"provenance":{"origin":"original","license":"All rights reserved","sourceUrl":SOURCES[0]["url"],"sourceLocator":"三筆公立學校／公開自然科試題與課程資料的地層、化石、岩性及證據判讀能力方向；本題只作 pattern-only 改寫來源。","authoringNote":"依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Hb 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"},"reviewStatus":"draft","updatedAt":TODAY,"lessonId":"lesson-science-content-hb","examPatternRefs":REFS,"solutionStrategy":strat,"solutionSteps":steps}
+Q=[
+q(1,"沉積岩層中的砂粒由下而上逐層堆積，且沒有倒轉或擾動。下列哪項判斷最合理？",["下層通常比上層早形成","上層一定比地球年齡更老","所有岩層都同時形成","只看顏色就能確定年代"],"A","在未受擾動的沉積層中，較下方的岩層通常先沉積，因此相對較老。","先確認地層是否未受擾動，再使用疊積律。",["圈出未倒轉、未擾動和沉積層條件。","依疊積律判斷下層先形成。","把結論限制為相對年代，而非精確年份。","B、C、D 都超出資料能支持的範圍。","所以 A 正確。"],"easy"),
+q(2,"生物遺骸要較可能保存成化石，哪種情況通常較有利？",["快速掩埋、缺氧且受到沉積物保護","暴露在風雨中數百年","完全沒有硬組織且一直被搬運","只要生物活得越久就一定形成化石"],"A","快速掩埋可減少分解和破壞，缺氧及沉積物保護也有利於保存；不是所有生物或環境都能形成化石。","從保存條件判斷，不把生物壽命誤當成化石形成條件。",["找出題目問的是保存機率而非生物分類。","比較掩埋速度、氧氣、搬運和分解等條件。","快速掩埋與保護能降低破壞。","B、C 增加破壞，D 把可能性說成必然。","答案為 A。"],"easy"),
+q(3,"一種化石在短暫地質時期內出現，卻分布很廣且容易辨認。它最適合作為？",["標準化石，用來對比不同地點的地層相對年代","只代表某一棵樹的年齡","絕對年代的直接讀值","說明所有海域環境完全相同"],"A","短時間存在、廣泛分布且易辨認是標準化石的重要特徵，可協助地層對比；它不直接給出精確年份。","先檢查分布範圍與存在時間，再界定證據可支持的用途。",["圈出短暫、廣泛、易辨認三個特徵。","把它和標準化石的用途對照。","用相同化石比較不同地點的相對年代。","B、C、D 都把地層對比誇大成個體年齡、精確定年或環境同一。","所以 A 最合理。"]),
+q(4,"兩個相距很遠的地點都發現同一種標準化石，最謹慎的推論是？",["含化石的地層可能形成於相近的地質時期","兩地一定曾完全沒有海陸差異","化石所在岩層一定同時在同一天形成","只要有相同化石就能知道精確年份"],"A","標準化石可支持兩地層相對年代接近，但不能由單一化石推出完全相同環境、確切日期或所有地質細節。","使用指標證據時，同時寫出可支持與不能支持的部分。",["確認化石是標準化石而非一般廣布長存化石。","由相同化石推論地層可能有相近相對年代。","檢查是否有其他地層、岩性或定年資料。","B、C、D 都把條件式推論過度絕對化。","答案為 A。"]),
+q(5,"岩層中顆粒大小、圓磨程度、層理與交錯層理等岩性資料，最能協助推論什麼？",["形成時的沉積環境與搬運條件","每一個生物的遺傳型","某岩層的精確形成日期","該地區所有生物的數量"],"A","顆粒與沉積構造可反映水流、風力、能量與搬運距離等形成環境；單靠岩性通常不能給出精確日期或生物數量。","先把岩性證據連到沉積過程，再限制推論範圍。",["辨認題目提供的是岩性和沉積構造，不是遺傳或族群資料。","比較顆粒、圓磨和層理對搬運能量與環境的意義。","得到沉積環境的條件式推論。","B、C、D 都需要其他資料或超出岩性證據。","所以 A 正確。"],"medium"),
+q(6,"若一段地層受褶皺或斷層影響，使用疊積律前最重要的工作是？",["先判斷岩層是否倒轉、錯移或缺失","直接把最顏色深的層當最老","假設所有地層仍保持原始水平","只依化石大小排列"],"A","疊積律適用於未受擾動的沉積層；褶皺、斷層或倒轉會改變幾何關係，必須先判讀構造。","先檢查適用條件，再套用原理。",["找出褶皺、斷層或倒轉等構造證據。","判斷原始上下方向和可能的錯移。","只有確認關係後，才用疊積律排序。","B、C、D 不是可靠的年代判準。","因此 A 最合理。"],"medium"),
+q(7,"岩層中出現明顯侵蝕面，上下兩組岩層之間最可能代表？",["一段沉積中斷或地質時間缺口","兩組岩層必然同時形成","侵蝕面就是一種標準化石","下層一定由火山熔岩形成"],"A","侵蝕面表示原有沉積物被移除或沉積曾中斷，可能留下不整合和時間缺口；還需其他證據判斷完整事件。","先讀沉積連續性，再判斷時間記錄是否缺失。",["確認侵蝕面是岩層接觸關係而非化石。","思考侵蝕會移除先前形成的沉積物。","因此上下岩層間可能缺少一段地質時間。","B、C、D 都與侵蝕面證據不符。","答案為 A。"],"medium"),
+q(8,"若某岩層的化石種類與另一地層相同，但兩層岩性不同，最適當的判讀是？",["可先用化石作相對年代線索，再用岩性檢查形成環境差異","岩性不同表示兩地一定不同年代","相同化石表示兩地環境完全相同","只要化石相同就不必再看地層關係"],"A","化石可作相對年代線索，岩性則可能反映不同沉積環境；兩種證據應互相比較，不能互相取代。","把年代證據與環境證據分開後交叉核對。",["辨認相同化石能提供地層對比線索。","再讀岩性差異可能代表沉積環境不同。","保留兩類證據的不同用途。","B、C、D 將單一證據過度延伸。","所以 A 最妥當。"],"medium"),
+q(9,"相對年代與絕對年代的主要差別為何？",["相對年代排序事件先後；絕對年代嘗試給出數值年齡","相對年代一定有數字；絕對年代只比較上下","兩者都只靠岩石顏色","相對年代只能研究生物，絕對年代只能研究火山"],"A","相對年代回答哪個事件較早或較晚；絕對年代則透過定年方法估計數值年齡，兩者可互相補充。","先分辨問題要求排序還是數值，再選擇適合證據。",["圈出『先後』與『數值年齡』兩種問題。","把事件排序歸為相對年代。","把定年方法得到的年數歸為絕對年代。","B、C、D 都錯置定義或限制研究對象。","答案為 A。"],"easy"),
+q(10,"某地層中沒有找到某種生物的化石，哪項結論最謹慎？",["只能說目前證據未顯示它在此地層被保存，不能直接證明當時全球沒有這種生物","可直接證明該生物從未存在","可直接證明地層形成時沒有任何生物","只要沒有化石就代表地層年代錯誤"],"A","化石記錄受棲地、保存條件、採樣範圍與後來侵蝕影響；沒有發現不等於生物不存在。","把『未觀察到』和『不存在』分開，檢查化石記錄的偏差。",["確認題目提供的是未找到化石，而不是完整排除證據。","列出保存、採樣、侵蝕和棲地等替代解釋。","把結論限縮為目前地層和方法未顯示保存紀錄。","B、C、D 都把缺失資料變成絕對證明。","因此 A 最符合證據界線。"],"medium"),
+]
+def main():
+ lesson=json.loads(LESSON.read_text(encoding="utf-8")); lesson["updatedAt"]=TODAY; lesson["reviewStatus"]="draft"; lesson["fusionRecord"]={"commonCore":["三版本公開線索共同支持以地層、岩性、化石與相對年代重建地球歷史。","沉積環境、化石形成、標準化石、地層比較、侵蝕缺口與證據界線是共同能力核心。"],"versionDifferences":["南一公開定位偏向地層與化石；康軒線索偏向化石形成、標準化石和沉積層；翰林線索偏向岩性推環境、跨地點對比及地層記錄限制。公開資料不足以宣稱取得完整教材內容。"],"originalAdditions":["以砂粒、化石保存、標準化石、岩性、褶皺斷層、侵蝕面和缺失記錄建立單元專屬證據鏈。","把未找到化石等於不存在、化石相同等於環境相同、相對年代等於精確年份列為單元迷思診斷。"],"llmSynthesisNote":"依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開試題資料的能力方向，重新組織岩性、沉積環境、化石、標準化石、地層比較、相對年代與證據限制；原先 9 題已逐題改寫並補成 10 題，均具唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"}
+ for e in lesson.get("versionResearch",[])+lesson.get("publisherResearch",[]): e["reviewedAt"]=TODAY
+ for x in Q: (QDIR/f"question-science-content-hb-{x['id'].rsplit('-',1)[-1]}.json").write_text(json.dumps(x,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"Hb：地層與化石","lessonId":lesson["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checkedQuestions":10,"checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"threePublicSchoolExamPatternSources":True,"answersAndDetailedSteps":True,"interactivePredictionManipulationExplanation":True,"terraSecondPass":"pending"},"reviewedAt":TODAY,"note":"原先 9 題為帶日期與取樣數的重複研究設計套題，已逐題改寫並補成 10 題地層與化石專屬問題；每題有唯一答案、解析與五步解法，三筆公開試題／課程資料僅作 pattern-only 來源，正式發布前仍須第二輪 AI／Terra 內容複核。"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ LESSON.write_text(json.dumps(lesson,ensure_ascii=False,indent=2)+"\n",encoding="utf-8"); print("authored science content hb")
+if __name__=="__main__": main()

@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bb-iv-5-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "小說中人物反覆走到信箱前又轉身，這個事件最可能呈現什麼？",
+  "prompt": "他收到退回的信，先把信封壓平，再放進抽屜最下層。若沒有其他背景，哪項最穩妥？",
   "options": [
     {
       "id": "A",
-      "text": "期待與猶豫交織的心情"
+      "text": "一定是被戀人拒絕"
     },
     {
       "id": "B",
-      "text": "信箱的材質"
+      "text": "一定會再次寄出"
     },
     {
       "id": "C",
-      "text": "郵差的工作時間"
+      "text": "他完全不在乎這封信"
     },
     {
       "id": "D",
-      "text": "街道的長度"
+      "text": "物件處理可能顯示慎重、失落或不願丟棄，但原因未明"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bb-iv-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "反覆接近又退回的行動，間接表現期待與猶豫。"
+    "value": "D",
+    "explanation": "壓平與收起表示信件仍有某種重要性，但退回原因、關係和未來行動都沒有交代。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "事件、景物間接抒情；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究事件、景物、物件與人物反應的間接抒情及證據界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫事件景物間接抒情題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-5"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "事件、景物與情感推論",
+      "observedPattern": "公立學校國文評量要求由事件、物件、景物對照與人物反應推論間接情感；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "人物行動、場景對照與抒情效果",
+      "observedPattern": "公立學校國文評量要求由事件、物件、景物對照與人物反應推論間接情感；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "從物件處理判斷情感方向的可能性，再標記未明示的背景。",
+  "solutionSteps": [
+    "記錄收到退回、壓平、收起三個行動。",
+    "確認人物沒有直接丟棄。",
+    "D 保留可能情感而不指定原因。",
+    "B、C、D 都把未知背景說成確定事實。",
+    "要求補充信件內容或人物反應，確認需要何種證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

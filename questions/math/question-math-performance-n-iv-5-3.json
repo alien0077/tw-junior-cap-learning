@@ -2,23 +2,23 @@
   "id": "question-math-performance-n-iv-5-3",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "計算 3√5＋2√5 的結果為何？",
+  "prompt": "計算 √12＋√27 的結果為何？",
   "options": [
     {
       "id": "A",
-      "text": "5√5"
+      "text": "5√3"
     },
     {
       "id": "B",
-      "text": "5√10"
+      "text": "√39"
     },
     {
       "id": "C",
-      "text": "6√5"
+      "text": "7√3"
     },
     {
       "id": "D",
-      "text": "6√10"
+      "text": "9√3"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "兩項是同類根式，只需相加係數：(3＋2)√5＝5√5。"
+    "explanation": "√12＝2√3、√27＝3√3，因此相加為 5√3。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考平方根化簡、同類根式、根式運算、大小比較、方程式與幾何情境題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "二次方根與根式單元實質改寫；已重新計算平方根、最簡根式、同類根式、根式乘法、大小比較、根式方程式與幾何答案，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "公開數學評量能力方向參考；本題為獨立原創根式題，未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。",
+    "authoringNote": "依官方數學課綱 KG 與三個可追溯公開數學評量來源的能力、資料型態與推理層次重新設計；數值、選項、解析與五步解題均為原創。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-5"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-math-performance-n-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114年國中教育會考數學科公開試題；數與量、根式表示、運算與推理能力方向；本題不宣稱一對一題號對應；本題為原創 pattern-only 改寫，未複製原題、選項、圖表或答案。",
+      "year": "114",
+      "subject": "math",
+      "locator": "數與量、根式表示、運算與推理能力方向；本題不宣稱一對一題號對應",
+      "observedPattern": "公開數學評量常結合根式化簡、比較、運算、方程、估算與幾何情境，測量表示轉換、運算順序、推理與回算；本題使用全新數值與題幹。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學114學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；參考根式計算、表示轉換與情境應用題型，不複製原題；本題為原創 pattern-only 改寫，未複製原題、選項、圖表或答案。",
+      "year": "114",
+      "subject": "math",
+      "locator": "公開試卷頁面與年級已核對；參考根式計算、表示轉換與情境應用題型，不複製原題",
+      "observedPattern": "公開數學評量常結合根式化簡、比較、運算、方程、估算與幾何情境，測量表示轉換、運算順序、推理與回算；本題使用全新數值與題幹。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學114學年度第二學期第一次段考數學科；公開試卷與年級已核對；參考根式、幾何量與代數推理題型，不複製原題；本題為原創 pattern-only 改寫，未複製原題、選項、圖表或答案。",
+      "year": "114",
+      "subject": "math",
+      "locator": "公開試卷與年級已核對；參考根式、幾何量與代數推理題型，不複製原題",
+      "observedPattern": "公開數學評量常結合根式化簡、比較、運算、方程、估算與幾何情境，測量表示轉換、運算順序、推理與回算；本題使用全新數值與題幹。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認根式與題目限制，再用平方根性質、根式化簡、同類項合併、估算或畢氏定理計算，最後回算與檢查單位。",
+  "solutionSteps": [
+    "讀題定位：先圈出本題的數值、根式運算或幾何條件，確認本題主軸是「add like radicals」。",
+    "建立判準：先整理平方、乘除、同類根式、正負號、估算範圍或幾何關係，再決定要用的公式。",
+    "逐步計算並核對選項：依題目條件完成化簡、合併、比較或代入；正確選項為 A。",
+    "檢查理由：√12＝2√3、√27＝3√3，因此相加為 5√3。 再確認每一步的根號、係數、單位與正負號沒有誤讀。",
+    "最後回算或估算驗證：把答案代回原條件，檢查數值合理性與單位；若題目數字或限制改變，必須重新計算。"
+  ]
 }

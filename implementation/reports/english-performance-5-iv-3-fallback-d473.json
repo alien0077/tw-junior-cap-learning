@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-5-iv-3",
+  "change": [
+    "Made the dialogue lesson's prediction, response-selection, context-observation, and evidence-explanation stages explicit in its unit specification.",
+    "Added an explicit fallback test, package script, and simulation-script failure injection to the dedicated browser test."
+  ],
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/site/index.html",
+    "simulationScriptBlocked": ["http://127.0.0.1:8765/site/simulations.js"],
+    "authoredSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardRetryAndAnswer": true,
+    "feedbackLiveRegion": true,
+    "accessibleOptions": true,
+    "externalNetworkBlocked": true,
+    "reducedMotion": "emulated",
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "985/1,027 pass; 42 fail",
+    "lesson": "unchanged; remains draft",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

@@ -2,23 +2,23 @@
   "id": "question-science-content-ja-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年9月13日河川觀測站的觀察中，將 69 g 食鹽溶於 924 g 水，研究「Ja：物質反應規律」時，溶液質量為何？",
+  "prompt": "想清潔水槽時，哪個做法最符合物質反應的安全探究原則？",
   "options": [
     {
       "id": "A",
-      "text": "855 g"
+      "text": "把不同清潔劑混合以觀察更多氣泡"
     },
     {
       "id": "B",
-      "text": "993 g"
+      "text": "先查閱標示與安全資料，依指示單獨使用並保持通風，不做未授權混合"
     },
     {
       "id": "C",
-      "text": "63756 g"
+      "text": "用手直接測試是否放熱"
     },
     {
       "id": "D",
-      "text": "924 g"
+      "text": "在密閉瓶中加熱混合物以加速反應"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：69＋924＝993 g。 本題對應 KG「Ja：物質反應規律」。"
+    "explanation": "清潔劑可能產生有害氣體或熱；安全探究先查標示、遵守使用條件與通風，不能為了觀察反應任意混合或加熱。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "三筆公立學校公開自然科試題中的反應現象、粒子守恆、質量、反應式、控制變因與安全判讀能力；本題改寫為物質反應原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ja"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-ja",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取物質反應、質量守恆與粒子模型的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "物質反應、質量守恆與粒子模型",
+      "observedPattern": "公開自然科評量常要求由反應現象、粒子數、質量、反應式、控制變因與安全條件建立推論；本題以全新語料重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取化學變化、反應式與資料判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "化學變化、反應式與資料判讀",
+      "observedPattern": "公開自然科評量常要求由反應現象、粒子數、質量、反應式、控制變因與安全條件建立推論；本題以全新語料重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取生活反應、系統邊界與安全的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "生活反應、系統邊界與安全",
+      "observedPattern": "公開自然科評量常要求由反應現象、粒子數、質量、反應式、控制變因與安全條件建立推論；本題以全新語料重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把宏觀現象、微觀粒子、質量與系統邊界分開，再用本題要求的反應規律逐項核對。",
+  "solutionSteps": [
+    "圈出反應物、現象、系統邊界、元素原子數、係數或安全條件。",
+    "把可直接觀察的資料與粒子模型或反應式推論分開。",
+    "逐元素計數，或依控制變因與質量進出檢查因果關係。",
+    "排除把氣泡直接等同特定產物、改變化學式下標配平、忽略開放系統或任意混合危險物質的選項。",
+    "用完整句回查答案，補上測量誤差、系統邊界與安全限制。"
+  ]
 }

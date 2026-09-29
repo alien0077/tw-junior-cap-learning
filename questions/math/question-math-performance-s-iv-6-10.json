@@ -6,37 +6,80 @@
   "options": [
     {
       "id": "A",
-      "text": "三組對應邊都相等"
+      "text": "一組對應邊相等"
     },
     {
       "id": "B",
-      "text": "兩組對應角相等"
+      "text": "兩組對應邊成比例且夾角相等"
     },
     {
       "id": "C",
-      "text": "只有一組對應邊相等"
+      "text": "一組對應角相等"
     },
     {
       "id": "D",
-      "text": "周長相等"
+      "text": "兩三角形面積相等"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-s-iv-6"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "B",
-    "explanation": "兩組對應角相等符合 AA 相似判定；三邊全等則是全等，其他條件不足以判定相似。"
+    "explanation": "兩組對應邊成比例且夾角相等是 SAS 相似判定，足以判定三角形相似，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考相似、縮放、比例尺、面積／體積倍率與生活情境題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供相似、比例、倍率與測量應用能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的相似形方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-6"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似圖形、相似三角形判定、邊長周長面積體積倍率、影子測高與比例尺",
+      "observedPattern": "公開數學評量常以對應邊比例處理長度與周長，進一步轉換面積或體積倍率，也會使用同時測量的影長比例與地圖比例尺；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似圖形、相似三角形判定、邊長周長面積體積倍率、影子測高與比例尺",
+      "observedPattern": "公開數學評量常以對應邊比例處理長度與周長，進一步轉換面積或體積倍率，也會使用同時測量的影長比例與地圖比例尺；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似圖形、相似三角形判定、邊長周長面積體積倍率、影子測高與比例尺",
+      "observedPattern": "公開數學評量常以對應邊比例處理長度與周長，進一步轉換面積或體積倍率，也會使用同時測量的影長比例與地圖比例尺；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "辨認『兩邊比例＋夾角』的 SAS 相似結構，單一邊或角不足以判定。",
+  "solutionSteps": [
+    "確認條件包含兩組對應邊。",
+    "兩邊必須成比例。",
+    "比例兩邊的夾角也相等。",
+    "這符合 SAS 相似判定。",
+    "所以選 B。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-db-iv-8-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年5月1日學校研究社的觀察中，連續觀察「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」4 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "空氣測站顯示樹下粒狀物較低，下一步最應做什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」時只依樣本的顏色（未記錄10天的時間與條件）"
+      "text": "只選樹下最低值"
     },
     {
       "id": "B",
-      "text": "研究「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」時只依樣本的名稱推測，不進行觀察"
+      "text": "在不同風向、時間、距離排放源和植被條件下重複測量並校正儀器"
     },
     {
       "id": "C",
-      "text": "研究「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」時只觀察一次外形，便排除所有其他證據"
+      "text": "直接宣稱整個地區空氣變好"
     },
     {
       "id": "D",
-      "text": "連續10天研究「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」並測得樣本持續吸收氧氣並產生二氧化碳"
+      "text": "刪除道路附近資料"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Db-Ⅳ-8：植物分布對水流、氣溫與空氣品質的影響」。"
+    "value": "B",
+    "explanation": "樹下測站一次偏低，可能來自風向、交通時段、儀器誤差或局部遮蔽。B 用重複、多位置、多時段並校正儀器的方式，能檢查差異是否穩定，而不是挑最低值外推。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1660183128914WHF2n4Sp.pdf",
+      "title": "臺北市立內湖國中110學年度第二學期七年級第三次生物段考",
+      "year": "110-2",
+      "subject": "science",
+      "locator": "紙本第4頁／PDF第4頁，第42題",
+      "locatorLevel": "item",
+      "observedPattern": "檢視植物降低粒狀物與改善熱環境等說法是否有直接支持；改寫為測站結果的下一步驗證。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "植物、環境變因、資料判讀與控制條件",
+      "observedPattern": "只取公立校方公開試題的環境探究能力方向，重寫植物分布情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "植物分布、測量設計、環境限制",
+      "observedPattern": "只取公開資料題的能力模式，重新設計校園測量。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1660183128914WHF2n4Sp.pdf",
+    "sourceLocator": "臺北市立內湖國中110-2七年級生物，第4頁第42題；只借用題型與能力結構。",
+    "authoringNote": "題幹、選項、答案、解析與教學步驟均依 Db-Ⅳ-8 獨立原創；只參考公立學校公開試題的實驗比較、機制解釋或環境評估能力，不重製原卷內容。本紀錄是首輪 AI 檢查，完整教材、三版本融合、版權及發布審查仍待完成。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-8"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-8",
+  "solutionStrategy": "單次低值只能形成待驗假說；下一步要擴大時空取樣、校正儀器並找出排放源及風向這些混淆因素。",
+  "solutionSteps": [
+    "先把目前資料限定為『某一測點、某一時刻』，不把它直接推成整區空氣改善。",
+    "檢查測站零點與校正紀錄，並確認進氣口高度、位置及遮蔽條件一致。",
+    "設置樹下、無樹對照與不同距離的測點，避開只選最低讀值的取樣偏差。",
+    "跨時段同步記錄風向、車流和天候，觀察樹下差異是否在不同條件仍重現。",
+    "B 同時補足空間、時間與儀器證據，之後才可評估能否將結果推廣到其他區域。"
+  ]
 }

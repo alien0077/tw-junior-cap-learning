@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-6-iv-6",
+  "change": [
+    "Mapped this unit's original wheel-cake information search task to a justified pre-search prediction, query refinement, observation of source evidence, evidence-based explanation, and transfer to resource sharing.",
+    "Added an explicit offline fallback requirement: report unavailable external resources and complete the local original four-step GuidedChoice without implying an online lookup occurred."
+  ],
+  "browser": {
+    "status": "passed",
+    "visibleSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardWrongRetryCorrect": true,
+    "axeViolations": 0,
+    "axeIncomplete": 0,
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "blockedExternalRequests": 1,
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "1,000/1,027 pass; 27 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

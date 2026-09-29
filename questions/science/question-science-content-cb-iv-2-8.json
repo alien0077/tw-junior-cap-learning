@@ -2,23 +2,23 @@
   "id": "question-science-content-cb-iv-2-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年1月20日河川觀測站的觀察中，將 90 g 食鹽溶於 230 g 水，研究「Cb-Ⅳ-2：原子排列與元素特性」時，溶液質量為何？",
+  "prompt": "某金屬樣品的導電性下降，但仍可拉成線。下列哪種說法最符合科學推論？",
   "options": [
     {
       "id": "A",
-      "text": "140 g"
+      "text": "只要導電性下降，樣品就不可能是金屬"
     },
     {
       "id": "B",
-      "text": "20700 g"
+      "text": "導電相關的電子移動受到影響，但整體結構仍保有可形變性"
     },
     {
       "id": "C",
-      "text": "230 g"
+      "text": "延展性與導電性永遠由同一個單一因素決定"
     },
     {
       "id": "D",
-      "text": "320 g"
+      "text": "導電性下降表示所有原子都消失了"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：90＋230＝320 g。 本題對應 KG「Cb-Ⅳ-2：原子排列與元素特性」。"
+    "value": "B",
+    "explanation": "導電性與延展性是不同可觀察性質，前者變化不必讓後者同時消失；應分別提出對電子移動與結構形變的解釋。選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的原子排列、同素異形體與材料性質能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Cb-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cb-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子排列、同素異形體、金屬性質與微觀模型判讀",
+      "pattern": "取由微觀排列與電子／結構線索推論材料宏觀性質的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由微觀排列與電子／結構線索推論材料宏觀性質的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "避免把多項巨觀性質硬綁成單一判準，逐項處理證據。",
+  "solutionSteps": [
+    "讀出題目只指出導電性下降。",
+    "確認延展性仍保留，不能宣稱整體結構崩解。",
+    "把導電性連到電子移動，把延展性連到結構可形變。",
+    "檢查推論是否超出題目證據。",
+    "所以選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

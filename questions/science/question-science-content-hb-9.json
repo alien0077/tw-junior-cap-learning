@@ -2,23 +2,23 @@
   "id": "question-science-content-hb-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月9日社區環境站的觀察中，針對「Hb：地層與化石」提出可檢驗的科學問題，若比較 3 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "地層未受倒轉或斷層破壞，研究者只依岩層上下順序排列事件，尚無可用數值定年的材料；此時最適當的結論是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Hb：地層與化石」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "可依疊積律比較地層先後，但僅憑上下順序不能報出精確數值年齡"
     },
     {
       "id": "B",
-      "text": "研究「Hb：地層與化石」時只測量3組中的一組就直接下結論"
+      "text": "相對年代一定有數字；絕對年代只比較上下"
     },
     {
       "id": "C",
-      "text": "研究「Hb：地層與化石」時只改變攪拌速度，其餘條件一致，設置3組、每組取樣17份並各重複測量4次"
+      "text": "兩者都只靠岩石顏色"
     },
     {
       "id": "D",
-      "text": "研究「Hb：地層與化石」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "相對年代只能研究生物，絕對年代只能研究火山"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Hb：地層與化石」。"
+    "value": "A",
+    "explanation": "題目只提供未倒轉地層的上下關係，因此可用疊積律建立相對先後；沒有適用的定年材料與測量，就不能從位置直接得出數值年齡。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的地層、化石、岩性及證據判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Hb 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-hb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-hb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "地層、化石、岩性與相對年代判讀",
+      "pattern": "取由岩性、化石、地層關係與證據限制建立地球歷史推論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由岩性、化石、地層關係與證據限制建立地球歷史推論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認地層是否保持原始上下關係，再判斷現有證據能否只排序或能否定出數值。",
+  "solutionSteps": [
+    "讀取題目條件：岩層沒有倒轉或斷層破壞，且目前只有上下位置資料。",
+    "依疊積律，在未受擾動的沉積層中，下層通常較早、上層通常較晚；這能建立相對順序。",
+    "題目沒有提供可用定年材料或測量值，因此不能從上下順序推算精確年齡。",
+    "排除把相對先後誤作數值定年，或把岩石顏色當作唯一年代證據的選項。",
+    "選 A：可提出相對年代排序，但不能僅憑地層上下位置報出數值年齡。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-iv-6-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年11月16日自然科教室的觀察中，小車在 47 秒內前進 264 m，研究「Ba-Ⅳ-6：功率」時，平均速率為何？",
+  "prompt": "兩人質量相同，都從地面爬到相同高度；甲用 10 s、乙用 20 s。忽略損失，何者正確？",
   "options": [
     {
       "id": "A",
-      "text": "12408 m/s"
+      "text": "兩人對自身增加的重力位能相同，但甲的平均功率較大"
     },
     {
       "id": "B",
-      "text": "5.61702 m/s"
+      "text": "甲增加的重力位能是乙的 2 倍"
     },
     {
       "id": "C",
-      "text": "0.17803 m/s"
+      "text": "乙的平均功率是甲的 2 倍"
     },
     {
       "id": "D",
-      "text": "217 m/s"
+      "text": "兩人都沒有作功，因為最後都靜止"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "平均速率＝路程÷時間＝264÷47＝5.61702 m/s。 本題對應 KG「Ba-Ⅳ-6：功率」。"
+    "value": "A",
+    "explanation": "增加的重力位能 mgh 相同，所作功相同；甲用時較短，所以 P甲＝W/10 大於 P乙＝W/20，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究功率公式、單位換算、功率比較、電器功率與效率能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的能量形式、轉換、守恆、功率與效率能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公立學校公開自然／理化試題的功率、能量、單位與生活裝置判讀能力方向，題幹、選項、答案、解析與五步解法均以 Ba-Ⅳ-6 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-6"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-ba-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "能量轉換、功、功率、效率與資料判讀",
+      "pattern": "取由運動、電器、熱與系統邊界資料追蹤能量形式和轉換的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由運動、電器、熱與系統邊界資料追蹤能量形式和轉換的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先比較總功，再比較完成相同功所需的時間。",
+  "solutionSteps": [
+    "兩人質量 m 相同。",
+    "上升高度 h 相同，故 mgh 相同。",
+    "忽略損失時兩人所作的功相同。",
+    "甲時間較短，單位時間完成的功較多。",
+    "所以甲功率較大，選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

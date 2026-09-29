@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics s-IV-11."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/"lessons/math/lesson-math-performance-s-iv-11.json"
+REPORT=ROOT/"implementation/reports/math-performance-s-iv-11-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf"}
+
+def record(p,c,r,m,a):
+    return {"publisher":p,"edition":f"{p} 公立校方數學課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；三角形內心、外心、重心與幾何中心的概念、表徵及評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以角平分線、垂直平分線、中線與交點性質描述三角形中心。"],"representations":[r],"examplesOrEvidence":["本課的灌溉圓、吊點與平衡板均為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+
+def main():
+    d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-math-performance-s-iv-11" and d["reviewStatus"]=="draft"
+    d["title"]="s-Ⅳ-11：用三種幾何線找出三角形中心"
+    d["content"]={"summary":"三角形的內心、外心與重心雖都叫『中心』，定義與用途完全不同。三條角平分線交於內心，內心到三邊距離相等，是內切圓圓心；三條邊的垂直平分線交於外心，外心到三個頂點距離相等，是外接圓圓心；三條中線交於重心，重心把每條中線分成 2:1。本課以灌溉圓、吊點和平衡板的自編情境，練習辨認線的種類、預測交點、檢查比例與三角形類型對中心位置的影響。","sections":[{"heading":"內心由角平分線交會","body":"從每個頂點畫內角平分線，三線交於同一點。該點到三邊的垂直距離相等，因此可作為內切圓圓心，永遠位於三角形內部。"},{"heading":"外心由邊的垂直平分線交會","body":"每條邊的垂直平分線上各點到該邊兩端等距，三條垂直平分線交點到三個頂點等距。銳角三角形外心在內部，直角三角形在斜邊中點，鈍角三角形可能在外部。"},{"heading":"重心由三條中線交會","body":"頂點連到對邊中點形成中線，三條中線交於重心；從頂點到重心的段長是整條中線的 2/3，重心到對邊中點是 1/3。這個 2:1 比例可用來檢查吊點或平衡位置。"},{"heading":"不要混淆線與中心","body":"角平分線、垂直平分線與中線的出發條件不同，不能看交點位置猜名稱。先從已知標記找線，再用等距、等角或 2:1 性質驗證中心。"}]}
+    d["studyHighlights"]=["內心看角平分線與到三邊等距。","外心看邊的垂直平分線與到三頂點等距。","重心看中線與 2:1 分點比例。","先辨認線，再用性質檢查中心名稱與位置。"]
+    d["teaching"]={"body":[{"id":"hook","phase":"hook","heading":"三角形灌溉圓要放在哪裡？","body":"原創三角形花圃要放一個與三邊都相切的灌溉圓，請學習者先猜圓心應如何定位。把三個角分別對半後，觀察交點到三邊的垂直距離相同，說明這是內心而不是任意圖形中心，並記錄每條線的來源。"},{"id":"explain","phase":"explain","heading":"三種線與三種等距意義","body":"將角平分線、邊的垂直平分線和中線分成三欄比較：起點條件、交點性質、可應用的問題。角平分線給到邊等距，垂直平分線給到頂點等距，中線交點給 2:1 分割；用同一三角形逐項標記，避免名稱混用。"},{"id":"worked-example","phase":"worked-example","heading":"用中線比例定位吊點","body":"三角形一條中線長 12 公分，從頂點到重心的段長是 2/3×12=8 公分，從重心到對邊中點是 4 公分。先找對邊中點確認是中線，再用 2:1 檢查兩段和原中線相等，最後說明吊點位於三角形內部。"},{"id":"guided-practice","phase":"guided-practice","heading":"三張線索卡找中心","body":"提供『三條角平分線』『三條邊的垂直平分線』『三條頂點到對邊中點的線』三組卡片，讓學習者配對內心、外心、重心，再用等距或 2:1 證據驗證。加入直角三角形外心在斜邊中點的例子，避免把外心永遠放在內部。"},{"id":"transfer","phase":"transfer","heading":"平衡板與外接圓設計","body":"原創平衡板任務用重心尋找支點，灌溉圓用內心，三個固定鉚釘的等距定位用外心。學生先依用途選中心，再列出需要的線與證據；若三角形改成鈍角，討論外心移到圖形外仍符合到三頂點等距。"},{"id":"reflect","phase":"reflect","heading":"修正把所有中心當成同一點","body":"請修正『三角形的三個中心都在同一位置，而且都用中線找』。先列出三種線的定義，再用等腰或一般三角形的圖示比較位置；最後指出只有特殊情況可能重合，不能把一項性質套到其他中心。"}],"summary":["內心由角平分線交會，到三邊等距且在三角形內。","外心由邊的垂直平分線交會，到三頂點等距，位置依三角形類型改變。","重心由中線交會，從頂點到重心與重心到邊中點為 2:1。","先辨認線的來源，再用等距、位置與比例驗證。"],"exitCheck":[{"prompt":"內心、外心、重心各由哪種線找出？","expectedEvidence":"內心是角平分線交點，外心是各邊垂直平分線交點，重心是三條中線交點。"},{"prompt":"中線長 12，重心到對邊中點多長？","expectedEvidence":"重心把中線按 2:1 分割，重心到對邊中點為 1/3×12=4 公分。"},{"prompt":"外心為什麼不一定在三角形內？","expectedEvidence":"銳角在內、直角在斜邊中點，鈍角可能在外部，但仍到三頂點等距。"}]}
+    d["interactive"]={"type":"guided-choice","goal":"依角平分線、垂直平分線與中線辨認三角形中心。","scenario":"切換三種幾何線與三角形類型，觀察中心的等距、位置與 2:1 比例。","variables":[{"symbol":"a","meaning":"角平分或邊上的位置資料"},{"symbol":"b","meaning":"到頂點或邊的距離"},{"symbol":"x","meaning":"中心在中線上的分段長度"}],"steps":[{"id":"step-1","prompt":"到三邊距離相等的中心是誰？","options":["內心","外心","重心"],"answer":"A","feedback":"內心是三條角平分線交點，到三邊的垂直距離相等。"},{"id":"step-2","prompt":"中線長 12，重心到對邊中點是多少？","options":["4","8","6"],"answer":"A","feedback":"重心按頂點到重心:重心到邊中點=2:1，故後段為 4。"},{"id":"step-3","prompt":"三條邊的垂直平分線交點到哪裡等距？","options":["三個頂點","三條邊","三個角"],"answer":"A","feedback":"外心到三個頂點等距，可作外接圓圓心。"}]}
+    d["authoringStandard"]="version-fused-v1"
+    d["versionResearch"]=[record("nani","以三角形三心的幾何線與等距性質建立判斷","角平分線、垂直平分線、中線與交點標記","把三種中心都用中線找，或混淆到邊與到頂點等距","要求由線的定義推導中心性質與位置"),record("kanghsuan","透過作圖與操作比較三心的交點和比例","灌溉圓、紙三角形、重心分段與線索卡","把外心永遠放在內部，或把 2:1 方向寫反","重視作圖歷程、等距驗證與三角形類型"),record("hanlin","連結平衡支點、外接圓與實際設計用途","平衡板、鉚釘、單位、鈍角位置與模型限制","只看交點位置猜中心，忽略幾何線與用途","評估模型、位置、比例與證據是否一致")]
+    d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以三種幾何線辨認內心、外心與重心。","到邊等距、到頂點等距與 2:1 分點是共同核心。","作圖、位置、三角形類型與應用用途需互相驗證。"],"versionDifferences":["南一證據較突顯三心定義與性質；康軒較突顯作圖、紙模型與比例操作；翰林較突顯平衡、外接圓及鈍角位置的應用限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以灌溉圓、平衡板與鉚釘等用途區分三種中心。","以中線 12 公分示範重心 2:1 比例與段長驗算。","把直角／鈍角外心位置、線索卡與等距證據整合成互動任務。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織三角形內心、外心、重心、幾何線、等距、2:1 比例與應用情境。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit":"s-Ⅳ-11：用三種幾何線找出三角形中心","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+
+if __name__ == "__main__": main()

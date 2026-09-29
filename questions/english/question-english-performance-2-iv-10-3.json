@@ -2,41 +2,63 @@
   "id": "question-english-performance-2-iv-10-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-10／描述圖片」task, what is the best way to prepare question 3?",
+  "prompt": "Image description: Beside a trail sign, one volunteer tightens a loose wheel on a handcart while another holds the cart steady. A third person checks a paper list. What is the first volunteer doing?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-10／描述圖片."
+      "text": "Reading the trail map aloud."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-10／描述圖片."
+      "text": "Loading food into the cart."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-10／描述圖片."
+      "text": "Writing a name on the list."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-10／描述圖片."
+      "text": "Repairing the cart wheel."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-10"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-10／描述圖片, question 3."
+    "value": "D",
+    "explanation": "第一位志工手上正在鎖緊鬆動的輪子，所以他在修理手推車；扶住車子的是另一位，查看清單的是第三人。 正確答案：D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/111-1-1%E4%B8%80%E5%B9%B4%E7%B4%9A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
+    "sourceLocator": "PDF第1頁第一大題第4題：從人物與寵物圖像辨認人物正在進行的活動；本題人物、場景、文字與選項均重新創作。",
+    "authoringNote": "僅取公立學校公開英語試題的圖像辨識、方位／動作／場景推論或連續圖敘述能力型態作pattern-only參考；未重製原卷題幹、選項、圖片或答案。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-10"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.dam.kh.edu.tw/upload/68/101_28414/111-1-1%E4%B8%80%E5%B9%B4%E7%B4%9A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C%E6%9A%A8%E8%A7%A3%E7%AD%94.pdf",
+      "title": "高雄市立大社國民中學111學年度第1學期第1次段考七年級英語科試題與解答；只參照圖像辨識／描述能力，不複製原卷內容。",
+      "year": "111-1",
+      "locator": "PDF第1頁第一大題第4題：從人物與寵物圖像辨認人物正在進行的活動",
+      "pattern": "以人物動作及周邊物件辨識正在發生的活動；本題改寫成戶外維修站的工作分配。",
+      "subject": "english",
+      "observedPattern": "以人物動作及周邊物件辨識正在發生的活動；本題改寫成戶外維修站的工作分配。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "動作與角色：先鎖定問題要找的人物、物件、關係或時間，再逐項用圖像描述核對證據；不補入畫面未提供的資訊。",
+  "solutionSteps": [
+    "先辨認題目指的是first volunteer，別把不同人物的動作混在一起。",
+    "將tightens與loose wheel連起來，找出直接動作。",
+    "用另外兩人的行動確認角色區分：一人扶車、一人看清單。",
+    "排除讀地圖、裝食物和寫名單等圖中未描述的活動。",
+    "選D；多人圖像題先鎖定人物，再把動詞與手中物件配對。"
+  ]
 }

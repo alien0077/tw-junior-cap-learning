@@ -2,23 +2,23 @@
   "id": "question-science-content-eb-iv-10-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年2月15日社區環境站的觀察中，小車在 48 秒內前進 1359 m，研究「Eb-Ⅳ-10：不受力物體維持原有運動狀態」時，平均速率為何？",
+  "prompt": "站在向東行駛的公車內，乘客看到旁邊物體靜止；站在路邊的人卻看到它向東移動。這種差異主要來自什麼？",
   "options": [
     {
       "id": "A",
-      "text": "28.3125 m/s"
+      "text": "物體同時受到東西兩個重力"
     },
     {
       "id": "B",
-      "text": "65232 m/s"
+      "text": "兩位觀察者選用的參考系不同"
     },
     {
       "id": "C",
-      "text": "0.0353201 m/s"
+      "text": "物體在車內失去質量"
     },
     {
       "id": "D",
-      "text": "1311 m/s"
+      "text": "路邊觀察者改變了物體速度"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "平均速率＝路程÷時間＝1359÷48＝28.3125 m/s。 本題對應 KG「Eb-Ⅳ-10：不受力物體維持原有運動狀態」。"
+    "value": "B",
+    "explanation": "運動描述依賴參考系；相對公車物體位置不變，相對地面則隨公車向東移動，兩種描述可同時成立。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作慣性、合力、摩擦、參考系與速度資料的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-10"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "牛頓第一運動定律、慣性與受力判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以公車起步煞車、桌面滑車、受力圖與摩擦資料考查慣性、合力為零、速度改變與參考系；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "合力、慣性、摩擦與運動狀態判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以公車起步煞車、桌面滑車、受力圖與摩擦資料考查慣性、合力為零、速度改變與參考系；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "慣性、受力平衡與生活運動能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以公車起步煞車、桌面滑車、受力圖與摩擦資料考查慣性、合力為零、速度改變與參考系；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先明確寫出觀察者與參考物，再比較位置隨時間是否改變。",
+  "solutionSteps": [
+    "指定車內觀察者以公車為參考系。",
+    "物體相對公車位置維持不變，所以看似靜止。",
+    "路邊觀察者以地面為參考系。",
+    "物體隨公車相對地面向東移動。",
+    "所以選 B。"
+  ]
 }

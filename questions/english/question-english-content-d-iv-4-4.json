@@ -2,23 +2,23 @@
   "id": "question-english-content-d-iv-4-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-4／事實與意見」task, what is the best way to prepare question 4?",
+  "prompt": "A weather report was published today. Which sentence is a prediction, not a recorded fact?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-4／事實與意見."
+      "text": "It will probably rain tomorrow."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-4／事實與意見."
+      "text": "The report was published at 8 a.m. today."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-4／事實與意見."
+      "text": "The thermometer reads 24°C now."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-4／事實與意見."
+      "text": "Yesterday, the rain gauge recorded 5 mm."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-4／事實與意見, question 4."
+    "explanation": "Tomorrow 和 probably 都指出未來且未確定的事件；其餘為已記錄資訊，因此答案 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675415417313RWpH2HNA.pdf",
+    "sourceLocator": "PDF第3頁第32題：辨識will probably所標示的推測／預期。",
+    "authoringNote": "參照公立國中英文定期評量中核對文章事實、作者觀點、圖表證據、預測及行動判讀的能力；情境、題幹、數據、選項、答案與解析皆獨立編寫，未複製原題。版本研究與全案內容審查未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675415417313RWpH2HNA.pdf",
+      "title": "臺北市立內湖國中111學年度第1學期七年級第3次段考英語科試卷",
+      "year": "111",
+      "subject": "english",
+      "locator": "PDF第3頁第32題：辨識will probably所標示的推測／預期。",
+      "observedPattern": "參照以probably辨認尚未發生之預測語氣的題型；本題改用天氣觀測情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "分辨預測與事實要看時間和確定程度：尚未發生且帶有不確定語氣的是預測，已記錄的時間或讀值是事實。",
+  "solutionSteps": [
+    "四句中先圈出時間：today、now、yesterday 是已發生或正在觀察的時間。",
+    "Published at 8 a.m.、目前24°C及昨日5毫米都有可查的記錄。",
+    "Tomorrow 指未來，probably 表示尚不確定。",
+    "所以預測句是 It will probably rain tomorrow，選 A。",
+    "確認預測日後可能被新觀測支持或修正，不能當成已發生的降雨紀錄。"
+  ]
 }

@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-7-iv-3",
+  "change": [
+    "Aligned the original campus-tour communication repair flow to a predicted information gap, selection and rehearsal of a repair strategy, observation of listener/map evidence, and evidence-based explanation.",
+    "Added truthful media/simulation fallback requirements and fault-injected the simulations.js failure in the unit browser regression."
+  ],
+  "browser": {
+    "status": "passed",
+    "visibleSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardWrongRetryAndCorrectFeedback": true,
+    "blockedSimulationScript": ["http://127.0.0.1:8765/site/simulations.js"],
+    "localGuidedChoiceFallbackUsable": true,
+    "axeViolations": 0,
+    "axeIncomplete": 0,
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "blockedExternalRequests": 1,
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "1,002/1,027 pass; 25 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

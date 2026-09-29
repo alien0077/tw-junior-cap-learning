@@ -2,23 +2,23 @@
   "id": "question-english-performance-5-iv-6-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with permission to join at the science room?” B: “___” (「5-Ⅳ-6／轉述簡短對話」practice, 10:00)",
+  "prompt": "Ben told me, 'I will call you tomorrow.' Which sentence reports his words from my point of view?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with permission to join at the science room in the 5-Ⅳ-6／轉述簡短對話 practice."
+      "text": "Ben said that I will call you tomorrow."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the science room in the 5-Ⅳ-6／轉述簡短對話 practice."
+      "text": "Ben says he called me yesterday."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the science room last year in the 5-Ⅳ-6／轉述簡短對話 practice."
+      "text": "Ben said that he would call me the next day."
     },
     {
       "id": "D",
-      "text": "No, the weather at the science room is sunny in the 5-Ⅳ-6／轉述簡短對話 practice."
+      "text": "Ben said that he calls you today."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 5-Ⅳ-6／轉述簡短對話, item 2. This item targets 5-Ⅳ-6／轉述簡短對話, question 2."
+    "value": "C",
+    "explanation": "Ben 原話中的 I 指 Ben，所以改成 he；will call 隨過去式 said 回推為 would call。Ben 對我說的 you 從我的轉述視角是 me；tomorrow 依報導時間移成 the next day。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dwm.kh.edu.tw/upload/344/104_64184/105-2-2%E8%8B%B1%E6%96%87%E4%B8%89%E5%B9%B4%E7%B4%9A%E9%A1%8C%E7%9B%AE%E5%8D%B7.pdf",
+    "sourceLocator": "已核對大灣國中英文公開段考第2頁第21、25、29題及答案卷第4頁改寫題，國昌國中公開試題第3頁第20、22題；僅參考題型能力方向，未複製原卷內容。",
+    "authoringNote": "本題情境、對話、選項、答案與解說皆為原創；公校來源僅作 pattern-only 題型研究，內容維持 draft，尚未通過全庫發布 gate。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-5-iv-6"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-5-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64184/105-2-2%E8%8B%B1%E6%96%87%E4%B8%89%E5%B9%B4%E7%B4%9A%E9%A1%8C%E7%9B%AE%E5%8D%B7.pdf",
+      "title": "高雄市大灣國中105學年度第二學期第二次段考三年級英文題目卷",
+      "year": "105-2",
+      "subject": "english",
+      "locator": "第2頁第29題",
+      "observedPattern": "克漏字以 They said ... would not miss 檢查過去報導動詞後的時態呼應。 本題僅借鑑題型／能力方向；題幹、對話、選項及答案均自行創作，未摘錄或改寫原卷句子。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64186/111%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%B8%80%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%AE%B5%E8%80%83%E8%8B%B1%E6%96%87%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%A7%A3%E7%AD%94%28%E4%BD%B3%E9%9F%B3%29.pdf",
+      "title": "高雄市大灣國中111學年度第一學期第二次段考九年級英文答案卷",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "第4頁第六大題第2、3題",
+      "observedPattern": "答案卷逐題把直接問句改成含 if／whether 或 wh 子句的間接問句；本題只取視角轉換後重述訊息的能力方向。 本題僅借鑑題型／能力方向；題幹、對話、選項及答案均自行創作，未摘錄或改寫原卷句子。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E8%AA%9E%E7%A7%91_4.pdf",
+      "title": "高雄市立國昌國民中學112學年度第二學期第二次段考二年級英語科試題卷",
+      "year": "112-2",
+      "subject": "english",
+      "locator": "第3頁第20題",
+      "observedPattern": "對話脈絡使用 asked him to help 轉述請求；本題只取報導動詞帶出他人訊息的句型方向。 本題僅借鑑題型／能力方向；題幹、對話、選項及答案均自行創作，未摘錄或改寫原卷句子。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先標記每個需要依轉述視角改變的代詞與時間詞，再檢查助動詞。",
+  "solutionSteps": [
+    "辨認 Ben 是原句 I 的指涉對象，改成 he。",
+    "將 will call 改為 would call。",
+    "依轉述者視角將 you 改為 me。",
+    "逐一核對 he、would call、me 與 the next day 四項視角變化。",
+    "用 Ben 對我說話的情境回代代名詞，確認明天仍指通話的次日。"
+  ]
 }

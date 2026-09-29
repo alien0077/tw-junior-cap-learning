@@ -1,0 +1,64 @@
+{
+  "reportId": "math-s-9-13-source-overlap-correction-d353",
+  "date": "2026-09-28",
+  "unitId": "S-9-13",
+  "supersedes": [
+    "implementation/reports/math-s-9-13-publisher-informed-fusion-d352.json numeric-independence claim"
+  ],
+  "finding": {
+    "sourceLocator": "Nani-labeled third-party share, pp.52-53",
+    "overlap": "The prior learner-visible prism worked example used the same 3-4-5 base and length-10 numerical combination found in the public share.",
+    "correction": "D-352's claim that all numeric examples were independent was inaccurate. A prose rewrite alone was insufficient to establish independent example design."
+  },
+  "changes": {
+    "prismWorkedExample": {
+      "base": "8-15-17",
+      "lengthCm": 3,
+      "baseAreaCm2": 60,
+      "perimeterCm": 40,
+      "surfaceAreaCm2": 240,
+      "volumeCm3": 180
+    },
+    "interactivePrediction": {
+      "fromLengthCm": 3,
+      "toLengthCm": 5,
+      "surfaceAreaIncreaseCm2": 80,
+      "volumeIncreaseCm3": 120,
+      "surfaceAreaAtTargetCm2": 320,
+      "volumeAtTargetCm3": 300,
+      "correctOption": "B"
+    },
+    "transfer": {
+      "base": "7-24-25",
+      "lengthCm": 2,
+      "surfaceAreaCm2": 280,
+      "volumeCm3": 168
+    },
+    "coneExample": "Changed to radius 4 cm and slant height 7 cm; lateral area 28π cm² and total surface area 44π cm².",
+    "implementation": [
+      "Added schema-validated prismModel and versioned data-driven renderer s9-13-prism-surface-volume-v2; legacy model remains backward-compatible.",
+      "Synchronized visible lesson, misconceptions, step answers, unit spec, regression tests, browser smoke expected values and browser result summary.",
+      "Prediction option labels are regression-checked against the correct answer key."
+    ]
+  },
+  "verification": {
+    "targetTests": "PASS npm run test:math:s9-13",
+    "fullTests": "PASS npm test",
+    "dataValidation": "PASS 14,474 JSON files; 13,112 IDs; 1,032 KG nodes; all records remain draft",
+    "specValidation": "PASS 1,027 specs, 0 errors; 1,027 remain QA pending",
+    "strictLessonIndependence": "PASS 614 lessons, 0 risks, 0 failures",
+    "browserSmoke": "PASS real Chromium, 1,027/1,027 traversal; S-9-13 prediction gate, retry, keyboard focus, synchronized calculations, transfer, reset, and 320/375/768px; no page errors",
+    "axe": "PASS 48 runs, 0 violations, 6 incomplete determinations",
+    "siteIndex": "PASS 1,052 lessons, 10,526 question paths, 40 mappings; local revision",
+    "diffCheck": "PASS scoped git diff --check"
+  },
+  "gates": {
+    "lessonReviewStatus": "draft",
+    "publisherEvidenceSlots": "all three remain pending; full publisher chapter review/provenance/rights and content review are incomplete",
+    "specQaStatus": "untested",
+    "publicExamSourceLedger": "unchanged and not rerun; last verified 10,566/10,566 with 0 pending",
+    "a7-2": "not modified",
+    "subtasks": "none",
+    "commitPush": "not performed"
+  }
+}

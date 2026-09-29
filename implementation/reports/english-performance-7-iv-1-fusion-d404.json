@@ -1,0 +1,41 @@
+{
+  "asOf": "2026-09-28",
+  "unit": "lesson-english-performance-7-iv-1",
+  "scope": "盤點並完成一篇原有正文未納入融合名冊的課程；保留既有已登錄稿件與題庫，不執行真人或ChatGPT內容審查。",
+  "beforeAndAfter": {
+    "before": "六段 content.sections 已有原創字典查義稿，但 student-visible teaching.body 是泛用占位；缺少版本融合紀錄和互動；publisherResearch錯把跨版本校方課程計畫寫成章節級依據，spec則配錯LanguageTimelineBlock。",
+    "after": "六段學生正文與渲染正文已逐段對齊；新增四題GuidedChoice、逐家版本研究範圍、原創融合紀錄及本單元專屬spec；錯誤來源歸屬降級並明列課本正文未取得。"
+  },
+  "curriculumAndFusionBasis": {
+    "officialIndicator": "7-Ⅳ-1：使用字典時依字母序定位詞頭、辨識詞性縮寫／多義分支，依上下文選取適合義項。",
+    "knowledgeGraphId": "kg-english-performance-7-iv-1",
+    "officialLocator": "國教院英語課綱教師手冊PDF印刷頁91–92／PDF頁102，含本指標各子技能。",
+    "nani": "永豐國中公開課程計畫PDF pp.3–4標示南一英語七上及字典、教師手冊、電子書資源；不是南一出版社指定章節教材，未讀到本指標章節講解。",
+    "hanlin": "桃園國中公開課程計畫PDF pp.3–6標示翰林英語七上、7-Ⅳ-1及字典資源；僅校方版本／資源脈絡，沒有翰林本課章節正文或教學順序。",
+    "kanghsuan": "明生國中課程計畫標示康軒九年級B5 Lesson 4 ‘Do You Know What These Words Mean?’；只能作同字詞義的近鄰閱讀脈絡，非七上7-Ⅳ-1字典查義章節。",
+    "claimBoundary": "本課完成的是依官方課綱及KG、結合實際可讀版本定位而原創的技能教學；不宣稱取得三家指定冊次教材或完成出版社章節逐段比較。"
+  },
+  "workCompleted": [
+    "保留並沿用原六段seal多義字稿，不覆寫已登錄稿件；把六段逐段接到網站渲染欄位並以回歸測試鎖定一致性。",
+    "更正publisherResearch中不相關英語公校資料，改記可回查的南一、康軒、翰林校方版本定位與明確證據限制。",
+    "新增versionResearch三筆、融合共同核心／版本差異／原創補充與LLM融合說明；不把校方計畫冒稱出版社課本內容。",
+    "新增四步單元專屬互動：字母序、詞性、多義名詞、動詞語境；每步含正解、錯答提示與詳解。",
+    "修正spec錯配的LanguageTimelineBlock為GuidedChoiceBlock，補上學習目標、先備、迷思、內容流程、遷移、出口檢核、無障礙及測試契約。",
+    "新增Node與Playwright單元回歸並註冊npm命令；題庫未變更，既有融合稿未重做。"
+  ],
+  "verification": {
+    "targetNode": "PASS: npm run test:english:7-iv-1。",
+    "fullNpmTest": "PASS: npm test；含現有pretest、工作台全單元遍歷1,027/1,027及既有自動化套件。",
+    "browser": "PASS: Python Playwright 1.58.0實際開啟學生頁；六段可見、四題互動、鍵盤錯答提示與答對解析、axe 0 violations／0 incomplete、320／375／768px無水平溢位、封鎖1個外部請求、0 page errors。",
+    "playwrightRuntime": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3；Playwright 1.58.0；Chromium路徑/Users/alien/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing。8765既有站台curl HTTP 200；隔離環境loopback不可達，已在授權環境完成同一測試。",
+    "siteIndex": "PASS: build_site_index.py --revision local --check；1,052 lessons、10,566 questions、40 mapping sets。",
+    "dataValidation": "PASS before this report was added: 14,515 JSON、13,114 IDs、1,032 KG；教材與題庫仍依目前狀態為draft。",
+    "finalDataValidation": "PASS after adding this report: 14,516 JSON、13,114 IDs、1,032 KG。",
+    "implementationSpecs": "PASS: 1,027 specs、0 errors、15 eligible、1,012 pending。",
+    "publicExamLedger": "沿用D-402最近唯讀核驗10,566/10,566 recorded、pending 0；本課未改任何題目。",
+    "authoredFusionInventory": "738/791 = 93.30%；learning-content 583/583，learning-performance 155/208；53課未登記。此數字只代表已完成原創融合稿的名冊登錄，不代表教材內容審查或題庫來源完整性。",
+    "diffCheck": "PASS: 本課lesson、spec、Node／Playwright regression與套件命令範圍。"
+  },
+  "subtasks": "none",
+  "commitPush": "not performed; overall objective remains incomplete"
+}

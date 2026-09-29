@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-6-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "坐標平面上 A(－1,2)、B(5,10)，兩點距離為何？",
+  "prompt": "長方形長 9 公尺、寬 12 公尺，對角線長多少？",
   "options": [
     {
       "id": "A",
-      "text": "10"
+      "text": "15 公尺"
     },
     {
       "id": "B",
-      "text": "8（將題目中的 1、2、5、10 代入順序弄錯）"
+      "text": "18 公尺"
     },
     {
       "id": "C",
-      "text": "12（將題目中的 1、2、5、10 代入順序弄錯）"
+      "text": "21 公尺"
     },
     {
       "id": "D",
-      "text": "14（將題目中的 1、2、5、10 代入順序弄錯）"
+      "text": "108 公尺"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "距離=√(6²+8²)=10。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。"
+    "explanation": "對角線形成直角三角形，d²=9²+12²=81+144=225，所以 d=15 公尺，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 畢氏定理 題型與官方課綱 KG kg-math-content-s-8-6",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供畢氏定理與直角三角形應用能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的畢氏定理能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-8-6"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "畢氏定理、斜邊辨識、平方和、逆定理、根式計算與生活測量",
+      "observedPattern": "公開學校數學試題常以直角三角形邊長、斜邊平方和、畢氏逆定理與矩形／梯子情境考查空間距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "畢氏定理、斜邊辨識、平方和、逆定理、根式計算與生活測量",
+      "observedPattern": "公開學校數學試題常以直角三角形邊長、斜邊平方和、畢氏逆定理與矩形／梯子情境考查空間距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把長方形對角線視為直角三角形的斜邊。",
+  "solutionSteps": [
+    "長方形長與寬互相垂直。",
+    "對角線是直角三角形的斜邊。",
+    "列式 d²=9²+12²。",
+    "計算 d²=225，得 d=15。",
+    "選 A。"
+  ]
 }

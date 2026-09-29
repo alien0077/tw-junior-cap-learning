@@ -2,23 +2,23 @@
   "id": "question-social-content-geo-ae-iv-4-4",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2023年7月31日社區資料中心的資料中，甲地年雨量約 1020 mm 且位於迎風坡，乙地約 540 mm 且位於背風坡。研究「地 Ae-Ⅳ-4：產業挑戰與調適」時，哪項判讀較合理？",
+  "prompt": "傳統工廠導入節能設備後用電下降，但貸款與維修支出增加。判斷是否值得應比較？",
   "options": [
     {
       "id": "A",
-      "text": "在「地 Ae-Ⅳ-4：產業挑戰與調適」的資料中，地形與盛行風向可能共同造成兩地降雨差異"
+      "text": "節能收益、設備壽命、維修與融資成本、減排及回收年限"
     },
     {
       "id": "B",
-      "text": "雨量差異必然只由緯度造成"
+      "text": "只看第一個月電費"
     },
     {
       "id": "C",
-      "text": "背風坡一定比迎風坡多雨"
+      "text": "只看設備售價"
     },
     {
       "id": "D",
-      "text": "單日雨量即可代表全年氣候"
+      "text": "用減排口號取代成本資料"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "迎風坡抬升氣流可能增加降雨，背風坡可能較乾；仍須結合長期資料判斷。 本題對應 KG「地 Ae-Ⅳ-4：產業挑戰與調適」。"
+    "explanation": "轉型決策要用生命週期與回收期間比較收益與成本，不能只看單月或單一支出。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公立國中社會科公開試題；研究產業挑戰、調適策略、資料比較與政策成效的能力方向。",
+    "authoringNote": "依官方課綱 KG 與三個公立學校公開來源的題型／能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-geo-ae-iv-4"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-geo-ae-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國中三年級社會科公開段考；僅研究題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "產業、區域與資料判讀能力方向",
+      "observedPattern": "公開社會科產業調適資料題研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "產業變遷、環境條件與方案比較題型",
+      "observedPattern": "公開社會科產業調適資料題研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "人地互動、產業調適與多資料推理",
+      "observedPattern": "公開社會科產業調適資料題研究後原創改寫",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分辨產業挑戰與受影響對象，再用基準線、多指標與長期追蹤評估調適。",
+  "solutionSteps": [
+    "讀題定位：圈出「轉型成本」與題目給的挑戰、成本、風險、受益者或成效指標。",
+    "建立判準：轉型決策要用生命週期與回收期間比較收益與成本，不能只看單月或單一支出。",
+    "核對答案：選項 A「節能收益、設備壽命、維修與融資成本、減排及回收年限」符合產業挑戰與調適的多因素判讀。",
+    "排除誘答：檢查是否只看一個數字、單一事件、短期成果或忽略被轉移的成本。",
+    "結論回查：確認基準線、期間、尺度與推論強度相配，並保留後續監測需求。"
+  ]
 }

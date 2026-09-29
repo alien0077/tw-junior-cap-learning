@@ -2,23 +2,23 @@
   "id": "question-science-content-ab-iv-2-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年4月16日校園實驗室的觀察中，將 137℃ 的金屬片放入 27℃ 的水中，研究「Ab-Ⅳ-2：溫度與物質狀態」時，最初的熱傳方向為何？",
+  "prompt": "在其他條件相近下，下列哪項通常能加快同一液體的蒸發？",
   "options": [
     {
       "id": "A",
-      "text": "由 27℃ 的水傳向 137℃ 金屬片"
+      "text": "減小液面並降低溫度"
     },
     {
       "id": "B",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "把液體密封在完全不流動的容器中"
     },
     {
       "id": "C",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "提高溫度並增加液面面積"
     },
     {
       "id": "D",
-      "text": "由金屬片傳向水"
+      "text": "把液體放在較冷且潮濕的環境"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 137℃ 金屬片傳向 27℃ 的水。 本題對應 KG「Ab-Ⅳ-2：溫度與物質狀態」。"
+    "value": "C",
+    "explanation": "提高溫度可增加高能量粒子比例，增加液面可提供更多逸出位置，兩者都會加快蒸發，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；熔化能量變化題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的溫度、熱量、相變與生活應用能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "溫度、熱量、相變與生活情境判讀",
+      "pattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列蒸發速率的可控因素，再確認選項同時提供有利方向。",
+  "solutionSteps": [
+    "比較各選項的溫度與液面條件。",
+    "升高溫度使更多表面粒子能逸出。",
+    "增加液面使可逸出的位置變多。",
+    "C 同時具備兩個加速條件。",
+    "所以選 C。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

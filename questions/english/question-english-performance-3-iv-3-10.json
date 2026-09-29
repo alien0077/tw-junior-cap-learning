@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-3-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Read this「3-Ⅳ-3／理解簡易英文標示」notice for the sports center, item 10: “Keep the walkway clear.” What does it tell people?",
+  "prompt": "A pool board lists Tuesday–Friday hours as 7:00–11:30 a.m. and 5:00–9:00 p.m. It is Tuesday at 12:15 p.m. When does swimming open again?",
   "options": [
     {
       "id": "A",
-      "text": "For item 10 in the 3-Ⅳ-3／理解簡易英文標示 notice, People should keep the walkway clear."
+      "text": "At 12:30 p.m."
     },
     {
       "id": "B",
-      "text": "For item 10 in the 3-Ⅳ-3／理解簡易英文標示 notice, People should block the walkway."
+      "text": "At 4:15 p.m."
     },
     {
       "id": "C",
-      "text": "For item 10 in the 3-Ⅳ-3／理解簡易英文標示 notice, People should sleep on the walkway."
+      "text": "At 5:00 p.m."
     },
     {
       "id": "D",
-      "text": "For item 10 in the 3-Ⅳ-3／理解簡易英文標示 notice, People should move the walkway to the roof."
+      "text": "At 7:00 p.m."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The answer restates the information in the notice without changing its meaning. This item targets 3-Ⅳ-3／理解簡易英文標示, question 10."
+    "value": "C",
+    "explanation": "The morning session ends at 11:30 a.m., and the evening session begins at 5:00 p.m. At 12:15 the pool is between sessions, so the next one starts at 5:00 p.m."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675415417654MTSxFV3o.pdf",
+    "sourceLocator": "臺北市立內湖國中111學年度第一學期七年級第二次段考英文試題卷；PDF第4頁第53題：依泳池營業表格判斷星期與開放時段。本題依題型與推理能力重新創作，不複製原題、選項、圖像或答案。",
+    "authoringNote": "原創題幹與選項；僅將公立學校公開試題作為題型與推理能力參照。答案、策略及逐步解說為本題獨立撰寫；保持draft，未執行Terra複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675415417654MTSxFV3o.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期七年級第二次段考英文試題卷",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "PDF第4頁第53題：依泳池營業表格判斷星期與開放時段",
+      "observedPattern": "題目需從規則文字辨認違規行為，或把表格營業時段與當下星期、時間交叉核對；本題使用新場館和新數值。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "將一天分成表格列出的營業區段；若現在落在兩段之間，答案是下一段的開始時刻。",
+  "solutionSteps": [
+    "確認 Tuesday 使用 Tuesday–Friday 時段。",
+    "讀出兩段開放時間：上午7:00至11:30，以及下午5:00至晚上9:00。",
+    "12:15 p.m. 已晚於上午場結束，且早於晚間場開始。",
+    "下一個游泳時段因此在下午5:00開始；其他選項都不是下一個開放端點。",
+    "答案選C；分段營業時刻表要找當下之後最近的開放區間。"
+  ]
 }

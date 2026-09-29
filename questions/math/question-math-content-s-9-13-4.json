@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-13-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "圓柱半徑 3 公分、高 5 公分，體積以 π 表示為何？",
+  "prompt": "長方體長 4、寬 3、高 2 公分，表面積是多少？",
   "options": [
     {
       "id": "A",
-      "text": "15π"
+      "text": "26 平方公分"
     },
     {
       "id": "B",
-      "text": "30π"
+      "text": "52 平方公分"
     },
     {
       "id": "C",
-      "text": "45π"
+      "text": "72 平方公分"
     },
     {
       "id": "D",
-      "text": "90π"
+      "text": "96 平方公分"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "圓柱體積=πr²h=π×3²×5=45π。"
+    "value": "B",
+    "explanation": "表面積=2(4×3+4×2+3×2)=2(12+8+6)=52 平方公分，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 表面積與體積 題型與官方課綱 KG kg-math-content-s-9-13",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供表面積、體積與單位能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的立體量測方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-13"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-13",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "立體表面積、體積、長方體／正方體、柱體、單位換算與公式適用條件",
+      "observedPattern": "公開學校數學試題常以立體展開、表面積與體積公式、容量單位及複合條件考查空間量測；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "立體表面積、體積、長方體／正方體、柱體、單位換算與公式適用條件",
+      "observedPattern": "公開學校數學試題常以立體展開、表面積與體積公式、容量單位及複合條件考查空間量測；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "立體表面積、體積、長方體／正方體、柱體、單位換算與公式適用條件",
+      "observedPattern": "公開學校數學試題常以立體展開、表面積與體積公式、容量單位及複合條件考查空間量測；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將三組成對的面積各算一次，再乘二。",
+  "solutionSteps": [
+    "計算長寬面積 4×3=12。",
+    "計算長高面積 4×2=8。",
+    "計算寬高面積 3×2=6。",
+    "2(12+8+6)=52。",
+    "選 B。"
+  ]
 }

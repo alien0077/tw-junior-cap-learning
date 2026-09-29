@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-10-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年9月21日自然科教室的觀察中，小車在 20 秒內前進 1723 m，研究「Eb-Ⅳ-10：不受力物體維持原有運動狀態」時，平均速率為何？",
+  "prompt": "兩台相同小車在不同表面滑行：甲在低摩擦軌道上 5 s 後速度由 3.0 m/s 降至 2.8 m/s；乙在粗糙桌面上 5 s 後降至 1.0 m/s。哪個推論最有證據支持？",
   "options": [
     {
       "id": "A",
-      "text": "34460 m/s"
+      "text": "甲完全不受力，乙完全沒有慣性"
     },
     {
       "id": "B",
-      "text": "0.0116077 m/s"
+      "text": "兩車都受合力，且乙的減速效果較明顯，顯示阻力影響較大"
     },
     {
       "id": "C",
-      "text": "86.15 m/s"
+      "text": "甲的速度變化較小，所以甲受到較大的反向力"
     },
     {
       "id": "D",
-      "text": "1703 m/s"
+      "text": "乙速度較小，所以乙一定質量較小"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-10"
   ],
-  "difficulty": "easy",
+  "difficulty": "hard",
   "answer": {
-    "value": "C",
-    "explanation": "平均速率＝路程÷時間＝1723÷20＝86.15 m/s。 本題對應 KG「Eb-Ⅳ-10：不受力物體維持原有運動狀態」。"
+    "value": "B",
+    "explanation": "兩車速度都下降，表示各自有不為零的反向合力；乙下降幅度較大，在相同時間與可比條件下支持粗糙表面阻力影響較大，但不應由此直接推質量。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作慣性、合力、摩擦、參考系與速度資料的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-10"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "牛頓第一運動定律、慣性與受力判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以公車起步煞車、桌面滑車、受力圖與摩擦資料考查慣性、合力為零、速度改變與參考系；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "合力、慣性、摩擦與運動狀態判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以公車起步煞車、桌面滑車、受力圖與摩擦資料考查慣性、合力為零、速度改變與參考系；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "慣性、受力平衡與生活運動能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以公車起步煞車、桌面滑車、受力圖與摩擦資料考查慣性、合力為零、速度改變與參考系；本題只取能力方向並重新設計數值與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先讀速度改變，再比較減速幅度，最後只做資料能支持的有限推論。",
+  "solutionSteps": [
+    "甲速度下降 0.2 m/s，乙下降 2.0 m/s。",
+    "兩者速度都改變，所以合力都不為零。",
+    "乙在相同時間內減速較多。",
+    "資料支持乙受到較明顯阻力影響。",
+    "所以選 B。"
+  ]
 }

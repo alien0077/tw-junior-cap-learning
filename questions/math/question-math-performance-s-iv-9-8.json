@@ -2,23 +2,23 @@
   "id": "question-math-performance-s-iv-9-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "三角形的兩邊長為 4 公分與 9 公分，第三邊 x 應滿足哪個範圍才能形成三角形？",
+  "prompt": "三角形的兩邊長為 7 公分與 12 公分，第三邊 x 應滿足哪個範圍才能形成三角形？",
   "options": [
     {
       "id": "A",
-      "text": "x＞13"
+      "text": "0<x<5"
     },
     {
       "id": "B",
-      "text": "5＜x＜13"
+      "text": "5<x<19"
     },
     {
       "id": "C",
-      "text": "0＜x＜5"
+      "text": "7<x<12"
     },
     {
       "id": "D",
-      "text": "x＝5 或 13"
+      "text": "12<x<19"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "三角形不等式為 |9−4|＜x＜9＋4，所以 5＜x＜13；等號時三點會共線，不能成三角形。"
+    "explanation": "三角形不等式為 |12-7|<x<12+7，即 5<x<19，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考三角形邊角關係、三角形不等式與全等判定題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供三角形成立、全等判定與幾何推理能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的幾何證明方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-9"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-9",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形不等式、最大角與最長邊、SSS／SAS／ASA／HL 全等判定、等腰三角形與對應關係",
+      "observedPattern": "公開數學評量常要求從邊角條件判斷三角形能否成立或全等，並將全等對應傳遞到角、邊與周長；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形不等式、最大角與最長邊、SSS／SAS／ASA／HL 全等判定、等腰三角形與對應關係",
+      "observedPattern": "公開數學評量常要求從邊角條件判斷三角形能否成立或全等，並將全等對應傳遞到角、邊與周長；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形不等式、最大角與最長邊、SSS／SAS／ASA／HL 全等判定、等腰三角形與對應關係",
+      "observedPattern": "公開數學評量常要求從邊角條件判斷三角形能否成立或全等，並將全等對應傳遞到角、邊與周長；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用已知兩邊的差與和，不要把端點 5、19 包含進去。",
+  "solutionSteps": [
+    "計算兩邊差 12-7=5。",
+    "計算兩邊和 12+7=19。",
+    "第三邊必須大於差。",
+    "第三邊必須小於和。",
+    "所以範圍為 5<x<19，選 B。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ba-iv-1-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "故事正在描寫比賽現場，突然插入主角童年學習跑步的片段，這段屬於什麼？",
+  "prompt": "故事先寫成年主角在車站等人，接著用一段文字回到他國小時第一次搭車的經驗，回憶結束後又回到車站。回憶段落在主線中扮演什麼角色？",
   "options": [
     {
       "id": "A",
-      "text": "插敘"
+      "text": "完全取代車站主線"
     },
     {
       "id": "B",
-      "text": "順敘"
+      "text": "與主線無關的另一篇故事"
     },
     {
       "id": "C",
-      "text": "結論"
+      "text": "插入主線、補充人物背景"
     },
     {
       "id": "D",
-      "text": "定義"
+      "text": "把所有事件改成順敘"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "在主要事件進行中插入相關往事，是插敘。"
+    "value": "C",
+    "explanation": "回憶被放進成年等人的主線，結束後又回到車站，功能是補充人物背景或情感來源，屬於插敘性的段落。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "敘事時間與篇章結構；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究順敘、倒敘、插敘、補敘的判讀線索與篇章功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫敘事順序題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文時間順序與篇章理解",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章結構與敘事線索判讀",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "確認段落前後是否回到原主線，再問插入內容替讀者補足哪個理解缺口。",
+  "solutionSteps": [
+    "標出車站等待是現在主線。",
+    "確認童年經驗前後都被現在的車站段落包住。",
+    "C 指出它是插入主線的背景資訊。",
+    "A、B、D 都錯把局部回憶當成整篇敘事順序。",
+    "移除回憶後檢查主線仍可接續，便能看出它是插入段落。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

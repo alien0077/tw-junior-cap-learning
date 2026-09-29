@@ -1,0 +1,35 @@
+{
+  "asOf": "2026-09-28",
+  "unit": "lesson-english-performance-6-iv-2",
+  "scope": "one previously unregistered placeholder lesson; preserve all other authored manuscripts and questions",
+  "manuscriptInventory": {
+    "recorded": "733/791",
+    "percent": 92.67,
+    "remaining": 58,
+    "meaning": "authored fusion manuscript presence only; not lesson review, source sufficiency, or publisher-textbook comparison completion"
+  },
+  "sources": {
+    "curriculum": "Official English 6-IV-2 curriculum locator recorded in the lesson; active preview, review, and basic organization of learning content.",
+    "nani": "Danfeng JH public-school English plan marked Nani; PDF pp.11-13 show scanning, prediction, author purpose, and visual comparison; school plan, not publisher textbook.",
+    "kanghsuan": "Danfeng JH public-school English plan marked Kanghsuan; PDF pp.8-9 show Review, peer speaking/interview, note-taking, and grouping; school plan, not publisher textbook.",
+    "hanlin": "School download index entry found, but PDF content retrieval failed; explicitly not counted as read evidence.",
+    "boundary": "No claim that three publishers' textbook chapters were fully read or compared; publisher chapter evidence remains pending."
+  },
+  "work": [
+    "Replaced generic placeholder with six unit-specific learner-facing teaching sections and aligned content.sections with teaching.body.",
+    "Recorded common core, source-bounded differences, original additions, and synthesis rationale in fusionRecord.",
+    "Added four original guided-choice interactions with correct answers, explanations, retry hints, and transfer.",
+    "Aligned unit spec with the actual GuidedChoice renderer; retained lesson draft for the user's ChatGPT review."
+  ],
+  "verification": {
+    "lessonSchema": "PASS; 1056 checked, 0 failures",
+    "unitRegression": "PASS: npm run test:english:6-iv-2",
+    "fullNpmTest": "PASS; workbench traversal 1027/1027",
+    "targetBrowser": "PASS; six visible sections, four interaction steps, keyboard retry/correct answer, axe 0 violations and 0 incomplete, reduced motion, 320/375/768 responsive, external blocked, page errors 0",
+    "fullBrowserSmoke": "PASS; 1027/1027 traversal, responsive/keyboard/accessibility-tree/reduced-motion and per-unit interaction checks recorded in browser-smoke.json",
+    "publicExamSourceLedger": "10,566/10,566 recorded, pending 0; semantic audit 23,141 refs, 0 flagged; source catalog 492 entries, 281/281 URLs covered; unit-fit 410/410 compatible. No question source records changed in this unit task.",
+    "implementationSpecs": "PASS; 1,027 specs, 0 errors, 11 eligible, 1,016 pending (python3 scripts/validate_implementation_specs.py --report /tmp/implementation-validation-current.json)."
+  },
+  "commitPush": "not performed; remaining manuscript/spec work is incomplete",
+  "subtasks": "none"
+}

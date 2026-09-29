@@ -2,23 +2,23 @@
   "id": "question-science-content-cross-atoms-to-universe-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年8月3日自然科教室的觀察中，將 41 g 食鹽溶於 705 g 水，研究「從原子到宇宙」時，溶液質量為何？",
+  "prompt": "科展模型把微小粒子畫成彩色球，並把太陽系畫成更大的球。若圖上沒有比例尺，觀眾能直接得出哪個結論？",
   "options": [
     {
       "id": "A",
-      "text": "664 g"
+      "text": "彩色球直徑可直接換算原子直徑"
     },
     {
       "id": "B",
-      "text": "746 g"
+      "text": "這張圖可用來表達不同層級或組成關係，但不能據畫面尺寸比較真實尺度"
     },
     {
       "id": "C",
-      "text": "28905 g"
+      "text": "圖上最大的球必定質量最大"
     },
     {
       "id": "D",
-      "text": "705 g"
+      "text": "若兩個圖示相切，就表示兩個天體實際接觸"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,37 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：41＋705＝746 g。 本題對應 KG「從原子到宇宙」。"
+    "explanation": "粒子圖與天文示意圖是不同尺度的模型；若未提供共同比例尺，畫面尺寸只利於辨識，不是可量測的真實尺寸或接觸證據。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64183/106-1-3%E8%87%AA%E7%84%B6%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立大灣國中106學年度上學期第三次段考三年級自然科試題",
+      "year": "106",
+      "subject": "science",
+      "locator": "PDF page 2, question 26",
+      "observedPattern": "僅參考第26題的命題能力與推理結構；只依公開原卷指定題目研究銀河系、恆星、星空觀察與天文尺度的命題模式；不重製題幹、選項、圖表或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dwm.kh.edu.tw/upload/344/104_64183/106-1-3%E8%87%AA%E7%84%B6%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "高雄市立大灣國中公開原卷 PDF page 2, question 26；只取題型與推理能力作 pattern-only 參考，題幹、選項、答案、圖表均重新創作。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開試題的 item-level pattern-only 證據獨立改寫；沒有複製原題、選項、圖表或答案。題目維持 draft，尚待單元版本融合、內容與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-atoms-to-universe"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-science-content-cross-atoms-to-universe",
+  "solutionStrategy": "先找比例尺、單位與圖例；缺少尺度校準時，只解讀圖明確編碼的關係，不把版面大小當測量數據。",
+  "solutionSteps": [
+    "檢查圖面是否提供比例尺或每個圖形代表的實際長度；題目明確說沒有。",
+    "因此彩色球和太陽系圓形的大小是繪圖者選擇，不能換算成原子或天體直徑。",
+    "圖示仍可能用來表示層級、包含關係或標籤分類，這些訊息需依圖例確認。",
+    "沒有距離資訊時，圖上相切不代表實物接觸，圖形較大也不能推出質量較大。",
+    "B 僅使用模型能支持的結構訊息，沒有把未標示的真實尺度塞進圖中。"
+  ]
 }

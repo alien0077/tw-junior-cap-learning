@@ -2,41 +2,73 @@
   "id": "question-english-performance-4-iv-8-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「4-Ⅳ-8／提示寫簡短段落」task, what is the best way to prepare question 2?",
+  "prompt": "The topic sentence is: 'Bringing a reusable bottle can reduce waste at school.' Which detail gives the clearest support?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 4-Ⅳ-8／提示寫簡短段落."
+      "text": "Many students decorate their bottles with stickers."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 4-Ⅳ-8／提示寫簡短段落."
+      "text": "A student who refills one bottle avoids taking a new disposable cup at each water break."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 4-Ⅳ-8／提示寫簡短段落."
+      "text": "The school basketball team practices after class on Tuesdays."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 4-Ⅳ-8／提示寫簡短段落."
+      "text": "Some bottles keep drinks cold for several hours."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-4-iv-8"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 4-Ⅳ-8／提示寫簡短段落, question 2."
+    "value": "B",
+    "explanation": "B shows the direct mechanism connecting reuse to less disposable waste. A and D describe bottle features or preferences but do not show waste reduction; C is off topic."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://web.tdvs.ntct.edu.tw/mediafile/1040/news/294/2025-11/2025112610306_0.pdf",
+    "sourceLocator": "南投縣第四屆縣長盃國中英文閱讀測驗暨引導式寫作比賽測驗（官方公開試卷）；PDF印刷頁第3頁，第三部分引導式寫作第1題；評分含內容與組織，任務要求交代事件、行動、感受及學習所得。",
+    "authoringNote": "依官方課綱能力及公開試題的段落組織／引導寫作型態獨立命題；只借鑑 pattern，不重製任何原卷文字、選項、圖表或答案。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-4-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-4-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://web.tdvs.ntct.edu.tw/mediafile/1040/news/294/2025-11/2025112610306_0.pdf",
+      "title": "南投縣第四屆縣長盃國中英文閱讀測驗暨引導式寫作比賽測驗（官方公開試卷）",
+      "year": "114",
+      "subject": "english",
+      "locator": "PDF印刷頁第3頁，第三部分引導式寫作第1題；評分含內容與組織，任務要求交代事件、行動、感受及學習所得。",
+      "observedPattern": "引導寫作以多個明確內容要求與組織評分檢驗讀者能否扣題、安排支持內容並形成完整段落。本題只改寫其命題型態以練習「relevant supporting detail」，題幹、選項、情境與答案均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.tdvs.ntct.edu.tw/mediafile/1040/news/294/2023-12/2023121175637_1.pdf",
+      "title": "南投縣第二屆縣長盃國中學生英文閱讀測驗暨引導式寫作比賽測驗試題",
+      "year": "112",
+      "subject": "english",
+      "locator": "PDF印刷頁第7頁，第二部分引導式寫作第1題；100字以上說明型短文，評分明列內容與組織。",
+      "observedPattern": "說明型提示要求學生先表達可發展的中心主張，再用相關理由組織成段落。本題只改寫其命題型態以練習「relevant supporting detail」，題幹、選項、情境與答案均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把主題句改寫成待證明的因果關係，再找能補上『為什麼會減少垃圾』的具體例子，而不是只找同一主題名詞。",
+  "solutionSteps": [
+    "將主題句拆成主張與待補原因：主張是垃圾變少，原因必須涉及少用一次性容器。",
+    "A雖提到水瓶，貼紙裝飾與垃圾量沒有清楚因果連結，不能當主要證據。",
+    "C談球隊練習，完全沒有回應瓶子或廢棄物；D談保冷功能，也沒有證明少丟容器。",
+    "B描寫每次補水都沿用同一瓶，直接減少拿取新紙杯或塑膠杯的次數，所以能支持主張。",
+    "檢查段落時，用『因此少了哪一件廢棄物？』追問支持句，答案能指出一次性杯，論證才閉合。"
+  ]
 }

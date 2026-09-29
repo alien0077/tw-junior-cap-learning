@@ -2,41 +2,84 @@
   "id": "question-english-performance-3-iv-11-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-11／從圖片標題書名推測」task, what is the best way to prepare question 1?",
+  "prompt": "A book is titled 'The Last Seed' and its cover shows a child protecting one small plant in dry soil. What is the book likely about?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-11／從圖片標題書名推測."
+      "text": "A child trains to win a swimming race"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-11／從圖片標題書名推測."
+      "text": "A guide to repairing clocks"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-11／從圖片標題書名推測."
+      "text": "Protecting a plant in a difficult environment"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-11／從圖片標題書名推測."
+      "text": "A menu for a winter restaurant"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-11"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-11／從圖片標題書名推測, question 1."
+    "value": "C",
+    "explanation": "正確答案：C。書名指出最後一顆種子，封面又呈現孩子在乾土中保護幼苗；兩種線索共同支持「植物如何在困難環境中被照料」的預測。但封面沒有交代孩子是否成功，因此不能把結局當成已知。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2231_9842586_19803.pdf",
+    "sourceLocator": "三多國中112-1七年級英文第3頁閱讀第36題；國昌國中112-1第1頁第1題；燕巢國中111-1非選測驗第27題，僅pattern-only。",
+    "authoringNote": "書名、乾土與照料幼苗情境均為原創；公校原卷只作圖像／標題線索判讀模式參照，未複製原題或圖像。維持 draft；不安排 Terra 審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-11"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-english-performance-3-iv-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2231_9842586_19803.pdf",
+      "title": "新北市立三多國中112學年度第一學期第二次段考七年級英語科；海報閱讀第36題僅作圖文整合能力模式參照。",
+      "year": "112-1",
+      "subject": "english",
+      "locator": "試卷第3頁閱讀測驗第36題：依海報判斷 Angel Garden 的性質。",
+      "observedPattern": "公開英文評量以標題、書名、圖片、海報、圖示與小標題建立主題預測，並要求回到可見線索確認範圍；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.ycm.kh.edu.tw/upload/297/104_62703/111-1%282%29%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立燕巢國中111學年度第一學期七年級第二次段考英文科；看圖敘事第27題僅作視覺敘事模式參照。",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "非選擇測驗第27題：依圖像描述時間、地點、人物、行動、心情及結尾。",
+      "observedPattern": "看圖敘事要求從可見人物與動作線索組織事件；本題只參照視覺線索轉成有限預測的能力，不沿用圖片或故事。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%B8%89%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中112學年度第一學期三年級第一次段考英文科；第1題依圖片判讀資訊，僅作視覺取證模式參照。",
+      "year": "112-1",
+      "subject": "english",
+      "locator": "試卷第1頁第1題：看圖判斷交通、地點、開放時間或票價等可讀資訊。",
+      "observedPattern": "圖像包含可提取的實用資訊，作答需依可見線索判讀而非想像；本題僅借用能力模式。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先把封面上可直接看到的內容和推測分開，再確認書名與畫面是否指向同一主題；推論只到線索能支持的範圍，不預告未知結局。",
+  "solutionSteps": [
+    "先只記錄可見資訊：書名提到最後一顆種子，封面有孩子、幼苗和乾土。",
+    "分別說明文字與圖像各提供什麼，再找它們重疊的核心：植物與照料。",
+    "比較選項是否同時涵蓋植物及艱困環境，避免只抓到一個畫面物件。",
+    "檢查選項有沒有擅自補出競賽、時鐘或已知結局；這些都沒有線索。",
+    "選 C：可預測故事關於困難環境中的植物照料，但保留最後種子是否存活的未知。"
+  ]
 }

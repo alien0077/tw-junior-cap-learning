@@ -1,0 +1,2243 @@
+{
+  "status": "passed",
+  "engine": "axe-core",
+  "viewports": [
+    320,
+    375,
+    768
+  ],
+  "representativeUnits": [
+    "cur-chinese-content-a",
+    "cur-english-content-a",
+    "cur-math-content-a-7-2",
+    "cur-math-content-a-7-1",
+    "cur-math-content-a-7-7",
+    "cur-math-content-a-7-8",
+    "cur-math-content-a-8-1",
+    "cur-math-content-a-8-4",
+    "cur-math-content-s-9-1",
+    "cur-math-content-s-9-13",
+    "cur-math-content-d-8-1",
+    "cur-science-content-bc-iv-3",
+    "cur-science-content-ba-iv-3",
+    "cur-science-content-db-iv-6",
+    "cur-social-content-geo-af-iv-1",
+    "cur-social-content-hist-qc-iv-2"
+  ],
+  "runs": 51,
+  "violationCount": 0,
+  "incompleteCount": 6,
+  "violations": [],
+  "incomplete": [
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": {
+                "role": null,
+                "nodeName": "div",
+                "messageKey": "noRoleSingular",
+                "prohibited": [
+                  "aria-label"
+                ]
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "impact": "serious",
+          "html": "<div class=\"sim-net\" aria-label=\"三片側面長方形的展開表徵\"><span style=\"min-width:32px;height:52px\">邊 8<br>長 3</span><span style=\"min-width:45px;height:52px\">邊 15<br>長 3</span><span style=\"min-width:51px;height:52px\">邊 17<br>長 3</span></div>",
+          "target": [
+            ".sim-net"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.6pt (16.8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header><span class=\"tag\">幾何建構臺</span><h4>先預測直角三角柱柱長改變對外露側面與內部容量的影響，再操作柱長滑桿，核對展開圖、表面積和體積同步更新。</h4><p>替三角形旗架製作可伸縮外罩：固定兩股 8、15 公分、斜邊 17 公分的直角三角形底面，只改兩底面間的柱長。先提交變化預測；解鎖後觀察兩個端面、三個側面與單位立方容量，再以另一組底面資料完成遷移核算。 </p></header>",
+                  "target": [
+                    ".simulation > header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h4>先預測直角三角柱柱長改變對外露側面與內部容量的影響，再操作柱長滑桿，核對展開圖、表面積和體積同步更新。</h4>",
+          "target": [
+            "header > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header><span class=\"tag\">幾何建構臺</span><h4>先預測直角三角柱柱長改變對外露側面與內部容量的影響，再操作柱長滑桿，核對展開圖、表面積和體積同步更新。</h4><p>替三角形旗架製作可伸縮外罩：固定兩股 8、15 公分、斜邊 17 公分的直角三角形底面，只改兩底面間的柱長。先提交變化預測；解鎖後觀察兩個端面、三個側面與單位立方容量，再以另一組底面資料完成遷移核算。 </p></header>",
+                  "target": [
+                    ".simulation > header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>替三角形旗架製作可伸縮外罩：固定兩股 8、15 公分、斜邊 17 公分的直角三角形底面，只改兩底面間的柱長。先提交變化預測；解鎖後觀察兩個端面、三個側面與單位立方容量，再以另一組底面資料完成遷移核算。 </p>",
+          "target": [
+            "header > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<svg viewBox=\"0 0 260 190\" role=\"img\" aria-label=\"8-15-17直角三角柱示意，柱長3公分\">",
+                  "target": [
+                    "svg"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<text x=\"40\" y=\"178\">8-15-17</text>",
+          "target": [
+            "text[x=\"40\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<text x=\"65\" y=\"72\">柱長 3 cm</text>",
+          "target": [
+            "text[x=\"65\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        }
+      ]
+    },
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": {
+                "role": null,
+                "nodeName": "div",
+                "messageKey": "noRoleSingular",
+                "prohibited": [
+                  "aria-label"
+                ]
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "impact": "serious",
+          "html": "<div class=\"sim-net\" aria-label=\"三片側面長方形的展開表徵\"><span style=\"min-width:32px;height:52px\">邊 8<br>長 3</span><span style=\"min-width:45px;height:52px\">邊 15<br>長 3</span><span style=\"min-width:51px;height:52px\">邊 17<br>長 3</span></div>",
+          "target": [
+            ".sim-net"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span class=\"tag\">幾何建構臺</span>",
+          "target": [
+            "header > .tag"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.6pt (16.8px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h4>先預測直角三角柱柱長改變對外露側面與內部容量的影響，再操作柱長滑桿，核對展開圖、表面積和體積同步更新。</h4>",
+          "target": [
+            "header > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>替三角形旗架製作可伸縮外罩：固定兩股 8、15 公分、斜邊 17 公分的直角三角形底面，只改兩底面間的柱長。先提交變化預測；解鎖後觀察兩個端面、三個側面與單位立方容量，再以另一組底面資料完成遷移核算。 </p>",
+          "target": [
+            "header > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.28px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h5>先預測：柱長由 3 cm 增至 5 cm</h5>",
+          "target": [
+            "h5"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15.04px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>底面兩股 8、15 cm，斜邊 17 cm。提交前公式與數值保持隱藏。</p>",
+          "target": [
+            ".sim-prism-lab > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<legend>選擇答案</legend>",
+          "target": [
+            ".sim-prism-lab > fieldset > legend"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-geometry-prediction=\"A\" aria-pressed=\"false\">A. 表面積增加 120 cm²，體積增加 80 cm³</button>",
+          "target": [
+            "button[data-geometry-prediction=\"A\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-geometry-prediction=\"B\" aria-pressed=\"true\">B. 表面積增加 80 cm²，體積增加 120 cm³</button>",
+          "target": [
+            "button[data-geometry-prediction=\"B\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-geometry-prediction=\"C\" aria-pressed=\"false\">C. 表面積與體積都不變</button>",
+          "target": [
+            "button[data-geometry-prediction=\"C\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" class=\"sim-button\" data-geometry-action=\"submit-prediction\">提交預測並解鎖模型</button>",
+          "target": [
+            "button[data-geometry-action=\"submit-prediction\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-design-step=\"0\" aria-current=\"step\">1. 先選擇柱長由 3 cm 增至 5 cm 時，表面積及體積各自增加的預測</button>",
+          "target": [
+            "button[data-design-step=\"0\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-design-step=\"1\">2. 提交預測後操作柱長滑桿，觀察立體示意、兩端三角面與三片側面展開圖</button>",
+          "target": [
+            "button[data-design-step=\"1\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-design-step=\"2\">3. 以逐面表格分開計算外露材料與內部容量，再改變柱長比較兩者的增量</button>",
+          "target": [
+            "button[data-design-step=\"2\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-design-step=\"3\">4. 換成 7-24-25 三角形底面與 2 cm 柱長，獨立估算後再選擇遷移答案</button>",
+          "target": [
+            "button[data-design-step=\"3\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15.04px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p><b>目前推理步驟：</b>先把「多出的外側面」和「多出的內部層」分開思考，避免看到長度變化就把同一種乘法套到兩種量。</p>",
+          "target": [
+            ".sim-prism-unlocked > p:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15.04px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<b>目前推理步驟：</b>",
+          "target": [
+            ".sim-prism-unlocked > p:nth-child(2) > b"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15.04px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"sim-prism-equation\" aria-live=\"polite\">預測先提交；此時答案與公式不顯示</p>",
+          "target": [
+            ".sim-prism-equation"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<text x=\"40\" y=\"178\">8-15-17</text>",
+          "target": [
+            "text[x=\"40\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<text x=\"65\" y=\"72\">柱長 3 cm</text>",
+          "target": [
+            "text[x=\"65\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.6pt (14.08px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<figcaption>兩個全等三角端面沿柱長連接。</figcaption>",
+          "target": [
+            "figure:nth-child(1) > figcaption"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span style=\"min-width:32px;height:52px\">邊 8<br>長 3</span>",
+          "target": [
+            ".sim-net > span:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span style=\"min-width:45px;height:52px\">邊 15<br>長 3</span>",
+          "target": [
+            ".sim-net > span:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span style=\"min-width:51px;height:52px\">邊 17<br>長 3</span>",
+          "target": [
+            "span:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.6pt (14.08px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<figcaption>三片側面寬分別等於底面三邊；總和由周長控制。</figcaption>",
+          "target": [
+            "figure:nth-child(2) > figcaption"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<caption>端面、側面與容量分開計算</caption>",
+          "target": [
+            "caption"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": "shortTextContent",
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element content is too short to determine if it is actual text content"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<th>量</th>",
+          "target": [
+            "thead > tr > th:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element content is too short to determine if it is actual text content"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<th>幾何依據</th>",
+          "target": [
+            "th:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<th>結果</th>",
+          "target": [
+            "th:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<th>兩個端面</th>",
+          "target": [
+            "tbody > tr:nth-child(1) > th"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<td>2×8×15÷2</td>",
+          "target": [
+            "tr:nth-child(1) > td:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<td>120 cm²</td>",
+          "target": [
+            "tr:nth-child(1) > td:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<th>三片側面</th>",
+          "target": [
+            "tr:nth-child(2) > th"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<td>40×3</td>",
+          "target": [
+            "tr:nth-child(2) > td:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<td>120 cm²</td>",
+          "target": [
+            "tr:nth-child(2) > td:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<th>表面積</th>",
+          "target": [
+            "tr:nth-child(3) > th"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<td>兩端面＋三側面</td>",
+          "target": [
+            "tr:nth-child(3) > td:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<td><output data-prism-surface-area=\"\">240</output> cm²</td>",
+          "target": [
+            "tr:nth-child(3) > td:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<output data-prism-surface-area=\"\">240</output>",
+          "target": [
+            "output[data-prism-surface-area=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<th>體積</th>",
+          "target": [
+            "tr:nth-child(4) > th"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<td>60×3</td>",
+          "target": [
+            "tr:nth-child(4) > td:nth-child(2)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<td><output data-prism-volume=\"\">180</output> cm³</td>",
+          "target": [
+            "tr:nth-child(4) > td:nth-child(3)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<output data-prism-volume=\"\">180</output>",
+          "target": [
+            "output[data-prism-volume=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<span>直角柱長度 <output data-sim-output=\"prismLength\">3 cm</output></span>",
+          "target": [
+            ".sim-control > span"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<output data-sim-output=\"prismLength\">3 cm</output>",
+          "target": [
+            "output[data-sim-output=\"prismLength\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15.04px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"sim-status\" aria-live=\"polite\">提交後才揭露依據：每增加 1 cm 柱長，側面多出一圈底面周長的面積，容量多出一個底面積。</p>",
+          "target": [
+            ".sim-status[aria-live=\"polite\"]:nth-child(7)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "9.0pt (12px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h6>遷移題：重新求新底面的面積與周長</h6>",
+          "target": [
+            "h6"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "11.3pt (15.04px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>底面為 7-24-25 直角三角形，柱長 2 cm。選出表面積與體積：</p>",
+          "target": [
+            "p:nth-child(9)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<legend>選擇答案</legend>",
+          "target": [
+            ".sim-prism-unlocked > fieldset > legend"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-geometry-transfer=\"A\" aria-pressed=\"false\">A. 112 cm²、168 cm³</button>",
+          "target": [
+            "button[data-geometry-transfer=\"A\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-geometry-transfer=\"B\" aria-pressed=\"false\">B. 280 cm²、168 cm³</button>",
+          "target": [
+            "button[data-geometry-transfer=\"B\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.0pt (13.3333px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-geometry-transfer=\"C\" aria-pressed=\"false\">C. 280 cm²、280 cm³</button>",
+          "target": [
+            "button[data-geometry-transfer=\"C\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" class=\"sim-button\" data-geometry-action=\"submit-transfer\">檢查遷移答案</button>",
+          "target": [
+            "button[data-geometry-action=\"submit-transfer\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p><b>學習紀錄</b>：先預測，操作後再用證據解釋。</p>",
+          "target": [
+            "footer > p:nth-child(1)"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<b>學習紀錄</b>",
+          "target": [
+            "p:nth-child(1) > b"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-sim-action=\"predicted\">我已提出預測</button>",
+          "target": [
+            "button[data-sim-action=\"predicted\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-sim-action=\"observed\">我已記錄觀察</button>",
+          "target": [
+            "button[data-sim-action=\"observed\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<button type=\"button\" data-sim-reset=\"\">重設模型</button>",
+          "target": [
+            "button[data-sim-reset=\"\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<label>我的解釋<textarea data-sim-reflection=\"\" rows=\"3\" placeholder=\"我改變了什麼？看見什麼？這如何支持我的解釋？\"></textarea></label>",
+          "target": [
+            "footer > label"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p class=\"sim-status\" aria-live=\"polite\">尚未記錄預測與觀察。</p>",
+          "target": [
+            "footer > .sim-status[aria-live=\"polite\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "bold",
+                "messageKey": null,
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Unable to determine contrast ratio"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<summary>模型依據與參考來源</summary>",
+          "target": [
+            ".sim-sources > summary"
+          ],
+          "failureSummary": "Fix any of the following:\n  Unable to determine contrast ratio"
+        }
+      ]
+    },
+    {
+      "id": "aria-prohibited-attr",
+      "impact": "serious",
+      "tags": [
+        "cat.aria",
+        "wcag2a",
+        "wcag412",
+        "EN-301-549",
+        "EN-9.4.1.2",
+        "RGAAv4",
+        "RGAA-7.1.1"
+      ],
+      "description": "Ensure ARIA attributes are not prohibited for an element's role",
+      "help": "Elements must only use permitted ARIA attributes",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/aria-prohibited-attr?application=axeAPI",
+      "nodes": [
+        {
+          "any": [],
+          "all": [],
+          "none": [
+            {
+              "id": "aria-prohibited-attr",
+              "data": {
+                "role": null,
+                "nodeName": "div",
+                "messageKey": "noRoleSingular",
+                "prohibited": [
+                  "aria-label"
+                ]
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "aria-label attribute is not well supported on a div with no valid role attribute."
+            }
+          ],
+          "impact": "serious",
+          "html": "<div class=\"sim-net\" aria-label=\"三片側面長方形的展開表徵\"><span style=\"min-width:32px;height:52px\">邊 8<br>長 3</span><span style=\"min-width:45px;height:52px\">邊 15<br>長 3</span><span style=\"min-width:51px;height:52px\">邊 17<br>長 3</span></div>",
+          "target": [
+            ".sim-net"
+          ],
+          "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute."
+        }
+      ]
+    },
+    {
+      "id": "color-contrast",
+      "impact": "serious",
+      "tags": [
+        "cat.color",
+        "wcag2aa",
+        "wcag143",
+        "TTv5",
+        "TT13.c",
+        "EN-301-549",
+        "EN-9.1.4.3",
+        "ACT",
+        "RGAAv4",
+        "RGAA-3.2.1"
+      ],
+      "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+      "help": "Elements must meet minimum color contrast ratio thresholds",
+      "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+      "nodes": [
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.6pt (16.8px)",
+                "fontWeight": "bold",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header><span class=\"tag\">幾何建構臺</span><h4>先預測直角三角柱柱長改變對外露側面與內部容量的影響，再操作柱長滑桿，核對展開圖、表面積和體積同步更新。</h4><p>替三角形旗架製作可伸縮外罩：固定兩股 8、15 公分、斜邊 17 公分的直角三角形底面，只改兩底面間的柱長。先提交變化預測；解鎖後觀察兩個端面、三個側面與單位立方容量，再以另一組底面資料完成遷移核算。 </p></header>",
+                  "target": [
+                    ".simulation > header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<h4>先預測直角三角柱柱長改變對外露側面與內部容量的影響，再操作柱長滑桿，核對展開圖、表面積和體積同步更新。</h4>",
+          "target": [
+            "header > h4"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "10.8pt (14.4px)",
+                "fontWeight": "normal",
+                "messageKey": "bgGradient",
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<header><span class=\"tag\">幾何建構臺</span><h4>先預測直角三角柱柱長改變對外露側面與內部容量的影響，再操作柱長滑桿，核對展開圖、表面積和體積同步更新。</h4><p>替三角形旗架製作可伸縮外罩：固定兩股 8、15 公分、斜邊 17 公分的直角三角形底面，只改兩底面間的柱長。先提交變化預測；解鎖後觀察兩個端面、三個側面與單位立方容量，再以另一組底面資料完成遷移核算。 </p></header>",
+                  "target": [
+                    ".simulation > header"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined due to a background gradient"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<p>替三角形旗架製作可伸縮外罩：固定兩股 8、15 公分、斜邊 17 公分的直角三角形底面，只改兩底面間的柱長。先提交變化預測；解鎖後觀察兩個端面、三個側面與單位立方容量，再以另一組底面資料完成遷移核算。 </p>",
+          "target": [
+            "header > p"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "imgNode",
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [
+                {
+                  "html": "<svg viewBox=\"0 0 260 190\" role=\"img\" aria-label=\"8-15-17直角三角柱示意，柱長3公分\">",
+                  "target": [
+                    "svg"
+                  ]
+                }
+              ],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because element contains an image node"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<text x=\"40\" y=\"178\">8-15-17</text>",
+          "target": [
+            "text[x=\"40\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+        },
+        {
+          "any": [
+            {
+              "id": "color-contrast",
+              "data": {
+                "fgColor": null,
+                "bgColor": null,
+                "contrastRatio": 0,
+                "fontSize": "12.0pt (16px)",
+                "fontWeight": "normal",
+                "messageKey": "bgOverlap",
+                "expectedContrastRatio": "4.5:1",
+                "shadowColor": null,
+                "colorParse": null
+              },
+              "relatedNodes": [],
+              "impact": "serious",
+              "message": "Element's background color could not be determined because it is overlapped by another element"
+            }
+          ],
+          "all": [],
+          "none": [],
+          "impact": "serious",
+          "html": "<text x=\"65\" y=\"72\">柱長 3 cm</text>",
+          "target": [
+            "text[x=\"65\"]"
+          ],
+          "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+        }
+      ]
+    }
+  ],
+  "scope": "automated DOM accessibility rules; screen-reader semantics and content/pedagogical review remain separate"
+}

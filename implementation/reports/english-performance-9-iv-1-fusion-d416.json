@@ -1,0 +1,77 @@
+{
+  "asOf": "2026-09-29",
+  "unit": "lesson-english-performance-9-iv-1",
+  "scope": "single missing fusion manuscript and its questions, spec, and student-page behavior",
+  "inventory": {
+    "authoredFusionDraftsRecorded": 749,
+    "learningUnitSpecs": 791,
+    "percent": 94.69,
+    "remaining": 42,
+    "criterion": "at least six teaching.body sections and non-empty fusionRecord.llmSynthesisNote"
+  },
+  "curriculum": {
+    "performance": "9-Ⅳ-1: 能綜合相關資訊作合理的猜測",
+    "content": "D-Ⅳ-1: 依綜合資訊作合理猜測",
+    "officialSource": "https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
+    "officialLocator": "正文第8–15頁／PDF第10–17頁；國中學習表現9-Ⅳ-1"
+  },
+  "versionSources": [
+    {
+      "publisher": "hanlin",
+      "url": "https://course.cyc.edu.tw/upfile/course111/sub1/15079524223428859.pdf",
+      "locator": "PDF pp.94–96; Yongqing affiliated junior-high grade-nine English plan names Hanlin Book 6 and lists 9-IV-1; not an independently mapped textbook chapter",
+      "use": "grade/book curriculum context and broad reading/activity sequence only"
+    },
+    {
+      "publisher": "kanghsuan",
+      "url": "https://openclass.kl.edu.tw/plan/file/3504/%E6%95%99%E6%A1%88.pdf",
+      "locator": "PDF pp.1–2; grade-nine lesson plan identifies Kang Hsuan Book 5 workbook and 9-IV-1 as an integrated focus; picture/title prediction, guided reading, problem-solution organizer, group explanation",
+      "use": "public lesson-plan pedagogy pattern only; no lesson text or worksheet reproduced"
+    },
+    {
+      "publisher": "nani",
+      "url": "https://www.yfms.tyc.edu.tw/uploads/1754960559483MMwIifky.pdf",
+      "locator": "PDF pp.3,14; Nan-I grade-seven plans identify reasonable inference, author purpose, information comparison and multiple assessment modes",
+      "use": "adjacent-grade prerequisite/assessment context only; not a grade-nine target chapter"
+    },
+    {
+      "provider": "Ministry of Education commissioned resource, National Taichung University of Education",
+      "url": "https://market.cloud.edu.tw/resources/video/1849112",
+      "locator": "Fables; story elements, multiple clues and a final inference check; CC BY-NC-ND 3.0",
+      "use": "teaching-pattern study only; no copying, adaptation, or distribution of the resource"
+    }
+  ],
+  "versionBoundary": "The sources support curriculum alignment and selected teaching patterns, but do not provide complete grade-nine target-chapter texts from all three publishers. The lesson explicitly does not claim a page-by-page three-version textbook comparison.",
+  "deliverables": {
+    "lesson": "Six original unit-specific sections; content.sections and teaching.body kept identical; explicit facts/evidence/inference/unknown distinctions; four-step accessible guided choice; fusionRecord and bounded versionResearch.",
+    "questions": "Ten original stems and source refs preserved; correct answers distributed across A/B/C/D; each item now has Chinese answer reasoning, its own strategy, and five item-specific worked steps.",
+    "spec": "Replaced unrelated LanguageTimelineBlock with GuidedChoiceBlock; tailored misconceptions, content flow, transfer, test cases, and source references.",
+    "manifest": "Synchronized component and publisher-evidence scope."
+  },
+  "verification": {
+    "targetNode": "PASS: npm run test:english:9-iv-1",
+    "targetBrowser": {
+      "status": "PASS",
+      "command": "npm run test:english:9-iv-1:browser",
+      "environment": "authorized local network/Chromium runtime; Python Playwright 1.58.0; Chromium revision 1208",
+      "visibleSections": 6,
+      "guidedChoiceSteps": 4,
+      "keyboardWrongRetryAndCorrectFeedback": true,
+      "axeViolations": 0,
+      "axeIncomplete": 0,
+      "responsiveWidths": [320, 375, 768],
+      "horizontalOverflow": false,
+      "pageErrors": 0
+    },
+    "dataValidation": "PASS: 14,527 JSON files, 13,114 IDs, 1,032 KG nodes",
+    "implementationSpecValidation": "PASS: 1,027 specs, 0 errors, 23 eligible, 1,004 pending; 9-IV-1 design reviewed and QA verified after scoped Node and authorized Playwright checks",
+    "siteIndex": "PASS: 1,052 lessons, 10,566 question paths, 40 mapping sets",
+    "publicExamRewriteAudit": "PASS: 10,566/10,566 recorded; pending 0",
+    "publicExamReferenceSemanticAudit": "PASS: 23,141 refs; 0 flagged",
+    "publicExamCatalogAudit": "PASS: 492 catalog entries; 281/281 question-source URLs covered",
+    "publicExamGradeFitAudit": "PASS: 410 refs; 0 mismatches; 0 unclassified",
+    "gitDiffCheck": "PASS",
+    "fullSuite": "Full npm test and full-site browser traversal were not rerun in this unit turn.",
+    "commitPush": "Not performed; overall objective remains incomplete."
+  }
+}

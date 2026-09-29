@@ -1,0 +1,70 @@
+{
+  "expected": {
+    "chinese": [
+      "TextEvidenceBlock"
+    ],
+    "english": [
+      "DataExplorerBlock",
+      "GenreReadingBlock",
+      "LanguageTimelineBlock",
+      "SignageReadingLab",
+      "TextEvidenceBlock"
+    ],
+    "math": [
+      "AlgebraBalanceBlock",
+      "DataExplorerBlock",
+      "FunctionRepresentationBlock",
+      "GeometryManipulationBlock",
+      "NumberLineBlock",
+      "StepwiseReasoningBlock"
+    ],
+    "science": [
+      "EarthSystemBlock",
+      "EvidenceLabBlock",
+      "ParticleModelBlock",
+      "PhenomenonSimulationBlock",
+      "SystemRelationshipBlock"
+    ],
+    "social": [
+      "MapDataBlock",
+      "ScenarioDecisionBlock",
+      "TimelineCausalBlock"
+    ]
+  },
+  "counts": {
+    "chinese": {
+      "TextEvidenceBlock": 83
+    },
+    "english": {
+      "LanguageTimelineBlock": 131,
+      "SignageReadingLab": 2,
+      "TextEvidenceBlock": 1,
+      "GenreReadingBlock": 1,
+      "DataExplorerBlock": 1
+    },
+    "math": {
+      "AlgebraBalanceBlock": 8,
+      "DataExplorerBlock": 10,
+      "GeometryManipulationBlock": 39,
+      "NumberLineBlock": 11,
+      "StepwiseReasoningBlock": 48,
+      "FunctionRepresentationBlock": 9
+    },
+    "science": {
+      "ParticleModelBlock": 46,
+      "EvidenceLabBlock": 142,
+      "PhenomenonSimulationBlock": 69,
+      "SystemRelationshipBlock": 43,
+      "EarthSystemBlock": 25
+    },
+    "social": {
+      "ScenarioDecisionBlock": 202,
+      "MapDataBlock": 75,
+      "TimelineCausalBlock": 81
+    }
+  },
+  "errors": [],
+  "unitCount": 1027,
+  "status": "passed",
+  "note": "Coverage mapping only; component implementation and unit-specific pedagogical content remain separate gates."
+}

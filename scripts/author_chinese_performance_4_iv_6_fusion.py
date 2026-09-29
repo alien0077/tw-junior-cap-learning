@@ -1,0 +1,33 @@
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/chinese/lesson-chinese-performance-4-iv-6.json"
+REPORT = ROOT / "implementation/reports/chinese-performance-4-iv-6-first-pass-review.json"
+
+
+def rec(name, locator, concepts, forms, misconception, assessment):
+    return {"publisher": name, "edition": f"{name} 公立校方國文課程計畫章節級證據", "sourceType": "public-web", "sourceLocator": locator, "reviewedAt": "2026-09-21", "findings": {"concepts": concepts, "representations": forms, "examplesOrEvidence": ["本課以原創手寫公告、學習單與修訂前後字稿，承接公開課程的硬筆書寫、作品觀察與實作方向。"], "misconceptions": [misconception], "assessmentEmphasis": [assessment]}, "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、篇章、題目、答案、影音或版面。"}
+
+
+def main():
+    data = json.loads(LESSON.read_text(encoding="utf-8"))
+    assert data["id"] == "lesson-chinese-performance-4-iv-6"
+    data["title"] = "4-Ⅳ-6：用硬筆字完成正確、清楚且耐讀的文字作品"
+    data["content"] = {"summary": "硬筆字的『美觀』不是把每個字寫成同一種裝飾，而是在有限時間與工具下，讓字形正確、結構穩定、大小與基線一致，並讓版面服務讀者。本文從筆畫與部件的辨識開始，練習控制字面重心、字距、行距、標題層級與資訊分組，再透過修訂前後比對，學會在速度、清楚與個人筆勢之間作出可說明的取捨。", "sections": [{"heading": "先保住字形與字義", "body": "遇到形近字、部件複雜或速度變快時，先減速核對關鍵筆畫、部件位置與字義，再恢復書寫。正確不是逐筆追求裝飾，而是讓讀者不必猜測；可以在草稿中圈出容易誤寫的字，建立自己的檢查清單。"}, {"heading": "讓結構站穩而不是追求大小一致", "body": "左右、上下與包圍結構需要先找出主部件與重心，再調整比例、穿插與留白。字面大小可以因部件不同而略有變化，但基線、視覺高度與主要筆畫的方向要穩定，否則一行會像上下跳動，讀者也難以快速辨識。"}, {"heading": "字距與版面是閱讀工具", "body": "把文字當成資訊介面：標題、日期、地點、步驟與提醒要有層級，字距和行距要讓視線知道下一個單位在哪裡。空間太窄會黏成一團，太寬又會切斷語意；修改時先處理影響理解的問題，再處理個人風格。"}, {"heading": "在限制中修訂自己的字稿", "body": "完成一頁字稿後，依正確性、可辨識度、基線與結構、字距行距、資訊層級五項檢查。每次只改一項並比較前後，才能知道改善是否有效；若考場或公告時間有限，優先修正錯字、關鍵資訊與讀者最容易迷路的地方。"}]}
+    data["studyHighlights"] = ["用部件與字義檢查降低形近字誤寫。", "以重心、比例、基線與留白維持字形穩定。", "讓字距、行距與標題層級協助讀者尋找資訊。", "依正確性、辨識度與版面功能排序修訂優先級。"]
+    data["teaching"] = {"body": [{"id": "hook", "phase": "hook", "heading": "同一句話，哪一張字稿更容易讀？", "body": "展示兩張完全自編的手寫公告：一張字形大致正確但字距擁擠、資訊沒有分層；另一張筆畫不追求裝飾卻有清楚標題、行距與重點。請學習者圈出讀者會停下來猜的地方，再說明問題是字形、空間還是資訊層級，建立『美觀服務閱讀』的入口。"}, {"id": "explain", "phase": "explain", "heading": "硬筆字五項檢查鏡頭", "body": "依序檢查字義與筆畫、部件結構與重心、基線與字面高度、字距／行距、資訊層級。每一項都要寫出可觀察證據，例如偏旁少一筆、左右部件互相擠壓、字底上下跳動或標題與內文同樣醒目；不要用『不好看』取代診斷。"}, {"id": "worked-example", "phase": "worked-example", "heading": "從一個形近字修到一張可用學習單", "body": "示範把自編學習單中的形近字先放大核對部件，再調整左右比例與基線，最後以欄線和行距分開題號、答案與提醒。每次只改一個變項，請學習者比較前後版本，說明哪個改動真正降低了辨識成本，並保留尚未處理的問題。"}, {"id": "guided-practice", "phase": "guided-practice", "heading": "用讀者任務測試字稿", "body": "給同學一張沒有標註的自編公告，請他在限時內找出日期、地點與注意事項；寫作者觀察對方停頓或回頭的位置，再只修正最影響任務完成的字形與空間。這個練習把美觀從個人偏好轉成讀者能否正確、快速找到資訊的證據。"}, {"id": "transfer", "phase": "transfer", "heading": "把同一套原則換到考場與海報", "body": "比較考場申論、課堂筆記與校園海報：三者都需要正確與可讀，但時間、版面和讀者不同。先固定最重要資訊，再調整字級、行距、標題與修訂深度；若無法全部改善，說明為何先保住錯字、關鍵詞或導航資訊。"}, {"id": "reflect", "phase": "reflect", "heading": "檢查我修的是問題還是喜好", "body": "回看修訂記錄，把每個改動標成字義、結構、辨識、版面或個人風格。若只能說『比較漂亮』，補上讀者任務或前後對照證據；若改動沒有改善閱讀，撤回它並寫下下一個更小、可測試的修訂。"}], "summary": ["先核對字形、部件與字義，再談書寫風格。", "用重心、基線、比例與留白診斷字形穩定度。", "以字距、行距與資訊層級讓手寫文字可快速尋找。", "在時間與工具限制下，用前後比較排序修訂優先級。"], "exitCheck": [{"prompt": "形近字容易誤寫時，如何兼顧速度與正確？", "expectedEvidence": "能指出先核對關鍵部件與字義，建立高風險字清單，再恢復書寫而非盲目加快。"}, {"prompt": "如何判斷一行字是否需要調整字距或基線？", "expectedEvidence": "能指出字是否黏連、視覺高度是否跳動、讀者是否停頓，並用前後對照說明修訂效果。"}, {"prompt": "時間不夠時，硬筆字修訂應先處理什麼？", "expectedEvidence": "能依錯字、關鍵資訊、可辨識度與導航功能排序，並說明個人風格可後處理的理由。"}]}
+    data["interactive"] = {"type": "guided-choice", "goal": "在正確、辨識、結構與版面功能之間做出有證據的硬筆字修訂。", "scenario": "學生要把草稿改成可張貼的手寫公告，先找出高風險字，再處理字形重心、字距行距與資訊層級，最後用讀者任務驗證。", "variables": [{"symbol": "c", "meaning": "字形與字義正確"}, {"symbol": "g", "meaning": "結構、基線與間距"}, {"symbol": "r", "meaning": "讀者任務與修訂優先級"}], "steps": [{"id": "step-1", "prompt": "要把草稿變成同學能快速閱讀的手寫公告，第一步最適切的是什麼？", "options": ["先核對高風險字的部件與字義，再標出日期、地點等必找資訊", "先把所有字加上裝飾筆畫", "先讓每一行字都變成完全相同大小"], "answer": "A", "feedback": "A 先保住文字正確與讀者任務，裝飾和一致大小不能取代辨識。"}, {"id": "step-2", "prompt": "一行字忽大忽小、字底高低不一時，哪種修正最有根據？", "options": ["只把最後一個字寫大，讓整行更有變化", "檢查主部件重心、視覺高度、基線與字距，再一次只改一項比較", "把所有字壓得很小，避免看出差異"], "answer": "B", "feedback": "B 把結構與空間拆開診斷，能知道改善來自哪個改動。"}, {"id": "step-3", "prompt": "限時完成申論或公告時，哪些修訂應優先？", "options": ["先修正錯字、關鍵資訊與最影響閱讀導航的空間問題，風格細節留到有餘裕再處理", "先重寫所有筆畫，直到每個字都像字帖", "只追求速度，不再檢查文字是否正確"], "answer": "A", "feedback": "A 依讀者風險排序，兼顧正確、清楚與實際時間限制。"}]}
+    data["authoringStandard"] = "version-fused-v1"; data["updatedAt"] = "2026-09-21"
+    data["versionResearch"] = [rec("nani", "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf；國語文書寫、硬筆字與實用表達定位；核讀 2026-09-21。", ["以正確書寫與日常表達連結硬筆實作。", "依公告、筆記與學習任務調整字形及版面清楚度，讓讀者能辨認並找到重點。"], ["形近字、結構、實用字稿、公告與修訂。"], "把硬筆字等同裝飾或只追求字帖外觀。", "重視字形正確、可讀性與實用溝通。"), rec("kanghsuan", "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf；國語文書法、書寫表現與實作評量定位；核讀 2026-09-21。", ["透過實作、觀察與回饋改善書寫表現。", "從部件結構、整齊程度與實際用途比較作品，並依讀者回饋提出可重做的修訂。"], ["部件比例、基線、字距、行距、手寫學習單與同儕回饋。"], "只逐字模仿，不檢查讀者能否找到資訊。", "要求修訂有理由、前後可比較且能服務用途。"), rec("hanlin", "https://www.msjh.ntpc.edu.tw/uploads/1691978949408RP7cOuyZ.pdf；國文硬筆字、書寫與評量定位；核讀 2026-09-21。", ["以正確、美觀與書寫任務完成作品。", "依作品功能整合字形、版面與表達。"], ["字形結構、行款、公告、申論、資訊層級與作品檢核。"], "把美觀當成主觀喜好，忽略正確性與閱讀功能。", "評量字形正確、整體整齊、功能清楚與修訂反思。")]
+    data["fusionRecord"] = {"commonCore": ["三版本公開結構共同支持正確書寫、硬筆實作、作品觀察與用途表達。", "字形結構、整齊度與版面層級需要在實際讀者任務中檢驗。", "修訂應能說明優先級，不把裝飾或個人喜好當成唯一標準。"], "versionDifferences": ["南一較突顯日常書寫與實用表達；康軒較突顯實作、觀察、比較與回饋；翰林較突顯正確美觀、行款、功能與檢核。這是公立校方課程計畫層級差異，不宣稱完整出版社教材差異。"], "originalAdditions": ["以讀者找資訊任務驗證硬筆字清楚度。", "以五項檢查鏡頭拆解錯字、重心、基線與版面。", "以時間限制情境排序修訂優先級並保留前後比較。"], "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織硬筆字正確性、結構、辨識、版面與修訂策略。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    data["teaching"]["body"][1]["body"] += " 把每項問題寫成可觀察的證據，並用小範圍前後修改確認改善是否真的來自該項調整，而不是憑整頁第一印象下結論。"
+    data["teaching"]["body"][4]["body"] += " 先依讀者必須完成的任務排列資訊，再決定字級、留白與修訂時間；不同用途可以有不同的最佳答案。"
+    data["teaching"]["body"][5]["body"] += " 將無法用讀者任務或前後對照支持的改動標為偏好，避免把自己的筆勢誤當成普遍標準。"
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit": "4-Ⅳ-6：用硬筆字完成正確、清楚且耐讀的文字作品", "lessonId": data["id"], "status": "first-pass-ai-review-complete", "reviewStatus": "draft", "checks": {"unitSpecificOriginalContent": True, "threeVersionResearchRecords": True, "fusionRecordPresent": True, "interactivePredictionManipulationExplanation": True, "answersAndDetailedSteps": True, "terraSecondPass": "pending"}, "reviewedAt": "2026-09-21"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("authored chinese performance 4-iv-6")
+
+
+if __name__ == "__main__":
+    main()

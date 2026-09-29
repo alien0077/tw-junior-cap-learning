@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-8-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-8／理解短文訊息書信主要內容」task, what is the best way to prepare question 2?",
+  "prompt": "Read the letter.\n\nDear Mr. Hsu,\nThank you for letting our class interview you at the old train station. Your story about repairing clocks helped us understand why the station bell matters to the town. We have finished the history display and would like to invite you to see it next Thursday. Please let our teacher know if that afternoon works for you.\nSincerely,\nClass 903\n\nWho is the letter mainly written to?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Mr. Hsu, who shared local history with the class"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "The students in Class 903"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "The teacher who organized the interview"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "Visitors who want to repair the station clock"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-8"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-8／理解短文訊息書信主要內容, question 2."
+    "explanation": "稱呼 Dear Mr. Hsu、感謝他接受訪問，以及邀請他看成果，都指向同一位收件人。Class 903 是署名的寄件者，不是收件者。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%B8%89%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+    "sourceLocator": "僅將公立學校公開英語評量的短篇閱讀理解能力作 pattern-only 參照；本文、選項、答案與解析均獨立撰寫。",
+    "authoringNote": "Original English text and item authored for KG 3-Ⅳ-8; public-school exam references inform only the skill pattern. Publisher-version fusion, rights/content review, and second-round review remain incomplete; keep draft."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%B8%89%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E8%AA%9E%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中112學年度第1學期三年級第1次段考英文科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "112學年度第1學期",
+      "subject": "english",
+      "locator": "閱讀題組第19至21題：由父女往返信件理解寫信者感受、原因與溝通意圖",
+      "locatorLevel": "item",
+      "observedPattern": "往返信件依稱呼、第一人稱內容與回信反應呈現人物關係及寫信動機；本題另創角色、事件和完整文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "書信題不要只看正文提到誰；把稱呼、正文中的 you 與署名三個位置互相核對。",
+  "solutionSteps": [
+    "先找信件稱呼 Dear 後面的對象，得到 Mr. Hsu。",
+    "檢查正文的 you：被感謝的是接受班級訪問的人。",
+    "閱讀邀請句，Mr. Hsu 也是被邀請看展覽的人。",
+    "對照署名 Class 903，確認它代表寄件者而非收件者。",
+    "三個線索一致指向分享地方歷史的 Mr. Hsu，所以選 A。"
+  ]
 }

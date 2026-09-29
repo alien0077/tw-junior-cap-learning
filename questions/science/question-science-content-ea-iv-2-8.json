@@ -2,41 +2,84 @@
   "id": "question-science-content-ea-iv-2-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年10月18日學校研究社的觀察中，針對「Ea-Ⅳ-2：以適當尺度量測或推估物理量」提出可檢驗的科學問題，若比較 3 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "多次量測同一物體後取平均，主要可以改善哪一類問題？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ea-Ⅳ-2：以適當尺度量測或推估物理量」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "儀器零點錯誤一定全部消失"
     },
     {
       "id": "B",
-      "text": "研究「Ea-Ⅳ-2：以適當尺度量測或推估物理量」時只改變距離，其餘條件一致，設置3組、每組取樣16份並各重複測量5次"
+      "text": "部分隨機誤差造成的分散"
     },
     {
       "id": "C",
-      "text": "研究「Ea-Ⅳ-2：以適當尺度量測或推估物理量」時只測量3組中的一組就直接下結論"
+      "text": "工具量程不足"
     },
     {
       "id": "D",
-      "text": "研究「Ea-Ⅳ-2：以適當尺度量測或推估物理量」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "物理量的定義改變"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ea-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ea-Ⅳ-2：以適當尺度量測或推估物理量」。"
+    "explanation": "重複測量取平均可減少部分隨機誤差的影響，但不能消除零點錯誤、系統誤差或量程不足。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www3.schs.ntpc.edu.tw/var/file/0/1000/attach/62/pta_6928_7943048_11362.pdf",
+    "sourceLocator": "三筆公立學校公開自然科資料僅作尺度、工具、累積量測、排水法與推估的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ea-iv-2"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-ea-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www3.schs.ntpc.edu.tw/var/file/0/1000/attach/62/pta_6928_7943048_11362.pdf",
+      "title": "新北市立石碇高中國中部自然科題庫",
+      "year": "113",
+      "locator": "估讀、量筒、排水法與測量工具題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然題常以一滴水累積、量筒液面差、工具精度、單位換算和平均值要求選工具與推估；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675416611640UMJ54uWL.pdf",
+      "title": "臺北市立內湖國中111學年度上學期自然科學第一次段考",
+      "year": "111",
+      "locator": "最小刻度、量筒讀值與單位題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然題常以一滴水累積、量筒液面差、工具精度、單位換算和平均值要求選工具與推估；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.jhsh.ntpc.edu.tw/var/file/0/1000/attach/77/pta_22725_1030925_35628.pdf",
+      "title": "新北市立錦和高級中學113學年度國中部自然科補考題庫",
+      "year": "113",
+      "locator": "累積量測、有效位數與排水法題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然題常以一滴水累積、量筒液面差、工具精度、單位換算和平均值要求選工具與推估；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先分類誤差來源，再判斷取平均能處理哪一種。",
+  "solutionSteps": [
+    "確認每次讀值的差異可能來自隨機波動。",
+    "判斷取平均能讓正負偏差部分抵銷。",
+    "檢查零點、量程和刻度限制是否仍存在。",
+    "不要把平均值誤稱為消除所有誤差。",
+    "故選 B。"
+  ]
 }

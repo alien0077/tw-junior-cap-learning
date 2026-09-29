@@ -1,0 +1,35 @@
+import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+
+const lesson = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-english-performance-5-iv-7.json", import.meta.url), "utf8"));
+const specText = readFileSync(new URL("../unit-specs/english/cur-english-performance-5-iv-7.yaml", import.meta.url), "utf8");
+const visible = new Map(lesson.content.sections.map(({ heading, body }) => [heading, body]));
+
+assert.equal(lesson.id, "lesson-english-performance-5-iv-7");
+assert.equal(lesson.reviewStatus, "draft", "manual lesson review remains with user's ChatGPT review");
+assert.equal(lesson.authoringStandard, "version-fused-v1");
+assert.equal(lesson.knowledgeIds[0], "kg-english-performance-5-iv-7");
+assert.equal(lesson.teaching.body.length, 6);
+for (const section of lesson.teaching.body) assert.equal(visible.get(section.heading), section.body);
+assert.ok(lesson.teaching.body.every(section => section.body.length >= 120));
+assert.match(lesson.teaching.body[1].body, /預測任務/);
+assert.match(lesson.teaching.body[2].body, /條件/);
+assert.match(lesson.teaching.body[4].body, /回聽/);
+assert.equal(lesson.publisherResearch.length, 3);
+assert.match(lesson.publisherResearch.find(entry => entry.publisher === "kanghsuan").outcome, /未取得/);
+assert.equal(lesson.versionResearch.length, 2);
+assert.match(lesson.versionResearch.find(entry => entry.publisher === "nani").sourceLocator, /listen again/);
+assert.match(lesson.versionResearch.find(entry => entry.publisher === "hanlin").licenseBoundary, /不等於出版社/);
+assert.ok(lesson.fusionRecord.commonCore.length >= 3);
+assert.ok(lesson.fusionRecord.versionDifferences.length >= 2);
+assert.ok(lesson.fusionRecord.originalAdditions.length >= 4);
+assert.equal(lesson.interactive.type, "guided-choice");
+assert.equal(lesson.interactive.steps.length, 4);
+assert.deepEqual(lesson.interactive.steps.map(step => step.answer), ["A", "B", "A", "B"]);
+assert.ok(lesson.interactive.steps.every(step => step.audioScript.length >= 40 && step.audioLanguage === "en-US" && step.options.length === 3 && step.retryHint.length >= 12 && step.feedback.length >= 30));
+assert.equal(new Set(lesson.interactive.steps.map(step => step.audioScript)).size, 4);
+assert.match(specText, /component: GuidedChoiceBlock/);
+assert.match(specText, /SpeechSynthesis/);
+assert.match(specText, /逐字稿預設收合/);
+assert.match(specText, /qaStatus: verified/);
+console.log("English 5-IV-7 fusion content, provenance boundaries, original dialogue audio contract and guided-choice test pass");

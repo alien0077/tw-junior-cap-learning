@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-6-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「B-Ⅳ-6／圖片描述」task, what is the best way to prepare question 10?",
+  "prompt": "A campsite map marks five cabins. The information card says each cabin can sleep three hikers. What is the greatest number of hikers the campsite can host in the cabins?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about B-Ⅳ-6／圖片描述."
+      "text": "8 hikers"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about B-Ⅳ-6／圖片描述."
+      "text": "12 hikers"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking B-Ⅳ-6／圖片描述."
+      "text": "15 hikers"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about B-Ⅳ-6／圖片描述."
+      "text": "20 hikers"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,61 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets B-Ⅳ-6／圖片描述, question 10."
+    "value": "C",
+    "explanation": "The map gives five cabins and the card states three hikers per cabin. Multiplying the number of cabins by each cabin's capacity gives 5×3=15 hikers. The question asks for the greatest number, so use full capacity in every cabin."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度第 2 學期英文段考；研究圖片中的人物、動作、數量、位置、比較與方向描述；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+    "sourceLocator": "校方附件「114-2-3-八年級英語試題卷.pdf」第4頁第53題；僅參考合併客房數與每房床位推論總容量，不重製原題。",
+    "authoringNote": "改用營隊地圖與不同小屋數、每屋容量自編閱讀圖文推論題，明列乘法推導與單位；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-b-iv-6"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-b-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國民中學公開英文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "圖片描述、位置與實用英語",
+      "observedPattern": "公立學校英語評量要求從圖像或場景辨認位置、數量、顏色、動作、比較、缺漏、順序與整體推論；本題改為全新文字場景，未複製圖片。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量八年級英語科試題",
+      "year": "114-2",
+      "subject": "english",
+      "locator": "校方附件「114-2-3-八年級英語試題卷.pdf」第4頁第53題",
+      "observedPattern": "原卷以客房數及每房床位推論可容納總人數；本題改用營隊小屋數與每屋可住宿人數推論容量。",
+      "pattern": "原卷以客房數及每房床位推論可容納總人數；本題改用營隊小屋數與每屋可住宿人數推論容量。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國民中學公開段考試題頁；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "english",
+      "locator": "圖像描述、細節與應用",
+      "observedPattern": "公立學校英語評量要求從圖像或場景辨認位置、數量、顏色、動作、比較、缺漏、順序與整體推論；本題改為全新文字場景，未複製圖片。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "找出總數與每單位容量兩個線索，以乘法求滿載總量；辨清題目問的是最大容納人數。",
+  "solutionSteps": [
+    "地圖標記有5間小屋；先確認這是小屋數，不是人數。",
+    "資訊卡說每間可住3位健行者，這是每一單位的容量。",
+    "題目問所有小屋都住滿時的人數，因此列式為小屋數×每屋人數。",
+    "計算5×3=15，單位是 hikers，對應選項 C。",
+    "回查限制：題目沒有保留空房或其他容量限制，故最大人數為15；12少算，20超出容量。"
+  ]
 }

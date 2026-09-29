@@ -2,41 +2,76 @@
   "id": "question-chinese-common-words-recognition-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "「朝夕相處」的「朝」表示？",
+  "prompt": "「重視資料來源」中的「重」應讀哪個音？",
   "options": [
     {
       "id": "A",
-      "text": "早晨"
+      "text": "ㄔㄨㄥˊ，表示重新"
     },
     {
       "id": "B",
-      "text": "朝代"
+      "text": "ㄓㄨㄥ，表示中間"
     },
     {
       "id": "C",
-      "text": "面向"
+      "text": "ㄓㄨㄥˋ，表示看得重要"
     },
     {
       "id": "D",
-      "text": "朝向"
+      "text": "ㄔㄨㄥˋ，表示衝撞"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ab-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "「朝夕」是早晨與晚上，因此「朝夕相處」中的「朝」指早晨，不是朝代、面向或朝向。"
+    "value": "C",
+    "explanation": "重視的重讀ㄓㄨㄥˋ，表示看重、認為重要；重新的重才讀ㄔㄨㄥˊ。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-common-words-recognition-3.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究多音字、形音義與語境認讀能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫常用詞語認讀題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-common-words-recognition"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-common-words-recognition",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字音、認讀與語境",
+      "observedPattern": "公立學校國文評量常把多音字、形近字、詞義與完整語境結合，要求以詞語而非孤立字形判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "多音字、形音義與閱讀理解",
+      "observedPattern": "公立學校國文評量常把多音字、形近字、詞義與完整語境結合，要求以詞語而非孤立字形判讀；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先看重後面的詞是視、複或量，再依固定搭配判讀。",
+  "solutionSteps": [
+    "讀題定位：圈出「重量的重」與完整詞語，先判斷題目問讀音、詞義、形音辨析或閱讀功能。",
+    "找語境證據：觀察搭配、對偶、詞性與前後句，區分古今義或多音字；本題核心是「重視的重讀ㄓㄨㄥˋ，表示看重、認為重要；重新的重才讀ㄔㄨㄥˊ。」",
+    "核對正解：選項 C「A」能同時符合詞語慣用讀音與句中語意。",
+    "排除誘答：檢查是否只看孤立字、把最常見音硬套、混淆形近字，或忽略本義與引申義的語境差異。",
+    "回讀驗證：以字典注音、完整詞語與原句重新朗讀，確認聲音、詞義和段落理解互相一致。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

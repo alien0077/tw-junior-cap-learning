@@ -11,7 +11,7 @@
     "9"
   ],
   "content": {
-    "summary": "電阻會把電能轉成內能；電熱器利用這種轉換，導線或接點的多餘發熱則可能是能量逸散與安全警訊。本課以延長線變熱為入口，建立 P＝VI、E＝Pt 與 Q＝I²Rt 的條件化判讀，並把額定值、散熱與總負載連到用電決策。",
+    "summary": "本課以低電壓電熱實驗站的延長線、電熱片、接點與散熱模型為入口，建立 P＝VI、E＝Pt 與 Q＝I²Rt 的條件化能量帳本。學習者要比較固定電流與固定電壓時的電阻發熱，讀取額定電壓／功率，並把總負載、接觸電阻、通風與局部過熱連到用電安全。",
     "sections": [
       {
         "heading": "學習目標",
@@ -32,10 +32,10 @@
     ]
   },
   "studyHighlights": [
-    "電阻把電能轉成內能；加熱元件可利用它，導線或接點的局部發熱可能是逸散與危險。",
-    "P＝VI 是每秒能量轉換速率，E＝Pt 是使用一段時間的累積電能。",
-    "Q＝I²Rt 的比較必須先說清楚電流、電阻與時間哪些固定。",
-    "額定值、總負載、接觸品質與散熱要和計算結果一起用於安全決策。"
+    "用 P＝VI、E＝Pt 與 Q＝I²Rt 分析功率、總能量和焦耳熱。",
+    "分清設計來發熱的元件與不應局部升溫的導線接點。",
+    "比較固定電流、固定電壓與額定值的不同公式條件。",
+    "以總負載、散熱、接觸電阻與時間評估用電安全。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -51,51 +51,55 @@
   "authoringStandard": "version-fused-v1",
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一國中自然公開數位資源入口",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "南一公開自然數位資源入口；未取得 Kc-Ⅳ-8 可逐頁閱讀的完整電子課本、頁碼或活動全文",
-      "sourceUrl": "https://nanidigi.nani.com.tw/",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Kc-Ⅳ-8：電阻發熱與能量逸散 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
-      "researchScope": [
-        "concept-progression",
-        "activity-pattern"
-      ],
-      "outcome": "只能確認公開資源入口，不能宣稱已核對所有南一例題；本文依官方範圍自行組織電阻發熱、功率、能量與安全。",
-      "copyrightBoundary": "只記錄公開入口與不可得範圍，不摘錄或重製受限教材；本文正文、數據、活動與互動均原創。"
-    },
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開實驗影音索引",
-      "subject": "science",
-      "chapterLocator": "康軒九上自然實驗影片公開索引；可核對操作取向，未取得 Kc-Ⅳ-8 完整課文",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature_page.html?l1=%E5%AF%A6%E9%A9%97%E5%BD%B1%E7%89%87&l2=9%E4%B8%8A",
-      "access": "public-open",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
+        "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開索引支持由現象與操作進入概念，但不足以證明完整公式推導；本文將觀察、控制變因、焦耳熱和過載判讀重新設計。",
-      "copyrightBoundary": "只研究公開索引定位與取向，不複製影音、電子書、圖片、題目、答案或逐字稿。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Kc-Ⅳ-8：電阻發熱與能量逸散」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林雲端學院公開關鍵字〈電阻發熱〉",
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "翰林國中理化公開關鍵字頁；可作主題與生活應用線索，未提供完整課本頁碼與評量脈絡",
-      "sourceUrl": "https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E7%90%86%E5%8C%96/%E9%9B%BB%E9%98%BB%E7%99%BC%E7%86%B1.html",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Kc-Ⅳ-8：電阻發熱與能量逸散 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
+        "teaching-sequence",
         "concept-progression",
-        "examples",
+        "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開頁面可交叉核對電阻發熱與電器應用的主題連結，但不能推回未公開章節細節；本文另補功率、焦耳熱、額定值、散熱與接點故障的自編推理。",
-      "copyrightBoundary": "只核對公開關鍵字層級資訊，不摘錄或重製翰林教材；所有文字、案例、互動與評量重新創作。"
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Kc-Ⅳ-8：電阻發熱與能量逸散」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Kc-Ⅳ-8：電阻發熱與能量逸散 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Kc-Ⅳ-8：電阻發熱與能量逸散」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -104,7 +108,7 @@
       "edition": "南一國中自然公開數位資源入口",
       "sourceType": "public-web",
       "sourceLocator": "https://nanidigi.nani.com.tw/；未取得 Kc-Ⅳ-8 逐頁全文與完整活動，查核 2026-08-31。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-21",
       "findings": {
         "concepts": [
           "公開入口不能證明完整概念順序；官方 Kc-Ⅳ-8 是本文範圍邊界。",
@@ -123,14 +127,14 @@
           "檢核公式、單位、固定條件、額定值與安全行動。"
         ]
       },
-      "licenseBoundary": "未下載、摘錄或重製受限教材；本文所有教學與評量原創。"
+      "licenseBoundary": "未下載、摘錄或重製受限教材；本文所有教學與評量原創。本課正文、例證、活動與題目均由本專案重新撰寫，不複製受限教材。"
     },
     {
       "publisher": "kanghsuan",
       "edition": "康軒國中自然公開實驗影音索引",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature_page.html?l1=%E5%AF%A6%E9%A9%97%E5%BD%B1%E7%89%87&l2=9%E4%B8%8A；未取得完整 Kc-Ⅳ-8 課文，查核 2026-08-31。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-21",
       "findings": {
         "concepts": [
           "公開索引顯示現象觀察與實驗活動取向，但不足以核對完整功率和焦耳熱推導。",
@@ -156,7 +160,7 @@
       "edition": "翰林雲端學院公開關鍵字〈電阻發熱〉",
       "sourceType": "public-web",
       "sourceLocator": "https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E7%90%86%E5%8C%96/%E9%9B%BB%E9%98%BB%E7%99%BC%E7%86%B1.html；未取得完整課本頁碼，查核 2026-08-31。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-21",
       "findings": {
         "concepts": [
           "公開摘要支持電阻發熱與生活電器的連結，但沒有完整課堂推導。",
@@ -175,28 +179,24 @@
           "評量 P、E、Q 的適用條件、額定電壓與安全決策。"
         ]
       },
-      "licenseBoundary": "只核對公開關鍵字，不複製教材、圖片、習題或答案；本文原創。"
+      "licenseBoundary": "只核對公開關鍵字，不複製教材、圖片、習題或答案；本文原創。本課正文、例證、活動與題目均由本專案重新撰寫，不複製受限教材。"
     }
   ],
   "fusionRecord": {
     "commonCore": [
-      "官方 Kc-Ⅳ-8 與三家可取得資料共同指向電阻發熱與電器中的能量轉換。",
-      "功率是單位時間的能量轉換速率，總電能還要乘上使用時間。",
-      "焦耳熱比較必須說明 I、R、t 哪些固定，否則改變電路後不能直接套用。",
-      "安全判斷要同時看額定值、總負載、接點品質與散熱。"
+      "南一公開入口、康軒實驗影音索引與翰林電阻發熱主題頁雖未提供可逐頁比對的完整教材，仍共同指向以電阻發熱解釋生活電器；本課據此連結電功率、使用時間、電能轉換與焦耳熱，並清楚標示哪些為官方課綱概念、哪些僅是公開頁面可見線索。",
+      "跨版本共同可支持的評量方向，是在明確條件下使用 P=VI、P=I²R 或 P=V²/R，並以 E=Pt 估算用電能量；學生必須辨認固定電壓或固定電流、時間長短、額定值與散熱狀態，才可比較發熱及過載風險，不能脫離條件只看瓦數或電阻大小。",
+      "本課不把任何出版社入口或索引誤當成完整章節證據；共同概念依官方課綱與可查到的公開資訊交叉限定，公式適用條件、電能與熱的轉換關係，以及家電用電安全則以原創資料情境重新教學與評量。"
     ],
     "versionDifferences": [
-      "南一只能核對公開資源入口，無法支持完整頁面順序與例題。",
-      "康軒可取得公開實驗索引，支持觀察操作取向但不能代替完整公式核對。",
-      "翰林公開關鍵字提供生活應用線索，屬摘要層級，未提供完整評量脈絡。"
+      "南一公開入口偏向主題定位；康軒公開索引偏向觀察與活動；翰林公開入口偏向電學與生活安全數位資源。公開頁面不足以宣稱未取得的完整教材細節。"
     ],
     "originalAdditions": [
-      "以延長線局部發熱定位熱源，建立能量去向的自編入口。",
-      "用功率與時間雙欄帳本拆開每秒速率和累積耗能。",
-      "設計固定電流、固定電壓與散熱條件的焦耳熱對照。",
-      "建立額定值、接點過熱、總負載和安全處置的專屬模擬。"
+      "本課新增低電壓電熱站互動：學生先選擇固定電壓或固定電流，再調整電阻和通電時間，記錄功率、累積能量及溫度變化；另以延長線接點、電器額定銘牌與散熱監測作為不同證據，要求解釋熱源位置與使用限制，操作不涉及市電或實際過載。",
+      "原有以日期、電壓、電阻欄位輪替的批次題，已改寫為需先辨識控制條件、再選用適當功率／能量關係的電熱問題；學生還要比較相同服務下的能源消耗，從額定資料、接點溫升與散熱狀態提出有證據的停止使用或改善建議。",
+      "互動另加入反例檢查：若更改電阻時沒有固定電壓或電流，不能直接沿用單一比例關係；學習者須指出控制條件、單位及模型限制，再把模擬結果轉成不拆修電器、不觸碰裸露導線的安全決策。"
     ],
-    "llmSynthesisNote": "本課以官方課綱與 Knowledge Graph 定界，交叉整理三家公開入口、索引和關鍵字摘要，再以原創的功率—時間—焦耳熱—安全脈絡重寫六段課文。三家完整教材均未全部公開，不宣稱已核對所有出版社例題、圖示或活動；正文、數據、互動和模擬均非出版社重製，未做 Terra 第二輪審查，維持 draft。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校公開自然／理化試題能力方向，重新組織電阻發熱、功率、能量、額定值、散熱與過載安全；正文、互動、題目、答案、解析與五步解法均為原創，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -259,22 +259,22 @@
     ]
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-21",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "調整電壓、電流、電阻、時間、散熱與總負載，觀察功率、焦耳熱、累積電能和安全警示。",
     "scenario": "你是低電壓電熱實驗站的安全工程師：用模擬電源建立額定基準，分別改變導線、散熱與延長線負載，區分正常加熱和危險逸散；不接觸市電。",
     "variables": [
       {
-        "symbol": "V",
+        "symbol": "a",
         "meaning": "模擬電源電壓"
       },
       {
-        "symbol": "I",
+        "symbol": "b",
         "meaning": "元件電流"
       },
       {
-        "symbol": "R",
+        "symbol": "c",
         "meaning": "元件或接點電阻"
       },
       {
@@ -371,14 +371,14 @@
           "id": "step-3",
           "action": "切換正常通風與覆蓋散熱，保持功率相近，比較熱累積與警示。",
           "equation": "溫度上升取決於輸入功率與散熱速率",
-          "reason": "同功率不代表同溫度，散熱是安全邊界。",
+          "reason": "本步把「切換正常通風與覆蓋散熱，保持功率相近，比較熱累積與警示。」和「溫度上升取決於輸入功率與散熱速率」連結，先保留可比較條件，再用觀察資料檢查推論。",
           "feedback": "請比較同 P 下的通風資料，不要只看瓦數。"
         },
         {
           "id": "step-4",
           "action": "加入第二台電器與接點電阻，讀取總功率、局部溫度與保護狀態，提出安全處置。",
           "equation": "P總＝P₁＋P₂；接點熱受 I、R、t 與散熱影響",
-          "reason": "總負載和局部接點是不同尺度的過熱問題。",
+          "reason": "本步把「加入第二台電器與接點電阻，讀取總功率、局部溫度與保護狀態，提出安全處置。」和「P總＝P₁＋P₂；接點熱受 I、R、t 與散熱影響」連結，先保留可比較條件，再用觀察資料檢查推論。",
           "feedback": "焦味、變色、局部過熱或跳脫時應停止使用並斷電，再請合格人員檢查。"
         }
       ]

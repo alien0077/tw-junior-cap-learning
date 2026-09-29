@@ -2,23 +2,23 @@
   "id": "question-science-content-lb-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年10月17日社區環境站的觀察中，連續觀察「Lb：生物與環境的交互作用」2 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "水草覆蓋率提高後，白天溶氧上升但夜間最低溶氧下降；最好的報告應？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Lb：生物與環境的交互作用」時只依樣本的顏色（未記錄7天的時間與條件）"
+      "text": "同時呈現日夜資料，說明平均值可能掩蓋極端低值並檢查呼吸負荷"
     },
     {
       "id": "B",
-      "text": "研究「Lb：生物與環境的交互作用」時只依樣本的名稱推測，不進行觀察"
+      "text": "只報白天上升以宣稱水草一定改善水質"
     },
     {
       "id": "C",
-      "text": "研究「Lb：生物與環境的交互作用」時只觀察一次外形，便排除所有其他證據"
+      "text": "只報夜間下降以宣稱水草一定有害"
     },
     {
       "id": "D",
-      "text": "連續7天研究「Lb：生物與環境的交互作用」並記錄到樣本穩定進行物質交換"
+      "text": "刪除與預測不同的時間點"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Lb：生物與環境的交互作用」。"
+    "value": "A",
+    "explanation": "不同時段的方向相反時，平均值或單一時點都不足；需描述完整週期並討論水草量、呼吸與夜間風險。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的水草、溶氧、光照、水溫、族群資料、相關因果與控制變因能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-lb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-lb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "生物與環境、環境因子與族群資料",
+      "pattern": "取公立學校自然科評量以環境條件、族群變化、時間序列和實驗證據推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以環境條件、族群變化、時間序列和實驗證據推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生態系資料、相關與因果、非生物因子",
+      "pattern": "取公開會考以圖表、對照、機制和證據界線評估的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、對照、機制和證據界線評估的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "水草、溶氧、光照、水溫與族群關係",
+      "pattern": "取公立國中試題以非生物條件、控制變因、時間變化和生態決策的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以非生物條件、控制變因、時間變化和生態決策的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先畫出時間序列，再比較峰值、谷值與平均，而不是挑一個有利數字。",
+  "solutionSteps": [
+    "先圈出自變因、應變因與觀察期間。",
+    "分開整理光照、水溫、溶氧、水草與蚊幼蟲等條件。",
+    "用時間序列讀出先後與峰值，不把同日相關直接當因果。",
+    "檢查對照、重複和替代解釋，例如呼吸、分解或水溫。",
+    "用資料支持的方向、作用機制和限制完成結論。"
+  ]
 }

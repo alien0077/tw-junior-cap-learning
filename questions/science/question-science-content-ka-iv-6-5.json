@@ -2,41 +2,87 @@
   "id": "question-science-content-ka-iv-6-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年3月28日社區環境站的觀察中，水中射向金屬面時，光線與鏡面法線的入射角為 15°，研究「Ka-Ⅳ-6：針孔成像、影子與光的直進」時，反射角為何？",
+  "prompt": "點光源、三角形紙板和白屏順序固定；只把紙板移近點光源，通常會看到影子變化為何？",
   "options": [
     {
       "id": "A",
-      "text": "75°（「Ka-Ⅳ-6：針孔成像、影子與光的直進」中把入射角誤當折射角）"
+      "text": "影子在屏幕上通常變大，因為遮光邊界在較遠處張開"
     },
     {
       "id": "B",
-      "text": "15°（水中射向金屬面）"
+      "text": "影子必然變小且光線消失"
     },
     {
       "id": "C",
-      "text": "30°（「Ka-Ⅳ-6：針孔成像、影子與光的直進」中把入射角加倍）"
+      "text": "影子一定變成針孔實像"
     },
     {
       "id": "D",
-      "text": "165°（「Ka-Ⅳ-6：針孔成像、影子與光的直進」中以平角計算）"
+      "text": "影子深淺即可精確給出物距"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ka-iv-6"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "反射定律指出反射角等於入射角，因此為 15°。 本題對應 KG「Ka-Ⅳ-6：針孔成像、影子與光的直進」。"
+    "value": "A",
+    "explanation": "物體靠近近似點光源時，從光源經物體邊緣延伸出的遮光區在屏幕上張角變大，影高或影寬通常增加；深淺還受光源大小和雜光影響。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.chhs.tp.edu.tw/uploads/1580833724641KNP89ykg.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題的光直進、影子、針孔成像、日食投影與控制變因能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ka-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.chhs.tp.edu.tw/uploads/1580833724641KNP89ykg.pdf",
+      "title": "臺北市立景興國民中學八年級理化科公開定期評量",
+      "year": "108",
+      "locator": "光直進、針孔成像、影子、日食與實驗控制變因",
+      "pattern": "取公立學校評量以光路、影子與針孔投影進行圖形判讀和實驗推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校評量以光路、影子與針孔投影進行圖形判讀和實驗推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "光的直進、針孔成像、影子、日食與操作條件",
+      "pattern": "取從光源—物體—屏幕關係推論影子與成像方向、大小和觀察條件的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從光源—物體—屏幕關係推論影子與成像方向、大小和觀察條件的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.sjjh.tyc.edu.tw/113-1-8%E8%A3%9C%E8%80%83%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "桃園市立山腳國民中學八年級自然科公開補考題庫",
+      "year": "113",
+      "locator": "光直進、影子邊界、針孔成像與變因控制",
+      "pattern": "取公開自然科題庫要求用光線模型、幾何關係與公平實驗判讀現象的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開自然科題庫要求用光線模型、幾何關係與公平實驗判讀現象的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "畫兩條遮光邊界，不用影子顏色代替尺寸證據。",
+  "solutionSteps": [
+    "先辨認光源、遮光物與屏幕三者的順序。",
+    "畫出由光源經物體邊緣到屏幕的兩條界線。",
+    "將物體移近光源後重新延伸光線，判斷遮光區張角。",
+    "排除只靠影子深淺或物體本身大小猜測。",
+    "以影高或影寬實測並記錄光源大小與雜光限制。"
+  ]
 }

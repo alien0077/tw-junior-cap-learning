@@ -2,23 +2,23 @@
   "id": "question-science-content-ia-iv-1-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月4日校園實驗室的觀察中，針對「Ia-Ⅳ-1：內外營力改變地貌」提出可檢驗的科學問題，若比較 3 組、每組取樣 10 份資料，哪一項設計最適當？",
+  "prompt": "河流把砂粒帶往下游，主要包含哪個地表作用？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ia-Ⅳ-1：內外營力改變地貌」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "風化"
     },
     {
       "id": "B",
-      "text": "研究「Ia-Ⅳ-1：內外營力改變地貌」時只測量3組中的一組就直接下結論"
+      "text": "搬運"
     },
     {
       "id": "C",
-      "text": "研究「Ia-Ⅳ-1：內外營力改變地貌」時先決定結論，再挑選支持結論的10筆資料"
+      "text": "隆起"
     },
     {
       "id": "D",
-      "text": "研究「Ia-Ⅳ-1：內外營力改變地貌」時只改變光照時間，其餘條件一致，設置3組、每組取樣10份並各重複測量5次"
+      "text": "凝結"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ia-Ⅳ-1：內外營力改變地貌」。"
+    "value": "B",
+    "explanation": "砂粒由水流帶離原位置並移向下游，這是河流的搬運作用。 正確答案為選項 B：「搬運」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的風化、侵蝕、搬運、沉積、板塊及地貌判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ia-Ⅳ-1 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ia-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ia-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "風化、侵蝕、搬運、沉積、板塊與地貌資料判讀",
+      "pattern": "取由地表作用、地質營力、地形證據與控制變因解釋地貌變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由地表作用、地質營力、地形證據與控制變因解釋地貌變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "追蹤沉積物的位置是否改變。",
+  "solutionSteps": [
+    "圈出地貌、作用、介質與事件順序等關鍵詞。",
+    "判斷物質是否風化、搬運、侵蝕或沉積，以及作用力來源。",
+    "套用原理：砂粒由水流帶離原位置並移向下游，這是河流的搬運作用。",
+    "排除與作用位置或證據不符的選項，保留「搬運」。",
+    "回查答案「搬運」是否同時符合作用機制與地貌證據。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

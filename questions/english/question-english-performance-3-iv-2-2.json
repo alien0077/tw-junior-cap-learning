@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-2-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「3-Ⅳ-2／辨識課堂字詞」practice, what does “notice” mean in question 2?",
+  "prompt": "The art room closes at 4:00. A student must return the brushes before 3:50. By what time should the brushes be back?",
   "options": [
     {
       "id": "A",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “notice” means a short message for people to read."
+      "text": "After 4:00."
     },
     {
       "id": "B",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “notice” means a place where people wait for the sports center."
+      "text": "Earlier than 3:50."
     },
     {
       "id": "C",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “notice” means a tool used to measure 4 minutes."
+      "text": "Exactly at 4:00."
     },
     {
       "id": "D",
-      "text": "In the 3-Ⅳ-2／辨識課堂字詞 task, “notice” means a person who teaches at the sports center."
+      "text": "Any time tomorrow."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "“notice” means a short message for people to read. This item targets 3-Ⅳ-2／辨識課堂字詞, question 2."
+    "value": "B",
+    "explanation": "Before 3:50 表示在3:50之前完成，不是等到關門後或隔天。B 唯一符合期限；題目沒有要求恰好在某一分鐘完成。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=449&cfsn=2995&fn=114-1-%E7%AC%AC3%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE%E5%8D%B7-%E6%89%B6%E5%BF%97%E6%81%A9.pdf&op=dlfile",
+    "sourceLocator": "花蓮縣立宜昌國中公開試題，PDF page 1, item 1: use a time preposition to place one activity before another；只參照題型，不重製原卷。",
+    "authoringNote": "依官方英語課綱與 Knowledge Graph，參照公立學校公開試題的課堂指令、校園詞彙、時間／方位與情境推論能力獨立改寫；未複製原題題幹、選項、資料或答案。題目維持draft，尚待版本研究及完整發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycjh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=449&cfsn=2995&fn=114-1-%E7%AC%AC3%E6%AC%A1%E6%AE%B5%E8%80%837%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E7%A7%91%E9%A1%8C%E7%9B%AE%E5%8D%B7-%E6%89%B6%E5%BF%97%E6%81%A9.pdf&op=dlfile",
+      "title": "花蓮縣立宜昌國中114學年度第一學期第三次段考七年級英語科試題卷",
+      "year": "114-1-3",
+      "subject": "english",
+      "locator": "PDF page 1, item 1: use a time preposition to place one activity before another",
+      "observedPattern": "只參照第1題的校園詞彙／指令／行程或語境推論形式；公開查閱不等於可重製；只參考逐題標示的詞彙、方位、時間及短文判讀能力，不複製原題文字、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "讀到 before 或 after 先畫出時間先後箭頭，再將期限與活動時間排序；不要把「之前」誤當成「當下」或「之後」。",
+  "solutionSteps": [
+    "先分清兩個時間資訊：房間4:00關閉，歸還刷具的期限則更早，是3:50之前。",
+    "找出 before 修飾的時間點，表示完成動作必須落在3:50的左側。",
+    "把時間軸排成「較早完成 → 3:50期限 → 4:00關門」，即可看出安全完成區間。",
+    "B 表示早於3:50；A晚於關門、C晚於指定期限、D把期限推到隔天。",
+    "選 B；安排實際行動時也要留出走到器材櫃的時間，不應把 before 解讀成準時抵達即可。"
+  ]
 }

@@ -1,0 +1,40 @@
+{
+  "asOf": "2026-09-28",
+  "unit": "lesson-english-performance-7-iv-5",
+  "scope": "保留並接回既有學習計畫教材，補充可追溯的課綱／版本研究／理論融合依據，修正學生頁與稿件不一致，驗收既有十題與六階互動。未執行教材內容審查。",
+  "beforeAndAfter": {
+    "before": "lesson已有六段較完整content.sections、六段teaching.body及ReadingStrategyLab，但兩套標題與例證不一致，學生頁優先顯示短稿；缺少versionResearch與fusionRecord，因此未納入融合稿名冊。",
+    "after": "保留既有六段content.sections原稿，將完整正文與標題逐段接回teaching.body；新增三版本來源層級與未知事項、官方課綱／KG及自我調節學習理論融合紀錄；保留原六階互動和十題，均維持draft。"
+  },
+  "curriculumAndFusionBasis": {
+    "officialIndicator": "7-Ⅳ-5：能訂定英文學習計畫，檢視自我學習過程，並隨時改進。",
+    "officialCurriculumUrl": "https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
+    "knowledgeGraphId": "kg-english-performance-7-iv-5",
+    "publisherAndSchoolEvidence": [
+      {"publisher":"nani","url":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMxTDNCMFlWOHlNalF4WHpNMU1qUTNPRGxmT0RRME1qWXVjR1Jt&fname=LOGGYSOKWW10A1IH50LKKPHGPK30WT3414JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP3435GCQP3504B0UWYWWXUW50OOA0A0YWPOXX21JCLKSWIGQOB4SWHCUS30A110","locator":"丹鳳高中國中部南一版七年級英語114計畫PDF pp.12–14；課綱7-Ⅳ-5及閱讀角落課程定位。校方課程計畫非出版社課本全文。"},
+      {"publisher":"kanghsuan","url":"https://www.knsh.com.tw/_KNSH/Plan","locator":"康軒官方課程計畫下載入口；未取得可定位七年級7-Ⅳ-5學生課本頁。"},
+      {"publisher":"hanlin","url":"https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf","locator":"嘉義縣翰林版七年級英語校方調整計畫PDF p.1確認年級／冊次，但未找到本單元課本頁或教學序列。"}
+    ],
+    "learningTheory": {"citation":"Zimmerman, B. J. (2002). Becoming a Self-Regulated Learner: An Overview. Theory Into Practice, 41(2), 64–70. DOI: 10.1207/s15430421tip4102_2","url":"https://doi.org/10.1207/s15430421tip4102_2","application":"以事前目標與策略規劃、執行時自我監控、完成後反思並調整下一輪，支撐課綱能力的教學轉譯；不歸因出版社。"},
+    "versionBoundary":"南一有課程計畫／簡介本的閱讀角落與學習行程規劃線索，但未取得指定學生課本全文；康軒僅有官方課程計畫與數位資源入口，未定位本課；翰林文件確認冊次／調整課程，未定位本課。課本編排差異仍未知，不宣稱三版逐章融合。"
+  },
+  "preservedAndIntegratedContent": [
+    "保留六段若晴的英文聽力學習計畫，不以新稿覆蓋原內容；把每段完整版同步到學生頁，解決此前學生頁短稿和content.sections詳稿不一致。",
+    "維持目標—可行時段—錯因診斷—不同材料回測—有根據地修正的教學路徑；保留2/4與4/6材料條件不同、不能過度推論的證據限制。",
+    "以社團公告閱讀作不同任務遷移：只搬用監控循環，重設期限／地點／資格資訊目標，不沿用聽力成績標準。",
+    "保留ReadingStrategyLab六階自編互動；保留十道原創題目。每題均指向三所公校考卷的指定頁／題 pattern-only 來源，答案、繁中解析、單元解題策略與五個詳細步驟各自完整。"
+  ],
+  "verification": {
+    "targetNode":"PASS: npm run test:english:7-iv-5。",
+    "questionFirstPass":"PASS: 10/10；答案鍵B/A/C/D/B/C/A/C/B/D；三所公校來源／題號定位逐題存在；10種解題策略、50個詳細步驟皆互異；來源在registry與catalog均登錄；題目draft。",
+    "browser":"PASS: Python Playwright真實學生頁；六段正文一致且可見；六階純鍵盤操作、錯誤重試／正確回饋、中途reload續存、完成與重設；axe 0 violations／0 incomplete；320/375/768px無溢位；封鎖2個外部請求；0 page errors。",
+    "fullNpmTest":"PASS: npm test completed, including full workbench traversal 1027/1027; this unit-specific Node contract also passed independently.",
+    "dataValidation":"PASS after adding D-408 report: 14,520 JSON、13,114 IDs、1,032 KG nodes。",
+    "implementationSpecs":"PASS: 1,027 specs、0 errors、18 eligible、1,009 pending；本課qaStatus verified。",
+    "siteIndex":"PASS after rebuild: 1,052 lessons、10,566 questions、40 mapping sets。",
+    "publicExamLedger":"PASS current audit: 10,566/10,566 public-exam source patterns recorded, pending 0; source catalog 492 entries, 281/281 distinct question source URLs covered; 23,141 refs with zero semantic flags; 410/410 grade-compatible. This is provenance only, not content/copyright answer QA.",
+    "authoredFusionInventory":"742/791 = 93.81%；learning-content 583/583、learning-performance 159/208；presence/registration only, not lesson review status。",
+    "subtasks":"none",
+    "commitPush":"not performed; overall objective remains incomplete"
+  }
+}

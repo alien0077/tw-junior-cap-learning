@@ -2,23 +2,23 @@
   "id": "question-science-content-ic-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月10日自然科教室的觀察中，小車在 6 秒內前進 1738 m，研究「Ic：海水的運動」時，平均速率為何？",
+  "prompt": "若海水溫度或鹽度造成密度差異，最可能影響哪項海水運動？",
   "options": [
     {
       "id": "A",
-      "text": "10428 m/s"
+      "text": "密度差造成的下沉與上升，以及大尺度環流"
     },
     {
       "id": "B",
-      "text": "289.667 m/s"
+      "text": "只影響海面顏色，不影響流動"
     },
     {
       "id": "C",
-      "text": "0.00345224 m/s"
+      "text": "使所有波浪停止"
     },
     {
       "id": "D",
-      "text": "1732 m/s"
+      "text": "必然立即形成潮汐"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "平均速率＝路程÷時間＝1738÷6＝289.667 m/s。 本題對應 KG「Ic：海水的運動」。"
+    "value": "A",
+    "explanation": "溫度和鹽度會改變海水密度，密度差可造成下沉、上升和深層海流，影響大尺度循環。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的海水運動、波浪、海流、潮汐及海洋資料判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Ic 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ic"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ic",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "海水運動、波浪、海流、潮汐與海洋資料判讀",
+      "pattern": "取由風、密度、海水大尺度流動、潮汐週期與海岸資料理解海水運動的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由風、密度、海水大尺度流動、潮汐週期與海岸資料理解海水運動的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "沿溫鹽—密度—垂直運動—環流的因果鏈判斷。",
+  "solutionSteps": [
+    "找出溫度或鹽度是可能的自變因。",
+    "溫鹽變化會影響海水密度。",
+    "密度差可驅動下沉上升並參與海流。",
+    "B、C、D 都否認或誤用密度機制。",
+    "因此 A 正確。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

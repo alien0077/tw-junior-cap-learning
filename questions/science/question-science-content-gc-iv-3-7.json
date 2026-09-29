@@ -2,23 +2,23 @@
   "id": "question-science-content-gc-iv-3-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月4日校園實驗室的觀察中，連續觀察「Gc-Ⅳ-3：人體微生物的有益與有害作用」3 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "腸道菌相改變後，某人感到不適。要判斷是否由特定微生物造成，哪項證據較有力？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Gc-Ⅳ-3：人體微生物的有益與有害作用」時只依樣本的顏色（未記錄9天的時間與條件）"
+      "text": "只因症狀出現就認定唯一病因"
     },
     {
       "id": "B",
-      "text": "研究「Gc-Ⅳ-3：人體微生物的有益與有害作用」時只依樣本的名稱推測，不進行觀察"
+      "text": "只比較兩張沒有日期的照片"
     },
     {
       "id": "C",
-      "text": "研究「Gc-Ⅳ-3：人體微生物的有益與有害作用」時只觀察一次外形，便排除所有其他證據"
+      "text": "以網路留言取代檢驗"
     },
     {
       "id": "D",
-      "text": "連續9天研究「Gc-Ⅳ-3：人體微生物的有益與有害作用」並在相同條件下多次觀察到新細胞形成"
+      "text": "重複樣本中該微生物變化與症狀時間一致，且有對照與其他因素控制"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "D",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Gc-Ⅳ-3：人體微生物的有益與有害作用」。"
+    "explanation": "D。較有力的證據需有對照、時間順序、特定微生物量變化與替代原因控制；單純同時出現不代表因果。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題中的人體微生物、病原、抗生素、衛生、菌落、食品保存與安全能力；本題改寫為人體微生物有益與有害作用原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-gc-iv-3"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-gc-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫；只取微生物、人體健康與資料判讀的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "微生物、人體健康與資料判讀",
+      "observedPattern": "公立學校公開自然／理化試題常以腸道菌群、病原傳播、抗生素、洗手、食品保存、菌落資料與公平實驗考查微生物和人體健康的條件式判讀；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考；只取病原、抗生素、衛生與控制變因的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "病原、抗生素、衛生與控制變因",
+      "observedPattern": "公立學校公開自然／理化試題常以腸道菌群、病原傳播、抗生素、洗手、食品保存、菌落資料與公平實驗考查微生物和人體健康的條件式判讀；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題；只取菌落觀察、食品安全與微生物作用的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "菌落觀察、食品安全與微生物作用",
+      "observedPattern": "公立學校公開自然／理化試題常以腸道菌群、病原傳播、抗生素、洗手、食品保存、菌落資料與公平實驗考查微生物和人體健康的條件式判讀；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "檢查時間順序、對照、特定菌量與替代解釋，才評估因果。",
+  "solutionSteps": [
+    "確認微生物種類、位置、數量與宿主條件。",
+    "區分觀察到的菌落／症狀與推論出的作用。",
+    "檢查對照、時間順序、採樣與培養條件。",
+    "判斷預防、治療或實驗方法的適用範圍。",
+    "補上病原鑑定、抗藥性與生物安全限制。"
+  ]
 }

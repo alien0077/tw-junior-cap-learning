@@ -2,41 +2,87 @@
   "id": "question-science-content-mb-iv-2-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月20日學校研究社的觀察中，針對「Mb-Ⅳ-2：科學史重要發現與多元貢獻」提出可檢驗的科學問題，若比較 4 組、每組取樣 14 份資料，哪一項設計最適當？",
+  "prompt": "兩組研究者用不同儀器得到相近結果，這對主張有何意義？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Mb-Ⅳ-2：科學史重要發現與多元貢獻」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "可增加結果的穩健性，但仍需檢查校正、樣本與方法是否真正獨立"
     },
     {
       "id": "B",
-      "text": "研究「Mb-Ⅳ-2：科學史重要發現與多元貢獻」時只測量4組中的一組就直接下結論"
+      "text": "只要數值相近就完全沒有誤差"
     },
     {
       "id": "C",
-      "text": "研究「Mb-Ⅳ-2：科學史重要發現與多元貢獻」時先決定結論，再挑選支持結論的14筆資料"
+      "text": "不同儀器一定代表不同自然定律"
     },
     {
       "id": "D",
-      "text": "研究「Mb-Ⅳ-2：科學史重要發現與多元貢獻」時只改變距離，其餘條件一致，設置4組、每組取樣14份並各重複測量4次"
+      "text": "只取其中較好看的結果"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-mb-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Mb-Ⅳ-2：科學史重要發現與多元貢獻」。"
+    "value": "A",
+    "explanation": "不同方法的一致結果能增加信心，但儀器校正、樣本來源和共同偏差仍要檢查。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的天文、放射性、粒子物理、工具、模型、時序、合作與多元貢獻能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-mb-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-mb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "科學史、觀測、證據與科學發現",
+      "pattern": "取公立學校自然科評量以資料時序、工具、證據、模型與科學社群推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以資料時序、工具、證據、模型與科學社群推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "天文、物理、化學與科學方法資料",
+      "pattern": "取公開會考以圖表、實驗證據、模型解釋和多步推論的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、實驗證據、模型解釋和多步推論的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "科學史重要發現、工具、研究合作與證據",
+      "pattern": "取公立國中試題以觀察—模型—驗證鏈和科學貢獻判讀的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以觀察—模型—驗證鏈和科學貢獻判讀的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先比較結果，再追問方法是否獨立、誤差是否受同一來源影響。",
+  "solutionSteps": [
+    "先把史料分成觀察、工具、模型、驗證和應用。",
+    "依證據依賴關係整理時序，不只依人物名次。",
+    "檢查新資料是否支持或修正原主張。",
+    "辨認研究者、技術人員、資料整理者與社群的不同貢獻。",
+    "說明史料能證明的範圍及被忽略角色的限制。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-iv-2-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年4月1日校園實驗室的觀察中，玻璃射向平面鏡時，光線與鏡面法線的入射角為 45°，研究「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」時，反射角為何？",
+  "prompt": "人吃下植物製造的澱粉後，細胞呼吸作用取得的能量最初來自哪裡？",
   "options": [
     {
       "id": "A",
-      "text": "45°（「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中把入射角誤當折射角）"
+      "text": "土壤的礦物直接變成 ATP"
     },
     {
       "id": "B",
-      "text": "90°（「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中把入射角加倍）"
+      "text": "人體自行創造了陽光"
     },
     {
       "id": "C",
-      "text": "135°（「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中以平角計算）"
+      "text": "植物先把太陽光能儲存在澱粉的化學能中"
     },
     {
       "id": "D",
-      "text": "45°（玻璃射向平面鏡）"
+      "text": "氧氣本身含有全部可用能量"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "反射定律指出反射角等於入射角，因此為 45°。 本題對應 KG「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」。"
+    "value": "C",
+    "explanation": "植物以光合作用把太陽光能儲存在澱粉等有機物中；人體消化後再透過呼吸作用釋放這些化學能，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究光合作用原料與產物、葉綠體、實驗證據、呼吸作用及能量轉換能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的光合作用、呼吸作用與能量證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "光合作用、呼吸作用、能量轉換與實驗資料判讀",
+      "pattern": "取由反應物、產物、光照條件與能量路徑推論生命作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由反應物、產物、光照條件與能量路徑推論生命作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "沿食物與能量的路徑回溯：食物化學能的最初來源是光能。",
+  "solutionSteps": [
+    "確認澱粉是植物光合作用產生的有機物。",
+    "光合作用把太陽光能儲存在澱粉化學能。",
+    "人體消化後取得葡萄糖等原料。",
+    "呼吸作用釋放其中可用能量。",
+    "所以選 C。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

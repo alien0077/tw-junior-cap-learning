@@ -2,41 +2,62 @@
   "id": "question-english-performance-3-iv-1-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「3-Ⅳ-1／辨識書寫體字母」practice, what does “ordinary” mean in question 8?",
+  "prompt": "A handwritten badge reads “JOURNAL” in capitals. The database field accepts lowercase only. Which entry changes case without changing the word?",
   "options": [
     {
       "id": "A",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “ordinary” means usual or common."
+      "text": "Journal"
     },
     {
       "id": "B",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “ordinary” means a place where people wait for the sports center."
+      "text": "journal"
     },
     {
       "id": "C",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “ordinary” means a tool used to measure 17 minutes."
+      "text": "JOURNAL"
     },
     {
       "id": "D",
-      "text": "In the 3-Ⅳ-1／辨識書寫體字母 task, “ordinary” means a person who teaches at the sports center."
+      "text": "jounral"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "“ordinary” means usual or common. This item targets 3-Ⅳ-1／辨識書寫體字母, question 8."
+    "value": "B",
+    "explanation": "J-O-U-R-N-A-L 的小寫形式是 journal。B 保留七個字母的原順序並全部改為小寫；D 調換了中段字母。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dam.kh.edu.tw/upload/68/101_28414/%E4%B8%80%E5%B9%B4%E7%B4%9A%20%20%E5%9C%8B%E6%96%87%E3%80%81%E8%8B%B1%E8%AA%9E%E3%80%81%E6%95%B8%E5%AD%B8%E3%80%81%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "高雄市立大社國中公開試題，Part II, item 2: uppercase-to-lowercase conversion；只參照題型，不重製原題字詞／圖表。",
+    "authoringNote": "依官方英語課綱與 Knowledge Graph，參照公立學校公開試題之字母辨識、大小寫轉換與排序能力獨立改寫；未複製原題題幹、選項、圖表或答案。題目維持draft，尚待版本研究與完整內容發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-1"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-3-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.dam.kh.edu.tw/upload/68/101_28414/%E4%B8%80%E5%B9%B4%E7%B4%9A%20%20%E5%9C%8B%E6%96%87%E3%80%81%E8%8B%B1%E8%AA%9E%E3%80%81%E6%95%B8%E5%AD%B8%E3%80%81%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立大社國中七年級第一次評量英語科試卷",
+      "year": "undated",
+      "subject": "english",
+      "locator": "Part II, item 2: uppercase-to-lowercase conversion",
+      "observedPattern": "只參照第2題／對應子題的字母辨識、大小寫轉換或字典序任務形式；只參考第一部分第1、2題字母順序填空及第二部分第2題大小寫改寫的任務形式；未複製題目字詞或表格。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "轉換整個連寫字詞時，先將字母依序拆開，再檢查小寫結果；相鄰的 r、n、a 不可因連筆而錯置。",
+  "solutionSteps": [
+    "資料庫欄位要求全小寫，故七個大寫字母都必須轉換，不能只改首字母。",
+    "按順序讀出 J-O-U-R-N-A-L，留意中後段是 R-N-A-L 而非相近的換序。",
+    "轉成 j-o-u-r-n-a-l 後，單字仍保持原來的字母次序。",
+    "B 符合全小寫和原拼字；A 仍有大寫，C 完全未轉換，D 將中段字母換位。",
+    "選 B；輸入時可以逐格核對 R-N-A-L，這比只憑整字輪廓辨認更可靠。"
+  ]
 }

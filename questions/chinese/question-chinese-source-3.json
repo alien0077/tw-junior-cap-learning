@@ -2,23 +2,23 @@
   "id": "question-chinese-source-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "哪一句最明顯是推論而不是直接觀察？",
+  "prompt": "觀察紀錄寫「下午三點測得教室溫度 29°C」；哪句屬推論而非直接觀察？",
   "options": [
     {
       "id": "A",
-      "text": "溫度計顯示 28°C"
+      "text": "下午三點溫度計顯示 29°C"
     },
     {
       "id": "B",
-      "text": "下午三點開始下雨"
+      "text": "測量地點在教室窗邊"
     },
     {
       "id": "C",
-      "text": "這場雨一定會讓所有作物增產"
+      "text": "教室太熱，所以所有人都無法專心"
     },
     {
       "id": "D",
-      "text": "觀測站位於校園北側"
+      "text": "溫度計讀值為 29°C"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "『一定會』是由觀察延伸出的推論，仍需額外證據。"
+    "explanation": "所有人都無法專心是由溫度推導出的廣泛結論，紀錄沒有直接提供每個人的專注狀態。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-source-3.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究來源追溯、資料衝突、事實／推論、樣本限制與媒體查核。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫資訊來源可靠性題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-source-reliability"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-source-reliability",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資訊來源、證據與查核",
+      "observedPattern": "公立學校國文評量要求查找原始來源、比較衝突資料、區分觀察與推論、檢查樣本限制、保留不確定性並避免錯誤轉傳；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀、來源衝突與限制",
+      "observedPattern": "公立學校國文評量要求查找原始來源、比較衝突資料、區分觀察與推論、檢查樣本限制、保留不確定性並避免錯誤轉傳；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把句子分成儀器讀值與由讀值推導的效果，檢查推論是否多加了未測量的變項。",
+  "solutionSteps": [
+    "讀題定位：圈出「觀察與推論」與來源、日期、樣本、測量、限定語或轉傳要求。",
+    "分層查核：區分直接資料、推論與結論強度，再依「所有人都無法專心是由溫度推導出的廣泛結論，紀錄沒有直接提供每個人的專注狀態。」評估證據範圍。",
+    "核對正解：選項 C 能提出可重做的查核步驟，且沒有把有限資料誇大成確定事實。",
+    "排除誘答：檢查是否只看轉發量、排版、人氣或直覺，或把無法追溯的引用當成可靠來源。",
+    "回讀驗證：重新確認來源、時間、方法與樣本是否足以支持句子的主張與語氣。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

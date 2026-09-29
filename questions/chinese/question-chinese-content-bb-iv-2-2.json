@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bb-iv-2-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "作者寫家鄉方言逐漸少人使用，卻安排孩子學習並記錄，主要表達什麼？",
+  "prompt": "文本只寫某人在紀念活動中沉默很久，最後把花放在入口，沒有交代其家庭、政黨或歷史立場。哪項判斷最穩妥？",
   "options": [
     {
       "id": "A",
-      "text": "珍惜文化傳承"
+      "text": "可確定他支持主辦單位的全部主張"
     },
     {
       "id": "B",
-      "text": "否定所有新事物"
+      "text": "可觀察到他以沉默與獻花參與，但不能據此確定完整政治立場"
     },
     {
       "id": "C",
-      "text": "只關心語音規則"
+      "text": "可確定他與所有參加者有相同感受"
     },
     {
       "id": "D",
-      "text": "拒絕與家人互動"
+      "text": "可確定他是事件親歷者"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "記錄並學習方言，顯示對地方文化傳承的珍惜。"
+    "value": "B",
+    "explanation": "沉默與獻花是文本直接呈現的行為，可能表示慎重或紀念，但不足以證明其完整立場、身分或與他人感受相同。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "社會群體、家國與民族情感；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究共同記憶、群體觀點、資料代表性與包容表述。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫社會群體家國民族情感題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "群體經驗、觀點與文本推論",
+      "observedPattern": "公立學校國文評量要求從共同經驗、不同世代、史料取樣、群體語句與文本證據判讀認同及情感；本題使用全新社區、校史與地方情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "家鄉、歷史記憶與多元觀點",
+      "observedPattern": "公立學校國文評量要求從共同經驗、不同世代、史料取樣、群體語句與文本證據判讀認同及情感；本題使用全新社區、校史與地方情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將可見行動和背景推論分開，對未提供的身分、立場採取保留語氣。",
+  "solutionSteps": [
+    "列出文本明寫的沉默與放花兩項行為。",
+    "檢查題幹是否提供家庭、政黨或親歷證據。",
+    "B 只保留可觀察的參與方式與推論界線。",
+    "A、C、D 都把單一行動擴成完整身分或立場。",
+    "若要提高確定性，指出還需要哪一類訪談或史料。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

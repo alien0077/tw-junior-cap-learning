@@ -1,0 +1,44 @@
+{
+  "reportId": "a7-2-kanghsuan-aligned-fusion-evidence-d341",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-2",
+  "classification": "substantive-original-fusion-decision-strengthened; publisher-body-authentication-open",
+  "newSource": {
+    "title": "新竹市光復中學 107 學年度七年級數學課程計畫",
+    "url": "https://www.kfsh.hc.edu.tw/uploads/article/1707/20180829160826.pdf",
+    "locator": "PDF p.139; weeks 17-19",
+    "sourceType": "public school curriculum plan; the document identifies Kanghsuan book 1",
+    "observed": [
+      "Week 18 / 3-2 includes translating a contextual quantity relation into a linear equation and understanding what a solution means; the listed methods include substitution or enumeration.",
+      "The following week / 3-3 lists equality axioms, transposition, and verification.",
+      "The plan lists oral questioning, peer discussion, presentation, homework and written assessment."
+    ],
+    "limit": "This is a school-authored curriculum plan, not Kanghsuan textbook prose, examples, or publisher-authenticated pedagogy. It corroborates one implementation only."
+  },
+  "fusionDecisionChangedOrStrengthened": [
+    "A-7-2 explicitly treats substitution/enumeration as a way to understand or verify candidate solutions, not as a generally efficient method for discovering an unknown solution.",
+    "The lesson retains a worked reject/accept pair by substituting candidates into the unchanged original equation and comparing both sides.",
+    "Equality-preserving transformations and systematic solving remain in A-7-3; no balance-scale interaction is claimed for A-7-2.",
+    "This specific public-school evidence strengthens the source-to-scope rationale. It does not close the Kanghsuan publisher-text evidence slot or authorize upgrading reviewStatus."
+  ],
+  "visibleDestination": {
+    "lesson": "Existing six unit-specific learner-visible sections and four-step concept-explorer remain; no wholesale rewrite was repeated.",
+    "regression": "Added assertions for the new source record, its publisher-authentication limit and its inclusion in simulation.sourceRefs."
+  },
+  "verification": {
+    "webEvidence": "Read the public search-indexed PDF page content at PDF p.139 and checked its publisher/edition wording, weekly objectives and assessment columns.",
+    "targetRegression": "PASS: npm run test:math:a7-2",
+    "fullTestSuite": "PASS: npm test; full workbench bundle traversal 1,027/1,027 lessons",
+    "dataValidation": "PASS: python3 scripts/validate_data.py; 14,464 JSON files, 13,112 IDs, 1,032 KG nodes; all lesson/question records remain draft",
+    "diffCheck": "PASS: git diff --check; lesson/report/project-state JSON parse successfully"
+  },
+  "status": {
+    "lesson": "draft",
+    "kanghsuanPublisherBody": "open; only official concept index plus multiple school implementation plans found, not publisher chapter prose",
+    "publisherAuthenticityAndRights": "open",
+    "AIContentReview": "open",
+    "examSourceLedger": "not rerun; preserve existing completed 10,566/10,566 state",
+    "commitPush": "not performed"
+  },
+  "noRepeatWork": "Did not regenerate the public-exam ledger, rewrite the six-section lesson, rerun A-7-1/A-7-8, reinstall browser dependencies, delegate subtasks, or claim complete three-publisher chapter review."
+}

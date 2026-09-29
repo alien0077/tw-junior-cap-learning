@@ -2,23 +2,23 @@
   "id": "question-chinese-content-ac-iv-3-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "若要使「天氣寒冷，大家仍到戶外運動」的語意更清楚，應加入哪個關聯詞？",
+  "prompt": "『只要完成登記，就能參加活動』；若活動另要求家長同意，較完整的寫法是？",
   "options": [
     {
       "id": "A",
-      "text": "雖然天氣寒冷，但是大家仍運動"
+      "text": "完成登記，所以一定能參加。"
     },
     {
       "id": "B",
-      "text": "只抄錄表面資訊"
+      "text": "只要完成登記，除非家長同意也不影響。"
     },
     {
       "id": "C",
-      "text": "只依直覺猜測"
+      "text": "完成登記或家長同意其中一項即可。"
     },
     {
       "id": "D",
-      "text": "不核對任何證據"
+      "text": "完成登記且取得家長同意，才符合參加條件。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "前後句形成讓步關係，可用「雖然……但是……」使語意完整。"
+    "value": "D",
+    "explanation": "原句漏掉必要條件；若登記與家長同意都必須具備，應用且與才清楚表達條件關係。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "語意連貫與關聯詞；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究證據、前提、結論、條件、因果與建議的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫可檢查文句推論題；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ac-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ac-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀理解與文句推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "資料判讀與推論",
+      "observedPattern": "公立學校國文評量要求區分資料、推論、條件、因果與建議，並檢查結論是否超過證據；本題使用全新情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把必要條件逐項列出，再判斷是『且』、『或』還是充分條件，避免把單一條件誇大。",
+  "solutionSteps": [
+    "先把完成登記與家長同意分成兩個條件。",
+    "題目說另有要求，表示兩項都要滿足，而非任選其一。",
+    "D 明確表達兩條件同時成立才可參加。",
+    "A、B、C 不是完整呈現必要條件的句法。",
+    "用清單逐項打勾，確認只有兩項都具備時結論才成立。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

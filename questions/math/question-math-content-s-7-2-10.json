@@ -2,23 +2,23 @@
   "id": "question-math-content-s-7-2-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "三視圖中若某一視圖的寬度與另一視圖的深度不一致，應先做什麼？",
+  "prompt": "某物體的前視圖寬度是 4，但上視圖與前視圖共同對齊的寬度畫成 3。下列判斷何者正確？",
   "options": [
     {
       "id": "A",
-      "text": "檢查投影方向與對應尺寸"
+      "text": "兩視圖的共同尺寸不一致，資料或對齊方式有問題"
     },
     {
       "id": "B",
-      "text": "直接增加物體高度"
+      "text": "一定代表物體高度是 3"
     },
     {
       "id": "C",
-      "text": "把所有線改成曲線"
+      "text": "只要把上視圖旋轉即可，尺寸不必一致"
     },
     {
       "id": "D",
-      "text": "忽略差異"
+      "text": "前視圖與上視圖本來就不需要共同尺寸"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "不同視圖需依投影方向核對共同尺寸，不能任意修改物體。"
+    "explanation": "前視圖與上視圖共享同一個左右方向尺寸，應能對齊；4 與 3 不一致表示資料或對齊有問題，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三視圖 題型與官方課綱 KG kg-math-content-s-7-2",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三視圖與空間表徵能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的三視圖能力方向獨立改寫；題幹、尺寸、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-s-7-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-7-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三視圖、前視圖／上視圖／右視圖、共同尺寸對齊與由投影重建立體",
+      "observedPattern": "公開學校數學試題常以固定觀察方向、視圖尺寸對齊、立體與投影互換及資訊是否足夠考查空間表徵；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三視圖、前視圖／上視圖／右視圖、共同尺寸對齊與由投影重建立體",
+      "observedPattern": "公開學校數學試題常以固定觀察方向、視圖尺寸對齊、立體與投影互換及資訊是否足夠考查空間表徵；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用相鄰視圖的共同尺寸做一致性檢查，先找矛盾再談立體形狀。",
+  "solutionSteps": [
+    "確認前視圖與上視圖共享左右方向。",
+    "前視圖給共同寬度 4。",
+    "上視圖卻給共同寬度 3。",
+    "共同尺寸不一致，不能直接重建立體。",
+    "選 A。"
+  ]
 }

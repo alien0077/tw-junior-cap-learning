@@ -1,0 +1,148 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-10
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-10
+  title: 3-Ⅳ-10：辨識故事要素
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-10：辨識故事要素
+    curriculumIntent: 3-Ⅳ-10：辨識故事要素
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 說明場景、動機、敘事觀點、伏筆、高潮與象徵各自如何服務故事
+  - 區分敘事者直接觀察、角色明示資訊與敘事者推測，不把推測當成全知事實
+  - 從人物動機、關鍵選擇及結果交叉提出可遷移且不超出文本的主題
+  prerequisites:
+  - 能讀懂以過去式敘述的短篇故事片段
+  - 能區分文本明說的行動和自己對人物心情的推論
+  coreConcepts:
+  - Setting、character motive、narrator viewpoint、foreshadowing、climax、symbol 是有敘事功能的線索，不是孤立術語
+  - 象徵解讀需由物件前後反覆出現的用途／關係支持
+  - 主題須能同時解釋人物選擇與故事結果，且保留敘事者知識界線
+  misconceptions:
+  - 把故事提到的物件直接說成象徵，不檢查它是否反覆或推動人物關係
+  - 把第一人稱敘事者的猜測當成角色已證實的內心
+  - 把伏筆誤當成已發生的結果，或把高潮和危機解除後的收尾混為一談
+  contentFlow:
+  - 'hook: 先預測故事標題中的黃色線結可能如何連到主題'
+  - 'activate-prerequisite: 分清原文觀察與對人物心情的推論'
+  - 'visualize: 把編輯稿切成六張有序證據卡，逐張呈現原文與敘事功能問題'
+  - 'predict: 保存學生預測後才逐張開放故事卡'
+  - 'manipulate: 編輯者為各片段選擇場景、動機、觀點、伏筆、高潮或象徵功能'
+  - 'observe: 即時顯示目前卡片位置與已完成標註，不以顏色單獨表示正誤'
+  - 'explain: 每張卡以原文線索回饋為何該片段服務某項敘事功能'
+  - 'formalize: 比較六個術語回答的閱讀問題，檢查證據界線'
+  - 'transfer: 從同一原創故事挑選人物動機、高潮選擇及結果證據，完成主題編輯註記'
+  - 'exit-ticket: 用至少28字說明主題如何同時解釋動機、選擇與結果'
+  visualizations:
+  - 逐張原文卡、問題、答案回饋及卡片進度，形成故事編輯註記工作面板
+  - 標註選擇以文字選項、原生radio、aria-live回饋及文字進度同步提供
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-10-I01
+    component: StoryElementsStudio
+    purpose: 逐張編輯Gull Point原創故事，辨認要素功能並以跨要素證據寫成主題註記
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        draft: unopened
+        activeCard: 0
+        editorialNote: empty
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 先提交八字以上預測，之後逐張讀原創故事證據卡
+    - 針對每段選一個最符合其敘事工作的標籤，答錯後依提示回文修正
+    - 在主題註記中標記人物動機、高潮選擇與結果，再寫出三者支持關係
+    visualRules:
+    - 每次選擇保留當前卡片與回饋；只有正確標註才能前進至下一片段
+    - 未提交預測不得展開故事卡及其分類答案
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-10-I01
+      trigger: 把 narrator guessed 的害怕感受當成 Amira 明說的事實
+      prompt: 請把敘事者親眼看到的動作和他自己承認在猜的內容分開標記。
+      expectedEvidence: 指出 saw 對應停手動作、guessed 對應敘事者推論，並引用 never told me 作知識界線
+    feedback:
+      correct: 說明該句如何履行對應的敘事工作，然後要求編輯者用三項不同功能的證據形成主題註記。
+      incorrect: 指出需回看本片段的時間位置、說話者用詞或物件前後用途；給單一線索提示，不直接代選標籤。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 StoryElementsStudio 只採用預測先行與逐卡檢核的活動形式；Gull Point故事、六張摘錄、標註題與主題證據皆由本課獨立撰寫。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課 StoryElementsStudio 只採用預測先行與逐卡檢核的活動形式；Gull Point故事、六張摘錄、標註題與主題證據皆由本課獨立撰寫。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課 StoryElementsStudio 以原生radio、具體文字標籤與即時狀態呈現故事判讀，六張卡的內容和編輯回饋均為本課原創。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課 StoryElementsStudio 以標題、故事稿、分階段卡片與編輯註記呈現單一主題流程；文字結構、故事和視覺樣式由本課設計。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 以Gull Point故事中Amira的警示動機、手搖信號選擇與船隻轉向結果作主題推理；不可只把故事名詞換成別的物件
+    requiredResponse: 選出可遷移主題，標記動機／選擇／結果三項證據，並以至少28字說明其支持關係
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 敘事者直接看到什麼、又猜測了什麼？哪個故事事件最能支持你的主題註記？
+    successCriteria:
+    - 區分動作觀察與人物心情推論
+    - 指出動機、選擇或結果的一項原句證據
+    - 不把伏筆寫成已發生的事
+  expressionExtension:
+    applicable: true
+    task: 用80～120字英文編輯註記，說明人物動機、危機選擇與結果如何支持主題，並限定敘事者沒有證實的內心資訊
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初始狀態隱藏六張故事卡；八字以上預測提交後才揭露，重載後保留預測及卡片位置。
+  - 六張卡依序涵蓋場景、動機、敘事視角、伏筆、高潮和象徵；錯誤答案提供本卡專屬文字提示，不能跳過未答對卡片。
+  - 視角卡需辨認 saw 是可觀察行為、guessed 是敘事者推論；不能將角色未說出口的感受標成事實。
+  - 最後主題註記必須選擇三項指定證據並提交至少28字理由；缺證據、太短或主題選項錯誤時分別回饋，不得假記完成。
+  - 在320px、375px與768px呈現卡片、原生radio、證據控制和回饋時不裁切；觸控目標至少44px，減少動態設定下不依賴動畫。
+  - 重新勾選主題證據會清除已完成標記、答案及理由；重設會清除本單元 instance 的保存進度。
+  - 故事、提問與回饋皆由 lesson JSON 提供；網路或外部資源失效時仍可用內嵌文本完成互動，作為離線 fallback。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-10
+    role: official-curriculum-source-of-truth

@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-iv-2-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年12月8日河川觀測站的觀察中，玻璃射向鏡面時，光線與鏡面法線的入射角為 45°，研究「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」時，反射角為何？",
+  "prompt": "光合作用把二氧化碳和水合成有機物時，下列敘述何者正確？",
   "options": [
     {
       "id": "A",
-      "text": "45°（「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中把入射角誤當折射角）"
+      "text": "只需要氧氣，不需要光能"
     },
     {
       "id": "B",
-      "text": "90°（「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中把入射角加倍）"
+      "text": "有機物被分解成二氧化碳並釋放光能"
     },
     {
       "id": "C",
-      "text": "45°（玻璃射向鏡面）"
+      "text": "利用光能將無機原料組合成有機物，並常釋放氧氣"
     },
     {
       "id": "D",
-      "text": "135°（「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中以平角計算）"
+      "text": "水與二氧化碳會直接變成熱而不形成物質"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,42 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "反射定律指出反射角等於入射角，因此為 45°。 本題對應 KG「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」。"
+    "explanation": "光合作用利用光能，把二氧化碳和水等無機原料合成有機物，並常以氧氣作為產物之一，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究光合作用原料與產物、葉綠體、實驗證據、呼吸作用及能量轉換能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的光合作用、呼吸作用與能量證據能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "光合作用、呼吸作用、能量轉換與實驗資料判讀",
+      "pattern": "取由反應物、產物、光照條件與能量路徑推論生命作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由反應物、產物、光照條件與能量路徑推論生命作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "按『能量輸入—原料—產物』三欄整理，不把光合作用與呼吸作用方向顛倒。",
+  "solutionSteps": [
+    "列出反應的能量來源是光能。",
+    "確認二氧化碳與水是原料。",
+    "有機物是儲存化學能的產物。",
+    "氧氣常作為副產物釋出。",
+    "因此選 C。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -1,0 +1,77 @@
+{
+  "id": "question-math-root-a-13",
+  "subject": "math",
+  "type": "single-choice",
+  "prompt": "班級活動有 200 元預算，材料每組 23 元，另收一次 8 元運費。最多能買幾組材料？",
+  "options": [
+    {
+      "id": "A",
+      "text": "7 組"
+    },
+    {
+      "id": "B",
+      "text": "8 組"
+    },
+    {
+      "id": "C",
+      "text": "9 組"
+    },
+    {
+      "id": "D",
+      "text": "10 組"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-math-content-a",
+    "kg-math-learning-content"
+  ],
+  "difficulty": "medium",
+  "answer": {
+    "value": "B",
+    "explanation": "令 n 為購買組數，總費用是 23n+8，需滿足 23n+8≤200。解得 n≤192/23≈8.35；組數必須是整數，因此最多買 8 組。檢查：8 組共 23×8+8=192 元，9 組則 215 元，已超出預算。"
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+    "sourceLocator": "國民中學教育階段學習內容；主題 A：代數",
+    "authoringNote": "依官方課綱、KG 與碧華／中崙國中公開數學原卷的線性模型及預算上限命題模式重新創作；變更情境、單價、預算、費用及答案，不複製原題、選項或答案，維持 draft 待 AI 內容 QA。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-math-content-root-a",
+  "solutionStrategy": "把預算條件寫成「每組成本×組數＋一次性費用≤總預算」，求出組數上限後向下取整，再用相鄰的整數解檢查最大性。",
+  "solutionSteps": [
+    "設 n 是材料組數。每組 23 元，買 n 組花 23n 元；運費 8 元只加一次，所以總支出表示為 23n+8。",
+    "預算不能超過 200 元，建立不等式 23n+8≤200。這裡等號可以成立，因為剛好用完預算仍可購買。",
+    "兩邊同減 8，得 23n≤192；再除以正數 23，不等號方向不變，得到 n≤192/23≈8.35。",
+    "組數只能是整數，故 n 最大可取 8；不能把 8.35 組當成可購買數量，也不能四捨五入成 9。",
+    "驗證相鄰整數：8 組花 23×8+8=192 元，尚在預算內；9 組需 215 元，超出 200 元。因此最多 8 組，答案 B。"
+  ],
+  "examPatternRefs": [
+    {
+      "url": "https://www.bhjh.ntpc.edu.tw/p/406-1000-10627%2Cr111.php?Lang=zh-tw",
+      "title": "新北市立碧華國民中學114學年度第二學期第三次定期評量七年級數學科試題卷",
+      "year": "114-2",
+      "locator": "校方附件「114-2-3-七年級數學試題卷.pdf」第1頁第4題",
+      "pattern": "原卷以固定存款加每週等額累積建模並比較目標總額；本題改寫為數量乘單價再加一次性運費的線性表示。",
+      "subject": "math",
+      "observedPattern": "原卷以固定存款加每週等額累積建模並比較目標總額；本題改寫為數量乘單價再加一次性運費的線性表示。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.zlm.kh.edu.tw/upload/243/104_21363/106-2-3%E6%95%B8%E5%AD%B8%E7%A7%91%E4%B8%83%E5%B9%B4%E7%B4%9A%28%E7%AD%94%E6%A1%88%29.pdf",
+      "title": "高雄市立中崙國民中學106學年度第2學期第3次評量七年級數學科試題卷（含答案）",
+      "year": "106-2",
+      "subject": "math",
+      "locator": "第1頁第9題；只採預算上限下由單價推算可購買整數數量的模式",
+      "observedPattern": "以總預算及單位價格求最多可購買數量；本題另設一次性運費，並用新情境與數值自編。",
+      "pattern": "以總預算及單位價格求最多可購買數量；本題另設一次性運費，並用新情境與數值自編。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ]
+}

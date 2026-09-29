@@ -2,41 +2,84 @@
   "id": "question-math-performance-n-iv-9-5",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "某物的真實長度為 10.0 公分，量得 9.8 公分，這次測量的絕對誤差是多少？",
+  "prompt": "計算機顯示 6.247，若答案精確到小數第一位，應寫成何者？",
   "options": [
     {
       "id": "A",
-      "text": "0.02 公分"
+      "text": "6.1"
     },
     {
       "id": "B",
-      "text": "0.2 公分"
+      "text": "6.2"
     },
     {
       "id": "C",
-      "text": "1.02 公分"
+      "text": "6.3"
     },
     {
       "id": "D",
-      "text": "19.8 公分"
+      "text": "6.25"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-n-iv-9"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "絕對誤差是測量值與真實值差的絕對值：|9.8－10.0|＝0.2 公分。"
+    "explanation": "保留十分位要看百分位 4，小於 5，所以 6.247 四捨五入為 6.2，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考計算機操作、估算、四捨五入、近似值與誤差判讀題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供計算機與誤差能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數與量方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-9"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-9",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "計算機按鍵與結果判讀、四捨五入、截尾、絕對誤差、有效位數與量測誤差；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求讀取計算結果、依題目精度處理近似值，或由顯示位數判斷誤差界線；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "計算機按鍵與結果判讀、四捨五入、截尾、絕對誤差、有效位數與量測誤差；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求讀取計算結果、依題目精度處理近似值，或由顯示位數判斷誤差界線；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "計算機按鍵與結果判讀、四捨五入、截尾、絕對誤差、有效位數與量測誤差；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求讀取計算結果、依題目精度處理近似值，或由顯示位數判斷誤差界線；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "精度要求決定保留位置，下一位小於 5 就不進位。",
+  "solutionSteps": [
+    "目標是保留小數第一位。",
+    "保留的十分位是 2。",
+    "觀察下一位百分位為 4。",
+    "4<5，不進位。",
+    "得到 6.2，選 B。"
+  ]
 }

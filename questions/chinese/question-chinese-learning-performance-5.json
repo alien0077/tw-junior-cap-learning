@@ -2,41 +2,76 @@
   "id": "question-chinese-learning-performance-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "將課堂概念應用到新情境，最能檢驗什麼？",
+  "prompt": "要支持「圖書館延長開放值得試行」，哪組資料最能形成可檢查證據鏈？",
   "options": [
     {
       "id": "A",
-      "text": "知識遷移"
+      "text": "延長前後借閱量、晚間使用者調查、成本與安全紀錄"
     },
     {
       "id": "B",
-      "text": "字體大小"
+      "text": "一位同學說很方便"
     },
     {
       "id": "C",
-      "text": "座位安排"
+      "text": "社群按讚數最多的留言"
     },
     {
       "id": "D",
-      "text": "頁數多寡"
+      "text": "只列出圖書館很安靜"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-learning-performance"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "新情境應用能檢驗是否能遷移概念。"
+    "value": "B",
+    "explanation": "前後數據、使用者調查、成本與安全紀錄分別檢查需求、效益與限制，能支持試行後評估。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "學習表現、自我監控與探究；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "三所公立學校公開國文資料；只研究閱讀任務、證據、推論、方法說明、受眾與結論限制能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫學習表現題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-learning-performance"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-learning-performance",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀任務、證據與方法",
+      "observedPattern": "公立學校國文評量要求把閱讀任務拆成關鍵資訊、直接事實、推論、主旨、語氣、證據鏈、條件、受眾與結論限制；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "文本理解、推論與限制",
+      "observedPattern": "公立學校國文評量要求把閱讀任務拆成關鍵資訊、直接事實、推論、主旨、語氣、證據鏈、條件、受眾與結論限制；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把主張拆成需求、結果、成本與風險，為每一部分尋找直接且可追溯資料。",
+  "solutionSteps": [
+    "讀題定位：圈出「證據鏈」與任務、直接線索、推論詞、條件、樣本或受眾線索。",
+    "拆解方法：把答案分成可觀察證據、推論範圍與可重做的步驟；本題核心是「前後數據、使用者調查、成本與安全紀錄分別檢查需求、效益與限制，能支持試行後評估。」",
+    "核對正解：選項 B 與資料能支持的結論範圍一致，且提供可執行的學習方法。",
+    "排除誘答：檢查是否把單一樣本推廣、忽略例外、刪掉必要資訊，或用空泛口號代替證據。",
+    "回讀驗證：假設換一篇文本或另一位學習者，確認方法仍能被重做並在關鍵處回到證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

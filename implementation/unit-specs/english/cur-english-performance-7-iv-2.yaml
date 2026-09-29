@@ -1,0 +1,157 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-7-iv-2
+  knowledgeGraphIds:
+  - kg-english-performance-7-iv-2
+  title: 7-Ⅳ-2：利用背景知識
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 7-Ⅳ-2：利用背景知識
+    curriculumIntent: 7-Ⅳ-2：利用背景知識
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依官方課綱與KG融合可取得的南一七年級校方單元定位、康軒九年級校本背景知識教案流程、翰林七年級課綱定位；逐筆標示其二手／近鄰證據界線，不宣稱已讀三家出版社課本原文
+    currentEvidenceStatus: curriculum-and-kg-grounded; school-plan-and-adjacent-unit-evidence-recorded; original-six-section-manuscript-and-interaction-authored
+  learningGoals:
+  - 將個人既有經驗標記為暫時預測，說出它與當前英文文本的連結
+  - 依活動規則、原因句與後續線索判斷背景知識是否相關，並修正不符預測
+  - 區分文本明說、可由文本支持的推論，以及仍未知的資訊；避免以文化刻板印象補白
+  prerequisites:
+  - 能閱讀短英文句子並辨識人物行動、原因或規則的基本表達
+  - 能理解「我原先以為……，後來看到……」的想法修正
+  coreConcepts:
+  - 背景知識提供理解起點，必須與文本中的人物、物件、目的或線索相關
+  - 後文證據可以支持、縮小或推翻原先預測；預測不是文本事實
+  - Text says、I infer、I still don't know 是不同證據層級，不能混寫
+  misconceptions:
+  - 把熟悉活動的一般規則當成陌生社群文本已明說的規則
+  - 只挑支持第一個猜想的句子，忽略後文修正或相反線索
+  - 由常見品種、家庭背景或文化習俗推定文章未提供的個人事實
+  contentFlow:
+  - 'hook: 只看 seed exchange，先說自己預期的活動規則，將生活經驗標為暫時假設'
+  - 'activate-prerequisite: 辨認 Mina 的期待、標示規則及 because 原因句各自提供的資訊'
+  - 'sort: 分開 Text says、I infer、I still don’t know 三類陳述'
+  - 'predict: 依種子交換經驗提出可能的一換一預測，不先顯示後文答案'
+  - 'check: 讀取 Take one local seed packet／Leave a note 標示，檢驗活動並非預測中的一換一'
+  - 'manipulate: 在文字互動中切換 seed exchange 標示與原因句線索，提交支持或推翻預測的證據。'
+  - 'observe: 對照切換前後的種子標示，觀察規則如何限制原先的一換一假設。'
+  - 'revise: 依 sunny fence 與 because 後的明示理由，更新 Mina 為何再選豆子的理解'
+  - 'explain: 說明背景知識如何協助理解，以及文本哪些句子支持或限制推論'
+  - 'transfer: 在陌生社區 food shelf 公告中找明示規則，將熟悉的登記習慣留作待確認問題'
+  - 'exit-ticket: 回答祖父種植品種是否可知，並交代原文證據與未知界線'
+  visualizations:
+  - 以三欄文字紀錄將原文直述、文本支持的推論、仍未知並列；每項須可回查到句子或缺漏處
+  - 互動逐階呈現當前短文、問題、選項和回讀提示；不用顏色或動畫承擔唯一訊息
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-7-IV-2-I01
+    component: ReadingStrategyLab
+    purpose: 以原創種子交換故事與陌生社區公告，讓學生在「背景預測—文本核對—修正—標記未知」中練習7-Ⅳ-2
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        primary: 1
+        secondary: 1
+    studentActions:
+    - 先判斷 Mina 對交換方式的想法屬預測或已發生事實
+    - 從活動標示挑出與任務直接相關的背景知識
+    - 讀到原因句後修正理解，不把普遍經驗擴大成絕對規則
+    - 將未出現的豆種與祖父園圃資訊保留為未知
+    - 在新社區公告中引用明示規則，將登記與資格留待詢問
+    visualRules:
+    - 一次只呈現一段原創文本與對應問題，答對後才進下一層
+    - 錯答保留原問題並提供指向詞句的回讀提示，不直接代答
+    - 每段文本使用文字呈現，不依賴外部圖片、資料服務或顏色
+    - 窄螢幕不得裁切英文文本、選項、提示與狀態回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-7-IV-2-I01
+      trigger: 把自己熟悉的一換一交換／事先登記規則當成文本明說，或替 Mina 的家庭補出未提及的事實
+      prompt: 這句是文章寫出的，還是你帶進閱讀的經驗？請指出支持它的原文字句。
+      expectedEvidence: 引用活動標示或原因句；若找不到品種、登記、家庭背景的原文，明確標為未知
+    feedback:
+      correct: 肯定與文本相連的背景知識，要求指出它支持的結論範圍及一項仍未知資訊。
+      incorrect: 提示重新閱讀 expected to、sign 或 because 所在句，讓學生先區分期待、規則和原因；允許重試，不直接代答。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 ReadingStrategyLab 僅以逐步揭露、作答重試與文字提示作互動設計參照；種子交換故事、公告、選項、答案及解析均為本課原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課互動只借用逐題回饋與進度控制模式，不沿用任何參照教材內容；所有閱讀文本與評量資料均獨立撰寫。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "互動採原生單選、具名題目、文字狀態區與可操作按鈕；實際鍵盤與輔助科技仍須測試後才能標記通過。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "互動區以標題和分區組織題幹、選項及回饋；內容由 lesson 資料驅動且可在無外部資料時閱讀。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「7-Ⅳ-2：利用背景知識」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: Mina 的祖父種的是哪一種豆子？請說明背景知識能否回答，並指出你的證據界線。
+    successCriteria:
+    - 將背景知識說成理解起點而非文章證據
+    - 引用文章實際提供的行動或原因句
+    - 將未出現的豆種資訊保留為未知
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字說明 seed exchange 故事中你的預測如何被標示規則修正，並分別列出一項文本明說與一項仍未知
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入互動時不得先揭露各階答案；錯答須留在原階，提示指出應回讀的詞句，答對才前進。
+  - 在 seed exchange 規則題中，必須能區分 Mina 的 expected to 與 sign 的實際規則，並提示用新線索修正一換一假設。
+  - 學生把家庭種植經驗當成豆種答案時，互動須指出文章沒有品種證據，要求把它列為未知而非以常識代答。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成五階活動時，英文文本、選項、回讀提示與狀態訊息均須可見且不溢位。
+  - 以陌生社區 food shelf 公告完成遷移：指出明示時間／容器規則，並將登記與資格明確保留為待確認資訊。
+  - 不依賴外部服務；無網路時，lesson 內嵌的種子交換短文與公告仍須可完成預測核對、修正和遷移；文字 fallback 不得缺少任一關鍵線索。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 南一、翰林、康軒各自的版本、年級、教材定位與來源限制逐筆記錄；無出版社章節原文時不得冒稱已核讀
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 原創正文、版本來源界線及實際互動相符；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 7-Ⅳ-2
+    role: official-curriculum-source-of-truth
+  - url: https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf
+    locator: 永慶高中國中部114學年度計畫PDF p.22（web PDF index 21）、第八週七上Unit 3；翰林版第1-2冊、標誌／規範及7-Ⅳ-2活動規劃，非出版社課本全文
+    role: public-school-unit-context-not-publisher-authored
+  - url: https://www.tsjh.ntpc.edu.tw/var/file/0/1000/attach/59/pta_9358_6243099_37591.pdf
+    locator: 泰山高中國中部112學年度計畫PDF pp.21–23；南一七年級Lesson 4頁碼定位、圖片預測／聽讀核對／理解檢核，屬校方摘要
+    role: public-school-unit-context-not-publisher-authored
+  - url: https://openclass.kl.edu.tw/plan/file/3504/%E6%95%99%E6%A1%88.pdf
+    locator: 基隆公開教案PDF p.1；康軒九年級第五冊Lesson 6，圖片／標題背景導入、閱讀提問與問題—解決圖；跨年級校本教案旁證
+    role: adjacent-grade-school-plan-not-publisher-authored

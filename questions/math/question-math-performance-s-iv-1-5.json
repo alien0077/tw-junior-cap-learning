@@ -6,37 +6,80 @@
   "options": [
     {
       "id": "A",
-      "text": "PA＝PB"
+      "text": "PA=PB"
     },
     {
       "id": "B",
-      "text": "PA＞PB"
+      "text": "PA⊥PB"
     },
     {
       "id": "C",
-      "text": "PA＜PB"
+      "text": "∠PAB=90°"
     },
     {
       "id": "D",
-      "text": "PA＋PB＝AB"
+      "text": "P 是 AB 的中點"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-s-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "垂直平分線上的點到線段兩端點距離相等，因此 PA＝PB。"
+    "explanation": "垂直平分線上的點到線段兩端點等距，所以 PA=PB，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考幾何形體定義、符號、全等判定與基本性質題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供幾何定義、特殊四邊形、全等、圓與多邊形能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的幾何形體方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行四邊形、矩形、菱形、三角形全等與等腰三角形、垂直平分線、角平分線、圓切線、內角和",
+      "observedPattern": "公開數學評量常要求從幾何定義或符號性質辨識平行四邊形與特殊四邊形，再運用全等、等距、角平分與多邊形內角和完成推理；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "平行四邊形、矩形、菱形、三角形全等與等腰三角形、垂直平分線、角平分線、圓切線、內角和",
+      "observedPattern": "公開數學評量常要求從幾何定義或符號性質辨識平行四邊形與特殊四邊形，再運用全等、等距、角平分與多邊形內角和完成推理；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "平行四邊形、矩形、菱形、三角形全等與等腰三角形、垂直平分線、角平分線、圓切線、內角和",
+      "observedPattern": "公開數學評量常要求從幾何定義或符號性質辨識平行四邊形與特殊四邊形，再運用全等、等距、角平分與多邊形內角和完成推理；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分『線上的任一點』與『垂足或中點』，核心性質是到端點等距。",
+  "solutionSteps": [
+    "確認 P 位於 AB 的垂直平分線上。",
+    "使用垂直平分線等距定理。",
+    "得到 P 到 A、B 的距離相等。",
+    "寫成 PA=PB。",
+    "所以選 A；P 不必是 AB 的中點。"
+  ]
 }

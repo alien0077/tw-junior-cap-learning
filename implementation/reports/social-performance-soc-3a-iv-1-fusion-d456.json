@@ -1,0 +1,41 @@
+{
+  "decision": "D-456",
+  "asOf": "2026-09-29",
+  "lessonId": "lesson-social-performance-soc-3a-iv-1",
+  "reason": "Fresh authored-fusion inventory excluded this lesson: it had four generic learner-facing sections, six templated teaching sections, no versionResearch, and no fusionRecord. Replaced only this missing manuscript; no listed manuscript or question was rewritten.",
+  "research": [
+    {
+      "publisher": "nani",
+      "sourceUrl": "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf",
+      "locator": "PDF pp.0-1; 114 academic-year Yongqing HS grade 7 social studies plan, explicitly identifies Nani volumes 1-2, early-history units, and social inquiry competencies.",
+      "evidenceLimit": "Public-school adopted-version plan, not Nani textbook chapter text."
+    },
+    {
+      "publisher": "kanghsuan",
+      "sourceUrl": "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf",
+      "locator": "PDF pp.0-1; Budai JHS grade 9 civics plan explicitly identifies Kang Hsuan volumes 5-6 and resource scarcity/choice/opportunity-cost lesson plan with discussion, written and activity assessment.",
+      "evidenceLimit": "Public-school adopted-version plan, not Kang Hsuan textbook chapter text; social performance indicator co-occurrence does not prove a publisher-authored Soc3a sequence."
+    },
+    {
+      "publisher": "hanlin",
+      "sourceUrl": "https://w3.qnm.kh.edu.tw/curriculum/5/5-1/%E7%A4%BE%E6%9C%83-%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB-113-2-2%E5%B9%B4%E7%B4%9A.pdf",
+      "locator": "Search-index excerpt only: Youth JHS grade 8 history plan, Hanlin e-book adoption, Soc3a indicator with history units and oral response/reflection assessment.",
+      "evidenceLimit": "PDF not directly readable in this run; recorded as weak course-placement evidence, not full-text chapter evidence."
+    }
+  ],
+  "authoredWork": "Replaced learner-facing body and teaching.body with six matching original sections built around a fictional Qingjian water-allocation inquiry: contextualize time/place/groups; narrow a question; assess source fit; compare alternative explanations; identify falsifying evidence; communicate limits and transfer ethically. All case materials are declared fictional.",
+  "validation": {
+    "authoredFusionInventory": "784/791 (99.12%); learning-content 583/583; learning-performance 201/208; seven remain; long-form marker 614",
+    "sectionBodyParity": "PASS 6/6 exact heading and body matches; each body >100 Chinese characters",
+    "lessonSchemaAudit": "PASS 1,056 checked, zero failures",
+    "validateData": "PASS 14,564 JSON files, 13,114 IDs, 1,032 KG nodes; all 1,052 lessons and 10,566 questions remain draft",
+    "questionExamLedger": "PASS 10,566/10,566 recorded, pending 0; questions unchanged",
+    "diffCheck": "PASS for target lesson"
+  },
+  "notCompleted": [
+    "This inventory records authored manuscripts, not content review or publisher-source sufficiency.",
+    "Lesson remains draft for the user's ChatGPT review.",
+    "Unit-specific interaction/specification and browser automation QA remain for the later goal phase.",
+    "Commit and push have not been performed."
+  ]
+}

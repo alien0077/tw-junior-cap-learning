@@ -2,41 +2,84 @@
   "id": "question-science-content-fa-iv-2-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年9月21日社區環境站的觀察中，比較兩地「Fa-Ⅳ-2：三大類岩石的特徵與成因」資料時，甲地迎風坡年雨量約 63260 mm、乙地背風坡約 43405 mm，最合理的做法是？",
+  "prompt": "岩漿在地下緩慢冷卻，形成的岩石較可能具有哪項特徵？",
   "options": [
     {
       "id": "A",
-      "text": "在「Fa-Ⅳ-2：三大類岩石的特徵與成因」中只看 63260 mm 的單一數值便下結論"
+      "text": "可見且互相鑲嵌的較大晶體"
     },
     {
       "id": "B",
-      "text": "在「Fa-Ⅳ-2：三大類岩石的特徵與成因」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "大量平行層理與化石"
     },
     {
       "id": "C",
-      "text": "在「Fa-Ⅳ-2：三大類岩石的特徵與成因」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "由泥沙逐層壓密膠結"
     },
     {
       "id": "D",
-      "text": "同時比較地形、風向、觀測期間與 63260、43405 mm 資料"
+      "text": "一定有葉理與定向帶狀礦物"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-fa-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Fa-Ⅳ-2：三大類岩石的特徵與成因」。"
+    "value": "A",
+    "explanation": "地下岩漿緩慢冷卻，礦物有較長時間長成晶體，常見較粗大的互相鑲嵌晶體，是深成火成岩的線索。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作三大類岩石、形成條件、岩石循環與地質證據的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "本題取公立學校公開自然／理化試題的地質觀察與成因判讀能力方向，題幹、選項、答案、解析與五步解法均以 Fa-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fa-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-fa-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "三大類岩石、岩石循環與地質資料判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以標本、露頭、層理、晶體、化石與地質循環情境考查三大類岩石的形成過程和證據判讀；本題只取能力方向並重新設計情境、資料與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "岩石特徵、成因與地質時間題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以標本、露頭、層理、晶體、化石與地質循環情境考查三大類岩石的形成過程和證據判讀；本題只取能力方向並重新設計情境、資料與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "火成岩、沉積岩、變質岩與岩石循環題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以標本、露頭、層理、晶體、化石與地質循環情境考查三大類岩石的形成過程和證據判讀；本題只取能力方向並重新設計情境、資料與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把冷卻位置與速度連到晶體生長時間，再判斷紋理。",
+  "solutionSteps": [
+    "辨認岩漿留在地下冷卻。",
+    "地下冷卻速度通常較慢。",
+    "晶體有較長時間成長。",
+    "晶體可較大且彼此鑲嵌。",
+    "因此選可見粗大晶體的特徵。"
+  ]
 }

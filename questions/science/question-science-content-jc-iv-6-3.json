@@ -2,23 +2,23 @@
   "id": "question-science-content-jc-iv-6-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年10月18日河川觀測站的觀察中，針對「Jc-Ⅳ-6：化學電池的放電與充電」提出可檢驗的科學問題，若比較 4 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "電池放電時，一個電極失去電子，另一個電極得到電子。失去電子的電極發生？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "氧化，並把電子送入外電路"
     },
     {
       "id": "B",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時只測量4組中的一組就直接下結論"
+      "text": "還原，並吸收外電路電子"
     },
     {
       "id": "C",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "物理熔化而不反應"
     },
     {
       "id": "D",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時只改變攪拌速度，其餘條件一致，設置4組、每組取樣11份並各重複測量4次"
+      "text": "催化作用且完全不變"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,54 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Jc-Ⅳ-6：化學電池的放電與充電」。"
+    "value": "A",
+    "explanation": "失去電子是氧化；在放電電池中，電子由氧化端經外電路流向還原端。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的化學電池、電極、電解質、放電／充電與氧化還原能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jc-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jc-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "化學電池、電流、電極與資料判讀",
+      "pattern": "取由電池構造、電流現象與反應資料推論能量轉換及電極作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由電池構造、電流現象與反應資料推論能量轉換及電極作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "電池、電解質、電能與生活科技情境",
+      "pattern": "取從電路、電池資料與生活裝置判斷化學能與電能轉換的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從電路、電池資料與生活裝置判斷化學能與電能轉換的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先用電子得失判斷氧化還原，再連到電流路徑。",
+  "solutionSteps": [
+    "比較兩電極反應前後的電子。",
+    "找出失去電子的一端。",
+    "將失電子判為氧化。",
+    "確認電子經外電路流向另一電極。",
+    "所以 A 正確。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

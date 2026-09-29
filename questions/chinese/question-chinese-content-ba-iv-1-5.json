@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ba-iv-1-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "若作者把結局放在開頭，讀者閱讀後續時最可能想知道什麼？",
+  "prompt": "作者先寫『獎牌已經掛在牆上』，下一段才寫比賽當天如何失誤、如何重新練習，最後回到頒獎現場。這樣的開頭最可能造成什麼閱讀效果？",
   "options": [
     {
       "id": "A",
-      "text": "結局如何形成"
+      "text": "先提供結果，再讓讀者追問原因與過程"
     },
     {
       "id": "B",
-      "text": "作者的座號"
+      "text": "讓所有事件都變成順敘"
     },
     {
       "id": "C",
-      "text": "紙張的大小"
+      "text": "刪去人物的努力過程"
     },
     {
       "id": "D",
-      "text": "標題的筆畫"
+      "text": "表示獎牌一定是偽造的"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ba-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "先知道結果會促使讀者追問事件發展與原因。"
+    "explanation": "先出現獎牌結果，再回頭交代失誤和練習，會形成懸念，讀者會追問結果如何得來。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "敘事時間與篇章結構；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究順敘、倒敘、插敘、補敘的判讀線索與篇章功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫敘事順序題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文時間順序與篇章理解",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章結構與敘事線索判讀",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "找出開頭透露的結果與後文延遲揭示的原因，判斷敘事順序帶來的期待。",
+  "solutionSteps": [
+    "把獎牌掛牆視為已知結果。",
+    "找出後文才出現的失誤與練習過程。",
+    "A 能說明倒敘造成的追問與期待。",
+    "B、C、D 都不是這種順序直接造成的效果。",
+    "把段落改成比賽—練習—頒獎的順敘，對照原文少了哪種懸念。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

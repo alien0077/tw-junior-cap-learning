@@ -2,23 +2,23 @@
   "id": "question-science-content-kc-iv-1-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年4月29日學校研究社的觀察中，針對「Kc-Ⅳ-1：摩擦生靜電與正負電荷」提出可檢驗的科學問題，若比較 3 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "相同材料摩擦後在潮濕環境較不易保留靜電，可能原因是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Kc-Ⅳ-1：摩擦生靜電與正負電荷」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "潮濕使電子不存在"
     },
     {
       "id": "B",
-      "text": "研究「Kc-Ⅳ-1：摩擦生靜電與正負電荷」時只測量3組中的一組就直接下結論"
+      "text": "水分把所有正電變成重力"
     },
     {
       "id": "C",
-      "text": "研究「Kc-Ⅳ-1：摩擦生靜電與正負電荷」時只改變光照時間，其餘條件一致，設置3組、每組取樣16份並各重複測量3次"
+      "text": "濕度只影響物體顏色"
     },
     {
       "id": "D",
-      "text": "研究「Kc-Ⅳ-1：摩擦生靜電與正負電荷」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "水分增加表面漏電與電荷移動的機會"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Kc-Ⅳ-1：摩擦生靜電與正負電荷」。"
+    "value": "D",
+    "explanation": "D。潮濕表面與空氣中的水膜提高漏電路徑，電荷較快流失，因此較難維持可觀察的靜電現象；不是電子在潮濕中消失。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究摩擦起電、電荷作用、導體、接地與靜電現象的能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題中的摩擦起電、驗電器、靜電感應、導體絕緣體、濕度與控制變因能力；本題改寫為摩擦生靜電與正負電荷原創情境。",
+    "authoringNote": "依官方課綱 KG 與公立國中公開試題能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-kc-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-kc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫；只取摩擦起電、電荷與驗電器的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "摩擦起電、電荷與驗電器",
+      "observedPattern": "公立學校公開自然／理化試題常以摩擦材料、驗電器、帶電體吸引／排斥、導體絕緣體、靜電感應、濕度與控制變因考查電荷轉移；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考；只取正負電荷、導體絕緣體與靜電的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "正負電荷、導體絕緣體與靜電",
+      "observedPattern": "公立學校公開自然／理化試題常以摩擦材料、驗電器、帶電體吸引／排斥、導體絕緣體、靜電感應、濕度與控制變因考查電荷轉移；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題；只取靜電感應、濕度與控制變因的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "靜電感應、濕度與控制變因",
+      "observedPattern": "公立學校公開自然／理化試題常以摩擦材料、驗電器、帶電體吸引／排斥、導體絕緣體、靜電感應、濕度與控制變因考查電荷轉移；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把濕度連到漏電與電荷留存時間，而不是誤寫成電荷被消滅。",
+  "solutionSteps": [
+    "列出摩擦物、被吸引物、接地與環境濕度等條件。",
+    "追蹤電子移動與物體總電荷的變化。",
+    "依同種排斥、異種吸引或極化判斷力的證據。",
+    "用驗電器、接地、對照組或重複測量補強結論。",
+    "說明漏電、濕度、接觸與證據不足等限制。"
+  ]
 }

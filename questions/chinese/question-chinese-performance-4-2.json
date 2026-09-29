@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-4-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "【114年國中教育會考】下列詞語，何者用字完全正確？",
+  "prompt": "看到陌生字含有「言」部件時，哪項推論最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "有志竟成"
+      "text": "字義一定與說話有關"
     },
     {
       "id": "B",
-      "text": "有志競成"
+      "text": "可能提供與語意相關的線索，但仍需查字形與詞語確認"
     },
     {
       "id": "C",
-      "text": "有志盡成"
+      "text": "讀音一定是ㄧㄢˊ"
     },
     {
       "id": "D",
-      "text": "有志境成"
+      "text": "可以不用看上下文"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "成語固定寫作「有志竟成」，竟表示終究、終於。"
+    "value": "B",
+    "explanation": "部件可提供方向，但不能直接決定全部字義或讀音；需結合整字與詞語查證。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://kaonow.com/paper/cap-114-chinese/",
-    "sourceLocator": "字形與成語用字判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究形音義、部件、校對、抄錄與識字查證能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫識字與寫字表現題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-4"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字音、字形、字義與書寫",
+      "observedPattern": "公立學校國文評量要求運用部件、字典、語境、規範字形與校對流程處理陌生字詞，並對抄錄資料保留不確定性；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "形音義、字詞與閱讀",
+      "observedPattern": "公立學校國文評量要求運用部件、字典、語境、規範字形與校對流程處理陌生字詞，並對抄錄資料保留不確定性；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把部件當成假設線索，不當成定論，再用字典、詞語與句意排除誤判。",
+  "solutionSteps": [
+    "讀題定位：圈出「部件推論」與字形、讀音、詞義、資料、語境或校對線索。",
+    "建立查證流程：先用部件或上下文提出假設，再以字典、原始資料與回讀確認；本題核心是「部件可提供方向，但不能直接決定全部字義或讀音；需結合整字與詞語查證。」",
+    "核對正解：選項 B 能同時符合規範、語境與識字書寫的實際目的。",
+    "排除誘答：檢查是否只靠直覺、同音或外形，或擅自改寫不確定的資料。",
+    "回讀驗證：重新朗讀並逐字比對可靠來源，確認字形、字音、字義及使用位置一致。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bc-iv-3-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "圖例以實線代表紙本、虛線代表電子資料。圖例最主要的功能是什麼？",
+  "prompt": "圖表縱軸從90開始而非0，甲柱看起來是乙柱兩倍。閱讀時最應注意？",
   "options": [
     {
       "id": "A",
-      "text": "取代所有座標與單位"
+      "text": "截斷縱軸可能放大視覺差異，應讀實際數值與刻度"
     },
     {
       "id": "B",
-      "text": "說明圖中符號各自代表的類別"
+      "text": "圖表一定造假"
     },
     {
       "id": "C",
-      "text": "增加圖表的裝飾"
+      "text": "只看柱子的高度就足夠"
     },
     {
       "id": "D",
-      "text": "表示虛線數值一定較小"
+      "text": "甲的數值必然是乙的兩倍"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bc-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "圖例提供符號與資料類別的對照，讓讀者知道不同線條代表什麼。"
+    "value": "A",
+    "explanation": "縱軸截斷會讓差距看起來更大，需回到刻度和實際數值判讀，不能只依視覺比例。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究圖表與資料整合判讀題型（圖例）；課綱 Bc-Ⅳ-3：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究標題、單位、比例、趨勢、圖片範圍、來源與工具輔助。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫數據圖表圖片工具題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bc-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bc-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "表格、圖表與資料判讀",
+      "observedPattern": "公立學校國文評量要求確認圖表標題、單位、比例、趨勢、來源與圖片文字替代，並區分資料可支持的結論；本題使用全新數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "數據比較、比例與圖表證據",
+      "observedPattern": "公立學校國文評量要求確認圖表標題、單位、比例、趨勢、來源與圖片文字替代，並區分資料可支持的結論；本題使用全新數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先檢查座標軸起點與刻度，再用數字而非柱高印象比較。",
+  "solutionSteps": [
+    "看縱軸是否從零開始。",
+    "讀出每柱實際刻度。",
+    "區分視覺長度與數值倍數。",
+    "A 指出圖表呈現方式的影響。",
+    "把縱軸改從零畫一次，對照視覺差異。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

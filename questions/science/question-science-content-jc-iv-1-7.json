@@ -2,41 +2,78 @@
   "id": "question-science-content-jc-iv-1-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年8月18日自然科教室的觀察中，針對「Jc-Ⅳ-1：氧化還原的得氧與失氧定義」提出可檢驗的科學問題，若比較 5 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "在封閉管中加熱氧化銅與碳粉，黑色固體變紅，並在管壁出現水滴。若資料確認生成銅與二氧化碳，最合理的氧轉移是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Jc-Ⅳ-1：氧化還原的得氧與失氧定義」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "氧化銅的氧轉移給碳，碳得氧而氧化，氧化銅失氧而還原"
     },
     {
       "id": "B",
-      "text": "研究「Jc-Ⅳ-1：氧化還原的得氧與失氧定義」時只改變攪拌速度，其餘條件一致，設置5組、每組取樣15份並各重複測量5次"
+      "text": "銅把氧轉給氧化銅，兩者都被氧化"
     },
     {
       "id": "C",
-      "text": "研究「Jc-Ⅳ-1：氧化還原的得氧與失氧定義」時只測量5組中的一組就直接下結論"
+      "text": "氧沒有轉移，只是黑色染成紅色"
     },
     {
       "id": "D",
-      "text": "研究「Jc-Ⅳ-1：氧化還原的得氧與失氧定義」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "水滴表示氧被永久消失"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jc-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Jc-Ⅳ-1：氧化還原的得氧與失氧定義」。"
+    "value": "A",
+    "explanation": "氧化銅提供氧給碳，碳成為含氧產物並被氧化；氧化銅失氧形成銅並被還原。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的得氧失氧、金屬與氧反應及微觀粒子能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jc-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "得氧失氧、金屬與氧反應、氧化還原資料判讀",
+      "pattern": "取由物質組成與反應前後資料判斷得氧、失氧及氧化還原角色的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由物質組成與反應前後資料判斷得氧、失氧及氧化還原角色的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "燃燒、氧化物、反應式與實驗情境",
+      "pattern": "取從燃燒、反應式與實驗現象推論氧化還原變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從燃燒、反應式與實驗現象推論氧化還原變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "結合顏色、生成物與封閉系統中的氧收支。",
+  "solutionSteps": [
+    "先接受資料已確認生成物種類。",
+    "找出氧化銅失去的氧。",
+    "把氧接到碳形成含氧產物。",
+    "同步判斷得氧者與失氧者的角色。",
+    "所以 A 能解釋整個證據鏈。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

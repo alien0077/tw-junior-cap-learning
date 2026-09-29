@@ -2,41 +2,73 @@
   "id": "question-science-content-cross-energy-resources-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年1月22日社區環境站的觀察中，小車在 33 秒內前進 1050 m，研究「能量與能源」時，平均速率為何？",
+  "prompt": "寫能源未來展望時，哪項結論最符合證據界線？",
   "options": [
     {
       "id": "A",
-      "text": "34650 m/s"
+      "text": "可再生能源一定在所有地點和時間都最佳"
     },
     {
       "id": "B",
-      "text": "31.8182 m/s"
+      "text": "只要效率高就沒有環境代價"
     },
     {
       "id": "C",
-      "text": "0.0314286 m/s"
+      "text": "能源方案不必記錄輸入和輸出"
     },
     {
       "id": "D",
-      "text": "1017 m/s"
+      "text": "在指定負載、日照、儲能與電網條件下方案甲較能完成任務；仍需追蹤成本、排放與極端天候"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cross-energy-resources"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "B",
-    "explanation": "平均速率＝路程÷時間＝1050÷33＝31.8182 m/s。 本題對應 KG「能量與能源」。"
+    "value": "D",
+    "explanation": "能源判斷應是有條件、可修正的推論，需同時交代任務、輸入、輸出、限制和後續證據。 正確答案為選項 D。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "能量轉換、功率、效率與生活裝置",
+      "observedPattern": "只取公立校方公開試題的計算與資料判讀能力方向，重新設計能源題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "能量守恆、效率、裝置限制",
+      "observedPattern": "只取公開資料題的能力模式，改寫為微電網與能源決策情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作能量轉換、功率、效率、守恆、環境與能源決策的能力方向；本題為能量與能源單元原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-energy-resources"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cross-energy-resources",
+  "solutionStrategy": "把目標、條件、計算、環境指標和未知資料寫成完整推理鏈。",
+  "solutionSteps": [
+    "先標出輸入能源、轉換裝置、有用輸出、散失、時間與系統邊界。",
+    "依能量守恆、功率=能量/時間或效率=輸出/輸入建立關係式。",
+    "核對單位、負載、日照、儲能與比較服務，檢查是否有重複計算。",
+    "排除把可再生當隨時穩定、輸出當效率或單一指標當總結的選項，答案為 D。",
+    "把答案放回能源情境並檢查限制：能源判斷應是有條件、可修正的推論，需同時交代任務、輸入、輸出、限制和後續證據。"
+  ]
 }

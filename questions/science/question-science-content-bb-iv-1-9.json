@@ -2,41 +2,67 @@
   "id": "question-science-content-bb-iv-1-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年1月2日校園實驗室的觀察中，將 149℃ 的金屬片放入 22℃ 的水中，研究「Bb-Ⅳ-1：熱由高溫處傳向低溫處」時，最初的熱傳方向為何？",
+  "prompt": "相同質量的水與金屬吸收相同熱量，水的溫度上升較少，代表水的比熱如何？",
   "options": [
     {
       "id": "A",
-      "text": "由 22℃ 的水傳向 149℃ 金屬片"
+      "text": "水的比熱較大"
     },
     {
       "id": "B",
-      "text": "熱量只留在金屬片內而不進入水"
+      "text": "水的比熱較小"
     },
     {
       "id": "C",
-      "text": "兩者溫度不同卻不會發生熱傳"
+      "text": "水沒有比熱"
     },
     {
       "id": "D",
-      "text": "由金屬片傳向水"
+      "text": "比熱只由溫度決定"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-bb-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "熱量自發由高溫物體傳向低溫物體，即由 149℃ 金屬片傳向 22℃ 的水。 本題對應 KG「Bb-Ⅳ-1：熱由高溫處傳向低溫處」。"
+    "value": "A",
+    "explanation": "由 Q＝mcΔT，在 Q 與 m 相同時，ΔT 較小表示 c 較大，因此水的比熱較大，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的熱傳遞、溫差與熱平衡能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bb-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bb-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "熱傳遞方向、傳導、對流、輻射與溫度資料判讀",
+      "pattern": "取由溫差、介質與熱傳方式推論能量傳遞方向的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由溫差、介質與熱傳方式推論能量傳遞方向的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "固定熱量與質量後，用公式比較溫度變化與比熱的反比關係。",
+  "solutionSteps": [
+    "確認兩物吸收的熱量 Q 相同。",
+    "確認質量 m 相同。",
+    "水的溫度變化 ΔT 較小。",
+    "由 Q＝mcΔT 可知 c 必須較大。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

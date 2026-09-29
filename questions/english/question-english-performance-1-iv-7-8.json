@@ -2,23 +2,23 @@
   "id": "question-english-performance-1-iv-7-8",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「1-Ⅳ-7／簡短說明敘述情境主旨」task, what is the best way to prepare question 8?",
+  "prompt": "The astronomy club borrowed two rooftop lenses for Friday's sky watch. On Thursday evening, the forecast changed to heavy rain. The club leader posted that members should bring their notebooks to the library at the same time instead.\n\nWhat will the club most likely do on Friday?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 1-Ⅳ-7／簡短說明敘述情境主旨."
+      "text": "Cancel every meeting for the rest of the year"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 1-Ⅳ-7／簡短說明敘述情境主旨."
+      "text": "Meet indoors and use notebooks instead of watching the sky"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 1-Ⅳ-7／簡短說明敘述情境主旨."
+      "text": "Leave the lenses outside during the storm"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 1-Ⅳ-7／簡短說明敘述情境主旨."
+      "text": "Start the sky watch earlier on Thursday"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 1-Ⅳ-7／簡短說明敘述情境主旨, question 8."
+    "value": "B",
+    "explanation": "天氣預報變成大雨，負責人改通知在相同時間到圖書館帶筆記本；因此活動轉為室內，並非直接取消整年或仍在屋頂觀星。 正確答案：B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/02-1_114P_English.pdf",
-    "sourceLocator": "114 年國中教育會考英語科閱讀公開試題；研究簡短說明與敘述情境的主旨、因果、目的、步驟與資訊關係判讀；課綱：https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://csjh.kl.edu.tw/books/file/528/111-1%E7%AC%AC%E4%B8%89%E6%AC%A1%E5%9C%8B%E4%B8%89%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "PDF第4頁第34題（由事件線索推測後續）；僅改寫閱讀能力模式，不複製原題內容。",
+    "authoringNote": "題幹、短文、選項、解析與遷移內容均為原創；以公立學校公開英文原卷的指定閱讀題型作 pattern-only 參照。內容維持 draft；Terra 審查已依使用者指示取消。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1-iv-7"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-1-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://csjh.kl.edu.tw/books/file/528/111-1%E7%AC%AC%E4%B8%89%E6%AC%A1%E5%9C%8B%E4%B8%89%E6%AE%B5%E8%80%83%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "基隆市立中山高級中學國中部111學年度第一學期九年級第三次段考英文試題；僅參考閱讀題型，不複製原文、人物、數據、選項或答案。",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "PDF第4頁第34題（由事件線索推測後續）",
+      "observedPattern": "整合事件及人物處境推測有文本支持的後續行動；本題採天文社借用器材的全新事件。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "線索推論：先把題目要求轉成明確閱讀任務，再圈出支持答案的原文線索，逐一排除與文本矛盾或超出文本的說法。",
+  "solutionSteps": [
+    "先整理時間線：原定週五屋頂觀星，週四預報改變。",
+    "抓住新指令：同一時間改到圖書館，帶筆記本。",
+    "推論活動形式因雨而轉室內，並用筆記本進行替代安排。",
+    "排除超出文本的全年取消、把器材留在雨中及改到週四。",
+    "答案選 B；推論只走到線索支持的最近一步，不加上文中沒有的計畫。"
+  ]
 }

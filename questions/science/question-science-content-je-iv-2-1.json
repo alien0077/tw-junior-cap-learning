@@ -2,23 +2,23 @@
   "id": "question-science-content-je-iv-2-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月6日自然科教室的觀察中，將 45 g 食鹽溶於 289 g 水，研究「Je-Ⅳ-2：可逆反應」時，溶液質量為何？",
+  "prompt": "密閉容器中的反應物 A 可生成 B，B 也能回生成 A。若一段時間後 A、B 的濃度都仍有變化，但各自的平均濃度維持穩定，最合理的判斷是？",
   "options": [
     {
       "id": "A",
-      "text": "334 g"
+      "text": "反應完全停止"
     },
     {
       "id": "B",
-      "text": "244 g"
+      "text": "只有正反應進行"
     },
     {
       "id": "C",
-      "text": "13005 g"
+      "text": "只有逆反應進行"
     },
     {
       "id": "D",
-      "text": "289 g"
+      "text": "正、逆反應仍同時進行且速率相等"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：45＋289＝334 g。 本題對應 KG「Je-Ⅳ-2：可逆反應」。"
+    "value": "D",
+    "explanation": "濃度穩定不等於粒子停止；在動態平衡時正、逆反應仍同時發生，平均速率相等。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題中的可逆反應、濃度時間序列、密閉系統、正逆速率、動態平衡與控制變因能力；本題改寫為可逆反應原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-je-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-je-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫；只取可逆反應、反應速率與資料判讀的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "可逆反應、反應速率與資料判讀",
+      "observedPattern": "公立學校公開自然／理化試題常以密閉容器、顏色或濃度時間序列、濃度擾動、反應速率與控制變因考查可逆反應和動態平衡；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考；只取化學平衡、濃度變化與密閉系統的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "化學平衡、濃度變化與密閉系統",
+      "observedPattern": "公立學校公開自然／理化試題常以密閉容器、顏色或濃度時間序列、濃度擾動、反應速率與控制變因考查可逆反應和動態平衡；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題；只取正逆反應、動態平衡與控制變因的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "正逆反應、動態平衡與控制變因",
+      "observedPattern": "公立學校公開自然／理化試題常以密閉容器、顏色或濃度時間序列、濃度擾動、反應速率與控制變因考查可逆反應和動態平衡；本題只取能力方向並重新設計情境與數據。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分濃度穩定與反應停止，先檢查正、逆反應是否同時存在。",
+  "solutionSteps": [
+    "確認反應物、生成物、正反應與逆反應的方向。",
+    "檢查系統是否密閉、溫度是否固定及資料的時間範圍。",
+    "比較濃度、顏色或速率的前後變化與時間序列。",
+    "判斷是反應停止、尚在調整，還是達到動態平衡。",
+    "寫出證據、限制與需要補測的資料，避免過度推論。"
+  ]
 }

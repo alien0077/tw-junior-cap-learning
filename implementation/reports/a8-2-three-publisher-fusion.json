@@ -1,0 +1,48 @@
+{
+  "unitId": "A-8-2",
+  "lessonId": "lesson-math-content-a-8-2",
+  "reviewedAt": "2026-09-27",
+  "status": "substantive-fusion-draft",
+  "reviewStatus": "draft",
+  "materials": [
+    {
+      "publisherAssociation": "nani",
+      "material": "南一版八上基礎自學講義網路分享本",
+      "locator": "Scribd extracted pages 19–24; area/cardboard entry, terminology table, monomial/constant classification, ascending/descending order",
+      "url": "https://www.scribd.com/document/827691143/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E5%85%AB%E4%B8%8A",
+      "authorityLimit": "Shared handout, not a licensed publisher master or verified current edition"
+    },
+    {
+      "publisherAssociation": "kanghsuan",
+      "material": "Clearnote author-created public student notes, author labels Kanghsuan D edition",
+      "locator": "Page 3, B3 chapter 1-2; polynomial boundary, zero/constant classification, ordering, then operations",
+      "url": "https://www.clearnotebooks.com/zh-TW/notebooks/2564097",
+      "authorityLimit": "Student-authored notes, not official Kanghsuan textbook or publisher teaching guidance"
+    },
+    {
+      "publisherAssociation": "hanlin",
+      "material": "Hanlin 8th-grade first-semester workbook shared publicly on Scribd",
+      "locator": "Pages 8–10, section 1-2; warm-up/basic/proficiency progression, textbook P22–24 references, section boundary to 1-3",
+      "url": "https://www.scribd.com/document/940002579/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E5%85%AB%E4%B8%8A%E7%BF%92%E4%BD%9C",
+      "authorityLimit": "Shared workbook, not a licensed publisher master; textbook prose itself was not available"
+    }
+  ],
+  "synthesis": [
+    "Reorganized the independently authored lesson around eligibility checks, signed-term reading, terminology and classification, zero-versus-nonzero-constant distinction, ordering, and transfer.",
+    "Used the Nani handout's area-to-classification path, the Kanghsuan-associated notes' explicit boundary/classification reminders, and the Hanlin workbook's tiered practice pattern without reusing its questions or wording.",
+    "Kept A-8-2 terminology separate from adjacent A-8-3 operations according to the official curriculum and KG."
+  ],
+  "checks": {
+    "lessonSchema": "pass; 0 errors",
+    "wholeDataValidation": "pass; 14,436 JSON files, 13,111 IDs, 1,032 KG nodes",
+    "versionFusionContractAudit": "pass; 1,056 lessons scanned, 0 structural contract failures (contract checks presence, not substantive quality)",
+    "strictLessonIndependence": "pass; 614 learning-content lessons, 0 risks, 0 affected references, 0 failures",
+    "npmTest": "pass; includes interactive renderer, responsive and full 1,027-unit workbench traversal",
+    "releaseGate": "not passed; lesson and questions remain draft; AI content review and overall curriculum fusion remain incomplete"
+  },
+  "remainingForUnit": [
+    "Verify source edition/date and publisher-authored material where legally accessible; current sources include shared third-party materials.",
+    "Complete subject-correctness and pedagogical content review and verify any convention-sensitive zero-polynomial wording against authoritative grade-appropriate sources.",
+    "Reconcile this unit's public material records into the publisher evidence ledger and rerun the per-unit fusion audit."
+  ]
+}

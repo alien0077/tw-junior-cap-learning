@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-5-iv-9",
+  "change": [
+    "Mapped the two-pass broadcast-note workflow to prediction, note-structure editing, announcement-status observation, evidence explanation, and handoff transfer.",
+    "Retained the authored speech/transcript fallback and did not rewrite lesson content or questions."
+  ],
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/site/index.html",
+    "authoredSections": 6,
+    "distinctBroadcastTasks": 4,
+    "speechApiMock": true,
+    "keyboardRetryAndAnswer": true,
+    "transcriptDisclosure": true,
+    "speechFallback": true,
+    "networkBlocked": true,
+    "reducedMotion": "emulated",
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "991/1,027 pass; 36 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "Mocked speech synthesis is not a human listening-skills evaluation.",
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

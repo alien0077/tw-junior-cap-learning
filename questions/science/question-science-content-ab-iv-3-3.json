@@ -2,41 +2,67 @@
   "id": "question-science-content-ab-iv-3-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年9月26日河川觀測站的觀察中，針對「Ab-Ⅳ-3：物理與化學性質」提出可檢驗的科學問題，若比較 3 組、每組取樣 11 份資料，哪一項設計最適當？",
+  "prompt": "冰融化成水屬於哪一類變化？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "化學變化，因為溫度改變"
     },
     {
       "id": "B",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時只測量3組中的一組就直接下結論"
+      "text": "化學變化，因為水會流動"
     },
     {
       "id": "C",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時只改變光照時間，其餘條件一致，設置3組、每組取樣11份並各重複測量4次"
+      "text": "無法分類的變化"
     },
     {
       "id": "D",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時先決定結論，再挑選支持結論的11筆資料"
+      "text": "物理變化，因為物質仍是水且沒有新物質生成"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ab-iv-3"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ab-Ⅳ-3：物理與化學性質」。"
+    "value": "D",
+    "explanation": "冰與水的化學身分相同，融化只改變狀態，不產生新物質，因此是物理變化，選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；物理與化學性質判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的物質性質、變化與證據判讀能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "物理／化學性質、物理／化學變化與證據判讀",
+      "pattern": "取由可觀察證據、組成與新性質區分物理及化學變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由可觀察證據、組成與新性質區分物理及化學變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "以是否產生新物質為核心判準，不把狀態、溫度或外觀改變誤當化學變化。",
+  "solutionSteps": [
+    "確認冰與水都是 H₂O。",
+    "觀察改變的是固態到液態。",
+    "檢查是否有新的化學物質生成。",
+    "沒有新物質，所以屬物理變化。",
+    "因此選 D。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

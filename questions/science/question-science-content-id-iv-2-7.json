@@ -2,23 +2,23 @@
   "id": "question-science-content-id-iv-2-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年1月6日社區環境站的觀察中，連續一個月在相同時間觀察月面亮部變化，研究「Id-Ⅳ-2：日照角度與地表吸收太陽能」時，最能支持哪項結論？",
+  "prompt": "若兩地緯度不同，在相同日期與時間測得太陽高度不同，哪項解釋較合理？",
   "options": [
     {
       "id": "A",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 7 組、6 月觀察中，月相是由日、地、月相對位置改變造成的視覺變化"
+      "text": "地球曲率與地軸傾角使兩地接收日照幾何不同"
     },
     {
       "id": "B",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 7 組、6 月觀察中，月亮本身每天產生不同亮度"
+      "text": "太陽會在不同地點變成不同大小"
     },
     {
       "id": "C",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 7 組、6 月觀察中，月相完全由雲量決定"
+      "text": "只有雲量能造成太陽高度差"
     },
     {
       "id": "D",
-      "text": "在「Id-Ⅳ-2：日照角度與地表吸收太陽能」第 7 組、6 月觀察中，月亮只在滿月時才存在"
+      "text": "緯度不會影響日照角度"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,42 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "月球反射太陽光，日、地、月相對位置改變會造成可規律觀察的月相。 本題對應 KG「Id-Ⅳ-2：日照角度與地表吸收太陽能」。"
+    "explanation": "地球是曲面且地軸傾斜，地點緯度和日期會影響太陽在天空中的高度與日照角度。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的太陽高度、影長、季節、入射角及地表受熱判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Id-Ⅳ-2 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-id-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-id-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "太陽高度角、日照、影長、季節與地表受熱資料判讀",
+      "pattern": "取由太陽高度、入射角、影子、季節與地表能量資料推論日照差異的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由太陽高度、入射角、影子、季節與地表能量資料推論日照差異的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將觀測地點、日期和地球幾何模型連結。",
+  "solutionSteps": [
+    "確認兩地同日期同時間的比較條件。",
+    "辨認緯度改變觀測者所在的地球表面方向。",
+    "利用地球曲率和地軸傾角解釋高度差。",
+    "B、C、D 都否認或錯置日照幾何。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

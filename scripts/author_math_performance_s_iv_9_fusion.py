@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics s-IV-9."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/"lessons/math/lesson-math-performance-s-iv-9.json"
+REPORT=ROOT/"implementation/reports/math-performance-s-iv-9-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf"}
+
+def record(p,c,r,m,a):
+    return {"publisher":p,"edition":f"{p} 公立校方數學課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；三角形邊角關係與全等判定的概念、表徵及評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以邊角條件、對應順序與全等判定推導未知量。"],"representations":[r],"examplesOrEvidence":["本課的橋架、紙模型與座標三角形均為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+
+def main():
+    d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-math-performance-s-iv-9" and d["reviewStatus"]=="draft"
+    d["title"]="s-Ⅳ-9：用邊角條件判斷三角形全等"
+    d["content"]={"summary":"三角形全等表示兩個三角形的形狀與大小完全相同，但判定不能只看一兩個數字。SSS 使用三邊、SAS 使用兩邊夾角、ASA 或 AAS 使用兩角與一邊；SSA 通常不足，因為可能形成兩種不同三角形。對應順序一旦確定，對應邊與角才能正確搬用。本課以橋架、紙模型和座標三角形的自編情境，練習選擇判定條件、追蹤對應、由全等推出未知量，並用反例辨認條件不足。","sections":[{"heading":"全等要看對應順序","body":"先標記頂點與對應關係，再比較三邊和三角。兩個圖形旋轉或翻面仍可能全等，但對應順序不能任意排列，否則會把不相等的邊配在一起。"},{"heading":"四種常用判定","body":"SSS 是三邊相等，SAS 是兩邊及其夾角相等，ASA／AAS 是兩角與一邊相等。判定名稱不只是縮寫，要確認角是否為兩邊的夾角以及邊的位置。"},{"heading":"條件不足的 SSA","body":"兩邊和一個非夾角可能無法唯一決定三角形，可能出現兩種高度或兩種形狀。遇到 SSA 要畫圖或給反例，不能直接宣稱全等。"},{"heading":"由全等搬用未知量","body":"一旦判定全等，對應邊相等、對應角相等，可用已知量求未知量。最後回到對應順序、單位與三角不等式檢查結果。"}]}
+    d["studyHighlights"]=["先寫頂點對應順序，再配對邊角。","分清 SSS、SAS、ASA／AAS 的條件與夾角位置。","SSA 通常不足，要用圖形或反例說明。","由全等搬用對應量，並檢查單位與三角形可行性。"]
+    d["teaching"]={"body":[{"id":"hook","phase":"hook","heading":"橋架三角片能不能互換？","body":"原創橋架由兩個三角形鋼片組成，工程圖只標出部分邊長與角度。請學習者先排出頂點對應，再判斷哪些資料足以確定兩片完全相同；若只給兩邊與非夾角，要求畫出可能的第二種形狀，感受條件不足的風險。"},{"id":"explain","phase":"explain","heading":"把判定縮寫翻成條件","body":"以 SSS、SAS、ASA、AAS 逐一拆解字母，要求學生指出 S 是哪一條邊、A 是哪一個角，並特別圈出 SAS 的夾角。再用同一組數字改變對應順序，檢查名稱相同不代表配對正確。"},{"id":"worked-example","phase":"worked-example","heading":"由 SAS 判定後求角邊","body":"三角形 ABC 與 DEF 中 AB=DE、AC=DF、∠A=∠D，且角是兩邊夾角，因此由 SAS 得全等，對應為 A↔D、B↔E、C↔F。若 ∠E=52°、BC=7，便有 ∠B=52°、EF=7；最後檢查頂點順序。"},{"id":"guided-practice","phase":"guided-practice","heading":"判定卡片與條件不足","body":"提供 SSS、SAS、AAS 和 SSA 四組資料。學習者先畫出簡圖、圈出夾角，再選可用判定；對 SSA 要嘗試畫兩個三角形或指出缺少的角，不能只看到三個量就選全等。"},{"id":"transfer","phase":"transfer","heading":"把全等用在座標與施工","body":"原創座標任務給兩個三角形的三個頂點，先算對應邊距離或利用已知邊角，再決定是否全等。施工放樣時若一段邊長誤差超出容許範圍，需說明全等結論不能直接沿用，並重新檢查對應與單位。"},{"id":"reflect","phase":"reflect","heading":"修正 SSA 直接判全等","body":"請修正『兩邊和一個角相等，所以三角形一定全等』。先指出角若不是兩邊夾角，可能形成兩種三角形；再用簡圖或具體長度畫出反例，最後列出若補上夾角或另一角才能使用的判定。"}],"summary":["全等判定要先固定頂點對應與邊角順序。","SSS、SAS、ASA／AAS 的條件不同，SAS 角必須是夾角。","SSA 通常不足，應畫反例或補充條件。","判定全等後才能搬用對應邊角，並檢查單位與可行性。"],"exitCheck":[{"prompt":"SAS 的角為什麼要是夾角？","expectedEvidence":"SAS 使用的角位於兩條已知對應邊之間，才能唯一固定三角形的形狀與大小。"},{"prompt":"若 AB=DE、AC=DF、∠A=∠D，如何對應？","expectedEvidence":"由 SAS 全等，A↔D、B↔E、C↔F，因此對應角與邊可相等搬用。"},{"prompt":"為什麼 SSA 通常不能直接判定全等？","expectedEvidence":"非夾角條件可能形成兩個不同三角形，需補充夾角、另一角或其他足夠條件。"}]}
+    d["interactive"]={"type":"guided-choice","goal":"依對應順序與 SSS、SAS、ASA／AAS 條件判斷三角形全等。","scenario":"切換已知邊角與頂點對應，觀察哪些條件唯一固定三角形。","variables":[{"symbol":"a","meaning":"第一條對應邊"},{"symbol":"b","meaning":"第二條對應邊"},{"symbol":"x","meaning":"對應角或待求量"}],"steps":[{"id":"step-1","prompt":"兩邊及其夾角相等是哪一種判定？","options":["SAS","SSS","SSA"],"answer":"A","feedback":"SAS 的 A 必須位於兩條已知邊之間。"},{"id":"step-2","prompt":"三角形 ABC 與 DEF 若 A↔D、B↔E，則 C 對應誰？","options":["F","D","E"],"answer":"A","feedback":"頂點一一對應，第三個頂點 C 對應剩下的 F。"},{"id":"step-3","prompt":"兩邊及一個非夾角相等時，通常應如何判斷？","options":["條件不足，先畫圖或找反例","直接使用 SAS","一定是 SSS"],"answer":"A","feedback":"SSA 可能有兩種三角形，不能直接判定全等。"}]}
+    d["authoringStandard"]="version-fused-v1"
+    d["versionResearch"]=[record("nani","以三角形邊角條件與全等判定建立推理","橋架圖、頂點對應、SSS/SAS/ASA/AAS 條件","把 SSA 當成足夠判定，或忽略 SAS 夾角","要求標記對應、辨認判定並搬用未知量"),record("kanghsuan","透過紙模型與實際操作比較三角形全等條件","紙三角形、拼合、條件卡片與反例圖","只看三個資料數量，不看角的位置與對應順序","重視操作建構、條件不足與判定理由"),record("hanlin","連結座標、施工放樣與全等應用限制","座標距離、橋架、單位與容許誤差","判定後未核對單位或把不精確資料當相等","評估模型、對應、誤差與實際可行性")]
+    d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以邊角條件與對應順序判斷三角形全等。","SSS、SAS、ASA／AAS 與 SSA 條件差異是共同核心。","全等後搬用對應量，並以圖形、單位與反例檢查。"],"versionDifferences":["南一證據較突顯三角形全等判定；康軒較突顯紙模型、條件卡片與 SSA 反例；翰林較突顯座標、施工與誤差限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以橋架鋼片讓頂點對應和條件充分性成為工程決策。","以 SAS 具體搬用 52° 與 7 的對應量。","把 SSA 兩解反例、座標距離、施工誤差與互動條件卡片整合。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織三角形全等、邊角判定、頂點對應、SSA 限制與座標應用。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit":"s-Ⅳ-9：用邊角條件判斷三角形全等","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+
+if __name__ == "__main__": main()

@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-28",
+  "unitId": "lesson-english-performance-5-iv-1",
+  "title": "5-Ⅳ-1：基本字彙理解使用",
+  "workCompleted": [
+    "保留並更正先前未對齊的泛用教材草稿，改寫為公告語境辨義、多義字搭配、讀音／拼字／句意核對、受眾改寫與疑難詞間隔提取六段教學正文。",
+    "核讀南一、康軒、翰林官方公開資源頁；僅記錄頁面實際公開的教學資源功能與差異，明示未取得指定冊次完整課文，不虛稱完成出版社章節全文融合。",
+    "新增 fusionRecord、versionResearch 與四步 GuidedChoice；每題有正解、解析和錯答提示。",
+    "重寫 learning-performance 規格，移除錯置的時間線、滑桿、同步圖表、預測操作模型，改為符合互動頁實際支援的字彙語境選答。",
+    "補入真實可重跑的 Python Playwright 回歸腳本並重建網站資料索引。"
+  ],
+  "sources": [
+    {"publisher": "nani", "url": "https://tpack.nani.com.tw/nani_content?a=273&b=2", "scope": "官方資源頁介紹單字、例句、閃卡、配對、測驗、選擇與書寫練習；非本課課本全文。"},
+    {"publisher": "kanghsuan", "url": "https://digitalmaster.knsh.com.tw/all/digitalgo/j/english/index.html", "scope": "官方 114 學年度數位特色介紹 Word Bank、課文單字及拼字活動；非本課課本全文。"},
+    {"publisher": "hanlin", "url": "https://hanlindigi.hle.com.tw/widget/1/34", "scope": "官方國中資源介紹應用／認識字彙、例句、語音、聽辨、拼字與複習；非本課課本全文。"},
+    {"publisher": "naer", "url": "https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf", "scope": "官方課綱標準來源，lesson 已記錄正文／PDF 頁碼定位。"}
+  ],
+  "technicalChecks": {
+    "lessonSchema": "pass",
+    "repositoryDataValidation": "pass; 14495 JSON files, 13114 IDs, 1032 KG nodes; lesson/question review statuses unchanged",
+    "implementationSpecValidation": "1027 specs; 0 errors; QA pending is not a content review gate",
+    "fullLessonSchemaAudit": "1056 lessons; 0 failures",
+    "siteIndex": "pass; 1052 lessons, 10526 question paths, 40 mappings",
+    "browser": {
+      "status": "pass",
+      "url": "http://127.0.0.1:8765/site/index.html",
+      "authoredSections": 6,
+      "guidedChoiceSteps": 4,
+      "keyboardWrongRetryCorrect": true,
+      "feedbackLiveRegion": true,
+      "optionAccessibleNames": true,
+      "reducedMotion": "emulated",
+      "externalNetworkBlocked": true,
+      "responsiveWidths": [320, 375, 768],
+      "pageErrors": 0
+    },
+    "diffCheck": "pass"
+  },
+  "fusionManuscriptInventory": {
+    "recorded": 718,
+    "eligibleUnits": 791,
+    "percent": 90.77,
+    "learningContent": "583/583",
+    "learningPerformance": "135/208",
+    "scope": "manuscript-record presence only; not a content review or source-quality certification"
+  },
+  "status": {
+    "reviewStatus": "draft",
+    "reason": "User will perform the lesson content review with ChatGPT; Codex did not review lesson content. Three source entries are public resource-page evidence, not complete textbook chapter evidence.",
+    "commit": "not performed",
+    "push": "not performed"
+  },
+  "relatedStructuralRepair": "Full lesson schema audit initially found Fa-Ⅳ-4 publisher research concepts array had only one item; added a second source-boundary finding, then reran and passed all 1056 lesson files."
+}

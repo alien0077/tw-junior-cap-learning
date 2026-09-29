@@ -2,23 +2,23 @@
   "id": "question-science-content-fc-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年8月15日學校研究社的觀察中，連續觀察「Fc：生物圈的組成」3 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "校園池塘中藻類大量增加且溶氧在夜間下降，哪項解釋最合理？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Fc：生物圈的組成」時只依樣本的顏色（未記錄10天的時間與條件）"
+      "text": "營養鹽增加可能促進藻類繁殖，夜間呼吸作用消耗溶氧"
     },
     {
       "id": "B",
-      "text": "連續10天研究「Fc：生物圈的組成」並在相同條件下多次觀察到新細胞形成"
+      "text": "藻類只在夜間進行光合作用並產生大量氧氣"
     },
     {
       "id": "C",
-      "text": "研究「Fc：生物圈的組成」時只依樣本的名稱推測，不進行觀察"
+      "text": "溶氧與生物活動無關"
     },
     {
       "id": "D",
-      "text": "研究「Fc：生物圈的組成」時只觀察一次外形，便排除所有其他證據"
+      "text": "營養鹽會使所有生物立即死亡"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "B",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Fc：生物圈的組成」。"
+    "value": "A",
+    "explanation": "營養鹽過多可能造成藻類大量繁殖；夜間沒有光合作用，生物呼吸仍消耗溶氧，可能形成缺氧風險。 正確答案為選項 A：「營養鹽增加可能促進藻類繁殖，夜間呼吸作用消耗溶氧」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的生態系、生物圈、資料判讀及探究能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Fc 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fc"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-fc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生態系、生物圈、食物網、能量與資料判讀",
+      "pattern": "取由生態資料辨認生物／非生物因素、能量流動、物質循環與證據限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由生態資料辨認生物／非生物因素、能量流動、物質循環與證據限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開白天光合作用與全天呼吸作用，再連結營養鹽與溶氧資料。",
+  "solutionSteps": [
+    "圈出個體、族群、群集、生態系、生物圈、營養階層或監測指標。",
+    "先判斷尺度與生物／非生物成分，再建立能量或物質的流動關係。",
+    "套用原理：營養鹽過多可能造成藻類大量繁殖；夜間沒有光合作用，生物呼吸仍消耗溶氧，可能形成缺氧風險。",
+    "排除混淆生命層次、把能量說成循環或只用單一觀察下結論的選項，答案為「營養鹽增加可能促進藻類繁殖，夜間呼吸作用消耗溶氧」。",
+    "回查資料是否符合題目尺度、時間與生態功能限制。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

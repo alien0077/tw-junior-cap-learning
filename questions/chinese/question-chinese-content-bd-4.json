@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bd-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一篇議論文先提出主張，再引用調查數據支持，數據在論證中主要扮演什麼角色？",
+  "prompt": "文章主張『應增設飲水機』，理由是『能減少學生攜帶一次性瓶罐』，並附上每週回收量紀錄。下列判斷最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "提供支持主張的證據"
+      "text": "回收量存在就已證明飲水機一定有效"
     },
     {
       "id": "B",
-      "text": "改變文章的人稱"
+      "text": "只要理由合理，就不需要任何資料"
     },
     {
       "id": "C",
-      "text": "製造故事高潮"
+      "text": "維護成本與使用率和主張完全無關"
     },
     {
       "id": "D",
-      "text": "取代所有推理"
+      "text": "回收量是支持理由的資料，但仍要檢查飲水機位置、維護與使用率"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bd"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "調查數據可作為支持主張的客觀證據，但仍需配合推理。"
+    "value": "D",
+    "explanation": "資料能支援減量方向，但政策是否可行還需看條件；把一項資料直接擴成必然成功，會超出證據範圍。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "議論文本主張與證據；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編議論閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bd"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bd",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "議論文本、主張與證據判讀",
+      "observedPattern": "公立學校國文公開試題常由議題、主張、理由、證據、反方與結論界線檢查閱讀推論；本題改用校園公共議題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "閱讀推論、觀點與論證關係",
+      "observedPattern": "公立學校國文公開試題常由議題、主張、理由、證據、反方與結論界線檢查閱讀推論；本題改用校園公共議題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先畫出主張—理由—證據的鏈條，再檢查事實與評價、範圍與代表性、因果與替代解釋；最後加入反方、限制和可執行的評估，讓結論強度與資料相稱。",
+  "solutionSteps": [
+    "讀題定位：圈出「理由與證據」，找出作者要讀者接受的主張，以及支持它的資料、理由或反方疑問。",
+    "拆解推進：分清事實、推論、價值判斷與行動要求，檢查資料是否真的支援結論；本題核心是「資料能支援減量方向，但政策是否可行還需看條件；把一項資料直接擴成必然成功，會超出證據範圍。」",
+    "核對正解：選項 A「回收量是支持理由的資料，但仍要檢查飲水機位置、維護與使用率」能讓論證角色或結論強度與題幹資料相稱。",
+    "排除誘答：留意把個案推成全體、把同時發生當成因果、把情感口號當證據，或只刪除反方疑問而沒有回應。",
+    "回查論證鏈：用議題—主張—理由—證據—限制／反方—修正結論逐段回看，確認沒有超出證據範圍。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

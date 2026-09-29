@@ -1,0 +1,130 @@
+{
+  "decisionId": "D-396",
+  "asOf": "2026-09-28",
+  "unit": {
+    "lessonId": "lesson-chinese-learning-performance",
+    "specId": "cur-chinese-learning-performance",
+    "knowledgeGraphId": "kg-chinese-learning-performance",
+    "title": "國語文學習表現總綱"
+  },
+  "workType": "missing-manuscript-authoring-and-student-page-alignment",
+  "scope": {
+    "priorInventory": "The lesson file existed but had only two generic content placeholders, no fusionRecord, and no interactive block; it was absent from the authored-fusion inventory.",
+    "preservation": "No previously inventoried manuscript or question was rewritten. Only this missing-manuscript unit, its inaccurate implementation spec, shared GuidedChoice accessibility state, and student-page style were changed.",
+    "contentReview": "Not performed. Final lesson-content review is reserved for the user's ChatGPT workflow; lesson reviewStatus remains draft.",
+    "questionBank": "No question records were modified. Current public-exam-source ledger was checked separately and remains complete."
+  },
+  "sources": {
+    "officialCurriculum": {
+      "url": "https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf",
+      "locator": "PDF p.7 (document page 6), learning-performance categories and code explanation; PDF p.7 notes six categories and first code digit; stage numeral; subsequent item code. Grade IV covers junior-high grades 7-9.",
+      "use": "Defines the six categories and supports the original 5-Ⅳ-2 code-decoding example."
+    },
+    "versionLabelledPublicSchoolPlans": [
+      {
+        "publisherLabel": "nani",
+        "url": "https://course.cyc.edu.tw/upfile/course109/sub1/14536054569425830.pdf",
+        "locator": "Yongqing JH 109 academic year, grade 7 semester 1, PDF pp.0-1.",
+        "observed": "The school plan labels Nani Book 1 and places performance, content, objective, teaching focus, and assessment in linked course-plan fields; a first-lesson example includes several language performances and oral/workbook assessment.",
+        "limit": "Public-school curriculum plan, not Nani-authored textbook chapter or evidence of its publisher teaching method."
+      },
+      {
+        "publisherLabel": "kanghsuan",
+        "url": "https://w3.qnm.kh.edu.tw/curriculum/111/plan/%E7%89%B9%E6%95%99%E7%8F%AD/%E8%B3%87%E6%BA%90%E7%8F%AD/%E8%B3%87%E6%BA%90%E7%8F%AD-%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB-%E5%9C%8B%E6%96%871B.pdf",
+        "locator": "Kaohsiung public resource-class 111 academic-year Kang Hsuan Book 1 plan, PDF pp.0-2.",
+        "observed": "The plan displays simplified/reduced examples for selected performance descriptors and lists instructional and assessment modes.",
+        "limit": "Resource-class school plan, not Kang Hsuan textbook chapter; used only as a bounded example of documenting adjustments, not generalized to all learners."
+      },
+      {
+        "publisherLabel": "hanlin",
+        "url": "https://www.curriculum.chc.edu.tw/storage/164/110/5-7-%E5%9C%8B%E8%AA%9E%E6%96%87.pdf/Go8bL8272DkbZSBkIKB7cjbselE8qpVsFtUIUjGh.pdf",
+        "locator": "Changhua public JH 110 academic-year grade-7 Hanlin plan, PDF pp.0-1 and 4.",
+        "observed": "The plan connects performance descriptors with objectives, activities, and assessment; a lesson example uses recitation, sharing, and drawing outputs.",
+        "limit": "Public-school curriculum plan, not Hanlin-authored textbook chapter or proof of publisher-specific instruction."
+      }
+    ],
+    "evidenceBoundary": "The three version labels identify school-selected textbook editions. All three sources are school-authored plans. The report and lesson do not claim full publisher-textbook chapter access or publisher-authored teaching evidence; textbook publisher evidence remains pending in the spec."
+  },
+  "authoredLesson": {
+    "bodySections": 6,
+    "studentVisibleContentSections": 6,
+    "contentTeachingParity": true,
+    "sectionHeadings": [
+      "校刊編輯會議：一句課綱指標，怎麼變成真的任務？",
+      "解碼代碼：類別、學習階段、細目各回答不同問題",
+      "把一項表現翻成可觀察的證據",
+      "練習：讓任務和評量測同一件事",
+      "遷移：同一能力會因媒介而留下不同痕跡",
+      "回看調整與界線：支持可以變，目標要說清楚"
+    ],
+    "originalSynthesis": "A bounded umbrella lesson: decode category/stage/item; translate a descriptor into action, object/condition, quality, and evidence; align task and assessment; distinguish individual support from the target itself. It does not pretend to teach every listening/reading/writing subskill.",
+    "interactive": {
+      "type": "guided-choice",
+      "steps": 5,
+      "allStepsHaveAnswerExplanationAndRetryHint": true,
+      "includesVisibleTransferExitCheck": true,
+      "answerKeys": ["A", "C", "B", "C", "B"]
+    },
+    "lessonReviewStatus": "draft"
+  },
+  "verification": {
+    "publicExamSourceLedger": {
+      "command": "python3 scripts/audit_question_exam_rewrites.py",
+      "status": "pass",
+      "recorded": 10566,
+      "total": 10566,
+      "pending": 0
+    },
+    "authoredFusionInventory": {
+      "command": "python3 scripts/inventory_authored_fusion_drafts.py",
+      "recorded": 730,
+      "total": 791,
+      "percent": 92.29,
+      "learningContent": "583/583",
+      "learningPerformance": "147/208",
+      "longFormMarker": 560,
+      "meaning": "Manuscript presence only; not a content-review or publisher-chapter completion claim."
+    },
+    "lessonSchema": "PASS, 0 errors",
+    "dataValidation": "PASS, 14,507 JSON files; 13,114 IDs; 1,032 KG nodes",
+    "implementationSpecValidation": "PASS, 1,027 specs; 0 structural errors; 9 eligible / 1,018 pending by the separate reviewed/implemented/verified spec-status classifier.",
+    "unitRegression": "PASS: six content sections exactly match six teaching sections; source boundary; draft status; five-step answer/explanation/retry contract.",
+    "npmTest": "PASS: repository pretest suite completed, including 1,027/1,027 workbench lesson traversal.",
+    "siteIndex": "PASS: 1,052 lessons; 10,566 questions; 40 mapping sets; 10,526 question paths.",
+    "targetBrowser": {
+      "command": "python3 scripts/test_chinese_learning_performance_browser.py --url http://127.0.0.1:8765/site/index.html",
+      "status": "passed",
+      "visibleSections": 6,
+      "guidedChoiceSteps": 5,
+      "keyboardWrongRetryAndCorrectFeedback": true,
+      "ariaPressedAndLiveRegions": true,
+      "liveRegions": 5,
+      "touchTargetsMinimumPx": 44,
+      "axeViolations": 0,
+      "axeIncomplete": 0,
+      "reducedMotion": true,
+      "externalRequestsBlocked": 1,
+      "horizontalOverflow": false,
+      "viewportWidths": [320, 375, 768],
+      "pageErrors": []
+    },
+    "fullBrowserSmoke": {
+      "command": "npm run test:browser -- --url http://127.0.0.1:8765/implementation/workbench.html",
+      "status": "passed",
+      "optionsAndFullTraversal": "1,027/1,027",
+      "viewportWidths": [320, 375, 768],
+      "keyboardAndAccessibilityTree": "passed",
+      "reducedMotion": "passed",
+      "pageErrors": []
+    },
+    "gitDiffCheck": "PASS for this unit's lesson, spec, tests, renderer and style changes."
+  },
+  "browserEnvironment": {
+    "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+    "playwright": "1.58.0",
+    "playwrightChromium": "/Users/alien/Library/Caches/ms-playwright/chromium-1208/chrome-mac-x64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing",
+    "dependencyOrBrowserInstall": "Not needed; both were present.",
+    "localhost": "The sandboxed curl could not reach 127.0.0.1:8765, and starting another server returned Errno 48 (address already in use). In the authorized local-browser environment, the existing server returned HTTP 200 for /implementation/workbench.html; Playwright tests then completed successfully. This was an execution-namespace distinction, not a missing browser/package diagnosis."
+  },
+  "commitPush": "Not performed; broader user working-tree changes remain and the overall multi-stage goal is still in progress."
+}

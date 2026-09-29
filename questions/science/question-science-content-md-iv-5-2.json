@@ -2,23 +2,23 @@
   "id": "question-science-content-md-iv-5-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年6月24日河川觀測站的觀察中，針對「Md-Ⅳ-5：大雨、順向坡與山崩威脅」提出可檢驗的科學問題，若比較 4 組、每組取樣 10 份資料，哪一項設計最適當？",
+  "prompt": "大雨入滲到坡體後，可能如何增加滑動風險？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Md-Ⅳ-5：大雨、順向坡與山崩威脅」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "使岩層重量變成零"
     },
     {
       "id": "B",
-      "text": "研究「Md-Ⅳ-5：大雨、順向坡與山崩威脅」時只測量4組中的一組就直接下結論"
+      "text": "讓坡度自動變平"
     },
     {
       "id": "C",
-      "text": "研究「Md-Ⅳ-5：大雨、順向坡與山崩威脅」時只改變施力大小，其餘條件一致，設置4組、每組取樣10份並各重複測量4次"
+      "text": "提高孔隙水壓並降低有效摩擦或抗剪強度"
     },
     {
       "id": "D",
-      "text": "研究「Md-Ⅳ-5：大雨、順向坡與山崩威脅」時先決定結論，再挑選支持結論的10筆資料"
+      "text": "使所有裂縫完全封閉"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "hard",
   "answer": {
     "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Md-Ⅳ-5：大雨、順向坡與山崩威脅」。"
+    "explanation": "C。入滲水會增加土體重量、孔隙水壓，並可能降低顆粒間有效摩擦，使抗滑能力相對下降；實際風險仍須看岩性與排水。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "三筆公立學校公開自然科試題中的順向坡、降雨、排水、地質風險、位移監測與防災資料判讀能力；本題改寫為坡地安全原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-md-iv-5"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-md-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取降雨、地質構造與坡地災害的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "降雨、地質構造與坡地災害",
+      "observedPattern": "公開自然科評量常要求由坡面與岩層方向、降雨、地下水、位移、沖蝕與防災設施判讀坡地風險；本題以全新語料重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取地形、地下水與防災資料判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "地形、地下水與防災資料判讀",
+      "observedPattern": "公開自然科評量常要求由坡面與岩層方向、降雨、地下水、位移、沖蝕與防災設施判讀坡地風險；本題以全新語料重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取坡地安全、監測與環境變因的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "坡地安全、監測與環境變因",
+      "observedPattern": "公開自然科評量常要求由坡面與岩層方向、降雨、地下水、位移、沖蝕與防災設施判讀坡地風險；本題以全新語料重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把入滲水連到重量、孔隙水壓和摩擦力的變化。",
+  "solutionSteps": [
+    "圈出坡面方向、岩層傾向、雨量、排水、裂縫、位移與安全警訊。",
+    "先用剖面和時間序列整理直接觀察，再判斷順向坡與水的作用。",
+    "把降雨、孔隙水壓、重量、摩擦、坡腳與位移連成風險模型。",
+    "排除只看坡度或單次雨量、把山崩當必然結果，或為取證而靠近危險坡面的選項。",
+    "用完整句寫出條件式風險判斷、補測資料與安全行動。"
+  ]
 }

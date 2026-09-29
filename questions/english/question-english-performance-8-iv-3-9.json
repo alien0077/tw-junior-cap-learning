@@ -2,41 +2,78 @@
   "id": "question-english-performance-8-iv-3-9",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "In the「8-Ⅳ-3／比較國內外節慶習俗」lesson, which action shows respect when people have different customs about waiting in line during a public ceremony?",
+  "prompt": "A student writes, 'Holi is more meaningful than Taiwan's Dragon Boat Festival.' The two sources describe traditions but do not rank them. What is the best edit?",
   "options": [
     {
       "id": "A",
-      "text": "In question 9, ask politely and follow the local rule about waiting in line during a public ceremony in the 8-Ⅳ-3／比較國內外節慶習俗 lesson."
+      "text": "Holi is better because it uses more colors."
     },
     {
       "id": "B",
-      "text": "In question 9, say every custom about waiting in line during a public ceremony in the 8-Ⅳ-3／比較國內外節慶習俗 lesson must be exactly the same as mine."
+      "text": "Both festivals have traditions described in their sources; their meanings should be compared with evidence, not ranked."
     },
     {
       "id": "C",
-      "text": "In question 9, ignore the people involved in waiting in line during a public ceremony in the 8-Ⅳ-3／比較國內外節慶習俗 lesson."
+      "text": "Dragon Boat Festival is older, so it is more important."
     },
     {
       "id": "D",
-      "text": "In question 9, laugh at a different way of handling waiting in line during a public ceremony in the 8-Ⅳ-3／比較國內外節慶習俗 lesson."
+      "text": "People in both countries celebrate for exactly the same reason."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-8-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "Respect means learning the local practice, asking politely, and avoiding unfair judgment. This item targets 8-Ⅳ-3／比較國內外節慶習俗, question 9."
+    "value": "B",
+    "explanation": "正確答案是B。來源呈現活動和意義，但沒有替兩種文化評高下。B改成有來源界線的描述，沒有自創共同原因。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675417163713PBpnsLYp.pdf",
+    "sourceLocator": "原創改寫；參照鹽埕國中公開英語評量的節慶雙資料比較型態，僅借題型方向，不使用原卷題文／選項。",
+    "authoringNote": "獨立撰寫；答案、繁中詳解、策略和步驟均為新作。公校試題只作pattern-only題型參照；最終題庫內容判讀另依專案流程。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-8-iv-3"
+  "updatedAt": "2026-09-28",
+  "lessonId": "lesson-english-performance-8-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417163713PBpnsLYp.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期九年級第二次段考英語試卷（翰林版）",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "PDF p.3, questions 44-46: vocabulary in context, information not stated, and supported inference from a Holi festival report; relevant item(s): 44-46",
+      "observedPattern": "以節慶資料卡加短文，考查詞義、是否明載、以及只能由文字推出的結論；本題重新撰寫新資料與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "page"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立國昌國中113學年度第二學期第二次段考一年級英語試題",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF p.4, questions 30-32: locate a festival date range, infer a phrase from context, and select a statement supported by the reading; relevant item(s): 30-32",
+      "observedPattern": "節慶閱讀題以日期定位、上下文推詞義及逐項核對事實為主；本題使用全新短文資料及選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "page"
+    }
+  ],
+  "solutionStrategy": "移除better、more meaningful等未定義的價值排序，改寫可由來源支持的比較主張。",
+  "solutionSteps": [
+    "圈出原句的more meaningful，這是沒有評量標準的價值排序。",
+    "查看兩個來源真正提供的內容是各自的傳統和活動。",
+    "把主張改成描述性比較，並要求每項意義都能連回來源。",
+    "排除A、C的優劣判斷與未提供年代，並排除D的相同原因推測。",
+    "選B，再補上具體證據即可形成可檢驗的比較。"
+  ],
+  "studyReferences": [
+    "https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
+    "https://eng.taiwan.net.tw/m1.aspx?sNo=0002020",
+    "https://www.incredibleindia.gov.in/en/festivals-and-events/holi"
+  ]
 }

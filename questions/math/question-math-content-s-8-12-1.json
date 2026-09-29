@@ -2,41 +2,84 @@
   "id": "question-math-content-s-8-12-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "用尺規作圖作線段 AB 的垂直平分線時，兩圓弧半徑應如何選取？",
+  "prompt": "作線段 AB 的垂直平分線，作圖完成後最重要的幾何性質是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "小於 AB 的一半"
+      "text": "線上每一點到 A、B 等距"
     },
     {
       "id": "B",
-      "text": "大於 AB 的一半且兩端相同"
+      "text": "線上每一點都在 AB 上"
     },
     {
       "id": "C",
-      "text": "任意但兩端不同"
+      "text": "線段 AB 被延長兩倍"
     },
     {
       "id": "D",
-      "text": "只能等於 AB"
+      "text": "線一定與 AB 平行"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-8-12"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "以 A、B 為圓心畫相同半徑圓弧，半徑需大於 AB 的一半才會相交。"
+    "value": "A",
+    "explanation": "垂直平分線上的每一點到線段兩端點 A、B 等距，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 尺規作圖與幾何推理 題型與官方課綱 KG kg-math-content-s-8-12",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供尺規作圖與幾何推理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的尺規作圖方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-8-12"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-12",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "尺規作圖、線段複製、角平分線、垂直平分線、等距點與作圖失敗診斷",
+      "observedPattern": "公開學校數學試題常以作圖步驟、圓規等距性、交點條件及幾何理由考查尺規作圖與推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "尺規作圖、線段複製、角平分線、垂直平分線、等距點與作圖失敗診斷",
+      "observedPattern": "公開學校數學試題常以作圖步驟、圓規等距性、交點條件及幾何理由考查尺規作圖與推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認作圖目標的性質，再安排圓弧與直線步驟。",
+  "solutionSteps": [
+    "目標是找所有到 A、B 等距的點。",
+    "這些點形成 AB 的垂直平分線。",
+    "作圖後直線垂直 AB。",
+    "直線上各點到 A、B 距離相等。",
+    "選 A。"
+  ]
 }

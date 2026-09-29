@@ -2,41 +2,84 @@
   "id": "question-math-content-n-8-1-2",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "√(25/36) 的值為何？",
+  "prompt": "方程式 x²＝81 的所有實數解為何？",
   "options": [
     {
       "id": "A",
-      "text": "25/6"
+      "text": "x＝9"
     },
     {
       "id": "B",
-      "text": "5/36"
+      "text": "x＝−9"
     },
     {
       "id": "C",
-      "text": "5/6"
+      "text": "x＝9 或 x＝−9"
     },
     {
       "id": "D",
-      "text": "－5/6"
+      "text": "x＝81 或 x＝−81"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-n-8-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "√(25/36)＝√25/√36＝5/6，算術平方根取正值。"
+    "explanation": "平方後等於 81 的數有 9 與 −9，因此 x＝±9，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究平方根定義、根式化簡、四則運算與幾何應用能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供平方根、主平方根、正負根、分數小數與幾何應用能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的平方根方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-n-8-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-8-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "square roots, principal roots, positive and negative roots, rational roots, simplification, and geometric applications",
+      "observedPattern": "公立學校公開數學試題常要求辨認平方根與主平方根、解平方方程式、計算分數或小數的根，並將根號連結到邊長與面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "square roots, principal roots, positive and negative roots, rational roots, simplification, and geometric applications",
+      "observedPattern": "公立學校公開數學試題常要求辨認平方根與主平方根、解平方方程式、計算分數或小數的根，並將根號連結到邊長與面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "解平方方程式時要同時列出正、負兩個平方根，不可只取主平方根。",
+  "solutionSteps": [
+    "找出 81 的主平方根 9。",
+    "平方方程式的解包含 9 與其相反數 −9。",
+    "寫出 x＝9 或 x＝−9。",
+    "代回兩個值，平方都為 81。",
+    "選 C，區分 √81＝9 與方程式的兩個解。"
+  ]
 }

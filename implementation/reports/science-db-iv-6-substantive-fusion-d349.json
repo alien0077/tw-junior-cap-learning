@@ -1,0 +1,73 @@
+{
+  "decision": "D-349",
+  "unit": "Db-Ⅳ-6：植物維管束的運輸功能",
+  "date": "2026-09-28",
+  "status": "source-informed-original-fusion-draft",
+  "sources": [
+    {
+      "publisherLabel": "hanlin",
+      "sourceType": "publisher-hosted-teacher-and-student-material-preview",
+      "url": "https://website.hle.com.tw/mgz/file/jna/113%E4%B8%8B%E7%BF%B0%E6%9E%97%E7%94%9F%E7%89%A9SCIENCE%28%E6%95%99%E7%94%A8%29.pdf",
+      "locator": "113 resource index, textbook 4-1 pp.106-111; searchable excerpts on vascular bundle cells, stem/leaf-vein arrangement, cambium/tree rings, individual reading and group discussion",
+      "limitations": "PDF full pages unavailable in current reader; not a complete publisher textbook review"
+    },
+    {
+      "publisherLabel": "nani",
+      "sourceType": "third-party-uploaded-version-labeled-material-preview",
+      "url": "https://online.fliphtml5.com/uygal/thpd/",
+      "locator": "111 Nani biology resource introduction preview; 4-1 Plant Transport Structures and broad question/resource labels",
+      "limitations": "Uploader is not publisher-authenticated; edition and reuse rights unverified; sample only"
+    },
+    {
+      "publisherLabel": "kanghsuan",
+      "sourceType": "third-party-version-labeled-course-metadata",
+      "url": "https://www.shareclass.org/course/75bc209c3e7846498c3240efd2f05cfe/",
+      "locator": "Page metadata labels 113, 108 curriculum, Kanghsuan, grade 7; separates 3-1 Plant Transport Structures and 3-2 Internal Transport",
+      "limitations": "Shared material body was not readable; teacher uploader and rights not verified"
+    },
+    {
+      "publisherLabel": null,
+      "sourceType": "open-licensed-government-education-resource",
+      "url": "https://market.cloud.edu.tw/resources/web/1803418",
+      "locator": "Db-IV-6 and xylem/phloem roles; listing states CC BY-NC-SA 4.0",
+      "limitations": "Pedagogical resource, not publisher textbook evidence"
+    }
+  ],
+  "changes": {
+    "learnerVisibleOriginalSections": 6,
+    "simulationModel": "science-life-system/plant-transport",
+    "interactions": [
+      "source selection updates phloem source label",
+      "sink selection updates phloem destination label",
+      "qualitative transpiration slider is explicitly not a real flow or volume measurement",
+      "keyboard focus is preserved after choices and slider updates"
+    ],
+    "schemaAndSpecUpdated": true,
+    "staleBrowserAssertionCorrected": "S-9-1 obsolete 6.8m example replaced with current polygon-scaling evidence assertions"
+  },
+  "validation": {
+    "targetRegression": "PASS",
+    "npmTest": "PASS",
+    "validateData": "PASS: 14470 JSON, 13112 IDs, 1032 KG nodes",
+    "implementationSpecs": "PASS: 1027 specs, 0 errors, 1027 pending",
+    "lessonIndependenceStrict": "PASS: 614 lessons, 0 risks, 0 strict failures",
+    "playwrightBrowserSmoke": "PASS: fullTraversal 1027/1027; Db-IV-6 six visible sections, source/sink actions, focus, 320/375/768px",
+    "axeAccessibility": "PASS: 42 runs across 14 representative units and 3 viewports, 0 violations, 0 incomplete",
+    "diffCheck": "PASS"
+  },
+  "gates": {
+    "naniPublisherSlot": "pending",
+    "kanghsuanPublisherSlot": "pending",
+    "hanlinPublisherSlot": "pending",
+    "lessonReviewStatus": "draft",
+    "specQaStatus": "untested"
+  },
+  "globalPublisherLedger": {
+    "verified": 285,
+    "slots": 3081,
+    "pending": 2796,
+    "blockedUnits": 932
+  },
+  "commit": null,
+  "push": null
+}

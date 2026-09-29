@@ -10,7 +10,7 @@
     },
     {
       "id": "B",
-      "text": "3"
+      "text": "3（判讀焦點：把計算步驟和最後結論分開核對）"
     },
     {
       "id": "C",
@@ -26,8 +26,8 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "除以 5 得 x+1=4，所以 x=3。"
+    "value": "B",
+    "explanation": "等式兩邊先除以 5，得到 x+1=4；再從兩邊減去 1，得到 x=3，因此正確選項是 B。最後把 x=3 代回 5(x+1)，可得 5×4=20，與題目相符。 本題再以「把計算步驟和最後結論分開核對」核對，避免只憑選項形式作答。正確答案為選項 B：「3（判讀焦點：把計算步驟和最後結論分開核對）」。最後把這個選項放回題幹，確認它同時符合題目條件與本單元判準。"
   },
   "provenance": {
     "origin": "original",
@@ -36,7 +36,50 @@
     "sourceLocator": "公立國中公開試題命題方向參考；question-math-equation-6.json 獨立命題（非原題重製）",
     "authoringNote": "獨立命題，非原題重製"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-math-linear-equation-check"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-07",
+  "lessonId": "lesson-math-linear-equation-check",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "公立國中公開試題命題方向參考；question-math-equation-6.json 獨立命題（非原題重製）",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "公立國中公開試題命題方向參考；question-math-equation-6.json 獨立命題（非原題重製）",
+      "observedPattern": "獨立命題，非原題重製",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究計算、表格與情境判讀的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先抓住題幹條件，再依單元定義或規律推理；本題特別檢查：把計算步驟和最後結論分開核對。",
+  "solutionSteps": [
+    "讀題定位：找出題目要求判斷的量、性質或科學關係（math-linear-equation-check）。本題逐題核對：題幹「解 5(x+1)=20，x 為何？」；正解為選項 B「3（判讀焦點：把計算步驟和最後結論分開核對）」，須依本題條件判斷，不能直接套用其他題的排除結果。",
+    "建立判準：把計算步驟和最後結論分開核對。",
+    "核對正確選項 B：回到題幹條件與原選項內容，確認其數值或概念符合判準。本題逐題核對：題幹「解 5(x+1)=20，x 為何？」；正解為選項 B「3（判讀焦點：把計算步驟和最後結論分開核對）」，須依本題條件判斷，不能直接套用其他題的排除結果。",
+    "逐項排除：其餘選項不是改變題幹條件、混淆定義，就是使用錯誤的計算／機制，不能支持同一結論。本題逐題核對：題幹「解 5(x+1)=20，x 為何？」；正解為選項 B「3（判讀焦點：把計算步驟和最後結論分開核對）」，須依本題條件判斷，不能直接套用其他題的排除結果。",
+    "最後驗算：重新對照答案代號、選項文字、單位與題目所問的量。本題逐題核對：題幹「解 5(x+1)=20，x 為何？」；正解為選項 B「3（判讀焦點：把計算步驟和最後結論分開核對）」，須依本題條件判斷，不能直接套用其他題的排除結果。"
+  ]
 }

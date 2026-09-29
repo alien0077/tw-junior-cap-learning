@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bb-iv-4-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "若一段文字連續使用「我喜歡、我珍惜、我感謝」，主要形成什麼效果？",
+  "prompt": "文本只寫『我看著空椅子很久』，沒有說明椅子原本屬於誰。下列哪項最穩妥？",
   "options": [
     {
       "id": "A",
-      "text": "強化直接抒情的語氣"
+      "text": "可以確定說話者正在思念父親"
     },
     {
       "id": "B",
-      "text": "列出時間順序"
+      "text": "可觀察到說話者長時間注視空椅子，但情感與人物關係仍需上下文"
     },
     {
       "id": "C",
-      "text": "證明數據可靠"
+      "text": "空椅子一定象徵死亡"
     },
     {
       "id": "D",
-      "text": "改成科學定義"
+      "text": "說話者一定討厭這把椅子"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bb-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "反覆的情感動詞直接抒發感受，能加強抒情語氣。"
+    "value": "B",
+    "explanation": "長時間注視是直接可見行為，可能引發思念或失落等解讀，但文本沒有提供對象與背景，不能直接確定。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "直接抒情與情感判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究直接抒情、語氣強度、敘事／抒情差異與證據界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫直接抒情題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-4"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "直接抒情、語氣與文本判讀",
+      "observedPattern": "公立學校國文評量要求辨認直接說出感受的語句、語氣強度、敘事與抒情差異及文本證據界線；本題使用全新人物與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "抒情句、語意與感受證據",
+      "observedPattern": "公立學校國文評量要求辨認直接說出感受的語句、語氣強度、敘事與抒情差異及文本證據界線；本題使用全新人物與情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先寫行為證據，再把情感與象徵列為待確認的可能性。",
+  "solutionSteps": [
+    "整理『看著』與『很久』兩項可觀察資訊。",
+    "檢查題幹沒有人物關係或事件背景。",
+    "B 保留合理解讀與證據界線。",
+    "A、C、D 都把單一景象擴成確定身世或態度。",
+    "補一個上下文句子，說明什麼新證據能支持思念。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

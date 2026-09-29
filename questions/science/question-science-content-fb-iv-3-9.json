@@ -2,41 +2,84 @@
   "id": "question-science-content-fb-iv-3-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年7月26日河川觀測站的觀察中，針對「Fb-Ⅳ-3：月球公轉與日月食」提出可檢驗的科學問題，若比較 3 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "若太陽光方向固定，月球移到地球另一側且三者近似成一直線，最可能看到哪種月相？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Fb-Ⅳ-3：月球公轉與日月食」時只改變水溫，其餘條件一致，設置3組、每組取樣17份並各重複測量5次"
+      "text": "滿月，地球看到月球朝向地球的受光面"
     },
     {
       "id": "B",
-      "text": "研究「Fb-Ⅳ-3：月球公轉與日月食」時同時改變水溫與另一個條件，卻不記錄方法"
+      "text": "新月，月球受光面完全背向太陽"
     },
     {
       "id": "C",
-      "text": "研究「Fb-Ⅳ-3：月球公轉與日月食」時只測量3組中的一組就直接下結論"
+      "text": "完全沒有受光面"
     },
     {
       "id": "D",
-      "text": "研究「Fb-Ⅳ-3：月球公轉與日月食」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "只能判定日食，不能判定月相"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-fb-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Fb-Ⅳ-3：月球公轉與日月食」。"
+    "explanation": "排列為太陽—地球—月球時，月球朝向地球的一面大致受太陽照亮，從地球看接近滿月；是否發生月食還要看軌道是否精確對準。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作月球公轉、月相、日月地排列、影子與食象模型的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fb-iv-3"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-fb-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "月球公轉、月相與日月食判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以月相圖、日月地排列、影子方向與月球公轉考查日食、月食及模型限制；本題只取能力方向並重新設計位置、光線與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "月相、日食月食與地月系統題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以月相圖、日月地排列、影子方向與月球公轉考查日食、月食及模型限制；本題只取能力方向並重新設計位置、光線與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "日月地排列、影子與食象模型題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常以月相圖、日月地排列、影子方向與月球公轉考查日食、月食及模型限制；本題只取能力方向並重新設計位置、光線與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷受光面朝向，再另行檢查是否進入地球影子。",
+  "solutionSteps": [
+    "固定太陽光從左側或太陽方向照來。",
+    "月球位於地球背向太陽的一側。",
+    "月球朝向地球的一面接近受光面。",
+    "地球看到的亮面比例接近全部。",
+    "所以月相接近滿月，但不必然月食。"
+  ]
 }

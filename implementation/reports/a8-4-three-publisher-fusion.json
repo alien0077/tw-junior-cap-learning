@@ -1,0 +1,76 @@
+{
+  "reportId": "a8-4-three-publisher-fusion-d314",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-8-4",
+  "curriculumId": "cur-math-content-a-8-4",
+  "knowledgeGraphId": "kg-math-content-a-8-4",
+  "status": "draft",
+  "sources": [
+    {
+      "publisher": "nani",
+      "url": "https://www.scribd.com/document/827691143/國中-數學-基礎自學講義-南一版-八上",
+      "material": "Third-party-shared Nani-labeled Grade 8 first-semester self-study handout; indexed internal pages 87-89",
+      "reviewedEvidence": "Search-indexed page 87 is titled factor/multiple meaning and shows the integer-factor analogy then A=B×C direction; page 88 locates the meaning of factorization as reverse product representation; page 89 starts subsequent practice.",
+      "limits": "Scribd page fetch returned cache miss, so only readable search-index text and locators were used. The share is not publisher-authenticated; no exercises, answers, or page layout were reused."
+    },
+    {
+      "publisher": "kanghsuan",
+      "url": "https://www.clearnotebooks.com/zh-TW/notebooks/2684782",
+      "material": "Public student notes labeled by their author as 2025 Grade 8 first semester / Kanghsuan Volume 3; indexed pages 1-2",
+      "reviewedEvidence": "Readable OCR snippets place integer divisibility beside polynomial division quotient and factor/multiple naming; the note illustrates directional terminology but OCR damages exponent/bracket glyphs, so this report uses only unambiguous definitions.",
+      "limits": "Student-authored notes, not an official textbook or publisher teaching material. Direct page fetch returned cache miss; no ambiguous OCR example or answer was adopted."
+    },
+    {
+      "publisher": "hanlin",
+      "url": "https://www.scribd.com/document/690167202/00-111國中數學2上翰林補救GO-學用-111f397125",
+      "material": "Hanlin official-hosted 111 Grade 8 Volume 3 remedial-GO learner-workbook PDF search index plus public 111-version share contents",
+      "reviewedEvidence": "Official-hosted PDF search result identifies chapter 3 topic 1 as factor/multiple discrimination with textbook p.116 in-class item and p.117 example 1. Third-party share contents independently place common-factor, difference/sum-square and cross-multiplication topics later; these support topic boundary/order only.",
+      "limits": "Official-hosted PDF was not directly accessible to the browser tool, so no page body was read. The third-party copy is marked All Rights Reserved; only its visible contents/locators were used, not its exercises, prose, worked examples, or answers."
+    },
+    {
+      "publisher": "official-curriculum",
+      "url": "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
+      "material": "2018 official 12-year curriculum math domain, A-8-4 locator recorded in curriculum node",
+      "reviewedEvidence": "Curriculum and KG remain source of truth for scope; publisher-shared materials do not override the official code."
+    }
+  ],
+  "synthesis": {
+    "sharedCore": [
+      "factor/multiple direction in a product relationship",
+      "factorization as product representation of a polynomial",
+      "verify a proposed factor using a polynomial quotient and multiplication-back identity"
+    ],
+    "differences": [
+      "Nani-indexed handout locates factor/multiple definition on p.87 and factorization-as-product representation on p.88, using an integer-to-polynomial analogy; the chapter locator is clearer than recoverable full teaching prose.",
+      "Kanghsuan-labeled student notes foreground divisibility and quotient roles; OCR is too noisy for example-level use, so this lesson retains only the conceptual bridge and supplies independent examples.",
+      "Hanlin's official search index identifies factor/multiple discrimination at the start of the remediation sequence; the share contents list later methods separately. This supports sequencing, not claims about the unread official page's diagrams or exercises."
+    ],
+    "originalLessonDesign": "Rebuilt the lesson around a postage-wall/seat-row product model, candidate factor and quotient, full multiplication-back verification, and counterexamples that distinguish falsification from proof and expose partial coefficient matching. Corrected the (x+3)(x+4) check to x^2+7x+12, not x^2+7x+10. Excluded common-factor, difference-of-squares, sum-product pairing, and cross-multiplication algorithms from this lesson."
+  },
+  "changes": [
+    "Corrected lesson summary, goals, study highlights, and all six teaching phases to the A-8-4 meaning/scope boundary.",
+    "Replaced algorithm-selection interaction with factor/multiple direction, quotient construction, multiplication-back, and counterexample diagnosis; added a fifth stage catching the constant-term mismatch in (x+3)(x+4).",
+    "Expanded each versionResearch finding with exact public page/topic locators and explicitly excluded unauthenticated or OCR-uncertain examples.",
+    "Corrected A-8-4 spec flow/actions that incorrectly claimed factor-tree, draggable algorithm cards and factoring methods outside this unit.",
+    "Added focused jsdom runtime regression test and included it in npm test.",
+    "Corrected the matching implementation spec scope and regression examples under decision D-314; downgraded all three publisherEvidence slots to pending because current shared sources do not substantiate verified publisher-original full-text research.",
+    "Kept lesson reviewStatus=draft and implementation spec qaStatus=untested."
+  ],
+  "validation": {
+    "lessonSchema": "PASS 2026-09-27: direct Draft 2020-12 audit checked 1,056 lesson records, 0 failures",
+    "fullData": "PASS 2026-09-27: 14,444 JSON files, 13,111 IDs, 1,032 KG nodes; 1,052 lessons and 10,566 questions remain draft",
+    "implementationSpecs": "PASS 2026-09-27: 1,027 specs, 0 errors; 1,027 pending; A-8-4 qaStatus remains untested",
+    "qaContract": "PASS 2026-09-27: 1,027/1,027 design contracts; this is contract coverage, not lesson content QA",
+    "npmTest": "PASS 2026-09-27: full npm test includes A-8-4 evidence/product/interaction regression; workbench contract traversed 1,027/1,027; golden reference 3/3",
+    "siteIndex": "PASS 2026-09-27: rebuilt and checked revision HEAD; 1,052 lessons, 10,566 questions, 40 mapping sets; index validator 10,526 question paths",
+    "browserSmoke": "PASS 2026-09-27 using Python Playwright 1.58.0 / Chromium revision 1208 on http://127.0.0.1:8765/implementation/workbench.html: 1,027/1,027 traversal/specs; A-8-4 five stages each tested wrong-answer retry, correct feedback, keyboard Enter and 320/375/768px. Fifth-stage visible answer identifies 12 != 10. Existing A-8-7 interaction, global keyboard, accessibility tree and reduced-motion checks also passed.",
+    "browserA11y": "PASS 2026-09-27 axe-core: 18 runs (six representative units including A-8-4 x three viewports), 0 violations, 0 incomplete",
+    "examSourceLedger": "PASS 2026-09-27: 10,566/10,566 recorded, pending 0; read-only audit, not rerun after this timestamp",
+    "publisherEvidenceLedger": "Current script output 285/3,081 verified, 2,796 pending, 932 blocked; evidence report does not promote A-8-4 slots"
+  },
+  "notCompleted": [
+    "No complete publisher-authenticated original textbook chapter was available/reviewed for all three publishers; publisher ledger statuses are not promoted.",
+    "No lesson subject-matter review by ChatGPT or teacher was performed; lesson reviewStatus remains draft. Automated browser/axe runs are not human screen-reader review.",
+    "No commit or push; overall guide stages remain in progress."
+  ]
+}

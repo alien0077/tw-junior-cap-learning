@@ -2,41 +2,78 @@
   "id": "question-science-content-jb-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年4月5日河川觀測站的觀察中，將 102 g 食鹽溶於 696 g 水，研究「Jb：水溶液中的變化」時，溶液質量為何？",
+  "prompt": "同一杯糖水加熱後能溶解更多糖，冷卻後出現晶體，最合理的解釋是？",
   "options": [
     {
       "id": "A",
-      "text": "594 g"
+      "text": "溫度改變使溶解度改變，冷卻後超過可溶量的糖析出"
     },
     {
       "id": "B",
-      "text": "70992 g"
+      "text": "糖在加熱時變成水"
     },
     {
       "id": "C",
-      "text": "696 g"
+      "text": "晶體是憑空生成的"
     },
     {
       "id": "D",
-      "text": "798 g"
+      "text": "冷卻會讓所有物質都消失"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jb"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：102＋696＝798 g。 本題對應 KG「Jb：水溶液中的變化」。"
+    "value": "A",
+    "explanation": "許多固體溶質在較高溫可溶較多，冷卻後溶解度下降，多出的溶質會結晶析出。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的水溶液、溶質溶劑、溶解、溶解度、飽和及分離能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；題幹、選項、答案、解析與五步解法均依 Jb 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "水溶液、溶質溶劑、溶解、均勻混合與資料判讀",
+      "pattern": "取由粒子模型、溶解現象、質量資料與分離方法判斷水溶液的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由粒子模型、溶解現象、質量資料與分離方法判斷水溶液的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "溶液、濃度、溶解度、實驗現象與生活情境",
+      "pattern": "取從圖表、實驗與生活溶液資料判讀溶質分散、飽和、濃度及操作限制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從圖表、實驗與生活溶液資料判讀溶質分散、飽和、濃度及操作限制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把溶解度視為溫度的函數，再判斷析出。",
+  "solutionSteps": [
+    "比較加熱與冷卻時的可溶量。",
+    "確認冷卻後溶液中的溶質量未全部消失。",
+    "判斷超過低溫溶解度的部分。",
+    "B、C、D 違反溶解與物質守恆概念。",
+    "所以 A 正確。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

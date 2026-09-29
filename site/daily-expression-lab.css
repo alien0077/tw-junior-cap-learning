@@ -1,0 +1,27 @@
+.daily-expression-lab{display:grid;gap:13px;min-width:0;margin-top:1rem;padding:clamp(13px,3vw,22px);border:1px solid #d2c1a4;border-radius:16px;background:#fffaf1;color:#30291e}
+.daily-expression-lab *{box-sizing:border-box}
+.daily-expression-lab h4{margin:.15rem 0 .45rem;line-height:1.4}
+.daily-expression-lab header p{margin:.4rem 0;color:#5d5140;line-height:1.65}
+.delx-kicker{color:#79511c;font-size:.82rem;font-weight:800;letter-spacing:.02em}
+.delx-progress{margin:0;font-weight:800}
+.delx-scene,.delx-step{min-width:0;margin:0;padding:13px;border:1px solid #e1d4be;border-radius:10px;background:#fff}
+.delx-scene-title{display:block;margin-bottom:7px;color:#79511c;font-weight:800}
+.delx-scene pre{max-width:100%;margin:0 0 10px;white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.65}
+.delx-scene blockquote{margin:0 0 10px;padding-inline-start:12px;border-inline-start:4px solid #b07c32;line-height:1.7;overflow-wrap:anywhere}
+.delx-step{display:grid;gap:9px}
+.delx-step h5{margin:0;font-size:1rem}
+.delx-cues{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+.delx-cues button{width:100%;min-height:48px;padding:10px 12px;border:1px solid #c8b99f;border-radius:8px;background:#fff;color:#30291e;text-align:start;font:inherit;line-height:1.5;cursor:pointer;overflow-wrap:anywhere}
+.delx-cues button[aria-pressed="true"]{border-color:#79511c;background:#fff0d5;box-shadow:inset 4px 0 #79511c}
+.delx-option{display:flex;gap:10px;align-items:flex-start;min-width:0;padding:10px;border:1px solid #e5ddcf;border-radius:8px;line-height:1.6;cursor:pointer}
+.delx-option input{flex:0 0 auto;width:20px;height:20px;margin:2px 0 0;accent-color:#79511c}
+.delx-option span{overflow-wrap:anywhere}
+.delx-step label[for^="delx-explanation"]{display:grid;gap:7px;font-weight:700;line-height:1.5}
+.delx-step textarea{width:100%;min-width:0;min-height:82px;padding:10px;border:1px solid #98866a;border-radius:8px;color:inherit;font:inherit;resize:vertical}
+.daily-expression-lab button[data-delx-action],.delx-reset{min-height:44px;justify-self:start;padding:9px 14px;border:1px solid #79511c;border-radius:8px;background:#fff;color:#68430e;font:inherit;font-weight:750;cursor:pointer;overflow-wrap:anywhere}
+.daily-expression-lab button[data-delx-action]:hover,.delx-reset:hover{background:#fff0d5}
+.delx-status{min-height:1.5em;margin:0;color:#68430e;font-weight:700;line-height:1.6;overflow-wrap:anywhere}
+.delx-next-line{margin:0;padding:10px 12px;border-inline-start:4px solid #b07c32;background:#fff6e7;line-height:1.6;overflow-wrap:anywhere}
+.daily-expression-lab :focus-visible{outline:3px solid #235f83;outline-offset:3px}
+@media(max-width:480px){.daily-expression-lab button[data-delx-action],.delx-reset{width:100%}.delx-scene,.delx-step{padding:10px}}
+@media(prefers-reduced-motion:reduce){.daily-expression-lab *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}

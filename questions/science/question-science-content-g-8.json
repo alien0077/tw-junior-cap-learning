@@ -2,23 +2,23 @@
   "id": "question-science-content-g-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月17日學校研究社的觀察中，連續觀察「G：演化與延續」3 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "人工選擇培育出不同品種的犬，這與自然選擇的共同點是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「G：演化與延續」時只依樣本的顏色（未記錄10天的時間與條件）"
+      "text": "都會使可遺傳變異在繁殖後代時的比例改變，但選擇者與選擇條件不同"
     },
     {
       "id": "B",
-      "text": "研究「G：演化與延續」時只依樣本的名稱推測，不進行觀察"
+      "text": "兩者都不需要遺傳變異"
     },
     {
       "id": "C",
-      "text": "研究「G：演化與延續」時只觀察一次外形，便排除所有其他證據"
+      "text": "人工選擇一定不會造成族群差異"
     },
     {
       "id": "D",
-      "text": "連續10天研究「G：演化與延續」並在相同條件下多次觀察到新細胞形成"
+      "text": "自然選擇一定由人類決定目標"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「G：演化與延續」。"
+    "value": "A",
+    "explanation": "人工與自然選擇都利用遺傳變異造成族群比例改變，差別在於選擇壓力是否由人類刻意設定。 正確答案為選項 A：「都會使可遺傳變異在繁殖後代時的比例改變，但選擇者與選擇條件不同」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的演化、遺傳變異、族群資料及證據判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 G 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-g"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-g",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "演化、遺傳變異、自然選擇與證據判讀",
+      "pattern": "取由化石、性狀、族群資料與環境條件推論演化機制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由化石、性狀、族群資料與環境條件推論演化機制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找共同的遺傳與繁殖機制，再比較選擇來源。",
+  "solutionSteps": [
+    "圈出演化單位、族群變異、遺傳、環境選擇與世代資料。",
+    "檢查是否有化石年代、對照族群、繁殖成功率或基因頻率等證據。",
+    "套用本題原理：人工與自然選擇都利用遺傳變異造成族群比例改變，差別在於選擇壓力是否由人類刻意設定。",
+    "排除把個體意志當演化機制、只看單一樣本或過度外推的選項，答案為「都會使可遺傳變異在繁殖後代時的比例改變，但選擇者與選擇條件不同」。",
+    "回查主張是否同時符合變異、遺傳、差異繁殖與時間尺度。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

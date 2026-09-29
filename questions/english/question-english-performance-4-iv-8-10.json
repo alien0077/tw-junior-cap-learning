@@ -2,23 +2,23 @@
   "id": "question-english-performance-4-iv-8-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「4-Ⅳ-8／提示寫簡短段落」task, what is the best way to prepare question 10?",
+  "prompt": "A student must recommend a route for classmates walking to an evening event. The map marks a well-lit main street that enters campus through the east gate; the notice says the east gate closes at 6:00 p.m.; the timetable shows the last school shuttle leaves at 5:50. Which plan uses all three pieces of information responsibly?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 4-Ⅳ-8／提示寫簡短段落."
+      "text": "Recommend the east gate at 6:10 because the shuttle runs later than usual."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 4-Ⅳ-8／提示寫簡短段落."
+      "text": "Recommend the lit main street, tell classmates to arrive before the east gate closes, and note that anyone needing the shuttle must leave before 5:50."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 4-Ⅳ-8／提示寫簡短段落."
+      "text": "Say every route is equally safe and omit the gate and shuttle times."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 4-Ⅳ-8／提示寫簡短段落."
+      "text": "Copy the three facts as a list but do not explain what classmates should do."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,49 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 4-Ⅳ-8／提示寫簡短段落, question 10."
+    "value": "B",
+    "explanation": "B connects the route's lighting to safety and preserves both time constraints without inventing a later shuttle. A contradicts the timetable and gate notice; C makes an unsupported safety claim; D includes facts but never turns them into a useful recommendation."
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://web.tdvs.ntct.edu.tw/mediafile/1040/news/294/2025-11/2025112610306_0.pdf",
+    "sourceLocator": "南投縣第四屆縣長盃國中英文閱讀測驗暨引導式寫作比賽測驗（官方公開試卷）；PDF印刷頁第3頁，第三部分引導式寫作第1題；評分含內容與組織，任務要求交代事件、行動、感受及學習所得。",
+    "authoringNote": "依官方課綱能力及公開試題的段落組織／引導寫作型態獨立命題；只借鑑 pattern，不重製任何原卷文字、選項、圖表或答案。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-4-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-4-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://web.tdvs.ntct.edu.tw/mediafile/1040/news/294/2025-11/2025112610306_0.pdf",
+      "title": "南投縣第四屆縣長盃國中英文閱讀測驗暨引導式寫作比賽測驗（官方公開試卷）",
+      "year": "114",
+      "subject": "english",
+      "locator": "PDF印刷頁第3頁，第三部分引導式寫作第1題；評分含內容與組織，任務要求交代事件、行動、感受及學習所得。",
+      "observedPattern": "引導寫作以多個明確內容要求與組織評分檢驗讀者能否扣題、安排支持內容並形成完整段落。本題只改寫其命題型態以練習「integrating constraints and evidence」，題幹、選項、情境與答案均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://www.tdvs.ntct.edu.tw/mediafile/1040/news/294/2023-12/2023121175637_1.pdf",
+      "title": "南投縣第二屆縣長盃國中學生英文閱讀測驗暨引導式寫作比賽測驗試題",
+      "year": "112",
+      "subject": "english",
+      "locator": "PDF印刷頁第7頁，第二部分引導式寫作第1題；100字以上說明型短文，評分明列內容與組織。",
+      "observedPattern": "說明型提示要求學生先表達可發展的中心主張，再用相關理由組織成段落。本題只改寫其命題型態以練習「integrating constraints and evidence」，題幹、選項、情境與答案均為原創。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "多來源段落先分清每份資料能支持什麼，再核對限制是否互相衝突；結論只能強於資料允許的範圍，不能自行補造班次或安全保證。",
+  "solutionSteps": [
+    "把三項資料分開記錄：地圖支持照明較好的街道；公告限制東門須在六點前通過；時刻表限制搭車者五點五十前離校。",
+    "用讀者需求檢查推薦內容：步行安全要選亮路，校門與接駁車時間則是不同的行程條件。",
+    "B保留三項證據並分別提出對應行動，沒有把門禁時間誤當成接駁車發車時間。",
+    "A把已知時刻改成『更晚』且安排在關門後，與資料矛盾；C聲稱所有路線同樣安全，資料並未比較所有路線。",
+    "D雖沒有篡改數字，卻缺少如何行動的主旨句；寫作要把事實組織成讀者能採取的建議。"
+  ]
 }

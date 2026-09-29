@@ -2,41 +2,78 @@
   "id": "question-science-content-jc-iv-6-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年8月17日河川觀測站的觀察中，針對「Jc-Ⅳ-6：化學電池的放電與充電」提出可檢驗的科學問題，若比較 5 組、每組取樣 10 份資料，哪一項設計最適當？",
+  "prompt": "簡易化學電池中兩種不同金屬片插入電解質溶液，電解質的主要作用是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "提供可移動離子，使內部電荷能維持平衡並完成反應迴路"
     },
     {
       "id": "B",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時只改變攪拌速度，其餘條件一致，設置5組、每組取樣10份並各重複測量4次"
+      "text": "讓電子直接穿過溶液取代外電路"
     },
     {
       "id": "C",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時只測量5組中的一組就直接下結論"
+      "text": "使兩金屬完全不反應"
     },
     {
       "id": "D",
-      "text": "研究「Jc-Ⅳ-6：化學電池的放電與充電」時先決定結論，再挑選支持結論的10筆資料"
+      "text": "只用來冷卻金屬片"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jc-iv-6"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Jc-Ⅳ-6：化學電池的放電與充電」。"
+    "value": "A",
+    "explanation": "電解質中的離子可移動，協助內部電荷平衡與反應持續；電子主要經外電路移動。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的化學電池、電極、電解質、放電／充電與氧化還原能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jc-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jc-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "化學電池、電流、電極與資料判讀",
+      "pattern": "取由電池構造、電流現象與反應資料推論能量轉換及電極作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由電池構造、電流現象與反應資料推論能量轉換及電極作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "電池、電解質、電能與生活科技情境",
+      "pattern": "取從電路、電池資料與生活裝置判斷化學能與電能轉換的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從電路、電池資料與生活裝置判斷化學能與電能轉換的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "區分外電路的電子移動和內部電解質的離子移動。",
+  "solutionSteps": [
+    "找出外電路與溶液兩個通道。",
+    "判斷電子和離子各自能移動的位置。",
+    "確認溶液中的離子維持電荷平衡。",
+    "排除電子直接穿液、停止反應及單純冷卻。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

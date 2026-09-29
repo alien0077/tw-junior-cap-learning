@@ -2,23 +2,23 @@
   "id": "question-science-content-kc-iv-5-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年4月4日學校研究社的觀察中，將電壓 21 V 加在電阻 3 Ω 的元件兩端，研究「Kc-Ⅳ-5：載流導線受磁力與電動機」時，電流約為多少？",
+  "prompt": "矩形線圈兩側的載流導線在磁場中受到方向相反的力，為何可能使線圈轉動？",
   "options": [
     {
       "id": "A",
-      "text": "63 A"
+      "text": "兩力作用線分開形成力矩"
     },
     {
       "id": "B",
-      "text": "0.142857 A"
+      "text": "兩力完全抵消所以一定不動"
     },
     {
       "id": "C",
-      "text": "7 A"
+      "text": "線圈自動產生重力"
     },
     {
       "id": "D",
-      "text": "24 A"
+      "text": "磁場只會吸引線圈"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "C",
-    "explanation": "依歐姆定律 I＝V/R＝21/3＝7 A。 本題對應 KG「Kc-Ⅳ-5：載流導線受磁力與電動機」。"
+    "value": "A",
+    "explanation": "大小相近、方向相反但作用線分開的力可形成力偶，合力可能為零而合力矩不為零，於是線圈轉動。 正確答案為選項 A：「兩力作用線分開形成力矩」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題的載流導線受力、磁場方向、電動機、換向與實驗控制能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均以 Kc-Ⅳ-5 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-kc-iv-5"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-kc-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫",
+      "year": "109-115",
+      "locator": "載流導線、磁力方向、電動機與實驗變因",
+      "pattern": "取電流—磁場—受力三向關係與控制變因能力方向，重新設計方向檢查實驗。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取電流—磁場—受力三向關係與控制變因能力方向，重新設計方向檢查實驗。"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考",
+      "year": "109-115",
+      "locator": "磁場、電流、線圈轉矩與能量轉換",
+      "pattern": "取由直導線受力連到線圈、換向與馬達模型的推理方向，未複製題幹、選項、圖表或答案。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取由直導線受力連到線圈、換向與馬達模型的推理方向，未複製題幹、選項、圖表或答案。"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "locator": "電動機、受力方向、換向器與實驗設計",
+      "pattern": "取方向判讀、力矩與裝置故障分析能力方向，全部以本課原創文字改寫。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取方向判讀、力矩與裝置故障分析能力方向，全部以本課原創文字改寫。"
+    }
+  ],
+  "solutionStrategy": "先分開計算合力與力矩，再看兩側作用線是否形成轉動效果。",
+  "solutionSteps": [
+    "圈出傳統電流、磁場、導線有效段、角度與線圈位置。",
+    "依本題情境套用判準：先分開計算合力與力矩，再看兩側作用線是否形成轉動效果。",
+    "用左手規則、力偶或能量鏈檢查方向與大小。",
+    "排除把磁力當吸引、把受力當電流方向或忽略換向的選項。",
+    "回查答案是否符合裝置條件，並寫出故障或實驗限制。"
+  ]
 }

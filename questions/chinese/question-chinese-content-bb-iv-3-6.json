@@ -2,41 +2,76 @@
   "id": "question-chinese-content-bb-iv-3-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "作者描寫海浪反覆拍岸，最後說「我也重新整理心情」，海浪主要作用為何？",
+  "prompt": "觀察記錄：『同一棵樹上午有四隻蝴蝶停留，下午只看到一隻；觀察期間沒有記錄風速。』最穩妥的結論是？",
   "options": [
     {
       "id": "A",
-      "text": "烘托反覆思考後的心境"
+      "text": "下午蝴蝶一定因風速變大而減少"
     },
     {
       "id": "B",
-      "text": "說明海岸工程"
+      "text": "上午與下午看到的數量不同，但原因仍可能有多種，資料不足以確定"
     },
     {
       "id": "C",
-      "text": "提供海水成分"
+      "text": "這棵樹下午一定沒有花蜜"
     },
     {
       "id": "D",
-      "text": "交代人物職業"
+      "text": "蝴蝶只在上午活動"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-bb-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "反覆拍岸與反覆整理心情相互呼應，烘托人物心境。"
+    "value": "B",
+    "explanation": "記錄只支持兩個時段的觀察數量不同，未記錄風速也沒有其他控制資料，不能指定唯一原因或推成普遍規則。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "物、自然與生命感悟；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究自然觀察、景物象徵、生命感悟與推論界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫物自然生命感悟題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bb-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "自然觀察、象徵與文本推論",
+      "observedPattern": "公立學校國文評量要求區分自然觀察與生命感悟、辨認象徵的證據、比較抒情與記錄任務，並限制過度推論；本題使用全新自然情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "景物描寫、生命感悟與證據",
+      "observedPattern": "公立學校國文評量要求區分自然觀察與生命感悟、辨認象徵的證據、比較抒情與記錄任務，並限制過度推論；本題使用全新自然情境與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先寫出資料直接顯示的差異，再列出未測量的變因與可能替代解釋。",
+  "solutionSteps": [
+    "比較上午四隻與下午一隻的觀察結果。",
+    "注意沒有風速及其他環境資料。",
+    "B 正確控制結論範圍。",
+    "A、C、D 都把未測量因素或單日觀察當成確定規律。",
+    "提出同步記錄溫度、風速與花況的重複觀察。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

@@ -2,41 +2,84 @@
   "id": "question-science-content-na-iv-7-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年2月8日校園實驗室的觀察中，針對「Na-Ⅳ-7：減量、回收、再利用與綠能促進永續」提出可檢驗的科學問題，若比較 5 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "若 LED 燈維持相近照度但使用者因此把更多區域整夜開燈，應檢查什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Na-Ⅳ-7：減量、回收、再利用與綠能促進永續」時只改變光照時間，其餘條件一致，設置5組、每組取樣16份並各重複測量5次"
+      "text": "只看單盞功率"
     },
     {
       "id": "B",
-      "text": "研究「Na-Ⅳ-7：減量、回收、再利用與綠能促進永續」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "設備效率、照明總時數、區域數與總耗電，判斷節省是否被使用量反彈抵銷"
     },
     {
       "id": "C",
-      "text": "研究「Na-Ⅳ-7：減量、回收、再利用與綠能促進永續」時只測量5組中的一組就直接下結論"
+      "text": "只看燈具外觀"
     },
     {
       "id": "D",
-      "text": "研究「Na-Ⅳ-7：減量、回收、再利用與綠能促進永續」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "因效率提高就停止記錄用電"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-na-iv-7"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Na-Ⅳ-7：減量、回收、再利用與綠能促進永續」。"
+    "value": "B",
+    "explanation": "單位效率改善可能被使用時間或範圍增加抵銷；永續判斷需看相同服務下的總投入和行為變化。 正確答案為選項 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與生態資料的減量、再利用、回收、綠能、能源效率、生命週期與永續判讀能力方向；本題為 Na-Ⅳ-7 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-na-iv-7"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-na-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "資源使用、能源、回收、環境影響與資料推理",
+      "observedPattern": "取公開自然科對資源、能源、回收與環境資料比較的能力方向，另寫校園方案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源轉換、效率、材料與生命週期判讀",
+      "observedPattern": "取公開會考對服務相同、效率、能源和資料限制的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://market.cloud.edu.tw/resources/web/1807720",
+      "title": "教育雲國中生態與環境教學資源",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "生態保育、資源循環與永續行動",
+      "observedPattern": "取公開教育資源對資源循環與環境行動的能力方向，重新設計餐具和綠能情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把每盞功率、數量、時數和照度一起記錄，再比較改裝前後總量。",
+  "solutionSteps": [
+    "先界定要維持的服務，例如一份餐點、飲水或相同照度。",
+    "畫出原料、製造、使用、清洗／運輸、回收與報廢的資源流。",
+    "核對生命週期、供應穩定、衛生安全、後端處理和反彈效應資料。",
+    "排除只看標章、單次數字、桶子數或忽略服務品質的選項，答案為 B。",
+    "用條件式結論回查是否能被重測：單位效率改善可能被使用時間或範圍增加抵銷；永續判斷需看相同服務下的總投入和行為變化。"
+  ]
 }

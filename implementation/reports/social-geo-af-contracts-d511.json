@@ -1,0 +1,27 @@
+{
+  "date": "2026-09-29",
+  "units": [
+    "cur-social-content-geo-af-iv-1",
+    "cur-social-content-geo-af-iv-2",
+    "cur-social-content-geo-af-iv-3"
+  ],
+  "change": [
+    "Preserved all existing lesson manuscripts and questions; mapped each unit's own service/accessibility, urbanization/equity, or regional-comparison evidence sequence to prediction, analytical manipulation, observation, explanation, and transfer stages.",
+    "Made the existing local-text or embedded-data fallbacks explicit in test cases.",
+    "Corrected Af-IV-3 browser coverage to distinguish six summary sections from the seven complete authored teaching sections, and blocked off-origin requests during the test."
+  ],
+  "tests": {
+    "unitRuntimeContracts": "PASS for all three social geo-af units",
+    "browserAfIv2": "PASS: four keyboard guided-choice steps, wrong-answer retry/correct feedback, polite live region, 320/375/768px, zero page errors",
+    "browserAfIv3": "PASS: 13 visible sections (six summaries plus seven authored teaching sections), four keyboard guided-choice steps, external requests blocked, 320/375/768px, zero page errors",
+    "specValidation": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "1,026/1,027 passed; only English learning-performance remains",
+    "lessons": "unchanged",
+    "questions": "unchanged",
+    "jsonAndDiffCheck": "pending"
+  },
+  "notClaimed": [
+    "Full automated-QA objective remains incomplete until the final English contract passes.",
+    "No commit or push was made."
+  ]
+}

@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年7月19日社區環境站的觀察中，一個物體質量為 859 g、體積為 70 cm³，研究「Eb-Ⅳ-2：力矩與槓桿」時，其密度為何？",
+  "prompt": "下列哪種敘述正確描述槓桿平衡？",
   "options": [
     {
       "id": "A",
-      "text": "12.2714 g/cm³"
+      "text": "同一支點的順時針力矩總和等於逆時針力矩總和，並且檢查合力"
     },
     {
       "id": "B",
-      "text": "929 g/cm³"
+      "text": "只要兩端力大小相等就一定平衡"
     },
     {
       "id": "C",
-      "text": "0.0814901 g/cm³"
+      "text": "只要兩端距離相等就一定平衡"
     },
     {
       "id": "D",
-      "text": "60130 g/cm³"
+      "text": "槓桿只要不動就代表沒有任何力"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "密度＝質量÷體積＝859÷70＝12.2714 g/cm³。 本題對應 KG「Eb-Ⅳ-2：力矩與槓桿」。"
+    "value": "C",
+    "explanation": "槓桿轉動平衡需比較兩方向力矩；若要整體靜力平衡，還需檢查合力為零，不能只看距離或力大小。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作力臂、力矩、槓桿平衡與工具分類的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-2"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "槓桿力臂、力矩與平衡題組",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%835-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "拔釘器、槓桿與簡單機械題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.mcjhs.tp.edu.tw/?q=zh-hant%2Fdownload%2Ffile%2Ffid%2F9952",
+      "title": "臺北市立明德國中自然與生活科技科九上補考題庫",
+      "year": "113",
+      "locator": "扳手施力方向、力矩與簡單機械題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開理化題常用門把、扳手、翹翹板、拔釘器與槓桿圖，要求辨認支點、力臂、順逆時針力矩及三類槓桿；本題只改寫能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把三類常見誤判逐一排除，回到力矩和合力兩項條件。",
+  "solutionSteps": [
+    "選定同一支點。",
+    "計算順時針力矩總和。",
+    "計算逆時針力矩總和並比較。",
+    "再確認平移合力是否為零。",
+    "因此完整敘述是 C。"
+  ]
 }

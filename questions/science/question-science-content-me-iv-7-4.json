@@ -2,41 +2,84 @@
   "id": "question-science-content-me-iv-7-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年5月26日河川觀測站的觀察中，空氣射向金屬面時，光線與鏡面法線的入射角為 75°，研究「Me-Ⅳ-7：聲音特性研究與噪音防治」時，反射角為何？",
+  "prompt": "聲音在空氣中傳到耳朵時，哪個說法正確？",
   "options": [
     {
       "id": "A",
-      "text": "15°（「Me-Ⅳ-7：聲音特性研究與噪音防治」中把入射角誤當折射角）"
+      "text": "空氣分子整團從喇叭跑到耳朵"
     },
     {
       "id": "B",
-      "text": "75°（空氣射向金屬面）"
+      "text": "聲源振動造成介質中疏密變化傳遞，分子主要在平衡位置附近振動"
     },
     {
       "id": "C",
-      "text": "150°（「Me-Ⅳ-7：聲音特性研究與噪音防治」中把入射角加倍）"
+      "text": "聲音不需要介質"
     },
     {
       "id": "D",
-      "text": "105°（「Me-Ⅳ-7：聲音特性研究與噪音防治」中以平角計算）"
+      "text": "只有真空能傳聲"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-me-iv-7"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "反射定律指出反射角等於入射角，因此為 75°。 本題對應 KG「Me-Ⅳ-7：聲音特性研究與噪音防治」。"
+    "explanation": "聲音是介質中的機械波，空氣分子傳遞局部擾動而非整團長距離搬運；真空不能以此方式傳播聲音。 正確答案為選項 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的音調、響度、音色、波形、聲速、反射、噪音測量與防治能力方向；本題為 Me-Ⅳ-7 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-me-iv-7"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-me-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "聲音特性、波形、響度與噪音資料",
+      "observedPattern": "取公開自然科題型對音調、響度、音色與測量判讀的能力方向，另寫聲音情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "波動、聲音、資料與實驗控制",
+      "observedPattern": "取公開會考對波動概念、控制條件和圖表證據的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "聲音傳播、反射與生活應用",
+      "observedPattern": "取公立學校自然科對聲音傳播、反射與生活防護的能力方向，重新設計選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "畫出聲源、介質與受體，區分介質的局部振動和波動能量的傳遞。",
+  "solutionSteps": [
+    "找出聲源、介質、受體及題目要求的物理量。",
+    "將頻率、振幅、波形、聲速、聲級與測量條件分開標記。",
+    "用公式或控制變因逐步檢查資料，並寫出單位與假設。",
+    "排除把相對波形當校準分貝、把音調當音量或忽略安全測量的選項，答案為 B。",
+    "回查結論是否可重測並保留限制：聲音是介質中的機械波，空氣分子傳遞局部擾動而非整團長距離搬運；真空不能以此方式傳播聲音。"
+  ]
 }

@@ -49,7 +49,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "在自編校園氣候資料中辨認趨勢、拆解風險，並用減緩／調適框架設計可檢查的回應。",
@@ -101,6 +101,17 @@
         ],
         "answer": "A",
         "feedback": "好的結論要能指出作用機制、適用範圍與仍需查證的部分。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "若兩種未來氣候情境下方案效果不同，最合理的下一步是什麼？",
+        "options": [
+          "比較不同情境、族群受益與成本，優先採取可調整且不把風險轉嫁給弱勢的措施",
+          "只採用單一最樂觀情境，忽略不確定性與分配差異",
+          "只看總降溫量，不記錄誰承擔維護成本或副作用"
+        ],
+        "answer": "A",
+        "feedback": "調適決策要面對不確定性、可調整性與公平性；總平均效果不能取代群體和成本分析。"
       }
     ]
   },
@@ -108,40 +119,55 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一版國中自然；公開課程計畫與版本比較研究可定位資料",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "氣候變遷的成因、影響與因應行動；以九年級地球科學範圍交叉定位",
-      "sourceUrl": "https://teric.naer.edu.tw/wSite/PDFReader?fileName=1587618396421&format=pdf&xmlId=2052000",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；全球氣候變遷與調適 概念、探究與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "assessment-pattern"],
-      "outcome": "研究指出南一在版本序列中較早把具體節能、節水等行動連到較抽象的減緩概念，且較注意健康等人類系統影響；本課將此線索改寫成排放—風險—方案的證據鏈。",
-      "copyrightBoundary": "只採公開研究所揭示的概念範圍與版本差異，不複製南一課文、圖表、習題、答案或教師用語。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄hanlin公立校方或官方公開結構對「全球氣候變遷與調適」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒版國中自然公開數位資源",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "氣候變遷的減緩與調適；公開自然領域資源中的單元定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/j/nature/index.html",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；全球氣候變遷與調適 概念、探究與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "公開資源與課程計畫交叉顯示本主題應同時處理減緩、調適與生活影響；本課把防洪、熱危害與能源選擇放進可比較的校園方案任務。",
-      "copyrightBoundary": "只研究公開單元定位與教學方向；正文、資料卡、互動步驟、例題與回饋均重新創作，不複製康軒受保護內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「全球氣候變遷與調適」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林版國中自然公開數位資源與版本比較研究",
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "氣候變遷的衝擊、減緩與調適；公開教學資源與研究表格交叉定位",
-      "sourceUrl": "https://jr.hle.com.tw/jge-teach/",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；全球氣候變遷與調適 概念、探究與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "公開資源提供以氣候主題站與情境化素材連結科學概念的方向；版本比較研究也提醒各版本對社會系統調適的涵蓋不均，本課因此加入弱勢、基礎設施與尺度比較。",
-      "copyrightBoundary": "只採公開頁面的主題定位與教學方向，不複製翰林課文、插圖、活動、題目、答案或影音文字。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「全球氣候變遷與調適」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -149,14 +175,25 @@
       "publisher": "nani",
       "edition": "南一版國中自然公開資料與版本比較研究",
       "sourceType": "public-web",
-      "sourceLocator": "NAER《教科書研究》第5卷第2期，氣候變遷因應行動主題概念表；南一版欄位與國中階段對照",
+      "sourceLocator": "https://teric.naer.edu.tw/wSite/PDFReader?fileName=1587618396421&format=pdf&xmlId=2052000；NAER《教科書研究》第5卷第2期，氣候變遷因應行動主題概念表；南一版欄位與國中階段對照",
       "reviewedAt": "2026-09-01",
       "findings": {
-        "concepts": ["減緩包含減少排放、節能與資源循環；調適則回應氣候衝擊與風險。", "氣候變遷影響不只在生態，也涉及健康與生活系統。"],
-        "representations": ["從具體生活行動逐步連到較抽象的策略與風險概念。"],
-        "examplesOrEvidence": ["版本比較研究可定位節能、節水、健康與調適策略的分布。"],
-        "misconceptions": ["把個人節能行動等同於全部氣候政策，或把調適誤解為能消除所有風險。"],
-        "assessmentEmphasis": ["比較措施的作用、尺度與限制，並由資料支持有條件結論。"]
+        "concepts": [
+          "減緩包含減少排放、節能與資源循環；調適則回應氣候衝擊與風險。",
+          "氣候變遷影響不只在生態，也涉及健康與生活系統。"
+        ],
+        "representations": [
+          "從具體生活行動逐步連到較抽象的策略與風險概念。"
+        ],
+        "examplesOrEvidence": [
+          "版本比較研究可定位節能、節水、健康與調適策略的分布。"
+        ],
+        "misconceptions": [
+          "把個人節能行動等同於全部氣候政策，或把調適誤解為能消除所有風險。"
+        ],
+        "assessmentEmphasis": [
+          "比較措施的作用、尺度與限制，並由資料支持有條件結論。"
+        ]
       },
       "licenseBoundary": "只使用公開研究中的概念分布與版本差異，不複製教科書、習作、教師用書或題目內容。"
     },
@@ -164,14 +201,25 @@
       "publisher": "kanghsuan",
       "edition": "康軒版國中自然公開數位資源",
       "sourceType": "public-web",
-      "sourceLocator": "康軒國中自然公開數位資源與公開課程計畫；氣候變遷減緩與調適主題定位",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/j/nature/index.html；康軒國中自然公開數位資源與公開課程計畫；氣候變遷減緩與調適主題定位",
       "reviewedAt": "2026-09-01",
       "findings": {
-        "concepts": ["需把氣候變遷的影響與減緩、調適兩類因應策略放在同一脈絡。", "科學概念應連結生活觀察與防災情境。"],
-        "representations": ["以生活情境、資料閱讀與方案討論將抽象概念具體化。"],
-        "examplesOrEvidence": ["公開自然資源可定位氣候主題與生活應用方向。"],
-        "misconceptions": ["只看單一天氣事件下結論，或把防洪與節電混作同一類措施。"],
-        "assessmentEmphasis": ["要求學生解釋證據如何支持策略判斷，而非只背名詞。"]
+        "concepts": [
+          "需把氣候變遷的影響與減緩、調適兩類因應策略放在同一脈絡。",
+          "科學概念應連結生活觀察與防災情境。"
+        ],
+        "representations": [
+          "以生活情境、資料閱讀與方案討論將抽象概念具體化。"
+        ],
+        "examplesOrEvidence": [
+          "公開自然資源可定位氣候主題與生活應用方向。"
+        ],
+        "misconceptions": [
+          "只看單一天氣事件下結論，或把防洪與節電混作同一類措施。"
+        ],
+        "assessmentEmphasis": [
+          "要求學生解釋證據如何支持策略判斷，而非只背名詞。"
+        ]
       },
       "licenseBoundary": "只採公開頁面的主題定位與教學方向，本文不重製康軒文字、圖片、活動、題目或答案。"
     },
@@ -179,23 +227,44 @@
       "publisher": "hanlin",
       "edition": "翰林版國中自然公開數位資源與版本比較研究",
       "sourceType": "public-web",
-      "sourceLocator": "翰林國中自然公開數位資源與公開世界氣候主題站入口；氣候衝擊與行動情境定位",
+      "sourceLocator": "https://jr.hle.com.tw/jge-teach/；翰林國中自然公開數位資源與公開世界氣候主題站入口；氣候衝擊與行動情境定位",
       "reviewedAt": "2026-09-01",
       "findings": {
-        "concepts": ["以情境化資料連結氣候變遷衝擊、能源選擇與調適行動。", "不同社區的暴露、脆弱度與資源差異會造成不同風險。"],
-        "representations": ["使用圖表、資料卡與方案比較，把科學判斷延伸到公共決策。"],
-        "examplesOrEvidence": ["公開資源提供氣候主題化與跨情境學習方向；版本研究顯示社會系統調適仍需補強。"],
-        "misconceptions": ["把一個地區或單一案例推論成所有地區都相同。"],
-        "assessmentEmphasis": ["分辨證據、推論與未知，並提出可追蹤的調適改進。"]
+        "concepts": [
+          "以情境化資料連結氣候變遷衝擊、能源選擇與調適行動。",
+          "不同社區的暴露、脆弱度與資源差異會造成不同風險。"
+        ],
+        "representations": [
+          "使用圖表、資料卡與方案比較，把科學判斷延伸到公共決策。"
+        ],
+        "examplesOrEvidence": [
+          "公開資源提供氣候主題化與跨情境學習方向；版本研究顯示社會系統調適仍需補強。"
+        ],
+        "misconceptions": [
+          "把一個地區或單一案例推論成所有地區都相同。"
+        ],
+        "assessmentEmphasis": [
+          "分辨證據、推論與未知，並提出可追蹤的調適改進。"
+        ]
       },
       "licenseBoundary": "只採公開資源的單元方向與研究定位，不複製翰林課文、插圖、影音、活動、題目或答案。"
     }
   ],
   "fusionRecord": {
-    "commonCore": ["氣候變遷需以長期、多來源證據理解。", "減緩降低成因，調適降低暴露或脆弱度，兩者可互補。", "方案必須放回特定地區、群體、時間尺度與限制評估。"],
-    "versionDifferences": ["南一版的具體節能與健康線索較適合建立生活入口；康軒版的生活與防災情境適合做資料推理；翰林版的主題化資源適合延伸跨尺度方案，但社會系統脆弱度需補足。"],
-    "originalAdditions": ["校園兩測站資料卡與長短期尺度辨識。", "暴露—脆弱度分析及熱風險方案比較。", "受益與成本分布檢核及可追蹤指標設計。"],
-    "llmSynthesisNote": "LLM 先以官方自然科課綱與 Knowledge Graph 確認氣候變遷、減緩、調適和證據推理的核心，再比較三版本公開定位與研究資料，重新組織成不複製版本文字的完整課文；因 Terra 第二輪尚未執行，狀態維持 draft。"
+    "commonCore": [
+      "氣候變遷需以長期、多來源證據理解。",
+      "減緩降低成因，調適降低暴露或脆弱度，兩者可互補。",
+      "方案必須放回特定地區、群體、時間尺度與限制評估。"
+    ],
+    "versionDifferences": [
+      "南一版的具體節能與健康線索較適合建立生活入口；康軒版的生活與防災情境適合做資料推理；翰林版的主題化資源適合延伸跨尺度方案，但社會系統脆弱度需補足。"
+    ],
+    "originalAdditions": [
+      "校園兩測站資料卡與長短期尺度辨識。",
+      "暴露—脆弱度分析及熱風險方案比較。",
+      "受益與成本分布檢核及可追蹤指標設計。"
+    ],
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-cross-global-climate-adaptation、南一／康軒／翰林公開版本研究限制及三筆公立國中公開自然科題型能力模式，獨立融合天氣與氣候尺度、溫室效應、排放、風險、減緩、調適、公平與不確定性決策。題目與互動均重新設計，未複製受保護內容；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -271,13 +340,39 @@
       "https://www.naer.edu.tw/"
     ],
     "learningDesign": {
-      "type": "climate-adaptation-evidence-lab",
+      "type": "data-investigation",
       "objective": "以時間尺度與暴露—脆弱度資料區分減緩、調適及其分配影響。",
       "predictionPrompt": "同樣的高溫情境下，增加樹冠、降低排放與發布警報，哪種指標會先改變？",
+      "evidencePrompt": "請以短期天氣、長期氣候序列、排放、遮蔭、排水、暴露、脆弱度、受益群體、成本與副作用，說明減緩和調適方案的證據與限制。",
       "steps": [
-        {"action": "切換短期天氣資料與長期氣候序列，標記可支持的趨勢", "equation": "trend=long\u002dterm pattern"},
-        {"action": "調整排放、遮蔭與排水，記錄暴露、脆弱度和受益群體", "equation": "risk=hazard\u00d7exposure\u00d7vulnerability"},
-        {"action": "比較減緩與調適成效、成本及副作用後修正方案", "equation": "score=benefit\u002dcost\u002dsideEffects"}
+        {
+          "id": "step-1",
+          "action": "切換短期天氣資料與長期氣候序列，標記可支持的趨勢",
+          "equation": "trend=long-term pattern",
+          "reason": "短期天氣波動與長期氣候趨勢是不同時間尺度，先分開才能避免誤判。",
+          "feedback": "請標記資料時間範圍與可支持的趨勢，不要用單次高溫代表長期氣候變化。"
+        },
+        {
+          "id": "step-2",
+          "action": "調整排放、遮蔭與排水，記錄暴露、脆弱度和受益群體",
+          "equation": "risk=hazard×exposure×vulnerability",
+          "reason": "方案會同時改變危害、暴露與脆弱度，還可能讓不同群體受益不均，需分開記錄。",
+          "feedback": "請分別記錄排放、遮蔭、排水、暴露、脆弱度與受益群體，並保留公平性差異。"
+        },
+        {
+          "id": "step-3",
+          "action": "比較減緩與調適成效、成本及副作用後修正方案",
+          "equation": "score=benefit-cost-sideEffects",
+          "reason": "減緩與調適的成效、時間尺度、成本和副作用不同，應依新資料修正而非只追求單一分數。",
+          "feedback": "請把成效、成本與副作用分開比較，並寫出下一輪需要補測的指標。"
+        },
+        {
+          "id": "step-4",
+          "action": "切換不同氣候情境，檢查方案可調整性、分配公平與風險轉嫁",
+          "equation": "robustness=multi-scenario+equity+reversibility",
+          "reason": "同一措施在不同情境、社區與時間尺度可能產生不同結果；把弱勢暴露、維護責任與副作用分開，才能判斷是否穩健。",
+          "feedback": "若只算總平均，請補上至少兩個情境、一個受影響群體與一項可撤回或修正的設計。"
+        }
       ]
     }
   }

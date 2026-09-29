@@ -2,23 +2,23 @@
   "id": "question-science-content-fb-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年1月10日河川觀測站的觀察中，比較兩地「Fb：地球與太空」資料時，甲地迎風坡年雨量約 74700 mm、乙地背風坡約 51270 mm，最合理的做法是？",
+  "prompt": "月球表面坑洞很多而地球較少直接保留，合理原因之一是？",
   "options": [
     {
       "id": "A",
-      "text": "在「Fb：地球與太空」中只看 74700 mm 的單一數值便下結論"
+      "text": "月球沒有任何撞擊"
     },
     {
       "id": "B",
-      "text": "同時比較地形、風向、觀測期間與 74700、51270 mm 資料"
+      "text": "地球沒有岩石"
     },
     {
       "id": "C",
-      "text": "在「Fb：地球與太空」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "坑洞只會在白天形成"
     },
     {
       "id": "D",
-      "text": "在「Fb：地球與太空」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "地球有大氣、風化與板塊活動會改變或抹平表面"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Fb：地球與太空」。"
+    "value": "D",
+    "explanation": "地球的大氣可使小天體燒蝕，風化、侵蝕與板塊活動也會改變地表；月球缺乏類似作用。 正確答案為選項 D：「地球有大氣、風化與板塊活動會改變或抹平表面」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的地球運動、日月地、月相、潮汐與觀測能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Fb 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-fb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-fb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "地球自轉公轉、日月地、月相與天文觀測資料判讀",
+      "pattern": "取由週期、位置、光照與觀測資料推論地球與太空現象的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由週期、位置、光照與觀測資料推論地球與太空現象的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較兩個天體的環境條件與表面改造機制。",
+  "solutionSteps": [
+    "定位概念：圈出 Fb 地球與太空中的季節、月相、潮汐、天體運動或觀測條件。",
+    "整理證據：分開天體排列、運動方向、時間、觀測幾何與控制變因。",
+    "套用原理：地球的大氣可使小天體燒蝕，風化、侵蝕與板塊活動也會改變地表；月球缺乏類似作用。",
+    "排除干擾：依天體運動與觀測證據檢查，正確選項是「地球有大氣、風化與板塊活動會改變或抹平表面」。",
+    "最後回查：答案「地球有大氣、風化與板塊活動會改變或抹平表面」符合題幹，沒有把可能現象誇大成必然發生。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

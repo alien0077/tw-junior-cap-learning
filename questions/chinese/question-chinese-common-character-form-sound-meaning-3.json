@@ -2,23 +2,23 @@
   "id": "question-chinese-common-character-form-sound-meaning-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列哪一組詞語中的字形都正確？",
+  "prompt": "下列哪一句的用字最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "迫不及待、再接再厲"
+      "text": "他慨括說明研究結果。"
     },
     {
       "id": "B",
-      "text": "相形見拙、一籌莫展"
+      "text": "他感到慨念難忘。"
     },
     {
       "id": "C",
-      "text": "因地制宜、按步就班"
+      "text": "他概括說明研究結果。"
     },
     {
       "id": "D",
-      "text": "不徑而走、名列前矛"
+      "text": "這份概嘆令人動容。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "迫不及待與再接再厲皆為正確寫法；其餘含有絀、部、脛、茅等字的誤寫。"
+    "value": "C",
+    "explanation": "概括是歸納大意；感慨、慨念等混用會破壞詞義與字形。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
-    "sourceLocator": "114年國中教育會考國文科；第16題用字題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "原創題目來源界線 metadata 已補齊；內容與題型仍待第二輪 AI／Terra 複核，未據此宣稱真人或專家審定。"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究形音義、形近字與語境查證能力。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫常用字形音義題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-common-character-form-sound-meaning"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-common-character-form-sound-meaning",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "字音、字形與語境辨識",
+      "observedPattern": "公立學校國文評量將字形、字音、字義放進完整詞語與句子，要求依語境查證；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "形音義、錯別字與閱讀理解",
+      "observedPattern": "公立學校國文評量將字形、字音、字義放進完整詞語與句子，要求依語境查證；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找出句子要表達的是歸納、情緒或概念，再選對應字形。",
+  "solutionSteps": [
+    "讀題定位：圈出「慨／概」與完整詞語、句子，確認題目問形、音、義或查證流程。",
+    "找語境證據：觀察詞性、搭配、聲音與句意，不能只靠單字直覺；本題核心是「概括是歸納大意；感慨、慨念等混用會破壞詞義與字形。」",
+    "核對正解：選項 C 同時符合規範字形、讀音、詞義與句中功能。",
+    "排除誘答：檢查是否誤用同音字、形近字、孤立字義，或把本義硬套到引申語境。",
+    "回讀驗證：以字典注音與完整例句重新朗讀，確認形、音、義三者彼此一致。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

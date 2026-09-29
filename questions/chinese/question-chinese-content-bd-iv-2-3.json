@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bd-iv-2-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "作者主張「校園應增加遮蔭」，並指出操場測得的地表溫度比樹蔭下高 8°C。這筆資料在論證中最接近什麼角色？",
+  "prompt": "甲配送每餐平均等待8分鐘，乙記錄一天總耗電8度，卻說甲比乙有效率。哪項判斷正確？",
   "options": [
     {
       "id": "A",
-      "text": "單純的比喻對象"
+      "text": "數字相同所以可直接比較"
     },
     {
       "id": "B",
-      "text": "支持主張的證據"
+      "text": "指標、單位和時間基準不同，需先建立共同效率定義"
     },
     {
       "id": "C",
-      "text": "與主張無關的背景"
+      "text": "乙一定比較浪費"
     },
     {
       "id": "D",
-      "text": "反駁主張的結論"
+      "text": "等待時間就是耗電量"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "溫度差資料直接支持增加遮蔭有助降溫的主張，因此是證據。"
+    "explanation": "甲是每餐等待時間，乙是一天總耗電，測量對象、單位和分母不同，不能直接判定效率。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/01_114P_Chinese.pdf",
-    "sourceLocator": "114年國中教育會考國文科；研究閱讀理解、論證、比較與寫作分析能力方向（證據與主張關係）；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；另以官方語文領域課綱核對 Bd-Ⅳ-2（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究比較基準、比喻映射、同尺度資料與類比限制。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫比較比喻論證題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-bd-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bd-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較、比喻與論證判讀",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "比較基準、比喻映射與證據",
+      "observedPattern": "公立學校國文評量要求確認比較基準、同尺度資料、比喻映射與類比限制，並辨識論證是否超出證據；本題使用全新方案情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先對齊比較單位、期間和分母，再判斷數值或效率。",
+  "solutionSteps": [
+    "分別圈出每餐、一天、分鐘與度。",
+    "確認兩者測量的現象不同。",
+    "指出需要共同的效率定義。",
+    "B 避免把表面數字相同當作可比。",
+    "提出以每餐耗電與平均等待並列的比較設計。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

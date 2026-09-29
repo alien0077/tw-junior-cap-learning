@@ -2,23 +2,23 @@
   "id": "question-chinese-argument-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "若論據只描述一個人的經驗，最合理的判斷是？",
+  "prompt": "小宇減糖後自覺精神變好，作者因此主張減糖會讓所有人更有精神。要檢查這個因果主張，哪項補充資料最有力？",
   "options": [
     {
       "id": "A",
-      "text": "可作例子但不足以代表所有人"
+      "text": "再訪問幾位主動分享減糖經驗的人，確認他們的感受是否相似。"
     },
     {
       "id": "B",
-      "text": "一定能代表全體"
+      "text": "調查大家是否相信減糖有用，並把相信的人數當成效果。"
     },
     {
       "id": "C",
-      "text": "完全不能提供任何線索"
+      "text": "比較條件相近的不同飲食組別，事先訂定精神狀態指標並記錄可能影響因素。"
     },
     {
       "id": "D",
-      "text": "必然是統計結論"
+      "text": "持續記錄小宇一人的感受更久，便能證明所有人都有相同效果。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "個案可提供線索，但代表性有限。"
+    "value": "C",
+    "explanation": "C 提供比較組、預先界定的觀察指標，並考慮其他影響因素，較能檢查減糖是否與精神變化有因果關係。再收集相似自選個案仍有選樣偏差；民眾相信與否不是效果；延長單一個案紀錄也無法推廣到所有人。正確答案：C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-argument-6.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceLocator": "高雄市立鹽埕國中114學年度第2學期九年級第1次段考國文第45題（試卷第4頁）：判讀敘述正確性與訊息是否充分；本題另以全新語料改寫因果證據充分性，未複製原題。",
+    "authoringNote": "依官方課綱與單元 KG 獨立命題，使用原創語料與選項，未複製公校原題；題庫首輪AI內容校核已於2026-09-27更新，公開試題各筆來源仍須逐題確認定位與改寫界線，完成前維持draft；不進行Terra複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-argument-evidence-basics"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-27",
+  "lessonId": "lesson-chinese-argument-evidence-basics",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；只取議論文主張、論據與推論的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "議論文主張、論據與推論",
+      "observedPattern": "公立學校國文評量常要求辨識主張、理由與證據，並檢查樣本、關聯、反論、結論範圍及可檢驗性；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；只取證據品質、反論與結論範圍的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "試卷第4頁第45題：依敘述正確性及訊息充分程度判讀三項陳述",
+      "observedPattern": "題目要求讀者依文章資料判定多項敘述是正確、錯誤或訊息不足；本題只借用『證據能否支持主張、資料是否足以推出結論』的判讀能力，另寫減糖因果情境，不沿用原題敘述、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把因果主張轉成可比較、可測量並能處理替代因素的研究問題。",
+  "solutionSteps": [
+    "圈出主張中的因果詞『讓』及普遍對象『所有人』。",
+    "指出小宇的前後經驗只能提供線索，尚未排除睡眠、壓力等替代解釋。",
+    "檢查選項是否有可比較組別、預先設定的結果指標及其他因素紀錄。",
+    "C 同時補上比較和測量條件，最有助於檢查因果主張。",
+    "即使研究支持某些群體，也須依樣本與研究設計限制結論範圍。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

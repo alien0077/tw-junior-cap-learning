@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-8-1",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-8／理解短文訊息書信主要內容」task, what is the best way to prepare question 1?",
+  "prompt": "Read the message.\n\nHi, everyone,\nThe photo walk will still take place this Saturday, but we will meet at the library entrance instead of the station. The weather report says the riverside path may be closed after heavy rain. Please bring your camera and arrive by 8:40 so we can leave together at 8:50. If you cannot come, text me tonight.\n—Mina\n\nWhy did Mina most likely send this message?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "To cancel the photo walk because the library is closed"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "To ask the group to take pictures of the weather report"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "To tell everyone that the walk has moved to Sunday"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-8／理解短文訊息書信主要內容."
+      "text": "To update the meeting place and remind the group what to do"
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-8"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-8／理解短文訊息書信主要內容, question 1."
+    "value": "D",
+    "explanation": "她明確說活動仍在星期六舉行，只把集合地點改到圖書館入口，並提醒帶相機、到場時間及缺席時的回覆方式。訊息目的在更新安排，不是取消或改期。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "僅將公立學校公開英語評量的短篇閱讀理解能力作 pattern-only 參照；本文、選項、答案與解析均獨立撰寫。",
+    "authoringNote": "Original English text and item authored for KG 3-Ⅳ-8; public-school exam references inform only the skill pattern. Publisher-version fusion, rights/content review, and second-round review remain incomplete; keep draft."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-8"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中114學年度第2學期九年級第1次段考英文科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "114學年度第2學期",
+      "subject": "english",
+      "locator": "PDF第3頁閱讀題組第45至47題：辨識消防安全訊息的對象、行動呼籲與目的",
+      "locatorLevel": "item",
+      "observedPattern": "以生活安全文字檢查讀者是否能辨認訊息對象及應採取的行動；僅吸收目的／行動判讀能力，不沿用原情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2231_9842586_19803.pdf",
+      "title": "新北市立三多國中112學年度第1學期七年級第2次段考英語科；只參照閱讀能力與題型，不複製原卷文字、選項、資料表或答案。",
+      "year": "112學年度第1學期",
+      "subject": "english",
+      "locator": "PDF第3頁第36題：由海報整體訊息判斷溝通目的與對象",
+      "locatorLevel": "item",
+      "observedPattern": "海報閱讀將受眾與活動目的放在同一視覺文本中判讀；本題轉為全新文字通知與行動資訊。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "先抓訊息中「原安排—變更—讀者要做什麼」三層，再判斷寫信者最主要想避免的誤會。",
+  "solutionSteps": [
+    "先讀開頭和結尾，確認這是寄給團體成員的活動通知。",
+    "比較前後安排：活動仍是 Saturday，變更的是集合地點，不是日期。",
+    "把提醒事項整理為帶相機、8:40 到場、不能參加要回訊息。",
+    "逐項排除把活動取消、要求拍天氣報告或改成星期日的選項。",
+    "用一句話概括：Mina 更新集合點並提醒參加者採取的行動；因此選 D。"
+  ]
 }

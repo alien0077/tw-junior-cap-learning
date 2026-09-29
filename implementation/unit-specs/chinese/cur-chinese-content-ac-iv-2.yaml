@@ -1,0 +1,130 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-chinese-content-ac-iv-2
+  knowledgeGraphIds:
+  - kg-chinese-content-ac-iv-2
+  title: Ac-Ⅳ-2：敘事有無判斷表態等句型
+  subject: chinese
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: Ac-Ⅳ-2：敘事、有無、判斷、表態等句型
+    curriculumIntent: 依句子核心述語關係辨析四類句型，並能說明分析依據。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 康軒僅有第三方自編且標示康軒版本的公開講義，翰林僅有官方教師用資料的有限章節內容；南一目前只有目次定位、沒有直接教學樣本。lesson 只綜合兩份已讀材料可支持的四類結構與翰林歧義處理提醒，再依課綱、KG及原創例句撰寫；不得稱三版本融合或完整讀完任何版本，亦不得複製來源表達。
+    currentEvidenceStatus: curriculum-and-kg-grounded; two-scoped-materials-read; nani-direct-teaching-sample-pending; content-and-rights-review-pending
+  learningGoals:
+  - 依主語與核心述語關係辨認敘事、有無、判斷、表態句。
+  - 說明述語成分如何連結動作、存在對象、身分判定或狀態描寫。
+  - 遇到倒裝、複句或可能有兩種切分的句子，還原／化簡後交代採用的分析及依據。
+  prerequisites:
+  - 能在簡單句中找出主語與主要述語。
+  - 能分辨動作、存在、身分說明與性質描寫的基本語意。
+  coreConcepts:
+  - 分類依整句主要述語及其成分關係，不以單一「有」「是」等字詞作充分判準。
+  - 敘事句以動作／事件為述語核心；有無句以有無述語引出存在或擁有對象。
+  - 判斷句以繫詞連接主語與斷語；表態句以表語說明主語性質或狀態。
+  - 倒裝、複句及述語切分可能造成不同分析；作答須呈現切分依據，不武斷掩蓋歧義。
+  misconceptions:
+  - 看到「有」就判有無句，沒有確認它是否為主要述語。
+  - 看到「是」就判判斷句，沒有檢查全句成分及述語切分。
+  - 把表語的性質描述誤當成主語與名詞身分的等同判定。
+  - 遇到可能的兩種句法讀法仍只背唯一標籤，不說明分析前提。
+  contentFlow:
+  - 'predict: 先讀招募公告的四種原創說法，預測句子把讀者注意力放在動作、存在、判定或狀態何處'
+  - 'manipulate: 標出主語、核心述語及必要成分，逐句比較四類關係而不以有／是單字直接貼標籤'
+  - 'observe: 檢查述語切分與句中成分如何支持分類，對照「有」「是」反例辨認可能的第二種讀法'
+  - 'explain: 引用句子成分說明分類前提；遇到歧義時明列兩種讀法及各自依據，不強行給唯一標籤'
+  - 'transfer: 將述語分析步驟用到圖書館開放通知新句，說明句型關係、述語成分與分析理由'
+  - 以 exit checks 回看述語角色及歧義分析，不以猜中標籤取代解釋。
+  visualizations:
+  - 以可選取文字呈現句子、主語、核心述語及述語關係標籤；不宣稱有滑桿、拖曳或同步圖表。
+  - 四類比較使用文字標籤與明確說明，不以顏色單獨傳意。
+  interactiveBlocks:
+  - id: CUR-CHINESE-CONTENT-AC-IV-2-I01
+    component: GuidedChoiceBlock
+    purpose: 逐步判讀五個原創句例，檢查四類句型的述語關係及可能歧義。
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 閱讀 lesson JSON 所提供的當前句子與問題。
+    - 以滑鼠或鍵盤從三個文字選項擇一作答。
+    - 錯答時閱讀該步 retryHint 後重選；答對後閱讀 feedback，再進入下一步。
+    - 最後一步比較兩種可能的述語切分，口頭或紙筆說明判讀前提。
+    visualRules:
+    - 五步題幹、三個選項、正誤回饋與重試提示均由 lesson JSON 提供；不得另造滑桿、拖曳、預測或同步圖表操作。
+    - 選項可鍵盤聚焦及啟用；正誤不得只用顏色表示。
+    - 窄螢幕保留完整句子、選項及回饋，文字可換行。
+    misconceptionChecks:
+    - id: MC-CUR-CHINESE-CONTENT-AC-IV-2-I01
+      trigger: 只依「有」或「是」等單字判類，未檢查主要述語的結構功能。
+      prompt: 先指出主語與核心述語，再說明述語後的成分與主語形成什麼關係。
+      expectedEvidence: 能依動作／存在對象／身分斷語／性質表語的實際關係說明判讀。
+    - id: MC-CUR-CHINESE-CONTENT-AC-IV-2-I02
+      trigger: 將「他總是笑臉迎人」武斷定為唯一句型。
+      prompt: 你把哪一段視為主要述語？換一種合理切分時，整句意思如何改變？
+      expectedEvidence: 能交代述語切分及分析角度；承認不同讀法時不宣稱題目只有唯一分類。
+    feedback:
+      correct: 先指出本步選項如何符合句中述語與成分關係；最後一步另要求交代歧義分析前提。
+      incorrect: 顯示該步 lesson JSON 的 retryHint，讓學生重新選擇；依 renderer 實際行為，不宣稱分層答案揭露或外部 fallback。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: 以可聚焦且有名稱的原生選項提供鍵盤操作；句例、問題及回饋由本課原創。
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: 正文與互動使用語意清楚的區塊；內容不依賴外部服務載入。
+  capTransfer:
+    questionType: 新情境句型辨析與結構理由說明
+    stemConstraint: 使用 lesson 互動未出現的圖書館開放通知句；要求標示主語、核心述語及句型關係，不只換名詞重複選項。
+    requiredResponse: 分類四類之一，指出句中述語及其成分關係；若句子可多重分析，列出分析前提。
+    scoring: 句型關係正確 1、成分證據對應 1、歧義處理或理由清楚 1。
+  exitTicket:
+    prompt: 句中有「是」就必然是判斷句嗎？請用一個自造句指出主語、核心述語與分類依據；若存在另一種分析，也交代前提。
+    successCriteria:
+    - 以整句結構而非單一關鍵字判斷。
+    - 指出主語、核心述語及相應成分關係。
+    - 對可能歧義說明切分前提，不假裝只有一種讀法。
+  expressionExtension:
+    applicable: true
+    task: 從校園公告自選一句，改寫成不同句型，並以80至120字說明核心述語、資訊焦點與改寫前後差異。
+    constraint: 公告句須標示來源位置；自造改寫，不照抄 lesson 例句或公開教材文字。
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 題幹、選項、選取狀態、錯答提示及正答解釋須可讀取。
+    reducedMotion: 不依賴動畫；停用動畫後仍可逐題操作。
+  testCases:
+  - 學生頁完整顯示 lesson 原稿七段 content.sections，且 teaching.body 逐段標題與正文一致，不重複或漏段。
+  - GuidedChoiceBlock 僅呈現 lesson JSON 的五步選擇；每步三選項，錯答顯示 retryHint，答對顯示 feedback，鍵盤可完成全部步驟。
+  - 第五步對「他總是笑臉迎人」要求辨別述語切分及可能讀法，不將有「是」字當成唯一判準。
+  - 在320px、375px、768px確認正文、完整題幹、選項與回饋無水平溢位或裁切。
+  - 新句 transfer 必須要求句型關係、述語成分及分析理由；不把五步選擇題完成等同遷移評量完成。
+  - 不呼叫外部服務；lesson JSON 缺漏或結構不符時由測試明確失敗，不宣稱已有未實作 fallback。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查。
+  - 各版本直接材料的有無與限制明確標示；未取得者維持 pending，不宣稱三版本完成。
+  - 互動實際回答本單元句型判讀問題，且能診斷只看關鍵字及歧義誤判。
+  - 完成新句 transfer、exit ticket 與表達延伸活動的內容審查。
+  - mobile、keyboard、screen reader、reduced-motion 與實際頁面呈現測試通過。
+  - 原創性、內容正確性、來源界線及權利審查通過；未過前 lesson 維持 draft。
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf
+    locator: 正文第12至18頁／PDF第14至20頁；國民中學教育階段學習內容；官方代碼 Ac-Ⅳ-2
+    role: official-curriculum-source-of-truth

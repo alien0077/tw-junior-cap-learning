@@ -1,0 +1,143 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-9-iv-2
+  knowledgeGraphIds:
+  - kg-english-performance-9-iv-2
+  title: 9-Ⅳ-2：比較分類排序資訊
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 9-Ⅳ-2：比較分類排序資訊
+    curriculumIntent: 9-Ⅳ-2：比較分類排序資訊
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 依課綱、KG與實際讀到的公開版本內容自行融合；未讀到的出版社章節明列未知，不虛構版本差異
+    currentEvidenceStatus: curriculum-and-kg-grounded; hanlin-public-teaching-pattern-read; nani-and-kanghsuan-target-chapter-not-accessed
+  learningGoals:
+  - 依任務目的界定比較尺度、分類屬性或排序方向，處理二至三項訊息
+  - 多條件任務先篩出合格資料，再比較或排名；能保留單位、同值與條件邊界
+  - 用簡明英文說明資料整理判準，並在新表格或閱讀情境中遷移
+  prerequisites:
+  - 能讀懂簡短英文任務指示、常見數字與表格欄位
+  - 能用大小、類別或先後等基本概念比較兩項資料
+  coreConcepts:
+  - 比較需使用共同尺度；分類需採一致且可說明的屬性
+  - 多限制條件依序篩選，再於可行集合比較或排序
+  - 同值、單位及嚴格界線（如低於不含等於）不得被整理步驟改寫
+  misconceptions:
+  - 把全表最便宜／最大項直接選出，漏掉題目先設定的資格門檻
+  - 分類時依不同項目偷換標準，或把活動名稱當成題目要求的屬性
+  - 忽略同值、單位或「小於／不超過」等界線差異
+  contentFlow:
+  - 'predict: 面對社團博覽會方案先說明選擇目標，預測若先看最低費用會漏掉哪些必要條件'
+  - 'manipulate: 明定分類欄位、單位、嚴格門檻與排序方向，先篩掉不合格旅行方案再比較價格'
+  - 'observe: 檢查篩選後各筆場地／交通／公園資料，保留門檻同值及並列排序結果，不偷換分類標準'
+  - 'explain: 依題定條件說明篩選和排序的先後、排除依據及例外，指出為何最低價不一定合格'
+  - 'transfer: 將方法遷移到英文閱讀圖表與生活資料'
+  - 'exit-ticket: 說出判準、操作順序與保留的例外'
+  visualizations:
+  - 多條件處理流程以文字標籤呈現「先篩選→再比較／排序」與保留的資料列
+  - 分類規則、數值單位、排序方向與同值並列均以文字明示，不只依賴色彩
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-9-IV-2-I01
+    component: GuidedChoiceBlock
+    purpose: 在生活資料中選擇正確的分類屬性、條件篩選順序與排序規則
+    initialState:
+      currentStep: 0
+      answersRevealed: false
+      attemptedSteps: []
+    studentActions:
+    - 閱讀每一步原創英文生活情境，圈出目標欄位與限制詞
+    - 先依明示判準選擇分類、篩選或排序方式，作答前不顯示答案
+    - 答錯先提示回查條件與欄位，允許重試後再呈現解析
+    - 作答後用一句話說明先後順序，保留同值與單位
+    visualRules:
+    - 答案揭露前保留題目與選項；錯答回饋先提示而不直接給答案
+    - 正確解析明示採用的資料欄位、篩選順序與排序方向
+    - 嚴格門檻、同值和單位以文字呈現，不用顏色單獨表意
+    - 窄螢幕不得裁切情境、選項、重試提示或答案解析
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-9-IV-2-I01
+      trigger: 先選全表最低價而忽略抵達時間門檻，或把同值資料拆成不同數值
+      prompt: 請圈出資格條件與排序欄位，說明哪一筆先被排除、同值是否應並列。
+      expectedEvidence: 指出符合門檻的資料列，並以正確單位和方向比較其數值
+    feedback:
+      correct: 說明判準與欄位如何支持所選整理方式，再要求指出一項被保留的同值或限制。
+      incorrect: 提醒先讀限制詞並圈出對應欄位，先給重試機會，再顯示分步解析。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只參考逐步提示與鍵盤操作方式；本課資料、文字與題目均由本課原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "只參考任務拆解與形成性回饋設計；本課情境與答案獨立撰寫。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "互動控制項提供可讀標籤與狀態，不以顏色作為唯一回饋。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "頁面保留語意標題與鍵盤可達的互動區域；題目內容皆為本課原創。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「9-Ⅳ-2：比較分類排序資訊」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字／英文短段落，將「9-Ⅳ-2：比較分類排序資訊」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入後顯示四個原創資料任務但不預先標答案；各步可鍵盤選答，錯答提示允許重試。
+  - 四步分別檢驗場地分類、先篩時間再比價、同值並列、費用門檻後比距離；正答解析與資料一致。
+  - 觸發「選最低價而忽略抵達時間」迷思時，先提示回查條件欄，不能直接揭露正解。
+  - 在320px、375px、768px寬度，互動文字、按鈕、提示和解析不溢位且鍵盤可操作。
+  - 新情境transfer要求說出判準與篩選／排序順序，不可只猜選項。
+  - 外部連結失效時，GuidedChoiceBlock仍以本機lesson JSON完成四步活動。
+  - fallback：資料視覺化或模擬腳本不可用時，以本機表格文字和明確單位／界線標籤完成篩選排序；不宣稱遠端資料已載入。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 教學文字、互動題及題解均為本課原創，無placeholder、TODO或套模板；最終lesson內容審查由使用者另交ChatGPT，不是本規格QA gate
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 9-Ⅳ-2
+    role: official-curriculum-source-of-truth
+  - url: https://material.hle.com.tw/wp-content/uploads/2021/01/%E5%9C%8B%E4%B8%AD%E8%8B%B1%E8%AA%9E-%E9%96%B1%E6%B8%AC%E8%B6%8A%E6%9C%89%E8%B6%A3%E5%90%88%E4%BD%B5.pdf
+    locator: PDF第17頁；翰林公開閱讀測驗設計資源標示D-Ⅳ-2，僅作閱讀策略與評量層次參考，非九年級本課教科書章節
+    role: publisher-teaching-pattern-reference

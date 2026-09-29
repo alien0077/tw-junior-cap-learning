@@ -2,23 +2,23 @@
   "id": "question-science-content-jd-iv-2-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年3月19日學校研究社的觀察中，以廣用試紙測得某溶液 pH＝5，研究「Jd-Ⅳ-2：酸鹼強度與 pH 值」時，最合理的判斷為何？",
+  "prompt": "某指示劑在 pH 6 到 8 間變色，將它加入 pH=4 與 pH=10 的兩樣品，最合理的預期是？",
   "options": [
     {
       "id": "A",
-      "text": "此溶液呈中性，因為 pH＝5 且使用廣用試紙"
+      "text": "兩者一定顯示完全不同的顏色"
     },
     {
       "id": "B",
-      "text": "此溶液呈鹼性，因為 pH＝5 且使用廣用試紙"
+      "text": "都會顯示中性顏色"
     },
     {
       "id": "C",
-      "text": "不必讀取廣用試紙數值，只看容器外觀就能判斷酸鹼性"
+      "text": "兩者都可能呈現同一側的顏色，無法只靠它區分 pH=4 與 pH=10 的精確值"
     },
     {
       "id": "D",
-      "text": "「Jd-Ⅳ-2：酸鹼強度與 pH 值」樣本呈酸性（pH＝5，由廣用試紙測得）"
+      "text": "指示劑能直接測出氫離子濃度"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "pH 小於 7 的水溶液呈酸性；pH＝5，因此判定為酸性。 本題對應 KG「Jd-Ⅳ-2：酸鹼強度與 pH 值」。"
+    "value": "C",
+    "explanation": "pH=4 在 6—8 變色範圍外偏酸、pH=10 在範圍外偏鹼，兩者都可能呈指示劑的端點顏色，不能只以中間色猜測。正確答案：C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "公立學校公開自然科試題中的 pH 比較、指示劑、校正、稀釋與控制變因能力；本題改寫為 Jd-Ⅳ-2 原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jd-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-jd-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "鹽埕國中公開自然段考；只取酸鹼、pH、溶液比較與實驗設計的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "酸鹼、pH、溶液比較與實驗設計",
+      "observedPattern": "公開自然科評量常以 pH 數值、酸鹼比較、指示劑、校正、稀釋與控制變因檢查數據推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "內湖國中公開自然段考；只取理化數據、圖表判讀與測量限制的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "理化數據、圖表判讀與測量限制",
+      "observedPattern": "公開自然科評量常以 pH 數值、酸鹼比較、指示劑、校正、稀釋與控制變因檢查數據推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "國昌國中公開自然科試題；只取酸鹼反應、控制變因與證據界線的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "酸鹼反應、控制變因與證據界線",
+      "observedPattern": "公開自然科評量常以 pH 數值、酸鹼比較、指示劑、校正、稀釋與控制變因檢查數據推理；本題為獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較樣品 pH 與指示劑變色區間，判斷可辨識程度與不確定性。",
+  "solutionSteps": [
+    "讀題並圈出 pH、溫度、體積、濃度、指示劑、稀釋或校正條件。",
+    "先判斷資料直接告訴我們酸鹼方向、相對強弱，還是只提供顏色範圍線索。",
+    "若涉及 pH 差異，使用每差一格約十倍的氫離子濃度關係，不把 pH 當普通線性刻度。",
+    "檢查是否混淆酸鹼強度、濃度、腐蝕性、毒性或清潔效果，並排除未控制條件的選項。",
+    "用完整句重述答案，補上溫度、校正、重複測量或安全限制，確認推論沒有超出證據。"
+  ]
 }

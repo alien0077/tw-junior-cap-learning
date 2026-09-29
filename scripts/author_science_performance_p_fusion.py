@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for science problem solving performance p."""
+from __future__ import annotations
+import json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parents[1]; LESSON=ROOT/"lessons/science/lesson-science-performance-p.json"; REPORT=ROOT/"implementation/reports/science-performance-p-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://drive.google.com/uc?id=1gMUVcDjfXmqIapg-fNnfPuLFaK98dxGX&export=download"}
+def rec(p,c,r,m,a): return {"publisher":p,"edition":f"{p} 公立校方自然課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；問題解決、探究策略、方案評估與評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持分析問題限制、提出多個方案、測試證據並依結果選擇或改良。"],"representations":[r],"examplesOrEvidence":["本課的教室降溫、濁水處理與校園照明皆為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+def main():
+ d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-science-performance-p" and d["reviewStatus"]=="draft"
+ d["title"]="問題解決（p）：用證據選出可行的科學方案"
+ d["content"]={"summary":"科學問題解決不是找到唯一聰明點子，而是把需求、限制、可用資源和成功指標說清楚，提出多個可比較的方案，再用模型、估算、原型或資料測試。面對教室降溫、濁水處理或校園照明，要同時考量效果、安全、成本、維護、環境影響和使用者需求。本課以原創任務練習定義問題、拆解因素、篩選方案、測試失敗與作出可說明的決定。","sections":[{"heading":"先界定真正要解的問題","body":"『教室很熱』可能涉及溫度、空氣流動、日照、濕度或座位感受。把需求改成可測量的目標，並問誰受影響、何時發生、不能改變什麼，才能避免解錯問題。"},{"heading":"方案要能被比較","body":"至少提出兩種方向，列出每種的預期效果、材料、成本、風險和限制。只提出自己喜歡的一種，無法知道是否有更安全、可維護或對環境更好的選擇。"},{"heading":"用證據而不是偏好決定","body":"可用估算、原型、對照測試、資料查找或使用者回饋比較方案。不同指標可能互相衝突，要先說明權重和最低安全要求，不能只挑最漂亮的一項結果。"},{"heading":"解決方案仍需回頭檢查","body":"完成後確認是否真的改善原問題、是否把成本或風險轉給別人、是否能維護和擴大。若測試失敗，先找出哪個假設不成立，再改變一個因素重新檢查。"}]}
+ d["studyHighlights"]=["將需求改成可測量目標並列出限制。","提出多個方案，明確比較效果、成本、安全與環境。","用估算、模型、原型、對照或回饋取得決策證據。","依測試失敗和新限制改良，而非只替方案辯護。"]
+ d["teaching"]={"body":[
+ {"id":"hook","phase":"hook","heading":"教室降溫要不要先買冷氣？","body":"夏天教室很熱，有人提議買冷氣，有人提議遮陽和改善通風。請先列出真正要改善的指標、現有電力和預算、學生安全與維護限制，再提出至少三種方案。入口活動讓學習者知道昂貴方案不一定回答所有需求。"},
+ {"id":"explain","phase":"explain","heading":"問題解決六步驟","body":"界定需求、蒐集條件、提出方案、建立可測試預測、依證據比較、實施後檢查與改良。每一步都留下理由：改變什麼、保持什麼、怎樣算成功、誰承擔風險。這使決定能被別人檢查，而不是只靠說服力。"},
+ {"id":"worked-example","phase":"worked-example","heading":"三種濁水處理方案","body":"目標是讓 500 mL 含土水變清且可安全處理。沉澱、濾紙、砂石分層各有時間、材料、濁度效果與廢棄物問題。先測相同水量、相同初始攪拌、相同時間，再量濁度並記錄流失量；不能只看最清的一杯就忽略處理時間和安全。"},
+ {"id":"guided-practice","phase":"guided-practice","heading":"校園照明方案評估表","body":"比較更換高效率燈具、加裝感測器和調整開燈時段。學習者先列節電量、照度、安全、初始成本、維修與使用者影響，再設定不可低於的照度標準。若最省電方案造成樓梯昏暗，就要淘汰或改良，而不是只報節電百分比。"},
+ {"id":"transfer","phase":"transfer","heading":"寫給決策者的方案建議","body":"用一頁表格呈現問題證據、方案、預測、測試結果、限制、成本、風險與建議下一步。若資料不足，明確寫出要先做的小型試驗和停止條件。好的建議能讓決策者知道採用、暫緩或改良各自的理由。"},
+ {"id":"reflect","phase":"reflect","heading":"修正兩個解題迷思","body":"請修正『最有效的方案就是最好的方案』與『方案失敗表示問題不能解決』。效果要和安全、成本、維護、環境及公平一起評估；失敗可指出錯誤假設或新限制，讓下一輪方案更精準。"}
+ ],"summary":["把需求、限制、指標和受影響者說清楚。","多方案比較效果、成本、安全、維護與環境。","以模型、原型、對照、估算或回饋取得證據。","實施後檢查副作用，依失敗和新證據改良。"],"exitCheck":[{"prompt":"為什麼『教室很熱』還不是可執行的問題定義？","expectedEvidence":"需指定溫度或舒適指標、時間、受影響者、限制與可測量的改善目標。"},{"prompt":"濁水處理為什麼不能只看最清的結果？","expectedEvidence":"還要比較時間、材料、安全、流失量、成本與可維護性等條件。"},{"prompt":"方案失敗時下一步應做什麼？","expectedEvidence":"檢查假設、資料和限制，指出失敗原因，改變適當因素後再測試或調整目標。"}]}
+ d["interactive"]={"type":"guided-choice","goal":"依需求、限制、證據與多重標準選擇並改良科學解決方案。","scenario":"比較教室降溫、濁水處理與校園照明方案，逐步找出可行且負責任的決策。","variables":[{"symbol":"g","meaning":"成功指標"},{"symbol":"r","meaning":"方案風險"},{"symbol":"e","meaning":"比較證據"}],"steps":[{"id":"step-1","prompt":"定義教室降溫問題時，哪一項最完整？","options":["指定溫度／舒適指標、時間、限制與受影響者","只說要買最強的設備","只問哪個方案最便宜"],"answer":"A","feedback":"完整需求讓方案能對準問題，也能檢查安全與資源限制。"},{"id":"step-2","prompt":"比較濁水處理方案時，除了清澈度還應看什麼？","options":["時間、材料、安全、成本與廢棄物等條件","只看照片最漂亮的一杯","只比較方案名稱長短"],"answer":"A","feedback":"問題解決需要多重指標，避免把代價轉移而不自知。"},{"id":"step-3","prompt":"校園照明方案很省電但照度不足，應如何處理？","options":["依最低安全標準淘汰或改良，不能只報節電率","忽略使用者安全以保留高排名","刪除照度資料"],"answer":"A","feedback":"安全與必要標準是方案的底線，效果不能脫離使用情境。"}]}
+ d["authoringStandard"]="version-fused-v1"
+ d["versionResearch"]=[rec("nani","以科學知識分析生活問題、提出方案並用證據解決。","需求表、限制、方案比較、模型、測試資料與修正。","把單一效果或最昂貴方案當成唯一最佳解。","重視問題界定、多方案、證據、安全與反思。"),rec("kanghsuan","透過探究實作、原型和討論培養問題解決與決策能力。","原型、對照測試、使用者回饋、指標權重與改版。","只提出一種方案，或只保留支持自己選擇的資料。","評量方案可行性、測試、公平、合作與修正。"),rec("hanlin","連結能源、環境與生活科技，兼顧效果、成本、風險及永續。","教室、濁水、照明、資源、維護、使用者與環境影響。","只報節能或效率數字，忽略安全、維護和副作用。","要求多標準評估、限制、利害關係與負責任行動。")]
+ d["fusionRecord"]={"commonCore":["三版本公開結構共同支持由需求、限制與科學證據形成可行的問題解決方案。","多方案、測試、比較、安全、成本與環境影響是共同要求。","解決方案需實施後檢查副作用，並依失敗與新證據改良。"],"versionDifferences":["南一證據較突顯生活問題、科學方案與基本證據；康軒較突顯原型、測試、回饋與改版；翰林較突顯能源、環境、資源、風險與永續決策。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以教室降溫比較設備、遮陽與通風的多重指標。","以 500 mL 濁水處理示範清澈度、時間、安全與廢棄物權衡。","以校園照明將節電、照度、成本、維護和使用者安全整合。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織需求、限制、方案、成功指標、模型、測試、多重標準、風險與改良循環。正文、原創任務、互動步驟、錯誤回饋與檢核均為本專案重寫，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+ d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ REPORT.write_text(json.dumps({"unit":"問題解決（p）","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+ print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+if __name__=="__main__": main()

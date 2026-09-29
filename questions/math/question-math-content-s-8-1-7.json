@@ -2,23 +2,23 @@
   "id": "question-math-content-s-8-1-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 ∠A=3x、∠B=2x，且兩角互餘，x 為何？",
+  "prompt": "兩個角互為補角，其中一角為 120°，另一角為多少？",
   "options": [
     {
       "id": "A",
-      "text": "15"
+      "text": "30°"
     },
     {
       "id": "B",
-      "text": "18"
+      "text": "60°"
     },
     {
       "id": "C",
-      "text": "20"
+      "text": "120°"
     },
     {
       "id": "D",
-      "text": "30"
+      "text": "240°"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "3x+2x=90，5x=90，所以 x=18。"
+    "explanation": "補角和為 180°，另一角為 180°−120°=60°，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 角 題型與官方課綱 KG kg-math-content-s-8-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供角的表示、分類與量測能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公立學校公開數學試題的角能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-8-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-8-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "角的構成與命名、角度分類、量角器讀值、直角／平角與角度加減",
+      "observedPattern": "公開學校數學試題常以角的頂點與邊、角名順序、量角器、特殊角與相鄰角度關係考查角的表示與測量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "角的構成與命名、角度分類、量角器讀值、直角／平角與角度加減",
+      "observedPattern": "公開學校數學試題常以角的頂點與邊、角名順序、量角器、特殊角與相鄰角度關係考查角的表示與測量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；本題為原創 pattern-only 改寫，非原題題號重製",
+      "year": "114",
+      "subject": "math",
+      "locator": "臺中市立至善國民中學 114 學年度第一學期第二次定期評量八年級數學科；公開試卷頁面與年級已核對；本題使用全新題幹、數值、選項與解析，不宣稱一對一題號對應",
+      "observedPattern": "年級相符的根式、因式分解、畢氏定理與幾何資料題；只吸收題型、資料型態與作答結構。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把補角的 180°總和作為回查基準。",
+  "solutionSteps": [
+    "補角的總和是 180°。",
+    "設另一角為 x。",
+    "列式 x+120=180。",
+    "計算 x=180−120=60。",
+    "選 B。"
+  ]
 }

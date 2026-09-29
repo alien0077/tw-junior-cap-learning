@@ -2,41 +2,87 @@
   "id": "question-science-content-mc-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年10月2日河川觀測站的觀察中，針對「Mc：科學在生活中的應用」提出可檢驗的科學問題，若比較 4 組、每組取樣 10 份資料，哪一項設計最適當？",
+  "prompt": "保溫杯比較中，哪項最可能是混淆變因？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Mc：科學在生活中的應用」時同時改變距離與另一個條件，卻不記錄方法"
+      "text": "甲裝熱水、乙裝冰水，卻直接比較最後溫度"
     },
     {
       "id": "B",
-      "text": "研究「Mc：科學在生活中的應用」時只測量4組中的一組就直接下結論"
+      "text": "兩杯使用相同容量和初溫"
     },
     {
       "id": "C",
-      "text": "研究「Mc：科學在生活中的應用」時先決定結論，再挑選支持結論的10筆資料"
+      "text": "兩杯在相同房間測量"
     },
     {
       "id": "D",
-      "text": "研究「Mc：科學在生活中的應用」時只改變距離，其餘條件一致，設置4組、每組取樣10份並各重複測量5次"
+      "text": "每隔相同時間記錄溫度"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-mc"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Mc：科學在生活中的應用」。"
+    "value": "A",
+    "explanation": "不同初始溫度會影響最後讀值，不能把它和杯子材質的效果分開；應固定初溫或比較溫度變化量。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的生活應用、保溫、濾水、照明、能源、控制變因與證據界線能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依官方課綱、KG 與公開資料能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-mc"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-mc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "科學在生活中的應用、能量、物質、資料與安全",
+      "pattern": "取公立學校自然科評量以生活情境、機制、資料判讀和安全條件進行跨概念推理的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立學校自然科評量以生活情境、機制、資料判讀和安全條件進行跨概念推理的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "生活科學、實驗設計、能量轉換與證據界線",
+      "pattern": "取公開會考以圖表、測量條件、替代解釋和生活應用評估的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公開會考以圖表、測量條件、替代解釋和生活應用評估的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學二年級自然科公開段考試題",
+      "year": "112",
+      "locator": "保溫、物質分離、照明、能源與控制變因",
+      "pattern": "取公立國中試題以科學原理連結生活器材、控制變因與多指標決策的能力方向。",
+      "subject": "science",
+      "observedPattern": "取公立國中試題以科學原理連結生活器材、控制變因與多指標決策的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找不是研究目標卻同時改變的條件。",
+  "solutionSteps": [
+    "圈出主張、結果指標、自變因與控制條件。",
+    "判斷要用哪個科學機制解釋。",
+    "設計公平比較並重複測量。",
+    "排除把一次成功、外觀或廣告當普遍證據。",
+    "寫出支持範圍、限制和下一步檢驗。"
+  ]
 }

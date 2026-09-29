@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-iv-4-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月2日校園實驗室的觀察中，針對「Ba-Ⅳ-4：電池的化學能轉電能」提出可檢驗的科學問題，若比較 5 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "電池放電時，電極上的化學變化通常屬於哪一類反應？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ba-Ⅳ-4：電池的化學能轉電能」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "氧化還原反應，電子在電極反應與外電路間轉移"
     },
     {
       "id": "B",
-      "text": "研究「Ba-Ⅳ-4：電池的化學能轉電能」時只測量5組中的一組就直接下結論"
+      "text": "只發生物理熔化，不涉及電子轉移"
     },
     {
       "id": "C",
-      "text": "研究「Ba-Ⅳ-4：電池的化學能轉電能」時只改變溶液濃度，其餘條件一致，設置5組、每組取樣16份並各重複測量5次"
+      "text": "只發生光合作用"
     },
     {
       "id": "D",
-      "text": "研究「Ba-Ⅳ-4：電池的化學能轉電能」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "不會發生任何物質變化"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ba-Ⅳ-4：電池的化學能轉電能」。"
+    "value": "A",
+    "explanation": "化學電池靠氧化還原反應把化學能轉成電能；電子在氧化與還原反應間經外電路移動，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究電池化學能轉電能、電解質、電路、電極、串聯與充電能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的化學電池、能量轉換與安全能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化學電池、氧化還原、電能與電路安全判讀",
+      "pattern": "取由電極、回路、能量轉換與資料判斷電池工作的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由電極、回路、能量轉換與資料判斷電池工作的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看到『電池放電』就追問電子從哪個反應產生、到哪個反應被消耗。",
+  "solutionSteps": [
+    "確認電池正在以化學反應供電。",
+    "放電時一側發生氧化並釋出電子。",
+    "電子經外電路移動。",
+    "另一側發生還原並消耗電子。",
+    "因此是氧化還原反應，選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,41 +2,67 @@
   "id": "question-science-content-cb-iv-1-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年6月5日河川觀測站的觀察中，將 33 g 食鹽溶於 992 g 水，研究「Cb-Ⅳ-1：分子與原子」時，溶液質量為何？",
+  "prompt": "化學式 2O₃ 中的數字 2 與右下角 3 分別表示什麼？",
   "options": [
     {
       "id": "A",
-      "text": "959 g"
+      "text": "2 表示兩個臭氧分子，3 表示每個分子有三個氧原子"
     },
     {
       "id": "B",
-      "text": "1025 g"
+      "text": "2 表示每個分子有兩個原子，3 表示三個分子"
     },
     {
       "id": "C",
-      "text": "32736 g"
+      "text": "兩個數字都表示分子數"
     },
     {
       "id": "D",
-      "text": "992 g"
+      "text": "兩個數字都表示元素種類"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cb-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：33＋992＝1025 g。 本題對應 KG「Cb-Ⅳ-1：分子與原子」。"
+    "value": "A",
+    "explanation": "前係數表示粒子個數；下標表示一個粒子內該元素的原子個數，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的原子分子、化學式與粒子模型能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Cb-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cb-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cb-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子、分子、元素、化合物、化學式與原子守恆判讀",
+      "pattern": "取由粒子模型、化學式與原子種類數量推論物質組成的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由粒子模型、化學式與原子種類數量推論物質組成的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先區分式子前方和元素符號右下方兩種位置的功能。",
+  "solutionSteps": [
+    "找到化學式前的係數 2。",
+    "它作用於整個 O₃，表示兩個分子。",
+    "每個 O₃ 的 O 下標為 3。",
+    "總氧原子數若需要計算為 2×3。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

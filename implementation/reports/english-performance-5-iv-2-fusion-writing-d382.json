@@ -1,0 +1,57 @@
+{
+  "date": "2026-09-28",
+  "unitId": "lesson-english-performance-5-iv-2",
+  "title": "5-Ⅳ-2：用字彙句型日常溝通",
+  "inventoryFinding": "This unit was absent from the authored-fusion inventory; the existing lesson body was generic text and its spec described an unrelated timeline/variable interaction.",
+  "workCompleted": [
+    "Replaced the generic six-section draft with an original lesson on communication purpose, request/offer sentence frames, audience-sensitive register, response uptake, and confirmation of time constraints.",
+    "Read official Nani, Kang Hsuan, and Hanlin English resource pages; recorded only directly visible resource-design findings and stated that these are not the complete textbook chapter for this unit.",
+    "Added per-publisher versionResearch and an original fusionRecord that distinguishes shared resource directions, official-page differences, and this lesson's original teaching sequence.",
+    "Replaced false LanguageTimeline/slider/prediction claims in the unit spec with a four-step GuidedChoice contract aligned to the actual learner page.",
+    "Added a repeatable Python Playwright regression script and rebuilt the site data index."
+  ],
+  "sources": [
+    {"publisher":"nani","url":"https://tpack.nani.com.tw/nani_content?a=286&b=2","scope":"Official page describes key-sentence patterns, prosody/meaning and speaking output."},
+    {"publisher":"nani","url":"https://tpack.nani.com.tw/nani_content?a=297&b=2","scope":"Official page describes grammar interaction structured as ask then respond."},
+    {"publisher":"kanghsuan","url":"https://digitalmaster.knsh.com.tw/all/digitalgo/j/english/index.html","scope":"Official page describes sentence-based grammar explanation/practice and oral reading resources."},
+    {"publisher":"hanlin","url":"https://hanlindigi.hle.com.tw/widget/2/214","scope":"Official junior-high resource page describes speaking task types including dialogue, reading, vocabulary, examples and pronunciation."},
+    {"publisher":"hanlin","url":"https://hanlindigi.hle.com.tw/widget/2/181","scope":"Official page describes grammar animation, key-point summary and example review."}
+  ],
+  "technicalChecks": {
+    "lessonSchema": "pass",
+    "implementationSpecs": "1027 files; 0 errors",
+    "allLessonSchemaAudit": "1056 lessons; 0 failures",
+    "repositoryDataValidation": "pass; 14495 JSON files, 13114 IDs, 1032 KG nodes",
+    "siteIndex": "pass; 1052 lessons, 10526 question paths, 40 mappings",
+    "browser": {
+      "status":"passed",
+      "script":"scripts/test_english_performance_5_iv_2_browser.py",
+      "httpStatus":200,
+      "authoredSections":6,
+      "guidedChoiceSteps":4,
+      "keyboardWrongRetryCorrect":true,
+      "feedbackLiveRegion":true,
+      "optionAccessibleNames":true,
+      "reducedMotion":"emulated",
+      "externalNetworkBlocked":true,
+      "responsiveWidths":[320,375,768],
+      "pageErrors":0
+    },
+    "diffCheck":"pass"
+  },
+  "fusionManuscriptInventory": {
+    "recorded":719,
+    "eligibleUnits":791,
+    "percent":90.9,
+    "learningContent":"583/583",
+    "learningPerformance":"136/208",
+    "longFormDraftMarker":550,
+    "scope":"presence of a six-section teaching body plus fusionRecord synthesis note; not a content-review result or textbook-source completeness certification"
+  },
+  "status": {
+    "reviewStatus":"draft",
+    "reason":"User will handle lesson content review in ChatGPT. Codex did not perform content review. Publisher records are official resource pages, not complete textbook chapter readings.",
+    "commit":"not performed",
+    "push":"not performed"
+  }
+}

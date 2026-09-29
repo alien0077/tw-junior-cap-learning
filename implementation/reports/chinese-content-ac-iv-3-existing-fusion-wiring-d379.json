@@ -1,0 +1,46 @@
+{
+  "decision": "D-379",
+  "date": "2026-09-28",
+  "unit": "Ac-Ⅳ-3",
+  "purpose": "Inventory existing authored lesson and repair learner visibility, interaction, and specification mismatches without duplicating completed prose.",
+  "inventory": {
+    "lessonId": "lesson-chinese-content-ac-iv-3",
+    "existingAuthoredSections": 6,
+    "existingLessonBodyPreserved": true,
+    "problem": "teaching.body contained six substantive authored sections, while content.sections contained only two short summaries; the learner page therefore did not receive the full manuscript.",
+    "repair": "Connected each existing teaching.body heading and body verbatim to the corresponding content.sections entry. No lesson body rewritten."
+  },
+  "interaction": {
+    "type": "guided-choice",
+    "stepCount": 3,
+    "answerKeys": ["B", "A", "C"],
+    "topics": ["observed class food-waste data versus unsupported preference claims", "limited soup-day comparison versus causal claim", "sampled questionnaire versus whole-school generalization"],
+    "eachStepHasFeedbackAndRetryHint": true,
+    "specAlignedToRuntime": true
+  },
+  "evidenceBoundary": {
+    "priorIssue": "Public-school curriculum plans had been represented as publisher lesson-content evidence.",
+    "nani": "Public-school curriculum plan only; publisher textbook/lesson material not read; pending.",
+    "kanghsuan": "Public-school resource-class curriculum plan only; publisher textbook/lesson material not read; pending.",
+    "hanlin": "Public-school curriculum plan only; publisher textbook/lesson material not read; pending.",
+    "publicAssessmentGuidance": "A public county learning-assessment report is cited only for the accessible teaching guidance; it does not verify publisher content.",
+    "fusionClaim": "Existing and preserved original AI-authored lesson grounded in curriculum/KG and limited public assessment guidance; not claimed as complete three-publisher fusion.",
+    "reviewStatus": "draft"
+  },
+  "verification": {
+    "unitRegression": "pass",
+    "yamlParse": "pass",
+    "validateData": "pass: 14491 JSON, 13113 IDs, 1032 KG nodes; all reviewed content remains draft",
+    "implementationSpecs": "pass: 1027 files, 0 errors, 1027 QA pending",
+    "publisherLedger": "290/3081 verified, 2791 pending, 934 blocked units",
+    "npmPretest": "pass",
+    "targetBrowser": "pass: six authored sections visible once; three guided-choice steps; wrong-answer feedback and keyboard retry; scope/causality feedback; 320/375/768px no horizontal overflow; zero page errors",
+    "browserEnvironment": "Python 3.14.2 at /Library/Frameworks/Python.framework/Versions/3.14/bin/python3; Playwright 1.58.0; Chromium revision 1208 path present. Sandbox loopback bind failed with PermissionError [Errno 1] Operation not permitted; existing localhost server responded HTTP 200 and authorized Python Playwright run passed. No dependency installation.",
+    "siteIndex": "rebuilt from current source and validated: 1052 lessons, 10526 question paths, 40 mappings",
+    "fullSiteBrowserSmoke": "pass: 1,027/1,027 full traversal; existing interaction, viewport, keyboard and reduced-motion smoke checks passed",
+    "examSourceLedger": "reused D-377 10566/10566; no questions changed and no duplicate audit run",
+    "diffCheck": "pending final check after documentation/report append"
+  },
+  "notCompleted": ["publisher textbook content research", "copyright/rights review", "AI lesson content review", "full-site browser smoke", "overall 1027-unit fusion and release gate", "commit and push"],
+  "subtasks": "none"
+}

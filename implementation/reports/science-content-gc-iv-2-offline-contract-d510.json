@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-science-content-gc-iv-2",
+  "change": [
+    "Preserved the six-section biodiversity manuscript, local pond disturbance model and questions; mapped unit-specific prediction, disturbance manipulation, observation/model distinction, biodiversity/function explanation and intertidal transfer into the QA contract.",
+    "Specified offline fallback as local model/data operation without external requests or claims of live field observations; browser regression now blocks all off-origin requests."
+  ],
+  "tests": {
+    "runtimeFusionContract": "PASS: npm run test:science:gc-iv-2",
+    "browser": "PASS: local pond model remains interactive with external requests blocked; keyboard levels 1 and 2, six authored sections, 320/375/768px no overflow, zero page errors",
+    "specValidation": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "1,023/1,027 passed; 4 failures remain",
+    "lesson": "unchanged",
+    "questions": "unchanged",
+    "jsonAndDiffCheck": "pending"
+  },
+  "notClaimed": [
+    "Full specification and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "run": "D-409",
+  "asOf": "2026-09-28",
+  "unit": {
+    "lessonId": "lesson-english-performance-8-iv-1",
+    "curriculumId": "cur-english-performance-8-iv-1",
+    "knowledgeId": "kg-english-performance-8-iv-1",
+    "reviewStatus": "draft",
+    "finalLessonReview": "Reserved for the user's ChatGPT; not performed by Codex"
+  },
+  "inventoryAndPreservation": {
+    "before": "The unit had six teaching.body sections but no fusionRecord; learner-visible content was generic and publisherResearch incorrectly characterized school curriculum plans as chapter-level evidence.",
+    "action": "Replaced generic unit placeholder with an original festival-introduction manuscript; did not rewrite an already registered fusion manuscript. Synchronized all seven visible content sections with seven authored teaching stages.",
+    "after": {
+      "authoredFusionManuscripts": "743/791 (93.93%; presence-only inventory)",
+      "learningContent": "583/583",
+      "learningPerformance": "160/208",
+      "remaining": 48,
+      "longFormDraftMarkers": 573
+    }
+  },
+  "curriculumAndKnowledge": {
+    "officialIndicator": "8-Ⅳ-1 能以簡易英語介紹國內主要節慶習俗",
+    "officialCurriculumUrl": "https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf",
+    "kgPath": "knowledge/english/foundational-graph.json",
+    "kgCurriculumLink": "kg-english-performance-8-iv-1 -> cur-english-performance-8-iv-1"
+  },
+  "versionEvidence": {
+    "nani": "Nan-I-labelled Danfeng school plan PDF pp.17-19 locates Lesson 3 How Do You Celebrate the New Year? and textbook pp.53-60; school plan is not publisher-authored textbook text, and only course placement/assessment context was used.",
+    "kanghsuan": "Public school plan was searched but did not locate indicator 8-Ⅳ-1 or its festival unit; target coursebook content, sequence, examples and assessment remain unknown.",
+    "hanlin": "Hanlin-labelled school plan PDF p.1 confirms Grade 7 volumes 1-2 only; target coursebook unit/page and teaching/assessment remain unknown.",
+    "publisherChapterFusionClaim": "Not claimed. VersionResearch and fusionRecord distinguish the one locatable Nan-I-labelled school-plan clue from unavailable publisher coursebook evidence.",
+    "officialFactSource": "Taiwan Tourism Administration Traditional Festivals page: https://eng.taiwan.net.tw/m1.aspx?sNo=0002020; used for Lantern Festival lunar date and Pingxi-localized sky-lantern activity.",
+    "restrictedResourceBoundary": "MOE-commissioned CC BY-NC-ND learning-resource pages are recorded as scope references only; no script, example, prompt, question or expressive material was adapted."
+  },
+  "manuscript": {
+    "visibleSections": 7,
+    "teachingBodyStages": 7,
+    "visibleBodyParity": "Exact title/body parity for all seven sections",
+    "interactive": "Four-step GuidedChoice: date accuracy, geographic scope, evidence limits, audience-aware festival card",
+    "sourceToTeachingDesign": "Original audience-first writing task teaches students to distinguish festival-wide date information from place-specific customs, use simple English scope markers, and avoid unsupported cultural generalizations."
+  },
+  "questions": {
+    "count": 10,
+    "allRemainDraft": true,
+    "answersAndExplanations": "Every item has a keyed option and a Traditional Chinese explanation.",
+    "solutionDetail": "Each item has a distinct strategy and five Traditional Chinese worked steps.",
+    "answerKeyDistribution": {"A": 1, "B": 5, "C": 2, "D": 2},
+    "publicExamPatternSourcesPerQuestion": 2,
+    "locatorLevel": "Paper-level pattern-only locators; not item-level page/question attribution.",
+    "curriculumAndKnowledgeTrace": "All ten items link kg-english-performance-8-iv-1 and include official curriculum studyReferences; lessonId resolves to this lesson.",
+    "questionFirstPass": "PASS 10/10; two public-school pattern-only references per question; five detailed Traditional Chinese steps; reports the paper-level locator limitation accurately."
+  },
+  "specAndInteraction": {
+    "specPath": "implementation/unit-specs/english/cur-english-performance-8-iv-1.yaml",
+    "component": "GuidedChoiceBlock",
+    "designStatus": "reviewed",
+    "implementationStatus": "implemented",
+    "qaStatus": "verified",
+    "globalSpecValidation": "1,027 specs; 0 errors; 19 eligible; 1,008 pending"
+  },
+  "verification": {
+    "targetNodeRegression": "PASS",
+    "targetBrowser": "PASS: seven visible sections, four GuidedChoice steps; keyboard wrong-answer hints and correct feedback; axe 0 violations/0 incomplete; 320/375/768px no overflow; one external request blocked; no page errors.",
+    "fullNpmTest": "PASS, including 1,027/1,027 workbench lesson traversal and D-409 target regression.",
+    "fullBrowserSmoke": "PASS on canonical workbench URL http://127.0.0.1:8765/implementation/workbench.html; 1,027 options; full traversal 1,027; unit-spec content-source traversal 1,027; keyboard, accessibility-tree and reduced-motion checks passed.",
+    "browserA11y": "PASS axe-core 51 runs, 0 violations, 6 incomplete; representative workbench units at 320/375/768px.",
+    "dataValidation": "PASS after report was present: 14,521 JSON files, 13,114 IDs, 1,032 KG nodes; all lessons/questions remain draft.",
+    "publicExamLedger": "PASS: 10,566/10,566 recorded, pending 0.",
+    "examReferenceSemantics": "PASS: 10,566 question files, 23,141 exam refs, 0 flagged refs.",
+    "answerStructureAudit": "PASS: 10,566/10,566 structurally answered; structural audit is not subject-matter review.",
+    "siteIndex": "PASS: 1,052 lessons, 10,566 questions, 40 mapping sets; generated index and shards checked current.",
+    "browserRuntime": {
+      "python": "/Library/Frameworks/Python.framework/Versions/3.14/bin/python3",
+      "playwright": "1.58.0",
+      "chromium": "revision 1208",
+      "server": "PID 32868 listening on 127.0.0.1:8765, cwd=/Users/alien/Documents/ChatGPT/tw-junior-cap-learning",
+      "launchBoundary": "Shell sandbox could not curl loopback; authorized Playwright environment reached the existing server and completed tests.",
+      "diagnostics": "The first full-smoke invocation used /site/index.html instead of the workbench and correctly found 0 #unit options. The canonical workbench URL then exposed stale hard-coded answers in an unrelated English 7-IV-2 smoke assertion; that assertion now follows lesson answer data and the full smoke passes. No browser or Playwright reinstall was needed."
+    },
+    "diffCheck": "PASS"
+  },
+  "workflow": {
+    "subtasks": "None",
+    "commit": "Not performed; overall objective remains incomplete.",
+    "push": "Not performed; overall objective remains incomplete."
+  }
+}

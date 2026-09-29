@@ -1,0 +1,37 @@
+{
+  "id": "D-380",
+  "date": "2026-09-28",
+  "unit": "science-fa-iv-4",
+  "objective": "Preserve existing authored lesson prose, align its learner-page/runtime specification, and record the current authored-fusion manuscript inventory without performing lesson content review.",
+  "work": {
+    "manuscript": "Kept the existing six authored teaching sections; learner page renders the six original sections exactly once.",
+    "interaction": "Replaced inaccurate generic EvidenceLab/slider/synchronized-chart claims with the actual four-step GuidedChoice and a dedicated atmospheric temperature profile model. The model has two native scenario buttons, explicit hypothetical-data caveats, SVG accessible name, qualitative thermosphere rise, prediction/observation records, persisted reflection, reset, and keyboard focus retention.",
+    "sourceRecord": "Added limited public source locators and scope caveats. Nani is a third-party version-labelled introduction sample, Hanlin pages are official keyword summaries, and available Kanghsuan material supports only course/assessment context rather than a full unit chapter. No full three-publisher chapter comparison or rights claim is made.",
+    "scopeCorrection": "A preliminary inventory count included parent specs. The final denominator uses the 791 learning-content and learning-performance specs; 236 topic/theme specs are excluded."
+  },
+  "authoredFusionWritingInventory": {
+    "report": "implementation/reports/authored-fusion-writing-inventory.json",
+    "specCount": 1027,
+    "learningUnitCount": 791,
+    "authoredFusionDraftCount": 717,
+    "percent": 90.64,
+    "byCurriculumLevel": {"learning-content": "583/583", "learning-performance": "134/208"},
+    "longFormDraftMarkerCount": 548,
+    "criterion": "At least six teaching.body sections and a non-empty fusionRecord.llmSynthesisNote; a separate long-form marker requires each section to exceed 100 characters.",
+    "interpretation": "Manuscript-record inventory only. No lesson-content review, correctness judgment, publisher-source gate, or review-status promotion was performed. Existing manuscripts are listed to prevent duplicate rewriting."
+  },
+  "verification": {
+    "nodeRegression": "PASS: npm run test:science:fa-iv-4",
+    "learnerBrowser": "PASS: Python 3.14.2, Playwright 1.58.0, Chromium revision 1208; six authored sections, four answered interaction steps, keyboard scenario switch and focus, prediction/observation/reflection persistence/reset, 320/375/768 CSS px with no overflow, zero page errors.",
+    "index": "PASS: rebuilt and validated 1,052 lesson entries, 10,526 question paths, 40 mappings.",
+    "jsonYaml": "PASS: lesson JSON parses; target unit YAML parses and identifies GuidedChoiceBlock.",
+    "diffCheck": "PASS: git diff --check.",
+    "notRun": "Repository-wide data validation, full implementation-spec validator, full npm test, full-site browser smoke, and external content review were not completed in this scoped turn."
+  },
+  "state": {
+    "lessonReviewStatus": "draft (unchanged)",
+    "publisherChapterCoverage": "limited; source locators and limitations are recorded in the lesson/spec",
+    "contentReview": "out of Codex scope per user; user plans to review with ChatGPT",
+    "commitPush": "not performed"
+  }
+}

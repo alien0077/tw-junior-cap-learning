@@ -1,0 +1,23 @@
+{
+  "status": "pass-with-boundary",
+  "auditedAt": "2026-09-08",
+  "institution": "高雄市立鹽埕國民中學",
+  "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+  "sourceTitle": "114學年度第二學期第1次段考三年級數學科試題卷、答案卷與解答卷",
+  "pdfPageCount": 5,
+  "observedPageLocators": [
+    {"pdfPages": "1-2", "items": "選擇填充題1-19", "observedPatterns": ["二次函數圖形與頂點", "統計四分位數與盒狀圖", "古典機率"]},
+    {"pdfPages": "3", "items": "選擇填充題20-25；非選題1-2", "observedPatterns": ["坐標與二次函數幾何", "盒狀圖與資料判讀", "機率與二次方程式", "二次函數情境建模"]},
+    {"pdfPages": "4", "items": "答案卷", "observedPatterns": ["作答欄位與非選題配分"]},
+    {"pdfPages": "5", "items": "選擇題1-25與非選題1-2解答", "observedPatterns": ["答案核對與非選題分數配置"]}
+  ],
+  "canonicalQuestionRefs": {
+    "subject": "math",
+    "count": 1000,
+    "referenceMode": "pattern-only",
+    "oneToOneItemMapping": false
+  },
+  "researchUse": "只抽取公開試卷實際呈現的能力結構、資料型態、作答步驟與配分方式，重新設計不同題幹、數值、選項與解析。",
+  "boundary": "本報告證明 PDF 頁碼與題型可核對，不證明 1,000 題中的任何一題對應原卷特定題號，也不授權複製原題、選項、圖表、答案或解答文字；年級與單元不一致的題目仍須逐題學科與來源 QA。",
+  "evidenceMethod": "web PDF text extraction; page and item ranges manually checked against the rendered text"
+}

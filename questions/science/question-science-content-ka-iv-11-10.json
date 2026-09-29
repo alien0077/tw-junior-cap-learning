@@ -2,23 +2,23 @@
   "id": "question-science-content-ka-iv-11-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年7月4日校園實驗室的觀察中，玻璃射向鏡面時，光線與鏡面法線的入射角為 35°，研究「Ka-Ⅳ-11：物體顏色與光的選擇性反射」時，反射角為何？",
+  "prompt": "若某表面從不同角度觀察會呈現不同色澤，最謹慎的解釋是？",
   "options": [
     {
       "id": "A",
-      "text": "55°（「Ka-Ⅳ-11：物體顏色與光的選擇性反射」中把入射角誤當折射角）"
+      "text": "一定是染料完全變色"
     },
     {
       "id": "B",
-      "text": "70°（「Ka-Ⅳ-11：物體顏色與光的選擇性反射」中把入射角加倍）"
+      "text": "可能有微結構造成方向選擇性的反射，仍需改變角度與光源做測試"
     },
     {
       "id": "C",
-      "text": "145°（「Ka-Ⅳ-11：物體顏色與光的選擇性反射」中以平角計算）"
+      "text": "只要看到變色就能確定化學反應"
     },
     {
       "id": "D",
-      "text": "35°（玻璃射向鏡面）"
+      "text": "角度不可能影響反射光"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "反射定律指出反射角等於入射角，因此為 35°。 本題對應 KG「Ka-Ⅳ-11：物體顏色與光的選擇性反射」。"
+    "value": "B",
+    "explanation": "B。不同角度的色澤差異可能來自表面光澤、干涉、方向性反射或光源位置；需補測光譜、角度與照明條件，不能只指定一種機制。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題中的色光、選擇性反射、濾光片、RGB 混色、光源與控制變因能力；本題改寫為物體顏色與光的選擇性反射原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ka-iv-11"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-ka-iv-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫；只取光的色散、色光與物體顏色判讀的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "光的色散、色光與物體顏色判讀",
+      "observedPattern": "公立學校公開自然／理化試題常以色光照射、濾光片、白光分解、物體反射／吸收、RGB 混合與觀察資料考查顏色形成；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考；只取選擇性反射、濾光片與光源的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "選擇性反射、濾光片與光源",
+      "observedPattern": "公立學校公開自然／理化試題常以色光照射、濾光片、白光分解、物體反射／吸收、RGB 混合與觀察資料考查顏色形成；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題；只取色光混合、顏色觀察與控制變因的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "色光混合、顏色觀察與控制變因",
+      "observedPattern": "公立學校公開自然／理化試題常以色光照射、濾光片、白光分解、物體反射／吸收、RGB 混合與觀察資料考查顏色形成；本題只取能力方向並重新設計情境與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "列出角度、光澤與光譜等替代解釋，再提出補測方法。",
+  "solutionSteps": [
+    "確認光源包含哪些色光及其強度。",
+    "判斷材料對各色光是吸收、反射或透射。",
+    "追蹤最後進入眼睛或相機的光。",
+    "核對亮度、角度、距離與觀察條件是否控制。",
+    "以資料支持顏色推論，並列出相機、光澤或光譜限制。"
+  ]
 }

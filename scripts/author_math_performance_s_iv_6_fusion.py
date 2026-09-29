@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+"""Independent first-pass authoring for mathematics s-IV-6."""
+from __future__ import annotations
+import json
+from pathlib import Path
+
+ROOT=Path(__file__).resolve().parents[1]
+LESSON=ROOT/"lessons/math/lesson-math-performance-s-iv-6.json"
+REPORT=ROOT/"implementation/reports/math-performance-s-iv-6-first-pass-review.json"
+URLS={"nani":"https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf","kanghsuan":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110","hanlin":"https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf"}
+
+def record(p,c,r,m,a):
+    return {"publisher":p,"edition":f"{p} 公立校方數學課程計畫章節級證據","sourceType":"public-web","sourceLocator":f"{URLS[p]}；相似、比例與縮放的概念、表徵及評量欄位；核讀 2026-09-21。","reviewedAt":"2026-09-21","findings":{"concepts":[c,"公開課程結構支持以對應角、邊長比例與縮放因子判斷相似關係。"],"representations":[r],"examplesOrEvidence":["本課的地圖、模型包裝與座標圖形均為原創情境，只承接公開課程所示的能力方向。"],"misconceptions":[m],"assessmentEmphasis":[a]},"licenseBoundary":"只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"}
+
+def main():
+    d=json.loads(LESSON.read_text(encoding="utf-8")); assert d["id"]=="lesson-math-performance-s-iv-6" and d["reviewStatus"]=="draft"
+    d["title"]="s-Ⅳ-6：用比例與角度判斷相似圖形"
+    d["content"]={"summary":"相似圖形的對應角相等、對應邊成同一比例，形狀相同但大小可以不同。縮放因子 k 會讓長度乘上 k；面積則乘上 k²，不能把長度比例直接套到面積。本課以地圖、模型包裝與座標圖形的自編情境，練習建立對應、用角角或邊角邊判斷相似、求未知長度，並檢查單位與縮放後的面積意義。","sections":[{"heading":"相似不是全等","body":"相似圖形可大小不同，但對應角相等、對應邊比例固定；全等則還要求對應長度相同。先建立對應順序，再談比例，避免把形狀相同誤當大小相同。"},{"heading":"由角與邊建立對應","body":"兩組對應角相等可支持相似，或用兩組對應邊成比例且夾角相等判斷。角度數值相同但對應位置不清楚時，仍需整理頂點與邊的順序。"},{"heading":"縮放因子與面積","body":"若長度縮放為 k 倍，周長也為 k 倍，但面積由兩個方向的長度共同決定，會變成 k² 倍。求面積前先確認使用的是邊長比例而非面積比例。"},{"heading":"單位與模型限制","body":"地圖比例、模型尺寸與實物長度要使用一致單位；若圖形不是同形縮放，不能直接使用相似比例。最後用角度、比例、單位與估算回查。"}]}
+    d["studyHighlights"]=["先找對應角與對應邊，固定順序再列比例。","相似保留角度與邊長比例，全等還要大小相同。","長度和周長乘 k，面積乘 k²。","用單位、角度、比例和情境範圍檢查。"]
+    d["teaching"]={"body":[{"id":"hook","phase":"hook","heading":"地圖縮小後道路形狀變了嗎？","body":"原創校園地圖把矩形操場縮成一張口袋地圖，請學習者比較長寬、角度和面積。先讓學生找出哪些量乘同一個倍數，再討論地圖與實地距離如何用比例換算，建立相似圖形可改變大小但保留形狀的觀念。"},{"id":"explain","phase":"explain","heading":"先對應再列比例","body":"以三角形 ABC 與 A'B'C' 示範，先用角標記配對頂點，再列 AB/A'B'=BC/B'C'=CA/C'A'。若兩組角相等，可用角角判斷相似；若已知邊角，則檢查夾角與比例，不能只挑看起來相近的邊。"},{"id":"worked-example","phase":"worked-example","heading":"由縮放因子求未知邊與面積","body":"小模型長 6 公分、寬 4 公分，放大到長 15 公分，縮放因子為 15/6=2.5，故寬為 10 公分；原面積 24 平方公分，放大後面積是 24×2.5²=150 平方公分。最後核對長寬比例與平方單位。"},{"id":"guided-practice","phase":"guided-practice","heading":"分清長度比例與面積比例","body":"提供地圖、相似三角形與一組只角度相似但邊比不一致的資料。學習者先列對應邊比例，再判斷求的是長度、周長或面積；對把 k 直接乘到面積的錯誤，要求用兩個方向的長度說明為何應用 k²。"},{"id":"transfer","phase":"transfer","heading":"模型包裝的比例決策","body":"原創包裝模型用 1:4 比例製作，學習者先將實物長寬高換算成模型尺寸，再估算表面展開圖的面積。若只改變高度而不按同一因子改變寬度，需指出模型不再與原物相似，不能沿用單一比例。"},{"id":"reflect","phase":"reflect","heading":"修正角度相同就全等","body":"請修正『兩個三角形有兩個角相等，所以一定全等』。先指出角角只能支持相似，不能決定邊長大小；再給縮放因子 2 的反例，說明對應邊不同但比例固定，最後區分相似與全等。"}],"summary":["相似圖形角相等、對應邊比例固定；全等還要求對應長度相同。","先建立對應順序，再用角角或邊角邊條件列比例。","長度與周長乘縮放因子 k，面積乘 k²。","用單位、比例、角度與模型條件回查。"],"exitCheck":[{"prompt":"相似與全等的主要差別是什麼？","expectedEvidence":"相似保留角度與固定邊比，大小可不同；全等還要求對應邊長相等。"},{"prompt":"長 6、寬 4 的模型放大到長 15，寬與面積如何求？","expectedEvidence":"k=2.5，寬 10；原面積 24，放大後 24×2.5²=150 平方公分。"},{"prompt":"為什麼角角相等通常只能判斷相似？","expectedEvidence":"角度固定形狀但不決定大小，縮放兩倍仍角相等、邊長不同，因此不能直接判全等。"}]}
+    d["interactive"]={"type":"guided-choice","goal":"建立對應關係並用縮放因子處理長度、周長與面積。","scenario":"調整相似圖形的邊長與角度，觀察 k 與 k² 對不同量的影響。","variables":[{"symbol":"x","meaning":"原圖對應長度"},{"symbol":"y","meaning":"縮放後對應長度"},{"symbol":"k","meaning":"長度縮放因子"}],"steps":[{"id":"step-1","prompt":"相似圖形的對應邊應符合什麼關係？","options":["比例固定","必須完全相等","只要面積相等"],"answer":"A","feedback":"相似保留對應角並使對應邊比例固定。"},{"id":"step-2","prompt":"長度放大 2.5 倍，面積應放大幾倍？","options":["6.25 倍","2.5 倍","5 倍"],"answer":"A","feedback":"面積有兩個方向的長度，比例為 k²=2.5²=6.25。"},{"id":"step-3","prompt":"兩三角形兩角相等時，最適合先判斷什麼？","options":["相似，不直接判全等","一定全等","一定面積相等"],"answer":"A","feedback":"角角可固定形狀，但仍可能有不同縮放大小。"}]}
+    d["authoringStandard"]="version-fused-v1"
+    d["versionResearch"]=[record("nani","以相似圖形的角度與邊長比例處理縮放","地圖、相似三角形、對應點與比例表","把相似誤認全等，或把面積比例當長度比例","要求建立對應、列比例並檢查單位與量的種類"),record("kanghsuan","透過模型與圖形操作理解相似和縮放因子","模型包裝、透明圖、角標記與 k 倍操作","只比一條邊，或未確認角的對應順序","重視操作歷程、角邊條件與比例驗證"),record("hanlin","連結地圖、模型、面積與實際尺度限制","比例尺、三維模型、表面面積與單位換算","改變單一方向仍套相似公式，或忽略 k²","評估模型、量的維度、單位與實際限制")]
+    d["fusionRecord"]={"commonCore":["三版本公開結構共同支持以對應角、邊比例與縮放因子理解相似。","角角、邊角條件與對應順序是共同判斷工具。","長度、周長、面積、單位與模型限制需分開檢查。"],"versionDifferences":["南一證據較突顯相似條件與比例；康軒較突顯模型、透明圖與縮放操作；翰林較突顯比例尺、面積及實際單位限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],"originalAdditions":["以校園地圖縮放區分形狀保留與大小改變。","以 k=2.5 的模型同時計算長度、寬度與面積 k²。","把角角相似反例、包裝比例、單位與維度整合成互動任務。"],"llmSynthesisNote":"本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織相似、比例、縮放因子、面積平方比例與實際模型。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    d["updatedAt"]="2026-09-21"; LESSON.write_text(json.dumps(d,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit":"s-Ⅳ-6：用比例與角度判斷相似圖形","lessonId":d["id"],"status":"first-pass-ai-review-complete","reviewStatus":"draft","checks":{"unitSpecificOriginalContent":True,"threeVersionResearchRecords":True,"fusionRecordPresent":True,"interactivePredictionManipulationExplanation":True,"answersAndDetailedSteps":True,"terraSecondPass":"pending"},"reviewedAt":"2026-09-21"},ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
+    print(json.dumps({"lesson":str(LESSON.relative_to(ROOT)),"reviewStatus":d["reviewStatus"]},ensure_ascii=False))
+
+if __name__ == "__main__": main()

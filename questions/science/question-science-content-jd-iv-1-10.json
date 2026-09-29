@@ -2,41 +2,78 @@
   "id": "question-science-content-jd-iv-1-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年12月12日學校研究社的觀察中，以廣用試紙測得某溶液 pH＝4，研究「Jd-Ⅳ-1：氧化物酸鹼性與酸對物質的反應」時，最合理的判斷為何？",
+  "prompt": "若要確認酸和某氧化物反應後確實生成新物質，哪項資料組合最完整？",
   "options": [
     {
       "id": "A",
-      "text": "「Jd-Ⅳ-1：氧化物酸鹼性與酸對物質的反應」樣本呈酸性（pH＝4，由廣用試紙測得）"
+      "text": "記錄氧化物質量或外觀、溶液指示劑／顏色、產物溶解性與反應式，並設置未加酸對照"
     },
     {
       "id": "B",
-      "text": "此溶液呈中性，因為 pH＝4 且使用廣用試紙"
+      "text": "只拍反應前後照片一次"
     },
     {
       "id": "C",
-      "text": "此溶液呈鹼性，因為 pH＝4 且使用廣用試紙"
+      "text": "只測量室溫"
     },
     {
       "id": "D",
-      "text": "不必讀取廣用試紙數值，只看容器外觀就能判斷酸鹼性"
+      "text": "只問反應者是否覺得有變化"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-jd-iv-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "pH 小於 7 的水溶液呈酸性；pH＝4，因此判定為酸性。 本題對應 KG「Jd-Ⅳ-1：氧化物酸鹼性與酸對物質的反應」。"
+    "explanation": "質量、顏色、溶解性、反應式與對照可共同支持新物質形成，單一照片、溫度或主觀感受不足。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的氧化物酸鹼性、酸反應、指示劑、氣體證據及安全能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "依公開資料能力方向獨立改寫；未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-jd-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-jd-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科公開試題",
+      "year": "114",
+      "locator": "氧化物酸鹼性、酸與金屬／碳酸鹽反應、氣體判讀",
+      "pattern": "取由指示劑、反應現象與生成物資料判斷氧化物及酸反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由指示劑、反應現象與生成物資料判斷氧化物及酸反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酸鹼、氧化物、氣體檢驗與生活情境",
+      "pattern": "取從實驗圖表、酸鹼資料與氣體證據推論物質反應的能力方向。",
+      "subject": "science",
+      "observedPattern": "取從實驗圖表、酸鹼資料與氣體證據推論物質反應的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用多證據和對照判斷化學反應，不把單一現象當定論。",
+  "solutionSteps": [
+    "設定未加酸的對照組。",
+    "記錄反應前後固體與溶液資料。",
+    "檢查產物的組成與溶解性。",
+    "用反應式核對酸與氧化物的反應。",
+    "所以 A 是最完整的證據組合。"
+  ],
+  "studyReferences": [
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

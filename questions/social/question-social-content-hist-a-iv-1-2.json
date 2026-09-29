@@ -2,41 +2,84 @@
   "id": "question-social-content-hist-a-iv-1-2",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2021年10月15日區域地圖展的資料中，比較「歷 A-Ⅳ-1：紀年與分期」的當時公告與後世回憶時，若兩者說法不同，第一步應如何處理？",
+  "prompt": "某史料寫『某王朝第十年』，另一史料寫西元 300 年。要比較兩者先需要？",
   "options": [
     {
       "id": "A",
-      "text": "先確認作者、形成時間、資料目的，再比較「歷 A-Ⅳ-1：紀年與分期」的內容與限制"
+      "text": "只把第十年當成西元 10 年"
     },
     {
       "id": "B",
-      "text": "直接以年代較晚的回憶取代公告"
+      "text": "確認王朝起始年、紀年方式、史料所在地與是否存在改元或重複年號"
     },
     {
       "id": "C",
-      "text": "只看文字較長者判定真偽"
+      "text": "王朝紀年不可能換算，不必比較"
     },
     {
       "id": "D",
-      "text": "把所有後世解釋當成當時原文"
+      "text": "只看史料文字長短就能判定年代"
     }
   ],
   "knowledgeIds": [
     "kg-social-content-hist-a-iv-1"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "史料解讀須辨識作者、時代、目的與資料性質，不能只依篇幅或年代早晚判斷。 本題對應 KG「歷 A-Ⅳ-1：紀年與分期」。"
+    "value": "B",
+    "explanation": "不同紀年系統需要起點與制度資訊，改元、年號重複和地區差異都可能影響換算。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+    "sourceLocator": "高雄市立鹽埕國中三年級社會科公開段考；本題只研究公開試題能力結構與資料型態。",
+    "authoringNote": "依官方課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫紀年、分期、時間證據與歷史推理情境；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-hist-a-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-social-content-hist-a-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%9A%84%E7%A4%BE%E6%9C%83.pdf",
+      "title": "高雄市立鹽埕國中三年級社會科公開段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "歷史時序、資料與年代判讀",
+      "observedPattern": "公立學校社會科公開試題常見的年代、歷史資料、變遷與證據推理能力，經本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "歷史資料、時序與變遷推理",
+      "observedPattern": "公立學校社會科公開試題常見的年代、歷史資料、變遷與證據推理能力，經本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "紀年、分期與歷史證據",
+      "observedPattern": "公立學校社會科公開試題常見的年代、歷史資料、變遷與證據推理能力，經本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先統一紀年並排定時序，再說明分期判準與證據形成背景，最後以同時性、連續與變化及因果限制檢查結論。",
+  "solutionSteps": [
+    "讀題定位：圈出「某史料寫『某王朝第十年』，另一史料寫」及年份、紀年系統、分期判準、證據或因果條件。",
+    "整理證據：先排定時序，再分開觀察、解釋與研究者的分期選擇，避免把資料與結論混在一起。",
+    "核對正解：選項 B「確認王朝起始年、紀年方式、史料所在地與是否存在改元或重複年號」能同時回應題幹資料與紀年、分期的歷史判讀要求。",
+    "排除誘答：檢查是否把數字方向、分期名稱、時間先後或單一事件直接當成完整因果與時代界線。",
+    "結論回查：確認紀年系統、資料形成時間、空間範圍與分期目的彼此一致；證據改變時重新檢查結論。"
+  ]
 }

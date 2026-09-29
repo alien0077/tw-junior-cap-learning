@@ -1,0 +1,143 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-3-iv-3
+  knowledgeGraphIds:
+  - kg-english-performance-3-iv-3
+  title: 3-Ⅳ-3：理解簡易英文標示
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 3-Ⅳ-3：理解簡易英文標示
+    curriculumIntent: 3-Ⅳ-3：理解簡易英文標示
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+  learningGoals:
+  - 在語境中辨識「3-Ⅳ-3：理解簡易英文標示」的形式與功能
+  - 以句構、時間線或語意證據修正答案
+  - 將語言規則遷移到新文本或短答
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 3-Ⅳ-3：理解簡易英文標示
+  - 表徵／證據與結論的對應
+  - 錯誤答案所反映的概念差異
+  misconceptions:
+  - 只跟箭頭移動，沒有核對目的地文字和兩側地圖地名是否一致
+  - 把記憶答案當成理解證據
+  - 忽略題幹中的限制條件或單位
+  contentFlow:
+  - 'predict: 從車站 EXIT 標示預測文字所命名的出口位於地圖哪一側，提交前答案保持隱藏。'
+  - 'manipulate: 保留預測，只翻轉方向箭頭；目的地文字與地圖標籤固定。'
+  - 'observe: 比較箭頭新方向、EXIT 文字與左右地名，確認三項線索是否仍一致。'
+  - 'explain: 若線索矛盾，指出衝突證據並說明為何應停下核對，而非盲從箭頭。'
+  - 'transfer: 在診所 FIRST AID 和校園 LIBRARY 新情境重做流程，檢查策略遷移。'
+  - 'exit-ticket: 說明何種標示與地圖不一致必須先查證，並指出兩項證據。'
+  visualizations:
+  - 以標示文字卡、方向箭頭和左右地點地圖並列；操作只改箭頭方向，地名保持固定。
+  - 圖像與地圖均提供文字標籤和 aria-label；揭露後列出文字、箭頭與地名的證據對應。
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-3-IV-3-I01
+    component: SignageReadingLab
+    purpose: 在車站、診所和校園的原創方向標示中核對目的地文字、箭頭與地圖；遇到矛盾時先停下查證。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        direction: 0
+    studentActions:
+    - 先提交預測，不顯示正解
+    - 提交文字預測並保留輸入，供操作後比較
+    - 用按鈕翻轉箭頭，原生鍵盤控制項可操作
+    - 在文字選項中選擇行動；答錯先顯示提示並允許重試
+    - 揭露後比較文字、箭頭與地圖地名，再切換新情境遷移
+    visualRules:
+    - 箭頭、方向文字和地圖 aria-label 同步更新；標示文字與兩側地名固定
+    - 正解揭露前保留學生預測與操作紀錄
+    - 方向不只靠顏色表示，須搭配箭頭符號、地名和文字替代
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-3-IV-3-I01
+      trigger: 只跟箭頭移動，沒有核對目的地文字和兩側地圖地名是否一致
+      prompt: 請指出箭頭指向哪個地圖標籤，以及它是否和標示文字相符。
+      expectedEvidence: 說出箭頭方向、目的地文字、地圖地名中的至少兩項並判斷是否一致
+    feedback:
+      correct: 回指標示文字、箭頭和地圖標籤的對應，並要求換到診所或校園情境驗證。
+      incorrect: 首次錯答提示找目的地詞並核對箭頭落點；重試後揭露證據對照與安全行動。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "借鑑 PhET 活動先讓學生探索而不預先告知結論的教學方向；本單元仍明確要求先預測、只翻轉一項線索，再比較標示文字和地圖證據。所有標示與情境均為原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "只參考 PhET 引導式探索活動的操作教法；不取用其科學模擬內容、介面資產或題目。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "依 W3C 原生 radio group 鍵盤慣例提供 Tab、空白鍵與方向鍵操作；使用可見 label，不自行仿造 ARIA radio 行為。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以具名 navigation、fieldset/legend、地圖文字替代與 status 回饋呈現不同區塊；每個互動實例的導覽標籤均有可區別名稱。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 換一個情境但保留「3-Ⅳ-3：理解簡易英文標示」的核心關係；不可只換名詞
+    requiredResponse: 選答後必須指出證據或推理步驟
+    scoring: 概念正確 1、證據對應 1、表達完整 1
+  exitTicket:
+    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出條件與結果
+    - 使用一項證據或表徵
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字／英文短段落，將「3-Ⅳ-3：理解簡易英文標示」的證據、因果或觀察說給同學聽
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 載入互動時答案隱藏；先提交的預測被鎖定保存，才可操作箭頭。
+  - 翻轉箭頭後，箭頭字形、方向文字與地圖替代文字同步更新；目的地文字及地圖標籤不變。
+  - 線索不符時首錯顯示一階提示，第二次提交後揭露正確行動與逐項證據。
+  - 車站情境完成後可進入診所和校園新情境；每個新場景答案仍先隱藏。
+  - 在 320px、375px 與 768px 寬度，以鍵盤完成「3-Ⅳ-3：理解簡易英文標示」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
+  - 以新資料執行「3-Ⅳ-3：理解簡易英文標示」的 CAP transfer：換一個情境但保留「3-Ⅳ-3：理解簡易英文標示」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
+  - 所有標示、地圖與證據由本機 lesson 資料提供；無外部圖片或服務依賴，離線 text fallback 仍可完成預測、操作、觀察、解釋與遷移。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 3-Ⅳ-3
+    role: official-curriculum-source-of-truth

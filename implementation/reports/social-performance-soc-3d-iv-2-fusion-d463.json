@@ -1,0 +1,39 @@
+{
+  "asOf": "2026-09-29",
+  "unit": "lesson-social-performance-soc-3d-iv-2",
+  "authoredFusionInventory": "791/791 (100%); learning-content 583/583; learning-performance 208/208; long-form marker 621",
+  "workScope": "Completed the only missing learning-performance manuscript record. Preserved the existing six-section original lesson and did not rewrite questions or already inventoried lessons.",
+  "curriculum": {
+    "id": "cur-social-performance-soc-3d-iv-2",
+    "knowledgeId": "kg-social-performance-soc-3d-iv-2",
+    "officialSource": "https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf",
+    "locator": "Social curriculum 正文 pp.8-12 / PDF pp.12-16; unit/KG identifiers checked in repository data."
+  },
+  "sources": [
+    {
+      "versionLabel": "南一參考來源採用校",
+      "url": "https://nttusps.nttu.edu.tw/var/file/65/1065/img/872185635.pdf",
+      "locator": "Social learning-performance table identifies Soc3d-IV-2/3; teaching/evaluation notes cite Nani as a reference and describe self-designed daily cases, roleplay, and flexible participation/evaluation. Table/paragraph locator used because a reliable page number was unavailable.",
+      "limitation": "School-authored plan, not Nani publisher textbook full text."
+    },
+    {
+      "versionLabel": "康軒採用校",
+      "url": "https://www.lkjh.tp.edu.tw/wp-content/uploads/doc/lkjh201/112%E5%AD%B8%E5%B9%B4%E5%BA%A6_7%E5%B9%B4%E7%B4%9A_%E7%A4%BE%E6%9C%83_%E6%AD%B7%E5%8F%B2%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf",
+      "locator": "Cover/version field identifies Kang Hsuan; lesson 1 prehistoric culture/Indigenous peoples maps to Soc3d-IV-2, with project/activity reports and teacher/self/peer assessment in course table.",
+      "limitation": "School adoption plan, not publisher textbook full text."
+    },
+    {
+      "versionLabel": "翰林採用校",
+      "url": "https://rb002.tcpa.edu.tw/var/file/5/1005/img/759120767.pdf",
+      "locator": "PDF pp.118-120 identify Hanlin and Soc3d-IV-2; Indigenous land-rights/development case, visit/curation, and teacher/self/peer assessment.",
+      "limitation": "School adoption plan, not publisher textbook full text."
+    }
+  ],
+  "fusionRecord": "Added structured versionResearch for all three sources, a fusionRecord separating shared principles, school-plan differences and original additions, and an explicit synthesis note. The lesson keeps its original fictional Rongqiao settlement case and six learner-facing sections.",
+  "parity": "PASS: content.sections and teaching.body exactly match headings and body 6/6; body lengths 198-208 characters; 3 exit checks retained. Added a six-step original guided-choice interaction including transfer to a new campus-tree cultural-preservation case; exact answer sequence A/B/C/B/A/C.",
+  "questionLedger": "Fresh audit_question_exam_rewrites.py PASS: 10,566/10,566 recorded, pending 0; no questions changed.",
+  "validation": "PASS: unique-key JSON parse; direct lesson schema audit 1,056 checked / 0 failures; validate_data.py 14,572 JSON / 13,114 IDs / 1,032 KG; fusion inventory 791/791 (100%), long-form marker 621; implementation spec schema 1,027 / 0 errors; target QA contract all checks passed; site index 1,052 lessons / 10,526 question paths / 40 mappings rebuilt and validated; dedicated Node and real Chromium lesson tests passed with six visible sections, six steps, keyboard retries/correct feedback, axe 0 violations / 0 incomplete, 320/375/768 widths and blocked external request fallback; scoped git diff --check.",
+  "contentReview": "Reserved for user's ChatGPT review; lesson remains draft. Review is not a fusion-writing inventory gate.",
+  "specInteractionAutomatedQA": "Repository-wide checks: validate_implementation_specs.py found 1,027 specs / 0 structural errors / 24 eligible / 1,003 pending. validate_implementation_coverage.py passed 979/1,027 and reported 48 failed units. validate_implementation_qa_contract.py exited 1 with the same 48 failures. npm test passed. Fresh browser run: Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3, Playwright 1.58.0, Chromium 1208; 8765 was occupied by an inaccessible server and sandbox loopback was blocked, so an authorized server on 8766 was used. Formal /implementation/workbench.html returned 200; npm run test:browser passed 1,027/1,027 traversal, 320/375/768 widths, keyboard, accessibility tree and reduced-motion checks. Axe passed 51 runs with 0 violations and 6 incomplete. First attempted /site/index.html returned 200 but correctly failed the workbench runner assertion (0 #unit options); rerun on formal workbench route passed. These global tests do not clear 1,003 pending unit-specific QA contracts.",
+  "commitPush": "Not performed"
+}

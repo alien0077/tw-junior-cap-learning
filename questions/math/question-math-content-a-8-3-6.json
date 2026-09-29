@@ -2,23 +2,23 @@
   "id": "question-math-content-a-8-3-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "化簡 2(3m－4)＋m，結果為何？",
+  "prompt": "若 m≠0，化簡 (6m³−9m²＋3m)÷3m，結果為何？",
   "options": [
     {
       "id": "A",
-      "text": "7m－4"
+      "text": "2m²−3m＋1"
     },
     {
       "id": "B",
-      "text": "5m－8"
+      "text": "2m³−3m²＋m"
     },
     {
       "id": "C",
-      "text": "7m－8"
+      "text": "2m²−3m"
     },
     {
       "id": "D",
-      "text": "6m－8"
+      "text": "6m²−9m＋3"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "先用分配律得 6m－8，再與 m 合併為 7m－8。"
+    "value": "A",
+    "explanation": "將每一項除以 3m：6m³÷3m＝2m²、−9m²÷3m＝−3m、3m÷3m＝1。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究多項式四則運算、代入與驗算能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+    "sourceLocator": "四份校方公開試卷的題型定位見 examPatternRefs；只作 pattern-only 研究，不複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與四份公立學校公開數學試題的相關能力方向獨立改寫；本題題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-3"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-a-8-3",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/697b23af02d6b7546a022da8.pdf",
+      "title": "臺中市立至善國民中學 114 學年度第一學期八年級第一次定期評量數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "選擇題第12題：多項式除以另一多項式並給定商、餘式",
+      "observedPattern": "pattern-only：僅參考原卷單題的「多項式除以另一多項式並給定商、餘式」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064519/get-file/698ae03c3cd80e32ef01bd8d",
+      "title": "臺中市立大道國民中學 114 學年度第一學期八年級數學科補行評量題庫",
+      "year": "114",
+      "subject": "math",
+      "locator": "選擇題第29題：多項式除以單項式並判斷餘式",
+      "observedPattern": "pattern-only：僅參考原卷單題的「多項式除以單項式並判斷餘式」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064502/get-file/60175cf169c72a5f0f4269bf",
+      "title": "臺中市立豐東國民中學八年級數學科考試卷（原卷未標學年度）",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "選擇題第15題：由除法等式與商、餘式反求多項式",
+      "observedPattern": "pattern-only：僅參考原卷單題的「由除法等式與商、餘式反求多項式」能力；未沿用來源算式、數值、情境或選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "對多項式每一項分別除以單項式，係數與次方各自相除。",
+  "solutionSteps": [
+    "確認除式 3m 可分配到每一項。",
+    "計算 6m³÷3m＝2m²。",
+    "計算 −9m²÷3m＝−3m。",
+    "計算 3m÷3m＝1。",
+    "選 A，按降冪整理。"
+  ]
 }

@@ -2,41 +2,76 @@
   "id": "question-chinese-content-be-iv-1-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "新聞稿標題最適合具備什麼特點？",
+  "prompt": "自傳中寫『我很有責任感』，哪個補充最能讓讀者判斷？",
   "options": [
     {
       "id": "A",
-      "text": "簡潔呈現事件重點"
+      "text": "我真的很棒"
     },
     {
       "id": "B",
-      "text": "故意隱藏事件"
+      "text": "大家都知道我可靠"
     },
     {
       "id": "C",
-      "text": "只使用私人暱稱"
+      "text": "我喜歡責任感這個詞"
     },
     {
       "id": "D",
-      "text": "與內文完全無關"
+      "text": "在校慶分組延誤時，我主動整理任務表並每天回報進度，最後按時完成"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-be-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "標題應協助讀者迅速掌握新聞核心。"
+    "value": "D",
+    "explanation": "D 提供情境、具體行動與結果，讓抽象特質有可觀察證據。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "自傳、簡報、新聞稿與生活應用；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究自傳、簡報、新聞稿、提案與公告的目的、對象和資訊完整度。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫生活應用文本題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-be-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-be-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "自傳、簡報與生活應用文本",
+      "observedPattern": "公立學校國文評量要求依自傳、簡報、新聞稿與提案的目的、對象、資訊完整度和可執行性選擇表達；本題使用全新生活情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "新聞稿、提案與對象需求",
+      "observedPattern": "公立學校國文評量要求依自傳、簡報、新聞稿與提案的目的、對象、資訊完整度和可執行性選擇表達；本題使用全新生活情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把人格評語改成事件、行動與結果的證據鏈。",
+  "solutionSteps": [
+    "找出分組延誤的情境。",
+    "確認整理任務表與回報是具體行動。",
+    "確認按時完成是結果。",
+    "D 能支持責任感主張。",
+    "換成另一項特質，說明同樣需要事件證據。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

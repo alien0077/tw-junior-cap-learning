@@ -2,23 +2,23 @@
   "id": "question-science-content-eb-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年11月26日河川觀測站的觀察中，小車在 29 秒內前進 908 m，研究「Eb：力與運動」時，平均速率為何？",
+  "prompt": "若受力圖顯示水平合力由 4 N 增為 8 N，而質量固定，依 F＝ma 加速度如何變化？",
   "options": [
     {
       "id": "A",
-      "text": "26332 m/s"
+      "text": "加倍"
     },
     {
       "id": "B",
-      "text": "0.0319383 m/s"
+      "text": "減半"
     },
     {
       "id": "C",
-      "text": "879 m/s"
+      "text": "不變"
     },
     {
       "id": "D",
-      "text": "31.3103 m/s"
+      "text": "變成零"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "平均速率＝路程÷時間＝908÷29＝31.3103 m/s。 本題對應 KG「Eb：力與運動」。"
+    "value": "A",
+    "explanation": "加速度也變為兩倍。 答案為 A。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的力與運動、受力圖、牛頓定律與資料判讀能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Eb 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-eb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "受力、運動、慣性、加速度與資料判讀",
+      "pattern": "取由力的大小方向、合力、速度變化與運動資料推論物體運動的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由力的大小方向、合力、速度變化與運動資料推論物體運動的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "固定質量時比較合力與加速度的正比關係。",
+  "solutionSteps": [
+    "由 F＝ma 得 a＝F/m。",
+    "質量固定，分母不變。",
+    "合力從 4 N 變 8 N 是兩倍。",
+    "加速度也變為兩倍。",
+    "答案為 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

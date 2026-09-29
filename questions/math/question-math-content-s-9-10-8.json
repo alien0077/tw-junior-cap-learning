@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-10-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "下列哪項可用來檢核一個候選點是否為三角形重心？",
+  "prompt": "下列哪種方法可用來檢核候選點 G 是否為三角形 ABC 的重心？",
   "options": [
     {
       "id": "A",
-      "text": "檢查它是否到三頂點等距"
+      "text": "只確認 G 到 A、B 等距"
     },
     {
       "id": "B",
-      "text": "檢查它是否在三條中線上"
+      "text": "確認 G 是兩條中線的交點"
     },
     {
       "id": "C",
-      "text": "檢查它是否在三邊外"
+      "text": "確認 G 在一條邊上"
     },
     {
       "id": "D",
-      "text": "檢查它是否與每邊平行"
+      "text": "確認 G 到三邊距離相等"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "重心的定義是三條中線的共點，應檢查中線條件。"
+    "explanation": "兩條中線的交點必同時落在第三條中線上，因此可確認 G 是重心；其餘條件分別對應外心、邊界或內心概念，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的重心 題型與官方課綱 KG kg-math-content-s-9-10",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形重心能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的重心能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-10"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形中線、重心二比一、座標平均、面積分割與平衡點意義",
+      "observedPattern": "公立學校公開數學試題常以中線交點、頂點到重心的二比一關係、座標平均與面積分割考查重心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形中線、重心二比一、座標平均、面積分割與平衡點意義",
+      "observedPattern": "公立學校公開數學試題常以中線交點、頂點到重心的二比一關係、座標平均與面積分割考查重心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形中線、重心二比一、座標平均、面積分割與平衡點意義",
+      "observedPattern": "公立學校公開數學試題常以中線交點、頂點到重心的二比一關係、座標平均與面積分割考查重心推理；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用中線交點檢核重心，不要把等距條件混成外心或內心。",
+  "solutionSteps": [
+    "先找出各對邊的中點。",
+    "由兩個頂點連到對邊中點形成兩條中線。",
+    "檢查候選點 G 是否同時在兩條中線上。",
+    "兩線交點即為三線共同交點。",
+    "選 B。"
+  ]
 }

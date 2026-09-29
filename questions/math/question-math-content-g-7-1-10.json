@@ -2,23 +2,23 @@
   "id": "question-math-content-g-7-1-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若點 H 在第二象限，則其坐標符號必為何？",
+  "prompt": "點 W(a,−3) 位於第三象限，a 應符合哪項條件？",
   "options": [
     {
       "id": "A",
-      "text": "x>0、y>0"
+      "text": "a＞0"
     },
     {
       "id": "B",
-      "text": "x<0、y>0"
+      "text": "a＜0"
     },
     {
       "id": "C",
-      "text": "x<0、y<0"
+      "text": "a＝0"
     },
     {
       "id": "D",
-      "text": "x>0、y<0"
+      "text": "a＝−3"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "第二象限的 x 負、y 正。"
+    "explanation": "第三象限的 x、y 都為負；W 的 y 已為 −3，因此 a 必須小於 0，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平面直角坐標系 題型與官方課綱 KG kg-math-content-g-7-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供平面直角坐標系、象限、軸上位置、對稱、平移、距離與面積能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的坐標幾何方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-g-7-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-g-7-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "Cartesian coordinates, quadrants, axes, reflections, translations, distance, and geometric area",
+      "observedPattern": "公立學校公開數學試題常以坐標平面判讀位置、象限與軸上點，並結合對稱、平移、距離或矩形面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "Cartesian coordinates, quadrants, axes, reflections, translations, distance, and geometric area",
+      "observedPattern": "公立學校公開數學試題常以坐標平面判讀位置、象限與軸上點，並結合對稱、平移、距離或矩形面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "由象限的符號條件建立未知坐標的不等式，而不是只挑一個數值。",
+  "solutionSteps": [
+    "列出第三象限的符號：x＜0 且 y＜0。",
+    "觀察 W 的 y＝−3，已符合 y＜0。",
+    "把 x 坐標 a 對應到第三象限條件。",
+    "得到 a＜0。",
+    "選 B，確認 a 不能等於 0，否則點會落在 y 軸上。"
+  ]
 }

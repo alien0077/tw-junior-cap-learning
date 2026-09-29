@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-s-iv-8",
   "subject": "math",
-  "title": "s-Ⅳ-8：特殊三角形四邊形正多邊形",
+  "title": "s-Ⅳ-8：用角邊與對角線辨認特殊圖形",
   "knowledgeIds": [
     "kg-math-performance-s-iv-8"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「特殊三角形四邊形正多邊形」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "特殊圖形不是靠名稱或外觀記憶，而是由定義條件與可推出性質辨認。等腰三角形有兩腰等長、底角相等；直角三角形有一個直角；平行四邊形、矩形、菱形、正方形的條件彼此有包含關係；正多邊形則要求各邊與各角都相等。本課以花圃、拼板與窗格的自編情境，練習由角邊條件分類、利用對角線與對稱性質推理，並分清必要條件與充分條件。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「特殊三角形四邊形正多邊形」相關的關係。"
+        "heading": "特殊三角形看角邊條件",
+        "body": "等腰看兩腰等長或兩底角相等，等邊看三邊等長且三角皆 60°，直角看一個角為 90°。同一三角形可能同時具備多種特性，分類時要列出全部條件。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「特殊三角形四邊形正多邊形」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "四邊形有條件階層",
+        "body": "平行四邊形有兩組對邊平行；矩形再多四個直角；菱形再多四邊等長；正方形同時具備矩形與菱形條件。由特殊條件可推出一般性質，但反向需要足夠證據。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「特殊三角形四邊形正多邊形」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "對角線提供額外證據",
+        "body": "平行四邊形對角線互相平分，矩形對角線等長，菱形對角線互相垂直；正方形同時具備相應性質。只知道一項對角線性質時，仍要判斷是否足以分類。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「特殊三角形四邊形正多邊形」，並指出至少一項支持判斷的條件。"
+        "heading": "正多邊形與對稱",
+        "body": "正多邊形各邊等長、各角相等；邊數改變會改變內角與對稱軸數量。畫得規則不等於已證明，應以角、邊、對角線和對稱條件核對。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「特殊三角形四邊形正多邊形」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先列出角邊條件，再判斷特殊三角形或四邊形。",
+    "記住矩形、菱形與正方形的條件包含關係。",
+    "用對角線等長、垂直或互相平分作為可檢查證據。",
+    "正多邊形需同時檢查邊與角，不靠畫面外觀。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「特殊三角形四邊形正多邊形」並驗算結果。",
-    "scenario": "以「s-Ⅳ-8：特殊三角形四邊形正多邊形」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "依角邊定義、對角線與對稱條件分類特殊圖形。",
+    "scenario": "拖曳條件卡片到圖形，觀察哪些是定義、可推出性質或不足證據。",
     "variables": [
       {
+        "symbol": "a",
+        "meaning": "一條邊或一個角的已知資料"
+      },
+      {
+        "symbol": "b",
+        "meaning": "與 a 對應的邊或角"
+      },
+      {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "待分類的圖形條件"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「特殊三角形四邊形正多邊形」的第一步是什麼？",
+        "prompt": "正方形比矩形多了哪個關鍵條件？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "四邊等長",
+          "四個直角",
+          "四邊形有四條邊"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "正方形同時具矩形的四直角與菱形的四邊等長。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "平行四邊形對角線的基本性質是什麼？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "互相平分",
+          "一定互相垂直",
+          "一定四邊等長"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "兩條對角線會互相平分，但不必然垂直或使四邊等長。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "正六邊形的定義需要什麼？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "六邊等長且六角相等",
+          "只要畫成六邊形",
+          "只要有一條對稱軸"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "正多邊形同時要求各邊等長與各角相等。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "s-Ⅳ-8：特殊三角形四邊形正多邊形；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；s-Ⅳ-8：特殊三角形四邊形正多邊形：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「特殊三角形四邊形正多邊形」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「s-Ⅳ-8：特殊三角形四邊形正多邊形」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；s-Ⅳ-8：特殊三角形四邊形正多邊形：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「s-Ⅳ-8：特殊三角形四邊形正多邊形」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；s-Ⅳ-8：特殊三角形四邊形正多邊形：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「s-Ⅳ-8：特殊三角形四邊形正多邊形」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「特殊三角形四邊形正多邊形」",
-        "body": "以「特殊三角形四邊形正多邊形」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "花圃形狀要怎麼分類？",
+        "body": "原創花圃設計有等腰三角形、矩形、菱形與正方形四種拼板。請學習者先量測或讀取標記，為每塊拼板填入等邊、等角、平行、垂直等條件，再比較名稱是否可以同時屬於兩類，建立圖形分類不是互斥清單的觀念。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「特殊三角形四邊形正多邊形」的概念架構",
-        "body": "本單元依官方課綱所列的「特殊三角形四邊形正多邊形」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "建立四邊形條件階層",
+        "body": "從平行四邊形開始，逐步加入四角直角得到矩形、四邊等長得到菱形，同時加入兩者得到正方形。畫一張包含關係圖，並標記哪些性質可由定義推出，哪些反向判斷需要額外條件，避免把必要條件當充分條件。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「s-Ⅳ-8：特殊三角形四邊形正多邊形」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "用對角線辨認圖形",
+        "body": "自編四邊形對角線互相平分且等長。先用互相平分支持平行四邊形，再用對角線等長支持矩形；但不能只因對角線相交就判定正方形。最後列出仍需四邊等長或相鄰邊條件的理由。 再比較對角線交點的位置與兩條對角線長度，說明每一項資料只能推出相應性質。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「特殊三角形四邊形正多邊形」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "條件卡片分類挑戰",
+        "body": "提供『兩腰等長』『四角直角』『四邊等長』『兩組對邊平行』『對角線垂直』等卡片，讓學習者分配到等腰三角形、矩形、菱形、正方形或多種可能。每次放置都要指出是定義、可推出性質，或只是可能但不足的線索。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「特殊三角形四邊形正多邊形」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "把正多邊形放進窗格設計",
+        "body": "原創窗格要求用正六邊形與正方形拼接，學習者先確認各邊、各角是否相等，再估算一個頂點周圍的角度是否能完整拼合。若只把六邊形畫得對稱但邊長不一致，需指出它不能直接稱為正六邊形。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「特殊三角形四邊形正多邊形」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "修正只看一項性質的分類",
+        "body": "請修正『四邊形有四個直角，所以一定是正方形』。先指出矩形也有四個直角但邊長未必相等，再列出正方形需要的四邊等長條件；最後用長 6、寬 4 的矩形作反例。 並把反例的四個直角、兩組邊長和正方形缺少的條件列成表格，確認分類理由完整。"
       }
     ],
     "summary": [
-      "先用自己的話界定「特殊三角形四邊形正多邊形」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "特殊圖形依角邊定義分類，同一圖形可能同時具備多種性質。",
+      "矩形、菱形與正方形具有條件包含關係，反向推理需足夠證據。",
+      "對角線互相平分、等長或垂直可支持部分分類，但不能任意過度推論。",
+      "正多邊形同時要求各邊與各角相等，需用條件檢查。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「特殊三角形四邊形正多邊形」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "矩形與正方形的條件差在哪裡？",
+        "expectedEvidence": "矩形有四個直角，正方形除了四個直角還有四邊等長；長 6 寬 4 的矩形不是正方形。"
       },
       {
-        "prompt": "在「特殊三角形四邊形正多邊形」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "對角線互相平分且等長可支持什麼分類？",
+        "expectedEvidence": "可支持平行四邊形及矩形，但仍需其他條件才能判定菱形或正方形。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「特殊三角形四邊形正多邊形」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "正多邊形需要檢查哪些條件？",
+        "expectedEvidence": "各邊等長且各角相等，不能只看畫面規則或單一對稱軸。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『s-Ⅳ-8：用角邊與對角線辨認特殊圖形』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『拖曳條件卡片到圖形，觀察哪些是定義、可推出性質或不足證據。』開始前，先回答：正方形比矩形多了哪個關鍵條件？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『拖曳條件卡片到圖形，觀察哪些是定義、可推出性質或不足證據。』回答：正六邊形的定義需要什麼？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "正方形比矩形多了哪個關鍵條件？；操作時先預測，再依『s-Ⅳ-8：用角邊與對角線辨認特殊圖形』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-8：用角邊與對角線辨認特殊圖形)：答案 A；選項內容：四邊等長",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。正方形同時具矩形的四直角與菱形的四邊等長。",
+          "feedback": "正方形同時具矩形的四直角與菱形的四邊等長。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "平行四邊形對角線的基本性質是什麼？；操作時先預測，再依『s-Ⅳ-8：用角邊與對角線辨認特殊圖形』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-8：用角邊與對角線辨認特殊圖形)：答案 A；選項內容：互相平分",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。兩條對角線會互相平分，但不必然垂直或使四邊等長。",
+          "feedback": "兩條對角線會互相平分，但不必然垂直或使四邊等長。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "正六邊形的定義需要什麼？；操作時先預測，再依『s-Ⅳ-8：用角邊與對角線辨認特殊圖形』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-8：用角邊與對角線辨認特殊圖形)：答案 A；選項內容：六邊等長且六角相等",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。正多邊形同時要求各邊等長與各角相等。",
+          "feedback": "正多邊形同時要求各邊等長與各角相等。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；特殊三角形、四邊形與正多邊形的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以特殊三角形、四邊形定義與性質建立分類",
+          "公開課程結構支持以角邊條件、對稱與對角線性質分類特殊圖形。"
+        ],
+        "representations": [
+          "角邊標記、條件階層與對角線表徵"
+        ],
+        "examplesOrEvidence": [
+          "本課的園藝花圃、拼板與窗格均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把矩形直接當正方形，或用單一性質反推全部分類"
+        ],
+        "assessmentEmphasis": [
+          "要求列出定義、可推出性質與不足條件"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；特殊三角形、四邊形與正多邊形的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過拼板與操作比較特殊圖形的包含關係",
+          "公開課程結構支持以角邊條件、對稱與對角線性質分類特殊圖形。"
+        ],
+        "representations": [
+          "花圃拼板、摺紙、對角線與條件卡片"
+        ],
+        "examplesOrEvidence": [
+          "本課的園藝花圃、拼板與窗格均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "忽略同一圖形可能同時屬於多種分類"
+        ],
+        "assessmentEmphasis": [
+          "重視操作分類、反例、條件核對與推理理由記錄"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf；特殊三角形、四邊形與正多邊形的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "連結正多邊形、窗格設計與對稱性質",
+          "公開課程結構支持以角邊條件、對稱與對角線性質分類特殊圖形。"
+        ],
+        "representations": [
+          "窗格拼接、角度總和、單位與對稱檢查"
+        ],
+        "examplesOrEvidence": [
+          "本課的園藝花圃、拼板與窗格均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "只看圖形規則外觀，未確認邊角皆相等"
+        ],
+        "assessmentEmphasis": [
+          "評估模型、定義、對角線與設計條件是否一致"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持由角邊條件分類特殊三角形與四邊形。",
+      "矩形、菱形、正方形的包含關係及對角線性質是共同核心。",
+      "正多邊形需同時檢查邊、角與對稱條件。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯特殊形體定義與性質；康軒較突顯拼板、摺紙及包含分類操作；翰林較突顯正多邊形、窗格與對稱設計限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以花圃拼板建立圖形同時具備多種性質的分類階層。",
+      "以對角線互相平分且等長的條件區分矩形與正方形。",
+      "把正六邊形窗格、反例、角度拼合與條件卡片整合成互動任務。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織特殊三角形、四邊形、正多邊形、對角線、對稱與設計情境。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

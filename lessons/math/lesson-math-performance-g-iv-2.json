@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-g-iv-2",
   "subject": "math",
-  "title": "g-Ⅳ-2：二元一次直線與聯立解幾何",
+  "title": "g-Ⅳ-2：用直線交點讀出共同條件",
   "knowledgeIds": [
     "kg-math-performance-g-iv-2"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「二元一次直線與聯立解幾何」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "兩條直線的交點不是圖上的裝飾，而是同時滿足兩個關係的共同解。本課以兩條道路的高度變化為原創情境，讓學生從兩點求斜率、由斜率與截距建立直線式，再以圖形交點、代數聯立與情境單位互相驗證，分辨平行、重合與相交的幾何意義。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「二元一次直線與聯立解幾何」相關的關係。"
+        "heading": "斜率描述變化方向",
+        "body": "斜率是垂直變化除以水平變化；正斜率向右上升，負斜率向右下降。先選定兩點與方向，才能避免把高度差和水平差顛倒。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「二元一次直線與聯立解幾何」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "截距是位置資訊",
+        "body": "y=mx+b 中的 b 是 x=0 時的 y 值，決定直線在 y 軸上的位置；兩條線斜率相同但截距不同時平行，不會有共同交點。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「二元一次直線與聯立解幾何」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "交點同時滿足兩式",
+        "body": "把兩條直線聯立求出的 x、y 是同一個座標點；代回兩式都成立，才可說是交點。只解出 x 而不求 y，仍沒有完整定位。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「二元一次直線與聯立解幾何」，並指出至少一項支持判斷的條件。"
+        "heading": "圖形與模型要有單位",
+        "body": "道路高度可能以公尺、水平距離以百公尺表示，斜率的單位是高度／水平距離。若比例或方向改變，式子與圖形都要重新標註。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「二元一次直線與聯立解幾何」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先用兩點定義水平與垂直變化，再計算斜率。",
+    "分清斜率的變化率與截距的位置意義。",
+    "交點必須同時代回兩條直線，並完整寫出座標。",
+    "檢查平行、重合、相交及單位尺度的幾何解釋。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,111 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「二元一次直線與聯立解幾何」並驗算結果。",
-    "scenario": "以「g-Ⅳ-2：二元一次直線與聯立解幾何」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "在兩點、斜率、直線式與交點之間建立幾何—代數對應。",
+    "scenario": "拖曳兩條直線上的點，觀察斜率、截距與交點座標同步變化。",
     "variables": [
       {
-        "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "symbol": "m",
+        "meaning": "直線斜率"
+      },
+      {
+        "symbol": "b",
+        "meaning": "y 軸截距"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「二元一次直線與聯立解幾何」的第一步是什麼？",
+        "prompt": "由兩點求斜率要用什麼比值？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "垂直變化除以水平變化",
+          "水平變化除以垂直變化",
+          "兩坐標相乘"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "斜率描述每一單位水平變化造成的垂直變化。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "兩線斜率相同、截距不同時如何判斷？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "平行",
+          "一定重合",
+          "一定垂直"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "方向相同但位置不同，不會相交。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "求出交點後怎麼驗證？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "代回兩式並確認座標與單位",
+          "只看 x 值",
+          "只看圖形大概位置"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "共同解需同時符合兩條式子與情境範圍。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "g-Ⅳ-2：二元一次直線與聯立解幾何；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "高雄市公立校方翰林版第六冊數學課程計畫；統計、機率與函數學習內容及評量定位。；g-Ⅳ-2：二元一次直線與聯立解幾何：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www1.fsm.kh.edu.tw/plan/special_112/112%E8%B3%87%E6%BA%90%E7%8F%AD%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「二元一次直線與聯立解幾何」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「g-Ⅳ-2：二元一次直線與聯立解幾何」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "淡水國中公立校方康軒版九年級數學課程計畫；統計機率、函數及圖形應用定位。；g-Ⅳ-2：二元一次直線與聯立解幾何：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.tsjh.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=100&file=WVhSMFlXTm9MelkzTDNCMFlWOHhNamd6T1Y4MU56WXlNRFl3WHpjNE1USXpMbkJrWmc9PQ%3D%3D&fname=WSGGRPQK20QO41KKLOLK54TXXSMO25JGKLB0DCNKCCQLOO40QKTSST54WSLKUSSSROPOIHKK2004GDLOQONKTSMOOPB0FHMPQPMPNOTSUWZWXVWFH10YWFCSSWUX25HCA0UWIGVWKO40XSUSB040MPTXGDTWA0ZWUSOPTWFGTS45QKNOKK21HHDGB0JC24KK14WTIGYSEG14WSMLID30B514YWRKA434DCDGA0WWQOPP1000ZSIGMOIGDGJDLO",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「g-Ⅳ-2：二元一次直線與聯立解幾何」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "卓蘭高中附設國中公立校方南一版九年級數學課程計畫；統計、機率與二次函數章節定位。；g-Ⅳ-2：二元一次直線與聯立解幾何：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/378739209.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「g-Ⅳ-2：二元一次直線與聯立解幾何」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +160,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「二元一次直線與聯立解幾何」",
-        "body": "以「二元一次直線與聯立解幾何」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "兩條道路何時同高",
+        "body": "畫出兩條原創道路的高度—距離資料，請學生預測它們會相交、平行還是永遠不會同高。先比較每前進一段的高度變化，再討論交點，讓斜率從現象中出現。 並把兩條道路的單位、方向與每段變化寫在資料旁，說明預測的依據。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「二元一次直線與聯立解幾何」的概念架構",
-        "body": "本單元依官方課綱所列的「二元一次直線與聯立解幾何」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "由兩點建立直線",
+        "body": "道路 A 通過 (0,2)、(4,6)，斜率為 1、截距為 2，所以 y=x+2；道路 B 通過 (0,8)、(4,4)，斜率為 −1，得到 y=−x+8。將點、斜率與式子標在同一圖上。 再將每個交點候選同時代入兩式，指出只有共同成立的座標才可保留。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「g-Ⅳ-2：二元一次直線與聯立解幾何」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "交點的三種證據",
+        "body": "聯立 x+2=−x+8 得 x=3，再代回得 y=5，交點為 (3,5)。圖上兩線也在此相交，且代回兩式都成立；三種證據共同支持答案。 要求學生用斜率、截距與圖形位置三欄說明三種分類的理由。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「二元一次直線與聯立解幾何」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "判斷平行或重合",
+        "body": "給出三組直線式，學生先比較斜率，再比較截距，判斷相交、平行或重合。若斜率相同但截距不同，要求學生在圖上畫出不相交的兩條線。 最後將費用相等的使用量換回實際單位，檢查是否落在服務範圍內。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「二元一次直線與聯立解幾何」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "交會點的情境意義",
+        "body": "兩種計費方案以使用量為 x、費用為 y，建立兩條直線並找交點；學生說明交點代表兩方案費用相同的使用量，並檢查該使用量是否落在實際服務範圍。 再比較刻度改變前後的讀圖結果，說明哪一項必須用式子回查。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「二元一次直線與聯立解幾何」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "斜率與交點的最後檢查",
+        "body": "出口題要求學生圈出斜率單位、截距位置、交點代回與定義域限制；再指出若只看圖形不看刻度，哪一種錯誤可能被放大。 並用一個刻度錯誤的例子指出圖形直覺如何被放大，寫出修正方法。"
       }
     ],
     "summary": [
-      "先用自己的話界定「二元一次直線與聯立解幾何」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "用兩點和方向計算斜率，再建立直線式。",
+      "截距描述位置，斜率描述變化率。",
+      "交點是同時滿足兩式的完整座標。",
+      "平行、重合與相交要連結代數、圖形與情境單位。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「二元一次直線與聯立解幾何」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "請說明斜率如何計算，以及分子分母各代表哪種變化？",
+        "expectedEvidence": "垂直變化除以水平變化，並說明方向與單位。"
       },
       {
-        "prompt": "在「二元一次直線與聯立解幾何」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "兩直線斜率相同、截距不同代表什麼？",
+        "expectedEvidence": "兩線平行，不會有共同交點。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「二元一次直線與聯立解幾何」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼交點要代回兩條式子？",
+        "expectedEvidence": "確認同一座標同時符合兩個條件，而非只滿足一條。"
       }
     ]
   },
@@ -188,6 +227,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『g-Ⅳ-2：用直線交點讀出共同條件』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『拖曳兩條直線上的點，觀察斜率、截距與交點座標同步變化。』開始前，先回答：由兩點求斜率要用什麼比值？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『拖曳兩條直線上的點，觀察斜率、截距與交點座標同步變化。』回答：求出交點後怎麼驗證？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "由兩點求斜率要用什麼比值？；操作時先預測，再依『g-Ⅳ-2：用直線交點讀出共同條件』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(g-Ⅳ-2：用直線交點讀出共同條件)：答案 A；選項內容：垂直變化除以水平變化",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。斜率描述每一單位水平變化造成的垂直變化。",
+          "feedback": "斜率描述每一單位水平變化造成的垂直變化。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "兩線斜率相同、截距不同時如何判斷？；操作時先預測，再依『g-Ⅳ-2：用直線交點讀出共同條件』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(g-Ⅳ-2：用直線交點讀出共同條件)：答案 A；選項內容：平行",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。方向相同但位置不同，不會相交。",
+          "feedback": "方向相同但位置不同，不會相交。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "求出交點後怎麼驗證？；操作時先預測，再依『g-Ⅳ-2：用直線交點讀出共同條件』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(g-Ⅳ-2：用直線交點讀出共同條件)：答案 A；選項內容：代回兩式並確認座標與單位",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。共同解需同時符合兩條式子與情境範圍。",
+          "feedback": "共同解需同時符合兩條式子與情境範圍。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；二元一次直線、斜率與聯立幾何評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以直線式、斜率與截距描述變量關係",
+          "公開結構支持以直線方程、斜率與交點描述兩個變量的共同幾何關係。"
+        ],
+        "representations": [
+          "兩點、表格、座標圖與直線式的互相轉換"
+        ],
+        "examplesOrEvidence": [
+          "本課的道路坡度、交會點與座標資料均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "顛倒斜率分子分母或忽略正負方向的意義"
+        ],
+        "assessmentEmphasis": [
+          "完整核對兩點求斜率、截距與式子回查"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；二元一次直線、斜率與聯立幾何評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以操作和圖形表徵理解平行、交點與聯立",
+          "公開結構支持以直線方程、斜率與交點描述兩個變量的共同幾何關係。"
+        ],
+        "representations": [
+          "拖曳點、斜率、截距與交點的同步變化"
+        ],
+        "examplesOrEvidence": [
+          "本課的道路坡度、交會點與座標資料均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "只解一個變量或把平行線誤當成有交點"
+        ],
+        "assessmentEmphasis": [
+          "操作後完整解釋圖形與代數如何互相支持"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；二元一次直線、斜率與聯立幾何評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "在費用或道路情境中判斷共同解意義",
+          "公開結構支持以直線方程、斜率與交點描述兩個變量的共同幾何關係。"
+        ],
+        "representations": [
+          "變化率、位置、交會與單位限制的情境表徵"
+        ],
+        "examplesOrEvidence": [
+          "本課的道路坡度、交會點與座標資料均為原創，只承接公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "把交點當任意圖形位置或忽略服務範圍"
+        ],
+        "assessmentEmphasis": [
+          "評估模型選擇、交點代回與情境表達是否完整"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持由兩點、斜率與直線式描述線性關係。",
+      "交點是兩個條件的共同解，需以圖形與代數互證。",
+      "平行、重合、相交及單位尺度都要連結情境判讀。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯直線式與斜率基礎；康軒較突顯操作、圖形與聯立；翰林較突顯道路或費用情境、單位與共同解意義。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以道路高度資料建立斜率與交點。",
+      "加入平行、重合、相交的圖形診斷。",
+      "用兩種計費方案轉移共同解與服務範圍限制。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計二元一次直線與聯立幾何意義。正文、例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

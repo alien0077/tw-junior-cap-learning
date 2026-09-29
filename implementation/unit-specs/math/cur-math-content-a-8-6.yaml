@@ -1,0 +1,176 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-8-6
+  knowledgeGraphIds:
+  - kg-math-content-a-8-6
+  title: A-8-6：一元二次方程式的意義
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '8'
+  fusedScope:
+    officialCurriculum: A-8-6：一元二次方程式的意義
+    curriculumIntent: A-8-6：一元二次方程式的意義
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 已實讀南一版標示公開講義pp.110–113、康軒第三冊標示公開學生筆記pp.1–2、翰林官方補救GO索引與可讀分享摘錄；來源的官方性和可見範圍另行標明，再依課綱與KG融合。正文、例子與互動原創，不混入後續解法、判別式、根數或圖形交點。
+    currentEvidenceStatus: curriculum-and-kg-grounded; unit-specific-public-shared-materials-reviewed-with-access-limits; original-concept-fusion-authored; content-review-pending
+  learningGoals:
+  - 從方程式最高次、未知數個數與等號判斷是否為一元二次方程式
+  - 說明解是使等式成立的數值，並以代入左右兩側驗證候選根
+  - 從具體情境定義未知量、單位與數量關係，列出一元二次方程式
+  - 區分方程式本身、指定候選值是否為解，以及後續求出全部解的方法
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 整理為 ax²+bx+c=0 且 a≠0、只有一個未知數時才是一元二次方程式
+  - 根是使方程式左右相等的輸入值，不是方程式中任意出現的數
+  - 代入同一候選數後，左右兩側相等才是此方程式的解／根
+  - 情境模型須保留變數定義、單位、題述等量關係；情境限制與方程式分開檢核
+  misconceptions:
+  - 看到 x² 就稱為一元二次方程式，忽略必須有等號及未知數最高次條件
+  - 原式含平方就判二次，忽略化簡後最高次可能改變或未知數消失
+  - 只算等號左邊，或把解的定義與求解程序混為一談
+  - 直接把情境數字塞進式子，未說明未知量、單位和量間關係
+  contentFlow:
+  - 'hook: 用培苗盤長寬差與面積建立未知量情境，預測列式所需資訊'
+  - 'predict: 先預測含 x² 的式子是否已足以判定為一元二次方程式，待化簡後核對'
+  - 'manipulate: 逐項化簡等式並代入候選值，操作左右兩側的數值核對'
+  - 'observe: 觀察化簡後未知數是否仍存在、最高次是否為二，以及左右值是否相等'
+  - 'simplify: 先化簡含x等式，再標示未知數種類、最高次與等號'
+  - 'classify: 比較代數式、一元一次方程式、二元等式、化簡後未知數消失的式子'
+  - 'substitute: 將指定候選值代入原方程式兩側，記錄左右值與相等與否'
+  - 'model: 以短邊x、長邊x+4、面積45列出x(x+4)=45並標示單位'
+  - 'explain: 說明候選數成為解的條件是原等式成立，不把驗證說成求出所有根'
+  - 'context-check: 用長度正值條件檢查模型意義，與等式真值分欄'
+  - 'transfer: 把另一組拼板邊長與總面積資料轉為二次等式'
+  - 'exit-ticket: 診斷未化簡便分類、單側代入或列式缺少量的意義'
+  visualizations:
+  - 方程式分類表：未知數、等號、化簡後最高次與分類理由
+  - 候選值檢查表：同一x代入原式兩側，對照結果與是否成立
+  - 原式到化簡式分類卡：未知數、最高次、等號與分類理由
+  - 左右代入核對帳：方程式、候選x、左值、右值及是否為解
+  - 情境建模草圖：未知量、單位、量間關係、方程式與範圍條件
+  - 數學等式判斷與情境可行性分欄；不呈現函數圖、判別式或求根法
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-8-6-I01
+    component: StepwiseReasoningBlock
+    purpose: 將化簡分類、左右代入驗證與具體情境列式串成A-8-6概念探究，不執行後續求根法
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        equation: 'x²+3x=10'
+        candidateValues: [2, 1]
+        solutionSet: []
+        contextDomain: 'context-specific'
+    studentActions:
+    - 對給定式子標記等號、未知數和最高次，先提交分類理由
+    - 輸入候選根並逐一查看左右值，不成立者留在表中並說明失敗原因
+    - 依短邊、長邊和面積資料建立等式並標註單位
+    - 切換候選值，保留每次代入左右兩側的運算及結論
+    - 說明候選數代入原等式成立才是解；求出所有解的方法屬後續內容
+    visualRules:
+    - 方程式需先正規化再判最高次；未知數多於一個或缺等號不得標為一元二次方程式
+    - 每個候選根各自驗證，不能因一根成立就隱藏其他候選值
+    - 化簡後未知數消失或最高次不是2時，不可標為一元二次方程式
+    - 左右代入必須使用同一候選值；兩側不同不得標示為解
+    - 情境式須標明每項的量義及單位；範圍條件不得改寫等式
+    - 預測、分類理由和代入紀錄保留；窄螢幕直向呈現左右算式
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-8-6-I01
+      trigger: 把3x²+2x²=5x²直接判為二次方程式，或只計算候選值的左側
+      prompt: 先化簡並說明未知數是否仍存在，再用相同候選值比較另一等式的左右值。
+      expectedEvidence: 3x²+2x²=5x²化簡為0=0、未知數消失；代入時須比較原式兩側。
+    feedback:
+      correct: 指出分類依據和原等式左右相等的代入證據，再說明情境式各項的量義。
+      incorrect: 第一層提示先化簡或固定同一候選值；第二層要求寫出左值、右值及單位；重試後示範局部算式。
+    guidedActivity:
+      title: 培苗盤資料怎樣成為方程式？
+      introduction: 短邊x公分、長邊比短邊多4公分、面積45平方公分。先列式，再檢驗給定候選值。
+      stages:
+      - prompt: 第一步：依短邊x、長邊x+4、面積45列式。
+        acceptedAnswers: ["x(x+4)=45", "x(x＋4)=45", "45=x(x+4)"]
+        correctFeedback: 正確。長方形面積是長乘寬，兩側單位都是平方公分。
+        hint: 先寫長邊，再以兩邊相乘表示面積。
+      - prompt: 第二步：候選值x=5代入後，等式左右各是多少？
+        acceptedAnswers: ["45,45", "45 45", "左45右45"]
+        correctFeedback: 正確。左側5×9=45，右側45，兩邊相等。
+        hint: 用同一x值計算左式，再讀等號右側。
+      - prompt: 第三步：這是否已經求得此方程式的全部解？
+        acceptedAnswers: ["否", "沒有", "尚未"]
+        correctFeedback: 正確。這只驗證給定候選值；求出全部解需要後續解法。
+        hint: 分清「判斷候選值」和「找出所有解」。
+      completionMessage: 完成。你已由量的關係列式並驗證指定值，沒有把概念驗證誤稱為求出全部解。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "學生先預測化簡是否改變次數，再檢查方程式分類；算式、候選值和回饋資料由本課原創。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "改選候選值或情境條件後同步更新左右代入表與列式檢查，可重設步驟，答案不先揭露。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "以語意標籤讀出原式、化簡式、候選值、等式左右值及情境量義；狀態更新以文字宣告。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "使用明確標題區分分類、候選值驗證和情境建模；鍵盤可操作各步，所有公式另以文字呈現。"
+  capTransfer:
+    questionType: 長方培苗盤面積條件列式與指定候選值驗證
+    stemConstraint: 短邊x公分、長邊比短邊多4公分、面積45平方公分；列出方程式並判斷x=5是否為解，不求全部解。
+    requiredResponse: x(x+4)=45；代入x=5後左側為45、右側45，所以5為解；列式／單值驗證不等於求出所有根。
+    scoring: 未知量與量關係正確 1、列式與單位正確 1、左右代入及任務界線正確 1
+  exitTicket:
+    prompt: 化簡3x²+2x²=5x²後還是一元二次方程式嗎？請再說明x=2是否為x²+3x=10的解，列出左右兩側。
+    successCriteria:
+    - 指出第一式化簡為0=0，未知數消失，故不是一元二次方程式
+    - 以x=2代入第二式，左側10、右側10
+    - 以左右相等說明2為解，不把此檢查誤稱求得全部根
+  expressionExtension:
+    applicable: true
+    task: 對比「求出方程式全部解」與「判斷指定數是不是解」兩種不同問題，並替校園器材採購情境列出一個二次關係式。
+    constraint: 學生須標示未知量、單位、等量關係，並寫出指定候選數代入兩側的值；不使用後續求根法。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 只有整理後最高次為二、未知數唯一且含等號的式子可分類為一元二次方程式；含 x² 的多項式本身不充分。
+  - 3x²+2x²=5x²須先化簡為0=0，並解釋未知數消失後不再是二次方程式。
+  - 候選值x=2代入x²+3x=10，左右皆為10才可標記為解。
+  - 培苗盤情境須列出x(x+4)=45、說明量義和單位，不在A-8-6內求全部根。
+  - 320px、375px、768px及鍵盤可完成分類、代入兩側和情境列式，所有算式均有文字版。
+  - 未化簡就分類、只算一側或把列式當求解時觸發對應兩層提示，並保留學生先前輸入。
+  - 圖形或外部資源不可用時，文字fallback仍提供化簡分類表、候選值左右帳與情境量關係，可完成本課任務。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-6
+    role: official-curriculum-source-of-truth

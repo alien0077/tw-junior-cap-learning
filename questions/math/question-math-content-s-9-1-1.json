@@ -2,7 +2,7 @@
   "id": "question-math-content-s-9-1-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "兩個相似多邊形的對應邊比例為 2：3。若小圖形一邊長 8 公分，大圖形的對應邊長是多少？",
+  "prompt": "兩個相似多邊形的小圖：大圖對應邊長比為 2：3。小圖一邊長 8 公分，大圖的對應邊長是多少？",
   "options": [
     {
       "id": "A",
@@ -14,29 +14,83 @@
     },
     {
       "id": "C",
-      "text": "14 公分"
+      "text": "16 公分"
     },
     {
       "id": "D",
-      "text": "16 公分"
+      "text": "24 公分"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "大圖形對應邊為 8×(3/2)=12 公分。"
+    "explanation": "小：大＝2：3，8：x＝2：3，所以 x＝8×3÷2＝12 公分，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似形 題型與官方課綱 KG kg-math-content-s-9-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=68&cfsn=347&fn=112-1-1-9%E6%95%B8%E5%AD%B8.pdf&op=dlfile",
+    "sourceLocator": "改寫參照：花蓮縣立吉安國中112學年度第1學期第1次段考PDF第1頁第3題的四邊形頂點配對與對應邊求值；題幹、數值、選項和解法均重新創作。",
+    "authoringNote": "原創多邊形相似比例題；只取公校試題的對應邊比例能力模式，不複製題幹或數值，待AI內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=68&cfsn=347&fn=112-1-1-9%E6%95%B8%E5%AD%B8.pdf&op=dlfile",
+      "title": "花蓮縣立吉安國中112學年度第1學期第1次段考九年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "PDF第1頁第3題",
+      "observedPattern": "以四邊形相似符號及對應頂點資料找對應邊長；本題僅採能力模式，另編多邊形情境與數值。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "固定小圖：大圖的比例方向，再將小圖邊長乘上大圖倍率。",
+  "solutionSteps": [
+    "讀出小形與大形對應比 2：3。",
+    "將對應邊列成 8：x＝2：3。",
+    "交叉相乘得 2x＝24。",
+    "解得 x＝12 公分。",
+    "選 B，較大圖形的對應邊應較長。"
+  ]
 }

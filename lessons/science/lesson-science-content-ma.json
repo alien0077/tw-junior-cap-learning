@@ -48,7 +48,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "透過雨水回收方案的可調參數，觀察科學證據、工程取捨與社會條件如何彼此影響。",
@@ -92,6 +92,17 @@
         ],
         "answer": "A",
         "feedback": "把資料、價值取捨與尚未知道的事分開，建議才不會偽裝成唯一答案。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "若校園雨水回收量增加，但清潔人力不足且用途標示不清，最妥當的建議是什麼？",
+        "options": [
+          "保留非飲用用途與水質限制，先補上清潔責任、標示和監測門檻，再依資料決定是否擴大",
+          "只因回收量增加就直接供全校使用，不必討論衛生或責任分配",
+          "因維護困難就否定所有雨水回收，不必比較小規模試辦與改善條件"
+        ],
+        "answer": "A",
+        "feedback": "科技方案要同時看證據、用途、安全、維護與公平；資料不足時應設門檻和補測，而不是過度保證或一概否定。"
       }
     ]
   },
@@ -99,73 +110,134 @@
   "lessonScope": "topic",
   "publisherResearch": [
     {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "Ma：科學、技術及社會的互動關係；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Ma：科學、技術及社會的互動關係 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「科學、技術及社會的互動關係」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Ma：科學、技術及社會的互動關係」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Ma：科學、技術及社會的互動關係 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Ma：科學、技術及社會的互動關係」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "nani",
-      "edition": "南一國中自然公開課程與教學資源",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "科學、技術與社會；STS議題與生活應用公開定位",
-      "sourceUrl": "https://www.nani.com.tw/",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Ma：科學、技術及社會的互動關係 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "核對以生活議題連結科學概念、技術應用與社會影響的取向；本頁改以雨水回收決策案例重新組織，並加入條件式評估。",
-      "copyrightBoundary": "只採公開索引與概念範圍，不複製教科書文字、圖表、題目或答案。"
-    },
-    {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開課程資源",
-      "subject": "science",
-      "chapterLocator": "科學與生活、科技與環境議題；公開資源定位",
-      "sourceUrl": "https://www.ehanlin.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "concept-progression", "activity-pattern"],
-      "outcome": "比較科學知識、技術設計和環境／社會後果的連結方式；融合後以利害關係人與回饋箭頭補足決策推理。",
-      "copyrightBoundary": "僅記錄公開定位與教學結構；正文、活動、例證與檢核均重新撰寫。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Ma：科學、技術及社會的互動關係」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
     {
       "publisher": "kanghsuan",
       "sourceType": "public-web",
-      "sourceLocator": "自然公開影音：科學、技術及社會相關單元；索引不足以替代完整教材。",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；自然公開影音：科學、技術及社會相關單元；索引不足以替代完整教材。",
       "edition": "康軒國中自然公開影音與資源索引",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts":["以生活科技議題連結科學解釋與技術應用。","技術選擇需放回環境條件與使用目的評估。"],"representations":["生活情境、流程箭頭與活動型任務。"],"examplesOrEvidence":["由校園資源使用問題追蹤科學、技術與社會的回饋。"],"misconceptions":["技術不是只要效率最高就一定最好。"],"assessmentEmphasis":["要求分辨資料、設計取捨與社會判斷。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "以生活科技議題連結科學解釋與技術應用。",
+          "技術選擇需放回環境條件與使用目的評估。"
+        ],
+        "representations": [
+          "生活情境、流程箭頭與活動型任務。"
+        ],
+        "examplesOrEvidence": [
+          "由校園資源使用問題追蹤科學、技術與社會的回饋。"
+        ],
+        "misconceptions": [
+          "技術不是只要效率最高就一定最好。"
+        ],
+        "assessmentEmphasis": [
+          "要求分辨資料、設計取捨與社會判斷。"
+        ]
+      },
       "licenseBoundary": "只研究公開定位與教學結構，不複製出版社文字、圖片、題目或答案。"
     },
     {
       "publisher": "nani",
       "sourceType": "public-web",
-      "sourceLocator": "自然科公開課程資源：科技與環境、科學探究脈絡；公開定位未提供完整頁碼。",
+      "sourceLocator": "https://www.nani.com.tw/；自然科公開課程資源：科技與環境、科學探究脈絡；公開定位未提供完整頁碼。",
       "edition": "南一版自然公開課程與教學資源",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts":["以觀察、資料與實作建立科學解釋。","科學證據需交代條件與限制，不能直接替代公共決策。"],"representations":["觀察紀錄、數據表與條件式結論。"],"examplesOrEvidence":["雨量、集水面積與回收量的自編計算案例。"],"misconceptions":["單一測量值不能代表所有季節或所有用途。"],"assessmentEmphasis":["檢查變因、證據品質與結論範圍。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "以觀察、資料與實作建立科學解釋。",
+          "科學證據需交代條件與限制，不能直接替代公共決策。"
+        ],
+        "representations": [
+          "觀察紀錄、數據表與條件式結論。"
+        ],
+        "examplesOrEvidence": [
+          "雨量、集水面積與回收量的自編計算案例。"
+        ],
+        "misconceptions": [
+          "單一測量值不能代表所有季節或所有用途。"
+        ],
+        "assessmentEmphasis": [
+          "檢查變因、證據品質與結論範圍。"
+        ]
+      },
       "licenseBoundary": "只採公開索引與概念範圍，不複製教科書文字、圖表、題目或答案。"
     },
     {
       "publisher": "hanlin",
       "sourceType": "public-web",
-      "sourceLocator": "國中自然公開課程資源：科學與生活、科技與環境議題；公開資源定位。",
+      "sourceLocator": "https://www.ehanlin.com.tw/；國中自然公開課程資源：科學與生活、科技與環境議題；公開資源定位。",
       "edition": "翰林版自然公開課程資源",
-      "reviewedAt": "2026-09-01",
-      "findings": {"concepts":["科學知識、技術設計與環境後果彼此連結。","社會制度與利害關係人會促使技術修正。"],"representations":["利害關係人圖、回饋箭頭與方案比較表。"],"examplesOrEvidence":["比較雨水回收的成本、維護、水質與受益範圍。"],"misconceptions":["社會因素不是科學之外的雜訊，而是技術能否運作的條件。"],"assessmentEmphasis":["要求提出利益、代價與待查證問題。"]},
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "科學知識、技術設計與環境後果彼此連結。",
+          "社會制度與利害關係人會促使技術修正。"
+        ],
+        "representations": [
+          "利害關係人圖、回饋箭頭與方案比較表。"
+        ],
+        "examplesOrEvidence": [
+          "比較雨水回收的成本、維護、水質與受益範圍。"
+        ],
+        "misconceptions": [
+          "社會因素不是科學之外的雜訊，而是技術能否運作的條件。"
+        ],
+        "assessmentEmphasis": [
+          "要求提出利益、代價與待查證問題。"
+        ]
+      },
       "licenseBoundary": "僅記錄公開定位與教學結構；正文、活動、例證與檢核均重新撰寫。"
     }
   ],
@@ -185,7 +257,7 @@
       "用可量化指標與利害關係人分析，區分證據和價值取捨。",
       "設計非飲用水安全限制、控制條件與條件式結論的互動任務。"
     ],
-    "llmSynthesisNote": "本課依官方課綱、kg-science-content-ma 與三版本可取得的公開資料定位，融合概念順序、探究證據、生活應用與社會評估後，由 LLM 以自己的話獨立撰寫。未複製出版社文字、圖像、題目或答案；Terra 第二輪尚未執行，故維持 draft。"
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-ma、南一／康軒／翰林公開資源限制與三筆公立學校／公開自然科評量能力模式，獨立融合科學證據、技術設計、雨水回收系統、功能與限制、成本、風險、利害關係人及社會選擇。原有題目已改為科學—技術—社會互動專屬題目；所有題幹、選項、答案、解析與五步解法均重新撰寫，未複製受保護內容；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -254,7 +326,42 @@
     "model": "general",
     "goal": "透過雨水回收方案的可調參數，觀察科學證據、工程取捨與社會條件如何彼此影響。",
     "mission": "學生扮演校園改造小組，調整集水面積、儲水桶容量、過濾等級與維護預算；系統同步顯示可供水量、能源／成本、衛生風險與不同使用者的滿意度，不涉及飲用水實作。",
-    "learningDesign":{"type":"school-water-system-decision","objective":"以供水量、儲能、衛生風險與公平指標評估校園集水方案。","predictionPrompt":"增加儲水桶不一定增加可用水量，哪些降雨、過濾與維護條件會成為限制？","steps":[{"action":"設定集水面積、雨量、桶容量與使用需求基準","equation":"harvest=area\u00d7rainfall\u00d7coefficient"},{"action":"調整過濾等級與維護預算並追蹤能源及衛生指標","equation":"safety=f(filter,maintenance)"},{"action":"比較不同使用者效益與成本分配後修正方案","equation":"score=water-cost-risk-equity"}]},
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以供水量、儲能、衛生風險與公平指標評估校園集水方案。",
+      "predictionPrompt": "增加儲水桶不一定增加可用水量，哪些降雨、過濾與維護條件會成為限制？",
+      "evidencePrompt": "請以集水面積、雨量、桶容量、使用需求、過濾、維護、能源、衛生、成本與公平指標，說明校園集水方案的證據和限制。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "設定集水面積、雨量、桶容量與使用需求基準",
+          "equation": "harvest=area×rainfall×coefficient",
+          "reason": "先把集水面積、降雨、桶容量與需求放在同一基準，才能估算可用水量及限制。",
+          "feedback": "請記錄面積、雨量、係數、桶容量與需求，不要把桶容量直接當成可收集水量。"
+        },
+        {
+          "id": "step-2",
+          "action": "調整過濾等級與維護預算並追蹤能源及衛生指標",
+          "equation": "safety=f(filter,maintenance)",
+          "reason": "過濾與維護會影響能源、衛生及可持續使用，需把各指標一起追蹤。",
+          "feedback": "請說明過濾等級和維護預算如何改變衛生指標，並保留能源代價。"
+        },
+        {
+          "id": "step-3",
+          "action": "比較不同使用者效益與成本分配後修正方案",
+          "equation": "score=water-cost-risk-equity",
+          "reason": "方案不只看總供水量，還要比較不同使用者的效益、成本與風險分配。",
+          "feedback": "請分別列出使用者效益、成本與風險，並依資料修正方案而非只追求單一總分。"
+        },
+        {
+          "id": "step-4",
+          "action": "設定非飲用用途、清潔責任、標示與停用門檻，並以小規模試辦資料檢查是否能公平維持",
+          "equation": "adoption=service×safety×maintenance×equity",
+          "reason": "集水系統的可行性不只由水量決定；若缺乏衛生隔離、維護人力或清楚分工，供水效益可能轉成風險和不公平負擔。",
+          "feedback": "請為水質、清潔頻率、標示、責任與停用各設一個可檢查門檻，並保留試辦失敗時的修正或停止條件。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

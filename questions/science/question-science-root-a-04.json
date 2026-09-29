@@ -1,0 +1,75 @@
+{
+  "id": "question-science-root-a-04",
+  "subject": "science",
+  "type": "single-choice",
+  "prompt": "把冰塊放在室內觀察，若要判斷它是否吸收周圍熱量，哪項資料最直接？",
+  "options": [
+    {
+      "id": "A",
+      "text": "冰塊包裝的顏色"
+    },
+    {
+      "id": "B",
+      "text": "觀察者喜歡的口味"
+    },
+    {
+      "id": "C",
+      "text": "冰塊質量與溫度隨時間的變化"
+    },
+    {
+      "id": "D",
+      "text": "容器上的品牌"
+    }
+  ],
+  "knowledgeIds": [
+    "kg-science-content-a",
+    "kg-science-learning-content"
+  ],
+  "difficulty": "easy",
+  "answer": {
+    "value": "C",
+    "explanation": "溫度與質量的時間變化可連結相變與能量交換；顏色、口味和品牌不能直接支持熱量方向。 正確答案為選項 C。"
+  },
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+      "title": "高雄市立鹽埕國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "物質與能量模型、變因控制、證據判讀",
+      "observedPattern": "只取公立校方公開試題的能力方向，重新寫成根層模型題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新莊國民中學公開自然科定期評量試題頁",
+      "year": "113-115",
+      "subject": "science",
+      "locator": "物質性質、能量轉換、測量與推論",
+      "observedPattern": "只取公開題型的推理要求，改寫為跨概念模型題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/view/index.php?DataId=497103&MainMenuId=30637&MainType=101&SubMenuId=0&SubType=0&WebID=221&Work=View&page=1",
+    "sourceLocator": "三筆公立國中公開自然科資料僅作物質／能量模型、力與運動、變因控制、測量與證據判讀的能力方向；本題為根層 A 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開試題 pattern-only 能力方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+  },
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-root-a",
+  "solutionStrategy": "先找能隨時間量測的物理量，再把變化與熱傳遞方向連起來。",
+  "solutionSteps": [
+    "圈出題目要解釋的現象、輸入條件、可量測結果與系統邊界。",
+    "把物質、力、能量、變因或證據分別標記，先建立對應模型。",
+    "依公式、能量流向、控制變因或資料趨勢逐步核對，不用關鍵字猜答案。",
+    "排除把觀察當結論、把一次結果當規律、忽略守恆或省略條件的選項，答案為 C。",
+    "把答案放回新情境並檢查適用限制：溫度與質量的時間變化可連結相變與能量交換；顏色、口味和品牌不能直接支持熱量方向。"
+  ]
+}

@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-iv-4-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年1月28日自然科教室的觀察中，針對「Ba-Ⅳ-4：電池的化學能轉電能」提出可檢驗的科學問題，若比較 4 組、每組取樣 17 份資料，哪一項設計最適當？",
+  "prompt": "若金屬線直接把電池正、負極相連而形成短路，最安全且合理的處理是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ba-Ⅳ-4：電池的化學能轉電能」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "立即切斷連接並避免徒手碰觸可能發熱的導線或電池"
     },
     {
       "id": "B",
-      "text": "研究「Ba-Ⅳ-4：電池的化學能轉電能」時只測量4組中的一組就直接下結論"
+      "text": "讓短路持續，藉此快速充滿電池"
     },
     {
       "id": "C",
-      "text": "研究「Ba-Ⅳ-4：電池的化學能轉電能」時只改變溶液濃度，其餘條件一致，設置4組、每組取樣17份並各重複測量4次"
+      "text": "用更粗金屬線接上，讓電流更大"
     },
     {
       "id": "D",
-      "text": "研究「Ba-Ⅳ-4：電池的化學能轉電能」時先決定結論，再挑選支持結論的17筆資料"
+      "text": "把電池放入口袋等待它自然冷卻"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ba-Ⅳ-4：電池的化學能轉電能」。"
+    "value": "A",
+    "explanation": "短路使外部電阻很小，電流可能很大並造成導線、電池過熱或損壞，應先安全切斷連接，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究電池化學能轉電能、電解質、電路、電極、串聯與充電能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的化學電池、能量轉換與安全能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "化學電池、氧化還原、電能與電路安全判讀",
+      "pattern": "取由電極、回路、能量轉換與資料判斷電池工作的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由電極、回路、能量轉換與資料判斷電池工作的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷電路是否短路，再按照『斷電—隔離—避免接觸』的安全順序處理。",
+  "solutionSteps": [
+    "辨認正負極被低電阻金屬直接連接。",
+    "推論電路電阻很小，電流可能急遽增加。",
+    "注意導線或電池可能升溫、漏液或損壞。",
+    "在安全前提下切斷連接並移開可燃物。",
+    "因此選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

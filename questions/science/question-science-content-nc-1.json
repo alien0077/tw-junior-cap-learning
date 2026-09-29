@@ -2,23 +2,23 @@
   "id": "question-science-content-nc-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年3月31日自然科教室的觀察中，比較兩地「Nc：能源的開發與利用」資料時，甲地迎風坡年雨量約 40780 mm、乙地背風坡約 27950 mm，最合理的做法是？",
+  "prompt": "額定功率 20 kW 的光電板，在有效日照 4 小時內輸出滿額，理想發電量約多少？",
   "options": [
     {
       "id": "A",
-      "text": "在「Nc：能源的開發與利用」中只看 40780 mm 的單一數值便下結論"
+      "text": "80 kWh"
     },
     {
       "id": "B",
-      "text": "同時比較地形、風向、觀測期間與 40780、27950 mm 資料"
+      "text": "5 kWh"
     },
     {
       "id": "C",
-      "text": "在「Nc：能源的開發與利用」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "24 kWh"
     },
     {
       "id": "D",
-      "text": "在「Nc：能源的開發與利用」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "0.8 kWh"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Nc：能源的開發與利用」。"
+    "value": "A",
+    "explanation": "發電量可用功率乘有效時間估算：20 kW×4 h=80 kWh；實際還要考慮天候、轉換與系統損失。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的能源轉換、功率、能量、效率、供需、發電、環境與公共決策能力方向；本題為 Nc 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nc"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-nc",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源、功率、效率、資料比較與環境影響",
+      "observedPattern": "取公立學校自然科對能源轉換、資料判讀與生活應用的能力方向，另寫方案比較。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源轉換、電能、效率、圖表與科學決策",
+      "observedPattern": "取公開會考對公式、單位、供需和環境證據的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "發電、輸送、能源選擇與生態／安全限制",
+      "observedPattern": "取公立學校自然科對能源開發、供電與環境代價的能力方向，重新設計情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把功率和時間單位對齊，再用 E=P×t，最後檢查額定值是否等於實際輸出。",
+  "solutionSteps": [
+    "圈出需求量、能源來源、功率、時間與轉換條件。",
+    "統一單位，區分功率、能量、效率、可再生性與供電可靠度。",
+    "比較逐時供需、儲能、排放、生命週期、生態、噪音與公平資料。",
+    "排除只看額定值、能源名稱或單一平均數的選項，答案為 A。",
+    "用條件式結論回查計算、限制與下一項監測：發電量可用功率乘有效時間估算：20 kW×4 h=80 kWh；實際還要考慮天候、轉換與系統損失。"
+  ]
 }

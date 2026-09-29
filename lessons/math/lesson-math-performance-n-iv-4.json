@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-n-iv-4",
   "subject": "math",
-  "title": "n-Ⅳ-4：比比例正反比與連比",
+  "title": "n-Ⅳ-4：用比例模型追蹤量的共同變化",
   "knowledgeIds": [
     "kg-math-performance-n-iv-4"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「比比例正反比與連比」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "比不是把兩個數字用冒號排在一起；它描述兩個量如何相互比較。比例則要求這種比較在不同情況下保持一致，正比表示一個量乘幾倍，另一個量也乘幾倍，反比則表示兩量的乘積維持固定。連比還要先確認三個量是否共享同一個比例尺度，才能把條件轉成可計算的數值。本課用自編配方、工作分工與地圖縮放情境，逐步判斷模型、求未知量、檢查單位，並辨識看似像比例其實不符合的資料。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「比比例正反比與連比」相關的關係。"
+        "heading": "比與比例的差別",
+        "body": "比 a:b 是比較兩個同類量的相對關係；比例 a:b=c:d 則是兩個比相等。先確認量的單位與順序，再約分或使用交叉相乘，才能避免把前後項顛倒。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「比比例正反比與連比」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "正比看共同倍數",
+        "body": "若 y=kx 且 k 固定，x 增加為原來的三倍時，y 也增加為三倍。用 y/x 是否固定、表格是否等倍成長與座標圖是否通過原點，能互相驗證正比模型。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「比比例正反比與連比」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "反比看固定乘積",
+        "body": "若 xy=k 且 k 固定，一個量增加時另一個量必須按相反倍數變化。用乘積表、單位和情境限制檢查，不能只看一組數字就宣稱反比。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「比比例正反比與連比」，並指出至少一項支持判斷的條件。"
+        "heading": "連比與條件翻譯",
+        "body": "a:b:c=2:3:5 表示三量可寫成 2t、3t、5t；總和或其中一量給定後才可求 t。若題目換了單位或只給部分條件，要先把量的關係整理清楚。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「比比例正反比與連比」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先辨認比較的兩量、順序、單位與比例常數。",
+    "用商固定判斷正比，用積固定判斷反比，並檢查不只一組資料。",
+    "連比先設共同尺度 t，再用總和或已知量求 t。",
+    "最後回到原情境檢查單位、範圍與倍數方向。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「比比例正反比與連比」並驗算結果。",
-    "scenario": "以「n-Ⅳ-4：比比例正反比與連比」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "依商、積與共同尺度選擇比例模型，並用代回與單位驗算。",
+    "scenario": "拖曳或選擇不同資料表，觀察商或積是否固定，再把連比拆成共同尺度並檢查情境限制。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "第一個可變量"
+      },
+      {
+        "symbol": "y",
+        "meaning": "與 x 比較或配對的第二個量"
+      },
+      {
+        "symbol": "k",
+        "meaning": "固定的比例常數或乘積"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「比比例正反比與連比」的第一步是什麼？",
+        "prompt": "若資料中 y/x 每一列都相同，最合理的模型是什麼？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "正比 y=kx",
+          "反比 xy=k",
+          "兩量完全無關"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "商固定表示 y 隨 x 同倍變化，符合正比模型。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "若同一工作中人數乘時間固定，應觀察哪一項？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "人數×時間",
+          "人數＋時間",
+          "人數÷時間且不看單位"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "固定工作量可用乘積檢查反比，但仍要確認工作內容與效率條件。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "2:3:5 的總量是 50，三數應先怎麼表示？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "2t、3t、5t",
+          "2+t、3+t、5+t",
+          "2/t、3/t、5/t"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "連比共享同一個尺度 t，再由總和求出 t。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "n-Ⅳ-4：比比例正反比與連比；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；n-Ⅳ-4：比比例正反比與連比：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「比比例正反比與連比」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「n-Ⅳ-4：比比例正反比與連比」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；n-Ⅳ-4：比比例正反比與連比：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「n-Ⅳ-4：比比例正反比與連比」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；n-Ⅳ-4：比比例正反比與連比：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「n-Ⅳ-4：比比例正反比與連比」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「比比例正反比與連比」",
-        "body": "以「比比例正反比與連比」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "一壺飲料的配方能不能任意放大？",
+        "body": "原創飲料配方以果汁與水的量維持 2:3。先讓學習者比較 200 毫升與 300 毫升、400 毫升與 600 毫升兩組資料，說明哪些只是同一配方放大，哪些已經改變味道。接著把『同時乘上相同倍數』寫成比例語句，建立比與比例不是單純相加的觀念。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「比比例正反比與連比」的概念架構",
-        "body": "本單元依官方課綱所列的「比比例正反比與連比」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "用商與積選擇模型",
+        "body": "把表格中的 x、y 分別計算 y/x 與 xy，觀察哪一欄保持固定。若 y/x 固定，寫成 y=kx 並解釋正比；若 xy 固定，寫成 xy=k 並解釋反比。特別加入固定基本費的計程車資料，讓學習者看見『一起增加』不一定是正比，模型要由條件而不是關鍵字決定。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「n-Ⅳ-4：比比例正反比與連比」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "從連比總量求每一份",
+        "body": "原創工作分配中甲、乙、丙的時間比例為 2:3:5，三人合計 50 分鐘。先把三量寫成 2t、3t、5t，利用 10t=50 得 t=5，再得到 10、15、25 分鐘。最後把三數重新相加、約成原比例，並檢查每個時間是否符合題目限制。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「比比例正反比與連比」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用兩個證據辨認正反比",
+        "body": "提供三組小表格：燈泡數與總耗電、完成同一工作的工人人數與時間、含固定費的車資與距離。學習者先計算商或積，再用一句話解釋模型；若資料不適合正比或反比，必須指出固定費或工作量改變等理由，而不是硬套公式。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「比比例正反比與連比」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "把比例搬到地圖與速率",
+        "body": "把地圖比例尺、實際距離與行走時間放在同一任務中。先處理同單位換算，再決定哪一對量是正比、哪一對量需要固定速率的限制；若速度改變，就重新說明原模型何處失效。這一步要求學生分開比例關係與單位換算，避免把數字倍數直接當成答案。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「比比例正反比與連比」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用反例檢查自己是否真的懂",
+        "body": "出口前請學習者改寫一個錯誤主張：『距離變兩倍，含起步費的車資一定變兩倍』。先圈出固定費，再用具體數字反駁，最後寫出什麼條件下才會成為正比。回顧時同時檢查比的順序、單位、常數與情境限制，讓答案可由別人重做。"
       }
     ],
     "summary": [
-      "先用自己的話界定「比比例正反比與連比」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "比描述相對關係，比例描述兩個比相等，順序與單位不可省略。",
+      "正比以商固定為證據，反比以積固定為證據，固定費等因素可能破壞模型。",
+      "連比用共同尺度 t 表示，再由總和或已知量求出各部分。",
+      "用代回、單位、倍數方向與反例檢查模型是否符合原情境。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「比比例正反比與連比」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "請說明如何用商與積分辨正比及反比。",
+        "expectedEvidence": "能說明正比 y/x 固定、反比 xy 固定，並指出需檢查多組資料與情境條件。"
       },
       {
-        "prompt": "在「比比例正反比與連比」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "甲乙丙為 2:3:5 且總量 50，如何求三者？",
+        "expectedEvidence": "設為 2t、3t、5t，得到 10t=50、t=5，故三者為 10、15、25。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「比比例正反比與連比」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼含固定費的車資通常不是距離的正比？",
+        "expectedEvidence": "車資含不隨距離改變的固定項，距離加倍時總價不一定加倍；需先說明條件。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『n-Ⅳ-4：用比例模型追蹤量的共同變化』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『拖曳或選擇不同資料表，觀察商或積是否固定，再把連比拆成共同尺度並檢查情境限制。』開始前，先回答：若資料中 y/x 每一列都相同，最合理的模型是什麼？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『拖曳或選擇不同資料表，觀察商或積是否固定，再把連比拆成共同尺度並檢查情境限制。』回答：2:3:5 的總量是 50，三數應先怎麼表示？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "若資料中 y/x 每一列都相同，最合理的模型是什麼？；操作時先預測，再依『n-Ⅳ-4：用比例模型追蹤量的共同變化』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-4：用比例模型追蹤量的共同變化)：答案 A；選項內容：正比 y=kx",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。商固定表示 y 隨 x 同倍變化，符合正比模型。",
+          "feedback": "商固定表示 y 隨 x 同倍變化，符合正比模型。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "若同一工作中人數乘時間固定，應觀察哪一項？；操作時先預測，再依『n-Ⅳ-4：用比例模型追蹤量的共同變化』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-4：用比例模型追蹤量的共同變化)：答案 A；選項內容：人數×時間",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。固定工作量可用乘積檢查反比，但仍要確認工作內容與效率條件。",
+          "feedback": "固定工作量可用乘積檢查反比，但仍要確認工作內容與效率條件。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "2:3:5 的總量是 50，三數應先怎麼表示？；操作時先預測，再依『n-Ⅳ-4：用比例模型追蹤量的共同變化』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-4：用比例模型追蹤量的共同變化)：答案 A；選項內容：2t、3t、5t",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。連比共享同一個尺度 t，再由總和求出 t。",
+          "feedback": "連比共享同一個尺度 t，再由總和求出 t。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf；比、比例、正反比與連比的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以比、比例與量的關係處理生活情境中的未知量",
+          "公開課程結構支持以等值關係、變化量與條件限制解讀比例模型。"
+        ],
+        "representations": [
+          "比值表、等值比例與連比的共同尺度表示"
+        ],
+        "examplesOrEvidence": [
+          "本課的飲料配方、工作時間與地圖比例均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "看到兩量一起變大就誤判正比，忽略固定項與單位順序"
+        ],
+        "assessmentEmphasis": [
+          "要求列出比例式、說明條件並以代回或表格驗證"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；比、比例、正反比與連比的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過表格與操作比較正比、反比的變化方式",
+          "公開課程結構支持以等值關係、變化量與條件限制解讀比例模型。"
+        ],
+        "representations": [
+          "倍數表、商積檢查與圖形或情境轉換"
+        ],
+        "examplesOrEvidence": [
+          "本課的飲料配方、工作時間與地圖比例均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "只用一筆資料判斷模型，或把反比誤認為差值固定"
+        ],
+        "assessmentEmphasis": [
+          "重視從資料提出模型、解未知量及解釋結果的歷程"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf；比、比例、正反比與連比的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "把比例概念連結到速率、尺度與實際問題限制",
+          "公開課程結構支持以等值關係、變化量與條件限制解讀比例模型。"
+        ],
+        "representations": [
+          "地圖比例、工作分配、速率與單位換算的多重表徵"
+        ],
+        "examplesOrEvidence": [
+          "本課的飲料配方、工作時間與地圖比例均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "連比未設共同尺度，或換單位後直接沿用原數字"
+        ],
+        "assessmentEmphasis": [
+          "評估模型是否符合情境、量綱是否一致並能解釋反例"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持以比與比例表達量的相對關係及未知量。",
+      "正比與反比必須由固定商或固定積等資料證據判斷。",
+      "連比、單位換算與生活情境需要將條件翻譯成可驗算的模型。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯比例關係與未知量處理；康軒較突顯表格操作及正反比辨識；翰林較突顯速率、尺度、單位與實際限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以配方放大和固定費反例，區分真正正比與表面同向變化。",
+      "以 2:3:5 的工作時間示範共同尺度、總量與回代驗證。",
+      "把商、積、單位和反例整合成可互動選擇與遷移任務。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織比、比例、正反比、連比及情境限制。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

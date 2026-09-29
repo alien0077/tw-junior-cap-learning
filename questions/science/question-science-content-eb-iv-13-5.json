@@ -2,41 +2,84 @@
   "id": "question-science-content-eb-iv-13-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年10月18日河川觀測站的觀察中，針對「Eb-Ⅳ-13：作用力與反作用力」提出可檢驗的科學問題，若比較 5 組、每組取樣 13 份資料，哪一項設計最適當？",
+  "prompt": "氣球放開後向左移動，較合理的作用與反作用描述是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Eb-Ⅳ-13：作用力與反作用力」時同時改變光照時間與另一個條件，卻不記錄方法"
+      "text": "氣球把空氣向右推出，空氣對氣球向左推"
     },
     {
       "id": "B",
-      "text": "研究「Eb-Ⅳ-13：作用力與反作用力」時只改變光照時間，其餘條件一致，設置5組、每組取樣13份並各重複測量4次"
+      "text": "氣球受到一個沒有來源的向左慣性力"
     },
     {
       "id": "C",
-      "text": "研究「Eb-Ⅳ-13：作用力與反作用力」時只測量5組中的一組就直接下結論"
+      "text": "空氣只被排出，沒有對氣球施力"
     },
     {
       "id": "D",
-      "text": "研究「Eb-Ⅳ-13：作用力與反作用力」時先決定結論，再挑選支持結論的13筆資料"
+      "text": "氣球向左的力比空氣向右的力大，才符合第三定律"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-eb-iv-13"
   ],
-  "difficulty": "hard",
+  "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Eb-Ⅳ-13：作用力與反作用力」。"
+    "value": "A",
+    "explanation": "氣球對排出空氣施加向右的力，空氣同時對氣球施加向左的力；兩力大小相等、方向相反，作用在不同物體。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作作用力與反作用力、碰撞、受力圖與系統判讀的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-eb-iv-13"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-eb-iv-13",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "作用力與反作用力、碰撞與力學判讀能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用碰撞、推牆、氣球、划船與受力圖情境考查第三運動定律、力的作用對象與系統邊界；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "牛頓運動定律、碰撞與受力圖判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用碰撞、推牆、氣球、划船與受力圖情境考查第三運動定律、力的作用對象與系統邊界；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "作用反作用、力與運動生活情境題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用碰撞、推牆、氣球、划船與受力圖情境考查第三運動定律、力的作用對象與系統邊界；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "追蹤被排出的物質與裝置本體，配對兩者的互相作用。",
+  "solutionSteps": [
+    "辨認互動的兩物體是氣球與排出的空氣。",
+    "氣球把空氣向右推出。",
+    "空氣對氣球的力方向相反，向左。",
+    "兩力大小相等且同時發生。",
+    "所以氣球因空氣反推而向左移動。"
+  ]
 }

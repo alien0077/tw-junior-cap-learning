@@ -47,7 +47,7 @@
       "publisher": "nani",
       "edition": "均一教育平台「類南一版」七年級公開章節架構（113）",
       "sourceType": "local-download",
-      "sourceLocator": "/private/tmp/tw-junior-version-sources-20260829/math-junyi.html；公開頁明示依南一版教科書章節架構編排，七上第一章定位為「整數運算與科學記號」。",
+      "sourceLocator": "https://www.junyiacademy.org/topics/n-m7a；/private/tmp/tw-junior-version-sources-20260829/math-junyi.html；公開頁明示依南一版教科書章節架構編排，七上第一章定位為「整數運算與科學記號」。",
       "reviewedAt": "2026-08-29",
       "findings": {
         "concepts": [
@@ -73,7 +73,7 @@
       "publisher": "kanghsuan",
       "edition": "康軒國中數學影音高手公開 XML 章節索引（115）",
       "sourceType": "local-download",
-      "sourceLocator": "/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml；textbook-mapping/math/kanghsuan-chapters.json，1-2「整數的加減」與 1-3「整數的乘除與四則運算」對應本 KG。",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml；/private/tmp/tw-junior-version-sources-20260829/math-knsh-public.xml；textbook-mapping/math/kanghsuan-chapters.json，1-2「整數的加減」與 1-3「整數的乘除與四則運算」對應本 KG。",
       "reviewedAt": "2026-08-29",
       "findings": {
         "concepts": [
@@ -99,7 +99,7 @@
       "publisher": "hanlin",
       "edition": "翰林國中數學解題影音網公開章節索引（115）",
       "sourceType": "local-download",
-      "sourceLocator": "/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html；textbook-mapping/math/hanlin-official-2026.json，1-2「正負數的加減」與 1-3「正負數的乘除」提供相關章節定位。",
+      "sourceLocator": "https://mathvideo.hle.com.tw/1A/；/private/tmp/tw-junior-version-sources-20260829/hanlin-math-index.html；textbook-mapping/math/hanlin-official-2026.json，1-2「正負數的加減」與 1-3「正負數的乘除」提供相關章節定位。",
       "reviewedAt": "2026-08-29",
       "findings": {
         "concepts": [
@@ -120,6 +120,33 @@
         ]
       },
       "licenseBoundary": "本機快取僅供閱讀公開索引與章節定位；不保存、重製或改編翰林影音、教材、例題或答案，成品皆為原創。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林版國中數學七年級公開校方課程計畫交叉證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nkjh.tyc.edu.tw/sites/default/files/2021-04/%E2%97%8F6-2-3%E6%95%B8%E5%AD%B8.pdf；PDF p.1 lines 70-71",
+      "reviewedAt": "2026-09-07",
+      "findings": {
+        "concepts": [
+          "N-7-4：數的運算規律 的學習範圍與課程定位",
+          "以交換、結合、分配律及負號分配式整理運算規律。",
+          "此為學校課程計畫的範圍與順序證據，不等同完整出版社章節。"
+        ],
+        "representations": [
+          "依單元的符號、圖形、數線、資料表徵或情境列式進行原創融合。"
+        ],
+        "examplesOrEvidence": [
+          "南崁國中公開課程計畫列出學習內容、目標、評量與教材資源；本 lesson 不複製其教材或題目。"
+        ],
+        "misconceptions": [
+          "公開課程計畫不能單獨證明學生已理解，也不能替代本單元的內容審查。"
+        ],
+        "assessmentEmphasis": [
+          "計畫列出的紙筆、小組討論、口頭回答與作業僅作為評量線索。"
+        ]
+      },
+      "licenseBoundary": "僅保存公立學校公開課程計畫的 URL、頁碼與概念定位；不複製出版社教材、學習單、題目、答案、圖片或版面，lesson 維持 draft。"
     }
   ],
   "fusionRecord": {
@@ -140,52 +167,55 @@
   },
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "均一教育平台「類南一版」七年級公開章節架構",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "七上第一章「整數運算與科學記號」",
-      "sourceUrl": "https://www.junyiacademy.org/topics/n-m7a",
+      "chapterLocator": "PDF text extraction search hit N-7-4 in the 113學年度翰林版七年級第一學期數學課程計畫; the weekly scope records exchange／associative／distributive laws, signed-expression transformations and paper-pencil／discussion assessment; accessed 2026-09-20.",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
+        "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開頁明示依南一版章節架構編排，將整數運算置於七上起始章；本課以共同乘數、反例與代入檢查重新安排原創教學。",
-      "copyrightBoundary": "只研究公開章節定位與概念順序；本課正文、清點情境、例題、選項、提示與回饋均獨立撰寫，不複製教材文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「N-7-4：數的運算規律」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中數學影音高手公開 XML",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "1-2 整數的加減；1-3 整數的乘除與四則運算",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_math.xml",
+      "chapterLocator": "PDF text extraction search hit N-7-4 in the 114學年度康軒版七年級數學課程計畫; the first-semester unit scope records exchange, associative and distributive laws, signed-expression transformations and contextual application; accessed 2026-09-20.",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
+        "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開索引將加減與乘除四則分段定位；本課以規律許可卡區分交換、結合與分配，並用反例檢查適用邊界。",
-      "copyrightBoundary": "只研究公開章節索引與概念範圍；不下載、重製或改編康軒教材、影音、題目或答案，所有案例與回饋均為原創。"
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「N-7-4：數的運算規律」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中數學解題影音網公開章節索引",
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "1-2 正負數的加減；1-3 正負數的乘除",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "PDF p.1-2 / extracted lines 108-113 and 169-174; N-7-4 lists exchange, associative and distributive laws and signed-expression transformations; the same rows identify 南一 Nanibook／南一數學影音網／南一 Nanipaper.",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-29",
+      "reviewedAt": "2026-09-20",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
+        "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開索引依加減、乘除分開定位；本課使用提出共同因數與負數分配的雙向驗算，讓變形保有可檢查的等值依據。",
-      "copyrightBoundary": "只研究公開章節定位與概念順序；本課正文、例題、選項、提示與回饋均獨立撰寫，不複製翰林文字、圖片、題目、影音或答案。"
+      "outcome": "記錄nani公立校方或官方公開結構對「N-7-4：數的運算規律」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -287,6 +317,17 @@
         ],
         "answer": "A",
         "feedback": "共同乘數 −4 要乘進 20 與 3；外層減號減去負的 12，因此成為加 12。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "稽核另一筆式子：7×(−3＋5) 與 7×(−3)＋5 哪一個仍保持原來的清點意義？",
+        "options": [
+          "7×(−3)＋7×5=−21＋35=14，因為 7 必須分配到括號內兩項",
+          "7×(−3)＋5=−16，因為共同乘數只需乘第一項",
+          "(7×−3)×5=−105，因為看到括號就可改成連乘"
+        ],
+        "answer": "A",
+        "feedback": "分配律要求共同乘數 7 同時乘上 −3 與 5；−21＋35=14，與 7×(−3＋5)=7×2=14 相同。"
       }
     ]
   },
@@ -330,6 +371,13 @@
           "equation": "(−4)(20−3)=(−4)×20−(−4)×3=−80＋12=−68",
           "reason": "分配律要求 −4 完整乘入兩項，外層減號再作用在負乘積上。",
           "feedback": "若寫成 −80−3，第二項遺失了共同乘數；請回到原括號逐項檢查。"
+        },
+        {
+          "id": "step-4",
+          "action": "用含負數括號的新式回查分配律是否完整",
+          "equation": "7×(−3＋5)=7×(−3)＋7×5=−21＋35=14",
+          "reason": "先計括號得 2 可作為結果檢查；展開時 7 必須同時乘到 −3 與 5，才不會遺失其中一項。",
+          "feedback": "若寫成 7×(−3)＋5，第二項少乘 7；若寫成連乘，則改變了原本的加法結構。"
         }
       ]
     }

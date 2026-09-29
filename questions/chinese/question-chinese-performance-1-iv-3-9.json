@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-1-iv-3-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "聽完『先調查漏水位置，再比較修繕方法，最後估算費用』，若要找出可行方法，第一步應做什麼？",
+  "prompt": "資料只顯示一場試辦後參與人數增加；哪種重述最負責任？",
   "options": [
     {
       "id": "A",
-      "text": "直接選費用最高的方案"
+      "text": "方案一定讓所有人更喜歡活動"
     },
     {
       "id": "B",
-      "text": "先宣布問題已經解決"
+      "text": "這場試辦期間參與人數增加，但長期效果與原因仍需更多觀察"
     },
     {
       "id": "C",
-      "text": "忽略調查結果只比較名稱"
+      "text": "參與人數增加就證明沒有成本"
     },
     {
       "id": "D",
-      "text": "先確認問題位置與成因，避免在資訊不足時選方案"
+      "text": "一次試辦已證明所有情境都會成功"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "先掌握問題與成因，才能依證據比較不同方法，避免未查證就決定。"
+    "value": "B",
+    "explanation": "負責任的重述保留觀察期間與已知指標，也標記長期效果、原因與成本尚未確定。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中 114 學年度下學期第一次段考三年級國文科公開試題卷；研究聆聽邏輯、證據與問題解決判讀題型（問題解決）；課綱 1-Ⅳ-3：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究主張／理由、因果界線、條件、反例、方案比較與試辦修正。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文聆聽與溝通表現 Ab-Ⅳ-3 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-1-iv-3"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-1-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "口語論證、理由與證據",
+      "observedPattern": "公立學校國文評量以口頭提案的主張／理由、因果界線、條件分支、反例、方案比較、反方成本與試辦修正要求邏輯聆聽；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "邏輯聆聽、條件與反例",
+      "observedPattern": "公立學校國文評量以口頭提案的主張／理由、因果界線、條件分支、反例、方案比較、反方成本與試辦修正要求邏輯聆聽；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "在重述中保留時間、樣本與指標，並明確寫出資料沒有回答的問題。",
+  "solutionSteps": [
+    "讀題定位：圈出「資料範圍」與主張、理由、條件、反例、方案、成本或資料範圍。",
+    "拆解邏輯：把聽到的句子改成主張—證據—限制鏈，再依「負責任的重述保留觀察期間與已知指標，也標記長期效果、原因與成本尚未確定。」檢查跳躍。",
+    "核對正解：選項 B 能保留原說話者的條件與未知，且提出可執行或可檢查的判斷。",
+    "排除誘答：檢查是否把一次資料推成普遍因果、忽略反方成本，或只用口號與人氣作決策。",
+    "回讀驗證：確認問題定義、證據範圍、受影響者與修正步驟彼此相連。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

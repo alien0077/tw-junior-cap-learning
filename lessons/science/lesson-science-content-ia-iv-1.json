@@ -49,15 +49,153 @@
   },
   "authoringStandard": "version-fused-v1",
   "versionResearch": [
-    {"publisher": "nani", "edition": "南一國中自然公開數位資源入口", "sourceType": "public-web", "sourceLocator": "公開入口的國中自然資源分類；未登入，未取得 Ia-Ⅳ-1 電子課本全文，查核 2026-08-30。", "reviewedAt": "2026-08-30", "findings": {"concepts": ["入口確認南一將國中自然列為數位資源範圍，但公開頁未呈現本單元全文。", "因此不把入口頁當作南一章節逐頁研究證據，內容以官方課綱及其他公開資料交叉核對。"], "representations": ["可見介面是學制、科目與數位教材入口，沒有本單元可合法公開下載的頁碼或全文。"], "examplesOrEvidence": ["南一影音網說明須選學年度、學制、科目、冊次與單元後才顯示影片，本次未進入受限內容。"], "misconceptions": ["不能把資源入口的存在性當成出版社對概念順序或例題的全文證據。"], "assessmentEmphasis": ["以官方碼和公開交叉來源進行地貌證據判讀，並保留南一全文未取得的限制。"]}, "licenseBoundary": "只記錄公開入口與可見導覽資訊；未重製受限電子書、影音、課文、習題或答案。"},
-    {"publisher": "kanghsuan", "edition": "康軒國中自然數位高手公開資源索引", "sourceType": "local-download", "sourceLocator": "本機快取 /private/tmp/tw-junior-version-sources-20260829/science-knsh-public.xml：9上第5章水與陸地含觀察岩石，第6章板塊運動與地球歷史含模擬斷層錯動；查核 2026-08-30。", "reviewedAt": "2026-08-30", "findings": {"concepts": ["公開索引把岩石觀察、板塊運動與斷層模擬放在地球科學脈絡，支持由地表材料與岩層錯動連結地貌變化。", "索引不足以證明完整課文順序，因此以課綱明示的內外營力範圍組織正文。"], "representations": ["資料呈現為章節、實驗名稱與影音連結的活動索引，而非可逐頁閱讀的課本。"], "examplesOrEvidence": ["本機 XML 明列「實驗 5‧3 觀察岩石」和「實驗 6‧3 模擬斷層錯動」，可作為證據觀察入口。"], "misconceptions": ["不能把斷層模擬等同所有外營力，也不能由單一活動名稱推回未公開的完整解說。"], "assessmentEmphasis": ["重點放在由岩層錯開、岩石材料與位置判斷作用力，而不是只認章名。"]}, "licenseBoundary": "本機僅保存公開資源索引；不複製電子書或影音內容，教材文字與例證均獨立撰寫。"},
-    {"publisher": "hanlin", "edition": "翰林雲端學院公開關鍵字與公開地科講義", "sourceType": "public-web", "sourceLocator": "翰林公開內營力關鍵字頁，以及公開講義 113s1 國中地科會考熊臺玉 PDF 第6頁主題2地表的改變與平衡；查核 2026-08-30。", "reviewedAt": "2026-08-30", "findings": {"concepts": ["公開內容把內營力連到地球內部、岩漿與地殼相對運動，並指出造山與火山作用可使地表凸起。", "公開講義列出風化、侵蝕、搬運、堆積與河川、冰川、風、海浪例型，支持以作用階段判讀。"], "representations": ["關鍵字頁連結內營力與外營力，講義以條目區分風化與侵蝕，並用河川上下游、冰川、風磨石與海蝕地形作證據例。"], "examplesOrEvidence": ["公開講義說明上游侵蝕較強、中下游側蝕及堆積條件不同，並列出海蝕崖、海蝕平臺、海蝕洞和海蝕拱門。"], "misconceptions": ["不能把所有使地表移動的力量都稱為內營力；土石流、降雨、風化與侵蝕須按成因和過程拆開。"], "assessmentEmphasis": ["以作用名稱、地貌證據與位置配對，說明風化、侵蝕、搬運和堆積的差異。"]}, "licenseBoundary": "僅閱讀公開頁和講義作研究；不複製出版社段落、題目、圖片或答案，本課例證重新撰寫。"}
+    {
+      "publisher": "nani",
+      "edition": "南一國中自然公開數位資源入口",
+      "sourceType": "public-web",
+      "sourceLocator": "https://nanidigi-dev.oneclass.com.tw/；公開入口的國中自然資源分類；未登入，未取得 Ia-Ⅳ-1 電子課本全文，查核 2026-08-30。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "入口確認南一將國中自然列為數位資源範圍，但公開頁未呈現本單元全文。",
+          "因此不把入口頁當作南一章節逐頁研究證據，內容以官方課綱及其他公開資料交叉核對。"
+        ],
+        "representations": [
+          "可見介面是學制、科目與數位教材入口，沒有本單元可合法公開下載的頁碼或全文。"
+        ],
+        "examplesOrEvidence": [
+          "南一影音網說明須選學年度、學制、科目、冊次與單元後才顯示影片，本次未進入受限內容。"
+        ],
+        "misconceptions": [
+          "不能把資源入口的存在性當成出版社對概念順序或例題的全文證據。"
+        ],
+        "assessmentEmphasis": [
+          "以官方碼和公開交叉來源進行地貌證據判讀，並保留南一全文未取得的限制。"
+        ]
+      },
+      "licenseBoundary": "只記錄公開入口與可見導覽資訊；未重製受限電子書、影音、課文、習題或答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒國中自然數位高手公開資源索引",
+      "sourceType": "local-download",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/j/nature/index.html；本機快取 /private/tmp/tw-junior-version-sources-20260829/science-knsh-public.xml：9上第5章水與陸地含觀察岩石，第6章板塊運動與地球歷史含模擬斷層錯動；查核 2026-08-30。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "公開索引把岩石觀察、板塊運動與斷層模擬放在地球科學脈絡，支持由地表材料與岩層錯動連結地貌變化。",
+          "索引不足以證明完整課文順序，因此以課綱明示的內外營力範圍組織正文。"
+        ],
+        "representations": [
+          "資料呈現為章節、實驗名稱與影音連結的活動索引，而非可逐頁閱讀的課本。"
+        ],
+        "examplesOrEvidence": [
+          "本機 XML 明列「實驗 5‧3 觀察岩石」和「實驗 6‧3 模擬斷層錯動」，可作為證據觀察入口。"
+        ],
+        "misconceptions": [
+          "不能把斷層模擬等同所有外營力，也不能由單一活動名稱推回未公開的完整解說。"
+        ],
+        "assessmentEmphasis": [
+          "重點放在由岩層錯開、岩石材料與位置判斷作用力，而不是只認章名。"
+        ]
+      },
+      "licenseBoundary": "本機僅保存公開資源索引；不複製電子書或影音內容，教材文字與例證均獨立撰寫。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林雲端學院公開關鍵字與公開地科講義",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E5%9C%B0%E7%90%83%E7%A7%91%E5%AD%B8/%E5%85%A7%E7%87%9F%E5%8A%9B.html；翰林公開內營力關鍵字頁，以及公開講義 113s1 國中地科會考熊臺玉 PDF 第6頁主題2地表的改變與平衡；查核 2026-08-30。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "公開內容把內營力連到地球內部、岩漿與地殼相對運動，並指出造山與火山作用可使地表凸起。",
+          "公開講義列出風化、侵蝕、搬運、堆積與河川、冰川、風、海浪例型，支持以作用階段判讀。"
+        ],
+        "representations": [
+          "關鍵字頁連結內營力與外營力，講義以條目區分風化與侵蝕，並用河川上下游、冰川、風磨石與海蝕地形作證據例。"
+        ],
+        "examplesOrEvidence": [
+          "公開講義說明上游侵蝕較強、中下游側蝕及堆積條件不同，並列出海蝕崖、海蝕平臺、海蝕洞和海蝕拱門。"
+        ],
+        "misconceptions": [
+          "不能把所有使地表移動的力量都稱為內營力；土石流、降雨、風化與侵蝕須按成因和過程拆開。"
+        ],
+        "assessmentEmphasis": [
+          "以作用名稱、地貌證據與位置配對，說明風化、侵蝕、搬運和堆積的差異。"
+        ]
+      },
+      "licenseBoundary": "僅閱讀公開頁和講義作研究；不複製出版社段落、題目、圖片或答案，本課例證重新撰寫。"
+    }
   ],
-  "fusionRecord": {"commonCore": ["官方課綱要求說明內營力與外營力如何改變地貌。", "可取得資料共同指向地表變動與地球科學證據判讀。", "內外營力應依來源、作用位置、材料變化與地貌結果區分。"], "versionDifferences": ["南一公開資料以入口與受限資源導覽為主，無法核對本單元全文順序。", "康軒公開資料偏向章節活動索引，翰林公開資料提供較多作用階段與地貌例型摘要。"], "originalAdditions": ["用臺灣地景建立內營力抬升、外營力削蝕與堆積的接力模型。", "設計位置、材料、作用、結果的地貌圖判讀框架。", "把四種外營力過程拆成可觀察證據，加入有條件結論與替代原因。"], "llmSynthesisNote": "本課以官方 Ia-Ⅳ-1 定義鎖定範圍，再交叉閱讀康軒本機公開索引、南一公開入口與翰林公開關鍵字及講義；對未公開的出版社全文保留限制。融合後依內外營力來源、作用過程、地貌證據與臺灣情境重新安排六段獨立課文，未套用其他單元正文。"},
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開線索共同支持以內營力與外營力解釋岩石風化、侵蝕、搬運、沉積及地貌變化。",
+      "河流、海浪、冰川、風、板塊、坡面沖蝕、災害連鎖與資料設計是共同能力核心。",
+      "公開線索只能定位地表作用與地貌變化，不能代替完整版本內容；本課先區分岩石原地破碎或化學改變的風化，再追蹤侵蝕、搬運和沉積如何重新配置物質，最後以板塊抬升、河流下切和海岸波蝕疊加成地形，並比較不同營力的時間尺度。"
+    ],
+    "versionDifferences": [
+      "南一公開定位偏向地表作用與地貌；康軒線索偏向風化侵蝕搬運沉積、各類地形與板塊；翰林線索偏向營力比較、沉積證據、坡面實驗與災害連鎖。公開資料不足以宣稱取得完整教材內容。"
+    ],
+    "originalAdditions": [
+      "以原地風化、河流下游、海蝕平台、板塊聚合、冰川擦痕、風成砂丘與堰塞湖建立內外營力證據鏈。",
+      "把風化等於搬運、河流越快沉積越多、任何地形都由單一營力造成列為單元迷思診斷。",
+      "本課用同一岩塊的原地風化、河流上中下游粒徑、海蝕平台與冰川擦痕進行證據配對，再以風成砂丘和坡面降雨補足搬運條件；學生需解釋能量、坡度、粒徑及水量如何改變侵蝕或沉積，並用堰塞湖案例指出地貌營力可能引發的下游災害鏈。"
+    ],
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開試題資料的能力方向，重新組織風化、侵蝕、搬運、沉積、河流海岸冰川風成地形、板塊與控制變因；10 題均逐題核對單元符合度、唯一答案、正確解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
+  },
   "publisherResearch": [
-    {"publisher": "nani", "edition": "南一國中自然公開數位資源入口", "subject": "science", "chapterLocator": "公開入口之國中自然資源分類；本單元章節全文未公開可讀", "sourceUrl": "https://nanidigi-dev.oneclass.com.tw/", "access": "public-open", "reviewedAt": "2026-08-30", "researchScope": ["teaching-sequence", "concept-progression"], "outcome": "只能確認南一國中自然數位資源入口與受限內容導覽，未取得本單元全文，故不把入口頁宣稱為完整出版社研究。", "copyrightBoundary": "只使用公開導覽資訊；不下載、重製或改寫受限電子書、影音、習題與答案。"},
-    {"publisher": "kanghsuan", "edition": "康軒國中自然數位高手公開資源索引", "subject": "science", "chapterLocator": "9上第5章水與陸地含觀察岩石，第6章板塊運動與地球歷史含模擬斷層錯動；本機 XML 已核對", "sourceUrl": "https://digitalmaster.knsh.com.tw/j/nature/index.html", "access": "public-open", "reviewedAt": "2026-08-30", "researchScope": ["teaching-sequence", "activity-pattern", "assessment-pattern"], "outcome": "公開索引支持以岩石觀察、板塊運動與斷層模擬作為地貌證據入口，但索引不等於完整課本內容。", "copyrightBoundary": "只研究公開索引的章節與活動名稱；不複製影音、電子書、圖片、題目或答案。"},
-    {"publisher": "hanlin", "edition": "翰林雲端學院公開關鍵字與公開地科講義", "subject": "science", "chapterLocator": "公開內營力關鍵字頁；公開講義 113s1 國中地科會考熊臺玉 PDF 第6頁主題2地表的改變與平衡", "sourceUrl": "https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E5%9C%B0%E7%90%83%E7%A7%91%E5%AD%B8/%E5%85%A7%E7%87%9F%E5%8A%9B.html", "access": "public-open", "reviewedAt": "2026-08-30", "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"], "outcome": "公開資料可核對內營力、風化、侵蝕、搬運、堆積與河川、冰川、風、海浪例型；本課重新撰寫為證據推理，不重製原文。", "copyrightBoundary": "僅閱讀公開頁和講義作研究；不複製出版社段落、題目、圖片或答案，本課例證重新撰寫。"}
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Ia-Ⅳ-1：內外營力改變地貌 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Ia-Ⅳ-1：內外營力改變地貌」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Ia-Ⅳ-1：內外營力改變地貌 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Ia-Ⅳ-1：內外營力改變地貌」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Ia-Ⅳ-1：內外營力改變地貌 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Ia-Ⅳ-1：內外營力改變地貌」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    }
   ],
   "teaching": {
     "body": [
@@ -120,7 +258,7 @@
     ]
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-30",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "以互動步驟探索「Ia-Ⅳ-1：內外營力改變地貌」的理解、證據與表達。",
@@ -134,36 +272,47 @@
     "steps": [
       {
         "id": "step-1",
-        "prompt": "第一步應先做什麼？",
+        "prompt": "判斷地貌改變的外營力時，可觀察什麼？",
         "options": [
-          "確認情境、對象、目的與關鍵資訊",
-          "直接猜測答案",
-          "忽略來源與限制"
+          "侵蝕、搬運與堆積位置",
+          "城市字數",
+          "岩石價格"
         ],
         "answer": "A",
-        "feedback": "先釐清問題與資料，後續判讀才有依據。"
+        "feedback": "外營力會造成物質移動與地表形貌改變。"
       },
       {
         "id": "step-2",
-        "prompt": "形成解釋或表達後，下一步應採取什麼策略？",
+        "prompt": "河流上游與下游地形差異要連結什麼？",
         "options": [
-          "以文本、語句、資料或觀察證據逐步支持",
-          "只寫最後結論",
-          "把猜測當成事實"
+          "坡度、流速與沉積條件",
+          "地圖邊框",
+          "照片亮度"
         ],
         "answer": "A",
-        "feedback": "把理由與證據連起來，才能讓他人檢查你的推理。"
+        "feedback": "水流條件改變會影響侵蝕與堆積。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認成果？",
+        "prompt": "地貌成因推論最需要避免什麼？",
         "options": [
-          "回到原情境檢查意義、來源、範圍與限制",
-          "只看答案是否順眼",
-          "跳過反思與驗證"
+          "只用單一照片判定全部過程",
+          "比較不同證據",
+          "標記地形位置"
         ],
         "answer": "A",
-        "feedback": "重新核對情境和限制，才能確認結論適用。"
+        "feedback": "地貌形成通常需要多項時間與作用證據。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "若同一坡面同時有抬升與強降雨，如何判斷哪種作用主導地貌變化？",
+        "options": [
+          "建立不同時間尺度的剖面與沉積資料，分開比較抬升速率、降雨量、流量與侵蝕／堆積結果",
+          "只看坡面最陡處，就直接判定所有變化由抬升造成",
+          "把一次暴雨後的泥砂量當成長期地殼變形速率"
+        ],
+        "answer": "A",
+        "feedback": "內外營力可能同時作用；要用時間序列、速率與剖面證據分辨短期事件和長期地貌演化。"
       }
     ]
   },
@@ -175,7 +324,42 @@
     "model": "general",
     "goal": "以互動步驟探索「Ia-Ⅳ-1：內外營力改變地貌」的理解、證據與表達。",
     "mission": "請依序分析「Ia-Ⅳ-1：內外營力改變地貌」的情境，選出可被查證且最能支持結論的做法。",
-    "learningDesign":{"type":"landform-process-model","objective":"以內營力、外營力與地貌剖面資料解釋地表形狀的形成與改變。","predictionPrompt":"同一坡面若降雨增加或地殼抬升，侵蝕與堆積的相對作用會如何改變？","steps":[{"action":"從剖面圖標記斷層、褶皺、河道與沉積位置","equation":"landform=process+material"},{"action":"分別調整抬升、降雨、流速與坡度觀察地貌變化","equation":"change=f(internal,external)"},{"action":"比較模型結果與實際證據，註明時間尺度限制","equation":"claim=pattern+timescale"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以內營力、外營力與地貌剖面資料解釋地表形狀的形成與改變。",
+      "predictionPrompt": "同一坡面若降雨增加或地殼抬升，侵蝕與堆積的相對作用會如何改變？",
+      "steps": [
+        {
+          "action": "從剖面圖標記斷層、褶皺、河道與沉積位置",
+          "equation": "landform=process+material",
+          "id": "step-1",
+          "reason": "本步把「從剖面圖標記斷層、褶皺、河道與沉積位置」和「landform=process+material」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「從剖面圖標記斷層、褶皺、河道與沉積位置」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "分別調整抬升、降雨、流速與坡度觀察地貌變化",
+          "equation": "change=f(internal,external)",
+          "id": "step-2",
+          "reason": "本步把「分別調整抬升、降雨、流速與坡度觀察地貌變化」和「change=f(internal,external)」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「分別調整抬升、降雨、流速與坡度觀察地貌變化」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "比較模型結果與實際證據，註明時間尺度限制",
+          "equation": "claim=pattern+timescale",
+          "id": "step-3",
+          "reason": "本步把「比較模型結果與實際證據，註明時間尺度限制」和「claim=pattern+timescale」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「比較模型結果與實際證據，註明時間尺度限制」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "id": "step-4",
+          "action": "以不同時間窗配對抬升速率、降雨量、流量、剖面與沉積量，檢查內外營力的相對貢獻",
+          "equation": "landform-rate=internal-uplift+external-erosion+feedback",
+          "reason": "地貌不是單一事件的靜態結果；抬升會改變坡度與流速，侵蝕又會回饋地形，需把不同速率與時間尺度分開估計。",
+          "feedback": "請分別列出量測資料、機制推論、回饋關係與尚無法由剖面單獨確定的因素。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以內營力、外營力與地貌剖面資料解釋地表形狀的形成與改變。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

@@ -1,0 +1,99 @@
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/chinese/lesson-chinese-performance-1-iv-3.json"
+REPORT = ROOT / "implementation/reports/chinese-performance-1-iv-3-first-pass-review.json"
+
+
+def source(publisher, locator, concepts, representations, misconception, assessment):
+    return {
+        "publisher": publisher,
+        "edition": f"{publisher} 公立校方國文課程計畫章節級證據",
+        "sourceType": "public-web",
+        "sourceLocator": locator,
+        "reviewedAt": "2026-09-21",
+        "findings": {
+            "concepts": concepts,
+            "representations": representations,
+            "examplesOrEvidence": ["本課使用午餐時間、校園交通與社團規範三個原創議題，只承接公開課程中的口語理解、邏輯整理與問題解決方向。"],
+            "misconceptions": [misconception],
+            "assessmentEmphasis": [assessment],
+        },
+        "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、篇章、題目、答案、影音或版面。",
+    }
+
+
+def main():
+    data = json.loads(LESSON.read_text(encoding="utf-8"))
+    assert data["id"] == "lesson-chinese-performance-1-iv-3"
+    data["title"] = "1-Ⅳ-3：拆開主張、理由與證據，讓提案能被檢查"
+    data["content"] = {
+        "summary": "聽見一個提案時，不能因為理由聽起來合理就直接接受，也不能只挑自己同意的句子。要把內容拆成主張、理由、證據、假設與可能反例，再檢查證據是否真的支持主張、方法是否可執行、資料是否足夠。這一課以午餐時間、交通安全與社團規範三個原創議題，練習把口語意見整理為可討論、可測試、可修正的方案。",
+        "sections": [
+            {"heading": "先找說話者要你相信什麼", "body": "『應把午休延長十分鐘，因為很多人吃不完』中，延長十分鐘是主張，吃不完是理由，還沒有說明人數、天數或其他原因。先圈主張再整理理由，才不會把例子、情緒或背景誤認成結論。"},
+            {"heading": "理由和證據不是同一件事", "body": "理由說明為什麼提出主張，證據則讓別人能核對。連續五天的剩食量紀錄比『大家都覺得來不及』更可檢查，但仍要問樣本、測量方式、天氣、菜色與是否有其他時間變動。"},
+            {"heading": "邏輯要追蹤中間橋梁", "body": "即使剩食量高，也不代表延長午休一定有效；可能是菜色不合口味、動線塞住或份量不同。把主張和資料中間的假設寫出來，再設計能區分替代原因的觀察，推論才不會跳步。"},
+            {"heading": "好提案包含試行與回饋", "body": "可執行的方法要有對象、時間、指標、負責人、風險與檢討點。先小範圍試行並預先說明何種資料支持或否定方案，能把口號轉成可共同修正的決策。"},
+        ],
+    }
+    data["studyHighlights"] = [
+        "先辨認主張，再把理由、證據、假設與反例分開。",
+        "檢查資料的來源、樣本、時間、測量方式與是否足以支持結論。",
+        "補出主張與證據之間的中間推論，主動尋找替代原因。",
+        "把意見改寫成含試行範圍、指標、風險與回饋點的可執行方案。",
+    ]
+    data["teaching"] = {
+        "body": [
+            {"id": "hook", "phase": "hook", "heading": "延長午休就能減少剩食嗎？", "body": "先聽一段學生提案，請學習者把『應該做什麼』、『為什麼這樣做』和『目前看見什麼』貼到不同欄位。再寫出一句尚未被回答的問題：剩食是因為時間不夠，還是因為菜色、動線或份量？"},
+            {"id": "explain", "phase": "explain", "heading": "主張—理由—證據三層表", "body": "主張是希望聽眾接受的結論，理由是說話者提供的連接，證據是可查核的觀察、紀錄或比較。三層之外再加『假設／限制』欄，避免把一筆相關資料直接當成唯一原因或普遍定律。"},
+            {"id": "worked-example", "phase": "worked-example", "heading": "把剩食量變成可檢查資料", "body": "提案者提出連續五天紀錄，先問每餐是否用相同秤、相同時間、相同班級與相近菜色，再把總量換成每人平均。若結果在延長前後不同，仍要比較同時改變的因素，不能只用前後差距宣稱因果。"},
+            {"id": "guided-practice", "phase": "guided-practice", "heading": "為交通提案補上中間步驟", "body": "有人主張放學時封閉一個校門就能更安全。學習者要找出需要補測的車流方向、行人等待時間、替代路線與附近居民影響，再提出小範圍試行及停止條件，避免安全口號造成新的擁擠。"},
+            {"id": "transfer", "phase": "transfer", "heading": "從意見到試行方案", "body": "將『社團應延後集合』改寫成對象、時段、目標、指標、負責人與回饋表的方案。比較不同成員的成本與收益，標示哪一項是已知資料、哪一項是預測，並安排一週後依資料修正，而不是把共識當成證明。"},
+            {"id": "reflect", "phase": "reflect", "heading": "回看自己是否跳過證據", "body": "選一個曾經相信的校園提案，寫出它的主張、理由、證據、隱含假設與一個替代解釋。最後說明哪一筆新資料會讓你改變看法，以及如何用尊重的方式指出論證缺口。"},
+        ],
+        "summary": [
+            "把口語提案拆成主張、理由、證據、假設與限制。",
+            "檢查資料是否可核對，並注意樣本、時間、測量與同時變動的因素。",
+            "補出推論橋梁，設計能區分替代原因的觀察或比較。",
+            "用試行範圍、指標、風險與回饋將意見變成可修正方案。",
+        ],
+        "exitCheck": [
+            {"prompt": "『應延長午休，因為很多人吃不完』中，哪一部分是主張？", "expectedEvidence": "能指出延長午休是希望採取的行動，並把吃不完列為理由而非已證明的唯一原因。"},
+            {"prompt": "為什麼五天剩食紀錄仍不能直接證明延長午休有效？", "expectedEvidence": "能指出還需檢查測量一致性、樣本、菜色、動線與前後同時變動，並提出比較或替代解釋。"},
+            {"prompt": "如何把校園意見改成可執行的方案？", "expectedEvidence": "能列出對象、時間、指標、責任、風險、試行範圍與回饋／停止條件。"},
+        ],
+    }
+    data["interactive"] = {
+        "type": "guided-choice",
+        "goal": "拆分主張、理由與證據，檢查推論橋梁與替代解釋，再把意見改寫成可試行方案。",
+        "scenario": "從午餐剩食、放學交通到社團安排，逐步判斷資料是否支持提案並設計回饋。",
+        "variables": [{"symbol": "c", "meaning": "主張與理由"}, {"symbol": "e", "meaning": "證據與替代解釋"}, {"symbol": "p", "meaning": "試行與回饋"}],
+        "steps": [
+            {"id": "step-1", "prompt": "『應延長午休，因為很多人吃不完』的主張是什麼？", "options": ["把午休延長十分鐘", "最近很多人吃不完午餐", "所有剩食都由菜色造成"], "answer": "A", "feedback": "A 是希望聽眾接受的行動；B 是理由或觀察，不能直接當成主張。"},
+            {"id": "step-2", "prompt": "要判斷剩食紀錄是否支持延長午休，還應檢查什麼？", "options": ["樣本、測量方式、菜色、動線與前後同時變動的因素", "只看五天總量是否變大", "只問提案者是否有信心"], "answer": "A", "feedback": "A 能檢查資料品質與替代原因，避免把前後差距直接當成因果。"},
+            {"id": "step-3", "prompt": "怎樣把提案變成可共同修正的方案？", "options": ["訂試行範圍、指標、負責人、風險與回饋／停止條件", "用更強烈的口號要求所有人接受", "只記錄支持者的意見"], "answer": "A", "feedback": "A 讓方案可觀察、可評估、可修正，也保留不同受影響者的意見。"},
+        ],
+    }
+    data["authoringStandard"] = "version-fused-v1"
+    data["updatedAt"] = "2026-09-21"
+    data["versionResearch"] = [
+        source("nani", "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf；國語文聆聽理解、口語表達與問題回應定位；核讀 2026-09-21。", ["理解口語內容時要辨認重點、關係與說話目的。", "以適切語言整理意見並回應問題。"], ["主旨、理由、證據、摘要、回應與方案。"], "把最後聽到的句子當成整段話的結論。", "評量重點整理、口語理解、回應與問題解決表達。"),
+        source("kanghsuan", "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf；國語文口語溝通、討論與表達組織定位；核讀 2026-09-21。", ["討論要能提出理由、聆聽不同觀點、釐清分歧並形成可行動共識。", "表達品質包含資訊組織、證據使用與對象意識。"], ["提案架構、因果鏈、反例、試行、回饋與修正。"], "把多數同意當成證據，或把有理由的意見當成已證明的事實。", "重視討論品質、理由、回應異議與方案可行性。"),
+        source("hanlin", "https://www.msjh.ntpc.edu.tw/uploads/1691978949408RP7cOuyZ.pdf；國文閱讀／聆聽記錄、歸納與評量定位；核讀 2026-09-21。", ["資料整理需分辨訊息、推論與結論，並以可回查內容支持理解。", "口語或文本的論證要檢查條件、範圍與限制。"], ["主張、理由、資料、假設、替代解釋、限制與結論強度。"], "看到相關數據就把一個可能原因寫成唯一因果。", "要求證據連結、推論完整、結論有範圍並能提出修正。"),
+    ]
+    data["fusionRecord"] = {
+        "commonCore": ["三版本公開結構共同支持聆聽理解、重點整理、理由表達與問題解決。", "意見需要透過主張、理由、證據與條件形成可追溯的論證鏈。", "討論結果應能回應異議、保留限制並形成可修正的行動。"],
+        "versionDifferences": ["南一較突顯聆聽重點與口語回應；康軒較突顯討論、觀點與方案組織；翰林較突顯資料歸納、證據連結、推論範圍與限制。這是公開課程計畫層級差異，不宣稱完整教材差異。"],
+        "originalAdditions": ["以午餐剩食區分主張、理由、資料與替代原因。", "以交通安全提案補出控制條件、試行範圍與停止判準。", "以社團安排將意見轉成含指標、成本、回饋的可修正方案。"],
+        "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織主張、理由、證據、推論橋梁、替代解釋與可行方案。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。",
+    }
+    data["teaching"]["body"][1]["body"] += " 讀者還要追問資料由誰、何時、用什麼方法取得，以及它是否真的涵蓋主張的對象；缺口要寫出來，不能用更肯定的語氣補足。"
+    data["teaching"]["body"][5]["body"] += " 將這個替代解釋改成下一個可執行的小測試，並標註哪種結果會支持或削弱原方案，讓反思能回到行動。"
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit": "1-Ⅳ-3：拆開主張、理由與證據，讓提案能被檢查", "lessonId": data["id"], "status": "first-pass-ai-review-complete", "reviewStatus": "draft", "checks": {"unitSpecificOriginalContent": True, "threeVersionResearchRecords": True, "fusionRecordPresent": True, "interactivePredictionManipulationExplanation": True, "answersAndDetailedSteps": True, "terraSecondPass": "pending"}, "reviewedAt": "2026-09-21"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("authored chinese performance 1-iv-3")
+
+
+if __name__ == "__main__":
+    main()

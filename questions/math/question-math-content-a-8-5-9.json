@@ -2,41 +2,84 @@
   "id": "question-math-content-a-8-5-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "下列哪個乘積展開後等於 z²＋3z－4？",
+  "prompt": "長方形面積為 x²＋6x＋8，若一邊為 x＋2，另一邊用因式表示為何？",
   "options": [
     {
       "id": "A",
-      "text": "(z＋3)(z－4)"
+      "text": "x＋2"
     },
     {
       "id": "B",
-      "text": "(z＋1)(z－4)"
+      "text": "x＋4"
     },
     {
       "id": "C",
-      "text": "(z－4)²"
+      "text": "x＋6"
     },
     {
       "id": "D",
-      "text": "(z＋4)(z－1)"
+      "text": "x＋8"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-a-8-5"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "(z＋4)(z－1)＝z²＋3z－4。"
+    "value": "B",
+    "explanation": "x²＋6x＋8＝(x＋2)(x＋4)，已知一邊為 x＋2，另一邊為 x＋4。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "鹽埕國中公開數學段考；研究因式分解方法、公因式、分組、乘法公式與驗算能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供因式分解方法與結果驗證能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的因式分解方法方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-a-8-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-a-8-5",
+  "examPatternRefs": [
+    {
+      "url": "https://school.tc.edu.tw/open-message/064510/get-file/5e49ebb9a2bac601505f73d8",
+      "title": "臺中市立大甲國民中學二年級數學補考題庫（第三冊）",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "PDF 第 3 頁第 42 題：以和與積拆成兩個一次因式",
+      "observedPattern": "校方公開原卷第 42 題提供「以和與積拆成兩個一次因式」的技能模式參照；本題僅借鑑能力方向，題幹、數值、選項、答案與解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193506/get-file/6204ac4530ab0a5e342ecfe5.pdf",
+      "title": "臺中市立北新國民中學數學科八年級補考試題",
+      "year": "unknown",
+      "subject": "math",
+      "locator": "PDF 第 1 頁第 7 題：二次三項式因式分解",
+      "observedPattern": "校方公開原卷第 7 題提供「二次三項式因式分解」的技能模式參照；本題僅借鑑能力方向，題幹、數值、選項、答案與解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/064519/get-file/698ae03c3cd80e32ef01bd8d",
+      "title": "臺中市立大道國民中學 114 學年度第一學期八年級數學科補行評量題庫",
+      "year": "114",
+      "subject": "math",
+      "locator": "PDF 第 2 頁第 24 題：和積配對分解二次式",
+      "observedPattern": "校方公開原卷第 24 題提供「和積配對分解二次式」的技能模式參照；本題僅借鑑能力方向，題幹、數值、選項、答案與解法均獨立改寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "將面積多項式因式分解，再對照已知的一邊因子。",
+  "solutionSteps": [
+    "找乘積 8、和 6 的兩數 2 與 4。",
+    "分解為 (x＋2)(x＋4)。",
+    "比對已知因子 x＋2。",
+    "讀出另一邊是 x＋4。",
+    "選 B，乘回可還原面積。"
+  ]
 }

@@ -54,7 +54,7 @@
       "edition": "南一公開入口與自然版本交叉定位（截至 2026-08-31）",
       "sourceType": "public-web",
       "sourceLocator": "https://nanidigi.nani.com.tw/；專案自然 textbook-mapping 的公開校方課程計畫交叉紀錄；只核對可公開定位的冊次／主題線索，未取得 INc-Ⅳ-2 完整出版社課文。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "可公開核對的資料支持把跨科主題放回從原子到宇宙的尺度脈絡，但不足以證明逐課正文順序。",
@@ -80,7 +80,7 @@
       "edition": "康軒公開自然影音索引（本機快取查核 2026-08-31）",
       "sourceType": "local-download",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_nature.xml；本機 /private/tmp/tw-junior-version-sources-20260829/science-knsh-public.xml；按冊次、章節和公開資源節點查核，無逐字稿。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "公開索引呈現自然課常把觀察或操作和概念說明、回顧檢核連接，支持本課安排可重做的換算與表徵檢查。",
@@ -106,7 +106,7 @@
       "edition": "翰林自然公開理科祕笈資源（112 版公開檔，查核 2026-08-31）",
       "sourceType": "public-web",
       "sourceLocator": "https://resource.hle.com.tw/Books/BooksResource/112%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%EF%BC%92%E4%B8%8A%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99%E7%94%A8%E5%90%88%E6%AA%94%28112f339268%29.pdf；公開檔資源結構線索，非 115 年本單元全文。",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "findings": {
         "concepts": [
           "可取得的公開資源把概念說明、活動觀察與檢核視為連續學習鏈，但檔案年代不能代表目前版本的逐課編排。",
@@ -130,69 +130,71 @@
   ],
   "fusionRecord": {
     "commonCore": [
-      "官方課綱與 KG 共同鎖定本課為跨尺度的科學表示與溝通，不是單一自然現象的實驗課。",
-      "三版本可取得線索都支持把概念、表徵、活動和檢核串接，不能只列名詞。",
-      "可靠的尺度比較必須同時交代物理量、單位、數值表示法與模型限制。"
+      "三版本公開線索共同支持用合適單位、單位換算、科學記號、數量級與有效數字表達不同尺度的科學量。",
+      "計算結果必須同時檢查指數、單位、係數範圍與測量精度，避免只看數字而忽略物理意義。",
+      "公開版本線索不能代替完整課本核讀；本課以同一長度量在不同單位下數值改變但物理量不變為入口，練習十進位前綴、科學記號和數量級估算，再依原始測量精度保留有效數字，避免換算時只抄數字或把額外位數誤當成新的測量資訊。"
     ],
     "versionDifferences": [
-      "南一目前主要提供公開入口與交叉定位，康軒提供較明確的公開影音索引，翰林可讀到的是較早年份公開資源結構；證據粒度與版本年份不相同，不能假裝三者都提供本單元全文。",
-      "康軒線索較容易支持活動節點，翰林線索較適合提醒表徵與檢核的銜接，南一則保留版本對照的查核限制。"
+      "公立段考與會考公開題型提供單位、數量級、科學記號與測量資料判讀方向；康軒公開課程線索偏向選擇合適單位、換算與有效數字記錄。公開資料不足以宣稱取得完整教材內容。"
     ],
     "originalAdditions": [
-      "用紙張、教室與車站距離建立負指數、零指數、正指數的專屬尺度故事。",
-      "設計四步驟：辨識物理量、統一單位、轉成科學記號、反向驗算並標註精確度。",
-      "加入新聞圖表與非比例模型的遷移判讀，要求說明對數刻度、單位前綴和圖示限制。"
+      "以微米、毫米、公尺、公里、天文距離與細胞大小建立單位換算、數量級比較、科學記號及有效數字的連續證據鏈。",
+      "把『指數越大數值一定越大』、『換單位只改數字不改量』與『多寫幾位就更精確』列為單元迷思診斷。",
+      "本課以細胞尺寸、操場長度和天文距離三種數量級比較，讓學生先預估再將微米、毫米、公尺與公里化為同一單位，寫成科學記號並用係數範圍檢查；最後從原始量具刻度回推有效數字，說明結果看似位數增加但精度並未提高的原因。"
     ],
-    "llmSynthesisNote": "本課先以官方課綱正文第 30～31 頁／PDF 第 34～35 頁、cur-science-content-inc-iv-2 與 kg-science-content-inc-iv-2 確認單元邊界，再讀取 2026-08-31 可取得的南一公開入口與交叉定位、康軒本機公開 XML、翰林公開舊版資源。融合只採用各來源可核驗的概念範圍、表徵方向和研究限制；六階段正文、數據、例題、迷思診斷、遷移任務、互動選項與 simulation learningDesign 均依本單元重新設計，沒有複製出版社文字，且尚未啟動 Terra，故維持 draft。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開自然科試題及課程資料的能力方向，重新核對科學記號、單位換算、數量級、有效數字與測量記錄。現有 10 題均為單元專屬原創題，具唯一答案、解析與五步解法，未複製教材或試題文字、圖表與答案；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一國中自然公開入口與校方課程計畫交叉資料",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "南一數位資源入口 https://nanidigi.nani.com.tw/；專案既有自然版本 mapping 的冊次線索；未取得 INc-Ⅳ-2 逐課全文",
-      "sourceUrl": "https://nanidigi.nani.com.tw/",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；INc-Ⅳ-2：不同尺度、單位與科學記號 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
-      "researchScope": [
-        "concept-progression",
-        "assessment-pattern"
-      ],
-      "outcome": "公開入口可作為南一自然資源的可追溯定位，但不能證明本單元的正式章節順序或全文。本課只採用與課綱一致的物理量辨識、單位換算和尺度溝通方向，例題與段落全部自編。",
-      "copyrightBoundary": "只記錄公開入口與交叉 mapping 的定位；未複製南一課文、圖表、習題或答案，也未把無法取得的出版社內容當成已核對證據。"
-    },
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音 XML（本機 science-knsh-public.xml）",
-      "subject": "science",
-      "chapterLocator": "https://digitalmaster.knsh.com.tw/all/video/public/j_nature.xml；本機快取 /private/tmp/tw-junior-version-sources-20260829/science-knsh-public.xml；以公開冊次、章節與資源節點定位，未將影音當逐字課文",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/public/j_nature.xml",
-      "access": "public-open",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "本機索引可核對康軒自然公開資源的章節與活動型態，支持用觀察、表徵和檢核串起概念；它沒有提供可重製的本單元全文，因此本課另以尺度資料表與單位轉換重建學習路徑。",
-      "copyrightBoundary": "只使用公開 XML 的章節定位與資源結構，不複製影音文字、畫面、題目或答案；本課的數據、敘事、提問、互動與回饋皆為原創。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「INc-Ⅳ-2：不同尺度、單位與科學記號」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開資源說明與理科祕笈（112 版公開檔）",
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "https://resource.hle.com.tw/Books/BooksResource/112%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%EF%BC%92%E4%B8%8A%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99%E7%94%A8%E5%90%88%E6%AA%94%28112f339268%29.pdf；公開檔資源結構線索，非 115 年 INc-Ⅳ-2 正式章節全文",
-      "sourceUrl": "https://resource.hle.com.tw/Books/BooksResource/112%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%EF%BC%92%E4%B8%8A%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99用%E5%90%88%E6%AA%94%28112f339268%29.pdf",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；INc-Ⅳ-2：不同尺度、單位與科學記號 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-08-31",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
+        "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "可取得的翰林公開檔顯示自然教材重視概念表徵、活動觀察與檢核的銜接，但年份與單元不完全對應。本課只融合『用表徵說清楚科學量、再檢查限制』的教學原則，不挪用其章節編排或文字。",
-      "copyrightBoundary": "公開檔僅作研究定位與資源型態參考；不複製翰林受保護課文、圖示、活動、題目、答案或版面，所有內容另行撰寫。"
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「INc-Ⅳ-2：不同尺度、單位與科學記號」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；INc-Ⅳ-2：不同尺度、單位與科學記號 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「INc-Ⅳ-2：不同尺度、單位與科學記號」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -256,7 +258,7 @@
     ]
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "透過尺度資料轉換，練習統一單位、讀取科學記號並檢查模型限制。",
@@ -300,6 +302,17 @@
         ],
         "answer": "A",
         "feedback": "尺度圖常是模型；標示單位、近似值和非比例限制，讀者才知道圖上的位置不能直接當成真實距離。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "圖上把紙厚、教室長與車站距離畫成等距三格，應如何補充說明？",
+        "options": [
+          "保留統一單位與科學記號的數量級比較，並明確標示圖示非按真實比例，不能用格距反推距離",
+          "因為三筆資料已排好順序，就宣稱三格代表三個相等的真實距離",
+          "刪除單位和近似符號，讓圖面看起來更簡單且更精確"
+        ],
+        "answer": "A",
+        "feedback": "表示法與圖像各自承擔不同資訊；非比例模型必須保留圖例、單位和近似界線，避免讀者過度解讀。"
       }
     ]
   },
@@ -343,6 +356,13 @@
           "equation": "10⁻⁴＜10⁰＜10³",
           "reason": "排序前要確認比較的是相同物理量；排序後仍須說明近似值、圖例和比例是否足以支持解讀。",
           "feedback": "指數相差三代表約千倍的數量級差，但圖上畫三格不一定代表真實距離三等份，請補上非比例註記。"
+        },
+        {
+          "id": "step-4",
+          "action": "切換比例圖與概念圖兩種表示，對照反向換算、數量級和圖例能支持的資訊",
+          "equation": "representation=number+unit+scale legend",
+          "reason": "同一資料可用數值、科學記號或示意圖表達，但每種表示保留與省略的資訊不同；交叉核對能避免把圖示距離當成真實比例。",
+          "feedback": "請指出一項圖示省略的資訊，並用反向換算檢查數值是否仍與原始單位一致。"
         }
       ]
     }

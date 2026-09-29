@@ -1,0 +1,38 @@
+{
+  "decision": "D-348",
+  "date": "2026-09-28",
+  "unit": "Aa-Ⅳ-1",
+  "scope": "Repair learner-visible original fusion and the unit-specific interactive model without claiming publisher-text completion.",
+  "sourceBoundary": {
+    "historicalComparativeStudy": "https://chemed.chemistry.org.tw/page/74?cat=gsmmuqdvfh",
+    "historicalEdition": "2013 editions discussed by a 2016 secondary comparative article; not evidence that current editions were read",
+    "publicSchoolPlan": "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "limitation": "A public-school lesson plan establishes classroom scope/approach, not publisher textbook text or reuse permission. Publisher records remain pending."
+  },
+  "changes": [
+    "Exposed all six unit-authored teaching paragraphs in learner-visible content.sections.",
+    "Reframed version differences and study notes to label historical secondary evidence and school plans accurately.",
+    "Changed the Aa-IV-1 simulation to a Rutherford-scattering-specific qualitative path model controlled by impact proximity; no real experimental proportions are claimed.",
+    "Fixed renderer dispatch so the dedicated model and four evidence-reasoning steps both render; slider updates paths and preserves keyboard focus.",
+    "Added targeted regression and included it in npm test; updated schema, unit spec, decision/current-state records."
+  ],
+  "gates": {
+    "publisherFullTextResearch": "pending",
+    "substantivePublisherFusionReview": "pending",
+    "contentReview": "pending",
+    "publisherOutcomes": "pending",
+    "lessonReviewStatus": "draft",
+    "specQaStatus": "pending"
+  },
+  "verification": {
+    "targetedRegression": "PASS",
+    "validateData": "PASS: 14,469 JSON, 13,112 IDs, 1,032 KG nodes",
+    "implementationSpecs": "PASS: 1,027 files, 0 errors, 1,027 pending",
+    "npmTest": "PASS; workbench renders 1,027/1,027",
+    "gitDiffCheck": "PASS",
+    "browserSmoke": "PASS: 1,027-unit traversal; Chromium targeted public lesson check passes for dedicated visualization, four evidence steps, proximity slider, keyboard focus retention, and 320px layout"
+  },
+  "a7_2Modified": false,
+  "subtasks": false,
+  "commitPush": "not performed"
+}

@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-1-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若兩圖形只有對應邊長比例相同，但對應角不相等，能否直接判定兩圖形相似？",
+  "prompt": "四邊形甲的邊長依序為 3、4、5、6 公分；四邊形乙的對應邊依序為 6、8、10、13 公分。兩圖形能否由同一次等比例縮放得到？",
   "options": [
     {
       "id": "A",
-      "text": "可以，邊長比例永遠足夠"
+      "text": "可以，倍率為2"
     },
     {
       "id": "B",
-      "text": "可以，只要面積相等"
+      "text": "可以，倍率為1/2"
     },
     {
       "id": "C",
-      "text": "不可以，還需符合對應角相等等條件"
+      "text": "不可以，第四組對應邊倍率不同"
     },
     {
       "id": "D",
-      "text": "不可以，因為任何圖形都不能相似"
+      "text": "可以，只要邊數相同即可"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,70 @@
   "difficulty": "medium",
   "answer": {
     "value": "C",
-    "explanation": "相似需同時符合相應角相等與對應邊成比例等條件，只有邊比不足以判定。"
+    "explanation": "前三組邊長倍率都是2；第四組為13÷6，不等於2。至少一組對應邊不符合共同倍率，因此不能由同一次等比例縮放得到，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似形 題型與官方課綱 KG kg-math-content-s-9-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=68&cfsn=347&fn=112-1-1-9%E6%95%B8%E5%AD%B8.pdf&op=dlfile",
+    "sourceLocator": "改寫參照：花蓮縣立吉安國中112學年度第1學期第1次段考PDF第2頁第12題的多邊形縮放後相似性判斷；更換圖形資料、數字與作答形式。",
+    "authoringNote": "原創多邊形共同倍率診斷題，只參照公校公開試題對縮放後相似性的考查方向，不重製原卷。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=68&cfsn=347&fn=112-1-1-9%E6%95%B8%E5%AD%B8.pdf&op=dlfile",
+      "title": "花蓮縣立吉安國中112學年度第1學期第1次段考九年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "PDF第2頁第12題",
+      "observedPattern": "比較候選多邊形是否符合縮放後的相似關係；本題改以逐邊倍率一致性作檢查。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "依給定對應順序逐欄計算乙邊÷甲邊；任何一欄倍率不同，就否定共同縮放。",
+  "solutionSteps": [
+    "按題目給定順序配對四組邊。",
+    "計算6÷3＝2、8÷4＝2、10÷5＝2。",
+    "計算第四組13÷6，結果不是2。",
+    "共同倍率未成立，所以不是同一次等比例縮放。",
+    "選 C；不能只因前三組吻合就忽略第四組。"
+  ]
 }

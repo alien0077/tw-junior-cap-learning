@@ -2,41 +2,84 @@
   "id": "question-math-performance-n-iv-2-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "某地清晨氣溫為－2°C，中午上升 5°C，中午氣溫為何？",
+  "prompt": "|-9|+|4| 的值為何？",
   "options": [
     {
       "id": "A",
-      "text": "3°C"
+      "text": "-13"
     },
     {
       "id": "B",
-      "text": "7°C"
+      "text": "-5"
     },
     {
       "id": "C",
-      "text": "－7°C"
+      "text": "5"
     },
     {
       "id": "D",
-      "text": "－3°C"
+      "text": "13"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-n-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "氣溫變化為 (－2)＋5＝3，因此中午為 3°C。"
+    "value": "D",
+    "explanation": "|-9|=9、|4|=4，兩者相加為 13，因此選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考負數數線、整數四則、絕對值、排序與溫度情境題型；本題使用全新數值、情境、選項與解析，非原題重製。",
-    "authoringNote": "負數數線與四則運算單元實質改寫；已重新計算整數加減乘除、絕對值、數線比較、排序與溫度情境，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供負數與四則運算能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的數線與負數方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-n-iv-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-n-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "負數數線方向、絕對值、正負數四則、運算順序、分數與生活溫度情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把負數放入數線、溫度、收支或混合運算情境，要求判斷方向、符號與運算順序；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "負數數線方向、絕對值、正負數四則、運算順序、分數與生活溫度情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把負數放入數線、溫度、收支或混合運算情境，要求判斷方向、符號與運算順序；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "負數數線方向、絕對值、正負數四則、運算順序、分數與生活溫度情境；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常把負數放入數線、溫度、收支或混合運算情境，要求判斷方向、符號與運算順序；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "絕對值先轉成距離的非負數，再進行加法。",
+  "solutionSteps": [
+    "-9 到原點的距離是 9。",
+    "4 到原點的距離是 4。",
+    "所以 |-9|+|4|=9+4。",
+    "計算得到 13。",
+    "所以選 D。"
+  ]
 }

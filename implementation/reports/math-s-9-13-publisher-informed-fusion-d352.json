@@ -1,0 +1,63 @@
+{
+  "reportId": "math-s-9-13-publisher-informed-fusion-d352",
+  "date": "2026-09-28",
+  "unitId": "S-9-13",
+  "lessonId": "lesson-math-content-s-9-13",
+  "status": "substantive-source-informed-fusion-strengthened; publisher-and-content-gates-open",
+  "scope": "Non-A-7-2 continuation. Extends D-350/D-351; does not redo the completed public-exam source ledger or interaction browser traversal.",
+  "researchReadThisTurn": [
+    {
+      "publisherAssociation": "Nani-labeled public share; third-party host and rights/edition unverified",
+      "url": "https://www.scribd.com/document/932850221/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E4%B9%9D%E4%B8%8B",
+      "locator": "Shared material pp.52-63: prism net/surface-area/volume section; pyramid construction/net/surface-area sections; cone net/sector/surface-area sections.",
+      "finding": "The readable progression moves from countable polygonal faces to pyramid faces, then to the curved cone side represented by a sector. Source provenance and permission are not independently verified; no source wording, figures, questions, or values were reused."
+    },
+    {
+      "publisherAssociation": "Hanlin official concept pages and official math video index",
+      "urls": [
+        "https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E6%95%B8%E5%AD%B8/%E8%A7%92%E6%9F%B1.html",
+        "https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E6%95%B8%E5%AD%B8/%E5%9C%93%E9%8C%90.html",
+        "https://mathvideo.hle.com.tw/3B/W3-2/"
+      ],
+      "locator": "Official concept pages for prism and cone; official index identifies 3-1 prism/cylinder and 3-2 pyramid/cone and labels warm-up/basic/mastery video groups. Videos were not played; concept pages are summaries, not full current textbook chapters.",
+      "finding": "Hanlin's prism summary ties surface area to the sum of face areas and volume to base area times prism height; its cone summary defines the outside as a circular base plus sector side. This independently grounds the lesson's face ledger and sector derivation."
+    },
+    {
+      "publisherAssociation": "Kanghsuan official nine-grade-second-semester video index",
+      "url": "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E9%99%84%E4%BB%B6%E6%93%8D%E4%BD%9C%E5%BD%B1%E7%89%87&l2=9%E4%B8%8B",
+      "locator": "Official index lists chapter 3, 'Solid Figures in Daily Life'; page exposes no readable lesson body in this review and its videos were not played.",
+      "finding": "Confirms chapter-level resource availability only. No Kanghsuan-specific teaching sequence, worked example, or assessment claim is inferred."
+    }
+  ],
+  "fusionAppliedToLearnerVisibleLesson": {
+    "instructionalSequence": [
+      "Start from the prism: list the two congruent bases and each rectangular side face; derive surface area as a sum of visible faces, while volume uses one base area times prism length.",
+      "Move to a regular pyramid: retain the face ledger but count the triangular sides individually and distinguish a face slant height from the solid's perpendicular height.",
+      "Then introduce the cone as a representational change: the curved side unfolds to a sector, whose arc must match the base circumference; derive sector area from arc length and slant radius rather than memorizing a detached formula."
+    ],
+    "whyThisIsSynthesis": "The sequence uses the readable Nani-labeled section progression and Hanlin's independently published structural summaries, while reorganizing them into the author-created transition from planar face counting to curved-surface unfolding. It turns source comparison into a visible concept progression and original derivations, not a publisher-name list. The source order is not attributed as an identical publisher sequence.",
+    "originalityAndLimits": "All visible explanations, figures, numeric examples, interaction values, error analysis, and transfer prompts remain independently authored. Only one publisher's official concept summaries were directly readable; a Nani-labeled third-party excerpt was also read but its edition/rights are unverified; Kanghsuan evidence remains official index-level only. Do not mark three publisher slots verified or call the full chapter review complete."
+  },
+  "defectFoundAndFixed": {
+    "interactiveAnswers": [
+      "Step 1 had answer key A while its numerical rationale supported option B (surface area +24 cm2; volume +12 cm3). Corrected key to B and aligned feedback.",
+      "Step 4 had answer key A while its worked calculation supported option B (surface area 120 cm2; volume 60 cm3). Corrected key to B."
+    ],
+    "regression": "Target test now pins both keys, source-attributed sequence, and Hanlin/Kanghsuan evidence presence."
+  },
+  "gates": {
+    "targetRegression": "PASS: npm run test:math:s9-13; visible lesson source/fusion/order/answer-key checks and dedicated prism interaction model pass.",
+    "fullNodeSuite": "PASS: npm test, including workbench full traversal 1,027/1,027.",
+    "dataValidation": "PASS: validate_data.py reports 14,474 JSON files, 13,112 IDs, 1,032 KG nodes; all 1,052 lessons and 10,566 questions remain draft.",
+    "implementationSpecValidation": "PASS structurally: 1,027 specs, 0 errors; 1,027 remain pending QA/completion gates.",
+    "globalPublisherLedger": "Fresh audit after recording the new S-9-13 research: 1,027 units; 285/3,081 publisher slots verified, 2,796 pending, 932 units blocked. S-9-13's three slots remain pending; this turn did not promote them.",
+    "strictLessonIndependence": "PASS: 614 learning-content lessons, 0 risks, 0 affected references, 0 strict failures.",
+    "jsonAndDiff": "PASS: lesson, project state, and report JSON parse; git diff --check clean.",
+    "lessonReviewStatus": "draft",
+    "publisherSlots": "pending; no ledger promotion",
+    "implementationSpecQa": "untested",
+    "publicExamSourceLedger": "Last authoritative audit recorded 10,566/10,566, pending 0; not rerun because no source-ledger files changed.",
+    "commitPush": "not performed; overall objective remains incomplete",
+    "subtasks": "none"
+  }
+}

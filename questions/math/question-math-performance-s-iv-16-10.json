@@ -2,41 +2,84 @@
   "id": "question-math-performance-s-iv-16-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若立體圖形的三視圖長度一致，判讀時還需比較哪項？",
+  "prompt": "兩個立體的正視圖、側視圖與俯視圖中都有相同的長度數值；要判斷它們是否為同一形狀，還應比較什麼？",
   "options": [
     {
       "id": "A",
-      "text": "寬度與高度的對應"
+      "text": "各視圖中的邊與面之相對位置及可見線"
     },
     {
       "id": "B",
-      "text": "文字顏色"
+      "text": "只比較其中一個視圖的面積"
     },
     {
       "id": "C",
-      "text": "紙張大小"
+      "text": "只比較立體的顏色"
     },
     {
       "id": "D",
-      "text": "答案位置"
+      "text": "只比較名稱是否相同"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-s-iv-16"
   ],
-  "difficulty": "medium",
+  "difficulty": "hard",
   "answer": {
     "value": "A",
-    "explanation": "三視圖須對照長、寬、高的對應關係。"
+    "explanation": "三視圖除了尺寸，還包含各邊、凹凸與可見／隱藏線的配置；長度相同不代表空間排列相同，因此要比較相對位置與線型，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考數學科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "以數學概念、全新數值與解析獨立撰寫；公開試題僅作題型研究。待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供立體體積、表面積、展開圖、正投影與三視圖能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的立體幾何方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-performance-s-iv-16"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-s-iv-16",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "柱體與圓柱體積、表面積、展開圖、正投影與三視圖判讀",
+      "observedPattern": "公開數學評量常要求由立體圖形的尺寸、展開圖或不同視向投影判斷表面積、體積與形狀；本題只取能力方向、資料型態與判讀層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "柱體與圓柱體積、表面積、展開圖、正投影與三視圖判讀",
+      "observedPattern": "公開數學評量常要求由立體圖形的尺寸、展開圖或不同視向投影判斷表面積、體積與形狀；本題只取能力方向、資料型態與判讀層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "柱體與圓柱體積、表面積、展開圖、正投影與三視圖判讀",
+      "observedPattern": "公開數學評量常要求由立體圖形的尺寸、展開圖或不同視向投影判斷表面積、體積與形狀；本題只取能力方向、資料型態與判讀層次。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先把三視圖當成三個互相補充的投影，檢查形狀結構而非只看單一數值。",
+  "solutionSteps": [
+    "確認正視、側視、俯視分別提供不同方向資訊。",
+    "相同長度只能保證部分尺寸一致。",
+    "比較各視圖中邊與面的相對位置。",
+    "再檢查可見線與隱藏線是否一致。",
+    "因此選 A。"
+  ]
 }

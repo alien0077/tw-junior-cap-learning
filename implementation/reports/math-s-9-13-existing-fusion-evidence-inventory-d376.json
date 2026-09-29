@@ -1,0 +1,33 @@
+{
+  "decision": "D-376",
+  "date": "2026-09-28",
+  "unitId": "S-9-13",
+  "purpose": "Inventory existing authored fusion and correct source evidence scope without rewriting completed lesson content.",
+  "inventory": {
+    "existingLesson": "The independently authored six-section lesson, versionResearch, fusionRecord, and prism interaction already existed. They were preserved; D-375 separately repaired duplicate student rendering by aligning the legacy teaching.body with the existing visible sections.",
+    "nani": "Directly read pages 52-63 of a third-party Scribd document labeled Nani; it contains prism, pyramid, and cone surface-area material. Uploader, edition authenticity/completeness, and rights are unverified. The ledger status means only that this scoped labeled sample was directly read and located.",
+    "hanlin": "Directly read official Hanlin concept summaries for prisms and cones. These support limited concept definitions/representations, not full chapter sequence, activities, or assessment design.",
+    "kanghsuan": "Available record is a public school curriculum plan and index-level material, not directly read publisher teaching content; its publisher evidence remains pending."
+  },
+  "changes": [
+    "Set Nani and Hanlin scoped evidence slots to verified, with the meaning explicitly limited to direct reading of the located material; retained Kanghsuan pending.",
+    "Corrected researchScope to avoid claiming activity/assessment evidence not directly observed and restored the Kanghsuan read date to 2026-09-20.",
+    "Clarified the spec that the existing synthesis is preserved and that three-version/full-chapter, rights/provenance, and content review gates remain open."
+  ],
+  "sources": [
+    {"publisher": "Nani-labeled third-party share", "url": "https://www.scribd.com/document/932850221/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E4%B9%9D%E4%B8%8B", "locator": "pp.52-53, 57-60, 61-63"},
+    {"publisher": "Hanlin official", "url": "https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E6%95%B8%E5%AD%B8/%E8%A7%92%E6%9F%B1.html", "locator": "prism concept summary"},
+    {"publisher": "Hanlin official", "url": "https://www.ehanlin.com.tw/app/keyword/%E5%9C%8B%E4%B8%AD/%E6%95%B8%E5%AD%B8/%E5%9C%93%E9%8C%90.html", "locator": "cone concept summary"}
+  ],
+  "verification": {
+    "unitTests": "PASS npm run test:math:s9-13: visible lesson scope, worked calculations, misconception repair, transfer, draft gate; interaction prediction gate, misconception hint, triangular-prism net/model, linked calculations, keyboard focus, transfer, reset, draft status.",
+    "publisherEvidenceLedger": "PASS: 1,027 units; 294/3,081 verified, 2,787 pending, 932 units blocked. S-9-13 added only two scoped samples; Kanghsuan remains pending.",
+    "implementationSpecs": "PASS structure: 1,027 specs, 0 errors; QA 1,027 pending.",
+    "data": "PASS: 14,489 JSON files, 13,113 IDs, 1,032 KG nodes; all 1,052 lessons and 10,566 questions remain draft.",
+    "siteIndex": "PASS: rebuilt and validated 1,052 lessons, 10,566 question paths, revision local.",
+    "diffCheck": "PASS git diff --check; report and project-state JSON parse successfully."
+  },
+  "releaseStatus": "Lesson remains draft; full three-version and content review gates are not passed.",
+  "examLedger": "Not rerun in this scoped inventory.",
+  "commitPush": "Not performed."
+}

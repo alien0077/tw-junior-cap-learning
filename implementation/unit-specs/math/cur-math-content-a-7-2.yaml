@@ -1,0 +1,166 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-content-a-7-2
+  knowledgeGraphIds:
+  - kg-math-content-a-7-2
+  title: A-7-2：一元一次方程式的意義
+  subject: math
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  fusedScope:
+    officialCurriculum: A-7-2：一元一次方程式的意義
+    curriculumIntent: A-7-2：一元一次方程式的意義
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 優先實質比較三版本；不足時可按可讀證據降為二版或一版材料主導融合，但須逐版揭露來源類型、實讀範圍與限制，不得把索引當正文或宣稱未讀版本已融合
+    currentEvidenceStatus: curriculum-and-kg-grounded; hanlin-labeled-textbook-and-remedial-pages-read; hanlin-official-three-publisher-concept-and-hours-matrix-read; partial-nani-textbook-extract-p183-184-read-via-public-math-education-publication; kanghsuan-official-resource-index-concept-sequence-read-without-playing-videos; version-differences-mapped-to-visible-sections-and-interaction; anonymous-shared-slide-used-only-as-cross-check; full-nani-and-kanghsuan-textbook-chapters-pending; hanlin-authenticity-and-rights-pending; content-review-pending
+  learningGoals:
+  - 將單一未知量的具體情境寫成一元一次方程式，說清楚未知數、係數、常數、等號兩側與單位的意義。
+  - 依等號、未知數個數及未知數最高次數，區分一元一次方程式與非例。
+  - 判斷給定數值是否為方程式的解：代入原式後兩側相等才成立；本單元不教授如何求出未知數。
+  prerequisites:
+  - 能讀懂本單元使用的基本符號、圖表或短文本
+  - 能依提示完成一次預測、操作、觀察、解釋循環
+  coreConcepts:
+  - 方程式是含未知數的等量關係；解是使等式成立的未知數值，不是任何被移到等號另一邊的數。
+  - 本單元限於方程式意義、解的定義與具體情境列式；等量公理求解程序及應用求解屬 A-7-3。
+  - 候選值驗證必須代回原方程式並比較左右結果；情境題還要辨明單位、範圍與語意條件。
+  misconceptions:
+  - 把等號讀成「接下來算答案」，因此只計算左側或把 3x+2=14 誤當成 3x+2 的另一種寫法。
+  - 把任何含字母的表達式都叫方程式，忽略等號、未知數個數或次數條件。
+  - 代入候選值後只計算左側，沒有和原式右側比較；或把候選值誤當由求解程序所得。
+  contentFlow:
+  - 'hook: 從四袋徽章與散放徽章的清點紀錄寫成 4x+3=27，追問每個數量從何而來。'
+  - 'activate-prerequisite: 對照重複相同物件與相加，確認 4x 表示四份各 x，而非 4+x。'
+  - 'classify: 依有無等號、未知數種類數、未知數最高次數分類式子，替非例指出違反條件。'
+  - 'predict: 對 2y+5=13 比較候選 y=3、4 的左右值，先預測哪一個會使原等式成立。'
+  - 'manipulate: 將候選值代入原方程式，計算左側並與原式右側並列，不移項求未知數。'
+  - 'observe: 檢查兩側數值是否相等，區分成立的解與不成立的候選值，保留原式條件。'
+  - 'explain: 用自己的話區分方程式、候選值與解，指出等號成立作為判定證據。'
+  - 'model: 將圖書室五箱書加七本共四十二本轉成 5n+7=42，逐項標出係數、常數與總量。'
+  - 'guided-practice: 分類學生自編符號卡；對漏等號、誤讀重複量與次數錯置提供不同提示。'
+  - 'transfer: 將六包種子與包材總重情境列成 6s+5=47，讓同伴由符號式還原故事。'
+  - 'exit-ticket: 判斷方程式類型、代入一個候選值比較等號兩側，並獨立列一個新情境式；明示求解留至 A-7-3。'
+  visualizations:
+  - 情境量對照：四袋各 x 枚、三枚散放與總數 27，文字／式子同步對應 4x+3=27。
+  - 分類矩陣：以等號、未知數數量與最高次數三欄辨認方程式／非例。
+  - 候選值表：代入原式後並列左右計算值及相等判定，禁止展示求解變形鏈。
+  interactiveBlocks:
+  - id: CUR-MATH-CONTENT-A-7-2-I01
+    component: AlgebraEquationMeaningBlock
+    purpose: 以情境量卡建立方程式、辨識一元一次結構，並代入候選值檢驗原式；不展示等式變形或求解流程。
+    initialState:
+      mode: predict
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+        equalBags: 4
+        looseBadges: 3
+        totalBadges: 27
+    studentActions:
+    - 先選出表示四袋、每袋未知數量、三枚散放與總數的符號關係4x+3=27，再說明各符號代表什麼；此互動為選項操作，不描述成拖曳。
+    - 以鍵盤或觸控將式子分類為一元一次方程式、代數式或非例，錯誤時指出第一個不符合的條件。
+    - 選擇候選值 x=6 並代入原式，比較左側結果與右側 27；系統不得提供移項／同除解法。
+    - 將新的六包種子總重情境寫成式子，並讓同伴由符號式還原量的關係。
+    visualRules:
+    - 情境判斷題作答後保留題幹與方程式；錯誤回饋指出缺漏或錯置的量，不顯示求解鏈。
+    - 候選值代入表同時呈現原式、代入值、左側結果及右側結果，保留判斷理由。
+    - 分類回饋指出等號、未知數數目或最高次數中的具體錯誤，避免只顯示對錯。
+    - 顏色搭配數字、文字與符號標籤；無動畫時仍能讀到情境和式子的對應。
+    - 320px 窄螢幕將情境、式子和左右比較改為直向閱讀，不隱藏量或單位。
+    misconceptionChecks:
+    - id: MC-CUR-MATH-CONTENT-A-7-2-I01
+      trigger: 把 4x+3 當成方程式、把 4x 誤讀為 4+x，或代入候選值後沒有比較右側。
+      prompt: 這個表示法缺少哪個條件？代入候選 x 後，原式左右各是多少？
+      expectedEvidence: 方程式需有等號且符合一元一次條件；代入 x=6 後左側 4×6+3=27，右側 27，相等所以是解。
+    feedback:
+      correct: 指出分類或代入證據，接著請學生以新的符號式獨立分類／檢查。
+      incorrect: 依序提示先找等號、再數未知數、再看最高次數；代入題則要求左右結果並列，不代替學生判讀。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "只借用操作前先預測、操作後核對證據的教學節奏；本課自編量義列式與候選值左右比較，不借用天平或解方程操作。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "沿用先預測、再檢查、以證據解釋的活動節奏；本課不移植其求解程序。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "列式／分類／候選檢驗各控制項均提供鍵盤名稱與文字結果宣告；正誤不只用顏色表示，且不呈現天平或平衡狀態。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "以主內容與標題層級組織情境量、符號式、分類及候選值檢驗步驟，方便鍵盤和助讀器循序導覽。"
+  capTransfer:
+    questionType: 從短情境建立一元一次方程式，並說明符號所代表的量
+    stemConstraint: 六包相同種子、包材重5克、總重47克；學生定義每包重量並列式，不要求解。
+    requiredResponse: 寫出未知數定義及6s+5=47，說明係數、固定量、總量和單位各自對應何處。
+    scoring: 未知數及單位定義1、關係式正確1、係數與常數語意說明1
+  exitTicket:
+    prompt: 小安把 2x+5 當成一元一次方程式，並說候選 x=3 是 2x+5=13 的解。指出第一個判斷錯誤，並用原式左右比較說明候選值是否成立。
+    successCriteria:
+    - 指出 2x+5 沒有等號，所以是代數式，不是方程式。
+    - 將 x=3 代入 2x+5=13，左側為11、右側為13。
+    - 說明左右不相等，故 x=3 不是該方程式的解。
+  expressionExtension:
+    applicable: true
+    task: 寫一段給同學看的說明，解釋如何由情境辨認未知量並列成方程式，再說明如何代入候選值判斷解是否成立。
+    constraint: 學生先寫；系統只檢查「未知數定義、量的對應、原式左右比較」三項，不替學生代寫完整答案。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+    - 初始情境量卡組合成4x+3=27；x為每袋枚數、4為袋數、3為散放枚數、27為總枚數，學生需先提交量義及係數、常數對照。
+    - 分類題將缺等號、多未知數及二次未知數設為不同非例，分別回饋錯誤條件。
+    - 代入x=6至4x+3=27顯示左側27、右側27；錯誤候選值顯示不等結果並要求重試。
+    - 320px、375px、768px與鍵盤操作能完成情境建模、分類及候選檢驗；減少動態模式仍提供文字紀錄。
+    - 遷移情境六包種子另加5克包材共47克，唯一目標是列式6s+5=47與解釋量的對應，不計算s。
+    - 圖卡或外部資料失效時，文字fallback仍可讀取情境、輸入方程式、選擇候選值及比較左右數值。
+  definitionOfDone:
+    - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+    - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+    - 至少一個互動操作能回答本單元明確學習問題
+    - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+    - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+    - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+    - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-7-2
+    role: official-curriculum-source-of-truth
+  - url: https://www.junyiacademy.org/topics/n-m7a-c03-2
+    locator: 類南一版七上3-2公開微課任務標題與先後；未讀南一出版社正文或觀看影片
+    role: version-aligned-course-crosswalk
+  - url: https://math.ntnu.edu.tw/~kailin/mysite/data/%E6%95%B8%E5%AD%B8%E9%96%B1%E5%88%8A2_%E9%80%8F%E9%81%8E%E9%96%B1%E8%AE%80%E5%AD%B8%E7%BF%92%E6%95%B8%E5%AD%B8.pdf
+    locator: PDF第3頁；公開數學閱讀刊物明示摘錄南一課本P.183–184，以天平表示等量公理；局部第三方轉載，非南一官方出版頁
+    role: publisher-labeled-partial-text-extract
+  - url: https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E6%A6%82%E5%BF%B5%E6%95%B8%E9%80%9F%E5%85%85&l2=7%E4%B8%8A
+    locator: 康軒官方七上3-2概念數速充資源目錄：方程式、解、等量公理、移項分項；未觀看影音正文
+    role: publisher-official-resource-index
+  - url: https://website.hle.com.tw/market/jr/%E6%95%99%E6%9D%90/%E6%95%99%E6%9D%90%E7%B0%A1%E4%BB%8B/111%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E7%B0%A1%E4%BB%8B%E6%9C%AC_%E6%95%B8%E5%AD%B8.pdf
+    locator: PDF第4頁翰林官方七上3-2概念與翰林／康軒／南一節數比較；架構矩陣，非各版本完整正文
+    role: publisher-official-cross-version-structure
+  - url: https://www.cshs.ntpc.edu.tw/app/index.php?Action=downloadfile&cg=823&file=WVhSMFlXTm9MelEwTDNCMFlWOHhOamcxT0Y4ME9EYzFOamN5WHpRd01UWTRMbkJrWmc9PQ%3D%3D&fname=0054RPA0IC44VXMPED04ROGDVW30B4ICQOQK4020UT0510TSYSA4YS54WWECTTOKVWPOXT154404A0WSST14MOICB0RKMP1444VXXWA0SWMKGHFGUSCCYWFC0040DDKKB0LKUWLOVWTWWSB0403541GDQPMLA0B4ZSFGOOLK30DGRKPO2125HC04MOIGTW14JDRLOPEGFHMOUTXT30FCUW30JGLLUSDC0150RKKKXX0150HGWTHGDCTW25LKFGB0UW10GGFDA0VSKPNO1145
+    locator: 金山國中113學年度康軒版七上第17–18週課程計畫；只支持課時目標分界，不是出版社正文
+    role: publisher-labeled-school-plan
+  - url: https://www.scribd.com/presentation/715962233/10%E4%B8%AD%E6%95%B81%E4%B8%8A3-2%E4%B8%80%E5%85%83%E4%B8%80%E6%AC%A1%E6%96%B9%E7%A8%8B%E5%BC%8F-%E8%AA%B2%E6%9C%AC-112-1
+    locator: 未標出版社之七上3-2投影片；只作非版本歸屬的教學序列交叉核對，授權待查
+    role: unattributed-third-party-cross-check

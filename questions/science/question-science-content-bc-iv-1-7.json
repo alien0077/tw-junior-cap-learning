@@ -2,23 +2,23 @@
   "id": "question-science-content-bc-iv-1-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年3月16日河川觀測站的觀察中，針對「Bc-Ⅳ-1：酵素催化代謝與影響因素」提出可檢驗的科學問題，若比較 4 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "若要比較不同 pH 對同一酵素活性的影響，哪個設計最能支持公平比較？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "固定酵素量、受質量、溫度與時間，只改變 pH"
     },
     {
       "id": "B",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時只改變溶液濃度，其餘條件一致，設置4組、每組取樣15份並各重複測量4次"
+      "text": "每個 pH 同時使用不同酵素與不同受質"
     },
     {
       "id": "C",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時只測量4組中的一組就直接下結論"
+      "text": "一組測氣泡量，另一組測顏色深淺"
     },
     {
       "id": "D",
-      "text": "研究「Bc-Ⅳ-1：酵素催化代謝與影響因素」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "先讓各組反應不同時間再比較產物"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Bc-Ⅳ-1：酵素催化代謝與影響因素」。"
+    "value": "A",
+    "explanation": "要把 pH 的影響單獨分離，其他會影響速率的條件須保持一致；A 才符合控制變因，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的酵素、反應速率與實驗設計能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bc-Ⅳ-1 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bc-iv-1"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "酵素、反應速率、溫度酸鹼度與實驗設計判讀",
+      "pattern": "取由實驗資料、控制變因與反應速率推論酵素作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由實驗資料、控制變因與反應速率推論酵素作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把自變因、應變因與控制變因逐一列出，確認只有一項被改變。",
+  "solutionSteps": [
+    "自變因設定為 pH。",
+    "酵素量與受質量固定，避免材料差異干擾。",
+    "溫度與反應時間也固定。",
+    "用同一種產物指標比較活性。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

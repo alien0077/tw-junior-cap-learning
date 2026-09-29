@@ -2,23 +2,23 @@
   "id": "question-science-content-nc-iv-1-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年10月21日社區環境站的觀察中，比較兩地「Nc-Ⅳ-1：生質能源的發展現況」資料時，甲地迎風坡年雨量約 6140 mm、乙地背風坡約 4135 mm，最合理的做法是？",
+  "prompt": "農業廢棄物在缺氧環境中經微生物分解，最可能產生哪種可利用能源？",
   "options": [
     {
       "id": "A",
-      "text": "在「Nc-Ⅳ-1：生質能源的發展現況」中只看 6140 mm 的單一數值便下結論"
+      "text": "沼氣，主要可含甲烷"
     },
     {
       "id": "B",
-      "text": "在「Nc-Ⅳ-1：生質能源的發展現況」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "純氧氣"
     },
     {
       "id": "C",
-      "text": "在「Nc-Ⅳ-1：生質能源的發展現況」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "核分裂能"
     },
     {
       "id": "D",
-      "text": "同時比較地形、風向、觀測期間與 6140、4135 mm 資料"
+      "text": "只產生金屬粉末"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Nc-Ⅳ-1：生質能源的發展現況」。"
+    "value": "A",
+    "explanation": "A。缺氧環境中的微生物可分解有機物並產生含甲烷的沼氣；這不是製造純氧、核能或金屬粉末的過程。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "三筆公立學校公開自然科試題中的能源轉換、環境影響、系統邊界與生活方案資料判讀能力；本題改寫為生質能源原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nc-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-nc-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取能源轉換、環境影響與資料推理的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "能源轉換、環境影響與資料推理",
+      "observedPattern": "公開自然科評量常要求追蹤能源轉換、守恆、環境影響、資料邊界與生活方案限制；本題以生質能源原創情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取能源、物質循環與系統比較的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "能源、物質循環與系統比較",
+      "observedPattern": "公開自然科評量常要求追蹤能源轉換、守恆、環境影響、資料邊界與生活方案限制；本題以生質能源原創情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取生活能源、排放與生命週期判讀的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "生活能源、排放與生命週期判讀",
+      "observedPattern": "公開自然科評量常要求追蹤能源轉換、守恆、環境影響、資料邊界與生活方案限制；本題以生質能源原創情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把缺氧、微生物分解和產物線索接成轉換流程。",
+  "solutionSteps": [
+    "圈出原料、轉換方式、能源產品、供應條件、排放或副產物。",
+    "把原料來源到最終使用畫成流程，確認每個箭頭的條件與輸入。",
+    "比較能源產出與收集、乾燥、運輸、設備及處理所需的輸入。",
+    "排除把再生等同零污染、把原料重量等同能源產量，或忽略生命週期與安全管理的選項。",
+    "用完整句重述答案，補上系統邊界、證據限制與條件改變時需要重查的資料。"
+  ]
 }

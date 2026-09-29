@@ -1,0 +1,22 @@
+{
+  "decisionId": "D-468",
+  "date": "2026-09-29",
+  "unit": "cur-math-content-s-9-1",
+  "preservation": "Kept the already-inventoried authored lesson and ten questions; updated only the unit's runtime simulation, spec, schema, site fallback, and tests.",
+  "interaction": "Unit-data-driven rectangle similarity model with prediction gate, independent horizontal/vertical scale controls, live corresponding-side table and angle evidence, learner explanation, verify feedback, transfer, persistence, and reset.",
+  "fallback": "The student page displays an explicit simulation-unavailable notice when simulations.js fails; six lesson sections and four-step text GuidedChoice remain usable.",
+  "tests": {
+    "unitNode": "PASS: visible lesson/source/question checks and similarity runtime interaction assertions.",
+    "realChromium": "PASS: normal interaction, keyboard slider, feedback, transfer, state persistence/reset, 320/375/768 viewports; fault injection blocked /site/simulations.js and verified fallback notice, six lesson sections, four keyboard-operable GuidedChoice steps, no page errors.",
+    "fullNpmTest": "PASS",
+    "browserEnvironment": "Python 3.14 / Playwright 1.58.0 / Chromium revision 1208. Sandbox localhost bind returned PermissionError: Operation not permitted; same test passed in authorized execution. No dependency reinstall."
+  },
+  "validation": {
+    "data": "PASS: 14,573 JSON / 13,114 IDs / 1,032 KG",
+    "specs": "1,027 files / 0 structural errors / 24 eligible / 1,003 pending",
+    "qaContract": "981/1,027 passed; 46 failed",
+    "siteIndex": "PASS: 1,052 lessons / 10,526 question paths / 40 mappings; build --check passed",
+    "unitStatus": "No qaStatus promotion; remains untested pending remaining gate evidence and reserved final ChatGPT content review."
+  },
+  "commitPush": "Not performed; full objective remains in progress."
+}

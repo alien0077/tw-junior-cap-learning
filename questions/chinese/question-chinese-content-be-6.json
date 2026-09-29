@@ -2,41 +2,76 @@
   "id": "question-chinese-content-be-6",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "一張借閱規則寫「逾期每日每本罰款五元，上限五十元」，借兩本逾期三天應繳多少？",
+  "prompt": "同一組資料要從完整通知改成手機群組提醒，哪種改寫最恰當？",
   "options": [
     {
       "id": "A",
-      "text": "十五元"
+      "text": "刪掉日期和地點，只留下『請注意異動』"
     },
     {
       "id": "B",
-      "text": "三十元"
+      "text": "把所有資訊改成表情符號，不留文字"
     },
     {
       "id": "C",
-      "text": "五十元"
+      "text": "保留日期、時間、地點、必要行動與查詢方式，刪去不影響行動的背景段落"
     },
     {
       "id": "D",
-      "text": "六十元"
+      "text": "增加尚未確認的交通安排，讓提醒看起來完整"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-be"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "每本五元乘三天再乘兩本，為30元，未超過上限。"
+    "value": "C",
+    "explanation": "媒介變短不代表可以刪除任務必要資訊；應壓縮背景、保留可執行欄位，也不能自行補造消息。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.kusjh.kh.edu.tw/upload/files/111%E4%B8%8A%E7%AC%AC1%E6%AC%A1%E6%AE%B5%E8%80%83%E5%9C%8B%E4%B8%AD%E4%BA%8C%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87%E7%A7%91%E8%A9%A6%E9%A1%8C.pdf",
-    "sourceLocator": "應用文本規則與數量判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編應用文本內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-be"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-be",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "應用文本、溝通目的與資料判讀",
+      "observedPattern": "公立學校國文公開試題常要求依讀者、目的、語氣、格式與資料界線判讀應用文本；本題改寫為校園真實溝通任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "書信、公告、說明與語意推論",
+      "observedPattern": "公立學校國文公開試題常要求依讀者、目的、語氣、格式與資料界線判讀應用文本；本題改寫為校園真實溝通任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先定義誰要讀、要完成什麼，再保留時間地點條件與限制等必要資訊；依媒介調整順序與語氣，最後核對事實和責任界線。",
+  "solutionSteps": [
+    "讀題定位：圈出「媒介轉換」，確認讀者、目的、媒介及對方要完成的行動。",
+    "拆出必要資訊：分辨已確認事實、待確認事項、語氣要求與格式功能；本題核心是「媒介變短不代表可以刪除任務必要資訊；應壓縮背景、保留可執行欄位，也不能自行補造消息。」",
+    "核對正解：選項 A「保留日期、時間、地點、必要行動與查詢方式，刪去不影響行動的背景段落」同時符合任務需要與責任界線。",
+    "排除誘答：檢查是否漏掉時間地點、使用模糊語氣、自行增加未查證承諾，或用裝飾取代可執行資訊。",
+    "回做讀者測試：假設目標讀者只讀一次，確認能找出要做什麼、何時做、去哪裡做，以及不確定時如何查詢。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

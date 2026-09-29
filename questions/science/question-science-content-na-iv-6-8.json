@@ -2,41 +2,76 @@
   "id": "question-science-content-na-iv-6-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年2月9日河川觀測站的觀察中，比較兩地「Na-Ⅳ-6：人類發展以保護自然環境為基礎」資料時，甲地迎風坡年雨量約 30940 mm、乙地背風坡約 21185 mm，最合理的做法是？",
+  "prompt": "把溪流開發判斷移到屋頂太陽能方案時，哪項做法正確？",
   "options": [
     {
       "id": "A",
-      "text": "在「Na-Ⅳ-6：人類發展以保護自然環境為基礎」中只看 30940 mm 的單一數值便下結論"
+      "text": "只要是再生能源就不需評估"
     },
     {
       "id": "B",
-      "text": "同時比較地形、風向、觀測期間與 30940、21185 mm 資料"
+      "text": "重新檢查承重、眩光、廢棄模組、儲能、能源效益和受影響者，不能照搬溪流答案"
     },
     {
       "id": "C",
-      "text": "在「Na-Ⅳ-6：人類發展以保護自然環境為基礎」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "只比較安裝數量"
     },
     {
       "id": "D",
-      "text": "在「Na-Ⅳ-6：人類發展以保護自然環境為基礎」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "把溪流濁度當成唯一指標"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-na-iv-6"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Na-Ⅳ-6：人類發展以保護自然環境為基礎」。"
+    "explanation": "不同方案的自然條件、影響路徑和指標不同；永續原則可遷移，但證據與監測必須依情境重設。 正確答案為選項 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與生態資料的資源使用、環境保護、永續發展、證據比較與人類活動決策能力方向；本題為 Na-Ⅳ-6 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-na-iv-6"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-na-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科評量",
+      "year": "108-115",
+      "subject": "science",
+      "locator": "環境、永續、證據比較與自然科資料推理",
+      "observedPattern": "取公開自然科評量對資源、環境變化與人類活動資料判讀的能力方向，另寫方案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://market.cloud.edu.tw/resources/web/1807720",
+      "title": "教育雲國中生態與環境教學資源",
+      "year": "108-115",
+      "subject": "science",
+      "locator": "生態系服務、保育、人類活動與環境決策",
+      "observedPattern": "取公開教育資源把生態功能與行動決策連結的能力方向，重新設計溪流案例。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先保留需求—環境基礎—影響—替代—監測五格，再替新方案填入專屬條件。",
+  "solutionSteps": [
+    "先寫出發展需求與自然環境提供的功能。",
+    "把可能影響轉成逕流、濁度、棲地、資源或公平等可觀察指標。",
+    "比較前後、對照、替代方案和資料限制，避免只看單一效益。",
+    "排除口號、單一數字、永續保證或忽略受影響者的選項，答案為 B。",
+    "用『在……條件下』完成可監測、可修正的決策句：不同方案的自然條件、影響路徑和指標不同；永續原則可遷移，但證據與監測必須依情境重設。"
+  ],
+  "studyReferences": [
+    "https://www.cp.ptc.edu.tw/storage/134523/134523_114_B-23_7A.pdf?1774770497="
+  ]
 }

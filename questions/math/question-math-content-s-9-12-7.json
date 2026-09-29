@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-12-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若一條直線垂直於平面 P，則它與 P 內任意通過垂足的直線有何關係？",
+  "prompt": "若直線 l 垂直於平面 P，且 T 是 l 與 P 的交點，則 l 與 P 內任何通過 T 的直線有何關係？",
   "options": [
     {
       "id": "A",
-      "text": "平行"
+      "text": "一定平行"
     },
     {
       "id": "B",
-      "text": "垂直"
+      "text": "一定垂直"
     },
     {
       "id": "C",
-      "text": "重合"
+      "text": "一定重合"
     },
     {
       "id": "D",
-      "text": "必歪斜"
+      "text": "無法比較"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "直線垂直於平面時，與平面內通過垂足的任意直線垂直。"
+    "explanation": "線面垂直的定義表示 l 垂直於平面 P 內通過垂足 T 的每一條直線，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 空間中的線與平面 題型與官方課綱 KG kg-math-content-s-9-12",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供空間線與平面能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的空間幾何能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-12"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-12",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "異面直線、線面垂直與平行、平面交線、立體截面、平行平面距離與體對角線",
+      "observedPattern": "公立學校公開數學試題常以長方體或正方體模型判讀空間中的平行、垂直、相交與異面關係，並延伸到截面和距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "異面直線、線面垂直與平行、平面交線、立體截面、平行平面距離與體對角線",
+      "observedPattern": "公立學校公開數學試題常以長方體或正方體模型判讀空間中的平行、垂直、相交與異面關係，並延伸到截面和距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "異面直線、線面垂直與平行、平面交線、立體截面、平行平面距離與體對角線",
+      "observedPattern": "公立學校公開數學試題常以長方體或正方體模型判讀空間中的平行、垂直、相交與異面關係，並延伸到截面和距離；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "抓住『通過垂足』這個限制；不是平面內任意不經 T 的直線都能直接說相交。",
+  "solutionSteps": [
+    "找出 l 與 P 的交點 T。",
+    "確認考察的平面內直線也通過 T。",
+    "使用線面垂直的定義。",
+    "得到 l 與該直線垂直。",
+    "選 B。"
+  ]
 }

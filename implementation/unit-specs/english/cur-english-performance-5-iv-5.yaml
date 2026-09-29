@@ -1,0 +1,146 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-5
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-5
+  title: 5-Ⅳ-5：拼讀規則讀拼字
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-5：拼讀規則讀拼字
+    curriculumIntent: 5-Ⅳ-5：拼讀規則讀拼字
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以可核讀課綱及版本來源的共同能力和可證實差異原創融合；公校計畫／延伸品不冒稱指定課本全文，章節證據仍標pending
+    currentEvidenceStatus: official-curriculum-and-three-public-school-version-plans-reviewed; hanlin-public-supplement-description-reviewed; assigned-textbook-chapter-text-unavailable
+  learningGoals:
+  - 依音素順序將字母或字母組合映射成讀音，並以合音讀出未熟悉的常見字形
+  - 由聽到的音切分並拼寫，利用音素數、字形組合和回讀檢查漏音、換序或多加音
+  - 把母音／子音拼讀圖樣當作可驗證線索；遇到多音或例外時用詞彙、上下文與字典查證
+  prerequisites:
+  - 能辨認常見英文字母大小寫並聽辨部分基本子音、母音
+  - 能依序讀寫熟悉的簡單英文字詞
+  coreConcepts:
+  - 字母與字母組合對應到語音的 grapheme-phoneme 關係；字母名稱不等於詞中的音
+  - segmenting 把詞切為音素、blending 按順序合成詞；兩者互相校正讀音與拼字
+  - 拼讀模式能支持常見詞解碼，但多音及不規則拼寫需要詞彙／上下文／字典查證
+  misconceptions:
+  - 把字母名稱直接當作字詞音，或把 digraph 的兩個字母誤算成兩個音
+  - blending 時漏掉字尾音、打亂音序，或自行插入額外母音
+  - 把 CVCe 等常見模式當成沒有例外的絕對規則
+  contentFlow:
+  - 'predict: 聽看校園尋寶線索後預測陌生詞可辨音素數量，不假定音素數等於字母數'
+  - 'manipulate: 將 map 的音素逐一映射字母、調整 ship 的 sh 音組，再用 cap/cape 替換母音圖樣檢查預測'
+  - 'observe: 比較音素序列、字母組合及 CVC/CVCe 字形的對照，觀察單一字形線索變動造成的拼讀差異'
+  - 'explain: 以漏音、換序和字母組合證據解釋拼字判斷，並指出規則何時需查證而非過度概括'
+  - 'transfer: 比較 ship/chip、ship/shop 的單一線索差異'
+  - 'self-check: 句中回讀，不確定的音形關係標記後查字典'
+  visualizations:
+  - 使用文字音素序列和字母／字母組合並排，呈現同一詞由聲到字及由字到聲的對應
+  - 以map與ship示範音素數和字母數可能不同；以cap/cape標出變化線索及適用限制
+  - 文字互動不播放音訊、不錄音、不做語音辨識；學生實際朗讀／聽辨由本人或同伴完成
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-5-I01
+    component: GuidedChoiceBlock
+    purpose: 以五個原創題讓學生練習音素映射、digraph、母音圖樣、聽音拼寫和例外查證
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 閱讀字詞與聲音／拼寫任務，先自行判斷再選文字選項
+    - 使用滑鼠或鍵盤作答；錯答先讀該題提示後重試
+    - 答對後讀完整理由，必要時回到正文補足概念
+    - 自行朗讀或請同伴聽，不把文字選答誤當語音能力評量
+    visualRules:
+    - 題幹、選項、答案、逐題提示與詳解由 lesson JSON 提供，離線可操作
+    - 選項使用具名稱的原生按鈕，回饋使用 aria-live 公布
+    - 不以顏色、音訊或動畫作唯一訊息；窄螢幕不裁切長字與選項
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-5-I01
+      trigger: 將ship的sh算作兩個音，或直接念字母名稱
+      prompt: 對照四個字母和實際音序；哪兩個字母共同表示一個起首音？
+      expectedEvidence: 指出sh是兩個字母對應一個/ʃ/音，並區分字母名和字詞音
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-5-I02
+      trigger: 將CVCe母音圖樣當成所有詞必定適用的規則
+      prompt: 這是常見預測還是無例外保證？哪一項查證能避免過度套用？
+      expectedEvidence: 指出熟悉詞／上下文或可信字典發音等查證方式
+    feedback:
+      correct: 逐題解釋音序、字形組合與核讀依據，並指出本題規則的適用範圍。
+      incorrect: 先用該題音數、字母組合或母音線索給提示，允許重試後才呈現完整答案與理由。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "以原生選項按鈕及即時文字回饋支援鍵盤和輔助科技；本課音素／字形內容與正誤回饋均依5-IV-5自行設計。"
+  capTransfer:
+    questionType: 新字拼讀與聽音拼字／說明音形證據
+    stemConstraint: 使用未在正文當作例題的字形或音序，保留聲音與拼寫映射能力而非只換單字
+    requiredResponse: 學生需標記音序、對應字形、合音／拼字結果及查證界線
+    scoring: 音序正確 1、字形映射 1、核讀或查證理由 1
+  exitTicket:
+    prompt: 聽到陌生字時，你如何從音序寫出可能字形並檢查？哪一步會讓你停下來查字典？
+    successCriteria:
+    - 提到本單元核心概念
+    - 依順序保留音素並合理映射字形
+    - 以合音／回讀及詞彙、句意核對
+    - 明確標記不規則或不確定拼法並查證
+  expressionExtension:
+    applicable: true
+    task: 選一個新單字，畫出音素格與字母／字母組合對照，讀出單字並說明哪個部分依規則可預測、哪個部分需要查證
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個原生選項按鈕有可讀名稱；錯答提示和正解解析以 aria-live 公布
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 五題需顯示對應正解、個別重試提示及具音序／字形依據的解析，不得答錯即洩漏答案。
+  - 鍵盤可完成五題，錯答可重試、答對可閱讀 aria-live 解釋。
+  - 320px、375px與768px下正文、題幹、長字選項及回饋均不溢位。
+  - 封鎖外網後仍可讀完整教學並完成互動；不載入出版社音檔或網路字典作為必要依賴。
+  - Fallback：刻意阻擋 simulations.js 後，五題文字音形判斷仍可鍵盤完成、錯答重試並讀取解析；不得依賴音訊、錄音或語音辨識服務。
+  - 互動明確限於文字推理；自我檢核要求學生實際朗讀／聽辨，但系統不宣稱錄音或自動發音評分。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 六段教學與五題互動均為本單元內容，無通用 placeholder；教材內容審查由使用者以 ChatGPT 執行
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://stv.naer.edu.tw/data/course_outline/pta_18518_3555074_59836.pdf
+    locator: PDF第14頁，學習表現5-Ⅳ-5「能運用字母拼讀規則讀出及拼寫英文詞」；Ab-Ⅳ-3字母拼讀規則（含精熟能力與字彙拼寫輔助）
+    role: official-curriculum-source-of-truth
+  - url: https://course.cyc.edu.tw/upfile/course113/sub1/15636172843290327.pdf
+    locator: PDF第73頁／文件P72，南一版第1、2冊七年級Starter pp.1–8及5-IV-5／Ab-IV-3定位
+    role: public-school-version-plan-not-textbook-chapter
+  - url: https://www.chjh.tp.edu.tw/wp-content/uploads/doc/chjh22/112%E5%AD%B8%E5%B9%B4%E5%BA%A6_7%E5%B9%B4%E7%B4%9A%E8%8B%B1%E8%AA%9E%E6%96%87.pdf
+    locator: PDF第1頁Get Ready，康軒版本明列5-IV-5／Ab-IV-3及口語、聽力、書寫活動
+    role: public-school-version-plan-not-textbook-chapter
+  - url: https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf
+    locator: PDF第27頁／文件P26，翰林版Unit 3發音活動：複習拼讀、KK、母音／子音例字及規則應用
+    role: public-school-version-plan-not-textbook-chapter
+  - url: https://books.hanlin.com.tw/product/6920131
+    locator: 官方商品介紹第23–33行；國中一年級延伸發音教材，標示字母—發音、辨音、規則例字與聽說讀寫練習；非指定課本
+    role: publisher-supplement-description-not-assigned-textbook

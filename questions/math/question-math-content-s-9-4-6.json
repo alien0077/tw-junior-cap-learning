@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-4-6",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若兩個直角三角形有相同的銳角 θ，則下列哪個比值必相同？",
+  "prompt": "下列哪一組比值最能顯示兩個相似直角三角形的對應邊比例不變？",
   "options": [
     {
       "id": "A",
-      "text": "斜邊長的差"
+      "text": "6/10＝9/15"
     },
     {
       "id": "B",
-      "text": "面積的差"
+      "text": "6/10＝9/14"
     },
     {
       "id": "C",
-      "text": "對邊：鄰邊"
+      "text": "4/6＝8/15"
     },
     {
       "id": "D",
-      "text": "三角形周長"
+      "text": "5/8＝10/12"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "同一銳角決定相同形狀，因此對邊：鄰邊（tan θ）固定。"
+    "value": "A",
+    "explanation": "6/10＝3/5，9/15＝3/5，兩個對應比相同，表示比例不變，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似直角三角形邊長比值的不變性 題型與官方課綱 KG kg-math-content-s-9-4",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供相似直角三角形、對應邊比例與生活測量能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的相似直角三角形方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-4"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似直角三角形對應邊比、尺度放大、直角與銳角判定及生活測量",
+      "observedPattern": "公立學校公開數學試題常利用兩個直角與一個銳角判定相似，保持對應股與斜邊的比值，處理影長、梯架或尺度未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似直角三角形對應邊比、尺度放大、直角與銳角判定及生活測量",
+      "observedPattern": "公立學校公開數學試題常利用兩個直角與一個銳角判定相似，保持對應股與斜邊的比值，處理影長、梯架或尺度未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似直角三角形對應邊比、尺度放大、直角與銳角判定及生活測量",
+      "observedPattern": "公立學校公開數學試題常利用兩個直角與一個銳角判定相似，保持對應股與斜邊的比值，處理影長、梯架或尺度未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將每組分數化簡或交叉相乘，檢查是否同值。",
+  "solutionSteps": [
+    "化簡 6/10＝3/5。",
+    "化簡 9/15＝3/5。",
+    "確認兩個對應比相同。",
+    "其他選項的兩個比值不相等。",
+    "選 A。"
+  ]
 }

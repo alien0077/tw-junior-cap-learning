@@ -2,41 +2,73 @@
   "id": "question-english-performance-3-iv-5-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「3-Ⅳ-5／理解簡易生活用語」task, what is the best way to prepare question 6?",
+  "prompt": "A station announcement is unclear, and you are not sure whether your train leaves from platform 3 or 13. What should you ask a staff member?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "Could you please repeat the platform number? I heard either 3 or 13."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "I’ll choose a platform at random."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 3-Ⅳ-5／理解簡易生活用語."
+      "text": "Why are trains always announcements?"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 3-Ⅳ-5／理解簡易生活用語."
+      "text": "The station is probably platform 3."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-3-iv-5"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 3-Ⅳ-5／理解簡易生活用語, question 6."
+    "explanation": "正確答案 A。兩個月台號只差一個音節，猜錯可能搭錯車；指出聽到的兩種可能並請對方重複，才能取得關鍵資訊。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+    "sourceLocator": "本題參照公立國中英文段考中依對話目的選擇生活回應的命題模式；逐題原卷定位見 examPatternRefs。公開查閱不代表授權重製；本題情境、文字、選項、答案與解析均重新撰寫。",
+    "authoringNote": "依本單元生活互動能力原創改寫；公開試題僅作 pattern-only 題型參考，未複製原題、選項或答案；仍待單元內容與答案 QA，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-5"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-9-57-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期七年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第2頁第30題：聽到無法參加的消息後追問 How come 以釐清原因",
+      "locatorLevel": "item",
+      "observedPattern": "參照以追問消除資訊缺口的對話功能；本題改為交通安全資訊。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87_3.pdf",
+      "title": "高雄市立國昌國中114學年度第1學期七年級第1次段考英文",
+      "year": "114-1",
+      "subject": "english",
+      "locator": "第2頁第19題：依對話前句理解社交資訊並完成回應",
+      "locatorLevel": "item",
+      "observedPattern": "參照必須根據對話線索回應的命題方式。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "資訊不足且猜錯有代價時，具體指出不確定處並禮貌請對方重述。",
+  "solutionSteps": [
+    "圈出目前唯一關鍵的不確定資訊：月台號是 3 還是 13。",
+    "評估猜測後果：選錯月台可能錯過列車。",
+    "設計澄清句，明確點出聽不清的欄位，而不是籠統說不懂。",
+    "A 說明兩個候選數字並請工作人員重複，能直接排除歧義。",
+    "確認取得答案前不先採取不可逆行動，例如隨意上車。"
+  ]
 }

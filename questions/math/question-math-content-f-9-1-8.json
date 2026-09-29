@@ -2,23 +2,23 @@
   "id": "question-math-content-f-9-1-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若二次函數圖形與 x 軸交於 x=2、x=7，則其對稱軸為何？",
+  "prompt": "下列哪一組等距輸入的輸出值，其二階差固定且不為 0，最能顯示二次關係？",
   "options": [
     {
       "id": "A",
-      "text": "x=2"
+      "text": "2、5、8、11、14"
     },
     {
       "id": "B",
-      "text": "x=4.5"
+      "text": "1、4、9、16、25"
     },
     {
       "id": "C",
-      "text": "x=5"
+      "text": "3、3、3、3、3"
     },
     {
       "id": "D",
-      "text": "x=7"
+      "text": "1、2、4、8、16"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "兩根中點為 (2+7)/2=4.5，亦為對稱軸。"
+    "explanation": "B 的一階差為 3、5、7、9，二階差固定為 2；A 與 C 一階差固定，D 的差沒有固定二階差，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 二次函數的意義 題型與官方課綱 KG kg-math-content-f-9-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供二次函數辨識、值表、代入、對稱性與差分判讀能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的二次函數方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-f-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-f-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "二次函數辨識、函數值、對稱輸入、值表、一次差與二次差",
+      "observedPattern": "公立學校公開數學試題常要求由代數式或值表辨認二次函數，代入求值，利用相反數輸入的對稱性與二階差判讀平方關係；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "二次函數辨識、函數值、對稱輸入、值表、一次差與二次差",
+      "observedPattern": "公立學校公開數學試題常要求由代數式或值表辨認二次函數，代入求值，利用相反數輸入的對稱性與二階差判讀平方關係；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "二次函數辨識、函數值、對稱輸入、值表、一次差與二次差",
+      "observedPattern": "公立學校公開數學試題常要求由代數式或值表辨認二次函數，代入求值，利用相反數輸入的對稱性與二階差判讀平方關係；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先比較一階差，再對一階差做第二次相減。",
+  "solutionSteps": [
+    "A 的一階差都為 3，屬一次關係。",
+    "B 的一階差為 3、5、7、9。",
+    "B 的二階差為 2、2、2。",
+    "C 為常數，D 的二階差不固定。",
+    "選 B，固定非零二階差是二次關係的證據。"
+  ]
 }

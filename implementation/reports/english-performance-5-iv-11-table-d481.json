@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-29",
+  "unit": "cur-english-performance-5-iv-11",
+  "change": [
+    "Mapped the original table-reading interaction to predicting field needs, matching source facts to labels/formats, observing ambiguities, explaining evidence, and transferring to a new form.",
+    "Added an npm browser command and fault-injected simulations.js fallback verification."
+  ],
+  "browser": {
+    "status": "passed",
+    "url": "http://127.0.0.1:8765/site/index.html",
+    "authoredSections": 6,
+    "guidedChoiceSteps": 4,
+    "keyboardRetryAndAnswer": true,
+    "feedbackLiveRegion": true,
+    "accessibleOptions": true,
+    "simulationScriptBlocked": ["http://127.0.0.1:8765/site/simulations.js"],
+    "guidedChoiceFallbackUsable": true,
+    "externalNetworkBlocked": true,
+    "reducedMotion": "emulated",
+    "responsive": {
+      "320": "no horizontal overflow",
+      "375": "no horizontal overflow",
+      "768": "no horizontal overflow"
+    },
+    "pageErrors": []
+  },
+  "validation": {
+    "specs": "PASS: 1,027 files / 0 structural errors; 24 eligible / 1,003 pending",
+    "qaContract": "993/1,027 pass; 34 fail",
+    "lesson": "unchanged",
+    "questions": "unchanged"
+  },
+  "notClaimed": [
+    "The full specification, interaction, and automated-QA objective remains incomplete.",
+    "No commit or push was made."
+  ]
+}

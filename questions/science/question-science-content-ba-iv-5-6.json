@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-iv-5-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年10月18日學校研究社的觀察中，小車在 23 秒內前進 806 m，研究「Ba-Ⅳ-5：力作功與能量改變」時，平均速率為何？",
+  "prompt": "物體受到的合力對它作 40 J 的正功，依功—能定理，物體的動能如何改變？",
   "options": [
     {
       "id": "A",
-      "text": "35.0435 m/s"
+      "text": "增加 40 J"
     },
     {
       "id": "B",
-      "text": "18538 m/s"
+      "text": "減少 40 J"
     },
     {
       "id": "C",
-      "text": "0.028536 m/s"
+      "text": "一定增加 20 J"
     },
     {
       "id": "D",
-      "text": "783 m/s"
+      "text": "一定保持不變"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,42 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "平均速率＝路程÷時間＝806÷23＝35.0435 m/s。 本題對應 KG「Ba-Ⅳ-5：力作功與能量改變」。"
+    "explanation": "合力所作的功等於動能的變化量，40 J 正功表示動能增加 40 J，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114 年國中教育會考自然科公開試題；研究功、力與位移、摩擦力、重力位能、動能及功率能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的功、力、位移與能量能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-5 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ba-iv-5"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ba-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "力作功、位移、方向、動能與能量變化判讀",
+      "pattern": "取由力與位移方向、合力及能量資料推論作功結果的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由力與位移方向、合力及能量資料推論作功結果的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "只看合力功的正負與數值，直接對應 ΔK。",
+  "solutionSteps": [
+    "辨認題目給的是合力作功。",
+    "寫出功—能定理 W合＝ΔK。",
+    "代入 W合＝40 J。",
+    "得到 ΔK＝＋40 J。",
+    "所以動能增加 40 J，選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

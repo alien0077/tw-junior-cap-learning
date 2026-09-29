@@ -2,23 +2,23 @@
   "id": "question-science-content-g-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年7月27日學校研究社的觀察中，連續觀察「G：演化與延續」5 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "鳥翼、蝙蝠前肢與人手的骨骼排列相似但功能不同，最能支持什麼？",
   "options": [
     {
       "id": "A",
-      "text": "連續7天研究「G：演化與延續」並在相同條件下多次觀察到新細胞形成"
+      "text": "功能不同表示骨骼一定沒有共同來源"
     },
     {
       "id": "B",
-      "text": "研究「G：演化與延續」時只依樣本的顏色（未記錄7天的時間與條件）"
+      "text": "共同祖先留下的同源構造可經不同選擇形成不同功能"
     },
     {
       "id": "C",
-      "text": "研究「G：演化與延續」時只依樣本的名稱推測，不進行觀察"
+      "text": "只要外形相似就必然是同源構造"
     },
     {
       "id": "D",
-      "text": "研究「G：演化與延續」時只觀察一次外形，便排除所有其他證據"
+      "text": "演化不會改變構造功能關係"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "A",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「G：演化與延續」。"
+    "value": "B",
+    "explanation": "基本骨骼排列相似可支持共同祖先，之後在不同環境與選擇下形成飛行、抓握等不同功能；還需結合其他證據。 正確答案為選項 B：「共同祖先留下的同源構造可經不同選擇形成不同功能」。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的演化、遺傳變異、族群資料及證據判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 G 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-g"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-g",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "演化、遺傳變異、自然選擇與證據判讀",
+      "pattern": "取由化石、性狀、族群資料與環境條件推論演化機制的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由化石、性狀、族群資料與環境條件推論演化機制的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "分開比較骨骼來源與現代功能，不把功能相同或外形相似混為一談。",
+  "solutionSteps": [
+    "圈出演化單位、族群變異、遺傳、環境選擇與世代資料。",
+    "檢查是否有化石年代、對照族群、繁殖成功率或基因頻率等證據。",
+    "套用本題原理：基本骨骼排列相似可支持共同祖先，之後在不同環境與選擇下形成飛行、抓握等不同功能；還需結合其他證據。",
+    "排除把個體意志當演化機制、只看單一樣本或過度外推的選項，答案為「共同祖先留下的同源構造可經不同選擇形成不同功能」。",
+    "回查主張是否同時符合變異、遺傳、差異繁殖與時間尺度。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

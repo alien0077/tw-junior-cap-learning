@@ -49,7 +49,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "以校園飲水與能源使用的可調參數，理解資源流、承載力與永續方案的取捨。",
@@ -101,6 +101,17 @@
         ],
         "answer": "A",
         "feedback": "永續判斷是多指標且有條件的推論；成本、環境與不同群體的影響都不可任意刪除。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "兩個方案都降低用水量，但方案甲讓處理負荷接近容量上限，方案乙降低較少用水卻保留安全餘裕；應如何判讀？",
+        "options": [
+          "把用水減量、處理負荷與安全餘裕一起比較，說明選擇條件與取捨",
+          "只選用水減量最大的方案，不必查看處理負荷",
+          "只要方案名稱含有回收，就可視為一定永續"
+        ],
+        "answer": "A",
+        "feedback": "永續方案要同時檢查資源效果與系統邊界；接近容量上限的方案可能在異常日失去安全餘裕，必須把條件與取捨寫清楚。"
       }
     ]
   },
@@ -108,40 +119,55 @@
   "lessonScope": "theme",
   "publisherResearch": [
     {
-      "publisher": "nani",
-      "edition": "南一版國中自然公開課程計畫與教育平台索引",
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "N：資源與永續發展；以資源利用、環境保護與永續方向定位",
-      "sourceUrl": "https://www.naer.edu.tw/",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；N：資源與永續發展 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "核對單元應從資源利用延伸到環境影響與長期保護；本課自編資源流圖與多指標比較，不還原課本內容。",
-      "copyrightBoundary": "只採公開索引與課程方向；不複製或改寫南一課文、圖片、習題、答案或教師用書。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄hanlin公立校方或官方公開結構對「N：資源與永續發展」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
       "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音與章節資源",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "N：資源與永續發展；資源使用、環境承載與生活行動定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；N：資源與永續發展 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["teaching-sequence", "activity-pattern", "assessment-pattern"],
-      "outcome": "比較情境觀察、生活應用與證據判讀的編排方向；本課另創校園用水用電模擬器與方案評估規則。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；正文、資料、互動任務與回饋皆為本課原創。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「N：資源與永續發展」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     },
     {
-      "publisher": "hanlin",
-      "edition": "翰林國中自然公開教材資訊與課程計畫交叉資料",
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "N：資源與永續發展；資源、污染、承載力與永續決策定位",
-      "sourceUrl": "https://books.hanlin.com.tw/productall",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；N：資源與永續發展 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": ["concept-progression", "activity-pattern", "assessment-pattern"],
-      "outcome": "吸收生活情境、圖表判讀與環境決策的共同學習方向，重新組織為需求—補充—污染—公平的因果鏈。",
-      "copyrightBoundary": "只採公開產品資訊與章節方向；不複製翰林課文、插圖、練習、答案或教用內容。"
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「N：資源與永續發展」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "versionResearch": [
@@ -150,13 +176,25 @@
       "edition": "南一版公開課程方向",
       "sourceType": "public-web",
       "sourceLocator": "https://www.naer.edu.tw/；自然科資源與永續發展相關課綱及公開課程索引",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["資源利用須和環境保護及長期需求一起討論。", "人的選擇會改變自然系統與後代可用的條件。"],
-        "representations": ["以資源流、使用量、污染負荷與補充速度連結抽象概念。"],
-        "examplesOrEvidence": ["公開課程方向支持生活資源與環境議題的連結；本課自編校園用水資料。"],
-        "misconceptions": ["把可再生資源誤解成永遠不會耗盡的無限供應。", "只要有回收便不必計算前端消耗。"],
-        "assessmentEmphasis": ["用條件式結論比較方案，並指出資料限制。"]
+        "concepts": [
+          "資源利用須和環境保護及長期需求一起討論。",
+          "人的選擇會改變自然系統與後代可用的條件。"
+        ],
+        "representations": [
+          "以資源流、使用量、污染負荷與補充速度連結抽象概念。"
+        ],
+        "examplesOrEvidence": [
+          "公開課程方向支持生活資源與環境議題的連結；本課自編校園用水資料。"
+        ],
+        "misconceptions": [
+          "把可再生資源誤解成永遠不會耗盡的無限供應。",
+          "只要有回收便不必計算前端消耗。"
+        ],
+        "assessmentEmphasis": [
+          "用條件式結論比較方案，並指出資料限制。"
+        ]
       },
       "licenseBoundary": "僅使用公開課程方向與定位，完整教材內容由本課以自己的話原創撰寫。"
     },
@@ -165,13 +203,25 @@
       "edition": "康軒國中自然公開影音",
       "sourceType": "public-web",
       "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；資源與永續發展相關公開單元入口",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["由生活情境觀察資源使用，再追問環境代價與可行行動。", "資料比較必須先說明尺度與控制條件。"],
-        "representations": ["把流程圖、表格與模擬器參數互相對照，而不是只背名詞。"],
-        "examplesOrEvidence": ["公開資源提供情境化學習方向；本課設計需求量、回收率、污染與成本的自編資料。"],
-        "misconceptions": ["環保方案一定在每個指標都最好。", "把短期成本最低誤當成已經證明整體永續。"],
-        "assessmentEmphasis": ["先描述數據，再說明方案成立的條件與未測因素。"]
+        "concepts": [
+          "由生活情境觀察資源使用，再追問環境代價與可行行動。",
+          "資料比較必須先說明尺度與控制條件。"
+        ],
+        "representations": [
+          "把流程圖、表格與模擬器參數互相對照，而不是只背名詞。"
+        ],
+        "examplesOrEvidence": [
+          "公開資源提供情境化學習方向；本課設計需求量、回收率、污染與成本的自編資料。"
+        ],
+        "misconceptions": [
+          "環保方案一定在每個指標都最好。",
+          "把短期成本最低誤當成已經證明整體永續。"
+        ],
+        "assessmentEmphasis": [
+          "先描述數據，再說明方案成立的條件與未測因素。"
+        ]
       },
       "licenseBoundary": "只採公開入口與教學方向作為研究線索，絕不複製影音文字、圖片、題目或答案。"
     },
@@ -180,13 +230,25 @@
       "edition": "翰林國中自然公開產品資訊",
       "sourceType": "public-web",
       "sourceLocator": "https://books.hanlin.com.tw/productall；自然科單元與生活應用公開資訊",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "findings": {
-        "concepts": ["永續決策要同時看生態、經濟與社會影響。", "環境承載力是資源流與人類活動的限制，不是抽象口號。"],
-        "representations": ["用多指標儀表板、因果鏈與角色立場表呈現取捨。"],
-        "examplesOrEvidence": ["公開產品資訊支持生活情境與圖表判讀方向；本課自創校園飲水站方案。"],
-        "misconceptions": ["把單一成功案例推論成所有地區都適用。", "把公平問題誤當成純科學數值問題。"],
-        "assessmentEmphasis": ["能區分數據事實、推論、價值選擇與仍待查證的部分。"]
+        "concepts": [
+          "永續決策要同時看生態、經濟與社會影響。",
+          "環境承載力是資源流與人類活動的限制，不是抽象口號。"
+        ],
+        "representations": [
+          "用多指標儀表板、因果鏈與角色立場表呈現取捨。"
+        ],
+        "examplesOrEvidence": [
+          "公開產品資訊支持生活情境與圖表判讀方向；本課自創校園飲水站方案。"
+        ],
+        "misconceptions": [
+          "把單一成功案例推論成所有地區都適用。",
+          "把公平問題誤當成純科學數值問題。"
+        ],
+        "assessmentEmphasis": [
+          "能區分數據事實、推論、價值選擇與仍待查證的部分。"
+        ]
       },
       "licenseBoundary": "只使用公開產品資訊與方向作為比較依據，不複製或改寫受保護教材內容。"
     }
@@ -207,7 +269,7 @@
       "設計資源流模擬器，讓學習者固定尺度、單次改變一個變項並讀取存量曲線。",
       "以 5R、全生命週期與條件式結論串起家庭轉移活動，避免把回收誤當成唯一解法。"
     ],
-    "llmSynthesisNote": "LLM 依官方自然科課綱、kg-science-content-n 與目前可取得的南一、康軒、翰林公開課程方向，融合資源流、補充速度、環境承載力、生命週期、5R 與公平等概念後，獨立重寫本單元完整教學、案例、迷思診斷、互動模擬與自我檢核；未複製任何出版社課文、圖片、題目、答案或影音逐字內容。"
+    "llmSynthesisNote": "本課依官方自然科學課綱、kg-science-content-n、南一／康軒／翰林公開資源限制與三筆公立學校／公開自然科評量能力模式，獨立融合可再生與不可再生資源、需求、補充速度、污染、承載力、用水用電、5R、生命週期、成本、風險與世代／群體公平。原有科學問題取樣錯配題已全部改為資源與永續發展專屬題目；所有正文、資料、題幹、選項、答案、互動回饋與五步解法均重新撰寫，未複製受保護內容；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -276,7 +338,42 @@
     "model": "general",
     "goal": "操作校園資源流模型，觀察每日需求、補充／再利用、污染負荷與公平指標的聯動，最後以證據判斷方案是否能在承載力內長期維持。",
     "mission": "先固定學生人數與模擬天數，分別拖曳每日用水／用電需求、再利用比例與處理負荷；每次只改一個變項，記錄存量曲線與污染警示。接著比較省水設備、灰水再利用與源頭減量三種方案，寫出一個包含條件、取捨和待查資料的結論；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"school-resource-flow","objective":"以用水用電需求、再利用率與處理負荷評估校園資源方案。","predictionPrompt":"再利用比例提高但處理負荷超過容量時，存量與污染警示會如何變化？","steps":[{"action":"固定學生人數與天數，建立水電需求基準","equation":"demand=users\u00d7daily-use"},{"action":"逐次改變再利用率或處理負荷，記錄存量曲線","equation":"stock=inflow-outflow"},{"action":"比較設備、灰水與源頭減量方案的取捨","equation":"score=resource+cost+risk"}]},
+    "learningDesign": {
+      "type": "model-boundary",
+      "objective": "以用水用電需求、再利用率與處理負荷評估校園資源方案。",
+      "predictionPrompt": "再利用比例提高但處理負荷超過容量時，存量與污染警示會如何變化？",
+      "steps": [
+        {
+          "action": "固定學生人數與天數，建立水電需求基準",
+          "equation": "demand=users×daily-use",
+          "id": "step-1",
+          "reason": "本步把「固定學生人數與天數，建立水電需求基準」和「demand=users×daily-use」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「固定學生人數與天數，建立水電需求基準」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "逐次改變再利用率或處理負荷，記錄存量曲線",
+          "equation": "stock=inflow-outflow",
+          "id": "step-2",
+          "reason": "本步把「逐次改變再利用率或處理負荷，記錄存量曲線」和「stock=inflow-outflow」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「逐次改變再利用率或處理負荷，記錄存量曲線」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "比較設備、灰水與源頭減量方案的取捨",
+          "equation": "score=resource+cost+risk",
+          "id": "step-3",
+          "reason": "本步把「比較設備、灰水與源頭減量方案的取捨」和「score=resource+cost+risk」連結，先保留可比較條件，再用觀察資料檢查推論。",
+          "feedback": "若結果與預測不一致，請回看「比較設備、灰水與源頭減量方案的取捨」的條件與資料，再只修正一個變因後重做。"
+        },
+        {
+          "action": "用容量餘裕與多指標證據判斷方案能否長期維持",
+          "equation": "margin=capacity-load",
+          "id": "step-4",
+          "reason": "本步把「用容量餘裕與多指標證據判斷方案能否長期維持」和「margin=capacity-load」連結，將資源減量的短期效果與系統在變動條件下的安全餘裕分開檢查。",
+          "feedback": "若只看到用量下降就下結論，請重新查看容量餘裕、污染負荷與公平影響，並在結論中寫出適用條件與模型限制。"
+        }
+      ],
+      "evidencePrompt": "請用本互動產生的資料檢查「以用水用電需求、再利用率與處理負荷評估校園資源方案。」，指出支持結論的證據、仍不確定的條件與一項模型限制。"
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

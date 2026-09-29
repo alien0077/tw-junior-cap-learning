@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-1-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "地圖比例尺為 1：25,000，圖上兩地相距 3.2 公分，實際距離約為多少？",
+  "prompt": "四邊形 ABCD～四邊形 PQRS，依序對應 A↔P、B↔Q、C↔R、D↔S。下列哪個比例式正確？",
   "options": [
     {
       "id": "A",
-      "text": "80 公尺"
+      "text": "AB/PQ＝BC/QR"
     },
     {
       "id": "B",
-      "text": "320 公尺"
+      "text": "AB/QR＝BC/PQ"
     },
     {
       "id": "C",
-      "text": "800 公尺"
+      "text": "AB/PS＝AC/QR"
     },
     {
       "id": "D",
-      "text": "8,000 公尺"
+      "text": "AB/PR＝BC/PQ"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,71 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "實際距離 3.2×25,000=80,000 公分=800 公尺。"
+    "value": "A",
+    "explanation": "四邊形的書寫順序給出 A↔P、B↔Q、C↔R、D↔S，因此 AB↔PQ、BC↔QR；同方向列比為 AB/PQ＝BC/QR，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 相似形 題型與官方課綱 KG kg-math-content-s-9-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=68&cfsn=347&fn=112-1-1-9%E6%95%B8%E5%AD%B8.pdf&op=dlfile",
+    "sourceLocator": "改寫參照：花蓮縣立吉安國中112學年度第1學期第1次段考PDF第1頁第3題的四邊形相似符號與頂點對應；字母、比例選項與敘述另行創作。",
+    "authoringNote": "原創四邊形符號閱讀題，只取公校試題檢查對應順序的能力模式，不複製題目或數據。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "相似形對應邊角、相似判定、比例、周長比與面積比",
+      "observedPattern": "公立學校公開數學試題常要求判讀對應頂點與角，使用 AA 或邊比判定相似，依相似比求未知邊、周長或面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.cajh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=68&cfsn=347&fn=112-1-1-9%E6%95%B8%E5%AD%B8.pdf&op=dlfile",
+      "title": "花蓮縣立吉安國中112學年度第1學期第1次段考九年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "PDF第1頁第3題",
+      "observedPattern": "按四邊形相似符號的頂點順序識別對應邊；本題將頂點標記和錯誤比例選項重新創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "逐字按相似符號的四個頂點順序配對，然後檢查分子與分母方向一致。",
+  "solutionSteps": [
+    "讀取 ABCD～PQRS 的書寫順序。",
+    "配對 A↔P、B↔Q、C↔R、D↔S。",
+    "因此 AB↔PQ，BC↔QR。",
+    "以同方向寫成 AB/PQ＝BC/QR。",
+    "選 A；其他比例把非對應邊交叉配在一起。"
+  ]
 }

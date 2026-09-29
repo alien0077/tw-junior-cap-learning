@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-7-10",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with a pencil at the library?” B: “___” (「3-Ⅳ-7／理解對話主要內容」practice, 18:00)",
+  "prompt": "A: The riverside path is open tomorrow, and the forecast says the morning will be clear.\nB: I packed water, sunscreen, and the folded trail map. We should leave before the afternoon heat.\nWhat are they most likely preparing to do?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with a pencil at the library in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Take an outdoor walk or hike along the riverside."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the library in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Stay inside all afternoon to study for a test."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the library last year in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Go swimming tonight during heavy rain."
     },
     {
       "id": "D",
-      "text": "No, the weather at the library is sunny in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Return a library book before school today."
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,48 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 3-Ⅳ-7／理解對話主要內容, item 10. This item targets 3-Ⅳ-7／理解對話主要內容, question 10."
+    "explanation": "正確答案 A。開放的河岸步道、晴朗早晨、飲水、防曬、步道地圖及避開午後高溫，共同指向戶外步行活動。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E6%96%87%E7%A7%91.pdf",
+    "sourceLocator": "依公立國中英文段考中對話主旨、時間地點、請求、順序、態度、建議、指代與行動推論的公開命題模式獨立改寫；逐題原卷題號列於 examPatternRefs。",
+    "authoringNote": "本題情境、對話、選項、答案與繁中解析均依 3-Ⅳ-7 能力獨立重寫；公開試題僅作可追溯 pattern-only 參照，不複製原文或選項。完整內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-7"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E6%96%87%E7%A7%91.pdf",
+      "title": "高雄市立國昌國中111學年度第1學期八年級第3次段考英文",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "第31題：整合路況報告與地圖線索，選出適合的行進路線",
+      "locatorLevel": "item",
+      "observedPattern": "參照從路線、交通與情境資訊推論行動安排；本題改為河岸步行準備。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/30/2133/news/19/2021-7/2021-7-30-10-16-24-nf1.pdf",
+      "title": "臺北市立內湖國中109學年度第2學期八年級第1次段考英文",
+      "year": "109-2",
+      "subject": "english",
+      "locator": "第34至35題：從活動日期、內容與附註推論參與安排",
+      "locatorLevel": "item",
+      "observedPattern": "參照綜合多個行程線索作情境判斷。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "把分散在兩個話輪的地點、天氣、裝備與時間限制合併，推論最符合全部線索的情境。",
+  "solutionSteps": [
+    "先收集地點線索：明天開放的是 riverside path，而不是室內場館。",
+    "再整理天氣和時間：早上晴朗，午後會熱，因此打算提早出發。",
+    "核對裝備用途：飲水、防曬用品和摺疊步道圖都適合戶外步行。",
+    "A 最能同時解釋地點、裝備和時間；其他選項與晴天、步道或裝備不符。",
+    "確認推論只到「沿河戶外步行／健行」，不額外猜測對話未提供的同行人數或確切目的地。"
+  ]
 }

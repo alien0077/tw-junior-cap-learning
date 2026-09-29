@@ -2,41 +2,63 @@
   "id": "question-english-performance-2-iv-10-9",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-10／描述圖片」task, what is the best way to prepare question 9?",
+  "prompt": "Image description: In a garden sequence, Ava loosens the soil, places a seed in a small hole, and covers it. What is the most reasonable next action?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-10／描述圖片."
+      "text": "Pull the seed out to check its color."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-10／描述圖片."
+      "text": "Move the garden bed indoors immediately."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-10／描述圖片."
+      "text": "Water the planted spot."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-10／描述圖片."
+      "text": "Pick flowers from the new seed."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-10"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-10／描述圖片, question 9."
+    "value": "C",
+    "explanation": "播種並覆土後，合理的下一步是澆水；種子不會立即長成花，拔出檢查或搬進室內都沒有情境支持。 正確答案：C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.ycm.kh.edu.tw/upload/297/104_62703/111-1%282%29%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "PDF第1頁非選擇測驗第27題：依單幅情景圖以英文敘述時間、地點、人物、行動與心情；本題人物、場景、文字與選項均重新創作。",
+    "authoringNote": "僅取公立學校公開英語試題的圖像辨識、方位／動作／場景推論或連續圖敘述能力型態作pattern-only參考；未重製原卷題幹、選項、圖片或答案。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-10"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.ycm.kh.edu.tw/upload/297/104_62703/111-1%282%29%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立燕巢國民中學111學年度第1學期七年級第2次段考英文科試題卷；只參照圖像辨識／描述能力，不複製原卷內容。",
+      "year": "111-1",
+      "locator": "PDF第1頁非選擇測驗第27題：依單幅情景圖以英文敘述時間、地點、人物、行動與心情",
+      "pattern": "將場景中的人物、行動與前後線索組成連貫圖像敘述；本題另創公共圖書交換日情境。",
+      "subject": "english",
+      "observedPattern": "將場景中的人物、行動與前後線索組成連貫圖像敘述；本題另創公共圖書交換日情境。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "連續圖推測下一步：先鎖定問題要找的人物、物件、關係或時間，再逐項用圖像描述核對證據；不補入畫面未提供的資訊。",
+  "solutionSteps": [
+    "依序回看鬆土、放種子、覆土三個已完成步驟。",
+    "判斷這組動作的目的為完成播種並讓種子開始生長。",
+    "選擇接在覆土後、符合照料流程的澆水。",
+    "排除立即採花等違反植物生長時間的選項。",
+    "選C；預測下一步要延續已知程序，但不要延伸成畫面沒有支持的長期結果。"
+  ]
 }

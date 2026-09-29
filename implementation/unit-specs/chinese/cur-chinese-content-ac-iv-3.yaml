@@ -1,0 +1,127 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-chinese-content-ac-iv-3
+  knowledgeGraphIds:
+  - kg-chinese-content-ac-iv-3
+  title: Ac-Ⅳ-3：文句邏輯與意義
+  subject: chinese
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange: ['7', '8', '9']
+  fusedScope:
+    officialCurriculum: Ac-Ⅳ-3：文句表達的邏輯與意義
+    curriculumIntent: 理解連接詞及其他句內線索所表達的關係，依上下文判讀句義，並讓推論範圍符合證據。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 現有南一、康軒、翰林資料均為公校課程計畫或公開索引，不是出版社單元正文或教學章節；三個 publisher slots 均維持 pending。lesson 保留已撰寫的六段原創推論教學，輔以官方課綱與公開縣市學力檢測報告中對關聯句、因果方向與句義的教學建議；此為課綱／公開教學建議加 AI 原創整合，不宣稱三版融合。來源例題、題幹及答案一律不複製。
+    currentEvidenceStatus: curriculum-and-public-assessment-guidance-grounded; publisher-textbook-content-unread; all-publisher-slots-pending; rights-and-content-review-pending
+  learningGoals:
+  - 把句子中的可觀察資料、關係詞、推論及建議分開辨認。
+  - 判讀並列、轉折、條件、時間及因果等句間關係，檢查連接詞是否符合前後文。
+  - 依樣本、時間、對象及可能替代解釋，修正超出證據範圍的結論。
+  prerequisites:
+  - 能從短句或小表格讀出對象、日期和數值。
+  - 能理解常見關係詞如因為、所以、但是、如果及只要的基本語意。
+  coreConcepts:
+  - 關係詞標示句段之間的邏輯，但詞語本身不證明命題真實或因果成立。
+  - 推論須保留樣本、時間、對象、條件與指代範圍，不能把部分觀察直接擴成全體結論。
+  - 建議與因果解釋應標出仍未檢驗的變項，將確定語氣改為與資料強度相稱的表述。
+  misconceptions:
+  - 看到因為／所以便認定有因果，未排除同時變動的因素。
+  - 把單班、少數日期或回收問卷的結果寫成全校所有人的感受。
+  - 認為連接詞越明確，句子結論就越有證據。
+  - 把建議或可能解釋改寫成資料已證實的事實。
+  contentFlow:
+  - 'predict: 先讀三日班級剩食資料，預測哪些結論只是合理猜想、尚未被這份樣本證明'
+  - 'manipulate: 依序整理觀察、句間關係、推論與建議，明確連接資料和主張，不把關係詞當證據'
+  - 'observe: 核對四日供湯比較的日期、變項與樣本，並在問卷結論中標出範圍、指代及沉默樣本缺口'
+  - 'explain: 區分相關與因果，依證據範圍改寫強結論，說明仍需補哪些資料才能支持更廣主張'
+  - 'transfer: 把推論橋用於飲水機排隊等校園服務建議，提出有樣本範圍的建議並用四格表自我檢查'
+  visualizations:
+  - 以正文可讀文字及學習者紙筆四欄「資料直接顯示／關係／推論／仍需查證」整理推論鏈；頁面互動本身不提供圖表。
+  - 樣本量、日期、班級與結論範圍以文字明列，避免顏色作為唯一證據標記。
+  interactiveBlocks:
+  - id: CUR-CHINESE-CONTENT-AC-IV-3-I01
+    component: GuidedChoiceBlock
+    purpose: 用本課三個資料情境辨識觀察與猜測、相關與因果、樣本與全體的範圍界線。
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 閱讀 lesson JSON 當前題目的原創資料與問題。
+    - 以滑鼠或鍵盤從每題三個文字選項中選擇一項。
+    - 答錯時閱讀該步 retryHint 後重新作答；答對後閱讀 feedback。
+    - 完成選擇後，另依 lesson exitCheck 口頭或紙筆解釋證據範圍；選擇互動不取代開放式遷移寫作。
+    visualRules:
+    - 三步題幹、選項、答案及回饋均由 lesson JSON 提供；不宣稱預測暫存、變項操作、滑桿、同步圖表或外部服務。
+    - 每題三個可讀文字選項使用原生按鈕，鍵盤可聚焦與啟用；正誤回饋不只依顏色區分。
+    - 題幹及回饋窄螢幕可換行，不裁切班級、日期、數值與樣本數。
+    misconceptionChecks:
+    - id: MC-CUR-CHINESE-CONTENT-AC-IV-3-I01
+      trigger: 把三個日期的剩食量直接解讀為學生喜惡或菜色品質。
+      prompt: 資料實際量到什麼？題目有沒有直接詢問喜好？
+      expectedEvidence: 指出觀察僅為特定班級三個日期的剩食量，喜好未測量。
+    - id: MC-CUR-CHINESE-CONTENT-AC-IV-3-I02
+      trigger: 由有湯日剩食較低推定供湯造成全校剩食下降。
+      prompt: 樣本、範圍與可能同時改變的條件是什麼？
+      expectedEvidence: 說明只有四天的本班資料，並指出菜色、出席人數或餐量等未控制因素。
+    feedback:
+      correct: 對應當題數據解釋為何該句沒有超出樣本及觀察範圍。
+      incorrect: 顯示該步 lesson JSON 的 retryHint，要求回看樣本、測量對象及替代解釋，再重選。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: 本課三步互動使用有明確文字名稱的原生按鈕，提供可讀錯答提示及正答解釋。
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: 課文與互動使用既有頁面語意區塊；教材和選答資料由本機 lesson JSON 載入。
+  capTransfer:
+    questionType: 校園資料中的句間關係、推論範圍及理由改寫
+    stemConstraint: 用 lesson 未出現的新資料情境，例如回收或排隊紀錄；提供樣本、時間及至少一個可能混淆因素，要求改寫而非重用選答題。
+    requiredResponse: 分列觀察、關係詞所表達的邏輯、可接受推論及仍需查證的資料，並提供不超出證據的完整句子。
+    scoring: 關係判讀正確 1、樣本與證據範圍相符 1、替代解釋或待查資料明確 1。
+  exitTicket:
+    prompt: 寫出一句把局部觀察說成普遍原因的句子，標出越界的詞，再改寫為目前資料能支持的主張，並說明還需收集什麼資料。
+    successCriteria:
+    - 標出觀察資料中的對象、時間與樣本範圍。
+    - 說明連接詞或強詞是否表達了證據未支持的因果／全稱。
+    - 提供保留限制的改寫及下一項查證資料。
+  expressionExtension:
+    applicable: true
+    task: 以校園一項服務問題寫 120 至 180 字建議，分開呈現觀察、可能原因、可測試行動與成效指標。
+    constraint: 需註明觀察的時間與對象，使用「可能」等詞標出未驗證解釋，不可把提案寫成已證實因果。
+  mobileA11y:
+    breakpoints: [320, 375, 768]
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 題幹、三個選項、錯答提示與正答解釋都以文字提供且可讀取。
+    reducedMotion: 互動不依賴動畫；停用動畫仍可完成所有選擇。
+  testCases:
+  - 學生頁完整顯示 lesson teaching.body 六段原稿；content.sections 標題與正文逐段相同，不留舊摘要或重複段落。
+  - GuidedChoiceBlock 逐題呈現 lesson JSON 三步、每步三個選項及相應 answer；錯答顯示該步 retryHint，答對顯示 feedback。
+  - 第一題唯一最佳答案是描述本班三日剩食變化且不推論喜好；第二題不可把有限有湯比較說成已證因果；第三題不得將三十份問卷外推全校。
+  - 鍵盤可完成三題並讀取錯答與答對狀態；320px、375px、768px正文及選項無水平溢位。
+  - 新情境 transfer 必須輸出觀察、關係、範圍相稱的推論及待查資料；不可把三步選答當成完整寫作遷移。
+  - lesson JSON 缺少互動資料時測試應失敗；本課不宣稱有外部服務 fallback。
+  definitionOfDone:
+  - 課綱與 KG ID、官方來源 locator 通過資料驗證。
+  - 出版社正文／單元教學樣本未讀者維持 publisher pending，不以公校計畫或索引代替。
+  - 學生頁六段原稿、三步互動及規格一一一致，並完成鍵盤與三種寬度自動化測試。
+  - 題目式互動、exit ticket 與新情境書面遷移內容審查完成。
+  - 來源權利、學科正確性、段落獨立性與本課內容 QA 通過之前，lesson 維持 draft。
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf
+    locator: 正文第12至18頁／PDF第14至20頁；國民中學教育階段學習內容；官方代碼 Ac-Ⅳ-3
+    role: official-curriculum-source-of-truth

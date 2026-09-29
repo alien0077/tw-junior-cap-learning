@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-a-iv-4",
   "subject": "math",
-  "title": "a-Ⅳ-4：二元一次聯立",
+  "title": "a-Ⅳ-4：兩個未知量的共同條件",
   "knowledgeIds": [
     "kg-math-performance-a-iv-4"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「二元一次聯立」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "當兩個未知量同時受兩個條件限制時，一條方程通常不夠。本課用飲料店的大小杯數量與總容量建立二元一次聯立方程，讓學生比較代入法、消去法與圖形交點各自保留的資訊；解出答案後，仍須代回兩式並判斷是否符合非負整數與情境限制。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「二元一次聯立」相關的關係。"
+        "heading": "兩個未知量需要兩條獨立線索",
+        "body": "若只知道紅茶與綠茶共 20 杯，可能有許多組答案；再加入總容量或總價，才能縮小到同時滿足兩條件的交點。先問資料是否足夠，是列式前的建模步驟。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「二元一次聯立」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "代入法保留一條關係",
+        "body": "由 x+y=20 可整理成 y=20−x，再代進第二式，把兩個未知量暫時變成一個。代入不是把 y 消失，而是把第一條件保留在第二條件中。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「二元一次聯立」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "消去法要追蹤係數",
+        "body": "若兩式中某個未知量的係數相同或相反，可相加或相減消去；若係數不同，先乘上適當數字並同時改變整條方程。每一步都要說明消掉的是哪個量。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「二元一次聯立」，並指出至少一項支持判斷的條件。"
+        "heading": "交點是共同解而非任意解",
+        "body": "把兩式看成兩條直線時，交點同時位於兩線上。平行代表沒有共同解，重合代表有無限多組共同解；情境題還要檢查交點是否落在允許的第一象限或整數範圍。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「二元一次聯立」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先列出兩個未知量、單位與兩條獨立條件。",
+    "代入時說明哪條方程被保留；消去時追蹤係數與整條式子的同步變化。",
+    "解出的有序對必須同時代回兩式，確認是共同解。",
+    "圖形交點、代數答案與情境限制要彼此對得上。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,111 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
     "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「二元一次聯立」並驗算結果。",
-    "scenario": "以「a-Ⅳ-4：二元一次聯立」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "goal": "以表格、方程與直線交點找出兩個未知量的共同解。",
+    "scenario": "調整兩種飲品的總杯數與總容量，觀察兩條條件線與交點同步變化。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "第一種飲品杯數"
+      },
+      {
+        "symbol": "y",
+        "meaning": "第二種飲品杯數"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「二元一次聯立」的第一步是什麼？",
+        "prompt": "總杯數 20 應如何表示？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "x+y=20",
+          "x−y=20",
+          "xy=20"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "兩種杯數相加形成總杯數。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "x+y=20 與 2x+y=34 最快可如何消去？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "第二式減第一式",
+          "兩式相乘",
+          "只移動 y 一次"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "y 的係數相同，相減可保留等式並消去 y。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "得到 x=14、y=6 後要怎麼驗證？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "代回兩式並檢查杯數非負整數",
+          "只代回第一式",
+          "只看交點大概位置"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "共同解必須同時滿足兩條方程與情境限制。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "a-Ⅳ-4：二元一次聯立；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "屏東縣公立學校翰林版數學課程計畫；代數概念、解題表徵與情境評量欄位。；a-Ⅳ-4：二元一次聯立：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「二元一次聯立」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「a-Ⅳ-4：二元一次聯立」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "新北市立大豐國民中學公立校方康軒版數學課程計畫；代數表徵、操作活動與多元評量欄位。；a-Ⅳ-4：二元一次聯立：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「a-Ⅳ-4：二元一次聯立」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "桃園市立永豐高中國中部公立校方七年級數學課程計畫；南一版代數章節與評量欄位。；a-Ⅳ-4：二元一次聯立：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「a-Ⅳ-4：二元一次聯立」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +160,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「二元一次聯立」",
-        "body": "以「二元一次聯立」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "只看總杯數不夠",
+        "body": "店員說今天賣出紅茶與綠茶共 20 杯，學生先猜可能的組合，再補充總容量是 34 公升且兩種杯子的容量不同。比較兩組資料讓學生看見第二條獨立線索如何排除候選，而不是急著套消去法。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「二元一次聯立」的概念架構",
-        "body": "本單元依官方課綱所列的「二元一次聯立」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "把兩條線索寫成方程組",
+        "body": "令紅茶杯數為 x、綠茶杯數為 y，建立 x+y=20 與 2x+y=34。先在表格列出單位與條件，再把兩式畫成直線，讓聯立的意思是尋找同時符合兩個條件的點。 並請學生指出交點的兩個座標分別代表什麼，避免把圖上的任意點當作聯立解。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「a-Ⅳ-4：二元一次聯立」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用消去法找到交點",
+        "body": "第二式減第一式得 x=14，再代回 x+y=20 得 y=6。最後檢查 14+6=20 與 2×14+6=34，並說明 x、y 都是杯數，所以非負整數限制也通過。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「二元一次聯立」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "比較兩種解法的資訊",
+        "body": "改以兩張成人票與學生票的張數及總價建立方程組。學生先選擇最容易消去的未知量，再在每一行標記使用的等值操作；若改用代入法，需說出是哪一條式子先解出變量。 完成後比較兩種方法是否得到同一有序對，並把成人票、學生票的單位寫在答案旁。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「二元一次聯立」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "從購物資料讀出共同解",
+        "body": "給一張原創購物表：兩種包裝各有數量與總重量。學生先判斷資料是否能形成兩條獨立方程，再解出數量，最後檢查若總重量改變，交點會沿哪個方向移動。這要求同時理解代數與圖形。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「二元一次聯立」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "共同解的三重檢查",
+        "body": "出口題要求學生用代數代回、圖形位置與情境限制三種方式檢查同一有序對；若得到負的杯數，必須指出是計算錯誤、模型不符或資料本身不可能，而不能只把負號刪掉。 再說明若兩條線平行，為何情境中可能代表資料互相矛盾而不是把負數刪除。"
       }
     ],
     "summary": [
-      "先用自己的話界定「二元一次聯立」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "兩個未知量需要兩條獨立條件，聯立是在找共同解。",
+      "代入與消去都要保留等式關係並標記操作理由。",
+      "代數答案應同時落在兩條直線上，才是交點。",
+      "最後檢查單位、非負性、整數性與資料是否可行。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「二元一次聯立」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "只有 x+y=20 為什麼不能唯一決定 x、y？",
+        "expectedEvidence": "指出有多組非負整數組合，還需要第二條獨立條件。"
       },
       {
-        "prompt": "在「二元一次聯立」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "2x+y=34 減去 x+y=20 消去了什麼？",
+        "expectedEvidence": "y 的係數相同而相減後抵消，得到 x=14。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「二元一次聯立」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "若解出負的杯數，能直接改成正數嗎？",
+        "expectedEvidence": "不能；要回查模型、計算與資料限制，負數可能表示情境無解。"
       }
     ]
   },
@@ -188,6 +227,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『a-Ⅳ-4：兩個未知量的共同條件』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『調整兩種飲品的總杯數與總容量，觀察兩條條件線與交點同步變化。』開始前，先回答：總杯數 20 應如何表示？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『調整兩種飲品的總杯數與總容量，觀察兩條條件線與交點同步變化。』回答：得到 x=14、y=6 後要怎麼驗證？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "總杯數 20 應如何表示？；操作時先預測，再依『a-Ⅳ-4：兩個未知量的共同條件』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(a-Ⅳ-4：兩個未知量的共同條件)：答案 A；選項內容：x+y=20",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。兩種杯數相加形成總杯數。",
+          "feedback": "兩種杯數相加形成總杯數。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "x+y=20 與 2x+y=34 最快可如何消去？；操作時先預測，再依『a-Ⅳ-4：兩個未知量的共同條件』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(a-Ⅳ-4：兩個未知量的共同條件)：答案 A；選項內容：第二式減第一式",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。y 的係數相同，相減可保留等式並消去 y。",
+          "feedback": "y 的係數相同，相減可保留等式並消去 y。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "得到 x=14、y=6 後要怎麼驗證？；操作時先預測，再依『a-Ⅳ-4：兩個未知量的共同條件』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(a-Ⅳ-4：兩個未知量的共同條件)：答案 A；選項內容：代回兩式並檢查杯數非負整數",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。共同解必須同時滿足兩條方程與情境限制。",
+          "feedback": "共同解必須同時滿足兩條方程與情境限制。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；二元一次聯立與代數解題評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以兩個條件建立代數關係並逐步求解",
+          "公開結構支持把兩個未知量的共同條件轉為可驗證的方程組，而非只求一個數字。"
+        ],
+        "representations": [
+          "文字條件、方程組與數值代回，並將未知量單位標示清楚"
+        ],
+        "examplesOrEvidence": [
+          "本課的飲品、票券與圖形交點情境均為原創，僅研究公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "只用一條總量方程便宣稱找到唯一答案"
+        ],
+        "assessmentEmphasis": [
+          "完整檢查列式、消去或代入步驟與共同解代回結果"
+        ]
+      },
+      "licenseBoundary": "僅記錄公開課程計畫可核對的章節定位、概念順序與評量方向；不複製教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；二元一次聯立與代數解題評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "用操作與圖形表徵呈現兩條關係的交會",
+          "公開結構支持把兩個未知量的共同條件轉為可驗證的方程組，而非只求一個數字。"
+        ],
+        "representations": [
+          "表格、兩條直線與交點互換並同步說明座標意義"
+        ],
+        "examplesOrEvidence": [
+          "本課的飲品、票券與圖形交點情境均為原創，僅研究公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "係數變更時只改一項，破壞整條方程"
+        ],
+        "assessmentEmphasis": [
+          "要求解法步驟與圖形交點互相對照並解釋差異"
+        ]
+      },
+      "licenseBoundary": "僅記錄公開課程計畫可核對的章節定位、概念順序與評量方向；不複製教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；二元一次聯立與代數解題評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "在情境與資料判讀中確認解的可行性",
+          "公開結構支持把兩個未知量的共同條件轉為可驗證的方程組，而非只求一個數字。"
+        ],
+        "representations": [
+          "票券、容量、數量與非負整數限制的情境表徵"
+        ],
+        "examplesOrEvidence": [
+          "本課的飲品、票券與圖形交點情境均為原創，僅研究公開課程的能力方向。"
+        ],
+        "misconceptions": [
+          "得到負數後刪掉負號，或忽略資料不足"
+        ],
+        "assessmentEmphasis": [
+          "共同解、模型限制與錯誤診斷都要提出可檢查證據"
+        ]
+      },
+      "licenseBoundary": "僅記錄公開課程計畫可核對的章節定位、概念順序與評量方向；不複製教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持由兩條條件建立二元關係。",
+      "代入與消去必須維持等式並留下可檢查的推理步驟。",
+      "答案需要回到圖形、單位與情境限制驗證。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯代數式與基本解題序列；康軒較突顯操作及圖形表徵；翰林較突顯情境資料、可行性與錯誤判斷。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以飲品杯數與容量建立兩條原創條件線。",
+      "將消去法、代入法與直線交點並列，要求學生說明資訊如何保留。",
+      "加入負數杯數與資料不足的診斷情境。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG 重新設計二元一次聯立的建模、解法比較與共同解檢查。例題、互動與回饋均為原創，未複製教材；Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   }
 }

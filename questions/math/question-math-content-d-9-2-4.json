@@ -2,23 +2,23 @@
   "id": "question-math-content-d-9-2-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "連續擲兩次公平硬幣，至少出現一次正面的機率為何？",
+  "prompt": "擲骰子 10 次，其中 6 點出現 4 次。關於相對頻率 0.4 的說法，何者正確？",
   "options": [
     {
       "id": "A",
-      "text": "3/4"
+      "text": "下一次一定出現 6 點"
     },
     {
       "id": "B",
-      "text": "1/4"
+      "text": "6 點的精確機率必定是 0.4"
     },
     {
       "id": "C",
-      "text": "1/2"
+      "text": "這是這 10 次紀錄對 6 點出現程度的估計"
     },
     {
       "id": "D",
-      "text": "2/3"
+      "text": "因為 0.4 小於 1，所以 6 點不可能出現"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "四種等可能結果中，只有兩次反面不符合，故有利結果 3 種，機率為 3/4。"
+    "value": "C",
+    "explanation": "4÷10＝0.4 是這 10 次資料的相對頻率，可作為可能程度的估計，但不能保證下一次或宣稱精確值就是 0.4，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究樣本空間、古典機率、互補事件與抽取情境能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、圖表或答案；待第二輪 AI 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供隨機試驗、事件、相對頻率與長期資料判讀能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的機率入門方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-d-9-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-d-9-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "隨機試驗、結果與事件、相對頻率、短期波動與長期資料判讀",
+      "observedPattern": "公立學校公開數學試題常要求辨認隨機試驗與事件，從試驗紀錄計算相對頻率，並區分一次結果、短期波動與長期可能程度；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "隨機試驗、結果與事件、相對頻率、短期波動與長期資料判讀",
+      "observedPattern": "公立學校公開數學試題常要求辨認隨機試驗與事件，從試驗紀錄計算相對頻率，並區分一次結果、短期波動與長期可能程度；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "隨機試驗、結果與事件、相對頻率、短期波動與長期資料判讀",
+      "observedPattern": "公立學校公開數學試題常要求辨認隨機試驗與事件，從試驗紀錄計算相對頻率，並區分一次結果、短期波動與長期可能程度；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "看到相對頻率時，區分『資料估計』與『下一次保證』。",
+  "solutionSteps": [
+    "計算 6 點出現次數 4 除以總次數 10。",
+    "得到相對頻率 0.4。",
+    "把 0.4 解讀為這批資料的估計。",
+    "排除下一次必然結果與精確機率保證。",
+    "選 C，保留短期資料的限制。"
+  ]
 }

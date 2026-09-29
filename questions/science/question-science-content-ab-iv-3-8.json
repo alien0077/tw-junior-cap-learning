@@ -2,23 +2,23 @@
   "id": "question-science-content-ab-iv-3-8",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2022年6月1日河川觀測站的觀察中，針對「Ab-Ⅳ-3：物理與化學性質」提出可檢驗的科學問題，若比較 4 組、每組取樣 16 份資料，哪一項設計最適當？",
+  "prompt": "密閉容器中進行化學反應，反應前後總質量相同，最合理的解釋是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時同時改變攪拌速度與另一個條件，卻不記錄方法"
+      "text": "反應物原子重新排列，系統內總質量遵守守恆"
     },
     {
       "id": "B",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時只改變攪拌速度，其餘條件一致，設置4組、每組取樣16份並各重複測量4次"
+      "text": "反應沒有任何物質改變"
     },
     {
       "id": "C",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時只測量4組中的一組就直接下結論"
+      "text": "氣體產物沒有質量"
     },
     {
       "id": "D",
-      "text": "研究「Ab-Ⅳ-3：物理與化學性質」時先決定結論，再挑選支持結論的16筆資料"
+      "text": "容器外的空氣補回了消失的原子"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ab-Ⅳ-3：物理與化學性質」。"
+    "value": "A",
+    "explanation": "密閉系統中原子只是重新排列形成新物質，沒有物質進出，因此總質量維持相同，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；物理與化學性質判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的物質性質、變化與證據判讀能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "物理／化學性質、物理／化學變化與證據判讀",
+      "pattern": "取由可觀察證據、組成與新性質區分物理及化學變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由可觀察證據、組成與新性質區分物理及化學變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認系統邊界，再把總質量守恆與化學變化同時保留。",
+  "solutionSteps": [
+    "確認容器密閉，沒有物質進出。",
+    "反應前後原子種類與總數守恆。",
+    "原子重新排列形成不同物質。",
+    "因此總質量前後相同。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-science-content-gc-iv-4-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年8月17日社區環境站的觀察中，連續觀察「Gc-Ⅳ-4：人類利用微生物」3 天時，若要判斷細胞是否正在進行生命活動，哪項證據最直接？",
+  "prompt": "若發酵瓶內產生大量氣泡，哪種測量最能支持氣體來自微生物作用？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Gc-Ⅳ-4：人類利用微生物」時只依樣本的顏色（未記錄9天的時間與條件）"
+      "text": "只看實驗組一次是否有泡泡"
     },
     {
       "id": "B",
-      "text": "連續9天研究「Gc-Ⅳ-4：人類利用微生物」並連續觀察到細胞數量增加"
+      "text": "把瓶蓋打開讓所有氣體逸散再估計"
     },
     {
       "id": "C",
-      "text": "研究「Gc-Ⅳ-4：人類利用微生物」時只依樣本的名稱推測，不進行觀察"
+      "text": "同時改變糖量、溫度與酵母量"
     },
     {
       "id": "D",
-      "text": "研究「Gc-Ⅳ-4：人類利用微生物」時只觀察一次外形，便排除所有其他證據"
+      "text": "設置未加活酵母的對照組，固定糖量與溫度，並比較氣體體積"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,60 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "代謝或生長是可觀察、可重複檢驗的生命活動證據。 本題對應 KG「Gc-Ⅳ-4：人類利用微生物」。"
+    "value": "D",
+    "explanation": "D。應設無活菌或滅菌對照，記錄糖消耗、二氧化碳量與時間變化，才能支持氣體來自微生物代謝而非溶液逸散。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
+    "sourceLocator": "三筆公立學校公開自然科試題中的發酵、微生物代謝、食品藥物利用、基因轉殖、抗藥性與生物安全能力；本題改寫為微生物應用原創情境。",
     "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-gc-iv-4"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-gc-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取酵母發酵、微生物代謝與食品製造的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "酵母發酵、微生物代謝與食品製造",
+      "observedPattern": "公開自然科評量常要求連結發酵、微生物代謝、食品或藥物利用、基因轉殖、條件控制、抗藥性與生物安全；本題以全新微生物應用情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取微生物利用、抗生素、基因轉殖與條件控制的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "微生物利用、抗生素、基因轉殖與條件控制",
+      "observedPattern": "公開自然科評量常要求連結發酵、微生物代謝、食品或藥物利用、基因轉殖、條件控制、抗藥性與生物安全；本題以全新微生物應用情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取發酵證據、純化、生物安全與風險評估的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "發酵證據、純化、生物安全與風險評估",
+      "observedPattern": "公開自然科評量常要求連結發酵、微生物代謝、食品或藥物利用、基因轉殖、條件控制、抗藥性與生物安全；本題以全新微生物應用情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用活性對照、氣體量、底物變化與時間建立發酵證據。",
+  "solutionSteps": [
+    "圈出微生物、原料、氧氣／溫度／pH、代謝物、用途與安全條件。",
+    "把觀察到的氣泡、體積、底物或產物資料連到代謝作用。",
+    "設活性、滅菌或無菌對照，固定菌量、原料、時間與設備並量測速率。",
+    "分開技術利益、產品純化、污染、抗藥性、逸散與生態風險。",
+    "回查製程放大、管理規範與證據不足處，避免把天然或看不見直接等同安全。"
+  ]
 }

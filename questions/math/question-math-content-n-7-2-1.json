@@ -2,41 +2,84 @@
   "id": "question-math-content-n-7-2-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "一個長方形花圃的面積為 72 平方公尺。72 的標準質因數分解式為何？",
+  "prompt": "60 的質因數分解式為何？",
   "options": [
     {
       "id": "A",
-      "text": "2²×3²"
+      "text": "2×3×10"
     },
     {
       "id": "B",
-      "text": "2×3³"
+      "text": "2²×3×5"
     },
     {
       "id": "C",
-      "text": "2³×3"
+      "text": "2×3²×5"
     },
     {
       "id": "D",
-      "text": "3²×4"
+      "text": "4×15"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-n-7-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "72＝2×2×2×3×3，因此標準質因數分解式為 2²×3²。"
+    "value": "B",
+    "explanation": "60＝2×30＝2×2×15＝2²×3×5，且 2、3、5 都是質數，所以選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
-    "sourceLocator": "114 年國中教育會考數學科公開試題；研究因數分解、次方表示與數量計算能力方向；課綱：https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
-    "authoringNote": "依官方課綱數學能力與公開會考／公立國中試題的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三份公立學校公開數學試題僅供質因數分解、標準分解式、冪次與因數結構能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的質因數分解方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-n-7-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-n-7-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "prime factorization, standard form, exponents, reconstructing integers, and factor-count reasoning",
+      "observedPattern": "公立學校公開數學試題常要求把整數分解為質因數冪次、由標準分解式還原數值、比較冪次或判斷因數結構；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "prime factorization, standard form, exponents, reconstructing integers, and factor-count reasoning",
+      "observedPattern": "公立學校公開數學試題常要求把整數分解為質因數冪次、由標準分解式還原數值、比較冪次或判斷因數結構；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先不斷除以最小質數，再把重複的質因數用冪次表示。",
+  "solutionSteps": [
+    "用 2 除 60，得 30。",
+    "再用 2 除 30，得 15。",
+    "將 15 分解為 3×5。",
+    "整理重複的 2 為 2²，得到 2²×3×5。",
+    "選 B，乘回 4×3×5 確認等於 60。"
+  ]
 }

@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-11-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with directions at the sports center?” B: “___” (「2-Ⅳ-11／簡易短劇」practice, 14:00)",
+  "prompt": "Stage notes: 7:10—the caretaker locks the west door; 7:20—Rae hears a bell in the hall; 7:25—the cast finds the prop box open. What is the earliest event?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with directions at the sports center in the 2-Ⅳ-11／簡易短劇 practice."
+      "text": "The cast finds the box open."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the sports center in the 2-Ⅳ-11／簡易短劇 practice."
+      "text": "The caretaker locks the west door."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the sports center last year in the 2-Ⅳ-11／簡易短劇 practice."
+      "text": "Rae hears a bell."
     },
     {
       "id": "D",
-      "text": "No, the weather at the sports center is sunny in the 2-Ⅳ-11／簡易短劇 practice."
+      "text": "The cast starts the final scene."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-11"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 2-Ⅳ-11／簡易短劇, item 6. This item targets 2-Ⅳ-11／簡易短劇, question 6."
+    "value": "B",
+    "explanation": "時間表中7:10早於7:20和7:25；題目問最早事件，因此是管理員鎖上西門。 正確答案：B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E8%8B%B1%E6%96%87_4.pdf",
+    "sourceLocator": "PDF第4頁第29至30題：根據人物紀錄與時間推斷事件先後；本題改為排演場記。；人物、台詞、舞台指示、選項與答案均重新創作。",
+    "authoringNote": "原創簡易短劇理解題；只參照公立學校公開試題中人物動機、行動證據、事件順序、故事線索及結局判讀的能力型態，不複製來源內容。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-11"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/2-%E8%8B%B1%E6%96%87_4.pdf",
+      "title": "高雄市立國昌國民中學114學年度第1學期第2次八年級英文段考；僅參照故事理解與人物／線索／結局推論，不複製原題。",
+      "year": "114-1",
+      "subject": "english",
+      "locator": "PDF第4頁第29至30題：根據人物紀錄與時間推斷事件先後；本題改為排演場記。",
+      "observedPattern": "透過時間標記核對事件順序；改寫資料和事件完全不同。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "依線索整理事件時間：把台詞、舞台指示和事件結果連讀，先找可見證據，再判斷它支持的表演意圖或故事意義。",
+  "solutionSteps": [
+    "把三個時間先按由早到晚排序。",
+    "辨認7:10、7:20、7:25的先後，不被事件嚴重程度影響。",
+    "將最早時間7:10配回相應動作。",
+    "排除後兩個較晚發生的事件和沒有列出的final scene。",
+    "選B；劇本時間線先看時間標記，再配對事件，不要按閱讀順序猜。"
+  ]
 }

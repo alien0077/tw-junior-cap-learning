@@ -2,41 +2,84 @@
   "id": "question-math-performance-a-iv-6-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若一元二次方程式的兩根為－2 與 5，且二次項係數為 1，方程式為何？",
+  "prompt": "一個長方形面積為 48 平方公分，長比寬多 2 公分。若寬為 x，x 應為多少？",
   "options": [
     {
       "id": "A",
-      "text": "x²＋7x＋10＝0"
+      "text": "4"
     },
     {
       "id": "B",
-      "text": "x²－3x－10＝0"
+      "text": "6"
     },
     {
       "id": "C",
-      "text": "x²＋3x－10＝0"
+      "text": "8"
     },
     {
       "id": "D",
-      "text": "x²－7x＋10＝0"
+      "text": "-8"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-a-iv-6"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "根為－2、5 的方程式為 (x＋2)(x－5)＝0，展開得 x²－3x－10＝0。"
+    "explanation": "x(x+2)=48，得 x²+2x-48=0=(x+8)(x-6)，寬不能為負，所以 x=6，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考一元二次方程、因式分解、公式法、判別式、根與係數及幾何情境題型；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "一元二次方程單元實質改寫；已重新解方程並核對判別式、根與正值限制，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供一元二次方程能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的二次方程解題方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-a-iv-6"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-a-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "一元二次方程的因式分解、平方根、判別式、公式法、根與係數、文字建模與參數推理；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求從二次式的結構找根，或依判別式與根的關係判斷解的型態，再把條件轉成生活或參數問題；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "一元二次方程的因式分解、平方根、判別式、公式法、根與係數、文字建模與參數推理；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求從二次式的結構找根，或依判別式與根的關係判斷解的型態，再把條件轉成生活或參數問題；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "一元二次方程的因式分解、平方根、判別式、公式法、根與係數、文字建模與參數推理；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求從二次式的結構找根，或依判別式與根的關係判斷解的型態，再把條件轉成生活或參數問題；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把幾何條件列成二次方程，再用長度必須為正排除負根。",
+  "solutionSteps": [
+    "寬為 x，長為 x+2。",
+    "面積條件給 x(x+2)=48。",
+    "整理為 x²+2x-48=0。",
+    "分解為 (x+8)(x-6)=0，候選為 -8、6。",
+    "長度取正值，所以 x=6，選 B。"
+  ]
 }

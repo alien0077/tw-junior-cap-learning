@@ -2,41 +2,67 @@
   "id": "question-science-content-ib-iv-2-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年8月28日自然科教室的觀察中，針對「Ib-Ⅳ-2：氣壓差造成風」提出可檢驗的科學問題，若比較 4 組、每組取樣 14 份資料，哪一項設計最適當？",
+  "prompt": "高壓中心附近常見下沉氣流，較可能造成？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ib-Ⅳ-2：氣壓差造成風」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "空氣不斷上升形成必然暴雨"
     },
     {
       "id": "B",
-      "text": "研究「Ib-Ⅳ-2：氣壓差造成風」時只改變溶液濃度，其餘條件一致，設置4組、每組取樣14份並各重複測量4次"
+      "text": "氣壓差消失且無風"
     },
     {
       "id": "C",
-      "text": "研究「Ib-Ⅳ-2：氣壓差造成風」時只測量4組中的一組就直接下結論"
+      "text": "空氣下沉增溫、雲量較少的穩定天氣"
     },
     {
       "id": "D",
-      "text": "研究「Ib-Ⅳ-2：氣壓差造成風」時先決定結論，再挑選支持結論的14筆資料"
+      "text": "溫度永遠低於周圍"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ib-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ib-Ⅳ-2：氣壓差造成風」。"
+    "value": "C",
+    "explanation": "下沉氣流常抑制雲發展，但實際天氣仍受水氣、地形與季節等條件影響。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的氣壓、風、等壓線、海陸風及觀測判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ib-Ⅳ-2 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ib-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ib-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "氣壓、風向風速、等壓線與天氣資料判讀",
+      "pattern": "取由氣壓差、等壓線、地表受熱與氣象資料推論風及天氣變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由氣壓差、等壓線、地表受熱與氣象資料推論風及天氣變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先判斷高低壓與溫度差，再依氣壓梯度追蹤風向，最後檢查地點、時間與其他天氣因素。",
+  "solutionSteps": [
+    "讀題定位：圈出「高壓天氣」與題目中的氣壓、溫度、等壓線、風向或觀測範圍。",
+    "建立判準：下沉氣流常抑制雲發展，但實際天氣仍受水氣、地形與季節等條件影響。",
+    "核對答案：選項 C「空氣下沉增溫、雲量較少的穩定天氣」符合氣壓差造成風的概念。",
+    "排除誘答：分清高壓與低壓、風向來向與去向、壓差驅動與其他天氣因素，並保留資料界線。",
+    "最後回查：確認時間、地點、觀測高度與控制變因都和題幹一致。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

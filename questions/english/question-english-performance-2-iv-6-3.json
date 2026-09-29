@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-6-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-6／人事時地物描述回答」task, what is the best way to prepare question 3?",
+  "prompt": "The robotics team practices every Tuesday at 4:25 p.m. When does the team practice?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-6／人事時地物描述回答."
+      "text": "On Thursday mornings."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-6／人事時地物描述回答."
+      "text": "Every Tuesday before school."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-6／人事時地物描述回答."
+      "text": "Every Tuesday at 4:25 p.m."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-6／人事時地物描述回答."
+      "text": "At 4:25 p.m. on Saturdays."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-6"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-6／人事時地物描述回答, question 3."
+    "value": "C",
+    "explanation": "時間資訊有兩部分：固定星期 Tuesday 和鐘點 4:25 p.m.。只有 C 同時保留這兩個條件；B 把時間改成上學前，D 改成星期六。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dwm.kh.edu.tw/upload/344/104_64184/113%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%B8%80%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%8B%B1%E6%96%87%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "高雄市立大灣國中公開原卷 PDF page 3, reading schedule question 3；只採用命題能力／資料閱讀模式，不複製原卷內容。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開英語試題的 item-level pattern-only 證據獨立改寫；未複製原題、選項、圖表或音檔。題目維持 draft，尚待單元版本研究、內容與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-6"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64184/113%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%B8%80%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%8B%B1%E6%96%87%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立大灣國中113學年度第一學期八年級英語科第一次段考",
+      "year": "113",
+      "subject": "english",
+      "locator": "PDF page 3, reading schedule question 3",
+      "observedPattern": "只參考第3題的閱讀／問答能力與資訊擷取方式；只參考原卷人事時地資訊擷取、問答與閱讀資料定位方式；不複製題幹、選項、答案或素材。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "讀 when 時把日期與鐘點都抄成核對清單；只答星期或只答時間，都可能漏掉題目提供的關鍵資訊。",
+  "solutionSteps": [
+    "標記 when，確認題目詢問練習時間，而非練習地點或活動內容。",
+    "從原句圈出 every Tuesday，代表每週二固定舉行。",
+    "另圈出 at 4:25 p.m.，辨明這是下午四點二十五分。",
+    "逐一比較選項：B 漏掉鐘點且改成上學前；D 的日期不是 Tuesday。",
+    "C 完整符合星期與時間，故選 C；讀行程表時也應同時保留列與欄的標籤。"
+  ]
 }

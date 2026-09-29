@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-5-iv-1-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "『你已經把實驗器材收好了嗎？』最適合用哪種朗讀語氣？",
+  "prompt": "『請準備三項物品：水壺、雨具和筆記本。』冒號在句中主要有何作用？",
   "options": [
     {
       "id": "A",
-      "text": "驚嘆語氣，大聲喊叫"
+      "text": "提示後文將具體列出前文所說的三項物品"
     },
     {
       "id": "B",
-      "text": "疑問語氣，句末略上揚以等待回答"
+      "text": "表示前文與後文完全沒有關係"
     },
     {
       "id": "C",
-      "text": "命令語氣，句末完全下降"
+      "text": "只表示朗讀時必須提高音量"
     },
     {
       "id": "D",
-      "text": "列舉語氣，每字都停頓"
+      "text": "把三項物品改成疑問句"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "問號表示疑問，朗讀須呈現詢問並等待回應。"
+    "value": "A",
+    "explanation": "冒號建立總說與分說的關係；朗讀時可用短暫停頓提醒聽者後面是具體內容。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "鹽埕國中公開國文段考；研究 5-Ⅳ-1 標點與朗讀能力題型（問號與語氣）；課綱：https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf",
-    "authoringNote": "獨立改編，未重製原題文字、選項、文章、圖像或答案；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源的題型方向，獨立改寫分句、分號、冒號、反問、引號、停連、語氣、句讀歧義、標點修訂及整合朗讀；未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-5-iv-1"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-chinese-performance-5-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "標點、句意與閱讀理解",
+      "observedPattern": "公開國文評量常以句意、標點、語氣、文本結構與閱讀表達檢查理解；本題改寫為標點修訂與有感朗讀任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "語氣、標點與語文表達",
+      "observedPattern": "公開國文評量常以句意、標點、語氣、文本結構與閱讀表達檢查理解；本題改寫為標點修訂與有感朗讀任務。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先理解句法與標點所建立的語意關係，再以停連、重音、音高和速度呈現文本；朗讀後從聽者理解與情感效果回頭修正。",
+  "solutionSteps": [
+    "讀題定位：圈出「冒號提示」，確認題目要求的是標點功能、分句關係、語氣、停連或朗讀整合。",
+    "回到句法與語境：先分辨分句、修飾範圍、說話目的，再決定標點與重音；本題核心是「冒號建立總說與分說的關係；朗讀時可用短暫停頓提醒聽者後面是具體內容。」",
+    "核對正解：選項 A「提示後文將具體列出前文所說的三項物品」能讓句意、句法、標點和朗讀節奏相互一致。",
+    "排除誘答：不要把標點當裝飾、在詞組中亂停、只靠音量表現情緒，或忽略引語與問句的層次。",
+    "完成朗讀回查：依句意→標點→停連→重音語氣→試讀聽感重做，確認聽者能理解內容與情感。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

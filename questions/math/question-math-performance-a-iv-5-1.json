@@ -2,23 +2,23 @@
   "id": "question-math-performance-a-iv-5-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "化簡 (2x＋3)＋(x－5)，結果為何？",
+  "prompt": "化簡 (2x+3)+(x-5)，結果為何？",
   "options": [
     {
       "id": "A",
-      "text": "3x＋8"
+      "text": "x-2"
     },
     {
       "id": "B",
-      "text": "x－2"
+      "text": "3x+8"
     },
     {
       "id": "C",
-      "text": "2x－2"
+      "text": "x+2"
     },
     {
       "id": "D",
-      "text": "3x－2"
+      "text": "3x-2"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "easy",
   "answer": {
     "value": "D",
-    "explanation": "合併同類項：2x＋3＋x－5＝3x－2。"
+    "explanation": "去括號後合併同類項：2x+3+x-5=3x-2，所以選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考多項式四則、分配律、完全平方、平方差與因式分解題型；本題使用全新數值、情境與選項，非原題重製。",
-    "authoringNote": "多項式與乘法公式單元實質改寫；已重新展開／因式分解並核對答案，未重製公開試題文字、圖表或選項；待第二輪 AI 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公開公立學校／公開會考數學試題僅供多項式與乘法公式能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的代數運算方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-a-iv-5"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-performance-a-iv-5",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "多項式合併、分配律、乘法公式、立方和與因式分解；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求辨識同類項、展開乘法公式、利用平方差或立方和快速化簡，並以因式分解檢查結果；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "多項式合併、分配律、乘法公式、立方和與因式分解；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求辨識同類項、展開乘法公式、利用平方差或立方和快速化簡，並以因式分解檢查結果；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "多項式合併、分配律、乘法公式、立方和與因式分解；僅作公開試題能力方向研究。",
+      "observedPattern": "公開數學評量常要求辨識同類項、展開乘法公式、利用平方差或立方和快速化簡，並以因式分解檢查結果；本題只採能力與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先處理括號的正號，再把 x 項與常數項分開合併。",
+  "solutionSteps": [
+    "將兩個括號直接相加。",
+    "合併 x 項：2x+x=3x。",
+    "合併常數：3-5=-2。",
+    "得到 3x-2。",
+    "所以選 D。"
+  ]
 }

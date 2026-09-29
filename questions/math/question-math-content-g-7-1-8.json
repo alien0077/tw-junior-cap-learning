@@ -2,41 +2,84 @@
   "id": "question-math-content-g-7-1-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "點 E(－4,－1) 的 x、y 坐標符號分別為何？",
+  "prompt": "下列哪一點位於直線 x＝−2 上？",
   "options": [
     {
       "id": "A",
-      "text": "正、正"
+      "text": "(−2,7)"
     },
     {
       "id": "B",
-      "text": "正、負"
+      "text": "(7,−2)"
     },
     {
       "id": "C",
-      "text": "負、正"
+      "text": "(2,−7)"
     },
     {
       "id": "D",
-      "text": "負、負"
+      "text": "(−7,2)"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-g-7-1"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "x=−4、y=−1，兩者皆為負。"
+    "value": "A",
+    "explanation": "直線 x＝−2 上所有點的 x 坐標固定為 −2，只有 A 符合，選 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 平面直角坐標系 題型與官方課綱 KG kg-math-content-g-7-1",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供平面直角坐標系、象限、軸上位置、對稱、平移、距離與面積能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的坐標幾何方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-math-content-g-7-1"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-g-7-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "Cartesian coordinates, quadrants, axes, reflections, translations, distance, and geometric area",
+      "observedPattern": "公立學校公開數學試題常以坐標平面判讀位置、象限與軸上點，並結合對稱、平移、距離或矩形面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "Cartesian coordinates, quadrants, axes, reflections, translations, distance, and geometric area",
+      "observedPattern": "公立學校公開數學試題常以坐標平面判讀位置、象限與軸上點，並結合對稱、平移、距離或矩形面積；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.hcjh.ntpc.edu.tw/p/406-1000-7527%2Cr146.php",
+      "title": "新北市立新埔國中公開定期評量試題頁",
+      "year": "113-114",
+      "locator": "公開數學段考資料頁；只研究資料判讀、概念應用與推理的能力結構，不宣稱一對一題號對應。",
+      "subject": "math",
+      "observedPattern": "公立國中公開數學評量的資料型態、條件比較與推理結構；本題使用全新題幹、數值、選項、解析與解法。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "判讀垂直線方程式時只檢查 x 坐標，不要把 x、y 順序對調。",
+  "solutionSteps": [
+    "讀取直線條件 x＝−2。",
+    "檢查 A 的 x 坐標為 −2。",
+    "檢查 B、C、D 的 x 坐標分別為 7、2、−7。",
+    "判斷只有 A 滿足固定橫坐標。",
+    "選 A，確認 y 值可以是 7 並不影響在線條件。"
+  ]
 }

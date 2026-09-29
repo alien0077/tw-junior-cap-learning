@@ -2,23 +2,23 @@
   "id": "question-english-content-d-iv-2-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-2／比較分類排序」task, what is the best way to prepare question 4?",
+  "prompt": "A checklist lists a raincoat, umbrella, sandals, and wool scarf. Which pair belongs in the 'rain protection' category?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-2／比較分類排序."
+      "text": "sandals and wool scarf"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-2／比較分類排序."
+      "text": "umbrella and wool scarf"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-2／比較分類排序."
+      "text": "raincoat and umbrella"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-2／比較分類排序."
+      "text": "raincoat and sandals"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-2／比較分類排序, question 4."
+    "value": "C",
+    "explanation": "直接遮雨的兩件用品是 raincoat 和 umbrella，因此選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1660183128201jpNsop8i.pdf",
+    "sourceLocator": "PDF第1頁第19–21題：根據課程表分類並判斷活動與日期的對應；本題採全新生活用品分類。",
+    "authoringNote": "以英語課程知識點與公立學校公開段考所呈現的資料判讀能力為參照；題幹、數據、選項、答案、解析與解題活動均獨立撰寫，未複製試卷內容。課程版本研究與全案內容審查未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-2"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1660183128201jpNsop8i.pdf",
+      "title": "臺北市立內湖國中110學年度第2學期七年級第1次段考英語科試題",
+      "year": "110",
+      "subject": "english",
+      "locator": "PDF第1頁第19–21題：根據課程表分類並判斷活動與日期的對應；本題採全新生活用品分類。",
+      "observedPattern": "表格理解題須按題目指定的分類條件檢查各項資訊，不可只因項目同時出現便歸為一類；本題用品及類別全新撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "先把類別定義成「直接阻擋雨水」，逐件判斷用途；保暖或避免踩水不等於遮雨。",
+  "solutionSteps": [
+    "先界定 rain protection：直接遮擋或阻隔落下的雨水。",
+    "raincoat 可穿在身上擋雨，符合條件。",
+    "umbrella 可在頭頂形成遮蔽，也符合條件。",
+    "sandals 是鞋類，wool scarf 主要保暖，均非直接擋雨；故 raincoat and umbrella 為 C。",
+    "檢查沒有把「雨天可能使用」誤當成「直接防雨」的分類標準。"
+  ]
 }

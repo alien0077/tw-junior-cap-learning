@@ -2,41 +2,67 @@
   "id": "question-science-content-ib-iv-4-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年11月15日校園實驗室的觀察中，比較兩地「Ib-Ⅳ-4：鋒面與天氣變化」資料時，甲地迎風坡年雨量約 23740 mm、乙地背風坡約 16235 mm，最合理的做法是？",
+  "prompt": "若預報指出冷鋒接近，哪項資料最能檢查預報是否正逐步得到支持？",
   "options": [
     {
       "id": "A",
-      "text": "在「Ib-Ⅳ-4：鋒面與天氣變化」中只看 23740 mm 的單一數值便下結論"
+      "text": "只看一位同學覺得變冷的感覺"
     },
     {
       "id": "B",
-      "text": "同時比較地形、風向、觀測期間與 23740、16235 mm 資料"
+      "text": "只看昨天最高溫"
     },
     {
       "id": "C",
-      "text": "在「Ib-Ⅳ-4：鋒面與天氣變化」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "連續測站顯示風向改變、氣溫下降、氣壓與降雨變化的共同趨勢"
     },
     {
       "id": "D",
-      "text": "在「Ib-Ⅳ-4：鋒面與天氣變化」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只看天氣圖標題而不看時間"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ib-iv-4"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Ib-Ⅳ-4：鋒面與天氣變化」。"
+    "value": "C",
+    "explanation": "預報驗證要把模型預測與多項、連續的實測資料對照，避免以單一主觀感受或單一數值下結論。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校／公開自然科試題與課程資料的鋒面、氣團、降雨、地形及天氣圖判讀能力方向；本題只作 pattern-only 改寫來源。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ib-Ⅳ-4 單元重新核對與撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ib-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ib-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "鋒面、氣團、降雨與天氣圖資料判讀",
+      "pattern": "取由冷暖氣團、鋒面符號、測站時間序列、地形與降雨資料推論天氣變化的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由冷暖氣團、鋒面符號、測站時間序列、地形與降雨資料推論天氣變化的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先由冷暖氣團與鋒面類型建立模型，再比對符號、氣象要素時間序列及地形條件，最後限制降雨推論的強度。",
+  "solutionSteps": [
+    "讀題定位：圈出「預報證據」以及冷暖氣團、鋒面符號、時間序列或地形條件。",
+    "建立判準：預報驗證要把模型預測與多項、連續的實測資料對照，避免以單一主觀感受或單一數值下結論。",
+    "核對答案：選項 C「連續測站顯示風向改變、氣溫下降、氣壓與降雨變化的共同趨勢」符合鋒面與天氣變化的觀測模型。",
+    "排除誘答：分清冷鋒、暖鋒、靜止鋒與圖例，並避免把鋒面直接等同於必然雨量。",
+    "最後回查：確認時間、地形、水氣與證據強度都沒有被題幹或選項偷換。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

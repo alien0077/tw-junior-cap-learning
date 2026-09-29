@@ -2,7 +2,7 @@
   "id": "question-math-content-s-9-7-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "圓心 O 到點 P 的距離為 4，半徑為 6，P 在圓的哪裡？",
+  "prompt": "圓心 O 到點 P 的距離為 4 公分，圓半徑為 6 公分。點 P 位於圓的哪個位置？",
   "options": [
     {
       "id": "A",
@@ -10,7 +10,7 @@
     },
     {
       "id": "B",
-      "text": "圓上"
+      "text": "圓周上"
     },
     {
       "id": "C",
@@ -18,25 +18,68 @@
     },
     {
       "id": "D",
-      "text": "無法判斷"
+      "text": "無法判定"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-s-9-7"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "OP=4<6，故 P 在圓內。"
+    "explanation": "OP＝4 小於半徑 6，所以 P 在圓內，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 點、直線與圓的關係 題型與官方課綱 KG kg-math-content-s-9-7",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供點、直線與圓的關係能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的圓幾何能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-7"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "點與圓位置、直線與圓交點、切線、弦、弦心距與切線長",
+      "observedPattern": "公立學校公開數學試題常用圓心距離與半徑比較點或直線位置，並以切線、弦及直角三角形計算長度；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "點與圓位置、直線與圓交點、切線、弦、弦心距與切線長",
+      "observedPattern": "公立學校公開數學試題常用圓心距離與半徑比較點或直線位置，並以切線、弦及直角三角形計算長度；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "點與圓位置、直線與圓交點、切線、弦、弦心距與切線長",
+      "observedPattern": "公立學校公開數學試題常用圓心距離與半徑比較點或直線位置，並以切線、弦及直角三角形計算長度；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較圓心到點的距離與半徑，不要只看點的圖示位置。",
+  "solutionSteps": [
+    "讀出 OP＝4 公分。",
+    "讀出半徑 r＝6 公分。",
+    "比較 4 與 6，得到 OP＜r。",
+    "距離小於半徑代表點在圓內。",
+    "選 C。"
+  ]
 }

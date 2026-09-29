@@ -2,41 +2,62 @@
   "id": "question-english-content-d-iv-3-3",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「D-Ⅳ-3／釐清因果」task, what is the best way to prepare question 3?",
+  "prompt": "A guide says a plant needs water to stay alive. One student stops watering a plant, and it later wilts. Which conclusion is most careful?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about D-Ⅳ-3／釐清因果."
+      "text": "The guide proves every plant wilts at exactly the same speed."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about D-Ⅳ-3／釐清因果."
+      "text": "The plant must have wilted before the student stopped watering it."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking D-Ⅳ-3／釐清因果."
+      "text": "Lack of water may have contributed to the wilting, but this observation alone does not rule out other factors."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about D-Ⅳ-3／釐清因果."
+      "text": "Water is the only factor that can affect a plant."
     }
   ],
   "knowledgeIds": [
     "kg-english-content-d-iv-3"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets D-Ⅳ-3／釐清因果, question 3."
+    "value": "C",
+    "explanation": "缺水可能促成萎凋，但題目沒有排除其他因素，故最謹慎的結論為 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E8%AA%9E%E7%A7%91_2.pdf",
+    "sourceLocator": "PDF第3頁第26–28題：整合人物生活背景、困難與後續選擇推論文章訊息。",
+    "authoringNote": "參照公立學校公開英文段考所呈現的時間順序、原因辨識、篇章線索或因果推論能力，題幹、情境、數據、選項、答案與解析均獨立撰寫；未複製試卷。課程版本研究與全案內容審查尚未完成，維持draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-content-d-iv-3"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-content-d-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%8B%B1%E8%AA%9E%E7%A7%91_2.pdf",
+      "title": "高雄市立國昌國中112學年度第1學期二年級第1次段考英語科試題",
+      "year": "112",
+      "subject": "english",
+      "locator": "PDF第3頁第26–28題：整合人物生活背景、困難與後續選擇推論文章訊息。",
+      "observedPattern": "根據文章支持的線索作有限度推論，不把單一線索擴大成普遍定律；本題植物案例與數據全新撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "把觀察到的先後和可能機制分開；結論強度不可超過證據能支持的範圍。",
+  "solutionSteps": [
+    "已知觀察是停止澆水後，這株植物後來萎凋。",
+    "課文提供「植物需要水」的機制，讓缺水成為合理的可能原因。",
+    "但題目沒有交代光照、溫度、根部或對照植株，不能排除其他因素。",
+    "因此用 may have contributed 表示可能有貢獻，而不宣稱唯一原因；選 C。",
+    "檢查 A、D 的絕對字眼 every、only，以及 B 倒置時間順序，皆超出證據。"
+  ]
 }

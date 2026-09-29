@@ -1,0 +1,131 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-chinese-content-ab-iv-2
+  knowledgeGraphIds:
+  - kg-chinese-content-ab-iv-2
+  title: Ab-Ⅳ-2：3500常用字使用
+  subject: chinese
+  socialDiscipline: null
+  curriculumLevel: learning-content
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: Ab-Ⅳ-2：3500常用字使用
+    curriculumIntent: Ab-Ⅳ-2：3500常用字使用
+    publisherEvidence:
+      nani:
+        status: verified
+        required: true
+      kanghsuan:
+        status: verified
+        required: true
+      hanlin:
+        status: verified
+        required: true
+    fusionRule: 已實際核對三所公立學校公開課程計畫／教學資料的版本章節級證據；只融合三版本共同概念與可核對差異，正文、例題、題目與互動仍為本專案原創，內容與 Terra 審查未完成前不得升級發布狀態
+    currentEvidenceStatus: curriculum-and-kg-grounded; three-publisher-fusion-evidence-verified; content-and-Terra-review-pending
+  learningGoals:
+  - 在實際詞語和句子中正確使用常用字，兼顧字形、讀音、詞義及搭配
+  - 遇到形近字或語氣、語義易混淆的詞，能說明選擇依據而非只靠熟悉感
+  - 將同一套核對方法遷移到新公告、研究紀錄或日常說明文字
+  prerequisites:
+  - 能閱讀常見詞語和短句
+  - 能指出一句話中的動作、對象或語氣線索
+  coreConcepts:
+  - 常用字須在詞語和句子中同時檢查字形、讀音、詞義及搭配
+  - 形近字部件可提供辨字線索，但不能取代詞義與語境核對
+  - 用詞選擇要符合句子要表達的功能、對象與語氣強度
+  misconceptions:
+  - 只憑讀音相近或部件熟悉就選字，不核對詞義與搭配
+  - 把「提醒」等近義詞視為可在所有語境互換，不看句子所需語氣
+  - 只背詞義，忽略動詞與受詞搭配或前後步驟的語意關係
+  contentFlow:
+  - 先比較「辨／辯／瓣」的部件功能與詞義，避免以相似字形直接互換。
+  - 把「務必」放入公告句，判斷其必要性和責任語氣，不把語氣誤當時間長短。
+  - 沿研究流程閱讀「蒐集資料」後的下一步，依詞語搭配與語意選出整理、提出結論。
+  - 對每個選項先讀完整句意，再以部件、詞義、語氣或流程線索排除不合者。
+  - 將辨字與搭配檢核方法遷移到新句，說明採用及排除選項的理由。
+  visualizations:
+  - 學生頁以三個獨立 GuidedChoice 題步呈現形近字、公告語氣與研究詞語搭配；不是滑桿、圖表或可變因果模型。
+  - 選項、題幹及即時回饋以文字呈現；鍵盤可聚焦與啟用，正誤不只依賴顏色。
+  interactiveBlocks:
+  - id: CUR-CHINESE-CONTENT-AB-IV-2-I01
+    component: GuidedChoiceBlock
+    purpose: 依序練習形近字辨析、公告用詞的責任語氣，以及研究流程中的詞語搭配
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 讀完每一題的完整句子，再以滑鼠或鍵盤選出合適詞語／線索。
+    - 答錯後讀取重試提示，再重新選擇；答對後核對該題的理由。
+    - 口頭或紙筆指出字形部件、語氣、詞義或詞語搭配中實際支持答案的線索。
+    visualRules:
+    - 三題各自呈現完整題幹、三個文字選項及 aria-live 回饋；不得偽稱有圖表同步或變項操作。
+    - 每次作答即顯示正誤回饋；選項以文字與 aria-pressed 狀態表達結果。
+    - 窄螢幕不得裁切題幹、選項或回饋。
+    misconceptionChecks:
+    - id: MC-CUR-CHINESE-CONTENT-AB-IV-2-I01
+      trigger: 只憑形近、近音或熟悉感選答案，未核對詞義、語氣或搭配。
+      prompt: 回到完整句子，指出哪個部件、詞義或搭配線索能支持你的選擇。
+      expectedEvidence: 能引用實際題幹中的部件功能、句意、責任語氣或研究流程搭配。
+    feedback:
+      correct: 呈現該題對應的詞義、語氣或搭配理由。
+      incorrect: 顯示通用重試提示「再想一次：回顧上方的融合版重點。」；目前互動沒有逐題 retryHint 或二階分層提示，不得在規格宣稱已具備。
+  teachingPatternRefs:
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: 本課 GuidedChoice 回饋需以文字及 aria-live 狀態回報正誤，題目與內容由本課 lesson 提供。
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: 本課可用具名互動區與可聚焦選項完成三步選擇；無外部資源時 lesson 和互動仍須可用。
+  capTransfer:
+    questionType: 新句中的常用字辨析與用詞搭配說明
+    stemConstraint: 使用互動未出現的新字詞與句子，含可由上下文判讀的字形、語氣或搭配線索。
+    requiredResponse: 選出恰當用字並引用新句中的詞義或搭配線索，說明至少一個干擾選項為何不合。
+    scoring: 字詞選擇正確 1、上下文線索對應 1、排除理由清楚 1。
+  exitTicket:
+    prompt: 面對新句的形近字或近義詞，你會先檢查哪個線索？請引用句中證據並說明一個容易誤選的選項。
+    successCriteria:
+    - 提到本單元核心概念
+    - 說明字詞選擇
+    - 引用上下文、部件功能或搭配證據
+  expressionExtension:
+    applicable: true
+    task: 從校園公告或研究紀錄找出兩組易混淆的常用字／詞語，寫一段短文比較其詞義、搭配及語氣差異。
+    constraint: 引用自己找到的完整句子並標記來源位置；不得只列字典義或讓系統代寫答案。
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個選項按鈕有可讀名稱及 aria-pressed 狀態；作答回饋由 aria-live 公告。
+    reducedMotion: 本互動沒有自動動畫；啟用 prefers-reduced-motion 不得隱藏步驟或回饋。
+  testCases:
+  - 學生頁顯示 lesson 六段 authored teaching，並呈現三個互動題步；不應出現 TextEvidenceBlock、滑桿、動態圖表或預測保留功能。
+  - 三步 GuidedChoice 的題幹、選項及正確答案須與 lesson JSON 一致；鍵盤選項可聚焦、啟用，aria-pressed 隨選擇更新。
+  - 錯答顯示實際通用重試提示；改選正解後顯示該題 JSON feedback，且 aria-live 可讀取回饋。
+  - 在 320px、375px 與 768px 寬度，正文、題幹、選項及回饋不得水平溢位。
+  - 三種寬度下互動選項觸控高度至少 44 CSS px，且學生能以 prefers-reduced-motion 操作。
+  - 三種寬度下本單元卡片 axe 掃描均無 violations；自動掃描 incomplete 項目須保留報告數量，不冒稱真人輔助科技測試。
+  - 阻擋 simulations.js 與外部請求後，lesson 正文及本地 GuidedChoice 仍能載入與作答；不得將 fallback 說成遠端資料驗證。
+  - 新句遷移及理由短答屬 lesson 的課後教學任務，不得誤報為現有瀏覽器互動已自動評分。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf
+    locator: 正文第 12～18 頁／PDF 第 14～20 頁；國民中學教育階段學習內容；官方代碼 Ab-Ⅳ-2
+    role: official-curriculum-source-of-truth

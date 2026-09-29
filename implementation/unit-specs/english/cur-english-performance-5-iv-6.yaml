@@ -1,0 +1,134 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-5-iv-6
+  knowledgeGraphIds:
+  - kg-english-performance-5-iv-6
+  title: 5-Ⅳ-6：轉述簡短對話
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 5-Ⅳ-6 能轉述所聽到的簡短談話
+    curriculumIntent: 聽取簡短談話後，向未聽見者忠實傳達主要命題、言語功能及限制；依報告者／聽者身分與時間地點參照調整語句，不逐字硬譯或添加未證實推論。
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 本稿為官方課綱與可查公開教學理論的原創課程融合；三家出版社指定冊次正文未取得，版本比較維持 pending，不得宣稱出版社三版融合完成。
+    currentEvidenceStatus: curriculum-and-kg-grounded; public-teaching-references-read; publisher-textbook-evidence-pending
+  learningGoals:
+  - 聽取原話後保留說話者、言語功能、核心命題與會改變行動的限制。
+  - 依原對話與報告時空的人稱／時間參照，合理調整代名詞、時態和時間詞。
+  - 將問句、否定、可能性和條件忠實轉述，區分原話和聽者推論。
+  prerequisites:
+  - 能理解本單元常用字詞與簡短日常句型。
+  - 能辨識說話者、聽者、問句／陳述及否定線索。
+  coreConcepts:
+  - 訊息忠實度：說話者、言語功能、核心命題、否定與條件。
+  - 報告視角：代名詞指涉、時態及時間／地點指示語的參照點。
+  - 轉述問句須保留詢問功能並使用間接問句陳述語序。
+  misconceptions:
+  - 逐字替換代名詞／時態，不先確認誰說、對誰說、何時報告。
+  - 把原話中的問句改成確定陳述，或漏掉 not、may、if、only 等限制。
+  - 為了「講得完整」自行添加說話者未表達的原因、情緒或結論。
+  contentFlow:
+  - 'predict: 閱讀原創短對話後，先預測轉述時哪些說話者／聽者、否定、可能性和條件不可遺漏'
+  - 'manipulate: 將直接對話改寫為新聽者可讀的訊息，依參照點變化調整人稱、時態與時間地點指示語'
+  - 'observe: 比較原話與轉述的命題、問句功能、否定／may／if 限制及下一步是否一致'
+  - 'explain: 指出每項語法調整對應的報告時空證據，並說明為何不可添入原說話者未表達的結論'
+  - 'transfer: 用訊息接力的聽者回述檢驗；接收者能否依轉述採取與原意相同的正確行動'
+  visualizations:
+  - '對話角色／指涉表：原說話者、原聽者、轉述者及新聽者的代名詞對照。'
+  - '訊息保真檢核列：言語功能、命題、否定／條件、時間地點、推論標記。'
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-5-IV-6-I01
+    component: GuidedChoiceBlock
+    purpose: 透過三個逐步情境診斷人稱指涉、問句功能和條件／可能性是否在轉述中走樣。
+    initialState:
+      selectedAnswer: null
+      feedbackVisible: false
+    studentActions:
+    - 對每一段原話選出保留原意的轉述句。
+    - 錯答後依提示回查來源角色、言語功能或限制語，再重試。
+    - 答對後閱讀解析，說出哪些訊息不可省略／不可添加。
+    visualRules:
+    - 正解只在作答後顯示；錯答提示不直接揭露答案。
+    - 每題選項與提示皆以可見文字表達，不靠顏色傳遞對錯。
+    - 窄螢幕不得裁切對話、選項、回饋或重試控制。
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-5-IV-6-I01
+      trigger: 把原對話的 I／you 換錯，或漏掉 not、may、if，導致轉述改變安排。
+      prompt: 請對照原話，指出哪個角色或限制詞在你的轉述中改變了。
+      expectedEvidence: 能指認來源說話者／聽者及一個被保留或遺漏的否定、可能性或條件語。
+    feedback:
+      correct: 指出學生保留的命題與限制，再要求說明報告視角。
+      incorrect: 先提示回看說話者、問句功能或限制語，重試後才顯示完整轉述與解析。
+  teachingPatternRefs:
+  - refId: dyjhs-english-listening-speaking-plan
+    reuseDecision: method-inspiration-only
+    application: '參考從聽說先備、課堂口語練習到表達的課程安排；本課短對話、選項、錯誤提示和解析均原創。'
+  - refId: teacher-retell-scaffolding
+    reuseDecision: method-inspiration-only
+    application: '參考先給練習時間、由跟讀／分段逐步到 summarize-retell 的鷹架；本頁只實作文字選答與重試，不宣稱錄音或口說評分。'
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-6：轉述簡短對話」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課「5-Ⅳ-6：轉述簡短對話」的 LanguageTimelineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+  capTransfer:
+    questionType: 聽後轉述／溝通功能判斷／訊息保真短答
+    stemConstraint: 使用新對話情境，檢查角色、言語功能、否定／條件及時間參照，不得只替換人名。
+    requiredResponse: 選出轉述後指出保留的限制語及調整視角的理由。
+    scoring: 命題與功能正確 1、限制保留 1、視角／時間調整有據 1
+  exitTicket:
+    prompt: 請把一句含否定或條件的原話轉述給新聽者，並標出你保留的限制及調整人稱的依據。
+    successCriteria:
+    - 說話者與新聽者對應正確。
+    - 原話功能及否定／條件沒有被改成確定事實。
+    - 時態或時間詞調整取決於明確報告參照點。
+  expressionExtension:
+    applicable: true
+    task: 聽一段自選的簡短校園對話，寫兩句英文轉述並加一行繁中說明角色指涉、保留的限制及時態選擇。
+    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 初次載入時每題答案均隱藏；鍵盤選答錯誤後先出現本題專屬一階提示，重試正確後顯示完整解析。
+  - 三題分別檢查說話者／聽者代名詞、問句保留與否定／may／if 限制，不以同一個換名模板出題。
+  - 320px、375px、768px 均能完整閱讀對話和選項；鍵盤可操作所有選項及重試。
+  - 無外部資料時 GuidedChoice 題目、提示、答案與解析仍可完整使用。
+  - Fallback：刻意阻擋 simulations.js 後，三題轉述保真 GuidedChoice 仍可鍵盤作答、錯答重試並顯示解析；不得把模擬腳本當作教材或答案資料來源。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 三家版本未取得者明確標記 pending；本稿不得冒稱出版社三版本正文融合完成。
+  - 至少一個互動操作能回答本單元明確學習問題
+  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - lesson 內容留待使用者 ChatGPT review；技術與互動 QA 通過後仍維持 draft 直到該審查完成。
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 5-Ⅳ-6
+    role: official-curriculum-source-of-truth

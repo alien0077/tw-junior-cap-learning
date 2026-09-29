@@ -2,41 +2,62 @@
   "id": "question-english-performance-2-iv-6-9",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-6／人事時地物描述回答」task, what is the best way to prepare question 9?",
+  "prompt": "On the campus map, the blue backpack is under the bench, not on it. Which sentence reports the map correctly?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-6／人事時地物描述回答."
+      "text": "The backpack is behind the bench, and the bench is beside the gym."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-6／人事時地物描述回答."
+      "text": "The blue backpack is below the bench."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-6／人事時地物描述回答."
+      "text": "The backpack is on top of a red desk."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-6／人事時地物描述回答."
+      "text": "The bench is inside the blue backpack."
     }
   ],
   "knowledgeIds": [
     "kg-english-performance-2-iv-6"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-6／人事時地物描述回答, question 9."
+    "value": "B",
+    "explanation": "under 表示在下方，與題目明確排除的 on（在上面）不同。只有 B 保留藍色背包位於長椅下方的空間關係。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.qzjh.kh.edu.tw/qzjh/Fileupload/File/Logo_990.pdf",
+    "sourceLocator": "高雄市立前鎮國中公開原卷 PDF page 2, map-reading question 30；只採用命題能力／資料閱讀模式，不複製原卷內容。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開英語試題的 item-level pattern-only 證據獨立改寫；未複製原題、選項、圖表或音檔。題目維持 draft，尚待單元版本研究、內容與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-6"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-6",
+  "examPatternRefs": [
+    {
+      "url": "https://www.qzjh.kh.edu.tw/qzjh/Fileupload/File/Logo_990.pdf",
+      "title": "高雄市立前鎮國中112學年度第一學期七年級英語科段考",
+      "year": "112",
+      "subject": "english",
+      "locator": "PDF page 2, map-reading question 30",
+      "observedPattern": "只參考第30題的閱讀／問答能力與資訊擷取方式；只參考原卷聽力位置描述、地圖方位題的資訊辨識方式；不複製題幹、選項、答案、圖表或音檔。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "讀地圖或位置描述時，分開核對物件、顏色與方位介系詞；under、on、behind 不能互換。",
+  "solutionSteps": [
+    "先找主體 blue backpack，避免把長椅本身當成要定位的物件。",
+    "關鍵位置詞是 under，表示背包在長椅下方。",
+    "題幹特別補充 not on it，排除「放在長椅上」的解讀。",
+    "A 偷換成 behind，C 改了物件與顏色，D 把兩物件內外關係倒置。",
+    "B 用 below 表達下方位置，與原訊息一致，所以選 B。"
+  ]
 }

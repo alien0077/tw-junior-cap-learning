@@ -1,0 +1,77 @@
+{
+  "decision": "D-356",
+  "unit": "Ac-Ⅳ-1：簡易英文標示",
+  "lessonId": "lesson-english-content-ac-iv-1",
+  "date": "2026-09-28",
+  "status": "original-source-informed-enrichment; publisher-fusion-incomplete",
+  "publisherEvidence": [
+    {
+      "publisher": "nani",
+      "url": "https://tpack.nani.com.tw/nani_content?a=273&b=2",
+      "observed": "Official page exposes vocabulary, example sentences, flashcards, matching, quizzes, and writing practice as resource formats.",
+      "lessonDecision": "Keep word recognition, contextual sentence reading, and learner explanation as distinguishable steps; this page does not supply Ac-IV-1 textbook content.",
+      "limitation": "No unit-specific textbook text or sign examples were exposed."
+    },
+    {
+      "publisher": "kanghsuan",
+      "url": "https://digitalmaster.knsh.com.tw/all/video/public/j_english.xml",
+      "observed": "The web open attempt returned an explicit URL-inaccessible error in this run.",
+      "lessonDecision": "No new concept claim was drawn from the XML; existing repository notes remain historical leads only.",
+      "limitation": "Not re-read; no publisher-content fusion claim."
+    },
+    {
+      "publisher": "hanlin",
+      "url": "https://jr.hle.com.tw/jen-teach/",
+      "observed": "Official English page lists contextual podcast, reading assessment, visual grammar, and interactive learning products.",
+      "lessonDecision": "Retain a learner-facing context plus visual/text cross-check and action response; this is a product-interface signal, not a unit text.",
+      "limitation": "No Ac-IV-1 textbook passage or publisher example was exposed."
+    }
+  ],
+  "supplementalConceptResearch": {
+    "url": "https://market.cloud.edu.tw/resources/video/1846770",
+    "provider": "National Taichung University of Education under a Ministry of Education commissioned project",
+    "curriculumMapping": ["Ac-Ⅳ-1", "3-Ⅳ-3"],
+    "topic": "English warning signs and safety education",
+    "license": "CC BY-NC-ND 3.0 Taiwan",
+    "useBoundary": "Used only the public metadata/learning scope to inform an original conceptual distinction; did not adapt or transcribe the video, examples, or quiz."
+  },
+  "sourceToVisibleTeachingDecisions": [
+    {
+      "evidence": "The supplemental curriculum-mapped resource explicitly classifies warning signs as Ac-IV-1 and connects them to safety education.",
+      "originalDecision": "Teach sign force as a separate semantic decision: caution/reminder, specific requested action, or prohibition/access restriction.",
+      "visibleLocation": "content.sections heading '短語裡藏著四種不同工作' and teaching.body id 'explain'",
+      "misconceptionAddressed": "Warning tone or icon alone does not establish a total access ban; explicit restriction wording must not be weakened into a mere reminder."
+    },
+    {
+      "evidence": "Nani resource page distinguishes word/example practice and multiple retrieval formats; Hanlin page separates contextual reading and visual/digital interaction products.",
+      "originalDecision": "Preserve the lesson sequence from word function to contextual evidence and then learner action, without reusing either publisher's materials.",
+      "visibleLocation": "Existing original lesson sections and SignReadingLab interaction",
+      "limitation": "Pedagogical-resource comparison only; not evidence of three-edition conceptual differences."
+    }
+  ],
+  "filesChanged": [
+    "lessons/english/lesson-english-content-ac-iv-1.json",
+    "implementation/unit-specs/english/cur-english-content-ac-iv-1.yaml",
+    "implementation/runtime/sign-reading-lab.test.mjs",
+    "docs/DECISIONS.md",
+    "docs/CURRENT_STATE.md",
+    "project-state.json"
+  ],
+  "gates": {
+    "publisherSlots": "all three pending; unchanged",
+    "lessonReviewStatus": "draft",
+    "specQaStatus": "untested",
+    "publicExamLedger": "not rerun; prior current-state evidence remains 10,566/10,566, pending 0",
+    "a7_2": "not modified or re-opened",
+    "subtasks": "none",
+    "commitPush": "not performed"
+  },
+  "verification": {
+    "signReadingLabTest": "PASS",
+    "validateData": "PASS: 14,476 JSON / 13,112 IDs / 1,032 KG nodes",
+    "validateImplementationSpecs": "PASS: 1,027 specs / 0 errors / 1,027 pending",
+    "fullNpmTest": "PASS: all runtime tests, including workbench traversal 1,027/1,027",
+    "strictLessonIndependence": "PASS: 614 lessons / 0 risks / 0 affected references / 0 failures",
+    "gitDiffCheck": "PASS"
+  }
+}

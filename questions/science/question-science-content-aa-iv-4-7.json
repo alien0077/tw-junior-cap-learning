@@ -2,23 +2,23 @@
   "id": "question-science-content-aa-iv-4-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年9月17日學校研究社的觀察中，將 80 g 食鹽溶於 191 g 水，研究「Aa-Ⅳ-4：元素性質週期性」時，溶液質量為何？",
+  "prompt": "想從週期表預測某元素是否可能與另一元素具有相近化學性質，哪項資訊最有用？",
   "options": [
     {
       "id": "A",
-      "text": "111 g"
+      "text": "兩元素的樣品顏色"
     },
     {
       "id": "B",
-      "text": "15280 g"
+      "text": "兩元素在同一週期的距離"
     },
     {
       "id": "C",
-      "text": "191 g"
+      "text": "兩元素的熔點是否剛好相等"
     },
     {
       "id": "D",
-      "text": "271 g"
+      "text": "兩元素是否位於同一族，且最外層電子排列相近"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,62 @@
   "difficulty": "medium",
   "answer": {
     "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：80＋191＝271 g。 本題對應 KG「Aa-Ⅳ-4：元素性質週期性」。"
+    "explanation": "同族元素通常有相近的最外層電子排列，因而表現出相似的化學反應趨勢。顏色或熔點相同並不能單獨證明化學性質相似，所以答案為D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；元素週期表與性質規律判讀能力方向之獨立改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1706771265848lZjHm7hJ.pdf",
+    "sourceLocator": "臺北市立內湖國民中學112學年度第一學期八年級理化科第三次段考：PDF第3頁第29題（族內元素化學性質相似；pattern-only）；高雄市立大灣國民中學114學年度第一學期第三次段考二年級自然科試卷：PDF第3頁第27題（由族別辨認元素性質規律；pattern-only）；新北市立福和國民中學113學年度第一學期第三次段考自然科試題：PDF第9頁第32題（根據同族位置比較元素化學性質；pattern-only）",
+    "authoringNote": "依三份公立學校原卷所呈現的單元能力方向獨立改寫，未複製原題、選項、圖表或解答；答案與五步解題維持原創，仍待完整學科、授權界線及第二輪AI複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-aa-iv-4"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-science-content-aa-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1706771265848lZjHm7hJ.pdf",
+      "title": "臺北市立內湖國民中學112學年度第一學期八年級理化科第三次段考",
+      "year": "112學年度",
+      "subject": "science",
+      "locator": "PDF第3頁第29題",
+      "locatorLevel": "item",
+      "pattern": "原卷PDF第3頁第29題考查：族內元素化學性質相似。本題只借用能力方向，題幹、選項、答案及解說均重新撰寫。",
+      "observedPattern": "原卷PDF第3頁第29題考查：族內元素化學性質相似。本題只借用能力方向，題幹、選項、答案及解說均重新撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64184/114%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%B8%80%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立大灣國民中學114學年度第一學期第三次段考二年級自然科試卷",
+      "year": "114學年度",
+      "subject": "science",
+      "locator": "PDF第3頁第27題",
+      "locatorLevel": "item",
+      "pattern": "原卷PDF第3頁第27題考查：由族別辨認元素性質規律。本題只借用能力方向，題幹、選項、答案及解說均重新撰寫。",
+      "observedPattern": "原卷PDF第3頁第27題考查：由族別辨認元素性質規律。本題只借用能力方向，題幹、選項、答案及解說均重新撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    },
+    {
+      "url": "https://www.fhjh.ntpc.edu.tw/var/file/0/1000/img/156/149796265.pdf",
+      "title": "新北市立福和國民中學113學年度第一學期第三次段考自然科試題",
+      "year": "113學年度",
+      "subject": "science",
+      "locator": "PDF第9頁第32題",
+      "locatorLevel": "item",
+      "pattern": "原卷PDF第9頁第32題考查：根據同族位置比較元素化學性質。本題只借用能力方向，題幹、選項、答案及解說均重新撰寫。",
+      "observedPattern": "原卷PDF第9頁第32題考查：根據同族位置比較元素化學性質。本題只借用能力方向，題幹、選項、答案及解說均重新撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "比較化學性質時優先找外層電子線索，不以顏色或熔點代替化學證據。",
+  "solutionSteps": [
+    "先確認題目要比較的是化學性質而非外觀或物理性質。",
+    "化學反應與原子的最外層電子及鍵結方式密切相關。",
+    "同族位置可提示外層電子排列相近，支持性質相似推論。",
+    "顏色或熔點相同並不足以證明兩元素反應方式相同。",
+    "所以應查同族與外層電子，正確選項為D。"
+  ]
 }

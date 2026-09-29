@@ -2,41 +2,67 @@
   "id": "question-science-content-ab-iv-4-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年3月27日學校研究社的觀察中，將 44 g 食鹽溶於 822 g 水，研究「Ab-Ⅳ-4：純物質與混合物分類」時，溶液質量為何？",
+  "prompt": "下列哪一項最符合純物質的定義？",
   "options": [
     {
       "id": "A",
-      "text": "778 g"
+      "text": "空氣"
     },
     {
       "id": "B",
-      "text": "36168 g"
+      "text": "食鹽水"
     },
     {
       "id": "C",
-      "text": "866 g"
+      "text": "蒸餾水"
     },
     {
       "id": "D",
-      "text": "822 g"
+      "text": "含砂糖的茶"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ab-iv-4"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
     "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：44＋822＝866 g。 本題對應 KG「Ab-Ⅳ-4：純物質與混合物分類」。"
+    "explanation": "蒸餾水若只含 H₂O，成分固定且只有一種物質，屬純物質；其他皆含多種成分，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；第4題物質分類題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的物質分類、溶液與分離能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "純物質、混合物、溶液與分離方法判讀",
+      "pattern": "取由組成固定性質、樣品成分與分離方法判讀物質分類的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由組成固定性質、樣品成分與分離方法判讀物質分類的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先列成分，再判斷是否只有一種物質與固定組成，不以透明或均勻外觀作唯一依據。",
+  "solutionSteps": [
+    "列出空氣、食鹽水、蒸餾水與茶的可能成分。",
+    "確認蒸餾水只含水這一種物質。",
+    "固定組成符合純物質判準。",
+    "空氣、溶液與茶含多種成分。",
+    "所以選 C。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

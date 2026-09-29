@@ -2,23 +2,23 @@
   "id": "question-science-content-nc-iv-4-1",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年5月22日河川觀測站的觀察中，比較兩地「Nc-Ⅳ-4：新興能源的開發」資料時，甲地迎風坡年雨量約 8300 mm、乙地背風坡約 5620 mm，最合理的做法是？",
+  "prompt": "比較海岸小鎮的太陽能場址，哪組資料最不能省略？",
   "options": [
     {
       "id": "A",
-      "text": "同時比較地形、風向、觀測期間與 8300、5620 mm 資料"
+      "text": "日照時數、遮蔽物、方向、季節輸出與夜間需求"
     },
     {
       "id": "B",
-      "text": "在「Nc-Ⅳ-4：新興能源的開發」中只看 8300 mm 的單一數值便下結論"
+      "text": "只看晴天中午輸出"
     },
     {
       "id": "C",
-      "text": "在「Nc-Ⅳ-4：新興能源的開發」中認定背風坡一定比迎風坡多雨而不查風向"
+      "text": "只看面板顏色"
     },
     {
       "id": "D",
-      "text": "在「Nc-Ⅳ-4：新興能源的開發」中不標示單位與觀測期間也能直接代表氣候"
+      "text": "只比較場址名稱"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "easy",
   "answer": {
     "value": "A",
-    "explanation": "地科資料判讀需要結合地形、風向、時間與量測資料，避免過度推論。 本題對應 KG「Nc-Ⅳ-4：新興能源的開發」。"
+    "explanation": "太陽能輸出受日照、遮蔽、方向和季節影響，還要與需求時間對齊；單一時刻不能代表服務能力。 正確答案為選項 A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+    "sourceLocator": "三筆公立學校／公開自然與理化資料的新興能源、供電、能源轉換、儲能、技術成熟度、生命週期與環境影響能力方向；本題為 Nc-Ⅳ-4 原創情境改寫。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公開題型 pattern-only 方向獨立改寫；未複製原題、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-nc-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-nc-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源轉換、場址條件、供電、環境影響與資料判讀",
+      "observedPattern": "取公立學校自然科對能源來源、效率、資料與生活應用的能力方向，另寫新興能源案例。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "能源、功率、效率、波動與系統證據",
+      "observedPattern": "取公開會考對能源轉換、供需與科學限制的推理方向，未複製原題。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "subject": "science",
+      "locator": "發電、燃料、供應穩定、環境與安全",
+      "observedPattern": "取公立學校自然科對能源開發、燃料供應與環境限制的能力方向，重新設計題目。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先固定要提供的服務，再把場址、時間、輸出和需求資料放在同一表格。",
+  "solutionSteps": [
+    "界定能源服務、需求時段、輸出、儲能和可接受中斷。",
+    "畫出來源—轉換裝置—可用輸出—限制的能量鏈。",
+    "核對季節、場址、技術成熟度、生命週期、排放、生態與安全資料。",
+    "排除只看再生標籤、單一平均、研究潛力或無條件保證的選項，答案為 A。",
+    "用可重測、可修正的條件式結論回查：太陽能輸出受日照、遮蔽、方向和季節影響，還要與需求時間對齊；單一時刻不能代表服務能力。"
+  ]
 }

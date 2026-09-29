@@ -2,41 +2,84 @@
   "id": "question-math-performance-s-iv-11-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "外心 O 到三角形三個頂點的距離具有哪一項性質？",
+  "prompt": "三角形三條高的所在直線交於哪一個三角形的心？",
   "options": [
     {
       "id": "A",
-      "text": "OA、OB、OC 三者相等"
+      "text": "重心"
     },
     {
       "id": "B",
-      "text": "只有 OA＝OB"
+      "text": "外心"
     },
     {
       "id": "C",
-      "text": "OA、OB、OC 必互相垂直"
+      "text": "三條中線的交點"
     },
     {
       "id": "D",
-      "text": "三段距離總和必為 0"
+      "text": "垂心"
     }
   ],
   "knowledgeIds": [
     "kg-math-performance-s-iv-11"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "A",
-    "explanation": "外心在三邊垂直平分線上，因此到三個頂點距離相等，皆為外接圓半徑。"
+    "value": "D",
+    "explanation": "三條高或其延長線的交點稱為垂心，選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考三角形重心、外心、內心與垂心的定義、位置及比例題型",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。 answer alignment repaired 2026-08-28."
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校／公開會考數學試題僅供三角形三心、比例與坐標幾何能力方向研究；本題未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與三筆公開數學試題的三角形三心方向獨立改寫；題幹、數值、選項、答案、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-performance-s-iv-11"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-math-performance-s-iv-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形重心、外心、內心、垂心、中線二比一、垂直平分線、角平分線與坐標重心",
+      "observedPattern": "公開數學評量常從中線、垂直平分線、角平分線與高的交點辨識三角形各心，並運用重心二比一或等距性質計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形重心、外心、內心、垂心、中線二比一、垂直平分線、角平分線與坐標重心",
+      "observedPattern": "公開數學評量常從中線、垂直平分線、角平分線與高的交點辨識三角形各心，並運用重心二比一或等距性質計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形重心、外心、內心、垂心、中線二比一、垂直平分線、角平分線與坐標重心",
+      "observedPattern": "公開數學評量常從中線、垂直平分線、角平分線與高的交點辨識三角形各心，並運用重心二比一或等距性質計算；本題只取能力方向與資料型態。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把『高』與垂心配對，注意鈍角三角形的高可能要延長。",
+  "solutionSteps": [
+    "確認每條高都垂直於對邊。",
+    "三條高所在直線會共點。",
+    "該共點名稱為垂心。",
+    "不必要求交點一定在三角形內部。",
+    "所以選 D。"
+  ]
 }

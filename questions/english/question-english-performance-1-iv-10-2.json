@@ -2,23 +2,23 @@
   "id": "question-english-performance-1-iv-10-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「1-Ⅳ-10／歌謠韻文節奏音韻」task, what is the best way to prepare question 2?",
+  "prompt": "A verse follows a seed's progress: Monday, the class chooses a seed; Tuesday, they loosen the soil; Wednesday, they fill a pot; Thursday, a green shoot appears. On which day do they fill the pot?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 1-Ⅳ-10／歌謠韻文節奏音韻."
+      "text": "Monday"
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 1-Ⅳ-10／歌謠韻文節奏音韻."
+      "text": "Thursday"
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 1-Ⅳ-10／歌謠韻文節奏音韻."
+      "text": "Wednesday"
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 1-Ⅳ-10／歌謠韻文節奏音韻."
+      "text": "Tuesday"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 1-Ⅳ-10／歌謠韻文節奏音韻, question 2."
+    "value": "C",
+    "explanation": "題目問的是裝土入盆的日期。韻文直接把「fill a pot」排在 Wednesday，因此答案是 Wednesday；Thursday 對應的是嫩芽出現。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中九年級英文段考公開題本；歌謠韻文節奏、音節、押韻與口語表現能力方向之獨立改編；非原題或歌詞重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.dwm.kh.edu.tw/upload/344/104_64184/113%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%BA%8C%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%8B%B1%E6%96%87%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+    "sourceLocator": "高雄市立大灣國中113學年度第二學期第一次段考八年級英文試題，第3頁童謠題組，PDF第3頁第30題；只改寫題型結構與能力方向，不重製詩文、選項或答案。",
+    "authoringNote": "依公立學校公開童謠題組的命題模式獨立創作；詩句、選項、答案與解析均為全新內容，不複製原卷。題目仍為draft，待本專案AI內容QA。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-1-iv-10"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-1-iv-10",
+  "examPatternRefs": [
+    {
+      "url": "https://www.dwm.kh.edu.tw/upload/344/104_64184/113%E5%AD%B8%E5%B9%B4%E5%BA%A6%E7%AC%AC%E4%BA%8C%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E8%8B%B1%E6%96%87%E4%BA%8C%E5%B9%B4%E7%B4%9A%E8%A9%A6%E9%A1%8C.pdf",
+      "title": "高雄市立大灣國中113學年度第二學期第一次段考八年級英文試題，第3頁童謠題組；第30題",
+      "year": "113-2",
+      "subject": "english",
+      "locator": "PDF第3頁第30題；原卷以童謠中的星期與活動線索辨認日期；本題更換人物、事件與順序呈現方式，練習定位韻文中的時間資訊。",
+      "locatorLevel": "item",
+      "observedPattern": "原卷以童謠中的星期與活動線索辨認日期；本題更換人物、事件與順序呈現方式，練習定位韻文中的時間資訊。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "把題目中的事件詞與韻文中的日期逐一配對，別被相鄰事件的先後順序帶走。",
+  "solutionSteps": [
+    "先確認要找的事件是「fill a pot」，不是選種、鬆土或冒芽。",
+    "沿著 Monday 到 Thursday 的順序讀事件清單。",
+    "找到與 fill a pot 同一句的日期 Wednesday。",
+    "檢查前後事件：Tuesday 是鬆土，Thursday 才是嫩芽出現。",
+    "因此選C；日期和事件必須來自同一行線索。"
+  ]
 }

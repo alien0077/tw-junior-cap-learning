@@ -2,23 +2,23 @@
   "id": "question-chinese-performance-4-iv-2-9",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列哪一項最能說明學習造字結構的目的？",
+  "prompt": "古文字與現代字形差異很大時，哪種方法最能避免誤判？",
   "options": [
     {
       "id": "A",
-      "text": "只靠部件猜答案，不必閱讀句子"
+      "text": "把現代部件直接當古代原始圖形"
     },
     {
       "id": "B",
-      "text": "把所有相似字當成同義字"
+      "text": "比較字形演變資料與構件功能，再以詞義和語境交叉確認"
     },
     {
       "id": "C",
-      "text": "只背部首名稱，不理解整字"
+      "text": "只計算筆畫數"
     },
     {
       "id": "D",
-      "text": "利用部件線索輔助辨認字音與字義，再以語境驗證"
+      "text": "看到不像圖畫就判定沒有關係"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "造字結構是輔助線索，仍要回到語境與工具驗證，不能取代完整理解。"
+    "value": "B",
+    "explanation": "文字演變會改變筆形與構件位置，需要結合歷史字形、功能、詞義與語境而非只看外觀。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國中 114 學年度下學期第一次段考三年級國文科試題卷；研究造字原則與形音義判讀能力方向（形音義整合）；另以官方語文領域課綱核對 4-Ⅳ-2（https://www.naer.edu.tw/upload/1/16/doc/806/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1(%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F%E2%94%80%E5%9C%8B%E8%AA%9E%E6%96%87).pdf）。本題為獨立改編，非原題重製。",
-    "authoringNote": "Safe adaptation; no source wording, options, passage, figure, or answer reproduced. Requires second-pass AI content review."
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "三所公立學校公開國文資料；只研究六書、形音義、構件功能、字形演變與造字查證。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，重新撰寫中文識字與寫字表現 Ab-Ⅳ-2 題；未複製原文、選項、篇章或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-performance-4-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-performance-4-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "六書、部件與字形證據",
+      "observedPattern": "公立學校國文評量以象形、指事、會意、形聲、假借、轉注、義符／聲符限制與古今字形演變要求依證據判讀造字原則；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC一%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "造字法、形音義與演變",
+      "observedPattern": "公立學校國文評量以象形、指事、會意、形聲、假借、轉注、義符／聲符限制與古今字形演變要求依證據判讀造字原則；本題採全新語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先查不同時期字形，再追蹤構件功能與語義，最後用現代詞語回讀驗證。",
+  "solutionSteps": [
+    "讀題定位：圈出「字形演變」與構件、字形演變、聲音線索、意義或字源資料。",
+    "拆解造字：先說明構件功能，再依「文字演變會改變筆形與構件位置，需要結合歷史字形、功能、詞義與語境而非只看外觀。」比較象形、指事、會意、形聲或借用。",
+    "核對正解：選項 B 能由字形、構件或歷史資料支持，且保留聲符／義符的限制。",
+    "排除誘答：檢查是否把現代外形當古文字、把聲符當讀音保證，或用單一構件直接決定整字。",
+    "回讀驗證：把造字判斷放回實際字形與詞語，確認形、音、義和語境沒有互相矛盾。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

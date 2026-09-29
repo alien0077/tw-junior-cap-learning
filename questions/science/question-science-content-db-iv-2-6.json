@@ -2,41 +2,67 @@
   "id": "question-science-content-db-iv-2-6",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年7月14日校園實驗室的觀察中，將 51 g 食鹽溶於 828 g 水，研究「Db-Ⅳ-2：循環系統的物質運輸與交換」時，溶液質量為何？",
+  "prompt": "把手臂上方綁緊後，靜脈較容易浮出以便抽血，最合理的原因是？",
   "options": [
     {
       "id": "A",
-      "text": "777 g"
+      "text": "束帶使紅血球在皮膚外製造，血管才會浮出"
     },
     {
       "id": "B",
-      "text": "42228 g"
+      "text": "束帶讓靜脈內血液全部流回心臟，所以血管變粗"
     },
     {
       "id": "C",
-      "text": "879 g"
+      "text": "束帶把血液改送進淋巴管，靜脈因此消失"
     },
     {
       "id": "D",
-      "text": "828 g"
+      "text": "束帶阻礙靜脈回流，使下游靜脈暫時充血，但動脈供血仍可進入"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-db-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "溶液質量為溶質加溶劑：51＋828＝879 g。 本題對應 KG「Db-Ⅳ-2：循環系統的物質運輸與交換」。"
+    "value": "D",
+    "explanation": "適度束帶可先阻礙較表淺靜脈回流，動脈血仍流入，使靜脈充血明顯；這也解釋了抽血常選表淺靜脈。選 D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的循環系統、物質運輸與微血管交換能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Db-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-db-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-db-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "循環系統、心臟血管、物質運輸與微血管交換判讀",
+      "pattern": "取由運輸路徑、血管功能與組織交換資料推論循環系統的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由運輸路徑、血管功能與組織交換資料推論循環系統的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "情境題用『進入量與離開量』比較，不把所有血管都當成同向受阻。",
+  "solutionSteps": [
+    "辨認題目觀察的是手臂表淺靜脈。",
+    "比較動脈流入與靜脈回流的方向。",
+    "確認回流受阻會造成局部血液暫時累積。",
+    "排除血液全回心臟、改進淋巴管與體外製造等說法。",
+    "所以選 D。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

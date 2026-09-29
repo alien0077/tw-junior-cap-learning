@@ -6,19 +6,19 @@
   "options": [
     {
       "id": "A",
-      "text": "一個符合條件的例子"
+      "text": "一個很大的偶數"
     },
     {
       "id": "B",
-      "text": "一個偶數反例，例如 4"
+      "text": "一個不是質數的偶數反例"
     },
     {
       "id": "C",
-      "text": "更多定義"
+      "text": "所有偶數的總和"
     },
     {
       "id": "D",
-      "text": "一張沒有數字的圖"
+      "text": "一個奇數質數"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "只要找到符合條件但不具結論的反例 4，即可否定全稱命題。"
+    "explanation": "全稱敘述只要有一個符合條件但不符合結論的例子就能推翻；4 是偶數但不是質數，故找反例，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 證明的意義 題型與官方課綱 KG kg-math-content-s-9-11",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供證明與推理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的證明能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-11"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-11",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "幾何證明的已知與求證、定理條件、直接推理、反例與量測證據界線",
+      "observedPattern": "公立學校公開數學試題常要求辨認條件與結論、選用定理、建立推理鏈及判讀反例是否足以否定全稱敘述；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "幾何證明的已知與求證、定理條件、直接推理、反例與量測證據界線",
+      "observedPattern": "公立學校公開數學試題常要求辨認條件與結論、選用定理、建立推理鏈及判讀反例是否足以否定全稱敘述；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考三年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "幾何證明的已知與求證、定理條件、直接推理、反例與量測證據界線",
+      "observedPattern": "公立學校公開數學試題常要求辨認條件與結論、選用定理、建立推理鏈及判讀反例是否足以否定全稱敘述；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "反駁『所有』時，要找同時滿足前件卻違反結論的單一例子。",
+  "solutionSteps": [
+    "辨認敘述含有『所有』。",
+    "列出反例需要滿足的偶數條件。",
+    "再找一個不是質數的偶數，例如 4。",
+    "確認 4 符合前件但不符合結論。",
+    "選 B。"
+  ]
 }

@@ -2,41 +2,62 @@
   "id": "question-science-content-cross-atoms-to-universe-2",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年12月7日河川觀測站的觀察中，將 93 g 食鹽溶於 783 g 水，研究「從原子到宇宙」時，溶液質量為何？",
+  "prompt": "某粒子式為 Ca(OH)₂。只計算一個式量單位中的原子個數，Ca、O、H 的比例為何？",
   "options": [
     {
       "id": "A",
-      "text": "690 g"
+      "text": "1：1：2"
     },
     {
       "id": "B",
-      "text": "72819 g"
+      "text": "1：2：2"
     },
     {
       "id": "C",
-      "text": "783 g"
+      "text": "2：1：2"
     },
     {
       "id": "D",
-      "text": "876 g"
+      "text": "1：2：1"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cross-atoms-to-universe"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：93＋783＝876 g。 本題對應 KG「從原子到宇宙」。"
+    "value": "B",
+    "explanation": "括號外的下標2會乘上括號內每一種原子的個數；鈣沒有括號所以是1，氧與氫各被乘2，比例為1：2：2。"
   },
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675416611615Uti9exJs.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第三次段考八年級理化試題卷",
+      "year": "111",
+      "subject": "science",
+      "locator": "printed page 2, question 11",
+      "observedPattern": "僅參考第11題的命題能力與推理結構；只依公開原卷指定題目研究粒子模型、化學式、原子組成與原子結構的命題模式；不重製題幹、選項、圖表或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675416611615Uti9exJs.pdf",
+    "sourceLocator": "臺北市立內湖國中公開原卷 printed page 2, question 11；只取題型與推理能力作 pattern-only 參考，題幹、選項、答案、圖表均重新創作。",
+    "authoringNote": "依官方課綱、Knowledge Graph 與公立學校公開試題的 item-level pattern-only 證據獨立改寫；沒有複製原題、選項、圖表或答案。題目維持 draft，尚待單元版本融合、內容與發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cross-atoms-to-universe"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-science-content-cross-atoms-to-universe",
+  "solutionStrategy": "由外往內分配括號下標，先寫出各元素的原子數，再依題目順序排列；不要把下標只乘到括號最後一個符號。",
+  "solutionSteps": [
+    "將式子分成 Ca 與括號內的 OH 兩部分，避免漏看括號範圍。",
+    "Ca 後沒有下標，因此一個單位含 1 個鈣原子。",
+    "括號外的 2 同時作用於 O 和 H，所以氧原子數是 1×2=2。",
+    "氫也在括號內，故氫原子數同樣是 1×2=2。",
+    "按 Ca、O、H 排列得到 1：2：2，對應 B；這是原子個數比，不是質量比。"
+  ]
 }

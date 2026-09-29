@@ -1,0 +1,70 @@
+{
+  "reportId": "a7-5-two-version-substantive-fusion-d329",
+  "date": "2026-09-27",
+  "lessonId": "lesson-math-content-a-7-5",
+  "curriculumId": "cur-math-content-a-7-5",
+  "knowledgeGraphId": "kg-math-content-a-7-5",
+  "status": "two-version-labeled-material-led-original-fusion-draft",
+  "fusionClassification": "two-version-labeled-third-party-material-read; rights-and-authenticity-unverified; nani-publisher-body-unread",
+  "sourceComparison": [
+    {
+      "sourceFamily": "Kanghsuan-labeled seventh-grade second-semester self-study handout, third-party share",
+      "locator": "https://www.scribd.com/document/777687263/國中-數學-基礎自學講義-康軒版-七下; printed pp.18-21 substitution, pp.28-29 elimination, pp.31-32 verbal modeling; read 2026-09-27",
+      "read": "The visible OCR progresses from substitution based on a known variable relation, through aligned coefficients and add/subtract choice for elimination, then to verbal-to-symbolic modeling. Parentheses and whole-expression handling are prominent instructional supports.",
+      "fusionDecision": "Build distinct original examples: a parenthesized substitution derivation, a coefficient-matched ticket system, and a separate transfer context. Teach strategy selection from equation structure and retain both original equations for verification.",
+      "limits": "Scribd marks All Rights Reserved. Uploader authority, edition authenticity, and reuse rights are unverified; visible OCR excerpts do not establish access to a complete publisher textbook."
+    },
+    {
+      "sourceFamily": "Hanlin-labeled seventh-grade second-semester textbook scan/OCR, third-party share",
+      "locator": "https://www.scribd.com/document/853352125/翰林國中數學七下課本; printed pp.22-30 vicinity for substitution/elimination, pp.41-47 vicinity for applications; read 2026-09-27",
+      "read": "The visible material distinguishes direct substitution from rearranging first, displays elimination with aligned image/symbol steps and whole-equation operations, then moves to sum, multiplicative-relation, and grouping applications with contextual interpretation.",
+      "fusionDecision": "Recompose the observable supports as a method-selection explanation, a separately authored scaled-equation example, and a final context-validity check. All numbers, contexts, prose, calculations, and diagnostics in the lesson are independently authored.",
+      "limits": "Scribd marks All Rights Reserved. Scanner/uploader authority, edition authenticity, and reproduction permission are unverified; page locators are based on visible OCR."
+    },
+    {
+      "sourceFamily": "Nani-aligned Junyi course map",
+      "locator": "https://www.junyiacademy.org/topics/n-m7b-c01-2; course tree labels it Nani-aligned and lists substitution then elimination with textbook page mapping; read 2026-09-27",
+      "read": "This is a third-party unit map and page crosswalk, not readable Nani publisher chapter text.",
+      "fusionDecision": "Use only as sequence/location context; make no Nani-specific teaching-method claim and retain Nani publisher evidence as pending.",
+      "limits": "Publisher body unread; platform alignment label does not authenticate or reproduce publisher chapter content."
+    }
+  ],
+  "synthesisTrace": [
+    {
+      "sourceInsight": "Kanghsuan-labeled handout separates substitution support, coefficient alignment, and verbal modeling into located stages.",
+      "lessonLocation": "content.sections[1]-[2], with the original parentheses example and method-choice criteria",
+      "originalDecision": "Teach substitution through a new system and preserve parentheses; contrast it with a new equal-coefficient ticket system so method choice is explained by structure."
+    },
+    {
+      "sourceInsight": "Hanlin-labeled OCR contrasts direct/rearranged substitution, visual-symbolic elimination, and later contextual applications.",
+      "lessonLocation": "content.sections[3]-[5], especially the independently authored scaled-coefficient derivation and sticker-pack transfer",
+      "originalDecision": "Translate the visual alignment idea into prose with aligned terms and whole-row reasoning; use different variables, values, contexts, and a context-validity checklist."
+    },
+    {
+      "sourceInsight": "Nani-aligned public course map lists substitution and elimination sequence but exposes no readable publisher body.",
+      "lessonLocation": "fusionRecord.versionDifferences, versionResearch and fusedScope.currentEvidenceStatus",
+      "originalDecision": "Treat this strictly as a locator/crosswalk and preserve Nani publisher slot as pending."
+    }
+  ],
+  "gates": {
+    "unitSpecificOriginalVisibleTeaching": "five substantive learner-visible sections; distinct substitution, matched-coefficient elimination, scaled-coefficient elimination, misconception diagnosis, and contextual transfer with worked arithmetic",
+    "sourceToDesignTrace": "each evidence family records URL/locator, observed support, limitations, visible lesson destination, and original authoring decision",
+    "kanghsuanPublisherBody": "not authenticated; third-party version-labeled handout excerpts read",
+    "hanlinPublisherBody": "not authenticated; third-party version-labeled textbook OCR excerpts read",
+    "naniPublisherBody": "not read; Nani-aligned course map only",
+    "publisherEvidenceSlots": "all pending; no promotion",
+    "lessonReviewStatus": "draft",
+    "specQaStatus": "untested",
+    "contentReview": "pending",
+    "commitPush": "not performed"
+  },
+  "validation": {
+    "jsonParsingAndSchema": "PASS: lesson/report JSON parsed; spec YAML parsed; validate_data.py passed 14,451 JSON files, 13,111 IDs, 1,032 KG nodes; draft records structurally validated only",
+    "targetedRegression": "PASS: node implementation/runtime/math-a-7-5-substantive-fusion.test.mjs",
+    "fullRuntimeSuite": "PASS: npm test; workbench full bundle traversal rendered 1,027/1,027 lessons",
+    "dataAndSpecValidation": "PASS: validate_data.py 14,451/13,111/1,032; validate_implementation_specs.py 1,027 specs, 0 errors, 1,027 pending",
+    "strictLessonIndependence": "PASS: 614 lessons inspected, 0 risks, 0 strict failures",
+    "diffCheck": "PASS: git diff --check",
+    "browser": "not scheduled: content/spec-only change; no runtime behavior changed"
+  }
+}

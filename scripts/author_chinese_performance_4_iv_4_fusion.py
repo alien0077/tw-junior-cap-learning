@@ -1,0 +1,49 @@
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/chinese/lesson-chinese-performance-4-iv-4.json"
+REPORT = ROOT / "implementation/reports/chinese-performance-4-iv-4-first-pass-review.json"
+
+
+def rec(name, locator, concepts, forms, misconception, assessment):
+    return {"publisher": name, "edition": f"{name} 公立校方國文課程計畫章節級證據", "sourceType": "public-web", "sourceLocator": locator, "reviewedAt": "2026-09-21", "findings": {"concepts": concepts, "representations": forms, "examplesOrEvidence": ["本課以篆、隸、楷、行、草書的原創觀察卡與碑帖賞析任務，僅承接公開課程的書體認識與審美方向。"], "misconceptions": [misconception], "assessmentEmphasis": [assessment]}, "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、篇章、題目、答案、影音或版面。"}
+
+
+def main():
+    data = json.loads(LESSON.read_text(encoding="utf-8"))
+    assert data["id"] == "lesson-chinese-performance-4-iv-4"
+    data["title"] = "4-Ⅳ-4：從筆畫、結構與時代線索讀懂書體"
+    data["content"] = {"summary": "欣賞碑帖不是猜作者或背書體名稱，而是先觀察可見的筆畫、結構、章法與刻寫媒材，再把這些證據和時代、用途、保存狀況及版本資訊連起來。篆、隸、楷、行、草各有常見特徵，但作品可能混合、受工具與摹刻影響，判斷要保留範圍。本課以原創書跡觀察卡與碑帖賞析任務，練習從視覺證據形成有根據的欣賞文字。", "sections": [{"heading": "先看作品再命名書體", "body": "觀察屈曲均勻、蠶頭燕尾、端正方整、牽絲連帶或快速簡省等線索，再提出可能書體。名稱是整理觀察的工具，不是看到一個特徵就能百分之百定案；還要檢查整件作品的字形與章法。"}, {"heading": "筆畫和結構要一起看", "body": "同樣的橫畫，在不同書體中可能有不同起收、粗細與速度；結構也會改變字面重心、疏密和欄列節奏。賞析時先描述看見什麼，再說它造成穩定、古拙、流動或緊張等感受，避免只貼形容詞。"}, {"heading": "碑刻不是原作透明窗", "body": "碑面磨損、刀刻、拓印、紙墨和翻刻都可能改變線條。看到斷裂或粗細不均時，先記錄現象，再判斷是書寫特徵還是保存／製作影響；作品年代、作者與版本也要依來源說明，不靠傳聞補齊。"}, {"heading": "欣賞要有證據和個人回應", "body": "好的賞析同時包含作品資訊、形式觀察、可能效果、文化脈絡與個人感受。感受可以不同，但要能指出支持感受的字例、行氣、留白、筆勢或整體章法，並承認自己未能確認的部分。"}]}
+    data["studyHighlights"] = ["以筆畫、結構、章法與媒材觀察作為書體判斷線索。", "先描述可見形式，再說明視覺效果與個人感受。", "區分書寫特徵、碑刻／拓印保存影響與作者／年代來源。", "賞析文字同時包含作品資訊、證據、文化脈絡、感受與不確定性。"]
+    data["teaching"] = {"body": [
+        {"id": "hook", "phase": "hook", "heading": "一個『像隸書』的字跡夠不夠？", "body": "把五張原創書跡觀察卡只遮住書體名稱，請學習者先畫出線條、字面重心、連接和章法證據，再排出可能性。比較只說『很古典』和能指出具體筆畫的描述，建立先觀察後命名的習慣。"},
+        {"id": "explain", "phase": "explain", "heading": "書體觀察四鏡頭", "body": "依序看單筆的起收與粗細、字內構件的重心與疏密、字與字的行氣章法、作品的媒材與來源。四鏡頭形成的是證據鏈；若只靠一個特徵或作品縮圖，應把結論寫成可能而非確定。"},
+        {"id": "worked-example", "phase": "worked-example", "heading": "從線條走到賞析句", "body": "對一件端正方整的原創楷書觀察，先寫『橫畫起收清楚、字距均衡、重心穩定』，再推論閱讀節奏較安定，最後補上自己的感受。每一個感受都回扣至少一項形式證據，不用空泛的『漂亮』結束。"},
+        {"id": "guided-practice", "phase": "guided-practice", "heading": "辨認拓印造成的差異", "body": "同一假想碑帖提供清晰拓片與磨損拓片，請學習者圈出斷線、墨色與刀痕差異，再判斷哪些不能直接當成書寫速度或筆力的證據。最後查作品資訊，將版本與保存限制寫入賞析。"},
+        {"id": "transfer", "phase": "transfer", "heading": "把碑帖賞析寫給不同讀者", "body": "同一件作品分別寫給初學者、書法社同伴與校展觀眾：初學者需要術語解釋，同伴需要筆畫與章法證據，觀眾需要短而清楚的文化背景。三版都要保留來源、觀察、感受與未確認範圍。"},
+        {"id": "reflect", "phase": "reflect", "heading": "回看自己是否用標籤代替觀察", "body": "圈出賞析稿中只寫書體名稱、年代或『有氣勢』的句子，改補可見筆畫、字形、行氣或留白證據。若來源不確定，刪除過度肯定的作者／年代說法，保留查詢線索和個人感受的界線。"},
+    ], "summary": ["先觀察筆畫、結構、章法與媒材，再提出書體可能性。", "將形式描述連到視覺效果與個人感受，避免只貼形容詞。", "區分書寫特徵和碑刻、拓印、磨損、翻刻造成的影響。", "以來源、證據、文化脈絡、感受與不確定性完成碑帖賞析。"], "exitCheck": [{"prompt": "為什麼不能看到一個特徵就確定書體？", "expectedEvidence": "能指出需檢查整件作品的筆畫、結構、章法、媒材與來源，並保留混合或保存影響的不確定性。"}, {"prompt": "如何把『很有氣勢』寫成有證據的賞析？", "expectedEvidence": "能指出筆勢、粗細、重心、行氣、留白或章法，再說明它如何造成視覺效果與個人感受。"}, {"prompt": "拓片磨損時，哪些結論要特別謹慎？", "expectedEvidence": "能區分斷線、墨色、刀痕等製作／保存現象與書寫特徵，並依來源和版本資訊限制作者／年代判斷。"}]}
+    data["interactive"] = {"type": "guided-choice", "goal": "以筆畫、結構、章法、媒材與來源證據進行書體判讀和碑帖賞析。", "scenario": "從原創書跡觀察卡與不同拓片版本出發，逐步描述、推論、核對並寫賞析。", "variables": [{"symbol": "s", "meaning": "書體形式"}, {"symbol": "m", "meaning": "媒材與保存"}, {"symbol": "e", "meaning": "來源與賞析證據"}], "steps": [
+        {"id": "step-1", "prompt": "觀察字形屈曲、線條均勻且結構對稱的古代書跡，哪項判斷最適切？", "options": ["可先提出篆書等可能性，再用整件作品、章法與來源交叉核對", "只要屈曲就能確定作者與年代", "只看一個字的形狀便判定所有書體特徵"], "answer": "A", "feedback": "A 把視覺特徵當線索而非絕對答案，保留整體與來源核對。"},
+        {"id": "step-2", "prompt": "完成碑帖賞析，哪套流程最完整？", "options": ["先記作品資訊，再描述筆畫／結構／章法，連結效果與感受，最後標示來源和限制", "只寫書體名稱與喜不喜歡", "只背作者年代，不描述眼前形式"], "answer": "A", "feedback": "A 讓個人感受回到形式證據與作品來源，不用標籤取代觀察。"},
+        {"id": "step-3", "prompt": "看到磨損拓片的斷線與粗細不均，應如何處理？", "options": ["先記錄保存／拓印現象，查版本與來源，再謹慎判斷哪些可能是書寫特徵", "直接把每個斷線都當成快速筆勢", "刪除看不清楚的部分再下確定結論"], "answer": "A", "feedback": "A 區分作品形式與媒材限制，避免把保存問題誤讀成書寫證據。"},
+    ]}
+    data["authoringStandard"] = "version-fused-v1"
+    data["updatedAt"] = "2026-09-21"
+    data["versionResearch"] = [
+        rec("nani", "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf；國語文書寫、書法欣賞與文化表達定位；核讀 2026-09-21。", ["認識文字書寫與書法表現，能以適切語言欣賞。", "書法理解需連結形式觀察與文化脈絡。"], ["筆畫、結構、章法、書體、作品資訊與感受。"], "只背書體名稱或把喜歡與否當成完整欣賞。", "評量書體辨識、形式描述、欣賞表達與文化理解。"),
+        rec("kanghsuan", "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf；國語文書法、碑帖與審美活動定位；核讀 2026-09-21。", ["透過觀察、比較與討論理解書體、筆勢和作品風格。", "欣賞表達需提出理由並回應不同觀點。"], ["觀察卡、作品比較、碑帖、筆勢、行氣與回饋。"], "把某一書體的單一特徵套用所有作品，忽略混合與媒材。", "重視形式證據、比較、審美回應與修正。"),
+        rec("hanlin", "https://www.msjh.ntpc.edu.tw/uploads/1691978949408RP7cOuyZ.pdf；國文書體、碑帖與書法評量定位；核讀 2026-09-21。", ["從文字形體、書體、章法與作品背景理解書法。", "賞析需區分可見形式、文化資訊與個人感受。"], ["書體特徵、媒材、拓印、版本、來源、章法與賞析文字。"], "把拓片磨損、傳聞作者或年代當成確定的形式事實。", "要求觀察有根據、來源有範圍、感受能回扣作品。"),
+    ]
+    data["fusionRecord"] = {"commonCore": ["三版本公開結構共同支持書體認識、書法欣賞、形式觀察與文化表達。", "筆畫、結構、章法、作品背景與個人感受需要互相連結。", "賞析要以可見證據和來源界線支撐，不把標籤或傳聞當結論。"], "versionDifferences": ["南一較突顯書寫、書法欣賞與文化表達；康軒較突顯觀察、比較、碑帖與討論回饋；翰林較突顯書體、章法、媒材、版本與證據範圍。這是公開課程計畫層級差異，不宣稱完整教材差異。"], "originalAdditions": ["以書跡觀察卡先描述後命名書體。", "以清晰與磨損拓片區分形式和保存影響。", "以三種讀者改寫碑帖賞析並保留來源與不確定性。"], "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織書體特徵、筆畫結構、章法、碑帖媒材、來源與賞析文字。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    data["teaching"]["body"][1]["body"] += " 對每個推論都標記是單字、整行或整件作品的證據，若縮圖或拓片資訊不足，就把判斷寫成可能並說明需要補看的資料。"
+    data["teaching"]["body"][3]["body"] += " 再把兩張拓片的差異分成可由媒材解釋、仍需查證、以及可以保留為形式線索的三欄，避免把影像品質直接翻譯成作者的筆力或書寫速度。"
+    data["teaching"]["body"][5]["body"] += " 交換稿件時請讀者只根據描述找出對應形式，若找不到，就補寫字例、行氣或留白位置，而不是用更抽象的讚美詞掩蓋缺口。"
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit": "4-Ⅳ-4：從筆畫、結構與時代線索讀懂書體", "lessonId": data["id"], "status": "first-pass-ai-review-complete", "reviewStatus": "draft", "checks": {"unitSpecificOriginalContent": True, "threeVersionResearchRecords": True, "fusionRecordPresent": True, "interactivePredictionManipulationExplanation": True, "answersAndDetailedSteps": True, "terraSecondPass": "pending"}, "reviewedAt": "2026-09-21"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("authored chinese performance 4-iv-4")
+
+
+if __name__ == "__main__":
+    main()

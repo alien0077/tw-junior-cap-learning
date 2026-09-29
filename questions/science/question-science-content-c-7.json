@@ -2,23 +2,23 @@
   "id": "question-science-content-c-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年3月3日學校研究社的觀察中，將 59 g 食鹽溶於 976 g 水，研究「C：物質的結構與功能」時，溶液質量為何？",
+  "prompt": "CO 與 CO₂ 都含碳、氧，卻是不同物質，最主要原因是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "1035 g"
+      "text": "兩者原子種類比例不同，形成不同的粒子結構"
     },
     {
       "id": "B",
-      "text": "917 g"
+      "text": "兩者只差樣品顏色"
     },
     {
       "id": "C",
-      "text": "57584 g"
+      "text": "兩者一定含有不同元素"
     },
     {
       "id": "D",
-      "text": "976 g"
+      "text": "CO₂ 沒有任何原子"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,42 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "溶液質量為溶質加溶劑：59＋976＝1035 g。 本題對應 KG「C：物質的結構與功能」。"
+    "explanation": "兩者元素種類相同，不代表物質相同。 所以選 A。 正確答案：A。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的粒子模型、物質結構與性質能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 C 單元重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-c"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-c",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "粒子模型、物質組成、結構與性質資料判讀",
+      "pattern": "取由微觀結構、物性／化性與實驗證據推論物質功能的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由微觀結構、物性／化性與實驗證據推論物質功能的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "比較化學式中的原子種類與數量比例。",
+  "solutionSteps": [
+    "CO 含一個碳和一個氧。",
+    "CO₂ 含一個碳和兩個氧。",
+    "粒子組成比例不同會形成不同結構與性質。",
+    "兩者元素種類相同，不代表物質相同。",
+    "所以選 A。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

@@ -1,0 +1,39 @@
+{
+  "asOf": "2026-09-28",
+  "unit": "lesson-english-performance-7-iv-2",
+  "scope": "保留既有單元專屬教學與五步互動，補記原創融合稿並修復雙正文造成的學生頁重複；不重做既有稿、不審核題庫。",
+  "beforeAndAfter": {
+    "before": "原 lesson 已有六段背景知識教學、六段teaching.body及五步ReadingStrategyLab，內容皆非泛用占位；但兩組段落標題／正文不同，學生頁會把兩組都顯示，且缺少versionResearch與fusionRecord，未列入稿件名冊。",
+    "after": "保留並採用既有teaching.body六段作為學生稿，將content.sections對齊以避免重複呈現；新增三版本研究界線與fusionRecord，規格來源、互動與已驗收狀態同步更新。"
+  },
+  "curriculumAndFusionBasis": {
+    "officialIndicator": "7-Ⅳ-2：善用相關主題背景知識，以利閱讀或聽力理解。",
+    "knowledgeGraphId": "kg-english-performance-7-iv-2",
+    "officialLocator": "國教院英語課綱，7-Ⅳ-2；課程說明和評量以KG與官方指標為事實依據。",
+    "nani": "泰山高中國中部112學年度課程計畫PDF pp.21–23定位南一七年級Lesson 4及7-Ⅳ-2，摘要暖身／圖片預測、聽讀回查與理解檢核；校方二手章節定位，不是課本全文。",
+    "hanlin": "永慶高中國中部114學年度計畫PDF p.22（web PDF index 21），第八週七上Unit 3 ‘Open the magic door’列翰林第1–2冊、標誌／規範與7-Ⅳ-2，並列標示理解、圖片／聽力、漫畫閱讀與整理活動；是校方課程規劃，不歸因出版社。",
+    "kanghsuan": "基隆市公開教案PDF p.1記錄康軒九年級第五冊Lesson 6，圖片／標題引入野火背景知識後回到閱讀問題及問題—解決圖；作跨年級教學策略參照，不當成七年級出版社章節證據。",
+    "claimBoundary": "各來源的年級、課次、資料類型及權利邊界均明列；沒有把校方計畫／教案說成出版社課本全文，也沒有虛構三版教材全文差異。原lesson提供的完整六段和五步互動依課綱、KG及可取得證據重組，內容維持draft交使用者ChatGPT審查。"
+  },
+  "workCompleted": [
+    "盤點確認原有兩組內容都是單元專屬且完整，不重新生成或丟棄其中一組；選定現有teaching.body作學生稿並將content.sections逐段對齊，消除網站重複呈現。",
+    "補三家來源的versionResearch、fusionRecord共同概念／可核實差異／原創增補及融合說明，修正翰林來源定位：實際可定位至七上Unit 3與標誌／規範，而不只泛稱課綱代碼。",
+    "維持原創Mina種子交換與陌生food shelf公告，以及五步ReadingStrategyLab；調整正解位置避免五題答案全部集中於A。",
+    "spec保留ReadingStrategyLab實際元件並補強來源差異說明、單元測例及QA狀態；新增Node與Playwright回歸及npm命令。",
+    "未改任何question JSON，未重寫已登錄融合稿，未進行教材內容審查，沒有子任務。"
+  ],
+  "verification": {
+    "targetNode": "PASS: npm run test:english:7-iv-2。",
+    "fullNpmTest": "PASS: npm test完整執行，包含既有pretest、單元測試與工作台全課遍歷1,027/1,027；D-405目標Node回歸另行PASS。",
+    "browser": "PASS: Python Playwright 1.58.0實際學生頁六段、五步ReadingStrategyLab；鍵盤錯答提示／逐題答對／完成狀態、axe 0 violations／0 incomplete、320/375/768px無水平溢位、封鎖1個外部請求、0 page errors。首輪測試錯用一般GuidedChoice的DOM選擇器找ReadingStrategyLab，已依實際元件DOM修正測試，非產品缺陷。",
+    "playwrightRuntime": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3；Playwright 1.58.0；Chromium revision 1208存在。本機8765既有服務成功提供頁面；測試於授權Chrome環境完成。",
+    "siteIndex": "PASS: 重建並check；1,052 lessons、10,566 questions、40 mapping sets。",
+    "dataValidation": "PASS after report was added: 14,517 JSON、13,114 IDs、1,032 KG nodes；lesson與question均保留draft，不以Schema通過冒稱內容審查。",
+    "implementationSpecs": "PASS: 1,027 specs、0 errors、16 eligible、1,011 pending。",
+    "publicExamLedger": "沿用D-402最近核驗10,566/10,566 recorded、pending 0；本單元與本輪未改題，不重跑完整題源帳本。",
+    "authoredFusionInventory": "739/791 = 93.43%；learning-content 583/583，learning-performance 156/208；52課尚未登記。只計具六段以上teaching.body及非空fusionRecord的稿件，不代表ChatGPT審查完成。",
+    "diffCheck": "PASS: 本課lesson、spec、Node／Playwright regression及npm命令的作用範圍。"
+  },
+  "subtasks": "none",
+  "commitPush": "not performed; overall objective remains incomplete"
+}

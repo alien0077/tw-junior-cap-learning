@@ -2,23 +2,23 @@
   "id": "question-science-content-ib-iv-1-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年8月5日河川觀測站的觀察中，針對「Ib-Ⅳ-1：氣團及其性質」提出可檢驗的科學問題，若比較 5 組、每組取樣 15 份資料，哪一項設計最適當？",
+  "prompt": "若要判斷一團空氣的性質是否在移動途中改變，哪種研究設計較可靠？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Ib-Ⅳ-1：氣團及其性質」時同時改變施力大小與另一個條件，卻不記錄方法"
+      "text": "只在一個地點觀察一次雲形"
     },
     {
       "id": "B",
-      "text": "研究「Ib-Ⅳ-1：氣團及其性質」時只測量5組中的一組就直接下結論"
+      "text": "每個測站使用不同單位且不記錄時間"
     },
     {
       "id": "C",
-      "text": "研究「Ib-Ⅳ-1：氣團及其性質」時先決定結論，再挑選支持結論的15筆資料"
+      "text": "看到降雨後才挑選支持假說的資料"
     },
     {
       "id": "D",
-      "text": "研究「Ib-Ⅳ-1：氣團及其性質」時只改變施力大小，其餘條件一致，設置5組、每組取樣15份並各重複測量5次"
+      "text": "沿移動路線設多個測站，連續記錄溫度、濕度、氣壓與風向並控制時間差"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "D",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Ib-Ⅳ-1：氣團及其性質」。"
+    "explanation": "D。應沿移動路徑設多站、連續測量溫度露點風向與降水，並比較源區與途中資料，才能分辨空氣本身變化和地形／鋒面效應。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題中的氣團源區、溫度、濕度、密度、冷暖氣團、鋒面與測站資料能力；本題改寫為氣團原創情境。",
+    "authoringNote": "依官方課綱 KG 與公立國中公開試題能力方向獨立改寫，未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ib-iv-1"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-ib-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
+      "title": "高雄市立鹽埕國民中學公開自然科段考；只取氣團形成地區、溫度、濕度與密度的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "氣團形成地區、溫度、濕度與密度",
+      "observedPattern": "公開自然科評量常要求連結氣團源區、溫度、濕度、密度、冷暖氣團、鋒面與測站資料；本題以全新氣象判讀情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1738658165906utzaMLG4.pdf",
+      "title": "臺北市立內湖國民中學公開自然科段考；只取海洋大陸氣團、測站資料與天氣變化的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "海洋大陸氣團、測站資料與天氣變化",
+      "observedPattern": "公開自然科評量常要求連結氣團源區、溫度、濕度、密度、冷暖氣團、鋒面與測站資料；本題以全新氣象判讀情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E8%87%AA%E7%84%B6%E7%A7%91.pdf",
+      "title": "高雄市立國昌國民中學公開自然科試題；只取冷暖氣團、鋒面、風向與證據界線的題型與推理方向，未複製原題、選項、圖表、答案或版面。",
+      "year": "113-114",
+      "subject": "science",
+      "locator": "冷暖氣團、鋒面、風向與證據界線",
+      "observedPattern": "公開自然科評量常要求連結氣團源區、溫度、濕度、密度、冷暖氣團、鋒面與測站資料；本題以全新氣象判讀情境重寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "設多站連續觀測並記錄風向、露點、降水與地形位置。",
+  "solutionSteps": [
+    "圈出氣團源區、停留時間、溫度、露點、濕度、密度、風向與降水資料。",
+    "由海洋／大陸與低／高緯度預測冷暖乾濕，再用多站連續資料核對。",
+    "區分氣團性質、移動途中變化與冷暖氣團交界鋒面。",
+    "比較直接觀察、合理推論和地形、降雨、鋒面等替代解釋。",
+    "回查資料時間尺度、測站位置與結論適用範圍，避免由單一讀值作出天氣定論。"
+  ]
 }

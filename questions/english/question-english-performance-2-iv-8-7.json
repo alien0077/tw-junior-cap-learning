@@ -2,23 +2,23 @@
   "id": "question-english-performance-2-iv-8-7",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "For a「2-Ⅳ-8／正確發音重音語調說基本句」task, what is the best way to prepare question 7?",
+  "prompt": "You asked for the brass key, but your partner hands you the wooden one. To repair the misunderstanding, which delivery emphasizes the requested material?",
   "options": [
     {
       "id": "A",
-      "text": "Read the instructions, identify the evidence, and explain the answer about 2-Ⅳ-8／正確發音重音語調說基本句."
+      "text": "I asked for the key."
     },
     {
       "id": "B",
-      "text": "Choose an answer before reading any information about 2-Ⅳ-8／正確發音重音語調說基本句."
+      "text": "I asked for the BRASS key, not the wooden one."
     },
     {
       "id": "C",
-      "text": "Copy a classmate's response without checking 2-Ⅳ-8／正確發音重音語調說基本句."
+      "text": "The key is beside the bowl."
     },
     {
       "id": "D",
-      "text": "Ignore the evidence and use only a guess about 2-Ⅳ-8／正確發音重音語調說基本句."
+      "text": "Could you bring it tomorrow?"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "A reliable learning strategy uses the instructions and evidence before explaining a conclusion. This item targets 2-Ⅳ-8／正確發音重音語調說基本句, question 7."
+    "value": "B",
+    "explanation": "誤會在於鑰匙材質，brass 與 wooden 才是對比資訊。把主要重音放在 BRASS，能立即指出應拿黃銅鑰匙，而不是木製鑰匙。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://web.dgjh.tyc.edu.tw/asp/exam/upload/100%E5%AD%B8%E5%B9%B4%E5%BA%A6%E5%85%AB%E5%B9%B4%E7%B4%9A%E4%B8%8A%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%9C%88%E8%80%83%E5%AD%B8%E7%94%9F%E9%A1%8C%E7%9B%AE%E5%8D%B7.pdf",
+    "sourceLocator": "桃園市立大崗國中公開原卷 PDF page 1, listening-response question 7；只取聽辨／口語任務模式，不重製原卷內容。",
+    "authoringNote": "依官方英語課綱、Knowledge Graph 與公立學校公開英語試題的精確 item-level pattern-only 證據獨立創作；未複製原題、選項、音檔、圖像或答案。題目維持 draft，尚待版本研究與完整內容發布審查。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-2-iv-8"
+  "updatedAt": "2026-09-24",
+  "lessonId": "lesson-english-performance-2-iv-8",
+  "examPatternRefs": [
+    {
+      "url": "https://web.dgjh.tyc.edu.tw/asp/exam/upload/100%E5%AD%B8%E5%B9%B4%E5%BA%A6%E5%85%AB%E5%B9%B4%E7%B4%9A%E4%B8%8A%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%9C%88%E8%80%83%E5%AD%B8%E7%94%9F%E9%A1%8C%E7%9B%AE%E5%8D%B7.pdf",
+      "title": "桃園市立大崗國中100學年度上學期八年級第二次月考英文科考題",
+      "year": "100-1",
+      "subject": "english",
+      "locator": "PDF page 1, listening-response question 7",
+      "observedPattern": "只參考第7題的聽辨／口語任務型態與語音資訊處理方式；只參考原卷第1、3題聽音選字詞及第6至10題聽辨合宜回應的任務形式；未複製字詞、對話、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "對比重音放在被更正、且能區分兩個候選物的資訊；朗讀前先指出對比軸是材質，而不是物件或時間。",
+  "solutionSteps": [
+    "眼前的誤會不是拿錯物件，而是同一種鑰匙有 brass 與 wooden 兩種材質。",
+    "句子後半 not the wooden one 已建立對照，因此 brass 是最能修正誤解的新資訊。",
+    "把主要重音落在 BRASS，並在 wooden 上保留次要對比，聽者會立刻知道要替換材質。",
+    "A 只重複 key，沒有提供區別；C 談位置；D 改問時間，都無法修正拿錯材質。",
+    "所以選 B；若改重讀 key，聽者可能只聽成物件種類，而不知道錯在材質。"
+  ]
 }

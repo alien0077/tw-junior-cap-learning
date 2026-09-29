@@ -2,23 +2,23 @@
   "id": "question-social-content-civ-bl-iv-3-4",
   "subject": "social",
   "type": "single-choice",
-  "prompt": "在2023年9月2日社區資料中心的資料中，社區有 80 萬元預算處理「公 Bl-Ⅳ-3：以機會成本解釋選擇」，居民意見不同。哪項決策方式較適當？",
+  "prompt": "市府把同一筆預算優先投入防洪工程，放棄公園整修。下列哪項能支持『這是有效率的選擇』？",
   "options": [
     {
       "id": "A",
-      "text": "公開「公 Bl-Ⅳ-3：以機會成本解釋選擇」方案、成本與受影響對象，蒐集意見後依規則決定"
+      "text": "資料顯示防洪可避免的損失高於公園整修效益，且比較單位與期間一致"
     },
     {
       "id": "B",
-      "text": "只採納聲量最大者且不公開資料"
+      "text": "只要防洪工程名稱較重要，就不必比較公園效益"
     },
     {
       "id": "C",
-      "text": "先決定結果再挑選支持數據"
+      "text": "只要多數人喜歡防洪，就代表沒有任何被放棄的代價"
     },
     {
       "id": "D",
-      "text": "排除少數受影響居民以加快決定"
+      "text": "公園沒有施工，所以其價值必然是零"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "公共決策應資訊公開、納入受影響者並說明規則與取捨。 本題對應 KG「公 Bl-Ⅳ-3：以機會成本解釋選擇」。"
+    "explanation": "效率判斷要有可比較資料與限制條件；放棄公園整修仍是需要說明的機會成本。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考社會科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf",
+    "sourceLocator": "國立卓蘭高中附設國中部公開社會課程計畫；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "依官方課綱、單元 KG、三個公立學校公開來源的題型方向，獨立改寫個人、家庭、企業、政府與不同立場以機會成本解釋選擇、誘因、效率、公平及資料界線；未複製原文、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-social-content-civ-bl-iv-3"
+  "updatedAt": "2026-09-09",
+  "lessonId": "lesson-social-content-civ-bl-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://affairs.kh.edu.tw/1126/upload/file_list/149",
+      "title": "高雄市立文府國中社會科公開試題與解答入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "生活經濟與替代方案",
+      "observedPattern": "公立學校社會科公開試題以生活選擇、替代方案、誘因與公共資料考查經濟推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.dwm.kh.edu.tw/view/index.php?MainMenuId=64182&MainType=0&SubMenuId=64184&SubType=104&WebID=344",
+      "title": "高雄市立大灣國中公開段考試題入口；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "social",
+      "locator": "誘因、資源與公共決策",
+      "observedPattern": "公立學校社會科公開試題以生活選擇、替代方案、誘因與公共資料考查經濟推理；本題重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先找出決策者與真正稀少的資源，再列出同一限制下的替代方案，找出次佳用途並檢查誘因、公平、立場與資料是否改變解釋。",
+  "solutionSteps": [
+    "讀題定位：圈出「政府選擇」以及決策者、稀少資源、選定方案、未選方案與條件。",
+    "建立比較表：列出可行替代方案並依該決策者的價值與限制排序；本題核心是「效率判斷要有可比較資料與限制條件；放棄公園整修仍是需要說明的機會成本。」",
+    "核對正解：選項 A「資料顯示防洪可避免的損失高於公園整修效益，且比較單位與期間一致」能用題幹資料解釋選擇，而不是只重複結果。",
+    "排除誘答：檢查是否把所有未選項目、價格、總效益、多數意見或單一偏好直接當成機會成本。",
+    "結論回查：確認新資訊、不同立場、誘因、公平與資料缺口是否會改變結論，並避免過度外推。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

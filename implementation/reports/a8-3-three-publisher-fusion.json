@@ -1,0 +1,48 @@
+{
+  "unitId": "A-8-3",
+  "lessonId": "lesson-math-content-a-8-3",
+  "reviewedAt": "2026-09-27",
+  "status": "substantive-fusion-draft",
+  "reviewStatus": "draft",
+  "materials": [
+    {
+      "publisherAssociation": "nani",
+      "material": "南一版八上基礎自學講義網路分享本",
+      "locator": "Extracted pp.24–25: area/cardboard representation of like terms, then horizontal and vertical addition, subtraction, sign handling and descending-order practice",
+      "url": "https://www.scribd.com/document/827691143/%E5%9C%8B%E4%B8%AD-%E6%95%B8%E5%AD%B8-%E5%9F%BA%E7%A4%8E%E8%87%AA%E5%AD%B8%E8%AC%9B%E7%BE%A9-%E5%8D%97%E4%B8%80%E7%89%88-%E5%85%AB%E4%B8%8A",
+      "authorityLimit": "Shared handout, not a licensed publisher master; page numbering is the shared copy's internal numbering"
+    },
+    {
+      "publisherAssociation": "kanghsuan",
+      "material": "Clearnote author-created public student notes, author labels Kanghsuan D edition",
+      "locator": "Pages 3–4: like-term criterion, horizontal/vertical addition and subtraction, missing-term zero alignment, then separate multiplication/division layouts",
+      "url": "https://www.clearnotebooks.com/zh-TW/notebooks/2564097",
+      "authorityLimit": "Student-authored notes, not official Kanghsuan textbook or publisher teaching guidance"
+    },
+    {
+      "publisherAssociation": "hanlin",
+      "material": "Hanlin 8th-grade first-semester workbook shared publicly on Scribd",
+      "locator": "Pages 8–15: 1-2 warm-up/basic/proficiency progression and 1-3 multiplication/division section boundary and exercises",
+      "url": "https://www.scribd.com/document/940002579/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E6%95%B8%E5%AD%B8%E5%85%AB%E4%B8%8A%E7%BF%92%E4%BD%9C",
+      "authorityLimit": "Shared workbook, not a licensed publisher master; complete textbook prose was unavailable"
+    }
+  ],
+  "synthesis": [
+    "Corrected the previous version research, which had conflated a school plan with publisher-specific teaching evidence; school plans remain separately identified in publisherResearch.",
+    "Connected concrete like-term grouping, symbolic coefficient alignment, sign distribution, tiered practice and operation-specific checks in a newly authored lesson path.",
+    "Added a complete quadratic-by-linear division example with long-division steps and multiplication-back verification, while retaining the lesson's independently authored addition/subtraction and multiplication cases."
+  ],
+  "checks": {
+    "lessonSchema": "pass; 0 errors",
+    "wholeDataValidation": "pass; 14,437 JSON files, 13,111 IDs, 1,032 KG nodes",
+    "versionFusionContractAudit": "pass; 1,056 lessons scanned, 0 structural contract failures (contract checks presence, not substantive quality)",
+    "strictLessonIndependence": "pass; 614 learning-content lessons, 0 risks, 0 affected references, 0 failures",
+    "npmTest": "pass; includes interactive renderer, responsive and full 1,027-unit workbench traversal",
+    "releaseGate": "not passed; lesson and linked questions remain draft; subject-content and publication QA remain incomplete"
+  },
+  "remainingForUnit": [
+    "Check edition/date and publisher-authored content if it becomes legally accessible; current sources are shared third-party materials.",
+    "Complete subject-correctness, copyright-boundary and linked-question answer/content review before any status promotion.",
+    "Reconcile the lesson's actual-source evidence with its chapter evidence/spec ledger; do not count structural fusion fields as content approval."
+  ]
+}

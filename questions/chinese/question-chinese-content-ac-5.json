@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ac-5",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "下列句子，何者最能清楚表達「因為下雨，所以活動延期」的因果關係？",
+  "prompt": "下列哪一句的「這項決定」指涉最清楚，不會讓讀者猜測它指什麼？",
   "options": [
     {
       "id": "A",
-      "text": "雖然下雨，但是活動延期。"
+      "text": "學校取消操場夜間照明，學生會議也討論了許多事情；這項決定很重要。"
     },
     {
       "id": "B",
-      "text": "因為下雨，所以活動延期。"
+      "text": "學校取消操場夜間照明後，學生會議決定改在圖書館開會；這項決定將從下週開始實施。"
     },
     {
       "id": "C",
-      "text": "不但下雨，而且活動延期。"
+      "text": "小華告訴小美她已經完成報告，這項決定讓大家放心。"
     },
     {
       "id": "D",
-      "text": "只要下雨，活動就已經延期。"
+      "text": "校長和老師討論活動，這項決定後來被改了。"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ac"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "B以因為……所以……明確連結原因與結果；其餘關係不符合題意。"
+    "explanation": "第一句在前文明確交代「改在圖書館開會」且單獨成為可執行的決定，讀者較能鎖定指涉；其他句子保留多個可能對象。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "複句、語意關係判讀；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編句段內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ac"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ac",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "句型、標點與語意判讀",
+      "observedPattern": "公立學校國文公開試題常以標點、句型、連接詞、語意銜接與短文理解檢查句段組織能力；本題改以校園編修情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "句子組織、連接詞與閱讀理解",
+      "observedPattern": "公立學校國文公開試題常以標點、句型、連接詞、語意銜接與短文理解檢查句段組織能力；本題改以校園編修情境重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先辨認句段功能，再用標點、連接詞、指代與因果／條件關係畫出語意鏈，最後檢查改寫或推論是否超出原文證據。",
+  "solutionSteps": [
+    "讀題定位：圈出「指代清楚」與句段中的關鍵詞，先確認題目要判斷語氣、句型功能、邏輯關係、指代或推論範圍。",
+    "畫出關係：標記主語、述語、標點、連接詞與前後句功能，檢查它們是否支持同一個意思；本題核心是「第一句在前文明確交代「改在圖書館開會」且單獨成為可執行的決定，讀者較能鎖定指涉；其他句子保留多個可能對象。」",
+    "核對正解：選項 A「學校取消操場夜間照明後，學生會議決定改在圖書館開會；這項決定將從下週開始實施。」能完整符合題目要求，且前後語意可以連續解釋。",
+    "排除誘答：逐項檢查標點是否造成錯誤語氣、連接詞是否換了邏輯、代詞是否無所指，或選項是否超出原文證據。",
+    "結論回查：把答案放回完整句段朗讀，確認讀者能知道資訊、關係與行動；若文本未提供資料，明確說出不能推出的部分。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

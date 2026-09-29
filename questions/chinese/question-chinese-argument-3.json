@@ -2,23 +2,23 @@
   "id": "question-chinese-argument-3",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "某文寫道：「這家店一定是全市最好吃，因為我的朋友都喜歡。」最適合的批判是？",
+  "prompt": "文章寫「這家店一定是全市最好吃，因為我的三位朋友都喜歡」；最適切的批判是？",
   "options": [
     {
       "id": "A",
-      "text": "朋友的偏好未必能代表全市，論據不足以支持普遍結論。"
+      "text": "這只能說明受訪朋友的偏好，不能判斷其他消費者的看法。"
     },
     {
       "id": "B",
-      "text": "句子沒有使用標點符號。"
+      "text": "喜好屬主觀感受，因此任何人的喜好都不能成為論據。"
     },
     {
       "id": "C",
-      "text": "只要朋友人數超過三人就能證明。"
+      "text": "朋友偏好未必代表全市，少數經驗不足以支持普遍結論。"
     },
     {
       "id": "D",
-      "text": "飲食不能成為議論題材。"
+      "text": "只要三位朋友的說法一致，就足以代表全市多數消費者。"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "少數朋友的偏好不足以推出「全市最好吃」的普遍結論。"
+    "value": "C",
+    "explanation": "三位朋友是小而可能偏向同一圈子的樣本，不能推出全市『一定最好吃』；最多只能說這三人有正面經驗。正確答案：C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-argument-3.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceUrl": "https://www.fhjh.ntpc.edu.tw/var/file/0/1000/img/154/789122026.pdf",
+    "sourceLocator": "新北市立福和國中112學年度九年級上學期第三次段考國文第15題（試卷第5頁）：辨識作者論點與立論證據；本題改寫為全新語料。",
+    "authoringNote": "依官方課綱與單元 KG 獨立命題，使用原創語料與選項，未複製公校原題；題庫首輪AI內容校核已於2026-09-27更新，公開試題各筆來源仍須逐題確認定位與改寫界線，完成前維持draft；不進行Terra複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-argument-evidence-basics"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-27",
+  "lessonId": "lesson-chinese-argument-evidence-basics",
+  "examPatternRefs": [
+    {
+      "url": "https://www.fhjh.ntpc.edu.tw/var/file/0/1000/img/154/789122026.pdf",
+      "title": "新北市立福和國中112學年度九年級上學期第三次段考國文試題分析；僅參考論點與證據區辨題型，不複製原題。",
+      "year": "112-1",
+      "subject": "chinese",
+      "locator": "試卷分析第5頁第15題：辨認作者論點而非立論證據",
+      "observedPattern": "題目提供多項文獻／學者資料，要求分辨作者主觀推論與支持材料；本題只借用論點—論據辨析能力，另造語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；只取證據品質、反論與結論範圍的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "試卷第4頁第45題：依文本判斷敘述正確性與訊息充分性",
+      "observedPattern": "回到文本核對陳述的正確性及資料是否足以支持判斷；本題僅借用證據充分性檢核方式，情境、選項與答案皆重新撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E5%9C%8B%E6%96%87%E7%A7%91_8.pdf",
+      "title": "高雄市立國昌國中112學年度第2學期第3次段考二年級國文試題；僅參考論點、論據／反面論點辨識題型。",
+      "year": "112-2",
+      "subject": "chinese",
+      "locator": "第2頁第11題：判讀文章是否提出論點並以言例／事例作論據",
+      "observedPattern": "辨認論點及其言例／事例論據的文本分析模式；本題只借用主張與支持材料的區分，不複製原卷文本、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "比較樣本大小、代表性與結論範圍，找出過度概括。",
+  "solutionSteps": [
+    "圈出結論中的全市範圍與『一定最好吃』的最高程度語氣。",
+    "辨認支持理由只有三位朋友的喜好，並非從全市抽取的代表性資料。",
+    "比較證據涵蓋範圍與主張範圍：三人偏好最多支持這三人的經驗。",
+    "排除把增加人數就當成必然證明、否定飲食可討論或轉談標點的選項。",
+    "選 C，並將結論收窄為『這三位朋友喜歡』，不能推廣到全市。"
+  ],
+  "studyReferences": [
+    "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E5%9C%8B%E6%96%87%E7%A7%91_8.pdf"
+  ]
 }

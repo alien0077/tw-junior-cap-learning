@@ -1,0 +1,42 @@
+{
+  "asOf": "2026-09-28",
+  "unit": "lesson-english-performance-6-iv-4",
+  "scope": "repair this unregistered generic manuscript and incorrect generic interaction specification; preserve registered lessons and all question records",
+  "priorManuscript": {
+    "before": "four short content sections plus six generic filler teaching blocks; no fusionRecord or learner interaction; unrelated LanguageTimelineBlock specification",
+    "after": "six unit-specific student-visible sections mirrored by teaching.body; four-step answer/retry GuidedChoice; versionResearch and fusionRecord with explicit evidence boundaries; lesson remains draft"
+  },
+  "curriculumBasis": {
+    "officialIndicator": "6-Ⅳ-4: 接觸課外多元素材",
+    "knowledgeGraphId": "kg-english-performance-6-iv-4",
+    "officialManual": "English curriculum manual PDF p.101 identifies the progression: try recommended materials, independently choose interesting materials, actively seek answers when unclear, and share after contact.",
+    "authoredTeaching": "Choose material by interest/accessibility/legal availability; use media-specific clues; first-pass gist and question-led revisit; distinguish observation/inference/unknown; resolve a precise comprehension gap; share original response with source attribution."
+  },
+  "publisherEvidenceBoundary": {
+    "hanlin": "The public school lesson plan identifies Hanlin Book 4 Lesson 6 and includes 6-IV-4; its video/reading/discussion sequence is a school-created design, not verified Hanlin textbook instruction.",
+    "kanghsuan": "The same school plan lists Kanghsuan grade 9 material but does not attribute individual media or activities by publisher; no chapter-level textbook comparison claimed.",
+    "nani": "A school curriculum plan lists 6-IV-4 and media categories but does not identify Nani; it is not counted as Nani evidence.",
+    "claim": "No claim of three-publisher chapter-text fusion; missing publisher chapter evidence is explicit in versionResearch, publisherResearch, fusionRecord, and draft status."
+  },
+  "implementation": [
+    "Replaced generic teaching blocks with an original six-part lesson and an original micro-comic example; aligned content.sections and teaching.body headings to avoid duplicate learner rendering.",
+    "Added explicit fusionRecord tracing curriculum/KG and the limited school-plan inspiration to authored strategies, without attributing unsupported methods to publishers.",
+    "Replaced the mismatched LanguageTimeline specification with GuidedChoiceBlock and revised goals, misconceptions, learning flow, transfer, accessibility and tests.",
+    "Added targeted Node and Python Playwright regressions; registered npm scripts and included the Node regression in pretest.",
+    "No question data was edited."
+  ],
+  "verification": {
+    "targetRegression": "PASS: npm run test:english:6-iv-4",
+    "lessonSchema": "PASS: 1,056 lessons checked, 0 failures",
+    "dataValidation": "PASS after report creation: 14,513 JSON files, 13,114 IDs, 1,032 KG nodes; final validation included this report artifact",
+    "implementationSpecs": "PASS: 1,027 specs, 0 errors, 13 eligible, 1,014 pending",
+    "fullNpmTest": "PASS; pretest includes D-401 lesson contract and workbench traversal rendered 1,027/1,027 lessons",
+    "siteIndex": "PASS: 1,052 lessons, 10,566 questions, 40 mapping sets; rebuild and --check passed",
+    "browser": "PASS: six visible sections with no duplicate headings; four guided-choice steps; keyboard wrong answer and retries/correct feedback; axe 0 violations/0 incomplete; 320/375/768 no overflow; one external request blocked; 0 page errors",
+    "playwrightRuntime": "Python /Library/Frameworks/Python.framework/Versions/3.14/bin/python3, Playwright 1.58.0; authorized Chrome launch succeeded",
+    "publicExamLedger": "Reuse D-399 audit 10,566/10,566 recorded, pending 0; no question changes in this unit."
+  },
+  "manuscriptInventory": "735/791 (92.92%; manuscript-presence registry only; learning-content 583/583; learning-performance 152/208; 56 remain)",
+  "subtasks": "none",
+  "commitPush": "not performed; full objective remains incomplete"
+}

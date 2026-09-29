@@ -2,23 +2,23 @@
   "id": "question-science-content-ab-iv-4-7",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2021年1月28日河川觀測站的觀察中，將 17 g 食鹽溶於 377 g 水，研究「Ab-Ⅳ-4：純物質與混合物分類」時，溶液質量為何？",
+  "prompt": "某樣品每次分析都含固定比例的氫與氧，且可用化學方法分解成兩種元素；最合理分類是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "360 g"
+      "text": "非均勻混合物"
     },
     {
       "id": "B",
-      "text": "394 g"
+      "text": "化合物"
     },
     {
       "id": "C",
-      "text": "6409 g"
+      "text": "元素"
     },
     {
       "id": "D",
-      "text": "377 g"
+      "text": "可用篩網分離的混合物"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,42 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "溶液質量為溶質加溶劑：17＋377＝394 g。 本題對應 KG「Ab-Ⅳ-4：純物質與混合物分類」。"
+    "explanation": "固定比例的氫與氧以化學方法分解，表示兩元素已化學結合形成化合物，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "114年國中教育會考自然科；第4題混合物分離題型改編；官方答案表：https://www.grow22.com/download/114/114_cp/07_114P_Answer.pdf；獨立改編，非原題重製。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的物質分類、溶液與分離能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-4 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ab-iv-4"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-ab-iv-4",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "純物質、混合物、溶液與分離方法判讀",
+      "pattern": "取由組成固定性質、樣品成分與分離方法判讀物質分類的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由組成固定性質、樣品成分與分離方法判讀物質分類的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "把固定比例與化學分解兩項證據合併，區分化合物與物理混合。",
+  "solutionSteps": [
+    "確認樣品含兩種元素。",
+    "分析結果每次都呈固定比例。",
+    "需要化學方法才能分解成氫與氧。",
+    "固定比例加化學結合符合化合物定義。",
+    "所以選 B。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

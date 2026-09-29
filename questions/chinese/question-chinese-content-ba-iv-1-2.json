@@ -2,7 +2,7 @@
   "id": "question-chinese-content-ba-iv-1-2",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "文章開頭先寫主角多年後回到故鄉，第二段才回述童年往事，這是哪種安排？",
+  "prompt": "短文依序寫小岑清晨整理盆栽、出門上學、午休澆水，最後放學回家。沒有回頭補述或跳到未來。這段主要採用哪種敘事安排？",
   "options": [
     {
       "id": "A",
@@ -14,11 +14,11 @@
     },
     {
       "id": "C",
-      "text": "並列"
+      "text": "插敘"
     },
     {
       "id": "D",
-      "text": "總說"
+      "text": "補敘"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,52 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "先寫後來，再回到較早發生的童年，是倒敘。"
+    "value": "A",
+    "explanation": "事件按照清晨、上學、午休到放學的發生先後排列，沒有時間跳轉，屬於順敘。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "敘事時間與篇章結構；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究順敘、倒敘、插敘、補敘的判讀線索與篇章功能。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫敘事順序題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba-iv-1"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文時間順序與篇章理解",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "篇章結構與敘事線索判讀",
+      "observedPattern": "公立學校國文評量要求從事件時間、敘述順序、插入資訊與段落功能判讀篇章；本題使用全新人物、事件與文字。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "找出每個事件的實際先後，檢查文本是否沿著同一條時間線前進。",
+  "solutionSteps": [
+    "圈出清晨、上學、午休與放學等時間標記。",
+    "將四個行動依發生時間排列。",
+    "A 與文本的實際順序完全相同。",
+    "B、C、D 都需要文本出現跳回、插入或補充資訊。",
+    "刪掉時間詞後仍可由事件邏輯還原同一順序，表示沒有倒置。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

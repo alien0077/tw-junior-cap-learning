@@ -2,23 +2,23 @@
   "id": "question-math-content-s-9-2-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "若 △ABC∼△DEF，且 AB/DE=2/5，則 △ABC 與 △DEF 的面積比為何？",
+  "prompt": "用相似三角形估計樹高：1.5 公尺高的標竿影長 2 公尺，同時樹影長 8 公尺。樹高約多少公尺？",
   "options": [
     {
       "id": "A",
-      "text": "2：5"
+      "text": "4 公尺"
     },
     {
       "id": "B",
-      "text": "4：25"
+      "text": "6 公尺"
     },
     {
       "id": "C",
-      "text": "5：2"
+      "text": "8 公尺"
     },
     {
       "id": "D",
-      "text": "25：4"
+      "text": "12 公尺"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,59 @@
   "difficulty": "medium",
   "answer": {
     "value": "B",
-    "explanation": "面積比是邊長比平方，(2/5)²=4/25。"
+    "explanation": "同時光線使高度與影長成比例，樹高：8＝1.5：2，所以樹高＝8×1.5÷2＝6 公尺，選 B。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第二學期第一次段考數學科；參考 三角形的相似性質 題型與官方課綱 KG kg-math-content-s-9-2",
-    "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+    "sourceLocator": "三份公立學校公開數學試題僅供三角形相似判定、對應與比例推理能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的三角形相似方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-math-content-s-9-2"
+  "updatedAt": "2026-09-10",
+  "lessonId": "lesson-math-content-s-9-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/03_114P_Math.pdf",
+      "title": "114 年國中教育會考數學科公開試題",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://school.tc.edu.tw/open-message/193521/get-file/66b1c8536c734e12643924e2",
+      "title": "臺中市立至善國民中學 112 學年度第二學期第一次定期評量七年級數學科",
+      "year": "112",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%BA%8C%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
+      "title": "高雄市立鹽埕國民中學 114 學年度下學期第一次段考二年級數學科",
+      "year": "114",
+      "subject": "math",
+      "locator": "三角形 AA、SAS、SSS 相似判定、對應順序與比例推理",
+      "observedPattern": "公立學校公開數學試題常要求整理兩角、兩邊及夾角或三邊比例，選擇 AA／SAS／SSS 判定三角形相似，再依頂點順序列比例求未知量；本題只取能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "將高度與影長配成相同順序的比例，再解未知高度。",
+  "solutionSteps": [
+    "建立標竿高：影長＝1.5：2。",
+    "樹高與影長列成 H：8＝1.5：2。",
+    "交叉相乘 2H＝12。",
+    "解得 H＝6 公尺。",
+    "選 B，兩個直角三角形因光線角相同而相似。"
+  ]
 }

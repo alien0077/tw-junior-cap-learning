@@ -48,7 +48,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-01",
+  "updatedAt": "2026-09-23",
   "interactive": {
     "type": "scientific-investigation",
     "goal": "在池塘食物網中追蹤生物因素、非生物因素、能量流與族群的直接及間接變化。",
@@ -100,82 +100,170 @@
         ],
         "answer": "A",
         "feedback": "好的結論同時寫出觀察結果、模型條件和仍未排除的因素，才能由模擬回到真實環境。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "若要判斷池塘擾動後是否恢復，應如何設計比較？",
+        "options": [
+          "保留未擾動基準與對照池，重複記錄生物、營養鹽、水溫與溶氧的時間序列",
+          "只在擾動後一天拍一張照片，就判定生態系已恢復",
+          "只看藻類顏色，不記錄消費者、分解者與非生物條件"
+        ],
+        "answer": "A",
+        "feedback": "恢復是跨時間與多元指標的判斷；單一物種或單一時間點不足以代表整個生態系。"
       }
     ]
   },
   "authoringStandard": "version-fused-v1",
   "lessonScope": "topic",
   "versionResearch": [
-    {"publisher":"nani","edition":"南一版自然公開課程資源","sourceType":"public-web","sourceLocator":"生物圈、生態系組成與食物關係公開課程定位；未取得完整出版社頁碼。","reviewedAt":"2026-09-01","findings":{"concepts":["生態系由生物因素與非生物因素共同構成，生物圈是支持生命的地球區域。","生產者、消費者與分解者在能量傳遞和物質循環中角色不同。"],"representations":["以校園池塘食物網、能量流向與物質回環概念圖呈現。"],"examplesOrEvidence":["藻類、水蚤、小魚、鳥類及落葉分解的觀察資料可形成系統案例。"],"misconceptions":["食物網箭頭不等於所有物質循環方向，單週觀察也不能代表全年。"],"assessmentEmphasis":["要求從生物與環境交互作用、尺度及資料限制作有條件推論。"]},"licenseBoundary":"僅研究公開定位與概念脈絡，不複製教材文字、圖片、題目或答案。"},
-    {"publisher":"kanghsuan","edition":"康軒版自然公開影音與課程資源","sourceType":"public-web","sourceLocator":"生物圈組成、生態系與食物網公開主題定位；索引不足以替代完整教材。","reviewedAt":"2026-09-01","findings":{"concepts":["以生態系統中的生物互動與環境條件解釋族群變化。","能量由生產者進入食物關係並逐層傳遞，分解者協助物質回到環境。"],"representations":["比較食物鏈、食物網、能量流與校園生態觀察表。"],"examplesOrEvidence":["改變乾旱、營養鹽或某一族群的模型可追蹤直接與間接效應。"],"misconceptions":["移除一個節點的結果受模型條件與非生物因素影響，不是單一固定答案。"],"assessmentEmphasis":["重視先預測、再以系統資料檢查的探究歷程。"]},"licenseBoundary":"只研究公開主題與教學方向，不複製影音字幕、圖片、題目或答案。"},
-    {"publisher":"hanlin","edition":"翰林版自然公開課程資源","sourceType":"public-web","sourceLocator":"生物圈組成與生態系統公開資源及校方課程計畫定位。","reviewedAt":"2026-09-01","findings":{"concepts":["生態系功能需同時看生物因素、非生物環境和彼此作用。","棲地改變會透過多條影響鏈改變族群，須用多項指標追蹤。"],"representations":["以溪流整治前後的水溫、溶氧、底質與生物資料交叉判讀。"],"examplesOrEvidence":["校園池塘和溪岸工程可作為由局部觀察推論系統變化的案例。"],"misconceptions":["生物數量變化不能單獨證明某一環境因素是唯一原因。"],"assessmentEmphasis":["要求交代測點、時間、尺度、控制條件與替代解釋。"]},"licenseBoundary":"僅採公開定位與概念方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"}
-  ],
-  "publisherResearch": [
-    {
-      "publisher": "kanghsuan",
-      "edition": "康軒國中自然公開影音",
-      "subject": "science",
-      "chapterLocator": "Fc：生物圈的組成；公開教材結構研究定位",
-      "sourceUrl": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
-      "access": "public-open",
-      "reviewedAt": "2026-08-27",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern",
-        "assessment-pattern"
-      ],
-      "outcome": "公開出版社資源用於核對「生物圈的組成」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為topic節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
-    },
     {
       "publisher": "nani",
       "edition": "南一版自然公開課程資源",
-      "subject": "science",
-      "chapterLocator": "生物圈的組成與生態系；公開課程章節定位",
-      "sourceUrl": "https://www.nani.com.tw/",
-      "access": "public-open",
-      "reviewedAt": "2026-09-01",
-      "researchScope": [
-        "teaching-sequence",
-        "concept-progression",
-        "activity-pattern"
-      ],
-      "outcome": "核對生物與非生物因素、生產者、消費者、分解者、能量流與物質循環的概念順序，並以校園池塘資料重新編排為可觀察的系統案例。",
-      "copyrightBoundary": "僅研究公開章節定位與概念脈絡，不複製教材文字、圖片、題目或答案。"
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.nani.com.tw/；生物圈、生態系組成與食物關係公開課程定位；未取得完整出版社頁碼。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "生態系由生物因素與非生物因素共同構成，生物圈是支持生命的地球區域。",
+          "生產者、消費者與分解者在能量傳遞和物質循環中角色不同。"
+        ],
+        "representations": [
+          "以校園池塘食物網、能量流向與物質回環概念圖呈現。"
+        ],
+        "examplesOrEvidence": [
+          "藻類、水蚤、小魚、鳥類及落葉分解的觀察資料可形成系統案例。"
+        ],
+        "misconceptions": [
+          "食物網箭頭不等於所有物質循環方向，單週觀察也不能代表全年。"
+        ],
+        "assessmentEmphasis": [
+          "要求從生物與環境交互作用、尺度及資料限制作有條件推論。"
+        ]
+      },
+      "licenseBoundary": "僅研究公開定位與概念脈絡，不複製教材文字、圖片、題目或答案。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒版自然公開影音與課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://digitalmaster.knsh.com.tw/all/video/j/nature.html；生物圈組成、生態系與食物網公開主題定位；索引不足以替代完整教材。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "以生態系統中的生物互動與環境條件解釋族群變化。",
+          "能量由生產者進入食物關係並逐層傳遞，分解者協助物質回到環境。"
+        ],
+        "representations": [
+          "比較食物鏈、食物網、能量流與校園生態觀察表。"
+        ],
+        "examplesOrEvidence": [
+          "改變乾旱、營養鹽或某一族群的模型可追蹤直接與間接效應。"
+        ],
+        "misconceptions": [
+          "移除一個節點的結果受模型條件與非生物因素影響，不是單一固定答案。"
+        ],
+        "assessmentEmphasis": [
+          "重視先預測、再以系統資料檢查的探究歷程。"
+        ]
+      },
+      "licenseBoundary": "只研究公開主題與教學方向，不複製影音字幕、圖片、題目或答案。"
     },
     {
       "publisher": "hanlin",
       "edition": "翰林版自然公開課程資源",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.ehanlin.com.tw/；生物圈組成與生態系統公開資源及校方課程計畫定位。",
+      "reviewedAt": "2026-09-23",
+      "findings": {
+        "concepts": [
+          "生態系功能需同時看生物因素、非生物環境和彼此作用。",
+          "棲地改變會透過多條影響鏈改變族群，須用多項指標追蹤。"
+        ],
+        "representations": [
+          "以溪流整治前後的水溫、溶氧、底質與生物資料交叉判讀。"
+        ],
+        "examplesOrEvidence": [
+          "校園池塘和溪岸工程可作為由局部觀察推論系統變化的案例。"
+        ],
+        "misconceptions": [
+          "生物數量變化不能單獨證明某一環境因素是唯一原因。"
+        ],
+        "assessmentEmphasis": [
+          "要求交代測點、時間、尺度、控制條件與替代解釋。"
+        ]
+      },
+      "licenseBoundary": "僅採公開定位與概念方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"
+    }
+  ],
+  "publisherResearch": [
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方章節級交叉證據（science）",
       "subject": "science",
-      "chapterLocator": "生物圈組成與生態系統；公開資源及校方課程計畫定位",
-      "sourceUrl": "https://www.ehanlin.com.tw/",
+      "chapterLocator": "新北市光復高中翰林版自然課程計畫附件；Fc：生物圈的組成 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.gfhs.ntpc.edu.tw/p/406-1000-13559,r92.php",
       "access": "public-open",
-      "reviewedAt": "2026-09-01",
+      "reviewedAt": "2026-09-23",
       "researchScope": [
+        "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "比較食物網、能量傳遞、分解作用與棲地變化的資料判讀方式，補入溪流整治案例與測量限制，避免由單一族群變化推定唯一原因。",
-      "copyrightBoundary": "僅採公開定位與教學方向，正文、活動、題目、答案及回饋均由本課獨立撰寫。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「Fc：生物圈的組成」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "新北市三民高中康軒版自然課程計畫附件；Fc：生物圈的組成 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www.smsh.ntpc.edu.tw/p/406-1000-8452,r196.php",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「Fc：生物圈的組成」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（science）",
+      "subject": "science",
+      "chapterLocator": "臺南市歸仁國中南一版自然課程計畫；Fc：生物圈的組成 概念、活動與評量定位；核讀 2026-09-20。",
+      "sourceUrl": "https://www2.grjh.tn.edu.tw/modules/tad_uploader/index.php?cat_sn=1283&cfsn=6115&name=2-1-1.%E4%B8%83%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6%E9%A0%98%E5%9F%9F%E8%AA%B2%E7%A8%8B%E8%A8%88%E7%95%AB.pdf&op=dlfile",
+      "access": "public-open",
+      "reviewedAt": "2026-09-23",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「Fc：生物圈的組成」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "fusionRecord": {
     "commonCore": [
-      "生物圈是能支持生命的地球區域，生態系則由生物因素與非生物環境共同構成。",
-      "生產者、消費者與分解者在能量傳遞和物質循環中分工，食物網呈現多條相互作用。",
-      "系統變化必須放回測點、時間、尺度與證據限制，不能由單一族群數量直接下因果結論。"
+      "三版本公開線索共同支持由生物因素、非生物因素與尺度邊界建立生態系／生物圈模型。",
+    "食物網、能量流、物質循環、族群變化及多指標資料判讀是共同能力核心。",
+    "判讀生態系變動時先標定空間範圍與時間尺度，再將物種互動、能量傳遞與元素回流分成不同證據鏈。"
     ],
     "versionDifferences": [
-      "南一公開資料適合核對生態系組成與能量物質脈絡；康軒公開資源提供食物網與模型活動線索；翰林公開課程資源較能連結棲地改變與資料判讀，但完整出版社頁碼不可得。"
+      "南一公開定位較強調生物圈與生態系組成；康軒線索較強調生物互動、食物關係與預測觀察；翰林線索較強調溪流／池塘環境指標、時間尺度及替代解釋。公開資料不足以宣稱取得完整教材內容。"
     ],
     "originalAdditions": [
-      "以校園池塘建立生物因素、非生物因素、食物網與分解作用的整合案例。",
-      "設計乾旱、營養鹽增加與移除小魚的單一擾動模型，區分直接和間接效應。",
-      "以溪流護岸工程遷移到真實環境，要求同時評估水溫、溶氧、底質與生物資料。"
+      "以校園池塘的藻類、水蚤、小魚、鷺鳥、分解者及水溫／溶氧資料建立單元專屬系統模型。",
+    "把食物網箭頭等同物質循環、單一物種代表整個生態系、一次觀察證明唯一因果列為迷思診斷，並用基準、對照與多指標活動修正。",
+    "以溪流上游與下游的溶氧、底棲生物及營養鹽時間序列交叉檢查，討論相關變化是否足以支持污染來源的因果判斷。"
     ],
-    "llmSynthesisNote": "依官方課綱、KG 與三版本可取得的公開定位及研究紀錄，先整合生物圈、生態系、能量流與物質循環，再以本單元專屬的池塘食物網、節點擾動模型和溪流工程案例重新撰寫；正文、互動與檢核均為原創，未取得的完整出版社內文不作臆測，Terra 尚未執行故維持 draft。"
+    "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校／公開試題資料的能力方向，重新組織個體、族群、群集、生態系、生物圈、生產者、消費者、分解者、能量流與物質循環；10 題均逐題核對單元符合度、唯一答案、正確解析與五步解法，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
   "teaching": {
     "body": [
@@ -244,7 +332,42 @@
     "model": "general",
     "goal": "以安全探究步驟理解「生物圈的組成」並用證據修正解釋。",
     "mission": "針對「Fc：生物圈的組成」設計可在教室或模擬器完成的觀察；不使用危險藥品或高電壓。",
-    "learningDesign":{"type":"biosphere-components-map","objective":"以能量流、物質循環與尺度邊界建立生物圈組成模型。","predictionPrompt":"若移除分解者或降低陽光輸入，物質循環和能量流的哪一段會先出現變化？","steps":[{"action":"配置生產者、消費者、分解者與非生物環境卡","equation":"biosphere=organisms+environment"},{"action":"畫出能量流和碳、水等物質循環箭頭","equation":"flow=energy+matter"},{"action":"移除一個元件再預測系統反應，標記尺度限制","equation":"impact=counterfactual+boundary"}]},
+    "learningDesign": {
+      "type": "representation-match",
+      "objective": "以能量流、物質循環與尺度邊界建立生物圈組成模型。",
+      "predictionPrompt": "若移除分解者或降低陽光輸入，物質循環和能量流的哪一段會先出現變化？",
+      "evidencePrompt": "請用生物與非生物元件、能量流、物質循環及尺度邊界，說明模型觀察與仍未排除的因素。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "配置生產者、消費者、分解者與非生物環境卡",
+          "equation": "biosphere=organisms+environment",
+          "reason": "生物圈模型必須同時呈現生物群落與非生物環境，不能只列生物名稱。",
+          "feedback": "請把生產者、消費者、分解者與非生物環境放入同一系統脈絡再開始推理。"
+        },
+        {
+          "id": "step-2",
+          "action": "畫出能量流和碳、水等物質循環箭頭",
+          "equation": "flow=energy+matter",
+          "reason": "能量流與物質循環方向及意義不同，需要用不同箭頭與標籤表示。",
+          "feedback": "若把所有箭頭當成同一種流動，請重新標出能量、碳循環與水循環。"
+        },
+        {
+          "id": "step-3",
+          "action": "移除一個元件再預測系統反應，標記尺度限制",
+          "equation": "impact=counterfactual+boundary",
+          "reason": "移除元件可檢查直接與間接影響，也要保留模型尺度與未涵蓋因素。",
+          "feedback": "請同時寫出觀察結果、模型條件與仍未排除的因素，避免把模擬直接當成自然界唯一原因。"
+        },
+        {
+          "id": "step-4",
+          "action": "加入未擾動基準與對照池，重複追蹤營養鹽、溶氧、物種量與恢復時間",
+          "equation": "resilience=trajectory+baseline+multiple-indicators",
+          "reason": "生態系變化可能有延遲、替代路徑與季節背景；基準、對照和多指標時間序列能區分短期波動、物質循環改變與真正恢復。",
+          "feedback": "請將能量流、物質循環、族群變化和非生物條件分開記錄，並標示尚不能外推到其他生態系的部分。"
+        }
+      ]
+    },
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://cap.rcpet.edu.tw/index.html",

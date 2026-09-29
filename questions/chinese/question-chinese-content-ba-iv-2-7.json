@@ -2,41 +2,76 @@
   "id": "question-chinese-content-ba-iv-2-7",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "小說以大量短句描寫追逐場面，最可能造成什麼閱讀效果？",
+  "prompt": "『窗外的雨越下越大，他把報告重新讀了三遍，卻沒有按下送出鍵。』依文本證據，最穩妥的解讀是？",
   "options": [
     {
       "id": "A",
-      "text": "加快節奏並增加緊張感"
+      "text": "他一定害怕老師責罵"
     },
     {
       "id": "B",
-      "text": "使情節停滯"
+      "text": "他在送出報告前顯得猶豫或不安"
     },
     {
       "id": "C",
-      "text": "轉成抒情詩"
+      "text": "他已經完成所有修改"
     },
     {
       "id": "D",
-      "text": "降低動態感"
+      "text": "大雨使網路必然中斷"
     }
   ],
   "knowledgeIds": [
     "kg-chinese-content-ba-iv-2"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "短句節奏明快，適合呈現快速與緊張的場面。"
+    "value": "B",
+    "explanation": "反覆閱讀卻沒有送出，足以支持猶豫或不安的可能；文本沒有交代害怕原因、修改完成或網路故障。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "描寫作用與效果；獨立命題",
-    "authoringNote": "獨立改編，非原題重製"
+    "sourceLocator": "公立學校公開國文段考與課程資料；只研究人物、景物、語句節奏、對照與證據界線。",
+    "authoringNote": "依官方語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫描寫作用題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-28",
-  "lessonId": "lesson-chinese-content-ba-iv-2"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-ba-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "記敘文描寫與文本推論",
+      "observedPattern": "公立學校國文評量要求由感官細節、人物動作、語句節奏、景物對照與敘述焦點推論效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "景物、人物動作與語氣效果",
+      "observedPattern": "公立學校國文評量要求由感官細節、人物動作、語句節奏、景物對照與敘述焦點推論效果；本題使用全新材料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "從可見動作推論心理狀態，使用可能性語氣並排除未被文本支持的原因。",
+  "solutionSteps": [
+    "抓住『讀了三遍』與『沒有按下』的行動反差。",
+    "把反差轉成等待、猶豫或不安的合理心理。",
+    "B 保留推論強度，不指定未出現的原因。",
+    "A、C、D 都超過句子提供的證據。",
+    "改成『按下送出鍵』後重新比較人物狀態，確認關鍵在動作結果。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }

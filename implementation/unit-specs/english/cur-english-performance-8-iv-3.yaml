@@ -1,0 +1,171 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-english-performance-8-iv-3
+  knowledgeGraphIds:
+  - kg-english-performance-8-iv-3
+  title: 8-Ⅳ-3：比較國內外節慶習俗
+  subject: english
+  socialDiscipline: null
+  curriculumLevel: learning-performance
+  gradeRange:
+  - '7'
+  - '8'
+  - '9'
+  fusedScope:
+    officialCurriculum: 8-Ⅳ-3：比較國內外節慶習俗
+    curriculumIntent: 8-Ⅳ-3：比較國內外節慶習俗
+    publisherEvidence:
+      nani:
+        status: pending
+        required: true
+      kanghsuan:
+        status: pending
+        required: true
+      hanlin:
+        status: pending
+        required: true
+    fusionRule: 以官方課綱及KG界定本課核心；翰林網域教學資源與康軒標示跨年級校方計畫只作有限教法線索；南一第三方標籤未驗證，不冒稱出版社課本內容。未取得的當前單元教材明確標未知，全文由本課原創撰寫
+    currentEvidenceStatus: official-curriculum-and-kg-grounded; limited-public-teaching-resources-recorded-with-scope; current-grade-publisher-chapter-evidence-pending; user-chatgpt-review-pending
+  learningGoals:
+  - 以日期／曆法、活動、意義及地區等共同欄位比較國內外節慶資料
+  - 為每項比較主張找到來源證據，並區分資料明載、合理推論與未提供
+  - 使用範圍詞和尊重語言表達異同，不將單一例子擴大成整體文化或價值排名
+  - 將比較方法遷移至新的節慶資料卡與英文短段落
+  prerequisites:
+  - 能讀懂簡短英文資料卡並擷取日期、活動與地區等資訊
+  - 能區分來源直接陳述與自己提出的推論
+  coreConcepts:
+  - 先設定共同比較欄位，才可將不同節慶放在同一尺度對照
+  - 每個相同點與差異都須可回指來源；資料未提及只記為未提供
+  - 日期比較保留曆法線索；通常月份不等於每年固定西曆日
+  - 比較文化做法而非優劣；限定地區與來源範圍，避免全稱概括
+  misconceptions:
+  - 把不同節日中看似相似的活動或日期直接當成相同
+  - 將來源未提到的內容推論為不存在，或把個別例子說成人人如此
+  - 把 usually in March 改寫成每年固定的三月某日
+  - 用 better／more meaningful 排定文化高下，而非比較有來源支持的特徵
+  contentFlow:
+  - 'predict: 先看端午與Holi兩張節慶卡，預測只靠照片會漏掉哪些比較條件或造成哪些誤解'
+  - 'manipulate: 依曆法、活動、意義、地區／來源四欄整理兩份材料，把可直接比較與需限定的主張分開'
+  - 'observe: 逐格核對日期曆法線索和活動證據，將來源明說、來源解釋、資料未提供分別標記'
+  - 'explain: 用Both...及while/but寫有來源支撐的異同，限定地區與日期，避免把缺資料說成不存在或排文化高下'
+  - 'guided-practice: 逐欄找證據並以Both...與while/but寫出異同'
+  - 'transfer: 換用學生自選的兩份節慶來源，以限定語撰寫英文比較段'
+  - 'exit-ticket: 說出一項異同、兩項來源證據及一個敘述限制'
+  visualizations:
+  - 以「日期／曆法、活動、意義、地區與來源」四欄比較矩陣呈現兩節慶的相同基準與不同資料
+  - 每格附可讀文字及來源標籤；缺值顯示「資料未提供」，不以顏色單獨承載含義
+  interactiveBlocks:
+  - id: CUR-ENGLISH-PERFORMANCE-8-IV-3-I01
+    component: GuidedChoiceBlock
+    purpose: 逐步判斷共同欄位、來源證據、日期範圍與文化敘述邊界
+    initialState:
+      mode: guided-choice
+      showAnswer: false
+      selectedEvidence: []
+      variableValues:
+    studentActions:
+    - 讀取臺灣端午與印度Holi的原創資料卡
+    - 逐步選擇共同比較欄、來源支持的說法、日期線索與範圍適當的結論
+    - 答錯後先讀取該步提示，再重新作答
+    - 答對後讀解析，確認每個判斷可回指哪份資料
+    visualRules:
+    - 每一步先作答再顯示解析，錯答保留同題並可重試
+    - 比較表的文字標籤及來源資訊不可省略
+    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
+    - 窄螢幕不得裁切核心圖、題幹與回饋
+    misconceptionChecks:
+    - id: MC-CUR-ENGLISH-PERFORMANCE-8-IV-3-I01
+      trigger: 將「通常在三月」推成固定的西曆日期，或把未提及推成不存在
+      prompt: 來源實際提供哪個曆法線索？沒有寫出的欄位能否直接判為不存在？
+      expectedEvidence: 引用資料卡的Phalguna滿月／農曆五月初五文字，並將未提及欄標示為未知
+    feedback:
+      correct: 指出選項對應的來源與欄位，再要求辨認句子是否保留來源範圍。
+      incorrect: 先提示回到比較表找同欄證據或限定詞，不直接代答；重試後才呈現解析。
+  teachingPatternRefs:
+  - refId: phet-ild
+    reuseDecision: inspiration-only
+    application: "本課 GuidedChoiceBlock 只吸收逐步作答與分層回饋的互動設計；節慶資料、文字、題目與比較矩陣均由本課自行設計。"
+  - refId: phet-activity
+    reuseDecision: inspiration-only
+    application: "本課 GuidedChoiceBlock 只參考分段操作和證據表達；所有節慶語料、資料與題目皆為原創。"
+  - refId: w3c-aria
+    reuseDecision: inspiration-only
+    application: "本課互動僅沿用鍵盤操作、焦點可見和語意標籤等可及性原則；不借用該來源的節慶內容。"
+  - refId: w3c-landmarks
+    reuseDecision: inspiration-only
+    application: "本課依頁面地標與標題層級提供導覽；正文和比較矩陣均為本單元原創。"
+  capTransfer:
+    questionType: 資料判讀／概念應用／理由短答
+    stemConstraint: 使用兩份新的節慶介紹，要求以同一欄位比較，並限制結論只能使用來源支持的資訊
+    requiredResponse: 指出共同比較欄、各一項來源證據、一項異同，以及資料範圍限制
+    scoring: 比較基準一致 1、兩邊證據正確 1、範圍與尊重表達適切 1
+  exitTicket:
+    prompt: 你比較的共同欄位是什麼？兩邊各用哪項資料支持？哪個結論仍超出來源？
+    successCriteria:
+    - 提到本單元核心概念
+    - 指出兩節慶相同的比較欄位
+    - 各引用至少一項來源證據
+    - 標明一項資料未提供或適用範圍限制
+  expressionExtension:
+    applicable: true
+    task: 用 80～120 字英文比較兩項節慶，包含共同基準、一項相同點、一項差異及來源範圍詞
+    constraint: 每個文化事實須標註來源；避免全稱概括或價值排序
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
+    reducedMotion: 停用自動動畫仍可逐步操作
+  testCases:
+  - 四步 GuidedChoice 依序覆蓋共同活動欄、來源支持的活動比較、曆法線索及照片推論範圍；作答前不顯示答案，錯答後可重試。
+  - 每步答錯呈現對應 retryHint，答對呈現逐步解析；解析不得將資料未提及說成事實不存在。
+  - 以鍵盤完成四步互動、錯答重試及正答回饋；320px、375px、768px 不得水平溢位。
+  - 使用 Axe 對單元卡片掃描，不得有自動化 accessibility violation；保留 incomplete 結果供人工檢視。
+  - 所有題幹、答案及來源卡均在本機資料內；阻斷外部請求後課文與互動仍可完成。
+  - fallback：圖像／模擬不可用時以本課文字資料卡及四欄矩陣代替；所有比較結論仍須能回指本地來源標記，不假稱已載入圖片或外部資料。
+  definitionOfDone:
+  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
+  - 當前年級出版社章節證據已補齊，或明確標記 pending，不得冒充完成
+  - 四步 GuidedChoice 能練習本單元共同比較欄、證據、日期線索與範圍判讀
+  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
+  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  status:
+    designStatus: reviewed
+    implementationStatus: implemented
+    qaStatus: verified
+  sourceRefs:
+  - url: https://www.naer.edu.tw/upload/1/16/doc/812/(%E7%99%BC%E5%B8%83%E7%89%88)%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%AA%9E%E6%96%87%E9%A0%98%E5%9F%9F-%E8%8B%B1%E8%AA%9E%E6%96%87%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81.pdf
+    locator: 正文第 8～15 頁／PDF 第 10～17 頁；國民中學教育階段學習表現；官方代碼 8-Ⅳ-3
+    role: official-curriculum-source-of-truth
+  - url: https://material.hle.com.tw/wp-content/uploads/2021/04/%E5%9C%8B%E4%B8%AD%E8%8B%B1%E8%AA%9E-%E5%BD%88%E6%80%A7%E7%8E%A9%E5%BE%88%E5%A4%A7%E4%BD%B5%E6%AA%94.pdf
+    locator: 翰林網域公開彈性教學資源；搜尋可見說明以萬聖節與中元節圖像及共同問題作比較；確切頁碼與當前年級課本章節未核實
+    role: publisher-domain-teaching-resource-limited-not-current-textbook-proof
+  - url: https://course.cyc.edu.tw/upfile/course112/sub1/15343601527825912.pdf
+    locator: 大吉國中112學年度課程計畫PDF第46–47頁；文件標示康軒九年級第5–6冊食物文化單元及閱讀前／中／後、比較分類活動；跨年級參考，非本課節慶章節
+    role: publisher-labelled-school-plan-cross-grade-context-only
+  - url: https://www.scribd.com/document/966228867/7G-Lesson-Plan
+    locator: 公開頁面摘要標示B3 L4 Holiday及8-IV-3；上傳者、出版社歸屬、版次、頁碼與授權未核實
+    role: third-party-unverified-label-not-publisher-evidence
+  - url: https://eng.taiwan.net.tw/m1.aspx?sNo=0002020
+    locator: 臺灣觀光署英文節慶資料；端午節活動與農曆五月初五日期線索，用於本課原創資料卡的事實核對
+    role: public-cultural-fact-source
+  - url: https://www.incredibleindia.gov.in/en/festivals-and-events/holi
+    locator: 印度觀光部Holi介紹；Phalguna滿月、通常在三月及迎春活動，用於本課原創資料卡的事實核對
+    role: public-cultural-fact-source
+  - url: https://www.nhjh.tp.edu.tw/uploads/1675417163713PBpnsLYp.pdf
+    locator: 臺北市立內湖國中111學年度第1學期九年級第2次段考英語試卷（翰林版），PDF第3頁第44–46題；僅參考節慶閱讀的詞義、未明載資訊與有據推論題型
+    role: public-school-exam-pattern-only-original-rewrite
+  - url: https://www.kcjh.kh.edu.tw/upload/190/104_34764/1-%E8%8B%B1%E6%96%87.pdf
+    locator: 高雄市立國昌國中113學年度第2學期第2次段考七年級英語試題，PDF第4頁第30–32題；僅參考日期定位、上下文詞義及依文判斷題型
+    role: public-school-exam-pattern-only-original-rewrite
+  - url: https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/110-3-8-2.pdf
+    locator: 造橋高中公開彈性學習計畫PDF第2–3頁；明列8-Ⅳ-3節慶比較活動，含中外節慶對照與觀察／表達流程；非出版社教材
+    role: public-school-teaching-pattern-not-publisher-evidence
+  - url: https://etalk.naer.edu.tw/trends/single/sn/199
+    locator: 國教院教材研究文章，提供出版版本教材優勢及文化教材教學反思的背景，不作本課出版社章節證據
+    role: official-education-research-context

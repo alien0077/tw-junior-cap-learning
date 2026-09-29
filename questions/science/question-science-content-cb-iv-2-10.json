@@ -2,41 +2,67 @@
   "id": "question-science-content-cb-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月15日自然科教室的觀察中，將 72 g 食鹽溶於 474 g 水，研究「Cb-Ⅳ-2：原子排列與元素特性」時，溶液質量為何？",
+  "prompt": "同素異形體的學習最能支持哪個科學概念？",
   "options": [
     {
       "id": "A",
-      "text": "402 g"
+      "text": "巨觀性質與微觀結構沒有關係"
     },
     {
       "id": "B",
-      "text": "34128 g"
+      "text": "只要元素符號相同，所有性質必定完全相同"
     },
     {
       "id": "C",
-      "text": "474 g"
+      "text": "物質的性質取決於組成，也取決於粒子如何排列與彼此作用"
     },
     {
       "id": "D",
-      "text": "546 g"
+      "text": "不同排列代表一定有不同元素"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-cb-iv-2"
   ],
-  "difficulty": "medium",
+  "difficulty": "easy",
   "answer": {
-    "value": "D",
-    "explanation": "溶液質量為溶質加溶劑：72＋474＝546 g。 本題對應 KG「Cb-Ⅳ-2：原子排列與元素特性」。"
+    "value": "C",
+    "explanation": "同素異形體共享元素種類，卻可能因排列與作用不同而呈現不同性質；這正是由微觀結構解釋巨觀現象的例子。選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的原子排列、同素異形體與材料性質能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Cb-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-cb-iv-2"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-cb-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "原子排列、同素異形體、金屬性質與微觀模型判讀",
+      "pattern": "取由微觀排列與電子／結構線索推論材料宏觀性質的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由微觀排列與電子／結構線索推論材料宏觀性質的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "用『組成相同、結構不同、性質不同』三段關係檢查選項。",
+  "solutionSteps": [
+    "確認同素異形體共享元素種類。",
+    "確認它們的排列或連結方式可不同。",
+    "把結構差異連到硬度、導電或熔點等性質。",
+    "排除把元素符號當成全部性質的錯誤說法。",
+    "所以選 C。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

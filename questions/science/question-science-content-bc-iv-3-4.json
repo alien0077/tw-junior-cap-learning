@@ -2,23 +2,23 @@
   "id": "question-science-content-bc-iv-3-4",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2024年5月31日社區環境站的觀察中，玻璃射向鏡面時，光線與鏡面法線的入射角為 20°，研究「Bc-Ⅳ-3：光合作用製造養分並釋氧」時，反射角為何？",
+  "prompt": "若要研究二氧化碳是否為光合作用所需原料，哪種設計最適合？",
   "options": [
     {
       "id": "A",
-      "text": "20°（玻璃射向鏡面）"
+      "text": "只測一片葉片的顏色，不設對照"
     },
     {
       "id": "B",
-      "text": "70°（「Bc-Ⅳ-3：光合作用製造養分並釋氧」中把入射角誤當折射角）"
+      "text": "兩組同時改變光照、溫度與二氧化碳"
     },
     {
       "id": "C",
-      "text": "40°（「Bc-Ⅳ-3：光合作用製造養分並釋氧」中把入射角加倍）"
+      "text": "在相同光照、溫度與植物材料下，設有二氧化碳與去除二氧化碳的兩組"
     },
     {
       "id": "D",
-      "text": "160°（「Bc-Ⅳ-3：光合作用製造養分並釋氧」中以平角計算）"
+      "text": "讓去除二氧化碳組完全不接觸光線"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,43 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "反射定律指出反射角等於入射角，因此為 20°。 本題對應 KG「Bc-Ⅳ-3：光合作用製造養分並釋氧」。"
+    "value": "C",
+    "explanation": "只改變二氧化碳可把它的影響分離；其他條件和材料相同，最後用澱粉或氣體產物比較，選 C。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的光合作用、實驗證據與控制變因能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Bc-Ⅳ-3 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-bc-iv-3"
+  "updatedAt": "2026-09-23",
+  "lessonId": "lesson-science-content-bc-iv-3",
+  "examPatternRefs": [
+    {
+      "url": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
+      "title": "114 年國中教育會考自然科公開試題",
+      "year": "114",
+      "locator": "光合作用、澱粉與氧氣證據、光照與二氧化碳資料判讀",
+      "pattern": "取由反應物、產物、控制變因與實驗結果推論光合作用的能力方向。",
+      "subject": "science",
+      "observedPattern": "取由反應物、產物、控制變因與實驗結果推論光合作用的能力方向。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "列出自變因和控制變因，避免把多個差異誤認成二氧化碳效果。",
+  "solutionSteps": [
+    "自變因設定為是否有二氧化碳。",
+    "光照、溫度、水分、葉片狀態與時間固定。",
+    "兩組都要能正常接受光照。",
+    "用相同的澱粉檢測方法比較結果。",
+    "因此選 C。"
+  ],
+  "studyReferences": [
+    "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
+    "https://www.hkjh.hc.edu.tw/uploads/1661481260739sfuB4gG2.pdf"
+  ]
 }

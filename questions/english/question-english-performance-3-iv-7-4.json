@@ -2,23 +2,23 @@
   "id": "question-english-performance-3-iv-7-4",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: “Excuse me, could you help me with directions at the art room?” B: “___” (「3-Ⅳ-7／理解對話主要內容」practice, 12:00)",
+  "prompt": "A: We have permission to use the school garden, but we still need a room for the seed workshop.\nB: First, let’s compare the two rooms the office offered.\nA: Once we choose one, what should we do next?\nB: Ask the secretary to reserve it; after she confirms, we can message the group.\nWhat comes immediately after choosing a room?",
   "options": [
     {
       "id": "A",
-      "text": "Of course. I can help you with directions at the art room in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Message the group before asking anyone."
     },
     {
       "id": "B",
-      "text": "It is under the blue chair at the art room in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Start planting seeds in the garden."
     },
     {
       "id": "C",
-      "text": "I was fourteen at the art room last year in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Ask the secretary to reserve the room."
     },
     {
       "id": "D",
-      "text": "No, the weather at the art room is sunny in the 3-Ⅳ-7／理解對話主要內容 practice."
+      "text": "Compare the rooms again after the workshop."
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,38 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "The first answer directly accepts the request and matches the meaning of the question about 3-Ⅳ-7／理解對話主要內容, item 4. This item targets 3-Ⅳ-7／理解對話主要內容, question 4."
+    "value": "C",
+    "explanation": "正確答案 C。對話用 once 表示選好房間後，下一步是請秘書預約；只有收到確認後才通知群組。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%8B%B1%E6%96%87.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考英文科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nhjh.tp.edu.tw/uploads/1675416243642o6V5uNiI.pdf",
+    "sourceLocator": "依公立國中英文段考中對話主旨、時間地點、請求、順序、態度、建議、指代與行動推論的公開命題模式獨立改寫；逐題原卷題號列於 examPatternRefs。",
+    "authoringNote": "本題情境、對話、選項、答案與繁中解析均依 3-Ⅳ-7 能力獨立重寫；公開試題僅作可追溯 pattern-only 參照，不複製原文或選項。完整內容與版權 QA 未完成，維持 draft。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-english-performance-3-iv-7"
+  "updatedAt": "2026-09-26",
+  "lessonId": "lesson-english-performance-3-iv-7",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675416243642o6V5uNiI.pdf",
+      "title": "臺北市立內湖國中111學年度第1學期八年級第2次段考英文",
+      "year": "111-1",
+      "subject": "english",
+      "locator": "第39題：依操作說明排列咖啡製作步驟的先後",
+      "locatorLevel": "item",
+      "observedPattern": "直接參照程序順序與連接語所測的排序能力；本題改為校園活動籌備。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
+  "solutionStrategy": "把先後詞轉成時間線，題目問 immediately after 時只取緊接的一步。",
+  "solutionSteps": [
+    "先找時間線標記 First，確認目前在比較兩間教室。",
+    "Once we choose one 表示選定房間是下一個前置事件。",
+    "追蹤 B 的 after she confirms：預約確認之前，需先請秘書保留房間。",
+    "因此選 C；通知群組在確認之後，種植和重新比較都不在緊接步驟。",
+    "按原順序復述：比較→選定→請秘書預約→收到確認→通知群組。"
+  ]
 }

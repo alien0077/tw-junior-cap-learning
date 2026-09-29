@@ -1,0 +1,48 @@
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+LESSON = ROOT / "lessons/chinese/lesson-chinese-performance-2-iv-1.json"
+REPORT = ROOT / "implementation/reports/chinese-performance-2-iv-1-first-pass-review.json"
+
+
+def rec(publisher, locator, concepts, forms, misconception, assessment):
+    return {"publisher": publisher, "edition": f"{publisher} 公立校方國文課程計畫章節級證據", "sourceType": "public-web", "sourceLocator": locator, "reviewedAt": "2026-09-21", "findings": {"concepts": concepts, "representations": forms, "examplesOrEvidence": ["本課以校園修繕、家庭旅行與社團合作三個原創分享情境，僅承接公開課程的口語表達與經驗整理方向。"], "misconceptions": [misconception], "assessmentEmphasis": [assessment]}, "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、篇章、題目、答案、影音或版面。"}
+
+
+def main():
+    data = json.loads(LESSON.read_text(encoding="utf-8"))
+    assert data["id"] == "lesson-chinese-performance-2-iv-1"
+    data["title"] = "2-Ⅳ-1：把經驗說成有重點、可理解的故事"
+    data["content"] = {"summary": "分享經驗不是把發生過的事情依時間全部倒出來，而是依聽眾、目的與可用時間選擇材料，讓事件、感受、轉折與學到的事彼此相連。本課以校園修繕、家庭旅行與社團合作三個原創情境，練習從素材取捨、細節安排、觀點標記到回應提問，讓經驗分享既保留個人聲音，也能讓聽者跟得上。", "sections": [{"heading": "先決定分享要帶聽眾去哪裡", "body": "同一段經驗可以是報告、提醒、鼓勵或反思，開頭要讓聽眾知道目的。選材時保留能推動主題的事件，刪去與目的無關的流水帳，並依聽眾背景補上必要的時間、人物與情境。"}, {"heading": "細節要服務轉折", "body": "具體動作、聲音、數字或對話能讓場景清楚，但細節不是越多越好。每一個細節都要回答『它如何改變判斷、情緒或下一步』；否則改成摘要，讓主要轉折浮出來。"}, {"heading": "事實與感受要有標籤", "body": "『雨量達到某數值』是可核對資訊，『我當時很慌』是個人感受，『我猜大家都不在乎』是推測。把三者分開，分享者才能誠實表達經驗，不把自己的解讀冒充其他人的想法。"}, {"heading": "分享是往返的互動", "body": "說完後要觀察聽眾是否理解，接受提問並修正表達。對私人經驗可說明不願回答的範圍；對批評則先重述問題，再補充證據或承認仍未知，不用防衛語氣把交流關掉。"}]}
+    data["studyHighlights"] = ["先確定分享目的、聽眾與時間，再選擇事件和細節。", "用轉折、因果與結果組織故事，不把流水帳當成完整表達。", "區分可核對事實、個人感受與推測，標示觀點的範圍。", "用重述、提問與修正讓分享成為雙向互動，尊重私人界線。"]
+    data["teaching"] = {"body": [
+        {"id": "hook", "phase": "hook", "heading": "修繕日最值得說的是哪一刻？", "body": "把校園修繕的一天列出十個事件，請學習者依『教大家如何合作』的目的只保留三個。比較兩組選材如何改變聽眾理解，並說明被刪掉的細節不是不重要，而是和本次分享目的不相同。"},
+        {"id": "explain", "phase": "explain", "heading": "經驗分享的路線圖", "body": "用目的、背景、關鍵事件、轉折、結果與反思六格組織素材。背景只提供理解所需的資訊；關鍵事件呈現選擇；轉折說明阻力或新發現；最後用自己的觀點收束，而不是只喊『很有收穫』。"},
+        {"id": "worked-example", "phase": "worked-example", "heading": "把旅行流水帳改成一個發現", "body": "將『先搭車、吃飯、拍照、下雨、回旅館』改寫成『因雨改走室內路線，意外發現地方工藝；我原先以為行程越滿越好，後來改用預留時間觀察』。逐句標示事實、轉折、感受與反思，檢查主題是否可追蹤。"},
+        {"id": "guided-practice", "phase": "guided-practice", "heading": "替不同聽眾調整同一故事", "body": "同一段社團合作經驗分別對一年級新生、家長與隊友分享：新生需要背景和安全規則，家長需要時間與責任，隊友需要決策細節。學習者要改變開場與細節比例，但保留不誇大的核心事實。"},
+        {"id": "transfer", "phase": "transfer", "heading": "接受提問並修正版本", "body": "分享後抽取三種提問：想知道事實、質疑判斷、要求方法。先重述提問，再指出已知證據、個人感受與未知；若對方問到私人資訊，提出替代說法或說明不回答的界線，讓互動繼續而不犧牲安全。"},
+        {"id": "reflect", "phase": "reflect", "heading": "檢查故事是否替別人代言", "body": "回看自己的稿子，圈出一個把推測寫成他人想法的句子、一個無助於主題的細節，以及一個缺少轉折的段落。各自改成有標籤、可刪除或可補充的版本，再用聽眾角度說明修改理由。"},
+    ], "summary": ["依分享目的、聽眾與時間選擇事件與細節。", "用背景、關鍵事件、轉折、結果與反思組織經驗。", "分開事實、感受與推測，避免替別人代言。", "以重述、回應、修正與界線管理完成雙向分享。"], "exitCheck": [{"prompt": "為什麼經驗分享不能照時間把所有事情都說一遍？", "expectedEvidence": "能指出需要依目的與聽眾取捨材料，保留推動主題的事件與必要背景。"}, {"prompt": "如何讓一段故事的細節不變成流水帳？", "expectedEvidence": "能說明每個細節應連結轉折、判斷、情緒或下一步，無關細節改成摘要或刪除。"}, {"prompt": "聽眾提問涉及私人經驗時，如何繼續互動？", "expectedEvidence": "能重述問題、說明可回答範圍，必要時提供不暴露個資的替代資訊或清楚拒答。"}]}
+    data["interactive"] = {"type": "guided-choice", "goal": "依目的與聽眾組織經驗，區分事實／感受／推測，並用回應與修正完成分享。", "scenario": "從修繕、旅行與社團合作故事中選材、安排轉折，再處理聽眾提問。", "variables": [{"symbol": "p", "meaning": "分享目的"}, {"symbol": "s", "meaning": "選材與結構"}, {"symbol": "r", "meaning": "回應與修正"}], "steps": [
+        {"id": "step-1", "prompt": "要教大家如何合作，校園修繕經驗應先怎麼選材？", "options": ["保留能呈現分工、困難、轉折與結果的事件，刪去無關流水帳", "把十個事件全部照時間念完", "只描述最有趣的照片"], "answer": "A", "feedback": "A 讓材料服務分享目的，聽眾能理解合作如何發生與改變。"},
+        {"id": "step-2", "prompt": "分享旅行時，哪種表達最能區分事實與觀點？", "options": ["先說可核對的行程與變化，再標示自己的感受、推測與反思", "把同行者的想法都寫成自己的結論", "只用『很棒、很難忘』代替細節"], "answer": "A", "feedback": "A 保留證據與個人聲音的差異，不替別人代言也不讓抽象評語取代內容。"},
+        {"id": "step-3", "prompt": "聽眾提問超出可回答的私人範圍時，如何回應？", "options": ["重述能回答的部分，說明界線並提供不暴露個資的替代資訊", "為了顯得完整而猜一個答案", "直接責怪提問者不尊重"], "answer": "A", "feedback": "A 同時維持互動、誠實和安全，讓分享者能管理自己的經驗。"},
+    ]}
+    data["authoringStandard"] = "version-fused-v1"
+    data["updatedAt"] = "2026-09-21"
+    data["versionResearch"] = [
+        rec("nani", "https://course.cyc.edu.tw/upfile/course114/sub1/15950803923674214.pdf；國語文口語表達、經驗分享與聆聽互動定位；核讀 2026-09-21。", ["依目的與情境表達經驗、意見和感受。", "口語表達要能讓聽者理解重點並適切回應。"], ["事件、細節、語氣、摘要、感受與回應。"], "把分享當成完整回憶錄，忽略聽眾與表達目的。", "評量內容組織、情境適切、經驗表達與互動回應。"),
+        rec("kanghsuan", "https://course.cyc.edu.tw/upfile/course114/sub1/15939547496629384.pdf；國語文口語溝通、討論與經驗表達定位；核讀 2026-09-21。", ["口語分享需要依對象調整材料、語氣與互動方式。", "合作討論要能聆聽提問、重述並修正自己的表達。"], ["目的、聽眾、背景、轉折、回饋與修訂。"], "以為說得越多越有內容，或把不同聽眾使用同一套細節。", "重視聽眾意識、組織、回饋與修正。"),
+        rec("hanlin", "https://www.msjh.ntpc.edu.tw/uploads/1691978949408RP7cOuyZ.pdf；國文聆聽、口語表達與評量定位；核讀 2026-09-21。", ["表達經驗需掌握重點、順序、語意與說話者立場。", "理解與表達要區分事實、感受、推論和觀點。"], ["主題、因果、轉折、結果、反思、提問與界線。"], "把自己的推測寫成別人的想法，或只用情緒評語替代事件。", "要求重點明確、脈絡完整、觀點有標籤並能回應問題。"),
+    ]
+    data["fusionRecord"] = {"commonCore": ["三版本公開結構共同支持依目的、情境與對象進行口語表達和經驗分享。", "材料選擇、組織順序、觀點標記、聆聽提問與修正需要連續檢查。", "良好分享同時包含內容脈絡與互動責任，不以資訊量取代理解。"], "versionDifferences": ["南一較突顯口語理解、經驗表達與情境回應；康軒較突顯對象意識、合作討論與回饋修訂；翰林較突顯重點、脈絡、立場與事實／觀點區分。這是公開課程計畫層級差異，不宣稱完整教材差異。"], "originalAdditions": ["以修繕經驗示範依目的刪選材料。", "以旅行流水帳重寫出轉折與反思。", "以不同聽眾和私人提問練習調整內容與回應界線。"], "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織經驗選材、口語結構、事實／感受／推測、聽眾調整與互動修正。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"}
+    data["teaching"]["body"][1]["body"] += " 先用一句話寫分享核心，再逐格檢查每個事件是否服務這個核心；如果兩格互相矛盾，保留矛盾並解釋，不用模糊語句掩蓋。"
+    data["teaching"]["body"][5]["body"] += " 將修改後的段落交給同伴只回答『我聽懂的主題是什麼、哪裡仍不清楚』，用回饋檢查故事是否真的可理解。"
+    LESSON.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    REPORT.write_text(json.dumps({"unit": "2-Ⅳ-1：把經驗說成有重點、可理解的故事", "lessonId": data["id"], "status": "first-pass-ai-review-complete", "reviewStatus": "draft", "checks": {"unitSpecificOriginalContent": True, "threeVersionResearchRecords": True, "fusionRecordPresent": True, "interactivePredictionManipulationExplanation": True, "answersAndDetailedSteps": True, "terraSecondPass": "pending"}, "reviewedAt": "2026-09-21"}, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print("authored chinese performance 2-iv-1")
+
+
+if __name__ == "__main__":
+    main()

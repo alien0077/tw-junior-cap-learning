@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-s-iv-1",
   "subject": "math",
-  "title": "s-Ⅳ-1：幾何形體定義符號性質",
+  "title": "s-Ⅳ-1：用定義與符號讀懂幾何形體",
   "knowledgeIds": [
     "kg-math-performance-s-iv-1"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「幾何形體定義符號性質」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "幾何圖形的名稱不是只用來背外觀；定義決定哪些條件一定成立，符號則讓角、邊、平行與垂直等關係可以精確記錄。矩形是四個直角的四邊形，正方形除了四個直角還有四邊等長；若只看到圖形『像』某種形狀而未檢查條件，判斷就可能錯誤。本課用紙模型、座標圖與校園設計的自編情境，練習由定義列出性質、由符號讀取關係，並區分必要條件與看似相似的線索。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「幾何形體定義符號性質」相關的關係。"
+        "heading": "先用定義分類",
+        "body": "分類圖形時先列出定義條件，再逐項核對資料。外觀方向、大小或畫圖比例不是定義；例如旋轉後的正方形仍保有四邊等長與四個直角。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「幾何形體定義符號性質」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "符號是可檢查的語言",
+        "body": "AB 表示線段長度，∠A 表示角，AB∥CD 表示平行，AB⊥CD 表示垂直。符號順序與標記位置都要和圖形對應，不能把線段名稱與長度或射線混為一談。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「幾何形體定義符號性質」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "性質從定義推出",
+        "body": "若圖形符合矩形定義，可推出對邊平行、對邊等長與四角皆為直角；但只知道一組對邊等長，不能直接推出它是矩形。結論必須有足夠條件支持。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「幾何形體定義符號性質」，並指出至少一項支持判斷的條件。"
+        "heading": "必要與充分要分清",
+        "body": "四個直角是矩形的定義條件之一，但『看起來像長方形』不是證明。用表格記錄已知條件、可推出性質與尚缺條件，能避免把結果反過來當成理由。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「幾何形體定義符號性質」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先寫定義條件，再核對圖形資料，不靠外觀猜測。",
+    "正確讀取線段、角、平行與垂直的符號及順序。",
+    "把已知條件、可推出性質與尚缺條件分開記錄。",
+    "旋轉、縮放或改變位置不會自動改變幾何定義。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「幾何形體定義符號性質」並驗算結果。",
-    "scenario": "以「s-Ⅳ-1：幾何形體定義符號性質」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "由幾何定義與符號條件分類圖形，並以反例檢查結論。",
+    "scenario": "拖曳條件卡片到圖形，觀察哪些性質可推出、哪些資料仍不足。",
     "variables": [
       {
+        "symbol": "a",
+        "meaning": "圖形中的邊長或角度資料"
+      },
+      {
+        "symbol": "b",
+        "meaning": "與 a 對應的另一條邊或角"
+      },
+      {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "待判斷的幾何條件"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「幾何形體定義符號性質」的第一步是什麼？",
+        "prompt": "判斷旋轉後圖形是否仍為正方形，應先檢查什麼？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "四邊等長且四角直角等定義條件",
+          "圖形是否水平放置",
+          "圖形看起來是否像正方形"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "幾何分類依定義條件，不依方向或外觀。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "AB∥CD 的符號意義是什麼？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "線段 AB 與 CD 平行",
+          "A、B、C、D 四點等距",
+          "AB 與 CD 垂直"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "平行符號連結兩條線段，需回到圖形確認端點順序。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "只有一組對邊平行時，能否直接判定矩形？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "不能，還需足夠的直角或其他條件",
+          "可以，任何平行四邊形都是矩形",
+          "可以，只要圖形畫得像"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "單一平行條件不足，需以定義與反例檢查。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "s-Ⅳ-1：幾何形體定義符號性質；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；s-Ⅳ-1：幾何形體定義符號性質：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「幾何形體定義符號性質」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「s-Ⅳ-1：幾何形體定義符號性質」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；s-Ⅳ-1：幾何形體定義符號性質：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「s-Ⅳ-1：幾何形體定義符號性質」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；s-Ⅳ-1：幾何形體定義符號性質：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「s-Ⅳ-1：幾何形體定義符號性質」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「幾何形體定義符號性質」",
-        "body": "以「幾何形體定義符號性質」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "紙框旋轉後還是正方形嗎？",
+        "body": "原創紙模型把一個正方形旋轉 30 度，再與一個看似接近矩形的四邊形並列。請學習者先不看名稱，逐一檢查四邊長與四角，說明旋轉只改變位置，不改變定義性質；另一個圖形則必須依測量條件而非外觀判斷。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「幾何形體定義符號性質」的概念架構",
-        "body": "本單元依官方課綱所列的「幾何形體定義符號性質」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "由定義到性質的推理鏈",
+        "body": "以矩形為例，先寫四邊形且四角皆為直角的條件，再標記由幾何關係可推出的對邊平行與等長。接著給只有一組對邊平行的梯形反例，說明單一性質不足以倒推矩形，讓『條件→結論』方向保持清楚。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「s-Ⅳ-1：幾何形體定義符號性質」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。"
+        "heading": "讀懂符號並回到圖上",
+        "body": "在自編四邊形 ABCD 中，標記 AB∥CD、AB=CD、∠A=90°。先把每個符號翻成文字，再判斷哪些資訊可支持平行、等長與直角，最後檢查頂點順序是否沿著圖形邊界，避免把 AC 誤讀成相鄰邊。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「幾何形體定義符號性質」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用條件卡片分類圖形",
+        "body": "提供『四邊等長』『四角直角』『一組對邊平行』『對角線相等』等卡片，讓學習者把卡片放到正方形、矩形、菱形或一般平行四邊形，並標記可推出、可能但不足、或與定義無關。每次分類都要寫出理由與反例。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「幾何形體定義符號性質」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "把符號用到校園設計",
+        "body": "原創校園地磚圖要求設計一塊無障礙矩形區域，先用平行與垂直符號記錄邊界，再說明哪些長度相等是設計條件、哪些是由矩形定義推出。若地磚旋轉或縮放，要重新檢查單位與幾何關係，而不是只複製圖形名稱。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「幾何形體定義符號性質」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "修正只看外觀的判斷",
+        "body": "請修正『四邊形有一組對邊平行，所以一定是矩形』。先指出條件不足，再給出平行四邊形或梯形作反例，最後列出要確認四角為直角或其他充分條件的證據；把反例的邊與角標記回圖上，檢查符號讀法是否支持你的結論。"
       }
     ],
     "summary": [
-      "先用自己的話界定「幾何形體定義符號性質」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "幾何圖形先依定義分類，外觀、方向與大小不是充分證據。",
+      "正確讀取線段、角、平行與垂直符號，並核對頂點順序。",
+      "由已知條件推出性質，不能把單一結果反過來當成完整理由。",
+      "用反例、條件表與單位檢查幾何判斷是否足夠。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「幾何形體定義符號性質」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "旋轉後的正方形為什麼仍是正方形？",
+        "expectedEvidence": "旋轉改變位置與方向，但四邊等長、四角直角等定義條件不變。"
       },
       {
-        "prompt": "在「幾何形體定義符號性質」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "AB∥CD 與 AB⊥CD 各表示什麼？",
+        "expectedEvidence": "前者表示線段 AB 與 CD 平行，後者表示兩線段互相垂直；符號需對應圖上的線段。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「幾何形體定義符號性質」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼一組對邊平行不足以判斷矩形？",
+        "expectedEvidence": "梯形或一般平行四邊形也可能有平行邊，但未必有四個直角，需補足定義條件。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『s-Ⅳ-1：用定義與符號讀懂幾何形體』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『拖曳條件卡片到圖形，觀察哪些性質可推出、哪些資料仍不足。』開始前，先回答：判斷旋轉後圖形是否仍為正方形，應先檢查什麼？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『拖曳條件卡片到圖形，觀察哪些性質可推出、哪些資料仍不足。』回答：只有一組對邊平行時，能否直接判定矩形？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "判斷旋轉後圖形是否仍為正方形，應先檢查什麼？；操作時先預測，再依『s-Ⅳ-1：用定義與符號讀懂幾何形體』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-1：用定義與符號讀懂幾何形體)：答案 A；選項內容：四邊等長且四角直角等定義條件",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。幾何分類依定義條件，不依方向或外觀。",
+          "feedback": "幾何分類依定義條件，不依方向或外觀。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "AB∥CD 的符號意義是什麼？；操作時先預測，再依『s-Ⅳ-1：用定義與符號讀懂幾何形體』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-1：用定義與符號讀懂幾何形體)：答案 A；選項內容：線段 AB 與 CD 平行",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。平行符號連結兩條線段，需回到圖形確認端點順序。",
+          "feedback": "平行符號連結兩條線段，需回到圖形確認端點順序。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "只有一組對邊平行時，能否直接判定矩形？；操作時先預測，再依『s-Ⅳ-1：用定義與符號讀懂幾何形體』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(s-Ⅳ-1：用定義與符號讀懂幾何形體)：答案 A；選項內容：不能，還需足夠的直角或其他條件",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。單一平行條件不足，需以定義與反例檢查。",
+          "feedback": "單一平行條件不足，需以定義與反例檢查。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；幾何形體定義、符號與性質的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以幾何形體定義與基本性質建立分類推理",
+          "公開課程結構支持以定義、圖形條件與符號關係判斷幾何性質。"
+        ],
+        "representations": [
+          "圖形標記、線段角度符號與條件表"
+        ],
+        "examplesOrEvidence": [
+          "本課的紙模型、座標圖形與校園設計均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "以外觀或方向判斷圖形，忽略必要定義條件"
+        ],
+        "assessmentEmphasis": [
+          "要求從已知條件推出性質並說明不足之處"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；幾何形體定義、符號與性質的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過操作圖形與符號辨識平行、垂直及等長",
+          "公開課程結構支持以定義、圖形條件與符號關係判斷幾何性質。"
+        ],
+        "representations": [
+          "紙模型、標記圖、符號翻譯與反例"
+        ],
+        "examplesOrEvidence": [
+          "本課的紙模型、座標圖形與校園設計均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把圖形畫法當成幾何性質，或讀錯頂點順序"
+        ],
+        "assessmentEmphasis": [
+          "重視多重表徵、分類理由與條件核對"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf；幾何形體定義、符號與性質的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "把幾何定義連結到座標與設計情境",
+          "公開課程結構支持以定義、圖形條件與符號關係判斷幾何性質。"
+        ],
+        "representations": [
+          "座標圖形、平面設計、長度單位與推理鏈"
+        ],
+        "examplesOrEvidence": [
+          "本課的紙模型、座標圖形與校園設計均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把結果性質當作充分條件，未檢查模型限制"
+        ],
+        "assessmentEmphasis": [
+          "評估定義、符號、反例與情境單位是否一致"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持由幾何定義、符號與圖形條件建立分類。",
+      "平行、垂直、等長與角度標記需在圖形與文字間互相核對。",
+      "必要條件、可推出性質與反例是判斷結論是否足夠的共同工具。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯形體定義與基本性質；康軒較突顯紙模型、標記與符號操作；翰林較突顯座標、設計及條件推理。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以旋轉紙框區分外觀方向與不變的幾何定義。",
+      "以條件卡片及梯形反例診斷把單一性質反推成完整分類。",
+      "把符號讀取、必要條件、反例、單位與校園設計整合成互動任務。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織幾何形體定義、符號、平行垂直、等長、性質推導與反例判斷。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

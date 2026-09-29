@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tw-junior-cap-learning.local/schemas/composition-contract.schema.json",
+  "type": "object",
+  "required": ["domain", "modules", "attemptFlow", "noDraftPolicy"],
+  "properties": {
+    "domain": {"const": "composition"},
+    "modules": {"type": "array", "minItems": 13, "items": {"type": "string"}},
+    "attemptFlow": {"const": ["student-draft", "one-problem", "first-hint", "student-revision", "re-diagnose"]},
+    "noDraftPolicy": {"const": "do-not-generate-a-complete-article"}
+  }
+}

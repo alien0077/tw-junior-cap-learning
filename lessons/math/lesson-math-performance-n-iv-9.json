@@ -1,7 +1,7 @@
 {
   "id": "lesson-math-performance-n-iv-9",
   "subject": "math",
-  "title": "n-Ⅳ-9：計算機與誤差",
+  "title": "n-Ⅳ-9：用誤差與精度判斷近似值",
   "knowledgeIds": [
     "kg-math-performance-n-iv-9"
   ],
@@ -11,30 +11,31 @@
     "9"
   ],
   "content": {
-    "summary": "本課聚焦「計算機與誤差」，以自編範例練習概念、證據與新情境遷移。",
+    "summary": "計算機可以快速產生近似數，但螢幕上的位數不等於答案就完全正確。誤差是近似值與真值之間的差距，實際題目常只能知道量落在某個範圍，或只能以指定精度記錄。本課以量測讀值、圓周計算與材料裁切的自編情境，區分絕對誤差、相對誤差、截位與四捨五入，並練習依需求選擇合適位數、單位與誤差說明。",
     "sections": [
       {
-        "heading": "學習目標",
-        "body": "能根據題目提供的條件、資料或情境，辨識並說明「計算機與誤差」相關的關係。"
+        "heading": "近似值不是隨便取的數",
+        "body": "真值可能無法完整寫出，或儀器只能讀到某一刻度；近似值必須附上精度或範圍。先說明數字如何得到，再說明還可能偏離多少，答案才可被解讀。"
       },
       {
-        "heading": "學習流程",
-        "body": "先讀出題幹中與「計算機與誤差」有關的條件；再以自己的話整理判斷依據；最後回到題目檢查結論。"
+        "heading": "絕對誤差與相對誤差",
+        "body": "若知道真值，絕對誤差可用 |近似值−真值| 表示；相對誤差則把誤差與真值比較，適合判斷不同尺度的結果。真值未知時不能假裝算出精確誤差，應改用誤差上限或量測範圍。"
       },
       {
-        "heading": "常見錯誤",
-        "body": "不要只因看到「計算機與誤差」的名稱就作答；必須確認題幹證據與結論是否一致。"
+        "heading": "截位、四捨五入與有效精度",
+        "body": "截位直接捨去後面位數，四捨五入則看下一位；兩者可能造成不同方向的偏差。題目指定小數位、有效位數或測量刻度時，要依規則呈現，不以更多位數掩蓋精度限制。"
       },
       {
-        "heading": "自我檢核",
-        "body": "嘗試在新情境中說明何時適用「計算機與誤差」，並指出至少一項支持判斷的條件。"
+        "heading": "選擇符合目的的結果",
+        "body": "工程裁切、距離估算與統計報告需要不同精度。最後要檢查單位、誤差方向、四捨五入方式與是否會影響決策，讓計算機成為可解釋的工具而不是答案黑盒子。"
       }
     ]
   },
   "studyHighlights": [
-    "先圈出與「計算機與誤差」直接相關的條件。",
-    "用自己的話說出判斷依據，不靠答案位置或關鍵字猜測。",
-    "回到原題檢查結論是否符合所有限制與資料。"
+    "先區分真值、近似值、誤差與可報告的精度。",
+    "知道真值才可直接算絕對誤差；未知時改用範圍或誤差上限。",
+    "分辨截位與四捨五入，依題目和測量刻度決定位數。",
+    "用單位、誤差方向與實際用途檢查近似結果。"
   ],
   "studyReferences": [
     "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
@@ -47,73 +48,115 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-27",
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-21",
   "interactive": {
-    "type": "algebra-expression-builder",
-    "goal": "用可檢查的步驟處理「計算機與誤差」並驗算結果。",
-    "scenario": "以「n-Ⅳ-9：計算機與誤差」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "type": "guided-choice",
+    "goal": "依真值、精度與用途選擇近似表示，並計算或估計誤差。",
+    "scenario": "切換真值已知或未知、改變刻度與報告位數，觀察誤差和用途是否相稱。",
     "variables": [
       {
         "symbol": "x",
-        "meaning": "題目中待求或可變的量"
+        "meaning": "原始真值或計算結果"
+      },
+      {
+        "symbol": "a",
+        "meaning": "要報告的近似值"
+      },
+      {
+        "symbol": "e",
+        "meaning": "允許的誤差或儀器刻度限制"
       }
     ],
     "steps": [
       {
         "id": "step-1",
-        "prompt": "處理「計算機與誤差」的第一步是什麼？",
+        "prompt": "真值 10、近似值 9.8 時，絕對誤差是多少？",
         "options": [
-          "先定義量與條件",
-          "直接猜最後答案",
-          "省略題目資料"
+          "0.2",
+          "9.8",
+          "19.8"
         ],
         "answer": "A",
-        "feedback": "先定義量與條件，後續表示法才可檢查。"
+        "feedback": "絕對誤差取近似值與真值差的絕對值。"
       },
       {
         "id": "step-2",
-        "prompt": "建立表示法後應如何繼續？",
+        "prompt": "3.1469 四捨五入到小數第二位應選哪個？",
         "options": [
-          "逐步推理並記錄理由",
-          "只寫最後結果",
-          "任意更換符號"
+          "3.15",
+          "3.14",
+          "3.1"
         ],
         "answer": "A",
-        "feedback": "每一步都要保留運算或幾何理由。"
+        "feedback": "小數第三位是 6，因此第二位 4 要進位成 5。"
       },
       {
         "id": "step-3",
-        "prompt": "完成後如何確認？",
+        "prompt": "真值未知但儀器刻度為 0.1，報告結果最需要附上什麼？",
         "options": [
-          "回到原條件代回、看圖或檢查單位",
-          "只看答案順不順眼",
-          "跳過範圍檢查"
+          "測量精度或誤差範圍",
+          "任意增加十位小數",
+          "只寫計算機畫面"
         ],
         "answer": "A",
-        "feedback": "回到原條件驗算，才能確認答案有意義。"
+        "feedback": "沒有真值時不能假裝算精確誤差，應說明刻度造成的限制。"
       }
     ]
   },
-  "authoringStandard": "full-lesson-v1",
+  "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
     {
       "publisher": "hanlin",
-      "edition": "翰林國中數學公開解題影音網",
+      "edition": "hanlin 公立校方章節級交叉證據（math）",
       "subject": "math",
-      "chapterLocator": "n-Ⅳ-9：計算機與誤差；公開教材結構研究定位",
-      "sourceUrl": "https://mathvideo.hle.com.tw/1A/",
+      "chapterLocator": "文山國中公立校方翰林版數學課程計畫；數與量、圖形性質與評量欄位。；n-Ⅳ-9：計算機與誤差：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.wsjh.ntpc.edu.tw/wp-content/uploads/doc/wsjh613/07_113-1%E7%BF%B0%E6%9E%97%E7%89%88_%E4%B8%83%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8.pdf",
       "access": "public-open",
-      "reviewedAt": "2026-08-27",
+      "reviewedAt": "2026-09-21",
       "researchScope": [
         "teaching-sequence",
         "concept-progression",
         "activity-pattern",
         "assessment-pattern"
       ],
-      "outcome": "公開出版社資源用於核對「計算機與誤差」的教學順序、表徵與活動型態；本頁採自編正文與可重做示例，並標示其為learning-performance節點。",
-      "copyrightBoundary": "只研究公開章節定位與教學結構；本頁正文、例題、選項、提示與回饋均獨立撰寫，不複製出版社文字、圖片、題目或答案。"
+      "outcome": "記錄hanlin公立校方或官方公開結構對「n-Ⅳ-9：計算機與誤差」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "大豐國中公立校方康軒版數學課程計畫；數與量、幾何操作與多元評量欄位。；n-Ⅳ-9：計算機與誤差：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄kanghsuan公立校方或官方公開結構對「n-Ⅳ-9：計算機與誤差」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方章節級交叉證據（math）",
+      "subject": "math",
+      "chapterLocator": "民族國中公立校方南一版數學課程計畫；數與量及幾何單元的章節與評量欄位。；n-Ⅳ-9：計算機與誤差：概念、表徵與評量定位；核讀 2026-09-21。",
+      "sourceUrl": "https://hakka.mtjh.kh.edu.tw/114plan/05/1/5-1-G-7.pdf",
+      "access": "public-open",
+      "reviewedAt": "2026-09-21",
+      "researchScope": [
+        "teaching-sequence",
+        "concept-progression",
+        "activity-pattern",
+        "assessment-pattern"
+      ],
+      "outcome": "記錄nani公立校方或官方公開結構對「n-Ⅳ-9：計算機與誤差」的章節定位、概念表徵與評量方向；正文、例題、題目、答案與互動仍為本專案獨立撰寫，三版本融合審查尚未完成。",
+      "copyrightBoundary": "只保留公開章節定位、教學結構與評量方向；不複製出版社或校方教材正文、圖片、題目、答案、影音或版面。"
     }
   ],
   "teaching": {
@@ -121,58 +164,58 @@
       {
         "id": "hook",
         "phase": "hook",
-        "heading": "從情境進入「計算機與誤差」",
-        "body": "以「計算機與誤差」為情境，先讀一則原創英文訊息或對話，圈出人物、時間、目的與關鍵字，再預測訊息重點；不懂的字先依上下文標記而非亂猜。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "量測桌面的兩個讀值都能用嗎？",
+        "body": "原創木工任務量到桌長 120.4 公分，儀器最小刻度為 0.1 公分；另一位同學報告 120.437891 公分。請學習者比較兩份報告的資訊是否真的更精確，再說明儀器刻度如何限制最後位數，建立近似值必須附精度的觀念。"
       },
       {
         "id": "explain",
         "phase": "explain",
-        "heading": "建立「計算機與誤差」的概念架構",
-        "body": "本單元依官方課綱所列的「計算機與誤差」範圍，先界定關鍵詞與判斷任務，再用一個可重做的例子驗證。閱讀或操作時把條件、步驟、證據與結論分開記錄；若資料不足，明確寫出限制，不把推測當成事實。"
+        "heading": "把誤差寫成距離與比例",
+        "body": "以真值 10、近似值 9.8 示範絕對誤差 |9.8−10|=0.2；再說明相對誤差為 0.2/10=0.02，也就是 2%。接著標示真值未知時不能直接套這個分母，而應用刻度造成的誤差範圍，避免把估計當真值。"
       },
       {
         "id": "worked-example",
         "phase": "worked-example",
-        "heading": "用自編資料走完一次",
-        "body": "以「n-Ⅳ-9：計算機與誤差」為主題，先把題目條件整理成符號、表格或圖形，再逐步推理並回到原條件驗算；所有數字與情境皆為本專案自編，重點是示範可重做的理由。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "比較截位與四捨五入",
+        "body": "把 3.1469 取到小數第二位：截位為 3.14，因第三位是 6，四捨五入為 3.15。分別計算與原數的差，觀察截位偏小、四捨五入較接近的理由；最後依題目指定方法選擇報告值，不混用名稱。"
       },
       {
         "id": "guided-practice",
         "phase": "guided-practice",
-        "heading": "依步驟完成練習",
-        "body": "針對「計算機與誤差」先辨識句型或溝通功能，再組成完整英文句子；替換一項條件後重讀，檢查主詞、動詞、語序、語意與禮貌程度。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "用誤差需求選位數",
+        "body": "給出圓周計算的計算機結果 31.415926 公分，並提供三種用途：課堂估算、紙板裁切、精密比較。學習者先讀取允許誤差與單位，再決定 31.4、31.42 或保留更多位數；每個選擇都要寫出理由，而非單純選最長數字。"
       },
       {
         "id": "transfer",
         "phase": "transfer",
-        "heading": "換到新情境仍能使用",
-        "body": "把「計算機與誤差」的語言策略換到圖片、表格、短文或角色扮演，依受眾與目的調整字詞和句型，並用原文線索檢查理解。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "比較不同尺度的量測",
+        "body": "原創任務比較長 2 公尺的誤差 1 公分與長 20 公分的誤差 0.5 公分。先算絕對誤差，再用相對誤差比較哪項量測比例上更不穩定；最後討論在不同用途下，不能只看誤差的數字大小。"
       },
       {
         "id": "reflect",
         "phase": "reflect",
-        "heading": "回顧證據與限制",
-        "body": "回顧「計算機與誤差」：哪個字詞或句型完成了溝通目的？改變人物、時間或語氣後，哪些地方必須重寫？把修正理由寫成完整句子。 完成後把判斷依據寫成一至兩句完整說明，讓同學能依相同步驟重做並檢查答案。"
+        "heading": "修正『位數越多越準』",
+        "body": "請學習者反駁『計算機顯示 3.1415926535，所以報告越多位數越可靠』。先指出輸入資料與儀器精度的限制，再寫出符合用途的近似值、單位及誤差說明，最後用反例說明多出的位數可能只是計算顯示而非測量資訊。"
       }
     ],
     "summary": [
-      "先用自己的話界定「計算機與誤差」的關鍵概念與適用條件。",
-      "依序完成表示、操作或閱讀步驟，並在每一步留下可檢查的理由。",
-      "把直接證據、推論與限制分開，避免只背結論或套用固定模板。",
-      "把方法換到新情境，再檢查條件改變後哪些步驟與答案需要調整。"
+      "近似值需要精度或範圍說明，螢幕位數不等於真實資訊量。",
+      "知道真值可算絕對與相對誤差，真值未知時應報告誤差上限。",
+      "截位與四捨五入的規則不同，位數依題目與儀器刻度決定。",
+      "以單位、誤差比例與實際用途判斷報告結果是否合適。"
     ],
     "exitCheck": [
       {
-        "prompt": "請用自己的話說明「計算機與誤差」的核心概念與一個適用條件。",
-        "expectedEvidence": "能定義關鍵詞，並以正文中的自編例子指出條件與理由。"
+        "prompt": "真值 10、近似值 9.8 的絕對誤差與相對誤差如何求？",
+        "expectedEvidence": "絕對誤差為 0.2，相對誤差為 0.2/10=0.02，即 2%，並說明需知道真值。"
       },
       {
-        "prompt": "在「計算機與誤差」的自編例子中，哪一項資料或語句最能支持你的判斷？",
-        "expectedEvidence": "能指出可重現的數據、句子、圖表或規則，並說明它如何支持結論。"
+        "prompt": "3.1469 取到小數第二位的截位與四捨五入各為何？",
+        "expectedEvidence": "截位為 3.14；四捨五入看第三位 6，得到 3.15。"
       },
       {
-        "prompt": "若題目的條件改變，如何調整處理「計算機與誤差」的方法？",
-        "expectedEvidence": "能比較新舊條件，說明要調整的步驟、表示法或推理，並標示限制。"
+        "prompt": "為什麼計算機顯示更多位數不一定代表量測更準？",
+        "expectedEvidence": "精度受輸入資料、儀器刻度與模型限制；多出的顯示位數可能沒有實際測量證據。"
       }
     ]
   },
@@ -188,6 +231,131 @@
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
       "https://www.naer.edu.tw/"
-    ]
+    ],
+    "learningDesign": {
+      "type": "data-investigation",
+      "objective": "以『n-Ⅳ-9：用誤差與精度判斷近似值』的單元專屬情境完成預測、操作、觀察、解釋與證據回查，並說明結論的適用條件。",
+      "predictionPrompt": "在『切換真值已知或未知、改變刻度與報告位數，觀察誤差和用途是否相稱。』開始前，先回答：真值 10、近似值 9.8 時，絕對誤差是多少？ 並寫出預測依據、需要固定的條件與可能的替代解釋。",
+      "evidencePrompt": "完成三步後，回到『切換真值已知或未知、改變刻度與報告位數，觀察誤差和用途是否相稱。』回答：真值未知但儀器刻度為 0.1，報告結果最需要附上什麼？；請指出哪項資料或回饋支持答案、哪項限制仍需補測。",
+      "steps": [
+        {
+          "id": "step-1",
+          "action": "真值 10、近似值 9.8 時，絕對誤差是多少？；操作時先預測，再依『n-Ⅳ-9：用誤差與精度判斷近似值』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-9：用誤差與精度判斷近似值)：答案 A；選項內容：0.2",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。絕對誤差取近似值與真值差的絕對值。",
+          "feedback": "絕對誤差取近似值與真值差的絕對值。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-2",
+          "action": "3.1469 四捨五入到小數第二位應選哪個？；操作時先預測，再依『n-Ⅳ-9：用誤差與精度判斷近似值』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-9：用誤差與精度判斷近似值)：答案 A；選項內容：3.15",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。小數第三位是 6，因此第二位 4 要進位成 5。",
+          "feedback": "小數第三位是 6，因此第二位 4 要進位成 5。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        },
+        {
+          "id": "step-3",
+          "action": "真值未知但儀器刻度為 0.1，報告結果最需要附上什麼？；操作時先預測，再依『n-Ⅳ-9：用誤差與精度判斷近似值』的條件選擇資料或表示，最後記錄選項理由。",
+          "equation": "判準(n-Ⅳ-9：用誤差與精度判斷近似值)：答案 A；選項內容：測量精度或誤差範圍",
+          "reason": "這一步把單元問題轉成可觀察的判斷，保留原互動的選項與條件，讓學習者能重做並說明為何選擇。沒有真值時不能假裝算精確誤差，應說明刻度造成的限制。",
+          "feedback": "沒有真值時不能假裝算精確誤差，應說明刻度造成的限制。 若判斷不同，請回看題幹條件、資料範圍與表示法，不要只更換答案字母。"
+        }
+      ]
+    }
+  },
+  "versionResearch": [
+    {
+      "publisher": "nani",
+      "edition": "nani 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.yfms.tyc.edu.tw/uploads/1661134274196HXsSSWEB.pdf；計算工具、近似值與誤差的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "以近似值、誤差與精度處理數值結果",
+          "公開課程結構支持以真值、近似值、誤差範圍與精度需求判斷數值結果。"
+        ],
+        "representations": [
+          "真值近似值表格、絕對差與誤差範圍"
+        ],
+        "examplesOrEvidence": [
+          "本課的量測讀值、圓周估算與材料裁切均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "把計算機顯示當真值，或未分辨截位和四捨五入"
+        ],
+        "assessmentEmphasis": [
+          "要求列出精度規則、誤差計算與結果限制"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "kanghsuan 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMwTDNCMFlWOHlNak00WHpZNE56STJOMTg0TkRNNU9TNXdaR1k9&fname=WSGGIGB0MK10OOMP50POSWHGFC30WTIG14JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP34GCGCIHXTXW40YSUSB450PKSSXXFCNO10XX21JCLKSWIGQOB4SWHCUS30A110；計算工具、近似值與誤差的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "透過測量與數值操作理解誤差方向及大小",
+          "公開課程結構支持以真值、近似值、誤差範圍與精度需求判斷數值結果。"
+        ],
+        "representations": [
+          "刻度讀值、數線區間、計算機與四捨五入"
+        ],
+        "examplesOrEvidence": [
+          "本課的量測讀值、圓周估算與材料裁切均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "只看誤差絕對數字，不比較量的尺度或用途"
+        ],
+        "assessmentEmphasis": [
+          "重視估算歷程、單位及合適位數的判斷"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "hanlin 公立校方數學課程計畫章節級證據",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.cp.ptc.edu.tw/storage/134513/134513_112_B-1_9A.pdf；計算工具、近似值與誤差的概念、表徵及評量欄位；核讀 2026-09-21。",
+      "reviewedAt": "2026-09-21",
+      "findings": {
+        "concepts": [
+          "連結工具估算、相對誤差與實際測量決策",
+          "公開課程結構支持以真值、近似值、誤差範圍與精度需求判斷數值結果。"
+        ],
+        "representations": [
+          "圓周、裁切、尺度比較與允許誤差情境"
+        ],
+        "examplesOrEvidence": [
+          "本課的量測讀值、圓周估算與材料裁切均為原創情境，只承接公開課程所示的能力方向。"
+        ],
+        "misconceptions": [
+          "以更多位數掩蓋資料精度不足，或真值未知仍報精確誤差"
+        ],
+        "assessmentEmphasis": [
+          "評估模型、精度、單位與決策風險是否一致"
+        ]
+      },
+      "licenseBoundary": "只記錄公開課程計畫的概念與評量方向；不複製出版社或學校教材正文、例題、圖表、題目、答案、影音或版面。"
+    }
+  ],
+  "fusionRecord": {
+    "commonCore": [
+      "三版本公開結構共同支持以近似、誤差與精度描述數值結果。",
+      "截位、四捨五入、計算機估值與測量範圍需要清楚區分。",
+      "單位、相對尺度與實際用途決定報告位數是否合適。"
+    ],
+    "versionDifferences": [
+      "南一證據較突顯近似與誤差概念；康軒較突顯測量操作、數線與位數；翰林較突顯計算工具、相對誤差與實際決策。這是公開課程計畫層級差異，不宣稱完整教材差異。"
+    ],
+    "originalAdditions": [
+      "以木工量測刻度反駁『計算機位數越多越準』。",
+      "以 3.1469 對照截位與四捨五入的方向及差異。",
+      "把絕對誤差、相對誤差、未知真值、單位與用途整合成互動判斷。"
+    ],
+    "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織計算工具、近似值、絕對／相對誤差、截位、四捨五入與測量精度。正文、例題、互動步驟、回饋與檢核均為本專案原創，未複製任何教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
   }
 }

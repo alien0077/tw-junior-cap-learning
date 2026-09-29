@@ -2,41 +2,84 @@
   "id": "question-science-content-ec-iv-1-3",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年2月5日校園實驗室的觀察中，一個物體質量為 849 g、體積為 23 cm³，研究「Ec-Ⅳ-1：大氣壓力由空氣重量造成」時，其密度為何？",
+  "prompt": "吸盤壓在光滑牆面後，若盤內空氣被擠出且邊緣密合，吸盤能留在牆上主要是因為？",
   "options": [
     {
       "id": "A",
-      "text": "872 g/cm³"
+      "text": "吸盤內外都有相同方向的吸力"
     },
     {
       "id": "B",
-      "text": "0.0270907 g/cm³"
+      "text": "盤內壓力較低，牆外大氣壓力較大而把吸盤推向牆面"
     },
     {
       "id": "C",
-      "text": "19527 g/cm³"
+      "text": "牆面產生向上的磁力"
     },
     {
       "id": "D",
-      "text": "36.913 g/cm³"
+      "text": "吸盤的重量消失"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-ec-iv-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "D",
-    "explanation": "密度＝質量÷體積＝849÷23＝36.913 g/cm³。 本題對應 KG「Ec-Ⅳ-1：大氣壓力由空氣重量造成」。"
+    "value": "B",
+    "explanation": "擠出盤內空氣後，盤內壓力降低；外界大氣壓力較大，對吸盤外側產生壓向牆面的合力，密合才能維持壓力差。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化資料僅作大氣壓力、壓力差、液柱與生活應用的能力方向研究；未複製原題、選項、圖表或答案。",
+    "authoringNote": "依官方課綱、KG 與公立學校公開試題能力方向獨立改寫，待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-ec-iv-1"
+  "updatedAt": "2026-09-12",
+  "lessonId": "lesson-science-content-ec-iv-1",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實中九年級理化科題庫",
+      "year": "115",
+      "locator": "大氣壓力、壓力差與氣體現象能力題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用吸盤、吸管、液柱、氣壓計與海拔情境考查大氣壓力來源、壓力差及單位面積概念；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國中111學年度第一學期第二次段考九年級理化科試題",
+      "year": "111",
+      "locator": "氣壓、液柱與生活壓力現象判讀題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用吸盤、吸管、液柱、氣壓計與海拔情境考查大氣壓力來源、壓力差及單位面積概念；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國中109學年度上學期三年級第三次段考自然科試題",
+      "year": "109",
+      "locator": "大氣壓力、吸盤吸管與氣體應用題型",
+      "subject": "science",
+      "observedPattern": "公立學校公開自然／理化試題常用吸盤、吸管、液柱、氣壓計與海拔情境考查大氣壓力來源、壓力差及單位面積概念；本題只取能力方向並重新設計情境、數據與選項。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "畫出吸盤內外兩側，先比較壓力大小，再判斷較大壓力的作用方向。",
+  "solutionSteps": [
+    "確認吸盤邊緣密合，空氣不易進入。",
+    "盤內空氣被擠出，內壓降低。",
+    "牆外大氣壓力相對較大。",
+    "外界壓力對吸盤產生壓向牆面的合力。",
+    "因此吸盤能被壓住，而不是因為神秘吸力。"
+  ]
 }

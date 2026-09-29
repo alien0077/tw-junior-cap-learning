@@ -2,23 +2,23 @@
   "id": "question-chinese-argument-4",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "哪一句最接近文章的主要主張？",
+  "prompt": "一段文字先列出圖書館延長開放後的使用人次，最後寫「因此學校應增加晚間閱讀空間」；主要主張是？",
   "options": [
     {
       "id": "A",
-      "text": "因此學校應增加閱讀時間"
+      "text": "延長開放後的人次變化"
     },
     {
       "id": "B",
-      "text": "昨天圖書館有三十位學生"
+      "text": "有人曾在晚間使用圖書館"
     },
     {
       "id": "C",
-      "text": "有人喜歡在家閱讀"
+      "text": "使用人次增加足以證明延長開放必然有效"
     },
     {
       "id": "D",
-      "text": "這本書共有八章"
+      "text": "學校應增加晚間閱讀空間"
     }
   ],
   "knowledgeIds": [
@@ -26,17 +26,63 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "A",
-    "explanation": "主要主張是作者希望讀者接受的判斷。"
+    "value": "D",
+    "explanation": "『因此』引出的政策判斷『學校應增加晚間閱讀空間』是作者希望讀者接受的主張；人次變化是可能的論據，但本身還不足以證明政策必然有效。正確答案：D。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
-    "sourceLocator": "公立國中公開試題命題方向參考；question-chinese-argument-4.json 獨立命題（非原題重製）",
-    "authoringNote": "獨立命題，非原題重製"
+    "sourceUrl": "https://www.fhjh.ntpc.edu.tw/var/file/0/1000/img/154/789122026.pdf",
+    "sourceLocator": "新北市立福和國中112學年度九年級上學期第三次段考國文第15題（試卷第5頁）：辨識作者論點與立論證據；本題改寫為全新語料。",
+    "authoringNote": "依官方課綱與單元 KG 獨立命題，使用原創語料與選項，未複製公校原題；題庫首輪AI內容校核已於2026-09-27更新，公開試題各筆來源仍須逐題確認定位與改寫界線，完成前維持draft；不進行Terra複核。"
   },
-  "reviewStatus": "content-reviewed",
-  "updatedAt": "2026-08-25",
-  "lessonId": "lesson-chinese-argument-evidence-basics"
+  "reviewStatus": "draft",
+  "updatedAt": "2026-09-27",
+  "lessonId": "lesson-chinese-argument-evidence-basics",
+  "examPatternRefs": [
+    {
+      "url": "https://www.fhjh.ntpc.edu.tw/var/file/0/1000/img/154/789122026.pdf",
+      "title": "新北市立福和國中112學年度九年級上學期第三次段考國文試題分析；僅參考論點與證據區辨題型，不複製原題。",
+      "year": "112-1",
+      "subject": "chinese",
+      "locator": "試卷分析第5頁第15題：辨認作者論點而非立論證據",
+      "observedPattern": "題目提供多項文獻／學者資料，要求分辨作者主觀推論與支持材料；本題只借用論點—論據辨析能力，另造語料。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；只取證據品質、反論與結論範圍的題型與推理方向，未複製原題、選項、圖表或答案。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "試卷第4頁第42題：依文本判斷解釋是否恰當",
+      "observedPattern": "回到文本核對陳述的正確性及資料是否足以支持判斷；本題僅借用證據充分性檢核方式，情境、選項與答案皆重新撰寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E5%9C%8B%E6%96%87%E7%A7%91_8.pdf",
+      "title": "高雄市立國昌國中112學年度第2學期第3次段考二年級國文試題；僅參考論點、論據／反面論點辨識題型。",
+      "year": "112-2",
+      "subject": "chinese",
+      "locator": "第2頁第11題：判讀文章是否提出論點並以言例／事例作論據",
+      "observedPattern": "辨認論點及其言例／事例論據的文本分析模式；本題只借用主張與支持材料的區分，不複製原卷文本、選項或答案。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "item"
+    }
+  ],
+  "solutionStrategy": "找『因此』後的政策或判斷，再回看哪句資料支持它。",
+  "solutionSteps": [
+    "沿著『因此』找出由前文資料推得的政策判斷。",
+    "把使用人次變化標成可能的論據，避免誤選資料句。",
+    "分類其餘選項：背景事實、單一使用情形，或超出證據的必然因果結論。",
+    "作者主張是增加晚間閱讀空間，對應 D。",
+    "人次上升可提示需求，但還須檢查時段、使用者與替代原因。"
+  ],
+  "studyReferences": [
+    "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E5%9C%8B%E6%98%8C--%E4%BA%8C%E5%B9%B4%E7%B4%9A--%E5%9C%8B%E6%96%87%E7%A7%91_8.pdf"
+  ]
 }

@@ -2,41 +2,87 @@
   "id": "question-science-content-kc-iv-2-5",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "在2023年7月23日校園實驗室的觀察中，針對「Kc-Ⅳ-2：靜電力的同斥異吸」提出可檢驗的科學問題，若比較 3 組、每組取樣 13 份資料，哪一項設計最適當？",
+  "prompt": "帶電棒吸引中性小紙片，最合理的解釋是？",
   "options": [
     {
       "id": "A",
-      "text": "研究「Kc-Ⅳ-2：靜電力的同斥異吸」時同時改變溶液濃度與另一個條件，卻不記錄方法"
+      "text": "紙片內部電荷重新分布，靠近端產生有利於吸引的極化"
     },
     {
       "id": "B",
-      "text": "研究「Kc-Ⅳ-2：靜電力的同斥異吸」時只改變溶液濃度，其餘條件一致，設置3組、每組取樣13份並各重複測量3次"
+      "text": "紙片一定帶有相反淨電荷"
     },
     {
       "id": "C",
-      "text": "研究「Kc-Ⅳ-2：靜電力的同斥異吸」時只測量3組中的一組就直接下結論"
+      "text": "中性物體完全不含電子"
     },
     {
       "id": "D",
-      "text": "研究「Kc-Ⅳ-2：靜電力的同斥異吸」時先決定結論，再挑選支持結論的13筆資料"
+      "text": "吸引力必然是磁力"
     }
   ],
   "knowledgeIds": [
     "kg-science-content-kc-iv-2"
   ],
-  "difficulty": "hard",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "可檢驗的問題需要明確變因、指標、控制條件與可重複的資料。 本題對應 KG「Kc-Ⅳ-2：靜電力的同斥異吸」。"
+    "value": "A",
+    "explanation": "中性不代表電荷不能重新分布；極化可使近端吸引效果較強。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "sourceUrl": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E8%87%AA%E7%84%B6.pdf",
-    "sourceLocator": "高雄市立鹽埕國民中學 114 學年度第 2 學期第 1 次段考自然科；僅研究題型與能力方向，未複製原題文字、選項、圖片或答案。",
-    "authoringNote": "依官方課綱 KG 與公開會考／公立國中試題所呈現的能力方向獨立編寫；未複製原題文字、選項、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceUrl": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+    "sourceLocator": "三筆公立學校公開自然／理化試題的電荷、靜電力、距離、中性物體與控制變因能力方向；本題只作 pattern-only 改寫。",
+    "authoringNote": "本題取公開試題能力方向，題幹、選項、答案、解析與五步解法均以 Kc-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-science-content-kc-iv-2"
+  "updatedAt": "2026-09-21",
+  "lessonId": "lesson-science-content-kc-iv-2",
+  "examPatternRefs": [
+    {
+      "url": "https://www.nehs.tc.edu.tw/wp-content/uploads/sites/95/2026/02/6%E7%90%86%E5%8C%96%E7%A7%91-%E4%B9%9D%E5%B9%B4%E7%B4%9A-%E9%A1%8C%E5%BA%AB.pdf",
+      "title": "國立中科實驗高級中學公開九年級理化題庫",
+      "year": "109-115",
+      "locator": "電荷、靜電力、距離與實驗判讀",
+      "pattern": "取同斥異吸、作用力方向、距離與電荷量比較的能力方向，重新設計靜電實驗紀錄。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取同斥異吸、作用力方向、距離與電荷量比較的能力方向，重新設計靜電實驗紀錄。"
+    },
+    {
+      "url": "https://www.nhjh.tp.edu.tw/uploads/1675417616549dOhkhC5L.pdf",
+      "title": "臺北市立內湖國民中學公開九年級理化段考",
+      "year": "109-115",
+      "locator": "正負電荷、庫侖力、中性物體與感應",
+      "pattern": "取由電荷符號連到受力箭頭與證據限制的推理方向，未複製題幹、選項、圖表或答案。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取由電荷符號連到受力箭頭與證據限制的推理方向，未複製題幹、選項、圖表或答案。"
+    },
+    {
+      "url": "https://www.kcjh.kh.edu.tw/upload/190/104_34764/%E4%B8%89%E5%B9%B4%E7%B4%9A%E7%90%86%E5%8C%96-%E7%AC%AC三次段考5-OK.pdf",
+      "title": "高雄市立國昌國民中學公開三年級自然科試題",
+      "year": "109-115",
+      "locator": "靜電、距離、介質與控制變因",
+      "pattern": "取方向、強弱與實驗公平比較的能力方向，全部以本課原創文字改寫。",
+      "subject": "science",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper",
+      "observedPattern": "取方向、強弱與實驗公平比較的能力方向，全部以本課原創文字改寫。"
+    }
+  ],
+  "solutionStrategy": "先判斷電荷種類與作用方向，再檢查距離、電荷量、介質與控制變因。",
+  "solutionSteps": [
+    "讀題定位：圈出「中性物體」與題目中的電荷種類、距離、介質或受力方向。",
+    "建立判準：中性不代表電荷不能重新分布；極化可使近端吸引效果較強。",
+    "核對答案：選項 A「紙片內部電荷重新分布，靠近端產生有利於吸引的極化」符合靜電力的方向與大小關係。",
+    "排除誘答：分清同斥異吸、作用反作用、極化與淨電荷，不把單一現象過度解讀。",
+    "最後回查：確認所有比較條件與向量方向都和題幹一致。"
+  ]
 }

@@ -2,23 +2,23 @@
   "id": "question-chinese-content-bb-1",
   "subject": "chinese",
   "type": "single-choice",
-  "prompt": "某社區把傳統圖紋融入現代公共藝術，並在說明牌標示來源。這種做法最能說明什麼？（單元練習：content-bb）",
+  "prompt": "甲文直接說「我仍然感謝那段相遇」；乙文寫人物把共同做好的風箏修好收起；丙文寫夕陽下空蕩的操場。三者分別最接近哪種抒情路徑？",
   "options": [
     {
       "id": "A",
-      "text": "文化可在尊重脈絡下創新轉化"
+      "text": "甲直接抒情，乙藉事件／物件抒情，丙藉景物抒情"
     },
     {
       "id": "B",
-      "text": "傳統一改變就失去價值"
+      "text": "甲藉景物，乙直接抒情，丙藉事件"
     },
     {
       "id": "C",
-      "text": "所有圖紋都沒有來源"
+      "text": "三者都只能算直接抒情，因為都有感情"
     },
     {
       "id": "D",
-      "text": "現代藝術不能使用傳統元素（本題資料組：content-bb）"
+      "text": "甲藉事件，乙藉景物，丙直接抒情"
     }
   ],
   "knowledgeIds": [
@@ -27,16 +27,51 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "保留來源並轉化使用，顯示文化可在尊重脈絡下創新。"
+    "explanation": "甲明白說出感謝，乙由修理與保存的行動承載情感，丙由夕陽與空場景營造感受；分類要看主要證據路徑，不是只看有沒有情感。"
   },
   "provenance": {
     "origin": "original",
-    "license": "依法令舉行考試試題之公開使用；本筆保留題目來源與答案註記",
-    "sourceUrl": "https://kaonow.com/paper/cap-112-chinese/",
-    "sourceLocator": "114／112／111 年國中教育會考國文科公開題型研究；僅作能力方向參考，非原題重製。",
-    "authoringNote": "依公開會考能力方向獨立重寫；未複製原試題文字、選項、文章、圖片或答案。待第二輪 AI／Terra 內容複核。"
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+    "sourceLocator": "公立學校公開國文段考與課程資料；本題只研究公開試題與課程評量的能力結構。",
+    "authoringNote": "本題組原有自編抒情閱讀內容經獨立第一輪 QA 重讀；保留題幹、選項文字、答案解析與五步解題，僅重新排列選項以修正原先正解全落 A 的位置偏態；三筆公立學校公開來源僅作 pattern-only 能力方向研究，未複製原文、選項、篇章、圖表或答案；待第二輪 AI／Terra 內容複核。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
-  "lessonId": "lesson-chinese-content-bb"
+  "updatedAt": "2026-09-13",
+  "lessonId": "lesson-chinese-content-bb",
+  "examPatternRefs": [
+    {
+      "url": "https://www.sdjh.ntpc.edu.tw/var/file/0/1000/attach/16/pta_2229_1166226_19803.pdf",
+      "title": "新北市立石碇國中公開國文試題；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "抒情、修辭與閱讀理解",
+      "observedPattern": "公立學校國文公開試題常以抒情方式、人物觀點、事件景物、語氣與文本推論檢查閱讀理解；本題整合直接與間接抒情重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    },
+    {
+      "url": "https://www.yacjh.kh.edu.tw/upload/221/101_30637/114%E4%B8%8B%E5%AD%B8%E6%9C%9F%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%AE%B5%E8%80%83%E4%B8%89%E5%B9%B4%E7%B4%9A%E5%9C%8B%E6%96%87.pdf",
+      "title": "高雄市立鹽埕國中公開國文段考；僅研究公開題型與能力方向，未複製原題。",
+      "year": "113-114",
+      "subject": "chinese",
+      "locator": "情感表達、語氣與文本觀點",
+      "observedPattern": "公立學校國文公開試題常以抒情方式、人物觀點、事件景物、語氣與文本推論檢查閱讀理解；本題整合直接與間接抒情重新設計。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded",
+      "locatorLevel": "paper"
+    }
+  ],
+  "solutionStrategy": "先確認說話者與情感對象，再判斷感受是直接說出或由事件、景物、物件間接浮現；最後以多條證據交叉核對語氣與推論界線。",
+  "solutionSteps": [
+    "讀題定位：圈出「抒情路徑比較」與說話者、情感對象、事件、景物、物件及前後轉折。",
+    "建立情感證據鏈：分辨明示感受與間接線索，檢查語氣強度、情感路徑和篇章位置是否相互支持；本題核心是「甲明白說出感謝，乙由修理與保存的行動承載情感，丙由夕陽與空場景營造感受；分類要看主要證據路徑，不是只看有沒有情感。」",
+    "核對正解：選項 A「甲直接抒情，乙藉事件／物件抒情，丙藉景物抒情」能整合文本多條線索，且不把推論誇大成作者或人物未說出的事實。",
+    "排除誘答：檢查是否只抓情緒詞、把景物固定象徵、把角色聲音當作者立場，或用過強語氣超過事件證據。",
+    "結論回查：以『誰對誰、由何事／何物、用哪種路徑表達、能推到哪裡』重讀全文，明確保留未知範圍。"
+  ],
+  "studyReferences": [
+    "https://www.jlsh.mlc.edu.tw/var/file/12/1012/img/113-2-7-4.pdf"
+  ]
 }
