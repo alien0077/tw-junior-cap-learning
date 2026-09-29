@@ -41,7 +41,7 @@
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "publisherResearch": [
@@ -255,38 +255,38 @@
   },
   "interactive": {
     "type": "guided-choice",
-    "goal": "從文本證據理解「Bd-Ⅳ-2：比較比喻等論證」的內容與結構",
-    "scenario": "以「Bd-Ⅳ-2：比較比喻等論證」為主題，學生先預測，再依 unit spec 的 TextEvidenceBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "goal": "固定比較尺度並標示比喻的『有效映射／不能映射』，測試類比是否真的能支持結論。",
+    "scenario": "以桌椅、導覽圖、遮陽方案與接力賽為材料；學生應切換比較權重與比喻映射，觀察結論如何改變。真正權重滑桿、映射連線與同步比較視覺尚未實作。",
     "steps": [
       {
         "id": "step-1",
-        "prompt": "開始「Bd-Ⅳ-2：比較比喻等論證」時，哪個做法能讓預測可被檢查？",
+        "prompt": "甲成本低、乙故障率低，能直接說乙整體最好嗎？",
         "options": [
-          "先提交預測，不顯示正解",
-          "先把「只找表面關鍵字，未用「Bd-Ⅳ-2：比較比喻等論證」相關文本證據完成推論」當成已證明的答案"
+          "不能；需先說明目標、權重、期限與使用情境",
+          "能；只要一項指標較好即可"
         ],
         "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
+        "feedback": "多面向比較必須先定義決策尺度。"
       },
       {
         "id": "step-2",
-        "prompt": "在「Bd-Ⅳ-2：比較比喻等論證」的操作後，哪一項最能支持你的解釋？",
+        "prompt": "把校園導覽圖比作地鐵圖，合理映射是什麼？",
         "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「從文本證據理解「Bd-Ⅳ-2：比較比喻等論證」的內容與結構」，不指出資料位置"
+          "節點與路線協助規劃移動",
+          "校園真的有地下鐵"
         ],
         "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
+        "feedback": "比喻只轉移共享關係，不把喻體所有特徵搬到本體。"
       },
       {
         "id": "step-3",
-        "prompt": "要把「Bd-Ⅳ-2：比較比喻等論證」遷移到新問題，哪個要求最重要？",
+        "prompt": "『合作像接力賽』要成為論證，還缺什麼？",
         "options": [
-          "換一個情境但保留「Bd-Ⅳ-2：比較比喻等論證」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
+          "說明交接／分工如何對應，並提供實際合作流程資料",
+          "只要比喻生動就足以證明成功"
         ],
         "answer": "A",
-        "feedback": "完成後回看「Bd-Ⅳ-2：比較比喻等論證」的條件、證據與限制；不要只換名詞而保留原答案。"
+        "feedback": "比喻能解釋，但真正支持主張仍需要本體資料。"
       }
     ]
   }
