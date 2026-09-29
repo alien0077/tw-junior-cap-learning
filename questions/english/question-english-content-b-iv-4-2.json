@@ -2,23 +2,23 @@
   "id": "question-english-content-b-iv-4-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A: **Would you like tea or juice?** B: **______**",
+  "prompt": "The group has one quiet room for recording. Ana says, **I'd like to use it first**, while Bo says, **I need the quiet room now because my audio must be submitted in twenty minutes.** What should the group notice first?",
   "options": [
     {
       "id": "A",
-      "text": "I am at the station."
+      "text": "Ana's preference and Bo's time-sensitive need are different kinds of claims."
     },
     {
       "id": "B",
-      "text": "Juice, please."
+      "text": "Ana must always get the room because she spoke first."
     },
     {
       "id": "C",
-      "text": "I felt tired yesterday."
+      "text": "Bo's deadline means no one else's preference matters later."
     },
     {
       "id": "D",
-      "text": "The cup is blue."
+      "text": "Both statements mean exactly the same thing."
     }
   ],
   "knowledgeIds": [
@@ -26,8 +26,8 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "Juice, please chooses one of the offered drinks politely."
+    "value": "A",
+    "explanation": "Ana expresses a preference, while Bo gives a time-sensitive condition tied to completing the task. Recognizing that difference helps the group negotiate rather than treating both statements as identical commands."
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "公立學校七年級英語段考；只研究需求、意願、感受、請求與情境回應題型。",
     "authoringNote": "依官方英語文領域課綱、單元 KG 與三個公立學校公開來源，獨立改寫需求意願感受題；未複製原文、選項、篇章、圖片或答案；待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-13",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-english-content-b-iv-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "由選擇問句判斷要回答其中一個選項，並保持禮貌。",
+  "solutionStrategy": "先分類 preference 與 need，再看理由和限制；不要用發言順序或單一句型直接決定誰『贏』。",
   "solutionSteps": [
-    "Identify the two choices tea and juice.",
-    "Look for a direct selection.",
-    "Add a polite word.",
-    "Choose Juice, please.",
-    "Reject place, past feeling and color statements."
+    "Identify Ana's phrase I'd like as a preference.",
+    "Identify Bo's need and the twenty-minute deadline.",
+    "Compare the function and urgency of the two statements.",
+    "Choose the answer that preserves both claims for negotiation.",
+    "Reject rules that automatically erase one person's voice."
   ]
 }
