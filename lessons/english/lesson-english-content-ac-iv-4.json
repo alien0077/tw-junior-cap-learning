@@ -42,8 +42,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課依官方課綱、kg-english-content-ac-iv-4 與可取得的南一、康軒、翰林公開資料重新融合撰寫。正文、英文例句、活動、檢核、答案與回饋均為本專案自編，不複製出版社教材、題目、音檔、圖片、詞表編排或課文。完整教材受存取或著作權限制，故維持 draft。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "publisherResearch": [
@@ -257,40 +257,31 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ac-Ⅳ-4：國中基本1200字詞」的形式與功能",
-    "scenario": "以「Ac-Ⅳ-4：國中基本1200字詞」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "vocabulary-clue-lab",
+    "goal": "操作語境、詞性、搭配與角色方向，觀察同一基本字詞在不同句子中如何改變可接受的意思。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ac-Ⅳ-4：國中基本1200字詞」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ac-Ⅳ-4：國中基本1200字詞」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ac-Ⅳ-4：國中基本1200字詞」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ac-Ⅳ-4：國中基本1200字詞」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ac-Ⅳ-4：國中基本1200字詞」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ac-Ⅳ-4：國中基本1200字詞」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ac-Ⅳ-4：國中基本1200字詞」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "切換 open door / open a booth、light from a lamp / light bag、leave school / leave books at home。",
+      "切換 plan a route / the plan，辨認動詞與名詞位置。",
+      "操作 borrow from / lend to 的人物箭頭，確認物品移動方向。",
+      "比較 quiet / quick / quite，依句法位置與意思排除近形干擾。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：1200 字不是 1200 個中文翻譯",
+    "memoryHook": "context → part of speech → collocation → word form → new sentence",
+    "mustKnow": [
+      "一字多義要由鄰字與任務決定，如 open a booth、light bag、leave books at home。",
+      "同字可換詞性，如 plan a route / a plan；詞形 plans/planned/planning 仍要回句中判斷。",
+      "borrow 是借進來，lend 是借出去；方向角色不能混。",
+      "quiet / quick / quite 近形但功能不同，不能靠長相猜。"
+    ],
+    "traps": [
+      "看到熟字就套第一個中文義。",
+      "只抄字典，不檢查句中詞性與搭配。",
+      "把 borrow/lend 當同方向。",
+      "認得字卻無法在新句使用。"
+    ],
+    "examMove": "每題先圈 clue words；用至少兩條線索排除錯義，再把答案放回整句重讀。"
   }
 }
