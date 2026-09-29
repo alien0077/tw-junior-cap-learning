@@ -40,8 +40,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課以官方課綱、Knowledge Graph 與目前可取得的南一、康軒、翰林公開資料定位融合撰寫；廣播稿、例句、活動、問題、答案與回饋均為自編，不複製出版社課文、音檔、圖片或題目。公開版本資料不等於完整電子教科書，版本差異僅在可核對範圍內陳述；尚未進行 Terra 第二輪審查，維持 draft。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "publisherResearch": [
@@ -254,40 +254,31 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ae-Ⅳ-3：公共場所廣播」的形式與功能",
-    "scenario": "以「Ae-Ⅳ-3：公共場所廣播」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "announcement-map-lab",
+    "goal": "把公共廣播拆成 Audience/Event/Place/Time/Limit-Reason/Action 六格，切換漏聽資訊與時間界線，直接判斷下一步。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ae-Ⅳ-3：公共場所廣播」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ae-Ⅳ-3：公共場所廣播」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ae-Ⅳ-3：公共場所廣播」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ae-Ⅳ-3：公共場所廣播」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ae-Ⅳ-3：公共場所廣播」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ae-Ⅳ-3：公共場所廣播」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ae-Ⅳ-3：公共場所廣播」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "操作 train to Hsinchu / Platform 3 / 10:15，分開 destination、place、time。",
+      "操作 moved to gym because field is wet，分開新地點與原因。",
+      "切換 until/after/between-and，觀察可行動時間如何改變。",
+      "故意移除 room/time/duration，選擇精準澄清問句而不是自行補答案。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：廣播只聽一次，也不能用猜的補空格",
+    "memoryHook": "Audience → Event → Place → Time → Limit/Reason → Action → Unknown",
+    "mustKnow": [
+      "先抓誰需要注意，再抓事件、地點、時間與下一步。",
+      "until、after、between...and... 是行動邊界；漏掉會直接做錯。",
+      "due to/because of 是原因；please use/get off/keep 是行動。",
+      "原文沒說的時間或原因要標 unknown，再用澄清問句取得。"
+    ],
+    "traps": [
+      "只聽到地名就立刻行動。",
+      "把原地點當成 moved to 後的新地點。",
+      "把原因當成下一步。",
+      "把沒有提供的恢復時間自己補出來。"
+    ],
+    "examMove": "先填六格公告地圖；缺哪格就問哪格，不要求把全文重播才開始理解。"
   }
 }
