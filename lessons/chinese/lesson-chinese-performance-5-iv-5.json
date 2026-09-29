@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,8 +163,8 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "比較多元立場與來源，補足缺席聲音，並把閱讀轉為可測試、可修正的生活行動。",
+    "type": "chinese-manipulation-lab",
+    "goal": "切換不同利害關係人與來源完整度，視覺比較需求、受益、成本、缺席聲音與證據強度。",
     "scenario": "學生閱讀公園改造、共享單車與校園浪費的多篇材料，依序畫出利害關係人地圖、查核來源、比較取捨，再設計小規模行動。",
     "variables": [
       {
@@ -181,40 +181,12 @@
       }
     ],
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "兩篇文章分別從居民與規劃者角度談公園改造，最重要的閱讀策略是什麼？",
-        "options": [
-          "標出各自需求、證據、受益者與成本，再補找缺席的使用者，不急著把一方當成全部答案",
-          "只選語氣較有說服力的一篇",
-          "把兩篇平均句數相加就能得到公共利益"
-        ],
-        "answer": "A",
-        "feedback": "A 將立場放回條件與受影響者比較，並注意文章沒有呈現的聲音。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "社群貼文只有『專家說』沒有姓名、機構與原始連結，讀者應如何處理？",
-        "options": [
-          "先查證來源與方法；查不到時標成未驗證主張，不把它當成確定事實轉傳",
-          "因為寫了專家就直接接受",
-          "只要內容符合自己的立場就不必查"
-        ],
-        "answer": "A",
-        "feedback": "A 同時尊重可能的資訊價值與來源責任，避免匿名權威取代證據。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把校園食物浪費的閱讀轉成生活改變，哪項行動最可檢驗？",
-        "options": [
-          "宣告大家以後都不能浪費，成效不用量測",
-          "先記錄一週剩食基準，再試行兩週減量方案，追蹤重量與參與情況，依安全與回饋修正",
-          "只要求少數同學改變，結果不好就歸咎個人"
-        ],
-        "answer": "B",
-        "feedback": "B 有基準、時間、指標與修正回路，能把閱讀理解轉成可觀察的行動。"
-      }
-    ]
+      "切換居民、規劃者、輪椅使用者，觀察同一公園改造的需求與成本如何改變。",
+      "切換來源資訊是否完整，區分『理解立場』與『證據可信』。",
+      "找出目前材料沒有呈現的使用者，補上一個需要查證的問題。",
+      "最後提出能兼顧硬限制、可追蹤指標且可依回饋修正的小方案。"
+    ],
+    "mode": "stakeholder-map"
   },
   "versionResearch": [
     {
@@ -311,5 +283,12 @@
       "用兩週小試行把閱讀轉成帶指標與回饋的生活行動。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織多元文本、公共議題、來源查核、價值取捨與生活行動。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：多元閱讀不是各打五十大板",
+    "memoryHook": "誰說→誰受影響→證據多強→誰缺席→能做什麼",
+    "mustKnow": "理解不同立場不代表所有主張證據一樣強。先分開『我能理解他的需求』與『他的說法有沒有可查證資料』，再比較受益、成本、風險與可近性。",
+    "trap": "多數票壓掉少數風險；看到『專家說』就信；只補自己同意的聲音；把價值選擇假裝成客觀事實。",
+    "examMove": "公共議題題目先畫三欄：立場／證據／受影響者；答案若漏掉任何一欄，就容易被單一觀點帶走。"
   }
 }
