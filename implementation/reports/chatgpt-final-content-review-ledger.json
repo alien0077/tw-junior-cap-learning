@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 91,
-    "pendingCurriculumIds": 941,
-    "nextCurriculumId": "cur-english-content-ac-iv-1",
+    "reviewedCurriculumIds": 92,
+    "pendingCurriculumIds": 940,
+    "nextCurriculumId": "cur-english-content-ac-iv-2",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 91,
-    "pendingUnits": 941
+    "reviewedUnits": 92,
+    "pendingUnits": 940
   },
   "systemicFindings": [
     {
@@ -2320,10 +2320,11 @@
       "curriculumId": "cur-english-content-ac-iv-1",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-ac-iv-1.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Ac-Ⅳ-1 對齊；正文以地點／方向動作／限制／警示四類標示建立可理解的行動判讀，內容適合國中生且為自編。三版本僅在公開可驗證的教學結構／數位活動型態層級交叉，已修正文案避免誤稱受限電子課本逐課內容融合；已補學霸筆記。",
+      "questionStatus": "10 題逐題核對，修正 2 個 answer.value 與 explanation/steps 明確矛盾的錯鍵：Q4 D→C（quiet voice）、Q7 D→A（BUS STOP）；其餘 8 題答案、解析、策略與逐步解法一致。",
+      "interactionStatus": "language-signage-lab renderer 已核對為實質操作：先預測、翻轉箭頭單一變因、文字／地圖交叉判讀、錯誤提示與延遲揭露、新情境遷移及 reset 均已實作；非 generic choice。browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-ac-iv-2",
