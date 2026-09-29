@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,57 +163,14 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在指定形式、語體、視角與字數限制中保留原句核心語意並完成可讀改寫。",
-    "scenario": "學生接到一組仿寫與改寫卡，先拆解原句骨架，再依不同任務創作，最後用回譯和讀者重述驗證。",
-    "variables": [
-      {
-        "symbol": "s",
-        "meaning": "原句骨架與語意"
-      },
-      {
-        "symbol": "t",
-        "meaning": "轉換任務與限制"
-      },
-      {
-        "symbol": "v",
-        "meaning": "回譯、視角與讀者檢查"
-      }
-    ],
+    "type": "chinese-manipulation-lab",
+    "mode": "rewrite-transformer",
+    "goal": "把原句拆成核心／可換／限制三層，切換文體、視角與字數後即時檢查哪些資訊可保留、必須刪除或不得新增。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "要保留比喻結構仿寫校園景象，哪種做法最適切？",
-        "options": [
-          "換掉所有詞語即可，不必保留相似關係",
-          "保留主體動作與『像……』的可說明相似處，再替換校園材料",
-          "只使用更多形容詞，句型和關係可以完全不同"
-        ],
-        "answer": "B",
-        "feedback": "B 同時保留句型骨架、動態與比喻關係，材料才是有控制的替換。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "原句由『我』看見弟弟藏起信封，改成第三人稱限知時，哪項符合限制？",
-        "options": [
-          "直接說出弟弟藏信封是因為害怕被發現",
-          "寫第三人稱敘述者看見弟弟把信封塞進抽屜，但不補寫弟弟不知道的內心",
-          "補上所有人物的想法，讓讀者知道完整真相"
-        ],
-        "answer": "B",
-        "feedback": "B 守住限知視角，只使用可觀察或該視角已知的資訊。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "題目要求三十字內改寫且不可改變語意，完成後最重要的檢查是什麼？",
-        "options": [
-          "只數字數，越短越好",
-          "回譯核對主客體、因果、時間與肯定程度，再確認讀者仍能完成原任務",
-          "加入新觀點讓句子更有創意"
-        ],
-        "answer": "B",
-        "feedback": "B 同時檢查字數與語意保留，避免形式合格但內容已變質。"
-      }
+      "點選原句中的主體、動作、因果／比喻關係，建立不可失去骨架。",
+      "切換公告／書信或第一／第三人稱限知，觀察允許的語氣與資訊範圍。",
+      "調整字數限制，選擇刪除贅詞或必要資訊，查看回譯是否仍成立。",
+      "最後比較原句與新句，逐項核對主客體、因果、時間、肯否與視角。"
     ]
   },
   "versionResearch": [
@@ -311,5 +268,12 @@
       "用公告與標題兩種壓縮任務測試讀者能否完成原目的。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織仿寫、改寫、修辭、文體、視角、字數限制與語意回譯。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：仿寫保骨架，改寫守原意",
+    "memoryHook": "拆核心 → 標不可改 → 換指定部分 → 回譯 → 讀者驗證",
+    "mustKnow": "仿寫要保留句型／修辭關係，改寫要守住主客體、因果、時間、肯否、視角與任務。形式變漂亮但原意變掉，仍是錯。",
+    "trap": "只換名詞就叫仿寫；為了有創意新增原文沒有的心理或因果；為了縮字把否定改肯定。",
+    "examMove": "完成後遮住原文，用一句話回譯新句；若回譯不回原意，先修語意，不要再加修辭。"
   }
 }
