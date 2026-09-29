@@ -45,8 +45,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -163,8 +163,8 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "用句段證據分辨主要概念、寫作目的與觀點，並控制結論範圍。",
+    "type": "chinese-manipulation-lab",
+    "goal": "拖選句子角色並切換轉折／樣本條件，觀察主要概念、目的、觀點與結論範圍如何改變。",
     "scenario": "學生收到一篇校園提案摘要，依序標記資訊角色、建立三欄判讀卡、處理轉折限制，再寫出不超出證據的結論。",
     "variables": [
       {
@@ -181,40 +181,12 @@
       }
     ],
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "判斷一段文章的主要概念時，第一步最適切的是什麼？",
-        "options": [
-          "把每句標成現象、原因、例證、轉折或結論，再找能統攝多數資訊的共同問題",
-          "直接選最長或最有情緒的一句當主旨",
-          "先看標題並把自己的生活經驗補進段落"
-        ],
-        "answer": "A",
-        "feedback": "A 先整理資訊角色與共同關係，避免被單一鮮明句子或外部經驗帶走。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "作者寫下失敗實驗供下一組參考，最合理的目的與觀點判讀為何？",
-        "options": [
-          "目的可能是分享經驗、支持後續學習；不能因此推成作者認為所有失敗都必然有價值",
-          "目的必然是批評實驗，觀點是所有研究都不可靠",
-          "目的只是記錄日期，觀點與段落無關"
-        ],
-        "answer": "A",
-        "feedback": "A 把目的與觀點分開，並用段落真正提供的因果範圍限制結論。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "段落只呈現三位受訪者都喜歡夜市，哪個結論最負責任？",
-        "options": [
-          "可說這三位受訪者有共同看法；不能直接說所有居民或所有學生都喜歡",
-          "直接宣布全市民意一致，因為三個例子已足夠",
-          "否定受訪者資料，因為訪談永遠不能支持任何理解"
-        ],
-        "answer": "A",
-        "feedback": "A 保留樣本範圍，既使用資料也不把小樣本擴大成普遍結論。"
-      }
-    ]
+      "先將句子分成現象、原因、例證、轉折或結論。",
+      "選出能統攝多數資訊的主要概念，不以最醒目句代替。",
+      "切換『然而／仍需考慮』等限制，觀察結論必須如何縮小。",
+      "改變樣本大小，判斷哪些說法仍被證據支持。"
+    ],
+    "mode": "main-idea-evidence"
   },
   "versionResearch": [
     {
@@ -311,5 +283,12 @@
       "以校園觀察、訪談與資料摘要進行跨情境遷移。"
     ],
     "llmSynthesisNote": "本課依官方課綱、三筆公立校方章節級公開證據與本單元 KG，重新組織主要概念、寫作目的、觀點、句段證據與結論界線。正文、原創情境、互動步驟、回饋與檢核均為本專案重寫，未複製教材題目或答案；Terra 第二輪與正式發布審查尚未完成，因此維持 draft。"
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：主旨不是最醒目的那一句",
+    "memoryHook": "句子角色 → 共同問題 → 主概念；目的問『為何寫』，觀點問『怎麼看』",
+    "mustKnow": "主要概念要能統攝多數重要資訊；寫作目的與作者觀點必須分開，並各自指出文字證據。轉折、限定語與樣本大小會縮小結論範圍。",
+    "trap": "看到情緒最強的句子就當主旨；把三位受訪者推成所有人；把自己的價值判斷塞進作者口中。",
+    "examMove": "先標現象／原因／例證／轉折／結論，再寫一句能涵蓋多數資訊、又不超過證據的答案。"
   }
 }
