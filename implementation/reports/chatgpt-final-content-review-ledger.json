@@ -73,12 +73,12 @@
     "note": "1027 is implementation-spec scope; 1032 is actual curriculum JSON count. Existing coverage.json says five official index documents are excluded from implementation scope."
   },
   "progress": {
-    "reviewedCurriculumIds": 86,
-    "pendingCurriculumIds": 946,
-    "nextCurriculumId": "cur-english-content-aa-iv-1",
+    "reviewedCurriculumIds": 87,
+    "pendingCurriculumIds": 945,
+    "nextCurriculumId": "cur-english-content-ab-iv-1",
     "currentBrowserExecution": "依使用者指示，browser/a11y/mobile/keyboard 實跑統一留到最後交 Codex；本輪內容審查不因此阻塞。",
-    "reviewedUnits": 86,
-    "pendingUnits": 946
+    "reviewedUnits": 87,
+    "pendingUnits": 945
   },
   "systemicFindings": [
     {
@@ -2260,10 +2260,11 @@
       "curriculumId": "cur-english-content-aa-iv-1",
       "subject": "english",
       "curriculumPath": "curriculum/english/content-aa-iv-1.json",
-      "lessonStatus": "待審",
-      "questionStatus": "待審",
-      "interactionStatus": "待審",
-      "overallStatus": "待審"
+      "lessonStatus": "官方 Aa-Ⅳ-1 對齊；三版本公開證據融合涵蓋字形／大小寫、筆畫與占格、生活語境、句子書寫與跨媒介可讀性；來源粒度與版權界線明確，正文為自編。已補學霸筆記。",
+      "questionStatus": "10 題逐題核對並完成修正：Q8 原 answer.value=A 與 Green Park 解析矛盾，已改 C；Q2 原字典序題受 April／大小寫造成歧義，已重寫候選；Q6 原『一致大小寫』題規則與解析不成立，已重寫為明確 lowercase common-noun label 規則。其餘題答案、策略與逐步解法一致。",
+      "interactionStatus": "原 generic guided-choice（且引用未落地的 LanguageTimelineBlock）已改 english-manipulation-lab / letter-case-workbench，學生頁 renderer 已接線，可操作 I/l/1 與句首／姓名／月份／普通名詞規則並即時取得可讀性回饋；browser/a11y 最後交 Codex。",
+      "overallStatus": "內容完成／待最終 Codex browser 驗證",
+      "defects": []
     },
     {
       "curriculumId": "cur-english-content-aa",
