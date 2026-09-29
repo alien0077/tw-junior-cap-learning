@@ -40,8 +40,8 @@
     "license": "All rights reserved",
     "authoringNote": "本課依官方英語文課綱、kg-english-content-ad-iv-1 與三家出版社可取得的公開資料獨立融合撰寫；所有情境、英文例句、活動、答案與回饋均為自編，不複製教科書、習作、題目或影音逐字稿。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "reviewed-content-pending-browser",
+  "updatedAt": "2026-09-29",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-content",
   "publisherResearch": [
@@ -255,40 +255,31 @@
     ]
   },
   "interactive": {
-    "type": "guided-choice",
-    "goal": "在語境中辨識「Ad-Ⅳ-1：國中文法句型」的形式與功能",
-    "scenario": "以「Ad-Ⅳ-1：國中文法句型」為主題，學生先預測，再依 unit spec 的 LanguageTimelineBlock 操作改變條件，記錄觀察、指出證據，最後完成新的 transfer 情境。",
+    "type": "english-manipulation-lab",
+    "mode": "grammar-meaning-console",
+    "goal": "切換時間、主詞、助動詞強度與連接詞，直接觀察句型形式和語意如何同步改變。",
     "steps": [
-      {
-        "id": "step-1",
-        "prompt": "開始「Ad-Ⅳ-1：國中文法句型」時，哪個做法能讓預測可被檢查？",
-        "options": [
-          "先提交預測，不顯示正解",
-          "先把「只背「Ad-Ⅳ-1：國中文法句型」形式，未依語境、時間或句構判斷」當成已證明的答案"
-        ],
-        "answer": "A",
-        "feedback": "先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。"
-      },
-      {
-        "id": "step-2",
-        "prompt": "在「Ad-Ⅳ-1：國中文法句型」的操作後，哪一項最能支持你的解釋？",
-        "options": [
-          "至少一個可定位的視覺、文字、數據或時間證據",
-          "只重複「在語境中辨識「Ad-Ⅳ-1：國中文法句型」的形式與功能」，不指出資料位置"
-        ],
-        "answer": "A",
-        "feedback": "指出學生使用的證據，並要求用新情境再驗證一次。"
-      },
-      {
-        "id": "step-3",
-        "prompt": "要把「Ad-Ⅳ-1：國中文法句型」遷移到新問題，哪個要求最重要？",
-        "options": [
-          "換一個情境但保留「Ad-Ⅳ-1：國中文法句型」的核心關係；不可只換名詞",
-          "今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？"
-        ],
-        "answer": "A",
-        "feedback": "完成後回看「Ad-Ⅳ-1：國中文法句型」的條件、證據與限制；不要只換名詞而保留原答案。"
-      }
+      "把 market open 切換 every Friday / yesterday / tomorrow，選 opens / opened / will open。",
+      "切換 I / Ella / these apples / Tom and I，觀察 be、一般動詞與 do/does agreement。",
+      "在 can / should / must / may 間切換，保持後方原形並比較能力、建議、必要、可能。",
+      "切換 because / so / but / if，畫出原因→結果、轉折與條件→安排。"
     ]
+  },
+  "topStudentNotes": {
+    "title": "學霸筆記：文法不是看關鍵字，是把時間、主詞、語氣與邏輯對齊",
+    "memoryHook": "時間 → 主詞／動詞 → 助動詞語氣 → 比較 → 子句關係",
+    "mustKnow": [
+      "every Saturday → 習慣，第三人稱單數要注意 -s；yesterday → 已發生事件；tomorrow 要看計畫／預測語境。",
+      "do/does 用於一般動詞問句／否定；be 要和主詞一致；modal 後接原形。",
+      "because 接原因，so 引結果，but 表轉折，if 建條件。",
+      "比較級要有比較對象與共同標準，不能只背 -er / more。"
+    ],
+    "traps": [
+      "看到 now 就不看語境直接套進行式。",
+      "modal 後加 to 或第三人稱 -s。",
+      "because/so 只看中文翻譯，不畫原因→結果。",
+      "只改形式，不檢查句意是否真的改變。"
+    ],
+    "examMove": "先畫時間線與邏輯箭頭，再選形式；最後整句回讀，確認陌生讀者能重建時間與關係。"
   }
 }
