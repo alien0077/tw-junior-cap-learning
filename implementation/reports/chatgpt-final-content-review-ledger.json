@@ -3,7 +3,7 @@
   "reviewRole": "ChatGPT final curriculum/lesson/question/interaction content review",
   "repository": "alien0077/tw-junior-cap-learning",
   "branch": "main",
-  "commit": "068c5ecdf172fe5e154b563901024955182cfb82",
+  "commit": "6723a0c2ab996103899e19c1d4daced96d6a3b83",
   "asOf": "2026-09-29",
   "policy": {
     "noSampling": true,
@@ -1835,7 +1835,7 @@
       "curriculumPath": "curriculum/chinese/performance-1-iv-1.json",
       "lessonStatus": "內容通過／來源待逐筆外網複核",
       "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
-      "interactionStatus": "不通過／資料層已有事實、感受、需求、限制、澄清與共識分層，但仍缺可直接操作的聲音／紀錄視覺工作台",
+      "interactionStatus": "不通過／資料層已改為事實／感受／需求／限制分層與共識圖專屬，但仍缺真正控制與同步視覺",
       "overallStatus": "需修正",
       "lessonPaths": [
         "lessons/chinese/lesson-chinese-performance-1-iv-1.json"
@@ -1854,8 +1854,8 @@
       ],
       "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-performance-1-iv-1.yaml",
       "defects": [
-        "guided-choice 已具單元專屬聆聽分層內容，但學生仍不能直接拖放／標記事實、感受、需求與推測，也沒有音訊時間線。",
-        "GeoGebra-style gate 不通過。",
+        "interactive 已於 cea5911460243ac42d653fd2c0e29b476ef461a7 強化為單元專屬模型。",
+        "學生端仍缺拖放／音訊／情境切換／同步視覺，GeoGebra-style gate 不通過。",
         "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
       ],
       "evidence": [
@@ -1871,7 +1871,7 @@
       "curriculumPath": "curriculum/chinese/performance-1-iv-2.json",
       "lessonStatus": "內容通過／來源待逐筆外網複核",
       "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
-      "interactionStatus": "不通過／已有字面、聲情、語境、目的與澄清的專屬資料，但缺可操弄音訊／重音／停頓與情境同步視覺",
+      "interactionStatus": "不通過／資料層已改為字面／聲情／重音／停頓／情境切換專屬，但仍缺真正控制與同步視覺",
       "overallStatus": "需修正",
       "lessonPaths": [
         "lessons/chinese/lesson-chinese-performance-1-iv-2.json"
@@ -1890,8 +1890,8 @@
       ],
       "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-performance-1-iv-2.yaml",
       "defects": [
-        "guided-choice 內容正確但不能替代聲情互動；學生應能改變重音、停頓或語境並立即比較訊息效果。",
-        "GeoGebra-style gate 不通過。",
+        "interactive 已於 6723a0c2ab996103899e19c1d4daced96d6a3b83 強化為單元專屬模型。",
+        "學生端仍缺拖放／音訊／情境切換／同步視覺，GeoGebra-style gate 不通過。",
         "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
       ],
       "evidence": [
