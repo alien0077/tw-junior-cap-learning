@@ -945,10 +945,10 @@
       "curriculumId": "cur-chinese-content-ba-iv-1",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-ba-iv-1.json",
-      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "lessonStatus": "重審通過（正文具單元專屬教學脈絡；三版本公開證據融合邊界明確；已補學霸筆記）／來源仍待最終逐筆外網複核",
       "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
-      "interactionStatus": "不通過／資料層已改為雙時間線專屬，仍缺事件卡拖曳與同步閱讀效果視覺",
-      "overallStatus": "需修正",
+      "interactionStatus": "已修正／正式學生頁已實作事件線↔呈現線切換與閱讀效果同步視覺；待 browser/a11y 實跑後方可最終通過",
+      "overallStatus": "需驗證",
       "knowledgeGraphIds": [
         "kg-chinese-content-ba-iv-1"
       ],
@@ -969,9 +969,7 @@
       ],
       "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-ba-iv-1.yaml",
       "defects": [
-        "原 interactive 為通用模板；已改成小岑借書卡的事件線／呈現線與插敘回返判讀。",
-        "正文核心教法需要學生實際重排事件卡並同步比較『事件時間線／作者呈現線／讀者已知資訊』；目前 authored interactive 仍只是 guided-choice，GeoGebra-style gate 不通過。",
-        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+        "正式學生頁互動已由 guided-choice 升級為雙時間線切換；尚缺本環境 browser/a11y 實跑證據，因此不得標最終 PASS。"
       ],
       "evidence": [
         "curriculum/chinese/content-ba-iv-1.json",
@@ -984,10 +982,10 @@
       "curriculumId": "cur-chinese-content-ba-iv-2",
       "subject": "chinese",
       "curriculumPath": "curriculum/chinese/content-ba-iv-2.json",
-      "lessonStatus": "內容通過／來源待逐筆外網複核",
+      "lessonStatus": "重審通過（正文以可定位細節→合理推論→篇章效果建立完整方法；融合邊界明確；已補學霸筆記）／來源仍待最終逐筆外網複核",
       "questionStatus": "通過（10 題逐題審查；答案、解析、策略與逐步解法一致）",
-      "interactionStatus": "不通過／資料層已改為描寫細節操作專屬，仍缺刪換細節後同步效果比較的視覺實作",
-      "overallStatus": "需修正",
+      "interactionStatus": "已修正／正式學生頁已實作動作／景物細節移除與效果同步比較；待 browser/a11y 實跑後方可最終通過",
+      "overallStatus": "需驗證",
       "knowledgeGraphIds": [
         "kg-chinese-content-ba-iv-2"
       ],
@@ -1008,9 +1006,7 @@
       ],
       "unitSpecPath": "implementation/unit-specs/chinese/cur-chinese-content-ba-iv-2.yaml",
       "defects": [
-        "原 interactive 為通用模板；已改成動作猶豫、刪除關鍵細節與感官效果的單元專屬判讀。",
-        "正文要求學生比較刪除／替換描寫後的視線、節奏、心理推論變化；目前 authored interactive 仍無直接編輯文本與同步效果視覺，GeoGebra-style gate 不通過。",
-        "未實際操作學生頁，mobile／keyboard／retry／reset／screen-reader 不得標記實測 PASS。"
+        "正式學生頁互動已能直接切換描寫細節並觀察推論／效果改變；尚缺本環境 browser/a11y 實跑證據，因此不得標最終 PASS。"
       ],
       "evidence": [
         "curriculum/chinese/content-ba-iv-2.json",
