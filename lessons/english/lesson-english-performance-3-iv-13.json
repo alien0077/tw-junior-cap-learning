@@ -48,8 +48,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-26",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -181,42 +181,221 @@
       "mainScript": {
         "title": "A Clear Path｜排演片段",
         "lines": [
-          {"id":"direction-moon","kind":"direction","speaker":"舞台指示","text":"Mina hangs a silver ribbon from the paper moon. It falls across the blue tape line."},
-          {"id":"mina-goal","kind":"dialogue","speaker":"Mina","text":"The empty chair belongs under the moon in our final scene."},
-          {"id":"ivo-obstacle","kind":"dialogue","speaker":"Ivo","text":"The ribbon blocks the marked path. Sam cannot roll his chair through it."},
-          {"id":"director-question","kind":"dialogue","speaker":"Director","text":"We have five minutes. Can the picture stay clear and the path stay open?"},
-          {"id":"mina-clue","kind":"direction","speaker":"舞台指示","text":"Mina kneels beside the blue tape instead of lifting the ribbon."},
-          {"id":"mina-choice","kind":"dialogue","speaker":"Mina","text":"The tape marks the clear route. Move the chair upstage; the audience can still see the moon."},
-          {"id":"ivo-action","kind":"dialogue","speaker":"Ivo","text":"I will move the prop stand. Sam, please test the route."},
-          {"id":"sam-test","kind":"direction","speaker":"舞台指示","text":"Sam rolls across the stage. His wheels pass the chair without touching the ribbon."},
-          {"id":"sam-feedback","kind":"dialogue","speaker":"Sam","text":"The route is clear, and the moon is still visible from my seat."},
-          {"id":"ending","kind":"dialogue","speaker":"Director","text":"Then we have our final picture. Everyone takes a place beside the open path."}
+          {
+            "id": "direction-moon",
+            "kind": "direction",
+            "speaker": "舞台指示",
+            "text": "Mina hangs a silver ribbon from the paper moon. It falls across the blue tape line."
+          },
+          {
+            "id": "mina-goal",
+            "kind": "dialogue",
+            "speaker": "Mina",
+            "text": "The empty chair belongs under the moon in our final scene."
+          },
+          {
+            "id": "ivo-obstacle",
+            "kind": "dialogue",
+            "speaker": "Ivo",
+            "text": "The ribbon blocks the marked path. Sam cannot roll his chair through it."
+          },
+          {
+            "id": "director-question",
+            "kind": "dialogue",
+            "speaker": "Director",
+            "text": "We have five minutes. Can the picture stay clear and the path stay open?"
+          },
+          {
+            "id": "mina-clue",
+            "kind": "direction",
+            "speaker": "舞台指示",
+            "text": "Mina kneels beside the blue tape instead of lifting the ribbon."
+          },
+          {
+            "id": "mina-choice",
+            "kind": "dialogue",
+            "speaker": "Mina",
+            "text": "The tape marks the clear route. Move the chair upstage; the audience can still see the moon."
+          },
+          {
+            "id": "ivo-action",
+            "kind": "dialogue",
+            "speaker": "Ivo",
+            "text": "I will move the prop stand. Sam, please test the route."
+          },
+          {
+            "id": "sam-test",
+            "kind": "direction",
+            "speaker": "舞台指示",
+            "text": "Sam rolls across the stage. His wheels pass the chair without touching the ribbon."
+          },
+          {
+            "id": "sam-feedback",
+            "kind": "dialogue",
+            "speaker": "Sam",
+            "text": "The route is clear, and the moon is still visible from my seat."
+          },
+          {
+            "id": "ending",
+            "kind": "dialogue",
+            "speaker": "Director",
+            "text": "Then we have our final picture. Everyone takes a place beside the open path."
+          }
         ]
       },
       "mainStages": [
-        {"id":"conflict","prompt":"What problem must the group solve before the final scene can work?","options":["They must keep the paper moon but make sure the ribbon and chair do not block Sam's route.","They must find a new actor because Sam has left the theater.","They must replace the blue tape because the audience cannot see the moon."],"answer":"A","feedback":"The group needs both a clear stage picture and an open route; the conflict is about meeting both needs.","retryHint":"Compare Mina's plan for the final picture with Ivo's warning about the route. What two needs seem to clash?"},
-        {"id":"stage-direction","prompt":"Why does the stage direction show Mina kneeling beside the blue tape?","options":["She checks the marked route for a clue before suggesting a change.","She is pretending to fall so the audience will laugh.","She is hiding the paper moon from the director."],"answer":"A","feedback":"Her action directs attention to the tape as useful stage evidence, and her next line explains how it guides the solution.","retryHint":"Read the action and Mina's next spoken line together. Which object does she inspect, and what does she learn from it?"},
-        {"id":"prop-function","prompt":"How does the silver ribbon affect the scene before the group changes the layout?","options":["It decorates the moon and also falls across the route, creating a practical obstacle.","It proves that the final scene takes place outdoors.","It tells Sam that he should leave the stage."],"answer":"A","feedback":"The same prop contributes to the visual design but becomes part of the conflict when it crosses the taped route.","retryHint":"Track where the ribbon is attached and where it falls. Does it only decorate, or does its position change what Sam can do?"},
-        {"id":"turning-point","prompt":"Which event turns the argument into a workable plan?","options":["The director says there are only five minutes left.","Mina uses the tape route to propose moving the chair, and Ivo asks Sam to test it.","Sam repeats that the ribbon is silver."],"answer":"B","feedback":"Mina connects a visible clue to a new arrangement; Ivo then turns the proposal into a testable action.","retryHint":"Look for the moment when someone uses a stage clue to suggest a change, then notice who helps check that idea."},
-        {"id":"outcome-theme","prompt":"Which statement best explains the ending using the group's actions?","options":["A strong stage picture matters more than whether everyone can use the stage.","Listening to the people affected and testing a new arrangement can solve a shared design problem.","A silver ribbon always makes a play successful."],"answer":"B","feedback":"The open route and visible moon are both confirmed by Sam's test, so the ending grows from listening and checking the solution.","retryHint":"Use Sam's final report and the director's decision. Which choice accounts for both the clear route and the visible moon?"},
-        {"id":"character-change","prompt":"What change in Ivo's role can the audience infer from his lines and actions?","options":["He moves from naming the obstacle to helping test a shared solution.","He refuses to take part after Mina explains the tape.","He changes the subject because the scene is over."],"answer":"A","feedback":"Ivo first identifies the blocked route, then moves equipment and invites Sam to test the plan; his actions show practical cooperation.","retryHint":"Compare Ivo's warning about the blocked path with his later offer to move the stand. What does he do after the plan is proposed?"}
+        {
+          "id": "conflict",
+          "prompt": "What problem must the group solve before the final scene can work?",
+          "options": [
+            "They must keep the paper moon but make sure the ribbon and chair do not block Sam's route.",
+            "They must find a new actor because Sam has left the theater.",
+            "They must replace the blue tape because the audience cannot see the moon."
+          ],
+          "answer": "A",
+          "feedback": "The group needs both a clear stage picture and an open route; the conflict is about meeting both needs.",
+          "retryHint": "Compare Mina's plan for the final picture with Ivo's warning about the route. What two needs seem to clash?"
+        },
+        {
+          "id": "stage-direction",
+          "prompt": "Why does the stage direction show Mina kneeling beside the blue tape?",
+          "options": [
+            "She checks the marked route for a clue before suggesting a change.",
+            "She is pretending to fall so the audience will laugh.",
+            "She is hiding the paper moon from the director."
+          ],
+          "answer": "A",
+          "feedback": "Her action directs attention to the tape as useful stage evidence, and her next line explains how it guides the solution.",
+          "retryHint": "Read the action and Mina's next spoken line together. Which object does she inspect, and what does she learn from it?"
+        },
+        {
+          "id": "prop-function",
+          "prompt": "How does the silver ribbon affect the scene before the group changes the layout?",
+          "options": [
+            "It decorates the moon and also falls across the route, creating a practical obstacle.",
+            "It proves that the final scene takes place outdoors.",
+            "It tells Sam that he should leave the stage."
+          ],
+          "answer": "A",
+          "feedback": "The same prop contributes to the visual design but becomes part of the conflict when it crosses the taped route.",
+          "retryHint": "Track where the ribbon is attached and where it falls. Does it only decorate, or does its position change what Sam can do?"
+        },
+        {
+          "id": "turning-point",
+          "prompt": "Which event turns the argument into a workable plan?",
+          "options": [
+            "The director says there are only five minutes left.",
+            "Mina uses the tape route to propose moving the chair, and Ivo asks Sam to test it.",
+            "Sam repeats that the ribbon is silver."
+          ],
+          "answer": "B",
+          "feedback": "Mina connects a visible clue to a new arrangement; Ivo then turns the proposal into a testable action.",
+          "retryHint": "Look for the moment when someone uses a stage clue to suggest a change, then notice who helps check that idea."
+        },
+        {
+          "id": "outcome-theme",
+          "prompt": "Which statement best explains the ending using the group's actions?",
+          "options": [
+            "A strong stage picture matters more than whether everyone can use the stage.",
+            "Listening to the people affected and testing a new arrangement can solve a shared design problem.",
+            "A silver ribbon always makes a play successful."
+          ],
+          "answer": "B",
+          "feedback": "The open route and visible moon are both confirmed by Sam's test, so the ending grows from listening and checking the solution.",
+          "retryHint": "Use Sam's final report and the director's decision. Which choice accounts for both the clear route and the visible moon?"
+        },
+        {
+          "id": "character-change",
+          "prompt": "What change in Ivo's role can the audience infer from his lines and actions?",
+          "options": [
+            "He moves from naming the obstacle to helping test a shared solution.",
+            "He refuses to take part after Mina explains the tape.",
+            "He changes the subject because the scene is over."
+          ],
+          "answer": "A",
+          "feedback": "Ivo first identifies the blocked route, then moves equipment and invites Sam to test the plan; his actions show practical cooperation.",
+          "retryHint": "Compare Ivo's warning about the blocked path with his later offer to move the stand. What does he do after the plan is proposed?"
+        }
       ],
       "transfer": {
         "script": {
           "title": "A Softer Beginning｜新排演片段",
           "lines": [
-            {"id":"drum-start","kind":"direction","speaker":"舞台指示","text":"Ari begins the opening line while Noor taps a hand drum beside the curtain."},
-            {"id":"ari-problem","kind":"dialogue","speaker":"Ari","text":"The first words disappear when the drum starts. The back row cannot hear them."},
-            {"id":"noor-reaction","kind":"direction","speaker":"舞台指示","text":"Noor stops tapping and looks toward the back row."},
-            {"id":"noor-idea","kind":"dialogue","speaker":"Noor","text":"The drum can mark the entrance, but it does not need to cover the words."},
-            {"id":"new-cue","kind":"direction","speaker":"舞台指示","text":"Noor raises one finger. Ari speaks the first line; the drum joins softly after the final word."},
-            {"id":"audience-result","kind":"dialogue","speaker":"Ari","text":"Now the back row can hear the line, and the drum still signals the scene."}
+            {
+              "id": "drum-start",
+              "kind": "direction",
+              "speaker": "舞台指示",
+              "text": "Ari begins the opening line while Noor taps a hand drum beside the curtain."
+            },
+            {
+              "id": "ari-problem",
+              "kind": "dialogue",
+              "speaker": "Ari",
+              "text": "The first words disappear when the drum starts. The back row cannot hear them."
+            },
+            {
+              "id": "noor-reaction",
+              "kind": "direction",
+              "speaker": "舞台指示",
+              "text": "Noor stops tapping and looks toward the back row."
+            },
+            {
+              "id": "noor-idea",
+              "kind": "dialogue",
+              "speaker": "Noor",
+              "text": "The drum can mark the entrance, but it does not need to cover the words."
+            },
+            {
+              "id": "new-cue",
+              "kind": "direction",
+              "speaker": "舞台指示",
+              "text": "Noor raises one finger. Ari speaks the first line; the drum joins softly after the final word."
+            },
+            {
+              "id": "audience-result",
+              "kind": "dialogue",
+              "speaker": "Ari",
+              "text": "Now the back row can hear the line, and the drum still signals the scene."
+            }
           ]
         },
         "stages": [
-          {"id":"transfer-problem","prompt":"What is the opening scene's main problem?","options":["The drum covers Ari's words, so the audience cannot hear the opening line.","Noor has forgotten how to play any instrument.","The actors cannot find the curtain."],"answer":"A","feedback":"Ari states the sound problem and identifies who is affected: listeners in the back row.","retryHint":"Read Ari's line and note what the back row cannot hear. Keep the answer tied to that stated problem."},
-          {"id":"transfer-cue","prompt":"What does Noor's raised finger do in the new arrangement?","options":["It cues the drum to enter after Ari's line, instead of covering the words.","It signals Ari to leave before the scene begins.","It asks the audience to clap over the dialogue."],"answer":"A","feedback":"The gesture is a stage cue; the next direction shows the order changing so speech comes first and music follows softly.","retryHint":"Follow the order after the finger rises: who speaks first, and when does the drum begin?"},
-          {"id":"transfer-meaning","prompt":"Which idea best fits the result of this second play?","options":["A performance works only when every sound is loud.","A cue should help the audience follow the scene; performers can adjust after noticing what listeners need.","The back row should guess words they cannot hear."],"answer":"B","feedback":"The actors keep the drum's signaling role but change its timing and volume after considering the listeners' experience.","retryHint":"Compare the old sound order with the new one and use Ari's final line. What changed, and who benefited?"}
+          {
+            "id": "transfer-problem",
+            "prompt": "What is the opening scene's main problem?",
+            "options": [
+              "The drum covers Ari's words, so the audience cannot hear the opening line.",
+              "Noor has forgotten how to play any instrument.",
+              "The actors cannot find the curtain."
+            ],
+            "answer": "A",
+            "feedback": "Ari states the sound problem and identifies who is affected: listeners in the back row.",
+            "retryHint": "Read Ari's line and note what the back row cannot hear. Keep the answer tied to that stated problem."
+          },
+          {
+            "id": "transfer-cue",
+            "prompt": "What does Noor's raised finger do in the new arrangement?",
+            "options": [
+              "It cues the drum to enter after Ari's line, instead of covering the words.",
+              "It signals Ari to leave before the scene begins.",
+              "It asks the audience to clap over the dialogue."
+            ],
+            "answer": "A",
+            "feedback": "The gesture is a stage cue; the next direction shows the order changing so speech comes first and music follows softly.",
+            "retryHint": "Follow the order after the finger rises: who speaks first, and when does the drum begin?"
+          },
+          {
+            "id": "transfer-meaning",
+            "prompt": "Which idea best fits the result of this second play?",
+            "options": [
+              "A performance works only when every sound is loud.",
+              "A cue should help the audience follow the scene; performers can adjust after noticing what listeners need.",
+              "The back row should guess words they cannot hear."
+            ],
+            "answer": "B",
+            "feedback": "The actors keep the drum's signaling role but change its timing and volume after considering the listeners' experience.",
+            "retryHint": "Compare the old sound order with the new one and use Ari's final line. What changed, and who benefited?"
+          }
         ]
       },
       "completionMessage": "兩段排演都已完成：你從目標與阻礙讀出衝突，解讀舞台提示，檢查選擇的結果，再把方法用到新劇本。"
