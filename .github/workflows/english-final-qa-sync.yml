@@ -20,6 +20,34 @@ jobs:
           import json, re
           from pathlib import Path
 
+          # One-time status synchronization for units whose lesson, interactive,
+          # answer, explanation, solutionStrategy, and solutionSteps were fully
+          # reviewed in the final content-review pass on 2026-09-30.
+          reviewed_units = {
+              '1-iv-2',
+              '5-iv-3', '5-iv-4', '5-iv-5', '5-iv-6',
+              '5-iv-7', '5-iv-8', '5-iv-9',
+          }
+          for uid in reviewed_units:
+              for n in range(1, 11):
+                  p = Path(f'questions/english/question-english-performance-{uid}-{n}.json')
+                  q = json.loads(p.read_text(encoding='utf-8'))
+                  q['reviewStatus'] = 'reviewed'
+                  q['updatedAt'] = '2026-09-30'
+                  provenance = q.get('provenance')
+                  if isinstance(provenance, dict):
+                      note = provenance.get('authoringNote')
+                      if isinstance(note, str):
+                          for stale in [
+                              '待第二輪 AI／Terra 內容複核。',
+                              '內容維持draft。',
+                              '內容維持 draft。',
+                              'draft retained.',
+                          ]:
+                              note = note.replace(stale, 'Final content review completed on 2026-09-30.')
+                          provenance['authoringNote'] = note
+                  p.write_text(json.dumps(q, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
           lesson_paths_all = sorted(Path('lessons/english').glob('lesson-english-performance-*.json'))
           question_paths_all = sorted(Path('questions/english').glob('question-english-performance-*.json'))
           leaf_uid = re.compile(r'^\d+-iv-\d+$')
@@ -101,6 +129,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add .github/english-qa-audit.json
-          git commit -m "audit: record English performance QA completeness" || exit 0
+          git add questions/english .github/english-qa-audit.json
+          git commit -m "audit: finalize reviewed English question statuses" || exit 0
           git push origin HEAD:main
