@@ -48,8 +48,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-26",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -182,34 +182,83 @@
           "caption": "A young maker studies each piece before the hall reopens.",
           "sourceLabel": "Corner Workshop｜社區修復誌封面",
           "sourceCues": [
-            {"id": "title", "label": "標題", "text": "The Patchwork Window"},
-            {"id": "image", "label": "圖片", "text": "不同顏色的玻璃拼片和修補工具；未顯示窗戶原本的故事或誰完成工作。"},
-            {"id": "caption", "label": "圖說", "text": "活動室重新開放前，一位年輕製作者先研究每片玻璃。"}
+            {
+              "id": "title",
+              "label": "標題",
+              "text": "The Patchwork Window"
+            },
+            {
+              "id": "image",
+              "label": "圖片",
+              "text": "不同顏色的玻璃拼片和修補工具；未顯示窗戶原本的故事或誰完成工作。"
+            },
+            {
+              "id": "caption",
+              "label": "圖說",
+              "text": "活動室重新開放前，一位年輕製作者先研究每片玻璃。"
+            }
           ],
           "sourceCueMinimum": 2,
           "predictionPrompt": "根據封面可見線索，預測這篇文字可能會談哪一種修復工作；不要先編出窗戶的歷史或完工結果。",
           "minimumPredictionLength": 10,
           "confidencePrompt": "你對這個預測有多確定？",
           "confidenceOptions": [
-            {"id": "low", "text": "可能會……"},
-            {"id": "medium", "text": "大概會……"},
-            {"id": "high", "text": "幾乎確定會……"}
+            {
+              "id": "low",
+              "text": "可能會……"
+            },
+            {
+              "id": "medium",
+              "text": "大概會……"
+            },
+            {
+              "id": "high",
+              "text": "幾乎確定會……"
+            }
           ],
           "reassessmentPrompt": "讀完正文後，你現在對修正版的把握程度有沒有改變？請重新評估。",
           "readingText": "Before the Corner Hall reopened, Inez sorted the old window pieces on a table. The drawing showed a blue border, but several shards had faded; she measured each opening before cutting replacements. Two volunteers fitted the pieces into a wooden frame, then held it against the morning light to check for gaps. The article explains how the neighborhood group documented and repaired the window. It does not identify who first designed it or say how visitors will react.",
           "evidence": [
-            {"id": "documented", "label": "整理線索", "text": "Inez 先依圖稿排序舊玻璃，並量每個窗格的尺寸。"},
-            {"id": "fitted", "label": "修補方法", "text": "志工把替換玻璃裝進木框，再對著晨光檢查縫隙。"},
-            {"id": "purpose", "label": "文章範圍", "text": "正文說明社區團體如何記錄並修復窗戶。"},
-            {"id": "unknown-history", "label": "尚未知資訊", "text": "正文沒有指出最初設計者是誰，也沒有描述參觀者反應。"}
+            {
+              "id": "documented",
+              "label": "整理線索",
+              "text": "Inez 先依圖稿排序舊玻璃，並量每個窗格的尺寸。"
+            },
+            {
+              "id": "fitted",
+              "label": "修補方法",
+              "text": "志工把替換玻璃裝進木框，再對著晨光檢查縫隙。"
+            },
+            {
+              "id": "purpose",
+              "label": "文章範圍",
+              "text": "正文說明社區團體如何記錄並修復窗戶。"
+            },
+            {
+              "id": "unknown-history",
+              "label": "尚未知資訊",
+              "text": "正文沒有指出最初設計者是誰，也沒有描述參觀者反應。"
+            }
           ],
-          "requiredEvidenceIds": ["fitted", "purpose"],
+          "requiredEvidenceIds": [
+            "fitted",
+            "purpose"
+          ],
           "checkQuestion": {
             "prompt": "讀完正文後，哪個修正版最貼近證據，也沒有替封面補上未知的歷史或結局？",
             "options": [
-              {"id": "A", "text": "文章說明社區團體如何依圖稿測量、替換玻璃並檢查修復；設計者仍不明。"},
-              {"id": "B", "text": "窗戶原先一定是 Inez 的祖母設計，而且重新開放後大家都很喜歡。"},
-              {"id": "C", "text": "正文只介紹木框的價格，沒有談玻璃如何修復。"}
+              {
+                "id": "A",
+                "text": "文章說明社區團體如何依圖稿測量、替換玻璃並檢查修復；設計者仍不明。"
+              },
+              {
+                "id": "B",
+                "text": "窗戶原先一定是 Inez 的祖母設計，而且重新開放後大家都很喜歡。"
+              },
+              {
+                "id": "C",
+                "text": "正文只介紹木框的價格，沒有談玻璃如何修復。"
+              }
             ],
             "answer": "A",
             "feedback": "你把彩色拼片與修復圖說收窄成正文中的量測、替換和檢查步驟，也保留了文本未交代的設計者與讀者反應。",
@@ -225,34 +274,83 @@
           "caption": "Students compare two places before inviting families to meet outside.",
           "sourceLabel": "Open Courtyard｜校園活動提案封面",
           "sourceCues": [
-            {"id": "title", "label": "標題", "text": "A Shared Shade"},
-            {"id": "image", "label": "圖片", "text": "庭院遮棚、長椅和測量座位的學生；未提供出席人數。"},
-            {"id": "caption", "label": "圖說", "text": "學生比較兩個地點，再邀請家庭到戶外聚會。"}
+            {
+              "id": "title",
+              "label": "標題",
+              "text": "A Shared Shade"
+            },
+            {
+              "id": "image",
+              "label": "圖片",
+              "text": "庭院遮棚、長椅和測量座位的學生；未提供出席人數。"
+            },
+            {
+              "id": "caption",
+              "label": "圖說",
+              "text": "學生比較兩個地點，再邀請家庭到戶外聚會。"
+            }
           ],
           "sourceCueMinimum": 2,
           "predictionPrompt": "打開正文前，預測這份提案可能如何挑選戶外聚會地點；不要只憑封面猜參加人數或活動結果。",
           "minimumPredictionLength": 10,
           "confidencePrompt": "依目前三項線索，你的預測把握程度是？",
           "confidenceOptions": [
-            {"id": "low", "text": "可能會……"},
-            {"id": "medium", "text": "大概會……"},
-            {"id": "high", "text": "幾乎確定會……"}
+            {
+              "id": "low",
+              "text": "可能會……"
+            },
+            {
+              "id": "medium",
+              "text": "大概會……"
+            },
+            {
+              "id": "high",
+              "text": "幾乎確定會……"
+            }
           ],
           "reassessmentPrompt": "比較原先預測與提案細節後，你現在對地點選擇判斷的把握程度是？",
           "readingText": "The student team compared the covered bench beside the dining hall with the open corner near the library. They asked families about glare, walking space, and how far people would need to carry food. The team chose the library corner, moved two planters to keep the path clear, and tested the route with a loaded cart. The proposal describes how to select and prepare a gathering place; it does not predict how many families will attend.",
           "evidence": [
-            {"id": "compare-sites", "label": "比較條件", "text": "小組比較遮棚旁長椅與圖書館附近空地，也詢問眩光和通行空間。"},
-            {"id": "test-route", "label": "驗證選擇", "text": "移開兩個花盆後，小組用裝載物品的推車測試路線。"},
-            {"id": "proposal-scope", "label": "正文範圍", "text": "提案介紹如何選擇並整理聚會地點。"},
-            {"id": "attendance-unknown", "label": "尚未知資訊", "text": "正文沒有預測最後會有多少家庭到場。"}
+            {
+              "id": "compare-sites",
+              "label": "比較條件",
+              "text": "小組比較遮棚旁長椅與圖書館附近空地，也詢問眩光和通行空間。"
+            },
+            {
+              "id": "test-route",
+              "label": "驗證選擇",
+              "text": "移開兩個花盆後，小組用裝載物品的推車測試路線。"
+            },
+            {
+              "id": "proposal-scope",
+              "label": "正文範圍",
+              "text": "提案介紹如何選擇並整理聚會地點。"
+            },
+            {
+              "id": "attendance-unknown",
+              "label": "尚未知資訊",
+              "text": "正文沒有預測最後會有多少家庭到場。"
+            }
           ],
-          "requiredEvidenceIds": ["compare-sites", "attendance-unknown"],
+          "requiredEvidenceIds": [
+            "compare-sites",
+            "attendance-unknown"
+          ],
           "checkQuestion": {
             "prompt": "正文出現新資訊後，哪個判斷最能使用比較條件，也保留出席人數未知的界線？",
             "options": [
-              {"id": "A", "text": "學生比較眩光與通行空間後測試推車路線；這份提案沒有說有多少家庭會參加。"},
-              {"id": "B", "text": "封面有長椅，所以聚會一定滿座，所有人也都會選遮棚旁的位置。"},
-              {"id": "C", "text": "這份提案只討論午餐菜單，沒有比較任何戶外地點。"}
+              {
+                "id": "A",
+                "text": "學生比較眩光與通行空間後測試推車路線；這份提案沒有說有多少家庭會參加。"
+              },
+              {
+                "id": "B",
+                "text": "封面有長椅，所以聚會一定滿座，所有人也都會選遮棚旁的位置。"
+              },
+              {
+                "id": "C",
+                "text": "這份提案只討論午餐菜單，沒有比較任何戶外地點。"
+              }
             ],
             "answer": "A",
             "feedback": "你依學生實際比較和測試的條件修正預測，並且沒有從長椅或邀請文字臆測出席人數。",
