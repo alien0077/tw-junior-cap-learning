@@ -57,20 +57,26 @@ unitImplementationSpec:
   - 每次變更都保留因果可追溯的標記、圖例與文字替代
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-D-I01
-    component: StepwiseReasoningBlock
-    purpose: 讓學生操作並看見「D：資料與不確定性」中最容易被背誦取代的關係
+    component: DataExplorerBlock
+    purpose: 讓學生以同一批原始資料實際切換統計量、圖表尺度、抽樣方式與機率試驗，觀察資料條件如何改變可支持的結論
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        dataset: campus-water
+        summaryMeasure: mean
+        chartMode: histogram
+        sampleMode: stratified
+        trialCount: 10
     studentActions:
     - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 拖曳資料點或切換平均數／中位數，觀察極端值如何改變摘要
+    - 切換長條圖／直方圖並調整縱軸起點或組距，判讀尺度是否誤導
+    - 切換分層抽樣／單班抽樣／自願填答，比較樣本比例與母體比例
+    - 調整轉盤區域並執行 10／100／1000 次試驗，比較理論機率與相對頻率
+    - 標記支持結論的資料、圖表尺度、樣本條件或試驗紀錄
+    - 以短句說明「改變什麼 → 看到什麼 → 因此目前能／不能推論什麼」
     visualRules:
     - 操作後所有相關表徵同步更新，不得只改單一數字
     - 正解揭露前保留學生預測與操作紀錄
@@ -78,25 +84,25 @@ unitImplementationSpec:
     - 窄螢幕不得裁切核心圖、題幹與回饋
     misconceptionChecks:
     - id: MC-CUR-MATH-CONTENT-D-I01
-      trigger: 把「D：資料與不確定性」當成可直接套公式的程序，忽略量與表徵的對應
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 看到平均數、圖表或樣本百分比就直接下結論，未檢查極端值、尺度、抽樣方式或試驗次數
+      prompt: 你的結論依賴哪一筆資料、哪個圖表尺度、哪種抽樣方式或多少次試驗？若改變這個條件，結論還成立嗎？
+      expectedEvidence: 至少指出一項可定位的原始資料或圖表條件，並說明它如何限制結論範圍
     feedback:
       correct: 指出學生使用的證據，並要求用新情境再驗證一次。
       incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「D：資料與不確定性」的 StepwiseReasoningBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "本課「D：資料與不確定性」的 DataExplorerBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「D：資料與不確定性」的 StepwiseReasoningBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "本課「D：資料與不確定性」的 DataExplorerBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「D：資料與不確定性」的 StepwiseReasoningBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "本課「D：資料與不確定性」的 DataExplorerBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「D：資料與不確定性」的 StepwiseReasoningBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "本課「D：資料與不確定性」的 DataExplorerBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
   capTransfer:
     questionType: 資料判讀／概念應用／理由短答
     stemConstraint: 換一個情境但保留「D：資料與不確定性」的核心關係；不可只換名詞
@@ -127,7 +133,7 @@ unitImplementationSpec:
   - 學生觸發「把「D：資料與不確定性」當成可直接套公式的程序，忽略量與表徵的對應」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
   - 在 320px、375px 與 768px 寬度，以鍵盤完成「D：資料與不確定性」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
   - 以新資料執行「D：資料與不確定性」的 CAP transfer：換一個情境但保留「D：資料與不確定性」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，StepwiseReasoningBlock 仍須以「D：資料與不確定性」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 外部資料失效時，DataExplorerBlock 仍須以「D：資料與不確定性」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
   - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
