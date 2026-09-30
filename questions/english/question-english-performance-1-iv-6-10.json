@@ -4,25 +4,60 @@
   "type": "single-choice",
   "prompt": "During rehearsal, a sudden draft scatters the scene cards. The actors sort the cards by their numbered corners, tape them to a board, and perform the story in the planned order. Which sentence best summarizes the episode?",
   "options": [
-    { "id": "A", "text": "The actors leave the cards scattered and start a different play." },
-    { "id": "B", "text": "The actors use the cards' clues to restore the scene order and continue rehearsing." },
-    { "id": "C", "text": "The actors rewrite the story after the audience changes the ending." },
-    { "id": "D", "text": "The actors stop the play because they cannot remember any lines." }
+    {
+      "id": "A",
+      "text": "The actors leave the cards scattered and start a different play."
+    },
+    {
+      "id": "B",
+      "text": "The actors use the cards' clues to restore the scene order and continue rehearsing."
+    },
+    {
+      "id": "C",
+      "text": "The actors rewrite the story after the audience changes the ending."
+    },
+    {
+      "id": "D",
+      "text": "The actors stop the play because they cannot remember any lines."
+    }
   ],
-  "knowledgeIds": ["kg-english-performance-1-iv-6"],
+  "knowledgeIds": [
+    "kg-english-performance-1-iv-6"
+  ],
   "difficulty": "medium",
-  "answer": { "value": "B", "explanation": "The essential chain is that a draft scatters the cards, the actors use numbered corners to reorder them, and rehearsal continues. The other choices introduce events not stated in the prompt." },
-  "provenance": { "origin": "original", "license": "All rights reserved", "sourceUrl": "https://www.chhs.tp.edu.tw/uploads/1642655973756S6WiICcM.pdf", "sourceLocator": "PDF第2頁第31題：根據完整故事判定正確敘述；本題自行撰寫演員整理場次卡片的情節。", "authoringNote": "情節、角色、卡片線索與選項皆原創；參照公校閱讀題的全篇事實整合與摘要能力，不重製來源故事。維持draft。" },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-24",
+  "answer": {
+    "value": "B",
+    "explanation": "The essential chain is that a draft scatters the cards, the actors use numbered corners to reorder them, and rehearsal continues. The other choices introduce events not stated in the prompt."
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.chhs.tp.edu.tw/uploads/1642655973756S6WiICcM.pdf",
+    "sourceLocator": "PDF第2頁第31題：根據完整故事判定正確敘述；本題自行撰寫演員整理場次卡片的情節。",
+    "authoringNote": "情節、角色、卡片線索與選項皆原創；參照公校閱讀題的全篇事實整合與摘要能力，不重製來源故事。維持draft。"
+  },
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-english-performance-1-iv-6",
-  "examPatternRefs": [{ "url": "https://www.chhs.tp.edu.tw/uploads/1642655973756S6WiICcM.pdf", "title": "臺北市立景興國民中學110學年度第1學期第3次八年級英文定期評量", "year": "110-1", "subject": "english", "locator": "PDF第2頁第31題：整合敘事全文辨認唯一受支持的正確敘述。本題轉為場次卡排序與排演摘要。", "locatorLevel": "item", "observedPattern": "比較選項和故事全貌，排除只符合局部或加入未出現事件的敘述；本題事件與文本皆新寫。", "reuseDecision": "pattern-only", "status": "recorded" }],
+  "examPatternRefs": [
+    {
+      "url": "https://www.chhs.tp.edu.tw/uploads/1642655973756S6WiICcM.pdf",
+      "title": "臺北市立景興國民中學110學年度第1學期第3次八年級英文定期評量",
+      "year": "110-1",
+      "subject": "english",
+      "locator": "PDF第2頁第31題：整合敘事全文辨認唯一受支持的正確敘述。本題轉為場次卡排序與排演摘要。",
+      "locatorLevel": "item",
+      "observedPattern": "比較選項和故事全貌，排除只符合局部或加入未出現事件的敘述；本題事件與文本皆新寫。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
   "solutionStrategy": "摘要保留「問題—使用的線索—處理結果」三個必要環節，並刪去文本沒有說的推測。",
   "solutionSteps": [
     "先抓起因：一陣風把場次卡吹散。",
     "辨認解決方法：演員依卡片角落的編號重新排序，再貼到板上。",
     "找出結果：他們按原定順序演出，排練得以繼續。",
     "把三環節合併成摘要，選項 B 都有涵蓋且沒有增添新人物或新結局。",
-    "排除 B、C、D：題目沒有忘詞、觀眾改結局、放棄卡片或改演別劇。"
+    "排除 A、C、D：題目沒有改演別劇、觀眾改結局或因忘詞而停止。"
   ]
 }
