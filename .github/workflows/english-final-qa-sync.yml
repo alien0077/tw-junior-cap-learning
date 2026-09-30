@@ -20,9 +20,20 @@ jobs:
           import json, re
           from pathlib import Path
 
-          lesson_paths = sorted(Path('lessons/english').glob('lesson-english-performance-*.json'))
-          question_paths = sorted(Path('questions/english').glob('question-english-performance-*.json'))
+          lesson_paths_all = sorted(Path('lessons/english').glob('lesson-english-performance-*.json'))
+          question_paths_all = sorted(Path('questions/english').glob('question-english-performance-*.json'))
+          leaf_uid = re.compile(r'^\d+-iv-\d+$')
           qpat = re.compile(r'question-english-performance-(.+)-(\d+)\.json$')
+
+          lesson_paths = [
+              p for p in lesson_paths_all
+              if leaf_uid.fullmatch(p.stem.removeprefix('lesson-english-performance-'))
+          ]
+          question_paths = []
+          for p in question_paths_all:
+              m = qpat.match(p.name)
+              if m and leaf_uid.fullmatch(m.group(1)):
+                  question_paths.append(p)
 
           lessons = {}
           for p in lesson_paths:
@@ -91,5 +102,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add .github/english-qa-audit.json
-          git commit -m "audit: record English performance QA completeness"
+          git commit -m "audit: record English performance QA completeness" || exit 0
           git push origin HEAD:main
