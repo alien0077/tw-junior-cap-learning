@@ -1,0 +1,28 @@
+{
+  "unitId": "cur-math-content-d",
+  "lessonId": "lesson-math-content-d",
+  "reviewedAt": "2026-09-30",
+  "reviewer": "ChatGPT",
+  "status": "content-reviewed",
+  "scope": [
+    "curriculum locator",
+    "lesson teaching",
+    "10 linked questions",
+    "unit interaction spec"
+  ],
+  "findings": [
+    "lesson teaching is substantive and aligned to data/statistics/probability theme",
+    "question solutionStrategy/solutionSteps used generic numeric boilerplate that was invalid for graph/sampling questions",
+    "question 5 exposed misconception annotations inside distractor text",
+    "unit spec used generic StepwiseReasoningBlock despite lesson requiring data/statistics manipulation"
+  ],
+  "repairs": [
+    "rewrote all 10 answer explanations, strategies and steps to question-specific reasoning",
+    "cleaned question 5 distractors",
+    "marked lesson and 10 questions content-reviewed",
+    "changed interaction to DataExplorerBlock and specified dataset/statistic/chart/sampling/probability operations"
+  ],
+  "remaining": [
+    "browser/runtime QA remains separate from this content review"
+  ]
+}
