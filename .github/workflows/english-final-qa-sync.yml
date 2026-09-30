@@ -20,63 +20,48 @@ jobs:
           import json, re
           from pathlib import Path
 
-          # One-time status synchronization for units whose lesson, interactive,
-          # answer, explanation, solutionStrategy, and solutionSteps were fully
-          # reviewed in the final content-review pass on 2026-09-30.
-          reviewed_units = {
-              '1-iv-2',
-              '5-iv-3', '5-iv-4', '5-iv-5', '5-iv-6',
-              '5-iv-7', '5-iv-8', '5-iv-9',
-          }
-          for uid in reviewed_units:
-              for n in range(1, 11):
-                  p = Path(f'questions/english/question-english-performance-{uid}-{n}.json')
-                  q = json.loads(p.read_text(encoding='utf-8'))
-                  q['reviewStatus'] = 'reviewed'
-                  q['updatedAt'] = '2026-09-30'
-                  provenance = q.get('provenance')
-                  if isinstance(provenance, dict):
-                      note = provenance.get('authoringNote')
-                      if isinstance(note, str):
-                          for stale in [
-                              '待第二輪 AI／Terra 內容複核。',
-                              '內容維持draft。',
-                              '內容維持 draft。',
-                              'draft retained.',
-                          ]:
-                              note = note.replace(stale, 'Final content review completed on 2026-09-30.')
-                          provenance['authoringNote'] = note
-                  p.write_text(json.dumps(q, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-
-          lesson_paths_all = sorted(Path('lessons/english').glob('lesson-english-performance-*.json'))
-          question_paths_all = sorted(Path('questions/english').glob('question-english-performance-*.json'))
           leaf_uid = re.compile(r'^\d+-iv-\d+$')
           qpat = re.compile(r'question-english-performance-(.+)-(\d+)\.json$')
+          stale_re = re.compile(
+              r'待第二輪\s*AI／Terra\s*內容複核|內容維持\s*draft|draft retained|'
+              r'lesson\s*(?:保持|維持)\s*draft|本稿仍為\s*draft|'
+              r'Final lesson review belongs|final content review belongs|'
+              r'內容審查由使用者|最終內容審查交使用者|QA pending',
+              re.I,
+          )
 
           lesson_paths = [
-              p for p in lesson_paths_all
+              p for p in sorted(Path('lessons/english').glob('lesson-english-performance-*.json'))
               if leaf_uid.fullmatch(p.stem.removeprefix('lesson-english-performance-'))
           ]
           question_paths = []
-          for p in question_paths_all:
+          for p in sorted(Path('questions/english').glob('question-english-performance-*.json')):
               m = qpat.match(p.name)
               if m and leaf_uid.fullmatch(m.group(1)):
                   question_paths.append(p)
 
           lessons = {}
+          stale_review_metadata = []
           for p in lesson_paths:
               uid = p.stem.removeprefix('lesson-english-performance-')
-              lessons[uid] = json.loads(p.read_text(encoding='utf-8'))
+              obj = json.loads(p.read_text(encoding='utf-8'))
+              lessons[uid] = obj
+              if obj.get('reviewStatus') == 'reviewed':
+                  hit = stale_re.search(json.dumps(obj, ensure_ascii=False))
+                  if hit:
+                      stale_review_metadata.append({'path': str(p), 'marker': hit.group(0)})
 
           q_by_uid = {}
           bad_question_files = []
           for p in question_paths:
               m = qpat.match(p.name)
-              if not m:
-                  continue
               uid, num = m.group(1), int(m.group(2))
               q = json.loads(p.read_text(encoding='utf-8'))
               q_by_uid.setdefault(uid, {})[num] = q
+              if q.get('reviewStatus') == 'reviewed':
+                  hit = stale_re.search(json.dumps(q, ensure_ascii=False))
+                  if hit:
+                      stale_review_metadata.append({'path': str(p), 'marker': hit.group(0)})
               opts = q.get('options') or []
               ids = [x.get('id') for x in opts if isinstance(x, dict)]
               ans = (q.get('answer') or {}).get('value')
@@ -90,17 +75,15 @@ jobs:
                   bad_question_files.append({'path': str(p), 'problems': problems})
 
           nonreviewed_lessons = [uid for uid,o in lessons.items() if o.get('reviewStatus') != 'reviewed']
-          nonreviewed_questions = []
-          for uid, qs in q_by_uid.items():
-              for n, q in qs.items():
-                  if q.get('reviewStatus') != 'reviewed':
-                      nonreviewed_questions.append(f'{uid}-{n}')
-
+          nonreviewed_questions = [
+              f'{uid}-{n}' for uid, qs in q_by_uid.items() for n, q in qs.items()
+              if q.get('reviewStatus') != 'reviewed'
+          ]
           bad_counts = {}
           missing_interactive = []
           for uid, lesson in lessons.items():
               nums = sorted(q_by_uid.get(uid, {}))
-              if nums != list(range(1,11)):
+              if nums != list(range(1, 11)):
                   bad_counts[uid] = nums
               if not isinstance(lesson.get('interactive'), dict) and not isinstance(lesson.get('learningLab'), dict):
                   missing_interactive.append(uid)
@@ -116,10 +99,12 @@ jobs:
               'orphan_question_units': orphan_question_units,
               'missing_interactive_or_learningLab': missing_interactive,
               'bad_question_files': bad_question_files,
+              'stale_review_metadata': stale_review_metadata,
           }
           report['ok'] = not any([
               nonreviewed_lessons, nonreviewed_questions, bad_counts,
-              orphan_question_units, missing_interactive, bad_question_files
+              orphan_question_units, missing_interactive, bad_question_files,
+              stale_review_metadata,
           ])
           Path('.github/english-qa-audit.json').write_text(
               json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8'
@@ -129,6 +114,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add questions/english .github/english-qa-audit.json
-          git commit -m "audit: finalize reviewed English question statuses" || exit 0
+          git add .github/english-qa-audit.json
+          git commit -m "audit: record English performance QA completeness" || exit 0
           git push origin HEAD:main
