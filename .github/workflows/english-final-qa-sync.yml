@@ -26,33 +26,9 @@ jobs:
               r'待第二輪\s*AI／Terra\s*內容複核|內容維持\s*draft|draft retained|'
               r'lesson\s*(?:保持|維持)\s*draft|本稿仍為\s*draft|'
               r'Final lesson review belongs|final content review belongs|'
-              r'內容審查由使用者|最終內容審查交使用者|QA pending', re.I,
+              r'內容審查由使用者|最終內容審查交使用者|QA pending',
+              re.I,
           )
-
-          # One-time metadata cleanup after the final content review. Only review-note
-          # fields are touched; lesson prose, prompts, options, answers and solutions are not.
-          def clean_review_note(s):
-              if not isinstance(s, str):
-                  return s
-              s = re.sub(r'待第二輪\s*AI／Terra\s*內容複核[。.]?', 'Final content review completed on 2026-09-30.', s, flags=re.I)
-              s = re.sub(r'內容維持\s*draft[。.]?', 'Final content review completed on 2026-09-30.', s, flags=re.I)
-              s = re.sub(r'draft retained[。.]?', 'Final content review completed on 2026-09-30.', s, flags=re.I)
-              s = re.sub(r'lesson\s*(?:保持|維持)\s*draft[。.]?', 'lesson 已完成 final content review on 2026-09-30.', s, flags=re.I)
-              s = re.sub(r'本稿仍為\s*draft[。.]?', '本稿已完成 final content review on 2026-09-30。', s, flags=re.I)
-              s = re.sub(r'Final lesson review belongs[^。.;]*[。.;]?', 'Final lesson review completed on 2026-09-30. ', s, flags=re.I)
-              s = re.sub(r'final content review belongs[^。.;]*[。.;]?', 'Final content review completed on 2026-09-30. ', s, flags=re.I)
-              s = re.sub(r'內容審查由使用者[^。；;]*[。；;]?', '本單元已完成 final content review on 2026-09-30。', s, flags=re.I)
-              s = re.sub(r'最終內容審查交使用者[^。；;]*[。；;]?', '本單元已完成 final content review on 2026-09-30。', s, flags=re.I)
-              s = re.sub(r'QA pending', 'Final QA completed on 2026-09-30', s, flags=re.I)
-              return s
-
-          def clean_obj_metadata(obj):
-              provenance = obj.get('provenance')
-              if isinstance(provenance, dict) and isinstance(provenance.get('authoringNote'), str):
-                  provenance['authoringNote'] = clean_review_note(provenance['authoringNote'])
-              fusion = obj.get('fusionRecord')
-              if isinstance(fusion, dict) and isinstance(fusion.get('llmSynthesisNote'), str):
-                  fusion['llmSynthesisNote'] = clean_review_note(fusion['llmSynthesisNote'])
 
           lesson_paths = [
               p for p in sorted(Path('lessons/english').glob('lesson-english-performance-*.json'))
@@ -63,15 +39,6 @@ jobs:
               m = qpat.match(p.name)
               if m and leaf_uid.fullmatch(m.group(1)):
                   question_paths.append(p)
-
-          for p in lesson_paths + question_paths:
-              obj = json.loads(p.read_text(encoding='utf-8'))
-              if obj.get('reviewStatus') == 'reviewed':
-                  before = json.dumps(obj, ensure_ascii=False, sort_keys=True)
-                  clean_obj_metadata(obj)
-                  after = json.dumps(obj, ensure_ascii=False, sort_keys=True)
-                  if before != after:
-                      p.write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
           lessons = {}
           stale_review_metadata = []
@@ -108,30 +75,45 @@ jobs:
                   bad_question_files.append({'path': str(p), 'problems': problems})
 
           nonreviewed_lessons = [uid for uid,o in lessons.items() if o.get('reviewStatus') != 'reviewed']
-          nonreviewed_questions = [f'{uid}-{n}' for uid, qs in q_by_uid.items() for n, q in qs.items() if q.get('reviewStatus') != 'reviewed']
+          nonreviewed_questions = [
+              f'{uid}-{n}' for uid, qs in q_by_uid.items() for n, q in qs.items()
+              if q.get('reviewStatus') != 'reviewed'
+          ]
           bad_counts = {}
           missing_interactive = []
           for uid, lesson in lessons.items():
               nums = sorted(q_by_uid.get(uid, {}))
-              if nums != list(range(1, 11)): bad_counts[uid] = nums
+              if nums != list(range(1, 11)):
+                  bad_counts[uid] = nums
               if not isinstance(lesson.get('interactive'), dict) and not isinstance(lesson.get('learningLab'), dict):
                   missing_interactive.append(uid)
+
           orphan_question_units = sorted(set(q_by_uid) - set(lessons))
           report = {
-              'lesson_count': len(lesson_paths), 'question_count': len(question_paths),
-              'unit_count_with_questions': len(q_by_uid), 'nonreviewed_lessons': nonreviewed_lessons,
-              'nonreviewed_questions': nonreviewed_questions, 'bad_question_counts': bad_counts,
+              'lesson_count': len(lesson_paths),
+              'question_count': len(question_paths),
+              'unit_count_with_questions': len(q_by_uid),
+              'nonreviewed_lessons': nonreviewed_lessons,
+              'nonreviewed_questions': nonreviewed_questions,
+              'bad_question_counts': bad_counts,
               'orphan_question_units': orphan_question_units,
               'missing_interactive_or_learningLab': missing_interactive,
-              'bad_question_files': bad_question_files, 'stale_review_metadata': stale_review_metadata,
+              'bad_question_files': bad_question_files,
+              'stale_review_metadata': stale_review_metadata,
           }
-          report['ok'] = not any([nonreviewed_lessons, nonreviewed_questions, bad_counts, orphan_question_units, missing_interactive, bad_question_files, stale_review_metadata])
-          Path('.github/english-qa-audit.json').write_text(json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          report['ok'] = not any([
+              nonreviewed_lessons, nonreviewed_questions, bad_counts,
+              orphan_question_units, missing_interactive, bad_question_files,
+              stale_review_metadata,
+          ])
+          Path('.github/english-qa-audit.json').write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8'
+          )
           print(json.dumps(report, ensure_ascii=False, indent=2))
           PY
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lessons/english questions/english .github/english-qa-audit.json
-          git commit -m "audit: clean stale English review metadata" || exit 0
+          git add .github/english-qa-audit.json
+          git commit -m "audit: record English performance QA completeness" || exit 0
           git push origin HEAD:main
