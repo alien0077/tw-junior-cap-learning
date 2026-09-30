@@ -1,0 +1,22 @@
+{
+  "unitId": "cur-math-content-a",
+  "lessonId": "lesson-math-content-root-a",
+  "reviewedAt": "2026-09-30",
+  "reviewer": "ChatGPT",
+  "status": "content-reviewed",
+  "findings": [
+    "lesson was a generic root template rather than a substantive A: algebra lesson",
+    "teaching summary contained truncated text and duplicated punctuation",
+    "studyReferences and simulation sourceRefs incorrectly pointed to the English curriculum PDF",
+    "unit spec already uses AlgebraBalanceBlock and is directionally appropriate"
+  ],
+  "repairs": [
+    "rewrote the lesson around variables, expressions, equality, equations, inequalities, equivalent forms, tables/graphs, substitution and model limits",
+    "replaced duplicated template teaching body and exit checks",
+    "corrected the official source reference to the mathematics curriculum",
+    "aligned title and knowledgeIds to cur-math-content-a / kg-math-content-a"
+  ],
+  "remaining": [
+    "browser/runtime QA remains separate"
+  ]
+}
