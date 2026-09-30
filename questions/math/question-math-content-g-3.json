@@ -2,23 +2,23 @@
   "id": "question-math-content-g-3",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "點 P(－3,4) 關於原點的對稱點為何？",
+  "prompt": "點 Q(5,－2) 到 x 軸的距離為何？",
   "options": [
     {
       "id": "A",
-      "text": "(3,－4)"
+      "text": "2"
     },
     {
       "id": "B",
-      "text": "(3,4)（將題目中的 3、4 代入順序弄錯）"
+      "text": "3"
     },
     {
       "id": "C",
-      "text": "(－3,－4)（將題目中的 3、4 代入順序弄錯）"
+      "text": "5"
     },
     {
       "id": "D",
-      "text": "(4,－3)（將題目中的 3、4 代入順序弄錯）"
+      "text": "7"
     }
   ],
   "knowledgeIds": [
@@ -27,7 +27,7 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "關於原點對稱時 x、y 坐標同時變號，得 (3,−4)。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。正確答案為選項 A：「(3,－4)」。最後把這個選項放回題幹，確認它同時符合題目條件與本單元判準。"
+    "explanation": "點到 x 軸的垂直距離等於 y 坐標的絕對值；|－2|＝2，所以選 A。"
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "114 年國中教育會考數學科公開試題；跨年級能力／資料型態參照；原創 pattern-only 改寫，待逐題內容 QA。",
     "authoringNote": "Substantive rewrite with new values, contexts, options, and explanations; no reproduction of public-exam wording, figures, or answer key. 待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-07",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-math-content-g",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "先整理已知量與要求量，選定關係式或表示法，完成計算後再檢查單位、符號與合理性；本題以「點 P(－3,4) 關於原點的對稱點為何？」為判讀對象，先圈出條件，再用選項 A 的判準回查（對應 lesson-math-content-g）。",
+  "solutionStrategy": "找 y 坐標並取絕對值；到 x 軸的距離不受 x 坐標大小影響。",
   "solutionSteps": [
-    "讀題定位：先找出本題要判斷的核心條件與限制；題幹是「點 P(－3,4) 關於原點的對稱點為何？」。",
-    "建立本題判準：先記下題幹「點 P(－3,4) 關於原點的對稱點為何？」的要求，再用答案解析指出的核心理由「關於原點對稱時 x、y 坐標同時變號，得 (3,−4)。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。」作為逐項比對標準。",
-    "核對正確選項 A：(3,－4)。依題目解析，關於原點對稱時 x、y 坐標同時變號，得 (3,−4)。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。",
-    "逐項核算：先檢查選項是否符合題目給的數值、符號、單位與運算順序；正解 A「(3,－4)」符合「關於原點對稱時 x、y 坐標同時變號，得 (3,−4)。 本題保留原計算結論，其他選項標示常見的代入或公式誤用。」，其餘選項至少有一項條件不符。",
-    "最後回查：把答案 A「(3,－4)」放回完整題幹「點 P(－3,4) 關於原點的對稱點為何？」，確認它同時滿足題目要求與解析理由；若條件、數字、語境或資料尺度改變，必須重新建立判準，不可只沿用答案代號。"
+    "Q 的 y 坐標是－2。",
+    "到 x 軸的距離為 |－2|＝2。",
+    "因此選 A。"
   ]
 }
