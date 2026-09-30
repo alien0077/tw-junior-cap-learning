@@ -48,8 +48,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -174,27 +174,75 @@
       "goal": "先預測主要行動，再以時間、地點與條件句為證據，檢查摘要是否保留讀者真正需要的資訊。",
       "mainText": {
         "introduction": "你是機器人社的小編，收到一則週末集會通知。先寫預測，之後逐段標出不可漏掉的資訊。",
-        "representationLabels": ["原文片段與功能", "行動卡：時間／地點／準備／回覆期限"],
-        "parts": [
-          { "id": "purpose", "label": "通知目的", "text": "Hi, robotics team! Our build session is still on Saturday." },
-          { "id": "time-place", "label": "時間與新地點", "text": "Meet at 9:30 a.m. in the library activity room, not Science Room B." },
-          { "id": "reason", "label": "地點變更原因", "text": "The ventilation system in Science Room B is being repaired." },
-          { "id": "entrance", "label": "到達方式", "text": "Please use the side entrance because the front doors open later." },
-          { "id": "materials", "label": "準備物品", "text": "Bring a charged laptop. Leave soldering tools at home." },
-          { "id": "reply", "label": "期限與備案", "text": "If you need to borrow a laptop, reply to me by Thursday afternoon." },
-          { "id": "decoy", "label": "與本次通知無關的舊訊息", "text": "Last month's team photo is still on the club page." }
+        "representationLabels": [
+          "原文片段與功能",
+          "行動卡：時間／地點／準備／回覆期限"
         ],
-        "requiredEvidenceIds": ["time-place", "entrance", "materials", "reply"],
+        "parts": [
+          {
+            "id": "purpose",
+            "label": "通知目的",
+            "text": "Hi, robotics team! Our build session is still on Saturday."
+          },
+          {
+            "id": "time-place",
+            "label": "時間與新地點",
+            "text": "Meet at 9:30 a.m. in the library activity room, not Science Room B."
+          },
+          {
+            "id": "reason",
+            "label": "地點變更原因",
+            "text": "The ventilation system in Science Room B is being repaired."
+          },
+          {
+            "id": "entrance",
+            "label": "到達方式",
+            "text": "Please use the side entrance because the front doors open later."
+          },
+          {
+            "id": "materials",
+            "label": "準備物品",
+            "text": "Bring a charged laptop. Leave soldering tools at home."
+          },
+          {
+            "id": "reply",
+            "label": "期限與備案",
+            "text": "If you need to borrow a laptop, reply to me by Thursday afternoon."
+          },
+          {
+            "id": "decoy",
+            "label": "與本次通知無關的舊訊息",
+            "text": "Last month's team photo is still on the club page."
+          }
+        ],
+        "requiredEvidenceIds": [
+          "time-place",
+          "entrance",
+          "materials",
+          "reply"
+        ],
         "evidenceHint": "行動卡不能只保留一個日期；找出集合時間與新地點、進入方式、準備物品，以及需要借電腦時的期限。",
         "evidenceRetryHint": "目前證據還漏了通知要求的行動欄位。回看 side entrance、charged laptop 與 by Thursday afternoon，各自限制哪一步。",
         "evidenceAccepted": "行動卡已同時保留時間／地點、入口、物品與借用期限；原因與舊照片不能取代這些可執行資訊。",
         "question": {
           "prompt": "哪一張行動卡最完整且沒有把推測寫成通知？",
           "options": [
-            { "id": "A", "text": "星期六下午在科學教室集合，記得帶焊接工具。" },
-            { "id": "B", "text": "星期六上午9:30到圖書館活動室，走側門並帶已充電筆電；若要借筆電，星期四下午前回覆。" },
-            { "id": "C", "text": "星期四下午先到圖書館拿社團照片，星期六再決定要不要參加。" },
-            { "id": "D", "text": "科學教室正在維修，所以本週集會取消。" }
+            {
+              "id": "A",
+              "text": "星期六下午在科學教室集合，記得帶焊接工具。"
+            },
+            {
+              "id": "B",
+              "text": "星期六上午9:30到圖書館活動室，走側門並帶已充電筆電；若要借筆電，星期四下午前回覆。"
+            },
+            {
+              "id": "C",
+              "text": "星期四下午先到圖書館拿社團照片，星期六再決定要不要參加。"
+            },
+            {
+              "id": "D",
+              "text": "科學教室正在維修，所以本週集會取消。"
+            }
           ],
           "answer": "B",
           "feedback": "B 保留時間、更新地點、入口、物品與有條件的回覆期限；沒有把維修誤解成取消。",
@@ -204,20 +252,55 @@
       "transfer": {
         "introduction": "現在換成寄給新隊員的書信；不要沿用上一題答案，重新找期限和條件。",
         "parts": [
-          { "id": "greeting", "label": "收件人與目的", "text": "Dear Ken, our neighborhood history walk has moved from Wednesday to Thursday." },
-          { "id": "time-place", "label": "新集合安排", "text": "Please meet us at the south gate at 8:10 a.m. on Thursday." },
-          { "id": "condition", "label": "無法參加時", "text": "If you cannot join us, tell Ms. Wu so she can offer your place to another student." },
-          { "id": "deadline", "label": "回覆期限", "text": "Please let her know by Tuesday evening." },
-          { "id": "materials", "label": "準備資料", "text": "Bring your signed permission form; the school will provide the map." }
+          {
+            "id": "greeting",
+            "label": "收件人與目的",
+            "text": "Dear Ken, our neighborhood history walk has moved from Wednesday to Thursday."
+          },
+          {
+            "id": "time-place",
+            "label": "新集合安排",
+            "text": "Please meet us at the south gate at 8:10 a.m. on Thursday."
+          },
+          {
+            "id": "condition",
+            "label": "無法參加時",
+            "text": "If you cannot join us, tell Ms. Wu so she can offer your place to another student."
+          },
+          {
+            "id": "deadline",
+            "label": "回覆期限",
+            "text": "Please let her know by Tuesday evening."
+          },
+          {
+            "id": "materials",
+            "label": "準備資料",
+            "text": "Bring your signed permission form; the school will provide the map."
+          }
         ],
-        "requiredEvidenceIds": ["condition", "deadline"],
+        "requiredEvidenceIds": [
+          "condition",
+          "deadline"
+        ],
         "question": {
           "prompt": "Ken 已確定星期四無法參加，最遲應做什麼？",
           "options": [
-            { "id": "A", "text": "星期四早上到南門再說。" },
-            { "id": "B", "text": "自己印一張地圖交給 Ms. Wu。" },
-            { "id": "C", "text": "星期二晚上前告訴 Ms. Wu，讓她安排候補同學。" },
-            { "id": "D", "text": "把活動改回星期三。" }
+            {
+              "id": "A",
+              "text": "星期四早上到南門再說。"
+            },
+            {
+              "id": "B",
+              "text": "自己印一張地圖交給 Ms. Wu。"
+            },
+            {
+              "id": "C",
+              "text": "星期二晚上前告訴 Ms. Wu，讓她安排候補同學。"
+            },
+            {
+              "id": "D",
+              "text": "把活動改回星期三。"
+            }
           ],
           "answer": "C"
         },
