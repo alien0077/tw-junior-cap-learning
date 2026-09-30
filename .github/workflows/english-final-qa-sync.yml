@@ -1,4 +1,4 @@
-name: English final QA sync
+name: English final QA audit
 
 on:
   push:
@@ -9,258 +9,87 @@ permissions:
   contents: write
 
 jobs:
-  sync:
+  audit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-      - name: Apply reviewed English fixes
+      - name: Audit English performance content
         shell: bash
         run: |
           python - <<'PY'
-          import json
+          import json, re
           from pathlib import Path
 
-          ROOT = Path('.')
-          DATE = '2026-09-30'
+          lesson_paths = sorted(Path('lessons/english').glob('lesson-english-performance-*.json'))
+          question_paths = sorted(Path('questions/english').glob('question-english-performance-*.json'))
+          qpat = re.compile(r'question-english-performance-(.+)-(\d+)\.json$')
 
-          def load(path):
-              return json.loads(Path(path).read_text(encoding='utf-8'))
+          lessons = {}
+          for p in lesson_paths:
+              uid = p.stem.removeprefix('lesson-english-performance-')
+              lessons[uid] = json.loads(p.read_text(encoding='utf-8'))
 
-          def save(path, obj):
-              Path(path).write_text(json.dumps(obj, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          q_by_uid = {}
+          bad_question_files = []
+          for p in question_paths:
+              m = qpat.match(p.name)
+              if not m:
+                  continue
+              uid, num = m.group(1), int(m.group(2))
+              q = json.loads(p.read_text(encoding='utf-8'))
+              q_by_uid.setdefault(uid, {})[num] = q
+              opts = q.get('options') or []
+              ids = [x.get('id') for x in opts if isinstance(x, dict)]
+              ans = (q.get('answer') or {}).get('value')
+              problems = []
+              if not ans or (ids and ans not in ids): problems.append('answer-not-in-options')
+              if not (q.get('answer') or {}).get('explanation'): problems.append('missing-explanation')
+              if not q.get('solutionStrategy'): problems.append('missing-solutionStrategy')
+              steps = q.get('solutionSteps')
+              if not isinstance(steps, list) or len(steps) < 5: problems.append('solutionSteps<5')
+              if problems:
+                  bad_question_files.append({'path': str(p), 'problems': problems})
 
-          def iter_dicts(obj):
-              if isinstance(obj, dict):
-                  yield obj
-                  for v in obj.values():
-                      yield from iter_dicts(v)
-              elif isinstance(obj, list):
-                  for v in obj:
-                      yield from iter_dicts(v)
+          nonreviewed_lessons = [uid for uid,o in lessons.items() if o.get('reviewStatus') != 'reviewed']
+          nonreviewed_questions = []
+          for uid, qs in q_by_uid.items():
+              for n, q in qs.items():
+                  if q.get('reviewStatus') != 'reviewed':
+                      nonreviewed_questions.append(f'{uid}-{n}')
 
-          def replace_strings(obj, pairs):
-              if isinstance(obj, dict):
-                  for k, v in list(obj.items()):
-                      obj[k] = replace_strings(v, pairs)
-                  return obj
-              if isinstance(obj, list):
-                  return [replace_strings(v, pairs) for v in obj]
-              if isinstance(obj, str):
-                  for old, new in pairs:
-                      obj = obj.replace(old, new)
-                  return obj
-              return obj
+          bad_counts = {}
+          missing_interactive = []
+          for uid, lesson in lessons.items():
+              nums = sorted(q_by_uid.get(uid, {}))
+              if nums != list(range(1,11)):
+                  bad_counts[uid] = nums
+              if not isinstance(lesson.get('interactive'), dict) and not isinstance(lesson.get('learningLab'), dict):
+                  missing_interactive.append(uid)
 
-          # 7-IV-2: distinguish reader prediction, Mina's explicit expectation, and limited sign instructions.
-          p = Path('lessons/english/lesson-english-performance-7-iv-2.json')
-          o = load(p)
-          o = replace_strings(o, [
-              (
-                  '看到 sign 寫 Take one local seed packet，Leave a note 後，交換規則已被直接說明：每人領一包，並留下種植地點筆記。',
-                  '看到 sign 寫 Take one local seed packet，Leave a note 後，文本只明示這張桌上的領取與留言指示：可拿一包 local seed packet，並留下適合種植地點的筆記；它沒有完整說明所有交換機制。'
-              ),
-              ('lesson維持draft供使用者ChatGPT最後審查。', '本單元已完成最終內容審查。')
+          orphan_question_units = sorted(set(q_by_uid) - set(lessons))
+          report = {
+              'lesson_count': len(lesson_paths),
+              'question_count': len(question_paths),
+              'unit_count_with_questions': len(q_by_uid),
+              'nonreviewed_lessons': nonreviewed_lessons,
+              'nonreviewed_questions': nonreviewed_questions,
+              'bad_question_counts': bad_counts,
+              'orphan_question_units': orphan_question_units,
+              'missing_interactive_or_learningLab': missing_interactive,
+              'bad_question_files': bad_question_files,
+          }
+          report['ok'] = not any([
+              nonreviewed_lessons, nonreviewed_questions, bad_counts,
+              orphan_question_units, missing_interactive, bad_question_files
           ])
-          for d in iter_dicts(o):
-              if d.get('id') == 'step-1' and 'Mina brought bean seeds' in d.get('text', ''):
-                  d['prompt'] = '在讀到活動標示以前，「Mina 原本想用豆子換花種」最適合歸在哪一類？'
-                  d['options'] = [
-                      '文本明說的 Mina 原先期待；它不是交換已發生的事實，也不能代表所有交換活動的固定規則',
-                      '文章已證明所有種子交換都必須一換一',
-                      'Mina 已經完成交換的明確事實'
-                  ]
-                  d['answer'] = 'A'
-                  d['feedback'] = 'expected to 明確寫出 Mina 原本的期待，所以它屬於文本資訊；但期待不等於交換已發生，也不能被擴大成所有 seed exchange 的固定規則。'
-                  d['retryHint'] = '先判斷 expected to 是作者明寫的內容還是讀者自行補入的常識，再區分「期待」與「已發生」。'
-          save(p, o)
-
-          # 7-IV-3: fix speaker/listener roles in the opening repair example.
-          p = Path('lessons/english/lesson-english-performance-7-iv-3.json')
-          o = load(p)
-          old = '新同學 Mina 帶交換生走到校園轉角，對方只聽見 “turn … the library”，沒聽見介系詞。Mina 不該用更大聲把同一句再喊一次；她可以停下來看對方的表情，問 “Could you say that again, please?”，再用手指地圖確認方向。這不是猜答案，而是察覺理解出現裂縫後，選一個能取得新證據的策略。'
-          new = '新同學 Mina 帶交換生走到校園轉角，對方只聽見 “turn … the library”，沒聽見介系詞。聽者可以先說 “Could you say that again, please?”；Mina 再放慢關鍵片段、用手指地圖，並請對方回述方向。這不是猜答案，而是察覺理解出現裂縫後，由聽者取得缺失資訊、說話者再提供可核對的新線索。'
-          o = replace_strings(o, [(old, new)])
-          save(p, o)
-
-          # 7-IV-5: make baseline and follow-up scores internally consistent.
-          p = Path('lessons/english/lesson-english-performance-7-iv-5.json')
-          o = load(p)
-          o = replace_strings(o, [
-              ('若第二週仍有兩個時間題答錯', '若第二週仍有一個時間題答錯'),
-              ('地點題 3/3、3/3；時間題 2/3、1/3。兩次時間錯題都把相近數字聽混。', '地點題 3/3、3/3；時間題 1/3、2/3。兩次測驗的錯題都涉及相近數字聽混。'),
-              ('第二週仍漏掉兩個相近數字，兩次錄音長度不同。', '第二週仍有一題把一組相近數字聽混，兩次錄音長度不同。'),
-              ('lesson維持draft。', '本單元已完成最終內容審查。')
-          ])
-          save(p, o)
-
-          # 9-IV-2: correct distractor labels in explanations/steps while preserving answer keys.
-          qfix = {
-              1: (
-                  '正確答案是B。由小到大排列為8、10、12、15，因此選項B符合。A是由大到小；C、D都沒有依遞增規則排列所有數值。',
-                  'A是由大到小；C、D都沒有依遞增規則排列所有數值。'
-              ),
-              3: (
-                  '正確答案是D。只有蘋果和香蕉都符合水果類，因此答案D。A、B、C各含蔬菜或穀物，不能稱為全是水果。',
-                  'A、B、C各含蔬菜或穀物，不能稱為全是水果。'
-              ),
-              5: (
-                  '正確答案是B。A頁數較多25頁，所以選項B正確。A把大小關係顛倒；C否認差異；D與表格明列頁數矛盾。',
-                  'A把大小關係顛倒；C否認差異；D與表格明列頁數矛盾。'
-              ),
-              7: (
-                  '正確答案是D。因此應放入 indoor activities，答案D。A與已知地點相反；B不應自動雙重歸類；C把水誤當分類依據。',
-                  'A與已知地點相反；B不應自動雙重歸類；C把水誤當分類依據。'
-              ),
-          }
-          for i, (expl, wrong_step) in qfix.items():
-              p = Path(f'questions/english/question-english-performance-9-iv-2-{i}.json')
-              q = load(p)
-              q['answer']['explanation'] = expl
-              q['solutionSteps'][3] = wrong_step
-              save(p, q)
-
-          # 9-IV-3 Q9: make the causal links explicit so the item matches the lesson's own evidence rule.
-          p = Path('questions/english/question-english-performance-9-iv-3-9.json')
-          q = load(p)
-          q['prompt'] = 'A paragraph says the river became polluted. It explains that the pollution damaged fish habitat, so fish numbers fell; the town then installed a filtering system in response. Which order best shows the relationship?'
-          q['answer']['explanation'] = 'The paragraph explicitly links pollution to habitat damage and fewer fish, then identifies the filtering system as a response. Correct answer: A'
-          q['solutionSteps'] = [
-              'Identify the explicit relationship: pollution damaged fish habitat, so fish numbers fell.',
-              'Then identify the stated response: the town installed a filtering system in response to the problem.',
-              'The supported order is pollution → fewer fish → filtering response; the correct answer is A.',
-              'The other choices reverse the stated sequence, insert an unrelated event, or deny links the paragraph explicitly gives.',
-              'Check that the causal arrows come from the paragraph’s own wording, not merely from events appearing next to one another.'
-          ]
-          save(p, q)
-
-          # 9-IV-3: add a student-facing guided-choice interaction.
-          p = Path('lessons/english/lesson-english-performance-9-iv-3.json')
-          o = load(p)
-          o['interactive'] = {
-              'type': 'guided-choice',
-              'goal': '用上下文分辨原因、結果、條件與僅有先後／同時出現的資訊，避免把相關誤寫成確定因果。',
-              'scenario': '每一步先圈出連接詞與事件，再判斷文本究竟明說因果、只提出條件，或證據仍不足。',
-              'steps': [
-                  {
-                      'id': 'step-1',
-                      'prompt': '句子寫：The field was closed, so practice moved indoors. 哪一項是結果？',
-                      'options': ['The field was closed.', 'Practice moved indoors.', 'The sentence does not give any relationship.'],
-                      'answer': 'B',
-                      'retryHint': 'so 通常把前面的情況連到後面的結果；先找 so 後的完整子句。',
-                      'feedback': '答案 B。field was closed 是前因情況，so 後的 practice moved indoors 是文本明示的結果。'
-                  },
-                  {
-                      'id': 'step-2',
-                      'prompt': '句子寫：Practice moved indoors because the field was closed. because 後面的內容功能是什麼？',
-                      'options': ['說明原因', '說明結果', '只說兩件事碰巧同時發生'],
-                      'answer': 'A',
-                      'retryHint': '把 because 子句改成回答 Why did practice move indoors? 看它是否能直接回答。',
-                      'feedback': '答案 A。because the field was closed 直接回答了改到室內的原因。'
-                  },
-                  {
-                      'id': 'step-3',
-                      'prompt': '公告寫：If the air quality is poor, practice will move indoors. 目前空氣品質是否已經很差？',
-                      'options': ['已確定很差', '未必；if 只提出條件', '已確定很好'],
-                      'answer': 'B',
-                      'retryHint': 'if 說明「條件成立時會怎樣」，不等於條件現在已經成立。',
-                      'feedback': '答案 B。文本只給條件與條件成立後的安排，沒有交代目前空氣品質。'
-                  },
-                  {
-                      'id': 'step-4',
-                      'prompt': '資料只說：學校增加飲水站；同月護理室就診人數下降。哪個結論最合乎證據？',
-                      'options': ['飲水站一定造成就診下降', '兩件事同月出現，但目前不足以證明因果', '就診下降一定造成學校增加飲水站'],
-                      'answer': 'B',
-                      'retryHint': '先問文本有沒有提供機制、比較組或明示因果；只有時間相鄰不能自動畫因果箭頭。',
-                      'feedback': '答案 B。資料顯示同時期變化，但還可能有天氣、活動或統計方式等其他因素；不能僅靠先後／同時斷定因果。'
-                  }
-              ],
-              'completionMessage': '完成：先找文本明示的連接關係，再用時間順序輔助；證據不足時保留「無法確定因果」。'
-          }
-          save(p, o)
-
-          # 9-IV-4: add a guided-choice interaction that treats checkability and evaluation separately.
-          p = Path('lessons/english/lesson-english-performance-9-iv-4.json')
-          o = load(p)
-          o['interactive'] = {
-              'type': 'guided-choice',
-              'goal': '把可查證的事實型主張、作者評價與來源證據分開，能處理同一句同時包含資料與意見的情況。',
-              'scenario': '閱讀四組校園短句；不要只靠 maybe、I think 或數字判斷，要說明哪一部分可查、哪一部分是評價。',
-              'steps': [
-                  {
-                      'id': 'step-1',
-                      'prompt': 'The art room has 24 seats. In my opinion, it is the best place for the meeting. 哪個判斷最準確？',
-                      'options': ['兩句都是客觀事實', '座位數是可查證主張；best 是作者評價', '只要有數字，整段都一定是真的'],
-                      'answer': 'B',
-                      'retryHint': '分開看兩個子句：一個可用座位紀錄核對，一個含 best 的價值判斷。',
-                      'feedback': '答案 B。24 seats 可查證；best 需要評價標準，屬作者意見。可查證也不等於已經證實。'
-                  },
-                  {
-                      'id': 'step-2',
-                      'prompt': 'Maybe the art room has 24 seats. 這句最適合怎麼判斷？',
-                      'options': ['因為有 maybe，所以只能是意見', '它仍提出可查證的座位數主張，只是說話者不確定', '因為有 24，所以一定正確'],
-                      'answer': 'B',
-                      'retryHint': '問「24 seats 能不能靠實際座位或紀錄核對？」再處理 maybe 的不確定語氣。',
-                      'feedback': '答案 B。maybe 改變說話者的確定程度，不會把原本可查證的座位數變成純粹喜好。'
-                  },
-                  {
-                      'id': 'step-3',
-                      'prompt': '調查寫：18 of 25 students chose the garden. 接著作者說：It is clearly the most relaxing place on campus. 問題在哪裡？',
-                      'options': ['18/25 是該班調查資料；後句把有限樣本擴大成全校性的評價', '兩句都因為有 students 而是意見', '後句是精確測量，完全不需要來源'],
-                      'answer': 'A',
-                      'retryHint': '先確認調查涵蓋誰，再檢查 most relaxing on campus 是否超出這個樣本與測量內容。',
-                      'feedback': '答案 A。前句可回查班級問卷；後句把偏好資料推成整校最放鬆的場所，證據範圍不足。'
-                  },
-                  {
-                      'id': 'step-4',
-                      'prompt': 'According to the school report, the north gate closed at 4:30. This is an unreasonable rule. 哪項分析正確？',
-                      'options': ['according to 讓後面所有句子都變成事實', '關門時間是可查來源主張；unreasonable 是作者評價', '只要作者有意見，前面的時間也不能查證'],
-                      'answer': 'B',
-                      'retryHint': '把「來源說了什麼」和「作者如何評價規則」拆成兩層。',
-                      'feedback': '答案 B。第一句可回到校方報告核對；第二句的 unreasonable 是價值判斷，不會因前句有來源而變成客觀測量。'
-                  }
-              ],
-              'completionMessage': '完成：先問主張能否查證，再找評價詞與來源；同一句或同一段可以同時包含事實型資訊與意見。'
-          }
-          save(p, o)
-
-          # Remove stale review-pending wording in the units finalized here.
-          stale_pairs = [
-              ('教材最終審查留待使用者交由ChatGPT。', '本單元已完成教材內容審查。'),
-              ('教材最終內容審查由使用者交ChatGPT，Codex不設此審查gate。', '本單元已完成教材內容審查。'),
-              ('供使用者後續ChatGPT審查時逐筆比對。', '本單元已完成逐筆內容審查，來源限制維持不變。'),
-              ('Final lesson-content review is reserved for the user\'s ChatGPT.', 'Final lesson-content review completed on 2026-09-30.'),
-              ('pending second-round AI/Terra content review.', 'Final content review completed on 2026-09-30.'),
-              ('內容最終審查由使用者交ChatGPT。', '已於2026-09-30完成內容審查。')
-          ]
-
-          # Mark only the units substantively reviewed in this review run.
-          ids = [
-              '7-iv-1','7-iv-2','7-iv-3','7-iv-4','7-iv-5',
-              '8-iv-1','8-iv-2','8-iv-3','8-iv-4','8-iv-5','8-iv-6',
-              '9-iv-1','9-iv-2','9-iv-3','9-iv-4'
-          ]
-          for uid in ids:
-              lp = Path(f'lessons/english/lesson-english-performance-{uid}.json')
-              lesson = load(lp)
-              lesson = replace_strings(lesson, stale_pairs)
-              lesson['reviewStatus'] = 'reviewed'
-              lesson['updatedAt'] = DATE
-              save(lp, lesson)
-              for i in range(1, 11):
-                  qp = Path(f'questions/english/question-english-performance-{uid}-{i}.json')
-                  q = load(qp)
-                  q = replace_strings(q, stale_pairs)
-                  q['reviewStatus'] = 'reviewed'
-                  q['updatedAt'] = DATE
-                  save(qp, q)
+          Path('.github/english-qa-audit.json').write_text(
+              json.dumps(report, ensure_ascii=False, indent=2) + '\n', encoding='utf-8'
+          )
+          print(json.dumps(report, ensure_ascii=False, indent=2))
           PY
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lessons/english questions/english
-          if ! git diff --cached --quiet; then
-            git commit -m "audit: finalize remaining English performance units"
-            git push origin HEAD:main
-          fi
+          git add .github/english-qa-audit.json
+          git commit -m "audit: record English performance QA completeness"
+          git push origin HEAD:main
