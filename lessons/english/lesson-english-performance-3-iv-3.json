@@ -48,8 +48,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -170,19 +170,124 @@
     "goal": "先寫下對標示的預測，再改變箭頭方向，觀察文字與地圖標籤是否仍一致；若線索衝突，暫停行動並找可靠證據。",
     "scenario": "你是車站、診所與校園的訪客引導員。每個情境先記錄預測，接著翻轉箭頭這一項線索；文字與兩側目的地標籤保持不變，學生需用對照證據決定是否照走或先停下核對。",
     "variables": [
-      {"symbol":"direction","meaning":"標示箭頭指向左側或右側目的地"},
-      {"symbol":"destination-text","meaning":"標示文字所命名的目的地；操作時保持不變"},
-      {"symbol":"map-labels","meaning":"目前位置兩側的地點名稱；操作時保持不變"}
+      {
+        "symbol": "direction",
+        "meaning": "標示箭頭指向左側或右側目的地"
+      },
+      {
+        "symbol": "destination-text",
+        "meaning": "標示文字所命名的目的地；操作時保持不變"
+      },
+      {
+        "symbol": "map-labels",
+        "meaning": "目前位置兩側的地點名稱；操作時保持不變"
+      }
     ],
     "steps": [
-      {"id":"step-1","prompt":"預測：讀出目的地文字後，你預期箭頭指向地圖哪一側？請先寫下理由。","options":["文字與箭頭預期指向同一目的地","只看顏色就能判斷","先不讀地圖標籤"],"answer":"A","feedback":"預測先留下來，之後才用箭頭與地圖標籤檢驗，不能只靠顏色。"},
-      {"id":"step-2","prompt":"操作：只翻轉箭頭，文字和左右地點不變。現在箭頭仍指向標示所寫的目的地嗎？","options":["重新比對兩側地名，判斷是否一致","假設地名也自動交換","忽略箭頭變化"],"answer":"A","feedback":"只改變箭頭，其他線索固定，才能看出方向改變是否造成證據衝突。"},
-      {"id":"step-3","prompt":"解釋與遷移：若標示文字和箭頭指向不同地點，下一步最安全的是什麼？","options":["不管矛盾，照箭頭快走","暫停並核對地圖或詢問工作人員","自行把目的地文字改成箭頭方向"],"answer":"B","feedback":"發現文字與位置不一致時，應停止猜測並查證；同一策略可遷移到其他公共場所。"}
+      {
+        "id": "step-1",
+        "prompt": "預測：讀出目的地文字後，你預期箭頭指向地圖哪一側？請先寫下理由。",
+        "options": [
+          "文字與箭頭預期指向同一目的地",
+          "只看顏色就能判斷",
+          "先不讀地圖標籤"
+        ],
+        "answer": "A",
+        "feedback": "預測先留下來，之後才用箭頭與地圖標籤檢驗，不能只靠顏色。"
+      },
+      {
+        "id": "step-2",
+        "prompt": "操作：只翻轉箭頭，文字和左右地點不變。現在箭頭仍指向標示所寫的目的地嗎？",
+        "options": [
+          "重新比對兩側地名，判斷是否一致",
+          "假設地名也自動交換",
+          "忽略箭頭變化"
+        ],
+        "answer": "A",
+        "feedback": "只改變箭頭，其他線索固定，才能看出方向改變是否造成證據衝突。"
+      },
+      {
+        "id": "step-3",
+        "prompt": "解釋與遷移：若標示文字和箭頭指向不同地點，下一步最安全的是什麼？",
+        "options": [
+          "不管矛盾，照箭頭快走",
+          "暫停並核對地圖或詢問工作人員",
+          "自行把目的地文字改成箭頭方向"
+        ],
+        "answer": "B",
+        "feedback": "發現文字與位置不一致時，應停止猜測並查證；同一策略可遷移到其他公共場所。"
+      }
     ],
     "signageScenarios": [
-      {"id":"station-exit","place":"車站轉乘走廊","task":"找出 EXIT 標示真正指向的出口；翻轉後若箭頭指向月台，請判斷線索是否衝突。","signText":"EXIT","leftDestination":"Exit A","rightDestination":"Platform 2","initialDirection":"left","options":["向左走到 Exit A，文字與箭頭一致。","向右走到 Platform 2，只依箭頭行動。","停下來核對站內地圖或詢問站務員。","進入標有 Staff Only 的門。"],"answerByDirection":{"left":"A","right":"C"},"evidenceByDirection":{"left":"EXIT 文字、左向箭頭和左側 Exit A 三項線索一致，可以朝 Exit A 前進。","right":"右向箭頭指向 Platform 2，但文字仍寫 EXIT、左側才標示 Exit A；線索不一致，先停下核對。"}},
-      {"id":"clinic-first-aid","place":"社區診所入口","task":"依 FIRST AID 標示找急救站；翻轉箭頭後檢查地圖地名是否還支持同一行動。","signText":"FIRST AID","leftDestination":"First-aid desk","rightDestination":"Gift shop","initialDirection":"left","options":["向左到 First-aid desk，符合標示內容。","向右到 Gift shop，因為箭頭永遠比文字可靠。","停下並向診所櫃檯確認急救站位置。","離開診所到停車場找急救用品。"],"answerByDirection":{"left":"A","right":"C"},"evidenceByDirection":{"left":"FIRST AID 與左側 First-aid desk 名稱相符，箭頭也指向該處。","right":"箭頭指向 Gift shop，與 FIRST AID 文字及地圖標籤不符；先向櫃檯核對。"}},
-      {"id":"campus-library","place":"校園教學大樓一樓","task":"依 LIBRARY 標示尋找圖書館；操作箭頭後重新比對左、右兩側地點。","signText":"LIBRARY","leftDestination":"Library","rightDestination":"Gym","initialDirection":"left","options":["向左到 Library，文字與地名吻合。","向右到 Gym，因為它離目前位置比較近。","停下並查看校園導覽圖，確認標示是否放錯。","進入沒有名稱的維修通道。"],"answerByDirection":{"left":"A","right":"C"},"evidenceByDirection":{"left":"LIBRARY、左向箭頭與左側 Library 標籤互相支持，可向左前往。","right":"右向箭頭指向 Gym，但標示文字和地圖目的地仍是 Library；應先查導覽圖確認。"}}
+      {
+        "id": "station-exit",
+        "place": "車站轉乘走廊",
+        "task": "找出 EXIT 標示真正指向的出口；翻轉後若箭頭指向月台，請判斷線索是否衝突。",
+        "signText": "EXIT",
+        "leftDestination": "Exit A",
+        "rightDestination": "Platform 2",
+        "initialDirection": "left",
+        "options": [
+          "向左走到 Exit A，文字與箭頭一致。",
+          "向右走到 Platform 2，只依箭頭行動。",
+          "停下來核對站內地圖或詢問站務員。",
+          "進入標有 Staff Only 的門。"
+        ],
+        "answerByDirection": {
+          "left": "A",
+          "right": "C"
+        },
+        "evidenceByDirection": {
+          "left": "EXIT 文字、左向箭頭和左側 Exit A 三項線索一致，可以朝 Exit A 前進。",
+          "right": "右向箭頭指向 Platform 2，但文字仍寫 EXIT、左側才標示 Exit A；線索不一致，先停下核對。"
+        }
+      },
+      {
+        "id": "clinic-first-aid",
+        "place": "社區診所入口",
+        "task": "依 FIRST AID 標示找急救站；翻轉箭頭後檢查地圖地名是否還支持同一行動。",
+        "signText": "FIRST AID",
+        "leftDestination": "First-aid desk",
+        "rightDestination": "Gift shop",
+        "initialDirection": "left",
+        "options": [
+          "向左到 First-aid desk，符合標示內容。",
+          "向右到 Gift shop，因為箭頭永遠比文字可靠。",
+          "停下並向診所櫃檯確認急救站位置。",
+          "離開診所到停車場找急救用品。"
+        ],
+        "answerByDirection": {
+          "left": "A",
+          "right": "C"
+        },
+        "evidenceByDirection": {
+          "left": "FIRST AID 與左側 First-aid desk 名稱相符，箭頭也指向該處。",
+          "right": "箭頭指向 Gift shop，與 FIRST AID 文字及地圖標籤不符；先向櫃檯核對。"
+        }
+      },
+      {
+        "id": "campus-library",
+        "place": "校園教學大樓一樓",
+        "task": "依 LIBRARY 標示尋找圖書館；操作箭頭後重新比對左、右兩側地點。",
+        "signText": "LIBRARY",
+        "leftDestination": "Library",
+        "rightDestination": "Gym",
+        "initialDirection": "left",
+        "options": [
+          "向左到 Library，文字與地名吻合。",
+          "向右到 Gym，因為它離目前位置比較近。",
+          "停下並查看校園導覽圖，確認標示是否放錯。",
+          "進入沒有名稱的維修通道。"
+        ],
+        "answerByDirection": {
+          "left": "A",
+          "right": "C"
+        },
+        "evidenceByDirection": {
+          "left": "LIBRARY、左向箭頭與左側 Library 標籤互相支持，可向左前往。",
+          "right": "右向箭頭指向 Gym，但標示文字和地圖目的地仍是 Library；應先查導覽圖確認。"
+        }
+      }
     ]
   },
   "versionResearch": [
