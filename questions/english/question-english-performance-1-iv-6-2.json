@@ -4,25 +4,60 @@
   "type": "single-choice",
   "prompt": "A gust scatters the scene cards during rehearsal. The actors look at the numbered corners, place the cards in order, and tape them to a board. How do they restore the scene order?",
   "options": [
-    { "id": "A", "text": "They hide the cards and repeat the first scene from memory." },
-    { "id": "B", "text": "They ask the audience to choose a new ending." },
-    { "id": "C", "text": "They use the numbered corners to sort the cards before taping them up." },
-    { "id": "D", "text": "They wait for the wind to put the cards back in place." }
+    {
+      "id": "A",
+      "text": "They hide the cards and repeat the first scene from memory."
+    },
+    {
+      "id": "B",
+      "text": "They ask the audience to choose a new ending."
+    },
+    {
+      "id": "C",
+      "text": "They use the numbered corners to sort the cards before taping them up."
+    },
+    {
+      "id": "D",
+      "text": "They wait for the wind to put the cards back in place."
+    }
   ],
-  "knowledgeIds": ["kg-english-performance-1-iv-6"],
+  "knowledgeIds": [
+    "kg-english-performance-1-iv-6"
+  ],
   "difficulty": "medium",
-  "answer": { "value": "C", "explanation": "The prompt states that the actors use the numbered corners to put the scattered cards in order, then tape them to a board. The other methods are not described." },
-  "provenance": { "origin": "original", "license": "All rights reserved", "sourceUrl": "https://www.fjm.kh.edu.tw/upload/226/101_44845/113%E5%B9%B4%E5%9C%8B%E4%B8%AD%E7%B5%84%E9%96%B1%E8%AE%80%E7%B4%A0%E9%A4%8A%E8%A9%A6%E9%A1%8C%28%E7%AD%94%E6%A1%88%E5%85%AC%E5%91%8A%29.pdf", "sourceLocator": "PDF第6頁第43題：依據故事辨認角色尋找失散者所採用的方法。本題轉用舞台演員用編號卡片復原場次順序。", "authoringNote": "舞台情節與選項皆原創，只參考公校閱讀題從故事辨識角色行動方法的能力。AI內容審查未完成，維持draft。" },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-24",
+  "answer": {
+    "value": "C",
+    "explanation": "The prompt states that the actors use the numbered corners to put the scattered cards in order, then tape them to a board. The other methods are not described."
+  },
+  "provenance": {
+    "origin": "original",
+    "license": "All rights reserved",
+    "sourceUrl": "https://www.fjm.kh.edu.tw/upload/226/101_44845/113%E5%B9%B4%E5%9C%8B%E4%B8%AD%E7%B5%84%E9%96%B1%E8%AE%80%E7%B4%A0%E9%A4%8A%E8%A9%A6%E9%A1%8C%28%E7%AD%94%E6%A1%88%E5%85%AC%E5%91%8A%29.pdf",
+    "sourceLocator": "PDF第6頁第43題：依據故事辨認角色尋找失散者所採用的方法。本題轉用舞台演員用編號卡片復原場次順序。",
+    "authoringNote": "舞台情節與選項皆原創，只參考公校閱讀題從故事辨識角色行動方法的能力。AI內容審查未完成，維持draft。"
+  },
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-english-performance-1-iv-6",
-  "examPatternRefs": [{ "url": "https://www.fjm.kh.edu.tw/upload/226/101_44845/113%E5%B9%B4%E5%9C%8B%E4%B8%AD%E7%B5%84%E9%96%B1%E8%AE%80%E7%B4%A0%E9%A4%8A%E8%A9%A6%E9%A1%8C%28%E7%AD%94%E6%A1%88%E5%85%AC%E5%91%8A%29.pdf", "title": "高雄市113學年度允文允武國中組閱讀素養試題與答案（鳳甲國中校方公開）", "year": "113", "subject": "english", "locator": "PDF第6頁第43題：依故事辨認角色尋找失散者的方法；本題以全新舞台卡片情節測同類行動方法判讀。", "locatorLevel": "item", "observedPattern": "須從敘事內容中抽取角色實際使用的方法，而非選擇未出現的行動；本題角色、道具與情節皆重新創作。", "reuseDecision": "pattern-only", "status": "recorded" }],
+  "examPatternRefs": [
+    {
+      "url": "https://www.fjm.kh.edu.tw/upload/226/101_44845/113%E5%B9%B4%E5%9C%8B%E4%B8%AD%E7%B5%84%E9%96%B1%E8%AE%80%E7%B4%A0%E9%A4%8A%E8%A9%A6%E9%A1%8C%28%E7%AD%94%E6%A1%88%E5%85%AC%E5%91%8A%29.pdf",
+      "title": "高雄市113學年度允文允武國中組閱讀素養試題與答案（鳳甲國中校方公開）",
+      "year": "113",
+      "subject": "english",
+      "locator": "PDF第6頁第43題：依故事辨認角色尋找失散者的方法；本題以全新舞台卡片情節測同類行動方法判讀。",
+      "locatorLevel": "item",
+      "observedPattern": "須從敘事內容中抽取角色實際使用的方法，而非選擇未出現的行動；本題角色、道具與情節皆重新創作。",
+      "reuseDecision": "pattern-only",
+      "status": "recorded"
+    }
+  ],
   "solutionStrategy": "問「角色怎麼做到」時，找文本明確寫出的工具與操作，再排除憑空補上的方法。",
   "solutionSteps": [
     "定位要解決的問題：排練時一陣風把場次卡吹散。",
     "回到句子找演員實際採取的動作：先看卡片角落的編號。",
     "將編號和動作連結：他們依編號排好場次，再把卡片貼到板上。",
     "檢查選項 C 是否完整保留這兩個關鍵步驟，答案確實吻合。",
-    "排除 B、C、D：文本沒有觀眾改結局、背台詞重演或等待風停後自動復原。"
+    "排除 A、B、D：文本沒有藏起卡片重演、請觀眾改結局或等待風把卡片放回去。"
   ]
 }
