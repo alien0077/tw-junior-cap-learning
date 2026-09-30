@@ -2,7 +2,7 @@
   "id": "question-english-performance-6-iv-4-6",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "A product label says: 'Keep refrigerated. Best before June 12.' What information is most important before eating it?",
+  "prompt": "A product label says: 'Keep refrigerated. Best before June 12.' Which action best follows the label before eating it?",
   "options": [
     {
       "id": "A",
@@ -18,7 +18,7 @@
     },
     {
       "id": "D",
-      "text": "Check that it has been kept cold and is before June 12."
+      "text": "Check that it has been kept refrigerated and check the best-before date."
     }
   ],
   "knowledgeIds": [
@@ -27,7 +27,7 @@
   "difficulty": "medium",
   "answer": {
     "value": "D",
-    "explanation": "答案 D：食用前同時確認冷藏狀態與最佳食用日期。"
+    "explanation": "答案 D：依標示確認冷藏保存，並查看 best-before 日期；題目不把 best-before 冒稱為單一安全截止日。"
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "參考鹽埕、武崙、國昌公校英文試卷中的圖像理解、資料表閱讀及情境推論題型；未複製原題或選項。",
     "authoringNote": "依官方課綱與多元素材閱讀能力獨立創作素材描述、選項、答案與詳解；公校試題只作題型研究，維持 draft 待後續內容及版權 QA。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-27",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "lessonId": "lesson-english-performance-6-iv-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "page"
     }
   ],
-  "solutionStrategy": "把標籤上的兩項安全條件轉成食用前的檢查行動。",
+  "solutionStrategy": "把保存方式與 best-before 日期分開解讀，依標示採取檢查，不額外推論標籤沒有說的食品安全結論。",
   "solutionSteps": [
-    "標籤提供兩種不同資訊：保存方式與期限，先分開讀。",
-    "確認 keep refrigerated 是食用前的保存條件。",
-    "再核對 June 12 是否已過，兩項都會影響是否食用。",
-    "只看包裝顏色或品名不能替代標籤安全資訊。",
-    "答案 D：食用前同時確認冷藏狀態與最佳食用日期。"
+    "標籤提供兩類資訊：Keep refrigerated 是保存方式，Best before June 12 是品質日期標示。",
+    "食用前可先確認產品是否依要求冷藏，並查看 best-before 日期。",
+    "Best before 不應在沒有其他資訊時直接改寫成『過日即不安全』的硬性結論。",
+    "包裝顏色、字母數量或日照都不能取代標籤資訊。",
+    "答案 D：確認冷藏保存並查看 best-before 日期。"
   ]
 }
