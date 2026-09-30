@@ -48,8 +48,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -174,7 +174,11 @@
       "goal": "先按讀者問題預測來源區塊，再切換閱讀說明、日期表和行動公告，使用片段證據回答並說明推論界線。",
       "context": "社區網頁同時刊出回收原因、每月收運日與交付方式。先想：要替電池回收安排日期，應先查哪一區？預測不會直接替你揭曉答案。",
       "predictionPrompt": "預測要知道收運日期時，先查哪個區塊？輸入「日期表」後提交：",
-      "predictionAnswers": ["日期表", "行事曆", "calendar"],
+      "predictionAnswers": [
+        "日期表",
+        "行事曆",
+        "calendar"
+      ],
       "predictionHint": "題目問 when；找能按日期排列資料的區塊，不要只因公告有行動指示就選公告。",
       "sources": [
         {
@@ -206,12 +210,19 @@
       "sourceHint": "題目問 when，日期表才按日期與時段提供答案；原因段落和交付公告分別回答 why 與 how。",
       "explanationPrompt": "說明你選的區塊如何符合讀者任務，並指出片段證據：",
       "minimumExplanationLength": 12,
-      "requiredEvidenceTerms": ["wednesday", "3:30"],
+      "requiredEvidenceTerms": [
+        "wednesday",
+        "3:30"
+      ],
       "evidenceHint": "理由需指出 Wednesday 和 3:30 的日期／時段線索，不能只寫『我選日期表』。",
       "evidenceFeedback": "你將 when 任務連到日期表，並引用 Wednesday 與 3:30 的時段；現在把同一閱讀原則用在不同主題。",
       "transfer": {
         "prompt": "遷移題：新網頁有「回收的水污染原因」、一張收運日期表和「密封後交給櫃檯」的公告。若要知道為何不可丟進一般垃圾，應查哪一區？輸入區塊名稱：",
-        "answers": ["說明段落", "說明", "explanation"],
+        "answers": [
+          "說明段落",
+          "說明",
+          "explanation"
+        ],
         "hint": "分辨 why（原因）和 when（日期）；不要沿用上一題的答案。",
         "completionMessage": "完成：你依問題切換了區塊，並區分說明、日期資料與行動規則。"
       }
