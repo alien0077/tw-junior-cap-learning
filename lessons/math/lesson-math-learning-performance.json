@@ -57,8 +57,8 @@
     "license": "All rights reserved",
     "authoringNote": "Original mathematics learning-performance manuscript grounded in the official curriculum and the explicitly limited school-plan evidence recorded in versionResearch. No publisher text, image, example, exercise, answer, or transcript is reproduced."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-29",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "interactive": {
     "type": "algebra-expression-builder",
     "goal": "用可檢查的步驟處理「學習表現」並驗算結果。",
@@ -207,7 +207,7 @@
   "teaching": {
     "body": [
       {
-      "id": "hook",
+        "id": "hook",
         "phase": "hook",
         "heading": "先問：答案怎麼讓人信服？",
         "body": "校園要替活動準備可重複使用的水壺，兩家廠商報價方式不同：甲收一次性設定費650元，每個水壺18元；乙設定費250元，每個26元。只問「哪家便宜」還不夠，因為答案取決於買幾個。數學學習表現就是把條件讀準、選對工具、留下推理證據，再把結論放回情境解讀；算對一個數字只是其中一環。"
@@ -251,16 +251,16 @@
     ],
     "exitCheck": [
       {
-      "prompt": "在採購例中，n、650、18各表示什麼？為什麼n不能是負數或小數？",
-      "expectedEvidence": "能說明n是水壺個數、650是甲的固定設定費、18是每個的費率，並以購買數量的情境限制解釋其非負整數範圍。"
+        "prompt": "在採購例中，n、650、18各表示什麼？為什麼n不能是負數或小數？",
+        "expectedEvidence": "能說明n是水壺個數、650是甲的固定設定費、18是每個的費率，並以購買數量的情境限制解釋其非負整數範圍。"
       },
       {
-      "prompt": "如何證明50個時兩家費用相同？少於與多於50個又各是哪家較省？",
-      "expectedEvidence": "代入兩式都得1550元，並比較兩條費用關係可說明50以下乙較省、50以上甲較省。"
+        "prompt": "如何證明50個時兩家費用相同？少於與多於50個又各是哪家較省？",
+        "expectedEvidence": "代入兩式都得1550元，並比較兩條費用關係可說明50以下乙較省、50以上甲較省。"
       },
       {
-      "prompt": "若影印店加入最低消費或折扣門檻，能否直接沿用本課方程式？",
-      "expectedEvidence": "指出必須重新整理條件；可能改成分段關係，並用新資料檢查模型，而非直接照抄兩條一次式。"
+        "prompt": "若影印店加入最低消費或折扣門檻，能否直接沿用本課方程式？",
+        "expectedEvidence": "指出必須重新整理條件；可能改成分段關係，並用新資料檢查模型，而非直接照抄兩條一次式。"
       }
     ]
   },
