@@ -48,8 +48,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -183,7 +183,10 @@
       "expectedInitialValue": 20,
       "manipulationPrompt": "操作每格單位；保持四格柱高不變，觀察總數。",
       "explanationPrompt": "說明讀值改變的原因，答案需同時包含「刻度」和「單位」。",
-      "acceptedExplanationTerms": ["刻度", "單位"],
+      "acceptedExplanationTerms": [
+        "刻度",
+        "單位"
+      ],
       "explanationAccepted": "說明指出柱高仍是四格，總量改變來自每格刻度單位；接著用新表格比較資料。",
       "explanationHint": "請比較兩次的每格標籤和相同格數；理由至少要提到「刻度」及「單位」。",
       "transfer": {
@@ -196,7 +199,10 @@
         "answer": "B",
         "explanationPrompt": "用一句話指出最高的日期和數值，保留 visitors 單位。",
         "minimumExplanationLength": 12,
-        "requiredEvidenceTerms": ["Tuesday", "18"],
+        "requiredEvidenceTerms": [
+          "Tuesday",
+          "18"
+        ],
         "retryHint": "逐一比較12、18、15，並把最大值連回同一資料列的星期和單位；不要靠日期先後猜測。",
         "completionMessage": "完成：你依刻度讀出數量，並以日期、最大值和單位支持新圖表結論。"
       }
