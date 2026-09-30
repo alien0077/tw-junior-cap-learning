@@ -48,8 +48,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -175,25 +175,71 @@
       "mainStory": {
         "introduction": "Nia 帶著親手製作的藍色風箏來到校園風箏日。先預測：如果第一次嘗試不順利，她可能需要改變什麼？完成預測後再讀故事，檢查結局是否支持你的想法。",
         "parts": [
-          { "id": "goal", "label": "目標與期待", "text": "Nia 想在風箏日展示她畫的藍色海浪圖案；她和 Kai 把風箏帶到操場中央，等著第一輪起飛。" },
-          { "id": "obstacle", "label": "真正的障礙", "text": "操場中央幾乎沒有風。風箏一離地就拖回草地，線軸沒有斷，風箏也沒有卡住。" },
-          { "id": "failed-try", "label": "沒有解決問題的嘗試", "text": "Nia 用力拉線想讓風箏升高，結果側邊縫線裂開。她停下來補好，不再把更大的力氣當成答案。" },
-          { "id": "clue", "label": "促成轉折的線索", "text": "她看見圖書館旁的布旗朝同一方向伸展，旗尾持續飄動；那裡有風，操場中央卻沒有。" },
-          { "id": "choice", "label": "角色的新選擇", "text": "Nia 請 Kai 幫忙拿著風箏，兩人改到圖書館旁較開闊的小坡，再確認布旗仍指向同一側。" },
-          { "id": "result", "label": "可觀察的結果", "text": "風箏在小坡上穩定升起，藍色圖案越過樹梢；Nia 完成展示，補好的縫線也沒有再裂開。" },
-          { "id": "change", "label": "人物想法的改變", "text": "Nia 原本以為只要更用力就能成功；經過這次嘗試，她先觀察環境條件，再決定要改變哪個做法。" }
+          {
+            "id": "goal",
+            "label": "目標與期待",
+            "text": "Nia 想在風箏日展示她畫的藍色海浪圖案；她和 Kai 把風箏帶到操場中央，等著第一輪起飛。"
+          },
+          {
+            "id": "obstacle",
+            "label": "真正的障礙",
+            "text": "操場中央幾乎沒有風。風箏一離地就拖回草地，線軸沒有斷，風箏也沒有卡住。"
+          },
+          {
+            "id": "failed-try",
+            "label": "沒有解決問題的嘗試",
+            "text": "Nia 用力拉線想讓風箏升高，結果側邊縫線裂開。她停下來補好，不再把更大的力氣當成答案。"
+          },
+          {
+            "id": "clue",
+            "label": "促成轉折的線索",
+            "text": "她看見圖書館旁的布旗朝同一方向伸展，旗尾持續飄動；那裡有風，操場中央卻沒有。"
+          },
+          {
+            "id": "choice",
+            "label": "角色的新選擇",
+            "text": "Nia 請 Kai 幫忙拿著風箏，兩人改到圖書館旁較開闊的小坡，再確認布旗仍指向同一側。"
+          },
+          {
+            "id": "result",
+            "label": "可觀察的結果",
+            "text": "風箏在小坡上穩定升起，藍色圖案越過樹梢；Nia 完成展示，補好的縫線也沒有再裂開。"
+          },
+          {
+            "id": "change",
+            "label": "人物想法的改變",
+            "text": "Nia 原本以為只要更用力就能成功；經過這次嘗試，她先觀察環境條件，再決定要改變哪個做法。"
+          }
         ],
-        "requiredEvidenceIds": ["obstacle", "failed-try", "clue", "result", "change"],
+        "requiredEvidenceIds": [
+          "obstacle",
+          "failed-try",
+          "clue",
+          "result",
+          "change"
+        ],
         "evidenceHint": "請找出讓第一次嘗試失敗的條件、她試過卻無效的方法、轉折線索，以及後來可觀察的結果。",
         "evidenceRetryHint": "情節證據還缺一環。回看風箏為何下墜、Nia 如何拉線、布旗指向哪裡，以及最後發生什麼；不要把障礙誤當成角色目標。",
         "evidenceAccepted": "證據鏈已包含障礙、失敗嘗試、環境線索、結果與人物想法改變；現在比較哪個摘要保留了因果關係。",
         "question": {
           "prompt": "哪個摘要最忠實呈現故事的主要情節與轉折？",
           "options": [
-            { "id": "A", "text": "Nia 的風箏破了，所以她放棄風箏日，也不再製作作品。" },
-            { "id": "B", "text": "Nia 想展示風箏，中央操場風弱；她用力拉線後補好裂縫，接著看見布旗提示另一處有風，便換到小坡成功起飛。" },
-            { "id": "C", "text": "Kai 把風箏拿走，Nia 因為海浪圖案太重而沒有完成展示。" },
-            { "id": "D", "text": "風箏一開始就在圖書館旁飛得很高，Nia 沒有遇到任何問題。" }
+            {
+              "id": "A",
+              "text": "Nia 的風箏破了，所以她放棄風箏日，也不再製作作品。"
+            },
+            {
+              "id": "B",
+              "text": "Nia 想展示風箏，中央操場風弱；她用力拉線後補好裂縫，接著看見布旗提示另一處有風，便換到小坡成功起飛。"
+            },
+            {
+              "id": "C",
+              "text": "Kai 把風箏拿走，Nia 因為海浪圖案太重而沒有完成展示。"
+            },
+            {
+              "id": "D",
+              "text": "風箏一開始就在圖書館旁飛得很高，Nia 沒有遇到任何問題。"
+            }
           ],
           "answer": "B",
           "feedback": "B 保留了目標、無風造成的障礙、拉線失敗、布旗轉折線索與換地點後的結果；其他選項添加或顛倒了故事沒有支持的事件。",
@@ -203,23 +249,68 @@
       "transfer": {
         "introduction": "新故事換成帶新生認路。不要沿用風箏答案；重新找問題線索、角色修正與結果，再判斷人物改變。",
         "parts": [
-          { "id": "goal", "label": "角色目標", "text": "Ravi 想讓第一次來機器人社的新生找到活動室。他在大門貼了一張清楚寫著「Room 12」的公告。" },
-          { "id": "obstacle", "label": "情境變化", "text": "那天下午 Room 12 臨時上鎖，社團改到圖書館旁的工作室；新生照公告走到舊教室，沒有找到人。" },
-          { "id": "failed-response", "label": "沒有解決困難的反應", "text": "Ravi 把「Room 12」四個字放大重印，仍沒有寫出臨時更換的地點；第二位新生也在舊教室門口折返。" },
-          { "id": "clue", "label": "指出問題的證據", "text": "他看見兩位新生先停在 Room 12，再沿走廊回到大門；他們都拿著同一張放大的舊公告。" },
-          { "id": "adjustment", "label": "改變方案", "text": "Ravi 在公告補上「今天改到圖書館旁工作室」，並從大門到走廊轉角逐一貼上方向箭頭。" },
-          { "id": "result", "label": "後續結果", "text": "下一位新生沿箭頭走到工作室；Ravi 看到對方不必折返，就留下這套臨時路線標示直到活動結束。" },
-          { "id": "change", "label": "人物理解的改變", "text": "Ravi 起初把問題當成字太小；折返的路線證據讓他改看內容是否更新、下一步是否清楚。" }
+          {
+            "id": "goal",
+            "label": "角色目標",
+            "text": "Ravi 想讓第一次來機器人社的新生找到活動室。他在大門貼了一張清楚寫著「Room 12」的公告。"
+          },
+          {
+            "id": "obstacle",
+            "label": "情境變化",
+            "text": "那天下午 Room 12 臨時上鎖，社團改到圖書館旁的工作室；新生照公告走到舊教室，沒有找到人。"
+          },
+          {
+            "id": "failed-response",
+            "label": "沒有解決困難的反應",
+            "text": "Ravi 把「Room 12」四個字放大重印，仍沒有寫出臨時更換的地點；第二位新生也在舊教室門口折返。"
+          },
+          {
+            "id": "clue",
+            "label": "指出問題的證據",
+            "text": "他看見兩位新生先停在 Room 12，再沿走廊回到大門；他們都拿著同一張放大的舊公告。"
+          },
+          {
+            "id": "adjustment",
+            "label": "改變方案",
+            "text": "Ravi 在公告補上「今天改到圖書館旁工作室」，並從大門到走廊轉角逐一貼上方向箭頭。"
+          },
+          {
+            "id": "result",
+            "label": "後續結果",
+            "text": "下一位新生沿箭頭走到工作室；Ravi 看到對方不必折返，就留下這套臨時路線標示直到活動結束。"
+          },
+          {
+            "id": "change",
+            "label": "人物理解的改變",
+            "text": "Ravi 起初把問題當成字太小；折返的路線證據讓他改看內容是否更新、下一步是否清楚。"
+          }
         ],
-        "requiredEvidenceIds": ["failed-response", "clue", "adjustment", "result"],
+        "requiredEvidenceIds": [
+          "failed-response",
+          "clue",
+          "adjustment",
+          "result"
+        ],
         "evidenceHint": "標出放大舊公告仍失敗的段落、兩位新生折返的線索、Ravi 的新方案與下一位新生的結果。",
         "question": {
           "prompt": "從前後事件最能推論 Ravi 改變了哪個想法？",
           "options": [
-            { "id": "A", "text": "他認為所有新生都應該自己詢問，公告不需要提供路線。" },
-            { "id": "B", "text": "他發現字放大就能解決臨時換教室造成的問題。" },
-            { "id": "C", "text": "他從只調整字體大小，改為更新地點資訊並讓讀者看見下一步路線。" },
-            { "id": "D", "text": "他決定往後不再接待任何第一次參加社團的新生。" }
+            {
+              "id": "A",
+              "text": "他認為所有新生都應該自己詢問，公告不需要提供路線。"
+            },
+            {
+              "id": "B",
+              "text": "他發現字放大就能解決臨時換教室造成的問題。"
+            },
+            {
+              "id": "C",
+              "text": "他從只調整字體大小，改為更新地點資訊並讓讀者看見下一步路線。"
+            },
+            {
+              "id": "D",
+              "text": "他決定往後不再接待任何第一次參加社團的新生。"
+            }
           ],
           "answer": "C",
           "feedback": "C 同時對應放大舊地點仍有人折返，以及更新地點並加上路標後新生成功到達。",
