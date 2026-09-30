@@ -2,7 +2,7 @@
   "id": "question-english-performance-5-iv-6-9",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "David said, 'This book is mine.' Which report is correct when David points to the book?",
+  "prompt": "Yesterday David pointed to a book and said, 'This book is mine.' Which sentence correctly reports that past scene today?",
   "options": [
     {
       "id": "A",
@@ -27,7 +27,7 @@
   "difficulty": "hard",
   "answer": {
     "value": "D",
-    "explanation": "David 指著的 this book 可在轉述中明確說成 the book；is 隨 said 回推成 was。mine 表示 David 所有，第三人稱物主代名詞應為 his。"
+    "explanation": "題目明示是在今天回述昨天的場景；this book 可改成 the book，當時的 is 在過去場景中回述為 was，而 mine 指 David 的所有權，改為 his。"
   },
   "provenance": {
     "origin": "original",
@@ -74,12 +74,12 @@
       "locatorLevel": "item"
     }
   ],
-  "solutionStrategy": "將指示詞、be 動詞與所有代名詞分別換成第三人稱轉述形式。",
+  "solutionStrategy": "先確認題目要求回述昨天的場景，再處理指示詞、be 動詞與所有代名詞；不要把回溯時態當成任何情境都必須套用。",
   "solutionSteps": [
-    "確認 David 指著眼前的書，this 可明確改寫為 the book。",
-    "把現在式 is 依過去報導視角回推為 was。",
-    "將 mine 對應 David 的所有權，改為 his。",
-    "排除把 David 的物主身分改成 mine，或把 book 配上錯誤代名詞的句子。",
-    "以 David 為物主回讀整句，確認指涉的是同一本書及他的所有權。"
+    "先標記這是今天回述昨天的場景，因此需要維持過去敘事視角。",
+    "David 當時指著的 this book 可明確改寫為 the book。",
+    "在這個過去場景回述中，is 改為 was。",
+    "mine 指 David 的所有權，第三人稱物主代名詞改為 his。",
+    "回讀整句，確認時間、書本指涉與所有權都沒有改變。"
   ]
 }
