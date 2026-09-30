@@ -56,8 +56,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-28",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -178,21 +178,157 @@
     "goal": "聽原創微故事並選出能忠實保留角色目標、情節轉折及結局的精簡筆記。",
     "scenario": "先聽一段英語故事，自己記下少量線索，再選擇足以重建主線、又沒有添加臆測的筆記。逐字稿預設收合，作答後可用來核對。",
     "variables": [
-      {"symbol":"p","meaning":"人物及其目標"},
-      {"symbol":"t","meaning":"事件順序與轉折"},
-      {"symbol":"r","meaning":"行動原因及故事結果"}
+      {
+        "symbol": "p",
+        "meaning": "人物及其目標"
+      },
+      {
+        "symbol": "t",
+        "meaning": "事件順序與轉折"
+      },
+      {
+        "symbol": "r",
+        "meaning": "行動原因及故事結果"
+      }
     ],
     "steps": [
-      {"id":"step-1","prompt":"選出能交代人物、障礙、行動及結果的最短可靠筆記。","audioScript":"Milo wanted to bring a box of books to the club room. It started raining, so he moved the box to the porch and covered it with a plastic sheet. The books stayed dry.","audioLanguage":"en-US","options":["Milo takes books to club; rain starts; he moves the box to the porch and covers it; books stay dry.","Milo leaves the box in the rain because the club room is closed.","Milo buys a plastic sheet after the books get wet."],"answer":"A","retryHint":"把 so 後的行動和最後結果連起來；故事有沒有說房間關閉、書已淋濕或他去買塑膠布？","feedback":"A留下原目標、下雨後的保護行動和結果；另外兩項加入故事未說的原因或錯誤事件。"},
-      {"id":"step-2","prompt":"哪一份筆記保留了轉折前後的計畫差異？","audioScript":"Nora planned to give a handmade card to her grandmother before lunch. The bus took a different route, so Nora called to say she would be late. A neighbor offered to deliver the card.","audioLanguage":"en-US","options":["Nora gives the card before lunch; the bus arrives early.","Nora plans to deliver a card; the bus detours, so she calls about being late; a neighbor delivers it.","Nora misses lunch because her grandmother takes the bus."],"answer":"B","retryHint":"留意 so 引出的後果，再確認最後是誰送卡片；不要把計畫當成已完成。","feedback":"B區分原計畫、改道後通知及鄰居代送；A把計畫誤當完成，C混淆人物與因果。"},
-      {"id":"step-3","prompt":"選出沒有把線索誤當原因、且能說明故事如何收尾的筆記。","audioScript":"Ava brought cookies to the school fair. When she opened the box, it was empty. She remembered giving the last cookies to a new student who had no snack. Ava smiled and wrote a recipe card for the next fair.","audioLanguage":"en-US","options":["Ava sells all the cookies at the fair and earns money for a recipe book.","The box is empty, so Ava goes home without helping anyone.","Ava gives the last cookies to a new student; later she writes a recipe card for the next fair."],"answer":"C","retryHint":"空盒本身沒有告訴你餅乾去了哪裡；回聽人物回想的原因，以及她接著做的事。","feedback":"C保留送餅乾的原因及後續寫食譜卡；A、B都把空盒線索擴寫成故事未支持的情節。"},
-      {"id":"step-4","prompt":"換到陌生故事時，哪一種筆記最適合交給沒聽過的人重述？","audioScript":"On Saturday, Jay found a small bird near the playground. He did not touch it. He asked the school nurse to call an animal rescue group, and the bird was taken to a safe place.","audioLanguage":"en-US","options":["Jay—Saturday—bird—playground—nurse—rescue; order and outcome unclear.","Saturday: Jay finds bird at playground → asks nurse to contact rescue (does not touch it) → bird taken somewhere safe.","The nurse finds a bird and keeps it as a pet because Jay is afraid."],"answer":"B","retryHint":"保留 Jay 的克制行動、求助順序及結果；不可把沒有說出的害怕或收養寫進筆記。","feedback":"B讓新聽者能重建事件順序、重要限制和結尾，且不替角色添加心理原因。"}
+      {
+        "id": "step-1",
+        "prompt": "選出能交代人物、障礙、行動及結果的最短可靠筆記。",
+        "audioScript": "Milo wanted to bring a box of books to the club room. It started raining, so he moved the box to the porch and covered it with a plastic sheet. The books stayed dry.",
+        "audioLanguage": "en-US",
+        "options": [
+          "Milo takes books to club; rain starts; he moves the box to the porch and covers it; books stay dry.",
+          "Milo leaves the box in the rain because the club room is closed.",
+          "Milo buys a plastic sheet after the books get wet."
+        ],
+        "answer": "A",
+        "retryHint": "把 so 後的行動和最後結果連起來；故事有沒有說房間關閉、書已淋濕或他去買塑膠布？",
+        "feedback": "A留下原目標、下雨後的保護行動和結果；另外兩項加入故事未說的原因或錯誤事件。"
+      },
+      {
+        "id": "step-2",
+        "prompt": "哪一份筆記保留了轉折前後的計畫差異？",
+        "audioScript": "Nora planned to give a handmade card to her grandmother before lunch. The bus took a different route, so Nora called to say she would be late. A neighbor offered to deliver the card.",
+        "audioLanguage": "en-US",
+        "options": [
+          "Nora gives the card before lunch; the bus arrives early.",
+          "Nora plans to deliver a card; the bus detours, so she calls about being late; a neighbor delivers it.",
+          "Nora misses lunch because her grandmother takes the bus."
+        ],
+        "answer": "B",
+        "retryHint": "留意 so 引出的後果，再確認最後是誰送卡片；不要把計畫當成已完成。",
+        "feedback": "B區分原計畫、改道後通知及鄰居代送；A把計畫誤當完成，C混淆人物與因果。"
+      },
+      {
+        "id": "step-3",
+        "prompt": "選出沒有把線索誤當原因、且能說明故事如何收尾的筆記。",
+        "audioScript": "Ava brought cookies to the school fair. When she opened the box, it was empty. She remembered giving the last cookies to a new student who had no snack. Ava smiled and wrote a recipe card for the next fair.",
+        "audioLanguage": "en-US",
+        "options": [
+          "Ava sells all the cookies at the fair and earns money for a recipe book.",
+          "The box is empty, so Ava goes home without helping anyone.",
+          "Ava gives the last cookies to a new student; later she writes a recipe card for the next fair."
+        ],
+        "answer": "C",
+        "retryHint": "空盒本身沒有告訴你餅乾去了哪裡；回聽人物回想的原因，以及她接著做的事。",
+        "feedback": "C保留送餅乾的原因及後續寫食譜卡；A、B都把空盒線索擴寫成故事未支持的情節。"
+      },
+      {
+        "id": "step-4",
+        "prompt": "換到陌生故事時，哪一種筆記最適合交給沒聽過的人重述？",
+        "audioScript": "On Saturday, Jay found a small bird near the playground. He did not touch it. He asked the school nurse to call an animal rescue group, and the bird was taken to a safe place.",
+        "audioLanguage": "en-US",
+        "options": [
+          "Jay—Saturday—bird—playground—nurse—rescue; order and outcome unclear.",
+          "Saturday: Jay finds bird at playground → asks nurse to contact rescue (does not touch it) → bird taken somewhere safe.",
+          "The nurse finds a bird and keeps it as a pet because Jay is afraid."
+        ],
+        "answer": "B",
+        "retryHint": "保留 Jay 的克制行動、求助順序及結果；不可把沒有說出的害怕或收養寫進筆記。",
+        "feedback": "B讓新聽者能重建事件順序、重要限制和結尾，且不替角色添加心理原因。"
+      }
     ]
   },
   "versionResearch": [
-    {"publisher":"nani","edition":"南一標示之臺北市立大豐國中七年級英語課程計畫","sourceType":"public-web","sourceLocator":"https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMxTDNCMFlWOHlNalF4WHpNMU1qUTNPRGxmT0RRMEpXUmZUMFZUTlRJd01EVTJNRFkwTlRrMk1UZzROakV6TXpnME5XTmpSMlZsWWpKNlBTSWZOVGtpTG5abG1nPT0=&fname=LOGGYSOKWW10A1IH50LKKPHGPK30WT3414JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP3435GCQP3504B0UWYWWXUW50OOA0A0YWPOXX21JCLKSWIGQOB4SWHCUS30A110；PDF pp.6–7提供相鄰5-Ⅳ-7與聽力／故事閱讀脈絡，未定位5-Ⅳ-8專屬教法。","reviewedAt":"2026-09-28","findings":{"concepts":["官方5-Ⅳ-8要求聽懂簡易故事並以簡單字詞或句子記下要點；該南一標示計畫只提供鄰近聽力／故事教學背景，沒有明列本項。","不可把相鄰日常對話聽力筆記教法直接宣稱為故事聽力專屬教材內容。"],"representations":["公開課程計畫以單元進度、學習表現／內容、教學重點與評量欄位安排七年級英語。"],"examplesOrEvidence":["大豐國中校方所列南一版七年級英語計畫pp.6–7可作為相鄰聽力和故事閱讀教學背景，但不是指定教材原頁。"],"misconceptions":["不可將該校計畫對5-Ⅳ-7或故事閱讀的描述誤當成南一5-Ⅳ-8專屬教法。"],"assessmentEmphasis":["此材料未提供南一5-Ⅳ-8專屬評量題、解答或聽力稿。"]},"licenseBoundary":"僅記錄學校公開計畫的版本標示與課程脈絡；不複製出版社課文、聽力稿、題目、圖片、答案或版面；校方資料不是出版社章節原文，版本認證及再利用授權不作推定。"},
-    {"publisher":"hanlin","edition":"翰林標示之嘉義縣永慶高中114學年度七年級英語課程計畫","sourceType":"public-web","sourceLocator":"https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf；PDF pp.47–49；課程計畫明示翰林版第1–2冊，但未找到5-Ⅳ-8專屬教學全文。","reviewedAt":"2026-09-28","findings":{"concepts":["校方計畫提供七年級英語單元與課綱學習內容脈絡；與故事理解相鄰的內容不能冒充5-Ⅳ-8出版社章節。","本次可核對到的是課程定位，不足以比較出版社故事筆記教法。"],"representations":["該文件以校方課程進度、學習內容與評量方式欄位呈現學期安排；不是指定單元的完整課本頁。"],"examplesOrEvidence":["PDF p.0標示翰林版第1–2冊；pp.47–49呈現相關七年級英語計畫欄位。"],"misconceptions":["不可把課程計畫中的一般故事／背景知識學習內容，誤標為出版社5-Ⅳ-8專屬教學策略。"],"assessmentEmphasis":["公開計畫列出多元課堂評量形式，但沒有提供可核對的本課出版社評量題。"]},"licenseBoundary":"此為公校教師編製課程計畫，出版社版本欄僅作定位線索；不得據此重製教材或宣稱已取得出版社本課內容。"},
-    {"publisher":"kanghsuan","edition":"康軒版本單元證據待取得","sourceType":"public-web","sourceLocator":"https://www.knsh.com.tw/_KNSH/Plan；康軒官方課程計畫入口。本次未取得5-Ⅳ-8可讀章節；先前所列嘉義縣PDF回查為國文計畫，已撤銷其英語證據用途。","reviewedAt":"2026-09-28","findings":{"concepts":["本輪沒有可讀的康軒本單元教材或教學章節，故不推定其概念順序、表示法、例型或評量。","康軒官方網站提供課程計畫入口，入口存在不等於已閱讀本單元材料。"],"representations":["未取得足以描述康軒本單元表徵方式的材料。"],"examplesOrEvidence":["康軒官方計畫入口可作為後續查找路徑，並無本次取得的5-Ⅳ-8教材例證。"],"misconceptions":["不可將其他出版社、公校計畫或官方課綱內容標成康軒版教法。"],"assessmentEmphasis":["康軒單元評量材料尚未取得，留待後續來源補查。"]},"licenseBoundary":"只記錄官方入口與缺口；未下載或重製教材。未取得可閱讀材料前，康軒版本研究維持pending。"}
+    {
+      "publisher": "nani",
+      "edition": "南一標示之臺北市立大豐國中七年級英語課程計畫",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9MemMxTDNCMFlWOHlNalF4WHpNMU1qUTNPRGxmT0RRMEpXUmZUMFZUTlRJd01EVTJNRFkwTlRrMk1UZzROakV6TXpnME5XTmpSMlZsWWpKNlBTSWZOVGtpTG5abG1nPT0=&fname=LOGGYSOKWW10A1IH50LKKPHGPK30WT3414JCB114A1A1GCFCYSA4FCB4FGOOJG50VWPOXT154404MOWS1430ICNPOP3435GCQP3504B0UWYWWXUW50OOA0A0YWPOXX21JCLKSWIGQOB4SWHCUS30A110；PDF pp.6–7提供相鄰5-Ⅳ-7與聽力／故事閱讀脈絡，未定位5-Ⅳ-8專屬教法。",
+      "reviewedAt": "2026-09-28",
+      "findings": {
+        "concepts": [
+          "官方5-Ⅳ-8要求聽懂簡易故事並以簡單字詞或句子記下要點；該南一標示計畫只提供鄰近聽力／故事教學背景，沒有明列本項。",
+          "不可把相鄰日常對話聽力筆記教法直接宣稱為故事聽力專屬教材內容。"
+        ],
+        "representations": [
+          "公開課程計畫以單元進度、學習表現／內容、教學重點與評量欄位安排七年級英語。"
+        ],
+        "examplesOrEvidence": [
+          "大豐國中校方所列南一版七年級英語計畫pp.6–7可作為相鄰聽力和故事閱讀教學背景，但不是指定教材原頁。"
+        ],
+        "misconceptions": [
+          "不可將該校計畫對5-Ⅳ-7或故事閱讀的描述誤當成南一5-Ⅳ-8專屬教法。"
+        ],
+        "assessmentEmphasis": [
+          "此材料未提供南一5-Ⅳ-8專屬評量題、解答或聽力稿。"
+        ]
+      },
+      "licenseBoundary": "僅記錄學校公開計畫的版本標示與課程脈絡；不複製出版社課文、聽力稿、題目、圖片、答案或版面；校方資料不是出版社章節原文，版本認證及再利用授權不作推定。"
+    },
+    {
+      "publisher": "hanlin",
+      "edition": "翰林標示之嘉義縣永慶高中114學年度七年級英語課程計畫",
+      "sourceType": "public-web",
+      "sourceLocator": "https://course.cyc.edu.tw/upfile/course114/sub1/15939623345151225.pdf；PDF pp.47–49；課程計畫明示翰林版第1–2冊，但未找到5-Ⅳ-8專屬教學全文。",
+      "reviewedAt": "2026-09-28",
+      "findings": {
+        "concepts": [
+          "校方計畫提供七年級英語單元與課綱學習內容脈絡；與故事理解相鄰的內容不能冒充5-Ⅳ-8出版社章節。",
+          "本次可核對到的是課程定位，不足以比較出版社故事筆記教法。"
+        ],
+        "representations": [
+          "該文件以校方課程進度、學習內容與評量方式欄位呈現學期安排；不是指定單元的完整課本頁。"
+        ],
+        "examplesOrEvidence": [
+          "PDF p.0標示翰林版第1–2冊；pp.47–49呈現相關七年級英語計畫欄位。"
+        ],
+        "misconceptions": [
+          "不可把課程計畫中的一般故事／背景知識學習內容，誤標為出版社5-Ⅳ-8專屬教學策略。"
+        ],
+        "assessmentEmphasis": [
+          "公開計畫列出多元課堂評量形式，但沒有提供可核對的本課出版社評量題。"
+        ]
+      },
+      "licenseBoundary": "此為公校教師編製課程計畫，出版社版本欄僅作定位線索；不得據此重製教材或宣稱已取得出版社本課內容。"
+    },
+    {
+      "publisher": "kanghsuan",
+      "edition": "康軒版本單元證據待取得",
+      "sourceType": "public-web",
+      "sourceLocator": "https://www.knsh.com.tw/_KNSH/Plan；康軒官方課程計畫入口。本次未取得5-Ⅳ-8可讀章節；先前所列嘉義縣PDF回查為國文計畫，已撤銷其英語證據用途。",
+      "reviewedAt": "2026-09-28",
+      "findings": {
+        "concepts": [
+          "本輪沒有可讀的康軒本單元教材或教學章節，故不推定其概念順序、表示法、例型或評量。",
+          "康軒官方網站提供課程計畫入口，入口存在不等於已閱讀本單元材料。"
+        ],
+        "representations": [
+          "未取得足以描述康軒本單元表徵方式的材料。"
+        ],
+        "examplesOrEvidence": [
+          "康軒官方計畫入口可作為後續查找路徑，並無本次取得的5-Ⅳ-8教材例證。"
+        ],
+        "misconceptions": [
+          "不可將其他出版社、公校計畫或官方課綱內容標成康軒版教法。"
+        ],
+        "assessmentEmphasis": [
+          "康軒單元評量材料尚未取得，留待後續來源補查。"
+        ]
+      },
+      "licenseBoundary": "只記錄官方入口與缺口；未下載或重製教材。未取得可閱讀材料前，康軒版本研究維持pending。"
+    }
   ],
   "fusionRecord": {
     "commonCore": [
