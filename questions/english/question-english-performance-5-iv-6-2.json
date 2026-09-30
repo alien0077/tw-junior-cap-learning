@@ -2,7 +2,7 @@
   "id": "question-english-performance-5-iv-6-2",
   "subject": "english",
   "type": "single-choice",
-  "prompt": "Ben told me, 'I will call you tomorrow.' Which sentence reports his words from my point of view?",
+  "prompt": "Ben told me yesterday, 'I will call you tomorrow.' Which sentence correctly reports his words today?",
   "options": [
     {
       "id": "A",
@@ -14,7 +14,7 @@
     },
     {
       "id": "C",
-      "text": "Ben said that he would call me the next day."
+      "text": "Ben said that he would call me today."
     },
     {
       "id": "D",
@@ -27,7 +27,7 @@
   "difficulty": "hard",
   "answer": {
     "value": "C",
-    "explanation": "Ben 原話中的 I 指 Ben，所以改成 he；will call 隨過去式 said 回推為 would call。Ben 對我說的 you 從我的轉述視角是 me；tomorrow 依報導時間移成 the next day。"
+    "explanation": "Ben 原話中的 I 指 Ben，所以改成 he；you 指我，因此改成 me。因為今天轉述的是昨天所說的 tomorrow，時間已移到 today；will call 在這個過去報導框架下可回推為 would call。"
   },
   "provenance": {
     "origin": "original",
@@ -74,12 +74,12 @@
       "locatorLevel": "item"
     }
   ],
-  "solutionStrategy": "先標記每個需要依轉述視角改變的代詞與時間詞，再檢查助動詞。",
+  "solutionStrategy": "先標記說話日、報導日與每個代詞指涉，再判斷時間詞及助動詞是否需要隨參照點改變。",
   "solutionSteps": [
-    "辨認 Ben 是原句 I 的指涉對象，改成 he。",
-    "將 will call 改為 would call。",
-    "依轉述者視角將 you 改為 me。",
-    "逐一核對 he、would call、me 與 the next day 四項視角變化。",
-    "用 Ben 對我說話的情境回代代名詞，確認明天仍指通話的次日。"
+    "先標記原話發生在昨天、轉述發生在今天。",
+    "原句 I 指 Ben，改成 he；you 指轉述者我，改成 me。",
+    "昨天所說的 tomorrow 就是今天，因此不能機械改成 the next day。",
+    "在過去報導框架下，will call 可回推為 would call。",
+    "核對 he、would call、me、today 四項都與明示的時間視角一致。"
   ]
 }
