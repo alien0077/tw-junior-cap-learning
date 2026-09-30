@@ -48,8 +48,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -173,19 +173,50 @@
       "title": "錯過公車後，哪兩句話合起來才是重點？",
       "goal": "主旨需整合事件問題與後續處理；單一地點、人物或熟悉字詞不足以代表整段。",
       "conversation": [
-        { "id": "missed", "speaker": "Leo", "text": "The 6:10 bus left before I reached the stop." },
-        { "id": "message", "speaker": "Leo", "text": "I texted Mom as soon as I saw it pull away." },
-        { "id": "pickup", "speaker": "Mom", "text": "I can meet you at the museum entrance in twenty minutes." },
-        { "id": "reaction", "speaker": "Nina", "text": "At least you have a plan now." }
+        {
+          "id": "missed",
+          "speaker": "Leo",
+          "text": "The 6:10 bus left before I reached the stop."
+        },
+        {
+          "id": "message",
+          "speaker": "Leo",
+          "text": "I texted Mom as soon as I saw it pull away."
+        },
+        {
+          "id": "pickup",
+          "speaker": "Mom",
+          "text": "I can meet you at the museum entrance in twenty minutes."
+        },
+        {
+          "id": "reaction",
+          "speaker": "Nina",
+          "text": "At least you have a plan now."
+        }
       ],
-      "evidenceLineIds": ["missed", "pickup"],
+      "evidenceLineIds": [
+        "missed",
+        "pickup"
+      ],
       "mainQuestion": {
         "prompt": "What is the main point of the exchange?",
         "options": [
-          { "id": "A", "text": "Leo plans to study at the museum after taking the bus." },
-          { "id": "B", "text": "Leo missed his bus and arranged for his mother to pick him up." },
-          { "id": "C", "text": "Nina will take the next bus with Leo." },
-          { "id": "D", "text": "Leo's mother has been waiting at the bus stop since 6:10." }
+          {
+            "id": "A",
+            "text": "Leo plans to study at the museum after taking the bus."
+          },
+          {
+            "id": "B",
+            "text": "Leo missed his bus and arranged for his mother to pick him up."
+          },
+          {
+            "id": "C",
+            "text": "Nina will take the next bus with Leo."
+          },
+          {
+            "id": "D",
+            "text": "Leo's mother has been waiting at the bus stop since 6:10."
+          }
         ],
         "answer": "B",
         "feedback": "主旨同時涵蓋錯過公車的問題和母親接送的安排；只抓 museum 或 Nina 會漏掉主要事件鏈。"
@@ -193,16 +224,43 @@
       "transfer": {
         "question": "The projector stopped working just before a presentation. Which plan do the speakers agree to use?",
         "conversation": [
-          { "id": "broken", "speaker": "A", "text": "The classroom projector stopped working, and our talk begins in three minutes." },
-          { "id": "suggestion", "speaker": "B", "text": "Use Ms. Chen's laptop with the large monitor in Room 8." },
-          { "id": "roles", "speaker": "B", "text": "I'll carry the slides there while you tell the class to meet us." }
+          {
+            "id": "broken",
+            "speaker": "A",
+            "text": "The classroom projector stopped working, and our talk begins in three minutes."
+          },
+          {
+            "id": "suggestion",
+            "speaker": "B",
+            "text": "Use Ms. Chen's laptop with the large monitor in Room 8."
+          },
+          {
+            "id": "roles",
+            "speaker": "B",
+            "text": "I'll carry the slides there while you tell the class to meet us."
+          }
         ],
-        "evidenceLineIds": ["suggestion", "roles"],
+        "evidenceLineIds": [
+          "suggestion",
+          "roles"
+        ],
         "options": [
-          { "id": "A", "text": "Cancel the presentation and wait for a new projector." },
-          { "id": "B", "text": "Ask the class to repair the broken projector." },
-          { "id": "C", "text": "Move to Room 8, use the laptop and monitor, and bring the slides." },
-          { "id": "D", "text": "Buy a monitor before the presentation begins." }
+          {
+            "id": "A",
+            "text": "Cancel the presentation and wait for a new projector."
+          },
+          {
+            "id": "B",
+            "text": "Ask the class to repair the broken projector."
+          },
+          {
+            "id": "C",
+            "text": "Move to Room 8, use the laptop and monitor, and bring the slides."
+          },
+          {
+            "id": "D",
+            "text": "Buy a monitor before the presentation begins."
+          }
         ],
         "answer": "C",
         "feedback": "正確遷移需由建議句定位替代設備與地點，再用分工句確認後續行動；請保留兩條可回指的證據。"
