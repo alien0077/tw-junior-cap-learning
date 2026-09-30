@@ -48,8 +48,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-21",
+  "reviewStatus": "reviewed",
+  "updatedAt": "2026-09-30",
   "authoringStandard": "version-fused-v1",
   "lessonScope": "learning-performance",
   "publisherResearch": [
@@ -180,19 +180,40 @@
           "dialogue": "Lab helper: Please move the jars from the second rack to the blue tray—the small ones near the—\nMina: I heard 'blue tray,' but missed which jars you meant.",
           "prompt": "Mina 要怎麼回應，才能避免猜錯後搬動玻璃器材？",
           "cues": [
-            {"id": "missed-object", "text": "Mina 明確表示自己沒聽清楚要搬哪一批器材。"},
-            {"id": "fragile-jars", "text": "物品是玻璃罐，猜錯位置可能造成損壞。"},
-            {"id": "morning-greeting", "text": "對話不是問候，也沒有提到早晨或晚安。"}
+            {
+              "id": "missed-object",
+              "text": "Mina 明確表示自己沒聽清楚要搬哪一批器材。"
+            },
+            {
+              "id": "fragile-jars",
+              "text": "物品是玻璃罐，猜錯位置可能造成損壞。"
+            },
+            {
+              "id": "morning-greeting",
+              "text": "對話不是問候，也沒有提到早晨或晚安。"
+            }
           ],
-          "requiredCueIds": ["missed-object", "fragile-jars"],
+          "requiredCueIds": [
+            "missed-object",
+            "fragile-jars"
+          ],
           "cueHint": "回看 Mina 漏聽的資訊，以及直接照猜測行動會有什麼後果。",
           "cueRetryHint": "要同時選出「漏聽哪個細節」和「為何不能猜」兩條線索。",
           "question": {
             "prompt": "哪一句先補足資訊缺口，又保持禮貌？",
             "options": [
-              {"id": "clarify", "text": "Could you repeat which jars go on the blue tray, please?"},
-              {"id": "guess", "text": "Sure, I will move the first jars I see."},
-              {"id": "change-topic", "text": "Good morning! Is the weather nice?"}
+              {
+                "id": "clarify",
+                "text": "Could you repeat which jars go on the blue tray, please?"
+              },
+              {
+                "id": "guess",
+                "text": "Sure, I will move the first jars I see."
+              },
+              {
+                "id": "change-topic",
+                "text": "Good morning! Is the weather nice?"
+              }
             ],
             "answerId": "clarify",
             "feedback": "這句直接詢問漏聽的器材資訊，並用 please 保持禮貌；Mina 不必冒險猜放置位置。",
@@ -206,19 +227,40 @@
           "dialogue": "During model practice, Jay bumps the table. A classmate's bridge model falls apart.",
           "prompt": "Jay 已造成影響；下一句要如何同時面對事件與同學？",
           "cues": [
-            {"id": "jay-caused-fall", "text": "是 Jay 碰到桌子，模型才倒下；責任不能推給同學。"},
-            {"id": "classmate-concern", "text": "模型的主人正看著散落的零件，需要被關心。"},
-            {"id": "new-invitation", "text": "對話沒有邀請 Jay 參加新的活動。"}
+            {
+              "id": "jay-caused-fall",
+              "text": "是 Jay 碰到桌子，模型才倒下；責任不能推給同學。"
+            },
+            {
+              "id": "classmate-concern",
+              "text": "模型的主人正看著散落的零件，需要被關心。"
+            },
+            {
+              "id": "new-invitation",
+              "text": "對話沒有邀請 Jay 參加新的活動。"
+            }
           ],
-          "requiredCueIds": ["jay-caused-fall", "classmate-concern"],
+          "requiredCueIds": [
+            "jay-caused-fall",
+            "classmate-concern"
+          ],
           "cueHint": "這不是只選一句 sorry；再找出對方目前受到的影響。",
           "cueRetryHint": "請把造成事件的行動和同學需要的回應各標一項。",
           "question": {
             "prompt": "哪個回應承認影響，並提出合適的下一步？",
             "options": [
-              {"id": "blame", "text": "You should have put it somewhere else."},
-              {"id": "repair", "text": "I'm sorry. Are the pieces okay? I can help you put it back together."},
-              {"id": "celebrate", "text": "Congratulations! Your bridge looks different now."}
+              {
+                "id": "blame",
+                "text": "You should have put it somewhere else."
+              },
+              {
+                "id": "repair",
+                "text": "I'm sorry. Are the pieces okay? I can help you put it back together."
+              },
+              {
+                "id": "celebrate",
+                "text": "Congratulations! Your bridge looks different now."
+              }
             ],
             "answerId": "repair",
             "feedback": "Jay 先道歉，再關心零件並提出補救；回應承接實際影響，沒有責怪對方或假裝沒事。",
@@ -232,19 +274,40 @@
           "dialogue": "A classmate: Would you like to help at the art fair on Friday?\nNora already has music rehearsal that afternoon.",
           "prompt": "Nora 想婉拒這次邀請，但不想讓同學以為自己不願往來。",
           "cues": [
-            {"id": "classmate-invites", "text": "對方是在邀請 Nora 參加 Friday 的 art fair。"},
-            {"id": "rehearsal-conflict", "text": "Nora 的 music rehearsal 和活動時間衝突。"},
-            {"id": "no-anger", "text": "對話沒有顯示 Nora 生氣或想責怪邀請者。"}
+            {
+              "id": "classmate-invites",
+              "text": "對方是在邀請 Nora 參加 Friday 的 art fair。"
+            },
+            {
+              "id": "rehearsal-conflict",
+              "text": "Nora 的 music rehearsal 和活動時間衝突。"
+            },
+            {
+              "id": "no-anger",
+              "text": "對話沒有顯示 Nora 生氣或想責怪邀請者。"
+            }
           ],
-          "requiredCueIds": ["classmate-invites", "rehearsal-conflict"],
+          "requiredCueIds": [
+            "classmate-invites",
+            "rehearsal-conflict"
+          ],
           "cueHint": "回應要處理邀請與已知行程衝突，不必編造對人的負面評價。",
           "cueRetryHint": "請標記對方的邀請內容，以及 Nora 當天已存在的安排。",
           "question": {
             "prompt": "哪一句誠實說明限制，也回應了邀請？",
             "options": [
-              {"id": "polite-decline", "text": "Thanks for asking, but I have music rehearsal on Friday. Maybe next time!"},
-              {"id": "accept-without-plan", "text": "Yes, I will be there all afternoon."},
-              {"id": "reject-person", "text": "Stop asking me. Art fairs are always boring."}
+              {
+                "id": "polite-decline",
+                "text": "Thanks for asking, but I have music rehearsal on Friday. Maybe next time!"
+              },
+              {
+                "id": "accept-without-plan",
+                "text": "Yes, I will be there all afternoon."
+              },
+              {
+                "id": "reject-person",
+                "text": "Stop asking me. Art fairs are always boring."
+              }
             ],
             "answerId": "polite-decline",
             "feedback": "Nora 感謝邀請、說出題目提供的時間衝突，並留下下次再參加的可能，沒有作出做不到的承諾。",
@@ -256,18 +319,39 @@
       "transfer": {
         "notice": "Volunteer message: The book-return desk closes at 4 p.m. today. After lunch, returns move to the west entrance. Please bring the library books there.",
         "cues": [
-          {"id": "closing-time", "text": "服務台今天 4 p.m. 關閉。"},
-          {"id": "new-location", "text": "After lunch，歸還地點改到 west entrance。"},
-          {"id": "unrelated-thanks", "text": "訊息沒有要求回覆感謝或接受邀請。"}
+          {
+            "id": "closing-time",
+            "text": "服務台今天 4 p.m. 關閉。"
+          },
+          {
+            "id": "new-location",
+            "text": "After lunch，歸還地點改到 west entrance。"
+          },
+          {
+            "id": "unrelated-thanks",
+            "text": "訊息沒有要求回覆感謝或接受邀請。"
+          }
         ],
-        "requiredCueIds": ["closing-time", "new-location"],
+        "requiredCueIds": [
+          "closing-time",
+          "new-location"
+        ],
         "prompt": "你要午餐後去還書，回覆前先確認哪個行動最穩妥？",
         "question": {
           "prompt": "哪一句能確認資訊，而不是自行假設？",
           "options": [
-            {"id": "assume-old", "text": "I'll leave the books at the usual desk."},
-            {"id": "confirm", "text": "Just to confirm, should I take the books to the west entrance after lunch, before 4 p.m.?"},
-            {"id": "wait-tomorrow", "text": "I'll come tomorrow, so I don't need to check today's message."}
+            {
+              "id": "assume-old",
+              "text": "I'll leave the books at the usual desk."
+            },
+            {
+              "id": "confirm",
+              "text": "Just to confirm, should I take the books to the west entrance after lunch, before 4 p.m.?"
+            },
+            {
+              "id": "wait-tomorrow",
+              "text": "I'll come tomorrow, so I don't need to check today's message."
+            }
           ],
           "answerId": "confirm",
           "feedback": "回覆把新地點、時間及關門前的限制一併核對，沒有沿用舊地點或自行延後。",
@@ -275,7 +359,10 @@
         },
         "explanationPrompt": "用中文說明為何這裡要確認，並引用公告中的時間與地點原詞。",
         "minimumExplanationLength": 15,
-        "requiredEvidenceTerms": ["west entrance", "4 p.m."],
+        "requiredEvidenceTerms": [
+          "west entrance",
+          "4 p.m."
+        ],
         "hint": "說明至少要連回新地點和關門時間，不能只寫「因為不確定」。",
         "retryHint": "請在理由裡引用 west entrance 與 4 p.m.，說明它們如何改變還書地點和期限。",
         "feedback": "你把簡訊的時間、地點和確認功能連在一起，沒有把舊習慣當成新指示。",
