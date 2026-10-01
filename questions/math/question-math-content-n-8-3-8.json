@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供數列項次、規律、通項、遞迴與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-3",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "把情境轉成首項與固定增加量的數列，逐項推到指定排數。",
+  "solutionStrategy": "先觀察項與項之間的規律，區分位置 n 與項值 aₙ，再用前幾項驗證所找規則。",
   "solutionSteps": [
-    "設定第 1 排為 8。",
-    "第 2 排 8＋6＝14。",
-    "第 3、4 排依序為 20、26。",
-    "第 5 排 26＋6＝32。",
-    "選 B，確認共增加 4 次而非 5 次。"
+    "整理題意：某座位編號每排比前一排多 6 個，第一排有 8 個座位。第 5 排有幾個座位？",
+    "各排為 8、14、20、26、32，第 5 排有 32 個，選 B。",
+    "用前後項或通項回查，確認選項 B。"
   ]
 }
