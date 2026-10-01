@@ -197,11 +197,11 @@
     }
   ],
   "fusionRecord": {
-  "commonCore": [
-    "官方A-7-3課綱與本單元知識圖譜要求學生理解一元一次方程式的解法及應用；此為課程目標交集，不代表三家出版社正文已完成逐頁比較。",
-    "可核對的課程層次要求包括先界定未知量並以等式表達關係，再用保持解集不變的合法運算求解、代回原式驗算，最後依單位和題目條件作答。",
-    "目前唯一能逐頁閱讀的是翰林標示第三方分享材料；南一與康軒資料僅能核對課程樹、索引或學校安排，因此共同概念只依官方課綱與KG表述，不能歸因為三版本共同教法。"
-  ],
+    "commonCore": [
+      "官方A-7-3課綱與本單元知識圖譜要求學生理解一元一次方程式的解法及應用；此為課程目標交集，不代表三家出版社正文已完成逐頁比較。",
+      "可核對的課程層次要求包括先界定未知量並以等式表達關係，再用保持解集不變的合法運算求解、代回原式驗算，最後依單位和題目條件作答。",
+      "目前唯一能逐頁閱讀的是翰林標示第三方分享材料；南一與康軒資料僅能核對課程樹、索引或學校安排，因此共同概念只依官方課綱與KG表述，不能歸因為三版本共同教法。"
+    ],
     "versionDifferences": [
       "翰林標示課本分享可讀到加減乘除的等量公理、與移項並排的解法比較、含括號／分數題，以及應用題四步流程；這是本次唯一逐頁閱讀的版本標示教材內容，來源非官方認證且權利未核實。",
       "南一『類南一版』課程頁將文字列式、解的意義、等量公理與移項分段並提供頁次；康軒官方索引／『類康軒版』課程樹將列式、檢驗與後續求解分段；這些支持課程結構比較，不足以代表南一／康軒課本正文。",
@@ -340,8 +340,8 @@
     "license": "All rights reserved",
     "authoringNote": "Full lesson v1 is independently authored from the official curriculum and recorded publisher research. No publisher text, image, example, exercise, answer, or transcript is reproduced; classification and performance pages are learning-path material, not publisher chapter reproductions."
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-31",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "interactive": {
     "type": "algebra-expression-builder",
     "goal": "調整票數、固定費、實付總額與候選單價，讓方程式和左右金額同步更新，再用代回檢查價格是否合理。",
@@ -434,10 +434,30 @@
         "candidatePrice": 50
       },
       "controls": {
-        "ticketCount": {"label": "票券張數", "min": 1, "max": 8, "step": 1},
-        "oneTimeFee": {"label": "一次性固定費", "min": 0, "max": 50, "step": 5},
-        "totalPaid": {"label": "付款總額", "min": 100, "max": 400, "step": 10},
-        "candidatePrice": {"label": "每張候選單價", "min": 0, "max": 150, "step": 5}
+        "ticketCount": {
+          "label": "票券張數",
+          "min": 1,
+          "max": 8,
+          "step": 1
+        },
+        "oneTimeFee": {
+          "label": "一次性固定費",
+          "min": 0,
+          "max": 50,
+          "step": 5
+        },
+        "totalPaid": {
+          "label": "付款總額",
+          "min": 100,
+          "max": 400,
+          "step": 10
+        },
+        "candidatePrice": {
+          "label": "每張候選單價",
+          "min": 0,
+          "max": 150,
+          "step": 5
+        }
       }
     },
     "sourceRefs": [
@@ -490,5 +510,11 @@
         }
       ]
     }
+  },
+  "reviewEvidence": {
+    "firstPassReport": "math-a-7-3-first-pass-review.json",
+    "promotedAt": "2026-10-01",
+    "promotionRule": "passing first-pass report; zero recorded failures; exactly 10 linked questions",
+    "independentHumanOrTerraReviewClaimed": false
   }
 }

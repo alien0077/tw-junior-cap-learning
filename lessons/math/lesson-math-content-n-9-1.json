@@ -40,7 +40,7 @@
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
-    "authoringNote": "依官方課綱、KG、南一類公開索引、康軒官方 XML 與翰林公開索引融合撰寫；未複製出版社正文、題目、答案、圖片或影音。原內容為通用佔位教材，已重新獨立撰寫並降級為 draft。"
+    "authoringNote": "依官方課綱、KG、南一類公開索引、康軒官方 XML 與翰林公開索引融合撰寫；未複製出版社正文、題目、答案、圖片或影音。原內容為通用佔位教材，已重新獨立撰寫並降級為 draft。 本輪依既有 first-pass pass 證據完成 ChatGPT 內容審查；未宣稱 Terra 或獨立人工審查。"
   },
   "authoringStandard": "version-fused-v1",
   "publisherResearch": [
@@ -254,8 +254,8 @@
       }
     ]
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-30",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "interactive": {
     "type": "algebra-expression-builder",
     "goal": "操作兩段比例的共同中間量，建立連比並用原比回代。",
@@ -367,5 +367,11 @@
         }
       ]
     }
+  },
+  "reviewEvidence": {
+    "firstPassReport": "math-n-9-1-first-pass-review.json",
+    "promotedAt": "2026-10-01",
+    "promotionRule": "passing first-pass report; zero recorded failures; exactly 10 linked questions",
+    "independentHumanOrTerraReviewClaimed": false
   }
 }

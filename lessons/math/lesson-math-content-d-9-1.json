@@ -251,8 +251,8 @@
       }
     ]
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-08-29",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "interactive": {
     "type": "guided-choice",
     "goal": "拖曳兩座氣象站的五數摘要，立即同步盒狀圖、中心量、全距、四分位距與播報結論，判讀不同資料分布。",
@@ -354,5 +354,11 @@
         }
       ]
     }
+  },
+  "reviewEvidence": {
+    "firstPassReport": "math-d-9-1-first-pass-review.json",
+    "promotedAt": "2026-10-01",
+    "promotionRule": "passing first-pass report; zero recorded failures; exactly 10 linked questions",
+    "independentHumanOrTerraReviewClaimed": false
   }
 }
