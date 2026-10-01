@@ -48,11 +48,13 @@ jobs:
           assert.equal(lesson.simulation.engine, "math-equation-meaning");
           assert.equal(lesson.simulation.model, "a-7-2-equation-meaning-v1");
           assert.ok(lesson.simulation.equationMeaning);
-          assert.match(source, /math-equation-meaning/);
-          assert.match(source, /data-equation-meaning-action=["']check["']/);
-          assert.match(source, /candidate/);
-          assert.match(source, /leftValue|左側/);
-          assert.match(source, /rightValue|右側/);
+          assert.match(source, /if \(engine === "math-equation-meaning"\)/);
+          assert.match(source, /lesson\.simulation\.equationMeaning/);
+          assert.match(source, /slider\("x"/);
+          assert.match(source, /class="balance"/);
+          assert.match(source, /左側/);
+          assert.match(source, /右側/);
+          assert.match(source, /role="status"/);
           console.log("A-7-2 production renderer PASS");
           JS
       - name: Run exhaustive math audit and persist snapshot
