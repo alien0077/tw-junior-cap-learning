@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供等差數列、公差、通項與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等差數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "通項已給定，將指定項次直接代入 n 並依運算順序計算。",
+  "solutionStrategy": "先找首項與公差，使用 aₙ=a₁+(n−1)d；代回相鄰項檢查公差一致。",
   "solutionSteps": [
-    "設定 n＝7。",
-    "代入 aₙ＝4n−1。",
-    "計算 4×7＝28。",
-    "減去 1 得 27。",
-    "選 B，確認下標與代入數值一致。"
+    "整理題意：若等差數列 aₙ＝4n−1，a₇ 為何？",
+    "a₇＝4×7−1＝28−1＝27，所以選 B。",
+    "用相鄰項公差或通項回查，確認選項 B。"
   ]
 }
