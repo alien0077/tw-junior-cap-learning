@@ -1,0 +1,34 @@
+name: Math guarded review promotion
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/promote_math_reviewed.mjs
+
+permissions:
+  contents: write
+
+jobs:
+  promote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Promote only units with passing first-pass evidence
+        run: node scripts/promote_math_reviewed.mjs
+      - name: Commit guarded promotions
+        run: |
+          if git diff --quiet; then
+            echo "No eligible promotions"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lessons/math questions/math implementation/reports
+          git commit -m "chore(math): promote first-pass reviewed units"
+          git push origin HEAD:main
