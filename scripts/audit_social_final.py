@@ -31,7 +31,7 @@ for lid,p in units.items():
   if not str(q.get("answer",{}).get("explanation","")).strip(): errors.append([str(qp.relative_to(R)),"explanation"])
   if not str(q.get("solutionStrategy","")).strip(): errors.append([str(qp.relative_to(R)),"strategy"])
   if len(q.get("solutionSteps",[]))<3: errors.append([str(qp.relative_to(R)),"solutionSteps<3"])
-out={"status":"pass" if not errors else "blocked","lessonCount":len(lessons),"specCount":len(specs),"questionUnits":len(qby),"errors":errors}
+out={"status":"pass" if not errors else "blocked","lessonCount":len(lessons),"specCount":len(specs),"questionUnits":len(qby),"socialQuestionCount":sum(len(v) for k,v in qby.items() if k in units),"errors":errors}
 (R/"implementation/reports/social-final-audit.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
 from collections import Counter
 print(json.dumps({k:out[k] for k in ("status","lessonCount","specCount","questionUnits")}|{"errorCount":len(errors),"errorKinds":Counter(e[1] for e in errors),"firstErrors":errors[:80]},ensure_ascii=False))
