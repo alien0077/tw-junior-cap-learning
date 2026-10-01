@@ -27,90 +27,89 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Ab-Ⅳ-2：溫度與物質狀態」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 由溫度—時間資料判讀加熱或冷卻過程中的物態與相變區段
+  - 說明同一純物質在一定壓力下相變溫度具有特徵性，並區分「持續供熱」與「溫度一定持續上升」
+  - 用粒子運動與排列的改變連結溫度、加熱與物態變化，但不把溫度誤當成熱量本身
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能讀取溫度計與溫度—時間折線圖
+  - 已理解固態、液態、氣態的基本粒子模型
   coreConcepts:
-  - Ab-Ⅳ-2：溫度與物質狀態
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 溫度描述物體冷熱程度；加熱或冷卻可使溫度改變，也可能造成物態改變
+  - 純物質在一定壓力下熔化或沸騰時，可出現持續吸收能量而溫度暫時維持不變的相變區段
+  - 相變前後物質種類不因物態改變而改變；粒子排列、間距與運動狀態改變
   misconceptions:
-  - 把「Ab-Ⅳ-2：溫度與物質狀態」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為只要持續加熱，溫度就必定持續等速上升
+  - 把沸騰時的氣泡一律當成外界空氣，而非依情境判斷其中可能是物質蒸氣
+  - 把溫度與熱量視為同一物理量，或以單一溫度值直接代表含有多少熱
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 particle-model 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 給一段加熱曲線，問為何加熱器仍開著但溫度出現平台'
+  - 'predict: 先標出可能的固態、熔化、液態、沸騰、氣態區段'
+  - 'manipulate: 移動時間游標或切換加熱／冷卻資料，觀察目前溫度與物態'
+  - 'observe: 同步更新溫度曲線、粒子模型與相變標籤'
+  - 'explain: 對平台區寫出「仍有能量轉移，但能量用於物態改變」的定性說明'
+  - 'compare: 比較純物質與含雜質樣品的示意資料，避免把所有平台都當成絕對常數'
+  - 'transfer: 判讀陌生冷卻曲線或不同壓力條件資料'
+  - 'exit-ticket: 指出一段相變區、物態與不能由圖直接推出的資訊'
   visualizations:
-  - particle-model：以「Ab-Ⅳ-2：溫度與物質狀態」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 溫度—時間曲線：時間游標同步標出目前斜率、平台區與物態文字
+  - 粒子模型：只呈現定性的排列與運動差異，明示非真實比例
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-AB-IV-2-I01
     component: ParticleModelBlock
-    purpose: 讓學生操作並看見「Ab-Ⅳ-2：溫度與物質狀態」中最容易被背誦取代的關係
+    purpose: 讓學生沿加熱／冷卻曲線移動時間游標，將溫度資料、物態與粒子模型一一對應
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        process: heating
+        timeMinute: 0
+        sampleType: pure
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測曲線平台代表的物態變化，不顯示正解
+    - 以鍵盤可操作時間游標掃過升溫、相變平台與再升溫區段
+    - 切換加熱／冷卻資料，標記熔化、凝固、沸騰或凝結區段
+    - 用一句話區分「溫度變化」與「持續能量轉移」
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 游標移動時溫度讀值、曲線位置、物態標籤與粒子模型同步更新
+    - 平台區不得顯示「沒有能量轉移」；只描述在該資料與條件下溫度暫時近似不變
+    - 不把溫度單位 °C 與能量單位混用
+    - 粒子圖明示示意性，不以粒子本身變大／變小表示升降溫
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-AB-IV-2-I01
-      trigger: 把「Ab-Ⅳ-2：溫度與物質狀態」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 認為持續加熱一定升溫，或把相變平台解讀成停止吸收能量
+      prompt: 請指出加熱器是否仍工作、曲線斜率如何，以及樣品正在發生哪一種物態變化。
+      expectedEvidence: 能以平台區與相變對應說明持續能量轉移不等於溫度持續上升
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出曲線區段與物態證據，再要求用冷卻曲線反向驗證。
+      incorrect: 先提示比較「是否仍在加熱」與「溫度曲線是否上升」兩件不同的事，再讓學生重試。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-2：溫度與物質狀態」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "本課只吸收先預測曲線、再操作游標驗證的教學節奏；曲線、粒子模型與文字皆為本專案自製。"
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-2：溫度與物質狀態」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "以相變平台與反向冷卻資料做概念轉移，不複製外部活動內容。"
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-2：溫度與物質狀態」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "時間、溫度、物態與曲線趨勢均有同步文字狀態，圖形不是唯一資訊來源。"
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-2：溫度與物質狀態」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "預測、曲線操作、粒子模型、證據與回饋分區可定位。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Ab-Ⅳ-2：溫度與物質狀態」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 溫度曲線判讀／相變推理／理由短答
+    stemConstraint: 使用新的加熱或冷卻曲線資料，要求由平台、斜率與物態推理，不可只問名詞定義
+    requiredResponse: 選答後指出曲線區段與物態證據
+    scoring: 曲線判讀正確 1、物態／相變對應 1、理由完整且不混淆溫度與能量 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 一杯純物質持續加熱時出現近似水平的溫度區段。這段期間可能正在發生什麼？為什麼不能說「沒有吸收能量」？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 指出可能處於熔化或沸騰等相變
+    - 指出持續加熱仍有能量轉移
+    - 不把溫度與熱量視為同一物理量
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Ab-Ⅳ-2：溫度與物質狀態」的證據、因果或觀察說給同學聽
+    task: 用 80～120 字解釋一段相變平台，至少引用一個曲線證據並說明一項限制。
     constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
   mobileA11y:
     breakpoints:
@@ -119,21 +118,21 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 時間游標、溫度讀值、物態與曲線趨勢均有可讀名稱與變更摘要
+    reducedMotion: 停用動畫時可用離散時間點逐步切換曲線與粒子狀態
   testCases:
-  - 載入「Ab-Ⅳ-2：溫度與物質狀態」時不得先顯示正解；學生必須先提交對「Ab-Ⅳ-2：溫度與物質狀態」的預測，且預測會被保留供後續比較。
-  - 操作「particle-model：以「Ab-Ⅳ-2：溫度與物質狀態」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Ab-Ⅳ-2：溫度與物質狀態」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Ab-Ⅳ-2：溫度與物質狀態」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Ab-Ⅳ-2：溫度與物質狀態」的 CAP transfer：換一個情境但保留「Ab-Ⅳ-2：溫度與物質狀態」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，ParticleModelBlock 仍須以「Ab-Ⅳ-2：溫度與物質狀態」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 載入時先要求預測平台區，不得先顯示相變答案。
+  - 時間游標進入平台區時，溫度、物態標籤與粒子模型同步更新，且不顯示「停止吸熱」。
+  - 切換冷卻曲線後，凝固／凝結方向與粒子模型變化必須正確反轉。
+  - 學生回答「加熱中溫度一定上升」時，命中迷思診斷並要求引用曲線平台證據。
+  - 320px、375px、768px 與鍵盤操作下，曲線關鍵資料須有文字替代，不得靠滑鼠 hover 才能讀值。
+  - Fallback 模式至少提供時間—溫度表、物態欄與三題平台判讀，不得只顯示通用說明。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
   - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - 加熱／冷卻曲線互動可回答相變平台與物態判讀問題
+  - 「持續加熱一定升溫」迷思被實際誘發、診斷並回饋
+  - 會考 transfer、exit ticket 可執行
   - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
   - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
   status:
