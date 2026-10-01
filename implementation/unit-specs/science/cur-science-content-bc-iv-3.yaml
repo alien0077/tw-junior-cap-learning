@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Bc-Ⅳ-3：光合作用製造養分並釋氧
-    curriculumIntent: Bc-Ⅳ-3：光合作用製造養分並釋氧
+    curriculumIntent: 以光照、二氧化碳、葉綠素及澱粉／氧氣證據說明光合作用的物質與能量轉換，並用對照實驗限制推論
     publisherEvidence:
       nani:
         status: pending
@@ -25,93 +25,95 @@ unitImplementationSpec:
         status: pending
         required: true
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+    currentEvidenceStatus: curriculum-and-kg-grounded; lesson-unit-specific; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Bc-Ⅳ-3：光合作用製造養分並釋氧」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 用物質與能量箭頭說明綠色植物利用光能，使二氧化碳與水形成有機物並釋放氧氣
+  - 由遮光／照光、含葉綠素／不含葉綠素或有／無二氧化碳的對照資料，判斷澱粉形成與氧氣產生的證據
+  - 區分「植物由土壤吸收水與無機鹽」和「植物自行製造有機養分」，並說明光合作用與呼吸作用可同時存在
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能辨認實驗組、對照組、自變因與控制變因
+  - 能閱讀葉片澱粉檢驗、水草氣泡或溶氧量的表格／時間資料
   coreConcepts:
-  - Bc-Ⅳ-3：光合作用製造養分並釋氧
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 光合作用把光能轉存到有機物的化學能中；二氧化碳和水是原料，氧氣是產物之一
+  - 澱粉檢驗可作為葉片累積有機物的證據，氧氣／氣泡資料可作為產氧線索；不同證據支持不同部分的結論
+  - 光合作用速率受光照、CO2、溫度等因素共同影響；改變一項條件時需控制其他因素，且單一因素增加不代表速率無限上升
   misconceptions:
-  - 把「Bc-Ⅳ-3：光合作用製造養分並釋氧」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為植物的有機養分主要由根直接從土壤吸收，而不是自行製造
+  - 認為氧氣是光合作用的能量來源，或把光能畫成反應物分子
+  - 認為植物有光時只做光合作用、不進行呼吸作用，或把氣泡數直接當成無誤差的光合作用總速率
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 physical-simulation 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 比較同一葉片照光區與遮光區的澱粉檢驗，先預測哪一區會出現陽性結果'
+  - 'predict: 預測移除光、CO2 或葉綠素其中一項後，澱粉或氧氣證據如何改變'
+  - 'manipulate: 固定葉片、水量、溫度與時間，每次只切換 light、CO2 或 chlorophyll 條件'
+  - 'observe: 同步更新澱粉檢驗、溶氧／氣泡時間資料及物質—能量路徑圖'
+  - 'explain: 以對照資料說明哪些證據支持有機物形成、哪些支持產氧，並指出不能直接推出的結論'
+  - 'formalize: 建立光合作用的原料、產物、能量來源及必要條件'
+  - 'transfer: 以斑葉、溫室 CO2、水草距離光源或遮光葉片資料判讀'
+  - 'exit-ticket: 由一組照光／遮光與澱粉／氧氣資料指出支持光合作用的證據及一項限制'
   visualizations:
-  - physical-simulation：以「Bc-Ⅳ-3：光合作用製造養分並釋氧」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 葉片對照圖：同葉片照光與遮光區並列，澱粉檢驗結果用文字／符號雙重標記
+  - 水草時間資料：氣泡數或溶氧量與時間、光照條件並列，明示氣泡只是代理指標而非完整產氧量
+  - 物質—能量路徑：CO2、H2O、有機物、O2 與光能分層表示，避免把能量與物質混在同一類箭頭
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BC-IV-3-I01
     component: PhenomenonSimulationBlock
-    purpose: 讓學生操作並看見「Bc-Ⅳ-3：光合作用製造養分並釋氧」中最容易被背誦取代的關係
+    purpose: 讓學生操作光照、CO2 與葉綠素條件，從澱粉檢驗和氧氣時間資料建立光合作用的必要條件與證據界線
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        light: on
+        carbonDioxide: available
+        chlorophyll: present
+        durationMin: 30
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先提交照光／遮光葉片的澱粉檢驗預測，不顯示正解
+    - 固定其他條件，只切換 light、carbonDioxide 或 chlorophyll 其中一項
+    - 比較澱粉檢驗與溶氧／氣泡資料，分別標記支持有機物形成與產氧的證據
+    - 在路徑圖中放置 CO2、H2O、有機物、O2 與光能，區分物質和能量
+    - 用「條件差異 → 觀察差異 → 支持的結論 → 尚不能證明什麼」完成解釋
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 切換單一條件時其他控制條件維持不變並在文字摘要中明示
+    - 光能以能量箭頭表示，不得畫成和 CO2、H2O 相同的物質顆粒
+    - 氣泡資料須標示為產氧代理指標，不能自動等同精確光合作用速率
+    - 植物有光時仍保留呼吸作用提示，若呈現淨 O2／CO2 資料需標示是兩作用合成結果
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BC-IV-3-I01
-      trigger: 把「Bc-Ⅳ-3：光合作用製造養分並釋氧」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生認為養分由土壤直接吸收、氧氣是能量來源、或植物白天不呼吸
+      prompt: 哪些是光合作用的物質原料，哪一項是能量來源？澱粉與氧氣資料各直接支持什麼？這組資料是否排除了植物同時呼吸？
+      expectedEvidence: 能正確標示 CO2／水／光能／有機物／O2，並引用對照資料且保留呼吸作用同時存在的可能
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對物質—能量路徑與對照證據，再要求換成斑葉或 CO2 限制情境驗證。
+      incorrect: 先提示「土壤吸收的是什麼？光是物質還是能量？」並要求指出實際檢驗到的量，不直接給完整反應式。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-3：光合作用製造養分並釋氧」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課只借用先預測、單變因操作與證據修正模型的節奏；葉片、水草與氣體資料均為本課自編。
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-3：光合作用製造養分並釋氧」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課以遮光、CO2 與葉綠素對照設計原創探究，不複製外部活動數據。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-3：光合作用製造養分並釋氧」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 光照、CO2、葉綠素、澱粉檢驗與氧氣資料皆提供鍵盤控制及文字狀態。
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-3：光合作用製造養分並釋氧」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 預測、條件控制、證據、物質路徑與回饋區域可導覽。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Bc-Ⅳ-3：光合作用製造養分並釋氧」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 光合作用實驗／對照資料／理由短答
+    stemConstraint: 更換為斑葉、溫室、水草或遮光葉片情境，至少提供一個可控制因素與澱粉或氧氣證據，不能只背反應式
+    requiredResponse: 指出自變因與控制條件、引用至少一項澱粉／氧氣證據，並說明資料不能排除的一項限制
+    scoring: 光合作用概念正確 1、對照與證據正確 1、限制說明 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 同一片去澱粉葉片，一半遮光、一半照光，其他條件相同；數小時後只有照光區澱粉檢驗呈陽性。這項結果支持什麼？它能否單獨證明「光合作用只需要光、不需要 CO2 或葉綠素」？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 以同葉片遮光／照光對照支持光是此情境形成澱粉的重要條件
+    - 不把澱粉陽性說成直接測得光能或氧氣量
+    - 說明因 CO2、葉綠素等未被獨立操弄，不能由此單一實驗宣稱只有光是必要條件
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Bc-Ⅳ-3：光合作用製造養分並釋氧」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用 80～120 字向同學解釋植物的有機養分為什麼不是「從土裡直接吸上來」，並引用光合作用的一項可檢驗證據
+    constraint: 學生先寫；系統只提示原料、能量來源、產物與對照，不直接代寫完整答案
   mobileA11y:
     breakpoints:
     - 320
@@ -119,28 +121,27 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 光照、CO2、葉綠素、澱粉、氧氣與路徑皆有可讀文字狀態
+    reducedMotion: 停用動畫仍可用靜態葉片圖與時間表完成判讀
   testCases:
-  - 載入「Bc-Ⅳ-3：光合作用製造養分並釋氧」時不得先顯示正解；學生必須先提交對「Bc-Ⅳ-3：光合作用製造養分並釋氧」的預測，且預測會被保留供後續比較。
-  - 操作「physical-simulation：以「Bc-Ⅳ-3：光合作用製造養分並釋氧」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Bc-Ⅳ-3：光合作用製造養分並釋氧」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Bc-Ⅳ-3：光合作用製造養分並釋氧」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Bc-Ⅳ-3：光合作用製造養分並釋氧」的 CAP transfer：換一個情境但保留「Bc-Ⅳ-3：光合作用製造養分並釋氧」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，PhenomenonSimulationBlock 仍須以「Bc-Ⅳ-3：光合作用製造養分並釋氧」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 未提交照光／遮光預測前不得顯示完整光合作用解說。
+  - 單獨切換 light、carbonDioxide 或 chlorophyll 時其他控制條件保持固定，證據資料同步更新。
+  - 學生把光能當物質反應物或把根吸收礦物等同有機養分時命中迷思診斷。
+  - 氣泡數不得標成精確光合作用總速率，需保留代理指標提示。
+  - 有光植物情境不能把呼吸作用設為零；淨氣體變化需有合成結果說明。
+  - 320／375／768px 與鍵盤操作下，葉片、控制項、資料表與回饋不得裁切。
+  - fallback 至少保留遮光／照光、缺 CO2、斑葉三組靜態資料與可重試證據題。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 互動實際操作光照、CO2 或葉綠素條件，不含 primary／secondary 假變項
+  - 至少診斷一次養分來源、光能／物質或植物呼吸混淆
+  - CAP transfer、exit ticket、mobile、keyboard、screen reader、reduced-motion 與 fallback 可執行
+  - 內容與教學法無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
     qaStatus: untested
   sourceRefs:
-  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 B、次主題 Bc；官方代碼 Bc-Ⅳ-3
     role: official-curriculum-source-of-truth
