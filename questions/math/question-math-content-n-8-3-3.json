@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供數列項次、規律、通項、遞迴與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-3",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "用後項減前項，至少檢查兩組相鄰項以確認規律。",
+  "solutionStrategy": "先觀察項與項之間的規律，區分位置 n 與項值 aₙ，再用前幾項驗證所找規則。",
   "solutionSteps": [
-    "取第 2 項減第 1 項：5−2＝3。",
-    "取第 3 項減第 2 項：8−5＝3。",
-    "再檢查 11−8＝3。",
-    "確認相鄰差固定為 3。",
-    "選 B，避免把相鄰項相加。"
+    "整理題意：數列 2、5、8、11、…… 的相鄰兩項差是多少？",
+    "5−2＝3、8−5＝3、11−8＝3，因此相鄰兩項差為 3，選 B。",
+    "用前後項或通項回查，確認選項 B。"
   ]
 }
