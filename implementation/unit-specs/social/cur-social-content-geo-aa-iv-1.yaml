@@ -27,20 +27,20 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以資料、時空或制度證據解釋「地 Aa-Ⅳ-1：全球經緯度座標」
-  - 比較至少兩個因素並說明因果或空間關係
-  - 把概念遷移到新的會考型資料情境
+  - 依赤道與本初子午線判斷南北緯、東西經與四個半球
+  - 正確依「緯度、經度」順序讀寫座標，並用網格刻度定位
+  - 改變單一緯度或經度時，解釋定位點如何移動並用反向定位檢查答案
   prerequisites:
   - 能讀懂本單元使用的基本符號、圖表或短文本
   - 能依提示完成一次預測、操作、觀察、解釋循環
   coreConcepts:
-  - 地 Aa-Ⅳ-1：全球經緯度座標
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 赤道、本初子午線與四個半球
+  - 緯度表示南北位置，經度表示東西位置
+  - 完整座標的順序、方向與網格刻度
   misconceptions:
-  - 把「地 Aa-Ⅳ-1：全球經緯度座標」的背景、證據與結果混為同一層次
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 把緯線與經線的方向或功能對調
+  - 只寫度數、不寫南北緯與東西經方向
+  - 改變經度時誤以為緯度或南北位置也會跟著改變
   contentFlow:
   - 'hook: 以單元真實問題引起預測'
   - 'activate-prerequisite: 顯示先備檢核並允許補救'
@@ -58,7 +58,7 @@ unitImplementationSpec:
   interactiveBlocks:
   - id: CUR-SOCIAL-CONTENT-GEO-AA-IV-1-I01
     component: MapDataBlock
-    purpose: 讓學生操作並看見「地 Aa-Ⅳ-1：全球經緯度座標」中最容易被背誦取代的關係
+    purpose: 讓學生調整緯度與經度，觀察定位點、半球標籤與文字座標同步變化，直接診斷方向與順序迷思
     initialState:
       mode: predict
       showAnswer: false
@@ -139,7 +139,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: untested
+    qaStatus: content-reviewed
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 22～24 頁／PDF 第 26～28 頁；國民中學教育階段學習內容；官方代碼 地 Aa-Ⅳ-1
