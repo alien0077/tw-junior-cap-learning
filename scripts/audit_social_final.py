@@ -33,5 +33,5 @@ for lid,p in units.items():
   if len(q.get("solutionSteps",[]))<3: errors.append([str(qp.relative_to(R)),"solutionSteps<3"])
 out={"status":"pass" if not errors else "blocked","lessonCount":len(lessons),"specCount":len(specs),"questionUnits":len(qby),"errors":errors}
 (R/"implementation/reports/social-final-audit.json").write_text(json.dumps(out,ensure_ascii=False,indent=2)+"\n")
-print(json.dumps({k:out[k] for k in ("status","lessonCount","specCount","questionUnits")}|{"errorCount":len(errors)},ensure_ascii=False))
+from collections import Counter\nprint(json.dumps({k:out[k] for k in ("status","lessonCount","specCount","questionUnits")}|{"errorCount":len(errors),"errorKinds":Counter(e[1] for e in errors),"firstErrors":errors[:80]},ensure_ascii=False))
 sys.exit(0 if not errors else 1)
