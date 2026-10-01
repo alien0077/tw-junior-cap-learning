@@ -27,90 +27,89 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Ab-Ⅳ-1：粒子模型與三態」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 由粒子排列、間距與運動方式比較固態、液態、氣態，而不是只背外觀名稱
+  - 用粒子模型解釋固體形狀固定、液體可流動、氣體可壓縮等巨觀性質
+  - 區分模型中的示意比例與實際粒子大小、距離，說明模型能解釋與不能直接證明的內容
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能由簡單粒子圖辨認粒子數量、相對間距與排列
+  - 能區分「觀察到的巨觀現象」與「用粒子模型提出的微觀解釋」
   coreConcepts:
-  - Ab-Ⅳ-1：粒子模型與三態
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 同一物質在不同狀態下仍由同種粒子構成，狀態改變不等於粒子本身變成另一種物質
+  - 固態粒子位置相對固定但仍有振動；液態粒子接近且能彼此移動；氣態粒子間距大且可在容器中運動
+  - 巨觀的形狀、體積與可壓縮性可由粒子排列、間距與運動的差異建立模型解釋
   misconceptions:
-  - 把「Ab-Ⅳ-1：粒子模型與三態」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為固體中的粒子完全不動
+  - 認為液體變成氣體後粒子本身膨脹變大，或粒子數必然增加
+  - 把粒子示意圖的顏色、實際大小與間距比例當成直接測量結果
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 evidence-lab 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 比較冰、水與水蒸氣，先問「同一物質為何呈現不同形態」'
+  - 'predict: 先選擇三態粒子排列、間距與運動的預測，不揭露答案'
+  - 'manipulate: 在粒子工作台切換固態、液態、氣態並調整容器體積'
+  - 'observe: 同步顯示粒子間距、相對運動與形狀／體積／可壓縮性文字摘要'
+  - 'explain: 將一項巨觀性質連到一項粒子層級差異'
+  - 'model-limit: 指出示意圖不代表真實粒子尺寸、顏色或按比例距離'
+  - 'transfer: 以香水擴散、氣筒壓縮或熔化後流動的新情境判讀'
+  - 'exit-ticket: 用「觀察 → 粒子模型 → 限制」三句完成解釋'
   visualizations:
-  - evidence-lab：以「Ab-Ⅳ-1：粒子模型與三態」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 三態粒子工作台：相同粒子數下同步呈現排列、相對間距與運動箭頭
+  - 巨觀性質卡：形狀、體積、流動性、可壓縮性與目前粒子模型並列
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-AB-IV-1-I01
     component: EvidenceLabBlock
-    purpose: 讓學生操作並看見「Ab-Ⅳ-1：粒子模型與三態」中最容易被背誦取代的關係
+    purpose: 讓學生用同一批粒子切換三態並改變容器體積，檢查哪一種粒子模型能解釋形狀、流動與可壓縮性
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        state: solid
+        containerVolume: 100
+        particleCount: 24
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測固態、液態與氣態的粒子排列和相對間距
+    - 切換物態，觀察相同粒子數下模型如何重排
+    - 只在氣態情境調整容器體積，比較粒子間距變化
+    - 選取一項巨觀性質，寫出對應的粒子模型證據
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 切換物態不得改變粒子種類；粒子數固定時不可用新增／消失粒子暗示物態改變
+    - 固態仍顯示振動提示，不可畫成完全靜止
+    - 粒子圖明示「示意、非按比例」，顏色必須搭配文字標籤
+    - 容器體積改變時只更新合理的間距與碰撞／運動摘要，不把粒子本身畫大畫小
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-AB-IV-1-I01
-      trigger: 把「Ab-Ⅳ-1：粒子模型與三態」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 認為固體粒子不動、氣體粒子膨脹變大，或物態改變會生成另一種粒子
+      prompt: 請比較物態切換前後「粒子種類、粒子數、粒子間距與運動」哪幾項真的改變。
+      expectedEvidence: 指出同一物質粒子種類不變，主要差異在排列、間距與運動；模型圖非真實比例
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出學生連結的巨觀性質與粒子證據，再要求換另一物態驗證。
+      incorrect: 先提示「看粒子本身是否換種類」以及「看間距而不是粒子大小」，再讓學生重試。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-1：粒子模型與三態」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "本課以預測—切換物態—比對巨觀性質—解釋模型限制的流程設計；資料、文字與粒子圖均由本專案自行建立。"
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-1：粒子模型與三態」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "只借用先預測再操作的教學節奏，不複製外部活動腳本或素材。"
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-1：粒子模型與三態」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "物態、容器體積、粒子間距與運動狀態均提供可讀文字，不以動畫或顏色單獨傳達。"
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-1：粒子模型與三態」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "預測、操作、觀察、解釋與回饋區域使用可定位結構，支援鍵盤與螢幕閱讀器。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Ab-Ⅳ-1：粒子模型與三態」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 粒子模型判讀／巨微觀連結／理由短答
+    stemConstraint: 換成氣筒壓縮、液體流動或物態轉換新情境，但必須保留粒子間距／排列／運動與巨觀性質的連結
+    requiredResponse: 選答後指出一項巨觀觀察及其粒子層級理由
+    scoring: 巨觀判讀正確 1、粒子證據對應 1、模型限制或表達完整 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 為什麼空氣比水更容易被壓縮？請用粒子間距解釋，並說明粒子圖不能直接告訴我們哪一件事。
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 指出氣態粒子平均間距較大，壓縮主要縮小間距
+    - 不說成粒子本身被壓小或消失
+    - 說明示意圖不代表真實粒子尺寸、顏色或按比例距離
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Ab-Ⅳ-1：粒子模型與三態」的證據、因果或觀察說給同學聽
+    task: 用 80～120 字說明一個三態巨觀現象與粒子模型之間的對應，並保留模型限制。
     constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
   mobileA11y:
     breakpoints:
@@ -119,21 +118,21 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 每個物態切換與容器體積控制有名稱、目前值、操作後粒子間距／運動摘要與錯誤回饋
+    reducedMotion: 停用動畫時以靜態位置差異、箭頭與文字摘要呈現粒子運動
   testCases:
-  - 載入「Ab-Ⅳ-1：粒子模型與三態」時不得先顯示正解；學生必須先提交對「Ab-Ⅳ-1：粒子模型與三態」的預測，且預測會被保留供後續比較。
-  - 操作「evidence-lab：以「Ab-Ⅳ-1：粒子模型與三態」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Ab-Ⅳ-1：粒子模型與三態」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Ab-Ⅳ-1：粒子模型與三態」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Ab-Ⅳ-1：粒子模型與三態」的 CAP transfer：換一個情境但保留「Ab-Ⅳ-1：粒子模型與三態」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，EvidenceLabBlock 仍須以「Ab-Ⅳ-1：粒子模型與三態」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 載入時先要求預測三態粒子排列，不得直接顯示答案。
+  - 固態、液態、氣態切換後粒子種類與設定粒子數保持一致，只有排列、相對間距與運動摘要改變。
+  - 固態畫面仍須表示粒子振動；氣態壓縮不得把粒子本身縮小或刪除。
+  - 學生選擇「氣體容易壓縮是因粒子很軟」時，命中迷思診斷並提示比較粒子間距。
+  - 320px、375px、768px 與鍵盤操作下，物態控制、容器體積、粒子圖替代文字與回饋均可使用。
+  - Fallback 模式至少提供三態粒子排列文字表與氣體壓縮前後對照，不得只顯示通用「互動載入失敗」。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
   - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - 三態粒子模型能回答形狀、流動性與可壓縮性的至少一項明確問題
+  - 固體不動、粒子膨脹等至少一項迷思被實際誘發、診斷並回饋
+  - 會考 transfer、exit ticket 可執行
   - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
   - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
   status:
@@ -141,6 +140,6 @@ unitImplementationSpec:
     implementationStatus: implemented
     qaStatus: untested
   sourceRefs:
-  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 23 頁／PDF 第 27 頁；主題 A、次主題 Ab；官方代碼 Ab-Ⅳ-1
     role: official-curriculum-source-of-truth
