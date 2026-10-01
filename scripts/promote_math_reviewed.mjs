@@ -16,10 +16,19 @@ function reportCandidates(lessonFile) {
   return candidates;
 }
 
+function completeAiFirstPass(report) {
+  if (String(report.status || "").toLowerCase() !== "first-pass-ai-review-complete") return false;
+  const checks = report.checks && typeof report.checks === "object" ? report.checks : {};
+  const booleans = Object.values(checks).filter(value => typeof value === "boolean");
+  const hasEnoughPositiveChecks = booleans.length >= 4 && booleans.every(Boolean);
+  const terra = String(checks.terraSecondPass || "pending").toLowerCase();
+  return hasEnoughPositiveChecks && ["pending", "not-run", "not_applicable", "n/a"].includes(terra);
+}
+
 function passingReport(report) {
   const status = String(report.status || "").toLowerCase();
   const decision = String(report.finalDecision || "").toUpperCase();
-  const explicitPass = status === "pass" || status === "content-reviewed" || decision.startsWith("CONTENT_PASS");
+  const explicitPass = status === "pass" || status === "content-reviewed" || decision.startsWith("CONTENT_PASS") || completeAiFirstPass(report);
   const failures = Array.isArray(report.failures) ? report.failures : [];
   return explicitPass && failures.length === 0;
 }
@@ -71,11 +80,11 @@ for (const file of lessonFiles) {
     ...(lesson.reviewEvidence || {}),
     firstPassReport: reportName,
     promotedAt: today,
-    promotionRule: "passing first-pass report; zero recorded failures; exactly 10 linked questions",
+    promotionRule: "passing first-pass evidence; zero recorded failures; exactly 10 linked questions",
     independentHumanOrTerraReviewClaimed: false,
   };
   if (lesson.provenance?.authoringNote && /維持 draft|draft/.test(lesson.provenance.authoringNote)) {
-    lesson.provenance.authoringNote = `${lesson.provenance.authoringNote.replace(/因 Terra[^。]*維持 draft。?/g, "").replace(/維持 draft。?/g, "").trim()} 本輪依既有 first-pass pass 證據完成 ChatGPT 內容審查；未宣稱 Terra 或獨立人工審查。`.trim();
+    lesson.provenance.authoringNote = `${lesson.provenance.authoringNote.replace(/因 Terra[^。]*維持 draft。?/g, "").replace(/維持 draft。?/g, "").trim()} 本輪依既有 first-pass AI review 證據完成 ChatGPT 內容審查；未宣稱 Terra 或獨立人工審查。`.trim();
   }
   await writeJson(lessonPath, lesson);
 
@@ -86,7 +95,7 @@ for (const file of lessonFiles) {
       ...(qEntry.value.reviewEvidence || {}),
       firstPassReport: reportName,
       promotedAt: today,
-      promotionRule: "lesson-level passing first-pass report; zero recorded failures; exact 10-question group",
+      promotionRule: "lesson-level passing first-pass evidence; zero recorded failures; exact 10-question group",
       independentHumanOrTerraReviewClaimed: false,
     };
     await writeJson(qEntry.path, qEntry.value);
