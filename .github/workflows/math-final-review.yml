@@ -4,8 +4,14 @@ on:
   push:
     branches: [main]
     paths:
-      - scripts/finalize_math_review_tail.mjs
-      - .github/workflows/math-final-review.yml
+      - 'lessons/math/**'
+      - 'questions/math/**'
+      - 'implementation/unit-specs/math/**'
+      - 'implementation/runtime/math-*.test.mjs'
+      - 'site/simulations.js'
+      - 'scripts/audit_math_coverage.mjs'
+      - 'scripts/finalize_math_review_tail.mjs'
+      - '.github/workflows/math-final-review.yml'
   workflow_dispatch:
 
 permissions:
