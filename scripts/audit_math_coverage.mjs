@@ -15,6 +15,7 @@ const productionMathEngines = new Set([
   "math-inequality-range",
   "math-algebra-balance",
   "math-ticket-equation",
+  "math-equation-meaning",
   "math-expression-lab",
   "math-function-graph",
   "math-system-graph",

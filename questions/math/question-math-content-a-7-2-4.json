@@ -2,23 +2,23 @@
   "id": "question-math-content-a-7-2-4",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "解方程式 4y＋7＝23，y 應為何值？",
+  "prompt": "把候選 y＝4 代入方程式 4y＋7＝23，哪個判斷正確？",
   "options": [
     {
       "id": "A",
-      "text": "3"
+      "text": "左邊是 4＋4＋7＝15，所以不是解"
     },
     {
       "id": "B",
-      "text": "4"
+      "text": "左邊 4×4＋7＝23，和右邊 23 相等，所以 y＝4 是解"
     },
     {
       "id": "C",
-      "text": "5"
+      "text": "因為 23−7＝16，所以不用代入即可說 y＝4 是解"
     },
     {
       "id": "D",
-      "text": "7"
+      "text": "只要 y 是整數就一定是解"
     }
   ],
   "knowledgeIds": [
@@ -27,14 +27,14 @@
   "difficulty": "easy",
   "answer": {
     "value": "B",
-    "explanation": "兩邊同減 7 得 4y＝16，再除以 4 得 y＝4，選 B。"
+    "explanation": "代入 y＝4 後，左邊 4×4＋7＝23，右邊也是 23；等號成立，所以候選 y＝4 是解。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.mljh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=164&cfsn=771&fn=111-1-7%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E7%A7%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E5%8D%B7.pdf&op=dlfile",
     "sourceLocator": "第1頁第8題；以等量運算解含分數的一元一次方程式；另參照其餘兩份試卷的指定題號；僅 pattern-only 原創改寫。",
-    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；AI／Terra 第二輪審查未完成，維持 draft。"
+    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；已完成 2026-10-01 內容、答案、解析與 A-7-2 單元邊界審查；公開試題僅作 pattern-only 能力模式參考。"
   },
   "reviewStatus": "content-reviewed",
   "updatedAt": "2026-10-01",
@@ -74,13 +74,13 @@
       "locatorLevel": "item"
     }
   ],
-  "solutionStrategy": "依逆運算順序隔離未知數，並以代入確認答案。",
+  "solutionStrategy": "不做移項；直接把給定候選值放回原式，保留左右兩側並比較。",
   "solutionSteps": [
-    "原式為 4y＋7＝23。",
-    "兩邊同減 7 得 4y＝16。",
-    "兩邊同除以 4。",
-    "解得 y＝4。",
-    "代回 4×4＋7＝23，選 B。"
+    "保留原式 4y＋7＝23。",
+    "代入候選 y＝4。",
+    "左邊得到 16＋7＝23。",
+    "右邊仍為 23。",
+    "左右相等，因此選 B。"
   ],
   "reviewEvidence": {
     "firstPassReport": "math-a-7-2-first-pass-review.json",

@@ -20,6 +20,7 @@
     "math-inequality-range": { boundary: 12, relation: "at-least" },
     "math-algebra-balance": { addend: 3, target: 11 },
     "math-ticket-equation": {},
+    "math-equation-meaning": { x: 5 },
     "math-expression-lab": { x: 2 },
     "math-function-graph": { m: 1, b: 0, x: 2 },
     "math-system-graph": { sum: 6 },
@@ -41,7 +42,7 @@
   };
   const write = (simulation, state) => localStorage.setItem(stateKey(simulation), JSON.stringify(state));
   const label = engine => ({
-    "math-number-line": "數線操作臺", "math-inequality-range": "不等式範圍數線", "math-algebra-balance": "代數天平", "math-ticket-equation": "票券等量模型", "math-function-graph": "函數圖形實驗室",
+    "math-number-line": "數線操作臺", "math-inequality-range": "不等式範圍數線", "math-algebra-balance": "代數天平", "math-ticket-equation": "票券等量模型", "math-equation-meaning": "方程式意義檢驗臺", "math-function-graph": "函數圖形實驗室",
     "math-system-graph": "聯立直線交點探索", "math-expression-lab": "代數式同值檢核臺",
     "math-geometry": "幾何建構臺", "math-data-lab": "資料實驗室", "math-probability-lab": "機率試驗器",
     "science-motion-lab": "力與運動實驗室", "science-energy-lab": "能量實驗室", "science-particle-lab": "粒子模型實驗室",
@@ -78,6 +79,14 @@
   const renderModel = (lesson, state) => {
     const { engine } = lesson.simulation;
     const designed = engine === "math-geometry" && (lesson.simulation.model.startsWith("s9-13-prism-surface-volume") || lesson.simulation.model === "s9-1-polygon-similarity-v1") ? "" : renderLearningDesign(lesson, state);
+    if (engine === "math-equation-meaning") {
+      const config = lesson.simulation.equationMeaning;
+      const x = Number(state.x);
+      const left = Number(config.coefficient) * x + Number(config.constant);
+      const right = Number(config.total);
+      const equal = left === right;
+      return `${designed}<section class="sim-equation-meaning" aria-label="一元一次方程式意義互動"><h5>候選值代回原式</h5><p>${esc(config.context)}</p><p class="sim-ticket-equation-formula" aria-live="polite">${config.coefficient} × ${esc(config.variable)} + ${config.constant} = ${config.total}</p><div class="balance" aria-label="等號兩側數值比較"><span class="balance-pan">左側 ${left}</span><span aria-hidden="true">${equal ? "＝" : "≠"}</span><span class="balance-pan">右側 ${right}</span></div>${slider("x", `候選 ${config.variable} 的值`, x, config.min, config.max, config.step)}<p class="sim-ticket-feedback" role="status" aria-live="polite">${equal ? `代入 ${config.variable}=${x} 後左右相等，因此這個候選值是解。` : `代入 ${config.variable}=${x} 後左側為 ${left}、右側為 ${right}，左右不相等，因此這個候選值不是解。`}</p><p>本互動只檢驗候選值是否符合原等式，不展示移項、同除或其他求解程序。</p></section>`;
+    }
     if (engine === "math-ticket-equation") {
       const config = lesson.simulation.ticketEquation;
       const count = Number(state.ticketCount);

@@ -15,6 +15,7 @@ MATH_ENGINES = {
     "math-inequality-range",
     "math-algebra-balance",
     "math-ticket-equation",
+    "math-equation-meaning",
     "math-expression-lab",
     "math-function-graph",
     "math-system-graph",
@@ -103,6 +104,23 @@ def _ticket_equation_errors(simulation: dict[str, Any]) -> list[str]:
     return errors
 
 
+def _equation_meaning_errors(simulation: dict[str, Any]) -> list[str]:
+    config = simulation.get("equationMeaning")
+    if not isinstance(config, dict):
+        return ["math-equation-meaning requires equationMeaning config"]
+    errors: list[str] = []
+    for key in ("variable", "context"):
+        if not _nonempty_text(config.get(key)):
+            errors.append(f"equationMeaning.{key} must be non-empty text")
+    for key in ("coefficient", "constant", "total", "min", "max", "step"):
+        if not isinstance(config.get(key), (int, float)):
+            errors.append(f"equationMeaning.{key} must be numeric")
+    lo, hi, step = config.get("min"), config.get("max"), config.get("step")
+    if all(isinstance(value, (int, float)) for value in (lo, hi, step)) and (hi <= lo or step <= 0):
+        errors.append("equationMeaning must satisfy max > min and step > 0")
+    return errors
+
+
 def contract_errors(lesson: dict[str, Any]) -> list[str]:
     """Return production-contract errors for one lesson without regenerating it."""
     simulation = lesson.get("simulation")
@@ -137,5 +155,7 @@ def contract_errors(lesson: dict[str, Any]) -> list[str]:
     errors.extend(_learning_design_errors(simulation.get("learningDesign")))
     if engine == "math-ticket-equation":
         errors.extend(_ticket_equation_errors(simulation))
+    if engine == "math-equation-meaning":
+        errors.extend(_equation_meaning_errors(simulation))
 
     return errors

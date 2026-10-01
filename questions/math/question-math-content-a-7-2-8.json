@@ -2,23 +2,23 @@
   "id": "question-math-content-a-7-2-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "方程式 2x＋6＝2x＋6 有幾個解？",
+  "prompt": "下列哪一個式子是一元一次方程式？",
   "options": [
     {
       "id": "A",
-      "text": "沒有解"
+      "text": "2x＋6＝18"
     },
     {
       "id": "B",
-      "text": "只有 x＝0"
+      "text": "2x＋6"
     },
     {
       "id": "C",
-      "text": "所有數都是解"
+      "text": "x²＋6＝18"
     },
     {
       "id": "D",
-      "text": "只有 x＝6"
+      "text": "x＋y＝18"
     }
   ],
   "knowledgeIds": [
@@ -26,15 +26,15 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "C",
-    "explanation": "兩邊同減 2x 後得到 6＝6，成為恆等式；任何 x 代入都成立，所以有無限多個解，選 C。"
+    "value": "A",
+    "explanation": "A 有等號、只有一個未知數 x，而且 x 的最高次數是 1；B 缺等號，C 是二次，D 有兩個未知數。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.mljh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=164&cfsn=771&fn=111-1-7%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E7%A7%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E5%8D%B7.pdf&op=dlfile",
     "sourceLocator": "第1頁第7題；等量公理與等式保持，非恆等式解數題；另參照其餘兩份試卷的指定題號；僅 pattern-only 原創改寫。",
-    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；AI／Terra 第二輪審查未完成，維持 draft。"
+    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；已完成 2026-10-01 內容、答案、解析與 A-7-2 單元邊界審查；公開試題僅作 pattern-only 能力模式參考。"
   },
   "reviewStatus": "content-reviewed",
   "updatedAt": "2026-10-01",
@@ -74,13 +74,13 @@
       "locatorLevel": "item"
     }
   ],
-  "solutionStrategy": "消去相同的未知項後，觀察剩下的是恆真、矛盾或可解等式。",
+  "solutionStrategy": "依序檢查三件事：是否有等號、未知數是否只有一種、未知數最高次數是否為 1。",
   "solutionSteps": [
-    "兩邊同減 2x。",
-    "得到 6＝6。",
-    "這個等式不再限制 x。",
-    "任意數值代入都能保持等號。",
-    "選 C。"
+    "先找等號：B 淘汰。",
+    "再數未知數種類：D 有 x、y 兩種。",
+    "再看最高次數：C 有 x²。",
+    "A 同時符合三項條件。",
+    "因此選 A。"
   ],
   "studyReferences": [
     "https://www.hlbh.hlc.edu.tw/ischool/rfile/9df20707763f01eacd79953c2695692a"

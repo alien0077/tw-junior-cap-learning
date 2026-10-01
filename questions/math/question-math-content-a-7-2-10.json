@@ -2,23 +2,23 @@
   "id": "question-math-content-a-7-2-10",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "一個長方形周長為 34 公分，寬為 6 公分，長為 x 公分。求 x 的方程式與長度。",
+  "prompt": "長方形周長為 34 公分，寬為 6 公分，長為 x 公分。哪個方程式忠實表示題意？（本題不要求解 x）",
   "options": [
     {
       "id": "A",
-      "text": "x＋6＝34，x＝28"
+      "text": "x＋6＝34"
     },
     {
       "id": "B",
-      "text": "2x＋6＝34，x＝14"
+      "text": "2x＋6＝34"
     },
     {
       "id": "C",
-      "text": "x＋12＝34，x＝22"
+      "text": "x＋12＝34"
     },
     {
       "id": "D",
-      "text": "2(x＋6)＝34，x＝11"
+      "text": "2(x＋6)＝34"
     }
   ],
   "knowledgeIds": [
@@ -27,14 +27,14 @@
   "difficulty": "medium",
   "answer": {
     "value": "D",
-    "explanation": "周長為 2(長＋寬)，所以 2(x＋6)＝34；除以 2 得 x＋6＝17，再減 6 得 x＝11，選 D。"
+    "explanation": "長方形周長是 2×(長＋寬)，代入長 x、寬 6，得到 2(x＋6)＝34；本題只檢查列式是否對應情境，不求 x。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://school.tc.edu.tw/open-message/193521/get-file/6790e68d4a02433d6346b847.pdf",
     "sourceLocator": "第2頁第20題；長方形周長與邊長建立方程式；另參照其餘兩份試卷的指定題號；僅 pattern-only 原創改寫。",
-    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；AI／Terra 第二輪審查未完成，維持 draft。"
+    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；已完成 2026-10-01 內容、答案、解析與 A-7-2 單元邊界審查；公開試題僅作 pattern-only 能力模式參考。"
   },
   "reviewStatus": "content-reviewed",
   "updatedAt": "2026-10-01",
@@ -74,13 +74,13 @@
       "locatorLevel": "item"
     }
   ],
-  "solutionStrategy": "先建模寫出整個周長，再解方程並檢查 2(11＋6)＝34。",
+  "solutionStrategy": "先把周長公式中的每個量對回題意，再以未知數 x 取代長；只列等量關係，不進入求解。",
   "solutionSteps": [
-    "寫出長方形周長公式 2(長＋寬)。",
-    "代入長 x、寬 6 得 2(x＋6)＝34。",
-    "兩邊除以 2 得 x＋6＝17。",
-    "兩邊減 6 得 x＝11 公分。",
-    "代回周長確認後選 D。"
+    "周長公式為 2×(長＋寬)。",
+    "長以 x 公分表示。",
+    "寬為 6 公分。",
+    "總周長為 34 公分。",
+    "所以列 2(x＋6)＝34，選 D。"
   ],
   "reviewEvidence": {
     "firstPassReport": "math-a-7-2-first-pass-review.json",

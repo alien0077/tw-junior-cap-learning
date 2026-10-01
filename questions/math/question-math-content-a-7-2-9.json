@@ -2,23 +2,23 @@
   "id": "question-math-content-a-7-2-9",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "方程式 4x＋1＝4x−3 有何結論？",
+  "prompt": "關於 4x＋1＝4x−3，下列哪個敘述最符合『一元一次方程式的意義』？",
   "options": [
     {
       "id": "A",
-      "text": "沒有解"
+      "text": "它有等號、只有未知數 x 且最高次為 1，因此是一元一次方程式；某個數是否為解仍要代入檢查"
     },
     {
       "id": "B",
-      "text": "x＝1"
+      "text": "因為左右都有 4x，所以它不是方程式"
     },
     {
       "id": "C",
-      "text": "所有數都是解"
+      "text": "只要未知數在兩側，就一定有很多解"
     },
     {
       "id": "D",
-      "text": "x＝−1"
+      "text": "沒有先求出 x，就不能判斷它是不是方程式"
     }
   ],
   "knowledgeIds": [
@@ -27,14 +27,14 @@
   "difficulty": "medium",
   "answer": {
     "value": "A",
-    "explanation": "兩邊同減 4x 後得到 1＝−3，矛盾，因此沒有任何 x 能成立，選 A。"
+    "explanation": "是否為一元一次方程式看的是結構：有等號、一種未知數、最高次為 1。『是不是解』是另一個問題，需要把候選值代入原式比較左右。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.mljh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=164&cfsn=771&fn=111-1-7%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E7%A7%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E5%8D%B7.pdf&op=dlfile",
     "sourceLocator": "第1頁第9題；兩側未知項消去後檢驗常數等式；另參照其餘兩份試卷的指定題號；僅 pattern-only 原創改寫。",
-    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；AI／Terra 第二輪審查未完成，維持 draft。"
+    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；已完成 2026-10-01 內容、答案、解析與 A-7-2 單元邊界審查；公開試題僅作 pattern-only 能力模式參考。"
   },
   "reviewStatus": "content-reviewed",
   "updatedAt": "2026-10-01",
@@ -74,13 +74,13 @@
       "locatorLevel": "item"
     }
   ],
-  "solutionStrategy": "先消去相同的未知項；若留下矛盾的常數等式，即判定無解。",
+  "solutionStrategy": "把『方程式的分類』與『候選值是否為解』分開判斷，不用求解程序決定方程式的身分。",
   "solutionSteps": [
-    "兩邊同減 4x。",
-    "剩下 1＝−3。",
-    "這是永遠不成立的矛盾。",
-    "所以不存在能滿足原方程式的 x。",
-    "選 A。"
+    "確認式子含等號。",
+    "未知數只有 x 一種。",
+    "x 的最高次數是 1。",
+    "因此它符合一元一次方程式的結構。",
+    "候選值是否成立要另行代入檢查，選 A。"
   ],
   "studyReferences": [
     "https://www.hlbh.hlc.edu.tw/ischool/rfile/9df20707763f01eacd79953c2695692a"

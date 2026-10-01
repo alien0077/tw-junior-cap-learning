@@ -584,12 +584,12 @@
     ]
   },
   "simulation": {
-    "id": "sim-math-a-7-2",
-    "engine": "concept-explorer",
+    "id": "sim-math-a-7-2-equation-meaning",
+    "engine": "math-equation-meaning",
     "mode": "model",
-    "model": "general",
-    "goal": "從情境組成方程式，辨認一元一次方程式的結構，並代入候選值判斷等號是否成立；不操作等式變形或教授求解程序。",
-    "mission": "四袋徽章各有 x 枚，另有 3 枚散放，清點共 27 枚。學生建立 4x＋3＝27、分類相似符號式，再用候選值檢查左右是否相等。",
+    "model": "a-7-2-equation-meaning-v1",
+    "goal": "從情境建立一元一次方程式，並用候選值代回原式比較左右兩側；不教授移項或求解程序。",
+    "mission": "操作候選 x，觀察 4x＋3 與 27 是否相等；再用等號、未知數個數與最高次數說明方程式的結構。",
     "sourceRefs": [
       "https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf",
       "https://digitalmaster.knsh.com.tw/all/video/j/math_page.html?l1=%E8%AA%B2%E6%9C%AC%E8%A7%A3%E9%A1%8C&l2=7%E4%B8%8A",
@@ -639,6 +639,16 @@
           "feedback": "用兩側相等作為證據；求出未知數的方法留待 A-7-3。"
         }
       ]
+    },
+    "equationMeaning": {
+      "coefficient": 4,
+      "constant": 3,
+      "total": 27,
+      "variable": "x",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "context": "四袋徽章各有 x 枚，另有 3 枚散放，共 27 枚。"
     }
   },
   "reviewEvidence": {

@@ -2,23 +2,23 @@
   "id": "question-math-content-a-7-2-7",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "解方程式 5x＋2＝2x＋14，x 為何？",
+  "prompt": "候選 x＝4 代入方程式 5x＋2＝2x＋14，哪個比較正確？",
   "options": [
     {
       "id": "A",
-      "text": "2"
+      "text": "左邊 22、右邊 22，所以 x＝4 是解"
     },
     {
       "id": "B",
-      "text": "4"
+      "text": "左邊 20、右邊 8，所以 x＝4 不是解"
     },
     {
       "id": "C",
-      "text": "6"
+      "text": "只要兩邊都有 x，就不用代入"
     },
     {
       "id": "D",
-      "text": "8"
+      "text": "先把 2x 移到左邊才算是在檢驗候選值"
     }
   ],
   "knowledgeIds": [
@@ -26,15 +26,15 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "兩邊同減 2x 得 3x＋2＝14，再減 2 得 3x＝12，故 x＝4，選 B。"
+    "value": "A",
+    "explanation": "代入 x＝4：左邊 5×4＋2＝22，右邊 2×4＋14＝22；左右相等，因此 x＝4 是解。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.mljh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=164&cfsn=771&fn=111-1-7%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E7%A7%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E5%8D%B7.pdf&op=dlfile",
     "sourceLocator": "第1頁第9題；未知數同時出現在等號兩側；另參照其餘兩份試卷的指定題號；僅 pattern-only 原創改寫。",
-    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；AI／Terra 第二輪審查未完成，維持 draft。"
+    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；已完成 2026-10-01 內容、答案、解析與 A-7-2 單元邊界審查；公開試題僅作 pattern-only 能力模式參考。"
   },
   "reviewStatus": "content-reviewed",
   "updatedAt": "2026-10-01",
@@ -74,13 +74,13 @@
       "locatorLevel": "item"
     }
   ],
-  "solutionStrategy": "把未知項集中到一邊、常數集中到另一邊，避免移項符號錯誤。",
+  "solutionStrategy": "未知數在等號兩側時，將同一候選值同時代入兩側並各自計算，再比較結果。",
   "solutionSteps": [
-    "兩邊同減 2x 得 3x＋2＝14。",
-    "兩邊同減 2 得 3x＝12。",
-    "兩邊同除以 3。",
-    "解得 x＝4。",
-    "代回左右皆為 22，選 B。"
+    "保留原式 5x＋2＝2x＋14。",
+    "左右兩側都代入 x＝4。",
+    "左邊算得 22。",
+    "右邊也算得 22。",
+    "左右相等，因此選 A。"
   ],
   "reviewEvidence": {
     "firstPassReport": "math-a-7-2-first-pass-review.json",

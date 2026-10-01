@@ -2,23 +2,23 @@
   "id": "question-math-content-a-7-2-1",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "方程式 3x−4＝11 的解為何？",
+  "prompt": "候選值 x＝5 是否為方程式 3x−4＝11 的解？哪個理由完整？",
   "options": [
     {
       "id": "A",
-      "text": "3"
+      "text": "代入後左邊 3×5−4＝11，與右邊 11 相等，所以 x＝5 是解"
     },
     {
       "id": "B",
-      "text": "5"
+      "text": "因為 5 是正數，所以一定是解"
     },
     {
       "id": "C",
-      "text": "7"
+      "text": "只算 3×5＝15，就可判定是解"
     },
     {
       "id": "D",
-      "text": "15"
+      "text": "把 11−4 算成 7，所以 x＝5 不是解"
     }
   ],
   "knowledgeIds": [
@@ -26,15 +26,15 @@
   ],
   "difficulty": "easy",
   "answer": {
-    "value": "B",
-    "explanation": "兩邊同加 4 得 3x＝15，再同除以 3 得 x＝5，選 B。"
+    "value": "A",
+    "explanation": "把候選 x＝5 代回原式：左邊 3×5−4＝11，右邊是 11；左右相等，所以 x＝5 是解。這是在檢驗候選值，不是求解。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.mljh.hlc.edu.tw/modules/tad_uploader/index.php?cat_sn=164&cfsn=771&fn=111-1-7%E5%B9%B4%E7%B4%9A%E6%95%B8%E5%AD%B8%E7%A7%91%E7%AC%AC%E4%B8%89%E6%AC%A1%E6%AE%B5%E8%80%83%E8%A9%A6%E5%8D%B7.pdf&op=dlfile",
     "sourceLocator": "第1頁第9題；含未知數在等號兩側的方程式求解；另參照其餘兩份試卷的指定題號；僅 pattern-only 原創改寫。",
-    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；AI／Terra 第二輪審查未完成，維持 draft。"
+    "authoringNote": "依官方課綱、KG 與三所公立國中公開試題的指定題號能力模式獨立改寫；題幹、數值、選項、答案、解析及五步解法均為原創，不複製試題內容；已完成 2026-10-01 內容、答案、解析與 A-7-2 單元邊界審查；公開試題僅作 pattern-only 能力模式參考。"
   },
   "reviewStatus": "content-reviewed",
   "updatedAt": "2026-10-01",
@@ -74,13 +74,13 @@
       "locatorLevel": "item"
     }
   ],
-  "solutionStrategy": "先消去常數項，再消去 x 的係數，最後代回驗算。",
+  "solutionStrategy": "把候選值代回原方程式，分別算出左右兩側；兩側相等才符合『解』的定義。",
   "solutionSteps": [
-    "原式為 3x−4＝11。",
-    "兩邊同加 4 得 3x＝15。",
-    "兩邊同除以 3。",
-    "得到 x＝5。",
-    "代回 3×5−4＝11，選 B。"
+    "保留原式 3x−4＝11。",
+    "代入候選 x＝5。",
+    "左邊算得 3×5−4＝11。",
+    "右邊原值為 11，左右相等。",
+    "因此 x＝5 是解，選 A。"
   ],
   "reviewEvidence": {
     "firstPassReport": "math-a-7-2-first-pass-review.json",
