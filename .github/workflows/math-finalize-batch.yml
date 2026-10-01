@@ -40,6 +40,8 @@ jobs:
           PY
       - name: Run runtime tests
         run: node --test implementation/runtime/*.test.mjs
+      - name: Run exhaustive math audit on repaired working tree
+        run: node scripts/audit_math_coverage.mjs
       - name: Commit repaired files
         run: |
           git config user.name "github-actions[bot]"
