@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供等差數列、公差、通項與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等差數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "把排數視為項次，固定增加量為公差，套用等差通項。",
+  "solutionStrategy": "先找首項與公差，使用 aₙ=a₁+(n−1)d；代回相鄰項檢查公差一致。",
   "solutionSteps": [
-    "設定首項 a₁＝12、公差 d＝4。",
-    "第 9 排需增加 9−1＝8 次。",
-    "計算 8×4＝32。",
-    "加上第一排 12 得 44。",
-    "選 B，確認不是增加 9 次。"
+    "整理題意：某劇場第一排有 12 個座位，每往後一排增加 4 個座位。第 9 排有幾個座位？",
+    "a₉＝12＋(9−1)×4＝12＋32＝44，所以選 B。",
+    "用相鄰項公差或通項回查，確認選項 B。"
   ]
 }
