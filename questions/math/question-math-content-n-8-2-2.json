@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供平方根夾值、近似值、四捨五入與根號大小比較能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的根號近似方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-2",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "用相鄰整數平方比較 10，再保留平方根不等號方向。",
+  "solutionStrategy": "先用相鄰完全平方數夾住根號值，再依需要細分小數區間；最後平方近似值檢查。",
   "solutionSteps": [
-    "計算 3²＝9、4²＝16。",
-    "確認 9＜10＜16。",
-    "對三個非負數開平方。",
-    "得到 3＜√10＜4。",
-    "選 C，檢查沒有誤選 2 與 3。"
+    "整理題意：√10 介於哪兩個相鄰整數之間？",
+    "3²＝9＜10＜16＝4²，所以 3＜√10＜4，選 C。",
+    "以平方近似值回查，確認選項 C。"
   ]
 }
