@@ -1,5 +1,4 @@
 import { readdir, readFile } from "node:fs/promises";
-import path from "node:path";
 
 const ROOT = new URL("../", import.meta.url);
 const readText = rel => readFile(new URL(rel, ROOT), "utf8");
@@ -42,7 +41,7 @@ function reportCandidates(lessonFile) {
 
 const rows = lessons.map(lesson => {
   const qs = questionsByLesson.get(lesson.id) || [];
-  const specId = lesson.id.replace(/^lesson-math-/, "cur-math-content-");
+  const specId = lesson.id.replace(/^lesson-math-/, "cur-math-");
   const directSpec = specs.get(specId);
   const reports = reportCandidates(lesson.file).filter(name => reportFiles.has(name));
   return {
@@ -60,34 +59,42 @@ const rows = lessons.map(lesson => {
   };
 });
 
+function rowIsActive(row) { return row.reviewStatus !== "deprecated"; }
+
 const summary = {
   lessonCount: lessons.length,
   questionCount: questions.length,
   exactTenQuestions: rows.filter(r => r.questionCount === 10).length,
   lessonStatusCounts: rows.reduce((acc, row) => (acc[row.reviewStatus] = (acc[row.reviewStatus] || 0) + 1, acc), {}),
+  activeNonReviewedQuestionGroups: rows.filter(r => rowIsActive(r) && r.questionDrafts > 0).length,
+  deprecatedNonReviewedQuestionGroups: rows.filter(r => !rowIsActive(r) && r.questionDrafts > 0).length,
   lessonsWithSimulation: rows.filter(r => r.simulationEngine).length,
-  lessonsWithoutSimulation: rows.filter(r => !r.simulationEngine && rowIsActive(r)).length,
+  activeLessonsWithoutSimulation: rows.filter(r => !r.simulationEngine && rowIsActive(r)).length,
   lessonsWithInteractive: rows.filter(r => r.interactiveType).length,
+  lessonsWithDirectSpec: rows.filter(r => r.spec).length,
   specs: specs.size,
   reports: reportFiles.size,
 };
-function rowIsActive(row) { return row.reviewStatus !== "deprecated"; }
 
 const problems = {
   wrongQuestionCount: rows.filter(r => rowIsActive(r) && r.questionCount !== 10).map(r => ({ id: r.id, count: r.questionCount })),
-  nonReviewedQuestions: rows.filter(r => r.questionDrafts > 0).map(r => ({ id: r.id, count: r.questionDrafts })),
+  nonReviewedActiveQuestions: rows.filter(r => rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, count: r.questionDrafts })),
   draftLessons: rows.filter(r => r.reviewStatus === "draft").map(r => r.id),
   missingReviewStatus: rows.filter(r => r.reviewStatus === "missing").map(r => r.id),
   activeWithoutSimulation: rows.filter(r => rowIsActive(r) && !r.simulationEngine).map(r => r.id),
   activeWithoutFirstPassReport: rows.filter(r => rowIsActive(r) && r.reports.length === 0).map(r => r.id),
+  activeWithoutDirectSpec: rows.filter(r => rowIsActive(r) && !r.spec).map(r => r.id),
+  deprecatedWithDraftQuestions: rows.filter(r => !rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, count: r.questionDrafts })),
   implementedButUntestedSpecs: [...specs.entries()].filter(([, s]) => s.implementationStatus === "implemented" && s.qaStatus === "untested").map(([id, s]) => ({ id, component: s.component, file: s.file })),
 };
 
-console.log(JSON.stringify({ summary, problems, rows }, null, 2));
+const output = { summary, problems };
+if (process.env.MATH_AUDIT_VERBOSE === "1") output.rows = rows;
+console.log(JSON.stringify(output, null, 2));
 
 let failed = false;
 for (const [name, value] of Object.entries(problems)) {
-  if (["draftLessons", "activeWithoutSimulation", "implementedButUntestedSpecs"].includes(name)) continue;
+  if (["draftLessons", "implementedButUntestedSpecs", "deprecatedWithDraftQuestions", "activeWithoutDirectSpec"].includes(name)) continue;
   if (value.length) {
     failed = true;
     console.error(`AUDIT_FAIL ${name}: ${value.length}`);
