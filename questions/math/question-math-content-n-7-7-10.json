@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供指數律、同底數乘除、冪的乘方與積的乘方能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的指數律方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-7-7",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "把乘法轉成指數相加、除法轉成指數相減，依序整理。",
+  "solutionStrategy": "先確認是否同底數以及乘、除、乘方情境，再套用正確指數律；用小指數展開回查。",
   "solutionSteps": [
-    "由 x²×x³ 得指數 2＋3＝5。",
-    "再除以 x⁴，指數變為 5−4。",
-    "計算 5−4＝1。",
-    "因此原式為 x¹，n＝1。",
-    "選 C，確認 x 非零使除法律合法。"
+    "整理題意：若 x²×x³÷x⁴＝xⁿ（x≠0），n 為何？",
+    "同底數指數依序為 2＋3−4＝1，因此 n＝1，選 C。",
+    "用展開乘法回查，確認選項 C。"
   ]
 }
