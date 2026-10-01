@@ -11,5 +11,25 @@
     "reviewStatusDraft": true
   },
   "failures": [],
-  "reviewedAt": "2026-09-10"
+  "reviewedAt": "2026-09-10",
+  "secondPassReview": {
+    "reviewedAt": "2026-10-01",
+    "decision": "QUESTIONS_CONTENT_REVIEWED_LESSON_PUBLISHER_FUSION_BLOCKED",
+    "questionReviewStatus": "content-reviewed",
+    "lessonStatus": null,
+    "findings": [
+      "官方 curriculum locator 已明確指向 A-7-1，KG lineage 正確。",
+      "10 題中原第 8 題以『方程式』作核心辨識，實際屬 A-7-2 一元一次方程式的意義，為單元範圍漂移。",
+      "其餘 9 題答案、策略與五步解法均與 A-7-1 的代數符號、同類項、代入、分配律與情境列式一致。",
+      "lesson 本文具原創教學內容與三版本研究紀錄，但 unit spec 仍將三個 publisher full-chapter evidence 標記 pending。"
+    ],
+    "repairs": [
+      "將原第 8 題改為同類項分類與化簡理由題，移除 A-7-2 方程式範圍漂移。",
+      "完成 10 題第二輪數學內容複核後，將題目 reviewStatus 設為 content-reviewed。"
+    ],
+    "blockers": [
+      "三版本 full-chapter publisher evidence / rights 尚未完成；lesson 不提升為 content-reviewed，維持既有 draft 邊界。",
+      "UnitSpec qaStatus 仍為 untested；browser/runtime QA 另行驗證。"
+    ]
+  }
 }

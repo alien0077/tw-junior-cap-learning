@@ -2,32 +2,32 @@
   "id": "question-math-content-a-7-1-8",
   "subject": "math",
   "type": "single-choice",
-  "prompt": "下列哪一個是含有等號、可用來求未知數的方程式？",
+  "prompt": "將 3x＋2＋5x−7 化簡為 8x−5。下列哪一個說明正確？",
   "options": [
     {
       "id": "A",
-      "text": "4x＋1"
+      "text": "3x 與 5x 的字母部分和次方相同，可合併；2 與 −7 都是常數項，可合併"
     },
     {
       "id": "B",
-      "text": "4x＋1＝13"
+      "text": "3x 可以和 2 合併，因為它們都在加號旁邊"
     },
     {
       "id": "C",
-      "text": "4＋1＝5"
+      "text": "5x 可以和 −7 合併，因為 5−7 可以先計算"
     },
     {
       "id": "D",
-      "text": "x＞2"
+      "text": "所有四項都可以直接把係數相加，所以得到 3x"
     }
   ],
   "knowledgeIds": [
     "kg-math-content-a-7-1"
   ],
-  "difficulty": "easy",
+  "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "方程式是含有未知數且以等號連結兩個式子的敘述，4x＋1＝13 符合，選 B。"
+    "value": "A",
+    "explanation": "同類項必須有相同的字母部分與次方。3x 與 5x 可合併成 8x；2 與 −7 都不含字母，可合併成 −5，因此原式化簡為 8x−5，選 A。"
   },
   "provenance": {
     "origin": "original",
@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供代數符號能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的代數符號能力方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-a-7-1",
   "examPatternRefs": [
     {
@@ -74,12 +74,12 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "同時檢查是否有未知數與等號；只有數字等式不需解未知數。",
+  "solutionStrategy": "先依字母部分與次方把項分類，再分別合併變數項與常數項；不能只因數字相鄰就相加。",
   "solutionSteps": [
-    "查看每個選項是否含有字母未知數。",
-    "再檢查是否有等號連結兩邊。",
-    "B 同時具備 x 與等號。",
-    "它可透過運算求出 x。",
-    "選 B。"
+    "把原式分成 3x、2、5x、−7 四項。",
+    "比較字母部分與次方，3x 和 5x 都是一個 x 的一次項，因此是同類項。",
+    "合併變數項：3x＋5x＝8x。",
+    "合併常數項：2＋(−7)＝−5。",
+    "得到 8x−5，因此選 A。"
   ]
 }
