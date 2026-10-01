@@ -1,0 +1,44 @@
+name: Math scoped finalizer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/finalize_math_a72.mjs
+      - .github/workflows/math-finalize-batch.yml
+
+permissions:
+  contents: write
+
+env:
+  TZ: Asia/Taipei
+
+jobs:
+  finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Apply scoped A-7-2 repairs
+        run: node scripts/finalize_math_a72.mjs
+      - name: Validate simulation contracts
+        run: python3 scripts/validate_interactive_simulations.py
+      - name: Run runtime tests
+        run: node --test implementation/runtime/*.test.mjs
+      - name: Commit repaired files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lessons/math/lesson-math-content-a-7-2.json questions/math/question-math-content-a-7-2-*.json site/simulations.js scripts/simulation_contracts.py scripts/audit_math_coverage.mjs
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "fix(math): finalize A-7-2 content and interaction"
+          git pull --rebase origin main
+          git push origin HEAD:main
