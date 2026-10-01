@@ -1,0 +1,65 @@
+name: Math generic interaction finalizer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - scripts/finalize_math_generic_interactions.mjs
+      - .github/workflows/math-generic-finalize.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  TZ: Asia/Taipei
+
+jobs:
+  finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Convert remaining active generic math interactions
+        run: node scripts/finalize_math_generic_interactions.mjs
+      - name: Validate reasoning production renderer
+        run: |
+          node --input-type=module - <<'JS'
+          import assert from "node:assert/strict";
+          import { readFile } from "node:fs/promises";
+          const source = await readFile("site/simulations.js", "utf8");
+          assert.match(source, /if \(engine === "math-reasoning-lab"\)/);
+          assert.match(source, /data-reasoning-choice/);
+          assert.match(source, /data-reasoning-nav/);
+          assert.match(source, /sim-reasoning-feedback/);
+          assert.match(source, /role="status"/);
+          console.log("math-reasoning-lab renderer PASS");
+          JS
+      - name: Run exhaustive math audit and persist snapshot
+        id: audit
+        continue-on-error: true
+        run: node scripts/audit_math_coverage.mjs > /tmp/math-exhaustive-audit-current.json
+      - name: Save audit snapshot
+        run: cp /tmp/math-exhaustive-audit-current.json implementation/reports/math-exhaustive-audit-current.json
+      - name: Commit repairs and audit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lessons/math questions/math site/simulations.js scripts/audit_math_coverage.mjs implementation/reports/math-exhaustive-audit-current.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "fix(math): replace generic interactions with production labs"
+          git pull --rebase origin main
+          git push origin HEAD:main
+      - name: Enforce exhaustive audit
+        if: steps.audit.outcome != 'success'
+        run: |
+          echo "Math audit still has hard blockers; inspect implementation/reports/math-exhaustive-audit-current.json"
+          exit 1
