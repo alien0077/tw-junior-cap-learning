@@ -29,6 +29,6 @@ assert.equal(lesson.interactive.steps[0].answer, 'B', '柱長變化題的答案�
 assert.equal(lesson.interactive.steps[3].answer, 'B', '7-24-25遷移題答案需符合表面積280與體積168');
 assert.equal(lesson.simulation.prismModel.baseTriangle.hypotenuse, 17);
 assert.ok(lesson.fusionRecord.llmSynthesisNote.includes('多邊形面到曲面展開'));
-assert.equal(lesson.reviewStatus, 'draft', '自動化與版本研究草稿不得升級為內容審查通過');
+assert.equal(lesson.reviewStatus, 'content-reviewed', '本專案原創內容可完成內容審查；未取得的出版社完整正文仍須在 provenance/report 明確維持 pending');
 
-console.log('PASS S-9-13 visible lesson scope, worked calculations, misconception repair, transfer, and draft gate');
+console.log('PASS S-9-13 visible lesson scope, worked calculations, misconception repair, transfer, content review, and publisher evidence boundary');
