@@ -2,23 +2,23 @@
   "id": "question-science-content-ab-iv-2-9",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "冬天穿多層衣物能保暖，主要是因為衣物層間的空氣如何作用？",
+  "prompt": "某純物質的冷卻曲線先下降，接著在一段時間內溫度近似不變，之後又繼續下降。若平台期間液體與固體同時存在，最合理的判斷是什麼？",
   "options": [
     {
       "id": "A",
-      "text": "空氣是良好的熱導體，快速把熱送回身體"
+      "text": "平台期間正在凝固，物質向外釋放能量而溫度暫時近似不變"
     },
     {
       "id": "B",
-      "text": "空氣層導熱較差，並減少身體熱量向外傳出"
+      "text": "平台表示粒子停止運動，所以不再有任何能量交換"
     },
     {
       "id": "C",
-      "text": "空氣會在衣物內製造熱量"
+      "text": "平台表示物質已發生化學反應，生成另一種元素"
     },
     {
       "id": "D",
-      "text": "空氣使身體溫度必定升高到沸點"
+      "text": "只要溫度不變，就能斷定外界與樣品完全沒有能量傳遞"
     }
   ],
   "knowledgeIds": [
@@ -26,18 +26,18 @@
   ],
   "difficulty": "medium",
   "answer": {
-    "value": "B",
-    "explanation": "靜止空氣的導熱性較差，多層衣物困住空氣可減少傳導與對流造成的熱散失，選 B。"
+    "value": "A",
+    "explanation": "A。冷卻曲線的平台若同時有液、固兩態，表示正在凝固；此時樣品持續向外釋放相變能量，但平均動能與溫度可暫時近似不變。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的溫度、熱量、相變與生活應用能力方向；本題只作 pattern-only 改寫。",
-    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ab-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公開自然科試題／課程資料中的溫度、相變與曲線判讀能力方向；本題只採 pattern-only，自行重寫為冷卻曲線平台情境。",
+    "authoringNote": "本題依 Ab-Ⅳ-2 的溫度—物態—相變核心重新撰寫；題幹、選項、答案、解析與五步解法均為原創，未複製原題、圖表或答案。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-23",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-science-content-ab-iv-2",
   "examPatternRefs": [
     {
@@ -47,19 +47,19 @@
       "locator": "溫度、熱量、相變與生活情境判讀",
       "pattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
       "subject": "science",
-      "observedPattern": "取由溫度資料、能量傳遞與相變現象判讀物質狀態的能力方向。",
+      "observedPattern": "公開自然科評量常以資料或曲線要求判斷相變與能量流向；本題使用全新冷卻曲線語料。",
       "reuseDecision": "pattern-only",
       "status": "recorded",
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "把保暖解讀成減少熱流失，而不是衣物主動產熱。",
+  "solutionStrategy": "先由曲線方向判斷正在冷卻，再利用液、固共存判定凝固平台，最後區分溫度暫時不變與仍有能量傳遞。",
   "solutionSteps": [
-    "確認人體通常是較高溫的一側。",
-    "保暖的目標是減慢熱向外傳遞。",
-    "衣物困住的空氣導熱較差。",
-    "多層結構也降低空氣流動造成的對流。",
-    "所以選 B。"
+    "確認曲線整體向下降，表示樣品正在冷卻。",
+    "平台期間同時存在液態與固態，因此正在發生凝固。",
+    "凝固時樣品向外界釋放相變能量。",
+    "相變期間平均動能可暫時近似不變，因此溫度呈平台。",
+    "所以選 A。"
   ],
   "studyReferences": [
     "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
