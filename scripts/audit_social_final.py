@@ -17,9 +17,9 @@ for p in lessons:
  if len(d.get("interactive",{}).get("steps",[]))<3: errors.append([str(p.relative_to(R)),"interactive-steps<3"])
 for p in specs:
  d=yaml.safe_load(p.read_text()); u=d.get("unitImplementationSpec",{})
- if u.get("qaStatus")!="content-reviewed": errors.append([str(p.relative_to(R)),"qaStatus"])
- locator=json.dumps(u.get("sourceEvidence",u.get("sourceLocator",{})),ensure_ascii=False)
- if not locator or locator in ("{}","null","[]"): errors.append([str(p.relative_to(R)),"source-locator-missing"])
+ if u.get("status",{}).get("qaStatus")!="content-reviewed": errors.append([str(p.relative_to(R)),"qaStatus"])
+ refs=u.get("sourceRefs",[])
+ if not any(str(x.get("locator","")).strip() for x in refs if isinstance(x,dict)): errors.append([str(p.relative_to(R)),"source-locator-missing"])
 qby={}
 for p in (R/"questions/social").glob("*.json"):
  d=json.loads(p.read_text()); lid=d.get("lessonId",""); qby.setdefault(lid,[]).append((p,d))
