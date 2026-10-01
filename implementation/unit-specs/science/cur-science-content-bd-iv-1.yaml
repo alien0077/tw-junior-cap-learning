@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Bd-Ⅳ-1：太陽能經食物鏈流轉
-    curriculumIntent: Bd-Ⅳ-1：太陽能經食物鏈流轉
+    curriculumIntent: 以食物鏈／食物網與營養階層資料追蹤太陽能進入生態系後的單向流動，並區分能量散失與物質循環
     publisherEvidence:
       nani:
         status: pending
@@ -25,93 +25,95 @@ unitImplementationSpec:
         status: pending
         required: true
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+    currentEvidenceStatus: curriculum-and-kg-grounded; lesson-unit-specific; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Bd-Ⅳ-1：太陽能經食物鏈流轉」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 由食物鏈箭頭正確判斷有機物與能量由被食者傳向取食者，並辨認生產者、消費者與分解者
+  - 以營養階層能量資料說明可利用能量逐級減少，部分能量在各級代謝過程中以熱散失
+  - 區分能量單向流動與物質可循環，避免把能量說成會經分解者「循環回太陽」
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能讀懂食物鏈、食物網與簡單長條／金字塔資料
+  - 已理解光合作用固定太陽能及呼吸作用釋放能量的基本概念
   coreConcepts:
-  - Bd-Ⅳ-1：太陽能經食物鏈流轉
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 太陽能由生產者經光合作用轉成有機物中的化學能，再沿取食關係傳向各營養階層
+  - 每一營養階層的能量並非全部傳給下一級，因生命活動、未被取食部分與呼吸散熱等造成可轉移能量減少
+  - 碳、水與礦物質等物質可在生物與環境間循環，但能量需持續由外界輸入，不能與物質循環混為一談
   misconceptions:
-  - 把「Bd-Ⅳ-1：太陽能經食物鏈流轉」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 把食物鏈箭頭畫成捕食者指向獵物，或把箭頭當成「誰追誰」而非物質／能量傳遞方向
+  - 認為能量像物質一樣經分解者回到生產者或太陽形成循環
+  - 只用個體數量多寡直接代表營養階層能量大小，忽略體型、時間尺度與實際能量／生物量資料
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 evidence-lab 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 給草→昆蟲→鳥→鷹的食物鏈，先畫太陽能入口與能量箭頭'
+  - 'predict: 預測每級可供下一級使用的能量如何改變，先不顯示答案'
+  - 'manipulate: 調整生產者固定能量或某營養階層的傳遞比例，觀察能量帳本與金字塔更新'
+  - 'observe: 同步呈現各級輸入、呼吸散熱、未轉移部分與下一級可得能量'
+  - 'explain: 用帳本數據說明能量為何逐級減少，並與物質循環圖分開判讀'
+  - 'formalize: 建立生產者、消費者、分解者、營養階層與單向能量流概念'
+  - 'transfer: 以稻田、海洋或校園食物網分析物種移除與替代路徑'
+  - 'exit-ticket: 修正一張把能量畫成循環的錯誤生態圖並說明理由'
   visualizations:
-  - evidence-lab：以「Bd-Ⅳ-1：太陽能經食物鏈流轉」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 食物網箭頭圖：箭頭固定由食物／被食者指向取食者，並以文字註明「有機物與能量傳遞」
+  - 能量帳本／金字塔：每級顯示輸入、散熱、未轉移與傳至下一級的模型值，數據明示為教學模型
+  - 能量流與物質循環並排圖：能量箭頭終止於環境散熱，物質箭頭可經分解與環境回到生產者
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BD-IV-1-I01
     component: EvidenceLabBlock
-    purpose: 讓學生操作並看見「Bd-Ⅳ-1：太陽能經食物鏈流轉」中最容易被背誦取代的關係
+    purpose: 讓學生操作生產者輸入與營養階層傳遞比例，從食物網與能量帳本區分單向能量流和物質循環
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        producerEnergy: 10000
+        producerToPrimaryFraction: 0.1
+        primaryToSecondaryFraction: 0.1
+        secondaryToTertiaryFraction: 0.1
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測草→昆蟲→鳥→鷹各級可利用能量相對大小，不顯示正解
+    - 調整 producerEnergy 或單一階層傳遞比例，觀察帳本與金字塔同步改變
+    - 標記每級「傳到下一級」與「以熱／其他途徑未轉移」的能量項目
+    - 在食物網加入分解者後，判斷物質與能量箭頭哪些可以形成循環、哪些不能
+    - 用至少兩筆數據說明高營養階層可利用能量通常較少的原因
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 食物鏈箭頭方向不得因畫面布局反轉；所有箭頭都有來源與去向文字
+    - 帳本需維持每級能量守恆：傳下一級、散熱與未轉移部分不得超過輸入
+    - 不將固定的「10%」冒充自然界普遍定律；預設值只作教學模型並允許改變
+    - 個體數量與能量資料分欄呈現，避免暗示數量可以直接等同能量
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BD-IV-1-I01
-      trigger: 把「Bd-Ⅳ-1：太陽能經食物鏈流轉」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生把箭頭畫反、把能量畫成循環，或用個體數量直接取代能量資料
+      prompt: 箭頭表示的是「誰吃誰」還是「物質與能量從哪裡到哪裡」？哪一筆帳本資料顯示有能量以熱散失？分解者能讓物質回到環境，但能量是否回到太陽？
+      expectedEvidence: 正確指出箭頭方向、至少一項散熱／未轉移數據，並說明能量單向流而物質可循環
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對箭頭與能量帳本，再要求換成另一食物網判斷。
+      incorrect: 先提示「先找能量在哪個生物體內，再問誰取得它」與「熱散失箭頭最後去哪裡」，不直接給完整圖。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Bd-Ⅳ-1：太陽能經食物鏈流轉」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課只借用先預測、操作數值與資料修正模型的節奏；食物網與能量帳本皆為本課自編。
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Bd-Ⅳ-1：太陽能經食物鏈流轉」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課以草地／稻田／海洋食物網作原創遷移，不複製外部活動數據。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Bd-Ⅳ-1：太陽能經食物鏈流轉」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 各營養階層、輸入／散失／傳遞能量及箭頭方向皆有鍵盤操作與文字狀態。
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Bd-Ⅳ-1：太陽能經食物鏈流轉」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 預測、食物網、能量帳本、物質循環與回饋區域可導覽。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Bd-Ⅳ-1：太陽能經食物鏈流轉」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 食物網／能量帳本／理由短答
+    stemConstraint: 更換為稻田、海洋或校園食物網，至少提供兩個營養階層能量或生物量資料，不能只背生產者／消費者名稱
+    requiredResponse: 正確畫能量方向、引用至少兩筆階層資料，並說明能量流與物質循環的差異
+    scoring: 食物網與方向正確 1、能量資料推理正確 1、能量／物質差異說明 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 某圖畫成「太陽→草→兔→狐→分解者→草→太陽」並標示「能量循環」。請指出至少兩個錯誤並改寫：哪些箭頭可用來表示物質回到環境，哪些能量最後以什麼形式離開各營養階層？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 指出能量不會由分解者回到草或太陽形成封閉循環
+    - 說明分解者可使物質回到環境並再被生產者利用
+    - 指出各級呼吸等過程使部分能量以熱散失，生態系需持續有外部能量輸入
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Bd-Ⅳ-1：太陽能經食物鏈流轉」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用 80～120 字比較「能量流動」與「物質循環」，並用一條食物鏈作例子
+    constraint: 學生先寫；系統只提示箭頭方向、熱散失與分解者，不直接代寫完整答案
   mobileA11y:
     breakpoints:
     - 320
@@ -119,23 +121,22 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 食物網節點、能量數值、散失與循環箭頭皆有可讀文字狀態
+    reducedMotion: 停用動畫仍可用靜態食物網與數值帳本完成判讀
   testCases:
-  - 載入「Bd-Ⅳ-1：太陽能經食物鏈流轉」時不得先顯示正解；學生必須先提交對「Bd-Ⅳ-1：太陽能經食物鏈流轉」的預測，且預測會被保留供後續比較。
-  - 操作「evidence-lab：以「Bd-Ⅳ-1：太陽能經食物鏈流轉」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Bd-Ⅳ-1：太陽能經食物鏈流轉」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Bd-Ⅳ-1：太陽能經食物鏈流轉」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Bd-Ⅳ-1：太陽能經食物鏈流轉」的 CAP transfer：換一個情境但保留「Bd-Ⅳ-1：太陽能經食物鏈流轉」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，EvidenceLabBlock 仍須以「Bd-Ⅳ-1：太陽能經食物鏈流轉」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 未提交營養階層能量預測前不得顯示完整能量流解說。
+  - 調整 producerEnergy 或任一傳遞比例時，下一級能量、散失／未轉移與金字塔同步更新且帳本不超支。
+  - 預設 10% 僅標示為模型值，不得在文字中稱為所有生態系固定定律。
+  - 加入分解者後物質循環圖可閉合，但能量路徑不得回到生產者或太陽。
+  - 學生畫反箭頭或把個體數量直接當能量時命中迷思診斷。
+  - 320／375／768px 與鍵盤操作下，食物網、能量帳本與回饋不得裁切。
+  - fallback 至少保留一組食物網、四級能量表與能量／物質配對題，可完成預測—證據—解釋—transfer。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 互動實際操作營養階層能量與傳遞比例，不含 primary／secondary 假變項
+  - 至少診斷一次箭頭方向、能量循環或個體數／能量混淆
+  - CAP transfer、exit ticket、mobile、keyboard、screen reader、reduced-motion 與 fallback 可執行
+  - 內容與教學法無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
