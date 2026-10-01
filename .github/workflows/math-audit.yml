@@ -1,0 +1,29 @@
+name: Math exhaustive audit
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'lessons/math/**'
+      - 'questions/math/**'
+      - 'implementation/unit-specs/math/**'
+      - 'implementation/reports/math-*'
+      - 'implementation/runtime/**'
+      - 'site/simulations.js'
+      - 'scripts/audit_math_coverage.mjs'
+      - '.github/workflows/math-audit.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Audit all math lessons, questions, specs, reports, and simulations
+        run: node scripts/audit_math_coverage.mjs
