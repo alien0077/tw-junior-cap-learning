@@ -40,13 +40,19 @@ jobs:
           PY
       - name: Run runtime tests
         run: node --test implementation/runtime/*.test.mjs
-      - name: Run exhaustive math audit on repaired working tree
-        run: node scripts/audit_math_coverage.mjs
-      - name: Commit repaired files
+      - name: Run exhaustive math audit and persist snapshot
+        id: audit
+        continue-on-error: true
+        run: |
+          node scripts/audit_math_coverage.mjs > /tmp/math-exhaustive-audit-current.json
+      - name: Save audit snapshot
+        run: |
+          cp /tmp/math-exhaustive-audit-current.json implementation/reports/math-exhaustive-audit-current.json
+      - name: Commit repaired files and audit snapshot
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lessons/math/lesson-math-content-a-7-2.json questions/math/question-math-content-a-7-2-*.json site/simulations.js scripts/simulation_contracts.py scripts/audit_math_coverage.mjs
+          git add lessons/math/lesson-math-content-a-7-2.json questions/math/question-math-content-a-7-2-*.json site/simulations.js scripts/simulation_contracts.py scripts/audit_math_coverage.mjs implementation/reports/math-exhaustive-audit-current.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
@@ -54,3 +60,8 @@ jobs:
           git commit -m "fix(math): finalize A-7-2 content and interaction"
           git pull --rebase origin main
           git push origin HEAD:main
+      - name: Enforce exhaustive audit
+        if: steps.audit.outcome != 'success'
+        run: |
+          echo "Exhaustive math audit still has blockers; see implementation/reports/math-exhaustive-audit-current.json"
+          exit 1
