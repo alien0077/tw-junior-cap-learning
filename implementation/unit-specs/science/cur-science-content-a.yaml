@@ -27,45 +27,46 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「A：物質的組成與特性」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 以組成資訊與可重現性質共同辨認物質，不以顏色或外觀單獨下結論
+  - 在原子序、粒子模型、化學式與週期表之間轉譯，區分直接觀察與模型推論
+  - 控制溶劑體積、溫度與樣品質量等條件，比較溶解、導電或其他性質並說明證據限制
   prerequisites:
   - 能讀懂本單元使用的基本符號、圖表或短文本
   - 能依提示完成一次預測、操作、觀察、解釋循環
   coreConcepts:
-  - A：物質的組成與特性
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 物質的組成與性質必須以多項可重現證據交叉判讀
+  - 原子序決定元素身分；電子數改變可形成離子但不單獨改變元素種類
+  - 化學式下標表示單一粒子或最簡比例的組成，係數表示粒子數量
+  - 週期表提供有條件的性質趨勢線索，不能取代實際測量
   misconceptions:
-  - 把「A：物質的組成與特性」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 看到相同顏色或外觀就判定是同一物質
+  - 把電子數改變誤認為元素種類改變，或混淆化學式下標與係數
+  - 由單一導電、溶解或週期表位置直接推定物質全部性質
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 particle-model 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 三份外觀相似的未知固體，先判斷現有證據能否辨認物質'
+  - 'model-literacy: 分開記錄直接觀察、組成表徵與模型推論'
+  - 'predict: 先預測哪一項性質最能排除候選物，不先揭露答案'
+  - 'manipulate: 固定樣品質量、溶劑體積與溫度，一次開啟一項溶解或導電證據'
+  - 'observe: 同步更新候選物、粒子示意與證據表，保留被排除理由'
+  - 'explain: 以組成＋性質兩類證據說明目前能判定與不能判定的範圍'
+  - 'formalize: 連回原子序、化學式下標／係數與週期表的正式表示'
+  - 'transfer: 以陌生材料標示與測量資料重新辨認物質'
+  - 'exit-ticket: 寫出一項直接證據、一項推論與一項仍缺資料'
   visualizations:
-  - particle-model：以「A：物質的組成與特性」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 未知物質比較台：同步呈現樣品卡、粒子／化學式組成與性質證據表
+  - 開啟溶解或導電證據後，候選物清單與排除理由同步更新；不得用顏色單獨表示結果
+  - 每次操作保留控制條件、目前證據與文字替代，讓學生可回溯判斷
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-A-I01
     component: ParticleModelBlock
-    purpose: 讓學生操作並看見「A：物質的組成與特性」中最容易被背誦取代的關係
+    purpose: 讓學生一次只加入一項組成或性質證據，觀察候選物如何被排除，建立「外觀不足、證據交叉判讀」的物質辨認方法
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        evidenceStage: 0
+        sampleMass: 1
     studentActions:
     - 先提交預測，不顯示正解
     - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
@@ -78,9 +79,9 @@ unitImplementationSpec:
     - 窄螢幕不得裁切核心圖、題幹與回饋
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-A-I01
-      trigger: 把「A：物質的組成與特性」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 只憑三份樣品外觀相似就判定為同一物質，或在比較溶解性時同時改變樣品質量、溫度與溶劑量
+      prompt: 請指出目前真正可用的證據，並說明哪個控制條件必須固定後才能比較。
+      expectedEvidence: 能指出外觀證據不足，並至少固定樣品質量、溶劑體積或溫度中的必要條件
     feedback:
       correct: 指出學生使用的證據，並要求用新情境再驗證一次。
       incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
