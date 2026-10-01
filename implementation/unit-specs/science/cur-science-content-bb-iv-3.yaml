@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Bb-Ⅳ-3：比熱與溫度變化
-    curriculumIntent: Bb-Ⅳ-3：比熱與溫度變化
+    curriculumIntent: 以 Q＝mcΔT 與受熱資料比較比熱、質量、熱量和溫度變化，並說明模型適用限制
     publisherEvidence:
       nani:
         status: pending
@@ -25,93 +25,94 @@ unitImplementationSpec:
         status: pending
         required: true
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+    currentEvidenceStatus: curriculum-and-kg-grounded; lesson-unit-specific; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Bb-Ⅳ-3：比熱與溫度變化」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 說明比熱是單位質量物質升高單位溫度所需熱量的材料特性，不把它當成物體含有的總熱量
+  - 以 Q＝mcΔT 比較在 Q、m 或 c 固定時另一變因如何影響 ΔT，並用比例關係回查答案
+  - 由相同供熱條件下水與金屬、不同質量樣品的溫升資料推論比熱差異，並指出散熱、容器吸熱與相變限制
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 已理解熱量單位與 Q＝mcΔT 中 Q、m、c、ΔT 的基本意義
+  - 能閱讀溫度—時間表格或折線圖並進行比例比較
   coreConcepts:
-  - Bb-Ⅳ-3：比熱與溫度變化
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 比熱 c 描述材料單位質量升高單位溫度所需的熱量；在 Q 與 m 相同時，c 越大，理想 ΔT 越小
+  - 同一材料在 Q 固定時，質量越大，理想 ΔT 越小；不能只看最後溫度判斷比熱
+  - 實驗推論比熱時必須控制質量、輸入熱量、初始條件和量測時間，並處理散熱與容器吸熱
   misconceptions:
-  - 把「Bb-Ⅳ-3：比熱與溫度變化」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為升溫較快或最後溫度較高的材料比熱一定較大
+  - 把比熱當成樣品的總熱量，忽略比熱是材料性質而總能量還受質量與溫差影響
+  - 比較兩材料時同時改變質量或供熱時間，仍直接把溫升差歸因於比熱
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 evidence-lab 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 相同質量的水與金屬接受相同理想熱量，先預測哪一個溫升較大並說理由'
+  - 'predict: 固定 Q 與 m，先預測 c 加倍時 ΔT 如何改變'
+  - 'manipulate: 每次只改材料比熱、樣品質量或輸入熱量中的一項'
+  - 'observe: 同步更新 Q＝mcΔT 帳本、溫度—時間曲線與比例提示'
+  - 'explain: 用控制條件和至少兩筆數據說明比熱與溫升的反向關係'
+  - 'formalize: 建立 c＝Q/(mΔT) 的意義及 Q＝mcΔT 的適用條件'
+  - 'transfer: 以海陸受熱、熱水袋、鍋具材料或未知樣品資料判讀'
+  - 'exit-ticket: 由同熱量、同質量資料比較兩材料比熱並指出一項實驗限制'
   visualizations:
-  - evidence-lab：以「Bb-Ⅳ-3：比熱與溫度變化」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 變因鎖定表：Q、m、c、ΔT 四欄顯示目前固定與改變的量，避免同時改兩項仍做因果推論
+  - 雙材料溫度—時間曲線：共用座標尺度，標示相同供熱與質量條件
+  - 比例帳本：顯示 c 或 m 改變後 ΔT 的理想比例，不以觸感或顏色代替數據
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BB-IV-3-I01
     component: EvidenceLabBlock
-    purpose: 讓學生操作並看見「Bb-Ⅳ-3：比熱與溫度變化」中最容易被背誦取代的關係
+    purpose: 讓學生在固定其他條件下改變比熱、質量或輸入熱量，從 Q＝mcΔT 與溫升曲線建立可檢查的比熱模型
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        heatInputJ: 840
+        massG: 100
+        specificHeatJPerG_C: 4.2
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測同 Q、同 m 下把 c 改成一半時 ΔT 如何變化
+    - 鎖定兩個量，只改 heatInputJ、massG 或 specificHeatJPerG_C 其中一項
+    - 比較水樣與自編金屬樣的理想溫升，標記支持判斷的 Q、m、c、ΔT 數據
+    - 切換到實測模式後辨認容器吸熱或散熱造成的偏差，不把偏差直接歸因於比熱改變
+    - 用比例句「Q、m 固定時，c 越大 → ΔT 越小」完成解釋
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 每次只能指定一個主要比較變因；其他被鎖定的量需在畫面與文字摘要明示
+    - 任一變因改變後公式帳本、ΔT、曲線終點與可及性摘要同步更新
+    - 不把「導熱快」或「摸起來冷」當成比熱大小的直接視覺編碼
+    - 相變情境需阻止直接使用單一 Q＝mcΔT 解釋全部能量
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BB-IV-3-I01
-      trigger: 把「Bb-Ⅳ-3：比熱與溫度變化」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生以升溫較快判定比熱較大，或比較時忽略質量／輸入熱量不同
+      prompt: 你比較的兩組 Q 和 m 是否相同？在 Q、m 固定時，哪一個 c 對應較小的 ΔT？請引用數值。
+      expectedEvidence: 明確確認控制條件並引用 Q、m、c、ΔT，得出比熱較大時理想溫升較小
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對控制條件與比例，再要求把質量改變一次驗證模型。
+      incorrect: 先要求鎖定 Q、m 並比較 ΔT，不直接告知哪個材料比熱較大。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-3：比熱與溫度變化」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課只借用先預測、單變因操作和證據修正節奏；材料資料與公式帳本均為本課自編。
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-3：比熱與溫度變化」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課以水、金屬與質量變化作原創比較，不複製外部活動數據。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-3：比熱與溫度變化」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: Q、m、c、ΔT 的鎖定狀態、目前值與結果皆有鍵盤操作及文字公告。
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-3：比熱與溫度變化」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 預測、變因控制、曲線、公式帳本與回饋分區可導覽。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Bb-Ⅳ-3：比熱與溫度變化」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 比熱資料判讀／比例推理／理由短答
+    stemConstraint: 更換海陸、熱水袋、鍋具或未知樣品情境；必須提供可控制 Q、m、ΔT 的資料，不能只以生活印象猜比熱
+    requiredResponse: 指出被控制與被比較的變因，引用至少兩筆資料，再以 Q＝mcΔT 或比例關係判定
+    scoring: 控制變因正確 1、數據／公式推理正確 1、限制說明完整 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 兩個 100 g 樣品各吸收 840 J，樣品甲升高 2°C，樣品乙升高 4°C。哪個樣品比熱較大？請用 Q＝mcΔT 或比例關係說明；再寫一個實驗中會讓理想推論偏離的因素。
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 判定甲比熱較大，因在相同 Q、m 下其 ΔT 較小
+    - 能用 c＝Q/(mΔT) 或等價比例說明，而非只看材料名稱
+    - 指出散熱、容器吸熱、供熱不均或量測誤差之一
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Bb-Ⅳ-3：比熱與溫度變化」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用 80～120 字說明「為什麼海水和陸地接受相近能量時溫度變化可以不同」，並明確區分比熱、質量與散熱條件
+    constraint: 學生先寫；系統只提示 Q、m、c、ΔT 與控制條件，不直接代寫完整答案
   mobileA11y:
     breakpoints:
     - 320
@@ -119,23 +120,23 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: Q、m、c、ΔT、鎖定變因、曲線趨勢與限制皆有可讀文字狀態
+    reducedMotion: 停用動畫仍可用數值表與逐步曲線資料完成比較
   testCases:
-  - 載入「Bb-Ⅳ-3：比熱與溫度變化」時不得先顯示正解；學生必須先提交對「Bb-Ⅳ-3：比熱與溫度變化」的預測，且預測會被保留供後續比較。
-  - 操作「evidence-lab：以「Bb-Ⅳ-3：比熱與溫度變化」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Bb-Ⅳ-3：比熱與溫度變化」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Bb-Ⅳ-3：比熱與溫度變化」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Bb-Ⅳ-3：比熱與溫度變化」的 CAP transfer：換一個情境但保留「Bb-Ⅳ-3：比熱與溫度變化」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，EvidenceLabBlock 仍須以「Bb-Ⅳ-3：比熱與溫度變化」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 未提交 c 對 ΔT 的預測前不得顯示完整解說。
+  - 固定 Q、m 時 c 加倍，理想 ΔT 應減半；固定 Q、c 時 m 加倍亦應使 ΔT 減半。
+  - 改變主要比較變因時，其他鎖定量不得偷偷改變。
+  - 學生以升溫較快判定比熱較大時命中迷思診斷並要求檢查 Q、m。
+  - 實測模式須清楚區分模型預測與散熱／容器吸熱造成的差異。
+  - 相變情境不可繼續把所有 Q 解釋為 mcΔT。
+  - 320／375／768px 與鍵盤操作下，變因鎖定、公式、曲線與回饋不得裁切。
+  - fallback 至少保留三組 Q/m/c/ΔT 靜態資料，可完成預測—比較—解釋—transfer。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 互動實際操作 Q、m、c 並同步呈現 ΔT，不含 primary／secondary 假變項
+  - 至少診斷一次「升溫快＝比熱大」或忽略控制變因的迷思
+  - CAP transfer、exit ticket、mobile、keyboard、screen reader、reduced-motion 與 fallback 可執行
+  - 內容與教學法無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
