@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供數列項次、規律、通項、遞迴與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-3",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "把指定數值代入通項方程式，解出項次並對照選項。",
+  "solutionStrategy": "先觀察項與項之間的規律，區分位置 n 與項值 aₙ，再用前幾項驗證所找規則。",
   "solutionSteps": [
-    "建立 2n＋3＝19。",
-    "兩邊同減 3，得 2n＝16。",
-    "兩邊同除以 2，得 n＝8。",
-    "將 n＝8 對應到第 8 項。",
-    "選 C，代入 2×8＋3＝19。"
+    "整理題意：數列第 n 項為 aₙ＝2n＋3。哪一項等於 19？",
+    "令 2n＋3＝19，得 2n＝16、n＝8；所以應為第 8 項，選 C。",
+    "用前後項或通項回查，確認選項 C。"
   ]
 }
