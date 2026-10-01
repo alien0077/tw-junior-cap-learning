@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供等差級數求和、首末項、項數與情境累計能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等差級數方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-5",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "先用末項公式反推項數，最後加 1 是因為首項也算一項。",
+  "solutionStrategy": "先確認項數、首項與末項，使用 Sₙ=n(a₁+aₙ)/2；也可前後配對回查。",
   "solutionSteps": [
-    "找首項 4、末項 49、公差 5。",
-    "計算 49−4＝45。",
-    "用 45÷5＝9 得增加公差的次數。",
-    "加上首項本身，項數 n＝9＋1＝10。",
-    "選 C，列出第 10 項 4＋9×5＝49 驗證。"
+    "整理題意：等差級數 4＋9＋14＋……＋49 的項數是多少？",
+    "公差 5，項數 n＝(49−4)÷5＋1＝10，所以選 C。",
+    "用配對求和回查，確認選項 C。"
   ]
 }
