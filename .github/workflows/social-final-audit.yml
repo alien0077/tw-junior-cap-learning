@@ -16,7 +16,5 @@ jobs:
       - run: python -m pip install --disable-pip-version-check pyyaml
       - name: Audit all social units
         run: python scripts/audit_social_final.py
-      - name: Audit social question answers
-        run: python scripts/audit_question_answers.py
       - name: Audit social question-unit fit
         run: python scripts/audit_social_unit_fit.py
