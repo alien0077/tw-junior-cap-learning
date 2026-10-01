@@ -11,6 +11,7 @@ on:
       - 'site/**'
       - 'scripts/audit_math_coverage.mjs'
       - 'scripts/finalize_math_review_tail.mjs'
+      - 'scripts/activate_math_production_renderers.mjs'
       - 'scripts/test_math_all_browser.py'
       - 'scripts/mark_math_specs_qa_passed.mjs'
       - '.github/workflows/math-final-review.yml'
@@ -45,7 +46,9 @@ jobs:
           python3 -m pip install --disable-pip-version-check playwright
           python3 -m playwright install --with-deps chromium
       - name: Apply final math review repairs
-        run: node scripts/finalize_math_review_tail.mjs
+        run: |
+          node scripts/finalize_math_review_tail.mjs
+          node scripts/activate_math_production_renderers.mjs
       - name: Run A-7-2 equation-meaning regression
         run: npm run test:math:a7-2
       - name: Run S-9-1 similarity regressions
@@ -88,7 +91,8 @@ jobs:
             implementation/reports/math-spec-qa-current.json \
             implementation/reports/math-exhaustive-audit-current.json \
             implementation/runtime/math-a-7-2-scope-interaction.test.mjs \
-            scripts/audit_math_coverage.mjs
+            scripts/audit_math_coverage.mjs \
+            site/simulations.js
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
