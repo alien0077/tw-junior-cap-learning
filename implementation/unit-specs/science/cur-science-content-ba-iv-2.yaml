@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換
-    curriculumIntent: Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換
+    curriculumIntent: 用物質與能量路徑分辨光合作用、呼吸作用及觀測到的淨變化
     publisherEvidence:
       nani:
         status: pending
@@ -24,94 +24,89 @@ unitImplementationSpec:
       hanlin:
         status: pending
         required: true
-    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+    fusionRule: 只融合可核對概念與教學方向；未完成三版本章節融合前不得標成正式融合完成
+    currentEvidenceStatus: curriculum-and-kg-grounded; lesson-unit-specific; publisher-fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 以物質與能量箭頭比較光合作用與呼吸作用，說明光能儲存在有機物及有機物能量被細胞利用的方向
+  - 由氧氣、二氧化碳或澱粉資料判讀「淨變化」，不把淨值誤當成單一作用速率
+  - 設計有光／無光、葉片／無材料等對照，控制葉面積、溫度、時間與起始氣體條件
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 知道光合作用與呼吸作用的基本反應物／產物
+  - 能閱讀氣體濃度隨時間變化的簡單折線圖
   coreConcepts:
-  - Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 光合作用把光能轉成有機物中的化學能；呼吸作用釋出有機物中的能量供細胞利用
+  - 植物在有光時也會呼吸；觀察到的氣體變化通常是兩種作用疊加後的淨結果
+  - 單一氧氣或二氧化碳讀值不足以直接等同某一作用的絕對速率
   misconceptions:
-  - 把「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為植物白天只做光合作用、晚上才呼吸
+  - 看到氧氣增加就判定呼吸作用完全停止
+  - 把植物增重或單次氣體讀值直接當成光合作用速率，忽略水分、溫度與材料量
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 physical-simulation 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 比較照光葉片、遮光葉片與黑暗發芽種子的氣體資料'
+  - 'predict: 先預測各組氧氣與二氧化碳的淨變化，不揭露作用速率'
+  - 'manipulate: 固定葉面積、溫度、容器體積與時間，只切換光照或材料狀態'
+  - 'observe: 同步更新 O2、CO2 時間曲線與物質／能量箭頭'
+  - 'explain: 分開寫直接觀察、光合作用推論、呼吸作用推論與淨效果'
+  - 'formalize: 連結光能、有機物化學能及兩種作用的反應物／產物'
+  - 'transfer: 以溫室通風、光照與夜間氣體資料判讀兩作用的相對大小'
+  - 'exit-ticket: 說明為何照光葉片 O2 上升不能證明呼吸停止'
   visualizations:
-  - physical-simulation：以「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 三組氣體折線圖：照光葉片、遮光葉片、黑暗發芽種子，共用座標尺度與測量時間
+  - 物質／能量雙路徑：CO2、H2O、有機物、O2 與光能／化學能方向同步標示
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BA-IV-2-I01
     component: PhenomenonSimulationBlock
-    purpose: 讓學生操作並看見「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」中最容易被背誦取代的關係
+    purpose: 讓學生控制光照與材料條件，從 O2／CO2 時序資料分辨光合作用、呼吸作用與淨效果
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        material: leaf
+        lightLevel: bright
+        temperatureC: 25
+        durationMin: 20
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先提交三組氣體變化預測
+    - 固定材料量、溫度與時間，只切換光照或材料狀態
+    - 標記折線中可直接觀察的 O2／CO2 變化
+    - 將直接觀察與兩種作用的推論分欄記錄
+    - 用「淨變化＝兩種作用共同結果」說明資料限制
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 切換光照時 O2、CO2 曲線與能量箭頭同步更新，但不得顯示不存在的精確生理速率
+    - 照光葉片仍須保留呼吸作用路徑，不可把其隱藏成零
+    - 無材料對照須清楚標示以協助辨認容器／感測器背景變化
+    - 顏色必須搭配 O2、CO2 與作用名稱文字，不可只靠紅綠區分
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BA-IV-2-I01
-      trigger: 把「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生由照光時 O2 增加推論植物停止呼吸，或把淨氣體變化當單一作用速率
+      prompt: 這個讀值是兩種作用共同造成的淨結果嗎？哪一組對照能幫你分辨？
+      expectedEvidence: 指出照光時呼吸仍存在，並引用遮光或無材料對照及時間曲線
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對兩條反應路徑、淨值與對照，再要求用另一材料情境驗證。
+      incorrect: 先提示「照光是否會讓呼吸停止？」並要求比較遮光組，不直接代答。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
-  - refId: phet-activity
-    reuseDecision: inspiration-only
-    application: "本課「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 只借用先預測、操作、再以證據修正模型的節奏；本課氣體資料與代謝路徑均自編。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
-  - refId: w3c-landmarks
-    reuseDecision: inspiration-only
-    application: "本課「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 光照、材料與折線狀態皆提供鍵盤控制及文字摘要。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 實驗資料判讀／折線圖／理由短答
+    stemConstraint: 更換植物材料或環境，但必須保留光合作用與呼吸作用同時存在及淨值判讀
+    requiredResponse: 指出至少一筆氣體資料、一組對照及推論限制
+    scoring: 概念正確 1、資料與對照 1、限制 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 照光葉片容器中 O2 上升、CO2 下降，為什麼不能直接說葉片沒有呼吸作用？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 說明兩種作用可同時進行
+    - 說明讀值是淨變化而非單一作用速率
+    - 指出可加入遮光或無材料對照
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 以物質／能量箭頭與短文解釋一組植物氣體資料
+    constraint: 學生先寫；系統只給分層提示
   mobileA11y:
     breakpoints:
     - 320
@@ -119,28 +114,26 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 光照、材料、時間與兩條氣體曲線皆有可讀文字狀態
+    reducedMotion: 關閉動畫後仍可逐時間點閱讀資料
   testCases:
-  - 載入「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」時不得先顯示正解；學生必須先提交對「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的預測，且預測會被保留供後續比較。
-  - 操作「physical-simulation：以「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的 CAP transfer：換一個情境但保留「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，PhenomenonSimulationBlock 仍須以「Ba-Ⅳ-2：光合作用與呼吸作用的能量轉換」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 未提交預測前不得顯示完整作用判讀。
+  - 切換照光／遮光時兩條氣體曲線與文字摘要同步更新。
+  - 照光模式仍顯示呼吸作用存在，不得把呼吸設為零。
+  - 把 O2 增加當成呼吸停止時必須命中迷思診斷。
+  - 320／375／768px 與鍵盤操作下，曲線、控制項與文字摘要不得裁切。
+  - fallback 至少保留三組靜態資料表與可重試的淨變化判讀題。
   definitionOfDone:
-  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 課綱 ID、KG ID、標題與官方 locator 一致
+  - 互動能實際比較光照／遮光與材料狀態，而非 primary／secondary 假變項
+  - 淨值與單一作用速率迷思被實際診斷
+  - transfer、exit ticket、mobile、keyboard、screen reader 與 fallback 可執行
+  - 無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
     qaStatus: untested
   sourceRefs:
-  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
-    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 B、次主題 Ba；官方代碼 Ba-Ⅳ-2
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%BA%A6%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；主題 B、次主題 Ba；官方代碼 Ba-Ⅳ-2
     role: official-curriculum-source-of-truth
