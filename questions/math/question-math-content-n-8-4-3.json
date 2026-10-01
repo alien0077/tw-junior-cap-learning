@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供等差數列、公差、通項與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等差數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "保留相減順序『後項減前項』，負公差表示數列遞減。",
+  "solutionStrategy": "先找首項與公差，使用 aₙ=a₁+(n−1)d；代回相鄰項檢查公差一致。",
   "solutionSteps": [
-    "計算第二項減第一項 14−18。",
-    "得到 −4。",
-    "檢查 10−14＝−4。",
-    "確認每項向下減 4。",
-    "選 A，避免只取差的絕對值。"
+    "整理題意：等差數列 18、14、10、6、…… 的公差是多少？",
+    "14−18＝−4，且後續相鄰差也為 −4，因此選 A。",
+    "用相鄰項公差或通項回查，確認選項 A。"
   ]
 }
