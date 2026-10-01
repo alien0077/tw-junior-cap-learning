@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供指數律、同底數乘除、冪的乘方與積的乘方能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的指數律方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-7-7",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "確認除數不為 0，再用分子分母約去共同因子理解指數相減。",
+  "solutionStrategy": "先確認是否同底數以及乘、除、乘方情境，再套用正確指數律；用小指數展開回查。",
   "solutionSteps": [
-    "辨認分子分母底數都是 b。",
-    "套用同底數相除律 bᵐ÷bⁿ＝bᵐ⁻ⁿ。",
-    "計算 9−4＝5。",
-    "得到 b⁵。",
-    "選 B，將 b⁴ 個因子約去後剩 5 個 b。"
+    "整理題意：化簡 b⁹÷b⁴（b≠0）為何？",
+    "同底數相除時指數相減，b⁹÷b⁴＝b⁹⁻⁴＝b⁵，選 B。",
+    "用展開乘法回查，確認選項 B。"
   ]
 }
