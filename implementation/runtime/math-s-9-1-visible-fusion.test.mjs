@@ -6,7 +6,7 @@ const specPath = "implementation/unit-specs/math/cur-math-content-s-9-1.yaml";
 const spec = readFileSync(specPath, "utf8");
 
 assert.equal(lesson.id, "lesson-math-content-s-9-1");
-assert.equal(lesson.reviewStatus, "draft", "research, rights, and content-review gates remain open");
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review may pass while unavailable publisher full bodies remain explicitly pending");
 assert.equal(lesson.content.sections.length, 6, "the six already-authored lesson sections must be learner-visible");
 assert.deepEqual(
   lesson.content.sections,
@@ -57,4 +57,4 @@ for (const name of questionFiles) {
   assert.doesNotMatch(questionText, /三角形相似判定|影子測高|面積比平方/);
 }
 
-console.log("S-9-1 visible lesson, scope, ten answer keys, five-step solutions, item-level sources, interaction, and truthful spec: PASS");
+console.log("S-9-1 visible lesson, scope, ten answer keys, five-step solutions, item-level sources, interaction, content review, and truthful publisher boundary: PASS");
