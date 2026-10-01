@@ -7,140 +7,117 @@ unitImplementationSpec:
   subject: science
   socialDiscipline: null
   curriculumLevel: learning-content
-  gradeRange:
-  - '7'
-  - '8'
-  - '9'
+  gradeRange: ['7', '8', '9']
   fusedScope:
     officialCurriculum: Ba-Ⅳ-7：力學能、動能與位能互換
-    curriculumIntent: Ba-Ⅳ-7：力學能、動能與位能互換
+    curriculumIntent: 由高度、速度與摩擦條件追蹤動能、重力位能及力學能的互換
     publisherEvidence:
-      nani:
-        status: pending
-        required: true
-      kanghsuan:
-        status: pending
-        required: true
-      hanlin:
-        status: pending
-        required: true
-    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+      nani: {status: pending, required: true}
+      kanghsuan: {status: pending, required: true}
+      hanlin: {status: pending, required: true}
+    fusionRule: 未完成三版本章節融合前，只以官方課綱、KG 與可核對公開方向原創撰寫
+    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Ba-Ⅳ-7：力學能、動能與位能互換」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 由物體高度與速度判讀重力位能和動能的相對變化
+  - 在忽略摩擦的模型中說明動能與位能互換、力學能保持不變
+  - 加入摩擦後辨認力學能減少所對應的內能等其他能量增加，不說成總能量消失
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能區分速度、高度與質量等物理量
+  - 已理解能量守恆及摩擦可使機械能轉成內能
   coreConcepts:
-  - Ba-Ⅳ-7：力學能、動能與位能互換
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 動能與運動狀態有關，重力位能與相對高度及物體—地球系統有關
+  - 無摩擦模型中，下降時位能減少、動能增加；上升時相反，力學能維持
+  - 有摩擦時力學能可轉成內能等其他形式，因此力學能不一定守恆，但總能量仍守恆
   misconceptions:
-  - 把「Ba-Ⅳ-7：力學能、動能與位能互換」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為物體下降時位能消失而不是轉成其他能量
+  - 認為速度最大的位置必定也是位能最大的位置
+  - 把「力學能不守恆」誤寫成「總能量不守恆」
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 physical-simulation 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 小球由斜坡高處釋放，先預測頂端、中段與底端的速度及能量分配'
+  - 'predict: 在無摩擦與有摩擦兩種條件下先畫能量柱'
+  - 'manipulate: 固定質量與起點，只改變位置或摩擦大小'
+  - 'observe: 同步更新高度、速度、動能、位能、內能及力學能柱狀圖'
+  - 'explain: 比較無摩擦的動位能互換與有摩擦的力學能轉出路徑'
+  - 'transfer: 雲霄飛車、單擺與滑板坡道的能量判讀'
+  - 'exit-ticket: 說明有摩擦時為何力學能變少但總能量不消失'
   visualizations:
-  - physical-simulation：以「Ba-Ⅳ-7：力學能、動能與位能互換」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 軌道位置圖與速度箭頭同步顯示
+  - 動能、重力位能、力學能與內能柱狀圖；無摩擦時 KE+PE 固定，有摩擦時另列內能
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BA-IV-7-I01
     component: PhenomenonSimulationBlock
-    purpose: 讓學生操作並看見「Ba-Ⅳ-7：力學能、動能與位能互換」中最容易被背誦取代的關係
+    purpose: 讓學生移動物體位置並切換摩擦，直接比較動能、位能與力學能的互換及轉出
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        position: top
+        frictionLevel: none
+        massKg: 1
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測頂端、中段、底端的動能與位能相對大小
+    - 在無摩擦模式逐點移動位置，觀察速度與能量柱
+    - 只切換摩擦大小，重做相同位置比較
+    - 用能量柱說明力學能減少時哪一種其他能量增加
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 無摩擦模式中動能與位能可以互換，但 KE+PE 柱總和須保持一致
+    - 有摩擦模式不得把缺少的力學能刪除，必須另列內能或跨界能量
+    - 速度、高度與能量柱同步，不得只靠動畫快慢呈現
+    - 所有能量形式均有文字及數值／相對量標記，不只靠顏色
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BA-IV-7-I01
-      trigger: 把「Ba-Ⅳ-7：力學能、動能與位能互換」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生把位能或力學能減少說成能量消失，或認為速度最大處位能也最大
+      prompt: 這個位置的高度與速度各是多少？少掉的力學能在有摩擦模式下轉成哪種能量？
+      expectedEvidence: 能以高度、速度和能量柱指出動位能互換，並在有摩擦時補列內能
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對位置、速度與能量分配，再換到另一軌道情境。
+      incorrect: 先提示分別看高度、速度與內能柱，不直接給完整答案。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Ba-Ⅳ-7：力學能、動能與位能互換」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
-  - refId: phet-activity
-    reuseDecision: inspiration-only
-    application: "本課「Ba-Ⅳ-7：力學能、動能與位能互換」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 只借用預測—操作—能量圖對照的節奏；軌道與數據均為本課自編。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Ba-Ⅳ-7：力學能、動能與位能互換」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
-  - refId: w3c-landmarks
-    reuseDecision: inspiration-only
-    application: "本課「Ba-Ⅳ-7：力學能、動能與位能互換」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 位置、摩擦、速度與各能量柱提供鍵盤操作及文字摘要。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Ba-Ⅳ-7：力學能、動能與位能互換」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 能量圖／軌跡圖／理由短答
+    stemConstraint: 更換雲霄飛車、單擺或坡道，但需同時判讀高度、速度與摩擦條件
+    requiredResponse: 指出動能、位能、力學能與其他能量的變化
+    scoring: 動位能判讀 1、摩擦處理 1、守恆解釋 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 小車由相同高度滑下，粗糙軌道底端速度較小。能否說能量消失？請用力學能與內能說明。
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 指出粗糙軌道底端動能較小
+    - 指出一部分力學能轉成小車／軌道內能等形式
+    - 說明總能量仍遵守守恆
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Ba-Ⅳ-7：力學能、動能與位能互換」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用能量柱與短文比較無摩擦和有摩擦坡道
+    constraint: 學生先寫；系統只給分層提示
   mobileA11y:
-    breakpoints:
-    - 320
-    - 375
-    - 768
+    breakpoints: [320, 375, 768]
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 位置、高度、速度、摩擦及各能量值都有文字狀態
+    reducedMotion: 關閉動畫後仍可逐位置閱讀能量資料
   testCases:
-  - 載入「Ba-Ⅳ-7：力學能、動能與位能互換」時不得先顯示正解；學生必須先提交對「Ba-Ⅳ-7：力學能、動能與位能互換」的預測，且預測會被保留供後續比較。
-  - 操作「physical-simulation：以「Ba-Ⅳ-7：力學能、動能與位能互換」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Ba-Ⅳ-7：力學能、動能與位能互換」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Ba-Ⅳ-7：力學能、動能與位能互換」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Ba-Ⅳ-7：力學能、動能與位能互換」的 CAP transfer：換一個情境但保留「Ba-Ⅳ-7：力學能、動能與位能互換」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，PhenomenonSimulationBlock 仍須以「Ba-Ⅳ-7：力學能、動能與位能互換」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 無摩擦模式逐位置切換時 KE+PE 總和保持一致。
+  - 有摩擦模式中力學能減少必須伴隨內能等其他形式增加。
+  - 速度最大處不得同時錯誤顯示為最高重力位能。
+  - 把力學能減少說成總能量消失時必須命中迷思診斷。
+  - mobile、keyboard、screen reader 與 fallback 均可完成位置與能量比較。
   definitionOfDone:
-  - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 課綱 ID、KG ID、標題與官方 locator 一致
+  - 互動實際控制位置與摩擦，而非 primary／secondary 假變項
+  - 力學能與總能量守恆的差異被實際診斷
+  - transfer、exit ticket 與可及性流程可執行
+  - 無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
     qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
-    locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 B、次主題 Ba；官方代碼 Ba-Ⅳ-7
+    locator: 正文第 22～30 頁／PDF 第 26～34 頁；主題 B、次主題 Ba；官方代碼 Ba-Ⅳ-7
     role: official-curriculum-source-of-truth
