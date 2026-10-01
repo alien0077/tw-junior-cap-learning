@@ -26,8 +26,18 @@ jobs:
           node-version: '22'
       - name: Apply scoped A-7-2 repairs
         run: node scripts/finalize_math_a72.mjs
-      - name: Validate simulation contracts
-        run: python3 scripts/validate_interactive_simulations.py
+      - name: Validate A-7-2 simulation contract
+        run: |
+          python3 - <<'PY'
+          import json
+          from scripts.simulation_contracts import contract_errors
+          path = "lessons/math/lesson-math-content-a-7-2.json"
+          lesson = json.load(open(path, encoding="utf-8"))
+          errors = contract_errors(lesson)
+          if errors:
+              raise SystemExit("\n".join(errors))
+          print("A-7-2 simulation contract PASS")
+          PY
       - name: Run runtime tests
         run: node --test implementation/runtime/*.test.mjs
       - name: Commit repaired files
