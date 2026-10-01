@@ -6,9 +6,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 
-# These patterns are retained only as descriptive coverage counters. Social-studies
-# questions legitimately combine history, geography, civics and economics, so a
-# keyword appearing outside a title token is not by itself a unit mismatch.
+# Descriptive coverage counters only. Social-studies items legitimately combine
+# historical, geographic, civic and economic evidence, so keywords are not a
+# sufficient reason to call an item off-unit.
 RULES = {
     "historical-timeline": r"史料|年代分別|建立時間線",
     "civ-budget": r"預算|居民意見|決策方式",
@@ -30,8 +30,12 @@ def main():
             x = json.loads(p.read_text(encoding="utf-8"))
         except Exception:
             continue
-        if x.get("id"):
-            lessons[x["id"]] = x.get("title", "")
+        lesson_id = str(x.get("id", "")).strip()
+        if lesson_id:
+            lessons[lesson_id] = {
+                "title": x.get("title", ""),
+                "knowledgeIds": {str(v) for v in x.get("knowledgeIds", []) if str(v).strip()},
+            }
 
     mismatches = []
     counts = {k: 0 for k in RULES}
@@ -48,23 +52,27 @@ def main():
         rel = str(p.relative_to(ROOT))
         lesson_id = str(x.get("lessonId", "")).strip()
         expected = expected_lesson_id(p)
+        lesson = lessons.get(lesson_id)
 
         if x.get("subject") != "social":
             mismatches.append({"path": rel, "kind": "subject", "actual": x.get("subject")})
-        if not lesson_id or lesson_id not in lessons:
+        if not lesson:
             mismatches.append({"path": rel, "kind": "lesson-missing", "lessonId": lesson_id})
         if expected and lesson_id != expected:
             mismatches.append({"path": rel, "kind": "lesson-link", "expected": expected, "actual": lesson_id})
 
-        if lesson_id:
-            expected_kg = "kg-" + lesson_id.removeprefix("lesson-")
-            kg_ids = [str(v) for v in x.get("knowledgeIds", [])]
-            if expected_kg not in kg_ids:
+        # Legacy alias lessons may intentionally bridge to a formal curriculum KG.
+        # Validate the question against the KG mapping declared by its linked lesson.
+        if lesson:
+            q_kgs = {str(v) for v in x.get("knowledgeIds", []) if str(v).strip()}
+            lesson_kgs = lesson["knowledgeIds"]
+            if not q_kgs or not lesson_kgs or q_kgs.isdisjoint(lesson_kgs):
                 mismatches.append({
                     "path": rel,
                     "kind": "knowledge-link",
-                    "expected": expected_kg,
-                    "actual": kg_ids,
+                    "lessonId": lesson_id,
+                    "lessonKnowledgeIds": sorted(lesson_kgs),
+                    "questionKnowledgeIds": sorted(q_kgs),
                 })
 
         locator = str(x.get("provenance", {}).get("sourceLocator", "")).strip()
@@ -78,9 +86,9 @@ def main():
         "mismatchCount": len(mismatches),
         "mismatches": mismatches,
         "note": (
-            "Unit fit is gated by structural lesson/knowledge links and provenance locator. "
-            "Cross-domain lexical archetypes are informational only because valid social-studies "
-            "items routinely combine economic, historical, geographic and civic evidence."
+            "Unit fit is gated by file/lesson linkage, the lesson-declared KG mapping and provenance locator. "
+            "Cross-domain lexical archetypes are informational only. Legacy alias lessons may intentionally "
+            "bridge to formal curriculum KGs."
         ),
     }
     (ROOT / "implementation" / "reports" / "social-question-unit-fit.json").write_text(
