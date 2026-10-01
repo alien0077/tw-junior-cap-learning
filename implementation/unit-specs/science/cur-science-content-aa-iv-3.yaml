@@ -27,63 +27,60 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Aa-Ⅳ-3：元素與化合物」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 由粒子種類與固定組成區分元素、化合物與混合物
+  - 說明化合物形成後具有不同於組成元素的整體性質
+  - 依分離方式與組成是否固定判斷混合物與純物質
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能辨認粒子模型中的不同原子種類
+  - 能區分物理分離與形成新物質的化學變化
   coreConcepts:
-  - Aa-Ⅳ-3：元素與化合物
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 元素由同一種元素的原子構成；化合物由不同元素依固定比例化合
+  - 混合物含兩種以上物質且組成比例可變，通常可用物理性質分離
+  - 化合物的性質不能由組成元素的單獨性質直接相加推得
   misconceptions:
-  - 把「Aa-Ⅳ-3：元素與化合物」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為只要含兩種元素就是混合物
+  - 認為化合物一定保留各元素原本的顏色、導電或反應性
+  - 把均勻外觀當成單一純物質的充分證據
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 evidence-lab 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 比較鐵與硫的混合物、反應後產物與單一元素粒子圖'
+  - 'predict: 先依粒子模型分類，不先看名稱'
+  - 'manipulate: 改變粒子是否固定成組、種類數與組成比例'
+  - 'observe: 同步更新分類樹、可否物理分離與比例是否固定'
+  - 'explain: 用粒子證據說明元素／化合物／混合物分類'
+  - 'transfer: 判讀陌生粒子圖與實驗分離資料'
+  - 'exit-ticket: 寫出分類與兩項支持證據'
   visualizations:
-  - evidence-lab：以「Aa-Ⅳ-3：元素與化合物」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 粒子分類工作台：同種原子、固定異種組合、可變混合三種模型並列
+  - 證據卡：組成是否固定、能否物理分離、是否形成新性質
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-AA-IV-3-I01
     component: EvidenceLabBlock
-    purpose: 讓學生操作並看見「Aa-Ⅳ-3：元素與化合物」中最容易被背誦取代的關係
+    purpose: 讓學生拖入不同粒子並改變比例，依固定組成與可分離性判斷元素、化合物或混合物
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        particleTypes: 1
+        bondedPattern: false
+        ratioLocked: false
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先依粒子圖預測分類
+    - 改變粒子種類、是否固定成組及比例是否可變
+    - 選取支持分類的組成與分離證據
+    - 用一句話說明為何均勻外觀仍不足以分類
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 改變固定成組或比例後，分類提示與粒子圖同步更新
+    - 不以顏色單獨區分元素，粒子必須有 A、B 等文字標記
+    - 顯示「模型證據」而非宣稱為真實粒子照片
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-AA-IV-3-I01
-      trigger: 把「Aa-Ⅳ-3：元素與化合物」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 看到兩種元素就一律選混合物，或以均勻外觀判定純物質
+      prompt: 請檢查不同原子是否以固定比例形成同一種粒子，以及組成比例能否任意改變。
+      expectedEvidence: 能以固定組成／可變比例而非外觀完成分類
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出固定組成或可分離性證據，再要求以新粒子圖驗證。
+      incorrect: 先提示觀察「是否固定成組」與「比例能否改變」，再讓學生重試。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
