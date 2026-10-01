@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Bb-Ⅳ-1：熱由高溫處傳向低溫處
-    curriculumIntent: Bb-Ⅳ-1：熱由高溫處傳向低溫處
+    curriculumIntent: 由溫差、接觸與時間資料判斷熱傳遞方向、熱平衡及隔熱對傳熱速率的影響
     publisherEvidence:
       nani:
         status: pending
@@ -25,93 +25,94 @@ unitImplementationSpec:
         status: pending
         required: true
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+    currentEvidenceStatus: curriculum-and-kg-grounded; lesson-unit-specific; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 由兩物體初始溫度判斷自發熱傳遞方向，並以溫度隨時間接近解釋熱平衡
+  - 區分溫度、熱量與傳熱速率，不把「較熱」直接等同「含有較多熱量」
+  - 比較相同初溫條件下不同材料或隔熱設計的降溫曲線，說明隔熱改變速率而不反轉熱流方向
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能比較攝氏溫度大小並閱讀簡單溫度—時間表格或折線圖
+  - 能分辨「物體目前的溫度」與「能量正在由哪裡傳到哪裡」是不同問題
   coreConcepts:
-  - Bb-Ⅳ-1：熱由高溫處傳向低溫處
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 有溫差且可交換能量時，淨熱傳遞自高溫處朝低溫處進行，直到接近熱平衡
+  - 熱是因溫差造成的能量傳遞，不是物體內儲存的一種「熱物質」；冷也不是會流動的物質
+  - 隔熱材料、接觸方式與傳導／對流／輻射條件可改變傳熱速率，但不會讓自發熱流由低溫流向高溫
   misconceptions:
-  - 把「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 說冰塊把「冷」傳給飲料，而不是飲料把能量傳給較低溫的冰塊
+  - 認為金屬摸起來較冷代表金屬本身溫度一定較低，忽略導熱速率差異
+  - 認為保溫杯會製造熱、完全阻止熱傳遞，或能把熱流方向反轉
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 evidence-lab 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 將 80°C 熱水與 20°C 金屬塊置於可交換能量的系統，先預測兩者溫度變化方向'
+  - 'predict: 學生先畫熱流箭頭並預測接觸一段時間後兩物體溫度如何改變'
+  - 'manipulate: 固定質量與環境，只改變兩物體初溫差或隔熱程度'
+  - 'observe: 同步更新兩條溫度—時間曲線、瞬時溫差與熱流箭頭'
+  - 'explain: 用「高溫端下降、低溫端上升、溫差縮小」三項證據說明熱流方向'
+  - 'formalize: 定義熱傳遞、熱平衡及傳熱速率，分開處理溫度與能量傳遞概念'
+  - 'transfer: 以冰飲、金屬湯匙、保溫杯與室內冷氣情境判斷高低溫端及主要傳熱途徑'
+  - 'exit-ticket: 由一組溫度時間資料畫熱流箭頭，並說明隔熱只改變到達平衡的快慢'
   visualizations:
-  - evidence-lab：以「Bb-Ⅳ-1：熱由高溫處傳向低溫處」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 雙物體溫度—時間圖：物體 A、B 共用時間軸並顯示當前溫差，不預設一定相同質量或熱容量時會在算術平均溫度平衡
+  - 熱流箭頭：箭頭方向只由當下高低溫決定，溫差趨近零時淨熱流提示同步減弱
+  - 隔熱比較卡：同初溫、同環境下比較有／無隔熱的降溫速率，避免把不同初溫混入比較
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BB-IV-1-I01
     component: EvidenceLabBlock
-    purpose: 讓學生操作並看見「Bb-Ⅳ-1：熱由高溫處傳向低溫處」中最容易被背誦取代的關係
+    purpose: 讓學生操作兩物體初溫與隔熱程度，從雙溫度曲線和熱流箭頭建立「熱由高溫處傳向低溫處」及熱平衡模型
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        objectATempC: 80
+        objectBTempC: 20
+        insulationLevel: none
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先提交 A、B 間熱流方向與兩者溫度變化預測，不先顯示正解
+    - 以鍵盤可操作控制分別改變 A、B 初溫，觀察熱流箭頭是否隨高低溫關係改變
+    - 固定兩物體初溫後只改隔熱程度，比較達到接近平衡所需時間
+    - 標記兩條曲線中支持熱流方向與熱平衡的資料點
+    - 用「哪一端較高溫 → 溫度如何變 → 溫差如何改變」完成解釋
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 任一初溫變更後，熱流箭頭、兩條曲線起點、溫差文字與可及性摘要同步更新
+    - 隔熱程度只改變傳熱速率，不得在沒有外加功的情況下反轉淨熱流方向
+    - 若兩物體初溫相同，顯示「無淨熱傳遞」而不是任意指定箭頭
+    - 顏色不可單獨承擔 A／B 身分，曲線、端點與箭頭都有文字或符號標籤
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BB-IV-1-I01
-      trigger: 把「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生畫出低溫端往高溫端的自發熱流、說「冷流入熱物體」，或認為隔熱會反轉方向
+      prompt: 先比較此刻 A、B 哪一個溫度較高，再看下一時點兩者溫差是變大還是變小；哪個箭頭方向同時符合這兩項證據？
+      expectedEvidence: 指出高溫端溫度下降、低溫端溫度上升且溫差縮小，並說明隔熱只改變速率
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對高低溫端、曲線變化與箭頭方向，再要求把初溫對調驗證規則仍成立。
+      incorrect: 先提示「熱流方向看溫差，不看物體名稱」並要求比較下一時點資料，不直接顯示箭頭答案。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課只採用先預測、再操作、最後用資料修正模型的節奏；雙溫度資料、熱流箭頭與情境均為本課自編。
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課以初溫對調與隔熱比較作遷移，不複製外部模擬資料或活動腳本。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: A／B 初溫、隔熱程度、當前溫差與熱流方向皆提供鍵盤控制及文字狀態。
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 預測、控制、雙曲線證據與回饋分區可導覽，窄螢幕仍保留題目與狀態摘要。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 溫度—時間資料判讀／熱流箭頭／理由短答
+    stemConstraint: 更換成冰飲、湯匙或保溫容器情境，必須提供至少兩個位置或物體的溫度資料與時間變化，不能只問背誦定義
+    requiredResponse: 指出高低溫端、畫出淨熱流方向，並引用至少一筆溫度隨時間變化證據；若涉及隔熱，再說明其改變的是速率而非方向
+    scoring: 熱流方向正確 1、引用溫度資料 1、熱平衡或隔熱限制說明完整 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 杯中飲料為 10°C、室內空氣為 28°C。十分鐘後飲料升到 15°C。請畫出主要淨熱流方向，並說明若套上隔熱杯套，方向與升溫速率各會如何改變。
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 熱流方向由 28°C 的較高溫環境指向 10°C 的飲料
+    - 以飲料由 10°C 升至 15°C 作為能量流入飲料的資料證據
+    - 說明隔熱會降低傳熱速率，但在環境仍較高溫時不會反轉熱流方向
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用熱流箭頭與 80～120 字解釋「冰塊放入飲料後為什麼是飲料把能量傳給冰塊，而不是冰把冷傳給飲料」
+    constraint: 學生先寫；系統只提示高低溫、溫度變化與熱流方向三層，不直接代寫完整答案
   mobileA11y:
     breakpoints:
     - 320
@@ -119,28 +120,27 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: A／B 初溫、隔熱程度、當前溫差、熱流方向與曲線趨勢皆有可讀文字狀態
+    reducedMotion: 停用動畫仍可逐時間點查看 A／B 溫度和熱流方向
   testCases:
-  - 載入「Bb-Ⅳ-1：熱由高溫處傳向低溫處」時不得先顯示正解；學生必須先提交對「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的預測，且預測會被保留供後續比較。
-  - 操作「evidence-lab：以「Bb-Ⅳ-1：熱由高溫處傳向低溫處」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的 CAP transfer：換一個情境但保留「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，EvidenceLabBlock 仍須以「Bb-Ⅳ-1：熱由高溫處傳向低溫處」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 載入時未提交預測前，不顯示完整熱流方向解說；預測需保留供操作後比較。
+  - 將 objectATempC 設為 80、objectBTempC 設為 20 時，箭頭由 A 指向 B；對調初溫後箭頭同步反轉。
+  - 將 A、B 初溫設成相同時，顯示無淨熱傳遞，不能保留上一狀態箭頭。
+  - 固定初溫只增加 insulationLevel 時，到達接近平衡的速度變慢，但熱流方向規則不變。
+  - 學生選擇「冷由低溫端流向高溫端」時命中迷思診斷，先要求比較高低溫與下一時點資料。
+  - 在 320／375／768px 與鍵盤操作下，兩條曲線、控制項、箭頭、文字摘要與回饋不得裁切。
+  - fallback 至少保留三組靜態溫度表、可選熱流箭頭與隔熱比較題，圖形不可用時仍能完成預測—證據—解釋—transfer。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 互動可實際改變兩物體初溫及隔熱程度，不含 primary／secondary 假變項
+  - 冷流動、隔熱反轉方向與溫度／熱量混淆至少一項能被誘發、診斷並回饋
+  - CAP transfer、exit ticket、mobile、keyboard、screen reader、reduced-motion 與 fallback 可執行
+  - 內容與教學法無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
     qaStatus: untested
   sourceRefs:
-  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 B、次主題 Bb；官方代碼 Bb-Ⅳ-1
     role: official-curriculum-source-of-truth
