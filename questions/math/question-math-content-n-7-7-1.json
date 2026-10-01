@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供指數律、同底數乘除、冪的乘方與積的乘方能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的指數律方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-7-7",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "確認底數相同後只處理指數相加，不把底數相乘或指數相乘。",
+  "solutionStrategy": "先確認是否同底數以及乘、除、乘方情境，再套用正確指數律；用小指數展開回查。",
   "solutionSteps": [
-    "辨認兩因式底數都是 a。",
-    "套用同底數相乘律 aᵐ×aⁿ＝aᵐ⁺ⁿ。",
-    "把指數 3 與 5 相加。",
-    "得到 a⁸。",
-    "選 A，展開後共有 8 個 a 相乘。"
+    "整理題意：化簡 a³×a⁵（a≠0）為何？",
+    "同底數相乘時指數相加，a³×a⁵＝a³⁺⁵＝a⁸，所以選 A。",
+    "用展開乘法回查，確認選項 A。"
   ]
 }
