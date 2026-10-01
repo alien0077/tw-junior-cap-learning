@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供固定公比、指定項、有限和與倍增情境能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等比數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-6",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "先把已知項寫成通項，再解一次方程式反推首項。",
+  "solutionStrategy": "先確認相鄰非零項的公比，使用 aₙ=a₁rⁿ⁻¹；以連續兩項相除回查公比。",
   "solutionSteps": [
-    "第三項公式為 a₃＝a×2³⁻¹。",
-    "化簡為 a₃＝4a。",
-    "依題意列式 4a＝20。",
-    "兩邊除以 4，得 a＝5。",
-    "選 B，5、10、20 確實符合公比 2。"
+    "整理題意：等比數列首項為 a、公比為 2，且第三項為 20，則 a 為何？",
+    "第三項 a×2²＝4a＝20，所以 a＝5，選 B。",
+    "用相鄰項公比回查，確認選項 B。"
   ]
 }
