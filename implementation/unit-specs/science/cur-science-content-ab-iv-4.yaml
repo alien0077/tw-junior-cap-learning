@@ -27,90 +27,89 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Ab-Ⅳ-4：純物質與混合物分類」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 依「是否只含一種物質且組成固定」區分純物質與混合物，不以外觀均勻與否作唯一判準
+  - 從粒子模型、沸點／熔點範圍或分離結果等資料判斷樣品分類
+  - 說明混合物各成分保有部分可利用的物理性質，因此可選擇合適物理方法分離
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能區分元素、化合物與混合物的基本粒子表示
+  - 能閱讀簡單物性資料表並理解「固定值」與「範圍」的差別
   coreConcepts:
-  - Ab-Ⅳ-4：純物質與混合物分類
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 純物質由一種物質組成，在指定條件下具有固定組成與特徵性質；元素與化合物都可能是純物質
+  - 混合物由兩種以上物質組成，比例可變；即使外觀均勻仍可能是混合物
+  - 分離混合物利用成分間沸點、溶解度、粒徑、磁性等物理性質差異，不要求生成新物質
   misconceptions:
-  - 把「Ab-Ⅳ-4：純物質與混合物分類」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為透明、均勻或看不到成分就一定是純物質
+  - 認為化合物因含兩種以上元素所以一定是混合物
+  - 認為分離混合物一定需要化學反應，或任何過濾都能分離溶液中的溶質
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 particle-model 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 比較蒸餾水、食鹽水與外觀均勻的未知液體，先判斷哪些證據足以分類'
+  - 'predict: 先依粒子圖／組成資料分類純物質或混合物，不揭露答案'
+  - 'manipulate: 改變成分數與比例，或選擇過濾、蒸餾、磁選等分離方法'
+  - 'observe: 同步更新粒子模型、組成比例、物性資料與分離後結果'
+  - 'explain: 用「一種物質／多種物質、組成是否固定、可利用的物性差異」說明分類'
+  - 'contrast: 比較化合物的固定組成與混合物的可變比例'
+  - 'transfer: 以空氣、合金、飲料或未知樣品資料重新分類並選分離方法'
+  - 'exit-ticket: 指出一個均勻混合物並說明為何外觀不能證明純度'
   visualizations:
-  - particle-model：以「Ab-Ⅳ-4：純物質與混合物分類」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 組成工作台：顯示成分種類、比例與對應粒子模型，比例改變時分類證據同步更新
+  - 分離方法卡：以沸點差、粒徑差、磁性或溶解度差連結到可行方法及限制
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-AB-IV-4-I01
     component: ParticleModelBlock
-    purpose: 讓學生操作並看見「Ab-Ⅳ-4：純物質與混合物分類」中最容易被背誦取代的關係
+    purpose: 讓學生改變樣品成分數與比例，並依物性差異選擇合理的物理分離方法
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        componentCount: 1
+        componentARatio: 100
+        separationMethod: none
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先依粒子模型與組成資料預測純物質或混合物
+    - 將第二成分加入並改變比例，觀察是否仍屬同一分類
+    - 依題目提供的沸點、粒徑、磁性或溶解度資料選分離方法
+    - 說明為何均勻外觀不能單獨證明純物質
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 成分種類與比例必須以文字／數值標示，顏色不能是唯一分類線索
+    - 純物質與混合物分類依組成資料，不得依粒子是否畫得整齊決定
+    - 分離結果只能根據題目提供的物性差異計算／顯示，不可假設不存在的性質
+    - 過濾不可被呈現成能直接分離均勻溶液中的已溶解溶質
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-AB-IV-4-I01
-      trigger: 把「Ab-Ⅳ-4：純物質與混合物分類」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 以透明／均勻外觀判定純物質，或把化合物因含多種元素而判成混合物
+      prompt: 請改看「樣品含幾種物質、組成比例是否固定」，並指出元素種類數與物質種類數不是同一件事。
+      expectedEvidence: 能以物質種類與固定／可變組成完成分類，而非以外觀或元素種類數判斷
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出組成證據，再要求選一種可利用的物性差異設計分離。
+      incorrect: 先提示比較「一種化合物」與「兩種物質混在一起」的差別，再讓學生重試。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-4：純物質與混合物分類」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "本課採先分類、改組成、再用物性證據選分離方法的流程；資料與視覺均為本專案自製。"
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-4：純物質與混合物分類」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "只借用預測—操作—解釋結構，不複製外部模擬內容。"
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-4：純物質與混合物分類」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "成分數、比例、分類與分離結果均提供文字狀態，不依賴顏色。"
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-4：純物質與混合物分類」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "組成、分類、分離方法與回饋區域可定位。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Ab-Ⅳ-4：純物質與混合物分類」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 分類／物性資料判讀／分離方法應用
+    stemConstraint: 提供陌生樣品的組成與物性資料，要求分類並選擇能利用已知物性差異的分離方法
+    requiredResponse: 選答後指出組成證據及分離方法利用的物性差異
+    scoring: 分類正確 1、物性證據正確 1、分離方法與理由匹配 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 食鹽水看起來均勻透明，為什麼仍是混合物？若要從食鹽水取得水，應利用哪一類物性差異？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 指出食鹽水含水與食鹽兩種物質且比例可變
+    - 不以透明／均勻作純物質判準
+    - 能連結蒸餾與揮發／沸點差異，而不是用普通過濾分離已溶解食鹽
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Ab-Ⅳ-4：純物質與混合物分類」的證據、因果或觀察說給同學聽
+    task: 用 80～120 字為一個陌生樣品提出分類與分離方案，至少引用兩項資料證據。
     constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
   mobileA11y:
     breakpoints:
@@ -119,21 +118,21 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 成分數、比例、物性與分離選擇都有名稱、目前值與結果摘要
+    reducedMotion: 不依賴動畫；組成與分離前後可以靜態表格比較
   testCases:
-  - 載入「Ab-Ⅳ-4：純物質與混合物分類」時不得先顯示正解；學生必須先提交對「Ab-Ⅳ-4：純物質與混合物分類」的預測，且預測會被保留供後續比較。
-  - 操作「particle-model：以「Ab-Ⅳ-4：純物質與混合物分類」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Ab-Ⅳ-4：純物質與混合物分類」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Ab-Ⅳ-4：純物質與混合物分類」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Ab-Ⅳ-4：純物質與混合物分類」的 CAP transfer：換一個情境但保留「Ab-Ⅳ-4：純物質與混合物分類」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，ParticleModelBlock 仍須以「Ab-Ⅳ-4：純物質與混合物分類」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 載入時先要求依組成資料分類，不得先顯示答案。
+  - 從一種物質加入第二種物質後，系統依物質種類與組成資料更新分類，不得以畫面是否均勻作判準。
+  - 選過濾處理食鹽水時必須提示已溶解溶質會通過一般濾紙，不能把它顯示成成功分離。
+  - 化合物案例不得因含兩種元素自動標成混合物。
+  - 320px、375px、768px 與鍵盤操作下，組成比例、物性表與回饋均可讀取。
+  - Fallback 模式提供組成／物性表與文字式分離選擇，不得只顯示通用說明。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
   - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - 組成分類與分離方法互動可執行
+  - 均勻＝純物質或化合物＝混合物等至少一項迷思被診斷並回饋
+  - 會考 transfer、exit ticket 可執行
   - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
   - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
   status:
