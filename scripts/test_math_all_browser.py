@@ -123,7 +123,7 @@ async def mutate_with_keyboard(root: Locator) -> dict[str, Any]:
         else:
             await control.press("Enter")
 
-        await root.page.wait_for_timeout(20)
+        await asyncio.sleep(0.02)
         # The simulation may rerender the clicked node, so snapshot the current root.
         after = await root.evaluate("""root => JSON.stringify({
           text: root.innerText,
