@@ -63,6 +63,7 @@ def control_snapshot_script() -> str:
         value: node.value || '',
         checked: Boolean(node.checked),
         pressed: node.getAttribute('aria-pressed'),
+        current: node.getAttribute('aria-current'),
         disabled: Boolean(node.disabled)
       }));
       return JSON.stringify({text: root.innerText, controls});
@@ -92,7 +93,7 @@ async def mutate_with_keyboard(root: Locator) -> dict[str, Any]:
         raise AssertionError("no enabled production interaction control")
 
     attempts: list[dict[str, str]] = []
-    for index in range(min(count, 8)):
+    for index in range(min(count, 12)):
         control = candidates.nth(index)
         if not await control.is_visible():
             continue
@@ -124,7 +125,6 @@ async def mutate_with_keyboard(root: Locator) -> dict[str, Any]:
             await control.press("Enter")
 
         await asyncio.sleep(0.02)
-        # The simulation may rerender the clicked node, so snapshot the current root.
         after = await root.evaluate("""root => JSON.stringify({
           text: root.innerText,
           controls: [...root.querySelectorAll('input,button,select')].map(node => ({
@@ -133,6 +133,7 @@ async def mutate_with_keyboard(root: Locator) -> dict[str, Any]:
             value: node.value || '',
             checked: Boolean(node.checked),
             pressed: node.getAttribute('aria-pressed'),
+            current: node.getAttribute('aria-current'),
             disabled: Boolean(node.disabled)
           }))
         })""")
@@ -141,6 +142,70 @@ async def mutate_with_keyboard(root: Locator) -> dict[str, Any]:
         attempts.append({"index": str(index), "reason": "keyboard action produced no observable state change"})
 
     raise AssertionError(f"no keyboard-driven control produced an observable state change: {attempts}")
+
+
+async def require_count(sim: Locator, selector: str, minimum: int, message: str) -> None:
+    count = await sim.locator(selector).count()
+    if count < minimum:
+        raise AssertionError(f"{message}: expected >= {minimum}, got {count}")
+
+
+async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) -> None:
+    """Verify the lesson reached its dedicated production renderer, not only sim-design."""
+    if model == "s9-1-polygon-similarity-v1":
+        await require_count(sim, ".sim-similarity-lab", 1, "similarity renderer missing")
+        return
+    if model == "s9-13-prism-surface-volume-v2":
+        await require_count(sim, ".sim-prism-lab", 1, "prism renderer missing")
+        return
+    if engine == "math-number-line":
+        await require_count(sim, '[role="img"]', 1, "number-line visual missing")
+        await require_count(sim, '[data-sim-control="n"]', 1, "number-line slider missing")
+    elif engine == "math-inequality-range":
+        await require_count(sim, '[role="img"]', 1, "inequality number line missing")
+        await require_count(sim, '[data-inequality-relation]', 4, "inequality relation controls missing")
+        await require_count(sim, '[data-sim-control="boundary"]', 1, "inequality boundary slider missing")
+    elif engine == "math-algebra-balance":
+        await require_count(sim, ".balance", 1, "algebra balance visual missing")
+        await require_count(sim, '[data-sim-control="addend"]', 1, "balance addend slider missing")
+        await require_count(sim, '[data-sim-control="target"]', 1, "balance target slider missing")
+    elif engine == "math-ticket-equation":
+        await require_count(sim, ".sim-ticket-equation", 1, "ticket equation renderer missing")
+        await require_count(sim, '[data-ticket-action="check"]', 1, "ticket equation verification control missing")
+    elif engine == "math-equation-meaning":
+        await require_count(sim, ".sim-equation-meaning", 1, "equation-meaning renderer missing")
+        await require_count(sim, '[data-sim-control="x"]', 1, "equation candidate slider missing")
+    elif engine == "math-reasoning-lab":
+        await require_count(sim, ".sim-reasoning-lab", 1, "reasoning-lab renderer missing")
+        await require_count(sim, '[data-reasoning-choice]', 2, "reasoning choices missing")
+        await require_count(sim, ".sim-reasoning-feedback", 1, "reasoning feedback missing")
+    elif engine == "math-expression-lab":
+        await require_count(sim, ".sim-expression-check", 1, "expression equality renderer missing")
+        await require_count(sim, '[data-expression-original]', 1, "original expression output missing")
+        await require_count(sim, '[data-expression-reduced]', 1, "reduced expression output missing")
+        await require_count(sim, '[data-sim-control="x"]', 1, "expression test-value slider missing")
+    elif engine == "math-function-graph":
+        await require_count(sim, '[role="img"]', 1, "function graph missing")
+        await require_count(sim, '[data-sim-control="m"]', 1, "slope slider missing")
+        await require_count(sim, '[data-sim-control="b"]', 1, "intercept slider missing")
+    elif engine == "math-system-graph":
+        await require_count(sim, '[role="img"]', 1, "system graph missing")
+        await require_count(sim, '[data-sim-control="sum"]', 1, "system parameter slider missing")
+    elif engine == "math-geometry":
+        await require_count(sim, '[role="img"]', 1, "geometry visual missing")
+        await require_count(sim, '[data-sim-control="base"]', 1, "geometry base slider missing")
+        await require_count(sim, '[data-sim-control="height"]', 1, "geometry height slider missing")
+    elif engine == "math-data-lab":
+        await require_count(sim, ".sim-bars", 1, "data bar visual missing")
+        await require_count(sim, '[data-sim-control="a"]', 1, "data slider a missing")
+        await require_count(sim, '[data-sim-control="b"]', 1, "data slider b missing")
+        await require_count(sim, '[data-sim-control="c"]', 1, "data slider c missing")
+    elif engine == "math-probability-lab":
+        await require_count(sim, ".sim-result", 1, "probability result missing")
+        await require_count(sim, '[data-sim-action="run-trials"]', 1, "probability trial action missing")
+        await require_count(sim, '[data-sim-control="trials"]', 1, "probability trials slider missing")
+    else:
+        raise AssertionError(f"renderer-depth rule missing for engine {engine}")
 
 
 async def check_lesson(page, lesson: dict[str, Any]) -> dict[str, Any]:
@@ -154,9 +219,9 @@ async def check_lesson(page, lesson: dict[str, Any]) -> dict[str, Any]:
     search = page.locator("#search")
     await search.fill(lesson_id)
     card = page.locator("#contentGrid article.card").filter(has=page.locator("h3", has_text=title)).first
-    await card.wait_for(state="visible", timeout=10_000)
+    await card.wait_for(state="visible", timeout=3_000)
     sim = card.locator(f'[data-simulation-lesson^="{lesson_id}:"]').first
-    await sim.wait_for(state="visible", timeout=10_000)
+    await sim.wait_for(state="visible", timeout=3_000)
 
     text = (await sim.inner_text()).strip()
     if len(text) < 30:
@@ -169,31 +234,12 @@ async def check_lesson(page, lesson: dict[str, Any]) -> dict[str, Any]:
     if await controls.count() == 0:
         raise AssertionError("simulation rendered without interactive controls")
 
-    status_like = sim.locator('[role="status"], [aria-live], output, .sim-feedback, .feedback')
+    status_like = sim.locator('[role="status"], [aria-live], output, .sim-feedback, .sim-status, .feedback')
     if await status_like.count() == 0:
         raise AssertionError("simulation lacks visible/live feedback output")
 
-    # Engine/model-specific depth checks prevent a generic card with controls from
-    # satisfying the exhaustive browser gate.
     model = simulation.get("model")
-    if model == "s9-1-polygon-similarity-v1":
-        await sim.locator(".sim-similarity-lab").wait_for()
-    elif model == "s9-13-prism-surface-volume-v2":
-        await sim.locator(".sim-prism-lab").wait_for()
-    elif engine in {"math-number-line", "math-inequality-range", "math-function-graph", "math-system-graph"}:
-        if await sim.locator('[role="img"]').count() == 0:
-            raise AssertionError(f"{engine} rendered without its visual model")
-    elif engine == "math-expression-lab" and await sim.locator(".sim-expression-lab").count() == 0:
-        raise AssertionError("expression lab renderer missing")
-    elif engine == "math-equation-meaning" and await sim.locator(".sim-equation-meaning").count() == 0:
-        raise AssertionError("equation-meaning renderer missing")
-    elif engine == "math-reasoning-lab" and await sim.locator(".sim-reasoning-lab").count() == 0:
-        raise AssertionError("reasoning-lab renderer missing")
-    elif engine == "math-data-lab" and await sim.locator(".sim-data-lab").count() == 0:
-        raise AssertionError("data-lab renderer missing")
-    elif engine == "math-probability-lab" and await sim.locator(".sim-probability-lab").count() == 0:
-        raise AssertionError("probability-lab renderer missing")
-
+    await assert_renderer_depth(sim, engine, model)
     interaction = await mutate_with_keyboard(sim)
 
     viewport_metrics: dict[str, Any] = {}
@@ -242,12 +288,11 @@ async def run(url: str, report_path: Path) -> dict[str, Any]:
         for index, lesson in enumerate(lessons, start=1):
             try:
                 passed.append(await check_lesson(page, lesson))
-            except Exception as exc:  # collect the complete failure set in one run
+            except Exception as exc:
                 failures.append({"id": lesson.get("id", "unknown"), "file": lesson.get("_file", "unknown"), "error": str(exc)})
             if index % 16 == 0:
                 print(f"math browser QA progress: {index}/{len(lessons)}")
 
-        # Reduced-motion is part of every math spec's accessibility contract.
         reduced_motion_match = await page.evaluate("() => matchMedia('(prefers-reduced-motion: reduce)').matches")
         if not reduced_motion_match:
             failures.append({"id": "global", "file": "site", "error": "Chromium did not enter reduced-motion mode"})
@@ -268,7 +313,7 @@ async def run(url: str, report_path: Path) -> dict[str, Any]:
             "viewports": list(VIEWPORTS),
             "checks": [
                 "public lesson card renders",
-                "production simulation renders",
+                "dedicated production simulation renderer renders",
                 "substantive text fallback is present",
                 "live/visible feedback output exists",
                 "interactive control has an accessible name",
