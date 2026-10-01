@@ -27,90 +27,89 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Ab-Ⅳ-3：物理與化學性質」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 依「是否需要形成新物質才能觀察」區分物理性質與化學性質
+  - 從密度、熔點、導電性、溶解性、可燃性、與酸反應等資料選出能支持物質鑑別的證據
+  - 區分性質與變化：可燃性是化學性質，燃燒是化學變化；熔點是物理性質，熔化是物理變化
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能區分物質、性質與事件描述
+  - 能閱讀簡單性質資料表並比較兩種材料
   coreConcepts:
-  - Ab-Ⅳ-3：物理與化學性質
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 物理性質可在不改變物質化學身分的條件下觀察或測量；化學性質描述物質發生化學變化的傾向或能力
+  - 同一物質可同時具有多種物理與化學性質；分類依觀察方式，不依「是否危險」或「是否肉眼可見」
+  - 鑑別物質通常需組合多項可重複量測的性質，單一外觀往往不足
   misconceptions:
-  - 把「Ab-Ⅳ-3：物理與化學性質」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為只要會改變外觀就是化學性質，或只要看得到就是物理性質
+  - 把「燃燒」與「可燃性」、「熔化」與「熔點」混成同一層次
+  - 以顏色或形狀單一線索就斷定未知物質身分
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 evidence-lab 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 三個外觀相似樣品，只給部分性質資料，先選最有鑑別力的證據'
+  - 'predict: 先將性質卡分類為物理／化學，不揭露答案'
+  - 'manipulate: 逐張開啟密度、熔點、導電、溶解、可燃性或反應性證據'
+  - 'observe: 分類板同步顯示「是否形成新物質才可觀察」與測試限制'
+  - 'explain: 將一項性質與對應測試、觀察層次連起來'
+  - 'contrast: 把性質名詞與實際變化事件配對，避免層次混淆'
+  - 'transfer: 用新的材料資料表判斷哪組證據足以排除候選物質'
+  - 'exit-ticket: 分類兩個性質並說出判準，不只背例子'
   visualizations:
-  - evidence-lab：以「Ab-Ⅳ-3：物理與化學性質」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 性質證據板：物理性質與化學性質兩欄，卡片包含測試方式與是否形成新物質
+  - 未知物質比較表：以多項性質逐步排除候選，不用顏色作唯一依據
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-AB-IV-3-I01
     component: EvidenceLabBlock
-    purpose: 讓學生操作並看見「Ab-Ⅳ-3：物理與化學性質」中最容易被背誦取代的關係
+    purpose: 讓學生選擇測試並依證據分類物理／化學性質，同時用多項性質鑑別未知物質
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        selectedTest: density
+        sample: A
+        evidenceStage: 0
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先將「熔點、導電性、可燃性、與酸反應」分類並提交理由
+    - 每次只開啟一項測試證據，記錄是否需要生成新物質才能判讀
+    - 依證據逐步排除未知樣品候選
+    - 將「性質」與「變化事件」各選一例並說明差別
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 每張證據卡同時顯示測試、觀察與分類理由，不只顯示答案標籤
+    - 化學性質測試不得以危險實驗作真實操作指示；以資料或安全模擬呈現
+    - 外觀相同的樣品仍保留文字代號，避免顏色成為答案線索
+    - 未提供的性質明示未知，不可自動補值
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-AB-IV-3-I01
-      trigger: 把「Ab-Ⅳ-3：物理與化學性質」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 依「看不看得到」分類，或把燃燒／熔化事件當成性質名稱
+      prompt: 請改用「是否需要形成新物質才能觀察這項性質」判斷，並指出你寫的是性質還是變化事件。
+      expectedEvidence: 能用形成新物質的判準區分物理／化學性質，並分開性質與變化
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出分類判準與測試證據，再要求用另一張性質卡驗證。
+      incorrect: 先提示不要用「肉眼可見／不可見」判準，要求檢查測試是否需發生化學變化。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-3：物理與化學性質」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "本課採先分類、再開證據、最後修正判準的節奏；資料與題目由本專案自行設計。"
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-3：物理與化學性質」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "只借用證據導向探究結構，不複製外部實驗或素材。"
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-3：物理與化學性質」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "每張性質卡的名稱、測試、結果與分類均有文字，不以顏色單獨傳達。"
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Ab-Ⅳ-3：物理與化學性質」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "分類、測試證據、未知樣品與回饋區域皆可定位。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Ab-Ⅳ-3：物理與化學性質」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 性質資料判讀／物質鑑別／理由短答
+    stemConstraint: 提供陌生材料的多項性質資料，要求依分類判準或排除證據推理，不可只問名詞定義
+    requiredResponse: 選答後指出至少一項性質證據及其物理／化學分類理由
+    scoring: 分類正確 1、證據對應 1、理由完整且分清性質與變化 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 「酒精可燃」和「酒精正在燃燒」哪一句描述性質、哪一句描述變化？可燃性為何屬於化學性質？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 指出可燃是性質、燃燒是變化事件
+    - 說明可燃性需透過形成新物質的化學變化表現
+    - 不以可見／不可見作分類判準
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Ab-Ⅳ-3：物理與化學性質」的證據、因果或觀察說給同學聽
+    task: 用 80～120 字說明如何用兩項以上性質鑑別一個未知樣品，並標明哪些是物理性質、哪些是化學性質。
     constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
   mobileA11y:
     breakpoints:
@@ -119,21 +118,21 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 每張證據卡與分類結果有名稱、測試方式、目前狀態與錯誤回饋
+    reducedMotion: 不依賴動畫，分類與證據揭露可逐步操作
   testCases:
-  - 載入「Ab-Ⅳ-3：物理與化學性質」時不得先顯示正解；學生必須先提交對「Ab-Ⅳ-3：物理與化學性質」的預測，且預測會被保留供後續比較。
-  - 操作「evidence-lab：以「Ab-Ⅳ-3：物理與化學性質」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Ab-Ⅳ-3：物理與化學性質」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Ab-Ⅳ-3：物理與化學性質」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Ab-Ⅳ-3：物理與化學性質」的 CAP transfer：換一個情境但保留「Ab-Ⅳ-3：物理與化學性質」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，EvidenceLabBlock 仍須以「Ab-Ⅳ-3：物理與化學性質」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 載入時先要求分類性質卡，不得先顯示正解。
+  - 開啟密度／熔點等物理性質證據時，不應標示形成新物質；化學性質卡須說明需透過化學變化觀察。
+  - 學生用「看得見」判斷物理性質時，命中迷思診斷並要求改用形成新物質判準。
+  - 未知樣品至少需兩項獨立性質才能完成排除，單一外觀不可直接判定。
+  - 320px、375px、768px 與鍵盤操作下，卡片、分類與回饋均可讀取。
+  - Fallback 模式提供性質資料表與文字分類題，不得只顯示通用互動說明。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
   - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
+  - 性質分類與未知物質鑑別互動可執行
+  - 至少一項「可見＝物理」或「性質＝事件」迷思被診斷並回饋
+  - 會考 transfer、exit ticket 可執行
   - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
   - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
   status:
@@ -141,6 +140,6 @@ unitImplementationSpec:
     implementationStatus: implemented
     qaStatus: untested
   sourceRefs:
-  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 23 頁／PDF 第 27 頁；主題 A、次主題 Ab；官方代碼 Ab-Ⅳ-3
     role: official-curriculum-source-of-truth
