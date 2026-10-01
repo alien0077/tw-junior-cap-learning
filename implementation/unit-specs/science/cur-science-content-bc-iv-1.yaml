@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Bc-Ⅳ-1：酵素催化代謝與影響因素
-    curriculumIntent: Bc-Ⅳ-1：酵素催化代謝與影響因素
+    curriculumIntent: 以控制變因的反應資料說明酵素催化、受質專一性，以及溫度、pH、受質濃度等因素對反應速率的影響
     publisherEvidence:
       nani:
         status: pending
@@ -25,93 +25,95 @@ unitImplementationSpec:
         status: pending
         required: true
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+    currentEvidenceStatus: curriculum-and-kg-grounded; lesson-unit-specific; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Bc-Ⅳ-1：酵素催化代謝與影響因素」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 說明酵素可降低反應所需活化能、加快反應速率，但不因一次催化就被當成反應物消耗
+  - 以相同酵素量、受質量與反應時間的控制實驗，比較溫度、pH 或受質濃度對反應速率的影響
+  - 由時間序列斜率或單位時間產物量判讀反應速率，區分「反應速率較快」與「最後產物總量較多」
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能讀取時間—產物量曲線或表格並比較斜率
+  - 能辨認自變因、應變因、控制變因與對照組
   coreConcepts:
-  - Bc-Ⅳ-1：酵素催化代謝與影響因素
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 酵素具有催化作用及一定程度的受質專一性；催化改變反應速率，不改變反應物與產物的基本種類
+  - 酵素活性常有適宜溫度與 pH 範圍；偏離適宜條件可使活性下降，高溫可能造成蛋白質構形改變
+  - 受質濃度增加不代表速率可無限等比例上升；當可作用的酵素位置成為限制時，速率增加會趨緩
   misconceptions:
-  - 把「Bc-Ⅳ-1：酵素催化代謝與影響因素」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為酵素是反應物，反應一次後就被消耗殆盡
+  - 認為溫度越高或受質越多，酵素反應速率一定無限增加
+  - 只看固定時間後的產物總量就宣稱某組初始反應速率較快，忽略時間曲線與控制條件
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 evidence-lab 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 比較同量酵素在低溫、適溫與高溫下的產物—時間資料，先預測哪組初始速率最大'
+  - 'predict: 學生先提交溫度或 pH 改變的速率預測，不顯示正解'
+  - 'manipulate: 固定酵素量、受質量與反應時間，每次只改溫度、pH 或受質濃度其中一項'
+  - 'observe: 同步更新產物—時間曲線、初始斜率、單位時間產物量與條件表'
+  - 'explain: 引用曲線斜率與對照組，區分直接觀察、速率推論與可能機制'
+  - 'formalize: 連結催化、活化能、專一性、適宜條件與濃度限制'
+  - 'transfer: 以唾液澱粉酶、鳳梨蛋白酶、過氧化氫酶或酵母發酵資料判讀'
+  - 'exit-ticket: 由一組溫度或 pH 資料選出適宜範圍並指出一項不能由資料直接證明的結論'
   visualizations:
-  - evidence-lab：以「Bc-Ⅳ-1：酵素催化代謝與影響因素」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 產物—時間曲線：各實驗組共用時間與產物尺度，標出初始斜率區間，不只顯示終點值
+  - 條件控制表：酵素量、受質量、溫度、pH、反應時間與測量方法並列，改變中的唯一自變因明確標記
+  - 酵素—受質概念圖：表達專一性與催化循環，但明示為模型，不把鎖鑰圖當成真實分子外觀
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BC-IV-1-I01
     component: EvidenceLabBlock
-    purpose: 讓學生操作並看見「Bc-Ⅳ-1：酵素催化代謝與影響因素」中最容易被背誦取代的關係
+    purpose: 讓學生控制溫度、pH 或受質濃度，從產物—時間曲線與初始斜率判讀酵素活性及控制變因
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        temperatureC: 37
+        pH: 7
+        substrateLevel: medium
+        enzymeAmount: fixed
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測將溫度由 20°C、37°C 調到 70°C 時反應速率可能如何變化，不先揭露答案
+    - 固定酵素量與其他條件，只改變 temperatureC、pH 或 substrateLevel 中一項
+    - 在曲線上標記前段兩個以上資料點，估計或比較初始速率
+    - 加入無酵素或失活酵素對照，確認產物變化是否需要活性酵素
+    - 用「改變條件 → 曲線斜率如何變 → 哪個結論被支持」完成解釋
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 每次只能指定一個主要比較變因；其他控制條件在表格與文字摘要中保持固定
+    - 高溫模式不可畫成速率永遠持續升高；若設定超出適宜範圍，曲線應反映活性下降的模型資料
+    - 受質濃度提高時不得預設速率無限線性增加；需呈現可能趨於飽和的關係
+    - 曲線顏色必須搭配條件文字與符號，螢幕閱讀器可讀取每組條件及斜率趨勢
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BC-IV-1-I01
-      trigger: 把「Bc-Ⅳ-1：酵素催化代謝與影響因素」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生回答溫度越高活性一定越大、酵素會被一次反應用完，或只用終點量判定初速
+      prompt: 請比較相同時間區間的曲線斜率；其他條件是否相同？高溫組後續活性與無酵素對照提供什麼證據？
+      expectedEvidence: 能引用控制條件與初始斜率，說明活性存在適宜範圍且酵素是催化劑而非被計量消耗的反應物
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對自變因、控制條件與速率證據，再要求切換另一因素驗證。
+      incorrect: 先提示「看斜率而非只看終點」及「每次只改一項」，不直接揭露最佳條件。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-1：酵素催化代謝與影響因素」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課只借用先預測、單變因操作、資料修正模型的節奏；所有酵素資料與曲線均為本課自編。
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-1：酵素催化代謝與影響因素」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課以溫度、pH、受質濃度與對照組作原創探究，不複製外部活動數據。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-1：酵素催化代謝與影響因素」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 溫度、pH、受質濃度、酵素量、曲線與斜率皆有鍵盤操作及文字狀態。
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-1：酵素催化代謝與影響因素」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 預測、變因控制、曲線、證據與回饋區域可導覽。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Bc-Ⅳ-1：酵素催化代謝與影響因素」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 實驗設計／反應速率曲線／理由短答
+    stemConstraint: 更換為消化、食物處理或發酵情境，至少提供一組時間序列與控制條件，不能只問「最佳溫度」記憶題
+    requiredResponse: 指出自變因與至少兩個控制變因，引用曲線斜率或單位時間產物量，再說明一項資料限制
+    scoring: 實驗變因正確 1、速率證據正確 1、限制或替代解釋 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 三組相同酵素與受質在 20°C、37°C、70°C 反應；前 2 分鐘產物量分別增加 2、6、0.5 單位。哪組初始速率最大？這組資料能否單獨證明 37°C 是此酵素在所有條件下的「唯一最佳溫度」？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 以相同 2 分鐘內產物增加量判定 37°C 組初始速率最大
+    - 不把 70°C 視為「溫度越高越快」的證據，能指出高溫活性可能下降
+    - 說明只測三個溫度且其他條件有限，不能宣稱全範圍唯一最佳值
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Bc-Ⅳ-1：酵素催化代謝與影響因素」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用 80～120 字解釋為什麼「溫度越高，酵素作用一定越快」不正確，並引用一項可測量的速率證據
+    constraint: 學生先寫；系統只提示適宜範圍、曲線斜率與控制變因，不直接代寫完整答案
   mobileA11y:
     breakpoints:
     - 320
@@ -119,23 +121,23 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 每個條件、曲線、斜率、對照組及回饋都有可讀文字狀態
+    reducedMotion: 停用動畫仍可逐時間點閱讀表格與比較速率
   testCases:
-  - 載入「Bc-Ⅳ-1：酵素催化代謝與影響因素」時不得先顯示正解；學生必須先提交對「Bc-Ⅳ-1：酵素催化代謝與影響因素」的預測，且預測會被保留供後續比較。
-  - 操作「evidence-lab：以「Bc-Ⅳ-1：酵素催化代謝與影響因素」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Bc-Ⅳ-1：酵素催化代謝與影響因素」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Bc-Ⅳ-1：酵素催化代謝與影響因素」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Bc-Ⅳ-1：酵素催化代謝與影響因素」的 CAP transfer：換一個情境但保留「Bc-Ⅳ-1：酵素催化代謝與影響因素」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，EvidenceLabBlock 仍須以「Bc-Ⅳ-1：酵素催化代謝與影響因素」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 未提交溫度影響預測前不得顯示完整酵素活性解說。
+  - 固定其他條件只改 temperatureC 時，條件表、產物曲線與斜率摘要同步更新。
+  - 高溫組不得以單調增加函數表示所有酵素活性；適宜範圍外可出現下降。
+  - 增加 substrateLevel 時可呈現速率增加後趨緩，不得無限線性上升。
+  - 學生只比較終點量或同時改兩項條件時，命中迷思診斷並要求重建公平比較。
+  - 無酵素／失活酵素對照可用於判斷觀察變化是否與活性酵素有關。
+  - 320／375／768px 與鍵盤操作下，條件表、曲線、證據標記與回饋不得裁切。
+  - fallback 至少保留溫度、pH、受質濃度三組靜態資料與可重試速率判讀題。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 互動實際操作溫度、pH 或受質濃度，不含 primary／secondary 假變項
+  - 至少診斷一次高溫迷思、終點量／速率混淆或控制變因錯誤
+  - CAP transfer、exit ticket、mobile、keyboard、screen reader、reduced-motion 與 fallback 可執行
+  - 內容與教學法無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
