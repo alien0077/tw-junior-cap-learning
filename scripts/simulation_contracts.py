@@ -16,6 +16,7 @@ MATH_ENGINES = {
     "math-algebra-balance",
     "math-ticket-equation",
     "math-equation-meaning",
+    "math-reasoning-lab",
     "math-expression-lab",
     "math-function-graph",
     "math-system-graph",
@@ -121,6 +122,33 @@ def _equation_meaning_errors(simulation: dict[str, Any]) -> list[str]:
     return errors
 
 
+def _reasoning_lab_errors(lesson: dict[str, Any]) -> list[str]:
+    """Validate the lesson-level steps consumed by the reasoning-lab renderer."""
+    interactive = lesson.get("interactive")
+    if not isinstance(interactive, dict):
+        return ["math-reasoning-lab requires lesson.interactive config"]
+    steps = interactive.get("steps")
+    if not isinstance(steps, list) or not steps:
+        return ["math-reasoning-lab requires a non-empty lesson.interactive.steps list"]
+    errors: list[str] = []
+    for index, step in enumerate(steps, start=1):
+        if not isinstance(step, dict):
+            errors.append(f"interactive.steps[{index}] must be an object")
+            continue
+        for key in ("prompt", "answer", "feedback"):
+            if not _nonempty_text(step.get(key)):
+                errors.append(f"interactive.steps[{index}].{key} must be non-empty text")
+        options = step.get("options")
+        if not isinstance(options, list) or len(options) < 2 or not all(_nonempty_text(option) for option in options):
+            errors.append(f"interactive.steps[{index}].options must contain at least two non-empty choices")
+            continue
+        answer = step.get("answer")
+        valid_answers = {chr(ord("A") + offset) for offset in range(len(options))}
+        if _nonempty_text(answer) and answer not in valid_answers:
+            errors.append(f"interactive.steps[{index}].answer must identify one of {sorted(valid_answers)}")
+    return errors
+
+
 def contract_errors(lesson: dict[str, Any]) -> list[str]:
     """Return production-contract errors for one lesson without regenerating it."""
     simulation = lesson.get("simulation")
@@ -157,5 +185,7 @@ def contract_errors(lesson: dict[str, Any]) -> list[str]:
         errors.extend(_ticket_equation_errors(simulation))
     if engine == "math-equation-meaning":
         errors.extend(_equation_meaning_errors(simulation))
+    if engine == "math-reasoning-lab":
+        errors.extend(_reasoning_lab_errors(lesson))
 
     return errors
