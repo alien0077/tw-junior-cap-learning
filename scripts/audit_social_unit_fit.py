@@ -33,7 +33,7 @@ def main():
                 break
     out={"status":"pass" if not mismatches else "mismatch-found","questionCount":len(list((ROOT/'questions'/'social').glob('*.json'))),"archetypeCounts":counts,"mismatchCount":len(mismatches),"mismatches":mismatches,"note":"Conservative lexical triage only; no promotion to content-reviewed."}
     (ROOT/'implementation'/'reports'/'social-question-unit-fit.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
-    print(json.dumps({k:out[k] for k in ('status','questionCount','archetypeCounts','mismatchCount')},ensure_ascii=False))
+    print(json.dumps({k:out[k] for k in ('status','questionCount','archetypeCounts','mismatchCount')}|{"firstMismatches":mismatches[:80]},ensure_ascii=False))
 
 
 if __name__ == '__main__': main()
