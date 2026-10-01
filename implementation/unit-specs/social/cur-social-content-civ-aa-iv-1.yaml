@@ -27,20 +27,20 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以資料、時空或制度證據解釋「公 Aa-Ⅳ-1：公民概念」
-  - 比較至少兩個因素並說明因果或空間關係
-  - 把概念遷移到新的會考型資料情境
+  - 區分公民、居民、法律身分與特定公共參與資格，不以居住或出生地直接代替法律判斷
+  - 從公共決策資料分辨直接事實、推論、價值主張與尚未證明的因果
+  - 比較不同受影響者的權利、責任與參與管道，提出可查證、可修正的公共行動
   prerequisites:
   - 能讀懂本單元使用的基本符號、圖表或短文本
   - 能依提示完成一次預測、操作、觀察、解釋循環
   coreConcepts:
-  - 公 Aa-Ⅳ-1：公民概念
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 公民身分、居民身分與參與資格的區別
+  - 公民權利、責任與公共參與
+  - 公共資料的代表性、推論限制與程序
   misconceptions:
-  - 把「公 Aa-Ⅳ-1：公民概念」的背景、證據與結果混為同一層次
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 把長期居住、出生地或認同直接等同法律上的公民身分
+  - 把沒有特定表決資格誤解成完全沒有公共利益或表達管道
+  - 用部分參與者的統計直接代表全體，或把同時發生誤認為因果
   contentFlow:
   - 'hook: 以單元真實問題引起預測'
   - 'activate-prerequisite: 顯示先備檢核並允許補救'
@@ -58,7 +58,7 @@ unitImplementationSpec:
   interactiveBlocks:
   - id: CUR-SOCIAL-CONTENT-CIV-AA-IV-1-I01
     component: ScenarioDecisionBlock
-    purpose: 讓學生操作並看見「公 Aa-Ⅳ-1：公民概念」中最容易被背誦取代的關係
+    purpose: 讓學生在圖書館改建情境中切換角色、身分資料與參與程序，判斷哪些主張可由證據支持、哪些仍須查法律或補資料
     initialState:
       mode: predict
       showAnswer: false
@@ -139,7 +139,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: untested
+    qaStatus: content-reviewed
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 27～36 頁／PDF 第 31～40 頁；國民中學教育階段學習內容；官方代碼 公 Aa-Ⅳ-1
