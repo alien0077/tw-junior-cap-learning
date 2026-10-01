@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Bb-Ⅳ-4：熱的傳導、對流與輻射
-    curriculumIntent: Bb-Ⅳ-4：熱的傳導、對流與輻射
+    curriculumIntent: 由介質、粒子局部作用、流體整體運動與跨空間能量傳遞的證據，區分傳導、對流、輻射並分析複合傳熱
     publisherEvidence:
       nani:
         status: pending
@@ -25,93 +25,95 @@ unitImplementationSpec:
         status: pending
         required: true
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+    currentEvidenceStatus: curriculum-and-kg-grounded; lesson-unit-specific; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Bb-Ⅳ-4：熱的傳導、對流與輻射」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 依是否需要介質、固體內能量傳遞、流體整體移動及電磁波跨空間傳遞，區分傳導、對流與輻射
+  - 在鍋子煮水、暖氣房、太陽照射與保溫設計中辨認同時存在的多條熱路徑，指出主要與次要機制
+  - 控制材料、流速、表面、距離或遮蔽其中一項，比較傳熱速率並保留其他條件不變
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 已理解熱自高溫處向低溫處傳遞，並能畫出基本熱流箭頭
+  - 能閱讀簡單流線、溫度分布圖與遮蔽前後資料
   coreConcepts:
-  - Bb-Ⅳ-4：熱的傳導、對流與輻射
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 傳導可在物質內由微觀交互作用傳遞能量，固體常以傳導為重要機制；不代表物質整體大量移動
+  - 對流需要可流動的液體或氣體，能量隨流體整體運動搬運；固體本身不會形成對流循環
+  - 熱輻射以電磁波傳遞，不需要空氣等物質介質，因此可跨真空；實際情境常同時包含多種傳熱方式
   misconceptions:
-  - 把「Bb-Ⅳ-4：熱的傳導、對流與輻射」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為太陽把熱傳到地球必須靠太空中的空氣或其他介質
+  - 把熱水中流體循環說成固體傳導，或把金屬棒內傳熱說成金屬整體流動的對流
+  - 題目出現一種明顯機制就宣稱其他傳熱方式完全不存在，忽略複合傳熱與主次之分
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 evidence-lab 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 比較金屬棒一端加熱、鍋中水受熱、隔空感受熱源三個情境，先預測主要傳熱方式'
+  - 'predict: 先選每個情境是否需要物質介質、是否有流體整體移動及是否可隔真空傳遞'
+  - 'manipulate: 切換固體材料、流體流速、遮蔽板或熱源距離，每次只改一項'
+  - 'observe: 同步更新溫度分布、流線、輻射路徑與時間資料'
+  - 'explain: 用介質、運動與遮蔽資料支持傳導／對流／輻射判斷，並標出複合路徑'
+  - 'formalize: 建立三種傳熱機制的判斷表與常見限制'
+  - 'transfer: 分析保溫瓶、鍋具、暖氣、曬衣與太陽能集熱器的熱路徑'
+  - 'exit-ticket: 同一生活裝置至少指出兩種可能熱傳方式及一個降低熱損失的設計'
   visualizations:
-  - evidence-lab：以「Bb-Ⅳ-4：熱的傳導、對流與輻射」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 三情境工作台：金屬棒溫度分布、流體對流流線、熱源與受熱面間的輻射路徑並列
+  - 機制判斷卡：是否需介質、是否有流體整體移動、是否能跨真空、主要可觀察證據四欄同步更新
+  - 複合熱路徑圖：允許同一情境標示多條路徑並排序主要／次要，不強迫只有一個答案
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BB-IV-4-I01
     component: EvidenceLabBlock
-    purpose: 讓學生操作並看見「Bb-Ⅳ-4：熱的傳導、對流與輻射」中最容易被背誦取代的關係
+    purpose: 讓學生以材料、流體流速、遮蔽與距離控制，根據溫度分布與流線證據區分傳導、對流、輻射及複合傳熱
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        scenario: metal-rod
+        material: metal
+        convectionFlow: none
+        radiationShield: false
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先對三個基準情境提交主要傳熱方式預測，不顯示正解
+    - 在金屬棒情境改變材料，觀察沿棒溫度分布和傳熱快慢
+    - 在流體情境切換加熱位置或流動條件，觀察流線與溫度分布
+    - 在輻射情境加入遮蔽板或改變距離，觀察受熱面讀值變化
+    - 為每個情境標記直接證據，最後再判定主要／次要傳熱機制
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 切換情境時只顯示該情境有意義的控制項，不讓無關變因製造假因果
+    - 對流必須伴隨可流動介質與流線／位移證據；固體情境不可生成假對流
+    - 輻射模式在無空氣條件仍可保留能量路徑；遮蔽只影響對應路徑，不得自動抹去傳導或對流
+    - 顏色不可單獨區分三種機制，所有箭頭、流線與區域都有文字或符號標籤
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BB-IV-4-I01
-      trigger: 把「Bb-Ⅳ-4：熱的傳導、對流與輻射」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生宣稱輻射需要空氣、固體會產生對流循環，或認為一種機制存在時其他機制必為零
+      prompt: 這個情境有沒有流體整體移動？如果抽掉空氣或加入遮蔽，哪一條熱路徑仍可能存在？請指出畫面上的證據。
+      expectedEvidence: 能依介質與流動證據排除錯誤機制，並承認實際情境可能有複合傳熱
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對介質、流線或遮蔽證據，再要求換一個複合情境判斷主次。
+      incorrect: 先追問「有沒有流體整體移動？」或「真空中太陽能否傳熱？」再讓學生重試，不直接揭露分類。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-4：熱的傳導、對流與輻射」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課只借用先預測、控制單一條件、以證據修正模型的節奏；所有情境、資料與視覺路徑均自編。
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-4：熱的傳導、對流與輻射」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課用三情境比較與複合路徑遷移，不複製外部活動腳本。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-4：熱的傳導、對流與輻射」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 情境、材料、流速、遮蔽、距離與傳熱機制都有鍵盤控制及文字狀態。
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Bb-Ⅳ-4：熱的傳導、對流與輻射」的 EvidenceLabBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 預測、情境控制、證據、機制判斷與回饋區域可導覽。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Bb-Ⅳ-4：熱的傳導、對流與輻射」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 熱路徑圖／資料判讀／理由短答
+    stemConstraint: 更換成保溫瓶、鍋具、暖氣、曬衣或太陽能集熱器，至少提供介質、流動或遮蔽／距離證據，不能只看關鍵字選傳熱名稱
+    requiredResponse: 指出至少一條主要熱路徑及其證據；若有複合傳熱，需說明主次而不是宣稱只有一種
+    scoring: 機制判斷正確 1、引用介質／流動／遮蔽證據 1、複合路徑或限制說明完整 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 黑色鍋子在火焰上加熱水。請指出「火焰到鍋底、鍋底到鍋內水、鍋中水由下往上循環」至少兩段可能的主要傳熱方式，並寫出你判斷的觀察依據。
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 能把鍋體內能量傳遞辨認為傳導的重要部分
+    - 能把水的整體循環辨認為對流，且不套用到固體鍋身
+    - 能說明火焰／高溫表面到鍋底可能同時含輻射、對流等複合路徑，不把真實情境強迫成單一機制
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Bb-Ⅳ-4：熱的傳導、對流與輻射」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用 80～120 字說明為什麼太陽能把能量傳到地球而不需要太空充滿空氣，並比較這和暖氣造成室內空氣循環的差別
+    constraint: 學生先寫；系統只提示介質、流體整體移動與電磁波三層，不直接代寫完整答案
   mobileA11y:
     breakpoints:
     - 320
@@ -119,23 +121,23 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 情境、控制項、流線、溫度分布、輻射路徑與判斷結果皆有可讀文字狀態
+    reducedMotion: 停用動畫仍可用靜態箭頭、逐步資料與文字摘要完成判斷
   testCases:
-  - 載入「Bb-Ⅳ-4：熱的傳導、對流與輻射」時不得先顯示正解；學生必須先提交對「Bb-Ⅳ-4：熱的傳導、對流與輻射」的預測，且預測會被保留供後續比較。
-  - 操作「evidence-lab：以「Bb-Ⅳ-4：熱的傳導、對流與輻射」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Bb-Ⅳ-4：熱的傳導、對流與輻射」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Bb-Ⅳ-4：熱的傳導、對流與輻射」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Bb-Ⅳ-4：熱的傳導、對流與輻射」的 CAP transfer：換一個情境但保留「Bb-Ⅳ-4：熱的傳導、對流與輻射」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，EvidenceLabBlock 仍須以「Bb-Ⅳ-4：熱的傳導、對流與輻射」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 未提交三情境預測前不得顯示完整分類解說。
+  - 固體情境改變材料時溫度分布與傳熱快慢同步更新，但不得出現流體對流流線。
+  - 流體情境切換加熱位置時流線與溫度分布同步改變，且文字摘要描述流體整體移動。
+  - 輻射情境抽掉空氣後輻射路徑仍存在；加入遮蔽後相應受熱讀值改變。
+  - 學生回答「輻射需要空氣」或「固體靠對流傳熱」時命中迷思診斷。
+  - 複合情境允許同時標記多種傳熱方式，並要求以證據排序主次。
+  - 320／375／768px 與鍵盤操作下，控制、圖示、文字摘要與回饋不得裁切。
+  - fallback 至少保留三組靜態情境卡與可重試的機制／證據配對題。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 互動可實際操作材料、流動或遮蔽條件，不含 primary／secondary 假變項
+  - 至少診斷一次「輻射需要介質」「固體有對流」或「單一機制排他」迷思
+  - CAP transfer、exit ticket、mobile、keyboard、screen reader、reduced-motion 與 fallback 可執行
+  - 內容與教學法無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
