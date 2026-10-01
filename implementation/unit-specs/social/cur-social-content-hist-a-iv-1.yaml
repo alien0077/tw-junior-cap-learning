@@ -27,20 +27,20 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以資料、時空或制度證據解釋「歷 A-Ⅳ-1：紀年與分期」
-  - 比較至少兩個因素並說明因果或空間關係
-  - 把概念遷移到新的會考型資料情境
+  - 將不同紀年轉成共同時間尺度，正確比較事件先後並保留不確定年代
+  - 說明分期判準如何隨研究問題改變，區分事件年代與分析框架
+  - 區分時間先後與因果關係，指出因果判斷仍需要哪些額外史料
   prerequisites:
   - 能讀懂本單元使用的基本符號、圖表或短文本
   - 能依提示完成一次預測、操作、觀察、解釋循環
   coreConcepts:
-  - 歷 A-Ⅳ-1：紀年與分期
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 紀年系統的起點、換算與共同時間尺度
+  - 分期判準與研究問題的關係
+  - 時間先後、相關與因果證據的差異
   misconceptions:
-  - 把「歷 A-Ⅳ-1：紀年與分期」的背景、證據與結果混為同一層次
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 直接比較不同紀年系統的數字大小，忽略紀年起點
+  - 把課本分期界線當成唯一且自然存在的歷史邊界
+  - 看到事件先後就直接判定前者造成後者
   contentFlow:
   - 'hook: 以單元真實問題引起預測'
   - 'activate-prerequisite: 顯示先備檢核並允許補救'
@@ -58,7 +58,7 @@ unitImplementationSpec:
   interactiveBlocks:
   - id: CUR-SOCIAL-CONTENT-HIST-A-IV-1-I01
     component: TimelineCausalBlock
-    purpose: 讓學生操作並看見「歷 A-Ⅳ-1：紀年與分期」中最容易被背誦取代的關係
+    purpose: 讓學生切換共同紀年與分期判準，直接觀察事件順序不變但分析分組可改變，並診斷「先後即因果」迷思
     initialState:
       mode: predict
       showAnswer: false
@@ -139,7 +139,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: untested
+    qaStatus: content-reviewed
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 18～20 頁／PDF 第 22～24 頁；國民中學教育階段學習內容；官方代碼 歷 A-Ⅳ-1
