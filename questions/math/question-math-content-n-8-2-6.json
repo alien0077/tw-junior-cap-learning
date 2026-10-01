@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供平方根夾值、近似值、四捨五入與根號大小比較能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的根號近似方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-2",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "對非負範圍平方兩端，將根號夾值轉成 n 的整數範圍。",
+  "solutionStrategy": "先用相鄰完全平方數夾住根號值，再依需要細分小數區間；最後平方近似值檢查。",
   "solutionSteps": [
-    "由 4＜√n＜5 知兩端皆為正。",
-    "兩邊平方得 16＜n＜25。",
-    "逐一檢查選項是否在 16 與 25 之間。",
-    "只有 24 符合。",
-    "選 C，確認 √24 確實介於 4 與 5。"
+    "整理題意：若 4＜√n＜5，n 可能是哪一個數？",
+    "平方不等式得 16＜n＜25，選項中只有 24 符合，所以選 C。",
+    "以平方近似值回查，確認選項 C。"
   ]
 }
