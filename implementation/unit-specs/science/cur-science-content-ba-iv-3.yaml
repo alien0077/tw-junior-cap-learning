@@ -97,20 +97,20 @@ unitImplementationSpec:
     reuseDecision: inspiration-only
     application: "確保熱量帳本的題目、控制項與回饋有可導覽區域；不複製外部教材內容。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Ba-Ⅳ-3：化學反應的吸熱與放熱」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 溫度資料判讀／系統邊界／理由短答
+    stemConstraint: 更換成即溶冷包、暖暖包或其他陌生反應情境；必須同時提供反應組與對照組資料，不能只靠手感判斷
+    requiredResponse: 先說明反應系統與周圍，再引用同條件溫差判定能量方向，最後指出溫度資料是否足以證明有新物質
+    scoring: 系統與熱流方向正確 1、引用對照溫差 1、區分熱交換與反應證據並說明限制 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 某反應杯的周圍水溫由 25.0°C 升至 31.0°C，而無反應對照只升至 25.5°C。若把杯內反應物視為系統，能量主要往哪裡傳？這組溫度資料本身能否證明生成新物質？請各寫一個理由。
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 以反應組相對對照的升溫判定能量由反應系統傳向周圍，屬放熱方向
+    - 明確指出量測的是周圍溫度，不把周圍升溫說成系統吸熱
+    - 說明溫度變化是熱交換證據，尚需獨立的新物質證據才能確認化學反應
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Ba-Ⅳ-3：化學反應的吸熱與放熱」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用系統／周圍箭頭與 80～120 字說明一組反應溫度資料；必須包含對照差、能量方向與證據限制
+    constraint: 學生先寫；系統只給「量測哪一側／有無對照／能否證明新物質」三層提示，不直接代寫完整答案
   mobileA11y:
     breakpoints:
     - 320
@@ -141,7 +141,7 @@ unitImplementationSpec:
     implementationStatus: implemented
     qaStatus: untested
   sourceRefs:
-  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 B、次主題 Ba；官方代碼 Ba-Ⅳ-3
     role: official-curriculum-source-of-truth
   - url: https://resource.hle.com.tw/Books/BooksResource/02-111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%202%E4%B8%8B%E8%AA%B2%E6%9C%ACch1%28111f603318%29.pdf
