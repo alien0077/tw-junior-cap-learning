@@ -16,6 +16,7 @@ const productionMathEngines = new Set([
   "math-algebra-balance",
   "math-ticket-equation",
   "math-equation-meaning",
+  "math-reasoning-lab",
   "math-expression-lab",
   "math-function-graph",
   "math-system-graph",

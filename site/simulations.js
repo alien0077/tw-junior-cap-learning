@@ -21,6 +21,7 @@
     "math-algebra-balance": { addend: 3, target: 11 },
     "math-ticket-equation": {},
     "math-equation-meaning": { x: 5 },
+    "math-reasoning-lab": { reasoningStep: 0, reasoningChoice: "" },
     "math-expression-lab": { x: 2 },
     "math-function-graph": { m: 1, b: 0, x: 2 },
     "math-system-graph": { sum: 6 },
@@ -42,7 +43,7 @@
   };
   const write = (simulation, state) => localStorage.setItem(stateKey(simulation), JSON.stringify(state));
   const label = engine => ({
-    "math-number-line": "數線操作臺", "math-inequality-range": "不等式範圍數線", "math-algebra-balance": "代數天平", "math-ticket-equation": "票券等量模型", "math-equation-meaning": "方程式意義檢驗臺", "math-function-graph": "函數圖形實驗室",
+    "math-number-line": "數線操作臺", "math-inequality-range": "不等式範圍數線", "math-algebra-balance": "代數天平", "math-ticket-equation": "票券等量模型", "math-equation-meaning": "方程式意義檢驗臺", "math-reasoning-lab": "數學推理實驗室", "math-function-graph": "函數圖形實驗室",
     "math-system-graph": "聯立直線交點探索", "math-expression-lab": "代數式同值檢核臺",
     "math-geometry": "幾何建構臺", "math-data-lab": "資料實驗室", "math-probability-lab": "機率試驗器",
     "science-motion-lab": "力與運動實驗室", "science-energy-lab": "能量實驗室", "science-particle-lab": "粒子模型實驗室",
@@ -304,6 +305,17 @@
         : results[state.test][kind];
       return `${designed}<section class="sim-stage sim-chemical-id" aria-label="未知溶液化學性質鑑定模擬"><h5>虛擬微量鑑定台</h5><p>本區只模擬已知候選的反應結果，不是實驗步驟或真實化學品操作指引。候選：食鹽水、稀鹽酸、稀碳酸鈉。</p><fieldset><legend>設定樣品與檢驗</legend><label>樣品對照 <select data-chemical-control="control" aria-label="樣品對照">${Object.entries(controlResults).map(([value,text]) => `<option value="${value}" ${state.control === value ? "selected" : ""}>${text}</option>`).join("")}</select></label>${state.control === "unknown" ? `<label>未知瓶 <select data-chemical-control="sample" aria-label="未知樣品瓶">${["X","Y","Z"].map(value => `<option value="${value}" ${state.sample === value ? "selected" : ""}>${value} 瓶</option>`).join("")}</select></label>` : ""}<label>檢驗方法 <select data-chemical-control="test" aria-label="檢驗方法"><option value="litmus" ${state.test === "litmus" ? "selected" : ""}>紫色石蕊初篩</option><option value="carbonateCheck" ${state.test === "carbonateCheck" ? "selected" : ""}>虛擬加酸與二氧化碳確認</option></select></label><button type="button" data-chemical-action="run">執行虛擬檢驗</button></fieldset><div class="sim-chemical-result" aria-live="polite"><p><b>直接觀察：</b>${esc(observation?.[0] || "先預測結果，再執行虛擬檢驗。")}</p><p><b>候選判讀：</b>${esc(observation?.[1] || "保留目前候選，不以外觀猜測身分。")}</p></div><p>推理提醒：先寫觀察，再寫推論；氣泡、顏色或陰性結果都不能單獨保證唯一身分。若控制組未如預期，應先檢查試劑／背景，不讀取未知樣本結論。</p></section>`;
     }
+    if (engine === "math-reasoning-lab") {
+      const steps = lesson.interactive?.steps || [];
+      if (!steps.length) return `${designed}<p role="status">本課尚缺可操作的推理步驟。</p>`;
+      const index = clamp(Number(state.reasoningStep || 0), 0, steps.length - 1);
+      const step = steps[index];
+      const selected = state.reasoningChoice || "";
+      const correct = selected === step.answer;
+      const choices = step.options.map((option, optionIndex) => { const key = String.fromCharCode(65 + optionIndex); return `<button type="button" data-reasoning-choice="${key}" aria-pressed="${selected === key}">${key}. ${esc(option)}</button>`; }).join("");
+      const feedback = !selected ? "先選一個答案，再依回饋修正。" : correct ? step.feedback : "這個選擇還不符合本步條件；回看題幹中的量、關係或證據後再試一次。";
+      return `${designed}<section class="sim-reasoning-lab" aria-label="數學推理實驗室"><p>${esc(lesson.interactive?.scenario || lesson.simulation.mission)}</p><p><b>進度：</b>第 ${index + 1}／${steps.length} 步</p><fieldset><legend>${esc(step.prompt)}</legend><div class="sim-actions">${choices}</div></fieldset><p class="sim-reasoning-feedback" role="status" aria-live="polite">${esc(feedback)}</p><div class="sim-actions"><button type="button" data-reasoning-nav="prev" ${index === 0 ? "disabled" : ""}>上一步</button><button type="button" data-reasoning-nav="next" ${!correct || index === steps.length - 1 ? "disabled" : ""}>下一步</button></div><p>每一步都必須先作答並讀取證據回饋；錯答不會直接揭露正解。</p></section>`;
+    }
     const evidence = ["直接觀察", "模型或資料", "可檢查的限制"][state.evidence - 1];
     return `<div class="sim-stage"><ol class="sim-evidence"><li class="${state.evidence >= 1 ? "active" : ""}">直接觀察：寫下情境中可確認的條件</li><li class="${state.evidence >= 2 ? "active" : ""}">模型或資料：連結可重現的理由</li><li class="${state.evidence >= 3 ? "active" : ""}">限制：說明還不能推論什麼</li></ol><p>目前聚焦：<b>${evidence}</b></p></div>${slider("evidence", "推理階段", state.evidence, 1, 3)}`;
   };
@@ -320,7 +332,7 @@
     return `<section class="simulation" data-simulation-lesson="${esc(instanceKey)}" aria-label="${esc(simulationLabel)}"><header><span class="tag">${esc(simulationLabel)}</span><h4>${esc(simulation.goal)}</h4><p>${esc(simulation.mission || "先預測，再操作與解釋。")} </p></header><div class="simulation-body">${renderModel(runtimeLesson, state)}</div><footer class="sim-learning"><p><b>學習紀錄</b>：先預測，操作後再用證據解釋。</p><div class="sim-actions"><button type="button" data-sim-action="predicted">我已提出預測</button><button type="button" data-sim-action="observed">我已記錄觀察</button><button type="button" data-sim-reset>重設模型</button></div><label>我的解釋<textarea data-sim-reflection rows="3" placeholder="我改變了什麼？看見什麼？這如何支持我的解釋？">${reflection}</textarea></label><p class="sim-status" aria-live="polite">${state.status || "尚未記錄預測與觀察。"}</p><details class="sim-sources"><summary>模型依據與參考來源</summary><ul>${simulation.sourceRefs.map(url => `<li><a href="${esc(url)}" target="_blank" rel="noreferrer">${esc(url)}</a></li>`).join("")}</ul></details></footer></section>`;
   };
   const rerender = root => { const lesson = lessons.get(root.dataset.simulationLesson); if (lesson) root.outerHTML = render(lesson); };
-  const update = (root, changes) => { const lesson = lessons.get(root.dataset.simulationLesson); if (!lesson) return; const instanceKey = root.dataset.simulationLesson; const parent = root.parentElement; const active = document.activeElement; const focusTarget = active?.matches("[data-sim-control]") ? ["data-sim-control", active.dataset.simControl] : active?.matches("[data-chemical-control]") ? ["data-chemical-control", active.dataset.chemicalControl] : active?.matches("[data-chemical-action]") ? ["data-chemical-action", active.dataset.chemicalAction] : active?.matches("[data-design-step]") ? ["data-design-step", active.dataset.designStep] : active?.matches("[data-atmo-scenario]") ? ["data-atmo-scenario", active.dataset.atmoScenario] : active?.matches("[data-eco-site]") ? ["data-eco-site", active.dataset.ecoSite] : active?.matches("[data-eco-scale]") ? ["data-eco-scale", active.dataset.ecoScale] : active?.matches("[data-inequality-relation]") ? ["data-inequality-relation", active.dataset.inequalityRelation] : active?.matches("[data-ticket-action]") ? ["data-ticket-action", active.dataset.ticketAction] : active?.matches("[data-transport-choice]") ? ["data-transport-choice", active.dataset.transportChoice, active.dataset.value] : active?.matches("[data-geometry-prediction]") ? ["data-geometry-prediction", active.dataset.geometryPrediction] : active?.matches("[data-geometry-transfer]") ? ["data-geometry-transfer", active.dataset.geometryTransfer] : active?.matches("[data-geometry-action]") ? ["data-geometry-action", active.dataset.geometryAction] : active?.matches("[data-sim-similarity]") ? ["data-sim-similarity", active.dataset.simSimilarity, active.dataset.value] : null; const next = { ...read(lesson.simulation), ...changes }; write(lesson.simulation, next); rerender(root); if (focusTarget && parent) parent.querySelector(`[data-simulation-lesson="${instanceKey}"] [${focusTarget[0]}="${focusTarget[1]}"]${focusTarget[2] ? `[data-value="${focusTarget[2]}"]` : ""}`)?.focus(); };
+  const update = (root, changes) => { const lesson = lessons.get(root.dataset.simulationLesson); if (!lesson) return; const instanceKey = root.dataset.simulationLesson; const parent = root.parentElement; const active = document.activeElement; const focusTarget = active?.matches("[data-sim-control]") ? ["data-sim-control", active.dataset.simControl] : active?.matches("[data-chemical-control]") ? ["data-chemical-control", active.dataset.chemicalControl] : active?.matches("[data-chemical-action]") ? ["data-chemical-action", active.dataset.chemicalAction] : active?.matches("[data-reasoning-choice]") ? ["data-reasoning-choice", active.dataset.reasoningChoice] : active?.matches("[data-reasoning-nav]") ? ["data-reasoning-nav", active.dataset.reasoningNav] : active?.matches("[data-design-step]") ? ["data-design-step", active.dataset.designStep] : active?.matches("[data-atmo-scenario]") ? ["data-atmo-scenario", active.dataset.atmoScenario] : active?.matches("[data-eco-site]") ? ["data-eco-site", active.dataset.ecoSite] : active?.matches("[data-eco-scale]") ? ["data-eco-scale", active.dataset.ecoScale] : active?.matches("[data-inequality-relation]") ? ["data-inequality-relation", active.dataset.inequalityRelation] : active?.matches("[data-ticket-action]") ? ["data-ticket-action", active.dataset.ticketAction] : active?.matches("[data-transport-choice]") ? ["data-transport-choice", active.dataset.transportChoice, active.dataset.value] : active?.matches("[data-geometry-prediction]") ? ["data-geometry-prediction", active.dataset.geometryPrediction] : active?.matches("[data-geometry-transfer]") ? ["data-geometry-transfer", active.dataset.geometryTransfer] : active?.matches("[data-geometry-action]") ? ["data-geometry-action", active.dataset.geometryAction] : active?.matches("[data-sim-similarity]") ? ["data-sim-similarity", active.dataset.simSimilarity, active.dataset.value] : null; const next = { ...read(lesson.simulation), ...changes }; write(lesson.simulation, next); rerender(root); if (focusTarget && parent) parent.querySelector(`[data-simulation-lesson="${instanceKey}"] [${focusTarget[0]}="${focusTarget[1]}"]${focusTarget[2] ? `[data-value="${focusTarget[2]}"]` : ""}`)?.focus(); };
   document.addEventListener("change", event => { const root = event.target.closest("[data-simulation-lesson]"); if (!root || !event.target.matches("[data-chemical-control]")) return; update(root, { [event.target.dataset.chemicalControl]: event.target.value, testRun: false }); });
   document.addEventListener("input", event => {
     const root = event.target.closest("[data-simulation-lesson]");
@@ -336,6 +348,18 @@
     const lesson = lessons.get(root.dataset.simulationLesson); if (!lesson) return;
     if (event.target.closest("[data-sim-reset]")) { localStorage.removeItem(stateKey(lesson.simulation)); rerender(root); return; }
     if (event.target.closest('[data-chemical-action="run"]')) { update(root, { testRun: true }); return; }
+    const reasoningChoice = event.target.closest("[data-reasoning-choice]");
+    if (reasoningChoice) { update(root, { reasoningChoice: reasoningChoice.dataset.reasoningChoice }); return; }
+    const reasoningNav = event.target.closest("[data-reasoning-nav]");
+    if (reasoningNav) {
+      const state = read(lesson.simulation);
+      const steps = lesson.interactive?.steps || [];
+      const index = clamp(Number(state.reasoningStep || 0), 0, Math.max(0, steps.length - 1));
+      const direction = reasoningNav.dataset.reasoningNav;
+      if (direction === "prev") update(root, { reasoningStep: Math.max(0, index - 1), reasoningChoice: "" });
+      if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
+      return;
+    }
     const ecoSite = event.target.closest("[data-eco-site]");
     if (ecoSite) { update(root, { site: ecoSite.dataset.ecoSite }); return; }
     const ecoScale = event.target.closest("[data-eco-scale]");
