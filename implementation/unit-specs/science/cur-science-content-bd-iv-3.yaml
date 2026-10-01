@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環
-    curriculumIntent: Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環
+    curriculumIntent: 以生產者、消費者、分解者與非生物環境的網絡，分析角色變化如何影響能量流、養分回流與生態系功能
     publisherEvidence:
       nani:
         status: pending
@@ -25,93 +25,95 @@ unitImplementationSpec:
         status: pending
         required: true
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+    currentEvidenceStatus: curriculum-and-kg-grounded; lesson-unit-specific; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 說明生產者、消費者、分解者與非生物環境在生態系中的角色與相互依賴
+  - 由物種移除、分解速率、養分濃度或生物量資料，追蹤直接影響與可能的連鎖影響
+  - 分開表示能量單向流動與物質回到環境後再被利用的循環，避免把兩種路徑畫成同一封閉循環
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 已理解食物網箭頭、營養階層能量流與碳循環基本概念
+  - 能閱讀簡單的物種數量、生物量、分解速率或養分濃度資料
   coreConcepts:
-  - Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 生產者固定外界能量並製造有機物，消費者經取食取得物質與能量，分解者將有機殘體分解並促使物質回到非生物環境
+  - 分解者不是只在生物死亡後才「清垃圾」的附加角色；分解與養分回流會影響生產者和整個食物網
+  - 移除一個角色可能經食物網、資源競爭或養分供應產生多層影響，但方向與幅度需依資料判斷，不能一律預設
   misconceptions:
-  - 把「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為分解者只處理死物且不會影響活著的生產者與消費者
+  - 把能量和物質都畫成會在生態系中完全循環
+  - 看到物種數量增加或減少就直接判定生態系「更健康／更差」，忽略時間尺度、非生物因子與食物網替代路徑
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 physical-simulation 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 以池塘中的藻類、小型消費者、魚、分解者與水中無機養分建立角色網絡'
+  - 'predict: 先預測若分解者活動大幅降低，哪些直接量可能先改變'
+  - 'manipulate: 切換角色存在／減少或分解速率，保持其他初始條件相同'
+  - 'observe: 同步更新有機殘體、無機養分、生產者生物量、消費者生物量及能量散失路徑'
+  - 'explain: 區分直接影響、可能連鎖與尚需量測的結果，不把相關變化當成必然因果'
+  - 'formalize: 建立四類角色、能量流與物質循環的功能連結'
+  - 'transfer: 農田、堆肥、森林落葉層或水域缺氧情境的角色與養分判讀'
+  - 'exit-ticket: 由一組分解者降低前後資料畫出兩條可能影響路徑並指出證據限制'
   visualizations:
-  - physical-simulation：以「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 生態角色網絡：生產者、消費者、分解者、無機環境分區，物質箭頭與能量箭頭使用不同線型與文字標籤
+  - 分解—養分帳本：有機殘體、無機養分與生產者吸收量同步呈現，不把「養分回流」畫成能量回流
+  - 物種移除前後資料：至少保留時間軸與多項變數，避免只用一個終點數字宣稱完整因果
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BD-IV-3-I01
     component: PhenomenonSimulationBlock
-    purpose: 讓學生操作並看見「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」中最容易被背誦取代的關係
+    purpose: 讓學生調整分解者活動或某一生態角色，從養分、生物量與食物網資料推理直接與連鎖影響
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        decomposerActivity: normal
+        producerLevel: normal
+        primaryConsumerLevel: normal
+        nutrientPool: baseline
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測 decomposerActivity 降低時有機殘體與無機養分的直接變化，不顯示正解
+    - 固定其他初始條件，只改一個角色或分解活動等級
+    - 比較至少三個時間點的有機殘體、養分、生產者與消費者資料
+    - 分別標出物質循環箭頭與能量散失箭頭，確認兩者不混用
+    - 寫出一項直接支持的結論、一項可能連鎖與一項仍需量測的結果
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 切換角色後，食物網、物質帳本與時間資料同步更新；不允許只改圖示不改資料
+    - 物質循環箭頭可以回到生產者可利用的環境庫，能量箭頭不得封閉循環
+    - 移除角色後不自動給「整個系統崩潰」等固定結論，需由資料決定變化
+    - 顏色不可單獨區分角色或箭頭類型，必須有名稱、線型與文字摘要
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BD-IV-3-I01
-      trigger: 把「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生把分解者視為可有可無、把能量畫成循環，或只憑單一物種數量判定整體生態系狀態
+      prompt: 分解者改變後哪一個物質庫先變？這條箭頭傳的是物質還是能量？你還需要哪一項資料才能判斷整個系統的後續影響？
+      expectedEvidence: 能引用有機殘體／養分等直接資料，分清能量與物質箭頭，並承認多層影響需要時間序列或其他變數
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對角色、物質與能量路徑，再要求換一個物種移除情境驗證。
+      incorrect: 先提示「先看直接相連的庫與箭頭」及「箭頭傳的是什麼」，不直接給完整連鎖答案。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課只借用先預測、單一角色操作與資料修正模型的節奏；池塘與養分資料均為本課自編。
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課以池塘、農田、堆肥與森林情境作原創遷移，不複製外部活動數據。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 角色狀態、養分、生物量、物質／能量箭頭與回饋皆提供鍵盤操作及文字狀態。
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 預測、角色控制、網絡、時間資料與回饋區域可導覽。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 生態網絡／物種移除／資料判讀
+    stemConstraint: 更換為農田、池塘、森林或堆肥情境，至少提供分解、養分或兩層食物網資料，不能只背角色定義
+    requiredResponse: 指出直接受影響路徑、引用至少兩項資料，並分開說明物質循環與能量流動
+    scoring: 角色與路徑正確 1、資料推理正確 1、能量／物質及限制說明 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 某池塘中分解者活動因低溫下降，兩週內有機殘體增加、可溶性無機養分下降，而藻類生物量稍後才下降。請指出一條直接影響與一條可能的後續連鎖；為什麼不能說「能量因此停止循環」？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 直接指出分解活動降低使有機殘體分解與養分回流減少
+    - 以養分下降連結稍後藻類生物量下降作為可能連鎖，但保留其他環境因子限制
+    - 說明能量本來就是單向流動並逐步散失，循環的是物質而非能量
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用 80～120 字說明分解者為什麼不只是「清理屍體」，並比較它對物質循環與能量流動的不同作用
+    constraint: 學生先寫；系統只提示殘體、養分、生產者與能量散失，不直接代寫完整答案
   mobileA11y:
     breakpoints:
     - 320
@@ -119,28 +121,27 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 各生態角色、養分、生物量、物質／能量箭頭與時間資料皆有可讀文字狀態
+    reducedMotion: 停用動畫仍可逐時間點閱讀資料
   testCases:
-  - 載入「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」時不得先顯示正解；學生必須先提交對「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的預測，且預測會被保留供後續比較。
-  - 操作「physical-simulation：以「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的 CAP transfer：換一個情境但保留「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，PhenomenonSimulationBlock 仍須以「Bd-Ⅳ-3：生態系角色促成能量流轉與物質循環」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 未提交分解者降低預測前不得顯示完整連鎖解說。
+  - 單獨改 decomposerActivity 時有機殘體、無機養分與後續生產者資料按時間同步更新。
+  - 物質循環圖可回到環境庫與生產者，能量路徑不得封閉回到前一營養階層。
+  - 學生以單一物種數量直接判定整體生態健康時命中迷思診斷並要求更多資料。
+  - 角色移除不自動輸出固定「崩潰」結果，應根據原創模型資料顯示可檢查變化。
+  - 320／375／768px 與鍵盤操作下，角色網絡、時間資料與回饋不得裁切。
+  - fallback 至少保留角色網絡、三時點養分／生物量表與物質／能量箭頭辨識題。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 互動實際操作生態角色或分解活動，不含 primary／secondary 假變項
+  - 至少診斷一次分解者、能量循環或單一物種指標迷思
+  - CAP transfer、exit ticket、mobile、keyboard、screen reader、reduced-motion 與 fallback 可執行
+  - 內容與教學法無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
     qaStatus: untested
   sourceRefs:
-  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 B、次主題 Bd；官方代碼 Bd-Ⅳ-3
     role: official-curriculum-source-of-truth
