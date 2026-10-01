@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Bc-Ⅳ-2：呼吸作用釋放能量
-    curriculumIntent: Bc-Ⅳ-2：呼吸作用釋放能量
+    curriculumIntent: 以有機物、氧氣、二氧化碳與能量證據解釋細胞呼吸，並區分細胞呼吸、氣體交換與缺氧代謝
     publisherEvidence:
       nani:
         status: pending
@@ -25,93 +25,95 @@ unitImplementationSpec:
         status: pending
         required: true
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
-    currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
+    currentEvidenceStatus: curriculum-and-kg-grounded; lesson-unit-specific; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Bc-Ⅳ-2：呼吸作用釋放能量」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 用物質與能量箭頭說明有氧呼吸消耗有機物與氧氣，產生二氧化碳、水並釋放可供細胞利用的能量
+  - 由活材料、滅活材料與空白對照的 O2、CO2、溫度或產物時間資料判斷呼吸作用證據
+  - 區分細胞呼吸與肺部吸氣吐氣，說明植物、動物與微生物都可進行細胞呼吸，且植物有光時仍會呼吸
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能閱讀氣體濃度或溫度隨時間變化的圖表
+  - 能辨認實驗組、滅活／無材料對照與控制變因
   coreConcepts:
-  - Bc-Ⅳ-2：呼吸作用釋放能量
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 細胞呼吸是細胞內分解有機物並釋放能量的代謝過程，不等同個體層級的呼吸運動或氣體交換
+  - 有氧呼吸需要氧氣並產生二氧化碳與水；可利用能量與散失為熱的能量需和氣體證據分開表達
+  - 缺氧時部分生物或細胞可改以其他代謝路徑取得較少可利用能量；氣體變化需配合材料、條件與對照判讀
   misconceptions:
-  - 把「Bc-Ⅳ-2：呼吸作用釋放能量」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為只有有肺的動物才會呼吸作用，或植物白天因光合作用而停止呼吸
+  - 把「吸氣、吐氣」直接等同細胞呼吸，忽略氣體交換只是取得／排出物質的一環
+  - 看到二氧化碳增加就宣稱已直接測得能量釋放量，忽略氣體只是代謝證據之一
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 physical-simulation 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 比較發芽種子、煮熟種子與空瓶的 O2／CO2／溫度資料，先判斷哪組有活躍代謝'
+  - 'predict: 預測活種子在密閉短時間內 O2、CO2 與溫度可能如何改變'
+  - 'manipulate: 固定材料量、容器體積、溫度與時間，只切換活／滅活材料或氧氣供應條件'
+  - 'observe: 同步更新 O2、CO2、溫度與物質—能量路徑圖'
+  - 'explain: 分開標示直接量測、呼吸作用推論與不能由資料直接得到的能量數值'
+  - 'formalize: 建立有氧呼吸的反應物、產物與能量轉換，並區分氣體交換'
+  - 'transfer: 運動肌肉、酵母、發芽種子與水生植物情境的代謝證據判讀'
+  - 'exit-ticket: 由一組活／滅活對照資料說明何者支持細胞呼吸，並指出一項資料限制'
   visualizations:
-  - physical-simulation：以「Bc-Ⅳ-2：呼吸作用釋放能量」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 三組時間曲線：活材料、滅活材料、空白對照共用 O2／CO2 尺度與時間軸
+  - 物質—能量路徑：有機物、O2、CO2、H2O、可利用能量與熱分層標示，避免把能量畫成物質
+  - 有氧／缺氧比較卡：只呈現課程所需的物質與相對能量結果，不把模型當成完整生化途徑
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BC-IV-2-I01
     component: PhenomenonSimulationBlock
-    purpose: 讓學生操作並看見「Bc-Ⅳ-2：呼吸作用釋放能量」中最容易被背誦取代的關係
+    purpose: 讓學生控制材料活性與氧氣條件，從 O2／CO2／溫度資料和對照組判斷細胞呼吸與能量釋放證據
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        materialState: germinating-seeds
+        oxygenCondition: available
+        durationMin: 30
+        sampleMassG: 20
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先提交活種子相對煮熟種子的 O2、CO2 與溫度變化預測，不顯示正解
+    - 固定樣品質量、容器與時間，只切換 materialState 或 oxygenCondition
+    - 標記至少兩筆氣體／溫度資料，並與滅活或空白對照比較
+    - 在路徑圖中放置有機物、O2、CO2 與能量箭頭，區分物質和能量
+    - 用一句話說明「觀察到什麼 → 支持哪個代謝推論 → 還不能證明什麼」
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 切換活／滅活材料時曲線、路徑與文字摘要同步更新，不能讓滅活材料保留同等代謝訊號
+    - 二氧化碳或溫度讀值不得直接標成 ATP 或能量數值；只能作為代謝相關證據
+    - 植物／種子情境不得暗示只有夜間才呼吸；有光時若另有光合作用需明示兩作用可能同時存在
+    - O2／CO2 顏色必須搭配化學式與文字標籤
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BC-IV-2-I01
-      trigger: 把「Bc-Ⅳ-2：呼吸作用釋放能量」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 學生把肺部吸氣吐氣等同細胞呼吸、認為植物白天不呼吸，或把 CO2 讀值直接當能量值
+      prompt: 哪一項是細胞內代謝，哪一項是個體層級氣體交換？這組資料實際量到 O2、CO2、溫度還是能量？對照組如何支持你的判斷？
+      expectedEvidence: 能以活／滅活或空白對照及時間資料支持呼吸作用，並承認氣體／溫度不是直接的能量量測
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 核對物質路徑、對照與證據限制，再要求換成另一生物情境驗證。
+      incorrect: 先提示「量到的物理量是什麼？」與「活材料和滅活材料差在哪裡？」再讓學生重試。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-2：呼吸作用釋放能量」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課只借用先預測、操作與資料修正模型的節奏；氣體、溫度與對照資料均為本課自編。
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-2：呼吸作用釋放能量」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 本課以發芽種子、滅活對照與氧氣條件設計原創探究，不複製外部活動數據。
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-2：呼吸作用釋放能量」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 材料狀態、氧氣條件、時間、O2／CO2／溫度與路徑皆提供鍵盤控制及文字狀態。
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Bc-Ⅳ-2：呼吸作用釋放能量」的 PhenomenonSimulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: 預測、變因控制、曲線、路徑圖與回饋區域可導覽。
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Bc-Ⅳ-2：呼吸作用釋放能量」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 代謝資料判讀／對照實驗／理由短答
+    stemConstraint: 更換成運動肌肉、酵母、發芽種子或其他活材料，至少提供一組活／滅活或氧氣條件對照資料，不能只背反應式
+    requiredResponse: 指出至少一筆 O2／CO2／溫度證據、一組對照及能量推論的限制
+    scoring: 呼吸概念正確 1、資料與對照正確 1、證據限制說明 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 等量發芽種子與煮熟種子放在相同密閉容器 30 分鐘。發芽種子組 O2 下降、CO2 上升，煮熟種子組幾乎不變。哪一組資料支持細胞呼吸較活躍？這些氣體資料本身能否直接告訴你釋放了多少 ATP？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 以發芽種子 O2 下降、CO2 上升及滅活對照支持呼吸作用較活躍
+    - 說明細胞呼吸不等於肺部呼吸運動，種子也可進行
+    - 明確指出氣體資料不能直接換算成 ATP 量，除非另有模型與量測條件
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Bc-Ⅳ-2：呼吸作用釋放能量」的證據、因果或觀察說給同學聽
-    constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
+    task: 用 80～120 字向同學解釋「植物白天也會呼吸」及「氣體交換不等於細胞呼吸」，至少引用一項可量測證據
+    constraint: 學生先寫；系統只提示作用層級、O2／CO2 與對照，不直接代寫完整答案
   mobileA11y:
     breakpoints:
     - 320
@@ -119,23 +121,22 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 材料、氧氣條件、O2／CO2／溫度曲線與能量路徑皆有可讀文字狀態
+    reducedMotion: 停用動畫仍可逐時間點閱讀資料
   testCases:
-  - 載入「Bc-Ⅳ-2：呼吸作用釋放能量」時不得先顯示正解；學生必須先提交對「Bc-Ⅳ-2：呼吸作用釋放能量」的預測，且預測會被保留供後續比較。
-  - 操作「physical-simulation：以「Bc-Ⅳ-2：呼吸作用釋放能量」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Bc-Ⅳ-2：呼吸作用釋放能量」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Bc-Ⅳ-2：呼吸作用釋放能量」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Bc-Ⅳ-2：呼吸作用釋放能量」的 CAP transfer：換一個情境但保留「Bc-Ⅳ-2：呼吸作用釋放能量」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，PhenomenonSimulationBlock 仍須以「Bc-Ⅳ-2：呼吸作用釋放能量」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 未提交活種子氣體變化預測前不得顯示完整呼吸作用解說。
+  - 切換 germinating-seeds／killed-seeds 時 O2、CO2、溫度與文字摘要同步更新。
+  - 學生把 CO2 直接當能量值時命中迷思診斷並要求指出實際量測物理量。
+  - 植物情境不得顯示「白天呼吸＝0」；若同時有光合作用則需標示淨氣體變化與兩作用並存。
+  - 缺氧模式需改變代謝路徑與相對能量提示，但不得宣稱所有生物都使用同一發酵產物。
+  - 320／375／768px 與鍵盤操作下，曲線、控制項、路徑與回饋不得裁切。
+  - fallback 至少保留活／滅活／空白三組靜態氣體資料與可重試代謝證據題。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
-  - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
-  - 至少一個互動操作能回答本單元明確學習問題
-  - 至少一個迷思被實際誘發、診斷並以分層回饋處理
-  - 會考 transfer、exit ticket 與表達延伸（適用時）可執行
-  - mobile、keyboard、screen reader、reduced-motion 與 fallback 測試通過
-  - 內容、教學法與版權審查通過；無 placeholder、TODO 或只換名詞模板
+  - 互動實際操作材料活性與氧氣條件，不含 primary／secondary 假變項
+  - 至少診斷一次細胞呼吸／氣體交換、植物白天或氣體／能量混淆
+  - CAP transfer、exit ticket、mobile、keyboard、screen reader、reduced-motion 與 fallback 可執行
+  - 內容與教學法無 placeholder、TODO 或只換名詞模板
   status:
     designStatus: specified
     implementationStatus: implemented
