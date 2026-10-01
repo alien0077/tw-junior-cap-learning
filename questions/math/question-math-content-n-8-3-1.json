@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供數列項次、規律、通項、遞迴與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-3",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "先比較相鄰項找規律，再由已知最後一項往後推。",
+  "solutionStrategy": "先觀察項與項之間的規律，區分位置 n 與項值 aₙ，再用前幾項驗證所找規則。",
   "solutionSteps": [
-    "列出前四項 4、8、12、16。",
-    "觀察相鄰項都增加 4。",
-    "從第 4 項 16 再增加 4。",
-    "得到第 5 項 20。",
-    "選 B，確認不是把項次 5 與數值相乘。"
+    "整理題意：數列 4、8、12、16、…… 的第 5 項是多少？",
+    "每項比前一項多 4，第 5 項為 16＋4＝20，所以選 B。",
+    "用前後項或通項回查，確認選項 B。"
   ]
 }
