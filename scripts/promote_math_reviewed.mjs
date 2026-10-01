@@ -107,4 +107,5 @@ for (const file of lessonFiles) {
 }
 
 console.log(JSON.stringify({ promotedCount: promoted.length, skippedCount: skipped.length, promoted, skipped }, null, 2));
-if (skipped.length) process.exitCode = 2;
+// Skips are protected review gaps, not execution failures. The workflow must commit
+// the eligible promotions while leaving skipped units untouched for manual review.
