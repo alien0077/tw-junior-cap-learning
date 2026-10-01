@@ -1,4 +1,5 @@
 import { renderInteractiveBlock } from "./dom-renderer.js?v=20260908-state-persistence-hash";
+import { enhanceMathInteractiveBlock } from "./math-interactive-renderers.js?v=20261001-live-math";
 
 export const REQUIRED_STUDENT_SECTIONS = Object.freeze([
   ["先問你", "learningGoals"],
@@ -74,8 +75,9 @@ export function renderStudentLesson({ document, mount, spec, lesson = null }) {
   }
   const interactive = document.createElement("div");
   interactive.className = "lesson-interactive-area";
-  spec.interactiveBlocks.forEach((_, blockIndex) => {
-    renderInteractiveBlock({ document, mount: interactive, spec, blockIndex, lesson });
+  spec.interactiveBlocks.forEach((block, blockIndex) => {
+    const rendered = renderInteractiveBlock({ document, mount: interactive, spec, blockIndex, lesson });
+    enhanceMathInteractiveBlock({ document, root: rendered.root, spec, block, engine: rendered.engine });
   });
   article.append(interactive);
   const extension = document.createElement("section");
