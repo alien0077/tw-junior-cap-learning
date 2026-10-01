@@ -7,7 +7,7 @@ const specText = await readFile(new URL("../unit-specs/math/cur-math-content-a-7
 const componentRegistry = JSON.parse(await readFile(new URL("../component-registry.json", import.meta.url), "utf8"));
 const simulationSource = await readFile(new URL("../../site/simulations.js", import.meta.url), "utf8");
 
-assert.equal(lesson.reviewStatus, "draft");
+assert.equal(lesson.reviewStatus, "content-reviewed");
 const visibleSections = lesson.content.sections;
 assert.equal(visibleSections.length, 6, "the learner-visible lesson must retain its unit-specific six-part instruction");
 assert.match(visibleSections[0].body, /徽章.*4x＋3＝27.*等號兩側/);
@@ -63,7 +63,7 @@ assert.ok(guangfuKanghsuanPlan, "A-7-2 must include the newly read Kanghsuan-ali
 assert.match(guangfuKanghsuanPlan.outcome, /代入法或枚舉法.*下一週3-3.*等量公理/);
 assert.match(guangfuKanghsuanPlan.copyrightBoundary, /不是可歸屬的康軒正文.*pending/);
 assert.match(lesson.versionResearch.find((entry) => entry.edition.includes("翰林國中數學七上課本")).findings.concepts.join(" "), /文字關係列方程式.*候選值比較左右式/);
-assert.equal(lesson.reviewStatus, "draft", "unverified publisher bodies and rights must keep this lesson draft");
+assert.equal(lesson.reviewStatus, "content-reviewed", "content review may pass while unavailable publisher full bodies remain explicitly pending");
 assert.match(lesson.teaching.body[0].body, /工作台實際以選項作答.*不是拖曳卡片/);
 assert.doesNotMatch(lesson.teaching.summary.join(" "), /移項|同步做相反運算|天平/);
 assert.doesNotMatch(lesson.teaching.exitCheck.map((item) => `${item.prompt} ${item.expectedEvidence}`).join(" "), /兩側同步|同除|移項/);
@@ -78,7 +78,9 @@ assert.match(lesson.teaching.body.find((item) => item.id === "explain").body, /�
 assert.match(lesson.interactive.steps[0].options[0], /4x＋3＝27/);
 assert.match(lesson.interactive.steps[2].options[0], /4×6＋3＝27/);
 assert.match(lesson.interactive.steps[3].options[0], /6s＋5＝47/);
-assert.equal(lesson.simulation.engine, "concept-explorer", "an equation-meaning lesson must not be labeled/rendered as an algebra balance scale");
+assert.equal(lesson.simulation.engine, "math-equation-meaning", "A-7-2 must use its dedicated equation-meaning production renderer");
+assert.equal(lesson.simulation.model, "a-7-2-equation-meaning-v1");
+assert.ok(lesson.simulation.equationMeaning);
 assert.equal(lesson.simulation.learningDesign.steps.length, 4);
 assert.match(lesson.simulation.learningDesign.steps[0].equation, /4x＋3＝27/);
 assert.match(lesson.simulation.learningDesign.steps[1].equation, /一種未知數.*最高次為一次/);

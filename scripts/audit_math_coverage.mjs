@@ -24,6 +24,21 @@ const productionMathEngines = new Set([
   "math-data-lab",
   "math-probability-lab",
 ]);
+const productionRendererSignatures = new Map([
+  ["math-number-line", ['slider("n"', 'role="img"', "sim-marker"]],
+  ["math-inequality-range", ["data-inequality-relation", 'slider("boundary"', 'role="img"']],
+  ["math-algebra-balance", ['class="balance"', 'slider("addend"', 'slider("target"']],
+  ["math-ticket-equation", ["data-ticket-action", "sim-ticket-feedback"]],
+  ["math-equation-meaning", ["sim-equation-meaning", 'slider("x"', 'class="balance"']],
+  ["math-reasoning-lab", ["data-reasoning-choice", "data-reasoning-nav", "sim-reasoning-feedback"]],
+  ["math-expression-lab", ["data-expression-original", "data-expression-reduced", 'slider("x"']],
+  ["math-function-graph", ['slider("m"', 'slider("b"', 'role="img"']],
+  ["math-system-graph", ['slider("sum"', "交點", 'role="img"']],
+  ["math-geometry", ["math-geometry", 'role="img"', "sim-marker"]],
+  ["math-data-lab", ["math-data-lab", 'slider("a"', 'slider("b"']],
+  ["math-probability-lab", ["math-probability-lab", "trials", "role=\"status\""]],
+]);
+
 
 const lessons = [];
 for (const file of lessonFiles) lessons.push({ file, ...(await readJson(`lessons/math/${file}`)) });
@@ -56,7 +71,9 @@ function reportCandidates(lessonFile) {
 
 function hasProductionRenderer(engine) {
   if (!engine || !productionMathEngines.has(engine)) return false;
-  return productionRendererSource.includes(`if (engine === "${engine}")`);
+  if (!productionRendererSource.includes(`if (engine === "${engine}")`)) return false;
+  const signatures = productionRendererSignatures.get(engine) || [];
+  return signatures.every(signature => productionRendererSource.includes(signature));
 }
 
 const rows = lessons.map(lesson => {
