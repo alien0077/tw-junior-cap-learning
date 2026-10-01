@@ -4,7 +4,7 @@ import { JSDOM } from "jsdom";
 
 const lesson = JSON.parse(await readFile(new URL("../../lessons/math/lesson-math-content-s-9-13.json", import.meta.url), "utf8"));
 const source = await readFile(new URL("../../site/simulations.js", import.meta.url), "utf8");
-assert.equal(lesson.reviewStatus, "draft", "publisher research and content review are still pending");
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review may pass while unavailable publisher full bodies remain explicitly pending");
 assert.equal(lesson.simulation.engine, "math-geometry");
 assert.equal(lesson.simulation.model, "s9-13-prism-surface-volume-v2");
 assert.equal(lesson.simulation.goal, lesson.simulation.mission && lesson.simulation.goal, "unit-specific objective is present");
@@ -93,4 +93,4 @@ simulation.querySelector('[data-geometry-action="submit-prediction"]').click();
 simulation = getSimulation();
 assert.equal(simulation.querySelector('[data-sim-control="prismLength"]').value, "3", "correct retry unlocks the model");
 
-console.log("PASS S-9-13 prediction gate, misconception hint, triangular-prism net/model, linked calculations, keyboard focus, transfer, reset, and draft status");
+console.log("PASS S-9-13 prediction gate, misconception hint, triangular-prism net/model, linked calculations, keyboard focus, transfer, reset, content review, and publisher evidence boundary");
