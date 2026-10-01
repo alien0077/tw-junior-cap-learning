@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供等差數列、公差、通項與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等差數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-13",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "兩項之間相隔 n₂−n₁ 次公差，用項差除以項次差。",
+  "solutionStrategy": "先找首項與公差，使用 aₙ=a₁+(n−1)d；代回相鄰項檢查公差一致。",
   "solutionSteps": [
-    "計算項次差 7−3＝4。",
-    "計算項值差 28−12＝16。",
-    "建立 4d＝16。",
-    "解得 d＝4。",
-    "選 B，從第 3 項連加四次 4 到 28。"
+    "整理題意：若等差數列第 3 項為 12、第 7 項為 28，公差是多少？",
+    "第 7 項比第 3 項多 4 個公差，28−12＝16，d＝16÷4＝4，選 B。",
+    "用相鄰項公差或通項回查，確認選項 B。"
   ]
 }
