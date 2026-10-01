@@ -13,7 +13,7 @@ unitImplementationSpec:
   - '9'
   fusedScope:
     officialCurriculum: Cb-Ⅳ-1：分子與原子
-    curriculumIntent: Cb-Ⅳ-1：分子與原子
+    curriculumIntent: 以粒子模型與化學式建立原子、分子、元素與化合物的層次關係，並用原子帳本檢查粒子數、下標、係數及反應前後原子守恆。
     publisherEvidence:
       nani:
         status: pending
@@ -24,93 +24,111 @@ unitImplementationSpec:
       hanlin:
         status: pending
         required: true
-    fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
+    fusionRule: 只融合已記錄的公開概念方向與可核對差異；未取得完整章節內容前，不得把公開入口或校方定位描述成三版完整內容審查。
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Cb-Ⅳ-1：分子與原子」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 由粒子圖與化學式判斷一個表示代表原子、分子、元素分子或化合物分子，並說出依據
+  - 分開解讀元素符號、右下標與前方係數，正確計算單一粒子組成與整批原子總數
+  - 用反應前後的逐元素原子帳本檢查原子只是重新排列，不能藉由修改下標來達成守恆
+  - 說明模型的顏色、球體大小與排列是表徵約定，不是原子的直接照片或真實比例
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能辨認常見元素符號及簡單化學式
+  - 能做整數乘法並閱讀簡單粒子模型
   coreConcepts:
-  - Cb-Ⅳ-1：分子與原子
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 原子是組成物質的基本粒子之一；分子由兩個或以上原子以特定方式結合，但並非所有物質都以獨立分子存在
+  - 分子不等於化合物：O₂ 是由同一元素原子組成的元素分子，H₂O 與 CO₂ 才是含不同元素的化合物分子
+  - 化學式右下標表示一個粒子中該元素的原子數；前方係數表示有多少個該粒子，兩者不可互換
+  - 化學反應中各元素原子的種類與總數守恆；配平只能調整係數，改下標會改變物質身分
   misconceptions:
-  - 把「Cb-Ⅳ-1：分子與原子」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為只要是分子就是化合物，忽略 O₂、H₂ 等元素分子
+  - 把 2H₂ 說成一個含四個氫原子的分子，或把 2H 與 H₂ 視為相同表示
+  - 為了讓反應式原子數相等而修改 H₂O、O₂ 等化學式的下標
+  - 把粒子模型中的顏色、球體尺寸或距離視為原子的真實外觀與比例
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 particle-model 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 並列 O₂、H₂O、2H₂ 與 2H 的粒子卡，先要求學生說出每張卡有幾個粒子、哪些原子'
+  - 'predict: 對化學式先預測粒子數、每粒子組成與整批原子總數，不先顯示答案'
+  - 'build: 選元素符號、下標與係數組裝粒子模型，粒子圖與原子帳本同步更新'
+  - 'classify: 依一個粒子中的元素種類，區分元素分子與化合物分子，並保留非分子物質的界線'
+  - 'compare: 固定 H₂O 的下標，只改係數；再固定係數，只改下標，比較物質身分與總原子數的不同'
+  - 'conserve: 以 2H₂ + O₂ → 2H₂O 的粒子卡清點反應前後 H、O 原子數'
+  - 'model-limit: 指出模型顏色與大小是標記，不由圖直接推論原子的實際顏色或比例'
+  - 'transfer: 以陌生粒子圖與未配平反應式判斷應改係數還是下標'
+  - 'exit-ticket: 比較 2H₂、H₂、2H、H₂O，逐一說明粒子數與原子數'
   visualizations:
-  - particle-model：以「Cb-Ⅳ-1：分子與原子」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 粒子卡同步顯示化學式、粒子數、每粒子原子組成及整批原子總數
+  - 原子帳本以元素為列，比較反應前後總數；若不守恆，只標示差額，不自動改下標
+  - 元素以文字符號與形狀／顏色雙重標記，並固定顯示「顏色與大小為模型約定」
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-CB-IV-1-I01
     component: ParticleModelBlock
-    purpose: 讓學生操作並看見「Cb-Ⅳ-1：分子與原子」中最容易被背誦取代的關係
+    purpose: 讓學生用元素符號、下標與係數建立粒子，再以原子帳本驗證分子分類與化學反應中的原子守恆
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        formulaPreset: H2O
+        coefficient: 1
+        representationMode: molecule
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先對 O₂、H₂O、2H₂、2H 預測粒子數與原子總數
+    - 切換 H₂、O₂、H₂O、CO₂ 等化學式，調整前方係數並觀察粒子複製與原子帳本
+    - 比較「改係數」與「改下標」後，哪些只改整批數量、哪些會改變單一粒子身分
+    - 在 2H₂ + O₂ → 2H₂O 模型中逐元素清點反應前後原子數
+    - 標記一項模型可支持的結論與一項圖形本身無法證明的真實性質
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 係數改變時只能複製或減少完整粒子，不得改變單一粒子內原子比例
+    - 下標改變時必須重新標示為不同化學式／粒子，不得暗示只是增加粒子數
+    - 原子帳本與粒子圖同步更新，反應前後不守恆時顯示哪個元素差多少
+    - 模型顏色同時有元素符號標籤，顏色不可作為唯一識別
+    - 窄螢幕時化學式、粒子圖與原子帳本改為上下排列，不得裁切係數或下標
     misconceptionChecks:
-    - id: MC-CUR-SCIENCE-CONTENT-CB-IV-1-I01
-      trigger: 把「Cb-Ⅳ-1：分子與原子」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+    - id: MC-CB-IV-1-MOLECULE-COMPOUND
+      trigger: 將 O₂ 判為化合物，或聲稱所有分子都含兩種以上元素
+      prompt: 請先數一個粒子內有幾種「元素種類」，再判斷它是元素分子還是化合物分子。
+      expectedEvidence: 指出 O₂ 只有氧一種元素，而 H₂O／CO₂ 含不同元素
+    - id: MC-CB-IV-1-COEFFICIENT-SUBSCRIPT
+      trigger: 把 2H₂ 解讀成 H₄ 單一粒子，或把 2H 與 H₂ 視為相同
+      prompt: 前方的 2 與右下角的 2 各作用在哪一層？請分別說出粒子數及每粒子原子數。
+      expectedEvidence: 係數作用於整個粒子數；下標作用於單一粒子的組成
+    - id: MC-CB-IV-1-CONSERVATION
+      trigger: 為了配平而改動 H₂、O₂、H₂O 的下標
+      prompt: 改下標後還是同一種物質嗎？請保持化學式不變，只調整完整粒子的數量再清點原子。
+      expectedEvidence: 只改係數即可使 H、O 兩側分別守恆，且保留原化學式身分
+    - id: MC-CB-IV-1-MODEL-REALISM
+      trigger: 由模型球的顏色或大小直接宣稱真實原子顏色或尺寸比例
+      prompt: 圖中哪些是表示用約定？這張模型真正能支持的是原子種類、數量還是實際外觀？
+      expectedEvidence: 指出顏色／球體大小為模型約定，只用其追蹤種類、數量與連結關係
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出學生使用的化學式位置、粒子卡或原子帳本證據，再用新的化學式重新驗證。
+      incorrect: 依「分類層次、係數／下標、守恆或模型限制」提供一階提示；學生重試前不直接顯示完整粒子答案。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
-    application: "本課「Cb-Ⅳ-1：分子與原子」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "本課 ParticleModelBlock 只吸收先預測、再操作、再解釋的教學節奏；粒子資料、化學式與題目由本課自行設計。"
   - refId: phet-activity
     reuseDecision: inspiration-only
-    application: "本課「Cb-Ⅳ-1：分子與原子」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "互動以粒子卡和原子帳本建立可檢查證據，不複製任何外部模擬的畫面或活動腳本。"
   - refId: w3c-aria
     reuseDecision: inspiration-only
-    application: "本課「Cb-Ⅳ-1：分子與原子」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "化學式、係數控制、粒子總數及原子帳本均提供等價文字狀態與鍵盤操作。"
   - refId: w3c-landmarks
     reuseDecision: inspiration-only
-    application: "本課「Cb-Ⅳ-1：分子與原子」的 ParticleModelBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
+    application: "預測、粒子模型、原子帳本、回饋與 transfer 分區可由鍵盤及輔助科技依序導覽。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「Cb-Ⅳ-1：分子與原子」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 粒子模型判讀／守恆檢核／理由短答
+    stemConstraint: 提供一組不同於 H₂/O₂/H₂O 的粒子圖或未配平反應式，要求保留化學式只改係數；不得只換物質名稱重複例題
+    requiredResponse: 說出每個化學式代表的單一粒子組成、逐元素清點反應前後原子總數，並指出應調整哪個係數及理由
+    scoring: 粒子／下標解讀正確 1、原子帳本正確 1、只改係數且理由完整 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 請比較 2H₂、H₂、2H 與 H₂O：各表示幾個粒子、共有多少個 H 原子，並指出哪一個含兩種元素。
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 2H₂ 表示兩個 H₂ 分子共四個 H 原子；H₂ 表示一個分子共兩個 H 原子
+    - 2H 表示兩個獨立 H 原子，不等同一個 H₂ 分子
+    - H₂O 含 H、O 兩種元素，且能正確區分係數與下標
   expressionExtension:
     applicable: false
-    task: 用 80～120 字／英文短段落，將「Cb-Ⅳ-1：分子與原子」的證據、因果或觀察說給同學聽
+    task: 用 80～120 字向同學解釋為什麼「分子」不等於「化合物」，並用 O₂ 與 H₂O 各舉一例。
     constraint: 學生先寫；系統只給一階回饋，不直接代寫完整答案
   mobileA11y:
     breakpoints:
@@ -119,15 +137,18 @@ unitImplementationSpec:
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
-    screenReader: 每個控制項有名稱、目前值、操作結果與錯誤回饋
-    reducedMotion: 停用自動動畫仍可逐步操作
+    screenReader: 化學式選擇、係數、粒子數、每種元素總數與守恆狀態都有名稱、目前值及更新文字
+    reducedMotion: 停用粒子移動動畫後仍可以逐步新增／移除完整粒子並完成原子帳本
   testCases:
-  - 載入「Cb-Ⅳ-1：分子與原子」時不得先顯示正解；學生必須先提交對「Cb-Ⅳ-1：分子與原子」的預測，且預測會被保留供後續比較。
-  - 操作「particle-model：以「Cb-Ⅳ-1：分子與原子」作為唯一主題，至少同步呈現兩種表徵」中的主要變項後，與「表徵／證據與結論的對應」相關的圖、表、句構或因果鏈必須同步更新，文字狀態也要說明改變了什麼。
-  - 學生觸發「把「Cb-Ⅳ-1：分子與原子」的相關變化誤認為因果，或忽略控制變因」時，系統必須命中本單元的 misconception check，要求學生指出可定位證據，並先給一階提示而非直接揭露答案。
-  - 在 320px、375px 與 768px 寬度，以鍵盤完成「Cb-Ⅳ-1：分子與原子」的預測—操作—觀察—解釋流程時，核心題幹、控制項、回饋與可讀狀態不得溢位或遺失。
-  - 以新資料執行「Cb-Ⅳ-1：分子與原子」的 CAP transfer：換一個情境但保留「Cb-Ⅳ-1：分子與原子」的核心關係；不可只換名詞；學生回答必須選答後必須指出證據或推理步驟，評分同時檢查概念、證據對應與表達完整度。
-  - 外部資料失效時，ParticleModelBlock 仍須以「Cb-Ⅳ-1：分子與原子」的文字與資料 fallback 完成預測、操作、觀察、解釋與 transfer，不得阻塞本課。
+  - 初始載入 O₂、H₂O、2H₂、2H 卡片時不先顯示分類答案；學生先提交粒子數與原子數預測。
+  - 將 H₂O 的係數從 1 改成 3 時，畫面顯示三個完整 H₂O 粒子、H 原子總數 6、O 原子總數 3，單一粒子化學式不變。
+  - 若將 H₂O 的 O 下標改為 2，必須標記成不同組成 H₂O₂，不可把它當成「兩個水分子」。
+  - 將 O₂ 判為化合物時命中 MOLECULE-COMPOUND 診斷，要求先數元素種類。
+  - 在反應模型中嘗試改 H₂O 下標配平時命中 CONSERVATION 診斷，要求恢復化學式並只調係數。
+  - 2H₂ + O₂ → 2H₂O 的原子帳本左右均顯示 H=4、O=2，並以文字狀態回報守恆。
+  - 模型圖顏色／球體大小旁固定有表徵限制說明；學生不得只靠顏色回答元素而看不到文字符號。
+  - 320px、375px、768px 下以鍵盤切換化學式與係數時，焦點保留，化學式、粒子圖、原子帳本與回饋皆可讀且不溢位。
+  - 外部資源失效時，ParticleModelBlock 仍以本地 lesson/spec 的化學式、粒子資料與文字 fallback 完成預測、操作、解釋與 transfer。
   definitionOfDone:
   - 課綱 ID、KG ID、標題與官方 locator 通過一致性檢查
   - 三版本章節級證據已補齊，或明確標記 pending，不得冒充完成
