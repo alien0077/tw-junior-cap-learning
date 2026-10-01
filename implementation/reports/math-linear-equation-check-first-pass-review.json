@@ -6,10 +6,23 @@
   "repairs": [
     "reviewed all linked questions",
     "removed generic solution boilerplate/exposed distractor annotations where present",
-    "marked lesson/questions content-reviewed"
+    "marked lesson/questions content-reviewed",
+    "corrected lesson and all 10 linked questions from invalid A-8-4 factorization KG lineage to verified A-7-3 linear-equation lineage"
   ],
   "remaining": [
     "runtime QA separate"
   ],
-  "finalDecision": "CONTENT_PASS_RUNTIME_QA_SEPARATE"
+  "finalDecision": "CONTENT_PASS_RUNTIME_QA_SEPARATE",
+  "lineageAudit": {
+    "auditedAt": "2026-10-01",
+    "previousKnowledgeId": "kg-math-content-a-8-4",
+    "correctedKnowledgeId": "kg-math-content-a-7-3",
+    "evidence": [
+      "lesson gradeRange is 7 and topic is solving/checking one-variable linear equations",
+      "curriculum cur-math-content-a-7-3 is A-7-3：一元一次方程式的解法與應用",
+      "knowledge graph marks kg-math-content-a-7-3 verified and links it to cur-math-content-a-7-3",
+      "kg-math-content-a-8-4 is A-8-4：因式分解 and was an invalid lineage"
+    ],
+    "repairedFiles": 11
+  }
 }
