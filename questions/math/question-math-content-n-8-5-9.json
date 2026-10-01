@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供等差級數求和、首末項、項數與情境累計能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等差級數方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-5",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "看到已給的和公式，直接代入指定項數並檢查選項。",
+  "solutionStrategy": "先確認項數、首項與末項，使用 Sₙ=n(a₁+aₙ)/2；也可前後配對回查。",
   "solutionSteps": [
-    "找出指定 n＝4。",
-    "代入 Sₙ＝n(n＋5)，得 S₄＝4(4＋5)。",
-    "計算括號 4＋5＝9。",
-    "計算 4×9＝36。",
-    "選 C，確認答案選項與公式結果一致。"
+    "整理題意：若等差級數前 n 項和為 Sₙ＝n(n＋5)，S₄ 為何？",
+    "將 n＝4 代入 Sₙ＝n(n＋5)，S₄＝4×9＝36，所以選 C。",
+    "用配對求和回查，確認選項 C。"
   ]
 }
