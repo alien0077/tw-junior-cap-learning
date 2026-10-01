@@ -9,6 +9,19 @@ const lessonFiles = (await list("lessons/math/" )).filter(name => name.endsWith(
 const questionFiles = (await list("questions/math/" )).filter(name => name.endsWith(".json"));
 const specFiles = (await list("implementation/unit-specs/math/" )).filter(name => name.endsWith(".yaml"));
 const reportFiles = new Set((await list("implementation/reports/" )).filter(name => /^math-.*first-pass-review\.json$/.test(name)));
+const productionRendererSource = await readText("site/simulations.js");
+const productionMathEngines = new Set([
+  "math-number-line",
+  "math-inequality-range",
+  "math-algebra-balance",
+  "math-ticket-equation",
+  "math-expression-lab",
+  "math-function-graph",
+  "math-system-graph",
+  "math-geometry",
+  "math-data-lab",
+  "math-probability-lab",
+]);
 
 const lessons = [];
 for (const file of lessonFiles) lessons.push({ file, ...(await readJson(`lessons/math/${file}`)) });
@@ -39,20 +52,28 @@ function reportCandidates(lessonFile) {
   return candidates;
 }
 
+function hasProductionRenderer(engine) {
+  if (!engine || !productionMathEngines.has(engine)) return false;
+  return productionRendererSource.includes(`if (engine === "${engine}")`);
+}
+
 const rows = lessons.map(lesson => {
   const qs = questionsByLesson.get(lesson.id) || [];
   const specId = lesson.id.replace(/^lesson-math-/, "cur-math-");
   const directSpec = specs.get(specId);
   const reports = reportCandidates(lesson.file).filter(name => reportFiles.has(name));
+  const simulationEngine = lesson.simulation?.engine || null;
   return {
     id: lesson.id,
     file: lesson.file,
     reviewStatus: lesson.reviewStatus || "missing",
     questionCount: qs.length,
     questionDrafts: qs.filter(q => q.reviewStatus !== "content-reviewed").length,
-    simulationEngine: lesson.simulation?.engine || null,
+    simulationEngine,
     simulationModel: lesson.simulation?.model || null,
     simulationGoal: Boolean(lesson.simulation?.goal),
+    simulationMission: Boolean(lesson.simulation?.mission),
+    productionRenderer: hasProductionRenderer(simulationEngine),
     interactiveType: lesson.interactive?.type || null,
     spec: directSpec || null,
     reports,
@@ -73,6 +94,8 @@ const summary = {
   deprecatedNonReviewedQuestionGroups: rows.filter(r => !rowIsActive(r) && r.questionDrafts > 0).length,
   lessonsWithSimulation: rows.filter(r => r.simulationEngine).length,
   activeLessonsWithoutSimulation: rows.filter(r => !r.simulationEngine && rowIsActive(r)).length,
+  activeLessonsWithProductionRenderer: rows.filter(r => rowIsActive(r) && r.productionRenderer).length,
+  activeGenericSimulationCount: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").length,
   lessonsWithInteractive: rows.filter(r => r.interactiveType).length,
   lessonsWithDirectSpec: rows.filter(r => r.spec).length,
   specs: specs.size,
@@ -80,14 +103,18 @@ const summary = {
 };
 
 const problems = {
-  wrongQuestionCount: rows.filter(r => rowIsActive(r) && r.questionCount !== 10).map(r => ({ id: r.id, count: r.questionCount })),
-  nonReviewedActiveQuestions: rows.filter(r => rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, count: r.questionDrafts })),
-  draftLessons: rows.filter(r => r.reviewStatus === "draft").map(r => r.id),
-  missingReviewStatus: rows.filter(r => r.reviewStatus === "missing").map(r => r.id),
-  activeWithoutSimulation: rows.filter(r => rowIsActive(r) && !r.simulationEngine).map(r => r.id),
-  activeWithoutFirstPassReport: rows.filter(r => rowIsActive(r) && r.reports.length === 0).map(r => r.id),
-  activeWithoutDirectSpec: rows.filter(r => rowIsActive(r) && !r.spec).map(r => r.id),
-  deprecatedWithDraftQuestions: rows.filter(r => !rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, count: r.questionDrafts })),
+  wrongQuestionCount: rows.filter(r => rowIsActive(r) && r.questionCount !== 10).map(r => ({ id: r.id, file: r.file, count: r.questionCount })),
+  nonReviewedActiveQuestions: rows.filter(r => rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, file: r.file, count: r.questionDrafts })),
+  draftLessons: rows.filter(r => r.reviewStatus === "draft").map(r => ({ id: r.id, file: r.file })),
+  missingReviewStatus: rows.filter(r => r.reviewStatus === "missing").map(r => ({ id: r.id, file: r.file })),
+  activeWithoutSimulation: rows.filter(r => rowIsActive(r) && !r.simulationEngine).map(r => ({ id: r.id, file: r.file })),
+  activeWithGenericSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").map(r => ({ id: r.id, file: r.file, model: r.simulationModel })),
+  activeWithUnsupportedProductionSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine && !productionMathEngines.has(r.simulationEngine)).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
+  activeWithoutProductionRenderer: rows.filter(r => rowIsActive(r) && r.simulationEngine && r.simulationEngine !== "concept-explorer" && !r.productionRenderer).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
+  activeSimulationMissingModelGoalOrMission: rows.filter(r => rowIsActive(r) && r.simulationEngine && (!r.simulationModel || !r.simulationGoal || !r.simulationMission)).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
+  activeWithoutFirstPassReport: rows.filter(r => rowIsActive(r) && r.reports.length === 0).map(r => ({ id: r.id, file: r.file })),
+  activeWithoutDirectSpec: rows.filter(r => rowIsActive(r) && !r.spec).map(r => ({ id: r.id, file: r.file })),
+  deprecatedWithDraftQuestions: rows.filter(r => !rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, file: r.file, count: r.questionDrafts })),
   implementedButUntestedSpecs: [...specs.entries()].filter(([, s]) => s.implementationStatus === "implemented" && s.qaStatus === "untested").map(([id, s]) => ({ id, component: s.component, file: s.file })),
 };
 
@@ -95,12 +122,17 @@ const output = { summary, problems };
 if (process.env.MATH_AUDIT_VERBOSE === "1") output.rows = rows;
 console.log(JSON.stringify(output, null, 2));
 
+const informational = new Set(["draftLessons", "implementedButUntestedSpecs", "deprecatedWithDraftQuestions", "activeWithoutDirectSpec"]);
 let failed = false;
 for (const [name, value] of Object.entries(problems)) {
-  if (["draftLessons", "implementedButUntestedSpecs", "deprecatedWithDraftQuestions", "activeWithoutDirectSpec"].includes(name)) continue;
-  if (value.length) {
-    failed = true;
-    console.error(`AUDIT_FAIL ${name}: ${value.length}`);
+  if (informational.has(name) || !value.length) continue;
+  failed = true;
+  console.error(`AUDIT_FAIL ${name}: ${value.length}`);
+  for (const issue of value) {
+    const item = typeof issue === "string" ? { id: issue } : issue;
+    const file = item.file ? `lessons/math/${item.file}` : "scripts/audit_math_coverage.mjs";
+    const detail = item.engine ? ` engine=${item.engine}` : item.model ? ` model=${item.model}` : "";
+    console.error(`::error file=${file}::${name}: ${item.id || "unknown"}${detail}`);
   }
 }
 if (summary.lessonCount !== 129 || summary.questionCount !== 1290) {
