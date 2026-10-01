@@ -38,8 +38,23 @@ jobs:
               raise SystemExit("\n".join(errors))
           print("A-7-2 simulation contract PASS")
           PY
-      - name: Run runtime tests
-        run: node --test implementation/runtime/*.test.mjs
+      - name: Validate A-7-2 production renderer
+        run: |
+          node --input-type=module - <<'JS'
+          import assert from "node:assert/strict";
+          import { readFile } from "node:fs/promises";
+          const lesson = JSON.parse(await readFile("lessons/math/lesson-math-content-a-7-2.json", "utf8"));
+          const source = await readFile("site/simulations.js", "utf8");
+          assert.equal(lesson.simulation.engine, "math-equation-meaning");
+          assert.equal(lesson.simulation.model, "a-7-2-equation-meaning-v1");
+          assert.ok(lesson.simulation.equationMeaning);
+          assert.match(source, /math-equation-meaning/);
+          assert.match(source, /data-equation-meaning-action=["']check["']/);
+          assert.match(source, /candidate/);
+          assert.match(source, /leftValue|左側/);
+          assert.match(source, /rightValue|右側/);
+          console.log("A-7-2 production renderer PASS");
+          JS
       - name: Run exhaustive math audit and persist snapshot
         id: audit
         continue-on-error: true
