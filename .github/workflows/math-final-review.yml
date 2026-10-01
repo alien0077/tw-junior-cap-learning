@@ -8,9 +8,11 @@ on:
       - 'questions/math/**'
       - 'implementation/unit-specs/math/**'
       - 'implementation/runtime/math-*.test.mjs'
-      - 'site/simulations.js'
+      - 'site/**'
       - 'scripts/audit_math_coverage.mjs'
       - 'scripts/finalize_math_review_tail.mjs'
+      - 'scripts/test_math_all_browser.py'
+      - 'scripts/mark_math_specs_qa_passed.mjs'
       - '.github/workflows/math-final-review.yml'
   workflow_dispatch:
 
@@ -24,6 +26,7 @@ jobs:
   finalize:
     if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
         with:
@@ -32,8 +35,15 @@ jobs:
         with:
           node-version: '22'
           cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Install runtime test dependencies
         run: npm ci
+      - name: Install Chromium QA dependency
+        run: |
+          python3 -m pip install --disable-pip-version-check playwright
+          python3 -m playwright install --with-deps chromium
       - name: Apply final math review repairs
         run: node scripts/finalize_math_review_tail.mjs
       - name: Run A-7-2 equation-meaning regression
@@ -42,19 +52,47 @@ jobs:
         run: npm run test:math:s9-1
       - name: Run S-9-13 surface-volume regressions
         run: npm run test:math:s9-13
+      - name: Run exhaustive real-Chromium math QA
+        run: |
+          python3 -m http.server 8765 >/tmp/math-browser-server.log 2>&1 &
+          SERVER_PID=$!
+          cleanup() { kill "$SERVER_PID" 2>/dev/null || true; }
+          trap cleanup EXIT
+          for attempt in $(seq 1 30); do
+            if curl --fail --silent http://127.0.0.1:8765/site/index.html >/dev/null; then
+              break
+            fi
+            sleep 1
+          done
+          curl --fail --silent http://127.0.0.1:8765/site/index.html >/dev/null
+          python3 scripts/test_math_all_browser.py \
+            --url http://127.0.0.1:8765/site/index.html \
+            --report implementation/reports/math-browser-qa-current.json
+      - name: Promote math unit specs from browser evidence
+        run: node scripts/mark_math_specs_qa_passed.mjs
       - name: Run strengthened exhaustive math audit
         run: node scripts/audit_math_coverage.mjs > /tmp/math-exhaustive-audit-current.json
       - name: Save audit snapshot
         run: cp /tmp/math-exhaustive-audit-current.json implementation/reports/math-exhaustive-audit-current.json
-      - name: Commit final math review state
+      - name: Commit final math QA state
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lessons/math/lesson-math-content-s-9-1.json lessons/math/lesson-math-content-s-9-13.json implementation/reports/math-s-9-1-first-pass-review.json implementation/reports/math-s-9-13-first-pass-review.json implementation/runtime/math-a-7-2-scope-interaction.test.mjs scripts/audit_math_coverage.mjs implementation/reports/math-exhaustive-audit-current.json
+          git add \
+            lessons/math/lesson-math-content-s-9-1.json \
+            lessons/math/lesson-math-content-s-9-13.json \
+            implementation/unit-specs/math \
+            implementation/reports/math-s-9-1-first-pass-review.json \
+            implementation/reports/math-s-9-13-first-pass-review.json \
+            implementation/reports/math-browser-qa-current.json \
+            implementation/reports/math-spec-qa-current.json \
+            implementation/reports/math-exhaustive-audit-current.json \
+            implementation/runtime/math-a-7-2-scope-interaction.test.mjs \
+            scripts/audit_math_coverage.mjs
           if git diff --cached --quiet; then
             echo "No changes to commit"
             exit 0
           fi
-          git commit -m "fix(math): complete final content and interaction review"
+          git commit -m "fix(math): complete exhaustive browser and spec QA"
           git pull --rebase origin main
           git push origin HEAD:main
