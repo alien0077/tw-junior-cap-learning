@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供固定公比、指定項、有限和與倍增情境能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等比數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-6",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "先用相鄰項相除確認公比，再乘上末項求下一項。",
+  "solutionStrategy": "先確認相鄰非零項的公比，使用 aₙ=a₁rⁿ⁻¹；以連續兩項相除回查公比。",
   "solutionSteps": [
-    "觀察相鄰項 6÷2＝3。",
-    "再驗證 18÷6＝3、54÷18＝3。",
-    "確定公比 q＝3。",
-    "下一項＝54×3＝162。",
-    "選 C，回算 162÷54 仍為 3。"
+    "整理題意：等比數列 2、6、18、54、…… 的下一項為何？",
+    "相鄰兩項的比都是 3，所以下一項為 54×3＝162，選 C。",
+    "用相鄰項公比回查，確認選項 C。"
   ]
 }
