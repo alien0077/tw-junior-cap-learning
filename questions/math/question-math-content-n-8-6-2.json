@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供固定公比、指定項、有限和與倍增情境能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等比數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-6",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "使用 aₙ＝a₁qⁿ⁻¹，注意指數是項次減 1。",
+  "solutionStrategy": "先確認相鄰非零項的公比，使用 aₙ=a₁rⁿ⁻¹；以連續兩項相除回查公比。",
   "solutionSteps": [
-    "讀出首項 a₁＝5、公比 q＝3、項次 n＝5。",
-    "寫出 a₅＝5×3⁵⁻¹。",
-    "把指數化為 4。",
-    "計算 3⁴＝81，再得 5×81＝405。",
-    "選 C，逐項 5、15、45、135、405 驗證。"
+    "整理題意：等比數列首項為 5、公比為 3，則第 5 項是多少？",
+    "a₅＝5×3⁴＝5×81＝405，所以選 C。",
+    "用相鄰項公比回查，確認選項 C。"
   ]
 }
