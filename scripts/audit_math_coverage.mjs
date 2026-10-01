@@ -60,12 +60,15 @@ const rows = lessons.map(lesson => {
 });
 
 function rowIsActive(row) { return row.reviewStatus !== "deprecated"; }
+const countBy = values => values.reduce((acc, value) => (acc[value || "missing"] = (acc[value || "missing"] || 0) + 1, acc), {});
 
 const summary = {
   lessonCount: lessons.length,
   questionCount: questions.length,
   exactTenQuestions: rows.filter(r => r.questionCount === 10).length,
-  lessonStatusCounts: rows.reduce((acc, row) => (acc[row.reviewStatus] = (acc[row.reviewStatus] || 0) + 1, acc), {}),
+  lessonStatusCounts: countBy(rows.map(r => r.reviewStatus)),
+  simulationEngineCounts: countBy(rows.map(r => r.simulationEngine)),
+  interactiveTypeCounts: countBy(rows.map(r => r.interactiveType)),
   activeNonReviewedQuestionGroups: rows.filter(r => rowIsActive(r) && r.questionDrafts > 0).length,
   deprecatedNonReviewedQuestionGroups: rows.filter(r => !rowIsActive(r) && r.questionDrafts > 0).length,
   lessonsWithSimulation: rows.filter(r => r.simulationEngine).length,
