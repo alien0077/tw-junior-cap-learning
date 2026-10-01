@@ -27,45 +27,44 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「B：能量的形式、轉換及流動」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 設定系統邊界，辨認能量來源、儲存、轉換與流向
+  - 以能量帳本同時說明守恆與效率，追蹤有效輸出及熱、聲等其他輸出
+  - 區分能量與功率，利用功率與時間比較不同裝置的總能量轉換
   prerequisites:
   - 能讀懂本單元使用的基本符號、圖表或短文本
   - 能依提示完成一次預測、操作、觀察、解釋循環
   coreConcepts:
-  - B：能量的形式、轉換及流動
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 能量可在熱、光、聲、電、化學能與力學能等形式間轉換並跨系統邊界流動
+  - 能量守恆追蹤總量；效率描述指定有效輸出占輸入能量的比例
+  - 功率是單位時間的能量轉換量，總能量仍取決於作用時間
   misconceptions:
-  - 把「B：能量的形式、轉換及流動」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 把效率低說成能量消失，忽略熱、聲等其他輸出
+  - 把功率與能量視為同一物理量，或只看瓦數比較總耗能
+  - 未先設定系統邊界就把流入／流出的能量重複計算
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 physical-simulation 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 從煞車、手電筒或馬達追問「能量去哪裡」並先畫系統邊界'
+  - 'predict: 給定固定輸入，先預測提高有效輸出時其他輸出如何改變'
+  - 'manipulate: 調整有效輸出比例或作用時間，一次只改一項條件'
+  - 'observe: 同步更新能量流向箭頭、數值帳本與效率／總能量讀值'
+  - 'explain: 說明守恆與效率為何不矛盾，並指出熱、聲等能量流向'
+  - 'formalize: 區分能量、功率與效率的定義及單位關係'
+  - 'transfer: 比較兩個不同功率與使用時間的裝置，或追蹤較大尺度能量流'
+  - 'exit-ticket: 完成一張輸入＝有效輸出＋其他輸出的能量帳本'
   visualizations:
-  - physical-simulation：以「B：能量的形式、轉換及流動」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 能量流向圖：以箭頭同步呈現輸入、有效輸出與熱／聲等其他輸出
+  - 能量帳本：輸入固定時，有效輸出與其他輸出同步更新且總和保持一致
+  - 功率—時間讀值：改變時間時同步更新總能量，並提供非色彩文字標籤
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-B-I01
     component: PhenomenonSimulationBlock
-    purpose: 讓學生操作並看見「B：能量的形式、轉換及流動」中最容易被背誦取代的關係
+    purpose: 讓學生調整有效輸出比例與作用時間，直接看見能量守恆、效率與功率三者的不同角色
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        usefulOutputPercent: 40
+        durationHours: 1
     studentActions:
     - 先提交預測，不顯示正解
     - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
@@ -78,9 +77,9 @@ unitImplementationSpec:
     - 窄螢幕不得裁切核心圖、題幹與回饋
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-B-I01
-      trigger: 把「B：能量的形式、轉換及流動」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 把未成為有效輸出的能量說成消失，或只用功率大小判定總耗能
+      prompt: 請先完成能量帳本，再指出比較總能量時還需要哪一個時間條件。
+      expectedEvidence: 能寫出輸入＝有效輸出＋其他輸出，並指出總能量比較需要功率與時間
     feedback:
       correct: 指出學生使用的證據，並要求用新情境再驗證一次。
       incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
