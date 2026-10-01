@@ -39,7 +39,6 @@ const productionRendererSignatures = new Map([
   ["math-probability-lab", ["math-probability-lab", "trials", "role=\"status\""]],
 ]);
 
-
 const lessons = [];
 for (const file of lessonFiles) lessons.push({ file, ...(await readJson(`lessons/math/${file}`)) });
 const questions = [];
@@ -56,9 +55,9 @@ for (const file of specFiles) {
   const text = await readText(`implementation/unit-specs/math/${file}`);
   const lessonId = text.match(/^\s*lessonId:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
   const component = text.match(/^\s*component:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
-  const designStatus = text.match(/^\s*designStatus:\s*([^\n#]+)/m)?.[1]?.trim();
-  const implementationStatus = text.match(/^\s*implementationStatus:\s*([^\n#]+)/m)?.[1]?.trim();
-  const qaStatus = text.match(/^\s*qaStatus:\s*([^\n#]+)/m)?.[1]?.trim();
+  const designStatus = text.match(/^\s*designStatus:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const implementationStatus = text.match(/^\s*implementationStatus:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const qaStatus = text.match(/^\s*qaStatus:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
   if (lessonId) specs.set(lessonId, { file, component, designStatus, implementationStatus, qaStatus });
 }
 
@@ -118,6 +117,7 @@ const summary = {
   lessonsWithInteractive: rows.filter(r => r.interactiveType).length,
   lessonsWithDirectSpec: rows.filter(r => r.spec).length,
   specs: specs.size,
+  specQaStatusCounts: countBy([...specs.values()].map(s => s.qaStatus)),
   reports: reportFiles.size,
 };
 
@@ -135,13 +135,14 @@ const problems = {
   activeWithoutDirectSpec: rows.filter(r => rowIsActive(r) && !r.spec).map(r => ({ id: r.id, file: r.file })),
   deprecatedWithDraftQuestions: rows.filter(r => !rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, file: r.file, count: r.questionDrafts })),
   implementedButUntestedSpecs: [...specs.entries()].filter(([, s]) => s.implementationStatus === "implemented" && s.qaStatus === "untested").map(([id, s]) => ({ id, component: s.component, file: s.file })),
+  implementedButUnpassedSpecs: [...specs.entries()].filter(([, s]) => s.implementationStatus === "implemented" && s.qaStatus !== "passed").map(([id, s]) => ({ id, component: s.component, file: s.file, qaStatus: s.qaStatus || "missing" })),
 };
 
 const output = { summary, problems };
 if (process.env.MATH_AUDIT_VERBOSE === "1") output.rows = rows;
 console.log(JSON.stringify(output, null, 2));
 
-const informational = new Set(["draftLessons", "implementedButUntestedSpecs", "deprecatedWithDraftQuestions", "activeWithoutDirectSpec"]);
+const informational = new Set(["draftLessons", "deprecatedWithDraftQuestions", "activeWithoutDirectSpec", "implementedButUntestedSpecs"]);
 let failed = false;
 for (const [name, value] of Object.entries(problems)) {
   if (informational.has(name) || !value.length) continue;
@@ -149,13 +150,13 @@ for (const [name, value] of Object.entries(problems)) {
   console.error(`AUDIT_FAIL ${name}: ${value.length}`);
   for (const issue of value) {
     const item = typeof issue === "string" ? { id: issue } : issue;
-    const file = item.file ? `lessons/math/${item.file}` : "scripts/audit_math_coverage.mjs";
-    const detail = item.engine ? ` engine=${item.engine}` : item.model ? ` model=${item.model}` : "";
+    const file = item.file ? `implementation/unit-specs/math/${item.file}` : "scripts/audit_math_coverage.mjs";
+    const detail = item.engine ? ` engine=${item.engine}` : item.model ? ` model=${item.model}` : item.qaStatus ? ` qaStatus=${item.qaStatus}` : "";
     console.error(`::error file=${file}::${name}: ${item.id || "unknown"}${detail}`);
   }
 }
-if (summary.lessonCount !== 129 || summary.questionCount !== 1290) {
+if (summary.lessonCount !== 129 || summary.questionCount !== 1290 || summary.specs !== 125) {
   failed = true;
-  console.error(`AUDIT_FAIL expected 129 lessons / 1290 questions, got ${summary.lessonCount} / ${summary.questionCount}`);
+  console.error(`AUDIT_FAIL expected 129 lessons / 1290 questions / 125 specs, got ${summary.lessonCount} / ${summary.questionCount} / ${summary.specs}`);
 }
 if (failed) process.exitCode = 1;
