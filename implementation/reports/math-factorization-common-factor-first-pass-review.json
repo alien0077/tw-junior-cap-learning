@@ -6,10 +6,22 @@
   "repairs": [
     "reviewed all linked questions",
     "removed generic solution boilerplate/exposed distractor annotations where present",
-    "marked lesson/questions content-reviewed"
+    "marked lesson/questions content-reviewed",
+    "corrected lesson and all 10 questions from A-8-4 general factorization lineage to A-8-5 factorization-method lineage"
   ],
   "remaining": [
     "runtime QA separate"
   ],
-  "finalDecision": "CONTENT_PASS_RUNTIME_QA_SEPARATE"
+  "finalDecision": "CONTENT_PASS_RUNTIME_QA_SEPARATE",
+  "lineageAudit": {
+    "auditedAt": "2026-10-01",
+    "previousKnowledgeId": "kg-math-content-a-8-4",
+    "correctedKnowledgeId": "kg-math-content-a-8-5",
+    "evidence": [
+      "lesson explicitly teaches common-factor factorization as a method",
+      "curriculum A-8-5 is 因式分解的方法",
+      "A-8-5 unit spec explicitly starts by checking/proposing a common factor and then verifying by expansion"
+    ],
+    "repairedFiles": 11
+  }
 }
