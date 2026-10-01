@@ -27,63 +27,59 @@ unitImplementationSpec:
     fusionRule: 只融合三版本共同概念與可核對差異；章節級證據雖已記錄，融合審查前不得聲稱已完成版本融合
     currentEvidenceStatus: curriculum-and-kg-grounded; publisher-chapter-evidence-recorded; fusion-review-pending
   learningGoals:
-  - 以可觀察證據說明「Aa-Ⅳ-4：元素性質週期性」的核心現象
-  - 控制變因並解讀模型或資料
-  - 用證據推理回答陌生情境題
+  - 由原子序與週期表位置找出週期、族及可比較的元素
+  - 從同族或同週期資料辨認性質規律，提出有條件的預測
+  - 區分資料呈現的趨勢與「所有性質完全相同」等過度推論
   prerequisites:
-  - 能讀懂本單元使用的基本符號、圖表或短文本
-  - 能依提示完成一次預測、操作、觀察、解釋循環
+  - 能由原子序在簡化週期表定位元素
+  - 能閱讀表格與折線趨勢
   coreConcepts:
-  - Aa-Ⅳ-4：元素性質週期性
-  - 表徵／證據與結論的對應
-  - 錯誤答案所反映的概念差異
+  - 週期表依原子序排列，週期性是性質隨位置呈現可重複的規律
+  - 同族元素常有相近化學性質，但不代表所有物理與化學性質相同
+  - 趨勢可用來預測未知元素，但預測需受資料範圍與實驗條件限制
   misconceptions:
-  - 把「Aa-Ⅳ-4：元素性質週期性」的相關變化誤認為因果，或忽略控制變因
-  - 把記憶答案當成理解證據
-  - 忽略題幹中的限制條件或單位
+  - 認為同族元素所有性質都相同
+  - 認為原子量越大必定越活潑
+  - 把資料中的趨勢當成沒有例外、無條件成立的定律
   contentFlow:
-  - 'hook: 以單元真實問題引起預測'
-  - 'activate-prerequisite: 顯示先備檢核並允許補救'
-  - 'visualize: 用 evidence-lab 建立可觀察表徵'
-  - 'predict: 學生先提交預測且答案暫不揭露'
-  - 'manipulate: 改變一個變項或標記一段證據'
-  - 'observe: 同步更新圖、表、句構或因果鏈'
-  - 'explain: 學生用一句話說明觀察到的關係'
-  - 'formalize: 再顯示本單元正式語言與記法'
-  - 'transfer: 進入會考型新資料題'
-  - 'exit-ticket: 一題理由題加一個自我診斷'
+  - 'hook: 隱去一個元素資料，要求由鄰近與同族資料預測'
+  - 'predict: 先選預測區間與理由'
+  - 'manipulate: 切換同族／同週期比較並選擇性質欄位'
+  - 'observe: 週期表位置、資料表與趨勢圖同步高亮'
+  - 'explain: 指出支持趨勢的資料點與不能推出的性質'
+  - 'transfer: 對新元素位置提出可檢驗預測'
+  - 'exit-ticket: 寫一個有條件的週期性預測與限制'
   visualizations:
-  - evidence-lab：以「Aa-Ⅳ-4：元素性質週期性」作為唯一主題，至少同步呈現兩種表徵
-  - 每次變更都保留因果可追溯的標記、圖例與文字替代
+  - 簡化週期表與性質資料表同步選取
+  - 趨勢圖顯示實際提供的資料點，不用平滑線暗示不存在的精確值
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-AA-IV-4-I01
     component: EvidenceLabBlock
-    purpose: 讓學生操作並看見「Aa-Ⅳ-4：元素性質週期性」中最容易被背誦取代的關係
+    purpose: 讓學生選取同族或同週期元素，以實際資料辨認規律並預測被遮住的資料範圍
     initialState:
       mode: predict
       showAnswer: false
       selectedEvidence: []
       variableValues:
-        primary: 1
-        secondary: 1
+        comparisonMode: group
+        property: reactivity
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先選擇同族或同週期比較並提交預測
+    - 切換性質欄位，標記支持趨勢的至少兩個資料點
+    - 揭開未知值後比較預測與資料
+    - 說明趨勢能支持與不能支持的結論
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 週期表選取、資料列與圖上資料點同步
+    - 缺值明示為未知，不以插值偽造測量
+    - 顏色搭配族／週期文字標籤
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-AA-IV-4-I01
-      trigger: 把「Aa-Ⅳ-4：元素性質週期性」的相關變化誤認為因果，或忽略控制變因
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 因同族就宣稱所有性質相同，或由原子量單獨判定活性
+      prompt: 請指出你使用的是哪一個性質欄位、哪些資料點，以及結論只適用在哪個比較範圍。
+      expectedEvidence: 至少引用兩筆同一性質資料並保留趨勢限制
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 肯定資料範圍與趨勢證據，再要求換另一性質檢查是否仍成立。
+      incorrect: 提示只比較同一性質欄，不可用原子量代替反應資料。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
