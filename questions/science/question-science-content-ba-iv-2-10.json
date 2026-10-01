@@ -2,23 +2,23 @@
   "id": "question-science-content-ba-iv-2-10",
   "subject": "science",
   "type": "single-choice",
-  "prompt": "用能量觀點比較光合作用與呼吸作用，最完整的說法是什麼？",
+  "prompt": "同樣葉面積與溫度下，密閉容器中的葉片照光 20 分鐘後氧氣濃度上升；另一組相同葉片在黑暗中氧氣濃度下降。根據這些資料，下列哪個結論最合理？",
   "options": [
     {
       "id": "A",
-      "text": "兩者都只會釋放熱，沒有物質變化"
+      "text": "照光組氧氣增加，證明葉片完全停止呼吸作用"
     },
     {
       "id": "B",
-      "text": "光合作用只在動物進行，呼吸作用只在植物進行"
+      "text": "照光組的氧氣變化是光合作用與呼吸作用共同造成的淨結果，不能只靠淨增加就說呼吸停止"
     },
     {
       "id": "C",
-      "text": "呼吸作用把光能直接變成葡萄糖，光合作用把葡萄糖完全消失"
+      "text": "黑暗組氧氣下降，表示黑暗會把氧氣直接變成光能"
     },
     {
       "id": "D",
-      "text": "光合作用儲存光能於有機物，呼吸作用釋放有機物化學能供細胞使用"
+      "text": "只要照光，植物所有細胞都只進行光合作用"
     }
   ],
   "knowledgeIds": [
@@ -26,18 +26,18 @@
   ],
   "difficulty": "hard",
   "answer": {
-    "value": "D",
-    "explanation": "光合作用將光能儲存在有機物，呼吸作用再分解有機物釋放可用能量；兩者的原料、產物與能量方向不同，選 D。"
+    "value": "B",
+    "explanation": "B。植物在照光時仍可進行呼吸作用；容器中氧氣上升表示在該條件與時間內，光合作用造成的氧氣增加大於呼吸作用造成的氧氣消耗，觀察到的是兩種作用疊加後的淨變化，不能據此說呼吸停止。"
   },
   "provenance": {
     "origin": "original",
     "license": "All rights reserved",
     "sourceUrl": "https://www.grow22.com/download/114/114_cp/05_114P_Nature.pdf",
-    "sourceLocator": "三筆公立學校公開自然科試題／課程資料的光合作用、呼吸作用與能量證據能力方向；本題只作 pattern-only 改寫。",
-    "authoringNote": "本題取公開資料能力方向，題幹、選項、答案、解析與五步解法均依 Ba-Ⅳ-2 重新撰寫，未複製原題、圖表或答案；待第二輪 AI／Terra 內容複核。"
+    "sourceLocator": "公開自然科試題的光合作用、呼吸作用、光照條件與實驗資料判讀能力方向；本題僅採 pattern-only，重新設計照光／黑暗的淨氣體資料情境。",
+    "authoringNote": "本題依 Ba-Ⅳ-2 的核心迷思重新撰寫，要求區分氣體淨變化與單一作用是否存在；題幹、選項、答案、解析與解題步驟均為原創。"
   },
   "reviewStatus": "draft",
-  "updatedAt": "2026-09-23",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-science-content-ba-iv-2",
   "examPatternRefs": [
     {
@@ -45,21 +45,21 @@
       "title": "114 年國中教育會考自然科公開試題",
       "year": "114",
       "locator": "光合作用、呼吸作用、能量轉換與實驗資料判讀",
-      "pattern": "取由反應物、產物、光照條件與能量路徑推論生命作用的能力方向。",
+      "pattern": "取由光照條件、氣體資料與對照推論生命作用的能力方向。",
       "subject": "science",
-      "observedPattern": "取由反應物、產物、光照條件與能量路徑推論生命作用的能力方向。",
+      "observedPattern": "公開評量重視由觀察資料推論作用，同時保留資料可支持範圍；本題以全新照光／黑暗資料重寫。",
       "reuseDecision": "pattern-only",
       "status": "recorded",
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "同時比較兩作用的能量方向與物質流，不只記單一反應名稱。",
+  "solutionStrategy": "先判讀兩組氧氣的直接變化，再區分『淨變化』與『某一作用是否停止』，最後用黑暗組確認呼吸作用會消耗氧氣。",
   "solutionSteps": [
-    "先判定光合作用是能量儲存過程。",
-    "有機物承接光能形成化學能。",
-    "呼吸作用分解有機物釋放化學能。",
-    "細胞用能量進行生命活動並可能放熱。",
-    "所以選 D。"
+    "照光組直接觀察到的是氧氣濃度上升。",
+    "黑暗組氧氣下降，支持葉片仍會以呼吸作用消耗氧氣。",
+    "照光時光合作用與呼吸作用可以同時進行。",
+    "因此照光組的氧氣上升只能表示當時光合作用的氧氣產生量大於呼吸作用的氧氣消耗量。",
+    "不能由淨增加推論呼吸停止，所以選 B。"
   ],
   "studyReferences": [
     "https://lgt.ntpc.edu.tw/TeachPlanFile_Upload/2022/plan/641_plan.pdf",
