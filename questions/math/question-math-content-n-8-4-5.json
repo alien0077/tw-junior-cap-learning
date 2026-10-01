@@ -36,8 +36,8 @@
     "sourceLocator": "三份公立學校公開數學試題僅供等差數列、公差、通項與情境應用能力方向研究；未複製原題、選項、圖表或答案。",
     "authoringNote": "依官方課綱 KG 與三筆公立學校公開數學試題的等差數列方向獨立改寫；題幹、數值、選項、解析與五步解法均為原創，待第二輪 AI／Terra 內容複核。"
   },
-  "reviewStatus": "draft",
-  "updatedAt": "2026-09-10",
+  "reviewStatus": "content-reviewed",
+  "updatedAt": "2026-10-01",
   "lessonId": "lesson-math-content-n-8-4",
   "examPatternRefs": [
     {
@@ -74,12 +74,10 @@
       "locatorLevel": "paper"
     }
   ],
-  "solutionStrategy": "將指定數值代入等差通項，解一次方程式找項次。",
+  "solutionStrategy": "先找首項與公差，使用 aₙ=a₁+(n−1)d；代回相鄰項檢查公差一致。",
   "solutionSteps": [
-    "建立 9＋(n−1)×2＝25。",
-    "兩邊同減 9，得 2(n−1)＝16。",
-    "兩邊除以 2，得 n−1＝8。",
-    "解得 n＝9。",
-    "選 C，代入 9＋8×2＝25。"
+    "整理題意：等差數列首項為 9、公差為 2，哪一項等於 25？",
+    "9＋(n−1)×2＝25，得 2(n−1)＝16、n−1＝8、n＝9，所以選 C。",
+    "用相鄰項公差或通項回查，確認選項 C。"
   ]
 }
