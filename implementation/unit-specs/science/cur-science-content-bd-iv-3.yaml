@@ -40,7 +40,7 @@ unitImplementationSpec:
   misconceptions:
   - 認為分解者只處理死物且不會影響活著的生產者與消費者
   - 把能量和物質都畫成會在生態系中完全循環
-  - 看到物種數量增加或減少就直接判定生態系「更健康／更差」，忽略時間尺度、非生物因子與食物網替代路徑
+  - 看到物種數量增加或減少就直接判定生態系更健康或更差，忽略時間尺度、非生物因子與食物網替代路徑
   contentFlow:
   - 'hook: 以池塘中的藻類、小型消費者、魚、分解者與水中無機養分建立角色網絡'
   - 'predict: 先預測若分解者活動大幅降低，哪些直接量可能先改變'
@@ -52,8 +52,8 @@ unitImplementationSpec:
   - 'exit-ticket: 由一組分解者降低前後資料畫出兩條可能影響路徑並指出證據限制'
   visualizations:
   - 生態角色網絡：生產者、消費者、分解者、無機環境分區，物質箭頭與能量箭頭使用不同線型與文字標籤
-  - 分解—養分帳本：有機殘體、無機養分與生產者吸收量同步呈現，不把「養分回流」畫成能量回流
-  - 物種移除前後資料：至少保留時間軸與多項變數，避免只用一個終點數字宣稱完整因果
+  - 分解—養分帳本：有機殘體、無機養分與生產者吸收量同步呈現，不把養分回流畫成能量回流
+  - 物種移除前後資料：保留時間軸與多項變數，避免只用一個終點數字宣稱完整因果
   interactiveBlocks:
   - id: CUR-SCIENCE-CONTENT-BD-IV-3-I01
     component: PhenomenonSimulationBlock
@@ -76,7 +76,7 @@ unitImplementationSpec:
     visualRules:
     - 切換角色後，食物網、物質帳本與時間資料同步更新；不允許只改圖示不改資料
     - 物質循環箭頭可以回到生產者可利用的環境庫，能量箭頭不得封閉循環
-    - 移除角色後不自動給「整個系統崩潰」等固定結論，需由資料決定變化
+    - 移除角色後不自動給整個系統崩潰等固定結論，需由資料決定變化
     - 顏色不可單獨區分角色或箭頭類型，必須有名稱、線型與文字摘要
     misconceptionChecks:
     - id: MC-CUR-SCIENCE-CONTENT-BD-IV-3-I01
@@ -85,7 +85,7 @@ unitImplementationSpec:
       expectedEvidence: 能引用有機殘體／養分等直接資料，分清能量與物質箭頭，並承認多層影響需要時間序列或其他變數
     feedback:
       correct: 核對角色、物質與能量路徑，再要求換一個物種移除情境驗證。
-      incorrect: 先提示「先看直接相連的庫與箭頭」及「箭頭傳的是什麼」，不直接給完整連鎖答案。
+      incorrect: 先提示先看直接相連的庫與箭頭及箭頭傳的是什麼，不直接給完整連鎖答案。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
@@ -105,14 +105,14 @@ unitImplementationSpec:
     requiredResponse: 指出直接受影響路徑、引用至少兩項資料，並分開說明物質循環與能量流動
     scoring: 角色與路徑正確 1、資料推理正確 1、能量／物質及限制說明 1
   exitTicket:
-    prompt: 某池塘中分解者活動因低溫下降，兩週內有機殘體增加、可溶性無機養分下降，而藻類生物量稍後才下降。請指出一條直接影響與一條可能的後續連鎖；為什麼不能說「能量因此停止循環」？
+    prompt: 某池塘中分解者活動因低溫下降，兩週內有機殘體增加、可溶性無機養分下降，而藻類生物量稍後才下降。請指出一條直接影響與一條可能的後續連鎖；為什麼不能說能量因此停止循環？
     successCriteria:
     - 直接指出分解活動降低使有機殘體分解與養分回流減少
     - 以養分下降連結稍後藻類生物量下降作為可能連鎖，但保留其他環境因子限制
     - 說明能量本來就是單向流動並逐步散失，循環的是物質而非能量
   expressionExtension:
     applicable: false
-    task: 用 80～120 字說明分解者為什麼不只是「清理屍體」，並比較它對物質循環與能量流動的不同作用
+    task: 用 80～120 字說明分解者為什麼不只是清理屍體，並比較它對物質循環與能量流動的不同作用
     constraint: 學生先寫；系統只提示殘體、養分、生產者與能量散失，不直接代寫完整答案
   mobileA11y:
     breakpoints:
@@ -128,7 +128,7 @@ unitImplementationSpec:
   - 單獨改 decomposerActivity 時有機殘體、無機養分與後續生產者資料按時間同步更新。
   - 物質循環圖可回到環境庫與生產者，能量路徑不得封閉回到前一營養階層。
   - 學生以單一物種數量直接判定整體生態健康時命中迷思診斷並要求更多資料。
-  - 角色移除不自動輸出固定「崩潰」結果，應根據原創模型資料顯示可檢查變化。
+  - 角色移除不自動輸出固定崩潰結果，應根據原創模型資料顯示可檢查變化。
   - 320／375／768px 與鍵盤操作下，角色網絡、時間資料與回饋不得裁切。
   - fallback 至少保留角色網絡、三時點養分／生物量表與物質／能量箭頭辨識題。
   definitionOfDone:
@@ -142,6 +142,6 @@ unitImplementationSpec:
     implementationStatus: implemented
     qaStatus: untested
   sourceRefs:
-  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
+  - url: https://www.naer.edu.tw/upload/1/16/doc/820/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E8%87%AA%E7%84%B6%E7%A7%91%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 22～30 頁／PDF 第 26～34 頁；國民中學教育階段學習內容；主題 B、次主題 Bd；官方代碼 Bd-Ⅳ-3
     role: official-curriculum-source-of-truth
