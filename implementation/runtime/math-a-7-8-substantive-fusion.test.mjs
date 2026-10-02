@@ -7,7 +7,7 @@ const spec = readFileSync(new URL("../unit-specs/math/cur-math-content-a-7-8.yam
 const simulationSource = readFileSync(new URL("../../site/simulations.js", import.meta.url), "utf8");
 const visible = lesson.content.sections.map(({ heading, body }) => `${heading}\n${body}`).join("\n");
 
-assert.equal(lesson.reviewStatus, "draft");
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
 assert.equal(lesson.content.sections.length, 6);
 assert.equal(lesson.teaching.body.length, 6);
 assert.equal(lesson.simulation.engine, "concept-explorer");
@@ -60,4 +60,4 @@ for (const step of [1, 2, 3]) {
 }
 assert.match(root.textContent, /−5、−4、−3/);
 assert.match(root.querySelector("svg").getAttribute("aria-label"), /負三成立、負二不成立、負一不成立/);
-console.log("A-7-8 source-to-visible fusion, solution-set reasoning, interactive proof graph, keyboard focus, and draft gates: ok");
+console.log("A-7-8 source-to-visible fusion, solution-set reasoning, interactive proof graph, keyboard focus, and content-review/evidence-boundary gates: ok");
