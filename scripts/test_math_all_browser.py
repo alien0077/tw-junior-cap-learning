@@ -254,9 +254,15 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
             await require_count(sim, '[data-sim-control="commonFactor"]', 1, "common-factor prediction missing")
             await require_count(sim, '[data-sim-control="factorTransfer"]', 1, "factor transfer missing")
     elif engine == "math-algebra-balance":
-        await require_count(sim, ".balance", 1, "algebra balance visual missing")
-        await require_count(sim, '[data-sim-control="addend"]', 1, "balance addend slider missing")
-        await require_count(sim, '[data-sim-control="target"]', 1, "balance target slider missing")
+        if model == "a-7-3-linear-equation-check-v1":
+            await require_count(sim, ".mvl-linear-equation", 1, "linear-equation verification renderer missing")
+            await require_count(sim, '[data-sim-control="linearFirstStep"]', 1, "linear-equation first-step prediction missing")
+            await require_count(sim, '[data-sim-control="linearCandidate"]', 1, "linear-equation candidate control missing")
+            await require_count(sim, '[data-sim-control="linearTransfer"]', 1, "linear-equation transfer missing")
+        else:
+            await require_count(sim, ".balance", 1, "algebra balance visual missing")
+            await require_count(sim, '[data-sim-control="addend"]', 1, "balance addend slider missing")
+            await require_count(sim, '[data-sim-control="target"]', 1, "balance target slider missing")
     elif engine == "math-ticket-equation":
         await require_count(sim, ".sim-ticket-equation", 1, "ticket equation renderer missing")
         await require_count(sim, '[data-ticket-action="check"]', 1, "ticket equation verification control missing")
