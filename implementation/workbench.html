@@ -108,6 +108,26 @@
       .math-factor-meaning-lab fieldset { display: grid; grid-template-columns: 1fr; }
       .math-factor-meaning-lab fieldset button { width: 100%; }
     }
+    .math-poly-lab { border: 2px solid #475569; border-radius: 16px; padding: 1rem; background: #fbfdff; }
+    .math-poly-lab fieldset { display: flex; flex-wrap: wrap; gap: .55rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; }
+    .math-poly-lab legend { font-weight: 800; padding: 0 .35rem; }
+    .math-poly-visual { min-height: 190px; display: grid; align-content: center; gap: .8rem; border: 1px solid #cbd5e1; border-radius: 14px; padding: .85rem; background: #f8fafc; }
+    .math-poly-equation { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: .5rem; font-size: 1.05rem; }
+    .math-poly-term { display: inline-grid; place-items: center; min-height: 44px; padding: .4rem .65rem; border: 1px solid #94a3b8; border-radius: 9px; background: white; font-weight: 800; }
+    .math-poly-term.is-bracket { border-left: 5px solid #64748b; border-right: 5px solid #64748b; }
+    .math-poly-term.is-remainder { border-style: dashed; }
+    .math-poly-grid { display: grid; grid-template-columns: 60px repeat(2,minmax(70px,1fr)); gap: .4rem; max-width: 430px; width: 100%; margin: auto; }
+    .math-poly-grid > * { display: grid; place-items: center; min-height: 52px; border: 1px solid #94a3b8; border-radius: 8px; background: white; font-weight: 800; }
+    .math-poly-grid > strong { background: #e2e8f0; }
+    .math-poly-feedback { min-height: 2.4em; padding: .65rem .8rem; border-radius: 10px; background: #f1f5f9; }
+    .math-poly-evidence { border-left: 5px solid #475569; padding: .7rem .8rem; background: #f8fafc; }
+    @media (max-width: 480px) {
+      .math-poly-lab { padding: .65rem; }
+      .math-poly-lab fieldset { display: grid; grid-template-columns: 1fr; }
+      .math-poly-lab fieldset button { width: 100%; }
+      .math-poly-grid { grid-template-columns: 48px repeat(2,minmax(0,1fr)); }
+      .math-poly-grid > * { min-height: 46px; padding: .2rem; }
+    }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
   </style>
 </head>
