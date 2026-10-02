@@ -8,7 +8,7 @@ const visible = lesson.content.sections.map(({ heading, body }) => `${heading}\n
 const research = lesson.versionResearch;
 
 assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
-assert.match(lesson.updatedAt, /^2026-\\d{2}-\\d{2}$/, 'updatedAt must remain a valid review date without freezing the test to an obsolete day');
+assert.match(lesson.updatedAt, /^2026-\d{2}-\d{2}$/, 'updatedAt must remain a valid review date without freezing the test to an obsolete day');
 assert.equal(lesson.content.sections.length, 6);
 assert.equal(lesson.interactive.steps.length, 4);
 assert.equal(lesson.simulation.engine, 'math-system-graph');
