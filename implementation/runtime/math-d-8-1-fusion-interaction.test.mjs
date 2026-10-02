@@ -6,7 +6,7 @@ const lesson = JSON.parse(await readFile(new URL("../../lessons/math/lesson-math
 const report = JSON.parse(await readFile(new URL("../reports/math-d-8-1-scope-correction-and-source-fusion-2026-09-27.json", import.meta.url), "utf8"));
 const simulationSource = await readFile(new URL("../../site/simulations.js", import.meta.url), "utf8");
 
-assert.equal(lesson.reviewStatus, "draft");
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
 assert.equal(report.lessonId, lesson.id);
 assert.equal(report.synthesis.fusionGate.startsWith("NOT COMPLETE"), true);
 assert.equal(lesson.publisherResearch.length, 3);
@@ -29,4 +29,4 @@ assert.equal(root.querySelectorAll("[data-design-step]").length, 4);
 root.querySelector('[data-design-step="2"]').click();
 assert.match(root.textContent, /85%-50%=35%/);
 
-console.log("D-8-1 relative/cumulative frequency arithmetic, publisher evidence limits, interactive stages and draft gate: ok");
+console.log("D-8-1 relative/cumulative frequency arithmetic, publisher evidence limits, interactive stages and content-review/evidence-boundary gate: ok");
