@@ -17,6 +17,7 @@ const productionMathEngines = new Set([
   "math-visual-area",
   "math-polynomial-model",
   "math-system-model",
+  "math-quadratic-model",
   "math-factor-model",
   "math-ticket-equation",
   "math-equation-meaning",
@@ -29,6 +30,7 @@ const productionMathEngines = new Set([
   "math-probability-lab",
 ]);
 const productionRendererSignatures = new Map([
+  ["math-quadratic-model", ["renderQuadraticLab", "mvl-quadratic-meaning", "quadCompleteSquare", "quadDeltaPrediction"]],
   ["math-system-model", ["renderSystemLab", "mvl-system-cards", "eliminationMethod", "systemMeaningTransfer"]],
   ["math-polynomial-model", ["renderPolynomialOps", "mvl-poly-board", "subtractPrediction", "polyTransfer"]],
   ["math-visual-area", ["renderArea", "mvl-area", "transferPrediction", 'role="img"']],
@@ -79,7 +81,7 @@ function reportCandidates(lessonFile) {
 function hasProductionRenderer(engine) {
   if (!engine || !productionMathEngines.has(engine)) return false;
   const signatures = productionRendererSignatures.get(engine) || [];
-  if (["math-visual-area", "math-factor-model", "math-polynomial-model", "math-system-model"].includes(engine)) {
+  if (["math-visual-area", "math-factor-model", "math-polynomial-model", "math-system-model", "math-quadratic-model"].includes(engine)) {
     return signatures.every(signature => productionRendererSource.includes(signature));
   }
   if (!productionRendererSource.includes(`if (engine === "${engine}")`)) return false;
