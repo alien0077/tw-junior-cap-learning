@@ -40,14 +40,35 @@ async def run(url: str, browser_channel: str) -> dict:
         for width in (320, 375, 768):
             await page.set_viewport_size({"width": width, "height": 900})
             await page.select_option("#unit", "cur-math-content-a-8-1")
-            metrics = await page.evaluate("""() => ({
-              body: document.body.scrollWidth,
-              doc: document.documentElement.scrollWidth,
-              client: document.documentElement.clientWidth,
-              sections: document.querySelectorAll('article section[data-section]').length,
-              buttons: document.querySelectorAll('.interactive-block button').length,
-              select: document.querySelector('#unit').getBoundingClientRect().width
-            })""")
+            metrics = await page.evaluate("""() => {
+              const client = document.documentElement.clientWidth;
+              const overflowers = [...document.querySelectorAll('body *')]
+                .map(el => {
+                  const rect = el.getBoundingClientRect();
+                  return {
+                    tag: el.tagName.toLowerCase(),
+                    id: el.id || '',
+                    cls: typeof el.className === 'string' ? el.className : '',
+                    left: Math.round(rect.left * 10) / 10,
+                    right: Math.round(rect.right * 10) / 10,
+                    width: Math.round(rect.width * 10) / 10,
+                    scrollWidth: el.scrollWidth,
+                    clientWidth: el.clientWidth
+                  };
+                })
+                .filter(item => item.right > client + 0.5 || item.left < -0.5 || item.scrollWidth > item.clientWidth + 1)
+                .sort((a, b) => Math.max(b.right - client, b.scrollWidth - b.clientWidth) - Math.max(a.right - client, a.scrollWidth - a.clientWidth))
+                .slice(0, 12);
+              return {
+                body: document.body.scrollWidth,
+                doc: document.documentElement.scrollWidth,
+                client,
+                sections: document.querySelectorAll('article section[data-section]').length,
+                buttons: document.querySelectorAll('.interactive-block button').length,
+                select: document.querySelector('#unit').getBoundingClientRect().width,
+                overflowers
+              };
+            }""")
             assert metrics["body"] <= width and metrics["doc"] <= width, (width, metrics)
             # A-8-1 now renders its six base flow buttons plus one guided-activity submit.
             assert metrics["sections"] == 7 and metrics["buttons"] == 7, metrics
