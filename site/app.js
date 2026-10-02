@@ -42,7 +42,7 @@ function bindLessonLabs(root, item) { if (item.subject === "chinese" && ["guided
 
 function lessonVisualOverview(item) {
   const subject=item.subject, steps=Array.isArray(item.interactive?.steps)?item.interactive.steps:[], design=Array.isArray(item.simulation?.learningDesign?.steps)?item.simulation.learningDesign.steps:[];
-  const raw=(steps.length?steps:design).slice(0,4).map((x,i)=>({n:i+1,text:String(x.prompt||x.action||x.reason||x||"").replace(/\s+/g," ").trim()})).filter(x=>x.text);
+  const raw=(steps.length?steps:design).slice(0,4).map((x,i)=>({n:i+1,text:String(x.prompt||x.action||x.reason||x.text||x.label||x.feedback||x||"").replace(/\s+/g," ").trim()})).filter(x=>x.text);
   const nodes=raw.length?raw:[{n:1,text:item.content?.summary||item.interactive?.goal||item.title}];
   const kind={science:"觀察 → 模型 → 證據",social:"資料 → 關係 → 判斷",english:"語境 → 結構 → 表達",chinese:"文本 → 證據 → 解讀",math:"圖像 → 關係 → 驗證"}[subject]||"線索 → 操作 → 驗證";
   const glyph={science:"⚗",social:"◎",english:"Aa",chinese:"文",math:"△"}[subject]||"•";
