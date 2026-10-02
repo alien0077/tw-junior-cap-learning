@@ -93,6 +93,81 @@
       '</section>';
   };
 
+  const polySubtractionVisual = reveal =>
+    '<div class="mvl-poly-board mvl-poly-subtract" role="img" aria-label="五 x 平方減去括號二 x 平方減三 x 加一的逐項符號模型">'+
+      '<div class="mvl-poly-expression"><span class="mvl-term">5x²</span><b>−</b><span class="mvl-bracket">'+
+      '<span class="mvl-term">2x²</span><span class="mvl-term">−3x</span><span class="mvl-term">+1</span></span></div>'+
+      '<div class="mvl-poly-arrow">括號前的 − 等於每一項都乘 −1 ↓</div>'+
+      (reveal
+        ? '<div class="mvl-poly-expression is-result"><span class="mvl-term">5x²</span><span class="mvl-term">−2x²</span><span class="mvl-term">+3x</span><span class="mvl-term">−1</span></div><p><strong>合併：</strong>3x² + 3x − 1</p>'
+        : '<p class="mvl-poly-cover">先預測：括號打開時，哪幾項要變號？</p>')+
+    '</div>';
+
+  const polyMultiplicationVisual = reveal =>
+    '<div class="mvl-poly-board mvl-poly-multiply" role="img" aria-label="二 x 減一乘 x 加三的四格乘積模型">'+
+      '<div class="mvl-poly-grid">'+
+        '<span></span><b>x</b><b>+3</b>'+
+        '<b>2x</b><span>'+(reveal?'2x²':'？')+'</span><span>'+(reveal?'+6x':'？')+'</span>'+
+        '<b>−1</b><span>'+(reveal?'−x':'？')+'</span><span>'+(reveal?'−3':'？')+'</span>'+
+      '</div>'+
+      (reveal
+        ? '<p><strong>四格缺一不可：</strong>2x² + 6x − x − 3 = 2x² + 5x − 3</p>'
+        : '<p class="mvl-poly-cover">先預測：兩個二項式總共要做幾次項對項乘法？</p>')+
+    '</div>';
+
+  const polyDivisionVisual = reveal =>
+    '<div class="mvl-poly-board mvl-poly-divide" role="img" aria-label="二 x 平方加三 x 減六除以 x 加三的商與餘式重組模型">'+
+      '<div class="mvl-division-row"><span class="mvl-division-part">2x² + 3x − 6</span><b>=</b>'+
+      (reveal
+        ? '<span class="mvl-division-part">(x+3)(2x−3)</span><b>+</b><span class="mvl-division-remainder">3</span>'
+        : '<span class="mvl-division-part">除式 × 商</span><b>+</b><span class="mvl-division-remainder">？</span>')+
+      '</div>'+
+      (reveal
+        ? '<p><strong>回乘：</strong>(x+3)(2x−3)+3 = 2x²+3x−6，所以餘式是 3。</p>'
+        : '<p class="mvl-poly-cover">先預測餘式，再用「除式×商＋餘式」重組原式。</p>')+
+    '</div>';
+
+  const renderPolynomialOps = (lesson,state) => {
+    const mode=Number(state.polyMode||0);
+    const modeLabels=['括號減法','多項式乘法','多項式除法'];
+    const predKey=mode===0?'subtractPrediction':mode===1?'multiplyPrediction':'dividePrediction';
+    const prediction=Number(state[predKey]||0);
+    const transfer=Number(state.polyTransfer||0);
+    let visual='', predictionControl='', feedback='', evidence='';
+    if(mode===0){
+      const reveal=prediction>0;
+      visual=polySubtractionVisual(reveal);
+      predictionControl=select('subtractPrediction','先預測哪些項會變號',prediction,[[0,'先選答案'],[1,'括號內三項全部變號'],[2,'只有第一項變號'],[3,'全部維持原符號']]);
+      feedback=!prediction?'先把「減去整個括號」想成「乘上 −1」。':prediction===1?'正確。−1 必須分配到括號內每一項；常數 +1 也會變成 −1。':'再看括號前的負號：它作用在整個括號，不只第一項。';
+      evidence=reveal?'<div class="mvl-equation"><span>數值證據</span><strong>x=1：原式 5−(2−3+1)=5；整理式 3+3−1=5</strong></div>':'';
+    } else if(mode===1){
+      const reveal=prediction>0;
+      visual=polyMultiplicationVisual(reveal);
+      predictionControl=select('multiplyPrediction','先預測項對項乘法次數',prediction,[[0,'先選答案'],[1,'4 次'],[2,'2 次，只乘首尾'],[3,'3 次']]);
+      feedback=!prediction?'先不要合併同類項；數一數左邊每一項要和右邊幾項相乘。':prediction===1?'正確。2×2 共四個乘積；先填滿四格，再把 6x 與 −x 合併。':'每個括號都有 2 項；左邊每一項都要乘到右邊 2 項，所以共有 4 格。';
+      evidence=reveal?'<div class="mvl-equation"><span>等值檢查</span><strong>x=2：(4−1)(2+3)=15；2·4+5·2−3=15</strong></div>':'';
+    } else {
+      const reveal=prediction>0;
+      visual=polyDivisionVisual(reveal);
+      predictionControl=select('dividePrediction','先預測餘式',prediction,[[0,'先選答案'],[1,'0'],[2,'3'],[3,'−3']]);
+      feedback=!prediction?'除法不是只找商；最後必須讓「除式×商＋餘式」完整回到被除式。':prediction===2?'正確。商 2x−3，餘式 3；回乘再加 3 才完整還原原式。':'把 (x+3)(2x−3) 展開：會得到 2x²+3x−9；還差多少才回到 −6？';
+      evidence=reveal?'<div class="mvl-equation"><span>重組證據</span><strong>2x²+3x−6 = (x+3)(2x−3)+3</strong></div>':'';
+    }
+    const transferFeedback=!transfer?'最後換一個長方形情境，檢查你理解的是四格配對，不是記住原題。':transfer===1?'正確。x²−2x+5x−10 = x²+3x−10；x=3 時原乘積 8×1=8，展開式也等於 8。':'把四個乘積先寫完：x·x、x·(−2)、5·x、5·(−2)，再合併兩個一次項。';
+    return '<section class="mvl mvl-poly" data-poly-modes="subtract multiply divide" aria-label="多項式四則運算視覺工作台">'+
+      '<div class="mvl-task"><span class="mvl-step">1 選一種認知工作</span><strong>'+modeLabels[mode]+'</strong><p>一次只處理一種規則；先預測，再揭示中間結構。</p></div>'+
+      select('polyMode','運算工作台',mode,[[0,'括號減法'],[1,'多項式乘法'],[2,'多項式除法']])+
+      visual+
+      '<div class="mvl-poly-controls">'+predictionControl+'<p class="mvl-feedback" aria-live="polite">'+esc(feedback)+'</p>'+evidence+'</div>'+
+      '<div class="mvl-transfer"><span class="mvl-step">2 遷移</span><strong>長 (x+5)、寬 (x−2) 的長方形面積</strong>'+
+      select('polyTransfer','展開後是哪一式？',transfer,[[0,'先預測'],[1,'x²+3x−10'],[2,'x²+7x−10'],[3,'x²+3x+10']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(transferFeedback)+'</p>'+
+      (transfer===1?'<div class="mvl-equation"><strong>(x+5)(x−2)=x²+3x−10</strong><p>x=3：8×1=8；9+9−10=8。</p></div>':'')+
+      '</div>'+
+      '<details class="mvl-evidence"><summary>三種運算各要留下什麼證據？</summary><p>減法：每項變號紀錄。乘法：完整四格配對。除法：除式×商＋餘式能重組被除式。這三種證據不能互相替代。</p></details>'+
+      '</section>';
+  };
+
   const factorRow = (title,tokens,common) =>
     '<div class="mvl-factor-row"><strong>'+esc(title)+'</strong><div class="mvl-token-row">'+tokens.map((t,i)=>'<span class="mvl-token '+(common.includes(i)?'is-common':'')+'">'+esc(t)+'</span>').join("")+'</div></div>';
 
@@ -182,13 +257,15 @@
       '</div><details class="mvl-evidence"><summary>為什麼不是只背最大公因數？</summary><p>因式分解是分配律的反向操作。候選共同因式必須逐項相除得到整式，最後再乘回原式；三個步驟都能檢查。</p></details></section>';
   };
 
-  const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model';
+  const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model' || engine==='math-polynomial-model';
   const defaults = (engine,model) => engine==='math-visual-area'
     ? {a:4,b:2,formulaMode:0,prediction:0,transferA:5,transferB:1,transferPrediction:0}
-    : model==='a-8-4-factor-meaning-v1'
-      ? {factorMeaningX:2,candidateFactor:0,factorMeaningTransfer:0}
-      : {commonFactor:0,factorTransfer:0};
-  const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : '因式結構探索臺';
-  const render = (lesson,state) => lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : renderFactor(lesson,state);
+    : engine==='math-polynomial-model'
+      ? {polyMode:0,subtractPrediction:0,multiplyPrediction:0,dividePrediction:0,polyTransfer:0}
+      : model==='a-8-4-factor-meaning-v1'
+        ? {factorMeaningX:2,candidateFactor:0,factorMeaningTransfer:0}
+        : {commonFactor:0,factorTransfer:0};
+  const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : engine==='math-polynomial-model' ? '多項式視覺工作台' : '因式結構探索臺';
+  const render = (lesson,state) => lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : lesson.simulation.engine==='math-polynomial-model' ? renderPolynomialOps(lesson,state) : renderFactor(lesson,state);
   window.MathVisualLabs={supports,defaults,label,render};
 })();
