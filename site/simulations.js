@@ -18,6 +18,7 @@
     if (engine === "science-motion-lab" && model === "eb-iv-9-circular-motion") return { radius: 2, speed: 4, mass: 1, circularPrediction: "", predictionSubmitted: false, circularFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-10-inertia") return { initialSpeed: 4, appliedForce: 0, friction: 0, inertiaPrediction: "", predictionSubmitted: false, inertiaFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-11-impulse") return { mass: 2, initialVelocity: 1, force: 4, duration: 2, impulsePrediction: "", predictionSubmitted: false, impulseFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "ec-iv-2-boyle") return { gasVolume: 50, boylePrediction: "", predictionSubmitted: false, boyleFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -179,6 +180,16 @@
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
       </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "ec-iv-2-boyle") {
+      const V=clamp(Number(state.gasVolume),20,100),k=5000,P=k/V,locked=!state.predictionSubmitted,pistonY=65+(100-V)*1.35,dots=Math.round(V/10);
+      return `<section class="sim-boyle-lab" aria-label="波以耳定律注射器視覺實驗室"><div class="sim-visual-first"><figure class="sim-boyle-stage"><svg viewBox="0 0 680 350" role="img" aria-label="定溫定量氣體體積 ${V} 毫升，壓力 ${P.toFixed(0)} 相對單位">
+      <g transform="translate(75 35)"><rect x="55" y="30" width="150" height="245" rx="12" class="sim-syringe"/><rect x="62" y="${pistonY}" width="136" height="${275-pistonY}" class="sim-gas"/><rect x="45" y="${pistonY-12}" width="170" height="18" class="sim-piston"/><line x1="130" y1="0" x2="130" y2="${pistonY-12}" class="sim-plunger"/><text x="235" y="90">V = ${V} mL</text><text x="235" y="130">P = ${P.toFixed(0)}</text><text x="235" y="170">PV = ${(P*V).toFixed(0)}</text></g>
+      <g transform="translate(440 55)"><line x1="0" y1="220" x2="180" y2="220" class="sim-axis"/><line x1="0" y1="220" x2="0" y2="0" class="sim-axis"/><path d="M20 20 C45 75,80 130,165 195" class="sim-boyle-curve"/><circle cx="${20+(V-20)*1.8}" cy="${220-Math.min(195,(P-50)*1.25)}" r="7" class="sim-marker"/><text x="150" y="245">V</text><text x="-5" y="-8">P</text></g></svg><figcaption>定溫、定量：壓縮體積時，壓力上升；PV 在此理想模型保持固定。</figcaption></figure>
+      <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>把密閉注射器體積壓成一半，壓力會？</p><div class="sim-actions"><button data-boyle-action="predict" data-value="half">變一半</button><button data-boyle-action="predict" data-value="double">約變兩倍</button></div><button data-boyle-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.boyleFeedback||"先預測，再推活塞。")}</p></div></div>
+      <fieldset class="sim-boyle-controls" ${locked?"disabled":""}><legend>2. 推拉活塞</legend>${slider("gasVolume","氣體體積",V,20,100,10," mL")}</fieldset>
+      <div class="sim-evidence-card"><p><b>3. 同時看注射器與 P–V 圖</b></p><p>目前 P×V＝${P.toFixed(0)}×${V}＝${(P*V).toFixed(0)}。只有在氣體量與溫度固定時，這個反比模型才適用。</p></div>
+      <div class="sim-transfer-card"><p><b>4. 遷移：體積由 40 mL 增至 80 mL，理想壓力？</b></p><div class="sim-actions"><button data-boyle-action="transfer" data-value="half">約減半</button><button data-boyle-action="transfer" data-value="same">不變</button></div><p role="status">${esc(state.transferFeedback||"利用 PV 固定判斷。")}</p></div></section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-11-impulse") {
       const mass=clamp(Number(state.mass),1,5),v0=clamp(Number(state.initialVelocity),-4,4),force=clamp(Number(state.force),-8,8),duration=clamp(Number(state.duration),.5,4),J=force*duration,dv=J/mass,v1=v0+dv,p0=mass*v0,p1=mass*v1,locked=!state.predictionSubmitted;
@@ -587,6 +598,8 @@
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
     }
+    const boyleAction=event.target.closest("[data-boyle-action]");
+    if(boyleAction && lesson.simulation.model==="ec-iv-2-boyle"){const action=boyleAction.dataset.boyleAction,value=boyleAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{boylePrediction:value,boyleFeedback:""});return;}if(action==="submit-prediction"){update(root,state.boylePrediction?{predictionSubmitted:true,boyleFeedback:state.boylePrediction==="double"?"預測已記錄。把體積從 100 調到 50，比較壓力。":"預測已記錄。推動活塞，用 PV 數值檢查。"}:{boyleFeedback:"請先選擇預測。"});return;}if(action==="transfer"){update(root,value==="half"?{transferChoice:value,transferFeedback:"正確：體積加倍且 PV 固定，所以壓力約減半。"}:{transferChoice:value,transferFeedback:"固定 PV 後重新比較 40 與 80 mL。"});return;}}
     const impulseAction=event.target.closest("[data-impulse-action]");
     if(impulseAction && lesson.simulation.model==="eb-iv-11-impulse"){const action=impulseAction.dataset.impulseAction,value=impulseAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{impulsePrediction:value,impulseFeedback:""});return;}if(action==="submit-prediction"){update(root,state.impulsePrediction?{predictionSubmitted:true,impulseFeedback:state.impulsePrediction==="double"?"預測已記錄。把作用時間加倍，比較圖下面積與末速。":"預測已記錄。用時間滑桿檢查力－時間面積。"}:{impulseFeedback:"請先選擇預測。"});return;}if(action==="transfer"){update(root,value==="less-force"?{transferChoice:value,transferFeedback:"正確：相同動量改變分散到較長時間，平均力可降低。"}:{transferChoice:value,transferFeedback:"固定 Δp，再看 F=Δp/Δt。"});return;}}
     const inertiaAction=event.target.closest("[data-inertia-action]");
