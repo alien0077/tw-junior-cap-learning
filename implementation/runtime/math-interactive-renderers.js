@@ -10,6 +10,8 @@ const SUPPORTED = new Set([
   "SystemEliminationBlock",
   "QuadraticMeaningBlock",
   "QuadraticSolutionBlock",
+  "ProbabilityExperimentBlock",
+  "DataExplorerBlock",
   "EquivalentExpressionCheckBlock",
   "NumberLineBlock",
   "StepwiseReasoningBlock",
@@ -756,6 +758,272 @@ function mountEquivalentLab({ document, root, block }) {
   return lab;
 }
 
+
+function goldButton(document, parent, label, onClick) {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.textContent = label;
+  button.addEventListener("click", onClick);
+  parent.append(button);
+  return button;
+}
+
+function mountSignedOperationsGoldLab({ document, root, block }) {
+  const store = storageFor(block.id), prior = store?.get() || {};
+  const state = { revealed: Boolean(prior.revealed), evidence: String(prior.evidence || "") };
+  const { lab, status } = makeLab(document, block, "帶號運算：運算樹 × 數線稽核");
+  lab.classList.add("math-gold-signed-lab");
+
+  const intro = document.createElement("p");
+  intro.innerHTML = "<strong>先預測，不先算到底。</strong> 原式：−18.5＋4×(−1.25)−(−0.75)。先找乘法節點，再處理外層加減。";
+  const predict = document.createElement("fieldset");
+  const legend = document.createElement("legend"); legend.textContent = "結果大致落在哪裡？"; predict.append(legend);
+  const feedback = document.createElement("p"); feedback.setAttribute("aria-live","polite");
+  const canvas = makeCanvas(document, "負數混合運算數線：從負18.5加負5，再因減去負0.75向右0.75", 360, 180);
+  const tree = document.createElement("div"); tree.className = "math-gold-operation-tree"; tree.hidden = !state.revealed;
+  tree.innerHTML = "<article><b>先做乘法</b><span>4×(−1.25)</span><strong>−5</strong></article><article><b>外層合併</b><span>−18.5+(−5)</span><strong>−23.5</strong></article><article><b>雙負號</b><span>−(−0.75)</span><strong>+0.75 → −22.75</strong></article>";
+  const evidence = document.createElement("fieldset"); evidence.hidden = !state.revealed;
+  const el = document.createElement("legend"); el.textContent = "選一層證據"; evidence.append(el);
+  const evidenceText = document.createElement("p"); evidenceText.setAttribute("aria-live","polite");
+
+  const map = value => 28 + ((value + 25) / 27) * 300;
+  function draw() {
+    canvas.replaceChildren();
+    canvas.append(svg(document,"line",{x1:28,y1:96,x2:328,y2:96,stroke:"currentColor","stroke-width":2}));
+    for (const value of [-25,-20,-15,-10,-5,0]) {
+      const x = map(value);
+      canvas.append(svg(document,"line",{x1:x,y1:89,x2:x,y2:103,stroke:"currentColor"}));
+      const t = svg(document,"text",{x,y:126,"text-anchor":"middle",fill:"currentColor"}); t.textContent = String(value); canvas.append(t);
+    }
+    const start = map(-18.5);
+    canvas.append(svg(document,"circle",{cx:start,cy:96,r:6,fill:"currentColor"}));
+    const st = svg(document,"text",{x:start,y:72,"text-anchor":"middle",fill:"currentColor"}); st.textContent="−18.5"; canvas.append(st);
+    if (state.revealed) {
+      const mid = map(-23.5), end = map(-22.75);
+      canvas.append(svg(document,"line",{x1:start,y1:86,x2:mid,y2:86,stroke:"currentColor","stroke-width":3}));
+      canvas.append(svg(document,"line",{x1:mid,y1:110,x2:end,y2:110,stroke:"currentColor","stroke-width":3,"stroke-dasharray":"5 3"}));
+      canvas.append(svg(document,"circle",{cx:mid,cy:96,r:6,fill:"none",stroke:"currentColor","stroke-width":2}));
+      canvas.append(svg(document,"circle",{cx:end,cy:96,r:8,fill:"currentColor"}));
+      const a=svg(document,"text",{x:(start+mid)/2,y:58,"text-anchor":"middle",fill:"currentColor"});a.textContent="加 −5（向左）";canvas.append(a);
+      const b=svg(document,"text",{x:(mid+end)/2,y:148,"text-anchor":"middle",fill:"currentColor"});b.textContent="−(−0.75)=+0.75（向右）";canvas.append(b);
+      const f=svg(document,"text",{x:end,y:72,"text-anchor":"middle",fill:"currentColor"});f.textContent="−22.75";canvas.append(f);
+    } else {
+      const q=svg(document,"text",{x:180,y:48,"text-anchor":"middle",fill:"currentColor","font-weight":800});q.textContent="先預測再揭示移動";canvas.append(q);
+    }
+  }
+  const reveal = ok => {
+    state.revealed = true; store?.set(state); tree.hidden=false; evidence.hidden=false; draw();
+    feedback.textContent = ok ? "預測合理。第一個必做節點是 4×(−1.25)=−5。" : "再估一次：起點已是 −18.5，又加入 −5，最後只補回 +0.75，所以仍在負二十多。";
+    status.textContent = "外層數線：−18.5 → −23.5 → −22.75；雙負號只作用在最後一筆。";
+  };
+  goldButton(document,predict,"負二十多",()=>reveal(true));
+  goldButton(document,predict,"接近 0",()=>reveal(false));
+  goldButton(document,predict,"正二十多",()=>reveal(false));
+
+  goldButton(document,evidence,"乘法先做",()=>{state.evidence="mul";store?.set(state);evidenceText.textContent="4×(−1.25)=−5；先保留完整帶號數，再交給外層加減。";});
+  goldButton(document,evidence,"減去負數",()=>{state.evidence="minus";store?.set(state);evidenceText.textContent="只有 −(−0.75) 改寫成 +0.75；數線因此由 −23.5 向右。";});
+  goldButton(document,evidence,"共同分母",()=>{state.evidence="fraction";store?.set(state);evidenceText.textContent="−74/4−20/4+3/4=−91/4=−22.75，與小數路徑一致。";});
+  evidence.append(evidenceText);
+
+  const transfer=document.createElement("fieldset");
+  const tl=document.createElement("legend");tl.textContent="遷移：−6−2×(−3)+(−4)÷2";transfer.append(tl);
+  const tf=document.createElement("p");tf.setAttribute("aria-live","polite");
+  goldButton(document,transfer,"−2",()=>{tf.textContent="正確。先得 −6 與 −2，再算 −6−(−6)−2=−2。";});
+  goldButton(document,transfer,"2",()=>{tf.textContent="檢查最後的 (−4)÷2 仍是 −2；雙負號不會把它改正。";});
+  goldButton(document,transfer,"−24",()=>{tf.textContent="這通常來自左至右直接算。先完成乘除子運算。";});
+  transfer.append(tf);
+
+  lab.append(intro,predict,feedback,canvas,tree,evidence,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  draw();
+  status.textContent = state.revealed ? "已解鎖運算樹與數線證據。" : "預測前不揭示最後移動與答案。";
+  return lab;
+}
+
+function mountLinearParameterGoldLab({ document, root, block }) {
+  const store=storageFor(block.id), prior=store?.get()||{};
+  const state={a:clamp(number(prior.a,8),4,18),b:clamp(number(prior.b,50),20,60),x:clamp(number(prior.x,5),0,8),mode:String(prior.mode||"a")};
+  const {lab,status}=makeLab(document,block,"一次函數：式 × 表 × 圖同步控制台");
+  lab.classList.add("math-gold-function-lab");
+  const intro=document.createElement("p");intro.innerHTML="<strong>一次只改一個參數。</strong> 比較 a 時鎖住 b；比較 b 時鎖住 a。";
+  const modes=document.createElement("fieldset");const ml=document.createElement("legend");ml.textContent="探索模式";modes.append(ml);
+  const canvas=makeCanvas(document,"一次函數參數同步圖",360,270);
+  const table=document.createElement("table");table.className="math-live-table";
+  const controls=document.createElement("div");controls.className="math-live-controls";
+  const feedback=document.createElement("p");feedback.setAttribute("aria-live","polite");
+
+  const point=(x,y)=>({x:42+x*34,y:238-y*.95});
+  const drawLine=(m,b,secondary=false)=>{
+    const p1=point(0,b),p2=point(8,m*8+b);
+    canvas.append(svg(document,"line",{x1:p1.x,y1:p1.y,x2:p2.x,y2:p2.y,stroke:"currentColor","stroke-width":secondary?2:3,"stroke-dasharray":secondary?"6 4":"none"}));
+  };
+  const render=()=>{
+    canvas.replaceChildren();controls.replaceChildren();table.replaceChildren();
+    canvas.append(svg(document,"line",{x1:42,y1:20,x2:42,y2:238,stroke:"currentColor","stroke-width":2}));
+    canvas.append(svg(document,"line",{x1:42,y1:238,x2:326,y2:238,stroke:"currentColor","stroke-width":2}));
+    if(state.mode==="a"){
+      drawLine(18,30,true);drawLine(state.a,30,false);
+      const c=makeRange(document,{label:"新的斜率 a",min:4,max:18,value:state.a,onInput:v=>{state.a=v;store?.set(state);render();}});
+      controls.append(c.wrapper);
+      table.innerHTML="<caption>固定 b=30</caption><thead><tr><th>x</th><th>18x+30</th><th>"+state.a+"x+30</th></tr></thead><tbody>"+[0,2,4].map(v=>"<tr><td>"+v+"</td><td>"+(18*v+30)+"</td><td>"+(state.a*v+30)+"</td></tr>").join("")+"</tbody>";
+      feedback.textContent="x=0 時兩式都等於30；改變的是每單位 x 的固定變化量。";
+      status.textContent="a 控制斜率；b=30 的 y 截距保持不變。";
+    }else if(state.mode==="b"){
+      drawLine(8,30,true);drawLine(8,state.b,false);
+      const c=makeRange(document,{label:"新的截距 b",min:20,max:60,step:5,value:state.b,onInput:v=>{state.b=v;store?.set(state);render();}});
+      controls.append(c.wrapper);
+      table.innerHTML="<caption>固定 a=8</caption><thead><tr><th>x</th><th>8x+30</th><th>8x+"+state.b+"</th></tr></thead><tbody>"+[0,2,4].map(v=>"<tr><td>"+v+"</td><td>"+(8*v+30)+"</td><td>"+(8*v+state.b)+"</td></tr>").join("")+"</tbody>";
+      feedback.textContent="兩線斜率相同；每個同一 x 的輸出都相差 "+(state.b-30)+"。";
+      status.textContent="b 控制初始值／y截距；a=8 保持固定。";
+    }else{
+      drawLine(18,30,true);drawLine(24,0,false);
+      const c=makeRange(document,{label:"比較同一個 x",min:0,max:8,value:state.x,onInput:v=>{state.x=v;store?.set(state);render();}});
+      controls.append(c.wrapper);
+      const y1=18*state.x+30,y2=24*state.x,p=point(state.x,y1);
+      canvas.append(svg(document,"circle",{cx:p.x,cy:p.y,r:6,fill:"currentColor"}));
+      table.innerHTML="<caption>同一 x 的兩方案費用</caption><tbody><tr><th>甲</th><td>"+y1+"</td></tr><tr><th>乙</th><td>"+y2+"</td></tr><tr><th>價差</th><td>"+Math.abs(y1-y2)+"</td></tr></tbody>";
+      feedback.textContent=state.x===5?"x=5 時兩方案同為120；圖、表與 18x+30=24x 一致。":"目前價差 "+Math.abs(y1-y2)+"；移動 x 找價差0。";
+      status.textContent="交點的定義是同一輸入下兩個輸出相等。";
+    }
+  };
+  [["a","只改 a"],["b","只改 b"],["cross","找交點"]].forEach(([value,label])=>{
+    const btn=goldButton(document,modes,label,()=>{state.mode=value;store?.set(state);modes.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===btn)));render();});
+    btn.setAttribute("aria-pressed",String(state.mode===value));
+  });
+  const transfer=document.createElement("p");transfer.className="math-gold-transfer-note";transfer.textContent="遷移：y=−7x+100 的斜率 −7 表示每單位時間減少7；100是初始值，負水量需由情境範圍排除。";
+  lab.append(intro,modes,controls,canvas,table,feedback,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  render();
+  return lab;
+}
+
+function mountPythagoreanGoldLab({ document, root, block }) {
+  const store=storageFor(block.id),prior=store?.get()||{};
+  const state={a:clamp(number(prior.a,6),3,9),b:clamp(number(prior.b,8),3,10),revealed:Boolean(prior.revealed)};
+  const {lab,status}=makeLab(document,block,"畢氏定理：平方『面積』實驗室");
+  lab.classList.add("math-gold-pythagorean-lab");
+  const intro=document.createElement("p");intro.innerHTML="<strong>先找直角，再找兩股與斜邊。</strong> 定理連結的是三邊的平方，不是直接把兩股相加。";
+  const predict=document.createElement("fieldset");const pl=document.createElement("legend");pl.textContent="兩股6、8，斜邊？";predict.append(pl);
+  const pf=document.createElement("p");pf.setAttribute("aria-live","polite");
+  const canvas=makeCanvas(document,"直角三角形與三邊平方關係",360,260);
+  const controls=document.createElement("div");controls.className="math-live-controls";controls.hidden=!state.revealed;
+  const equation=document.createElement("p");equation.className="math-gold-equation";
+  function draw(){
+    canvas.replaceChildren();
+    const x=45,y=210,scale=16,A=[x,y-state.b*scale],B=[x,y],C=[x+state.a*scale,y];
+    canvas.append(svg(document,"polygon",{points:A[0]+","+A[1]+" "+B[0]+","+B[1]+" "+C[0]+","+C[1],fill:"none",stroke:"currentColor","stroke-width":3}));
+    canvas.append(svg(document,"path",{d:"M"+x+" "+(y-18)+" L"+(x+18)+" "+(y-18)+" L"+(x+18)+" "+y,fill:"none",stroke:"currentColor","stroke-width":2}));
+    const ta=svg(document,"text",{x:(B[0]+C[0])/2,y:y+24,"text-anchor":"middle",fill:"currentColor"});ta.textContent="a="+state.a;canvas.append(ta);
+    const tb=svg(document,"text",{x:x-12,y:(A[1]+B[1])/2,"text-anchor":"end",fill:"currentColor"});tb.textContent="b="+state.b;canvas.append(tb);
+    const c2=state.a*state.a+state.b*state.b,c=Math.sqrt(c2);
+    if(state.revealed){
+      [["a²",state.a*state.a,220,50],["b²",state.b*state.b,220,105],["c²",c2,220,160]].forEach(([label,value,rx,ry])=>{
+        canvas.append(svg(document,"rect",{x:rx,y:ry,width:100,height:42,rx:8,fill:"none",stroke:"currentColor"}));
+        const t=svg(document,"text",{x:rx+50,y:ry+26,"text-anchor":"middle",fill:"currentColor","font-weight":800});t.textContent=label+" = "+value;canvas.append(t);
+      });
+      equation.textContent=state.a+"² + "+state.b+"² = "+c2+" = c²；c=√"+c2+" ≈ "+c.toFixed(2);
+      status.textContent="兩股平方和等於斜邊平方；長度取正平方根。";
+    }else{
+      const q=svg(document,"text",{x:270,y:110,"text-anchor":"middle",fill:"currentColor","font-weight":800});q.textContent="先預測平方關係";canvas.append(q);
+      equation.textContent="";
+      status.textContent="答案隱藏；先確認直角與三邊角色。";
+    }
+    store?.set(state);
+  }
+  goldButton(document,predict,"10",()=>{state.revealed=true;controls.hidden=false;pf.textContent="正確。36+64=100，所以斜邊取正平方根10。";draw();});
+  goldButton(document,predict,"14",()=>{pf.textContent="這是6+8；畢氏定理連結的是平方。";});
+  goldButton(document,predict,"√14",()=>{pf.textContent="先算6²+8²，而不是6+8。";});
+  predict.append(pf);
+  const ca=makeRange(document,{label:"股 a",min:3,max:9,value:state.a,onInput:v=>{state.a=v;draw();}});
+  const cb=makeRange(document,{label:"股 b",min:3,max:10,value:state.b,onInput:v=>{state.b=v;draw();}});
+  controls.append(ca.wrapper,cb.wrapper);
+  const transfer=document.createElement("p");transfer.className="math-gold-transfer-note";transfer.textContent="反向遷移：斜邊13、一股5 → h²=13²−5²=144 → h=12；再以5²+12²=13²回查。";
+  lab.append(intro,predict,canvas,controls,equation,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  draw();
+  return lab;
+}
+
+function mountBoxPlotGoldLab({ document, root, block }) {
+  const store=storageFor(block.id),prior=store?.get()||{};
+  const state={maxA:clamp(number(prior.maxA,35),30,38),q3A:clamp(number(prior.q3A,26),25,29),revealed:Boolean(prior.revealed)};
+  const {lab,status}=makeLab(document,block,"盒狀圖：鬚、盒子與散布量");
+  lab.classList.add("math-gold-boxplot-lab");
+  const intro=document.createElement("p");intro.innerHTML="<strong>只改一個位置。</strong> 最大值是鬚端；Q3是盒子端。先預測它們各自改變哪個散布量。";
+  const predict=document.createElement("fieldset");const pl=document.createElement("legend");pl.textContent="最大值30→35時？";predict.append(pl);
+  const pf=document.createElement("p");pf.setAttribute("aria-live","polite");
+  const canvas=makeCanvas(document,"甲乙兩站同尺度盒狀圖",360,220);
+  const controls=document.createElement("div");controls.className="math-live-controls";controls.hidden=!state.revealed;
+  const stats=document.createElement("div");stats.className="math-gold-stat-cards";
+  const x=v=>32+(v-15)/25*292;
+  const addPlot=(name,min,q1,med,q3,max,y)=>{
+    canvas.append(svg(document,"line",{x1:x(min),y1:y,x2:x(max),y2:y,stroke:"currentColor","stroke-width":2}));
+    canvas.append(svg(document,"line",{x1:x(min),y1:y-12,x2:x(min),y2:y+12,stroke:"currentColor","stroke-width":2}));
+    canvas.append(svg(document,"line",{x1:x(max),y1:y-12,x2:x(max),y2:y+12,stroke:"currentColor","stroke-width":2}));
+    canvas.append(svg(document,"rect",{x:x(q1),y:y-22,width:x(q3)-x(q1),height:44,fill:"none",stroke:"currentColor","stroke-width":2}));
+    canvas.append(svg(document,"line",{x1:x(med),y1:y-22,x2:x(med),y2:y+22,stroke:"currentColor","stroke-width":3}));
+    const t=svg(document,"text",{x:10,y:y+5,fill:"currentColor"});t.textContent=name;canvas.append(t);
+  };
+  function draw(){
+    canvas.replaceChildren();
+    canvas.append(svg(document,"line",{x1:32,y1:190,x2:324,y2:190,stroke:"currentColor","stroke-width":2}));
+    for(const v of [15,20,25,30,35,40]){const t=svg(document,"text",{x:x(v),y:211,"text-anchor":"middle",fill:"currentColor"});t.textContent=String(v);canvas.append(t);}
+    addPlot("甲",18,22,24,state.q3A,state.maxA,70);addPlot("乙",20,23,24,25,29,140);
+    const rA=state.maxA-18,iA=state.q3A-22;
+    stats.innerHTML="<article><b>甲站</b><span>中位數24</span><span>全距 "+rA+"</span><span>IQR "+iA+"</span></article><article><b>乙站</b><span>中位數24</span><span>全距9</span><span>IQR2</span></article>";
+    status.textContent="最大值控制鬚與全距；Q3控制盒子右端與IQR。";
+    store?.set(state);
+  }
+  goldButton(document,predict,"全距變、IQR不變",()=>{state.revealed=true;controls.hidden=false;pf.textContent="正確。最大值只移動鬚端；Q1、Q3不動時IQR不變。";draw();});
+  goldButton(document,predict,"全距與IQR都變",()=>{pf.textContent="IQR只看Q1到Q3；最大值不是IQR端點。";});
+  predict.append(pf);
+  const c1=makeRange(document,{label:"甲站最大值",min:30,max:38,value:state.maxA,onInput:v=>{state.maxA=v;draw();}});
+  const c2=makeRange(document,{label:"甲站 Q3",min:25,max:29,value:state.q3A,onInput:v=>{state.q3A=v;draw();}});
+  controls.append(c1.wrapper,c2.wrapper);
+  const note=document.createElement("p");note.className="math-gold-transfer-note";note.textContent="結論邊界：IQR較小只表示中間50%較集中，不能說每一筆資料都更接近。";
+  lab.append(intro,predict,pf,canvas,controls,stats,note);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  draw();
+  return lab;
+}
+
+function mountProbabilityFrequencyGoldLab({ document, root, block }) {
+  const store=storageFor(block.id),prior=store?.get()||{};
+  const state={revealed:Boolean(prior.revealed),trials:number(prior.trials,10)};
+  const data={10:[7,.70],20:[12,.60],50:[27,.54],100:[51,.51],200:[101,.505]};
+  const {lab,status}=makeLab(document,block,"相對頻率：短期波動 × 長期趨勢");
+  lab.classList.add("math-gold-probability-lab");
+  const intro=document.createElement("p");intro.innerHTML="<strong>理論機率不是這一批資料。</strong> 10次有7次正面，先判斷是否足以證明硬幣不公平。";
+  const predict=document.createElement("fieldset");const pl=document.createElement("legend");pl.textContent="7/10 代表一定不公平？";predict.append(pl);
+  const pf=document.createElement("p");pf.setAttribute("aria-live","polite");
+  const canvas=makeCanvas(document,"累積硬幣試驗相對頻率與理論0.5基準線",360,230);
+  const trials=document.createElement("fieldset");trials.hidden=!state.revealed;const tl=document.createElement("legend");tl.textContent="查看累積試驗資料";trials.append(tl);
+  const card=document.createElement("div");card.className="math-gold-prob-card";
+  const fx=n=>48+(Math.log10(n)-1)/(Math.log10(200)-1)*260,fy=f=>190-(f-.4)/.35*140;
+  function draw(){
+    canvas.replaceChildren();
+    canvas.append(svg(document,"line",{x1:42,y1:196,x2:326,y2:196,stroke:"currentColor","stroke-width":2}));
+    canvas.append(svg(document,"line",{x1:42,y1:28,x2:42,y2:196,stroke:"currentColor","stroke-width":2}));
+    canvas.append(svg(document,"line",{x1:42,y1:fy(.5),x2:326,y2:fy(.5),stroke:"currentColor","stroke-width":1.5,"stroke-dasharray":"5 4"}));
+    const pts=Object.entries(data).map(([n,v])=>[Number(n),v[1]]);
+    canvas.append(svg(document,"polyline",{points:pts.map(p=>fx(p[0])+","+fy(p[1])).join(" "),fill:"none",stroke:"currentColor","stroke-width":3}));
+    for(const [n,f] of pts){canvas.append(svg(document,"circle",{cx:fx(n),cy:fy(f),r:n===state.trials?7:4,fill:n===state.trials?"currentColor":"white",stroke:"currentColor","stroke-width":2}));}
+    const [heads,freq]=data[state.trials];
+    card.innerHTML="<b>"+state.trials+" 次</b><strong>"+heads+" 次正面</strong><span>相對頻率 "+heads+"/"+state.trials+" = "+freq.toFixed(3)+"</span><p>理論公平硬幣仍是0.5；觀察值可波動。</p>";
+    status.textContent="試驗次數增加時這組資料逐漸靠近0.5；接近不等於每批必須剛好一半。";
+    store?.set(state);
+  }
+  const reveal=ok=>{state.revealed=true;trials.hidden=false;store?.set(state);pf.textContent=ok?"正確。0.70是這批10次資料的相對頻率，不足以單獨證明理論機率改變。":"短期結果可能波動；要把理論0.5與觀察0.70分開。";draw();};
+  goldButton(document,predict,"不能只靠10次斷定",()=>reveal(true));
+  goldButton(document,predict,"一定不公平",()=>reveal(false));
+  for(const n of [10,20,50,100,200]) goldButton(document,trials,n+"次",()=>{state.trials=n;draw();});
+  const transfer=document.createElement("p");transfer.className="math-gold-transfer-note";transfer.textContent="遷移：P(紅)=1/4；48/200=0.24 接近0.25但不需相等，且下一次結果不被前面試驗強迫。";
+  lab.append(intro,predict,pf,trials,canvas,card,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  draw();
+  return lab;
+}
+
 function mountNumberLineLab({ document, root, block, spec }) {
   const store = storageFor(block.id);
   const prior = store?.get() || {};
@@ -1034,6 +1302,11 @@ function mountStepwiseLab({ document, root, block, spec }) {
 export function enhanceMathInteractiveBlock({ document, root, spec, block }) {
   if (!document || !root || !block || spec?.subject !== "math" || !SUPPORTED.has(block.component)) return null;
   if (root.querySelector(".math-live-lab")) return root.querySelector(".math-live-lab");
+  if (spec?.lessonId === "cur-math-content-n-7-3") return mountSignedOperationsGoldLab({ document, root, block, spec });
+  if (spec?.lessonId === "cur-math-content-f-8-2") return mountLinearParameterGoldLab({ document, root, block, spec });
+  if (spec?.lessonId === "cur-math-content-s-8-6") return mountPythagoreanGoldLab({ document, root, block, spec });
+  if (spec?.lessonId === "cur-math-content-d-9-1") return mountBoxPlotGoldLab({ document, root, block, spec });
+  if (spec?.lessonId === "cur-math-content-d-9-2") return mountProbabilityFrequencyGoldLab({ document, root, block, spec });
   if (block.component === "FunctionRepresentationBlock") return mountFunctionLab({ document, root, block, spec });
   if (block.component === "GeometryManipulationBlock") return mountGeometryLab({ document, root, block, spec });
   if (block.component === "AlgebraBalanceBlock" && spec?.lessonId === "cur-math-linear-equation-check") return mountLinearEquationCheckLab({ document, root, block, spec });
@@ -1044,6 +1317,7 @@ export function enhanceMathInteractiveBlock({ document, root, spec, block }) {
   if (block.component === "QuadraticSolutionBlock") return mountQuadraticSolutionLab({ document, root, block, spec });
   if (block.component === "EquivalentExpressionCheckBlock") return mountEquivalentLab({ document, root, block, spec });
   if (block.component === "NumberLineBlock") return mountNumberLineLab({ document, root, block, spec });
+  if (block.component === "ProbabilityExperimentBlock") return mountProbabilityFrequencyGoldLab({ document, root, block, spec });
   if (block.component === "StepwiseReasoningBlock") return mountStepwiseLab({ document, root, block, spec });
   return null;
 }
