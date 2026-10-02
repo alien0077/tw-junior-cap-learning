@@ -157,7 +157,7 @@ const problems = {
   activeWithoutResolvedSpec: rows.filter(r => rowIsActive(r) && !r.spec).map(r => ({ id: r.id, file: r.file })),
   deprecatedWithDraftQuestions: rows.filter(r => !rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, file: r.file, count: r.questionDrafts })),
   implementedButUntestedSpecs: [...specs.entries()].filter(([, s]) => s.implementationStatus === "implemented" && s.qaStatus === "untested").map(([id, s]) => ({ id, component: s.component, file: s.file })),
-  implementedButUnpassedSpecs: [...specs.entries()].filter(([, s]) => s.implementationStatus === "implemented" && s.qaStatus !== "passed").map(([id, s]) => ({ id, component: s.component, file: s.file, qaStatus: s.qaStatus || "missing" })),
+  implementedButUnverifiedSpecs: [...specs.entries()].filter(([, s]) => s.implementationStatus === "implemented" && s.qaStatus !== "verified").map(([id, s]) => ({ id, component: s.component, file: s.file, qaStatus: s.qaStatus || "missing" })),
 };
 
 const output = { summary, problems };
