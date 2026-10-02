@@ -39,7 +39,7 @@ for (const component of RENDERER_COMPONENTS) {
   assert.ok(rendered.root.querySelector(".component-visual-body").dataset.semanticModel);
   assert.equal(rendered.root.querySelectorAll(".component-visual-prompts li").length, 3);
 }
-assert.equal(RENDERER_COMPONENTS.length, 28);
+assert.equal(RENDERER_COMPONENTS.length, 33);
 
 const genreBundle = JSON.parse(readFileSync(new URL("../unit-specs.bundle.json", import.meta.url), "utf8"));
 const genreSpec = genreBundle.units.find((unit) => unit.lessonId === "cur-english-performance-3-iv-16");
