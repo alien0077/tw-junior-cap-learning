@@ -1,5 +1,5 @@
 import { InteractiveState } from "./interactive-engine.js";
-import { COMPONENTS, renderComponentBody } from "./renderer-registry.js";
+import { COMPONENTS, RENDERER_METADATA, renderComponentBody } from "./renderer-registry.js";
 
 export const RENDERER_COMPONENTS = COMPONENTS;
 
@@ -333,7 +333,7 @@ export function renderInteractiveBlock({ document, mount, spec, blockIndex = 0, 
 
   const heading = document.createElement("h3");
   heading.id = `${block.id}-title`;
-  heading.append(text(document, block.component));
+  heading.append(text(document, RENDERER_METADATA[block.component]?.label || block.component));
   root.append(heading);
 
   const purpose = document.createElement("p");
