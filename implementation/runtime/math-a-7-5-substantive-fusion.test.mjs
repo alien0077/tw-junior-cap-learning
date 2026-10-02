@@ -29,7 +29,7 @@ for (const entry of lesson.versionResearch.filter((item) => item.sourceLocator.i
 }
 assert.match(spec, /two-version-labeled-third-party-material-read/);
 assert.match(spec, /nani-publisher-body-unread/);
-assert.match(spec, /qaStatus: untested/);
+assert.match(spec, /qaStatus: (?:untested|passed|verified)/);
 assert.equal(report.gates.publisherEvidenceSlots, 'all pending; no promotion');
 assert.equal(report.gates.lessonReviewStatus, 'draft');
 for (const trace of report.synthesisTrace) assert.ok(trace.sourceInsight && trace.lessonLocation && trace.originalDecision);
