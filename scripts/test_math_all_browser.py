@@ -218,10 +218,18 @@ async def check_lesson(page, lesson: dict[str, Any]) -> dict[str, Any]:
 
     search = page.locator("#search")
     await search.fill(lesson_id)
-    card = page.locator("#contentGrid article.card").filter(has=page.locator("h3", has_text=title)).first
-    await card.wait_for(state="visible", timeout=3_000)
-    sim = card.locator(f'[data-simulation-lesson^="{lesson_id}:"]').first
+    # lesson_id also appears inside its ten linked questions, and short lesson titles
+    # such as 「代數」/「函數」are substrings of other lesson titles.  The production
+    # simulation key is unique, so use it as the authoritative lesson-card locator.
+    sim = page.locator(f'#contentGrid [data-simulation-lesson^="{lesson_id}:"]').first
     await sim.wait_for(state="visible", timeout=3_000)
+    card = sim.locator("xpath=ancestor::article[contains(@class,'card')][1]")
+    await card.wait_for(state="visible", timeout=3_000)
+    rendered_title = (await card.locator("h3").first.inner_text()).strip()
+    if rendered_title != title:
+        raise AssertionError(
+            f"simulation resolved to wrong lesson card: expected title {title!r}, got {rendered_title!r}"
+        )
 
     text = (await sim.inner_text()).strip()
     if len(text) < 30:
