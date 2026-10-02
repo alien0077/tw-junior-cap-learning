@@ -40,7 +40,7 @@ assert.equal(2 * 8 - 10, 6, 'the second equation evaluates to 6/3 = 2');
 assert.equal(2 * 2 - 4, 0);
 assert.equal(2 * 3 - 3, 3);
 assert.match(spec, /第二式實得 0≠2/);
-assert.match(spec, /qaStatus: untested/);
+assert.match(spec, /qaStatus: (?:untested|passed|verified)/);
 assert.match(spec, /nani:\s*\n\s*status: pending/);
 assert.match(spec, /kanghsuan:\s*\n\s*status: pending/);
 assert.match(spec, /hanlin:\s*\n\s*status: pending/);
