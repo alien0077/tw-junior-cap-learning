@@ -1,0 +1,51 @@
+lessonId: lesson-math-content-a-7-5
+subject: math
+knowledgeNodes:
+  - kg-math-content-a-7-5
+learningObjective: 根據係數選擇適合的消去策略，對整條等式同步操作，求出兩個未知數並以兩條原式驗算。
+keyConcept: 消去法是對兩條完整等式做等價的整行運算；得到一個未知數後仍需回代與雙式驗算。
+priorKnowledge:
+  - 聯立方程式共同解
+  - 等式性質
+  - 一元一次方程式
+misconceptions:
+  - 只相減等號左側，右側常數不動
+  - 得到 x 就停止
+  - 不看係數結構，固定套同一消去流程
+visual:
+  primaryType: aligned-equation-elimination-stack
+  secondaryRepresentations:
+    - coefficient-columns
+    - row-operation
+    - back-substitution
+    - dual-equation-verification
+  firstFrame: x+y=35 與 2x+y=50 依 x、y、常數欄對齊，消去結果隱藏，要求學生先判斷最省步驟的方法。
+  manipulables:
+    - eliminationMethod
+    - eliminationBack
+    - eliminationTransfer
+  dynamicChanges:
+    - 消去欄
+    - 整行相減結果
+    - 回代結果
+    - 雙式驗算
+  invariants:
+    - 每次行運算必須同時作用於等號兩側
+interaction:
+  prediction: 先選「第二式減第一式，消去 y」或其他策略。
+  action: 提交策略後揭示整行相減，得到 x=15，再選回代的 y。
+  observation: y 係數相同會相消；右側 50−35 同步得到 15。
+  evidencePrompt: 指出為何 y 消失、右側為何也必須相減，以及 (15,20) 如何通過兩條原式。
+  feedback: 忘記右側運算或把 x 當完整答案時，直接指出缺少的結構。
+  retry: 可重新選策略或回代值。
+  transfer: 對 x+y=40、3x+2y=100 選第一式乘 −2 再相加，求完整共同解。
+accessibility:
+  keyboardAlternative: 全部 select 可鍵盤操作。
+  nonDragAlternative: 不要求拖曳。
+  textAlternative: 係數欄、整行操作與驗算均有文字。
+  reducedMotion: 不依賴動畫。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
