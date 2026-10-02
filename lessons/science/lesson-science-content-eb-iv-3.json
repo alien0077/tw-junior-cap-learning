@@ -197,16 +197,16 @@
   "fusionRecord": {
     "commonCore": [
       "三版本公開線索共同支持以力、力矩、受力圖與生活結構理解平衡。",
-    "計算、方向、支點與控制條件是共同評量核心。",
-    "平衡判斷需分別檢查合力與相對指定支點的合力矩，並用垂直力臂和轉動方向說明每個作用力的貢獻。"
+      "計算、方向、支點與控制條件是共同評量核心。",
+      "平衡判斷需分別檢查合力與相對指定支點的合力矩，並用垂直力臂和轉動方向說明每個作用力的貢獻。"
     ],
     "versionDifferences": [
       "南一公開入口偏向主題定位；康軒公開索引偏向觀察與活動；翰林公開入口偏向力學與數位教學資源。公開頁面不足以宣稱未取得的完整教材細節。"
     ],
     "originalAdditions": [
       "以結構檢查員的紙板吊臂、懸掛招牌、力偶、蹺蹺板與可重做的力矩表建立本課互動。",
-    "把不動不等於無力、作用反作用不在同一自由體與力臂不是斜距等迷思放入題目診斷。",
-    "以牆面支架承受偏心載重的受力圖要求逐力取矩；移動支點後重新列式，檢查零合力矩是否仍成立及模型忽略的變形。"
+      "把不動不等於無力、作用反作用不在同一自由體與力臂不是斜距等迷思放入題目診斷。",
+      "以牆面支架承受偏心載重的受力圖要求逐力取矩；移動支點後重新列式，檢查零合力矩是否仍成立及模型忽略的變形。"
     ],
     "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校公開自然／理化試題能力方向，重新組織合力、合力矩、作用線、力臂、自由體圖與結構平衡；正文、互動、題目、答案、解析與五步解法均為原創，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
@@ -341,7 +341,7 @@
     "id": "sim-science-eb-iv-3",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-3-static-equilibrium",
     "goal": "在吊臂與紙板平台模型中，依受力圖、垂直力臂、力矩方向及合力雙重檢查判斷是否達到靜力平衡。",
     "mission": "你是結構檢查員，要讓紙板吊臂保持水平；每一步只改變一項條件，並留下能被同學重做的理由。",
     "sourceRefs": [
@@ -385,6 +385,20 @@
           "feedback": "把偏差寫成限制或新問題，不把一次紙板測試當成真實安全保證。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "boom-force-and-torque-diagram",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "loadForce",
+        "loadArm",
+        "cableForce",
+        "cableArm",
+        "verticalSupport"
+      ],
+      "transferScenario": "zero-torque-not-zero-force"
     }
   },
   "lessonScope": "learning-content"
