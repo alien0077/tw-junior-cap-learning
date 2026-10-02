@@ -350,7 +350,7 @@
     "id": "sim-science-eb-iv-7",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-7-simple-machines",
     "goal": "用花盆搬運模型比較定滑輪、動滑輪與斜面的輸入力、路徑、機械利益和功收支。",
     "mission": "你是校園搬運任務設計員，必須讓120 N負載上升0.50 m；每次只改變一種簡單機械，記錄輸入力、輸入距離、方向與摩擦限制。",
     "sourceRefs": [
@@ -394,6 +394,19 @@
           "feedback": "保留實測力與距離，列出摩擦和測量限制，不要改寫數據。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "pulley-or-ramp-force-distance-diagram",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "machineType",
+        "load",
+        "liftHeight",
+        "rampLength"
+      ],
+      "transferScenario": "longer-ramp"
     }
   }
 }
