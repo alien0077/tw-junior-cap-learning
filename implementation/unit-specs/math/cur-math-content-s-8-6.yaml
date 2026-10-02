@@ -56,7 +56,7 @@ unitImplementationSpec:
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-S-8-6-I01
     component: GeometryManipulationBlock
-    purpose: 讓學生操作並看見「S-8-6：畢氏定理」中最容易被背誦取代的關係
+    purpose: 以直角三角形與三邊平方的面積關係建立 a²+b²=c²；操作兩股後同步更新平方和與斜邊，並用平方差處理已知斜邊的反向問題。
     initialState:
       mode: predict
       showAnswer: false
@@ -65,23 +65,23 @@ unitImplementationSpec:
         primary: 1
         secondary: 1
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先標出直角、兩股與斜邊，再預測兩股6、8時的斜邊長
+    - 揭示兩股平方36、64與斜邊平方100，將平方和連到三個正方形面積而非邊長直接相加
+    - 調整兩股 a、b，觀察 a²、b²、c² 與 c=√(a²+b²) 同步；同時用 c<a+b 檢查量級
+    - 遷移到斜邊13、一股5，先做 13²−5²，再取正平方根並代回 5²+12²=13²
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 第一畫面一定有直角三角形、直角標記與三個平方量；公式結論在預測前保持隱藏
+    - 兩股平方和與斜邊平方同步，長度與面積不可混為同一量
+    - 調整 a、b 時圖形、平方卡與近似斜邊值同步更新
+    - 手機版仍看得到直角角色、a²+b² 與斜邊；不得退化成只有底高滑桿的通用三角形
     misconceptionChecks:
     - id: MC-CUR-MATH-CONTENT-S-8-6-I01
-      trigger: 把「S-8-6：畢氏定理」當成可直接套公式的程序，忽略量與表徵的對應
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 直接把兩股相加當斜邊，或已知斜邊時用 13−5 而不是平方差
+      prompt: 先指出哪一邊是直角對面的斜邊，再比較三邊平方；用平方和／平方差而不是線段直接加減作證。
+      expectedEvidence: 6²+8²=100=10²；反向題 13²−5²=144=12²，且三角不等式與正長度都成立
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出直角角色與平方關係的兩層證據，再要求用另一組兩股驗證。
+      incorrect: 先提示『定理連的是平方』與斜邊位置；重試仍錯才顯示局部平方值。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
@@ -96,16 +96,16 @@ unitImplementationSpec:
     reuseDecision: inspiration-only
     application: "本課「S-8-6：畢氏定理」的 GeometryManipulationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「S-8-6：畢氏定理」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 已知斜邊與一直角邊的反向畢氏問題
+    stemConstraint: 梯架斜長13公尺、底距5公尺，求高度並以平方和回查
+    requiredResponse: 高度12公尺；13²−5²=144，取正平方根12，且5²+12²=13²
+    scoring: 角色1、平方差1、回查與單位1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 直角三角形兩股9、12，斜邊是多少？請用平方證據而非9+12。
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 9²+12²=225
+    - 斜邊=15
+    - 15<21 且15²=9²+12²
   expressionExtension:
     applicable: false
     task: 用 80～120 字／英文短段落，將「S-8-6：畢氏定理」的證據、因果或觀察說給同學聽
@@ -114,6 +114,8 @@ unitImplementationSpec:
     breakpoints:
     - 320
     - 375
+    - 390
+    - 430
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
@@ -137,7 +139,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 S-8-6
