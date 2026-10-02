@@ -92,6 +92,7 @@ const rows = lessons.map(lesson => {
     reviewStatus: lesson.reviewStatus || "missing",
     questionCount: qs.length,
     questionDrafts: qs.filter(q => q.reviewStatus !== "content-reviewed").length,
+    simulationId: lesson.simulation?.id || null,
     simulationEngine,
     simulationModel: lesson.simulation?.model || null,
     simulationGoal: Boolean(lesson.simulation?.goal),
@@ -122,6 +123,7 @@ const summary = {
   activeLessonsWithoutSimulation: rows.filter(r => !r.simulationEngine && rowIsActive(r)).length,
   activeLessonsWithProductionRenderer: rows.filter(r => rowIsActive(r) && r.productionRenderer).length,
   activeGenericSimulationCount: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").length,
+  uniqueActiveSimulationIds: new Set(rows.filter(rowIsActive).map(r => r.simulationId).filter(Boolean)).size,
   lessonsWithInteractive: rows.filter(r => r.interactiveType).length,
   lessonsWithDirectSpec: rows.filter(r => r.directSpec).length,
   lessonsWithResolvedSpec: rows.filter(r => r.spec).length,
@@ -130,12 +132,22 @@ const summary = {
   reports: reportFiles.size,
 };
 
+const activeSimulationIdGroups = new Map();
+for (const row of rows.filter(rowIsActive)) {
+  if (!row.simulationId) continue;
+  if (!activeSimulationIdGroups.has(row.simulationId)) activeSimulationIdGroups.set(row.simulationId, []);
+  activeSimulationIdGroups.get(row.simulationId).push(row);
+}
+
 const problems = {
   wrongQuestionCount: rows.filter(r => rowIsActive(r) && r.questionCount !== 10).map(r => ({ id: r.id, file: r.file, count: r.questionCount })),
   nonReviewedActiveQuestions: rows.filter(r => rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, file: r.file, count: r.questionDrafts })),
   draftLessons: rows.filter(r => r.reviewStatus === "draft").map(r => ({ id: r.id, file: r.file })),
   missingReviewStatus: rows.filter(r => r.reviewStatus === "missing").map(r => ({ id: r.id, file: r.file })),
   activeWithoutSimulation: rows.filter(r => rowIsActive(r) && !r.simulationEngine).map(r => ({ id: r.id, file: r.file })),
+  duplicateActiveSimulationIds: [...activeSimulationIdGroups.entries()]
+    .filter(([, group]) => group.length > 1)
+    .map(([simulationId, group]) => ({ simulationId, lessons: group.map(r => r.id), files: group.map(r => r.file) })),
   activeWithGenericSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").map(r => ({ id: r.id, file: r.file, model: r.simulationModel })),
   activeWithUnsupportedProductionSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine && !productionMathEngines.has(r.simulationEngine)).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
   activeWithoutProductionRenderer: rows.filter(r => rowIsActive(r) && r.simulationEngine && r.simulationEngine !== "concept-explorer" && !r.productionRenderer).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
