@@ -13,7 +13,7 @@ if (browserReport.scope?.activeLessonsExpected !== 128 || browserReport.scope?.a
 if (browserReport.failures?.length) throw new Error(`browser QA report contains failures: ${browserReport.failures.length}`);
 
 const files = (await readdir(specDir)).filter(name => name.endsWith(".yaml")).sort();
-if (files.length !== 125) throw new Error(`expected 125 math unit specs, got ${files.length}`);
+if (files.length !== 129) throw new Error(`expected 129 math unit specs, got ${files.length}`);
 
 const changed = [];
 for (const file of files) {
