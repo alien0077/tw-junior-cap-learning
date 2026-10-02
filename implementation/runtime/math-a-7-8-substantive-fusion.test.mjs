@@ -13,6 +13,9 @@ assert.equal(lesson.teaching.body.length, 6);
 assert.equal(lesson.simulation.engine, "math-inequality-range", "A-7-8 must use the dedicated inequality renderer rather than the generic concept explorer");
 assert.equal(lesson.simulation.learningDesign.type, "inequality-solution-set");
 assert.equal(lesson.simulation.learningDesign.steps.length, 4);
+assert.deepEqual(lesson.simulation.inequalityRange.initialState, { boundary: -2, relation: "less" });
+assert.equal(lesson.simulation.inequalityRange.min, -6);
+assert.equal(lesson.simulation.inequalityRange.max, 4);
 assert.deepEqual(lesson.studyReferences, lesson.simulation.sourceRefs);
 
 // Source distinctions are explicit and tied to actual original learner-facing moves.
@@ -45,8 +48,15 @@ const rootSelector = '[data-simulation-lesson="lesson-math-content-a-7-8:a7-8-fu
 host.innerHTML = dom.window.LearningSimulations.render(lesson, "a7-8-fusion-test");
 let root = host.querySelector(rootSelector);
 assert.match(root.textContent, /先預測/);
-assert.match(root.querySelector("svg").getAttribute("aria-label"), /負二為空心端點並向左延伸/);
-assert.match(root.querySelector("figcaption").textContent, /原式 −2x＋6＞10/);
+const liveGraph = root.querySelector(".sim-stage svg");
+assert.match(liveGraph.getAttribute("aria-label"), /x ＜ -2.*端點不包含.*向左延伸/);
+const boundarySlider = root.querySelector('[data-sim-control="boundary"]');
+assert.equal(boundarySlider.min, "-6");
+assert.equal(boundarySlider.max, "4");
+assert.equal(boundarySlider.value, "-2");
+assert.equal(root.querySelector('[data-inequality-relation="less"]').getAttribute("aria-pressed"), "true");
+assert.match(root.querySelector(".sim-stage").textContent, /-3 符合.*-2 不符合.*-1 不符合/);
+assert.match(root.querySelector(".sim-inequality-proof figcaption").textContent, /原式 −2x＋6＞10/);
 assert.equal(root.querySelectorAll("[data-design-step]").length, 4);
 
 for (const step of [1, 2, 3]) {
@@ -59,5 +69,5 @@ for (const step of [1, 2, 3]) {
   assert.equal(dom.window.document.activeElement, root.querySelector(`[data-design-step="${step}"]`), "keyboard focus must survive step rerender");
 }
 assert.match(root.textContent, /−5、−4、−3/);
-assert.match(root.querySelector("svg").getAttribute("aria-label"), /負三成立、負二不成立、負一不成立/);
+assert.match(root.querySelector(".sim-inequality-proof svg").getAttribute("aria-label"), /負三成立、負二不成立、負一不成立/);
 console.log("A-7-8 source-to-visible fusion, solution-set reasoning, interactive proof graph, keyboard focus, and content-review/evidence-boundary gates: ok");
