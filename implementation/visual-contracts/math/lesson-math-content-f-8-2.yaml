@@ -1,0 +1,31 @@
+lessonId: lesson-math-content-f-8-2
+subject: math
+knowledgeNodes: [kg-math-content-f-8-2]
+learningObjective: 連結 y=ax+b 的式子、數值表與直線，分辨 a 控制固定變化率／斜率、b 控制初始值／y截距，並用同一輸入判斷交點。
+keyConcept: 一次只改一個參數，才能由多重表徵辨認它的幾何與情境意義。
+priorKnowledge: [座標平面, 一次函數, 代入]
+misconceptions:
+  - 把 b 的平移誤當成斜率改變
+  - 把線條接近誤認為精確交點
+  - 忽略情境的有效範圍
+visual:
+  primaryType: linked-equation-table-graph
+  secondaryRepresentations: [fee-table, coordinate-graph, intersection-difference]
+  firstFrame: 同一座標尺度顯示基準直線與參數控制，先要求預測再改 a。
+  manipulables: [f82Mode, f82A, f82B, f82X, f82Prediction]
+  dynamicChanges: [line-slope, y-intercept, table-values, plan-difference]
+  invariants: [changing-a-keeps-b-fixed-in-a-mode, changing-b-keeps-a-fixed-in-b-mode]
+interaction:
+  prediction: 預測只改 a 或 b 時保持不變的量。
+  action: 分模式只改一個參數，再移動 x 尋找方案交點。
+  observation: 比較 x=0 截距、相鄰輸出差與同一 x 的兩方案費用。
+  evidencePrompt: 用圖、表、式至少兩種表示說明參數意義。
+  feedback: 指出混淆的是斜率、截距或交點精度。
+  retry: 可鎖定另一參數重新操作。
+  transfer: y=−7x+100 水箱負斜率與情境範圍。
+accessibility:
+  keyboardAlternative: range/select controls
+  nonDragAlternative: sliders have keyboard controls
+  textAlternative: table and equation duplicate essential graph values
+  reducedMotion: no essential animation
+qa: {pedagogy: needs-review-after-implementation, visual: needs-screenshot-review, interaction: needs-browser-review, browser: needs-browser-review}
