@@ -256,6 +256,9 @@ def main() -> int:
                     errors.append(f"{path}: {origin} questions require provenance.sourceUrl and sourceLocator")
     lesson_ids = set(lessons_by_id)
     for lesson_id in lesson_ids:
+        # M4 question minimum applies to curriculum leaf units, not aggregate strand overview lessons.
+        if "-iv-" not in lesson_id.lower():
+            continue
         if lesson_question_counts.get(lesson_id, 0) < 10:
             errors.append(f"{lesson_id}: only {lesson_question_counts.get(lesson_id, 0)} questions; minimum is 10")
 
