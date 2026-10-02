@@ -52,10 +52,14 @@ jobs:
           node implementation/runtime/interactive-engine.test.mjs
           node implementation/runtime/dom-renderer.test.mjs
           node implementation/runtime/student-lesson-shell.test.mjs
+          failed=0
           for test_file in implementation/runtime/math-*.test.mjs; do
             echo "RUN $test_file"
-            node "$test_file"
+            if ! node "$test_file"; then
+              failed=1
+            fi
           done
+          exit "$failed"
 
       - name: Install Chromium browser QA dependencies
         run: |
