@@ -59,8 +59,8 @@ unitImplementationSpec:
   - 三路驗算表：同一題並列面積結構、分配律展開與指定數值代入結果。
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-A-8-1-I01
-    component: GeometryManipulationBlock
-    purpose: 讓學生依序操作原生階段按鈕，追蹤四塊面積如何生成平方公式的交叉項，再比較符號改變及數值驗算；本互動為逐階證據檢視，不宣稱可拖曳圖形。
+    component: VisualAreaModelBlock
+    purpose: 以大型動態面積圖直接呈現 a、b 分割；學生先預測，再改變 a、b 與公式模式，觀察兩個 ab、扣除區及相消區如何生成乘法公式。
     initialState:
       mode: predict
       showAnswer: false
@@ -71,14 +71,14 @@ unitImplementationSpec:
         crossRectangles: 2
     studentActions:
     - 先預測總面積式中是否有 ab 項，提交後才顯示分割區塊。
-    - 以鍵盤或觸控選取各階段按鈕，逐步顯示面積分割、公式整理、指定數值核對及減法情形。
-    - 閱讀階段內的 action、equation、reason 和 feedback，將兩個 ab 區域連到 2ab，再比較異號項抵消。
-    - 可使用「已提出預測」「已記錄觀察」按鈕及文字解釋欄留下個別學習紀錄。
+    - 以鍵盤或觸控調整 a、b 與公式模式；面積區塊尺寸、標籤、數值驗算與符號式同步改變。
+    - 先提交交叉區或相消的預測，之後才揭示區塊標籤與完整公式，並用圖上證據修正。
+    - 完成後更換另一組 a、b 做 transfer，避免只記住初始數字。
     visualRules:
-    - 每階顯示一致的符號式與推理說明；不可宣稱存在未實作的即時幾何拖曳或變數滑桿。
+    - 第一畫面以大型面積模型為主；公式在學生預測前保持隱藏，a、b 控制會即時改變區塊比例。
     - 平方模式必須列出兩個 ab 區塊；差平方模式須以文字解釋負交叉項與正的常數平方。
     - 區塊以代數標籤、斜線紋理及文字描述共同辨識，不依賴顏色。
-    - 保留學生預測及階段選擇；窄螢幕可垂直閱讀所有階段按鈕、算式和理由。
+    - 保留學生預測、即時證據與 transfer；320/375/390/430px 窄螢幕改為單欄但模型仍為主要視覺。
     misconceptionChecks:
     - id: MC-CUR-MATH-CONTENT-A-8-1-I01
       trigger: 將 (a+b)² 展開成 a²+b²，或把 (a−b)² 的 b² 標成負值。
@@ -136,6 +136,8 @@ unitImplementationSpec:
     breakpoints:
     - 320
     - 375
+    - 390
+    - 430
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
@@ -159,7 +161,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-1
