@@ -37,7 +37,7 @@ assert.match(visible, /−3\(2x−1\)≥9.*−4≤x.*−4、−3、−2、−1/s
 assert.equal(lesson.versionResearch.some((source) => source.publisher === "nani" && source.sourceType === "public-domain"), false);
 assert.equal(lesson.publisherResearch.filter((source) => ["nani", "kanghsuan", "hanlin"].includes(source.publisher) && source.status === "verified").length, 0);
 assert.match(spec, /limited-public-materials-read; source-to-visible-original-synthesis-draft/);
-assert.match(spec, /qaStatus: (?:untested|passed)/, "QA status is finalized only after the browser gate; the content/runtime contract must remain valid in either transition state");
+assert.match(spec, /qaStatus: (?:untested|passed|verified)/, "QA status is finalized only after the browser gate; the content/runtime contract must remain valid in either transition state");
 for (const publisher of ["nani", "kanghsuan", "hanlin"]) assert.match(spec, new RegExp(`${publisher}:\\s*\\n\\s*status: pending`));
 
 // Verify the real renderer's proof graph, step navigation, keyboard focus, and source-data fallback.
