@@ -76,6 +76,27 @@
       .math-area-modebar, .math-area-predict { display: grid; grid-template-columns: 1fr; }
       .math-area-modebar button, .math-area-predict button { width: 100%; }
     }
+
+    .math-factor-lab { border: 2px solid #475569; border-radius: 16px; padding: 1rem; background: #fbfdff; }
+    .math-factor-board { display: grid; gap: .75rem; border: 1px solid #cbd5e1; border-radius: 14px; padding: .85rem; background: #f8fafc; }
+    .math-factor-row { display: grid; grid-template-columns: 5rem 1fr; gap: .75rem; align-items: center; }
+    .math-factor-tokens { display: flex; flex-wrap: wrap; gap: .5rem; }
+    .math-factor-token { display: inline-grid; place-items: center; min-width: 44px; min-height: 44px; border: 2px solid #94a3b8; border-radius: 10px; background: white; font-weight: 800; }
+    .math-factor-token.is-common { outline: 3px solid #334155; outline-offset: 2px; }
+    .math-factor-common { margin: 0; padding: .65rem .8rem; border-radius: 10px; background: #e2e8f0; }
+    .math-factor-lab fieldset { display: flex; flex-wrap: wrap; gap: .55rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; }
+    .math-factor-lab legend { font-weight: 800; padding: 0 .35rem; }
+    .math-factor-evidence { border-left: 5px solid #475569; padding: .7rem .8rem; background: #f8fafc; }
+    .math-factor-method-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .65rem; }
+    .math-factor-method-grid article { border: 1px solid #cbd5e1; border-radius: 10px; padding: .7rem; background: white; }
+    .math-factor-method-grid p { margin: .35rem 0 0; }
+    @media (max-width: 480px) {
+      .math-factor-lab { padding: .65rem; }
+      .math-factor-row { grid-template-columns: 1fr; }
+      .math-factor-method-grid { grid-template-columns: 1fr; }
+      .math-factor-lab fieldset { display: grid; grid-template-columns: 1fr; }
+      .math-factor-lab fieldset button { width: 100%; }
+    }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
   </style>
 </head>
