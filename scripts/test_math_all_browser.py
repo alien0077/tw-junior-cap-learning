@@ -222,7 +222,7 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
         "n-7-7-scientific-place-value-v1": ("n77Place", ".mnf-place"),
         "n-7-8-ratio-table-v1": ("n78Scale", ".mnf-table"),
         "n-7-9-ratio-table-v1": ("n78Scale", ".mnf-table"),
-        "n-8-1-square-root-bracket-v1": ("n81Root", ".mnf-root-bar"),
+        "n-8-1-square-root-bracket-v1": ("n81Structure", ".mnf-root-structure"),
         "n-8-2-root-number-line-v1": ("n81Root", ".mnf-root-bar"),
         "n-8-3-sequence-pattern-v1": ("n83Pattern", ".mnf-sequence"),\n        "n-8-4-arithmetic-sequence-v1": ("n84Case", ".mnf-sequence"),\n        "n-8-5-arithmetic-series-v1": ("n85Series", ".mnf-pairs"),\n        "n-8-3-radical-structure-v1": ("n81Root", ".mnf-root-bar"),
         "n-8-4-radical-operations-v1": ("n81Root", ".mnf-root-bar"),
