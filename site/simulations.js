@@ -108,7 +108,7 @@
       <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>${esc(design.predictionPrompt)}</p><button type="button" data-design-action="submit-prediction">${predicted ? "已鎖定預測" : "我已完成預測，開始操作"}</button></div>
       <figure class="sim-design-map"><svg viewBox="0 0 640 180" role="img" aria-label="本單元四步證據路徑">${links}${nodes}</svg><figcaption>${predicted ? "點選節點逐步操作；每一步都必須回到圖像或數據證據。" : "先在心中或紙上做出預測；後續證據節點暫時鎖定。"}</figcaption></figure>
       ${solutionSetVisual}
-      <fieldset class="sim-design-workbench" ${predicted ? "" : "disabled"}><legend>2. 操作與證據</legend>
+      <fieldset class="sim-design-workbench"><legend>2. 操作與證據</legend>
         <div class="sim-design-steps" role="group" aria-label="單元探索步驟">${design.steps.map((item,index) => `<button type="button" data-design-step="${index}" ${index === current ? 'aria-current="step"' : ""}>步驟 ${index+1}</button>`).join("")}</div>
         <div class="sim-design-evidence" aria-live="polite"><p class="sim-design-equation sim-equation-current">${esc(step.equation)}</p><p><b>操作：</b>${esc(step.action)}</p><p><b>為什麼：</b>${esc(step.reason)}</p><p class="sim-design-feedback">${esc(step.feedback)}</p></div>
       </fieldset>
