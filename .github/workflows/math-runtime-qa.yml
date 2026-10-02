@@ -17,6 +17,8 @@ on:
       - 'scripts/audit_math_coverage.mjs'
       - 'scripts/mark_math_spec_qa_passed.mjs'
       - 'scripts/browser_smoke_test.py'
+      - 'scripts/audit_math_browser_a11y.py'
+      - 'scripts/test_math_runtime_browser.py'
       - 'scripts/browser_a11y_audit.py'
       - 'package.json'
       - '.github/workflows/math-runtime-qa.yml'
@@ -90,12 +92,12 @@ jobs:
       - name: Run real Chromium workbench smoke test
         env:
           TW_BROWSER_CHROME: ''
-        run: python scripts/browser_smoke_test.py --url http://127.0.0.1:8765/implementation/workbench.html
+        run: python scripts/test_math_runtime_browser.py --url http://127.0.0.1:8765/implementation/workbench.html
 
       - name: Run automated accessibility audit
         env:
           TW_A11Y_CHROME: ''
-        run: python scripts/browser_a11y_audit.py --url http://127.0.0.1:8765/implementation/workbench.html --report implementation/reports/math-runtime-a11y-current.json
+        run: python scripts/audit_math_browser_a11y.py --url http://127.0.0.1:8765/implementation/workbench.html --report implementation/reports/math-runtime-a11y-current.json
 
       - name: Mark implemented math specs QA passed
         run: node scripts/mark_math_spec_qa_passed.mjs
