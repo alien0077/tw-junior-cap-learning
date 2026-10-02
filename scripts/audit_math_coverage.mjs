@@ -56,6 +56,9 @@ const productionRendererSignatures = new Map([
   ["math-probability-lab", ["math-probability-lab", "trials", "role=\"status\""]],
 ]);
 const productionModelRendererSignatures = new Map([
+  ["n-8-3-sequence-pattern-v1", ["n83Pattern", "mnf-sequence"]],
+  ["n-8-4-arithmetic-sequence-v1", ["n84Case", "mnf-sequence"]],
+  ["n-8-5-arithmetic-series-v1", ["n85Series", "mnf-pairs"]],
   ["s-7-5-symmetry-axes-v1", ["s75Shape", "mgf-proof"]],
   ["s-8-7-composite-area-v1", ["s87Split", "mgf-proof"]],
   ["s-8-8-triangle-properties-v1", ["s88Case", "mgf-proof"]],
