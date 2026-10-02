@@ -7,6 +7,9 @@ const manifestPath = new URL("implementation/reports/math-spec-qa-current.json",
 
 const browserReport = JSON.parse(await readFile(reportPath, "utf8"));
 if (browserReport.status !== "PASS") throw new Error(`browser QA report is not PASS: ${browserReport.status}`);
+if (process.env.GITHUB_SHA && browserReport.sourceCommit !== process.env.GITHUB_SHA) {
+  throw new Error(`browser QA sourceCommit does not match current workflow source: ${browserReport.sourceCommit} != ${process.env.GITHUB_SHA}`);
+}
 if (browserReport.scope?.activeLessonsExpected !== 128 || browserReport.scope?.activeLessonsPassed !== 128) {
   throw new Error(`browser QA did not pass all 128 active math lessons: ${browserReport.scope?.activeLessonsPassed}`);
 }
