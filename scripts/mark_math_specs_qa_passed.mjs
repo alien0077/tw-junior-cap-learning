@@ -11,6 +11,10 @@ if (browserReport.scope?.activeLessonsExpected !== 128 || browserReport.scope?.a
   throw new Error(`browser QA did not pass all 128 active math lessons: ${browserReport.scope?.activeLessonsPassed}`);
 }
 if (browserReport.failures?.length) throw new Error(`browser QA report contains failures: ${browserReport.failures.length}`);
+const requiredViewports = [320, 375, 390, 430, 768];
+if (JSON.stringify(browserReport.scope?.viewports) !== JSON.stringify(requiredViewports)) {
+  throw new Error(`browser QA viewport coverage mismatch: ${JSON.stringify(browserReport.scope?.viewports)}`);
+}
 
 const files = (await readdir(specDir)).filter(name => name.endsWith(".yaml")).sort();
 if (files.length !== 129) throw new Error(`expected 129 math unit specs, got ${files.length}`);
