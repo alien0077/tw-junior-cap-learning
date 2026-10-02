@@ -37,7 +37,11 @@
     }[engine] || {});
   };
   const read = simulation => {
-    const initial = simulation.ticketEquation?.initialState || {};
+    const initial = {
+      ...(simulation.initialState || {}),
+      ...(simulation.ticketEquation?.initialState || {}),
+      ...(simulation.inequalityRange?.initialState || {}),
+    };
     try { return { ...defaults(simulation.engine, simulation.model), ...initial, ...JSON.parse(localStorage.getItem(stateKey(simulation)) || "{}") }; }
     catch { return { ...defaults(simulation.engine, simulation.model), ...initial }; }
   };
@@ -111,13 +115,22 @@
       return `${designed}<div class="sim-expression-check"><h5>同值檢驗</h5><p aria-live="polite">x=${x}；原式 3x＋2＋5x−7 = <output data-expression-original>${original}</output>；整理式 8x−5 = <output data-expression-reduced>${simplified}</output>。${original === simplified ? "兩式同值。" : "兩式不同值，請檢查分組與符號。"}</p><div class="sim-table-wrap"><table><caption>固定測試值：比較原式與整理式</caption><thead><tr><th scope="col">x</th><th scope="col">原式</th><th scope="col">整理式</th></tr></thead><tbody>${rows}</tbody></table></div>${slider("x", "測試變數 x 的值", x, -5, 5)}</div>`;
     }
     if (engine === "math-inequality-range") {
-      const relation = ({ "at-least": ["≥", true, "向右", "至少"], greater: ["＞", false, "向右", "超過"], "at-most": ["≤", true, "向左", "至多"], less: ["＜", false, "向左", "低於"] })[state.relation] || ["≥", true, "向右", "至少"];
+      const config = lesson.simulation.inequalityRange || {};
+      const min = Number.isFinite(Number(config.min)) ? Number(config.min) : 7;
+      const max = Number.isFinite(Number(config.max)) ? Number(config.max) : 17;
+      const step = Number.isFinite(Number(config.step)) && Number(config.step) > 0 ? Number(config.step) : 1;
+      const boundary = clamp(Number(state.boundary), min, max);
+      const relationKey = ["at-least", "greater", "at-most", "less"].includes(state.relation) ? state.relation : "at-least";
+      const relation = ({ "at-least": ["≥", true, "向右", "至少"], greater: ["＞", false, "向右", "超過"], "at-most": ["≤", true, "向左", "至多"], less: ["＜", false, "向左", "低於"] })[relationKey];
       const [symbol, inclusive, direction, phrase] = relation;
-      const x = 180 + (Number(state.boundary) - 12) * 18;
+      const span = Math.max(step, max - min);
+      const x = 36 + ((boundary - min) / span) * 288;
       const start = direction === "向右" ? x : 24, end = direction === "向右" ? 336 : x;
-      const tests = [Number(state.boundary) - 1, Number(state.boundary), Number(state.boundary) + 1];
-      const qualifies = value => state.relation === "at-least" ? value >= state.boundary : state.relation === "greater" ? value > state.boundary : state.relation === "at-most" ? value <= state.boundary : value < state.boundary;
-      return `<div class="sim-stage"><p>語句：x ${phrase} ${state.boundary}　｜　符號：x ${symbol} ${state.boundary}　｜　端點：${inclusive ? "包含（實心）" : "不包含（空心）"}　｜　解集方向：${direction}</p><svg viewBox="0 0 360 120" role="img" aria-label="數線表示 x ${symbol} ${state.boundary}；${inclusive ? "端點包含" : "端點不包含"}；解集向${direction === "向右" ? "右" : "左"}延伸"><line x1="24" y1="58" x2="336" y2="58" class="sim-axis"/><line x1="${start}" y1="58" x2="${end}" y2="58" class="sim-line"/><path d="${direction === "向右" ? `M326 50 L336 58 L326 66` : `M34 50 L24 58 L34 66`}" class="sim-line" fill="none"/><circle cx="${x}" cy="58" r="9" class="sim-marker" style="fill:${inclusive ? "currentColor" : "white"};stroke:currentColor"/><text x="${x}" y="94" text-anchor="middle">${state.boundary}・${inclusive ? "含" : "不含"}</text></svg><p>邊界檢查：${tests.map(value => `${value} ${qualifies(value) ? "符合" : "不符合"}`).join("；")}</p></div><fieldset class="sim-relation"><legend>選擇文字條件（可用鍵盤操作）</legend>${[["at-least","至少"],["greater","超過"],["at-most","至多"],["less","低於"]].map(([value,label]) => `<button type="button" data-inequality-relation="${value}" aria-pressed="${state.relation === value}">${label}</button>`).join("")}</fieldset>${slider("boundary", "邊界值", state.boundary, 7, 17)}${designed || ""}`;
+      const offsets = Array.isArray(config.testOffsets) && config.testOffsets.length ? config.testOffsets : [-step, 0, step];
+      const tests = offsets.map(offset => boundary + Number(offset)).filter(Number.isFinite);
+      const qualifies = value => relationKey === "at-least" ? value >= boundary : relationKey === "greater" ? value > boundary : relationKey === "at-most" ? value <= boundary : value < boundary;
+      const context = config.context ? `<p class="sim-context">${esc(config.context)}</p>` : "";
+      return `<div class="sim-stage">${context}<p>語句：x ${phrase} ${boundary}　｜　符號：x ${symbol} ${boundary}　｜　端點：${inclusive ? "包含（實心）" : "不包含（空心）"}　｜　解集方向：${direction}</p><svg viewBox="0 0 360 120" role="img" aria-label="數線表示 x ${symbol} ${boundary}；${inclusive ? "端點包含" : "端點不包含"}；解集向${direction === "向右" ? "右" : "左"}延伸"><line x1="24" y1="58" x2="336" y2="58" class="sim-axis"/><line x1="${start}" y1="58" x2="${end}" y2="58" class="sim-line"/><path d="${direction === "向右" ? `M326 50 L336 58 L326 66` : `M34 50 L24 58 L34 66`}" class="sim-line" fill="none"/><circle cx="${x}" cy="58" r="9" class="sim-marker" style="fill:${inclusive ? "currentColor" : "white"};stroke:currentColor"/><text x="${x}" y="94" text-anchor="middle">${boundary}・${inclusive ? "含" : "不含"}</text></svg><p>邊界檢查：${tests.map(value => `${value} ${qualifies(value) ? "符合" : "不符合"}`).join("；")}</p></div><fieldset class="sim-relation"><legend>選擇文字條件（可用鍵盤操作）</legend>${[["at-least","至少"],["greater","超過"],["at-most","至多"],["less","低於"]].map(([value,label]) => `<button type="button" data-inequality-relation="${value}" aria-pressed="${relationKey === value}">${label}</button>`).join("")}</fieldset>${slider("boundary", "邊界值", boundary, min, max, step)}${designed || ""}`;
     }
     if (engine === "math-number-line") {
       const n = state.n;
