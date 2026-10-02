@@ -219,7 +219,7 @@ function mountQuadraticIdentitiesLab({ document, root, block, spec }) {
       canvas.append(label("a",{x:x+ap/2,y:28,"text-anchor":"middle","font-weight":700}));
       canvas.append(label("b",{x:x+ap+bp/2,y:28,"text-anchor":"middle","font-weight":700}));
       if(!state.revealed) canvas.append(label("先預測四塊面積",{x:200,y:185,"text-anchor":"middle","font-size":18,"font-weight":800}));
-      caption.textContent=state.revealed ? \`整體面積 \${(a+b)**2}；四塊為 \${a*a}、\${a*b}、\${a*b}、\${b*b}。\` : "公式暫時隱藏。";
+      caption.textContent=state.revealed ? `整體面積 ${(a+b)**2}；四塊為 ${a*a}、${a*b}、${a*b}、${b*b}。` : "公式暫時隱藏。";
     } else if (state.mode === "minus") {
       const inner=size*(a-b)/a, cut=size-inner;
       rect(x,y,size,size,"a²","#dbeafe");
@@ -238,7 +238,7 @@ function mountQuadraticIdentitiesLab({ document, root, block, spec }) {
       } else canvas.append(label("交叉項會留下嗎？",{x:200,y:185,"text-anchor":"middle","font-size":18,"font-weight":800}));
       caption.textContent=state.revealed ? "+ab 與 −ab 大小相同、符號相反，所以留下 a²−b²。" : "先預測交叉項。";
     }
-    canvas.setAttribute("aria-label", \`\${modes[state.mode].label}，a=\${a}，b=\${b}，\${state.revealed?"已揭示":"尚未揭示"}\`);
+    canvas.setAttribute("aria-label", `${modes[state.mode].label}，a=${a}，b=${b}，${state.revealed?"已揭示":"尚未揭示"}`);
   }
 
   function renderEvidence() {
@@ -246,9 +246,9 @@ function mountQuadraticIdentitiesLab({ document, root, block, spec }) {
     evidence.hidden=!state.revealed;
     if(!state.revealed) return;
     const a=state.a,b=Math.min(state.b,a-1), p=document.createElement("p"), q=document.createElement("p");
-    if(state.mode==="plus") p.textContent=\`(a+b)²=a²+ab+ab+b²=a²+2ab+b²；目前 (\${a}+\${b})²=\${(a+b)**2}。\`;
-    else if(state.mode==="minus") p.textContent=\`(a−b)²=a²−ab−ab+b²=a²−2ab+b²；目前 (\${a}−\${b})²=\${(a-b)**2}。\`;
-    else p.textContent=\`(a+b)(a−b)=a²−b²；目前 \${a+b}×\${a-b}=\${a*a-b*b}。\`;
+    if(state.mode==="plus") p.textContent=`(a+b)²=a²+ab+ab+b²=a²+2ab+b²；目前 (${a}+${b})²=${(a+b)**2}。`;
+    else if(state.mode==="minus") p.textContent=`(a−b)²=a²−ab−ab+b²=a²−2ab+b²；目前 (${a}−${b})²=${(a-b)**2}。`;
+    else p.textContent=`(a+b)(a−b)=a²−b²；目前 ${a+b}×${a-b}=${a*a-b*b}。`;
     q.innerHTML="<strong>證據任務：</strong>指出圖中哪兩塊造成 2ab，或哪兩項互相抵消。";
     evidence.append(p,q);
     feedback.textContent = state.prediction===modes[state.mode].correct ? "預測吻合。請用圖中的區塊或相消位置解釋。" : "預測與觀察不同。請依圖形證據修正，不要只背公式。";
@@ -275,7 +275,7 @@ function mountQuadraticIdentitiesLab({ document, root, block, spec }) {
       state.mode=key; state.prediction=""; state.revealed=false; persist();
       modeBar.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
       renderChoices(); draw(); renderEvidence();
-      status.textContent=\`已切換到 \${modes[key].label}；先預測再揭示。\`;
+      status.textContent=`已切換到 ${modes[key].label}；先預測再揭示。`;
     });
     modeBar.append(b);
   }
@@ -302,10 +302,10 @@ function mountQuadraticIdentitiesLab({ document, root, block, spec }) {
   const transferFeedback=document.createElement("p"); transferFeedback.setAttribute("aria-live","polite");
   transferControls.append(ta.wrapper,tb.wrapper);
   transfer.append(transferTitle,transferPrompt,transferControls,answer,check,transferFeedback);
-  function updateTransfer(){transferPrompt.textContent=\`不看上面的數值，預測 (\${state.transferA}+\${state.transferB})² 的面積。\`;}
+  function updateTransfer(){transferPrompt.textContent=`不看上面的數值，預測 (${state.transferA}+${state.transferB})² 的面積。`;}
   check.addEventListener("click",()=>{
     const expected=(state.transferA+state.transferB)**2;
-    transferFeedback.textContent=Number(answer.value)===expected ? \`正確。答案 \${expected}；你把 a²+2ab+b² 遷移到新數值。\` : "再把四塊相加：a²、ab、ab、b²。";
+    transferFeedback.textContent=Number(answer.value)===expected ? `正確。答案 ${expected}；你把 a²+2ab+b² 遷移到新數值。` : "再把四塊相加：a²、ab、ab、b²。";
   });
 
   lab.append(intro,modeBar,figure,controls,predict,feedback,evidence,transfer);
@@ -1085,8 +1085,8 @@ function mountFactorMeaningLab({ document, root, block }) {
         feedback.textContent="成立。四個乘積都能對回原式，常數項與中間項也完全一致。";
         evidence.innerHTML="<strong>完整乘回：</strong> x·x + x·5 + 2·x + 2·5 = x²+5x+2x+10 = x²+7x+10。";
       }else{
-        feedback.textContent=\`不成立。中間項雖然也是 7x，但乘回得到 \${expanded}；只對到部分項不夠。\`;
-        evidence.innerHTML=\`<strong>反證：</strong>\${label} = \${expanded} ≠ x²+7x+10。請逐項核對二次項、中間項、常數項。\`;
+        feedback.textContent=`不成立。中間項雖然也是 7x，但乘回得到 ${expanded}；只對到部分項不夠。`;
+        evidence.innerHTML=`<strong>反證：</strong>${label} = ${expanded} ≠ x²+7x+10。請逐項核對二次項、中間項、常數項。`;
       }
     });
     candidates.append(b);
@@ -1113,8 +1113,8 @@ function mountFactorMeaningLab({ document, root, block }) {
     rect(ox,oy+xp,xp,two,"#dcfce7","2x");
     rect(ox+xp,oy+xp,five,two,"#ede9fe","10");
     const top=svg(document,"text",{x:ox+(xp+five)/2,y:25,"text-anchor":"middle","font-weight":800});top.textContent="x + 5";canvas.append(top);
-    const side=svg(document,"text",{x:22,y:oy+(xp+two)/2,"text-anchor":"middle","font-weight":800,transform:\`rotate(-90 22 \${oy+(xp+two)/2})\`});side.textContent="x + 2";canvas.append(side);
-    caption.textContent=\`x=\${x} 時，長 \${x+5}、寬 \${x+2}，面積 \${(x+5)*(x+2)}；圖形仍對應 x²+7x+10。\`;
+    const side=svg(document,"text",{x:22,y:oy+(xp+two)/2,"text-anchor":"middle","font-weight":800,transform:`rotate(-90 22 ${oy+(xp+two)/2})`});side.textContent="x + 2";canvas.append(side);
+    caption.textContent=`x=${x} 時，長 ${x+5}、寬 ${x+2}，面積 ${(x+5)*(x+2)}；圖形仍對應 x²+7x+10。`;
   }
 
   lab.append(intro,figure,control.wrapper,candidates,feedback,evidence,transfer);
@@ -1158,7 +1158,7 @@ function mountFactorizationLab({ document, root, block, spec }) {
   if(broad){
     const h=document.createElement("h5");h.textContent="第二層：提出共同因式後，再看剩式";
     const grid=document.createElement("div");grid.className="math-factor-method-grid";
-    [["共同因式","先提出，再看括號內是否還能分解。"],["平方差","A²−B² 才能變成 (A−B)(A+B)。"],["三項式","同時檢查乘積與交叉和，最後乘回。"]].forEach(([a,b])=>{const x=document.createElement("article");x.innerHTML=\`<strong>\${a}</strong><p>\${b}</p>\`;grid.append(x);});
+    [["共同因式","先提出，再看括號內是否還能分解。"],["平方差","A²−B² 才能變成 (A−B)(A+B)。"],["三項式","同時檢查乘積與交叉和，最後乘回。"]].forEach(([a,b])=>{const x=document.createElement("article");x.innerHTML=`<strong>${a}</strong><p>${b}</p>`;grid.append(x);});
     method.append(h,grid);
   }
   const transfer=document.createElement("fieldset");const tl=document.createElement("legend");tl.textContent="遷移：15x²y−10xy² 的最大共同因式？";transfer.append(tl);
