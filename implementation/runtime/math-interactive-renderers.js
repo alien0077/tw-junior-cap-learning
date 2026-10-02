@@ -553,7 +553,111 @@ function mountFactorizationLab({ document, root, block, spec }) {
   return lab;
 }
 
+
+function mountPolynomialOpsLab({ document, root, block }) {
+  const store=storageFor(block.id), prior=store?.get()||{};
+  const state={mode:String(prior.mode||"subtract")};
+  const {lab,status}=makeLab(document,block,"多項式三站視覺工作台");
+  lab.classList.add("math-poly-lab");
+
+  const intro=document.createElement("p");
+  intro.innerHTML="<strong>一次只做一件事：</strong>先預測，再看中間結構。減法看變號、乘法看完整配對、除法看重組。";
+
+  const modes=document.createElement("fieldset");
+  const modeLegend=document.createElement("legend"); modeLegend.textContent="選擇運算工作台"; modes.append(modeLegend);
+  const visual=document.createElement("section"); visual.className="math-poly-visual";
+  const prediction=document.createElement("fieldset"); prediction.className="math-poly-prediction";
+  const feedback=document.createElement("p"); feedback.className="math-poly-feedback"; feedback.setAttribute("aria-live","polite");
+  const evidence=document.createElement("div"); evidence.className="math-poly-evidence"; evidence.hidden=true;
+
+  const setMode=value=>{
+    state.mode=value; store?.set(state);
+    modes.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mode===value)));
+    renderMode();
+  };
+  [["subtract","括號減法"],["multiply","多項式乘法"],["divide","多項式除法"]].forEach(([value,label])=>{
+    const b=document.createElement("button"); b.type="button"; b.dataset.mode=value; b.textContent=label;
+    b.addEventListener("click",()=>setMode(value)); modes.append(b);
+  });
+
+  const term=(text,kind="")=>{
+    const s=document.createElement("span"); s.className="math-poly-term"+(kind?" "+kind:""); s.textContent=text; return s;
+  };
+  const equationLine=(parts,klass="")=>{
+    const d=document.createElement("div"); d.className="math-poly-equation"+(klass?" "+klass:"");
+    parts.forEach(p=>d.append(typeof p==="string"?document.createTextNode(p):p)); return d;
+  };
+  const addChoice=(parent,label,onPick)=>{
+    const b=document.createElement("button"); b.type="button"; b.textContent=label; b.addEventListener("click",onPick); parent.append(b);
+  };
+  const reveal=(message,html)=>{
+    feedback.textContent=message; evidence.hidden=false; evidence.innerHTML=html;
+  };
+
+  function renderMode(){
+    visual.replaceChildren(); prediction.replaceChildren(); evidence.hidden=true; evidence.replaceChildren(); feedback.textContent="";
+    const lg=document.createElement("legend"); prediction.append(lg);
+    if(state.mode==="subtract"){
+      visual.setAttribute("role","img");
+      visual.setAttribute("aria-label","五 x 平方減去括號二 x 平方減三 x 加一的逐項變號模型");
+      const note=document.createElement("p"); note.textContent="括號前的 − 會作用到括號內每一項。";
+      visual.append(equationLine([term("5x²")," − ",term("2x² − 3x + 1","is-bracket")]),note);
+      lg.textContent="預測：打開括號時，哪幾項要變號？";
+      addChoice(prediction,"三項全部變號",()=>{
+        visual.append(equationLine([term("5x²"),term("−2x²"),term("+3x"),term("−1")],"is-result"));
+        reveal("正確。−1 分配到三項，連常數 +1 也要變成 −1。","<strong>合併：</strong>3x²+3x−1。<br><strong>x=1 驗算：</strong>原式與整理式都等於 5。");
+      });
+      addChoice(prediction,"只改第一項",()=>reveal("還少兩個符號變化。負號作用的是整個括號。","請逐項寫成 (−1)·2x²、(−1)·(−3x)、(−1)·(+1)。"));
+      addChoice(prediction,"都不變",()=>reveal("括號前是減號，不可能直接把括號拿掉而保持三項符號。","把「−(…)」改寫成「+(−1)(…)」再看一次。"));
+      status.textContent="減法站：證據是每一項的符號變化，不是只看最後答案。";
+    } else if(state.mode==="multiply"){
+      visual.setAttribute("role","img");
+      visual.setAttribute("aria-label","二 x 減一乘 x 加三的二乘二四格乘積模型");
+      const grid=document.createElement("div"); grid.className="math-poly-grid";
+      ["","x","+3","2x","？","？","−1","？","？"].forEach((v,i)=>{
+        const n=document.createElement(i===1||i===2||i===3||i===6?"strong":"span"); n.textContent=v; grid.append(n);
+      });
+      visual.append(grid);
+      lg.textContent="預測：兩個二項式共有幾個項對項乘積？";
+      addChoice(prediction,"4 個",()=>{
+        const all=grid.children;
+        ["","x","+3","2x","2x²","+6x","−1","−x","−3"].forEach((v,i)=>{all[i].textContent=v;});
+        reveal("正確。2×2 共有四格，填完才能合併同類項。","<strong>(2x−1)(x+3)</strong> = 2x²+6x−x−3 = <strong>2x²+5x−3</strong>。x=2 時前後都等於 15。");
+      });
+      addChoice(prediction,"2 個，只乘首尾",()=>reveal("這會漏掉兩個交叉乘積。","左邊 2 項，每一項都要和右邊 2 項相乘，所以是 2×2=4 格。"));
+      addChoice(prediction,"3 個",()=>reveal("仍會漏一格。","先不要合併；把四個配對 2x·x、2x·3、(−1)·x、(−1)·3 全部列出。"));
+      status.textContent="乘法站：先完成四格配對，再合併同類項。";
+    } else {
+      visual.setAttribute("role","img");
+      visual.setAttribute("aria-label","二 x 平方加三 x 減六等於 x 加三乘二 x 減三再加餘式的重組模型");
+      visual.append(equationLine([term("2x²+3x−6")," = ",term("(x+3)(2x−3)")," + ",term("？","is-remainder")]));
+      lg.textContent="預測：餘式是多少，才能完整重組被除式？";
+      addChoice(prediction,"0",()=>reveal("少了 3。商乘除式只得到 2x²+3x−9。","把 2x²+3x−9 和原式 2x²+3x−6 比較，常數差 3。"));
+      addChoice(prediction,"3",()=>{
+        visual.replaceChildren(equationLine([term("2x²+3x−6")," = ",term("(x+3)(2x−3)")," + ",term("3","is-remainder")]));
+        reveal("正確。除式×商＋餘式完整回到被除式。","<strong>(x+3)(2x−3)+3</strong> = 2x²+3x−9+3 = <strong>2x²+3x−6</strong>。");
+      });
+      addChoice(prediction,"−3",()=>reveal("方向相反；再看常數從 −9 要走到 −6。","−9 加 3 才是 −6，所以餘式應為 +3。"));
+      status.textContent="除法站：商不是終點；必須用除式×商＋餘式重組原式。";
+    }
+  }
+
+  const transfer=document.createElement("fieldset"); transfer.className="math-poly-transfer";
+  const tl=document.createElement("legend"); tl.textContent="遷移：長 (x+5)、寬 (x−2) 的長方形面積"; transfer.append(tl);
+  const tf=document.createElement("p"); tf.setAttribute("aria-live","polite");
+  [["x²+3x−10",true],["x²+7x−10",false],["x²+3x+10",false]].forEach(([label,ok])=>{
+    addChoice(transfer,label,()=>{tf.textContent=ok?"正確。四格是 x²、−2x、5x、−10，合併為 x²+3x−10；x=3 時兩種表示都等於 8。":"先保留四個乘積；特別檢查 x·(−2) 與 5·x 的符號，以及 5·(−2) 的常數。";});
+  });
+  transfer.append(tf);
+
+  lab.append(intro,modes,visual,prediction,feedback,evidence,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  setMode(state.mode);
+  return lab;
+}
+
 function mountStepwiseLab({ document, root, block, spec }) {
+  if (spec?.lessonId === "cur-math-content-a-8-3") return mountPolynomialOpsLab({ document, root, block, spec });
   if (spec?.lessonId === "cur-math-content-a-8-4" || spec?.lessonId === "cur-math-content-a-8-5") return mountFactorizationLab({ document, root, block, spec });
   const { lab, status } = makeLab(document, block, "步驟推理可視化檢核");
   const stages = block.guidedActivity?.stages || [];
