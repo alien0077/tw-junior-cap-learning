@@ -26,6 +26,8 @@ jobs:
         run: python scripts/validate_interactive_simulations.py
       - name: Validate repository data
         run: python scripts/validate_data.py
+      - name: Audit all-subject visual-first lesson coverage
+        run: python scripts/audit_visual_first_lessons.py
       - name: Validate implementation-guide contracts
         run: python scripts/validate_implementation_specs.py
       - name: Audit lesson independence
