@@ -178,6 +178,22 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
         await require_count(sim, f'[data-sim-control="{control}"]', 1, f"{model} semantic control missing")
         return
     GEOMETRY_FAMILY_EXPECTED = {
+        "s-7-5-symmetry-axes-v1": ("s75Shape", ".mgf-proof"),
+        "s-8-7-composite-area-v1": ("s87Split", ".mgf-proof"),
+        "s-8-8-triangle-properties-v1": ("s88Case", ".mgf-proof"),
+        "s-8-9-parallelogram-v1": ("s89Property", ".mgf-proof"),
+        "s-8-10-quadrilateral-properties-v1": ("s810Shape", ".mgf-proof"),
+        "s-8-11-trapezoid-v1": ("s811Type", ".mgf-proof"),
+        "s-8-12-compass-bisector-v1": ("s812Step", ".mgf-proof"),
+        "s-9-4-right-triangle-ratio-v1": ("s94Scale", ".mgf-proof"),
+        "s-9-5-sector-v1": ("s95Angle", ".mgf-proof"),
+        "s-9-6-circle-properties-v1": ("s96Element", ".mgf-proof"),
+        "s-9-7-line-circle-relation-v1": ("s97Distance", ".mgf-proof"),
+        "s-9-8-circumcenter-v1": ("s9Center", ".mgf-proof"),
+        "s-9-9-incenter-v1": ("s9Center", ".mgf-proof"),
+        "s-9-10-centroid-v1": ("s9Center", ".mgf-proof"),
+        "s-9-11-proof-chain-v1": ("s911Reason", ".mgf-proof"),
+        "s-9-12-line-plane-v1": ("s912Relation", ".mgf-proof"),
         "s-7-1-geometry-symbols-v1": ("s71Type", ".mgf-svg"),
         "s-7-2-orthographic-v1": ("s72View", ".mgf-cubes"),
         "s-7-3-perpendicular-bisector-v1": ("s73Point", ".mgf-svg"),
