@@ -1,7 +1,17 @@
 /* Performance-unit semantic aliases.
    Reuse the visual grammar of the matching content concept instead of generic reasoning cards. */
 (()=>{const r=window.MathSemanticFamilies ||= {};
-const aliases={\n "performance-d-iv-1-reasoning-v1":"d-7-2-center-outlier-v1",\n "performance-g-iv-2-reasoning-v1":"a-7-6-system-graph-v1",\n "performance-g-iv-1-reasoning-v1":"g-8-1-distance-triangle-v1",\n "performance-f-iv-3-reasoning-v1":"f-9-2-parabola-vertex-v1",\n "performance-f-iv-2-reasoning-v1":"f-9-1-quadratic-meaning-v1",\n "performance-f-iv-1-reasoning-v1":"f-8-1-linear-two-point-v1",\n "performance-a-iv-4-reasoning-v1":"a-7-6-system-graph-v1",\n "performance-a-iv-3-reasoning-v1":"a-7-8-inequality-range-v1",\n "performance-a-iv-2-reasoning-v1":"a-7-3-balance-equation-v1",\n "performance-a-iv-1-reasoning-v1":"a-7-1-like-terms-v1",
+const aliases={
+ "performance-d-iv-1-reasoning-v1":"d-7-2-center-outlier-v1",
+ "performance-g-iv-2-reasoning-v1":"a-7-6-system-graph-v1",
+ "performance-g-iv-1-reasoning-v1":"g-8-1-distance-triangle-v1",
+ "performance-f-iv-3-reasoning-v1":"f-9-2-parabola-vertex-v1",
+ "performance-f-iv-2-reasoning-v1":"f-9-1-quadratic-meaning-v1",
+ "performance-f-iv-1-reasoning-v1":"f-8-1-linear-two-point-v1",
+ "performance-a-iv-4-reasoning-v1":"a-7-6-system-graph-v1",
+ "performance-a-iv-3-reasoning-v1":"a-7-8-inequality-range-v1",
+ "performance-a-iv-2-reasoning-v1":"a-7-3-balance-equation-v1",
+ "performance-a-iv-1-reasoning-v1":"a-7-1-like-terms-v1",
  "performance-n-iv-1-reasoning-v1":"n-7-2-factor-tree-v1",
  "performance-n-iv-2-reasoning-v1":"n-7-5-signed-number-line-v1",
  "performance-n-iv-3-reasoning-v1":"n-7-7-scientific-place-value-v1",
