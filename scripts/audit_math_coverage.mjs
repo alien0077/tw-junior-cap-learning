@@ -164,7 +164,7 @@ const output = { summary, problems };
 if (process.env.MATH_AUDIT_VERBOSE === "1") output.rows = rows;
 console.log(JSON.stringify(output, null, 2));
 
-const informational = new Set(["draftLessons", "deprecatedWithDraftQuestions", "activeWithoutDirectSpec", "implementedButUntestedSpecs"]);
+const informational = new Set(["draftLessons", "deprecatedWithDraftQuestions", "implementedButUntestedSpecs"]);
 let failed = false;
 for (const [name, value] of Object.entries(problems)) {
   if (informational.has(name) || !value.length) continue;
