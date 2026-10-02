@@ -7,7 +7,7 @@ const spec = readFileSync(new URL('../unit-specs/math/cur-math-content-a-7-6.yam
 const visible = lesson.content.sections.map(({ heading, body }) => `${heading}\n${body}`).join('\n');
 const research = lesson.versionResearch;
 
-assert.equal(lesson.reviewStatus, 'draft');
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
 assert.equal(lesson.updatedAt, '2026-09-27');
 assert.equal(lesson.content.sections.length, 6);
 assert.equal(lesson.interactive.steps.length, 4);
@@ -68,4 +68,4 @@ sumSlider.dispatchEvent(new dom.window.Event('input', { bubbles: true }));
 assert.match(root.textContent, /（11\/3，16\/3）/);
 assert.match(root.querySelector('svg').getAttribute('aria-label'), /交點為（11\/3，16\/3）/);
 
-console.log('A-7-6 original fusion, arithmetic, source limits, interaction, and draft gates: ok');
+console.log('A-7-6 original fusion, arithmetic, source limits, interaction, and content-review/evidence-boundary gates: ok');
