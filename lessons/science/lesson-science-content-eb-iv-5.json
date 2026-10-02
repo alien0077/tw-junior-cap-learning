@@ -336,7 +336,7 @@
     "id": "sim-science-eb-iv-5",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-5-hydraulic-pressure",
     "goal": "依序判斷垂直受力面、壓力大小、液體深度與液壓面積比，將計算結果連回裝置的工程意義。",
     "mission": "你是校園液壓升降台的安全檢查員：先處理鞋底與地面的壓力，再讀取水箱深度，最後用活塞面積比判斷升降台能否承載指定物件。",
     "sourceRefs": [
@@ -382,6 +382,19 @@
           "feedback": "報告需同時寫輸出力、位移代價和安全條件；若只報大力而忽略密封與偏載，模型尚未完成。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "linked-hydraulic-pistons",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "inputForce",
+        "inputArea",
+        "outputArea",
+        "depth"
+      ],
+      "transferScenario": "hydraulic-lift"
     }
   }
 }
