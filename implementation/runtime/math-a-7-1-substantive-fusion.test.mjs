@@ -9,7 +9,7 @@ const specText = await readFile(new URL("../unit-specs/math/cur-math-content-a-7
 const registry = await readJson("../component-registry.json");
 const simulations = await readFile(new URL("../../site/simulations.js", import.meta.url), "utf8");
 
-assert.equal(lesson.reviewStatus, "draft");
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
 assert.equal(lesson.content.sections.length, 6);
 assert.ok(lesson.content.sections.every(section => section.body.length > 80));
 assert.ok(lesson.content.sections.reduce((total, section) => total + section.body.length, 0) > 600);
