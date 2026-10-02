@@ -1,0 +1,31 @@
+lessonId: lesson-math-content-n-7-3
+subject: math
+knowledgeNodes: [kg-math-content-n-7-3]
+learningObjective: 依運算順序處理帶號小數與分數，理解減去負數只改變該操作方向，並以估算或共同分母回查。
+keyConcept: 乘除子運算先完成；外層的 −(負數) 等價於加正數，但不會讓式中所有負號變正。
+priorKnowledge: [正負數, 數線, 乘除優先]
+misconceptions:
+  - 由左至右忽略乘除優先
+  - 把雙負號規則套到整個式子
+  - 只背符號規則而沒有量級回查
+visual:
+  primaryType: signed-operation-tree-number-line
+  secondaryRepresentations: [decimal-number-line, exact-fraction-audit]
+  firstFrame: 原式與數線先出現，移動箭頭與最後答案保持隱藏。
+  manipulables: [n73Prediction, n73Evidence, n73Transfer]
+  dynamicChanges: [乘法節點結果, 數線移動方向, 分數回查]
+  invariants: [小數與分數表示同一數值]
+interaction:
+  prediction: 先預測結果量級與第一個運算。
+  action: 依序查看乘法、減去負數與共同分母三層證據。
+  observation: 觀察 −18.5 到 −23.5 向左，再因 +0.75 向右到 −22.75。
+  evidencePrompt: 說明哪個節點先算，以及哪個負號真正被雙負號規則改寫。
+  feedback: 指向錯誤的運算層級或符號位置。
+  retry: 可切換證據層重新核對。
+  transfer: 計算 −6−2×(−3)+(−4)÷2。
+accessibility:
+  keyboardAlternative: select controls fully keyboard-operable
+  nonDragAlternative: no drag required
+  textAlternative: operation tree and number-line moves have text equivalents
+  reducedMotion: no essential animation
+qa: {pedagogy: needs-review-after-implementation, visual: needs-screenshot-review, interaction: needs-browser-review, browser: needs-browser-review}
