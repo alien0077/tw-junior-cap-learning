@@ -55,6 +55,10 @@ jobs:
         run: npm run test:math:s9-1
       - name: Run S-9-13 surface-volume regressions
         run: npm run test:math:s9-13
+      - name: Build pinned site data for browser QA
+        run: |
+          python3 scripts/build_site_index.py --revision "${{ github.sha }}"
+          python3 scripts/validate_site_index.py
       - name: Run exhaustive real-Chromium math QA
         run: |
           python3 -m http.server 8765 >/tmp/math-browser-server.log 2>&1 &
