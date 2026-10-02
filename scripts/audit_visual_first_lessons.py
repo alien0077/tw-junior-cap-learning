@@ -9,6 +9,9 @@ for subject in SUBJECTS:
         try: data=json.loads(path.read_text(encoding="utf-8"))
         except Exception as exc:
             errors.append(f"{path.relative_to(ROOT)}: invalid JSON: {exc}"); continue
+        # Visual-first completion gate is unit-level (IV leaf units); strand/domain overview files are navigation/synthesis records.
+        if "-iv-" not in str(data.get("id","")).lower():
+            continue
         counts[subject]+=1
         interactive=data.get("interactive")
         simulation=data.get("simulation")
