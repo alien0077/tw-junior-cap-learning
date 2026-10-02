@@ -10,7 +10,8 @@
     if (engine === "science-earth-space" && model === "fa-iv-4-atmospheric-temperature-profile") return { profileScenario: "baseline" };
     if (engine === "concept-explorer" && model === "ecosystem-scale-boundary") return { site: "pond", scale: "individual" };
     if (engine === "concept-explorer" && model === "ca-iv-2-solution-identification") return { sample: "X", test: "litmus", control: "unknown", testRun: false };
-    if (engine === "science-motion-lab" && model === "eb-iv-1-torque-balance") return { leftForce: 3, leftArm: 10, rightForce: 2, rightArm: 15, torquePrediction: "", predictionSubmitted: false, torqueFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && ["eb-iv-1-torque-balance","eb-iv-2-lever-balance"].includes(model)) return { leftForce: 3, leftArm: 10, rightForce: 2, rightArm: 15, torquePrediction: "", predictionSubmitted: false, torqueFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-4-friction-threshold") return { pullForce: 0, normalForce: 10, surface: "wood", frictionPrediction: "", predictionSubmitted: false, frictionFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -106,7 +107,7 @@
       const controls = config.controls;
       return `${designed}<section class="sim-ticket-equation" aria-label="票券價格方程式互動"><h5>先用候選票價檢查等式</h5><p>購買 <b>${count}</b> 張${esc(config.itemLabel)}，每張候選價格 <b>${candidate} ${esc(config.currencyLabel)}</b>，另付一次性費用 <b>${fee} ${esc(config.currencyLabel)}</b>；實付總額 <b>${total} ${esc(config.currencyLabel)}</b>。</p><p class="sim-ticket-equation-formula" aria-live="polite">${count} × x + ${fee} = ${total}</p><div class="balance" aria-label="等號兩側的金額比較"><span class="balance-pan">左側 ${recalculated} ${esc(config.currencyLabel)}</span><span aria-hidden="true">＝</span><span class="balance-pan">右側 ${total} ${esc(config.currencyLabel)}</span></div><table><caption>候選單價代回原式</caption><tbody><tr><th scope="row">票數</th><td>${count} 張</td></tr><tr><th scope="row">候選票價</th><td>${candidate} ${esc(config.currencyLabel)}／張</td></tr><tr><th scope="row">票券合計＋一次性費用</th><td>${count} × ${candidate} + ${fee} = ${recalculated} ${esc(config.currencyLabel)}</td></tr><tr><th scope="row">原紀錄總額</th><td>${total} ${esc(config.currencyLabel)}</td></tr></tbody></table><div class="sim-ticket-controls">${slider("ticketCount", controls.ticketCount.label, count, controls.ticketCount.min, controls.ticketCount.max, controls.ticketCount.step, " 張")}${slider("oneTimeFee", controls.oneTimeFee.label, fee, controls.oneTimeFee.min, controls.oneTimeFee.max, controls.oneTimeFee.step, ` ${config.currencyLabel}`)}${slider("totalPaid", controls.totalPaid.label, total, controls.totalPaid.min, controls.totalPaid.max, controls.totalPaid.step, ` ${config.currencyLabel}`)}${slider("candidatePrice", controls.candidatePrice.label, candidate, controls.candidatePrice.min, controls.candidatePrice.max, controls.candidatePrice.step, ` ${config.currencyLabel}`)}</div><button type="button" class="sim-button" data-ticket-action="check">代回檢查候選票價</button><p class="sim-ticket-feedback" aria-live="polite">${esc(state.candidateFeedback || "先調整票數、固定費或候選票價，再檢查左右是否相等。")}</p>${validCandidate ? `<div class="sim-ticket-solution"><p>候選值成立：${count} × ${candidate} + ${fee} = ${total}。因此每張${esc(config.itemLabel)}的價格是 <strong>${candidate} ${esc(config.currencyLabel)}／張</strong>。</p><p>等量理由：兩側同減 ${fee} 得 ${count}x = ${total - fee}；再兩側同除 ${count} 得 x = ${candidate} ${esc(config.currencyLabel)}／張。</p></div>` : ""}</section>`;
     }
-    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-1-torque-balance") {
+    if (engine === "science-motion-lab" && ["eb-iv-1-torque-balance","eb-iv-2-lever-balance"].includes(lesson.simulation.model)) {
       const lf = clamp(Number(state.leftForce), 1, 5);
       const la = clamp(Number(state.leftArm), 5, 20);
       const rf = clamp(Number(state.rightForce), 1, 5);
@@ -171,6 +172,50 @@
           </div>
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
+      </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-4-friction-threshold") {
+      const pull = clamp(Number(state.pullForce), 0, 15);
+      const normal = clamp(Number(state.normalForce), 5, 20);
+      const surface = state.surface === "rough" ? "rough" : "wood";
+      const muS = surface === "rough" ? 0.7 : 0.5, muK = surface === "rough" ? 0.5 : 0.35;
+      const maxStatic = muS * normal, kinetic = muK * normal;
+      const moving = pull > maxStatic;
+      const friction = moving ? kinetic : pull;
+      const net = Math.max(0, pull - friction);
+      const boxX = 110 + Math.min(250, net * 16);
+      const predictionLocked = !state.predictionSubmitted;
+      const phase = moving ? "滑動：動摩擦" : Math.abs(pull-maxStatic)<0.01 ? "臨界：最大靜摩擦" : "靜止：靜摩擦自動配合";
+      return `<section class="sim-friction-lab" aria-label="靜摩擦與動摩擦視覺實驗室">
+        <div class="sim-visual-first">
+          <figure class="sim-friction-stage">
+            <svg viewBox="0 0 640 300" role="img" aria-label="木盒摩擦模型，拉力 ${pull} 牛頓，摩擦力 ${friction.toFixed(1)} 牛頓，目前${phase}">
+              <defs><marker id="friction-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="currentColor"/></marker></defs>
+              <line x1="55" y1="220" x2="585" y2="220" class="sim-surface-line"/>
+              <rect x="${boxX}" y="140" width="120" height="78" rx="8" class="sim-box"/>
+              <line x1="${boxX+120}" y1="178" x2="${boxX+120+Math.max(10,pull*12)}" y2="178" class="sim-force-arrow" marker-end="url(#friction-arrow)"/>
+              <text x="${boxX+155}" y="160">拉力 ${pull} N →</text>
+              <line x1="${boxX}" y1="198" x2="${boxX-Math.max(10,friction*12)}" y2="198" class="sim-force-arrow" marker-end="url(#friction-arrow)"/>
+              <text x="${Math.max(35,boxX-130)}" y="185">← 摩擦 ${friction.toFixed(1)} N</text>
+              <line x1="${boxX+60}" y1="138" x2="${boxX+60}" y2="80" class="sim-force-arrow" marker-end="url(#friction-arrow)"/>
+              <line x1="${boxX+82}" y1="82" x2="${boxX+82}" y2="138" class="sim-force-arrow" marker-end="url(#friction-arrow)"/>
+              <text x="${boxX+95}" y="105">N=${normal} N</text>
+              <text x="70" y="255">接觸面：${surface==="rough"?"粗糙面":"木質示意面"}</text>
+            </svg>
+            <figcaption><strong>${phase}</strong>｜最大靜摩擦 ${maxStatic.toFixed(1)} N｜${moving?`淨力 ${net.toFixed(1)} N`:"淨力 0 N"}</figcaption>
+          </figure>
+          <div class="sim-prediction-panel">
+            <p><b>1. 先預測摩擦力怎麼變</b></p><p>拉力逐漸增加時，盒子還沒動之前，摩擦力會？</p>
+            <div class="sim-actions"><button type="button" data-friction-action="predict" data-value="fixed" aria-pressed="${state.frictionPrediction==="fixed"}">維持固定</button><button type="button" data-friction-action="predict" data-value="follow" aria-pressed="${state.frictionPrediction==="follow"}">跟著拉力增加</button></div>
+            <button type="button" data-friction-action="submit-prediction">鎖定預測並開始實驗</button><p role="status">${esc(state.frictionFeedback||"先預測，再拖動拉力。")}</p>
+          </div>
+        </div>
+        <fieldset class="sim-friction-controls" ${predictionLocked?"disabled":""}><legend>2. 操作木盒</legend>
+          ${slider("pullForce","水平拉力",pull,0,15,1," N")}${slider("normalForce","正向力",normal,5,20,1," N")}
+          <div class="sim-actions"><button type="button" data-friction-action="surface" data-value="wood" aria-pressed="${surface==="wood"}">木質示意面</button><button type="button" data-friction-action="surface" data-value="rough" aria-pressed="${surface==="rough"}">較粗糙面</button></div>
+        </fieldset>
+        <div class="sim-evidence-card"><p><b>3. 從圖判讀證據</b></p><p>${moving?`拉力 ${pull} N 已超過最大靜摩擦 ${maxStatic.toFixed(1)} N，盒子開始滑動；此時模型改用動摩擦 ${kinetic.toFixed(1)} N。`:`盒子尚未滑動，所以靜摩擦不是固定最大值，而是配合拉力成為 ${friction.toFixed(1)} N，直到上限 ${maxStatic.toFixed(1)} N。`}</p></div>
+        <div class="sim-transfer-card"><p><b>4. 遷移：增加盒上負載後，臨界滑動拉力？</b></p><div class="sim-actions"><button type="button" data-friction-action="transfer" data-value="lower">變小</button><button type="button" data-friction-action="transfer" data-value="higher">變大</button></div><p role="status">${esc(state.transferFeedback||"利用正向力與臨界值的變化判斷。")}</p></div>
       </section>`;
     }
     const hasDedicatedRutherfordModel = engine === "science-particle-lab" && lesson.simulation.model === "rutherford-scattering";
@@ -416,7 +461,7 @@
     return `<section class="simulation" data-simulation-lesson="${esc(instanceKey)}" data-simulation-model="${esc(simulation.model || "")}" aria-label="${esc(simulationLabel)}"><header><span class="tag">${esc(simulationLabel)}</span><h4>${esc(simulation.goal)}</h4><p>${esc(simulation.mission || "先預測，再操作與解釋。")} </p></header><div class="simulation-body">${renderModel(runtimeLesson, state)}</div><footer class="sim-learning"><p><b>學習紀錄</b>：先預測，操作後再用證據解釋。</p><div class="sim-actions"><button type="button" data-sim-action="predicted">我已提出預測</button><button type="button" data-sim-action="observed">我已記錄觀察</button><button type="button" data-sim-reset>重設模型</button></div><label>我的解釋<textarea data-sim-reflection rows="3" placeholder="我改變了什麼？看見什麼？這如何支持我的解釋？">${reflection}</textarea></label><p class="sim-status" aria-live="polite">${state.status || "尚未記錄預測與觀察。"}</p><details class="sim-sources"><summary>模型依據與參考來源</summary><ul>${simulation.sourceRefs.map(url => `<li><a href="${esc(url)}" target="_blank" rel="noreferrer">${esc(url)}</a></li>`).join("")}</ul></details></footer></section>`;
   };
   const rerender = root => { const lesson = lessons.get(root.dataset.simulationLesson); if (lesson) root.outerHTML = render(lesson); };
-  const update = (root, changes) => { const lesson = lessons.get(root.dataset.simulationLesson); if (!lesson) return; const instanceKey = root.dataset.simulationLesson; const parent = root.parentElement; const active = document.activeElement; const focusTarget = active?.matches("[data-sim-control]") ? ["data-sim-control", active.dataset.simControl] : active?.matches("[data-chemical-control]") ? ["data-chemical-control", active.dataset.chemicalControl] : active?.matches("[data-chemical-action]") ? ["data-chemical-action", active.dataset.chemicalAction] : active?.matches("[data-reasoning-choice]") ? ["data-reasoning-choice", active.dataset.reasoningChoice] : active?.matches("[data-reasoning-nav]") ? ["data-reasoning-nav", active.dataset.reasoningNav] : active?.matches("[data-design-step]") ? ["data-design-step", active.dataset.designStep] : active?.matches("[data-atmo-scenario]") ? ["data-atmo-scenario", active.dataset.atmoScenario] : active?.matches("[data-eco-site]") ? ["data-eco-site", active.dataset.ecoSite] : active?.matches("[data-eco-scale]") ? ["data-eco-scale", active.dataset.ecoScale] : active?.matches("[data-inequality-relation]") ? ["data-inequality-relation", active.dataset.inequalityRelation] : active?.matches("[data-ticket-action]") ? ["data-ticket-action", active.dataset.ticketAction] : active?.matches("[data-transport-choice]") ? ["data-transport-choice", active.dataset.transportChoice, active.dataset.value] : active?.matches("[data-geometry-prediction]") ? ["data-geometry-prediction", active.dataset.geometryPrediction] : active?.matches("[data-geometry-transfer]") ? ["data-geometry-transfer", active.dataset.geometryTransfer] : active?.matches("[data-geometry-action]") ? ["data-geometry-action", active.dataset.geometryAction] : active?.matches("[data-torque-action]") ? ["data-torque-action", active.dataset.torqueAction, active.dataset.value] : active?.matches("[data-sim-similarity]") ? ["data-sim-similarity", active.dataset.simSimilarity, active.dataset.value] : null; const next = { ...read(lesson.simulation), ...changes }; write(lesson.simulation, next); rerender(root); if (focusTarget && parent) parent.querySelector(`[data-simulation-lesson="${instanceKey}"] [${focusTarget[0]}="${focusTarget[1]}"]${focusTarget[2] ? `[data-value="${focusTarget[2]}"]` : ""}`)?.focus(); };
+  const update = (root, changes) => { const lesson = lessons.get(root.dataset.simulationLesson); if (!lesson) return; const instanceKey = root.dataset.simulationLesson; const parent = root.parentElement; const active = document.activeElement; const focusTarget = active?.matches("[data-sim-control]") ? ["data-sim-control", active.dataset.simControl] : active?.matches("[data-chemical-control]") ? ["data-chemical-control", active.dataset.chemicalControl] : active?.matches("[data-chemical-action]") ? ["data-chemical-action", active.dataset.chemicalAction] : active?.matches("[data-reasoning-choice]") ? ["data-reasoning-choice", active.dataset.reasoningChoice] : active?.matches("[data-reasoning-nav]") ? ["data-reasoning-nav", active.dataset.reasoningNav] : active?.matches("[data-design-step]") ? ["data-design-step", active.dataset.designStep] : active?.matches("[data-atmo-scenario]") ? ["data-atmo-scenario", active.dataset.atmoScenario] : active?.matches("[data-eco-site]") ? ["data-eco-site", active.dataset.ecoSite] : active?.matches("[data-eco-scale]") ? ["data-eco-scale", active.dataset.ecoScale] : active?.matches("[data-inequality-relation]") ? ["data-inequality-relation", active.dataset.inequalityRelation] : active?.matches("[data-ticket-action]") ? ["data-ticket-action", active.dataset.ticketAction] : active?.matches("[data-transport-choice]") ? ["data-transport-choice", active.dataset.transportChoice, active.dataset.value] : active?.matches("[data-geometry-prediction]") ? ["data-geometry-prediction", active.dataset.geometryPrediction] : active?.matches("[data-geometry-transfer]") ? ["data-geometry-transfer", active.dataset.geometryTransfer] : active?.matches("[data-geometry-action]") ? ["data-geometry-action", active.dataset.geometryAction] : active?.matches("[data-friction-action]") ? ["data-friction-action", active.dataset.frictionAction, active.dataset.value] : active?.matches("[data-torque-action]") ? ["data-torque-action", active.dataset.torqueAction, active.dataset.value] : active?.matches("[data-sim-similarity]") ? ["data-sim-similarity", active.dataset.simSimilarity, active.dataset.value] : null; const next = { ...read(lesson.simulation), ...changes }; write(lesson.simulation, next); rerender(root); if (focusTarget && parent) parent.querySelector(`[data-simulation-lesson="${instanceKey}"] [${focusTarget[0]}="${focusTarget[1]}"]${focusTarget[2] ? `[data-value="${focusTarget[2]}"]` : ""}`)?.focus(); };
   document.addEventListener("change", event => { const root = event.target.closest("[data-simulation-lesson]"); if (!root || !event.target.matches("[data-chemical-control]")) return; update(root, { [event.target.dataset.chemicalControl]: event.target.value, testRun: false }); });
   document.addEventListener("input", event => {
     const root = event.target.closest("[data-simulation-lesson]");
@@ -443,6 +488,14 @@
       if (direction === "prev") update(root, { reasoningStep: Math.max(0, index - 1), reasoningChoice: "" });
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
+    }
+    const frictionAction = event.target.closest("[data-friction-action]");
+    if (frictionAction && lesson.simulation.model === "eb-iv-4-friction-threshold") {
+      const action=frictionAction.dataset.frictionAction, value=frictionAction.dataset.value, state=read(lesson.simulation);
+      if(action==="predict"){ update(root,{frictionPrediction:value,frictionFeedback:""}); return; }
+      if(action==="submit-prediction"){ update(root,state.frictionPrediction?{predictionSubmitted:true,frictionFeedback:state.frictionPrediction==="follow"?"預測已記錄。現在增加拉力，找出靜摩擦上限。":"預測已記錄。用拉力滑桿檢查摩擦力是否真的固定。"}:{frictionFeedback:"請先選擇一項預測。"}); return; }
+      if(action==="surface"){ update(root,{surface:value}); return; }
+      if(action==="transfer"){ update(root,value==="higher"?{transferChoice:value,transferFeedback:"正確：此模型中正向力增加，最大靜摩擦上限也提高，因此需要更大的水平拉力才開始滑動。"}:{transferChoice:value,transferFeedback:"再增加正向力滑桿並比較最大靜摩擦數值。"}); return; }
     }
     const torqueAction = event.target.closest("[data-torque-action]");
     if (torqueAction && lesson.simulation.model === "eb-iv-1-torque-balance") {
