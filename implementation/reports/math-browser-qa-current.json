@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T07:10:06.195650+00:00",
-  "sourceCommit": "ce7218cc8b525572dcfb22c57a6911ce2c5580a3",
+  "generatedAt": "2026-10-02T07:36:43.459904+00:00",
+  "sourceCommit": "c6daff22c08ce519abd575df9789fe83d31b9e2e",
   "status": "PASS",
   "scope": {
     "browser": "Chromium/Playwright",
@@ -28,18 +28,21 @@
     ]
   },
   "engineCounts": {
-    "math-algebra-balance": 7,
+    "math-algebra-balance": 1,
     "math-data-lab": 4,
     "math-equation-meaning": 1,
     "math-expression-lab": 2,
-    "math-factor-model": 2,
+    "math-factor-model": 3,
     "math-function-graph": 7,
     "math-geometry": 30,
     "math-inequality-range": 2,
     "math-number-line": 16,
+    "math-polynomial-model": 1,
     "math-probability-lab": 2,
+    "math-quadratic-model": 2,
     "math-reasoning-lab": 52,
     "math-system-graph": 1,
+    "math-system-model": 2,
     "math-ticket-equation": 1,
     "math-visual-area": 1
   },
@@ -180,13 +183,13 @@
     {
       "id": "lesson-math-content-a-7-4",
       "file": "lesson-math-content-a-7-4.json",
-      "engine": "math-algebra-balance",
-      "model": "general",
+      "engine": "math-system-model",
+      "model": "a-7-4-system-meaning-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 讓候選有序數對逐張通過兩個條件檢查",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "你的預測",
+        "tag": "select",
+        "type": null
       },
       "viewports": {
         "320": {
@@ -224,13 +227,13 @@
     {
       "id": "lesson-math-content-a-7-5",
       "file": "lesson-math-content-a-7-5.json",
-      "engine": "math-algebra-balance",
-      "model": "general",
+      "engine": "math-system-model",
+      "model": "a-7-5-system-elimination-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 相減保留共同解並求出第一個未知數",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "先預測最省步驟的方法",
+        "tag": "select",
+        "type": null
       },
       "viewports": {
         "320": {
@@ -488,13 +491,13 @@
     {
       "id": "lesson-math-content-a-8-3",
       "file": "lesson-math-content-a-8-3.json",
-      "engine": "math-algebra-balance",
-      "model": "general",
+      "engine": "math-polynomial-model",
+      "model": "a-8-3-polynomial-operations-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 只拖曳乘法配對卡完成（2x−3）（x＋4），觀察四個乘積與面積圖同步累積。",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "運算工作台",
+        "tag": "select",
+        "type": null
       },
       "viewports": {
         "320": {
@@ -532,13 +535,13 @@
     {
       "id": "lesson-math-content-a-8-4",
       "file": "lesson-math-content-a-8-4.json",
-      "engine": "math-algebra-balance",
-      "model": "general",
+      "engine": "math-factor-model",
+      "model": "a-8-4-factor-meaning-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 逐項展開乘積並合併中間項，輸入總數的多項式形式",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "觀察 x",
+        "tag": "input",
+        "type": "range"
       },
       "viewports": {
         "320": {
@@ -620,13 +623,13 @@
     {
       "id": "lesson-math-content-a-8-6",
       "file": "lesson-math-content-a-8-6.json",
-      "engine": "math-algebra-balance",
-      "model": "general",
+      "engine": "math-quadratic-model",
+      "model": "a-8-6-quadratic-meaning-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 候選數代入原等式的兩側",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "探索工作台",
+        "tag": "select",
+        "type": null
       },
       "viewports": {
         "320": {
@@ -664,13 +667,13 @@
     {
       "id": "lesson-math-content-a-8-7",
       "file": "lesson-math-content-a-8-7.json",
-      "engine": "math-algebra-balance",
-      "model": "general",
+      "engine": "math-quadratic-model",
+      "model": "a-8-7-quadratic-solution-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 整理成標準二次方程式",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "解題工作台",
+        "tag": "select",
+        "type": null
       },
       "viewports": {
         "320": {
@@ -3659,10 +3662,10 @@
       "engine": "math-algebra-balance",
       "model": "a-7-3-linear-equation-check-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 移除等式兩邊相同的 3，得到候選解並把每一行保留在操作歷程。",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "第一步怎麼做？",
+        "tag": "select",
+        "type": null
       },
       "viewports": {
         "320": {
