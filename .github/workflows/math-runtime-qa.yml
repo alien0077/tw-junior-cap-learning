@@ -46,8 +46,15 @@ jobs:
       - name: Run live math renderer regression tests
         run: node implementation/runtime/math-interactive-renderers.test.mjs
 
-      - name: Run repository runtime regression suite
-        run: npm test
+      - name: Run shared runtime and all math regression tests
+        run: |
+          node implementation/runtime/interactive-engine.test.mjs
+          node implementation/runtime/dom-renderer.test.mjs
+          node implementation/runtime/student-lesson-shell.test.mjs
+          for test_file in implementation/runtime/math-*.test.mjs; do
+            echo "RUN $test_file"
+            node "$test_file"
+          done
 
       - name: Install Chromium browser QA dependencies
         run: |
