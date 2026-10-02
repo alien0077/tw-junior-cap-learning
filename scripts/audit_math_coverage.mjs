@@ -78,16 +78,11 @@ for (const q of questions) {
 const specs = new Map();
 for (const file of specFiles) {
   const text = await readText(`implementation/unit-specs/math/${file}`);
-  const lessonId = text.match(/^\s*lessonId:\s*([^
-#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
-  const component = text.match(/^\s*component:\s*([^
-#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
-  const designStatus = text.match(/^\s*designStatus:\s*([^
-#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
-  const implementationStatus = text.match(/^\s*implementationStatus:\s*([^
-#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
-  const qaStatus = text.match(/^\s*qaStatus:\s*([^
-#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const lessonId = text.match(/^\s*lessonId:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const component = text.match(/^\s*component:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const designStatus = text.match(/^\s*designStatus:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const implementationStatus = text.match(/^\s*implementationStatus:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const qaStatus = text.match(/^\s*qaStatus:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
   if (lessonId) specs.set(lessonId, { file, component, designStatus, implementationStatus, qaStatus });
 }
 
