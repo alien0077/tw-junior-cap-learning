@@ -51,6 +51,31 @@
     .interactive-controls > *, .component-visual-body button { max-width: 100%; overflow-wrap: anywhere; }
     @media (max-width: 480px) { body { padding: .65rem; } .component-visual-body dl { display: block; } .component-visual-body dd { margin-bottom: .4rem; } .data-explorer-lab { padding: .7rem; } }
     .interactive-fallback { border-left: 4px solid #6b7280; padding-left: .7rem; }
+
+    .math-area-lab { gap: .85rem; border: 2px solid #334e68; border-radius: 16px; padding: 1rem; background: #fbfdff; }
+    .math-area-lab > h4 { margin: 0; font-size: 1.2rem; }
+    .math-area-prompt { margin: 0; font-size: 1.02rem; }
+    .math-area-modebar, .math-area-predict { display: flex; flex-wrap: wrap; gap: .55rem; }
+    .math-area-modebar button[aria-pressed="true"], .math-area-predict button[aria-pressed="true"] { outline: 3px solid #174ea6; outline-offset: 2px; font-weight: 800; }
+    .math-area-figure { margin: 0; border: 1px solid #cbd5e1; border-radius: 14px; padding: .5rem; background: white; }
+    .math-area-figure figcaption { text-align: center; font-weight: 700; min-height: 2.4em; }
+    .math-area-figure .math-live-canvas { min-height: 280px; max-height: 440px; }
+    .math-area-predict { border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; }
+    .math-area-predict legend { font-weight: 800; padding: 0 .35rem; }
+    .math-area-feedback, .math-area-evidence, .math-area-transfer { border-radius: 12px; padding: .75rem .85rem; margin: 0; }
+    .math-area-feedback { background: #f1f5f9; min-height: 3rem; }
+    .math-area-evidence { border-left: 5px solid #334e68; background: #f8fafc; }
+    .math-area-evidence p { margin: .35rem 0; }
+    .math-area-transfer { border: 1px solid #cbd5e1; background: white; display: grid; gap: .6rem; }
+    .math-area-transfer h5, .math-area-transfer p { margin: 0; }
+    .math-area-transfer input { width: 100%; max-width: 16rem; }
+    @media (max-width: 480px) {
+      .math-area-lab { padding: .65rem; }
+      .math-area-figure { padding: .2rem; }
+      .math-area-figure .math-live-canvas { min-height: 230px; }
+      .math-area-modebar, .math-area-predict { display: grid; grid-template-columns: 1fr; }
+      .math-area-modebar button, .math-area-predict button { width: 100%; }
+    }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
   </style>
 </head>
