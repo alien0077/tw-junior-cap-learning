@@ -245,11 +245,32 @@ async def check_lesson(page, lesson: dict[str, Any]) -> dict[str, Any]:
     viewport_metrics: dict[str, Any] = {}
     for width in VIEWPORTS:
         await page.set_viewport_size({"width": width, "height": 900})
-        metrics = await page.evaluate("""() => ({
-          body: document.body.scrollWidth,
-          doc: document.documentElement.scrollWidth,
-          client: document.documentElement.clientWidth
-        })""")
+        metrics = await page.evaluate("""() => {
+          const client = document.documentElement.clientWidth;
+          const offenders = [...document.querySelectorAll('body *')]
+            .map((el) => {
+              const rect = el.getBoundingClientRect();
+              return {
+                tag: el.tagName.toLowerCase(),
+                id: el.id || '',
+                className: typeof el.className === 'string' ? el.className : '',
+                left: Math.round(rect.left * 10) / 10,
+                right: Math.round(rect.right * 10) / 10,
+                width: Math.round(rect.width * 10) / 10,
+                scrollWidth: el.scrollWidth,
+                clientWidth: el.clientWidth,
+              };
+            })
+            .filter((item) => item.right > client + 0.5 || item.left < -0.5)
+            .sort((a, b) => Math.max(b.right - client, -b.left) - Math.max(a.right - client, -a.left))
+            .slice(0, 8);
+          return {
+            body: document.body.scrollWidth,
+            doc: document.documentElement.scrollWidth,
+            client,
+            offenders,
+          };
+        }""")
         if metrics["body"] > width or metrics["doc"] > width or metrics["client"] > width:
             raise AssertionError(f"horizontal overflow at {width}px: {metrics}")
         viewport_metrics[str(width)] = metrics
