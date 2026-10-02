@@ -1,0 +1,31 @@
+lessonId: lesson-math-content-d-9-2
+subject: math
+knowledgeNodes: [kg-math-content-d-9-2]
+learningObjective: 區分理論機率與實驗相對頻率，觀察短期波動與長期較穩定趨勢，並避免把隨機結果解釋成必然。
+keyConcept: 相對頻率是觀察資料；理論機率來自模型，兩者可接近但不要求每批完全相等。
+priorKnowledge: [分數, 比例, 樣本空間]
+misconceptions:
+  - 把7/10直接當成硬幣理論機率
+  - 認為公平硬幣一定每批剛好一半
+  - 賭徒謬誤：前面結果決定下一次
+visual:
+  primaryType: cumulative-relative-frequency-plot
+  secondaryRepresentations: [event-count-card, theoretical-baseline, spinner-transfer]
+  firstFrame: 顯示10次7正面的短期資料與0.5基準，但公平與否答案先隱藏。
+  manipulables: [d92Prediction, d92Trials, d92Transfer]
+  dynamicChanges: [trial-count, head-count, relative-frequency, distance-from-theory]
+  invariants: [theoretical-fair-coin-probability=0.5]
+interaction:
+  prediction: 判斷7/10是否足以證明不公平。
+  action: 切換10/20/50/100/200次可重現累積資料。
+  observation: 相對頻率由0.70逐步靠近0.5但不必等於0.5。
+  evidencePrompt: 同時指出試驗次數、觀察頻率與理論基準。
+  feedback: 區分模型、資料與下一次不確定性。
+  retry: 可比較不同樣本量。
+  transfer: P(紅)=1/4與48/200=0.24的合理波動判讀。
+accessibility:
+  keyboardAlternative: select controls
+  nonDragAlternative: no drag required
+  textAlternative: plot values repeated in count/frequency card
+  reducedMotion: no essential animation
+qa: {pedagogy: needs-review-after-implementation, visual: needs-screenshot-review, interaction: needs-browser-review, browser: needs-browser-review}
