@@ -1,0 +1,118 @@
+name: Math runtime QA finalizer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'implementation/runtime/math-interactive-renderers.js'
+      - 'implementation/runtime/math-interactive-renderers.test.mjs'
+      - 'implementation/runtime/student-lesson-shell.js'
+      - 'implementation/runtime/dom-renderer.js'
+      - 'implementation/unit-specs/math/**'
+      - 'site/simulations.js'
+      - 'scripts/audit_math_coverage.mjs'
+      - 'scripts/mark_math_spec_qa_passed.mjs'
+      - 'scripts/browser_smoke_test.py'
+      - 'scripts/browser_a11y_audit.py'
+      - 'package.json'
+      - '.github/workflows/math-runtime-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  TZ: Asia/Taipei
+
+jobs:
+  qa-and-finalize:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install JavaScript dependencies
+        run: npm ci
+
+      - name: Run live math renderer regression tests
+        run: node implementation/runtime/math-interactive-renderers.test.mjs
+
+      - name: Run repository runtime regression suite
+        run: npm test
+
+      - name: Install Chromium browser QA dependencies
+        run: |
+          python -m pip install --disable-pip-version-check playwright
+          python -m playwright install --with-deps chromium
+
+      - name: Start local site server
+        run: |
+          python -m http.server 8765 >/tmp/tw-junior-cap-http.log 2>&1 &
+          echo $! > /tmp/tw-junior-cap-http.pid
+          python - <<'PY'
+          import time, urllib.request
+          for _ in range(60):
+              try:
+                  urllib.request.urlopen("http://127.0.0.1:8765/implementation/workbench.html", timeout=1)
+                  print("server ready")
+                  break
+              except Exception:
+                  time.sleep(1)
+          else:
+              raise SystemExit("local site server did not become ready")
+          PY
+
+      - name: Run real Chromium workbench smoke test
+        env:
+          TW_BROWSER_CHROME: ''
+        run: python scripts/browser_smoke_test.py --url http://127.0.0.1:8765/implementation/workbench.html
+
+      - name: Run automated accessibility audit
+        env:
+          TW_A11Y_CHROME: ''
+        run: python scripts/browser_a11y_audit.py --url http://127.0.0.1:8765/implementation/workbench.html --report implementation/reports/math-runtime-a11y-current.json
+
+      - name: Mark implemented math specs QA passed
+        run: node scripts/mark_math_spec_qa_passed.mjs
+
+      - name: Run exhaustive math audit after QA
+        run: |
+          node scripts/audit_math_coverage.mjs > implementation/reports/math-exhaustive-audit-current.json
+
+      - name: Verify no active math blockers remain
+        run: |
+          node --input-type=module - <<'JS'
+          import { readFile } from "node:fs/promises";
+          const report = JSON.parse(await readFile("implementation/reports/math-exhaustive-audit-current.json", "utf8"));
+          const allowed = new Set(["draftLessons", "deprecatedWithDraftQuestions", "activeWithoutDirectSpec", "implementedButUntestedSpecs"]);
+          const blockers = Object.entries(report.problems)
+            .filter(([name, value]) => !allowed.has(name) && Array.isArray(value) && value.length)
+            .map(([name, value]) => [name, value.length]);
+          if (blockers.length) throw new Error(`math blockers remain: ${JSON.stringify(blockers)}`);
+          if (report.summary.lessonCount !== 129 || report.summary.questionCount !== 1290) throw new Error("unexpected math inventory");
+          if (report.summary.activeLessonsWithProductionRenderer !== 128) throw new Error("not all active math lessons have production renderers");
+          if (report.summary.lessonsWithResolvedSpec !== 128) throw new Error("not all active math lessons resolve to a spec");
+          console.log("Math runtime/content QA final gate PASS");
+          JS
+
+      - name: Commit QA evidence and spec statuses
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add implementation/unit-specs/math implementation/reports/math-exhaustive-audit-current.json implementation/reports/math-runtime-a11y-current.json
+          if git diff --cached --quiet; then
+            echo "No QA status changes to commit"
+            exit 0
+          fi
+          git commit -m "qa(math): finalize runtime and spec verification"
+          git pull --rebase origin main
+          git push origin HEAD:main
