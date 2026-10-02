@@ -17,6 +17,7 @@
     if (engine === "science-motion-lab" && model === "eb-iv-8-motion-graph") return { eastDistance: 8, westDistance: 4, stopTime: 2, motionPrediction: "", predictionSubmitted: false, motionFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-9-circular-motion") return { radius: 2, speed: 4, mass: 1, circularPrediction: "", predictionSubmitted: false, circularFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-10-inertia") return { initialSpeed: 4, appliedForce: 0, friction: 0, inertiaPrediction: "", predictionSubmitted: false, inertiaFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-11-impulse") return { mass: 2, initialVelocity: 1, force: 4, duration: 2, impulsePrediction: "", predictionSubmitted: false, impulseFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -178,6 +179,18 @@
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
       </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-11-impulse") {
+      const mass=clamp(Number(state.mass),1,5),v0=clamp(Number(state.initialVelocity),-4,4),force=clamp(Number(state.force),-8,8),duration=clamp(Number(state.duration),.5,4),J=force*duration,dv=J/mass,v1=v0+dv,p0=mass*v0,p1=mass*v1,locked=!state.predictionSubmitted;
+      const barW=Math.abs(J)*11;
+      return `<section class="sim-impulse-lab" aria-label="衝量與動量改變視覺實驗室"><div class="sim-visual-first"><figure class="sim-impulse-stage"><svg viewBox="0 0 680 330" role="img" aria-label="質量 ${mass} 公斤、平均力 ${force} 牛頓作用 ${duration} 秒">
+      <g transform="translate(65 60)"><text y="0">力－時間圖</text><line x1="0" y1="180" x2="270" y2="180" class="sim-axis"/><line x1="0" y1="180" x2="0" y2="20" class="sim-axis"/><rect x="35" y="${force>=0?180-Math.abs(force)*14:180}" width="${duration*50}" height="${Math.abs(force)*14}" class="sim-impulse-area"/><text x="45" y="210">面積 J = FΔt = ${J.toFixed(1)} N·s</text></g>
+      <g transform="translate(390 75)"><rect x="0" y="70" width="90" height="55" rx="8" class="sim-cart"/><line x1="45" y1="55" x2="${45+v0*14}" y2="55" class="sim-velocity-arrow"/><text x="0" y="30">初速 ${v0} m/s</text><line x1="45" y1="145" x2="${45+v1*14}" y2="145" class="sim-velocity-arrow"/><text x="0" y="180">末速 ${v1.toFixed(1)} m/s</text><text x="0" y="220">Δp = ${(p1-p0).toFixed(1)} kg·m/s</text></g>
+      </svg><figcaption>力－時間圖的面積就是衝量；同一數值也等於動量改變 Δp。</figcaption></figure>
+      <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>同樣平均力，作用時間加倍，速度改變量會？</p><div class="sim-actions"><button data-impulse-action="predict" data-value="same">不變</button><button data-impulse-action="predict" data-value="double">加倍</button></div><button data-impulse-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.impulseFeedback||"先從力－時間圖的面積想。")}</p></div></div>
+      <fieldset class="sim-impulse-controls" ${locked?"disabled":""}><legend>2. 改變碰撞條件</legend>${slider("mass","質量",mass,1,5,1," kg")}${slider("initialVelocity","初速度",v0,-4,4,1," m/s")}${slider("force","平均力",force,-8,8,1," N")}${slider("duration","作用時間",duration,.5,4,.5," s")}</fieldset>
+      <div class="sim-evidence-card"><p><b>3. 圖像證據</b></p><p>J＝${force}×${duration}＝${J.toFixed(1)} N·s；Δp＝mΔv＝${mass}×${dv.toFixed(1)}＝${J.toFixed(1)} kg·m/s。方向由正負號保留。</p></div>
+      <div class="sim-transfer-card"><p><b>4. 遷移：安全氣囊讓人停下的動量改變相近時，延長停止時間可？</b></p><div class="sim-actions"><button data-impulse-action="transfer" data-value="less-force">降低平均力</button><button data-impulse-action="transfer" data-value="more-force">提高平均力</button></div><p role="status">${esc(state.transferFeedback||"固定 Δp，比較 F=Δp/Δt。")}</p></div></section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-10-inertia") {
       const v0=clamp(Number(state.initialSpeed),0,8),force=clamp(Number(state.appliedForce),-5,5),friction=clamp(Number(state.friction),0,5),resist=v0>0?-friction:v0<0?friction:0,net=force+resist,v1=v0+net*0.8,locked=!state.predictionSubmitted;
@@ -574,6 +587,8 @@
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
     }
+    const impulseAction=event.target.closest("[data-impulse-action]");
+    if(impulseAction && lesson.simulation.model==="eb-iv-11-impulse"){const action=impulseAction.dataset.impulseAction,value=impulseAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{impulsePrediction:value,impulseFeedback:""});return;}if(action==="submit-prediction"){update(root,state.impulsePrediction?{predictionSubmitted:true,impulseFeedback:state.impulsePrediction==="double"?"預測已記錄。把作用時間加倍，比較圖下面積與末速。":"預測已記錄。用時間滑桿檢查力－時間面積。"}:{impulseFeedback:"請先選擇預測。"});return;}if(action==="transfer"){update(root,value==="less-force"?{transferChoice:value,transferFeedback:"正確：相同動量改變分散到較長時間，平均力可降低。"}:{transferChoice:value,transferFeedback:"固定 Δp，再看 F=Δp/Δt。"});return;}}
     const inertiaAction=event.target.closest("[data-inertia-action]");
     if(inertiaAction && lesson.simulation.model==="eb-iv-10-inertia"){
       const action=inertiaAction.dataset.inertiaAction,value=inertiaAction.dataset.value,state=read(lesson.simulation);
