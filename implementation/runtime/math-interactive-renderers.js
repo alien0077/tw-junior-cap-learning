@@ -1300,6 +1300,36 @@ function mountStepwiseLab({ document, root, block, spec }) {
 }
 
 
+
+function mountSimilarityEvidenceVisualLab({ document, root, block }) {
+  const {lab,status}=makeLab(document,block,"相似三角形證據圖解臺");
+  const intro=document.createElement("p");intro.innerHTML="<strong>先看證據落在圖上的位置。</strong> 不先背 AA／SAS／SSS；先確認哪些角、哪些邊真的互相對應。";
+  const figure=document.createElement("figure");const c=makeCanvas(document,"兩個相似三角形的對應頂點與邊",420,250);
+  const tri=(pts,labels)=>{c.append(svg(document,"polygon",{points:pts.map(p=>p.slice(0,2).join(",")).join(" "),fill:"none",stroke:"currentColor","stroke-width":3}));pts.forEach((p,i)=>{const t=svg(document,"text",{x:p[0]+labels[i][1],y:p[1]+labels[i][2],"font-weight":800,"font-size":18});t.textContent=labels[i][0];c.append(t);});};
+  tri([[35,205],[120,45],[190,205]],[["A",-20,22],["B",-5,-10],["C",6,22]]);
+  tri([[235,205],[320,45],[390,205]],[["D",-20,22],["E",-5,-10],["F",6,22]]);
+  const arrows=[["A ↔ D",112],["B ↔ E",137],["C ↔ F",162]];arrows.forEach(([v,y])=>{const t=svg(document,"text",{x:210,y,"text-anchor":"middle","font-size":14,"font-weight":800});t.textContent=v;c.append(t);});
+  const cap=document.createElement("figcaption");cap.textContent="頂點順序一旦確定：△ABC ∼ △DEF，就固定 AB↔DE、BC↔EF、CA↔FD。";figure.append(c,cap);
+  const q=document.createElement("fieldset");const l=document.createElement("legend");l.textContent="哪一張證據卡足以判定？";q.append(l);const fb=document.createElement("p");fb.setAttribute("aria-live","polite");
+  [["AA：A=D、B=E",true,"兩組角相等，第三組角也隨內角和固定。"],["只有 A=D",false,"只有一組角，仍可畫出很多不同形狀。"],["兩邊同比但角不是夾角",false,"不能直接叫 SAS；相等角必須是兩組比例邊的夾角。"]].forEach(([label,ok,msg])=>{const b=document.createElement("button");b.type="button";b.textContent=label;b.addEventListener("click",()=>{fb.textContent=(ok?"成立：":"資料不足：")+msg;});q.append(b);});q.append(fb);
+  const ratio=document.createElement("div");ratio.className="math-factor-evidence";ratio.innerHTML="<strong>對應一條線：</strong><br>AB / DE = BC / EF = CA / FD<br>比例方向可以反過來，但三組必須一起反。";
+  lab.append(intro,figure,q,ratio);root.querySelector(".component-visual-body")?.prepend(lab);status.textContent="證據位置 → 頂點對應 → 判定法 → 同向比例。";return lab;
+}
+
+function mountRightTriangleRatioVisualLab({ document, root, block }) {
+  const {lab,status}=makeLab(document,block,"同角直角三角形比值實驗");
+  const intro=document.createElement("p");intro.innerHTML="<strong>固定角度、改變大小。</strong> 圖形會放大，但高／底的比值不變；改變角度後，比值才跟著改。";
+  const c=makeCanvas(document,"同一銳角下兩個不同大小直角三角形",420,250);const fig=document.createElement("figure");fig.append(c);
+  const controls=document.createElement("div");controls.className="math-live-controls";let scale=2.5,angle=22;
+  const draw=()=>{c.replaceChildren();const rad=angle*Math.PI/180;const b1=110,h1=b1*Math.tan(rad),b2=b1*scale,h2=h1*scale;const y=210;
+    [[35,b1,h1],[35,b2,h2]].forEach(([x,b,h],i)=>{const off=i?150:0;c.append(svg(document,"polygon",{points:`${x+off},${y} ${x+off+b},${y} ${x+off+b},${y-h}`,fill:"none",stroke:"currentColor","stroke-width":3}));});
+    status.textContent=`角度 ${angle}°：小圖高/底=${Math.tan(rad).toFixed(3)}；大圖高/底=${(h2/b2).toFixed(3)}。倍率 ${scale.toFixed(1)} 不改變比值。`;};
+  const sc=makeRange(document,{label:"整體放大倍率",min:1,max:2.5,step:.5,value:scale,onInput:v=>{scale=v;draw();}});
+  const an=makeRange(document,{label:"銳角",min:15,max:40,step:1,value:angle,onInput:v=>{angle=v;draw();}});controls.append(sc.wrapper,an.wrapper);
+  const note=document.createElement("p");note.textContent="觀察：只拉放大倍率時兩個比值相同；拉角度時兩個比值會一起改變。";
+  lab.append(intro,fig,controls,note);root.querySelector(".component-visual-body")?.prepend(lab);draw();return lab;
+}
+
 function mountParallelProportionVisualLab({ document, root, block }) {
   const { lab, status } = makeLab(document, block, "平行線比例圖解工作台");
   lab.classList.add("math-parallel-proportion-lab");
