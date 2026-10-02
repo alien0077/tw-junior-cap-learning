@@ -6,7 +6,7 @@ const lesson = JSON.parse(await readFile(new URL("../../lessons/math/lesson-math
 const report = JSON.parse(await readFile(new URL("../reports/a8-1-three-publisher-fusion.json", import.meta.url), "utf8"));
 const simulationSource = await readFile(new URL("../../site/simulations.js", import.meta.url), "utf8");
 
-assert.equal(lesson.reviewStatus, "draft");
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
 assert.equal(report.status, "substantive-fusion-draft");
 assert.equal(lesson.publisherResearch.length, 3);
 assert.ok(lesson.publisherResearch.every(source => source.reviewedAt === "2026-09-27"));
@@ -33,4 +33,4 @@ assert.match(root.textContent, /已記錄預測/);
 root.querySelector('[data-sim-action="observed"]').click();
 assert.match(root.textContent, /已記錄觀察/);
 
-console.log("A-8-1 publisher-informed lesson records, five-stage interaction and draft gate: ok");
+console.log("A-8-1 publisher-informed lesson records, five-stage interaction and content-review/evidence-boundary gate: ok");
