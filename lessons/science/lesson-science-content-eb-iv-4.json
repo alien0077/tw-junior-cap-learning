@@ -336,7 +336,7 @@
     "id": "sim-science-eb-iv-4",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-4-friction-threshold",
     "goal": "操作木盒拉力模型，依接觸面相對運動、運動狀態、正向力與外力—摩擦力資料判斷三種摩擦力。",
     "mission": "你是實驗記錄員，要讓同一木盒經歷靜止、恰要滑動與滑動三個階段；每一步只改變一個條件，並留下受力方向和數值理由。",
     "sourceRefs": [
@@ -381,6 +381,17 @@
           "reason": "一次只改一個條件，才能把差異歸因於正向力或接觸面，而不是同時改變拉力、速度和材料。",
           "feedback": "報告要寫出控制條件與模型限制；表面外觀或接觸面積不可在未控制時直接下定論。"
         }
+      ]
+    },
+    "visualContract": {
+      "primaryVisual": "friction-force-box-diagram",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "pullForce",
+        "normalForce",
+        "surface"
       ]
     }
   }
