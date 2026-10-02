@@ -136,16 +136,16 @@
   "fusionRecord": {
     "commonCore": [
       "三版本公開線索共同支持以粒子、壓力、體積、溫度與資料圖表理解氣體定律。",
-    "公式條件、單位、實驗控制與誤差是共同評量核心。",
-    "把每筆壓力與體積讀值配對後計算乘積，先確認溫度與氣體量不變，再判斷資料是否符合反比模型。"
+      "公式條件、單位、實驗控制與誤差是共同評量核心。",
+      "把每筆壓力與體積讀值配對後計算乘積，先確認溫度與氣體量不變，再判斷資料是否符合反比模型。"
     ],
     "versionDifferences": [
       "南一公開入口偏向主題定位；康軒公開索引偏向觀察與活動；翰林公開入口偏向物理與數位教學資源。公開頁面不足以宣稱未取得的完整教材細節。"
     ],
     "originalAdditions": [
       "以氣密注射器、活塞摩擦、資料乘積卡、p—V 與 p—1/V 圖建立本課互動。",
-    "把反比誤成同向、粒子被壓扁、溫度尚未穩定與漏氣等迷思放入資料判讀。",
-    "用兩組不同起始體積的壓縮資料比較 pV，要求解釋偏離常數可能來自讀值、熱交換、死體積或氣體逸散，而不是粒子縮小。"
+      "把反比誤成同向、粒子被壓扁、溫度尚未穩定與漏氣等迷思放入資料判讀。",
+      "用兩組不同起始體積的壓縮資料比較 pV，要求解釋偏離常數可能來自讀值、熱交換、死體積或氣體逸散，而不是粒子縮小。"
     ],
     "llmSynthesisNote": "依官方課綱、本單元 KG、南一／康軒／翰林公開版本線索與三筆公立學校公開自然／理化試題能力方向，重新組織氣體粒子、壓力、體積、波以耳定律、圖表與實驗限制；正文、互動、題目、答案、解析與五步解法均為原創，未複製教材或試題文字、圖表與答案。Terra 第二輪與正式發布審查尚未完成，維持 draft。"
   },
@@ -338,7 +338,7 @@
     "id": "sim-science-ec-iv-2",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "ec-iv-2-boyle",
     "goal": "在氣密注射器模型中固定溫度與氣體量，改變體積、讀取壓力，並用 pV 乘積和圖表證明壓力與體積的反比關係。",
     "mission": "你是實驗小組的資料員：先確認注射器氣密並讓溫度穩定，再移動活塞取得不同 v 與 p，最後判斷資料是否支持 p v 近似常數。",
     "learningDesign": {
@@ -382,6 +382,16 @@
       "https://tpack.nani.com.tw/nani_content?a=75&b=2",
       "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
       "https://resource.hle.com.tw/Books/BooksResource/111%E5%9C%8B%E4%B8%AD%E8%87%AA%E7%84%B6%E7%A7%912%E4%B8%8B%E7%90%86%E7%A7%91%E7%A5%95%E7%AC%88-%E6%95%99%E7%94%A8%E5%90%88%E6%AA%94%28111f623935%29.pdf"
-    ]
+    ],
+    "visualContract": {
+      "primaryVisual": "sealed-syringe-plus-pressure-volume-curve",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "gasVolume"
+      ],
+      "transferScenario": "double-volume"
+    }
   }
 }
