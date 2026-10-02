@@ -177,8 +177,8 @@ for (const [name, value] of Object.entries(problems)) {
     console.error(`::error file=${file}::${name}: ${item.id || item.simulationId || "unknown"}${detail}`);
   }
 }
-if (summary.lessonCount !== 129 || summary.questionCount !== 1290 || summary.specs !== 125) {
+if (summary.lessonCount !== 129 || summary.questionCount !== 1290 || summary.specs !== 129) {
   failed = true;
-  console.error(`AUDIT_FAIL expected 129 lessons / 1290 questions / 125 specs, got ${summary.lessonCount} / ${summary.questionCount} / ${summary.specs}`);
+  console.error(`AUDIT_FAIL expected 129 lessons / 1290 questions / 129 specs, got ${summary.lessonCount} / ${summary.questionCount} / ${summary.specs}`);
 }
 if (failed) process.exitCode = 1;
