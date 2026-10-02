@@ -33,6 +33,7 @@ SUPPORTED_ENGINES = {
     "math-visual-area",
     "math-polynomial-model",
     "math-system-model",
+    "math-quadratic-model",
     "math-factor-model",
     "math-ticket-equation",
     "math-equation-meaning",
@@ -190,6 +191,41 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
         await require_count(sim, ".mvl-poly-divide", 1, "division reconstruction visual missing")
         await require_count(sim, '[data-sim-control="dividePrediction"]', 1, "division prediction missing")
         await mode.select_option("0")
+    elif engine == "math-quadratic-model":
+        if model == "a-8-6-quadratic-meaning-v1":
+            await require_count(sim, ".mvl-quadratic-meaning", 1, "quadratic-meaning renderer missing")
+            mode = sim.locator('[data-sim-control="quadMeaningMode"]')
+            await require_count(sim, '[data-sim-control="quadMeaningMode"]', 1, "quadratic meaning mode control missing")
+            await require_count(sim, '[data-sim-control="quadMeaningTransfer"]', 1, "quadratic meaning transfer missing")
+            await mode.select_option("0")
+            await require_count(sim, ".mvl-q-classify", 1, "quadratic classification visual missing")
+            await require_count(sim, '[data-sim-control="quadClassify"]', 1, "quadratic classification prediction missing")
+            await mode.select_option("1")
+            await require_count(sim, ".mvl-q-root-check", 1, "candidate-root two-side check missing")
+            await require_count(sim, '[data-sim-control="quadCandidate"]', 1, "candidate-root control missing")
+            await mode.select_option("2")
+            await require_count(sim, '[role="img"]', 1, "quadratic context area visual missing")
+            await require_count(sim, '[data-sim-control="quadContextPrediction"]', 1, "context-equation prediction missing")
+            await mode.select_option("0")
+        elif model == "a-8-7-quadratic-solution-v1":
+            await require_count(sim, ".mvl-quadratic-solution", 1, "quadratic-solution renderer missing")
+            mode = sim.locator('[data-sim-control="quadSolveMode"]')
+            await require_count(sim, '[data-sim-control="quadSolveMode"]', 1, "quadratic solution mode control missing")
+            await mode.select_option("0")
+            await require_count(sim, '[data-sim-control="quadRootPrediction"]', 1, "full-root prediction missing")
+            await require_count(sim, '[data-sim-control="quadContextFilter"]', 1, "context-filter control missing")
+            await mode.select_option("1")
+            await require_count(sim, ".mvl-q-balance", 1, "complete-square balance visual missing")
+            await require_count(sim, '[data-sim-control="quadCompleteSquare"]', 1, "complete-square prediction missing")
+            await mode.select_option("2")
+            await require_count(sim, ".mvl-q-coeff", 1, "quadratic coefficient cards missing")
+            await require_count(sim, '[data-sim-control="quadDeltaPrediction"]', 1, "discriminant prediction missing")
+            await mode.select_option("3")
+            await require_count(sim, ".mvl-q-method-map", 1, "quadratic method map missing")
+            await require_count(sim, '[data-sim-control="quadSolutionTransfer"]', 1, "quadratic solution transfer missing")
+            await mode.select_option("0")
+        else:
+            raise AssertionError(f"renderer-depth rule missing for quadratic model {model}")
     elif engine == "math-system-model":
         if model == "a-7-4-system-meaning-v1":
             await require_count(sim, ".mvl-system-meaning", 1, "system-meaning renderer missing")
