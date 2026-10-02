@@ -1,0 +1,31 @@
+lessonId: lesson-math-content-d-9-1
+subject: math
+knowledgeNodes: [kg-math-content-d-9-1]
+learningObjective: 從五數摘要與盒狀圖分辨中位數、全距與IQR，並說明最大值與Q3改變時鬚與盒子如何不同地改變。
+keyConcept: 全距看兩端；IQR看Q1到Q3的中間50%，兩種散布量不能混用。
+priorKnowledge: [排序, 中位數, 四分位數]
+misconceptions:
+  - 最大值改變就認為IQR一定改變
+  - 把Q1/Q3當成最小/最大值
+  - 把IQR較小說成所有資料都一樣
+visual:
+  primaryType: linked-dual-boxplot
+  secondaryRepresentations: [five-number-summary, range-iqr-cards]
+  firstFrame: 兩站同尺度盒狀圖與預測題先出現，最大值與Q3角色分開標示。
+  manipulables: [d91Prediction, d91MaxA, d91Q3A, d91Transfer]
+  dynamicChanges: [whisker-end, box-edge, range, iqr]
+  invariants: [median-fixed-unless-median-changed, iqr=q3-q1]
+interaction:
+  prediction: 預測最大值30→35對全距與IQR的影響。
+  action: 分別調整最大值與Q3。
+  observation: 最大值只拉鬚與全距；Q3移動盒端並改IQR。
+  evidencePrompt: 指出改動的是鬚端或盒端，並計算對應差值。
+  feedback: 限定結論是全範圍或中間50%。
+  retry: 可把變數改回基準再比較。
+  transfer: Q3由26到28時判斷IQR改變。
+accessibility:
+  keyboardAlternative: range/select controls
+  nonDragAlternative: all draggable concepts have slider alternatives
+  textAlternative: five-number and spread values are textual
+  reducedMotion: no essential animation
+qa: {pedagogy: needs-review-after-implementation, visual: needs-screenshot-review, interaction: needs-browser-review, browser: needs-browser-review}
