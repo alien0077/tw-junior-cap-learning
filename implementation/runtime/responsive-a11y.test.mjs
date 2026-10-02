@@ -12,6 +12,9 @@ assert.match(css, /button, input\s*\{[^}]*min-height:\s*44px/);
 assert.match(css, /\.visualization-summary\s*\{[^}]*overflow-wrap:\s*anywhere/);
 assert.match(css, /\.component-visual-body\s*\{[^}]*overflow-wrap:\s*anywhere/);
 assert.match(css, /#unit\s*\{[^}]*width:\s*100%[^}]*max-width:\s*100%/);
+assert.match(css, /\.math-live-canvas\s*\{[^}]*width:\s*100%[^}]*max-width:\s*100%/);
+assert.match(css, /\.math-live-control input\[type="range"\]\s*\{[^}]*width:\s*100%[^}]*min-width:\s*0/);
+assert.match(css, /\.math-live-table[^\{]*\{[^}]*table-layout:\s*fixed/);
 assert.match(css, /prefers-reduced-motion:\s*reduce/);
 assert.doesNotMatch(css, /body\s*\{[^}]*[;{]\s*width:\s*\d+px/);
 
