@@ -146,7 +146,7 @@ const summary = {
   lessonsWithSimulation: rows.filter(r => r.simulationEngine).length,
   activeLessonsWithoutSimulation: rows.filter(r => !r.simulationEngine && rowIsActive(r)).length,
   activeLessonsWithProductionRenderer: rows.filter(r => rowIsActive(r) && r.productionRenderer).length,
-  activeGenericSimulationCount: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").length,
+  activeGenericSimulationCount: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").length,\n  activeGenericModelCount: rows.filter(r => rowIsActive(r) && r.simulationEngine?.startsWith("math-") && r.simulationModel === "general").length,
   uniqueActiveSimulationIds: new Set(rows.filter(rowIsActive).map(r => r.simulationId).filter(Boolean)).size,
   lessonsWithInteractive: rows.filter(r => r.interactiveType).length,
   lessonsWithDirectSpec: rows.filter(r => r.directSpec).length,
@@ -172,7 +172,7 @@ const problems = {
   duplicateActiveSimulationIds: [...activeSimulationIdGroups.entries()]
     .filter(([, group]) => group.length > 1)
     .map(([simulationId, group]) => ({ simulationId, lessons: group.map(r => r.id), files: group.map(r => r.file) })),
-  activeWithGenericSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").map(r => ({ id: r.id, file: r.file, model: r.simulationModel })),
+  activeWithGenericSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").map(r => ({ id: r.id, file: r.file, model: r.simulationModel })),\n  activeWithGenericModel: rows.filter(r => rowIsActive(r) && r.simulationEngine?.startsWith("math-") && r.simulationModel === "general").map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
   activeWithUnsupportedProductionSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine && !productionMathEngines.has(r.simulationEngine)).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
   activeWithoutProductionRenderer: rows.filter(r => rowIsActive(r) && r.simulationEngine && r.simulationEngine !== "concept-explorer" && !r.productionRenderer).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
   activeSimulationMissingModelGoalOrMission: rows.filter(r => rowIsActive(r) && r.simulationEngine && (!r.simulationModel || !r.simulationGoal || !r.simulationMission)).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
