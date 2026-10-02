@@ -16,7 +16,7 @@ ${await readText("site/math-number-family.js")}
 ${await readText("site/math-algebra-family.js")}
 ${await readText("site/math-geometry-family.js")}
 ${await readText("site/math-data-family.js")}
-${await readText("site/math-function-family.js")}`;
+${await readText("site/math-function-family.js")}\n${await readText("site/math-semantic-mount.js")}`;
 const productionMathEngines = new Set([
   "math-number-line",
   "math-inequality-range",
