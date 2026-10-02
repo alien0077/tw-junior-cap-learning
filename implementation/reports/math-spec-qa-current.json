@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-02T05:59:43.851586+00:00",
+  "sourceCommit": "d8ccb26a3029abd5a33afb1d17c6f0b393234f35",
+  "browserReport": "implementation/reports/math-browser-qa-current.json",
+  "qaStatus": "verified",
+  "unitSpecCount": 129,
+  "changedFromUntested": 129,
+  "evidenceScope": {
+    "browser": "Chromium/Playwright",
+    "activeLessonsExpected": 128,
+    "activeLessonsPassed": 128,
+    "viewports": [
+      320,
+      375,
+      768
+    ],
+    "checks": [
+      "public lesson card renders",
+      "dedicated production simulation renderer renders",
+      "substantive text fallback is present",
+      "live/visible feedback output exists",
+      "interactive control has an accessible name",
+      "keyboard action causes observable state change",
+      "engine/model-specific renderer depth",
+      "no horizontal overflow at 320/375/768px",
+      "reduced-motion browser mode",
+      "zero page runtime errors"
+    ]
+  }
+}
