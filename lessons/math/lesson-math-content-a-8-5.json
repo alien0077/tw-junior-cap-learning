@@ -322,11 +322,11 @@
   "lessonScope": "learning-content",
   "simulation": {
     "id": "sim-math-a-8-5",
-    "engine": "math-algebra-balance",
+    "engine": "math-factor-model",
     "mode": "model",
-    "model": "general",
-    "goal": "沿著係數、字母次方、共同括號逐層提出公因式；每次提出後重判剩式，最終完整乘回驗算。",
-    "mission": "你是拼接牆維修員：先拆出重複材料，再診斷剩餘面積的平方結構或交叉係數，直到因式樹每個分枝都完成。",
+    "model": "a-8-5-factorization-v1",
+    "goal": "用共同因子 token、逐項相除與回乘模型理解因式分解，而不是只在式子外加括號。",
+    "mission": "先找真正共有的材料，再逐項相除、重新判斷剩式，最後完整乘回驗算。",
     "learningDesign": {
       "type": "representation-match",
       "objective": "呈現每層剩式與方法依據；十字配對必須同時符合頭乘、尾乘及交叉和，最終展開回查。",
