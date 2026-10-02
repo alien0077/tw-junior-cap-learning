@@ -515,176 +515,11 @@
         "type",
         "goal"
       ],
-      "oneOf": [
-        {
-          "properties": {
-            "type": {
-              "const": "message-reading-lab"
-            }
-          },
-          "required": [
-            "messageReadingLab"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "dialogue-comprehension-lab"
-            }
-          },
-          "required": [
-            "dialogueLab"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "story-plot-lab"
-            }
-          },
-          "required": [
-            "storyPlotLab"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "story-elements-lab"
-            }
-          },
-          "required": [
-            "storyElementsLab"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "text-prediction-lab"
-            }
-          },
-          "required": [
-            "textPredictionLab"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "short-play-comprehension-lab"
-            }
-          },
-          "required": [
-            "shortPlayLab"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "genre-reading-lab"
-            }
-          },
-          "required": [
-            "genreReadingLab"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "data-explorer-lab"
-            }
-          },
-          "required": [
-            "dataExplorerLab"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "daily-expression-lab"
-            }
-          },
-          "required": [
-            "dailyExpressionLab"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "language-signage-lab"
-            }
-          },
-          "required": [
-            "signageScenarios"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "enum": [
-                "guided-choice",
-                "reading-strategy-lab",
-                "algebra-expression-builder",
-                "inequality-range-investigation",
-                "scientific-investigation"
-              ]
-            }
-          },
-          "required": [
-            "steps"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "english-manipulation-lab"
-            }
-          },
-          "required": [
-            "steps"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "chinese-manipulation-lab"
-            }
-          },
-          "required": [
-            "steps"
-          ]
-        },
-        {
-          "properties": {
-            "type": {
-              "const": "social-manipulation-lab"
-            }
-          },
-          "required": [
-            "steps"
-          ]
-        }
-      ],
       "properties": {
         "type": {
-          "enum": [
-            "guided-choice",
-            "reading-strategy-lab",
-            "algebra-expression-builder",
-            "inequality-range-investigation",
-            "scientific-investigation",
-            "language-signage-lab",
-            "dialogue-comprehension-lab",
-            "message-reading-lab",
-            "story-plot-lab",
-            "story-elements-lab",
-            "text-prediction-lab",
-            "short-play-comprehension-lab",
-            "genre-reading-lab",
-            "data-explorer-lab",
-            "daily-expression-lab",
-            "english-manipulation-lab",
-            "chinese-manipulation-lab",
-            "social-manipulation-lab"
-          ]
+          "type": "string",
+          "minLength": 2,
+          "pattern": "^[a-z][a-z0-9-]*$"
         },
         "goal": {
           "type": "string",
@@ -1487,7 +1322,160 @@
           "type": "string",
           "minLength": 2
         }
-      }
+      },
+      "anyOf": [
+        {
+          "properties": {
+            "type": {
+              "const": "message-reading-lab"
+            }
+          },
+          "required": [
+            "messageReadingLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "dialogue-comprehension-lab"
+            }
+          },
+          "required": [
+            "dialogueLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "story-plot-lab"
+            }
+          },
+          "required": [
+            "storyPlotLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "story-elements-lab"
+            }
+          },
+          "required": [
+            "storyElementsLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "text-prediction-lab"
+            }
+          },
+          "required": [
+            "textPredictionLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "short-play-comprehension-lab"
+            }
+          },
+          "required": [
+            "shortPlayLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "genre-reading-lab"
+            }
+          },
+          "required": [
+            "genreReadingLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "data-explorer-lab"
+            }
+          },
+          "required": [
+            "dataExplorerLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "daily-expression-lab"
+            }
+          },
+          "required": [
+            "dailyExpressionLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "language-signage-lab"
+            }
+          },
+          "required": [
+            "signageScenarios"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "guided-choice",
+                "reading-strategy-lab",
+                "algebra-expression-builder",
+                "inequality-range-investigation",
+                "scientific-investigation"
+              ]
+            }
+          },
+          "required": [
+            "steps"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "english-manipulation-lab"
+            }
+          },
+          "required": [
+            "steps"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "chinese-manipulation-lab"
+            }
+          },
+          "required": [
+            "steps"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "social-manipulation-lab"
+            }
+          },
+          "required": [
+            "steps"
+          ]
+        },
+        {
+          "required": [
+            "steps"
+          ]
+        }
+      ]
     },
     "simulation": {
       "type": "object",
@@ -1505,31 +1493,9 @@
           "pattern": "^sim-(math|science)-[a-z0-9-]+$"
         },
         "engine": {
-          "enum": [
-            "math-number-line",
-            "math-inequality-range",
-            "math-algebra-balance",
-            "math-visual-area",
-            "math-polynomial-model",
-            "math-system-model",
-            "math-quadratic-model",
-            "math-factor-model",
-            "math-ticket-equation",
-            "math-expression-lab",
-            "math-function-graph",
-            "math-system-graph",
-            "math-geometry",
-            "math-data-lab",
-            "math-probability-lab",
-            "science-motion-lab",
-            "science-energy-lab",
-            "science-particle-lab",
-            "science-life-system",
-            "science-earth-space",
-            "concept-explorer",
-            "math-reasoning-lab",
-            "math-equation-meaning"
-          ]
+          "type": "string",
+          "minLength": 3,
+          "pattern": "^(math|science|concept)-[a-z0-9-]+$"
         },
         "mode": {
           "enum": [
@@ -1846,6 +1812,14 @@
         "equationMeaning": {
           "type": "object",
           "additionalProperties": true
+        },
+        "inequalityRange": {
+          "type": "object",
+          "additionalProperties": true
+        },
+        "storageId": {
+          "type": "string",
+          "minLength": 1
         }
       }
     },
