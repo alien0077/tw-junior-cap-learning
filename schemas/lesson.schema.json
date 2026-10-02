@@ -169,14 +169,24 @@
         ],
         "properties": {
           "publisher": {
-            "enum": ["nani", "kanghsuan", "hanlin", "jiayin-hanlin"]
+            "enum": [
+              "nani",
+              "kanghsuan",
+              "hanlin",
+              "jiayin-hanlin"
+            ]
           },
           "edition": {
             "type": "string",
             "minLength": 1
           },
           "sourceType": {
-            "enum": ["local-download", "public-web", "licensed-file", "public-domain"]
+            "enum": [
+              "local-download",
+              "public-web",
+              "licensed-file",
+              "public-domain"
+            ]
           },
           "sourceLocator": {
             "type": "string",
@@ -197,11 +207,46 @@
               "assessmentEmphasis"
             ],
             "properties": {
-              "concepts": {"type": "array", "minItems": 2, "items": {"type": "string", "minLength": 15}},
-              "representations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}},
-              "examplesOrEvidence": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}},
-              "misconceptions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}},
-              "assessmentEmphasis": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}}
+              "concepts": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "string",
+                  "minLength": 15
+                }
+              },
+              "representations": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 15
+                }
+              },
+              "examplesOrEvidence": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 15
+                }
+              },
+              "misconceptions": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 15
+                }
+              },
+              "assessmentEmphasis": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 15
+                }
+              }
             }
           },
           "licenseBoundary": {
@@ -214,23 +259,76 @@
     "fusionRecord": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["commonCore", "versionDifferences", "originalAdditions", "llmSynthesisNote"],
+      "required": [
+        "commonCore",
+        "versionDifferences",
+        "originalAdditions",
+        "llmSynthesisNote"
+      ],
       "properties": {
-        "commonCore": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 15}},
-        "versionDifferences": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 15}},
-        "originalAdditions": {"type": "array", "minItems": 3, "items": {"type": "string", "minLength": 15}},
-        "llmSynthesisNote": {"type": "string", "minLength": 80}
+        "commonCore": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string",
+            "minLength": 15
+          }
+        },
+        "versionDifferences": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 15
+          }
+        },
+        "originalAdditions": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "string",
+            "minLength": 15
+          }
+        },
+        "llmSynthesisNote": {
+          "type": "string",
+          "minLength": 80
+        }
       }
     },
     "terraReview": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["model", "reviewedAt", "checks", "outcome"],
+      "required": [
+        "model",
+        "reviewedAt",
+        "checks",
+        "outcome"
+      ],
       "properties": {
-        "model": {"const": "Terra"},
-        "reviewedAt": {"type": "string", "format": "date"},
-        "checks": {"type": "array", "minItems": 6, "uniqueItems": true, "items": {"type": "string", "minLength": 10}},
-        "outcome": {"enum": ["pass", "revise", "blocked"]}
+        "model": {
+          "const": "Terra"
+        },
+        "reviewedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "checks": {
+          "type": "array",
+          "minItems": 6,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 10
+          }
+        },
+        "outcome": {
+          "enum": [
+            "pass",
+            "revise",
+            "blocked"
+          ]
+        }
       }
     },
     "lessonScope": {
@@ -416,17 +514,122 @@
         "goal"
       ],
       "oneOf": [
-        {"properties": {"type": {"const": "message-reading-lab"}}, "required": ["messageReadingLab"]},
-        {"properties": {"type": {"const": "dialogue-comprehension-lab"}}, "required": ["dialogueLab"]},
-        {"properties": {"type": {"const": "story-plot-lab"}}, "required": ["storyPlotLab"]},
-        {"properties": {"type": {"const": "story-elements-lab"}}, "required": ["storyElementsLab"]},
-        {"properties": {"type": {"const": "text-prediction-lab"}}, "required": ["textPredictionLab"]},
-        {"properties": {"type": {"const": "short-play-comprehension-lab"}}, "required": ["shortPlayLab"]},
-        {"properties": {"type": {"const": "genre-reading-lab"}}, "required": ["genreReadingLab"]},
-        {"properties": {"type": {"const": "data-explorer-lab"}}, "required": ["dataExplorerLab"]},
-        {"properties": {"type": {"const": "daily-expression-lab"}}, "required": ["dailyExpressionLab"]},
-        {"properties": {"type": {"const": "language-signage-lab"}}, "required": ["signageScenarios"]},
-        {"properties": {"type": {"enum": ["guided-choice", "reading-strategy-lab", "algebra-expression-builder", "inequality-range-investigation", "scientific-investigation"]}}, "required": ["steps"]}
+        {
+          "properties": {
+            "type": {
+              "const": "message-reading-lab"
+            }
+          },
+          "required": [
+            "messageReadingLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "dialogue-comprehension-lab"
+            }
+          },
+          "required": [
+            "dialogueLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "story-plot-lab"
+            }
+          },
+          "required": [
+            "storyPlotLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "story-elements-lab"
+            }
+          },
+          "required": [
+            "storyElementsLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "text-prediction-lab"
+            }
+          },
+          "required": [
+            "textPredictionLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "short-play-comprehension-lab"
+            }
+          },
+          "required": [
+            "shortPlayLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "genre-reading-lab"
+            }
+          },
+          "required": [
+            "genreReadingLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "data-explorer-lab"
+            }
+          },
+          "required": [
+            "dataExplorerLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "daily-expression-lab"
+            }
+          },
+          "required": [
+            "dailyExpressionLab"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "language-signage-lab"
+            }
+          },
+          "required": [
+            "signageScenarios"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "enum": [
+                "guided-choice",
+                "reading-strategy-lab",
+                "algebra-expression-builder",
+                "inequality-range-investigation",
+                "scientific-investigation"
+              ]
+            }
+          },
+          "required": [
+            "steps"
+          ]
+        }
       ],
       "properties": {
         "type": {
@@ -459,25 +662,82 @@
         "dialogueLab": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["label", "title", "goal", "conversation", "evidenceLineIds", "mainQuestion", "transfer"],
+          "required": [
+            "label",
+            "title",
+            "goal",
+            "conversation",
+            "evidenceLineIds",
+            "mainQuestion",
+            "transfer"
+          ],
           "properties": {
-            "label": {"type": "string", "minLength": 2},
-            "title": {"type": "string", "minLength": 8},
-            "goal": {"type": "string", "minLength": 20},
-            "conversation": {"$ref": "#/$defs/dialogueLines"},
-            "evidenceLineIds": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-            "mainQuestion": {"$ref": "#/$defs/dialogueQuestion"},
+            "label": {
+              "type": "string",
+              "minLength": 2
+            },
+            "title": {
+              "type": "string",
+              "minLength": 8
+            },
+            "goal": {
+              "type": "string",
+              "minLength": 20
+            },
+            "conversation": {
+              "$ref": "#/$defs/dialogueLines"
+            },
+            "evidenceLineIds": {
+              "type": "array",
+              "minItems": 2,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$"
+              }
+            },
+            "mainQuestion": {
+              "$ref": "#/$defs/dialogueQuestion"
+            },
             "transfer": {
               "type": "object",
               "additionalProperties": false,
-              "required": ["question", "conversation", "evidenceLineIds", "options", "answer", "feedback"],
+              "required": [
+                "question",
+                "conversation",
+                "evidenceLineIds",
+                "options",
+                "answer",
+                "feedback"
+              ],
               "properties": {
-                "question": {"type": "string", "minLength": 15},
-                "conversation": {"$ref": "#/$defs/dialogueLines"},
-                "evidenceLineIds": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-                "options": {"$ref": "#/$defs/dialogueOptions"},
-                "answer": {"type": "string", "pattern": "^[A-Z]$"},
-                "feedback": {"type": "string", "minLength": 20}
+                "question": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "conversation": {
+                  "$ref": "#/$defs/dialogueLines"
+                },
+                "evidenceLineIds": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]*$"
+                  }
+                },
+                "options": {
+                  "$ref": "#/$defs/dialogueOptions"
+                },
+                "answer": {
+                  "type": "string",
+                  "pattern": "^[A-Z]$"
+                },
+                "feedback": {
+                  "type": "string",
+                  "minLength": 20
+                }
               }
             }
           }
@@ -485,38 +745,136 @@
         "messageReadingLab": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["label", "title", "goal", "mainText", "transfer"],
+          "required": [
+            "label",
+            "title",
+            "goal",
+            "mainText",
+            "transfer"
+          ],
           "properties": {
-            "label": {"type": "string", "minLength": 2},
-            "title": {"type": "string", "minLength": 8},
-            "goal": {"type": "string", "minLength": 20},
+            "label": {
+              "type": "string",
+              "minLength": 2
+            },
+            "title": {
+              "type": "string",
+              "minLength": 8
+            },
+            "goal": {
+              "type": "string",
+              "minLength": 20
+            },
             "mainText": {
-              "type": "object", "additionalProperties": false,
-              "required": ["introduction", "representationLabels", "parts", "requiredEvidenceIds", "evidenceHint", "evidenceRetryHint", "evidenceAccepted", "question"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "introduction",
+                "representationLabels",
+                "parts",
+                "requiredEvidenceIds",
+                "evidenceHint",
+                "evidenceRetryHint",
+                "evidenceAccepted",
+                "question"
+              ],
               "properties": {
-                "introduction": {"type": "string", "minLength": 20},
-                "representationLabels": {"type": "array", "minItems": 2, "maxItems": 2, "items": {"type": "string", "minLength": 4}},
-                "parts": {"$ref": "#/$defs/messageParts"},
-                "requiredEvidenceIds": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-                "evidenceHint": {"type": "string", "minLength": 15},
-                "evidenceRetryHint": {"type": "string", "minLength": 15},
-                "evidenceAccepted": {"type": "string", "minLength": 20},
-                "question": {"$ref": "#/$defs/messageQuestion"}
+                "introduction": {
+                  "type": "string",
+                  "minLength": 20
+                },
+                "representationLabels": {
+                  "type": "array",
+                  "minItems": 2,
+                  "maxItems": 2,
+                  "items": {
+                    "type": "string",
+                    "minLength": 4
+                  }
+                },
+                "parts": {
+                  "$ref": "#/$defs/messageParts"
+                },
+                "requiredEvidenceIds": {
+                  "type": "array",
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]*$"
+                  }
+                },
+                "evidenceHint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "evidenceRetryHint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "evidenceAccepted": {
+                  "type": "string",
+                  "minLength": 20
+                },
+                "question": {
+                  "$ref": "#/$defs/messageQuestion"
+                }
               }
             },
             "transfer": {
-              "type": "object", "additionalProperties": false,
-              "required": ["introduction", "parts", "requiredEvidenceIds", "question", "explanationPrompt", "minimumExplanationLength", "hint", "retryHint", "feedback"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "introduction",
+                "parts",
+                "requiredEvidenceIds",
+                "question",
+                "explanationPrompt",
+                "minimumExplanationLength",
+                "hint",
+                "retryHint",
+                "feedback"
+              ],
               "properties": {
-                "introduction": {"type": "string", "minLength": 15},
-                "parts": {"$ref": "#/$defs/messageParts"},
-                "requiredEvidenceIds": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-                "question": {"$ref": "#/$defs/messageQuestion"},
-                "explanationPrompt": {"type": "string", "minLength": 15},
-                "minimumExplanationLength": {"type": "integer", "minimum": 15},
-                "hint": {"type": "string", "minLength": 15},
-                "retryHint": {"type": "string", "minLength": 15},
-                "feedback": {"type": "string", "minLength": 20}
+                "introduction": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "parts": {
+                  "$ref": "#/$defs/messageParts"
+                },
+                "requiredEvidenceIds": {
+                  "type": "array",
+                  "minItems": 1,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]*$"
+                  }
+                },
+                "question": {
+                  "$ref": "#/$defs/messageQuestion"
+                },
+                "explanationPrompt": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "minimumExplanationLength": {
+                  "type": "integer",
+                  "minimum": 15
+                },
+                "hint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "retryHint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "feedback": {
+                  "type": "string",
+                  "minLength": 20
+                }
               }
             }
           }
@@ -524,121 +882,422 @@
         "storyPlotLab": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["label", "title", "goal", "mainStory", "transfer"],
+          "required": [
+            "label",
+            "title",
+            "goal",
+            "mainStory",
+            "transfer"
+          ],
           "properties": {
-            "label": {"type": "string", "minLength": 2},
-            "title": {"type": "string", "minLength": 8},
-            "goal": {"type": "string", "minLength": 20},
+            "label": {
+              "type": "string",
+              "minLength": 2
+            },
+            "title": {
+              "type": "string",
+              "minLength": 8
+            },
+            "goal": {
+              "type": "string",
+              "minLength": 20
+            },
             "mainStory": {
-              "type": "object", "additionalProperties": false,
-              "required": ["introduction", "parts", "requiredEvidenceIds", "evidenceHint", "evidenceRetryHint", "evidenceAccepted", "question"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "introduction",
+                "parts",
+                "requiredEvidenceIds",
+                "evidenceHint",
+                "evidenceRetryHint",
+                "evidenceAccepted",
+                "question"
+              ],
               "properties": {
-                "introduction": {"type": "string", "minLength": 20},
-                "parts": {"$ref": "#/$defs/messageParts"},
-                "requiredEvidenceIds": {"type": "array", "minItems": 3, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-                "evidenceHint": {"type": "string", "minLength": 15},
-                "evidenceRetryHint": {"type": "string", "minLength": 15},
-                "evidenceAccepted": {"type": "string", "minLength": 20},
-                "question": {"$ref": "#/$defs/storyPlotQuestion"}
+                "introduction": {
+                  "type": "string",
+                  "minLength": 20
+                },
+                "parts": {
+                  "$ref": "#/$defs/messageParts"
+                },
+                "requiredEvidenceIds": {
+                  "type": "array",
+                  "minItems": 3,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]*$"
+                  }
+                },
+                "evidenceHint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "evidenceRetryHint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "evidenceAccepted": {
+                  "type": "string",
+                  "minLength": 20
+                },
+                "question": {
+                  "$ref": "#/$defs/storyPlotQuestion"
+                }
               }
             },
             "transfer": {
-              "type": "object", "additionalProperties": false,
-              "required": ["introduction", "parts", "requiredEvidenceIds", "evidenceHint", "question", "explanationPrompt", "minimumExplanationLength", "hint", "retryHint", "feedback"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "introduction",
+                "parts",
+                "requiredEvidenceIds",
+                "evidenceHint",
+                "question",
+                "explanationPrompt",
+                "minimumExplanationLength",
+                "hint",
+                "retryHint",
+                "feedback"
+              ],
               "properties": {
-                "introduction": {"type": "string", "minLength": 15},
-                "parts": {"$ref": "#/$defs/messageParts"},
-                "requiredEvidenceIds": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-                "evidenceHint": {"type": "string", "minLength": 15},
-                "question": {"$ref": "#/$defs/storyPlotQuestion"},
-                "explanationPrompt": {"type": "string", "minLength": 15},
-                "minimumExplanationLength": {"type": "integer", "minimum": 15},
-                "hint": {"type": "string", "minLength": 15},
-                "retryHint": {"type": "string", "minLength": 15},
-                "feedback": {"type": "string", "minLength": 20}
+                "introduction": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "parts": {
+                  "$ref": "#/$defs/messageParts"
+                },
+                "requiredEvidenceIds": {
+                  "type": "array",
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]*$"
+                  }
+                },
+                "evidenceHint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "question": {
+                  "$ref": "#/$defs/storyPlotQuestion"
+                },
+                "explanationPrompt": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "minimumExplanationLength": {
+                  "type": "integer",
+                  "minimum": 15
+                },
+                "hint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "retryHint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "feedback": {
+                  "type": "string",
+                  "minLength": 20
+                }
               }
             }
           }
         },
         "storyElementsLab": {
-          "type": "object", "additionalProperties": false,
-          "required": ["label", "title", "goal", "predictionPrompt", "storyTitle", "cards", "synthesis"],
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "title",
+            "goal",
+            "predictionPrompt",
+            "storyTitle",
+            "cards",
+            "synthesis"
+          ],
           "properties": {
-            "label": {"type": "string", "minLength": 2},
-            "title": {"type": "string", "minLength": 8},
-            "goal": {"type": "string", "minLength": 20},
-            "predictionPrompt": {"type": "string", "minLength": 15},
-            "storyTitle": {"type": "string", "minLength": 5},
+            "label": {
+              "type": "string",
+              "minLength": 2
+            },
+            "title": {
+              "type": "string",
+              "minLength": 8
+            },
+            "goal": {
+              "type": "string",
+              "minLength": 20
+            },
+            "predictionPrompt": {
+              "type": "string",
+              "minLength": 15
+            },
+            "storyTitle": {
+              "type": "string",
+              "minLength": 5
+            },
             "cards": {
-              "type": "array", "minItems": 5,
+              "type": "array",
+              "minItems": 5,
               "items": {
-                "type": "object", "additionalProperties": false,
-                "required": ["id", "label", "excerpt", "question"],
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "label",
+                  "excerpt",
+                  "question"
+                ],
                 "properties": {
-                  "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-                  "label": {"type": "string", "minLength": 3},
-                  "excerpt": {"type": "string", "minLength": 30},
-                  "question": {"$ref": "#/$defs/storyElementsQuestion"}
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]*$"
+                  },
+                  "label": {
+                    "type": "string",
+                    "minLength": 3
+                  },
+                  "excerpt": {
+                    "type": "string",
+                    "minLength": 30
+                  },
+                  "question": {
+                    "$ref": "#/$defs/storyElementsQuestion"
+                  }
                 }
               }
             },
             "synthesis": {
-              "type": "object", "additionalProperties": false,
-              "required": ["prompt", "question", "evidence", "requiredEvidenceIds", "explanationPrompt", "minimumExplanationLength", "hint", "retryHint", "feedback"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "prompt",
+                "question",
+                "evidence",
+                "requiredEvidenceIds",
+                "explanationPrompt",
+                "minimumExplanationLength",
+                "hint",
+                "retryHint",
+                "feedback"
+              ],
               "properties": {
-                "prompt": {"type": "string", "minLength": 20},
-                "question": {"$ref": "#/$defs/storyElementsQuestion"},
-                "evidence": {"$ref": "#/$defs/messageParts"},
-                "requiredEvidenceIds": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-                "explanationPrompt": {"type": "string", "minLength": 15},
-                "minimumExplanationLength": {"type": "integer", "minimum": 20},
-                "hint": {"type": "string", "minLength": 15},
-                "retryHint": {"type": "string", "minLength": 15},
-                "feedback": {"type": "string", "minLength": 20}
+                "prompt": {
+                  "type": "string",
+                  "minLength": 20
+                },
+                "question": {
+                  "$ref": "#/$defs/storyElementsQuestion"
+                },
+                "evidence": {
+                  "$ref": "#/$defs/messageParts"
+                },
+                "requiredEvidenceIds": {
+                  "type": "array",
+                  "minItems": 2,
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]*$"
+                  }
+                },
+                "explanationPrompt": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "minimumExplanationLength": {
+                  "type": "integer",
+                  "minimum": 20
+                },
+                "hint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "retryHint": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "feedback": {
+                  "type": "string",
+                  "minLength": 20
+                }
               }
             }
           }
         },
         "textPredictionLab": {
-          "type": "object", "additionalProperties": false,
-          "required": ["label", "title", "goal", "artifacts"],
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "label",
+            "title",
+            "goal",
+            "artifacts"
+          ],
           "properties": {
-            "label": {"type": "string", "minLength": 2},
-            "title": {"type": "string", "minLength": 8},
-            "goal": {"type": "string", "minLength": 20},
+            "label": {
+              "type": "string",
+              "minLength": 2
+            },
+            "title": {
+              "type": "string",
+              "minLength": 8
+            },
+            "goal": {
+              "type": "string",
+              "minLength": 20
+            },
             "artifacts": {
-              "type": "array", "minItems": 2, "maxItems": 2,
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
               "items": {
-                "type": "object", "additionalProperties": false,
-                "required": ["id", "role", "title", "visual", "imageAlt", "caption", "sourceLabel", "sourceCues", "sourceCueMinimum", "predictionPrompt", "minimumPredictionLength", "confidencePrompt", "confidenceOptions", "reassessmentPrompt", "readingText", "evidence", "requiredEvidenceIds", "checkQuestion"],
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "id",
+                  "role",
+                  "title",
+                  "visual",
+                  "imageAlt",
+                  "caption",
+                  "sourceLabel",
+                  "sourceCues",
+                  "sourceCueMinimum",
+                  "predictionPrompt",
+                  "minimumPredictionLength",
+                  "confidencePrompt",
+                  "confidenceOptions",
+                  "reassessmentPrompt",
+                  "readingText",
+                  "evidence",
+                  "requiredEvidenceIds",
+                  "checkQuestion"
+                ],
                 "properties": {
-                  "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-                  "role": {"enum": ["practice", "transfer"]},
-                  "title": {"type": "string", "minLength": 4},
-                  "visual": {"enum": ["mosaic", "courtyard"]},
-                  "imageAlt": {"type": "string", "minLength": 20},
-                  "caption": {"type": "string", "minLength": 15},
-                  "sourceLabel": {"type": "string", "minLength": 3},
-                  "sourceCues": {"$ref": "#/$defs/messageParts"},
-                  "sourceCueMinimum": {"type": "integer", "minimum": 1, "maximum": 3},
-                  "predictionPrompt": {"type": "string", "minLength": 15},
-                  "minimumPredictionLength": {"type": "integer", "minimum": 8},
-                  "confidencePrompt": {"type": "string", "minLength": 10},
-                  "confidenceOptions": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "object", "additionalProperties": false, "required": ["id", "text"], "properties": {"id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}, "text": {"type": "string", "minLength": 3}}}},
-                  "reassessmentPrompt": {"type": "string", "minLength": 12},
-                  "readingText": {"type": "string", "minLength": 80},
-                  "evidence": {"$ref": "#/$defs/messageParts"},
-                  "requiredEvidenceIds": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-                  "checkQuestion": {"$ref": "#/$defs/storyElementsQuestion"}
+                  "id": {
+                    "type": "string",
+                    "pattern": "^[a-z][a-z0-9-]*$"
+                  },
+                  "role": {
+                    "enum": [
+                      "practice",
+                      "transfer"
+                    ]
+                  },
+                  "title": {
+                    "type": "string",
+                    "minLength": 4
+                  },
+                  "visual": {
+                    "enum": [
+                      "mosaic",
+                      "courtyard"
+                    ]
+                  },
+                  "imageAlt": {
+                    "type": "string",
+                    "minLength": 20
+                  },
+                  "caption": {
+                    "type": "string",
+                    "minLength": 15
+                  },
+                  "sourceLabel": {
+                    "type": "string",
+                    "minLength": 3
+                  },
+                  "sourceCues": {
+                    "$ref": "#/$defs/messageParts"
+                  },
+                  "sourceCueMinimum": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 3
+                  },
+                  "predictionPrompt": {
+                    "type": "string",
+                    "minLength": 15
+                  },
+                  "minimumPredictionLength": {
+                    "type": "integer",
+                    "minimum": 8
+                  },
+                  "confidencePrompt": {
+                    "type": "string",
+                    "minLength": 10
+                  },
+                  "confidenceOptions": {
+                    "type": "array",
+                    "minItems": 3,
+                    "maxItems": 3,
+                    "items": {
+                      "type": "object",
+                      "additionalProperties": false,
+                      "required": [
+                        "id",
+                        "text"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string",
+                          "pattern": "^[a-z][a-z0-9-]*$"
+                        },
+                        "text": {
+                          "type": "string",
+                          "minLength": 3
+                        }
+                      }
+                    }
+                  },
+                  "reassessmentPrompt": {
+                    "type": "string",
+                    "minLength": 12
+                  },
+                  "readingText": {
+                    "type": "string",
+                    "minLength": 80
+                  },
+                  "evidence": {
+                    "$ref": "#/$defs/messageParts"
+                  },
+                  "requiredEvidenceIds": {
+                    "type": "array",
+                    "minItems": 2,
+                    "uniqueItems": true,
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[a-z][a-z0-9-]*$"
+                    }
+                  },
+                  "checkQuestion": {
+                    "$ref": "#/$defs/storyElementsQuestion"
+                  }
                 }
               }
             }
           }
         },
-        "shortPlayLab": {"$ref": "#/$defs/shortPlayLab"},
-        "genreReadingLab": {"$ref": "#/$defs/genreReadingLab"},
-        "dataExplorerLab": {"$ref": "#/$defs/dataExplorerLab"},
-        "dailyExpressionLab": {"$ref": "#/$defs/dailyExpressionLab"},
+        "shortPlayLab": {
+          "$ref": "#/$defs/shortPlayLab"
+        },
+        "genreReadingLab": {
+          "$ref": "#/$defs/genreReadingLab"
+        },
+        "dataExplorerLab": {
+          "$ref": "#/$defs/dataExplorerLab"
+        },
+        "dailyExpressionLab": {
+          "$ref": "#/$defs/dailyExpressionLab"
+        },
         "steps": {
           "type": "array",
           "minItems": 3,
@@ -719,18 +1378,94 @@
           "items": {
             "type": "object",
             "additionalProperties": false,
-            "required": ["id", "place", "task", "signText", "leftDestination", "rightDestination", "initialDirection", "options", "answerByDirection", "evidenceByDirection"],
+            "required": [
+              "id",
+              "place",
+              "task",
+              "signText",
+              "leftDestination",
+              "rightDestination",
+              "initialDirection",
+              "options",
+              "answerByDirection",
+              "evidenceByDirection"
+            ],
             "properties": {
-              "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-              "place": {"type": "string", "minLength": 2},
-              "task": {"type": "string", "minLength": 10},
-              "signText": {"type": "string", "minLength": 2},
-              "leftDestination": {"type": "string", "minLength": 2},
-              "rightDestination": {"type": "string", "minLength": 2},
-              "initialDirection": {"enum": ["left", "right"]},
-              "options": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
-              "answerByDirection": {"type": "object", "additionalProperties": false, "required": ["left", "right"], "properties": {"left": {"type": "string", "pattern": "^[A-Z]$"}, "right": {"type": "string", "pattern": "^[A-Z]$"}}},
-              "evidenceByDirection": {"type": "object", "additionalProperties": false, "required": ["left", "right"], "properties": {"left": {"type": "string", "minLength": 12}, "right": {"type": "string", "minLength": 12}}}
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$"
+              },
+              "place": {
+                "type": "string",
+                "minLength": 2
+              },
+              "task": {
+                "type": "string",
+                "minLength": 10
+              },
+              "signText": {
+                "type": "string",
+                "minLength": 2
+              },
+              "leftDestination": {
+                "type": "string",
+                "minLength": 2
+              },
+              "rightDestination": {
+                "type": "string",
+                "minLength": 2
+              },
+              "initialDirection": {
+                "enum": [
+                  "left",
+                  "right"
+                ]
+              },
+              "options": {
+                "type": "array",
+                "minItems": 2,
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "minLength": 2
+                }
+              },
+              "answerByDirection": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "left",
+                  "right"
+                ],
+                "properties": {
+                  "left": {
+                    "type": "string",
+                    "pattern": "^[A-Z]$"
+                  },
+                  "right": {
+                    "type": "string",
+                    "pattern": "^[A-Z]$"
+                  }
+                }
+              },
+              "evidenceByDirection": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "left",
+                  "right"
+                ],
+                "properties": {
+                  "left": {
+                    "type": "string",
+                    "minLength": 12
+                  },
+                  "right": {
+                    "type": "string",
+                    "minLength": 12
+                  }
+                }
+              }
             }
           }
         },
@@ -757,8 +1492,7 @@
           }
         }
       }
-    }
-    ,
+    },
     "simulation": {
       "type": "object",
       "additionalProperties": false,
@@ -821,153 +1555,182 @@
           "type": "string",
           "minLength": 12
         },
-          "model": {
-            "type": "string",
-            "enum": [
-              "general",
-              "a-8-1-quadratic-identities-v1",
-              "d-9-2-relative-frequency-v1",
-              "d-9-3-classical-sample-space-v1",
-              "d-8-1-cumulative-frequency-v1",
-              "d-7-2-center-outlier-v1",
-              "d-7-1-chart-choice-v1",
-              "d-9-1-boxplot-iqr-v1",
-              "s-8-6-pythagorean-area-v1",
-              "s-9-12-line-plane-v1",
-              "s-9-11-proof-chain-v1",
-              "s-9-10-centroid-v1",
-              "s-9-9-incenter-v1",
-              "s-9-8-circumcenter-v1",
-              "s-9-7-line-circle-relation-v1",
-              "s-9-6-circle-properties-v1",
-              "s-9-5-sector-v1",
-              "s-9-4-right-triangle-ratio-v1",
-              "s-8-12-compass-bisector-v1",
-              "s-8-11-trapezoid-v1",
-              "s-8-10-quadrilateral-properties-v1",
-              "s-8-9-parallelogram-v1",
-              "s-8-8-triangle-properties-v1",
-              "s-8-7-composite-area-v1",
-              "s-7-5-symmetry-axes-v1",
-              "s-9-3-parallel-ratio-v1",
-              "s-9-2-triangle-similarity-v1",
-              "s-8-5-triangle-congruence-v1",
-              "s-8-4-congruence-motion-v1",
-              "s-8-3-parallel-transversal-v1",
-              "s-8-2-polygon-triangulation-v1",
-              "s-8-1-protractor-v1",
-              "s-7-4-reflection-v1",
-              "s-7-3-perpendicular-bisector-v1",
-              "s-7-2-orthographic-v1",
-              "s-7-1-geometry-symbols-v1",
-              "f-8-2-linear-parameter-v1",
-              "g-8-1-distance-triangle-v1",
-              "g-7-1-coordinate-address-v1",
-              "f-9-2-parabola-vertex-v1",
-              "f-9-1-quadratic-meaning-v1",
-              "f-8-1-linear-two-point-v1",
-              "a-7-7-inequality-meaning-v1",
-              "a-7-6-system-graph-v1",
-              "n-7-3-signed-operations-v1",
-              "n-8-5-arithmetic-series-v1",
-              "n-8-4-arithmetic-sequence-v1",
-              "n-8-3-sequence-pattern-v1",
-              "linear-function-linked-v1",
-              "a-7-3-balance-equation-v1",
-              "a-7-1-like-terms-v1",
-              "n-9-1-series-v1",
-              "n-9-1-sequence-v1",
-              "n-8-6-chained-ratio-v1",
-              "n-8-5-radical-denominator-v1",
-              "n-8-4-radical-operations-v1",
-              "n-8-3-radical-structure-v1",
-              "n-8-2-root-number-line-v1",
-              "n-8-1-square-root-bracket-v1",
-              "n-7-9-ratio-table-v1",
-              "n-7-8-ratio-table-v1",
-              "n-7-7-scientific-place-value-v1",
-              "n-7-6-exponent-factors-v1",
-              "n-7-5-signed-number-line-v1",
-              "n-7-4-operation-laws-v1",
-              "n-7-2-factor-tree-v1",
-              "n-7-1-sieve-v1",
-              "a-8-7-quadratic-solution-v1",
-              "a-8-6-quadratic-meaning-v1",
-              "a-7-5-system-elimination-v1",
-              "a-7-4-system-meaning-v1",
-              "a-8-3-polynomial-operations-v1",
-              "a-8-4-factor-meaning-v1",
-              "a-8-5-factorization-v1",
-              "a-8-5-common-factor-v1",
-              "circulation",
-              "rutherford-scattering",
-              "plant-transport",
-              "pond-food-web",
-              "ecosystem-scale-boundary",
-              "ca-iv-2-solution-identification",
-              "s9-13-prism-surface-volume",
-              "s9-13-prism-surface-volume-v2",
-              "s9-1-polygon-similarity-v1",
-              "fa-iv-4-atmospheric-temperature-profile"
-            ]
+        "model": {
+          "type": "string",
+          "minLength": 2,
+          "pattern": "^[a-z0-9][a-z0-9-]*$"
         },
         "prismModel": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["baseTriangle", "initialLength", "targetLength", "sliderMin", "sliderMax", "transfer"],
+          "required": [
+            "baseTriangle",
+            "initialLength",
+            "targetLength",
+            "sliderMin",
+            "sliderMax",
+            "transfer"
+          ],
           "properties": {
-            "baseTriangle": {"$ref": "#/$defs/rightTriangle"},
-            "initialLength": {"type": "integer", "minimum": 1},
-            "targetLength": {"type": "integer", "minimum": 1},
-            "sliderMin": {"type": "integer", "minimum": 1},
-            "sliderMax": {"type": "integer", "minimum": 1},
+            "baseTriangle": {
+              "$ref": "#/$defs/rightTriangle"
+            },
+            "initialLength": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "targetLength": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "sliderMin": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "sliderMax": {
+              "type": "integer",
+              "minimum": 1
+            },
             "transfer": {
-              "type": "object", "additionalProperties": false,
-              "required": ["baseTriangle", "length"],
-              "properties": {"baseTriangle": {"$ref": "#/$defs/rightTriangle"}, "length": {"type": "integer", "minimum": 1}}
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "baseTriangle",
+                "length"
+              ],
+              "properties": {
+                "baseTriangle": {
+                  "$ref": "#/$defs/rightTriangle"
+                },
+                "length": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              }
             }
           }
         },
         "similarityModel": {
-          "type": "object", "additionalProperties": false,
-          "required": ["originalWidth", "originalHeight", "scaleMin", "scaleMax", "scaleStep", "transferWidth", "transferHeight", "transferScale"],
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "originalWidth",
+            "originalHeight",
+            "scaleMin",
+            "scaleMax",
+            "scaleStep",
+            "transferWidth",
+            "transferHeight",
+            "transferScale"
+          ],
           "properties": {
-            "originalWidth": {"type": "number", "exclusiveMinimum": 0},
-            "originalHeight": {"type": "number", "exclusiveMinimum": 0},
-            "scaleMin": {"type": "number", "exclusiveMinimum": 0},
-            "scaleMax": {"type": "number", "exclusiveMinimum": 0},
-            "scaleStep": {"type": "number", "exclusiveMinimum": 0},
-            "transferWidth": {"type": "number", "exclusiveMinimum": 0},
-            "transferHeight": {"type": "number", "exclusiveMinimum": 0},
-            "transferScale": {"type": "number", "exclusiveMinimum": 0}
+            "originalWidth": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "originalHeight": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "scaleMin": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "scaleMax": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "scaleStep": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "transferWidth": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "transferHeight": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "transferScale": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            }
           }
         },
         "ticketEquation": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["itemLabel", "priceLabel", "currencyLabel", "initialState", "controls"],
+          "required": [
+            "itemLabel",
+            "priceLabel",
+            "currencyLabel",
+            "initialState",
+            "controls"
+          ],
           "properties": {
-            "itemLabel": {"type": "string", "minLength": 2},
-            "priceLabel": {"type": "string", "minLength": 2},
-            "currencyLabel": {"type": "string", "minLength": 1},
+            "itemLabel": {
+              "type": "string",
+              "minLength": 2
+            },
+            "priceLabel": {
+              "type": "string",
+              "minLength": 2
+            },
+            "currencyLabel": {
+              "type": "string",
+              "minLength": 1
+            },
             "initialState": {
-              "type": "object", "additionalProperties": false,
-              "required": ["ticketCount", "oneTimeFee", "totalPaid", "candidatePrice"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "ticketCount",
+                "oneTimeFee",
+                "totalPaid",
+                "candidatePrice"
+              ],
               "properties": {
-                "ticketCount": {"type": "integer", "minimum": 1},
-                "oneTimeFee": {"type": "integer", "minimum": 0},
-                "totalPaid": {"type": "integer", "minimum": 0},
-                "candidatePrice": {"type": "integer", "minimum": 0}
+                "ticketCount": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "oneTimeFee": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "totalPaid": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "candidatePrice": {
+                  "type": "integer",
+                  "minimum": 0
+                }
               }
             },
             "controls": {
-              "type": "object", "additionalProperties": false,
-              "required": ["ticketCount", "oneTimeFee", "totalPaid", "candidatePrice"],
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "ticketCount",
+                "oneTimeFee",
+                "totalPaid",
+                "candidatePrice"
+              ],
               "properties": {
-                "ticketCount": {"$ref": "#/$defs/integerRangeControl"},
-                "oneTimeFee": {"$ref": "#/$defs/integerRangeControl"},
-                "totalPaid": {"$ref": "#/$defs/integerRangeControl"},
-                "candidatePrice": {"$ref": "#/$defs/integerRangeControl"}
+                "ticketCount": {
+                  "$ref": "#/$defs/integerRangeControl"
+                },
+                "oneTimeFee": {
+                  "$ref": "#/$defs/integerRangeControl"
+                },
+                "totalPaid": {
+                  "$ref": "#/$defs/integerRangeControl"
+                },
+                "candidatePrice": {
+                  "$ref": "#/$defs/integerRangeControl"
+                }
               }
             }
           }
@@ -975,29 +1738,110 @@
         "learningDesign": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["type", "objective", "predictionPrompt", "steps", "evidencePrompt"],
+          "required": [
+            "type",
+            "objective",
+            "predictionPrompt",
+            "steps",
+            "evidencePrompt"
+          ],
           "properties": {
             "type": {
-              "enum": ["equation-transform", "inequality-solution-set", "representation-match", "parameter-investigation", "meaning-to-set-investigation", "data-investigation", "geometric-construction", "probability-experiment", "model-boundary", "algebra-expression-investigation"]
+              "enum": [
+                "equation-transform",
+                "inequality-solution-set",
+                "representation-match",
+                "parameter-investigation",
+                "meaning-to-set-investigation",
+                "data-investigation",
+                "geometric-construction",
+                "probability-experiment",
+                "model-boundary",
+                "algebra-expression-investigation"
+              ]
             },
-            "objective": {"type": "string", "minLength": 20},
-            "predictionPrompt": {"type": "string", "minLength": 20},
-            "evidencePrompt": {"type": "string", "minLength": 20},
+            "objective": {
+              "type": "string",
+              "minLength": 20
+            },
+            "predictionPrompt": {
+              "type": "string",
+              "minLength": 20
+            },
+            "evidencePrompt": {
+              "type": "string",
+              "minLength": 20
+            },
             "steps": {
               "type": "array",
               "minItems": 3,
               "items": {
                 "type": "object",
                 "additionalProperties": false,
-                "required": ["id", "action", "equation", "reason", "feedback"],
+                "required": [
+                  "id",
+                  "action",
+                  "equation",
+                  "reason",
+                  "feedback"
+                ],
                 "properties": {
-                  "id": {"type": "string", "pattern": "^step-[0-9]+$"},
-                  "action": {"type": "string", "minLength": 10},
-                  "equation": {"type": "string", "minLength": 5},
-                  "reason": {"type": "string", "minLength": 20},
-                  "feedback": {"type": "string", "minLength": 20}
+                  "id": {
+                    "type": "string",
+                    "pattern": "^step-[0-9]+$"
+                  },
+                  "action": {
+                    "type": "string",
+                    "minLength": 10
+                  },
+                  "equation": {
+                    "type": "string",
+                    "minLength": 5
+                  },
+                  "reason": {
+                    "type": "string",
+                    "minLength": 20
+                  },
+                  "feedback": {
+                    "type": "string",
+                    "minLength": 20
+                  }
                 }
               }
+            }
+          }
+        },
+        "visualContract": {
+          "type": "object",
+          "additionalProperties": true,
+          "required": [
+            "primaryVisual",
+            "visualFirst"
+          ],
+          "properties": {
+            "primaryVisual": {
+              "type": "string",
+              "minLength": 3
+            },
+            "visualFirst": {
+              "type": "boolean"
+            },
+            "predictBeforeReveal": {
+              "type": "boolean"
+            },
+            "evidenceOnVisual": {
+              "type": "boolean"
+            },
+            "directManipulation": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "transferScenario": {
+              "type": "string",
+              "minLength": 2
             }
           }
         }
@@ -1006,235 +1850,807 @@
   },
   "$defs": {
     "rightTriangle": {
-      "type": "object", "additionalProperties": false,
-      "required": ["legA", "legB", "hypotenuse"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "legA",
+        "legB",
+        "hypotenuse"
+      ],
       "properties": {
-        "legA": {"type": "integer", "minimum": 1},
-        "legB": {"type": "integer", "minimum": 1},
-        "hypotenuse": {"type": "integer", "minimum": 1}
+        "legA": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "legB": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "hypotenuse": {
+          "type": "integer",
+          "minimum": 1
+        }
       }
     },
     "integerRangeControl": {
-      "type": "object", "additionalProperties": false,
-      "required": ["label", "min", "max", "step"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "min",
+        "max",
+        "step"
+      ],
       "properties": {
-        "label": {"type": "string", "minLength": 2},
-        "min": {"type": "integer"},
-        "max": {"type": "integer"},
-        "step": {"type": "integer", "minimum": 1}
+        "label": {
+          "type": "string",
+          "minLength": 2
+        },
+        "min": {
+          "type": "integer"
+        },
+        "max": {
+          "type": "integer"
+        },
+        "step": {
+          "type": "integer",
+          "minimum": 1
+        }
       }
     },
     "shortPlayLab": {
-      "type": "object", "additionalProperties": false,
-      "required": ["label", "title", "goal", "preview", "minimumPredictionLength", "mainScript", "mainStages", "transfer", "completionMessage"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "title",
+        "goal",
+        "preview",
+        "minimumPredictionLength",
+        "mainScript",
+        "mainStages",
+        "transfer",
+        "completionMessage"
+      ],
       "properties": {
-        "label": {"type": "string", "minLength": 2},
-        "title": {"type": "string", "minLength": 8},
-        "goal": {"type": "string", "minLength": 20},
+        "label": {
+          "type": "string",
+          "minLength": 2
+        },
+        "title": {
+          "type": "string",
+          "minLength": 8
+        },
+        "goal": {
+          "type": "string",
+          "minLength": 20
+        },
         "preview": {
-          "type": "object", "additionalProperties": false,
-          "required": ["title", "cue"],
-          "properties": {"title": {"type": "string", "minLength": 3}, "cue": {"type": "string", "minLength": 20}}
-        },
-        "minimumPredictionLength": {"type": "integer", "minimum": 8},
-        "mainScript": {"$ref": "#/$defs/shortPlayLines"},
-        "mainStages": {"type": "array", "minItems": 5, "items": {"$ref": "#/$defs/shortPlayStage"}},
-        "transfer": {
-          "type": "object", "additionalProperties": false,
-          "required": ["script", "stages"],
-          "properties": {"script": {"$ref": "#/$defs/shortPlayLines"}, "stages": {"type": "array", "minItems": 2, "items": {"$ref": "#/$defs/shortPlayStage"}}}
-        },
-        "completionMessage": {"type": "string", "minLength": 20}
-      }
-    },
-    "genreReadingLab": {
-      "type": "object", "additionalProperties": false,
-      "required": ["label", "title", "goal", "context", "predictionPrompt", "predictionAnswers", "predictionHint", "sources", "mainSourceId", "sourceHint", "explanationPrompt", "minimumExplanationLength", "requiredEvidenceTerms", "evidenceHint", "evidenceFeedback", "transfer"],
-      "properties": {
-        "label": {"type": "string", "minLength": 2},
-        "title": {"type": "string", "minLength": 8},
-        "goal": {"type": "string", "minLength": 20},
-        "context": {"type": "string", "minLength": 20},
-        "predictionPrompt": {"type": "string", "minLength": 12},
-        "predictionAnswers": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
-        "predictionHint": {"type": "string", "minLength": 12},
-        "sources": {
-          "type": "array", "minItems": 3,
-          "items": {
-            "type": "object", "additionalProperties": false,
-            "required": ["id", "label", "excerpt", "function", "question", "limit"],
-            "properties": {
-              "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-              "label": {"type": "string", "minLength": 2},
-              "excerpt": {"type": "string", "minLength": 15},
-              "function": {"type": "string", "minLength": 10},
-              "question": {"type": "string", "minLength": 10},
-              "limit": {"type": "string", "minLength": 10}
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "title",
+            "cue"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 3
+            },
+            "cue": {
+              "type": "string",
+              "minLength": 20
             }
           }
         },
-        "mainSourceId": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-        "sourceHint": {"type": "string", "minLength": 12},
-        "explanationPrompt": {"type": "string", "minLength": 12},
-        "minimumExplanationLength": {"type": "integer", "minimum": 8},
-        "requiredEvidenceTerms": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
-        "evidenceHint": {"type": "string", "minLength": 12},
-        "evidenceFeedback": {"type": "string", "minLength": 12},
+        "minimumPredictionLength": {
+          "type": "integer",
+          "minimum": 8
+        },
+        "mainScript": {
+          "$ref": "#/$defs/shortPlayLines"
+        },
+        "mainStages": {
+          "type": "array",
+          "minItems": 5,
+          "items": {
+            "$ref": "#/$defs/shortPlayStage"
+          }
+        },
         "transfer": {
-          "type": "object", "additionalProperties": false,
-          "required": ["prompt", "answers", "hint", "completionMessage"],
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "script",
+            "stages"
+          ],
           "properties": {
-            "prompt": {"type": "string", "minLength": 20},
-            "answers": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
-            "hint": {"type": "string", "minLength": 12},
-            "completionMessage": {"type": "string", "minLength": 20}
+            "script": {
+              "$ref": "#/$defs/shortPlayLines"
+            },
+            "stages": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "$ref": "#/$defs/shortPlayStage"
+              }
+            }
+          }
+        },
+        "completionMessage": {
+          "type": "string",
+          "minLength": 20
+        }
+      }
+    },
+    "genreReadingLab": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "title",
+        "goal",
+        "context",
+        "predictionPrompt",
+        "predictionAnswers",
+        "predictionHint",
+        "sources",
+        "mainSourceId",
+        "sourceHint",
+        "explanationPrompt",
+        "minimumExplanationLength",
+        "requiredEvidenceTerms",
+        "evidenceHint",
+        "evidenceFeedback",
+        "transfer"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 2
+        },
+        "title": {
+          "type": "string",
+          "minLength": 8
+        },
+        "goal": {
+          "type": "string",
+          "minLength": 20
+        },
+        "context": {
+          "type": "string",
+          "minLength": 20
+        },
+        "predictionPrompt": {
+          "type": "string",
+          "minLength": 12
+        },
+        "predictionAnswers": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "predictionHint": {
+          "type": "string",
+          "minLength": 12
+        },
+        "sources": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "label",
+              "excerpt",
+              "function",
+              "question",
+              "limit"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$"
+              },
+              "label": {
+                "type": "string",
+                "minLength": 2
+              },
+              "excerpt": {
+                "type": "string",
+                "minLength": 15
+              },
+              "function": {
+                "type": "string",
+                "minLength": 10
+              },
+              "question": {
+                "type": "string",
+                "minLength": 10
+              },
+              "limit": {
+                "type": "string",
+                "minLength": 10
+              }
+            }
+          }
+        },
+        "mainSourceId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "sourceHint": {
+          "type": "string",
+          "minLength": 12
+        },
+        "explanationPrompt": {
+          "type": "string",
+          "minLength": 12
+        },
+        "minimumExplanationLength": {
+          "type": "integer",
+          "minimum": 8
+        },
+        "requiredEvidenceTerms": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "evidenceHint": {
+          "type": "string",
+          "minLength": 12
+        },
+        "evidenceFeedback": {
+          "type": "string",
+          "minLength": 12
+        },
+        "transfer": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "prompt",
+            "answers",
+            "hint",
+            "completionMessage"
+          ],
+          "properties": {
+            "prompt": {
+              "type": "string",
+              "minLength": 20
+            },
+            "answers": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 2
+              }
+            },
+            "hint": {
+              "type": "string",
+              "minLength": 12
+            },
+            "completionMessage": {
+              "type": "string",
+              "minLength": 20
+            }
           }
         }
       }
     },
     "dataExplorerLab": {
-      "type": "object", "additionalProperties": false,
-      "required": ["label", "title", "goal", "context", "predictionPrompt", "predictionHint", "predictionAccepted", "intervals", "unitLabel", "initialUnit", "changedUnit", "expectedInitialValue", "manipulationPrompt", "explanationPrompt", "acceptedExplanationTerms", "explanationAccepted", "explanationHint", "transfer"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "title",
+        "goal",
+        "context",
+        "predictionPrompt",
+        "predictionHint",
+        "predictionAccepted",
+        "intervals",
+        "unitLabel",
+        "initialUnit",
+        "changedUnit",
+        "expectedInitialValue",
+        "manipulationPrompt",
+        "explanationPrompt",
+        "acceptedExplanationTerms",
+        "explanationAccepted",
+        "explanationHint",
+        "transfer"
+      ],
       "properties": {
-        "label": {"type": "string", "minLength": 2},
-        "title": {"type": "string", "minLength": 8},
-        "goal": {"type": "string", "minLength": 20},
-        "context": {"type": "string", "minLength": 20},
-        "predictionPrompt": {"type": "string", "minLength": 12},
-        "predictionHint": {"type": "string", "minLength": 12},
-        "predictionAccepted": {"type": "string", "minLength": 12},
-        "intervals": {"type": "integer", "minimum": 2},
-        "unitLabel": {"type": "string", "minLength": 1},
-        "initialUnit": {"type": "integer", "minimum": 1},
-        "changedUnit": {"type": "integer", "minimum": 2},
-        "expectedInitialValue": {"type": "integer", "minimum": 1},
-        "manipulationPrompt": {"type": "string", "minLength": 12},
-        "explanationPrompt": {"type": "string", "minLength": 12},
-        "acceptedExplanationTerms": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
-        "explanationAccepted": {"type": "string", "minLength": 12},
-        "explanationHint": {"type": "string", "minLength": 12},
+        "label": {
+          "type": "string",
+          "minLength": 2
+        },
+        "title": {
+          "type": "string",
+          "minLength": 8
+        },
+        "goal": {
+          "type": "string",
+          "minLength": 20
+        },
+        "context": {
+          "type": "string",
+          "minLength": 20
+        },
+        "predictionPrompt": {
+          "type": "string",
+          "minLength": 12
+        },
+        "predictionHint": {
+          "type": "string",
+          "minLength": 12
+        },
+        "predictionAccepted": {
+          "type": "string",
+          "minLength": 12
+        },
+        "intervals": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "unitLabel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "initialUnit": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "changedUnit": {
+          "type": "integer",
+          "minimum": 2
+        },
+        "expectedInitialValue": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "manipulationPrompt": {
+          "type": "string",
+          "minLength": 12
+        },
+        "explanationPrompt": {
+          "type": "string",
+          "minLength": 12
+        },
+        "acceptedExplanationTerms": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "explanationAccepted": {
+          "type": "string",
+          "minLength": 12
+        },
+        "explanationHint": {
+          "type": "string",
+          "minLength": 12
+        },
         "transfer": {
-          "type": "object", "additionalProperties": false,
-          "required": ["prompt", "options", "answer", "explanationPrompt", "minimumExplanationLength", "requiredEvidenceTerms", "retryHint", "completionMessage"],
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "prompt",
+            "options",
+            "answer",
+            "explanationPrompt",
+            "minimumExplanationLength",
+            "requiredEvidenceTerms",
+            "retryHint",
+            "completionMessage"
+          ],
           "properties": {
-            "prompt": {"type": "string", "minLength": 20},
-            "options": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
-            "answer": {"type": "string", "pattern": "^[A-Z]$"},
-            "explanationPrompt": {"type": "string", "minLength": 12},
-            "minimumExplanationLength": {"type": "integer", "minimum": 8},
-            "requiredEvidenceTerms": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
-            "retryHint": {"type": "string", "minLength": 12},
-            "completionMessage": {"type": "string", "minLength": 20}
+            "prompt": {
+              "type": "string",
+              "minLength": 20
+            },
+            "options": {
+              "type": "array",
+              "minItems": 2,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 2
+              }
+            },
+            "answer": {
+              "type": "string",
+              "pattern": "^[A-Z]$"
+            },
+            "explanationPrompt": {
+              "type": "string",
+              "minLength": 12
+            },
+            "minimumExplanationLength": {
+              "type": "integer",
+              "minimum": 8
+            },
+            "requiredEvidenceTerms": {
+              "type": "array",
+              "minItems": 1,
+              "uniqueItems": true,
+              "items": {
+                "type": "string",
+                "minLength": 2
+              }
+            },
+            "retryHint": {
+              "type": "string",
+              "minLength": 12
+            },
+            "completionMessage": {
+              "type": "string",
+              "minLength": 20
+            }
           }
         }
       }
     },
     "dailyExpressionLab": {
-      "type": "object", "additionalProperties": false,
-      "required": ["label", "title", "goal", "introduction", "scenes", "transfer"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "title",
+        "goal",
+        "introduction",
+        "scenes",
+        "transfer"
+      ],
       "properties": {
-        "label": {"type": "string", "minLength": 2},
-        "title": {"type": "string", "minLength": 8},
-        "goal": {"type": "string", "minLength": 20},
-        "introduction": {"type": "string", "minLength": 30},
-        "scenes": {
-          "type": "array", "minItems": 3,
-          "items": {"$ref": "#/$defs/dailyExpressionScene"}
+        "label": {
+          "type": "string",
+          "minLength": 2
         },
-        "transfer": {"$ref": "#/$defs/dailyExpressionTransfer"}
+        "title": {
+          "type": "string",
+          "minLength": 8
+        },
+        "goal": {
+          "type": "string",
+          "minLength": 20
+        },
+        "introduction": {
+          "type": "string",
+          "minLength": 30
+        },
+        "scenes": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "$ref": "#/$defs/dailyExpressionScene"
+          }
+        },
+        "transfer": {
+          "$ref": "#/$defs/dailyExpressionTransfer"
+        }
       }
     },
     "dailyExpressionScene": {
-      "type": "object", "additionalProperties": false,
-      "required": ["id", "title", "dialogue", "prompt", "cues", "requiredCueIds", "cueHint", "cueRetryHint", "question", "nextLine"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "dialogue",
+        "prompt",
+        "cues",
+        "requiredCueIds",
+        "cueHint",
+        "cueRetryHint",
+        "question",
+        "nextLine"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-        "title": {"type": "string", "minLength": 4},
-        "dialogue": {"type": "string", "minLength": 25},
-        "prompt": {"type": "string", "minLength": 15},
-        "cues": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/dailyExpressionCue"}},
-        "requiredCueIds": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-        "cueHint": {"type": "string", "minLength": 12},
-        "cueRetryHint": {"type": "string", "minLength": 12},
-        "question": {"$ref": "#/$defs/dailyExpressionQuestion"},
-        "nextLine": {"type": "string", "minLength": 12}
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "title": {
+          "type": "string",
+          "minLength": 4
+        },
+        "dialogue": {
+          "type": "string",
+          "minLength": 25
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 15
+        },
+        "cues": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "$ref": "#/$defs/dailyExpressionCue"
+          }
+        },
+        "requiredCueIds": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          }
+        },
+        "cueHint": {
+          "type": "string",
+          "minLength": 12
+        },
+        "cueRetryHint": {
+          "type": "string",
+          "minLength": 12
+        },
+        "question": {
+          "$ref": "#/$defs/dailyExpressionQuestion"
+        },
+        "nextLine": {
+          "type": "string",
+          "minLength": 12
+        }
       }
     },
     "dailyExpressionCue": {
-      "type": "object", "additionalProperties": false,
-      "required": ["id", "text"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-        "text": {"type": "string", "minLength": 8}
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 8
+        }
       }
     },
     "dailyExpressionQuestion": {
-      "type": "object", "additionalProperties": false,
-      "required": ["prompt", "options", "answerId", "feedback", "retryHint"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt",
+        "options",
+        "answerId",
+        "feedback",
+        "retryHint"
+      ],
       "properties": {
-        "prompt": {"type": "string", "minLength": 12},
-        "options": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/dailyExpressionOption"}},
-        "answerId": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-        "feedback": {"type": "string", "minLength": 20},
-        "retryHint": {"type": "string", "minLength": 15}
+        "prompt": {
+          "type": "string",
+          "minLength": 12
+        },
+        "options": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "$ref": "#/$defs/dailyExpressionOption"
+          }
+        },
+        "answerId": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "feedback": {
+          "type": "string",
+          "minLength": 20
+        },
+        "retryHint": {
+          "type": "string",
+          "minLength": 15
+        }
       }
     },
     "dailyExpressionOption": {
-      "type": "object", "additionalProperties": false,
-      "required": ["id", "text"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "text"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-        "text": {"type": "string", "minLength": 5}
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 5
+        }
       }
     },
     "dailyExpressionTransfer": {
-      "type": "object", "additionalProperties": false,
-      "required": ["notice", "cues", "requiredCueIds", "prompt", "question", "explanationPrompt", "minimumExplanationLength", "requiredEvidenceTerms", "hint", "retryHint", "feedback", "completionMessage"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "notice",
+        "cues",
+        "requiredCueIds",
+        "prompt",
+        "question",
+        "explanationPrompt",
+        "minimumExplanationLength",
+        "requiredEvidenceTerms",
+        "hint",
+        "retryHint",
+        "feedback",
+        "completionMessage"
+      ],
       "properties": {
-        "notice": {"type": "string", "minLength": 50},
-        "cues": {"type": "array", "minItems": 3, "items": {"$ref": "#/$defs/dailyExpressionCue"}},
-        "requiredCueIds": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"}},
-        "prompt": {"type": "string", "minLength": 18},
-        "question": {"$ref": "#/$defs/dailyExpressionQuestion"},
-        "explanationPrompt": {"type": "string", "minLength": 15},
-        "minimumExplanationLength": {"type": "integer", "minimum": 12},
-        "requiredEvidenceTerms": {"type": "array", "minItems": 2, "uniqueItems": true, "items": {"type": "string", "minLength": 2}},
-        "hint": {"type": "string", "minLength": 15},
-        "retryHint": {"type": "string", "minLength": 15},
-        "feedback": {"type": "string", "minLength": 20},
-        "completionMessage": {"type": "string", "minLength": 20}
+        "notice": {
+          "type": "string",
+          "minLength": 50
+        },
+        "cues": {
+          "type": "array",
+          "minItems": 3,
+          "items": {
+            "$ref": "#/$defs/dailyExpressionCue"
+          }
+        },
+        "requiredCueIds": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          }
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 18
+        },
+        "question": {
+          "$ref": "#/$defs/dailyExpressionQuestion"
+        },
+        "explanationPrompt": {
+          "type": "string",
+          "minLength": 15
+        },
+        "minimumExplanationLength": {
+          "type": "integer",
+          "minimum": 12
+        },
+        "requiredEvidenceTerms": {
+          "type": "array",
+          "minItems": 2,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "minLength": 2
+          }
+        },
+        "hint": {
+          "type": "string",
+          "minLength": 15
+        },
+        "retryHint": {
+          "type": "string",
+          "minLength": 15
+        },
+        "feedback": {
+          "type": "string",
+          "minLength": 20
+        },
+        "completionMessage": {
+          "type": "string",
+          "minLength": 20
+        }
       }
     },
     "shortPlayLines": {
-      "type": "object", "additionalProperties": false,
-      "required": ["title", "lines"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "lines"
+      ],
       "properties": {
-        "title": {"type": "string", "minLength": 3},
+        "title": {
+          "type": "string",
+          "minLength": 3
+        },
         "lines": {
-          "type": "array", "minItems": 5,
+          "type": "array",
+          "minItems": 5,
           "items": {
-            "type": "object", "additionalProperties": false,
-            "required": ["id", "kind", "speaker", "text"],
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "kind",
+              "speaker",
+              "text"
+            ],
             "properties": {
-              "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-              "kind": {"enum": ["dialogue", "direction"]},
-              "speaker": {"type": "string", "minLength": 1},
-              "text": {"type": "string", "minLength": 4}
+              "id": {
+                "type": "string",
+                "pattern": "^[a-z][a-z0-9-]*$"
+              },
+              "kind": {
+                "enum": [
+                  "dialogue",
+                  "direction"
+                ]
+              },
+              "speaker": {
+                "type": "string",
+                "minLength": 1
+              },
+              "text": {
+                "type": "string",
+                "minLength": 4
+              }
             }
           }
         }
       }
     },
     "shortPlayStage": {
-      "type": "object", "additionalProperties": false,
-      "required": ["id", "prompt", "options", "answer", "feedback", "retryHint"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "prompt",
+        "options",
+        "answer",
+        "feedback",
+        "retryHint"
+      ],
       "properties": {
-        "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-        "prompt": {"type": "string", "minLength": 12},
-        "options": {"type": "array", "minItems": 3, "maxItems": 3, "items": {"type": "string", "minLength": 10}},
-        "answer": {"type": "string", "pattern": "^[A-C]$"},
-        "feedback": {"type": "string", "minLength": 20},
-        "retryHint": {"type": "string", "minLength": 15}
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9-]*$"
+        },
+        "prompt": {
+          "type": "string",
+          "minLength": 12
+        },
+        "options": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 3,
+          "items": {
+            "type": "string",
+            "minLength": 10
+          }
+        },
+        "answer": {
+          "type": "string",
+          "pattern": "^[A-C]$"
+        },
+        "feedback": {
+          "type": "string",
+          "minLength": 20
+        },
+        "retryHint": {
+          "type": "string",
+          "minLength": 15
+        }
       }
     },
     "dialogueLines": {
@@ -1243,11 +2659,24 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "speaker", "text"],
+        "required": [
+          "id",
+          "speaker",
+          "text"
+        ],
         "properties": {
-          "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-          "speaker": {"type": "string", "minLength": 1},
-          "text": {"type": "string", "minLength": 3}
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "speaker": {
+            "type": "string",
+            "minLength": 1
+          },
+          "text": {
+            "type": "string",
+            "minLength": 3
+          }
         }
       }
     },
@@ -1257,81 +2686,227 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["id", "text"],
+        "required": [
+          "id",
+          "text"
+        ],
         "properties": {
-          "id": {"type": "string", "pattern": "^[A-Z]$"},
-          "text": {"type": "string", "minLength": 8}
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Z]$"
+          },
+          "text": {
+            "type": "string",
+            "minLength": 8
+          }
         }
       }
     },
     "dialogueQuestion": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["prompt", "options", "answer", "feedback"],
+      "required": [
+        "prompt",
+        "options",
+        "answer",
+        "feedback"
+      ],
       "properties": {
-        "prompt": {"type": "string", "minLength": 10},
-        "options": {"$ref": "#/$defs/dialogueOptions"},
-        "answer": {"type": "string", "pattern": "^[A-Z]$"},
-        "feedback": {"type": "string", "minLength": 20}
+        "prompt": {
+          "type": "string",
+          "minLength": 10
+        },
+        "options": {
+          "$ref": "#/$defs/dialogueOptions"
+        },
+        "answer": {
+          "type": "string",
+          "pattern": "^[A-Z]$"
+        },
+        "feedback": {
+          "type": "string",
+          "minLength": 20
+        }
       }
     },
     "messageParts": {
-      "type": "array", "minItems": 3,
+      "type": "array",
+      "minItems": 3,
       "items": {
-        "type": "object", "additionalProperties": false,
-        "required": ["id", "label", "text"],
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "text"
+        ],
         "properties": {
-          "id": {"type": "string", "pattern": "^[a-z][a-z0-9-]*$"},
-          "label": {"type": "string", "minLength": 2},
-          "text": {"type": "string", "minLength": 10}
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "label": {
+            "type": "string",
+            "minLength": 2
+          },
+          "text": {
+            "type": "string",
+            "minLength": 10
+          }
         }
       }
     },
     "messageQuestion": {
-      "type": "object", "additionalProperties": false,
-      "required": ["prompt", "options", "answer"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt",
+        "options",
+        "answer"
+      ],
       "properties": {
-        "prompt": {"type": "string", "minLength": 10},
+        "prompt": {
+          "type": "string",
+          "minLength": 10
+        },
         "options": {
-          "type": "array", "minItems": 3,
+          "type": "array",
+          "minItems": 3,
           "items": {
-            "type": "object", "additionalProperties": false,
-            "required": ["id", "text"],
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "text"
+            ],
             "properties": {
-              "id": {"type": "string", "pattern": "^[A-Z]$"},
-              "text": {"type": "string", "minLength": 8}
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Z]$"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 8
+              }
             }
           }
         },
-        "answer": {"type": "string", "pattern": "^[A-Z]$"},
-        "feedback": {"type": "string", "minLength": 20},
-        "retryHint": {"type": "string", "minLength": 15}
-      }
-    }
-    ,
-    "storyPlotQuestion": {
-      "type": "object", "additionalProperties": false,
-      "required": ["prompt", "options", "answer", "feedback", "retryHint"],
-      "properties": {
-        "prompt": {"type": "string", "minLength": 12},
-        "options": {
-          "type": "array", "minItems": 3, "maxItems": 4,
-          "items": {"type": "object", "additionalProperties": false, "required": ["id", "text"], "properties": {"id": {"type": "string", "pattern": "^[A-Z]$"}, "text": {"type": "string", "minLength": 10}}}
+        "answer": {
+          "type": "string",
+          "pattern": "^[A-Z]$"
         },
-        "answer": {"type": "string", "pattern": "^[A-Z]$"},
-        "feedback": {"type": "string", "minLength": 20},
-        "retryHint": {"type": "string", "minLength": 15}
+        "feedback": {
+          "type": "string",
+          "minLength": 20
+        },
+        "retryHint": {
+          "type": "string",
+          "minLength": 15
+        }
+      }
+    },
+    "storyPlotQuestion": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt",
+        "options",
+        "answer",
+        "feedback",
+        "retryHint"
+      ],
+      "properties": {
+        "prompt": {
+          "type": "string",
+          "minLength": 12
+        },
+        "options": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "text"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Z]$"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 10
+              }
+            }
+          }
+        },
+        "answer": {
+          "type": "string",
+          "pattern": "^[A-Z]$"
+        },
+        "feedback": {
+          "type": "string",
+          "minLength": 20
+        },
+        "retryHint": {
+          "type": "string",
+          "minLength": 15
+        }
       }
     },
     "storyElementsQuestion": {
-      "type": "object", "additionalProperties": false,
-      "required": ["prompt", "options", "answer", "feedback", "hint"],
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "prompt",
+        "options",
+        "answer",
+        "feedback",
+        "hint"
+      ],
       "properties": {
-        "prompt": {"type": "string", "minLength": 12},
-        "options": {"type": "array", "minItems": 3, "maxItems": 4, "items": {"type": "object", "additionalProperties": false, "required": ["id", "text"], "properties": {"id": {"type": "string", "pattern": "^[A-Z]$"}, "text": {"type": "string", "minLength": 10}}}},
-        "answer": {"type": "string", "pattern": "^[A-Z]$"},
-        "feedback": {"type": "string", "minLength": 20},
-        "hint": {"type": "string", "minLength": 15}
+        "prompt": {
+          "type": "string",
+          "minLength": 12
+        },
+        "options": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 4,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "id",
+              "text"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[A-Z]$"
+              },
+              "text": {
+                "type": "string",
+                "minLength": 10
+              }
+            }
+          }
+        },
+        "answer": {
+          "type": "string",
+          "pattern": "^[A-Z]$"
+        },
+        "feedback": {
+          "type": "string",
+          "minLength": 20
+        },
+        "hint": {
+          "type": "string",
+          "minLength": 15
+        }
       }
     }
   },
@@ -1358,7 +2933,10 @@
       "if": {
         "properties": {
           "authoringStandard": {
-            "enum": ["full-lesson-v1", "version-fused-v1"]
+            "enum": [
+              "full-lesson-v1",
+              "version-fused-v1"
+            ]
           }
         },
         "required": [
@@ -1375,12 +2953,19 @@
     {
       "if": {
         "properties": {
-          "authoringStandard": {"const": "version-fused-v1"}
+          "authoringStandard": {
+            "const": "version-fused-v1"
+          }
         },
-        "required": ["authoringStandard"]
+        "required": [
+          "authoringStandard"
+        ]
       },
       "then": {
-        "required": ["versionResearch", "fusionRecord"]
+        "required": [
+          "versionResearch",
+          "fusionRecord"
+        ]
       }
     },
     {
