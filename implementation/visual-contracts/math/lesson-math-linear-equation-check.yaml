@@ -1,0 +1,50 @@
+lessonId: lesson-math-linear-equation-check
+subject: math
+knowledgeNodes:
+  - kg-math-linear-equation-check
+learningObjective: 保留一次方程式的等價變形歷程，將候選解代回最原始方程式比較左右兩側，並把同樣驗算流程遷移到含固定費的生活情境。
+keyConcept: 移項不是數字搬家，而是等號兩側做相同的可逆操作；真正的驗算要回到原式。
+priorKnowledge:
+  - 分配律
+  - 等式性質
+  - 一元一次方程式
+misconceptions:
+  - 只改左側而不做右側相同運算
+  - 把括號外的係數只除到括號其中一項
+  - 只檢查最後一行 x=答案，不回到原式
+  - 生活題漏掉固定費
+visual:
+  primaryType: equivalence-chain-and-two-side-check
+  secondaryRepresentations:
+    - reversible-step-chain
+    - left-right-substitution-check
+    - contextual-equation-check
+  firstFrame: 顯示 2(x+3)=14，先預測第一個等價操作；後續變形鏈保持隱藏。
+  manipulables:
+    - linearFirstStep
+    - linearCandidate
+    - linearTransfer
+  dynamicChanges:
+    - 等價變形鏈
+    - 候選值代回左右兩側
+    - 生活費用題驗算
+  invariants:
+    - 每一個可逆操作都同步作用於等號兩側
+interaction:
+  prediction: 先選第一步是否對兩側同除 2。
+  action: 解鎖變形鏈後調整候選 x，觀察原式左右值。
+  observation: 比較候選值是否使左右相等；錯誤候選保留作為診斷證據。
+  evidencePrompt: 說明 2(x+3)=14 → x+3=7 → x=4 每一步對兩側做了什麼。
+  feedback: 指出只動單側、括號處理錯誤或漏固定費等具體錯誤。
+  retry: 可重新選第一步並調整候選值。
+  transfer: 15x+80=170 代回 x=6，並檢查人數限制。
+accessibility:
+  keyboardAlternative: select/range/button 均可鍵盤操作。
+  nonDragAlternative: 不依賴拖曳。
+  textAlternative: 變形鏈與左右值都有文字。
+  reducedMotion: 不依賴動畫。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
