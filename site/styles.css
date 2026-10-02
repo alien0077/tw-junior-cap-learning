@@ -75,3 +75,6 @@
 .sim-friction-controls:disabled { opacity:.58; }
 .sim-friction-lab button[aria-pressed="true"] { outline:3px solid currentColor; outline-offset:2px; }
 @media(max-width:720px){.sim-friction-controls{grid-template-columns:1fr}.sim-friction-stage svg{min-height:210px}}
+
+/* Visual-first science: Eb-IV-5 hydraulic pressure lab */
+.sim-hydraulic-lab{display:grid;gap:1rem}.sim-hydraulic-stage{margin:0;border:1px solid var(--border,#d7dce3);border-radius:16px;padding:1rem;background:var(--surface,#fff)}.sim-hydraulic-stage svg{display:block;width:100%;min-height:270px}.sim-hydraulic-stage figcaption{text-align:center;font-size:1.05rem}.sim-fluid{fill:#b9ddf4;stroke:currentColor;stroke-width:2}.sim-piston{fill:#aeb8c6;stroke:currentColor;stroke-width:2}.sim-water-tank{fill:none;stroke:currentColor;stroke-width:3}.sim-hydraulic-controls{border:1px solid var(--border,#d7dce3);border-radius:16px;padding:1rem;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1rem}.sim-hydraulic-controls:disabled{opacity:.58}@media(max-width:720px){.sim-hydraulic-controls{grid-template-columns:1fr}.sim-hydraulic-stage svg{min-height:220px}}
