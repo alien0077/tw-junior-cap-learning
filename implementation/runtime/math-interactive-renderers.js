@@ -435,9 +435,81 @@ function mountNumberLineLab({ document, root, block, spec }) {
 }
 
 
+
+function mountFactorMeaningLab({ document, root, block }) {
+  const store=storageFor(block.id), prior=store?.get()||{};
+  const state={x:clamp(number(prior.x,2),1,5),choice:String(prior.choice||"")};
+  const {lab,status}=makeLab(document,block,"因式 × 商式：乘回驗證臺");
+  lab.classList.add("math-factor-meaning-lab");
+  const intro=document.createElement("p");
+  intro.innerHTML="<strong>因式是不是靠猜？不是。</strong> 把候選因式與商式完整相乘；能逐項還原原多項式，才算成立。";
+
+  const figure=document.createElement("figure"); figure.className="math-factor-meaning-figure";
+  const canvas=makeCanvas(document,"x加2乘以x加5的面積分割",420,300);
+  const caption=document.createElement("figcaption");
+  figure.append(canvas,caption);
+  const control=makeRange(document,{label:"觀察 x",min:1,max:5,value:state.x,onInput:v=>{state.x=v;store?.set(state);draw();}});
+  const candidates=document.createElement("fieldset");
+  const legend=document.createElement("legend");legend.textContent="預測：哪一組乘回會得到 x²+7x+10？";candidates.append(legend);
+  const feedback=document.createElement("p"); feedback.setAttribute("aria-live","polite");
+  const evidence=document.createElement("div");evidence.className="math-factor-evidence";evidence.hidden=true;
+  const defs=[
+    ["good","(x+2)(x+5)","x²+7x+10",true],
+    ["six","(x+1)(x+6)","x²+7x+6",false],
+    ["twelve","(x+3)(x+4)","x²+7x+12",false],
+  ];
+  for(const [value,label,expanded,ok] of defs){
+    const b=document.createElement("button");b.type="button";b.textContent=label;b.setAttribute("aria-pressed",String(state.choice===value));
+    b.addEventListener("click",()=>{
+      state.choice=value;store?.set(state);candidates.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+      evidence.hidden=false;
+      if(ok){
+        feedback.textContent="成立。四個乘積都能對回原式，常數項與中間項也完全一致。";
+        evidence.innerHTML="<strong>完整乘回：</strong> x·x + x·5 + 2·x + 2·5 = x²+5x+2x+10 = x²+7x+10。";
+      }else{
+        feedback.textContent=\`不成立。中間項雖然也是 7x，但乘回得到 \${expanded}；只對到部分項不夠。\`;
+        evidence.innerHTML=\`<strong>反證：</strong>\${label} = \${expanded} ≠ x²+7x+10。請逐項核對二次項、中間項、常數項。\`;
+      }
+    });
+    candidates.append(b);
+  }
+
+  const transfer=document.createElement("fieldset");
+  const tl=document.createElement("legend");tl.textContent="遷移：x²+8x+15 應由哪兩個一次式相乘？";transfer.append(tl);
+  const tf=document.createElement("p");tf.setAttribute("aria-live","polite");
+  [["a","(x+3)(x+5)",true],["b","(x+1)(x+15)",false],["c","(x+2)(x+6)",false]].forEach(([v,label,ok])=>{
+    const b=document.createElement("button");b.type="button";b.textContent=label;
+    b.addEventListener("click",()=>{tf.textContent=ok?"正確。3×5=15，而且3+5=8；乘回得到 x²+8x+15。":"先完整乘回。常數乘積與交叉和要同時吻合。";});
+    transfer.append(b);
+  }); transfer.append(tf);
+
+  function draw(){
+    canvas.replaceChildren();
+    const x=state.x, unit=28, ox=62, oy=44, xp=x*unit, two=56, five=92;
+    const rect=(rx,ry,w,h,fill,label)=>{
+      canvas.append(svg(document,"rect",{x:rx,y:ry,width:w,height:h,fill,stroke:"#334155","stroke-width":1.7}));
+      const t=svg(document,"text",{x:rx+w/2,y:ry+h/2+6,"text-anchor":"middle","font-size":17,"font-weight":800,fill:"#0f172a"});t.textContent=label;canvas.append(t);
+    };
+    rect(ox,oy,xp,xp,"#dbeafe","x²");
+    rect(ox+xp,oy,five,xp,"#fef3c7","5x");
+    rect(ox,oy+xp,xp,two,"#dcfce7","2x");
+    rect(ox+xp,oy+xp,five,two,"#ede9fe","10");
+    const top=svg(document,"text",{x:ox+(xp+five)/2,y:25,"text-anchor":"middle","font-weight":800});top.textContent="x + 5";canvas.append(top);
+    const side=svg(document,"text",{x:22,y:oy+(xp+two)/2,"text-anchor":"middle","font-weight":800,transform:\`rotate(-90 22 \${oy+(xp+two)/2})\`});side.textContent="x + 2";canvas.append(side);
+    caption.textContent=\`x=\${x} 時，長 \${x+5}、寬 \${x+2}，面積 \${(x+5)*(x+2)}；圖形仍對應 x²+7x+10。\`;
+  }
+
+  lab.append(intro,figure,control.wrapper,candidates,feedback,evidence,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  draw();
+  status.textContent="先提出候選，再用四個乘積完整乘回；部分項吻合不能當證明。";
+  return lab;
+}
+
 function mountFactorizationLab({ document, root, block, spec }) {
   const store=storageFor(block.id), prior=store?.get()||{};
   const broad=spec?.lessonId==="cur-math-content-a-8-5";
+  if (!broad) return mountFactorMeaningLab({ document, root, block, spec });
   const state={choice:String(prior.choice||""),transfer:String(prior.transfer||"")};
   const {lab,status}=makeLab(document,block,broad?"因式分解結構探索臺":"因式與乘回驗證臺");
   lab.classList.add("math-factor-lab");
