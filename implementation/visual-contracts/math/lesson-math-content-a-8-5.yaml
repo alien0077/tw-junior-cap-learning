@@ -1,0 +1,35 @@
+lessonId: lesson-math-content-a-8-5
+subject: math
+knowledgeNodes: [kg-math-content-a-8-5]
+learningObjective: 從每一項的係數與字母因子辨認最大共同因式，逐項相除形成括號並以展開回驗。
+keyConcept: 提公因式是分配律的反向操作；共同因式必須真正存在於每一項。
+priorKnowledge: [整數因數, 字母次方, 分配律]
+misconceptions:
+  - 只提出數字而漏共同字母
+  - 取最高次方而不是共同最低次方
+  - 候選因式不能逐項整除
+visual:
+  primaryType: factor-token-board
+  secondaryRepresentations: [division-check, expansion-check, method-map]
+  firstFrame: 12x² 與 18x 的因子 token 並排，共同因子可視化。
+  manipulables: [commonFactor, factorTransfer]
+  dynamicChanges: [候選共同因式, 逐項相除結果, 回乘結果]
+  invariants: [分解前後代數式等值]
+interaction:
+  prediction: 先選最大共同因式。
+  action: 比較兩列 token 並提交候選因式。
+  observation: 看候選是否能逐項相除及是否仍漏共同因子。
+  evidencePrompt: 以兩個商與回乘結果證明。
+  feedback: 指出漏字母或不能整除的具體位置。
+  retry: 可更換候選因式。
+  transfer: 15x²y-10xy² 改用 x、y 共同最低次方。
+accessibility:
+  keyboardAlternative: select 可鍵盤操作。
+  nonDragAlternative: token 為視覺證據，不要求拖曳。
+  textAlternative: 每列因子與共同因式均有文字。
+  reducedMotion: 不依賴動畫。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
