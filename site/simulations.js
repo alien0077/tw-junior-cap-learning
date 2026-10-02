@@ -89,12 +89,31 @@
   };
   const renderLearningDesign = (lesson, state) => {
     const design = lesson.simulation?.learningDesign;
-    if (!design) return "";
+    if (!design?.steps?.length) return "";
     const current = Math.max(0, Math.min(design.steps.length - 1, Number(state.designStep || 0)));
     const step = design.steps[current];
-    const visualLabel = design.type === "equation-transform" ? "目前表示" : "目前探索結果";
-    const solutionSetVisual = design.type === "inequality-solution-set" ? `<figure class="sim-inequality-proof"><svg viewBox="0 0 360 120" role="img" aria-label="數線表示 x 小於負二；負二為空心端點並向左延伸；負三成立、負二不成立、負一不成立"><line x1="24" y1="54" x2="336" y2="54" class="sim-axis"/><line x1="24" y1="54" x2="192" y2="54" class="sim-line"/><path d="M34 46 L24 54 L34 62" class="sim-line" fill="none"/><circle cx="192" cy="54" r="8" fill="white" stroke="currentColor" stroke-width="3"/><circle cx="156" cy="54" r="5" class="sim-marker"/><circle cx="228" cy="54" r="5" class="sim-marker"/><text x="156" y="92" text-anchor="middle">−3 通過</text><text x="192" y="112" text-anchor="middle">−2 邊界（不含）</text><text x="252" y="92" text-anchor="middle">−1 不通過</text><text x="192" y="24" text-anchor="middle">x＜−2</text></svg><figcaption>圖形固定對應原式 −2x＋6＞10；選不同步驟可逐行檢查推理，不是只看最後答案。</figcaption></figure>` : "";
-    return `<div class="sim-design" data-design-type="${esc(design.type)}"><p><b>先預測：</b>${esc(design.predictionPrompt)}</p><div class="sim-equation-path" aria-live="polite"><div class="sim-equation-current">${esc(step.equation)}</div><p><b>${visualLabel}：</b>${esc(step.action)}</p><p>${esc(step.reason)}</p></div>${solutionSetVisual}<div class="sim-design-steps" role="group" aria-label="單元探索步驟">${design.steps.map((item, index) => `<button type="button" data-design-step="${index}" ${index === current ? 'aria-current="step"' : ""}>${index + 1}. ${esc(item.action)}</button>`).join("")}</div><p class="sim-design-feedback" aria-live="polite">${esc(step.feedback)}</p><p><b>用證據說明：</b>${esc(design.evidencePrompt)}</p></div>`;
+    const predicted = state.designPredictionSubmitted === true;
+    const nodes = design.steps.map((item,index) => {
+      const x = 70 + index * (500 / Math.max(1, design.steps.length - 1));
+      const active = index === current;
+      const visible = predicted || index === 0;
+      return visible ? `<g class="sim-design-node ${active ? "is-active" : ""}" transform="translate(${x} 92)"><circle r="${active ? 29 : 23}"/><text y="5" text-anchor="middle">${index+1}</text><text y="48" text-anchor="middle">${esc(String(item.equation || "").slice(0,22))}</text></g>` : `<g transform="translate(${x} 92)"><circle r="23" class="sim-design-node-locked"/><text y="5" text-anchor="middle">?</text></g>`;
+    }).join("");
+    const links = design.steps.slice(0,-1).map((_,index) => {
+      const x1=70+index*(500/Math.max(1,design.steps.length-1)),x2=70+(index+1)*(500/Math.max(1,design.steps.length-1));
+      return `<line x1="${x1+28}" y1="92" x2="${x2-28}" y2="92" class="sim-design-link"/>`;
+    }).join("");
+    const solutionSetVisual = design.type === "inequality-solution-set" ? `<figure class="sim-inequality-proof"><svg viewBox="0 0 360 120" role="img" aria-label="不等式解集數線證據"><line x1="24" y1="54" x2="336" y2="54" class="sim-axis"/><line x1="24" y1="54" x2="192" y2="54" class="sim-line"/><path d="M34 46 L24 54 L34 62" class="sim-line" fill="none"/><circle cx="192" cy="54" r="8" fill="white" stroke="currentColor" stroke-width="3"/><circle cx="156" cy="54" r="5" class="sim-marker"/><text x="156" y="92" text-anchor="middle">測試點</text><text x="192" y="112" text-anchor="middle">邊界</text></svg></figure>` : "";
+    return `<section class="sim-design sim-design-visual-first" data-design-type="${esc(design.type)}">
+      <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>${esc(design.predictionPrompt)}</p><button type="button" data-design-action="submit-prediction">${predicted ? "已鎖定預測" : "我已完成預測，開始操作"}</button></div>
+      <figure class="sim-design-map"><svg viewBox="0 0 640 180" role="img" aria-label="本單元四步證據路徑">${links}${nodes}</svg><figcaption>${predicted ? "點選節點逐步操作；每一步都必須回到圖像或數據證據。" : "先在心中或紙上做出預測；後續證據節點暫時鎖定。"}</figcaption></figure>
+      ${solutionSetVisual}
+      <fieldset class="sim-design-workbench" ${predicted ? "" : "disabled"}><legend>2. 操作與證據</legend>
+        <div class="sim-design-steps" role="group" aria-label="單元探索步驟">${design.steps.map((item,index) => `<button type="button" data-design-step="${index}" ${index === current ? 'aria-current="step"' : ""}>步驟 ${index+1}</button>`).join("")}</div>
+        <div class="sim-design-evidence" aria-live="polite"><p class="sim-design-equation">${esc(step.equation)}</p><p><b>操作：</b>${esc(step.action)}</p><p><b>為什麼：</b>${esc(step.reason)}</p><p class="sim-design-feedback">${esc(step.feedback)}</p></div>
+      </fieldset>
+      <div class="sim-evidence-card"><p><b>3. 用證據說明</b></p><p>${esc(design.evidencePrompt)}</p></div>
+    </section>`;
   };
   const renderModel = (lesson, state) => {
     if (window.MathVisualLabs?.supports(lesson.simulation.engine, lesson.simulation.model)) return window.MathVisualLabs.render(lesson, state);
@@ -736,6 +755,8 @@
     if (ecoScale) { update(root, { scale: ecoScale.dataset.ecoScale }); return; }
     const atmoScenario = event.target.closest("[data-atmo-scenario]");
     if (atmoScenario) { update(root, { profileScenario: atmoScenario.dataset.atmoScenario }); return; }
+    const designAction = event.target.closest("[data-design-action]");
+    if (designAction?.dataset.designAction === "submit-prediction") { update(root, { designPredictionSubmitted: true, designStep: 0 }); return; }
     const designStep = event.target.closest("[data-design-step]");
     if (designStep) { update(root, { designStep: Number(designStep.dataset.designStep) }); return; }
     const relation = event.target.closest("[data-inequality-relation]");
