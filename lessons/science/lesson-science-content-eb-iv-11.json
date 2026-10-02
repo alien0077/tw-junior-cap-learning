@@ -336,7 +336,7 @@
     "id": "sim-science-eb-iv-11",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-11-impulse",
     "goal": "操作質量、初末速度、平均力與作用時間，建立 J=FΔt=Δp 並辨識方向與平均值。",
     "mission": "你是碰撞安全測試員，請讓小車從指定速度停下，先預測動量改變，再用不同緩衝時間比較平均力。",
     "learningDesign": {
@@ -383,6 +383,19 @@
       "https://nanidigi.nani.com.tw/",
       "https://digitalmaster.knsh.com.tw/all/video/j/nature.html",
       "https://material.hle.com.tw/"
-    ]
+    ],
+    "visualContract": {
+      "primaryVisual": "force-time-area-plus-velocity-vectors",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "mass",
+        "initialVelocity",
+        "force",
+        "duration"
+      ],
+      "transferScenario": "airbag-stop-time"
+    }
   }
 }
