@@ -14,6 +14,8 @@ MATH_ENGINES = {
     "math-number-line",
     "math-inequality-range",
     "math-algebra-balance",
+    "math-visual-area",
+    "math-factor-model",
     "math-ticket-equation",
     "math-equation-meaning",
     "math-reasoning-lab",
