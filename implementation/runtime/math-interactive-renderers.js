@@ -434,7 +434,55 @@ function mountNumberLineLab({ document, root, block, spec }) {
   return lab;
 }
 
-function mountStepwiseLab({ document, root, block }) {
+
+function mountFactorizationLab({ document, root, block, spec }) {
+  const store=storageFor(block.id), prior=store?.get()||{};
+  const broad=spec?.lessonId==="cur-math-content-a-8-5";
+  const state={choice:String(prior.choice||""),transfer:String(prior.transfer||"")};
+  const {lab,status}=makeLab(document,block,broad?"因式分解結構探索臺":"因式與乘回驗證臺");
+  lab.classList.add("math-factor-lab");
+  const intro=document.createElement("p");
+  intro.innerHTML="<strong>先找兩項真正共有的材料。</strong> 因式分解不是在式子外面硬加括號，而是把乘法結構找回來。";
+  const board=document.createElement("div"); board.className="math-factor-board";
+  const row=(title,tokens,common)=>{
+    const r=document.createElement("div");r.className="math-factor-row";
+    const h=document.createElement("strong");h.textContent=title;
+    const ts=document.createElement("div");ts.className="math-factor-tokens";
+    tokens.forEach((t,i)=>{const n=document.createElement("span");n.textContent=t;n.className="math-factor-token"+(common.includes(i)?" is-common":"");ts.append(n);});
+    r.append(h,ts);return r;
+  };
+  board.append(row("12x²",["2","2","3","x","x"],[0,2,3]),row("18x",["2","3","3","x"],[0,1,3]));
+  const common=document.createElement("p");common.className="math-factor-common";common.innerHTML="兩列共同：<strong>2 × 3 × x = 6x</strong>";board.append(common);
+  const question=document.createElement("fieldset");const legend=document.createElement("legend");legend.textContent="預測：最大共同因式是什麼？";question.append(legend);
+  const feedback=document.createElement("p");feedback.setAttribute("aria-live","polite");
+  const evidence=document.createElement("div");evidence.className="math-factor-evidence";evidence.hidden=true;
+  const choices=[["6","6"],["6x","6x"],["12x","12x"]];
+  for(const [v,label] of choices){const b=document.createElement("button");b.type="button";b.textContent=label;b.setAttribute("aria-pressed",String(state.choice===v));b.addEventListener("click",()=>{
+    state.choice=v;store?.set(state);question.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+    evidence.hidden=false;
+    if(v==="6x"){feedback.textContent="正確。數字共同 2×3，字母共同至少一個 x，所以最大共同因式是 6x。";evidence.innerHTML="<strong>逐項相除：</strong> 12x²÷6x=2x；18x÷6x=3。<br><strong>乘回：</strong>6x(2x+3)=12x²+18x。";}
+    else if(v==="6"){feedback.textContent="6 可以提出，但還漏掉兩項共同的 x。看兩列 token，x 也各至少出現一次。";evidence.textContent="候選 6 不是最大共同因式；提出後仍有共同 x。";}
+    else {feedback.textContent="12x 不能整除 18x 成整式係數。候選因式必須能逐項相除。";evidence.textContent="用逐項相除檢查候選，比看外觀可靠。";}
+  });question.append(b);}
+  const method=document.createElement("section");method.className="math-factor-method";
+  if(broad){
+    const h=document.createElement("h5");h.textContent="第二層：提出共同因式後，再看剩式";
+    const grid=document.createElement("div");grid.className="math-factor-method-grid";
+    [["共同因式","先提出，再看括號內是否還能分解。"],["平方差","A²−B² 才能變成 (A−B)(A+B)。"],["三項式","同時檢查乘積與交叉和，最後乘回。"]].forEach(([a,b])=>{const x=document.createElement("article");x.innerHTML=\`<strong>\${a}</strong><p>\${b}</p>\`;grid.append(x);});
+    method.append(h,grid);
+  }
+  const transfer=document.createElement("fieldset");const tl=document.createElement("legend");tl.textContent="遷移：15x²y−10xy² 的最大共同因式？";transfer.append(tl);
+  const tf=document.createElement("p");tf.setAttribute("aria-live","polite");
+  [["5","5"],["5x","5x"],["5xy","5xy"]].forEach(([v,label])=>{const b=document.createElement("button");b.type="button";b.textContent=label;b.addEventListener("click",()=>{state.transfer=v;store?.set(state);tf.textContent=v==="5xy"?"正確。係數共同 5，x、y 都取共同最低次方 1，所以 15x²y−10xy²=5xy(3x−2y)。":"再把係數、x、y 分三欄比較；每一欄都要取兩項共有的部分。";});transfer.append(b);});
+  transfer.append(tf);
+  lab.append(intro,board,question,feedback,evidence,method,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  status.textContent="用共同 token → 逐項相除 → 完整乘回，三層證據確認因式。";
+  return lab;
+}
+
+function mountStepwiseLab({ document, root, block, spec }) {
+  if (spec?.lessonId === "cur-math-content-a-8-4" || spec?.lessonId === "cur-math-content-a-8-5") return mountFactorizationLab({ document, root, block, spec });
   const { lab, status } = makeLab(document, block, "步驟推理可視化檢核");
   const stages = block.guidedActivity?.stages || [];
   const list = document.createElement("ol");
