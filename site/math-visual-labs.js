@@ -96,8 +96,66 @@
   const factorRow = (title,tokens,common) =>
     '<div class="mvl-factor-row"><strong>'+esc(title)+'</strong><div class="mvl-token-row">'+tokens.map((t,i)=>'<span class="mvl-token '+(common.includes(i)?'is-common':'')+'">'+esc(t)+'</span>').join("")+'</div></div>';
 
+  const factorMeaningSvg = x => {
+    const unit=28, ox=36, oy=42, xp=x*unit, five=5*unit, two=2*unit;
+    const cell=(rx,ry,w,h,label,klass) =>
+      '<rect x="'+rx+'" y="'+ry+'" width="'+w+'" height="'+h+'" class="'+klass+'"/>'+
+      '<text x="'+(rx+w/2)+'" y="'+(ry+h/2)+'" class="mvl-region-label">'+label+'</text>';
+    return '<svg viewBox="0 0 356 286" role="img" aria-label="x 加 2 乘 x 加 5 的四格面積模型，x 等於 '+x+'">'+
+      cell(ox,oy,xp,xp,'x²','mvl-a2')+
+      cell(ox+xp,oy,five,xp,'5x','mvl-ab')+
+      cell(ox,oy+xp,xp,two,'2x','mvl-addback')+
+      cell(ox+xp,oy+xp,five,two,'10','mvl-b2')+
+      '<text x="'+(ox+(xp+five)/2)+'" y="24" class="mvl-dim">x + 5</text>'+
+      '<text x="14" y="'+(oy+(xp+two)/2)+'" class="mvl-dim" transform="rotate(-90 14 '+(oy+(xp+two)/2)+')">x + 2</text>'+
+      '<text x="178" y="270" class="mvl-dim">四格全部乘回，才算完整驗證</text>'+
+      '</svg>';
+  };
+
+  const renderFactorMeaning = (lesson,state) => {
+    const x=Math.max(1,Math.min(5,Number(state.factorMeaningX||2)));
+    const candidate=Number(state.candidateFactor||0);
+    const transfer=Number(state.factorMeaningTransfer||0);
+    const candidates={
+      1:{label:'(x+2)(x+5)',expanded:'x² + 7x + 10',ok:true},
+      2:{label:'(x+1)(x+6)',expanded:'x² + 7x + 6',ok:false},
+      3:{label:'(x+3)(x+4)',expanded:'x² + 7x + 12',ok:false}
+    };
+    const pick=candidates[candidate];
+    const feedback=!pick
+      ? '先預測哪一組因式與商式能完整乘回原多項式；不要只看中間項。'
+      : pick.ok
+        ? '成立。四個乘積 x²、5x、2x、10 全部對回原式，7x 來自兩個交叉區。'
+        : '不成立。它雖然也得到 7x，但常數項不同；只核對部分係數不能證明是因式。';
+    const transferFeedback=!transfer
+      ? '換一個多項式：同時找「常數乘積」與「交叉和」兩個證據。'
+      : transfer===1
+        ? '正確：3×5=15，而且 3+5=8；完整乘回就是 x²+8x+15。'
+        : '再乘回四格。常數乘積與兩個交叉項的和必須同時吻合。';
+    return '<section class="mvl mvl-factor-meaning" aria-label="因式與商式完整乘回視覺模型">'+
+      '<div class="mvl-task"><span class="mvl-step">1 先看乘法結構</span><strong>x² + 7x + 10 可以寫成哪兩個一次式相乘？</strong><p>因式不是看起來像就算；要能完整乘回。</p></div>'+
+      '<div class="mvl-layout"><figure class="mvl-visual">'+factorMeaningSvg(x)+
+      '<figcaption>x='+x+' 時，(x+2)(x+5)='+(x+2)*(x+5)+'；圖形仍由 x²、5x、2x、10 四區組成。</figcaption></figure>'+
+      '<div class="mvl-panel">'+
+      range('factorMeaningX','觀察 x',x,1,5)+
+      select('candidateFactor','先預測候選乘積',candidate,[[0,'先選一組'],[1,'(x+2)(x+5)'],[2,'(x+1)(x+6)'],[3,'(x+3)(x+4)']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(feedback)+'</p>'+
+      (pick?'<div class="mvl-equation"><span>完整乘回</span><strong>'+esc(pick.label)+' = '+esc(pick.expanded)+'</strong>'+
+        (pick.ok?'<p>x·x + x·5 + 2·x + 2·5 = x² + 5x + 2x + 10。</p>':'<p>與 x² + 7x + 10 逐項比較，至少有一項不同，因此排除。</p>')+
+      '</div>':'')+
+      '</div></div>'+
+      '<div class="mvl-transfer"><span class="mvl-step">2 遷移</span><strong>x² + 8x + 15</strong>'+
+      select('factorMeaningTransfer','哪一組完整乘回？',transfer,[[0,'先預測'],[1,'(x+3)(x+5)'],[2,'(x+1)(x+15)'],[3,'(x+2)(x+6)']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(transferFeedback)+'</p>'+
+      (transfer===1?'<div class="mvl-equation"><strong>(x+3)(x+5)=x²+8x+15</strong><p>交叉項 5x+3x=8x；常數 3×5=15。</p></div>':'')+
+      '</div>'+
+      '<details class="mvl-evidence"><summary>如何排除「看起來很像」的候選？</summary><p>完整乘回並逐項比較。單一代值不相等可否定候選；但單一代值剛好相等，仍不能取代恆等式的完整乘回證據。</p></details>'+
+      '</section>';
+  };
+
   const renderFactor = (lesson,state) => {
     const model=lesson.simulation.model;
+    if(model==='a-8-4-factor-meaning-v1') return renderFactorMeaning(lesson,state);
     const broad=model==='a-8-5-factorization-v1';
     const candidate=Number(state.commonFactor||0);
     const correct=2;
@@ -127,7 +185,9 @@
   const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model';
   const defaults = (engine,model) => engine==='math-visual-area'
     ? {a:4,b:2,formulaMode:0,prediction:0,transferA:5,transferB:1,transferPrediction:0}
-    : {commonFactor:0,factorTransfer:0};
+    : model==='a-8-4-factor-meaning-v1'
+      ? {factorMeaningX:2,candidateFactor:0,factorMeaningTransfer:0}
+      : {commonFactor:0,factorTransfer:0};
   const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : '因式結構探索臺';
   const render = (lesson,state) => lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : renderFactor(lesson,state);
   window.MathVisualLabs={supports,defaults,label,render};
