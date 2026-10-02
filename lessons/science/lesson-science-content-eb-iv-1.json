@@ -339,7 +339,7 @@
     "id": "sim-science-eb-iv-1",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-1-torque-balance",
     "goal": "透過紙尺與支點模型，分辨合力造成的平移效果和力矩造成的轉動效果。",
     "mission": "你要讓一把紙尺在支點上保持水平。請依序判斷力的作用線、力臂、順逆時針力矩與合力，並用證據修正預測。",
     "sourceRefs": [
@@ -384,6 +384,19 @@
           "feedback": "完成雙重檢查後，用兩句話分別回答『為什麼不轉』和『為什麼不走』，並寫出本模型未包含的限制。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "pivoted-ruler-force-diagram",
+      "directManipulation": [
+        "leftForce",
+        "leftArm",
+        "rightForce",
+        "rightArm"
+      ],
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "transferScenario": "wrench-lever-arm",
+      "visualFirst": true
     }
   }
 }
