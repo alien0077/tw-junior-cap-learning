@@ -114,3 +114,6 @@
 @media(max-width:760px){.lvo-flow{display:grid;grid-template-columns:1fr;gap:6px}.lvo-arrow{justify-self:center;transform:rotate(90deg)}.lesson-visual-overview{padding:11px}.lesson-detail,.lesson-sections,.lesson-sections article{min-width:0;max-width:100%;overflow-wrap:anywhere}.lesson-detail{overflow-x:hidden}}
 
 .activity-step-visual{display:grid;grid-template-columns:auto minmax(0,1fr);align-items:start;gap:10px;min-width:0}.activity-step-visual p{margin:.25rem 0;overflow-wrap:anywhere}@media(max-width:420px){.activity-step-visual{grid-template-columns:auto minmax(0,1fr)}}
+
+/* Phone layout: tables wrap inside cards instead of exposing a horizontal drag track. */
+@media(max-width:760px){.sim-table-wrap{max-width:100%;overflow-x:visible}.sim-table-wrap table{width:100%;max-width:100%;table-layout:fixed}.sim-table-wrap th,.sim-table-wrap td{white-space:normal;overflow-wrap:anywhere;word-break:break-word}.activity,.simulation,.lesson-visual-overview{width:100%;max-width:100%;box-sizing:border-box}}
