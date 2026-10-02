@@ -21,7 +21,7 @@ unitImplementationSpec:
   interactiveBlocks:
   - id: CUR-MATH-LINEAR-EQUATION-CHECK-I01
     component: AlgebraBalanceBlock
-    purpose: 保留2(x+3)=14的等價變形，再以左右值驗證x=4並遷移至費用方程式
+    purpose: 以專屬一次方程式驗算模型保留 2(x+3)=14 的整體同除、同減與代回原式，並遷移到 15x+80=170 的生活費用驗算
     studentActions:
     - 兩邊同除2得到x+3=7
     - 兩邊同減3得到x=4
@@ -32,6 +32,17 @@ unitImplementationSpec:
       trigger: 只檢查整理後最後一行或代回左右不等
       prompt: 回到原方程式，分別算左值與右值，再定位括號、符號、移項或除法錯誤。
       expectedEvidence: x=4時2(4+3)=14；費用題x=6時15×6+80=170
+  mobileA11y:
+    breakpoints:
+    - 320
+    - 375
+    - 390
+    - 430
+    - 768
+    touchTargetMinPx: 44
+    keyboardAlternative: true
+    screenReader: 原式、等價變形、候選值左右比較與遷移結果均有文字
+    reducedMotion: 不依賴動畫
   testCases:
   - 2(x+3)=14須保留x+3=7與x=4兩步並代回原式
   - 故意錯誤候選值不得以修改答案方式讓等式成立
@@ -40,7 +51,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - locator: A-7-3 lineage；lesson studyReferences 與 simulation sourceRefs
     role: curriculum-and-lesson-evidence
