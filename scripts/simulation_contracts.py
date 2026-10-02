@@ -17,6 +17,7 @@ MATH_ENGINES = {
     "math-visual-area",
     "math-polynomial-model",
     "math-system-model",
+    "math-quadratic-model",
     "math-factor-model",
     "math-ticket-equation",
     "math-equation-meaning",
