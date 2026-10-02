@@ -128,6 +128,30 @@
       .math-poly-grid { grid-template-columns: 48px repeat(2,minmax(0,1fr)); }
       .math-poly-grid > * { min-height: 46px; padding: .2rem; }
     }
+    .math-system-intersection-lab, .math-system-elimination-lab { border: 2px solid #475569; border-radius: 16px; padding: 1rem; background: #fbfdff; }
+    .math-system-intersection-lab fieldset, .math-system-elimination-lab fieldset { display: flex; flex-wrap: wrap; gap: .55rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; }
+    .math-system-intersection-lab legend, .math-system-elimination-lab legend { font-weight: 800; padding: 0 .35rem; }
+    .math-system-candidate { display: grid; gap: .7rem; }
+    .math-system-pair { display: grid; grid-template-columns: 1fr auto 1fr auto; gap: .5rem; align-items: center; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; background: #f8fafc; }
+    .math-system-pair strong { display: grid; place-items: center; min-width: 48px; min-height: 48px; border: 2px solid #64748b; border-radius: 10px; background: white; }
+    .math-system-cards { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .65rem; }
+    .math-system-card { border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; background: white; }
+    .math-system-result { min-height: 2.2em; padding: .5rem; border-radius: 8px; background: #f8fafc; }
+    .math-system-stack { display: grid; gap: .4rem; max-width: 560px; width: 100%; margin: auto; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; background: #f8fafc; }
+    .math-system-stack > div { display: grid; grid-template-columns: 1fr 32px 1fr 32px 1fr; gap: .35rem; align-items: center; text-align: center; }
+    .math-system-stack > div > * { min-height: 44px; display: grid; place-items: center; border: 1px solid #cbd5e1; border-radius: 8px; background: white; }
+    .math-system-stack .math-system-operation { border-top: 3px solid #475569; padding-top: .45rem; }
+    .math-system-stack .math-system-operation.is-pending { display: block; padding: .7rem; text-align: center; }
+    @media (max-width: 480px) {
+      .math-system-intersection-lab, .math-system-elimination-lab { padding: .65rem; }
+      .math-system-intersection-lab fieldset, .math-system-elimination-lab fieldset { display: grid; grid-template-columns: 1fr; }
+      .math-system-intersection-lab fieldset button, .math-system-elimination-lab fieldset button { width: 100%; }
+      .math-system-cards { grid-template-columns: 1fr; }
+      .math-system-pair { grid-template-columns: 1fr auto; }
+      .math-system-stack { padding: .45rem; }
+      .math-system-stack > div { grid-template-columns: 1fr 22px 1fr 22px 1fr; font-size: .9rem; }
+      .math-system-stack > div > * { min-height: 42px; padding: .15rem; }
+    }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
   </style>
 </head>
