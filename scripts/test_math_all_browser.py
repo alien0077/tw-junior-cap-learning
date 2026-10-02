@@ -30,6 +30,8 @@ SUPPORTED_ENGINES = {
     "math-number-line",
     "math-inequality-range",
     "math-algebra-balance",
+    "math-visual-area",
+    "math-factor-model",
     "math-ticket-equation",
     "math-equation-meaning",
     "math-reasoning-lab",
@@ -40,7 +42,7 @@ SUPPORTED_ENGINES = {
     "math-data-lab",
     "math-probability-lab",
 }
-VIEWPORTS = (320, 375, 768)
+VIEWPORTS = (320, 375, 390, 430, 768)
 
 
 def load_lessons() -> list[dict[str, Any]]:
@@ -165,6 +167,17 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
         await require_count(sim, '[role="img"]', 1, "inequality number line missing")
         await require_count(sim, '[data-inequality-relation]', 4, "inequality relation controls missing")
         await require_count(sim, '[data-sim-control="boundary"]', 1, "inequality boundary slider missing")
+    elif engine == "math-visual-area":
+        await require_count(sim, ".mvl-area", 1, "visual area renderer missing")
+        await require_count(sim, '[role="img"]', 1, "area-model SVG missing")
+        await require_count(sim, '[data-sim-control="formulaMode"]', 1, "formula-mode control missing")
+        await require_count(sim, '[data-sim-control="prediction"]', 1, "prediction control missing")
+        await require_count(sim, '[data-sim-control="transferPrediction"]', 1, "transfer control missing")
+    elif engine == "math-factor-model":
+        await require_count(sim, ".mvl-factor-board", 1, "factor-token visual missing")
+        await require_count(sim, ".mvl-token", 4, "factor tokens missing")
+        await require_count(sim, '[data-sim-control="commonFactor"]', 1, "common-factor prediction missing")
+        await require_count(sim, '[data-sim-control="factorTransfer"]', 1, "factor transfer missing")
     elif engine == "math-algebra-balance":
         await require_count(sim, ".balance", 1, "algebra balance visual missing")
         await require_count(sim, '[data-sim-control="addend"]', 1, "balance addend slider missing")
@@ -360,7 +373,7 @@ async def run(url: str, report_path: Path) -> dict[str, Any]:
                 "interactive control has an accessible name",
                 "keyboard action causes observable state change",
                 "engine/model-specific renderer depth",
-                "no horizontal overflow at 320/375/768px",
+                "no horizontal overflow at 320/375/390/430/768px",
                 "reduced-motion browser mode",
                 "zero page runtime errors",
             ],
