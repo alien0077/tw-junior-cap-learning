@@ -173,8 +173,8 @@ for (const [name, value] of Object.entries(problems)) {
   for (const issue of value) {
     const item = typeof issue === "string" ? { id: issue } : issue;
     const file = item.file ? `implementation/unit-specs/math/${item.file}` : "scripts/audit_math_coverage.mjs";
-    const detail = item.engine ? ` engine=${item.engine}` : item.model ? ` model=${item.model}` : item.qaStatus ? ` qaStatus=${item.qaStatus}` : "";
-    console.error(`::error file=${file}::${name}: ${item.id || "unknown"}${detail}`);
+    const detail = item.engine ? ` engine=${item.engine}` : item.model ? ` model=${item.model}` : item.qaStatus ? ` qaStatus=${item.qaStatus}` : item.simulationId ? ` simulationId=${item.simulationId} lessons=${(item.lessons || []).join(",")}` : "";
+    console.error(`::error file=${file}::${name}: ${item.id || item.simulationId || "unknown"}${detail}`);
   }
 }
 if (summary.lessonCount !== 129 || summary.questionCount !== 1290 || summary.specs !== 125) {
