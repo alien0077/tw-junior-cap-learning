@@ -107,7 +107,7 @@ const productionModelRendererSignatures = new Map([
   ["n-7-7-scientific-place-value-v1", ["n77Place","mnf-place"]],
   ["n-7-8-ratio-table-v1", ["n78Scale","mnf-table"]],
   ["n-7-9-ratio-table-v1", ["n78Scale","mnf-table"]],
-  ["n-8-1-square-root-bracket-v1", ["n81Root","mnf-root-bar"]],
+  ["n-8-1-square-root-bracket-v1", ["n81Structure","mnf-root-structure"]],
   ["n-8-2-root-number-line-v1", ["n81Root","mnf-root-bar"]],
   ["n-8-3-radical-structure-v1", ["n81Root","mnf-root-bar"]],
   ["n-8-4-radical-operations-v1", ["n81Root","mnf-root-bar"]],
