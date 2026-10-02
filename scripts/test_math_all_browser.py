@@ -31,6 +31,7 @@ SUPPORTED_ENGINES = {
     "math-inequality-range",
     "math-algebra-balance",
     "math-visual-area",
+    "math-polynomial-model",
     "math-factor-model",
     "math-ticket-equation",
     "math-equation-meaning",
@@ -173,6 +174,21 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
         await require_count(sim, '[data-sim-control="formulaMode"]', 1, "formula-mode control missing")
         await require_count(sim, '[data-sim-control="prediction"]', 1, "prediction control missing")
         await require_count(sim, '[data-sim-control="transferPrediction"]', 1, "transfer control missing")
+    elif engine == "math-polynomial-model":
+        await require_count(sim, ".mvl-poly", 1, "polynomial visual workbench missing")
+        mode = sim.locator('[data-sim-control="polyMode"]')
+        await require_count(sim, '[data-sim-control="polyMode"]', 1, "polynomial mode control missing")
+        await require_count(sim, '[data-sim-control="polyTransfer"]', 1, "polynomial transfer missing")
+        await mode.select_option("0")
+        await require_count(sim, ".mvl-poly-subtract", 1, "subtraction visual missing")
+        await require_count(sim, '[data-sim-control="subtractPrediction"]', 1, "subtraction prediction missing")
+        await mode.select_option("1")
+        await require_count(sim, ".mvl-poly-multiply", 1, "multiplication grid missing")
+        await require_count(sim, '[data-sim-control="multiplyPrediction"]', 1, "multiplication prediction missing")
+        await mode.select_option("2")
+        await require_count(sim, ".mvl-poly-divide", 1, "division reconstruction visual missing")
+        await require_count(sim, '[data-sim-control="dividePrediction"]', 1, "division prediction missing")
+        await mode.select_option("0")
     elif engine == "math-factor-model":
         if model == "a-8-4-factor-meaning-v1":
             await require_count(sim, ".mvl-factor-meaning", 1, "factor-meaning renderer missing")
