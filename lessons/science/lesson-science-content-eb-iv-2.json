@@ -332,7 +332,7 @@
     "id": "sim-science-eb-iv-2",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-2-lever-balance",
     "goal": "操作紙尺模型，從作用線、力臂和力矩方向預測槓桿是否平衡。",
     "mission": "你是實驗小組的記錄員，要讓紙尺在鉛筆支點上維持指定姿勢；每一步只能改變一項條件，並用力矩數值和轉動方向解釋結果。",
     "sourceRefs": [
@@ -377,6 +377,18 @@
           "reason": "力矩平衡和合力平衡是不同檢查；分開寫出才能避免把不轉誤當成沒有受力。",
           "feedback": "用兩句話完成結論：第一句說明為何不轉，第二句說明合力與支持力是否足以讓物體不平移。"
         }
+      ]
+    },
+    "visualContract": {
+      "primaryVisual": "pivoted-lever-force-diagram",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "leftForce",
+        "leftArm",
+        "rightForce",
+        "rightArm"
       ]
     }
   }
