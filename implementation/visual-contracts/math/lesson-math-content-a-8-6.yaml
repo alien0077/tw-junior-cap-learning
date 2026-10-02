@@ -1,0 +1,52 @@
+lessonId: lesson-math-content-a-8-6
+subject: math
+knowledgeNodes:
+  - kg-math-content-a-8-6
+learningObjective: 先化簡辨認一元二次方程式，理解「解」是使原等式左右相等的候選值，並能由長方形量關係建立二次方程式；本課不提前執行完整求根。
+keyConcept: 是否為一元二次方程式要看化簡後的未知數種類、最高次與等號；候選值必須同時代入等號兩側驗證。
+priorKnowledge:
+  - 同類項合併
+  - 等式
+  - 長方形面積
+misconceptions:
+  - 原式看見 x² 就直接判為二次方程式
+  - 只算候選值代入等號左側
+  - 把「驗證一個候選」誤稱為「求出全部解」
+  - 把面積關係寫成長寬相加
+visual:
+  primaryType: quadratic-meaning-three-station
+  secondaryRepresentations:
+    - simplified-equation-card
+    - two-side-substitution-balance
+    - rectangle-area-model
+  firstFrame: 顯示原式 2x²+3x=x²+7x−4 與「先化簡再分類」提示，化簡答案先隱藏。
+  manipulables:
+    - quadMeaningMode
+    - quadClassify
+    - quadCandidate
+    - quadContextPrediction
+    - quadMeaningTransfer
+  dynamicChanges:
+    - 化簡後分類證據
+    - 候選值左右兩側數值
+    - 面積列式回饋
+  invariants:
+    - 同一候選值要同時套用在等號兩側
+interaction:
+  prediction: 每站先預測分類、候選值或面積關係，再揭示證據。
+  action: 切換三個互斥工作台；候選根站可調整 x，面積站選擇保留量義的方程式。
+  observation: 比較未知數是否在化簡後仍存在、左右值是否相等、長×寬是否對應面積。
+  evidencePrompt: 以化簡式、左右值或面積量義說明，不只給答案。
+  feedback: 直接指出未化簡、只算一側或把面積當相加等迷思。
+  retry: 每一站可重新預測或調整候選值。
+  transfer: 3x²+2x²=5x² 化簡成 0=0，辨認未知數消失。
+accessibility:
+  keyboardAlternative: mode/select/range 均可鍵盤操作。
+  nonDragAlternative: 不依賴 drag。
+  textAlternative: 視覺模型均有 aria-label，公式另以文字呈現。
+  reducedMotion: 無必要動畫。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
