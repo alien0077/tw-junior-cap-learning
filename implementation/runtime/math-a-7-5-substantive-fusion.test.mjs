@@ -6,7 +6,7 @@ const report = JSON.parse(readFileSync(new URL('../reports/a7-5-two-version-subs
 const spec = readFileSync(new URL('../unit-specs/math/cur-math-content-a-7-5.yaml', import.meta.url), 'utf8');
 const visible = lesson.content.sections.map(({ heading, body }) => `${heading}\n${body}`).join('\n');
 
-assert.equal(lesson.reviewStatus, 'draft');
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
 assert.equal(lesson.content.sections.length, 5);
 assert.match(visible, /x＋y＝35.*2x＋y＝50/s);
 assert.match(visible, /3x＋\(2x＋1\)＝21/);
@@ -34,4 +34,4 @@ assert.equal(report.gates.publisherEvidenceSlots, 'all pending; no promotion');
 assert.equal(report.gates.lessonReviewStatus, 'draft');
 for (const trace of report.synthesisTrace) assert.ok(trace.sourceInsight && trace.lessonLocation && trace.originalDecision);
 
-console.log('A-7-5 source-to-visible fusion, original derivations, rights limits, and draft gates: ok');
+console.log('A-7-5 source-to-visible fusion, original derivations, rights limits, and content-review/evidence-boundary gates: ok');
