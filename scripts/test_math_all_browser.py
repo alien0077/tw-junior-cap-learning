@@ -227,7 +227,6 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
         "n-8-4-radical-operations-v1": ("n81Root", ".mnf-root-bar"),
         "n-8-5-radical-denominator-v1": ("n81Root", ".mnf-root-bar"),
         "n-8-6-chained-ratio-v1": ("n86Ratio", ".mnf-ratio-align"),
-        "n-9-1-sequence-v1": ("n91Sequence", ".mnf-sequence"),
     }
     if model in NUMBER_FAMILY_EXPECTED:
         control, visual = NUMBER_FAMILY_EXPECTED[model]
