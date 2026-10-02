@@ -195,6 +195,23 @@
       .math-linear-chain, .math-linear-compare { grid-template-columns: 1fr; }
       .math-linear-chain b { border: none; background: transparent; min-height: auto; }
     }
+    .math-gold-signed-lab, .math-gold-function-lab, .math-gold-pythagorean-lab, .math-gold-boxplot-lab, .math-gold-probability-lab { border: 2px solid #475569; border-radius: 16px; padding: 1rem; background: #fbfdff; }
+    .math-gold-signed-lab fieldset, .math-gold-function-lab fieldset, .math-gold-pythagorean-lab fieldset, .math-gold-boxplot-lab fieldset, .math-gold-probability-lab fieldset { display: flex; flex-wrap: wrap; gap: .55rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; }
+    .math-gold-signed-lab legend, .math-gold-function-lab legend, .math-gold-pythagorean-lab legend, .math-gold-boxplot-lab legend, .math-gold-probability-lab legend { font-weight: 800; padding: 0 .35rem; }
+    .math-gold-operation-tree { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .65rem; }
+    .math-gold-operation-tree article { display: grid; gap: .35rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .7rem; background: white; }
+    .math-gold-operation-tree strong { font-size: 1.08rem; }
+    .math-gold-equation, .math-gold-transfer-note { border-left: 5px solid #475569; padding: .65rem .8rem; background: #f8fafc; }
+    .math-gold-stat-cards { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .65rem; }
+    .math-gold-stat-cards article { display: grid; gap: .3rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .7rem; background: white; }
+    .math-gold-prob-card { display: grid; gap: .4rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .8rem; background: white; }
+    .math-gold-prob-card strong { font-size: 1.25rem; }
+    @media (max-width: 480px) {
+      .math-gold-signed-lab, .math-gold-function-lab, .math-gold-pythagorean-lab, .math-gold-boxplot-lab, .math-gold-probability-lab { padding: .65rem; }
+      .math-gold-signed-lab fieldset, .math-gold-function-lab fieldset, .math-gold-pythagorean-lab fieldset, .math-gold-boxplot-lab fieldset, .math-gold-probability-lab fieldset { display: grid; grid-template-columns: 1fr; }
+      .math-gold-signed-lab fieldset button, .math-gold-function-lab fieldset button, .math-gold-pythagorean-lab fieldset button, .math-gold-boxplot-lab fieldset button, .math-gold-probability-lab fieldset button { width: 100%; }
+      .math-gold-operation-tree, .math-gold-stat-cards { grid-template-columns: 1fr; }
+    }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
   </style>
 </head>
