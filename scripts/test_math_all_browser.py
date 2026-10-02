@@ -32,6 +32,7 @@ SUPPORTED_ENGINES = {
     "math-algebra-balance",
     "math-visual-area",
     "math-polynomial-model",
+    "math-system-model",
     "math-factor-model",
     "math-ticket-equation",
     "math-equation-meaning",
@@ -189,6 +190,21 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
         await require_count(sim, ".mvl-poly-divide", 1, "division reconstruction visual missing")
         await require_count(sim, '[data-sim-control="dividePrediction"]', 1, "division prediction missing")
         await mode.select_option("0")
+    elif engine == "math-system-model":
+        if model == "a-7-4-system-meaning-v1":
+            await require_count(sim, ".mvl-system-meaning", 1, "system-meaning renderer missing")
+            await require_count(sim, ".mvl-system-cards", 1, "dual-condition cards missing")
+            await require_count(sim, '[data-sim-control="meaningPrediction"]', 1, "system-meaning prediction missing")
+            await require_count(sim, '[data-sim-control="systemX"]', 1, "system candidate control missing")
+            await require_count(sim, '[data-sim-control="systemMeaningTransfer"]', 1, "system-meaning transfer missing")
+        elif model == "a-7-5-system-elimination-v1":
+            await require_count(sim, ".mvl-system-elimination", 1, "system-elimination renderer missing")
+            await require_count(sim, ".mvl-system-stack", 1, "aligned equation stack missing")
+            await require_count(sim, '[data-sim-control="eliminationMethod"]', 1, "elimination prediction missing")
+            await require_count(sim, '[data-sim-control="eliminationBack"]', 1, "back-substitution control missing")
+            await require_count(sim, '[data-sim-control="eliminationTransfer"]', 1, "elimination transfer missing")
+        else:
+            raise AssertionError(f"renderer-depth rule missing for system model {model}")
     elif engine == "math-factor-model":
         if model == "a-8-4-factor-meaning-v1":
             await require_count(sim, ".mvl-factor-meaning", 1, "factor-meaning renderer missing")
