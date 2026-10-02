@@ -21,6 +21,7 @@
     if (engine === "science-motion-lab" && model === "ec-iv-2-boyle") return { gasVolume: 50, boylePrediction: "", predictionSubmitted: false, boyleFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-12-mass-inertia") return { cartMass: 2, pushForce: 4, pushTime: 2, massPrediction: "", predictionSubmitted: false, massFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-13-action-reaction") return { collisionForce: 5, systemBoundary: "separate", thirdPrediction: "", predictionSubmitted: false, thirdFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-3-static-equilibrium") return { loadForce: 40, loadArm: 1, cableForce: 40, cableArm: 1, verticalSupport: 0, equilibriumPrediction: "", predictionSubmitted: false, equilibriumFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -182,6 +183,16 @@
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
       </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-3-static-equilibrium") {
+      const load=clamp(Number(state.loadForce),10,80),arm=clamp(Number(state.loadArm),.5,2),cable=clamp(Number(state.cableForce),10,80),cArm=clamp(Number(state.cableArm),.5,2),support=clamp(Number(state.verticalSupport),0,80),cw=load*arm,ccw=cable*cArm,sumT=ccw-cw,sumF=cable+support-load,locked=!state.predictionSubmitted,angle=clamp(sumT/10,-12,12);
+      return `<section class="sim-equilibrium-lab" aria-label="合力與合力矩靜力平衡視覺實驗室"><div class="sim-visual-first"><figure class="sim-equilibrium-stage"><svg viewBox="0 0 700 340" role="img" aria-label="吊臂合力 ${sumF.toFixed(0)} 牛頓，合力矩 ${sumT.toFixed(0)} 牛頓公尺">
+      <g transform="translate(145 190) rotate(${angle})"><circle cx="0" cy="0" r="14" class="sim-fulcrum"/><line x1="0" y1="0" x2="390" y2="0" class="sim-beam"/><line x1="${arm*170}" y1="-10" x2="${arm*170}" y2="85" class="sim-force-arrow"/><text x="${arm*170+10}" y="78">↓負載 ${load}N</text><line x1="${cArm*170}" y1="5" x2="${cArm*170}" y2="-90" class="sim-force-arrow"/><text x="${cArm*170+8}" y="-72">↑拉索 ${cable}N</text></g>
+      <g transform="translate(75 55)"><text y="0">Στ = ${sumT.toFixed(0)} N·m</text><text y="34">ΣFy = ${sumF.toFixed(0)} N</text><text y="76">${Math.abs(sumT)<1?"✓ 不轉":"✗ 仍會轉"}</text><text y="108">${Math.abs(sumF)<1?"✓ 不平移":"✗ 仍會平移"}</text></g></svg><figcaption>完整靜力平衡必須同時通過兩道門：Στ=0 且 ΣF=0。</figcaption></figure>
+      <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>只把負載移得更遠，負載力矩會？</p><div class="sim-actions"><button data-equilibrium-action="predict" data-value="increase">增加</button><button data-equilibrium-action="predict" data-value="same">不變</button></div><button data-equilibrium-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.equilibriumFeedback||"先用 τ=F×d 判斷。")}</p></div></div>
+      <fieldset class="sim-equilibrium-controls" ${locked?"disabled":""}><legend>2. 分別調到不轉與不平移</legend>${slider("loadForce","負載",load,10,80,10," N")}${slider("loadArm","負載力臂",arm,.5,2,.25," m")}${slider("cableForce","拉索垂直分力",cable,10,80,10," N")}${slider("cableArm","拉索力臂",cArm,.5,2,.25," m")}${slider("verticalSupport","鉸接垂直支持力",support,0,80,10," N")}</fieldset>
+      <div class="sim-evidence-card"><p><b>3. 雙重證據</b></p><p>目前 Στ=${sumT.toFixed(0)} N·m、ΣFy=${sumF.toFixed(0)} N。${Math.abs(sumT)<1&&Math.abs(sumF)<1?"兩者皆為 0，才是完整靜力平衡。":"只讓其中一個歸零仍不夠；看圖找出另一個未通過的條件。"}</p></div>
+      <div class="sim-transfer-card"><p><b>4. 遷移：物體不轉是否代表一定靜止？</b></p><div class="sim-actions"><button data-equilibrium-action="transfer" data-value="no">不一定，還要 ΣF=0</button><button data-equilibrium-action="transfer" data-value="yes">一定</button></div><p role="status">${esc(state.transferFeedback||"區分轉動和平移。")}</p></div></section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-13-action-reaction") {
       const F=clamp(Number(state.collisionForce),1,10),together=state.systemBoundary==="together",locked=!state.predictionSubmitted,L=F*18;
@@ -624,6 +635,8 @@
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
     }
+    const equilibriumAction=event.target.closest("[data-equilibrium-action]");
+    if(equilibriumAction && lesson.simulation.model==="eb-iv-3-static-equilibrium"){const action=equilibriumAction.dataset.equilibriumAction,value=equilibriumAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{equilibriumPrediction:value,equilibriumFeedback:""});return;}if(action==="submit-prediction"){update(root,state.equilibriumPrediction?{predictionSubmitted:true,equilibriumFeedback:state.equilibriumPrediction==="increase"?"預測已記錄。只改負載力臂，觀察 Στ。":"預測已記錄。只改力臂，用 τ=Fd 檢查。"}:{equilibriumFeedback:"請先選擇預測。"});return;}if(action==="transfer"){update(root,value==="no"?{transferChoice:value,transferFeedback:"正確：Στ=0 只保證不產生角加速度；還需 ΣF=0 才能不平移。"}:{transferChoice:value,transferFeedback:"把 Στ 與 ΣF 兩個讀值分開檢查。"});return;}}
     const thirdAction=event.target.closest("[data-third-action]");
     if(thirdAction && lesson.simulation.model==="eb-iv-13-action-reaction"){const action=thirdAction.dataset.thirdAction,value=thirdAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{thirdPrediction:value,thirdFeedback:""});return;}if(action==="submit-prediction"){update(root,state.thirdPrediction?{predictionSubmitted:true,thirdFeedback:state.thirdPrediction==="equal"?"預測已記錄。調整接觸力，觀察兩支箭頭是否永遠成對。":"預測已記錄。觀察兩車箭頭數值，再分辨加速度差異。"}:{thirdFeedback:"請先選擇預測。"});return;}if(action==="boundary"){update(root,{systemBoundary:value});return;}if(action==="transfer"){update(root,value==="mass"?{transferChoice:value,transferFeedback:"正確：第三定律保證力對等大反向；第二定律說同一大小的力作用於不同質量可產生不同加速度。"}:{transferChoice:value,transferFeedback:"先看圖：兩支力箭頭的數值始終相同。"});return;}}
     const massInertiaAction=event.target.closest("[data-mass-inertia-action]");
