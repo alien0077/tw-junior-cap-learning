@@ -37,3 +37,28 @@
 .sim-eco-note{max-width:680px;margin:12px auto 0;text-align:left;line-height:1.6}
 
 .top-student-notes{margin-top:1rem;padding:1rem;border:1px solid #d5dfeb;border-radius:14px;background:#fbfcf5}.top-student-notes h4{margin:0 0 .5rem}.top-student-notes .memory-hook{font-weight:800;padding:.65rem .8rem;border-left:4px solid currentColor;background:#fff}.top-student-notes ul{margin:.35rem 0 .75rem;padding-left:1.3rem}.top-student-notes li+li{margin-top:.3rem}
+
+
+/* Visual-first science: Eb-IV-1 force / lever-arm / torque lab */
+.sim-torque-lab { display: grid; gap: 1rem; }
+.sim-visual-first { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(15rem, .8fr); gap: 1rem; align-items: stretch; }
+.sim-torque-stage, .sim-prediction-panel, .sim-evidence-card, .sim-transfer-card, .sim-torque-controls { margin: 0; border: 1px solid var(--border, #d7dce3); border-radius: 16px; padding: 1rem; background: var(--surface, #fff); }
+.sim-torque-stage svg { display: block; width: 100%; min-height: 250px; }
+.sim-torque-stage figcaption { text-align: center; font-size: 1.05rem; margin-top: .4rem; }
+.sim-beam { fill: #d9b36c; stroke: currentColor; stroke-width: 2; }
+.sim-fulcrum { fill: #d8dee9; stroke: currentColor; stroke-width: 2; }
+.sim-force-arrow { stroke: currentColor; stroke-width: 4; }
+.sim-measure { stroke: currentColor; stroke-width: 2; stroke-dasharray: 5 4; }
+.sim-torque-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem 1rem; }
+.sim-torque-controls > p { grid-column: 1 / -1; margin: 0; }
+.sim-torque-controls:disabled { opacity: .58; }
+.sim-prediction-panel .sim-actions, .sim-transfer-card .sim-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.sim-prediction-panel button[aria-pressed="true"], .sim-transfer-card button[aria-pressed="true"] { outline: 3px solid currentColor; outline-offset: 2px; }
+@media (max-width: 720px) {
+  .sim-visual-first { grid-template-columns: 1fr; }
+  .sim-torque-controls { grid-template-columns: 1fr; }
+  .sim-torque-stage svg { min-height: 210px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sim-torque-lab *, .sim-torque-lab *::before, .sim-torque-lab *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}
