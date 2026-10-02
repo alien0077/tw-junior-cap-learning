@@ -336,7 +336,7 @@
     "id": "sim-science-eb-iv-8",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-8-motion-graph",
     "goal": "操作一條含停留與折返的校園路線，依時間序列、座標和計算分辨路程、位移、平均速率與平均速度。",
     "mission": "你是校園運動紀錄員：把小車在東西向走廊的每次位置變化記下來，最後向裁判報告它走了多遠、離起點多遠，以及平均運動情形。",
     "sourceRefs": [
@@ -382,6 +382,18 @@
           "feedback": "先確認題目問的是速率還是速度，再決定分子；答案應包含 m/s，速度還需寫向東或向西等方向。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "route-plus-position-time-graph",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "eastDistance",
+        "westDistance",
+        "stopTime"
+      ],
+      "transferScenario": "return-to-origin"
     }
   }
 }
