@@ -329,7 +329,7 @@
     "id": "sim-science-fa-iv-1",
     "engine": "science-earth-space",
     "mode": "model",
-    "model": "general",
+    "model": "fa-iv-1-earth-spheres",
     "goal": "透過山坡—溪流—河口模型追蹤水圈與岩石圈的物質交換，並用資料檢查解釋。",
     "mission": "分析山區暴雨後的溪流剖面，把雲雨、水流、岩屑和河口沉積物放回同一地球系統模型。",
     "sourceRefs": [
@@ -373,6 +373,16 @@
           "feedback": "若要提出長期地形結論，請補上多場降雨、季節、河口沉積厚度與流域土地利用資料，並把目前結論限縮在測量範圍。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "layered-earth-spheres",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "sphereView"
+      ],
+      "transferScenario": "volcano-cross-sphere"
     }
   }
 }
