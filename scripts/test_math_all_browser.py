@@ -284,6 +284,18 @@ async def run(url: str, report_path: Path) -> dict[str, Any]:
         await page.emulate_media(reduced_motion="reduce")
         await page.goto(url, wait_until="networkidle")
         await page.locator("#search").wait_for()
+        status = page.locator("#status")
+        await status.wait_for(state="visible", timeout=10_000)
+        await page.wait_for_function(
+            """() => {
+              const value = document.querySelector('#status')?.textContent || '';
+              return value.includes('資料載入完成') || value.includes('資料載入失敗');
+            }""",
+            timeout=30_000,
+        )
+        status_text = (await status.inner_text()).strip()
+        if "資料載入完成" not in status_text:
+            raise AssertionError(f"public site data did not initialize: {status_text}")
 
         for index, lesson in enumerate(lessons, start=1):
             try:
