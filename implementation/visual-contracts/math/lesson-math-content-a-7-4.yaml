@@ -1,0 +1,51 @@
+lessonId: lesson-math-content-a-7-4
+subject: math
+knowledgeNodes:
+  - kg-math-content-a-7-4
+learningObjective: 理解聯立方程式的解是同一組有序數對同時滿足兩條方程式，而不是只滿足其中一式。
+keyConcept: 共同解 = 同一候選通過兩個獨立限制；x、y 的順序與情境定義也是解的一部分。
+priorKnowledge:
+  - 二元一次方程式
+  - 有序數對
+  - 代入檢查
+misconceptions:
+  - 只滿足第一式就稱為聯立解
+  - 將 x、y 對調仍認為情境不變
+  - 只看圖上的位置，不逐式代入
+visual:
+  primaryType: synchronized-dual-condition-cards
+  secondaryRepresentations:
+    - ordered-pair
+    - substitution-results
+    - constraint-status
+  firstFrame: 候選 (10,8) 與兩張限制卡並列，計算結果先隱藏，要求學生先預測會通過哪幾張卡。
+  manipulables:
+    - meaningPrediction
+    - systemX
+    - systemMeaningTransfer
+  dynamicChanges:
+    - x
+    - y
+    - 第一式計算
+    - 第二式計算
+    - 共同解狀態
+  invariants:
+    - x+y=18 在主操作中保持成立
+interaction:
+  prediction: 先判斷 (10,8) 是共同解、只通過第一式或只通過第二式。
+  action: 調整 x，y 自動維持 x+y=18，再觀察第二條限制是否同時成立。
+  observation: 只有 x=12、y=6 時兩張卡同時顯示通過。
+  evidencePrompt: 分別寫出 x+y 與 2x+y 的代入結果。
+  feedback: 明確指出目前只通過哪一條式，不以顏色單獨判斷。
+  retry: 可繼續調整候選直到兩條限制同時成立。
+  transfer: 對 x+y=25、2x+y=46 驗證 (21,4)，並保留變數順序。
+accessibility:
+  keyboardAlternative: prediction/select 與 x range 可鍵盤操作。
+  nonDragAlternative: 不要求拖曳。
+  textAlternative: 每張條件卡都有等式、代入值與通過/未通過文字。
+  reducedMotion: 不依賴動畫。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
