@@ -14,7 +14,7 @@ for subject in SUBJECTS:
         simulation=data.get("simulation")
         if subject in {"math","science"}:
             if isinstance(simulation,dict):
-                semantic=bool(simulation.get("visualContract") or simulation.get("learningDesign") or any(k in simulation for k in ("prismModel","similarityModel","ticketEquation","equationMeaning")))
+                semantic=bool(simulation.get("visualContract") or simulation.get("learningDesign") or (simulation.get("model") and simulation.get("model") != "general") or any(k in simulation for k in ("prismModel","similarityModel","ticketEquation","equationMeaning")))
                 if semantic:
                     covered[subject]+=1
                 else:
