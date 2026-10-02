@@ -9,7 +9,7 @@ assert.equal(sections.length, 3, 'A-7-3 must expose its three authored teaching 
 assert.match(sections[0].body, /固定費|只付一次/);
 assert.match(sections[1].body, /兩邊同減|移項變號/);
 assert.match(sections[2].body, /同乘6|代回原式/);
-assert.equal(lesson.reviewStatus, 'draft', 'publisher/content gates must not be bypassed');
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
 assert.equal(report.lessonId, lesson.id);
 assert.equal(report.gates.naniPublisherTextbookBody, 'not read');
 assert.equal(report.gates.kanghsuanPublisherTextbookBody, 'not read');
@@ -22,4 +22,4 @@ for (const trace of report.synthesisTrace) {
   assert.ok(trace.sourceInsight && trace.lessonLocation && trace.originalDecision, 'every fusion trace needs source, visible destination, and an original instructional decision');
 }
 
-console.log('A-7-3 substantive fusion trace, visible teaching, and draft gates: ok');
+console.log('A-7-3 substantive fusion trace, visible teaching, and content-review/evidence-boundary gates: ok');
