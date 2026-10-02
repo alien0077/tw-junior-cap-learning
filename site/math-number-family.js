@@ -1,7 +1,6 @@
 /* Phase-2 Number family semantic renderers. */
 (() => {
-  const base = window.MathVisualLabs;
-  if (!base) return;
+  const registry = window.MathSemanticFamilies ||= {};
   const h=(tag,attrs={},...kids)=>{const n=document.createElement(tag);for(const [k,v] of Object.entries(attrs)){if(k==="class")n.className=v;else n.setAttribute(k,v);}for(const kid of kids)if(kid!=null)n.append(kid.nodeType?kid:document.createTextNode(String(kid)));return n;};
   const card=(a,b)=>h("article",{class:"mnf-card"},h("strong",{},a),h("span",{},b));
   const select=(name,label,opts)=>{const s=h("select",{"data-sim-control":name});for(const [v,t] of opts)s.append(h("option",{value:v},t));return [h("label",{class:"mnf-control"},h("span",{},label),s),s];};
@@ -20,6 +19,5 @@
   function likeTerms(c){const r=mount(c,"同類項分類：先看字母與次方","係數可以相加，前提是字母部分完全相同。");const [w,s]=select("a71Choice","哪些可和3x合併？",[[0,"先選"],[1,"5x"],[2,"5x²"],[3,"5"]]);r.append(w);const g=h("div",{class:"mnf-structure",role:"img","aria-label":"同類項分類卡"},card("3x","x 的一次項"),card("5x","x 的一次項"),card("2","常數項"),card("−7","常數項"));r.append(g);const e=h("p",{class:"mnf-evidence"},"先比字母部分，再處理係數。");r.append(e);s.addEventListener("change",()=>e.textContent=s.value==="1"?"3x與5x字母部分相同，可合成8x。":"次方不同或沒有x，就不是3x的同類項。");r.append(card("數值回查","x=−2 時，3x+2+5x−7 與8x−5都等於−21。"));}
   function balance(c){const r=mount(c,"等量天平：兩側同做同一件事","解方程式不是把項『搬過去變號』；每一步都要保持左右等量。");const [w,s]=select("a73Step","4x+3=27 第一步",[[0,"先選"],[1,"兩側都−3"],[2,"左邊−3、右邊不動"]]);r.append(w);const g=h("div",{class:"mnf-structure",role:"img","aria-label":"方程式等量天平"},card("左側","4x+3"),card("＝","保持平衡"),card("右側","27"));r.append(g);const e=h("p",{class:"mnf-evidence"},"任何操作都必須同時作用在等號兩側。");r.append(e);s.addEventListener("change",()=>{if(s.value==="1"){g.innerHTML="";g.append(card("左側","4x"),card("＝","保持平衡"),card("右側","24"));e.textContent="兩側同減3後仍相等；再兩側同除4得到x=6。";}else e.textContent="只改一側會破壞等量關係。";});r.append(card("代回","4×6+3=27，候選值通過原式。"));}
   const R={"a-7-1-like-terms-v1":likeTerms,"a-7-3-balance-equation-v1":balance,"n-7-1-sieve-v1":hundred,"n-7-2-factor-tree-v1":factor,"n-7-4-operation-laws-v1":laws,"n-7-5-signed-number-line-v1":line,"n-7-6-exponent-factors-v1":exponent,"n-7-7-scientific-place-value-v1":place,"n-7-8-ratio-table-v1":ratio,"n-7-9-ratio-table-v1":ratio,"n-8-1-square-root-bracket-v1":roots,"n-8-2-root-number-line-v1":roots,"n-8-3-radical-structure-v1":roots,"n-8-4-radical-operations-v1":roots,"n-8-5-radical-denominator-v1":roots,"n-8-6-chained-ratio-v1":chained,"n-9-1-sequence-v1":sequence,"n-9-1-series-v1":series};
-  const old=base.render;
-  base.render=function(container,simulation){const fn=R[simulation&&simulation.model];if(fn){fn(container,simulation);return true;}return old.call(base,container,simulation);};
+  Object.assign(registry,R);
 })();
