@@ -16,6 +16,8 @@ REPRESENTATIVE_UNITS = [
     "cur-chinese-content-a",
     "cur-english-content-a",
     "cur-math-content-a-7-2",
+    "cur-math-content-a-7-3",
+    "cur-math-content-f-8-2",
     "cur-math-content-a-7-1",
     "cur-math-content-a-7-7",
     "cur-math-content-a-7-8",
