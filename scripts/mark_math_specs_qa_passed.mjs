@@ -25,11 +25,11 @@ for (const file of files) {
   const match = original.match(/^([ \t]*qaStatus:\s*)([^\n#]+)(.*)$/m);
   if (!match) throw new Error(`${file}: missing qaStatus`);
   const current = match[2].trim().replace(/^['"]|['"]$/g, "");
-  if (!new Set(["untested", "passed"]).has(current)) {
+  if (!new Set(["untested", "verified"]).has(current)) {
     throw new Error(`${file}: unexpected qaStatus ${current}`);
   }
   if (current === "untested") {
-    const updated = original.replace(/^([ \t]*qaStatus:\s*)([^\n#]+)(.*)$/m, "$1passed$3");
+    const updated = original.replace(/^([ \t]*qaStatus:\s*)([^\n#]+)(.*)$/m, "$1verified$3");
     await writeFile(url, updated, "utf8");
     changed.push(file);
   }
@@ -40,7 +40,7 @@ const manifest = {
   generatedAt: browserReport.generatedAt,
   sourceCommit: browserReport.sourceCommit,
   browserReport: "implementation/reports/math-browser-qa-current.json",
-  qaStatus: "passed",
+  qaStatus: "verified",
   unitSpecCount: files.length,
   changedFromUntested: changed.length,
   evidenceScope: browserReport.scope,
