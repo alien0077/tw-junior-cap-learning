@@ -9,7 +9,7 @@ const lessonFiles = (await list("lessons/math/" )).filter(name => name.endsWith(
 const questionFiles = (await list("questions/math/" )).filter(name => name.endsWith(".json"));
 const specFiles = (await list("implementation/unit-specs/math/" )).filter(name => name.endsWith(".yaml"));
 const reportFiles = new Set((await list("implementation/reports/" )).filter(name => /^math-.*first-pass-review\.json$/.test(name)));
-const productionRendererSource = `${await readText("site/simulations.js")}\n${await readText("site/math-visual-labs.js")}\n${await readText("site/math-gold-standard.js")}\n${await readText("site/math-number-family.js")}\n${await readText("site/math-geometry-family.js")}`;
+const productionRendererSource = `${await readText("site/simulations.js")}\n${await readText("site/math-visual-labs.js")}\n${await readText("site/math-gold-standard.js")}\n${await readText("site/math-number-family.js")}\n${await readText("site/math-geometry-family.js")}\n${await readText("site/math-data-family.js")}\n${await readText("site/math-function-family.js")}`;
 const productionMathEngines = new Set([
   "math-number-line",
   "math-inequality-range",
