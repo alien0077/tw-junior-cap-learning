@@ -93,6 +93,115 @@
       '</section>';
   };
 
+  const quadraticRectSvg = (w,d,reveal) => {
+    const scale=20, width=Math.max(60,w*scale), height=Math.max(52,(w+d)*scale*0.62), x=38,y=42;
+    return '<svg viewBox="0 0 356 260" role="img" aria-label="寬 '+w+'、長 '+(w+d)+' 的長方形面積模型">'+
+      '<rect x="'+x+'" y="'+y+'" width="'+Math.min(260,width)+'" height="'+Math.min(150,height)+'" class="mvl-q-rect"/>'+
+      '<text x="'+(x+Math.min(260,width)/2)+'" y="28" class="mvl-dim">長 = w + '+d+'</text>'+
+      '<text x="18" y="'+(y+Math.min(150,height)/2)+'" class="mvl-dim" transform="rotate(-90 18 '+(y+Math.min(150,height)/2)+')">寬 = w</text>'+
+      (reveal?'<text x="'+(x+Math.min(260,width)/2)+'" y="'+(y+Math.min(150,height)/2)+'" class="mvl-region-label">面積 = w(w+'+d+')</text>':'<text x="178" y="130" class="mvl-question">先判斷這是乘積還是周長</text>')+
+      '</svg>';
+  };
+
+  const renderQuadraticMeaning = (lesson,state) => {
+    const mode=Number(state.quadMeaningMode||0);
+    const classify=Number(state.quadClassify||0);
+    const candidate=Number(state.quadCandidate??1);
+    const contextPred=Number(state.quadContextPrediction||0);
+    let body='';
+    if(mode===0){
+      const feedback=!classify
+        ? '先化簡再分類；不要因為原式看見 x² 就直接下結論。'
+        : classify===1
+          ? '正確。2x²+3x=x²+7x−4 化簡為 x²−4x+4=0：只有一個未知數、最高次 2，而且有等號。'
+          : '這一題化簡後仍保留 x² 項；請把所有項移到同一側再合併。';
+      body='<div class="mvl-q-classify" role="img" aria-label="原方程式先移項化簡再判斷未知數種類、最高次與等號">'+
+        '<div class="mvl-q-line"><span>原式</span><strong>2x² + 3x = x² + 7x − 4</strong></div>'+
+        '<div class="mvl-q-arrow">先移項、合併同類項 ↓</div>'+
+        (classify?'<div class="mvl-q-line is-result"><span>化簡</span><strong>x² − 4x + 4 = 0</strong></div>':'<div class="mvl-q-cover">答案先隱藏</div>')+
+        '</div>'+
+        select('quadClassify','化簡後是否為一元二次方程式？',classify,[[0,'先預測'],[1,'是'],[2,'不是']])+
+        '<p class="mvl-feedback" aria-live="polite">'+esc(feedback)+'</p>'+
+        (classify?'<div class="mvl-equation"><span>反例比較</span><strong>3x² + 2x² = 5x² → 0 = 0</strong><p>這個式子化簡後未知數消失，因此不能只靠「原本有 x²」判斷。</p></div>':'');
+    } else if(mode===1){
+      const left=candidate*candidate+3*candidate, right=10, pass=left===right;
+      body='<div class="mvl-q-root-check" role="img" aria-label="候選 x 同時代入方程式左右兩側">'+
+        '<div class="mvl-q-pan"><span>左側 x²+3x</span><strong>'+left+'</strong></div><b>'+(pass?'=':(left<right?'<':'>'))+'</b>'+
+        '<div class="mvl-q-pan"><span>右側</span><strong>'+right+'</strong></div></div>'+
+        range('quadCandidate','候選 x',candidate,-4,4)+
+        '<p class="mvl-feedback" aria-live="polite">'+esc(pass?'x='+candidate+' 使左右兩側同為 10，所以這個候選值是解。這只是「驗證一個候選」，還不是求出全部根。':'x='+candidate+' 時左側 '+left+'、右側 10，不相等，所以這個候選值不是解。')+'</p>'+
+        '<div class="mvl-equation"><span>判準</span><strong>同一個候選值必須讓原等式左右相等</strong></div>';
+    } else {
+      const x=5;
+      const feedback=!contextPred
+        ? '先把量義連起來：短邊 x、長邊 x+4、面積 45。'
+        : contextPred===1
+          ? '正確。面積是長×寬，所以是 x(x+4)=45；x>0 是情境範圍，不是拿來改寫等式。'
+          : '你把面積誤當成長度相加。請回到長方形面積定義：長×寬。';
+      body='<figure class="mvl-visual">'+quadraticRectSvg(x,4,contextPred>0)+'<figcaption>短邊 x，長邊 x+4，面積 45 平方公分。</figcaption></figure>'+
+        select('quadContextPrediction','哪個式子保留情境量義？',contextPred,[[0,'先預測'],[1,'x(x+4)=45'],[2,'x+x+4=45'],[3,'x²+4=45']])+
+        '<p class="mvl-feedback" aria-live="polite">'+esc(feedback)+'</p>'+
+        (contextPred===1?'<div class="mvl-equation"><strong>x=5 時：5×9=45</strong><p>所以 5 是這個方程式的解；但本課只做候選驗證，不把「驗證一根」說成「求出全部根」。</p></div>':'');
+    }
+    const transfer=Number(state.quadMeaningTransfer||0);
+    const transferFeedback=!transfer?'最後檢查一個易混淆題：含 x² 不代表化簡後一定仍是二次方程式。':transfer===2?'正確。3x²+2x²=5x² 化簡成 0=0，未知數消失。':'先把左右的 5x² 消掉，再看還剩什麼。';
+    return '<section class="mvl mvl-quadratic-meaning" aria-label="一元二次方程式意義視覺實驗室">'+
+      '<div class="mvl-task"><span class="mvl-step">1 一次只做一件事</span><strong>先化簡分類，再驗根，再建模</strong><p>本課不提前求全部根；先把「什麼叫二次方程式、什麼叫解」弄清楚。</p></div>'+
+      select('quadMeaningMode','探索工作台',mode,[[0,'化簡後分類'],[1,'候選根左右代入'],[2,'面積情境列式']])+
+      body+
+      '<div class="mvl-transfer"><span class="mvl-step">2 遷移</span><strong>3x²+2x²=5x² 化簡後呢？</strong>'+
+      select('quadMeaningTransfer','判斷',transfer,[[0,'先預測'],[1,'仍是一元二次方程式'],[2,'不是；化簡成 0=0']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(transferFeedback)+'</p></div></section>';
+  };
+
+  const renderQuadraticSolution = (lesson,state) => {
+    const mode=Number(state.quadSolveMode||0);
+    let body='';
+    if(mode===0){
+      const rootPred=Number(state.quadRootPrediction||0);
+      const filter=Number(state.quadContextFilter||0);
+      const feedback=!rootPred?'先預測：w²+5w−84=0 因式分解後會有幾個代數根？':rootPred===2?'正確。零乘積性質給出 w=-12 與 7；先完整保留兩根，再談情境。':'找兩數乘積 −84、和 +5：12 與 −7，因此兩個一次因式各給一根。';
+      const filterFeedback=!filter?'代數根與實際尺寸要分兩欄。':filter===2?'正確。代數根仍是 {−12,7}；正寬度條件只讓實際寬度保留 7。':'負根不能從「代數根集合」刪掉；它只是不能代表正的實際寬度。';
+      body='<figure class="mvl-visual">'+quadraticRectSvg(7,5,rootPred>0)+'<figcaption>木板面積 84，長比寬多 5：w(w+5)=84。</figcaption></figure>'+
+        select('quadRootPrediction','因式分解後有幾個代數根？',rootPred,[[0,'先預測'],[1,'1 個'],[2,'2 個'],[3,'沒有實根']])+
+        '<p class="mvl-feedback" aria-live="polite">'+esc(feedback)+'</p>'+
+        (rootPred?'<div class="mvl-equation"><span>完整根集</span><strong>w²+5w−84=(w+12)(w−7)=0 → w∈{−12,7}</strong><p>兩個候選都先代回方程式；情境條件另外判斷。</p></div>':'')+
+        select('quadContextFilter','正寬度情境如何處理？',filter,[[0,'先判斷'],[1,'把 −12 從代數根集合刪掉'],[2,'保留代數根 {−12,7}，實際寬度只取 7']])+
+        '<p class="mvl-feedback" aria-live="polite">'+esc(filterFeedback)+'</p>'+
+        (filter===2?'<div class="mvl-system-cards"><article class="mvl-system-card"><strong>代數根</strong><p>{−12, 7}</p></article><article class="mvl-system-card"><strong>可行尺寸</strong><p>寬 7、長 12；7×12=84</p></article></div>':'');
+    } else if(mode===1){
+      const add=Number(state.quadCompleteSquare||0);
+      const feedback=!add?'x²+4x+1=0 → x²+4x=−1。要補成平方，兩側要怎麼做？':add===1?'正確。兩側同加 4 才保持等式等值：x²+4x+4=3 → (x+2)²=3。':'只補左側會改變解集合。任何等式變形都要同步維持兩側相等。';
+      body='<div class="mvl-q-balance" role="img" aria-label="配方法在等式兩側同加四">'+
+        '<div><span>左側</span><strong>x² + 4x</strong><em>'+(add?'+4':'+ ?')+'</em></div>'+
+        '<b>=</b><div><span>右側</span><strong>−1</strong><em>'+(add?'+4':'+ ?')+'</em></div></div>'+
+        select('quadCompleteSquare','要在哪裡加 4？',add,[[0,'先預測'],[1,'左右兩側都加 4'],[2,'只在左側加 4'],[3,'只在右側加 4']])+
+        '<p class="mvl-feedback" aria-live="polite">'+esc(feedback)+'</p>'+
+        (add===1?'<div class="mvl-equation"><strong>(x+2)²=3 → x=−2±√3</strong><p>「±」代表兩個實根；不可只取其中一支。</p></div>':'');
+    } else if(mode===2){
+      const delta=Number(state.quadDeltaPrediction||0);
+      const feedback=!delta?'2x²+3x−2=0：a=2、b=3、c=−2。先算 Δ=b²−4ac。':delta===1?'正確。Δ=9−4·2·(−2)=25>0，所以有兩個相異實根。':'注意 c 是 −2；−4ac 會變成加 16。';
+      body='<div class="mvl-q-coeff" role="img" aria-label="二次方程式係數卡 a 二 b 三 c 負二"><span>a<strong>2</strong></span><span>b<strong>3</strong></span><span>c<strong>−2</strong></span></div>'+
+        select('quadDeltaPrediction','判別式 Δ 是多少？',delta,[[0,'先預測'],[1,'25'],[2,'−7'],[3,'7']])+
+        '<p class="mvl-feedback" aria-live="polite">'+esc(feedback)+'</p>'+
+        (delta===1?'<div class="mvl-equation"><span>公式解</span><strong>x=(-3±5)/4 → x=1/2 或 −2</strong><p>判別式先告訴你實根型態；公式仍要保留 b、c 原本的符號。</p></div>':'');
+    } else {
+      const transfer=Number(state.quadSolutionTransfer||0);
+      const feedback=!transfer?'換一題 x²−x−12=0：哪種方法最直接？':transfer===1?'正確。找乘積 −12、和 −1 的 3 與 −4： (x−4)(x+3)=0，根為 4、−3。':'這題可整數因式分解，不必先用較長的公式法。';
+      body='<div class="mvl-q-method-map"><article><strong>因式分解</strong><p>能快速找到整數因式時優先。</p></article><article><strong>配方法</strong><p>看見 x²+bx 時補 (b/2)²，兩側同步。</p></article><article><strong>公式解</strong><p>一般情況可用，先保留 a,b,c 符號與 Δ。</p></article></div>'+
+        select('quadSolutionTransfer','x²−x−12=0 選哪個？',transfer,[[0,'先判斷'],[1,'因式分解'],[2,'配方法才允許'],[3,'只可公式解']])+
+        '<p class="mvl-feedback" aria-live="polite">'+esc(feedback)+'</p>'+
+        (transfer===1?'<div class="mvl-equation"><strong>(x−4)(x+3)=0 → x=4 或 −3</strong><p>兩根都要代回原式確認；若題目有情境，再另外做定義域篩選。</p></div>':'');
+    }
+    return '<section class="mvl mvl-quadratic-solution" aria-label="一元二次方程式解法與應用視覺工作台">'+
+      '<div class="mvl-task"><span class="mvl-step">1 選一個解題工作</span><strong>建模、求根、驗根、情境篩選分開處理</strong><p>每一站只聚焦一種推理，避免把公式、圖形和情境條件全部塞在同一畫面。</p></div>'+
+      select('quadSolveMode','解題工作台',mode,[[0,'矩形建模＋完整根集'],[1,'配方法：兩側同步'],[2,'判別式＋公式解'],[3,'方法選擇遷移']])+
+      body+'</section>';
+  };
+
+  const renderQuadraticLab = (lesson,state) =>
+    lesson.simulation.model==='a-8-6-quadratic-meaning-v1' ? renderQuadraticMeaning(lesson,state) : renderQuadraticSolution(lesson,state);
+
   const systemCard = (title,equation,value,target,shown) => {
     const pass=value===target;
     return '<article class="mvl-system-card"><b>'+esc(title)+'</b><strong>'+esc(equation)+'</strong>'+
@@ -340,17 +449,19 @@
       '</div><details class="mvl-evidence"><summary>為什麼不是只背最大公因數？</summary><p>因式分解是分配律的反向操作。候選共同因式必須逐項相除得到整式，最後再乘回原式；三個步驟都能檢查。</p></details></section>';
   };
 
-  const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model' || engine==='math-polynomial-model' || engine==='math-system-model';
+  const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model' || engine==='math-polynomial-model' || engine==='math-system-model' || engine==='math-quadratic-model';
   const defaults = (engine,model) => engine==='math-visual-area'
     ? {a:4,b:2,formulaMode:0,prediction:0,transferA:5,transferB:1,transferPrediction:0}
     : engine==='math-polynomial-model'
       ? {polyMode:0,subtractPrediction:0,multiplyPrediction:0,dividePrediction:0,polyTransfer:0}
       : engine==='math-system-model'
         ? (model==='a-7-4-system-meaning-v1' ? {meaningPrediction:0,systemX:10,systemMeaningTransfer:0} : {eliminationMethod:0,eliminationBack:0,eliminationTransfer:0})
+      : engine==='math-quadratic-model'
+        ? (model==='a-8-6-quadratic-meaning-v1' ? {quadMeaningMode:0,quadClassify:0,quadCandidate:1,quadContextPrediction:0,quadMeaningTransfer:0} : {quadSolveMode:0,quadRootPrediction:0,quadContextFilter:0,quadCompleteSquare:0,quadDeltaPrediction:0,quadSolutionTransfer:0})
       : model==='a-8-4-factor-meaning-v1'
         ? {factorMeaningX:2,candidateFactor:0,factorMeaningTransfer:0}
         : {commonFactor:0,factorTransfer:0};
-  const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : engine==='math-polynomial-model' ? '多項式視覺工作台' : engine==='math-system-model' ? '聯立方程式雙條件工作台' : '因式結構探索臺';
-  const render = (lesson,state) => lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : lesson.simulation.engine==='math-polynomial-model' ? renderPolynomialOps(lesson,state) : lesson.simulation.engine==='math-system-model' ? renderSystemLab(lesson,state) : renderFactor(lesson,state);
+  const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : engine==='math-polynomial-model' ? '多項式視覺工作台' : engine==='math-system-model' ? '聯立方程式雙條件工作台' : engine==='math-quadratic-model' ? '二次方程式視覺工作台' : '因式結構探索臺';
+  const render = (lesson,state) => lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : lesson.simulation.engine==='math-polynomial-model' ? renderPolynomialOps(lesson,state) : lesson.simulation.engine==='math-system-model' ? renderSystemLab(lesson,state) : lesson.simulation.engine==='math-quadratic-model' ? renderQuadraticLab(lesson,state) : renderFactor(lesson,state);
   window.MathVisualLabs={supports,defaults,label,render};
 })();
