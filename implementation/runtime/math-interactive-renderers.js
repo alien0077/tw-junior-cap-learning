@@ -1301,6 +1301,25 @@ function mountStepwiseLab({ document, root, block, spec }) {
 
 
 
+
+function mountSectorVisualLab({document,root,block}){
+ const {lab,status}=makeLab(document,block,"扇形：角度占整圓多少？");let r=5,theta=90;const c=makeCanvas(document,"圓心角、弧與扇形面積同步圖",360,270);
+ const controls=document.createElement("div");controls.className="math-live-controls";
+ const draw=()=>{c.replaceChildren();const cx=180,cy=140,R=r*18,a=(theta-90)*Math.PI/180,x=cx+R*Math.cos(a),y=cy+R*Math.sin(a);c.append(svg(document,"circle",{cx,cy,r:R,fill:"none",stroke:"currentColor","stroke-width":2}));c.append(svg(document,"path",{d:`M ${cx} ${cy} L ${cx} ${cy-R} A ${R} ${R} 0 ${theta>180?1:0} 1 ${x} ${y} Z`,fill:"currentColor",opacity:.14,stroke:"currentColor","stroke-width":2}));status.textContent=`θ=${theta}° = ${(theta/360).toFixed(2)} 圈；弧長≈${(2*Math.PI*r*theta/360).toFixed(2)}，扇形面積≈${(Math.PI*r*r*theta/360).toFixed(2)}。`;};
+ const rr=makeRange(document,{label:"半徑 r",min:2,max:7,value:r,onInput:v=>{r=v;draw();}}),aa=makeRange(document,{label:"圓心角 θ",min:30,max:300,step:30,value:theta,onInput:v=>{theta=v;draw();}});controls.append(rr.wrapper,aa.wrapper);
+ const note=document.createElement("p");note.innerHTML="<strong>同一個比例 θ/360 同時控制弧長與扇形面積。</strong> 弧是曲線，不是兩端點之間的弦。";lab.append(c,controls,note);root.querySelector(".component-visual-body")?.prepend(lab);draw();return lab;
+}
+function mountCirclePropertyVisualLab({document,root,block}){
+ const {lab,status}=makeLab(document,block,"圓的元素辨識圖");const c=makeCanvas(document,"圓心、半徑、直徑、弦與切線",400,260),cx=190,cy=130,R=90;c.append(svg(document,"circle",{cx,cy,r:R,fill:"none",stroke:"currentColor","stroke-width":3}));
+ const lines=[["半徑",cx,cy,cx+R,cy],["直徑",cx-R,cy,cx+R,cy],["弦",cx-70,cy-55,cx+55,cy-70],["切線",cx+R,30,cx+R,230]];lines.forEach(([name,x1,y1,x2,y2],i)=>{c.append(svg(document,"line",{x1,y1,x2,y2,stroke:"currentColor","stroke-width":i===3?4:2,"stroke-dasharray":i===3?"7 4":""}));const t=svg(document,"text",{x:(x1+x2)/2+6,y:(y1+y2)/2-7,"font-size":14,"font-weight":800});t.textContent=name;c.append(t);});
+ const q=document.createElement("p");q.innerHTML="<strong>判讀順序：</strong>是否經圓心？端點是否都在圓上？是否只碰圓一點？三個問題就能拆開直徑、弦與切線。";lab.append(c,q);root.querySelector(".component-visual-body")?.prepend(lab);status.textContent="切線在切點與半徑垂直；直徑是通過圓心的特殊弦。";return lab;
+}
+function mountLineCircleRelationVisualLab({document,root,block}){
+ const {lab,status}=makeLab(document,block,"直線與圓：先看圓心到直線的最短距離");let d=4,r=4;const c=makeCanvas(document,"圓與直線交點隨圓心距離變化",400,250);const draw=()=>{c.replaceChildren();const R=r*20,y=190-d*20;c.append(svg(document,"line",{x1:25,y1:190,x2:375,y2:190,stroke:"currentColor","stroke-width":3}));c.append(svg(document,"circle",{cx:200,cy:y,r:R,fill:"none",stroke:"currentColor","stroke-width":3}));c.append(svg(document,"line",{x1:200,y1:y,x2:200,y2:190,stroke:"currentColor","stroke-dasharray":"5 4"}));const rel=d<r?"相交：2 個交點":d===r?"相切：1 個交點":"相離：0 個交點";status.textContent=`OH=${d}, r=${r} → ${rel}。比較的是垂直最短距離 OH，不是任意斜線。`;};const cs=document.createElement("div");cs.className="math-live-controls";const a=makeRange(document,{label:"OH",min:1,max:7,value:d,onInput:v=>{d=v;draw();}}),b=makeRange(document,{label:"半徑 r",min:2,max:6,value:r,onInput:v=>{r=v;draw();}});cs.append(a.wrapper,b.wrapper);lab.append(c,cs);root.querySelector(".component-visual-body")?.prepend(lab);draw();return lab;
+}
+function mountCircumcenterVisualLab({document,root,block}){
+ const {lab,status}=makeLab(document,block,"外心：三個頂點的等距中心");const c=makeCanvas(document,"三角形外接圓與兩條邊的垂直平分線",400,290);const O=[200,145],R=100,pts=[[200,45],[110,190],[290,190]];c.append(svg(document,"circle",{cx:O[0],cy:O[1],r:R,fill:"none",stroke:"currentColor","stroke-width":2}));c.append(svg(document,"polygon",{points:pts.map(p=>p.join(",")).join(" "),fill:"none",stroke:"currentColor","stroke-width":3}));[[200,20,200,270],[40,117.5,360,117.5]].forEach(v=>c.append(svg(document,"line",{x1:v[0],y1:v[1],x2:v[2],y2:v[3],stroke:"currentColor","stroke-dasharray":"6 5"})));c.append(svg(document,"circle",{cx:O[0],cy:O[1],r:5,fill:"currentColor"}));const t=svg(document,"text",{x:210,y:140,"font-weight":800});t.textContent="O 外心";c.append(t);const p=document.createElement("p");p.textContent="垂直平分線上的點到該邊兩端等距；兩條垂直平分線交於 O，因此 OA=OB=OC。";lab.append(c,p);root.querySelector(".component-visual-body")?.prepend(lab);status.textContent="外心不是靠目測找三角形中央，而是由「等距」條件找出。";return lab;
+}
 function mountSimilarityEvidenceVisualLab({ document, root, block }) {
   const {lab,status}=makeLab(document,block,"相似三角形證據圖解臺");
   const intro=document.createElement("p");intro.innerHTML="<strong>先看證據落在圖上的位置。</strong> 不先背 AA／SAS／SSS；先確認哪些角、哪些邊真的互相對應。";
