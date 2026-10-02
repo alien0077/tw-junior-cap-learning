@@ -335,7 +335,7 @@
     "id": "sim-science-eb-iv-12",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-12-mass-inertia",
     "goal": "以同力同時間的滑車資料比較質量與慣性，辨認控制變因，並用證據判讀替代解釋。",
     "mission": "你是校園科學展的資料審查員：要檢查空車與載重車誰較難改變運動狀態，先核對推力與作用時間，再讀取速度改變，最後判斷結論是否超出證據。",
     "sourceRefs": [
@@ -380,6 +380,18 @@
           "feedback": "最後寫出限制：模型忽略真實輪軸摩擦、推力波動與測量誤差；因此結論應保留『在控制條件下』。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "loaded-cart-force-acceleration",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "cartMass",
+        "pushForce",
+        "pushTime"
+      ],
+      "transferScenario": "loaded-shopping-cart"
     }
   }
 }
