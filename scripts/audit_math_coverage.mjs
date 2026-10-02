@@ -9,11 +9,13 @@ const lessonFiles = (await list("lessons/math/" )).filter(name => name.endsWith(
 const questionFiles = (await list("questions/math/" )).filter(name => name.endsWith(".json"));
 const specFiles = (await list("implementation/unit-specs/math/" )).filter(name => name.endsWith(".yaml"));
 const reportFiles = new Set((await list("implementation/reports/" )).filter(name => /^math-.*first-pass-review\.json$/.test(name)));
-const productionRendererSource = await readText("site/simulations.js");
+const productionRendererSource = `${await readText("site/simulations.js")}\n${await readText("site/math-visual-labs.js")}`;
 const productionMathEngines = new Set([
   "math-number-line",
   "math-inequality-range",
   "math-algebra-balance",
+  "math-visual-area",
+  "math-factor-model",
   "math-ticket-equation",
   "math-equation-meaning",
   "math-reasoning-lab",
@@ -25,6 +27,8 @@ const productionMathEngines = new Set([
   "math-probability-lab",
 ]);
 const productionRendererSignatures = new Map([
+  ["math-visual-area", ["renderArea", "mvl-area", "transferPrediction", 'role="img"']],
+  ["math-factor-model", ["renderFactor", "mvl-factor-board", "factorTransfer", "mvl-token"]],
   ["math-number-line", ['slider("n"', 'role="img"', "sim-marker"]],
   ["math-inequality-range", ["data-inequality-relation", 'slider("boundary"', 'role="img"']],
   ["math-algebra-balance", ['class="balance"', 'slider("addend"', 'slider("target"']],
@@ -70,8 +74,11 @@ function reportCandidates(lessonFile) {
 
 function hasProductionRenderer(engine) {
   if (!engine || !productionMathEngines.has(engine)) return false;
-  if (!productionRendererSource.includes(`if (engine === "${engine}")`)) return false;
   const signatures = productionRendererSignatures.get(engine) || [];
+  if (["math-visual-area", "math-factor-model"].includes(engine)) {
+    return signatures.every(signature => productionRendererSource.includes(signature));
+  }
+  if (!productionRendererSource.includes(`if (engine === "${engine}")`)) return false;
   return signatures.every(signature => productionRendererSource.includes(signature));
 }
 
