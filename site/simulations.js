@@ -14,6 +14,7 @@
     if (engine === "science-motion-lab" && model === "eb-iv-4-friction-threshold") return { pullForce: 0, normalForce: 10, surface: "wood", frictionPrediction: "", predictionSubmitted: false, frictionFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-5-hydraulic-pressure") return { inputForce: 20, inputArea: 4, outputArea: 40, depth: 2, pressurePrediction: "", predictionSubmitted: false, pressureFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-6-buoyancy") return { objectWeight: 8, liquidDensity: 1, displacedVolume: 500, buoyancyPrediction: "", predictionSubmitted: false, buoyancyFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-8-motion-graph") return { eastDistance: 8, westDistance: 4, stopTime: 2, motionPrediction: "", predictionSubmitted: false, motionFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -175,6 +176,20 @@
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
       </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-8-motion-graph") {
+      const east=clamp(Number(state.eastDistance),2,12),west=clamp(Number(state.westDistance),0,10),stop=clamp(Number(state.stopTime),0,6),final=east-west,distance=east+west,total=4+4+stop,avgSpeed=distance/total,avgVelocity=final/total,locked=!state.predictionSubmitted;
+      const x0=70,x1=70+east*32,x2=x1-west*32,gy=250,scale=14;
+      return `<section class="sim-motion-graph-lab" aria-label="路程位移與位置時間圖視覺實驗室"><div class="sim-visual-first"><figure class="sim-motion-stage"><svg viewBox="0 0 700 360" role="img" aria-label="小車先向東 ${east} 公尺，再向西 ${west} 公尺，停留 ${stop} 秒">
+        <line x1="55" y1="100" x2="620" y2="100" class="sim-track"/><circle cx="${x2}" cy="100" r="20" class="sim-cart"/><text x="55" y="75">起點 0 m</text><text x="${x1}" y="75" text-anchor="middle">最東 ${east} m</text><text x="${x2}" y="145" text-anchor="middle">終點 ${final} m</text>
+        <g transform="translate(55 180)"><line x1="0" y1="150" x2="590" y2="150" class="sim-axis"/><line x1="0" y1="150" x2="0" y2="0" class="sim-axis"/><text x="570" y="175">時間</text><text x="-5" y="-8">位置</text>
+        <polyline points="0,150 180,${150-east*scale} 360,${150-final*scale} ${360+stop*30},${150-final*scale}" class="sim-motion-line"/>
+        <circle cx="180" cy="${150-east*scale}" r="6" class="sim-marker"/><circle cx="360" cy="${150-final*scale}" r="6" class="sim-marker"/></g>
+      </svg><figcaption>路程 ${distance} m｜位移 ${final} m（${final>=0?"東":"西"}）｜平均速率 ${avgSpeed.toFixed(2)} m/s｜平均速度 ${avgVelocity.toFixed(2)} m/s</figcaption></figure>
+      <div class="sim-prediction-panel"><p><b>1. 先預測圖形</b></p><p>小車折返後，位置—時間圖應該？</p><div class="sim-actions"><button data-motion-action="predict" data-value="down">往下降</button><button data-motion-action="predict" data-value="flat">保持水平</button></div><button data-motion-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.motionFeedback||"先判斷折返代表位置如何改變。")}</p></div></div>
+      <fieldset class="sim-motion-controls" ${locked?"disabled":""}><legend>2. 改變路線</legend>${slider("eastDistance","向東距離",east,2,12,1," m")}${slider("westDistance","折返向西",west,0,10,1," m")}${slider("stopTime","停留時間",stop,0,6,1," s")}</fieldset>
+      <div class="sim-evidence-card"><p><b>3. 從路線與圖一起判讀</b></p><p>路程把走過的 ${east}+${west} 相加；位移只比較終點與起點，所以是 ${final} m。停留會讓位置—時間圖出現水平線，並增加總時間，因此會降低平均速率的數值。</p></div>
+      <div class="sim-transfer-card"><p><b>4. 遷移：回到起點時</b></p><div class="sim-actions"><button data-motion-action="transfer" data-value="zero">位移為 0，但路程可不為 0</button><button data-motion-action="transfer" data-value="both">路程和位移都一定為 0</button></div><p role="status">${esc(state.transferFeedback||"把『走過多少』和『終點相對起點』分開。")}</p></div></section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-6-buoyancy") {
       const weight=clamp(Number(state.objectWeight),2,15), density=clamp(Number(state.liquidDensity),0.7,1.3), volume=clamp(Number(state.displacedVolume),100,1000);
@@ -528,6 +543,13 @@
       if (direction === "prev") update(root, { reasoningStep: Math.max(0, index - 1), reasoningChoice: "" });
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
+    }
+    const motionAction=event.target.closest("[data-motion-action]");
+    if(motionAction && lesson.simulation.model==="eb-iv-8-motion-graph"){
+      const action=motionAction.dataset.motionAction,value=motionAction.dataset.value,state=read(lesson.simulation);
+      if(action==="predict"){update(root,{motionPrediction:value,motionFeedback:""});return;}
+      if(action==="submit-prediction"){update(root,state.motionPrediction?{predictionSubmitted:true,motionFeedback:state.motionPrediction==="down"?"預測已記錄。調整折返距離，看圖線段如何下降。":"預測已記錄。改變折返距離，檢查水平線真正代表哪一段運動。"}:{motionFeedback:"請先選擇預測。"});return;}
+      if(action==="transfer"){update(root,value==="zero"?{transferChoice:value,transferFeedback:"正確：位移只看起終點；繞一圈回原點位移為 0，但實際走過的路程仍大於 0。"}:{transferChoice:value,transferFeedback:"再看路線：回原點不代表途中沒有走路。"});return;}
     }
     const buoyancyAction=event.target.closest("[data-buoyancy-action]");
     if(buoyancyAction && lesson.simulation.model==="eb-iv-6-buoyancy"){
