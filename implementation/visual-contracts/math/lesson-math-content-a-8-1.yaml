@@ -1,0 +1,35 @@
+lessonId: lesson-math-content-a-8-1
+subject: math
+knowledgeNodes: [kg-math-content-a-8-1]
+learningObjective: 由面積分割推導 (a+b)²、(a-b)² 與 (a+b)(a-b)，並解釋交叉項的來源或相消。
+keyConcept: 公式中的中間項來自可觀察的面積區塊與符號關係，不是記憶口訣。
+priorKnowledge: [長方形面積, 分配律, 同類項]
+misconceptions:
+  - "(a+b)² 誤寫成 a²+b²"
+  - "(a-b)² 的 b² 誤判為負"
+  - "平方差忽略 -ab 與 +ab 相消"
+visual:
+  primaryType: dynamic-area-model
+  secondaryRepresentations: [symbolic-equation, numeric-check]
+  firstFrame: 大型正方形面積模型與 a、b 邊長，公式先隱藏。
+  manipulables: [a, b, formulaMode, prediction]
+  dynamicChanges: [區塊尺寸, 交叉區標示, 公式, 數值驗算]
+  invariants: [總面積與展開式等值]
+interaction:
+  prediction: 先預測交叉項會出現兩塊或相消。
+  action: 改變 a、b 與公式模式，觀察面積區塊及符號同步變化。
+  observation: 比較兩個 ab、被扣除區與相消區。
+  evidencePrompt: 用區塊數量或相消位置解釋公式。
+  feedback: 指向漏算的區塊或符號，不只回報對錯。
+  retry: 可重新選預測並改變 a、b。
+  transfer: 換一組 a、b 預測新正方形面積。
+accessibility:
+  keyboardAlternative: 所有控制可用 select/range 鍵盤操作。
+  nonDragAlternative: 不依賴 drag；控制與圖形同步。
+  textAlternative: SVG 有 aria-label，公式與數值另以文字呈現。
+  reducedMotion: 無必要動畫；reduced-motion 保持完整功能。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
