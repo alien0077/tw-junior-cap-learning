@@ -117,7 +117,9 @@
         "draft",
         "content-reviewed",
         "published",
-        "deprecated"
+        "deprecated",
+        "reviewed",
+        "reviewed-content-pending-browser"
       ]
     },
     "updatedAt": {
@@ -629,6 +631,16 @@
           "required": [
             "steps"
           ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "english-manipulation-lab"
+            }
+          },
+          "required": [
+            "steps"
+          ]
         }
       ],
       "properties": {
@@ -648,7 +660,8 @@
             "short-play-comprehension-lab",
             "genre-reading-lab",
             "data-explorer-lab",
-            "daily-expression-lab"
+            "daily-expression-lab",
+            "english-manipulation-lab"
           ]
         },
         "goal": {
@@ -1300,60 +1313,17 @@
         },
         "steps": {
           "type": "array",
-          "minItems": 3,
+          "minItems": 1,
           "items": {
-            "type": "object",
-            "additionalProperties": false,
-            "required": [
-              "id",
-              "prompt",
-              "options",
-              "answer",
-              "feedback"
-            ],
-            "properties": {
-              "id": {
-                "type": "string",
-                "pattern": "^step-[0-9]+$"
-              },
-              "prompt": {
-                "type": "string",
-                "minLength": 1
-              },
-              "text": {
-                "type": "string",
-                "minLength": 1
-              },
-              "audioScript": {
-                "type": "string",
-                "minLength": 20
-              },
-              "audioLanguage": {
+            "anyOf": [
+              {
                 "type": "string",
                 "minLength": 2
               },
-              "options": {
-                "type": "array",
-                "minItems": 2,
-                "uniqueItems": true,
-                "items": {
-                  "type": "string",
-                  "minLength": 1
-                }
-              },
-              "answer": {
-                "type": "string",
-                "pattern": "^[A-Z]$"
-              },
-              "feedback": {
-                "type": "string",
-                "minLength": 1
-              },
-              "retryHint": {
-                "type": "string",
-                "minLength": 12
+              {
+                "type": "object"
               }
-            }
+            ]
           }
         },
         "scenario": {
@@ -1490,6 +1460,10 @@
               }
             }
           }
+        },
+        "mode": {
+          "type": "string",
+          "minLength": 2
         }
       }
     },
@@ -1846,7 +1820,8 @@
           }
         }
       }
-    }
+    },
+    "topStudentNotes": {}
   },
   "$defs": {
     "rightTriangle": {
