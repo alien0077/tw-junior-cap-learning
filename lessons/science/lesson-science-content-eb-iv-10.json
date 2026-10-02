@@ -334,7 +334,7 @@
     "id": "sim-science-eb-iv-10",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-10-inertia",
     "goal": "操作合力、摩擦與初始速度模型，辨認靜止或等速度直線運動何時能維持。",
     "mission": "你是校園小車實驗的資料判讀員：先設定小車初始狀態，再逐步改變水平推力、摩擦與轉向，最後用速度—時間資料說明慣性模型的條件。",
     "sourceRefs": [
@@ -379,6 +379,18 @@
           "feedback": "請加入軌道水平度、空氣阻力、摩擦估計和感測器解析度，不要把理想模型寫成所有情況都成立。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "cart-velocity-and-net-force-vectors",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "initialSpeed",
+        "appliedForce",
+        "friction"
+      ],
+      "transferScenario": "ice-puck-friction"
     }
   }
 }
