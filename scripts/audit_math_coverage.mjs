@@ -78,7 +78,12 @@ function hasProductionRenderer(engine) {
 const rows = lessons.map(lesson => {
   const qs = questionsByLesson.get(lesson.id) || [];
   const specId = lesson.id.replace(/^lesson-math-/, "cur-math-");
-  const directSpec = specs.get(specId);
+  const directSpec = specs.get(specId) || null;
+  const lineageSpecIds = (lesson.knowledgeIds || [])
+    .filter(id => typeof id === "string" && id.startsWith("kg-math-"))
+    .map(id => id.replace(/^kg-/, "cur-"));
+  const resolvedSpecId = [specId, ...lineageSpecIds].find(id => specs.has(id)) || null;
+  const resolvedSpec = resolvedSpecId ? specs.get(resolvedSpecId) : null;
   const reports = reportCandidates(lesson.file).filter(name => reportFiles.has(name));
   const simulationEngine = lesson.simulation?.engine || null;
   return {
@@ -93,7 +98,10 @@ const rows = lessons.map(lesson => {
     simulationMission: Boolean(lesson.simulation?.mission),
     productionRenderer: hasProductionRenderer(simulationEngine),
     interactiveType: lesson.interactive?.type || null,
-    spec: directSpec || null,
+    spec: resolvedSpec,
+    directSpec,
+    specResolution: directSpec ? "direct" : resolvedSpec ? "knowledge-lineage" : null,
+    resolvedSpecId,
     reports,
   };
 });
@@ -115,7 +123,8 @@ const summary = {
   activeLessonsWithProductionRenderer: rows.filter(r => rowIsActive(r) && r.productionRenderer).length,
   activeGenericSimulationCount: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").length,
   lessonsWithInteractive: rows.filter(r => r.interactiveType).length,
-  lessonsWithDirectSpec: rows.filter(r => r.spec).length,
+  lessonsWithDirectSpec: rows.filter(r => r.directSpec).length,
+  lessonsWithResolvedSpec: rows.filter(r => r.spec).length,
   specs: specs.size,
   specQaStatusCounts: countBy([...specs.values()].map(s => s.qaStatus)),
   reports: reportFiles.size,
@@ -132,7 +141,8 @@ const problems = {
   activeWithoutProductionRenderer: rows.filter(r => rowIsActive(r) && r.simulationEngine && r.simulationEngine !== "concept-explorer" && !r.productionRenderer).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
   activeSimulationMissingModelGoalOrMission: rows.filter(r => rowIsActive(r) && r.simulationEngine && (!r.simulationModel || !r.simulationGoal || !r.simulationMission)).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
   activeWithoutFirstPassReport: rows.filter(r => rowIsActive(r) && r.reports.length === 0).map(r => ({ id: r.id, file: r.file })),
-  activeWithoutDirectSpec: rows.filter(r => rowIsActive(r) && !r.spec).map(r => ({ id: r.id, file: r.file })),
+  activeWithoutDirectSpec: rows.filter(r => rowIsActive(r) && !r.directSpec).map(r => ({ id: r.id, file: r.file, resolvedSpecId: r.resolvedSpecId, resolution: r.specResolution })),
+  activeWithoutResolvedSpec: rows.filter(r => rowIsActive(r) && !r.spec).map(r => ({ id: r.id, file: r.file })),
   deprecatedWithDraftQuestions: rows.filter(r => !rowIsActive(r) && r.questionDrafts > 0).map(r => ({ id: r.id, file: r.file, count: r.questionDrafts })),
   implementedButUntestedSpecs: [...specs.entries()].filter(([, s]) => s.implementationStatus === "implemented" && s.qaStatus === "untested").map(([id, s]) => ({ id, component: s.component, file: s.file })),
   implementedButUnpassedSpecs: [...specs.entries()].filter(([, s]) => s.implementationStatus === "implemented" && s.qaStatus !== "passed").map(([id, s]) => ({ id, component: s.component, file: s.file, qaStatus: s.qaStatus || "missing" })),
