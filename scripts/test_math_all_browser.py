@@ -157,6 +157,26 @@ async def require_count(sim: Locator, selector: str, minimum: int, message: str)
 
 async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) -> None:
     """Verify the lesson reached its dedicated production renderer, not only sim-design."""
+    PHASE2_FAMILY_EXPECTED = {
+        "a-7-1-like-terms-v1": ("a71Choice", ".mnf-structure"),
+        "a-7-3-balance-equation-v1": ("a73Step", ".mnf-structure"),
+        "d-7-1-chart-choice-v1": ("d71Chart", ".mdf-chart"),
+        "d-7-2-center-outlier-v1": ("d72Outlier", ".mdf-stats"),
+        "d-8-1-cumulative-frequency-v1": ("d81Point", ".mdf-curve"),
+        "d-9-3-classical-sample-space-v1": ("d93Event", ".mdf-grid"),
+        "a-7-6-system-graph-v1": ("a76Case", ".mff-graph"),
+        "a-7-7-inequality-meaning-v1": ("a77Relation", ".mff-numberline"),
+        "f-8-1-linear-two-point-v1": ("f81Data", ".mff-graph"),
+        "f-9-1-quadratic-meaning-v1": ("f91A", ".mff-graph"),
+        "f-9-2-parabola-vertex-v1": ("f92A", ".mff-graph"),
+        "g-7-1-coordinate-address-v1": ("g71Point", ".mff-graph"),
+        "g-8-1-distance-triangle-v1": ("g81Points", ".mff-graph"),
+    }
+    if model in PHASE2_FAMILY_EXPECTED:
+        control, visual = PHASE2_FAMILY_EXPECTED[model]
+        await require_count(sim, visual, 1, f"{model} semantic visual missing")
+        await require_count(sim, f'[data-sim-control="{control}"]', 1, f"{model} semantic control missing")
+        return
     GEOMETRY_FAMILY_EXPECTED = {
         "s-7-1-geometry-symbols-v1": ("s71Type", ".mgf-svg"),
         "s-7-2-orthographic-v1": ("s72View", ".mgf-cubes"),
