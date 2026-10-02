@@ -229,6 +229,28 @@
     "d-9-1-boxplot-iqr-v1":renderBoxPlot,
     "d-9-2-relative-frequency-v1":renderProbability,
   };
+  const goldRegistry = window.MathSemanticFamilies ||= {};
+  const goldAdapter = model => (host) => {
+    const defaultsForModel = {...defaults[model]};
+    host.innerHTML = renderers[model](defaultsForModel);
+    host.addEventListener("change", event => {
+      const control = event.target.closest("[data-sim-control]");
+      if (!control) return;
+      const key = control.dataset.simControl;
+      const raw = control.value;
+      defaultsForModel[key] = raw === "" ? raw : Number.isNaN(Number(raw)) ? raw : Number(raw);
+      host.innerHTML = renderers[model](defaultsForModel);
+    });
+    host.addEventListener("input", event => {
+      const control = event.target.closest("[data-sim-control]");
+      if (!control) return;
+      const key = control.dataset.simControl;
+      const raw = control.value;
+      defaultsForModel[key] = raw === "" ? raw : Number.isNaN(Number(raw)) ? raw : Number(raw);
+      host.innerHTML = renderers[model](defaultsForModel);
+    });
+  };
+  for (const model of allModels) goldRegistry[model] = goldAdapter(model);
   window.MathVisualLabs={
     supports(engine,model){ return allModels.has(model) || base.supports(engine,model); },
     defaults(engine,model){ return allModels.has(model) ? {...defaults[model]} : base.defaults(engine,model); },
