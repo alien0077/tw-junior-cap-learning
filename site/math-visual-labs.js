@@ -480,8 +480,54 @@
       '</div><details class="mvl-evidence"><summary>為什麼不是只背最大公因數？</summary><p>因式分解是分配律的反向操作。候選共同因式必須逐項相除得到整式，最後再乘回原式；三個步驟都能檢查。</p></details></section>';
   };
 
-  const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model' || engine==='math-polynomial-model' || engine==='math-system-model' || engine==='math-quadratic-model' || (engine==='math-algebra-balance' && model==='a-7-3-linear-equation-check-v1');
-  const defaults = (engine,model) => (engine==='math-algebra-balance' && model==='a-7-3-linear-equation-check-v1')
+
+  const renderS9Geometry = (lesson,state) => {
+    const model=lesson.simulation.model;
+    const head=(title,lead)=>'<div class="mvl-task"><span class="mvl-step">圖像先行</span><strong>'+esc(title)+'</strong><p>'+esc(lead)+'</p></div>';
+    if(model==='s-9-2-triangle-similarity-v1'){
+      const mode=Number(state.s9Mode||0), names=['AA：兩角對應','SAS：夾角＋兩邊同比','SSS：三邊同比'];
+      const marks=mode===0?'∠A=∠D、∠B=∠E':mode===1?'AB/DE=AC/DF，且 ∠A=∠D':'AB/DE=BC/EF=CA/FD';
+      return '<section class="mvl mvl-s9">'+head('相似判定不是背三個縮寫','先在圖上找「對應」與「證據位置」，再決定 AA／SAS／SSS。')+
+      select('s9Mode','證據卡',mode,[[0,names[0]],[1,names[1]],[2,names[2]]])+
+      '<figure class="mvl-visual"><svg viewBox="0 0 620 260" role="img" aria-label="兩個三角形 A B C 與 D E F 的對應關係"><polygon points="45,215 145,35 230,215" class="mvl-outline"/><polygon points="355,215 455,35 540,215" class="mvl-outline"/><text x="28" y="238">A</text><text x="140" y="28">B</text><text x="235" y="238">C</text><text x="338" y="238">D</text><text x="450" y="28">E</text><text x="545" y="238">F</text><text x="292" y="92" text-anchor="middle">A ↔ D</text><text x="292" y="130" text-anchor="middle">B ↔ E</text><text x="292" y="168" text-anchor="middle">C ↔ F</text></svg><figcaption>'+esc(marks)+'。△ABC∼△DEF 後，AB↔DE、BC↔EF、CA↔FD。</figcaption></figure>'+
+      '<div class="mvl-equation"><strong>'+esc(names[mode])+'</strong><p>SAS 的角必須是兩組比例邊的夾角；只有一角相等不夠。</p></div></section>';
+    }
+    if(model==='s-9-3-parallel-ratio-v1'){
+      const mode=Number(state.s9Mode||0);
+      return '<section class="mvl mvl-s9">'+head('平行線比例：先分「分段」與「整段」','DE ∥ BC 先給相似，再從圖上決定要用 AD/DB 或 AD/AB。')+
+      select('s9Mode','看哪一組比例',mode,[[0,'相鄰分段'],[1,'整段倍率']])+
+      '<figure class="mvl-visual"><svg viewBox="0 0 520 330" role="img" aria-label="三角形 ABC 中 D E 分別在 AB AC 且 DE 平行 BC"><polygon points="260,28 70,285 450,285" class="mvl-outline"/><line x1="165" y1="156" x2="355" y2="156" class="mvl-split"/><text x="258" y="20">A</text><text x="48" y="306">B</text><text x="458" y="306">C</text><text x="142" y="151">D</text><text x="365" y="151">E</text><text x="185" y="92">6</text><text x="105" y="225">4</text><text x="322" y="92">7.5</text><text x="402" y="225">5</text></svg><figcaption>AD↔AE、DB↔EC；同一位置的線段成對。</figcaption></figure>'+
+      (mode===0?'<div class="mvl-equation"><strong>AD/DB = AE/EC</strong><p>6/4 = 7.5/EC → EC=5。不要把 DB 這個分段和 AC 整段混成一組。</p></div>':'<div class="mvl-equation"><strong>AD/AB = AE/AC</strong><p>6/10 = 7.5/12.5 = 0.6；整段對整段。</p></div>')+'</section>';
+    }
+    if(model==='s-9-4-right-triangle-ratio-v1'){
+      const angle=Number(state.s9Angle||30),scale=Number(state.s9Scale||2),tan=Math.tan(angle*Math.PI/180),h=(100*tan).toFixed(1);
+      return '<section class="mvl mvl-s9">'+head('同一銳角決定固定邊長比','只改大小，比值不變；改角度，比值才改。')+
+      range('s9Angle','銳角',angle,15,45)+range('s9Scale','放大倍率',scale,1,3)+
+      '<figure class="mvl-visual"><svg viewBox="0 0 620 300" role="img" aria-label="兩個同角度但大小不同的直角三角形"><polygon points="35,245 155,245 155,'+(245-h)+'" class="mvl-outline"/><polygon points="285,245 '+(285+120*scale)+',245 '+(285+120*scale)+','+(245-Number(h)*scale)+'" class="mvl-outline"/><text x="45" y="235">'+angle+'°</text><text x="295" y="235">'+angle+'°</text></svg><figcaption>小圖高/底≈'+tan.toFixed(3)+'；大圖高/底≈'+tan.toFixed(3)+'。</figcaption></figure><div class="mvl-equation"><strong>同角縮放 → 對應邊比不變</strong><p>拖曳角度時兩個比值一起改；只拖倍率時不改。</p></div></section>';
+    }
+    if(model==='s-9-5-sector-v1'){
+      const theta=Number(state.s9Theta||90),r=Number(state.s9Radius||5),R=r*20,a=(theta-90)*Math.PI/180,x=180+R*Math.cos(a),y=150+R*Math.sin(a);
+      return '<section class="mvl mvl-s9">'+head('扇形就是整圓的一部分','θ/360 同時控制弧長與扇形面積；弧不是弦。')+range('s9Theta','圓心角 θ',theta,30,330)+range('s9Radius','半徑 r',r,2,7)+
+      '<figure class="mvl-visual"><svg viewBox="0 0 360 310" role="img" aria-label="圓心角 '+theta+' 度的扇形"><circle cx="180" cy="150" r="'+R+'" class="mvl-outline"/><path d="M180 150 L180 '+(150-R)+' A '+R+' '+R+' 0 '+(theta>180?1:0)+' 1 '+x+' '+y+' Z" class="mvl-sector"/></svg><figcaption>'+theta+'° = '+(theta/360).toFixed(3)+' 圈；弧長≈'+(2*Math.PI*r*theta/360).toFixed(2)+'，面積≈'+(Math.PI*r*r*theta/360).toFixed(2)+'。</figcaption></figure></section>';
+    }
+    if(model==='s-9-6-circle-properties-v1'){
+      return '<section class="mvl mvl-s9">'+head('圓的元素：看位置，不靠名詞猜','依序問：是否經圓心？兩端是否在圓上？是否只接觸一點？')+
+      '<figure class="mvl-visual"><svg viewBox="0 0 500 300" role="img" aria-label="半徑、直徑、弦與切線位置圖"><circle cx="240" cy="150" r="105" class="mvl-outline"/><line x1="240" y1="150" x2="345" y2="150" class="mvl-split"/><text x="280" y="140">半徑</text><line x1="135" y1="150" x2="345" y2="150" class="mvl-outline"/><text x="200" y="175">直徑</text><line x1="165" y1="92" x2="315" y2="72" class="mvl-split"/><text x="225" y="70">弦</text><line x1="345" y1="30" x2="345" y2="270" class="mvl-cut-line"/><text x="355" y="60">切線</text></svg><figcaption>直徑是「通過圓心」的特殊弦；切線在切點與半徑垂直。</figcaption></figure></section>';
+    }
+    if(model==='s-9-7-line-circle-relation-v1'){
+      const d=Number(state.s9Distance||4),r=Number(state.s9Radius||4),rel=d<r?'相交：2 點':d===r?'相切：1 點':'相離：0 點';
+      return '<section class="mvl mvl-s9">'+head('直線與圓只要比較 OH 和 r','OH 必須是圓心到直線的垂直最短距離。')+range('s9Distance','OH',d,1,7)+range('s9Radius','半徑 r',r,2,6)+
+      '<figure class="mvl-visual"><svg viewBox="0 0 500 300" role="img" aria-label="圓心到直線距離 '+d+'，半徑 '+r+'"><line x1="35" y1="245" x2="465" y2="245" class="mvl-outline"/><circle cx="250" cy="'+(245-d*28)+'" r="'+(r*28)+'" class="mvl-outline"/><line x1="250" y1="'+(245-d*28)+'" x2="250" y2="245" class="mvl-cut-line"/></svg><figcaption>OH='+d+'，r='+r+' → '+rel+'。</figcaption></figure></section>';
+    }
+    if(model==='s-9-8-circumcenter-v1'){
+      return '<section class="mvl mvl-s9">'+head('外心是「等距」條件的交點','不是目測三角形中央；從邊的垂直平分線找 OA=OB=OC。')+
+      '<figure class="mvl-visual"><svg viewBox="0 0 500 330" role="img" aria-label="三角形外接圓、外心與垂直平分線"><circle cx="250" cy="165" r="115" class="mvl-outline"/><polygon points="250,50 145,215 355,215" class="mvl-outline"/><line x1="250" y1="20" x2="250" y2="300" class="mvl-cut-line"/><line x1="55" y1="132" x2="445" y2="132" class="mvl-cut-line"/><circle cx="250" cy="165" r="6" class="mvl-marker"/><text x="262" y="160">O 外心</text></svg><figcaption>垂直平分線上的點到一邊兩端等距；兩條交會後同時得到 OA=OB=OC。</figcaption></figure></section>';
+    }
+    return '';
+  };
+
+  const supports = (engine,model) => (engine==='math-geometry' && /^s-9-[2-8]-/.test(model)) || engine==='math-visual-area' || engine==='math-factor-model' || engine==='math-polynomial-model' || engine==='math-system-model' || engine==='math-quadratic-model' || (engine==='math-algebra-balance' && model==='a-7-3-linear-equation-check-v1');
+  const defaults = (engine,model) => (engine==='math-geometry' && /^s-9-[2-8]-/.test(model)) ? {s9Mode:0,s9Angle:30,s9Scale:2,s9Theta:90,s9Radius:5,s9Distance:4} : (engine==='math-algebra-balance' && model==='a-7-3-linear-equation-check-v1')
     ? {linearFirstStep:0,linearCandidate:0,linearTransfer:0}
     : engine==='math-visual-area'
     ? {a:4,b:2,formulaMode:0,prediction:0,transferA:5,transferB:1,transferPrediction:0}
@@ -494,7 +540,7 @@
       : model==='a-8-4-factor-meaning-v1'
         ? {factorMeaningX:2,candidateFactor:0,factorMeaningTransfer:0}
         : {commonFactor:0,factorTransfer:0};
-  const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : engine==='math-polynomial-model' ? '多項式視覺工作台' : engine==='math-system-model' ? '聯立方程式雙條件工作台' : engine==='math-quadratic-model' ? '二次方程式視覺工作台' : engine==='math-algebra-balance' ? '一次方程式驗算臺' : '因式結構探索臺';
-  const render = (lesson,state) => (lesson.simulation.engine==='math-algebra-balance' && lesson.simulation.model==='a-7-3-linear-equation-check-v1') ? renderLinearEquationCheck(lesson,state) : lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : lesson.simulation.engine==='math-polynomial-model' ? renderPolynomialOps(lesson,state) : lesson.simulation.engine==='math-system-model' ? renderSystemLab(lesson,state) : lesson.simulation.engine==='math-quadratic-model' ? renderQuadraticLab(lesson,state) : renderFactor(lesson,state);
+  const label = engine => engine==='math-geometry' ? '幾何圖像探索臺' : engine==='math-visual-area' ? '面積公式探索臺' : engine==='math-polynomial-model' ? '多項式視覺工作台' : engine==='math-system-model' ? '聯立方程式雙條件工作台' : engine==='math-quadratic-model' ? '二次方程式視覺工作台' : engine==='math-algebra-balance' ? '一次方程式驗算臺' : '因式結構探索臺';
+  const render = (lesson,state) => (lesson.simulation.engine==='math-geometry' && /^s-9-[2-8]-/.test(lesson.simulation.model)) ? renderS9Geometry(lesson,state) : (lesson.simulation.engine==='math-algebra-balance' && lesson.simulation.model==='a-7-3-linear-equation-check-v1') ? renderLinearEquationCheck(lesson,state) : lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : lesson.simulation.engine==='math-polynomial-model' ? renderPolynomialOps(lesson,state) : lesson.simulation.engine==='math-system-model' ? renderSystemLab(lesson,state) : lesson.simulation.engine==='math-quadratic-model' ? renderQuadraticLab(lesson,state) : renderFactor(lesson,state);
   window.MathVisualLabs={supports,defaults,label,render};
 })();
