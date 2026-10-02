@@ -1,0 +1,58 @@
+lessonId: lesson-math-content-a-8-7
+subject: math
+knowledgeNodes:
+  - kg-math-content-a-8-7
+learningObjective: 由情境建模到標準式，依結構選擇因式分解、配方法或公式解，保留完整根集合並逐根驗證，最後再依情境定義域篩選可行解。
+keyConcept: 代數求根與情境篩選是兩個不同階段；所有等值變形都必須保留等式兩側，所有根先保留再依情境判斷。
+priorKnowledge:
+  - 多項式乘法
+  - 因式分解
+  - 平方公式
+  - 一元二次方程式的意義
+misconceptions:
+  - 一看到負根就從代數根集合刪除
+  - 配方法只在左側補數
+  - 公式解代入 b、c 時丟失原符號
+  - 任何二次方程式都機械套同一解法
+visual:
+  primaryType: quadratic-solution-multi-station
+  secondaryRepresentations:
+    - rectangle-area-model
+    - complete-square-two-side-model
+    - coefficient-cards
+    - method-selection-map
+    - algebraic-vs-context-root-cards
+  firstFrame: 木板長方形模型 w(w+5)=84，先預測完整代數根數量；不先刪除負根。
+  manipulables:
+    - quadSolveMode
+    - quadRootPrediction
+    - quadContextFilter
+    - quadCompleteSquare
+    - quadDeltaPrediction
+    - quadSolutionTransfer
+  dynamicChanges:
+    - 根集合與情境可行集合
+    - 配方兩側同步補數
+    - 判別式與公式解
+    - 方法選擇回饋
+  invariants:
+    - 等價變形保持同一解集合
+    - 情境限制不改寫原方程式的代數根
+interaction:
+  prediction: 每站先預測根數、同步補數、判別式或方法選擇。
+  action: 在四個互斥工作台切換，逐站揭示模型與證據。
+  observation: 比較完整根集與可行尺寸、左右同步變形、a/b/c 符號與 Δ。
+  evidencePrompt: 以完整因式、兩側同加、判別式計算或逐根代回說明。
+  feedback: 對過早刪根、單邊補平方或符號遺失給具體提示。
+  retry: 可重新選擇方法或預測。
+  transfer: x²−x−12=0 依結構優先用因式分解，保留根 4 與 −3。
+accessibility:
+  keyboardAlternative: 所有 mode/select/button 可鍵盤操作。
+  nonDragAlternative: 核心流程不依賴 drag。
+  textAlternative: 圖形、係數卡與根集皆有文字版本。
+  reducedMotion: 不依賴動畫。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
