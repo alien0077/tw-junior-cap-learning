@@ -23,8 +23,9 @@ function fixture(component, extra = {}) {
 
 assert.deepEqual(new Set(MATH_LIVE_COMPONENTS), new Set([
   "FunctionRepresentationBlock", "GeometryManipulationBlock", "AlgebraBalanceBlock",
-  "AlgebraEquationMeaningBlock", "EquivalentExpressionCheckBlock", "NumberLineBlock",
-  "StepwiseReasoningBlock",
+  "AlgebraEquationMeaningBlock", "SystemIntersectionBlock", "SystemEliminationBlock",
+  "QuadraticMeaningBlock", "QuadraticSolutionBlock", "ProbabilityExperimentBlock", "DataExplorerBlock",
+  "EquivalentExpressionCheckBlock", "NumberLineBlock", "StepwiseReasoningBlock",
 ]));
 
 {
