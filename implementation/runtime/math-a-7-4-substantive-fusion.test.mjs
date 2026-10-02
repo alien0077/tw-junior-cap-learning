@@ -6,7 +6,7 @@ const report = JSON.parse(readFileSync(new URL('../reports/a7-4-two-version-subs
 const spec = readFileSync(new URL('../unit-specs/math/cur-math-content-a-7-4.yaml', import.meta.url), 'utf8');
 const sectionText = lesson.content.sections.map(({ heading, body }) => `${heading}\n${body}`).join('\n');
 
-assert.equal(lesson.reviewStatus, 'draft');
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
 assert.match(sectionText, /一道篩選條件/);
 assert.match(sectionText, /同一組數/);
 assert.match(sectionText, /x\+y=18/);
