@@ -163,6 +163,44 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
     if model == "s9-13-prism-surface-volume-v2":
         await require_count(sim, ".sim-prism-lab", 1, "prism renderer missing")
         return
+    if model == "n-7-3-signed-operations-v1":
+        await require_count(sim, ".mgs-signed", 1, "signed-operation Gold renderer missing")
+        await require_count(sim, '[role="img"]', 1, "signed-operation number line missing")
+        await require_count(sim, '[data-sim-control="n73Prediction"]', 1, "signed-operation prediction missing")
+        await require_count(sim, '[data-sim-control="n73Transfer"]', 1, "signed-operation transfer missing")
+        return
+    if model == "f-8-2-linear-parameter-v1":
+        await require_count(sim, ".mgs-function", 1, "linear-parameter Gold renderer missing")
+        await require_count(sim, '[role="img"]', 1, "linear-parameter graph missing")
+        mode = sim.locator('[data-sim-control="f82Mode"]')
+        await require_count(sim, '[data-sim-control="f82Mode"]', 1, "linear-parameter mode missing")
+        await require_count(sim, '[data-sim-control="f82Transfer"]', 1, "linear-parameter transfer missing")
+        await mode.select_option("0")
+        await require_count(sim, '[data-sim-control="f82A"]', 1, "slope control missing")
+        await mode.select_option("1")
+        await require_count(sim, '[data-sim-control="f82B"]', 1, "intercept control missing")
+        await mode.select_option("2")
+        await require_count(sim, '[data-sim-control="f82X"]', 1, "intersection input control missing")
+        await mode.select_option("0")
+        return
+    if model == "s-8-6-pythagorean-area-v1":
+        await require_count(sim, ".mgs-pythagorean", 1, "Pythagorean Gold renderer missing")
+        await require_count(sim, '[role="img"]', 1, "Pythagorean area visual missing")
+        await require_count(sim, '[data-sim-control="s86Prediction"]', 1, "Pythagorean prediction missing")
+        await require_count(sim, '[data-sim-control="s86Transfer"]', 1, "Pythagorean reverse transfer missing")
+        return
+    if model == "d-9-1-boxplot-iqr-v1":
+        await require_count(sim, ".mgs-boxplot", 1, "box-plot Gold renderer missing")
+        await require_count(sim, '[role="img"]', 1, "box-plot visual missing")
+        await require_count(sim, '[data-sim-control="d91Prediction"]', 1, "box-plot prediction missing")
+        await require_count(sim, '[data-sim-control="d91Transfer"]', 1, "box-plot transfer missing")
+        return
+    if model == "d-9-2-relative-frequency-v1":
+        await require_count(sim, ".mgs-probability", 1, "relative-frequency Gold renderer missing")
+        await require_count(sim, '[role="img"]', 1, "relative-frequency plot missing")
+        await require_count(sim, '[data-sim-control="d92Prediction"]', 1, "relative-frequency prediction missing")
+        await require_count(sim, '[data-sim-control="d92Transfer"]', 1, "relative-frequency transfer missing")
+        return
     if engine == "math-number-line":
         await require_count(sim, '[role="img"]', 1, "number-line visual missing")
         await require_count(sim, '[data-sim-control="n"]', 1, "number-line slider missing")
