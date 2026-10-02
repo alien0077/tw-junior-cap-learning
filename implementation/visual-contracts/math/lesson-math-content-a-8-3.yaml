@@ -1,0 +1,54 @@
+lessonId: lesson-math-content-a-8-3
+subject: math
+knowledgeNodes:
+  - kg-math-content-a-8-3
+learningObjective: 分辨多項式減法、乘法、除法各自必須保留的中間結構，並用等值證據驗證運算結果。
+keyConcept: 不同運算有不同不可省略的證據：減法要逐項分配負號；乘法要完成所有項對項配對；除法要能以除式×商＋餘式重組被除式。
+priorKnowledge:
+  - 分配律
+  - 同類項
+  - 單項式乘法
+misconceptions:
+  - 減去括號時只改第一項符號
+  - 二項式乘法只乘首項和末項
+  - 多項式除法只寫商，不檢查餘式與重組
+visual:
+  primaryType: operation-specific-polynomial-workbench
+  secondaryRepresentations:
+    - term-sign-cards
+    - four-cell-product-grid
+    - divisor-quotient-remainder-reconstruction
+    - numeric-equivalence-check
+  firstFrame: 預設顯示括號減法的項卡與整體負號，答案隱藏；學生可切換乘法或除法，但一次只顯示一種認知工作。
+  manipulables:
+    - polyMode
+    - subtractPrediction
+    - multiplyPrediction
+    - dividePrediction
+    - polyTransfer
+  dynamicChanges:
+    - 逐項符號
+    - 四格乘積
+    - 商與餘式重組
+    - 模式專屬回饋
+  invariants:
+    - 正確整理式與原式等值
+    - 除式乘商加餘式等於被除式
+interaction:
+  prediction: 每種模式都先回答該運算最容易出錯的結構問題，再揭示中間證據。
+  action: 切換單一運算工作台，提交預測後查看逐項變號、四格配對或除法重組。
+  observation: 找出漏變號、漏乘積格或遺漏餘式會在哪一個視覺位置破壞等值。
+  evidencePrompt: 減法提交每項變號；乘法提交四個乘積；除法提交除式×商＋餘式。
+  feedback: 指向遺漏的項、格或餘式，不只顯示正誤。
+  retry: 可在各模式重新預測，互不覆蓋其他模式的預測狀態。
+  transfer: 以 (x+5)(x−2) 的長方形情境展開 x²+3x−10，並用 x=3 交叉驗算。
+accessibility:
+  keyboardAlternative: mode 與 prediction/transfer select 可完整鍵盤操作。
+  nonDragAlternative: 核心流程不依賴 drag。
+  textAlternative: 每個視覺模型有 role=img/aria-label，且等值證據另以文字呈現。
+  reducedMotion: 所有推理以狀態切換呈現，不需動畫。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
