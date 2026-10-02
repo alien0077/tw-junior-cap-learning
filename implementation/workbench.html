@@ -39,6 +39,15 @@
     .guided-activity-feedback { min-height: 1.5em; }
     .guided-activity-hint { border-left: 4px solid #a65c00; padding-left: .7rem; }
     .guided-activity button:focus-visible, .guided-activity input:focus-visible { outline: 3px solid #174ea6; outline-offset: 2px; }
+    .interactive-block, .component-visual-body, .math-live-lab, .math-live-controls, .math-live-control, fieldset { min-width: 0; max-width: 100%; }
+    .math-live-lab { display: grid; gap: .7rem; overflow-wrap: anywhere; }
+    .math-live-controls { display: grid; gap: .6rem; }
+    .math-live-control { display: grid; gap: .3rem; }
+    .math-live-control input[type="range"] { width: 100%; min-width: 0; max-width: 100%; }
+    .math-live-canvas { display: block; width: 100%; max-width: 100%; height: auto; }
+    .math-live-table, .component-visual-body table { width: 100%; max-width: 100%; table-layout: fixed; border-collapse: collapse; }
+    .math-live-table th, .math-live-table td, .component-visual-body th, .component-visual-body td { overflow-wrap: anywhere; }
+    .interactive-controls > *, .component-visual-body button { max-width: 100%; overflow-wrap: anywhere; }
     @media (max-width: 480px) { body { padding: .65rem; } .component-visual-body dl { display: block; } .component-visual-body dd { margin-bottom: .4rem; } .data-explorer-lab { padding: .7rem; } }
     .interactive-fallback { border-left: 4px solid #6b7280; padding-left: .7rem; }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
