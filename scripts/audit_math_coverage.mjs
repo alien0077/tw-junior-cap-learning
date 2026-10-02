@@ -48,6 +48,9 @@ const productionRendererSignatures = new Map([
   ["math-data-lab", ["math-data-lab", 'slider("a"', 'slider("b"']],
   ["math-probability-lab", ["math-probability-lab", "trials", "role=\"status\""]],
 ]);
+const productionModelRendererSignatures = new Map([
+  ["a-7-3-linear-equation-check-v1", ["renderLinearEquationCheck", "mvl-linear-equation", "linearCandidate", "linearTransfer"]],
+]);
 
 const lessons = [];
 for (const file of lessonFiles) lessons.push({ file, ...(await readJson(`lessons/math/${file}`)) });
@@ -78,12 +81,15 @@ function reportCandidates(lessonFile) {
   return candidates;
 }
 
-function hasProductionRenderer(engine) {
+function hasProductionRenderer(engine, model = null) {
   if (!engine || !productionMathEngines.has(engine)) return false;
+  const modelSignatures = productionModelRendererSignatures.get(model) || [];
+  if (modelSignatures.length && !modelSignatures.every(signature => productionRendererSource.includes(signature))) return false;
   const signatures = productionRendererSignatures.get(engine) || [];
   if (["math-visual-area", "math-factor-model", "math-polynomial-model", "math-system-model", "math-quadratic-model"].includes(engine)) {
     return signatures.every(signature => productionRendererSource.includes(signature));
   }
+  if (modelSignatures.length) return true;
   if (!productionRendererSource.includes(`if (engine === "${engine}")`)) return false;
   return signatures.every(signature => productionRendererSource.includes(signature));
 }
@@ -110,7 +116,7 @@ const rows = lessons.map(lesson => {
     simulationModel: lesson.simulation?.model || null,
     simulationGoal: Boolean(lesson.simulation?.goal),
     simulationMission: Boolean(lesson.simulation?.mission),
-    productionRenderer: hasProductionRenderer(simulationEngine),
+    productionRenderer: hasProductionRenderer(simulationEngine, lesson.simulation?.model || null),
     interactiveType: lesson.interactive?.type || null,
     spec: resolvedSpec,
     directSpec,
