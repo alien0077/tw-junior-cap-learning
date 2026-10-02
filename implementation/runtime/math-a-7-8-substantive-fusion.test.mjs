@@ -10,7 +10,7 @@ const visible = lesson.content.sections.map(({ heading, body }) => `${heading}\n
 assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
 assert.equal(lesson.content.sections.length, 6);
 assert.equal(lesson.teaching.body.length, 6);
-assert.equal(lesson.simulation.engine, "concept-explorer");
+assert.equal(lesson.simulation.engine, "math-inequality-range", "A-7-8 must use the dedicated inequality renderer rather than the generic concept explorer");
 assert.equal(lesson.simulation.learningDesign.type, "inequality-solution-set");
 assert.equal(lesson.simulation.learningDesign.steps.length, 4);
 assert.deepEqual(lesson.studyReferences, lesson.simulation.sourceRefs);
@@ -34,7 +34,7 @@ assert.match(visible, /−3\(2x−1\)≥9.*−4≤x.*−4、−3、−2、−1/s
 assert.equal(lesson.versionResearch.some((source) => source.publisher === "nani" && source.sourceType === "public-domain"), false);
 assert.equal(lesson.publisherResearch.filter((source) => ["nani", "kanghsuan", "hanlin"].includes(source.publisher) && source.status === "verified").length, 0);
 assert.match(spec, /limited-public-materials-read; source-to-visible-original-synthesis-draft/);
-assert.match(spec, /qaStatus: untested/);
+assert.match(spec, /qaStatus: (?:untested|passed)/, "QA status is finalized only after the browser gate; the content/runtime contract must remain valid in either transition state");
 for (const publisher of ["nani", "kanghsuan", "hanlin"]) assert.match(spec, new RegExp(`${publisher}:\\s*\\n\\s*status: pending`));
 
 // Verify the real renderer's proof graph, step navigation, keyboard focus, and source-data fallback.
