@@ -309,9 +309,9 @@
     "id": "sim-math-d-9-1",
     "engine": "math-data-lab",
     "mode": "model",
-    "model": "general",
-    "goal": "拖曳兩座氣象站的五數摘要，立即同步盒狀圖、中心量、全距、四分位距與播報結論，判讀不同資料分布。",
-    "mission": "你是氣象資料編輯：拖曳甲、乙站的最小值、Q1、中位數、Q3、最大值，先預測散布，再只改一個位置觀察圖表與文字結論如何同步改變。",
+    "model": "d-9-1-boxplot-iqr-v1",
+    "goal": "以雙盒狀圖同步五數摘要、全距與 IQR，讓學生只改最大值或 Q3，觀察『鬚』與『盒子』分別對應哪一種散布資訊。",
+    "mission": "先預測最大值 30→35 對全距與 IQR 的不同影響，再拖曳最大值與 Q3，最後用『IQR 只描述中間 50%』限制統計結論。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
