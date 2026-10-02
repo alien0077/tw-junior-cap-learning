@@ -63,8 +63,8 @@ unitImplementationSpec:
   - 回乘驗證帶逐項顯示展開來源和同次項係數比較
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-A-8-5-I01
-    component: StepwiseReasoningBlock
-    purpose: 依多項式結構把方法選擇轉成可追溯分流，並以回乘檢查每個候選因式
+    component: FactorStructureBlock
+    purpose: 以因子 token 並排顯示每項材料，讓共同係數與共同字母可見；再用逐項相除、方法分流與回乘檢查完成因式分解。
     initialState:
       mode: predict
       showAnswer: false
@@ -76,17 +76,17 @@ unitImplementationSpec:
         crossProductSum: null
         factorTreeDepth: 0
     studentActions:
-    - 先提交第一個方法選擇及理由，答案先隱藏
-    - 在各項下標出可提出的係數因子和共同變數次方
+    - 先從兩列因子 token 預測最大共同因式，答案先隱藏
+    - 比較共同 token，選擇候選因式後立即看到是否漏掉共同字母或出現不可整除的商
     - 選擇平方差、完全平方或十字交乘，填入判斷所需的係數關係
-    - 逐層展開因式樹，每層可撤回並改用另一方法
-    - 展開最終因式並比較原式係數，說明為何已完全分解
+    - 提出共同因式後，再用方法地圖判斷平方差、完全平方或三項式結構
+    - 以 15x²y−10xy² 做 transfer，最後展開因式並逐項比較原式
     visualRules:
     - 提出候選公因式後，逐項顯示整除結果；任一項不整除即不接受
     - 完全平方分流需同時驗證首末項開方及中間項兩倍乘積
     - 十字交乘需驗證交叉和與中間係數完全相符，不能只比積
     - 因式樹仍有可拆節點時不得顯示「完全分解」完成狀態
-    - 預測及錯誤路徑保留；文字標籤和窄螢幕步驟卡完整呈現結構
+    - 預測及錯誤路徑保留；token 同時有文字與外框，不以顏色作唯一資訊，320/375/390/430px 均可單欄操作
     misconceptionChecks:
     - id: MC-CUR-MATH-CONTENT-A-8-5-I01
       trigger: 對 6x²−24 直接用十字交乘，或將 x²+6x+9 說成平方差
@@ -144,6 +144,8 @@ unitImplementationSpec:
     breakpoints:
     - 320
     - 375
+    - 390
+    - 430
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
@@ -167,7 +169,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-5
