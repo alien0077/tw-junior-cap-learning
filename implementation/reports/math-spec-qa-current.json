@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T06:58:28.232507+00:00",
-  "sourceCommit": "6c08e76639a0c5d538775b2de53f80b9260624c7",
+  "generatedAt": "2026-10-02T07:04:44.272866+00:00",
+  "sourceCommit": "cec067d0b87b81d1f0f2a77e5c900cbc2245fa2f",
   "browserReport": "implementation/reports/math-browser-qa-current.json",
   "qaStatus": "verified",
   "unitSpecCount": 129,
@@ -13,6 +13,8 @@
     "viewports": [
       320,
       375,
+      390,
+      430,
       768
     ],
     "checks": [
@@ -23,7 +25,7 @@
       "interactive control has an accessible name",
       "keyboard action causes observable state change",
       "engine/model-specific renderer depth",
-      "no horizontal overflow at 320/375/768px",
+      "no horizontal overflow at 320/375/390/430/768px",
       "reduced-motion browser mode",
       "zero page runtime errors"
     ]

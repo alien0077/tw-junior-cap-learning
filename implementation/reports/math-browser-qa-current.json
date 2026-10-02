@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-02T06:58:28.232507+00:00",
-  "sourceCommit": "6c08e76639a0c5d538775b2de53f80b9260624c7",
+  "generatedAt": "2026-10-02T07:04:44.272866+00:00",
+  "sourceCommit": "cec067d0b87b81d1f0f2a77e5c900cbc2245fa2f",
   "status": "PASS",
   "scope": {
     "browser": "Chromium/Playwright",
@@ -10,6 +10,8 @@
     "viewports": [
       320,
       375,
+      390,
+      430,
       768
     ],
     "checks": [
@@ -20,16 +22,17 @@
       "interactive control has an accessible name",
       "keyboard action causes observable state change",
       "engine/model-specific renderer depth",
-      "no horizontal overflow at 320/375/768px",
+      "no horizontal overflow at 320/375/390/430/768px",
       "reduced-motion browser mode",
       "zero page runtime errors"
     ]
   },
   "engineCounts": {
-    "math-algebra-balance": 10,
+    "math-algebra-balance": 7,
     "math-data-lab": 4,
     "math-equation-meaning": 1,
     "math-expression-lab": 2,
+    "math-factor-model": 2,
     "math-function-graph": 7,
     "math-geometry": 30,
     "math-inequality-range": 2,
@@ -37,7 +40,8 @@
     "math-probability-lab": 2,
     "math-reasoning-lab": 52,
     "math-system-graph": 1,
-    "math-ticket-equation": 1
+    "math-ticket-equation": 1,
+    "math-visual-area": 1
   },
   "failures": [],
   "lessons": [
@@ -63,6 +67,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -97,6 +113,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -127,6 +155,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -161,6 +201,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -191,6 +243,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -225,6 +289,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -255,6 +331,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -289,6 +377,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -300,13 +400,13 @@
     {
       "id": "lesson-math-content-a-8-1",
       "file": "lesson-math-content-a-8-1.json",
-      "engine": "math-algebra-balance",
-      "model": "general",
+      "engine": "math-visual-area",
+      "model": "a-8-1-quadratic-identities-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 把幾何面積翻譯成完全平方公式",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "探索模式",
+        "tag": "select",
+        "type": null
       },
       "viewports": {
         "320": {
@@ -319,6 +419,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -353,6 +465,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -383,6 +507,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -417,6 +553,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -428,13 +576,13 @@
     {
       "id": "lesson-math-content-a-8-5",
       "file": "lesson-math-content-a-8-5.json",
-      "engine": "math-algebra-balance",
-      "model": "general",
+      "engine": "math-factor-model",
+      "model": "a-8-5-factorization-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 只拖曳括號內的結構卡，判斷 4x²−100 應否從公因式轉到平方差",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "先預測最大共同因式",
+        "tag": "select",
+        "type": null
       },
       "viewports": {
         "320": {
@@ -447,6 +595,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -481,6 +641,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -511,6 +683,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -545,6 +729,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -575,6 +771,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -609,6 +817,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -639,6 +859,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -673,6 +905,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -703,6 +947,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -737,6 +993,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -767,6 +1035,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -801,6 +1081,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -831,6 +1123,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -865,6 +1169,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -895,6 +1211,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -929,6 +1257,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -959,6 +1299,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -993,6 +1345,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1023,6 +1387,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1057,6 +1433,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1087,6 +1475,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1121,6 +1521,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1151,6 +1563,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1185,6 +1609,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1215,6 +1651,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1249,6 +1697,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1279,6 +1739,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1313,6 +1785,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1343,6 +1827,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1377,6 +1873,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1407,6 +1915,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1441,6 +1961,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1471,6 +2003,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1505,6 +2049,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1535,6 +2091,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1569,6 +2137,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1599,6 +2179,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1633,6 +2225,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1663,6 +2267,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1697,6 +2313,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1727,6 +2355,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1761,6 +2401,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1791,6 +2443,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1825,6 +2489,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1855,6 +2531,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1889,6 +2577,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1919,6 +2619,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -1953,6 +2665,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -1983,6 +2707,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2017,6 +2753,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2047,6 +2795,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2081,6 +2841,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2111,6 +2883,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2145,6 +2929,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2175,6 +2971,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2209,6 +3017,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2239,6 +3059,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2273,6 +3105,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2303,6 +3147,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2337,6 +3193,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2367,6 +3235,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2401,6 +3281,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2431,6 +3323,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2465,6 +3369,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2495,6 +3411,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2529,6 +3457,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2561,6 +3501,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2572,13 +3524,13 @@
     {
       "id": "lesson-math-factorization-common-factor",
       "file": "lesson-math-factorization-common-factor.json",
-      "engine": "math-algebra-balance",
+      "engine": "math-factor-model",
       "model": "a-8-5-common-factor-v1",
       "keyboardInteraction": {
-        "controlIndex": 1,
-        "accessibleName": "2. 把 6x 拖到括號外，逐項計算括號內兩個剩餘項並保留正號。",
-        "tag": "button",
-        "type": "button"
+        "controlIndex": 0,
+        "accessibleName": "先預測最大共同因式",
+        "tag": "select",
+        "type": null
       },
       "viewports": {
         "320": {
@@ -2591,6 +3543,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2625,6 +3589,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2655,6 +3631,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2689,6 +3677,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2719,6 +3719,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2753,6 +3765,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2783,6 +3807,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2817,6 +3853,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2847,6 +3895,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2881,6 +3941,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2911,6 +3983,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -2945,6 +4029,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -2975,6 +4071,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3009,6 +4117,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3039,6 +4159,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3073,6 +4205,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3103,6 +4247,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3137,6 +4293,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3167,6 +4335,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3201,6 +4381,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3231,6 +4423,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3265,6 +4469,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3295,6 +4511,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3329,6 +4557,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3359,6 +4599,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3393,6 +4645,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3423,6 +4687,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3457,6 +4733,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3487,6 +4775,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3521,6 +4821,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3551,6 +4863,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3585,6 +4909,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3615,6 +4951,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3649,6 +4997,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3679,6 +5039,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3713,6 +5085,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3743,6 +5127,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3777,6 +5173,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3807,6 +5215,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3841,6 +5261,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3871,6 +5303,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3905,6 +5349,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3935,6 +5391,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -3969,6 +5437,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -3999,6 +5479,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -4033,6 +5525,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -4063,6 +5567,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
@@ -4097,6 +5613,18 @@
           "client": 375,
           "offenders": []
         },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
+          "offenders": []
+        },
         "768": {
           "body": 768,
           "doc": 768,
@@ -4127,6 +5655,18 @@
           "body": 375,
           "doc": 375,
           "client": 375,
+          "offenders": []
+        },
+        "390": {
+          "body": 390,
+          "doc": 390,
+          "client": 390,
+          "offenders": []
+        },
+        "430": {
+          "body": 430,
+          "doc": 430,
+          "client": 430,
           "offenders": []
         },
         "768": {
