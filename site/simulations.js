@@ -20,6 +20,7 @@
     if (engine === "science-motion-lab" && model === "eb-iv-11-impulse") return { mass: 2, initialVelocity: 1, force: 4, duration: 2, impulsePrediction: "", predictionSubmitted: false, impulseFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "ec-iv-2-boyle") return { gasVolume: 50, boylePrediction: "", predictionSubmitted: false, boyleFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-12-mass-inertia") return { cartMass: 2, pushForce: 4, pushTime: 2, massPrediction: "", predictionSubmitted: false, massFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-13-action-reaction") return { collisionForce: 5, systemBoundary: "separate", thirdPrediction: "", predictionSubmitted: false, thirdFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -181,6 +182,18 @@
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
       </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-13-action-reaction") {
+      const F=clamp(Number(state.collisionForce),1,10),together=state.systemBoundary==="together",locked=!state.predictionSubmitted,L=F*18;
+      return `<section class="sim-third-law-lab" aria-label="作用力反作用力視覺實驗室"><div class="sim-visual-first"><figure class="sim-third-law-stage"><svg viewBox="0 0 680 330" role="img" aria-label="兩車接觸時互相施加大小 ${F} 牛頓方向相反的力">
+      <rect x="170" y="150" width="115" height="65" rx="10" class="sim-cart"/><rect x="395" y="150" width="115" height="65" rx="10" class="sim-cart"/><text x="227" y="188" text-anchor="middle">車 A</text><text x="452" y="188" text-anchor="middle">車 B</text>
+      <line x1="285" y1="135" x2="${285-L}" y2="135" class="sim-force-arrow"/><text x="180" y="115">B 對 A：${F} N ←</text><line x1="395" y1="235" x2="${395+L}" y2="235" class="sim-force-arrow"/><text x="400" y="270">A 對 B：${F} N →</text>
+      <rect x="${together?145:160}" y="105" width="${together?390:145}" height="155" rx="16" class="sim-system-boundary"/>${together?"":'<rect x="380" y="105" width="145" height="155" rx="16" class="sim-system-boundary"/>'}
+      <text x="340" y="55" text-anchor="middle">${together?"系統＝A+B：車間力成為內力配對":"系統分開：每個力作用在不同物體上"}</text></svg><figcaption>第三定律力對：同時、等大、反向，但作用在不同物體；因此不能在「單一物體」受力圖中互相抵消。</figcaption></figure>
+      <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>大車撞小車時，接觸瞬間兩車互相作用力大小？</p><div class="sim-actions"><button data-third-action="predict" data-value="equal">等大反向</button><button data-third-action="predict" data-value="big">大車施力較大</button></div><button data-third-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.thirdFeedback||"先分清楚『力』和『加速度』。")}</p></div></div>
+      <fieldset class="sim-third-law-controls" ${locked?"disabled":""}><legend>2. 操作碰撞與系統邊界</legend>${slider("collisionForce","接觸力大小",F,1,10,1," N")}<div class="sim-actions"><button data-third-action="boundary" data-value="separate">分開看 A、B</button><button data-third-action="boundary" data-value="together">把 A+B 當一個系統</button></div></fieldset>
+      <div class="sim-evidence-card"><p><b>3. 圖像證據</b></p><p>兩支箭頭都標 ${F} N，方向相反、作用對象不同。${together?"當 A+B 合併成系統時，這一對車間作用力是內力；分析整體外力時不需各自當外力相加。":"分開畫受力圖時，B 對 A 只畫在 A，A 對 B 只畫在 B。"}</p></div>
+      <div class="sim-transfer-card"><p><b>4. 遷移：兩車受力等大，為何加速度仍可不同？</b></p><div class="sim-actions"><button data-third-action="transfer" data-value="mass">質量不同，a=F/m</button><button data-third-action="transfer" data-value="force">因為作用力其實不等大</button></div><p role="status">${esc(state.transferFeedback||"把第三定律與第二定律分開使用。")}</p></div></section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-12-mass-inertia") {
       const mass=clamp(Number(state.cartMass),1,6),force=clamp(Number(state.pushForce),1,8),time=clamp(Number(state.pushTime),.5,4),a=force/mass,dv=a*time,locked=!state.predictionSubmitted;
@@ -611,6 +624,8 @@
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
     }
+    const thirdAction=event.target.closest("[data-third-action]");
+    if(thirdAction && lesson.simulation.model==="eb-iv-13-action-reaction"){const action=thirdAction.dataset.thirdAction,value=thirdAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{thirdPrediction:value,thirdFeedback:""});return;}if(action==="submit-prediction"){update(root,state.thirdPrediction?{predictionSubmitted:true,thirdFeedback:state.thirdPrediction==="equal"?"預測已記錄。調整接觸力，觀察兩支箭頭是否永遠成對。":"預測已記錄。觀察兩車箭頭數值，再分辨加速度差異。"}:{thirdFeedback:"請先選擇預測。"});return;}if(action==="boundary"){update(root,{systemBoundary:value});return;}if(action==="transfer"){update(root,value==="mass"?{transferChoice:value,transferFeedback:"正確：第三定律保證力對等大反向；第二定律說同一大小的力作用於不同質量可產生不同加速度。"}:{transferChoice:value,transferFeedback:"先看圖：兩支力箭頭的數值始終相同。"});return;}}
     const massInertiaAction=event.target.closest("[data-mass-inertia-action]");
     if(massInertiaAction && lesson.simulation.model==="eb-iv-12-mass-inertia"){const action=massInertiaAction.dataset.massInertiaAction,value=massInertiaAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{massPrediction:value,massFeedback:""});return;}if(action==="submit-prediction"){update(root,state.massPrediction?{predictionSubmitted:true,massFeedback:state.massPrediction==="half"?"預測已記錄。固定推力與時間，只改質量比較 Δv。":"預測已記錄。只改質量，用 a=F/m 檢查。"}:{massFeedback:"請先選擇預測。"});return;}if(action==="transfer"){update(root,value==="mass"?{transferChoice:value,transferFeedback:"正確：質量越大，慣性越大；同樣合力造成的加速度較小。"}:{transferChoice:value,transferFeedback:"重力仍存在；關鍵是質量與慣性。"});return;}}
     const boyleAction=event.target.closest("[data-boyle-action]");
