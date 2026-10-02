@@ -86,7 +86,7 @@ const productionModelRendererSignatures = new Map([
   ["s-8-5-triangle-congruence-v1", ["s85Evidence", "mgf-proof"]],
   ["s-9-2-triangle-similarity-v1", ["s92Evidence", "mgf-proof"]],
   ["s-9-3-parallel-ratio-v1", ["s93Move", "mgf-svg"]],
-  ["a-7-1-like-terms-v1", ["a71Choice","mnf-structure"]],
+  ["a-7-1-like-terms-v1", ["a71Choice","a71X","mnf-structure"]],
   ["a-7-3-balance-equation-v1", ["a73Step","mnf-structure"]],
   ["d-7-1-chart-choice-v1", ["d71Chart","mdf-chart"]],
   ["d-7-2-center-outlier-v1", ["d72Outlier","mdf-stats"]],
