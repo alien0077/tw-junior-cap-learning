@@ -56,8 +56,8 @@ unitImplementationSpec:
   - 有序數對標記：固定 x=果汁、y=茶，座標軸、文字與表格順序保持一致，提供非圖像文字說明。
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-A-7-4-I01
-    component: DataExplorerBlock
-    purpose: 讓學生探索兩條獨立資料限制各自篩選哪些飲品組合，並找到同時符合杯數和冰塊紀錄的共同數對。
+    component: SystemIntersectionBlock
+    purpose: 以兩張同步條件卡探索兩條限制如何篩選同一候選有序數對；學生只改 x、讓 y 維持第一式，再找出兩張卡同時通過的共同解。
     initialState:
       mode: predict
       showAnswer: false
@@ -118,6 +118,8 @@ unitImplementationSpec:
     breakpoints:
     - 320
     - 375
+    - 390
+    - 430
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
@@ -141,7 +143,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-7-4
