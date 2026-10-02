@@ -62,3 +62,16 @@
 @media (prefers-reduced-motion: reduce) {
   .sim-torque-lab *, .sim-torque-lab *::before, .sim-torque-lab *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
 }
+
+/* Visual-first science: Eb-IV-4 friction threshold lab */
+.sim-friction-lab { display:grid; gap:1rem; }
+.sim-friction-stage { margin:0; border:1px solid var(--border,#d7dce3); border-radius:16px; padding:1rem; background:var(--surface,#fff); }
+.sim-friction-stage svg { display:block; width:100%; min-height:250px; }
+.sim-friction-stage figcaption { text-align:center; font-size:1.05rem; margin-top:.4rem; }
+.sim-box { fill:#d9b36c; stroke:currentColor; stroke-width:2; }
+.sim-surface-line { stroke:currentColor; stroke-width:4; }
+.sim-friction-controls { border:1px solid var(--border,#d7dce3); border-radius:16px; padding:1rem; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:.8rem 1rem; }
+.sim-friction-controls .sim-actions { grid-column:1/-1; display:flex; gap:.5rem; flex-wrap:wrap; }
+.sim-friction-controls:disabled { opacity:.58; }
+.sim-friction-lab button[aria-pressed="true"] { outline:3px solid currentColor; outline-offset:2px; }
+@media(max-width:720px){.sim-friction-controls{grid-template-columns:1fr}.sim-friction-stage svg{min-height:210px}}
