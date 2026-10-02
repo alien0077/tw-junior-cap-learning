@@ -336,7 +336,7 @@
     "id": "sim-science-eb-iv-6",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-6-buoyancy",
     "goal": "操作重量、液體密度與排液體積資料，驗證浮力等於排開液體重量，並以力圖判斷浮沉。",
     "mission": "你是水槽實驗紀錄員：用彈簧秤找浮力、以溢水量核對排液重量，最後替模型船調整排水量使它安全漂浮。",
     "sourceRefs": [
@@ -382,6 +382,18 @@
           "feedback": "紀錄要同時寫總重、排水量與狀態，不能只說船底面積大就一定安全。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "immersed-object-force-and-displacement",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "objectWeight",
+        "liquidDensity",
+        "displacedVolume"
+      ],
+      "transferScenario": "loaded-floating-boat"
     }
   }
 }
