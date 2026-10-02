@@ -1,0 +1,45 @@
+unitImplementationSpec:
+  specVersion: '1.0'
+  lessonId: cur-math-factorization-common-factor
+  knowledgeGraphIds: [kg-math-content-a-8-5]
+  title: 因式分解：先找共同因數
+  subject: math
+  curriculumLevel: learning-content
+  gradeRange: ['8']
+  learningGoals:
+  - 由係數最大公因數與共同字母最低次方找最大共同因式
+  - 逐項相除形成括號內容並以分配律展開回驗
+  coreConcepts:
+  - 共同因式必須整除每一項
+  - 提公因式是分配律的反向操作
+  - 等值分解不等於已提出最大共同因式
+  misconceptions:
+  - 只提出數字而漏掉共同字母
+  - 把共同字母次方取最高而非最低
+  - 括號內某項未除以公因式或負號遺失
+  interactiveBlocks:
+  - id: CUR-MATH-FACTOR-COMMON-I01
+    component: AlgebraBalanceBlock
+    purpose: 比較12x²與18x的係數及字母因子，提出6x後逐項相除並展開驗證
+    studentActions:
+    - 列出12與18的最大公因數及x的共同最低次方
+    - 將6x提出並計算2x與3
+    - 展開6x(2x+3)逐項核對原式
+    - 遷移到15x²y−10xy²並提出5xy
+    misconceptionChecks:
+    - id: MC-CUR-MATH-FACTOR-COMMON-I01
+      trigger: 只提出6或錯提12x
+      prompt: 分別計算每一原項除以候選共同因式，確認商是否保留正確係數與次方。
+      expectedEvidence: 12x²÷6x=2x；18x÷6x=3；回乘恢復12x²+18x
+  testCases:
+  - 12x²+18x必須得到6x(2x+3)並能展開回原式
+  - 15x²y−10xy²必須辨認最大共同因式5xy且保留負號
+  - 錯誤候選12x須由18x÷12x暴露問題
+  - 鍵盤操作與文字fallback不得只靠顏色表達共同因子
+  status:
+    designStatus: specified
+    implementationStatus: implemented
+    qaStatus: untested
+  sourceRefs:
+  - locator: A-8-5 lineage；lesson publisherResearch、studyReferences 與 simulation sourceRefs
+    role: curriculum-and-lesson-evidence
