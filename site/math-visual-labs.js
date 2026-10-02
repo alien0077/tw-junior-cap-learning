@@ -93,6 +93,89 @@
       '</section>';
   };
 
+  const systemCard = (title,equation,value,target,shown) => {
+    const pass=value===target;
+    return '<article class="mvl-system-card"><b>'+esc(title)+'</b><strong>'+esc(equation)+'</strong>'+
+      (shown?'<p class="mvl-system-result '+(pass?'is-pass':'is-fail')+'">'+(pass?'✓ 通過':'✗ 未通過')+'：左側 = '+value+'，右側 = '+target+'</p>':'<p class="mvl-system-result">先預測，計算暫時隱藏</p>')+
+      '</article>';
+  };
+
+  const renderSystemMeaning = (lesson,state) => {
+    const x=Math.max(0,Math.min(18,Number(state.systemX??10)));
+    const y=18-x;
+    const prediction=Number(state.meaningPrediction||0);
+    const reveal=prediction>0;
+    const first=x+y, second=2*x+y;
+    const both=first===18 && second===30;
+    const feedback=!prediction
+      ? '先判斷候選 (10,8)：只通過一條式，能不能叫共同解？'
+      : prediction===2
+        ? '正確。10+8=18，但 2×10+8=28≠30；只通過第一張紀錄，還不是共同解。'
+        : '再做第二次檢查。聯立方程式的「解」必須讓兩條等式同時成立。';
+    const liveFeedback=reveal
+      ? (both?'目前 ('+x+','+y+') 同時通過兩條限制，所以是共同解。':'目前 ('+x+','+y+') 只通過總杯數；冰塊條件得到 '+second+'，仍不是共同解。')
+      : '預測後再調整果汁杯數，找出兩張工作單同時出現 ✓ 的位置。';
+    const transfer=Number(state.systemMeaningTransfer||0);
+    const transferFeedback=!transfer?'遷移到回收站：別忘了 x、y 的順序也屬於證據。':transfer===1?'正確。(21,4) 同時得到 25 件與 46 公斤，兩條限制都成立。':'再逐式代入：(21+4) 與 (2×21+4) 要分別核對。';
+    return '<section class="mvl mvl-system-meaning" aria-label="聯立方程式共同解雙條件檢查模型">'+
+      '<div class="mvl-task"><span class="mvl-step">1 先預測</span><strong>候選 (10,8) 是共同解嗎？</strong><p>一組數要通過兩張工作單，不能只看其中一張。</p></div>'+
+      select('meaningPrediction','你的預測',prediction,[[0,'先選答案'],[1,'是，通過任一式即可'],[2,'不是，只通過第一式'],[3,'不是，只通過第二式']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(feedback)+'</p>'+
+      '<div class="mvl-system-candidate" role="img" aria-label="候選有序數對 x 等於 '+x+'，y 等於 '+y+'，逐一檢查兩條限制"><div class="mvl-system-pair"><span>x 果汁</span><b>'+x+'</b><span>y 茶</span><b>'+y+'</b></div>'+
+      '<div class="mvl-system-cards">'+
+      systemCard('工作單 A：總杯數','x + y = 18',first,18,reveal)+
+      systemCard('工作單 B：冰塊需求','2x + y = 30',second,30,reveal)+
+      '</div></div>'+
+      range('systemX','調整果汁 x（茶 y 自動維持總杯數 18）',x,0,18)+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(liveFeedback)+'</p>'+
+      (reveal?'<div class="mvl-equation"><span>共同解判準</span><strong>兩張卡都 ✓ 才完成；目前 '+(both?'(12,6) 是共同解':'尚未同時成立')+'</strong></div>':'')+
+      '<div class="mvl-transfer"><span class="mvl-step">2 遷移</span><strong>回收站：x+y=25，2x+y=46；(21,4) 呢？</strong>'+
+      select('systemMeaningTransfer','判斷',transfer,[[0,'先預測'],[1,'同時通過兩式'],[2,'只通過第一式'],[3,'只通過第二式']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(transferFeedback)+'</p></div>'+
+      '</section>';
+  };
+
+  const renderSystemElimination = (lesson,state) => {
+    const method=Number(state.eliminationMethod||0);
+    const back=Number(state.eliminationBack||0);
+    const transfer=Number(state.eliminationTransfer||0);
+    const methodFeedback=!method
+      ? '先看 y 欄：兩式的 y 係數都是 1。哪個整行運算能最省步驟地消去 y？'
+      : method===1
+        ? '正確。第二式減第一式時，左邊每一項與右邊常數都必須一起相減。'
+        : '這個方法不是不能做，但本題 y 係數已相同；直接整行相減更短，也更容易保留等式結構。';
+    const backFeedback=!back
+      ? (method===1?'得到 x=15 仍未完成；聯立解需要兩個未知數。':'先選消去策略。')
+      : back===2
+        ? '正確。15+y=35，所以 y=20；再把 (15,20) 同時送回兩條原式。'
+        : '回代 x=15 到 x+y=35：y 應補足到 35。';
+    const transferFeedback=!transfer
+      ? '新題 x+y=40、3x+2y=100：先找能讓 y 係數互相抵消的整行操作。'
+      : transfer===1
+        ? '正確。第一式乘 −2 後與第二式相加：x=20，再回代 y=20；兩式都成立。'
+        : '要消去 y，兩個 y 係數要成為相反數；把第一式整行乘 −2。';
+    return '<section class="mvl mvl-system-elimination" aria-label="聯立方程式消去法整行運算模型">'+
+      '<div class="mvl-task"><span class="mvl-step">1 看係數再選方法</span><strong>x+y=35；2x+y=50</strong><p>不是背固定順序，而是找哪一欄可以最直接消去。</p></div>'+
+      '<div class="mvl-system-stack" role="img" aria-label="兩條方程式按 x、y、常數對齊">'+
+      '<div><span>x</span><span>+</span><span>y</span><span>=</span><span>35</span></div>'+
+      '<div><span>2x</span><span>+</span><span>y</span><span>=</span><span>50</span></div>'+
+      (method===1?'<div class="mvl-system-operation"><span>相減</span><strong>x</strong><span>+</span><strong>0y</strong><span>=</span><strong>15</strong></div>':'<div class="mvl-system-operation is-hidden">先預測整行運算，再揭示結果</div>')+
+      '</div>'+
+      select('eliminationMethod','先預測最省步驟的方法',method,[[0,'先選方法'],[1,'第二式 − 第一式，消去 y'],[2,'先把兩式都乘 2'],[3,'只把左邊相減']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(methodFeedback)+'</p>'+
+      (method===1?'<div class="mvl-equation"><span>整行證據</span><strong>(2x+y)−(x+y)=50−35 → x=15</strong><p>右側也要做 50−35；只動左邊會破壞等式。</p></div>':'')+
+      select('eliminationBack','x=15 後，y 是多少？',back,[[0,'先回代'],[1,'15'],[2,'20'],[3,'35']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(backFeedback)+'</p>'+
+      (back===2?'<div class="mvl-system-cards">'+systemCard('原式 A','x+y=35',15+20,35,true)+systemCard('原式 B','2x+y=50',2*15+20,50,true)+'</div>':'')+
+      '<div class="mvl-transfer"><span class="mvl-step">2 遷移</span><strong>x+y=40；3x+2y=100</strong>'+
+      select('eliminationTransfer','哪個操作先消去 y？',transfer,[[0,'先預測'],[1,'第一式×(−2)，再與第二式相加'],[2,'兩式直接相減'],[3,'只把 y 的係數改號']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(transferFeedback)+'</p></div>'+
+      '</section>';
+  };
+
+  const renderSystemLab = (lesson,state) =>
+    lesson.simulation.model==='a-7-4-system-meaning-v1' ? renderSystemMeaning(lesson,state) : renderSystemElimination(lesson,state);
+
   const polySubtractionVisual = reveal =>
     '<div class="mvl-poly-board mvl-poly-subtract" role="img" aria-label="五 x 平方減去括號二 x 平方減三 x 加一的逐項符號模型">'+
       '<div class="mvl-poly-expression"><span class="mvl-term">5x²</span><b>−</b><span class="mvl-bracket">'+
@@ -257,15 +340,17 @@
       '</div><details class="mvl-evidence"><summary>為什麼不是只背最大公因數？</summary><p>因式分解是分配律的反向操作。候選共同因式必須逐項相除得到整式，最後再乘回原式；三個步驟都能檢查。</p></details></section>';
   };
 
-  const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model' || engine==='math-polynomial-model';
+  const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model' || engine==='math-polynomial-model' || engine==='math-system-model';
   const defaults = (engine,model) => engine==='math-visual-area'
     ? {a:4,b:2,formulaMode:0,prediction:0,transferA:5,transferB:1,transferPrediction:0}
     : engine==='math-polynomial-model'
       ? {polyMode:0,subtractPrediction:0,multiplyPrediction:0,dividePrediction:0,polyTransfer:0}
+      : engine==='math-system-model'
+        ? (model==='a-7-4-system-meaning-v1' ? {meaningPrediction:0,systemX:10,systemMeaningTransfer:0} : {eliminationMethod:0,eliminationBack:0,eliminationTransfer:0})
       : model==='a-8-4-factor-meaning-v1'
         ? {factorMeaningX:2,candidateFactor:0,factorMeaningTransfer:0}
         : {commonFactor:0,factorTransfer:0};
-  const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : engine==='math-polynomial-model' ? '多項式視覺工作台' : '因式結構探索臺';
-  const render = (lesson,state) => lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : lesson.simulation.engine==='math-polynomial-model' ? renderPolynomialOps(lesson,state) : renderFactor(lesson,state);
+  const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : engine==='math-polynomial-model' ? '多項式視覺工作台' : engine==='math-system-model' ? '聯立方程式雙條件工作台' : '因式結構探索臺';
+  const render = (lesson,state) => lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : lesson.simulation.engine==='math-polynomial-model' ? renderPolynomialOps(lesson,state) : lesson.simulation.engine==='math-system-model' ? renderSystemLab(lesson,state) : renderFactor(lesson,state);
   window.MathVisualLabs={supports,defaults,label,render};
 })();
