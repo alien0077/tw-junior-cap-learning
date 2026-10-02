@@ -147,7 +147,171 @@ function geometryMode(spec) {
   return "rectangle";
 }
 
+
+function mountQuadraticIdentitiesLab({ document, root, block, spec }) {
+  const store = storageFor(block.id);
+  const prior = store?.get() || {};
+  const state = {
+    a: clamp(number(prior.a, 4), 3, 8),
+    b: clamp(number(prior.b, 2), 1, 7),
+    mode: prior.mode || "plus",
+    prediction: prior.prediction || "",
+    revealed: Boolean(prior.revealed),
+    transferA: clamp(number(prior.transferA, 5), 4, 9),
+    transferB: clamp(number(prior.transferB, 1), 1, 8),
+  };
+  if (state.b >= state.a) state.b = state.a - 1;
+  if (state.transferB >= state.transferA) state.transferB = state.transferA - 1;
+
+  const { lab, status } = makeLab(document, block, "乘法公式面積探索臺");
+  lab.classList.add("math-area-lab");
+  const intro = document.createElement("p");
+  intro.innerHTML = "<strong>先看圖，再預測。</strong> 操作 a、b，觀察面積區塊如何改變。";
+
+  const modeBar = document.createElement("div");
+  modeBar.className = "math-area-modebar";
+  modeBar.setAttribute("role", "group");
+  modeBar.setAttribute("aria-label", "公式模式");
+  const figure = document.createElement("figure");
+  figure.className = "math-area-figure";
+  const canvas = makeCanvas(document, "乘法公式動態面積模型", 420, 360);
+  const caption = document.createElement("figcaption");
+  figure.append(canvas, caption);
+
+  const controls = document.createElement("div");
+  controls.className = "math-live-controls";
+  const predict = document.createElement("fieldset");
+  predict.className = "math-area-predict";
+  const legend = document.createElement("legend");
+  legend.textContent = "先預測，再揭示";
+  predict.append(legend);
+  const feedback = document.createElement("p");
+  feedback.className = "math-area-feedback";
+  feedback.setAttribute("aria-live", "polite");
+  const evidence = document.createElement("div");
+  evidence.className = "math-area-evidence";
+
+  const modes = {
+    plus: { label: "(a+b)²", correct: "two", choices: [["two","會有兩個 ab"],["none","只有 a² 與 b²"],["cancel","ab 會相消"]] },
+    minus: { label: "(a−b)²", correct: "two", choices: [["two","兩個 −ab，角落補回 +b²"],["corner","最後是 −b²"],["cancel","交叉項相消"]] },
+    diff: { label: "(a+b)(a−b)", correct: "cancel", choices: [["two","留下兩個 ab"],["cancel","+ab 與 −ab 相消"],["sum","變成 a²+b²"]] },
+  };
+  const persist = () => store?.set(state);
+  const label = (text, attrs={}) => { const n=svg(document,"text",attrs); n.textContent=text; return n; };
+  const rect = (x,y,w,h,textValue,fill) => {
+    canvas.append(svg(document,"rect",{x,y,width:w,height:h,fill,stroke:"#334155","stroke-width":1.8}));
+    if (state.revealed && textValue) canvas.append(label(textValue,{x:x+w/2,y:y+h/2+6,"text-anchor":"middle","font-size":18,"font-weight":800,fill:"#0f172a"}));
+  };
+
+  function draw() {
+    canvas.replaceChildren();
+    const a=state.a, b=Math.min(state.b,a-1), x=70, y=48, size=260;
+    if (state.mode === "plus") {
+      const ap=size*a/(a+b), bp=size-ap;
+      rect(x,y,ap,ap,"a²","#dbeafe"); rect(x+ap,y,bp,ap,"ab","#fef3c7");
+      rect(x,y+ap,ap,bp,"ab","#fef3c7"); rect(x+ap,y+ap,bp,bp,"b²","#ede9fe");
+      canvas.append(label("a",{x:x+ap/2,y:28,"text-anchor":"middle","font-weight":700}));
+      canvas.append(label("b",{x:x+ap+bp/2,y:28,"text-anchor":"middle","font-weight":700}));
+      if(!state.revealed) canvas.append(label("先預測四塊面積",{x:200,y:185,"text-anchor":"middle","font-size":18,"font-weight":800}));
+      caption.textContent=state.revealed ? \`整體面積 \${(a+b)**2}；四塊為 \${a*a}、\${a*b}、\${a*b}、\${b*b}。\` : "公式暫時隱藏。";
+    } else if (state.mode === "minus") {
+      const inner=size*(a-b)/a, cut=size-inner;
+      rect(x,y,size,size,"a²","#dbeafe");
+      rect(x+inner,y,cut,size,"−ab","#fee2e2"); rect(x,y+inner,size,cut,"−ab","#fee2e2");
+      rect(x+inner,y+inner,cut,cut,"+b²","#dcfce7");
+      canvas.append(svg(document,"rect",{x,y,width:inner,height:inner,fill:"none",stroke:"#0f172a","stroke-width":3}));
+      if(!state.revealed) canvas.append(label("哪個角落被重複扣掉？",{x:200,y:185,"text-anchor":"middle","font-size":18,"font-weight":800}));
+      caption.textContent=state.revealed ? "從 a² 扣兩條 ab；重疊的 b² 被扣兩次，因此要補回一次。" : "先追蹤兩條扣除區與重疊角。";
+    } else {
+      const scale=220/a, big=a*scale, small=b*scale, xx=82, yy=58;
+      rect(xx,yy,big,big,"a²","#dbeafe"); rect(xx+big-small,yy+big-small,small,small,"−b²","#ede9fe");
+      if(state.revealed) {
+        canvas.append(label("+ab",{x:120,y:325,"font-size":18,"font-weight":800,fill:"#166534"}));
+        canvas.append(label("−ab",{x:225,y:325,"font-size":18,"font-weight":800,fill:"#991b1b"}));
+        canvas.append(label("→ 相消",{x:300,y:325,"font-size":18,"font-weight":800}));
+      } else canvas.append(label("交叉項會留下嗎？",{x:200,y:185,"text-anchor":"middle","font-size":18,"font-weight":800}));
+      caption.textContent=state.revealed ? "+ab 與 −ab 大小相同、符號相反，所以留下 a²−b²。" : "先預測交叉項。";
+    }
+    canvas.setAttribute("aria-label", \`\${modes[state.mode].label}，a=\${a}，b=\${b}，\${state.revealed?"已揭示":"尚未揭示"}\`);
+  }
+
+  function renderEvidence() {
+    evidence.replaceChildren();
+    evidence.hidden=!state.revealed;
+    if(!state.revealed) return;
+    const a=state.a,b=Math.min(state.b,a-1), p=document.createElement("p"), q=document.createElement("p");
+    if(state.mode==="plus") p.textContent=\`(a+b)²=a²+ab+ab+b²=a²+2ab+b²；目前 (\${a}+\${b})²=\${(a+b)**2}。\`;
+    else if(state.mode==="minus") p.textContent=\`(a−b)²=a²−ab−ab+b²=a²−2ab+b²；目前 (\${a}−\${b})²=\${(a-b)**2}。\`;
+    else p.textContent=\`(a+b)(a−b)=a²−b²；目前 \${a+b}×\${a-b}=\${a*a-b*b}。\`;
+    q.innerHTML="<strong>證據任務：</strong>指出圖中哪兩塊造成 2ab，或哪兩項互相抵消。";
+    evidence.append(p,q);
+    feedback.textContent = state.prediction===modes[state.mode].correct ? "預測吻合。請用圖中的區塊或相消位置解釋。" : "預測與觀察不同。請依圖形證據修正，不要只背公式。";
+  }
+
+  function renderChoices() {
+    predict.querySelectorAll("button").forEach(n=>n.remove());
+    for(const [value,textValue] of modes[state.mode].choices) {
+      const b=document.createElement("button"); b.type="button"; b.textContent=textValue;
+      b.setAttribute("aria-pressed",String(state.prediction===value));
+      b.addEventListener("click",()=>{
+        state.prediction=value; state.revealed=true; persist();
+        predict.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+        draw(); renderEvidence();
+      });
+      predict.append(b);
+    }
+  }
+
+  for(const key of Object.keys(modes)) {
+    const b=document.createElement("button"); b.type="button"; b.textContent=modes[key].label;
+    b.setAttribute("aria-pressed",String(state.mode===key));
+    b.addEventListener("click",()=>{
+      state.mode=key; state.prediction=""; state.revealed=false; persist();
+      modeBar.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+      renderChoices(); draw(); renderEvidence();
+      status.textContent=\`已切換到 \${modes[key].label}；先預測再揭示。\`;
+    });
+    modeBar.append(b);
+  }
+
+  const aControl=makeRange(document,{label:"a",min:3,max:8,value:state.a,onInput:value=>{
+    state.a=value; if(state.b>=value) state.b=value-1; state.prediction=""; state.revealed=false; persist(); renderChoices(); draw(); renderEvidence();
+  }});
+  const bControl=makeRange(document,{label:"b",min:1,max:7,value:state.b,onInput:value=>{
+    state.b=Math.min(value,state.a-1); state.prediction=""; state.revealed=false; persist(); renderChoices(); draw(); renderEvidence();
+  }});
+  const reset=document.createElement("button"); reset.type="button"; reset.textContent="重設並重新預測";
+  reset.addEventListener("click",()=>{state.prediction="";state.revealed=false;persist();renderChoices();draw();renderEvidence();feedback.textContent="答案已隱藏。";});
+  controls.append(aControl.wrapper,bControl.wrapper,reset);
+
+  const transfer=document.createElement("section");
+  transfer.className="math-area-transfer";
+  const transferTitle=document.createElement("h5"); transferTitle.textContent="遷移：換數字，不換概念";
+  const transferPrompt=document.createElement("p");
+  const transferControls=document.createElement("div"); transferControls.className="math-live-controls";
+  const ta=makeRange(document,{label:"新 a",min:4,max:9,value:state.transferA,onInput:value=>{state.transferA=value;if(state.transferB>=value)state.transferB=value-1;persist();updateTransfer();}});
+  const tb=makeRange(document,{label:"新 b",min:1,max:8,value:state.transferB,onInput:value=>{state.transferB=Math.min(value,state.transferA-1);persist();updateTransfer();}});
+  const answer=document.createElement("input"); answer.type="number"; answer.inputMode="numeric"; answer.setAttribute("aria-label","遷移題答案");
+  const check=document.createElement("button"); check.type="button"; check.textContent="檢查遷移";
+  const transferFeedback=document.createElement("p"); transferFeedback.setAttribute("aria-live","polite");
+  transferControls.append(ta.wrapper,tb.wrapper);
+  transfer.append(transferTitle,transferPrompt,transferControls,answer,check,transferFeedback);
+  function updateTransfer(){transferPrompt.textContent=\`不看上面的數值，預測 (\${state.transferA}+\${state.transferB})² 的面積。\`;}
+  check.addEventListener("click",()=>{
+    const expected=(state.transferA+state.transferB)**2;
+    transferFeedback.textContent=Number(answer.value)===expected ? \`正確。答案 \${expected}；你把 a²+2ab+b² 遷移到新數值。\` : "再把四塊相加：a²、ab、ab、b²。";
+  });
+
+  lab.append(intro,modeBar,figure,controls,predict,feedback,evidence,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  renderChoices(); draw(); renderEvidence(); updateTransfer();
+  status.textContent="先預測，選擇後才揭示面積證據與公式。";
+  persist();
+  return lab;
+}
+
 function mountGeometryLab({ document, root, block, spec }) {
+  if (spec?.lessonId === "cur-math-content-a-8-1") return mountQuadraticIdentitiesLab({ document, root, block, spec });
   const store = storageFor(block.id);
   const prior = store?.get() || {};
   const mode = geometryMode(spec);
