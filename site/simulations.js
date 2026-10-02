@@ -6,6 +6,7 @@
   const clamp = (value, min, max) => Math.max(min, Math.min(max, Number(value)));
   const stateKey = simulation => storagePrefix + (simulation.storageId || simulation.id);
   const defaults = (engine, model) => {
+    if (window.MathVisualLabs?.supports(engine, model)) return window.MathVisualLabs.defaults(engine, model);
     if (engine === "science-earth-space" && model === "fa-iv-4-atmospheric-temperature-profile") return { profileScenario: "baseline" };
     if (engine === "concept-explorer" && model === "ecosystem-scale-boundary") return { site: "pond", scale: "individual" };
     if (engine === "concept-explorer" && model === "ca-iv-2-solution-identification") return { sample: "X", test: "litmus", control: "unknown", testRun: false };
@@ -46,7 +47,7 @@
     catch { return { ...defaults(simulation.engine, simulation.model), ...initial }; }
   };
   const write = (simulation, state) => localStorage.setItem(stateKey(simulation), JSON.stringify(state));
-  const label = engine => ({
+  const label = (engine, model) => window.MathVisualLabs?.supports(engine, model) ? window.MathVisualLabs.label(engine) : ({
     "math-number-line": "數線操作臺", "math-inequality-range": "不等式範圍數線", "math-algebra-balance": "代數天平", "math-ticket-equation": "票券等量模型", "math-equation-meaning": "方程式意義檢驗臺", "math-reasoning-lab": "數學推理實驗室", "math-function-graph": "函數圖形實驗室",
     "math-system-graph": "聯立直線交點探索", "math-expression-lab": "代數式同值檢核臺",
     "math-geometry": "幾何建構臺", "math-data-lab": "資料實驗室", "math-probability-lab": "機率試驗器",
@@ -82,6 +83,7 @@
     return `<div class="sim-design" data-design-type="${esc(design.type)}"><p><b>先預測：</b>${esc(design.predictionPrompt)}</p><div class="sim-equation-path" aria-live="polite"><div class="sim-equation-current">${esc(step.equation)}</div><p><b>${visualLabel}：</b>${esc(step.action)}</p><p>${esc(step.reason)}</p></div>${solutionSetVisual}<div class="sim-design-steps" role="group" aria-label="單元探索步驟">${design.steps.map((item, index) => `<button type="button" data-design-step="${index}" ${index === current ? 'aria-current="step"' : ""}>${index + 1}. ${esc(item.action)}</button>`).join("")}</div><p class="sim-design-feedback" aria-live="polite">${esc(step.feedback)}</p><p><b>用證據說明：</b>${esc(design.evidencePrompt)}</p></div>`;
   };
   const renderModel = (lesson, state) => {
+    if (window.MathVisualLabs?.supports(lesson.simulation.engine, lesson.simulation.model)) return window.MathVisualLabs.render(lesson, state);
     const { engine } = lesson.simulation;
     const designed = engine === "math-geometry" && (lesson.simulation.model.startsWith("s9-13-prism-surface-volume") || lesson.simulation.model === "s9-1-polygon-similarity-v1") ? "" : renderLearningDesign(lesson, state);
     if (engine === "math-equation-meaning") {
@@ -342,7 +344,7 @@
     lessons.set(instanceKey, runtimeLesson);
     const state = read(simulation);
     const reflection = esc(state.reflection || "");
-    const simulationLabel = simulation.model === "fa-iv-4-atmospheric-temperature-profile" ? "大氣溫度剖面模型" : label(simulation.engine);
+    const simulationLabel = simulation.model === "fa-iv-4-atmospheric-temperature-profile" ? "大氣溫度剖面模型" : label(simulation.engine, simulation.model);
     return `<section class="simulation" data-simulation-lesson="${esc(instanceKey)}" aria-label="${esc(simulationLabel)}"><header><span class="tag">${esc(simulationLabel)}</span><h4>${esc(simulation.goal)}</h4><p>${esc(simulation.mission || "先預測，再操作與解釋。")} </p></header><div class="simulation-body">${renderModel(runtimeLesson, state)}</div><footer class="sim-learning"><p><b>學習紀錄</b>：先預測，操作後再用證據解釋。</p><div class="sim-actions"><button type="button" data-sim-action="predicted">我已提出預測</button><button type="button" data-sim-action="observed">我已記錄觀察</button><button type="button" data-sim-reset>重設模型</button></div><label>我的解釋<textarea data-sim-reflection rows="3" placeholder="我改變了什麼？看見什麼？這如何支持我的解釋？">${reflection}</textarea></label><p class="sim-status" aria-live="polite">${state.status || "尚未記錄預測與觀察。"}</p><details class="sim-sources"><summary>模型依據與參考來源</summary><ul>${simulation.sourceRefs.map(url => `<li><a href="${esc(url)}" target="_blank" rel="noreferrer">${esc(url)}</a></li>`).join("")}</ul></details></footer></section>`;
   };
   const rerender = root => { const lesson = lessons.get(root.dataset.simulationLesson); if (lesson) root.outerHTML = render(lesson); };
