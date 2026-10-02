@@ -641,6 +641,26 @@
           "required": [
             "steps"
           ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "chinese-manipulation-lab"
+            }
+          },
+          "required": [
+            "steps"
+          ]
+        },
+        {
+          "properties": {
+            "type": {
+              "const": "social-manipulation-lab"
+            }
+          },
+          "required": [
+            "steps"
+          ]
         }
       ],
       "properties": {
@@ -661,7 +681,9 @@
             "genre-reading-lab",
             "data-explorer-lab",
             "daily-expression-lab",
-            "english-manipulation-lab"
+            "english-manipulation-lab",
+            "chinese-manipulation-lab",
+            "social-manipulation-lab"
           ]
         },
         "goal": {
@@ -1504,7 +1526,9 @@
             "science-particle-lab",
             "science-life-system",
             "science-earth-space",
-            "concept-explorer"
+            "concept-explorer",
+            "math-reasoning-lab",
+            "math-equation-meaning"
           ]
         },
         "mode": {
@@ -1818,10 +1842,18 @@
               "minLength": 2
             }
           }
+        },
+        "equationMeaning": {
+          "type": "object",
+          "additionalProperties": true
         }
       }
     },
-    "topStudentNotes": {}
+    "topStudentNotes": {},
+    "reviewEvidence": {},
+    "llmSynthesisNote": {
+      "type": "string"
+    }
   },
   "$defs": {
     "rightTriangle": {
