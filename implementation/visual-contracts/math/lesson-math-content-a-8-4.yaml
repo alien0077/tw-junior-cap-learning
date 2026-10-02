@@ -1,0 +1,50 @@
+lessonId: lesson-math-content-a-8-4
+subject: math
+knowledgeNodes:
+  - kg-math-content-a-8-4
+learningObjective: 理解「因式」必須存在可乘回原多項式的商式，並以完整展開逐項驗證，而不是依外觀或單一代值判斷。
+keyConcept: 候選因式成立的核心證據是 因式 × 商式 = 原多項式 的恆等乘積。
+priorKnowledge:
+  - 分配律
+  - 多項式乘法
+  - 同類項
+misconceptions:
+  - 兩式都有 x 就認為是因式
+  - 只核對二次項與中間項，忽略常數項
+  - 單一代值相等就宣稱恆等成立
+visual:
+  primaryType: four-cell-factor-product-area
+  secondaryRepresentations:
+    - symbolic-expansion
+    - coefficient-comparison
+    - numeric-observation
+  firstFrame: 以 (x+2)(x+5) 的四格面積模型為主，直接顯示 x²、5x、2x、10 的來源；候選答案尚未揭示。
+  manipulables:
+    - factorMeaningX
+    - candidateFactor
+    - factorMeaningTransfer
+  dynamicChanges:
+    - x 對應的區塊比例
+    - 候選乘回式
+    - 逐項比較回饋
+    - transfer 乘積證據
+  invariants:
+    - 正確候選完整展開後恆等於原多項式
+interaction:
+  prediction: 先從三組候選中預測哪組能完整乘回 x²+7x+10。
+  action: 改變 x 觀察四區仍保持相同代數結構，再提交候選因式與商式。
+  observation: 比較二次項、兩個交叉項與常數項是否全部吻合。
+  evidencePrompt: 指出 7x 由 5x+2x 形成，並說明常數項為何必須是 10。
+  feedback: 錯誤候選明確指出「中間項雖相同但常數項不同」，避免只顯示答錯。
+  retry: 可更換候選並重新完整乘回。
+  transfer: 對 x²+8x+15 從多組候選找出 (x+3)(x+5)，同時核對乘積與交叉和。
+accessibility:
+  keyboardAlternative: range 與 select 均可鍵盤操作。
+  nonDragAlternative: 不依賴拖曳；所有核心狀態可由鍵盤與觸控控制。
+  textAlternative: 面積 SVG 有 aria-label；完整乘回另以文字與公式呈現。
+  reducedMotion: 不依賴動畫，reduced-motion 下資訊完整。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
