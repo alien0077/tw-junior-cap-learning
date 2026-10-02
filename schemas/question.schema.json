@@ -92,23 +92,55 @@
           "status"
         ],
         "properties": {
-          "url": { "type": "string", "format": "uri" },
-          "title": { "type": "string", "minLength": 1 },
-          "year": { "type": "string", "minLength": 1 },
-          "subject": { "type": "string", "minLength": 1 },
-          "locator": { "type": "string", "minLength": 1 },
-          "locatorLevel": { "enum": ["item", "paper", "page"] },
-          "observedPattern": { "type": "string", "minLength": 1 },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "year": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subject": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locator": {
+            "type": "string",
+            "minLength": 1
+          },
+          "locatorLevel": {
+            "enum": [
+              "item",
+              "paper",
+              "page"
+            ]
+          },
+          "observedPattern": {
+            "type": "string",
+            "minLength": 1
+          },
           "pattern": {
             "type": "string",
             "minLength": 1,
             "description": "Legacy alias of observedPattern; if present, validate_data.py requires exact equality."
           },
           "reuseDecision": {
-            "enum": ["pattern-only", "licensed-reproduction", "do-not-use"]
+            "enum": [
+              "pattern-only",
+              "licensed-reproduction",
+              "do-not-use"
+            ]
           },
           "status": {
-            "enum": ["recorded", "pending-item-locator", "blocked"]
+            "enum": [
+              "recorded",
+              "pending-item-locator",
+              "blocked"
+            ]
           }
         }
       }
@@ -186,7 +218,8 @@
         "draft",
         "content-reviewed",
         "published",
-        "deprecated"
+        "deprecated",
+        "reviewed"
       ]
     },
     "updatedAt": {
