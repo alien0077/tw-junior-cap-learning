@@ -1405,7 +1405,8 @@ export function enhanceMathInteractiveBlock({ document, root, spec, block }) {
   if (root.querySelector(".math-live-lab")) return root.querySelector(".math-live-lab");
   if (spec?.lessonId === "cur-math-content-n-7-3") return mountSignedOperationsGoldLab({ document, root, block, spec });
   if (spec?.lessonId === "cur-math-content-f-8-2") return mountLinearParameterGoldLab({ document, root, block, spec });
-  if (spec?.lessonId === "cur-math-content-s-9-3") return mountParallelProportionVisualLab({ document, root, block, spec });\n  if (spec?.lessonId === "cur-math-content-s-8-6") return mountPythagoreanGoldLab({ document, root, block, spec });
+  if (spec?.lessonId === "cur-math-content-s-9-3") return mountParallelProportionVisualLab({ document, root, block, spec });
+  if (spec?.lessonId === "cur-math-content-s-8-6") return mountPythagoreanGoldLab({ document, root, block, spec });
   if (spec?.lessonId === "cur-math-content-d-9-1") return mountBoxPlotGoldLab({ document, root, block, spec });
   if (spec?.lessonId === "cur-math-content-d-9-2") return mountProbabilityFrequencyGoldLab({ document, root, block, spec });
   if (block.component === "FunctionRepresentationBlock") return mountFunctionLab({ document, root, block, spec });
