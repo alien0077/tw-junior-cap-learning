@@ -331,7 +331,7 @@
     "id": "sim-science-eb-iv-9",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-9-circular-motion",
     "goal": "調整圓周運動的半徑與速率，從切線速度、向心加速度和實際力源判斷模型結果。",
     "mission": "你是旋轉裝置的安全檢查員。先在圓上標出某一瞬間的切線與圓心方向，再比較半徑或速率改變時的向心需求，最後從受力圖找出真正提供向心合力的交互作用。",
     "sourceRefs": [
@@ -376,6 +376,18 @@
           "feedback": "繩球檢查張力、轉彎車檢查靜摩擦力、衛星檢查萬有引力；若力源上限不足，預測沿切線方向離開。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "orbit-with-tangent-and-centripetal-vectors",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "radius",
+        "speed",
+        "mass"
+      ],
+      "transferScenario": "larger-radius-same-speed"
     }
   }
 }
