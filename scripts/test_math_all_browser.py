@@ -157,6 +157,25 @@ async def require_count(sim: Locator, selector: str, minimum: int, message: str)
 
 async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) -> None:
     """Verify the lesson reached its dedicated production renderer, not only sim-design."""
+    GEOMETRY_FAMILY_EXPECTED = {
+        "s-7-1-geometry-symbols-v1": ("s71Type", ".mgf-svg"),
+        "s-7-2-orthographic-v1": ("s72View", ".mgf-cubes"),
+        "s-7-3-perpendicular-bisector-v1": ("s73Point", ".mgf-svg"),
+        "s-7-4-reflection-v1": ("s74Axis", ".mgf-svg"),
+        "s-8-1-protractor-v1": ("s81Angle", ".mgf-svg"),
+        "s-8-2-polygon-triangulation-v1": ("s82Sides", ".mgf-fan"),
+        "s-8-3-parallel-transversal-v1": ("s83Relation", ".mgf-svg"),
+        "s-8-4-congruence-motion-v1": ("s84Motion", ".mgf-congruence"),
+        "s-8-5-triangle-congruence-v1": ("s85Evidence", ".mgf-proof"),
+        "s-9-2-triangle-similarity-v1": ("s92Evidence", ".mgf-proof"),
+        "s-9-3-parallel-ratio-v1": ("s93Move", ".mgf-svg"),
+    }
+    if model in GEOMETRY_FAMILY_EXPECTED:
+        control, visual = GEOMETRY_FAMILY_EXPECTED[model]
+        await require_count(sim, ".mgf-root", 1, f"{model} Geometry-family renderer missing")
+        await require_count(sim, visual, 1, f"{model} concept-specific geometry visual missing")
+        await require_count(sim, f'[data-sim-control="{control}"]', 1, f"{model} concept-specific control missing")
+        return
     NUMBER_FAMILY_EXPECTED = {
         "n-7-1-sieve-v1": ("n71Prediction", ".mnf-hundred"),
         "n-7-2-factor-tree-v1": ("n72Prediction", ".mnf-tree"),
