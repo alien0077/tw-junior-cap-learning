@@ -161,6 +161,7 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
         "linear-function-linked-v1": ("f81Data", ".mff-graph"),
         "a-7-1-like-terms-v1": ("a71Choice", ".mnf-structure"),
         "a-7-3-balance-equation-v1": ("a73Step", ".mnf-structure"),
+        "a-8-2-polynomial-meaning-v1": ("a82Order", ".mnf-structure"),
         "d-7-1-chart-choice-v1": ("d71Chart", ".mdf-chart"),
         "d-7-2-center-outlier-v1": ("d72Outlier", ".mdf-stats"),
         "d-8-1-cumulative-frequency-v1": ("d81Point", ".mdf-curve"),
