@@ -245,6 +245,14 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
     if model == "s9-13-prism-surface-volume-v2":
         await require_count(sim, ".sim-prism-lab", 1, "prism renderer missing")
         return
+    if model == "a-7-8-inequality-range-v1":
+        await require_count(sim, ".mff-root", 1, "negative-division inequality renderer missing")
+        direction = sim.locator('[data-sim-control="a78Direction"]')
+        await require_count(sim, '[data-sim-control="a78Direction"]', 1, "negative-division prediction missing")
+        await require_count(sim, '[data-sim-control="a78Transfer"]', 1, "negative-division transfer missing")
+        await direction.select_option("1")
+        await require_count(sim, ".mff-probes", 1, "inequality counterexample probes missing")
+        return
     if model == "n-7-3-signed-operations-v1":
         await require_count(sim, ".mgs-signed", 1, "signed-operation Gold renderer missing")
         await require_count(sim, '[role="img"]', 1, "signed-operation number line missing")
