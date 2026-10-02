@@ -15,6 +15,7 @@
     if (engine === "science-motion-lab" && model === "eb-iv-5-hydraulic-pressure") return { inputForce: 20, inputArea: 4, outputArea: 40, depth: 2, pressurePrediction: "", predictionSubmitted: false, pressureFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-6-buoyancy") return { objectWeight: 8, liquidDensity: 1, displacedVolume: 500, buoyancyPrediction: "", predictionSubmitted: false, buoyancyFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-8-motion-graph") return { eastDistance: 8, westDistance: 4, stopTime: 2, motionPrediction: "", predictionSubmitted: false, motionFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-9-circular-motion") return { radius: 2, speed: 4, mass: 1, circularPrediction: "", predictionSubmitted: false, circularFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -176,6 +177,21 @@
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
       </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-9-circular-motion") {
+      const radius=clamp(Number(state.radius),1,5),speed=clamp(Number(state.speed),1,8),mass=clamp(Number(state.mass),.5,3),acc=speed*speed/radius,force=mass*acc,locked=!state.predictionSubmitted;
+      const R=55+radius*18,cx=250,cy=175,angle=-.65,px=cx+R*Math.cos(angle),py=cy+R*Math.sin(angle),vx=-Math.sin(angle)*55,vy=Math.cos(angle)*55;
+      return `<section class="sim-circular-lab" aria-label="圓周運動與向心加速度視覺實驗室"><div class="sim-visual-first"><figure class="sim-circular-stage"><svg viewBox="0 0 650 350" role="img" aria-label="半徑 ${radius} 公尺、速率 ${speed} 公尺每秒的圓周運動">
+        <circle cx="${cx}" cy="${cy}" r="${R}" class="sim-orbit"/><circle cx="${cx}" cy="${cy}" r="7" class="sim-marker"/><circle cx="${px}" cy="${py}" r="16" class="sim-cart"/>
+        <line x1="${px}" y1="${py}" x2="${px+vx}" y2="${py+vy}" class="sim-velocity-arrow"/><text x="${px+vx+8}" y="${py+vy}">v 切線</text>
+        <line x1="${px}" y1="${py}" x2="${px+(cx-px)*.58}" y2="${py+(cy-py)*.58}" class="sim-force-arrow"/><text x="${(px+cx)/2}" y="${(py+cy)/2-10}">a 向心</text>
+        <line x1="${cx}" y1="${cy+R+30}" x2="${cx+R}" y2="${cy+R+30}" class="sim-measure"/><text x="${cx+R/2}" y="${cy+R+52}" text-anchor="middle">r=${radius} m</text>
+        <g transform="translate(430 85)"><text y="0">a = v²/r</text><text y="38">${speed}² ÷ ${radius}</text><text y="76">= ${acc.toFixed(1)} m/s²</text><text y="125">F = ma = ${force.toFixed(1)} N</text></g>
+      </svg><figcaption>速度沿切線；加速度與合力指向圓心。速率不是只改箭頭長度，因為 a ∝ v²。</figcaption></figure>
+      <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>半徑不變，速率加倍，向心加速度會？</p><div class="sim-actions"><button data-circular-action="predict" data-value="double">2 倍</button><button data-circular-action="predict" data-value="quad">4 倍</button></div><button data-circular-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.circularFeedback||"先看 v 在公式中是幾次方。")}</p></div></div>
+      <fieldset class="sim-circular-controls" ${locked?"disabled":""}><legend>2. 操作圓周模型</legend>${slider("radius","半徑",radius,1,5,.5," m")}${slider("speed","速率",speed,1,8,.5," m/s")}${slider("mass","質量",mass,.5,3,.5," kg")}</fieldset>
+      <div class="sim-evidence-card"><p><b>3. 圖像證據</b></p><p>目前 a＝v²/r＝${acc.toFixed(1)} m/s²；質量只影響所需向心力 F＝ma，不會改變同一 v、r 所要求的向心加速度。</p></div>
+      <div class="sim-transfer-card"><p><b>4. 遷移：速率不變、半徑加倍時 a？</b></p><div class="sim-actions"><button data-circular-action="transfer" data-value="half">變成一半</button><button data-circular-action="transfer" data-value="double">變成兩倍</button></div><p role="status">${esc(state.transferFeedback||"直接比較 a=v²/r 的分母。")}</p></div></section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-8-motion-graph") {
       const east=clamp(Number(state.eastDistance),2,12),west=clamp(Number(state.westDistance),0,10),stop=clamp(Number(state.stopTime),0,6),final=east-west,distance=east+west,total=4+4+stop,avgSpeed=distance/total,avgVelocity=final/total,locked=!state.predictionSubmitted;
@@ -543,6 +559,13 @@
       if (direction === "prev") update(root, { reasoningStep: Math.max(0, index - 1), reasoningChoice: "" });
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
+    }
+    const circularAction=event.target.closest("[data-circular-action]");
+    if(circularAction && lesson.simulation.model==="eb-iv-9-circular-motion"){
+      const action=circularAction.dataset.circularAction,value=circularAction.dataset.value,state=read(lesson.simulation);
+      if(action==="predict"){update(root,{circularPrediction:value,circularFeedback:""});return;}
+      if(action==="submit-prediction"){update(root,state.circularPrediction?{predictionSubmitted:true,circularFeedback:state.circularPrediction==="quad"?"預測已記錄。把速率加倍，直接比較 a 的數值。":"預測已記錄。用速率滑桿檢查 v² 造成的倍率。"}:{circularFeedback:"請先選擇預測。"});return;}
+      if(action==="transfer"){update(root,value==="half"?{transferChoice:value,transferFeedback:"正確：v 固定時 a 與 r 成反比，半徑加倍，向心加速度減半。"}:{transferChoice:value,transferFeedback:"看 a=v²/r：半徑在分母。"});return;}
     }
     const motionAction=event.target.closest("[data-motion-action]");
     if(motionAction && lesson.simulation.model==="eb-iv-8-motion-graph"){
