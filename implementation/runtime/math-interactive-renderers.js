@@ -355,6 +355,60 @@ function mountGeometryLab({ document, root, block, spec }) {
   return lab;
 }
 
+
+function mountLinearEquationCheckLab({ document, root, block }) {
+  const store=storageFor(block.id), prior=store?.get()||{};
+  const state={candidate:number(prior.candidate,0)};
+  const {lab,status}=makeLab(document,block,"一次方程式等價變形與原式驗算臺");
+  lab.classList.add("math-linear-equation-check-lab");
+
+  const intro=document.createElement("p");
+  intro.innerHTML="<strong>解出 x 不是終點。</strong> 保留每一行等價變形，最後一定回到原方程式比較左右兩側。";
+
+  const predict=document.createElement("fieldset");
+  const pl=document.createElement("legend");pl.textContent="2(x+3)=14 的第一步？";predict.append(pl);
+  const pf=document.createElement("p");pf.setAttribute("aria-live","polite");
+  const chain=document.createElement("div");chain.className="math-linear-chain";chain.hidden=true;chain.setAttribute("role","img");chain.setAttribute("aria-label","兩側同除二，再兩側同減三的等價變形鏈");
+  chain.innerHTML="<span>2(x+3)=14</span><b>÷2 兩側</b><span>x+3=7</span><b>−3 兩側</b><span>x=4</span>";
+  [["divide","左右兩側同除以 2"],["left","只把左側 2 消掉"],["move3","先把括號內 3 移到右邊"]].forEach(([value,label])=>{
+    const b=document.createElement("button");b.type="button";b.textContent=label;
+    b.addEventListener("click",()=>{
+      if(value==="divide"){chain.hidden=false;pf.textContent="正確。外面的 2 乘整個括號，因此先對等號兩側同除 2。";}
+      else pf.textContent="要保持等式，操作必須同步作用在左右兩側；也不能把括號內 3 當成已在括號外。";
+    });predict.append(b);
+  });predict.append(pf);
+
+  const compare=document.createElement("div");compare.className="math-linear-compare";compare.setAttribute("role","img");compare.setAttribute("aria-label","候選 x 代回原式的左右值比較");
+  const feedback=document.createElement("p");feedback.setAttribute("aria-live","polite");
+  const update=()=>{
+    const left=2*(state.candidate+3),right=14;
+    compare.innerHTML="<div><span>左 2(x+3)</span><strong>"+left+"</strong></div><b>"+(left===right?"=":(left<right?"<":">"))+"</b><div><span>右</span><strong>14</strong></div>";
+    feedback.textContent=left===right
+      ?"x="+state.candidate+" 代回最原始方程式後左右同為 14，因此候選值通過。"
+      :"x="+state.candidate+" 時左右不相等；保留這個錯誤候選，回頭定位括號、同除或移項哪一步出了問題。";
+    status.textContent=left===right?"原式驗算通過；接著把同樣流程遷移到生活費用題。":"原式驗算尚未通過。";
+    store?.set(state);
+  };
+  const candidate=makeRange(document,{label:"候選 x",min:-2,max:8,value:state.candidate,onInput:v=>{state.candidate=v;update();}});
+
+  const transfer=document.createElement("fieldset");
+  const tl=document.createElement("legend");tl.textContent="遷移：15x+80=170，哪個候選人數通過原式？";transfer.append(tl);
+  const tf=document.createElement("p");tf.setAttribute("aria-live","polite");
+  [["6","6"],["4","4"],["90","90"]].forEach(([value,label])=>{
+    const b=document.createElement("button");b.type="button";b.textContent="x="+label;
+    b.addEventListener("click",()=>{
+      tf.textContent=value==="6"
+        ?"正確。15×6+80=170；等式成立，而且 6 人符合非負整數的情境限制。"
+        :"代回 15x+80=170 逐項計算；固定費 80 不可漏掉。";
+    });transfer.append(b);
+  });transfer.append(tf);
+
+  lab.append(intro,predict,chain,candidate.wrapper,compare,feedback,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  update();
+  return lab;
+}
+
 function mountBalanceLab({ document, root, block, spec }) {
   const store = storageFor(block.id);
   const prior = store?.get() || {};
@@ -982,6 +1036,7 @@ export function enhanceMathInteractiveBlock({ document, root, spec, block }) {
   if (root.querySelector(".math-live-lab")) return root.querySelector(".math-live-lab");
   if (block.component === "FunctionRepresentationBlock") return mountFunctionLab({ document, root, block, spec });
   if (block.component === "GeometryManipulationBlock") return mountGeometryLab({ document, root, block, spec });
+  if (block.component === "AlgebraBalanceBlock" && spec?.lessonId === "cur-math-linear-equation-check") return mountLinearEquationCheckLab({ document, root, block, spec });
   if (block.component === "AlgebraBalanceBlock" || block.component === "AlgebraEquationMeaningBlock") return mountBalanceLab({ document, root, block, spec });
   if (block.component === "SystemIntersectionBlock") return mountSystemIntersectionLab({ document, root, block, spec });
   if (block.component === "SystemEliminationBlock") return mountSystemEliminationLab({ document, root, block, spec });
