@@ -251,10 +251,4 @@
     });
   };
   for (const model of allModels) goldRegistry[model] = goldAdapter(model);
-  window.MathVisualLabs={
-    supports(engine,model){ return allModels.has(model) || base.supports(engine,model); },
-    defaults(engine,model){ return allModels.has(model) ? {...defaults[model]} : base.defaults(engine,model); },
-    label(engine,model){ return allModels.has(model) ? labels[model] : base.label(engine,model); },
-    render(lesson,state){ const model=lesson?.simulation?.model; return allModels.has(model) ? renderers[model](state) : base.render(lesson,state); },
-  };
 })();
