@@ -19,6 +19,7 @@ result.root.querySelector("input").value = "因為證據支持我的觀察";
 buttons[3].click();
 buttons[4].click();
 assert.equal(result.engine.state.mode, "verified");
+assert.equal(result.root.querySelector("h3").textContent, "代數平衡");
 assert.equal(result.root.querySelector(".visualization-summary").dataset.renderer, "AlgebraBalanceBlock");
 assert.ok(result.root.querySelector(".visualization-summary").getAttribute("aria-label"));
 assert.equal(result.root.querySelector(".component-visual-body").dataset.contentSource, "unit-spec");
