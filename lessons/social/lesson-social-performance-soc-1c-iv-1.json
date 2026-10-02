@@ -48,11 +48,11 @@
     "https://www.naer.edu.tw/upload/1/16/doc/819/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E6%A0%A1-%E7%A4%BE%E6%9C%83%E9%A0%98%E5%9F%9F.pdf",
     "https://cap.rcpet.edu.tw/index.html",
     "https://stv.naer.edu.tw/teaching/course_outline.jsp",
-      "https://www.naer.edu.tw/",
-      "https://www.scribd.com/document/1069747738/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E5%9C%B0%E7%90%86%E4%B9%9D%E4%B8%8A%E8%AA%B2%E6%9C%AC",
-      "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Melk1TDNCMFlWOHlNakF5WHpFME5ETTJYemcwTVRVeUxuQmtaZz09&fname=LOGGYSOKWW10A1IH50LKKPHGPK30WT3414JCB114A1A1GCFCYSA4PP5414HGJGA0VWPOXT154404MOWS1430ICNPOP34XSGC01YTNOB5WSB001PODGGGQKUSTWPOXXKKHCNODGIGXSNKDGICKLA0CGMKQPRLPKQPROECUSQOWSTSRKB0DGTSPLJHEDXWPK10",
-      "https://www.smjh.hc.edu.tw/uploads/1690804467398lfzKlTVE.pdf",
-      "https://www.scribd.com/document/872934072/%E7%BF%B0%E6%9E%97%E7%89%88-%E4%B8%83%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83-%E5%9C%B0%E7%90%86"
+    "https://www.naer.edu.tw/",
+    "https://www.scribd.com/document/1069747738/%E7%BF%B0%E6%9E%97%E5%9C%8B%E4%B8%AD%E5%9C%B0%E7%90%86%E4%B9%9D%E4%B8%8A%E8%AA%B2%E6%9C%AC",
+    "https://www.dfsh.ntpc.edu.tw/app/index.php?Action=downloadfile&file=WVhSMFlXTm9Melk1TDNCMFlWOHlNakF5WHpFME5ETTJYemcwTVRVeUxuQmtaZz09&fname=LOGGYSOKWW10A1IH50LKKPHGPK30WT3414JCB114A1A1GCFCYSA4PP5414HGJGA0VWPOXT154404MOWS1430ICNPOP34XSGC01YTNOB5WSB001PODGGGQKUSTWPOXXKKHCNODGIGXSNKDGICKLA0CGMKQPRLPKQPROECUSQOWSTSRKB0DGTSPLJHEDXWPK10",
+    "https://www.smjh.hc.edu.tw/uploads/1690804467398lfzKlTVE.pdf",
+    "https://www.scribd.com/document/872934072/%E7%BF%B0%E6%9E%97%E7%89%88-%E4%B8%83%E5%B9%B4%E7%B4%9A%E7%A4%BE%E6%9C%83-%E5%9C%B0%E7%90%86"
   ],
   "provenance": {
     "origin": "original",
@@ -269,6 +269,44 @@
       {
         "prompt": "校園外送取餐區的方案引發店家、行人與輪椅使用者不同看法；你會如何提出暫時建議，並說明何時修正？",
         "expectedEvidence": "界定公平判準，提出對應的觀察／法規／使用者資料，回應不同群體及代價，並明示修正條件。"
+      }
+    ]
+  },
+  "interactive": {
+    "type": "social-manipulation-lab",
+    "mode": "group-context-evidence",
+    "goal": "操作社1c-Ⅳ-1：評估知識多元觀點提出看法的群體、制度與情境條件，先預測再比較資料，區分事實、推論與價值判斷。",
+    "scenario": "在同一社會情境中切換群體、資源、規則或時間，畫面同步比較不同群體的機會、負擔與結果。",
+    "steps": [
+      {
+        "id": "step-1",
+        "prompt": "先選一個群體與條件，預測改變一項規則後的結果。",
+        "options": [
+          "先預測並記錄條件",
+          "先選喜歡的結論"
+        ],
+        "answer": "A",
+        "feedback": "先固定比較條件，後續證據才可檢查。"
+      },
+      {
+        "id": "step-2",
+        "prompt": "切換另一群體後結果不同，應如何處理？",
+        "options": [
+          "保留差異並找可能機制",
+          "只報全體平均"
+        ],
+        "answer": "A",
+        "feedback": "平均趨勢不能取代群體差異。"
+      },
+      {
+        "id": "step-3",
+        "prompt": "提出公共判斷時，哪種寫法較完整？",
+        "options": [
+          "分開可核實事實、推論、價值標準與限制",
+          "把價值偏好寫成客觀事實"
+        ],
+        "answer": "A",
+        "feedback": "明示判準與限制，讓結論可檢查也可修正。"
       }
     ]
   }
