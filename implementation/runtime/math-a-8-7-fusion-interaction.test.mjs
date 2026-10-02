@@ -23,5 +23,5 @@ for (const publisher of ["nani", "kanghsuan", "hanlin"]) {
   assert.ok(sources.get(publisher)?.sourceUrl, `missing ${publisher} source`);
   assert.match(sources.get(publisher).outcome, /本課|材料|索引|筆記/);
 }
-assert.equal(lesson.reviewStatus, "draft", "fusion authoring does not imply content review");
-console.log("A-8-7 publisher-informed interaction, math feedback, source records and draft gate: ok");
+assert.equal(lesson.reviewStatus, "content-reviewed", "project-authored content review is complete while unavailable publisher full-body evidence remains explicitly pending");
+console.log("A-8-7 publisher-informed interaction, math feedback, source records and content-review/evidence-boundary gate: ok");
