@@ -6,6 +6,8 @@ const SUPPORTED = new Set([
   "GeometryManipulationBlock",
   "AlgebraBalanceBlock",
   "AlgebraEquationMeaningBlock",
+  "SystemIntersectionBlock",
+  "SystemEliminationBlock",
   "EquivalentExpressionCheckBlock",
   "NumberLineBlock",
   "StepwiseReasoningBlock",
@@ -380,6 +382,152 @@ function mountBalanceLab({ document, root, block, spec }) {
   return lab;
 }
 
+
+function mountSystemIntersectionLab({ document, root, block }) {
+  const store=storageFor(block.id), prior=store?.get()||{};
+  const state={x:clamp(number(prior.x,10),0,18),prediction:String(prior.prediction||""),transfer:String(prior.transfer||"")};
+  const {lab,status}=makeLab(document,block,"雙條件共同解檢查臺");
+  lab.classList.add("math-system-intersection-lab");
+
+  const intro=document.createElement("p");
+  intro.innerHTML="<strong>一組數要過兩關。</strong> 第一條式成立還不夠；同一個有序數對必須同時滿足兩條限制。";
+  const predict=document.createElement("fieldset");
+  const pl=document.createElement("legend");pl.textContent="先預測：(10,8) 能不能直接叫共同解？";predict.append(pl);
+  const feedback=document.createElement("p");feedback.setAttribute("aria-live","polite");
+
+  const candidate=document.createElement("div");candidate.className="math-system-candidate";
+  candidate.setAttribute("role","img");
+  candidate.setAttribute("aria-label","候選有序數對逐一通過兩條限制的模型");
+  const pair=document.createElement("div");pair.className="math-system-pair";
+  const cards=document.createElement("div");cards.className="math-system-cards";
+  candidate.append(pair,cards);
+
+  const choose=(value,label)=>{
+    const b=document.createElement("button");b.type="button";b.textContent=label;b.setAttribute("aria-pressed",String(state.prediction===value));
+    b.addEventListener("click",()=>{
+      state.prediction=value;store?.set(state);
+      predict.querySelectorAll("button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));
+      feedback.textContent=value==="no"?"正確。(10,8) 只通過 x+y=18；第二式得到 28，不是 30。":"再檢查第二張工作單。聯立方程式的解必須同時通過兩式。";
+      update();
+    });
+    predict.append(b);
+  };
+  choose("yes","可以，只要通過其中一式");
+  choose("no","不可以，兩式都要成立");
+
+  const update=()=>{
+    const y=18-state.x, first=state.x+y, second=2*state.x+y;
+    pair.innerHTML="<span>x 果汁</span><strong>"+state.x+"</strong><span>y 茶</span><strong>"+y+"</strong>";
+    cards.replaceChildren();
+    const make=(title,equation,value,target)=>{
+      const article=document.createElement("article");article.className="math-system-card";
+      const h=document.createElement("strong");h.textContent=title;
+      const eq=document.createElement("p");eq.textContent=equation;
+      const result=document.createElement("p");result.className="math-system-result";
+      if(!state.prediction){result.textContent="先完成預測，計算結果暫時隱藏。";}
+      else{
+        const pass=value===target;
+        result.textContent=(pass?"✓ 通過：":"✗ 未通過：")+"左側 "+value+"，右側 "+target;
+        result.dataset.pass=String(pass);
+      }
+      article.append(h,eq,result);return article;
+    };
+    cards.append(
+      make("工作單 A：總杯數","x + y = 18",first,18),
+      make("工作單 B：冰塊需求","2x + y = 30",second,30)
+    );
+    status.textContent=!state.prediction
+      ?"先預測，再調整候選數對；答案保持隱藏。"
+      :(first===18&&second===30
+        ?"目前 ("+state.x+","+y+") 同時通過兩條限制，是共同解。"
+        :"目前 ("+state.x+","+y+") 尚未同時通過兩條限制；第二式左側為 "+second+"。");
+    store?.set(state);
+  };
+  const xControl=makeRange(document,{label:"果汁杯數 x；茶杯數 y 自動維持總杯數 18",min:0,max:18,value:state.x,onInput:value=>{state.x=value;update();}});
+
+  const transfer=document.createElement("fieldset");
+  const tl=document.createElement("legend");tl.textContent="遷移：x+y=25、2x+y=46，(21,4) 是否為共同解？";transfer.append(tl);
+  const tf=document.createElement("p");tf.setAttribute("aria-live","polite");
+  [["yes","同時通過兩式"],["first","只通過第一式"],["second","只通過第二式"]].forEach(([value,label])=>{
+    const b=document.createElement("button");b.type="button";b.textContent=label;
+    b.addEventListener("click",()=>{
+      state.transfer=value;store?.set(state);
+      tf.textContent=value==="yes"?"正確。21+4=25，2×21+4=46；同一有序數對兩式都成立。":"再逐式代入。兩條式都要各自核對，而且 x、y 順序不能交換。";
+    });
+    transfer.append(b);
+  });transfer.append(tf);
+
+  lab.append(intro,predict,feedback,candidate,xControl.wrapper,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  update();
+  return lab;
+}
+
+function mountSystemEliminationLab({ document, root, block }) {
+  const store=storageFor(block.id), prior=store?.get()||{};
+  const state={method:String(prior.method||""),back:String(prior.back||""),transfer:String(prior.transfer||"")};
+  const {lab,status}=makeLab(document,block,"整行消去與回代驗證臺");
+  lab.classList.add("math-system-elimination-lab");
+
+  const intro=document.createElement("p");
+  intro.innerHTML="<strong>先看係數，再選方法。</strong> 每次消去都是整條等式一起做運算；求出一個未知數後還要回代與雙式驗算。";
+  const stack=document.createElement("div");stack.className="math-system-stack";stack.setAttribute("role","img");stack.setAttribute("aria-label","兩條聯立方程式按 x、y、常數對齊");
+  const renderStack=()=>{
+    stack.innerHTML="<div><span>x</span><span>+</span><span>y</span><span>=</span><span>35</span></div>"+
+      "<div><span>2x</span><span>+</span><span>y</span><span>=</span><span>50</span></div>"+
+      (state.method==="subtract"
+        ?"<div class=\"math-system-operation\"><strong>x</strong><span>+</span><strong>0y</strong><span>=</span><strong>15</strong></div>"
+        :"<div class=\"math-system-operation is-pending\">先預測整行運算，再揭示消去結果</div>");
+  };
+
+  const method=document.createElement("fieldset");
+  const ml=document.createElement("legend");ml.textContent="哪個操作最省步驟？";method.append(ml);
+  const mf=document.createElement("p");mf.setAttribute("aria-live","polite");
+  [["subtract","第二式 − 第一式，消去 y"],["left-only","只把左邊相減"],["double","兩式都先乘 2"]].forEach(([value,label])=>{
+    const b=document.createElement("button");b.type="button";b.textContent=label;
+    b.addEventListener("click",()=>{
+      state.method=value;store?.set(state);renderStack();
+      mf.textContent=value==="subtract"?"正確。y 係數相同，整行相減：50−35 也必須一起做，得到 x=15。":value==="left-only"?"不成立。等式運算必須左右兩邊同步；只動左邊會破壞等值。":"可以繼續算，但沒有必要；本題 y 係數已經相同，直接相減更短。";
+      status.textContent=value==="subtract"?"已消去 y 得 x=15；現在還不能結束，請回代求 y。":"重新看 y 欄的係數結構再選方法。";
+    });method.append(b);
+  });method.append(mf);
+
+  const back=document.createElement("fieldset");
+  const bl=document.createElement("legend");bl.textContent="x=15 後，回代 x+y=35 得 y=?";back.append(bl);
+  const bf=document.createElement("p");bf.setAttribute("aria-live","polite");
+  [["20","20"],["15","15"],["35","35"]].forEach(([value,label])=>{
+    const b=document.createElement("button");b.type="button";b.textContent=label;
+    b.addEventListener("click",()=>{
+      state.back=value;store?.set(state);
+      if(state.method!=="subtract"){bf.textContent="先完成有效的整行消去，再回代。";return;}
+      bf.textContent=value==="20"?"正確。15+y=35，所以 y=20；完整解是 (15,20)。":"把 15 代回 15+y=35，求出尚缺的量。";
+      verify.hidden=value!=="20";
+      status.textContent=value==="20"?"完整解 (15,20)；兩條原式都必須驗算。":"回代尚未完成。";
+    });back.append(b);
+  });back.append(bf);
+
+  const verify=document.createElement("div");verify.className="math-system-cards";verify.hidden=true;
+  verify.innerHTML="<article class=\"math-system-card\"><strong>原式 A</strong><p>x+y=35</p><p>15+20=35 ✓</p></article>"+
+    "<article class=\"math-system-card\"><strong>原式 B</strong><p>2x+y=50</p><p>2×15+20=50 ✓</p></article>";
+
+  const transfer=document.createElement("fieldset");
+  const tl=document.createElement("legend");tl.textContent="遷移：x+y=40、3x+2y=100，先怎麼消去 y？";transfer.append(tl);
+  const tf=document.createElement("p");tf.setAttribute("aria-live","polite");
+  [["minus2","第一式整行乘 −2，再與第二式相加"],["subtract","兩式直接相減"],["flip-y","只把 y 改成 −y"]].forEach(([value,label])=>{
+    const b=document.createElement("button");b.type="button";b.textContent=label;
+    b.addEventListener("click",()=>{
+      state.transfer=value;store?.set(state);
+      tf.textContent=value==="minus2"?"正確。−2x−2y=−80 與 3x+2y=100 相加得 x=20，再回代 y=20。":"要讓 y 係數成為相反數，而且乘數必須作用到整條等式。";
+    });transfer.append(b);
+  });transfer.append(tf);
+
+  lab.append(intro,stack,method,back,verify,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  renderStack();
+  status.textContent="先觀察係數，選擇能保留等式結構的整行運算。";
+  return lab;
+}
+
 function mountEquivalentLab({ document, root, block }) {
   const store = storageFor(block.id);
   const prior = store?.get() || {};
@@ -687,6 +835,8 @@ export function enhanceMathInteractiveBlock({ document, root, spec, block }) {
   if (block.component === "FunctionRepresentationBlock") return mountFunctionLab({ document, root, block, spec });
   if (block.component === "GeometryManipulationBlock") return mountGeometryLab({ document, root, block, spec });
   if (block.component === "AlgebraBalanceBlock" || block.component === "AlgebraEquationMeaningBlock") return mountBalanceLab({ document, root, block, spec });
+  if (block.component === "SystemIntersectionBlock") return mountSystemIntersectionLab({ document, root, block, spec });
+  if (block.component === "SystemEliminationBlock") return mountSystemEliminationLab({ document, root, block, spec });
   if (block.component === "EquivalentExpressionCheckBlock") return mountEquivalentLab({ document, root, block, spec });
   if (block.component === "NumberLineBlock") return mountNumberLineLab({ document, root, block, spec });
   if (block.component === "StepwiseReasoningBlock") return mountStepwiseLab({ document, root, block, spec });
