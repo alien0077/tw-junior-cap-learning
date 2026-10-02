@@ -152,6 +152,34 @@
       .math-system-stack > div { grid-template-columns: 1fr 22px 1fr 22px 1fr; font-size: .9rem; }
       .math-system-stack > div > * { min-height: 42px; padding: .15rem; }
     }
+    .math-quadratic-meaning-lab, .math-quadratic-solution-lab { border: 2px solid #475569; border-radius: 16px; padding: 1rem; background: #fbfdff; }
+    .math-quadratic-meaning-lab fieldset, .math-quadratic-solution-lab fieldset { display: flex; flex-wrap: wrap; gap: .55rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; }
+    .math-quadratic-meaning-lab legend, .math-quadratic-solution-lab legend { font-weight: 800; padding: 0 .35rem; }
+    .math-quadratic-stage { display: grid; gap: .75rem; border: 1px solid #cbd5e1; border-radius: 14px; padding: .85rem; background: #f8fafc; }
+    .math-q-line { display: grid; grid-template-columns: 5rem 1fr; gap: .6rem; align-items: center; }
+    .math-q-line > * { border: 1px solid #cbd5e1; border-radius: 9px; padding: .6rem; background: white; }
+    .math-q-note, .math-quadratic-feedback { border-left: 5px solid #475569; padding: .65rem .8rem; background: #f8fafc; }
+    .math-q-root-row, .math-q-square-balance { display: grid; grid-template-columns: 1fr auto 1fr; gap: .7rem; align-items: center; }
+    .math-q-root-row > div, .math-q-square-balance > div { display: grid; gap: .35rem; text-align: center; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; background: white; }
+    .math-q-root-row strong { font-size: 1.35rem; }
+    .math-q-context-rect { display: grid; place-items: center; min-height: 220px; }
+    .math-q-rect-box { width: min(82%, 360px); min-height: 150px; display: grid; place-items: center; position: relative; border: 3px solid #475569; border-radius: 10px; background: #eaf2f8; }
+    .math-q-rect-box > span { position: absolute; top: -2rem; font-weight: 800; }
+    .math-q-rect-box > em { position: absolute; left: -3.1rem; transform: rotate(-90deg); font-style: normal; font-weight: 800; }
+    .math-q-roots { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: .65rem; }
+    .math-q-roots article, .math-q-method-map article { border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; background: white; }
+    .math-q-coeff-cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .65rem; }
+    .math-q-coeff-cards span { display: grid; place-items: center; gap: .35rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; background: white; }
+    .math-q-coeff-cards strong { font-size: 1.4rem; }
+    .math-q-method-map { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: .65rem; }
+    @media (max-width: 480px) {
+      .math-quadratic-meaning-lab, .math-quadratic-solution-lab { padding: .65rem; }
+      .math-quadratic-meaning-lab fieldset, .math-quadratic-solution-lab fieldset { display: grid; grid-template-columns: 1fr; }
+      .math-quadratic-meaning-lab fieldset button, .math-quadratic-solution-lab fieldset button { width: 100%; }
+      .math-q-line, .math-q-root-row, .math-q-square-balance, .math-q-roots, .math-q-coeff-cards, .math-q-method-map { grid-template-columns: 1fr; }
+      .math-q-rect-box > em { position: static; transform: none; }
+      .math-q-rect-box > span { position: static; }
+    }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
   </style>
 </head>
