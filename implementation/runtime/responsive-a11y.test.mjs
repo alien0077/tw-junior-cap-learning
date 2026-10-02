@@ -7,6 +7,7 @@ const html = await readFile(new URL("../workbench.html", import.meta.url), "utf8
 const css = html.match(/<style>([\s\S]*?)<\/style>/)?.[1] ?? "";
 assert.match(html, /name="viewport" content="width=device-width, initial-scale=1"/);
 assert.match(css, /body\s*\{[^}]*max-width:\s*960px/);
+assert.match(css, /\*, \*::before, \*::after\s*\{[^}]*box-sizing:\s*border-box/);
 assert.match(css, /\.interactive-controls\s*\{[^}]*flex-wrap:\s*wrap/);
 assert.match(css, /button, input\s*\{[^}]*min-height:\s*44px/);
 assert.match(css, /\.visualization-summary\s*\{[^}]*overflow-wrap:\s*anywhere/);
