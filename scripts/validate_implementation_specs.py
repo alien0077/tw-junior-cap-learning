@@ -109,10 +109,15 @@ def main() -> int:
     for path in files:
         doc = yaml.safe_load(path.read_text(encoding="utf-8"))
         spec = doc["unitImplementationSpec"]
-        statuses[tuple(spec["status"].values())] += 1
-        components[spec["interactiveBlocks"][0]["component"]] += 1
-        for item in spec["fusedScope"]["publisherEvidence"].values():
-            evidence[item["status"]] += 1
+        status = spec.get("status") or {}
+        statuses[tuple(status.values())] += 1
+        blocks = spec.get("interactiveBlocks") or []
+        if blocks and isinstance(blocks[0], dict) and blocks[0].get("component"):
+            components[blocks[0]["component"]] += 1
+        publisher_evidence = ((spec.get("fusedScope") or {}).get("publisherEvidence") or {})
+        for item in publisher_evidence.values():
+            if isinstance(item, dict) and item.get("status"):
+                evidence[item["status"]] += 1
         problem = validate_spec(path, schema, curricula, kg, registry)
         if problem:
             errors[str(path.relative_to(ROOT))] = problem
@@ -122,7 +127,7 @@ def main() -> int:
     eligible_specs = 0
     for path in files:
         spec = yaml.safe_load(path.read_text(encoding="utf-8"))["unitImplementationSpec"]
-        state = spec["status"]
+        state = spec.get("status") or {}
         if (
             state.get("designStatus") == "reviewed"
             and state.get("implementationStatus") == "implemented"
