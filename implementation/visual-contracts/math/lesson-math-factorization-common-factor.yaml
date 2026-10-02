@@ -1,0 +1,47 @@
+lessonId: lesson-math-factorization-common-factor
+subject: math
+knowledgeNodes:
+  - kg-math-factorization-common-factor
+learningObjective: 從每一項的係數與字母因子辨認最大共同因式，逐項相除形成括號，再用分配律回乘驗證。
+keyConcept: 最大共同因式必須同時存在於每一項；係數取最大公因數，字母取共同最低次方。
+priorKnowledge:
+  - 整數因數
+  - 字母次方
+  - 分配律
+misconceptions:
+  - 只提出係數 6，漏掉兩項共同的 x
+  - 把第一項完整提出成 12x，卻無法整除第二項
+  - 多變數題沒有逐字母取共同最低次方
+visual:
+  primaryType: factor-token-board
+  secondaryRepresentations:
+    - term-division-check
+    - expansion-check
+  firstFrame: 12x² 與 18x 各自拆成因子 token 並排，學生先找兩列共同材料。
+  manipulables:
+    - commonFactor
+    - factorTransfer
+  dynamicChanges:
+    - 候選共同因式
+    - 逐項相除結果
+    - 回乘驗證
+  invariants:
+    - 分解式展開後必須回到原多項式
+interaction:
+  prediction: 先從 6、6x、12x 中預測最大共同因式。
+  action: 提交候選後檢查兩項是否皆可整除，並觀察是否仍漏共同因子。
+  observation: 比較兩個商以及回乘結果。
+  evidencePrompt: 用 12x²÷候選與 18x÷候選兩個商證明候選是否成立。
+  feedback: 錯誤時指出是漏共同字母或候選無法整除，不直接只顯示答案。
+  retry: 可重新選候選。
+  transfer: 改用 15x²y−10xy²，找出 5xy 並回乘。
+accessibility:
+  keyboardAlternative: select 可完整鍵盤操作。
+  nonDragAlternative: 不要求 drag。
+  textAlternative: 所有 token 與共同因式都有文字。
+  reducedMotion: 無必要動畫；靜態狀態保留所有資訊。
+qa:
+  pedagogy: needs-review-after-implementation
+  visual: needs-screenshot-review
+  interaction: needs-browser-review
+  browser: needs-browser-review
