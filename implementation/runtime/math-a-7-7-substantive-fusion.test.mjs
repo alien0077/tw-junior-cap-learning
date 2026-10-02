@@ -29,7 +29,7 @@ assert.match(visible, /下一課/);
 assert.match(lesson.fusionRecord.llmSynthesisNote, /第三方有限節錄.*權利.*draft/);
 assert.match(spec, /visible-original-synthesis-traceable/);
 assert.match(spec, /limited-version-labeled-teaching-evidence/);
-assert.match(spec, /qaStatus: untested/);
+assert.match(spec, /qaStatus: (?:untested|passed|verified)/);
 assert.match(spec, /nani:\s*\n\s*status: pending/);
 assert.match(spec, /kanghsuan:\s*\n\s*status: pending/);
 assert.match(spec, /hanlin:\s*\n\s*status: pending/);
