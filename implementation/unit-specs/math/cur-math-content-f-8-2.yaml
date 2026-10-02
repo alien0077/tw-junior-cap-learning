@@ -56,7 +56,7 @@ unitImplementationSpec:
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-F-8-2-I01
     component: FunctionRepresentationBlock
-    purpose: 讓學生操作並看見「F-8-2：一次函數的圖形」中最容易被背誦取代的關係
+    purpose: 用同一座標尺度同步方程式、表格與直線；一次只改 a 或 b，直接觀察固定變化率、y 截距、平行平移與兩方案交點。
     initialState:
       mode: predict
       showAnswer: false
@@ -65,23 +65,23 @@ unitImplementationSpec:
         primary: 1
         secondary: 1
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測 b=30 固定時把 a 由18改成8，哪個點與哪個變化量保持不變
+    - 只調整 a，讀 x=0、2、4 的表格差與直線傾斜，確認 (0,30) 固定
+    - 鎖定 a=8 後只改 b=30→50，比較同一 x 的輸出差與兩條平行線
+    - 拖動 x 比較 18x+30 與24x，找到價差0並以方程式驗證交點；再遷移到 y=−7x+100
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 圖、表、方程式共用同一 a、b、x 狀態，任一參數改變時三種表示同步
+    - 比較 a 時 b 必須鎖定；比較 b 時 a 必須鎖定，避免同時改兩個變因
+    - 交點模式同時標示兩方案在相同 x 的輸出與價差，不能只靠線條看起來相交
+    - 手機版圖形仍保留坐標尺度、表格與參數意義；不以線色作唯一區別
     misconceptionChecks:
     - id: MC-CUR-MATH-CONTENT-F-8-2-I01
-      trigger: 把「F-8-2：一次函數的圖形」當成可直接套公式的程序，忽略量與表徵的對應
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 把 b 的垂直平移誤認為斜率改變，或把圖上兩線接近當成已找到精確交點
+      prompt: 固定另一個參數，分別讀 x=0 的值與相鄰 x 的輸出差；交點則比較同一 x 的兩個輸出是否完全相等。
+      expectedEvidence: a 改變時 (0,b) 不動而每單位變化量改變；b 改變時斜率不變且所有 y 同增；x=5 時兩方案皆120
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出圖、表、式中一致的斜率或截距證據，再要求切換另一個單一參數驗證。
+      incorrect: 先指出混淆的是斜率、截距或交點精度；鎖定另一參數後重試，不直接給最終結論。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
@@ -96,16 +96,16 @@ unitImplementationSpec:
     reuseDecision: inspiration-only
     application: "本課「F-8-2：一次函數的圖形」的 FunctionRepresentationBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「F-8-2：一次函數的圖形」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 一次函數參數與情境範圍判讀
+    stemConstraint: 水箱 y=−7x+100；讀 x=2、5、8 的水量並說明負斜率與有效情境範圍
+    requiredResponse: 說明斜率 −7 代表每單位時間減少7、截距100為初始量；負水量屬代數延伸但情境不允許
+    scoring: 參數意義1、圖表證據1、情境範圍1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: y=8x+30 改成 y=8x+50 時，圖形哪個特徵不變？同一 x 的 y 改變多少？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 斜率仍為8，兩線平行
+    - y 截距由30到50
+    - 同一 x 的輸出都增加20
   expressionExtension:
     applicable: false
     task: 用 80～120 字／英文短段落，將「F-8-2：一次函數的圖形」的證據、因果或觀察說給同學聽
@@ -114,6 +114,8 @@ unitImplementationSpec:
     breakpoints:
     - 320
     - 375
+    - 390
+    - 430
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
@@ -137,7 +139,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 F-8-2
