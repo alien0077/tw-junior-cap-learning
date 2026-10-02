@@ -93,6 +93,37 @@
       '</section>';
   };
 
+  const renderLinearEquationCheck = (lesson,state) => {
+    const first=Number(state.linearFirstStep||0);
+    const candidate=Number(state.linearCandidate??0);
+    const transfer=Number(state.linearTransfer||0);
+    const left=2*(candidate+3), right=14, pass=left===right;
+    const firstFeedback=!first
+      ? '先看 2(x+3)=14：第一步要對整個等式做什麼？'
+      : first===1
+        ? '正確。左右兩側同除以 2，得到 x+3=7；再兩側同減 3，得到 x=4。'
+        : '要保持等式，操作必須同時作用到左右兩側；而且外面的 2 乘的是整個括號。';
+    const transferFeedback=!transfer
+      ? '遷移到固定費＋每人費用：保留固定費，不要只看 15x。'
+      : transfer===1
+        ? '正確。15×6+80=170，左右相等，而且 6 人符合非負整數情境。'
+        : '把候選值代回原式 15x+80=170；固定費 80 不能漏掉。';
+    return '<section class="mvl mvl-linear-equation" aria-label="一元一次方程式等價變形與代回驗算模型">'+
+      '<div class="mvl-task"><span class="mvl-step">1 先保留原式</span><strong>2(x+3)=14</strong><p>不是把數字「搬家」，而是對等號兩側做相同的可逆操作。</p></div>'+
+      select('linearFirstStep','第一步怎麼做？',first,[[0,'先預測'],[1,'左右兩側同除以 2'],[2,'只把左側 2 消掉'],[3,'先把括號內 3 移到右邊']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(firstFeedback)+'</p>'+
+      (first===1?'<div class="mvl-linear-chain" role="img" aria-label="二乘 x 加三等於十四，兩側同除二得到 x 加三等於七，再兩側同減三得到 x 等於四"><span>2(x+3)=14</span><b>÷2 兩側</b><span>x+3=7</span><b>−3 兩側</b><span>x=4</span></div>':'')+
+      '<div class="mvl-q-root-check" role="img" aria-label="候選 x 代回原方程式左右比較"><div class="mvl-q-pan"><span>左 2(x+3)</span><strong>'+left+'</strong></div><b>'+(pass?'=':(left<right?'<':'>'))+'</b><div class="mvl-q-pan"><span>右</span><strong>14</strong></div></div>'+
+      range('linearCandidate','候選 x',candidate,-2,8)+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(pass?'x='+candidate+' 代回原式後左右同為 14；這個候選值通過原式驗證。':'x='+candidate+' 時左側 '+left+'、右側 14；不相等，請回查等價變形而不是硬改答案。')+'</p>'+
+      '<div class="mvl-transfer"><span class="mvl-step">2 遷移</span><strong>15x+80=170：候選人數是多少？</strong>'+
+      select('linearTransfer','代回檢查',transfer,[[0,'先預測'],[1,'x=6'],[2,'x=4'],[3,'x=90']])+
+      '<p class="mvl-feedback" aria-live="polite">'+esc(transferFeedback)+'</p>'+
+      (transfer===1?'<div class="mvl-equation"><strong>15×6+80=170 ✓</strong><p>等式成立之外，x 代表人數，還要符合非負整數。</p></div>':'')+
+      '<details class="mvl-evidence"><summary>為什麼一定回到原式？</summary><p>只檢查最後一行 x=4 無法發現前面括號、同除或移項是否做錯。代回最原始方程式，能一次檢查整條推理鏈。</p></details>'+
+      '</section>';
+  };
+
   const quadraticRectSvg = (w,d,reveal) => {
     const scale=20, width=Math.max(60,w*scale), height=Math.max(52,(w+d)*scale*0.62), x=38,y=42;
     return '<svg viewBox="0 0 356 260" role="img" aria-label="寬 '+w+'、長 '+(w+d)+' 的長方形面積模型">'+
@@ -449,8 +480,10 @@
       '</div><details class="mvl-evidence"><summary>為什麼不是只背最大公因數？</summary><p>因式分解是分配律的反向操作。候選共同因式必須逐項相除得到整式，最後再乘回原式；三個步驟都能檢查。</p></details></section>';
   };
 
-  const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model' || engine==='math-polynomial-model' || engine==='math-system-model' || engine==='math-quadratic-model';
-  const defaults = (engine,model) => engine==='math-visual-area'
+  const supports = (engine,model) => engine==='math-visual-area' || engine==='math-factor-model' || engine==='math-polynomial-model' || engine==='math-system-model' || engine==='math-quadratic-model' || (engine==='math-algebra-balance' && model==='a-7-3-linear-equation-check-v1');
+  const defaults = (engine,model) => (engine==='math-algebra-balance' && model==='a-7-3-linear-equation-check-v1')
+    ? {linearFirstStep:0,linearCandidate:0,linearTransfer:0}
+    : engine==='math-visual-area'
     ? {a:4,b:2,formulaMode:0,prediction:0,transferA:5,transferB:1,transferPrediction:0}
     : engine==='math-polynomial-model'
       ? {polyMode:0,subtractPrediction:0,multiplyPrediction:0,dividePrediction:0,polyTransfer:0}
@@ -461,7 +494,7 @@
       : model==='a-8-4-factor-meaning-v1'
         ? {factorMeaningX:2,candidateFactor:0,factorMeaningTransfer:0}
         : {commonFactor:0,factorTransfer:0};
-  const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : engine==='math-polynomial-model' ? '多項式視覺工作台' : engine==='math-system-model' ? '聯立方程式雙條件工作台' : engine==='math-quadratic-model' ? '二次方程式視覺工作台' : '因式結構探索臺';
-  const render = (lesson,state) => lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : lesson.simulation.engine==='math-polynomial-model' ? renderPolynomialOps(lesson,state) : lesson.simulation.engine==='math-system-model' ? renderSystemLab(lesson,state) : lesson.simulation.engine==='math-quadratic-model' ? renderQuadraticLab(lesson,state) : renderFactor(lesson,state);
+  const label = engine => engine==='math-visual-area' ? '面積公式探索臺' : engine==='math-polynomial-model' ? '多項式視覺工作台' : engine==='math-system-model' ? '聯立方程式雙條件工作台' : engine==='math-quadratic-model' ? '二次方程式視覺工作台' : engine==='math-algebra-balance' ? '一次方程式驗算臺' : '因式結構探索臺';
+  const render = (lesson,state) => (lesson.simulation.engine==='math-algebra-balance' && lesson.simulation.model==='a-7-3-linear-equation-check-v1') ? renderLinearEquationCheck(lesson,state) : lesson.simulation.engine==='math-visual-area' ? renderArea(lesson,state) : lesson.simulation.engine==='math-polynomial-model' ? renderPolynomialOps(lesson,state) : lesson.simulation.engine==='math-system-model' ? renderSystemLab(lesson,state) : lesson.simulation.engine==='math-quadratic-model' ? renderQuadraticLab(lesson,state) : renderFactor(lesson,state);
   window.MathVisualLabs={supports,defaults,label,render};
 })();
