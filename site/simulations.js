@@ -151,13 +151,13 @@
             <p role="status">${esc(state.torqueFeedback || "選一個方向後再開始操作。")}</p>
           </div>
         </div>
-        <div class="sim-torque-controls" ${predictionLocked ? 'aria-disabled="true"' : ""}>
+        <fieldset class="sim-torque-controls" ${predictionLocked ? "disabled" : ""}><legend class="sr-only">力與力臂控制</legend>
           <p><b>2. 一次改一個量，看尺本身怎麼變</b></p>
           ${slider("leftForce","左側力",lf,1,5,1," N")}
           ${slider("leftArm","左力臂",la,5,20,1," cm")}
           ${slider("rightForce","右側力",rf,1,5,1," N")}
           ${slider("rightArm","右力臂",ra,5,20,1," cm")}
-        </div>
+        </fieldset>
         <div class="sim-evidence-card">
           <p><b>3. 用圖上的證據說明</b></p>
           <p aria-live="polite">${evidence}</p>
