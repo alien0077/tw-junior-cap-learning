@@ -16,6 +16,7 @@
     if (engine === "science-motion-lab" && model === "eb-iv-6-buoyancy") return { objectWeight: 8, liquidDensity: 1, displacedVolume: 500, buoyancyPrediction: "", predictionSubmitted: false, buoyancyFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-8-motion-graph") return { eastDistance: 8, westDistance: 4, stopTime: 2, motionPrediction: "", predictionSubmitted: false, motionFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-9-circular-motion") return { radius: 2, speed: 4, mass: 1, circularPrediction: "", predictionSubmitted: false, circularFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-10-inertia") return { initialSpeed: 4, appliedForce: 0, friction: 0, inertiaPrediction: "", predictionSubmitted: false, inertiaFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -177,6 +178,19 @@
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
       </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-10-inertia") {
+      const v0=clamp(Number(state.initialSpeed),0,8),force=clamp(Number(state.appliedForce),-5,5),friction=clamp(Number(state.friction),0,5),resist=v0>0?-friction:v0<0?friction:0,net=force+resist,v1=v0+net*0.8,locked=!state.predictionSubmitted;
+      const x0=105,x1=105+v0*28,x2=105+clamp(v1,0,10)*28;
+      return `<section class="sim-inertia-lab" aria-label="慣性與合力視覺實驗室"><div class="sim-visual-first"><figure class="sim-inertia-stage"><svg viewBox="0 0 680 320" role="img" aria-label="初速 ${v0} 公尺每秒、合力 ${net.toFixed(1)} 牛頓的滑車">
+      <line x1="60" y1="215" x2="620" y2="215" class="sim-track"/><g transform="translate(${x1} 165)"><rect width="75" height="42" rx="8" class="sim-cart"/><circle cx="15" cy="48" r="9"/><circle cx="60" cy="48" r="9"/></g>
+      <line x1="${x1+38}" y1="145" x2="${x1+38+v0*15}" y2="145" class="sim-velocity-arrow"/><text x="${x1+38}" y="125">v=${v0} m/s</text>
+      <line x1="${x1+38}" y1="235" x2="${x1+38+net*22}" y2="235" class="sim-force-arrow"/><text x="${x1+38}" y="265">ΣF=${net.toFixed(1)} N</text>
+      <g transform="translate(60 35)"><text y="0">現在</text><circle cx="45" cy="35" r="6" class="sim-marker"/><text x="80" y="40">若 ΣF=0，速度箭頭不必變成 0</text><text x="80" y="72">而是維持原本運動狀態</text></g></svg><figcaption>${Math.abs(net)<.01?`合力為 0：模型維持原速度 ${v0} m/s`:`合力不為 0：速度會改變，下一狀態約 ${v1.toFixed(1)} m/s`}</figcaption></figure>
+      <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>已在向右滑動的車若突然合力變成 0，會？</p><div class="sim-actions"><button data-inertia-action="predict" data-value="stop">立刻停下</button><button data-inertia-action="predict" data-value="continue">維持等速直線運動</button></div><button data-inertia-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.inertiaFeedback||"不要把『沒有合力』和『沒有速度』混在一起。")}</p></div></div>
+      <fieldset class="sim-inertia-controls" ${locked?"disabled":""}><legend>2. 操作合力</legend>${slider("initialSpeed","初始速度",v0,0,8,1," m/s")}${slider("appliedForce","外加水平力",force,-5,5,1," N")}${slider("friction","摩擦阻力",friction,0,5,1," N")}</fieldset>
+      <div class="sim-evidence-card"><p><b>3. 視覺證據</b></p><p>ΣF=${net.toFixed(1)} N。牛頓第一運動定律說的是合力為 0 時「速度保持不變」；若原本速度不為 0，就繼續等速直線運動。</p></div>
+      <div class="sim-transfer-card"><p><b>4. 遷移：冰面上的冰球比粗糙地面更久才停，主要因為？</b></p><div class="sim-actions"><button data-inertia-action="transfer" data-value="less-friction">阻力較小，合力更接近 0</button><button data-inertia-action="transfer" data-value="needs-force">需要持續向前力才能動</button></div><p role="status">${esc(state.transferFeedback||"用合力是否接近 0 解釋。")}</p></div></section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-9-circular-motion") {
       const radius=clamp(Number(state.radius),1,5),speed=clamp(Number(state.speed),1,8),mass=clamp(Number(state.mass),.5,3),acc=speed*speed/radius,force=mass*acc,locked=!state.predictionSubmitted;
@@ -559,6 +573,13 @@
       if (direction === "prev") update(root, { reasoningStep: Math.max(0, index - 1), reasoningChoice: "" });
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
+    }
+    const inertiaAction=event.target.closest("[data-inertia-action]");
+    if(inertiaAction && lesson.simulation.model==="eb-iv-10-inertia"){
+      const action=inertiaAction.dataset.inertiaAction,value=inertiaAction.dataset.value,state=read(lesson.simulation);
+      if(action==="predict"){update(root,{inertiaPrediction:value,inertiaFeedback:""});return;}
+      if(action==="submit-prediction"){update(root,state.inertiaPrediction?{predictionSubmitted:true,inertiaFeedback:state.inertiaPrediction==="continue"?"預測已記錄。把外力與摩擦都調成 0，觀察速度箭頭。":"預測已記錄。把合力調成 0，檢查速度是否必須歸零。"}:{inertiaFeedback:"請先選擇預測。"});return;}
+      if(action==="transfer"){update(root,value==="less-friction"?{transferChoice:value,transferFeedback:"正確：阻力較小時，改變速度的合力較小，因此運動狀態維持更久。"}:{transferChoice:value,transferFeedback:"再把摩擦設為 0：物體不需要持續向前力才能維持等速。"});return;}
     }
     const circularAction=event.target.closest("[data-circular-action]");
     if(circularAction && lesson.simulation.model==="eb-iv-9-circular-motion"){
