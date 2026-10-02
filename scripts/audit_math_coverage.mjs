@@ -9,7 +9,14 @@ const lessonFiles = (await list("lessons/math/" )).filter(name => name.endsWith(
 const questionFiles = (await list("questions/math/" )).filter(name => name.endsWith(".json"));
 const specFiles = (await list("implementation/unit-specs/math/" )).filter(name => name.endsWith(".yaml"));
 const reportFiles = new Set((await list("implementation/reports/" )).filter(name => /^math-.*first-pass-review\.json$/.test(name)));
-const productionRendererSource = `${await readText("site/simulations.js")}\n${await readText("site/math-visual-labs.js")}\n${await readText("site/math-gold-standard.js")}\n${await readText("site/math-number-family.js")}\n${await readText("site/math-algebra-family.js")}\n${await readText("site/math-geometry-family.js")}\n${await readText("site/math-data-family.js")}\n${await readText("site/math-function-family.js")}`;
+const productionRendererSource = `${await readText("site/simulations.js")}
+${await readText("site/math-visual-labs.js")}
+${await readText("site/math-gold-standard.js")}
+${await readText("site/math-number-family.js")}
+${await readText("site/math-algebra-family.js")}
+${await readText("site/math-geometry-family.js")}
+${await readText("site/math-data-family.js")}
+${await readText("site/math-function-family.js")}`;
 const productionMathEngines = new Set([
   "math-number-line",
   "math-inequality-range",
@@ -71,11 +78,16 @@ for (const q of questions) {
 const specs = new Map();
 for (const file of specFiles) {
   const text = await readText(`implementation/unit-specs/math/${file}`);
-  const lessonId = text.match(/^\s*lessonId:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
-  const component = text.match(/^\s*component:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
-  const designStatus = text.match(/^\s*designStatus:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
-  const implementationStatus = text.match(/^\s*implementationStatus:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
-  const qaStatus = text.match(/^\s*qaStatus:\s*([^\n#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const lessonId = text.match(/^\s*lessonId:\s*([^
+#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const component = text.match(/^\s*component:\s*([^
+#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const designStatus = text.match(/^\s*designStatus:\s*([^
+#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const implementationStatus = text.match(/^\s*implementationStatus:\s*([^
+#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
+  const qaStatus = text.match(/^\s*qaStatus:\s*([^
+#]+)/m)?.[1]?.trim().replace(/^['"]|['"]$/g, "");
   if (lessonId) specs.set(lessonId, { file, component, designStatus, implementationStatus, qaStatus });
 }
 
@@ -173,7 +185,8 @@ const problems = {
   duplicateActiveSimulationIds: [...activeSimulationIdGroups.entries()]
     .filter(([, group]) => group.length > 1)
     .map(([simulationId, group]) => ({ simulationId, lessons: group.map(r => r.id), files: group.map(r => r.file) })),
-  activeWithGenericSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").map(r => ({ id: r.id, file: r.file, model: r.simulationModel })),\n  activeWithGenericModel: rows.filter(r => rowIsActive(r) && r.simulationEngine?.startsWith("math-") && r.simulationModel === "general").map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
+  activeWithGenericSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine === "concept-explorer").map(r => ({ id: r.id, file: r.file, model: r.simulationModel })),
+  activeWithGenericModel: rows.filter(r => rowIsActive(r) && r.simulationEngine?.startsWith("math-") && r.simulationModel === "general").map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
   activeWithUnsupportedProductionSimulation: rows.filter(r => rowIsActive(r) && r.simulationEngine && !productionMathEngines.has(r.simulationEngine)).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
   activeWithoutProductionRenderer: rows.filter(r => rowIsActive(r) && r.simulationEngine && r.simulationEngine !== "concept-explorer" && !r.productionRenderer).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
   activeSimulationMissingModelGoalOrMission: rows.filter(r => rowIsActive(r) && r.simulationEngine && (!r.simulationModel || !r.simulationGoal || !r.simulationMission)).map(r => ({ id: r.id, file: r.file, engine: r.simulationEngine })),
