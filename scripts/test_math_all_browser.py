@@ -157,6 +157,29 @@ async def require_count(sim: Locator, selector: str, minimum: int, message: str)
 
 async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) -> None:
     """Verify the lesson reached its dedicated production renderer, not only sim-design."""
+    NUMBER_FAMILY_EXPECTED = {
+        "n-7-1-sieve-v1": ("n71Prediction", ".mnf-hundred"),
+        "n-7-2-factor-tree-v1": ("n72Prediction", ".mnf-tree"),
+        "n-7-4-operation-laws-v1": ("n74Prediction", ".mnf-structure"),
+        "n-7-5-signed-number-line-v1": ("n75Move", ".mnf-line"),
+        "n-7-6-exponent-factors-v1": ("n76Exponent", ".mnf-factor-chain"),
+        "n-7-7-scientific-place-value-v1": ("n77Place", ".mnf-place"),
+        "n-7-8-ratio-table-v1": ("n78Scale", ".mnf-table"),
+        "n-7-9-ratio-table-v1": ("n78Scale", ".mnf-table"),
+        "n-8-1-square-root-bracket-v1": ("n81Root", ".mnf-root-bar"),
+        "n-8-2-root-number-line-v1": ("n81Root", ".mnf-root-bar"),
+        "n-8-3-radical-structure-v1": ("n81Root", ".mnf-root-bar"),
+        "n-8-4-radical-operations-v1": ("n81Root", ".mnf-root-bar"),
+        "n-8-5-radical-denominator-v1": ("n81Root", ".mnf-root-bar"),
+        "n-8-6-chained-ratio-v1": ("n86Ratio", ".mnf-ratio-align"),
+        "n-9-1-sequence-v1": ("n91Sequence", ".mnf-sequence"),
+    }
+    if model in NUMBER_FAMILY_EXPECTED:
+        control, visual = NUMBER_FAMILY_EXPECTED[model]
+        await require_count(sim, ".mnf-root", 1, f"{model} Number-family renderer missing")
+        await require_count(sim, visual, 1, f"{model} concept-specific visual missing")
+        await require_count(sim, f'[data-sim-control="{control}"]', 1, f"{model} concept-specific control missing")
+        return
     if model == "s9-1-polygon-similarity-v1":
         await require_count(sim, ".sim-similarity-lab", 1, "similarity renderer missing")
         return
