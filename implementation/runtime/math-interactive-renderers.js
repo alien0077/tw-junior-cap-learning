@@ -1302,6 +1302,12 @@ function mountStepwiseLab({ document, root, block, spec }) {
 
 
 
+
+function mountPolygonSimilarityVisualLab({document,root,block}){
+ const {lab,status}=makeLab(document,block,"相似形縮放圖解臺");let k=1.5;const c=makeCanvas(document,"同形狀多邊形以統一倍率縮放",420,260);
+ const draw=()=>{c.replaceChildren();const base=[[40,190],[75,70],[145,55],[180,170],[120,215]],center=[110,135];const scaled=base.map(([x,y])=>[245+(x-center[0])*k*.65,135+(y-center[1])*k*.65]);[base,scaled].forEach((pts,i)=>{c.append(svg(document,"polygon",{points:pts.map(p=>p.join(",")).join(" "),fill:"none",stroke:"currentColor","stroke-width":3}));pts.forEach((p,j)=>{const t=svg(document,"text",{x:p[0]+4,y:p[1]-5,"font-size":12});t.textContent=(i?"A′B′C′D′E′":"ABCDE")[j];c.append(t);});});status.textContent=`右圖以統一倍率約 ${k.toFixed(1)}× 縮放；角度保持、所有對應邊使用同一倍率，才是相似。`;};
+ const ctl=makeRange(document,{label:"縮放倍率",min:.5,max:2,step:.25,value:k,onInput:v=>{k=v;draw();}});const p=document.createElement("p");p.innerHTML="<strong>不是「看起來像」就算相似。</strong> 逐頂點配對後，同時檢查角度保持與每一條對應邊的倍率。";lab.append(c,ctl.wrapper,p);root.querySelector(".component-visual-body")?.prepend(lab);draw();return lab;
+}
 function mountSectorVisualLab({document,root,block}){
  const {lab,status}=makeLab(document,block,"扇形：角度占整圓多少？");let r=5,theta=90;const c=makeCanvas(document,"圓心角、弧與扇形面積同步圖",360,270);
  const controls=document.createElement("div");controls.className="math-live-controls";
