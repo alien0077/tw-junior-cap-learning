@@ -9,6 +9,8 @@ on:
       - 'implementation/runtime/math-*.test.mjs'
       - 'implementation/runtime/student-lesson-shell.js'
       - 'implementation/runtime/dom-renderer.js'
+      - 'implementation/runtime/responsive-a11y.test.mjs'
+      - 'implementation/workbench.html'
       - 'implementation/unit-specs/math/**'
       - 'site/simulations.js'
       - 'scripts/audit_math_coverage.mjs'
@@ -52,6 +54,7 @@ jobs:
           node implementation/runtime/interactive-engine.test.mjs
           node implementation/runtime/dom-renderer.test.mjs
           node implementation/runtime/student-lesson-shell.test.mjs
+          node implementation/runtime/responsive-a11y.test.mjs
           failed=0
           for test_file in implementation/runtime/math-*.test.mjs; do
             echo "RUN $test_file"
