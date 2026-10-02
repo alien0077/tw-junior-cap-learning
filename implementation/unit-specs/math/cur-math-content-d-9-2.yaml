@@ -55,8 +55,8 @@ unitImplementationSpec:
   - 每次變更都保留因果可追溯的標記、圖例與文字替代
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-D-9-2-I01
-    component: DataExplorerBlock
-    purpose: 讓學生操作並看見「D-9-2：認識機率」中最容易被背誦取代的關係
+    component: ProbabilityExperimentBlock
+    purpose: 以可重現的累積硬幣試驗比較理論機率0.5與實驗相對頻率，先預測再查看10/20/50/100/200次資料，理解長期較穩定但不要求每批恰好相等。
     initialState:
       mode: predict
       showAnswer: false
@@ -65,23 +65,23 @@ unitImplementationSpec:
         primary: 1
         secondary: 1
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先判斷10次有7次正面是否足以證明硬幣一定不公平，答案保持隱藏
+    - 切換累積試驗次數10、20、50、100、200，讀正面次數與相對頻率折線相對於0.5的位置
+    - 比較『接近0.5』與『等於0.5』，用短期波動與長期趨勢限制結論
+    - 遷移到等面積轉盤P(紅)=1/4與48/200=0.24，區分理論模型、實驗觀察與下一次不確定性
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 第一畫面顯示10次7正面的情境與理論0.5基準，但不先宣告公平與否
+    - 累積試驗使用固定可重現資料，避免自動QA因隨機數產生不穩定結論；仍明確標示這是一組觀察資料
+    - 折線、目前試驗點、正面次數、分母與相對頻率同步，不能只顯示單一百分比
+    - 手機版保留0.5基準線與目前數值卡；顏色不是唯一區分方式
     misconceptionChecks:
     - id: MC-CUR-MATH-CONTENT-D-9-2-I01
-      trigger: 把「D-9-2：認識機率」當成可直接套公式的程序，忽略量與表徵的對應
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 把7/10直接當成硬幣理論機率，或認為公平硬幣100次必須恰好50次正面，或由前面結果推斷下一次必然結果
+      prompt: 分開寫『模型給的理論機率』與『這一批資料的相對頻率』；再比較試驗次數增加時波動幅度是否較穩定。
+      expectedEvidence: 10次7正面相對頻率0.70；累積資料到100次0.51、200次0.505；轉盤48/200=0.24接近1/4但不必相等
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出理論值、觀察值與試驗次數三者的關係，再要求以轉盤新情境說明。
+      incorrect: 先指出混淆的是理論機率、相對頻率或獨立試驗；提示對應分母與基準線後重試。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
@@ -96,16 +96,16 @@ unitImplementationSpec:
     reuseDecision: inspiration-only
     application: "本課「D-9-2：認識機率」的 DataExplorerBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「D-9-2：認識機率」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 理論機率與相對頻率的比較
+    stemConstraint: 等面積轉盤P(紅)=1/4；200次觀察48次紅色，判讀0.24與0.25，並說明下一次是否被前次結果決定
+    requiredResponse: 0.24接近0.25屬合理波動；不要求剛好50次；下一次仍具不確定性
+    scoring: 計算1、理論/實驗區分1、獨立性敘述1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 公平硬幣20次若有12次正面，能否直接說理論機率是0.6？為什麼？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 0.6是這批資料的相對頻率
+    - 理論模型仍是0.5
+    - 短期資料會波動，需更多試驗觀察長期趨勢
   expressionExtension:
     applicable: false
     task: 用 80～120 字／英文短段落，將「D-9-2：認識機率」的證據、因果或觀察說給同學聽
@@ -114,6 +114,8 @@ unitImplementationSpec:
     breakpoints:
     - 320
     - 375
+    - 390
+    - 430
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
@@ -137,7 +139,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 D-9-2
