@@ -1299,12 +1299,58 @@ function mountStepwiseLab({ document, root, block, spec }) {
   return lab;
 }
 
+
+function mountParallelProportionVisualLab({ document, root, block }) {
+  const { lab, status } = makeLab(document, block, "平行線比例圖解工作台");
+  lab.classList.add("math-parallel-proportion-lab");
+  const intro=document.createElement("p");
+  intro.innerHTML="<strong>先看圖，再列比例。</strong> 點選線段類型，圖上會直接標出哪些線段必須成對。";
+
+  const figure=document.createElement("figure");
+  const canvas=svg(document,"svg",{viewBox:"0 0 420 300",role:"img","aria-label":"三角形 ABC 中 D 在 AB、E 在 AC，DE 平行 BC；AD 6、DB 4、AE 7.5、EC 5"});
+  canvas.classList.add("math-live-canvas");
+  const line=(x1,y1,x2,y2,klass="")=>canvas.append(svg(document,"line",{x1,y1,x2,y2,class:klass,stroke:"currentColor","stroke-width":3}));
+  line(210,25,55,265); line(210,25,365,265); line(55,265,365,265);
+  line(132,145,288,145,"parallel-cut");
+  const points=[["A",210,20],["B",45,282],["C",370,282],["D",120,145],["E",296,145]];
+  for(const [t,x,y] of points){const n=svg(document,"text",{x,y,"font-size":18,"font-weight":800});n.textContent=t;canvas.append(n);}
+  const labels=[["6",158,88,"seg-ad"],["4",88,214,"seg-db"],["7.5",255,88,"seg-ae"],["5",330,214,"seg-ec"]];
+  for(const [t,x,y,k] of labels){const n=svg(document,"text",{x,y,class:k,"font-size":17,"font-weight":800});n.textContent=t;canvas.append(n);}
+  const parallel=svg(document,"text",{x:210,y:135,"text-anchor":"middle","font-size":14});parallel.textContent="DE ∥ BC";canvas.append(parallel);
+  const cap=document.createElement("figcaption");cap.textContent="同一側的相鄰分段要對到另一側相同位置：AD ↔ AE、DB ↔ EC。";
+  figure.append(canvas,cap);
+
+  const chooser=document.createElement("fieldset"); const lg=document.createElement("legend");lg.textContent="你現在比較哪一種線段？";chooser.append(lg);
+  const evidence=document.createElement("div");evidence.className="math-factor-evidence";
+  const feedback=document.createElement("p");feedback.setAttribute("aria-live","polite");
+  const show=(kind)=>{
+    if(kind==="parts"){
+      evidence.innerHTML="<strong>相鄰分段 ↔ 相鄰分段</strong><br>AD / DB = AE / EC<br>6 / 4 = 7.5 / EC → EC = 5";
+      feedback.textContent="正確配對：左右兩側都採「靠近 A 的分段／遠離 A 的分段」。";
+    } else {
+      evidence.innerHTML="<strong>從頂點起的整段 ↔ 從頂點起的整段</strong><br>AD / AB = AE / AC<br>6 / 10 = 7.5 / 12.5 = 0.6";
+      feedback.textContent="整段必須先相加：AB=6+4，AC=7.5+5。";
+    }
+  };
+  [["parts","看相鄰分段"],["whole","看整段倍率"]].forEach(([v,label])=>{const b=document.createElement("button");b.type="button";b.textContent=label;b.addEventListener("click",()=>show(v));chooser.append(b);});
+
+  const trap=document.createElement("fieldset");const tl=document.createElement("legend");tl.textContent="哪個比例把分段和整段混在一起？";trap.append(tl);
+  const tf=document.createElement("p");tf.setAttribute("aria-live","polite");
+  [["4 / 3 = 8 / AC",true],["4 / 3 = 8 / EC",false],["4 / 7 = 8 / AC",false]].forEach(([label,bad])=>{const b=document.createElement("button");b.type="button";b.textContent=label;b.addEventListener("click",()=>{tf.textContent=bad?"抓到了：左邊是分段／分段，右邊卻是分段／整段。":"這組可以維持相同邊界；再檢查方向與平行條件。";});trap.append(b);});trap.append(tf);
+
+  lab.append(intro,figure,chooser,evidence,feedback,trap);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  show("parts");
+  status.textContent="圖 → 線段類型 → 對應方向 → 比例；不要先把數字塞進公式。";
+  return lab;
+}
+
 export function enhanceMathInteractiveBlock({ document, root, spec, block }) {
   if (!document || !root || !block || spec?.subject !== "math" || !SUPPORTED.has(block.component)) return null;
   if (root.querySelector(".math-live-lab")) return root.querySelector(".math-live-lab");
   if (spec?.lessonId === "cur-math-content-n-7-3") return mountSignedOperationsGoldLab({ document, root, block, spec });
   if (spec?.lessonId === "cur-math-content-f-8-2") return mountLinearParameterGoldLab({ document, root, block, spec });
-  if (spec?.lessonId === "cur-math-content-s-8-6") return mountPythagoreanGoldLab({ document, root, block, spec });
+  if (spec?.lessonId === "cur-math-content-s-9-3") return mountParallelProportionVisualLab({ document, root, block, spec });\n  if (spec?.lessonId === "cur-math-content-s-8-6") return mountPythagoreanGoldLab({ document, root, block, spec });
   if (spec?.lessonId === "cur-math-content-d-9-1") return mountBoxPlotGoldLab({ document, root, block, spec });
   if (spec?.lessonId === "cur-math-content-d-9-2") return mountProbabilityFrequencyGoldLab({ document, root, block, spec });
   if (block.component === "FunctionRepresentationBlock") return mountFunctionLab({ document, root, block, spec });
