@@ -110,7 +110,7 @@
       ${solutionSetVisual}
       <fieldset class="sim-design-workbench" ${predicted ? "" : "disabled"}><legend>2. 操作與證據</legend>
         <div class="sim-design-steps" role="group" aria-label="單元探索步驟">${design.steps.map((item,index) => `<button type="button" data-design-step="${index}" ${index === current ? 'aria-current="step"' : ""}>步驟 ${index+1}</button>`).join("")}</div>
-        <div class="sim-design-evidence" aria-live="polite"><p class="sim-design-equation">${esc(step.equation)}</p><p><b>操作：</b>${esc(step.action)}</p><p><b>為什麼：</b>${esc(step.reason)}</p><p class="sim-design-feedback">${esc(step.feedback)}</p></div>
+        <div class="sim-design-evidence" aria-live="polite"><p class="sim-design-equation sim-equation-current">${esc(step.equation)}</p><p><b>操作：</b>${esc(step.action)}</p><p><b>為什麼：</b>${esc(step.reason)}</p><p class="sim-design-feedback">${esc(step.feedback)}</p></div>
       </fieldset>
       <div class="sim-evidence-card"><p><b>3. 用證據說明</b></p><p>${esc(design.evidencePrompt)}</p></div>
     </section>`;
