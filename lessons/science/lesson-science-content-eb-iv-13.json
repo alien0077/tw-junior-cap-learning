@@ -337,7 +337,7 @@
     "id": "sim-science-eb-iv-13",
     "engine": "science-motion-lab",
     "mode": "model",
-    "model": "general",
+    "model": "eb-iv-13-action-reaction",
     "goal": "用物體配對、系統邊界與碰撞感測資料，驗證作用力與反作用力的方向、大小、同時性及作用對象。",
     "mission": "你是碰撞實驗的資料檢查員：先標出兩個互動物體，再選定研究系統，最後對齊兩台小車的力—時間讀值；每一步都要留下能被同學重做的理由。",
     "sourceRefs": [
@@ -381,6 +381,17 @@
           "feedback": "結論需同時寫系統名稱、內外力分類與證據限制；不要用較大的速度變化反推第三定律力較大。"
         }
       ]
+    },
+    "visualContract": {
+      "primaryVisual": "paired-force-arrows-with-system-boundary",
+      "visualFirst": true,
+      "predictBeforeReveal": true,
+      "evidenceOnVisual": true,
+      "directManipulation": [
+        "collisionForce",
+        "systemBoundary"
+      ],
+      "transferScenario": "different-mass-carts"
     }
   },
   "lessonScope": "learning-content"
