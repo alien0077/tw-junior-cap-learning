@@ -1,6 +1,6 @@
 /* Phase-2 Geometry semantic renderers. */
 (() => {
- const base=window.MathVisualLabs;if(!base)return;
+ const registry=window.MathSemanticFamilies ||= {};
  const h=(t,a={},...k)=>{const n=document.createElement(t);for(const [x,v] of Object.entries(a)){if(x==="class")n.className=v;else n.setAttribute(x,v);}for(const z of k)if(z!=null)n.append(z.nodeType?z:document.createTextNode(String(z)));return n;};
  const card=(a,b)=>h("article",{class:"mgf-card"},h("strong",{},a),h("span",{},b));
  const mount=(c,t,s)=>{c.innerHTML="";const r=h("section",{class:"mgf-root"},h("header",{},h("p",{class:"mgf-kicker"},"看圖 → 操作 → 幾何證據"),h("h3",{},t),h("p",{},s)));c.append(r);return r;};
@@ -33,5 +33,5 @@
  function proof(c){const r=mount(c,"證明鏈：條件 → 定理 → 結論","量測只能支持猜測；證明需要每一步都由已知或定理推出。");const[w,s]=sel("s911Reason","理由",[[0,"已知 l∥m"],[1,"所以內錯角相等"],[2,"因此兩角相等"]]);r.append(w);const g=h("div",{class:"mgf-proof",role:"img","aria-label":"幾何證明理由鏈"},card("條件","l∥m"),card("定理","平行線內錯角相等"),card("結論","∠1=∠2"));r.append(g);const e=h("p",{class:"mgf-evidence"},"若拿掉 l∥m，角相等不再是必然；反例可拆穿缺前提的推理。");r.append(e);}
  function space(c){const r=mount(c,"空間中的線與平面：先問共面與交點","兩線無交點不一定平行；若不共面，可能是歪斜線。");const[w,s]=sel("s912Relation","關係",[[0,"同平面且無交點"],[1,"同平面且一交點"],[2,"不同平面且無交點"]]);r.append(w);const g=h("div",{class:"mgf-proof",role:"img","aria-label":"空間線線關係"});r.append(g);const e=h("p",{class:"mgf-evidence"});r.append(e);const d=()=>{const a=[["平行","共面＋無交點"],["相交","共面＋一交點"],["歪斜","不共面＋無交點"]][+s.value];g.innerHTML="";g.append(card(a[0],a[1]));e.textContent="空間判定比平面多一個『是否共面』條件。";};s.addEventListener("change",d);d();}
  const R={"s-7-5-symmetry-axes-v1":symmetryAxes,"s-8-7-composite-area-v1":compositeArea,"s-8-8-triangle-properties-v1":triangleProps,"s-8-9-parallelogram-v1":parallelogram,"s-8-10-quadrilateral-properties-v1":quad,"s-8-11-trapezoid-v1":trapezoid,"s-8-12-compass-bisector-v1":compass,"s-9-4-right-triangle-ratio-v1":trig,"s-9-5-sector-v1":sector,"s-9-6-circle-properties-v1":circle,"s-9-7-line-circle-relation-v1":lineCircle,"s-9-8-circumcenter-v1":c=>center(c,"circ"),"s-9-9-incenter-v1":c=>center(c,"in"),"s-9-10-centroid-v1":c=>center(c,"cent"),"s-9-11-proof-chain-v1":proof,"s-9-12-line-plane-v1":space,"s-7-1-geometry-symbols-v1":symbols,"s-7-2-orthographic-v1":views,"s-7-3-perpendicular-bisector-v1":perp,"s-7-4-reflection-v1":reflect,"s-8-1-protractor-v1":angle,"s-8-2-polygon-triangulation-v1":polygon,"s-8-3-parallel-transversal-v1":parallel,"s-8-4-congruence-motion-v1":congruence,"s-8-5-triangle-congruence-v1":triangleCong,"s-9-2-triangle-similarity-v1":similarity,"s-9-3-parallel-ratio-v1":ratio};
- const old=base.render;base.render=function(c,s){const f=R[s&&s.model];if(f){f(c,s);return true;}return old.call(base,c,s);};
+ Object.assign(registry,R);
 })();
