@@ -1,0 +1,31 @@
+lessonId: lesson-math-content-s-8-6
+subject: math
+knowledgeNodes: [kg-math-content-s-8-6]
+learningObjective: 辨認直角三角形兩股與斜邊，以平方「面積」理解 a²+b²=c²，並能正向求斜邊與反向用平方差求直角邊。
+keyConcept: 畢氏定理連結的是三邊平方；適用前提是直角三角形。
+priorKnowledge: [平方, 平方根, 直角三角形]
+misconceptions:
+  - 直接把兩股相加當斜邊
+  - 不先確認直角與斜邊角色
+  - 反向問題直接做線段相減
+visual:
+  primaryType: pythagorean-square-area-model
+  secondaryRepresentations: [right-triangle, square-area-cards, numeric-check]
+  firstFrame: 6-8直角三角形與直角記號先出現，平方和與答案先隱藏。
+  manipulables: [s86Prediction, s86A, s86B, s86Transfer]
+  dynamicChanges: [a-square, b-square, c-square, hypotenuse-length]
+  invariants: [a²+b²=c²]
+interaction:
+  prediction: 先預測6、8兩股的斜邊。
+  action: 提交預測後調整兩股，平方卡與斜邊同步更新。
+  observation: 觀察兩股平方和等於斜邊平方。
+  evidencePrompt: 用直角角色與平方值說明，不用邊長直接相加。
+  feedback: 指向角色錯誤或平方／平方根錯誤。
+  retry: 可換兩股重新檢查。
+  transfer: 斜邊13、一股5，平方差求12並代回。
+accessibility:
+  keyboardAlternative: range/select controls
+  nonDragAlternative: sliders replace drag
+  textAlternative: square values and equation are text
+  reducedMotion: no essential animation
+qa: {pedagogy: needs-review-after-implementation, visual: needs-screenshot-review, interaction: needs-browser-review, browser: needs-browser-review}
