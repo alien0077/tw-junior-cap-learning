@@ -1,5 +1,5 @@
 import { renderInteractiveBlock } from "./dom-renderer.js?v=20260908-state-persistence-hash";
-import { enhanceMathInteractiveBlock } from "./math-interactive-renderers.js?v=20261001-live-math";
+import { enhanceMathInteractiveBlock } from "./math-interactive-renderers.js?v=20261002-visual-first-math";
 
 export const REQUIRED_STUDENT_SECTIONS = Object.freeze([
   ["先問你", "learningGoals"],
