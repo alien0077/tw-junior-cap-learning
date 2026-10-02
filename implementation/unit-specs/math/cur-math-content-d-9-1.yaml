@@ -56,7 +56,7 @@ unitImplementationSpec:
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-D-9-1-I01
     component: DataExplorerBlock
-    purpose: 讓學生操作並看見「D-9-1：統計數據的分布」中最容易被背誦取代的關係
+    purpose: 以兩座氣象站的五數摘要與盒狀圖同步比較中位數、全距與 IQR；一次只改最大值或Q3，辨認鬚與盒子各自承載的散布資訊。
     initialState:
       mode: predict
       showAnswer: false
@@ -65,23 +65,23 @@ unitImplementationSpec:
         primary: 1
         secondary: 1
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測甲站最大值30→35時，右鬚、全距、IQR與中位數哪些會改變
+    - 只拖曳最大值，觀察右鬚與全距同步，而Q1、Q3不動時盒寬與IQR保持
+    - 再只拖曳Q3，觀察盒子右端與IQR改變，並比較中位數仍可固定
+    - 用兩站全距與IQR寫有範圍界線的結論；遷移到新五數摘要，避免把IQR較小說成所有資料相同
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 兩站盒狀圖使用同一數軸，五數摘要、全距與IQR數值卡同步
+    - 最大值控制只應移動鬚端；Q3控制只應移動盒子端並改IQR
+    - 中位數、Q1、Q3、最小值、最大值皆以位置與文字標籤呈現，不靠顏色
+    - 手機版兩站可改成垂直堆疊，但必須保持同一尺度與盒／鬚角色清楚
     misconceptionChecks:
     - id: MC-CUR-MATH-CONTENT-D-9-1-I01
-      trigger: 把「D-9-1：統計數據的分布」當成可直接套公式的程序，忽略量與表徵的對應
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 最大值改變時誤判 IQR 必定改變，或把『IQR較小』解釋成所有觀測值都相同
+      prompt: 指出你改動的是鬚端還是盒子端；分別計算最大−最小與Q3−Q1，再限定結論描述的是全部範圍或中間50%。
+      expectedEvidence: 甲最大35時全距17、IQR仍4；乙全距9、IQR2；Q3改變才會直接改IQR
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出盒狀圖上對應位置與數值差，並要求用『全部範圍／中間50%』精確表述。
+      incorrect: 先標出誤用的是全距或IQR；提示對應端點後讓學生重算，不直接代寫播報句。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
@@ -96,16 +96,16 @@ unitImplementationSpec:
     reuseDecision: inspiration-only
     application: "本課「D-9-1：統計數據的分布」的 DataExplorerBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「D-9-1：統計數據的分布」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 盒狀圖端點改變與散布量判讀
+    stemConstraint: 甲站Q1=22固定、Q3由26改為28；判斷IQR與中位數哪些必然改變
+    requiredResponse: IQR由4變6；中位數24可保持不變；Q3改變的是盒子端而非最大值鬚端
+    scoring: 端點角色1、IQR計算1、結論範圍1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 若只把最大值由30改成35，而Q1=22、Q3=26不變，IQR與全距各如何？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - IQR仍為4
+    - 全距增加5
+    - 說明最大值屬鬚端，不是IQR端點
   expressionExtension:
     applicable: false
     task: 用 80～120 字／英文短段落，將「D-9-1：統計數據的分布」的證據、因果或觀察說給同學聽
@@ -114,6 +114,8 @@ unitImplementationSpec:
     breakpoints:
     - 320
     - 375
+    - 390
+    - 430
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
@@ -137,7 +139,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 D-9-1
