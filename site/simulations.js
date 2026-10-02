@@ -10,6 +10,7 @@
     if (engine === "science-earth-space" && model === "fa-iv-4-atmospheric-temperature-profile") return { profileScenario: "baseline" };
     if (engine === "concept-explorer" && model === "ecosystem-scale-boundary") return { site: "pond", scale: "individual" };
     if (engine === "concept-explorer" && model === "ca-iv-2-solution-identification") return { sample: "X", test: "litmus", control: "unknown", testRun: false };
+    if (engine === "science-motion-lab" && model === "eb-iv-1-torque-balance") return { leftForce: 3, leftArm: 10, rightForce: 2, rightArm: 15, torquePrediction: "", predictionSubmitted: false, torqueFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -104,6 +105,73 @@
       const validCandidate = state.candidateVerified === true && recalculated === total;
       const controls = config.controls;
       return `${designed}<section class="sim-ticket-equation" aria-label="票券價格方程式互動"><h5>先用候選票價檢查等式</h5><p>購買 <b>${count}</b> 張${esc(config.itemLabel)}，每張候選價格 <b>${candidate} ${esc(config.currencyLabel)}</b>，另付一次性費用 <b>${fee} ${esc(config.currencyLabel)}</b>；實付總額 <b>${total} ${esc(config.currencyLabel)}</b>。</p><p class="sim-ticket-equation-formula" aria-live="polite">${count} × x + ${fee} = ${total}</p><div class="balance" aria-label="等號兩側的金額比較"><span class="balance-pan">左側 ${recalculated} ${esc(config.currencyLabel)}</span><span aria-hidden="true">＝</span><span class="balance-pan">右側 ${total} ${esc(config.currencyLabel)}</span></div><table><caption>候選單價代回原式</caption><tbody><tr><th scope="row">票數</th><td>${count} 張</td></tr><tr><th scope="row">候選票價</th><td>${candidate} ${esc(config.currencyLabel)}／張</td></tr><tr><th scope="row">票券合計＋一次性費用</th><td>${count} × ${candidate} + ${fee} = ${recalculated} ${esc(config.currencyLabel)}</td></tr><tr><th scope="row">原紀錄總額</th><td>${total} ${esc(config.currencyLabel)}</td></tr></tbody></table><div class="sim-ticket-controls">${slider("ticketCount", controls.ticketCount.label, count, controls.ticketCount.min, controls.ticketCount.max, controls.ticketCount.step, " 張")}${slider("oneTimeFee", controls.oneTimeFee.label, fee, controls.oneTimeFee.min, controls.oneTimeFee.max, controls.oneTimeFee.step, ` ${config.currencyLabel}`)}${slider("totalPaid", controls.totalPaid.label, total, controls.totalPaid.min, controls.totalPaid.max, controls.totalPaid.step, ` ${config.currencyLabel}`)}${slider("candidatePrice", controls.candidatePrice.label, candidate, controls.candidatePrice.min, controls.candidatePrice.max, controls.candidatePrice.step, ` ${config.currencyLabel}`)}</div><button type="button" class="sim-button" data-ticket-action="check">代回檢查候選票價</button><p class="sim-ticket-feedback" aria-live="polite">${esc(state.candidateFeedback || "先調整票數、固定費或候選票價，再檢查左右是否相等。")}</p>${validCandidate ? `<div class="sim-ticket-solution"><p>候選值成立：${count} × ${candidate} + ${fee} = ${total}。因此每張${esc(config.itemLabel)}的價格是 <strong>${candidate} ${esc(config.currencyLabel)}／張</strong>。</p><p>等量理由：兩側同減 ${fee} 得 ${count}x = ${total - fee}；再兩側同除 ${count} 得 x = ${candidate} ${esc(config.currencyLabel)}／張。</p></div>` : ""}</section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-1-torque-balance") {
+      const lf = clamp(Number(state.leftForce), 1, 5);
+      const la = clamp(Number(state.leftArm), 5, 20);
+      const rf = clamp(Number(state.rightForce), 1, 5);
+      const ra = clamp(Number(state.rightArm), 5, 20);
+      const lt = lf * la / 100;
+      const rt = rf * ra / 100;
+      const net = rt - lt;
+      const direction = Math.abs(net) < 0.0001 ? "力矩平衡" : net > 0 ? "順時針" : "逆時針";
+      const angle = clamp(net * 70, -18, 18);
+      const predictionLocked = !state.predictionSubmitted;
+      const evidence = Math.abs(net) < 0.0001
+        ? `左右力矩都是 ${lt.toFixed(2)} N·m，轉動效果互相抵消；但仍要把支點支持力納入，才能判斷是否同時沒有平移。`
+        : `左側 ${lt.toFixed(2)} N·m、右側 ${rt.toFixed(2)} N·m，淨力矩 ${Math.abs(net).toFixed(2)} N·m，模型因此向${direction}傾斜。`;
+      const predictionChoices = [["left","逆時針"],["balance","保持水平"],["right","順時針"]].map(([value,text]) => `<button type="button" data-torque-action="predict" data-value="${value}" aria-pressed="${state.torquePrediction===value}">${text}</button>`).join("");
+      return `<section class="sim-torque-lab" aria-label="力與力矩視覺實驗室">
+        <div class="sim-visual-first">
+          <figure class="sim-torque-stage">
+            <svg viewBox="0 0 640 300" role="img" aria-label="紙尺支點模型。左側力 ${lf} 牛頓、力臂 ${la} 公分；右側力 ${rf} 牛頓、力臂 ${ra} 公分；目前${direction}">
+              <defs><marker id="torque-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="currentColor"/></marker></defs>
+              <g transform="rotate(${angle} 320 145)">
+                <rect x="90" y="130" width="460" height="30" rx="10" class="sim-beam"/>
+                <line x1="320" y1="112" x2="320" y2="178" class="sim-axis"/>
+                <line x1="${320-la*11}" y1="75" x2="${320-la*11}" y2="126" class="sim-force-arrow" marker-end="url(#torque-arrow)"/>
+                <line x1="${320+ra*11}" y1="75" x2="${320+ra*11}" y2="126" class="sim-force-arrow" marker-end="url(#torque-arrow)"/>
+                <text x="${320-la*11}" y="62" text-anchor="middle">↓ ${lf} N</text>
+                <text x="${320+ra*11}" y="62" text-anchor="middle">↓ ${rf} N</text>
+                <line x1="${320-la*11}" y1="190" x2="320" y2="190" class="sim-measure"/>
+                <line x1="320" y1="218" x2="${320+ra*11}" y2="218" class="sim-measure"/>
+                <text x="${320-la*5.5}" y="208" text-anchor="middle">${la} cm</text>
+                <text x="${320+ra*5.5}" y="238" text-anchor="middle">${ra} cm</text>
+              </g>
+              <path d="M292 260 L320 178 L348 260 Z" class="sim-fulcrum"/>
+              <text x="320" y="286" text-anchor="middle">支點</text>
+            </svg>
+            <figcaption aria-live="polite"><strong>${direction}</strong>｜左 ${lt.toFixed(2)} N·m　右 ${rt.toFixed(2)} N·m</figcaption>
+          </figure>
+          <div class="sim-prediction-panel">
+            <p><b>1. 先預測，不先給答案</b></p>
+            <p>目前設定下，紙尺會往哪一側轉？</p>
+            <div class="sim-actions" role="group" aria-label="力矩方向預測">${predictionChoices}</div>
+            <button type="button" data-torque-action="submit-prediction">鎖定預測並開始實驗</button>
+            <p role="status">${esc(state.torqueFeedback || "選一個方向後再開始操作。")}</p>
+          </div>
+        </div>
+        <div class="sim-torque-controls" ${predictionLocked ? 'aria-disabled="true"' : ""}>
+          <p><b>2. 一次改一個量，看尺本身怎麼變</b></p>
+          ${slider("leftForce","左側力",lf,1,5,1," N")}
+          ${slider("leftArm","左力臂",la,5,20,1," cm")}
+          ${slider("rightForce","右側力",rf,1,5,1," N")}
+          ${slider("rightArm","右力臂",ra,5,20,1," cm")}
+        </div>
+        <div class="sim-evidence-card">
+          <p><b>3. 用圖上的證據說明</b></p>
+          <p aria-live="polite">${evidence}</p>
+          <p>不要只說「右邊比較重」；要同時指出 <strong>力 × 垂直力臂</strong>。</p>
+        </div>
+        <div class="sim-transfer-card">
+          <p><b>4. 遷移：同樣 2 N，怎樣比較容易轉開螺帽？</b></p>
+          <div class="sim-actions" role="group" aria-label="扳手遷移題">
+            <button type="button" data-torque-action="transfer" data-value="near" aria-pressed="${state.transferChoice==="near"}">手握靠近轉軸</button>
+            <button type="button" data-torque-action="transfer" data-value="far" aria-pressed="${state.transferChoice==="far"}">手握遠離轉軸</button>
+          </div>
+          <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
+        </div>
+      </section>`;
     }
     const hasDedicatedRutherfordModel = engine === "science-particle-lab" && lesson.simulation.model === "rutherford-scattering";
     const hasDedicatedPlantTransportModel = engine === "science-life-system" && lesson.simulation.model === "plant-transport";
