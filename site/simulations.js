@@ -13,6 +13,7 @@
     if (engine === "science-motion-lab" && ["eb-iv-1-torque-balance","eb-iv-2-lever-balance"].includes(model)) return { leftForce: 3, leftArm: 10, rightForce: 2, rightArm: 15, torquePrediction: "", predictionSubmitted: false, torqueFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-4-friction-threshold") return { pullForce: 0, normalForce: 10, surface: "wood", frictionPrediction: "", predictionSubmitted: false, frictionFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-5-hydraulic-pressure") return { inputForce: 20, inputArea: 4, outputArea: 40, depth: 2, pressurePrediction: "", predictionSubmitted: false, pressureFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-6-buoyancy") return { objectWeight: 8, liquidDensity: 1, displacedVolume: 500, buoyancyPrediction: "", predictionSubmitted: false, buoyancyFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -173,6 +174,24 @@
           </div>
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
+      </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-6-buoyancy") {
+      const weight=clamp(Number(state.objectWeight),2,15), density=clamp(Number(state.liquidDensity),0.7,1.3), volume=clamp(Number(state.displacedVolume),100,1000);
+      const buoy=density*volume/1000*9.8, net=buoy-weight, status=Math.abs(net)<.35?"接近平衡漂浮":net>0?"浮力較大，向上加速":"重量較大，向下加速";
+      const waterY=105, objY=clamp(145-net*8,115,205), locked=!state.predictionSubmitted;
+      return `<section class="sim-buoyancy-lab" aria-label="浮力與排液重量視覺實驗室"><div class="sim-visual-first">
+        <figure class="sim-buoyancy-stage"><svg viewBox="0 0 640 330" role="img" aria-label="物體浸入液體，重量 ${weight} 牛頓，浮力 ${buoy.toFixed(1)} 牛頓，目前${status}">
+          <rect x="80" y="${waterY}" width="480" height="190" rx="8" class="sim-fluid"/><line x1="80" y1="${waterY}" x2="560" y2="${waterY}" class="sim-water-line"/>
+          <rect x="270" y="${objY}" width="100" height="85" rx="10" class="sim-object"/>
+          <line x1="320" y1="${objY}" x2="320" y2="${objY-65}" class="sim-force-arrow"/><text x="335" y="${objY-48}">浮力 ${buoy.toFixed(1)} N ↑</text>
+          <line x1="320" y1="${objY+85}" x2="320" y2="${objY+145}" class="sim-force-arrow"/><text x="335" y="${objY+130}">重量 ${weight} N ↓</text>
+          <g transform="translate(455 135)"><rect width="70" height="120" class="sim-overflow-cup"/><rect y="${120-Math.min(105,volume/10)}" width="70" height="${Math.min(105,volume/10)}" class="sim-fluid"/><text x="35" y="145" text-anchor="middle">排液 ${volume} mL</text></g>
+        </svg><figcaption><strong>${status}</strong>｜排開液體重量 ≈ 浮力 ${buoy.toFixed(1)} N</figcaption></figure>
+        <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>同樣排開 500 mL，換成密度較大的液體，浮力會？</p><div class="sim-actions"><button data-buoyancy-action="predict" data-value="same">不變</button><button data-buoyancy-action="predict" data-value="increase">增加</button></div><button data-buoyancy-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.buoyancyFeedback||"先預測，再改液體密度。")}</p></div></div>
+        <fieldset class="sim-buoyancy-controls" ${locked?"disabled":""}><legend>2. 操作浮力模型</legend>${slider("objectWeight","物體重量",weight,2,15,1," N")}${slider("liquidDensity","液體相對密度",density,.7,1.3,.1,"")}${slider("displacedVolume","排液體積",volume,100,1000,100," mL")}</fieldset>
+        <div class="sim-evidence-card"><p><b>3. 圖像證據</b></p><p>排開液體重量＝密度 × 排液體積 × g；目前模型得到 ${buoy.toFixed(1)} N，與向上的浮力箭頭相同。判斷浮沉要再和重量 ${weight} N 比較，而不是只看物體在水中的深度。</p></div>
+        <div class="sim-transfer-card"><p><b>4. 遷移：船增加貨物後仍要漂浮，必須？</b></p><div class="sim-actions"><button data-buoyancy-action="transfer" data-value="less">排開更少液體</button><button data-buoyancy-action="transfer" data-value="more">排開更多液體</button></div><p role="status">${esc(state.transferFeedback||"比較新增重量與所需浮力。")}</p></div>
       </section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-5-hydraulic-pressure") {
@@ -509,6 +528,13 @@
       if (direction === "prev") update(root, { reasoningStep: Math.max(0, index - 1), reasoningChoice: "" });
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
+    }
+    const buoyancyAction=event.target.closest("[data-buoyancy-action]");
+    if(buoyancyAction && lesson.simulation.model==="eb-iv-6-buoyancy"){
+      const action=buoyancyAction.dataset.buoyancyAction,value=buoyancyAction.dataset.value,state=read(lesson.simulation);
+      if(action==="predict"){update(root,{buoyancyPrediction:value,buoyancyFeedback:""});return;}
+      if(action==="submit-prediction"){update(root,state.buoyancyPrediction?{predictionSubmitted:true,buoyancyFeedback:state.buoyancyPrediction==="increase"?"預測已記錄。調整液體密度，觀察浮力箭頭與排液重量。":"預測已記錄。用密度滑桿檢查浮力是否真的不變。"}:{buoyancyFeedback:"請先選擇預測。"});return;}
+      if(action==="transfer"){update(root,value==="more"?{transferChoice:value,transferFeedback:"正確：貨物增加使總重量增加；漂浮平衡時需排開更多液體，讓浮力增加到新的重量。"}:{transferChoice:value,transferFeedback:"再增加物體重量，觀察要讓浮力追上重量時排液體積應往哪個方向改。"});return;}
     }
     const pressureAction=event.target.closest("[data-pressure-action]");
     if(pressureAction && lesson.simulation.model==="eb-iv-5-hydraulic-pressure"){
