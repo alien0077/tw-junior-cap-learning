@@ -9,6 +9,7 @@ on:
       - 'implementation/unit-specs/math/**'
       - 'implementation/runtime/math-*.test.mjs'
       - 'site/**'
+      - 'implementation/visual-contracts/math/**'
       - 'scripts/audit_math_coverage.mjs'
       - 'scripts/finalize_math_review_tail.mjs'
       - 'scripts/activate_math_production_renderers.mjs'
@@ -81,6 +82,14 @@ jobs:
         run: node scripts/audit_math_coverage.mjs > /tmp/math-exhaustive-audit-current.json
       - name: Save audit snapshot
         run: cp /tmp/math-exhaustive-audit-current.json implementation/reports/math-exhaustive-audit-current.json
+      - name: Refuse stale QA promotion if main advanced during this run
+        run: |
+          git fetch origin main
+          CURRENT_REMOTE="$(git rev-parse origin/main)"
+          if [ "$CURRENT_REMOTE" != "${{ github.sha }}" ]; then
+            echo "::error::main advanced from ${{ github.sha }} to $CURRENT_REMOTE; refusing to rebase stale QA evidence onto newer source."
+            exit 1
+          fi
       - name: Commit final math QA state
         run: |
           git config user.name "github-actions[bot]"
@@ -102,5 +111,4 @@ jobs:
             exit 0
           fi
           git commit -m "fix(math): complete exhaustive browser and spec QA"
-          git pull --rebase origin main
           git push origin HEAD:main
