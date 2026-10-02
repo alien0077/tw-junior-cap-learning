@@ -8,6 +8,8 @@ const SUPPORTED = new Set([
   "AlgebraEquationMeaningBlock",
   "SystemIntersectionBlock",
   "SystemEliminationBlock",
+  "QuadraticMeaningBlock",
+  "QuadraticSolutionBlock",
   "EquivalentExpressionCheckBlock",
   "NumberLineBlock",
   "StepwiseReasoningBlock",
@@ -528,6 +530,152 @@ function mountSystemEliminationLab({ document, root, block }) {
   return lab;
 }
 
+
+function mountQuadraticMeaningLab({ document, root, block }) {
+  const store=storageFor(block.id), prior=store?.get()||{};
+  const state={mode:String(prior.mode||"classify"),candidate:number(prior.candidate,1)};
+  const {lab,status}=makeLab(document,block,"二次方程式意義三站實驗室");
+  lab.classList.add("math-quadratic-meaning-lab");
+
+  const intro=document.createElement("p");
+  intro.innerHTML="<strong>先搞清楚『是什麼』，再學『怎麼解』。</strong> 本課只做化簡分類、候選值驗證與情境列式。";
+  const modes=document.createElement("fieldset");
+  const ml=document.createElement("legend");ml.textContent="選擇工作站";modes.append(ml);
+  const stage=document.createElement("section");stage.className="math-quadratic-stage";
+  const feedback=document.createElement("p");feedback.className="math-quadratic-feedback";feedback.setAttribute("aria-live","polite");
+
+  const button=(parent,label,onClick)=>{
+    const b=document.createElement("button");b.type="button";b.textContent=label;b.addEventListener("click",onClick);parent.append(b);return b;
+  };
+  const setMode=value=>{state.mode=value;store?.set(state);modes.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mode===value)));render();};
+  [["classify","化簡後分類"],["root","候選根左右代入"],["context","面積情境列式"]].forEach(([value,label])=>{
+    const b=button(modes,label,()=>setMode(value));b.dataset.mode=value;
+  });
+
+  const render=()=>{
+    stage.replaceChildren();feedback.textContent="";
+    if(state.mode==="classify"){
+      stage.setAttribute("role","img");stage.setAttribute("aria-label","原方程式先化簡再判斷是否仍為一元二次方程式");
+      const before=document.createElement("div");before.className="math-q-line";before.innerHTML="<span>原式</span><strong>2x²+3x=x²+7x−4</strong>";
+      const arrow=document.createElement("p");arrow.textContent="先移項、合併同類項 ↓";
+      const prediction=document.createElement("fieldset");const pl=document.createElement("legend");pl.textContent="化簡後是否為一元二次方程式？";prediction.append(pl);
+      button(prediction,"是",()=>{after.hidden=false;trap.hidden=false;feedback.textContent="正確。化簡為 x²−4x+4=0：一個未知數、最高次2、有等號。";});
+      button(prediction,"不是",()=>{feedback.textContent="再化簡一次。x² 項沒有完全消失；判斷要看化簡後的式子。";});
+      const after=document.createElement("div");after.className="math-q-line is-result";after.hidden=true;after.innerHTML="<span>化簡</span><strong>x²−4x+4=0</strong>";
+      const trap=document.createElement("div");trap.className="math-q-note";trap.hidden=true;trap.innerHTML="<strong>反例：</strong>3x²+2x²=5x² → 0=0，未知數消失，所以原式看見 x² 仍不足以分類。";
+      stage.append(before,arrow,prediction,after,trap);
+      status.textContent="分類站：一定先化簡，再看未知數種類、最高次與等號。";
+    }else if(state.mode==="root"){
+      const row=document.createElement("div");row.className="math-q-root-row";row.setAttribute("role","img");row.setAttribute("aria-label","候選 x 同時代入方程式左右兩側");
+      const update=()=>{
+        const left=state.candidate*state.candidate+3*state.candidate,right=10;
+        row.innerHTML="<div><span>左側 x²+3x</span><strong>"+left+"</strong></div><b>"+(left===right?"=":(left<right?"<":">"))+"</b><div><span>右側</span><strong>"+right+"</strong></div>";
+        feedback.textContent=left===right
+          ?"x="+state.candidate+" 使左右同為 10，所以它是這個方程式的一個解；這仍不代表已求出全部根。"
+          :"x="+state.candidate+" 時左右不相等，因此這個候選值不是解。";
+        store?.set(state);
+      };
+      const control=makeRange(document,{label:"候選 x",min:-4,max:4,value:state.candidate,onInput:v=>{state.candidate=v;update();}});
+      stage.append(control.wrapper,row);update();
+      status.textContent="驗根站：同一候選值必須同時代入原等式左右兩側。";
+    }else{
+      const figure=document.createElement("div");figure.className="math-q-context-rect";figure.setAttribute("role","img");figure.setAttribute("aria-label","短邊 x 長邊 x 加四的長方形面積模型");
+      figure.innerHTML="<div class=\"math-q-rect-box\"><span>長 x+4</span><strong>面積 45</strong><em>寬 x</em></div>";
+      const prediction=document.createElement("fieldset");const pl=document.createElement("legend");pl.textContent="哪個式子保留面積量義？";prediction.append(pl);
+      button(prediction,"x(x+4)=45",()=>{feedback.textContent="正確。面積是長×寬；x>0 是情境允許範圍，不是用來改寫等式。";});
+      button(prediction,"x+x+4=45",()=>{feedback.textContent="這是長度相加，不是面積。回到長方形面積＝長×寬。";});
+      button(prediction,"x²+4=45",()=>{feedback.textContent="少了交叉項 4x。長 x+4 與寬 x 的乘積是 x(x+4)。";});
+      const check=document.createElement("p");check.innerHTML="<strong>候選 x=5：</strong>5×9=45，所以 5 通過原等式；但這一步只是驗證候選。";
+      stage.append(figure,prediction,check);
+      status.textContent="建模站：量義、單位、等式與情境範圍分開記錄。";
+    }
+  };
+
+  const transfer=document.createElement("fieldset");
+  const tl=document.createElement("legend");tl.textContent="遷移：3x²+2x²=5x² 化簡後仍是二次方程式嗎？";transfer.append(tl);
+  const tf=document.createElement("p");tf.setAttribute("aria-live","polite");
+  button(transfer,"不是，化簡為 0=0",()=>{tf.textContent="正確。未知數消失，不再是一元二次方程式。";});
+  button(transfer,"是，因為原本有 x²",()=>{tf.textContent="先化簡。左右的 5x² 抵消後只剩 0=0。";});
+  transfer.append(tf);
+
+  lab.append(intro,modes,stage,feedback,transfer);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  setMode(state.mode);
+  return lab;
+}
+
+function mountQuadraticSolutionLab({ document, root, block }) {
+  const store=storageFor(block.id), prior=store?.get()||{};
+  const state={mode:String(prior.mode||"factor")};
+  const {lab,status}=makeLab(document,block,"二次方程式解法分站工作台");
+  lab.classList.add("math-quadratic-solution-lab");
+
+  const intro=document.createElement("p");
+  intro.innerHTML="<strong>建模、求根、驗根、情境篩選分開。</strong> 每站只處理一種認知工作，避免公式與情境條件互相干擾。";
+  const modes=document.createElement("fieldset");
+  const ml=document.createElement("legend");ml.textContent="選擇工作站";modes.append(ml);
+  const stage=document.createElement("section");stage.className="math-quadratic-stage";
+  const feedback=document.createElement("p");feedback.className="math-quadratic-feedback";feedback.setAttribute("aria-live","polite");
+
+  const button=(parent,label,onClick)=>{
+    const b=document.createElement("button");b.type="button";b.textContent=label;b.addEventListener("click",onClick);parent.append(b);return b;
+  };
+  const setMode=value=>{state.mode=value;store?.set(state);modes.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.mode===value)));render();};
+  [["factor","矩形建模＋完整根集"],["square","配方法"],["formula","判別式＋公式解"],["transfer","方法選擇遷移"]].forEach(([value,label])=>{
+    const b=button(modes,label,()=>setMode(value));b.dataset.mode=value;
+  });
+
+  const render=()=>{
+    stage.replaceChildren();feedback.textContent="";
+    if(state.mode==="factor"){
+      const rect=document.createElement("div");rect.className="math-q-context-rect";rect.setAttribute("role","img");rect.setAttribute("aria-label","寬 w 長 w 加五的木板面積八十四");
+      rect.innerHTML="<div class=\"math-q-rect-box\"><span>長 w+5</span><strong>面積 84</strong><em>寬 w</em></div>";
+      const prediction=document.createElement("fieldset");const pl=document.createElement("legend");pl.textContent="w²+5w−84=0 會得到幾個代數根？";prediction.append(pl);
+      const roots=document.createElement("div");roots.className="math-q-roots";roots.hidden=true;
+      roots.innerHTML="<article><strong>代數根集合</strong><p>{−12, 7}</p></article><article><strong>正寬度情境</strong><p>只允許 w=7，長=12</p></article>";
+      button(prediction,"2 個",()=>{roots.hidden=false;feedback.textContent="正確。(w+12)(w−7)=0，先完整保留 −12 與 7；情境再另外排除負寬度。";});
+      button(prediction,"只取正根 7",()=>{feedback.textContent="過早套用情境。代數根先完整寫成 {−12,7}，再由正長度條件保留 7。";});
+      button(prediction,"沒有實根",()=>{feedback.textContent="可整數因式分解；12×(−7)=−84 且 12+(−7)=5。";});
+      stage.append(rect,prediction,roots);
+      status.textContent="根集站：代數根與實際可行尺寸分兩欄。";
+    }else if(state.mode==="square"){
+      const balance=document.createElement("div");balance.className="math-q-square-balance";balance.setAttribute("role","img");balance.setAttribute("aria-label","配方法在等式左右兩側同步加四");
+      balance.innerHTML="<div><span>左側</span><strong>x²+4x</strong><em>+ ?</em></div><b>=</b><div><span>右側</span><strong>−1</strong><em>+ ?</em></div>";
+      const prediction=document.createElement("fieldset");const pl=document.createElement("legend");pl.textContent="要補成平方，4 應加在哪裡？";prediction.append(pl);
+      button(prediction,"左右兩側都加 4",()=>{
+        balance.innerHTML="<div><span>左側</span><strong>x²+4x+4</strong></div><b>=</b><div><span>右側</span><strong>3</strong></div>";
+        feedback.textContent="正確。(x+2)²=3，所以 x=−2±√3；兩側同步才能保留原解集合。";
+      });
+      button(prediction,"只加左側",()=>{feedback.textContent="這會改變等式。任何等價變形都必須同步維持左右兩側。";});
+      stage.append(balance,prediction);
+      status.textContent="配方法站：補平方不是裝飾，而是等式兩側同步的等價變形。";
+    }else if(state.mode==="formula"){
+      const coeff=document.createElement("div");coeff.className="math-q-coeff-cards";coeff.setAttribute("role","img");coeff.setAttribute("aria-label","a 等於二 b 等於三 c 等於負二");
+      coeff.innerHTML="<span>a<strong>2</strong></span><span>b<strong>3</strong></span><span>c<strong>−2</strong></span>";
+      const prediction=document.createElement("fieldset");const pl=document.createElement("legend");pl.textContent="Δ=b²−4ac 等於多少？";prediction.append(pl);
+      const result=document.createElement("p");result.hidden=true;
+      button(prediction,"25",()=>{result.hidden=false;result.innerHTML="<strong>Δ=25&gt;0</strong> → 兩個相異實根；x=(-3±5)/4 → 1/2、−2。";feedback.textContent="正確。c 是負數，−4ac 會變成加 16。";});
+      button(prediction,"−7",()=>{feedback.textContent="重新代入 c=−2；符號不能在帶入公式時遺失。";});
+      button(prediction,"7",()=>{feedback.textContent="先算 9−4×2×(−2)=9+16。";});
+      stage.append(coeff,prediction,result);
+      status.textContent="公式站：先鎖定 a、b、c 的原符號，再算判別式。";
+    }else{
+      const map=document.createElement("div");map.className="math-q-method-map";
+      map.innerHTML="<article><strong>因式分解</strong><p>能快速找到整數因式時優先。</p></article><article><strong>配方法</strong><p>補 (b/2)²，兩側同步。</p></article><article><strong>公式解</strong><p>一般情況可用，先鎖定 a、b、c。</p></article>";
+      const prediction=document.createElement("fieldset");const pl=document.createElement("legend");pl.textContent="x²−x−12=0 最直接用哪個？";prediction.append(pl);
+      button(prediction,"因式分解",()=>{feedback.textContent="正確。(x−4)(x+3)=0 → x=4 或 −3；兩根都先保留並驗算。";});
+      button(prediction,"只能公式解",()=>{feedback.textContent="公式可用，但不是最省步驟。這題可直接找到乘積 −12、和 −1 的整數因式。";});
+      stage.append(map,prediction);
+      status.textContent="方法站：依式子結構選擇方法，不背固定順序。";
+    }
+  };
+
+  lab.append(intro,modes,stage,feedback);
+  root.querySelector(".component-visual-body")?.prepend(lab);
+  setMode(state.mode);
+  return lab;
+}
+
 function mountEquivalentLab({ document, root, block }) {
   const store = storageFor(block.id);
   const prior = store?.get() || {};
@@ -837,6 +985,8 @@ export function enhanceMathInteractiveBlock({ document, root, spec, block }) {
   if (block.component === "AlgebraBalanceBlock" || block.component === "AlgebraEquationMeaningBlock") return mountBalanceLab({ document, root, block, spec });
   if (block.component === "SystemIntersectionBlock") return mountSystemIntersectionLab({ document, root, block, spec });
   if (block.component === "SystemEliminationBlock") return mountSystemEliminationLab({ document, root, block, spec });
+  if (block.component === "QuadraticMeaningBlock") return mountQuadraticMeaningLab({ document, root, block, spec });
+  if (block.component === "QuadraticSolutionBlock") return mountQuadraticSolutionLab({ document, root, block, spec });
   if (block.component === "EquivalentExpressionCheckBlock") return mountEquivalentLab({ document, root, block, spec });
   if (block.component === "NumberLineBlock") return mountNumberLineLab({ document, root, block, spec });
   if (block.component === "StepwiseReasoningBlock") return mountStepwiseLab({ document, root, block, spec });
