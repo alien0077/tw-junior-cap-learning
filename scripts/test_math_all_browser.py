@@ -174,10 +174,17 @@ async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) ->
         await require_count(sim, '[data-sim-control="prediction"]', 1, "prediction control missing")
         await require_count(sim, '[data-sim-control="transferPrediction"]', 1, "transfer control missing")
     elif engine == "math-factor-model":
-        await require_count(sim, ".mvl-factor-board", 1, "factor-token visual missing")
-        await require_count(sim, ".mvl-token", 4, "factor tokens missing")
-        await require_count(sim, '[data-sim-control="commonFactor"]', 1, "common-factor prediction missing")
-        await require_count(sim, '[data-sim-control="factorTransfer"]', 1, "factor transfer missing")
+        if model == "a-8-4-factor-meaning-v1":
+            await require_count(sim, ".mvl-factor-meaning", 1, "factor-meaning renderer missing")
+            await require_count(sim, '[role="img"]', 1, "factor-meaning area visual missing")
+            await require_count(sim, '[data-sim-control="factorMeaningX"]', 1, "factor-meaning x control missing")
+            await require_count(sim, '[data-sim-control="candidateFactor"]', 1, "factor candidate prediction missing")
+            await require_count(sim, '[data-sim-control="factorMeaningTransfer"]', 1, "factor-meaning transfer missing")
+        else:
+            await require_count(sim, ".mvl-factor-board", 1, "factor-token visual missing")
+            await require_count(sim, ".mvl-token", 4, "factor tokens missing")
+            await require_count(sim, '[data-sim-control="commonFactor"]', 1, "common-factor prediction missing")
+            await require_count(sim, '[data-sim-control="factorTransfer"]', 1, "factor transfer missing")
     elif engine == "math-algebra-balance":
         await require_count(sim, ".balance", 1, "algebra balance visual missing")
         await require_count(sim, '[data-sim-control="addend"]', 1, "balance addend slider missing")
