@@ -19,6 +19,7 @@
     if (engine === "science-motion-lab" && model === "eb-iv-10-inertia") return { initialSpeed: 4, appliedForce: 0, friction: 0, inertiaPrediction: "", predictionSubmitted: false, inertiaFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-11-impulse") return { mass: 2, initialVelocity: 1, force: 4, duration: 2, impulsePrediction: "", predictionSubmitted: false, impulseFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "ec-iv-2-boyle") return { gasVolume: 50, boylePrediction: "", predictionSubmitted: false, boyleFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-12-mass-inertia") return { cartMass: 2, pushForce: 4, pushTime: 2, massPrediction: "", predictionSubmitted: false, massFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -180,6 +181,18 @@
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
       </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-12-mass-inertia") {
+      const mass=clamp(Number(state.cartMass),1,6),force=clamp(Number(state.pushForce),1,8),time=clamp(Number(state.pushTime),.5,4),a=force/mass,dv=a*time,locked=!state.predictionSubmitted;
+      const blocks=Math.round(mass),arrow=force*18;
+      return `<section class="sim-mass-inertia-lab" aria-label="質量與慣性視覺實驗室"><div class="sim-visual-first"><figure class="sim-mass-inertia-stage"><svg viewBox="0 0 680 320" role="img" aria-label="質量 ${mass} 公斤滑車受 ${force} 牛頓推力 ${time} 秒">
+        <line x1="55" y1="230" x2="620" y2="230" class="sim-track"/><g transform="translate(220 170)"><rect width="120" height="48" rx="8" class="sim-cart"/>${Array.from({length:blocks},(_,i)=>`<rect x="${8+i*17}" y="-22" width="14" height="20" class="sim-mass-block"/>`).join("")}<circle cx="22" cy="58" r="10"/><circle cx="98" cy="58" r="10"/></g>
+        <line x1="345" y1="190" x2="${345+arrow}" y2="190" class="sim-force-arrow"/><text x="360" y="165">F=${force} N</text><line x1="280" y1="140" x2="${280+dv*30}" y2="140" class="sim-velocity-arrow"/><text x="280" y="115">Δv=${dv.toFixed(1)} m/s</text>
+        <g transform="translate(70 45)"><text y="0">a = F/m</text><text y="35">= ${force}/${mass}</text><text y="70">= ${a.toFixed(2)} m/s²</text></g></svg><figcaption>同樣推力與時間下，質量越大，速度越難改變；這就是較大的慣性。</figcaption></figure>
+        <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>推力與作用時間相同，質量加倍，Δv 會？</p><div class="sim-actions"><button data-mass-inertia-action="predict" data-value="half">約變一半</button><button data-mass-inertia-action="predict" data-value="double">約變兩倍</button></div><button data-mass-inertia-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.massFeedback||"先比較 F=ma。")}</p></div></div>
+        <fieldset class="sim-mass-inertia-controls" ${locked?"disabled":""}><legend>2. 做公平比較</legend>${slider("cartMass","滑車質量",mass,1,6,1," kg")}${slider("pushForce","推力",force,1,8,1," N")}${slider("pushTime","作用時間",time,.5,4,.5," s")}</fieldset>
+        <div class="sim-evidence-card"><p><b>3. 圖像證據</b></p><p>目前 a=${a.toFixed(2)} m/s²，作用 ${time}s 後 Δv=${dv.toFixed(1)}m/s。比較質量時要固定推力與作用時間，否則不能把差異歸因於慣性。</p></div>
+        <div class="sim-transfer-card"><p><b>4. 遷移：同樣推購物車，裝滿貨物後較難加速，因為？</b></p><div class="sim-actions"><button data-mass-inertia-action="transfer" data-value="mass">質量較大、慣性較大</button><button data-mass-inertia-action="transfer" data-value="gravity">重力消失</button></div><p role="status">${esc(state.transferFeedback||"把情境連回同力下的加速度。")}</p></div></section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "ec-iv-2-boyle") {
       const V=clamp(Number(state.gasVolume),20,100),k=5000,P=k/V,locked=!state.predictionSubmitted,pistonY=65+(100-V)*1.35,dots=Math.round(V/10);
@@ -598,6 +611,8 @@
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
     }
+    const massInertiaAction=event.target.closest("[data-mass-inertia-action]");
+    if(massInertiaAction && lesson.simulation.model==="eb-iv-12-mass-inertia"){const action=massInertiaAction.dataset.massInertiaAction,value=massInertiaAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{massPrediction:value,massFeedback:""});return;}if(action==="submit-prediction"){update(root,state.massPrediction?{predictionSubmitted:true,massFeedback:state.massPrediction==="half"?"預測已記錄。固定推力與時間，只改質量比較 Δv。":"預測已記錄。只改質量，用 a=F/m 檢查。"}:{massFeedback:"請先選擇預測。"});return;}if(action==="transfer"){update(root,value==="mass"?{transferChoice:value,transferFeedback:"正確：質量越大，慣性越大；同樣合力造成的加速度較小。"}:{transferChoice:value,transferFeedback:"重力仍存在；關鍵是質量與慣性。"});return;}}
     const boyleAction=event.target.closest("[data-boyle-action]");
     if(boyleAction && lesson.simulation.model==="ec-iv-2-boyle"){const action=boyleAction.dataset.boyleAction,value=boyleAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{boylePrediction:value,boyleFeedback:""});return;}if(action==="submit-prediction"){update(root,state.boylePrediction?{predictionSubmitted:true,boyleFeedback:state.boylePrediction==="double"?"預測已記錄。把體積從 100 調到 50，比較壓力。":"預測已記錄。推動活塞，用 PV 數值檢查。"}:{boyleFeedback:"請先選擇預測。"});return;}if(action==="transfer"){update(root,value==="half"?{transferChoice:value,transferFeedback:"正確：體積加倍且 PV 固定，所以壓力約減半。"}:{transferChoice:value,transferFeedback:"固定 PV 後重新比較 40 與 80 mL。"});return;}}
     const impulseAction=event.target.closest("[data-impulse-action]");
