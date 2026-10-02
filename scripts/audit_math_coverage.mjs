@@ -9,7 +9,7 @@ const lessonFiles = (await list("lessons/math/" )).filter(name => name.endsWith(
 const questionFiles = (await list("questions/math/" )).filter(name => name.endsWith(".json"));
 const specFiles = (await list("implementation/unit-specs/math/" )).filter(name => name.endsWith(".yaml"));
 const reportFiles = new Set((await list("implementation/reports/" )).filter(name => /^math-.*first-pass-review\.json$/.test(name)));
-const productionRendererSource = `${await readText("site/simulations.js")}\n${await readText("site/math-visual-labs.js")}`;
+const productionRendererSource = `${await readText("site/simulations.js")}\n${await readText("site/math-visual-labs.js")}\n${await readText("site/math-gold-standard.js")}`;
 const productionMathEngines = new Set([
   "math-number-line",
   "math-inequality-range",
@@ -49,6 +49,11 @@ const productionRendererSignatures = new Map([
   ["math-probability-lab", ["math-probability-lab", "trials", "role=\"status\""]],
 ]);
 const productionModelRendererSignatures = new Map([
+  ["d-9-2-relative-frequency-v1", ["renderProbability", "mgs-probability", "d92Prediction", "d92Transfer"]],
+  ["d-9-1-boxplot-iqr-v1", ["renderBoxPlot", "mgs-boxplot", "d91Prediction", "d91Transfer"]],
+  ["s-8-6-pythagorean-area-v1", ["renderPythagorean", "mgs-pythagorean", "s86Prediction", "s86Transfer"]],
+  ["f-8-2-linear-parameter-v1", ["renderFunction", "mgs-function", "f82Mode", "f82Transfer"]],
+  ["n-7-3-signed-operations-v1", ["renderSigned", "mgs-signed", "n73Prediction", "n73Transfer"]],
   ["a-7-3-linear-equation-check-v1", ["renderLinearEquationCheck", "mvl-linear-equation", "linearCandidate", "linearTransfer"]],
 ]);
 
