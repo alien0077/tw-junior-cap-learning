@@ -97,6 +97,17 @@
       .math-factor-lab fieldset { display: grid; grid-template-columns: 1fr; }
       .math-factor-lab fieldset button { width: 100%; }
     }
+
+    .math-factor-meaning-lab { border: 2px solid #475569; border-radius: 16px; padding: 1rem; background: #fbfdff; }
+    .math-factor-meaning-figure { margin: 0; border: 1px solid #cbd5e1; border-radius: 14px; padding: .5rem; background: white; }
+    .math-factor-meaning-figure figcaption { text-align: center; font-weight: 700; }
+    .math-factor-meaning-lab fieldset { display: flex; flex-wrap: wrap; gap: .55rem; border: 1px solid #cbd5e1; border-radius: 12px; padding: .75rem; }
+    .math-factor-meaning-lab legend { font-weight: 800; padding: 0 .35rem; }
+    @media (max-width: 480px) {
+      .math-factor-meaning-lab { padding: .65rem; }
+      .math-factor-meaning-lab fieldset { display: grid; grid-template-columns: 1fr; }
+      .math-factor-meaning-lab fieldset button { width: 100%; }
+    }
     @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; } }
   </style>
 </head>
