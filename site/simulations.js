@@ -12,6 +12,7 @@
     if (engine === "concept-explorer" && model === "ca-iv-2-solution-identification") return { sample: "X", test: "litmus", control: "unknown", testRun: false };
     if (engine === "science-motion-lab" && ["eb-iv-1-torque-balance","eb-iv-2-lever-balance"].includes(model)) return { leftForce: 3, leftArm: 10, rightForce: 2, rightArm: 15, torquePrediction: "", predictionSubmitted: false, torqueFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-motion-lab" && model === "eb-iv-4-friction-threshold") return { pullForce: 0, normalForce: 10, surface: "wood", frictionPrediction: "", predictionSubmitted: false, frictionFeedback: "", transferChoice: "", transferFeedback: "" };
+    if (engine === "science-motion-lab" && model === "eb-iv-5-hydraulic-pressure") return { inputForce: 20, inputArea: 4, outputArea: 40, depth: 2, pressurePrediction: "", predictionSubmitted: false, pressureFeedback: "", transferChoice: "", transferFeedback: "" };
     if (engine === "science-particle-lab" && model === "rutherford-scattering") return { impactProximity: 3 };
     if (engine === "science-life-system" && model === "plant-transport") return { transpiration: 3, source: "leaf", sink: "fruit" };
     if (engine === "science-life-system" && model === "pond-food-web") return { disturbance: 0 };
@@ -172,6 +173,26 @@
           </div>
           <p role="status">${esc(state.transferFeedback || "先用尺上的力臂證據判斷，再選答案。")}</p>
         </div>
+      </section>`;
+    }
+    if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-5-hydraulic-pressure") {
+      const inputForce=clamp(Number(state.inputForce),10,60), inputArea=clamp(Number(state.inputArea),2,10), outputArea=clamp(Number(state.outputArea),10,80), depth=clamp(Number(state.depth),0,5);
+      const p=inputForce/inputArea, out=p*outputArea, ratio=outputArea/inputArea;
+      const predictionLocked=!state.predictionSubmitted;
+      const smallW=50+inputArea*4, bigW=80+outputArea*2.2, fluidP=Math.min(60,10+depth*10);
+      return `<section class="sim-hydraulic-lab" aria-label="壓力與帕斯卡原理視覺實驗室">
+        <div class="sim-visual-first"><figure class="sim-hydraulic-stage"><svg viewBox="0 0 680 330" role="img" aria-label="液壓活塞模型，小活塞 ${inputArea} 平方公分、輸入力 ${inputForce} 牛頓，大活塞 ${outputArea} 平方公分、理想輸出力 ${out.toFixed(0)} 牛頓">
+          <rect x="55" y="205" width="${smallW}" height="70" class="sim-fluid"/><rect x="${560-bigW}" y="175" width="${bigW}" height="100" class="sim-fluid"/><rect x="${55+smallW}" y="245" width="${505-smallW-bigW}" height="30" class="sim-fluid"/>
+          <rect x="55" y="190" width="${smallW}" height="16" class="sim-piston"/><rect x="${560-bigW}" y="160" width="${bigW}" height="16" class="sim-piston"/>
+          <line x1="${55+smallW/2}" y1="90" x2="${55+smallW/2}" y2="184" class="sim-force-arrow"/><text x="${55+smallW/2}" y="72" text-anchor="middle">↓ ${inputForce} N</text>
+          <line x1="${560-bigW/2}" y1="156" x2="${560-bigW/2}" y2="72" class="sim-force-arrow"/><text x="${560-bigW/2}" y="55" text-anchor="middle">↑ ${out.toFixed(0)} N</text>
+          <text x="340" y="300" text-anchor="middle">液體傳遞壓力：${p.toFixed(1)} N/cm²</text>
+          <g transform="translate(290 25)"><rect width="100" height="150" rx="8" class="sim-water-tank"/><rect y="${45}" width="100" height="105" class="sim-fluid"/><circle cx="50" cy="${55+depth*17}" r="7" class="sim-marker"/><text x="112" y="${60+depth*17}">深度 ${depth} m</text></g>
+        </svg><figcaption>面積比 ${ratio.toFixed(1)}×｜理想輸出力 ${out.toFixed(0)} N｜深度增加時液體壓力趨勢增加</figcaption></figure>
+        <div class="sim-prediction-panel"><p><b>1. 先預測</b></p><p>輸入力不變，把輸出活塞面積變大，輸出力會？</p><div class="sim-actions"><button data-pressure-action="predict" data-value="same">不變</button><button data-pressure-action="predict" data-value="increase">增加</button></div><button data-pressure-action="submit-prediction">鎖定預測並開始</button><p role="status">${esc(state.pressureFeedback||"先預測，再操作活塞。")}</p></div></div>
+        <fieldset class="sim-hydraulic-controls" ${predictionLocked?"disabled":""}><legend>2. 直接操作液壓模型</legend>${slider("inputForce","輸入力",inputForce,10,60,5," N")}${slider("inputArea","小活塞面積",inputArea,2,10,1," cm²")}${slider("outputArea","大活塞面積",outputArea,10,80,10," cm²")}${slider("depth","探針深度",depth,0,5,1," m")}</fieldset>
+        <div class="sim-evidence-card"><p><b>3. 圖像證據</b></p><p>小活塞壓力＝${inputForce}÷${inputArea}＝${p.toFixed(1)} N/cm²；理想密閉液體把同一壓力傳到大活塞，所以輸出力＝${p.toFixed(1)}×${outputArea}＝${out.toFixed(0)} N。這不是能量免費增加：大活塞位移會相應縮短。</p></div>
+        <div class="sim-transfer-card"><p><b>4. 遷移：想用較小輸入力舉起同一負載，應？</b></p><div class="sim-actions"><button data-pressure-action="transfer" data-value="smaller">縮小輸出活塞</button><button data-pressure-action="transfer" data-value="larger">增大輸出/輸入面積比</button></div><p role="status">${esc(state.transferFeedback||"用活塞面積比判斷。")}</p></div>
       </section>`;
     }
     if (engine === "science-motion-lab" && lesson.simulation.model === "eb-iv-4-friction-threshold") {
@@ -488,6 +509,13 @@
       if (direction === "prev") update(root, { reasoningStep: Math.max(0, index - 1), reasoningChoice: "" });
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
+    }
+    const pressureAction=event.target.closest("[data-pressure-action]");
+    if(pressureAction && lesson.simulation.model==="eb-iv-5-hydraulic-pressure"){
+      const action=pressureAction.dataset.pressureAction,value=pressureAction.dataset.value,state=read(lesson.simulation);
+      if(action==="predict"){update(root,{pressurePrediction:value,pressureFeedback:""});return;}
+      if(action==="submit-prediction"){update(root,state.pressurePrediction?{predictionSubmitted:true,pressureFeedback:state.pressurePrediction==="increase"?"預測已記錄。改變兩個活塞面積，觀察輸出箭頭與數值。":"預測已記錄。請用大活塞面積滑桿實際檢查。"}:{pressureFeedback:"請先選擇預測。"});return;}
+      if(action==="transfer"){update(root,value==="larger"?{transferChoice:value,transferFeedback:"正確：提高輸出/輸入面積比，在相同負載下可降低所需輸入力，但輸入端需移動更長距離。"}:{transferChoice:value,transferFeedback:"再比較面積比與輸出力；縮小輸出活塞會降低力的放大倍率。"});return;}
     }
     const frictionAction = event.target.closest("[data-friction-action]");
     if (frictionAction && lesson.simulation.model === "eb-iv-4-friction-threshold") {
