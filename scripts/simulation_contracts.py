@@ -15,6 +15,7 @@ MATH_ENGINES = {
     "math-inequality-range",
     "math-algebra-balance",
     "math-visual-area",
+    "math-polynomial-model",
     "math-factor-model",
     "math-ticket-equation",
     "math-equation-meaning",
