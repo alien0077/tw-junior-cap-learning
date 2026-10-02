@@ -157,7 +157,8 @@ async def require_count(sim: Locator, selector: str, minimum: int, message: str)
 
 async def assert_renderer_depth(sim: Locator, engine: str, model: str | None) -> None:
     """Verify the lesson reached its dedicated production renderer, not only sim-design."""
-    PHASE2_FAMILY_EXPECTED = {\n        "linear-function-linked-v1": ("f81Data", ".mff-graph"),
+    PHASE2_FAMILY_EXPECTED = {
+        "linear-function-linked-v1": ("f81Data", ".mff-graph"),
         "a-7-1-like-terms-v1": ("a71Choice", ".mnf-structure"),
         "a-7-3-balance-equation-v1": ("a73Step", ".mnf-structure"),
         "d-7-1-chart-choice-v1": ("d71Chart", ".mdf-chart"),
