@@ -56,7 +56,7 @@ unitImplementationSpec:
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-N-7-3-I01
     component: NumberLineBlock
-    purpose: 讓學生操作並看見「N-7-3：負數與數的四則混合運算（含分數、小數）」中最容易被背誦取代的關係
+    purpose: 以運算樹分離乘除子運算與外層加減，再用帶號數線追蹤 −18.5→−23.5→−22.75，最後以共同分母回查；避免把「減去負數」誤成所有負號一起變正。
     initialState:
       mode: predict
       showAnswer: false
@@ -65,23 +65,23 @@ unitImplementationSpec:
         primary: 1
         secondary: 1
     studentActions:
-    - 先提交預測，不顯示正解
-    - 以滑桿、按鈕、鍵盤或點選方式改變一個條件
-    - 標記支持結論的圖形、資料、詞語或事件
-    - 以短句說明「改變什麼 → 看到什麼 → 所以什麼」
+    - 先預測最終結果的正負與量級，並指出第一個必須完成的乘法子運算
+    - 完成 4×(−1.25)=−5 後，將外層式子保留成 −18.5+(−5)−(−0.75)
+    - 在數線上觀察加 −5 向左、減去 −0.75 等價於加 +0.75 向右；只改變對應操作
+    - 切換共同分母證據，核對 −74/4−20/4+3/4=−91/4，並遷移到 −6−2×(−3)+(−4)÷2
     visualRules:
-    - 操作後所有相關表徵同步更新，不得只改單一數字
-    - 正解揭露前保留學生預測與操作紀錄
-    - 顏色不可單獨承擔意義，必須搭配標籤、符號或文字
-    - 窄螢幕不得裁切核心圖、題幹與回饋
+    - 第一畫面顯示原式、運算優先層級與數線，答案及箭頭在預測前隱藏
+    - 乘法結果先由運算節點產生，再投影成數線的 −5 位移；數線不得假裝直接表示乘法規則
+    - −(−0.75) 只在最後一段標成 +0.75 向右移，不可讓其他負數同步變正
+    - 小數結果與共同分母回查同時可讀；320/375/390/430px 仍保留完整運算樹、方向與終點標籤
     misconceptionChecks:
     - id: MC-CUR-MATH-CONTENT-N-7-3-I01
-      trigger: 把「N-7-3：負數與數的四則混合運算（含分數、小數）」當成可直接套公式的程序，忽略量與表徵的對應
-      prompt: 請指出哪一個證據支持你的判斷。
-      expectedEvidence: 至少一個可定位的視覺、文字、數據或時間證據
+      trigger: 把 −(−0.75) 的雙負號規則套到整個式子，或忽略乘除優先順序直接由左至右結算
+      prompt: 先圈出 4×(−1.25) 與 (−4)÷2 這類乘除子運算，再指出哪一個外層減號真的作用在負數上；用數線方向或共同分母作證。
+      expectedEvidence: 乘法節點為 −5；數線由 −18.5 到 −23.5，再因 +0.75 到 −22.75；分數回查為 −91/4
     feedback:
-      correct: 指出學生使用的證據，並要求用新情境再驗證一次。
-      incorrect: 先指出錯誤位於概念、證據或操作哪一層；提供一階提示，不直接代答；重試後才顯示局部示範。
+      correct: 指出學生正確保留的帶號量與移動方向，再要求以共同分母或新式子完成第二種證據。
+      incorrect: 先標出錯誤發生在運算順序或雙負號位置；只提示該節點，不重寫整題，重試後才揭示局部中間值。
   teachingPatternRefs:
   - refId: phet-ild
     reuseDecision: inspiration-only
@@ -96,16 +96,16 @@ unitImplementationSpec:
     reuseDecision: inspiration-only
     application: "本課「N-7-3：負數與數的四則混合運算（含分數、小數）」的 NumberLineBlock 只吸收預測、操作、證據表達或可及性呈現方法；資料、文字、題目與視覺內容由本課自行設計。"
   capTransfer:
-    questionType: 資料判讀／概念應用／理由短答
-    stemConstraint: 換一個情境但保留「N-7-3：負數與數的四則混合運算（含分數、小數）」的核心關係；不可只換名詞
-    requiredResponse: 選答後必須指出證據或推理步驟
-    scoring: 概念正確 1、證據對應 1、表達完整 1
+    questionType: 帶號混合運算的運算順序、雙負號方向與估算回查
+    stemConstraint: 計算 −6−2×(−3)+(−4)÷2，先寫兩個乘除子運算，再完成外層加減
+    requiredResponse: 得到 −2；說明 −(−6) 變成 +6，而最後 (−4)÷2 仍是 −2
+    scoring: 結果 1、運算節點與符號證據 1、估算或等值回查 1
   exitTicket:
-    prompt: 今天的核心關係是什麼？若改變一個條件，哪個結果會跟著變，為什麼？
+    prompt: 化簡 −10+3×(−2)−(−4) 時，哪個部分先做？最後一次移動方向為何？
     successCriteria:
-    - 提到本單元核心概念
-    - 指出條件與結果
-    - 使用一項證據或表徵
+    - 先得到 3×(−2)=−6
+    - −(−4)=+4，只改變最後一筆操作
+    - 結果 −12，且能用數線或整數估算回查
   expressionExtension:
     applicable: false
     task: 用 80～120 字／英文短段落，將「N-7-3：負數與數的四則混合運算（含分數、小數）」的證據、因果或觀察說給同學聽
@@ -114,6 +114,8 @@ unitImplementationSpec:
     breakpoints:
     - 320
     - 375
+    - 390
+    - 430
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
@@ -138,7 +140,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 N-7-3
