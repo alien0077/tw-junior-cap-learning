@@ -218,11 +218,11 @@
   },
   "simulation": {
     "id": "sim-math-factorization-common-factor",
-    "engine": "math-algebra-balance",
+    "engine": "math-factor-model",
     "mode": "model",
     "model": "a-8-5-common-factor-v1",
-    "goal": "用可檢查的步驟處理「先找共同因數」並驗算結果。",
-    "mission": "以「因式分解：先找共同因數」為題，先定義未知量，再選擇表示法與檢查方式。",
+    "goal": "用因子 token 看見最大共同因式，逐項相除形成括號，最後以分配律回乘。",
+    "mission": "先預測共同因式，再用兩項的係數與字母因子證明候選是否成立。",
     "sourceRefs": [
       "https://cap.rcpet.edu.tw/index.html",
       "https://stv.naer.edu.tw/teaching/course_outline.jsp",
