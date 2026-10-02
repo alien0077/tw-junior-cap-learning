@@ -61,7 +61,7 @@ unitImplementationSpec:
   interactiveBlocks:
   - id: CUR-MATH-CONTENT-A-8-4-I01
     component: StepwiseReasoningBlock
-    purpose: 辨認因式／倍式方向，提出商式並以乘回或餘式驗證；不教後續分解算法
+    purpose: 以四格面積模型看見因式×商式的完整乘積，先預測候選，再逐項乘回驗證因式／倍式方向；不教後續分解算法
     initialState:
       mode: predict
       showAnswer: false
@@ -144,6 +144,8 @@ unitImplementationSpec:
     breakpoints:
     - 320
     - 375
+    - 390
+    - 430
     - 768
     touchTargetMinPx: 44
     keyboardAlternative: true
@@ -167,7 +169,7 @@ unitImplementationSpec:
   status:
     designStatus: specified
     implementationStatus: implemented
-    qaStatus: verified
+    qaStatus: untested
   sourceRefs:
   - url: https://www.naer.edu.tw/upload/1/16/doc/815/%E5%8D%81%E4%BA%8C%E5%B9%B4%E5%9C%8B%E6%B0%91%E5%9F%BA%E6%9C%AC%E6%95%99%E8%82%B2%E8%AA%B2%E7%A8%8B%E7%B6%B1%E8%A6%81%E5%9C%8B%E6%B0%91%E4%B8%AD%E5%B0%8F%E5%AD%B8%E6%9A%A8%E6%99%AE%E9%80%9A%E5%9E%8B%E9%AB%98%E7%B4%9A%E4%B8%AD%E7%AD%89%E5%AD%B8%E6%A0%A1-%E6%95%B8%E5%AD%B8%E9%A0%98%E5%9F%9F.pdf
     locator: 正文第 36～45 頁／PDF 第 39～48 頁；國民中學教育階段學習內容；官方代碼 A-8-4
