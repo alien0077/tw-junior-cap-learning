@@ -7,7 +7,7 @@ await import("./english-performance-8-iv-6-fusion.test.mjs");
 const readJson = path => JSON.parse(readFileSync(new URL(path, import.meta.url), "utf8"));
 const lesson = readJson("../../lessons/english/lesson-english-performance-8-iv-5.json");
 assert.equal(lesson.id, "lesson-english-performance-8-iv-5");
-assert.equal(lesson.reviewStatus, "draft");
+assert.equal(lesson.reviewStatus, "reviewed");
 assert.equal(lesson.authoringStandard, "version-fused-v1");
 assert.deepEqual(lesson.knowledgeIds, ["kg-english-performance-8-iv-5"]);
 assert.equal(lesson.versionResearch.length, 3);
@@ -39,7 +39,7 @@ assert.deepEqual(unit.publisherEvidence, { nani: "pending", kanghsuan: "pending"
 
 const questions = Array.from({ length: 10 }, (_, index) => readJson(`../../questions/english/question-english-performance-8-iv-5-${index + 1}.json`));
 for (const question of questions) {
-  assert.equal(question.reviewStatus, "draft");
+  assert.equal(question.reviewStatus, "reviewed");
   assert.equal(question.lessonId, lesson.id);
   assert.deepEqual(question.knowledgeIds, lesson.knowledgeIds);
   assert.equal(question.examPatternRefs.length, 2);
