@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { JSDOM } from "jsdom";
 
 const item = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-english-content-ac-iv-1.json", import.meta.url), "utf8"));
-assert.equal(item.reviewStatus, "draft", "source and independent content gates remain open");
+assert.equal(item.reviewStatus, "reviewed-content-pending-browser", "source and independent content gates remain open");
 const visibleSections = item.content.sections.map(({ heading }) => heading);
 for (const section of item.teaching.body) {
   assert.ok(visibleSections.includes(section.heading), `student-visible lesson must include authored teaching section: ${section.heading}`);
@@ -16,7 +16,7 @@ assert.match(warningFunctionSection.body, /提醒注意、要求一個動作、�
 assert.match(warningFunctionSection.body, /不要因為標示帶有警示語氣，就自行推成全面封鎖/);
 assert.equal(item.versionResearch.find(({ publisher }) => publisher === "kanghsuan").reviewedAt, "2026-09-28");
 assert.match(item.fusionRecord.llmSynthesisNote, /不宣稱三版本實質融合完成/);
-assert.equal(item.reviewStatus, "draft", "publisher-text and independent content gates remain pending");
+assert.equal(item.reviewStatus, "reviewed-content-pending-browser", "publisher-text and independent content gates remain pending");
 const signageLesson = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-english-performance-3-iv-3.json", import.meta.url), "utf8"));
 const source = readFileSync(new URL("../../site/sign-reading-lab.js", import.meta.url), "utf8");
 const stylesheet = readFileSync(new URL("../../site/sign-reading-lab.css", import.meta.url), "utf8");
