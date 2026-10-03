@@ -21,7 +21,7 @@ for(const subject of subjects){
 }
 const app=fs.readFileSync(path.join(root,"site/app.js"),"utf8"),css=fs.readFileSync(path.join(root,"site/styles.css"),"utf8");
 for(const subject of subjects) assert.ok(app.includes(subject+':"')||app.includes(subject+': "'),"visual overview subject route missing: "+subject);
-assert.ok(app.includes("lessonVisualOverview(item)"),"per-lesson visual overview is not mounted");
+assert.ok(app.includes("lessonVisualOverview(item)"),"per-lesson visual overview is not mounted");\nassert.ok(app.includes("renderLessonSection(item, section, index)"),"every authored prose section must mount a visual companion");\nassert.ok(app.includes("sectionVisual(item, section, index)"),"section visual renderer missing");\nassert.ok(css.includes(".lesson-section-pair"),"prose/visual paired layout missing");\nassert.ok(css.includes(".section-visual-flow"),"section visual flow CSS missing");
 assert.ok(css.includes(".lvo-flow"),"visual flow CSS missing");
 assert.ok(css.includes("overflow-x:hidden"),"mobile horizontal overflow guard missing");
 console.log("PASS all-subject visual-first contract",counts);
