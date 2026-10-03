@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 
 const lesson = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-english-performance-8-iv-2.json", import.meta.url), "utf8"));
 assert.equal(lesson.id, "lesson-english-performance-8-iv-2");
-assert.equal(lesson.reviewStatus, "draft");
+assert.equal(lesson.reviewStatus, "reviewed");
 assert.equal(lesson.authoringStandard, "version-fused-v1");
 assert.deepEqual(lesson.knowledgeIds, ["kg-english-performance-8-iv-2"]);
 assert.equal(lesson.versionResearch.length, 3);
@@ -28,7 +28,7 @@ const questions = Array.from({ length: 10 }, (_, index) => JSON.parse(readFileSy
 const answerCounts = Object.fromEntries(["A", "B", "C", "D"].map(key => [key, questions.filter(question => question.answer.value === key).length]));
 assert.deepEqual(answerCounts, { A: 1, B: 3, C: 3, D: 3 });
 for (const question of questions) {
-  assert.equal(question.reviewStatus, "draft");
+  assert.equal(question.reviewStatus, "reviewed");
   assert.equal(question.lessonId, lesson.id);
   assert.deepEqual(question.knowledgeIds, lesson.knowledgeIds);
   assert.ok(question.studyReferences.some(url => url.includes("naer.edu.tw")));
