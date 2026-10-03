@@ -6,7 +6,7 @@ const specText = readFileSync(new URL("../unit-specs/english/cur-english-learnin
 
 assert.equal(lesson.id, "lesson-english-learning-performance");
 assert.equal(lesson.authoringStandard, "version-fused-v1");
-assert.equal(lesson.reviewStatus, "draft");
+assert.equal(lesson.reviewStatus, "reviewed");
 assert.deepEqual(lesson.knowledgeIds, ["kg-english-learning-performance"]);
 assert.equal(lesson.content.sections.length, 6);
 assert.equal(lesson.teaching.body.length, 6);
