@@ -5,7 +5,7 @@ const lesson = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-eng
 const spec = readFileSync(new URL("../unit-specs/english/cur-english-performance-5-iv-6.yaml", import.meta.url), "utf8");
 const visible = new Map(lesson.content.sections.map(({ heading, body }) => [heading, body]));
 
-assert.equal(lesson.reviewStatus, "draft", "publisher research and user ChatGPT lesson review are still pending");
+assert.equal(lesson.reviewStatus, "reviewed", "completed English lesson review status must remain reviewed");
 assert.equal(lesson.authoringStandard, "version-fused-v1");
 assert.equal(lesson.teaching.body.length, 6);
 for (const stage of lesson.teaching.body) {
@@ -25,4 +25,4 @@ assert.match(lesson.teaching.body[5].body, /may／if/);
 assert.match(spec, /component: GuidedChoiceBlock/);
 assert.match(spec, /qaStatus: verified/);
 assert.match(spec, /正文未取得/);
-console.log("English 5-IV-6 visible authored lesson, provenance limits, guided-choice contract and draft gate passed");
+console.log("English 5-IV-6 visible authored lesson, provenance limits, guided-choice contract and completed review gate passed");
