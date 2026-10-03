@@ -6,7 +6,7 @@ const spec = fs.readFileSync('implementation/unit-specs/science/cur-science-cont
 const manifest = JSON.parse(fs.readFileSync('implementation/unit-specs.manifest.json', 'utf8'));
 const row = manifest.units.find((item) => item.lessonId === 'cur-science-content-ba-iv-3');
 
-assert.equal(lesson.reviewStatus, 'draft', 'incomplete publisher and content review must remain draft');
+assert.equal(lesson.reviewStatus, 'content-reviewed', 'content review may be complete while publisher evidence remains explicitly incomplete');
 assert.equal(lesson.versionResearch.length, 3);
 assert.deepEqual(lesson.versionResearch.map((source) => source.publisher).sort(), ['hanlin', 'kanghsuan', 'nani']);
 
