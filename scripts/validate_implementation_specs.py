@@ -155,7 +155,7 @@ def main() -> int:
     print(json.dumps({"specFiles": len(files), "errors": len(errors), "eligible": eligible_specs, "pending": len(files) - eligible_specs, "report": str(args.report)}, ensure_ascii=False))
     if errors:
         for name, problems in sorted(errors.items()):
-            print(name + ": " + " | ".join(problems))
+            print(name + ": " + " | ".join(problems), flush=True)
     if len(files) != 1031:
         print(f"spec count mismatch: expected 1031, got {len(files)}")
     return 1 if errors or len(files) != 1031 or len(curricula) < 1027 else 0
