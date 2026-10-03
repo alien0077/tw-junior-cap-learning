@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 const lesson = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-english-content-ac-iv-2.json", import.meta.url), "utf8"));
 const visible = new Map(lesson.content.sections.map(({ heading, body }) => [heading, body]));
 
-assert.equal(lesson.reviewStatus, "draft", "unfinished publisher/content review must not be promoted");
+assert.equal(lesson.reviewStatus, "reviewed-content-pending-browser", "content review is complete while browser QA remains pending");
 assert.equal(lesson.teaching.body.length, 6, "the authored lesson must retain all six distinct teaching stages");
 for (const stage of lesson.teaching.body) {
   assert.equal(visible.get(stage.heading), stage.body, `student lesson must render the complete authored stage: ${stage.heading}`);
