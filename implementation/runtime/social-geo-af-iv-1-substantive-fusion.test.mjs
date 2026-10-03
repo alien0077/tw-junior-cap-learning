@@ -48,15 +48,16 @@ assert.match(lesson.fusionRecord.versionDifferences.join(" "), /來源深度不�
 assert.match(lesson.fusionRecord.llmSynthesisNote, /六段不同功能的可見課文/);
 assert.match(lesson.fusionRecord.llmSynthesisNote, /時序地圖問題與運具任務均是本課原創延伸/);
 
-assert.equal(lesson.interactive.type, "guided-choice");
-assert.equal(lesson.interactive.steps.length, 4);
-assert.match(lesson.interactive.steps[0].prompt, /服務中心/);
-assert.match(lesson.interactive.steps[1].options[0], /總旅行時間、班次與轉乘/);
-assert.match(lesson.interactive.steps[2].options[0], /受益與代價.*環境資料/);
-assert.match(lesson.interactive.steps[3].prompt, /不同年代.*交通網絡改變.*不會過度推論/);
-assert.match(lesson.interactive.steps[3].options[0], /居民往返、產業與公共服務.*仍缺的證據/);
-assert.match(lesson.interactive.steps[3].options[1], /必然是唯一原因/);
-assert.equal(lesson.interactive.steps[3].answer, "A");
+assert.equal(lesson.interactive.type, "settlement-network-map");
+assert.equal(lesson.interactive.steps.length, 3);
+assert.deepEqual(lesson.interactive.steps.map(step => step.answer), ["B", "B", "A"]);
+assert.match(lesson.interactive.steps[0].prompt, /快速道路|通勤時間/);
+assert.match(lesson.interactive.steps[0].options.join(" "), /服務|土地|產業|人口流動/);
+assert.match(lesson.interactive.steps[0].feedback, /可達性.*條件/);
+assert.match(lesson.interactive.steps[1].prompt, /都市人口比例.*鄉村人口/);
+assert.match(lesson.interactive.steps[1].feedback, /比例.*絕對量/);
+assert.match(lesson.interactive.steps[2].options[0], /所得.*就業.*交通.*服務可近性.*人口/);
+assert.match(lesson.interactive.steps[2].feedback, /多指標.*單一數字/);
 const unitManifest = manifest.units.find((entry) => entry.lessonId === "cur-social-content-geo-af-iv-1");
 assert.equal(unitManifest.publisherEvidence.hanlin, "verified", "directly read version-labeled textbook-content evidence should be synchronized to the unit manifest");
 assert.equal(unitManifest.publisherEvidence.nani, "book-level-only");
