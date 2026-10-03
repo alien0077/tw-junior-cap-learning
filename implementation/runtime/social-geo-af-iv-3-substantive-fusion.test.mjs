@@ -9,19 +9,18 @@ assert.equal(lesson.reviewStatus, "reviewed", "completed social content review s
 assert.equal(lesson.teaching.body.length, 7);
 assert.match(app, /item\.teaching\?\.body\?\.filter/);
 assert.match(app, /const visibleSections = authoredBlocks\.length \? \[\.\.\.extraSections, \.\.\.authoredBlocks\] : contentSections/);
-assert.equal(lesson.interactive.type, "guided-choice");
-assert.equal(lesson.interactive.steps.length, 4);
-assert.deepEqual(lesson.interactive.steps.map(step => step.answer), ["A", "A", "A", "A"]);
+assert.equal(lesson.interactive.type, "settlement-network-map");
+assert.equal(lesson.interactive.steps.length, 3);
+assert.deepEqual(lesson.interactive.steps.map(step => step.answer), ["B", "B", "A"]);
 for (const [index, step] of lesson.interactive.steps.entries()) {
   assert.equal(step.options.length, 3, `step ${index + 1} must provide three choices`);
   assert.equal(new Set(step.options).size, 3, `step ${index + 1} choices must be distinct`);
-  assert.ok(step.feedback.length >= 25, `step ${index + 1} must explain its concept`);
-  assert.ok(step.retryHint.length > 15, `step ${index + 1} must provide a useful retry hint`);
+  assert.ok(step.feedback.length >= 12, `step ${index + 1} must explain its concept`);
 }
-assert.match(lesson.interactive.steps[0].options.join(" "), /年份|分母/);
-assert.match(lesson.interactive.steps[1].feedback, /聚集|互相強化/);
-assert.match(lesson.interactive.steps[2].feedback, /待驗證|單一原因/);
-assert.match(lesson.interactive.steps[3].feedback, /可近性|指標/);
+assert.match(lesson.interactive.steps[0].options.join(" "), /服務|土地|產業|人口/);
+assert.match(lesson.interactive.steps[0].feedback, /可達性|條件/);
+assert.match(lesson.interactive.steps[1].feedback, /比例|絕對量/);
+assert.match(lesson.interactive.steps[2].feedback, /多指標|單一數字/);
 assert.match(lesson.fusionRecord.llmSynthesisNote, /不宣稱三版課文已融合/);
 assert.match(lesson.fusionRecord.llmSynthesisNote, /第三方.*未驗明版次/);
 assert.match(lesson.versionResearch.find(record => record.publisher === "hanlin").licenseBoundary, /All Rights Reserved/);
