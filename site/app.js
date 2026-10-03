@@ -48,14 +48,63 @@ function lessonVisualOverview(item) {
   const glyph={science:"⚗",social:"◎",english:"Aa",chinese:"文",math:"△"}[subject]||"•";
   return '<section class="lesson-visual-overview '+esc(subject)+'" aria-label="'+esc(item.title)+' 圖像導讀"><header><span class="lvo-glyph" aria-hidden="true">'+glyph+'</span><div><b>先看圖再讀文字</b><p>'+esc(kind)+'</p></div></header><div class="lvo-flow">'+nodes.map((x,i)=>'<article><span class="lvo-node" aria-hidden="true">'+x.n+'</span><p>'+esc(x.text.length>72?x.text.slice(0,72)+"…":x.text)+'</p></article>'+(i<nodes.length-1?'<span class="lvo-arrow" aria-hidden="true">→</span>':'')).join("")+'</div><p class="lvo-note">這張圖只整理本單元的推理路徑；下方互動用實際證據檢查每一步。</p></section>';
 }
-function visualTokens(value, limit = 4) {
-  return String(value || "").split(/[。！？!?；;]|，(?=.{6,})/).map(x => x.trim()).filter(x => x.length >= 4).slice(0, limit);
+function visualLabel(text, fallback) {
+  const parts=String(text||"").split(/[。！？!?；;：:，,]/).map(x=>x.trim()).filter(x=>x.length>=2);
+  return (parts[0]||fallback||"概念").slice(0,18);
+}
+function svgText(x,y,text,anchor="middle",size=13,weight=650){return '<text x="'+x+'" y="'+y+'" text-anchor="'+anchor+'" font-size="'+size+'" font-weight="'+weight+'" fill="currentColor">'+esc(text)+'</text>';}
+function visualKind(item, section) {
+  const t=(item.title+" "+(section.heading||"")+" "+(section.body||"")).toLowerCase();
+  if(item.subject==="science"){
+    if(/細胞|cell|胞器|細胞膜|細胞核|粒線體|葉綠體/.test(t)) return "cell";
+    if(/血液|血球|紅血球|白血球|血小板|循環|心臟|血管/.test(t)) return "blood";
+    if(/光合作用|呼吸作用|食物鏈|食物網|生態|能量流|物質循環/.test(t)) return "eco";
+    if(/原子|分子|元素|化合物|粒子/.test(t)) return "particles";
+    if(/力|摩擦|槓桿|浮力|壓力|運動|速度|加速度/.test(t)) return "force";
+    if(/電流|電壓|電阻|電路|電池/.test(t)) return "circuit";
+    if(/光|反射|折射|透鏡|成像/.test(t)) return "ray";
+    if(/板塊|地震|火山|地層|岩石|地貌/.test(t)) return "earth";
+    if(/天氣|氣候|氣壓|季風|颱風|海流/.test(t)) return "weather";
+    if(/月相|日食|月食|太陽系|星系|宇宙/.test(t)) return "orbit";
+    return "experiment";
+  }
+  if(item.subject==="social"){
+    if(/歷史|史料|年代|世紀|朝代|戰爭|改革|革命|殖民|帝國|冷戰|文化|宗教/.test(t)) return "timeline";
+    if(/地理|地圖|經緯|位置|區域|地形|河流|人口|聚落|產業|氣候|資源/.test(t)) return "map";
+    if(/市場|價格|供給|需求|機會成本|貨幣|貿易|經濟/.test(t)) return "chart";
+    return "civic";
+  }
+  if(item.subject==="math"){
+    if(/幾何|三角|圓|角|相似|全等|面積|體積|坐標/.test(t)) return "geometry";
+    if(/函數|直線|斜率|圖形|坐標|變數/.test(t)) return "graph";
+    if(/統計|機率|平均|中位|資料|百分/.test(t)) return "chart";
+    return "equation";
+  }
+  if(item.subject==="english") return /發音|重音|語調|phon|sound|stress|intonation/.test(t)?"sound":/時間|時態|tense|before|after/.test(t)?"timeline":"language";
+  return /文言|古文|詩|韻|年代/.test(t)?"text-timeline":/結構|篇章|論證|因果|主旨/.test(t)?"text-structure":"language";
 }
 function sectionVisual(item, section, index) {
-  const tokens = visualTokens(section.body);
-  const nodes = tokens.length ? tokens : [section.heading || item.title];
-  const icon = {math:"∑",science:"⚗",social:"◎",english:"Aa",chinese:"文"}[item.subject] || "•";
-  return '<figure class="section-visual '+esc(item.subject)+'" data-section-visual="'+index+'" aria-label="'+esc((section.heading||item.title)+' 圖解')+'"><figcaption><span aria-hidden="true">'+icon+'</span> 圖解重點</figcaption><div class="section-visual-flow">'+nodes.map((node,i)=>'<div class="section-visual-node"><span aria-hidden="true">'+(i+1)+'</span><p>'+esc(node)+'</p></div>'+(i<nodes.length-1?'<span class="section-visual-arrow" aria-hidden="true">→</span>':'')).join("")+'</div></figure>';
+  const kind=visualKind(item,section), title=visualLabel(section.heading,item.title), body=visualLabel(section.body,title);
+  let svg="";
+  if(kind==="cell") svg='<svg viewBox="0 0 360 220" role="img" aria-label="細胞結構示意圖"><ellipse cx="180" cy="110" rx="145" ry="82" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="178" cy="105" r="35" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="90" cy="90" rx="25" ry="12" fill="none" stroke="currentColor" stroke-width="3"/><ellipse cx="270" cy="132" rx="26" ry="12" fill="none" stroke="currentColor" stroke-width="3"/>'+svgText(178,110,"細胞核")+svgText(78,64,"胞器")+svgText(282,164,"胞器")+svgText(180,205,"細胞膜包圍細胞質")+'</svg>';
+  else if(kind==="blood") svg='<svg viewBox="0 0 360 220" role="img" aria-label="血液組成示意圖"><circle cx="72" cy="82" r="32" fill="none" stroke="currentColor" stroke-width="7"/><circle cx="180" cy="82" r="38" fill="none" stroke="currentColor" stroke-width="4"/><path d="M165 70q15-20 30 0q-10 15-30 0" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="282" cy="72" r="8" fill="currentColor"/><circle cx="304" cy="92" r="7" fill="currentColor"/><circle cx="274" cy="105" r="6" fill="currentColor"/>'+svgText(72,142,"紅血球")+svgText(180,142,"白血球")+svgText(290,142,"血小板")+svgText(180,190,"血漿：運送細胞與溶解物質")+'</svg>';
+  else if(kind==="timeline"||kind==="text-timeline") svg='<svg viewBox="0 0 420 190" role="img" aria-label="時間軸示意圖"><path d="M45 105H375" stroke="currentColor" stroke-width="4"/><path d="M375 105l-14-9v18z" fill="currentColor"/><circle cx="95" cy="105" r="9" fill="currentColor"/><circle cx="210" cy="105" r="9" fill="currentColor"/><circle cx="325" cy="105" r="9" fill="currentColor"/>'+svgText(95,72,"背景")+svgText(210,72,title)+svgText(325,72,"影響")+svgText(95,142,"先")+svgText(210,142,"事件")+svgText(325,142,"後")+'</svg>';
+  else if(kind==="map") svg='<svg viewBox="0 0 400 220" role="img" aria-label="地圖判讀示意圖"><path d="M55 45l80-18 45 42 62-24 92 46-30 78-85 18-54-32-83 25-34-62z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M180 45v125M105 95h205" stroke="currentColor" stroke-width="2" stroke-dasharray="6 5"/><circle cx="235" cy="112" r="8" fill="currentColor"/>'+svgText(235,92,"位置")+svgText(85,205,"圖例・方向・尺度","start")+svgText(315,205,title,"end")+'</svg>';
+  else if(kind==="geometry") svg='<svg viewBox="0 0 360 220" role="img" aria-label="幾何關係示意圖"><path d="M70 170L170 42l120 128z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M70 170h220M170 42v128" stroke="currentColor" stroke-width="2" stroke-dasharray="6 5"/>'+svgText(170,30,title)+svgText(170,195,"量出已知 → 標關係 → 求未知")+'</svg>';
+  else if(kind==="graph"||kind==="chart") svg='<svg viewBox="0 0 380 220" role="img" aria-label="資料圖表示意圖"><path d="M55 25v155h285M55 180l70-55 65 18 70-82 70 35" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="125" cy="125" r="6" fill="currentColor"/><circle cx="190" cy="143" r="6" fill="currentColor"/><circle cx="260" cy="61" r="6" fill="currentColor"/>'+svgText(195,205,"先讀軸與單位，再比較趨勢")+svgText(65,42,title,"start")+'</svg>';
+  else if(kind==="circuit") svg='<svg viewBox="0 0 390 210" role="img" aria-label="電路示意圖"><path d="M65 60h90m50 0h115v95H65V60" fill="none" stroke="currentColor" stroke-width="4"/><path d="M155 42v36m18-28v20" stroke="currentColor" stroke-width="4"/><circle cx="250" cy="155" r="28" fill="none" stroke="currentColor" stroke-width="4"/><path d="M232 137l36 36m0-36l-36 36" stroke="currentColor" stroke-width="3"/>'+svgText(165,30,"電池")+svgText(250,202,"負載")+svgText(320,45,title,"end")+'</svg>';
+  else if(kind==="ray") svg='<svg viewBox="0 0 390 210" role="img" aria-label="光線路徑示意圖"><path d="M35 155L190 90L350 45M190 25v160" fill="none" stroke="currentColor" stroke-width="4"/><path d="M190 90l-55-55" stroke="currentColor" stroke-width="3" stroke-dasharray="6 5"/>'+svgText(65,175,"入射")+svgText(310,70,"出射")+svgText(205,28,"界面","start")+'</svg>';
+  else if(kind==="earth") svg='<svg viewBox="0 0 400 220" role="img" aria-label="地球科學剖面示意圖"><path d="M20 95q65-55 130 0t130 0t100 0v90H20z" fill="none" stroke="currentColor" stroke-width="4"/><path d="M30 145h340M80 95l55 50m170-50l-55 50" stroke="currentColor" stroke-width="3"/>'+svgText(200,205,"地表現象 ↔ 地下構造")+svgText(200,55,title)+'</svg>';
+  else if(kind==="weather") svg='<svg viewBox="0 0 400 220" role="img" aria-label="天氣系統示意圖"><circle cx="92" cy="70" r="30" fill="none" stroke="currentColor" stroke-width="4"/><path d="M45 145c70-35 115-35 180 0s105 30 145 0" fill="none" stroke="currentColor" stroke-width="4"/><path d="M235 70h100m-18-14 18 14-18 14" fill="none" stroke="currentColor" stroke-width="4"/>'+svgText(92,115,"氣壓／溫度")+svgText(285,50,"風向")+svgText(200,195,title)+'</svg>';
+  else if(kind==="orbit") svg='<svg viewBox="0 0 400 220" role="img" aria-label="天體位置示意圖"><circle cx="200" cy="110" r="28" fill="none" stroke="currentColor" stroke-width="4"/><ellipse cx="200" cy="110" rx="145" ry="75" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="345" cy="110" r="13" fill="currentColor"/>'+svgText(200,115,"中心")+svgText(345,90,"位置")+svgText(200,205,title)+'</svg>';
+  else if(kind==="particles") svg='<svg viewBox="0 0 390 210" role="img" aria-label="粒子模型示意圖"><g fill="none" stroke="currentColor" stroke-width="4"><circle cx="90" cy="90" r="25"/><circle cx="145" cy="90" r="25"/><circle cx="245" cy="75" r="22"/><circle cx="280" cy="110" r="22"/><circle cx="225" cy="125" r="22"/></g>'+svgText(118,150,"兩粒子模型")+svgText(255,160,"多粒子模型")+svgText(195,195,title)+'</svg>';
+  else if(kind==="force") svg='<svg viewBox="0 0 390 210" role="img" aria-label="受力示意圖"><rect x="145" y="80" width="100" height="65" rx="8" fill="none" stroke="currentColor" stroke-width="4"/><path d="M195 80V25m0 120v50m-50-82H70m175 0h75" stroke="currentColor" stroke-width="4"/><path d="M195 25l-8 14h16zM195 195l-8-14h16zM70 113l14-8v16zM320 113l-14-8v16z" fill="currentColor"/>'+svgText(195,118,title)+svgText(195,18,"力")+svgText(195,208,"力")+'</svg>';
+  else if(kind==="eco") svg='<svg viewBox="0 0 420 210" role="img" aria-label="生態能量流示意圖"><circle cx="70" cy="105" r="35" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="210" cy="105" r="35" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="350" cy="105" r="35" fill="none" stroke="currentColor" stroke-width="4"/><path d="M108 105h62m78 0h62" stroke="currentColor" stroke-width="4"/><path d="M170 105l-14-8v16zm140 0l-14-8v16z" fill="currentColor"/>'+svgText(70,110,"生產者")+svgText(210,110,"消費者")+svgText(350,110,"高階")+svgText(210,185,"箭頭表示能量／物質關係")+'</svg>';
+  else if(kind==="sound") svg='<svg viewBox="0 0 420 190" role="img" aria-label="聲音重音示意圖"><path d="M30 105q25-65 50 0t50 0t50 0t50 0t50 0t50 0t50 0" fill="none" stroke="currentColor" stroke-width="4"/>'+svgText(80,55,"弱")+svgText(180,40,"重音")+svgText(280,55,"弱")+svgText(210,165,title)+'</svg>';
+  else if(kind==="language"||kind==="text-structure") svg='<svg viewBox="0 0 420 210" role="img" aria-label="語文結構示意圖"><rect x="35" y="45" width="105" height="55" rx="12" fill="none" stroke="currentColor" stroke-width="3"/><rect x="158" y="45" width="105" height="55" rx="12" fill="none" stroke="currentColor" stroke-width="3"/><rect x="280" y="45" width="105" height="55" rx="12" fill="none" stroke="currentColor" stroke-width="3"/><path d="M140 72h18m105 0h17" stroke="currentColor" stroke-width="4"/>'+svgText(88,78,"語境")+svgText(210,78,title)+svgText(332,78,"表達")+svgText(210,145,body)+svgText(210,180,"用文本線索驗證理解")+'</svg>';
+  else if(kind==="equation") svg='<svg viewBox="0 0 420 200" role="img" aria-label="數學等量關係示意圖"><path d="M70 105h280M210 105V55" stroke="currentColor" stroke-width="5"/><rect x="95" y="70" width="70" height="35" fill="none" stroke="currentColor" stroke-width="3"/><rect x="255" y="70" width="70" height="35" fill="none" stroke="currentColor" stroke-width="3"/>'+svgText(130,94,"已知")+svgText(290,94,"未知")+svgText(210,145,"保持關係成立")+svgText(210,180,title)+'</svg>';
+  else svg='<svg viewBox="0 0 420 200" role="img" aria-label="探究流程示意圖"><circle cx="75" cy="95" r="38" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="210" cy="95" r="38" fill="none" stroke="currentColor" stroke-width="3"/><circle cx="345" cy="95" r="38" fill="none" stroke="currentColor" stroke-width="3"/><path d="M113 95h59m76 0h59" stroke="currentColor" stroke-width="4"/>'+svgText(75,100,"觀察")+svgText(210,100,"比較")+svgText(345,100,"驗證")+svgText(210,170,title)+'</svg>';
+  return '<figure class="section-visual semantic-visual '+esc(item.subject)+'" data-visual-kind="'+kind+'" data-section-visual="'+index+'"><figcaption>'+esc(section.heading||item.title)+'｜概念圖</figcaption>'+svg+'</figure>';
 }
 function renderLessonSection(item, section, index) {
   return '<article class="lesson-section"><b>'+esc(section.heading)+'</b><div class="lesson-section-pair"><p>'+esc(section.body)+'</p>'+sectionVisual(item, section, index)+'</div></article>';
