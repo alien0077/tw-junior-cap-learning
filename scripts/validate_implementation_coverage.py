@@ -16,6 +16,8 @@ def main() -> int:
     specs = [yaml.safe_load(p.read_text(encoding="utf-8"))["unitImplementationSpec"] for p in spec_files]
     curriculum_ids = {json.loads(p.read_text(encoding="utf-8"))["id"] for p in (ROOT / "curriculum").glob("*/*.json")}
     lesson_ids = {s["lessonId"] for s in specs}
+    curriculum_specs = [s for s in specs if s["lessonId"] in curriculum_ids]
+    supplemental_specs = [s for s in specs if s["lessonId"] not in curriculum_ids]
     existing_question_files = list((ROOT / "questions").rglob("*.json"))
     placeholder_tokens = ("TODO", "placeholder", "待由本單元操作資料填入", "待填")
     placeholder_units = []
@@ -94,7 +96,8 @@ def main() -> int:
     )
     report = {
         "guideUnits": 1027,
-        "specUnits": len(specs),
+        "specUnits": len(curriculum_specs),
+        "supplementalDirectSpecUnits": len(supplemental_specs),
         "curriculumUnitIdsCovered": len(lesson_ids & curriculum_ids),
         "officialIndexDocumentsExcluded": len(curriculum_ids - lesson_ids),
         "interactiveBlocks": len([b for s in specs for b in s["interactiveBlocks"]]),
@@ -126,7 +129,7 @@ def main() -> int:
         ),
         "completionGate": "designStatus=reviewed && implementationStatus=implemented && qaStatus=verified",
         "completedUnits": completed_units,
-        "pendingUnits": len(specs) - completed_units,
+        "pendingUnits": len(curriculum_specs) - min(completed_units, len(curriculum_specs)),
         "notes": [
             "The 5 official curriculum index documents are not treated as lessons.",
             "No publisher chapter evidence or original generated question is fabricated by this report.",
