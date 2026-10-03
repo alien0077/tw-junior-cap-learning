@@ -29,10 +29,17 @@ def main() -> int:
     missing = sorted(components - set(seen))
     errors.extend({"component": component, "error": "unassigned component"} for component in missing)
 
+    curriculum_ids = set()
+    for curriculum_path in (ROOT / "curriculum").glob("*/*.json"):
+        obj = json.loads(curriculum_path.read_text(encoding="utf-8"))
+        if isinstance(obj, dict) and str(obj.get("id", "")).startswith("cur-"):
+            curriculum_ids.add(obj["id"])
     counts = defaultdict(Counter)
     unit_count = 0
     for path in sorted((ROOT / "implementation/unit-specs").glob("*/*.yaml")):
         spec = yaml.safe_load(path.read_text(encoding="utf-8"))["unitImplementationSpec"]
+        if spec.get("lessonId") not in curriculum_ids:
+            continue
         unit_count += 1
         for block in spec["interactiveBlocks"]:
             component = block["component"]
