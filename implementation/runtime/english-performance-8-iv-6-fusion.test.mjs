@@ -34,7 +34,7 @@ assert.equal(unit.component, "GuidedChoiceBlock");
 
 const questions = Array.from({ length: 10 }, (_, index) => readJson(`../../questions/english/question-english-performance-8-iv-6-${index + 1}.json`));
 for (const question of questions) {
-  assert.equal(question.reviewStatus, "draft");
+  assert.equal(question.reviewStatus, "reviewed");
   assert.equal(question.lessonId, lesson.id);
   assert.deepEqual(question.knowledgeIds, lesson.knowledgeIds);
   assert.equal(question.examPatternRefs.length, 2);
