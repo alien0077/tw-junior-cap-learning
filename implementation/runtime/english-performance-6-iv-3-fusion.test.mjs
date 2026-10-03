@@ -4,7 +4,7 @@ import fs from 'node:fs';
 const lesson = JSON.parse(fs.readFileSync(new URL('../../lessons/english/lesson-english-performance-6-iv-3.json', import.meta.url), 'utf8'));
 const spec = fs.readFileSync(new URL('../unit-specs/english/cur-english-performance-6-iv-3.yaml', import.meta.url), 'utf8');
 
-assert.equal(lesson.reviewStatus, 'draft');
+assert.equal(lesson.reviewStatus, "reviewed");
 assert.equal(lesson.authoringStandard, 'version-fused-v1');
 assert.equal(lesson.teaching.body.length, 6);
 assert.equal(lesson.content.sections.length, 6);
