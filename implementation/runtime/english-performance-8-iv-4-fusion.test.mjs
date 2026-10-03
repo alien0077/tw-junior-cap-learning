@@ -11,7 +11,7 @@ assert.deepEqual(lesson.versionResearch.map(row => row.publisher).sort(), ["hanl
 assert.ok(lesson.versionResearch.every(row => row.sourceLocator.length > 30 && row.findings.concepts.length >= 2));
 assert.ok(lesson.versionResearch.every(row => /公校|校方/.test(row.edition)));
 assert.match(lesson.fusionRecord.llmSynthesisNote, /不是出版社課本全文/);
-assert.match(lesson.fusionRecord.llmSynthesisNote, /維持draft/);
+assert.match(lesson.fusionRecord.llmSynthesisNote, /final content review|完成.*review/);
 assert.equal(lesson.content.sections.length, 7);
 assert.equal(lesson.teaching.body.length, 7);
 assert.deepEqual(lesson.teaching.body.map(({ heading, body }) => [heading, body]), lesson.content.sections.map(({ heading, body }) => [heading, body]));
