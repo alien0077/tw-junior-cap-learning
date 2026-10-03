@@ -150,6 +150,11 @@ def main() -> int:
     args.report.parent.mkdir(parents=True, exist_ok=True)
     args.report.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({"specFiles": len(files), "errors": len(errors), "eligible": eligible_specs, "pending": len(files) - eligible_specs, "report": str(args.report)}, ensure_ascii=False))
+    if errors:
+        for name, problems in sorted(errors.items()):
+            print(name + ": " + " | ".join(problems))
+    if len(files) != 1027:
+        print(f"spec count mismatch: expected 1027, got {len(files)}")
     return 1 if errors or len(files) != 1027 or len(curricula) < 1027 else 0
 
 
