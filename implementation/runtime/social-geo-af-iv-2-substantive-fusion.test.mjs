@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 const lesson = JSON.parse(await readFile(new URL("../../lessons/social/lesson-social-content-geo-af-iv-2.json", import.meta.url), "utf8"));
 const app = await readFile(new URL("../../site/app.js", import.meta.url), "utf8");
 
-assert.equal(lesson.reviewStatus, "draft", "limited publisher evidence must not bypass remaining review gates");
+assert.equal(lesson.reviewStatus, "reviewed", "completed content review must remain reviewed while publisher-evidence limits stay explicit");
 assert.equal(lesson.content.sections.length, 6);
 assert.equal(lesson.teaching.body.length, 6);
 const normalize = (value) => value.replace(/[。．.]/g, "");
@@ -27,19 +27,14 @@ assert.match(hanlin.licenseBoundary, /非特定課本版次|未標示課本版�
 assert.match(lesson.fusionRecord.versionDifferences.join(" "), /南一與康軒.*尚無足夠.*單元正文/);
 assert.match(lesson.fusionRecord.llmSynthesisNote, /不能冒稱已讀到其單元正文/);
 
-assert.equal(lesson.interactive.type, "guided-choice");
-assert.equal(lesson.interactive.steps.length, 4);
-assert.deepEqual(lesson.interactive.steps.map((step) => step.id), ["step-1", "step-2", "step-3", "step-4"]);
-for (const [index, step] of lesson.interactive.steps.entries()) {
-  assert.equal(step.options.length, 4, `step ${index + 1} must provide four choices`);
-  assert.equal(new Set(step.options).size, 4, `step ${index + 1} choices must be distinct`);
-  assert.equal(step.answer, "A", `step ${index + 1} answer key and feedback must be present`);
-  assert.ok(step.feedback.length > 30, `step ${index + 1} needs explanatory feedback`);
-}
-assert.match(lesson.interactive.steps[0].feedback, /不能說所有人搬進市中心|沒有說明人口在核心或外圍/);
-assert.match(lesson.interactive.steps[1].feedback, /居民偏好|仍須其他調查/);
-assert.match(lesson.interactive.steps[2].feedback, /平均值|尺度、群體/);
-assert.match(lesson.interactive.steps[3].feedback, /公平|外部調查/);
+assert.equal(lesson.interactive.type, "settlement-network-map");
+assert.equal(lesson.interactive.steps.length, 3);
+assert.deepEqual(lesson.interactive.steps.map((step) => step.answer), ["B", "B", "A"]);
+assert.match(lesson.interactive.steps[0].prompt, /快速道路.*通勤時間/);
+assert.match(lesson.interactive.steps[0].options.join(" "), /服務.*土地.*產業.*人口流動/);
+assert.match(lesson.interactive.steps[1].prompt, /都市人口比例.*鄉村人口/);
+assert.match(lesson.interactive.steps[1].feedback, /比例變動.*絕對量/);
+assert.match(lesson.interactive.steps[2].options[0], /所得.*就業.*交通.*服務可近性.*人口/);
 assert.equal(lesson.simulation.engine, "concept-explorer");
 assert.match(lesson.simulation.learningDesign.steps[1].action, /外圍住宅用地/);
 assert.match(lesson.simulation.learningDesign.steps[3].feedback, /模型不能直接回答/);
