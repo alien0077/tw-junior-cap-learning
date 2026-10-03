@@ -863,21 +863,21 @@ function mountLinearParameterGoldLab({ document, root, block }) {
     canvas.append(svg(document,"line",{x1:42,y1:238,x2:326,y2:238,stroke:"currentColor","stroke-width":2}));
     if(state.mode==="a"){
       drawLine(18,30,true);drawLine(state.a,30,false);
-      const c=makeRange(document,{label:"新的斜率 a",min:4,max:18,value:state.a,onInput:v=>{state.a=v;store?.set(state);render();}});
+      const c=makeRange(document,{label:"新的斜率 a",min:4,max:18,value:state.a,onInput:v=>{state.a=v;store?.set(state);}});
       controls.append(c.wrapper);
       table.innerHTML="<caption>固定 b=30</caption><thead><tr><th>x</th><th>18x+30</th><th>"+state.a+"x+30</th></tr></thead><tbody>"+[0,2,4].map(v=>"<tr><td>"+v+"</td><td>"+(18*v+30)+"</td><td>"+(state.a*v+30)+"</td></tr>").join("")+"</tbody>";
       feedback.textContent="x=0 時兩式都等於30；改變的是每單位 x 的固定變化量。";
       status.textContent="a 控制斜率；b=30 的 y 截距保持不變。";
     }else if(state.mode==="b"){
       drawLine(8,30,true);drawLine(8,state.b,false);
-      const c=makeRange(document,{label:"新的截距 b",min:20,max:60,step:5,value:state.b,onInput:v=>{state.b=v;store?.set(state);render();}});
+      const c=makeRange(document,{label:"新的截距 b",min:20,max:60,step:5,value:state.b,onInput:v=>{state.b=v;store?.set(state);}});
       controls.append(c.wrapper);
       table.innerHTML="<caption>固定 a=8</caption><thead><tr><th>x</th><th>8x+30</th><th>8x+"+state.b+"</th></tr></thead><tbody>"+[0,2,4].map(v=>"<tr><td>"+v+"</td><td>"+(8*v+30)+"</td><td>"+(8*v+state.b)+"</td></tr>").join("")+"</tbody>";
       feedback.textContent="兩線斜率相同；每個同一 x 的輸出都相差 "+(state.b-30)+"。";
       status.textContent="b 控制初始值／y截距；a=8 保持固定。";
     }else{
       drawLine(18,30,true);drawLine(24,0,false);
-      const c=makeRange(document,{label:"比較同一個 x",min:0,max:8,value:state.x,onInput:v=>{state.x=v;store?.set(state);render();}});
+      const c=makeRange(document,{label:"比較同一個 x",min:0,max:8,value:state.x,onInput:v=>{state.x=v;store?.set(state);}});
       controls.append(c.wrapper);
       const y1=18*state.x+30,y2=24*state.x,p=point(state.x,y1);
       canvas.append(svg(document,"circle",{cx:p.x,cy:p.y,r:6,fill:"currentColor"}));
