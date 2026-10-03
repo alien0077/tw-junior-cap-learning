@@ -10,7 +10,7 @@ const componentRegistry = JSON.parse(await readFile(new URL("../component-regist
 assert.equal(bundle.units.length, 1027);
 assert.equal(new Set(bundle.units.map((unit) => unit.lessonId)).size, 1027);
 const abIv1Spec = bundle.units.find((unit) => unit.lessonId === "cur-chinese-content-ab-iv-1");
-assert.equal(abIv1Spec.interactiveBlocks[0].component, "ChineseManipulationLab");
+assert.equal(abIv1Spec.interactiveBlocks[0].component, "GuidedChoiceBlock");
 assert.equal(abIv1Lesson.interactive.type, "chinese-manipulation-lab");
 assert.equal(abIv1Lesson.interactive.steps.length, 3);
 assert.match(abIv1Spec.fusedScope.currentEvidenceStatus, /textbook-chapter-content-and-content-review-pending/);
