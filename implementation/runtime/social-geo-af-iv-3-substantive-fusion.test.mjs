@@ -5,7 +5,7 @@ const lesson = JSON.parse(await readFile(new URL("../../lessons/social/lesson-so
 const spec = await readFile(new URL("../unit-specs/social/cur-social-content-geo-af-iv-3.yaml", import.meta.url), "utf8");
 const app = await readFile(new URL("../../site/app.js", import.meta.url), "utf8");
 
-assert.equal(lesson.reviewStatus, "draft", "publisher and content-review gates remain open");
+assert.equal(lesson.reviewStatus, "reviewed", "completed social content review status must remain reviewed");
 assert.equal(lesson.teaching.body.length, 7);
 assert.match(app, /item\.teaching\?\.body\?\.filter/);
 assert.match(app, /const visibleSections = authoredBlocks\.length \? \[\.\.\.extraSections, \.\.\.authoredBlocks\] : contentSections/);
