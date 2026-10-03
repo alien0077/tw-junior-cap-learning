@@ -30,6 +30,14 @@ jobs:
         run: python scripts/audit_visual_first_lessons.py
       - name: Validate implementation-guide contracts
         run: python scripts/validate_implementation_specs.py
+      - name: Require zero implementation spec errors
+        run: python - <<'PY'
+          import json
+          from pathlib import Path
+          report=json.loads(Path('implementation/reports/implementation-validation.json').read_text())
+          assert not report['errors'], f"implementation spec errors: {len(report['errors'])}"
+          print('IMPLEMENTATION_SPEC_ERRORS_ZERO')
+          PY
       - name: Audit lesson independence
         run: python scripts/audit_lesson_independence.py --strict
       - name: Validate implementation coverage
