@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[1]
 SUBJECTS=("chinese","english","math","science","social")
 errors=[]; counts={s:0 for s in SUBJECTS}; covered={s:0 for s in SUBJECTS}
 for subject in SUBJECTS:
-    for path in sorted((ROOT/"lessons"/subject).glob("*.json")):
+    for path in sorted((ROOT/"lessons"/subject).rglob("*.json")):
         try: data=json.loads(path.read_text(encoding="utf-8"))
         except Exception as exc:
             errors.append(f"{path.relative_to(ROOT)}: invalid JSON: {exc}"); continue
