@@ -25,7 +25,11 @@ assert.ok(app.includes("lessonVisualOverview(item)"),"per-lesson visual overview
 assert.ok(app.includes("renderLessonSection(item, section, index)"),"every authored prose section must mount a visual companion");
 assert.ok(app.includes("sectionVisual(item, section, index)"),"section visual renderer missing");
 assert.ok(css.includes(".lesson-section-pair"),"prose/visual paired layout missing");
-assert.ok(css.includes(".section-visual.semantic-visual"),"semantic section visual CSS missing");\nassert.ok(app.includes('return "cell"')&&app.includes('return "blood"'),"science cell/blood semantic diagrams missing");\nassert.ok(app.includes('return "timeline"')&&app.includes('return "map"'),"social timeline/map semantic diagrams missing");\nassert.ok(app.includes('return "geometry"')&&app.includes('return "graph"'),"math semantic diagrams missing");\nassert.ok(app.includes('data-visual-kind="'),"semantic visual kind marker missing");
+assert.ok(css.includes(".section-visual.semantic-visual"),"semantic section visual CSS missing");
+assert.ok(app.includes('return "cell"')&&app.includes('return "blood"'),"science cell/blood semantic diagrams missing");
+assert.ok(app.includes('return "timeline"')&&app.includes('return "map"'),"social timeline/map semantic diagrams missing");
+assert.ok(app.includes('return "geometry"')&&app.includes('return "graph"'),"math semantic diagrams missing");
+assert.ok(app.includes('data-visual-kind="'),"semantic visual kind marker missing");
 assert.ok(css.includes(".lvo-flow"),"visual flow CSS missing");
 assert.ok(css.includes("overflow-x:hidden"),"mobile horizontal overflow guard missing");
 console.log("PASS all-subject visual-first contract",counts);
