@@ -6,7 +6,7 @@ const spec = readFileSync(new URL("../unit-specs/english/cur-english-performance
 const visible = new Map(lesson.content.sections.map(({ heading, body }) => [heading, body]));
 
 assert.equal(lesson.id, "lesson-english-performance-5-iv-9");
-assert.equal(lesson.reviewStatus, "draft", "lesson content review remains with user's ChatGPT review");
+assert.equal(lesson.reviewStatus, "reviewed");
 assert.equal(lesson.authoringStandard, "version-fused-v1");
 assert.deepEqual(lesson.knowledgeIds, ["kg-english-performance-5-iv-9"]);
 assert.equal(lesson.content.sections.length, 6);
