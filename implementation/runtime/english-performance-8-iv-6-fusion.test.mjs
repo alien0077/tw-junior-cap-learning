@@ -4,7 +4,7 @@ import { readFileSync } from "node:fs";
 const readJson = path => JSON.parse(readFileSync(new URL(path, import.meta.url), "utf8"));
 const lesson = readJson("../../lessons/english/lesson-english-performance-8-iv-6.json");
 assert.equal(lesson.id, "lesson-english-performance-8-iv-6");
-assert.equal(lesson.reviewStatus, "draft");
+assert.equal(lesson.reviewStatus, "reviewed");
 assert.equal(lesson.authoringStandard, "version-fused-v1");
 assert.deepEqual(lesson.knowledgeIds, ["kg-english-performance-8-iv-6"]);
 assert.equal(lesson.teaching.body.length, 6);
