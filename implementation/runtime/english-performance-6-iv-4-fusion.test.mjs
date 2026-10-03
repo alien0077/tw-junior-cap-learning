@@ -9,7 +9,7 @@ const specText = fs.readFileSync(path.join(root, 'implementation/unit-specs/engl
 
 assert.equal(lesson.id, 'lesson-english-performance-6-iv-4');
 assert.deepEqual(lesson.knowledgeIds, ['kg-english-performance-6-iv-4']);
-assert.equal(lesson.reviewStatus, 'draft');
+assert.equal(lesson.reviewStatus, "reviewed");
 assert.equal(lesson.content.sections.length, 6);
 assert.equal(lesson.teaching.body.length, 6);
 assert.deepEqual(lesson.content.sections.map(x => x.heading), lesson.teaching.body.map(x => x.heading));
