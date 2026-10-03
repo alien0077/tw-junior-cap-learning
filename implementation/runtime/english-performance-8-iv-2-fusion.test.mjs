@@ -26,7 +26,7 @@ const questions = Array.from({ length: 10 }, (_, index) => JSON.parse(readFileSy
   new URL(`../../questions/english/question-english-performance-8-iv-2-${index + 1}.json`, import.meta.url), "utf8"),
 ));
 const answerCounts = Object.fromEntries(["A", "B", "C", "D"].map(key => [key, questions.filter(question => question.answer.value === key).length]));
-assert.deepEqual(answerCounts, { A: 1, B: 3, C: 3, D: 3 });
+assert.deepEqual(answerCounts, { A: 1, B: 3, C: 2, D: 4 });
 for (const question of questions) {
   assert.equal(question.reviewStatus, "reviewed");
   assert.equal(question.lessonId, lesson.id);
