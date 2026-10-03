@@ -10,11 +10,11 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = {
-    "chinese": {"TextEvidenceBlock"},
-    "english": {"LanguageTimelineBlock", "TextEvidenceBlock", "DataExplorerBlock", "SignageReadingLab", "GenreReadingBlock"},
-    "math": {"FunctionRepresentationBlock", "GeometryManipulationBlock", "DataExplorerBlock", "AlgebraBalanceBlock", "NumberLineBlock", "StepwiseReasoningBlock"},
+    "chinese": {"TextEvidenceBlock", "ReadingStrategyLab", "StoryElementsStudio", "StoryPlotLab", "ShortPlayLab", "TextPredictionCalibrationLab"},
+    "english": {"LanguageTimelineBlock", "TextEvidenceBlock", "DataExplorerBlock", "SignageReadingLab", "GenreReadingBlock", "DailyExpressionLab", "DialogueComprehensionLab"},
+    "math": {"FunctionRepresentationBlock", "GeometryManipulationBlock", "DataExplorerBlock", "AlgebraBalanceBlock", "AlgebraEquationMeaningBlock", "EquivalentExpressionCheckBlock", "NumberLineBlock", "StepwiseReasoningBlock"},
     "science": {"PhenomenonSimulationBlock", "ParticleModelBlock", "SystemRelationshipBlock", "EarthSystemBlock", "EvidenceLabBlock"},
-    "social": {"TimelineCausalBlock", "MapDataBlock", "ScenarioDecisionBlock"},
+    "social": {"TimelineCausalBlock", "MapDataBlock", "ScenarioDecisionBlock", "EvidenceLabBlock"},
 }
 
 
