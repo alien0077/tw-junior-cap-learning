@@ -24,6 +24,7 @@ assert.deepEqual(Object.fromEntries(Object.entries(subjectCounts).map(([key, val
 const dom = new JSDOM("<main id='mount'></main>");
 const mount = dom.window.document.querySelector("#mount");
 for (const spec of bundle.units) {
+  mount.replaceChildren();
   const article = renderStudentLesson({ document: dom.window.document, mount, spec });
   assert.equal(article.dataset.lessonId, spec.lessonId);
   assert.equal(article.querySelectorAll("section[data-section]").length, REQUIRED_STUDENT_SECTIONS.length + 1, spec.lessonId);
