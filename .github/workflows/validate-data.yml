@@ -35,7 +35,7 @@ jobs:
           import json
           from pathlib import Path
           report=json.loads(Path('implementation/reports/implementation-validation.json').read_text())
-          assert not report['errors'], f"implementation spec errors: {len(report['errors'])}"
+          assert not report['errors'], 'implementation spec errors: %d' % len(report['errors'])
           print('IMPLEMENTATION_SPEC_ERRORS_ZERO')
           PY
       - name: Audit lesson independence
