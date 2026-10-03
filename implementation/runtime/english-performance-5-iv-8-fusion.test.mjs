@@ -5,7 +5,7 @@ const lesson = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-eng
 const spec = readFileSync(new URL("../unit-specs/english/cur-english-performance-5-iv-8.yaml", import.meta.url), "utf8");
 
 assert.equal(lesson.id, "lesson-english-performance-5-iv-8");
-assert.equal(lesson.reviewStatus, "draft", "lesson content review is reserved for user's ChatGPT review");
+assert.equal(lesson.reviewStatus, "reviewed");
 assert.equal(lesson.authoringStandard, "version-fused-v1");
 assert.deepEqual(lesson.knowledgeIds, ["kg-english-performance-5-iv-8"]);
 assert.equal(lesson.content.sections.length, 6);
