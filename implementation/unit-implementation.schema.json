@@ -2,47 +2,314 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://tw-junior-cap-learning.local/schemas/unit-implementation.schema.json",
   "type": "object",
-  "required": ["unitImplementationSpec"],
+  "required": [
+    "unitImplementationSpec"
+  ],
   "properties": {
     "unitImplementationSpec": {
       "type": "object",
-      "required": ["specVersion", "lessonId", "knowledgeGraphIds", "title", "subject", "fusedScope", "learningGoals", "prerequisites", "coreConcepts", "misconceptions", "contentFlow", "visualizations", "interactiveBlocks", "capTransfer", "exitTicket", "expressionExtension", "mobileA11y", "testCases", "definitionOfDone", "status", "sourceRefs"],
+      "required": [
+        "specVersion",
+        "lessonId",
+        "knowledgeGraphIds",
+        "title",
+        "subject",
+        "fusedScope",
+        "learningGoals",
+        "prerequisites",
+        "coreConcepts",
+        "misconceptions",
+        "contentFlow",
+        "visualizations",
+        "interactiveBlocks",
+        "capTransfer",
+        "exitTicket",
+        "expressionExtension",
+        "mobileA11y",
+        "testCases",
+        "definitionOfDone",
+        "status",
+        "sourceRefs"
+      ],
       "properties": {
-        "specVersion": {"const": "1.0"},
-        "lessonId": {"type": "string", "pattern": "^cur-[a-z0-9-]+$"},
-        "knowledgeGraphIds": {"type": "array", "minItems": 1, "items": {"type": "string", "pattern": "^kg-[a-z0-9-]+$"}},
-        "title": {"type": "string", "minLength": 1},
-        "subject": {"enum": ["chinese", "english", "math", "science", "social"]},
+        "specVersion": {
+          "const": "1.0"
+        },
+        "lessonId": {
+          "type": "string",
+          "pattern": "^cur-[a-z0-9-]+$"
+        },
+        "knowledgeGraphIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^kg-[a-z0-9-]+$"
+          }
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "subject": {
+          "enum": [
+            "chinese",
+            "english",
+            "math",
+            "science",
+            "social"
+          ]
+        },
         "socialDiscipline": {},
-        "curriculumLevel": {"enum": ["theme", "topic", "learning-performance", "learning-content"]},
-        "gradeRange": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "curriculumLevel": {
+          "enum": [
+            "theme",
+            "topic",
+            "learning-performance",
+            "learning-content"
+          ]
+        },
+        "gradeRange": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        },
         "fusedScope": {
           "type": "object",
-          "required": ["officialCurriculum", "curriculumIntent", "publisherEvidence", "fusionRule", "currentEvidenceStatus"],
+          "required": [
+            "officialCurriculum",
+            "curriculumIntent",
+            "publisherEvidence",
+            "fusionRule",
+            "currentEvidenceStatus"
+          ],
           "properties": {
-            "officialCurriculum": {"type": "string", "minLength": 1},
-            "curriculumIntent": {"type": "string", "minLength": 1},
-            "publisherEvidence": {"type": "object", "minProperties": 3, "additionalProperties": {"type": "object", "required": ["status", "required"], "properties": {"status": {"enum": ["book-level-only", "pending", "verified"]}, "required": {"type": "boolean"}}, "additionalProperties": false}},
-            "fusionRule": {"type": "string", "minLength": 1},
-            "currentEvidenceStatus": {"type": "string", "minLength": 1}
+            "officialCurriculum": {
+              "type": "string",
+              "minLength": 1
+            },
+            "curriculumIntent": {
+              "type": "string",
+              "minLength": 1
+            },
+            "publisherEvidence": {
+              "type": "object",
+              "minProperties": 3,
+              "additionalProperties": {
+                "type": "object",
+                "required": [
+                  "status",
+                  "required"
+                ],
+                "properties": {
+                  "status": {
+                    "enum": [
+                      "book-level-only",
+                      "pending",
+                      "verified"
+                    ]
+                  },
+                  "required": {
+                    "type": "boolean"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "fusionRule": {
+              "type": "string",
+              "minLength": 1
+            },
+            "currentEvidenceStatus": {
+              "type": "string",
+              "minLength": 1
+            }
           },
           "additionalProperties": true
         },
-        "learningGoals": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "prerequisites": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "coreConcepts": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "misconceptions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "contentFlow": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "visualizations": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "interactiveBlocks": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/interactiveBlock"}},
-        "capTransfer": {"type": "object", "required": ["questionType", "stemConstraint", "requiredResponse", "scoring"]},
-        "exitTicket": {"type": "object", "required": ["prompt", "successCriteria"], "properties": {"prompt": {"type": "string", "minLength": 1}, "successCriteria": {"type": "array", "minItems": 1, "items": {"type": "string"}}}},
-        "expressionExtension": {"type": "object", "required": ["applicable", "task", "constraint"]},
-        "mobileA11y": {"type": "object", "required": ["breakpoints", "touchTargetMinPx", "keyboardAlternative", "screenReader", "reducedMotion"]},
-        "testCases": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "definitionOfDone": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "status": {"type": "object", "required": ["designStatus", "implementationStatus", "qaStatus"], "properties": {"designStatus": {"enum": ["missing", "researched", "specified", "reviewed"]}, "implementationStatus": {"enum": ["missing", "implementing", "implemented", "blocked"]}, "qaStatus": {"enum": ["untested", "failed", "verified"]}}, "additionalProperties": false},
-        "sourceRefs": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["url", "locator", "role"], "properties": {"url": {"type": "string", "format": "uri", "minLength": 1}, "locator": {"type": "string", "minLength": 1}, "role": {"type": "string", "minLength": 1}}}}
+        "learningGoals": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "prerequisites": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "coreConcepts": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "misconceptions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "contentFlow": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "visualizations": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "interactiveBlocks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/interactiveBlock"
+          }
+        },
+        "capTransfer": {
+          "type": "object",
+          "required": [
+            "questionType",
+            "stemConstraint",
+            "requiredResponse",
+            "scoring"
+          ]
+        },
+        "exitTicket": {
+          "type": "object",
+          "required": [
+            "prompt",
+            "successCriteria"
+          ],
+          "properties": {
+            "prompt": {
+              "type": "string",
+              "minLength": 1
+            },
+            "successCriteria": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "expressionExtension": {
+          "type": "object",
+          "required": [
+            "applicable",
+            "task",
+            "constraint"
+          ]
+        },
+        "mobileA11y": {
+          "type": "object",
+          "required": [
+            "breakpoints",
+            "touchTargetMinPx",
+            "keyboardAlternative",
+            "screenReader",
+            "reducedMotion"
+          ]
+        },
+        "testCases": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "definitionOfDone": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "status": {
+          "type": "object",
+          "required": [
+            "designStatus",
+            "implementationStatus",
+            "qaStatus"
+          ],
+          "properties": {
+            "designStatus": {
+              "enum": [
+                "missing",
+                "researched",
+                "specified",
+                "reviewed"
+              ]
+            },
+            "implementationStatus": {
+              "enum": [
+                "missing",
+                "implementing",
+                "implemented",
+                "blocked",
+                "visual-interaction-redesign-required"
+              ]
+            },
+            "qaStatus": {
+              "enum": [
+                "untested",
+                "failed",
+                "verified",
+                "content-reviewed"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "sourceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "url",
+              "locator",
+              "role"
+            ],
+            "properties": {
+              "url": {
+                "type": "string",
+                "format": "uri",
+                "minLength": 1
+              },
+              "locator": {
+                "type": "string",
+                "minLength": 1
+              },
+              "role": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
       },
       "additionalProperties": true
     }
@@ -50,17 +317,138 @@
   "$defs": {
     "interactiveBlock": {
       "type": "object",
-      "required": ["id", "component", "purpose", "initialState", "studentActions", "visualRules", "misconceptionChecks", "feedback"],
+      "required": [
+        "id",
+        "component",
+        "purpose",
+        "initialState",
+        "studentActions",
+        "visualRules",
+        "misconceptionChecks",
+        "feedback"
+      ],
       "properties": {
-        "id": {"type": "string", "minLength": 1},
-        "component": {"type": "string", "minLength": 1},
-        "purpose": {"type": "string", "minLength": 1},
-        "initialState": {"type": "object"},
-        "studentActions": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "visualRules": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
-        "misconceptionChecks": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["id", "trigger", "prompt", "expectedEvidence"]}},
-        "feedback": {"type": "object", "required": ["correct", "incorrect"], "properties": {"correct": {"type": "string", "minLength": 1}, "incorrect": {"type": "string", "minLength": 1}}},
-        "guidedActivity": {"type": "object", "required": ["title", "introduction", "stages", "completionMessage"], "properties": {"title": {"type": "string", "minLength": 1}, "introduction": {"type": "string", "minLength": 1}, "stages": {"type": "array", "minItems": 1, "items": {"type": "object", "required": ["prompt", "acceptedAnswers", "correctFeedback", "hint"], "properties": {"prompt": {"type": "string", "minLength": 1}, "acceptedAnswers": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}}, "correctFeedback": {"type": "string", "minLength": 1}, "hint": {"type": "string", "minLength": 1}}, "additionalProperties": false}}, "completionMessage": {"type": "string", "minLength": 1}}, "additionalProperties": false}
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "component": {
+          "type": "string",
+          "minLength": 1
+        },
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "initialState": {
+          "type": "object"
+        },
+        "studentActions": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "visualRules": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "misconceptionChecks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "trigger",
+              "prompt",
+              "expectedEvidence"
+            ]
+          }
+        },
+        "feedback": {
+          "type": "object",
+          "required": [
+            "correct",
+            "incorrect"
+          ],
+          "properties": {
+            "correct": {
+              "type": "string",
+              "minLength": 1
+            },
+            "incorrect": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "guidedActivity": {
+          "type": "object",
+          "required": [
+            "title",
+            "introduction",
+            "stages",
+            "completionMessage"
+          ],
+          "properties": {
+            "title": {
+              "type": "string",
+              "minLength": 1
+            },
+            "introduction": {
+              "type": "string",
+              "minLength": 1
+            },
+            "stages": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "prompt",
+                  "acceptedAnswers",
+                  "correctFeedback",
+                  "hint"
+                ],
+                "properties": {
+                  "prompt": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "acceptedAnswers": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  },
+                  "correctFeedback": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "hint": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "completionMessage": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        }
       },
       "additionalProperties": true
     }
