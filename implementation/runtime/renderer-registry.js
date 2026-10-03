@@ -2,7 +2,7 @@ import { createRendererContract } from "./interactive-engine.js";
 
 export const COMPONENTS = Object.freeze([
   "FunctionRepresentationBlock", "GeometryManipulationBlock", "DataExplorerBlock",
-  "AlgebraEquationMeaningBlock", "EquivalentExpressionCheckBlock",
+  "AlgebraEquationMeaningBlock", "EquivalentExpressionCheckBlock", "FactorStructureBlock", "FactorTokenBoard", "VisualAreaModelBlock",
   "AlgebraBalanceBlock", "SystemIntersectionBlock", "SystemEliminationBlock", "QuadraticMeaningBlock", "QuadraticSolutionBlock", "ProbabilityExperimentBlock", "NumberLineBlock", "PhenomenonSimulationBlock",
   "ParticleModelBlock", "SystemRelationshipBlock", "EarthSystemBlock",
   "EvidenceLabBlock", "TextEvidenceBlock", "GuidedChoiceBlock", "LanguageTimelineBlock",
@@ -17,6 +17,9 @@ export const RENDERER_METADATA = Object.freeze({
   DataExplorerBlock: { kind: "data-explorer", label: "資料探索" },
   AlgebraEquationMeaningBlock: { kind: "algebra-equation-meaning", label: "等式與方程式語意" },
   EquivalentExpressionCheckBlock: { kind: "equivalent-expression-check", label: "等值表示檢查" },
+  FactorStructureBlock: { kind: "factor-structure", label: "因數結構" },
+  FactorTokenBoard: { kind: "factor-token-board", label: "因數籌碼板" },
+  VisualAreaModelBlock: { kind: "visual-area-model", label: "面積視覺模型" },
   AlgebraBalanceBlock: { kind: "algebra-balance", label: "代數平衡" },
   SystemIntersectionBlock: { kind: "system-intersection", label: "聯立條件共同解" },
   SystemEliminationBlock: { kind: "system-elimination", label: "聯立方程式消去" },
@@ -53,6 +56,9 @@ const COMPONENT_MODELS = Object.freeze({
   DataExplorerBlock: { model: "資料欄位與比較", prompts: ["資料欄位", "比較維度", "支持結論的資料點"] },
   AlgebraEquationMeaningBlock: { model: "情境等量與方程式意義", prompts: ["情境中的等量兩側", "未知量代表的對象", "檢查式子是否符合情境"] },
   EquivalentExpressionCheckBlock: { model: "等值式與輸出核對", prompts: ["待比較的兩個表示式", "共同代入值下的輸出", "等值或不等值的判斷依據"] },
+  FactorStructureBlock: { model: "因數樹與乘積結構", prompts: ["待分解數或式", "因數分支", "乘回原式的驗證"] },
+  FactorTokenBoard: { model: "因數籌碼分組", prompts: ["可分組籌碼", "共同因數", "分組後的乘積驗證"] },
+  VisualAreaModelBlock: { model: "面積分割與代數對應", prompts: ["整體面積", "分割區塊", "區塊和與代數式的對應"] },
   AlgebraBalanceBlock: { model: "等式兩側平衡", prompts: ["左側表徵", "右側表徵", "保持等值所需的操作"] },
   SystemIntersectionBlock: { model: "雙條件共同解", prompts: ["候選有序數對", "第一條限制的代入結果", "第二條限制的代入結果"] },
   SystemEliminationBlock: { model: "對齊係數與整行消去", prompts: ["兩式係數對齊", "整行等價運算", "回代與雙式驗算"] },
