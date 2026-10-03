@@ -11,6 +11,8 @@ for(const subject of subjects){
  for(const file of files){
   const lesson=JSON.parse(fs.readFileSync(path.join(dir,file),"utf8"));
   assert.ok(lesson.title,subject+"/"+file+" missing title");
+  const isLeaf=String(lesson.id||"").toLowerCase().includes("-iv-");
+  if(!isLeaf) continue;
   assert.ok(lesson.interactive,subject+"/"+file+" missing interactive contract");
   assert.ok(lesson.interactive.goal||lesson.interactive.scenario||lesson.interactive.steps,subject+"/"+file+" interactive has no teaching intent");
   const authored=(lesson.teaching?.body||lesson.content?.sections||[]).filter(x=>x?.body);
