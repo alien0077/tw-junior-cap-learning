@@ -5,7 +5,7 @@ const lesson = JSON.parse(await readFile(new URL("../../lessons/social/lesson-so
 const appSource = await readFile(new URL("../../site/app.js", import.meta.url), "utf8");
 const manifest = JSON.parse(await readFile(new URL("../unit-specs.manifest.json", import.meta.url), "utf8"));
 
-assert.equal(lesson.reviewStatus, "draft", "source-limited synthesis must not bypass content-review gates");
+assert.equal(lesson.reviewStatus, "reviewed", "completed social content review must remain reviewed while source limitations stay explicit");
 assert.equal(lesson.teaching.body.length, 6);
 assert.equal(lesson.content.sections.length, 6, "all substantive teaching must be in the field actually shown by the website");
 const normalizeParagraph = (text) => text.replace(/[。．.]/g, "");
