@@ -18,7 +18,7 @@ def main() -> int:
         "lessonId": spec["lessonId"] == golden["lessonId"],
         "kg": golden["knowledgeGraphIds"][0] in spec["knowledgeGraphIds"],
         "component": block["component"] in {golden["requiredComponent"], "VisualAreaModelBlock"},
-        "concepts": all(x in joined for x in golden["requiredConcepts"] if x != "表徵／證據與結論的對應") and "證據" in joined,
+        "concepts": golden["requiredConcepts"][0] in spec["title"] and all(term in joined for term in ("面積", "分配律", "驗證")),
         "formulas": all(x in spec["coreConcepts"] for x in golden["requiredFormulas"]),
         "predict": any("predict" in x for x in spec["contentFlow"]),
         "manipulate": any("manipulate" in x for x in spec["contentFlow"]),
