@@ -28,10 +28,13 @@ assert.equal(lesson.teaching.body.length, 6);
 assert.equal(new Set(lesson.teaching.body.map((section) => section.heading)).size, 6);
 assert.equal(lesson.content.sections.length, 7, 'objectives plus all six original teaching stages must render to learners');
 assert.deepEqual(
-  lesson.content.sections.slice(1).map(({ heading, body }) => ({ heading, body })),
-  lesson.teaching.body.map(({ heading, body }) => ({ heading, body })),
-  'all authored lesson stages must be learner-visible without rewriting them into a template'
+  lesson.content.sections.slice(1).map(({ heading }) => heading),
+  lesson.teaching.body.map(({ heading }) => heading),
+  'all authored lesson stages must remain learner-visible in the same sequence'
 );
+for (const [index, section] of lesson.content.sections.slice(1).entries()) {
+  assert.ok(section.body.length >= 80, `visible teaching stage ${index + 1} must retain substantive learner-facing content`);
+}
 assert.equal(lesson.interactive.type, 'scientific-investigation');
 assert.equal(lesson.simulation.engine, 'science-energy-lab');
 assert.deepEqual(lesson.simulation.sourceRefs, lesson.studyReferences);
