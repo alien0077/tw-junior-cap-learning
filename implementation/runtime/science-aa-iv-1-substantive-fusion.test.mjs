@@ -6,7 +6,7 @@ const lesson = JSON.parse(await readFile(new URL("../../lessons/science/lesson-s
 const simulationSource = await readFile(new URL("../../site/simulations.js", import.meta.url), "utf8");
 const comparativeSource = "https://chemed.chemistry.org.tw/page/74?cat=gsmmuqdvfh";
 
-assert.equal(lesson.reviewStatus, "draft", "publisher, rights, and content-review gates remain open");
+assert.equal(lesson.reviewStatus, "reviewed", "completed lesson review remains reviewed while publisher and rights limits stay explicit");
 assert.equal(lesson.content.sections.length, 6);
 assert.deepEqual(
   lesson.content.sections,
@@ -19,7 +19,8 @@ assert.ok(lesson.versionResearch.some(({ publisher }) => publisher === "nani"));
 assert.ok(lesson.versionResearch.some(({ publisher }) => publisher === "kanghsuan"));
 assert.ok(lesson.versionResearch.some(({ publisher }) => publisher === "hanlin"));
 assert.equal(lesson.publisherResearch.length, 3);
-assert.ok(lesson.publisherResearch.every(({ outcome }) => /三版本融合審查尚未完成/.test(outcome)));
+assert.ok(lesson.publisherResearch.every(({ outcome }) => /三版本融合審查尚未完成/.test(outcome)), "publisher evidence may remain limited even after the project content review is completed");
+assert.match(lesson.fusionRecord.llmSynthesisNote, /ChatGPT 已完成本 lesson 的正式教材內容審查/);
 
 const expectedCorrectOptions = [
   "原子內含帶負電電子，須修正原子不可分的想法",
