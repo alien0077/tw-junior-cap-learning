@@ -15,7 +15,7 @@ const warningFunctionSection = item.content.sections.find(({ heading }) => headi
 assert.match(warningFunctionSection.body, /提醒注意、要求一個動作、禁止進入，是三種不同的語用力道/);
 assert.match(warningFunctionSection.body, /不要因為標示帶有警示語氣，就自行推成全面封鎖/);
 assert.equal(item.versionResearch.find(({ publisher }) => publisher === "kanghsuan").reviewedAt, "2026-09-28");
-assert.match(item.fusionRecord.llmSynthesisNote, /不宣稱三版本實質融合完成/);
+assert.match(item.fusionRecord.llmSynthesisNote, /不足以宣稱.*完成受限電子課本比較/);
 assert.equal(item.reviewStatus, "reviewed-content-pending-browser", "publisher-text and independent content gates remain pending");
 const signageLesson = JSON.parse(readFileSync(new URL("../../lessons/english/lesson-english-performance-3-iv-3.json", import.meta.url), "utf8"));
 const source = readFileSync(new URL("../../site/sign-reading-lab.js", import.meta.url), "utf8");
