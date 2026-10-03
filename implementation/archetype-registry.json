@@ -4,38 +4,121 @@
   "archetypes": {
     "representation": {
       "label": "表徵轉換",
-      "components": ["FunctionRepresentationBlock", "AlgebraBalanceBlock", "AlgebraEquationMeaningBlock", "EquivalentExpressionCheckBlock", "NumberLineBlock", "LanguageTimelineBlock", "TimelineCausalBlock"],
-      "subjects": ["english", "math", "social"]
+      "components": [
+        "FunctionRepresentationBlock",
+        "AlgebraBalanceBlock",
+        "AlgebraEquationMeaningBlock",
+        "EquivalentExpressionCheckBlock",
+        "NumberLineBlock",
+        "LanguageTimelineBlock",
+        "TimelineCausalBlock"
+      ],
+      "subjects": [
+        "english",
+        "math",
+        "social"
+      ]
     },
     "spatial-model": {
       "label": "空間／幾何模型",
-      "components": ["GeometryManipulationBlock", "EarthSystemBlock", "MapDataBlock"],
-      "subjects": ["math", "science", "social"]
+      "components": [
+        "GeometryManipulationBlock",
+        "EarthSystemBlock",
+        "MapDataBlock"
+      ],
+      "subjects": [
+        "math",
+        "science",
+        "social"
+      ]
     },
     "data-evidence": {
       "label": "資料／證據判讀",
-      "components": ["DataExplorerBlock", "EvidenceLabBlock", "TextEvidenceBlock", "SignageReadingLab", "GenreReadingBlock"],
-      "subjects": ["chinese", "english", "math", "science"]
+      "components": [
+        "DataExplorerBlock",
+        "EvidenceLabBlock",
+        "TextEvidenceBlock",
+        "SignageReadingLab",
+        "GenreReadingBlock"
+      ],
+      "subjects": [
+        "chinese",
+        "english",
+        "math",
+        "science",
+        "social"
+      ]
     },
     "guided-evidence-choice": {
       "label": "引導選擇與證據回饋",
-      "components": ["GuidedChoiceBlock"],
-      "subjects": ["chinese", "social", "science"]
+      "components": [
+        "GuidedChoiceBlock"
+      ],
+      "subjects": [
+        "chinese",
+        "english",
+        "math",
+        "science",
+        "social"
+      ]
     },
     "language-communication": {
       "label": "語文溝通與敘事理解",
-      "components": ["DailyExpressionLab", "DialogueComprehensionLab", "ReadingStrategyLab", "ShortPlayLab", "StoryElementsStudio", "StoryPlotLab", "TextPredictionCalibrationLab"],
-      "subjects": ["english"]
+      "components": [
+        "DailyExpressionLab",
+        "DialogueComprehensionLab",
+        "ReadingStrategyLab",
+        "ShortPlayLab",
+        "StoryElementsStudio",
+        "StoryPlotLab",
+        "TextPredictionCalibrationLab"
+      ],
+      "subjects": [
+        "chinese",
+        "english"
+      ]
     },
     "system-model": {
       "label": "現象／系統模型",
-      "components": ["PhenomenonSimulationBlock", "ParticleModelBlock", "SystemRelationshipBlock"],
-      "subjects": ["science"]
+      "components": [
+        "PhenomenonSimulationBlock",
+        "ParticleModelBlock",
+        "SystemRelationshipBlock"
+      ],
+      "subjects": [
+        "science"
+      ]
     },
     "decision-reasoning": {
       "label": "情境決策／步驟推理",
-      "components": ["ScenarioDecisionBlock", "StepwiseReasoningBlock"],
-      "subjects": ["math", "social"]
+      "components": [
+        "ScenarioDecisionBlock",
+        "StepwiseReasoningBlock"
+      ],
+      "subjects": [
+        "math",
+        "social"
+      ]
+    },
+    "specialized-learning-lab": {
+      "label": "專題／直接操作學習實驗",
+      "components": [
+        "SystemIntersectionBlock",
+        "SystemEliminationBlock",
+        "VisualAreaModelBlock",
+        "FactorStructureBlock",
+        "QuadraticMeaningBlock",
+        "QuadraticSolutionBlock",
+        "ProbabilityExperimentBlock",
+        "FactorTokenBoard"
+      ],
+      "subjects": [
+        "chinese",
+        "english",
+        "math",
+        "science",
+        "social"
+      ]
     }
   }
 }
