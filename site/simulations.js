@@ -557,7 +557,7 @@
         const c2 = near ? 225 : far ? 154 : 188;
         const selected = (key,label) => `<button type="button" data-rutherford-action="predict" data-value="${key}" aria-pressed="${prediction===key}">${label}</button>`;
         const evidenceButton = (key,label) => `<button type="button" data-rutherford-action="evidence" data-value="${key}" aria-pressed="${evidenceChoice===key}">${label}</button>`;
-        return `<section class="sim-rutherford-lab" aria-label="拉塞福 α 粒子散射視覺實驗室">
+        return `<section class="sim-rutherford sim-rutherford-lab" aria-label="拉塞福 α 粒子散射視覺實驗室">
           <header class="rutherford-hero">
             <div><span class="sim-kicker">Aa-Ⅳ-1｜原子模型演變</span><h5>用 α 粒子散射，把看不見的原子核逼出來</h5><p>先預測，再只改一項變因；把「直接觀察」和「模型推論」分開。</p></div>
             <div class="rutherford-goals"><b>學習目標</b><span>能描述三類散射現象</span><span>能由證據推論核式結構</span><span>不把模型圖當成原子照片</span></div>
