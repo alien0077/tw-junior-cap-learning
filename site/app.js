@@ -134,7 +134,21 @@ async function start() { try { const index = await fetch("./data-index.json", { 
         if (targetMapping?.id) state.filters.mappingId = targetMapping.id;
       }
     }
-    renderPicker(); $("statNodes").textContent = index.project.dataCounts.knowledgeNodes.toLocaleString(); $("statLessons").textContent = index.project.activeLessons.toLocaleString(); $("statQuestions").textContent = index.project.activeQuestions.toLocaleString(); $("statMappings").textContent = index.validation.mappingSetCount.toLocaleString(); $("status").textContent = `資料載入完成 · ${index.generatedAt} · ${index.sourceRevision}`; renderCatalog(); renderAllContent();
+    renderPicker(); $("statNodes").textContent = index.project.dataCounts.knowledgeNodes.toLocaleString(); $("statLessons").textContent = index.project.activeLessons.toLocaleString(); $("statQuestions").textContent = index.project.activeQuestions.toLocaleString(); $("statMappings").textContent = index.validation.mappingSetCount.toLocaleString(); $("status").textContent = `資料載入完成 · ${index.generatedAt} · ${index.sourceRevision}`;
+    if (requestedUnit) {
+      const directLesson = state.lessons.find(lesson => lesson.id === requestedUnit);
+      if (directLesson) {
+        $("subject").value = directLesson.subject;
+        $("catalogTitle").textContent = `${subjectNames[directLesson.subject]} · 單元直接檢視`;
+        $("catalogCount").textContent = "1 個單元";
+        $("catalogGrid").innerHTML = card({ ...directLesson, kind: "lesson" }, `<p class="matched-label">單元直接連結 · ${esc(directLesson.title)}</p>`, `direct-${directLesson.id}`);
+      } else {
+        renderCatalog();
+      }
+    } else {
+      renderCatalog();
+    }
+    renderAllContent();
     if (requestedUnit) requestAnimationFrame(() => {
       const target = document.querySelector(`#catalogGrid [data-item-id="${CSS.escape(requestedUnit)}"]`);
       if (target) {
