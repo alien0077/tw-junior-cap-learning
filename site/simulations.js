@@ -754,6 +754,23 @@
       if (direction === "next" && state.reasoningChoice === steps[index]?.answer) update(root, { reasoningStep: Math.min(steps.length - 1, index + 1), reasoningChoice: "" });
       return;
     }
+    const rutherfordAction=event.target.closest("[data-rutherford-action]");
+    if(rutherfordAction && lesson.simulation.model==="rutherford-scattering"){
+      const action=rutherfordAction.dataset.rutherfordAction,value=rutherfordAction.dataset.value,state=read(lesson.simulation);
+      if(action==="predict"){update(root,{rutherfordPrediction:value,rutherfordPredictionFeedback:""});return;}
+      if(action==="submit-prediction"){
+        update(root,state.rutherfordPrediction
+          ? {rutherfordPredictionSubmitted:true,rutherfordPredictionFeedback:state.rutherfordPrediction==="large"?"預測已記錄。現在拖動距離 d，觀察靠近原子核時路徑如何改變。":"預測已記錄。現在用距離 d 檢查你的預測，而不是直接改答案。"}
+          : {rutherfordPredictionFeedback:"請先選擇一項預測。"});
+        return;
+      }
+      if(action==="evidence"){
+        update(root,value==="nucleus"
+          ? {rutherfordEvidence:value,rutherfordEvidenceFeedback:"正確：多數直行表示原子大部分是空間；極少數強烈偏折表示正電與大部分質量集中在很小的原子核。"}
+          : {rutherfordEvidence:value,rutherfordEvidenceFeedback:"再看極少數的大角度偏折：若正電均勻分散，就很難產生這種強烈排斥。"});
+        return;
+      }
+    }
     const earthSphereAction=event.target.closest("[data-earth-sphere-action]");
     if(earthSphereAction && lesson.simulation.model==="fa-iv-1-earth-spheres"){const action=earthSphereAction.dataset.earthSphereAction,value=earthSphereAction.dataset.value,state=read(lesson.simulation);if(action==="predict"){update(root,{earthPrediction:value,earthFeedback:""});return;}if(action==="submit-prediction"){update(root,state.earthPrediction?{predictionSubmitted:true,earthFeedback:state.earthPrediction==="multi"?"預測已記錄。逐一切換圈層，找出降雨侵蝕跨越哪些部分。":"預測已記錄。逐一切換三圈層，追蹤雨水與岩石的交互作用。"}:{earthFeedback:"請先選擇預測。"});return;}if(action==="view"){update(root,{sphereView:value});return;}if(action==="transfer"){update(root,value==="cross"?{transferChoice:value,transferFeedback:"正確：火山物質由岩石圈進入大氣圈，是跨圈層交互作用。"}:{transferChoice:value,transferFeedback:"看箭頭：圈層之間會交換物質與能量。"});return;}}
     const machineAction=event.target.closest("[data-machine-action]");
