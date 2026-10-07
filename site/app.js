@@ -125,9 +125,12 @@ async function start() { try { const index = await fetch("./data-index.json", { 
       if (targetLesson) {
         state.filters.subject = targetLesson.subject;
         $("subject").value = targetLesson.subject;
-        const targetMapping = state.mappings.find(mapping => mapping.subject === targetLesson.subject && (mapping.volumes || []).some(volume => (volume.entries || []).some(entry => preciseIds(entry).some(id => targetLesson.knowledgeIds?.includes(id)))));
-        const targetVolume = targetMapping?.volumes?.find(volume => (volume.entries || []).some(entry => preciseIds(entry).some(id => targetLesson.knowledgeIds?.includes(id))));
-        if (targetVolume?.grade) state.filters.grade = targetVolume.grade;
+        const exactMappings = state.mappings.filter(mapping => mapping.subject === targetLesson.subject && (mapping.volumes || []).some(volume => (volume.entries || []).some(entry => preciseIds(entry).some(id => targetLesson.knowledgeIds?.includes(id)))));
+        const targetMapping = exactMappings[0] || state.mappings.find(mapping => mapping.subject === targetLesson.subject && (mapping.volumes || []).some(volume => (targetLesson.gradeRange || []).includes(String(volume.grade))));
+        const targetVolume = targetMapping?.volumes?.find(volume => (volume.entries || []).some(entry => preciseIds(entry).some(id => targetLesson.knowledgeIds?.includes(id))))
+          || targetMapping?.volumes?.find(volume => (targetLesson.gradeRange || []).includes(String(volume.grade)))
+          || targetMapping?.volumes?.[0];
+        if (targetVolume?.grade) state.filters.grade = String(targetVolume.grade);
         if (targetMapping?.id) state.filters.mappingId = targetMapping.id;
       }
     }
