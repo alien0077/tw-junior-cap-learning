@@ -537,18 +537,98 @@
     }
     if (engine === "science-particle-lab") {
       if (lesson.simulation.model === "rutherford-scattering") {
-        const proximity = clamp(state.impactProximity, 1, 5);
-        const bend = proximity * 7;
-        const modelNote = proximity >= 4
-          ? "路徑貼近小而集中的正電區時，示意圖顯示較大的偏折；這是定性路徑，不是實驗比例。"
-          : proximity <= 2
-            ? "路徑離正電區較遠時，示意圖接近直行；真實結果仍受能量與其他條件影響。"
-            : "路徑接近程度居中，示意偏折也介於兩端；圖形不代表真實粒子比例。";
-        const nearY = 118 - bend;
-        const farY = 62 - bend * 0.12;
-        const lowerY = 142 + bend;
-        const svgLabel = `盧瑟福散射概念圖；粒子最近距離等級${proximity}，越接近正電核，示意偏折越大；路徑不按比例`;
-        return `${designed}<div class="sim-stage sim-rutherford"><svg viewBox="0 0 360 250" role="img" aria-label="${esc(svgLabel)}"><line x1="12" y1="210" x2="348" y2="210" class="sim-axis"/><circle cx="190" cy="130" r="12" class="sim-marker"/><text x="190" y="160" text-anchor="middle">集中正電區</text><path d="M20 62 Q190 ${farY} 340 62" class="sim-line sim-line-secondary" fill="none"/><path d="M20 118 Q190 ${nearY} 340 118" class="sim-line" fill="none"/><path d="M20 142 Q190 ${lowerY} 340 142" class="sim-line sim-line-secondary" fill="none"/><text x="22" y="36">入射粒子</text><text x="270" y="36">散射後方向</text></svg><p class="sim-caption">${esc(modelNote)}</p><p>觀察基準：多數粒子大致直行，少數偏轉，極少數大角度偏轉；此處只比較路徑假設，不合成或冒充原始實驗數據。</p></div>${slider("impactProximity", "粒子最近接近正電核程度（1＝遠，5＝近）", proximity, 1, 5)}<p class="sim-status" aria-live="polite">${esc(modelNote)}</p>`;
+        const proximity = clamp(Number(state.impactProximity || 3), 1, 5);
+        const predicted = state.rutherfordPredictionSubmitted === true;
+        const prediction = state.rutherfordPrediction || "";
+        const evidenceChoice = state.rutherfordEvidence || "";
+        const near = proximity >= 4;
+        const far = proximity <= 2;
+        const pathLabel = near ? "大角度偏折較明顯" : far ? "幾乎直行" : "小角度偏折";
+        const feedback = !predicted
+          ? "先選一個預測，再開始改變最近通過距離。"
+          : near
+            ? "靠近集中正電區時，排斥作用較強，示意路徑彎曲更明顯。"
+            : far
+              ? "離集中正電區較遠時，示意路徑接近直行。"
+              : "中等距離時，示意路徑出現較小偏折。";
+        const y1 = 88;
+        const c1 = near ? 30 : far ? 76 : 58;
+        const y2 = 145;
+        const c2 = near ? 225 : far ? 154 : 188;
+        const selected = (key,label) => `<button type="button" data-rutherford-action="predict" data-value="${key}" aria-pressed="${prediction===key}">${label}</button>`;
+        const evidenceButton = (key,label) => `<button type="button" data-rutherford-action="evidence" data-value="${key}" aria-pressed="${evidenceChoice===key}">${label}</button>`;
+        return `<section class="sim-rutherford-lab" aria-label="拉塞福 α 粒子散射視覺實驗室">
+          <header class="rutherford-hero">
+            <div><span class="sim-kicker">Aa-Ⅳ-1｜原子模型演變</span><h5>用 α 粒子散射，把看不見的原子核逼出來</h5><p>先預測，再只改一項變因；把「直接觀察」和「模型推論」分開。</p></div>
+            <div class="rutherford-goals"><b>學習目標</b><span>能描述三類散射現象</span><span>能由證據推論核式結構</span><span>不把模型圖當成原子照片</span></div>
+          </header>
+          <div class="rutherford-grid">
+            <aside class="rutherford-panel prediction-panel">
+              <span class="step-badge">1</span><h6>先預測</h6><p>α 粒子靠近集中正電區時，最可能怎麼走？</p>
+              <div class="rutherford-choice-list">
+                ${selected("straight","大多數直行")}
+                ${selected("small","少數小角度偏折")}
+                ${selected("large","越靠近越可能大角度偏折")}
+              </div>
+              <button type="button" class="sim-button" data-rutherford-action="submit-prediction">${predicted ? "已鎖定預測" : "鎖定預測，開始操作"}</button>
+              <p class="sim-status" role="status">${esc(state.rutherfordPredictionFeedback || "先選一項；不先顯示答案。")}</p>
+            </aside>
+            <div class="rutherford-panel control-panel">
+              <span class="step-badge">2</span><h6>操作一項變因</h6>
+              <p>只改變 α 粒子與集中正電區的<strong>最近通過距離</strong>；其他條件固定。</p>
+              <label class="rutherford-distance"><span>最近通過距離 d（定性等級） <output data-sim-output="impactProximity">${proximity}</output></span><input data-sim-control="impactProximity" type="range" min="1" max="5" step="1" value="${proximity}" ${predicted?"":"disabled"}><div><span>遠</span><span>中</span><span>近</span></div></label>
+              <p class="control-rule">一次只改一個量，才能知道路徑差異由誰造成。</p>
+            </div>
+            <figure class="rutherford-stage rutherford-panel">
+              <figcaption><span class="step-badge">3</span><b>觀察：α 粒子散射路徑（示意）</b></figcaption>
+              <svg viewBox="0 0 720 360" role="img" aria-label="拉塞福散射概念圖，最近通過距離等級 ${proximity}，目前為 ${pathLabel}">
+                <defs>
+                  <radialGradient id="nucleusGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="currentColor" stop-opacity=".95"/><stop offset=".45" stop-color="currentColor" stop-opacity=".5"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></radialGradient>
+                  <marker id="alphaArrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="currentColor"/></marker>
+                </defs>
+                <circle cx="430" cy="180" r="96" class="nucleus-ring"/><circle cx="430" cy="180" r="70" class="nucleus-ring"/><circle cx="430" cy="180" r="45" class="nucleus-ring"/>
+                <circle cx="430" cy="180" r="72" fill="url(#nucleusGlow)" opacity=".18"/>
+                <circle cx="430" cy="180" r="25" class="nucleus-core"/><text x="430" y="186" text-anchor="middle" class="nucleus-plus">＋</text>
+                <text x="430" y="224" text-anchor="middle" class="nucleus-label">小而集中的正電區</text>
+                <g class="alpha-source"><circle cx="70" cy="88" r="8"/><circle cx="70" cy="145" r="8"/><circle cx="70" cy="202" r="8"/><circle cx="70" cy="259" r="8"/><text x="52" y="48">α 粒子（帶正電）</text></g>
+                <path d="M82 88 C240 88 470 88 670 88" class="alpha-path straight" marker-end="url(#alphaArrow)"/>
+                <path d="M82 145 C245 145 330 145 410 ${c1} C500 ${Math.max(20,c1-20)} 590 ${Math.max(18,c1-34)} 670 ${Math.max(16,c1-40)}" class="alpha-path bend" marker-end="url(#alphaArrow)"/>
+                <path d="M82 202 C230 202 350 202 397 188 C445 173 493 ${c2} 610 ${Math.min(330,c2+60)}" class="alpha-path bend-secondary" marker-end="url(#alphaArrow)"/>
+                <path d="M82 259 C270 259 355 254 397 232 C436 211 380 305 250 330" class="alpha-path rare" marker-end="url(#alphaArrow)"/>
+                <g class="path-tags"><text x="560" y="70">多數：近直行</text><text x="545" y="130">少數：偏折</text><text x="485" y="335">極少數：大角度偏折／反彈</text></g>
+              </svg>
+              <div class="rutherford-live">${esc(feedback)}</div>
+              <p class="sim-caption">注意：這是教學示意圖，不是實驗比例。原子與原子核的尺度差異極大，極少數大角度事件在圖中為了教學被放大。</p>
+            </figure>
+            <aside class="rutherford-panel evidence-panel">
+              <span class="step-badge">4</span><h6>對照實驗證據</h6>
+              <div class="evidence-cards"><article><b>多數直行</b><p>原子大部分空間相對空曠。</p></article><article><b>少數偏折</b><p>粒子受到集中的正電排斥。</p></article><article><b>極少數強烈偏折</b><p>正電與大部分質量集中在很小區域。</p></article></div>
+            </aside>
+            <div class="rutherford-panel inference-panel">
+              <span class="step-badge">5</span><h6>你能推出什麼？</h6>
+              <p>哪一個結論最符合上面的觀察？</p>
+              <div class="sim-actions">
+                ${evidenceButton("spread","正電均勻分散在整個原子")}
+                ${evidenceButton("nucleus","原子大部分是空間；正電與大部分質量集中在很小的原子核")}
+              </div>
+              <p class="sim-status" role="status">${esc(state.rutherfordEvidenceFeedback || "用「多數直行＋極少數強偏折」一起判斷。")}</p>
+            </div>
+          </div>
+          <section class="atomic-model-timeline" aria-label="原子模型演變時間軸">
+            <div class="timeline-heading"><span class="step-badge">6</span><div><h6>原子模型的演變</h6><p>模型是基於當時證據提出的解釋，不是實際拍攝的照片。</p></div></div>
+            <div class="model-cards">
+              <article><div class="model-icon dalton"><i></i></div><b>道耳頓</b><small>實心球模型</small><p>原子是物質的基本單位。</p></article>
+              <span class="model-arrow">→</span>
+              <article><div class="model-icon thomson"><i></i><i></i><i></i><i></i></div><b>湯姆森</b><small>正電背景＋電子</small><p>陰極射線顯示原子可再分。</p></article>
+              <span class="model-arrow">→</span>
+              <article class="is-current"><div class="model-icon rutherford"><i></i><em>＋</em></div><b>拉塞福</b><small>核式模型</small><p>金箔散射迫使正電集中到小區域。</p></article>
+              <span class="model-arrow">→</span>
+              <article><div class="model-icon bohr"><i></i><i></i><em>＋</em></div><b>波耳</b><small>能階模型</small><p>線光譜要求離散能量狀態。</p></article>
+              <span class="model-arrow">→</span>
+              <article><div class="model-icon quantum"><i></i></div><b>現代量子模型</b><small>機率分布</small><p>電子以機率分布描述。</p></article>
+            </div>
+          </section>
+        </section>`;
       }
       const phase = state.temperature < 33 ? "粒子較緊密" : state.temperature < 67 ? "粒子可互相滑動" : "粒子間距較大";
       return `<div class="sim-stage"><div class="sim-particles" style="--particle-space:${state.spacing * 2}px;--particle-motion:${Math.max(.2, 1 - state.temperature / 120)}s">${Array.from({ length: 24 }, (_, i) => `<i style="--i:${i}"></i>`).join("")}</div><p>${phase}；這是用來比較變因改變的粒子模型。</p></div>${slider("temperature", "溫度條件", state.temperature, 0, 100, 1, "%")}${slider("spacing", "初始間距", state.spacing, 1, 8)}`;
