@@ -565,10 +565,10 @@
           <div class="rutherford-workbench"><div class="rutherford-grid">
             <aside class="rutherford-panel prediction-panel">
               <span class="step-badge">1</span><h6>先預測</h6><p>同一顆 α 粒子逐漸更靠近原子核時，它的路徑會怎麼改變？</p>
-              <div class="rutherford-choice-list visual-choices">
-                ${selected("straight","①　距離改變，但路徑仍保持直線")}
-                ${selected("small","②　越靠近原子核，偏折反而越小")}
-                ${selected("large","③　越靠近原子核，排斥越強、偏折越大")}
+              <div class="rutherford-choice-list visual-choices path-predictions">
+                ${selected("straight","①　→　仍直直前進")}
+                ${selected("small","②　⤴　越靠近，偏折越小")}
+                ${selected("large","③　↩　越靠近，偏折越大")}
               </div>
               <button type="button" class="sim-button" data-rutherford-action="submit-prediction">${predicted ? "已鎖定預測" : "鎖定預測，開始操作"}</button>
               <p class="sim-status" role="status">${esc(state.rutherfordPredictionFeedback || "先看三種路徑預測，選出你認為「距離 d 變小」時會發生的變化。")}</p>
@@ -617,15 +617,15 @@
           <section class="atomic-model-timeline" aria-label="原子模型演變時間軸">
             <div class="timeline-heading"><span class="step-badge">6</span><div><h6>原子模型的演變</h6><p>模型是基於當時證據提出的解釋，不是實際拍攝的照片。</p></div></div>
             <div class="model-cards">
-              <article><div class="model-icon dalton"><i></i></div><b>道耳頓</b><small>實心球模型</small><p>原子是物質的基本單位。</p></article>
+              <article><div class="model-icon dalton"><i></i><span class="model-caption">實心球</span></div><b>道耳頓</b><small>實心球模型</small><p>原子是物質的基本單位。</p></article>
               <span class="model-arrow">→</span>
-              <article><div class="model-icon thomson"><i></i><i></i><i></i><i></i></div><b>湯姆森</b><small>正電背景＋電子</small><p>陰極射線顯示原子可再分。</p></article>
+              <article><div class="model-icon thomson"><i></i><i></i><i></i><i></i><span class="model-caption">電子嵌在正電背景</span></div><b>湯姆森</b><small>正電背景＋電子</small><p>陰極射線顯示原子可再分。</p></article>
               <span class="model-arrow">→</span>
-              <article class="is-current"><div class="model-icon rutherford"><i></i><em>＋</em></div><b>拉塞福</b><small>核式模型</small><p>金箔散射迫使正電集中到小區域。</p></article>
+              <article class="is-current"><div class="model-icon rutherford"><i></i><em>＋</em><span class="model-caption">小原子核＋大片空間</span></div><b>拉塞福</b><small>核式模型</small><p>金箔散射迫使正電集中到小區域。</p></article>
               <span class="model-arrow">→</span>
-              <article><div class="model-icon bohr"><i></i><i></i><em>＋</em></div><b>波耳</b><small>能階模型</small><p>線光譜要求離散能量狀態。</p></article>
+              <article><div class="model-icon bohr"><i></i><i></i><em>＋</em><span class="model-caption">特定能階</span></div><b>波耳</b><small>能階模型</small><p>線光譜要求離散能量狀態。</p></article>
               <span class="model-arrow">→</span>
-              <article><div class="model-icon quantum"><i></i></div><b>現代量子模型</b><small>機率分布</small><p>電子以機率分布描述。</p></article>
+              <article><div class="model-icon quantum"><i></i><span class="model-caption">電子雲機率分布</span></div><b>現代量子模型</b><small>機率分布</small><p>電子以機率分布描述。</p></article>
             </div>
           </section>
         </section>`;
