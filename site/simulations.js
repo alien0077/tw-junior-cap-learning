@@ -571,25 +571,27 @@
               <div class="distance-compare"><span>遠：幾乎直行</span><span>中：偏折</span><span>近：大角度偏折</span></div>
             </div>
             <figure class="rutherford-stage rutherford-panel">
-              <figcaption><span class="step-badge">3</span><b>觀察：α 粒子散射路徑（示意）</b></figcaption>
-              <svg viewBox="0 0 720 360" role="img" aria-label="拉塞福散射概念圖，最近通過距離等級 ${proximity}，目前為 ${pathLabel}">
+              <figcaption><span class="step-badge">3</span><b>觀察同一顆 α 粒子：d 改變，路徑怎麼變？</b></figcaption>
+              <svg viewBox="0 0 720 360" role="img" aria-label="單一 α 粒子最近通過距離 d 等級 ${proximity} 的路徑變化">
                 <defs>
                   <radialGradient id="nucleusGlow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="currentColor" stop-opacity=".95"/><stop offset=".45" stop-color="currentColor" stop-opacity=".5"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></radialGradient>
                   <marker id="alphaArrow" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto"><path d="M0,0 L0,8 L8,4 z" fill="currentColor"/></marker>
                 </defs>
-                <circle cx="430" cy="180" r="96" class="nucleus-ring"/><circle cx="430" cy="180" r="70" class="nucleus-ring"/><circle cx="430" cy="180" r="45" class="nucleus-ring"/>
-                <circle cx="430" cy="180" r="72" fill="url(#nucleusGlow)" opacity=".18"/>
-                <circle cx="430" cy="180" r="25" class="nucleus-core"/><text x="430" y="186" text-anchor="middle" class="nucleus-plus">＋</text>
-                <text x="430" y="224" text-anchor="middle" class="nucleus-label">小而集中的正電區</text>
-                <g class="alpha-source"><circle cx="70" cy="88" r="8"/><circle cx="70" cy="145" r="8"/><circle cx="70" cy="202" r="8"/><circle cx="70" cy="259" r="8"/><text x="52" y="48">α 粒子（帶正電）</text></g>
-                <path d="M82 88 C240 88 470 88 670 88" class="alpha-path straight" marker-end="url(#alphaArrow)"/>
-                <path d="M82 145 C245 145 330 145 410 ${c1} C500 ${Math.max(20,c1-20)} 590 ${Math.max(18,c1-34)} 670 ${Math.max(16,c1-40)}" class="alpha-path bend" marker-end="url(#alphaArrow)"/>
-                <path d="M82 202 C230 202 350 202 397 188 C445 173 493 ${c2} 610 ${Math.min(330,c2+60)}" class="alpha-path bend-secondary" marker-end="url(#alphaArrow)"/>
-                <path d="M82 259 C270 259 355 254 397 232 C436 211 380 305 250 330" class="alpha-path rare" marker-end="url(#alphaArrow)"/>
-                <g class="path-tags"><text x="560" y="70">多數：近直行</text><text x="545" y="130">少數：偏折</text><text x="485" y="335">極少數：大角度偏折／反彈</text></g>
+                <circle cx="470" cy="180" r="105" class="nucleus-ring"/><circle cx="470" cy="180" r="72" class="nucleus-ring"/><circle cx="470" cy="180" r="42" class="nucleus-ring"/>
+                <circle cx="470" cy="180" r="72" fill="url(#nucleusGlow)" opacity=".18"/>
+                <circle cx="470" cy="180" r="26" class="nucleus-core"/><text x="470" y="187" text-anchor="middle" class="nucleus-plus">＋</text>
+                <text x="470" y="230" text-anchor="middle" class="nucleus-label">原子核（集中正電）</text>
+                <g class="alpha-source"><circle cx="92" cy="${near ? 190 : far ? 92 : 140}" r="11"/><text x="55" y="48">追蹤同一顆 α 粒子</text></g>
+                ${far
+                  ? '<path d="M108 92 C280 92 450 92 660 86" class="alpha-path straight active-particle" marker-end="url(#alphaArrow)"/><text x="250" y="72" class="particle-state-label">d 遠 → 排斥弱 → 幾乎直行</text>'
+                  : near
+                    ? '<path d="M108 190 C290 190 400 190 430 181 C457 173 420 112 300 58" class="alpha-path rare active-particle" marker-end="url(#alphaArrow)"/><text x="175" y="235" class="particle-state-label">d 近 → 排斥強 → 大角度偏折</text>'
+                    : '<path d="M108 140 C285 140 390 140 430 125 C475 108 535 74 650 62" class="alpha-path bend active-particle" marker-end="url(#alphaArrow)"/><text x="205" y="112" class="particle-state-label">d 中 → 排斥增加 → 明顯偏折</text>'}
+                <line x1="470" y1="180" x2="470" y2="${near ? 190 : far ? 92 : 140}" class="distance-guide"/>
+                <text x="485" y="${near ? 165 : far ? 130 : 150}" class="distance-label">d</text>
               </svg>
               <div class="rutherford-live">${esc(feedback)}</div>
-              <p class="sim-caption">注意：這是教學示意圖，不是實驗比例。原子與原子核的尺度差異極大，極少數大角度事件在圖中為了教學被放大。</p>
+              <p class="sim-caption">這裡只追蹤一顆 α 粒子，用來看清楚 d 與偏折的因果關係；下一步才看大量 α 粒子的真實金箔散射統計。</p>
             </figure>
             <aside class="rutherford-panel evidence-panel">
               <span class="step-badge">4</span><h6>對照實驗證據</h6>
