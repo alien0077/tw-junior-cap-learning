@@ -538,46 +538,37 @@
     if (engine === "science-particle-lab") {
       if (lesson.simulation.model === "rutherford-scattering") {
         const proximity = clamp(Number(state.impactProximity || 3), 1, 5);
-        const predicted = state.rutherfordPredictionSubmitted === true;
-        const prediction = state.rutherfordPrediction || "";
         const evidenceChoice = state.rutherfordEvidence || "";
         const near = proximity >= 4;
         const far = proximity <= 2;
         const pathLabel = near ? "大角度偏折較明顯" : far ? "幾乎直行" : "小角度偏折";
-        const feedback = !predicted
-          ? "先選一個預測，再開始改變最近通過距離。"
-          : near
-            ? "靠近集中正電區時，排斥作用較強，示意路徑彎曲更明顯。"
-            : far
-              ? "離集中正電區較遠時，示意路徑接近直行。"
-              : "中等距離時，示意路徑出現較小偏折。";
+        const feedback = near
+          ? "d 變小：α 粒子更靠近原子核，正電排斥較強，路徑彎曲更明顯。"
+          : far
+            ? "d 變大：α 粒子離原子核較遠，正電排斥較弱，路徑接近直行。"
+            : "中等 d：α 粒子受到中等程度的排斥，路徑出現偏折。";
         const y1 = 88;
         const c1 = near ? 30 : far ? 76 : 58;
         const y2 = 145;
         const c2 = near ? 225 : far ? 154 : 188;
-        const selected = (key,label) => `<button type="button" data-rutherford-action="predict" data-value="${key}" aria-pressed="${prediction===key}">${label}</button>`;
         const evidenceButton = (key,label) => `<button type="button" data-rutherford-action="evidence" data-value="${key}" aria-pressed="${evidenceChoice===key}">${label}</button>`;
         return `<section class="sim-rutherford sim-rutherford-lab" aria-label="拉塞福 α 粒子散射視覺實驗室">
           <header class="rutherford-hero"><div class="rutherford-breadcrumb">自然科 <span>›</span> 理化 <span>›</span> Aa-Ⅳ-1</div>
-            <div><span class="sim-kicker">Aa-Ⅳ-1｜原子模型演變</span><h5>用 α 粒子散射，把看不見的原子核逼出來</h5><p>先預測，再只改一項變因；把「直接觀察」和「模型推論」分開。</p></div>
+            <div><span class="sim-kicker">Aa-Ⅳ-1｜原子模型演變</span><h5>用 α 粒子散射，把看不見的原子核逼出來</h5><p>直接改變 α 粒子與原子核的距離，觀察路徑如何改變，再用真正的金箔散射證據推論原子結構。</p></div>
             <div class="rutherford-goals"><b>學習目標</b><span>能描述三類散射現象</span><span>能由證據推論核式結構</span><span>不把模型圖當成原子照片</span></div>
           </header>
           <div class="rutherford-workbench"><div class="rutherford-grid">
-            <aside class="rutherford-panel prediction-panel">
-              <span class="step-badge">1</span><h6>先預測</h6><p>同一顆 α 粒子逐漸更靠近原子核時，它的路徑會怎麼改變？</p>
-              <div class="rutherford-choice-list visual-choices path-predictions">
-                ${selected("straight","①　→　仍直直前進")}
-                ${selected("small","②　⤴　越靠近，偏折越小")}
-                ${selected("large","③　↩　越靠近，偏折越大")}
-              </div>
-              <button type="button" class="sim-button" data-rutherford-action="submit-prediction">${predicted ? "已鎖定預測" : "鎖定預測，開始操作"}</button>
-              <p class="sim-status" role="status">${esc(state.rutherfordPredictionFeedback || "先看三種路徑預測，選出你認為「距離 d 變小」時會發生的變化。")}</p>
+            <aside class="rutherford-panel prediction-panel question-panel">
+              <span class="step-badge">1</span><h6>先看問題</h6>
+              <p class="question-lead">α 粒子離原子核的<strong>最近通過距離 d</strong> 改變時，路徑會怎麼變？</p>
+              <div class="cause-chain"><span>d 遠</span><b>→</b><span>排斥較弱</span><b>→</b><span>接近直行</span></div>
+              <p class="question-hint">不用先猜答案。下一步直接拖動 d，自己看出規律。</p>
             </aside>
             <div class="rutherford-panel control-panel">
-              <span class="step-badge">2</span><h6>操作一項變因</h6>
-              <p>只改變 α 粒子與集中正電區的<strong>最近通過距離</strong>；其他條件固定。</p>
-              <label class="rutherford-distance"><span>最近通過距離 d（定性等級） <output data-sim-output="impactProximity">${proximity}</output></span><input data-sim-control="impactProximity" type="range" min="1" max="5" step="1" value="${proximity}" ${predicted?"":"disabled"}><div><span>遠</span><span>中</span><span>近</span></div></label>
-              <p class="control-rule">一次只改一個量，才能知道路徑差異由誰造成。</p>
+              <span class="step-badge">2</span><h6>拖動 d，觀察路徑</h6>
+              <p>只改變 α 粒子與原子核的<strong>最近通過距離 d</strong>；其他條件固定。</p>
+              <label class="rutherford-distance"><span>最近通過距離 d（定性等級） <output data-sim-output="impactProximity">${proximity}</output></span><input data-sim-control="impactProximity" type="range" min="1" max="5" step="1" value="${proximity}"><div><span>遠</span><span>中</span><span>近</span></div></label>
+              <div class="distance-compare"><span>遠：幾乎直行</span><span>中：偏折</span><span>近：大角度偏折</span></div>
             </div>
             <figure class="rutherford-stage rutherford-panel">
               <figcaption><span class="step-badge">3</span><b>觀察：α 粒子散射路徑（示意）</b></figcaption>
