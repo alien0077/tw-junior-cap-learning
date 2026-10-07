@@ -124,6 +124,7 @@ async function start() { try { const index = await fetch("./data-index.json", { 
       const targetLesson = state.lessons.find(lesson => lesson.id === requestedUnit);
       if (targetLesson) {
         state.filters.subject = targetLesson.subject;
+        $("subject").value = targetLesson.subject;
         const targetMapping = state.mappings.find(mapping => mapping.subject === targetLesson.subject && (mapping.volumes || []).some(volume => (volume.entries || []).some(entry => preciseIds(entry).some(id => targetLesson.knowledgeIds?.includes(id)))));
         const targetVolume = targetMapping?.volumes?.find(volume => (volume.entries || []).some(entry => preciseIds(entry).some(id => targetLesson.knowledgeIds?.includes(id))));
         if (targetVolume?.grade) state.filters.grade = targetVolume.grade;
