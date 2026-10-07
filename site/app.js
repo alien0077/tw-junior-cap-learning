@@ -116,9 +116,19 @@ function aaIv1SectionVisual(section, index) {
   ];
   return '<figure class="section-visual aa-iv-1-visual" data-section-visual="'+index+'"><figcaption>'+esc(section.heading)+'</figcaption>'+(visuals[index] || visuals[4])+'</figure>';
 }
+function aaIv1InlineVisual(index) {
+  const blocks = [
+    '<figure class="aa-inline-visual"><figcaption>金箔散射：先看現象，再推結構</figcaption><svg viewBox="0 0 520 220" role="img" aria-label="α 粒子穿過金箔的三種散射結果"><rect x="242" y="20" width="8" height="180" rx="4" class="gold-foil"/><circle cx="246" cy="110" r="10" class="nucleus-core"/><g class="alpha-path"><path d="M25 55 H490"/><path d="M25 100 Q220 100 490 55"/><path d="M25 145 Q220 145 370 205"/><path d="M25 180 Q225 180 85 212"/></g><text x="25" y="35">α 粒子束</text><text x="270" y="35">薄金箔</text><text x="330" y="92">少數偏折</text><text x="335" y="145">多數直行</text><text x="25" y="210">極少數大角度偏折</text></svg><p class="visual-takeaway"><b>看到：</b>大部分穿過，少部分改變方向。<br><b>想到：</b>原子大部分是空間，正電與大部分質量集中在很小的原子核。</p></figure>',
+    '<figure class="aa-inline-visual"><figcaption>模型不是背年代：每次都是舊模型遇到新證據</figcaption><div class="atomic-model-strip"><div><span class="model-ball"></span><b>道耳頓</b><small>原子是微小實體</small></div><div><span class="model-plum"><i></i><i></i><i></i></span><b>湯姆森</b><small>陰極射線 → 電子</small></div><div><span class="model-nuclear"><i></i></span><b>拉塞福</b><small>散射 → 小原子核</small></div><div><span class="model-bohr"><i></i><em></em></span><b>波耳</b><small>光譜 → 能階</small></div></div><p class="visual-takeaway">證據增加 → 舊模型解釋不了 → 提出能解釋更多現象的新模型。</p></figure>',
+    '<figure class="aa-inline-visual"><figcaption>散射證據怎麼變成結構推論？</figcaption><div class="evidence-flow"><div><b>觀察</b><span>多數直行</span><span>少數偏折</span><span>極少數大角度偏折</span></div><strong>→</strong><div><b>推論</b><span>大部分是空間</span><span>正電集中在小區域</span></div><strong>→</strong><div><b>模型</b><span>核式原子模型</span></div></div></figure>',
+    '<figure class="aa-inline-visual"><figcaption>波耳：光譜為什麼不是連續彩虹？</figcaption><svg viewBox="0 0 520 220" role="img" aria-label="波耳能階與線光譜"><circle cx="145" cy="108" r="13" class="nucleus-core"/><circle cx="145" cy="108" r="45" fill="none" stroke="currentColor"/><circle cx="145" cy="108" r="78" fill="none" stroke="currentColor"/><circle cx="145" cy="30" r="6" class="electron-dot"/><path d="M225 55 Q275 105 225 155" fill="none" stroke="currentColor" stroke-width="3"/><text x="270" y="80">電子只能在特定能階</text><text x="270" y="110">能階改變時</text><text x="270" y="137">吸收／放出特定能量</text><g transform="translate(285 155)"><rect width="190" height="45" rx="8" class="spectrum-bg"/><path d="M25 4v37M70 4v37M118 4v37M160 4v37" class="spectrum-lines"/></g></svg></figure>',
+    '<figure class="aa-inline-visual"><figcaption>模型審判庭：科學模型怎麼留下來？</figcaption><div class="model-court"><div><b>① 先預測</b><span>模型應預測會觀察到什麼</span></div><div><b>② 拿證據比較</b><span>重複實驗，看預測是否符合</span></div><div><b>③ 說明限制</b><span>不符合就修正，而不是把模型當照片</span></div></div></figure>'
+  ];
+  return blocks[Math.min(index, blocks.length - 1)];
+}
 function renderLessonSection(item, section, index) {
   if (item.id === "lesson-science-content-aa-iv-1") {
-    return '<article class="lesson-section aa-iv-1-text-section"><b>'+esc(section.heading)+'</b><p>'+esc(section.body)+'</p></article>';
+    return '<article class="lesson-section aa-iv-1-teaching-section"><b>'+esc(section.heading)+'</b><div class="aa-teaching-copy"><p>'+esc(section.body)+'</p></div>'+aaIv1InlineVisual(index)+'</article>';
   }
   return '<article class="lesson-section"><b>'+esc(section.heading)+'</b><div class="lesson-section-pair"><p>'+esc(section.body)+'</p>'+sectionVisual(item, section, index)+'</div></article>';
 }
