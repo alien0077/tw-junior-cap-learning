@@ -558,17 +558,17 @@
         const selected = (key,label) => `<button type="button" data-rutherford-action="predict" data-value="${key}" aria-pressed="${prediction===key}">${label}</button>`;
         const evidenceButton = (key,label) => `<button type="button" data-rutherford-action="evidence" data-value="${key}" aria-pressed="${evidenceChoice===key}">${label}</button>`;
         return `<section class="sim-rutherford sim-rutherford-lab" aria-label="拉塞福 α 粒子散射視覺實驗室">
-          <header class="rutherford-hero">
+          <header class="rutherford-hero"><div class="rutherford-breadcrumb">自然科 <span>›</span> 理化 <span>›</span> Aa-Ⅳ-1</div>
             <div><span class="sim-kicker">Aa-Ⅳ-1｜原子模型演變</span><h5>用 α 粒子散射，把看不見的原子核逼出來</h5><p>先預測，再只改一項變因；把「直接觀察」和「模型推論」分開。</p></div>
             <div class="rutherford-goals"><b>學習目標</b><span>能描述三類散射現象</span><span>能由證據推論核式結構</span><span>不把模型圖當成原子照片</span></div>
           </header>
-          <div class="rutherford-grid">
+          <div class="rutherford-workbench"><div class="rutherford-grid">
             <aside class="rutherford-panel prediction-panel">
               <span class="step-badge">1</span><h6>先預測</h6><p>α 粒子靠近集中正電區時，最可能怎麼走？</p>
-              <div class="rutherford-choice-list">
-                ${selected("straight","大多數直行")}
-                ${selected("small","少數小角度偏折")}
-                ${selected("large","越靠近越可能大角度偏折")}
+              <div class="rutherford-choice-list visual-choices">
+                ${selected("straight","→　大多數會直直通過")}
+                ${selected("small","↗　少數會稍微偏折")}
+                ${selected("large","↩　越靠近越可能大角度偏折")}
               </div>
               <button type="button" class="sim-button" data-rutherford-action="submit-prediction">${predicted ? "已鎖定預測" : "鎖定預測，開始操作"}</button>
               <p class="sim-status" role="status">${esc(state.rutherfordPredictionFeedback || "先選一項；不先顯示答案。")}</p>
@@ -602,18 +602,18 @@
             </figure>
             <aside class="rutherford-panel evidence-panel">
               <span class="step-badge">4</span><h6>對照實驗證據</h6>
-              <div class="evidence-cards"><article><b>多數直行</b><p>原子大部分空間相對空曠。</p></article><article><b>少數偏折</b><p>粒子受到集中的正電排斥。</p></article><article><b>極少數強烈偏折</b><p>正電與大部分質量集中在很小區域。</p></article></div>
+              <div class="evidence-cards"><article class="evidence-straight"><span class="evidence-symbol">→</span><div><b>多數直行</b><p>大多數 α 粒子幾乎不偏折，直接通過金箔。</p></div></article><article class="evidence-bend"><span class="evidence-symbol">↗</span><div><b>少數偏折</b><p>少數 α 粒子偏折一個小角度。</p></div></article><article class="evidence-rare"><span class="evidence-symbol">↩</span><div><b>極少數大角度偏折</b><p>極少數甚至反彈回來。</p></div></article></div>
             </aside>
             <div class="rutherford-panel inference-panel">
               <span class="step-badge">5</span><h6>你能推出什麼？</h6>
-              <p>哪一個結論最符合上面的觀察？</p>
+              <p class="inference-callout">💡 原子大部分是空間；<br>正電與大部分質量集中在很小的區域（原子核）。</p><p>哪一個結論最符合上面的觀察？</p>
               <div class="sim-actions">
                 ${evidenceButton("spread","正電均勻分散在整個原子")}
                 ${evidenceButton("nucleus","原子大部分是空間；正電與大部分質量集中在很小的原子核")}
               </div>
               <p class="sim-status" role="status">${esc(state.rutherfordEvidenceFeedback || "用「多數直行＋極少數強偏折」一起判斷。")}</p>
             </div>
-          </div>
+          </div></div>
           <section class="atomic-model-timeline" aria-label="原子模型演變時間軸">
             <div class="timeline-heading"><span class="step-badge">6</span><div><h6>原子模型的演變</h6><p>模型是基於當時證據提出的解釋，不是實際拍攝的照片。</p></div></div>
             <div class="model-cards">
