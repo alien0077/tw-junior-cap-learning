@@ -171,7 +171,7 @@ async function start() { try { const index = await fetch("./data-index.json", { 
         $("subject").value = directLesson.subject;
         $("catalogTitle").textContent = directLesson.title;
         $("catalogCount").textContent = "";
-        $("catalogGrid").innerHTML = `<article class="unit-card direct-lesson-card">${card({ ...directLesson, kind: "lesson" }, `<p class="matched-label">自然科 · 單元直接檢視</p>`, `direct-${directLesson.id}`)}</article>`;
+        const directKnowledgeIds = new Set(directLesson.knowledgeIds || []);\n        const directQuestions = state.items.filter(item => item.kind === "question" && item.subject === directLesson.subject && (item.knowledgeIds || []).some(id => directKnowledgeIds.has(id)));\n        const questionDeck = directQuestions.length ? `<section class="direct-unit-questions" aria-labelledby="direct-unit-questions-title"><div class="direct-unit-questions-heading"><h2 id="direct-unit-questions-title">本單元練習題</h2><span>${directQuestions.length} 題</span></div>${directQuestions.map((question, index) => card(question, `<p class="matched-label">Aa-Ⅳ-1 · 第 ${index + 1} 題</p>`, `direct-question-${question.id}`)).join("")}</section>` : `<section class="direct-unit-questions"><p class="unmatched">目前沒有找到與本單元 KG 對應的正式題目。</p></section>`;\n        $("catalogGrid").innerHTML = `<article class="unit-card direct-lesson-card">${card({ ...directLesson, kind: "lesson" }, `<p class="matched-label">自然科 · 單元直接檢視</p>`, `direct-${directLesson.id}`)}${questionDeck}</article>`;
       } else {
         renderCatalog();
       }
