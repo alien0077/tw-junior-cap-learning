@@ -564,14 +564,14 @@
           </header>
           <div class="rutherford-workbench"><div class="rutherford-grid">
             <aside class="rutherford-panel prediction-panel">
-              <span class="step-badge">1</span><h6>先預測</h6><p>α 粒子靠近集中正電區時，最可能怎麼走？</p>
+              <span class="step-badge">1</span><h6>先預測</h6><p>同一顆 α 粒子逐漸更靠近原子核時，它的路徑會怎麼改變？</p>
               <div class="rutherford-choice-list visual-choices">
-                ${selected("straight","→　大多數會直直通過")}
-                ${selected("small","↗　少數會稍微偏折")}
-                ${selected("large","↩　越靠近越可能大角度偏折")}
+                ${selected("straight","①　距離改變，但路徑仍保持直線")}
+                ${selected("small","②　越靠近原子核，偏折反而越小")}
+                ${selected("large","③　越靠近原子核，排斥越強、偏折越大")}
               </div>
               <button type="button" class="sim-button" data-rutherford-action="submit-prediction">${predicted ? "已鎖定預測" : "鎖定預測，開始操作"}</button>
-              <p class="sim-status" role="status">${esc(state.rutherfordPredictionFeedback || "先選一項；不先顯示答案。")}</p>
+              <p class="sim-status" role="status">${esc(state.rutherfordPredictionFeedback || "先看三種路徑預測，選出你認為「距離 d 變小」時會發生的變化。")}</p>
             </aside>
             <div class="rutherford-panel control-panel">
               <span class="step-badge">2</span><h6>操作一項變因</h6>
