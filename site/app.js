@@ -121,6 +121,9 @@ function refreshCourse() { renderPicker(); renderCatalog(); }
 async function start() { try { const index = await fetch("./data-index.json", { cache: "no-cache" }).then(response => response.json()); const base = index.sourceBase || fallbackRaw; const shardMode = index.lessonDataPaths && index.questionDataPaths; const lessonFiles = shardMode ? (await Promise.all(Object.values(index.lessonDataPaths).map(path => loadJson(path, "./")))).flat() : (index.lessons.some(item => item.content) ? index.lessons : await loadMany(index.lessons.map(item => item.path), base)); const questionFiles = shardMode ? (await Promise.all(Object.values(index.questionDataPaths).map(path => loadJson(path, "./")))).flat() : (index.questions || []); state.lessons = lessonFiles; state.items = [...lessonFiles.map(item => ({ ...item, kind: "lesson" })), ...questionFiles.map(item => ({ ...item, kind: "question" }))]; state.mappings = index.mappings;
     const requestedUnit = new URLSearchParams(location.search).get("unit");
     if (requestedUnit) {
+      ["siteStats","coursePicker","contentSearch","allContent"].forEach(id => { const el = $(id); if (el) el.hidden = true; });
+      document.body.classList.add("direct-lesson-mode");
+
       const targetLesson = state.lessons.find(lesson => lesson.id === requestedUnit);
       if (targetLesson) {
         state.filters.subject = targetLesson.subject;
@@ -139,9 +142,9 @@ async function start() { try { const index = await fetch("./data-index.json", { 
       const directLesson = state.lessons.find(lesson => lesson.id === requestedUnit);
       if (directLesson) {
         $("subject").value = directLesson.subject;
-        $("catalogTitle").textContent = `${subjectNames[directLesson.subject]} · 單元直接檢視`;
-        $("catalogCount").textContent = "1 個單元";
-        $("catalogGrid").innerHTML = card({ ...directLesson, kind: "lesson" }, `<p class="matched-label">單元直接連結 · ${esc(directLesson.title)}</p>`, `direct-${directLesson.id}`);
+        $("catalogTitle").textContent = directLesson.title;
+        $("catalogCount").textContent = "";
+        $("catalogGrid").innerHTML = `<article class="unit-card direct-lesson-card">${card({ ...directLesson, kind: "lesson" }, `<p class="matched-label">自然科 · 單元直接檢視</p>`, `direct-${directLesson.id}`)}</article>`;
       } else {
         renderCatalog();
       }
